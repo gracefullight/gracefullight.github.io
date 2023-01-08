@@ -1,0 +1,13 @@
+{
+  "words": [
+    "clipanion",
+    "gracefullight",
+    "kakao",
+    "laravel",
+    "serviceworker"
+  ],
+  "ignorePaths": [
+    "*.config.js",
+    "package.json"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "gracefullight.dev",
+    "description": "The title in the navbar"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Archives": {
+    "message": "Archives",
+    "description": "Navbar item with label Archives"
+  },
+  "item.label.Tags": {
+    "message": "Tags",
+    "description": "Navbar item with label Tags"
+  }
+}

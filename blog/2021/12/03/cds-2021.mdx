@@ -1,0 +1,85 @@
+---
+title: Chrome dev summit 2021 빠르게 훑기
+authors: me
+tags: [cds, chrome, conference]
+date: 2021-12-03 00:02:53
+---
+
+import ReactPlayer from 'react-player/lazy';
+
+# Chrome dev summit 2021
+
+Workshop 섹션때문인지, 재택환경 때문인지 작년보다 내용이 없었다.
+
+## Building a more private web
+
+<ReactPlayer
+  url="https://www.youtube.com/watch?v=_Ah_ODU3CvA"
+  controls
+  pip
+  playsinline
+/>
+
+- New privacy-Preserving Technologies
+- FLoC 관련 이라 앞부분 스킵
+- UA-CH (User Agent Client Hints API): 유저 브라우저 핑거프린팅 방지
+  - 기존 UA 에는 버전, 플랫폼 정보들이 담김.
+  - [UA String Reduction](https://developer.chrome.com/docs/privacy-sandbox/user-agent/) 2022-04부터 시작
+  - User Agent Client Hints 로 마이그레이션 해야함.
+    - https 만 가능
+    - https://web.dev/migrate-to-ua-ch/
+
+## How leading developers build innovative web experiences
+
+최신 기술 쓴 회사 소개
+
+https://www.youtube.com/watch?v=1vGVrC03_jo
+
+- KAPWING: 온라인 비디오 에디터
+  - Indexed DB
+  - Web Socket API
+  - Web Audio API
+  - Media Recorder API
+  - Web Workers
+  - PWA
+  - (+) Web Codecs
+  - (+) WebGL
+  - (+) Media Source Extensions
+- Zoom
+  - PWA Desktop Web Codes API 로 Chrome OS 지원
+  - 런칭 후 16.9M 유저 증가 (전년대비 7M 증가)
+- Google Meet
+  - PWA: Custom background using WASM SIMD and WebGL.
+- Youtube Primium.
+  - PWA: SW, CacheStorage, IndexedDB, Web Share API, Navigation Preload.
+- Tiktok: creating a multi-form-factor, frictionless experience.
+  - Workbox to Prefetch videos.
+  - expand PWA desktop.
+  - 트래픽 10배 상승
+- Adobe Photoshop Web
+  - Chrome 과 웹플랫폼팀과 코웤
+  - wasm 을 사용해서 퍼포먼스 패널티 기능 구현.
+  - Storage Foundation API.
+  - 피드백 환영
+
+## Understanding performance with Core Web Vitals
+
+https://www.youtube.com/watch?v=F0NYT7DIlDQ
+
+- 구글과 자바스크립트 프레임워크 간의 퍼포먼스 협업 [Aurora](https://web.dev/introducing-aurora/)
+- PageSpeed Insights 리뉴얼
+- 라이트하우스에서 [유저 플로우 측정 가능](https://web.dev/lighthouse-user-flows/)
+  - Warm load 나 스크롤 등을 시뮬레이션하고 테스트 가능
+- 개발자모드 Recorder 탭에서 puppteer 테스트를 만들어서 export 할 수 있다.
+
+## The new responsive design
+
+https://www.youtube.com/watch?v=dhrX_biPH8c
+
+- `@container`: parent 영역에 따른 반응형
+- `Nesting css`
+- `@media (pefers-colors-scheme: dark)`
+  - 개발자도구 > Rendering > Emulate auto dark mode 가능
+- https://web.dev/patterns/layout/
+- https://web.dev/learn/css/
+- https://web.dev/learn/layout
