@@ -1,5 +1,5 @@
 import { Builtins, Cli } from 'clipanion';
-import { ExtractDateFromMarkdown } from './extract-date-from-md';
+import { ExtractDateFromMarkdown } from './extractDateFromMarkdown';
 
 const [node, app, ...args] = process.argv;
 
