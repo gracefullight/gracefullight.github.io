@@ -1,0 +1,36 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: SETUP_NODE_${{ matrix.node-version }}
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: BEFORE_SCRIPT
+        run: |
+          git config --global user.name 'gracefullight'
+          git config --global user.email 'gracefullight.dev@gmail.com'
+
+      - name: INSTALL_PACKAGES
+        run: yarn
+
+      - name: BUILD
+        run: yarn build
+
+      - name: DEPLOY
+        run: yarn deploy
