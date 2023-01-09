@@ -97,7 +97,7 @@ const config = {
         title: 'gracefullight.dev',
         logo: {
           alt: 'gracefullight.dev blog logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon-32x32.png',
         },
         items: [
           // {to: '/blog', label: 'Blog', position: 'left'},
@@ -149,6 +149,46 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: process.env.NODE_ENV === 'development',
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/favicon-32x32.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#f28913',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: '#f28913',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/apple-touch-icon.png',
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;
