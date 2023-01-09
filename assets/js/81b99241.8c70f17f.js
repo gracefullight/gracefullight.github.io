@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[99298],{12574:a=>{a.exports=JSON.parse('{"label":"kakao","permalink":"/tags/kakao","allTagsPath":"/tags","count":2}')}}]);

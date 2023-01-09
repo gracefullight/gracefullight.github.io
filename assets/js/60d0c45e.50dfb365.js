@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[59458],{98733:e=>{e.exports=JSON.parse('{"label":"moment","permalink":"/tags/moment","allTagsPath":"/tags","count":2}')}}]);

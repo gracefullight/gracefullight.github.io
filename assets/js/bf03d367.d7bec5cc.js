@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[37056],{75165:a=>{a.exports=JSON.parse('{"label":"aws","permalink":"/tags/aws","allTagsPath":"/tags","count":7}')}}]);

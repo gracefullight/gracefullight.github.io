@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[71656],{85989:e=>{e.exports=JSON.parse('{"label":"helm","permalink":"/tags/helm","allTagsPath":"/tags","count":1}')}}]);

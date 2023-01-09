@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[95367],{24471:o=>{o.exports=JSON.parse('{"label":"mongoose","permalink":"/tags/mongoose","allTagsPath":"/tags","count":1}')}}]);

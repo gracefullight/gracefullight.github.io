@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://gracefullight.dev/sitemap.xml
+Host: gracefullight.dev

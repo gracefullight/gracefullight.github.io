@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[23992],{31448:s=>{s.exports=JSON.parse('{"label":"composer","permalink":"/tags/composer","allTagsPath":"/tags","count":1}')}}]);

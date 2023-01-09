@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[51054],{8606:e=>{e.exports=JSON.parse('{"label":"puppeteer","permalink":"/tags/puppeteer","allTagsPath":"/tags","count":1}')}}]);

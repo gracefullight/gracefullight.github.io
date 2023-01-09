@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[2529],{75200:a=>{a.exports=JSON.parse('{"label":"laravel","permalink":"/tags/laravel","allTagsPath":"/tags","count":19}')}}]);

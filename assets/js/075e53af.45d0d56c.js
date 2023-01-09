@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[31204],{76934:a=>{a.exports=JSON.parse('{"label":"bash","permalink":"/tags/bash","allTagsPath":"/tags","count":10}')}}]);
