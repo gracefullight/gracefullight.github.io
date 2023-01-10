@@ -1,5 +1,6 @@
 ---
 title: hexo에서 docusaurus로 블로그 마이그레이션
+authors: me
 date: 2023-01-10T23:26:34.674+09:00
 tags: [nodejs, javascript]
 ---
@@ -53,6 +54,8 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 
 - `hexo new post "title"` 이 커맨드를 실행해서 포스트를 만드는데, 호환할 커맨드가 필요했다.
 - 오늘날짜로 `blog/2023/01/10/title.mdx` 로 만들어주게 `yarn cmd new title` 로 생성했다.
+- URL normalize 를 위한 기능으론 `import { slugize } from "hexo-util";` 를 사용하면 된다.
+  - slugify는 한글도 삭제된다.
 
 ### archive
 
@@ -119,3 +122,8 @@ env:
 
 - 코멘트 기능은 질답할 시간이 없다. 과감하게 삭제.
 - 오탈자 수정이나 제안은 메일로 주는 분들이 있어서 과감하게 삭제.
+
+## 결과
+
+- 만족스럽다.
+- 사내 문서로 쓰기엔 [typesense](https://docusaurus.io/docs/search#using-typesense-docsearch) 를 먼저 구축해야할 것 같아서.. 쉽지 않을듯.

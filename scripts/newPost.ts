@@ -9,6 +9,7 @@ import { slugize } from "hexo-util";
 const scaffold = `---
 title: %s
 date: %s
+authors: me
 tags: []
 ---\n`;
 
