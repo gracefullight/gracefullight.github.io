@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    env:
-      USE_SSH: true
 
     strategy:
       matrix:
