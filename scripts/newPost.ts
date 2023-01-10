@@ -24,9 +24,9 @@ export class NewPost extends Command {
       __dirname,
       "..",
       "blog",
-      now.year.toString(),
-      now.month.toString(),
-      now.day.toString()
+      now.toFormat("yyyy"),
+      now.toFormat("MM"),
+      now.toFormat("dd")
     );
 
     this.context.stdout.write(`Create new post "${this.title}"\n`);

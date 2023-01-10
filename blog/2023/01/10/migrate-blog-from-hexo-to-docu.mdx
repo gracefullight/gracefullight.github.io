@@ -1,0 +1,121 @@
+---
+title: hexo에서 docusaurus로 블로그 마이그레이션
+date: 2023-01-10T23:26:34.674+09:00
+tags: [nodejs, javascript]
+---
+
+# hexo에서 docusaurus로 블로그 마이그레이션
+
+## 개요
+
+2016년부터 정들게 쓴 hexo는 플러그인이 많고, 테마가 많아 좋았다.
+2019년도부터인가.. 다른 Static Site Generator 가 많아지면서 더 이상 hexo만의 이점이 없어졌고
+테마나 플러그인 개발 등 생태계 라이브러리들의 업데이트도 줄어들었다.
+
+ejs -> njk, less -> sass -> stylus 로 테마에 스택이 의존적이였다.
+결정적으로 nodejs 기반 코어라 트러블슈팅을 올려도 리소스 낭비랄까..
+
+Docusaurus는 1~2알파 시절 algolia 검색이 제공되지 않아
+swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보는 삽질이 있었고 한글이 정상적으로 동작하지 않았다.
+
+2023년에는 2버전이 런칭했고, React 기반으로 프론트엔드 스택이 일원화되었고 등등 이 작업을 진행해도 될 것 같았다.
+
+## 트러블슈팅
+
+### SEO
+
+#### URI
+
+- hexo는 front-matter 구문 안에 `date: 2023-01-10 09:00:00` 로 날짜를 넣어준다.
+  - 이를 파싱해서 URL 에는 `/2023/01/10/title` 처럼 처리해준다.
+- docusaurus는 [nested folder 구조](https://docusaurus.io/docs/blog#blog-post-date)를 써야한다.
+- md 파일의 front-matter.date 를 파싱해서 계층 구조를 가지게 변경했다.
+
+#### Site Verification
+
+- 큰 문제없이 설정에 넣어줬다.
+
+```json docusaurus.config.js
+{
+  "themeConfig": {
+    "metadata": [
+      // ? https://search.google.com/search-console
+      {
+        "name": "google-site-verification",
+        "content": "g"
+      }
+    ]
+  }
+}
+```
+
+### hexo new
+
+- `hexo new post "title"` 이 커맨드를 실행해서 포스트를 만드는데, 호환할 커맨드가 필요했다.
+- 오늘날짜로 `blog/2023/01/10/title.mdx` 로 만들어주게 `yarn cmd new title` 로 생성했다.
+
+### archive
+
+- hexo의 아카이브는 Order by Created DESC 인 방면에, docusaurus는 ASC 정렬이였다.
+- 이걸 플러그인 옵션으로 제공하자라는 이슈가 있지만 닫혔고, 알아서 하라가 그 답변이였다.
+- 하나 만들어서 [기존 컴포넌트 덮고](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx) 재정렬해서 연결해줬다.
+
+```json docusaurus.config.js
+{
+  "presets": [
+    "classic",
+    {
+      "blog": {
+        // 실제론 path resolving 필요
+        "blogArchiveComponent": "./src/component/BlogArchiveDescendingPage.tsx"
+      }
+    }
+  ]
+}
+```
+
+### tag
+
+- docusaurus 태그는 `tags: [tag1, tag2]` 이 형식을 만족해야한다.
+- ChatGPT 에게 정규식 물어봐서 전체치환했다.
+
+### github action
+
+- 타겟 레포, 브랜치 세팅해준다.
+- personal access token 발행하고, 두 값 적절하게 넣어준다.
+- yarn build, yarn deploy 실행하면 알아서 잘 된다.
+
+```json docusaurus.config.js
+{
+  "organizationName": "gracefullight",
+  "projectName": "gracefullight.github.io",
+  "deploymentBranch": "main",
+  "trailingSlash": true
+}
+```
+
+```yml workflows/main.yml
+env:
+  GIT_USER: ${{ secrets.GIT_USER }}
+  GIT_PASS: ${{ secrets.GIT_PASS }}
+```
+
+### dark only
+
+- 어둡게, 스위치도 삭제했다.
+
+```json docusaurus.config.js
+{
+  "themeConfig": {
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": true
+    }
+  }
+}
+```
+
+### comment
+
+- 코멘트 기능은 질답할 시간이 없다. 과감하게 삭제.
+- 오탈자 수정이나 제안은 메일로 주는 분들이 있어서 과감하게 삭제.
