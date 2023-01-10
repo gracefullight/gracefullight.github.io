@@ -9,6 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      GIT_USER: ${{ secrets.GIT_USER }}
+      GIT_PASS: ${{ secrets.GIT_PASS }}
+
     strategy:
       matrix:
         node-version: [18.x]
