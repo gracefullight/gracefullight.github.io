@@ -32,12 +32,10 @@ export class NewPost extends Command {
     this.context.stdout.write(`Create new post "${this.title}"\n`);
 
     await ensureDir(target);
-    await writeFile(
-      resolve(target, `${slugize(this.title)}.mdx`),
-      format(scaffold, this.title, now.toISO()),
-      "utf8"
-    );
 
-    this.context.stdout.write("done\n");
+    const mdxPath = resolve(target, `${slugize(this.title)}.mdx`);
+    await writeFile(mdxPath, format(scaffold, this.title, now.toISO()), "utf8");
+
+    this.context.stdout.write(`Done: ${mdxPath}\n`);
   }
 }
