@@ -1,7 +1,7 @@
-import { resolve } from 'path';
+import { resolve } from "path";
 
-import { copy, ensureDir, readdir, readFile } from 'fs-extra';
-import { Command } from 'clipanion';
+import { copy, ensureDir, readdir, readFile } from "fs-extra";
+import { Command } from "clipanion";
 
 export class ExtractDateFromMarkdown extends Command {
   static paths = [[`extract-date`]];
@@ -13,16 +13,16 @@ export class ExtractDateFromMarkdown extends Command {
     const metadata = {} as Record<string, string | undefined>;
     if (metadataMatch) {
       const metadataString = metadataMatch[1];
-      const metadataLines = metadataString.split('\n');
+      const metadataLines = metadataString.split("\n");
       for (const line of metadataLines) {
-        const [key, value] = line.split(': ');
+        const [key, value] = line.split(": ");
         metadata[key] = value;
       }
     }
 
     if (metadata?.date) {
       // * 2019-02-17 21:39:40
-      const [created] = metadata?.date.split(' ');
+      const [created] = metadata?.date.split(" ");
       return created;
     }
 
@@ -30,7 +30,7 @@ export class ExtractDateFromMarkdown extends Command {
   }
 
   async execute() {
-    let directory = resolve(__dirname, '..', 'blog');
+    let directory = resolve(__dirname, "..", "blog");
     this.context.stdout.write(`Read: ${directory}`);
 
     const files = await readdir(directory);
@@ -39,7 +39,7 @@ export class ExtractDateFromMarkdown extends Command {
       .filter((file) => /^(?!\d{4}-\d{2}-\d{2}).+\.md$/.test(file))
       .map((mdFile) => {
         const oldPath = resolve(directory, mdFile);
-        return readFile(oldPath, 'utf8')
+        return readFile(oldPath, "utf8")
           .then((text) => this.getDateMetadata(text))
           .then((created) => {
             if (!created) {
@@ -48,7 +48,7 @@ export class ExtractDateFromMarkdown extends Command {
 
             const targetDirectory = resolve(
               directory,
-              created.split('-').join('/')
+              created.split("-").join("/")
             );
 
             // * ensure dir blog/2019/02/17

@@ -6,7 +6,9 @@
     "gracefullight",
     "kakao",
     "laravel",
-    "serviceworker"
+    "luxon",
+    "serviceworker",
+    "slugize"
   ],
   "ignorePaths": [
     "*.config.js",

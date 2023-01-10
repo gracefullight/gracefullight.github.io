@@ -5,6 +5,9 @@
     "baseUrl": "."
   },
   "ts-node": {
+    "compilerOptions": {
+      "target": "ES2021"
+    },
     "transpileOnly": true
   }
 }
