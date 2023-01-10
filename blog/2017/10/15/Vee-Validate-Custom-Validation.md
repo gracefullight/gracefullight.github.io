@@ -11,17 +11,19 @@ created에 \$validator 인스턴스를 확장해주면 된다.
 # 소스
 
 ```js
-created: function() {
-  this.$validator.extend('customRule', {
-    getMessage: function(field, args) {
-      return '오류 메세지';
-    },
+const option = {
+  created: function() {
+    this.$validator.extend('customRule', {
+      getMessage: function(field, args) {
+        return '오류 메세지';
+      },
 
-    validate: function(value, args) {
-      // 체크 로직
-      return true;
-    }
-  });
+      validate: function(value, args) {
+        // 체크 로직
+        return true;
+      }
+    });
+  }
 }
 ```
 
@@ -32,7 +34,7 @@ created: function() {
 추가한 룰 이름으로 v-validate 속성에 넣어주면 끝이다.
 
 ```html
-<input type="text" name="help" v-validate="'required|customeRule'" />
+<input type="text" name="help" v-validate="'required|customRule'" />
 ```
 
 ## 스크립트 상에서 추가

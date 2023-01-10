@@ -71,12 +71,12 @@ document.getElementById('div').addEventListener('click', (event) => {
 > Immediately Invoked Function Expression
 
 ```js
-function foo(){ }()
+// function foo(){}()
 ```
 
 함수선언문을 어떻게 실행하냐 함수를 괄호로 감싸면 됨
 
-# null과 unedefined 그리고 undeclared의 차이점
+# null과 undefined 그리고 undeclared의 차이점
 
 - null: 선언되었지만 값 없음
 - undefined: 선언조차 안됨

@@ -355,18 +355,10 @@ result = data
 lodash를 사용하면 다음과 같이 직관적으로 구현이 가능하다.
 
 ```js
-result = _.chain(data)
-          .map('tag.media.nodes')
-          .flatten()
-          .values()
-
-// 결과는 다음과 같다
-[
-  { id: 'uid1'... },
-  { id: 'uid2'... },
-  { id: 'uid3'... },
-  { id: 'uid4'...}
-]
+result = _.chain(data).map('tag.media.nodes').flatten().values()[
+  // 결과는 다음과 같다
+  ({ id: 'uid1' }, { id: 'uid2' }, { id: 'uid3' }, { id: 'uid4' })
+];
 ```
 
 # 여담

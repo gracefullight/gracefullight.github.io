@@ -3,7 +3,6 @@ title: PWA - 서비스 워커 웹 캐싱 (Web Caching)
 authors: me
 tags: [javascript, pwa, serviceworker]
 date: 2017-12-22 20:53:41
-
 ---
 
 # 개요
@@ -192,24 +191,24 @@ self.addEventListener('activate', (event) => {
 여기서 오류가 발생하면 offline.html 같은 페이지로 떨어지게 할 수 있다. (마치 404 오류 페이지처럼)
 
 ```js sw.js
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        ...
+    caches
+      .match(event.request)
+      .then((response) => {
+        // ...
       })
-      .catch(error => {
+      .catch((error) => {
         // 에러 발생시 캐시되어있는 offline.html로 이동시킨다.
-        return caches.open(CACHE_NAME)
-          .then(cache => {
-            // 들어온 요청의 Accept 헤더가 text/html 을 포함하고 있다면 (페이지 요청이라면)
-            if (event.request.headers.get('accept').includes('text/html')) {
-              // 캐시된 offline fallback 페이지를 보여준다.
-              return cache.match('/offline.html');
-            }
-          })
+        return caches.open(CACHE_NAME).then((cache) => {
+          // 들어온 요청의 Accept 헤더가 text/html 을 포함하고 있다면 (페이지 요청이라면)
+          if (event.request.headers.get('accept').includes('text/html')) {
+            // 캐시된 offline fallback 페이지를 보여준다.
+            return cache.match('/offline.html');
+          }
+        });
       })
-    );
+  );
 });
 ```
 
@@ -230,7 +229,7 @@ self.addEventListener('fetch', event => {
       self.addEventListener('install', this.staticCacheStrategy.bind(this));
       self.addEventListener('activate', this.deleteOldCache.bind(this));
       self.addEventListener('fetch', this.dynamicCacheStrategy.bind(this));
-    }
+    },
 
     staticCacheStrategy(event) {
       // 스태틱 캐싱
@@ -242,7 +241,7 @@ self.addEventListener('fetch', event => {
 
     dynamicCacheStrategy(event) {
       // 다이나믹 캐싱
-    }
+    },
   };
 
   WEB_CACHE.init();
@@ -257,43 +256,47 @@ IIFE를 사용해 좀 더 예쁘게 변했다.
 cors 정책이 설정되어 있지 않아 아무 정보도 가지고 올 수 없는 건데, 이런 리소스만 골라서 캐싱처리를 하고 싶다면 request url이나 response content-type을 가지고 처리할 수 있다.
 
 ```js sw.js
-dynamicCacheStrategy(event) {
+const dynamicCacheStrategy = (event) => {
   // 캐싱 처리하고 싶은 content-type
   var cacheContentsTypes = [
     'image/png',
     'image/gif',
     'image/jpeg',
-    'application/font-woff'
+    'application/font-woff',
   ];
 
   event.respondWith(
-    caches.match(event.request)
-    .then(response => {
+    caches.match(event.request).then((response) => {
       var fetchRequest = event.request.clone();
 
-      return response || fetch(fetchRequest)
-      .then(response => {
-        if (!response) {
-          return response;
-        }
+      return (
+        response ||
+        fetch(fetchRequest)
+          .then((response) => {
+            if (!response) {
+              return response;
+            }
 
-        // response header에서 content-type을 가져와 비교한다.
-        // 아니면 request.url이 캐싱처리를 할 외부 url인지 확인한다.
-        if (cacheContentsTypes.indexOf(response.headers.get('content-type')) !== -1
-          || event.request.url.indexOf('external.url') !== -1
-        ) {
-          caches.open(DYNAMIC_CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, response.clone());
-            })
-        }
+            // response header에서 content-type을 가져와 비교한다.
+            // 아니면 request.url이 캐싱처리를 할 외부 url인지 확인한다.
+            if (
+              cacheContentsTypes.indexOf(
+                response.headers.get('content-type')
+              ) !== -1 ||
+              event.request.url.indexOf('external.url') !== -1
+            ) {
+              caches.open(DYNAMIC_CACHE_NAME).then((cache) => {
+                cache.put(event.request, response.clone());
+              });
+            }
 
-        return response;
-      })
-      .catch(error => console.log(error))
+            return response;
+          })
+          .catch((error) => console.log(error))
+      );
     })
   );
-}
+};
 ```
 
 # WorkBox
@@ -400,7 +403,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "674f50d287a8c48dc19ba404d20fe713"
   },
   {
-    ...
+    //...
   }
 ])
 ```

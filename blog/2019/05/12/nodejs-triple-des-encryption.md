@@ -23,8 +23,7 @@ triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물
 ```js
 const crypto = require('crypto');
 
-class TripleDes()
-{
+class TripleDes {
   // #iv;
   // #key;
 

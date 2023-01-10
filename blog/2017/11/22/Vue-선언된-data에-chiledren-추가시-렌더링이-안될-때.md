@@ -3,7 +3,6 @@ title: Vue 선언된 data에 chiledren 추가시 렌더링이 안될 때
 authors: me
 tags: [javascript, vue]
 date: 2017-11-22 16:10:02
-
 ---
 
 `data`가 이미 정의 되어있고 나중에 데이터를 추가하면 `observer`가 생성되지 않아 데이터가 갱신이 되어도 DOM이 업데이트가 안 된다.
@@ -49,15 +48,23 @@ new Vue({
 
 ```js
 /* 1안 */
-mounted: function() {
-  this.$set(this.members[0], 'logs', []);
-  this.members[0].logs = [...];
-}
+const option = {
+  mounted: function () {
+    this.$set(this.members[0], 'logs', []);
+    this.members[0].logs = [
+      // ...
+    ];
+  },
+};
 
 /* 2안 */
-mounted: function() {
-  this.members[0].logs = [];
-  this.members[0].logs = [...];
-  this.$forceUpdate();
-}
+const option = {
+  mounted: function () {
+    this.members[0].logs = [];
+    this.members[0].logs = [
+      // ...
+    ];
+    this.$forceUpdate();
+  },
+};
 ```

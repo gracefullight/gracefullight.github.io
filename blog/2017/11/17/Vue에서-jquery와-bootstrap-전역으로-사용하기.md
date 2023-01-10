@@ -3,7 +3,6 @@ title: Vue에서 jquery와 bootstrap 전역으로 사용하기
 authors: me
 tags: [vue, bootstrap, javascript, jquery]
 date: 2017-11-17 16:45:23
-
 ---
 
 `expose-loader`의 설치가 필요 없는 방법을 사용해보자
@@ -49,7 +48,7 @@ module.exports = {
 # 연동
 
 ```js src/main.js
-import 'bootstrap'
+import 'bootstrap';
 
-new Vue({...})
+new Vue({});
 ```

@@ -431,19 +431,18 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    ...
-    plugins: [
-        new webpack.ContextReplacementPlugin(
-            /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
-            path.resolve(__dirname, './src'),
-            {}
-        ),
-        // 여기를 추가
-        new HtmlWebpackPlugin({
-            template: './src/index.html'
-        })
-    ],
-    ...
+  plugins: [
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
+      path.resolve(__dirname, './src'),
+      {}
+    ),
+    // 여기를 추가
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+};
 ```
 
 index.html 에서 스크립트 삽입부분을 지운다.

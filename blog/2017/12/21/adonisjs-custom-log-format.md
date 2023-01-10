@@ -3,7 +3,6 @@ title: adonisjs 로그 포맷 변경하기 (custom log format)
 authors: me
 tags: [nodejs, javascript]
 date: 2017-12-21 15:25:45
-
 ---
 
 아도니스는 로깅 모듈로 winston 을 사용하는데 winston 은 로그를 json 포맷으로 출력하고 심지어 timezone 변수가 따로 나온다.
@@ -30,14 +29,12 @@ date: 2017-12-21 15:25:45
 > `winston` 패키지는 `@adonisjs/framework` 패키지에 종속된다.
 
 ```js config/app.js
-const moment = use('moment')
-const { config } = use('winston')
+const moment = use('moment');
+const { config } = use('winston');
 
 module.exports = {
-  ...
   logger: {
     transport: 'file',
-    ...
     file: {
       driver: 'file',
       name: 'adonis-app',
@@ -48,18 +45,17 @@ module.exports = {
       json: false,
       // 원하는 형태로 바꿔준다
       formatter: ({ level, message, meta }) => {
-        const now = moment().format('YYYY-MM-DD HH:mm:ss.SSS')
+        const now = moment().format('YYYY-MM-DD HH:mm:ss.SSS');
         // 로그 레벨에 색상을 추가하는 작업인데, 굳이 필요하진 않다
-        const logLevel = config.colorize(level, level.toUpperCase())
-        const formattedMeta = meta && Object.keys(meta).length
-                                ? '\n\t'+ JSON.stringify(meta)
-                                : ''
+        const logLevel = config.colorize(level, level.toUpperCase());
+        const formattedMeta =
+          meta && Object.keys(meta).length ? '\n\t' + JSON.stringify(meta) : '';
 
-        return `[${now}] ${logLevel} ${message || ''} ${formattedMeta}`
-      }
-    }
-  }
-}
+        return `[${now}] ${logLevel} ${message || ''} ${formattedMeta}`;
+      },
+    },
+  },
+};
 ```
 
 # 버전

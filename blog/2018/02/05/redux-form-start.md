@@ -3,7 +3,6 @@ title: redux-form 사용하기
 authors: me
 tags: [javascript, react]
 date: 2018-02-05 12:15:39
-
 ---
 
 react 로 form 을 만들어 사용하는 일은 생각보다 많은 걸 해야한다.
@@ -31,14 +30,14 @@ $ yarn add redux-form
 redux-form 의 리듀서를 연결시켜줘야한다
 
 ```js rootReducer
-import { reducer as formReducer } from 'redux-form'
+import { reducer as formReducer } from 'redux-form';
 
 const rootReducer = combineReducers({
   // form 키를 사용해야한다
-  form: formReducer
-})
+  form: formReducer,
+});
 
-export defult rootRecuder
+export default rootRecuder;
 ```
 
 # 사용
@@ -111,10 +110,10 @@ input tag 대신 Field Component 의 component 속성으로 input 을 만들어�
 
 말이 좀 어렵다면 `Login.js`의 `submitLoginForm` 속 `console.log(formData)`의 구조를 보자
 
-```js
+```json
 {
-  id: 'idValue',
-  password: 'passwordValue'
+  "id": "idValue",
+  "password": "passwordValue"
 }
 ```
 

@@ -50,14 +50,16 @@ PWA 를 시작하는데 필수 요소니 자세한 설명은 생략
 
 예를 들어보자.
 
-```js
-// 보통 fetch request 로 접근되는 경로는 다음과 같다.
-start_url: '/',
-// 검색 파라미터가 달려있다면 이런 모양일 것이다.
-start_url: '/?NaPm=',
+```json
+{
+  // 보통 fetch request 로 접근되는 경로는 다음과 같다.
+  "start_url": "/",
+  // 검색 파라미터가 달려있다면 이런 모양일 것이다.
+  "start_url": "/?NaPm=",
 
-// 하지만 manifest.json 에 들어있는 경로는 다음과 같을 것이다.
-start_url: '/?pwa=1&utm_source=pwa'
+  // 하지만 manifest.json 에 들어있는 경로는 다음과 같을 것이다.
+  "start_url": "/?pwa=1&utm_source=pwa"
+}
 ```
 
 유저가 접근시 `['NaPm', 'pwa', 'utm_source']` 등의 파라미터를 제거해야 경로가 캐시처리되며 오프라인 접근이 될 것이다.
@@ -140,7 +142,7 @@ public static boolean shouldUseLightForegroundOnBackground(int backgroundColor) 
 
 ### display
 
-크롬 문서엔 standlone, fullscreen, minimal-ui 모두 A2HS 의 기능을 활용할 수 있다고 설명되어 있으나, 실제로는 앞의 두 속성만 가능하다.
+크롬 문서엔 standalone, fullscreen, minimal-ui 모두 A2HS 의 기능을 활용할 수 있다고 설명되어 있으나, 실제로는 앞의 두 속성만 가능하다.
 삼성브라우저는 minimal-ui 속성을 지원하지 않는다.
 
 ### related_applications
@@ -148,14 +150,16 @@ public static boolean shouldUseLightForegroundOnBackground(int backgroundColor) 
 앱을 가지고 있을 경우 앱 다운로드를 유도할 수 있는데, manifest 에 아래 속성만 넣으면 된다.
 id 는 apk 업로드할 때 그 것과 같다.
 
-```js
-"prefer_related_applications": true,
-"related_applications": [
-  {
-  "platform": "play",
-  "id": "com.google.samples.apps.iosched"
-  }
-]
+```json
+{
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.google.samples.apps.iosched"
+    }
+  ]
+}
 ```
 
 # Install Banner
@@ -257,7 +261,7 @@ Manifest JSON 을 파싱하면서 브라우저 내에서 오류가 발생한다.
 
 # 테스트
 
-크롬 개발자도구의 **application > Manfiest > Add to homescreen** 으로 이벤트를 발생시킬 수 있다고 하나 잘 되진 않는다.
+크롬 개발자도구의 **application > Manifest > Add to homescreen** 으로 이벤트를 발생시킬 수 있다고 하나 잘 되진 않는다.
 
 홈 설치 조건을 만족시킬 경우, 크롬 설정 아이콘에서 "앱 명 추가" 라는 설정 메뉴가 하나 더 보이는데 이 기능으로 조건을 만족하는지와 브라우저 PWA 정도는 테스트 가능하다.
 

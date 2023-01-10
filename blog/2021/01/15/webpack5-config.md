@@ -90,7 +90,7 @@ module.exports = {
     devtoolFallbackModuleFilenameTemplate: undefined, // string | (info) => string
 
     // 웹 에서 JSONP 로 청크를 로드하는 경우 CORS 설정
-    crossOriginLoading: false // "use-credentials" | "anonymous" | false
+    crossOriginLoading: false, // "use-credentials" | "anonymous" | false
 
     // import 함수명 (polyfill 사용시 변경)
     // dynamic-import-polyfill 의 경우 __import__
@@ -260,7 +260,7 @@ module.exports = {
         resourceFragment: "#blah",
 
         // 리소스의 쿼리스트링이 일치하는지 테스트
-        resourceQuery: "?blah"
+        resourceQuery: "?blah",
 
         // 적용할 로더를 설정
         // use: [ { loader } ] 의 shortcut
@@ -312,7 +312,9 @@ module.exports = {
           browserify: false, // disable special handling of Browserify bundles
           requireJs: false, // disable requirejs.*
           node: false, // disable __dirname, __filename, module, require.extensions, require.main, etc.
-          node: {...}, // reconfigure node layer on module level
+          node: {
+            // reconfigure node layer on module level
+          },
           worker: ["default from web-worker", "..."] // Customize the WebWorker handling for javascript files, "..." refers to the defaults.
         },
 
@@ -691,7 +693,7 @@ module.exports = {
     optimizationBailout: false,
 
     // chilren 정보 포함
-    children: true
+    children: true,
 
     // 로그 레벨
     logging: true,
@@ -780,7 +782,7 @@ module.exports = {
 
     // top-level await 를 허용
     topLevelAwait: true,
-  }
+  },
 
   // 빌드시 사용할 플러그인 설정
   plugins: [
@@ -895,12 +897,12 @@ module.exports = {
       },
 
       fallbackCacheGroup: {
-        automaticNameDelimiter: "-"
+        automaticNameDelimiter: "-",
         minSize: 20000,
         maxAsyncSize: 200000,
         maxInitialSize: 100000,
         maxSize: 200000,
-      }
+      },
 
 
       /* 고급 셀렉터 설정 */
@@ -969,7 +971,7 @@ module.exports = {
   
   // 로더에 대한 별도의 리졸브 옵션
   // 웹팩의 로더 패키지를 확인하는 데만 사용
-  resolveLoader: { /* same as resolve */ }
+  resolveLoader: { /* same as resolve */ },
  
   // node.js 기능 폴리필, 모킹 추가
   node: {
