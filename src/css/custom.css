@@ -49,5 +49,21 @@
 }
 
 .gt-container .gt-btn:hover {
-  border-color: var(--ifm-pagination-nav-color-hover) !important;
+  border-color: var(--ifm-link-hover-color) !important;
+}
+
+.gt-container .gt-header-textarea {
+  background-color: var(--ifm-background-surface-color) !important;
+}
+
+.gt-container .gt-header-textarea:hover {
+  background-color: var(--ifm-background-surface-color) !important;
+}
+
+.gt-container .gt-svg svg {
+  fill: var(--ifm-color-secondary-dark) !important;
+}
+
+.gt-container .gt-error {
+  color:var(--ifm-color-danger-darker) !important;
 }

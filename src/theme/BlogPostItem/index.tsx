@@ -4,7 +4,6 @@ import type BlogPostItemType from "@theme/BlogPostItem";
 import type { WrapperProps } from "@docusaurus/types";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useIsBrowser from "@docusaurus/useIsBrowser";
 
 // ? https://github.com/gitalk/gitalk#method-two-use-in-react
 import "gitalk/dist/gitalk.css";
@@ -17,6 +16,8 @@ const gitalkBaseOptions = {
   clientID: "b0950b3dc5e33a94677f",
   clientSecret: "adaca0132158e3e456a292ac2f3ba482c15f3a05",
   distractionFreeMode: true,
+  // ? Can't get a post title from `useBlogPost`. it's an internal hook.
+  labels: ["Gitalk"],
 } as Gitalk.GitalkOptions;
 
 // ? https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogPostItem/index.tsx
