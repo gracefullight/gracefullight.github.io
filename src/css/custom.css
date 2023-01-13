@@ -67,3 +67,13 @@
 .gt-container .gt-error {
   color:var(--ifm-color-danger-darker) !important;
 }
+
+.gt-container .gt-avatar img {
+  border-radius: 50% !important;
+  height: var(--ifm-avatar-photo-size) !important;
+  width: var(--ifm-avatar-photo-size) !important;
+}
+
+.gt-container .gt-link {
+  border-bottom: none !important;
+}
