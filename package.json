@@ -1,6 +1,6 @@
 {
-  "name": "docu-blog",
-  "version": "0.0.0",
+  "name": "gracefullight.github.io",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "prepare": "husky install",
@@ -31,12 +31,12 @@
     "react-player": "^2.11.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.1",
-    "@commitlint/config-conventional": "^17.4.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@docusaurus/module-type-aliases": "2.2.0",
     "@docusaurus/types": "^2.2.0",
     "@tsconfig/docusaurus": "^1.0.6",
-    "@types/fs-extra": "^11.0.0",
+    "@types/fs-extra": "^11.0.1",
     "@types/luxon": "^3.2.0",
     "@types/react": "^17.0.52",
     "@typescript-eslint/parser": "^5.48.1",
