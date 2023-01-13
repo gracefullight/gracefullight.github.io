@@ -2,6 +2,7 @@ import React from "react";
 import BlogPostItem from "@theme-original/BlogPostItem";
 import type BlogPostItemType from "@theme/BlogPostItem";
 import type { WrapperProps } from "@docusaurus/types";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useIsBrowser from "@docusaurus/useIsBrowser";
 
@@ -23,7 +24,6 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
   const {
     siteConfig: { projectName, organizationName },
   } = useDocusaurusContext();
-  const isBrowser = useIsBrowser();
 
   const gitalkOptions = {
     ...gitalkBaseOptions,
@@ -32,13 +32,17 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
     admin: [organizationName],
   };
 
-  const isRootPage =
-    isBrowser && ["/", "/index.html"].includes(window.location.pathname);
-
   return (
     <>
       <BlogPostItem {...props} />
-      {!isRootPage && <GitalkComponent options={gitalkOptions} />}
+      <BrowserOnly>
+        {() => {
+          const isRootPage = ["/", "/index.html"].includes(
+            window.location.pathname
+          );
+          return !isRootPage && <GitalkComponent options={gitalkOptions} />;
+        }}
+      </BrowserOnly>
     </>
   );
 }
