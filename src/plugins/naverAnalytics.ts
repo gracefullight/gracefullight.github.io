@@ -18,11 +18,12 @@ export default async function naverAnalytics(
     name: "@gracefullight/docusaurus-plugin-naver-analytics",
     injectHtmlTags() {
       return {
-        postBodyTags: [
+        headTags: [
           {
             tagName: "script",
             attributes: {
               src: "https://wcs.naver.net/wcslog.js",
+              async: true,
             },
           },
           {

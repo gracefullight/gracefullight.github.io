@@ -11,7 +11,8 @@
     "luxon",
     "Naver",
     "serviceworker",
-    "slugize"
+    "slugize",
+    "wcslog"
   ],
   "ignorePaths": [
     "*.config.js",
