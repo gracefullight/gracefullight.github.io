@@ -101,6 +101,21 @@ const config = {
         ],
       }),
     ],
+    // TODO: plugins monorepo
+    [
+      // ! Can't use ts directly https://docusaurus.io/docs/typescript-support#typing-config
+      require.resolve("./src/plugins/googleAdSense"),
+      {
+        googleAdClient: "ca-pub-3004788392777865",
+        enablePageLevelAds: true,
+      },
+    ],
+    [
+      require.resolve("./src/plugins/microsoftClarity"),
+      {
+        projectId: "aongv9xgi6",
+      },
+    ],
   ],
 
   themeConfig:

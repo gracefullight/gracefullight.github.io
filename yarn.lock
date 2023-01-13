@@ -2534,7 +2534,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/utils-validation@npm:2.2.0":
+"@docusaurus/utils-validation@npm:2.2.0, @docusaurus/utils-validation@npm:^2.2.0":
   version: 2.2.0
   resolution: "@docusaurus/utils-validation@npm:2.2.0"
   dependencies:
@@ -3406,6 +3406,13 @@ __metadata:
   version: 17.0.45
   resolution: "@types/node@npm:17.0.45"
   checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.18":
+  version: 18.11.18
+  resolution: "@types/node@npm:18.11.18"
+  checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
   languageName: node
   linkType: hard
 
@@ -7476,10 +7483,12 @@ __metadata:
     "@docusaurus/theme-common": ^2.2.0
     "@docusaurus/theme-mermaid": ^2.2.0
     "@docusaurus/types": ^2.2.0
+    "@docusaurus/utils-validation": ^2.2.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.6
     "@types/fs-extra": ^11.0.1
     "@types/luxon": ^3.2.0
+    "@types/node": ^18.11.18
     "@types/react": ^17.0.52
     "@typescript-eslint/parser": ^5.48.1
     clipanion: ^3.2.0-rc.14

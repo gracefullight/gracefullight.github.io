@@ -1,3 +1,4 @@
 .yarn
 build
 *.config.js
+src/plugins/*.js
