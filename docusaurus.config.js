@@ -46,9 +46,6 @@ const config = {
           routeBasePath: "/",
           showReadingTime: true,
           blogSidebarCount: 10,
-          blogArchiveComponent: require.resolve(
-            "./src/component/BlogArchiveDescendingPage.tsx"
-          ),
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
