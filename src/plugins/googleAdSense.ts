@@ -3,12 +3,10 @@ import { Joi } from "@docusaurus/utils-validation";
 
 export interface PluginGoogleAdSenseOptions {
   googleAdClient: string;
-  enablePageLevelAds?: boolean;
 }
 
 const pluginGoogleAdSenseOptionsSchema = Joi.object({
   googleAdClient: Joi.string().required(),
-  enablePageLevelAds: Joi.boolean().optional(),
 });
 
 export default async function googleAdSense(
@@ -23,18 +21,10 @@ export default async function googleAdSense(
           {
             tagName: "script",
             attributes: {
-              src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+              src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${options.googleAdClient}`,
               async: true,
+              crossOrigin: "anonymous",
             },
-          },
-          {
-            tagName: "script",
-            innerHTML: `(adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "${options.googleAdClient}", 
-              enable_page_level_ads: ${
-                options.enablePageLevelAds ? "true" : "false"
-              }
-            });`,
           },
         ],
       };

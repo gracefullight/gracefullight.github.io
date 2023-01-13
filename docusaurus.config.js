@@ -107,7 +107,6 @@ const config = {
       require.resolve("./src/plugins/googleAdSense"),
       {
         googleAdClient: "ca-pub-3004788392777865",
-        enablePageLevelAds: true,
       },
     ],
     [
