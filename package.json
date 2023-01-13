@@ -48,6 +48,7 @@
     "fs-extra": "^11.1.0",
     "hexo-util": "^3.0.1",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.2",
     "regenerator-runtime": "^0.13.11",
     "ts-node": "^10.9.1",
