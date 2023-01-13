@@ -115,6 +115,12 @@ const config = {
         projectId: "aongv9xgi6",
       },
     ],
+    [
+      require.resolve("./src/plugins/naverAnalytics"),
+      {
+        siteId: "156bc73a81e3bd0",
+      },
+    ],
   ],
 
   themeConfig:
