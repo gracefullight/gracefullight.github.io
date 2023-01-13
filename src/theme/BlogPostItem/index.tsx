@@ -17,6 +17,7 @@ const gitalkBaseOptions = {
   clientSecret: "adaca0132158e3e456a292ac2f3ba482c15f3a05",
   distractionFreeMode: true,
   // ? Can't get a post title from `useBlogPost`. it's an internal hook.
+  // ? https://github.com/facebook/docusaurus/issues/7759
   labels: ["Gitalk"],
 } as Gitalk.GitalkOptions;
 
@@ -41,6 +42,9 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
           const isRootPage = ["/", "/index.html"].includes(
             window.location.pathname
           );
+
+          // TODO: https://github.com/next-theme/hexo-theme-next/blob/main/scripts/helpers/engine.js#L95-L99
+          // ? have to use Crypto library and assign the id option here.
           return !isRootPage && <GitalkComponent options={gitalkOptions} />;
         }}
       </BrowserOnly>
