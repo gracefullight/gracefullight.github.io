@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[78768],{75355:e=>{e.exports=JSON.parse('{"label":"gitment","permalink":"/tags/gitment","allTagsPath":"/tags","count":1}')}}]);

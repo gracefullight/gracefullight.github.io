@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[1084],{42460:e=>{e.exports=JSON.parse('{"label":"hexo","permalink":"/tags/hexo","allTagsPath":"/tags","count":3}')}}]);

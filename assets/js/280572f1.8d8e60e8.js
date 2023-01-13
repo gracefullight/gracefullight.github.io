@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[70324],{77874:s=>{s.exports=JSON.parse('{"label":"mysql","permalink":"/tags/mysql","allTagsPath":"/tags","count":10}')}}]);

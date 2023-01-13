@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[35571],{30625:a=>{a.exports=JSON.parse('{"label":"12factor","permalink":"/tags/12-factor","allTagsPath":"/tags","count":1}')}}]);

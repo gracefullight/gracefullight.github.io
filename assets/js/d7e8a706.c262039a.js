@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[13781],{77725:e=>{e.exports=JSON.parse('{"label":"vimeo","permalink":"/tags/vimeo","allTagsPath":"/tags","count":2}')}}]);

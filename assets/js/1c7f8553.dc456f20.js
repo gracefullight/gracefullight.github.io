@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[68618],{95651:s=>{s.exports=JSON.parse('{"label":"vscode","permalink":"/tags/vscode","allTagsPath":"/tags","count":1}')}}]);

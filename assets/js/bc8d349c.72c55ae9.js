@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[78280],{21277:s=>{s.exports=JSON.parse('{"label":"openshift","permalink":"/tags/openshift","allTagsPath":"/tags","count":1}')}}]);

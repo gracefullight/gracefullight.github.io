@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[38661],{13017:a=>{a.exports=JSON.parse('{"label":"rfc","permalink":"/tags/rfc","allTagsPath":"/tags","count":1}')}}]);

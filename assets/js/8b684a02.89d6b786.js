@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[30579],{55156:a=>{a.exports=JSON.parse('{"label":"oauth2","permalink":"/tags/oauth-2","allTagsPath":"/tags","count":1}')}}]);

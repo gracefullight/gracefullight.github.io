@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocu_blog=self.webpackChunkdocu_blog||[]).push([[81481],{4441:a=>{a.exports=JSON.parse('{"label":"mariadb","permalink":"/tags/mariadb","allTagsPath":"/tags","count":10}')}}]);

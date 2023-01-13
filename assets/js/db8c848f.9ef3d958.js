@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[2529],{75200:a=>{a.exports=JSON.parse('{"label":"laravel","permalink":"/tags/laravel","allTagsPath":"/tags","count":19}')}}]);
