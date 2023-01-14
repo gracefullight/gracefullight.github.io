@@ -20,7 +20,7 @@ date: 2018-02-08 17:16:14
 
 # 해결
 
-```jsx Footer.js
+```jsx title="Footer.js"
 class Footer extends Component {
   scrollToTop = (event) => {
     document.getElementById('root').scrollTo(0, 0);

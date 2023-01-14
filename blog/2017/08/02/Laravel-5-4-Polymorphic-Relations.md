@@ -17,7 +17,7 @@ morphTo는 type과 type_id를 가진, 여러 테이블로 연결되어야할 테
 
 ## 기본 문법
 
-```php YourModel.php
+```php title="YourModel.php"
 <?php
 
 class YourModel extends Model {
@@ -37,7 +37,7 @@ class YourModel extends Model {
 
 먼저 morphTo의 [소스코드](https://github.com/laravel/framework/blob/5.4/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php#L133-L150)를 를 살펴보자.
 
-```php morphTo
+```php title="morphTo"
 <?php
 /**
   * Define a polymorphic, inverse one-to-one or many relationship.
@@ -52,7 +52,7 @@ public function morphTo($name = null, $type = null, $id = null)
 
 **name**, **type**, **id**를 파라미터로 받는다. 그럼 파라미터를 넘겨보자.
 
-```php YourModel.php
+```php title="YourModel.php"
 <?php
 
 class YourModel extends Model {
@@ -70,7 +70,7 @@ class YourModel extends Model {
 
 getMorphs 함수를 따라가보자.
 
-```php getMorphs
+```php title="getMorphs"
 <?php
 protected function getMorphs($name, $type, $id) {
   // $type과 $id가 명시되면 그 값을 먼저 반환한다.
@@ -92,7 +92,7 @@ protected function getMorphs($name, $type, $id) {
 
 한 모델에만 쓸 건데 전체에 등록을 할 필요가 없으니, 사용할 모델에 기능을 넣어보자.
 
-```php YourModel.php
+```php title="YourModel.php"
 // Relation을 사용해야한다.
 use Illuminate\Database\Eloquent\Relations\Relation;
 

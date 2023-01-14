@@ -42,7 +42,7 @@ npm 으로 자바스크립트 라이브러리를 다운받기 위해선 package.
 
 그리고 **package.json** 파일을 폴더 하위에 만든다.
 
-```json package.json
+```json title="package.json"
 {
   "name": "ng2-webpack-start",
   "version": "0.1.0",
@@ -100,7 +100,7 @@ $ npm install
 
 ## index.html
 
-```html index.html
+```html title="index.html"
 <!DOCTYPE html>
 <html>
   <head>
@@ -116,7 +116,7 @@ $ npm install
 
 main.ts 는 ng2 의 기능을 하나로 통합시켜주는 **시작 스크립트**이다.
 
-```typescript main.ts
+```typescript title="main.ts"
 import 'core-js';
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
@@ -133,7 +133,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 - src\\app\\ 아래에 **app.module.ts** 파일을 생성한다.
   (D:\\workspace\\ng-test\\src\\app\\app.module.ts)
 
-```typescript app.module.ts
+```typescript title="app.module.ts"
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -161,7 +161,7 @@ export class AppModule {}
 
 app.module.ts 에서 사용할 메인 컴포넌트를 생성하자.
 
-```ts app.component.ts
+```ts title="app.component.ts"
 import { Component } from '@angular/core';
 
 @Component({
@@ -202,7 +202,7 @@ package.json 을 보면 devDependencies 옵션 밑에 의존성이 추가 된 �
 typescript 를 javascript 로 컴파일하기 위해 기본 옵션을 설정해줘야한다.
 root 에 **tsconfig.json** 파일을 만들자.
 
-```json tsconfig.json
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "target": "es5",
@@ -272,7 +272,7 @@ package.json 을 열어 명령어를 줄인 **script** 기능을 사용해보자
 
 ../dist/main.js 를 index.html 에 추가하고 브라우저에서 열어보자.
 
-```html index.html
+```html title="index.html"
 <!DOCTYPE html>
 <html>
   <head>
@@ -316,7 +316,7 @@ $ npm install --save-dev awesome-typescript-loader
 
 설치 후에 tsconfig.json 파일을 열어 webpack 을 사용한다는 옵션을 줘야한다.
 
-```json tsconfig.json
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "target": "es5",
@@ -333,7 +333,7 @@ $ npm install --save-dev awesome-typescript-loader
 
 root 에 **webpack.config.js** 파일을 만들자.
 
-```js webpack.config.js
+```js title="webpack.config.js"
 var webpack = require('webpack');
 var path = require('path');
 
@@ -374,7 +374,7 @@ plugins 에 angular 설정을 주지 않으면 오류가 발생한다.
 
 package.json 에서 build script 를 변경한다.
 
-```json package.json
+```json title="package.json"
 {
   "name": "ng2-webpack-start",
   "version": "0.1.0",
@@ -424,7 +424,7 @@ $ npm install --save-dev html-webpack-plugin
 
 **webpack.config.js**에 html plugin 설정을 추가한다.
 
-```js webpack.config.js
+```js title="webpack.config.js"
 var webpack = require('webpack');
 var path = require('path');
 // 여기를 추가
@@ -447,7 +447,7 @@ module.exports = {
 
 index.html 에서 스크립트 삽입부분을 지운다.
 
-```html index.html
+```html title="index.html"
 <!DOCTYPE html>
 <html>
   <head>
@@ -463,7 +463,7 @@ index.html 에서 스크립트 삽입부분을 지운다.
 
 package.json 에 start 스크립트를 추가한다.
 
-```json package.json
+```json title="package.json"
     "start": "webpack-dev-server --inline --progress"
 ```
 
@@ -478,7 +478,7 @@ $ npm start
 
 다시 빌드하면 dist/index.html 이 생성되고 webpack 이 생성해준 script 가 자동으로 들어가 있는걸 확인할 수 있다.
 
-```html dist/index.html
+```html title="dist/index.html"
 <!DOCTYPE html>
 <html>
   <head>

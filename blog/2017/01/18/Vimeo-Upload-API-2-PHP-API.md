@@ -40,7 +40,7 @@ $ composer require vimeo/vimeo-api
 
 ## 기본 예제 소스
 
-```php example\upload.php
+```php title="example\upload.php"
 <?php
 use Vimeo\Vimeo;
 use Vimeo\Exceptions\VimeoUploadException;

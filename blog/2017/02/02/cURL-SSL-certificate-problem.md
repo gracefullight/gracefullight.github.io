@@ -20,7 +20,7 @@ cURL error 60: SSL certificate problem...으로 시작하는 오류가 발생할
 
 **php.ini**에서 키를 추가한다.
 
-```ini php.ini
+```ini title="php.ini"
 [curl]
 ; A default value for the CURLOPT_CAINFO option. This is required to be an
 ; absolute path.

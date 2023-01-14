@@ -20,7 +20,7 @@ Windows에서 Nginx로 로컬 웹서버를 돌려보자.
 
 apache, iis가 중복이 된다면 **conf/nginx.conf** 파일을 열어 포트 설정을 바꿔준다.
 
-```nginx nginx.conf
+```nginx title="nginx.conf"
 http {
     ...
     server {

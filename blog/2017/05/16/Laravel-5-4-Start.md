@@ -134,7 +134,7 @@ Controller에서 처리된 데이터를 플랫폼에 보여주는 부분이다.
 
 ### app 파일
 
-```php config/app.php
+```php title="config/app.php"
 <?php
 return [
   // 시간대 세팅을 한다.
@@ -147,7 +147,7 @@ return [
 
 ### database 파일
 
-```php config/database.php
+```php title="config/database.php"
 <?php
 return [
   'connections' => [
@@ -211,7 +211,7 @@ $ cp -r ./vendor/caouecs/laravel-lang/src/ko ./resources/lang/ko
 
 # 라우팅
 
-```php routes/web.php
+```php title="routes/web.php"
 <?php
 // url 변수
 Route::get('/your_url/{id}', function($id) {
@@ -239,7 +239,7 @@ $ php artisan make:controller TestController --resource
 
 ## 연결
 
-```php routes/web.php
+```php title="routes/web.php"
 <?php
 // 컨트롤러명@메소드명 으로 바로 연결시킬 수 있다.
 Route::get('/url/{id}', 'TestController@get');
@@ -255,7 +255,7 @@ Route::resource('tests', 'TestController', [
 ]);
 ```
 
-```php app/Http/Controllers/TestController.php
+```php title="app/Http/Controllers/TestController.php"
 <?php
 use Illuminate\Http\Request;
 
@@ -304,12 +304,12 @@ class TestController extends Controller{
 블레이드 템플릿을 사용하며 [홈페이지](https://laravel.com/docs/5.4/blade#control-structures) 설명이 꽤나 자세하다.
 당장 알아야 할건 아래 두 개 정도 뿐이다. 나머지는 그때 그때 문서를 참조하자.
 
-```php resources/views/test/detail.blade.php
+```php title="resources/views/test/detail.blade.php"
 // 바인딩한 데이터를 {{ }} 구문으로 바로 접근할 수 있다.
 {{ $data->name }}님의 정보입니다.
 ```
 
-```php resources/views/test/create.blade.php
+```php title="resources/views/test/create.blade.php"
 // post로 전송시
 <form method="post" url="/url">
   // post로 데이터를 전송시 csrf 토큰이 필요하다.

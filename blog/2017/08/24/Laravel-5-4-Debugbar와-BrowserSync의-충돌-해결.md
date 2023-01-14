@@ -11,7 +11,7 @@ Laravel Mix로 browserSync 옵션을 활성화 시에 Debugbar가 생기지 않�
 
 # 해결
 
-```js webpack.mix.js
+```js title="webpack.mix.js"
 mix.browserSync({
   proxy: {
     // artisan serve시의 주소

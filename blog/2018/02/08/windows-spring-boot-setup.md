@@ -27,7 +27,7 @@ date: 2018-02-08 01:03:20
 
 `git bash`에서 **org.springframework.boot.loader.JarLauncher 을(를) 찾거나 로드할 수 없습니다**란 오류가 뜰 때는 **spring/bin/spring**파일을 열어 다음과 같이 수정하자
 
-```bash spring
+```bash title="spring"
 # 16번째 줄 if 문 주석처리
 # For Cygwin, ensure paths are in UNIX format before anything is touched.
 # if $cygwin ; then
@@ -45,7 +45,7 @@ date: 2018-02-08 01:03:20
 
 그래도 같은 오류가 발생한다면 `spring` 쉘 스크립트를 아예 새로 짜버리자
 
-```bash spring
+```bash title="spring"
 [ -n "$JAVA_HOME" ] && JAVA_HOME=`cygpath --unix "$JAVA_HOME"`
 # 아래에 다음 줄을 추가하자
 # 이 구문은 스프링 홈 경로를 unix 스타일로 바꿔준다

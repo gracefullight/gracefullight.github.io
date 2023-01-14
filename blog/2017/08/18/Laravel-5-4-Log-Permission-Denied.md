@@ -23,7 +23,7 @@ $ chcon -R -t httpd_sys_rw_content_t storage
 웹 서버의 유저가 다르게 설정 되어있을 때 권한이 바뀔 수 있다.
 서버 설정을 열어서 유저가 제대로 설정되어 있는지 확인해보자.
 
-```conf nginx.conf
+```conf title="nginx.conf"
 user nginx;
 ```
 
@@ -32,7 +32,7 @@ user nginx;
 php-fpm 에서 설정하는 user 와 group 이 다르게 설정 되어 있을 때 권한이 바뀔 수 있다.
 php-fpm 설정을 열어 유저가 제대로 설정되어 있는지 확인해보자.
 
-```conf php-fpm.d/www.conf
+```conf title="php-fpm.d/www.conf"
 user = nginx
 group = nginx
 
@@ -45,7 +45,7 @@ listen.group = nginx
 로그 파일이 너무 커지는 걸 막기위해 log rotate 설정이 되어있다면 권한이 바뀔 수 있다.
 logrotate 가 cron 에 물려 있는지 설정을 확인해보자.
 
-```bash /etc/logroate.d/*
+```bash title="/etc/logroate.d/*"
 $ pwd
 /etc/logroate.d
 
@@ -61,7 +61,7 @@ crontab 의 경우 root 유저로 실행이 되면 cron 에서 Laravel 을 호�
 
 log 파일을 생성하는 프로세스별로 분기해서 해결할 수 있다. [Stackoverflow](https://stackoverflow.com/questions/27674597/laravel-daily-log-created-with-wrong-permissions) 참조
 
-```php bootstrap/app.php
+```php title="bootstrap/app.php"
 $app->configureMonologUsing(function(Monolog\Logger $monolog) {
     $filename = storage_path('logs/laravel-'.php_sapi_name().'.log');
     $handler = new Monolog\Handler\RotatingFileHandler($filename);
@@ -71,14 +71,14 @@ $app->configureMonologUsing(function(Monolog\Logger $monolog) {
 
 설정을 추가해 놓으면 logs 폴더 하위에 다음과 같이 로그가 분기되어 생성된다.
 
-```bash storage/logs
+```bash title="storage/logs"
 $ ls -al .
 -rw-r--r-- 1 nginx nginx        718 Aug 18 10:56 laravel-fpm-fcgi-2017-08-18.log
 ```
 
 cron 은 root 에서 실행되나 user shell 에서 Laravel 프로세스를 실행하는 경우 root 에 의해 log 가 생성되었다면 다음과 같이 permission 을 변경해서 생성해야한다. [Post](https://blog.asamaru.net/2017/03/08/laravel-log-files-permisson-change/) 참조
 
-```php bootstrap/app.php
+```php title="bootstrap/app.php"
 $app->configureMonologUsing(function(Monolog\Logger $monolog) {
     $filename = storage_path('/logs/laravel-' . php_sapi_name() . '.log');
     // 5번째 파라미터로 666 권한을 넘긴다.

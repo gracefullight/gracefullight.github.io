@@ -21,7 +21,7 @@ $ composer require tymon/jwt-auth:1.0.0-rc.1
 
 ## service provider 등록
 
-```php config/app.php
+```php title="config/app.php"
 <?php
 
 'providers' => [
@@ -53,7 +53,7 @@ $ php artisan jwt:secret
 
 API 가드와 유저 모델을 설정하다.
 
-```php config/auth.php
+```php title="config/auth.php"
 <?php
 return [
   'defaults' => [
@@ -81,7 +81,7 @@ return [
 
 ## Member Model 설정
 
-```php app/Models/Member.php
+```php title="app/Models/Member.php"
 <?php
 ...
 // jwt를 모델에서 사용하기 위해 추가한다.
@@ -106,7 +106,7 @@ class Member extends Authenticatable implements JWTSubject
 
 ## login
 
-```php app/Http/MemberController.php
+```php title="app/Http/MemberController.php"
 <?php
 public function login(Request $request) {
   $credentials = $this->validate($request, [
@@ -152,7 +152,7 @@ https://gracefullight.github.io/me?token=yourtokens...
 
 ### routes
 
-```php routes/api.php
+```php title="routes/api.php"
 Route::group(['middleware' => 'auth:api'], function() {
   Route::get('member/logout', 'MemberController@logout');
   Route::get('member/me', 'MemberController@me');
@@ -161,7 +161,7 @@ Route::group(['middleware' => 'auth:api'], function() {
 
 ## logout
 
-```php app/Http/MemberController.php
+```php title="app/Http/MemberController.php"
 <?php
 public function logout(Request $request) {
   $this->guard()->logout();
@@ -173,7 +173,7 @@ public function logout(Request $request) {
 
 refresh는 auth:api 미들웨어 없이 처리되어야한다.
 
-```php app/Http/MemberController.php
+```php title="app/Http/MemberController.php"
 <?php
 public function refresh() {
   return $this->respondWithToken($this->guard()->refresh());

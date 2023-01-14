@@ -99,7 +99,7 @@ $ yarn add redux-saga
 
 ### type
 
-```js types/index.js
+```js title="types/index.js"
 export const FETCH_BOARDS = 'FETCH_BOARDS';
 export const FETCH_BOARDS_FULFILLED = 'FETCH_BOARDS_FULFILLED';
 export const FETCH_BOARDS_REJECTED = 'FETCH_BOARDS_REJECTED';
@@ -107,7 +107,7 @@ export const FETCH_BOARDS_REJECTED = 'FETCH_BOARDS_REJECTED';
 
 ### action
 
-```js actions/index.js
+```js title="actions/index.js"
 export const fetchBoards = () => ({
   type: FETCH_BOARDS,
 });
@@ -129,7 +129,7 @@ action이 pure object만을 반환하는 것을 보고 있으면 아름답다는
 
 ### reducer
 
-```js reducers/index.js
+```js title="reducers/index.js"
 const INITIAL_STATE = {
   boards: [],
 };
@@ -157,7 +157,7 @@ export default (state = INITIAL_STATE, { type, payload, error }) => {
 
 `saga`는 action을 listen(watch)한다.
 
-```js saga/index.js
+```js title="saga/index.js"
 import { call, spawn, put, takeEvery } from 'redux-saga/effects';
 import * as actions from '../actions';
 import axios from 'axios';
@@ -196,7 +196,7 @@ export default function* root() {
 
 스토어 담는건 각자의 취향이니 어떻게 연결하는지만 보면 된다.
 
-```js store/index.js
+```js title="store/index.js"
 import createSagaMiddleware, { END } from 'redux-saga';
 const saga = createSagaMiddleware();
 
@@ -219,7 +219,7 @@ export default function configureStore(initialState) {
 }
 ```
 
-```js index.js
+```js title="index.js"
 const store = configureStore();
 store.runSaga(rootSaga);
 ```

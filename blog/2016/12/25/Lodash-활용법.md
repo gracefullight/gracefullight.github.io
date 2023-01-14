@@ -273,7 +273,7 @@ for (var i = 0; i < source.length; i++) {
 또 다른 큰 이유는 [chain](https://lodash.com/docs#chain)을 활용해 functional programming이 가능하단 것이다.
 예를 들어 다음과 같은 데이터가 있다고 보자
 
-```js data
+```js title="data"
 [
   {
     tag: {

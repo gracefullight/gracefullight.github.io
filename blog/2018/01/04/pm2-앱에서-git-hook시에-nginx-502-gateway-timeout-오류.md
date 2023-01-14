@@ -14,7 +14,7 @@ git pull을 hook으로 실행하는데 계속 nginx 502 gateway timeout 오류�
 
 # 해결
 
-```js ecosystem.config.js
+```js title="ecosystem.config.js"
 module.exports = {
   apps: [
     {

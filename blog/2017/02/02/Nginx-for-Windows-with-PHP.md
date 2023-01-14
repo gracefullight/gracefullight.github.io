@@ -99,7 +99,7 @@ D:\php7\php-cgi.exe -b 127.0.0.1:9123 -c D:\php7\php.ini
 
 **nginx\\html\\**에 **index.php**를 만든다.
 
-```php index.php
+```php title="index.php"
 <?php
 phpinfo();
 ```

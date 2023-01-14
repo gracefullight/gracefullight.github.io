@@ -19,7 +19,7 @@ $ yarn add jquery bootstrap
 
 ## webpack
 
-```js build/webpack.base.conf.js
+```js title="build/webpack.base.conf.js"
 const webpack = require('webpack');
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
 
 ## eslint
 
-```js .enlintrs.js
+```js title=".enlintrs.js"
 module.exports = {
   globals: {
     $: true,
@@ -47,7 +47,7 @@ module.exports = {
 
 # 연동
 
-```js src/main.js
+```js title="src/main.js"
 import 'bootstrap';
 
 new Vue({});

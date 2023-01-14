@@ -101,7 +101,7 @@ $ php artisan make:seeder 시더명
 database/seeds 아래에 파일이 생성된다.
 파일을 열어보면 run() 메소드 하나가 있는데, 여기에 시드파일이 호출될 때 실행할 로직을 구현해주면 된다.
 
-```php database/seeds/BoardSeed.php
+```php title="database/seeds/BoardSeed.php"
 <?php
 public function run() {
   // 모델로 생성하기
@@ -127,7 +127,7 @@ public function run() {
 faker를 사용하려면 ModelFactory를 먼저 정의해야한다.
 상품 모델을 가져와 가짜 데이터 타입을 정의해보자.
 
-```php database/factories/ModelFactory.php
+```php title="database/factories/ModelFactory.php"
 <?php
 $factory->define(App\Models\Product::class, function(Faker\Generator $faker){
   return [
@@ -153,7 +153,7 @@ $factory->define(App\Models\Product::class, function(Faker\Generator $faker){
 
 위에서 선언한 faker 모델을 seed에서 호출해보자.
 
-```php database/seeds/ProductSeed.php
+```php title="database/seeds/ProductSeed.php"
 <?php
 public function run() {
   // 두번째 인자로 실행시킬 횟수를 넣어주면 된다.
@@ -176,7 +176,7 @@ $ php artisan db:seed
 
 아래 구조 정도만 알아두면 된다. 더 자세한건 [Eloquent Model Class](https://github.com/laravel/framework/blob/5.4/src/Illuminate/Database/Eloquent/Model.php)를 확인해보자.
 
-```php app/Models/Board.php
+```php title="app/Models/Board.php"
 <?php
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
@@ -275,7 +275,7 @@ GroupBy를 이용한 쿼리 사용시에 **Syntax error or access violation: 105
 
 database config의 strict 모드 중 **ONLY_FULL_GROUP_BY** 모드가 활성화 되어있어서 그런데 이 모드만 제외를 시켜주면 된다.
 
-```php config/database.php
+```php title="config/database.php"
 <?php
 'connections' => [
   'mysql' => [
@@ -301,7 +301,7 @@ database config의 strict 모드 중 **ONLY_FULL_GROUP_BY** 모드가 활성화 
 
 CRUD는 다음과 같다.
 
-```php YourController.php
+```php title="YourController.php"
 <?php
 
 use App\Model;
@@ -394,7 +394,7 @@ $ php artisan vendor:publish --tag=laravel-pagination
 
 ### Controller
 
-```php YourController.php
+```php title="YourController.php"
 <?php
 public function list(Request $request) {
   // ajax 요청일 경우에 listitem 뷰 반환
@@ -413,7 +413,7 @@ public function list(Request $request) {
 
 ### List view
 
-```php list.blade.php
+```php title="list.blade.php"
 <div id="list">
   @include('listitem')
 </div>
@@ -444,7 +444,7 @@ $(function () {
 
 ### ListItem view
 
-```php listitem.blade.php
+```php title="listitem.blade.php"
 <ul>
 @foreach($data as $item)
   <li>{{ $item->name }}</li>
@@ -481,7 +481,7 @@ public function paginate($perPage = 15, $columns = ['*'], $pageName = 'page', $p
 
 Controller에서 paginate 메소드를 활용해보자.
 
-```php YourController.php
+```php title="YourController.php"
 <?php
 public function list(Request $request) {
   if ($request->ajax()) {
@@ -521,7 +521,7 @@ protected function get_list2() {
 위의 script에서 조금만 수정해주면 된다.
 (list item view는 위와 동일한 코드의 반복이므로 생략)
 
-```php list.blade.php
+```php title="list.blade.php"
 <div id="list1">
   @include('list1_item')
 </div>

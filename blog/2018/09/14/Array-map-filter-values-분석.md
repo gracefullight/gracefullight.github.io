@@ -11,7 +11,7 @@ date: 2018-09-14 21:46:12
 아래 데이터로 php 와 js 의 다른 점을 확인해보자.
 **id 가 3 이상인 id 만 추출**하고 싶었다.
 
-```json users.json
+```json title="users.json"
 [
   {
     "id": 1,

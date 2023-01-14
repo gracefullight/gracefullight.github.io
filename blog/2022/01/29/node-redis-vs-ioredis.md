@@ -29,7 +29,7 @@ date: 2022-01-29 22:16:22
 
 ### 테스트
 
-```yml docker-compose.yml
+```yml title="docker-compose.yml"
 version: "3.9"
 services:
   redis:

@@ -18,7 +18,7 @@ date: 2019-01-14 21:42:16
 
 받은 Client ID 를 메타태그에 넣어준다.
 
-```html example
+```html title="example"
 <!DOCTYPE html>
 <html>
 <head>

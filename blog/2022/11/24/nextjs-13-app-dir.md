@@ -19,7 +19,7 @@ date: 2022-11-24 23:16:14
 
 app 내의 모든 로직은 Node.js 이다. 따라서 이런 로직이 가능하다.
 
-```tsx app/page.tsx
+```tsx title="app/page.tsx"
 import { hostname } from 'os';
 
 export default function Main() {
@@ -29,7 +29,7 @@ export default function Main() {
 
 이벤트를 바인딩할 수 없다.
 
-```tsx app/page.tsx
+```tsx title="app/page.tsx"
 import type { SyntheticEvent } from 'react';
 
 export default function Main() {

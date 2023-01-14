@@ -24,7 +24,7 @@ $ cat /var/log/secure | grep 'sshd.*Failed' | grep -Po "[0-9]+\.[0-9]+\.[0-9]+\.
 
 /etc/ssh/sshd_config 에 포트 설정을 변경한다.
 
-```bash /etc/ssh/sshd_config
+```bash title="/etc/ssh/sshd_config"
 Port 2020
 ```
 

@@ -10,7 +10,7 @@ date: 2018-02-06 10:02:51
 
 # 소스
 
-```js start/hooks.js
+```js title="start/hooks.js"
 const { hooks } = require('@adonisjs/ignitor');
 
 hooks.after.providersBooted(() => {

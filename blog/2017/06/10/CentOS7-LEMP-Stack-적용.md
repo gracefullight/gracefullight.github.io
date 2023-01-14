@@ -233,7 +233,7 @@ server {
 
 nginx.conf 에는 해당 옵션들도 추가해주자.
 
-```bash nginx.conf
+```bash title="nginx.conf"
   # CPU 물리 코어에 따라 설정한다.
   # 1코어에선 1로 나머지는 auto로 설정하면 된다.
   # grep ^processor /proc/cpuinfo | wc -l 로 확인 가능
@@ -286,7 +286,7 @@ nginx.conf 에는 해당 옵션들도 추가해주자.
 
 소스는 git 으로 관리가 되는데 static 파일은 주기적으로 백업이 필요하다.
 
-```bash file_backup.sh
+```bash title="file_backup.sh"
 NOW_DATE=`date`
 BACKUP_DATE=`date +"%Y%m%d"`
 FILE_DIR=백업할 폴더 경로

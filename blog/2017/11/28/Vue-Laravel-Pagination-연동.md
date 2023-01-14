@@ -8,7 +8,7 @@ date: 2017-11-28 15:36:34
 
 Laravel에서 `paginate` 메소드를 `json`으로 받았을 시에 데이터는 다음과 같다.
 
-```json response
+```json title="response"
 {
   "current_page": 1,
   "data": [{}, {}, {}],

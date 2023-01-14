@@ -27,7 +27,7 @@ DB도 같이 만들고 싶다면 [Docs](https://laravel.com/docs/5.4/authenticat
 
 **config/auth.php** 파일로 이동해 다른 모델을 등록하자.
 
-```php config/auth.php
+```php title="config/auth.php"
 <?php
 'providers' => [
   'users' => [
@@ -42,7 +42,7 @@ DB도 같이 만들고 싶다면 [Docs](https://laravel.com/docs/5.4/authenticat
 
 그리고 **app/Models/Member.php**로 이동해 내 모델을 라라벨 기본 인증 모듈을 사용할 수 있게 추가해야한다.
 
-```php app/Models/Member.php
+```php title="app/Models/Member.php"
 <?
 // 라라벨 인증 사용
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -68,7 +68,7 @@ class Member extends Authenticatable {
 
 Basic Auth는 기본 필드를 email로 잡고 있기 때문에 id 필드를 사용하게 변경해야한다.
 
-```php app/Http/Controllers/Auth/LoginController.php
+```php title="app/Http/Controllers/Auth/LoginController.php"
 <?php
 // username 메소드를 추가
 public function username() {
@@ -81,7 +81,7 @@ public function username() {
 
 회원가입이 성공하면 세션을 생성해줘야한다.
 
-```php app/Http/Controllers/Auth/RegisterController.php
+```php title="app/Http/Controllers/Auth/RegisterController.php"
 <?php
 // registered 메소드를 Override
 protected function registered(Request $request, $user) {
@@ -101,7 +101,7 @@ protected function registered(Request $request, $user) {
 
 로그인을 ajax로 처리해야될 경우 커스터마이징이 필요하다.
 
-```php app/Http/Controllers/Auth/LoginController.php
+```php title="app/Http/Controllers/Auth/LoginController.php"
 <?php
 // authenticated 메소드를 Override
 protected function authenticated(Request $request, $user) {
@@ -121,7 +121,7 @@ protected function authenticated(Request $request, $user) {
 
 비밀번호 찾기를 ajax로 처리해야될 경우 커스터마이징이 필요하다.
 
-```php app/Http/Controllers/Auth/ForgotPasswordController.php
+```php title="app/Http/Controllers/Auth/ForgotPasswordController.php"
 <?php
 public function sendResetLinkEmail(Request $request) {
   $this->validateId($request);
@@ -149,7 +149,7 @@ public function sendResetLinkEmail(Request $request) {
 ajax 요청으로 바꿨다면 굳이 필요없는 기본 route는 등록할 필요가 없다. (예를 들면 로그인 페이지)
 먼저 **routes/web.php**에서 `Auth::routes();` 를 지워주고 라라벨 route 파일을 열어보자.
 
-```php vendor/laravel/Illuminate/Routing/Router.php
+```php title="vendor/laravel/Illuminate/Routing/Router.php"
 // 994 라인
 public function auth()
 {
@@ -177,7 +177,7 @@ public function auth()
 Noticifation은 사용자에게 빠르게 알림을 보낼 수 있는 기능이지만, 정해져 있는 템플릿을 사용하므로 커스터마이징이 되게 힘들다.
 비밀번호 찾기시에 보낼 메일을 정해진 템플릿을 사용할 수 없다면 메소드를 수정하자.
 
-```php app/Models/Member.php
+```php title="app/Models/Member.php"
 <?php
 // 이 메소드를 override해야한다.
 // 첫 파라미터는 비밀번호 인증용 token이 들어온다.
@@ -196,7 +196,7 @@ Basic Auth를 사용하는데 건드려야 되는 곳이 많으므로 Auth 모�
 **먼저 사용할 모델에 Authenticatable 클래스를 상속 받자**
 그리고 LoginController에서 **Auth::attempt()** 메소드를 실행하면 끝이다.
 
-```php app/Http/Controllers/LoginController.php
+```php title="app/Http/Controllers/LoginController.php"
 public function login(Request $request) {
   $password = $request->password;
 
@@ -214,7 +214,7 @@ public function login(Request $request) {
 Auth 모듈은 기본으로 bcrypt를 사용해 비밀번호를 암호화하고 비교하는데 다른 암호화 방식을 사용해야하는 경우가 있다.
 bcrypt를 사용하지 않게 처리해보자.
 
-```php app/Models/Member.php
+```php title="app/Models/Member.php"
 // 이 메소드를 override 해야한다.
 public function getAuthPassword() {
   // bcrypt 비교를 하지 않기 위해 강제로 해시를 생성한다.
@@ -232,7 +232,7 @@ public function getAuthPassword() {
 
 먼저 모델을 하나 만들고 Authenticatable 클래스를 상속받는다.
 
-```php app/Models/Admin.php
+```php title="app/Models/Admin.php"
 <?php
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -246,7 +246,7 @@ class Admin extends Authenticatable {
 
 만든 모델을 Laravel Auth에서 사용한다고 등록을 해줘야한다.
 
-```php config/auth.php
+```php title="config/auth.php"
 <?php
 return [
   'guards' => [
@@ -275,7 +275,7 @@ passowrds 속성은 제공되는 password_resets 기능을 사용할 경우에�
 관리자 세션이 인증된 사람만 관리자 페이지에 접근할 수 있어야한다.
 **php artisan make:middleware Admin** 명령어를 실행해 Admin Middleware를 만들자.
 
-```php app/Http/Middleware/Admin.php
+```php title="app/Http/Middleware/Admin.php"
 <?php
 use Auth;
 use Closure;
@@ -296,7 +296,7 @@ class Admin {
 
 그리고 Http Kernel에 방금 만든 Admin Middleware를 라우팅에서 사용할 수 있게 등록해준다.
 
-```php app/Http/Kernel.php
+```php title="app/Http/Kernel.php"
 <?php
   ...
   protected $routeMiddleware = [
@@ -313,7 +313,7 @@ class Admin {
 
 새로운 라우팅 파일로 관리하기 위해 RouteServiceProvider에 설정을 추가한다.
 
-```php app/Providers/RouteServiceProvider.php
+```php title="app/Providers/RouteServiceProvider.php"
 <?php
 ...
   public function map() {
@@ -336,7 +336,7 @@ class Admin {
 
 마지막으로 라우팅 파일에 미들웨어를 넣어준다.
 
-```php routes/admin.php
+```php title="routes/admin.php"
 <?php
 // admin middleware를 사용하고, namespace에 admin.을 추가한다.
 Route::group(['middleware' => 'admin', 'as' => 'admin.'], function() {

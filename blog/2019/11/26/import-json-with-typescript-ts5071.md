@@ -18,7 +18,7 @@ console.log(packageJson.version);
 편안하게 잘 사용되는 로직인데 타입스크립트로 변경시에는 몇 가지 설정을 해줘야한다.
 설명에 필요없는 설정은 생략했다.
 
-```json tsconfig.json
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "moduleResolution": "node",

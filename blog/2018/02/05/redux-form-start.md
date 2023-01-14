@@ -29,7 +29,7 @@ $ yarn add redux-form
 
 redux-form 의 리듀서를 연결시켜줘야한다
 
-```js rootReducer
+```js title="rootReducer"
 import { reducer as formReducer } from 'redux-form';
 
 const rootReducer = combineReducers({
@@ -45,7 +45,7 @@ export default rootRecuder;
 redux-form component 와 redux-form 이 들어갈 compoent 를 만들어야한다
 편의상 **Login component**와 **LoginForm component**라고 하자
 
-```jsx Login
+```jsx title="Login"
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LoginForm from 'LoginForm';
@@ -66,7 +66,7 @@ export default connect()(Login);
 
 **LoginComponent**에서는 딱히 특별한게 없이 LoginForm Component 를 호출하고 함수 하나를 내려준 게 끝이다
 
-```jsx LoginForm
+```jsx title="LoginForm"
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 
@@ -125,7 +125,7 @@ input tag 대신 Field Component 의 component 속성으로 input 을 만들어�
 보통의 필드들은 `label`이 들어가 있고, `selectBox`, `checkBox`의 경우엔 스타일을 주기위해 대부분 외부 라이브러리를 쓴다
 이럴 때 Field Component 의 **component** 속성에 원하는 모양을 만들어서 넣어주면 된다
 
-```jsx LoginForm
+```jsx title="LoginForm"
 ...
 
 const renderInputField = ({ input, type, label, placeholder, meta: { touched, error }}) => {
@@ -207,7 +207,7 @@ const renderInputField = (field) => {
 checkbox, select 의 경우엔 스타일이 들어가면 element 의 onClick 를 잡아서 hidden field 의 데이터를 바꿔줘야한다
 checkbox 전체 영역을 클릭할 때마다 기존의 값을 toggle 해주는 component 를 만들 수 있다
 
-```jsx LoginForm
+```jsx title="LoginForm"
 const renderCheckboxField = ({ input, label }) => {
   return (
     <div onClick={(event) => input.onChange(!input.value)}>
@@ -237,7 +237,7 @@ changeInputValue = (targetInputName, val) => {
 
 로그인 폼에는 **아이디 저장** 기능을 붙히면 폼이 초기화될 때 그 값을 가져와야한다
 
-```jsx Login
+```jsx title="Login"
 ...
 
 class Login extends Component {
@@ -268,7 +268,7 @@ class Login extends Component {
 
 Login Component 에는 초기값을 가져와서 **initialValues** prop 안에 넣어준다
 
-```jsx LoginForm
+```jsx title="LoginForm"
 class LoginForm extends Component {
   render() {
     return <form>...</form>;

@@ -184,7 +184,7 @@ $ adonis make:model Board
 
 모델 생성 후에 몇 가지 설정을 해줘야한다.
 
-```js Board.js
+```js title="Board.js"
 class Board extends Model {
   // 테이블 명을 변경해야할 경우
   // (테이블 명이 모델명의 복수형이 아닐 경우)
@@ -231,7 +231,7 @@ class Board extends Model {
 
 `.env.example` 파일을 `.env`로 복사해 환경설정을 해주고 로그를 남기기 위해 `tmp` 폴더를 생성해준다
 
-```bash /
+```bash title="/"
 $ cp .env.example .env
 # .env 파일을 수정하고
 

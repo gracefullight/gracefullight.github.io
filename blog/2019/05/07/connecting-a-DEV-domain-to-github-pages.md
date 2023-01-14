@@ -37,7 +37,7 @@ www CNAME 1h gracefullight.github.io.
 
 public 경로 아래 CNAME 파일을 생성 후 도메인을 적는다.
 
-```txt CNAME
+```txt title="CNAME"
 gracefullight.dev
 ```
 

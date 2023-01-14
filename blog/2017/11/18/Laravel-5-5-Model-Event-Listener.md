@@ -16,7 +16,7 @@ Model이 Create 될 때 이벤트 리스너를 붙혀 다른 기능을 연결하
 
 먼저 EventServiceProvider에 내가 사용할 이벤트와 리스너를 등록해줘야한다.
 
-```php app/Providers/EventServiceProvider
+```php title="app/Providers/EventServiceProvider"
 <?php
 ...
 class EventServiceProvider extends ServiceProvider
@@ -48,7 +48,7 @@ $ php artisan event:generate
 
 모델에서 방금 추가된 이벤트를 연결시켜주자.
 
-```php app/Models/Log
+```php title="app/Models/Log"
 <?php
 use App\Events\LogCreated;
 
@@ -67,7 +67,7 @@ class Log extends Model
 
 이벤트에서 해당 모델을 연결시켜주자.
 
-```php app/Events/LogCreated
+```php title="app/Events/LogCreated"
 <?php
 use App\Models\Log;
 ...
@@ -97,7 +97,7 @@ class LogCreated
 
 리스너에서 받은 이벤트를 처리하자.
 
-```php app/Listeners/LogCreatedListener
+```php title="app/Listeners/LogCreatedListener"
 <?php
 ...
 use App\Events\LogCreated;

@@ -44,7 +44,7 @@ $ docker run -d \
 
 `docker exec`로 쉘에 접근하는 건 다 하시리라 믿고 다만, 컨테이너에 bash 쉘이 없기에 기본 sh 쉘로 접근하면 된다.
 
-```html index.html
+```html title="index.html"
 <link
   rel="stylesheet"
   href="https://unpkg.com/swagger-ui-themes@3.0.0/themes/3.x/theme-material.css"

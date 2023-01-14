@@ -32,7 +32,7 @@ date: 2017-01-22 15:50:40
 
 **robots.txt**에 sitemap 위치를 알려주는 라인을 추가한다.
 
-```txt robots.txt
+```txt title="robots.txt"
 User-agent: *
 Sitemap: https://gracefullight.github.io/sitemap.xml
 ```

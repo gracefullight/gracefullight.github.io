@@ -73,7 +73,7 @@ ECS 에서는 **작업 정의 생성** 시에 하단에 **볼륨 추가** 를 �
 예시 JSON 은 아래와 같다.
 (3306 과 3307 을 열고 Host 의 Data 폴더를 Mount 하는 기본 구성의 MariaDB Image)
 
-```json mariadb
+```json title="mariadb"
 {
   "requiresAttributes": [
     {

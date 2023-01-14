@@ -76,7 +76,7 @@ PHPIniDir "D:/php7"
 
 D:\Apache24\htdocs 경로의 index.html 파일을 index.php 로 변경 후 저장한다.
 
-```php index.php
+```php title="index.php"
 <?
     phpinfo();
 ?>

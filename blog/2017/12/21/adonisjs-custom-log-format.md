@@ -28,7 +28,7 @@ date: 2017-12-21 15:25:45
 > 오늘 날짜를 구하기 위해 `moment`를 먼저 설치하자.
 > `winston` 패키지는 `@adonisjs/framework` 패키지에 종속된다.
 
-```js config/app.js
+```js title="config/app.js"
 const moment = use('moment');
 const { config } = use('winston');
 

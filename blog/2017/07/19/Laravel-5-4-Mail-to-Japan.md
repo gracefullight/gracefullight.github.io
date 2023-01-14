@@ -18,7 +18,7 @@ Laravel 뿐아니라 일본으로 메일을 보내고 싶다면, 이 포스팅�
 
 AppServiceProvider에 메일 인코딩을 전역으로 설정하자.
 
-```php app/Providers/AppServiceProvider.php
+```php title="app/Providers/AppServiceProvider.php"
 <?php
 ...
 use Swift;
@@ -47,7 +47,7 @@ class AppServiceProvider extends ServiceProvider
 위키를 참조해보면 iso-2022는 문자열을 7bit 또는 8bit로 표현하는 기술이다. 근데, 소프트뱅크 문서에 7bit로 달란다.
 메일 폼을 열어서 build시에 인코딩 바이트를 변경하자.
 
-```php app/Mail/YourMailForm.php
+```php title="app/Mail/YourMailForm.php"
 <?php
 ...
 use Swift_Mime_ContentEncoder_PlainContentEncoder;
@@ -74,7 +74,7 @@ class YourMailForm extends Mailable
 가장 중요한 것은 Mail View에서도 charset meta tag를 등록해줘야 한다는 것이다.
 이 걸 세팅안하고 얼마나 삽질을 해댔는지, 없던 이두근이 생길지경.
 
-```php resources/view/mail/your_mail_view.blade.php
+```php title="resources/view/mail/your_mail_view.blade.php"
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">

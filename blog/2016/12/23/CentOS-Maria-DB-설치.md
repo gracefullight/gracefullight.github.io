@@ -83,7 +83,7 @@ Thread Pool 기능을 사용하기 위해 extra_port 를 3307 로 줬다.
 
 ## 소스
 
-```ini my.cnf
+```ini title="my.cnf"
 [client]
 port = 3306
 socket = /var/lib/mysql/mysql.sock

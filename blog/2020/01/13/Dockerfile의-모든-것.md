@@ -112,7 +112,7 @@ RUN mv library /usr/local/bin
 - Dockerfile 빌드 시에 따라 들어가지 않게 된다.
 - Dockerfile 과 같은 레벨 디렉토리에 있어야한다.
 
-```ini .dockerignore
+```ini title=".dockerignore"
 .git
 .idea
 .vscode

@@ -70,7 +70,7 @@ ng2-cli 는 기본 포트 4200 을 사용한다.
 
 package.json 을 열어 start 명령어 실행시 브라우져가 바로 뜨게 --open 옵션을 주자.
 
-```json package.json
+```json title="package.json"
 {
   "name": "ng2-cli-test",
   "version": "0.0.0",
@@ -106,7 +106,7 @@ $ ng g c 컴포넌트명
 
 **app.module.ts**를 확인해보면 자동으로 import 가 되어있다.
 
-```ts src/app/app.module.ts
+```ts title="src/app/app.module.ts"
 ...
 import { SubComponent } from './sub/sub.component';
 
@@ -126,7 +126,7 @@ import { SubComponent } from './sub/sub.component';
 
 이제 **app-routing.module.ts** 파일을 열어 sub.component 로 라우팅이 되게 해보자.
 
-```ts src/app/app-routing.module.ts
+```ts title="src/app/app-routing.module.ts"
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // 서브 컴포넌트 import
@@ -151,7 +151,7 @@ export class AppRoutingModule {}
 
 메인 컴포넌트의 뷰를 수정한다.
 
-```html src/app/app.component.html
+```html title="src/app/app.component.html"
 <h1>
   {{title}}
 </h1>
@@ -179,7 +179,7 @@ subpage 버튼 링크를 클릭시 sub work! 라는 sub component 의 뷰가 보
 
 전역에서 사용해야할 스크립트가 있다면 **.angular-cli.json** 파일의 **apps.scripts** 안에 넣어주면 된다.
 
-```json angular-cli.json
+```json title="angular-cli.json"
 {
     ...
     "apps":[{
@@ -196,7 +196,7 @@ subpage 버튼 링크를 클릭시 sub work! 라는 sub component 의 뷰가 보
 global script 와 마찬가지로 angular-cli.json 에 넣는 방식이 있지만
 **src/style.css**에 import 방식으로 넣어줘도 된다.
 
-```css src/style.css
+```css title="src/style.css"
 /* You can add global styles to this file, and also import other style files */
 @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
 ```
@@ -210,7 +210,7 @@ $ npm install lodash --save
 $ npm install @types/lodash --save-dev
 ```
 
-```ts any.component.ts
+```ts title="any.component.ts"
 import * as _ from 'lodash';
 ```
 

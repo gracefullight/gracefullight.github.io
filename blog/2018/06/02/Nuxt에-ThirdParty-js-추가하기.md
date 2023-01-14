@@ -20,7 +20,7 @@ Nuxt Project 에 [Particles.js](https://vincentgarreau.com/particles.js/) 를 �
 
 만들고
 
-```js vue-particles.js
+```js title="vue-particles.js"
 import Vue from 'vue';
 import VueParticles from 'vue-particles';
 
@@ -29,7 +29,7 @@ Vue.use(VueParticles);
 
 등록했다.
 
-```js nuxt.config.js
+```js title="nuxt.config.js"
 module.exports = {
   plugins: ['~/plugins/vue-particles'],
 };
@@ -41,7 +41,7 @@ module.exports = {
 
 구글링을 하니, 플러그인에 no-ssr 옵션을 주면 해결이 된다고 한다.
 
-```js nuxt.config.js
+```js title="nuxt.config.js"
 module.exports = {
   plugins: [
     {
@@ -52,7 +52,7 @@ module.exports = {
 };
 ```
 
-```html Particles.vue
+```html title="Particles.vue"
 <template>
   <no-ssr>
     <vue-particles />
@@ -84,7 +84,7 @@ vue-particles 자체에 `const` 구문을 사용하고 있기 때문에, **no-ss
 
 [window-document-undefined](https://nuxtjs.org/faq/window-document-undefined/) 문서에 따르면 이런 참조 문제를 해결할 수 있다고 한다.
 
-```html Particles.vue
+```html title="Particles.vue"
 <template>
   <vue-particles />
 </template>

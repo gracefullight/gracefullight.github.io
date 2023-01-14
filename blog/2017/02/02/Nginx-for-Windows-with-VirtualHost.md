@@ -11,7 +11,7 @@ date: 2017-02-02 18:58:59
 
 **conf\\nginx.conf** 파일에서 쉽게 추가가 가능하다.
 
-```nginx nginx.conf
+```nginx title="nginx.conf"
 http {
     # 기존에 있던 default 설정
     server {

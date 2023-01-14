@@ -21,7 +21,7 @@ $ npm install react-intl
 
 편의상 root에 **locale.js**로 만들었다. 서비스시엔 locale 폴더에 언어별로 파일을 나눠 관리하자.
 
-```js locale.js
+```js title="locale.js"
 export default {
   en: {
     hello: 'Hello',
@@ -37,7 +37,7 @@ export default {
 
 # 연동
 
-```js index.js
+```js title="index.js"
 import { IntlProvider, addLocaleData } from 'react-intl';
 // 이 서브 라이브러리들이 내 locale 파일을 사용할 수 있게 해준다
 import en from 'react-intl/locale-data/en';
@@ -113,7 +113,7 @@ HOC를 사용하지 않을 경우 `FormattedMessage`의 child로 번역된 문�
 Hello, {Gracefullight} 처럼 동적으로 문구가 변해야할 경우 `values` prop을 활용하자
 먼저, `locale.js`에서 변수가 될 부분을 {}로 감싸준다
 
-```js locale.js
+```js title="locale.js"
 export default {
   en: {
     helloUser: 'Hello {user}',

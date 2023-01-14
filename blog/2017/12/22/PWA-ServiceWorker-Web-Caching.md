@@ -66,7 +66,7 @@ if ('serviceWorker' in navigator) {
 서비스워커에서는 `self` 키워드로 자기 자신을 접근할 수 있다. 몇 가지 static 파일들을 캐싱처리 해보자.
 모던 브라우저에서만 지원이 되므로 `arrow function`을 사용해도 된다.
 
-```js sw.js
+```js title="sw.js"
 var PRE_CACHE_NAME = '캐시-스토리지1';
 // 캐시하고 싶은 리소스
 var urlsToCache = [
@@ -105,7 +105,7 @@ self.addEventListener('install', (event) => {
 
 ## Dynamic caching
 
-```js sw.js
+```js title="sw.js"
 var DYNAMIC_CACHE_NAME = '다이나믹-캐시-스토리지1';
 
 // fetch event는 어딘가에서 리소스를 가져올 때 모두 실행된다.
@@ -154,7 +154,7 @@ self.addEventListener('fetch', (event) => {
 
 캐시 스토리지명을 바꿔 캐시의 버전을 올리면 기존 캐시 스토리지는 삭제해줘야한다.
 
-```js sw.js
+```js title="sw.js"
 // 서비스 워커가 활성화 될 때
 self.addEventListener('activate', (event) => {
   // 영구적으로 가져갈 캐시 스트리지 화이트리스트
@@ -190,7 +190,7 @@ self.addEventListener('activate', (event) => {
 캐시된 페이지와 리소스는 오프라인에서도 접근이 가능하다.
 여기서 오류가 발생하면 offline.html 같은 페이지로 떨어지게 할 수 있다. (마치 404 오류 페이지처럼)
 
-```js sw.js
+```js title="sw.js"
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches
@@ -219,7 +219,7 @@ self.addEventListener('fetch', (event) => {
 
 ## 리팩토링
 
-```js sw.js
+```js title="sw.js"
 (() => {
   const STATIC_CACHE_NAME = 'STATIC_CACHE_VERSION_1';
   const DYNAMIC_CACHE_NAME = 'DYNAMIC_CACHE_VERSION_1';
@@ -255,7 +255,7 @@ IIFE를 사용해 좀 더 예쁘게 변했다.
 서비스워커에서 fetch로 외부 리소스를 가지고오면 `opaque` response가 반환된다.
 cors 정책이 설정되어 있지 않아 아무 정보도 가지고 올 수 없는 건데, 이런 리소스만 골라서 캐싱처리를 하고 싶다면 request url이나 response content-type을 가지고 처리할 수 있다.
 
-```js sw.js
+```js title="sw.js"
 const dynamicCacheStrategy = (event) => {
   // 캐싱 처리하고 싶은 content-type
   var cacheContentsTypes = [

@@ -7,7 +7,7 @@ date: 2017-01-22 01:19:01
 
 php에서 [sleep()](https://php.net/manual/kr/function.sleep.php) 메소드의 사용법은 이렇다.
 
-```php 1sec_delay.php
+```php title="1sec_delay.php"
 <?php
     // sleep ( int $seconds )
     sleep(1);

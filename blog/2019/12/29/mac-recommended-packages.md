@@ -181,7 +181,7 @@ mas install 497799835 \
 
 `brew bundle install`
 
-```bash Brewfile
+```bash title="Brewfile"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"

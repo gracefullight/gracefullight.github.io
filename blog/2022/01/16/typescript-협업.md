@@ -92,7 +92,7 @@ date: 2022-01-16 20:09:51
   - enum 은 참조코드 생김
   - const enum 은 값이 할당
 
-```ts input
+```ts title="input"
 // const
 export const timezone = {
   KR: "Asia/Seoul",
@@ -127,7 +127,7 @@ console.log(TimezoneAsEnum.KR);
 console.log(TimezoneAsConstEnum.KR);
 ```
 
-```ts output
+```ts title="output"
 // const
 export const timezone = {
   KR: "Asia/Seoul",
@@ -203,7 +203,7 @@ getTimezone(Timezone.KR);
 
 - ES6 private 은 구현을 WeakSet 으로 해놨으므로 특별한 경우가 아니라면 (윈도우에서 접근 불가능하게 해야하는 경우) 접근자로도 충분하다.
 
-```ts input
+```ts title="input"
 class Test {
 
   #es6Private() {}
@@ -212,7 +212,7 @@ class Test {
 }
 ```
 
-```ts output
+```ts title="output"
 var _Test_instances, _Test_es6Private;
 
 class Test {

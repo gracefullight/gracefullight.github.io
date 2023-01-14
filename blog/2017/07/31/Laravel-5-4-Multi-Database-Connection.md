@@ -14,7 +14,7 @@ date: 2017-07-31 22:54:58
 **config/database.php**에 새로운 커넥션 정보를 넣어주자.
 새 커낵션은 `mysql_new` 라고 이름지었다.
 
-```php config/database.php
+```php title="config/database.php"
 <?php
 return [
   ...
@@ -45,7 +45,7 @@ return [
 
 새 커넥션에 사용할 모델을 만들어주고, 모델에서 연결할 커넥션을 설정해주자.
 
-```php model.php
+```php title="model.php"
 <?php
 ...
 class OldMember extends Model
