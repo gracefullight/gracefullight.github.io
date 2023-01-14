@@ -49,7 +49,7 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
               <GitalkComponent
                 options={{
                   ...gitalkOptions,
-                  id: md5(window.location.pathname),
+                  id: md5(window.location.pathname).toString(),
                 }}
               />
             )
