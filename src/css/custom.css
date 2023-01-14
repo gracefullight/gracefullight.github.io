@@ -77,3 +77,8 @@
 .gt-container .gt-link {
   border-bottom: none !important;
 }
+
+.gt-container .gt-header-preview {
+  background-color: var(--ifm-background-surface-color);
+  color: text;
+}
