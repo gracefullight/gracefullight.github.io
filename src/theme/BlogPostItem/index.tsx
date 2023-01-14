@@ -4,6 +4,7 @@ import type BlogPostItemType from "@theme/BlogPostItem";
 import type { WrapperProps } from "@docusaurus/types";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import md5 from "crypto-js/md5";
 
 // ? https://github.com/gitalk/gitalk#method-two-use-in-react
 import "gitalk/dist/gitalk.css";
@@ -43,9 +44,16 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
             window.location.pathname
           );
 
-          // TODO: https://github.com/next-theme/hexo-theme-next/blob/main/scripts/helpers/engine.js#L95-L99
-          // ? have to use Crypto library and assign the id option here.
-          return !isRootPage && <GitalkComponent options={gitalkOptions} />;
+          return (
+            !isRootPage && (
+              <GitalkComponent
+                options={{
+                  ...gitalkOptions,
+                  id: md5(window.location.pathname),
+                }}
+              />
+            )
+          );
         }}
       </BrowserOnly>
     </>

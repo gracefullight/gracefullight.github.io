@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/utils-validation", "npm:2.2.0"],\
             ["@mdx-js/react", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.6"],\
+            ["@types/crypto-js", "npm:4.1.1"],\
             ["@types/fs-extra", "npm:11.0.1"],\
             ["@types/luxon", "npm:3.2.0"],\
             ["@types/node", "npm:18.11.18"],\
@@ -48,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:5.48.1"],\
             ["clipanion", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:3.2.0-rc.14"],\
             ["clsx", "npm:1.2.1"],\
+            ["crypto-js", "npm:4.1.1"],\
             ["eslint", "npm:8.31.0"],\
             ["eslint-config-prettier", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:8.6.0"],\
             ["eslint-plugin-mdx", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.0.5"],\
@@ -6189,6 +6191,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/crypto-js", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/@types-crypto-js-npm-4.1.1-1c4ce3312a-ea3d6a67b6.zip/node_modules/@types/crypto-js/",\
+          "packageDependencies": [\
+            ["@types/crypto-js", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/debug", [\
         ["npm:4.1.7", {\
           "packageLocation": "./.yarn/cache/@types-debug-npm-4.1.7-f54c81f8db-0a7b89d8ed.zip/node_modules/@types/debug/",\
@@ -9014,6 +9025,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["crypto-js", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/crypto-js-npm-4.1.1-38a3b8c19d-b3747c12ee.zip/node_modules/crypto-js/",\
+          "packageDependencies": [\
+            ["crypto-js", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["crypto-random-string", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/crypto-random-string-npm-2.0.0-8ab47992ef-0283879f55.zip/node_modules/crypto-random-string/",\
@@ -11819,6 +11839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/utils-validation", "npm:2.2.0"],\
             ["@mdx-js/react", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.6"],\
+            ["@types/crypto-js", "npm:4.1.1"],\
             ["@types/fs-extra", "npm:11.0.1"],\
             ["@types/luxon", "npm:3.2.0"],\
             ["@types/node", "npm:18.11.18"],\
@@ -11827,6 +11848,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:5.48.1"],\
             ["clipanion", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:3.2.0-rc.14"],\
             ["clsx", "npm:1.2.1"],\
+            ["crypto-js", "npm:4.1.1"],\
             ["eslint", "npm:8.31.0"],\
             ["eslint-config-prettier", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:8.6.0"],\
             ["eslint-plugin-mdx", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.0.5"],\
