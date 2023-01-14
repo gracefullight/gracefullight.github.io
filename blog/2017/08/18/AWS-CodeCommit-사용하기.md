@@ -101,39 +101,39 @@ Github, Bitbucket 와 달리 Webhook 설정하는 법이 조금은 복잡하다.
 이미 세팅된 [함수](https://gist.github.com/babelop/42e5580b7898719887516649b3053bc7)를 사용하자.
 
 ```js
-'use strict';
+"use strict";
 
-const url = require('url');
-const https = require('https');
+const url = require("url");
+const https = require("https");
 
 exports.handler = (event, context, callback) => {
   let webhook_url = event.Records[0].customData;
 
   if (!webhook_url) {
-    let error = new Error('Web-hook URL not provided as custom data.');
+    let error = new Error("Web-hook URL not provided as custom data.");
     callback(error);
   } else {
-    console.log('POST web-hook to ' + webhook_url);
+    console.log("POST web-hook to " + webhook_url);
     let options = url.parse(webhook_url);
-    options['method'] = 'POST';
+    options["method"] = "POST";
 
     const req = https.request(options, (res) => {
-      let body = '';
-      console.log('Status:', res.statusCode);
-      console.log('Headers:', JSON.stringify(res.headers));
-      res.setEncoding('utf8');
-      res.on('data', (chunk) => (body += chunk));
-      res.on('end', () => {
-        console.log('Successfully triggered web-hook.');
+      let body = "";
+      console.log("Status:", res.statusCode);
+      console.log("Headers:", JSON.stringify(res.headers));
+      res.setEncoding("utf8");
+      res.on("data", (chunk) => (body += chunk));
+      res.on("end", () => {
+        console.log("Successfully triggered web-hook.");
         // If we know it's JSON, parse it.
-        if (res.headers['content-type'] === 'application/json') {
+        if (res.headers["content-type"] === "application/json") {
           body = JSON.parse(body);
         }
         callback(null, body);
       });
     });
 
-    req.on('error', callback);
+    req.on("error", callback);
     req.end();
   }
 };

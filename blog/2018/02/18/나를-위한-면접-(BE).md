@@ -3,7 +3,6 @@ title: 나를 위한 면접 (Backend Developer Interview Questions)
 authors: me
 tags: [interview]
 date: 2018-02-18 14:13:34
-
 ---
 
 [BE Interview Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions)를 아는 만큼 답해보았다

@@ -26,7 +26,7 @@ date: 2016-12-21 23:31:13
 ```js
 (function ($) {
   $.validator.addMethod(
-    'biznum',
+    "biznum",
     function (bizID, element) {
       var checkID = [1, 3, 7, 1, 3, 7, 1, 3, 5, 1];
       var tmpBizID,
@@ -34,26 +34,26 @@ date: 2016-12-21 23:31:13
         chkSum = 0,
         c2,
         remander;
-      bizID = bizID.replace(/-/gi, '');
+      bizID = bizID.replace(/-/gi, "");
 
       for (i = 0; i <= 7; i++) {
         chkSum += checkID[i] * bizID.charAt(i);
       }
-      c2 = '0' + checkID[8] * bizID.charAt(8);
+      c2 = "0" + checkID[8] * bizID.charAt(8);
       c2 = c2.substring(c2.length - 2, c2.length);
       chkSum += Math.floor(c2.charAt(0)) + Math.floor(c2.charAt(1));
       remander = (10 - (chkSum % 10)) % 10;
       return this.optional(element) || Math.floor(bizID.charAt(9)) === remander;
     },
-    '사업자등록번호 형식에 맞지 않습니다'
+    "사업자등록번호 형식에 맞지 않습니다"
   );
 
   $.validator.addMethod(
-    'corpnum',
+    "corpnum",
     function (corpID, element) {
       var result = true;
       if (corpID.length === 13) {
-        var arr_regno = corpID.split('');
+        var arr_regno = corpID.split("");
         var arr_wt = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2];
         var iSum_regno = 0;
         var iCheck_digit = 0;
@@ -74,11 +74,11 @@ date: 2016-12-21 23:31:13
 
       return this.optional(element) || result;
     },
-    '법인등록번호 형식에 맞지 않습니다'
+    "법인등록번호 형식에 맞지 않습니다"
   );
 
   $.validator.addMethod(
-    'byte',
+    "byte",
     function (str, element, param) {
       var byte = 0;
       var result = true;
@@ -97,12 +97,12 @@ date: 2016-12-21 23:31:13
 
       return this.optional(element) || result;
     },
-    '최대 Byte 값을 넘었습니다'
+    "최대 Byte 값을 넘었습니다"
   );
 
   // id 체크 (alphanumeric, _- 가능, 숫자가 처음에 올수 없음)
   $.validator.addMethod(
-    'user',
+    "user",
     function (id, element) {
       return (
         this.optional(element) ||
@@ -111,24 +111,24 @@ date: 2016-12-21 23:31:13
         )
       );
     },
-    '올바른 아이디 형식이 아닙니다'
+    "올바른 아이디 형식이 아닙니다"
   );
 
   // pw 영문 && (숫자 || 특수문자)
   $.validator.addMethod(
-    'pass',
+    "pass",
     function (pass, element) {
       return (
         this.optional(element) ||
         /^(?=.*[a-zA-Z])((?=.*\d)|(?=.*\W))./.test(pass)
       );
     },
-    '올바른 비밀번호 형식이 아닙니다'
+    "올바른 비밀번호 형식이 아닙니다"
   );
 
   // datetime 형식
   $.validator.addMethod(
-    'datetime',
+    "datetime",
     function (datetime, element) {
       return (
         this.optional(element) ||
@@ -137,58 +137,58 @@ date: 2016-12-21 23:31:13
         )
       );
     },
-    '올바른 날짜, 시간형식이 아닙니다'
+    "올바른 날짜, 시간형식이 아닙니다"
   );
 
   // date 형식
   $.validator.addMethod(
-    'date',
+    "date",
     function (dt, element) {
       return (
         this.optional(element) ||
         /^\d{4}-(0[1-9]|1[0-2])-([0-2]\d|3[01])$/.test(dt)
       );
     },
-    '올바른 날짜 형식이 아닙니다'
+    "올바른 날짜 형식이 아닙니다"
   );
 
   // 옐로아이디 형식
   $.validator.addMethod(
-    'yellowid',
+    "yellowid",
     function (yid, element) {
       return this.optional(element) || /^@[\W|\w]{2,15}/.test(yid);
     },
-    '올바른 옐로아이디가 아닙니다'
+    "올바른 옐로아이디가 아닙니다"
   );
 
   // alpahnumeric _ - space
   $.validator.addMethod(
-    'alphanumeric',
+    "alphanumeric",
     function (v, element) {
       return this.optional(element) || /^[a-zA-Z\d\-_\s]+$/.test(v);
     },
-    '올바른 형식이 아닙니다'
+    "올바른 형식이 아닙니다"
   );
 
   // 하이픈을 포함한 전화번호
   $.validator.addMethod(
-    'phone',
+    "phone",
     function (p, element) {
       return this.optional(element) || /^\d{2,3}-\d{3,4}-\d{4}$/.test(p);
     },
-    '올바른 전화번호 형식이 아닙니다'
+    "올바른 전화번호 형식이 아닙니다"
   );
 
   // 하이픈을 포함한 휴대폰 번호
   $.validator.addMethod(
-    'mobile',
+    "mobile",
     function (m, element) {
       return (
         this.optional(element) ||
         /^01([0|1|6|7|8|9]?)-(\d{3,4})-(\d{4})$/.test(m)
       );
     },
-    '올바른 휴대폰 번호 형식이 아닙니다'
+    "올바른 휴대폰 번호 형식이 아닙니다"
   );
 })(jQuery);
 ```

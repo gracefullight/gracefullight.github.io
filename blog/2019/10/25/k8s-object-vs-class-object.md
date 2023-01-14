@@ -3,7 +3,6 @@ title: 쿠버네티스 오브젝트와 클래스 오브젝트 비교
 authors: me
 tags: [k8s, docker, java]
 date: 2019-10-25 15:49:57
-
 ---
 
 # 앞서

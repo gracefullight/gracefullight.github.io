@@ -3,7 +3,6 @@ title: vee-validate3 모든 규칙 추가시 TS7053 오류
 authors: me
 tags: [javascript, vue, typescript]
 date: 2019-11-26 20:29:46
-
 ---
 
 # TS7053
@@ -12,8 +11,8 @@ date: 2019-11-26 20:29:46
 문제는 `typescript` 기반에서 룰 전체 등록이 **TS(7053)** 에러를 발생시킨다.
 
 ```ts
-import { ValidationProvider, ValidationObserver, extend } from 'vee-validate';
-import * as rules from 'vee-validate/dist/rules';
+import { ValidationProvider, ValidationObserver, extend } from "vee-validate";
+import * as rules from "vee-validate/dist/rules";
 
 Object.keys(rules).forEach((rule) => {
   extend(rule, rules[rule]); // rules[rule] 에서 타입오류 발생
@@ -34,8 +33,8 @@ import, export 의 모듈명은 string index 로 쳐지지 않아 발생한다.
 `Object.entries`와 `for of`를 사용해 타입에 안전하게 돌려주면 된다.
 
 ```ts
-import { extend } from 'vee-validate';
-import * as rules from 'vee-validate/dist/rules';
+import { extend } from "vee-validate";
+import * as rules from "vee-validate/dist/rules";
 
 for (let [rule, validation] of Object.entries(rules)) {
   extend(rule, {

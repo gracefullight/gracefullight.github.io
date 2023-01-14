@@ -3,7 +3,6 @@ title: Hyper-V Virtual Eternet 네트워크 제거
 authors: me
 tags: [windows]
 date: 2018-12-23 22:43:37
-
 ---
 
 windows RS4, RS5 업데이트 이후로 Hyper-V 가 켜있으면 블루스크린이 발생한다.

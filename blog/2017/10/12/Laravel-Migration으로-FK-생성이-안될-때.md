@@ -3,7 +3,6 @@ title: Laravel - Migration으로 FK 생성이 안될 때
 authors: me
 tags: [php, laravel]
 date: 2017-10-12 08:19:21
-
 ---
 
 참조할 테이블의 PK가 increment로 정의되어 있고, 연결할 테이블의 FK가 integer로 되어있는데, SQL Syntax ERROR가 날 경우에 다음과 같이 처리하면 된다.

@@ -34,7 +34,7 @@ $ bower install moment --save
 
 <script>
   // dateTimePicker localization
-  $.datetimepicker.setLocale('ko');
+  $.datetimepicker.setLocale("ko");
   // dateTimePicker moment.js와 연동
   $.datetimepicker.setDateFormatter({
     parseDate: function (date, format) {
@@ -49,10 +49,10 @@ $ bower install moment --save
 
   $(function () {
     // datetimepicker init
-    $('.datetimepicker').datetimepicker({
-      format: 'YYYY-MM-DD HH:mm:ss',
-      formatTime: 'HH:mm',
-      formatDate: 'YYYY-MM-DD',
+    $(".datetimepicker").datetimepicker({
+      format: "YYYY-MM-DD HH:mm:ss",
+      formatTime: "HH:mm",
+      formatDate: "YYYY-MM-DD",
     });
   });
 </script>

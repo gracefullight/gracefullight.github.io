@@ -3,7 +3,6 @@ title: Top 명령어 단축키
 authors: me
 tags: [linux]
 date: 2017-11-16 22:25:47
-
 ---
 
 `top` 명령어는 자주 치는 명령어지만 예쁘게 소팅하기란 쉽지 않다.

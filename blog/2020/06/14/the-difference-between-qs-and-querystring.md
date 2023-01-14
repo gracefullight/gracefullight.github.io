@@ -3,7 +3,6 @@ title: qs 모듈과 querystring 모듈 비교
 authors: me
 tags: [javascript, nodejs, rfc]
 date: 2020-06-14 22:36:28
-
 ---
 
 # qs 모듈과 querystring 모듈 비교
@@ -20,7 +19,7 @@ date: 2020-06-14 22:36:28
 ```js
 function fixedEncodeURIComponent(str) {
   return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16);
+    return "%" + c.charCodeAt(0).toString(16);
   });
 }
 ```

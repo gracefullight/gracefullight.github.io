@@ -14,16 +14,16 @@ client 에서 callback 함수명과 전송할 값을 같이 보내어 server 에
 
 ```js
 function jsonp(url, callback) {
-  var callbackName = 'jsonp_' + Math.round(100000 * Math.random());
+  var callbackName = "jsonp_" + Math.round(100000 * Math.random());
   window[callbackName] = function (data) {
     delete window[callbackName];
     document.body.removeChild(script);
     callback(data);
   };
 
-  var script = document.createElement('script');
+  var script = document.createElement("script");
   script.src =
-    url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+    url + (url.indexOf("?") >= 0 ? "&" : "?") + "callback=" + callbackName;
   document.body.appendChild(script);
 }
 ```
@@ -37,7 +37,7 @@ stackoverflow 에서 가져온 소스인데 현재 출처를 찾을 수 없다.
 # 예제
 
 ```javascript
-jsonp('http://aaa.com?data=' + data, function (result) {
+jsonp("http://aaa.com?data=" + data, function (result) {
   console.log(result);
 });
 ```

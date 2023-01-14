@@ -3,7 +3,6 @@ title: 맥에서 블루투스 장치 차단하기
 authors: me
 tags: [mac, bluetooth]
 date: 2020-11-30 00:37:23
-
 ---
 
 # 블루투스 차단
@@ -18,7 +17,7 @@ date: 2020-11-30 00:37:23
 
 블루투스 정보는 `com.apple.Bluetooth.plist` 에서 관리한다.
 
-``` bash
+```bash
 # 설정파일을 xml 형식으로 변환한다.
 sudo plutil -convert xml1 /Library/Preferences/com.apple.Bluetooth.plist
 

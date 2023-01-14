@@ -3,7 +3,6 @@ title: RxJS의 모든 것
 authors: me
 tags: [rxjs, javascript]
 date: 2019-04-30 14:12:58
-
 ---
 
 # RxJS
@@ -71,14 +70,14 @@ Rx를 모두 이해한 뒤 이 정의를 보면 어쩜 이렇게 깔끔하게 �
 가장 간단한 옵져버블을 만들고 확인해보자.
 
 ```js
-const { Observable } = require('rxjs');
+const { Observable } = require("rxjs");
 
 const test$ = Observable.create((observer) => {
-  console.log('create');
+  console.log("create");
   observer.next(1);
   observer.next(2);
   observer.complete();
-  console.log('done');
+  console.log("done");
 });
 
 test$.subscribe(
@@ -87,7 +86,7 @@ test$.subscribe(
   },
   (error) => {},
   () => {
-    console.log('complete');
+    console.log("complete");
   }
 );
 
@@ -109,7 +108,7 @@ done
 ```js
 const test$ = Observable.create((observer) => {
   const interval = setInterval(() => {
-    console.log('test');
+    console.log("test");
   }, 1000);
 
   return () => {
@@ -127,7 +126,7 @@ Pipeable 연산자는 옵져버블 인스턴스를 pipe 함수 안에서 다룰 
 기본적으로 **rxjs/operators** 라이브러리 안에 들어있다.
 
 ```js
-const { map } = require('rxjs/operators');
+const { map } = require("rxjs/operators");
 
 const test$ = Observable.create((observer) => {
   observer.next(1);
@@ -199,7 +198,7 @@ ms 단위로 값을 발행한다.
 
 ```js
 // 상수로 사용된다.
-const { EMPTY } = require('rxjs');
+const { EMPTY } = require("rxjs");
 ```
 
 ### never
@@ -208,7 +207,7 @@ const { EMPTY } = require('rxjs');
 
 ```js
 // 상수로 사용된다.
-const { NEVER } = require('rxjs');
+const { NEVER } = require("rxjs");
 ```
 
 ### throwError
@@ -220,7 +219,7 @@ const { NEVER } = require('rxjs');
 주로 파이퍼블 연산자와 연결해서 사용된다.
 
 ```js
-const { filter } = require('rxjs/operators');
+const { filter } = require("rxjs/operators");
 // 1~10 중 짝수 필터
 range(1, 10)
   .pipe(filter((x) => x % 2 === 0))
@@ -241,7 +240,7 @@ range(1, 10)
 interval 과 같이 무한 반복이 실행되는 연산자와 같이 쓰면 된다.
 
 ```js
-const { take } = require('rxjs/operators');
+const { take } = require("rxjs/operators");
 
 interval(1000)
   .pipe(take(3))
@@ -263,7 +262,7 @@ interval(1000)
 interval(1000)
   .pipe(
     take(100),
-    takeUntil(fromEvent(document.querySelector('#btn'), 'click'))
+    takeUntil(fromEvent(document.querySelector("#btn"), "click"))
   )
   .subscribe((x) => console.log(x));
 ```

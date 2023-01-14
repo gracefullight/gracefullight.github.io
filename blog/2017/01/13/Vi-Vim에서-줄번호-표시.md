@@ -1,5 +1,5 @@
 ---
-title: 'Vi, Vim에서 줄번호 표시'
+title: "Vi, Vim에서 줄번호 표시"
 authors: me
 tags: [bash, vim]
 date: 2017-01-13 11:40:21

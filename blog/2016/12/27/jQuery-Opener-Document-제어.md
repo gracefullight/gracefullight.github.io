@@ -19,8 +19,8 @@ window.opener.document.getElementById('id')...
 jQuery를 사용하고 있다면 생각보다 쉽게 요소 선택을 할 수 있다.
 
 ```javascript
-var $id = $('#id', opener.document); // parent.document도 가능
-$id.val('value');
+var $id = $("#id", opener.document); // parent.document도 가능
+$id.val("value");
 ```
 
 2열처럼 바로 값 변경도 가능하다.

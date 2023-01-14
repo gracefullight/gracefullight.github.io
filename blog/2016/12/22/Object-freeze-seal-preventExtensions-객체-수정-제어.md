@@ -1,5 +1,5 @@
 ---
-title: 'Object freeze, seal, preventExtensions - 객체 수정 제어'
+title: "Object freeze, seal, preventExtensions - 객체 수정 제어"
 authors: me
 tags: [javascript]
 date: 2016-12-22 16:44:30
@@ -121,8 +121,8 @@ function deepFreeze(obj) {
     if (
       {}.hasOwnProperty.call(obj, key) ||
       !(
-        typeof obj[key] === 'function' ||
-        (typeof obj[key] === 'object' && !!obj[key])
+        typeof obj[key] === "function" ||
+        (typeof obj[key] === "object" && !!obj[key])
       )
     ) {
       continue;

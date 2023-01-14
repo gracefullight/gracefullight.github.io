@@ -12,7 +12,7 @@ node_modules 안에 있는 스크립트로 참조하고 싶을 때 다음과 같
 
 ```js
 // scripts 경로로 접근시 node_modules을 사용할 수 있게 설정
-app.use('/scripts', express.static(path.join(__dirname, 'node_modules')));
+app.use("/scripts", express.static(path.join(__dirname, "node_modules")));
 ```
 
 ```html

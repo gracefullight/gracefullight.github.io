@@ -11,7 +11,7 @@ selinux 를 끄는건 보안상 취약하다. 하지만 켜놓으면 ftp 가 접
 
 아래 세가지 명령어를 실행해서 selinux 의 설정을 바꿔준다.
 
-``` bash
+```bash
 $ setsebool -P httpd_enable_homedirs 1
 $ setsebool -P httpd_can_network_connect 1
 $ setsebool -P allow_ftpd_full_acccess 1

@@ -22,9 +22,9 @@ C:\Users\사용자 폴더\AppData\Roaming\Sublime Text3\Packages\ConvertToUTF8
 ```javascript
 [
   {
-    keys: ['ctrl+shift+c'],
-    command: 'convert_to_uft8',
-    args: { encoding: 'UTF-8', stamp: 0 },
+    keys: ["ctrl+shift+c"],
+    command: "convert_to_uft8",
+    args: { encoding: "UTF-8", stamp: 0 },
   },
 ];
 ```

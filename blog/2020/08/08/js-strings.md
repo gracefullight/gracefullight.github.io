@@ -3,7 +3,6 @@ title: 자바스크립트 문자열
 authors: me
 tags: [javascript]
 date: 2020-08-08 21:14:27
-
 ---
 
 # 문자열
@@ -25,16 +24,16 @@ date: 2020-08-08 21:14:27
   - 상위 써로게이트 코드유닛: 0xD800 ~ 0xDBFF
   - 하위 써로게이트 코드유닛: 0xDC00 ~ 0xDFFF
 - 계산식은 `SurrogatePair = ((High - 0xD800) * 0x400) + (Low - 0xDC00) + 0x10000;`이다.
-- 따라서 😃는 0x1F603 이며 D83D + DE03 이다. 
+- 따라서 😃는 0x1F603 이며 D83D + DE03 이다.
   - `"\uD83D\uDE03" === "\u{1F603}"`
   - `String.fromCharCode(55357, 56835) === String.fromCodePoint(128515);`
 - 비트 연산자로도 계산이 가능한데, 코드 포인트에서 0x10000 (65,536)을 빼고 상위 10bit에 0xD800 을 더한 값과 하위 10bit에 0xDC00을 더하면 된다.
 - 비트 연산의 계산식은 다음과 같다.
 
-``` js
+```js
 SurrogatePair = SurrogatePair - 0x10000;
-High = 0xD800 + (SurrogatePair >> 10);
-Low = 0xDC00 + (SurrogatePair & 0x3FF);
+High = 0xd800 + (SurrogatePair >> 10);
+Low = 0xdc00 + (SurrogatePair & 0x3ff);
 return String.fromCharCode(High, Low);
 ```
 
@@ -45,10 +44,10 @@ return String.fromCharCode(High, Low);
 - 유니코드 문자에서는 악센트나 기타 문자를 수정할 수 있는 조합 및 수정 문자, 쓰기 방향 제어 문자 등이 포함되어있다.
 - 동일한 문자처럼 보이더라도 실제로는 다를 수 있다.
 
-``` js
+```js
 // 예시 1
-"S\u0307" === "Ṡ"
-"S\u0307\u0323" === "Ṩ"
+"S\u0307" === "Ṡ";
+"S\u0307\u0323" === "Ṩ";
 
 let s1 = "S\u0307\u0323"; // Ṩ, S + 윗 점 + 아랫 점
 let s2 = "S\u0323\u0307"; // Ṩ, S + 아랫 점 + 윗 점

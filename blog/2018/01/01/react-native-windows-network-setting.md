@@ -3,7 +3,6 @@ title: 리액트 네이티브 윈도우 네트워크 설정 (react-native)
 authors: me
 tags: [react, javascript]
 date: 2018-01-01 23:50:31
-
 ---
 
 리액트 네이티브로 개발한 앱을 `Expo`로 구동 중 `network response timed out` 에러 메세지가 보인다면 다음과 같이 해결하면 된다.

@@ -10,12 +10,12 @@ date: 2016-12-21 23:48:07
 ```js
 // function
 function comma(num) {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // prototype
 Number.prototype.format = function () {
-  return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 ```
 

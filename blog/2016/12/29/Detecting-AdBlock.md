@@ -14,10 +14,10 @@ Google Analytics, Facebook Pixel, Naver Analytics 등의 분석 스크립트 및
 @author https://www.christianheilmann.com/2015/12/25/detecting-adblock-without-an-extra-http-overhead/
 */
 (function (adBlockEnabled) {
-  'use strict';
-  var testAd = document.createElement('div');
-  testAd.innerHTML = '&nbsp;';
-  testAd.className = 'adsbox';
+  "use strict";
+  var testAd = document.createElement("div");
+  testAd.innerHTML = "&nbsp;";
+  testAd.className = "adsbox";
   document.body.appendChild(testAd);
 
   setTimeout(function () {
@@ -28,7 +28,7 @@ Google Analytics, Facebook Pixel, Naver Analytics 등의 분석 스크립트 및
 
     if (adBlockEnabled) {
       alert(
-        'This Blog is made possible by displaying online advertisements\nPlease consider by disabling your ad blocker'
+        "This Blog is made possible by displaying online advertisements\nPlease consider by disabling your ad blocker"
       );
     }
   }, 100);

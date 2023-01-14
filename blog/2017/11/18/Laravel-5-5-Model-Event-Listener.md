@@ -3,7 +3,6 @@ title: Laravel 5.5 - Model Event Listener
 authors: me
 tags: [php, laravel]
 date: 2017-11-18 11:12:21
-
 ---
 
 라라벨 이벤트 리스너 기능을 붙혀보자.

@@ -16,15 +16,15 @@ jQuery, moment, D3 등의 라이브러리에서도 해당 패턴을 사용한다
 
 ```js
 (function (global, factory) {
-  if (typeof define === 'function' && define.amd) {
+  if (typeof define === "function" && define.amd) {
     // AMD 환경
-    define(['exports', 'jquery'], factory);
+    define(["exports", "jquery"], factory);
   } else if (
-    typeof exports === 'object' &&
-    typeof exports.nodeName !== 'string'
+    typeof exports === "object" &&
+    typeof exports.nodeName !== "string"
   ) {
     // CommonJS 환경
-    factory(exports, require('jquery'));
+    factory(exports, require("jquery"));
   } else {
     // 일반 브라우저
     factory((global.module1 = global.module1 || {}), global.$);
@@ -43,11 +43,11 @@ jQuery, moment, D3 등의 라이브러리에서도 해당 패턴을 사용한다
 
 ```js
 (function (global, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(['exports'], factory);
+  if (typeof define === "function" && define.amd) {
+    define(["exports"], factory);
   } else if (
-    typeof exports === 'object' &&
-    typeof exports.nodeName !== 'string'
+    typeof exports === "object" &&
+    typeof exports.nodeName !== "string"
   ) {
     factory(exports);
   } else {
@@ -64,12 +64,14 @@ jQuery, moment, D3 등의 라이브러리에서도 해당 패턴을 사용한다
 
 ```js
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-    typeof define === 'function' && define.amd ? define(['exports'], factory) :
-    (factory((global.module1 = global.module1 || {})));
-}(this, (function (exports) {
-    exports.action = function () {};
-})));
+  typeof exports === "object" && typeof module !== "undefined"
+    ? factory(exports)
+    : typeof define === "function" && define.amd
+    ? define(["exports"], factory)
+    : factory((global.module1 = global.module1 || {}));
+})(this, function (exports) {
+  exports.action = function () {};
+});
 ```
 
 # 설명

@@ -3,7 +3,6 @@ title: Laravel 5.5 - Model Collection 데이터 처리하기
 authors: me
 tags: [php, laravel]
 date: 2017-11-22 16:39:54
-
 ---
 
 Model Collection의 데이터를 처리하는 메소드를 사용하고 싶을 때 아래처럼 접근하면 된다.

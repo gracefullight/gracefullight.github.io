@@ -3,7 +3,6 @@ title: react-intl로 번역 적용하기 (react i18n)
 authors: me
 tags: [javascript, react, react-intl]
 date: 2018-01-15 16:21:41
-
 ---
 
 리액트 앱에서 번역기능을 사용하려면 [react-intl](https://github.com/yahoo/react-intl) 패키지를 사용하면 된다.
@@ -24,13 +23,13 @@ $ npm install react-intl
 ```js title="locale.js"
 export default {
   en: {
-    hello: 'Hello',
+    hello: "Hello",
   },
   ko: {
-    hello: '안녕하세요',
+    hello: "안녕하세요",
   },
   ja: {
-    hello: 'こんにちは',
+    hello: "こんにちは",
   },
 };
 ```
@@ -38,17 +37,17 @@ export default {
 # 연동
 
 ```js title="index.js"
-import { IntlProvider, addLocaleData } from 'react-intl';
+import { IntlProvider, addLocaleData } from "react-intl";
 // 이 서브 라이브러리들이 내 locale 파일을 사용할 수 있게 해준다
-import en from 'react-intl/locale-data/en';
-import ko from 'react-intl/locale-data/ko';
-import ja from 'react-intl/locale-data/ja';
-import locale from './locale';
+import en from "react-intl/locale-data/en";
+import ko from "react-intl/locale-data/ko";
+import ja from "react-intl/locale-data/ja";
+import locale from "./locale";
 
 addLocaleData([...en, ...ko, ...ja]);
 
 // 저장되어 있는 언어 데이터를 가져온다
-const defaultLang = localStorage.getItem('lang') || 'en';
+const defaultLang = localStorage.getItem("lang") || "en";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -56,14 +55,14 @@ ReactDOM.render(
       <App />
     </IntlProvider>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 
 # 사용
 
 ```js
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 
 <FormattedMessage id="hello" />;
 // 저장되어 있는 언어 값에 따라 Hello, 안녕하세요, こんにちは 중 하나가 보여진다
@@ -74,8 +73,8 @@ import { FormattedMessage } from 'react-intl';
 placeholder 등에서 텍스트만 필요할 때 `component`를 사용하지않고 다음과 같이 intl을 주입해서 사용한다.
 
 ```jsx
-import React, { Component } from 'react';
-import { injectIntl } from 'react-intl';
+import React, { Component } from "react";
+import { injectIntl } from "react-intl";
 
 class SignupForm extends Component {
   render() {
@@ -87,7 +86,7 @@ class SignupForm extends Component {
           type="text"
           name="id"
           placeholder={intl.formatMessage({
-            id: 'hello',
+            id: "hello",
           })}
         />
       </form>
@@ -116,13 +115,13 @@ Hello, {Gracefullight} 처럼 동적으로 문구가 변해야할 경우 `values
 ```js title="locale.js"
 export default {
   en: {
-    helloUser: 'Hello {user}',
+    helloUser: "Hello {user}",
   },
   ko: {
-    helloUser: '{user} 안녕하세요',
+    helloUser: "{user} 안녕하세요",
   },
   ja: {
-    helloUser: '{user} こんにちは',
+    helloUser: "{user} こんにちは",
   },
 };
 ```
@@ -133,7 +132,7 @@ export default {
 <FormattedMessage
   id="helloUser"
   values={{
-    user: 'Gracefullight',
+    user: "Gracefullight",
   }}
 />
 ```

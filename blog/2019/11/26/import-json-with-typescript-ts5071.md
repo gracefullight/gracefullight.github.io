@@ -3,7 +3,6 @@ title: 타입스크립트에서 json import 방법
 authors: me
 tags: [javascript, typescript, nodejs, json]
 date: 2019-11-26 21:39:39
-
 ---
 
 # TS5071
@@ -11,7 +10,7 @@ date: 2019-11-26 21:39:39
 node 에서 즐겨쓰는 `package.json` import 방법은 아래와 같다.
 
 ```js
-import packageJson from '../package.json';
+import packageJson from "../package.json";
 console.log(packageJson.version);
 ```
 

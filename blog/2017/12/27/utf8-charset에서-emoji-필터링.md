@@ -3,7 +3,6 @@ title: utf8 charset에서 emoji 필터링하기
 authors: me
 tags: [php, nodejs, mariadb, mysql]
 date: 2017-12-27 13:05:20
-
 ---
 
 # 개요
@@ -74,11 +73,11 @@ $ yarn add emoji-regex
 ## 소스
 
 ```js
-const emojiRegex = require('emoji-regex');
+const emojiRegex = require("emoji-regex");
 
 // const regex = emojiRegex()
-const textWithEmoji = 'thumbs up👍👍';
-const text = textWithEmoji.replace(emojiRegex(), '');
+const textWithEmoji = "thumbs up👍👍";
+const text = textWithEmoji.replace(emojiRegex(), "");
 
 // text => thumbs up
 ```

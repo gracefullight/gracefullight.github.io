@@ -1,5 +1,5 @@
 ---
-title: 'Hyper-V를 사용한 VM 실행'
+title: "Hyper-V를 사용한 VM 실행"
 authors: me
 tags: [windows]
 date: 2017-02-23 13:53:08
@@ -59,7 +59,7 @@ Hyper-V 관련 기능을 체크해주고 **확인** 버튼을 눌러 다시 시�
 
 **가상 스위치 관리자 > 외부 > 가상 스위치 만들기** 버튼으로 가상 스위치를 생성한다.
 생성 후 이름 변경 및 연결할 외부 네트워크를 선택해주자.
-![image from hexo](https://i.imgur.com/6ks2IGU.png )
+![image from hexo](https://i.imgur.com/6ks2IGU.png)
 
 ## 가상 컴퓨터 생성
 

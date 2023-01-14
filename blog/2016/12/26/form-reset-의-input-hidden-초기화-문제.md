@@ -16,19 +16,19 @@ $.fn.clearForm = function () {
   return this.each(function () {
     var type = this.type,
       tag = this.tagName.toLowerCase();
-    if (tag === 'form') {
-      return $(':input', this).clearForm();
+    if (tag === "form") {
+      return $(":input", this).clearForm();
     }
     if (
-      type === 'text' ||
-      type === 'password' ||
-      type === 'hidden' ||
-      tag === 'textarea'
+      type === "text" ||
+      type === "password" ||
+      type === "hidden" ||
+      tag === "textarea"
     ) {
-      this.value = '';
-    } else if (type === 'checkbox' || type === 'radio') {
+      this.value = "";
+    } else if (type === "checkbox" || type === "radio") {
       this.checked = false;
-    } else if (tag === 'select') {
+    } else if (tag === "select") {
       this.selectedIndex = -1;
     }
   });
@@ -38,7 +38,7 @@ $.fn.clearForm = function () {
 # 예제
 
 ```javascript
-$('#form').clearForm();
+$("#form").clearForm();
 ```
 
 # 설명

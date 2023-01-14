@@ -3,7 +3,6 @@ title: Laravel 5.5 - 다형성 관계
 authors: me
 tags: [php, laravel]
 date: 2017-08-02 23:29:36
-
 ---
 
 댓글 테이블이 있고 이 댓글은 여러 테이블에서 사용된다고 치자.

@@ -30,7 +30,7 @@ $ yarn add redux-form
 redux-form 의 리듀서를 연결시켜줘야한다
 
 ```js title="rootReducer"
-import { reducer as formReducer } from 'redux-form';
+import { reducer as formReducer } from "redux-form";
 
 const rootReducer = combineReducers({
   // form 키를 사용해야한다
@@ -46,13 +46,13 @@ redux-form component 와 redux-form 이 들어갈 compoent 를 만들어야한�
 편의상 **Login component**와 **LoginForm component**라고 하자
 
 ```jsx title="Login"
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import LoginForm from 'LoginForm';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import LoginForm from "LoginForm";
 
 class Login extends Component {
   submitLoginForm = (formData) => {
-    console.log('LoginFormData => ', formData);
+    console.log("LoginFormData => ", formData);
     // this.props.loginAuth(formData)
   };
 
@@ -67,8 +67,8 @@ export default connect()(Login);
 **LoginComponent**에서는 딱히 특별한게 없이 LoginForm Component 를 호출하고 함수 하나를 내려준 게 끝이다
 
 ```jsx title="LoginForm"
-import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form';
+import React, { Component } from "react";
+import { Field, reduxForm } from "redux-form";
 
 class LoginForm extends Component {
   render() {
@@ -98,7 +98,7 @@ class LoginForm extends Component {
 }
 
 export default reduxForm({
-  form: 'LoginForm', // formReducer에 어떤 이름으로 이 폼을 등록할지
+  form: "LoginForm", // formReducer에 어떤 이름으로 이 폼을 등록할지
 })(LoginForm);
 ```
 
@@ -212,7 +212,7 @@ const renderCheckboxField = ({ input, label }) => {
   return (
     <div onClick={(event) => input.onChange(!input.value)}>
       <i
-        className={`fa ${!input.value ? 'fa-square-o' : 'fa-check-square-o'}`}
+        className={`fa ${!input.value ? "fa-square-o" : "fa-check-square-o"}`}
       />
       <label>{label}</label>
       <input type="hidden" {...input} />
@@ -276,7 +276,7 @@ class LoginForm extends Component {
 }
 
 export default reduxForm({
-  form: 'LoginForm',
+  form: "LoginForm",
   // 이 값은 LoginForm 컴포넌트가 로드되고 나서
   // initialValues가 바뀔 경우 폼 값도 업데이트가 되야되는지의 여부이다
   enableReinitialize: true,

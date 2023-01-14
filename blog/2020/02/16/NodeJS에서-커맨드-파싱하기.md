@@ -3,7 +3,6 @@ title: NodeJS에서 커맨드 파싱하기
 authors: me
 tags: [nodejs, javascript, bash]
 date: 2020-02-16 20:10:12
-
 ---
 
 # arg
@@ -15,7 +14,7 @@ date: 2020-02-16 20:10:12
 arg 함수 하나로 파싱이 가능하다.
 
 ```js
-const arg = require('arg');
+const arg = require("arg");
 
 // `options` is an optional parameter
 const args = arg(
@@ -41,30 +40,30 @@ const help = () => {
 let args = {};
 try {
   args = arg({
-    '--help': Boolean,
-    '--user': String,
-    '--password': String,
-    '--verbose': arg.COUNT,
-    '--test': Boolean,
+    "--help": Boolean,
+    "--user": String,
+    "--password": String,
+    "--verbose": arg.COUNT,
+    "--test": Boolean,
 
-    '-h': '--help',
-    '-u': '--user',
-    '-p': '--password',
-    '-v': '--verbose',
+    "-h": "--help",
+    "-u": "--user",
+    "-p": "--password",
+    "-v": "--verbose",
   });
 } catch (err) {
-  if (err.code === 'ARG_UNKNOWN_OPTION') {
+  if (err.code === "ARG_UNKNOWN_OPTION") {
     help();
     process.exit(1);
   }
 }
 
-if (!(args['--user'] && args['--password'])) {
+if (!(args["--user"] && args["--password"])) {
   help();
   process.exit(1);
 }
 
-if (args['--test'] === true) {
+if (args["--test"] === true) {
   process.env.TEST = 1;
 }
 ```

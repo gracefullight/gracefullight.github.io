@@ -15,7 +15,7 @@ java에 joda-time이 있듯 javascript에는 moment가 있다.
 ## 소스
 
 ```javascript
-moment(date).calendar(today, { sameElse: 'YYYY-MM-DD HH:mm:ss' });
+moment(date).calendar(today, { sameElse: "YYYY-MM-DD HH:mm:ss" });
 ```
 
 date는 비교할 날짜, today는 현재시각 값이다.
@@ -34,7 +34,7 @@ A에서 B의 차이를 구할 때 쓰는 diff method를 쓰다가, 월 또는 �
 ### worst case
 
 ```javascript
-moment('2016-06').diff('2015-01', 'month');
+moment("2016-06").diff("2015-01", "month");
 ```
 
 이렇게 처리하면 되지 않을까? 동작은 하지만 오류가 날 수 있다고 console.warning 이 찍힌다.
@@ -42,7 +42,7 @@ moment('2016-06').diff('2015-01', 'month');
 ### good case
 
 ```javascript
-moment([2016, 06]).diff([2015, 01], 'month');
+moment([2016, 06]).diff([2015, 01], "month");
 ```
 
 실행이 잘되지만, YYYY-MM을 split해서 넣어줘야하는 번거로움이 있다.
@@ -50,7 +50,7 @@ moment([2016, 06]).diff([2015, 01], 'month');
 ### best case
 
 ```javascript
-moment('2016-06', 'YYYY-MM').diff('2015-01', 'month');
+moment("2016-06", "YYYY-MM").diff("2015-01", "month");
 ```
 
 moment 형식으로 변환시 두번째 파라미터에 포맷을 지정하면 console.warning도 없고 번거로움도 사라진다!

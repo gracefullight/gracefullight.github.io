@@ -10,7 +10,7 @@ date: 2016-12-28 12:24:35
 # 소스
 
 ```js
-$('#id').keypress(function (e) {
+$("#id").keypress(function (e) {
   if (e.which === 13) {
     // do something
   }

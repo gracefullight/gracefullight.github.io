@@ -3,7 +3,6 @@ title: Laravel 5.5 - Multi DB Connection
 authors: me
 tags: [php, laravel]
 date: 2017-07-31 22:54:58
-
 ---
 
 여러 데이터베이스에서 데이터를 가져와야되는 경우가 있다. (마이그레이션 또는 발송 모듈 DB의 분기 등등)

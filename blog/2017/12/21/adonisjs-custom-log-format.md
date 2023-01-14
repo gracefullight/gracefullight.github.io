@@ -29,29 +29,29 @@ date: 2017-12-21 15:25:45
 > `winston` 패키지는 `@adonisjs/framework` 패키지에 종속된다.
 
 ```js title="config/app.js"
-const moment = use('moment');
-const { config } = use('winston');
+const moment = use("moment");
+const { config } = use("winston");
 
 module.exports = {
   logger: {
-    transport: 'file',
+    transport: "file",
     file: {
-      driver: 'file',
-      name: 'adonis-app',
+      driver: "file",
+      name: "adonis-app",
       // 파일명을 바꿔준다
-      filename: `adonis_${moment().format('YYYYMMDD')}.log`,
-      level: 'debug',
+      filename: `adonis_${moment().format("YYYYMMDD")}.log`,
+      level: "debug",
       // json 로그 포맷을 해제하고
       json: false,
       // 원하는 형태로 바꿔준다
       formatter: ({ level, message, meta }) => {
-        const now = moment().format('YYYY-MM-DD HH:mm:ss.SSS');
+        const now = moment().format("YYYY-MM-DD HH:mm:ss.SSS");
         // 로그 레벨에 색상을 추가하는 작업인데, 굳이 필요하진 않다
         const logLevel = config.colorize(level, level.toUpperCase());
         const formattedMeta =
-          meta && Object.keys(meta).length ? '\n\t' + JSON.stringify(meta) : '';
+          meta && Object.keys(meta).length ? "\n\t" + JSON.stringify(meta) : "";
 
-        return `[${now}] ${logLevel} ${message || ''} ${formattedMeta}`;
+        return `[${now}] ${logLevel} ${message || ""} ${formattedMeta}`;
       },
     },
   },

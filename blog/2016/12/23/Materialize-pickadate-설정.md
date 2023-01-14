@@ -18,44 +18,44 @@ date: 2016-12-23 15:51:23
     // pickadate 옵션 전역설정
     $.extend($.fn.pickadate.defaults, {
       monthsFull: [
-        '1월',
-        '2월',
-        '3월',
-        '4월',
-        '5월',
-        '6월',
-        '7월',
-        '8월',
-        '9월',
-        '10월',
-        '11월',
-        '12월',
+        "1월",
+        "2월",
+        "3월",
+        "4월",
+        "5월",
+        "6월",
+        "7월",
+        "8월",
+        "9월",
+        "10월",
+        "11월",
+        "12월",
       ],
       monthsShort: [
-        '1월',
-        '2월',
-        '3월',
-        '4월',
-        '5월',
-        '6월',
-        '7월',
-        '8월',
-        '9월',
-        '10월',
-        '11월',
-        '12월',
+        "1월",
+        "2월",
+        "3월",
+        "4월",
+        "5월",
+        "6월",
+        "7월",
+        "8월",
+        "9월",
+        "10월",
+        "11월",
+        "12월",
       ],
-      weekdaysFull: ['일', '월', '화', '수', '목', '금', '토'],
-      weekdaysShort: ['일', '월', '화', '수', '목', '금', '토'],
+      weekdaysFull: ["일", "월", "화", "수", "목", "금", "토"],
+      weekdaysShort: ["일", "월", "화", "수", "목", "금", "토"],
       selectMonths: true,
       selectYears: 140,
       showMonthsShort: false,
       showWeekdaysFull: false,
-      close: '닫기',
+      close: "닫기",
       clear: false,
-      today: '오늘',
-      format: 'yyyy-mm-dd',
-      formatSubmit: 'yyyy-mm-dd',
+      today: "오늘",
+      format: "yyyy-mm-dd",
+      formatSubmit: "yyyy-mm-dd",
       max: true, // 이 옵션이 ture면 오늘까지밖에 날짜 선택을 못한다
       closeOnSelect: true,
       onSet: function (e) {
@@ -66,7 +66,7 @@ date: 2016-12-23 15:51:23
     });
 
     // 활성화
-    $('.date').pickadate();
+    $(".date").pickadate();
   });
 </script>
 ```

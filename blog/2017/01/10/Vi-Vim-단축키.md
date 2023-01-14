@@ -1,5 +1,5 @@
 ---
-title: 'Vi, Vim 단축키'
+title: "Vi, Vim 단축키"
 authors: me
 tags: [bash, vim]
 date: 2017-01-10 22:29:29

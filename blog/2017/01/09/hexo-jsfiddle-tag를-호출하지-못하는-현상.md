@@ -29,10 +29,10 @@ https인 github.io에서 http로 jsfiddle을 호출해서 차단된다.
 function jsfiddleTag(args, content) {
   var id = args[0];
   var tabs =
-    args[1] && args[1] !== 'default' ? args[1] : 'js,resources,html,css,result';
-  var skin = args[2] && args[2] !== 'default' ? args[2] : 'light';
-  var width = args[3] && args[3] !== 'default' ? args[3] : '100%';
-  var height = args[4] && args[4] !== 'default' ? args[4] : '300';
+    args[1] && args[1] !== "default" ? args[1] : "js,resources,html,css,result";
+  var skin = args[2] && args[2] !== "default" ? args[2] : "light";
+  var width = args[3] && args[3] !== "default" ? args[3] : "100%";
+  var height = args[4] && args[4] !== "default" ? args[4] : "300";
 
   // http://jsfiddle.net > //jsfiddle.net
   return (
@@ -42,9 +42,9 @@ function jsfiddleTag(args, content) {
     height +
     '" src="//jsfiddle.net/' +
     id +
-    '/embedded/' +
+    "/embedded/" +
     tabs +
-    '/' +
+    "/" +
     skin +
     '" frameborder="0" allowfullscreen></iframe>'
   );

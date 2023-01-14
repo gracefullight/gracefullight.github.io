@@ -22,12 +22,12 @@ $(div).load(url);
 ```js
 // 사용 불가능
 $(img).load(function () {
-  console.log('이미지 로드 완료');
+  console.log("이미지 로드 완료");
 });
 
 // 사용 가능
-$(img).on('load', function () {
-  console.log('이미지 로드 완료');
+$(img).on("load", function () {
+  console.log("이미지 로드 완료");
 });
 ```
 
@@ -72,20 +72,20 @@ jquery.onoff 라이브러리 사용시 오류가 난다.
 이 부분은 jQuery 문서의 예제를 참조했다.
 
 ```javascript
-var $div = $('<div />');
-$div.data('clickCount', 2);
-$div.data('clickCount'); // 2
-$div.data('click-count', 3);
-$div.data('clickCount'); // 3
-$div.data('click-count'); // 3
+var $div = $("<div />");
+$div.data("clickCount", 2);
+$div.data("clickCount"); // 2
+$div.data("click-count", 3);
+$div.data("clickCount"); // 3
+$div.data("click-count"); // 3
 
 var allData = $div.data();
 allData.clickCount; // 3
-allData['click-count']; // undefined
-allData['click-count'] = 14;
-$div.data('click-count'); // 3, NOT 14 as it would be in jQuery 2.x
+allData["click-count"]; // undefined
+allData["click-count"] = 14;
+$div.data("click-count"); // 3, NOT 14 as it would be in jQuery 2.x
 allData.clickCount; // 3
-allData['click-count']; // 14
+allData["click-count"]; // 14
 ```
 
 하지만 헷갈리니 camelCase 로.

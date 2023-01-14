@@ -32,6 +32,6 @@ date: 2017-11-08 10:28:50
   display: none;
 }
 [v-cloak]::before {
-  content: 'loading...';
+  content: "loading...";
 }
 ```

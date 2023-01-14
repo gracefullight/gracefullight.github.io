@@ -127,18 +127,18 @@ import { SubComponent } from './sub/sub.component';
 이제 **app-routing.module.ts** 파일을 열어 sub.component 로 라우팅이 되게 해보자.
 
 ```ts title="src/app/app-routing.module.ts"
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 // 서브 컴포넌트 import
-import { SubComponent } from './sub/sub.component';
+import { SubComponent } from "./sub/sub.component";
 
 // sub로 접속시 SubComponent 사용
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     children: [],
   },
-  { path: 'sub', component: SubComponent },
+  { path: "sub", component: SubComponent },
 ];
 
 @NgModule({
@@ -152,9 +152,7 @@ export class AppRoutingModule {}
 메인 컴포넌트의 뷰를 수정한다.
 
 ```html title="src/app/app.component.html"
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
 <a routerLink="">home</a>
 <a routerLink="/sub">sub page</a>
 <router-outlet></router-outlet>
@@ -198,7 +196,7 @@ global script 와 마찬가지로 angular-cli.json 에 넣는 방식이 있지�
 
 ```css title="src/style.css"
 /* You can add global styles to this file, and also import other style files */
-@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import "~https://fonts.googleapis.com/icon?family=Material+Icons";
 ```
 
 ## third party
@@ -211,7 +209,7 @@ $ npm install @types/lodash --save-dev
 ```
 
 ```ts title="any.component.ts"
-import * as _ from 'lodash';
+import * as _ from "lodash";
 ```
 
 # 빌드

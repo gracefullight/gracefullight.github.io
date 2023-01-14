@@ -3,7 +3,6 @@ title: Linux startup 파일에서 피해야할 것
 authors: me
 tags: [linux, bash]
 date: 2017-11-19 22:53:29
-
 ---
 
 스타트업 파일은 사용자가 로그인 할 때 시스템이 어떻게 반응해야 하는지를 결정한다.

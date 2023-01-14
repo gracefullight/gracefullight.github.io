@@ -3,7 +3,6 @@ title: rollup-plugin-postcss 의 path alias 문제
 authors: me
 tags: [javascript, rollup]
 date: 2021-09-11 22:31:22
-
 ---
 
 # rollup-plugin-postcss
@@ -12,12 +11,12 @@ date: 2021-09-11 22:31:22
 
 ## scss alias
 
-``` scss
+```scss
 // ~는 노드 모듈 처리된다.
-@import '~@material';
+@import "~@material";
 
 // @styles 로 사용하고 싶을 경우가 있다.
-@import '@styles/mystyle';
+@import "@styles/mystyle";
 ```
 
 - 두 번째의 경우는 scss 시트를 처리해주면서 `(plugin postcss) Error: Can't find stylesheet to import.` 와 같은 에러를 뱉는다.
@@ -35,13 +34,13 @@ date: 2021-09-11 22:31:22
 - `pity` 는 promisify 로 대체 가능하여 지웠고 `import-cwd` 도 node 코어를 사용하게 변경했다.
 - `p-queue` 도 child_process 로 대체 가능해보인다.
 
-``` ts
-import { createRequire } from 'module';
-import path from 'path';
-import { promisify } from 'util';
+```ts
+import { createRequire } from "module";
+import path from "path";
+import { promisify } from "util";
 
-import resolve from 'resolve';
-import PQueue from 'p-queue';
+import resolve from "resolve";
+import PQueue from "p-queue";
 
 function loadModule(moduleId) {
   try {
@@ -51,7 +50,7 @@ function loadModule(moduleId) {
   }
 
   try {
-    return createRequire(path.resolve(process.cwd(), 'noop.js'))(moduleId);
+    return createRequire(path.resolve(process.cwd(), "noop.js"))(moduleId);
   } catch {
     // Ignore error
   }
@@ -72,16 +71,16 @@ const getUrlOfPartial = (url) => {
 const resolvePromise = promisify(resolve);
 
 // List of supported SASS modules in the order of preference
-const sassModuleIds = ['node-sass', 'sass'];
+const sassModuleIds = ["node-sass", "sass"];
 
 export default {
-  name: 'sass',
+  name: "sass",
   test: /\.(sass|scss)$/,
   process({ code }) {
     return new Promise((resolve, reject) => {
       const sass = loadSassOrThrow();
       const render = promisify(sass.render.bind(sass));
-      const data = this.options.data || '';
+      const data = this.options.data || "";
       workQueue.add(() =>
         render({
           ...this.options,
@@ -97,7 +96,7 @@ export default {
                   return done({
                     file: url.replace(
                       /^@styles/,
-                      path.resolve(__dirname, './src/styles'),
+                      path.resolve(__dirname, "./src/styles")
                     ),
                   });
                 }
@@ -108,12 +107,12 @@ export default {
 
               const options = {
                 basedir: path.dirname(importer),
-                extensions: ['.scss', '.sass', '.css'],
+                extensions: [".scss", ".sass", ".css"],
               };
               const finishImport = (id) => {
                 done({
                   // Do not add `.css` extension in order to inline the file
-                  file: id.endsWith('.css') ? id.replace(/\.css$/, '') : id,
+                  file: id.endsWith(".css") ? id.replace(/\.css$/, "") : id,
                 });
               };
 
@@ -127,8 +126,8 @@ export default {
                 .then(finishImport)
                 .catch((error) => {
                   if (
-                    error.code === 'MODULE_NOT_FOUND' ||
-                    error.code === 'ENOENT'
+                    error.code === "MODULE_NOT_FOUND" ||
+                    error.code === "ENOENT"
                   ) {
                     resolvePromise(moduleUrl, options)
                       .then(finishImport)
@@ -150,7 +149,7 @@ export default {
               map: result.map && result.map.toString(),
             });
           })
-          .catch(reject),
+          .catch(reject)
       );
     });
   },
@@ -163,13 +162,13 @@ export default {
 
 위의 커스터마이징된 sass-loader 를 `use: ['sass']` 대신 등록해준다.
 
-``` js
+```js
 postcss({
   // 추가
   loaders: [customSassLoader],
   // 제거
   // use: ['sass']
-})
+});
 ```
 
 # 결론

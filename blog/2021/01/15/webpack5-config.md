@@ -3,7 +3,6 @@ title: Webpack5 설정
 authors: me
 tags: [javascript, webpack, nodejs]
 date: 2021-01-15 18:28:14
-
 ---
 
 # 개요
@@ -48,7 +47,6 @@ module.exports = {
       // 노출할 라이브러리의 이름 설정
       name: undefined, // string | string[]
 
-
       /* 라이브러리 고급설정 */
       // 노출 되어야하는 엔트리 모듈 설정
       export: undefined, // string | string[]
@@ -67,7 +65,6 @@ module.exports = {
     // 여러 웹팩 설정을 사용 시에 확인할 이름 설정
     name: undefined, // string
 
-
     /* 고급 출력 설정 */
     // 청크파일에 대한 파일명 설정
     // long term cache 시에는 [contenthash].js
@@ -84,7 +81,8 @@ module.exports = {
     sourceMapFilename: "[file].map[query]", // "sourcemaps/[file].map"
 
     // 웹팩 devtool 에 대한 템플릿 설정
-    devtoolModuleFilenameTemplate: "webpack://[namespace]/[resource-path]?[loaders]", // string | (info) => string
+    devtoolModuleFilenameTemplate:
+      "webpack://[namespace]/[resource-path]?[loaders]", // string | (info) => string
 
     // 웹팩 devtool 에 대한 템플릿 지정 (충돌 방지용)
     devtoolFallbackModuleFilenameTemplate: undefined, // string | (info) => string
@@ -98,7 +96,6 @@ module.exports = {
 
     // import meta 명 (polyfill 사용시 변경)
     importMetaName: "import.meta", // string
-
 
     /* 전문가용 출력 설정 1 (위험) */
     // 번들에 pathinfo 정보 추가 (production 에서 비활성화)
@@ -135,7 +132,7 @@ module.exports = {
       // for of 문 지원
       forOf: true,
       // import / export 지원
-      module: false
+      module: false,
     },
 
     // umd 와 같은 라이브러리의 경우 어느 전역 개체에 마운트할 지 설정
@@ -151,7 +148,6 @@ module.exports = {
     // 스크립트 타입 설정
     // output.module 이 true 일 경우 이 값도 module 로 설정됨
     scriptType: false, // boolean | "module" | "text/javascript"
-
 
     /* 전문가용 출력 설정 2 (위험) */
     // 청크 파일을 로드 방법 설정
@@ -215,19 +211,14 @@ module.exports = {
         test: /\.jsx?$/,
 
         // 포함할 경로 (exclude 보다 사용을 권장)
-        include: [
-          path.resolve(__dirname, "app")
-        ],
+        include: [path.resolve(__dirname, "app")],
 
         // 제외할 경로 (test 보다 높은 우선순위)
-        exclude: [
-          path.resolve(__dirname, "app/demo-files")
-        ],
+        exclude: [path.resolve(__dirname, "app/demo-files")],
 
         // 어디서 import 되는지에 따라 모듈을 사용할지 설정
         // 파일에 따라 raw-loader, babel-loader 등 import 방식을 다르게 쓰는 경우 사용한다.
-        issuer: { or: [ /\.css$/, path.resolve(__dirname, "app") ] },
-
+        issuer: { or: [/\.css$/, path.resolve(__dirname, "app")] },
 
         /* 고급 조건 설정 */
         // 모듈의 리소스와 일치하는지 테스트 (test, include 와 동일)
@@ -247,7 +238,7 @@ module.exports = {
 
         // package.json 의 정보와 일치하는지 테스트
         descriptionData: {
-          type: "module"
+          type: "module",
         },
 
         // 리소스의 mimetype 이 일치하는지 테스트
@@ -267,7 +258,7 @@ module.exports = {
         loader: "babel-loader",
         // 로더 옵션을 설정
         options: {
-          presets: ["es2015"]
+          presets: ["es2015"],
         },
 
         // 여러 로더를 한 번에 설정
@@ -275,15 +266,14 @@ module.exports = {
           "htmllint-loader",
           {
             loader: "html-loader",
-            options: {}
-          }
+            options: {},
+          },
         ],
 
         // 일치하는 모듈의 타입을 설정
         // 설정 시 defaultRules 및 기본 import 기능은 우회된다.
         // https://webpack.js.org/configuration/module/#ruletype
         type: "javascript/auto", // 'javascript/auto' | 'javascript/dynamic' | 'javascript/esm' | 'json' | 'webassembly/sync' | 'webassembly/async' | 'asset' | 'asset/source' | 'asset/resource' | 'asset/inline'
-
 
         /* 고급 액션 설정 */
         // 로더 순서 설정
@@ -315,7 +305,7 @@ module.exports = {
           node: {
             // reconfigure node layer on module level
           },
-          worker: ["default from web-worker", "..."] // Customize the WebWorker handling for javascript files, "..." refers to the defaults.
+          worker: ["default from web-worker", "..."], // Customize the WebWorker handling for javascript files, "..." refers to the defaults.
         },
 
         // 모듈별 리졸브 설정
@@ -337,22 +327,19 @@ module.exports = {
         // 일치하는 하나의 규칙만 사용
         oneOf: [
           // ... (rules)
-        ]
+        ],
       },
       {
         // 중첩된 규칙 모두 사용
         rules: [
           // ... (rules)
-        ]
+        ],
       },
     ],
 
-
     /* 고급 모듈 설정 */
     // 이 모듈에서 파싱하지 않을 경로 설정
-    noParse: [
-      /special-library\.js$/
-    ],
+    noParse: [/special-library\.js$/],
 
     // 동적 요청에 대한 모듈 컨텍스트 기본 설정
     // 곧 deprecated 될 예정으로 사용 비권장
@@ -372,7 +359,6 @@ module.exports = {
   // 모듈 리졸브 설정
   // (로더 리졸브 시에는 사용되지 않음)
   resolve: {
-
     // 모듈을 찾을 디렉토리
     // 상대 경로일 경우 현재 디렉토리와 부모 디렉토리까지 확인
     modules: ["node_modules"],
@@ -384,19 +370,22 @@ module.exports = {
     // 특정 모듈을 더 쉽게 리졸브하기 위해 별칭 설정
     alias: {
       // e.g. "module/path/file" -> "new-module/path/file"
-      "module": "new-module",
+      module: "new-module",
 
       // e.g. "only-module" -> "new-module", "only-module/path/file" -> "new-module/path/file" 는 불가
       "only-module$": "new-module",
 
       // e.g. "module" -> "./app/third/module.js", "module/file" 은 에러
-      "module": path.resolve(__dirname, "app/third/module.js"),
+      module: path.resolve(__dirname, "app/third/module.js"),
 
       // e.g. "module/file" -> "./app/third/file"
-      "module": path.resolve(__dirname, "app/third"),
+      module: path.resolve(__dirname, "app/third"),
 
       // e.g. "./app/module.js" -> "./app/alternative-module.js"
-      [path.resolve(__dirname, "app/module.js")]: path.resolve(__dirname, "app/alternative-module.js"),
+      [path.resolve(__dirname, "app/module.js")]: path.resolve(
+        __dirname,
+        "app/alternative-module.js"
+      ),
     },
 
     /* 고급 리졸브 설정 */
@@ -408,13 +397,13 @@ module.exports = {
     roots: [context],
 
     // 리졸브 실패시 모듈 fallback
-    fallback: { "events": path.resolve(__dirname, "events.js") },
+    fallback: { events: path.resolve(__dirname, "events.js") },
 
     // 패키지를 가져올 때 package.json 에서 검사할 main 필드 설정
     mainFields: ["main"],
 
     // 리졸브 경로 제한
-    restrictions: [ /\.js$/, path.resolve(__dirname, "app") ],
+    restrictions: [/\.js$/, path.resolve(__dirname, "app")],
 
     // 리졸브 캐시
     cache: false,
@@ -465,7 +454,7 @@ module.exports = {
 
     // context 정보를 캐시키에 포함
     // false 가 성능에 좋다.
-    cacheWithContext: false, // boolean 
+    cacheWithContext: false, // boolean
 
     // 비동기 fs 대신 동기 fs 사용
     useSyncFileSystemCalls: false, // boolean
@@ -488,8 +477,8 @@ module.exports = {
 
     // 퍼포먼스 힌트를 계산할 파일 필터 설정
     assetFilter: (assetFilename) => {
-      return !(/\.map$/.test(assetFilename));
-    }
+      return !/\.map$/.test(assetFilename);
+    },
   },
 
   // 브라우저 devtools 에 대한 소스맵 스타일 설정
@@ -534,7 +523,6 @@ module.exports = {
     // 프리셋
     preset: "errors-only", // "error-only" | "error-warnings" | "minimal" | "none" | "normal" | "verbose" | "detailed"
 
-
     /* 고급 전역 설정 */
     // 옵션이 설정되지 않은 경우 대체값
     all: false,
@@ -543,7 +531,7 @@ module.exports = {
     colors: true,
 
     // 상대경로 표시를 위해 context 디렉토리 설정
-    context: '../src/',
+    context: "../src/",
 
     // 출력에 모듈 및 청크 id 포함
     ids: true,
@@ -586,7 +574,7 @@ module.exports = {
 
     // 에셋을 청크별로 그룹화
     groupAssetsByChunk: true,
-    
+
     // 에셋을 정보별로 그룹화 (immutable, development, hmr 등)
     groupAssetsByInfo: true,
 
@@ -595,10 +583,10 @@ module.exports = {
 
     // 퍼포먼스 힌트 포함
     performance: true,
-  
+
     // 엔트리포인트 포함
     entrypoints: true,
-    
+
     // namedChunkGroups 에 대한 정보 포함
     chunkGroups: true,
 
@@ -637,7 +625,7 @@ module.exports = {
     /* 고급 모듈 설정 */
     // 표시될 모듈 라인
     modulesSpace: 15,
-    
+
     // 중첩 모듈 포함
     nestedModules: true,
 
@@ -671,7 +659,7 @@ module.exports = {
 
     // 모듈을 캐시 상태별로 그룹화
     groupModulesByCacheStatus: true,
-    
+
     // 각 엔트리에서의 depth 포함
     depth: false,
 
@@ -718,7 +706,7 @@ module.exports = {
 
     // 에러와 관련된 모듈 스택 포함
     moduleTrace: true,
- 
+
     // 빌드 시간 표시
     builtAt: true,
 
@@ -741,15 +729,15 @@ module.exports = {
   // https://webpack.js.org/configuration/dev-server/
   devServer: {
     // 백엔드 개발 서버 프록시
-    proxy: { 
-      '/api': 'http://localhost:3000'
+    proxy: {
+      "/api": "http://localhost:3000",
     },
 
     // static 파일 경로
     // 절대 경로 사용 권장
-    contentBase: path.join(__dirname, 'public'), // boolean | string | array
+    contentBase: path.join(__dirname, "public"), // boolean | string | array
 
-    // gzip 설정 
+    // gzip 설정
     compress: true,
 
     // history api 사용 시에 index.html 을 fallback 으로 설정
@@ -810,7 +798,6 @@ module.exports = {
 
     // 사용할 압축 플러그인 설정
     minimizer: [],
-
 
     /* 고급 최적화 */
     // concatenate multiple modules into a single one
@@ -893,7 +880,7 @@ module.exports = {
           name: false,
           hidePathInfo: true,
           automaticNameDelimiter: "-",
-        }
+        },
       },
 
       fallbackCacheGroup: {
@@ -903,7 +890,6 @@ module.exports = {
         maxInitialSize: 100000,
         maxSize: 200000,
       },
-
 
       /* 고급 셀렉터 설정 */
       // 최적화할 청크 선택
@@ -915,7 +901,7 @@ module.exports = {
 
       // 모듈이 가져야할 최소 청크 수
       minChunks: 1,
-      
+
       // 스플리팅이 강제되고
       // minRemainingSize, maxAsyncRequests, maxInitialRequests 가 무시되는 사이즈 임계치
       enforceSizeThreshold: 50000,
@@ -927,7 +913,7 @@ module.exports = {
       // 남아있을 청크의 최소 바이트
       // development: 0, production: minSize
       minRemainingSize: 20000,
-    
+
       // 온디맨드 로드 시에 최대 병렬 요청 수
       maxAsyncRequests: 30,
 
@@ -942,7 +928,7 @@ module.exports = {
       // 초기 로드 청크에만 적용
       maxInitialSize: 100000,
       maxSize: 200000,
-      
+
       // 청크 파일명 설정
       filename: "[contenthash].js",
 
@@ -957,22 +943,24 @@ module.exports = {
       // e.g. vendor~main.js
       automaticNameDelimiter: "~",
 
-
       /* 전문가용 설정 */
       // 사이즈를 설정할 때에 사용할 사이즈 유형 설정
-      defaultSizeTypes: ["javascript", "unknown"]
-    }
+      defaultSizeTypes: ["javascript", "unknown"],
+    },
   },
-
 
   /* 고급 설정 */
   // 로더 컨텍스트에 사용자 정의 API 또는 속성 추가
-  loader: { /* ... */ },
-  
+  loader: {
+    /* ... */
+  },
+
   // 로더에 대한 별도의 리졸브 옵션
   // 웹팩의 로더 패키지를 확인하는 데만 사용
-  resolveLoader: { /* same as resolve */ },
- 
+  resolveLoader: {
+    /* same as resolve */
+  },
+
   // node.js 기능 폴리필, 모킹 추가
   node: {
     // global 을 output.globalObject 로 치환
@@ -989,7 +977,6 @@ module.exports = {
   recordsPath: path.resolve(__dirname, "build/records.json"),
   recordsInputPath: path.resolve(__dirname, "build/records.json"),
   recordsOutputPath: path.resolve(__dirname, "build/records.json"),
-
 
   /* 고급 캐시설정 */
   // 캐시 설정
@@ -1008,7 +995,7 @@ module.exports = {
 
     // 무효화를 위한 캐시 의존성 추가
     buildDependencies: {
-      defaultWebpack: [ "webpack/lib" ],
+      defaultWebpack: ["webpack/lib"],
       // 최신 웹팩 설정에 대한 캐시 의존성을 설정하려면 아래 설정 권장
       // config: [ __filename ],
     },
@@ -1022,7 +1009,7 @@ module.exports = {
 
     // 파일시스템에 캐시를 저장할 시점 설정
     // pack: 컴파일러가 idle 상태일 경우 단일 파일에 데이터 저장
-    store: "pack",  // "pack"
+    store: "pack", // "pack"
 
     // 파일 캐시를 무효화하기 위한 버전 설정
     version: "", // string
@@ -1037,7 +1024,7 @@ module.exports = {
   // 파일시스템 스냅샷을 생성하고 무효화하는 방법 설정
   snapshot: {
     // package.json 에서 관리되는 경로
-    managedPaths: [ path.resolve(__dirname, "node_modules") ], // string[]
+    managedPaths: [path.resolve(__dirname, "node_modules")], // string[]
 
     // immutable 하여 스냅샷일 필요가 없는 경로
     // path.resolve(__dirname, ".yarn/cache")
@@ -1092,7 +1079,7 @@ module.exports = {
   // 인프라 수준 로깅 설정
   infrastructureLogging: {
     level: "info", // "none" | "error" | "warn" | "info" | "log" | "verbose"
-    debug: undefined // true | string | RegExp | (name) => boolean | [string, RegExp, (name) => boolean]
+    debug: undefined, // true | string | RegExp | (name) => boolean | [string, RegExp, (name) => boolean]
   },
 
   // 병렬 처리할 모듈의 수 제한
@@ -1109,7 +1096,7 @@ module.exports = {
 
   // 여러 웹팩 설정에 대한 빌드 의존성 설정
   dependencies: ["name"],
-}
+};
 ```
 
 ## 기본 값 확인

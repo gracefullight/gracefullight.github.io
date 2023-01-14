@@ -3,7 +3,6 @@ title: 자바스크립트 활성 객체와 함수
 authors: me
 tags: [javascript]
 date: 2020-08-09 16:44:41
-
 ---
 
 # 활성 객체
@@ -73,7 +72,7 @@ date: 2020-08-09 16:44:41
 
 ### 꼬리 호출 예시
 
-``` nasm
+```nasm
 ; recursion
 call func
 return
@@ -82,7 +81,7 @@ return
 jump func
 ```
 
-``` js
+```js
 (function loop() {
   // do some
   if (done) {
@@ -91,10 +90,10 @@ jump func
 
   // do more
   return loop();
-}());
+})();
 ```
 
-``` js
+```js
 // ❌
 function factorial(n) {
   if (n < 2) {
@@ -120,5 +119,5 @@ function factorial(n, result = 1) {
   return factorial(n - 1, n * result);
 }
 // ✔️
-return (function () {}());
+return (function () {})();
 ```

@@ -20,15 +20,15 @@ $ yarn add jquery bootstrap
 ## webpack
 
 ```js title="build/webpack.base.conf.js"
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jquery: 'jquery',
-      'window.jQuery': 'jquery',
-      jQuery: 'jquery',
+      $: "jquery",
+      jquery: "jquery",
+      "window.jQuery": "jquery",
+      jQuery: "jquery",
     }),
   ],
 };
@@ -48,7 +48,7 @@ module.exports = {
 # 연동
 
 ```js title="src/main.js"
-import 'bootstrap';
+import "bootstrap";
 
 new Vue({});
 ```

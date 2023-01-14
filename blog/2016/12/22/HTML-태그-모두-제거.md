@@ -10,7 +10,7 @@ date: 2016-12-22 21:08:10
 # 예제
 
 ```javascript
-var data = data.replace(/[<][^>]*[>]/g, '');
+var data = data.replace(/[<][^>]*[>]/g, "");
 ```
 
 # 설명

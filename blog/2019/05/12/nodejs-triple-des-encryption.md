@@ -3,7 +3,6 @@ title: nodejs triple des 암호화
 authors: me
 tags: [nodejs, javascript, crypto]
 date: 2019-05-12 20:29:20
-
 ---
 
 triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물어서 그런지 구글링해도 아무 것도 나오지 않았다.
@@ -21,7 +20,7 @@ triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물
 # 소스
 
 ```js
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 class TripleDes {
   // #iv;
@@ -45,7 +44,11 @@ class TripleDes {
       iv = this.iv ? Buffer.from(this.iv, "hex") : crypto.randomBytes(8);
     }
 
-    const cipher3des = crypto.createCipheriv("des-ede3-cfb8", this.getKey(), iv);
+    const cipher3des = crypto.createCipheriv(
+      "des-ede3-cfb8",
+      this.getKey(),
+      iv
+    );
     let encrypted = cipher3des.update(plain, "utf8", "hex");
     encrypted += cipher3des.final("hex");
 
@@ -58,7 +61,11 @@ class TripleDes {
       iv = this.iv;
     }
 
-    const decipher3des = crypto.createDecipheriv("des-ede3-cfb8", this.getKey(), Buffer.from(iv, "hex"));
+    const decipher3des = crypto.createDecipheriv(
+      "des-ede3-cfb8",
+      this.getKey(),
+      Buffer.from(iv, "hex")
+    );
     let decrypted = decipher3des.update(encrypted, "hex", "utf8");
     decrypted += decipher3des.final("utf8");
 
@@ -73,21 +80,21 @@ module.exports = TripleDes;
 
 ```js
 let encrypted = Buffer.concat([
-  cipher3des.update(plain, 'utf8'),
-  cipher3des.final('utf8'),
+  cipher3des.update(plain, "utf8"),
+  cipher3des.final("utf8"),
 ]);
 
-encrypted = encrypted.toString('hex');
+encrypted = encrypted.toString("hex");
 ```
 
 # 사용법
 
 ```js
-const TripleDes = require('./TripleDes');
+const TripleDes = require("./TripleDes");
 
-const tripleDes = new TripleDes('encryptionKey');
+const tripleDes = new TripleDes("encryptionKey");
 // 암호화
-const encrypted = tripleDes.encrypt('yummy');
+const encrypted = tripleDes.encrypt("yummy");
 // 복호화
 const decrypted = tripleDes.decrypt(encrypted);
 ```

@@ -117,12 +117,12 @@ $ npm install
 main.ts 는 ng2 의 기능을 하나로 통합시켜주는 **시작 스크립트**이다.
 
 ```typescript title="main.ts"
-import 'core-js';
-import 'reflect-metadata';
-import 'zone.js/dist/zone';
+import "core-js";
+import "reflect-metadata";
+import "zone.js/dist/zone";
 
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+import { AppModule } from "./app/app.module";
 
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
@@ -134,9 +134,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
   (D:\\workspace\\ng-test\\src\\app\\app.module.ts)
 
 ```typescript title="app.module.ts"
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { AppComponent } from "./app.component";
 
 @NgModule({
   imports: [BrowserModule],
@@ -162,10 +162,10 @@ export class AppModule {}
 app.module.ts 에서 사용할 메인 컴포넌트를 생성하자.
 
 ```ts title="app.component.ts"
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'main',
+  selector: "main",
   template: ` <h1>Hello World</h1> `,
 })
 export class AppComponent {}
@@ -334,28 +334,28 @@ $ npm install --save-dev awesome-typescript-loader
 root 에 **webpack.config.js** 파일을 만들자.
 
 ```js title="webpack.config.js"
-var webpack = require('webpack');
-var path = require('path');
+var webpack = require("webpack");
+var path = require("path");
 
 module.exports = {
-  entry: './src/main.ts',
+  entry: "./src/main.ts",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, "./dist"),
+    filename: "app.bundle.js",
   },
   plugins: [
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
-      path.resolve(__dirname, './src'),
+      path.resolve(__dirname, "./src"),
       {}
     ),
   ],
   module: {
-    loaders: [{ test: /\.ts$/, loaders: ['awesome-typescript-loader'] }],
+    loaders: [{ test: /\.ts$/, loaders: ["awesome-typescript-loader"] }],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
-    modules: [path.resolve(__dirname, 'node_modules')],
+    extensions: [".ts", ".js"],
+    modules: [path.resolve(__dirname, "node_modules")],
   },
 };
 ```
@@ -425,21 +425,21 @@ $ npm install --save-dev html-webpack-plugin
 **webpack.config.js**에 html plugin 설정을 추가한다.
 
 ```js title="webpack.config.js"
-var webpack = require('webpack');
-var path = require('path');
+var webpack = require("webpack");
+var path = require("path");
 // 여기를 추가
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
-      path.resolve(__dirname, './src'),
+      path.resolve(__dirname, "./src"),
       {}
     ),
     // 여기를 추가
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
   ],
 };

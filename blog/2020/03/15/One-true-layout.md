@@ -3,7 +3,6 @@ title: One true layout 만들기
 authors: me
 tags: [css, layout, html]
 date: 2020-03-15 22:54:18
-
 ---
 
 # One true layout

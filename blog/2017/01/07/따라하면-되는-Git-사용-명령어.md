@@ -29,7 +29,7 @@ $ git checkout 브랜치명
 ## 즐거운 코딩
 
 ```javascript
-console.log('코딩!!!');
+console.log("코딩!!!");
 ```
 
 ## 브랜치 작업내역 저장 및 커밋

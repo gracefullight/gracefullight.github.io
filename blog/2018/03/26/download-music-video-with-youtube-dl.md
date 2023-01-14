@@ -1,9 +1,8 @@
 ---
-title: 'youtube-dl로 유튜브 무료 다운로드하기'
+title: "youtube-dl로 유튜브 무료 다운로드하기"
 authors: me
 tags: [youtube, bash]
 date: 2018-03-26 19:55:54
-
 ---
 
 유튜브, 비메오 등의 영상을 소장하고 싶거나 좋은 노래를 다운받아서 듣고 싶을 때 많은 고민을 하게 된다

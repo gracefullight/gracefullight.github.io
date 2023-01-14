@@ -21,8 +21,8 @@ IE의 하위 브라우저에서 es5, es6의 메소드를 사용할 수 있게 �
 
 ```javascript
 var users = [
-  { user: 'barney', age: 36, active: true },
-  { user: 'fred', age: 40, active: false },
+  { user: "barney", age: 36, active: true },
+  { user: "fred", age: 40, active: false },
 ];
 
 _.filter(users, (o) => !o.active);
@@ -34,11 +34,11 @@ _.filter(users, { age: 36, active: true });
 // => [ { 'user': 'barney', 'age': 36, 'active': true } ]
 
 // _.matchesProperty 메소드가 생략된 형태
-_.filter(users, ['active', false]);
+_.filter(users, ["active", false]);
 // => [ { 'user': 'fred',   'age': 40, 'active': false } ]
 
 // _.property 메소드가 생략된 형태
-_.filter(users, 'active');
+_.filter(users, "active");
 // => [ { 'user': 'barney', 'age': 36, 'active': true } ]
 ```
 
@@ -100,7 +100,7 @@ _.sampleSize(_.range(1, 45), 7);
 배열에서 false, null, 0, ""(빈값), undefined, NaN의 값을 제외시킨 배열을 반환한다.
 
 ```javascript
-_.compact([0, 1, false, 2, '', 3]);
+_.compact([0, 1, false, 2, "", 3]);
 // => [1, 2, 3]
 ```
 
@@ -131,7 +131,7 @@ _.uniq([1, 1, 3]);
 예제를 보는게 이해가 빠르다.
 
 ```javascript
-_.zip(['a', 'b'], [1, 2], [true, false]);
+_.zip(["a", "b"], [1, 2], [true, false]);
 // => [['a', 1, true], ['b', 2, false]]
 ```
 
@@ -147,16 +147,16 @@ _.zip(['a', 'b'], [1, 2], [true, false]);
 ```javascript
 var object = { a: 1, b: 2, c: 3, e: { f: 5 } };
 
-_.get(object, 'a');
+_.get(object, "a");
 // => 1
 
-_.get(object, 'd');
+_.get(object, "d");
 // undefined
 
-_.get(object, 'd', 4);
+_.get(object, "d", 4);
 // 4
 
-_.get(object, 'e.f');
+_.get(object, "e.f");
 // 5
 ```
 
@@ -166,12 +166,12 @@ _.get(object, 'e.f');
 객체에서 해당 키를 제외한 객체를 반환한다.
 
 ```javascript
-var object = { a: 1, b: '2', c: 3 };
+var object = { a: 1, b: "2", c: 3 };
 
-_.omit(object, ['a', 'c']);
+_.omit(object, ["a", "c"]);
 // => { 'b': '2' }
 
-_.omit(object, 'a');
+_.omit(object, "a");
 // => { 'b': '2', 'c': 3 }
 ```
 
@@ -184,7 +184,7 @@ _.omit(object, 'a');
 _.values({ a: 1, b: 2, c: [3, 4] });
 // => [ 1, 2, [3, 4] ]
 
-_.values('hi');
+_.values("hi");
 // => ['h', 'i']
 ```
 
@@ -277,19 +277,19 @@ for (var i = 0; i < source.length; i++) {
 [
   {
     tag: {
-      name: 'tag1',
+      name: "tag1",
       media: {
         nodes: [
           {
-            id: 'uid1',
-            user: 'gracefullight',
-            caption: 'caption1',
+            id: "uid1",
+            user: "gracefullight",
+            caption: "caption1",
             likes: 10,
           },
           {
-            id: 'uid2',
-            user: 'gracefullight',
-            caption: 'caption2',
+            id: "uid2",
+            user: "gracefullight",
+            caption: "caption2",
             likes: 20,
           },
         ],
@@ -298,19 +298,19 @@ for (var i = 0; i < source.length; i++) {
   },
   {
     tag: {
-      name: 'tag2',
+      name: "tag2",
       media: {
         nodes: [
           {
-            id: 'uid3',
-            user: 'gracefullight',
-            caption: 'caption3',
+            id: "uid3",
+            user: "gracefullight",
+            caption: "caption3",
             likes: 30,
           },
           {
-            id: 'uid4',
-            user: 'gracefullight',
-            caption: 'caption4',
+            id: "uid4",
+            user: "gracefullight",
+            caption: "caption4",
             likes: 40,
           },
         ],
@@ -327,7 +327,7 @@ lodash를 모르는 상태라면 대충 이런식의 로직이 나온다.
 
 ```js
 // for문 애호가
-const data = ['위에 데이터 배열'];
+const data = ["위에 데이터 배열"];
 
 let result = [];
 for (let i = 0, len = data.length; i < len; i++) {
@@ -355,9 +355,9 @@ result = data
 lodash를 사용하면 다음과 같이 직관적으로 구현이 가능하다.
 
 ```js
-result = _.chain(data).map('tag.media.nodes').flatten().values()[
+result = _.chain(data).map("tag.media.nodes").flatten().values()[
   // 결과는 다음과 같다
-  ({ id: 'uid1' }, { id: 'uid2' }, { id: 'uid3' }, { id: 'uid4' })
+  ({ id: "uid1" }, { id: "uid2" }, { id: "uid3" }, { id: "uid4" })
 ];
 ```
 
@@ -368,10 +368,10 @@ Lodash는 jQuery와 중복되는 이름을 가진 메소드가 몇 가지 있는
 
 ```js
 // lodash
-_.each(['a', 'b', 'c'], (value, index, list) => {});
+_.each(["a", "b", "c"], (value, index, list) => {});
 
 // jQuery
-$.each(['a', 'b', 'c'], (index, value) => {});
+$.each(["a", "b", "c"], (index, value) => {});
 ```
 
 따라서 lodash를 사용하는 것을 권한다. (속도도 더 빠르다)

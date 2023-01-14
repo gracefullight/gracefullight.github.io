@@ -3,7 +3,6 @@ title: 쿠버네티스 환경에서의 Node.js DNS Cache
 authors: me
 tags: [nodejs, dns, k8s, docker]
 date: 2020-11-30 00:06:31
-
 ---
 
 # DNS Cache
@@ -11,7 +10,7 @@ date: 2020-11-30 00:06:31
 쿠버네티스 환경에서는 Node.js 이미지를 올릴 시 종종 아래와 같은 IP 반환 에러메세지가 보인다.
 이는 서비스 연결조차 불가능하게 만들어 운영에 지장을 주었다.
 
-``` bash
+```bash
 Error: getaddrinfo EAI_AGAIN your-service
 ```
 
@@ -23,7 +22,7 @@ Node.js Man 을 보면 다음과 같은 [주의사항](https://nodejs.org/dist/l
 
 > Though the call to `dns.lookup()` will be asynchronous from JavaScript's perspective, it is implemented as a synchronous call to getaddrinfo(3) that runs on libuv's threadpool. This can have surprising negative performance implications for some applications, see the UV_THREADPOOL_SIZE documentation for more information.
 
-연관된 *UV_HTREADPOOL_SIZE* 문서는 다음과 같다.
+연관된 _UV_HTREADPOOL_SIZE_ 문서는 다음과 같다.
 
 > Asynchronous system APIs are used by Node.js whenever possible, but where they do not exist, libuv's threadpool is used to create asynchronous node APIs based on synchronous system APIs.
 
@@ -71,7 +70,7 @@ Node.js 의 HTTP 모듈에서는 lookup 속성을 지원하며 이는 기본값�
 
 `axios` 라이브러리는 lookup 속성을 지원하지 않으므로 `http.globalAgent` 에 다음과 같이 추가해야했다.
 
-``` js
+```js
 import CacheableLookup from "cacheable-lookup";
 
 const cacheable = new CacheableLookup();

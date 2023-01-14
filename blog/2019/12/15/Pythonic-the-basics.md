@@ -3,7 +3,6 @@ title: Pythonic - 기본기
 authors: me
 tags: [python]
 date: 2019-12-15 16:52:01
-
 ---
 
 # The Basics

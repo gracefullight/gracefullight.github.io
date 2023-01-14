@@ -3,7 +3,6 @@ title: 쿠버네티스 롤링 업데이트와 배포
 authors: me
 tags: [k8s, docker]
 date: 2019-12-27 20:43:20
-
 ---
 
 # Deployment
@@ -105,7 +104,7 @@ spec:
         # 파드 종료 전 훅
         preStop:
           exec:
-            command: ['/usr/sbin/nginx', '-s', 'quit']
+            command: ["/usr/sbin/nginx", "-s", "quit"]
 ```
 
 ## 파드 1:1 교체

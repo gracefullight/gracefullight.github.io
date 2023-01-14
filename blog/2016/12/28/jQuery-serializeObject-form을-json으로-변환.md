@@ -14,11 +14,11 @@ date: 2016-12-28 12:38:00
 @author https://github.com/macek/jquery-serialize-object
 */
 $.fn.serializeObject = function () {
-  'use strict';
+  "use strict";
   var result = {};
   var extend = function (i, element) {
     var node = result[element.name];
-    if ('undefined' !== typeof node && node !== null) {
+    if ("undefined" !== typeof node && node !== null) {
       if ($.isArray(node)) {
         node.push(element.value);
       } else {
@@ -37,7 +37,7 @@ $.fn.serializeObject = function () {
 # 예제
 
 ```javascript
-var formData = $('#form').serializeObject();
+var formData = $("#form").serializeObject();
 ```
 
 # 여담
@@ -51,7 +51,7 @@ checkbox 같은 경우 여러 개 선택시 하나의 key 에 배열로 반환�
 </form>
 
 <script>
-  var formData = $('form').serializeObject();
+  var formData = $("form").serializeObject();
   // => formData = { arr : [1,2] };
 </script>
 ```

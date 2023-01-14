@@ -98,7 +98,7 @@ openssl_decrypt($cipherText, "des-ede3-cbc", $key, OPENSSL_RAW_DATA, $iv);
 # 패키지
 
 - 이 모든 걸 커버하는 라이브러리를 사용하자. [phpseclib/mcrypt_compat](https://github.com/phpseclib/mcrypt_compat)
-- *phpseclib* 는 laravel/passport 에서도 사용되었다.
+- _phpseclib_ 는 laravel/passport 에서도 사용되었다.
 
 # 여담
 

@@ -3,7 +3,6 @@ title: Mac 에서 포트 접근 확인하기
 authors: me
 tags: [mac]
 date: 2019-04-26 12:37:42
-
 ---
 
 윈도우의 경우에는 telnet-client 를 켜주면 되고, 맥에서도 `brew` 로 설치하면 되지만 더 좋은 내장 툴이 있다.

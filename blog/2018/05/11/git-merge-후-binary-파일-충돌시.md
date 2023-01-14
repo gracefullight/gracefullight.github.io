@@ -3,7 +3,6 @@ title: git merge 후 binary 파일 충돌시
 authors: me
 tags: [git]
 date: 2018-05-11 21:27:29
-
 ---
 
 바이너리 파일은 diff 가 안 되서 확인을 할 수가 없는데,

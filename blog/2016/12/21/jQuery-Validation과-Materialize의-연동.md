@@ -13,13 +13,13 @@ Materialize CSS 와 연동해 사용할 수 있다.
 ```js
 // p 태그를 이용하는 방법
 $.validator.setDefaults({
-  errorClass: 'invalid form-error red-text',
-  errorElement: 'p',
+  errorClass: "invalid form-error red-text",
+  errorElement: "p",
   errorPlacement: function (error, element) {
     var e = element.get(0);
-    if (e.type === 'radio' || e.type === 'checkbox') {
+    if (e.type === "radio" || e.type === "checkbox") {
       var $a = error.appendTo(element.parent());
-      $a.css({ 'margin-top': '10px' });
+      $a.css({ "margin-top": "10px" });
     } else {
       error.appendTo(element.parent());
     }
@@ -28,15 +28,15 @@ $.validator.setDefaults({
 
 // 더 예쁜 방법
 $.validator.setDefaults({
-  errorClass: 'invalid',
-  validClass: 'valid',
+  errorClass: "invalid",
+  validClass: "valid",
   errorPlacement: function (error, element) {
     var $label = $(element)
-      .closest('form')
-      .find("label[for='" + element.attr('id') + "']");
+      .closest("form")
+      .find("label[for='" + element.attr("id") + "']");
 
-    $label.attr('data-error', error.text());
-    $label.addClass('active');
+    $label.attr("data-error", error.text());
+    $label.addClass("active");
   },
 });
 ```

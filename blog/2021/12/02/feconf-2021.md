@@ -3,7 +3,6 @@ title: feconf 2021
 authors: me
 tags: [conference, javascript]
 date: 2021-12-02 07:19:12
-
 ---
 
 # feconf 2021
@@ -68,7 +67,7 @@ DST (Design Syntax Tree)
 - 리액트 노드의 형태를 모방해서 기계가 파싱가능한 트리구조로 추상화 (33:41)
 - DST Element (34:22) -> DST React Renderer (35:20) (35:38)
 
-``` json
+```json
 {
   "elementType": "AmountTop",
   "properties": {
@@ -79,7 +78,7 @@ DST (Design Syntax Tree)
       "properties": {
         "Title": "",
         "Type": "",
-        "Style": "fill",
+        "Style": "fill"
       }
     }
   }

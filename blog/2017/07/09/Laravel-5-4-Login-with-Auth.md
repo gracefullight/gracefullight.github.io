@@ -3,7 +3,6 @@ title: Laravel 5.5 - 로그인(Auth) 붙히기
 authors: me
 tags: [php, laravel]
 date: 2017-07-09 22:46:57
-
 ---
 
 [이전 포스팅](/2017/06/06/Laravel-5-4-Eloquent-Model/)에서 데이터를 가져왔으니, 로그인을 구현해보자.

@@ -3,7 +3,6 @@ title: yarn, ts 스타터 체크리스트
 authors: me
 tags: [javascript, typescript, yarn]
 date: 2022-07-30 14:28:02
-
 ---
 
 # yarn, ts 스타터 체크리스트
@@ -36,4 +35,3 @@ code .
   - [maxogden/extract-zip](https://github.com/maxogden/extract-zip) 👍
   - [antelle/node-stream-zip](https://github.com/antelle/node-stream-zip)
   - [ZJONSSON/node-unzipper](https://github.com/ZJONSSON/node-unzipper)
-  

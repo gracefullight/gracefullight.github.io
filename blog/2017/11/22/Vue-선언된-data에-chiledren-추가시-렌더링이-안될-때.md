@@ -26,9 +26,9 @@ date: 2017-11-22 16:10:02
 
 ```js
 new Vue({
-  el: '#memberList',
+  el: "#memberList",
   data: {
-    members: [{ id: 1, name: 'gracefullight' }],
+    members: [{ id: 1, name: "gracefullight" }],
   },
 
   mounted: function () {
@@ -36,7 +36,7 @@ new Vue({
     this.members[0].logs = [];
     /* 데이터를 넣어도 위 템플릿의 <li> 부분이 반복되지 않는다. */
     this.members[0].logs = [
-      { id: 1, message: 'test action', created_at: '2017-11-22' },
+      { id: 1, message: "test action", created_at: "2017-11-22" },
     ];
   },
 });
@@ -50,7 +50,7 @@ new Vue({
 /* 1안 */
 const option = {
   mounted: function () {
-    this.$set(this.members[0], 'logs', []);
+    this.$set(this.members[0], "logs", []);
     this.members[0].logs = [
       // ...
     ];

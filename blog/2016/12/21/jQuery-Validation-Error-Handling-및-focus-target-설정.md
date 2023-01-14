@@ -1,5 +1,5 @@
 ---
-title: 'jQuery Validation Error Handling 및 focus, target 설정'
+title: "jQuery Validation Error Handling 및 focus, target 설정"
 authors: me
 tags: [javascript, jquery]
 date: 2016-12-21 20:38:08
@@ -20,10 +20,10 @@ date: 2016-12-21 20:38:08
         //alert(validator.errorList[0].message); // 경고창
       }
     },
-    errorClass: 'text-danger', // 에러 스타일을 입힐 클래스 지정
+    errorClass: "text-danger", // 에러 스타일을 입힐 클래스 지정
     errorPlacement: function (error, element) {
       // data-error 속성으로 해당 위치 삽입
-      var placement = $(element).data('error');
+      var placement = $(element).data("error");
       if (placement) {
         $(placement).append(error);
       } else {

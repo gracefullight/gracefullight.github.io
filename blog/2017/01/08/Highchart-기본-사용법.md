@@ -50,12 +50,12 @@ $ yarn add highcharts
 Highcharts.setOptions({
   lang: {
     // 전체보기 버튼을 한글로 바꾼다
-    resetZoom: '전체보기',
+    resetZoom: "전체보기",
   },
 });
 
 var chartCallback = function (data) {
-  var chart = $('#chart').highcharts();
+  var chart = $("#chart").highcharts();
 
   if (chart) {
     // 차트가 있을경우 제거한다.
@@ -68,10 +68,10 @@ var chartCallback = function (data) {
 
     var options = {
       chart: {
-        renderTo: 'chart', // 다시 그려질 영역 설정
-        zoomType: 'x', // X축이 줌인이 가능하게 설정
+        renderTo: "chart", // 다시 그려질 영역 설정
+        zoomType: "x", // X축이 줌인이 가능하게 설정
         panning: true,
-        panKey: 'shift',
+        panKey: "shift",
       },
       title: {
         text: null,
@@ -88,8 +88,8 @@ var chartCallback = function (data) {
         labels: {},
       },
       credits: {
-        text: 'Graceful Light', // 로고 표시
-        href: 'https://gracefullight.github.io', // 로고 클릭시 URL
+        text: "Graceful Light", // 로고 표시
+        href: "https://gracefullight.github.io", // 로고 클릭시 URL
       },
       tooltip: {
         // hover시 나오는 tooltip
@@ -102,10 +102,10 @@ var chartCallback = function (data) {
               this.series.color +
               ';">●</span> ' +
               this.series.name +
-              ': ' +
-              '<b>' +
+              ": " +
+              "<b>" +
               Utils.comma(this.y) +
-              '</b><br/>'
+              "</b><br/>"
             );
           }
         },
@@ -125,7 +125,7 @@ var chartCallback = function (data) {
     chart = new Highcharts.Chart(options);
     chart.redraw();
   } else {
-    $('#chart').html('no data');
+    $("#chart").html("no data");
   }
 };
 ```

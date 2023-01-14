@@ -1,5 +1,5 @@
 ---
-title: 'Docker Error response from daemon: reference does not exist'
+title: "Docker Error response from daemon: reference does not exist"
 authors: me
 tags: [linux, docker]
 date: 2017-07-23 20:52:51

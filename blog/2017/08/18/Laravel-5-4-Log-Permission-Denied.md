@@ -3,7 +3,6 @@ title: Laravel 5.5 - Log Permission 문제
 authors: me
 tags: [php, laravel]
 date: 2017-08-18 22:11:35
-
 ---
 
 웹 서버의 유저로 로그 파일이 생성되어야 하는데, 어느 순간부터 root:root 권한을 달고 daliy log 가 생성되는 경우가 있다.

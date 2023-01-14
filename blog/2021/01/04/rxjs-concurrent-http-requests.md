@@ -3,7 +3,6 @@ title: RxJS 병렬 HTTP 요청
 authors: me
 tags: [rxjs, javascript]
 date: 2021-01-04 19:27:14
-
 ---
 
 # 개요
@@ -27,7 +26,7 @@ import {
   mergeMap,
   retry,
   tap,
-  toArray
+  toArray,
 } from "rxjs/operators";
 
 // 슈도코드임
@@ -36,7 +35,7 @@ const fetchObservable = (data) => {
     new Promise((resolve) => {
       setTimeout(() => {
         resolve({
-          data
+          data,
         });
       }, 300);
     })

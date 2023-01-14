@@ -3,7 +3,6 @@ title: Nuxt에 ThirdParty js (particles.js) 추가하기
 authors: me
 tags: [javascript, nuxtjs, vue]
 date: 2018-06-02 13:42:11
-
 ---
 
 # 시작하기 앞서
@@ -21,8 +20,8 @@ Nuxt Project 에 [Particles.js](https://vincentgarreau.com/particles.js/) 를 �
 만들고
 
 ```js title="vue-particles.js"
-import Vue from 'vue';
-import VueParticles from 'vue-particles';
+import Vue from "vue";
+import VueParticles from "vue-particles";
 
 Vue.use(VueParticles);
 ```
@@ -31,7 +30,7 @@ Vue.use(VueParticles);
 
 ```js title="nuxt.config.js"
 module.exports = {
-  plugins: ['~/plugins/vue-particles'],
+  plugins: ["~/plugins/vue-particles"],
 };
 ```
 
@@ -45,7 +44,7 @@ module.exports = {
 module.exports = {
   plugins: [
     {
-      src: '~/plugins/vue-particles',
+      src: "~/plugins/vue-particles",
       ssr: false,
     },
   ],
@@ -90,7 +89,7 @@ vue-particles 자체에 `const` 구문을 사용하고 있기 때문에, **no-ss
 </template>
 <script>
   if (process.browser) {
-    require('vue-particles');
+    require("vue-particles");
   }
 
   export default {

@@ -1,5 +1,5 @@
 ---
-title: 'Throttle, Debounce Pattern'
+title: "Throttle, Debounce Pattern"
 authors: me
 tags: [javascript, lodash]
 date: 2016-12-22 20:16:37
@@ -18,7 +18,7 @@ mousemove, scroll 같은 이벤트로 호출되는 함수는 이벤트 발생시
 
 ```js
 var throttleFunction = (function () {
-  'use strict';
+  "use strict";
 
   var timeWindow = 500; // 여기에 시간(ms)을 지정한다
   var lastExecution = new Date(new Date().getTime() - timeWindow);
@@ -50,7 +50,7 @@ throttleFunction(param1, param2);
 
 ```js
 var debounceFunction = (function () {
-  'use strict';
+  "use strict";
 
   var timeWindow = 500; // 여기에 시간(ms)을 지정한다
   var timeout;

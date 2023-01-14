@@ -3,7 +3,6 @@ title: Javascript로 리소스 체크
 authors: me
 tags: [javascript]
 date: 2018-11-20 20:42:17
-
 ---
 
 페이지나 리소스가 있는지 체크하는 방법은 서버사이드에선 엄청 간단하다.

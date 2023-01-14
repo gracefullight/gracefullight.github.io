@@ -3,7 +3,6 @@ title: 나를 위한 면접 (Frontend Developer Interview Questions)
 authors: me
 tags: [interview]
 date: 2018-01-10 22:32:52
-
 ---
 
 [FE Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)를 아는 만큼 답해보았다
@@ -18,20 +17,20 @@ date: 2018-01-10 22:32:52
 
 ```js
 // 버튼마다 onClick Event Listener 등록
-document.getElementById('btn1').addEventListener('click', (event) => {});
+document.getElementById("btn1").addEventListener("click", (event) => {});
 
-document.getElementById('btn2').addEventListener('click', (event) => {});
+document.getElementById("btn2").addEventListener("click", (event) => {});
 
-document.getElementById('btn3').addEventListener('click', (event) => {});
+document.getElementById("btn3").addEventListener("click", (event) => {});
 
 // Event Delegation
-document.getElementById('div').addEventListener('click', (event) => {
+document.getElementById("div").addEventListener("click", (event) => {
   switch (event.target.id) {
-    case 'btn1':
+    case "btn1":
       break;
-    case 'btn2':
+    case "btn2":
       break;
-    case 'btn3':
+    case "btn3":
       break;
   }
 });
@@ -182,6 +181,7 @@ var person = new Person(); // 생성자
 - Using one of the newly reserved keywords (in prevision for ECMAScript 2015): implements, interface, let, package, private, protected, public, static, and yield
 - Declaring function in blocks if (a < b) { function f() {} }
 - Obvious errors
+
   - Declaring twice the same name for a property name in an object literal {a: 1, b: 3, a: 7} This is no longer the case in ECMAScript 2015 (bug 1041128).
   - Declaring two function parameters with the same name function f(a, b, b) {}
 

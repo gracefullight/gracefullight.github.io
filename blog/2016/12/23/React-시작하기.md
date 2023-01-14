@@ -72,7 +72,7 @@ babel 과 react, 데이터 바인딩을 위한 react-dom 을 가져온다.
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { id: '', pw: '' };
+    this.state = { id: "", pw: "" };
   }
 
   // input의 데이터가 변할 때 state의 값이 변경할 수 있게한다
@@ -97,13 +97,13 @@ class LoginForm extends React.Component {
         <input
           type="text"
           value={this.state.id}
-          onChange={this.handleChange.bind(this, 'id')}
+          onChange={this.handleChange.bind(this, "id")}
         />
         비밀번호 :
         <input
           type="password"
           value={this.state.pw}
-          onChange={this.handleChange.bind(this, 'pw')}
+          onChange={this.handleChange.bind(this, "pw")}
         />
         <input type="submit" value="Submit" />
       </form>
@@ -112,7 +112,7 @@ class LoginForm extends React.Component {
 }
 
 // LoginForm class를 id="login"에 render
-ReactDOM.render(<LoginForm />, document.getElementById('login'));
+ReactDOM.render(<LoginForm />, document.getElementById("login"));
 ```
 
 # 여담

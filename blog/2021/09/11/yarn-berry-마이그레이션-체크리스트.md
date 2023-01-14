@@ -3,7 +3,6 @@ title: yarn berry 마이그레이션 체크리스트
 authors: me
 tags: [javascript, typescript, yarn]
 date: 2021-09-11 23:13:42
-
 ---
 
 # yarn berry 마이그레이션 체크리스트

@@ -1,5 +1,5 @@
 ---
-title: 'Temporary failure in name resolution, 일시적인 실패'
+title: "Temporary failure in name resolution, 일시적인 실패"
 authors: me
 tags: [linux, dns]
 date: 2017-01-10 22:58:08

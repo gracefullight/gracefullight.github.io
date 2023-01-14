@@ -3,7 +3,6 @@ title: 나를 위한 면접 (ALL)
 authors: me
 tags: [interview]
 date: 2018-01-09 22:13:40
-
 ---
 
 실무에 치이느라 기본적인 걸 까먹을까봐 정리해보자

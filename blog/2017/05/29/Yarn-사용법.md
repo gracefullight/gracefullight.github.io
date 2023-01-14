@@ -4,6 +4,7 @@ authors: me
 tags: [javascript, nodejs, yarn]
 date: 2017-05-29 22:17:44
 ---
+
 Bower의 시대가 끝났다. [홈페이지](https://bower.io/)를 들어가보면 다음과 같은 문구가 보인다.
 
 > ..psst! While Bower is maintained, we recommend **yarn** and **webpack** for new front-end projects!
@@ -19,7 +20,7 @@ NPM으로 설치시에는 환경변수 등록을 거쳐야한다.
 
 설치 후 Bash에서 확인해보자.
 
-``` bash
+```bash
 $ yarn --version
 0.24.5
 ```
@@ -61,13 +62,13 @@ install이 **add**로, uninstall이 **remove**로, update가 **upgrade**로 바�
 
 # Global 경로
 
-* Windows: **%LOCALAPPDATA%/Yarn/config/global**
+- Windows: **%LOCALAPPDATA%/Yarn/config/global**
 
 ## 환경 변수 설정
 
 설정을 확인한 뒤 prefix 경로를 PATH에 추가해주면 된다.
 
-``` bash
+```bash
 $ yarn config list
 { prefix: 'C:\\Users\\{NAME}\\npm' }
 ```

@@ -39,14 +39,14 @@ HTTP Cache 를 걸어봤다면 이해가 쉬울 듯 싶다.
 
 ```js
 // navigator (브라우저)에 serviceWorker 기능이 있는지 확인
-if ('serviceWorker' in navigator) {
+if ("serviceWorker" in navigator) {
   // 서비스워커 설치시 DOM 블로킹을 막아준다.
-  window.addEventListener('load', function () {
+  window.addEventListener("load", function () {
     // 서비스워커를 register 하면 promise를 반환한다.
     navigator.serviceWorker
-      .register('/sw.js')
+      .register("/sw.js")
       .then(() => {
-        console.log('서비스 워커가 등록되었다.');
+        console.log("서비스 워커가 등록되었다.");
       })
       .catch((error) => {
         console.log(error);
@@ -67,15 +67,15 @@ if ('serviceWorker' in navigator) {
 모던 브라우저에서만 지원이 되므로 `arrow function`을 사용해도 된다.
 
 ```js title="sw.js"
-var PRE_CACHE_NAME = '캐시-스토리지1';
+var PRE_CACHE_NAME = "캐시-스토리지1";
 // 캐시하고 싶은 리소스
 var urlsToCache = [
-  '/public/image/image1.png',
-  '/public/css/font-awesome.min.css',
+  "/public/image/image1.png",
+  "/public/css/font-awesome.min.css",
 ];
 
 // 서비스워커가 설치될 때
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
   // 캐시 등록 이벤트가 끝날 때까지 기다려
   event.waitUntil(
     // '캐시-스토리지1'을 연다.
@@ -83,7 +83,7 @@ self.addEventListener('install', (event) => {
     caches
       .open(PRE_CACHE_NAME)
       .then((cache) => {
-        console.log('캐시 디비와 연결됨');
+        console.log("캐시 디비와 연결됨");
         // addAll 메소드로 내가 캐싱할 리소스를 다 넣어주자.
         return cache.addAll(urlsToCache);
       })
@@ -106,11 +106,11 @@ self.addEventListener('install', (event) => {
 ## Dynamic caching
 
 ```js title="sw.js"
-var DYNAMIC_CACHE_NAME = '다이나믹-캐시-스토리지1';
+var DYNAMIC_CACHE_NAME = "다이나믹-캐시-스토리지1";
 
 // fetch event는 어딘가에서 리소스를 가져올 때 모두 실행된다.
 // js를 가져오거나 이미지를 가져오거나 페이지를 가져오거나 등등
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
       // 캐시에 있으면 repsonse를 그대로 돌려준다.
@@ -156,7 +156,7 @@ self.addEventListener('fetch', (event) => {
 
 ```js title="sw.js"
 // 서비스 워커가 활성화 될 때
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", (event) => {
   // 영구적으로 가져갈 캐시 스트리지 화이트리스트
   var cacheWhiteList = [PRE_CACHE_NAME, DYNAMIC_CACHE_NAME];
 
@@ -191,7 +191,7 @@ self.addEventListener('activate', (event) => {
 여기서 오류가 발생하면 offline.html 같은 페이지로 떨어지게 할 수 있다. (마치 404 오류 페이지처럼)
 
 ```js title="sw.js"
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches
       .match(event.request)
@@ -202,9 +202,9 @@ self.addEventListener('fetch', (event) => {
         // 에러 발생시 캐시되어있는 offline.html로 이동시킨다.
         return caches.open(CACHE_NAME).then((cache) => {
           // 들어온 요청의 Accept 헤더가 text/html 을 포함하고 있다면 (페이지 요청이라면)
-          if (event.request.headers.get('accept').includes('text/html')) {
+          if (event.request.headers.get("accept").includes("text/html")) {
             // 캐시된 offline fallback 페이지를 보여준다.
-            return cache.match('/offline.html');
+            return cache.match("/offline.html");
           }
         });
       })
@@ -221,14 +221,14 @@ self.addEventListener('fetch', (event) => {
 
 ```js title="sw.js"
 (() => {
-  const STATIC_CACHE_NAME = 'STATIC_CACHE_VERSION_1';
-  const DYNAMIC_CACHE_NAME = 'DYNAMIC_CACHE_VERSION_1';
+  const STATIC_CACHE_NAME = "STATIC_CACHE_VERSION_1";
+  const DYNAMIC_CACHE_NAME = "DYNAMIC_CACHE_VERSION_1";
 
   const WEB_CACHE = {
     init() {
-      self.addEventListener('install', this.staticCacheStrategy.bind(this));
-      self.addEventListener('activate', this.deleteOldCache.bind(this));
-      self.addEventListener('fetch', this.dynamicCacheStrategy.bind(this));
+      self.addEventListener("install", this.staticCacheStrategy.bind(this));
+      self.addEventListener("activate", this.deleteOldCache.bind(this));
+      self.addEventListener("fetch", this.dynamicCacheStrategy.bind(this));
     },
 
     staticCacheStrategy(event) {
@@ -259,10 +259,10 @@ cors 정책이 설정되어 있지 않아 아무 정보도 가지고 올 수 없
 const dynamicCacheStrategy = (event) => {
   // 캐싱 처리하고 싶은 content-type
   var cacheContentsTypes = [
-    'image/png',
-    'image/gif',
-    'image/jpeg',
-    'application/font-woff',
+    "image/png",
+    "image/gif",
+    "image/jpeg",
+    "application/font-woff",
   ];
 
   event.respondWith(
@@ -281,9 +281,9 @@ const dynamicCacheStrategy = (event) => {
             // 아니면 request.url이 캐싱처리를 할 외부 url인지 확인한다.
             if (
               cacheContentsTypes.indexOf(
-                response.headers.get('content-type')
+                response.headers.get("content-type")
               ) !== -1 ||
-              event.request.url.indexOf('external.url') !== -1
+              event.request.url.indexOf("external.url") !== -1
             ) {
               caches.open(DYNAMIC_CACHE_NAME).then((cache) => {
                 cache.put(event.request, response.clone());
@@ -365,7 +365,7 @@ Pre-Cache를 정의하기 위해 로컬에서 `workbox-cli`를 추가해야한�
 
 ```js
 importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js'
+  "https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js"
 );
 ```
 
@@ -399,13 +399,13 @@ ServiceWorker에 `workbox.precaching.precacheAndRoute([])` 구문이 있다면 �
 ```js
 workbox.precaching.precacheAndRoute([
   {
-    "url": "css/fonts/fontawesome/fontawesome-webfont.eot",
-    "revision": "674f50d287a8c48dc19ba404d20fe713"
+    url: "css/fonts/fontawesome/fontawesome-webfont.eot",
+    revision: "674f50d287a8c48dc19ba404d20fe713",
   },
   {
     //...
-  }
-])
+  },
+]);
 ```
 
 ### Routing
@@ -416,12 +416,12 @@ WorkBox를 사용하는 이유는 바로 이 라우팅에 있다.
 
 ```js
 importScripts(
-  'https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js'
+  "https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js"
 );
 
 // importScripts 후 타이밍 차이로 인해 모듈을 못 불러오는 경우를 방지하기 위해
 // 캐싱 정책 모듈 로드를 기다린다.
-workbox.loadModule('workbox-strategies');
+workbox.loadModule("workbox-strategies");
 
 workbox.skipWaiting();
 workbox.clientsClaim();
@@ -429,7 +429,7 @@ workbox.clientsClaim();
 // accept 헤더에 text/html 값이 있으면 (html 페이지 요청일 경우)
 // networkFirst 캐싱
 workbox.routing.registerRoute((routeData) => {
-  return routeData.event.request.headers.get('accept').includes('text/html');
+  return routeData.event.request.headers.get("accept").includes("text/html");
 }, workbox.strategies.networkFirst());
 
 // imgur 요청일 경우 cacheFirst 캐싱

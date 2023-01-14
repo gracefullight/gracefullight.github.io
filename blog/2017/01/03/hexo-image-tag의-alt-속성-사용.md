@@ -8,7 +8,8 @@ date: 2017-01-03 13:30:42
 [공식 문서](https://hexo.io/ko/docs/tag-plugins.html#Image)에 따르면 image tag 의 사용법은 이렇다.
 
 ```html
-![image from hexo]([class names] /path/to/image [width] [height] [title text [alt text]])
+![image from hexo]([class names] /path/to/image [width] [height] [title text
+[alt text]])
 ```
 
 대괄호로 둘러 쌓인 부분은 생략이 가능하다.

@@ -19,16 +19,16 @@ date: 2017-08-12 00:28:55
 <script src="//api.zipaddress.net/sdk/zipaddr.min.js" async></script>
 <script>
   var searchAddr = function () {
-    var $zip = $('#zip');
+    var $zip = $("#zip");
     var zip = $zip.val();
 
     // 일본 우편번호는 7자리로 고정되어있다.
     // sample 6800001
     if (zip && zip.length === 7) {
       ZA.request(zip, function (data, err) {
-        var $address = $('#address');
+        var $address = $("#address");
         if (err) {
-          $address.val('');
+          $address.val("");
           $zip.focus();
           return alert(data.message);
         }
@@ -36,7 +36,7 @@ date: 2017-08-12 00:28:55
         $address.focus();
       });
     } else {
-      alert('郵便番号に誤りがあります。');
+      alert("郵便番号に誤りがあります。");
       $zip.focus();
     }
   };

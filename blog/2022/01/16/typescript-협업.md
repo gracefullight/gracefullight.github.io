@@ -3,7 +3,6 @@ title: TypeScript 협업
 authors: me
 tags: [typescript]
 date: 2022-01-16 20:09:51
-
 ---
 
 # TypeScript 협업
@@ -26,7 +25,7 @@ date: 2022-01-16 20:09:51
 ### 데이터
 
 - To Type or Not to Type: Quantifying Detectable Bugs in JavaScript: 타입스크립트 사용시 자바스크립트 프로젝트에서 발견된 버그의 15%를 컴파일 시점에 미리 방지 가능 (UCL, MS 연구) [6](https://earlbarr.com/publications/typestudy.pdf)
-- JSConf Hawaii 2019 (Airbnb): 진행된 프로젝트의 사후 분석  결과, 발견된 버그의 38%가 타입스크립트에서는 방지할 수 있었던 것 [7](https://youtu.be/P-J9Eg7hJwE?t=709)
+- JSConf Hawaii 2019 (Airbnb): 진행된 프로젝트의 사후 분석 결과, 발견된 버그의 38%가 타입스크립트에서는 방지할 수 있었던 것 [7](https://youtu.be/P-J9Eg7hJwE?t=709)
 
 ### 유지보수
 
@@ -54,7 +53,7 @@ date: 2022-01-16 20:09:51
 
 > interface 를 사용한다.
 
-- OCP: interface 는 확장에 열려있다. [11](https://www.typescriptlang.org/ko/docs/handbook/2/everyday-types.html#타입-별칭과-인터페이스의-차이점) 
+- OCP: interface 는 확장에 열려있다. [11](https://www.typescriptlang.org/ko/docs/handbook/2/everyday-types.html#타입-별칭과-인터페이스의-차이점)
 - 교차 타입에서 퍼포먼스적으로 좋다. [12](https://github.com/microsoft/TypeScript/wiki/Performance#preferring-interfaces-over-intersections)
 - 핸드북에서 권장된다. `You should prefer interface. Use type when you need specific features.` [13](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#defining-types)
 
@@ -106,8 +105,8 @@ export enum TimezoneAsEnum {
   KR = "Asia/Seoul",
   JP = "Asia/Tokyo",
   VN = "Asia/Ho_Chi_Minh",
-  PH = "Asia/Manila"
-};
+  PH = "Asia/Manila",
+}
 
 // const enum
 export const enum TimezoneAsConstEnum {
@@ -115,7 +114,7 @@ export const enum TimezoneAsConstEnum {
   JP = "Asia/Tokyo",
   VN = "Asia/Ho_Chi_Minh",
   PH = "Asia/Manila",
-};
+}
 
 // const
 console.log(timezone.KR);
@@ -140,13 +139,11 @@ export const timezone = {
 export var TimezoneAsEnum;
 
 (function (TimezoneAsEnum) {
-  TimezoneAsEnum["KR"] ="Asia/Seoul";
+  TimezoneAsEnum["KR"] = "Asia/Seoul";
   TimezoneAsEnum["JP"] = "Asia/Tokyo";
   TimezoneAsEnum["VN"] = "Asia/Ho_Chi_Minh";
   TimezoneAsEnum["PH"] = "Asia/Manila";
 })(TimezoneAsEnum || (TimezoneAsEnum = {}));
-;
-;
 // const
 console.log(timezone.KR);
 
@@ -167,7 +164,7 @@ enums 의 역참조를 사용하는 경우는 다음과 같다.
 // enum 을 역참조하는 경우
 enum Color {
   RED = 0,
-  ORANGE = 1
+  ORANGE = 1,
 }
 
 // let red = Color.RED;
@@ -190,11 +187,11 @@ export enum Timezone {
 getTimezone(timezone: Timezone)
 // JS 에서는 정상
 // TS 에서는 Asia/Seoul 형식은 Timezone 형식의 매개변수에 할당될 수 없습니다.
-getTimezone("Asia/Seoul") 
+getTimezone("Asia/Seoul")
 
 // import 해야 정상
 import { Timezone } from './enums';
-getTimezone(Timezone.KR); 
+getTimezone(Timezone.KR);
 ```
 
 ### ES6 Private vs Private accessor
@@ -205,7 +202,6 @@ getTimezone(Timezone.KR);
 
 ```ts title="input"
 class Test {
-
   #es6Private() {}
 
   private accessorPrivate() {}
@@ -219,21 +215,21 @@ class Test {
   constructor() {
     _Test_instances.add(this);
   }
-  accessorPrivate() { }
+  accessorPrivate() {}
 }
 
-_Test_instances = new WeakSet(), 
-_Test_es6Private = function _Test_es6Private() { };
+(_Test_instances = new WeakSet()),
+  (_Test_es6Private = function _Test_es6Private() {});
 ```
 
 ### DOM
 
-| Type | Example |
-| ---- | ------- |
-| EventTarget | window, XMLHttpRequest |
-| Node | document, Text, comment |
-| Element | HTMLElement, SVGElement |
-| HTMLElement | \<b\>, \<i\> |
+| Type           | Example                             |
+| -------------- | ----------------------------------- |
+| EventTarget    | window, XMLHttpRequest              |
+| Node           | document, Text, comment             |
+| Element        | HTMLElement, SVGElement             |
+| HTMLElement    | \<b\>, \<i\>                        |
 | HTML`*`Element | HTMLButtonElement, HTMLInputElement |
 
 - 브라우저에 라이브러리를 만드는 경우나 ref 를 사용하는 경우는 위 DOM 구조를 확실히 알아야한다.

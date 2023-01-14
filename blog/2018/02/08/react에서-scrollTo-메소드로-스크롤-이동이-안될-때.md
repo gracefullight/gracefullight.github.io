@@ -3,7 +3,6 @@ title: react에서 scrollTo 메소드로 스크롤 이동이 안될 때
 authors: me
 tags: [javascript, react]
 date: 2018-02-08 17:16:14
-
 ---
 
 `window.scrollTo(0, 0)` 를 아무리 해봐도 스크롤이 맨 위로 올라가지 않을 때 많은 구글링을 한 뒤 다음과 같은 해결책을 적용해보았다
@@ -23,7 +22,7 @@ date: 2018-02-08 17:16:14
 ```jsx title="Footer.js"
 class Footer extends Component {
   scrollToTop = (event) => {
-    document.getElementById('root').scrollTo(0, 0);
+    document.getElementById("root").scrollTo(0, 0);
   };
 
   render() {

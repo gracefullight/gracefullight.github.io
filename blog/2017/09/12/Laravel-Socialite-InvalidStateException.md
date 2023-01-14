@@ -3,7 +3,6 @@ title: Laravel - Socialite InvalidStateException
 authors: me
 tags: [php, laravel]
 date: 2017-09-12 22:24:25
-
 ---
 
 가끔 가다가 인증이 안 되는 경우가 있다.

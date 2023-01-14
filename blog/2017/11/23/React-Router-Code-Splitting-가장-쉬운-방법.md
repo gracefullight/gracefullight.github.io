@@ -14,12 +14,12 @@ date: 2017-11-23 10:58:22
 [React-router 의 Code Splitting](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/code-splitting.md#code-splitting)탭 에서 찾아볼 수 있는데, 아주 간결하게 컴포넌트를 불러 온다.
 
 ```js
-import React, { Component } from 'react';
-import Loadable from 'react-loadable';
-import Loading from './Loading';
+import React, { Component } from "react";
+import Loadable from "react-loadable";
+import Loading from "./Loading";
 
 const LoadableComponent = Loadable({
-  loader: () => import('./Dashboard'),
+  loader: () => import("./Dashboard"),
   /* 컴포넌트 로딩시 보여지는 로딩 컴포넌트 */
   loading: Loading,
 });

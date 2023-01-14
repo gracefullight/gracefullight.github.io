@@ -3,7 +3,6 @@ title: chrome usb 디버깅 장치를 못 찾거나 연결이 안될 때
 authors: me
 tags: [chrome, windows]
 date: 2019-06-17 21:16:40
-
 ---
 
 usb 디버깅 승인 후 `chrome://inspect#devices` 탭에 접근하면 기기가 보이면서 디버깅이 가능해야하는데,

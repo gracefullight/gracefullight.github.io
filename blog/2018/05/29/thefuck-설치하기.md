@@ -3,7 +3,6 @@ title: thefuck 설치하기
 authors: me
 tags: [bash, git]
 date: 2018-05-29 19:24:45
-
 ---
 
 # thefuck

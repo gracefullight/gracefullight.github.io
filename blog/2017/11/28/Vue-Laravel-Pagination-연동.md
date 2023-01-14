@@ -3,7 +3,6 @@ title: Vue - Laravel Pagination 연동
 authors: me
 tags: [javascript, php, vue, laravel]
 date: 2017-11-28 15:36:34
-
 ---
 
 Laravel에서 `paginate` 메소드를 `json`으로 받았을 시에 데이터는 다음과 같다.
@@ -55,7 +54,7 @@ Laravel에서 `paginate` 메소드를 `json`으로 받았을 시에 데이터는
       fetchPosts: function (page) {
         var vm = this;
         axios
-          .get('url', {
+          .get("url", {
             params: {
               page: page || 1,
             },

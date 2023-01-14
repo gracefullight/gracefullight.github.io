@@ -3,7 +3,6 @@ title: Kubernetes의 모든 것
 authors: me
 tags: [k8s, docker]
 date: 2019-06-09 12:23:59
-
 ---
 
 매번 용어 찾아보는 게 귀찮아서 정리했다.

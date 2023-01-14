@@ -28,10 +28,10 @@ jQuery.ajax 의 dataType 을 json 으로 설정해 데이터를 받는데, 이�
 var jsonReplace = function (j) {
   if (j) {
     j = j
-      .replace(/\"\[/g, '[')
-      .replace(/\]\"/g, ']')
-      .replace(/\"\{/g, '{')
-      .replace(/\}\"/g, '}');
+      .replace(/\"\[/g, "[")
+      .replace(/\]\"/g, "]")
+      .replace(/\"\{/g, "{")
+      .replace(/\}\"/g, "}");
   }
   return j;
 };

@@ -3,7 +3,6 @@ title: 쿠버네티스 리눅스 커널 튜닝하기
 authors: me
 tags: [k8s, docker, linux]
 date: 2020-01-24 23:43:55
-
 ---
 
 # 변경가능한 커널 설정
@@ -50,15 +49,15 @@ spec:
   securityContext:
     sysctls:
       - name: kernel.shm_rmid_forced
-        value: '0'
+        value: "0"
       - name: net.core.somaxconn
-        value: '10000'
+        value: "10000"
       - name: kernel.msgmax
-        value: '65536'
+        value: "65536"
       - name: fs.file-max
-        value: '2097152'
+        value: "2097152"
       - name: net.ipv4.ip_local_port_range
-        value: '1024 65536'
+        value: "1024 65536"
 ```
 
 # 여담

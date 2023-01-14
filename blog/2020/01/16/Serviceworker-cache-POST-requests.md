@@ -3,7 +3,6 @@ title: 서비스워커로 POST Request 캐싱하기
 authors: me
 tags: [javascript, pwa, serviceworker]
 date: 2020-01-16 23:58:30
-
 ---
 
 # 앞서
@@ -19,21 +18,21 @@ date: 2020-01-16 23:58:30
 ```js
 // IndexedDB 는 Promisify 되어있지 않아서 라이브러리가 필요하다.
 importScripts(
-  'https://cdn.jsdelivr.net/npm/localforage@1.7.3/dist/localforage.min.js'
+  "https://cdn.jsdelivr.net/npm/localforage@1.7.3/dist/localforage.min.js"
 );
 
 // 캐시하고 싶은 POST 엔드포인트
-const ENDPOINT = 'https://your-domain/post-request';
+const ENDPOINT = "https://your-domain/post-request";
 
 const bin2Hex = (buffer) => {
-  let digest = '';
+  let digest = "";
   const dataView = new DataView(buffer);
   for (let i = 0, len = dataView.byteLength; i < len; i += 4) {
     let value = dataView.getUint32(i);
     // hex 로 바꾸면 패딩비트 0 이 제거된다.
     let hex = value.toString(16);
     // uint32 는 4bytes 로 나온다.
-    let padding = '00000000';
+    let padding = "00000000";
     // 패딩을 더해서 뒤에서 잘라준다.
     let paddedValue = (padding + hex).slice(-padding.length);
     digest += paddedValue;
@@ -46,7 +45,7 @@ const postRequestFetchListener = (fetchEvent) => {
   const requestUrl = fetchEvent.request.url;
   const method = fetchEvent.request.method.toUpperCase();
   // 맞는 엔드포인트인지 확인
-  if (!(method === 'POST' && requestUrl === ENDPOINT)) {
+  if (!(method === "POST" && requestUrl === ENDPOINT)) {
     return;
   }
 
@@ -60,38 +59,38 @@ const postRequestFetchListener = (fetchEvent) => {
           new Uint8Array(buffer)
         );
         // request body 에 원하는 조건만 캐시처리할 수 있게 한다.
-        if (requestBody.includes('cache=1')) {
+        if (requestBody.includes("cache=1")) {
           // 속도면에서 다른 해싱 알고리즘을 사용해도 무방하다.
-          return crypto.subtle.digest('SHA-1', buffer);
+          return crypto.subtle.digest("SHA-1", buffer);
         }
 
         return Promise.reject();
       })
       .then((sha1Buffer) => {
         const sha1Hash = bin2Hex(sha1Buffer);
-        console.log('SHA1 Hash => ', sha1Hash);
+        console.log("SHA1 Hash => ", sha1Hash);
 
         // IndexedDB 에서 캐시된 키를 찾는다.
         return localforage.getItem(sha1Hash).then((cachedResponse) => {
           if (cachedResponse) {
-            console.log('Cached repsonse => ', cachedResponse);
+            console.log("Cached repsonse => ", cachedResponse);
             return new Response(cachedResponse, {
               // 여기서 statusCode 를 304 로 내보내고 싶었으나, Body 를 반환할 수 없었다.
               status: 200,
-              statusText: 'OK',
+              statusText: "OK",
               headers: {
-                'Content-Length': cachedResponse.length,
-                'Content-Type': 'application/json',
+                "Content-Length": cachedResponse.length,
+                "Content-Type": "application/json",
                 // 그래서 커스텀 헤더를 추가했다.
-                'X-SW-Cache-Hit': 1,
-                'X-SW-Cache-Type': 'POST',
+                "X-SW-Cache-Hit": 1,
+                "X-SW-Cache-Type": "POST",
               },
             });
           }
 
           // 캐시된 데이터가 없을 경우 새로 요청한다.
           return fetch(fetchEvent.request).then((response) => {
-            console.log('Fetching response => ', response.clone());
+            console.log("Fetching response => ", response.clone());
 
             // 정상적일 경우만 IndexedDB 에 저장한다.
             if (200 <= response.status && response.status < 400) {
@@ -100,7 +99,7 @@ const postRequestFetchListener = (fetchEvent) => {
                 .clone()
                 .text()
                 .then((textResponse) => {
-                  console.log('Caching response => ', textResponse);
+                  console.log("Caching response => ", textResponse);
                   return localforage.setItem(sha1Hash, textResponse);
                 });
             }
@@ -114,7 +113,7 @@ const postRequestFetchListener = (fetchEvent) => {
 };
 
 // 리스너를 등록해준다.
-self.addEventListener('fetch', postRequestFetchListener);
+self.addEventListener("fetch", postRequestFetchListener);
 ```
 
 # 여담

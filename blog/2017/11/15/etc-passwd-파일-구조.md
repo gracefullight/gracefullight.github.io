@@ -1,5 +1,5 @@
 ---
-title: '/etc/passwd 파일 구조'
+title: "/etc/passwd 파일 구조"
 authors: me
 tags: [linux]
 date: 2017-11-15 01:04:12

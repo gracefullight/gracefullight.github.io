@@ -3,7 +3,6 @@ title: 왜 리덕스 사가(Redux-saga) 인가?
 authors: me
 tags: [javascript, react]
 date: 2017-12-06 09:50:37
-
 ---
 
 `redux`, `redux-thunk`, `redux-promise-middleware`, `redux-actions`, `redux-saga` 머리가 뽀개질 지경이다. 결국엔 `redux-saga`를 써야만 했고 왜 **saga**로 수렴하게 되는지에 대한 삽질기다.
@@ -100,9 +99,9 @@ $ yarn add redux-saga
 ### type
 
 ```js title="types/index.js"
-export const FETCH_BOARDS = 'FETCH_BOARDS';
-export const FETCH_BOARDS_FULFILLED = 'FETCH_BOARDS_FULFILLED';
-export const FETCH_BOARDS_REJECTED = 'FETCH_BOARDS_REJECTED';
+export const FETCH_BOARDS = "FETCH_BOARDS";
+export const FETCH_BOARDS_FULFILLED = "FETCH_BOARDS_FULFILLED";
+export const FETCH_BOARDS_REJECTED = "FETCH_BOARDS_REJECTED";
 ```
 
 ### action
@@ -158,9 +157,9 @@ export default (state = INITIAL_STATE, { type, payload, error }) => {
 `saga`는 action을 listen(watch)한다.
 
 ```js title="saga/index.js"
-import { call, spawn, put, takeEvery } from 'redux-saga/effects';
-import * as actions from '../actions';
-import axios from 'axios';
+import { call, spawn, put, takeEvery } from "redux-saga/effects";
+import * as actions from "../actions";
+import axios from "axios";
 
 function* fetchBoardsSaga() {
   // try catch finally 구문으로 오류 제어가 가능하다.
@@ -168,7 +167,7 @@ function* fetchBoardsSaga() {
     // 이부분을 call 메소드를 이용해 테스트가 쉽게 바꿀 수 있다.
     // (yeild를 사용하기 때문에 next 명령어로 반복 가능하므로)
     // const { data } = yield call([axios, 'get'], '/boards')
-    const { data } = yield axios.get('/boards');
+    const { data } = yield axios.get("/boards");
     yield put(actions.fetchBoardsFulfilled(data));
   } catch (error) {
     yield put(actions.fetchBoardsRejected(error.response));
@@ -197,7 +196,7 @@ export default function* root() {
 스토어 담는건 각자의 취향이니 어떻게 연결하는지만 보면 된다.
 
 ```js title="store/index.js"
-import createSagaMiddleware, { END } from 'redux-saga';
+import createSagaMiddleware, { END } from "redux-saga";
 const saga = createSagaMiddleware();
 
 export default function configureStore(initialState) {

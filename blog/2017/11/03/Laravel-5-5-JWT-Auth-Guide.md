@@ -3,7 +3,6 @@ title: Laravel 5.5에 JWT (Json Web Token) Auth 추가하기
 authors: me
 tags: [php, laravel, jwt, oauth2]
 date: 2017-11-03 07:59:40
-
 ---
 
 검색해 나온 포스트들은 5.4버전에 대해서만 나와있어서, 5.5에서는 아무짝에 쓸모가 없었다.

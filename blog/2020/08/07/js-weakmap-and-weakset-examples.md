@@ -3,7 +3,6 @@ title: WeakMap, WeakSet 예제
 authors: me
 tags: [javascript]
 date: 2020-08-07 22:45:42
-
 ---
 
 항상 `WeakMap`, `WeakSet`을 어떤 방식으로 쓸까 많이 고민되었다.
@@ -78,7 +77,7 @@ function execRecursively(fn, subject, refs = null) {
   }
 
   fn(subject);
-  if (typeof subject === 'object') {
+  if (typeof subject === "object") {
     refs.add(subject);
     for (let key in subject) {
       execRecursively(fn, subject[key], refs);
@@ -87,9 +86,9 @@ function execRecursively(fn, subject, refs = null) {
 }
 
 const foo = {
-  foo: 'Foo',
+  foo: "Foo",
   bar: {
-    bar: 'Bar',
+    bar: "Bar",
   },
 };
 

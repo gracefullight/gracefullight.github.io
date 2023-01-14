@@ -3,7 +3,6 @@ title: Mac에서 Kubernetes is starting이 지속되는 현상
 authors: me
 tags: [docker, k8s, mac]
 date: 2019-04-12 19:30:42
-
 ---
 
 # 원인

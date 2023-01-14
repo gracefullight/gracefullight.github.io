@@ -3,7 +3,6 @@ title: Gitment 사용하기
 authors: me
 tags: [gitment, git, javascript]
 date: 2018-08-25 12:35:05
-
 ---
 
 # Gitment 사용하기
@@ -49,15 +48,15 @@ https://gracefullight.github.io
   <script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.js"></script>
   <script>
     var gitment = new Gitment({
-      id: 'Gitment 를 구분할 아이디 (ex: 페이지 제목 또는 포스팅 일시)',
-      owner: 'github 아이디 (ex: gracefullight)',
-      repo: 'repository 명 (ex: gracefullight.github.io)',
+      id: "Gitment 를 구분할 아이디 (ex: 페이지 제목 또는 포스팅 일시)",
+      owner: "github 아이디 (ex: gracefullight)",
+      repo: "repository 명 (ex: gracefullight.github.io)",
       oauth: {
-        client_id: '위에서 발급 받은 client_id',
-        client_secret: '위에서 발급 받은 client_secret',
+        client_id: "위에서 발급 받은 client_id",
+        client_secret: "위에서 발급 받은 client_secret",
       },
     });
-    gitment.render('gitment_thread');
+    gitment.render("gitment_thread");
   </script>
 </section>
 ```

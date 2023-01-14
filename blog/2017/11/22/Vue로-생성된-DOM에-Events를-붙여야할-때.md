@@ -3,7 +3,6 @@ title: Vue로 생성된 DOM에 Events를 붙여야할 때
 authors: me
 tags: [javascript, vue]
 date: 2017-11-22 16:10:11
-
 ---
 
 data 값이 변경되고 나서 `.hover`, `.click`과 같은 jQuery 이벤트를 붙여야할 때, DOM이 다시 그려진 완료 시점을 잡아야한다.
@@ -20,7 +19,7 @@ new Vue({
     var vm = this;
 
     axios
-      .get('/members')
+      .get("/members")
       .then(function (response) {
         vm.members = response.data;
 
@@ -34,7 +33,7 @@ new Vue({
       */
       })
       .then(function () {
-        $('.members').hover();
+        $(".members").hover();
       });
   },
 });

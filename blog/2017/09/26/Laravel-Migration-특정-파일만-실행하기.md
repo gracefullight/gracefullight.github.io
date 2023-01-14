@@ -3,7 +3,6 @@ title: Laravel - Migration 특정 파일만 실행하기
 authors: me
 tags: [php, laravel]
 date: 2017-09-26 22:31:31
-
 ---
 
 전체를 migration 하지 않고 부분만 migration하고 싶을 때 다음과 같이 하면 된다.

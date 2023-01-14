@@ -3,7 +3,6 @@ title: CSS3 레이아웃
 authors: me
 tags: [css, layout, html]
 date: 2020-03-01 14:52:04
-
 ---
 
 # CSS3
@@ -271,9 +270,9 @@ date: 2020-03-01 14:52:04
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
-    'a a b'
-    '. d d'
-    'c e e';
+    "a a b"
+    ". d d"
+    "c e e";
 }
 
 .item1 {

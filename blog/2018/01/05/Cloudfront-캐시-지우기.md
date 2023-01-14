@@ -3,7 +3,6 @@ title: Cloudfront 캐시 지우기
 authors: me
 tags: [aws]
 date: 2018-01-05 13:41:12
-
 ---
 
 클라우드프론트로 static website hosting 을 할 경우에 삭제된 s3 의 파일이 노출되는 경우가 있다.

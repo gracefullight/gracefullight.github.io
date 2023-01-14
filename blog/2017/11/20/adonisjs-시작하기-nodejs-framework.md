@@ -3,7 +3,6 @@ title: adonisjs 시작하기 (nodejs framework)
 authors: me
 tags: [nodejs, javascript]
 date: 2017-11-20 18:53:10
-
 ---
 
 # 개요
@@ -109,9 +108,9 @@ $ adonis serve --dev
 Route 뒤에 method를 붙히면 된다.
 
 ```js
-Route.get('/boards', async () => {});
+Route.get("/boards", async () => {});
 
-Route.get('/boards/:id', async ({ params }) => {
+Route.get("/boards/:id", async ({ params }) => {
   const board = await Board.find(params.id);
   return board;
 });
@@ -120,18 +119,18 @@ Route.get('/boards/:id', async ({ params }) => {
 ### 컨트롤러와 연결
 
 ```js
-Route.get('boards', 'BoardController.index');
+Route.get("boards", "BoardController.index");
 /* 리소스로 사용시에 */
-Route.resource('boards', 'BoardController');
+Route.resource("boards", "BoardController");
 
 /* 리소스에서 create, edit 메소드를 빼고 사용시 */
-Route.resource('boards', 'BoardController').apiOnly();
+Route.resource("boards", "BoardController").apiOnly();
 
 /* 구미가 당기는 것만 사용시 */
-Route.resource('boards', 'BoardController').only(['index', 'destroy']);
+Route.resource("boards", "BoardController").only(["index", "destroy"]);
 
 /* 구미가 안 당기는 것을 제외할 시 */
-Route.resource('boards', 'BoardController').except(['index', 'destroy']);
+Route.resource("boards", "BoardController").except(["index", "destroy"]);
 ```
 
 ## 그룹화
@@ -141,9 +140,9 @@ Route.resource('boards', 'BoardController').except(['index', 'destroy']);
 ```js
 /* /api/boards routes */
 Route.group(() => {
-  Route.get('/boards', 'BoardController.index');
-  Route.post('/boards', 'BoardController.store');
-}).prefix('api');
+  Route.get("/boards", "BoardController.index");
+  Route.post("/boards", "BoardController.store");
+}).prefix("api");
 ```
 
 # 컨트롤러
@@ -189,17 +188,17 @@ class Board extends Model {
   // 테이블 명을 변경해야할 경우
   // (테이블 명이 모델명의 복수형이 아닐 경우)
   static get table() {
-    return 'board';
+    return "board";
   }
 
   // 기본 커넥션이 변경될 경우
   static get connection() {
-    return 'mysql';
+    return "mysql";
   }
 
   // PK 컬럼명이 id가 아닐 경우
   static get primaryKey() {
-    return 'uid';
+    return "uid";
   }
 
   // PK의 Auto Increment가 아닐 경우
@@ -210,17 +209,17 @@ class Board extends Model {
   // 비밀번호 같은 컬럼을 보여주지 않아야 될 경우
   // 이 경우 모델에서 fetch 또는 first 메소드로 쿼리빌더를 실행해야된다
   static get hidden() {
-    return ['password'];
+    return ["password"];
   }
 
   // 생성일 컬럼이 변경될 경우
   static get createdAtColumn() {
-    return 'created_at';
+    return "created_at";
   }
 
   // 업데이트일 컬럼이 변경될 경우
   static get updatedAtColumn() {
-    return 'updated_at';
+    return "updated_at";
   }
 }
 ```

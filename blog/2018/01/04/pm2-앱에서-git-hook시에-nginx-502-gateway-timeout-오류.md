@@ -3,7 +3,6 @@ title: pm2 앱에서 git hook시에 nginx 502 gateway timeout 오류
 authors: me
 tags: [nodejs, javascript, pm2, nginx]
 date: 2018-01-04 10:19:13
-
 ---
 
 # 원인
@@ -18,15 +17,15 @@ git pull을 hook으로 실행하는데 계속 nginx 502 gateway timeout 오류�
 module.exports = {
   apps: [
     {
-      name: 'server',
-      script: 'server.js',
+      name: "server",
+      script: "server.js",
       env_production: {
-        NODE_ENV: 'production',
+        NODE_ENV: "production",
       },
       watch: true,
-      ignore_watch: ['node_modules', '.git', 'yarn.lock', 'package-lock.json'],
-      exec_mode: 'cluster',
-      instances: 'max',
+      ignore_watch: ["node_modules", ".git", "yarn.lock", "package-lock.json"],
+      exec_mode: "cluster",
+      instances: "max",
     },
   ],
 };

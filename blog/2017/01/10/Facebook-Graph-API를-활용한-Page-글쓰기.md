@@ -10,9 +10,9 @@ date: 2017-01-10 16:14:21
 ```javascript
 window.fbAsyncInit = function () {
   FB.init({
-    appId: '앱 키',
+    appId: "앱 키",
     xfbml: true,
-    version: 'v2.8',
+    version: "v2.8",
   });
 };
 (function (d, s, id) {
@@ -23,9 +23,9 @@ window.fbAsyncInit = function () {
   }
   js = d.createElement(s);
   js.id = id;
-  js.src = '//connect.facebook.net/en_US/sdk.js';
+  js.src = "//connect.facebook.net/en_US/sdk.js";
   fjs.parentNode.insertBefore(js, fjs);
-})(document, 'script', 'facebook-jssdk');
+})(document, "script", "facebook-jssdk");
 ```
 
 # Page 권한 얻기 (선택)
@@ -35,15 +35,15 @@ window.fbAsyncInit = function () {
 ```javascript
 FB.login(
   function (login_result) {
-    if (login_result.status === 'connected') {
+    if (login_result.status === "connected") {
       // 여기에 3번 로직을 넣으면 된다.
-    } else if (login_result.status === 'not_authorized') {
-      alert('페이스북 인증에 실패했습니다');
+    } else if (login_result.status === "not_authorized") {
+      alert("페이스북 인증에 실패했습니다");
     } else {
-      alert('페이스북 API 호출에 실패했습니다');
+      alert("페이스북 API 호출에 실패했습니다");
     }
   },
-  { scope: 'publish_pages,manage_pages' }
+  { scope: "publish_pages,manage_pages" }
 );
 // 이 두 권한이 꼭 필요하다
 ```
@@ -54,12 +54,15 @@ FB.login(
 또는 페이지 아이디를 [여기](http://findmyfbid.com/)서 주소로 검색해보자
 
 ```javascript
-FB.api('/나의 페이지 아이디/', 'GET', { fields: 'access_token' }, function (
-  token_result
-) {
-  // token_result.access_token 이 페이지 관리자로 글을 쓰기 위해 필요하다
-  // 여기에 4번 로직을 넣으면 된다.
-});
+FB.api(
+  "/나의 페이지 아이디/",
+  "GET",
+  { fields: "access_token" },
+  function (token_result) {
+    // token_result.access_token 이 페이지 관리자로 글을 쓰기 위해 필요하다
+    // 여기에 4번 로직을 넣으면 된다.
+  }
+);
 ```
 
 # Page Feed 작성
@@ -69,16 +72,16 @@ Graph API 를 사용해 피드를 작성한다.
 
 ```javascript
 FB.api(
-  '/my page id/feed',
-  'POST',
+  "/my page id/feed",
+  "POST",
   {
     access_token: token_result.access_token,
-    message: '내용',
-    link: '링크 걸 주소',
-    picture: '링크 이미지',
-    name: '링크 제목',
-    description: '링크 설명',
-    caption: '링크 하단 캡션',
+    message: "내용",
+    link: "링크 걸 주소",
+    picture: "링크 이미지",
+    name: "링크 제목",
+    description: "링크 설명",
+    caption: "링크 하단 캡션",
   },
   function (page_result) {
     if (page_result && !page_result.error) {
@@ -93,41 +96,44 @@ FB.api(
 ```js
 FB.login(
   function (login_result) {
-    if (login_result.status === 'connected') {
+    if (login_result.status === "connected") {
       getFbAccessToken();
-    } else if (login_result.status === 'not_authorized') {
-      alert('페이스북 인증에 실패했습니다');
+    } else if (login_result.status === "not_authorized") {
+      alert("페이스북 인증에 실패했습니다");
     } else {
-      alert('페이스북 API 호출에 실패했습니다');
+      alert("페이스북 API 호출에 실패했습니다");
     }
   },
-  { scope: 'publish_pages,manage_pages' }
+  { scope: "publish_pages,manage_pages" }
 );
 
 function getFbAccessToken() {
-  FB.api('/나의 페이지 아이디/', 'GET', { fields: 'access_token' }, function (
-    token_result
-  ) {
-    postFbPage(token_result);
-  });
+  FB.api(
+    "/나의 페이지 아이디/",
+    "GET",
+    { fields: "access_token" },
+    function (token_result) {
+      postFbPage(token_result);
+    }
+  );
 }
 
 function postFbPage(token_result) {
   FB.api(
-    '/나의 페이지 아이디/feed',
-    'POST',
+    "/나의 페이지 아이디/feed",
+    "POST",
     {
       access_token: token_result.access_token,
-      message: '내용',
-      link: '링크 걸 주소',
-      picture: '링크 이미지',
-      name: '링크 제목',
-      description: '링크 설명',
-      caption: '링크 하단 캡션',
+      message: "내용",
+      link: "링크 걸 주소",
+      picture: "링크 이미지",
+      name: "링크 제목",
+      description: "링크 설명",
+      caption: "링크 하단 캡션",
     },
     function (page_result) {
       if (page_result && !page_result.error) {
-        alert('성공');
+        alert("성공");
       }
     }
   );

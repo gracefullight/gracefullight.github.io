@@ -3,7 +3,6 @@ title: Laravel 5.5 - 일본으로 메일 보내기
 authors: me
 tags: [php, laravel]
 date: 2017-07-19 00:11:01
-
 ---
 
 일본 통신사 중 소프트뱅크와 AU는 UTF8 메일이 깨져서 들어간다. (도코모는 정상적)
