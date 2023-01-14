@@ -89,10 +89,13 @@
 }
 
 .gt-container .gt-comment-content:hover {
-  border: 1px solid var(--ifm-color-emphasis-300) !important;
   box-shadow: none !important;
 }
 
 .gt-container .gt-comment-content .gt-comment-body {
   color: var(--ifm-font-color-base) !important;
+}
+
+.gt-container .gt-popup {
+  background-color: var(--ifm-dropdown-background-color) !important;
 }

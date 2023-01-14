@@ -1,5 +1,6 @@
 ---
 title: TypeScript 협업
+description: An overview of the benefits and challenges of using TypeScript in collaboration, including its popularity and ability to prevent bugs.
 authors: me
 tags: [typescript]
 date: 2022-01-16 20:09:51

@@ -1,5 +1,6 @@
 ---
 title: yarn, ts 스타터 체크리스트
+description: A checklist for starting a blank repository with yarn and TypeScript for testing and collaboration.
 authors: me
 tags: [javascript, typescript, yarn]
 date: 2022-07-30 14:28:02

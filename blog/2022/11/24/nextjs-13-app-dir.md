@@ -1,5 +1,6 @@
 ---
 title: Nextjs App Directory
+description: How to use the Next.js 13 app directory and its limitations.
 authors: me
 tags: [javascript, typescript, react, nextjs]
 date: 2022-11-24 23:16:14

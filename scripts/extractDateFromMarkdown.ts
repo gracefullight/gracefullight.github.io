@@ -30,7 +30,7 @@ export class ExtractDateFromMarkdown extends Command {
   }
 
   async execute() {
-    let directory = resolve(__dirname, "..", "blog");
+    const directory = resolve(__dirname, "..", "blog");
     this.context.stdout.write(`Read: ${directory}`);
 
     const files = await readdir(directory);
