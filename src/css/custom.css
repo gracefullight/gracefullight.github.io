@@ -93,6 +93,6 @@
   box-shadow: none !important;
 }
 
-.gt-container .gt-comment-body {
+.gt-container .gt-comment-content .gt-comment-body {
   color: var(--ifm-color-content-secondary) !important;
 }
