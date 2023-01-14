@@ -79,6 +79,20 @@
 }
 
 .gt-container .gt-header-preview {
-  background-color: var(--ifm-background-surface-color);
-  color: text;
+  background-color: var(--ifm-background-surface-color) !important;
+  color: var(--ifm-color-content-secondary) !important;
+}
+
+.gt-container .gt-comment-admin .gt-comment-content {
+  background-color: var(--ifm-background-surface-color) !important;
+  border-radius: var(--ifm-global-radius) !important;
+}
+
+.gt-container .gt-comment-content:hover {
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  box-shadow: none !important;
+}
+
+.gt-container .gt-comment-body {
+  color: var(--ifm-color-content-secondary) !important;
 }
