@@ -1,10 +1,13 @@
 import type { LoadContext, Plugin } from "@docusaurus/types";
 import { Joi } from "@docusaurus/utils-validation";
 
+// ! https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-plugin-google-analytics/src/index.ts
 // ? https://analytics.naver.com/management/mysites.html
 export interface PluginNaverAnalyticsOptions {
   siteId: string;
 }
+
+export type Options = Partial<PluginNaverAnalyticsOptions>;
 
 const pluginNaverAnalyticsOptionsSchema = Joi.object({
   siteId: Joi.string().required(),
@@ -19,6 +22,13 @@ export default async function naverAnalytics(
     injectHtmlTags() {
       return {
         headTags: [
+          {
+            tagName: "link",
+            attributes: {
+              rel: "preconnect",
+              href: "https://wcs.naver.net",
+            },
+          },
           {
             tagName: "script",
             attributes: {

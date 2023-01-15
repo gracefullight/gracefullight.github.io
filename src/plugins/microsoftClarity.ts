@@ -19,6 +19,13 @@ export default async function microsoftClarity(
       return {
         headTags: [
           {
+            tagName: "link",
+            attributes: {
+              rel: "preconnect",
+              href: "https://www.clarity.ms",
+            },
+          },
+          {
             tagName: "script",
             innerHTML: `(function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
