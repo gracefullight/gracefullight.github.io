@@ -98,22 +98,21 @@ const config = {
         ],
       }),
     ],
-    // TODO: plugins monorepo
+    // ! Can't use ts directly https://docusaurus.io/docs/typescript-support#typing-config
     [
-      // ! Can't use ts directly https://docusaurus.io/docs/typescript-support#typing-config
-      require.resolve("./src/plugins/googleAdSense"),
+      "@gracefullight/docusaurus-plugin-google-adsense",
       {
-        googleAdClient: "ca-pub-3004788392777865",
+        adClient: "ca-pub-3004788392777865",
       },
     ],
     [
-      require.resolve("./src/plugins/microsoftClarity"),
+      "@gracefullight/docusaurus-plugin-microsoft-clarity",
       {
         projectId: "aongv9xgi6",
       },
     ],
     [
-      require.resolve("./src/plugins/naverAnalytics"),
+      "@gracefullight/docusaurus-plugin-naver-analytics",
       {
         siteId: "156bc73a81e3bd0",
       },

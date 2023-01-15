@@ -2534,7 +2534,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/utils-validation@npm:2.2.0, @docusaurus/utils-validation@npm:^2.2.0":
+"@docusaurus/utils-validation@npm:2.2.0, @docusaurus/utils-validation@npm:^2, @docusaurus/utils-validation@npm:^2.2.0":
   version: 2.2.0
   resolution: "@docusaurus/utils-validation@npm:2.2.0"
   dependencies:
@@ -2596,6 +2596,33 @@ __metadata:
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
   checksum: 4059f790e2d07bf3c3ff3e0fec0daa8144fe35c1f6e0111c9921bd32106adaa97a4ab096ad7dab1e28ee6a9060083c4d1a4ada42a7f5f3f7a96b8812e2b757c1
+  languageName: node
+  linkType: hard
+
+"@gracefullight/docusaurus-plugin-google-adsense@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@gracefullight/docusaurus-plugin-google-adsense@npm:0.1.0"
+  dependencies:
+    "@docusaurus/utils-validation": ^2
+  checksum: 4deb72845bac893872c5d69d4f8a9bd824c1dc26445e0c9caf181cc56d5670a90be446459231f689ac732b567300368d689919885834371d614849ca4ddb65ee
+  languageName: node
+  linkType: hard
+
+"@gracefullight/docusaurus-plugin-microsoft-clarity@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@gracefullight/docusaurus-plugin-microsoft-clarity@npm:0.1.0"
+  dependencies:
+    "@docusaurus/utils-validation": ^2
+  checksum: d66751f40f3362fa24cb2b841d747d6e5e96e6c92971ad1a2e9ea2a39ca039789214a045389ee1b75f09a09330bda8c2bfcaa38d1b16921e73be94cdfac44737
+  languageName: node
+  linkType: hard
+
+"@gracefullight/docusaurus-plugin-naver-analytics@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@gracefullight/docusaurus-plugin-naver-analytics@npm:0.1.0"
+  dependencies:
+    "@docusaurus/utils-validation": ^2
+  checksum: d9e8c43322c28291da1d2b8c6d674f1d3c0ed0cacbcf9848449e1312cf871f68889b1e242c7747a4fa7351f2405efef9c133e8d8317d2b1215233a349e73f03c
   languageName: node
   linkType: hard
 
@@ -7821,6 +7848,9 @@ __metadata:
     "@docusaurus/theme-mermaid": ^2.2.0
     "@docusaurus/types": ^2.2.0
     "@docusaurus/utils-validation": ^2.2.0
+    "@gracefullight/docusaurus-plugin-google-adsense": ^0.1.0
+    "@gracefullight/docusaurus-plugin-microsoft-clarity": ^0.1.0
+    "@gracefullight/docusaurus-plugin-naver-analytics": ^0.1.0
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.6
     "@types/crypto-js": ^4.1.1
