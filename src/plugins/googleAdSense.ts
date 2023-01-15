@@ -19,6 +19,13 @@ export default async function googleAdSense(
       return {
         headTags: [
           {
+            tagName: "link",
+            attributes: {
+              rel: "preconnect",
+              href: "https://pagead2.googlesyndication.com",
+            },
+          },
+          {
             tagName: "script",
             attributes: {
               src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${options.googleAdClient}`,
