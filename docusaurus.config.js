@@ -117,6 +117,12 @@ const config = {
         siteId: "156bc73a81e3bd0",
       },
     ],
+    [
+      "@gracefullight/docusaurus-plugin-channelio",
+      {
+        pluginKey: "0fd130ba-a1a6-4b7e-802a-e82a885a7fd8",
+      },
+    ],
   ],
 
   themeConfig:

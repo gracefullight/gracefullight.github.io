@@ -38,9 +38,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/theme-mermaid", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.2.0"],\
             ["@docusaurus/types", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.2.0"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"],\
-            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.0"],\
-            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.0"],\
-            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.2"],\
+            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.2"],\
+            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.2"],\
             ["@mdx-js/react", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.6"],\
             ["@types/crypto-js", "npm:4.1.1"],\
@@ -5296,31 +5297,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@gracefullight/docusaurus-plugin-google-adsense", [\
+      ["@gracefullight/docusaurus-plugin-channelio", [\
         ["npm:0.1.0", {\
-          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-google-adsense-npm-0.1.0-91da263032-4deb72845b.zip/node_modules/@gracefullight/docusaurus-plugin-google-adsense/",\
+          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-channelio-npm-0.1.0-8144377f0d-08eb7f2242.zip/node_modules/@gracefullight/docusaurus-plugin-channelio/",\
           "packageDependencies": [\
-            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@docusaurus/utils-validation", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@gracefullight/docusaurus-plugin-google-adsense", [\
+        ["npm:0.1.2", {\
+          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-google-adsense-npm-0.1.2-2b3fa3e079-8f97266edb.zip/node_modules/@gracefullight/docusaurus-plugin-google-adsense/",\
+          "packageDependencies": [\
+            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.2"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@gracefullight/docusaurus-plugin-microsoft-clarity", [\
-        ["npm:0.1.0", {\
-          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-microsoft-clarity-npm-0.1.0-c0021a6bea-d66751f40f.zip/node_modules/@gracefullight/docusaurus-plugin-microsoft-clarity/",\
+        ["npm:0.1.2", {\
+          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-microsoft-clarity-npm-0.1.2-e61896a2e7-a4545983a6.zip/node_modules/@gracefullight/docusaurus-plugin-microsoft-clarity/",\
           "packageDependencies": [\
-            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.2"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@gracefullight/docusaurus-plugin-naver-analytics", [\
-        ["npm:0.1.0", {\
-          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-naver-analytics-npm-0.1.0-aa722ceadf-d9e8c43322.zip/node_modules/@gracefullight/docusaurus-plugin-naver-analytics/",\
+        ["npm:0.1.2", {\
+          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-naver-analytics-npm-0.1.2-1f255fb95e-32a5a3a117.zip/node_modules/@gracefullight/docusaurus-plugin-naver-analytics/",\
           "packageDependencies": [\
-            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.2"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
@@ -11870,9 +11881,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/theme-mermaid", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.2.0"],\
             ["@docusaurus/types", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.2.0"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"],\
-            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.0"],\
-            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.0"],\
-            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.2"],\
+            ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.2"],\
+            ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.2"],\
             ["@mdx-js/react", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:1.6.22"],\
             ["@tsconfig/docusaurus", "npm:1.0.6"],\
             ["@types/crypto-js", "npm:4.1.1"],\

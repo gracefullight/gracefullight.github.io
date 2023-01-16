@@ -2599,30 +2599,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gracefullight/docusaurus-plugin-google-adsense@npm:^0.1.0":
+"@gracefullight/docusaurus-plugin-channelio@npm:^0.1.0":
   version: 0.1.0
-  resolution: "@gracefullight/docusaurus-plugin-google-adsense@npm:0.1.0"
+  resolution: "@gracefullight/docusaurus-plugin-channelio@npm:0.1.0"
   dependencies:
     "@docusaurus/utils-validation": ^2
-  checksum: 4deb72845bac893872c5d69d4f8a9bd824c1dc26445e0c9caf181cc56d5670a90be446459231f689ac732b567300368d689919885834371d614849ca4ddb65ee
+  checksum: 08eb7f2242a04725304d471a6256cdf278b3e40c29c18764a7e19f98148b3ffbe1d932dd8ac00ab081cf7c276dd32780f45e1cec6ab131bd61b9fa436303cbd1
   languageName: node
   linkType: hard
 
-"@gracefullight/docusaurus-plugin-microsoft-clarity@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@gracefullight/docusaurus-plugin-microsoft-clarity@npm:0.1.0"
+"@gracefullight/docusaurus-plugin-google-adsense@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@gracefullight/docusaurus-plugin-google-adsense@npm:0.1.2"
   dependencies:
     "@docusaurus/utils-validation": ^2
-  checksum: d66751f40f3362fa24cb2b841d747d6e5e96e6c92971ad1a2e9ea2a39ca039789214a045389ee1b75f09a09330bda8c2bfcaa38d1b16921e73be94cdfac44737
+  checksum: 8f97266edb05c39329417af60c6fe4bf0704a6e671f6c05c9365c10ab00a9133a24baa6fb86a3314bc129f644dfc77f34bd9dda84845e9d73b994022e280fd57
   languageName: node
   linkType: hard
 
-"@gracefullight/docusaurus-plugin-naver-analytics@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@gracefullight/docusaurus-plugin-naver-analytics@npm:0.1.0"
+"@gracefullight/docusaurus-plugin-microsoft-clarity@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@gracefullight/docusaurus-plugin-microsoft-clarity@npm:0.1.2"
   dependencies:
     "@docusaurus/utils-validation": ^2
-  checksum: d9e8c43322c28291da1d2b8c6d674f1d3c0ed0cacbcf9848449e1312cf871f68889b1e242c7747a4fa7351f2405efef9c133e8d8317d2b1215233a349e73f03c
+  checksum: a4545983a6f8bccf594d59bcf35af0c6dd0e7ac9909bd996722dee79c8d62b8765e38d418afa6becd86f66deb1fb4b83a6530ade59f6cc59a8e153377eaae14c
+  languageName: node
+  linkType: hard
+
+"@gracefullight/docusaurus-plugin-naver-analytics@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@gracefullight/docusaurus-plugin-naver-analytics@npm:0.1.2"
+  dependencies:
+    "@docusaurus/utils-validation": ^2
+  checksum: 32a5a3a1170e084b7f46e98bf506a97df9c2d7077c0c185b57a1b96fb3adfe4141340fc323faeb42f075557b08d83f7e49b18c3456bb3867dd4b8186973be79c
   languageName: node
   linkType: hard
 
@@ -7848,9 +7857,10 @@ __metadata:
     "@docusaurus/theme-mermaid": ^2.2.0
     "@docusaurus/types": ^2.2.0
     "@docusaurus/utils-validation": ^2.2.0
-    "@gracefullight/docusaurus-plugin-google-adsense": ^0.1.0
-    "@gracefullight/docusaurus-plugin-microsoft-clarity": ^0.1.0
-    "@gracefullight/docusaurus-plugin-naver-analytics": ^0.1.0
+    "@gracefullight/docusaurus-plugin-channelio": ^0.1.0
+    "@gracefullight/docusaurus-plugin-google-adsense": ^0.1.2
+    "@gracefullight/docusaurus-plugin-microsoft-clarity": ^0.1.2
+    "@gracefullight/docusaurus-plugin-naver-analytics": ^0.1.2
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^1.0.6
     "@types/crypto-js": ^4.1.1
