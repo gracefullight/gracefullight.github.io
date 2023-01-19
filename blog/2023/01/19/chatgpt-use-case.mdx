@@ -1,0 +1,47 @@
+---
+title: ChatGPT 이용사례
+date: 2023-01-19T22:44:09.237+09:00
+description:
+authors: me
+tags: [chatgpt, javascript]
+---
+
+# ChatGPT 이용사례
+
+## 개요
+
+코딩을 해준다라는 과대광고를 집어치우고 실제로 유용하게 사용할 수 있는 유스케이스들을 정리해보았다.
+
+## 정규식 추출
+
+보통 정규식을 만드는데에는 박음질하듯이 많은 테스트가 필요하다.
+주로 regexr, regex101 사이트에 원하는 텍스트를 넣고 기억에 의존하면서 Negative/Positive Lookahead 를 맞추고, Negative/Positive Lookbehind 를 사용하다가 Negative Lookbehind가 프로그래밍 버전/언어별로 지원여부가 달라 찾게되는 경우가 많다.
+
+이젠 ChatGPT에 물어본다. 아래 패키지 업데이트 내역에서 패키지명을 추출한다고 해보자.
+
+```txt
+Hello GPT.
+
+Can you give me a regex pattern for getting to-be result?
+
+as-is:
+Orignal content
+
+
+to-be:
+Refined string #1
+Refined string #2
+...and so on.
+```
+
+알아서 가져다 줄 것이다.
+
+## 코드로 문서 작성
+
+내 코드의 문서가 쓰고 싶다면 코드를 넣고 README.md 를 만들어달라고 하자.
+
+```
+Can you write a README.md with this code?
+```
+
+알아서 가져다준다.
