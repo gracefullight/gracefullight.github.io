@@ -4,6 +4,7 @@ import type BlogPostItemType from "@theme/BlogPostItem";
 import type { WrapperProps } from "@docusaurus/types";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+// TODO: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest#browser_compatibility
 import md5 from "crypto-js/md5";
 
 // ? https://github.com/gitalk/gitalk#method-two-use-in-react
