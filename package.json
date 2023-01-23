@@ -24,6 +24,7 @@
     "@docusaurus/theme-common": "^2.2.0",
     "@docusaurus/theme-mermaid": "^2.2.0",
     "@docusaurus/utils-validation": "^2.2.0",
+    "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@gracefullight/docusaurus-plugin-channelio": "^0.1.0",
     "@gracefullight/docusaurus-plugin-google-adsense": "^0.1.2",
     "@gracefullight/docusaurus-plugin-microsoft-clarity": "^0.1.2",

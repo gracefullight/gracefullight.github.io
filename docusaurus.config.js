@@ -1,4 +1,3 @@
-// @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
@@ -34,7 +33,19 @@ const config = {
     mermaid: true,
   },
 
-  themes: ["@docusaurus/theme-mermaid"],
+  themes: [
+    "@docusaurus/theme-mermaid",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        indexDocs: false,
+        blogRouteBasePath: "/",
+        hashed: true,
+        language: ["en", "ko"],
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -154,11 +165,11 @@ const config = {
         },
       ],
       // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
-      algolia: {
-        appId: "T6L0PPYQJB",
-        apiKey: "bd2df39f13d832e4af85f188bae01295",
-        indexName: "gracefullight",
-      },
+      // algolia: {
+      //   appId: "T6L0PPYQJB",
+      //   apiKey: "bd2df39f13d832e4af85f188bae01295",
+      //   indexName: "gracefullight",
+      // },
       navbar: {
         title: "gracefullight.dev",
         logo: {
