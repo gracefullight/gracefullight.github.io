@@ -132,8 +132,28 @@ env:
 
 ### comment
 
-- 코멘트 기능은 질답할 시간이 없다. 과감하게 삭제.
-- 오탈자 수정이나 제안은 메일로 주는 분들이 있어서 과감하게 삭제.
+- 코멘트 기능은 질답할 시간이 없다.
+- 과감하게 삭제하려했으나 커스터마이징해서 gitalk을 연동했다.
+
+### search
+
+- algolia가 오픈소스 개발문서가 아니여서그런지 무료 인덱싱을 요청했으나 티켓 상태가 변경되지 않았다.
+- [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local)를 사용했다.
+
+```js title="docusaurus.config.js"
+{
+  themes: [
+    "@easyops-cn/docusaurus-search-local",
+    /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+    ({
+      indexDocs: false,
+      blogRouteBasePath: "/",
+      hashed: true,
+      language: ["en", "ko"],
+    }),
+  ],
+}
+```
 
 ## 결과
 
