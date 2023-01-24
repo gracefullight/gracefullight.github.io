@@ -33,9 +33,7 @@ const config = {
     mermaid: true,
   },
 
-  themes: [
-    "@docusaurus/theme-mermaid"
-  ],
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
