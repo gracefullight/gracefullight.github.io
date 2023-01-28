@@ -122,6 +122,12 @@ const config = {
         pluginKey: "0fd130ba-a1a6-4b7e-802a-e82a885a7fd8",
       },
     ],
+    [
+      "@gracefullight/docusaurus-plugin-cloudflare-analytics",
+      {
+        token: "c0899829e72b45e98dff77241127252c"
+      }
+    ]
   ],
 
   themeConfig:

@@ -2677,6 +2677,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gracefullight/docusaurus-plugin-cloudflare-analytics@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@gracefullight/docusaurus-plugin-cloudflare-analytics@npm:0.1.0"
+  dependencies:
+    "@docusaurus/utils-validation": ^2
+  checksum: a03f1a88f0e2cf3a54735fbccfb8893850552b166132aa41b4c41625eeb657242c46d96a5ec8b97b31457d77391269b9396ac205aeb44eec8272800378b793e0
+  languageName: node
+  linkType: hard
+
 "@gracefullight/docusaurus-plugin-google-adsense@npm:^0.1.2":
   version: 0.1.2
   resolution: "@gracefullight/docusaurus-plugin-google-adsense@npm:0.1.2"
@@ -7927,6 +7936,7 @@ __metadata:
     "@docusaurus/types": ^2.3.0
     "@docusaurus/utils-validation": ^2.3.0
     "@gracefullight/docusaurus-plugin-channelio": ^0.1.0
+    "@gracefullight/docusaurus-plugin-cloudflare-analytics": ^0.1.0
     "@gracefullight/docusaurus-plugin-google-adsense": ^0.1.2
     "@gracefullight/docusaurus-plugin-microsoft-clarity": ^0.1.2
     "@gracefullight/docusaurus-plugin-naver-analytics": ^0.1.2

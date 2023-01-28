@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/types", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.3.0"],\
             ["@docusaurus/utils-validation", "npm:2.3.0"],\
             ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-cloudflare-analytics", "npm:0.1.0"],\
             ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.2"],\
             ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.2"],\
             ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.2"],\
@@ -5392,6 +5393,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-channelio-npm-0.1.0-8144377f0d-08eb7f2242.zip/node_modules/@gracefullight/docusaurus-plugin-channelio/",\
           "packageDependencies": [\
             ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@docusaurus/utils-validation", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@gracefullight/docusaurus-plugin-cloudflare-analytics", [\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/@gracefullight-docusaurus-plugin-cloudflare-analytics-npm-0.1.0-51aceb7efd-a03f1a88f0.zip/node_modules/@gracefullight/docusaurus-plugin-cloudflare-analytics/",\
+          "packageDependencies": [\
+            ["@gracefullight/docusaurus-plugin-cloudflare-analytics", "npm:0.1.0"],\
             ["@docusaurus/utils-validation", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
@@ -11972,6 +11983,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@docusaurus/types", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.3.0"],\
             ["@docusaurus/utils-validation", "npm:2.3.0"],\
             ["@gracefullight/docusaurus-plugin-channelio", "npm:0.1.0"],\
+            ["@gracefullight/docusaurus-plugin-cloudflare-analytics", "npm:0.1.0"],\
             ["@gracefullight/docusaurus-plugin-google-adsense", "npm:0.1.2"],\
             ["@gracefullight/docusaurus-plugin-microsoft-clarity", "npm:0.1.2"],\
             ["@gracefullight/docusaurus-plugin-naver-analytics", "npm:0.1.2"],\
