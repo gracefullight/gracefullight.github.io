@@ -160,8 +160,8 @@ const config = {
       ],
       // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
       algolia: {
-        appId: "T6L0PPYQJB",
-        apiKey: "bd2df39f13d832e4af85f188bae01295",
+        appId: "RFS69RSYOJ",
+        apiKey: "ed845a181b33267d7d7f830674259972",
         indexName: "gracefullight",
       },
       navbar: {
