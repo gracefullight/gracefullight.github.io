@@ -138,7 +138,7 @@ env:
 ### search
 
 - algolia가 오픈소스 개발문서가 아니여서그런지 무료 인덱싱을 요청했으나 티켓 상태가 변경되지 않았다.
-- [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local)를 사용했다.
+- [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local)를 사용했는데, 이건 모바일 지원이 안 된다.
 
 ```js title="docusaurus.config.js"
 {
@@ -155,7 +155,10 @@ env:
 }
 ```
 
+- 1주정도 지났을까 algolia 에서 회신이 왔고, 인덱싱도 성공적으로 완료되었다.
+
 ## 결과
 
 - 만족스럽다.
-- 사내 문서로 쓰기엔 [typesense](https://docusaurus.io/docs/search#using-typesense-docsearch) 를 먼저 구축해야할 것 같아서.. 쉽지 않을듯.
+- 사내 문서로 쓰기엔 [typesense](https://docusaurus.io/docs/search#using-typesense-docsearch) 를 먼저 구축해야할 것 같아서 쉽진 않을듯..
+- 모바일로 볼 필요가 없으면 위의 플러그인으로도 만족스러울 것 같다.
