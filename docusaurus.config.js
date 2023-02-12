@@ -18,7 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "gracefullight", // Usually your GitHub org/user name.
   projectName: "gracefullight.github.io", // Usually your repo name.
-  deploymentBranch: "main",
+  deploymentBranch: "gh-pages",
   trailingSlash: true,
 
   // Even if you don't use internalization, you can use this field to set useful
