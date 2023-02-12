@@ -1,5 +1,10 @@
 {
   "name": "gracefullight.github.io",
+  "author": {
+    "name": "gracefullight",
+    "email": "gracefullight.dev@gmail.com",
+    "url": "https://gracefullight.dev"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
