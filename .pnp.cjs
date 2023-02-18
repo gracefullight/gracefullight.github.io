@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["clipanion", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:3.2.0"],\
             ["clsx", "npm:1.2.1"],\
             ["crypto-js", "npm:4.1.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-prettier", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:8.6.0"],\
             ["eslint-plugin-mdx", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.0.5"],\
@@ -10332,6 +10333,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["duplexer", [\
         ["npm:0.1.2", {\
           "packageLocation": "./.yarn/cache/duplexer-npm-0.1.2-952c810235-62ba61a830.zip/node_modules/duplexer/",\
@@ -12000,6 +12010,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["clipanion", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:3.2.0"],\
             ["clsx", "npm:1.2.1"],\
             ["crypto-js", "npm:4.1.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.34.0"],\
             ["eslint-config-prettier", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:8.6.0"],\
             ["eslint-plugin-mdx", "virtual:2dbb2bda5396464ed8825ea77e99c9d371f612479e650d3ce085934ef5d18c2b68451d2bad812b5f86317cb6af4abb147bb72d92549b25501409da9320d7a790#npm:2.0.5"],\
