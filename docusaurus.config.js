@@ -178,6 +178,11 @@ const config = {
             position: "right",
           },
           {
+            href: "https://www.linkedin.com/in/gracefullight",
+            label: "LinkedIn",
+            position: "right",
+          },
+          {
             to: "/archive",
             label: "Archives",
           },
