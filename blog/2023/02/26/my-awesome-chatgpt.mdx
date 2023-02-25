@@ -1,0 +1,56 @@
+---
+title: My Awesome ChatGPT
+date: 2023-02-26T00:29:33.470+09:00
+description: Explore useful repositories for developers, including ChatGPT and other tools that can streamline your workflow and increase productivity.
+authors: me
+tags: [chatgpt]
+---
+
+# My Awesome ChatGPT
+
+- 이제는 질문을 어떻게 하느냐와 그 결과가 맞는지 틀린지 판단을 빨리하는 사람이 살아남을 것 같다.
+- 개발 관련된 팁 말고 현장에 바로 쓸만한 레파지토리들을 정리해본다.
+
+## aicommits
+
+- [Nutlope/aicommits](https://github.com/Nutlope/aicommits): 커밋 자동화
+- [#32 Add support for conventional commits](https://github.com/Nutlope/aicommits/issues/32)가 해결되면 바로 사용할 예정
+- 개인적으로는 아래 프롬프트를 바꿔줘야할 것 같은데, 어떻게 개선할지도 궁금하다.
+
+```ts title="src/utils/openai.ts#L7"
+// highlight-next-line
+const promptTemplate = 'Write an insightful but concise Git commit message in a complete sentence in present tense for the following diff without prefacing it with anything:';
+```
+
+- [#81 Quick improvement suggestion: Reduce diff size with --ignore-all-space](https://github.com/Nutlope/aicommits/issues/81#issuecomment-1443077579)도 흥미롭다.
+- Openai API가 토큰 수로 과금이 되니 최대한 디프를 줄일 예정인듯 하다.
+
+
+## node chatgpt
+
+- [transitive-bullshit/chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api)
+- [openai: docs](https://platform.openai.com/docs/api-reference/completions/create#completions/create-temperature)
+- [completionParams](https://github.com/transitive-bullshit/chatgpt-api/blob/main/src/types.ts#L62) 를 적절하게 활용해줘야할 것 같다.
+- 여러 서드파티를 확인해봤지만 temperature를 1로 주는 경우는 없었다.
+
+```ts
+const completionParams = {
+  temperature: 0.7,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0,
+}
+```
+
+## tiktoken
+
+- openai API를 사용하기위해 정확한 토큰 수를 구해야할 수도 있다.
+- [openai/tiktoken](https://github.com/openai/tiktoken)을 사용해야하지만 파이썬이다.
+- [dqbd/tiktoken](https://github.com/dqbd/tiktoken) 이미 벌써 노드 래퍼가 나왔다.
+
+```ts
+import { encoding_for_model as encodingForModel } from '@dqbd/tiktoken';
+
+const encoder = encodingForModel("text-davinci-003");
+const tokenLength = encoder.encode("YOUR_CHAT").length;
+```
