@@ -8,7 +8,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
+    "postinstall": "husky install",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
