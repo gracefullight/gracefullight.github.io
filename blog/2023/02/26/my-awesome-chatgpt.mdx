@@ -16,15 +16,16 @@ tags: [chatgpt]
 - [Nutlope/aicommits](https://github.com/Nutlope/aicommits): 커밋 자동화
 - [#32 Add support for conventional commits](https://github.com/Nutlope/aicommits/issues/32)가 해결되면 바로 사용할 예정
 - 개인적으로는 아래 프롬프트를 바꿔줘야할 것 같은데, 어떻게 개선할지도 궁금하다.
+- [#177 feat: enable Conventional Commits standard as flag](https://github.com/Nutlope/aicommits/pull/177/files) 곧 머지될 것 같다.
 
 ```ts title="src/utils/openai.ts#L7"
 // highlight-next-line
-const promptTemplate = 'Write an insightful but concise Git commit message in a complete sentence in present tense for the following diff without prefacing it with anything:';
+const promptTemplate =
+  "Write an insightful but concise Git commit message in a complete sentence in present tense for the following diff without prefacing it with anything:";
 ```
 
 - [#81 Quick improvement suggestion: Reduce diff size with --ignore-all-space](https://github.com/Nutlope/aicommits/issues/81#issuecomment-1443077579)도 흥미롭다.
 - Openai API가 토큰 수로 과금이 되니 최대한 디프를 줄일 예정인듯 하다.
-
 
 ## node chatgpt
 
@@ -39,18 +40,30 @@ const completionParams = {
   top_p: 1,
   frequency_penalty: 0,
   presence_penalty: 0,
-}
+};
 ```
 
 ## tiktoken
 
 - openai API를 사용하기위해 정확한 토큰 수를 구해야할 수도 있다.
 - [openai/tiktoken](https://github.com/openai/tiktoken)을 사용해야하지만 파이썬이다.
-- [dqbd/tiktoken](https://github.com/dqbd/tiktoken) 이미 벌써 노드 래퍼가 나왔다.
+- [dqbd/tiktoken](https://github.com/dqbd/tiktoken) 이미 벌써 노드 래퍼가 나왔다. 3.5 터보도 지원한다.
 
 ```ts
-import { encoding_for_model as encodingForModel } from '@dqbd/tiktoken';
+import { encoding_for_model as encodingForModel } from "@dqbd/tiktoken";
 
-const encoder = encodingForModel("text-davinci-003");
+const encoder = encodingForModel("gpt-3.5-turbo");
 const tokenLength = encoder.encode("YOUR_CHAT").length;
 ```
+
+## chatgpt-retrieval-plugin
+
+[openai/chatgpt-retrieval-plugin](https://github.com/openai/chatgpt-retrieval-plugin)
+
+- .well-known 경로에 ai-plugin.json 이 manifest.json 의 역할
+- 같은 경로의 Openapi.yaml 이 엔드포인트 명세
+- 인증은 `none | user_http | service_http | oauth` 네 종류
+- 간단한 서비스는 `service_http` 정도로 충분해보임, `user_http` 는 고객이 API key 를 입력해야하고, `oauth` 는 `search:read` 와 같은 권한 추가 필요.
+- 문서 유사도 비교를 위해 벡터 DB 를 사용하는 것으로 보이나, Node.js 의 마땅한 래퍼가 없어서 레디스로 구현하면 될듯, 하지만 Redisearch 모듈은 필요.
+  - [datastore/providers/redis_datastore.py](https://github.com/openai/chatgpt-retrieval-plugin/blob/main/datastore/providers/redis_datastore.py)
+  - [services/openai.py](https://github.com/openai/chatgpt-retrieval-plugin/blob/38b46e1926ba1b4bf04263e85afe6b661efec1b6/services/openai.py#L23)
