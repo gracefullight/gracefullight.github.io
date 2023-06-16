@@ -19,6 +19,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+      - uses: pnpm/action-setup@master
+        with:
+          version: 8
 
       - name: SETUP_NODE_${{ matrix.node-version }}
         uses: actions/setup-node@master
@@ -29,9 +32,6 @@ jobs:
         run: |
           git config --global user.name 'gracefullight'
           git config --global user.email 'gracefullight.dev@gmail.com'
-          
-      - name: INSTALL_PNPM
-        run: npm install -g pnpm
 
       - name: INSTALL_PACKAGES
         run: pnpm install
