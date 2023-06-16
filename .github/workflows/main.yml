@@ -29,12 +29,15 @@ jobs:
         run: |
           git config --global user.name 'gracefullight'
           git config --global user.email 'gracefullight.dev@gmail.com'
+          
+      - name: INSTALL_PNPM
+        run: npm install -g pnpm
 
       - name: INSTALL_PACKAGES
-        run: yarn
+        run: pnpm install
 
       - name: BUILD
-        run: yarn build
+        run: pnpm run build
 
       - name: DEPLOY
-        run: yarn deploy
+        run: pnpm run deploy
