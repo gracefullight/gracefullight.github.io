@@ -34,7 +34,7 @@ jobs:
           git config --global user.email 'gracefullight.dev@gmail.com'
 
       - name: INSTALL_PACKAGES
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: BUILD
         run: pnpm run build
