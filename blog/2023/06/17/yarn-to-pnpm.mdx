@@ -1,0 +1,44 @@
+---
+title: yarn to pnpm
+date: 2023-06-17T08:42:13.449+09:00
+description:
+authors: me
+tags: [nodejs]
+---
+
+## 개요
+
+- Yarn berry 가 최고라고 유행이 돌았다.
+- 써본 결과 문제가 상당히 많았고, 결국 pnpm 을 선택하는 이유이다.
+
+## 문제점
+
+### zipfs
+
+- 패키지를 모두 저장하고 디프도 모두 기록된다. 레파지토리 사이즈를 올리는 주범이다. 1GB 미만으로 이미지 관리가 어렵다.
+- typescript 가 올라가는 경우 yarn berry 버전을 올려줘야한다. 타입스크립트의 최신 문법을 바로 사용하고 싶으나 따라갈 수가 없다.
+- typescript, eslint, prettier 를 올릴 때마다 `yarn dlx @yarnpkg/sdks vscode`로 실행스크립트를 업데이트 해줘야한다.
+- 20명 이상의 프론트엔드 개발자가 붙어야하는 프로젝트에서는 이를 일일히 강제하기가 어렵다.
+- 패키지 내부 소스를 잠깐 수정해서 테스트해보는 것은 불가능하다.
+
+### opensource
+
+- turbo 와 같은 모노레포 툴과, create-\* 과 같이 프리셋을 구성하는 환경은 `node_modules` 를 참조한다.
+- 실행조차 안 되는 경우가 많은데, 그러면 각 레포의 열려있는 이슈를 기다려야한다. yarn berry 의 pnp 스크립트를 분석하려고 쓰는건 아니니까.
+- 이럴 경우 `nodeLinker`를 주고 yarn 1 버전을 쓸 때와 똑같이 사용을 해야하는데, 아무런 어드밴티지가 없다.
+
+### workspaces
+
+- yarn workspaces 기능은 멋지지고 [yarnpkg/berry](https://github.com/yarnpkg/berry) 에 그 완벽한 예시가 있다.
+- 그러나 node.js 라이브러리만을 개발할 때만 멋지다. 프론트엔드용 라이브러리는 번들러가 필요한데 그 레퍼런스가 없다.
+
+## 벤치마크
+
+- 벤치마크 성적은 데일리로 Pnpm 에서 관리한다.
+- 파이프라인 캐시랑 락 파일 켜면 감수할만한 느림이다. 일회성 느림이지 요청/응답에 대한 느림이 아니니까 어차피 프로브로 처리 가능하다.
+
+![https://pnpm.io/benchmarks](https://d33wubrfki0l68.cloudfront.net/0cb4f1b1466c5e04cdfd5047d6d509a6a3726996/ea3c9/img/benchmarks/alotta-files.svg)
+
+## 결론
+
+- yarn berry 의 플러그인 기능들은 멋지지만, 의존성관리에 스트레스가 더 쌓인다.
