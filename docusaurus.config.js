@@ -1,8 +1,8 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 require('dotenv').config();
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
+// ? https://github.com/FormidableLabs/prism-react-renderer/tree/master/packages/prism-react-renderer/src/themes
+const { themes } = require("prism-react-renderer");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -221,8 +221,8 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: themes.github,
+        darkTheme: themes.vsDark,
       },
     }),
 };
