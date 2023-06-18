@@ -23,7 +23,7 @@ tags: [nodejs]
 
 ### opensource
 
-- turbo 와 같은 모노레포 툴과, create-\* 과 같이 프리셋을 구성하는 환경은 `node_modules` 를 참조한다.
+- turbo 와 같은 모노레포 툴과, prism 과 같이 postinstall 훅이 걸려있거나, create-\* 과 같이 프리셋을 구성하는 환경은 `node_modules` 를 직접 참조한다.
 - 실행조차 안 되는 경우가 많은데, 그러면 각 레포의 열려있는 이슈를 기다려야한다. yarn berry 의 pnp 스크립트를 분석하려고 쓰는건 아니니까.
 - 이럴 경우 `nodeLinker`를 주고 yarn 1 버전을 쓸 때와 똑같이 사용을 해야하는데, 아무런 어드밴티지가 없다.
 
