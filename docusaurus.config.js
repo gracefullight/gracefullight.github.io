@@ -1,5 +1,5 @@
 // Note: type annotations allow type checking and IDEs autocompletion
-require('dotenv').config();
+require("dotenv").config();
 
 // ? https://github.com/FormidableLabs/prism-react-renderer/tree/master/packages/prism-react-renderer/src/themes
 const { themes } = require("prism-react-renderer");
@@ -126,9 +126,9 @@ const config = {
     [
       "@gracefullight/docusaurus-plugin-cloudflare-analytics",
       {
-        token: "c0899829e72b45e98dff77241127252c"
-      }
-    ]
+        token: "c0899829e72b45e98dff77241127252c",
+      },
+    ],
   ],
 
   themeConfig:

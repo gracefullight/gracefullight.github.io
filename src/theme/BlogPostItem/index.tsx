@@ -1,16 +1,16 @@
-import React from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import type { WrapperProps } from "@docusaurus/types";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import BlogPostItem from "@theme-original/BlogPostItem";
 import type BlogPostItemType from "@theme/BlogPostItem";
-import type { WrapperProps } from "@docusaurus/types";
-import BrowserOnly from "@docusaurus/BrowserOnly";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from "react";
 // TODO: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest#browser_compatibility
 import md5 from "crypto-js/md5";
 
 // ? https://github.com/gitalk/gitalk#method-two-use-in-react
-import "gitalk/dist/gitalk.css";
-import GitalkComponent from "gitalk/dist/gitalk-component";
 import Gitalk from "gitalk";
+import GitalkComponent from "gitalk/dist/gitalk-component";
+import "gitalk/dist/gitalk.css";
 
 type Props = WrapperProps<typeof BlogPostItemType>;
 
