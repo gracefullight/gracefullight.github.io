@@ -1,0 +1,38 @@
+---
+title: 아톰 기반 상태 관리와 Valtio
+date: 2023-06-25T16:45:45.480+09:00
+description: Shifting from Redux and Recoil to embracing Valtio for efficient state management.
+authors: me
+tags: [react, javascript]
+---
+
+## 개요
+
+- 한 때 redux 로 지친 상태관리를 해결하기 redux-saga 가 멋져보였고, 그 다음엔 원자 상태들의 조합이 그 해결방법으로 보였다.
+- 그래서 recoil 을 주로 사용했지만, query 나 swr를 사용한다면 로컬 UI 상태를 관리하는데에 그렇게 복잡한 기능이 필요하지 않다.
+- recoil 은 메타에서 버그의 수정만 되는 거의 버려진 프로젝트로 보인다. [discussion#2171](https://github.com/facebookexperimental/Recoil/discussions/2171)
+- 어차피 로컬 UI 상태는 pub/sub 패턴을 가지고 있기만 하면 된다.
+- 2023년의 상태관리 라이브러리의 우승자는 **zustand** 로 보인다.
+  - 이벤트/메세징 기반 시스템을 구성한다면 Flux 패턴을 가진 해당 라이브러리를 사용하는 게 맞다.
+  - 프론트엔드의 모든 기능을 액션 기반으로 동작하게 하여 에디터를 개발하던가 채팅시스템에서부터 기능호출 요청을 받아 연동한다던가하는 작업이라면 말이다.
+- 하지만 일반적인 유스케이스에서는 계단식 폼, 뱃지, 모달 등을 제외하면 Flux는 과하다.
+- 혼자 개발하는데 백엔드와 프론트엔드를 분리하고, Local, Dev, Stage, Prod 스테이지를 분리하면서 DB, 스케쥴러, 큐, API, SSR 스택도 모두 가져가려는 듯한 욕심이다.
+
+## atom
+
+- [번역, 리액트 상태 관리의 새로운 흐름](https://medium.com/@yujso66/%EB%B2%88%EC%97%AD-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%9D%90%EB%A6%84-6e5ed0022e39)을 보자.
+- 원자 단위면서 pub/sub, derived 가 가능하면 된다.
+- derived state 를 사용하는 것 또한 id 별로 새로운 상태가 필요한 경우가 아니라면 거의 없었다. 데이터로는 이미 query 가 그 역할을 하고 있다.
+- 아토믹 디자인, 아토믹 상태관리는 필수가 되었다.
+- 많은 개발자가 비동기적으로 개발하는 상황에서는 어떤 파일이 아톰인지, 뭘 위한 아톰인지를 기록하는 게 중요했다.
+- `*.atom.ts` 파일 서픽스와 `*State` 변수명 서픽스를 갖게 했다.
+
+## valtio
+
+- [jotai/atom](https://github.com/pmndrs/jotai/blob/main/src/vanilla/atom.ts#L83), [Recoil/atom](https://github.com/facebookexperimental/Recoil/blob/main/packages/recoil/recoil_values/Recoil_atom.js#L185) 모두 아톰기반의 상태를 관리하고 상태를 전파한다.
+- [valtio/proxy](https://github.com/pmndrs/valtio/blob/main/src/vanilla.ts#L156) 는 Proxy와 Reflect를 사용해 같은 기능을 구현했다.
+- [Results for js web frameworks benchmark](https://krausest.github.io/js-framework-benchmark/2023/table_chrome_114.0.5735.90.html)를 참조해보면 메모리 관리가 최악은 아니다.
+- zustand, jotai, valtio 모두 [pmndrs](https://github.com/orgs/pmndrs/repositories?q=&type=all&language=&sort=stargazers) 커뮤니티에서 다루는 오픈소스이고 [같은 사람](https://github.com/dai-shi)이 컨트리뷰터, 메인테이너이다.
+- [valito/discussion#128](https://github.com/pmndrs/valtio/discussions/128) 에서의 그의 의견처럼 그냥 작동한다.
+- [valito/issues#141](https://github.com/pmndrs/valtio/issues/141#issuecomment-891214314) Redux, Redux-saga 로 1년, Mobx POC, Recoil 로 2년을 보낸 나에겐 너무나 공감이 되는 코멘트였다.
+- 당분간은 여러 프로젝트를 만들어보면서 모두 이 상태관리 라이브러리를 사용해보려고한다.
