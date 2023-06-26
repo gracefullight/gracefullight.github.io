@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[60713],{13766:e=>{e.exports=JSON.parse('{"label":"composer","permalink":"/en/tags/composer","allTagsPath":"/en/tags","count":1}')}}]);

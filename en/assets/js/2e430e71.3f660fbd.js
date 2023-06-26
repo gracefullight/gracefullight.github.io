@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[66236],{47888:a=>{a.exports=JSON.parse('{"label":"oauth2","permalink":"/en/tags/oauth-2","allTagsPath":"/en/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[65723],{53947:e=>{e.exports=JSON.parse('{"label":"jslint","permalink":"/en/tags/jslint","allTagsPath":"/en/tags","count":1}')}}]);

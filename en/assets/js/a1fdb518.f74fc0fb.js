@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[19652],{39332:e=>{e.exports=JSON.parse('{"label":"youtube","permalink":"/en/tags/youtube","allTagsPath":"/en/tags","count":2}')}}]);

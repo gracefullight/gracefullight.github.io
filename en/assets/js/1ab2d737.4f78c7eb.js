@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[49581],{60266:e=>{e.exports=JSON.parse('{"label":"vim","permalink":"/en/tags/vim","allTagsPath":"/en/tags","count":3}')}}]);
