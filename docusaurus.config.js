@@ -26,8 +26,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "ko",
+    locales: ["ko", "en"],
   },
 
   markdown: {
@@ -172,6 +172,10 @@ const config = {
           src: "img/favicon-32x32.png",
         },
         items: [
+          {
+            type: "localeDropdown",
+            position: "left",
+          },
           {
             href: "https://github.com/gracefullight",
             label: "GitHub",

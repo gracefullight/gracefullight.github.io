@@ -1,0 +1,87 @@
+---
+title: A 10-year programmer's tech retrospective
+date: 2023-06-17T10:38:32.173+09:00
+description: A 10-year programmer's tech retrospective
+authors: me
+tags: []
+---
+
+## Programmer
+
+What is a programmer?
+
+- People who like to categorize will call it a coder, developer, or engineer.
+- To strangers, it may seem like a job that pays a lot of money, or that you have to pay on demand,
+- To an employer, you're a mechanic.
+
+What does this job mean to me?
+
+- At the point where your short-term memory turns into long-term memory, you suddenly have an idea that will solve everything and you grab the keyboard.
+- Throwing myself into a gradient descent and not getting out of my chair until I hear the birds in the morning.
+- You want to code so badly that you can't because you're required to take a liberal arts major.
+
+These days, I tell stories like this.
+
+> I build houses on the internet.
+
+- Front-end? That's interior construction.
+- Backend? That's tooling and gutting.
+- DevOps? That's digging and rebarring.
+- Security? That's keeping unknowns out of the complex.
+
+Programming is about borrowing concepts from the real world to automate what humans do, and I feel like it took me too long to realize this.
+
+I finally understand why so many of my professors used to tell me that the more you know, the more important the basics are. I can see why so many of my professors used to say, "The more time you have, the more important the basics are.
+
+## Programming
+
+Do programming skills matter in the age of GPT?
+
+My answer is no. There comes a point where the idea of the service is more important than the technology stack.
+Even people who have never heard of Claude Shannon can create a service, and edge computing has made it possible to deploy that code.
+
+You can't say, "If you go this way, it's going to fall apart at some point.
+You can't pour gasoline on a burning house and then say, "I told you it would happen.
+
+The social climate is making it more so.
+
+## Technology stack
+
+All technology is a tradeoff.
+
+New things always cost money. You have to look at it from the perspective of staff skill and maintenance.
+
+I think, _This is not an academy, if you want to write something new, use your personal time and show me a prototype in a week_, but there are also people who think, Who am I studying for?
+
+This is why software engineering is so important.
+
+## My utopia
+
+So what was it that I didn't like, I don't even know if it was bad construction. You may not know.
+But not being able to say it's bad construction is overloading my body.
+
+To keep myself from stressing out, I'm going to keep a checklist of ideal features.
+
+- [ ] Do we have a code owner feature? Have we created a culture where certain code changes can be reviewed by a per-file owner?
+- [ ] What is the average number of comments in a code review?
+- [ ] What is the branching strategy?
+- [ ] Are unit tests run in the pipeline, and if so, what is the coverage?
+- [ ] Are integration tests based on real data executed in the pipeline, and if so, what are the criteria for inclusion in the integration tests?
+- [ ] Are E2E tests executed periodically, and if so, who is responsible for managing them?
+- [ ] Are cases given enough time to be implemented before going to test driven?
+- [ ] Do they perform chaos testing for external factors? Do they recognize the need for disaster recovery?
+- [ ] How is open source managed? Is the software versioned on a specific cycle?
+- [ ] Do developers manage their own Docker files and deployments, and if not, who does?
+- [ ] Is there support from the systems team to configure a private network? If not, is there an environment where a VPC can be configured?
+- [ ] What is being done mechanically to maintain the quality of the code, such as lint and static analysis?
+- [ ] If there is a failure, is the failure publicized and a failure report created?
+- [ ] Does everyone in the team have ownership of the service?
+- [ ] What is the SLA for the services you represent? What is the frequency of OOM failures or top 500 failures?
+- [ ] Is the SLA a standard for the HR department?
+- [ ] Is the direction of the owner visible to all members?
+- [ ] Are decisions made based on data? What tools are used to collect logs?
+- [ ] Is the logging format standardized with Open Telemetry, and if not, what format is being managed?
+- [ ] Collecting web metrics?
+- [ ] Is there a foundation for A/B testing to introduce features? If not, how is the HR department involved in planning?
+- [ ] Using a design system?
+- [ ] Are Storybooks managed in the same repository?

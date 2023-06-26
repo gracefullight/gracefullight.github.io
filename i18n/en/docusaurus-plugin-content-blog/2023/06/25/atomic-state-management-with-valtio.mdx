@@ -1,0 +1,38 @@
+---
+title: Atom-based state management and Valtio
+date: 2023-06-25T16:45:45.480+09:00
+description: Shifting from Redux and Recoil to embracing Valtio for efficient state management.
+authors: me
+tags: [react, javascript]
+---
+
+## Overview
+
+- At one point, redux-saga seemed like a cool way to solve redux's tired state management, and then a combination of atomic states seemed like the way to go.
+- That's why I've mostly used recoil, but if you're using query or swr, you don't need such a complicated feature to manage local UI state.
+- recoil seems to be an almost abandoned project with only bug fixes in the meta. [discussion#2171](https://github.com/facebookexperimental/Recoil/discussions/2171)
+- Anyway, local UI state just needs to have a pub/sub pattern.
+- The winner of the 2023 state management library seems to be **zustand**.
+  - If you're building an event/messaging based system, it makes sense to use that library with the Flux pattern.
+  - If you're building an editor with action-based behavior for all front-end features, or if you're integrating with a chat system that receives function call requests, that's one thing.
+- But for a typical use case, Flux is overkill, except for cascading forms, badges, modals, etc.
+- If I were developing alone, I would want to separate the backend from the frontend, separate the Local, Dev, Stage, and Prod stages, and have a DB, scheduler, queue, API, and SSR stack.
+
+## atom
+
+- Read first; [The new wave of React state management](https://medium.com/@yujso66/%EB%B2%88%EC%97%AD-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%9D%90%EB%A6%84-6e5ed0022e39)을 보자.
+- Atomic, pub/sub, and derived are possible.
+- Using derived state is also rarely necessary unless you need a new state per ID. For data, query already does the job.
+- Atomic design and atomic state management became a necessity.
+- With many developers working asynchronously, it was important to keep track of which files were atoms and what they were for.
+- We have a `*.atom.ts` file superfix and a `*State` variable name superfix.
+
+## valtio
+
+- Both [jotai/atom](https://github.com/pmndrs/jotai/blob/main/src/vanilla/atom.ts#L83) and [Recoil/atom](https://github.com/facebookexperimental/Recoil/blob/main/packages/recoil/recoil_values/Recoil_atom.js#L185) manage atom-based state and propagate state.
+- [valtio/proxy](https://github.com/pmndrs/valtio/blob/main/src/vanilla.ts#L156) implements the same functionality using Proxy and Reflect.
+- Memory management is not the worst, as you can see from the [Results for js web frameworks benchmark](https://krausest.github.io/js-framework-benchmark/2023/table_chrome_114.0.5735.90.html).
+- zustand, jotai, and valtio are all open source, covered by the [pmndrs](https://github.com/orgs/pmndrs/repositories?q=&type=all&language=&sort=stargazers) community, with [the same person](https://github.com/dai-shi) as a contributor and maintainer.
+- It just works, as his comments in [valito/discussion#128](https://github.com/pmndrs/valtio/discussions/128) show.
+- [valito/issues#141](https://github.com/pmndrs/valtio/issues/141#issuecomment-891214314) Having spent a year on Redux and Redux-saga, and two years on Mobx POC and Recoil, this comment really resonated with me.
+- For the time being, I'm going to create several projects and try to use this state management library in all of them.

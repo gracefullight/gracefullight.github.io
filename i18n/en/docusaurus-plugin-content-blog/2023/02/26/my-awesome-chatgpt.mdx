@@ -1,0 +1,69 @@
+---
+title: My Awesome ChatGPT
+date: 2023-02-26T00:29:33.470+09:00
+description: Explore useful repositories for developers, including ChatGPT and other tools that can streamline your workflow and increase productivity.
+authors: me
+tags: [chatgpt]
+---
+
+## Overview
+
+- The programmers who are good at asking questions and quickly determining if the answers are right or wrong will be the ones who survive.
+- Here's a list of repositories that can be used in the field, not just for development tips.
+
+## aicommits
+
+- [Nutlope/aicommits](https://github.com/Nutlope/aicommits): Automated commits.
+- As soon as [#32 Add support for conventional commits](https://github.com/Nutlope/aicommits/issues/32) is resolved, I'll be using it.
+- Personally, I think the following prompts should be changed, but I'm also curious about how to improve them.
+- [#177 feat: enable Conventional Commits standard as flag](https://github.com/Nutlope/aicommits/pull/177/files) I think it's coming soon.
+
+```ts title="src/utils/openai.ts#L7"
+// highlight-next-line
+const promptTemplate =
+  "Write an insightful but concise Git commit message in a complete sentence in present tense for the following diff without prefacing it with anything:";
+```
+
+- [#81 Quick improvement suggestion: Reduce diff size with --ignore-all-space](https://github.com/Nutlope/aicommits/issues/81#issuecomment-1443077579) is also interesting.
+- Since the Openai API is billed by the number of tokens, it looks like they plan to reduce the diff as much as possible.
+
+## node chatgpt
+
+- [transitive-bullshit/chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api)
+- [openai: docs](https://platform.openai.com/docs/api-reference/completions/create#completions/create-temperature)
+- I think we need to utilize [completionParams](https://github.com/transitive-bullshit/chatgpt-api/blob/main/src/types.ts#L62) appropriately.
+- I checked several third parties and none of them give temperature as 1.
+
+```ts
+const completionParams = {
+  temperature: 0.7,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0,
+};
+```
+
+## tiktoken
+
+- You may need to get the exact number of tokens to use the openai API.
+- You should use [openai/tiktoken](https://github.com/openai/tiktoken), but it's Python.
+- [dqbd/tiktoken](https://github.com/dqbd/tiktoken) already has a node wrapper already out there. 3.5 Turbo support
+
+```ts
+import { encoding_for_model as encodingForModel } from "@dqbd/tiktoken";
+
+const encoder = encodingForModel("gpt-3.5-turbo");
+const tokenLength = encoder.encode("YOUR_CHAT").length;
+```
+
+## chatgpt-retrieval-plugin
+
+[openai/chatgpt-retrieval-plugin](https://github.com/openai/chatgpt-retrieval-plugin)
+
+- ai-plugin.json in the .well-known path acts as a manifest.json
+- Openapi.yaml in the same path for this endpoint specification
+- There are four types of authentication: `none | user_http | service_http | oauth`.
+- For simple services, `service_http` seems to be sufficient, `user_http` requires the customer to enter an API key, and `oauth` requires additional permissions such as `search:read`.
+- It seems to use Vector DB for document similarity comparison, but there is no proper Node.js wrapper for it, so it can be implemented in Redis, but you need the Redisearch module.
+  - [datastore/providers/redis_datastore.py](https://github.com/openai/chatgpt-retrieval-plugin/blob/main/datastore/providers/redis_datastore.py)
+  - [services/openai.py](https://github.com/openai/chatgpt-retrieval-plugin/blob/38b46e1926ba1b4bf04263e85afe6b661efec1b6/services/openai.py#L23)

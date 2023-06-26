@@ -1,0 +1,162 @@
+---
+title: Migrate a blog from hexo to docusaurus
+description: Migrating from Hexo to Docusaurus; Overview of benefits, troubleshooting tips for SEO and Site Verification.
+authors: me
+date: 2023-01-10T23:26:34.674+09:00
+tags: [nodejs, javascript]
+---
+
+## Overview
+
+I've been using hexo since 2016, and I love it because it has a lot of plugins and themes.
+Since 2019. As there are many other Static Site Generators, the advantages of hexo are no longer available.
+The updates of ecosystem libraries such as theme and plugin development have also decreased.
+
+The stack was theme-dependent: ejs -> njk, less -> sass -> stylus.
+Crucially, it's a nodejs-based core, so even if I uploaded a troubleshooting, it was a waste of resources.
+
+Docusaurus didn't have algolia search when it was 1-2 alpha.
+There was a shovel to swizzle and use the local search community plugin to attach it, and Korean did not work normally.
+
+In 2023, version 2 was launched, the frontend stack was unified based on React, and it seemed like it was okay to proceed with this work.
+
+## Troubleshooting
+
+### SEO
+
+#### URI
+
+- hexo puts the date inside the front-matter syntax as `date: 2023-01-10 09:00:00`.
+- docusaurus should use the [nested folder structure](https://docusaurus.io/docs/blog#blog-post-date).
+- It will parse the front-matter.date in the md file and treat it like `/2023/01/10/title` in the URL.
+
+#### Site Verification
+
+- I put it in the configuration without any problems.
+
+```json title="docusaurus.config.js"
+{
+  "themeConfig": {
+    "metadata": [
+      // ? https://search.google.com/search-console
+      {
+        "name": "google-site-verification",
+        "content": "g"
+      }
+    ]
+  }
+}
+```
+
+### hexo new
+
+- `hexo new post "title"` This command creates a post, but I needed a compatible command.
+- I used `yarn cmd new title` to generate what looks like `blog/2023/01/10/title.mdx` as of today.
+- For URL normalization, you can use `import { slugize } from "hexo-util";`.
+  - slugify also removes Korean characters.
+
+### archive
+
+- The archive of hexo is Order by Created DESC, while docusaurus is ASC sorted.
+- There was an issue to provide this as a plugin option, but it was closed, and do it yourself was the answer.
+- I created one, [overwrote the existing component](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx), rearranged it, and linked it.
+
+```json title="docusaurus.config.js"
+{
+  "presets": [
+    "classic",
+    {
+      "blog": {
+        // path.resolve needed
+        "blogArchiveComponent": "./src/component/BlogArchiveDescendingPage.tsx"
+      }
+    }
+  ]
+}
+```
+
+### tag
+
+- A docusaurus tag is defined as `tags: [tag1, tag2]` and must satisfy this format.
+- I asked ChatGPT for a regular expression and replaced it with the whole thing.
+
+### github action
+
+- Set up the target repo and branch.
+- Issue a personal access token and insert the two values appropriately.
+- Run yarn build, yarn deploy and it should work fine.
+
+```json title="docusaurus.config.js"
+{
+  "organizationName": "gracefullight",
+  "projectName": "gracefullight.github.io",
+  "deploymentBranch": "main",
+  "trailingSlash": true
+}
+```
+
+```yml title="workflows/main.yml"
+env:
+  GIT_USER: ${{ secrets.GIT_USER }}
+  GIT_PASS: ${{ secrets.GIT_PASS }}
+```
+
+### dark only
+
+- Dark only, also deleted the switch.
+
+```json title="docusaurus.config.js"
+{
+  "themeConfig": {
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": true
+    }
+  }
+}
+```
+
+### code block
+
+- has a different format, so I replaced it with a regular expression.
+
+```bash
+# hexo
+\`\`\`language title
+
+# docusaurus
+\`\`\`language title="title"
+```
+
+### comment
+
+- I don't have time to answer questions about the comment feature.
+- I tried to delete it, but I customized it and integrated gitalk.
+
+### search
+
+- I requested free indexing because algolia is not an open source documentation, but the ticket status didn't change.
+- I used [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local), but it doesn't support mobile.
+
+```js title="docusaurus.config.js"
+{
+  themes: [
+    "@easyops-cn/docusaurus-search-local",
+    /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+    ({
+      indexDocs: false,
+      blogRouteBasePath: "/",
+      hashed: true,
+      language: ["en", "ko"],
+    }),
+  ],
+}
+```
+
+- After about a week, algolia replied and the indexing was successfully completed.
+
+## Result
+
+- Satisfactory.
+- I think I need to build [typesense](https://docusaurus.io/docs/search#using-typesense-docsearch) first, so it won't be easy.
+- If you don't need to view it on mobile, the above plugin should be enough.

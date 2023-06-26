@@ -1,0 +1,44 @@
+---
+title: Migrate from yarn to pnpm
+date: 2023-06-17T08:42:13.449+09:00
+description: Exploring the limitations and issues of Yarn Berry while comparing and analyzing the superiority of Pnpm in package management.
+authors: me
+tags: [nodejs, javascript]
+---
+
+## Overview
+
+- Yarn berry was all the rage.
+- I tried it and found quite a few problems, which is why I ended up choosing pnpm.
+
+## Problems
+
+### zipfs
+
+- It stores all the packages and logs all the diffs. This is a major culprit for repository size. Difficult to manage images under 1GB.
+- If typescript goes up, yarn berry version should go up. I want to use the latest syntax in typescript right away, but I can't keep up.
+- I need to update the executable with `yarn dlx @yarnpkg/sdks vscode` whenever typescript, eslint, and prettier are released.
+- In a project with 20+ front-end developers, this is hard to enforce.
+- It is not possible to test this by making small changes to the source inside the package.
+
+### opensource
+
+- Monolithic tools like turbo, environments with postinstall hooks like prism, or preset configurators like `create-*` reference `node_modules` directly.
+- Often it won't even run, and you'll have to wait for an open issue in each repo. I'm not writing this to analyze yarn berry's pnp script.
+- In this case, I'd have to give it a `nodeLinker` and use it the same way I would with yarn 1, with no advantage.
+
+### workspaces
+
+- The yarn workspaces feature is cool, and [yarnpkg/berry](https://github.com/yarnpkg/berry) is a perfect example of it.
+- But it's only cool if you're only developing node.js libraries. Libraries for the frontend need a bundler, and there's no reference for that.
+
+## Benchmarks
+
+- Benchmark scores are managed by Pnpm on a daily basis.
+- Slowness is acceptable with pipeline cache and lock files enabled. It's a one-time slowdown, not a request/response slowdown, so it can be handled by probes anyway.
+
+![https://pnpm.io/benchmarks](https://d33wubrfki0l68.cloudfront.net/0cb4f1b1466c5e04cdfd5047d6d509a6a3726996/ea3c9/img/benchmarks/alotta-files.svg)
+
+## Conclusion
+
+- The plugin features in yarn berry are cool, but they add more stress to dependency management.

@@ -1,0 +1,18 @@
+{
+  "link.title.Support Me": {
+    "message": "Support Me",
+    "description": "The title of the footer links column with title=Support Me in the footer"
+  },
+  "link.title.Feeds": {
+    "message": "Feeds",
+    "description": "The title of the footer links column with title=Feeds in the footer"
+  },
+  "link.item.label.RSS": {
+    "message": "RSS",
+    "description": "The label of footer link with label=RSS linking to https://gracefullight.dev/rss.xml"
+  },
+  "link.item.label.Atom": {
+    "message": "Atom",
+    "description": "The label of footer link with label=Atom linking to https://gracefullight.dev/atom.xml"
+  }
+}

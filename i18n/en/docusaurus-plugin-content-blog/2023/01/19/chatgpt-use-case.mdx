@@ -1,0 +1,61 @@
+---
+title: ChatGPT use cases
+date: 2023-01-19T22:44:09.237+09:00
+description: How to use ChatGPT for real-world applications beyond just coding
+authors: me
+tags: [chatgpt, javascript]
+---
+
+## Overview
+
+Here's a list of use cases where you can get past the hype and actually use it for something useful.
+
+## Extracting regular expressions
+
+Creating regular expressions usually involves a lot of testing.
+I usually put the desired text in regexr, regex101, and match the negative/positive lookahead from memory, and use negative/positive lookbehind, but often find that negative lookbehind is not supported by different programming versions/languages.
+
+Now I ask ChatGPT. Suppose you want to extract the package name from the package update history below.
+
+```txt
+Hello GPT.
+
+Can you give me a regex pattern for getting to-be result?
+
+as-is:
+Orignal content
+
+
+to-be:
+Refined string #1
+Refined string #2
+...and so on.
+```
+
+It will get it for you.
+
+## Writing documentation with code
+
+If you want your code to be documented, put it in and ask it to create a README.md.
+
+```
+Can you write a README.md with this code?
+```
+
+It will get it for you.
+
+## Create an Object Validation Schema with the interface
+
+Let's create a Joi Schema with a TypeScript interface.
+
+## Create a Query DSL with Raw SQL
+
+Pass in a raw query and ask it to create a query DSL and query helper syntax.
+
+## Create a DDL with Data
+
+Pass in a query and ask it to generate a table schema query like the interface example above.
+
+## See
+
+awesome is now live. https://github.com/f/awesome-chatgpt-prompts
