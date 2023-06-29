@@ -66,6 +66,8 @@ Error: Event handlers cannot be passed to Client Component props.
 
 > If you want to style Server Components, we recommend using CSS Modules or other solutions that output CSS files, like PostCSS or Tailwind CSS.
 
+위 방식으로 [mui/material-ui/examples/material-next-app-router-ts](https://github.com/mui/material-ui/blob/master/examples/material-next-app-router-ts/src/components/Theme/ThemeRegistry/EmotionCache.tsx) 예시가 추가되었지만, 이렇게 쓸바에 pages 폴더 라우트와 다를 게 없다고 생각한다.
+
 ## 결론
 
 - 아직 app 폴더를 사용하기엔 이르다.
