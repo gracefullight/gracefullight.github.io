@@ -1,0 +1,23 @@
+---
+title: Prisma 트러블슈팅
+date: 2023-07-09T00:01:34.544+09:00
+description: Exploring Prisma's read replicas support, single data source handling, and lack of polymorphism association support.
+authors: me
+tags: [nodejs, prisma]
+---
+
+## Read replica
+
+- [Support for Read Replicas #172](https://github.com/prisma/prisma/issues/172) 이슈로 열려있어서 없는 줄 알았다.
+- [prisma/prisma-read-replica-middleware](https://github.com/prisma/prisma-read-replica-middleware) 미들웨어의 형태로 제공된다.
+- 예시: https://github.com/prisma/middleware-examples/tree/main/prisma-read-replica-middleware
+
+## Data sources
+
+- `schema.prisma` 파일엔 [오직 하나](https://www.prisma.io/docs/concepts/components/prisma-schema/data-sources)의 `datasource` 열만 가지고 있을 수 있다.
+- 데이터 소스가 바뀌는 경우 `migration.lock` 파일 삭제 후 마이그레이션부터 다시 실행해야한다.
+
+## Polymorphism
+
+- [Support for Polymorphic Associations #1644](https://github.com/prisma/prisma/issues/1644) 현재로선 지원 계획이 없어보인다.
+- 다형성 관계는 정규화에서는 필요하지만 비정규화하여 열에 정보를 추가한다.

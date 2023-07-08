@@ -1,0 +1,23 @@
+---
+title: Prisma troubleshooting
+date: 2023-07-09T00:01:34.544+09:00
+description: Exploring Prisma's read replicas support, single data source handling, and lack of polymorphism association support.
+authors: me
+tags: [nodejs, prisma]
+---
+
+## Read replica
+
+- I thought it didn't exist due to the [Support for Read Replicas #172](https://github.com/prisma/prisma/issues/172) issue.
+- But it is provided in the form of middleware at [prisma/prisma-read-replica-middleware](https://github.com/prisma/prisma-read-replica-middleware).
+- e.g. <https://github.com/prisma/middleware-examples/tree/main/prisma-read-replica-middleware>
+
+## Data sources
+
+- In the `schema.prisma` file, there can [only be one](https://www.prisma.io/docs/concepts/components/prisma-schema/data-sources) `datasource` column.
+- In case the data source changes, the `migration.lock` file must be deleted and the migration process must be run again.
+
+## Polymorphism
+
+- [Support for Polymorphic Associations #1644](https://github.com/prisma/prisma/issues/1644) It seems there is no current plan to support this.
+- Polymorphic relationships are necessary in normalization but it de-normalizes by adding information to the column.
