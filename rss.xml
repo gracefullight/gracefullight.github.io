@@ -8,7 +8,7 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
-        <copyright>Copyright © 2023 Euwkwang Shin.</copyright>
+        <copyright>Copyright © 2023 Eunkwang Shin.</copyright>
         <item>
             <title><![CDATA[Prisma 트러블슈팅]]></title>
             <link>https://gracefullight.dev/2023/07/09/prisma-troubleshooting</link>
