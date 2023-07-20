@@ -48,7 +48,7 @@ const config = {
           blogSidebarCount: 10,
           feedOptions: {
             type: "all",
-            copyright: `Copyright © ${new Date().getFullYear()} Euwkwang Shin.`,
+            copyright: `Copyright © ${new Date().getFullYear()} Eunkwang Shin.`,
             createFeedItems: async (params) => {
               const { blogPosts, defaultCreateFeedItems, ...rest } = params;
               return defaultCreateFeedItems({
