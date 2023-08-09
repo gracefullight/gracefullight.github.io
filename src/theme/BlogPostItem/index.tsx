@@ -42,7 +42,7 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
       <BrowserOnly>
         {() => {
           const isRootPage = ["/", "/index.html"].includes(
-            window.location.pathname
+            window.location.pathname,
           );
 
           return (
