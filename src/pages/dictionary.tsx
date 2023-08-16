@@ -1,3 +1,4 @@
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
 import { useLocalStorageState, useResponsive } from "ahooks";
 import React, { useState, type KeyboardEvent } from "react";
@@ -104,34 +105,38 @@ export default function DictionaryPage() {
             </span>
           ))}
         </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: responsive.md ? "1fr 1fr" : "1fr",
-            gap: "1rem",
-          }}
-        >
-          <iframe
-            src={iframeSrc.daum}
-            style={{
-              width: "100%",
-              height: "100vh",
-              borderRadius: "0.25rem",
-            }}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-          ></iframe>
-          <iframe
-            src={iframeSrc.naver}
-            style={{
-              width: "100%",
-              height: "100vh",
-              borderRadius: "0.25rem",
-            }}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-          ></iframe>
-        </div>
+        <BrowserOnly>
+          {() => (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: responsive.md ? "1fr 1fr" : "1fr",
+                gap: "1rem",
+              }}
+            >
+              <iframe
+                src={iframeSrc.daum}
+                style={{
+                  width: "100%",
+                  height: "100vh",
+                  borderRadius: "0.25rem",
+                }}
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              ></iframe>
+              <iframe
+                src={iframeSrc.naver}
+                style={{
+                  width: "100%",
+                  height: "100vh",
+                  borderRadius: "0.25rem",
+                }}
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              ></iframe>
+            </div>
+          )}
+        </BrowserOnly>
       </div>
     </Layout>
   );
