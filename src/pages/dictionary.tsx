@@ -36,10 +36,7 @@ export default function DictionaryPage() {
     const updatedSearches = [
       inputQuery,
       ...recentSearches.filter((term) => term !== inputQuery),
-    ];
-    if (updatedSearches.length > 5) {
-      updatedSearches.pop();
-    }
+    ].slice(0, 5);
 
     setRecentSearches(updatedSearches);
     setIframeSrc({
