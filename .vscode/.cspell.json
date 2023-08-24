@@ -8,14 +8,18 @@
     "eruda",
     "gitalk",
     "gracefullight",
+    "IHDR",
     "kakao",
+    "kmeans",
     "laravel",
     "luxon",
     "Naver",
     "nextjs",
+    "PLTE",
     "serviceworker",
     "slugize",
-    "wcslog"
+    "wcslog",
+    "webp"
   ],
   "ignorePaths": [
     "*.config.js",
