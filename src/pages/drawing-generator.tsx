@@ -133,7 +133,7 @@ export default function DrawingGeneratorPage() {
 
   const handleImageChange = async (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files[0];
-    if (file.type !== "image/png") {
+    if (!file || file.type !== "image/png") {
       alert("PNG 파일만 업로드 가능합니다.");
       return;
     }
