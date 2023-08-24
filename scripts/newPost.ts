@@ -2,9 +2,9 @@ import { resolve } from "path";
 import { format } from "util";
 
 import { Command, Option } from "clipanion";
-import { DateTime } from "luxon";
 import { ensureDir, writeFile } from "fs-extra";
 import { slugize } from "hexo-util";
+import { DateTime } from "luxon";
 
 const scaffold = `---
 title: %s
@@ -28,7 +28,7 @@ export class NewPost extends Command {
       "blog",
       now.toFormat("yyyy"),
       now.toFormat("MM"),
-      now.toFormat("dd")
+      now.toFormat("dd"),
     );
 
     this.context.stdout.write(`Create new post "${this.title}"\n`);

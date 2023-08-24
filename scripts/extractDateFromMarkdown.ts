@@ -1,7 +1,7 @@
 import { resolve } from "path";
 
-import { copy, ensureDir, readdir, readFile } from "fs-extra";
 import { Command } from "clipanion";
+import { copy, ensureDir, readdir, readFile } from "fs-extra";
 
 export class ExtractDateFromMarkdown extends Command {
   static paths = [[`extract-date`]];
@@ -48,7 +48,7 @@ export class ExtractDateFromMarkdown extends Command {
 
             const targetDirectory = resolve(
               directory,
-              created.split("-").join("/")
+              created.split("-").join("/"),
             );
 
             // * ensure dir blog/2019/02/17
