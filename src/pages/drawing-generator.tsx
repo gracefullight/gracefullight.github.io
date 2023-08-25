@@ -162,8 +162,8 @@ export default function DrawingGeneratorPage() {
     const canvas = canvasRef.current;
     if (canvas) {
       const formattedDate = DateTime.now().toFormat("yyyyMMdd_HHmmss");
-      const name = `chat_${formattedDate}_${customName || "그림대화"}.webp`;
-      const href = canvas.toDataURL("image/webp");
+      const name = `chat_${formattedDate}_${customName || "그림대화"}.png`;
+      const href = canvas.toDataURL("image/png");
 
       downloadImage({
         href,
