@@ -13,8 +13,8 @@ export default function DrawingGeneratorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [previewSrc, setPreviewSrc] = useState<string | null>(null);
   const [customName, setCustomName] = useState<string>("");
-  const [authId, setAuthId] = useState("");
-  const [author, setAuthor] = useState("");
+  const [authId, setAuthId] = useState("-1379962171");
+  const [author, setAuthor] = useState("Eargasm");
   const [isUseColorWeight, setIsUseColorWeight] = useState<boolean>(false);
   const [colorWeight, setColorWeight] = useState<number>(0.2);
   const [selectedColor, setSelectedColor] = useState<string>("#F58D16");

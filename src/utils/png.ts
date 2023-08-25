@@ -1,4 +1,5 @@
 import { buf } from "crc-32/crc32";
+import { deflate } from "pako";
 
 // ! CHECK THE PNG SPEC BELOW
 // ? https://en.wikipedia.org/wiki/PNG#File_header
@@ -46,21 +47,23 @@ function calculateTotalLength(chunks: Chunk[]): number {
   return totalLength;
 }
 
-function createZTXtChunk(field: string, metadata: string): Chunk {
+function createZTXtChunk(keyword: string, data: string): Chunk {
   const type = "zTXt";
-  // Prepare metadata string and convert it to bytes
-  const formattedMetadata = `[${field}]=${metadata}`;
-  const metadataBytes = new TextEncoder().encode(formattedMetadata);
 
-  // Prepare CRC calculation
-  const crcBuffer = new Uint8Array(4 + metadataBytes.length);
+  const formattedString = `${keyword}\0\0${data}`;
+  const stringBytes = new TextEncoder().encode(formattedString);
+
+  const compressedData = deflate(stringBytes);
+
+  const crcBuffer = new Uint8Array(4 + compressedData.length);
   crcBuffer.set(new TextEncoder().encode(type), 0);
-  crcBuffer.set(metadataBytes, 4);
+  crcBuffer.set(compressedData, 4);
+
   const crcValue = buf(crcBuffer);
 
   return {
     type,
-    data: metadataBytes,
+    data: compressedData,
     crc: crcValue,
   };
 }

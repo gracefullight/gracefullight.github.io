@@ -62,6 +62,9 @@ dependencies:
   ml-kmeans:
     specifier: ^6.0.0
     version: 6.0.0
+  pako:
+    specifier: ^2.1.0
+    version: 2.1.0
   prism-react-renderer:
     specifier: ^2.0.6
     version: 2.0.6(react@17.0.2)
@@ -103,6 +106,9 @@ devDependencies:
   '@types/node':
     specifier: ^18.17.9
     version: 18.17.9
+  '@types/pako':
+    specifier: ^2.0.0
+    version: 2.0.0
   '@types/react':
     specifier: ^17.0.65
     version: 17.0.65
@@ -3571,6 +3577,10 @@ packages:
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/pako@2.0.0:
+    resolution: {integrity: sha512-10+iaz93qR5WYxTo+PMifD5TSxiOtdRaxBf7INGGXMQgTCu8Z/7GYWYFUOS3q/G0nE5boj1r4FEB+WSy7s5gbA==}
     dev: true
 
   /@types/parse-json@4.0.0:
@@ -9122,6 +9132,10 @@ packages:
       registry-auth-token: 4.2.2
       registry-url: 5.1.0
       semver: 6.3.0
+    dev: false
+
+  /pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
     dev: false
 
   /param-case@3.0.4:
