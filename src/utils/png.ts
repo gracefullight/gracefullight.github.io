@@ -2,7 +2,7 @@ import { buf } from "crc-32/crc32";
 import { deflate } from "pako";
 
 // ! CHECK THE PNG SPEC BELOW
-// ? https://en.wikipedia.org/wiki/PNG#File_header
+// ? http://www.libpng.org/pub/png/spec/iso/index-object.html
 interface Chunk {
   type: string;
   data: Uint8Array;
