@@ -50,20 +50,40 @@ function calculateTotalLength(chunks: Chunk[]): number {
 function createZTXtChunk(keyword: string, data: string): Chunk {
   const type = "zTXt";
 
-  const formattedString = `${keyword}\0\0${data}`;
-  const stringBytes = new TextEncoder().encode(formattedString);
+  // Keyword and Null separator
+  const keywordBytes = new TextEncoder().encode(keyword);
 
-  const compressedData = deflate(stringBytes);
+  // Compression method (0)
+  const compressionMethod = new Uint8Array([0]);
 
-  const crcBuffer = new Uint8Array(4 + compressedData.length);
+  // Data to be compressed
+  const dataBytes = new TextEncoder().encode(data);
+
+  // Compressed Data
+  const compressedData = deflate(dataBytes);
+
+  // Concatenating all the bytes
+  const fullData = new Uint8Array(
+    keywordBytes.length + 1 + 1 + compressedData.length,
+  );
+  fullData.set(keywordBytes, 0);
+  // Null separator
+  fullData.set([0], keywordBytes.length);
+  // Compression method
+  fullData.set(compressionMethod, keywordBytes.length + 1);
+  // Compressed data
+  fullData.set(compressedData, keywordBytes.length + 1 + 1);
+
+  // Prepare CRC calculation
+  const crcBuffer = new Uint8Array(4 + fullData.length);
   crcBuffer.set(new TextEncoder().encode(type), 0);
-  crcBuffer.set(compressedData, 4);
-
-  const crcValue = buf(crcBuffer);
+  crcBuffer.set(fullData, 4);
+  // ? https://github.com/SheetJS/js-crc32#best-practices
+  const crcValue = buf(crcBuffer, 0);
 
   return {
     type,
-    data: compressedData,
+    data: fullData,
     crc: crcValue,
   };
 }
