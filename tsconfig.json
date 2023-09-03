@@ -6,7 +6,8 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "target": "ES2021"
+      "target": "ES2021",
+      "moduleResolution": "Node"
     },
     "transpileOnly": true
   }
