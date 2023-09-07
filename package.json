@@ -10,7 +10,7 @@
   "engines": {
     "node": "18"
   },
-  "packageManager": "^pnpm@8.6.6",
+  "packageManager": "^pnpm@8.7.4",
   "scripts": {
     "prepare": "husky install",
     "docusaurus": "docusaurus",
@@ -59,14 +59,14 @@
     "@docusaurus/module-type-aliases": "^2.4.1",
     "@docusaurus/types": "^2.4.1",
     "@tsconfig/docusaurus": "^1.0.7",
-    "@types/crypto-js": "^4.1.1",
+    "@types/crypto-js": "^4.1.2",
     "@types/fs-extra": "^11.0.1",
     "@types/luxon": "^3.3.2",
     "@types/node": "^18.17.14",
     "@types/pako": "^2.0.0",
     "@types/react": "^17.0.65",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
     "clipanion": "3.2.1",
     "devmoji": "^2.3.0",
     "dotenv": "^16.3.1",
