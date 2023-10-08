@@ -99,25 +99,22 @@ name 속성에 빈 값이 들어갈 경우 (빈 값엔 space 및 'ㄱ' 한자 1�
 이 속성은 스플래시 스크린의 배경색을 담당하는데, 배경색은 스플래시 스크린 상의 앱 이름 (name 속성)의 색상에 영향을 미친다.
 
 앱 이름은 배경색이 거므스름한지의 여부에 따라 흰색 또는 검정색으로 노출된다.
-이 공식은 [contrast ratio](https://www.w3.org/TR/WCAG20/#contrast-ratiodef) 란 스펙으로 정의되어 있으며, 안드로이드 내부에 구현되어있는 소스는 [다음](https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/util/ColorUtils.java)과 같다.
+이 공식은 [contrast ratio](https://www.w3.org/TR/WCAG20/#contrast-ratiodef) 란 스펙으로 정의되어 있으며, 안드로이드 내부에 구현되어있는 소스는 [다음](https://source.chromium.org/chromium/chromium/src/+/main:ui/android/java/src/org/chromium/ui/util/ColorUtils.java;l=57;)과 같다.
 
 ```java
 private static final float CONTRAST_LIGHT_ITEM_THRESHOLD = 3f;
 
 /**
- * Calculates the contrast between the given color and white,
- * using the algorithm provided by
+ * Calculates the contrast between the given color and white, using the algorithm provided by
  * the WCAG v2 in http://www.w3.org/TR/WCAG20/#contrast-ratiodef.
  */
 private static float getContrastForColor(int color) {
     float bgR = Color.red(color) / 255f;
     float bgG = Color.green(color) / 255f;
     float bgB = Color.blue(color) / 255f;
-
     bgR = (bgR < 0.03928f) ? bgR / 12.92f : (float) Math.pow((bgR + 0.055f) / 1.055f, 2.4f);
     bgG = (bgG < 0.03928f) ? bgG / 12.92f : (float) Math.pow((bgG + 0.055f) / 1.055f, 2.4f);
     bgB = (bgB < 0.03928f) ? bgB / 12.92f : (float) Math.pow((bgB + 0.055f) / 1.055f, 2.4f);
-
     float bgL = 0.2126f * bgR + 0.7152f * bgG + 0.0722f * bgB;
     return Math.abs((1.05f) / (bgL + 0.05f));
 }
