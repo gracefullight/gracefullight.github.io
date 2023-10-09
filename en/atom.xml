@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2023-10-09T01:06:36.118Z</updated>
+    <updated>2023-10-09T14:03:58.963Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <rights>Copyright © 2023 Eunkwang Shin.</rights>
+    <entry>
+        <title type="html"><![CDATA[ielts-speaking]]></title>
+        <id>https://gracefullight.dev/en/2023/10/09/ielts-speaking</id>
+        <link href="https://gracefullight.dev/en/2023/10/09/ielts-speaking"/>
+        <updated>2023-10-09T14:03:58.963Z</updated>
+        <summary type="html"><![CDATA[ielts-speaking]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PDsN" id="공부-방법">공부 방법<a href="#공부-방법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><ul><li>녹음<ul><li>첫 문장 말하기</li><li>두 번째 문장 말하기</li><li>세 번째 문장 말하기</li></ul></li><li>딕테이션</li><li>오답노트, 브레인스토밍</li><li>반복</li></ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+        <category label="ielts" term="ielts"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IETLS Writing]]></title>
         <id>https://gracefullight.dev/en/2023/10/09/ielts-writing</id>
@@ -137,20 +151,5 @@
         </author>
         <category label="react" term="react"/>
         <category label="javascript" term="javascript"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A 10-year programmer's tech retrospective]]></title>
-        <id>https://gracefullight.dev/en/2023/06/17/tech-retrospective</id>
-        <link href="https://gracefullight.dev/en/2023/06/17/tech-retrospective"/>
-        <updated>2023-06-17T01:38:32.173Z</updated>
-        <summary type="html"><![CDATA[A 10-year programmer's tech retrospective]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PDsN" id="programmer">Programmer<a href="#programmer" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><p>What is a programmer?</p><ul><li>People who like to categorize will call it a coder, developer, or engineer.</li><li>To strangers, it may seem like a job that pays a lot of money, or that you have to pay on demand,</li><li>To an employer, you're a mechanic.</li></ul><p>What does this job mean to me?</p><ul><li>At the point where your short-term memory turns into long-term memory, you suddenly have an idea that will solve everything and you grab the keyboard.</li><li>Throwing myself into a gradient descent and not getting out of my chair until I hear the birds in the morning.</li><li>You want to code so badly that you can't because you're required to take a liberal arts major.</li></ul><p>These days, I tell stories like this.</p><blockquote><p>I build houses on the internet.</p></blockquote><ul><li>Front-end? That's interior construction.</li><li>Backend? That's tooling and gutting.</li><li>DevOps? That's digging and rebarring.</li><li>Security? That's keeping unknowns out of the complex.</li></ul><p>Programming is about borrowing concepts from the real world to automate what humans do, and I feel like it took me too long to realize this.</p><p>I finally understand why so many of my professors used to tell me that the more you know, the more important the basics are. I can see why so many of my professors used to say, "The more time you have, the more important the basics are.</p><h2 class="anchor anchorWithStickyNavbar_PDsN" id="programming">Programming<a href="#programming" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><p>Do programming skills matter in the age of GPT?</p><p>My answer is no. There comes a point where the idea of the service is more important than the technology stack.
-Even people who have never heard of Claude Shannon can create a service, and edge computing has made it possible to deploy that code.</p><p>You can't say, "If you go this way, it's going to fall apart at some point.
-You can't pour gasoline on a burning house and then say, "I told you it would happen.</p><p>The social climate is making it more so.</p><h2 class="anchor anchorWithStickyNavbar_PDsN" id="technology-stack">Technology stack<a href="#technology-stack" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><p>All technology is a tradeoff.</p><p>New things always cost money. You have to look at it from the perspective of staff skill and maintenance.</p><p>I think, <em>This is not an academy, if you want to write something new, use your personal time and show me a prototype in a week</em>, but there are also people who think, Who am I studying for?</p><p>This is why software engineering is so important.</p><h2 class="anchor anchorWithStickyNavbar_PDsN" id="my-utopia">My utopia<a href="#my-utopia" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><p>So what was it that I didn't like, I don't even know if it was bad construction. You may not know.
-But not being able to say it's bad construction is overloading my body.</p><p>To keep myself from stressing out, I'm going to keep a checklist of ideal features.</p><ul class="contains-task-list containsTaskList_eFb9"><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Do we have a code owner feature? Have we created a culture where certain code changes can be reviewed by a per-file owner?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What is the average number of comments in a code review?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What is the branching strategy?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are unit tests run in the pipeline, and if so, what is the coverage?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are integration tests based on real data executed in the pipeline, and if so, what are the criteria for inclusion in the integration tests?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are E2E tests executed periodically, and if so, who is responsible for managing them?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are cases given enough time to be implemented before going to test driven?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Do they perform chaos testing for external factors? Do they recognize the need for disaster recovery?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->How is open source managed? Is the software versioned on a specific cycle?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Do developers manage their own Docker files and deployments, and if not, who does?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is there support from the systems team to configure a private network? If not, is there an environment where a VPC can be configured?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What is being done mechanically to maintain the quality of the code, such as lint and static analysis?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->If there is a failure, is the failure publicized and a failure report created?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Does everyone in the team have ownership of the service?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What is the SLA for the services you represent? What is the frequency of OOM failures or top 500 failures?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is the SLA a standard for the HR department?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is the direction of the owner visible to all members?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are decisions made based on data? What tools are used to collect logs?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is the logging format standardized with Open Telemetry, and if not, what format is being managed?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Collecting web metrics?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is there a foundation for A/B testing to introduce features? If not, how is the HR department involved in planning?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Using a design system?</li><li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are Storybooks managed in the same repository?</li></ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
     </entry>
 </feed>
