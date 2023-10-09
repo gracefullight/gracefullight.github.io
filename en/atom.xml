@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2023-10-07T13:28:42.651Z</updated>
+    <updated>2023-10-09T01:06:36.118Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <rights>Copyright © 2023 Eunkwang Shin.</rights>
+    <entry>
+        <title type="html"><![CDATA[IETLS Writing]]></title>
+        <id>https://gracefullight.dev/en/2023/10/09/ielts-writing</id>
+        <link href="https://gracefullight.dev/en/2023/10/09/ielts-writing"/>
+        <updated>2023-10-09T01:06:36.118Z</updated>
+        <summary type="html"><![CDATA[IETLS Writing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PDsN" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><ul><li>찬성 또는 반대: Agree / Disagree</li><li>두 가지 견해: Both Views</li><li>장점과 단점: Advantage &amp; Disadvantage</li><li>원인 / 문제점과 해결책: Cause / Problem &amp; Solution</li><li>두 가지 과제: Two-part Question</li></ul><h2 class="anchor anchorWithStickyNavbar_PDsN" id="format">Format<a href="#format" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="ielts" term="ielts"/>
+        <category label="me" term="me"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[기술사 - IT경영]]></title>
         <id>https://gracefullight.dev/en/2023/10/07/professional-engineer-it-governance</id>
@@ -138,19 +152,5 @@ But not being able to say it's bad construction is overloading my body.</p><p>To
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
         </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migrate from yarn to pnpm]]></title>
-        <id>https://gracefullight.dev/en/2023/06/17/migrate-yarn-to-pnpm</id>
-        <link href="https://gracefullight.dev/en/2023/06/17/migrate-yarn-to-pnpm"/>
-        <updated>2023-06-16T23:42:13.449Z</updated>
-        <summary type="html"><![CDATA[Exploring the limitations and issues of Yarn Berry while comparing and analyzing the superiority of Pnpm in package management.]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PDsN" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><ul><li>Yarn berry was all the rage.</li><li>I tried it and found quite a few problems, which is why I ended up choosing pnpm.</li></ul><h2 class="anchor anchorWithStickyNavbar_PDsN" id="problems">Problems<a href="#problems" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_PDsN" id="zipfs">zipfs<a href="#zipfs" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3><ul><li>It stores all the packages and logs all the diffs. This is a major culprit for repository size. Difficult to manage images under 1GB.</li><li>If typescript goes up, yarn berry version should go up. I want to use the latest syntax in typescript right away, but I can't keep up.</li><li>I need to update the executable with <code>yarn dlx @yarnpkg/sdks vscode</code> whenever typescript, eslint, and prettier are released.</li><li>In a project with 20+ front-end developers, this is hard to enforce.</li><li>It is not possible to test this by making small changes to the source inside the package.</li></ul><h3 class="anchor anchorWithStickyNavbar_PDsN" id="opensource">opensource<a href="#opensource" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3><ul><li>Monolithic tools like turbo, environments with postinstall hooks like prism, or preset configurators like <code>create-*</code> reference <code>node_modules</code> directly.</li><li>Often it won't even run, and you'll have to wait for an open issue in each repo. I'm not writing this to analyze yarn berry's pnp script.</li><li>In this case, I'd have to give it a <code>nodeLinker</code> and use it the same way I would with yarn 1, with no advantage.</li></ul><h3 class="anchor anchorWithStickyNavbar_PDsN" id="workspaces">workspaces<a href="#workspaces" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3><ul><li>The yarn workspaces feature is cool, and <a href="https://github.com/yarnpkg/berry" target="_blank" rel="noopener noreferrer">yarnpkg/berry</a> is a perfect example of it.</li><li>But it's only cool if you're only developing node.js libraries. Libraries for the frontend need a bundler, and there's no reference for that.</li></ul><h2 class="anchor anchorWithStickyNavbar_PDsN" id="benchmarks">Benchmarks<a href="#benchmarks" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><ul><li>Benchmark scores are managed by Pnpm on a daily basis.</li><li>Slowness is acceptable with pipeline cache and lock files enabled. It's a one-time slowdown, not a request/response slowdown, so it can be handled by probes anyway.</li></ul><p><img loading="lazy" src="https://d33wubrfki0l68.cloudfront.net/0cb4f1b1466c5e04cdfd5047d6d509a6a3726996/ea3c9/img/benchmarks/alotta-files.svg" alt="https://pnpm.io/benchmarks" class="img_K0IH"></p><h2 class="anchor anchorWithStickyNavbar_PDsN" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2><ul><li>The plugin features in yarn berry are cool, but they add more stress to dependency management.</li></ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="nodejs" term="nodejs"/>
-        <category label="javascript" term="javascript"/>
     </entry>
 </feed>
