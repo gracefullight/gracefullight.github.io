@@ -37,30 +37,26 @@ export class ExtractDateFromMarkdown extends Command {
     const mdFilesPromises = files
       // * Markdown files that do not start with a date
       .filter((file) => /^(?!\d{4}-\d{2}-\d{2}).+\.md$/.test(file))
-      .map((mdFile) => {
+      .map(async (mdFile) => {
         const oldPath = resolve(directory, mdFile);
-        return readFile(oldPath, "utf8")
-          .then((text) => this.getDateMetadata(text))
-          .then((created) => {
-            if (!created) {
-              this.context.stderr.write(mdFile);
-            }
+        const text = await readFile(oldPath, "utf8");
+        const created = this.getDateMetadata(text);
+        if (!created) {
+          this.context.stderr.write(mdFile);
+        }
 
-            const targetDirectory = resolve(
-              directory,
-              created.split("-").join("/"),
-            );
+        const targetDirectory = resolve(
+          directory,
+          created.split("-").join("/"),
+        );
+        const newPath = resolve(targetDirectory, mdFile);
+        await ensureDir(targetDirectory);
+        // * copy md file into the date directory
+        await copy(oldPath, newPath, {
+          overwrite: true,
+        });
 
-            // * ensure dir blog/2019/02/17
-            return ensureDir(targetDirectory).then(() => targetDirectory);
-          })
-          .then((target) => {
-            // * copy md file into the date directory
-            const newPath = resolve(target, mdFile);
-            return copy(oldPath, newPath, {
-              overwrite: true,
-            }).then(() => newPath);
-          });
+        return newPath;
       });
 
     const copiedMarkdownFiles = await Promise.all(mdFilesPromises);
