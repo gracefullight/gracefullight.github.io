@@ -1,5 +1,5 @@
-import { resolve } from "path";
-import { format } from "util";
+import { resolve } from "node:path";
+import { format } from "node:util";
 
 import { Command, Option } from "clipanion";
 import { ensureDir, writeFile } from "fs-extra";
@@ -9,7 +9,7 @@ import { DateTime } from "luxon";
 const scaffold = `---
 title: %s
 date: %s
-description: 
+description: %s
 authors: me
 tags: []
 ---\n`;
@@ -36,7 +36,11 @@ export class NewPost extends Command {
     await ensureDir(target);
 
     const mdxPath = resolve(target, `${slugize(this.title)}.mdx`);
-    await writeFile(mdxPath, format(scaffold, this.title, now.toISO()), "utf8");
+    await writeFile(
+      mdxPath,
+      format(scaffold, this.title, now.toISO(), this.title),
+      "utf8",
+    );
 
     this.context.stdout.write(`Done: ${mdxPath}\n`);
   }

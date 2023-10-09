@@ -1,4 +1,4 @@
-import { resolve } from "path";
+import { resolve } from "node:path";
 
 import { Command } from "clipanion";
 import { copy, ensureDir, readdir, readFile } from "fs-extra";
