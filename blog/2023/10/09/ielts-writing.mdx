@@ -6,7 +6,9 @@ authors: me
 tags: [ielts, me]
 ---
 
-## Types
+## Part2
+
+### Types
 
 - 찬성 또는 반대: Agree / Disagree
 - 두 가지 견해: Both Views
@@ -14,7 +16,7 @@ tags: [ielts, me]
 - 원인 / 문제점과 해결책: Cause / Problem & Solution
 - 두 가지 과제: Two-part Question
 
-## Format
+### Format
 
 ```mermaid
 graph TD
@@ -63,7 +65,7 @@ graph TD
     end
 ```
 
-## Agree | Disagree
+### Agree | Disagree
 
 - 서론
   - 배경: It is true that ~
@@ -80,7 +82,7 @@ graph TD
 - 결론
   - 요약: In conclusion,
 
-## Discuss
+### Discuss
 
 - 서론
   - 배경: There are a variety of opinions on whether S + V
@@ -96,3 +98,37 @@ graph TD
   - 근거2-2: That is,
 - 결론
   - 요약: In conclusion,
+
+## Part1
+
+### Format
+
+```mermaid
+graph TD
+    Introduction --> Line1[빈줄]
+    Line1 --> Body1
+
+    subgraph Introduction[Introduction + Overview]
+        direction LR
+        IntroLength[2문장]
+        Intro[그래프 소개]
+        Overview[전반적 특징]
+
+        Intro --> Overview
+    end
+
+    subgraph Body1
+        direction LR
+        Body1Length[4-6문장]
+        Body1Child1[주요 세부 특징]
+    end
+
+    Body1 --> Line2[빈줄]
+    Line2 --> Body2
+
+    subgraph Body2
+        direction LR
+        Body2Length[4-6문장]
+        Body2Child1[나머지 세부 특징]
+    end
+```
