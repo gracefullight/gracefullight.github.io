@@ -251,7 +251,7 @@ Graph.prototype.removeVertex = function (val) {
         if (this.vertices[key].edges[val]) {
           delete this.vertices[key].edges[val];
         }
-      }.bind(this)
+      }.bind(this),
     );
   }
 };
