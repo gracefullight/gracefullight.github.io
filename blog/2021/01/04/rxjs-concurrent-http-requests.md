@@ -5,12 +5,12 @@ tags: [rxjs, javascript]
 date: 2021-01-04 19:27:14
 ---
 
-# 개요
+## 개요
 
 - 앵귤러 같기도 하고 코드를 머리를 써서 읽어야한다는 것 때문에 최대한 안 쓰고 싶다.
 - 하지만 async/await 로 동시성 제어가 힘드므로 이 쪽이 답인 것 같다.
 
-# 소스
+## 소스
 
 - 데이터 배열에서 5개씩 끊어서 병렬 요청한다.
 - `delay, catchError, delayWhen` 의 조건만 다르게 하여 사용하면 된다.
@@ -38,7 +38,7 @@ const fetchObservable = (data) => {
           data,
         });
       }, 300);
-    })
+    }),
   );
 };
 
@@ -49,7 +49,7 @@ const fetchConcurrently$ = from(YOUR_DATA).pipe(
       map(({ data }) => data),
       delay(1000),
       retry(1),
-      catchError(() => EMPTY)
+      catchError(() => EMPTY),
     );
   }, concurrency),
   map((data) => {
@@ -57,17 +57,65 @@ const fetchConcurrently$ = from(YOUR_DATA).pipe(
   }),
   toArray(),
   delayWhen(() => Promise.resolve()),
-  finalize(() => console.log("done"))
+  finalize(() => console.log("done")),
 );
 
 fetchConcurrently$.subscribe((ids) => console.log(ids));
 ```
 
-# 테스트
+## 테스트
 
 - 테스트 시에 `jest` 에서 done callback 을 적절히 호출해주자.
 
-# 여담
+```ts
+import { TestScheduler } from "rxjs/testing";
+import { mergeMap, map, toArray } from "rxjs/operators";
+import { from } from "rxjs";
+
+describe("fetchConcurrently$ observable", () => {
+  let testScheduler;
+
+  beforeEach(() => {
+    testScheduler = new TestScheduler((actual, expected) => {
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  it("should produce expected output", () => {
+    testScheduler.run((helpers) => {
+      const { cold, expectObservable } = helpers;
+
+      // Mock fetchObservable function
+      const fetchObservable = (data) => {
+        return from([data]);
+      };
+
+      // Mock YOUR_DATA
+      const YOUR_DATA = [1, 2, 3, 4, 5];
+
+      const concurrency = 5;
+      const fetchConcurrently$ = from(YOUR_DATA).pipe(
+        mergeMap((token) => {
+          return fetchObservable(token).pipe(
+            map((data) => data),
+            // ... other operators
+          );
+        }, concurrency),
+        map((data) => data),
+        toArray(),
+      );
+
+      const expectedMarble = "(abcde|)";
+      const expectedValues = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+
+      expectObservable(fetchConcurrently$).toBe(expectedMarble, expectedValues);
+    });
+  });
+});
+```
+
+## 여담
 
 - marble 테스트도 작성해보고 싶었는데 레퍼런스로 삼을만한 문서를 못 찾아서 아쉽다.
+  - GPT4가 위처럼 잘 짜줬다.
 - 매번 of 와 from 을 헷갈리는데, 전자는 하나씩이고 후자는 덩어리다.
