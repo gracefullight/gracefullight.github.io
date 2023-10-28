@@ -384,7 +384,7 @@ module.exports = {
       // e.g. "./app/module.js" -> "./app/alternative-module.js"
       [path.resolve(__dirname, "app/module.js")]: path.resolve(
         __dirname,
-        "app/alternative-module.js"
+        "app/alternative-module.js",
       ),
     },
 

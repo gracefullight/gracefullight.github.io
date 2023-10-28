@@ -5,7 +5,7 @@ tags: [javascript, typescript, yarn]
 date: 2021-09-11 23:13:42
 ---
 
-# yarn berry 마이그레이션 체크리스트
+## 체크리스트
 
 - [ ] `yarn set version berry`
 - [ ] `rm -rf node_modules package-lock.json`
@@ -20,3 +20,7 @@ date: 2021-09-11 23:13:42
   - [ ] entrypoint 커맨드
 - [ ] 의존관계 패키지 추가 설치
 - [ ] 테스트
+
+## 여담
+
+- 2023년 난 pnpm에 정착했다. [yarn 에서 pnpm 으로 마이그레이션](/2023/06/17/migrate-yarn-to-pnpm)

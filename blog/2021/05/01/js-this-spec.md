@@ -5,13 +5,13 @@ tags: [javascript]
 date: 2021-05-01 15:04:56
 ---
 
-# 개요
+## 개요
 
 - this 는 함수나 스코프 기반으로 결정되는 것이 아니라 호출 방법에 따라 변경된다.
 - 여러 코드 예시를 가지고 이걸 설명하려고 하는 포스팅이 많은데 이것도 정작 중요한 스펙에 대한 내용이 다 빠져있다.
 - this 가 어떻게 동작하나요? 에 대한 대답은 하나다. **ECMA OrdinaryCallBindThis 사양대로 동작합니다.**
 
-# OrdinaryCallBindThis
+## OrdinaryCallBindThis
 
 - [사양서](https://262.ecma-international.org/#sec-ordinarycallbindthis)의 내용은 다음과 같다.
 
@@ -38,19 +38,19 @@ date: 2021-05-01 15:04:56
 
 - 볼드체로 표시한 부분을 잘 보자.
 
-## 5
+### 5
 
 - 이 사양으로 인해 `use strict` 사용시에 동작이 변경된다.
 
-## 6.a.iv
+### 6.a.iv
 
 - 이 사양으로 인해 `this` 가 `window`로 선언된다.
 
-## 6.b.i
+### 6.b.i
 
 - 이 사양으로 인해 `this`에 값을 넘길 경우 객체로 변경된다.
 
-# 참조
+## 참조
 
 - [ECMAScript Function Objects](https://262.ecma-international.org/#sec-ecmascript-function-objects)
 - [The Strict Mode of ECMAScript](https://262.ecma-international.org/#sec-strict-mode-of-ecmascript)
