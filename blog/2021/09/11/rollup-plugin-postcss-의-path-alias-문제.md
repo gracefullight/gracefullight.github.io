@@ -5,8 +5,6 @@ tags: [javascript, rollup]
 date: 2021-09-11 22:31:22
 ---
 
-# rollup-plugin-postcss
-
 - [현재(210911) 메인테이너를 구하는 프로젝트](https://github.com/egoist/rollup-plugin-postcss/issues/217)이므로 이슈가 수정되지 않는다.
 
 ## scss alias
@@ -171,7 +169,7 @@ postcss({
 });
 ```
 
-# 결론
+## 결론
 
 - `rollup-plugin-postcss` 는 이슈가 있어 확장을 직접해야하고 이는 유지보수 포인트로 다가올 수 있다.
 - `postcss-import` 는 alias 기능이 없어 사용이 불가능하다.

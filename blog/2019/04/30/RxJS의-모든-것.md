@@ -87,7 +87,7 @@ test$.subscribe(
   (error) => {},
   () => {
     console.log("complete");
-  }
+  },
 );
 
 /*
@@ -262,7 +262,7 @@ interval(1000)
 interval(1000)
   .pipe(
     take(100),
-    takeUntil(fromEvent(document.querySelector("#btn"), "click"))
+    takeUntil(fromEvent(document.querySelector("#btn"), "click")),
   )
   .subscribe((x) => console.log(x));
 ```
@@ -331,7 +331,7 @@ interval(time)
 of({ id: 1 }, { id: 1 }, { id: 2 }, { id: 3 })
   .pipe(
     distinct((data) => data.id),
-    map((data) => data.id)
+    map((data) => data.id),
   )
   .subscribe((x) => console.log(x));
 
@@ -373,7 +373,7 @@ of(
   { a: 2, b: 20 },
   { a: 3, b: 30 },
   { a: 3, b: 30 },
-  { a: 2, b: 20 }
+  { a: 2, b: 20 },
 )
   .pipe(distinctUntilChanged(null, (data) => data.a))
   .subscribe((x) => console.log(x));

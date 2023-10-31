@@ -6,8 +6,6 @@ tags: [javascript, typescript, react, nextjs]
 date: 2022-11-24 23:16:14
 ---
 
-# Nextjs App Directory
-
 ## 개요
 
 - nextjs 13버전에서 app 디렉토리가 생기면서 client/server 컴포넌트를 쉽게 사용할 수 있는 환경이 되었다.

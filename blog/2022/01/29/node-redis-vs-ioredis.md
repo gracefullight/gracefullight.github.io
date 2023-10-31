@@ -5,7 +5,7 @@ tags: [nodejs, redis]
 date: 2022-01-29 22:16:22
 ---
 
-# node-redis vs ioredis
+## 전제조건
 
 - 보통 IOredis 가 퍼포먼스면에서 더 빠르다고 알고 있는데, node-redis가 4버전으로 올라오면서 바뀌었는지 궁금했다.
 - 먼저 IOredis 의 [벤치마크 문서](https://github.com/luin/ioredis#benchmarks) 에는 node-redis 와의 비교는 없고 `enableAutoPipelining` 옵션을 켜라는 말만 나온다.

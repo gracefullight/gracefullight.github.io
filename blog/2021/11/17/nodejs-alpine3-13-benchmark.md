@@ -5,8 +5,6 @@ tags: [javascript, nodejs, alpine, docker]
 date: 2021-11-17 23:24:45
 ---
 
-# nodejs alpine3.13 테스트
-
 ## 개요
 
 - docker nodejs base image 에 alpine3.13 에 대한 이미지가 있어서 [릴리즈노트](https://alpinelinux.org/posts/Alpine-3.13.0-released.html)를 확인했다.
@@ -115,7 +113,7 @@ CMD [ "node", "server.js" ]
 - noticeably improves, ~20% 란 문구로 인해 `fastify/benchmarks` 로직으로 도커라이징하여 테스트해보았으나 비슷한 퍼포먼스를 보여주었다.
 - 위의 수치를 검증할 수 있는 테스트베드가 있다면 돌려보고 싶다. (링크 있으시면 공유부탁드립니다.)
 
-# 참조
+## 참조
 
 - Build flag 비교: [GCC Optimization Options](https://wiki.kldp.org/wiki.php/GccOptimizationOptions)
 - [alpine3.13 nodejs apkbuild](https://git.alpinelinux.org/aports/tree/main/nodejs/APKBUILD?h=3.13-stable)

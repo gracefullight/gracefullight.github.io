@@ -5,11 +5,11 @@ tags: [javascript, webpack, nodejs]
 date: 2021-01-15 18:28:14
 ---
 
-# 개요
+## 개요
 
 - no config 가 유행이지만 적용할 체계에 맞게 튜닝하려면 모든 옵션을 꿰고 있어야할 것이다.
 
-# 전체 설정
+## 전체 설정
 
 ```js
 const path = require("path");
@@ -1106,7 +1106,7 @@ module.exports = {
   - [webpack/lib/config/defaults.js](https://github.com/webpack/webpack/blob/master/lib/config/defaults.js)
   - [webpack/test/Defaults.unittest.js](https://github.com/webpack/webpack/blob/master/test/Defaults.unittest.js)
 
-# 참조
+## 참조
 
 - [Webpack Build Performance](https://webpack.js.org/guides/build-performance/)
 - [lcxfs1991/blog webpack preformance (2016)](https://github.com/lcxfs1991/blog/issues/15)
