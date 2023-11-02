@@ -6,6 +6,40 @@ authors: me
 tags: [ielts, me]
 ---
 
+## Part1
+
+### Format
+
+```mermaid
+graph TD
+    Introduction --> Line1[빈줄]
+    Line1 --> Body1
+
+    subgraph Introduction[Introduction + Overview]
+        direction LR
+        IntroLength[2문장]
+        Intro[그래프 소개]
+        Overview[전반적 특징]
+
+        Intro --> Overview
+    end
+
+    subgraph Body1
+        direction LR
+        Body1Length[4-6문장]
+        Body1Child1[주요 세부 특징]
+    end
+
+    Body1 --> Line2[빈줄]
+    Line2 --> Body2
+
+    subgraph Body2
+        direction LR
+        Body2Length[4-6문장]
+        Body2Child1[나머지 세부 특징]
+    end
+```
+
 ## Part2
 
 ### Types
@@ -64,309 +98,6 @@ graph TD
         Conc1-->Conc2
     end
 ```
-
-### Agree | Disagree
-
-- 서론
-  - 배경: It is true that ~
-  - 내 의견: Although S + V, S + V. Hence, this essay agrees / disagrees ~
-- 본론
-  - 반대주장1: To begin with,
-  - 반대근거1: That is to say,
-  - 주장1: However, ~. First,
-  - 근거1: In other words,
-  - 예시/부연설명1: A study has shown that ~, A survey has shown that ~, A statistic has shown that ~, For instance,
-  - 주장2: Moreover,
-  - 근거2: That is,
-  - 예시/부연설명2: In addition, In contrast, On the other hand,
-- 결론
-  - 요약: In conclusion,
-
-### Discuss
-
-- 서론
-  - 배경: There are a variety of opinions on whether S + V
-  - 양쪽 의견: Some people argue that S + V. However, others argue that S + V
-- 본론
-  - 주장1: On the one hand,
-  - 근거1: That is to say,
-  - 예시/부연설명1: A study has shown that ~, A survey has shown that ~, A statistic has shown that ~, For instance,
-  - 주장2-1: On the other hand,
-  - 근거2-1: In other words,
-  - 예시/부연설명2-1: A study has shown that ~, A survey has shown that ~, A statistic has shown that ~, For instance,
-  - 주장2-2: Moreover,
-  - 근거2-2: That is,
-- 결론
-  - 요약: In conclusion,
-
-### Advantages | Disadvantages
-
-- 서론
-  - 배경: It is true that ~
-  - 양쪽 의견: Some claim that ~ / However, others claim that ~
-- 본론
-  - 반대주장1: On the one hand, some argue that ~
-  - 반대근거1: This is because ~
-  - 예시/부연설명1: For instance, it has been reported that ~, In addition, In other ways,
-  - 찬성주장2-1: On the other hand,
-  - 찬성근거2-1: That is to say ~
-  - 예시/부연설명2-1: As an example,
-  - 찬성주장2-2: Moreover,
-  - 찬성근거2-2: To be specific,
-- 결론
-  - 요약: In conclusion, there seem to be more drawbacks than benefits: it is ... that ...
-
-## Part1
-
-### Format
-
-```mermaid
-graph TD
-    Introduction --> Line1[빈줄]
-    Line1 --> Body1
-
-    subgraph Introduction[Introduction + Overview]
-        direction LR
-        IntroLength[2문장]
-        Intro[그래프 소개]
-        Overview[전반적 특징]
-
-        Intro --> Overview
-    end
-
-    subgraph Body1
-        direction LR
-        Body1Length[4-6문장]
-        Body1Child1[주요 세부 특징]
-    end
-
-    Body1 --> Line2[빈줄]
-    Line2 --> Body2
-
-    subgraph Body2
-        direction LR
-        Body2Length[4-6문장]
-        Body2Child1[나머지 세부 특징]
-    end
-```
-
-### 서론
-
-- 소개
-  - The graph illustrates
-  - The graph provides information on
-  - The table indicates various statistics on
-  - The pie chars compare
-- 개요
-  - Overall, according to the figures provided S V
-  - The overall trend we can see from the graph is that S V
-  - Overall, it is evident from the chart that S V
-  - The significant change reflected in the statistics is that S V
-  - The pattern exhibited by the charts leads to a conclusion that S V
-
-#### 서론 표현
-
-- 증가
-  - increase / increased / increased
-  - rise / rose / risen
-  - there was ~ an increase, a rise
-  - show / see / experience ~ an upward treand
-  - reach / hit ~ a peak of / at, the top of / at
-- 감소
-  - decrease / decreased / decreased
-  - decline / declined / declined
-  - fall / fell / fallen
-  - drop / dropped / dropped
-  - there was ~ a decrease, a decline, a fall, a drop
-  - show / see / experience ~ a downward trend
-  - reach / hit ~ a low of, the bottom at
-- 안정
-  - stabilise
-  - remain / stay stable
-  - fluctuate
-- 형용사, 부사
-  - 급격한, 급격히
-    - rapid / rapidly
-    - dramatic / dramatically
-  - 상단한, 상당히
-    - significant / significantly
-    - considerable / considerably
-  - 미미한, 미미하게
-    - slight / slightly
-    - minimal / minimally
-  - 꾸준한, 꾸준히
-    - steady / steadily
-    - gradual / gradually
-
-### 수치
-
-| 퍼센트 | 표현                    |
-| ------ | ----------------------- |
-| 90%    | almost all              |
-| 80%    | most of the + [UC][C]   |
-| 80%    | vast majority of + [C]  |
-| 80%    | four fiths              |
-| 75%    | three quaters           |
-| 70%    | a majority              |
-| 70%    | slightly more than      |
-| 50%    | a half                  |
-| 50%    | one half                |
-| 45%    | slightly less than half |
-| 45%    | almost a half           |
-| 45%    | nearly one half         |
-| 30%    | a third                 |
-| 25%    | a quarter               |
-| 25%    | one fourth              |
-| 25%    | one in four             |
-| ﹤20%  | less than a fifth       |
-| ﹤20%  | only a small minority   |
-| ﹤20%  | only, mere, merely      |
-
-### 수량 표현
-
-- 수: The number of + [C]
-- 양: The amount of + [UC]
-- 비율1: The percentage of
-- 비율2: The rate of
-- 비율3: The ratio of
-- 비율4: The proportion of
-- 수치(모두 사용 가능): The figure **for**
-
-### 표
-
-- The most striking trend
-- The most striking figure
-- As clearly seen from the figures
-- When it comes to
-- Most of the ...
-- Looking at the figures for ...
-
-### 지도
-
-수동태
-
-#### 변화
-
-- A made room for **B**
-- A give way to **B**
-- **A** take the place of B
-- be changed to
-- be substituted by
-- be replaced with
-- be converted into
-- be displaced by
-- be exchanged with
-- be interchanged with
-- be made into
-- be swapped with
-- be relocated to
-- be moved to
-
-#### 무변화
-
-- be situated
-- be located
-- lie: 자동사
-- remain existing
-- remian unchanged
-- remain in the same place
-- maintain its position
-- be retained
-
-#### 위치
-
-- beside, nearby, next to
-- across from
-- in the center of ~
-- the premises for ~: ~의 부지
-- be sorrounded
-- run through: ~로 흐르다
-- along the river, on the banks of the river.
-- to the east / west / south / north of
-- to the north - west of
-
-#### 도입
-
-- be constructed
-- be installed
-- be built
-- be added
-- be introduced
-- be opened
-- be planted
-
-#### 연장
-
-- be enlarge
-- be expanded
-- be extended
-- be developed
-
-#### 분리
-
-- be separated
-- be reduced
-
-#### 제거
-
-- be demolished
-- be removed
-- be chopped down
-- be knocked down
-- be torn down
-- be pulled down
-- be cut down
-
-#### 개조
-
-- be reconstructed
-- be renovated
-- be redeveloped
-- be modernised
-- be improved
-
-### 프로세스
-
-현재 시제, 수동태와 전치사
-
-- 서론
-  - The diagram illustrates how S V
-  - It is clear that there are multiple stages in the process.
-  - The process commences with N, and ends at N.
-- 결론
-  - Finally, when S V, this whole process repeats again.
-
-#### 과정 표현
-
-- 시작
-  - The first step is N
-  - First, S V
-  - To begin with, S V
-  - The process commences with N
-  - The process starts when S V
-  - In the first stage, S V
-- 중간과정
-  - The next step is N
-  - Next, S V
-  - Secondly, S V
-  - S V, while S V
-  - After S V, S V
-  - Afterwards, S V
-  - Meanwhile, S V
-  - At this point, S V
-  - Subsequently, S V
-  - The step after this is N
-  - following this, S V
-  - Simultaneously, S V
-  - At the same time S V,
-  - Once N has been done, S V
-  - In addition to this step, S V
-  - After the stage of N is completed, S V
-- 종료
-  - Finally, S V
-  - Eventually, S V
-  - Consequently, S V
-  - Once the final stage has been completed, S V
 
 ## Grammer
 
