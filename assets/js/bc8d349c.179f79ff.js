@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[78280],{21277:e=>{e.exports=JSON.parse('{"label":"openshift","permalink":"/tags/openshift","allTagsPath":"/tags","count":1}')}}]);

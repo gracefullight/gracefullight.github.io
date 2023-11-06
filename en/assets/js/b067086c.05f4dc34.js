@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[90162],{34675:e=>{e.exports=JSON.parse('{"label":"k8s","permalink":"/en/tags/k-8-s","allTagsPath":"/en/tags","count":10}')}}]);

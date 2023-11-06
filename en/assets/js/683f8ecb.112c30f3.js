@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[73839],{38705:a=>{a.exports=JSON.parse('{"label":"fail2ban","permalink":"/en/tags/fail-2-ban","allTagsPath":"/en/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[12437],{52812:e=>{e.exports=JSON.parse('{"label":"react-intl","permalink":"/en/tags/react-intl","allTagsPath":"/en/tags","count":1}')}}]);

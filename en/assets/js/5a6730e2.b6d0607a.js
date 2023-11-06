@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[95412],{99786:e=>{e.exports=JSON.parse('{"label":"game","permalink":"/en/tags/game","allTagsPath":"/en/tags","count":2,"unlisted":false}')}}]);

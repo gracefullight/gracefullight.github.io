@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[35571],{30625:a=>{a.exports=JSON.parse('{"label":"12factor","permalink":"/tags/12-factor","allTagsPath":"/tags","count":1}')}}]);

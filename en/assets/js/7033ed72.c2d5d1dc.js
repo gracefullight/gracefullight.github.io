@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[47242],{95813:e=>{e.exports=JSON.parse('{"label":"swagger","permalink":"/en/tags/swagger","allTagsPath":"/en/tags","count":1,"unlisted":false}')}}]);

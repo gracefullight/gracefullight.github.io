@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[85878],{24511:e=>{e.exports=JSON.parse('{"label":"bluetooth","permalink":"/en/tags/bluetooth","allTagsPath":"/en/tags","count":1,"unlisted":false}')}}]);

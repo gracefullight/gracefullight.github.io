@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[70324],{77874:l=>{l.exports=JSON.parse('{"label":"mysql","permalink":"/tags/mysql","allTagsPath":"/tags","count":10,"unlisted":false}')}}]);
