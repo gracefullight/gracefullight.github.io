@@ -7,7 +7,7 @@ import {
 import Layout from "@theme/Layout";
 import { DateTime } from "luxon";
 import { kmeans } from "ml-kmeans";
-import React, { useEffect, useRef, useState, type ChangeEvent } from "react";
+import { useEffect, useRef, useState, type ChangeEvent } from "react";
 
 export default function DrawingGeneratorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);

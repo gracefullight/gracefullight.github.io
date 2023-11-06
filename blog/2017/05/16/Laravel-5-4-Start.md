@@ -200,8 +200,8 @@ composer require caouecs/laravel-lang:~3.0
 
 ### 적용
 
-vendor/caouecs/laravel-lang/src/{국가} 폴더를
-resources/lang/{국가} 로 복사하고 **config/app.php** 의 **fallback_locale**을 {국가}로 바꿔주면 된다.
+`vendor/caouecs/laravel-lang/src/{국가}` 폴더를
+`resources/lang/{국가}` 로 복사하고 **config/app.php** 의 **fallback_locale**을 `{국가}`로 바꿔주면 된다.
 
 ```bash
 # 귀찮으니 git bash에서 날려봅시다.
@@ -288,15 +288,15 @@ class TestController extends Controller{
 리소스 사용시라면 아래와 같은 메소드로 구성되어야한다.
 게시판 컨트롤러라면 아래와 같은 구성일 것이다.
 
-| 메소드    | 경로              | 액션              | 라우트.메소드  |
-| --------- | ----------------- | ----------------- | -------------- |
-| GET       | /boards           | 게시판 메인       | boards.index   |
-| GET       | /boards/create    | 게시글 생성페이지 | boards.create  |
-| POST      | /boards           | 게시글 저장       | boards.store   |
-| GET       | /boards/{id}      | 게시글 상세페이지 | boards.show    |
-| GET       | /boards/{id}/edit | 게시글 수정페이지 | boards.edit    |
-| PUT/PATCH | /boards/{id}      | 게시글 수정로직   | boards.update  |
-| DELETE    | /boards/{id}      | 게시글 삭제       | boards.destroy |
+| 메소드    | 경로                | 액션              | 라우트.메소드  |
+| --------- | ------------------- | ----------------- | -------------- |
+| GET       | /boards             | 게시판 메인       | boards.index   |
+| GET       | /boards/create      | 게시글 생성페이지 | boards.create  |
+| POST      | /boards             | 게시글 저장       | boards.store   |
+| GET       | `/boards/{id}`      | 게시글 상세페이지 | boards.show    |
+| GET       | `/boards/{id}/edit` | 게시글 수정페이지 | boards.edit    |
+| PUT/PATCH | `/boards/{id}`      | 게시글 수정로직   | boards.update  |
+| DELETE    | `/boards/{id}`      | 게시글 삭제       | boards.destroy |
 
 # 뷰
 

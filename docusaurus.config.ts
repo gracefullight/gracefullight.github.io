@@ -2,6 +2,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import dotenv from "dotenv";
 import { themes } from "prism-react-renderer";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 // Note: type annotations allow type checking and IDEs autocompletion
 dotenv.config();
 
@@ -58,6 +60,8 @@ const config: Config = {
               });
             },
           },
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -68,6 +72,17 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  stylesheets: [
+    // ? https://docusaurus.io/docs/markdown-features/math-equations#configuration
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
+    },
   ],
 
   plugins: [
@@ -167,6 +182,15 @@ const config: Config = {
       {
         name: "facebook-domain-verification",
         content: "uelupjqqsm5egzlhy1aev2rfxow5yt",
+      },
+    ],
+    headTags: [
+      {
+        tagName: "link",
+        attributes: {
+          rel: "preconnect",
+          href: "https://cdn.jsdelivr.net",
+        },
       },
     ],
     // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
