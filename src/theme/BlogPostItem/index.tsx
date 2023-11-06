@@ -1,8 +1,8 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import type { WrapperProps } from "@docusaurus/types";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import type BlogPostItemType from "@theme-original/BlogPostItem";
 import BlogPostItem from "@theme-original/BlogPostItem";
-import type BlogPostItemType from "@theme/BlogPostItem";
 // TODO: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest#browser_compatibility
 import md5 from "crypto-js/md5";
 
