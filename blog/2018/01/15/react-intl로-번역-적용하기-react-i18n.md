@@ -13,7 +13,7 @@ step by step으로 간단하게 적용해보자
 # 설치
 
 ```bash
-$ npm install react-intl
+npm install react-intl
 ```
 
 # 번역 데이터 생성
@@ -55,7 +55,7 @@ ReactDOM.render(
       <App />
     </IntlProvider>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 ```
 
@@ -109,8 +109,8 @@ HOC를 사용하지 않을 경우 `FormattedMessage`의 child로 번역된 문�
 
 ## dynamic
 
-Hello, {Gracefullight} 처럼 동적으로 문구가 변해야할 경우 `values` prop을 활용하자
-먼저, `locale.js`에서 변수가 될 부분을 {}로 감싸준다
+Hello, `{Gracefullight}` 처럼 동적으로 문구가 변해야할 경우`values`prop을 활용하자
+먼저,`locale.js`에서 변수가 될 부분을 {}로 감싸준다
 
 ```js title="locale.js"
 export default {

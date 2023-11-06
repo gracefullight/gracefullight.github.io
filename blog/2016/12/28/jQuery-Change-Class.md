@@ -32,7 +32,7 @@ $.fn.alterClass = function (removals, additions) {
     "\\s" +
       removals.replace(/\*/g, "[A-Za-z0-9-_]+").split(" ").join("\\s|\\s") +
       "\\s",
-    "g"
+    "g",
   );
 
   self.each(function (i, it) {

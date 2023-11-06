@@ -52,7 +52,7 @@ PHP 7 이상을 설치해주고, 아래 Extension은 웬만하면 열어주는 �
 Laravel 명령어를 사용할 수 있게 composer로 전역 설치하자.
 
 ```bash
-$ composer global require "laravel/installer"
+composer global require "laravel/installer"
 ```
 
 # 프로젝트 생성
@@ -60,7 +60,7 @@ $ composer global require "laravel/installer"
 ## 초기 생성
 
 ```bash
-$ laravel new 프로젝트명
+laravel new 프로젝트명
 ```
 
 위 명령어를 실행하면, 알아서 composer 패키지까지 설치된다.
@@ -86,7 +86,7 @@ $ php artisan key:generate
 프로젝트를 실행해보자.
 
 ```bash
-$ php artisan serve
+php artisan serve
 ```
 
 이제 localhost:8000으로 라라벨 프로젝트에 접근이 가능하다.
@@ -112,7 +112,7 @@ $ php artisan serve
 모든 웹 프레임워크의 기본은 Routing이다.
 routes 폴더에 기본으로 api, channels, console, web 파일이 보이는데 그 중 2가지만 알면 된다.
 
-- api.php: Token 인증이 필요한 라우터로 /api/{route} 로 접근이 가능하다.
+- api.php: Token 인증이 필요한 라우터로 `/api/{route}` 로 접근이 가능하다.
 - web.php: 기본적인 Route이다. GET이 아닌 다른 메소드는 CSRF Token이 있어야만 호출이 가능하다.
 
 ## Controller
@@ -185,7 +185,7 @@ return [
 ### 설치
 
 ```bash
-$ composer require barryvdh/laravel-debugbar
+composer require barryvdh/laravel-debugbar
 ```
 
 ## laravel-lang
@@ -195,7 +195,7 @@ $ composer require barryvdh/laravel-debugbar
 ### 설치
 
 ```bash
-$ composer require caouecs/laravel-lang:~3.0
+composer require caouecs/laravel-lang:~3.0
 ```
 
 ### 적용

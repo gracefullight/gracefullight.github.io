@@ -11,8 +11,8 @@ git add . 명령어 실행 후에 commit -m 명령어 실행 시,
 # add 확인
 
 ```bash
-$ git add .
-$ git add path_to_submodule
+git add .
+git add path_to_submodule
 ```
 
 두 명령어를 다시 실행해본다.
@@ -22,8 +22,8 @@ $ git add path_to_submodule
 그래도 add 가 안 되는 경우 diff 를 먼저 실행해본다.
 
 ```bash
-$ git diff
-$ git diff path_to_submodule
+git diff
+git diff path_to_submodule
 ```
 
 ## dirty diff 가 있을 경우
@@ -33,7 +33,7 @@ $ git diff path_to_submodule
 내 프로젝트 안에 git clone 으로 가져온 library 가 있는지 확인해보자.
 
 ```bash
-$ git submodule foreach --recursive git checkout .
+git submodule foreach --recursive git checkout .
 ```
 
 **모듈이 없다는 결과가 나올 경우**
@@ -48,7 +48,7 @@ $ git submodule foreach --recursive git checkout .
 - .git/config 파일의 해당 모듈 부분 삭제
 - git rm --cached path_to_submodule 캐시 삭제
 - rm -rf .git/modules/path_to_submodule 모듈 폴더 삭제
-- git commit -m "Removed submodule {name}" 모듈 종속 삭제를 커밋하고
+- `git commit -m "Removed submodule {name}"` 모듈 종속 삭제를 커밋하고
 - rm -rf path_to_submodule 모듈 파일 모두 삭제
 
 ## 없는 경우
@@ -56,14 +56,14 @@ $ git submodule foreach --recursive git checkout .
 ### cached 파일 제거
 
 ```bash
-$ git rm -r --cached .
-$ git rm -r --cached path_to_submodule
+git rm -r --cached .
+git rm -r --cached path_to_submodule
 ```
 
 ### untracked 파일 제거
 
 ```bash
-$ git clean -d -x -f
+git clean -d -x -f
 ```
 
 -d 는 디렉토리 포함, -x 는 ignored 파일 포함, -f === force
@@ -71,7 +71,7 @@ $ git clean -d -x -f
 ### commit 으로 초기화
 
 ```bash
-$ git reset --hard
+git reset --hard
 ```
 
 이 명령어는 마지막 방법이 되어야한다. 작업량을 다 날릴 수 있다.

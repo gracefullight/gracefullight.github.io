@@ -70,7 +70,7 @@ install이 **add**로, uninstall이 **remove**로, update가 **upgrade**로 바�
 
 ```bash
 $ yarn config list
-{ prefix: 'C:\\Users\\{NAME}\\npm' }
+# { prefix: 'C:\\Users\\{NAME}\\npm' }
 ```
 
 # 결론
