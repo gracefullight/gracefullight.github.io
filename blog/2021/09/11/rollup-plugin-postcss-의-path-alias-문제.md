@@ -28,7 +28,7 @@ date: 2021-09-11 22:31:22
 
 ## custom-sass-loader
 
-- <https://github.com/egoist/rollup-plugin-postcss/blob/master/src/sass-loader.js>
+- [rollup-plugin-postcss/sass-loader.js](https://github.com/egoist/rollup-plugin-postcss/blob/master/src/sass-loader.js)
 - `pity` 는 promisify 로 대체 가능하여 지웠고 `import-cwd` 도 node 코어를 사용하게 변경했다.
 - `p-queue` 도 child_process 로 대체 가능해보인다.
 

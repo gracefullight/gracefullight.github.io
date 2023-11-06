@@ -182,7 +182,7 @@ var person = new Person(); // 생성자
 - Declaring function in blocks if (a < b) { function f() {} }
 - Obvious errors
 
-  - Declaring twice the same name for a property name in an object literal {a: 1, b: 3, a: 7} This is no longer the case in ECMAScript 2015 (bug 1041128).
+  - Declaring twice the same name for a property name in an object literal `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript 2015 (bug 1041128).
   - Declaring two function parameters with the same name function f(a, b, b) {}
 
 - [출처](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)

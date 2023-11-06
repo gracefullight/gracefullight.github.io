@@ -1,11 +1,12 @@
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import dotenv from "dotenv";
+import { themes } from "prism-react-renderer";
 // Note: type annotations allow type checking and IDEs autocompletion
-require("dotenv").config();
+dotenv.config();
 
 // ? https://github.com/FormidableLabs/prism-react-renderer/tree/master/packages/prism-react-renderer/src/themes
-const { themes } = require("prism-react-renderer");
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: "gracefullight.dev",
   tagline: `Gracefullight's Blog`,
   url: "https://gracefullight.dev",
@@ -39,8 +40,7 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: false,
         blog: {
           routeBasePath: "/",
@@ -66,7 +66,7 @@ const config = {
           trackingID: "G-E99DNE7S05",
           anonymizeIP: false,
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
@@ -74,7 +74,7 @@ const config = {
     [
       "@docusaurus/plugin-pwa",
       /** @type {import('@docusaurus/plugin-pwa').Options} */
-      ({
+      {
         debug: process.env.NODE_ENV === "development",
         pwaHead: [
           {
@@ -108,7 +108,7 @@ const config = {
             href: "/img/apple-touch-icon.png",
           },
         ],
-      }),
+      },
     ],
     // ! Can't use ts directly https://docusaurus.io/docs/typescript-support#typing-config
     [
@@ -143,104 +143,102 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      colorMode: {
-        defaultMode: "dark",
-        disableSwitch: true,
+  themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: true,
+    },
+    metadata: [
+      // ? https://search.google.com/search-console
+      {
+        name: "google-site-verification",
+        content: "gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E",
       },
-      metadata: [
-        // ? https://search.google.com/search-console
+      // ? https://www.bing.com/webmasters/home
+      { name: "msvalidate.01", content: "65AD1E28C0D057CEB3C68FBC0293E55B" },
+      // ? https://searchadvisor.naver.com/console/board
+      {
+        name: "naver-site-verification",
+        content: "d024c2837887f72dc7b3792b958be74d69ba9593",
+      },
+      // ? https://webmaster.yandex.com
+      { name: "yandex-verification", content: "6672f93d837354fb" },
+      { name: "baidu-site-verification", content: "yZEdU1ABcR" },
+      {
+        name: "facebook-domain-verification",
+        content: "uelupjqqsm5egzlhy1aev2rfxow5yt",
+      },
+    ],
+    // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
+    algolia: {
+      appId: "RFS69RSYOJ",
+      apiKey: "ed845a181b33267d7d7f830674259972",
+      indexName: "gracefullight",
+    },
+    navbar: {
+      title: "gracefullight.dev",
+      logo: {
+        alt: "gracefullight.dev blog logo",
+        src: "img/favicon-32x32.png",
+      },
+      items: [
         {
-          name: "google-site-verification",
-          content: "gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E",
+          type: "localeDropdown",
+          position: "left",
         },
-        // ? https://www.bing.com/webmasters/home
-        { name: "msvalidate.01", content: "65AD1E28C0D057CEB3C68FBC0293E55B" },
-        // ? https://searchadvisor.naver.com/console/board
         {
-          name: "naver-site-verification",
-          content: "d024c2837887f72dc7b3792b958be74d69ba9593",
+          href: "https://github.com/gracefullight",
+          label: "GitHub",
+          position: "right",
         },
-        // ? https://webmaster.yandex.com
-        { name: "yandex-verification", content: "6672f93d837354fb" },
-        { name: "baidu-site-verification", content: "yZEdU1ABcR" },
         {
-          name: "facebook-domain-verification",
-          content: "uelupjqqsm5egzlhy1aev2rfxow5yt",
+          href: "https://www.linkedin.com/in/gracefullight",
+          label: "LinkedIn",
+          position: "right",
+        },
+        {
+          to: "/archive",
+          label: "Archives",
+        },
+        {
+          to: "/tags",
+          label: "Tags",
         },
       ],
-      // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
-      algolia: {
-        appId: "RFS69RSYOJ",
-        apiKey: "ed845a181b33267d7d7f830674259972",
-        indexName: "gracefullight",
-      },
-      navbar: {
-        title: "gracefullight.dev",
-        logo: {
-          alt: "gracefullight.dev blog logo",
-          src: "img/favicon-32x32.png",
-        },
-        items: [
-          {
-            type: "localeDropdown",
-            position: "left",
-          },
-          {
-            href: "https://github.com/gracefullight",
-            label: "GitHub",
-            position: "right",
-          },
-          {
-            href: "https://www.linkedin.com/in/gracefullight",
-            label: "LinkedIn",
-            position: "right",
-          },
-          {
-            to: "/archive",
-            label: "Archives",
-          },
-          {
-            to: "/tags",
-            label: "Tags",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Support Me",
-            items: [
-              {
-                html: `<a href="https://www.buymeacoffee.com/LOUB2kN" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Support Me",
+          items: [
+            {
+              html: `<a href="https://www.buymeacoffee.com/LOUB2kN" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
                 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="height: auto !important;width: auto !important;" >
               </a>`,
-              },
-            ],
-          },
-          {
-            title: "Feeds",
-            items: [
-              {
-                label: "RSS",
-                href: "https://gracefullight.dev/rss.xml",
-              },
-              {
-                label: "Atom",
-                href: "https://gracefullight.dev/atom.xml",
-              },
-            ],
-          },
-        ],
-      },
-      prism: {
-        theme: themes.github,
-        darkTheme: themes.vsDark,
-      },
-    }),
+            },
+          ],
+        },
+        {
+          title: "Feeds",
+          items: [
+            {
+              label: "RSS",
+              href: "https://gracefullight.dev/rss.xml",
+            },
+            {
+              label: "Atom",
+              href: "https://gracefullight.dev/atom.xml",
+            },
+          ],
+        },
+      ],
+    },
+    prism: {
+      theme: themes.github,
+      darkTheme: themes.vsDark,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
-module.exports = config;
+export default config;

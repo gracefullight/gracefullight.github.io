@@ -14,7 +14,7 @@ date: 2018-08-25 12:35:05
 
 **Github > Settings > Developer settings > OAuth Apps** 메뉴로 들어가 새로운 OAuth App 을 만들어준다.
 
-{%img https://i.imgur.com/76Q1E1K.png %}
+![준비](https://i.imgur.com/76Q1E1K.png)
 
 Client ID 와 Client Secret 을 저장해 놓고
 Authorization callback URL 은 Homepage URL 과 같은 주소를 입력한다.

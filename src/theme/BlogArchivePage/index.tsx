@@ -1,7 +1,6 @@
 import type { WrapperProps } from "@docusaurus/types";
 import BlogArchivePage from "@theme-original/BlogArchivePage";
 import type BlogArchivePageType from "@theme/BlogArchivePage";
-import React from "react";
 
 type Props = WrapperProps<typeof BlogArchivePageType>;
 
