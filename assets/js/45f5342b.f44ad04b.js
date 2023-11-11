@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[66328],{17981:e=>{e.exports=JSON.parse('{"permalink":"/tags/\uc815\ubcf4\ucc98\ub9ac/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":20,"previousPage":"/tags/\uc815\ubcf4\ucc98\ub9ac","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
