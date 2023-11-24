@@ -9,11 +9,11 @@
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
     <rights>Copyright © 2023 Eunkwang Shin.</rights>
     <entry>
-        <title type="html"><![CDATA[IELTS Speacking 기출]]></title>
+        <title type="html"><![CDATA[IELTS Speaking 기출]]></title>
         <id>https://gracefullight.dev/2023/11/16/ielts-speaking-tests</id>
         <link href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests"/>
         <updated>2023-11-16T14:02:32.026Z</updated>
-        <summary type="html"><![CDATA[IELTS Speacking 기출 아이디어 정리]]></summary>
+        <summary type="html"><![CDATA[IELTS Speaking 기출 아이디어 정리]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lHFp" id="part1">Part1<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests#part1" class="hash-link" aria-label="Part1에 대한 직접 링크" title="Part1에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="fishing">Fishing<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests#fishing" class="hash-link" aria-label="Fishing에 대한 직접 링크" title="Fishing에 대한 직접 링크">​</a></h3>
 <ul>
@@ -43,7 +43,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="running">Running<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests#running" class="hash-link" aria-label="Running에 대한 직접 링크" title="Running에 대한 직�접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="running">Running<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests#running" class="hash-link" aria-label="Running에 대한 직접 링크" title="Running에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Do you like running?<!-- -->
 <ul>
@@ -270,7 +270,7 @@
 <li>논리적 독립성</li>
 <li>물리적 독립성</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="dbms">DBMS<a href="https://gracefullight.dev/2023/11/11/professional-engineer-database#dbms" class="hash-link" aria-label="DBMS에 대한 직접 링크" title="DBMS에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="dbms">DBMS<a href="https://gracefullight.dev/2023/11/11/professional-engineer-database#dbms" class="hash-link" aria-label="DBMS에 대한 직접 링크" title="DBMS에 대한 �직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar_lHFp" id="db-설계">DB 설계<a href="https://gracefullight.dev/2023/11/11/professional-engineer-database#db-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="DB 설계에 대한 직접 링크" title="DB 설계에 대한 직접 링크">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_lHFp" id="db-운영">DB 운영<a href="https://gracefullight.dev/2023/11/11/professional-engineer-database#db-%EC%9A%B4%EC%98%81" class="hash-link" aria-label="DB 운영에 대한 직접 링크" title="DB 운영에 대한 직접 링크">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_lHFp" id="참조">참조<a href="https://gracefullight.dev/2023/11/11/professional-engineer-database#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
@@ -295,7 +295,7 @@
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="정보보안-fw">정보보안 FW<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-fw" class="hash-link" aria-label="정보보안 FW에 대한 직접 링크" title="정보보안 FW에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="owasp-10대-취약점">OWASP 10대 취약점<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#owasp-10%EB%8C%80-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="OWASP 10대 취약점에 대한 직접 링크" title="OWASP 10대 취약점에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="정보보안-위협">정보보안 위협<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91" class="hash-link" aria-label="정보보안 위협에 대한 직접 링크" title="정보보안 위협에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="정보보호-통제-��활동">정보보호 통제 활동<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8-%ED%86%B5%EC%A0%9C-%ED%99%9C%EB%8F%99" class="hash-link" aria-label="정보보호 통제 활동에 대한 직접 링크" title="정보보호 통제 활동에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="정보보호-통제-활동">정보보호 통제 활동<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8-%ED%86%B5%EC%A0%9C-%ED%99%9C%EB%8F%99" class="hash-link" aria-label="정보보호 통제 활동에 대한 직접 링크" title="정보보호 통제 활동에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar_lHFp" id="관리적-보안">관리적 보안<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#%EA%B4%80%EB%A6%AC%EC%A0%81-%EB%B3%B4%EC%95%88" class="hash-link" aria-label="관리적 보안에 대한 직접 링크" title="관리적 보안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="cc-인증">CC 인증<a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security#cc-%EC%9D%B8%EC%A6%9D" class="hash-link" aria-label="CC 인증에 대한 직접 링크" title="CC 인증에 대한 직접 링크">​</a></h3>
 <ul>
@@ -599,7 +599,7 @@
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-통합관리">프로젝트 통합관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%86%B5%ED%95%A9%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 통합관리에 대한 직접 링크" title="프로젝트 통합관리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-범위관리">프로젝트 범위관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B2%94%EC%9C%84%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 범위관리에 대한 직접 링크" title="프로젝트 범위관리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-일정관리">프로젝트 일정관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 일정관리에 대한 직접 링크" title="프로젝트 일정관리에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-원가관리">프로젝트 원가관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9B%90%EA%B0%80%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 �원가관리에 대한 직접 링크" title="프로젝트 원가관리에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-원가관리">프로젝트 원가관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9B%90%EA%B0%80%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 ��원가관리에 대한 직접 링크" title="프로젝트 원가관리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-품질관리">프로젝트 품질관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 품질관리에 대한 직접 링크" title="프로젝트 품질관리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-자원관리">프로젝트 자원관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EC%9B%90%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 자원관리에 대한 직접 링크" title="프로젝트 자원관리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="프로젝트-의사소통관리">프로젝트 의사소통관리<a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%98%EC%82%AC%EC%86%8C%ED%86%B5%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="프로젝트 의사소통관리에 대한 직접 링크" title="프로젝트 의사소통관리에 대한 직접 링크">​</a></h3>
@@ -652,7 +652,7 @@
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="융합복잡도">융합복잡도<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%9C%B5%ED%95%A9%EB%B3%B5%EC%9E%A1%EB%8F%84" class="hash-link" aria-label="융합복잡도에 대한 직접 링크" title="융합복잡도에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="주요-영역">주요 영역<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%A3%BC%EC%9A%94-%EC%98%81%EC%97%AD" class="hash-link" aria-label="주요 영역에 대한 직접 링크" title="주요 영역에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="가트너">가트너<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EA%B0%80%ED%8A%B8%EB%84%88" class="hash-link" aria-label="가트너에 대한 직접 링크" title="가트너에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="산업-적용">산업 적용<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%82%B0%EC%97%85-%EC%A0%81%EC%9A%A9" class="hash-link" aria-label="산업 적용에 대한 직접 링크" title="�산업 적용에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="산업-적용">산업 적용<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%82%B0%EC%97%85-%EC%A0%81%EC%9A%A9" class="hash-link" aria-label="산업 적용에 대한 직접 링크" title="��산업 적용에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar_lHFp" id="서비스-융합">서비스 융합<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%B5%ED%95%A9" class="hash-link" aria-label="서비스 융합에 대한 직접 링크" title="서비스 융합에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="서비스-정의">서비스 정의<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%95%EC%9D%98" class="hash-link" aria-label="서비스 정의에 대한 직접 링크" title="서비스 정의에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="soa">SOA<a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence#soa" class="hash-link" aria-label="SOA에 대한 직접 링크" title="SOA에 대한 직접 링크">​</a></h3>
@@ -823,7 +823,7 @@ be 에는 was, has been (now), will be (future)</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="process-패턴">Process 패턴<a href="https://gracefullight.dev/2023/10/09/ielts-writing#process-%ED%8C%A8%ED%84%B4" class="hash-link" aria-label="Process ��패턴에 대한 직접 링크" title="Process 패턴에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="process-패턴">Process 패턴<a href="https://gracefullight.dev/2023/10/09/ielts-writing#process-%ED%8C%A8%ED%84%B4" class="hash-link" aria-label="Process 패턴에 대한 직접 링크" title="Process 패턴에 대한 직접 링크">​</a></h3>
 <ul>
 <li>종류, 형태, 수일치, 시제 파악.</li>
 <li>In the <code>#</code> stage / progess / step / phase.</li>
@@ -892,7 +892,7 @@ be 에는 was, has been (now), will be (future)</p>
 <ul>
 <li>Control Objectives for Information and Related Technologies</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lHFp" id="iso-38500">ISO 38500<a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance#iso-38500" class="hash-link" aria-label="ISO 38500에 대��한 직접 링크" title="ISO 38500에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lHFp" id="iso-38500">ISO 38500<a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance#iso-38500" class="hash-link" aria-label="ISO 38500에 대한 직접 링크" title="ISO 38500에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_lHFp" id="it-bsc">IT BSC<a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance#it-bsc" class="hash-link" aria-label="IT BSC에 대한 직접 링크" title="IT BSC에 대한 직접 링크">​</a></h3>
 <ul>
 <li>IT Balanced Score Card</li>
