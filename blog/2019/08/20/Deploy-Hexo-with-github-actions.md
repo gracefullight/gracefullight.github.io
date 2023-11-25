@@ -47,7 +47,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [12]
+        node: [20.x]
 
     steps:
       - uses: actions/checkout@master
