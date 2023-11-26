@@ -33,7 +33,7 @@
 <script src="https://static.cloudflareinsights.com/beacon.min.js" defer="defer" data-cf-beacon="{&quot;token&quot;:&quot;c0899829e72b45e98dff77241127252c&quot;}"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.95773a99.css">
-<script src="/en/assets/js/runtime~main.2fe21f8d.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.b2a8b80f.js" defer="defer"></script>
 <script src="/en/assets/js/main.9665f442.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -539,9 +539,11 @@
 <li>구체적 What: <em>세부구성은 무엇인가</em> 아키텍쳐, 구성도, 구성요소 (소스, 매커니즘, 결과)</li>
 <li>How: <em>어떻게 구현하는가</em> Provider, Consumer 관점, 이전에는 뭐가 있었는지</li>
 <li>Who: <em>누가 찾고, 활용하는가</em></li>
-<li>결론: 향후방안, 예상 이슈 (편향적 판단, 적대적공격, 검증문제), 발전 방향</li>
+<li>결론: 향후방안, 예상 이슈, 발전 방향</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_pIE1" id="예시-ml">예시: ML<a href="#예시-ml" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>개념적 What<!-- -->
 <ul>
 <li>핵심<!-- -->
 <ul>
@@ -559,6 +561,68 @@
 <li>원리: 기계가 많은 데이터를 지도, 비지도, 강화학습을 통해 학습하여</li>
 <li>가치: 사람 대신 판단하여 의사결정을 지원하는</li>
 <li>결어: 기술</li>
+</ul>
+</li>
+<li>Why<!-- -->
+<ul>
+<li>비용절감</li>
+<li>자동화</li>
+<li>편의성 (의사결정)<!-- -->
+<ul>
+<li>생산성 증가</li>
+<li>품질 증가</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>구체적 What<!-- -->
+<ul>
+<li>아키텍쳐<!-- -->
+<ul>
+<li>학습데이터 -&gt; 지도/비지도/강화 -&gt; 대시보드, 자동화도구</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How<!-- -->
+<ul>
+<li>동작원리</li>
+<li>절차</li>
+<li>적용방법</li>
+</ul>
+</li>
+<li>Who<!-- -->
+<ul>
+<li>개인 Personal Assistant</li>
+<li>기업<!-- -->
+<ul>
+<li>의사결정</li>
+<li>고객관리</li>
+<li>마케팅</li>
+<li>생산</li>
+</ul>
+</li>
+<li>공공 서비스<!-- -->
+<ul>
+<li>교통</li>
+<li>안전</li>
+<li>환경</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>향후방향<!-- -->
+<ul>
+<li>예상이슈<!-- -->
+<ul>
+<li>편향적 판단</li>
+<li>적대적 공격</li>
+<li>검증</li>
+</ul>
+</li>
+<li>발전방향</li>
+</ul>
+</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_bSzv padding--none margin-left--sm"><li class="tag_IyLa"><a class="tag_YVSn tagRegular_oqVe" href="/en/tags/me/">me</a></li><li class="tag_IyLa"><a class="tag_YVSn tagRegular_oqVe" href="/en/tags/정보처리/">정보처리</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="- 사용자와 하드웨어 간의 인터페이스 제공"><header><h2 class="title_qecJ" itemprop="headline"><a itemprop="url" href="/en/2017/10/21/운영체제/">운영체제</a></h2><div class="container_Xbul margin-vert--md"><time datetime="2017-10-21T13:50:46.000Z" itemprop="datePublished">October 21, 2017</time> · <!-- -->51 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_ob_v"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><ul>
 <li>사용자와 하드웨어 간의 인터페이스 제공</li>
 </ul>
@@ -570,7 +634,7 @@
 <ul>
 <li>처리율</li>
 <li>응답시간</li>
-<li>사용 가능도</li>
+<li>사용가능도</li>
 <li>신뢰도</li>
 </ul>
 </li>
@@ -642,7 +706,7 @@
 <ul>
 <li>직접 메모리 접근 입출력</li>
 <li>CPU는 상태정보, 제어정보만을 교환하게 하고 데이터 전송은 주변장치와 기억장치 간에 직접 교환하게 하는 방식</li>
-<li>시스템  버스상에 모듈이 하나 추가되어야 한다.</li>
+<li>시스템 버스상에 모듈이 하나 추가되어야 한다.</li>
 <li>CPU를 통하지 않고 한 번에 한 단어씩 직접 기억장치로부터 모든 데이터 블록을 전송한다.</li>
 <li>전송이 완료되면 DMA모듈은 CPU에게 인터럽트 신호를 보내고 CPU는 전송의 시작과 끝 부분에만 관여한다.</li>
 <li>사이클 스틸링: 버스를 사용하기 위해 CPU의 동작을 일시적으로 중단시키는 기법</li>
@@ -655,7 +719,7 @@
 <h3 class="anchor anchorWithStickyNavbar_pIE1" id="종류-1">종류<a href="#종류-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>선택 채널: 채널 하나를 하나의 입출력장치가 독점해서 사용하는 방식</li>
-<li>멀티플렉서 채널: 한 채널에 여러 개의 입출력장치를 연결하여 시분할 공유방식으로 입출력하는 저속 입출력 방식</li>
+<li>멀티플렉  서 채널: 한 채널에 여러 개의 입출력장치를 연결하여 시분할 공유방식으로 입출력하는 저속 입출력 방식</li>
 <li>블록 멀티플렉서 채널: 셀렉터 채널과 멀티플렉서 채널 방식을 결합한 방식</li>
 </ul>
 <h1>기억장치 인터리빙</h1>
@@ -668,7 +732,7 @@
 <h1>재배치 레지스터</h1>
 <ul>
 <li>수행 중인 프로그램을 다른 곳으로 옮길 수 있도록 하는 레지스터</li>
-<li>주기억장치 내 프로그램의 기준 주소가 이 레지스터에 기억  된다.</li>
+<li>주기억장치 내 프로그램의 기준 주소가 이 레지스터에 기억된다.</li>
 <li>기준 레지스터 = 재배치 레지스터</li>
 </ul>
 <h1>폴링</h1>
@@ -700,7 +764,7 @@
 <h1>보조기억장치</h1>
 <ul>
 <li>SASD: 순차 기억장치 =&gt; 테이프</li>
-<li>DASD: 직접 접  근 기억장치 =&gt; 나머지</li>
+<li>DASD: 직접 접근 기억장치 =&gt; 나머지</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="광디스크">광디스크<a href="#광디스크" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -756,7 +820,7 @@
 <li>상태보존을 하지 않는다.</li>
 </ul>
 <blockquote>
-<p>폴링은 주변장치의 상태보존을  하지 않음, 프로그램 제어하의 직접 입출력 방식</p>
+<p>폴링은 주변장치의 상태보존을 하지 않음, 프로그램 제어하의 직접 입출력 방식</p>
 </blockquote>
 <h1>주소 지정방식</h1>
 <ul>
@@ -788,7 +852,7 @@
 </ul>
 <h1>스풀링</h1>
 <ul>
-<li>입출력할 데이터를 직접 I/O 장치  로 보내지 않고 디스크에 모았다가 한꺼번에 입출력을 처리하는 방식</li>
+<li>입출력할 데이터를 직접 I/O 장치로 보내지 않고 디스크에 모았다가 한꺼번에 입출력을 처리하는 방식</li>
 <li>CPU와 입출력장치의 처리속도 차이에서 오는 대기 시간을 줄이기 위해 고안</li>
 <li>버퍼와 비슷한 개념</li>
 </ul>
@@ -812,7 +876,7 @@
 </ul>
 <h1>재배치 로더</h1>
 <ul>
-<li>주기억장치의 상태에 따라 재배치 가능한 목적프로그램을 주기억장치의 임의 공간에 적재할 수 있도록 하는 로더</li>
+<li>주기억장치의 상태에 따라 재배  치 가능한 목적프로그램을 주기억장치의 임의 공간에 적재할 수 있도록 하는 로더</li>
 </ul>
 <h1>링킹 로더</h1>
 <ul>
@@ -963,7 +1027,7 @@
 <li>호출된 페이지는 실제로 참조되는 페이지</li>
 <li>페이지를 할당받기 위해 대기시간이 길다.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="예상-페이지-호출기법">예상 페이지 호출기법<a href="# 예상-페이지-호출기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="예상-페이지-호출기법">예상 페이지 호출기법<a href="#예상-페이지-호출기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>프로세스에 의해 요청될 페이지나 세그먼트를 미리 예측하여 프로세스가 요구하기 전에 주기억장치로 적재시키는 전략</li>
 <li>예측 결정이 올바라야 실행시간이 감소한다.</li>
@@ -1008,7 +1072,7 @@
 <ul>
 <li>2차 기회 페이지 교체</li>
 <li>가장 오랫동안 주기억장치에 있던 페이지 중 자주 사용되는 페이지의 교체를 방지하기 위한 것</li>
-<li>FIFO 기법의 단점을 보완한 기법</li>
+<li>FIFO 기법의 단점을 보완한 기  법</li>
 <li>Second Chance 기법</li>
 <li>각 페이지마다 참조 비트를 두고 1일 경우 참조 비트를 0으로 바꿔 FIFO 리스트의 맨 마지막으로 이동시킨다.</li>
 </ul>
@@ -1061,7 +1125,7 @@
 <li>한 프로세스에 할당된 프레임 수는 증가한다.</li>
 <li>자신의 페이지 부재율을 조정할 수 없다.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="지 역-교체">지역 교체<a href="#지역-교체" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="지역-교체">지역 교체<a href="#지역-교체" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>각 프로세스가 그 프로세스에 할당된 프레임 중에서 하나를 선택해서 그 프레임을 사용할 수 있도록 해준다.</li>
 <li>프로세스에 할당된 프레임 수는 변하지 않는다.</li>
@@ -1142,7 +1206,7 @@
 <ul>
 <li>한 프로세스가 CPU를 할당 받으면 다른 프로세스는 CPU를 점유하지 못하는 기법</li>
 <li>우선순위, FIFO, SJF, HRN, 기한부 알고리즘</li>
-<li>모든 프로세스에 공정하고 응답시간이 예측 가능</li>
+<li>모든 프로세스  에 공정하고 응답시간이 예측 가능</li>
 </ul>
 <h1>스케줄링 알고리즘</h1>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="기한부-스케줄링">기한부 스케줄링<a href="#기한부-스케줄링" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -1153,7 +1217,7 @@
 <ul>
 <li>우선순위가 높은 것에 먼저 CPU를 할당하는 방식</li>
 <li>FIFO 원리</li>
-<li>기아현상 발생을 방지하기위해 우선순위를 높 이는 에이징 기법이 있다.</li>
+<li>기아현상 발생을 방지하기위해 우선순위를 높이는 에이징 기법이 있다.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="fcfs">FCFS<a href="#fcfs" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="sjf">SJF<a href="#sjf" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -1391,7 +1455,7 @@
 <ul>
 <li>물리적 순서에 따라 저장</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="인덱스-순차파일">인덱스 순차파일<a href="#인덱스-순차파일" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="인덱스-  순차파일">인덱스 순차파일<a href="#인덱스-순차파일" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>레코드를 키에 따라서 논리적 순서대로 저장하고 시스템은 각 레코드의 실제 주소가 저장된 색인을 관리</li>
 <li>디스크에 적용되는 방식, 테이프 사용 불가</li>
@@ -1520,7 +1584,7 @@
 <li>i-node 블록: 각 파일에 대한 metadata가 기록된 고정된 크기의 구조체 블록<!-- -->
 <ul>
 <li>파일 소유자 사용번호, 그룹번호</li>
-<li>  파일의 종류</li>
+<li>파일의 종류</li>
 <li>데이터 블록의 주소</li>
 <li>파일의 크기</li>
 <li>파일이 생성, 사용, 변경된 시간</li>
@@ -1613,7 +1677,7 @@
 </ul>
 <h1>배열</h1>
 <ul>
-<li>같은 자료형과 같은 크기를 가진 원  소가 순서를 가지고 만들어진 집합</li>
+<li>같은 자료형과 같은 크기를 가진 원소가 순서를 가지고 만들어진 집합</li>
 <li>인덱스에 의해 참조</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="순서-리스트">순서 리스트<a href="#순서-리스트" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -1630,7 +1694,7 @@
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="주소-저장">주소 저장<a href="#주소-저장" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>행 우선: 시작주소 + (행 <em>전체 열 크기 + 열)</em> 원소 크기</li>
-<li>열 우선: 시작주소 + (열 <em>전체 행 크기 + 행)</em> 원소 크기</li>
+<li>열 우선: 시작주 소 + (열 <em>전체 행 크기 + 행)</em> 원소 크기</li>
 </ul>
 <h1>희소행렬</h1>
 <ul>
@@ -1774,7 +1838,7 @@
 <li>후위 순회: 좌 우 루트</li>
 <li>전위 순회: 루트 좌 우</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="이진-트리-정렬">이진 트리 정렬<a href="#이진-트리-정렬" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id=" 이진-트리-정렬">이진 트리 정렬<a href="#이진-트리-정렬" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>루트부터 비교하면서 작으면 왼쪽 자식, 크면 오른쪽 자식</li>
 <li>완성되면 중위 순회</li>
@@ -1952,7 +2016,7 @@
 <li>1968 - ALOHA: 하와이 대학 최초의 무선 패킷 교환 통신망</li>
 <li>1974 - SNA: 체계화된 컴퓨터 통신망, System Network Architecture</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="컴퓨터-통신망의-목적">컴퓨터 통신망의 목적<a href="#컴퓨터-통신망의-목적" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="컴퓨터-통신망의-목적">컴퓨터 통신망 의 목적<a href="#컴퓨터-통신망의-목적" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>자원의 공유와 신뢰도 향상</li>
 <li>처리 기능의 부산과 프로세스 간 통신제공</li>
@@ -1969,7 +2033,7 @@
 <li>음성</li>
 <li>이미지</li>
 <li>영상</li>
-<li>멀티미  디어</li>
+<li>멀티미디어</li>
 </ul>
 <h1>데이터 통신 시스템</h1>
 <ul>
@@ -2107,7 +2171,7 @@
 <li>Simplex</li>
 <li>라디오, TV, 전광판</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="반이중">반이중<a href="#반이 중" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="반이중">반이중<a href="#반이중" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Half-duplex</li>
 <li>양방향 전송이 가능하지만 동시에는 불가능</li>
@@ -2386,7 +2450,7 @@
 </ul>
 <h1>다중화기</h1>
 <ul>
-<li>하나의 전송로에 여러 개 의 데이터 신호를 혼합시켜 전송하는 방법</li>
+<li>하나의 전송로에 여러 개의 데이터 신호를 혼합시켜 전송하는 방법</li>
 <li>다수의 저속회선 사용자를 하나의 고속전용선에 접속시켜 통신망을 이용가능하게 한다.</li>
 <li>시분할 다중화, 주파수분할 다중화 방식이 있다.</li>
 </ul>
@@ -2421,7 +2485,7 @@
 <ul>
 <li>입출력 기능</li>
 <li>전송제어 기능</li>
-<li> 기억 기능: 일시적 데이터 저장</li>
+<li>기억 기능: 일시적 데이터 저장</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="신호변환장치의-주요기능">신호변환장치의 주요기능<a href="#신호변환장치의-주요기능" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -2443,7 +2507,7 @@
 <ul>
 <li>공중전화교환망 (PSTN)</li>
 <li>수화기를 모뎀 위에 얹어 놓으면 송화기에서 들리는 소리를 매개로 데이터를 주고 받게되는 원리</li>
-<li>주파수 편이변조 방식을 사용(FSK)</li>
+<li>주파수 편이변조   방식을 사용(FSK)</li>
 <li>저속 데이터 전송(600bps, 1200bps)</li>
 </ul>
 <h1>전처리장치</h1>
@@ -2456,7 +2520,7 @@
 <ul>
 <li>polling / selecting</li>
 <li>폴링과 선택에서 송수신을 권유하는 것</li>
-<li>하나의 통신회선상에 3개 이상의 단말이 있는 분기회선에 있어 단말기 상호간 데이터 링크를 확립하는 방식</li>
+<li>하나의 통신회선상에 3개 이상의 단말이 있는 분기회선에 있어 단말기 상호간 데이터링크를 확립하는 방식</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="라운드-로빈-방식">라운드 로빈 방식<a href="#라운드-로빈-방식" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -2474,7 +2538,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="부-네트워크">부 네트워크<a href="#부-네트워크" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>대규모 네트워크를 구성하는 데 있어 개별적인 소규모 네트워크를 의미</li>
+<li>대규모 네트  워크를 구성하는 데 있어 개별적인 소규모 네트워크를 의미</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="통신제어-구조">통신제어 구조<a href="#통신제어-구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -2505,7 +2569,7 @@
 <li>최적의 경로선택 및 제어</li>
 <li>보안</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="통신-기능의-종류">통신 기능의 종류<a href="#통신-기능의-종류" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="통신-기능의-종류">통신 기능의 종 류<a href="#통신-기능의-종류" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>온라인 처리 방식</li>
 <li>오프라인 처리 방식</li>
@@ -2521,7 +2585,7 @@
 <li>네트워크 의존계층: 물 데 네</li>
 <li>전송계층: 전</li>
 <li>응용지향계층: 세 표 응</li>
-<li>상위 계층에서 하위계층으로 데이터가 전 달되면서 헤더정보가 추가 전달</li>
+<li>상위 계층에서 하위계층으로 데이터가 전달되면서 헤더정보가 추가 전달</li>
 <li>하위 계층에서 상위계층으로 데이터가 전달되면서 헤더정보가 삭제</li>
 <li>헤더가 삭제되는 과정을 decapsulation</li>
 </ul>
@@ -2550,7 +2614,7 @@
 <ul>
 <li>정규응답모드: NRM, 종국은 전송 전 반드시 주국의 허가가 필요</li>
 <li>비동기응답모드: ARM, 채널이 사용되지 않으면 주국 허가 없이 전송 가능</li>
-<li>  비동기균형모드: ABM, 모든 지국이 동등하며 점대점으로 연결된 조합국만 사용</li>
+<li>비동기균형모드: ABM, 모든 지국이 동등하며 점대점으로 연결된 조합국만 사용</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_pIE1" id="프레임">프레임<a href="#프레임" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
@@ -2578,7 +2642,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="fcc">FCC<a href="#fcc" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>미국연 방통신위원회</li>
+<li>미국연방통신위원회</li>
 </ul>
 <blockquote>
 <p><strong>클록 드리프트</strong>
@@ -2608,7 +2672,7 @@
 <li>물리적인 전용선은 하나이지만 여러 응용 프로그램이 서로 나눠 사용하기 위해 도출된 개념</li>
 <li>MAC 주소: 데이터 링크 계층 주소 (노드 대 노드)</li>
 <li>IP 주소: 네트워크 계층 주소(호스트 대 호스트)</li>
-<li>PORT 주소: 전송계층 주소(프로세  스 대 프로세스)</li>
+<li>PORT 주소: 전송계층 주소(프로세스 대 프로세스)</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="기호-주소">기호 주소<a href="#기호-주소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -2623,7 +2687,7 @@
 <li>오류에 중복성을 부가하는 방식: 패리티 비트, 해밍 코드, 순환 중복 검사</li>
 <li>전송 방법에 중복성을 부가하는 방식: 반송대조 방식(에코 검사), 3연속 전송방식</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="오류-정정-방식">오류 정정 방식<a href="#오류-정정-방식" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="오류-정정-방식">오류 정정  방식<a href="#오류-정정-방식" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>자동반복요청 방식(ARQ)</li>
 <li>순방향 오류정정 방식(FEC)</li>
@@ -2661,7 +2725,7 @@
 <li>가장 간단한 형태며 한 번에 1개의 프레임만 전송 가능</li>
 <li>거리가 멀 수록 전송 효율이 떨어짐</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="슬라이딩-윈도우">슬라이딩 윈도우<a href="#슬라이딩-윈 도우" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="슬라이딩-윈도우">슬라이딩 윈도우<a href="#슬라이딩-윈도우" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>여러 개의 프레임을 전송함으로써 효율을 높인 방식</li>
 <li>송신 측은 수신 측으로부터 확인 메세지를 받지 않더라도 윈도우의 한도까지 계속 프레임을 전송할 수 있으므로 전송 효율이 높다.</li>
@@ -2678,7 +2742,7 @@
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="aimd">AIMD<a href="#aimd" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Additive Increase/Multiplicative Decrease</li>
-<li>패킷을 하나씩 보내고 문제없으면 윈도우의 크기를 1씩 증가시키면서 전송하는 방법</li>
+<li>패킷을 하나씩 보내고 문제없으면 윈도우의 크기를 1씩 증가시키면서 전송하 는 방법</li>
 <li>실패 또는 타임아웃시 크기를 절반으로 감소</li>
 <li>네트워크가 혼잡해진 다음에야 대역폭을 줄이는 방법</li>
 </ul>
@@ -2691,7 +2755,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="빠른-재전송">빠른 재전송<a href="#빠른-재전송" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>잘 도착한 마지막  패킷의 순번을 ACK에 실어서 보낸다.</li>
+<li>잘 도착한 마지막 패킷의 순번을 ACK에 실어서 보낸다.</li>
 <li>순번이 3번 중복되면 재전송을 하고, 윈도우 크기를 줄인다.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="빠른-회복">빠른 회복<a href="#빠른-회복" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -2758,7 +2822,7 @@
 <li>송신 프로세스와 수신 프로세스를 직접 연결하는 end-to-end 통신 기능 제공</li>
 <li>전송오류율, 전송속도, 흐름제어, 목적지 주소 지정, 메세지 우선권, 무결성 보장, 다중화</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_pIE1" id="네트워크-계층-1">네트워크 계층<a href="#네트  워크-계층-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_pIE1" id="네트워크-계층-1">네트워크 계층<a href="#네트워크-계층-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>라우팅 문제를 처리</li>
 <li>전송 데이터를 패킷이라고 부른다.</li>
@@ -2775,7 +2839,7 @@
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="물리-계층-1">물리 계층<a href="#물리-계층-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>물리적 인터페이스</li>
-<li>비트열의 데이터를 받아 전기적 신호로 변환 후 전송매체를 통해 수신측에 전송</li>
+<li>비트열의 데이터  를 받아 전기적 신호로 변환 후 전송매체를 통해 수신측에 전송</li>
 <li>DTE, DCE 간의 인터페이스</li>
 <li>RS-232C</li>
 </ul>
@@ -2907,7 +2971,7 @@ piggybacking, 수신한 패킷에 대한 확인 응답을 전송하는 패킷에
 <ul>
 <li>IEEE 802.4</li>
 <li>물리적으로는 버스구조, 논맂거으로는 링형태의 구성</li>
-<li>부하 증가에 딸느  영향이 적다.</li>
+<li>부하 증가에 딸느 영향이 적다.</li>
 <li>부하가 적어도 기본적인 오버헤드</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="링형-lan">링형 LAN<a href="#링형-lan" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -2947,14 +3011,14 @@ piggybacking, 수신한 패킷에 대한 확인 응답을 전송하는 패킷에
 <li>리피터: 케이블에 전송되는 전기적인 데이터 신호를 재생하고 중계하는 장치, 물리계층</li>
 <li>허브: 클라이언트들을 네트워크에 연결하는 가장 기본적인 공유연결장치, 물리계층</li>
 <li>브리지: 서로 다른 두 네트워크를 연결할 때 사용하는 가장 기본적인 장치, 물리 데이터링크 계층</li>
-<li>라우터: 서로 다른 세그먼트 간에 브로드캐스트 패킷이 전달되지 않도록 트래픽을 분리하는 역할 및 원격지에 있는 랜과 랜을 연결해주는 역할, 물리 데이터링크, 네트워크 계층</li>
+<li>라우터: 서로 다른 세그먼트 간에 브로드캐스트 패킷이 전달되지 않 도록 트래픽을 분리하는 역할 및 원격지에 있는 랜과 랜을 연결해주는 역할, 물리 데이터링크, 네트워크 계층</li>
 <li>LAN 스위치: 데이터 전송 시 멀티미디어 데이터가 많은 경우 각 노드 간에 패킷 재전송 작업이 많이 발생하여 네트워크 성능이 떨어지고 대역폭 부족이 발생하는데 이런 문제점을 해결하기 위한 장비</li>
 <li>게이트웨이: 사용하는 매체나 각종 프로토콜이 일치하지 않는 서로 다른 네트워크 구조의 네트워크 사용자끼리도 통신이 가능하도록 해주는 장치</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="ciu">CIU<a href="#ciu" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Computer Interface Unit</li>
-<li>컴퓨터 접속장치 및 네트  워크 연결장비</li>
+<li>컴퓨터 접속장치 및 네트워크 연결장비</li>
 <li>랜 카드, 허브, 브리지, 라우터, 스위치, 게이트웨이 장비 등</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_pIE1" id="biu">BIU<a href="#biu" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -2981,7 +3045,7 @@ piggybacking, 수신한 패킷에 대한 확인 응답을 전송하는 패킷에
 <ul>
 <li>IEEE 802.3에서 제정한 1-persistent CSMA/CD 방식의 근거리 통신망 환경에 관해 규정한 표준안</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_pIE1" id="8023-이더넷-프레임-구조">802.3 이더넷 프레임 구 조<a href="#8023-이더넷-프레임-구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_pIE1" id="8023-이더넷-프레임-구조">802.3 이더넷 프레임 구조<a href="#8023-이더넷-프레임-구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>필드 크기는 바이트</li>
 <li>Preamble, Start delimiter, destination addr, source addr, length, data, pad, checksum</li>
