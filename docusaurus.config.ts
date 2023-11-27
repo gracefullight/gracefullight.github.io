@@ -50,7 +50,6 @@ const config: Config = {
           blogSidebarCount: 10,
           feedOptions: {
             type: "all",
-            copyright: `Copyright © ${new Date().getFullYear()} Eunkwang Shin.`,
             limit: 10,
           },
           remarkPlugins: [remarkMath],
@@ -225,6 +224,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
+      copyright: `Copyright © ${new Date().getFullYear()} Eunkwang Shin.`,
       links: [
         {
           title: "Support Me",
