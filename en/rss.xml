@@ -8,7 +8,6 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <copyright>Copyright © 2023 Eunkwang Shin.</copyright>
         <item>
             <title><![CDATA[IELTS Speaking 기출]]></title>
             <link>https://gracefullight.dev/en/2023/11/16/ielts-speaking-tests</link>
