@@ -150,6 +150,37 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://cdn.jsdelivr.net",
+      },
+    },
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Person",
+        name: "Eunkwang Shin",
+        url: "https://gracefullight.dev",
+        logo: "https://gracefullight.dev/img/apple-touch-icon.png",
+        image: "https://avatars.githubusercontent.com/u/11773683?v=4",
+        email: "mailto:gracefullight.dev@gmail.com",
+        jobTitle: "FullStack JavaScript Developer",
+        nationality: "Korean",
+        sameAs: [
+          "https://github.com/gracefullight",
+          "https://linkedin.com/in/gracefullight",
+        ],
+      }),
+    },
+  ],
+
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
@@ -174,36 +205,6 @@ const config: Config = {
       {
         name: "facebook-domain-verification",
         content: "uelupjqqsm5egzlhy1aev2rfxow5yt",
-      },
-    ],
-    headTags: [
-      {
-        tagName: "link",
-        attributes: {
-          rel: "preconnect",
-          href: "https://cdn.jsdelivr.net",
-        },
-      },
-      {
-        tagName: "script",
-        attributes: {
-          type: "application/ld+json",
-        },
-        innerHTML: JSON.stringify({
-          "@context": "http://schema.org",
-          "@type": "Person",
-          name: "Eunkwang Shin",
-          url: "https://gracefullight.dev",
-          logo: "https://gracefullight.dev/img/apple-touch-icon.png",
-          image: "https://avatars.githubusercontent.com/u/11773683?v=4",
-          email: "mailto:gracefullight.dev@gmail.com",
-          jobTitle: "FullStack JavaScript Developer",
-          nationality: "Korean",
-          sameAs: [
-            "https://github.com/gracefullight",
-            "https://linkedin.com/in/gracefullight",
-          ],
-        }),
       },
     ],
     // ? https://www.algolia.com/apps/T6L0PPYQJB/dashboard
