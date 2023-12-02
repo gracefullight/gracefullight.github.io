@@ -2,13 +2,5 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": "."
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "target": "ES2021",
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext"
-    },
-    "transpileOnly": true
   }
 }
