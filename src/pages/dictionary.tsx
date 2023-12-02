@@ -53,7 +53,7 @@ export default function DictionaryPage() {
   };
 
   return (
-    <Layout title="사전" noFooter>
+    <Layout>
       <div style={{ padding: "2.5rem" }}>
         <div
           style={{ marginBottom: "0.5rem", display: "flex", gap: "0.25rem" }}

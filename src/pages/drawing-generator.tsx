@@ -173,7 +173,7 @@ export default function DrawingGeneratorPage() {
   };
 
   return (
-    <Layout title="그림대화">
+    <Layout>
       <div
         style={{
           display: "flex",
