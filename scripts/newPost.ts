@@ -11,7 +11,8 @@ title: %s
 date: %s
 description: %s
 authors: me
-tags: []
+tags: 
+  - me
 ---\n`;
 
 export class NewPost extends Command {
