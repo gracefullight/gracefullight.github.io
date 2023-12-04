@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.908ea20d.css">
-<script src="/en/assets/js/runtime~main.e59b16a8.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.16c7c49b.js" defer="defer"></script>
 <script src="/en/assets/js/main.9903a4e9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -1496,18 +1496,294 @@ Do you think fixing things is a necessary skill?</p>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="참조">참조<a href="#참조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://yourielts.net/prepare-for-ielts/ielts-speaking/ielts-speaking-part-1-topics-and-questions-september-december-2023" target="_blank" rel="noopener noreferrer">YourIELTS Part1</a></li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/ielts/">ielts</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="데이터베이스 챕터 정리"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/11/11/professional-engineer-database/">기술사 - 데이터베이스</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-11-11T02:49:34.519Z" itemprop="datePublished">November 11, 2023</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="db-개요">DB 개요<a href="#db-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/ielts/">ielts</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="데이터베이스 챕터 정리"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/11/11/professional-engineer-database/">기술사 - 데이터베이스</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-11-11T02:49:34.519Z" itemprop="datePublished">November 11, 2023</time> · <!-- -->18 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="db-개요">DB 개요<a href="#db-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="데이터정보지식지혜">데이터/정보/지식/지혜<a href="#데이터정보지식지혜" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <p><img loading="lazy" src="https://www.systems-thinking.org/dikw/dikw1.gif" alt="Data, Informatino, Knowledge, and Wisdom" class="img_LXij"></p>
-<h3 class="anchor anchorWithStickyNavbar__YrT" id="dbdb-system">DB/DB system<a href="#dbdb-system" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__YrT" id="데이터-독립성">데이터 독립성<a href="#데이터-독립성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <ul>
-<li>논리적 독립성</li>
-<li>물리적 독립성</li>
+<li>지혜: 지식과 경험이 축적된 상태/능력</li>
+<li>지식: 의사결정에 이용된 정보, 부가가치 창출, 정보의 추상화, 일반화</li>
+<li>정보: 관계에 따라 의미가 부여된 데이터, 구조화된 데이터의 집합</li>
+<li>데이터: 그 자체로는 의미가 없음, 식별 및 기록이 가능한 단순한 사실</li>
+</ul>
+<p><code>데이터 --관계의 이해--&gt; 정보 --패턴의 이해--&gt; 지식 --원리의 이해--&gt; 지혜</code></p>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="dbdb-system">DB/DB system<a href="#dbdb-system" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>한 조직의 여러 응용시스템이 <strong>공유</strong>하기 위해 최소의 중복으로 <strong>통합</strong>, <strong>저장</strong>된 <strong>운영</strong> 데이터의 집합
+통저운공</p>
+</blockquote>
+<ul>
+<li>통합 데이터: Integrated Data, 최소 중복, 통제된 중복</li>
+<li>저장 데이터: Stored Data, 컴퓨터가 접근 가능한 매체에 저장</li>
+<li>운영 데이터: Operational data, 조직의 운영에 꼭 필요한 필수적인 데이터</li>
+<li>공유 데이터: Shared Data, 여러 응용 프로그램이 공동으로 접근</li>
+<li>실시간 접근, 계속적인 변화, 동시 공유, 내용에 의한 참조</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar__YrT" id="기본-구조">기본 구조<a href="#기본-구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>외부 단계: Exteranl Level, 외부스키마</li>
+<li>개념 단계: Coceptual Level, 개념스키마</li>
+<li>내부 단계: Internal Level, 내부스키마</li>
+<li>데이터베이스</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar__YrT" id="데이터-독립성">데이터 독립성<a href="#데이터-독립성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<blockquote>
+<p>상위 단계의 스키마 정의에 영향을 주지 않으면서 어떤 단계의 스키마를 변경할 수 있는 것</p>
+</blockquote>
+<ul>
+<li>논리적 독립성: 외부 스키마나 응용 프로그램을 변경하지 않으면서 개념 스키마를 변경할 수 있는 성질</li>
+<li>물리적 독립성: 개념 스키마를 변경하지 않으면서 내부 스키마를 변경할 수 있는 성질</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="dbms">DBMS<a href="#dbms" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>다수의 사용자들이 데이터베이스 내의 데이터를 접근할 수 있도록 해주는 관리 소프트웨어 도구들의 집합</p>
+</blockquote>
+<ul>
+<li>데이터 저장과 개발 및 유지보수 측면에서 중복성의 통제</li>
+<li>사용자 간 데이터 공유</li>
+<li>권한 관리</li>
+<li>다양한 사용자에게 다양한 형태의 인터페이스 제공</li>
+<li>데이터 사양에 존재하는 복잡한 관련성 표현</li>
+<li>무결성 보장</li>
+<li>백업 복구 기능 제공</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar__YrT" id="db-언어">DB 언어<a href="#db-언어" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>DML: Data Manipulation Language,<!-- -->
+<ul>
+<li>SELECT, INSERT, UPDATE, DELETE</li>
+</ul>
+</li>
+<li>DDL: Data Definition Language<!-- -->
+<ul>
+<li>CREATE, ALTER, DROP</li>
+</ul>
+</li>
+<li>DCL: Data Control Language<!-- -->
+<ul>
+<li>GRANT, REVOKE</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar__YrT" id="품질관리-rr">품질관리 R&amp;R<a href="#품질관리-rr" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="db-설계">DB 설계<a href="#db-설계" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="키">키<a href="#키" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>릴레이션 튜플을 유일하게 식별할 수 있는 속성들의 집합</p>
+</blockquote>
+<ul>
+<li>유일성</li>
+<li>최소성</li>
+<li><code>결정자 도출 --유일성 검증--&gt; 슈퍼키선정 --최소성 확인--&gt; 후보키 선정 --엔티티 대표성--&gt; 기본키 결정</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="데이터-무결성">데이터 무결성<a href="#데이터-무결성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>개체 무결성: 기본키, 모든 개체는 식별자를 정의하고 식별자 값은 NonNull 및 유일해야함</li>
+<li>참조 무결성: 외래키, 외래키 값  은 기본키로 사용된 릴레이션의 기본키 값이거나 Null</li>
+<li>속성 무결성: 컬럼, 지정된 데이터 형식 만족, CHAR, DATE</li>
+<li>사용자 정의: 데이터, 사용자가 Buniness Rule(업무규칙)에 따라 정의, CHECK, DEFAULT, 트리거 등</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="데이터-모델링">데이터 모델링<a href="#데이터-모델링" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>개논물</p>
+</blockquote>
+<ul>
+<li>개념적 설계</li>
+<li>논리적 설계</li>
+<li>스키마 정제</li>
+<li>물리적 설계</li>
+<li>응용 및 보안 설계</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="이상현상">이상현상<a href="#이상현상" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>릴레이션 데이터의 중복관리로 인해 데이터를 조작할 때 발생하는 사이드이펙트</p>
+</blockquote>
+<ul>
+<li>삽입이상: 릴레이션 내에 하나의 튜플을 삽입하려고 할 때 불필요한 데이터까지 삽입해야하는 현상</li>
+<li>삭제이상: 릴레이션 내에 하나의 튜플을 삭제하려고 할 때 유지되어야할 정보까지 삭제되는 연쇄 삭제 현상</li>
+<li>갱신이상: 중복된 튜플 중에서 일부 튜플의 속성을 변경시키려고 할 때 정보의 모순성이 발생하는 현상</li>
+<li>원인 및 해결방안: 속성들 간의 종속성 분석을 통해 기본적으로 하나의 종속성이 하나의 릴레이션으로 표현되도록 무손실 분해 (Decomposition)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="정규화">정규화<a href="#정규화" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>이상현상을 야기하는 속성 간의 종속성을 제거하기 위해 릴레이션을 작은 여러 릴레이션으로 무손실 분해하는   과정
+데이터 일관성, 중복의 최소화, 구조의 안정성을 최대한 확보하기 위한 방법</p>
+</blockquote>
+<p>각 단계가 끝나면 <strong>N차 정규형</strong>이 된다.</p>
+<ul>
+<li>1차 정규화: 도메인 분해</li>
+<li>2차 정규화: 부분함수 종속성 제거</li>
+<li>3차 정규화: 이행함수 종속성 제거</li>
+<li>BCNF 정규화: 나중에 추가됨</li>
+<li>4차 정규화: 다치종속성 제거</li>
+<li>5차 정규화: 조인종속성 제거</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="연결함정">연결함정<a href="#연결함정" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>데이터 모델링 시 개체와 개체 사이에 부여하는 관계성 집합의 의미가 모호하여 원하는 결과를 얻을 수 없거나
+향후 업무처리에 영향을 미치게 되는 ER모델의 문제점</p>
+</blockquote>
+<ul>
+<li>부채꼴 함정: Fan Trap, 개체집합(Entity Set) 사이에 관계성 집합(Relation Set)이 정의되어 있기는하지만 관계성 예시가 모호한 경우</li>
+<li>균열 함정: Chasm Trap, 개체집합 사이에 관계성 집합이 정의되어 있기는 하지만 일부 개체집합과 개체집합 사이에 관계성이 존재하지 않는 경우</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="반정규화">반정규화<a href="#반정규화" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>정규화된 엔티티 타입, 속성, 관계를 시스템의 성능향상, 개발과 운영의 편의를 위해 데이터 모델을 통합하는 프로세스</p>
+</blockquote>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="db-운영">DB 운영<a href="#db-운영" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="트랜잭션">트랜잭션<a href="#트랜잭션" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>데이터의 정확한 일관성과 무결성을 보장하기 위해 완전히 종료해야하는 데이터베이스 처리의 논리적 작업 단위(Logical Unit of Work)</p>
+</blockquote>
+<ul>
+<li>원자성: Atomicity, 분해가 불가능한 수행 단위로 완전히 수행 또는 수행되지 않음</li>
+<li>일관성: Consistency, 트랜잭션이 성공적으로 완료되면 언제나 모순이 없는 상태 유지, 무결성 제약 조건</li>
+<li>고립성: Isolation, 트랜잭션 실행 중 중간 연산 결과는 다른 트랜잭션 접근 불가</li>
+<li>영속성: Durability, 성공적으로 완료된 트래잭션은 어떤 고장에도 손실 되어서는 안됨</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="트랜잭션-상태-전이">트랜잭션 상태 전이<a href="#트랜잭션-상태-전이" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>실행 상태: Active</li>
+<li>부분 완료: Partially Committed</li>
+<li>완료 상태: Committed</li>
+<li>실패 상태: Failed</li>
+<li>철회 상태: Aborted</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="동시성-제어">동시성 제어<a href="#동시성-제어" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>다중 사용자 환경을 지원하는 데이터베이스 시스템에서 여러 트랜잭션들이 성공적으로 동시에 실행될 수 있도록 지원하는 기능</p>
+</blockquote>
+<ul>
+<li>트랜잭션 스케쥴: 각 트랜잭션을 구성하는 연산들이 시스템에서 시간에 따라 실행되는 순서</li>
+<li>직렬가능성: Serializability, 트랜잭션들을 병행처리한 결과가 트랜잭션들을 순차적으로 처리한 결과와 같은 것</li>
+<li>갱신분실 문제: Lost update problem<!-- -->
+<ul>
+<li>트랜잭션이 동일 데이터를 동시에 갱신할 경우 발생하는 문제</li>
+<li>이전 트랜잭션이 데이터를 갱신한 후 트랜잭션이 종료하기 전에 이후 트랜잭션이 갱신 값을 덮어 쓰는 경우 오류 발생</li>
+</ul>
+</li>
+<li>불일치 문제: Inconsistency analysis problem<!-- -->
+<ul>
+<li>다중 사용자 트랜잭션들이 동시에 실행될 때 DB가 일관성 없는 모순된 상태로 남는 문제</li>
+</ul>
+</li>
+<li>연쇄복귀 문제: Cascading rollback problem<!-- -->
+<ul>
+<li>복수의 트랜잭션이 데이터 공유 시 특정 트랜잭션이 처리를 취소할 경우 다른 트랜잭션이 처리한 부분에 대해 취소 불가능</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="동시성-제어-기법">동시성 제어 기법<a href="#동시성-제어-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Locking<!-- -->
+<ul>
+<li>트랜잭션이 사용하는 자원에 대해 상호배제(Mutual Exclusive) 기능을 제공하는 기법</li>
+<li>상호배제는 특정 트랜잭션이 데이터 항목에 대해 락을 설정하면 잠금을 설정한 트랜잭션이 언락될 때까지 데이터를 독점적으로 사용</li>
+</ul>
+</li>
+<li>Time-stamp Ordering<!-- -->
+<ul>
+<li>트랜잭션이 시스템에 입력될 때 타임스탬프 부여, 트랝개션의 수행 순서를 제어</li>
+<li>타임스탬프 값이 나중인 트랜잭션이 타임스탬프 값이 우선인 트랜잭션에 접근하고 있는 데이터 항목에 대한 접근을 요청하는 경우 롤백 당함</li>
+<li>직렬성 보장</li>
+<li>데드락 방지</li>
+</ul>
+</li>
+<li>낙관적 기법<!-- -->
+<ul>
+<li>트랜잭션이 수행되는 동안 어떠한 검사도 실행하지 않음</li>
+<li>트랜잭션 수행 마지막에 갱신 사항들이 직렬가능성을 위반하는 경우가 있는지만 검사하여 이상이 없을 경우 트랜잭션을 확정</li>
+</ul>
+</li>
+<li>낙관적 기법 단계<!-- -->
+<ul>
+<li>Read Phase: DB를 읽고 개인적인 복사 로 갱신, 트랜잭션 갱신은 모두 임시 갱신파일에 기록, 다른 트랜잭션에 의해 접근 불가능</li>
+<li>Validation Phase: 가해진 변화가 데이터베이스의 무결성과 일관성에 영향을 주지 않을 것이라는 것을 보장하기 위해 검증됨, 이상 있을 경우 트랜잭션 재시작 및 롤백.</li>
+<li>Write Phase: 변경사항이 영구적으로 DB에 적용됨</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="locking-기법">Locking 기법<a href="#locking-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Shared Lock: 공유 잠금한 트랜잭션은 데이터 항목에 대해 읽기만 가능, 다른 트랜잭션도 읽기 만 실행 가능</li>
+<li>Exclusive Lock: 전용 잠금한 트랜잭션은 데이터 항목에 대해 읽기와 쓰기 모두 가능, 다른 트랜잭션은 읽기/쓰기 불가.</li>
+<li><code>DB -&gt; Table -&gt; Row -&gt; Column</code>: Locking overhead 증가, 자료 공유성 높음.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="2-phase-locking">2 Phase Locking<a href="#2-phase-locking" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>모든 트랜잭션이 lock과 unlock 연산을 확장단계와 수축단계로 구분하여 수행</p>
+</blockquote>
+<ul>
+<li>확장단계: 트랜잭션은 lock만 수행할 수 있고, unlock은 수행할 수 없는 단계</li>
+<li>수축단계: 트랜잭션은 unlock만 수행할 수 있고, lock은 수행할 수 없는 단계</li>
+<li>직렬간으성을 보장할 수 있는 규약으로 가장 많이 사용됨.</li>
+<li>교착상태 발생될 수 있으나 예방과 탐지로 해결.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="2-phase-commit">2 Phase Commit<a href="#2-phase-commit" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>분산 데이터베이 스 환경에서 원자성을 보장하기 위해 분산 트랜잭션에 포함하는 메커니즘
+Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤백하는 기법</p>
+</blockquote>
+<ul>
+<li>Phase 1: 준비 단계<!-- -->
+<ul>
+<li>한 지역노드에서 커밋 요구, Global Coordinator가 Commit Point Site 결정</li>
+<li>Prepare Message 를 전송하고 원격 노드는 Prepare Message Reply</li>
+</ul>
+</li>
+<li>Phase 2: 커밋 단계<!-- -->
+<ul>
+<li>모든 지역 노드가 커밋 준비되었다는 것을 받은 경우 각 노드에 Commit을 명령함</li>
+<li>Global Coordinator가다른 지역 노드로부터 에러 보고를 받을 시 롤백 명령</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar__YrT" id="db-회복">DB 회복<a href="#db-회복" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>장애 발생시 데이터베이스를 장애 발생 이전 데이터베이스의 내용에 모순이 없는 일관된 상태로 복원시키는 것을</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="장애-유형">장애 유형<a href="#장애-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>트랜잭션: Transation Failure, 잘못된 입력, 데이터를 찾을 수 없는경우, 오버플로우, 가용자원 초과 요청 등으로 트랜잭션 동작 불가</li>
+<li>시스템: System Failure, 교착상태로 트랜잭션이 작업 불가, 하드웨어 오작동으로 휘발성 기어장치의 데이터 손실</li>
+<li>미디어: Media Failure, 비휘발성 기억장치(하드디슼) 고장으로 디스크 블록이 붕괴</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="회복-요건">회복 요건<a href="#회복-요건" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>덤프: 데이터베이스 내용을 일정기간마다 다른 저장소에 저 장, 백업정책에 의거하여 다른 디스크 또는 특정 가용 공간에 복사</li>
+<li>로그: 데이터베이스 내용이 변경될 때마다 변경 내용을 로그파일에 실시간 저장</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="회복-기법">회복 기법<a href="#회복-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>지연갱신<!-- -->
+<ul>
+<li>트랜잭션이 부분완료 상태에 이르기 전까지 발생한 모든 변경내용을 로그파일에 기록하고, DB에 저장하는 것을 지연시키는 방법</li>
+<li>트랜잭션 실패시 로그파일의 내용만을 폐기하면 되므로 Undo필요없음</li>
+</ul>
+</li>
+<li>즉시갱신<!-- -->
+<ul>
+<li>변경내용을 DB와 로그파일에 동시에 저장</li>
+<li>트랜잭션 수행 도중 실패한 경우 로그파일의 내용을 참조하여 변경 이전 값으로 수정하는 Undo과정 필요</li>
+</ul>
+</li>
+<li>검사점: Check Point<!-- -->
+<ul>
+<li>변경내용을 로그파일에 기록하고, 일정시간마다 체크포인트를 발생시켜 그때까지의 변경사항을 디스크에 저장, 로그파일에는 체크포인트를 기록</li>
+<li>장애시 체크포인트 이전 처리된 트랜잭션은 회복작업에서 제외하고, 이후 처리된 트랜잭션에 대해서만 Redo 또는 Undo 수행.</li>
+<li>Check point interval 관리 필요</li>
+</ul>
+</li>
+<li>그림자페이지: Shadow Page Table<!-- -->
+<ul>
+<li>트랜잭션 실행 중 현재 페이지 테이블과 그림자 페이지 테이블을 이용</li>
+<li>현재 페이지 테이블은 메인메모리, 그림자 페이지 테이블은 하드디스크에 저장</li>
+<li>트랜잭션 변경 연산이 수행되면 현재 페이지의 테이블 내용만 변경하고 그림자 페이지 테이블의 내용은 변경하지 않음</li>
+<li>트랜잭션이 성공적으로 완료될 경우, 현재 페이지 테이블의 내용을 그림자 페이지 테이블의 내용으로 저장</li>
+<li>데이터 단편화 및 그림자 페이지 테이블 복사, 쓰기에 오버헤드 발생</li>
+</ul>
+</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="참조">참조<a href="#참조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://dataonair.or.kr/db-tech-reference/d-guide/da-guide/" target="_blank" rel="noopener noreferrer">DA 가이드: 한국데이터산업진흥원</a></li>
@@ -1645,7 +1921,7 @@ Do you think fixing things is a necessary skill?</p>
 <li>Threat Management System</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="융합-보안">융합 보안<a href="#융합-보안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__YrT" id="무선네트워크-보안">무선네트워크 보안<a href="#무선네트워크-  보안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="무선네트워크-보안">무선네트워크 보안<a href="#무선네트워크-보안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="단말보안">단말보안<a href="#단말보안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar__YrT" id="dlp">DLP<a href="#dlp" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <ul>
@@ -1684,7 +1960,7 @@ Do you think fixing things is a necessary skill?</p>
 <li>e-Discovery</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="유비쿼터스-컴퓨팅-보안">유비쿼터스 컴퓨팅 보안<a href="#유비쿼터스-컴퓨팅-보안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__YrT" id="개인정보보호">개인정 보보호<a href="#개인정보보호" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__YrT" id="개인정보보호">개인정보보호<a href="#개인정보보호" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="정보보안-관련-법">정보보안 관련 법<a href="#정보보안-관련-법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/정보처리/">정보처리</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="소프트웨어 공학 챕터 정리"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/10/28/professional-engineer-sw-engineering/">기술사 - 소프트웨어 공학</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-10-28T14:15:09.237Z" itemprop="datePublished">October 28, 2023</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="sw-공학-개요">SW 공학 개요<a href="#sw-공학-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="sw-개념">SW 개념<a href="#sw-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="sw-위기">SW 위기<a href="#sw-위기" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -1752,7 +2028,7 @@ Do you think fixing things is a necessary skill?</p>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="참조">참조<a href="#참조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://www.egovframe.go.kr/home/sub.do?menuNo=5" target="_blank" rel="noopener noreferrer">전자정부프레임워크 교육신청</a></li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/정보처리/">정보처리</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="프로젝트관리 챕터 정리"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/10/22/professional-engineer-project-management/">기술사 - 프로젝트관리</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-10-21T16:08:43.042Z" itemprop="datePublished">October 21, 2023</time> · <!-- -->2 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="프로젝트-관리-개요">프  로젝트 관리 개요<a href="#프로젝트-관리-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/정보처리/">정보처리</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="프로젝트관리 챕터 정리"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/10/22/professional-engineer-project-management/">기술사 - 프로젝트관리</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-10-21T16:08:43.042Z" itemprop="datePublished">October 21, 2023</time> · <!-- -->2 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="프로젝트-관리-개요">프로젝트 관리 개요<a href="#프로젝트-관리-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="프로젝트-실패-현황">프로젝트 실패 현황<a href="#프로젝트-실패-현황" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="프로젝트-실패-원인분석">프로젝트 실패 원인분석<a href="#프로젝트-실패-원인분석" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__YrT" id="프로젝트-성공-요인">프로젝트 성공 요인<a href="#프로젝트-성공-요인" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -1803,7 +2079,7 @@ Do you think fixing things is a necessary skill?</p>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLCs7T50izAdl7cGMCNclVnzuNsA2asmeX" target="_blank" rel="noopener noreferrer">Youtube: IT 전문가 - 프로젝트관리 시리즈</a></li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_f2q8 padding--none margin-left--sm"><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/me/">me</a></li><li class="tag_LEDh"><a class="tag_fdWm tagRegular_JZUw" href="/en/tags/정보처리/">정보처리</a></li></ul></div></footer></article><article class="margin-bottom--xl" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="IELTS Listening"><header><h2 class="title_teIG" itemprop="headline"><a itemprop="url" href="/en/2023/10/18/ielts-listening/">IELTS Listening</a></h2><div class="container_X0Bp margin-vert--md"><time datetime="2023-10-18T00:21:28.409Z" itemprop="datePublished">October 18, 2023</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_PGj8"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Gracefullight</span></a></div><small class="avatar__subtitle" itemprop="description">Owner</small></div></div></div></div></header><div class="markdown" itemprop="articleBody"><h2 class="anchor anchorWithStickyNavbar__YrT" id="유형">유형<a href="#유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>영역</th><th>내용</th><th>유형</th><th>빈출 주제</th></tr></thead><tbody><tr><td>섹션1</td><td>일상</td><td>대화</td><td>강의신청, 여행문의</td></tr><tr><td>섹션2</td><td>일상</td><td>독백</td><td>관광지, 헬스클  럽, 도서관</td></tr><tr><td>섹션3</td><td>학술</td><td>대화</td><td>조별과제, 튜터링</td></tr><tr><td>섹션4</td><td>학술</td><td>독백</td><td>동식물, 비지니스, 역사</td></tr></tbody></table>
+<table><thead><tr><th>영역</th><th>내용</th><th>유형</th><th>빈출 주제</th></tr></thead><tbody><tr><td>섹션1</td><td>일상</td><td>대화</td><td>강의신청, 여행문의</td></tr><tr><td>섹션2</td><td>일상</td><td>독백</td><td>관광지, 헬스클럽, 도서관</td></tr><tr><td>섹션3</td><td>학술</td><td>대화</td><td>조별과제, 튜터링</td></tr><tr><td>섹션4</td><td>학술</td><td>독백</td><td>동식물, 비지니스, 역사</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar__YrT" id="공부법">공부법<a href="#공부법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ol>
 <li>한번 듣기</li>
@@ -1879,7 +2155,7 @@ Do you think fixing things is a necessary skill?</p>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar__YrT" id="자율주행-자동차">자율주행 자동차<a href="#자율주행-자동차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <ul>
-<li>ICT 플랫폼 기업이 높은 생선성과 많은 가입자를 토재로 산업 생태계 변화를   주도, 기존 기업들도 플랫폼 사업자로의 변화를 시도</li>
+<li>ICT 플랫폼 기업이 높은 생선성과 많은 가입자를 토재로 산업 생태계 변화를 주도, 기존 기업들도 플랫폼 사업자로의 변화를 시도</li>
 <li>기술 아키텍쳐<!-- -->
 <ul>
 <li>환경정보인지: ADAS 센서, V2X (Vehicle to Everything), 정밀지도</li>
@@ -1899,7 +2175,7 @@ Do you think fixing things is a necessary skill?</p>
 </li>
 </ul>
 <table><thead><tr><th>인식</th><th>판단</th><th>제어</th></tr></thead><tbody><tr><td>센서<br>정밀 지도<br>통신기술(V2X)</td><td>판단/주행제어 시스템<br>학습형 제어시스템<br>주행속도 및 경로 로깅</td><td>통합 차량 제어 솔루션(ADAS, HM, 완전 자율주행 등)<br>ITS(지능형 교통시스템)</td></tr></tbody></table>
-<table><thead><tr><th>-</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody><tr><td>레벨</td><td>비자동화</td><td>운전자 보조</td><td>부분 자동화</td><td>조건부 자동화</td><td>고도 자동화</td><td>완전 자동화</td></tr><tr><td>동작</td><td>운전자 상황파악</td><td>운전자 상황파악</td><td>운전자 상황파악</td><td>운전자가 시스템에 요청시 운전</td><td>운전자 개입 없음</td><td>-</td></tr><tr><td>설명</td><td>-</td><td>가/감속, 조향보조,<br>스마트 크루즈 컨트롤, 차로 유지 보조 등</td><td>가/감속, 조향보조,<br>고속도로 주행보조, 원격 주차보조</td><td>시스템이 상황파악 및 운전,<br>교통 혼잡시 저속주행, 고속도로 주행, 자동 차로 변경 등</td><td>시스템이 정해진 도로와 조건 하에 운 전</td><td>시스템이 모든 도로와 조건에서 운전</td></tr></tbody></table>
+<table><thead><tr><th>-</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody><tr><td>레벨</td><td>비자동화</td><td>운전자 보조</td><td>부분 자동화</td><td>조건부 자동화</td><td>고도 자동화</td><td>완전 자동화</td></tr><tr><td>동작</td><td>운전자 상황파악</td><td>운전자 상황파악</td><td>운전자 상황파악</td><td>운전자가 시스템에 요청시 운전</td><td>운전자 개입 없음</td><td>-</td></tr><tr><td>설명</td><td>-</td><td>가/감속, 조향보조,<br>스마트 크루즈 컨트롤, 차로 유지 보조 등</td><td>가/감속, 조향보조,<br>고속도로 주행보조, 원격 주차보조</td><td>시스템이 상황파악 및 운전,<br>교통 혼잡시 저속주행, 고속도로 주행, 자동 차로 변경 등</td><td>시스템이 정해진 도로와 조건 하에 운전</td><td>시스템이 모든 도로와 조건에서 운전</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar__YrT" id="센서">센서<a href="#센서" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <table><thead><tr><th>-</th><th>기능</th><th>장점</th><th>단점</th></tr></thead><tbody><tr><td>카메라</td><td>렌즈, 시각적</td><td>질감, 색상, 대비 측정, 저렴</td><td>날씨 취약, 장거리 취약</td></tr><tr><td>레이더</td><td>전자기파, 속도측정</td><td>날씨 영향 없음, 사물 투과 측정</td><td>표지판 인식 불가, 직선 거리만 가능</td></tr><tr><td>라이다</td><td>빛, 원근감, 형태, 거리, 속도</td><td>고해상도, 정확도, 3D 입체지도 구현가능</td><td>날씨 취약, 비쌈</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar__YrT" id="adas">ADAS<a href="#adas" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
@@ -1921,7 +2197,7 @@ Do you think fixing things is a necessary skill?</p>
 <li>원격 스마트 주차 보조(RSPA, Remote Smart Parking Assist)</li>
 </ul>
 </li>
-<li>운전자 졸음 경고:  영상인식, HVI</li>
+<li>운전자 졸음 경고: 영상인식, HVI</li>
 <li>사각지대 감시(BSM, Blind Spot Monitoring): 근거리 RADAR, 초음파센서</li>
 <li>주차 보조 장치(IPAS, Intelligent Parking Assist System): 초음파센서, 근거리 RADAR</li>
 <li>적응형 상향등 제어(AHBD, Adaptive High Beam Control): 영상인식, RADAR</li>
