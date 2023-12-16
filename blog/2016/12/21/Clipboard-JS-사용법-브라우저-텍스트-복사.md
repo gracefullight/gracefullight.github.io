@@ -1,7 +1,9 @@
 ---
 title: Clipboard JS 사용법 - 브라우저 텍스트 복사
 authors: me
-tags: [javascript, clipboard]
+tags:
+  - javascript
+  - clipboard
 date: 2016-12-21 17:57:06
 ---
 
