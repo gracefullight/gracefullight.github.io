@@ -46,7 +46,7 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.13.0",
+    "react-player": "^2.14.0",
     "rehype-katex": "^7.0.0",
     "remark-math": "^6.0.0"
   },
@@ -69,7 +69,7 @@
     "clipanion": "4.0.0-rc.2",
     "devmoji": "^2.3.0",
     "dotenv": "^16.3.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-mdx": "^3.0.0",
     "eslint-plugin-prettier": "^5.0.1",
@@ -78,11 +78,11 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "regenerator-runtime": "^0.14.0",
+    "regenerator-runtime": "^0.14.1",
     "tsx": "^4.6.2",
     "typescript": "^5.3.3"
   },
-  "packageManager": "^pnpm@8.12.0",
+  "packageManager": "^pnpm@8.12.1",
   "engines": {
     "node": "20"
   }
