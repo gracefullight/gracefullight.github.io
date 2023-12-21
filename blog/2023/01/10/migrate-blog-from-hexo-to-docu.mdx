@@ -3,7 +3,9 @@ title: hexo에서 docusaurus로 블로그 마이그레이션
 description: Migrating from Hexo to Docusaurus; Overview of benefits, troubleshooting tips for SEO and Site Verification.
 authors: me
 date: 2023-01-10T23:26:34.674+09:00
-tags: [nodejs, javascript]
+tags:
+  - nodejs
+  - javascript
 ---
 
 ## 개요
@@ -12,7 +14,7 @@ tags: [nodejs, javascript]
 2019년도부터인가.. 다른 Static Site Generator 가 많아지면서 더 이상 hexo만의 이점이 없어졌고
 테마나 플러그인 개발 등 생태계 라이브러리들의 업데이트도 줄어들었다.
 
-ejs -> njk, less -> sass -> stylus 로 테마에 스택이 의존적이였다.
+`ejs -> njk, less -> sass -> stylus` 로 테마에 스택이 의존적이였다.
 결정적으로 nodejs 기반 코어라 트러블슈팅을 올려도 리소스 낭비랄까..
 
 Docusaurus는 1~2알파 시절 algolia 검색이 제공되지 않아
@@ -34,7 +36,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 
 - 큰 문제없이 설정에 넣어줬다.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "themeConfig": {
     "metadata": [
@@ -61,7 +63,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 - 이걸 플러그인 옵션으로 제공하자라는 이슈가 있지만 닫혔고, 알아서 하라가 그 답변이였다.
 - 하나 만들어서 [기존 컴포넌트 덮고](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx) 재정렬해서 연결해줬다.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "presets": [
     "classic",
@@ -86,7 +88,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 - personal access token 발행하고, 두 값 적절하게 넣어준다.
 - yarn build, yarn deploy 실행하면 알아서 잘 된다.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "organizationName": "gracefullight",
   "projectName": "gracefullight.github.io",
@@ -105,7 +107,7 @@ env:
 
 - 어둡게, 스위치도 삭제했다.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "themeConfig": {
     "colorMode": {

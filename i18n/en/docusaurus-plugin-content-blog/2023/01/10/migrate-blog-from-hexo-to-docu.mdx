@@ -3,7 +3,9 @@ title: Migrate a blog from hexo to docusaurus
 description: Migrating from Hexo to Docusaurus; Overview of benefits, troubleshooting tips for SEO and Site Verification.
 authors: me
 date: 2023-01-10T23:26:34.674+09:00
-tags: [nodejs, javascript]
+tags:
+  - nodejs
+  - javascript
 ---
 
 ## Overview
@@ -34,7 +36,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 
 - I put it in the configuration without any problems.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "themeConfig": {
     "metadata": [
@@ -61,7 +63,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 - There was an issue to provide this as a plugin option, but it was closed, and do it yourself was the answer.
 - I created one, [overwrote the existing component](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx), rearranged it, and linked it.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "presets": [
     "classic",
@@ -86,7 +88,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 - Issue a personal access token and insert the two values appropriately.
 - Run yarn build, yarn deploy and it should work fine.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "organizationName": "gracefullight",
   "projectName": "gracefullight.github.io",
@@ -105,7 +107,7 @@ env:
 
 - Dark only, also deleted the switch.
 
-```json title="docusaurus.config.js"
+```js title="docusaurus.config.js"
 {
   "themeConfig": {
     "colorMode": {
