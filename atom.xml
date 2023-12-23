@@ -54,7 +54,7 @@
 </ul>
 </li>
 </ul>
-<table><thead><tr><th>구분</th><th>정보 처리(IT) 시대</th><th>정보 통신(ICT) 시대</th></tr></thead><tbody><tr><td>처리 형태</td><td>저장, 검색, 가공, 연산</td><td>유통 공유</td></tr><tr><td>처리 주체</td><td>컴퓨터, 제약된 공간</td><td>네트워크 망, 장비</td></tr><tr><td>목표</td><td>정보의 빠른 연산 및 처리</td><td>정보의 신속, 정확, 안전한 전달</td></tr><tr><td>기술</td><td>멀티코어, 파이프라이닝<br>캐시, 플래시<br>MEMS, 데이터마이닝</td><td>과거: 허브, 스위치, 라우터<br>현재: 인터넷, USN, 4G<br>미래: IoE, SDN, NFV</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>정보 처리(IT) 시대</th><th>정보 통신(ICT) 시대</th></tr></thead><tbody><tr><td>처리 형태</td><td>저장, 검색, 가공, 연산</td><td>유통, 공유</td></tr><tr><td>처리 주체</td><td>컴퓨터, 제약된 공간</td><td>네트워크 망, 장비</td></tr><tr><td>목표</td><td>정보의 빠른 연산 및 처리</td><td>정보의 신속, 정확, 안전한 전달</td></tr><tr><td>기술</td><td>멀티코어, 파이프라이닝<br>캐시, 플래시<br>MEMS, 데이터마이닝</td><td>과거: 허브, 스위치, 라우터<br>현재: 인터넷, USN, 4G<br>미래: IoE, SDN, NFV</td></tr></tbody></table>
 <ul>
 <li>정보처리시대에서 정보통신시대로 넘어오면서<!-- -->
 <ul>
@@ -62,6 +62,35 @@
 <li>위협요인: 개인정보유출, 프라이버시 침해 제거</li>
 </ul>
 </li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크-구성">네트워크 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크 구성에 대한 직접 링크" title="네트워크 구성에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="정보전달의-원리">정보전달의 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%A0%95%EB%B3%B4%EC%A0%84%EB%8B%AC%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="정보전달의 원리에 대한 직접 링크" title="정보전달의 원리에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-분류">네트워크의 분류<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="네트워크의 분류에 대��한 직접 링크" title="네트워크의 분류에 대한 직접 링크">​</a></h2>
+<ul>
+<li>유선<!-- -->
+<ul>
+<li>PAN: Personal Area, USB, HDMI</li>
+<li>LAN: Local Area</li>
+<li>MAN: Metro Area</li>
+<li>WAN: Wide Area</li>
+</ul>
+</li>
+<li>무선<!-- -->
+<ul>
+<li>WVAN: 의료목적</li>
+<li>WPAN: 블루투스, NFC</li>
+<li>WLAN</li>
+<li>WIMAX: WIBRO, 예전에 도심에서 모바일 서비스</li>
+<li>Radio</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="프로토콜">프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="프로토콜에 대한 직접 링크" title="프로토콜에 대한 직접 링크">​</a></h2>
+<ul>
+<li>사람을 위한 식별자</li>
+<li>컴퓨터를 위한 식별자</li>
+<li>최단 거리를 위한 전송경로 설정</li>
+<li>다양한 전송방식</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
