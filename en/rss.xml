@@ -4,10 +4,30 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 19 Dec 2023 07:46:17 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Dec 2023 01:03:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[기술사 - 네트워크]]></title>
+            <link>https://gracefullight.dev/en/2023/12/23/professional-engineer-network</link>
+            <guid>https://gracefullight.dev/en/2023/12/23/professional-engineer-network</guid>
+            <pubDate>Sat, 23 Dec 2023 01:03:04 GMT</pubDate>
+            <description><![CDATA[네트워크 챕터 정리]]></description>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-가치">네트워크의 가치<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%80%EC%B9%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>]]></content:encoded>
+            <category>me</category>
+            <category>정보처리</category>
+        </item>
         <item>
             <title><![CDATA[국가에 대한 의존성 분리]]></title>
             <link>https://gracefullight.dev/en/2023/12/19/decoupling-from-national-dependency</link>
@@ -2234,7 +2254,17 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
             <guid>https://gracefullight.dev/en/2023/11/11/professional-engineer-database</guid>
             <pubDate>Sat, 11 Nov 2023 02:49:34 GMT</pubDate>
             <description><![CDATA[데이터베이스 챕터 정리]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="db-개요">DB 개요<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#db-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="db-개요">DB 개요<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#db-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="데이터정보지식지혜">데이터/정보/지식/지혜<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%95%EB%B3%B4%EC%A7%80%EC%8B%9D%EC%A7%80%ED%98%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <p><img loading="lazy" src="https://www.systems-thinking.org/dikw/dikw1.gif" alt="Data, Informatino, Knowledge, and Wisdom" class="img_waBy"></p>
 <ul>
@@ -2303,7 +2333,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_PC_Z" id="품질관리-rr">품질관리 R&amp;R<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-rr" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="db-설계">DB 설계<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#db-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="db-설계">DB 설계<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#db-%EF%BF%BD%EC%84%A4%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="키">키<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database#%ED%82%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <blockquote>
 <p>릴레이션 튜플을 유일하게 식별할 수 있는 속성들의 집합</p>
@@ -2535,7 +2565,17 @@ Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤�
             <guid>https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security</guid>
             <pubDate>Sat, 11 Nov 2023 01:08:10 GMT</pubDate>
             <description><![CDATA[정보보안 챕터 정리]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="정보보안-개요">정보보안 개요<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="정보보안-개요">정보보안 개요<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="정보보안-정의">정보보안 정의<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-%EC%A0%95%EC%9D%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="정보보안-fw">정보보안 FW<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security#%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88-fw" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="owasp-10대-취약점">OWASP 10대 취약점<a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security#owasp-10%EB%8C%80-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -2744,7 +2784,17 @@ Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤�
             <guid>https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering</guid>
             <pubDate>Sat, 28 Oct 2023 14:15:09 GMT</pubDate>
             <description><![CDATA[소프트웨어 공학 챕터 정리]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="sw-공학-개요">SW 공학 개요<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#sw-%EA%B3%B5%ED%95%99-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="sw-공학-개요">SW 공학 개요<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#sw-%EA%B3%B5%ED%95%99-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="sw-개념">SW 개념<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#sw-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="sw-위기">SW 위기<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#sw-%EC%9C%84%EA%B8%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_PC_Z" id="sw-공학">SW 공학<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#sw-%EA%B3%B5%ED%95%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -2764,7 +2814,7 @@ Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤�
 <ul>
 <li>Incremental Development Model.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="진화모델">진화모델<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#%EC%A7%84%ED%99%94%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="진화��모델">진화모델<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#%EC%A7%84%ED%99%94%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>Evolutionary Development Model.</li>
 </ul>
@@ -2785,7 +2835,7 @@ Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤�
 <ul>
 <li>Model Driven Architenture.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="서비스기반">서비스기반<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B8%B0%EB%B0%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="서비스기반">서비스기반<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#%EF%BF%BD%EF%BF%BD%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B8%B0%EB%B0%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_PC_Z" id="soa">SOA<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#soa" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <blockquote>
 <p>데이터, 애플리케이션을 비즈니스 관점에서 표준 블록단위로 나눠 하나의 서비스로 구성한 뒤 웹 서비스 기술 등을 적용
@@ -2929,66 +2979,6 @@ Prepare와 Commit 단계를 통해 모든 노드가 커밋하지 않으면 롤�
 <h2 class="anchor anchorWithStickyNavbar_PC_Z" id="참조">참조<a href="https://gracefullight.dev/en/2023/10/28/professional-engineer-sw-engineering#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://www.egovframe.go.kr/home/sub.do?menuNo=5" target="_blank" rel="noopener noreferrer">전자정부프레임워크 교육신청</a></li>
-</ul>]]></content:encoded>
-            <category>me</category>
-            <category>정보처리</category>
-        </item>
-        <item>
-            <title><![CDATA[기술사 - 프로젝트관리]]></title>
-            <link>https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management</link>
-            <guid>https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management</guid>
-            <pubDate>Sat, 21 Oct 2023 16:08:43 GMT</pubDate>
-            <description><![CDATA[프로젝트관리 챕터 정리]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-관리-개요">프로젝트 관리 개요<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-실패-현황">프로젝트 실패 현황<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%ED%8C%A8-%ED%98%84%ED%99%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-실패-원인분석">프로젝트 실패 원인분석<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%ED%8C%A8-%EC%9B%90%EC%9D%B8%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-성공-요인">프로젝트 성공 요인<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%B1%EA%B3%B5-%EC%9A%94%EC%9D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="pmbok">PMBOK<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pmbok" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Project Management Body Of Knowledge.</li>
-<li>프로젝트 관리의 사실항 표준.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-관리-프로세스">프로젝트 관리 프로세스<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="pm">PM<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Project Manager</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="역할과-책임">역할과 책임<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%97%AD%ED%95%A0%EA%B3%BC-%EC%B1%85%EC%9E%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="이해관계자들">이해관계자들<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%9D%B4%ED%95%B4%EA%B4%80%EA%B3%84%EC%9E%90%EB%93%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="조직체계">조직체계<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%A1%B0%EC%A7%81%EC%B2%B4%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="관리통제-스킬">관리통제 스킬<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EA%B4%80%EB%A6%AC%ED%86%B5%EC%A0%9C-%EC%8A%A4%ED%82%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="사회-경제-환경">사회, 경제, 환경<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%82%AC%ED%9A%8C-%EA%B2%BD%EC%A0%9C-%ED%99%98%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="pmo">PMO<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pmo" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Project Management Office</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="정의와-필요성">정의와 필요성<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%A0%95%EC%9D%98%EC%99%80-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="pmo-model">PMO Model<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pmo-model" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="pmo-framework">PMO Framework<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pmo-framework" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="pmo-사례">PMO 사례<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#pmo-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="전자정부-pmo">전자정부 PMO<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-pmo" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="도입시기별-장단점">도입시기별 장단점<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EB%8F%84%EC%9E%85%EC%8B%9C%EA%B8%B0%EB%B3%84-%EC%9E%A5%EB%8B%A8%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="전자정부-pmo-framework">전자정부 PMO Framework<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-pmo-framework" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="수행단계별-세부-업무">수행단계별 세부 업무<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%88%98%ED%96%89%EB%8B%A8%EA%B3%84%EB%B3%84-%EC%84%B8%EB%B6%80-%EC%97%85%EB%AC%B4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-단계별-활동-사례">프로젝트 단계별 활동 사례<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%8B%A8%EA%B3%84%EB%B3%84-%ED%99%9C%EB%8F%99-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="핵심-성공-요소">핵심 성공 요소<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%95%B5%EC%8B%AC-%EC%84%B1%EA%B3%B5-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="ka">KA<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#ka" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Knowledge Area</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-통합관리">프로젝트 통합관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%86%B5%ED%95%A9%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-범위관리">프로젝트 범위관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B2%94%EC%9C%84%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-일정관리">프로젝트 일정관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-원가관리">프로젝트 원가관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9B%90%EA%B0%80%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-품질관리">프로젝트 품질관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-자원관리">프로젝트 자원관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EC%9B%90%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-의사소통관리">프로젝트 의사소통관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%98%EC%82%AC%EC%86%8C%ED%86%B5%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-위험관리">프로젝트 위험관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-조달관리">프로젝트 조달관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A1%B0%EB%8B%AC%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="프로젝트-이해관계자관리">프로젝트 이해관계자관리<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%B4%ED%95%B4%EA%B4%80%EA%B3%84%EC%9E%90%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="참조">참조<a href="https://gracefullight.dev/en/2023/10/22/professional-engineer-project-management#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLCs7T50izAdl7cGMCNclVnzuNsA2asmeX" target="_blank" rel="noopener noreferrer">Youtube: IT 전문가 - 프로젝트관리 시리즈</a></li>
 </ul>]]></content:encoded>
             <category>me</category>
             <category>정보처리</category>
