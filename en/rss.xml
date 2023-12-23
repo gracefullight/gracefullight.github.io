@@ -24,7 +24,46 @@
 <li><a href="https://gracefullight.dev/en/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
 <li><a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-가치">네트워크의 가치<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%80%EC%B9%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-가치">네트워크의 가치<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%80%EC%B9%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>물리적 구성<!-- -->
+<ul>
+<li>NIC, 케이블, 허브</li>
+<li>라우터, 스위치</li>
+<li>기지국, 안테나</li>
+</ul>
+</li>
+<li>논리적 구성<!-- -->
+<ul>
+<li>IP, MAC, Domain</li>
+<li>전화번호</li>
+<li>프로토콜</li>
+</ul>
+</li>
+<li><strong>정보전달의 원리</strong>: 멀리, 빨게, 고품질로<!-- -->
+<ul>
+<li><code>송신자 -&gt; 전달자 -&gt; 수신자</code></li>
+<li>속도 향상의 원리</li>
+<li>품질 향상의 원리</li>
+<li>먼거리 전달 원리</li>
+</ul>
+</li>
+<li>네트워크 분류<!-- -->
+<ul>
+<li>유선: PAN, LAN, WAN</li>
+<li>무선: WBAN, WPAN, WLAN</li>
+</ul>
+</li>
+</ul>
+<table><thead><tr><th>구분</th><th>정보 처리(IT) 시대</th><th>정보 통신(ICT) 시대</th></tr></thead><tbody><tr><td>처리 형태</td><td>저장, 검색, 가공, 연산</td><td>유통 공유</td></tr><tr><td>처리 주체</td><td>컴퓨터, 제약된 공간</td><td>네트워크 망, 장비</td></tr><tr><td>목표</td><td>정보의 빠른 연산 및 처리</td><td>정보의 신속, 정확, 안전한 전달</td></tr><tr><td>기술</td><td>멀티코어, 파이프라이닝<br>캐시, 플래시<br>MEMS, 데이터마이닝</td><td>과거: 허브, 스위치, 라우터<br>현재: 인터넷, USN, 4G<br>미래: IoE, SDN, NFV</td></tr></tbody></table>
+<ul>
+<li>정보처리시대에서 정보통신시대로 넘어오면서<!-- -->
+<ul>
+<li>기회요인: 참여 공유 개방, 글로벌화</li>
+<li>위협요인: 개인정보유출, 프라이버시 침해 제거</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
             <category>me</category>
             <category>정보처리</category>
         </item>
