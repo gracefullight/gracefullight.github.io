@@ -63,8 +63,82 @@
 </ul>
 </li>
 </ul>
+<h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크-관련-법칙">네트워크 관련 법칙<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B4%80%EB%A0%A8-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="멧갈프-법칙">멧갈프 법칙<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%A9%A7%EA%B0%88%ED%94%84-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Metcalfe's Law, 메칼프 법칙: 이더넷의 창시자</li>
+<li>네트워킹의 효과는 사용자(가입자, 노드) 수의 제곱에 비례, 네트워크의 외부성</li>
+<li>예시: SNS</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="길더의-법칙">길더의 법칙<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EA%B8%B8%EB%8D%94%EC%9D%98-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Gilder's Law: IT칼럼니스트</li>
+<li>광섬유의 대역폭(Bandwidth)은 12개월마다 세 배씩 증가<!-- -->
+<ul>
+<li>트래픽 증가는 통신 속도의 증가라고 볼 수 있음</li>
+</ul>
+</li>
+<li>무어의 법칙으로 설명하는 직접회로 및 멤리의 증가 속도를 능가하는 광대역 통신망 설명</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="섀넌의-법칙">섀넌의 법칙<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EC%84%80%EB%84%8C%EC%9D%98-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Shannon-Hartley theorem, 섀넌의 정리, 샤논의 정리</li>
+<li>채널용량은 대역폭과 신호 대 잡음비에 비례</li>
+</ul>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mi>W</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = W \log_2(1 + \frac{S}{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">C</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em"><span style="top:-2.4559em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:2.0463em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span>
+<ul>
+<li>C: 채널 용량</li>
+<li>W: 대역폭</li>
+<li>S: 신호전력</li>
+<li>N: 잡음전력</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크-구성">네트워크 구성<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-물리적-구성">네트워크의 물리적 구성<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%AC%BC%EB%A6%AC%EC%A0%81-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>교환기: 라우터<!-- -->
+<ul>
+<li>가장 중요한 구성요소로 단말기들을 일시적으로 연결시켜주는 기능 제공</li>
+<li>회선 교환과 패킷 교환으로 나눠진다.</li>
+<li>패킷 교환은 Connection-Oriented 방식(TCP), Connection-Less 방식(UDP)로 나뉜다.</li>
+</ul>
+</li>
+<li>중계기<!-- -->
+<ul>
+<li>신호의 감쇄 및 왜곡을 보상하기 위해 증폭 및 재생 기능을 가지고 있음</li>
+<li>아날로그는 증폭만 가능하나, 디지털통신은 증폭과 재싱이 동시에 가능</li>
+</ul>
+</li>
+<li>전송 및 다중화 선로<!-- -->
+<ul>
+<li>전화선, 전용선</li>
+<li>광시분할 다중화</li>
+<li>광파장분할 다중화</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-논리적-구성">네트워크의 논리적 구성<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%85%BC%EB%A6%AC%EC%A0%81-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Network Address<!-- -->
+<ul>
+<li>가입자를 식별하기 위한 식별자</li>
+<li>전화번호, IP, MAC, DNS, ENUM (tElephone NUmber Mapping) 등</li>
+<li>DNS: 망에서는 숫자주소만 인식되나 사람의 사용 편의를 위해 문자주소를 사용함</li>
+</ul>
+</li>
+<li>네트워크 프로토콜<!-- -->
+<ul>
+<li>물리적 네트워크를 논리적으로 동작하도록 함</li>
+<li>사용자로 하여금 네트워크의 투명성 보장</li>
+<li>국제표준: OSI 7 Layer</li>
+<li>사실상의 표준: TCP/IP (이게 더 먼저 나옴, 인터넷 전용)</li>
+<li>하부계층(주로 LAN) 표준: IEEE 802, CSMA/CD, Ethernet</li>
+</ul>
+</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_PC_Z" id="정보전달의-원리">정보전달의 원리<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EC%A0%95%EB%B3%B4%EC%A0%84%EB%8B%AC%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="데이터-통신의-원리">데이터 통신의 원리<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img loading="lazy" src="https://i.imgur.com/wjkwMAn.png" alt="데이터 통신의 원리" class="img_waBy"></p>
+<h3 class="anchor anchorWithStickyNavbar_PC_Z" id="무선-통신의-원리">무선 통신의 원리<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%AC%B4%EC%84%A0-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar_PC_Z" id="네트워크의-분류">네트워크의 분류<a href="https://gracefullight.dev/en/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>유선<!-- -->
