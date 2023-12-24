@@ -20,6 +20,7 @@ module.exports = {
       extends: ["plugin:mdx/recommended"],
       rules: {
         "@typescript-eslint/no-unused-vars": "off",
+        "no-unused-expressions": "off",
       },
     },
   ],
