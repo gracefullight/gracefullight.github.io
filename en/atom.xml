@@ -56,7 +56,228 @@
 <h3 class="anchor anchorWithStickyNavbar_HzlY" id="t-트리">T 트리<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#t-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>AVL Tree + B tree</li>
-</ul>]]></content>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="그래프">그래프<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Node: 정점, Edge: 간선</li>
+<li>신장트리: Spanning Tree<!-- -->
+<ul>
+<li>그래프의 모든 정점과 일부 간선을 포함한 트리로 표현</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mo stretchy="false">(</mo><mi>V</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T = (V, F)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em">V</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.13889em">F</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="최소-신장-트리">최소 신장 트리<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EC%86%8C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Minimal Spanning Tree</li>
+<li>가장 적은 비용/거리로 그래프의 모든 정점을 연결할 수 있는 구조</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="프림-알고리즘">프림 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Prim</li>
+<li>노드 기준</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="크루스칼-알고리즘">크루스칼 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Kruscal</li>
+<li>엣지 기준</li>
+<li>간선 최소 개수: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+<li>간선 최대 개수: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2 \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="최단경로-문제">최단경로 문제<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C-%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Shortest Path</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="다익스트라">다익스트라<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Dijkstra</li>
+<li>노드 수가 n이라면 n-1개의 목적지가 모두 확정될 때까지 반복</li>
+<li>다익스트라를 노드마다 반복한게 프림 알고리즘</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="벨만포드">벨만포드<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B2%A8%EB%A7%8C%ED%8F%AC%EB%93%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>가중치가 음수일 경우, 불이익이 있는 경우 다익스트라 알고리즘으로 최단 경로가 계속 갱신되므로 이를 방어하기 위한 방법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="정렬">정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="선택-정렬">선택 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%84%A0%ED%83%9D-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Selection Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li>가장 작은 값을 순서대로 찾아내어 첫 번째 배열부터 채워나가며 정렬</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="버블-정렬">버블 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B2%84%EB%B8%94-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Bubble Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li>왼쪽에서 오른쪽으로 비교해가며 오름차순으로 자리를 교환하여 정렬</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="합병-정렬">합병 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%95%A9%EB%B3%91-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Merge Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+<li>분할 정복</li>
+<li>데이터 분포의 영향을 덜 받는다, 최악의 경우에도 효율적.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="퀵-정렬">퀵 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%80%B5-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Quick Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+<li>피봇을 정한다. 전체 값을 읽어 중간값이나 몇 개의 값의 평균을 피봇으로 정함.</li>
+<li>프로그래밍 랭기지에서는 왼쪽에서 큰 값, 오른쪽에서 작은 값을 찾는 방식으로 구현.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="삽입-정렬">삽입 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%82%BD%EC%9E%85-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Insert Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li>추가적인 메모리를 안 씀: in-place sort</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="힙-정렬">힙 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%9E%99-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Heap Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="max-heap">Max Heap<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#max-heap" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="min-heap">Min Heap<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#min-heap" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="min-max-heap">Min-Max Heap<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#min-max-heap" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="deap">Deap<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#deap" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>왼쪽은 Min Heap, 루트는 비어있음, 오른쪽은 Max Heap</li>
+<li>왼쪽 서브트리의 임의 노드는 오른쪽 서브트리 같은 위치에 있는 노드와 대응된다.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="기수-정렬">기수 정렬<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Radix Sort</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="msd">MSD<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#msd" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Most Significant Digit</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="lsd">LSD<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#lsd" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Least Significant Digit</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="탐색">탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="깊이-우선-탐색">깊이 우선 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>DFS, Depth First Search</li>
+<li>Solution 을 찾기 위해 Candidate Solution 인 노드들을 순회</li>
+<li>Optimal Path (최적의 해)가 아닐 가능성이 높음, 보장할 수 없음.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="너비-우선-탐색">너비 우선 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Breadth First Search</li>
+<li>Optimal Path를 보장</li>
+<li>탐색 과정에서 나타나는 모든 상태를 저장해야하기 때문에 메모리 비효율적.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="최고-우선-탐색">최고 우선 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EA%B3%A0-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Best-First Search</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="백트래킹">백트래킹<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>탐색을 진행하면서 필수적인 부분의 그래프만 유지하여 시간과 공간을 절약.</li>
+<li>노드 부모로 돌아가서 다음 자식 노드의 검색을 계속.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="n-queen-문제">N-Queen 문제<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#n-queen-%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="0-1-배낭문제">0-1 배낭문제<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#0-1-%EB%B0%B0%EB%82%AD%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="인공지능">인공지능<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="휴리스틱-탐색">휴리스틱 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%9C%B4%EB%A6%AC%EC%8A%A4%ED%8B%B1-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Heuristic Search</li>
+<li>논리적으로, 수학적으로 증명할 수 없으나 경험이나 직관에 의해 효율적으로 해를 얻을 수 있으리라는 기대를 갖게하는 근거에 의한 방법</li>
+<li>사람처럼 학습을 통해서 직관적으로 탐색</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="hill-climbing-탐색">Hill-Climbing 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#hill-climbing-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>남은 경로에 대한 비용만 고려<!-- -->
+<ul>
+<li>가장 가파른 길이 정상까지 가장 짧으니까</li>
+<li>가파른 다음에 내리막일 수도 있고, 평지일 수도 있고, 다음 가파른 길을 찾을 수 없을 수도 있음</li>
+</ul>
+</li>
+<li>남은 길 중에 가장 가파른 길을 찾는 <strong>평가함수</strong> 사용<!-- -->
+<ul>
+<li>Evaluatio Function, Objetive Function</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="a-탐색">A* 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#a-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="에이전트">에이전트<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>특정 목적을 가지고 자동으로 해결해주는 소프트웨어</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="신경회로망">신경회로망<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%8B%A0%EA%B2%BD%ED%9A%8C%EB%A1%9C%EB%A7%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="k-means-클러스터링">K-means 클러스터링<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#k-means-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="패턴인식">패턴인식<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%8C%A8%ED%84%B4%EC%9D%B8%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="딥러닝">딥러닝<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%94%A5%EB%9F%AC%EB%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="선형회귀">선형회귀<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Linear Regression</li>
+<li>기울기: 가중치, Weight</li>
+<li>절편: 바이어스, Bias</li>
+<li>최소 제곱법: LSM, Method of Least Squares</li>
+<li>평균 제곱근 오차: RMSE, Root Mean Square Error<!-- -->
+<ul>
+<li>오차의 값이 더 이상 줄어들지 않을 때가 최적화</li>
+</ul>
+</li>
+<li>경사하강법</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="다중선형회귀">다중선형회귀<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%A4%91%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="로지스틱회귀">로지스틱회귀<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%A1%9C%EC%A7%80%EC%8A%A4%ED%8B%B1%ED%9A%8C%EA%B7%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="시그모이드-함수">시그모이드 함수<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%8B%9C%EA%B7%B8%EB%AA%A8%EC%9D%B4%EB%93%9C-%ED%95%A8%EC%88%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Sigmoid Function</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="단층-퍼셉트론">단층 퍼셉트론<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%8B%A8%EC%B8%B5-%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="다층-퍼셉트론">다층 퍼셉트론<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%B8%B5-%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="오차-역전파-알고리즘">오차 역전파 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%98%A4%EC%B0%A8-%EC%97%AD%EC%A0%84%ED%8C%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Back Propagation</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="다중-분류-문제">다중 분류 문제<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%A4%91-%EB%B6%84%EB%A5%98-%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>원 핫 인코딩</li>
+<li>소프트맥스</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_HzlY" id="과잉-적합-과소-적합">과잉 적합, 과소 적합<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EA%B3%BC%EC%9E%89-%EC%A0%81%ED%95%A9-%EA%B3%BC%EC%86%8C-%EC%A0%81%ED%95%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>over fitting, under fitting</li>
+<li>해결방안<!-- -->
+<ul>
+<li>조기 종료: Early Stopping</li>
+<li>가중치 규제 방법: Weight Regularization</li>
+<li>드롭 아웃: Drop out</li>
+<li>데이터 증강: data augmentation</li>
+<li>앙상블: Ensemble</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="유전자-알고리즘">유전자 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%9C%A0%EC%A0%84%EC%9E%90-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>재생산: Reproduction</li>
+<li>교차: Crossover</li>
+<li>치환</li>
+<li>교배/돌연변이: Mutation</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="그래픽-알고리즘">그래픽 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="베지어-곡선">베지어 곡선<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%A7%80%EC%96%B4-%EA%B3%A1%EC%84%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="압축-알고리즘">압축 알고리즘<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%95%95%EC%B6%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="run-length-코딩">Run-Length 코딩<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#run-length-%EC%BD%94%EB%94%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="lz77">LZ77<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#lz77" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="허프만-코딩">허프만 코딩<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%ED%97%88%ED%94%84%EB%A7%8C-%EC%BD%94%EB%94%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="논리회로">논리회로<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="논리게이트">논리게이트<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="불대수">불대수<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B6%88%EB%8C%80%EC%88%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="카노맵">카노맵<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%B9%B4%EB%85%B8%EB%A7%B5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="전가산기">전가산기<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%A0%84%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="반가산기">반가산기<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B0%98%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="비교기">비교기<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B9%84%EA%B5%90%EA%B8%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_HzlY" id="베이즈-이론">베이즈 이론<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%9D%B4%EC%A6%88-%EC%9D%B4%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="조건부-확률">조건부 확률<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%A1%B0%EA%B1%B4%EB%B6%80-%ED%99%95%EB%A5%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_HzlY" id="베이즈-정리">베이즈 정리<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%9D%B4%EC%A6%88-%EC%A0%95%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
