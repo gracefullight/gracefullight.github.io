@@ -1,0 +1,38 @@
+---
+title: aggrid 디버깅
+date: 2024-01-21T22:38:08.633+09:00
+description: React에서 AG-Grid 사용법
+authors: me
+tags:
+  - javascript
+  - react
+---
+
+## AGGRID
+
+- 풀스펙을 지원하는 그리드
+- 대부분의 기능들은 엔터프라이즈 모듈로 분기되어있다.
+
+### 모듈정보
+
+- [Modules](https://ag-grid.com/react-data-grid/modules/)
+  - `ag-grid-react`는 통 패키지
+  - `@ag-grid-community`, `@ag-grid-enterprise` 스코프 하위는 모듈
+- [Modules - Example](https://ag-grid.com/react-data-grid/modules-building/)
+
+### 데이터 페칭
+
+- onGridReady 이후 실행
+
+```ts
+const onGridReady = useCallback((params: GridReadyEvent) => {
+  fetch("https://www.ag-grid.com/example-assets/olympic-winners.json")
+    .then((resp) => resp.json())
+    .then((data: IOlympicData[]) => setRowData(data));
+}, []);
+```
+
+### 코드 예시
+
+- [Full Spec](https://github.com/ag-grid/ag-grid-react-example/blob/master/src/richGridDeclarativeExample/RichGridDeclarativeExample.jsx)
+- 여기서 보는 게 낫다. 문서가 최신화 되어있지 않다.
