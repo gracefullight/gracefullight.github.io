@@ -2,11 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-01-21T13:38:08.633Z</updated>
+    <updated>2024-03-02T13:09:09.791Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[기술사 - 에세이]]></title>
+        <id>https://gracefullight.dev/2024/03/02/professional-engineer-essay</id>
+        <link href="https://gracefullight.dev/2024/03/02/professional-engineer-essay"/>
+        <updated>2024-03-02T13:09:09.791Z</updated>
+        <summary type="html"><![CDATA[에세이 쓰는 방법 정리]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+<li><a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm/">기술사: 알고리즘</a></li>
+<li><a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay/">기술사: 에세이</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="에세이">에세이<a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay#%EC%97%90%EC%84%B8%EC%9D%B4" class="hash-link" aria-label="에세이에 대한 직접 링크" title="에세이에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>문제를 가지고 아래 내용들을 생각해봐야한다.</p>
+</blockquote>
+<ol>
+<li>개념적 What: <em>무엇인가</em> 핵심, 원리, 가치, 결어 (기술, 서비스, 절차 중 하나)</li>
+<li>Why: <em>왜 필요한가</em></li>
+<li>구체적 What: <em>세부구성은 무엇인가</em> 아키텍쳐, 구성도 (개념도), 구성요소 (소스, 매커니즘, 결과)</li>
+<li>How: <em>어떻게 구현하는가</em> Provider, Consumer 관점, 이전에는 뭐가 있었는지</li>
+<li>Who: <em>누가 찾고, 활용하는가</em></li>
+<li>결론: 향후방안, 예상 이슈, 발전 방향</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="용어형">용어형<a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay#%EC%9A%A9%EC%96%B4%ED%98%95" class="hash-link" aria-label="용어형에 대한 직접 링크" title="용어형에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>1교시</p>
+</blockquote>
+<div class="language-text codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-text codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">문1)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">I. ~의 개요</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 개념</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    개념도 또는 관계도</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 시사점 || 배경</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">II. ~의 구조, 핵심요소, 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 구조 (구성도, 개념도)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 핵심요소</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    가.에 그린 다이어그램을 3단 표로 작성</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |  -  |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  다. ~의 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용             | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --------------- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 공공 | (대국민서비스 향상) |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 금융 | (가용성)         |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 민간 | (이윤추구)        |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    어려울 경우</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분        | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | ---------- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 비지니스 관점 |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 기술 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 보안 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">(III. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 1</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 2</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                              "끝"</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="서술형">서술형<a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay#%EC%84%9C%EC%88%A0%ED%98%95" class="hash-link" aria-label="서술형에 대한 직접 링크" title="서술형에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>2-4교시</p>
+</blockquote>
+<div class="language-text codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-text codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">문1)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">답)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">I. ~의 개요</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 개념</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 시사점 || 필요성 || 중요성 || 배경 || 목적</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">II. ~구조, 핵심요소, 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 구조 (구성도, 개념도)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 핵심요소</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    가.에 그린 다이어그램을 3단 표로 작성</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |  -  |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">III. ~의 적용 전략, 접근 전략</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 적용 전략</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    SWOT 분석</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 적용 방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용             | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --------------- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 공공 | (대국민서비스 향상) |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 금융 | (가용성)         |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 민간 | (이윤추구)        |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    어려울 경우</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분        | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | ---------- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 비지니스 관점 |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 기술 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 보안 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">IV. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 1</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 2</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                              "끝"</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="참조">참조<a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLCs7T50izAdnO3q-LZocc2mIYBC2jfAf5" target="_blank" rel="noopener noreferrer">Youtube: IT 전문가 - 에세이 시리즈</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+        <category label="정보처리" term="정보처리"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[aggrid 디버깅]]></title>
         <id>https://gracefullight.dev/2024/01/21/debug-aggrid</id>
@@ -61,9 +112,10 @@
 <li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
 <li><a href="https://gracefullight.dev/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
 <li><a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm/">기술사: 알고리즘</a></li>
+<li><a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay/">기술사: 에세이</a></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="알고리즘">알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="알고리즘에 대한 직접 링크" title="알고리즘에 대한 직접 링크">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="트리">트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="트리에 대한 직접 링크" title="트리에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="트리">트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="트리에 대한 직접 링크" title="트리에 대��한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="이진탐색트리">이진탐색트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="이진탐색트리에 대한 직접 링크" title="이진탐색트리에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Binary search</li>
@@ -105,7 +157,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="최소-신장-트리">최소 신장 트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EC%86%8C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="최소 신장 트리에 대한 직접 링크" title="최소 신장 트리에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="최소-신장-트리">최소 신장 트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EC%86%8C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="최소 신장 트리에 대한 직접 �링크" title="최소 신장 트리에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Minimal Spanning Tree</li>
 <li>가장 적은 비용/거리로 그래프의 모든 정점을 연결할 수 있는 구조</li>
@@ -123,7 +175,7 @@
 <li>간선 최소 개수: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
 <li>간선 최대 개수: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2 \log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="최단경로-문제">최단경로 문제<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C-%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="�최단경로 문제에 대한 직접 링크" title="최단경로 문제에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="최단경로-문�제">최단경로 문제<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C-%EB%AC%B8%EC%A0%9C" class="hash-link" aria-label="최단경로 문제에 대한 직접 링크" title="최단경로 문제에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Shortest Path</li>
 </ul>
@@ -203,7 +255,7 @@
 <li>Solution 을 찾기 위해 Candidate Solution 인 노드들을 순회</li>
 <li>Optimal Path (최적의 해)가 아닐 가능성이 높음, 보장할 수 없음.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="너비-우선-탐색">너비 우선 탐색<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="너비 우선 탐색에 대한 직접 링크" title="너비 우선 탐색에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="너비-우선-탐색">너비 우선 탐색<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89" class="hash-link" aria-label="너비 우선 탐색에 대한 직접 링크" title="너비 우선 탐색��에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Breadth First Search</li>
 <li>Optimal Path를 보장</li>
@@ -248,7 +300,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="신경회로망">신경회로망<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%8B%A0%EA%B2%BD%ED%9A%8C%EB%A1%9C%EB%A7%9D" class="hash-link" aria-label="신경회로망에 대한 직접 링크" title="신경회로망에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="k-means-클러스터링">K-means 클러스터링<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#k-means-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81" class="hash-link" aria-label="K-means 클러스터링에 대한 직접 링크" title="K-means 클러스터링에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="패턴인식">패턴인식<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%ED%8C%A8%ED%84%B4%EC%9D%B8%EC%8B%9D" class="hash-link" aria-label="패턴인식에 대한 직접 링크" title="패턴인��식에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="패턴인식">패턴인식<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%ED%8C%A8%ED%84%B4%EC%9D%B8%EC%8B%9D" class="hash-link" aria-label="패턴인식에 대한 직접 링크" title="패턴인식에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="딥러닝">딥러닝<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%94%A5%EB%9F%AC%EB%8B%9D" class="hash-link" aria-label="딥러닝에 대한 직접 링크" title="딥러닝에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="선형회귀">선형회귀<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80" class="hash-link" aria-label="선형회귀에 대한 직접 링크" title="선형회귀에 대한 직접 링크">​</a></h4>
 <ul>
@@ -300,7 +352,7 @@
 <li>치환</li>
 <li>교배/돌연변이: Mutation</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="그래픽-알고리즘">그래픽 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="그래픽 알고리즘에 대한 직접 링크" title="그래픽 알고��리즘에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="그래픽-알고리즘">그래픽 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="그래픽 알고리즘에 대한 직접 링크" title="그래픽 알고리즘에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="베지어-곡선">베지어 곡선<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%A7%80%EC%96%B4-%EA%B3%A1%EC%84%A0" class="hash-link" aria-label="베지어 곡선에 대한 직접 링크" title="베지어 곡선에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="압축-알고리즘">압축 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%95%95%EC%B6%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="압축 알고리즘에 대한 직접 링크" title="압축 알고리즘에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="run-length-코딩">Run-Length 코딩<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#run-length-%EC%BD%94%EB%94%A9" class="hash-link" aria-label="Run-Length 코딩에 대한 직접 링크" title="Run-Length 코딩에 대한 직접 링크">​</a></h3>
@@ -309,7 +361,7 @@
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="논리회로">논리회로<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C" class="hash-link" aria-label="논리회로에 대한 직접 링크" title="논리회로에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="논리게이트">논리게이트<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="논리게이트에 대한 직접 링크" title="논리게이트에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="불대수">불대수<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B6%88%EB%8C%80%EC%88%98" class="hash-link" aria-label="불대수에 대한 직접 링크" title="불대수에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="카노맵">카노맵<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B9%B4%EB%85%B8%EB%A7%B5" class="hash-link" aria-label="카��노맵에 대한 직접 링크" title="카노맵에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="카노맵">카노맵<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B9%B4%EB%85%B8%EB%A7%B5" class="hash-link" aria-label="카노맵에 대한 직접 링크" title="카노맵에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="전가산기">전가산기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%A0%84%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="전가산기에 대한 직접 링크" title="전가산기에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="반가산기">반가산기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B0%98%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="반가산기에 대한 직접 링크" title="반가산기에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="비교기">비교기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B9%84%EA%B5%90%EA%B8%B0" class="hash-link" aria-label="비교기에 대한 직접 링크" title="비교기에 대한 직접 링크">​</a></h3>
@@ -364,6 +416,7 @@
 <li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
 <li><a href="https://gracefullight.dev/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
 <li><a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm/">기술사: 알고리즘</a></li>
+<li><a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay/">기술사: 에세이</a></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-가치">네트워크의 가치<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%80%EC%B9%98" class="hash-link" aria-label="네트워크의 가치에 대한 직접 링크" title="네트워크의 가치에 대한 직접 링크">​</a></h2>
 <ul>
@@ -434,7 +487,7 @@
 <li>S: 신호전력</li>
 <li>N: 잡음전력</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크-구성">네트워크 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EF%BF%BD%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크 구성에 대한 직접 링크" title="네트워크 구성에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크-구성">네트워크 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크 구성에 대한 직접 링크" title="네트워크 구성에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-물리적-구성">네트워크의 물리적 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%AC%BC%EB%A6%AC%EC%A0%81-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크의 물리적 구성에 대한 직접 링크" title="네트워크의 물리적 구성에 대한 직접 링크">​</a></h3>
 <ul>
 <li>교환기: 라우터<!-- -->
@@ -541,7 +594,7 @@
 </li>
 <li>충돌, 지연 방지, 안전, 신속, 정확</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜">통신프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%EF%BF%BD%EF%BF%BD%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="통신프로토콜에 대한 직접 링크" title="통신프로토콜에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜">통신프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="통신프로토콜에 대한 직접 링크" title="통신프로토콜에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-개요">통신프로토콜 개요<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="통신프로토콜 개요에 대한 직접 링크" title="통신프로토콜 개요에 대한 직접 링크">​</a></h4>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-발전">통신프로토콜 발전<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B0%9C%EC%A0%84" class="hash-link" aria-label="통신프로토콜 발전에 대한 직접 링크" title="통신프로토콜 발전에 대한 직접 링크">​</a></h4>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-기능">통신프로토콜 기능<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="통신프로토콜 기능에 대한 직접 링크" title="통신프로토콜 기능에 대한 직접 링크">​</a></h4>
@@ -593,7 +646,7 @@
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="wban">WBAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wban" class="hash-link" aria-label="WBAN에 대한 직접 링크" title="WBAN에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="wpan">WPAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wpan" class="hash-link" aria-label="WPAN에 대한 직접 링크" title="WPAN에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="d2d">D2D<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#d2d" class="hash-link" aria-label="D2D에 대한 직접 링크" title="D2D에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="이동통신">이동통신<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0" class="hash-link" aria-label="이동통신에 대한 직접 링크" title="이동통신에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="이동통신">이동통신<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0" class="hash-link" aria-label="이동통��신에 대한 직접 링크" title="이동통신에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="발전단계">발전단계<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="발전단계에 대한 직접 링크" title="발전단계에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="이동통신망">이동통신망<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EB%A7%9D" class="hash-link" aria-label="이동통신망에 대한 직접 링크" title="이동통신망에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="이동통신-원리">이동통신 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="이동통신 원리에 대한 직접 링크" title="이동통신 원리에 대한 직접 링크">​</a></h3>
@@ -664,7 +717,7 @@
 <ul>
 <li>Software Defined Network</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="범정부-프로젝트">범정부 프로젝트<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B2%94%EC%A0%95%EB%B6%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" class="hash-link" aria-label="범정부 프로젝트에 대한 직접 링크" title="범�정부 프로젝트에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="범정부-프로젝트">범정부 프로젝트<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B2%94%EC%A0%95%EB%B6%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" class="hash-link" aria-label="범정부 프로젝트에 대한 직접 링크" title="범정부 프로젝트에 대한 직접 링크">​</a></h3>
 <ul>
 <li>기가 코리아 프로젝트</li>
 <li>국가 재난 안전 통신망: PS-LTE</li>
@@ -1688,7 +1741,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 <li>Why do some people achieve success faster than others?</li>
 <li>Are successful people often lonely?</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="opinion">opinion<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part3#opinion" class="hash-link" aria-label="opinion에 대한 직접 링크" title="opinion에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="opinion">opinion<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part3#opinion" class="hash-link" aria-label="opinion에 대�한 직접 링크" title="opinion에 대한 직접 링크">​</a></h2>
 <ul>
 <li>When do you think children start to have their own ideas/opinions?</li>
 <li>Are children’s opinions influenced by their parents?</li>
@@ -2139,7 +2192,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="education-and-talent-development">Education and Talent Development<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part3#education-and-talent-development" class="hash-link" aria-label="Education and Talent Development에 대한 직접 링크" title="Education and Talent Development에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="education-and-talent-development">Education and Talent Development<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part3#education-and-talent-development" class="hash-link" aria-label="Education and Talent Development에 대한 직접 ��링크" title="Education and Talent Development에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Do you think children are born smart or learn to be smart?<!-- -->
 <ul>
@@ -2251,7 +2304,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a painting</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> when you first saw this painting</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what the painting is about</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> who the painter is</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain how you feel about this painting</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="party">party<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#party" class="hash-link" aria-label="party에 대한 직접 링크" title="party에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a party that you enjoyed.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> when you went to the party</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where the party was</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what kind of party it was</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you enjoyed this party</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="science">science<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#science" class="hash-link" aria-label="science에 대한 직접 링크" title="science에 대한 직접 ��링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="science">science<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#science" class="hash-link" aria-label="science에 대한 직접 링크" title="science에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a science subject (Biology, Robotics) that you are interested in</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> which subject it is</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where you learnt it</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how you learnt it</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you are interested in it</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="rule">rule<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#rule" class="hash-link" aria-label="rule에 대한 직접 링크" title="rule에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a rule that is important in your school or at work.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what the rule is about</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what happens when people break this rule</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> why you think it is an important rule</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain how you feel about the rule</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -2293,7 +2346,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe an occasion when you got incorrect information.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> why you need this information</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how you got it</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how you found it was incorrect</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and how you felt about this experience.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="speach">speach<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#speach" class="hash-link" aria-label="speach에 대한 직접 링크" title="speach에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a speech you gave</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> Who you gave the speech to</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> What the speech was about</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> Why you gave the speech</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> And explain how you felt about the speech</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="clothing">clothing<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#clothing" class="hash-link" aria-label="clothing에 대한 직접 링크" title="clothing에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="clothing">clothing<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#clothing" class="hash-link" aria-label="clothing에 대한 직접 링크" title="clothing�에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a piece of clothing you often wear.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what it is</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how often you wear it</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what it is like</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you enjoy wearing it.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="adventure">adventure<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#adventure" class="hash-link" aria-label="adventure에 대한 직접 링크" title="adventure에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe an adventure you would like to go on</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where you would go</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> who you would like to go with</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> when you want to do this</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you want to go on this adventure.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -2325,7 +2378,7 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a long car journey you went on.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where you went</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what you did there</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> who you went there with</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you went on that journey by car.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="recent-opened-shop">recent opened shop<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#recent-opened-shop" class="hash-link" aria-label="recent opened shop에 대한 직접 링크" title="recent opened shop에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a new shop that recently opened in your city/town.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where the shop is</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what it sells</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what kinds of people usually go to this shop</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain how successful you think it will be in the future.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="game">game<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#game" class="hash-link" aria-label="game에 대한 직접 링크" title="game에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="game">game<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#game" class="hash-link" aria-label="game��에 대한 직접 링크" title="game에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a game you enjoyed playing when you were younger</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what it was: starcraft</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> where and when you played it: internet cafe with my friends</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how you played it: since it was computer game, I played that using computer.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and say why you enjoyed playing it:</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> could compete with my friends</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> won the game: could feel a sence of achievement.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> had three playable characters</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> could play different character whenever I wanted.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> liked play Protoss, because it was easy to play.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="smart-person">smart person<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#smart-person" class="hash-link" aria-label="smart person에 대한 직접 링크" title="smart person에 대한 직접 링크">​</a></h2>
 <div class="language-md codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-md codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">Describe a person who solved a problem in a smart way</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> who the person is: Vicky, she is my wife.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> what the problem was: frequently forgot passwords</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> how the person solved the problem: password managemnet service</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> and explain why you think the person did it smartly</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> practical solution</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> eliminates the need to remember multiple complex passwords, reducing stress.</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> time-saving</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token list punctuation" style="color:rgb(212, 212, 212)">-</span><span class="token plain"> allows for quick access to accounts without resetting forgotten passwords.</span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -2334,584 +2387,6 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="참조">참조<a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://yourielts.net/prepare-for-ielts/ielts-speaking/ielts-speaking-part-2-3-topics-and-questions-september-december-2023" target="_blank" rel="noopener noreferrer">YourIELTS Part2 &amp; 3</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
-        <category label="ielts" term="ielts"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IELTS Speaking 기출 Part1]]></title>
-        <id>https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1</id>
-        <link href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1"/>
-        <updated>2023-11-16T14:02:32.026Z</updated>
-        <summary type="html"><![CDATA[IELTS Speaking 기출 아이디어 정리]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li><a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1/">Part1</a></li>
-<li><a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part2/">Part2</a></li>
-<li><a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-part3/">Part3</a></li>
-<li><a href="https://gracefullight.dev/2023/12/02/ielts-speaking-tests-flaws/">Flaws</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="fishing">fishing<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#fishing" class="hash-link" aria-label="fishing에 대한 직접 링크" title="fishing에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Is fishing popular in your country?<!-- -->
-<ul>
-<li><code>popular</code>, <code>a lot of lakes and rivers</code>, <code>enjoy fishing there</code></li>
-</ul>
-</li>
-<li>Do you like eating fish?<!-- -->
-<ul>
-<li><code>love sushi and sasimi</code>, <code>fish for dinner with</code></li>
-</ul>
-</li>
-<li>Have you ever been to a place where there are lots of fish around you?<!-- -->
-<ul>
-<li><code>Han River</code>, <code>a lot of small fish swimming in the river</code>, <code>❌ catch them, the water seemed dirty</code></li>
-</ul>
-</li>
-<li>Have you seen any movies with lots of fish?<!-- -->
-<ul>
-<li><code>Finding nemo</code>, <code>tropical fishes</code></li>
-</ul>
-</li>
-<li>Why do people go fishing?<!-- -->
-<ul>
-<li><code>enjoy the experience</code>, <code>eat the fish by cooking it</code></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="running">running<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#running" class="hash-link" aria-label="running에 대한 직접 링크" title="running에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like running?<!-- -->
-<ul>
-<li><code>like running</code>, <code>used to run around</code>, <code>a lot on my plate</code>.</li>
-</ul>
-</li>
-<li>Where do you go running?<!-- -->
-<ul>
-<li><code>보라매 park</code>, <code>5mins/on foot/보라매 station</code></li>
-</ul>
-</li>
-<li>How often do you go running?<!-- -->
-<ul>
-<li><code>Once a week</code>, <code>prefer walking to running</code>, <code>safey exercise for my back and knees</code></li>
-<li><code>Once a week</code>, <code>used to run once a month</code>, <code>want to do exercise more</code></li>
-</ul>
-</li>
-<li>Which places do you think are perfect for running?<!-- -->
-<ul>
-<li><code>보라매 park</code>, <code>a running track</code>, <code>run with others</code></li>
-</ul>
-</li>
-<li>Do you think running is a good way to stay healthy?<!-- -->
-<ul>
-<li><code>feel a sence of achievement</code>, <code>relieve my stress</code></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="coffeetea">coffee/tea<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#coffeetea" class="hash-link" aria-label="coffee/tea에 대한 직접 링크" title="coffee/tea에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like to drink coffee or tea?<!-- -->
-<ul>
-<li><code>drink it every morning</code>, <code>prefer hand-dripped coffee to instant coffee</code></li>
-</ul>
-</li>
-<li>Do most people prefer tea or coffee today?<!-- -->
-<ul>
-<li><code>wake up by drinking coffee</code>, <code>enjoy the taste of coffee</code></li>
-</ul>
-</li>
-<li>How often do you drink coffee or tea?<!-- -->
-<ul>
-<li><code>drink coffee every single day</code>, <code>make hand-dripped coffee and take it</code></li>
-</ul>
-</li>
-<li>Are coffee and tea popular in your country?<!-- -->
-<ul>
-<li><code>the most popular beverage</code>, <code>on every corner</code>, <code>at least twice a day</code></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="helping-people">helping people<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#helping-people" class="hash-link" aria-label="helping people에 대한 직접 링크" title="helping people에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you usually help people around you?<!-- -->
-<ul>
-<li><code>always help people around me</code>, <code>it gives me a sense of achievement</code>.</li>
-</ul>
-</li>
-<li>How do you help people around you?<!-- -->
-<ul>
-<li><code>if my friends are in trouble</code>, <code>try to call them and listen to their concerns</code>.</li>
-</ul>
-</li>
-<li>Do your parents teach you how to help others?<!-- -->
-<ul>
-<li><code>teach me to help others with a true heart</code>, <code>when I give a hand, it shouldn't be just for show</code>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="robots">robots<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#robots" class="hash-link" aria-label="robots에 대한 직접 링크" title="robots에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Are you interested in robots?<!-- -->
-<ul>
-<li><code>can help with what humans do</code>, <code>copies human motions</code>.</li>
-</ul>
-</li>
-<li>Would you like to have robots in your home?<!-- -->
-<ul>
-<li><code>have a robot vaccume cleaner</code>, <code>it is very helpful to clean my home.</code></li>
-</ul>
-</li>
-<li>Are robots important?<!-- -->
-<ul>
-<li><code>can do dangerous human activites</code>, <code>can be friends for lonely people</code>.</li>
-</ul>
-</li>
-<li>How can robots affect people's lives?<!-- -->
-<ul>
-<li><code>by automating activities</code>, <code>can replace human activites like dangerous work</code>, <code>can be helpful to replace house chores</code>.</li>
-</ul>
-</li>
-<li>Would you like to drive a robot operated car?<!-- -->
-<ul>
-<li><code>don't have to drive and can just enjoy the ride</code>, <code>can watch TV and text with my friends while using the car</code>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="maps">maps<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#maps" class="hash-link" aria-label="maps에 대한 직접 링크" title="maps에 대한 직�접 링크">​</a></h2>
-<ul>
-<li>Do you often use maps?<!-- -->
-<ul>
-<li><code>when I visit a place for the first time</code>, <code>use them to check traffic and estimate arrival time</code>.</li>
-</ul>
-</li>
-<li>Are you good at reading maps?<!-- -->
-<ul>
-<li><code>can easily find locations on maps</code>, <code>good at navigating and don't often get lost.</code></li>
-</ul>
-</li>
-<li>Do you prefer electronic or paper maps?<!-- -->
-<ul>
-<li><code>electronic maps are better</code>, <code>paper maps can be heavy and difficult to handle</code>, <code>only need my smartphone</code>.</li>
-</ul>
-</li>
-<li>How often do you maps on your phone?<!-- -->
-<ul>
-<li><code>use map applications on my phone once a day</code>, <code>check the estimated time for public transportation</code>.</li>
-</ul>
-</li>
-<li>When was the first time when you used a map?<!-- -->
-<ul>
-<li><code>can't remember exactly when I first used a map</code>, <code>maybe I was six</code>, <code>went to church so I had to find out which bus I needed to get on</code>.</li>
-</ul>
-</li>
-<li>Did you learn to use maps when you were a child?<!-- -->
-<ul>
-<li><code>my father taught me how to read maps</code>, <code>they were paper maps</code>, <code>so they were heavy because they had over two hundred pages</code>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="chatting">Chatting<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#chatting" class="hash-link" aria-label="Chatting에 대한 직접 링크" title="Chatting에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like chatting with friends?<!-- -->
-<ul>
-<li><code>catch up with them</code>, <code>get updates</code></li>
-</ul>
-</li>
-<li>What do you usually chat about with friends?<!-- -->
-<ul>
-<li><code>hobbies, life, and exercise routine</code>, <code>share my daily activites</code>, <code>send them pictures</code></li>
-</ul>
-</li>
-<li>Do you prefer to chat with a group of people or with one friend?<!-- -->
-<ul>
-<li><code>chatting with just one friend</code>, <code>need to share a secret</code></li>
-</ul>
-</li>
-<li>Do you prefer to communicate face-to-face or via social media?<!-- -->
-<ul>
-<li><code>I prefer to meet my friends in person</code></li>
-</ul>
-</li>
-<li>Do you argue with friends?<!-- -->
-<ul>
-<li><code>but I haven't argued with my friends recently</code>, <code>try to understand them</code>.</li>
-</ul>
-</li>
-<li>Have your discussion topics changed since you were a child?<!-- -->
-<ul>
-<li><code>child: comics or computer games</code></li>
-<li><code>now: money and stocks</code></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="riding-a-bikebicycles">Riding a bike/bicycles<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#riding-a-bikebicycles" class="hash-link" aria-label="Riding a bike/bicycles에 대한 직접 링크" title="Riding a bike/bicycles에 대한 직접 링크">​</a></h2>
-<ul>
-<li>How often do you ride a bicycle?<!-- -->
-<ul>
-<li><code>once a month</code>, <code>can ride around the park to enjoy nature</code></li>
-</ul>
-</li>
-<li>Did you have a bike when you were a child?<!-- -->
-<ul>
-<li><code>had a bike</code>, <code>father gave it to me</code>, <code>enjoyed riding my bike because I could play with my friends</code>.</li>
-</ul>
-</li>
-<li>Did you ride a bike to school?<!-- -->
-<ul>
-<li><code>didn't</code>, <code>school was near my home</code>, <code>took 10minutes on foot</code>, <code>didn't need to ride it</code>.</li>
-</ul>
-</li>
-<li>Is it difficult to learn to ride a bike?<!-- -->
-<ul>
-<li><code>it depends on people</code>, <code>it's easy to learn</code>, <code>I learned to ride a bike in just three days</code></li>
-</ul>
-</li>
-<li>Is it popular to ride a bike in your country?<!-- -->
-<ul>
-<li><code>popular</code>, <code>따릉이</code>, <code>it allows people to easily borrow bikes</code></li>
-</ul>
-</li>
-<li>When was the last time you used your bicycle?<!-- -->
-<ul>
-<li><code>10 years ago</code>, <code>don't have my own bicycle</code>, <code>use the bike rental service</code>.</li>
-</ul>
-</li>
-<li>Will you teach your children to ride a bicycle?<!-- -->
-<ul>
-<li><code>will teach my children</code>, <code>it's the fastest way to learn</code>, <code>just like my father taught me</code>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="noise">Noise<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#noise" class="hash-link" aria-label="Noise에 대한 직접 링크" title="Noise에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you mind noises?<!-- -->
-<ul>
-<li><code>mind noises</code>, <code>I'm sensitive</code>, <code>use AirPods to reduce noises.</code></li>
-</ul>
-</li>
-<li>Do any noises bother you?<!-- -->
-<ul>
-<li><code>My neighbor's baby is often crying</code>, <code>I go out to find a quieter place</code>.</li>
-</ul>
-</li>
-<li>Is there too much noise in our world today?<!-- -->
-<ul>
-<li><code>too much noise around us</code>, <code>traffic noise and other sounds</code>, <code>loud music playing</code>.</li>
-</ul>
-</li>
-<li>What kind of noise do you come across every day?<!-- -->
-<ul>
-<li><code>hear noise every day</code>, <code>It's mostly K-pop songs</code>, <code>they play everywhere I go</code>, <code>I don't want to listen</code></li>
-</ul>
-</li>
-<li>What sounds do you like?<!-- -->
-<ul>
-<li><code>I like music</code>, <code>It's calm and enjoyable to listen to</code>.</li>
-</ul>
-</li>
-<li>What sounds do you dislike?<!-- -->
-<ul>
-<li><code>I dislike loud music</code>,</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="filmscinema">Films/Cinema<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#filmscinema" class="hash-link" aria-label="Films/Cinema에 대한 직접 링크" title="Films/Cinema에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Did you usually go to the cinema when you were a child?</li>
-<li>Do you often go to the cinema with your friends?</li>
-<li>Do you still like the same kind of movie you liked as a child?</li>
-<li>What films do you like?</li>
-<li>How often do you go to the cinema?</li>
-<li>Did you usually go to the cinema when you were a child?</li>
-<li>What was the 1st film that you watched?</li>
-<li>Do you prefer foreign films or films made in your country?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="musical-instruments">Musical Instruments<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#musical-instruments" class="hash-link" aria-label="Musical Instruments에 대한 직접 링크" title="Musical Instruments에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you know how to play a musical instrument?</li>
-<li>Do you think students should learn to play musical instruments at school?</li>
-<li>Have you taken any classes on musical instruments in school?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="geography">Geography<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#geography" class="hash-link" aria-label="Geography에 대한 직접 링크" title="Geography에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like Geography?</li>
-<li>Do you think Geography is useful?</li>
-<li>Have you ever studied Geography at school?</li>
-<li>Do you want to be a geographer in the future?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="gifts">Gifts<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#gifts" class="hash-link" aria-label="Gifts에 대한 직접 링크" title="Gifts에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What's the best gift you've ever received?</li>
-<li>Do you like to give expensive gifts?</li>
-<li>How often do you buy gifts for other people?</li>
-<li>Have you ever given handmade gifts to others?</li>
-<li>Have you ever received a gift you didn't like?</li>
-<li>Are you good at choosing gifts?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="clothes">Clothes<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#clothes" class="hash-link" aria-label="Clothes에 대한 직접 링크" title="Clothes에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What clothes do you like to wear?</li>
-<li>What kind of clothes do you never wear?</li>
-<li>Do you wear the same clothes on weekdays and weekends?</li>
-<li>What colour clothes do you like?</li>
-<li>Do you prefer to wear comfortable and casual clothes or smart clothes?</li>
-<li>Do you spend a lot of time choosing clothes?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="science">Science<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#science" class="hash-link" aria-label="Science에 대한 직접 링크" title="Science에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like science?</li>
-<li>What's your favorite science subject?</li>
-<li>When did you start to learn science?</li>
-<li>Is there any technology that you think is helpful in daily life?</li>
-<li>Do you think science classes are important?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="transport">Transport<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#transport" class="hash-link" aria-label="Transport에 대한 직접 링크" title="Transport에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What's the most popular means of transport in your hometown?</li>
-<li>How do you go to work/school?</li>
-<li>Will you use public transport more in the future?</li>
-<li>Will you drive more in the future?</li>
-<li>Are there any traffic problems in your area?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="bags">Bags<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#bags" class="hash-link" aria-label="Bags에 대한 직접 링크" title="Bags에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like bags?</li>
-<li>What kinds of bags do you like?</li>
-<li>Do you have different bags for different occasions?</li>
-<li>Do you often change bags?</li>
-<li>Do you usually carry a bag when you go out?</li>
-<li>What do you put in your bag?</li>
-<li>What factors do you consider when you buy a bag?</li>
-<li>Have you ever lost a bag?</li>
-<li>What bags do women like to buy?</li>
-<li>Is a bag an ideal gift?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="fixing-things">Fixing things<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#fixing-things" class="hash-link" aria-label="Fixing things에 대한 직접 링크" title="Fixing things에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Can you fix things?</li>
-<li>What kinds of things can you fix?</li>
-<li>Have you ever asked people to teach you how to fix things?</li>
-<li>Do you think fixing things is a necessary skill?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="rain">Rain<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#rain" class="hash-link" aria-label="Rain에 대한 ��직접 링크" title="Rain에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like rainy days?</li>
-<li>What do you do on rainy days?</li>
-<li>What do you usually do when it starts to rain and you’re outside?</li>
-<li>Do you think that rain is good?</li>
-<li>How does rain affect life in your country?</li>
-<li>Does it rain much in your city?</li>
-<li>Is there any part in your country where it doesn’t rain much?</li>
-<li>Have you ever changed your plans because of rain?</li>
-<li>Would you like to live in a dry or wet place?</li>
-<li>Do you prefer wet or dry weather?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="ice-cream">Ice cream<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#ice-cream" class="hash-link" aria-label="Ice cream에 대한 직접 링크" title="Ice cream에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you like ice cream?</li>
-<li>What’s your favourite flavour?</li>
-<li>Did you eat ice cream when you were a child?</li>
-<li>Are there any shops selling ice cream near your home?</li>
-<li>Can you make ice cream by yourself?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="wild-animals">Wild animals<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#wild-animals" class="hash-link" aria-label="Wild animals에 대한 직접 링크" title="Wild animals에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What’s your favourite wild animal?</li>
-<li>Are there many wild animals in your country?</li>
-<li>Have you ever seen wild animals?</li>
-<li>Have you ever been to a zoo or a safari park?</li>
-<li>Where can you see wild animals in your area?</li>
-<li>What animal would you like to see in the wild?</li>
-<li>Do you like watching animals in the zoo?</li>
-<li>Are there TV programs about wild animals in your country?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="teachers">Teachers<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#teachers" class="hash-link" aria-label="Teachers에 대한 직접 링크" title="Teachers에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Would you like to be a teacher?</li>
-<li>Do you think you could be a teacher?</li>
-<li>Did you have a favourite teacher?</li>
-<li>How did this teacher help you?</li>
-<li>Do you remember your teachers from primary school?</li>
-<li>Do you have a favorite teacher?</li>
-<li>Do you want to be a teacher in the future?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="dreamsambitions">Dreams/Ambitions<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#dreamsambitions" class="hash-link" aria-label="Dreams/Ambitions에 대한 직접 링크" title="Dreams/Ambitions에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you think you are an ambitious person?<!-- -->
-<ul>
-<li><code>want to immigrate to the United Arab Emirates someday</code>.</li>
-<li><code>good place to live</code>.</li>
-</ul>
-</li>
-<li>What was your dream when you were a child?<!-- -->
-<ul>
-<li><code>My dream was to be a judge</code></li>
-<li><code>This might sound funny</code>
-<ul>
-<li><code>wanted to remove a stone in front of the school</code></li>
-<li><code>sometimes tripped over it</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>What is your main ambition in life now?<!-- -->
-<ul>
-<li><code>want to immgrate or get a job abroad</code>, <code>after I get the IELTS score</code>.</li>
-<li><code>In fact, want to live in the United Arab Emirates, because it is the safest place in the world</code>.</li>
-</ul>
-</li>
-<li>Are you the kind of person who never gives up on your dreams?<!-- -->
-<ul>
-<li><code>I think a person who doesn't have their dream is like a dead person</code>.</li>
-<li><code>Having a dream makes people...</code></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="concentration">Concentration<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#concentration" class="hash-link" aria-label="Concentration에 대한 직접 링크" title="Concentration에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Are you a focused person?</li>
-<li>What do you do to help you concentrate?</li>
-<li>How do you stay focused?</li>
-<li>When do you need to be focused?</li>
-<li>Did you stay focused in class when you were a child?</li>
-<li>Is it difficult for you to stay focused on something?</li>
-<li>When is it hard for you to concentrate?</li>
-<li>What may distract you?</li>
-<li>Is it easy for you to do 2 things at the same time?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="friends">Friends<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#friends" class="hash-link" aria-label="Friends에 대한 직접 링크" title="Friends에 대한 직접 링크">​</a></h2>
-<ul>
-<li>How important are friends to you?</li>
-<li>Where do you often meet?</li>
-<li>What do you usually do with your friends?</li>
-<li>Do you have many friends?</li>
-<li>Do your friends think you’re a good friend?</li>
-<li>What kind of friend would you like to meet in the future?</li>
-<li>What kind of people do you like to have as friends?</li>
-<li>Do you prefer to spend time alone or with friends?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="days-off">Days Off<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#days-off" class="hash-link" aria-label="Days Off에 대한 직접 링크" title="Days Off에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you usually spend your day off with your parents or friends?</li>
-<li>What do you often do on your day off?</li>
-<li>When was your last day off?</li>
-<li>How often do you have days off?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="languages">Languages<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#languages" class="hash-link" aria-label="Languages에 대한 직접 링크" title="Languages에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What languages do you speak?</li>
-<li>What foreign languages have you studied?</li>
-<li>Why did you choose to study that language?</li>
-<li>How did you learn that language?</li>
-<li>Do you think it's difficult to learn a new language?</li>
-<li>Will you learn another language in the future?</li>
-<li>Is it hard to learn a foreign language?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="days-of-the-week">Days of the Week<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#days-of-the-week" class="hash-link" aria-label="Days of the Week에 대한 직접 링크" title="Days of the Week에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What’s your favourite day of the week?</li>
-<li>How do you usually spend your time on this day?</li>
-<li>What’s your typical daily routine?</li>
-<li>Is there anything that you do every day?</li>
-<li>What do you usually do at the weekends?</li>
-<li>Which day is your least favourite day?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="health">Health<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#health" class="hash-link" aria-label="Health에 대한 직접 링크" title="Health에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What do you do to stay healthy?</li>
-<li>What is your favourite sport?</li>
-<li>Are there health classes in your school?</li>
-<li>What is your favorite sport?</li>
-<li>Do you have any advice on keeping healthy for youngsters?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="workstudies">Work/Studies<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#workstudies" class="hash-link" aria-label="Work/Studies에 대한 직접 링크" title="Work/Studies에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you work or are you a student?</li>
-<li>Why did you choose this kind of work/to study this subject?</li>
-<li>Do you like your job?</li>
-<li>What’s the most interesting part of being a ... (... / student)?</li>
-<li>What’s the most difficult part of being a ... (... / student)?</li>
-<li>What do you dislike about your work or studies?</li>
-<li>What was your dream job when you were a child?</li>
-<li>Have you changed your mind since then?</li>
-<li>What kind of work would you like to do in the future?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="accommodation">Accommodation<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#accommodation" class="hash-link" aria-label="Accommodation에 대한 직접 링크" title="Accommodation에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Do you live in a house or an apartment/flat?</li>
-<li>Can you describe the place where you live?</li>
-<li>What do you like about living there? What do you like about your flat?</li>
-<li>Which is your favourite room in your home? Why?</li>
-<li>Which room does your family spend most time in?</li>
-<li>What can you see from the windows?</li>
-<li>Would you change anything about your home? Why/why not?</li>
-<li>Would you like to move to a different home in the future?</li>
-<li>What sort of accommodation would you most like to live in?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="home-decoration">Home Decoration<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#home-decoration" class="hash-link" aria-label="Home Decoration에 대한 직접 링크" title="Home Decoration에 대한 직접 링크">​</a></h2>
-<ul>
-<li>What kind of decoration do you prefer?</li>
-<li>How is your home decorated?</li>
-<li>What is your favorite color when decorating your home?</li>
-<li>What colour would you never use in your home?</li>
-<li>What colour would you choose to paint the walls of your room?</li>
-<li>Do people in your country like redecorating their homes?</li>
-<li>What is the new decorating trend for this year?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="hometown">Hometown<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#hometown" class="hash-link" aria-label="Hometown에 대한 직접 링크" title="Hometown에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Tell me about your hometown.</li>
-<li>What’s your hometown known for?</li>
-<li>Do you like your hometown?</li>
-<li>Is it big or small?</li>
-<li>How long have you been living there?</li>
-<li>Do you think you’ll continue living there for a long time?</li>
-<li>How has your town changed in the last 20 years?</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="your-country">Your Country<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#your-country" class="hash-link" aria-label="Your Country에 대한 직접 링크" title="Your Country에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Where is your country located?<!-- -->
-<ul>
-<li><code>located in East Asia</code>, <code>on the Korean Peninsula</code>.</li>
-</ul>
-</li>
-<li>Which part of your country do most people live in?<!-- -->
-<ul>
-<li><code>Seoul</code>, <code>the northwest side</code>, <code>the capital city of Korea</code>.</li>
-</ul>
-</li>
-<li>What are the main industries in your country?<!-- -->
-<ul>
-<li><code>The semiconductor industry</code>, <code>Samsung</code>, <code>specializing in this field</code>.</li>
-</ul>
-</li>
-<li>What are some of the good things about living in your country?<!-- -->
-<ul>
-<li><code>The convenience of public transportation</code></li>
-</ul>
-</li>
-<li>What are some of the bad things about living in your country?<!-- -->
-<ul>
-<li><code>The transportation restrictions due to North Korea</code>, <code>use planes instead of trains</code></li>
-</ul>
-</li>
-<li>What makes you feel proud of your country?<!-- -->
-<ul>
-<li><code>because of its safety</code>, <code>a lot of CCTVs at any place</code>, <code>helps to prevent crimes</code>.</li>
-</ul>
-</li>
-<li>Will you stay in your country in the future?<!-- -->
-<ul>
-<li><code>won't</code>, <code>want to live in the UAE</code>, <code>the reason why I'm study for the IELTS</code>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="참조">참조<a href="https://gracefullight.dev/2023/11/16/ielts-speaking-tests-part1#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://yourielts.net/prepare-for-ielts/ielts-speaking/ielts-speaking-part-1-topics-and-questions-september-december-2023" target="_blank" rel="noopener noreferrer">YourIELTS Part1</a></li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
