@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 03 Mar 2024 04:59:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Mar 2024 05:41:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[몽키테스트, 회귀테스트 비교]]></title>
+            <link>https://gracefullight.dev/pe/sw/monkey-vs-regression-test</link>
+            <guid>https://gracefullight.dev/pe/sw/monkey-vs-regression-test</guid>
+            <pubDate>Sun, 03 Mar 2024 05:41:00 GMT</pubDate>
+            <description><![CDATA[통합테스트]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>129/4/4</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="개념">개념<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="개념에 대한 직접 링크" title="개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="배경">배경<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
+<p>애자일 개발 방법론 도입으로 소프트웨어의 잦은 변경으로 인하여 자동화되고 연속적인 테스트의 필요성이 증가.</p>
+<p>기존 테스트로를 지속하면 살충제 패러독스가 발생하므로, 새로운 버그 발견을 위해 몽키테스트 실행.</p>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-몽키테스트와-회귀테스트-비교">II. 몽키테스트와 회귀테스트 비교<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#ii-%EB%AA%BD%ED%82%A4%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%99%80-%ED%9A%8C%EA%B7%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="II. 몽키테스트와 회귀테스트 비교에 대한 직접 링크" title="II. 몽키테스트와 회귀테스트 비교에 대한 직접 링크">​</a></h2>
+<p>가. ~의 구조 (구성도, 개념도)
+나. ~의 핵심요소
+가.에 그린 다이어그램을 3단 표로 작성</p>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="다-의-적용방안">다. ~의 적용방안<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EB%8B%A4-%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다. ~의 적용방안에 대한 직접 링크" title="다. ~의 적용방안에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
+<p>"끝"</p>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/129</category>
+        </item>
         <item>
             <title><![CDATA[데이터옵스, 데브옵스 비교]]></title>
             <link>https://gracefullight.dev/pe/sw/dataops-vs-devops</link>
@@ -54,7 +80,7 @@ SWOT 분석</p>
 <p>IoT, IoE 시대가 도래함에 따라, 모든 IT 디바이스가 사람에게 위험요인이 될 수 있음. 위험을 회피, 전가, 감소, 수용, 이관하기 위해 SW 안정성 분석 필요.</p>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-fta-분석-기법과-절차">II. FTA 분석 기법과 절차<a href="https://gracefullight.dev/pe/sw/safety-analysis#ii-fta-%EB%B6%84%EC%84%9D-%EA%B8%B0%EB%B2%95%EA%B3%BC-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="II. FTA 분석 기법과 절차에 대한 직접 링크" title="II. FTA 분석 기법과 절차에 대한 직접 링크">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="iii-fmea-분석-기법과-절차">III. FMEA 분석 기법과 절차<a href="https://gracefullight.dev/pe/sw/safety-analysis#iii-fmea-%EB%B6%84%EC%84%9D-%EA%B8%B0%EB%B2%95%EA%B3%BC-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="III. FMEA 분석 기법과 절차에 대한 직접 링크" title="III. FMEA 분석 기법과 절차에 대한 직접 링크">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="iv-hazop-분석-기법과-절차">IV. HAZOP 분석 기법과 절차<a href="https://gracefullight.dev/pe/sw/safety-analysis#iv-hazop-%EB%B6%84%EC%84%9D-%EA%B8%B0%EB%B2%95%EA%B3%BC-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IV. HAZOP 분석 기법과 절차에 대한 직접 링크" title="IV. HAZOP 분석 기법과 절차에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="iv-hazop-분석-기법과-절차">IV. HAZOP 분석 기법과 절차<a href="https://gracefullight.dev/pe/sw/safety-analysis#iv-hazop-%EB%B6%84%EC%84%9D-%EA%B8%B0%EB%B2%95%EA%B3%BC-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IV. HAZOP 분석 기법과 절차에 대한 직접 링크" title="IV. HAZOP 분석 기법과 절차에 대한 직접 링�크">​</a></h2>
 <p>"끝"</p>]]></content:encoded>
             <category>pe</category>
             <category>pe/131</category>
@@ -74,7 +100,7 @@ SWOT 분석</p>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="나-필요성과-배경">나. 필요성과 배경<a href="https://gracefullight.dev/pe/sw/integration-test#%EB%82%98-%ED%95%84%EC%9A%94%EC%84%B1%EA%B3%BC-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="나. 필요성과 배경에 대한 직접 링크" title="나. 필요성과 배경에 대한 직접 링크">​</a></h3>
 <p>시스템에서 일부 모듈만 새로 구축하는 경우 안정성을 위해 통합테스트 필요.</p>
 <p>연결된 외부 모듈의 테스트 환경이 제공되지 않을 경우 상위 모듈이면 테스트 드라이버로 모킹, 하위 모듈이면 테스트 스텁으로 모킹.</p>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-구조-핵심요소-적용방안">II. ~구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/integration-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. ~구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. ~�구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-구조-핵심요소-적용방안">II. ~구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/integration-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. ~구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. ~구조, 핵심요소, �적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="가-의-구조-구성도-개념도">가. ~의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/integration-test#%EA%B0%80-%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. ~의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. ~의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="나-의-핵심요소">나. ~의 핵심요소<a href="https://gracefullight.dev/pe/sw/integration-test#%EB%82%98-%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. ~의 핵심요소에 대한 직접 링크" title="나. ~의 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
@@ -96,6 +122,32 @@ SWOT 분석</p>
             <category>pe/131</category>
         </item>
         <item>
+            <title><![CDATA[리팩토링]]></title>
+            <link>https://gracefullight.dev/pe/sw/refactoring</link>
+            <guid>https://gracefullight.dev/pe/sw/refactoring</guid>
+            <pubDate>Sun, 03 Mar 2024 02:27:00 GMT</pubDate>
+            <description><![CDATA[리팩토링]]></description>
+            <content:encoded><![CDATA[<blockquote>
+<p>129/2/6</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/sw/refactoring#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="개념">개념<a href="https://gracefullight.dev/pe/sw/refactoring#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="개념에 대한 직접 링크" title="개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<p>외부적 기능은 수정하지 않고, 내부를 단순화하여 유지보수성을 향상시키는 기법</p>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="배경">배경<a href="https://gracefullight.dev/pe/sw/refactoring#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
+<p>애자일 개발 방법론의 도입으로 TDD를 기반으로 코드스멜을 제거하기 위한 리팩토링의 중요성이 강조됨.</p>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-리팩토링의-핵심요소-적용방안">II. 리팩토링의 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/refactoring#ii-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 리팩토링의 핵심요소, 적용방안에 대한 직접 링크" title="II. 리팩토링의 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="가-리팩토링의-구조-구성도-개념도">가. 리팩토링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/refactoring#%EA%B0%80-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="나-리팩토링의-핵심요소">나. 리팩토링의 핵심요소<a href="https://gracefullight.dev/pe/sw/refactoring#%EB%82%98-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 리팩토링의 핵심요소에 대한 직접 링크" title="나. 리팩토링의 핵심요소에 대한 직접 링크">​</a></h3>
+<p>가.에 그린 다이어그램을 3단 표로 작성</p>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="다-리팩토링의-적용방안">다. 리팩토링의 적용방안<a href="https://gracefullight.dev/pe/sw/refactoring#%EB%8B%A4-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다. 리팩토링의 적용방안에 대한 직접 링크" title="다. 리팩토링의 적용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
+<p>"끝"</p>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/129</category>
+        </item>
+        <item>
             <title><![CDATA[아키텍처 스타일, 디자인 패턴 비교]]></title>
             <link>https://gracefullight.dev/pe/sw/architecture-vs-design-pattern</link>
             <guid>https://gracefullight.dev/pe/sw/architecture-vs-design-pattern</guid>
@@ -109,7 +161,7 @@ SWOT 분석</p>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="시사점">시사점<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EC%8B%9C%EC%82%AC%EC%A0%90" class="hash-link" aria-label="시사점에 대한 직접 링크" title="시사점에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-차이점-핵심요소-적용방안">II. 차이점, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#ii-%EC%B0%A8%EC%9D%B4%EC%A0%90-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 차이점, 핵심요소, 적용방안에 대한 직접 링크" title="II. 차이점, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="가-아키텍처-스타일과-디자인-패턴의-차이점">가. 아키텍처 스타일과 디자인 패턴의 차이점<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EA%B0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="가. 아키텍처 스타일과 디자인 패턴의 차��이점에 대한 직접 링크" title="가. 아키텍처 스타일과 디자인 패턴의 차이점에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="가-아키텍처-스타일과-디자인-패턴의-차이점">가. 아키텍처 스타일과 디자인 패턴의 차이점<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EA%B0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="가. 아키텍처 스타일과 디자인 패턴의 차이점에 대한 직��접 링크" title="가. 아키텍처 스타일과 디자인 패턴의 차이점에 대한 직접 링크">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>아키텍처 스타일</th><th>디자인 패턴</th></tr></thead><tbody><tr><td>역할</td><td>-</td><td>-</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="나-아키텍처-스타일-유형">나. 아키텍처 스타일 유형<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EB%82%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="나. 아키텍처 스타일 유형에 대한 직접 링크" title="나. 아키텍처 스타일 유형에 대한 직접 링크">​</a></h3>
@@ -193,7 +245,7 @@ SWOT 분석</p>
 <blockquote>
 <p>1교시</p>
 </blockquote>
-<div class="language-text codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-text codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">문1)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">I. ~의 개요</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 개념</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    개념도 또는 관계도</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 시사점 || 배경</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">II. ~의 구조, 핵심요소, 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 구조 (구성도, 개념도)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 핵심요소</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    가.에 그린 다이어그램을 3단 표로 작성</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |  -  |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  다. ~의 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용             | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --------------- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 공공 | (대국민서비스 향상) |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 금융 | (가용성)         |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 민간 | (이윤추구)        |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    어려울 경우</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분        | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | ---------- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 비지니스 관점 |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 기술 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 보안 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">(III. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 1</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 2</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                              "끝"</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립�보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-text codeBlockContainer_w4is theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_gIfJ"><pre tabindex="0" class="prism-code language-text codeBlock_HgdV thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_wMyN"><span class="token-line" style="color:#9CDCFE"><span class="token plain">문1)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">## I. ~의 개요</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 개념</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    개념도 또는 관계도</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 시사점 || 배경</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">## II. ~의 구조, 핵심요소, 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  가. ~의 구조 (구성도, 개념도)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  나. ~의 핵심요소</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    가.에 그린 다이어그램을 3단 표로 작성</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |  -  |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  다. ~의 적용방안</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분 | 내용             | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | --- | --------------- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 공공 | (대국민서비스 향상) |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 금융 | (가용성)         |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 민간 | (이윤추구)        |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    어려울 경우</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 구분        | 내용 | 비고 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | ---------- | --- | --- |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 비지니스 관점 |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 기술 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    | 보안 관점    |  -  |  -  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">(## III. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트)</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 1</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  - 2</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                              "끝"</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup_b0Zg"><button type="button" aria-label="클립보드에 ��코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_sNy9" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ND2S"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_pc7j"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="서술형">서술형<a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay#%EC%84%9C%EC%88%A0%ED%98%95" class="hash-link" aria-label="서술형에 대한 직접 링크" title="서술형에 대한 직접 링크">​</a></h3>
 <blockquote>
 <p>2-4교시</p>
@@ -286,7 +338,7 @@ SWOT 분석</p>
 <ul>
 <li>모든 키의 값이 단말 노드에 순차 나열된다, 링크드 리스트로</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="red-black-트리">Red Black 트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#red-black-%ED%8A%B8%EF%BF%BD%EB%A6%AC" class="hash-link" aria-label="Red Black 트리에 대한 직접 링크" title="Red Black 트리에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="red-black-트리">Red Black 트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#red-black-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="Red Black 트리에 대한 직접 링크" title="Red Black 트리에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="t-트리">T 트리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#t-%ED%8A%B8%EB%A6%AC" class="hash-link" aria-label="T 트리에 대한 직접 링크" title="T 트리에 대한 직접 링크">​</a></h3>
 <ul>
 <li>AVL Tree + B tree</li>
@@ -379,7 +431,7 @@ SWOT 분석</p>
 <li>왼쪽은 Min Heap, 루트는 비어있음, 오른쪽은 Max Heap</li>
 <li>왼쪽 서브트리의 임의 노드는 오른쪽 서브트리 같은 위치에 있는 노드와 대응된다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="기수-정렬">기수 정렬<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="기수 정렬에 대한 직접 링크" title="기수 정렬에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="기수-정렬">기수 정렬<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%AC" class="hash-link" aria-label="기수 정렬에 대한 직접 링크" title="기수 정렬에 대한 직�접 링크">​</a></h3>
 <ul>
 <li>Radix Sort</li>
 <li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
@@ -466,7 +518,7 @@ SWOT 분석</p>
 <li>Sigmoid Function</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="단층-퍼셉트론">단층 퍼셉트론<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%8B%A8%EC%B8%B5-%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0" class="hash-link" aria-label="단층 퍼셉트론에 대한 직접 링크" title="단층 퍼셉트론에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="��다층-퍼셉트론">다층 퍼셉트론<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%B8%B5-%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0" class="hash-link" aria-label="다층 퍼셉트론에 대한 직접 링크" title="다층 퍼셉트론에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar__GM2" id="다층-퍼셉트론">다층 퍼셉트론<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%8B%A4%EC%B8%B5-%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0" class="hash-link" aria-label="다층 퍼셉트론에 대한 직접 링크" title="다층 퍼셉트론에 대한 직접 링크">​</a></h4>
 <h4 class="anchor anchorWithStickyNavbar__GM2" id="오차-역전파-알고리즘">오차 역전파 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%98%A4%EC%B0%A8-%EC%97%AD%EC%A0%84%ED%8C%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="오차 역전파 알고리즘에 대한 직접 링크" title="오차 역전파 알고리즘에 대한 직접 링크">​</a></h4>
 <ul>
 <li>Back Propagation</li>
@@ -496,7 +548,7 @@ SWOT 분석</p>
 <li>치환</li>
 <li>교배/돌연변이: Mutation</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="그래픽-알고리즘">그래픽 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="그래픽 알고리즘에 대한 직접 링크" title="그래픽 알고리즘에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="그래픽-알고리즘">그래픽 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="그래픽 알고��리즘에 대한 직접 링크" title="그래픽 알고리즘에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="베지어-곡선">베지어 곡선<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%A7%80%EC%96%B4-%EA%B3%A1%EC%84%A0" class="hash-link" aria-label="베지어 곡선에 대한 직접 링크" title="베지어 곡선에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="압축-알고리즘">압축 알고리즘<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%95%95%EC%B6%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="압축 알고리즘에 대한 직접 링크" title="압축 알고리즘에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="run-length-코딩">Run-Length 코딩<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#run-length-%EC%BD%94%EB%94%A9" class="hash-link" aria-label="Run-Length 코딩에 대한 직접 링크" title="Run-Length 코딩에 대한 직접 링크">​</a></h3>
@@ -505,359 +557,13 @@ SWOT 분석</p>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="논리회로">논리회로<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C" class="hash-link" aria-label="논리회로에 대한 직접 링크" title="논리회로에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="논리게이트">논리게이트<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="논리게이트에 대한 직접 링크" title="논리게이트에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="불대수">불대수<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B6%88%EB%8C%80%EC%88%98" class="hash-link" aria-label="불대수에 대한 직접 링크" title="불대수에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="��카노맵">카노맵<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B9%B4%EB%85%B8%EB%A7%B5" class="hash-link" aria-label="카노맵에 대한 직접 링크" title="카노맵에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="카노맵">카노맵<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%B9%B4%EB%85%B8%EB%A7%B5" class="hash-link" aria-label="카노맵에 대한 직접 링크" title="카노맵에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="전가산기">전가산기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%A0%84%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="전가산기에 대한 직접 링크" title="전가산기에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="반가산기">반가산기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B0%98%EA%B0%80%EC%82%B0%EA%B8%B0" class="hash-link" aria-label="반가산기에 대한 직접 링크" title="반가산기에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="비교기">비교기<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B9%84%EA%B5%90%EA%B8%B0" class="hash-link" aria-label="비교기에 대한 직접 링크" title="비교기에 대한 직접 링크">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="베이즈-이론">베이즈 이론<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%9D%B4%EC%A6%88-%EC%9D%B4%EB%A1%A0" class="hash-link" aria-label="베이즈 이론에 대한 직접 링크" title="베이즈 이론에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="조건부-확률">조건부 확률<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EC%A1%B0%EA%B1%B4%EB%B6%80-%ED%99%95%EB%A5%A0" class="hash-link" aria-label="조건부 확률에 대한 직접 링크" title="조건부 확률에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="베이즈-정리">베이즈 정리<a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm#%EB%B2%A0%EC%9D%B4%EC%A6%88-%EC%A0%95%EB%A6%AC" class="hash-link" aria-label="베이즈 정리에 대한 직접 링크" title="베이즈 정리에 대한 직접 링크">​</a></h3>]]></content:encoded>
-            <category>me</category>
-            <category>정보처리</category>
-        </item>
-        <item>
-            <title><![CDATA[End of Year Retro 2023]]></title>
-            <link>https://gracefullight.dev/2024/01/01/end-of-year-retro-2023</link>
-            <guid>https://gracefullight.dev/2024/01/01/end-of-year-retro-2023</guid>
-            <pubDate>Mon, 01 Jan 2024 03:38:25 GMT</pubDate>
-            <description><![CDATA[End of Year Retrospective 2023]]></description>
-            <content:encoded><![CDATA[<p>엄청난 일들이 많았던 해였다. 이보다 다이나믹할 수 있을까? 시작부터 완전히 망했다.
-과도한 업무의 스트레스를 운동으로 풀던 나는 적정 무게를 지키지 않았고, 무리에 무리를 더하며, 결국 1월 첫째 주에 디스크를 터뜨렸다.</p>
-<p>극복하는 과정은 더욱 힘들었다. 첫 두 달은 대부분의 시간을 누워서 보냈고, 앉아있지를 못해서 밥도 서서 먹었다.
-와이프와 지인들이 도와줘서 몇 가지 해결책과 재활방안을 마련했고, 정선근 교수님의 모든 책과 영상을 보고 허리가 아프면 새벽에라도 공원을 걸었다. 그리고 회고를 하듯이 매일의 통증을 기록해 나갔다.</p>
-<p>재활은 고통의 연속이었다. 누워있는 기간 동안 모든 근육은 잠겼고, 신경은 근육에 붙었고, 트라우마는 강해졌다. 통증의 원인이 재활인지, 디스크인지 구분할 수는 없었다.</p>
-<p>하드웨어가 무너지니 소프트웨어에도 장애가 발생하기 시작했다. 평생 긍정적 살아온 내가 우울증이 오기 시작했다. 쥐 공원 실험을 알고 난 뒤부터 정신의 문제는 환경의 문제라고 생각하는 난, 주변의 모든 환경을 바꾸기로 결심하고 비즈니스 아키텍처보다 개인 아키텍처를 우선시하기로 했다. 시간과 건강이 돈보다 중요해졌기에 퇴사했다.</p>
-<p>30대의 개인 아키텍처는 영어를 잘하는 개발자였고, 이는 점수로 증명할 수 있어야 했다. 대부분의 영미권 국가에서는 공학도에게 IELTS Academic Overall 6.5 점수를 요구했다. 인생에 한 번쯤은 영어를 언어학적인 접근으로 배워보고 싶기도 했지만, TOEIC, TEPS를 한 달 만에 원하는 점수를 취득했기에 이 시험도 무턱대고 도전하기 시작했다.</p>
-<p>학생 때 영어 대신 수학 문제를 한 개 더 풀었기에, 어학에 많은 스트레스를 받을 것이 뻔했다. 그래서 일요일 오전에 모여서 각자 코딩하는 소모임에 나가기 시작했다. 만들고 싶었던 기술 스택으로 주차마다 웹페이지를 꾸며가며 정신적인 스트레스를 풀어나갔다. 국민취업지원금을 받기 위해 신청했던 토요일 정보관리기술사 강의도 오롯이 나에게 집중할 수 있는 좋은 시간이었다. 몇몇 기술사 선생님들은 내가 원하던 나의 40~50대 모습 같아 목표가 생겼다.</p>
-<p>한 달, 두 달 기약 없이 영어 공부만 하는 시간이 지나갔다. 월 소득이 기회비용으로 환산되니 포기할 수도 없었다. 재활과 어학을 병행하는 건 벅찼다. 하지만 석 달째가 되니 뭔가 보이기 시작했다. 넉 달째가 되니 시험을 볼 수 있겠다는 자신감이 생겼다. 취업지원금을 받기 위해 면접을 봤던 회사는 주말의 코딩과 수업으로 준비가 되어있었기 때문에 한 단계씩 올라갈 수 있었다.</p>
-<p>12월에 들어와선 매일매일 1시간 이상 진행했던 운동으로 허리 재활이 거의 끝나가는 걸 기록했던 수치와 컨디션으로 느낄 수 있었다. 장시간 앉는 걸 견딜 수 있을 인프라가 갖추어지니 시험을 볼 수 있었다. 기다리는 시간은 힘들었다. 두 가지 모두 인생 2막을 설계하기 위한 중대한 발표였다. 한 달 더 공부하기에는 내 의지가 못 버틸 것 같았다.</p>
-<p>결과는 원하는 대학원의 진학할 수 있는 최소 요구사항을 맞췄고, 어디 가서 영어를 꽤 한다고 말할 수 있는 숫자가 나왔다. 똑똑하고 매너 있게 느껴졌던 면접관들과 같이 일할 수 있는 기회도 주어졌다. 소모임에도 꾸준함이 전해졌는지 운영진이 되었다.</p>
-<p>2024년은 막연했던 모든 목표에 실현 가능성이 생겼다. 기술사 자격증 하나 남았지만, 디스크도 극복했는데 1년이란 시간이 있다면 어떤 것이든 못할까 싶다.</p>]]></content:encoded>
-            <category>me</category>
-            <category>retro</category>
-        </item>
-        <item>
-            <title><![CDATA[기술사 - 네트워크]]></title>
-            <link>https://gracefullight.dev/2023/12/23/professional-engineer-network</link>
-            <guid>https://gracefullight.dev/2023/12/23/professional-engineer-network</guid>
-            <pubDate>Sat, 23 Dec 2023 01:03:04 GMT</pubDate>
-            <description><![CDATA[네트워크 챕터 정리]]></description>
-            <content:encoded><![CDATA[<ul>
-<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
-<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
-<li><a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
-<li><a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
-<li><a href="https://gracefullight.dev/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
-<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
-<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
-<li><a href="https://gracefullight.dev/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
-<li><a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm/">기술사: 알고리즘</a></li>
-<li><a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay/">기술사: 에세이</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-가치">네트워크의 가치<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%80%EC%B9%98" class="hash-link" aria-label="네트워크의 가치에 대한 직접 링크" title="네트워크의 가치에 대한 직접 링크">​</a></h2>
-<ul>
-<li>물리적 구성<!-- -->
-<ul>
-<li>NIC, 케이블, 허브</li>
-<li>라우터, 스위치</li>
-<li>기지국, 안테나</li>
-</ul>
-</li>
-<li>논리적 구성<!-- -->
-<ul>
-<li>IP, MAC, Domain</li>
-<li>전화번호</li>
-<li>프로토콜</li>
-</ul>
-</li>
-<li><strong>정보전달의 원리</strong>: 멀리, 빠르게, 고품질로<!-- -->
-<ul>
-<li><code>송신자 -&gt; 전달자 -&gt; 수신자</code></li>
-<li>속도 향상의 원리</li>
-<li>품질 향상의 원리</li>
-<li>먼거리 전달 원리</li>
-</ul>
-</li>
-<li>네트워크 분류<!-- -->
-<ul>
-<li>유선: PAN, LAN, WAN</li>
-<li>무선: WBAN, WPAN, WLAN</li>
-</ul>
-</li>
-</ul>
-<table><thead><tr><th>구분</th><th>정보 처리(IT) 시대</th><th>정보 통신(ICT) 시대</th></tr></thead><tbody><tr><td>처리 형태</td><td>저장, 검색, 가공, 연산</td><td>유통, 공유</td></tr><tr><td>처리 주체</td><td>컴퓨터, 제약된 공간</td><td>네트워크 망, 장비</td></tr><tr><td>목표</td><td>정보의 빠른 연산 및 처리</td><td>정보의 신속, 정확, 안전한 전달</td></tr><tr><td>기술</td><td>멀티코어, 파이프라이닝<br>캐시, 플래시<br>MEMS, 데이터마이닝</td><td>과거: 허브, 스위치, 라우터<br>현재: 인터넷, USN, 4G<br>미래: IoE, SDN, NFV</td></tr></tbody></table>
-<ul>
-<li>정보처리시대에서 정보통신시대로 넘어오면서<!-- -->
-<ul>
-<li>기회요인: 참여 공유 개방, 글로벌화</li>
-<li>위협요인: 개인정보유출, 프라이버시 침해 제거</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크-관련-법칙">네트워크 관련 법칙<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B4%80%EB%A0%A8-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="네트워크 관련 법칙에 대한 직접 링크" title="네트워크 관련 법칙에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="멧갈프-법칙">멧갈프 법칙<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%A9%A7%EA%B0%88%ED%94%84-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="멧갈프 법칙에 대한 직접 링크" title="멧갈프 법칙에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Metcalfe's Law, 메칼프 법칙: 이더넷의 창시자</li>
-<li>네트워킹의 효과는 사용자(가입자, 노드) 수의 제곱에 비례, 네트워크의 외부성</li>
-<li>예시: SNS</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="길더의-법칙">길더의 법칙<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EA%B8%B8%EB%8D%94%EC%9D%98-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="길더의 법칙에 대한 직접 링크" title="길더의 법칙에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Gilder's Law: IT칼럼니스트</li>
-<li>광섬유의 대역폭(Bandwidth)은 12개월마다 세 배씩 증가<!-- -->
-<ul>
-<li>트래픽 증가는 통신 속도의 증가라고 볼 수 있음</li>
-</ul>
-</li>
-<li>무어의 법칙으로 설명하는 직접회로 및 멤리의 증가 속도를 능가하는 광대역 통신망 설명</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="섀넌의-법칙">섀넌의 법칙<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%84%80%EB%84%8C%EC%9D%98-%EB%B2%95%EC%B9%99" class="hash-link" aria-label="섀넌의 법칙에 대한 직접 링크" title="섀넌의 법칙에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Shannon-Hartley theorem, 섀넌의 정리, 샤논의 정리</li>
-<li>채널용량은 대역폭과 신호 대 잡음비에 비례</li>
-</ul>
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mi>W</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = W \log_2(1 + \frac{S}{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">C</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em"><span style="top:-2.4559em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:2.0463em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span>
-<ul>
-<li>C: 채널 용량</li>
-<li>W: 대역폭</li>
-<li>S: 신호전력</li>
-<li>N: 잡음전력</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크-구성">네트워크 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크 구성에 대한 직접 링크" title="네트워크 구성에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-물리적-구성">네트워크의 물리적 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%AC%BC%EB%A6%AC%EC%A0%81-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크의 물리적 구성에 대한 직접 링크" title="네트워크의 물리적 구성에 대한 직접 링크">​</a></h3>
-<ul>
-<li>교환기: 라우터<!-- -->
-<ul>
-<li>가장 중요한 구성요소로 단말기들을 일시적으로 연결시켜주는 기능 제공</li>
-<li>회선 교환과 패킷 교환으로 나눠진다.</li>
-<li>패킷 교환은 Connection-Oriented 방식(TCP), Connection-Less 방식(UDP)로 나뉜다.</li>
-</ul>
-</li>
-<li>중계기<!-- -->
-<ul>
-<li>신호의 감쇄 및 왜곡을 보상하기 위해 증폭 및 재생 기능을 가지고 있음</li>
-<li>아날로그는 증폭만 가능하나, 디지털통신은 증폭과 재싱이 동시에 가능</li>
-</ul>
-</li>
-<li>전송 및 다중화 선로<!-- -->
-<ul>
-<li>전화선, 전용선</li>
-<li>광시분할 다중화</li>
-<li>광파장분할 다중화</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-논리적-구성">네트워크의 논리적 구성<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%85%BC%EB%A6%AC%EC%A0%81-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="네트워크의 논리적 구성에 대한 직접 링크" title="네트워크의 논리적 구성에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Network Address<!-- -->
-<ul>
-<li>가입자를 식별하기 위한 식별자</li>
-<li>전화번호, IP, MAC, DNS, ENUM (tElephone NUmber Mapping) 등</li>
-<li>DNS: 망에서는 숫자주소만 인식되나 사람의 사용 편의를 위해 문자주소를 사용함</li>
-</ul>
-</li>
-<li>네트워크 프로토콜<!-- -->
-<ul>
-<li>물리적 네트워크를 논리적으로 동작하도록 함</li>
-<li>사용자로 하여금 네트워크의 투명성 보장</li>
-<li>국제표준: OSI 7 Layer</li>
-<li>사실상의 표준: TCP/IP (이게 더 먼저 나옴, 인터넷 전용)</li>
-<li>하부계층(주로 LAN) 표준: IEEE 802, CSMA/CD, Ethernet</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="정보전달의-원리">정보전달의 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%A0%95%EB%B3%B4%EC%A0%84%EB%8B%AC%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="정보전달의 원리에 대한 직접 링크" title="정보전달의 원리에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="데이터-통신의-원리">데이터 통신의 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="데이터 통신의 원리에 대한 직접 링크" title="데이터 통신의 원리에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/wjkwMAn.png" alt="데이터 통신의 원리" class="img_nprn"></p>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="무선-통신의-원리">무선 통신의 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%AC%B4%EC%84%A0-%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="무선 통신의 원리에 대한 직접 링크" title="무선 통신의 원리에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" src="https://i.imgur.com/QHA3AUy.png" alt="무선 통신의 원리" class="img_nprn"></p>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="부호화">부호화<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B6%80%ED%98%B8%ED%99%94" class="hash-link" aria-label="부호화에 대한 직접 링크" title="부호화에 대한 직접 링크">​</a></h3>
-<ul>
-<li>속도와 품질 향상</li>
-<li>정보를 이진코드로 변환/압축하는 소스 부호화과정과 이를 처리, 전송하는 과정에서 오류를 줄이는 변환 채널부호화 과정을 총칭</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="변조">변조<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B3%80%EC%A1%B0" class="hash-link" aria-label="변조에 대한 직접 링크" title="변조에 대한 직접 링크">​</a></h3>
-<ul>
-<li>속도, 품질, 전송거리 향상</li>
-<li>신호 정보를 전송매체의 채널 특성에 맞게끔 신호(정보)의 세기나 변위, 주파수, 위상 등을 적합한 형태로 변환하는 과정</li>
-<li>변조 이유:<!-- -->
-<ul>
-<li>전송 매체에 알맞은 변조방식 사용하여 장거리 전송 가능</li>
-<li>변조가 넓은 주파수 대역에 걸치므로 다중화 가능</li>
-<li>주파수를 높임에 따라 안테나 길이, 크기의 단축이 가능</li>
-<li>ISI 등이 존재하는 채널에서 신호 대역폭을 늘려주어, 간섭효과 최소화 가능<!-- -->
-<ul>
-<li>Inter Symbol Interference: 심볼 간 간섭</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크의-분류">네트워크의 분류<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="네트워크의 분류에 대한 직접 링크" title="네트워크의 분류에 대한 직접 링크">​</a></h2>
-<ul>
-<li>유선<!-- -->
-<ul>
-<li>PAN: Personal Area, USB, HDMI</li>
-<li>LAN: Local Area</li>
-<li>MAN: Metro Area</li>
-<li>WAN: Wide Area</li>
-</ul>
-</li>
-<li>무선<!-- -->
-<ul>
-<li>WVAN: 의료목적</li>
-<li>WPAN: 블루투스, NFC</li>
-<li>WLAN</li>
-<li>WIMAX: WIBRO, 예전에 도심에서 모바일 서비스</li>
-<li>Radio</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="프로토콜">프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="프로토콜에 대한 직접 링크" title="프로토콜에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>약속의 중요성</p>
-</blockquote>
-<ul>
-<li>사람을 위한 식별자: 도메인, 전화번호</li>
-<li>컴퓨터를 위한 식별자: IPv4, IPv6, MAC</li>
-<li>최단 거리를 위한 전송경로 설정: 라우팅, 포워딩(스위칭), 상태확인(ICMP)</li>
-<li>다양한 전송방식:<!-- -->
-<ul>
-<li>TCP, UDP, SCTP</li>
-<li>브로드캐스팅, 유니캐스팅</li>
-<li>멀티캐스팅, 애니캐스팅</li>
-</ul>
-</li>
-<li>충돌, 지연 방지, 안전, 신속, 정확</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜">통신프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="통신프로토콜에 대한 직접 링크" title="통신프로토콜에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-개요">통신프로토콜 개요<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="통신프로토콜 개요에 대한 직접 링크" title="통신프로토콜 개요에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-발전">통신프로토콜 발전<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B0%9C%EC%A0%84" class="hash-link" aria-label="통신프로토콜 발전에 대한 직접 링크" title="통신프로토콜 발전에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="통신프로토콜-기능">통신프로토콜 기능<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%86%B5%EC%8B%A0%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="통신프로토콜 기능에 대한 직접 링크" title="통신프로토콜 기능에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="osi">OSI<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#osi" class="hash-link" aria-label="OSI에 대한 직접 링크" title="OSI에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="tcpip">TCP/IP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#tcpip" class="hash-link" aria-label="TCP/IP에 대한 직접 링크" title="TCP/IP에 대한 직접 링크">​</a></h4>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="컴퓨터를-위한-식별자">컴퓨터를 위한 식별자<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%BB%B4%ED%93%A8%ED%84%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%8B%9D%EB%B3%84%EC%9E%90" class="hash-link" aria-label="컴퓨터를 위한 식별자에 대한 직접 링크" title="컴퓨터를 위한 식별자에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="ip">IP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#ip" class="hash-link" aria-label="IP에 대한 직접 링크" title="IP에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="arp">ARP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#arp" class="hash-link" aria-label="ARP에 대한 직접 링크" title="ARP에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="사람을-위한-식별자">사람을 위한 식별자<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%82%AC%EB%9E%8C%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%8B%9D%EB%B3%84%EC%9E%90" class="hash-link" aria-label="사람을 위한 식별자에 대한 직접 링크" title="사람을 위한 식별자에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="인터넷-주소-체계">인터넷 주소 체계<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A3%BC%EC%86%8C-%EC%B2%B4%EA%B3%84" class="hash-link" aria-label="인터넷 주소 체계에 대한 직접 링크" title="인터넷 주소 체계에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="전화번호-enum">전화번호, ENUM<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-enum" class="hash-link" aria-label="전화번호, ENUM에 대한 직접 링크" title="전화번호, ENUM에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="전송-방식">전송 방식<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%A0%84%EC%86%A1-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="전송 방식에 대한 직접 링크" title="전송 방식에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="인터넷-전송-방식">인터넷 전송 방식<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%84%EC%86%A1-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="인터넷 전송 방식에 대한 직접 링크" title="인터넷 전송 방식에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="tcp">TCP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#tcp" class="hash-link" aria-label="TCP에 대한 직접 링크" title="TCP에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Transmission Control Protocol</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="udp">UDP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#udp" class="hash-link" aria-label="UDP에 대한 직접 링크" title="UDP에 대한 직접 링크">​</a></h3>
-<ul>
-<li>User Datagram Protocol</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="sctp">SCTP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#sctp" class="hash-link" aria-label="SCTP에 대한 직접 링크" title="SCTP에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Streaming Control Transmission Protocol</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="라우팅-프로토콜">라우팅 프로토콜<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="라우팅 프로토콜에 대한 직접 링크" title="라우팅 프로토콜에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="라우팅-알고리즘">라우팅 알고리즘<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%9D%BC%EC%9A%B0%ED%8C%85-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="라우팅 알고리즘에 대한 직접 링크" title="라우팅 알고리즘에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="distance-vector-algorithm">Distance Vector Algorithm<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#distance-vector-algorithm" class="hash-link" aria-label="Distance Vector Algorithm에 대한 직접 링크" title="Distance Vector Algorithm에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="link-state-algorithm">Link State Algorithm<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#link-state-algorithm" class="hash-link" aria-label="Link State Algorithm에 대한 직접 링크" title="Link State Algorithm에 대한 직접 링크">​</a></h4>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="기업용-네트워크">기업용 네트워크<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EA%B8%B0%EC%97%85%EC%9A%A9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="기업용 네트워크에 대한 직접 링크" title="기업용 네트워크에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="lan">LAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#lan" class="hash-link" aria-label="LAN에 대한 직접 링크" title="LAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="inter-networking-장비">Inter-Networking 장비<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#inter-networking-%EC%9E%A5%EB%B9%84" class="hash-link" aria-label="Inter-Networking 장비에 대한 직접 링크" title="Inter-Networking 장비에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="고속-lan">고속 LAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EA%B3%A0%EC%86%8D-lan" class="hash-link" aria-label="고속 LAN에 대한 직접 링크" title="고속 LAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="스위치">스위치<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%8A%A4%EC%9C%84%EC%B9%98" class="hash-link" aria-label="스위치에 대한 직접 링크" title="스위치에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="mpls">MPLS<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#mpls" class="hash-link" aria-label="MPLS에 대한 직접 링크" title="MPLS에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="wlan">WLAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wlan" class="hash-link" aria-label="WLAN에 대한 직접 링크" title="WLAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="차세대-wlan">차세대 WLAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%B0%A8%EC%84%B8%EB%8C%80-wlan" class="hash-link" aria-label="차세대 WLAN에 대한 직접 링크" title="차세대 WLAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="cdn">CDN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#cdn" class="hash-link" aria-label="CDN에 대한 직접 링크" title="CDN에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="가정용-네트워크">가정용 네트워크<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EA%B0%80%EC%A0%95%EC%9A%A9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="가정용 네트워크에 대한 직접 링크" title="가정용 네트워크에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="인터넷망">인터넷망<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B8%ED%84%B0%EB%84%B7%EB%A7%9D" class="hash-link" aria-label="인터넷망에 대한 직접 링크" title="인터넷망에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="광가입자망">광가입자망<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EA%B4%91%EA%B0%80%EC%9E%85%EC%9E%90%EB%A7%9D" class="hash-link" aria-label="광가입자망에 대한 직접 링크" title="광가입자망에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="케이블망">케이블망<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%BC%80%EC%9D%B4%EB%B8%94%EB%A7%9D" class="hash-link" aria-label="케이블망에 대한 직접 링크" title="케이블망에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="홈네트워크">홈네트워크<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%99%88%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="홈네트워크에 대한 직접 링크" title="홈네트워크에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="특수목적-네트워크">특수목적 네트워크<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%8A%B9%EC%88%98%EB%AA%A9%EC%A0%81-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="특수목적 네트워크에 대한 직접 링크" title="특수목적 네트워크에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="ad-hoc">Ad-hoc<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#ad-hoc" class="hash-link" aria-label="Ad-hoc에 대한 직접 링크" title="Ad-hoc에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="manet">MANET<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#manet" class="hash-link" aria-label="MANET에 대한 직접 링크" title="MANET에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="vanet">VANET<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#vanet" class="hash-link" aria-label="VANET에 대한 직접 링크" title="VANET에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="wmn">WMN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wmn" class="hash-link" aria-label="WMN에 대한 직접 링크" title="WMN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="wban">WBAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wban" class="hash-link" aria-label="WBAN에 대한 직접 링크" title="WBAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="wpan">WPAN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#wpan" class="hash-link" aria-label="WPAN에 대한 직접 링크" title="WPAN에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="d2d">D2D<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#d2d" class="hash-link" aria-label="D2D에 대한 직접 링크" title="D2D에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="이동통신">이동통신<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0" class="hash-link" aria-label="이동통신에 대한 직접 링크" title="이동통신에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="발전단계">발전단계<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="발전단계에 대한 직접 링크" title="발전단계에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="이동통신망">이동통신망<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EB%A7%9D" class="hash-link" aria-label="이동통신망에 대한 직접 링크" title="이동통신망에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="이동통신-원리">이동통신 원리<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="이동통신 원리에 대한 직접 링크" title="이동통신 원리에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="4g">4G<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#4g" class="hash-link" aria-label="4G에 대한 직접 링크" title="4G에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="4g-lte">4G LTE<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#4g-lte" class="hash-link" aria-label="4G LTE에 대한 직접 링크" title="4G LTE에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Long Term Evolution</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="cr">CR<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#cr" class="hash-link" aria-label="CR에 대한 직접 링크" title="CR에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Cognitive Radio</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="handover">Handover<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#handover" class="hash-link" aria-label="Handover에 대한 직접 링크" title="Handover에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="mih">MIH<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#mih" class="hash-link" aria-label="MIH에 대한 직접 링크" title="MIH에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Media Independent Handover</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="5g">5G<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#5g" class="hash-link" aria-label="5G에 대한 직접 링크" title="5G에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="6g">6G<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#6g" class="hash-link" aria-label="6G에 대한 직접 링크" title="6G에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="네트워크-품질">네트워크 품질<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%92%88%EC%A7%88" class="hash-link" aria-label="네트워크 품질에 대한 직접 링크" title="네트워크 품질에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="ipv4-주소-효율화">IPv4 주소 효율화<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#ipv4-%EC%A3%BC%EC%86%8C-%ED%9A%A8%EC%9C%A8%ED%99%94" class="hash-link" aria-label="IPv4 주소 효율화에 대한 직접 링크" title="IPv4 주소 효율화에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="ipv6">IPv6<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#ipv6" class="hash-link" aria-label="IPv6에 대한 직접 링크" title="IPv6에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="ipv4-to-ipv6">IPv4 to IPv6<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#ipv4-to-ipv6" class="hash-link" aria-label="IPv4 to IPv6에 대한 직접 링크" title="IPv4 to IPv6에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="모바일-ipv4">모바일 IPv4<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%AA%A8%EB%B0%94%EC%9D%BC-ipv4" class="hash-link" aria-label="모바일 IPv4에 대한 직접 링크" title="모바일 IPv4에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="흐름-제어">흐름 제어<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%ED%9D%90%EB%A6%84-%EC%A0%9C%EC%96%B4" class="hash-link" aria-label="흐름 제어에 대한 직접 링크" title="흐름 제어에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="오류-제어">오류 제어<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%98%A4%EB%A5%98-%EC%A0%9C%EC%96%B4" class="hash-link" aria-label="오류 제어에 대한 직접 링크" title="오류 제어에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="arq">ARQ<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#arq" class="hash-link" aria-label="ARQ에 대한 직접 링크" title="ARQ에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Automatic Repeat Reqeust</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="h-arq">H-ARQ<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#h-arq" class="hash-link" aria-label="H-ARQ에 대한 직접 링크" title="H-ARQ에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Hybrid ARQ</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="tcp-혼잡제어">TCP 혼잡제어<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#tcp-%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4" class="hash-link" aria-label="TCP 혼잡제어에 대한 직접 링크" title="TCP 혼잡제어에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="slow-start-congestion-avoidance">Slow start, Congestion Avoidance<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#slow-start-congestion-avoidance" class="hash-link" aria-label="Slow start, Congestion Avoidance에 대한 직접 링크" title="Slow start, Congestion Avoidance에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="fast-retransmit-fast-recovery">Fast Retransmit, Fast Recovery<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#fast-retransmit-fast-recovery" class="hash-link" aria-label="Fast Retransmit, Fast Recovery에 대한 직접 링크" title="Fast Retransmit, Fast Recovery에 대한 직접 링크">​</a></h4>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="qos">QoS<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#qos" class="hash-link" aria-label="QoS에 대한 직접 링크" title="QoS에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Quality of Service</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="최신-이슈">최신 이슈<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EC%B5%9C%EC%8B%A0-%EC%9D%B4%EC%8A%88" class="hash-link" aria-label="최신 이슈에 대한 직접 링크" title="최신 이슈에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="voip">VoIP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#voip" class="hash-link" aria-label="VoIP에 대한 직접 링크" title="VoIP에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Voice over IP</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="h323">H.323<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#h323" class="hash-link" aria-label="H.323에 대한 직접 링크" title="H.323에 대한 직접 링크">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="sip">SIP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#sip" class="hash-link" aria-label="SIP에 대한 직접 링크" title="SIP에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Session Initiation Protocol</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="mgcp">MGCP<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#mgcp" class="hash-link" aria-label="MGCP에 대한 직접 링크" title="MGCP에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Media Gateway Control Protocol</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="h248">H.248<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#h248" class="hash-link" aria-label="H.248에 대한 직접 링크" title="H.248에 대한 직접 링크">​</a></h4>
-<ul>
-<li>MEGACO, MEdia Gateway Control</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="voip-프로토콜-비교">VoIP 프로토콜 비교<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#voip-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="VoIP 프로토콜 비교에 대한 직접 링크" title="VoIP 프로토콜 비교에 대한 직접 링크">​</a></h4>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="lbs-측위기술">LBS 측위기술<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#lbs-%EC%B8%A1%EC%9C%84%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="LBS 측위기술에 대한 직접 링크" title="LBS 측위기술에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="미래-네트워크">미래 네트워크<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%AF%B8%EB%9E%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="미래 네트워크에 대한 직접 링크" title="미래 네트워크에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="icn">ICN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#icn" class="hash-link" aria-label="ICN에 대한 직접 링크" title="ICN에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Information Centric Network</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar__GM2" id="sdn">SDN<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#sdn" class="hash-link" aria-label="SDN에 대한 직접 링크" title="SDN에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Software Defined Network</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="범정부-프로젝트">범정부 프로젝트<a href="https://gracefullight.dev/2023/12/23/professional-engineer-network#%EB%B2%94%EC%A0%95%EB%B6%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" class="hash-link" aria-label="범정부 프로젝트에 대한 직접 링크" title="범정부 프로젝트에 대한 직접 링크">​</a></h3>
-<ul>
-<li>기가 코리아 프로젝트</li>
-<li>국가 재난 안전 통신망: PS-LTE</li>
-</ul>]]></content:encoded>
             <category>me</category>
             <category>정보처리</category>
         </item>
