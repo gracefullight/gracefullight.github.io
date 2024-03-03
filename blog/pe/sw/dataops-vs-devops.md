@@ -31,7 +31,25 @@ graph TB;
     B-.신속한 배포,안전한 운영.->Dev
 ```
 
-### 나. ~의 시사점 || 필요성 || 중요성 || 배경 || 목적
+### 나. 배경
+
+```mermaid
+graph BT
+
+  Cloud
+  BigData
+  AI[AI 엔진]
+  DevOps
+  Service[서비스]
+
+  Cloud-->BigData
+  Cloud-->AI
+  BigData-->DevOps
+  AI-->DevOps
+  DevOps-->Service
+```
+
+디지털트랜스포메이션으로 인한 빅데이터, DevOps의 중요성 증가.
 
 ## II. 데이터옵스 아키텍처
 
