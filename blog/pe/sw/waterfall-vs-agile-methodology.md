@@ -5,6 +5,7 @@ description: 폭포수 개발 방법론과 애자일 개발 방법론 비교
 authors: me
 tags:
   - pe
+  - pe/131
 ---
 
 > 131/1/3

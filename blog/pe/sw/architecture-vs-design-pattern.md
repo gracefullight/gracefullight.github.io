@@ -5,6 +5,7 @@ description: 아키텍처 스타일과 디자인 패턴 비교
 authors: me
 tags:
   - pe
+  - pe/131
 ---
 
 > 131/2/6
@@ -29,6 +30,24 @@ graph TB;
 ## II. 차이점, 핵심요소, 적용방안
 
 ### 가. 아키텍처 스타일과 디자인 패턴의 차이점
+
+```mermaid
+graph LR
+    subgraph A["Architecture Style"]
+        direction LR
+        A1 --> A2
+        A1 --> A3
+        A1 --> A4
+    end
+
+    A3 --> D1
+
+    subgraph D1["Design Pattern"]
+        direction TB
+        A-Class --> B-Class
+        A-Class -..-> C-Class
+    end
+```
 
 | 구분 | 아키텍처 스타일 | 디자인 패턴 |
 | ---- | --------------- | ----------- |
@@ -70,5 +89,10 @@ SWOT 분석
 | 비지니스 관점 | -    | -    |
 | 기술 관점     | -    | -    |
 | 보안 관점     | -    | -    |
+
+## IV. 적용시 추가적인 고려사항
+
+- 1
+- 2
 
 "끝"
