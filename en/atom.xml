@@ -2,11 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-03-03T01:42:00.000Z</updated>
+    <updated>2024-03-03T02:27:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[통합테스트]]></title>
+        <id>https://gracefullight.dev/en/pe/sw/integration-test</id>
+        <link href="https://gracefullight.dev/en/pe/sw/integration-test"/>
+        <updated>2024-03-03T02:27:00.000Z</updated>
+        <summary type="html"><![CDATA[통합테스트]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>131/3/3</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="i-개요">I. 개요<a href="https://gracefullight.dev/en/pe/sw/integration-test#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="가-개념">가. 개념<a href="https://gracefullight.dev/en/pe/sw/integration-test#%EA%B0%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p>소프트웨어 각 모듈간의 인터페이스 관련 오류 및 결함을 찾아내기 위한 테스트 방법</p>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="나-필요성과-배경">나. 필요성과 배경<a href="https://gracefullight.dev/en/pe/sw/integration-test#%EB%82%98-%ED%95%84%EC%9A%94%EC%84%B1%EA%B3%BC-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p>시스템에서 일부 모듈만 새로 구축하는 경우 안정성을 위해 통합테스트 필요.</p>
+<p>연결된 외부 모듈의 테스트 환경이 제공되지 않을 경우 상위 모듈이면 테스트 드라이버로 모킹, 하위 모듈이면 테스트 스텁으로 모킹.</p>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-구조-핵심요소-적용방안">II. ~구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/en/pe/sw/integration-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="가-의-구조-구�성도-개념도">가. ~의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/en/pe/sw/integration-test#%EA%B0%80-%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="나-의-핵심요소">나. ~의 핵심요소<a href="https://gracefullight.dev/en/pe/sw/integration-test#%EB%82%98-%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p>가.에 그린 다이어그램을 3단 표로 작성</p>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
+<p>III. ~의 적용 전략, 접근 전략
+가. ~의 적용 전략
+SWOT 분석</p>
+<p>나. ~의 적용 방안</p>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>(대국민서비스 향상)</td><td>-</td></tr><tr><td>금융</td><td>(가용성)</td><td>-</td></tr><tr><td>민간</td><td>(이윤추구)</td><td>-</td></tr></tbody></table>
+<p>어려울 경우</p>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
+<p>IV. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트</p>
+<ul>
+<li>1</li>
+<li>2</li>
+</ul>
+<p>"끝"</p>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/131" term="pe/131"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[아키텍처 스타일, 디자인 패턴 비교]]></title>
         <id>https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern</id>
@@ -22,6 +62,7 @@
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="시사점">시사점<a href="https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern#%EC%8B%9C%EC%82%AC%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar__GM2" id="ii-차이점-핵심요소-적용방안">II. 차이점, 핵심요소, 적용방안<a href="https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern#ii-%EC%B0%A8%EC%9D%B4%EC%A0%90-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="가-아키텍처-스타일과-디자인-패턴의-차이점">가. 아키텍처 스타일과 디자인 패턴의 차이점<a href="https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern#%EA%B0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
 <table><thead><tr><th>구분</th><th>아키텍처 스타일</th><th>디자인 패턴</th></tr></thead><tbody><tr><td>역할</td><td>-</td><td>-</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="나-아키텍처-스타일-유형">나. 아키텍처 스타일 유형<a href="https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern#%EB%82%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>MVC</td><td>-</td><td>-</td></tr><tr><td>서버-클라이언트</td><td>-</td><td>-</td></tr><tr><td>브로커</td><td>-</td><td>-</td></tr></tbody></table>
@@ -34,12 +75,18 @@ SWOT 분석</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>(대국민서비스 향상)</td><td>-</td></tr><tr><td>금융</td><td>(가용성)</td><td>-</td></tr><tr><td>민간</td><td>(이윤추구)</td><td>-</td></tr></tbody></table>
 <p>어려울 경우</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar__GM2" id="iv-적용시-추가적인-고려사항">IV. 적용시 추가적인 고려사항<a href="https://gracefullight.dev/en/pe/sw/architecture-vs-design-pattern#iv-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>1</li>
+<li>2</li>
+</ul>
 <p>"끝"</p>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
+        <category label="pe/131" term="pe/131"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[폭포수 개발 방법론, 애자일 개발 방법론 비교]]></title>
@@ -69,6 +116,7 @@ SWOT 분석</p>
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
+        <category label="pe/131" term="pe/131"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[기술사 - 에세이]]></title>
@@ -357,7 +405,7 @@ SWOT 분석</p>
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar__GM2" id="a-탐색">A* 탐색<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#a-%ED%83%90%EC%83%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar__GM2" id="에이�전트">에이전트<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar__GM2" id="에이전트">에이전트<a href="https://gracefullight.dev/en/2024/01/13/professional-engineer-algorithm#%EF%BF%BD%EF%BF%BD%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>특정 목적을 가지고 자동으로 해결해주는 소프트웨어</li>
 </ul>
@@ -1320,140 +1368,5 @@ Binary World 의 개념을 Real World 에 차용하면 대부분의 목표는 �
         </author>
         <category label="me" term="me"/>
         <category label="retro" term="retro"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IELTS Speaking 기출 오답노트]]></title>
-        <id>https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws</id>
-        <link href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws"/>
-        <updated>2023-12-02T05:26:20.141Z</updated>
-        <summary type="html"><![CDATA[IELTS Speaking 기출 아이디어 오답노트]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li><a href="https://gracefullight.dev/en/2023/11/16/ielts-speaking-tests-part1/">Part1</a></li>
-<li><a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-part2/">Part2</a></li>
-<li><a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-part3/">Part3</a></li>
-<li><a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws/">Flaws</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d1">D1<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Some young people prefer to get together with those who are not cowards.</li>
-<li>They want to prove their strength by engaging in adventurous activities.</li>
-<li>I think it varies, depending on people.</li>
-<li>but others are physically old, so they can't go out to do adventurous activities.</li>
-<li>By doing adventurous activities, people can feel a sense of achievement.</li>
-<li>These challenging activities make them fully satisfied.</li>
-<li>In water activities, they should learn how to swim.</li>
-<li>In the case of outdoor activities like climbing, they should have strength, particularly in their arms.</li>
-<li>They can catch up with their friends by doing exciting things.</li>
-<li>Friendship makes people more active.</li>
-<li>They usually have more opportunities to meet others. This helps them avoid loneliness.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d2">D2<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d2" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>one of the best players in his league.</li>
-<li>a member of the national team.</li>
-<li>According to the news, his salary is over 100 million dollars.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d3">D3<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d3" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>They want to wake up by drinking coffee.</li>
-<li>In the morning, I always make hand-dripped coffee and take it when I go to the academy or work.</li>
-<li>There are coffee shops on every corner.</li>
-<li>If my friends are in trouble, I always try to call them and listen to their concerns.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d4">D4<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>My parents always teach me to help others with a true heart.</li>
-<li>Actually, I don't need to explain, as she is my mother.</li>
-<li>When she cooked for me and my sister, and we finished eating the food and told her it was delicious, she was always happy.</li>
-<li>She has certificates for cooking, so I suppose she really enjoys cooking itself.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d5">D5<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>People who have their own house are usually judged as successful.</li>
-<li>Individuals like Son Heung-min, who are popular and accomplished in their field, are generally considered successful.</li>
-<li>Some people consider others as successful based on their job.</li>
-<li>Success can be measured by different things, such as popularity, wealth, or occupation.</li>
-<li>Others may consider factors like occupation or popularity to be true measures of success.</li>
-<li>This is because it allows me to catch up with them and get updates.</li>
-<li>I share my exercise routine and daily activities, and I also send them pictures.</li>
-<li>Sometimes I prefer chatting with just one friend, especially if I need to share a secret.</li>
-<li>I'm a people person, so I prefer to meet my friends in person.</li>
-<li>but, I haven't argued with my friends recently.</li>
-<li>In fact, without luck or the right opportunities, hardworking people might fail to succeed.</li>
-<li>I think education plays an important role in achieving success.</li>
-<li>If someone is trying to get money from investors, having a good education can really help.</li>
-<li>Some people read movie reviews because they want to know how good or funny the movie is.</li>
-<li>By checking reviews, they can better decide which movie to watch.</li>
-<li>Reviewers can only write about a movie after they have watched it, so people consider these reviews to be real and truthful.</li>
-<li>These kinds of movies are usually boring and have long screen times, so people prefer to enjoy other types of movies.</li>
-<li>People often check who the main character is. If the actor is famous, they are more likely to go to watch the movie.</li>
-<li>There are so many photos that come to my mind, but I have to say a photo taken in Thailand.</li>
-<li>I can recall that time, such as swimming on the beach and eating various local foods.</li>
-<li>When I see the photo, I remember how much I love traveling. It makes me excited to think about saving money for future trips.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d6">D6<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d6" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>I can ride around the park to enjoy nature.</li>
-<li>I really enjoyed riding my bike because I could play with my friends.</li>
-<li>I learned to ride a bike in just three days.</li>
-<li>It allows people to easily borrow bikes.</li>
-<li>It's the fastest way to learn, just like my father taught me.</li>
-<li>I have several feelings about her. First of all, I'm impressed.</li>
-<li>This is because her Korean skills are improving rapidly, and her pronunciation is very accurate.</li>
-<li>I'm encouraged by her progress. Her improving Korean skills inspire me to learn English, so I have started to memorize English words every single day.</li>
-<li>When people make an effort every day it helps them become smart and always leads to success.</li>
-<li>We can help children realize their talents by involving them in extracurricular activities based on their hobbies.</li>
-<li>The government provides many forms of financial support for students, like tuition.</li>
-<li>Many students use this support to reduce their university fees.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d7">D7<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d7" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>There is traffic noise and other noises, like when we go out, there is always loud music playing.</li>
-<li>I hear noise every day. It's mostly K-pop songs. They play everywhere I go, even if I don't want to listen.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d8">D8<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>He won the Asian Games and also received the Player of the Year award.</li>
-<li>He has lots of expereiences, so people can relay on him for practical advice.</li>
-<li>He has such a good sense of humor. so people smile whenever they watch his interview on TV.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d9">D9<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>There are various genres, such as sci-fi and action, by playing these kinds of games, people can relieve their stress.</li>
-<li>They want to achieve success or win prizes. Others play games just for fun and to relieve stress.</li>
-<li>competition encourages children to make an effort in their education and learning skills, and it also teaches them the value of perseverance and hard work.</li>
-<li>They have negative effects on children because they can easily become addicted to playing them.</li>
-<li>It has many playable characters, so children can play using a different character every single game.</li>
-<li>Outdoor games encourage people to stay healthy and to socialize with others.</li>
-<li>In terms of mental benefits, children can relieve stress through team games, and they can also learn about cooperation.</li>
-<li>In the case of offline games, specifically outdoor games, baseball is the most popular in Korea.</li>
-<li>Winning a game gives them a sense of achievement and helps to relieve stress.</li>
-<li>Video games are often violent and exciting, which means these factors can make people addicted to video games.</li>
-<li>After exercising, some people feel proud of themselves because they can experience a sense of accomplishment.</li>
-<li>They might get a big reward when they finish a difficult task.</li>
-<li>I believe it is a good place to live.</li>
-<li>This might sound funny, but I wanted to remove a stone in front of the school because I sometimes tripped over it</li>
-<li>In fact, I want to live in the United Arab Emirates because I think it is the safest place in the world.</li>
-<li>I think a person who doesn't have their dream is like a dead person.</li>
-<li>Having a dream makes people learn about many things and study regularly.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar__GM2" id="d10">D10<a href="https://gracefullight.dev/en/2023/12/02/ielts-speaking-tests-flaws#d10" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>It is also situated on the Korean Peninsula.</li>
-<li>Most Koreans live in Seoul, which is located in the northwest side of Korea. It is also the capital city of Korea</li>
-<li>I think the main industry in Korea is the semiconductor industry. This is because Samsung is the most famous company in Korea, specializing in this field.</li>
-<li>One of the good things about living in my country is the convenience of public transportation.</li>
-<li>It's easy to use because I can check the schedule and predict when the bus will arrive.</li>
-<li>One of the drawbacks of living in my country is the transportation restrictions due to North Korea.</li>
-<li>This limitation means we have to use planes instead of trains when traveling to other countries.</li>
-<li>I feel proud of my country because of its safety. To be specific, there are a lot of CCTVs at any place in Korea. It helps to prevent crimes.</li>
-<li>that is the reason why I'm studying for the IELTS</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
-        <category label="ielts" term="ielts"/>
     </entry>
 </feed>
