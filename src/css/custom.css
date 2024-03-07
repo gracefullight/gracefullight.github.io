@@ -88,6 +88,10 @@
   border-radius: var(--ifm-global-radius) !important;
 }
 
+.gt-container .gt-comment-content {
+  background-color: var(--ifm-background-surface-color) !important;
+}
+
 .gt-container .gt-comment-content:hover {
   box-shadow: none !important;
 }
