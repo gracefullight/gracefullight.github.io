@@ -61,9 +61,9 @@
     "@types/crypto-js": "^4.2.2",
     "@types/fs-extra": "^11.0.4",
     "@types/luxon": "^3.4.2",
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.11.25",
     "@types/pako": "^2.0.3",
-    "@types/react": "^18.2.63",
+    "@types/react": "^18.2.64",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "clipanion": "4.0.0-rc.3",
@@ -80,7 +80,7 @@
     "prettier": "^3.2.5",
     "regenerator-runtime": "^0.14.1",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "packageManager": "^pnpm@8.15.4",
   "engines": {
