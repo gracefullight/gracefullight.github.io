@@ -87,6 +87,29 @@
             <category>pe/130</category>
         </item>
         <item>
+            <title><![CDATA[퍼블릭, 프라이빗, 하이브리드 블록체인]]></title>
+            <link>https://gracefullight.dev/en/pe/convergence/public-private-hybrid-blockchain</link>
+            <guid>https://gracefullight.dev/en/pe/convergence/public-private-hybrid-blockchain</guid>
+            <pubDate>Sun, 10 Mar 2024 02:46:00 GMT</pubDate>
+            <description><![CDATA[Public, Private, Hybrid Blockchain]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-블록체인-개요">I. 블록체인 개요<a href="https://gracefullight.dev/en/pe/convergence/public-private-hybrid-blockchain#i-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>개념<!-- -->
+<ul>
+<li>탈중앙화된 P2P 네트워크를 기반에 합의알고리즘을 통해 무결성을 제공하는 분산 원장 기술</li>
+</ul>
+</li>
+<li>배경</li>
+</ul>
+<table><thead><tr><th>도입기</th><th>발전기</th><th>확산기</th><th>정착기</th></tr></thead><tbody><tr><td>디지털자산</td><td>스마트 계약</td><td>프로토콜</td><td>암호화폐/결제</td></tr><tr><td>거래 결제</td><td>지분증명</td><td>인터페이스</td><td>블록체인 기반 서비스 확대</td></tr><tr><td>비트코인 탄생</td><td>이더리움 탄생</td><td>알트코인 탄생</td><td>-</td></tr><tr><td>Public</td><td>Private</td><td>Hybrid</td><td>융복합</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구성">II. 구성<a href="https://gracefullight.dev/en/pe/convergence/public-private-hybrid-blockchain#ii-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="iii-적용방안">III. 적용방안<a href="https://gracefullight.dev/en/pe/convergence/public-private-hybrid-blockchain#iii-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>적용효과</th><th>적용방안</th></tr></thead><tbody><tr><td>공공</td><td>투명성 확보</td><td>토지대장, 투표, 전자시민권 등</td></tr><tr><td>금융</td><td>거래비용 절감</td><td>환전, 송금, 증권, 지급 등</td></tr><tr><td>민간</td><td>가시성 확보</td><td>물류, 유통, 공급망관리 등</td></tr><tr><td>민간</td><td>지적재산보호</td><td>개인 컨텐츠, 음악, 영상 등</td></tr></tbody></table>
+<p>"끝"</p>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/126</category>
+        </item>
+        <item>
             <title><![CDATA[음성 데이터 마이닝]]></title>
             <link>https://gracefullight.dev/en/pe/convergence/voice-data-mining</link>
             <guid>https://gracefullight.dev/en/pe/convergence/voice-data-mining</guid>
@@ -180,7 +203,7 @@
 <blockquote>
 <p>Pod, 메트릭모니터링, 로드밸런서 이미지</p>
 </blockquote>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-오�토스케일링의-핵심요소">나. 오토스케일링의 핵심요소<a href="https://gracefullight.dev/en/pe/convergence/auto-scaling#%EB%82%98-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-오토스케일링의-핵심요소">나. 오토스케일링의 핵심요소<a href="https://gracefullight.dev/en/pe/convergence/auto-scaling#%EB%82%98-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정책, 모니터링</td><td>메트릭 수집, 알람 전송</td><td>-</td></tr><tr><td>서버 이미지 배포</td><td>Scale-Out, Scale-In, 서버 프로비저닝</td><td>-</td></tr><tr><td>서비스 연결</td><td>Health-Check, 트래픽 제어</td><td>-</td></tr></tbody></table>
 <p>오토스케일링시 서버 추가까지 필요한 경우, Scale-Up이 비용절감의 효과를 가져올 수 있음.</p>
 <p>"끝"</p>]]></content:encoded>
@@ -339,31 +362,6 @@
 <p>"끝"</p>]]></content:encoded>
             <category>pe</category>
             <category>pe/129</category>
-        </item>
-        <item>
-            <title><![CDATA[응집도, 결합도 비교]]></title>
-            <link>https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling</link>
-            <guid>https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling</guid>
-            <pubDate>Sun, 03 Mar 2024 06:05:00 GMT</pubDate>
-            <description><![CDATA[응집도 결합도 비교]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>128/3/1</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-개요">I. 개요<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="개념">개념<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p>개념도 또는 관계도</p>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="배경">배경<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p>최근 MSA 적용에 따른 모듈화의 중요성이 증가되었고, MSA의 각 서비스 단위는 응집도가 높고 결합도가 낮게 구현되어야함.</p>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p>가.에 그린 다이어그램을 3단 표로 작성</p>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-적용방안">다. 적용방안<a href="https://gracefullight.dev/en/pe/sw/cohesion-vs-coupling#%EB%8B%A4-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
-<p>"끝"</p>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/128</category>
         </item>
     </channel>
 </rss>
