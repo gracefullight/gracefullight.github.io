@@ -59,3 +59,5 @@ tags:
 | 서비스모델 | CNCF Cloud Native App<br/>AAWS 6R Migration 등                             | -    |
 
 기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택.
+
+"끝"
