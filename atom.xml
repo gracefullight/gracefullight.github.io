@@ -2,11 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-03-10T01:24:00.000Z</updated>
+    <updated>2024-03-10T01:41:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[오토스케일링]]></title>
+        <id>https://gracefullight.dev/pe/convergence/auto-scaling</id>
+        <link href="https://gracefullight.dev/pe/convergence/auto-scaling"/>
+        <updated>2024-03-10T01:41:00.000Z</updated>
+        <summary type="html"><![CDATA[오토스케일링]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>131/1/8</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-오토스케일링의-개요">I. 오토스케일링의 개요<a href="https://gracefullight.dev/pe/convergence/auto-scaling#i-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 오토스케일링의 개요에 대한 직접 링크" title="I. 오토스케일링의 개요에 대한 직접 링크">​</a></h2>
+<ul>
+<li>
+<p>개념</p>
+<ul>
+<li>시스템 자원 매트릭을 모니터링하여 서버 사이즈를 자동으로 조절하는 기술</li>
+</ul>
+</li>
+<li>
+<p>배경</p>
+<ul>
+<li>클라우드 컴퓨팅의 온디맨드 방식을 기반으로 자원 최적화, 고가용성, 온프레미스 대비 운영의 단순화를 위해 필요</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-오토스케일링의-구조-핵심요소-적용방안">II. 오토스케일링의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/auto-scaling#ii-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 오토스케일링의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 오토스케일링의 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-오토스케일링의-구조-구성도-개념도">가. 오토스케일링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/auto-scaling#%EA%B0%80-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 오토스케일링의 구조 (구성도, 개념도)에 대한 직접 �링크" title="가. 오토스케일링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Pod, 메트릭모니터링, 로드밸런서 이미지</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-오토스케일링의-핵심요소">나. 오토스케일링의 핵심요소<a href="https://gracefullight.dev/pe/convergence/auto-scaling#%EB%82%98-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 오토스케일링의 핵심요소에 대한 직접 링크" title="나. 오토스케일링의 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정책, 모니터링</td><td>메트릭 수집, 알람 전송</td><td>-</td></tr><tr><td>서버 이미지 배포</td><td>Scale-Out, Scale-In, 서버 프로비저닝</td><td>-</td></tr><tr><td>서비스 연결</td><td>Health-Check, 트래픽 제어</td><td>-</td></tr></tbody></table>
+<p>오토스케일링시 서버 추가까지 필요한 경우, Scale-Up이 비용절감의 효과를 가져올 수 있음.</p>
+<p>"끝"</p>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/131" term="pe/131"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[클라우드 컴퓨팅, 서비스 모델, 배포모델]]></title>
         <id>https://gracefullight.dev/pe/convergence/cloud-computing</id>
@@ -32,7 +72,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-클라우드-컴퓨팅의-구조-핵심요소-적용방안">II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/cloud-computing#ii-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링��크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-클라우드-컴퓨팅의-구조-핵심요소-적용방안">II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/cloud-computing#ii-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-클라우드-컴퓨팅의-구조-구성도-개념도">가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EA%B0%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>배포 모델</li>
@@ -45,7 +85,7 @@
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-배포모델과-서비스모델-비교">나. 배포모델과 서비스모델 비교<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%82%98-%EB%B0%B0%ED%8F%AC%EB%AA%A8%EB%8D%B8%EA%B3%BC-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="나. 배포모델과 서비스모델 비교에 대한 직접 링크" title="나. 배포모델과 서비스모델 비교에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>배포모델</th><th>서비스모델</th></tr></thead><tbody><tr><td>목적</td><td>지속 가능 서비스 기반</td><td>온디맨드 서비스</td></tr><tr><td>범위</td><td>클라우드 구성 환경</td><td>클라우드 서비스</td></tr><tr><td>접근</td><td>온프레미스와의 연결성</td><td>비용 절감</td></tr></tbody></table>
 <p>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택.</p>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-클라우��드-컴퓨팅-활성-전략">다. 클라우드 컴퓨팅 활성 전략<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%8B%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%84%B1-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크" title="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-클라우드-컴퓨팅-활성-전략">다. 클라우드 컴퓨팅 활성 전략<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%8B%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%84%B1-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크" title="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>활성 전략</th><th>비고</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드<br>금융사 하이브리드 멀티 클라우드 등</td><td>-</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App<br>AAWS 6R Migration 등</td><td>-</td></tr></tbody></table>
 <p>기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택.</p>]]></content>
         <author>
@@ -186,7 +226,7 @@
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="배경">배경<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
 <p>최근 MSA 적용에 따른 모듈화의 중요성이 증가되었고, MSA의 각 서비스 단위는 응집도가 높고 결합도가 낮게 구현되어야함.</p>
 <h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="��가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
@@ -306,7 +346,7 @@ SWOT 분석</p>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-필요성과-배경">나. 필요성과 배경<a href="https://gracefullight.dev/pe/sw/integration-test#%EB%82%98-%ED%95%84%EC%9A%94%EC%84%B1%EA%B3%BC-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="나. 필요성과 배경에 대한 직접 링크" title="나. 필요성과 배경에 대한 직접 링크">​</a></h3>
 <p>시스템에서 일부 모듈만 새로 구축하는 경우 안정성을 위해 통합테스트 필요.</p>
 <p>연결된 외부 모듈의 테스트 환경이 제공되지 않을 경우 상위 모듈이면 테스트 드라이버로 모킹, 하위 모듈이면 테스트 스텁으로 모킹.</p>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. ~구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/integration-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. ~구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. ~구조, 핵심요소, 적용방�안에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. ~구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/integration-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. ~구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. ~구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-의-구조-구성도-개념도">가. ~의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/integration-test#%EA%B0%80-%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. ~의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. ~의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-의-핵심요소">나. ~의 핵심요소<a href="https://gracefullight.dev/pe/sw/integration-test#%EB%82%98-%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. ~의 핵심요소에 대한 직접 링크" title="나. ~의 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
@@ -347,7 +387,7 @@ SWOT 분석</p>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="배경">배경<a href="https://gracefullight.dev/pe/sw/refactoring#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
 <p>애자일 개발 방법론의 도입으로 TDD를 기반으로 코드스멜을 제거하기 위한 리팩토링의 중요성이 강조됨.</p>
 <h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-리팩토링의-핵심요소-적용방안">II. 리팩토링의 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/refactoring#ii-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 리팩토링의 핵심요소, 적용방안에 대한 직접 링크" title="II. 리팩토링의 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-리팩토링의-구조-구성도-개념도">가. 리팩토링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/refactoring#%EA%B0%80-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EF%BF%BD%EF%BF%BD%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-리팩토링의-구조-구성도-개념도">가. 리팩토링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/refactoring#%EA%B0%80-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 리팩토링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-리팩토링의-핵심요소">나. 리팩토링의 핵심요소<a href="https://gracefullight.dev/pe/sw/refactoring#%EB%82%98-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 리팩토링의 핵심요소에 대한 직접 링크" title="나. 리팩토링의 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
@@ -360,46 +400,5 @@ SWOT 분석</p>
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/129" term="pe/129"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[아키텍처 스타일, 디자인 패턴 비교]]></title>
-        <id>https://gracefullight.dev/pe/sw/architecture-vs-design-pattern</id>
-        <link href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern"/>
-        <updated>2024-03-03T01:42:00.000Z</updated>
-        <summary type="html"><![CDATA[아키텍처 스타일과 디자인 패턴 비교]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>131/2/6</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="개념">개념<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="개념에 대한 직접 링크" title="개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="시사점">시사점<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EC%8B%9C%EC%82%AC%EC%A0%90" class="hash-link" aria-label="시사점에 대한 직접 링크" title="시사점에 대한 직접 링크">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-차이점-핵심요소-적용방안">II. 차이점, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#ii-%EC%B0%A8%EC%9D%B4%EC%A0%90-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 차이점, 핵심요소, 적용방안에 대한 직접 링크" title="II. 차이점, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-아키텍처-스타일과-디자인-패턴의-차이점">가. 아키텍처 스타일과 디자인 패턴의 차이점<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EA%B0%80-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="가. 아키텍처 스타일과 디자인 패턴의 차이점에 대한 직접 링크" title="가. 아키텍처 스타일과 디자인 패턴의 차이점에 대한 직접 링크">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>아키텍처 스타일</th><th>디자인 패턴</th></tr></thead><tbody><tr><td>역할</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-아키텍처-스타일-유형">나. 아키텍처 스타일 유형<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EB%82%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="나. 아키텍처 스타일 유형에 대한 직접 링크" title="나. 아키텍처 스타일 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>MVC</td><td>-</td><td>-</td></tr><tr><td>서버-클라이언트</td><td>-</td><td>-</td></tr><tr><td>브로커</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-디자인패턴-유형">다. 디자인패턴 유형<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#%EB%8B%A4-%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="다. 디자인패턴 유형에 대한 직접 링크" title="다. 디자인패턴 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>생성패턴</td><td>-</td><td>-</td></tr><tr><td>구조패턴</td><td>-</td><td>-</td></tr><tr><td>행위패턴</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="iii-아키텍처-스타일과-디자인-패턴의-적용-전략-접근-전략">III. 아키텍처 스타일과 디자인 패턴의 적용 전략, 접근 전략<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#iii-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4%EC%9D%98-%EC%A0%81%EC%9A%A9-%EC%A0%84%EB%9E%B5-%EC%A0%91%EA%B7%BC-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="III. 아키텍처 스타일과 디자인 패턴의 적용 전략, 접근 전략에 대한 직접 링크" title="III. 아키텍처 스타일과 디자인 패턴의 적용 전략, 접근 전략에 대한 직접 링크">​</a></h2>
-<p>가. ~의 적용 전략
-SWOT 분석</p>
-<p>나. ~의 적용 방안</p>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>(대국민서비스 향상)</td><td>-</td></tr><tr><td>금융</td><td>(가용성)</td><td>-</td></tr><tr><td>민간</td><td>(이윤추구)</td><td>-</td></tr></tbody></table>
-<p>어려울 경우</p>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="iv-적용시-추가적인-고려사항">IV. 적용시 추가적인 고려사항<a href="https://gracefullight.dev/pe/sw/architecture-vs-design-pattern#iv-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="IV. 적용시 추가적인 고려사항에 대한 직접 링크" title="IV. 적용시 추가적인 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>1</li>
-<li>2</li>
-</ul>
-<p>"끝"</p>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/131" term="pe/131"/>
     </entry>
 </feed>
