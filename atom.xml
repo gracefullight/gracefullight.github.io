@@ -63,6 +63,41 @@
         <category label="pe/128" term="pe/128"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[대체 불가능 토큰]]></title>
+        <id>https://gracefullight.dev/pe/convergence/nft</id>
+        <link href="https://gracefullight.dev/pe/convergence/nft"/>
+        <updated>2024-03-10T02:46:00.000Z</updated>
+        <summary type="html"><![CDATA[NFT]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>130/4/1</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-nft-개요">I. NFT 개요<a href="https://gracefullight.dev/pe/convergence/nft#i-nft-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. NFT 개요에 대한 직접 링크" title="I. NFT 개요에 대한 직접 링크">​</a></h2>
+<ul>
+<li>
+<p>개념</p>
+<ul>
+<li>블록체인을 활용해 디지털 콘텐츠를 포함한 자산의 원본성을 보장하고 소유권을 주장할 수 있게 하는 가상 토큰</li>
+</ul>
+</li>
+<li>
+<p>배경</p>
+<ul>
+<li>온라인 및 메타버스 내에서 생성된 컨텐츠를 위한 저작권 증명을 위해 필요.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-nft-구성">II. NFT 구성<a href="https://gracefullight.dev/pe/convergence/nft#ii-nft-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="II. NFT 구성에 대한 직접 링크" title="II. NFT 구성에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>비고</th></tr></thead><tbody><tr><td>표준 프로토콜</td><td>ERC-721</td><td>NFT</td></tr><tr><td>표준 프로토콜</td><td>ERC-1155</td><td>다중 토큰</td></tr><tr><td>기술요소</td><td>NFT Contract</td><td>스마트 계약</td></tr><tr><td>기술요소</td><td>NFT Metadata</td><td>컨텐츠 태그</td></tr><tr><td>기술요소</td><td>NFT Mint</td><td>NFT 발행</td></tr><tr><td>기술요소</td><td>IPFS</td><td>NFT 미디어 데이터 저장</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="iii-nft-비교">III. NFT 비교<a href="https://gracefullight.dev/pe/convergence/nft#iii-nft-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="III. NFT 비교에 대한 직접 링크" title="III. NFT 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>FT</th><th>NFT</th></tr></thead><tbody><tr><td>토큰 정보</td><td>토큰 이름 및 약어</td><td>고유 정보</td></tr><tr><td>상호 교환성</td><td>O</td><td>X</td></tr><tr><td>분할성</td><td>O</td><td>X</td></tr><tr><td>활용</td><td>송금, 물품 구매</td><td>자산 소유권</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/130" term="pe/130"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[음성 데이터 마이닝]]></title>
         <id>https://gracefullight.dev/pe/convergence/voice-data-mining</id>
         <link href="https://gracefullight.dev/pe/convergence/voice-data-mining"/>
@@ -160,7 +195,7 @@
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-오토스케일링의-구조-핵심요소-적용방안">II. 오토스케일링의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/auto-scaling#ii-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 오토스케일링의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 오토스케일링의 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-오토스케일링의-구조-구성도-개념도">가. 오토스케일링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/auto-scaling#%EA%B0%80-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 오토스�케일링의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 오토스케일링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-오토스케일링의-구조-구성도-개념도">가. 오토스케일링의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/auto-scaling#%EA%B0%80-%EC%98%A4%ED%86%A0%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%A7%81%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 오토스케일링의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 오토스케일링의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <blockquote>
 <p>Pod, 메트릭모니터링, 로드밸런서 이미지</p>
 </blockquote>
@@ -200,7 +235,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-클라우드-컴퓨팅의-구조-핵심요소-적용방안">II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/cloud-computing#ii-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안�에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-클라우드-컴퓨팅의-구조-핵심요소-적용방안">II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/cloud-computing#ii-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 클라우드 컴퓨팅의 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-클라우드-컴퓨팅의-구조-구성도-개념도">가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EA%B0%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 클라우드 컴퓨팅의 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <ul>
 <li>배포 모델</li>
@@ -213,7 +248,7 @@
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-배포모델과-서비스모델-비교">나. 배포모델과 서비스모델 비교<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%82%98-%EB%B0%B0%ED%8F%AC%EB%AA%A8%EB%8D%B8%EA%B3%BC-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="나. 배포모델과 서비스모델 비교에 대한 직접 링크" title="나. 배포모델과 서비스모델 비교에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>배포모델</th><th>서비스모델</th></tr></thead><tbody><tr><td>목적</td><td>지속 가능 서비스 기반</td><td>온디맨드 서비스</td></tr><tr><td>범위</td><td>클라우드 구성 환경</td><td>클라우드 서비스</td></tr><tr><td>접근</td><td>온프레미스와의 연결성</td><td>비용 절감</td></tr></tbody></table>
 <p>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택.</p>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-클라우드-컴퓨팅-활성-전략">다. 클라우드 컴퓨팅 활성 전략<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%8B%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%84%B1-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크" title="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="다-클라우드-컴퓨�팅-활성-전략">다. 클라우드 컴퓨팅 활성 전략<a href="https://gracefullight.dev/pe/convergence/cloud-computing#%EB%8B%A4-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%84%B1-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크" title="다. 클라우드 컴퓨팅 활성 전략에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>활성 전략</th><th>비고</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드<br>금융사 하이브리드 멀티 클라우드 등</td><td>-</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App<br>AAWS 6R Migration 등</td><td>-</td></tr></tbody></table>
 <p>기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택.</p>
 <p>"끝"</p>]]></content>
@@ -326,7 +361,7 @@
 <p>테스트 V모델에서 요구사항/분석/설계/코딩 측면은 개발자 관점의 화이트박스 테스트로 Verification 하고,
 단위/통합/시스템/사용자 테스트 측면은 사용자 관점의 블랙박스 테스트로 Validation 하게 설계 필요.</p>
 <h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/whitebox-vs-blackbox-test#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/whitebox-vs-blackbox-test#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/whitebox-vs-blackbox-test#%EA%B0%80-%EF%BF%BD%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/sw/whitebox-vs-blackbox-test#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
@@ -355,7 +390,7 @@
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="배경">배경<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
 <p>최근 MSA 적용에 따른 모듈화의 중요성이 증가되었고, MSA의 각 서비스 단위는 응집도가 높고 결합도가 낮게 구현되어야함.</p>
 <h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 ��직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구�조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_x1WJ" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/sw/cohesion-vs-coupling#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
 <p>가.에 그린 다이어그램을 3단 표로 작성</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
@@ -368,35 +403,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/128" term="pe/128"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[몽키테스트, 회귀테스트 비교]]></title>
-        <id>https://gracefullight.dev/pe/sw/monkey-vs-regression-test</id>
-        <link href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test"/>
-        <updated>2024-03-03T05:41:00.000Z</updated>
-        <summary type="html"><![CDATA[통합테스트]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>129/4/4</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="개념">개념<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="개념에 대한 직접 링크" title="개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_x1WJ" id="배경">배경<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="배경에 대한 직접 링크" title="배경에 대한 직접 링크">​</a></h3>
-<p>애자일 개발 방법론 도입으로 소프트웨어의 잦은 변경으로 인하여 자동화되고 연속적인 테스트의 필요성이 증가.</p>
-<p>기존 테스트로를 지속하면 살충제 패러독스가 발생하므로, 새로운 버그 발견을 위해 몽키테스트 실행.</p>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="ii-몽키테스트와-회귀테스트-비교">II. 몽키테스트와 회귀테스트 비교<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#ii-%EB%AA%BD%ED%82%A4%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%99%80-%ED%9A%8C%EA%B7%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="II. 몽키테스트와 회귀테스트 비교에 대한 직접 링크" title="II. 몽키테스트와 회귀테스트 비교에 대한 직접 링크">​</a></h2>
-<p>가. ~의 구조 (구성도, 개념도)
-나. ~의 핵심요소
-가.에 그린 다이어그램을 3단 표로 작성</p>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_x1WJ" id="다-의-적용방안">다. ~의 적용방안<a href="https://gracefullight.dev/pe/sw/monkey-vs-regression-test#%EB%8B%A4-%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다. ~의 적용방안에 대한 직접 링크" title="다. ~의 적용방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
-<p>"끝"</p>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/129" term="pe/129"/>
     </entry>
 </feed>
