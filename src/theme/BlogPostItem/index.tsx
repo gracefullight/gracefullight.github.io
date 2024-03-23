@@ -11,6 +11,7 @@ import md5 from "crypto-js/md5";
 import Gitalk from "gitalk";
 import GitalkComponent from "gitalk/dist/gitalk-component";
 import "gitalk/dist/gitalk.css";
+import { useEffect, useState } from "react";
 
 type Props = WrapperProps<typeof BlogPostItemType>;
 
@@ -29,22 +30,28 @@ export default function BlogPostItemWrapper(props: Props): JSX.Element {
     siteConfig: { projectName, organizationName },
   } = useDocusaurusContext();
   const { pathname } = useLocation();
-
-  const gitalkOptions = {
+  const [gitalkOptions, setGitalkOptions] = useState<Gitalk.GitalkOptions>({
     ...gitalkBaseOptions,
     repo: projectName,
     owner: organizationName,
     admin: [organizationName],
-    id: md5(pathname).toString(),
-  } as Gitalk.GitalkOptions;
+  });
+
+  useEffect(() => {
+    setGitalkOptions((prev) => ({
+      ...prev,
+      title: document.title,
+      id: md5(pathname).toString(),
+    }));
+  }, [pathname]);
+
+  const isRootPage = ["/", "/index.html"].includes(pathname);
 
   return (
     <>
       <BlogPostItem {...props} />
       <BrowserOnly>
         {() => {
-          const isRootPage = ["/", "/index.html"].includes(pathname);
-
           return !isRootPage && <GitalkComponent options={gitalkOptions} />;
         }}
       </BrowserOnly>
