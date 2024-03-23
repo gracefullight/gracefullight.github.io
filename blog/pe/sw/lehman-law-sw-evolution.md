@@ -1,7 +1,7 @@
 ---
 title: 리먼(Lehman)의 소프트웨어 진화 법칙
 date: 2024-03-17T16:33:00.000+09:00
-description: 리먼(Lehman)의 소포트웨어 진화 법칙
+description: 리먼(Lehman)의 소프트웨어 진화 법칙
 authors: me
 tags:
   - pe
