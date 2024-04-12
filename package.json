@@ -65,7 +65,7 @@
     "@types/luxon": "^3.4.2",
     "@types/node": "^20.12.7",
     "@types/pako": "^2.0.3",
-    "@types/react": "^18.2.75",
+    "@types/react": "^18.2.77",
     "clipanion": "4.0.0-rc.3",
     "devmoji": "^2.3.0",
     "dotenv": "^16.4.5",
@@ -83,7 +83,7 @@
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.6.0"
   },
-  "packageManager": "^pnpm@8.15.5",
+  "packageManager": "^pnpm@8.15.6",
   "engines": {
     "node": "20"
   }
