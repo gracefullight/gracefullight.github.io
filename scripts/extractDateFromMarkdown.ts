@@ -9,24 +9,27 @@ export class ExtractDateFromMarkdown extends Command {
   private getDateMetadata(text: string) {
     const metadataRegex = /^---\n((?:.+\n)+?)---\n/;
     const metadataMatch = text.match(metadataRegex);
-
-    const metadata = {} as Record<string, string | undefined>;
-    if (metadataMatch) {
-      const metadataString = metadataMatch[1];
-      const metadataLines = metadataString.split("\n");
-      for (const line of metadataLines) {
-        const [key, value] = line.split(": ");
-        metadata[key] = value;
-      }
+    if (!metadataMatch) {
+      return null;
     }
 
-    if (metadata?.date) {
-      // * 2019-02-17 21:39:40
-      const [created] = metadata?.date.split(" ");
-      return created;
+    const metadataString = metadataMatch[1];
+    const metadataLines = metadataString.split("\n");
+
+    const metadata: Record<string, string | undefined> = {};
+    for (const line of metadataLines) {
+      const [key, value] = line.split(": ");
+      metadata[key] = value;
     }
 
-    return null;
+    const metadataDate = metadata.date;
+    if (!metadataDate) {
+      return null;
+    }
+
+    // * 2019-02-17 21:39:40
+    const [created] = metadataDate.split(" ");
+    return created;
   }
 
   async execute() {
@@ -43,6 +46,7 @@ export class ExtractDateFromMarkdown extends Command {
         const created = this.getDateMetadata(text);
         if (!created) {
           this.context.stderr.write(mdFile);
+          return;
         }
 
         const targetDirectory = resolve(

@@ -105,7 +105,7 @@ document.getElementById("div").addEventListener("click", (event) => {
 ```js
 function Person() {} // 선언문
 var person = Person(); // 함수 표현식
-var person = new Person(); // 생성자
+var person2 = new Person(); // 생성자
 ```
 
 # .call과 .apply의 차이점?

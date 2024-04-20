@@ -12,6 +12,7 @@ date: 2021-01-15 18:28:14
 ## 전체 설정
 
 ```js
+/* eslint-disable no-dupe-keys */
 const path = require("path");
 
 module.exports = {

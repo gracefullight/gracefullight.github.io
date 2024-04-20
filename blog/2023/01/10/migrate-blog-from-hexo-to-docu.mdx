@@ -36,7 +36,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 
 - 큰 문제없이 설정에 넣어줬다.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "themeConfig": {
     "metadata": [
@@ -63,7 +63,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 - 이걸 플러그인 옵션으로 제공하자라는 이슈가 있지만 닫혔고, 알아서 하라가 그 답변이였다.
 - 하나 만들어서 [기존 컴포넌트 덮고](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx) 재정렬해서 연결해줬다.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "presets": [
     "classic",
@@ -88,7 +88,7 @@ swizzle 해서 local search 커뮤니티 플러그인을 사용해서 붙혀보�
 - personal access token 발행하고, 두 값 적절하게 넣어준다.
 - yarn build, yarn deploy 실행하면 알아서 잘 된다.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "organizationName": "gracefullight",
   "projectName": "gracefullight.github.io",
@@ -107,7 +107,7 @@ env:
 
 - 어둡게, 스위치도 삭제했다.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "themeConfig": {
     "colorMode": {
@@ -140,18 +140,18 @@ env:
 - algolia가 오픈소스 개발문서가 아니여서그런지 무료 인덱싱을 요청했으나 티켓 상태가 변경되지 않았다.
 - [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local)를 사용했는데, 이건 모바일 지원이 안 된다.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
-  themes: [
+  "themes": [
     "@easyops-cn/docusaurus-search-local",
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-    ({
-      indexDocs: false,
-      blogRouteBasePath: "/",
-      hashed: true,
-      language: ["en", "ko"],
-    }),
-  ],
+    {
+      "indexDocs": false,
+      "blogRouteBasePath": "/",
+      "hashed": true,
+      "language": ["en", "ko"]
+    }
+  ]
 }
 ```
 

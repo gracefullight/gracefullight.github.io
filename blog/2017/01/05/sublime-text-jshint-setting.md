@@ -16,7 +16,7 @@ Sublime Text 나 VSCode 에서 jshint linter 를 설치하고, 기본 설정을 
 
 Sublime Linter 패키지가 선행되어야한다.
 
-**Package Control**을 열어 [Sublimt-Linter jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)를 설치한다.
+**Package Control**을 열어 [Sublime-Linter jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)를 설치한다.
 간단히 jshint 로 검색해도 된다.
 
 ### jshint 설치
@@ -109,8 +109,9 @@ $ npm install -g jshint
 - **forin** : forin 반복문 사용시 if 으로 필터링을 해줘야함
 - **funcscope** : 조건문 내의 선언된 변수를 조건문 바깥에서 참조 가능
 
-```javascript
+```js
 function test() {
+  // eslint-disable-next-line no-constant-condition
   if (true) {
     var x = 0;
   }

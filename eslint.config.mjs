@@ -29,6 +29,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ["build", "*.config.js", "src/plugins/*.js"],
+    ignores: [".docusaurus", "build", "*.config.js", "src/plugins/*.js"],
   },
 );

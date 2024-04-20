@@ -36,7 +36,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 
 - I put it in the configuration without any problems.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "themeConfig": {
     "metadata": [
@@ -63,7 +63,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 - There was an issue to provide this as a plugin option, but it was closed, and do it yourself was the answer.
 - I created one, [overwrote the existing component](https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/BlogArchivePage/index.tsx), rearranged it, and linked it.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "presets": [
     "classic",
@@ -88,7 +88,7 @@ In 2023, version 2 was launched, the frontend stack was unified based on React, 
 - Issue a personal access token and insert the two values appropriately.
 - Run yarn build, yarn deploy and it should work fine.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "organizationName": "gracefullight",
   "projectName": "gracefullight.github.io",
@@ -107,7 +107,7 @@ env:
 
 - Dark only, also deleted the switch.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
   "themeConfig": {
     "colorMode": {
@@ -140,18 +140,18 @@ env:
 - I requested free indexing because algolia is not an open source documentation, but the ticket status didn't change.
 - I used [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local), but it doesn't support mobile.
 
-```js title="docusaurus.config.js"
+```json title="docusaurus.config.js"
 {
-  themes: [
+  "themes": [
     "@easyops-cn/docusaurus-search-local",
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-    ({
-      indexDocs: false,
-      blogRouteBasePath: "/",
-      hashed: true,
-      language: ["en", "ko"],
-    }),
-  ],
+    {
+      "indexDocs": false,
+      "blogRouteBasePath": "/",
+      "hashed": true,
+      "language": ["en", "ko"]
+    }
+  ]
 }
 ```
 

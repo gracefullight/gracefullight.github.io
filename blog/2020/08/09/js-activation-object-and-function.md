@@ -108,16 +108,18 @@ const value = func();
 return value;
 
 // ❌
+// eslint-disable-next-line no-unreachable
 return function () {};
 
 // ✔️
-function factorial(n, result = 1) {
+function factorial2(n, result = 1) {
   if (n < 2) {
     return result;
   }
 
-  return factorial(n - 1, n * result);
+  return factorial2(n - 1, n * result);
 }
 // ✔️
+// eslint-disable-next-line no-unreachable
 return (function () {})();
 ```

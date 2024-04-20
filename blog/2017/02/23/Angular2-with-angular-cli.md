@@ -20,13 +20,13 @@ date: 2017-02-23 23:30:24
 먼저 npm 으로 angular/cli 를 전역으로 설치한다.
 
 ```bash
-$ npm install -g @angular/cli
+npm install -g @angular/cli
 ```
 
 설치가 완료되면 ng 라는 명령어를 사용할 수 있다.
 
 ```bash
-$ ng --version
+ng --version
 ```
 
 ![image from hexo](https://i.imgur.com/komN3rp.png)
@@ -36,9 +36,9 @@ $ ng --version
 **ng new 프로젝트명** 명령어로 프로젝트를 생성하면 된다.
 
 ```bash
-$ ng new 프로젝트명
+ng new 프로젝트명
 
-$ ng new ng2-cli-test --routing
+ng new ng2-cli-test --routing
 ```
 
 --routing 명령어는 기본으로 angular 라우팅을 app module 에 넣어준다.
@@ -95,9 +95,9 @@ package.json 을 열어 start 명령어 실행시 브라우져가 바로 뜨게 
 컴포넌트도 쉽게 생성할 수 있다.
 
 ```bash
-$ ng generate component 컴포넌트명
+ng generate component 컴포넌트명
 
-$ ng g c 컴포넌트명
+ng g c 컴포넌트명
 ```
 
 **ng g c sub** 명령어로 서브 컴포넌트를 생성해보자.
@@ -107,16 +107,14 @@ $ ng g c 컴포넌트명
 **app.module.ts**를 확인해보면 자동으로 import 가 되어있다.
 
 ```ts title="src/app/app.module.ts"
-...
-import { SubComponent } from './sub/sub.component';
+// ...
+import { SubComponent } from "./sub/sub.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SubComponent
-  ],
-  ...
+  declarations: [AppComponent, SubComponent],
+  // ...
 })
+export class MyModule {}
 ```
 
 정말 영롱하다.
@@ -204,8 +202,8 @@ global script 와 마찬가지로 angular-cli.json 에 넣는 방식이 있지�
 third party library 를 사용해야한다면 라이브러리와 @types 를 설치해 사용하고 싶은 컴포넌트에서 import 구문으로 사용하면 된다.
 
 ```bash
-$ npm install lodash --save
-$ npm install @types/lodash --save-dev
+npm install lodash --save
+npm install @types/lodash --save-dev
 ```
 
 ```ts title="any.component.ts"

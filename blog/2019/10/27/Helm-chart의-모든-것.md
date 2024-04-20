@@ -46,9 +46,9 @@ helm version
 chart-example
 ├── charts # 차트가 의존하는 차트 디렉토리
 ├── templates # manifest 파일 템플릿 디렉토리
-│   ├── NOTES.txt # 차트 사용법 등 참조 문서 템플릿
-│   ├── _helper.tpl # manifest 렌더링에 사용되는 템플릿 헬퍼
-│   └── example.yaml # 각종 K8S 리소스의 manifest 템플릿
+│   ├── NOTES.txt # 차트 사용법 등 참조 문서 템플릿
+│   ├── _helper.tpl # manifest 렌더링에 사용되는 템플릿 헬퍼
+│   └── example.yaml # 각종 K8S 리소스의 manifest 템플릿
 ├── Chart.yaml # 차트 정보가 정의 파일
 └── values.yaml # 차트 기본값 value 파일
 ```
