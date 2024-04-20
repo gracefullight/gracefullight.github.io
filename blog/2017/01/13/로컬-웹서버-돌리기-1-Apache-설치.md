@@ -17,7 +17,7 @@ VC14, VC11 은 PHP 버전과도 관련있으니 다운받으면서 확인해 놓
 
 # 경로 변경
 
-C:\Apache24 에 압축을 풀었다면 [3 번](#httpd-서비스-등록)으로 넘어가자
+C:\Apache24 에 압축을 풀었다면 #httpd-서비스-등록으로 넘어가자
 
 **Apache24/conf/httpd.conf**를 열어 경로를 변경한다.
 ![image from hexo](https://i.imgur.com/XCfgmlg.jpg)
@@ -31,7 +31,7 @@ cmd 를 관리자 권한으로 실행 후 아래 명령어를 입력해준다.
 - Windows7 : 시작메뉴 > 모든 프로그램 > 보조 프로그램 > 명령 프롬프트 우클릭 > 관리자 권한으로 실행
 
 ```bash
-$ httpd.exe -k install
+httpd.exe -k install
 ```
 
 ![image from hexo](https://i.imgur.com/XLLvKNp.jpg)

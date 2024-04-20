@@ -6,7 +6,7 @@ date: 2017-06-06 11:49:33
 ---
 
 Eloquent ORM을 사용해 데이터를 가져와보자.
-[이전 포스팅](/2017/05/16/Laravel-5-4-Start/)에서 이어진다. (Eloquent ORM 기능만 필요하다면 [3.Model](#Model)부터 보면 된다)
+[이전 포스팅](/2017/05/16/Laravel-5-4-Start/)에서 이어진다. (Eloquent ORM 기능만 필요하다면 3.Model 부터 보면 된다)
 
 # Migration
 
@@ -94,7 +94,7 @@ Seed는 테이블에 필수 데이터 또는 더미 데이터를 심어주는 �
 ## 생성
 
 ```bash
-$ php artisan make:seeder 시더명
+php artisan make:seeder 시더명
 ```
 
 database/seeds 아래에 파일이 생성된다.
@@ -161,7 +161,7 @@ public function run() {
 ```
 
 ```bash
-$ php artisan db:seed
+php artisan db:seed
 ```
 
 테이블에 상품 더미데이터가 100개 생성된 것을 확인할 수 있다.
@@ -383,7 +383,7 @@ Model::where()->simplePaginate(10);
 페이징 뷰를 꾸미고 싶다면 아래 명령어를 실행해 **resources/views/vendor/pagination**에 view가 생기고 **default.blade.php**를 수정하면 된다.
 
 ```bash
-$ php artisan vendor:publish --tag=laravel-pagination
+php artisan vendor:publish --tag=laravel-pagination
 ```
 
 ## ajax pagination
