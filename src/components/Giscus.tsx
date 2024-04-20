@@ -3,6 +3,8 @@ import { useBlogPost } from "@docusaurus/theme-common/internal";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import OriginalGiscus from "@giscus/react";
 
+// ? https://docs.github.com/ko/graphql/overview/explorer
+// ? https://github.com/giscus/giscus-component
 export default function Giscus() {
   const { i18n } = useDocusaurusContext();
   const { isBlogPostPage } = useBlogPost();
