@@ -1,5 +1,3 @@
-import type { FC } from "react";
-
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useLocation } from "@docusaurus/router";
 import { useBlogPost } from "@docusaurus/theme-common/internal";
@@ -9,7 +7,7 @@ import { useEffect, useState } from "react";
 
 import "gitalk/dist/gitalk.css";
 
-const Gitlak: FC = () => {
+export default function Gitalk() {
   const { pathname } = useLocation();
   const {
     siteConfig: { projectName, organizationName },
@@ -52,6 +50,4 @@ const Gitlak: FC = () => {
       }
     </BrowserOnly>
   );
-};
-
-export default Gitlak;
+}
