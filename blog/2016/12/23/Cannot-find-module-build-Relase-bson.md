@@ -9,7 +9,7 @@ mongoose-post-find 모듈 사용시 bson 라이브러리를 찾지 못해 설치
 
 # 오류
 
-```javascript
+```log
 { Error: Cannot find module '../build/Release/bson'
     at Function.Module._resolveFilename (module.js:440:15)
     at Function.Module._load (module.js:388:25)
@@ -37,7 +37,7 @@ js-bson: Failed to load c++ bson extension, using pure JS version
 이 부분을 같은 패키지 내의 bson 경로로 일치시켜주면 된다.
 
 ```javascript title="bson/index.js"
-var bson = null;
+let bson = null;
 
 try {
   // Load the precompiled win32 binary
@@ -56,7 +56,7 @@ try {
   } catch (err) {
     console.dir(err);
     console.error(
-      "js-bson: Failed to load c++ bson extension, using pure JS version"
+      "js-bson: Failed to load c++ bson extension, using pure JS version",
     );
     bson = require("../lib/bson/bson");
   }

@@ -15,9 +15,9 @@ date: 2016-12-28 12:38:00
 */
 $.fn.serializeObject = function () {
   "use strict";
-  var result = {};
-  var extend = function (i, element) {
-    var node = result[element.name];
+  const result = {};
+  const extend = function (i, element) {
+    const node = result[element.name];
     if ("undefined" !== typeof node && node !== null) {
       if ($.isArray(node)) {
         node.push(element.value);
@@ -37,7 +37,7 @@ $.fn.serializeObject = function () {
 # 예제
 
 ```javascript
-var formData = $("#form").serializeObject();
+const formData = $("#form").serializeObject();
 ```
 
 # 여담

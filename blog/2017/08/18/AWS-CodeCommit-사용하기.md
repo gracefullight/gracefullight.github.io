@@ -107,14 +107,14 @@ const url = require("url");
 const https = require("https");
 
 exports.handler = (event, context, callback) => {
-  let webhook_url = event.Records[0].customData;
+  const webhook_url = event.Records[0].customData;
 
   if (!webhook_url) {
-    let error = new Error("Web-hook URL not provided as custom data.");
+    const error = new Error("Web-hook URL not provided as custom data.");
     callback(error);
   } else {
     console.log("POST web-hook to " + webhook_url);
-    let options = url.parse(webhook_url);
+    const options = url.parse(webhook_url);
     options["method"] = "POST";
 
     const req = https.request(options, (res) => {

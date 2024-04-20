@@ -15,7 +15,7 @@ ie9 부터 지원하고, ie8 은 [es5-sham](https://github.com/es-shims/es5-shim
 ## 예제
 
 ```js
-var frozenObject = {
+const frozenObject = {
   value1: 1,
   value2: 2,
 };
@@ -43,7 +43,7 @@ console.log(frozenObject.value3); // undefined
 ## 예제
 
 ```js
-var sealedObject = {
+const sealedObject = {
   value1: 1,
   value2: 2,
 };
@@ -71,7 +71,7 @@ console.log(sealedObject.value3); // undefined
 ## 예제
 
 ```js
-var preventExtensionObject = {
+const preventExtensionObject = {
   value1: 1,
   value2: 2,
 };
@@ -117,7 +117,7 @@ function deepFreeze(obj) {
     Object.freeze(obj);
   }
 
-  for (var key in obj) {
+  for (const key in obj) {
     if (
       {}.hasOwnProperty.call(obj, key) ||
       !(

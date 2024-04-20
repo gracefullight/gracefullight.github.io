@@ -20,30 +20,28 @@ $("#id").removeClass("AAA").addClass("BBB");
 @author https://gist.github.com/peteboere/1517285
 */
 $.fn.alterClass = function (removals, additions) {
-  var self = this;
-
   if (removals.indexOf("*") === -1) {
     // Use native jQuery methods if there is no wildcard matching
-    self.removeClass(removals);
-    return !additions ? self : self.addClass(additions);
+    this.removeClass(removals);
+    return !additions ? this : this.addClass(additions);
   }
 
-  var patt = new RegExp(
+  const pattern = new RegExp(
     "\\s" +
       removals.replace(/\*/g, "[A-Za-z0-9-_]+").split(" ").join("\\s|\\s") +
       "\\s",
     "g",
   );
 
-  self.each(function (i, it) {
-    var cn = " " + it.className + " ";
-    while (patt.test(cn)) {
-      cn = cn.replace(patt, " ");
+  this.each(function (i, it) {
+    let cn = " " + it.className + " ";
+    while (pattern.test(cn)) {
+      cn = cn.replace(pattern, " ");
     }
     it.className = $.trim(cn);
   });
 
-  return !additions ? self : self.addClass(additions);
+  return !additions ? this : this.addClass(additions);
 };
 ```
 

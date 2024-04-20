@@ -16,7 +16,8 @@ new Vue({
   },
 
   created: function () {
-    var vm = this;
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const vm = this;
 
     axios
       .get("/members")

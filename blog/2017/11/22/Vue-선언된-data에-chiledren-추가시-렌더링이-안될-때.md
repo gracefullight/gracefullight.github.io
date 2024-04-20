@@ -56,7 +56,9 @@ const option = {
     ];
   },
 };
+```
 
+```js
 /* 2안 */
 const option = {
   mounted: function () {

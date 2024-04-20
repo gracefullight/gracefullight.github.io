@@ -44,7 +44,7 @@ date: 2021-05-01 18:16:27
     - b. If kind가 `base`이면 thisArgument를 반환한다.
     - c. If `result.[[Value]]` 가 undefined 가 아니라면 TypeError를 발생시킨다.
 14. 아니라면, result를 반환한다.
-15. **EnviromnetRecord의 this를 반환한다.**
+15. **EnvironmentRecord의 this를 반환한다.**
 
 ### 5.a
 
@@ -66,9 +66,9 @@ date: 2021-05-01 18:16:27
 
 ## 기타 특성
 
-- 함수 객체의 prototype은 Object.prototype에 대한 delegation link와 constructor 속성을 가진 객체의 참조를 가진다.
-- constructor 속성은 함수 객체에 대한 역참조를 가지고 있다. (재귀적)
-- 함수는 Function.prototype 에 대한 델리게이션 링크를 가지고 있어 apply와 call을 상속받는다.
+- 함수 객체의 prototype은 `Object.prototype`에 대한 delegation link와 constructor 속성을 가진 객체의 참조를 가진다.
+- constructor 속성은 함수 객체에 대한 역참조를 가지고 있다. (재귀적)
+- 함수는 `Function.prototype` 에 대한 델리게이션 링크를 가지고 있어 apply와 call을 상속받는다.
 
 ## \_\_proto\_\_ 와 prototype 의 차이
 

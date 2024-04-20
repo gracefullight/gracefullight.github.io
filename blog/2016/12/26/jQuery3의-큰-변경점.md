@@ -72,14 +72,14 @@ jquery.onoff 라이브러리 사용시 오류가 난다.
 이 부분은 jQuery 문서의 예제를 참조했다.
 
 ```javascript
-var $div = $("<div />");
+const $div = $("<div />");
 $div.data("clickCount", 2);
 $div.data("clickCount"); // 2
 $div.data("click-count", 3);
 $div.data("clickCount"); // 3
 $div.data("click-count"); // 3
 
-var allData = $div.data();
+const allData = $div.data();
 allData.clickCount; // 3
 allData["click-count"]; // undefined
 allData["click-count"] = 14;

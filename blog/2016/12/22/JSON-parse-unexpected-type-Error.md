@@ -25,13 +25,13 @@ jQuery.ajax 의 dataType 을 json 으로 설정해 데이터를 받는데, 이�
 # 소스
 
 ```js
-var jsonReplace = function (j) {
+const jsonReplace = function (j) {
   if (j) {
     j = j
-      .replace(/\"\[/g, "[")
-      .replace(/\]\"/g, "]")
-      .replace(/\"\{/g, "{")
-      .replace(/\}\"/g, "}");
+      .replace(/"\[/g, "[")
+      .replace(/\]"/g, "]")
+      .replace(/"\{/g, "{")
+      .replace(/\}"/g, "}");
   }
   return j;
 };

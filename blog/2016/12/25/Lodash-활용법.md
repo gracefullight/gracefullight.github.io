@@ -20,7 +20,7 @@ IE의 하위 브라우저에서 es5, es6의 메소드를 사용할 수 있게 �
 리스트 검색 조건에 유용하다.
 
 ```javascript
-var users = [
+const users = [
   { user: "barney", age: 36, active: true },
   { user: "fred", age: 40, active: false },
 ];
@@ -59,7 +59,7 @@ $scope.remove = function (data) {
     function (data) {
       // 삭제 성공시 해당 데이터를 제외한 리스트로 변경
       $scope.list = _.reject($scope.list, data);
-    }
+    },
   );
 };
 ```
@@ -70,13 +70,13 @@ $scope.remove = function (data) {
 콜렉션의 사이즈를 반환한다. length와 같다고 생각하면 된다.
 
 ```javascript
-_.size([1, 2, 3])
+_.size([1, 2, 3]);
 // => 3
 
-_.size({ 'a': 1, 'b': 2 })
+_.size({ a: 1, b: 2 });
 // => 2
 
-_.size('apple'
+_.size("apple");
 // => 5
 ```
 
@@ -145,7 +145,7 @@ _.zip(["a", "b"], [1, 2], [true, false]);
 객체에서 해당 키 값만을 가져온다.
 
 ```javascript
-var object = { a: 1, b: 2, c: 3, e: { f: 5 } };
+const object = { a: 1, b: 2, c: 3, e: { f: 5 } };
 
 _.get(object, "a");
 // => 1
@@ -166,7 +166,7 @@ _.get(object, "e.f");
 객체에서 해당 키를 제외한 객체를 반환한다.
 
 ```javascript
-var object = { a: 1, b: "2", c: 3 };
+const object = { a: 1, b: "2", c: 3 };
 
 _.omit(object, ["a", "c"]);
 // => { 'b': '2' }
@@ -220,7 +220,7 @@ _.times(3, _.constant(0));
 ## range
 
 **\_.range**( [시작인덱스], 종료인덱스, [증가 폭=1])
-배열을 초기화 시킬 때 유용하다. 단지 배열을 숫자로 초기화해야된다면 _.range가 속도면에서 _.times(n, _constant_)보다 [월등히 빠르다](https://jsperf.com/lodash-times-vs-range/1).
+배열을 초기화 시킬 때 유용하다. 단지 배열을 숫자로 초기화해야된다면 _.range가 속도면에서_.times(n, _constant_)보다 [월등히 빠르다](https://jsperf.com/lodash-times-vs-range/1).
 
 ```javascript
 _.range(0, 6, 0);
@@ -242,29 +242,29 @@ _.range(4);
 
 ```js
 // 이런 구문을
-var result = [],
+let result = [],
   temp1 = [],
   temp2 = [],
   temp3 = [];
 
-for (var i = 0; i < source.length; i++) {
+for (let i = 0; i < source.length; i++) {
   temp1[i] = func1(source[i]);
 }
 
-for (i = 0; i < source.length; i++) {
+for (let i = 0; i < source.length; i++) {
   temp2[i] = func2(temp1[i]);
 }
 
-for (i = 0; i < source.length; i++) {
+for (let i = 0; i < source.length; i++) {
   temp3[i] = func3(temp2[i]);
 }
 
 result = temp3;
 
 // 아래처럼 바꿔 엄청난 속도 향상을 가져올 수 있다
-var result = [];
-for (var i = 0; i < source.length; i++) {
-  result[i] = func3(func2(func1(source[i])));
+let result2 = [];
+for (let i = 0; i < source.length; i++) {
+  result2[i] = func3(func2(func1(source[i])));
 }
 ```
 
@@ -331,7 +331,7 @@ const data = ["위에 데이터 배열"];
 
 let result = [];
 for (let i = 0, len = data.length; i < len; i++) {
-  let nodes = data[i].tag.media.nodes;
+  const nodes = data[i].tag.media.nodes;
 
   for (let j = 0, len2 = nodes.length; j < len2; j++) {
     // 머리가 슬슬 아파진다.

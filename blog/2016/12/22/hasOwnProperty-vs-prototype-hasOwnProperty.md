@@ -11,6 +11,7 @@ for-in 구문을 쓸 때 상속된 프로퍼티나 this 구문을 방지하기 �
 
 ```javascript
 for (prop in obj) {
+  // eslint-disable-next-line no-prototype-builtins
   if (obj.hasOwnProperty(prop)) {
     // code...
   }
@@ -24,7 +25,7 @@ for (prop in obj) {
 ## 소스
 
 ```js
-var obj = {
+const obj = {
   hasOwnProperty: function () {
     return false;
   },
@@ -32,8 +33,9 @@ var obj = {
 };
 
 for (prop in obj) {
-  // obj.hasOwnproperty(prop) 의 결과는 항상 false
-  if (obj.hasOwnproperty(prop)) {
+  // obj.hasOwnProperty(prop) 의 결과는 항상 false
+  // eslint-disable-next-line no-prototype-builtins
+  if (obj.hasOwnProperty(prop)) {
     // 이 구문은 실행되지 않는다.
   }
 }
@@ -49,10 +51,12 @@ for (prop in obj) {
 for (prop in obj) {
   // 첫번째 방법
   if ({}.hasOwnProperty.call(obj, prop)) {
+    // 체크
   }
 
   // 두번째 방법
   if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+    // 체크
   }
 }
 ```

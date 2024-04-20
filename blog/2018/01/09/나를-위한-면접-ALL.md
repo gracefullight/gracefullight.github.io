@@ -80,10 +80,10 @@ O(n^2)
 
 ```js
 function insertionSort(unsortedList) {
-  var len = unsortedList.length;
-  for (var i = 1; i < len; i++) {
+  const len = unsortedList.length;
+  for (let i = 1; i < len; i++) {
     // Copy of the current element.
-    var tmp = unsortedList[i];
+    const tmp = unsortedList[i];
     // Check through the sorted part and compare with the number in tmp. If large, shift the number
     for (var j = i - 1; j >= 0 && unsortedList[j] > tmp; j--) {
       // Shift the number
@@ -106,13 +106,13 @@ O(n^2)
 
 ```js
 function selectionSort(items) {
-  var length = items.length;
-  for (var i = 0; i < length - 1; i++) {
+  const length = items.length;
+  for (let i = 0; i < length - 1; i++) {
     // Number of passes
     // min holds the current minimum number position for each pass; i holds the Initial min number
-    var min = i;
+    let min = i;
     // Note that j = i + 1 as we only need to go through unsorted array
-    for (var j = i + 1; j < length; j++) {
+    for (let j = i + 1; j < length; j++) {
       // Compare the numbers
       if (items[j] < items[min]) {
         // Change the current min number position if a smaller num is found
@@ -122,7 +122,7 @@ function selectionSort(items) {
     if (min != i) {
       // After each pass, if the current min num != initial min num, exchange the position.
       // Swap the numbers
-      var tmp = items[i];
+      const tmp = items[i];
       items[i] = items[min];
       items[min] = tmp;
     }
@@ -180,7 +180,7 @@ function LinkedList() {
 }
 
 LinkedList.prototype.push = function (val) {
-  var node = {
+  const node = {
     value: val,
     next: null,
   };
@@ -196,7 +196,7 @@ LinkedList.prototype.push = function (val) {
   }
 };
 
-var sll = new LinkedList();
+const sll = new LinkedList();
 sll.push(2);
 sll.push(3);
 sll.push(4);
@@ -294,7 +294,7 @@ Graph.prototype.neighbors = function (val) {
   return this.vertices[val] ? this.vertices[val].edges : null;
 };
 
-var graph = new Graph();
+const graph = new Graph();
 
 graph.addVertex(5);
 graph.addVertex(2);

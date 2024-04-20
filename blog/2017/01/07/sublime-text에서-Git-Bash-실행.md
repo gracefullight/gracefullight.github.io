@@ -15,7 +15,7 @@ date: 2017-01-07 21:43:23
 
 **Preferences > Package Settings > Terminal > Settings - User** 메뉴에서 터미널 경로를 수정한다.
 
-```javascript
+```json
 {
   // git-bash가 설치된 경로
   "terminal": "C:\\Program Files\\Git\\git-bash.exe",
@@ -28,7 +28,7 @@ date: 2017-01-07 21:43:23
 기본 단축키는 ctrl+shift+alt+t 라 어려우니 변경해주자.
 **Preferences > Key Bindings** 메뉴에서 단축키를 추가한다.
 
-```javascript
+```json
 { "keys": ["ctrl+alt+t"], "command": "open_terminal_project_folder" }
 ```
 

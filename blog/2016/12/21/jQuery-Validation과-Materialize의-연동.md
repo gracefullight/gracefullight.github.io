@@ -16,9 +16,9 @@ $.validator.setDefaults({
   errorClass: "invalid form-error red-text",
   errorElement: "p",
   errorPlacement: function (error, element) {
-    var e = element.get(0);
+    const e = element.get(0);
     if (e.type === "radio" || e.type === "checkbox") {
-      var $a = error.appendTo(element.parent());
+      const $a = error.appendTo(element.parent());
       $a.css({ "margin-top": "10px" });
     } else {
       error.appendTo(element.parent());
@@ -31,7 +31,7 @@ $.validator.setDefaults({
   errorClass: "invalid",
   validClass: "valid",
   errorPlacement: function (error, element) {
-    var $label = $(element)
+    const $label = $(element)
       .closest("form")
       .find("label[for='" + element.attr("id") + "']");
 

@@ -51,8 +51,8 @@ link.onload = (loadEvent) => {
   // sheet 는 현재 로드 된 스타일시트 엘레먼트
   if (isIE && loadEvent.target.sheet) {
     try {
-      // 강제로 시트 내의 cssRuls 값에 접근한다.
-      let temp = loadEvent.target.sheet.cssRules;
+      // 강제로 시트 내의 cssRules 값에 접근한다.
+      const temp = loadEvent.target.sheet.cssRules;
     } catch (e) {
       // onError 와 같은 이벤트 처리
     }

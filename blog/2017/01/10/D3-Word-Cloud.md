@@ -46,7 +46,7 @@ $ bower install d3-cloud
         "mining",
       ].map(function (d) {
         return { text: d, size: 10 + Math.random() * 90, test: "haha" };
-      })
+      }),
     )
     .padding(5)
     .rotate(function () {
@@ -68,7 +68,7 @@ $ bower install d3-cloud
       .append("g")
       .attr(
         "transform",
-        "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")"
+        "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")",
       )
       .selectAll("text")
       .data(words)

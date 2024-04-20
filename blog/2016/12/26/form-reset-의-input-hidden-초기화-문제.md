@@ -14,7 +14,7 @@ Javascript 의 form 의 reset() 메소드는 hidden field 와 check, radio butto
 ```js
 $.fn.clearForm = function () {
   return this.each(function () {
-    var type = this.type,
+    const type = this.type,
       tag = this.tagName.toLowerCase();
     if (tag === "form") {
       return $(":input", this).clearForm();

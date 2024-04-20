@@ -70,7 +70,7 @@ $ yarn add redux-saga
 
 `create-react-app`으로 생성된 프로젝트로 폴더 구조를 다음과 같이 가져갔다.
 
-```
+```bash
 .
 ├── public
 └── src
@@ -207,8 +207,8 @@ export default function configureStore(initialState) {
       applyMiddleware(...middlewares),
       inDevelopment && window.devToolsExtension
         ? window.devToolsExtension()
-        : (f) => f
-    )
+        : (f) => f,
+    ),
   );
 
   store.runSaga = saga.run;
@@ -236,7 +236,7 @@ export function* testSaga() {
   const [response1, response2] = yield [asyncTask1(), asyncTask2()];
 
   // 아래와 같이 사용하자
-  const [response1, response2] = yield all([asyncTask1(), asyncTask2()]);
+  const [response3, response4] = yield all([asyncTask1(), asyncTask2()]);
 }
 ```
 

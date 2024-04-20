@@ -14,12 +14,12 @@ date: 2020-08-07 22:45:42
 
 ```js
 // 📁 cache.js
-let cache = new WeakMap();
+const cache = new WeakMap();
 
 // calculate and remember the result
 function process(obj) {
   if (!cache.has(obj)) {
-    let result = /* calculate the result for */ obj;
+    const result = /* calculate the result for */ obj;
 
     cache.set(obj, result);
   }
@@ -32,8 +32,8 @@ let obj = {
   /* some object */
 };
 
-let result1 = process(obj);
-let result2 = process(obj);
+const result1 = process(obj);
+const result2 = process(obj);
 
 // ...later, when the object is not needed any more:
 obj = null;
@@ -79,7 +79,7 @@ function execRecursively(fn, subject, refs = null) {
   fn(subject);
   if (typeof subject === "object") {
     refs.add(subject);
-    for (let key in subject) {
+    for (const key in subject) {
       execRecursively(fn, subject[key], refs);
     }
   }

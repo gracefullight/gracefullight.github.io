@@ -67,9 +67,9 @@ if ("serviceWorker" in navigator) {
 모던 브라우저에서만 지원이 되므로 `arrow function`을 사용해도 된다.
 
 ```js title="sw.js"
-var PRE_CACHE_NAME = "캐시-스토리지1";
+const PRE_CACHE_NAME = "캐시-스토리지1";
 // 캐시하고 싶은 리소스
-var urlsToCache = [
+const urlsToCache = [
   "/public/image/image1.png",
   "/public/css/font-awesome.min.css",
 ];
@@ -90,7 +90,7 @@ self.addEventListener("install", (event) => {
       .then(() => {
         // 설치 후에 바로 활성화 단계로 들어갈 수 있게 해준다.
         return self.skipWaiting();
-      })
+      }),
   );
 });
 ```
@@ -106,7 +106,7 @@ self.addEventListener("install", (event) => {
 ## Dynamic caching
 
 ```js title="sw.js"
-var DYNAMIC_CACHE_NAME = "다이나믹-캐시-스토리지1";
+const DYNAMIC_CACHE_NAME = "다이나믹-캐시-스토리지1";
 
 // fetch event는 어딘가에서 리소스를 가져올 때 모두 실행된다.
 // js를 가져오거나 이미지를 가져오거나 페이지를 가져오거나 등등
@@ -121,7 +121,7 @@ self.addEventListener("fetch", (event) => {
       // 여기서 request를 복사해준다.
       // request는 스트림으로 fetch 당 한 번만 사용해야하기 때문이다.
       // 근데 event.request로 받아도 실행은 된다
-      var fetchRequest = event.request.clone();
+      const fetchRequest = event.request.clone();
 
       // if (response) return response 구문을 하나로 합칠 수도 있다.
       // return response || fetch(fetchRequest)
@@ -135,7 +135,7 @@ self.addEventListener("fetch", (event) => {
         }
 
         // 응답은 꼭 복사 해줘야한다.
-        var responseToCache = response.clone();
+        const responseToCache = response.clone();
 
         // 캐시 스토리지를 열고 정말 캐싱을 해준다.
         caches.open(DYNAMIC_CACHE_NAME).then((cache) => {
@@ -145,7 +145,7 @@ self.addEventListener("fetch", (event) => {
         // 여기서 response를 내보내줘야 캐싱 처리 후에 리소스를 반환한다.
         return response;
       });
-    })
+    }),
   );
 });
 ```
@@ -158,7 +158,7 @@ self.addEventListener("fetch", (event) => {
 // 서비스 워커가 활성화 될 때
 self.addEventListener("activate", (event) => {
   // 영구적으로 가져갈 캐시 스트리지 화이트리스트
-  var cacheWhiteList = [PRE_CACHE_NAME, DYNAMIC_CACHE_NAME];
+  const cacheWhiteList = [PRE_CACHE_NAME, DYNAMIC_CACHE_NAME];
 
   event.waitUntil(
     // 캐시 스토리지의 모든 스토리지명을 가져온다.
@@ -172,9 +172,9 @@ self.addEventListener("activate", (event) => {
             // 캐시를 삭제하는 Promise를 배열에 추가한다.
             return caches.delete(cacheName);
           }
-        })
+        }),
       );
-    })
+    }),
   );
 
   // activate 시에는 clients claim 메소드를 호출해서
@@ -207,7 +207,7 @@ self.addEventListener("fetch", (event) => {
             return cache.match("/offline.html");
           }
         });
-      })
+      }),
   );
 });
 ```
@@ -258,7 +258,7 @@ cors 정책이 설정되어 있지 않아 아무 정보도 가지고 올 수 없
 ```js title="sw.js"
 const dynamicCacheStrategy = (event) => {
   // 캐싱 처리하고 싶은 content-type
-  var cacheContentsTypes = [
+  const cacheContentsTypes = [
     "image/png",
     "image/gif",
     "image/jpeg",
@@ -267,7 +267,7 @@ const dynamicCacheStrategy = (event) => {
 
   event.respondWith(
     caches.match(event.request).then((response) => {
-      var fetchRequest = event.request.clone();
+      const fetchRequest = event.request.clone();
 
       return (
         response ||
@@ -281,7 +281,7 @@ const dynamicCacheStrategy = (event) => {
             // 아니면 request.url이 캐싱처리를 할 외부 url인지 확인한다.
             if (
               cacheContentsTypes.indexOf(
-                response.headers.get("content-type")
+                response.headers.get("content-type"),
               ) !== -1 ||
               event.request.url.indexOf("external.url") !== -1
             ) {
@@ -294,7 +294,7 @@ const dynamicCacheStrategy = (event) => {
           })
           .catch((error) => console.log(error))
       );
-    })
+    }),
   );
 };
 ```
@@ -365,7 +365,7 @@ Pre-Cache를 정의하기 위해 로컬에서 `workbox-cli`를 추가해야한�
 
 ```js
 importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js",
 );
 ```
 
@@ -416,7 +416,7 @@ WorkBox를 사용하는 이유는 바로 이 라우팅에 있다.
 
 ```js
 importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js",
 );
 
 // importScripts 후 타이밍 차이로 인해 모듈을 못 불러오는 경우를 방지하기 위해
@@ -435,19 +435,19 @@ workbox.routing.registerRoute((routeData) => {
 // imgur 요청일 경우 cacheFirst 캐싱
 workbox.routing.registerRoute(
   /.*(?:imgur)\.com.*$/,
-  workbox.strategies.cacheFirst()
+  workbox.strategies.cacheFirst(),
 );
 
 // jsdelivr 요청일 경우 stateWhileRevalidate 캐싱
 workbox.routing.registerRoute(
   /.*(?:jsdelivr)\.net.*$/,
-  workbox.strategies.staleWhileRevalidate()
+  workbox.strategies.staleWhileRevalidate(),
 );
 
 // bootcss 요청일 경우 stateWhileRevalidate 캐싱
 workbox.routing.registerRoute(
   /.*(?:bootcss)\.com.*$/,
-  workbox.strategies.staleWhileRevalidate()
+  workbox.strategies.staleWhileRevalidate(),
 );
 ```
 

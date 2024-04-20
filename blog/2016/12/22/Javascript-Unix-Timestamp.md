@@ -11,7 +11,7 @@ API 통신시 Unix Timestamp가 필요한 경우가 있다.
 
 ```js
 // === PHP time();
-var timestamp = Math.round(new Date().getTime() / 1000);
+const timestamp = Math.round(new Date().getTime() / 1000);
 // 또는
 // new Date().getTime() 을 Date.now() 로 바꿀 수 있다.
 ```

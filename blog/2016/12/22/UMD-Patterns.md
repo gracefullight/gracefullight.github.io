@@ -67,8 +67,8 @@ jQuery, moment, D3 등의 라이브러리에서도 해당 패턴을 사용한다
   typeof exports === "object" && typeof module !== "undefined"
     ? factory(exports)
     : typeof define === "function" && define.amd
-    ? define(["exports"], factory)
-    : factory((global.module1 = global.module1 || {}));
+      ? define(["exports"], factory)
+      : factory((global.module1 = global.module1 || {}));
 })(this, function (exports) {
   exports.action = function () {};
 });

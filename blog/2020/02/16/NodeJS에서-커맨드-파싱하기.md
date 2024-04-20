@@ -19,7 +19,7 @@ const arg = require("arg");
 // `options` is an optional parameter
 const args = arg(
   spec,
-  (options = { permissive: false, argv: process.argv.slice(2) })
+  (options = { permissive: false, argv: process.argv.slice(2) }),
 );
 ```
 

@@ -10,7 +10,7 @@ date: 2017-03-31 11:06:37
 ## Single line
 
 ```js
-var i,
+let i,
   sum = 0;
 for (i = 0; i < 10; ++i, sum += i);
 
@@ -20,7 +20,7 @@ console.log(`${i} ${sum}`);
 ## 일반적인 형태
 
 ```js
-var j,
+let j,
   sum2 = 0;
 for (j = 0; j < 10; ++j) {
   sum2 += j;
@@ -39,7 +39,7 @@ i 와 j 의 전위 후위 연산은 별로 중요하지 않다. (++i 나 i++이�
 ## Single line
 
 ```js
-var i,
+let i,
   sum = 0;
 //  1    2     3    4
 for (i = 0; i < 10; ++i, sum += i);
@@ -50,7 +50,7 @@ console.log(`${i} ${sum}`);
 ## 일반적인 형태
 
 ```js
-var j,
+let j,
   sum2 = 0;
 //  1    2     4
 for (j = 0; j < 10; ++j) {
@@ -64,7 +64,7 @@ console.log(`${j} ${sum2}`);
 ## 안티패턴의 끝
 
 ```js
-var k,
+let k,
   sum3 = 0;
 //  1    2     4    5
 for (k = 0; k < 10; ++k, sum3 += k)

@@ -101,7 +101,7 @@ $ npm install
 ## index.html
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Hi Angular2</title>
@@ -273,7 +273,7 @@ package.json 을 열어 명령어를 줄인 **script** 기능을 사용해보자
 ../dist/main.js 를 index.html 에 추가하고 브라우저에서 열어보자.
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Hi Angular2</title>
@@ -334,8 +334,8 @@ $ npm install --save-dev awesome-typescript-loader
 root 에 **webpack.config.js** 파일을 만들자.
 
 ```js title="webpack.config.js"
-var webpack = require("webpack");
-var path = require("path");
+const webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
   entry: "./src/main.ts",
@@ -347,7 +347,7 @@ module.exports = {
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
       path.resolve(__dirname, "./src"),
-      {}
+      {},
     ),
   ],
   module: {
@@ -425,17 +425,17 @@ $ npm install --save-dev html-webpack-plugin
 **webpack.config.js**에 html plugin 설정을 추가한다.
 
 ```js title="webpack.config.js"
-var webpack = require("webpack");
-var path = require("path");
+const webpack = require("webpack");
+const path = require("path");
 // 여기를 추가
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
       path.resolve(__dirname, "./src"),
-      {}
+      {},
     ),
     // 여기를 추가
     new HtmlWebpackPlugin({
@@ -448,7 +448,7 @@ module.exports = {
 index.html 에서 스크립트 삽입부분을 지운다.
 
 ```html title="index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Hi Angular2</title>
@@ -479,7 +479,7 @@ $ npm start
 다시 빌드하면 dist/index.html 이 생성되고 webpack 이 생성해준 script 가 자동으로 들어가 있는걸 확인할 수 있다.
 
 ```html title="dist/index.html"
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Hi Angular2</title>

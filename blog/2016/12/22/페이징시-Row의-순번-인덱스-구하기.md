@@ -10,12 +10,12 @@ date: 2016-12-22 12:58:57
 # 소스
 
 ```js
-var totalCount;
-var currentPageNum;
-var shownRowNum;
+let totalCount;
+let currentPageNum;
+let shownRowNum;
 
-for (var i = 0, len = data.length; i < len; i++) {
-  var index = Number(totalCount) - (i + (currentPageNum - 1) * shownRowNum);
+for (let i = 0, len = data.length; i < len; i++) {
+  const index = Number(totalCount) - (i + (currentPageNum - 1) * shownRowNum);
 }
 ```
 

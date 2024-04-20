@@ -17,13 +17,13 @@ mousemove, scroll 같은 이벤트로 호출되는 함수는 이벤트 발생시
 ## 소스
 
 ```js
-var throttleFunction = (function () {
+const throttleFunction = (function () {
   "use strict";
 
-  var timeWindow = 500; // 여기에 시간(ms)을 지정한다
-  var lastExecution = new Date(new Date().getTime() - timeWindow);
+  const timeWindow = 500; // 여기에 시간(ms)을 지정한다
+  let lastExecution = new Date(new Date().getTime() - timeWindow);
   // ES6 이하일 경우 ...args에 호출할 parameter 만큼 준다 function(arg1, arg2...)
-  var throttleFunction = function (...args) {
+  const throttleFunction = function (...args) {
     // 여기에 로직을 구현한다
   };
 
@@ -49,19 +49,20 @@ throttleFunction(param1, param2);
 ## 소스
 
 ```js
-var debounceFunction = (function () {
+const debounceFunction = (function () {
   "use strict";
 
-  var timeWindow = 500; // 여기에 시간(ms)을 지정한다
-  var timeout;
+  const timeWindow = 500; // 여기에 시간(ms)을 지정한다
+  let timeout;
   // ES6 이하일 경우 ...args에 호출할 parameter 만큼 준다 function(arg1, arg2...)
-  var debounceFunction = function (...args) {
+  const debounceFunction = function (...args) {
     // 여기에 로직을 구현한다
   };
 
   return function () {
-    var context = this;
-    var args = arguments;
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const context = this;
+    const args = arguments;
 
     clearTimeout(timeout);
     timeout = setTimeout(function () {

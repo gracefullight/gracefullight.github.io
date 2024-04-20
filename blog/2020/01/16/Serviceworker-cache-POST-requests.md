@@ -18,7 +18,7 @@ date: 2020-01-16 23:58:30
 ```js
 // IndexedDB 는 Promisify 되어있지 않아서 라이브러리가 필요하다.
 importScripts(
-  "https://cdn.jsdelivr.net/npm/localforage@1.7.3/dist/localforage.min.js"
+  "https://cdn.jsdelivr.net/npm/localforage@1.7.3/dist/localforage.min.js",
 );
 
 // 캐시하고 싶은 POST 엔드포인트
@@ -28,13 +28,13 @@ const bin2Hex = (buffer) => {
   let digest = "";
   const dataView = new DataView(buffer);
   for (let i = 0, len = dataView.byteLength; i < len; i += 4) {
-    let value = dataView.getUint32(i);
+    const value = dataView.getUint32(i);
     // hex 로 바꾸면 패딩비트 0 이 제거된다.
-    let hex = value.toString(16);
+    const hex = value.toString(16);
     // uint32 는 4bytes 로 나온다.
-    let padding = "00000000";
+    const padding = "00000000";
     // 패딩을 더해서 뒤에서 잘라준다.
-    let paddedValue = (padding + hex).slice(-padding.length);
+    const paddedValue = (padding + hex).slice(-padding.length);
     digest += paddedValue;
   }
 
@@ -56,7 +56,7 @@ const postRequestFetchListener = (fetchEvent) => {
       .then((buffer) => {
         const requestBody = String.fromCharCode.apply(
           null,
-          new Uint8Array(buffer)
+          new Uint8Array(buffer),
         );
         // request body 에 원하는 조건만 캐시처리할 수 있게 한다.
         if (requestBody.includes("cache=1")) {
@@ -108,7 +108,7 @@ const postRequestFetchListener = (fetchEvent) => {
           });
         });
       })
-      .catch(() => fetch(fetchEvent.request))
+      .catch(() => fetch(fetchEvent.request)),
   );
 };
 

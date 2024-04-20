@@ -16,7 +16,7 @@ window.fbAsyncInit = function () {
   });
 };
 (function (d, s, id) {
-  var js,
+  let js,
     fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {
     return;
@@ -43,7 +43,7 @@ FB.login(
       alert("페이스북 API 호출에 실패했습니다");
     }
   },
-  { scope: "publish_pages,manage_pages" }
+  { scope: "publish_pages,manage_pages" },
 );
 // 이 두 권한이 꼭 필요하다
 ```
@@ -61,7 +61,7 @@ FB.api(
   function (token_result) {
     // token_result.access_token 이 페이지 관리자로 글을 쓰기 위해 필요하다
     // 여기에 4번 로직을 넣으면 된다.
-  }
+  },
 );
 ```
 
@@ -87,7 +87,7 @@ FB.api(
     if (page_result && !page_result.error) {
       // 여기에 성공시 로직을 넣는다.
     }
-  }
+  },
 );
 ```
 
@@ -104,7 +104,7 @@ FB.login(
       alert("페이스북 API 호출에 실패했습니다");
     }
   },
-  { scope: "publish_pages,manage_pages" }
+  { scope: "publish_pages,manage_pages" },
 );
 
 function getFbAccessToken() {
@@ -114,7 +114,7 @@ function getFbAccessToken() {
     { fields: "access_token" },
     function (token_result) {
       postFbPage(token_result);
-    }
+    },
   );
 }
 
@@ -135,7 +135,7 @@ function postFbPage(token_result) {
       if (page_result && !page_result.error) {
         alert("성공");
       }
-    }
+    },
   );
 }
 ```

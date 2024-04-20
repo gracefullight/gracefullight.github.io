@@ -13,8 +13,8 @@ date: 2016-12-22 15:15:46
 
 ```js
 // JavaScript syntax to set a default value
-var text = someString || "default text";
-var text2 = someString || someString2 || "default text2";
+const text = someString || "default text";
+const text2 = someString || someString2 || "default text2";
 ```
 
 ## 설명

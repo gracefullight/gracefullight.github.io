@@ -49,15 +49,15 @@ return String.fromCharCode(High, Low);
 "S\u0307" === "Ṡ";
 "S\u0307\u0323" === "Ṩ";
 
-let s1 = "S\u0307\u0323"; // Ṩ, S + 윗 점 + 아랫 점
-let s2 = "S\u0323\u0307"; // Ṩ, S + 아랫 점 + 윗 점
+const s1 = "S\u0307\u0323"; // Ṩ, S + 윗 점 + 아랫 점
+const s2 = "S\u0323\u0307"; // Ṩ, S + 아랫 점 + 윗 점
 
 s1 === s2; // false
 s1.normalize() === s2.normalize(); // true
 
 // 예시 2
-let umlaut = "\u00FC"; // ü
-let u_diaeresis = "u\u0308"; // u + 분음부호 ü
+const umlaut = "\u00FC"; // ü
+const u_diaeresis = "u\u0308"; // u + 분음부호 ü
 
 umlaut === u_diaeresis; // false
 umlaut.normalize() === u_diaeresis.normalize(); // true

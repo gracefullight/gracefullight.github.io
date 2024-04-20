@@ -30,11 +30,11 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADN0lEQVR42u
 ```javascript
 // imageSrc는 위의 이미지 데이터이다.
 // 실제 데이터는 iVBO...부터이므로 split한다.
-var imgData = atob(imageSrc.split(",")[1]);
-var len = imgData.length;
-var buf = new ArrayBuffer(len); // 비트를 담을 버퍼를 만든다.
-var view = new Uint8Array(buf); // 버퍼를 8bit Unsigned Int로 담는다.
-var blob, i;
+const imgData = atob(imageSrc.split(",")[1]);
+const len = imgData.length;
+const buf = new ArrayBuffer(len); // 비트를 담을 버퍼를 만든다.
+const view = new Uint8Array(buf); // 버퍼를 8bit Unsigned Int로 담는다.
+let blob, i;
 
 for (i = 0; i < len; i++) {
   view[i] = imgData.charCodeAt(i) & 0xff; // 비트 마스킹을 통해 msb를 보호한다.
@@ -68,7 +68,7 @@ IE 가 세상에 존재하지 않는다면 코드는 아주 예쁘게 짤 수 �
 a 태그가 보기 싫다면 아래 구문을 포함해 함수로 만든다.
 
 ```javascript
-var a = document.createElement("a");
+const a = document.createElement("a");
 a.style = "display: none";
 a.href = img.src;
 a.download = "new_file_name.png";
@@ -87,8 +87,8 @@ setTimeout(function () {
 IE 때문에 만들었던 Blob 객체를 URL 기능을 이용해 재사용해보자.
 
 ```javascript
-var url = URL.createObjectURL(blob);
-var a = document.createElement("a");
+const url = URL.createObjectURL(blob);
+const a = document.createElement("a");
 a.style = "display: none";
 a.href = url;
 a.download = "new_file_name.png";
@@ -112,7 +112,7 @@ setTimeout(function () {
  * @return [image file]
  */
 function downloadImage(img, fileName) {
-  var imgData = atob(img.src.split(",")[1]),
+  let imgData = atob(img.src.split(",")[1]),
     len = imgData.length,
     buf = new ArrayBuffer(len),
     view = new Uint8Array(buf),
@@ -131,7 +131,7 @@ function downloadImage(img, fileName) {
     window.navigator.msSaveOrOpenBlob(blob, fileName);
   } else {
     //var url = URL.createObjectURL(blob);
-    var a = document.createElement("a");
+    const a = document.createElement("a");
     a.style = "display: none";
     //a.href = url;
     a.href = img.src;

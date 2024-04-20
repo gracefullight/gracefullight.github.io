@@ -26,7 +26,7 @@ undefined를 반환하며 선택이 되지 않는다.
 .에 역슬래시를 2개 붙혀 escape 시킨다.
 
 ```javascript
-var $div = document.querySelector("#id\\.has\\.pariod");
+const $div = document.querySelector("#id\\.has\\.pariod");
 console.log($div);
 // => <div id="id.has.pariod"></div>
 ```

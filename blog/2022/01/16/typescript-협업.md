@@ -17,7 +17,7 @@ date: 2022-01-16 20:09:51
 
 ### 동향 관련
 
-- Stackoverflow Developer Survey 2021: Most popular Technologies [1](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language-prof)
+- StackOverflow Developer Survey 2021: Most popular Technologies [1](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language-prof)
 - MS, Google [2](https://news.dartlang.org/2017/04/dart-typescript-and-official-languages.html)
 - Kakao [3](https://tech.kakao.com/2020/09/21/kakao-fe-platform-team/), Naver [4](https://d2.naver.com/helloworld/2177909), Toss [5](https://toss.tech/article/toss-frontend-chapter)
 
@@ -135,7 +135,7 @@ export const timezone = {
 };
 
 // enum
-export var TimezoneAsEnum;
+export let TimezoneAsEnum;
 
 (function (TimezoneAsEnum) {
   TimezoneAsEnum["KR"] = "Asia/Seoul";
@@ -180,16 +180,16 @@ export enum Timezone {
   KR = "Asia/Seoul",
   JP = "Asia/Tokyo",
   VN = "Asia/Ho_Chi_Minh",
-  PH = "Asia/Manila"
-};
+  PH = "Asia/Manila",
+}
 
-getTimezone(timezone: Timezone)
+// getTimezone(timezone: Timezone);
 // JS 에서는 정상
 // TS 에서는 Asia/Seoul 형식은 Timezone 형식의 매개변수에 할당될 수 없습니다.
-getTimezone("Asia/Seoul")
+getTimezone("Asia/Seoul");
 
 // import 해야 정상
-import { Timezone } from './enums';
+import { Timezone } from "./enums";
 getTimezone(Timezone.KR);
 ```
 
@@ -201,14 +201,14 @@ getTimezone(Timezone.KR);
 
 ```ts title="input"
 class Test {
-  #es6Private() {}
+  // #es6Private() {}
 
   private accessorPrivate() {}
 }
 ```
 
 ```ts title="output"
-var _Test_instances, _Test_es6Private;
+let _Test_instances, _Test_es6Private;
 
 class Test {
   constructor() {

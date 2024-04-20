@@ -20,7 +20,7 @@ triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물
 # 소스
 
 ```js
-const crypto = require("crypto");
+import crypto from "node:crypto";
 
 class TripleDes {
   // #iv;
@@ -47,7 +47,7 @@ class TripleDes {
     const cipher3des = crypto.createCipheriv(
       "des-ede3-cfb8",
       this.getKey(),
-      iv
+      iv,
     );
     let encrypted = cipher3des.update(plain, "utf8", "hex");
     encrypted += cipher3des.final("hex");
@@ -64,7 +64,7 @@ class TripleDes {
     const decipher3des = crypto.createDecipheriv(
       "des-ede3-cfb8",
       this.getKey(),
-      Buffer.from(iv, "hex")
+      Buffer.from(iv, "hex"),
     );
     let decrypted = decipher3des.update(encrypted, "hex", "utf8");
     decrypted += decipher3des.final("utf8");

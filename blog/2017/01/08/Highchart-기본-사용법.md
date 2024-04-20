@@ -54,8 +54,8 @@ Highcharts.setOptions({
   },
 });
 
-var chartCallback = function (data) {
-  var chart = $("#chart").highcharts();
+const chartCallback = function (data) {
+  let chart = $("#chart").highcharts();
 
   if (chart) {
     // 차트가 있을경우 제거한다.
@@ -63,10 +63,10 @@ var chartCallback = function (data) {
   }
 
   if (data) {
-    var categoriesData = []; // 여기에 x축 데이터를 넣는다.
-    var seriesData = {}; // 여기에 data를 파싱해 y축 구조를 만들어준다.
+    const categoriesData = []; // 여기에 x축 데이터를 넣는다.
+    const seriesData = {}; // 여기에 data를 파싱해 y축 구조를 만들어준다.
 
-    var options = {
+    const options = {
       chart: {
         renderTo: "chart", // 다시 그려질 영역 설정
         zoomType: "x", // X축이 줌인이 가능하게 설정

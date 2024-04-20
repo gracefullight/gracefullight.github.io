@@ -15,13 +15,13 @@ date: 2016-12-21 15:33:00
  * @return {[JsonArray]} [주소데이터]
  * <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"> 선행되어야함
  */
-var searchAddr = function () {
+const searchAddr = function () {
   new daum.Postcode({
     oncomplete: function (data) {
-      var fullAddr = ""; // 최종 주소 변수
-      var extraAddr = ""; // 조합형 주소 변수
-      var engAddr = "";
-      var zipcode = "";
+      let fullAddr = ""; // 최종 주소 변수
+      let extraAddr = ""; // 조합형 주소 변수
+      let engAddr = "";
+      let zipcode = "";
 
       // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
       if (data.userSelectedType === "R") {

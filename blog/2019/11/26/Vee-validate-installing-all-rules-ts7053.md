@@ -36,7 +36,7 @@ import, export 의 모듈명은 string index 로 쳐지지 않아 발생한다.
 import { extend } from "vee-validate";
 import * as rules from "vee-validate/dist/rules";
 
-for (let [rule, validation] of Object.entries(rules)) {
+for (const [rule, validation] of Object.entries(rules)) {
   extend(rule, {
     ...validation,
   });

@@ -15,7 +15,7 @@ date: 2017-02-19 17:33:38
 function checkSequenceNumbers(target, counterLength = 6) {
   // under es6
   // let sequentialCounter = Array.apply(null, Array(counterLength)).map(Number.prototype.valueOf,0);
-  let sequentialCounter = new Array(counterLength).fill(0);
+  const sequentialCounter = new Array(counterLength).fill(0);
   let count = 0;
 
   for (let i = 0, len = target.length; i < len; i++) {
@@ -39,7 +39,7 @@ function checkSequenceNumbers(target, counterLength = 6) {
   return sequentialCounter;
 }
 
-let target = [1, 2, 3, 5, 6, 7, 8, 10, 11, 13, 16, 17];
+const target = [1, 2, 3, 5, 6, 7, 8, 10, 11, 13, 16, 17];
 console.log(checkSequnceNumbers(target));
 // => [1, 2, 1, 1, 0, 0]
 ```
