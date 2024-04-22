@@ -5,6 +5,8 @@
     "unifiedjs.vscode-mdx",
     "ms-vscode.vscode-typescript-next",
     "yoavbls.pretty-ts-errors",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "wix.vscode-import-cost",
+    "usernamehw.errorlens"
   ]
 }
