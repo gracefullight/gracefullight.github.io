@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: pnpm/action-setup@master
         with:
-          version: 8
+          version: 9
 
       - name: SETUP_NODE_${{ matrix.node-version }}
         uses: actions/setup-node@master
