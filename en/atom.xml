@@ -13,7 +13,43 @@
         <link href="https://gracefullight.dev/en/pe/management/value-chain/"/>
         <updated>2024-05-01T12:05:00.000Z</updated>
         <summary type="html"><![CDATA[가치사슬 설명]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="가치사슬">가치사슬<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>]]></content>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="가치사슬-개념">가치사슬 개념<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="value-chain" src="https://gracefullight.dev/en/assets/images/value-chain-17e5b2f2c5bc1ec22be7a66839ba2784.webp" width="1280" height="921" class="img_i6r5"></p>
+<ul>
+<li>고객에게 가치를 제공함에 있어 마진을 극대화하기 위한 일련의 활동, 기능, 프로세스</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="구성">구성<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="주요활동">주요활동<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EC%A3%BC%EC%9A%94%ED%99%9C%EB%8F%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>운영</li>
+<li>물류</li>
+<li>마케팅</li>
+<li>서비스</li>
+</ul>
+<table><thead><tr><th>구분</th><th>ERP</th><th>MES</th><th>SCM</th><th>CRM</th></tr></thead><tbody><tr><td>목적</td><td>전사지원</td><td>생산관리</td><td>물류/공급망관리</td><td>고객관리</td></tr><tr><td>대상</td><td>전사활동</td><td>공정</td><td>유통</td><td>고객</td></tr><tr><td>활동</td><td>전사자원통합</td><td>통합 생산</td><td>공급망 최적화</td><td>마케팅, 서비스</td></tr><tr><td>가치사슬</td><td>주요+보조</td><td>주요</td><td>주요</td><td>주요</td></tr><tr><td>신기술</td><td>DX</td><td>디지털트윈</td><td>빅데이터</td><td>O2O</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="보조활동">보조활동<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EB%B3%B4%EC%A1%B0%ED%99%9C%EB%8F%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>기업 인프라</li>
+<li>인적 자원 관리</li>
+<li>기술 개발</li>
+<li>조달</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="분석-단계">분석 단계<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EB%B6%84%EC%84%9D-%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>가치사슬 활동 분류, 분석</li>
+<li>가치 파악 및 비용 정의</li>
+<li>경쟁사 가치사슬 벤치마킹</li>
+<li>경쟁 우위 확보 및 기회 피익</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="고려사항">고려사항<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>ESG 목표 지원</li>
+<li>효율화, 자동화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="참조">참조<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://www.ibm.com/kr-ko/topics/value-chain-analysis" target="_blank" rel="noopener noreferrer">IBM: 가치 사슬 분석이란 무엇인가요?</a></li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
