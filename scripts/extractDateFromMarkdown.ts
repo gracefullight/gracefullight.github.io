@@ -4,11 +4,11 @@ import { Command } from "clipanion";
 import { copy, ensureDir, readdir, readFile } from "fs-extra";
 
 export class ExtractDateFromMarkdown extends Command {
-  static paths = [[`extract-date`]];
+  static readonly paths = [[`extract-date`]];
 
   private getDateMetadata(text: string) {
     const metadataRegex = /^---\n((?:.+\n)+?)---\n/;
-    const metadataMatch = text.match(metadataRegex);
+    const metadataMatch = RegExp(metadataRegex).exec(text);
     if (!metadataMatch) {
       return null;
     }
