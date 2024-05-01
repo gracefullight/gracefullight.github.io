@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[99341],{1483:e=>{e.exports=JSON.parse('{"label":"pe/management","permalink":"/en/tags/pe-management","allTagsPath":"/en/tags","count":1,"unlisted":false}')}}]);

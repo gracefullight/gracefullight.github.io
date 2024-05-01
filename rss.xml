@@ -4,10 +4,20 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 01 May 2024 09:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 May 2024 12:05:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[가치사슬]]></title>
+            <link>https://gracefullight.dev/pe/management/value-chain/</link>
+            <guid>https://gracefullight.dev/pe/management/value-chain/</guid>
+            <pubDate>Wed, 01 May 2024 12:05:00 GMT</pubDate>
+            <description><![CDATA[가치사슬 설명]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="가치사슬">가치사슬<a href="https://gracefullight.dev/pe/management/value-chain/#%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC" class="hash-link" aria-label="가치사슬에 대한 직접 링크" title="가치사슬에 대한 직접 링크">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/management</category>
+        </item>
         <item>
             <title><![CDATA[ISMS-P]]></title>
             <link>https://gracefullight.dev/pe/security/isms-p/</link>
@@ -266,7 +276,7 @@
 <li>페어프로그래밍은 주니어-시니어 조합이 최고.</li>
 <li>소프트웨어의 복잡도가 Medium - High 인 경우 더 효과적.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="애자일과-기존-방법론의-관행">애자일과 기존 방법론의 관행<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC-%EA%B8%B0%EC%A1%B4-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EA%B4%80%ED%96%89" class="hash-link" aria-label="애자일과 기존 방법론의 관행�에 대한 직접 링크" title="애자일과 기존 방법론의 관행에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="애자일과-기존-방법론의-관행">애자일과 기존 방법론의 관행<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC-%EA%B8%B0%EC%A1%B4-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EA%B4%80%ED%96%89" class="hash-link" aria-label="애자일과 기존 방법론의 관행에 대한 직접 링크" title="애자일과 기존 방법론의 관행에 대한 직접 링크">​</a></h2>
 <p><a href="https://www.microsoft.com/en-us/research/publication/have-agile-techniques-been-the-silver-bullet-for-software-development-at-microsoft/" target="_blank" rel="noopener noreferrer">Have Agile Techniques been the Silver Bullet for Software Development at Microsoft?</a></p>
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="결론">결론<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
 <ul>
@@ -391,32 +401,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/130</category>
-        </item>
-        <item>
-            <title><![CDATA[퍼블릭, 프라이빗, 하이브리드 블록체인]]></title>
-            <link>https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/</link>
-            <guid>https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/</guid>
-            <pubDate>Sun, 10 Mar 2024 02:46:00 GMT</pubDate>
-            <description><![CDATA[Public, Private, Hybrid Blockchain]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-블록체인-개요">I. 블록체인 개요<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#i-%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 블록체인 개요에 대한 직접 링크" title="I. 블록체인 개요에 대한 직접 링크">​</a></h2>
-<ul>
-<li>개념<!-- -->
-<ul>
-<li>탈중앙화된 P2P 네트워크를 기반에 합의알고리즘을 통해 무결성을 제공하는 분산 원장 기술</li>
-</ul>
-</li>
-<li>배경</li>
-</ul>
-<table><thead><tr><th>도입기</th><th>발전기</th><th>확산기</th><th>정착기</th></tr></thead><tbody><tr><td>디지털자산</td><td>스마트 계약</td><td>프로토콜</td><td>암호화폐/결제</td></tr><tr><td>거래 결제</td><td>지분증명</td><td>인터페이스</td><td>블록체인 기반 서비스 확대</td></tr><tr><td>비트코인 탄생</td><td>이더리움 탄생</td><td>알트코인 탄생</td><td>-</td></tr><tr><td>Public</td><td>Private</td><td>Hybrid</td><td>융복합</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-구성">II. 구성<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#ii-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="II. 구성에 대한 직접 링크" title="II. 구성에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="iii-적용방안">III. 적용방안<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#iii-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="III. 적용방안에 대한 직접 링크" title="III. 적용방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>적용효과</th><th>적용방안</th></tr></thead><tbody><tr><td>공공</td><td>투명성 확보</td><td>토지대장, 투표, 전자시민권 등</td></tr><tr><td>금융</td><td>거래비용 절감</td><td>환전, 송금, 증권, 지급 등</td></tr><tr><td>민간</td><td>가시성 확보</td><td>물류, 유통, 공급망관리 등</td></tr><tr><td>민간</td><td>지적재산보호</td><td>개인 컨텐츠, 음악, 영상 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
-<ul>
-<li>126/2/5</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/126</category>
         </item>
     </channel>
 </rss>
