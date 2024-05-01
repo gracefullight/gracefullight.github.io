@@ -4,10 +4,108 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 21 Apr 2024 11:51:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 May 2024 07:10:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[가트너 10대 전략 기술 트렌드 2024]]></title>
+            <link>https://gracefullight.dev/pe/convergence/gartner-2024/</link>
+            <guid>https://gracefullight.dev/pe/convergence/gartner-2024/</guid>
+            <pubDate>Wed, 01 May 2024 07:10:00 GMT</pubDate>
+            <description><![CDATA[2024년 가트너 전략기술 트렌드]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="가트너-10대-전략기술-개요">가트너 10대 전략기술 개요<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#%EA%B0%80%ED%8A%B8%EB%84%88-10%EB%8C%80-%EC%A0%84%EB%9E%B5%EA%B8%B0%EC%88%A0-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="가트너 10대 전략기술 개요에 대한 직접 링크" title="가트너 10대 전략기술 개요에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>트리즘, 위협관리, 지속가능 기술
+플랫폼엔지니어링, AI증강개발, 산업클라우드
+지능형앱, 생성형AI 보편화, 증강-연결인력
+기계고객</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="1-ai-trism">1. AI TRiSM<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#1-ai-trism" class="hash-link" aria-label="1. AI TRiSM에 대한 직접 링크" title="1. AI TRiSM에 대한 직접 링크">​</a></h3>
+<ul>
+<li>AI Trust, Risk and Security Management</li>
+<li><strong>AI 모델 거버넌스</strong>, 신뢰성, 공정성, 견고성, 효능 및 데이터 보호 정책과 도구들을 준비한 상태에서 운영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="2-지속적인-위협-노출-관리">2. 지속적인 위협 노출 관리<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#2-%EC%A7%80%EC%86%8D%EC%A0%81%EC%9D%B8-%EC%9C%84%ED%98%91-%EB%85%B8%EC%B6%9C-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="2. 지속적인 위협 노출 관리에 대한 직접 링크" title="2. 지속적인 위협 노출 관리에 대한 직접 링크">​</a></h3>
+<ul>
+<li>CTEM: Continuous Threat Exposure Management</li>
+<li>기업의 보안 위협을 지속적으로 평가하고 관리</li>
+<li><strong>선제적 정보보안</strong> 대책</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="3-지속가능한-기술">3. 지속가능한 기술<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#3-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="3. 지속가능한 기술에 대한 직접 링크" title="3. 지속가능한 기술에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Sustainable Technology</li>
+<li><strong>ESG</strong>, 생태 균형, 인권 존중</li>
+<li>재생에너지, 추적성, 효율성</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="4-플랫폼-엔지니어링">4. 플랫폼 엔지니어링<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81" class="hash-link" aria-label="4. 플랫폼 엔지니어링에 대한 직접 링크" title="4. 플랫폼 엔지니어링에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Platform Engineering</li>
+<li>SW 제공, 수명주기 관리 위한 <strong>내부고객용 플랫폼</strong> 구축 및 운영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="5-ai-증강-개발">5. AI 증강 개발<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#5-ai-%EC%A6%9D%EA%B0%95-%EA%B0%9C%EB%B0%9C" class="hash-link" aria-label="5. AI 증강 개발에 대한 직접 링크" title="5. AI 증강 개발에 대한 직접 링크">​</a></h3>
+<ul>
+<li>AI-Augmented Development</li>
+<li>개발, 테스트시 생셩형 AI, 머신러닝과 같은 <strong>AI 적용 개발</strong> 도구 활용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="6-산업-클라우드-플랫폼">6. 산업 클라우드 플랫폼<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#6-%EC%82%B0%EC%97%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%94%8C%EB%9E%AB%ED%8F%BC" class="hash-link" aria-label="6. 산업 클라우드 플랫폼에 대한 직접 링크" title="6. 산업 클라우드 플랫폼에 대한 직접 링크">​</a></h3>
+<ul>
+<li>ICP: Industry Cloud Platform</li>
+<li>특정 산업 분야에 맞춤형 솔루션을 제공하는 <strong>전문 클라우드 플랫폼</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="7-지능형-애플리케이션">7. 지능형 애플리케이션<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#7-%EC%A7%80%EB%8A%A5%ED%98%95-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98" class="hash-link" aria-label="7. 지능형 애플리케이션에 대한 직접 링크" title="7. 지능형 애플리케이션에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Intelligent applications</li>
+<li>AI를 기반으로 사람과 기계에 <strong>자율적으로 반응</strong>할 수 있는 프로그램</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="8-보편화된-생성형-ai">8. 보편화된 생성형 AI<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#8-%EB%B3%B4%ED%8E%B8%ED%99%94%EB%90%9C-%EC%83%9D%EC%84%B1%ED%98%95-ai" class="hash-link" aria-label="8. 보편화된 생성형 AI에 대한 직접 링크" title="8. 보편화된 생성형 AI에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Democratized Generative AI</li>
+<li><strong>사전 학습모델, 클라우드 컴퓨팅, 오픈소스의 결합</strong>으로 생성형 AI가 보편화되면서 전 세계 사람들이 모델에 접근 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="9-증강-연결된-인력">9. 증강-연결된 인력<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#9-%EC%A6%9D%EA%B0%95-%EC%97%B0%EA%B2%B0%EB%90%9C-%EC%9D%B8%EB%A0%A5" class="hash-link" aria-label="9. 증강-연결된 인력에 대한 직접 링크" title="9. 증강-연결된 인력에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Augmented-Connected Workforce</li>
+<li>회사로부터 <strong>디지털 도구로 모니터링 및 업무</strong>를 하는 노동자</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="10-기계-고객">10. 기계 고객<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#10-%EA%B8%B0%EA%B3%84-%EA%B3%A0%EA%B0%9D" class="hash-link" aria-label="10. 기계 고객에 대한 직접 링크" title="10. 기계 고객에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Machine Customers, Custobot</li>
+<li><strong>기계가 인간을 대신해서 자율적</strong>으로 제품이나 서비스 주문 및 결제</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ai-trism">AI TRiSM<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#ai-trism" class="hash-link" aria-label="AI TRiSM에 대한 직접 링크" title="AI TRiSM에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="1-설명-가능성-모델-모니터링">1. 설명 가능성, 모델 모니터링<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#1-%EC%84%A4%EB%AA%85-%EA%B0%80%EB%8A%A5%EC%84%B1-%EB%AA%A8%EB%8D%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="1. 설명 가능성, 모델 모니터링에 대한 직접 링크" title="1. 설명 가능성, 모델 모니터링에 대한 직접 링크">​</a></h3>
+<ul>
+<li>xAI, Explainability / Model Monitoring</li>
+<li>AI <strong>알고리즘의 설명 가능성 확보</strong>하고 신뢰할 수 있게 하는 것</li>
+<li>AI 모델 성능 모니터링으로 프로세스 효율적 개선 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="2-모델옵스">2. 모델옵스<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#2-%EB%AA%A8%EB%8D%B8%EC%98%B5%EC%8A%A4" class="hash-link" aria-label="2. 모델옵스에 대한 직접 링크" title="2. 모델옵스에 대한 직접 링크">​</a></h3>
+<ul>
+<li>ModelOps</li>
+<li>AI 모델의 재조정, 재학습, 재구축 지원</li>
+<li>AI 기반 시스템 개발, 운영, 유지보수의 무중단 프로세스</li>
+<li>AI 거버넌스와 라이프사이클 관리</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="3-ai-어플리케이션-보안">3. AI 어플리케이션 보안<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#3-ai-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%B3%B4%EC%95%88" class="hash-link" aria-label="3. AI 어플리케이션 보안에 대한 직접 링크" title="3. AI 어플리케이션 보안에 대한 직접 링크">​</a></h3>
+<ul>
+<li>AI Application Security</li>
+<li><strong>AI 적대적 공격 방어 및 위협 탐지</strong>, 안정적 프로세스 보장</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="4-개인정보보호">4. 개인정보보호<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#4-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8" class="hash-link" aria-label="4. 개인정보보호에 대한 직접 링크" title="4. 개인정보보호에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Privacy</li>
+<li><strong>데이터 보호, GDPR 준수</strong></li>
+<li>개인정보 비식별화를 넘어 합성 데이터, 허위 데이터 사용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="참조">참조<a href="https://gracefullight.dev/pe/convergence/gartner-2024/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024" target="_blank" rel="noopener noreferrer">Gartner: Gartner Top 10 Strategic Technology Trends for 2024</a></li>
+<li><a href="https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=82618&amp;bcIdx=26147&amp;parentSeq=26147" target="_blank" rel="noopener noreferrer">NIA: 주요 기관이 전망한 2024년 유망 기술</a></li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/convergence</category>
+        </item>
         <item>
             <title><![CDATA[개인정보 보호법 2차 시행령 개정사항]]></title>
             <link>https://gracefullight.dev/2024/04/21/개인정보-보호법-2차-시행령-개정사항/</link>
@@ -105,7 +203,7 @@
 <li>페어프로그래밍은 주니어-시니어 조합이 최고.</li>
 <li>소프트웨어의 복잡도가 Medium - High 인 경우 더 효과적.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="애자일과-기존-방법론의-관행">애자일과 기존 방법론의 관행<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC-%EA%B8%B0%EC%A1%B4-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EA%B4%80%ED%96%89" class="hash-link" aria-label="애자일과 기존 방법론의 관행에 대한 직접 링크" title="애자일과 기존 방법론의 관행에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="애자일과-기존-방법론의-관행">애자일과 기존 방법론의 관행<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC-%EA%B8%B0%EC%A1%B4-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EA%B4%80%ED%96%89" class="hash-link" aria-label="애자�일과 기존 방법론의 관행에 대한 직접 링크" title="애자일과 기존 방법론의 관행에 대한 직접 링크">​</a></h2>
 <p><a href="https://www.microsoft.com/en-us/research/publication/have-agile-techniques-been-the-silver-bullet-for-software-development-at-microsoft/" target="_blank" rel="noopener noreferrer">Have Agile Techniques been the Silver Bullet for Software Development at Microsoft?</a></p>
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="결론">결론<a href="https://gracefullight.dev/2024/04/14/agile-methods/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
 <ul>
@@ -119,10 +217,7 @@
             <guid>https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/</guid>
             <pubDate>Sun, 17 Mar 2024 07:33:00 GMT</pubDate>
             <description><![CDATA[리먼(Lehman)의 소프트웨어 진화 법칙]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>129/2/4</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-개요">I. 개요<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#i-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-개념">가. 개념<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#%EA%B0%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가. 개념에 대한 직접 링크" title="가. 개념에 대한 직접 링크">​</a></h3>
 <ul>
 <li>대부분의 소프트웨어가 존재하는 동안 변경이 일반적이며, 지속적으로 유지되기 위해 준수해야하는 법칙</li>
@@ -133,7 +228,11 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-핵심요소-적용방안">II. 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#ii-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 핵심요소, 적용방안에 대한 직접 링크" title="II. 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-핵심요소">가. 핵심요소<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#%EA%B0%80-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="가. 핵심요소에 대한 직접 링크" title="가. 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>법칙</th><th>내용</th></tr></thead><tbody><tr><td>완전유지관리</td><td>조직적 안전성</td><td>평균 유효한 글로벌 작업률은 제품 수명 기간동안 변하지 않음</td></tr><tr><td>완전유지관리</td><td>지속적인 성장</td><td>사용자를 만족시키기 위해 기능적 성장 필요</td></tr><tr><td>적응유지관리</td><td>지속적인 변화</td><td>SW는 지속적으로 적응하고 변화해야함</td></tr><tr><td>적응유지관리</td><td>자기 규제</td><td>시스템 진화는 제품의 배포와 프로세스 측정으로 자체 조절됨</td></tr><tr><td>적응유지관리</td><td>피드백 시스템</td><td>진화 프로세스는 다중 레벨, 다중 에이전프 피드백 시스템이여야함</td></tr><tr><td>수리유지관리</td><td>품질 저하</td><td>변경이 엄격하게 유지 관리되고 적응하지 않으면 품질 감소</td></tr><tr><td>예방유지관리</td><td>증가하는 복잡성</td><td>시스템이 발전할 때 관리하지 않으면 복잡성 증가</td></tr><tr><td>예방유지관리</td><td>친숙도 보존</td><td>사용자는 만족스러운 진화가 될 수 있게 내용과 행동을 숙달해야함</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>구분</th><th>법칙</th><th>내용</th></tr></thead><tbody><tr><td>완전유지관리</td><td>조직적 안전성</td><td>평균 유효한 글로벌 작업률은 제품 수명 기간동안 변하지 않음</td></tr><tr><td>완전유지관리</td><td>지속적인 성장</td><td>사용자를 만족시키기 위해 기능적 성장 필요</td></tr><tr><td>적응유지관리</td><td>지속적인 변화</td><td>SW는 지속적으로 적응하고 변화해야함</td></tr><tr><td>적응유지관리</td><td>자기 규제</td><td>시스템 진화는 제품의 배포와 프로세스 측정으로 자체 조절됨</td></tr><tr><td>적응유지관리</td><td>피드백 시스템</td><td>진화 프로세스는 다중 레벨, 다중 에이전프 피드백 시스템이여야함</td></tr><tr><td>수리유지관리</td><td>품질 저하</td><td>변경이 엄격하게 유지 관리되고 적응하지 않으면 품질 감소</td></tr><tr><td>예방유지관리</td><td>증가하는 복잡성</td><td>시스템이 발전할 때 관리하지 않으면 복잡성 증가</td></tr><tr><td>예방유지관리</td><td>친숙도 보존</td><td>사용자는 만족스러운 진화가 될 수 있게 내용과 행동을 숙달해야함</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/engineering/lehman-law-sw-evolution/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
+<ul>
+<li>129/2/4</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/129</category>
         </item>
@@ -143,10 +242,7 @@
             <guid>https://gracefullight.dev/pe/convergence/web-3-0/</guid>
             <pubDate>Sun, 10 Mar 2024 04:47:00 GMT</pubDate>
             <description><![CDATA[웹 3.0 분석]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>130/4/5</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-웹-30의-개요">I. 웹 3.0의 개요<a href="https://gracefullight.dev/pe/convergence/web-3-0/#i-%EC%9B%B9-30%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 웹 3.0의 개요에 대한 직접 링크" title="I. 웹 3.0의 개요에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-웹-30의-개요">I. 웹 3.0의 개요<a href="https://gracefullight.dev/pe/convergence/web-3-0/#i-%EC%9B%B9-30%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 웹 3.0의 개요에 대한 직접 링크" title="I. 웹 3.0의 개요에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-개념">가. 개념<a href="https://gracefullight.dev/pe/convergence/web-3-0/#%EA%B0%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가. 개념에 대한 직접 링크" title="가. 개념에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>웹 2.0</th><th>웹 3.0</th></tr></thead><tbody><tr><td>참여</td><td>소통</td></tr><tr><td>공유</td><td>융합</td></tr><tr><td>개방</td><td>개인화</td></tr></tbody></table>
 <p>시멘틱 웹 기반으로 웹 페이지의 내용을 이해하고, 개인 맞춤 정보를 제공하는 웹 기술</p>
@@ -155,7 +251,10 @@
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/web-3-0/#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/convergence/web-3-0/#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>요소</th><th>기술</th><th>비고</th></tr></thead><tbody><tr><td>컨텐츠 소유권</td><td>NFT</td><td>디지털켄텐츠 소유권 주장 가능</td></tr><tr><td>탈중앙화</td><td>블록체인</td><td>중앙기관 없는 분산 원장</td></tr><tr><td>개인화서비스</td><td>AI</td><td>사용자 맞춤형 데이터 제공</td></tr><tr><td>확장된 미디어 인터페이스</td><td>메타버스</td><td>현실-가상 융합 공간 제공</td></tr></tbody></table>
-<p>"끝"</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/web-3-0/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
+<ul>
+<li>130/4/5</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/130</category>
         </item>
@@ -165,10 +264,7 @@
             <guid>https://gracefullight.dev/pe/convergence/my-data/</guid>
             <pubDate>Sun, 10 Mar 2024 02:46:00 GMT</pubDate>
             <description><![CDATA[음성 데이터 마이닝]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>128/2/4</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-마이데이터의-개요">I. 마이데이터의 개요<a href="https://gracefullight.dev/pe/convergence/my-data/#i-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 마이데이터의 개요에 대한 직접 링크" title="I. 마이데이터의 개요에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-마이데이터의-개요">I. 마이데이터의 개요<a href="https://gracefullight.dev/pe/convergence/my-data/#i-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 마이데이터의 개요에 대한 직접 링크" title="I. 마이데이터의 개요에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-개념">가. 개념<a href="https://gracefullight.dev/pe/convergence/my-data/#%EA%B0%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가. 개념에 대한 직접 링크" title="가. 개념에 대한 직접 링크">​</a></h3>
 <!-- -->
 <p>개인정보 전송요구권을 통해 내 데이터를 능동적으로 관리하고 활용하는 서비스</p>
@@ -180,7 +276,10 @@
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-활성화-방안">나. 활성화 방안<a href="https://gracefullight.dev/pe/convergence/my-data/#%EB%82%98-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="나. 활성화 방안에 대한 직접 링크" title="나. 활성화 방안에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>제도적</td><td>산업 확대 가이드 구성<br>마이데이터 사업자 지원 확대</td><td>-</td></tr><tr><td>기술적</td><td>데이터 전산화, 표준화<br>보안 기술 연구 지원</td><td>-</td></tr><tr><td>관리적</td><td>데이터 주권 홍보 강화<br>기존 사업자들의 개선 사항반영</td><td>-</td></tr></tbody></table>
 <p>사업자 불신, 정보제공 거부감, 사용자 인식부족 등을 저해요인을 없애기 위해 서비스 신뢰성 확보 및 홍보 필요.</p>
-<p>"끝"</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/my-data/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
+<ul>
+<li>128/2/4</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/128</category>
         </item>
@@ -190,10 +289,7 @@
             <guid>https://gracefullight.dev/pe/convergence/nft/</guid>
             <pubDate>Sun, 10 Mar 2024 02:46:00 GMT</pubDate>
             <description><![CDATA[NFT]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>130/4/1</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-nft-개요">I. NFT 개요<a href="https://gracefullight.dev/pe/convergence/nft/#i-nft-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. NFT 개요에 대한 직접 링크" title="I. NFT 개요에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-nft-개요">I. NFT 개요<a href="https://gracefullight.dev/pe/convergence/nft/#i-nft-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. NFT 개요에 대한 직접 링크" title="I. NFT 개요에 대한 직접 링크">​</a></h2>
 <ul>
 <li>
 <p>개념</p>
@@ -211,7 +307,11 @@
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-nft-구성">II. NFT 구성<a href="https://gracefullight.dev/pe/convergence/nft/#ii-nft-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="II. NFT 구성에 대한 직접 링크" title="II. NFT 구성에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>구성요소</th><th>비고</th></tr></thead><tbody><tr><td>표준 프로토콜</td><td>ERC-721</td><td>NFT</td></tr><tr><td>표준 프로토콜</td><td>ERC-1155</td><td>다중 토큰</td></tr><tr><td>기술요소</td><td>NFT Contract</td><td>스마트 계약</td></tr><tr><td>기술요소</td><td>NFT Metadata</td><td>컨텐츠 태그</td></tr><tr><td>기술요소</td><td>NFT Mint</td><td>NFT 발행</td></tr><tr><td>기술요소</td><td>IPFS</td><td>NFT 미디어 데이터 저장</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="iii-nft-비교">III. NFT 비교<a href="https://gracefullight.dev/pe/convergence/nft/#iii-nft-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="III. NFT 비교에 대한 직접 링크" title="III. NFT 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>FT</th><th>NFT</th></tr></thead><tbody><tr><td>토큰 정보</td><td>토큰 이름 및 약어</td><td>고유 정보</td></tr><tr><td>상호 교환성</td><td>O</td><td>X</td></tr><tr><td>분할성</td><td>O</td><td>X</td></tr><tr><td>활용</td><td>송금, 물품 구매</td><td>자산 소유권</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>구분</th><th>FT</th><th>NFT</th></tr></thead><tbody><tr><td>토큰 정보</td><td>토큰 이름 및 약어</td><td>고유 정보</td></tr><tr><td>상호 교환성</td><td>O</td><td>X</td></tr><tr><td>분할성</td><td>O</td><td>X</td></tr><tr><td>활용</td><td>송금, 물품 구매</td><td>자산 소유권</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/nft/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
+<ul>
+<li>130/4/1</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/130</category>
         </item>
@@ -234,7 +334,10 @@
 <h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-구성">II. 구성<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#ii-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="II. 구성에 대한 직접 링크" title="II. 구성에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="iii-적용방안">III. 적용방안<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#iii-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="III. 적용방안에 대한 직접 링크" title="III. 적용방안에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>적용효과</th><th>적용방안</th></tr></thead><tbody><tr><td>공공</td><td>투명성 확보</td><td>토지대장, 투표, 전자시민권 등</td></tr><tr><td>금융</td><td>거래비용 절감</td><td>환전, 송금, 증권, 지급 등</td></tr><tr><td>민간</td><td>가시성 확보</td><td>물류, 유통, 공급망관리 등</td></tr><tr><td>민간</td><td>지적재산보호</td><td>개인 컨텐츠, 음악, 영상 등</td></tr></tbody></table>
-<p>"끝"</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/public-private-hybrid-blockchain/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
+<ul>
+<li>126/2/5</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/126</category>
         </item>
@@ -244,15 +347,12 @@
             <guid>https://gracefullight.dev/pe/convergence/voice-data-mining/</guid>
             <pubDate>Sun, 10 Mar 2024 02:46:00 GMT</pubDate>
             <description><![CDATA[음성 데이터 마이닝]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>130/4/1</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-음성-데이터-마이닝의-개요">I. 음성 데이터 마이닝의 개요<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#i-%EC%9D%8C%EC%84%B1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 음성 데이터 마이닝의 개요에 대한 직접 링크" title="I. 음성 데이터 마이닝의 개요에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-음성-데이터-마이닝의-개요">I. 음성 데이터 마이닝의 개요<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#i-%EC%9D%8C%EC%84%B1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. 음성 데이터 마이닝의 개요에 대한 직접 링크" title="I. 음성 데이터 마이닝의 개요에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-음성-데이터-마이닝의-개념">가. 음성 데이터 마이닝의 개념<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#%EA%B0%80-%EC%9D%8C%EC%84%B1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가. 음성 데이터 마이닝의 개념에 대한 직접 링크" title="가. 음성 데이터 마이닝의 개념에 대한 직접 링크">​</a></h3>
 <p>음성 신호나 데이터를 기계적으로 처리하여 화자의 의견, 감정에 대한 정보를 도출하는 과정</p>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-음성-데이터-마이닝-배경">나. 음성 데이터 마이닝 배경<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#%EB%82%98-%EC%9D%8C%EC%84%B1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EB%8B%9D-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="나. 음성 데이터 마이닝 배경에 대한 직접 링크" title="나. 음성 데이터 마이닝 배경에 대한 직접 링크">​</a></h3>
 <p>HMI (Human Machine Interface)가 기존의 텍스트에서 음성으로 변화하고 있고, 톤과 인토네이션의 차이로 같은 문장이라도 화자의 감정을 파악이 가능해짐.</p>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 구조, 핵��심요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용방안에 대한 직접 링크" title="II. 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
 <p>음성/영상 --&gt; 음성인식(STT) --&gt; 데이터전처리 --&gt; 토큰화 --&gt; 특징 추출 --&gt; 데이터 분석</p>
 <h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
@@ -263,43 +363,10 @@
 <ul>
 <li>클라우드 컴퓨팅을 활용하여 온디맨드 방식의 데이터 분석/처리로 비용 절감</li>
 </ul>
-<p>"끝"</p>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/130</category>
-        </item>
-        <item>
-            <title><![CDATA[파일시스템, 데이터베이스, 블록체인의 저장 특성]]></title>
-            <link>https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/</link>
-            <guid>https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/</guid>
-            <pubDate>Sun, 10 Mar 2024 02:00:00 GMT</pubDate>
-            <description><![CDATA[파일시스템, 데이터베이스, 블록체인 비교]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>130/3/2</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="i-fs-db-blockchain-개요">I. FS, DB, Blockchain 개요<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#i-fs-db-blockchain-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="I. FS, DB, Blockchain 개요에 대한 직접 링크" title="I. FS, DB, Blockchain 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-개념">가. 개념<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#%EA%B0%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가. 개념에 대한 직접 링크" title="가. 개념에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="기출">기출<a href="https://gracefullight.dev/pe/convergence/voice-data-mining/#%EA%B8%B0%EC%B6%9C" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
 <ul>
-<li>FS: 프로그램 또는 데이터 등과 같은 정보의 집합, 자료를 쉽게 접근할 수 있도록 하는 체계.</li>
-<li>DB: 데이터를 통합하여 저장하고 운영하며 여러 사람이 공유하여 사용할 목적을 가진 데이터 집합.</li>
-<li>BlockChain: 트랜잭션을 기록, 추적, 신뢰하기 위한 탈중앙화된 분산 데이터 저장 체계.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-배경">나. 배경<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#%EB%82%98-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="나. 배경에 대한 직접 링크" title="나. 배경에 대한 직접 링크">​</a></h3>
-<ul>
-<li>컴퓨터 내부에서 저장하던 데이터를 인터넷을 통해 공유하기 위해 데이터베이스가 등장, 클라우드 컴퓨팅과 메타버스가 활성화 됨에 따라 데이터를 분산 저장 및 소유권 저장의 필요성이 증가함.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="ii-구조-핵심요소-적용방안">II. 구조, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#ii-%EA%B5%AC%EC%A1%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="II. 구조, 핵심요소, 적용�방안에 대한 직접 링크" title="II. 구조, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="가-구조-구성도-개념도">가. 구조 (구성도, 개념도)<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#%EA%B0%80-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가. 구조 (구성도, 개념도)에 대한 직접 링크" title="가. 구조 (구성도, 개념도)에 대한 직접 링크">​</a></h3>
-<p>아래 그림</p>
-<ul>
-<li>FS: Inode -&gt; block</li>
-<li>DB: Table, System Catalog</li>
-<li>BlockChain: hash based linked list block + merkle tree</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_a4Z3" id="나-핵심요소">나. 핵심요소<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#%EB%82%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="나. 핵심요소에 대한 직접 링크" title="나. 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>데이터 저장 방식</td><td>FS API</td><td>DDL, DML</td><td>합의 알고리즘</td></tr><tr><td>트랜잭션</td><td>없음</td><td>ACID 보장</td><td>합의 알고리즘으로 트랜잭션 처리</td></tr><tr><td>데이터 중복</td><td>단일 데이터</td><td>역정규화로 일부 허용</td><td>참여자 전체 중복 저장</td></tr><tr><td>종류</td><td>FAT, NFTS</td><td>RDBMS, NoSQL</td><td>Public, Private, Hybrid</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_a4Z3" id="iii-적용-방안">III. 적용 방안<a href="https://gracefullight.dev/pe/convergence/fs-vs-db-vs-blockchain/#iii-%EC%A0%81%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="III. 적용 방안에 대한 직접 링크" title="III. 적용 방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>개인/기업 데이터저장</td><td>엔터프라이즈 어플리케이션</td><td>암호화폐</td></tr><tr><td>멀티미디어</td><td>웹 어플리케이션</td><td>공급망 관리</td></tr><tr><td>IPFS</td><td>빅데이터 분석</td><td>스마트 컨트랙트</td></tr></tbody></table>
-<p>"끝"</p>]]></content:encoded>
+<li>130/4/1</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/130</category>
         </item>
