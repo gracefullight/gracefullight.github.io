@@ -12,34 +12,47 @@ date: %s
 description: %s
 authors: me
 tags: 
-  - me
+  %s
 ---\n`;
 
 export class NewPost extends Command {
-  static paths = [[`new`]];
+  static readonly paths = [[`new`]];
 
   title = Option.String();
+  tags = Option.String("--tags", "");
+  pe = Option.Boolean("-P,--pe", false, { description: "below pe folder" });
 
   async execute(): Promise<number | void> {
     const now = DateTime.now();
 
-    const target = resolve(
-      __dirname,
-      "..",
-      "blog",
-      now.toFormat("yyyy"),
-      now.toFormat("MM"),
-      now.toFormat("dd"),
-    );
+    const target = this.pe
+      ? resolve(__dirname, "..", "blog", "pe")
+      : resolve(
+          __dirname,
+          "..",
+          "blog",
+          now.toFormat("yyyy"),
+          now.toFormat("MM"),
+          now.toFormat("dd"),
+        );
 
     this.context.stdout.write(`Create new post "${this.title}"\n`);
 
+    let tagList = "- me";
+    if (this.tags) {
+      tagList = `- ${this.tags.replace(/,/g, "\n  - ")} `;
+    }
+
+    if (this.pe) {
+      tagList = `- pe\n  ${tagList}`;
+    }
+
     await ensureDir(target);
 
-    const mdxPath = resolve(target, `${slugize(this.title)}.mdx`);
+    const mdxPath = resolve(target, `${slugize(this.title)}.md`);
     await writeFile(
       mdxPath,
-      format(scaffold, this.title, now.toISO(), this.title),
+      format(scaffold, this.title, now.toISO(), this.title, tagList),
       "utf8",
     );
 
