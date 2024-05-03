@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[70383],{84365:t=>{t.exports=JSON.parse('{"label":"crypto","permalink":"/tags/crypto","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

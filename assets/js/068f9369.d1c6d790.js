@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[99889],{88906:e=>{e.exports=JSON.parse('{"label":"jquery","permalink":"/tags/jquery","allTagsPath":"/tags","count":13,"unlisted":false}')}}]);

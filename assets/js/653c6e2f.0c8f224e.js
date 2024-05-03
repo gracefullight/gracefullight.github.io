@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[51054],{8606:e=>{e.exports=JSON.parse('{"label":"puppeteer","permalink":"/tags/puppeteer","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

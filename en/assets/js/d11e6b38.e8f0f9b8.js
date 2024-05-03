@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[66857],{51518:a=>{a.exports=JSON.parse('{"label":"highchart","permalink":"/en/tags/highchart","allTagsPath":"/en/tags","count":1,"unlisted":false}')}}]);

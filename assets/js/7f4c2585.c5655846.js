@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[39786],{38830:e=>{e.exports=JSON.parse('{"label":"pihole","permalink":"/tags/pihole","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

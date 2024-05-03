@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[77815],{90564:a=>{a.exports=JSON.parse('{"label":"prisma","permalink":"/tags/prisma","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

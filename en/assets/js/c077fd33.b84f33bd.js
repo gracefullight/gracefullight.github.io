@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[33601],{61586:e=>{e.exports=JSON.parse('{"permalink":"/en/tags/laravel/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":19,"previousPage":"/en/tags/laravel","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

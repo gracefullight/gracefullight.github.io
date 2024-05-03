@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[88204],{65975:e=>{e.exports=JSON.parse('{"label":"conference","permalink":"/en/tags/conference","allTagsPath":"/en/tags","count":3,"unlisted":false}')}}]);

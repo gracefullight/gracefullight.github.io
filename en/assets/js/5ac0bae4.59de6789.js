@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([[12484],{87214:a=>{a.exports=JSON.parse('{"label":"pwa","permalink":"/en/tags/pwa","allTagsPath":"/en/tags","count":5,"unlisted":false}')}}]);
