@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.52649b1d.css">
-<script src="/en/assets/js/runtime~main.6a458607.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.a0ac7695.js" defer="defer"></script>
 <script src="/en/assets/js/main.bdadd718.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,6 +48,7 @@
 <table><thead><tr><th>LLM의 문제점</th><th>설명</th><th>RAG 기대효과</th></tr></thead><tbody><tr><td>환각</td><td>답변이 없을 때 허위정보 제공</td><td>독점 데이터 활용 정보 제공</td></tr><tr><td>최신 데이터</td><td>일반적인 정보 제공</td><td>구체적 정보 제공</td></tr><tr><td>신뢰성</td><td>신뢰할 수 없는 출처로부터의 응답 제공</td><td>신뢰할 수 있는 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="rag의-구성도-및-절차">RAG의 구성도 및 절차<a href="#rag의-구성도-및-절차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_K45l" id="구성도">구성도<a href="#구성도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="rag" src="/en/assets/images/rag-060c830aa10cc490e226778654d1ea28.webp" width="898" height="532" class="img_xt78"></p>
 <blockquote>
 <p>웹인터페이스 -&gt; 벡터데이터베이스 -&gt; LLM</p>
 </blockquote>
@@ -61,7 +62,7 @@
 <li>외부 데이터 업데이트: 벡터DB에 새로운 데이터를 주기적으로 업데이트하여 최신화</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="파인튜닝과-rag-비교">파인튜닝과 RAG 비교<a href="#파인튜닝과-rag-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>파인튜닝</th><th>검색증강생성</th></tr></thead><tbody><tr><td>방식</td><td>특화데이터를 모델이 재학습</td><td>데이터 소스 추가 제공으로 모델 성능 향상</td></tr><tr><td>데이터 규모</td><td>작음</td><td>대규모 지식 베이스</td></tr><tr><td>모델 조정</td><td>재학습으로 모델이 새로운 데이터로 조정됨</td><td>추가 학습 없어 모델 조정 불필요</td></tr><tr><td>비용</td><td>고비용, 모델 전체 재학습</td><td>저비용</td></tr><tr><td>장점</td><td>적은 데이터로 학습 가능, 특정 작업에서 효과적 성능 향상</td><td>재학습 불필요, 과적합 위험 없음, 최신 데이터 반영</td></tr><tr><td>단점</td><td>고품질 데이터 확보 어려움<br>과적합,  편향, 환각<br>고비용</td><td>LLM 모델에 따른 답변 품질 저하<br>소스 데이터 속성에 맞는 임베딩 모델 검토 필요</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>파인튜닝</th><th>검색증강생성</th></tr></thead><tbody><tr><td>방식</td><td>특화데이터를 모델이 재학습</td><td>데이터 소스 추가 제공으로 모델 성능 향상</td></tr><tr><td>데이터 규모</td><td>작음</td><td>대규모 지식 베이스</td></tr><tr><td>모델 조정</td><td>재학습으로 모델이 새로운 데이터로 조정됨</td><td>추가 학습 없어 모델 조정 불필요</td></tr><tr><td>비용</td><td>고비용, 모델 전체 재학습</td><td>저비용</td></tr><tr><td>장점</td><td>적은 데이터로 학습 가능, 특정 작업에서 효과적 성능 향상</td><td>재학습 불필요, 과적합 위험 없음, 최신 데이터 반영</td></tr><tr><td>단점</td><td>고품질 데이터 확보 어려움<br>과적합, 편향, 환각<br>고비용</td><td>LLM 모델에 따른 답변 품질 저하<br>소스 데이터 속성에 맞는 임베딩 모델 검토 필요</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="참조">참조<a href="#참조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://aws.amazon.com/ko/what-is/retrieval-augmented-generation/" target="_blank" rel="noopener noreferrer">AWS: RAG란 무엇인가요?</a></li>
@@ -89,7 +90,7 @@
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="osi-7-레이어-개념도-구성">OSI 7 레이어 개념도, 구성<a href="#osi-7-레이어-개념도-구성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_K45l" id="osi-7-레이어-개념도">OSI 7 레이어 개념도<a href="#osi-7-레이어-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_K45l" id="osi-7-레이어-개념도">OSI 7 레이어 개념도<a href="#osi-7-레이어-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">  ​</a></h3>
 <p><img decoding="async" loading="lazy" alt="OSI 7 레이어" src="/en/assets/images/osi-7-d66e5ee2caf65800ae9c7eb7fcf0991f.webp" width="502" height="386" class="img_xt78"></p>
 <ul>
 <li>같은 계층간 논리통신을 제공하기 위하여 터널링 기법(가상통신, Peer to Peer)을 사용</li>

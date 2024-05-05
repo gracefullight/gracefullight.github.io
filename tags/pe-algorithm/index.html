@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.52649b1d.css">
-<script src="/assets/js/runtime~main.0a20d679.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5c170810.js" defer="defer"></script>
 <script src="/assets/js/main.5a1c7708.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,6 +48,7 @@
 <table><thead><tr><th>LLM의 문제점</th><th>설명</th><th>RAG 기대효과</th></tr></thead><tbody><tr><td>환각</td><td>답변이 없을 때 허위정보 제공</td><td>독점 데이터 활용 정보 제공</td></tr><tr><td>최신 데이터</td><td>일반적인 정보 제공</td><td>구체적 정보 제공</td></tr><tr><td>신뢰성</td><td>신뢰할 수 없는 출처로부터의 응답 제공</td><td>신뢰할 수 있는 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="rag의-구성도-및-절차">RAG의 구성도 및 절차<a href="#rag의-구성도-및-절차" class="hash-link" aria-label="RAG의 구성도 및 절차에 대한 직접 링크" title="RAG의 구성도 및 절차에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_K45l" id="구성도">구성도<a href="#구성도" class="hash-link" aria-label="구성도에 대한 직접 링크" title="구성도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="rag" src="/assets/images/rag-060c830aa10cc490e226778654d1ea28.webp" width="898" height="532" class="img_xt78"></p>
 <blockquote>
 <p>웹인터페이스 -&gt; 벡터데이터베이스 -&gt; LLM</p>
 </blockquote>
@@ -61,7 +62,7 @@
 <li>외부 데이터 업데이트: 벡터DB에 새로운 데이터를 주기적으로 업데이트하여 최신화</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="파인튜닝과-rag-비교">파인튜닝과 RAG 비교<a href="#파인튜닝과-rag-비교" class="hash-link" aria-label="파인튜닝과 RAG 비교에 대한 직접 링크" title="파인튜닝과 RAG 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>파인튜닝</th><th>검색증강생성</th></tr></thead><tbody><tr><td>방식</td><td>특화데이터를 모델이 재학습</td><td>데이터 소스 추가 제공으로 모델 성능 향상</td></tr><tr><td>데이터 규모</td><td>작음</td><td>대규모 지식 베이스</td></tr><tr><td>모델 조정</td><td>재학습으로 모델이 새로운 데이터로 조정됨</td><td>추가 학습 없어 모델 조정 불필요</td></tr><tr><td>비용</td><td>고비용, 모델 전체 재학습</td><td>저비용</td></tr><tr><td>장점</td><td>적은 데이터로 학습 가능, 특정 작업에서 효과적 성능 향상</td><td>재학습 불필요, 과적합 위험 없음, 최신 데이터 반영</td></tr><tr><td>단점</td><td>고품질 데이터 확보 어려움<br>과적합, 편향, 환각<br>고비용</td><td>LLM 모델에 따른 답변 품질 저하<br>소스 데이터 속성에 맞는 임베딩 모델 검토 필요</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>파인튜닝</th><th>검색증강생성</th></tr></thead><tbody><tr><td>방식</td><td>특화데이터를 모델이  재학습</td><td>데이터 소스 추가 제공으로 모델 성능 향상</td></tr><tr><td>데이터 규모</td><td>작음</td><td>대규모 지식 베이스</td></tr><tr><td>모델 조정</td><td>재학습으로 모델이 새로운 데이터로 조정됨</td><td>추가 학습 없어 모델 조정 불필요</td></tr><tr><td>비용</td><td>고비용, 모델 전체 재학습</td><td>저비용</td></tr><tr><td>장점</td><td>적은 데이터로 학습 가능, 특정 작업에서 효과적 성능 향상</td><td>재학습 불필요, 과적합 위험 없음, 최신 데이터 반영</td></tr><tr><td>단점</td><td>고품질 데이터 확보 어려움<br>과적합, 편향, 환각<br>고비용</td><td>LLM 모델에 따른 답변 품질 저하<br>소스 데이터 속성에 맞는 임베딩 모델 검토 필요</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="참조">참조<a href="#참조" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://aws.amazon.com/ko/what-is/retrieval-augmented-generation/" target="_blank" rel="noopener noreferrer">AWS: RAG란 무엇인가요?</a></li>
@@ -79,7 +80,7 @@
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="llm과-sllm-비교">LLM과 sLLM 비교<a href="#llm과-sllm-비교" class="hash-link" aria-label="LLM과 sLLM 비교에 대한 직접 링크" title="LLM과 sLLM 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>LLM</th><th>sLLM</th></tr></thead><tbody><tr><td>훈련 데이터 크기</td><td>대규모, 대용량</td><td>상대적으로 작은 규모, 소용량</td></tr><tr><td>파라미터 크기</td><td>수천억 개</td><td>수십억 개</td></tr><tr><td>성능</td><td>더많은 컨텍스트와 언어이해능력</td><td>작은 모델로 일부 성능 제한</td></tr><tr><td>배포 용이성</td><td>대용량으로 배포 어려움</td><td>작은 규모로 배포 용이</td></tr><tr><td>사용성</td><td>학습 리소스 등 자원 사용량이 많아 운영 제약</td><td>경량화 된 모델로 제한된 자원으로 활용 가능</td></tr><tr><td>서비스 제공</td><td>클라우드 기반에서 범용 서비스 적합</td><td>온프레미스 방식으로 기업내 구축 가능</td></tr><tr><td>예시</td><td>ChatGPT, Gemini</td><td>LLama, Phi-3</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_KKRD padding--none margin-left--sm"><li class="tag_kCDl"><a class="tag_a5Al tagRegular_cOAV" href="/tags/pe/">pe</a></li><li class="tag_kCDl"><a class="tag_a5Al tagRegular_cOAV" href="/tags/pe-algorithm/">pe/algorithm</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_KiF_"><a href="/pe/algorithm/svm/">서포트 벡터 머신</a></h2><div class="container_BZNN margin-vert--md"><time datetime="2024-05-04T04:11:05.413Z">2024년 5월 4일</time> · <!-- -->약 2분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_cSkn"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_K45l" id="svm-개념">SVM 개념<a href="#svm-개념" class="hash-link" aria-label="SVM 개념에 대한 직접 링크" title="SVM 개념에 대한 직접 링크">​</a></h2>
 <ul>
-<li>서포트 벡터, 하이퍼플레인, 차원 전환 원리를 이용하여 주어진 데이터가 어떤 카테고리에 속할지 판단하는 이진선형분류모델</li>
+<li>서포트 벡터, 하이퍼플레인, 차원 전환 원리를 이용하여 주어진 데이터가 어떤 카테  고리에 속할지 판단하는 이진선형분류모델</li>
 <li>서포트 벡터 분류기 + 비선형 커널 = 서포트벡터머신</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="svm의-개념도-문제-해결방법-장단점">SVM의 개념도, 문제 해결방법, 장단점<a href="#svm의-개념도-문제-해결방법-장단점" class="hash-link" aria-label="SVM의 개념도, 문제 해결방법, 장단점에 대한 직접 링크" title="SVM의 개념도, 문제 해결방법, 장단점에 대한 직접 링크">​</a></h2>
@@ -87,7 +88,7 @@
 <table><thead><tr><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="SVM" src="/assets/images/svm-linear-cba32516a64a0791673f89e0edf490e5.webp" width="921" height="473" class="img_xt78"></td><td><img decoding="async" loading="lazy" alt="SVM" src="/assets/images/svm-non-linear-4afecde40c5b80af508ac09467bd96a0.webp" width="838" height="334" class="img_xt78"></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_K45l" id="문제-해결-방법">문제 해결 방법<a href="#문제-해결-방법" class="hash-link" aria-label="문제 해결 방법에 대한 직접 링크" title="문제 해결 방법에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td>특징</td><td>초평면 분리 가능</td><td>초평면 분리 불가</td></tr><tr><td>해결방법</td><td>마진을 최대화하는 서포트벡터 탐색 후 분류</td><td>커널 트릭 사용하여 데이터 고차원 매핑</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_K45l" id="장단점">장단점<a href="#장단점" class="hash-link" aria-label="장단점에 대한 직접 링크" title="장단점에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_K45l" id="장단점">장단점<a href="#장단점" class="hash-link" aria-label="장단점에 대한 직접 링크" title="장단점에 대한 직접 링크"> ​</a></h3>
 <ul>
 <li>장점: 인공신경망의 과적합 해결방법 제시, 비선형 문제 해결</li>
 <li>단점: 단일 SVM 성능 한계</li>
@@ -112,7 +113,7 @@
 <li>루트 노드: 최상단 노드, 첫 분류 조건</li>
 <li>부모 노드: 상위 노드</li>
 <li>자식 노드: 하위 노드</li>
-<li>리프 노드: 결과를 예측하는 말단 노드</li>
+<li>리프 노 드: 결과를 예측하는 말단 노드</li>
 <li>엣지: 샘플을 분류하기 위한 조건</li>
 <li>뎁스: 루트 노드에서 특정 노드까지 도달하기 위해 거쳐야하는 엣지 수</li>
 </ul>
@@ -132,7 +133,7 @@
 <li>타당성 평가: 가장 적은 엔트로피를 갖는 나무를 평가하고 최적 모형 선택</li>
 <li>해석 및 예측: 구축된 나무모형 해석</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_K45l" id="의사결정나무-평가모델">의사결정나무 평가모델<a href="#의사결정나무-평가모델" class="hash-link" aria-label="의사결정  나무 평가모델에 대한 직접 링크" title="의사결정나무 평가모델에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_K45l" id="의사결정나무-평가모델">의사결정나무 평가모델<a href="#의사결정나무-평가모델" class="hash-link" aria-label="의사결정나무 평가모델에 대한 직접 링크" title="의사결정나무 평가모델에 대한 직접 링크">​</a></h2>
 <ul>
 <li>지니 계수: Gini Index<!-- -->
 <ul>

@@ -22,6 +22,7 @@
 <table><thead><tr><th>LLM의 문제점</th><th>설명</th><th>RAG 기대효과</th></tr></thead><tbody><tr><td>환각</td><td>답변이 없을 때 허위정보 제공</td><td>독점 데이터 활용 정보 제공</td></tr><tr><td>최신 데이터</td><td>일반적인 정보 제공</td><td>구체적 정보 제공</td></tr><tr><td>신뢰성</td><td>신뢰할 수 없는 출처로부터의 응답 제공</td><td>신뢰할 수 있는 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_K45l" id="rag의-구성도-및-절차">RAG의 구성도 및 절차<a href="https://gracefullight.dev/pe/algorithm/rag/#rag%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EB%B0%8F-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="RAG의 구성도 및 절차에 대한 직접 링크" title="RAG의 구성도 및 절차에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_K45l" id="구성도">구성도<a href="https://gracefullight.dev/pe/algorithm/rag/#%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="구성도에 대한 직접 링크" title="구성도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="rag" src="https://gracefullight.dev/assets/images/rag-060c830aa10cc490e226778654d1ea28.webp" width="898" height="532" class="img_xt78"></p>
 <blockquote>
 <p>웹인터페이스 -&gt; 벡터데이터베이스 -&gt; LLM</p>
 </blockquote>
