@@ -1,14 +1,14 @@
 // @ts-check
 
 import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier";
 import * as mdx from "eslint-plugin-mdx";
-import prettierRecommended from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  prettierRecommended,
+  eslintConfigPrettier,
   {
     ...mdx.flat,
     // optional, if you want to lint code blocks at the same
