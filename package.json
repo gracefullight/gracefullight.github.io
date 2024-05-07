@@ -38,6 +38,7 @@
     "@gracefullight/docusaurus-plugin-google-adsense": "^1.0.0",
     "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
     "@gracefullight/docusaurus-plugin-naver-analytics": "^1.0.0",
+    "@iconify/react": "^4.1.1",
     "@mdx-js/react": "^3.0.1",
     "ahooks": "^3.7.11",
     "clsx": "^2.1.1",

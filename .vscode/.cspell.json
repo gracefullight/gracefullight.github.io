@@ -19,6 +19,7 @@
     "gitalk",
     "Gitlak",
     "gracefullight",
+    "iconify",
     "IELTS",
     "IHDR",
     "IPFS",
@@ -46,5 +47,8 @@
     "wcslog",
     "webp"
   ],
-  "ignorePaths": ["*.config.js", "package.json"]
+  "ignorePaths": [
+    "*.config.js",
+    "package.json"
+  ]
 }
