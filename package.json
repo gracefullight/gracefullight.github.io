@@ -25,7 +25,6 @@
     "write-translations": "docusaurus write-translations"
   },
   "dependencies": {
-    "@docsly/react": "^1.9.1",
     "@docusaurus/core": "^3.3.2",
     "@docusaurus/plugin-pwa": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
