@@ -32,6 +32,7 @@
     "Naver",
     "nextjs",
     "NISC",
+    "Overreliance",
     "OWASP",
     "pako",
     "PLTE",
@@ -42,9 +43,13 @@
     "SDLC",
     "serviceworker",
     "slugize",
+    "SSRF",
     "tseslint",
     "wcslog",
     "webp"
   ],
-  "ignorePaths": ["*.config.js", "package.json"]
+  "ignorePaths": [
+    "*.config.js",
+    "package.json"
+  ]
 }
