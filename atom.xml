@@ -2,11 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-05-10T13:28:36.990Z</updated>
+    <updated>2024-05-10T13:57:24.809Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[OWASP TOP 10 for LLM Applications]]></title>
+        <id>https://gracefullight.dev/pe/security/owasp-llm/</id>
+        <link href="https://gracefullight.dev/pe/security/owasp-llm/"/>
+        <updated>2024-05-10T13:57:24.809Z</updated>
+        <summary type="html"><![CDATA[LLM 어플리케이션을 위한 OWASP 취약점 리스트]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GKM4" id="owasp-llm-개요">OWASP LLM 개요<a href="https://gracefullight.dev/pe/security/owasp-llm/#owasp-llm-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="OWASP LLM 개요에 대한 직접 링크" title="OWASP LLM 개요에 대한 직접 링크">​</a></h2>
+<ul>
+<li>기업에서 대규모 언어모델을 배포하고 관리할 때 발생할 수 있는 보안 위험에 대해 대비하기 위한 상위 10가지 취약점</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="owasp-llm-top-10-취약점">OWASP LLM Top 10 취약점<a href="https://gracefullight.dev/pe/security/owasp-llm/#owasp-llm-top-10-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="OWASP LLM Top 10 취약점에 대한 직접 링크" title="OWASP LLM Top 10 취약점에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="1-프롬프트-인젝션">1. 프롬프트 인젝션<a href="https://gracefullight.dev/pe/security/owasp-llm/#1-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%9D%B8%EC%A0%9D%EC%85%98" class="hash-link" aria-label="1. 프롬프트 인젝션에 대한 직접 링크" title="1. 프롬프트 인젝션에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Prompt Injection</li>
+<li>공격자가 조작된 입력을 통해 LLM을 조종하여 데이터 및 민감 정보를 추출</li>
+<li>권한 제어, 인간 승인, 사용자 프롬프트에서 신뢰할 수 없는 내용 분리, LLM을 신뢰할 수 없는 것으로 처리</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="2-안전하지-않은-출력-처리">2. 안전하지 않은 출력 처리<a href="https://gracefullight.dev/pe/security/owasp-llm/#2-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%B6%9C%EB%A0%A5-%EC%B2%98%EB%A6%AC" class="hash-link" aria-label="2. 안전하지 않은 출력 처리에 대한 직접 링크" title="2. 안전하지 않은 출력 처리에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Insecure Output Handling</li>
+<li>LLM 출력을 검증 없이 보낼 경우 XSS, CSRF, SSRF, 권한 상승, 원격 코드 실행 가능</li>
+<li>출력을 사용자 입력처럼 취급하여 검증, 출력 인코딩으로 코드실행 차단</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="3-훈련-데이터-중독">3. 훈련 데이터 중독<a href="https://gracefullight.dev/pe/security/owasp-llm/#3-%ED%9B%88%EB%A0%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EB%8F%85" class="hash-link" aria-label="3. 훈련 데이터 중독에 대한 직접 링크" title="3. 훈련 데이터 중독에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Training Data Poisoning</li>
+<li>훈련 데이터나 과정에 악의적인 데이터를 주입하여 보안 취약점, 편견, 백도어 삽입</li>
+<li>공급망 검증, 데이터의 정당성 확인, 사용 사례별 훈련 모델 구축</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="4-모델-서비스-거부">4. 모델 서비스 거부<a href="https://gracefullight.dev/pe/security/owasp-llm/#4-%EB%AA%A8%EB%8D%B8-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B1%B0%EB%B6%80" class="hash-link" aria-label="4. 모델 서비스 거부에 대한 직접 링크" title="4. 모델 서비스 거부에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Model Denial of Service</li>
+<li>공격자가 LLM 서비스에 DoS 공격하여, 서비스 품질 저하나 높은 비용 초래</li>
+<li>입력 유효성 검사, 리소스 사용 제한, API 호출 제한</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="5-공급망-취약점">5. 공급망 취약점<a href="https://gracefullight.dev/pe/security/owasp-llm/#5-%EA%B3%B5%EA%B8%89%EB%A7%9D-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="5. 공급망 취약점에 대한 직접 링크" title="5. 공급망 취약점에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Supply Chain Vulnerabilities</li>
+<li>취약한 데이터, 모델, 서비스, 시스템으로 인해 LLM이 취약점에 노출</li>
+<li>공급업체 평가, 플러그인 테스트, 최신 구성 요소 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="6-민감-정보-노출">6. 민감 정보 노출<a href="https://gracefullight.dev/pe/security/owasp-llm/#6-%EB%AF%BC%EA%B0%90-%EC%A0%95%EB%B3%B4-%EB%85%B8%EC%B6%9C" class="hash-link" aria-label="6. 민감 정보 노출에 대한 직접 링크" title="6. 민감 정보 노출에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Sensitive Information Disclosure</li>
+<li>LLM이 민감 정보를 공개하여 저작권 침해, 사생활 침해가 발생</li>
+<li>훈련 데이터 정제, 입력 유효성 검사, 파인 튜닝 시 민감 데이터 주의</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="7-안전하지-않은-플러�그인-설계">7. 안전하지 않은 플러그인 설계<a href="https://gracefullight.dev/pe/security/owasp-llm/#7-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="7. 안전하지 않은 플러그인 설계에 대한 직접 링크" title="7. 안전하지 않은 플러그인 설계에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Insecure Plugin Design</li>
+<li>부적절한 입력 검증과 접근 제어 부족으로 인해 데이터 유출, 원격 코드 실행 등이 발생</li>
+<li>매개 변수 제어, OWASP 가이드라인 적용, 철저한 테스트 및 검증</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="8-과도한-권한">8. 과도한 권한<a href="https://gracefullight.dev/pe/security/owasp-llm/#8-%EA%B3%BC%EB%8F%84%ED%95%9C-%EA%B6%8C%ED%95%9C" class="hash-link" aria-label="8. 과도한 권한에 대한 직접 링크" title="8. 과도한 권한에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Excessive Agency</li>
+<li>LLM 기반 시스템이 너무 많은 기능, 권한 또는 자율성을 가지고 있어 오용 가능</li>
+<li>기능 제한, 권한 제어, 사용자 승인</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="9-과도한-의존">9. 과도한 의존<a href="https://gracefullight.dev/pe/security/owasp-llm/#9-%EA%B3%BC%EB%8F%84%ED%95%9C-%EC%9D%98%EC%A1%B4" class="hash-link" aria-label="9. 과도한 의존에 대한 직접 링크" title="9. 과도한 의존에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Overreliance</li>
+<li>LLM에 대한 과도한 의존은 잘못된 정보, 법적 문제, 보안 취약점을 유발</li>
+<li>LLM 출력의 지속적 검토 및 검증, 신뢰할 수 있는 소스와의 비교, 파인튜닝 통한 품질 향상</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="10-모델-탈취">10. 모델 탈취<a href="https://gracefullight.dev/pe/security/owasp-llm/#10-%EB%AA%A8%EB%8D%B8-%ED%83%88%EC%B7%A8" class="hash-link" aria-label="10. 모델 탈취에 대한 직접 링크" title="10. 모델 탈취에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Model Theft</li>
+<li>무단 접근을 통해 LLM 모델이 유출되어 경제적 손실, 명성 손상, 민감 정보 접근 위험 발생</li>
+<li>접근 제어 및 인증 강화, 네트워크 제한, 접근 로그 모니터링</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="참조">참조<a href="https://gracefullight.dev/pe/security/owasp-llm/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener noreferrer">OWASP: OWASP Top 10 for Large Language Model Applications</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[실시간 기업, Real Time Enterprise]]></title>
         <id>https://gracefullight.dev/pe/management/rte/</id>
@@ -286,7 +368,7 @@
 <li>엣지: 샘플을 분류하기 위한 조건</li>
 <li>뎁스: 루트 노드에서 특정 노드까지 도달하기 위해 거쳐야하는 엣지 수</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="의사결정나무-유형">의사결정나무 유형<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EF%BF%BD%EC%9C%A0%ED%98%95" class="hash-link" aria-label="의사결정나무 유형에 대한 직접 링크" title="의사결정나무 유형에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="의사결정나무-유형">의사결정나무 유형<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="의사결정나무 유형에 대한 직접 링크" title="의사결정나무 유형에 대한 직접 링크">​</a></h3>
 <ul>
 <li>분류트리: 범주형 변수를 예측하기 위해 사용되는 트리 모델, 데이터를 여러 범주로 분류</li>
 <li>회귀트리: 연속형 변수의 값을 예측하기 위한 트리모델</li>
@@ -359,7 +441,7 @@
 <li>SQL, NoSQL, ORM, LDAP의 인젝션 취약점</li>
 <li>사용자 제공 데이터 조작을 위한 공격, XSS 포함</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="4-안전하지-않은-설계">4. 안전하지 않은 설계<a href="https://gracefullight.dev/pe/security/owasp-2021/#4-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="4. 안전하지 않은 설계에 대한 직접 링크" title="4. 안전하지 않은 설계에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="4-안전하지-않은-설계">4. 안전하지 않은 설계<a href="https://gracefullight.dev/pe/security/owasp-2021/#4-%EF%BF%BD%EF%BF%BD%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="4. 안전하지 않은 설계에 대한 직접 링크" title="4. 안전하지 않은 설계에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Insecure Design</li>
 <li>설계 단계에서 발생하는 보안 결함</li>
@@ -381,7 +463,7 @@
 <li>취약한 인증에서 식별까지 포함된 보안 결함</li>
 <li>사용자 신원확인, 인증, 세션관리 취약점</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="8-소프트웨어-및-데이터-무결성-오류">8. 소프트웨어 및 데이터 무결성 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#8-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="8. 소프트웨어 및 데이터 무결성 오류에 대한 직접 링크" title="8. 소프트웨어 및 데이터 무결성 오류에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="8-소프트웨어-및-데이터-무결성-오류">8. 소프트웨어 및 데이터 무결성 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#8-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="8. ��소프트웨어 및 데이터 무결성 오류에 대한 직접 링크" title="8. 소프트웨어 및 데이터 무결성 오류에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Software and Data Integrity Failures</li>
 <li>안전하지 않은 역직렬화가 병합된 항목으로, 어플리케이션이 신뢰할 수 없는 소스, 저장소, 라이브러리, 모듈에 의존하는 경우 발생</li>
@@ -406,39 +488,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[블로그 댓글 기능 비교]]></title>
-        <id>https://gracefullight.dev/2024/05/01/comparing-blog-comment-features/</id>
-        <link href="https://gracefullight.dev/2024/05/01/comparing-blog-comment-features/"/>
-        <updated>2024-05-01T12:57:18.696Z</updated>
-        <summary type="html"><![CDATA[Disqus, Gitalk, Docsly, Giscus 기능 비교]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GKM4" id="개요">개요<a href="https://gracefullight.dev/2024/05/01/comparing-blog-comment-features/#%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="개요에 대한 직접 링크" title="개요에 대한 직접 링크">​</a></h2>
-<ul>
-<li>데이터베이스가 필요 없으면서 블로그에 무료로 댓글을 붙힐 수 있는 기능이 필요했다.</li>
-<li>Hexo 블로그 시스템에서는 <a href="https://github.com/disqus/disqus-react" target="_blank" rel="noopener noreferrer">Disqus</a>를 사용했었지만, 형편없는 어드민 UX와 많은 트레킹 스크립트로 Gitalk 로 이사를 왔다.</li>
-<li><a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener noreferrer">Gitalk</a>는 생각보다 괜찮았다. 하지만 Docusaurus 기반 블로그로 이전하게 되면서 문제가 발생했다.<!-- -->
-<ul>
-<li>트리쉐이킹 없는 모듈을 호출해야했고, <code>document.title</code> 을 가지고오는 로직이 꼬이는지 가끔 댓글 타이틀을 잘못 가지고 왔다.</li>
-</ul>
-</li>
-<li><a href="https://www.docsly.dev/" target="_blank" rel="noopener noreferrer">Docsly</a>는 원하는 위치에 댓글을 다는 게 재밌어보였다.<!-- -->
-<ul>
-<li>플로팅 푸터로 가운데에 댓글을 쓰는 기능이 들어간다. 그런데 powered by docsly 워터마크가 꽤 크게 노출되어 블로그가 docsly로 운영되는 듯한 느낌을 준다.</li>
-</ul>
-</li>
-<li><a href="https://github.com/giscus/giscus" target="_blank" rel="noopener noreferrer">Giscus</a>는 Github discussion 기반으로 코멘트를 남기는데 모든 기능을 다 만족했다.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="기능-비교">기능 비교<a href="https://gracefullight.dev/2024/05/01/comparing-blog-comment-features/#%EA%B8%B0%EB%8A%A5-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="기능 비교에 대한 직접 링크" title="기능 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>Disqus</th><th>Gitalk</th><th>Docsly</th><th>Giscus</th></tr></thead><tbody><tr><td>오픈소스</td><td>△</td><td>O</td><td>X</td><td>O</td></tr><tr><td>업데이트지원</td><td>~2022</td><td>~2021</td><td>2024~</td><td>2024~</td></tr><tr><td>리액트지원</td><td>△ (Class)</td><td>△ (Class)</td><td>O</td><td>O</td></tr><tr><td>데이터저장</td><td>Closed</td><td>Issues</td><td>Closed</td><td>Discussions</td></tr><tr><td>워터마킹</td><td>O</td><td>X</td><td>O</td><td>X</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="결론">결론<a href="https://gracefullight.dev/2024/05/01/comparing-blog-comment-features/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://github.com/giscus/giscus-component" target="_blank" rel="noopener noreferrer">giscus/giscus-component</a> 쓰자.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
     </entry>
 </feed>
