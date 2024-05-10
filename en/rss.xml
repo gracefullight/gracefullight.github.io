@@ -4,10 +4,43 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 07 May 2024 14:03:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 May 2024 13:28:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[실시간 기업, Real Time Enterprise]]></title>
+            <link>https://gracefullight.dev/en/pe/management/rte/</link>
+            <guid>https://gracefullight.dev/en/pe/management/rte/</guid>
+            <pubDate>Fri, 10 May 2024 13:28:36 GMT</pubDate>
+            <description><![CDATA[Real Time Enterprise]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GKM4" id="rte-개요">RTE 개요<a href="https://gracefullight.dev/en/pe/management/rte/#rte-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="rte의-개념">RTE의 개념<a href="https://gracefullight.dev/en/pe/management/rte/#rte%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>실시간 정보로 핵심 프로세스를 최적화하고 빠른 의사결정을 지원하는 경영 패러다임</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="rte의-목적">RTE의 목적<a href="https://gracefullight.dev/en/pe/management/rte/#rte%EC%9D%98-%EB%AA%A9%EC%A0%81" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>다양한 데이터의 수집</li>
+<li>수집된 데이터의 통합</li>
+<li>통합된 데이터의 지능적 분석</li>
+<li>분석된 데이터의 빠른 전략적 의사결정</li>
+<li>기업의 경쟁력 극대화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="rte-사이클론-모델과-구성요소">RTE 사이클론 모델과 구성요소<a href="https://gracefullight.dev/en/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8%EA%B3%BC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="rte-사이클론-모델">RTE 사이클론 모델<a href="https://gracefullight.dev/en/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><a href="https://gracefullight.dev/en/assets/files/cyclone-model-182d19567323ab7d28010a981c27e334.webp/" target="_blank">!rte</a></p>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="rte-사이클론-모델-구성요소">RTE 사이클론 모델 구성요소<a href="https://gracefullight.dev/en/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>레벨</th><th>활동</th><th>목표</th></tr></thead><tbody><tr><td>Leadership</td><td>전략의 신속한 구현, 비즈니스 역량 개발</td><td>경영의 투명화, 컨센선스 일치, 전략 결정의 혼란 제거</td></tr><tr><td>Manage</td><td>새로운 기회 개척, 실패 손해 최소화, 위협 변화</td><td>경영 프로세스 설계, 협업 및 생성 문화 강화</td></tr><tr><td>Operate</td><td>고객서비스 개선, 프로세스 비용 절감, 위험 축소</td><td>실시간 데이터 캡쳐, 프로세스 간소화 및 통합</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="rte-프레임워크-구성요소">RTE 프레임워크 구성요소<a href="https://gracefullight.dev/en/pe/management/rte/#rte-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>설명</th><th>기법</th></tr></thead><tbody><tr><td>프로세스 최적화</td><td>프로세스 최적화 및 효율화</td><td>BPM, SPO, PM</td></tr><tr><td>성능 관리</td><td>프로세스 분석 및 정보 제공</td><td>CPM, BSC</td></tr><tr><td>운영 관리</td><td>프로세스 모니터링 및 효율화</td><td>CRM, ERP, MES</td></tr><tr><td>협업, 지식 관리</td><td>실시간 지식 공유, 결정 지원</td><td>KMS, Groupware</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="참조">참조<a href="https://gracefullight.dev/en/pe/management/rte/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://dataonair.or.kr/db-tech-reference/d-lounge/report/?mod=document&amp;uid=239617" target="_blank" rel="noopener noreferrer">DATA ON-AIR: RTE란 무엇인가</a></li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/management</category>
+        </item>
         <item>
             <title><![CDATA[ISO 25000]]></title>
             <link>https://gracefullight.dev/en/pe/engineering/iso-25000/</link>
@@ -187,7 +220,7 @@
 <table><thead><tr><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="SVM" src="https://gracefullight.dev/en/assets/images/svm-linear-cba32516a64a0791673f89e0edf490e5.webp" width="921" height="473" class="img_rnBu"></td><td><img decoding="async" loading="lazy" alt="SVM" src="https://gracefullight.dev/en/assets/images/svm-non-linear-4afecde40c5b80af508ac09467bd96a0.webp" width="838" height="334" class="img_rnBu"></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_GKM4" id="문제-해결-방법">문제 해결 방법<a href="https://gracefullight.dev/en/pe/algorithm/svm/#%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td>특징</td><td>초평면 분리 가능</td><td>초평면 분리 불가</td></tr><tr><td>해결방법</td><td>마진을 최대화하는 서포트벡터 탐색 후 분류</td><td>커널 트릭 사용하여 데이터 고차원 매핑</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="��장단점">장단점<a href="https://gracefullight.dev/en/pe/algorithm/svm/#%EC%9E%A5%EB%8B%A8%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="장단점">장단점<a href="https://gracefullight.dev/en/pe/algorithm/svm/#%EC%9E%A5%EB%8B%A8%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>장점: 인공신경망의 과적합 해결방법 제시, 비선형 문제 해결</li>
 <li>단점: 단일 SVM 성능 한계</li>
@@ -368,52 +401,6 @@
 <li><a href="https://github.com/giscus/giscus-component" target="_blank" rel="noopener noreferrer">giscus/giscus-component</a> 쓰자.</li>
 </ul>]]></content:encoded>
             <category>me</category>
-        </item>
-        <item>
-            <title><![CDATA[가치사슬]]></title>
-            <link>https://gracefullight.dev/en/pe/management/value-chain/</link>
-            <guid>https://gracefullight.dev/en/pe/management/value-chain/</guid>
-            <pubDate>Wed, 01 May 2024 12:05:00 GMT</pubDate>
-            <description><![CDATA[가치사슬 설명]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GKM4" id="가치사슬-개념">가치사슬 개념<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="value-chain" src="https://gracefullight.dev/en/assets/images/value-chain-17e5b2f2c5bc1ec22be7a66839ba2784.webp" width="1280" height="921" class="img_rnBu"></p>
-<ul>
-<li>고객에게 가치를 제공함에 있어 마진을 극대화하기 위한 일련의 활동, 기능, 프로세스</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="구성">구성<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="주요활동">주요활동<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EC%A3%BC%EC%9A%94%ED%99%9C%EB%8F%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>운영</li>
-<li>물류</li>
-<li>마케팅</li>
-<li>서비스</li>
-</ul>
-<table><thead><tr><th>구분</th><th>ERP</th><th>MES</th><th>SCM</th><th>CRM</th></tr></thead><tbody><tr><td>목적</td><td>전사지원</td><td>생산관리</td><td>물류/공급망관리</td><td>고객관리</td></tr><tr><td>대상</td><td>전사활동</td><td>공정</td><td>유통</td><td>고객</td></tr><tr><td>활동</td><td>전사자원통합</td><td>통합 생산</td><td>공급망 최적화</td><td>마케팅, 서비스</td></tr><tr><td>가치사슬</td><td>주요+보조</td><td>주요</td><td>주요</td><td>주요</td></tr><tr><td>신기술</td><td>DX</td><td>디지털트윈</td><td>빅데이터</td><td>O2O</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="보조활동">보조활동<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EB%B3%B4%EC%A1%B0%ED%99%9C%EB%8F%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>기업 인프라</li>
-<li>인적 자원 관리</li>
-<li>기술 개발</li>
-<li>조달</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="분석-단계">분석 단계<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EB%B6%84%EC%84%9D-%EF%BF%BD%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>가치사슬 활동 분류, 분석</li>
-<li>가치 파악 및 비용 정의</li>
-<li>경쟁사 가치사슬 벤치마킹</li>
-<li>경쟁 우위 확보 및 기회 파악</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="고려사항">고려사항<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>ESG 목표 지원</li>
-<li>효율화, 자동화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="참조">참조<a href="https://gracefullight.dev/en/pe/management/value-chain/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://www.ibm.com/kr-ko/topics/value-chain-analysis" target="_blank" rel="noopener noreferrer">IBM: 가치 사슬 분석이란 무엇인가요?</a></li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/management</category>
         </item>
     </channel>
 </rss>
