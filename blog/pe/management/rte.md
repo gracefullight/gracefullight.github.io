@@ -26,7 +26,7 @@ tags:
 
 ### RTE 사이클론 모델
 
-[!rte](/img/pe/cyclone-model.webp)
+![RTE](/img/pe/cyclone-model.webp)
 
 ### RTE 사이클론 모델 구성요소
 
