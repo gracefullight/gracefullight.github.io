@@ -9,7 +9,7 @@ tags:
 ---
 
 - [정보통신분야 기술사 훑어보기](/2023/10/07/professional-engineer-information-overview/)
-- [정보통신분야 기술사 출제기준](/2024/05/11/professional-engineer-guildelines/)
+- [정보통신분야 기술사 출제기준](/2024/05/11/professional-engineer-guidelines/)
 - [기술사: IT경영](/2023/10/07/professional-engineer-it-governance/)
 - [기술사: 융합 IT](/2023/10/14/professional-engineer-it-conversence/)
 - [기술사: 프로젝트관리](/2023/10/22/professional-engineer-project-management/)
