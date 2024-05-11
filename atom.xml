@@ -2,11 +2,79 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-05-10T13:57:24.809Z</updated>
+    <updated>2024-05-11T02:07:30.264Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[정보통신분야 기술사 출제기준]]></title>
+        <id>https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/</id>
+        <link href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/"/>
+        <updated>2024-05-11T02:07:30.264Z</updated>
+        <summary type="html"><![CDATA[정보통신분야 기술사 출제기준]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-information-overview/">정보통신분야 기술사 훑어보기</a></li>
+<li><a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/">정보통신분야 기술사 출제기준</a></li>
+<li><a href="https://gracefullight.dev/2023/10/07/professional-engineer-it-governance/">기술사: IT경영</a></li>
+<li><a href="https://gracefullight.dev/2023/10/14/professional-engineer-it-conversence/">기술사: 융합 IT</a></li>
+<li><a href="https://gracefullight.dev/2023/10/22/professional-engineer-project-management/">기술사: 프로젝트관리</a></li>
+<li><a href="https://gracefullight.dev/2023/10/28/professional-engineer-sw-engineering/">기술사: 소프트웨어 공학</a></li>
+<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-information-security/">기술사: 정보보안</a></li>
+<li><a href="https://gracefullight.dev/2023/11/11/professional-engineer-database/">기술사: 데이터베이스</a></li>
+<li><a href="https://gracefullight.dev/2023/12/23/professional-engineer-network/">기술사: 네트워크</a></li>
+<li><a href="https://gracefullight.dev/2024/01/13/professional-engineer-algorithm/">기술사: 알고리즘</a></li>
+<li><a href="https://gracefullight.dev/2024/03/02/professional-engineer-essay/">기술사: 에세이</a></li>
+</ul>
+<blockquote>
+<p>~2026-12-31까지 적용</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="정보-기술-전략-및-관리">정보 기술 전략 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%A0%95%EB%B3%B4-%EA%B8%B0%EC%88%A0-%EC%A0%84%EB%9E%B5-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="정보 기술 전략 및 관리에 대한 직접 링크" title="정보 기술 전략 및 관리에 대한 직접 링크">​</a></h2>
+<ul>
+<li>정보기술 전략의 수립 및 관리</li>
+<li>비즈니스 및 정보기술 환경 분석</li>
+<li>정보기술 아키텍처 설계 및 이행</li>
+<li>IT 투자성과 분석</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="소프트웨어 개발 및 관리에 대한 직접 링크" title="소프트웨어 개발 및 관리에 대한 직접 링크">​</a></h2>
+<ul>
+<li>소프트웨어 개발 방법론 활용</li>
+<li>소프트웨어 아키텍처의 설계, 문서화 및 변경 관리</li>
+<li>UI/UX 디자인 및 아키텍처 설계</li>
+<li>소프트웨어 품질 및 안전 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="데이터-관리-및-분석">데이터 관리 및 분석<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="데이터 관리 및 분석에 대한 직접 링크" title="데이터 관리 및 분석에 대한 직접 링크">​</a></h2>
+<ul>
+<li>데이터모델링 및 물리 데이터베이스 설계</li>
+<li>데이터마이닝 (정형 및 비정형 데이터)</li>
+<li>빅데이터 분석 및 결과 해석</li>
+<li>데이터 품질관리 체계 및 표준화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="시스템-운영-및-보안">시스템 운영 및 보안<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EB%B3%B4%EC%95%88" class="hash-link" aria-label="시스템 운영 및 보안에 대한 직접 링크" title="시스템 운영 및 보안에 대한 직접 링크">​</a></h2>
+<ul>
+<li>컴퓨터 시스템 하드웨어 및 소프트웨어 운영</li>
+<li>네트워크 및 통신 시스템의 설계 및 관리</li>
+<li>보안체계의 운영관리 및 감사</li>
+<li>정보보호 및 개인정보 활용 및 보호</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="최신-기술-동향-및-법규">최신 기술 동향 및 법규<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%B5%9C%EC%8B%A0-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5-%EB%B0%8F-%EB%B2%95%EA%B7%9C" class="hash-link" aria-label="최신 기술 동향 및 법규에 대한 직접 링크" title="최신 기술 동향 및 법규에 대한 직접 링크">​</a></h2>
+<ul>
+<li>인공지능, IoT, 클라우드 기술 등 최신 기술 및 동향</li>
+<li>전자정부법, 개인정보보호법 등 관련 법령 및 지침</li>
+<li>기술 및 데이터 관련 정책 분석 및 투자 성과 평가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GKM4" id="참조">참조<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.q-net.or.kr/crf005.do?id=crf00505&amp;jmCd=0601" target="_blank" rel="noopener noreferrer">QNet: 정보관리기술사</a></li>
+<li><a href="https://www.q-net.or.kr/crf005.do?id=crf00505&amp;jmCd=0622" target="_blank" rel="noopener noreferrer">QNet: 컴퓨터시스템응용기술사</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+        <category label="정보처리" term="정보처리"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OWASP TOP 10 for LLM Applications]]></title>
         <id>https://gracefullight.dev/pe/security/owasp-llm/</id>
@@ -54,7 +122,7 @@
 <li>LLM이 민감 정보를 공개하여 저작권 침해, 사생활 침해가 발생</li>
 <li>훈련 데이터 정제, 입력 유효성 검사, 파인 튜닝 시 민감 데이터 주의</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="7-안전하지-않은-플러�그인-설계">7. 안전하지 않은 플러그인 설계<a href="https://gracefullight.dev/pe/security/owasp-llm/#7-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="7. 안전하지 않은 플러그인 설계에 대한 직접 링크" title="7. 안전하지 않은 플러그인 설계에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_GKM4" id="7-안전하지-않은-플러그인-설계">7. 안전하지 않은 플러그인 설계<a href="https://gracefullight.dev/pe/security/owasp-llm/#7-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="7. 안전하지 않은 플러그인 설계에 대한 직접 링크" title="7. 안전하지 않은 플러그인 설계에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Insecure Plugin Design</li>
 <li>부적절한 입력 검증과 접근 제어 부족으로 인해 데이터 유출, 원격 코드 실행 등이 발생</li>
@@ -411,82 +479,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OWASP 2021 TOP 10]]></title>
-        <id>https://gracefullight.dev/pe/security/owasp-2021/</id>
-        <link href="https://gracefullight.dev/pe/security/owasp-2021/"/>
-        <updated>2024-05-02T09:51:04.579Z</updated>
-        <summary type="html"><![CDATA[OWASP 2021 TOP 10 취약점 리스트]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GKM4" id="owasp-개요">OWASP 개요<a href="https://gracefullight.dev/pe/security/owasp-2021/#owasp-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="OWASP 개요에 대한 직접 링크" title="OWASP 개요에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Open Web Application Security Project</li>
-<li>소프트웨어의 보안 취약점을 분석하고 연구하는 비영리 단체</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="owasp-2024-top-10-취약점">OWASP 2024 Top 10 취약점<a href="https://gracefullight.dev/pe/security/owasp-2021/#owasp-2024-top-10-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="OWASP 2024 Top 10 취약점에 대한 직접 링크" title="OWASP 2024 Top 10 취약점에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="1-접근-권한-취약점">1. 접근 권한 취약점<a href="https://gracefullight.dev/pe/security/owasp-2021/#1-%EC%A0%91%EA%B7%BC-%EA%B6%8C%ED%95%9C-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="1. 접근 권한 취약점에 대한 직접 링크" title="1. 접근 권한 취약점에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Broken Access Control</li>
-<li>사용자가 권한을 벗어나 행동할 수 없도록 정책 시행</li>
-<li>취약한 경우 모든 데이터를 무단으로 열람, 수정, 삭제 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="2-암호화-오류">2. 암호화 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#2-%EC%95%94%ED%98%B8%ED%99%94-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="2. 암호화 오류에 대한 직접 링크" title="2. 암호화 오류에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Cryptographic Failures</li>
-<li>적절한 암호화가 없을시 민감 데이터 노출 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="3-인젝션">3. 인젝션<a href="https://gracefullight.dev/pe/security/owasp-2021/#3-%EC%9D%B8%EC%A0%9D%EC%85%98" class="hash-link" aria-label="3. 인젝션에 대한 직접 링크" title="3. 인젝션에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Injection</li>
-<li>SQL, NoSQL, ORM, LDAP의 인젝션 취약점</li>
-<li>사용자 제공 데이터 조작을 위한 공격, XSS 포함</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="4-안전하지-않은-설계">4. 안전하지 않은 설계<a href="https://gracefullight.dev/pe/security/owasp-2021/#4-%EF%BF%BD%EF%BF%BD%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="4. 안전하지 않은 설계에 대한 직접 링크" title="4. 안전하지 않은 설계에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Insecure Design</li>
-<li>설계 단계에서 발생하는 보안 결함</li>
-<li>요구사항 및 리소스 관리, 보안 설계, 보안 개발 생명 주기</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="5-보안-설정-오류">5. 보안 설정 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#5-%EB%B3%B4%EC%95%88-%EC%84%A4%EC%A0%95-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="5. 보안 설정 오류에 대한 직접 링크" title="5. 보안 설정 오류에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Security Misconfiguration</li>
-<li>어플리케이션 보안 설정이 누락되거나 클라우드 서비스 권한이 잘못된 경우</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="6-취약하고-오래된-컴포넌트">6. 취약하고 오래된 컴포넌트<a href="https://gracefullight.dev/pe/security/owasp-2021/#6-%EC%B7%A8%EC%95%BD%ED%95%98%EA%B3%A0-%EC%98%A4%EB%9E%98%EB%90%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8" class="hash-link" aria-label="6. 취약하고 오래된 컴포넌트에 대한 직접 링크" title="6. 취약하고 오래된 컴포넌트에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Vulnerable and Outdated Components</li>
-<li>취약한 어플리케이션, 라이브러리, 프레임워크 등의 보안 위협</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="7-식별-및-인증-오류">7. 식별 및 인증 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#7-%EC%8B%9D%EB%B3%84-%EB%B0%8F-%EC%9D%B8%EC%A6%9D-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="7. 식별 및 인증 오류에 대한 직접 링크" title="7. 식별 및 인증 오류에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Identification and Authentication Failures</li>
-<li>취약한 인증에서 식별까지 포함된 보안 결함</li>
-<li>사용자 신원확인, 인증, 세션관리 취약점</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="8-소프트웨어-및-데이터-무결성-오류">8. 소프트웨어 및 데이터 무결성 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#8-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="8. ��소프트웨어 및 데이터 무결성 오류에 대한 직접 링크" title="8. 소프트웨어 및 데이터 무결성 오류에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Software and Data Integrity Failures</li>
-<li>안전하지 않은 역직렬화가 병합된 항목으로, 어플리케이션이 신뢰할 수 없는 소스, 저장소, 라이브러리, 모듈에 의존하는 경우 발생</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="9-보안-로깅-및-모니터링-오류">9. 보안 로깅 및 모니터링 오류<a href="https://gracefullight.dev/pe/security/owasp-2021/#9-%EB%B3%B4%EC%95%88-%EB%A1%9C%EA%B9%85-%EB%B0%8F-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%98%A4%EB%A5%98" class="hash-link" aria-label="9. 보안 로깅 및 모니터링 오류에 대한 직접 링크" title="9. 보안 로깅 및 모니터링 오류에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Security Logging and Monitoring Failures</li>
-<li>로깅으로 공격 발생 감지 및 대응까지 포함</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GKM4" id="10-서버-측-요청-위조">10. 서버 측 요청 위조<a href="https://gracefullight.dev/pe/security/owasp-2021/#10-%EC%84%9C%EB%B2%84-%EC%B8%A1-%EC%9A%94%EC%B2%AD-%EC%9C%84%EC%A1%B0" class="hash-link" aria-label="10. 서버 측 요청 위조에 대한 직접 링크" title="10. 서버 측 요청 위조에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Server-Side Request Forgery</li>
-<li>어플리케이션이 사용자 제공 URL의 유효성을 검사하지 않고 원격 리소스를 가져올 때 발생</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GKM4" id="참조">참조<a href="https://gracefullight.dev/pe/security/owasp-2021/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP: OWASP Top Ten</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/security" term="pe/security"/>
     </entry>
 </feed>
