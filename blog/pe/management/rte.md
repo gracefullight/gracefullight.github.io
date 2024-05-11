@@ -1,5 +1,5 @@
 ---
-title: 실시간 기업, Real Time Enterprise
+title: RTE, 실시간 기업
 date: 2024-05-10T22:28:36.990+09:00
 description: Real Time Enterprise
 authors: me
@@ -12,6 +12,7 @@ tags:
 
 ### RTE의 개념
 
+- Real Time Enterprise
 - 실시간 정보로 핵심 프로세스를 최적화하고 빠른 의사결정을 지원하는 경영 패러다임
 
 ### RTE의 목적
