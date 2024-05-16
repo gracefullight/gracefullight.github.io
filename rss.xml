@@ -46,7 +46,11 @@
 <li>Well-Formed Transactions: 모든 거래사실 기록, 구현 복잡</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_lC4S" id="비교">비교<a href="https://gracefullight.dev/pe/security/access-control/#%EB%B9%84%EA%B5%90" class="hash-link" aria-label="비교에 대한 직접 링크" title="비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>보호대상</th><th>특징</th><th>분야</th><th>비고</th></tr></thead><tbody><tr><td>벨-라파둘라</td><td>기밀성</td><td>비인가된 읽기 금지</td><td>군사, 정부</td><td>No Read Up, No Write Down</td></tr><tr><td>비바</td><td>무결성</td><td>비인가된 기록 금지</td><td>금융, 의료</td><td>No Write Up, No Read Down</td></tr><tr><td>클락-윌슨</td><td>무결성</td><td>무결성 보존</td><td>상업, 금융, 회계</td><td>무결성 검증 절차 사용</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>벨-라파둘라</th><th>비바</th><th>클락-윌슨</th></tr></thead><tbody><tr><td>보호대상</td><td>기밀성</td><td>무결성</td><td>무결성</td></tr><tr><td>특징</td><td>비인가된 읽기 금지</td><td>비인가된 기록 금지</td><td>무결성 보존</td></tr><tr><td>분야</td><td>군사, 정부</td><td>금융, 의료</td><td>상업, 금융, 회계</td></tr><tr><td>장점</td><td>기밀성</td><td>무결성</td><td>무결성 및 신뢰성</td></tr><tr><td>단점</td><td>유연성 부족</td><td>기밀성 부족</td><td>복잡한 구현</td></tr><tr><td>비고</td><td>No Read Up, No Write Down</td><td>No Write Up, No Read Down</td><td>무결성 검증 절차 사용</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="접근제어-고려사항">접근제어 고려사항<a href="https://gracefullight.dev/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="접근제어 고려사항에 대한 직접 링크" title="접근제어 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>계정이 탈취되는 경우 접근제어로 비밀 보장을 할 수 없으므로, MFA를 활성화하여 보안 강화 필요</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_lC4S" id="참조">참조<a href="https://gracefullight.dev/pe/security/access-control/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://sprinto.com/blog/types-of-security-models/" target="_blank" rel="noopener noreferrer">Sprinto: Types of Security Models</a></li>
