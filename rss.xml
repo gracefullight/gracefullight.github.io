@@ -4,10 +4,49 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 11 May 2024 02:07:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 May 2024 21:15:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[MAS, 상용SW 다수 공급자 계약 제도]]></title>
+            <link>https://gracefullight.dev/pe/engineering/mas/</link>
+            <guid>https://gracefullight.dev/pe/engineering/mas/</guid>
+            <pubDate>Thu, 16 May 2024 21:15:34 GMT</pubDate>
+            <description><![CDATA[상용SW 다수 공급자 계약(MAS, Multiple Award Schedule) 제도]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lC4S" id="mas-개념">MAS 개념<a href="https://gracefullight.dev/pe/engineering/mas/#mas-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="MAS 개념에 대한 직접 링크" title="MAS 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>공공기관이 다양한 수요 충족을 위해 2인 이상(다수)을 대상으로 단가 계약을 체결하는 제도</li>
+<li>조달제품 다양화로 수요기관의 선택권 확대</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="mas의-특징">MAS의 특징<a href="https://gracefullight.dev/pe/engineering/mas/#mas%EC%9D%98-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="MAS의 특징에 대한 직접 링크" title="MAS의 특징에 대한 직접 링크">​</a></h2>
+<ul>
+<li>여러 공급자와 계약을 체결하여 수요기관의 선택 폭을 확대</li>
+<li>기업에게 정부조달시장 참여 기회 제공</li>
+<li>업체 간 경쟁의 확대</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="mas-의-평가-절차-항목-2단계-경쟁">MAS 의 평가 절차, 항목, 2단계 경쟁<a href="https://gracefullight.dev/pe/engineering/mas/#mas-%EC%9D%98-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8-%ED%95%AD%EB%AA%A9-2%EB%8B%A8%EA%B3%84-%EA%B2%BD%EC%9F%81" class="hash-link" aria-label="MAS 의 평가 절차, 항목, 2단계 경쟁에 대한 직접 링크" title="MAS 의 평가 절차, 항목, 2단계 경쟁에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lC4S" id="mas의-평가-절차">MAS의 평가 절차<a href="https://gracefullight.dev/pe/engineering/mas/#mas%EC%9D%98-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="MAS의 평가 절차에 대한 직접 링크" title="MAS의 평가 절차에 대한 직접 링크">​</a></h3>
+<div class="language-text codeBlockContainer_EcQM theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_m1yT"><pre tabindex="0" class="prism-code language-text codeBlock_PaJn thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_cd13"><span class="token-line" style="color:#9CDCFE"><span class="token plain">구매 입찰 공고 -&gt; 적격성 평가 -&gt; 가격협상 -&gt; 계약 체결</span><br></span></code></pre><div class="buttonGroup_Oy9z"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_emVs" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_HPnM"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Sq4I"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>조달사업법 제13조 기반하여 계약 진행</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lC4S" id="mas의-절차-세부-항목">MAS의 절차 세부 항목<a href="https://gracefullight.dev/pe/engineering/mas/#mas%EC%9D%98-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="MAS의 절차 세부 항목에 대한 직접 링크" title="MAS의 절차 세부 항목에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>구매공고</td><td>나라장터 입찰공고</td><td>규격확정, 상용화, 경쟁성 확보</td></tr><tr><td>적격성평가</td><td>가격 기초자료 제출</td><td>결격사유 확인, 협상품목대상 규격서 제출</td></tr><tr><td>가격협상</td><td>적격자와 가격 협상</td><td>실거래가의 가중평균, 최빈가격 기반 작성</td></tr><tr><td>계약체결</td><td>나라장터 전자계약</td><td>기본계약 3년</td></tr></tbody></table>
+<ul>
+<li>5천만원 이상의 경우 2단계 경쟁으로 투명성, 경쟁성 강화</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lC4S" id="mas-2단계-경쟁-제도">MAS 2단계 경쟁 제도<a href="https://gracefullight.dev/pe/engineering/mas/#mas-2%EB%8B%A8%EA%B3%84-%EA%B2%BD%EC%9F%81-%EC%A0%9C%EB%8F%84" class="hash-link" aria-label="MAS 2단계 경쟁 제도에 대한 직접 링크" title="MAS 2단계 경쟁 제도에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>대상</td><td>1회 구매애정 금액 5천만원 이상</td><td>중소기업제품은 1억 이상</td></tr><tr><td>기본평가항목</td><td>SW특성 반영한 기본 평가항목</td><td>가격, 기능성, 사용성</td></tr><tr><td>선택평가항목</td><td>유지보수 상품 등록, 국산SW 우대 등 반영</td><td>유지관리성, 혁신 우수성</td></tr><tr><td>예외사항</td><td>본상품 구매에 따른 제외 범위</td><td>유지관리, 계속계약, 증설 등</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="제3자-단가계약과-mas차이점">제3자 단가계약과 MAS차이점<a href="https://gracefullight.dev/pe/engineering/mas/#%EC%A0%9C3%EC%9E%90-%EB%8B%A8%EA%B0%80%EA%B3%84%EC%95%BD%EA%B3%BC-mas%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="제3자 단가계약과 MAS차이점에 대한 직접 링크" title="제3자 단가계약과 MAS차이점에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>제3자단가계약</th><th>다수공급자계약</th></tr></thead><tbody><tr><td>계약방법</td><td>수의</td><td>경쟁</td></tr><tr><td>계약수량</td><td>업체계약수량</td><td>업체계약수량</td></tr><tr><td>계약자</td><td>단일업체</td><td>다수업체</td></tr><tr><td>가격자료</td><td>동일품목 3건 이상 구매실적</td><td>규격별 최근 1년간 전자세금계산서<br>유사 거래 실적</td></tr><tr><td>2단계 경쟁</td><td>없음</td><td>1회 구매예정 일정금액 이상</td></tr><tr><td>납품업체 선정</td><td>수요기관 지정</td><td>일정금액 미만 수요기관 지정<br>일정금액 이상 2단계 경쟁 통한 평가</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="참조">참조<a href="https://gracefullight.dev/pe/engineering/mas/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.pps.go.kr/kor/bbs/list.do?key=01337" target="_blank" rel="noopener noreferrer">조달청: MAS 다수공급자계약</a></li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[정보통신분야 기술사 출제기준]]></title>
             <link>https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/</link>
@@ -37,7 +76,7 @@
 <li>정보기술 아키텍처 설계 및 이행</li>
 <li>IT 투자성과 분석</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lC4S" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="소프트웨어 개발 및 관리에 대한 직접 링크" title="소프트웨어 개�발 및 관리에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lC4S" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="소프트웨어 개발 및 관리에 대한 직접 링크" title="��소프트웨어 개발 및 관리에 대한 직접 링크">​</a></h2>
 <ul>
 <li>소프트웨어 개발 방법론 활용</li>
 <li>소프트웨어 아키텍처의 설계, 문서화 및 변경 관리</li>
@@ -173,7 +212,7 @@
 <h2 class="anchor anchorWithStickyNavbar_lC4S" id="rte-사이클론-모델과-구성요소">RTE 사이클론 모델과 구성요소<a href="https://gracefullight.dev/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8%EA%B3%BC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="RTE 사이클론 모델과 구성요소에 대한 직접 링크" title="RTE 사이클론 모델과 구성요소에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lC4S" id="rte-사이클론-모델">RTE 사이클론 모델<a href="https://gracefullight.dev/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="RTE 사이클론 모델에 대한 직접 링크" title="RTE 사이클론 모델에 대한 직접 링크">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="RTE" src="https://gracefullight.dev/assets/images/cyclone-model-182d19567323ab7d28010a981c27e334.webp" width="500" height="551" class="img_fHtC"></p>
-<h3 class="anchor anchorWithStickyNavbar_lC4S" id="rte-사이클론-모델-구성요소">RTE 사이클론 모델 구성요소<a href="https://gracefullight.dev/pe/management/rte/#rte-%EF%BF%BD%EF%BF%BD%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="RTE 사이클론 모델 구성요소에 대한 직접 링크" title="RTE 사이클론 모델 구성요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lC4S" id="rte-사이클론-모델-구성요소">RTE 사이클론 모델 구성요소<a href="https://gracefullight.dev/pe/management/rte/#rte-%EC%82%AC%EC%9D%B4%ED%81%B4%EB%A1%A0-%EB%AA%A8%EB%8D%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="RTE 사이클론 모델 구성요소에 대한 직접 링크" title="RTE 사이클론 모델 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>레벨</th><th>활동</th><th>목표</th></tr></thead><tbody><tr><td>Leadership</td><td>전략의 신속한 구현, 비즈니스 역량 개발</td><td>경영의 투명화, 컨센선스 일치, 전략 결정의 혼란 제거</td></tr><tr><td>Manage</td><td>새로운 기회 개척, 실패 손해 최소화, 위협 변화</td><td>경영 프로세스 설계, 협업 및 생성 문화 강화</td></tr><tr><td>Operate</td><td>고객서비스 개선, 프로세스 비용 절감, 위험 축소</td><td>실시간 데이터 캡쳐, 프로세스 간소화 및 통합</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_lC4S" id="rte-프레임워크-구성요소">RTE 프레임워크 구성요소<a href="https://gracefullight.dev/pe/management/rte/#rte-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="RTE 프레임워크 구성요소에 대한 직접 링크" title="RTE 프레임워크 구성요소에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>설명</th><th>기법</th></tr></thead><tbody><tr><td>프로세스 최적화</td><td>프로세스 최적화 및 효율화</td><td>BPM, SPO, PM</td></tr><tr><td>성능 관리</td><td>프로세스 분석 및 정보 제공</td><td>CPM, BSC</td></tr><tr><td>운영 관리</td><td>프로세스 모니터링 및 효율화</td><td>CRM, ERP, MES</td></tr><tr><td>협업, 지식 관리</td><td>실시간 지식 공유, 결정 지원</td><td>KMS, Groupware</td></tr></tbody></table>
@@ -376,68 +415,6 @@
 <h2 class="anchor anchorWithStickyNavbar_lC4S" id="참조">참조<a href="https://gracefullight.dev/pe/algorithm/svm/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NPAP08105703" target="_blank" rel="noopener noreferrer">데이터 불균형 해결을 위한 Under-Sampling 기반 앙상블 SVMs</a></li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[의사결정나무]]></title>
-            <link>https://gracefullight.dev/pe/algorithm/decision-tree/</link>
-            <guid>https://gracefullight.dev/pe/algorithm/decision-tree/</guid>
-            <pubDate>Fri, 03 May 2024 11:53:34 GMT</pubDate>
-            <description><![CDATA[의사결정나무]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-개요">의사결정나무 개요<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="의사결정나무 개요에 대한 직접 링크" title="의사결정나무 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-개념">의사결정나무 개념<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="의사결정나무 개념에 대한 직접 링크" title="의사결정나무 개념에 대한 직접 링크">​</a></h3>
-<ul>
-<li>주어진 입력값들의 조합을 <strong>의사결정규칙</strong>에 따라 <strong>출력값을 예측</strong>하는 모형</li>
-<li><strong>의사결정규칙</strong>을 트리구조로 나타내어 <strong>분류와 예측</strong>을 수행하는 분석 방법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-구성-유형-절차">의사결정나무 구성, 유형, 절차<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EA%B5%AC%EC%84%B1-%EC%9C%A0%ED%98%95-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="의사결정나무 구성, 유형, 절차에 대한 직접 링크" title="의사결정나무 구성, 유형, 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-구성">의사결정나무 구성<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="의사결정나무 구성에 대한 직접 링크" title="의사결정나무 구성에 대한 직접 링크">​</a></h3>
-<ul>
-<li>루트 노드: 최상단 노드, 첫 분류 조건</li>
-<li>부모 노드: 상위 노드</li>
-<li>자식 노드: 하위 노드</li>
-<li>리프 노드: 결과를 예측하는 말단 노드</li>
-<li>엣지: 샘플을 분류하기 위한 조건</li>
-<li>뎁스: 루트 노드에서 특정 노드까지 도달하기 위해 거쳐야하는 엣지 수</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-유형">의사결정나무 유형<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="의사결정나무 유형에 대한 직접 링크" title="의사결정나무 유형에 대한 직접 링크">​</a></h3>
-<ul>
-<li>분류트리: 범주형 변수를 예측하기 위해 사용되는 트리 모델, 데이터를 여러 범주로 분류</li>
-<li>회귀트리: 연속형 변수의 값을 예측하기 위한 트리모델</li>
-</ul>
-<table><thead><tr><th>구분</th><th>분류트리</th><th>회귀트리</th></tr></thead><tbody><tr><td>대상</td><td>범주형 변수 대상</td><td>연속형 변수 대상</td></tr><tr><td>특징</td><td>불순도를 기준으로 최적 분류 결정</td><td>분산을 최소화하는 방향으로 분할</td></tr><tr><td>평가방법</td><td>지니지수, 엔트로피</td><td>오차제곱합</td></tr><tr><td>사용시기</td><td>명확한 범주를 가진 데이터 분류</td><td>연속적 수치 예측, 트렌드 예측</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-절차">의사결정나무 절차<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="의사결정나무 절차에 대한 직접 링크" title="의사결정나무 절차에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>성장 -&gt; 가지치기 -&gt; 최적 나무모형 선택 -&gt; 해석 및 예측</p>
-</blockquote>
-<ul>
-<li>성장: 분석목적에 따른 트리 생성</li>
-<li>가지치기: 불필요한 가지를 제거하여 과대적합, 과소적합 방지</li>
-<li>타당성 평가: 가장 적은 엔트로피를 갖는 나무를 평가하고 최적 모형 선택</li>
-<li>해석 및 예측: 구축된 나무모형 해석</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lC4S" id="의사결정나무-평가모델">의사결정나무 평가모델<a href="https://gracefullight.dev/pe/algorithm/decision-tree/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%ED%8F%89%EA%B0%80%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="의사결정나무 평가모델에 대한 직접 링크" title="의사결정나무 평가모델에 대한 직접 링크">​</a></h2>
-<ul>
-<li>지니 계수: Gini Index<!-- -->
-<ul>
-<li>데이터의 불순도를 측정하는 지표</li>
-<li>0에 가까울수록 노드의 데이터가 한 클래스로 분류된 것이고, 1에 가까울수록 데이터 분산</li>
-</ul>
-</li>
-<li>엔트로피: Entropy<!-- -->
-<ul>
-<li>데이터의 확률분포가 가지는 정보량을 수치로 표현</li>
-<li>작을 수록 잘 분류된 것</li>
-</ul>
-</li>
-<li>오차제곱합: Mean Squared Error, MSE<!-- -->
-<ul>
-<li>예측치와 실제치의 차이를 측정하는 지표</li>
-<li>MSE가 작을수록 모델의 예측 성능이 좋다고 평가</li>
-</ul>
-</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/algorithm</category>
