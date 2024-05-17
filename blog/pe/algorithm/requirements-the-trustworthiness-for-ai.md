@@ -52,3 +52,8 @@ tags:
 - AI파트너: 시스템 통합자, 데이터 공급자
 - AI영향대상: 데이터 영향대상, 시민 단체
 - 관계기관: 규제기관, 정책입안자
+
+## AI 신뢰성 요구사항
+
+- 유네스코: 인공지능 윤리권고
+- EU: The Assessment List on Trustworthy Artificial Intelligence
