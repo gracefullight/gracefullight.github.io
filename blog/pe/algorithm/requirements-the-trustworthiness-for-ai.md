@@ -57,3 +57,7 @@ tags:
 
 - 유네스코: 인공지능 윤리권고
 - EU: The Assessment List on Trustworthy Artificial Intelligence
+
+## 참조
+
+- [AI 신뢰성 센터](https://aitrustops.or.kr/common/bbs/tcntr/selectBbs.do?bbs_seq=7661&sch_text=&currentPage=1)
