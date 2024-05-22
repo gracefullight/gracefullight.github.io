@@ -2,11 +2,95 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-05-17T11:16:04.208Z</updated>
+    <updated>2024-05-22T13:26:10.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[소프트웨어 공학의 모든 것]]></title>
+        <id>https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/</id>
+        <link href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/"/>
+        <updated>2024-05-22T13:26:10.869Z</updated>
+        <summary type="html"><![CDATA[소프트웨어 공학의 모든 것]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_UHBS" id="특징">특징<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>복잡성: Complexity</li>
+<li>순응성: Conformity</li>
+<li>변경성: Changeability</li>
+<li>비가시성: Invisibility</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="종류">종류<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%A2%85%EB%A5%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>주문형: 고객, 기업의 요구사항 만족</li>
+<li>패키지형</li>
+<li>임베디드형</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="위기">위기<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%9C%84%EA%B8%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>요구 증가, 복잡도 증가, 난이도 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="목표">목표<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EB%AA%A9%ED%91%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>최소 비용</li>
+<li>최고 효율</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="단계">단계<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>요구 분석</li>
+<li>설계</li>
+<li>개발</li>
+<li>테스트</li>
+<li>유지보수</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="품질-보증">품질 보증<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88-%EB%B3%B4%EC%A6%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>기신사효유이호보</p>
+</blockquote>
+<ul>
+<li>기능적절성: Functional suitability</li>
+<li>신뢰성: Reliability</li>
+<li>사용성: Usability</li>
+<li>효율성: Performance efficiency</li>
+<li>유지보수성: Usability</li>
+<li>이식성: Portability</li>
+<li>호환성: Compatibility</li>
+<li>보안성: Maintainability</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="프로젝트-관리">프로젝트 관리<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>계획</li>
+<li>자원 관리</li>
+<li>리스크 관리</li>
+<li>프로젝트 수행 및 모니터</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="연구-결과">연구 결과<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%97%B0%EA%B5%AC-%EA%B2%B0%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>방법: Method</li>
+<li>도구: Tool</li>
+<li>프로세스: Process</li>
+<li>패러다임: Paradigm</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="연관-분야">연관 분야<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%97%B0%EA%B4%80-%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>ISO 24773, <a href="https://www.computer.org/education/bodies-of-knowledge/software-engineering/v3" target="_blank" rel="noopener noreferrer">SWEBOK</a></p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>소프트웨어 공학 전문가 기량</td><td>소프트웨어 엔지니어링의 전문적 실천에 필요한 지식과 기술</td><td>윤리, 커뮤니케이션, 팀워크 등 포함</td></tr><tr><td>소프트웨어 공학 경제학</td><td>소프트웨어 공학 프로젝트의 비용과 가치를 평가하는 지식과 기술</td><td>경제적 분석 기법, ROI, TCO 포함</td></tr><tr><td>컴퓨팅 기반</td><td>소프트웨어 엔지니어링의 기초가 되는 컴퓨팅 이론과 기술</td><td>데이터베이스, 네트워크, 운영체제 등 포함</td></tr><tr><td>수학적 기반</td><td>소프트웨어 엔지니어링 문제 해결에 필요한 수학적 이론과 기법</td><td>통계, 확률, 이산 수학, 계산 이론 등 포함</td></tr><tr><td>공학적 기반</td><td>일반 공학 원리를 소프트웨어 개발에 적용하는 지식과 기술</td><td>시스템 공학, 품질 관리, 성능 최적화 등 포함</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="vs-컴퓨터-과학">vs 컴퓨터 과학<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#vs-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="참조">참조<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://m.yes24.com/Goods/Detail/87531385" target="_blank" rel="noopener noreferrer">소프트웨어 공학의 모든 것</a></li>
+<li><a href="https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf" target="_blank" rel="noopener noreferrer">ISO 24773: SWEBOK</a></li>
+<li><a href="https://quality.arc42.org/articles/iso-25010-update-2023" target="_blank" rel="noopener noreferrer">ISO 25010: 소프트웨어 품질특성</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/sw" term="pe/sw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[인공지능 시스템 신뢰성 제고를 위한 요구사항]]></title>
         <id>https://gracefullight.dev/en/pe/algorithm/requirements-the-trustworthiness-for-ai/</id>
@@ -86,7 +170,7 @@
 <li>극비, 비밀, 미분류로 분류</li>
 <li>No Read Up, No Write Down</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_UHBS" id="비바-무결성">비바 무결성<a href="https://gracefullight.dev/en/pe/security/access-control/#%EF%BF%BD%EF%BF%BD%EB%B9%84%EB%B0%94-%EB%AC%B4%EA%B2%B0%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_UHBS" id="비바-무결성">비바 무결성<a href="https://gracefullight.dev/en/pe/security/access-control/#%EB%B9%84%EB%B0%94-%EB%AC%B4%EA%B2%B0%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>벨-라파둘라 몯레에서 불법 수정방지 내용 추가로 정의한 무결성 모델</li>
 <li>비인가자의 데이터 수정 방지 기능</li>
@@ -189,7 +273,7 @@
 <li>정보기술 아키텍처 설계 및 이행</li>
 <li>IT 투자성과 분석</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_UHBS" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/en/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_UHBS" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/en/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EF%BF%BD%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>소프트웨어 개발 방법론 활용</li>
 <li>소프트웨어 아키텍처의 설계, 문서화 및 변경 관리</li>
@@ -454,32 +538,6 @@
 <ul>
 <li><a href="https://aws.amazon.com/ko/what-is/retrieval-augmented-generation/" target="_blank" rel="noopener noreferrer">AWS: RAG란 무엇인가요?</a></li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sLLM]]></title>
-        <id>https://gracefullight.dev/en/pe/algorithm/sLLM/</id>
-        <link href="https://gracefullight.dev/en/pe/algorithm/sLLM/"/>
-        <updated>2024-05-05T12:00:13.862Z</updated>
-        <summary type="html"><![CDATA[small LLM]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_UHBS" id="sllm-개요">sLLM 개요<a href="https://gracefullight.dev/en/pe/algorithm/sLLM/#sllm-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_UHBS" id="sllm-개념">sLLM 개념<a href="https://gracefullight.dev/en/pe/algorithm/sLLM/#sllm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>small Large Language Model</li>
-<li>기업 전용 특화모델로 활용 가능한 경량화된 거대 언어모델</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_UHBS" id="sllm-배경">sLLM 배경<a href="https://gracefullight.dev/en/pe/algorithm/sLLM/#sllm-%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>LLM은 거대 언어모델로 천문학적인 비용과 학습 시간 필요</li>
-<li>매개변수를 줄이고, 미세조정하여 정확도 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_UHBS" id="llm과-sllm-비교">LLM과 sLLM 비교<a href="https://gracefullight.dev/en/pe/algorithm/sLLM/#llm%EA%B3%BC-sllm-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>LLM</th><th>sLLM</th></tr></thead><tbody><tr><td>훈련 데이터 크기</td><td>대규모, 대용량</td><td>상대적으로 작은 규모, 소용량</td></tr><tr><td>파라미터 크기</td><td>수천억 개</td><td>수십억 개</td></tr><tr><td>성능</td><td>더많은 컨텍스트와 언어이해능력</td><td>작은 모델로 일부 성능 제한</td></tr><tr><td>배포 용이성</td><td>대용량으로 배포 어려움</td><td>작은 규모로 배포 용이</td></tr><tr><td>사용성</td><td>학습 리소스 등 자원 사용량이 많아 운영 제약</td><td>경량화 된 모델로 제한된 자원으로 활용 가능</td></tr><tr><td>서비스 제공</td><td>클라우드 기반에서 범용 서비스 적합</td><td>온프레미스 방식으로 기업내 구축 가능</td></tr><tr><td>예시</td><td>ChatGPT, Gemini</td><td>LLama, Phi-3</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
