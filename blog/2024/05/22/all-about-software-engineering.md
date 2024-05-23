@@ -40,7 +40,7 @@ tags:
 
 ## 품질 보증
 
-> 기신사효유이호보
+> ISO 25010, 기신사효유이호보
 
 - 기능적절성: Functional suitability
 - 신뢰성: Reliability
