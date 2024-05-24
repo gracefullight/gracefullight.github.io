@@ -78,6 +78,91 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>소프트웨어 공학 전문가 기량</td><td>소프트웨어 엔지니어링의 전문적 실천에 필요한 지식과 기술</td><td>윤리, 커뮤니케이션, 팀워크 등 포함</td></tr><tr><td>소프트웨어 공학 경제학</td><td>소프트웨어 공학 프로젝트의 비용과 가치를 평가하는 지식과 기술</td><td>경제적 분석 기법, ROI, TCO 포함</td></tr><tr><td>컴퓨팅 기반</td><td>소프트웨어 엔지니어링의 기초가 되는 컴퓨팅 이론과 기술</td><td>데이터베이스, 네트워크, 운영체제 등 포함</td></tr><tr><td>수학적 기반</td><td>소프트웨어 엔지니어링 문제 해결에 필요한 수학적 이론과 기법</td><td>통계, 확률, 이산 수학, 계산 이론 등 포함</td></tr><tr><td>공학적 기반</td><td>일반 공학 원리를 소프트웨어 개발에 적용하는 지식과 기술</td><td>시스템 공학, 품질 관리, 성능 최적화 등 포함</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="vs-컴퓨터-과학">vs 컴퓨터 과학<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#vs-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="소프트웨어-프로세스">소프트웨어 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="좋은-프로세스">좋은 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%A2%8B%EC%9D%80-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>예측 가능성: Predictability</li>
+<li>테스팅과 유지보수 용이성: Testability, Maintainability</li>
+<li>변경 용이성: Changeability</li>
+<li>결함 제거 용이성: Fault Tolerance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로세스-모델">프로세스 모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="폭포수모델">폭포수모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%8F%AD%ED%8F%AC%EC%88%98%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="v모델">V모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#v%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="프로토타이핑-모델">프로토타이핑 모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="나선형모델">나선형모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EB%82%98%EC%84%A0%ED%98%95%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>프로토타입핑 반복</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="진화적-모델">진화적 모델<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%A7%84%ED%99%94%EC%A0%81-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>점증적: incremental</li>
+<li>반복적: iterative</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="unified-process">Unified Process<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#unified-process" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>여러 사이클: iteration</li>
+<li>도입(inception) -&gt; 정련(elaboration) -&gt; 구축(construction) -&gt; 전환(transition) 반복</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="애자일-프로세스">애자일 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%95%A0%EC%9E%90%EC%9D%BC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>2~6주간의 짧은 주기</li>
+<li>익스트림 프로그래밍: XP, 사용자 스토리, 매일 빌드/통합, TDD, 페어프로그래밍</li>
+<li>스크럼: 프로덕트 백로그 -&gt; 스프린트 백로그 -&gt; 2-4주기 개발, 스크럼미팅 -&gt; 배포 가능 프로덕트 추가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="지원-프로세스">지원 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%A7%80%EC%9B%90-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>ISO 12207, SDLC</p>
+</blockquote>
+<ul>
+<li>계약: 획득, 공급 프로세스</li>
+<li>운영: 운영 프로세스</li>
+<li>지원: 문서화, 형상관리, 품질 보증, 문제 해결 프로세스</li>
+<li>관리: 관리, 개선 프로세스</li>
+<li>엔지니어링: 개발, 유지보수 프로세스</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="관리-��프로세스">관리 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EA%B4%80%EB%A6%AC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>계획</li>
+<li>모니터링</li>
+<li>제어, 분석</li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="품질보증-프로세스">품질보증 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88%EB%B3%B4%EC%A6%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>인스펙션 프로세스: 전문 인력, 고비용, 해결방법보다 이슈집중</li>
+<li>프로세스 관리 프로세스: CMMI</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="형상-관리-프로세스">형상 관리 프로세스<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%ED%98%95%EC%83%81-%EA%B4%80%EB%A6%AC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>원시코드, 목적코드, 스크리븥, 관련 문서 전체 형상 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="구조적-방법론">구조적 방법론<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>분할정복</li>
+<li>DFD: 배경도</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="정보공학-방법론">정보공학 방법론<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%A0%95%EB%B3%B4%EA%B3%B5%ED%95%99-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>ISP</td><td>기업의 장기적 전략 계획 수립</td><td>전략 계획서</td></tr><tr><td>BAA</td><td>비지니스 영역별 데이터와 프로세스 모델링, 연관성 분석</td><td>요구사항 명세서</td></tr><tr><td>BSD</td><td>데이터와 프로세스 설계</td><td>논리 ERD, 프로세스 구조도, 흐름도</td></tr><tr><td>SC</td><td>데이터 상세 설계, 코딩</td><td>물리 ERD, UI, 코드</td></tr></tbody></table>
+<ul>
+<li>기업중심</li>
+<li>전략적 시스템 계획중심</li>
+<li>데이터 중심</li>
+<li>분할 정복</li>
+<li>공학적 접근</li>
+<li>사용자의 적극 참여</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="객체지향-방법론">객체지향 방법론<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>실세계를 객체로보고 객체사이 인터랙션을 모델링하는 방법</li>
+<li>대규모 시스템을 클래스로 모듈화하고 캡슐화</li>
+<li>OMT: Object Modeling Technique, Booch, Usecase -&gt; UML: Unified Modeling Language, UP: Unified Process</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="참조">참조<a href="https://gracefullight.dev/en/2024/05/22/all-about-software-engineering/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://m.yes24.com/Goods/Detail/87531385" target="_blank" rel="noopener noreferrer">소프트웨어 공학의 모든 것</a></li>
