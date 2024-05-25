@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.53df9c6f.css">
-<script src="/assets/js/runtime~main.ab476fd0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4b7dbf20.js" defer="defer"></script>
 <script src="/assets/js/main.ffd635d8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -79,6 +79,11 @@
 <table><thead><tr><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="SVM" src="/assets/images/svm-linear-cba32516a64a0791673f89e0edf490e5.webp" width="921" height="473" class="img_Htn8"></td><td><img decoding="async" loading="lazy" alt="SVM" src="/assets/images/svm-non-linear-4afecde40c5b80af508ac09467bd96a0.webp" width="838" height="334" class="img_Htn8"></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="문제-해결-방법">문제 해결 방법<a href="#문제-해결-방법" class="hash-link" aria-label="문제 해결 방법에 대한 직접 링크" title="문제 해결 방법에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td>특징</td><td>초평면 분리 가능</td><td>초평면 분리 불가</td></tr><tr><td>해 결방법</td><td>마진을 최대화하는 서포트벡터 탐색 후 분류</td><td>커널 트릭 사용하여 데이터 고차원 매핑</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="선형-문제">선형 문제<a href="#선형-문제" class="hash-link" aria-label="선형 문제에 대한 직접 링크" title="선형 문제에 대한 직접 링크">​</a></h3>
+<ul>
+<li>하드 마진: 오류 불가</li>
+<li>소프트 마진: 마진 내 오류 허용, 하이퍼파라미터로 제어</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="장단점">장단점<a href="#장단점" class="hash-link" aria-label="장단점에 대한 직접 링크" title="장단점에 대한 직접 링크">​</a></h3>
 <ul>
 <li>장점: 인공신경망의 과적합 해결방법 제시, 비선형 문제 해결</li>
@@ -98,8 +103,8 @@
 <li>주어진 입력값들의 조합을 <strong>의사결정규칙</strong>에 따라 <strong>출력값을 예측</strong>하는 모형</li>
 <li><strong>의사결정규칙</strong>을 트리구조로 나타내어 <strong>분류와 예측</strong>을 수행하는 분석 방법</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="의사결정나무-구성-유형-절차">의사결정나무 구성, 유형, 절차<a href="#의사결정나무-구성-유형-절차" class="hash-link" aria-label="의사결정나무 구성, 유형, 절차에 대한 직접 링크" title="의사결정나무 구성, 유형, 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="의사결정나무-구성">의  사결정나무 구성<a href="#의사결정나무-구성" class="hash-link" aria-label="의사결정나무 구성에 대한 직접 링크" title="의사결정나무 구성에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="의사결정나무-구성-유형- 절차">의사결정나무 구성, 유형, 절차<a href="#의사결정나무-구성-유형-절차" class="hash-link" aria-label="의사결정나무 구성, 유형, 절차에 대한 직접 링크" title="의사결정나무 구성, 유형, 절차에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="의사결정나무-구성">의사결정나무 구성<a href="#의사결정나무-구성" class="hash-link" aria-label="의사결정나무 구성에 대한 직접 링크" title="의사결정나무 구성에 대한 직접 링크">​</a></h3>
 <ul>
 <li>루트 노드: 최상단 노드, 첫 분류 조건</li>
 <li>부모 노드: 상위 노드</li>
@@ -183,7 +188,7 @@
 <li>Vulnerable and Outdated Components</li>
 <li>취약한 어플리케이션, 라이브러리, 프레임워크 등의 보안 위협</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="7-식별-및-인증-오류">7. 식별 및 인증 오류<a href="#7-식별-및-인증-오류" class="hash-link" aria-label="7. 식별 및 인증 오류에 대한 직접 링크" title="7. 식별 및 인증 오류 에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="7-식별-및-인증-오류">7. 식별 및 인증 오류<a href="#7-식별-및-인증-오류" class="hash-link" aria-label="7. 식별 및 인증 오류에 대한 직접 링크" title="7. 식별 및 인증 오류에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Identification and Authentication Failures</li>
 <li>취약한 인증에서 식별까지 포함된 보안 결함</li>
@@ -204,7 +209,7 @@
 <li>Server-Side Request Forgery</li>
 <li>어플리케이션이 사용자 제공 URL의 유효성을 검사하지 않고 원격 리소스를 가져올 때 발생</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="참조">참조<a href="#참조" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">  ​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="참조">참조<a href="#참조" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP: OWASP Top Ten</a></li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_ZWG9 padding--none margin-left--sm"><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe/">pe</a></li><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe-security/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Cu1n"><a href="/pe/management/value-chain/">가치사슬</a></h2><div class="container_zRLj margin-vert--md"><time datetime="2024-05-01T12:05:00.000Z">2024년 5월 1일</time> · <!-- -->약 2분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_G8x2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_lhq2" id="가치사슬-개념">가치사슬 개념<a href="#가치사슬-개념" class="hash-link" aria-label="가치사슬 개념에 대한 직접 링크" title="가치사슬 개념에 대한 직접 링크">​</a></h2>
@@ -231,7 +236,7 @@
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="분석-단계">분석 단계<a href="#분석-단계" class="hash-link" aria-label="분석 단계에 대한 직접 링크" title="분석 단계에 대한 직접 링크">​</a></h2>
 <ul>
 <li>가치사슬 활동 분류, 분석</li>
-<li>가치 파악 및 비용 정의</li>
+<li>가치 파 악 및 비용 정의</li>
 <li>경쟁사 가치사슬 벤치마킹</li>
 <li>경쟁 우위 확보 및 기회 파악</li>
 </ul>
@@ -273,7 +278,7 @@
 <li>인증 및 권한관리</li>
 <li>접근통제</li>
 <li>암호화</li>
-<li>정보 시스템 도입 및 개발 보안</li>
+<li>정보시스템 도입 및 개발 보안</li>
 <li>시스템 및 서비스 운영 관리</li>
 <li>시스템 및 서비스 보안 관리</li>
 <li>사고 예방 및 대응</li>
@@ -320,7 +325,7 @@
 <li><strong>ESG</strong>, 생태 균형, 인권 존중</li>
 <li>재생에너지, 추적성, 효율성</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="4-플랫폼-엔지니어링">4. 플랫폼 엔지니어링<a href="#4-플랫폼-엔지니어링" class="hash-link" aria-label="4. 플랫폼 엔지니어링에 대한 직접 링크" title="4. 플랫폼 엔지니어링에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="4-플랫폼-엔지니 어링">4. 플랫폼 엔지니어링<a href="#4-플랫폼-엔지니어링" class="hash-link" aria-label="4. 플랫폼 엔지니어링에 대한 직접 링크" title="4. 플랫폼 엔지니어링에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Platform Engineering</li>
 <li>SW 제공, 수명주기 관리 위한 <strong>내부고객용 플랫폼</strong> 구축 및 운영</li>
@@ -384,20 +389,20 @@
 <ul>
 <li><a href="https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024" target="_blank" rel="noopener noreferrer">Gartner: Gartner Top 10 Strategic Technology Trends for 2024</a></li>
 <li><a href="https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=82618&amp;bcIdx=26147&amp;parentSeq=26147" target="_blank" rel="noopener noreferrer">NIA: 주요 기관이 전망한 2024년 유망 기술</a></li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_ZWG9 padding--none margin-left--sm"><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe/">pe</a></li><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe-convergence/">pe/convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Cu1n"><a href="/pe/security/개인정보-보호법-2  차-시행령-개정사항/">개인정보 보호법 2차 시행령 개정사항</a></h2><div class="container_zRLj margin-vert--md"><time datetime="2024-04-21T11:51:24.584Z">2024년 4월 21일</time> · <!-- -->약 4분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_G8x2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_lhq2" id="법적-근거">법적 근거<a href="#법적-근거" class="hash-link" aria-label="법적 근거에 대한 직접 링크" title="법적 근거에 대한 직접 링크">​</a></h2>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_ZWG9 padding--none margin-left--sm"><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe/">pe</a></li><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe-convergence/">pe/convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Cu1n"><a href="/pe/security/개인정보-보호법-2차-시행령-개정사항/">개인정보 보호법 2차 시행령 개정사항</a></h2><div class="container_zRLj margin-vert--md"><time datetime="2024-04-21T11:51:24.584Z">2024년 4월 21일</time> · <!-- -->약 4분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_G8x2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_lhq2" id="법적-근거">법적 근거<a href="#법적-근거" class="hash-link" aria-label="법적 근거에 대한 직접 링크" title="법적 근거에 대한 직접 링크">​</a></h2>
 <blockquote>
 <p><a href="https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&amp;mCode=D010030000&amp;nttId=9986" target="_blank" rel="noopener noreferrer">개인정보 보호법 및 시행령 2차 개정사항 안내서 및 현장설명회 자료</a></p>
 </blockquote>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="주요-변경사항">주요 변경사항<a href="#주요-변경사항" class="hash-link" aria-label="주요 변경사항에 대한 직접 링크" title="주요 변경사항에 대한 직접 링크">​</a></h2>
 <blockquote>
-<p>보호수준평가, CPO 자격요건, 손해배상책임 대상, 국외 개인정보 처리방침</p>
+<p>보호수준평가, CPO 자격요건, 손 해배상책임 대상, 국외 개인정보 처리방침</p>
 </blockquote>
 <table><thead><tr><th>구분</th><th>기존내용</th><th>변경내용</th></tr></thead><tbody><tr><td>공공기관 개인정보 보호수준 평가</td><td>진단 결과의 법적 근거 미비, 평가 절차와 대상 선정 기준 부재</td><td>평가 절차와 기준 명확화, 법적 근거 신설, 결과 공개 및 연간 평가 실시</td></tr><tr><td>개인정보 보호책임자 제도 개선</td><td>CPO 자격 요건과 협의회 부재</td><td>CPO 자격 요건 강화, CPO 협의회 신설로 협력 강화</td></tr><tr><td>완전자동화 결정에 대한 정보주체의 권리</td><td>AI 결정에 대한 정보주체 권리 미규정</td><td>AI 결정에 대해 설명 요구 및 권리 거부 가능 근거 마련</td></tr><tr><td>손해배상책임 보장 의무대상 확대</td><td>손해배상책임 이행 의무 대상 제한적</td><td>의무 대상을 모든 개인정보처리자로 확대, 매출액 및 보유량 기준 정비</td></tr><tr><td>고유식별정보의 관리실태 정기조사</td><td>불규칙적 조사로 관리 미흡</td><td>관리실태 정기조사 주기 3년으로 명확화, 관리 강화</td></tr><tr><td>국외 수집·이전 개인정보 처리방침 공개</td><td>국외 이전 개인정보 처리방침 비공개</td><td>국외에서 수집하거나 이전하는 개인정보 처리방침 공개 의무화</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="cpo">CPO<a href="#cpo" class="hash-link" aria-label="CPO에 대한 직접 링크" title="CPO에 대한 직접 링크">​</a></h2>
 <blockquote>
 <p>실무4년, 박사2년, 개인정보 거버넌스</p>
 </blockquote>
-<table><thead><tr><th>구분</th><th>기존 요건</th><th>개정 요건</th></tr></thead><tbody><tr><td>자격 요건</td><td>명확히 정의되지 않음</td><td>개인정보보호, 정보보호, 정보기술 경력 합쳐 총 4년 이상,<br>개인정보보호 경력은 최소 2년 이상 필요</td></tr><tr><td>학위 인정</td><td>학위 취득에 따른 경력 인정 규정 없음</td><td>- 박사학위: 개인정보보호 경력 2년 인정<br>- 석사학위: 개인정보보호 경력 1년 인정<br>- 학사학위: 개인정보보호 경력 6개월 인정</td></tr><tr><td>업무 범위</td><td>일반적인 개인정보 보호 업무</td><td>- 개인정  보 보호 계획 수립 및 시행<br>- 개인정보 처리 실태 조사 및 개선<br>- 불만 처리 및 피해 구제 <br>- 내부 통제 시스템 구축<br>- 개인정보 보호 교육 계획 수립 및 시행</td></tr><tr><td>독립성 보장</td><td>독립성 보장에 대한 명확한 규정 없음</td><td>개인정보처리자는 CPO가 업무를 독립적으로 수행할 수 있도록 지원, 업무 수행 중 불이익 주지 않아야 함</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_ZWG9 padding--none margin-left--sm"><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe/">pe</a></li><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe-security/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Cu1n"><a href="/pe/engineering/lehman-law-sw-evolution/">리먼(Lehman)의 소프트웨어 진화 법칙</a></h2><div class="container_zRLj margin-vert--md"><time datetime="2024-03-17T07:33:00.000Z">2024년 3월 17일</time> · <!-- -->약 3분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_G8x2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_lhq2" id="i-개요">I. 개요<a href="#i-개요" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>기존 요건</th><th>개정 요건</th></tr></thead><tbody><tr><td>자격 요건</td><td>명확히 정의되지 않음</td><td>개인정보보호, 정보보호, 정보기술 경력 합쳐 총 4년 이상,<br>개인정보보호 경력은 최소 2년 이상 필요</td></tr><tr><td>학위 인정</td><td>학위 취득에 따른 경력 인정 규정 없음</td><td>- 박사학위: 개인정보보호 경력 2년 인정<br>- 석사학위: 개인정보보호 경력 1년 인정<br>- 학사학위: 개인정보보호 경력 6개월 인정</td></tr><tr><td>업무 범위</td><td>일반적인 개인정보 보호 업무</td><td>- 개인정보 보호 계획 수립 및 시행<br>- 개인정보 처리 실태 조사 및 개선<br>- 불만 처리 및 피해 구제 <br>- 내부 통제 시스템 구축<br>- 개인정보 보호 교육 계획 수립 및 시행</td></tr><tr><td>독립성 보장</td><td>독립성 보장에 대한 명확한 규정 없음</td><td>개인정보처리자는 CPO가 업무를 독립적으로 수행할 수 있도록 지원, 업무 수행 중 불이익 주지 않아야 함</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_ZWG9 padding--none margin-left--sm"><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe/">pe</a></li><li class="tag_jRIo"><a class="tag_m9J0 tagRegular_Ruww" href="/tags/pe-security/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Cu1n"><a href="/pe/engineering/lehman-law-sw-evolution/">리먼(Lehman)의 소프트웨어 진화 법칙</a></h2><div class="container_zRLj margin-vert--md"><time datetime="2024-03-17T07:33:00.000Z">2024년 3월 17일</time> · <!-- -->약 3분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_G8x2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_lhq2" id="i-개요">I. 개요<a href="#i-개요" class="hash-link" aria-label="I. 개요에 대한 직접 링크" title="I. 개요에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="가-개념">가. 개념<a href="#가-개념" class="hash-link" aria-label="가. 개념에 대한 직접 링크" title="가. 개념에 대한 직접 링크">​</a></h3>
 <ul>
 <li>대부분의 소프트웨어가 존재하는 동안 변경이 일반적이며, 지속적으로 유지되기 위해 준수해야하는 법칙</li>
@@ -408,7 +413,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="ii-핵심요소-적용방안">II. 핵심요소, 적용방안<a href="#ii-핵심요소-적용방안" class="hash-link" aria-label="II. 핵심요소, 적용방안에 대한 직접 링크" title="II. 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="가-핵심요소">가. 핵심요소<a href="#가-핵심요소" class="hash-link" aria-label="가. 핵심요소에 대한 직접 링크" title="가. 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>법칙</th><th>내용</th></tr></thead><tbody><tr><td>완전유지관리</td><td>조직적 안전성</td><td>평균 유효한 글로벌 작업률은 제품 수명 기간동안 변하지 않음</td></tr><tr><td>완전유지관리</td><td>지속적인 성장</td><td>사용자를 만족시키기 위해 기능적 성장 필요</td></tr><tr><td>적응유지관리</td><td>지속적인 변화</td><td>SW는 지속적으로 적응하고 변화해야함</td></tr><tr><td>적응유지관리</td><td>자기 규제</td><td>시스템 진화는 제품의 배포와 프로세스 측정으로 자체 조절됨</td></tr><tr><td>적응유지관리</td><td>피드백 시스템</td><td>진화 프로세스는 다 중 레벨, 다중 에이전프 피드백 시스템이여야함</td></tr><tr><td>수리유지관리</td><td>품질 저하</td><td>변경이 엄격하게 유지 관리되고 적응하지 않으면 품질 감소</td></tr><tr><td>예방유지관리</td><td>증가하는 복잡성</td><td>시스템이 발전할 때 관리하지 않으면 복잡성 증가</td></tr><tr><td>예방유지관리</td><td>친숙도 보존</td><td>사용자는 만족스러운 진화가 될 수 있게 내용과 행동을 숙달해야함</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>법칙</th><th>내용</th></tr></thead><tbody><tr><td>완전유지관리</td><td>조직적 안전성</td><td>평균 유효한 글로벌 작업률은 제품 수명 기간동안 변하지 않음</td></tr><tr><td>완전유지관리</td><td>지속적인 성장</td><td>사용자를 만족시키기 위해 기능적 성장 필요</td></tr><tr><td>적응유지관리</td><td>지속적인 변화</td><td>SW는 지속적으로 적응하고 변화해야함</td></tr><tr><td>적응유지관리</td><td>자기 규제</td><td>시스템 진화는 제품의 배포와 프로세스 측정으로 자체 조절됨</td></tr><tr><td>적응유지관리</td><td>피드백 시스템</td><td>진화 프로세스는 다중 레벨, 다중 에이전프 피드백 시스템이여야함</td></tr><tr><td>수리유지관리</td><td>품질 저하</td><td>변경이 엄격하게 유지 관리되고 적응하지 않으면 품질 감소</td></tr><tr><td>예방유지관리</td><td>증가하는 복잡성</td><td>시스템이 발전할 때 관리하지 않으면 복잡성 증가</td></tr><tr><td>예방유지관리</td><td>친숙도 보존</td><td>사용자는 만족스러운 진화가 될 수 있게 내용과 행동을 숙달해야함</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="기출">기출<a href="#기출" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
 <ul>
 <li>129/2/4</li>
@@ -426,7 +431,7 @@
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="변화">변화<a href="#변화" class="hash-link" aria-label="변화에 대한 직접 링크" title="변화에 대한 직접 링크">​</a></h2>
 <ul>
 <li>탈중앙 자율조직 DAO 출현</li>
-<li>블록체인 과 AI로 웹 구조 혁신</li>
+<li>블록체인과 AI로 웹 구조 혁신</li>
 <li>웹 활동으로 코인, 토큰 보상</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="기출">기출<a href="#기출" class="hash-link" aria-label="기출에 대한 직접 링크" title="기출에 대한 직접 링크">​</a></h2>
