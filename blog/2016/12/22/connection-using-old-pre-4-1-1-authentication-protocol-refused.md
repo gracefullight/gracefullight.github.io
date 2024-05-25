@@ -15,4 +15,4 @@ MySQL Workbench에서 database 연결 도중 `connection using old (pre-4.1.1) a
 
 ![image from hexo](https://i.imgur.com/OliMFVc.jpg)
 
-연결시 Advanced 탭에서 Use the old authentification protocol을 체크해주자.
+연결시 Advanced 탭에서 Use the old authentication protocol을 체크해주자.

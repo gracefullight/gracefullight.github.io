@@ -13,7 +13,7 @@ date: 2016-12-21 23:31:13
 2. 법인등록번호
 3. 바이트 제한
 4. 아이디 체크 (alphanumeric, 숫자 첫글자 불가능)
-5. 비밀번호 체크 (alpah && (number || special char))
+5. 비밀번호 체크 (alpha && (number || special char))
 6. datetime (YYYY-MM-DD HH:mm:ss)
 7. date (YYYY-MM-DD)
 8. Kakaotalk Yellow ID
