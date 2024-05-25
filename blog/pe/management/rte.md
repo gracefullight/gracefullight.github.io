@@ -10,6 +10,8 @@ tags:
 
 ## RTE 개요
 
+> 인식, 분석, 실행
+
 ### RTE의 개념
 
 - Real Time Enterprise
