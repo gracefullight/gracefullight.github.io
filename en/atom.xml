@@ -240,7 +240,7 @@
         <summary type="html"><![CDATA[접근제어]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lhq2" id="접근제어-개념">접근제어 개념<a href="https://gracefullight.dev/en/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>권한이 있는 계쩡에만 특정 데이터 또는 자원에 접근하는 것이 가능하도록 하는 방법</li>
+<li>권한이 있는 계정에만 특정 데이터 또는 자원에 접근하는 것이 가능하도록 하는 방법</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="접근제어-유형">접근제어 유형<a href="https://gracefullight.dev/en/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>DAC</td><td>사용자나 그룹에 근거한 접근 제어</td><td>소유자의 권한 변경</td></tr><tr><td>MAC</td><td>객체별로 정의된 권한을 근거로 접근 제어</td><td>군에서 사용, 중앙집중식</td></tr><tr><td>RBAC</td><td>역할에 의 한 접근 제어</td><td>최소권한, 직무분리, 계층 분리</td></tr></tbody></table>
