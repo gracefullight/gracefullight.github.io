@@ -312,5 +312,6 @@ graph TB
 ## 참조
 
 - [소프트웨어 공학의 모든 것](https://m.yes24.com/Goods/Detail/87531385)
+- [ISO 12207: SDLC](https://wildart.github.io/MISG5020/standards/IEEE-12207-2008.pdf)
 - [ISO 24773: SWEBOK](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf)
 - [ISO 25010: 소프트웨어 품질특성](https://quality.arc42.org/articles/iso-25010-update-2023)
