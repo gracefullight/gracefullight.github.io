@@ -307,7 +307,7 @@ graph TB
 
 - 6M: Machine, Method, Materials, Measurement, Man, Mother nature, 기계, 방법, 재료, 측정, 사람, 환경
 - 8P: Price, Promotion, People, Process, Place/Plant, Policy, Procedure, Product, 가격, 광고, 인력, 프로세스, 장소, 정책, 절차, 제품
-- SW프로젝트(Boehm): 인력부족, 비현실적 일정 및 예산, 잘모소딘 기능과 특징 개발, 잘못된 인터페이스 개발, 과포장, 계속적 요구변경, 외부 노출 컴포넌트 빈약, 실시건 성능 빈약, 녹슨 컴퓨터 분야 기술
+- SW프로젝트(Boehm): 인력부족, 비현실적 일정 및 예산, 잘못된 기능과 특징 개발, 잘못된 인터페이스 개발, 과포장, 계속적 요구변경, 외부 노출 컴포넌트 빈약, 실시건 성능 빈약, 녹슨 컴퓨터 분야 기술
 
 ## 참조
 
