@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 May 2024 11:26:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 May 2024 14:11:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[TCAM, Ternary Content Addressable Memory]]></title>
+            <link>https://gracefullight.dev/pe/architecture/tcam/</link>
+            <guid>https://gracefullight.dev/pe/architecture/tcam/</guid>
+            <pubDate>Wed, 29 May 2024 14:11:06 GMT</pubDate>
+            <description><![CDATA[내용 주소화 기억장치]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lhq2" id="tcam-개념">TCAM 개념<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="TCAM 개념에 대한 직접 링크" title="TCAM 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>0, 1, X(Don't care) 세 가지 상태를 저장하는 메모리 셀로 구성되어, 데이터 검색과 비교를 내용 기반으로 병렬로 수행하는 메모리.</li>
+<li>RAM은 주소기반으로 데이터 읽기/쓰기, TCAM은 내용 기반으로 데이터 검색</li>
+<li>CAM은 0,1 exact matching, TCAM은 0,1,X wildcard matching</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="tcam의-구성도-구성요소-활용사례">TCAM의 구성도, 구성요소 활용사례<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크" title="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="tcam의-구성도">TCAM의 구성도<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="TCAM의 구성도에 대한 직접 링크" title="TCAM의 구성도에 대한 직접 링크">​</a></h3>
+<div class="language-text codeBlockContainer_fwxu theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_dWlu"><pre tabindex="0" class="prism-code language-text codeBlock_AmAl thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_bSsz"><span class="token-line" style="color:#9CDCFE"><span class="token plain">SearchLine -&gt; TCAM 메모리 셀 배열 -&gt; Match Line -&gt; 우선순위 인코더</span><br></span></code></pre><div class="buttonGroup_N60G"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_fdCB" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_m5it"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_yq9X"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="tcam의-구성요소">TCAM의 구성요소<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="TCAM의 구성요소에 대한 직접 링크" title="TCAM의 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Search Line</td><td>검색어를 입력하는 라인</td><td>각 비트는 0, 1, X 값</td></tr><tr><td>메모리 셀</td><td>3진 데이터(0, 1, X) 상태 저장</td><td>SRAM 기반</td></tr><tr><td>Match Line</td><td>검색 결과를 출력하는 라인</td><td>각 메모리 워드마다 하나씩 존재</td></tr><tr><td>Priority Encoder</td><td>여러 Match Line 중 가장 높은 우선순위의 일치 결과를 선택</td><td>사용자 설정 가능</td></tr></tbody></table>
+<ul>
+<li>TCAM의 구성요소는 3상태 저장, 고속 비교 및 우선순위 결정 기능을 통해 빠른 데이터 검색을 가능하게함.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="tcam-활용사례">TCAM 활용사례<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="TCAM 활용사례에 대한 직접 링크" title="TCAM 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>네트워크 라우터</td><td>IP 주소 기반 패킷 분류 및 포워딩</td><td>빠른 패킷 처리 속도</td></tr><tr><td>네트워크 방화벽</td><td>패킷 필터링 규칙과 패킷 헤더 비교</td><td>높은 보안성</td></tr><tr><td>데이터베이스</td><td>데이터 검색 및 필터링</td><td>복잡한 질의 처리 가능</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="tcam-발전방향">TCAM 발전방향<a href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="TCAM 발전방향에 대한 직접 링크" title="TCAM 발전방향에 대한 직접 링크">​</a></h2>
+<ul>
+<li>저전력 설계: TCAM은 높은 전력 소모 단점</li>
+<li>고집적화: 단위 면적 당 더 많은 메모리 셀 집적하여 용량 증대, 비용 절감</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/architecture</category>
+        </item>
         <item>
             <title><![CDATA[위험관리]]></title>
             <link>https://gracefullight.dev/pe/engineering/risk-management/</link>
@@ -45,7 +75,7 @@
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="iso-12207-구성도-구성요소-적용방안">ISO 12207 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="ISO 12207 구성도, 구성요소, 적용방안에 대한 직접 링크" title="ISO 12207 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-12207-구성도">ISO 12207 구성도<a href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ISO 12207 구성도에 대한 직접 링크" title="ISO 12207 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-12207-구성요소">ISO 12207 구성요소<a href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EF%BF%BD%EF%BF%BD%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 12207 구성요소에 대한 직접 링크" title="ISO 12207 구성요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-12207-구성요소">ISO 12207 구성요소<a href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 12207 구성요소에 대한 직접 링크" title="ISO 12207 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기본 생명주기</td><td>SW 개발의 주요 단계를 나타냄</td><td>획득, 공급, 개발, 운영, 유지보수</td></tr><tr><td>지원 생명주기</td><td>기본 생명주기를 지원하는 활동</td><td>문서화, 구성 관리, 품질 관리, 문제 해결</td></tr><tr><td>조직 생명주기</td><td>조직의 성숙도 및 역량 강화를 위한 활동</td><td>관리, 기반 구조, 개선, 교육 훈련</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-12207-적용방안">ISO 12207 적용방안<a href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="ISO 12207 적용방안에 대한 직접 링크" title="ISO 12207 적용방안에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>리더</td><td>전략 수립 및 지원</td><td>도입 필요성 공유, 예산 확보 및 지원, 결과 검토, 지속적 지원</td></tr><tr><td>매니저</td><td>프로세스 구축 및 실행</td><td>표준 프로세스 조정, 상세 절차 수립, 결과 분석 및 개선</td></tr><tr><td>오퍼레이터</td><td>실무 적용 및 개선</td><td>표준 프로세스 준수 및 실무 적용, 교육 참여, 개선 제안</td></tr></tbody></table>
@@ -190,7 +220,7 @@
 <ul>
 <li>원시코드, 목적코드, 스크리븥, 관련 문서 전체 형상 관리</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="구조적-방법론">구조적 방법론<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="구조적 방법론에 대한 직접 링크" title="구조적 방법론에 대한 ��직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="구조적-방법론">구조적 방법론<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="구조적 방법론에 대한 직접 링크" title="구조적 방법론에 대한 직접 링크">​</a></h2>
 <ul>
 <li>분할정복</li>
 <li>DFD: 배경도</li>
@@ -253,7 +283,7 @@
 <li>외부 인터페이스 파일: External Interface File, 소프트웨어 시스템 사이에 전다로디거나 공유된 파일 카운트</li>
 <li>외부 조회: External Query, 중간 출력을 생성하는 외부 조회를 카운트</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로젝트-모니터링">프로젝트 모니터링<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="프로젝트 모니터링에 대한 직접 링크" title="프로젝트 모니터링에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로젝트-모니터링">프로젝트 모니터링<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="프로젝트 모니터링에 대한 직접 링크" title="프로젝트 모니터��링에 대한 직접 링크">​</a></h2>
 <ul>
 <li>어닝 밸류 분석: Earning Value Analysis, 비용과 일정 통합 모니터링</li>
 <li>BAC: 프로젝트 예산</li>
@@ -411,7 +441,7 @@
 <ul>
 <li>AI 생명주기 전 영역에서 인공지능 시스템 신뢰성 제고를 위한 활동 필요.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="ai-시스템-생명-주기별-요구사항">AI 시스템 생명 주기별 요구사항<a href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#ai-%EC%8B%9C%EF%BF%BD%EC%8A%A4%ED%85%9C-%EC%83%9D%EB%AA%85-%EC%A3%BC%EA%B8%B0%EB%B3%84-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD" class="hash-link" aria-label="AI 시스템 생명 주기별 요구사항에 대한 직접 링크" title="AI 시스템 생명 주기별 요구사항에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="ai-시스템-생명-주기별-요구사항">AI 시스템 생명 주기별 요구사항<a href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%83%9D%EB%AA%85-%EC%A3%BC%EA%B8%B0%EB%B3%84-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD" class="hash-link" aria-label="AI 시스템 생명 주기별 요구사항에 대한 직접 링크" title="AI 시스템 생명 주기별 요구사항에 대한 직접 링크">​</a></h2>
 <p>다음은 요청하신 대로 내용을 키워드 기반으로 요약한 표입니다.</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>계획 및 거버넌스</td><td>위험관리 계획, 거버넌스 체계</td><td>위험 분석, 법 규정 수립</td></tr><tr><td>설계 및 개발</td><td>신뢰성 테스트 계획, 이상 데이터 점검, 편향 제거, 보안성 점검</td><td>테스트 환경 설계, 데이터 견고성, 편향 제거, 보안 패치 점검</td></tr><tr><td>검증 및 확인</td><td>추적 가능성 확보, 모델 설명 제공</td><td>데이터 추적, 모델 설명</td></tr><tr><td>배치 및 운영</td><td>모델 방어 대책, 안전 모드, 알림 절차 수립</td><td>방어 방안, 안전 모드 구현, 알림 기능</td></tr><tr><td>지속적 관리</td><td>데이터 정보 제공, 모델 편향 제거, 시스템 편향 제거</td><td>데이터 투명성, 알고리즘 편향 제거</td></tr><tr><td>서비스 종료</td><td>서비스 범위 설명</td><td>오남용 방지</td></tr></tbody></table>
 <ul>
@@ -708,38 +738,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/management</category>
-        </item>
-        <item>
-            <title><![CDATA[ISO 25000]]></title>
-            <link>https://gracefullight.dev/pe/engineering/iso-25000/</link>
-            <guid>https://gracefullight.dev/pe/engineering/iso-25000/</guid>
-            <pubDate>Tue, 07 May 2024 14:03:23 GMT</pubDate>
-            <description><![CDATA[SW 품질평가를 위한 SW 품질평가 통합모델 표준, ISO 25000]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lhq2" id="iso-25000의-개요">ISO 25000의 개요<a href="https://gracefullight.dev/pe/engineering/iso-25000/#iso-25000%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="ISO 25000의 개요에 대한 직접 링크" title="ISO 25000의 개요에 대한 직접 링크">​</a></h2>
-<ul>
-<li>SQuaRE: Software Product Quality Requirements and Evaluation</li>
-<li>SW 품질 평가 모델 ISO 9126과 SW 품질 평가 절차 모델 ISO 14598을 통합한 품질 평가 모델</li>
-<li>기존 SW 품질 평가 표준 모델의 모호성 개선 및 통합 품질 요구 명세부터 품질 판정까지 표준 지침 제공</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="iso-25000-구성도-및-구성요소">ISO 25000 구성도 및 구성요소<a href="https://gracefullight.dev/pe/engineering/iso-25000/#iso-25000-%EA%B5%AC%EC%84%B1%EB%8F%84-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 25000 구성도 및 구성요소에 대한 직접 링크" title="ISO 25000 구성도 및 구성요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-25000-구성도">ISO 25000 구성도<a href="https://gracefullight.dev/pe/engineering/iso-25000/#iso-25000-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ISO 25000 구성도에 대한 직접 링크" title="ISO 25000 구성도에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>ISO 9126 품질특성 + ISO 14598 품질평가 절차</p>
-</blockquote>
-<div class="language-bash codeBlockContainer_fwxu theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_dWlu"><pre tabindex="0" class="prism-code language-bash codeBlock_AmAl thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_bSsz"><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        +----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        | 품질모델 (25010) |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        +----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                                |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+----------------+       +-------------+        +----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| 품질평가 (25040) |-------|    품질관리    |-------| 품질측정 (25020)  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+----------------+       +-------------+        +----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                                |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        +----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        | 품질요구 (25030) |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">                        +----------------+</span><br></span></code></pre><div class="buttonGroup_N60G"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_fdCB" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_m5it"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_yq9X"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="iso-25000-구성요소">ISO 25000 구성요소<a href="https://gracefullight.dev/pe/engineering/iso-25000/#iso-25000-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 25000 구성요소에 대한 직접 링크" title="ISO 25000 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>표준</th></tr></thead><tbody><tr><td>품질관리</td><td>SQuaRE에 대한 개요, 전체 관리</td><td>ISO 25000</td></tr><tr><td>품질모델</td><td>품질 모델 및 품질 사용 안내</td><td>ISO 25010</td></tr><tr><td>품질측정</td><td>기본, 내/외부 품질 매트릭스 문서화</td><td>ISO 25020</td></tr><tr><td>품질요구</td><td>품질 요구사항 명세</td><td>ISO 25030</td></tr><tr><td>품질평가</td><td>평가자 관점의 평가 프로세스</td><td>ISO 25040</td></tr></tbody></table>
-<ul>
-<li>기능적합성, 신뢰성, 사용성, 실행효율성, 유지보수성, 이식성, 호환성, 보안성 품질 제고</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="iso-25000-활용-및-기대효과">ISO 25000 활용 및 기대효과<a href="https://gracefullight.dev/pe/engineering/iso-25000/#iso-25000-%ED%99%9C%EC%9A%A9-%EB%B0%8F-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="ISO 25000 활용 및 기대효과에 대한 직접 링크" title="ISO 25000 활용 및 기대효과에 대한 직접 링크">​</a></h2>
-<ul>
-<li>SW 품질 평가의 편리성, 신뢰성, 명확성 제공</li>
-<li>SW 품질 향상 및 경쟁력 확보 지표 제시</li>
-<li>ISO 9126과 ISO 14598 표준 간 갭을 제거하여 품질 평가의 일관성 확보</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
         </item>
     </channel>
 </rss>
