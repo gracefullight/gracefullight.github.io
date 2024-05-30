@@ -65,7 +65,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/fs-extra": "^11.0.4",
     "@types/luxon": "^3.4.2",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.12.13",
     "@types/pako": "^2.0.3",
     "@types/react": "^18.3.3",
     "clipanion": "4.0.0-rc.3",
