@@ -19,9 +19,9 @@ tags:
 
 ```mermaid
 xychart-beta
-    title "Pollack's Rule: Transistor Count vs Performance"
+    title "폴락의 규칙: 성능 vs 트랜지스터 수"
     x-axis [1, 2, 4, 8, 16, 32]
-    y-axis "Performance (relative scale)" 1 --> 10
+    y-axis "성능" 1 --> 10
     line [1, 1.5, 2.25, 3.375, 5.0625, 7.59375]
 ```
 
