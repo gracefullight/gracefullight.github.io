@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-05-30T08:10:58.984Z</updated>
+    <updated>2024-05-31T13:18:57.298Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[대칭 암호화, 비대칭 암호화]]></title>
+        <id>https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/</id>
+        <link href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/"/>
+        <updated>2024-05-31T13:18:57.298Z</updated>
+        <summary type="html"><![CDATA[대칭 암호화, 비대칭 암호화]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lhq2" id="대칭-암호화의-개념도-및-구성요소">대칭 암호화의 개념도 및 구성요소<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="대칭 암호화의 개념도 및 구성요소에 대한 직접 링크" title="대칭 암호화의 개념도 및 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="대칭-암호화의-개념도">대칭 암호화의 개념도<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="대칭 암호화의 개념도에 대한 직접 링크" title="대칭 암호화의 개념도에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="대칭-암호화의-구성요소">대칭 암호화의 구성요소<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="대칭 암호화의 구성요소에 대한 직접 링크" title="대칭 암호화의 구성요소에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="비대칭-암호화의-개념도-및-구성요소">비대칭 암호화의 개념도 및 구성요소<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="비대칭 암호화의 개념도 및 구성요소에 대한 직접 링크" title="비대칭 암호화의 개념도 및 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="비대칭-암호화의-개념도">비대칭 암호화의 개념도<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="비대칭 암호화의 개념도에 대한 직접 링크" title="비대칭 암호화의 개념도에 ��대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="비대칭-암호화의-구성요소">비대칭 암호화의 구성요소<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="비대칭 암호화의 구성요소에 대한 직접 링크" title="비대칭 암호화의 구성요소에 대한 직접 링크">​</a></h3>
+<ul>
+<li>비대칭 암호화는 대칭키를 암호화하기 위해 전자봉투로서 사용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="대칭-암호화와-비대칭-암호화-비교">대칭 암호화와 비대칭 암호화 비교<a href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="대칭 암호화와 비대칭 암호화 비교에 대한 직접 링크" title="대칭 암호화와 비대칭 암호화 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>대칭암호화</th><th>비대칭암호화</th></tr></thead></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pollack's Rule]]></title>
         <id>https://gracefullight.dev/pe/architecture/pollack-s-rule/</id>
@@ -206,7 +230,7 @@
 <li>결함 제거 용이성: Fault Tolerance</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로세스-모델">프로세스 모델<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="프로세스 모델에 대한 직접 링크" title="프로세스 모델에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="폭포수모델">폭포수모델<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%8F%AD%ED%8F%AC%EC%88%98%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="폭포수모델에 대한 직접 링크" title="폭포수모델에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="폭포수모델">폭포수모델<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%8F%AD%ED%8F%AC%EC%88%98%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="폭포수모델에 대한 직접 링크" title="폭포수모델에 ��대한 직접 링크">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_lhq2" id="v모델">V모델<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#v%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="V모델에 대한 직접 링크" title="V모델에 대한 직접 링크">​</a></h3>
 <!-- -->
@@ -259,7 +283,7 @@
 <ul>
 <li>원시코드, 목적코드, 스크리븥, 관련 문서 전체 형상 관리</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="구조적-방법론">구조적 방법론<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="구조적 방법론에 대한 직접 링크" title="구조적 방법론에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="구조적-방법론">구조적 방법론<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="구조적 �방법론에 대한 직접 링크" title="구조적 방법론에 대한 직접 링크">​</a></h2>
 <ul>
 <li>분할정복</li>
 <li>DFD: 배경도</li>
@@ -322,7 +346,7 @@
 <li>외부 인터페이스 파일: External Interface File, 소프트웨어 시스템 사이에 전다로디거나 공유된 파일 카운트</li>
 <li>외부 조회: External Query, 중간 출력을 생성하는 외부 조회를 카운트</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로젝트-모니터링">프로젝트 모니터링<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="프로젝트 모니터링에 대한 직접 링크" title="프로젝트 ��모니터링에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="프로젝트-모니터링">프로젝트 모니터링<a href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="프로젝트 모니터링에 대한 �직접 링크" title="프로젝트 모니터링에 대한 직접 링크">​</a></h2>
 <ul>
 <li>어닝 밸류 분석: Earning Value Analysis, 비용과 일정 통합 모니터링</li>
 <li>BAC: 프로젝트 예산</li>
@@ -488,7 +512,7 @@
 <ul>
 <li>인공지능 기술이 적용된 시스템의 신뢰성 제고를 위해, 인공지능 개발 및 운영 등의 전체 인공지능 생명주기에서 이해관계자들이 충족해야할 요구사항 제공</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-필요성">인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성<a href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" title="인공지능 시스템 신뢰성 제고를 위한 요구사항 필��요성에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-필요성">인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성<a href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" title="인공지능 시스템 신뢰성 제��고를 위한 요구사항 필요성에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>위험 관리</td><td>오류, 오작동, 보안 위협 등 잠재적 위험 요소 식별 및 대응 방안 마련</td><td>리스크 관리 및 대응</td></tr><tr><td>신뢰 확보</td><td>작동 원리와 결과 명확히 설명, 예측 가능성 및 투명성 확보</td><td>시스템 투명성 및 예측 가능성 확보</td></tr><tr><td>규제 준수</td><td>법적 규제와 표준 준수, 책임성 강화 및 사회적 수용성 증대</td><td>법적 준수 및 사회적 책임</td></tr></tbody></table>
 <p>위 표는 인공지능 시스템 신뢰성 제고를 위한 세 가지 주요 고려사항을 명사형 종결어미를 사용하여 요약한 것입니다.</p>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-구성도-구성요소">인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소<a href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소에 대한 직접 링크" title="인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소에 대한 직접 링크">​</a></h2>
@@ -615,7 +639,7 @@
 <ul>
 <li>5천만원 이상의 경우 2단계 경쟁으로 투명성, 경쟁성 강화</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="mas-2단계-경쟁-제도">MAS 2단계 경쟁 제도<a href="https://gracefullight.dev/pe/engineering/mas/#mas-2%EB%8B%A8%EA%B3%84-%EA%B2%BD%EC%9F%81-%EC%A0%9C%EB%8F%84" class="hash-link" aria-label="MAS 2단계 경쟁 제도에 대한 직접 링크" title="MAS 2단계 경쟁 제도에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_lhq2" id="mas-2단계-경쟁-제도">MAS 2단계 경쟁 제도<a href="https://gracefullight.dev/pe/engineering/mas/#mas-2%EB%8B%A8%EA%B3%84-%EA%B2%BD%EC%9F%81-%EC%A0%9C%EB%8F%84" class="hash-link" aria-label="MAS 2단�계 경쟁 제도에 대한 직접 링크" title="MAS 2단계 경쟁 제도에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>대상</td><td>1회 구매애정 금액 5천만원 이상</td><td>중소기업제품은 1억 이상</td></tr><tr><td>기본평가항목</td><td>SW특성 반영한 기본 평가항목</td><td>가격, 기능성, 사용성</td></tr><tr><td>선택평가항목</td><td>유지보수 상품 등록, 국산SW 우대 등 반영</td><td>유지관리성, 혁신 우수성</td></tr><tr><td>예외사항</td><td>본상품 구매에 따른 제외 범위</td><td>유지관리, 계속계약, 증설 등</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_lhq2" id="제3자-단가계약과-mas차이점">제3자 단가계약과 MAS차이점<a href="https://gracefullight.dev/pe/engineering/mas/#%EC%A0%9C3%EC%9E%90-%EB%8B%A8%EA%B0%80%EA%B3%84%EC%95%BD%EA%B3%BC-mas%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="제3자 단가계약과 MAS차이점에 대한 직접 링크" title="제3자 단가계약과 MAS차이점에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>제3자단가계약</th><th>다수공급자계약</th></tr></thead><tbody><tr><td>계약방법</td><td>수의</td><td>경쟁</td></tr><tr><td>계약수량</td><td>업체계약수량</td><td>업체계약수량</td></tr><tr><td>계약자</td><td>단일업체</td><td>다수업체</td></tr><tr><td>가격자료</td><td>동일품목 3건 이상 구매실적</td><td>규격별 최근 1년간 전자세금계산서<br>유사 거래 실적</td></tr><tr><td>2단계 경쟁</td><td>없음</td><td>1회 구매예정 일정금액 이상</td></tr><tr><td>납품업체 선정</td><td>수요기관 지정</td><td>일정금액 미만 수요기관 지정<br>일정금액 이상 2단계 경쟁 통한 평가</td></tr></tbody></table>
@@ -659,7 +683,7 @@
 <li>정보기술 아키텍처 설계 및 이행</li>
 <li>IT 투자성과 분석</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="소프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="소프트웨어 개발 및 관리에 대한 직접 링크" title="소프트웨어 개발 및 관리에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_lhq2" id="소��프트웨어-개발-및-관리">소프트웨어 개발 및 관리<a href="https://gracefullight.dev/2024/05/11/professional-engineer-guidelines/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="소프트웨어 개발 및 관리에 대한 직접 링크" title="소프트웨어 개발 및 관리에 대한 직접 링크">​</a></h2>
 <ul>
 <li>소프트웨어 개발 방법론 활용</li>
 <li>소프트웨어 아키텍처의 설계, 문서화 및 변경 관리</li>
@@ -697,87 +721,5 @@
         </author>
         <category label="me" term="me"/>
         <category label="정보처리" term="정보처리"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OWASP TOP 10 for LLM Applications]]></title>
-        <id>https://gracefullight.dev/pe/security/owasp-llm/</id>
-        <link href="https://gracefullight.dev/pe/security/owasp-llm/"/>
-        <updated>2024-05-10T13:57:24.809Z</updated>
-        <summary type="html"><![CDATA[LLM 어플리케이션을 위한 OWASP 취약점 리스트]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_lhq2" id="owasp-llm-개요">OWASP LLM 개요<a href="https://gracefullight.dev/pe/security/owasp-llm/#owasp-llm-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="OWASP LLM 개요에 대한 직접 링크" title="OWASP LLM 개요에 대한 직접 링크">​</a></h2>
-<ul>
-<li>기업에서 대규모 언어모델을 배포하고 관리할 때 발생할 수 있는 보안 위험에 대해 대비하기 위한 상위 10가지 취약점</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="owasp-llm-top-10-취약점">OWASP LLM Top 10 취약점<a href="https://gracefullight.dev/pe/security/owasp-llm/#owasp-llm-top-10-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="OWASP LLM Top 10 취약점에 대한 직접 링크" title="OWASP LLM Top 10 취약점에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="1-프롬프트-인젝션">1. 프롬프트 인젝션<a href="https://gracefullight.dev/pe/security/owasp-llm/#1-%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%9D%B8%EC%A0%9D%EC%85%98" class="hash-link" aria-label="1. 프롬프트 인젝션에 대한 직접 링크" title="1. 프롬프트 인젝션에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Prompt Injection</li>
-<li>공격자가 조작된 입력을 통해 LLM을 조종하여 데이터 및 민감 정보를 추출</li>
-<li>권한 제어, 인간 승인, 사용자 프롬프트에서 신뢰할 수 없는 내용 분리, LLM을 신뢰할 수 없는 것으로 처리</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="2-안전하지-않은-출력-처리">2. 안전하지 않은 출력 처리<a href="https://gracefullight.dev/pe/security/owasp-llm/#2-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%B6%9C%EB%A0%A5-%EC%B2%98%EB%A6%AC" class="hash-link" aria-label="2. 안전하지 않은 출력 처리에 대한 직접 링크" title="2. 안전하지 않은 출력 처리에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Insecure Output Handling</li>
-<li>LLM 출력을 검증 없이 보낼 경우 XSS, CSRF, SSRF, 권한 상승, 원격 코드 실행 가능</li>
-<li>출력을 사용자 입력처럼 취급하여 검증, 출력 인코딩으로 코드실행 차단</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="3-훈련-데이터-중독">3. 훈련 데이터 중독<a href="https://gracefullight.dev/pe/security/owasp-llm/#3-%ED%9B%88%EB%A0%A8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EB%8F%85" class="hash-link" aria-label="3. 훈련 데이터 중독에 대한 직접 링크" title="3. 훈련 데이터 중독에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Training Data Poisoning</li>
-<li>훈련 데이터나 과정에 악의적인 데이터를 주입하여 보안 취약점, 편견, 백도어 삽입</li>
-<li>공급망 검증, 데이터의 정당성 확인, 사용 사례별 훈련 모델 구축</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="4-모델-서비스-거부">4. 모델 서비스 거부<a href="https://gracefullight.dev/pe/security/owasp-llm/#4-%EB%AA%A8%EB%8D%B8-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B1%B0%EB%B6%80" class="hash-link" aria-label="4. 모델 서비스 거부에 대한 직접 링크" title="4. 모델 서비스 거부에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Model Denial of Service</li>
-<li>공격자가 LLM 서비스에 DoS 공격하여, 서비스 품질 저하나 높은 비용 초래</li>
-<li>입력 유효성 검사, 리소스 사용 제한, API 호출 제한</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="5-공급망-취약점">5. 공급망 취약점<a href="https://gracefullight.dev/pe/security/owasp-llm/#5-%EA%B3%B5%EA%B8%89%EB%A7%9D-%EC%B7%A8%EC%95%BD%EC%A0%90" class="hash-link" aria-label="5. 공급망 취약점에 대한 직접 링크" title="5. 공급망 취약점에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Supply Chain Vulnerabilities</li>
-<li>취약한 데이터, 모델, 서비스, 시스템으로 인해 LLM이 취약점에 노출</li>
-<li>공급업체 평가, 플러그인 테스트, 최신 구성 요소 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="6-민감-정보-노출">6. 민감 정보 노출<a href="https://gracefullight.dev/pe/security/owasp-llm/#6-%EB%AF%BC%EA%B0%90-%EC%A0%95%EB%B3%B4-%EB%85%B8%EC%B6%9C" class="hash-link" aria-label="6. 민감 정보 노출에 대한 직접 링크" title="6. 민감 정보 노출에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Sensitive Information Disclosure</li>
-<li>LLM이 민감 정보를 공개하여 저작권 침해, 사생활 침해가 발생</li>
-<li>훈련 데이터 정제, 입력 유효성 검사, 파인 튜닝 시 민감 데이터 주의</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="7-안전하지-않은-플러그인-설계">7. 안전하지 않은 플러그인 설계<a href="https://gracefullight.dev/pe/security/owasp-llm/#7-%EC%95%88%EC%A0%84%ED%95%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EA%B3%84" class="hash-link" aria-label="7. 안전하지 않은 플러그인 설계에 대한 직접 링크" title="7. 안전하지 않은 플러그인 설계에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Insecure Plugin Design</li>
-<li>부적절한 입력 검증과 접근 제어 부족으로 인해 데이터 유출, 원격 코드 실행 등이 발생</li>
-<li>매개 변수 제어, OWASP 가이드라인 적용, 철저한 테스트 및 검증</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="8-과도한-권한">8. 과도한 권한<a href="https://gracefullight.dev/pe/security/owasp-llm/#8-%EA%B3%BC%EB%8F%84%ED%95%9C-%EA%B6%8C%ED%95%9C" class="hash-link" aria-label="8. 과도한 권한에 대한 직접 링크" title="8. 과도한 권한에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Excessive Agency</li>
-<li>LLM 기반 시스템이 너무 많은 기능, 권한 또는 자율성을 가지고 있어 오용 가능</li>
-<li>기능 제한, 권한 제어, 사용자 승인</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="9-과도한-의존">9. 과도한 의존<a href="https://gracefullight.dev/pe/security/owasp-llm/#9-%EA%B3%BC%EB%8F%84%ED%95%9C-%EC%9D%98%EC%A1%B4" class="hash-link" aria-label="9. 과도한 의존에 대한 직접 링크" title="9. 과도한 의존에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Overreliance</li>
-<li>LLM에 대한 과도한 의존은 잘못된 정보, 법적 문제, 보안 취약점을 유발</li>
-<li>LLM 출력의 지속적 검토 및 검증, 신뢰할 수 있는 소스와의 비교, 파인튜닝 통한 품질 향상</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_lhq2" id="10-모델-탈취">10. 모델 탈취<a href="https://gracefullight.dev/pe/security/owasp-llm/#10-%EB%AA%A8%EB%8D%B8-%ED%83%88%EC%B7%A8" class="hash-link" aria-label="10. 모델 탈취에 대한 직접 링크" title="10. 모델 탈취에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Model Theft</li>
-<li>무단 접근을 통해 LLM 모델이 유출되어 경제적 손실, 명성 손상, 민감 정보 접근 위험 발생</li>
-<li>접근 제어 및 인증 강화, 네트워크 제한, 접근 로그 모니터링</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_lhq2" id="참조">참조<a href="https://gracefullight.dev/pe/security/owasp-llm/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener noreferrer">OWASP: OWASP Top 10 for Large Language Model Applications</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/security" term="pe/security"/>
     </entry>
 </feed>
