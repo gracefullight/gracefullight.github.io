@@ -18,8 +18,11 @@ tags:
 
 ### TCAM의 구성도
 
-```text
-SearchLine -> TCAM 메모리 셀 배열 -> Match Line -> 우선순위 인코더
+```mermaid
+graph LR
+  SearchLine --> TCAM[TCAM 메모리 셀]
+  TCAM --> MatchLine
+  MatchLine --> Encoder[우선순위 인코더]
 ```
 
 ### TCAM의 구성요소
