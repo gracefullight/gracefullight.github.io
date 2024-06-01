@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-01T06:33:57.460Z</updated>
+    <updated>2024-06-01T08:07:56.185Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[카나리 테스트]]></title>
+        <id>https://gracefullight.dev/en/pe/engineering/canary-test/</id>
+        <link href="https://gracefullight.dev/en/pe/engineering/canary-test/"/>
+        <updated>2024-06-01T08:07:56.185Z</updated>
+        <summary type="html"><![CDATA[canary test]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-개념">카나리 테스트 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>새로운 버전의 소프트웨어나 시스템을 실제 사용자 환경에 배포하기 전에 제한된 사용자 그룹에게 먼저 공개하여 안정성과 성능을 검증하는 방법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도-구성요소-적용방안">카나리 테스트 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도">카나리 테스트 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성요소">카나리 테스트 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드 밸런서</td><td>사용자 트래픽을 Canary 배포와 기존 배포에 분산</td><td>트래픽 비율 조절</td></tr><tr><td>Canary 배포</td><td>새로운 버전의 SW 또는 시스템</td><td>제한된 사용자에게만 공개</td></tr><tr><td>기존 배포</td><td>현재 운영 중인 안정적인 버전</td><td>대부분의 사용자에게 서비스 제공</td></tr><tr><td>모니터링 시스템</td><td>각 배포 환경의 성능, 안정성, 오류 등을 실시간 추적 및 비교</td><td>문제 발생 시 즉각적인 대응</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-적용방안">카나리 테스트 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-고려사항">카나리 테스트 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/engineering" term="pe/engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NaaS, Network as a Service]]></title>
         <id>https://gracefullight.dev/en/pe/network/naas/</id>
@@ -120,7 +144,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-활용-방안">앰비언트 컴퓨팅 활용 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-활용-방안">앰비언트 컴퓨팅 활용 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9-%EF%BF%BD%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>도시 관리 효율성 향상, 시민 편의 증진</td><td>스마트 시티, 스마트 교통, 스마트 환경 등</td></tr><tr><td>금융</td><td>금융 서비스 접근성 향상, 보안 강화</td><td>개인 맞춤형 금융 서비스, 지능형 보안 시스템 등</td></tr><tr><td>민간</td><td>생활 편의성 증대, 생산성 향상, 건강 관리</td><td>스마트 홈, 스마트 팩토리, 스마트 헬스케어 등</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
@@ -262,38 +286,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ISO 12207]]></title>
-        <id>https://gracefullight.dev/en/pe/management/iso-12207/</id>
-        <link href="https://gracefullight.dev/en/pe/management/iso-12207/"/>
-        <updated>2024-05-27T10:48:09.754Z</updated>
-        <summary type="html"><![CDATA[ISO 12207]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-개요">ISO 12207 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B0%9C%EC%9A%94">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-개념">ISO 12207 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>소프트웨어 생명주기 프로세스를 위한 국제표준으로, SW개발 및 유지보수를 관리하는 구조화된 프레임워크 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-필요성">ISO 12207 필요성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
-<ul>
-<li>조직이 SW를 효율적으로 개발하고 품질 표준을 충족하도록 하여 리스크를 줄이고 프로세스를 개선하는데에 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성도-구성요소-적용방안">ISO 12207 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성도">ISO 12207 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성요소">ISO 12207 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기본 생명주기</td><td>SW 개발의 주요 단계를 나타냄</td><td>획득, 공급, 개발, 운영, 유지보수</td></tr><tr><td>지원 생명주기</td><td>기본 생명주기를 지원하는 활동</td><td>문서화, 구성 관리, 품질 관리, 문제 해결</td></tr><tr><td>조직 생명주기</td><td>조직의 성숙도 및 역량 강화를 위한 활동</td><td>관리, 기반 구조, 개선, 교육 훈련</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-적용방안">ISO 12207 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>리더</td><td>전략 수립 및 지원</td><td>도입 필요성 공유, 예산 확보 및 지원, 결과 검토, 지속적 지원</td></tr><tr><td>매니저</td><td>프로세스 구축 및 실행</td><td>표준 프로세스 조정, 상세 절차 수립, 결과 분석 및 개선</td></tr><tr><td>오퍼레이터</td><td>실무 적용 및 개선</td><td>표준 프로세스 준수 및 실무 적용, 교육 참여, 개선 제안</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-고려사항">ISO 12207 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/iso-12207/#iso-12207-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>조직 내 새로운 프로세스 도입에 대한 구성원들의 저항을 최소화하고, 적극적인 참여를 유도하기 위한 변화 관리 전략 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/management" term="pe/management"/>
     </entry>
 </feed>

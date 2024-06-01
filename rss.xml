@@ -4,10 +4,30 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 01 Jun 2024 06:33:57 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Jun 2024 08:07:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[카나리 테스트]]></title>
+            <link>https://gracefullight.dev/pe/engineering/canary-test/</link>
+            <guid>https://gracefullight.dev/pe/engineering/canary-test/</guid>
+            <pubDate>Sat, 01 Jun 2024 08:07:56 GMT</pubDate>
+            <description><![CDATA[canary test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-개념">카나리 테스트 개념<a class="hash-link" aria-label="카나리 테스트 개념에 대한 직접 링크" title="카나리 테스트 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>새로운 버전의 소프트웨어나 시스템을 실제 사용자 환경에 배포하기 전에 제한된 사용자 그룹에게 먼저 공개하여 안정성과 성능을 검증하는 방법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도-구성요소-적용방안">카나리 테스트 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="카나리 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" title="카나리 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도">카나리 테스트 구성도<a class="hash-link" aria-label="카나리 테스트 구성도에 대한 직접 링크" title="카나리 테스트 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성요소">카나리 테스트 구성요소<a class="hash-link" aria-label="카나리 테스트 구성요소에 대한 직접 링크" title="카나리 테스트 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드 밸런서</td><td>사용자 트래픽을 Canary 배포와 기존 배포에 분산</td><td>트래픽 비율 조절</td></tr><tr><td>Canary 배포</td><td>새로운 버전의 SW 또는 시스템</td><td>제한된 사용자에게만 공개</td></tr><tr><td>기존 배포</td><td>현재 운영 중인 안정적인 버전</td><td>대부분의 사용자에게 서비스 제공</td></tr><tr><td>모니터링 시스템</td><td>각 배포 환경의 성능, 안정성, 오류 등을 실시간 추적 및 비교</td><td>문제 발생 시 즉각적인 대응</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-적용방안">카나리 테스트 적용방안<a class="hash-link" aria-label="카나리 테스트 적용방안에 대한 직접 링크" title="카나리 테스트 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-고려사항">카나리 테스트 고려사항<a class="hash-link" aria-label="카나리 테스트 고려사항에 대한 직접 링크" title="카나리 테스트 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[NaaS, Network as a Service]]></title>
             <link>https://gracefullight.dev/pe/network/naas/</link>
@@ -102,10 +122,10 @@
 <li>사용자 경험 변화: 더 직관적이고 더 편리한 컴퓨팅 환경 요구</li>
 <li>디지털트랜스포메이션: 사회 전반의 디지털 전환 가속</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="앰비언�트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="앰비언트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도">앰비언트 컴퓨팅 개념도<a class="hash-link" aria-label="앰비언트 컴퓨팅 개념도에 대한 직접 링크" title="앰비언트 컴퓨팅 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <div class="language-text codeBlockContainer_Pkna theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_SU8s"><pre tabindex="0" class="prism-code language-text codeBlock_PoR0 thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_D9WO"><span class="token-line" style="color:#9CDCFE"><span class="token plain">사용자 --&gt; 센서 --네트워크--&gt; AI --&gt; 클라우드</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --&gt; UI</span><br></span></code></pre><div class="buttonGroup_HqoB"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_RgaD" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_DJKe"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_jhpS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="앰비언트 컴퓨팅 기술요소에 대한 직접 링크" title="앰비언트 컴��퓨팅 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="앰비언트 컴퓨팅 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="앰비언트 컴퓨팅과 IoT 비교에 대한 직접 링크" title="앰비언트 컴퓨팅과 IoT 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
@@ -145,7 +165,7 @@
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-개념">대칭 암호화와 비대칭 암호화의 개념<a class="hash-link" aria-label="대칭 암호화와 비대칭 암호화의 개념에 대한 직접 링크" title="대칭 암호화와 비대칭 암호화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-구성도-구성요소">대칭 암호화와 비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="대칭 암호화와 비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="대칭 암호화와 비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화의-구성도-구성요소">대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="비대칭-암호화의-구성도-구성요소">비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EF%BF%BD%EF%BF%BD%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="비대칭-암호화의-구성도-구성요소">비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <ul>
 <li>비대칭 암호화는 대칭키를 암호화하기 위해 전자봉투로서 사용</li>
 </ul>
@@ -193,7 +213,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성도-구성요소-활용사례">TCAM의 구성도, 구성요소 활용사례<a class="hash-link" aria-label="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크" title="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성도">TCAM의 구성도<a class="hash-link" aria-label="TCAM의 구성도에 대한 직접 링크" title="TCAM의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<div class="language-text codeBlockContainer_Pkna theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_SU8s"><pre tabindex="0" class="prism-code language-text codeBlock_PoR0 thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_D9WO"><span class="token-line" style="color:#9CDCFE"><span class="token plain">SearchLine -&gt; TCAM 메모리 셀 배열 -&gt; Match Line -&gt; 우선순위 인코더</span><br></span></code></pre><div class="buttonGroup_HqoB"><button type="button" aria-label="클립보드에 코��드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_RgaD" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_DJKe"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_jhpS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-text codeBlockContainer_Pkna theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_SU8s"><pre tabindex="0" class="prism-code language-text codeBlock_PoR0 thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_D9WO"><span class="token-line" style="color:#9CDCFE"><span class="token plain">SearchLine -&gt; TCAM 메모리 셀 배열 -&gt; Match Line -&gt; 우선순위 인코더</span><br></span></code></pre><div class="buttonGroup_HqoB"><button type="button" aria-label="클립��보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_RgaD" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_DJKe"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_jhpS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성요소">TCAM의 구성요소<a class="hash-link" aria-label="TCAM의 구성요소에 대한 직접 링크" title="TCAM의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Search Line</td><td>검색어를 입력하는 라인</td><td>각 비트는 0, 1, X 값</td></tr><tr><td>메모리 셀</td><td>3진 데이터(0, 1, X) 상태 저장</td><td>SRAM 기반</td></tr><tr><td>Match Line</td><td>검색 결과를 출력하는 라인</td><td>각 메모리 워드마다 하나씩 존재</td></tr><tr><td>Priority Encoder</td><td>여러 Match Line 중 가장 높은 우선순위의 일치 결과를 선택</td><td>사용자 설정 가능</td></tr></tbody></table>
 <ul>
@@ -227,35 +247,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회피 Avoidance</td><td>발생 가능성을 원천적으로 제거</td><td>계획변경, 외주업체변경, 범위감소 등</td></tr><tr><td>전가 Transference</td><td>조치에 대한 책임을 제 3자에게 넘김</td><td>보험료, 개런티</td></tr><tr><td>감소 Mitigation</td><td>발생가능성이나 영향력을 줄이는 방안</td><td>프로토타이핑 개발, 덜 복잡한 프로세스 채택</td></tr><tr><td>수용 Acceptance</td><td>아무런 대책없이 수용, 최소한의 계획으로 수용</td><td>능동적, 수동적 수용</td></tr><tr><td>이관 Escalation</td><td>프로젝트 범위를 벗어나거나 관리자 권한 초과시 적용</td><td>이관 후 모니터링 하지 않음</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[ISO 12207]]></title>
-            <link>https://gracefullight.dev/pe/management/iso-12207/</link>
-            <guid>https://gracefullight.dev/pe/management/iso-12207/</guid>
-            <pubDate>Mon, 27 May 2024 10:48:09 GMT</pubDate>
-            <description><![CDATA[ISO 12207]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-개요">ISO 12207 개요<a class="hash-link" aria-label="ISO 12207 개요에 대한 직접 링크" title="ISO 12207 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B0%9C%EC%9A%94">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-개념">ISO 12207 개념<a class="hash-link" aria-label="ISO 12207 개념에 대한 직접 링크" title="ISO 12207 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>소프트웨어 생명주기 프로세스를 위한 국제표준으로, SW개발 및 유지보수를 관리하는 구조화된 프레임워크 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-필요성">ISO 12207 필요성<a class="hash-link" aria-label="ISO 12207 필요성에 대한 직접 링크" title="ISO 12207 필요성에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
-<ul>
-<li>조직이 SW를 효율적으로 개발하고 품질 표준을 충족하도록 하여 리스크를 줄이고 프로세스를 개선하는데에 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성도-구성요소-적용방안">ISO 12207 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="ISO 12207 구성도, 구성요소, 적용방안에 대한 직접 링크" title="ISO 12207 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성도">ISO 12207 구성도<a class="hash-link" aria-label="ISO 12207 구성도에 대한 직접 링크" title="ISO 12207 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-구성요소">ISO 12207 구성요소<a class="hash-link" aria-label="ISO 12207 구성요소에 대한 직접 링크" title="ISO 12207 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기본 생명주기</td><td>SW 개발의 주요 단계를 나타냄</td><td>획득, 공급, 개발, 운영, 유지보수</td></tr><tr><td>지원 생명주기</td><td>기본 생명주기를 지원하는 활동</td><td>문서화, 구성 관리, 품질 관리, 문제 해결</td></tr><tr><td>조직 생명주기</td><td>조직의 성숙도 및 역량 강화를 위한 활동</td><td>관리, 기반 구조, 개선, 교육 훈련</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-적용방안">ISO 12207 적용방안<a class="hash-link" aria-label="ISO 12207 적용방안에 대한 직접 링크" title="ISO 12207 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>리더</td><td>전략 수립 및 지원</td><td>도입 필요성 공유, 예산 확보 및 지원, 결과 검토, 지속적 지원</td></tr><tr><td>매니저</td><td>프로세스 구축 및 실행</td><td>표준 프로세스 조정, 상세 절차 수립, 결과 분석 및 개선</td></tr><tr><td>오퍼레이터</td><td>실무 적용 및 개선</td><td>표준 프로세스 준수 및 실무 적용, 교육 참여, 개선 제안</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="iso-12207-고려사항">ISO 12207 고려사항<a class="hash-link" aria-label="ISO 12207 고려사항에 대한 직접 링크" title="ISO 12207 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/management/iso-12207/#iso-12207-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>조직 내 새로운 프로세스 도입에 대한 구성원들의 저항을 최소화하고, 적극적인 참여를 유도하기 위한 변화 관리 전략 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/management</category>
         </item>
     </channel>
 </rss>
