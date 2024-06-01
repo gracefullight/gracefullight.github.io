@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.790b4b5e.css">
-<script src="/en/assets/js/runtime~main.90b2c3f7.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.bcafac28.js" defer="defer"></script>
 <script src="/en/assets/js/main.557e6ef6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -73,18 +73,19 @@ SWOT 분석</p>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#기출">​</a></h2>
 <ul>
 <li>131/3/3</li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-131/">pe/131</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/pe/engineering/refactoring/">리팩토링</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-03-03T02:27:00.000Z">March 3, 2024</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="i-개요">I. 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#i-개요">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="개념">개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#개념">​</a></h3>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-131/">pe/131</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/pe/engineering/refactoring/">리팩토링</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-03-03T02:27:00.000Z">March 3, 2024</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-개요">리팩토링 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링-개요">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-개념">리팩토링 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링-개념">​</a></h3>
+<ul>
+<li>외부적 기능은 수정하지 않고, 내부를 단순화하여 유지보수성을 향상시키는 기법</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-필요성">리팩토링 필요성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링-필요성">​</a></h3>
+<p>애자일 개발 방법론의 도입으로 TDD를 기반으로 코드스멜을 제거하기 위한 리팩토링의 중요성이 강조됨.</p>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성도-구성요소-적용방안">리팩토링의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링의-구성도-구성요소-적용방안">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성도">리팩토링의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링의-구성도">​</a></h3>
 <!-- -->
-<p>외부적 기능은 수정하지 않고, 내부를 단순화하여 유지보수성을 향상시키는 기법</p>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="배경">배경<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#배경">​</a></h3>
-<p>애자일 개발 방법론의 도입으로 TDD를 기반으로 코드 스멜을 제거하기 위한 리팩토링의 중요성이 강조됨.</p>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="ii-리팩토링의-핵심요소-적용방안">II. 리팩토링의 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#ii-리팩토링의-핵심요소-적용방안">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="가-리팩토링의-구조-구성도-개념도">가. 리팩토링의 구조 (구성도, 개념도)<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#가-리팩토링의-구조-구성도-개념도">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="나-리팩토링의-핵심요소">나. 리팩토링의 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#나-리팩토링의-핵심요소">​</a></h3>
-<p>가.에 그린 다이어그램을 3단 표로 작성</p>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성요소">리팩토링의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링의-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="다-리팩토링의-적용방안">다. 리팩토링의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#다-리팩토링의-적용방안">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-적용방안">리팩토링의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#리팩토링의-적용방안">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#기출">​</a></h2>
 <ul>
@@ -101,7 +102,7 @@ SWOT 분석</p>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>MVC</td><td>-</td><td>-</td></tr><tr><td>서버-클라이언트</td><td>-</td><td>-</td></tr><tr><td>브로커</td><td>-</td><td>-</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="다-디자인패턴-유형">다. 디자인패턴 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#다-디자인패턴-유형">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>생성패턴</td><td>-</td><td>-</td></tr><tr><td>구조패턴</td><td>-</td><td>-</td></tr><tr><td>행위패턴</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="iii-아키텍처-스타일과-디자인-패턴의-적용-전략-접근-전략">III. 아키텍처 스타일과 디자인 패턴의 적용 전략, 접근 전략<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#iii-아키텍처-스타일과-디자인-패턴의-적용-전략-접근-전략">  ​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="iii-아키텍처-스타일과-디자인-패턴의-적용-전략-접근-전략">III. 아키텍처 스타일과 디자인 패턴의 적용 전략, 접근 전략<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#iii-아키텍처-스타일과-디자인-패턴의-적용-전략-접근-전략">​</a></h2>
 <p>가. ~의 적용 전략
 SWOT 분석</p>
 <p>나. ~의 적용 방안</p>
@@ -150,7 +151,7 @@ SWOT 분석</p>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="나-핵심요소">나. 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#나-핵심요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>폭포수</th><th>애자일</th></tr></thead><tbody><tr><td>요구사항기준</td><td>요구사항 정의시 모든 요구사항 정의 필요</td><td>한 스프린트 주기 (2w-1m)에 가능한 만큼 정의</td></tr><tr><td>테스트</td><td>기능 구현 후 단위/통합/시스템 테스트</td><td>TDD 기반의 테스트 주도 개발</td></tr><tr><td>프로세스</td><td>프로세스 준수 강조</td><td>리뷰와 테스트를 토대로 유연하게 적용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="다-폭포수-애자일-방법론의-적용방안">다. 폭포수, 애자일 방법론의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#다-폭포수-애자일-방법론의-적용방안">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비 고</th></tr></thead><tbody><tr><td>공공</td><td>대국민 서비스는 전통적인 기능을 제공하는 경우가 많으므로 신 RFP 기반의 폭포수 개발 방법론 도입</td><td>레거시어플리케이션</td></tr><tr><td>금융</td><td>전통적인 여신/이체 기능과 신규 서비스 기능을 나눠 두 가지 개발 방법론 선택</td><td>복합적</td></tr><tr><td>민간</td><td>비지니스 니즈에 대응하기 위해 애자일 개발 방법론 도입</td><td>인터넷 비지니스, 이커머스</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>대국민 서비스는 전통적인 기능을 제공하는 경우가 많으므로 신 RFP 기반의 폭포수 개발 방법론 도입</td><td>레거시어플리케이션</td></tr><tr><td>금융</td><td>전통적인 여신/이체 기능과 신규 서비스 기능을 나눠 두 가지 개발 방법론 선택</td><td>복합적</td></tr><tr><td>민간</td><td>비지니스 니즈에 대응하기 위해 애자일 개발 방법론 도입</td><td>인터넷 비지니스, 이커머스</td></tr></tbody></table>
 <p>인터넷 비지니스에 가까우면 애자일 개발방법론, 전통적인 기능을 제공하면 폭포수 개발방법론 적용.</p>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/5/#기출">​</a></h2>
 <ul>

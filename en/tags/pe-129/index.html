@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.790b4b5e.css">
-<script src="/en/assets/js/runtime~main.90b2c3f7.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.bcafac28.js" defer="defer"></script>
 <script src="/en/assets/js/main.557e6ef6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -84,18 +84,19 @@
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#기출">​</a></h2>
 <ul>
 <li>129/4/4</li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-129/">pe/129</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/pe/engineering/refactoring/">리팩토링</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-03-03T02:27:00.000Z">March 3, 2024</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="i-개요">I. 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#i-개요">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="개념">개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#개념">​</a></h3>
-<!-- -->
-<p>외부적 기능은 수정하지 않고, 내부를 단순화하여 유지보수성을 향상시키는 기법</p>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="배경">배경<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#배경">​</a></h3>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-129/">pe/129</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/pe/engineering/refactoring/">리팩토링</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-03-03T02:27:00.000Z">March 3, 2024</time> · <!-- -->One min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-개요">리팩토링 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링-개요">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-개념">리팩토링 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링-개념">​</a></h3>
+<ul>
+<li>외부적 기능은 수정하지 않고, 내부를 단순화하여 유지보수성을 향상시키는 기법</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링-필요성">리팩토링 필요성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링-필요성">​</a></h3>
 <p>애자일 개발 방법론의 도입으로 TDD를 기반으로 코드스멜을 제거하기 위한 리팩토링의 중요성이 강조됨.</p>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="ii-리팩토링의-핵심요소-적용방안">II. 리팩토링의 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#ii-리팩토링의-핵심요소-적용방안">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="가-리팩토링의-구조-구성도-개념도">가. 리팩토링의 구조 (구성도, 개념도)<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#가-리팩토링의-구조-구성도-개념도">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="나-리팩토링의-핵심요소">나. 리팩토링의 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#나-리팩토링의-핵심요소">​</a></h3>
-<p>가.에 그린 다이어그램을 3단 표로 작성</p>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성도-구성요소-적용방안">리팩토링의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링의-구성도-구성요소-적용방안">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성도">리팩토링의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링의-구성도">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-구성요소">리팩토링의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링의-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>-</td><td>-</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="다-리팩토링의-적용방안">다. 리팩토링의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#다-리팩토링의-적용방안">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="리팩토링의-적용방안">리팩토링의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#리팩토링의-적용방안">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>비지니스 관점</td><td>-</td><td>-</td></tr><tr><td>기술 관점</td><td>-</td><td>-</td></tr><tr><td>보안 관점</td><td>-</td><td>-</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-129/#기출">​</a></h2>
 <ul>
