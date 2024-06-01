@@ -4,10 +4,24 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 May 2024 15:12:30 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Jun 2024 04:19:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[큐싱]]></title>
+            <link>https://gracefullight.dev/pe/security/qshing/</link>
+            <guid>https://gracefullight.dev/pe/security/qshing/</guid>
+            <pubDate>Sat, 01 Jun 2024 04:19:35 GMT</pubDate>
+            <description><![CDATA[큐싱]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념">큐싱의 개념<a class="hash-link" aria-label="큐싱의 개념에 대한 직접 링크" title="큐싱의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념도-공격흐름">큐싱의 개념도, 공격흐름<a class="hash-link" aria-label="큐싱의 개념도, 공격흐름에 대한 직접 링크" title="큐싱의 개념도, 공격흐름에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%ED%9D%90%EB%A6%84">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념도">큐싱의 개념도<a class="hash-link" aria-label="큐싱의 개념도에 대한 직접 링크" title="큐싱의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-공격-흐름">큐싱의 공격 흐름<a class="hash-link" aria-label="큐싱의 공격 흐름에 대한 직접 링크" title="큐싱의 공격 흐름에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B3%B5%EA%B2%A9-%ED%9D%90%EB%A6%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱-대응방안">큐싱 대응방안<a class="hash-link" aria-label="큐싱 대응방안에 대한 직접 링크" title="큐싱 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[앰비언트 컴퓨팅]]></title>
             <link>https://gracefullight.dev/pe/convergence/ambient-computing/</link>
@@ -29,7 +43,7 @@
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="앰비언트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 개념도, 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도">앰비언트 컴퓨팅 개념도<a class="hash-link" aria-label="앰비언트 컴퓨팅 개념도에 대한 직접 링크" title="앰비언트 컴퓨팅 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <div class="language-text codeBlockContainer_Pkna theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_SU8s"><pre tabindex="0" class="prism-code language-text codeBlock_PoR0 thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_D9WO"><span class="token-line" style="color:#9CDCFE"><span class="token plain">사용자 --&gt; 센서 --네트워크--&gt; AI --&gt; 클라우드</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --&gt; UI</span><br></span></code></pre><div class="buttonGroup_HqoB"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_RgaD" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_DJKe"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_jhpS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="앰�비언트 컴퓨팅 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="앰비언트 컴�퓨팅 기술요소에 대한 직접 링크" title="앰비언트 컴퓨팅 기술요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="앰비언트 컴퓨팅과 IoT 비교에 대한 직접 링크" title="앰비언트 컴퓨팅과 IoT 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
@@ -69,7 +83,7 @@
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-개념">대칭 암호화와 비대칭 암호화의 개념<a class="hash-link" aria-label="대칭 암호화와 비대칭 암호화의 개념에 대한 직접 링크" title="대칭 암호화와 비대칭 암호화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-구성도-구성요소">대칭 암호화와 비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="대칭 암호화와 비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="대칭 암호화와 비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화의-구성도-구성요소">대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="대칭 암호화의 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="비대칭-암호화의-구성도-구성요소">비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="비대칭 암호화의 구성도, 구성요소�에 대한 직접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="비대칭-암호화의-구성도-구성요소">비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="비대칭 암호화의 구성도, 구성요소에 대한 직접 링크" title="비대칭 암호화의 구성도, 구성요소에 대한 직�접 링크" href="https://gracefullight.dev/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <ul>
 <li>비대칭 암호화는 대칭키를 암호화하기 위해 전자봉투로서 사용</li>
 </ul>
@@ -217,7 +231,7 @@
 <li>테스트</li>
 <li>유지보수</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="품질-보�증">품질 보증<a class="hash-link" aria-label="품질 보증에 대한 직접 링크" title="품질 보증에 대한 직접 링크" href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88-%EB%B3%B4%EC%A6%9D">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="품질-보증">품질 보증<a class="hash-link" aria-label="품질 보증에 대한 직접 링크" title="품질 보증에 대한 직접 링크" href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88-%EB%B3%B4%EC%A6%9D">​</a></h2>
 <blockquote>
 <p>ISO 25010, 기신사효유이호보</p>
 </blockquote>
@@ -306,7 +320,7 @@
 <li>제어, 분석</li>
 </ul>
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="품질보��증-프로세스">품질보증 프로세스<a class="hash-link" aria-label="품질보증 프로세스에 대한 직접 링크" title="품질보증 프로세스에 대한 직접 링크" href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88%EB%B3%B4%EC%A6%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="품질보증-프로세��스">품질보증 프로세스<a class="hash-link" aria-label="품질보증 프로세스에 대한 직접 링크" title="품질보증 프로세스에 대한 직접 링크" href="https://gracefullight.dev/2024/05/22/all-about-software-engineering/#%ED%92%88%EC%A7%88%EB%B3%B4%EC%A6%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h2>
 <ul>
 <li>인스펙션 프로세스: 전문 인력, 고비용, 해결방법보다 이슈집중</li>
 <li>프로세스 관리 프로세스: CMMI</li>
@@ -540,7 +554,7 @@
 <ul>
 <li>인공지능 기술이 적용된 시스템의 신뢰성 제고를 위해, 인공지능 개발 및 운영 등의 전체 인공지능 생명주기에서 이해관계자들이 충족해야할 요구사항 제공</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-필요성">인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성<a class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" title="�인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-필요성">인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성<a class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" title="인공지능 ��시스템 신뢰성 제고를 위한 요구사항 필요성에 대한 직접 링크" href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>위험 관리</td><td>오류, 오작동, 보안 위협 등 잠재적 위험 요소 식별 및 대응 방안 마련</td><td>리스크 관리 및 대응</td></tr><tr><td>신뢰 확보</td><td>작동 원리와 결과 명확히 설명, 예측 가능성 및 투명성 확보</td><td>시스템 투명성 및 예측 가능성 확보</td></tr><tr><td>규제 준수</td><td>법적 규제와 표준 준수, 책임성 강화 및 사회적 수용성 증대</td><td>법적 준수 및 사회적 책임</td></tr></tbody></table>
 <p>위 표는 인공지능 시스템 신뢰성 제고를 위한 세 가지 주요 고려사항을 명사형 종결어미를 사용하여 요약한 것입니다.</p>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="인공지능-시스템-신뢰성-제고를-위한-요구사항-구성도-구성요소">인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소<a class="hash-link" aria-label="인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소에 대한 직접 링크" title="인공지능 시스템 신뢰성 제고를 위한 요구사항 구성도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/algorithm/requirements-the-trustworthiness-for-ai/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%9C%EA%B3%A0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
@@ -580,56 +594,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[접근제어]]></title>
-            <link>https://gracefullight.dev/pe/security/access-control/</link>
-            <guid>https://gracefullight.dev/pe/security/access-control/</guid>
-            <pubDate>Thu, 16 May 2024 21:56:49 GMT</pubDate>
-            <description><![CDATA[접근제어]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="접근제어-개념">접근제어 개념<a class="hash-link" aria-label="접근제어 개념에 대한 직접 링크" title="접근제어 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>권한이 있는 계정에만 특정 데이터 또는 자원에 접근하는 것이 가능하도록 하는 방법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="접근제어-유형">접근제어 유형<a class="hash-link" aria-label="접근제어 유형에 대한 직접 링크" title="접근제어 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EC%9C%A0%ED%98%95">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>DAC</td><td>사용자나 그룹에 근거한 접근 제어</td><td>소유자의 권한 변경</td></tr><tr><td>MAC</td><td>객체별로 정의된 권한을 근거로 접근 제어</td><td>군에서 사용, 중앙집중식</td></tr><tr><td>RBAC</td><td>역할에 의 한 접근 제어</td><td>최소권한, 직무분리, 계층 분리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="강제적-접근-통제-모델">강제적 접근 통제 모델<a class="hash-link" aria-label="강제적 접근 통제 모델에 대한 직접 링크" title="강제적 접근 통제 모델에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EA%B0%95%EC%A0%9C%EC%A0%81-%EC%A0%91%EA%B7%BC-%ED%86%B5%EC%A0%9C-%EB%AA%A8%EB%8D%B8">​</a></h2>
-<blockquote>
-<p>MAC, Mandatory Access Control</p>
-</blockquote>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="벨-라파둘라">벨-라파둘라<a class="hash-link" aria-label="벨-라파둘라에 대한 직접 링크" title="벨-라파둘라에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EB%B2%A8-%EB%9D%BC%ED%8C%8C%EB%91%98%EB%9D%BC">​</a></h3>
-<ul>
-<li>군사용 보안구조 요구사항 충족을 위해 미국의 벨과 라파둘라가 최초 개발</li>
-<li>정보의 파괴나 변조보다는 기밀성 유지에 초점</li>
-<li>극비, 비밀, 미분류로 분류</li>
-<li>No Read Up, No Write Down</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="비바-무결성">비바 무결성<a class="hash-link" aria-label="비바 무결성에 대한 직접 링크" title="비바 무결성에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EB%B9%84%EB%B0%94-%EB%AC%B4%EA%B2%B0%EC%84%B1">​</a></h3>
-<ul>
-<li>벨-라파둘라 몯레에서 불법 수정방지 내용 추가로 정의한 무결성 모델</li>
-<li>비인가자의 데이터 수정 방지 기능</li>
-<li>낮은 비밀등급에서 높은 비밀등급으로 Write 금지함으로 무결성 오염 방지</li>
-<li>No Write Up, No Read Down</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="클락-윌슨">클락-윌슨<a class="hash-link" aria-label="클락-윌슨에 대한 직접 링크" title="클락-윌슨에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%ED%81%B4%EB%9D%BD-%EC%9C%8C%EC%8A%A8">​</a></h3>
-<ul>
-<li>상업환경에 적합하게 개발된 불법 수정방지를 위한 접근통제모델로 무결성 방지</li>
-<li>임무 분리의 원칙</li>
-<li>상용, 금융, 회계 데이터</li>
-<li>Well-Formed Transactions: 모든 거래사실 기록, 구현 복잡</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="비교">비교<a class="hash-link" aria-label="비교에 대한 직접 링크" title="비교에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>벨-라파둘라</th><th>비바</th><th>클락-윌슨</th></tr></thead><tbody><tr><td>보호대상</td><td>기밀성</td><td>무결성</td><td>무결성</td></tr><tr><td>특징</td><td>비인가된 읽기 금지</td><td>비인가된 기록 금지</td><td>무결성 보존</td></tr><tr><td>분야</td><td>군사, 정부</td><td>금융, 의료</td><td>상업, 금융, 회계</td></tr><tr><td>장점</td><td>기밀성</td><td>무결성</td><td>무결성 및 신뢰성</td></tr><tr><td>단점</td><td>유연성 부족</td><td>기밀성 부족</td><td>복잡한 구현</td></tr><tr><td>비고</td><td>No Read Up, No Write Down</td><td>No Write Up, No Read Down</td><td>무결성 검증 절차 사용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="접근제어-고려사항">접근제어 고려사항<a class="hash-link" aria-label="접근제어 고려사항에 대한 직접 링크" title="접근제어 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>계정이 탈취되는 경우 접근제어로 비밀 보장을 할 수 없으므로, MFA를 활성화하여 보안 강화 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="참조">참조<a class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크" href="https://gracefullight.dev/pe/security/access-control/#%EC%B0%B8%EC%A1%B0">​</a></h2>
-<ul>
-<li><a href="https://sprinto.com/blog/types-of-security-models/" target="_blank" rel="noopener noreferrer">Sprinto: Types of Security Models</a></li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
