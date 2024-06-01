@@ -14,10 +14,19 @@
         <updated>2024-06-01T04:19:35.120Z</updated>
         <summary type="html"><![CDATA[큐싱]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념">큐싱의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>QR Code와 Phishing의 합성어로 QR코드를 활용하여 개인정보, 결제정보 등을 탈취하는 공격 기법</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념도-공격흐름">큐싱의 개념도, 공격흐름<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%ED%9D%90%EB%A6%84">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-개념도">큐싱의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-공격-흐름">큐싱의 공격 흐름<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B3%B5%EA%B2%A9-%ED%9D%90%EB%A6%84">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱-대응방안">큐싱 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>]]></content>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>QR코드</td><td>-</td><td>과금, 결제, 링크QR</td></tr><tr><td>피싱사이트</td><td>-</td><td>UI카피, XSS</td></tr><tr><td>해커</td><td>-</td><td>개인, 범죄조직</td></tr><tr><td>다크웹</td><td>-</td><td>2차 피해</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱-대응방안">큐싱 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/qshing/#%ED%81%90%EC%8B%B1-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>큐싱 URL 차단</td><td>DNS 우회</td></tr><tr><td>금융</td><td>결제시 2차인증, 홍보 강화</td><td>FIDO, 2FA</td></tr><tr><td>민간</td><td>URL 재확인, 신뢰할 수 없는 인증서 확인</td><td>외부링크 재확인</td></tr></tbody></table>
+<ul>
+<li>큐싱 피해를 줄이기 위해 정부, 기업, 개인의 지속적인 관심 필요</li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
