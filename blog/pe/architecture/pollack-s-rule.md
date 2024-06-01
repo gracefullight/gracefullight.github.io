@@ -1,5 +1,5 @@
 ---
-title: Pollack's Rule
+title: Pollack's Rule, 폴락의 법칙
 date: 2024-05-30T17:10:58.984+09:00
 description: 폴락의 법칙
 authors: me
