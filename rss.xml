@@ -4,10 +4,27 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 02 Jun 2024 01:10:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Jun 2024 02:09:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[딥페이크]]></title>
+            <link>https://gracefullight.dev/pe/convergence/deepfake/</link>
+            <guid>https://gracefullight.dev/pe/convergence/deepfake/</guid>
+            <pubDate>Sun, 02 Jun 2024 02:09:39 GMT</pubDate>
+            <description><![CDATA[딥페이크]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-개요">딥페이크의 개요<a class="hash-link" aria-label="딥페이크의 개요에 대한 직접 링크" title="딥페이크의 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-개념">딥페이크의 개념<a class="hash-link" aria-label="딥페이크의 개념에 대한 직접 링크" title="딥페이크의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-등장배경">딥페이크의 등장배경<a class="hash-link" aria-label="딥페이크의 등장배경에 대한 직접 링크" title="딥페이크의 등장배경에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EB%93%B1%EC%9E%A5%EB%B0%B0%EA%B2%BD">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-개념도-핵심요소-사례">딥페이크의 개념도, 핵심요소, 사례<a class="hash-link" aria-label="딥페이크의 개념도, 핵심요소, 사례에 대한 직접 링크" title="딥페이크의 개념도, 핵심요소, 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-개념도">딥페이크의 개념도<a class="hash-link" aria-label="딥페이크의 개념도에 대한 직접 링크" title="딥페이크의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-핵심요소">딥페이크의 핵심요소<a class="hash-link" aria-label="딥페이크의 핵심요소에 대한 직접 링크" title="딥페이크의 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크의-사례">딥페이크의 사례<a class="hash-link" aria-label="딥페이크의 사례에 대한 직접 링크" title="딥페이크의 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC%EC%9D%98-%EC%82%AC%EB%A1%80">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="딥페이크-고려사항">딥페이크 고려사항<a class="hash-link" aria-label="딥페이크 고려사항에 대한 직접 링크" title="딥페이크 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/convergence/deepfake/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/convergence</category>
+        </item>
         <item>
             <title><![CDATA[3R, Reuse, Re-engineering, Reverse-engineering]]></title>
             <link>https://gracefullight.dev/pe/engineering/3R-reuse-reengineering-reverseengineering/</link>
@@ -85,7 +102,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>가용성</td><td>서비스가 사용 가능한 시간의 비율</td><td>99.9% 이상</td></tr><tr><td>응답 시간</td><td>요청에 대한 응답이 이루어지는 시간</td><td>1ms 이하</td></tr><tr><td>처리량</td><td>네트워크를 통해 전송되는 데이터의 양</td><td>초당 메가비트 Mbps</td></tr><tr><td>복구 시간</td><td>장애 발생 시 서비스 복구에 소요되는 시간</td><td>1시간 이내</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="naas와-iaas-비교">NaaS와 IaaS 비교<a class="hash-link" aria-label="NaaS와 IaaS 비교에 대한 직접 링크" title="NaaS와 IaaS 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/network/naas/#naas%EC%99%80-iaas-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>NaaS</th><th>IaaS</th></tr></thead><tbody><tr><td>개념</td><td>네트워크 인프라를 서비스로 제공</td><td>컴퓨팅 리소스(서버, 스토리지)를 서비스로 제공</td></tr><tr><td>주요 기능</td><td>가상 네트워크, VPN, VPC, WAN</td><td>최적화 가상 머신, 스토리지, 네트워크</td></tr><tr><td>유연성</td><td>네트워크 구성의 동적 변경 가능</td><td>컴퓨팅 자원의 동적 확장 가능</td></tr><tr><td>관리 부담</td><td>네트워크 관리 최소화</td><td>인프라 관리 최소화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="naas-도입시-고려사항">NaaS 도입시 고려사항<a class="hash-link" aria-label="NaaS 도입시 고려사항에 대한 직접 링크" title="NaaS 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/network/naas/#naas-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="naas-도입시-고려사항">NaaS 도입시 고려사항<a class="hash-link" aria-label="NaaS �도입시 고려사항에 대한 직접 링크" title="NaaS 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/network/naas/#naas-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>SLA 조건 검토</td><td>안정성</td></tr><tr><td>기술적</td><td>네트워크 성능, 보안 프로토콜 사용 검토</td><td>성능 및 보안</td></tr><tr><td>물리적</td><td>데이터센터 위치, NW 물리 접근성</td><td>지리적 접근성</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/network</category>
@@ -134,7 +151,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="큐싱의-공격-흐름">큐싱의 공격 흐름<a class="hash-link" aria-label="큐싱의 공격 흐름에 대한 직접 링크" title="큐싱의 공격 흐름에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1%EC%9D%98-%EA%B3%B5%EA%B2%A9-%ED%9D%90%EB%A6%84">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>QR코드</td><td>-</td><td>과금, 결제, 링크QR</td></tr><tr><td>피싱사이트</td><td>-</td><td>UI카피, XSS</td></tr><tr><td>해커</td><td>-</td><td>개인, 범죄조직</td></tr><tr><td>다크웹</td><td>-</td><td>2차 피해</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱-대응방안">큐싱 대응방안<a class="hash-link" aria-label="큐싱 대응방안에 대한 직접 링크" title="큐싱 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="큐싱-대응방안">큐싱 대응방안<a class="hash-link" aria-label="큐싱 대응방안에 대한 직접 링크" title="큐싱 ��대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/qshing/#%ED%81%90%EC%8B%B1-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>큐싱 URL 차단</td><td>DNS 우회</td></tr><tr><td>금융</td><td>결제시 2차인증, 홍보 강화</td><td>FIDO, 2FA</td></tr><tr><td>민간</td><td>URL 재확인, 신뢰할 수 없는 인증서 확인</td><td>외부링크 재확인</td></tr></tbody></table>
 <ul>
 <li>큐싱 피해를 줄이기 위해 정부, 기업, 개인의 지속적인 관심 필요</li>
@@ -237,36 +254,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>복잡성 증가</td><td>트랜지스터 수 증가, 설계 복잡도 증가</td><td>LOC 측정</td></tr><tr><td>생산성 감소</td><td>개발 기간 증가, 생산 비용 증가</td><td>프로젝트 생산성 평가 지표</td></tr><tr><td>품질과 생산성</td><td>오류 발생 가능성 증가, 생산 수율 감소</td><td>프로세스 관리</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="폴락의-법칙으로-인한-프로세서-발전-동향">폴락의 법칙으로 인한 프로세서 발전 동향<a class="hash-link" aria-label="폴락의 법칙으로 인한 프로세서 발전 동향에 대한 직접 링크" title="폴락의 법칙으로 인한 프로세서 발전 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/pollack-s-rule/#%ED%8F%B4%EB%9D%BD%EC%9D%98-%EB%B2%95%EC%B9%99%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%95%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C-%EB%B0%9C%EC%A0%84-%EB%8F%99%ED%96%A5">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>멀티코어 프로세스</td><td>분할, 병렬처리 프로세스 개발</td><td>효율성 증가</td></tr><tr><td>에너지 효율성</td><td>저전력 프로세서 개발</td><td>모바일 프로세서</td></tr><tr><td>연산 가능한 메모리</td><td>메모리에서 연산 처리</td><td>PIM</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/architecture</category>
-        </item>
-        <item>
-            <title><![CDATA[TCAM, Ternary Content Addressable Memory]]></title>
-            <link>https://gracefullight.dev/pe/architecture/tcam/</link>
-            <guid>https://gracefullight.dev/pe/architecture/tcam/</guid>
-            <pubDate>Wed, 29 May 2024 14:11:06 GMT</pubDate>
-            <description><![CDATA[내용 주소화 기억장치]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="tcam-개념">TCAM 개념<a class="hash-link" aria-label="TCAM 개념에 대한 직접 링크" title="TCAM 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>0, 1, X(Don't care) 세 가지 상태를 저장하는 메모리 셀로 구성되어, 데이터 검색과 비교를 내용 기반으로 병렬로 수행하는 메모리.</li>
-<li>RAM은 주소기반으로 데이터 읽기/쓰기, TCAM은 내용 기반으로 데이터 검색</li>
-<li>CAM은 0,1 exact matching, TCAM은 0,1,X wildcard matching</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성도-구성요소-활용사례">TCAM의 구성도, 구성요소 활용사례<a class="hash-link" aria-label="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크" title="TCAM의 구성도, 구성요소 활용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성도">TCAM의 구성도<a class="hash-link" aria-label="TCAM의 구성도에 대한 직접 링크" title="TCAM의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="tcam의-구성요소">TCAM의 구성요소<a class="hash-link" aria-label="TCAM의 구성요소에 대한 직접 링크" title="TCAM의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Search Line</td><td>검색어를 입력하는 라인</td><td>각 비트는 0, 1, X 값</td></tr><tr><td>메모리 셀</td><td>3진 데이터(0, 1, X) 상태 저장</td><td>낮은 공간 효율</td></tr><tr><td>Match Line</td><td>검색 결과를 출력하는 라인</td><td>각 메모리 워드마다 하나씩 존재</td></tr><tr><td>Priority Encoder</td><td>여러 Match Line 중 가장 높은 우선순위의 일치 결과를 선택</td><td>사용자 설정 가능</td></tr></tbody></table>
-<ul>
-<li>TCAM의 구성요소는 3상태 저장, 고속 비교 및 우선순위 결정 기능을 통해 빠른 데이터 검색을 가능하게함.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="tcam-활용사례">TCAM 활용사례<a class="hash-link" aria-label="TCAM 활용사례에 대한 직접 링크" title="TCAM 활용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>네트워크 라우터</td><td>IP 주소 기반 패킷 분류 및 포워딩</td><td>빠른 패킷 처리 속도</td></tr><tr><td>네트워크 방화벽</td><td>패킷 필터링 규칙과 패킷 헤더 비교</td><td>높은 보안성</td></tr><tr><td>데이터베이스</td><td>데이터 검색 및 필터링</td><td>복잡한 질의 처리 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="tcam-발전방향">TCAM 발전방향<a class="hash-link" aria-label="TCAM 발전방향에 대한 직접 링크" title="TCAM 발전방향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tcam/#tcam-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
-<ul>
-<li>저전력 설계: TCAM은 높은 전력 소모 단점</li>
-<li>고집적화: 단위 면적 당 더 많은 메모리 셀 집적하여 용량 증대, 비용 절감</li>
-</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/architecture</category>
         </item>
