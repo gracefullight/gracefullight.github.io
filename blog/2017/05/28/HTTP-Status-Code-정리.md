@@ -1,7 +1,8 @@
 ---
 title: HTTP Status Code 정리
 authors: me
-tags: [http, notes]
+tags:
+  - http
 date: 2017-05-28 18:31:31
 ---
 

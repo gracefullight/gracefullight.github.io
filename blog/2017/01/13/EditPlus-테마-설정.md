@@ -1,7 +1,8 @@
 ---
 title: EditPlus 테마 설정
 authors: me
-tags: [notes]
+tags:
+  - me
 date: 2017-01-13 14:13:26
 ---
 

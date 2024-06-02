@@ -1,7 +1,9 @@
 ---
 title: Dockerfile의 모든 것
 authors: me
-tags: [k8s, docker, notes]
+tags:
+  - k8s
+  - docker
 date: 2020-01-13 22:36:44
 ---
 

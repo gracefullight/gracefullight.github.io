@@ -1,7 +1,8 @@
 ---
-title: "IaaS, PaaS, SaaS 란?"
+title: IaaS, PaaS, SaaS 란?
 authors: me
-tags: [linux, notes]
+tags:
+  - linux
 date: 2018-09-04 21:38:53
 ---
 
@@ -35,7 +36,3 @@ date: 2018-09-04 21:38:53
 - 웹사이트로 제공되는 응용프로그램
 - CMS 등
 - 나이스해 보이고 싶어서 끼워 맞춘 용어
-
-## 여담
-
-![image from hexo](https://i.imgur.com/e1nUX9D.jpg)
