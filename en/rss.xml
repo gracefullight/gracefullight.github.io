@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 02 Jun 2024 06:21:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Jun 2024 11:47:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Semahpore, 세마포어]]></title>
+            <link>https://gracefullight.dev/en/pe/architecture/semahpore/</link>
+            <guid>https://gracefullight.dev/en/pe/architecture/semahpore/</guid>
+            <pubDate>Sun, 02 Jun 2024 11:47:50 GMT</pubDate>
+            <description><![CDATA[세마포어]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="세마포어의-개념">세마포어의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>멀티 프로그래밍 환경에서 두 개의 원자적 함수로 공유 자원에 대한 접근을 제한하는 방법</li>
+<li>임계구역에 상호접근할 수 있는 기능을 수행하여 교착상태에 빠지지 않도록 함</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-개념도-p연산-v연산">세마포어 개념도, P연산, V연산<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EA%B0%9C%EB%85%90%EB%8F%84-p%EC%97%B0%EC%82%B0-v%EC%97%B0%EC%82%B0">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-개념도">세마포어 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-연산">세마포어 연산<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EC%97%B0%EC%82%B0">​</a></h3>
+<table><thead><tr><th>구분</th><th>P 연산, Wait</th><th>V 연산, Signal</th></tr></thead><tbody><tr><td>개념</td><td>리소스에 접근하기 위해 다른 태스크가 끝나기까지 대기</td><td>임계영역을 나오면서 다른 태스크가 접근하도록 변경</td></tr><tr><td>로직</td><td>세마포어 S의 Count를 1 감소</td><td>세마포어 S의 CountFmf 1 증가</td></tr><tr><td>슈도코드</td><td><code>P(S) { while S &lt;= 0; S--; }</code></td><td><code>V(S) { S++; }</code></td></tr></tbody></table>
+<ul>
+<li>세마포어에 접근시킬 스레드의 갯수에 따라 이진 세마포어, 계수형 세마포어 선택</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어의-유형">세마포어의 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>이진 세마포어</td><td>상호배제나 프로세스 동기화 목적으로 사용</td><td>0 or 1</td></tr><tr><td>계수형 세마포어</td><td>초기에 동시에 진입 가능한 프로세스 개수 정의 가 능</td><td>0,1,2,3...</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-고려사항">세마포어 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>세마포어의 직접 제어로 인한 오류 가능성, 난해성을 보완하기 위해 프로그래밍 언어 수준에서 모니터 기법 사용.</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/architecture</category>
+        </item>
         <item>
             <title><![CDATA[전자정부사업관리 위탁, PMO]]></title>
             <link>https://gracefullight.dev/en/pe/engineering/pmo-project-management-office/</link>
@@ -24,7 +52,7 @@
 <li>대기업 SI회사의 공공사업 참여가 제한되어 중소기업의 참여 기회가 확대되었으나, 사업관리 경험과 전문인력이 부족하기에 SW사업관리 역량과 성공율을 제고하기 위한 목적으로 도입</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="전자정부-pmo-프레임워크의-구성도-구성요소-사례">전자정부 PMO 프레임워크의 구성도, 구성요소, 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pmo-project-management-office/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-pmo-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="pmo-프레임워크-구�성도">PMO 프레임워크 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pmo-project-management-office/#pmo-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="pmo-프레임워크-구성도">PMO 프레임워크 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pmo-project-management-office/#pmo-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="pmo-프레임워크-구성요소">PMO 프레임워크 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pmo-project-management-office/#pmo-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PMO운영준비</td><td>PMO오딥 및 운영 준비를 위한 활동</td><td>필요성, 역할, 착수 준비</td></tr><tr><td>PMO운영관리</td><td>PMO의 핵심 관리 활동</td><td>계획, 계약, 발주, 통합, 범위, 일정, 위험, 품질, 인적자원. 의사소통, 하도급, 완료검사, 인수, 종료</td></tr><tr><td>PMO운영종료</td><td>PMO 운영 종료 및 성과 정리</td><td>성과 관리, 행정적 종료, 지식 전수, 기대효과</td></tr></tbody></table>
@@ -86,13 +114,13 @@
 <li>시스템 이해도 향상</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-관계도-상세설명-핵심기법">3R의 관계도, 상세설명, 핵심기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85-%ED%95%B5%EC%8B%AC%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-관계도">3R의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-�관계도">3R의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-상세설명">3R의 상세설명<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>역공학</td><td>소스 코드 없이 시스템 분석 후 설계 정보 추출</td><td>분석도구 활용(디버거, 디컴파일러), 설계 문서 복구</td></tr><tr><td>재공학</td><td>기존 시스템 분석 결과를 바탕으로 시스템 개선 및 재구축</td><td>리팩토링, 아키텍처 개선, 성능 최적화</td></tr><tr><td>재사용</td><td>검증된 소프트웨어 자산을 새로운 시스템 개발에 활용</td><td>컴포넌트, 디자인패턴, 모듈 재사용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-핵심기법">3R의 핵심기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%95%B5%EC%8B%AC%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정적분석</td><td>코드 실행 없이 바이트코드, 바이너리코드 분석</td><td>역공학</td></tr><tr><td>리팩토링</td><td>코드 스멜을 제거하여 단순성을 높히는 방법</td><td>재공학</td></tr><tr><td>디자인패턴</td><td>검증된 설계 패턴을 활용하여 재사용성 향상</td><td>재사용</td></tr><tr><td>MSA</td><td>모듈화된 서비스를 웹 인터페이스로 호출하여 통합하는 방법</td><td>재사용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효과성을-높이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효과성을-높�이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설계 측면</td><td>SOLID 원칙 준수로 낮은 결합도, 높은 응집도의 모듈 설계</td><td>유지보수성, 확장성</td></tr><tr><td>도구 측면</td><td>VCS 를 사용하여 SW 코드 및 자산의 변경 이력 관리</td><td>유지보수성, 효율성</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
@@ -223,7 +251,7 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot%EC%9D%98-%EF%BF%BD%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-상세-비교">앰비언트 컴퓨팅과 IoT 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
@@ -251,25 +279,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>주체</td><td>정보에 접근하는 개인 또는 그룹</td><td>컨설턴트, 변호사 등</td></tr><tr><td>객체</td><td>접근이 제한되는 정보 자원 고객 정보</td><td>기업 비밀, 사건 자료</td></tr><tr><td>충돌 집합</td><td>서로 이해 상충 관계에 있는 객체들의 집합</td><td>동일 업종, 경쟁 기업 정보 등</td></tr><tr><td>접근 기록</td><td>주체의 과거 정보 접근 이력</td><td>이해 상충 여부 판단</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="만리장성-모델-적용시-고려사항">만리장성 모델 적용시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/chinese-wall-model/#%EB%A7%8C%EB%A6%AC%EC%9E%A5%EC%84%B1-%EB%AA%A8%EB%8D%B8-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보 분류</td><td>이해 상충 관계의 명확한 정의</td><td>모호할 경우 오류 발생 가능</td></tr><tr><td>유연성</td><td>새로운 정보 유형 발생, 권한 변경 시 모델 수정</td><td>지속적인 업데이트</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[대칭 암호화, 비대칭 암호화]]></title>
-            <link>https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/</link>
-            <guid>https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/</guid>
-            <pubDate>Fri, 31 May 2024 13:18:57 GMT</pubDate>
-            <description><![CDATA[대칭 암호화, 비대칭 암호화]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-개념">대칭 암호화와 비대칭 암호화의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화의-구성도-구성요소">대칭 암호화와 비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화의-구성도-구성요소">대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="비대칭-암호화의-구성도-구성요소">비대칭 암호화의 구성도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<ul>
-<li>비대칭 암호화는 대칭키를 암호화하기 위해 전자봉투로서 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화-비교">대칭 암호화와 비대칭 암호화 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>대칭암호화</th><th>비대칭암호화</th></tr></thead></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="대칭-암호화와-비대칭-암호화-고려사항">대칭 암호화와 비대칭 암호화 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/symmetric-and-asymmetric-encryption/#%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94%EC%99%80-%EB%B9%84%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
