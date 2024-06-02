@@ -18,6 +18,15 @@ tags:
 
 ### 3R의 관계도
 
+```mermaid
+graph LR
+  ReverseEngineering[역공학, Reverse engineering\n디버깅, 디컴파일]
+  ReEngineering[재공학, Re-engineering\n리팩토링]
+  Reuse[재사용, Reuse\n모듈화]
+
+  ReverseEngineering --> ReEngineering --> Reuse
+```
+
 ### 3R의 상세설명
 
 ### 3R의 핵심기법
