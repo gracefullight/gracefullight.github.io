@@ -4,10 +4,27 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 01 Jun 2024 08:07:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Jun 2024 01:10:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[3R, Reuse, Re-engineering, Reverse-engineering]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/</guid>
+            <pubDate>Sun, 02 Jun 2024 01:10:58 GMT</pubDate>
+            <description><![CDATA[SW유지보수를 위한 재사용, 재공학, 역공학]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-개요">3R의 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-개념">3R의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-필요성">3R의 필요성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-관계도-상세설명-핵심기법">3R의 관계도, 상세설명, 핵심기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85-%ED%95%B5%EC%8B%AC%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-관계도">3R의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-상세설명">3R의 상세설명<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-핵심기법">3R의 핵심기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%95%B5%EC%8B%AC%EA%B8%B0%EB%B2%95">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효과성을-높이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[카나리 테스트]]></title>
             <link>https://gracefullight.dev/en/pe/engineering/canary-test/</link>
@@ -128,13 +145,13 @@
 <li>사용자 경험 변화: 더 직관적이고 더 편리한 컴퓨팅 환경 요구</li>
 <li>디지털트랜스포메이션: 사회 전반의 디지털 전환 가속</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%EF%BF%BD%EF%BF%BD%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도">앰비언트 컴퓨팅 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%EF%BF%BD%ED%8C%85%EA%B3%BC-iot%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-상세-비교">앰비언트 컴퓨팅과 IoT 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
@@ -237,25 +254,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/architecture</category>
-        </item>
-        <item>
-            <title><![CDATA[위험관리]]></title>
-            <link>https://gracefullight.dev/en/pe/engineering/risk-management/</link>
-            <guid>https://gracefullight.dev/en/pe/engineering/risk-management/</guid>
-            <pubDate>Mon, 27 May 2024 11:26:38 GMT</pubDate>
-            <description><![CDATA[위험관리]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="위험관리">위험관리<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/risk-management/#%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC">​</a></h2>
-<ul>
-<li>부정적 위험에 대한 대응 계획</li>
-<li>PMBOK 기반</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="부정적-위험-대응-계획">부정적 위험 대응 계획<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/risk-management/#%EB%B6%80%EC%A0%95%EC%A0%81-%EC%9C%84%ED%97%98-%EB%8C%80%EC%9D%91-%EA%B3%84%ED%9A%8D">​</a></h2>
-<blockquote>
-<p>회전감수이</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회피 Avoidance</td><td>발생 가능성을 원천적으로 제거</td><td>계획변경, 외주업체변경, 범위감소 등</td></tr><tr><td>전가 Transference</td><td>조치에 대한 책임을 제 3자에게 넘김</td><td>보험료, 개런티</td></tr><tr><td>감소 Mitigation</td><td>발생가능성이나 영향력을 줄이는 방안</td><td>프로토타이핑 개발, 덜 복잡한 프로세스 채택</td></tr><tr><td>수용 Acceptance</td><td>아무런 대책없이 수용, 최소한의 계획으로 수용</td><td>능동적, 수동적 수용</td></tr><tr><td>이관 Escalation</td><td>프로젝트 범위를 벗어나거나 관리자 권한 초과시 적용</td><td>이관 후 모니터링 하지 않음</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
         </item>
     </channel>
 </rss>
