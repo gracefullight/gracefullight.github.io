@@ -4,10 +4,46 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 03 Jun 2024 11:49:04 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 04 Jun 2024 14:04:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[양자컴퓨터]]></title>
+            <link>https://gracefullight.dev/en/pe/convergence/quantum-computer/</link>
+            <guid>https://gracefullight.dev/en/pe/convergence/quantum-computer/</guid>
+            <pubDate>Tue, 04 Jun 2024 14:04:06 GMT</pubDate>
+            <description><![CDATA[양자컴퓨터]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터의-개요">양자컴퓨터의 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터의-개념">양자컴퓨터의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>0,1 을 중첩시키는 큐비트를 기반으로 고속연산을 처리하는 차세대 컴퓨터</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터의-필요성">양자컴퓨터의 필요성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%ED%95%84%EC%9A%94%EC%84%B1">​</a></h3>
+<ul>
+<li>기존 컴퓨터는 복잡한 문제 해결에 한계점</li>
+<li>양자 컴퓨터 도입으로 분자 시뮬레이션, 우주 시뮬레이션, 신약개발, 인공지능, 조합 최적화 문제들을 개선 및 해결 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터의-구성도-구성요소-구현방법">양자컴퓨터의 구성도, 구성요소, 구현방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터-구성도">양자컴퓨터 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터-구성요소">양자컴퓨터 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프론트서버</td><td>문제입력, 작업제어, 결과분석</td><td>클라우드 기반</td></tr><tr><td>펄스제어장치</td><td>큐비트 제어신호 생성, 전송</td><td>전기적, 광학적 제어</td></tr><tr><td>QPU</td><td>큐비트 연산 수행</td><td>다양한 구현기술</td></tr><tr><td>측정장치</td><td>큐비트 상태 측정</td><td>바이너리 데이터</td></tr><tr><td>냉각장치</td><td>극저온 환경 유지</td><td>절대영도 필요</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터-구현방법">양자컴퓨터 구현방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>초전도형 양자비트</td><td>초전도 상태로 전류를 흘려 전하로 양자표현</td><td>극저온 환경</td></tr><tr><td>이온트랩형 양자비트</td><td>레이저로 이온 보충, 들뜬 상태 유지</td><td>높은 신뢰성</td></tr><tr><td>실리콘형 양자비트</td><td>실리콘에 전자를 삽입하여 전자기파로 양자 표현</td><td>양자얽힘 구현 어려움</td></tr><tr><td>토폴로지컬형 양자비트</td><td>준입자 활용 양자 표현</td><td>기술적 한계</td></tr><tr><td>다이아몬드결손형 양자비트</td><td>전자를 사용하여 양자표현</td><td>상온 작동 가능성</td></tr></tbody></table>
+<ul>
+<li>Azure Quantum 등 CSP 제공 양자컴퓨터 서비스 모델 활용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터와-기존-컴퓨터-비교">양자컴퓨터와 기존 컴퓨터 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%99%80-%EA%B8%B0%EC%A1%B4-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>양자컴퓨터</th><th>폰노이만컴퓨터</th></tr></thead><tbody><tr><td>정보단위</td><td>큐비트 0, 1, 중첩</td><td>비트 0, 1</td></tr><tr><td>연산방식</td><td>병렬</td><td>순차</td></tr><tr><td>특성</td><td>고속성</td><td>범용성</td></tr><tr><td>활용분야</td><td>과학계산, 암호해독</td><td>일반 정보처리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="양자컴퓨터-발전방향">양자컴퓨터 발전방향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
+<ul>
+<li>불안정 오류 수정기술 개발</li>
+<li>양자컴퓨터용 알고리즘 개발</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/convergence</category>
+        </item>
         <item>
             <title><![CDATA[DX, 디지털 트랜스포메이션]]></title>
             <link>https://gracefullight.dev/en/pe/management/digital-transformation/</link>
@@ -145,7 +181,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>역공학</td><td>소스 코드 없이 시스템 분석 후 설계 정보 추출</td><td>분석도구 활용(디버거, 디컴파일러), 설계 문서 복구</td></tr><tr><td>재공학</td><td>기존 시스템 분석 결과를 바탕으로 시스템 개선 및 재구축</td><td>리팩토링, 아키텍처 개선, 성능 최적화</td></tr><tr><td>재사용</td><td>검증된 소프트웨어 자산을 새로운 시스템 개발에 활용</td><td>컴포넌트, 디자인패턴, 모듈 재사용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="3r의-핵심기법">3R의 핵심기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%95%B5%EC%8B%AC%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정적분석</td><td>코드 실행 없이 바이트코드, 바이너리코드 분석</td><td>역공학</td></tr><tr><td>리팩토링</td><td>코드 스멜을 제거하여 단순성을 높히는 방법</td><td>재공학</td></tr><tr><td>디자인패턴</td><td>검증된 설계 패턴을 활용하여 재사용성 향상</td><td>재사용</td></tr><tr><td>MSA</td><td>모듈화된 서비스를 웹 인터페이스로 호출하여 통합하는 방법</td><td>재사용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효과성을-높이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효�과성을-높이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설계 측면</td><td>SOLID 원칙 준수로 낮은 결합도, 높은 응집도의 모듈 설계</td><td>유지보수성, 확장성</td></tr><tr><td>도구 측면</td><td>VCS 를 사용하여 SW 코드 및 자산의 변경 이력 관리</td><td>유지보수성, 효율성</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
@@ -191,7 +227,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="naas-서비스-카테고리">NaaS 서비스 카테고리<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/network/naas/#naas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드밸런싱</td><td>서버 간 트래픽 분산</td><td>안정성, 가용성</td></tr><tr><td>VPN</td><td>가상 사설망 제공</td><td>원격근무, 본사-지사망</td></tr><tr><td>라우팅</td><td>대역폭 조절, 사설망 라우팅</td><td>VPC</td></tr><tr><td>보안</td><td>접근제어, DDoS 방어</td><td>방화벽, IPS, IDS</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="naas-서비�스-sla-지표">NaaS 서비스 SLA 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/network/naas/#naas-%EC%84%9C%EB%B9%84%EC%8A%A4-sla-%EC%A7%80%ED%91%9C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="naas-서비스-sla-지표">NaaS 서비스 SLA 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/network/naas/#naas-%EC%84%9C%EB%B9%84%EC%8A%A4-sla-%EC%A7%80%ED%91%9C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>가용성</td><td>서비스가 사용 가능한 시간의 비율</td><td>99.9% 이상</td></tr><tr><td>응답 시간</td><td>요청에 대한 응답이 이루어지는 시간</td><td>1ms 이하</td></tr><tr><td>처리량</td><td>네트워크를 통해 전송되는 데이터의 양</td><td>초당 메가비트 Mbps</td></tr><tr><td>복구 시간</td><td>장애 발생 시 서비스 복구에 소요되는 시간</td><td>1시간 이내</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="naas와-iaas-비교">NaaS와 IaaS 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/network/naas/#naas%EC%99%80-iaas-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>NaaS</th><th>IaaS</th></tr></thead><tbody><tr><td>개념</td><td>네트워크 인프라를 서비스로 제공</td><td>컴퓨팅 리소스(서버, 스토리지)를 서비스로 제공</td></tr><tr><td>주요 기능</td><td>가상 네트워크, VPN, VPC, WAN</td><td>최적화 가상 머신, 스토리지, 네트워크</td></tr><tr><td>유연성</td><td>네트워크 구성의 동적 변경 가능</td><td>컴퓨팅 자원의 동적 확장 가능</td></tr><tr><td>관리 부담</td><td>네트워크 관리 최소화</td><td>인프라 관리 최소화</td></tr></tbody></table>
@@ -251,39 +287,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[앰비언트 컴퓨팅]]></title>
-            <link>https://gracefullight.dev/en/pe/convergence/ambient-computing/</link>
-            <guid>https://gracefullight.dev/en/pe/convergence/ambient-computing/</guid>
-            <pubDate>Fri, 31 May 2024 15:12:30 GMT</pubDate>
-            <description><![CDATA[앰비언트 컴퓨팅]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅의-개요">앰비언트 컴퓨팅의 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅의-개념">앰비언트 컴퓨팅의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>사용자가 컴퓨터의 존재를 인식하지 못하는 상태에서 자연스럽게 컴퓨팅 서비스를 제공하는 기술</li>
-<li>컴퓨터가 마치 주변 환경의 일부처럼 녹아들어 사용자에게 필요한 정보나 서비스를 자동으로 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-등장-배경">앰비언트 컴퓨팅 등장 배경<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%93%B1%EC%9E%A5-%EB%B0%B0%EA%B2%BD">​</a></h3>
-<ul>
-<li>기술발전: IoT, 센싱, 인공지능, 클라우드 컴퓨팅의 발전으로 인한 기술적 기반</li>
-<li>사용자 경험 변화: 더 직관적이고 더 편리한 컴퓨팅 환경 요구</li>
-<li>디지털트랜스포메이션: 사회 전반의 디지털 전환 가속</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도-기술요소">앰비언트 컴퓨팅 개념도, 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-개념도">앰비언트 컴퓨팅 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-기술요소">앰비언트 컴퓨팅 기술요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>센서</td><td>다양한 환경 정보를 수집하여 사용자 상황 인지</td><td>온도, 습도, 조도, 위치, 음성</td></tr><tr><td>네트워크</td><td>센서 데이터를 수집하고 기기 간 통신</td><td>Wi-Fi, Bluetooth, 5G</td></tr><tr><td>AI</td><td>데이터 분석 및 사용자의 의도 파악하여 맞춤형 서비스 제공</td><td>머신러닝, 자연어 처리</td></tr><tr><td>클라우드</td><td>데이터 저장, 분석, 처리를 위한 클라우드 컴퓨팅 환경</td><td>확장성, 안정성 제공</td></tr><tr><td>사용자 인터페이스</td><td>음성, 제스처 등 자연스러운 상호작용 방식</td><td>사용자 편의성 증대</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-비교">앰비언트 컴퓨팅과 IoT 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot%EC%9D%98-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅과-iot-상세-비교">앰비언트 컴퓨팅과 IoT 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EA%B3%BC-iot-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="앰비언트-컴퓨팅-활용-방안">앰비언트 컴퓨팅 활용 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/ambient-computing/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>도시 관리 효율성 향상, 시민 편의 증진</td><td>스마트 시티, 스마트 교통, 스마트 환경 등</td></tr><tr><td>금융</td><td>금융 서비스 접근성 향상, 보안 강화</td><td>개인 맞춤형 금융 서비스, 지능형 보안 시스템 등</td></tr><tr><td>민간</td><td>생활 편의성 증대, 생산성 향상, 건강 관리</td><td>스마트 홈, 스마트 팩토리, 스마트 헬스케어 등</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/convergence</category>
         </item>
     </channel>
 </rss>
