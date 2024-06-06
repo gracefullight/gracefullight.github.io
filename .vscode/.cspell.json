@@ -55,7 +55,8 @@
     "TCAM",
     "tseslint",
     "wcslog",
-    "webp"
+    "webp",
+    "xychart"
   ],
   "ignorePaths": [
     "*.config.js",
