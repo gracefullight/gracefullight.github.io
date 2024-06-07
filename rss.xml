@@ -198,7 +198,7 @@
 <li>세마포어에 접근시킬 스레드의 갯수에 따라 이진 세마포어, 계수형 세마포어 선택</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어의-유형">세마포어의 유형<a class="hash-link" aria-label="세마포어의 유형에 대한 직접 링크" title="세마포어의 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%EC%9D%98-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>이진 세마포어</td><td>상호배제나 프로세스 동기화 목적으로 사용</td><td>0 or 1</td></tr><tr><td>계수형 세마포어</td><td>초기에 동시에 진입 가능한 프로세스 개수 정의 가 능</td><td>0,1,2,3...</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>이진 세마포어</td><td>상호배제나 프로세스 동기화 목적으로 사용</td><td>0 or 1</td></tr><tr><td>계수형 세마포어</td><td>초기에 동시에 진입 가능한 프로세스 개수 정의 가능</td><td>0,1,2,3...</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-고려사항">세마포어 고려사항<a class="hash-link" aria-label="세마포어 고려사항에 대한 직접 링크" title="세마포어 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>세마포어의 직접 제어로 인한 오류 가능성, 난해성을 보완하기 위해 프로그래밍 언어 수준에서 모니터 기법 사용.</li>
