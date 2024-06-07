@@ -31,7 +31,7 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="매터와-기존-표준과의-비교">매터와 기존 표준과의 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/matter/#%EB%A7%A4%ED%84%B0%EC%99%80-%EA%B8%B0%EC%A1%B4-%ED%91%9C%EC%A4%80%EA%B3%BC%EC%9D%98-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>매터</th><th>기존 스마트홈</th></tr></thead><tbody><tr><td>상호운용성</td><td>높음</td><td>벤더별 상이</td></tr><tr><td>보안</td><td>표준화된 보안 프로토콜</td><td>다양성으로 인한 신뢰성 저하</td></tr><tr><td>확장성</td><td>높음</td><td>낮음</td></tr><tr><td>개방성</td><td>높음</td><td>낮음</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="매터-적용-사례">매터 적용 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/matter/#%EB%A7%A4%ED%84%B0-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>LG SmartQ로 다양한 IoT 제품과 가전의 호환성 제고</td><td>TV, 스피커 등</td></tr><tr><td>국외</td><td>Google Nest는 다양한 스마트홈 기기 간의 상호운용성 개선</td><td>온도계, 허브 등</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>LG ThingQ로 다양한 IoT 제품과 가전의 호환성 제고</td><td>TV, 스피커 등</td></tr><tr><td>국외</td><td>Google Nest는 다양한 스마트홈 기기 간의 상호운용성 개선</td><td>온도계, 허브 등</td></tr></tbody></table>
 <ul>
 <li>표준화된 프로토콜 사용으로 지능형 자동화의 기반 마련, IoT와 AI가 결합한 앰비언트 컴퓨팅으로 진화.</li>
 </ul>]]></content:encoded>
