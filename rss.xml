@@ -4,10 +4,37 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 06 Jun 2024 08:33:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Jun 2024 14:13:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[TPM, 신뢰할 수 있는 플랫폼 모듈]]></title>
+            <link>https://gracefullight.dev/pe/security/tpm/</link>
+            <guid>https://gracefullight.dev/pe/security/tpm/</guid>
+            <pubDate>Fri, 07 Jun 2024 14:13:44 GMT</pubDate>
+            <description><![CDATA[Trusted Platform Module]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="tpm의-개념">TPM의 개념<a class="hash-link" aria-label="TPM의 개념에 대한 직접 링크" title="TPM의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<blockquote>
+<p>Trusted Platform Module</p>
+</blockquote>
+<ul>
+<li>무결성 검증을 위해 키, 패스워드, 인증서를 안전하게 저장하기 위한 기능을 주로 하드웨어 기반으로 구현한 보안 암호화 프로세서</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="tpm의-구성도-구성요소-적용사례">TPM의 구성도, 구성요소, 적용사례<a class="hash-link" aria-label="TPM의 구성도, 구성요소, 적용사례에 대한 직접 링크" title="TPM의 구성도, 구성요소, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="tpm의-구성도">TPM의 구성도<a class="hash-link" aria-label="TPM의 구성도에 대한 직접 링크" title="TPM의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="tpm의-구성요소">TPM의 구성요소<a class="hash-link" aria-label="TPM의 구성요소에 대한 직접 링크" title="TPM의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>I/O 버퍼</td><td>입출력을 위한 버퍼</td><td>호스트 시스템 간 인터페이스</td></tr><tr><td>암호화 하위시스템</td><td>암호화 기능을 담당하는 하드웨어 모듈</td><td>RSA, HMAC, 해시, 서명 연산, 키 생성</td></tr><tr><td>인증 하위시스템</td><td>인증 기능을 담당하는 하드웨어 모듈</td><td>명령어 실행 전후 호출 권한 확인</td></tr><tr><td>랜덤 액세스 메모리</td><td>임시 데이터 저장을 위한 메모리</td><td>PCR, 객체, 세션</td></tr><tr><td>비휘발성 메모리</td><td>영구 데이터 저장을 위한 메모리</td><td>TPM 상태, 시드, 증명 값</td></tr><tr><td>전원 감지 모듈</td><td>전원 상태 모니터링 모듈</td><td>전원 변동시 적절한 조치 수행</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="tpm-적용사례">TPM 적용사례<a class="hash-link" aria-label="TPM 적용사례에 대한 직접 링크" title="TPM 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>삼성전자, 자사 노트북에 TPM 모듈 포함</td><td>윈도우11 대응</td></tr><tr><td>해외</td><td>TPM 스펙 표준화 지정</td><td>Trusted Computing Group</td></tr><tr><td>해외</td><td>마이크로소프트, 구글 등 주요 IT 기업에서 TPM 활용</td><td>윈도우11, 크롬OS</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="tpm-20-개선-내용">TPM 2.0 개선 내용<a class="hash-link" aria-label="TPM 2.0 개선 내용에 대한 직접 링크" title="TPM 2.0 개선 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/security/tpm/#tpm-20-%EA%B0%9C%EC%84%A0-%EB%82%B4%EC%9A%A9">​</a></h2>
+<ul>
+<li>ECC 타원곡선 암호화 지원, Windows7 지원 종료</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[매터]]></title>
             <link>https://gracefullight.dev/pe/convergence/matter/</link>
@@ -144,7 +171,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>전략</td><td>명확하고 구체적인 전략 수립으로 방향성, 목표 설정</td><td>로드맵, KPI 설정</td></tr><tr><td>프로세스</td><td>업무효율성과 생산성 향상을 DX 극대화</td><td>기존 프로세스 분석, 개선, RPA 도입</td></tr><tr><td>기술</td><td>데이터 기반 기술인프라 구축, 고도화</td><td>클라우드, AI, 빅데이터</td></tr><tr><td>문화</td><td>구성원의 학습과 성장을 위한 조직문화 조성</td><td>유연한 업무 방식</td></tr><tr><td>고객경험</td><td>고객 중심적 사고방식, 맞춤형 서비스 제공</td><td>추천 시스템 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="디지털-트랜스포메이션-추진전략">디지털 트랜스포메이션 추진전략<a class="hash-link" aria-label="디지털 트랜스포메이션 추진전략에 대한 직접 링크" title="디지털 트랜스포메이션 추진전략에 대한 직접 링크" href="https://gracefullight.dev/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EC%B6%94%EC%A7%84%EC%A0%84%EB%9E%B5">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>리더</td><td>비전 및 전략 제시, 조직문화 혁신 등 방향성, 변화 주도</td><td>전략적 연계, 자원관리</td></tr><tr><td>매니저</td><td>전략 실행, 프로젝트 관리 등 DX 전략 수행 및 성과 창출</td><td>성과관리, 위험관리</td></tr><tr><td>오퍼레이터</td><td>새로운 기술 학습 및 활용, 프로세스 개선 등 DX 업무 적용</td><td>가치 창출</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="디지털-트랜스포메이션-고려사항">디지털 트랜스포메이션 고려사항<a class="hash-link" aria-label="디지털 트랜스포메이션 고려사항에 대한 직접 링크" title="디지털 트랜스포메이션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="디지털-트랜스포메이션-고려��사항">디지털 트랜스포메이션 고려사항<a class="hash-link" aria-label="디지털 트랜스포메이션 고려사항에 대한 직접 링크" title="디지털 트랜스포메이션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>디지털 전환 후의 의사 결정 지원과 성과 분석을 위하여 데이터마트 도입을 우선시 해야함.</li>
 </ul>]]></content:encoded>
@@ -265,32 +292,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정적분석</td><td>코드 실행 없이 바이트코드, 바이너리코드 분석</td><td>역공학</td></tr><tr><td>리팩토링</td><td>코드 스멜을 제거하여 단순성을 높히는 방법</td><td>재공학</td></tr><tr><td>디자인패턴</td><td>검증된 설계 패턴을 활용하여 재사용성 향상</td><td>재사용</td></tr><tr><td>MSA</td><td>모듈화된 서비스를 웹 인터페이스로 호출하여 통합하는 방법</td><td>재사용</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="3r의-효과성을-높이기-위한-고려사항">3R의 효과성을 높이기 위한 고려사항<a class="hash-link" aria-label="3R의 효과성을 높이기 위한 고려사항에 대한 직접 링크" title="3R의 효과성을 높이기 위한 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/3R-reuse-reengineering-reverseengineering/#3r%EC%9D%98-%ED%9A%A8%EA%B3%BC%EC%84%B1%EC%9D%84-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설계 측면</td><td>SOLID 원칙 준수로 낮은 결합도, 높은 응집도의 모듈 설계</td><td>유지보수성, 확장성</td></tr><tr><td>도구 측면</td><td>VCS 를 사용하여 SW 코드 및 자산의 변경 이력 관리</td><td>유지보수성, 효율성</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[카나리 테스트]]></title>
-            <link>https://gracefullight.dev/pe/engineering/canary-test/</link>
-            <guid>https://gracefullight.dev/pe/engineering/canary-test/</guid>
-            <pubDate>Sat, 01 Jun 2024 08:07:56 GMT</pubDate>
-            <description><![CDATA[canary test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-개념">카나리 테스트 개념<a class="hash-link" aria-label="카나리 테스트 개념에 대한 직접 링크" title="카나리 테스트 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>새로운 버전의 소프트웨어나 시스템을 실제 사용자 환경에 배포하기 전에 제한된 사용자 그룹에게 먼저 공개하여 안정성과 성능을 검증하는 방법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도-구성요소-적용방안">카나리 테스트 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="카나리 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" title="카나리 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도">카나리 테스트 구성도<a class="hash-link" aria-label="카나리 테스트 구성도에 대한 직접 링크" title="카나리 테스트 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성요소">카나리 테스트 구성요소<a class="hash-link" aria-label="카나리 테스트 구성요소에 대한 직접 링크" title="카나리 테스트 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드 밸런서</td><td>사용자 트래픽을 Canary 배포와 기존 배포에 분산</td><td>트래픽 비율 조절</td></tr><tr><td>Canary 배포</td><td>새로운 버전의 SW 또는 시스템</td><td>제한된 사용자에게만 공개</td></tr><tr><td>기존 배포</td><td>현재 운영 중인 안정적인 버전</td><td>대부분의 사용자에게 서비스 제공</td></tr><tr><td>모니터링 시스템</td><td>각 배포 환경의 성능, 안정성, 오류 등을 실시간 추적 및 비교</td><td>문제 발생 시 즉각적인 대응</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-적용방안">카나리 테스트 적용방안<a class="hash-link" aria-label="카나리 테스트 적용방안에 대한 직접 링크" title="카나리 테스트 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<ul>
-<li>K8S의 Blue, Green 배포 전략을 이용하여 클라우드 기반의 Canary Test 도입 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-고려사항">카나리 테스트 고려사항<a class="hash-link" aria-label="카나리 테스트 고려사항에 대한 직접 링크" title="카나리 테스트 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/canary-test/#%EC%B9%B4%EB%82%98%EB%A6%AC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>문제가 발생했을 때 신속하게 이전 버전으로 롤백 가능한 계획 수립 필요</li>
-</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
         </item>
