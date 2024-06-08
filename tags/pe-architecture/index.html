@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.790b4b5e.css">
-<script src="/assets/js/runtime~main.675c3db9.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4736a49c.js" defer="defer"></script>
 <script src="/assets/js/main.86b80f45.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,7 +48,7 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-개념도">세마포어 개념도<a class="hash-link" aria-label="세마포어 개념도에 대한 직접 링크" title="세마포어 개념도에 대한 직접 링크" href="/tags/pe-architecture/#세마포어-개념도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-연산">세마포어 연산<a class="hash-link" aria-label="세마포어 연산에 대한 직접 링크" title="세마포어 연산에 대한 직접 링크" href="/tags/pe-architecture/#세마포어-연산">​</a></h3>
-<table><thead><tr><th>구분</th><th>P 연산, Wait</th><th>V 연산, Signal</th></tr></thead><tbody><tr><td>개념</td><td>리소 스에 접근하기 위해 다른 태스크가 끝나기까지 대기</td><td>임계영역을 나오면서 다른 태스크가 접근하도록 변경</td></tr><tr><td>로직</td><td>세마포어 S의 Count를 1 감소</td><td>세마포어 S의 CountFmf 1 증가</td></tr><tr><td>슈도코드</td><td><code>P(S) { while S &lt;= 0; S--; }</code></td><td><code>V(S) { S++; }</code></td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>P 연산, Wait</th><th>V 연산, Signal</th></tr></thead><tbody><tr><td>개념</td><td>리소 스에 접근하기 위해 다른 태스크가 끝나기까지 대기</td><td>임계영역을 나오면서 다른 태스크가 접근하도록 변경</td></tr><tr><td>로직</td><td>세마포어 S의 Count를 1 감소</td><td>세마포어 S의 Count를 1 증가</td></tr><tr><td>슈도코드</td><td><code>P(S) { while S &lt;= 0; S--; }</code></td><td><code>V(S) { S++; }</code></td></tr></tbody></table>
 <ul>
 <li>세마포어에 접근시킬 스레드의 갯수에 따라 이진 세마포어, 계수형 세마포어 선택</li>
 </ul>

@@ -216,7 +216,7 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-개념도">세마포어 개념도<a class="hash-link" aria-label="세마포어 개념도에 대한 직접 링크" title="세마포어 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="세마포어-연산">세마포어 연산<a class="hash-link" aria-label="세마포어 연산에 대한 직접 링크" title="세마포어 연산에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/semahpore/#%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4-%EC%97%B0%EC%82%B0">​</a></h3>
-<table><thead><tr><th>구분</th><th>P 연산, Wait</th><th>V 연산, Signal</th></tr></thead><tbody><tr><td>개념</td><td>리소스에 접근하기 위해 다른 태스크가 끝나기까지 대기</td><td>임계영역을 나오면서 다른 태스크가 접근하도록 변경</td></tr><tr><td>로직</td><td>세마포어 S의 Count를 1 감소</td><td>세마포어 S의 CountFmf 1 증가</td></tr><tr><td>슈도코드</td><td><code>P(S) { while S &lt;= 0; S--; }</code></td><td><code>V(S) { S++; }</code></td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>P 연산, Wait</th><th>V 연산, Signal</th></tr></thead><tbody><tr><td>개념</td><td>리소스에 접근하기 위해 다른 태스크가 끝나기까지 대기</td><td>임계영역을 나오면서 다른 태스크가 접근하도록 변경</td></tr><tr><td>로직</td><td>세마포어 S의 Count를 1 감소</td><td>세마포어 S의 Count를 1 증가</td></tr><tr><td>슈도코드</td><td><code>P(S) { while S &lt;= 0; S--; }</code></td><td><code>V(S) { S++; }</code></td></tr></tbody></table>
 <ul>
 <li>세마포어에 접근시킬 스레드의 갯수에 따라 이진 세마포어, 계수형 세마포어 선택</li>
 </ul>
