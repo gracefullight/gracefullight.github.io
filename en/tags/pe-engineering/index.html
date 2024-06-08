@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.790b4b5e.css">
-<script src="/en/assets/js/runtime~main.dc2be594.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.548cfa7d.js" defer="defer"></script>
 <script src="/en/assets/js/main.c8e80108.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -89,10 +89,11 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성도">카나리 테스트 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#카나리-테스트-구성도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-구성요소">카나리 테스트 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#카나리-테스  트-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드 밸런서</td><td>사용자 트래픽을 Canary 배포와 기존 배포에 분산</td><td>트래픽 비율 조절</td></tr><tr><td>Canary 배포</td><td>새로운 버전의 SW 또는 시스템</td><td>제한된 사용자에게만 공개</td></tr><tr><td>기존 배포</td><td>현재 운영 중인 안정적인 버전</td><td>대부분의 사용자에게 서비스 제공</td></tr><tr><td>모니터링 시스템</td><td>각 배포 환경의 성능, 안정성, 오류 등을 실시간 추적 및 비교</td><td>문제 발생 시 즉각적인 대응</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>로드 밸런서</td><td>사용자 트래픽을 Canary 배포와 기존 배포에 분산</td><td>트래픽 비율 조절</td></tr><tr><td>기존 배포</td><td>현재 운영 중인 안정적인 버전</td><td>대부분의 사용자에게 서비스 제공</td></tr><tr><td>Canary 배포</td><td>새로운 버전의 SW 또는 시스템</td><td>제한된 사용자에게만 공개</td></tr><tr><td>모니터링 시스템</td><td>각 배포 환경의 성능, 안정성, 오류 등을 실시간 추적 및 비교</td><td>문제 발생 시 즉각적인 대응</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-적용방안">카나리 테스트 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#카나리-테스트-적용방안">​</a></h3>
 <ul>
-<li>K8S의 Blue, Green 배포 전략을 이용하여 클라우드 기반의 Canary Test 도입 가능</li>
+<li>온프레미스 L4, DNS 사용</li>
+<li>클라우드 K8S의 Blue, Green 배포 전략을 이용하여 클라우드 기반의 Canary Test 도입 가능</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="카나리-테스트-고려사항">카나리 테스트 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#카나리-테스트-고려사항">​</a></h2>
 <ul>
@@ -106,7 +107,7 @@
 <blockquote>
 <p>회전감수이</p>
 </blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회피 Avoidance</td><td>발생 가능성을 원천적으로 제거</td><td>계획변경, 외주업체변경, 범위감소 등</td></tr><tr><td>전가 Transference</td><td>조치에 대한 책임을 제 3자에게 넘김</td><td>보험료, 개런티</td></tr><tr><td>감소 Mitigation</td><td>발생가능성이나 영향력을 줄이는 방안</td><td>프로토타이핑 개발, 덜 복잡한 프로세스 채택</td></tr><tr><td>수용 Acceptance</td><td>아무런 대책없이 수용, 최소한의 계획으로 수용</td><td>능동적, 수동적 수용</td></tr><tr><td>이관 Escalation</td><td>프로젝트 범위를   벗어나거나 관리자 권한 초과시 적용</td><td>이관 후 모니터링 하지 않음</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-engineering/">pe/engineering</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/2024/05/22/all-about-software-engineering/">소프트웨어 공학의 모든 것</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-05-22T13:26:10.869Z">May 22, 2024</time> · <!-- -->18 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="특징">특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#특징">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회피 Avoidance</td><td>발생 가능성을 원천적으로 제거</td><td>계획변경, 외주업체변경, 범위감소 등</td></tr><tr><td>전가 Transference</td><td>조치에 대한 책임을 제 3자에게 넘김</td><td>보험료, 개런티</td></tr><tr><td>감소 Mitigation</td><td>발생가능성이나 영향력을 줄이는 방안</td><td>프로토타이핑 개발, 덜 복잡한 프로세스 채택</td></tr><tr><td>수용 Acceptance</td><td>아무런 대책없이 수용, 최소한의 계획으로 수용</td><td>능동적, 수동적 수용</td></tr><tr><td>이관 Escalation</td><td>프로젝트 범위를 벗어나거나 관리자 권한 초과시 적용</td><td>이관 후 모니터링 하지 않음</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_cJ0C padding--none margin-left--sm"><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe/">pe</a></li><li class="tag_NfWW"><a class="tag_YPIX tagRegular_Aak4" href="/en/tags/pe-engineering/">pe/engineering</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_cZeS"><a href="/en/2024/05/22/all-about-software-engineering/">소프트웨어 공학의 모든 것</a></h2><div class="container_lqpW margin-vert--md"><time datetime="2024-05-22T13:26:10.869Z">May 22, 2024</time> · <!-- -->18 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_AS4B"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_r10D" id="특징">특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#특징">​</a></h2>
 <ul>
 <li>복잡성: Complexity</li>
 <li>순응성: Conformity</li>
@@ -115,9 +116,9 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="종류">종류<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#종류">​</a></h2>
 <ul>
-<li>주문형: 고객, 기업의 요구사항 만족</li>
+<li>주문형: 고객, 기업의 요  구사항 만족</li>
 <li>패키지형</li>
-<li>임  베디드형</li>
+<li>임베디드형</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="위기">위기<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#위기">​</a></h2>
 <ul>
@@ -157,7 +158,7 @@
 <li>리스크 관리</li>
 <li>프로젝트 수행 및 모니터링</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="연구-결과">연구 결과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#연구-결  과">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="연구-결과">연구 결과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#연구-결과">​</a></h2>
 <ul>
 <li>방법: Method</li>
 <li>도구: Tool</li>
@@ -250,7 +251,7 @@
 <li>공학적 접근</li>
 <li>사용자의 적극 참여</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_r10D" id="객체지향-방법론">객체지향 방 법론<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#객체지향-방법론">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_r10D" id="객체지향-방법론">객체지향 방법론<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#객체지향-방법론">​</a></h2>
 <ul>
 <li>실세계를 객체로보고 객체사이 인터랙션을 모델링하는 방법</li>
 <li>대규모 시스템을 클래스로 모듈화하고 캡슐화</li>
@@ -292,7 +293,7 @@
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="소프트웨어-대가-산정-가이드">소프트웨어 대가 산정 가이드<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#소프트웨어-대가-산정-가이드">​</a></h2>
 <ul>
 <li>외부 입력: External Input, 내부 파일의 내용에 영향을 주는 사용자데이터 또는 입력을 트랜잭션 단위로 카운터 (입력, 수정, 삭제)</li>
-<li>외부 출력: External Output, 소프트웨어 외부로 표출되는 사용자 데이터 또는 제어 출력을 트랜젝션 단위로 카운트 (계싼, 통계 그래프 등)</li>
+<li>외부 출력: External Output, 소프트웨어 외부로 표출되는 사용자 데이터 또는 제어 출력을 트랜젝션 단위로 카운트 ( 계싼, 통계 그래프 등)</li>
 <li>내부 논리 파일: Internal Logical File, 소프트웨어에 의해 생성, 사용, 관리되는 파일을 포함하여 시스템 내 존재하는 사용자 데이터 및 제어 정보의 그룹 카운트</li>
 <li>외부 인터페이스 파일: External Interface File, 소프트웨어 시스템 사이에 전다로디거나 공유된 파일 카운트</li>
 <li>외부 조회: External Query, 중간 출력을 생성하는 외부 조회를 카운트</li>
@@ -385,7 +386,7 @@
 <ul>
 <li>목적</li>
 <li>제품 범위</li>
-<li>정의, 동의어,  약어</li>
+<li>정의, 동의어, 약어</li>
 <li>참조문서</li>
 <li>개요</li>
 </ul>
@@ -427,7 +428,7 @@
 <ul>
 <li>도메인지식을 체계화하는 과정</li>
 <li>도메인지식: 업무 프로세스, 기능, 역할, 업무 규칙</li>
-<li> 기능적 모델링: 유스케이스 다이어그램, 액티비티 다이어그램</li>
+<li>기능적 모델링: 유스케이스 다이어그램, 액티비티 다이어그램</li>
 <li>정적 모델링: 클래스 다이어그램, ERD</li>
 <li>동적 모델링: 시퀀스 다이어그램, 협동 다이어그램</li>
 <li>제어 모델링: 액티비티 다이어그램</li>
@@ -456,7 +457,7 @@
 <li>업체 간 경쟁의 확대</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="mas-의-평가-절차-항목-2단계-경쟁">MAS 의 평가 절차, 항목, 2단계 경쟁<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#mas-의-평가-절차-항목-2단계-경쟁">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_r10D" id="mas의-평가-절 차">MAS의 평가 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#mas의-평가-절차">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_r10D" id="mas의-평가-절차">MAS의 평가 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#mas의-평가-절차">​</a></h3>
 <!-- -->
 <ul>
 <li>조달사업법 제13조 기반하여 계약 진행</li>
@@ -506,7 +507,7 @@
 <li>복잡성 감소</li>
 <li>오류 파급효과 최소화</li>
 <li>기능 분리가능, 인터페이스 단순화</li>
-<li>낮은 결합도, 높은  응집도</li>
+<li>낮은 결합도, 높은 응집도</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="응집도와-결합도-개요">응집도와 결합도 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#응집도와-결합도-개요">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="응집도와-결합도의-개념">응집도와 결합도의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#응집도와-결합도의-개념">​</a></h3>
@@ -523,7 +524,7 @@
 <blockquote>
 <p>우논시절통순기</p>
 </blockquote>
-<table><thead><tr><th>종류</th><th>설명</th><th>응집도</th></tr></thead><tbody><tr><td><strong>기</strong>능적</td><td>모든 요소가 단일 기능 수행</td><td>높음</td></tr><tr><td><strong>순</strong>차적</td><td>한 기능의 출력이 다른 기능의 입력으로 사용</td><td>▲</td></tr><tr><td><strong>통</strong>신적</td><td>동일한 입출력 데이터로 다른 기능 수행</td><td>⎮</td></tr><tr><td><strong>절</strong>차적</td><td>기능 요소가 반드시 특정 순서대로 실행</td><td>⎮</td></tr><tr><td>일<strong>시</strong>적</td><td>기능 요소가 모두 같은 시간에 실행</td><td>⎮</td></tr><tr><td><strong>논</strong>리적</td><td>논리적으로 유사하나 관계가 밀접하지 않음</td><td>⎮</td></tr><tr><td><strong>우</strong>연적</td><td>모듈 내 요소가 연관이 없음</td><td>낮음</td></tr></tbody></table>
+<table><thead><tr><th>종류</th><th>설명</th><th> 응집도</th></tr></thead><tbody><tr><td><strong>기</strong>능적</td><td>모든 요소가 단일 기능 수행</td><td>높음</td></tr><tr><td><strong>순</strong>차적</td><td>한 기능의 출력이 다른 기능의 입력으로 사용</td><td>▲</td></tr><tr><td><strong>통</strong>신적</td><td>동일한 입출력 데이터로 다른 기능 수행</td><td>⎮</td></tr><tr><td><strong>절</strong>차적</td><td>기능 요소가 반드시 특정 순서대로 실행</td><td>⎮</td></tr><tr><td>일<strong>시</strong>적</td><td>기능 요소가 모두 같은 시간에 실행</td><td>⎮</td></tr><tr><td><strong>논</strong>리적</td><td>논리적으로 유사하나 관계가 밀접하지 않음</td><td>⎮</td></tr><tr><td><strong>우</strong>연적</td><td>모듈 내 요소가 연관이 없음</td><td>낮음</td></tr></tbody></table>
 <ul>
 <li>가능한 높은 응집도를 추구하여 유지보수 용이성 확보</li>
 <li>모듈 간 결합도는 최소화하여 각 모듈은 높은 응집도 확보</li>
@@ -533,7 +534,7 @@
 <blockquote>
 <p>내공외제스자</p>
 </blockquote>
-<table><thead><tr><th>종류</th><th>설명</th><th>결합도</th></tr></thead><tbody><tr><td><strong>자</strong>료</td><td>모듈 간 파라미터 전달</td><td>낮음</td></tr><tr><td><strong>스</strong>탬프</td><td>모듈 간 자료구조 전달</td><td>⎮</td></tr><tr><td><strong>제</strong>어</td><td>다른 모듈을 제어하기 위해 플래그 전송</td><td>⎮</td></tr><tr><td><strong>외</strong>부</td><td>모듈이 SW외부 환경과 연관</td><td>⎮</td></tr><tr><td><strong>공</strong>통</td><td>모듈들이 공통 데이터 참조</td><td>▼</td></tr><tr><td><strong>내</strong>용</td><td>다른 모듈의 내부 데이터 변경</td><td>높음</td></tr></tbody></table>
+<table><thead><tr><th>종류</th><th>설명</th><th>결합도</th></tr></thead><tbody><tr><td><strong>자</strong>료</td><td>모듈 간 파라미터 전달</td><td>낮음</td></tr><tr><td><strong>스</strong>탬프</td><td>모듈 간 자료구조 전달</td><td>⎮</td></tr><tr><td><strong>제</strong>어</td><td>다른 모듈을 제어하기 위해 플래그 전송</td><td>⎮</td></tr><tr><td><strong>외</strong>부</td><td>모듈이 SW외부 환경과 연관</td><td>⎮</td></tr><tr><td><strong>공</strong>통</td><td>모듈들이 공통 데이  터 참조</td><td>▼</td></tr><tr><td><strong>내</strong>용</td><td>다른 모듈의 내부 데이터 변경</td><td>높음</td></tr></tbody></table>
 <ul>
 <li>모듈 상호간 낮은 결합도 추구</li>
 <li>모듈 간 사이드 이펙트(리플 이펙트) 최소화</li>
@@ -578,7 +579,7 @@
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="핵심요소">핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#핵심요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>폭포수</th><th>애자일</th></tr></thead><tbody><tr><td>요구사항기준</td><td>요구사항 정의시 모든 요구사항 정의 필요</td><td>한 스프린트 주기 (2w-1m)에 가능한 만큼 정의</td></tr><tr><td>테스트</td><td>기능 구현 후 단위/통합/시스템 테스트</td><td>TDD 기반의 테스트 주도 개발</td></tr><tr><td>프로세스</td><td>프로세스 준수 강조</td><td>리뷰와 테스트를 토대로 유연하게 적용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_r10D" id="폭포수-애자일-방법론의-적용방안">폭포수, 애자일 방법론의 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#폭포수-애자일-방법론의-적용방안">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>대국민 서비스는 전통적인 기능을 제공하는 경우가 많으므로 신 RFP 기반의 폭포수 개발 방법론 도입</td><td>레거시어플리케이션</td></tr><tr><td>금융</td><td>  전통적인 여신/이체 기능과 신규 서비스 기능을 나눠 두 가지 개발 방법론 선택</td><td>복합적</td></tr><tr><td>민간</td><td>비지니스 니즈에 대응하기 위해 애자일 개발 방법론 도입</td><td>인터넷 비지니스, 이커머스</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>대국민 서비스는 전통적인 기능을 제공하는 경우가 많으므로 신 RFP 기반의 폭포수 개발 방법론 도입</td><td>레거시어  플리케이션</td></tr><tr><td>금융</td><td>전통적인 여신/이체 기능과 신규 서비스 기능을 나눠 두 가지 개발 방법론 선택</td><td>복합적</td></tr><tr><td>민간</td><td>비지니스 니즈에 대응하기 위해 애자일 개발 방법론 도입</td><td>인터넷 비지니스, 이커머스</td></tr></tbody></table>
 <p>인터넷 비지니스에 가까우면 애자일 개발방법론, 전통적인 기능을 제공하면 폭포수 개발방법론 적용.</p>
 <h2 class="anchor anchorWithStickyNavbar_r10D" id="기출">기출<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-engineering/#기출">​</a></h2>
 <ul>
