@@ -28,16 +28,26 @@ graph LR
 ### 디지털 트랜스포메이션의 구성도
 
 ```mermaid
-graph TB
-  subgraph 디지털트랜스포메이션
-    전략
-    프로세스
-    기술
-    고객경험
-    문화
+block-beta
 
-    전략 --- 프로세스 --- 기술 --- 고객경험 --- 문화 --- 전략
+  columns 5
+  blockArrowId3<["&nbsp;&nbsp;&nbsp;"]>(up):5
+  혁신["신규 비지니스 모델 / 서비스 혁신"]:5
+
+  프로세스:1
+  디지털씽킹:4
+
+  신기술:1
+  block:group1:4
+    AI
+    BigData
+    IoT
+    Robot
+    BlockChain
   end
+
+  IT플랫폼:1
+  클라우드:4
 ```
 
 ### 디지털 트랜스포메이션 구성요소
