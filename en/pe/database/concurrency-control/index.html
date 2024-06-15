@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.06273134.css">
-<script src="/en/assets/js/runtime~main.3456c6b4.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.9e13a109.js" defer="defer"></script>
 <script src="/en/assets/js/main.60718d68.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -46,7 +46,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="병행제어-미수행시-문제점과-해결기법">병행제어 미수행시 문제점과 해결기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/pe/database/concurrency-control/#병행제어-미수행시-문제점과-해결기법">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="병행제어-미수행시-문제점">병행제어 미수행시 문제점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/pe/database/concurrency-control/#병행제어-미수행시-문제점">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>갱실분실문제</td><td>트랜잭션의 동일 데이터 동시 갱신시 발생</td><td>고립성 위배</td></tr><tr><td>불일치 문제</td><td>다중 사용자 트랜잭션들이 동시 실행시 모순된 결과 반환</td><td>일관성, 고립성 위배</td></tr><tr><td>연쇄복귀 문제</td><td>한 트랜잭션이 실패 후 롤백될 때 다른 트랜잭션 처리 취소 불가</td><td>일관성, 원자성 위배</td></tr></tbody></table>
+<table><thead><tr><th>문제</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>갱실분실</td><td>트랜잭션의 동일 데이터 동시 갱신시 발생</td><td>고립성 위배</td></tr><tr><td>불일치</td><td>다중 사용자 트랜잭션들이 동시 실행시 모순된 결과 반환</td><td>일관성, 고립성 위배</td></tr><tr><td>연쇄복귀</td><td>한 트랜잭션이 실패 후 롤백될 때 다른 트랜잭션 처리 취소 불가</td><td>일관성, 원자성 위배</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="병행제어-해결기법">병행제어 해결기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/pe/database/concurrency-control/#병행제어-해결기법">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Locking</td><td>트랜잭션 사용 자원에 대해 상호배제 기능 제공</td><td>DB락, Table락, Row락, Column락</td></tr><tr><td>2PL</td><td>모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행</td><td>직렬가능성 보장, 교착상태 예방필요</td></tr><tr><td>Timestamp</td><td>트랜잭션 입력시 Timestamp 시간 순으로 직렬화</td><td>직렬가능성 보장, 교착상태 방지</td></tr><tr><td>낙관적 기법</td><td>트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사</td><td>Read, Validate, Write 단계</td></tr><tr><td>다중버전 병행제어</td><td>여러 버전 저장 후 일관성이 보장된 트랜잭션 선택</td><td>동시성 우수, I/O오버헤드 증가</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="병행제어-고려사항">병행제어 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/pe/database/concurrency-control/#병행제어-고려사항">​</a></h2>
