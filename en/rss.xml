@@ -4,10 +4,32 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 15 Jun 2024 02:10:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 15 Jun 2024 02:23:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[데이터 거버넌스]]></title>
+            <link>https://gracefullight.dev/en/pe/database/data-governance/</link>
+            <guid>https://gracefullight.dev/en/pe/database/data-governance/</guid>
+            <pubDate>Sat, 15 Jun 2024 02:23:02 GMT</pubDate>
+            <description><![CDATA[Data Governance]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스의-개념">데이터 거버넌스의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>데이터 생성, 저장, 공유, 사용, 보관, 삭제 방법에 적용되는 내부 데이터 표준과 정책, 관리 프로세스를 설정하는 전사 데이터 통치체계</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-개념도-구성요소-적용방안">데이터 거버넌스 개념도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-개념도">데이터 거버넌스 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-구성요소">데이터 거버넌스 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원칙</td><td>데이터 유지관리 위한 지침 및 가이드</td><td>보안 품질 기준, 변경관리</td></tr><tr><td>조직</td><td>데이터를 관리할 조직의 역할과 책임</td><td>데이터 관리자, 소유자, 데이터 아키텍트</td></tr><tr><td>프로세스</td><td>데이터 관리를 위한 활동과 체계</td><td>작업절차 모니터링, 활용관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-적용방안">데이터 거버넌스 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CDO</td><td>데이터거버넌스 전략수립, 실행</td><td>조직문화 조성</td></tr><tr><td>-</td><td>데이터거버넌스 성과측정, 개선</td><td>성과지표 설정, 주기적 측정</td></tr><tr><td>DA</td><td>데이터 구조관리</td><td>데이터 표준, 모델 설계 관리</td></tr><tr><td>-</td><td>데이터 품질관리</td><td>메타데이터 관리, 데이터 정제</td></tr><tr><td>DBA</td><td>데이터 접근통제 관리</td><td>데이터 오남용 방지</td></tr><tr><td>-</td><td>데이터 변경이력 관리</td><td>데이터흐름 추적, 무결성 보장</td></tr><tr><td>User</td><td>데이터 활용, 가치 창출</td><td>데이터 분석, 활용, 의사결정 지원</td></tr><tr><td>-</td><td>데이터 보안 준수</td><td>데이터 보안 정책 준수</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-성숙-단계">데이터 거버넌스 성숙 단계<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%84%B1%EC%88%99-%EB%8B%A8%EA%B3%84">​</a></h2>
+<table><thead><tr><th>단계</th><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>5단계</td><td>가치창출</td><td>AI, 빅데이터 기반 신규가치 창출</td></tr><tr><td>4단계</td><td>위험대응</td><td>정량화된 품질관리, 사전 위험 대응</td></tr><tr><td>3단계</td><td>통합경영</td><td>데이터 품질관리, 의사결정 체계 도입</td></tr><tr><td>2단계</td><td>프로세스화</td><td>표준화된 데이터 프로세스 구축</td></tr><tr><td>1단계</td><td>도입</td><td>데이터 거버넌스 필요성 인식, 기본정책 수립</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/database</category>
+        </item>
         <item>
             <title><![CDATA[데이터 표준화]]></title>
             <link>https://gracefullight.dev/en/pe/database/data-standardization/</link>
@@ -48,7 +70,7 @@
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-개념도-세부절차-산정기준">데이터베이스 용량산정방법 개념도, 세부절차, 산정기준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EC%82%B0%EC%A0%95%EA%B8%B0%EC%A4%80">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-개념도">데이터베이스 용량산정방법 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-세부절차">데이터베이스 용량산정방법 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EF%BF%BD%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-세부절차">데이터베이스 용량산정방법 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EF%BF%BD%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>구분</th><th>세부절차</th><th>내용</th></tr></thead><tbody><tr><td>오브젝트별 용량산정</td><td>테이블 크기 계산</td><td>테이블 Row 평균 수 계산</td></tr><tr><td>-</td><td>-</td><td>테이블 요구 블록, 메서드 계산</td></tr><tr><td>테이블스페이스 용량산정</td><td>테이블 용량 계산</td><td>테이블 크기기반 스페이스 용량 계산</td></tr><tr><td>-</td><td>여유 용량 계산</td><td>대략 40% 여유 스페이스 확보</td></tr><tr><td>디스크 용량산정</td><td>데이터 용량 계산</td><td>DB설치, 관리 위한 시스템 용량 포함</td></tr><tr><td>-</td><td>시스템 사용용량 계산</td><td>-</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-기준">데이터베이스 용량산정방법 기준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B8%B0%EC%A4%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>항목</th><th>비고</th></tr></thead><tbody><tr><td>트랜잭션 수</td><td>연간 트랜잭션 현황, 일평균 현황</td><td>1,000 TPS</td></tr><tr><td>-</td><td>피크타임 현황, 예상증가량</td><td>30%</td></tr><tr><td>온라인업무량</td><td>CRUD별 레코드 크기</td><td>300건</td></tr><tr><td>배치업무량</td><td>온라인 업무에 대한 배치업무비</td><td>9:1</td></tr><tr><td>데이터백업</td><td>데이터 백업여부, 레이드 구성, 백업량</td><td>50G, RAID5</td></tr><tr><td>데이터유형</td><td>이미지, 텍스트, 미디어 파일 비율</td><td>1:1:3</td></tr></tbody></table>
@@ -267,7 +289,7 @@
 <ul>
 <li>Azure Quantum 등 CSP 제공 양자컴퓨터 서비스 모델 활용</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="양�자컴퓨터와-기존-컴퓨터-비교">양자컴퓨터와 기존 컴퓨터 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%99%80-%EA%B8%B0%EC%A1%B4-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EA%B5%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="양자컴퓨터와-기존-컴퓨터-비교">양자컴퓨터와 기존 컴퓨터 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0%EC%99%80-%EA%B8%B0%EC%A1%B4-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>양자컴퓨터</th><th>폰노이만컴퓨터</th></tr></thead><tbody><tr><td>정보단위</td><td>큐비트 0, 1, 중첩</td><td>비트 0, 1</td></tr><tr><td>연산방식</td><td>병렬</td><td>순차</td></tr><tr><td>특성</td><td>고속성</td><td>범용성</td></tr><tr><td>활용분야</td><td>과학계산, 암호해독</td><td>일반 정보처리</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="양자컴퓨터-발전방향">양자컴퓨터 발전방향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/convergence/quantum-computer/#%EC%96%91%EC%9E%90%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
 <ul>
@@ -276,32 +298,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[DX, 디지털 트랜스포메이션]]></title>
-            <link>https://gracefullight.dev/en/pe/management/digital-transformation/</link>
-            <guid>https://gracefullight.dev/en/pe/management/digital-transformation/</guid>
-            <pubDate>Mon, 03 Jun 2024 11:49:04 GMT</pubDate>
-            <description><![CDATA[Digital Transformation]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션의-개념">디지털 트랜스포메이션의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>ICT신기술을 활용하여 기업의 가치사슬 전반을 디지털로 통합하기 위한 경영혁신전략</li>
-<li>급변하는 디지털 시장에서의 고객 경험 향상과 새로운 BM 창출을 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션의-구성도-구성요소-추진전략">디지털 트랜스포메이션의 구성도, 구성요소, 추진전략<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%B6%94%EC%A7%84%EC%A0%84%EB%9E%B5">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션의-구성도">디지털 트랜스포메이션의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션-구성요소">디지털 트랜스포메이션 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>전략</td><td>명확하고 구체적인 전략 수립으로 방향성, 목표 설정</td><td>로드맵, KPI 설정</td></tr><tr><td>프로세스</td><td>업무효율성과 생산성 향상을 DX 극대화</td><td>기존 프로세스 분석, 개선, RPA 도입</td></tr><tr><td>기술</td><td>데이터 기반 기술인프라 구축, 고도화</td><td>클라우드, AI, 빅데이터</td></tr><tr><td>문화</td><td>구성원의 학습과 성장을 위한 조직문화 조성</td><td>유연한 업무 방식</td></tr><tr><td>고객경험</td><td>고객 중심적 사고방식, 맞춤형 서비스 제공</td><td>추천 시스템 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션-추진전략">디지털 트랜스포메이션 추진전략<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EC%B6%94%EC%A7%84%EC%A0%84%EB%9E%B5">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>리더</td><td>비전 및 전략 제시, 조직문화 혁신 등 방향성, 변화 주도</td><td>전략적 연계, 자원관리</td></tr><tr><td>매니저</td><td>전략 실행, 프로젝트 관리 등 DX 전략 수행 및 성과 창출</td><td>성과관리, 위험관리</td></tr><tr><td>오퍼레이터</td><td>새로운 기술 학습 및 활용, 프로세스 개선 등 DX 업무 적용</td><td>가치 창출</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="디지털-트랜스포메이션-고려사항">디지털 트랜스포메이션 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/digital-transformation/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A9%94%EC%9D%B4%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>디지털 전환 후의 의사 결정 지원과 성과 분석을 위하여 데이터마트 도입을 우선시 해야함.</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/management</category>
         </item>
     </channel>
 </rss>
