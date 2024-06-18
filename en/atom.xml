@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-18T08:04:20.913Z</updated>
+    <updated>2024-06-18T12:16:34.035Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[SRS, 요구사항 명세서]]></title>
+        <id>https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/</id>
+        <link href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/"/>
+        <updated>2024-06-18T12:16:34.035Z</updated>
+        <summary type="html"><![CDATA[Software Requirements Specifications]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-개념">요구사항 명세서 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SDLC 전 단계에서 검토, 승인, 평가의 기준이 되는 SW가 갖추어야할 기능, 성능, 제약조건 등이 기술된 명세서</li>
+<li>요구사항의 애매모호성을 제거하고, FP가 도출 가능한 수준까지 작성하여 의사소통 비용절감 및 변경관리용이성 증대를 위해 필요.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서의-구성도-핵심요소-활용방안">요구사항 명세서의 구성도, 핵심요소, 활용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서의-구성도">요구사항 명세서의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-핵심요소">요구사항 명세서 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기능요구사항</td><td>시스템이 수행할 기능, 제공해야할 서비스 요구사항</td><td>사용자 관점</td></tr><tr><td>성능요구사항</td><td>시스템 속도, 처리량, 응답시간 등 시스템 성능 요구사항</td><td>측정가능한 구체적 수치</td></tr><tr><td>인터페이스요구사항</td><td>외부시스템 연동, 하드웨어와 상호작용 방식에 대한 요구사항</td><td>데이터 포맷, 프로토콜</td></tr><tr><td>설계 제약조건</td><td>시스템 설계, 구현에 제약을 가하는 요소 설명</td><td>개발환경, 표준 준수</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-활용방안">요구사항 명세서 활용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설계</td><td>시스템 아키텍처, 인터페이스, UI/UX</td><td>요구사항 충족 설계</td></tr><tr><td>구현</td><td>코딩, 단위테스트 기준</td><td>기능 요구사항 준수</td></tr><tr><td>테스트</td><td>테스트케이스 설계, 요구사항 검증</td><td>결함 문서화</td></tr><tr><td>유지보수</td><td>변경관리, 사용자 교육, 개선</td><td>피드백 반영</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-작성시-고려사항">요구사항 명세서 작성시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>명확하고 일관된 용어를 사용하여 이해관계자 간 의사소통의 투명성 제고</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/engineering" term="pe/engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[합성데이터]]></title>
         <id>https://gracefullight.dev/en/pe/database/synthetic-data/</id>
@@ -50,7 +79,7 @@
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="텍스트마이닝과-오피니언마이닝의-구성요소">텍스트마이닝과 오피니언마이닝의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%88%EC%9D%B4%EB%8B%9D%EA%B3%BC-%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="텍스트마이닝-구성요소">텍스트마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개념</td><td>텍스트데이터에서 패턴, 정보 추출</td><td>다양한 비정형데이터 처리</td></tr><tr><td>절차</td><td>텍스트 수집 -&gt; 텍스트 전처리 -&gt; 특징 추출 -&gt; 모델 구축 -&gt; 패턴 분석</td><td>데이터 전처리시 이상치 제거</td></tr><tr><td>주요기법</td><td>표준화, 불용어제거, TF-IDF</td><td>NLP, ML기법 활용</td></tr><tr><td>사례</td><td>문서분류, 텍스트요약</td><td>기업문서관리, 정보검색시스템</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="오피니언마이닝-구성��요소">오피니언마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="오피니언마이닝-구성요�소">오피니언마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개념</td><td>텍스트데이터에서 감정, 의견분석</td><td>긍정, 부정 분류</td></tr><tr><td>절차</td><td>SNS데이터수집 -&gt; 텍스트 전처리 -&gt; 감성사전구축 -&gt; 감정분류모델 구축 -&gt; 결과시각화</td><td>감성사전의 품질 중요</td></tr><tr><td>주요기법</td><td>감성사전 구축, 감성분석 모델</td><td>SVM, 로직스틱회귀, ML기법 활용</td></tr><tr><td>사례</td><td>리뷰분석, SNS분석, 피드백분석</td><td>마케팅, 고객전략 수립</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="오피니언마이닝-고려사항">오피니언마이닝 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -270,36 +299,6 @@
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>데이터 표준화 요구사항 수집</td><td>현업부서 인터뷰, 설문조사, 표준화 현황 진단</td><td>데이터현황 파악, 데이터 표준화 우선순위 결정</td></tr><tr><td>데이터 표준 정의</td><td>데이터 표준 용어사전 구축, 데이터 표준 메타데이터 정의</td><td>사내, 국내외 표준 참고, 모델링 도구 사용</td></tr><tr><td>데이터 표준 확정</td><td>데이터 표준 검토, 승인, 데이터 표준 확정, 공표</td><td>승인 절차 수립, 배포 계획 수립</td></tr><tr><td>데이터 표준 관리</td><td>데이터 표준 변경관리 절차수립, 데이터 표준 준수 여부 모니터링</td><td>관리조직 운영, 관리시스템 구축</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화-기대효과">데이터 표준화 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
 <table><thead><tr><th>구분</th><th>기대효과</th><th>비고</th></tr></thead><tbody><tr><td>품질측면</td><td>데이터 일관성 확보</td><td>데이터 분석, 의사결정 지원</td></tr><tr><td>-</td><td>데이터 품질 향상</td><td>불일치 감소, 신뢰성 확보</td></tr><tr><td>연계측면</td><td>데이터 통합 용이성</td><td>프로세스 표준화</td></tr><tr><td>-</td><td>상호 운용성 향상</td><td>업계 표준 준수, 타조직과의 협업 용이</td></tr><tr><td>기업측면</td><td>비용절감</td><td>데이터 관리, 유지보수 비용 절감</td></tr><tr><td>-</td><td>기업전략강화</td><td>데이터 마트 도입, 기업경쟁력 강화</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터베이스 용량산정방법]]></title>
-        <id>https://gracefullight.dev/en/pe/database/데이터베이스-용량산정/</id>
-        <link href="https://gracefullight.dev/en/pe/database/데이터베이스-용량산정/"/>
-        <updated>2024-06-15T01:58:50.328Z</updated>
-        <summary type="html"><![CDATA[DB Size Estimation]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-개념">데이터베이스 용량산정방법 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>설계된 논리모델을 물리 데이터베이스로 구축할 때, 저장된 데이터양과 인덱스 등 오브젝트가 필요한 공간을 산정하는 방법</li>
-<li>저장공간의 효율적인 사용과 확장성 보장, 디스크 입출력 경합 최소화, 데이터베이스 오브젝트의 익스텐트 발생 감소로 성능향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-개념도-세부절차-산정기준">데이터베이스 용량산정방법 개념도, 세부절차, 산정기준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EC%82%B0%EC%A0%95%EA%B8%B0%EC%A4%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-개념도">데이터베이스 용량산정방법 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-세부절차">데이터베이스 용량산정방법 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EF%BF%BD%EF%BF%BD%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>세부절차</th><th>내용</th></tr></thead><tbody><tr><td>오브젝트별 용량산정</td><td>테이블 크기 계산</td><td>테이블 Row 평균 수 계산</td></tr><tr><td>-</td><td>-</td><td>테이블 요구 블록, 메서드 계산</td></tr><tr><td>테이블스페이스 용량산정</td><td>테이블 용량 계산</td><td>테이블 크기기반 스페이스 용량 계산</td></tr><tr><td>-</td><td>여유 용량 계산</td><td>대략 40% 여유 스페이스 확보</td></tr><tr><td>디스크 용량산정</td><td>데이터 용량 계산</td><td>DB설치, 관리 위한 시스템 용량 포함</td></tr><tr><td>-</td><td>시스템 사용용량 계산</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정방법-기준">데이터베이스 용량산정방법 기준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95%EB%B0%A9%EB%B2%95-%EA%B8%B0%EC%A4%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>항목</th><th>비고</th></tr></thead><tbody><tr><td>트랜잭션 수</td><td>연간 트랜잭션 현황, 일평균 현황</td><td>1,000 TPS</td></tr><tr><td>-</td><td>피크타임 현황, 예상증가량</td><td>30%</td></tr><tr><td>온라인업무량</td><td>CRUD별 레코드 크기</td><td>300건</td></tr><tr><td>배치업무량</td><td>온라인 업무에 대한 배치업무비</td><td>9:1</td></tr><tr><td>데이터백업</td><td>데이터 백업여부, 레이드 구성, 백업량</td><td>50G, RAID5</td></tr><tr><td>데이터유형</td><td>이미지, 텍스트, 미디어 파일 비율</td><td>1:1:3</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터베이스-용량산정-고려사항">데이터베이스 용량산정 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%9A%A9%EB%9F%89%EC%82%B0%EC%A0%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>개발, 테스트, 스테이징 환경에 필요한 추가용량</li>
-<li>콜드, 핫 데이터 분리를 위한 보존, 아카이빙 정책 고려</li>
-</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
