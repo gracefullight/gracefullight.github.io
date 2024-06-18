@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-18T12:16:34.035Z</updated>
+    <updated>2024-06-18T15:05:29.226Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[테슬라 마스터 플랜]]></title>
+        <id>https://gracefullight.dev/2024/06/19/tesla-master-plan/</id>
+        <link href="https://gracefullight.dev/2024/06/19/tesla-master-plan/"/>
+        <updated>2024-06-18T15:05:29.226Z</updated>
+        <summary type="html"><![CDATA[테슬라 마스터 플랜 취합]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="마스터-플랜">마스터 플랜<a class="hash-link" aria-label="마스터 플랜에 대한 직접 링크" title="마스터 플랜에 대한 직접 링크" href="https://gracefullight.dev/2024/06/19/tesla-master-plan/#%EB%A7%88%EC%8A%A4%ED%84%B0-%ED%94%8C%EB%9E%9C">​</a></h2>
+<ul>
+<li><a href="https://www.tesla.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me" target="_blank" rel="noopener noreferrer">#1 The Secret Tesla Motors Master Plan (just between you and me)</a></li>
+<li><a href="https://www.tesla.com/blog/master-plan-part-deux" target="_blank" rel="noopener noreferrer">#2 Master Plan, Part Deux</a></li>
+<li><a href="https://www.tesla.com/blog/master-plan-part-3" target="_blank" rel="noopener noreferrer">#3 Master Plan Part 3</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="비교">비교<a class="hash-link" aria-label="비교에 대한 직접 링크" title="비교에 대한 직접 링크" href="https://gracefullight.dev/2024/06/19/tesla-master-plan/#%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>항목</th><th>마스터 플랜 1</th><th>마스터 플랜 2</th><th>마스터 플랜 3</th></tr></thead><tbody><tr><td>작성자</td><td>Elon Musk</td><td>Elon Musk</td><td>Tesla Contributors</td></tr><tr><td>작성일</td><td>2006-08-02</td><td>2016-07-20</td><td>2023-04-05</td></tr><tr><td>주요 목표</td><td>1. 고성능 전기 스포츠카 제작<br>2. 중간 가격대의 차량 개발<br>3. 저렴한 고량 생산 차량 개발<br>4. 태양광 에너지 제공</td><td>1. 에너지 생성 및 저장 통합<br>2. 전기차 제품 라인 확장<br>3. 자율주행 기술 개발<br>4. 차량 공유 기능 제공</td><td>1. 기존 전력망을 재생 에너지로 전환<br>2. 전기차로 전환<br>3. 히트 펌프 사용<br>4. 고온 열 공급 및 수소 생산 전기화<br>5. 지속 가능한 항공기 및 선박 연료 공급<br>6. 지속 가능한 에너지 경제 제조</td></tr><tr><td>핵심 전략</td><td>고가의 스포츠카를 통해 자금을 조달하고, 이를 바탕으로 저가의 대량 생산 차량을 개발하여 지속 가능한 에너지로의 전환을 가속화</td><td>태양광 에너지와 에너지 저장을 통합하고, 자율주행 기술을 개발하며, 차량 공유 옵션을 제공하여 소유 비용을 절감</td><td>전 세계 에너지 시스템을 재생 가능한 에너지로 전환하고, 에너지 효율성을 높이며, 지속 가능한 에너지 인프라 확장</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="현황">현황<a class="hash-link" aria-label="현황에 대한 직접 링크" title="현황에 대한 직접 링크" href="https://gracefullight.dev/2024/06/19/tesla-master-plan/#%ED%98%84%ED%99%A9">​</a></h2>
+<ul>
+<li>마스터 플랜2의 4단계가지 온 것 같다. 다음은 어떤 시대가 올까..</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SRS, 요구사항 명세서]]></title>
         <id>https://gracefullight.dev/pe/engineering/software-requirements-specifications/</id>
@@ -21,11 +45,11 @@
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서의-구성도-핵심요소-활용방안">요구사항 명세서의 구성도, 핵심요소, 활용방안<a class="hash-link" aria-label="요구사항 명세서의 구성도, 핵심요소, 활용방안에 대한 직접 링크" title="요구사항 명세서의 구성도, 핵심요소, 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서의-구성도">요구사항 명세서의 구성도<a class="hash-link" aria-label="요구사항 명세서의 구성도에 대한 직접 링크" title="요구사항 명세서의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-핵심요소">요구사항 명세서 핵심요소<a class="hash-link" aria-label="요구사항 명�세서 핵심요소에 대한 직접 링크" title="요구사항 명세서 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-핵심요소">요구사항 명세서 핵심요소<a class="hash-link" aria-label="요구사항 �명세서 핵심요소에 대한 직접 링크" title="요구사항 명세서 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기능요구사항</td><td>시스템이 수행할 기능, 제공해야할 서비스 요구사항</td><td>사용자 관점</td></tr><tr><td>성능요구사항</td><td>시스템 속도, 처리량, 응답시간 등 시스템 성능 요구사항</td><td>측정가능한 구체적 수치</td></tr><tr><td>인터페이스요구사항</td><td>외부시스템 연동, 하드웨어와 상호작용 방식에 대한 요구사항</td><td>데이터 포맷, 프로토콜</td></tr><tr><td>설계 제약조건</td><td>시스템 설계, 구현에 제약을 가하는 요소 설명</td><td>개발환경, 표준 준수</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-활용방안">요구사항 명세서 활용방안<a class="hash-link" aria-label="요구사항 명세서 활용방안에 대한 직접 링크" title="요구사항 명세서 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설계</td><td>시스템 아키텍처, 인터페이스, UI/UX</td><td>요구사항 충족 설계</td></tr><tr><td>구현</td><td>코딩, 단위테스트 기준</td><td>기능 요구사항 준수</td></tr><tr><td>테스트</td><td>테스트케이스 설계, 요구사항 검증</td><td>결함 문서화</td></tr><tr><td>유지보수</td><td>변경관리, 사용자 교육, 개선</td><td>피드백 반영</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-작성시-고려사항">요구사항 명세서 작성시 고려사항<a class="hash-link" aria-label="요구사항 ��명세서 작성시 고려사항에 대한 직접 링크" title="요구사항 명세서 작성시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_NGK6" id="요구사항-명세서-작성시-고려사항">요구사항 명세서 작성시 고려사항<a class="hash-link" aria-label="요구사항 명세서 작성시 고려사항에 대한 직접 링크" title="요구사항 명세서 작성시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>명확하고 일관된 용어를 사용하여 이해관계자 간 의사소통의 투명성 제고</li>
 </ul>]]></content>
@@ -236,7 +260,7 @@
 <li>인과관계: 독립변인이 종속변인에 영향을 미치는지 둘 간의 관계성 분석</li>
 <li>상관관계: 서열척도, 비율척도, 등간척도로 측정된 변수 간 관련성 분석</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="상관관계-인과관계-구성요소">상관관계, 인과관계 구성요소<a class="hash-link" aria-label="상관관계, 인과관계 구성요소에 대한 직접 링크" title="상관관계, ��인과관계 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/database/bigdata-analytics/#%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%9D%B8%EA%B3%BC%EA%B4%80%EA%B3%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_NGK6" id="상관관계-인과관계-구성요소">상관관계, 인과관계 구성요소<a class="hash-link" aria-label="상관관계, 인과관계 구성요소에 대한 직접 링크" title="상관관계, 인과관계 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/database/bigdata-analytics/#%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%9D%B8%EA%B3%BC%EA%B4%80%EA%B3%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>상관관계</th><th>인과관계</th></tr></thead><tbody><tr><td>분석목적</td><td>파생, 의존관계 분석</td><td>원인, 결과 관계 분석</td></tr><tr><td>분석방법</td><td>상관분석, 회귀분석, 산점도</td><td>인과실험, 회귀분석</td></tr><tr><td>특징</td><td>양, 음, 무상관 관계</td><td>인과성, 시간적 선후관계</td></tr><tr><td>관계</td><td>상호의존성, 상호관계성</td><td>원인과 결과</td></tr></tbody></table>
 <ul>
 <li>상관관계는 인과관계의 필요조건이나 충분조건은 아님</li>
@@ -269,36 +293,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CDO</td><td>데이터거버넌스 전략수립, 실행</td><td>조직문화 조성</td></tr><tr><td>-</td><td>데이터거버넌스 성과측정, 개선</td><td>성과지표 설정, 주기적 측정</td></tr><tr><td>DA</td><td>데이터 구조관리</td><td>데이터 표준, 모델 설계 관리</td></tr><tr><td>-</td><td>데이터 품질관리</td><td>메타데이터 관리, 데이터 정제</td></tr><tr><td>DBA</td><td>데이터 접근통제 관리</td><td>데이터 오남용 방지</td></tr><tr><td>-</td><td>데이터 변경이력 관리</td><td>데이터흐름 추적, 무결성 보장</td></tr><tr><td>User</td><td>데이터 활용, 가치 창출</td><td>데이터 분석, 활용, 의사결정 지원</td></tr><tr><td>-</td><td>데이터 보안 준수</td><td>데이터 보안 정책 준수</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-거버넌스-성숙-단계">데이터 거버넌스 성숙 단계<a class="hash-link" aria-label="데이터 거버넌스 성숙 단계에 대한 직접 링크" title="데이터 거버넌스 성숙 단계에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%84%B1%EC%88%99-%EB%8B%A8%EA%B3%84">​</a></h2>
 <table><thead><tr><th>단계</th><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>5단계</td><td>가치창출</td><td>AI, 빅데이터 기반 신규가치 창출</td></tr><tr><td>4단계</td><td>위험대응</td><td>정량화된 품질관리, 사전 위험 대응</td></tr><tr><td>3단계</td><td>통합경영</td><td>데이터 품질관리, 의사결정 체계 도입</td></tr><tr><td>2단계</td><td>프로세스화</td><td>표준화된 데이터 프로세스 구축</td></tr><tr><td>1단계</td><td>도입</td><td>데이터 거버넌스 필요성 인식, 기본정책 수립</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 표준화]]></title>
-        <id>https://gracefullight.dev/pe/database/data-standardization/</id>
-        <link href="https://gracefullight.dev/pe/database/data-standardization/"/>
-        <updated>2024-06-15T02:10:12.068Z</updated>
-        <summary type="html"><![CDATA[Data Standardization]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화의-개념">데이터 표준화의 개념<a class="hash-link" aria-label="데이터 표준화의 개념에 대한 직접 링크" title="데이터 표준화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>시스템별로 산재된 데이터, 정보에 대한 명칭, 정의, 형식, 규칙에 대한 원칙을 수립하여 이를 전사적으로 적용하는 활동</li>
-<li>데이터 불일치, 적시성 결여, 데이터 통합의 어려움, 변경 및 유지보수 어려움, MSA 전환으로 불일치 가속화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화의-개념도-상세설명-적용방안">데이터 표준화의 개념도, 상세설명, 적용방안<a class="hash-link" aria-label="데이터 표준화의 개념도, 상세설명, 적용방안에 대한 직접 링크" title="데이터 표준화의 개념도, 상세설명, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화의-개념도">데이터 표준화의 개념도<a class="hash-link" aria-label="데이터 표준화의 개념도에 대한 직접 링크" title="데이터 표준화의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>한글명, 영문명, 영문약어명, 타입, 길이, 소수점절삭길이 등 표준화 메타데이터 관리</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화-상세설명">데이터 표준화 상세설명<a class="hash-link" aria-label="데이터 표준화 상세설명에 대한 직접 링크" title="데이터 표준화 상세설명에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터명칭</td><td>기업 내 데이터를 유일하게 구분해주는 이름</td><td>유일성, 업무관점 보편성, 의미전달 충분성</td></tr><tr><td>데이터정의</td><td>데이터가 의미하는 범위 및 자격조건</td><td>제3자 관점 명명, 약어와 전문용어 지양</td></tr><tr><td>데이터형식</td><td>데이터 표현형태 정의를 통해 데이터 입력오류, 통제위험 최소화</td><td>길이제한, 동질 데이터형식 통일</td></tr><tr><td>데이터규칙</td><td>발생가능한 데이터 값 사전 통제, 무결성 확보</td><td>기본값, 허용값, 허용범위</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화-적용방안">데이터 표준화 적용방안<a class="hash-link" aria-label="데이터 표준화 적용방안에 대한 직접 링크" title="데이터 표준화 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>데이터 표준화 요구사항 수집</td><td>현업부서 인터뷰, 설문조사, 표준화 현황 진단</td><td>데이터현황 파악, 데이터 표준화 우선순위 결정</td></tr><tr><td>데이터 표준 정의</td><td>데이터 표준 용어사전 구축, 데이터 표준 메타데이터 정의</td><td>사내, 국내외 표준 참고, 모델링 도구 사용</td></tr><tr><td>데이터 표준 확정</td><td>데이터 표준 검토, 승인, 데이터 표준 확정, 공표</td><td>승인 절차 수립, 배포 계획 수립</td></tr><tr><td>데이터 표준 관리</td><td>데이터 표준 변경관리 절차수립, 데이터 표준 준수 여부 모니터링</td><td>관리조직 운영, 관리시스템 구축</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_NGK6" id="데이터-표준화-기대효과">데이터 표준화 기대효과<a class="hash-link" aria-label="데이터 표준화 기대효과에 대한 직접 링크" title="데이터 표준화 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-standardization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%EC%A4%80%ED%99%94-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<table><thead><tr><th>구분</th><th>기대효과</th><th>비고</th></tr></thead><tbody><tr><td>품질측면</td><td>데이터 일관성 확보</td><td>데이터 분석, 의사결정 지원</td></tr><tr><td>-</td><td>데이터 품질 향상</td><td>불일치 감소, 신뢰성 확보</td></tr><tr><td>연계측면</td><td>데이터 통합 용이성</td><td>프로세스 표준화</td></tr><tr><td>-</td><td>상호 운용성 향상</td><td>업계 표준 준수, 타조직과의 협업 용이</td></tr><tr><td>기업측면</td><td>비용절감</td><td>데이터 관리, 유지보수 비용 절감</td></tr><tr><td>-</td><td>기업전략강화</td><td>데이터 마트 도입, 기업경쟁력 강화</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
