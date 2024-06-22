@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 18 Jun 2024 15:05:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Jun 2024 06:13:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[객체지향 방법론]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/</guid>
+            <pubDate>Sat, 22 Jun 2024 06:13:31 GMT</pubDate>
+            <description><![CDATA[Objective Oriented Programming]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="객체지향방법론의-개념">객체지향방법론의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW 생명주기에 객체지향 개념을 접목시켜 객체를 중심으로 시스템을 모델링하는 방법론</li>
+<li>캡슐화, 추상화, 상속, 다형성과 정보은닉을 통해 복잡성을 줄이고, 재사용성과 유지보수성을 극대화하여 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="캡슐화-정보은닉의-개념도-비교-적용방안">캡슐화, 정보은닉의 개념도, 비교, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EC%BA%A1%EC%8A%90%ED%99%94-%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="캡슐화와-정보은닉-개념도">캡슐화와 정보은닉 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80-%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>캡슐화는 정보은닉을 실현하기 위한 수단으로 활용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="캡슐화와-정보은닉-비교">캡슐화와 정보은닉 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EC%BA%A1%EC%8A%90%ED%99%94%EC%99%80-%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>캡슐화</th><th>정보은닉</th></tr></thead><tbody><tr><td>개념</td><td>객체의 속성과 메소드를 하나의 단위로 묶는 것</td><td>객체 내부 구현을 감추는 것</td></tr><tr><td>목적</td><td>응집도와 모듈성 향상</td><td>내부 상태 보호, 변경용이성 확보</td></tr><tr><td>수단</td><td>접근제어자, 접근메소드</td><td>접근제어자, 인터페이스</td></tr><tr><td>효과</td><td>모듈화, 재사용성</td><td>안정성, 유지보수성</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="캡슐화-정보은닉-적용방안">캡슐화, 정보은닉 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EC%BA%A1%EC%8A%90%ED%99%94-%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>캡슐화</th><th>정보은닉</th></tr></thead><tbody><tr><td>설계단계</td><td>클래스 책임 분배, 접근제어자</td><td>모듈화, 추상화, 레이어설계</td></tr><tr><td>구현단계</td><td>getter/setter, 생성자</td><td>의존성 주입, 디자인패턴</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="객체지향-프로그래밍-고려사항">객체지향 프로그래밍 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/objective-oriented-programming/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>SOLID 원칙 준수, GoF의 디자인패턴 활용, 낮은 결합도, 높은 응집도를 가진 클래스, 모듈 구현</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[테슬라 마스터 플랜]]></title>
             <link>https://gracefullight.dev/en/2024/06/19/tesla-master-plan/</link>
@@ -92,7 +120,7 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="텍스트마이닝과-오피니언마이닝의-구성요소">텍스트마이닝과 오피니언마이닝의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%88%EC%9D%B4%EB%8B%9D%EA%B3%BC-%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="텍스트마이닝-구성요소">텍스트마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개념</td><td>텍스트데이터에서 패턴, 정보 추출</td><td>다양한 비정형데이터 처리</td></tr><tr><td>절차</td><td>텍스트 수집 -&gt; 텍스트 전처리 -&gt; 특징 추출 -&gt; 모델 구축 -&gt; 패턴 분석</td><td>데이터 전처리시 이상치 제거</td></tr><tr><td>주요기법</td><td>표준화, 불용어제거, TF-IDF</td><td>NLP, ML기법 활용</td></tr><tr><td>사례</td><td>문서분류, 텍스트요약</td><td>기업문서관리, 정보검색시스템</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="오피니언마이닝-구성�요소">오피니언마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="오피니��언마이닝-구성요소">오피니언마이닝 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개념</td><td>텍스트데이터에서 감정, 의견분석</td><td>긍정, 부정 분류</td></tr><tr><td>절차</td><td>SNS데이터수집 -&gt; 텍스트 전처리 -&gt; 감성사전구축 -&gt; 감정분류모델 구축 -&gt; 결과시각화</td><td>감성사전의 품질 중요</td></tr><tr><td>주요기법</td><td>감성사전 구축, 감성분석 모델</td><td>SVM, 로직스틱회귀, ML기법 활용</td></tr><tr><td>사례</td><td>리뷰분석, SNS분석, 피드백분석</td><td>마케팅, 고객전략 수립</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="오피니언마이닝-고려사항">오피니언마이닝 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -236,28 +264,6 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="상관관계-인과관계-적용방안">상관관계, 인과관계 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/bigdata-analytics/#%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%9D%B8%EA%B3%BC%EA%B4%80%EA%B3%84-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>상관관계</th><th>인과관계</th></tr></thead><tbody><tr><td>개발</td><td>코드복잡도와 버그발생률</td><td>새 방법론 도입 효과</td></tr><tr><td>-</td><td>개발기간과 기능완성도</td><td>코드리뷰 효과</td></tr><tr><td>디자인</td><td>UI/UX 사용자 만족도와 디자인</td><td>UI/UX 개선 효과</td></tr><tr><td>-</td><td>페이지 레이아웃과 CTR</td><td>디자인요소 변경 효과</td></tr><tr><td>마케팅</td><td>캠페인 유형과 매출</td><td>마케팅 캠페인 효과</td></tr><tr><td>-</td><td>SNS활동과 브랜드 인지도</td><td>가격 할인 효과</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[데이터 거버넌스]]></title>
-            <link>https://gracefullight.dev/en/pe/database/data-governance/</link>
-            <guid>https://gracefullight.dev/en/pe/database/data-governance/</guid>
-            <pubDate>Sat, 15 Jun 2024 02:23:02 GMT</pubDate>
-            <description><![CDATA[Data Governance]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스의-개념">데이터 거버넌스의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>데이터 생성, 저장, 공유, 사용, 보관, 삭제 방법에 적용되는 내부 데이터 표준과 정책, 관리 프로세스를 설정하는 전사 데이터 통치체계</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스-개념도-구성요소-적용방안">데이터 거버넌스 개념도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스-개념도">데이터 거버넌스 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스-구성요소">데이터 거버넌스 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원칙</td><td>데이터 유지관리 위한 지침 및 가이드</td><td>보안 품질 기준, 변경관리</td></tr><tr><td>조직</td><td>데이터를 관리할 조직의 역할과 책임</td><td>데이터 관리자, 소유자, 데이터 아키텍트</td></tr><tr><td>프로세스</td><td>데이터 관리를 위한 활동과 체계</td><td>작업절차 모니터링, 활용관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스-적용방안">데이터 거버넌스 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CDO</td><td>데이터거버넌스 전략수립, 실행</td><td>조직문화 조성</td></tr><tr><td>-</td><td>데이터거버넌스 성과측정, 개선</td><td>성과지표 설정, 주기적 측정</td></tr><tr><td>DA</td><td>데이터 구조관리</td><td>데이터 표준, 모델 설계 관리</td></tr><tr><td>-</td><td>데이터 품질관리</td><td>메타데이터 관리, 데이터 정제</td></tr><tr><td>DBA</td><td>데이터 접근통제 관리</td><td>데이터 오남용 방지</td></tr><tr><td>-</td><td>데이터 변경이력 관리</td><td>데이터흐름 추적, 무결성 보장</td></tr><tr><td>User</td><td>데이터 활용, 가치 창출</td><td>데이터 분석, 활용, 의사결정 지원</td></tr><tr><td>-</td><td>데이터 보안 준수</td><td>데이터 보안 정책 준수</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-거버넌스-성숙-단계">데이터 거버넌스 성숙 단계<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/database/data-governance/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%84%B1%EC%88%99-%EB%8B%A8%EA%B3%84">​</a></h2>
-<table><thead><tr><th>단계</th><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>5단계</td><td>가치창출</td><td>AI, 빅데이터 기반 신규가치 창출</td></tr><tr><td>4단계</td><td>위험대응</td><td>정량화된 품질관리, 사전 위험 대응</td></tr><tr><td>3단계</td><td>통합경영</td><td>데이터 품질관리, 의사결정 체계 도입</td></tr><tr><td>2단계</td><td>프로세스화</td><td>표준화된 데이터 프로세스 구축</td></tr><tr><td>1단계</td><td>도입</td><td>데이터 거버넌스 필요성 인식, 기본정책 수립</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/database</category>
         </item>
