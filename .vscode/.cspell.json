@@ -42,6 +42,7 @@
     "NISC",
     "Overreliance",
     "OWASP",
+    "oxlint",
     "pako",
     "PLTE",
     "PMBOK",
@@ -61,8 +62,5 @@
     "webp",
     "xychart"
   ],
-  "ignorePaths": [
-    "*.config.js",
-    "package.json"
-  ]
+  "ignorePaths": ["*.config.js", "package.json"]
 }
