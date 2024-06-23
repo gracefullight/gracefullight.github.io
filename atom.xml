@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-23T12:30:10.167Z</updated>
+    <updated>2024-06-23T12:45:46.107Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[테스트 커버리지, 코드 커버리지]]></title>
+        <id>https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/</id>
+        <link href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/"/>
+        <updated>2024-06-23T12:45:46.107Z</updated>
+        <summary type="html"><![CDATA[Test coverage, Code coverage]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지와-코드-커버리지의-개념">테스트 커버리지와 코드 커버리지의 개념<a class="hash-link" aria-label="테스트 커버리지와 코드 커버리지의 개념에 대한 직접 링크" title="테스트 커버리지와 코드 커버리지의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80%EC%99%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>테스트 커버리지: SW 테스트시 얼마나 많은 기능이 테스트되었는지를 측정하는 지표</li>
+<li>코드 커버리지: 코드의 각 구문이 테스트 중 얼마나 실행되었는지 측정하는 지표</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소-적용방안">테스트 커버리지, 코드 커버리지 구성요소, 적용방안<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 구성요소, 적용방안에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소">테스트 커버리지, 코드 커버리지 구성요소<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 구성요소에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 구성요소에 대한 �직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>커버리지</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>기능 커버리지</td><td>요구사항별, 유스케이스, 시나리오</td></tr><tr><td>-</td><td>사용자시나리오 커버리지</td><td>UI, 통합, 시스템</td></tr><tr><td>코드 커버리지</td><td>라인 커버리지</td><td>코드라인, 구문, 조건</td></tr><tr><td>-</td><td>함수 커버리지</td><td>함수 호출, 함수 내부</td></tr><tr><td>-</td><td>분기 커버리지</td><td>조건, 결정, 다중 조건</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-적용방안">테스트 커버리지, 코드 커버리지 적용방안<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 적용방안에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>적용방안</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>테스트 계획 단계부터 목표 수립</td><td>테스트 관리도구 활용</td></tr><tr><td>-</td><td>테스트 실행시 커버리지 측정 보고서 작성</td><td>-</td></tr><tr><td>코드 커버리지</td><td>코드 커버리지 측정도구 활용</td><td>적정분석도구 통합</td></tr><tr><td>-</td><td>테스트 실행 후 커버리지 분석</td><td>CI/CD 통합</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="커버리지-측정시-고려사항">커버리지 측정시 고려사항<a class="hash-link" aria-label="커버리지 측정시 고려사항에 대한 직접 링크" title="커버리지 측정시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%B8%A1%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>비용과 시간, 테스트 품ㅈ딜을 고려한 현실적인 커버리지 목표 설정 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/engineering" term="pe/engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[품질비용 항목]]></title>
         <id>https://gracefullight.dev/pe/engineering/quality-cost/</id>
@@ -24,7 +52,7 @@
 <ul>
 <li>예방, 평가 비용을 높혀 실패비용을 줄이는 것이 품질비용 관리의 목표</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-구성요소">품질비용항목 구성요소<a class="hash-link" aria-label="품질비용항목 구성요소에 대한 직접 링크" title="품질비용항목 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-구성요소">품질비용항목 구성요소<a class="hash-link" aria-label="품질비��용항목 구성요소에 대한 직접 링크" title="품질비용항목 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>결함 예방 투입 비용</td><td>교육, 훈련, 프로세스 개선</td></tr><tr><td>평가비용</td><td>제품 품질 평가 및 검증 비용</td><td>테스트, 리뷰, 감리</td></tr><tr><td>내부실패비용</td><td>개발단계에서 발견된 결함 수정 비용</td><td>재작업, 수정, 폐기</td></tr><tr><td>외부실패비용</td><td>출시 후 결함 발생 비용</td><td>고객지원, 환불, 소송</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-주요사례">품질비용항목 주요사례<a class="hash-link" aria-label="품질비용항목 주요사례에 대한 직접 링크" title="품질비용항목 주요사례에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>프로젝트 및 자원관리</td><td>품질 계획, 수립, 통제, 형상, 보안 관리</td></tr><tr><td>-</td><td>예방품질활동</td><td>프로세스 점검, 산출물 검토, 내부QA</td></tr><tr><td>평가비용</td><td>평가품질활동</td><td>장비검수, 피어리뷰, 코드리뷰</td></tr><tr><td>-</td><td>테스트</td><td>단위, 통합, 시스템, 인수</td></tr><tr><td>내부실패비용</td><td>내부실패 관리, 품질활동</td><td>추가 작업비용, 조치</td></tr><tr><td>-</td><td>테스트 결함 조치</td><td>테스트 후 결함 조치</td></tr><tr><td>외부실패비용</td><td>결함 처리 조치</td><td>이미지 손실, 고객불만 처리</td></tr><tr><td>-</td><td>납기 지연 대응</td><td>프로젝트 지연 대응, 장애 복구</td></tr></tbody></table>
@@ -82,7 +110,7 @@
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="관리적-원인">관리적 원인<a class="hash-link" aria-label="관리적 원인에 대한 직접 링크" title="관리적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B4%80%EB%A6%AC%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
 <table><thead><tr><th>구분</th><th>문제점</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>불명확한 요구사항</td><td>일정 지연 원인</td></tr><tr><td>-</td><td>리스크 관리 부족</td><td>위험 수집, 판별, 분석, 대응 미흡</td></tr><tr><td>제도</td><td>대기업 참여제한</td><td>프로젝트 관리 경험 부족</td></tr><tr><td>-</td><td>감리체계 미흡</td><td>산출물 위주 감리로 실무 괴리</td></tr><tr><td>적정대가 미지급</td><td>불공정한 과업 변경</td><td>이해관계자 협의 없는 변경</td></tr><tr><td>-</td><td>개발자 이탈</td><td>핵심인력 중 90% 과업 진행 중 이탈</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책-및-법제도-보완점">재발 방지를 위한 대책 및 법,제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" title="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85-%EB%B0%8F-%EB%B2%95%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방지를 위한 대책에 대한 �직접 링크" title="재발 방지를 위한 대책에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방�지를 위한 대책에 대한 직접 링크" title="재발 방지를 위한 대책에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
 <table><thead><tr><th>구분</th><th>대책</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>공공 PMO 활용</td><td>사업의 성공적 수행을 위한 관리</td></tr><tr><td>-</td><td>사전심사제도</td><td>과제 진행 전 이슈 분석</td></tr><tr><td>적정대가 미지급</td><td>과업심의위원회</td><td>심의 의무화로 합의 진행</td></tr><tr><td>-</td><td>RFP</td><td>FP 기반한 대가 산출</td></tr><tr><td>데이터</td><td>데이터 품질 검증</td><td>마이그레이션 테스트 계획 수립</td></tr><tr><td>-</td><td>전문가 활용</td><td>업무 도메인, 데이터 전문가 활용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-법-제도-보완점">재발 방지를 위한 법, 제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" title="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B2%95-%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>보완점</th><th>내용</th></tr></thead><tbody><tr><td>발주</td><td>발주 시행근거 마련</td><td>발주기관 지표 항목 개선</td></tr><tr><td>-</td><td>분리분할발주 강화</td><td>사업 규모 따른 관리 위험 완화</td></tr><tr><td>사업참여</td><td>대기업 참여제한 완화</td><td>프로젝트 관리 경험 증가로 안정성 증가</td></tr><tr><td>-</td><td>컨소시엄 구성 체계 변경</td><td>동일 사업 참여 컨소시엄 책임 조정</td></tr><tr><td>제도</td><td>감리제도 강화</td><td>업무 부문 감리 항목 강화</td></tr><tr><td>-</td><td>하도급 제도 개선</td><td>하도급 관리 기준 개정 효율화</td></tr><tr><td>-</td><td>SW산업 진흥법 개선</td><td>공공 SW사업 기반 제도 수정</td></tr></tbody></table>
@@ -161,7 +189,7 @@
 <table><thead><tr><th>구분</th><th>캡슐화</th><th>정보은닉</th></tr></thead><tbody><tr><td>개념</td><td>객체의 속성과 메소드를 하나의 단위로 묶는 것</td><td>객체 내부 구현을 감추는 것</td></tr><tr><td>목적</td><td>응집도와 모듈성 향상</td><td>내부 상태 보호, 변경용이성 확보</td></tr><tr><td>수단</td><td>접근제어자, 접근메소드</td><td>접근제어자, 인터페이스</td></tr><tr><td>효과</td><td>모듈화, 재사용성</td><td>안정성, 유지보수성</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="캡슐화-정보은닉-적용방안">캡슐화, 정보은닉 적용방안<a class="hash-link" aria-label="캡슐화, 정보은닉 적용방안에 대한 직접 링크" title="캡슐화, 정보은닉 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/objective-oriented-programming/#%EC%BA%A1%EC%8A%90%ED%99%94-%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>캡슐화</th><th>정보은닉</th></tr></thead><tbody><tr><td>설계단계</td><td>클래스 책임 분배, 접근제어자</td><td>모듈화, 추상화, 레이어설계</td></tr><tr><td>구현단계</td><td>getter/setter, 생성자</td><td>의존성 주입, 디자인패턴</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="객체지향-프로그래밍-고려사항">객체지향 프로그래밍 고려사항<a class="hash-link" aria-label="객체지향 프로그래밍 고려사항에 대한 직접 링크" title="객체지향 프로그래밍 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/objective-oriented-programming/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="객체지향-프로그래밍-고려사항">객체지향 프로그래밍 고려사항<a class="hash-link" aria-label="객체지향 프로그래밍 고려사항에 대한 직접 링크" title="객체지향 프로그래밍 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/objective-oriented-programming/#%EF%BF%BD%EF%BF%BD%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>SOLID 원칙 준수, GoF의 디자인패턴 활용, 낮은 결합도, 높은 응집도를 가진 클래스, 모듈 구현</li>
 </ul>]]></content>
@@ -274,40 +302,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="오피니언마이닝-고려사항">오피니언마이닝 고려사항<a class="hash-link" aria-label="오피니언마이닝 고려사항에 대한 직접 링크" title="오피니언마이닝 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/text-mining-opinion-mining/#%EC%98%A4%ED%94%BC%EB%8B%88%EC%96%B8%EB%A7%88%EC%9D%B4%EB%8B%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>은어, 약어, 이모티콘 등의 비정형 표현들에 대한 추가 전처리 필요.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터베이스 트랜잭션]]></title>
-        <id>https://gracefullight.dev/pe/database/transaction/</id>
-        <link href="https://gracefullight.dev/pe/database/transaction/"/>
-        <updated>2024-06-15T04:51:00.614Z</updated>
-        <summary type="html"><![CDATA[Database Transaction]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션의-개념">데이터베이스 트랜잭션의 개념<a class="hash-link" aria-label="데이터베이스 트랜잭션의 개념에 대한 직접 링크" title="데이터베이스 트랜잭션의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>데이터의 정확환 일관성과 무결성을 보장하기 위해 완전히 종료해야하는 데이터베이스 처리의 논리적 작업 단위</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션의-특징-상태전이도-종료기법">데이터베이스 트랜잭션의 특징, 상태전이도, 종료기법<a class="hash-link" aria-label="데이터베이스 트랜잭션의 특징, 상태전이도, 종료기법에 대한 직접 링크" title="데이터베이스 트랜잭션의 특징, 상태전이도, 종료기법에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-%ED%8A%B9%EC%A7%95-%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84-%EC%A2%85%EB%A3%8C%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션의-특징">데이터베이스 트랜잭션의 특징<a class="hash-link" aria-label="데이터베이스 트랜잭션의 특징에 대한 직접 링크" title="데이터베이스 트랜잭션의 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>보장기법</th></tr></thead><tbody><tr><td>원자성</td><td>연산전체가 처리되거나 처리되지 않아야함</td><td>Commit, Rollback</td></tr><tr><td>일관성</td><td>트랜잭션 성공 후 일관된 데이터베이스 상태 유지</td><td>무결성 제약조건, 동시성 제어</td></tr><tr><td>고립성</td><td>트랜잭션 실행 중 다른 트랜잭션 접근 불가</td><td>Isolation Level, Locking, 분산 트랜잭션</td></tr><tr><td>지속성</td><td>성공된 트랜잭션은 어떤 고장에도 손실되지 않고 영속 저장</td><td>회복기법, 회복컴포넌트 관리</td></tr></tbody></table>
-<ul>
-<li>트랜잭션 특징에 따라 트랜잭션 상태 변경</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션-상태전이도">데이터베이스 트랜잭션 상태전이도<a class="hash-link" aria-label="데이터베이스 트랜잭션 상태전이도에 대한 직접 링크" title="데이터베이스 트랜잭션 상태전이도에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>트랜잭션이 정상적으로 상태 전이되어 작업을 수행하기 위해 ACID와 직렬성 보장 필요</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션-종료기법">데이터베이스 트랜잭션 종료기법<a class="hash-link" aria-label="데이터베이스 트랜잭션 종료기법에 대한 직접 링크" title="데이터베이스 트랜잭션 종료기법에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%A2%85%EB%A3%8C%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>명시적 처리</td><td>Commit</td><td>변경 내용을 디스크에 영구 저장, 일관적 상태</td></tr><tr><td>-</td><td>Rollback</td><td>중지 또는 철최하고 갱신 작업취소, 비일관적 상태</td></tr><tr><td>묵시적 처리</td><td>정상종료</td><td>Commit과 동일하나 새 트랜잭션 다시 시작 안함</td></tr><tr><td>-</td><td>비정상종료</td><td>Rollback과 동일하나 프로그램 종료</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="분산db-트랜잭션-고려사항">분산DB 트랜잭션 고려사항<a class="hash-link" aria-label="분산DB 트랜잭션 고려사항에 대한 직접 링크" title="분산DB 트랜잭션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%B6%84%EC%82%B0db-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>BASE 특성에 중점을 두어 트랜잭션 구현 및 관리 필요</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
