@@ -2,11 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-23T08:13:20.543Z</updated>
+    <updated>2024-06-23T10:41:09.632Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[차세대시스템과 오픈결함]]></title>
+        <id>https://gracefullight.dev/pe/engineering/차세대시스템과-오픈결함/</id>
+        <link href="https://gracefullight.dev/pe/engineering/차세대시스템과-오픈결함/"/>
+        <updated>2024-06-23T10:41:09.632Z</updated>
+        <summary type="html"><![CDATA[차세대시스템과 오픈결함]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="차세대-시스템-오픈관련-문제점-개요">차세대 시스템 오픈관련 문제점 개요<a class="hash-link" aria-label="차세대 시스템 오픈관련 문제점 개요에 대한 직접 링크" title="차세대 시스템 오픈관련 문제점 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%B0%A8%EC%84%B8%EB%8C%80-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%98%A4%ED%94%88%EA%B4%80%EB%A0%A8-%EB%AC%B8%EC%A0%9C%EC%A0%90-%EA%B0%9C%EC%9A%94">​</a></h2>
+<ul>
+<li>사업 사전준비 부족과 프로젝트 관리 역량 부족 등 미진한 대응으로 대국민 서비스 품질 저하 및 공공기관 신뢰성 저하</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="오픈-관련-문제점의-원인">오픈 관련 문제점의 원인<a class="hash-link" aria-label="오픈 관련 문제점의 원인에 대한 직접 링크" title="오픈 관련 문제점의 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%98%A4%ED%94%88-%EA%B4%80%EB%A0%A8-%EB%AC%B8%EC%A0%9C%EC%A0%90%EC%9D%98-%EC%9B%90%EC%9D%B8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="기술적-원인">기술적 원인<a class="hash-link" aria-label="기술적 원인에 대한 직접 링크" title="기술적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B8%B0%EC%88%A0%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
+<table><thead><tr><th>구분</th><th>문제짐</th><th>내용</th></tr></thead><tbody><tr><td>데이터</td><td>데이터 전환 미흡</td><td>마이그레이션 후 정합성 문제</td></tr><tr><td>-</td><td>도메인 분석 미흡</td><td>시스템 통합에 딸느 영향도 파악 부족</td></tr><tr><td>기능</td><td>기능 미구현</td><td>다양한 유저의 필요 기능 불안전 구현</td></tr><tr><td>-</td><td>개발자 역량</td><td>개발자의 도메인 지식 부족</td></tr><tr><td>시스템</td><td>테스트 부족</td><td>시스템 통합 후 미구현 기능 발견</td></tr><tr><td>-</td><td>시스템 검수 미흡</td><td>성능 요구사항 미준수</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="관리적-원인">관리적 원인<a class="hash-link" aria-label="관리적 원인에 대한 직접 링크" title="관리적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B4%80%EB%A6%AC%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
+<table><thead><tr><th>구분</th><th>문제점</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>불명확한 요구사항</td><td>일정 지연 원인</td></tr><tr><td>-</td><td>리스크 관리 부족</td><td>위험 수집, 판별, 분석, 대응 미흡</td></tr><tr><td>제도</td><td>대기업 참여제한</td><td>프로젝트 관리 경험 부족</td></tr><tr><td>-</td><td>감리체계 미흡</td><td>산출물 위주 감리로 실무 괴리</td></tr><tr><td>적정대가 미지급</td><td>불공정한 과업 변경</td><td>이해관계자 협의 없는 변경</td></tr><tr><td>-</td><td>개발자 이탈</td><td>핵심인력 중 90% 과업 진행 중 이탈</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책-및-법제도-보완점">재발 방지를 위한 대책 및 법,제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" title="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85-%EB%B0%8F-%EB%B2%95%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방지를 위한 대책에 대한 직접 링크" title="재발 방지를 위한 대책에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
+<table><thead><tr><th>구분</th><th>대책</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>공공 PMO 활용</td><td>사업의 성공적 수행을 위한 관리</td></tr><tr><td>-</td><td>사전심사제도</td><td>과제 진행 전 이슈 분석</td></tr><tr><td>적정대가 미지급</td><td>과업심의위원회</td><td>심의 의무화로 합의 진행</td></tr><tr><td>-</td><td>RFP</td><td>FP 기반한 대가 산출</td></tr><tr><td>데이터</td><td>데이터 품질 검증</td><td>마이그레이션 테스트 계획 수립</td></tr><tr><td>-</td><td>전문가 활용</td><td>업무 도메인, 데이터 전문가 활용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-법-제도-보완점">재발 방지를 위한 법, 제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" title="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B2%95-%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>보완점</th><th>내용</th></tr></thead><tbody><tr><td>발주</td><td>발주 시행근거 마련</td><td>발주기관 지표 항목 개선</td></tr><tr><td>-</td><td>분리분할발주 강화</td><td>사업 규모 따른 관리 위험 완화</td></tr><tr><td>사업참여</td><td>대기업 참여제한 완화</td><td>프로젝트 관리 경험 증가로 안정성 증가</td></tr><tr><td>-</td><td>컨소시엄 구성 체계 변경</td><td>동일 사업 참여 컨소시엄 책임 조정</td></tr><tr><td>제도</td><td>감리제도 강화</td><td>업무 부문 감리 항목 강화</td></tr><tr><td>-</td><td>하도급 제도 개선</td><td>하도급 관리 기준 개정 효율화</td></tr><tr><td>-</td><td>SW산업 진흥법 개선</td><td>공공 SW사업 기반 제도 수정</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="오픈준비-점검지표">오픈준비 점검지표<a class="hash-link" aria-label="오픈준비 점검지표에 대한 직접 링크" title="오픈준비 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%98%A4%ED%94%88%EC%A4%80%EB%B9%84-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h2>
+<blockquote>
+<p>ISO 25010 기반</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="기능-점검지표">기능 점검지표<a class="hash-link" aria-label="기능 점검지표에 대한 직접 링크" title="기능 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B8%B0%EB%8A%A5-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h3>
+<ul>
+<li>적합성</li>
+<li>정확성</li>
+<li>상호운용성</li>
+<li>호환성</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="성능-점검지표">성능 점검지표<a class="hash-link" aria-label="성능 점검지표에 대한 직접 링크" title="성능 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%84%B1%EB%8A%A5-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h3>
+<ul>
+<li>사용성</li>
+<li>신뢰성</li>
+<li>유지보수성</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/engineering" term="pe/engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[요구사항 추출]]></title>
         <id>https://gracefullight.dev/pe/engineering/requirements-elicitation/</id>
@@ -202,7 +246,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터베이스-트랜잭션-종료기법">데이터베이스 트랜잭션 종료기법<a class="hash-link" aria-label="데이터베이스 트랜잭션 종료기법에 대한 직접 링크" title="데이터베이스 트랜잭션 종료기법에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%A2%85%EB%A3%8C%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>명시적 처리</td><td>Commit</td><td>변경 내용을 디스크에 영구 저장, 일관적 상태</td></tr><tr><td>-</td><td>Rollback</td><td>중지 또는 철최하고 갱신 작업취소, 비일관적 상태</td></tr><tr><td>묵시적 처리</td><td>정상종료</td><td>Commit과 동일하나 새 트랜잭션 다시 시작 안함</td></tr><tr><td>-</td><td>비정상종료</td><td>Rollback과 동일하나 프로그램 종료</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="분산db-트랜잭션-고려사항">분산DB 트랜잭션 고려사항<a class="hash-link" aria-label="분산DB 트랜잭션 고려사항에 대한 직접 링크" title="분산DB 트랜잭션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%B6%84%EC%82%B0db-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="분산db-트랜잭션-�고려사항">분산DB 트랜잭션 고려사항<a class="hash-link" aria-label="분산DB 트랜잭션 고려사항에 대한 직접 링크" title="분산DB 트랜잭션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%B6%84%EC%82%B0db-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>BASE 특성에 중점을 두어 트랜잭션 구현 및 관리 필요</li>
 </ul>]]></content>
@@ -268,35 +312,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="nosql-모델링시-고려사항">NoSQL 모델링시 고려사항<a class="hash-link" aria-label="NoSQL 모델링시 고려사항에 대한 직접 링크" title="NoSQL 모델링시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/nosql/#nosql-%EB%AA%A8%EB%8D%B8%EB%A7%81%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>비정형 데이터를 저장해야하므로 도메인 모델링 후 쿼리 결과를 정의한 뒤 저장할 테이블 모델을 설계해야함.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 시각화]]></title>
-        <id>https://gracefullight.dev/pe/database/data-visualization/</id>
-        <link href="https://gracefullight.dev/pe/database/data-visualization/"/>
-        <updated>2024-06-15T03:32:27.517Z</updated>
-        <summary type="html"><![CDATA[data visualization]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화의-개념">데이터 시각화의 개념<a class="hash-link" aria-label="데이터 시각화의 개념에 대한 직접 링크" title="데이터 시각화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>정보의 효과적인 전달을 위해 차트, 그래프, 지도 등 시각적 요소를 활용하여 숨겨진 패턴이나 인사이트를 발견하는 프로세스</li>
-<li>시각적 비교, 인과관계 제시, 의사결정 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화의-개념도-세부유형-적용방안">데이터 시각화의 개념도, 세부유형, 적용방안<a class="hash-link" aria-label="데이터 시각화의 개념도, 세부유형, 적용방안에 대한 직접 링크" title="데이터 시각화의 개념도, 세부유형, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화의-개념도">데이터 시각화의 개념도<a class="hash-link" aria-label="데이터 시각화의 개념도에 대한 직접 링크" title="데이터 시각화의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화-세부유형">데이터 시각화 세부유형<a class="hash-link" aria-label="데이터 시각화 세부유형에 대한 직접 링크" title="데이터 시각화 세부유형에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-%EC%84%B8%EB%B6%80%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>시간시각화</td><td>시간에 따른 데이터 변화량</td><td>막대, 꺾은선</td></tr><tr><td>분포시각화</td><td>최소, 최대, 평균, 기존항목 비교</td><td>파이, 도넛, 트리맵</td></tr><tr><td>관계시각화</td><td>변수의 상관관계를 토대로 타 변수 분석</td><td>스케터, 버블, 히스토그램</td></tr><tr><td>비교시각화</td><td>여러 변수 간 비교, 차이 분석</td><td>히트맵, 스타차트</td></tr><tr><td>공간시각화</td><td>지역 특성, 현황 표현</td><td>지도 매핑</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화-적용방안">데이터 시각화 적용방안<a class="hash-link" aria-label="데이터 시각화 적용방안에 대한 직접 링크" title="데이터 시각화 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>시스템성능 모니터링</td><td>시스템자원사용량, 응답시간 등</td><td>병목파악, 스케일업, 튜닝</td></tr><tr><td>보안 관제</td><td>침입시도, 악성코드 유포 시각화</td><td>위험요소 조기탐지, 대응</td></tr><tr><td>서비스 이용현황</td><td>사용자 행동패턴, 이용량 시각화</td><td>개선 전략, 마케팅 전략</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터-시각화-고려사항">데이터 시각화 고려사항<a class="hash-link" aria-label="데이터 시각화 고려사항에 대한 직접 링크" title="데이터 시각화 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/data-visualization/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>시각화를 통해 얻고자하는 정보에 대한 목표를 명확히 정의하여, 효과적 정보 전달과 리소스 비용 절감.</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
