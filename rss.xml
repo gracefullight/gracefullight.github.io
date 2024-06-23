@@ -4,10 +4,37 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 23 Jun 2024 11:10:44 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Jun 2024 12:30:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[품질비용 항목]]></title>
+            <link>https://gracefullight.dev/pe/engineering/quality-cost/</link>
+            <guid>https://gracefullight.dev/pe/engineering/quality-cost/</guid>
+            <pubDate>Sun, 23 Jun 2024 12:30:10 GMT</pubDate>
+            <description><![CDATA[Quality Cost]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="품질비용-항목의-개념">품질비용 항목의 개념<a class="hash-link" aria-label="품질비용 항목의 개념에 대한 직접 링크" title="품질비용 항목의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9-%ED%95%AD%EB%AA%A9%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW제품의 품질을 유지하고, 향상시키기 위해 설계부터 유지보수 단계까지 발생하는 모든 비용</li>
+<li>SW개발 초기 단계부터 품질 비용 항목을 관리해야 후속 단계에서 결함 수정 및 유지보수 비용 절감 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-개념도-구성요소-주요사례">품질비용항목 개념도, 구성요소, 주요사례<a class="hash-link" aria-label="품질비용항목 개념도, 구성요소, 주요사례에 대한 직접 링크" title="품질비용항목 개념도, 구성요소, 주요사례에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-개념도">품질비용항목 개념도<a class="hash-link" aria-label="품질비용항목 개념도에 대한 직접 링크" title="품질비용항목 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>예방, 평가 비용을 높혀 실패비용을 줄이는 것이 품질비용 관리의 목표</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-구성요소">품질비용항목 구성요소<a class="hash-link" aria-label="품질비용항목 구성요소에 대한 직접 링크" title="품질비용항목 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>결함 예방 투입 비용</td><td>교육, 훈련, 프로세스 개선</td></tr><tr><td>평가비용</td><td>제품 품질 평가 및 검증 비용</td><td>테스트, 리뷰, 감리</td></tr><tr><td>내부실패비용</td><td>개발단계에서 발견된 결함 수정 비용</td><td>재작업, 수정, 폐기</td></tr><tr><td>외부실패비용</td><td>출시 후 결함 발생 비용</td><td>고객지원, 환불, 소송</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-주요사례">품질비용항목 주요사례<a class="hash-link" aria-label="품질비용항목 주요사례에 대한 직접 링크" title="품질비용항목 주요사례에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>프로젝트 및 자원관리</td><td>품질 계획, 수립, 통제, 형상, 보안 관리</td></tr><tr><td>-</td><td>예방품질활동</td><td>프로세스 점검, 산출물 검토, 내부QA</td></tr><tr><td>평가비용</td><td>평가품질활동</td><td>장비검수, 피어리뷰, 코드리뷰</td></tr><tr><td>-</td><td>테스트</td><td>단위, 통합, 시스템, 인수</td></tr><tr><td>내부실패비용</td><td>내부실패 관리, 품질활동</td><td>추가 작업비용, 조치</td></tr><tr><td>-</td><td>테스트 결함 조치</td><td>테스트 후 결함 조치</td></tr><tr><td>외부실패비용</td><td>결함 처리 조치</td><td>이미지 손실, 고객불만 처리</td></tr><tr><td>-</td><td>납기 지연 대응</td><td>프로젝트 지연 대응, 장애 복구</td></tr></tbody></table>
+<ul>
+<li>품질비용은 예방, 평가, 내부실패, 외부실패 순으로 사용 권장</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[구조적 방법론, 애자일 방법론]]></title>
             <link>https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/</link>
@@ -48,7 +75,7 @@
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="관리적-원인">관리적 원인<a class="hash-link" aria-label="관리적 원인에 대한 직접 링크" title="관리적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B4%80%EB%A6%AC%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
 <table><thead><tr><th>구분</th><th>문제점</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>불명확한 요구사항</td><td>일정 지연 원인</td></tr><tr><td>-</td><td>리스크 관리 부족</td><td>위험 수집, 판별, 분석, 대응 미흡</td></tr><tr><td>제도</td><td>대기업 참여제한</td><td>프로젝트 관리 경험 부족</td></tr><tr><td>-</td><td>감리체계 미흡</td><td>산출물 위주 감리로 실무 괴리</td></tr><tr><td>적정대가 미지급</td><td>불공정한 과업 변경</td><td>이해관계자 협의 없는 변경</td></tr><tr><td>-</td><td>개발자 이탈</td><td>핵심인력 중 90% 과업 진행 중 이탈</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책-및-법제도-보완점">재발 방지를 위한 대책 및 법,제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" title="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85-%EB%B0%8F-%EB%B2%95%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방지를 위한 대책에 대한 직�접 링크" title="재발 방지를 위한 대책에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방지를 위한 대책에 대한 �직접 링크" title="재발 방지를 위한 대책에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
 <table><thead><tr><th>구분</th><th>대책</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>공공 PMO 활용</td><td>사업의 성공적 수행을 위한 관리</td></tr><tr><td>-</td><td>사전심사제도</td><td>과제 진행 전 이슈 분석</td></tr><tr><td>적정대가 미지급</td><td>과업심의위원회</td><td>심의 의무화로 합의 진행</td></tr><tr><td>-</td><td>RFP</td><td>FP 기반한 대가 산출</td></tr><tr><td>데이터</td><td>데이터 품질 검증</td><td>마이그레이션 테스트 계획 수립</td></tr><tr><td>-</td><td>전문가 활용</td><td>업무 도메인, 데이터 전문가 활용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-법-제도-보완점">재발 방지를 위한 법, 제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" title="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B2%95-%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>보완점</th><th>내용</th></tr></thead><tbody><tr><td>발주</td><td>발주 시행근거 마련</td><td>발주기관 지표 항목 개선</td></tr><tr><td>-</td><td>분리분할발주 강화</td><td>사업 규모 따른 관리 위험 완화</td></tr><tr><td>사업참여</td><td>대기업 참여제한 완화</td><td>프로젝트 관리 경험 증가로 안정성 증가</td></tr><tr><td>-</td><td>컨소시엄 구성 체계 변경</td><td>동일 사업 참여 컨소시엄 책임 조정</td></tr><tr><td>제도</td><td>감리제도 강화</td><td>업무 부문 감리 항목 강화</td></tr><tr><td>-</td><td>하도급 제도 개선</td><td>하도급 관리 기준 개정 효율화</td></tr><tr><td>-</td><td>SW산업 진흥법 개선</td><td>공공 SW사업 기반 제도 수정</td></tr></tbody></table>
@@ -246,29 +273,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="분산db-트랜잭션-고려사항">분산DB 트랜잭션 고려사항<a class="hash-link" aria-label="분산DB 트랜잭션 고려사항에 대한 직접 링크" title="분산DB 트랜잭션 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/transaction/#%EB%B6%84%EC%82%B0db-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>BASE 특성에 중점을 두어 트랜잭션 구현 및 관리 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[병행제어]]></title>
-            <link>https://gracefullight.dev/pe/database/concurrency-control/</link>
-            <guid>https://gracefullight.dev/pe/database/concurrency-control/</guid>
-            <pubDate>Sat, 15 Jun 2024 04:39:23 GMT</pubDate>
-            <description><![CDATA[Concurrency Control]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="병행제어의-개념">병행제어의 개념<a class="hash-link" aria-label="병행제어의 개념에 대한 직접 링크" title="병행제어의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/database/concurrency-control/#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>다수의 트랜잭션이 동일한 데이터에 동시에 접근하고자할 때, 각 트랜잭션이 독립적으로 수행된 결과를 보장하는 기법</li>
-<li>갱신손실, 연쇄복귀, 모순성 제거, 무결성 일관성 보장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="병행제어-미수행시-문제점과-해결기법">병행제어 미수행시 문제점과 해결기법<a class="hash-link" aria-label="병행제어 미수행시 문제점과 해결기법에 대한 직접 링크" title="병행제어 미수행시 문제점과 해결기법에 대한 직접 링크" href="https://gracefullight.dev/pe/database/concurrency-control/#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EB%AF%B8%EC%88%98%ED%96%89%EC%8B%9C-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%B4%EA%B2%B0%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="병행제어-미수행시-문제점">병행제어 미수행시 문제점<a class="hash-link" aria-label="병행제어 미수행시 문제점에 대한 직접 링크" title="병행제어 미수행시 문제점에 대한 직접 링크" href="https://gracefullight.dev/pe/database/concurrency-control/#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EB%AF%B8%EC%88%98%ED%96%89%EC%8B%9C-%EB%AC%B8%EC%A0%9C%EC%A0%90">​</a></h3>
-<table><thead><tr><th>문제</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>갱실분실</td><td>트랜잭션의 동일 데이터 동시 갱신시 발생</td><td>고립성 위배</td></tr><tr><td>불일치</td><td>다중 사용자 트랜잭션들이 동시 실행시 모순된 결과 반환</td><td>일관성, 고립성 위배</td></tr><tr><td>연쇄복귀</td><td>한 트랜잭션이 실패 후 롤백될 때 다른 트랜잭션 처리 취소 불가</td><td>일관성, 원자성 위배</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="병행제어-해결기법">병행제어 해결기법<a class="hash-link" aria-label="병행제어 해결기법에 대한 직접 링크" title="병행제어 해결기법에 대한 직접 링크" href="https://gracefullight.dev/pe/database/concurrency-control/#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%ED%95%B4%EA%B2%B0%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Locking</td><td>트랜잭션 사용 자원에 대해 상호배제 기능 제공</td><td>DB락, Table락, Row락, Column락</td></tr><tr><td>2PL</td><td>모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행</td><td>직렬가능성 보장, 교착상태 예방필요</td></tr><tr><td>Timestamp</td><td>트랜잭션 입력시 Timestamp 시간 순으로 직렬화</td><td>직렬가능성 보장, 교착상태 방지</td></tr><tr><td>낙관적 기법</td><td>트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사</td><td>Read, Validate, Write 단계</td></tr><tr><td>다중버전 병행제어</td><td>여러 버전 저장 후 일관성이 보장된 트랜잭션 선택</td><td>동시성 우수, I/O오버헤드 증가</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="병행제어-고려사항">병행제어 고려사항<a class="hash-link" aria-label="병행제어 고려사항에 대한 직접 링크" title="병행제어 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/database/concurrency-control/#%EB%B3%91%ED%96%89%EC%A0%9C%EC%96%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>분산 데이터베이스 시스템의 경우, NW 지연, 노드 장애 등 문제 발생을 대비하기 위해 2PL 기법 사용</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/database</category>
