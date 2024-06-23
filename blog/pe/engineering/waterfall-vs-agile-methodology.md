@@ -16,13 +16,12 @@ tags:
 
 ```mermaid
 graph TB;
-    W[폭포수]
-    S["`SDLC
-    QCD확보`"]
-    A[Agile]
+    waterfall[폭포수]
+    SDLC_QCD[SDLC QCD확보]
+    agile[Agile]
 
-    S-.전통적.->W
-    S-.최신.->A
+    SDLC_QCD-.전통적.->waterfall
+    SDLC_QCD-.최신.->agile
 ```
 
 - 폭포수 방법론: 요구사항 분석, 설계, 구현, 유지보수 과정을 순차적으로 접근하는 개발방법론
