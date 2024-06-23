@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.6d5555d9.css">
-<script src="/assets/js/runtime~main.7d8b09fe.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.643572f4.js" defer="defer"></script>
 <script src="/assets/js/main.703174e2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -217,13 +217,13 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="모듈화의-장점">모듈화의 장점<a class="hash-link" aria-label="모듈화의 장점에 대한 직접 링크" title="모듈화의 장점에 대한 직접 링크" href="/tags/pe/page/7/#모듈화의-장점">​</a></h3>
 <ul>
-<li>모듈 재사용성, 개발과 유지보수 용이성</li>
+<li>모듈 <strong>재사용성</strong>, 개발과 <strong>유지보수성</strong></li>
 <li>복잡성 감소</li>
 <li>오류 파급효과 최소화</li>
 <li>기능 분리가능, 인터페이스 단순화</li>
 <li>낮은 결합도, 높은 응집도</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="응집도와-결합도-개요">응집도와 결합도 개요<a class="hash-link" aria-label="응집도와 결합도 개요에 대한 직접 링크" title="응집도와 결합도 개요에 대한 직접 링크" href="/tags/pe/page/7/#응집도와-결합도-개요">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="응집도와-결합도-개요">응집도와   결합도 개요<a class="hash-link" aria-label="응집도와 결합도 개요에 대한 직접 링크" title="응집도와 결합도 개요에 대한 직접 링크" href="/tags/pe/page/7/#응집도와-결합도-개요">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="응집도와-결합도의-개념">응집도와 결합도의 개념<a class="hash-link" aria-label="응집도와 결합도의 개념에 대한 직접 링크" title="응집도와 결합도의 개념에 대한 직접 링크" href="/tags/pe/page/7/#응집도와-결합도의-개념">​</a></h3>
 <ul>
 <li>응집도: 하나의 <strong>모듈 내부</strong>의 처리요소 간 <strong>기능적 연관성</strong>을 측정하는 척도</li>
@@ -259,13 +259,14 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="모듈성을-높이기-위한-고려사항">모듈성을 높이기 위한 고려사항<a class="hash-link" aria-label="모듈성을 높이기 위한 고려사항에 대한 직접 링크" title="모듈성을 높이기 위한 고려사항에 대한 직접 링크" href="/tags/pe/page/7/#모듈성을-높이기-위한-고려사항">​</a></h2>
 <ul>
 <li>코드리뷰를 통해 개발단계에서의 의존성 문제, 인터페이스 불일치 등 저해요인 방지</li>
+<li>MSA 설계시 서비스 단위로 높은 응집도, 낮은 결합도를 갖게 설계</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_GTg2 padding--none margin-left--sm"><li class="tag_gh67"><a class="tag_S59u tagRegular_AcOF" href="/tags/pe/">pe</a></li><li class="tag_gh67"><a class="tag_S59u tagRegular_AcOF" href="/tags/pe-engineering/">pe/engineering</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_t7ki"><a href="/pe/engineering/monkey-vs-regression-test/">몽키테스트, 회귀테스트</a></h2><div class="container_lvn1 margin-vert--md"><time datetime="2024-03-03T05:41:00.000Z">2024년 3월 3일</time> · <!-- -->약 3분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_c6sD"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><blockquote>
 <p>129</p>
 </blockquote>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트-회귀테스트-개요">몽키테스트, 회귀테스트 개요<a class="hash-link" aria-label="몽키테스트, 회귀테스트 개요에 대한 직접 링크" title="몽키테스트, 회귀테스트 개요에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트-회귀테스트-개요">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트와-회귀테스트-개념">몽키테스트와 회귀테스트 개념<a class="hash-link" aria-label="몽키테스트와 회귀테스트 개념에 대한 직접 링크" title="몽키테스트와 회귀테스트 개념에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트와-회귀테스트-개념">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트와-회귀테스트-배경">몽키테스트와 회귀테스트 배경<a class="hash-link" aria-label="몽키테스트와 회귀테스트 배경에 대한 직접 링크" title="몽키테스트와 회귀테스트 배경에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트와-회귀테스트-배경">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트와-회귀테스트-배경">몽키테스트와 회귀테스트 배경<a class="hash-link" aria-label="몽  키테스트와 회귀테스트 배경에 대한 직접 링크" title="몽키테스트와 회귀테스트 배경에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트와-회귀테스트-배경">​</a></h3>
 <ul>
 <li>애자일 개발 방법론 도입으로 소프트웨어의 잦은 변경으로 인하여 자동화되고 연속적인 테스트의 필요성이 증가.</li>
 <li>기존 테스트로를 지속하면 살충제 패러독스가 발생하므로, 새로운 버그 발견을 위해 몽키테스트 실행.</li>
@@ -280,7 +281,7 @@
 <ul>
 <li>코드, 기능 변경 후 기존 기능이 정상적으로 동작하는지 테스트</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트와-회귀테스트-구성요소">몽키테스트와 회귀테스트 구성요소<a class="hash-link" aria-label="몽키테스트와 회귀테스트 구성요소에 대한 직접 링크" title="몽키테스트와 회귀테스트 구성요소에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트와-회귀테스트-구성요소">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="몽키테스트와-회귀테스트-구성요소">몽키테스트와 회귀테스트 구성요소<a class="hash-link" aria-label="몽키테스트와 회귀테스트 구성요소에 대한 직접 링크" title="몽키테스트와 회귀테스트 구성요소에 대한 직접 링크" href="/tags/pe/page/7/#몽키테스트와-회귀테 스트-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>몽키테스트</th><th>회귀테스트</th></tr></thead><tbody><tr><td>목적</td><td>예기치 못한 버그 발견</td><td>기존 기능 동작 확인</td></tr><tr><td>방식</td><td>무작위 입력, 스트레스, 랜덤 클릭</td><td>기존 테스트케이스 재실행</td></tr><tr><td>시기</td><td>주로 시스템테스트 단계</td><td>통합, 시스템, 인수테스트 변경시</td></tr><tr><td>완료</td><td>오류 미검출</td><td>사이드이펙트 수정 완료</td></tr><tr><td>장점</td><td>예상치 못한 행동 시뮬레이션</td><td>SW안정성 유지</td></tr><tr><td>단점</td><td>재현 어려움, 비일관성</td><td>살충제 패러독스</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="통합테스트-계획시-포함할-주요사항">통합테스트 계획시 포함할 주요사항<a class="hash-link" aria-label="통합테스트 계획시 포함할 주요사항에 대한 직접 링크" title="통합테스트 계획시 포함할 주요사항에 대한 직접 링크" href="/tags/pe/page/7/#통합테스트-계획시-포함할-주요사항">​</a></h2>
 <ul>
@@ -301,7 +302,7 @@
 <li>데이터 요구사항, 비지니스 요구사항에 실시간으로 대응하기 위해 필요성 대두</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="데이터옵스-데브옵스-개념도-구성요소-적용방안">데이터옵스, 데브옵스 개념도, 구성요소, 적용방안<a class="hash-link" aria-label="데이터옵스, 데브옵스 개념도, 구성요소, 적용방안에 대한 직접 링크" title="데이터옵스, 데브옵스 개념도, 구성요소, 적용방안에 대한 직접 링크" href="/tags/pe/page/7/#데이터옵스-데브옵스-개념도-구성요소-적용방안">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터옵스-데브옵스-개념도">데이터옵스, 데브옵스 개념도<a class="hash-link" aria-label="데이터옵스, 데브옵스 개념도에 대한 직접 링크" title="데이터옵스, 데브옵스 개념도에 대한 직접 링크" href="/tags/pe/page/7/#데이터옵스-데브옵스-개념도">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터옵스-데브옵스-개념도">데이터옵  스, 데브옵스 개념도<a class="hash-link" aria-label="데이터옵스, 데브옵스 개념도에 대한 직접 링크" title="데이터옵스, 데브옵스 개념도에 대한 직접 링크" href="/tags/pe/page/7/#데이터옵스-데브옵스-개념도">​</a></h3>
 <!-- -->
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="데이터옵스-데브옵스의-구성요소">데이터옵스, 데브옵스의 구성요소<a class="hash-link" aria-label="데이터옵스, 데브옵스의 구성요소에 대한 직접 링크" title="데이터옵스, 데브옵스의 구성요소에 대한 직접 링크" href="/tags/pe/page/7/#데이터옵스-데브옵스의-구성요소">​</a></h3>
