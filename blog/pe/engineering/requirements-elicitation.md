@@ -5,7 +5,7 @@ description: Requirements Elicitation
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/engineering
 ---
 
 ## 요구사항 추출의 개념
