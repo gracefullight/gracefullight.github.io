@@ -64,6 +64,7 @@
             <pubDate>Tue, 18 Jun 2024 12:16:34 GMT</pubDate>
             <description><![CDATA[Software Requirements Specifications]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-명세서-개념">요구사항 명세서 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-requirements-specifications/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
 <ul>
 <li>SDLC 전 단계에서 검토, 승인, 평가의 기준이 되는 SW가 갖추어야할 기능, 성능, 제약조건 등이 기술된 명세서</li>
 <li>요구사항의 애매모호성을 제거하고, FP가 도출 가능한 수준까지 작성하여 의사소통 비용절감 및 변경관리용이성 증대를 위해 필요.</li>
