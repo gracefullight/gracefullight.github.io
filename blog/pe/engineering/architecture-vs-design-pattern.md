@@ -5,16 +5,18 @@ description: 아키텍처 스타일과 디자인 패턴 비교
 authors: me
 tags:
   - pe
-  - pe/131
+  - pe/engineering
 ---
+
+> 131
 
 ## 아키텍처스타일과 디자인패턴의 개념
 
 ```mermaid
 graph TB;
     A[아키텍처 스타일/패턴]
-    S["`SW Reuse
-    QCD확보`"]
+    S["SW 재사용
+    QCD확보"]
     D[디자인 패턴]
 
     S-.구조의 재사용.->A
@@ -64,4 +66,5 @@ graph LR
 
 ## 아키텍처스타일, 디자인패턴 적용시 고려사항
 
-- CBAM, ATAM을 통해 적절한 스타일과 패턴을 선택
+- CBAM, ATAM을 통해 적절한 아키텍처 스타일 선택
+- 디자인패턴이 적용되어있는 프레임워크 사용
