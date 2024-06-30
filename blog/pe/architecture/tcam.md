@@ -5,7 +5,7 @@ description: 내용 주소화 기억장치
 authors: me
 tags:
   - pe
-  - pe/architecture
+  - pe/ca
 ---
 
 ## TCAM 개념

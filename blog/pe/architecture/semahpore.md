@@ -5,7 +5,7 @@ description: 세마포어
 authors: me
 tags:
   - pe
-  - pe/architecture
+  - pe/ca
 ---
 
 ## 세마포어의 개념

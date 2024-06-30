@@ -5,7 +5,7 @@ description: Neuromorphic Chip
 authors: me
 tags: 
   - pe
-  - pe/architecture 
+  - pe/ca 
 ---
 
 ## 뉴로모픽 칩의 개요

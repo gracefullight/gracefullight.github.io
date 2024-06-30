@@ -5,7 +5,7 @@ description: Paging and Segmentation
 authors: me
 tags: 
   - pe
-  - pe/architecture 
+  - pe/ca 
 ---
 
 ## 메모리 관리 기법의 개념

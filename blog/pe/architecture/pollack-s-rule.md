@@ -5,7 +5,7 @@ description: 폴락의 법칙
 authors: me
 tags:
   - pe
-  - pe/architecture
+  - pe/ca
 ---
 
 ## 폴락의 법칙 개념
