@@ -2,11 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-29T23:52:00.590Z</updated>
+    <updated>2024-06-30T02:35:14.892Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[페이징, 세그먼테이션]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/"/>
+        <updated>2024-06-30T02:35:14.892Z</updated>
+        <summary type="html"><![CDATA[Paging and Segmentation]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법의-개념">메모리 관리 기법의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-개념도-핵심요소">페이징 기법, 세그먼테이션 기법 개념도, 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-개념도">페이징 기법, 세그먼테이션 기법 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<!-- -->
+<ul>
+<li>페이징 기법은 동일한 크기로, 세그먼테이션 기법은 가변크기로 분할</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-핵심요소">페이징 기법, 세그먼테이션 기법 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%ED%95%B5%EF%BF%BD%EF%BF%BD%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>페이징</th><th>세그먼테이션</th></tr></thead><tbody><tr><td>단위크기</td><td>고정, 페이지</td><td>가변, 세그먼트</td></tr><tr><td>외부단편화</td><td>없음</td><td>있음</td></tr><tr><td>내부단편화</td><td>있음</td><td>없음</td></tr><tr><td>주소사상</td><td>페이지테이블</td><td>세그먼트테이블</td></tr><tr><td>복잡성</td><td>단순</td><td>주소, 사이즈 관리 복잡</td></tr><tr><td>프로세스 간 공유</td><td>어려움</td><td>용이</td></tr><tr><td>교체시간</td><td>짧은</td><td>느림</td></tr></tbody></table>
+<ul>
+<li>페이징 기법의 메모리 관리 효율성, 세그먼테이션 기법의 논리적 메모리 관리 이점을 결합한 페이지드 세그먼테이션 기법 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이지드-세그먼테이션-기법">페이지드 세그먼테이션 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%80%EB%93%9C-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95">​</a></h3>
+<!-- -->
+<ul>
+<li>파일 관리는 세그먼트 단위로, 프로그램 조각은 페이지 단위로 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법-선택시-고려사항">메모리 관리 기법 선택시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>외부단편화와 내부단편화를 줄이기 위해 버디메모리, 슬랩할당자 기법 사용 고려.</li>
+<li>스레싱이 발생하지 않게 적절한 테이블 크기 설정</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/architecture" term="pe/architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[뉴로모픽 칩]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/neuromorphic-chip/</id>
@@ -18,6 +58,7 @@
 <li>인간의 뇌를 모방하여 정보를 연산, 저장하는 비 폰노이만 구조의 저전력, 고성능 칩</li>
 <li>기존 폰노이만 구조의 프로세서로 연산하기 어려운 인공지능, 시뮬레이션 등 병렬 작업을 처리하기 위해 필요</li>
 </ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="뉴로모픽-칩의-구성도-구성요소-npu와-비교">뉴로모픽 칩의 구성도, 구성요소, NPU와 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/neuromorphic-chip/#%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A9%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-npu%EC%99%80-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="뉴로모픽-칩의-구성도">뉴로모픽 칩의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/neuromorphic-chip/#%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A9%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="뉴로모픽-칩의-구성요소">뉴로모픽 칩의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/neuromorphic-chip/#%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A9%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
@@ -53,7 +94,7 @@
 <ul>
 <li>시퀀스 다이어그램은 시간 순서에 따라, 커뮤니케이션 다이어그램은 구조에 따라 인터렉션 표현</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EF%BF%BD%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>시퀀스</th><th>커뮤니케이션</th></tr></thead><tbody><tr><td>개념</td><td>객체 간 상호작용을 시간 흐름에 따라 메세지 표현</td><td>객체 간 메세지의 구조적 구성 표현</td></tr><tr><td>핵심요소</td><td>라이프라인, 액티베이션박스, 메세지</td><td>객체, 링크, 메세지</td></tr><tr><td>사례</td><td>시스템 내부 프로세스, 실행 순서</td><td>시스템 아키텍처 개념적 이해</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-절차-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>시퀀스 다이어그램</td><td>액터와 활성 객체 나열</td><td>시간순서 배치</td></tr><tr><td>-</td><td>객체 간 메세지 작성</td><td>상호 작용 추가</td></tr><tr><td>-</td><td>활성객체별 액티베이션박스 작성</td><td>활성화 시간 표현</td></tr><tr><td>커뮤니케이션 다이어그램</td><td>중요 객체, 클래스, 액터 식별</td><td>구조적 중요성 강조</td></tr><tr><td>-</td><td>객체 및 액터 배치, 연결</td><td>커뮤니케이션 구조 중심</td></tr><tr><td>-</td><td>메세지 링크 강조</td><td>연결성 명확화</td></tr></tbody></table>
@@ -294,29 +335,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[테슬라 마스터 플랜]]></title>
-        <id>https://gracefullight.dev/en/2024/06/19/tesla-master-plan/</id>
-        <link href="https://gracefullight.dev/en/2024/06/19/tesla-master-plan/"/>
-        <updated>2024-06-18T15:05:29.226Z</updated>
-        <summary type="html"><![CDATA[테슬라 마스터 플랜 취합]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="마스터-플랜">마스터 플랜<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/2024/06/19/tesla-master-plan/#%EB%A7%88%EC%8A%A4%ED%84%B0-%ED%94%8C%EB%9E%9C">​</a></h2>
-<ul>
-<li><a href="https://www.tesla.com/blog/secret-tesla-motors-master-plan-just-between-you-and-me" target="_blank" rel="noopener noreferrer">#1 The Secret Tesla Motors Master Plan (just between you and me)</a></li>
-<li><a href="https://www.tesla.com/blog/master-plan-part-deux" target="_blank" rel="noopener noreferrer">#2 Master Plan, Part Deux</a></li>
-<li><a href="https://www.tesla.com/blog/master-plan-part-3" target="_blank" rel="noopener noreferrer">#3 Master Plan Part 3</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="비교">비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/2024/06/19/tesla-master-plan/#%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>항목</th><th>마스터 플랜 1</th><th>마스터 플랜 2</th><th>마스터 플랜 3</th></tr></thead><tbody><tr><td>작성자</td><td>Elon Musk</td><td>Elon Musk</td><td>Tesla Contributors</td></tr><tr><td>작성일</td><td>2006-08-02</td><td>2016-07-20</td><td>2023-04-05</td></tr><tr><td>주요 목표</td><td>1. 고성능 전기 스포츠카 제작<br>2. 중간 가격대의 차량 개발<br>3. 저렴한 고량 생산 차량 개발<br>4. 태양광 에너지 제공</td><td>1. 에너지 생성 및 저장 통합<br>2. 전기차 제품 라인 확장<br>3. 자율주행 기술 개발<br>4. 차량 공유 기능 제공</td><td>1. 기존 전력망을 재생 에너지로 전환<br>2. 전기차로 전환<br>3. 히트 펌프 사용<br>4. 고온 열 공급 및 수소 생산 전기화<br>5. 지속 가능한 항공기 및 선박 연료 공급<br>6. 지속 가능한 에너지 경제 제조</td></tr><tr><td>핵심 전략</td><td>고가의 스포츠카를 통해 자금을 조달하고, 이를 바탕으로 저가의 대량 생산 차량을 개발하여 지속 가능한 에너지로의 전환을 가속화</td><td>태양광 에너지와 에너지 저장을 통합하고, 자율주행 기술을 개발하며, 차량 공유 옵션을 제공하여 소유 비용을 절감</td><td>전 세계 에너지 시스템을 재생 가능한 에너지로 전환하고, 에너지 효율성을 높이며, 지속 가능한 에너지 인프라 확장</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="현황">현황<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/2024/06/19/tesla-master-plan/#%ED%98%84%ED%99%A9">​</a></h2>
-<ul>
-<li>마스터 플랜2의 4단계가지 온 것 같다. 다음은 어떤 시대가 올까..</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
     </entry>
 </feed>
