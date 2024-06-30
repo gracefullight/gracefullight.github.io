@@ -1,0 +1,112 @@
+---
+title: 페이징, 세그먼테이션
+date: 2024-06-30T11:35:14.892+09:00
+description: Paging and Segmentation
+authors: me
+tags: 
+  - pe
+  - pe/architecture 
+---
+
+## 메모리 관리 기법의 개념
+
+```mermaid
+graph TB
+  메모리관리기법
+  subgraph 연속할당기법
+    고정분할
+    가변분할
+  end
+  subgraph 불연속할당기법
+    페이징기법
+    세그먼테이션기법
+  end
+
+  메모리관리기법 --> 연속할당기법
+  메모리관리기법 --> 불연속할당기법
+```
+
+- 제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요
+
+## 페이징 기법, 세그먼테이션 기법 개념도, 핵심요소
+
+### 페이징 기법, 세그먼테이션 기법 개념도
+
+```mermaid
+graph LR
+  Page0 --> 0
+  Page1 --> 2
+
+  subgraph PageTable
+    direction LR
+    0
+    1
+    2
+  end
+
+  0 --> 1000
+  2 --> 1500
+
+  subgraph PhysicalMemory
+    1000
+    1500
+    2000
+  end
+```
+
+```mermaid
+graph LR
+  subgraph Stack
+    Segment0
+  end
+  subgraph Program
+    Segment1
+  end
+
+  Segment0 --> 0
+  Segment1 --> 1
+
+  subgraph SegmentTable
+    direction LR
+    0 --- base:1400 --- limit:1000
+    1 --- base:3200 --- limit:1100
+  end
+
+  limit:1000 --> segment0:1400-2400
+  limit:1100 --> segment1:3200-4300
+
+  subgraph PhysicalMemory
+    segment0:1400-2400
+    segment1:3200-4300
+  end
+```
+
+- 페이징 기법은 동일한 크기로, 세그먼테이션 기법은 가변크기로 분할
+
+### 페이징 기법, 세그먼테이션 기법 핵심요소
+
+| 구분 | 페이징 | 세그먼테이션 |
+| --- | --- | --- |
+| 단위크기 | 고정, 페이지 | 가변, 세그먼트 |
+| 외부단편화 | 없음 | 있음 |
+| 내부단편화 | 있음 | 없음 |
+| 주소사상 | 페이지테이블 | 세그먼트테이블 |
+| 복잡성 | 단순 | 주소, 사이즈 관리 복잡 |
+| 프로세스 간 공유 | 어려움  |용이 |
+| 교체시간 | 짧은 | 느림 |
+
+- 페이징 기법의 메모리 관리 효율성, 세그먼테이션 기법의 논리적 메모리 관리 이점을 결합한 페이지드 세그먼테이션 기법 사용
+
+### 페이지드 세그먼테이션 기법
+
+```mermaid
+graph LR
+  SegmentTable --> PageTable --> PhysicalMemory
+```
+
+- 파일 관리는 세그먼트 단위로, 프로그램 조각은 페이지 단위로 관리
+
+## 메모리 관리 기법 선택시 고려사항
+
+- 외부단편화와 내부단편화를 줄이기 위해 버디메모리, 슬랩할당자 기법 사용 고려.
+- 스레싱이 발생하지 않게 적절한 테이블 크기 설정
