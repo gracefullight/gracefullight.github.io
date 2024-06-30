@@ -71,11 +71,11 @@
         <category label="pe/ca" term="pe/ca"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[memory interleaving]]></title>
+        <title type="html"><![CDATA[메모리 인터리빙]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/memory-interleaving/</id>
         <link href="https://gracefullight.dev/en/pe/architecture/memory-interleaving/"/>
         <updated>2024-06-30T13:55:23.778Z</updated>
-        <summary type="html"><![CDATA[memory interleaving]]></summary>
+        <summary type="html"><![CDATA[Memory Interleaving]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-인터리빙의-개념">메모리 인터리빙의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/memory-interleaving/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%9D%B8%ED%84%B0%EB%A6%AC%EB%B9%99%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>메모리 접근시간을 최소화하기 위해 메모리를 복수개의 모듈로 나누고, 각 모듈에 연속적인 주소를 부여하여 동시에 접근이 가능하게 하는 기법</li>
@@ -117,7 +117,7 @@
 <li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EF%BF%BD%EF%BF%BD%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EF%BF%BD%EF%BF%BD%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
 <li>규모산정은 성능요구사항이나 성능을 결정하는 용량계획, 용량관리의 하위 개념</li>
@@ -142,7 +142,7 @@
 <li>참조 모델 결정 및 서버 규모 산정</li>
 <li>참조 모델별 가중치 적용</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EF%BF%BD%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EF%BF%BD%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>구축 시스템의 중장기적 측면 고려</li>
 <li>시스템 전략에 맞는 규모 여부 파악</li>
