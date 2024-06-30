@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T14:29:32.358Z</updated>
+    <updated>2024-06-30T14:39:20.335Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[VM, Container, 가상머신, 컨테이너]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/vm-and-container/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/vm-and-container/"/>
+        <updated>2024-06-30T14:39:20.335Z</updated>
+        <summary type="html"><![CDATA[VM, Container]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화의-개념">가상화의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#%EA%B0%80%EC%83%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>물리적인 자원들을 논리적으로 표현해 효율적으로 사용하고 관리하기 위한 기술</li>
+<li>클라우드 전환으로 자원활용률, 보안성, 확장성 높은 가상화 기술로 서버 제공, 논리적 투명성으로 사용자는 물리적 자원의 세부사항 미고려</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="vm-container의-개념도-핵심요소-적용방안">VM, Container의 개념도, 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#vm-container%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="vm-container-개념도">VM, Container 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#vm-container-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>VM: 하이퍼바이저를 통해 물리자원을 추상화한 Guest OS기반 가상화</li>
+<li>Container: Host OS 커널 통해 격리된 컨테이너를 제공하는 가상화</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="vm-container-핵심요소-비교">VM, Container 핵심요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#vm-container-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>핵심기술</td><td>하이퍼바이저, VM스냅샷</td><td>컨테이너, 네임스페이스, CGROUP</td></tr><tr><td>환경</td><td>다양한 OS지원, 독점적 자원할당</td><td>단일 OS지원, 호스트OS커널 공유</td></tr><tr><td>장점</td><td>강한 보안성, 장애 격리, 다양한 OS 실행</td><td>빠른 부트시간, 이미지 경량화, 자원사용 효율성</td></tr><tr><td>단점</td><td>높은 자원 소모, OS 라이센스 비용</td><td>커널 공유로 인한 낮은 보안성, 호스트OS 종속성</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="vm-container-적용방안">VM, Container 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#vm-container-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>보안 및 격리</td><td>높은 보안성과 격리성이 필요한 경우</td><td>프로세스 수준 격리와 빠른 복구가 필요한 경우</td></tr><tr><td>CI/CD</td><td>DevOps환경에서 다양한 운영체제 테스트 시나리오 자동화</td><td>IaC 기반, GitOps의 지속적 통합, 배포</td></tr><tr><td>적합 환경</td><td>기존, 레거시, 모놀리스</td><td>클라우드 네이티브</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화시-고려사항">가상화시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/vm-and-container/#%EA%B0%80%EC%83%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>이미지, 스냅샷 레지스트리 관리와 보안 스캐닝을 통해 취약점 사전 조치 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[웹 기반 서비스 성능관리, 웹 최적화]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/website-optimization/</id>
@@ -83,7 +117,7 @@
 <li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EF%BF%BD%EF%BF%BD%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
 <li>규모산정은 성능요구사항이나 성능을 결정하는 용량계획, 용량관리의 하위 개념</li>
@@ -108,7 +142,7 @@
 <li>참조 모델 결정 및 서버 규모 산정</li>
 <li>참조 모델별 가중치 적용</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EF%BF%BD%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>구축 시스템의 중장기적 측면 고려</li>
 <li>시스템 전략에 맞는 규모 여부 파악</li>
@@ -330,39 +364,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="스레싱-발생시-고려사항">스레싱 발생시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%EC%8A%A4%EB%A0%88%EC%8B%B1-%EB%B0%9C%EC%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>자주 사용하는 프로세스에 높은 우선순위를 부여하여 중요 작업이 원활히 수행 가능하도록 처리</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/ca" term="pe/ca"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PNM, Processing Near Memory]]></title>
-        <id>https://gracefullight.dev/en/pe/architecture/pnm/</id>
-        <link href="https://gracefullight.dev/en/pe/architecture/pnm/"/>
-        <updated>2024-06-30T10:02:58.168Z</updated>
-        <summary type="html"><![CDATA[Processing Near Memory]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="pnm의-개념">PNM의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>메모리와 프로세서를 다이 차원에서 가깝게 연결하여 별도의 논리연산을 수행하는 메모리</li>
-<li>메모리 접근을 위한 병목 최소화, 대역폭 최대화 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="pnm의-구성도-구성요소-적용방안">PNM의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="pnm의-구성도">PNM의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="pnm의-구성요소">PNM의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로세서</td><td>연산처리 담당 중앙처리장치</td><td>데이터 처리</td></tr><tr><td>고속 인터페이스</td><td>메모리와 프로세서 간 통신 속도 향상</td><td>CXL 등</td></tr><tr><td>DRAM Cell</td><td>대용향 휘발성 기억 장치</td><td>데이터 저장</td></tr><tr><td>다이</td><td>회로가 제작된 공간</td><td>직접회로 연결</td></tr></tbody></table>
-<ul>
-<li>다이 접합과 인터페이스 통합으로 제작이 가능하기에 기존 프로세서 사용 용이</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="pnm-활용방안">PNM 활용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 집중형 앱</td><td>데이터 접근 빈도가 높은 어플리케이션 적용</td><td>빅데이터 분석, LLM 등</td></tr><tr><td>실시간 처리 앱</td><td>실시간 데이터 처리가 필요한 슈퍼컴퓨팅에 활용</td><td>금융모델, 기상 예보 등</td></tr><tr><td>전력효율 필요 앱</td><td>높은 전성비를 유지해야하는 환경</td><td>모바일, 임베디드시스템 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="pnm-고려사항">PNM 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>CPU와 PNM간 메모리 데이터 젖아시 경합을 고려한 SW개발 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
