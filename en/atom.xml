@@ -2,11 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T10:02:58.168Z</updated>
+    <updated>2024-06-30T10:21:46.095Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Thrashing]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/thrashing/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/thrashing/"/>
+        <updated>2024-06-30T10:21:46.095Z</updated>
+        <summary type="html"><![CDATA[Thrashing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="스레싱의-개념">스레싱의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%EC%8A%A4%EB%A0%88%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>멀티프로세싱 환경에서 빈번한 페이지 교체로 실제 프로세스 실행보다 페잊 ㅣ교체에 더 많은 시간을 소요하여 프로세스 성능이 낮아지는 이상현상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="프로세스-스레싱의-개념도-원인-해결방안">프로세스 스레싱의 개념도, 원인, 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8A%A4%EB%A0%88%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9B%90%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="프로세스-스레싱의-개념도">프로세스 스레싱의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8A%A4%EB%A0%88%EC%8B%B1%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="프로세스-스레싱의-원인">프로세스 스레싱의 원인<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8A%A4%EB%A0%88%EC%8B%B1%EC%9D%98-%EC%9B%90%EC%9D%B8">​</a></h3>
+<table><thead><tr><th>구분</th><th>원인</th><th>내용</th></tr></thead><tbody><tr><td>리소스 부족</td><td>저사양 CPU</td><td>CPU 코어부족, 속도 부족</td></tr><tr><td>-</td><td>메모리 용량 부족</td><td>용량 부족으로 인한 가상메모리 사용 증가</td></tr><tr><td>부적절한 페이지 교체 정책</td><td>지역성 미고려</td><td>페이지 교체 정책 효율성 저하</td></tr><tr><td>-</td><td>페이지 빈도 미고려</td><td>부적절한 페이지 교체 알고리즘 사용</td></tr><tr><td>과도한 멀티프로그래밍</td><td>다중 프로세스 수용 초과</td><td>과도한 멀티프로그래밍으로 페이지 폴트</td></tr><tr><td>-</td><td>페이지 교체 수용 추가</td><td>페이지 수 초과로 인한 페이지 폴트</td></tr></tbody></table>
+<ul>
+<li>Working Set Model, Page Fault Frequency 기버을 통해 발생을 최소화하는 것이 최선의 방법</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="프로세스-스레싱-해결방안">프로세스 스레싱 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8A%A4%EB%A0%88%EC%8B%B1-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h3>
+<!-- -->
+<ul>
+<li>WS: 프로세스가 자주 참조하는 페이지 집합을 메모리에 상주시켜 교체 감소</li>
+</ul>
+<!-- -->
+<ul>
+<li>PFF: 페이지 부재율의 상한, 하한을 정하여 직접 페이지 부재율을 예측하여 프레임 할당, 프레임 회수하여 페이지 교체 감소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="스레싱-발생시-고려사항">스레싱 발생시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/thrashing/#%EC%8A%A4%EB%A0%88%EC%8B%B1-%EB%B0%9C%EC%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>자주 사용하는 프로세스에 높은 우선순위를 부여하여 중요 작업이 원활히 수행 가능하도록 처리</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pnm]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/pnm/</id>
@@ -127,7 +164,7 @@
 <ul>
 <li>시퀀스 다이어그램은 시간 순서에 따라, 커뮤니케이션 다이어그램은 구조에 따라 인터렉션 표현</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EF%BF%BD%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EF%BF%BD%EF%BF%BD%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>시퀀스</th><th>커뮤니케이션</th></tr></thead><tbody><tr><td>개념</td><td>객체 간 상호작용을 시간 흐름에 따라 메세지 표현</td><td>객체 간 메세지의 구조적 구성 표현</td></tr><tr><td>핵심요소</td><td>라이프라인, 액티베이션박스, 메세지</td><td>객체, 링크, 메세지</td></tr><tr><td>사례</td><td>시스템 내부 프로세스, 실행 순서</td><td>시스템 아키텍처 개념적 이해</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-절차-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>시퀀스 다이어그램</td><td>액터와 활성 객체 나열</td><td>시간순서 배치</td></tr><tr><td>-</td><td>객체 간 메세지 작성</td><td>상호 작용 추가</td></tr><tr><td>-</td><td>활성객체별 액티베이션박스 작성</td><td>활성화 시간 표현</td></tr><tr><td>커뮤니케이션 다이어그램</td><td>중요 객체, 클래스, 액터 식별</td><td>구조적 중요성 강조</td></tr><tr><td>-</td><td>객체 및 액터 배치, 연결</td><td>커뮤니케이션 구조 중심</td></tr><tr><td>-</td><td>메세지 링크 강조</td><td>연결성 명확화</td></tr></tbody></table>
@@ -299,35 +336,6 @@
 <li>사용성</li>
 <li>신뢰성</li>
 <li>유지보수성</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[요구사항 추출]]></title>
-        <id>https://gracefullight.dev/en/pe/engineering/requirements-elicitation/</id>
-        <link href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/"/>
-        <updated>2024-06-23T08:13:20.543Z</updated>
-        <summary type="html"><![CDATA[Requirements Elicitation]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-추출의-개념">요구사항 추출의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%B6%94%EC%B6%9C%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>시스템, 제품, 서비스를 개발하는 과정에서 이해관계자들의 원하는 바를 파악하고 명확하게 정의하는 활동</li>
-<li>프로젝트의 명확한 목표 설정, 이해관계자 만족, 리소스 절감, 리스크 관리를 위해 필요.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-추출-기법-품질-속성-개발-프로세스">요구사항 추출 기법, 품질 속성, 개발 프로세스<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%B6%94%EC%B6%9C-%EA%B8%B0%EB%B2%95-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1-%EA%B0%9C%EB%B0%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-추출-기법">요구사항 추출 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%B6%94%EC%B6%9C-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인터뷰</td><td>이해관계자와 직접 대화</td><td>심층적 정보</td></tr><tr><td>설문조사</td><td>설문지 통한 다수 이해관계자 요구사항 확보</td><td>효율적, 정량적</td></tr><tr><td>브레인스토밍</td><td>다수가 자유롭게 아이디어 제시</td><td>창의적 아이디어</td></tr><tr><td>프로토타이핑</td><td>시스템 초기 모델 제작, 사용자 피드백</td><td>사용자 중심 요구사항</td></tr><tr><td>워크숍</td><td>이해관계자가 모여서 토론, 협의</td><td>합의 도출 효과</td></tr><tr><td>역공학</td><td>기존 시스템 및 문서 분석</td><td>숨겨진 요구사항 발견</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-품질-속성">요구사항 품질 속성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원자성</td><td>요구사항이 복합 목적이 아닌 단일 목적인지</td><td>요구사항 충돌 방지</td></tr><tr><td>완전성</td><td>요구사항이 정보의 모든 것을 포함하는지</td><td>모든 이해관계자 요구 반영</td></tr><tr><td>비모호성</td><td>명확하지 않거나 같은 내용을 다르게 언급했는지</td><td>오해소지 제거</td></tr><tr><td>추적가능성</td><td>요구사항을 쉽게 추적가능한 고유번호</td><td>변경관리 대응</td></tr><tr><td>테스트가능성</td><td>요구사항이 검증가능하게 기술되었는지</td><td>객관적 기준</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-추출-프로세스">요구사항 추출 프로세스<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%B6%94%EC%B6%9C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="요구사항-추출시-고려사항">요구사항 추출시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/requirements-elicitation/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%B6%94%EC%B6%9C%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>제한된 리소스 내에서 효율적인 개발을 위해 우선순위 설정 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
