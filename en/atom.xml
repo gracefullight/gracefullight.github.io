@@ -2,11 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T12:17:37.100Z</updated>
+    <updated>2024-06-30T12:24:15.747Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[가상화, 원격데스크탑 프로토콜]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/"/>
+        <updated>2024-06-30T12:24:15.747Z</updated>
+        <summary type="html"><![CDATA[Virtualization and RDP]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화의-개념">가상화의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EA%B0%80%EC%83%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>Host 하드웨어에서 Hypervisor 기반 가상화된 하드웨어에 GuestOS를 설치하고, 원격데스크탑 프로토콜로 접근하여 원격지에서 GUI로 GuestApp 사용</li>
+<li>재택근무, 글로벌 비지니스 요구의 증가로 가상화 기술, RDP 활용 증가, 어디서나 업무 자원에 접근 가능한 유연성 제공</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화의-동작-방식">가상화의 동작 방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EA%B0%80%EC%83%81%ED%99%94%EC%9D%98-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="일반적인-운영체제에서의-프로그램-동작방식">일반적인 운영체제에서의 프로그램 동작방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%97%90%EC%84%9C%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D">​</a></h3>
+<!-- -->
+<ul>
+<li>프로그램이 OS API, Lib를 호출하는 방식</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="응용프로그램-가상화-동작방식">응용프로그램 가상화 동작방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9D%91%EC%9A%A9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EA%B0%80%EC%83%81%ED%99%94-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D">​</a></h3>
+<!-- -->
+<ul>
+<li>어플리케이션은 에뮬레이트된 인터페이스를 호출하는 방식</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="원격-데스크탑-프로토콜">원격 데스크탑 프로토콜<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9B%90%EA%B2%A9-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="원격-데스크탑-프로토콜의-개념">원격 데스크탑 프로토콜의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9B%90%EA%B2%A9-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>네트워크를 통해 다른 컴퓨터에 원격으로 접속하고 제어할 수 있게 해주는 프로토콜</li>
+<li>화면공유, 입력 전달, 파일 및 오디오 전송 등의 기능 담당</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="원격-데스크탑-프로토콜의-유형">원격 데스크탑 프로토콜의 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9B%90%EA%B2%A9-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>운영체제</th><th>프로토콜</th><th>내용</th></tr></thead><tbody><tr><td>Windows</td><td>RDP</td><td>MS사 프로토콜, N/W 부하가 적고, 빠른 응답성</td></tr><tr><td>MacOS</td><td>ARD</td><td>Apple사 프로토콜, 원격 관리기능 제공</td></tr><tr><td>Unix, Linux</td><td>X11</td><td>X윈도우 시스템 프로토콜, N/W로 다른 시스템 GUI 제어</td></tr><tr><td>기타</td><td>VNC</td><td>오픈소스 프로토콜, 다양한 운영체제 지원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="원격-가상화-환경의-발전방향">원격 가상화 환경의 발전방향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/virtualization-and-rdp/#%EC%9B%90%EA%B2%A9-%EA%B0%80%EC%83%81%ED%99%94-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
+<ul>
+<li>클라우드 컴퓨팅 기술의 발전으로 가상화된 데스크탑 환경을 제공해주는 DaaS 서비스로 발전</li>
+<li>OS 선택의 유연성과 샌드박싱으로 인한 보안성 확보하여 기업 내 다양한 업무 환경, 테스트 환경 지원.</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IaC, 코드형 인프라스트럭처]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/IaC/</id>
@@ -296,34 +339,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="msa-도입시-고려사항">MSA 도입시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/msa-monolithic/#msa-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>MSA 전환시 네트워크 지연시간이 추가되므로 성능에 민감한 시스템일 경우 도입을 신중히 검토해야함</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[테스트 커버리지, 코드 커버리지]]></title>
-        <id>https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/</id>
-        <link href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/"/>
-        <updated>2024-06-23T12:45:46.107Z</updated>
-        <summary type="html"><![CDATA[Test coverage, Code coverage]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지와-코드-커버리지의-개념">테스트 커버리지와 코드 커버리지의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80%EC%99%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>테스트 커버리지: SW 테스트시 얼마나 많은 기능이 테스트되었는지를 측정하는 지표</li>
-<li>코드 커버리지: 코드의 각 구문이 테스트 중 얼마나 실행되었는지 측정하는 지표</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소-적용방안">테스트 커버리지, 코드 커버리지 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소">테스트 커버리지, 코드 커버리지 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>커버리지</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>기능 커버리지</td><td>요구사항별, 유스케이스, 시나리오</td></tr><tr><td>-</td><td>사용자시나리오 커버리지</td><td>UI, 통합, 시스템</td></tr><tr><td>코드 커버리지</td><td>라인 커버리지</td><td>코드라인, 구문, 조건</td></tr><tr><td>-</td><td>함수 커버리지</td><td>함수 호출, 함수 내부</td></tr><tr><td>-</td><td>분기 커버리지</td><td>조건, 결정, 다중 조건</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-적용방안">테스트 커버리지, 코드 커버리지 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>적용방안</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>테스트 계획 단계부터 목표 수립</td><td>테스트 관리도구 활용</td></tr><tr><td>-</td><td>테스트 실행시 커버리지 측정 보고서 작성</td><td>-</td></tr><tr><td>코드 커버리지</td><td>코드 커버리지 측정도구 활용</td><td>적정분석도구 통합</td></tr><tr><td>-</td><td>테스트 실행 후 커버리지 분석</td><td>CI/CD 통합</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="커버리지-측정시-고려사항">커버리지 측정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/test-coverage-code-coverage/#%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%B8%A1%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>비용과 시간, 테스트 품ㅈ딜을 고려한 현실적인 커버리지 목표 설정 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
