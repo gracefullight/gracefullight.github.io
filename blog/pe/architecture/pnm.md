@@ -1,7 +1,7 @@
 ---
-title: pnm
+title: PNM, Processing Near Memory
 date: 2024-06-30T19:02:58.168+09:00
-description: pnm
+description: Processing Near Memory
 authors: me
 tags: 
   - pe
