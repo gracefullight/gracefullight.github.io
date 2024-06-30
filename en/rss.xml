@@ -4,10 +4,57 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 30 Jun 2024 13:17:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Jun 2024 13:34:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[정보시스템 하드웨어 규모산정 지침]]></title>
+            <link>https://gracefullight.dev/en/pe/architecture/정보시스템-하드웨어-규모산정-지침/</link>
+            <guid>https://gracefullight.dev/en/pe/architecture/정보시스템-하드웨어-규모산정-지침/</guid>
+            <pubDate>Sun, 30 Jun 2024 13:34:47 GMT</pubDate>
+            <description><![CDATA[정보시스템 하드웨어 규모산정 지침]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-지침-개념">정보시스템 하드웨어 규모산정 지침 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>정보시스템 구축 시 필요한 하드웨어 자원의 적정 규모를 산정하기 위한 지침으로 시스템 성능 요구사항을 충족하면서 비용 효율적 H/W 자원을 도입학리 위해 사용</li>
+<li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>규모산정은 성능요구사항이나 성능을 결정하는 용량계획, 용량관리의 하위 개념</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-구성요소">정보시스템 하드웨어 규모산정 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>용량관리</td><td>요구사항 충족을 위해 용량계획수립, 비용-용량 균형 제고</td><td>조직, 지속적</td></tr><tr><td>용량계획</td><td>시스템 성능 요구사항과 성능을 결정하기 위한 계획</td><td>조직, 시스템, 지속적</td></tr><tr><td>규모산정</td><td>기본적인 용량과 성능 요구사항이 제시되었을 때, 시스템 요구사항으로 반영하는 것</td><td>시스템, 일시적</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-주요기법">정보시스템 하드웨어 규모산정 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>수식계산법</td><td>유저 수 등 규모산정 요소 기반으로 용량 수치를 계산하고 보정하는 방법</td><td>근거 명확, 보정치 오류 가능성</td></tr><tr><td>참조법</td><td>업무량 등 기존 데이터를 기반으로 대략적인 시스템의 규모를 비교하여 산정</td><td>비교적 안정, 근거 불명확</td></tr><tr><td>시뮬레이션법</td><td>대상 업무에 대한 작업 부하를 모델링, 시뮬레이션하여 규모 산정</td><td>높은 정확성, 시간 및 비용 소요</td></tr></tbody></table>
+<ul>
+<li>공공부문에선 현실적으로 수식계산법을 사용하나, 다른 방법도 필요시 고려</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-대상-및-절차">정보시스템 하드웨어 규모산정 대상 및 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EB%8C%80%EC%83%81-%EB%B0%8F-%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-대상">정보시스템 하드웨어 규모산정 대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EB%8C%80%EC%83%81">​</a></h3>
+<!-- -->
+<ul>
+<li>CPU, 스토리지는 OLTP, WEB/WAS 등 서버가 받는 부하에 따라 다르게 산정</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-절차">정보시스템 하드웨어 규모산정 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A0%88%EC%B0%A8">​</a></h3>
+<ol>
+<li>구축 방향 및 기초 자료 조사</li>
+<li>기초 자료 및 업무 분석</li>
+<li>참조 모델 결정 및 서버 규모 산정</li>
+<li>참조 모델별 가중치 적용</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EF%BF%BD%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>구축 시스템의 중장기적 측면 고려</li>
+<li>시스템 전략에 맞는 규모 여부 파악</li>
+<li>장비 설치 조건의 적합성</li>
+<li>기종별 슬롯 수 확인</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/ca</category>
+        </item>
         <item>
             <title><![CDATA[메모리 반도체, 비메모리 반도체]]></title>
             <link>https://gracefullight.dev/en/pe/architecture/memory-and-logic-chips/</link>
@@ -289,35 +336,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[UML, Unified Modeling Language]]></title>
-            <link>https://gracefullight.dev/en/pe/engineering/uml/</link>
-            <guid>https://gracefullight.dev/en/pe/engineering/uml/</guid>
-            <pubDate>Sun, 23 Jun 2024 14:13:08 GMT</pubDate>
-            <description><![CDATA[UML]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="uml-개념">UML 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#uml-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>SW산출물을 가시화, 명세화, 구축, 문서화하는 도구로 구조, 동작, 인터랙션 다이어그램으로 구분</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성도-구성요소-절차">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성도, 구성요소, 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성도-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성도 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EB%B9%84%EA%B5%90">​</a></h3>
-<!-- -->
-<!-- -->
-<ul>
-<li>시퀀스 다이어그램은 시간 순서에 따라, 커뮤니케이션 다이어그램은 구조에 따라 인터렉션 표현</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>시퀀스</th><th>커뮤니케이션</th></tr></thead><tbody><tr><td>개념</td><td>객체 간 상호작용을 시간 흐름에 따라 메세지 표현</td><td>객체 간 메세지의 구조적 구성 표현</td></tr><tr><td>핵심요소</td><td>라이프라인, 액티베이션박스, 메세지</td><td>객체, 링크, 메세지</td></tr><tr><td>사례</td><td>시스템 내부 프로세스, 실행 순서</td><td>시스템 아키텍처 개념적 이해</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-절차-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>시퀀스 다이어그램</td><td>액터와 활성 객체 나열</td><td>시간순서 배치</td></tr><tr><td>-</td><td>객체 간 메세지 작성</td><td>상호 작용 추가</td></tr><tr><td>-</td><td>활성객체별 액티베이션박스 작성</td><td>활성화 시간 표현</td></tr><tr><td>커뮤니케이션 다이어그램</td><td>중요 객체, 클래스, 액터 식별</td><td>구조적 중요성 강조</td></tr><tr><td>-</td><td>객체 및 액터 배치, 연결</td><td>커뮤니케이션 구조 중심</td></tr><tr><td>-</td><td>메세지 링크 강조</td><td>연결성 명확화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="uml-작성시-고려사항">UML 작성시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/uml/#uml-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>OMG 글부 표준을 준수하여 정확성, 효용성, 유지보수성을 가진 산출물 작성</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
         </item>
     </channel>
 </rss>
