@@ -67,7 +67,7 @@
         <category label="pe/ca" term="pe/ca"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Thrashing]]></title>
+        <title type="html"><![CDATA[Thrashing, 스레싱]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/thrashing/</id>
         <link href="https://gracefullight.dev/en/pe/architecture/thrashing/"/>
         <updated>2024-06-30T10:21:46.095Z</updated>
@@ -104,11 +104,11 @@
         <category label="pe/ca" term="pe/ca"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[pnm]]></title>
+        <title type="html"><![CDATA[PNM, Processing Near Memory]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/pnm/</id>
         <link href="https://gracefullight.dev/en/pe/architecture/pnm/"/>
         <updated>2024-06-30T10:02:58.168Z</updated>
-        <summary type="html"><![CDATA[pnm]]></summary>
+        <summary type="html"><![CDATA[Processing Near Memory]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="pnm의-개념">PNM의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <!-- -->
 <ul>
