@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T13:55:23.778Z</updated>
+    <updated>2024-06-30T14:29:32.358Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[웹 기반 서비스 성능관리, 웹 최적화]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/website-optimization/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/website-optimization/"/>
+        <updated>2024-06-30T14:29:32.358Z</updated>
+        <summary type="html"><![CDATA[Website Optimization]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-최적화의-개념">웹 최적화의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%B5%9C%EC%A0%81%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>웹 페이지의 로딩 속도, 응답속도 등 전반적인 성능을 향상시켜 사용자 경험을 개선하는 활동</li>
+<li>페이지 로드가 길어지면 이탈률 증가, SEO 지표 증가로 검색 우선순위 개선, 대역폭 사용 감소로 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하요인의-개념도-세부요인-해결방안">웹 성능 저하요인의 개념도, 세부요인, 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98%EC%9A%94%EC%9D%B8%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%9A%94%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하요인의-개념도">웹 성능 저하요인의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98%EC%9A%94%EC%9D%B8%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하-세부요인">웹 성능 저하 세부요인<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98-%EC%84%B8%EB%B6%80%EC%9A%94%EC%9D%B8">​</a></h3>
+<table><thead><tr><th>구분</th><th>요인</th><th>비고</th></tr></thead><tbody><tr><td>브라우저</td><td>렌더링 최적화 미흡, 많은 자바스크립트 로드</td><td>렌더링 차단 리소스, 불필요한 JS로드</td></tr><tr><td>네트워크</td><td>많은 리소스 요청, 대역폭 부족</td><td>대용량 파일, 압축되지 않은 파일, 느린 N/W 속도</td></tr><tr><td>서버</td><td>서버 처리능력 부족, DB 처리능력 부족</td><td>H/W 성능 부족, 서버 과부하</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-최적화-방안">웹 성능 최적화 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>원인</th><th>해결방안</th><th>비고</th></tr></thead><tbody><tr><td>대용량 파일</td><td>이미지 최적화, 압축</td><td>리사이즈, WebP 압축</td></tr><tr><td>많은 HTTP 요청</td><td>요청 횟수 절감, 병렬처리</td><td>HTTP2, 이미지스프라이팅</td></tr><tr><td>느린 N/W 속도</td><td>사용자와 가까운 곳에 리소스 배치</td><td>CDN 사용</td></tr><tr><td>느린 서버 응답</td><td>하드웨어 개선, 튜닝, 부하 분산</td><td>스케일업, 쿼리 튜닝, 샤딩</td></tr><tr><td>렌더링 차단 리소스</td><td>JS 실행 시간 단축</td><td>비동기처리, 트리쉐이킹</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-최적화시-고려사항">웹 최적화시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%B5%9C%EC%A0%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>Page Speed 등 웹 성능 측정도구를 활용하여 최적화 전/후 성능 비교 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[memory interleaving]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/memory-interleaving/</id>
@@ -79,7 +108,7 @@
 <li>참조 모델 결정 및 서버 규모 산정</li>
 <li>참조 모델별 가중치 적용</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EF%BF%BD%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>구축 시스템의 중장기적 측면 고려</li>
 <li>시스템 전략에 맞는 규모 여부 파악</li>
@@ -334,46 +363,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="pnm-고려사항">PNM 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/pnm/#pnm-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>CPU와 PNM간 메모리 데이터 젖아시 경합을 고려한 SW개발 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/ca" term="pe/ca"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[페이징, 세그먼테이션]]></title>
-        <id>https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/</id>
-        <link href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/"/>
-        <updated>2024-06-30T02:35:14.892Z</updated>
-        <summary type="html"><![CDATA[Paging and Segmentation]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법의-개념">메모리 관리 기법의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-개념도-핵심요소">페이징 기법, 세그먼테이션 기법 개념도, 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-개념도">페이징 기법, 세그먼테이션 기법 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<!-- -->
-<ul>
-<li>페이징 기법은 동일한 크기로, 세그먼테이션 기법은 가변크기로 분할</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이징-기법-세그먼테이션-기법-핵심요소">페이징 기법, 세그먼테이션 기법 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EA%B8%B0%EB%B2%95-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>페이징</th><th>세그먼테이션</th></tr></thead><tbody><tr><td>단위크기</td><td>고정, 페이지</td><td>가변, 세그먼트</td></tr><tr><td>외부단편화</td><td>없음</td><td>있음</td></tr><tr><td>내부단편화</td><td>있음</td><td>없음</td></tr><tr><td>주소사상</td><td>페이지테이블</td><td>세그먼트테이블</td></tr><tr><td>복잡성</td><td>단순</td><td>주소, 사이즈 관리 복잡</td></tr><tr><td>프로세스 간 공유</td><td>어려움</td><td>용이</td></tr><tr><td>교체시간</td><td>짧은</td><td>느림</td></tr></tbody></table>
-<ul>
-<li>페이징 기법의 메모리 관리 효율성, 세그먼테이션 기법의 논리적 메모리 관리 이점을 결합한 페이지드 세그먼테이션 기법 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="페이지드-세그먼테이션-기법">페이지드 세그먼테이션 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%ED%8E%98%EC%9D%B4%EC%A7%80%EB%93%9C-%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98-%EA%B8%B0%EB%B2%95">​</a></h3>
-<!-- -->
-<ul>
-<li>파일 관리는 세그먼트 단위로, 프로그램 조각은 페이지 단위로 관리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법-선택시-고려사항">메모리 관리 기법 선택시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>외부단편화와 내부단편화를 줄이기 위해 버디메모리, 슬랩할당자 기법 사용 고려.</li>
-<li>스레싱이 발생하지 않게 적절한 테이블 크기 설정</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
