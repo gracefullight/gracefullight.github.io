@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T10:21:46.095Z</updated>
+    <updated>2024-06-30T11:15:24.181Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[RAID]]></title>
+        <id>https://gracefullight.dev/pe/architecture/RAID/</id>
+        <link href="https://gracefullight.dev/pe/architecture/RAID/"/>
+        <updated>2024-06-30T11:15:24.181Z</updated>
+        <summary type="html"><![CDATA[Redundant Array Independent Disks]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="raid의-개념">RAID의 개념<a class="hash-link" aria-label="RAID의 개념에 대한 직접 링크" title="RAID의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/RAID/#raid%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>디스크의 안정성과 성능을 위해 여러 개의 개별 디스크를 연결하여 대용량 디스크를 구성하는 기술</li>
+<li>가용성 Fault Tolerant, 유지보수성 Hot-Swap, 고속 I/O Striping, 안정성 Mirroring, Parity Check, 확장성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="raid의-유형-raid5-raid6-비교">RAID의 유형, RAID5, RAID6 비교<a class="hash-link" aria-label="RAID의 유형, RAID5, RAID6 비교에 대한 직접 링크" title="RAID의 유형, RAID5, RAID6 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/RAID/#raid%EC%9D%98-%EC%9C%A0%ED%98%95-raid5-raid6-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="raid의-유형">RAID의 유형<a class="hash-link" aria-label="RAID의 유형에 대한 직접 링크" title="RAID의 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/RAID/#raid%EC%9D%98-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>개념도</th><th>특징</th><th>최소 디스크 수</th></tr></thead><tbody><tr><td>RAID0</td><td>-</td><td>데이터 분산 저장, 스트라이핑</td><td>2</td></tr><tr><td>RAID1</td><td>-</td><td>데이터 중복 저장, 미러링</td><td>2</td></tr><tr><td>RAID2</td><td>-</td><td>해밍코드, 다수 패리티 디스크, 사용안함</td><td>3</td></tr><tr><td>RAID3</td><td>-</td><td>별도 패리티 디스크, 사용안함</td><td>3</td></tr><tr><td>RAID4</td><td>-</td><td>블록단위 별도 패리티 디스크, 사용안함</td><td>3</td></tr><tr><td>RAID5</td><td>-</td><td>패리티 스트라이핑, 데이터 무결성 보장</td><td>3</td></tr><tr><td>RAID6</td><td>-</td><td>이중 패리티 스트라이핑, 높은 신뢰성</td><td>4</td></tr><tr><td>RAID01</td><td>-</td><td>스트라이핑 후 미러링, 장애시 전체 복구</td><td>4</td></tr><tr><td>RAID10</td><td>-</td><td>미러링 후 스트라이핑, 손실된 데이터만 복구</td><td>4</td></tr></tbody></table>
+<ul>
+<li>RAID50은 최소 디스크 6개 필요</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="raid5-6-비교">RAID5, 6 비교<a class="hash-link" aria-label="RAID5, 6 비교에 대한 직접 링크" title="RAID5, 6 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/RAID/#raid5-6-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>RAID5</th><th>RAID6</th></tr></thead><tbody><tr><td>최소 디스크 수</td><td>3개</td><td>4개</td></tr><tr><td>고장 허용 디스크</td><td>1개</td><td>2개</td></tr><tr><td>패리티 수</td><td>1</td><td>2</td></tr><tr><td>장점</td><td>저장효율성, 관리 용이성, 빠른 읽기 성능, 적절한 쓰기 성능</td><td>이중 디스크 장애허용, 높은 내결함성, 안정성</td></tr><tr><td>단점</td><td>복수 디스크 손상시 데이터 손실</td><td>느린 쓰기 성능, 복잡한 구현</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="raid-적용시-고려사항">RAID 적용시 고려사항<a class="hash-link" aria-label="RAID 적용시 고려사항에 대한 직접 링크" title="RAID 적용시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/RAID/#raid-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>RAID는 백업이 아니므로, RTO, RPO를 고려한 별도의 증분 백업 전략 수립</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Thrashing]]></title>
         <id>https://gracefullight.dev/pe/architecture/thrashing/</id>
@@ -105,7 +135,7 @@
 <ul>
 <li>파일 관리는 세그먼트 단위로, 프로그램 조각은 페이지 단위로 관리</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법-선택시-고려사항">메모리 관리 기법 선택시 고려사항<a class="hash-link" aria-label="메모리 관리 기법 선택시 고려사항에 대한 직접 링크" title="메모리 관리 기법 선택시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-관리-기법-선택시-고려사항">메모리 관리 기법 선택시 고려사항<a class="hash-link" aria-label="메모리 관리 기법 선택시 고려사항에 대한 직접 링크" title="메모리 관리 기법 선택시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/paging-and-segmentation/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%B2%95-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EF%BF%BD%EF%BF%BD%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>외부단편화와 내부단편화를 줄이기 위해 버디메모리, 슬랩할당자 기법 사용 고려.</li>
 <li>스레싱이 발생하지 않게 적절한 테이블 크기 설정</li>
@@ -135,7 +165,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>뉴로모픽 칩</td><td>시냅스와 뉴런으로 구성, 스파이크 자극에 의해 유기적으로 자율 조절</td><td>인간 뇌와 같이 저전력으로 학습</td></tr><tr><td>스파이킹 신경망, SNN</td><td>생물학적 신경 네트워크 구조를 모방</td><td>대규모 병렬 연산, 가중치 전달</td></tr><tr><td>뉴로모픽 소자</td><td>뉴런과 시냅스를 구성하는 핵심 소자로 메모리와 레지스터의 결합</td><td>멤리스터</td></tr><tr><td>프로세싱 인메모리</td><td>뉴런을 배열하여 스파이크 입력 변환, 뉴런 배열에서의 스파이크 발화 동작 및 학습, 학습 결과 특성 분류 수행</td><td>SRAM 기반</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="npu와-뉴로모픽-침의-차이점">NPU와 뉴로모픽 침의 차이점<a class="hash-link" aria-label="NPU와 뉴로모픽 침의 차이점에 대한 직접 링크" title="NPU와 뉴로모픽 침의 차이점에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/neuromorphic-chip/#npu%EC%99%80-%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A8%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>NPU</th><th>뉴로모픽 칩</th></tr></thead><tbody><tr><td>구조</td><td>폰노이만</td><td>생물의 뉴런 시스템</td></tr><tr><td>목적</td><td>GPU를 CPU로 만들어 연산 활용</td><td>메모리를 CPU로 만들어 연산 활용</td></tr><tr><td>중점</td><td>인공신경망 연산의 효율적 수행</td><td>인공신경망 외 다양한 프로그램 연산</td></tr><tr><td>관련 업체</td><td>엔비디아 등</td><td>IBM, 인텔 등</td></tr><tr><td>장점</td><td>LLM 등 인공지능 모델 확산 기여</td><td>전력, 면적, 성능 등에서 압도적 결과</td></tr><tr><td>단점</td><td>ㅐ규모 데이터센터 공간/전력 소모</td><td>뉴로모픽 칩 개발의 어려움</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="�뉴로모픽-칩-고려사항">뉴로모픽 칩 고려사항<a class="hash-link" aria-label="뉴로모픽 칩 고려사항에 대한 직접 링크" title="뉴로모픽 칩 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/neuromorphic-chip/#%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A9-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="뉴로모픽-칩-고려사항">뉴로모픽 칩 고려사항<a class="hash-link" aria-label="뉴로모픽 칩 고려사항에 대한 직접 링크" title="뉴로모픽 칩 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/neuromorphic-chip/#%EB%89%B4%EB%A1%9C%EB%AA%A8%ED%94%BD-%EC%B9%A9-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>뉴로모픽 하드웨어를 최대한 활용할 수 있는 알고리즘 및 SW개발, 연구 병행 필요</li>
 </ul>]]></content>
@@ -164,7 +194,7 @@
 <ul>
 <li>시퀀스 다이어그램은 시간 순서에 따라, 커뮤니케이션 다이어그램은 구조에 따라 인터렉션 표현</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교에 대한 직접 링크" title="시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-�구성요소-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교<a class="hash-link" aria-label="시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교에 대한 직접 링크" title="시퀀스 다이어그램, 커뮤니케이션 다이어그램 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>시퀀스</th><th>커뮤니케이션</th></tr></thead><tbody><tr><td>개념</td><td>객체 간 상호작용을 시간 흐름에 따라 메세지 표현</td><td>객체 간 메세지의 구조적 구성 표현</td></tr><tr><td>핵심요소</td><td>라이프라인, 액티베이션박스, 메세지</td><td>객체, 링크, 메세지</td></tr><tr><td>사례</td><td>시스템 내부 프로세스, 실행 순서</td><td>시스템 아키텍처 개념적 이해</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="시퀀스-다이어그램-커뮤니케이션-다이어그램-절차-비교">시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교<a class="hash-link" aria-label="시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교에 대한 직접 링크" title="시퀀스 다이어그램, 커뮤니케이션 다이어그램 절차 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/uml/#%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8-%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>시퀀스 다이어그램</td><td>액터와 활성 객체 나열</td><td>시간순서 배치</td></tr><tr><td>-</td><td>객체 간 메세지 작성</td><td>상호 작용 추가</td></tr><tr><td>-</td><td>활성객체별 액티베이션박스 작성</td><td>활성화 시간 표현</td></tr><tr><td>커뮤니케이션 다이어그램</td><td>중요 객체, 클래스, 액터 식별</td><td>구조적 중요성 강조</td></tr><tr><td>-</td><td>객체 및 액터 배치, 연결</td><td>커뮤니케이션 구조 중심</td></tr><tr><td>-</td><td>메세지 링크 강조</td><td>연결성 명확화</td></tr></tbody></table>
@@ -196,7 +226,7 @@
 <ul>
 <li>하나의 어플리케이션을 여러 개의 서비스로 나눠 조합하여 서비스를 제공</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="msa-모놀리틱-아키텍처-구성요소">MSA, 모놀리틱 아키텍처 구성요소<a class="hash-link" aria-label="MSA, 모놀리틱 아키텍처 구성요소에 대한 직접 링크" title="MSA, 모놀리틱 아키텍처 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/msa-monolithic/#msa-%EB%AA%A8%EB%86%80%EB%A6%AC%ED%8B%B1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="msa-모놀리틱-아키텍처-구성요소">MSA, 모놀리틱 아키텍처 구성요소<a class="hash-link" aria-label="MSA, 모놀리틱 아키텍�처 구성요소에 대한 직접 링크" title="MSA, 모놀리틱 아키텍처 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/msa-monolithic/#msa-%EB%AA%A8%EB%86%80%EB%A6%AC%ED%8B%B1-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>모놀리틱</th><th>MSA</th></tr></thead><tbody><tr><td>모듈성</td><td>영향도, 의존성 높음</td><td>서비스 간 의존성 낮음</td></tr><tr><td>유지보수성</td><td>규모가 커질수록 어려움</td><td>개별 서비스</td></tr><tr><td>확장성</td><td>부분 Scale-out 어려움</td><td>서비스 단위 유연한 Scale-out</td></tr><tr><td>조직</td><td>기능 중심 조직 구조</td><td>비지니스 중심 DevOps 구조</td></tr><tr><td>장점</td><td>배포, 테스트 표준화된 방식으로 관리 용이</td><td>서비스 단위 빠른 개발, 배포 용이</td></tr><tr><td>단점</td><td>One Codebase로 의존성이 높아 신규 개발 어려움</td><td>분산시스템에서 트랜잭션 관리 어려움</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="msa-적용-방안">MSA 적용 방안<a class="hash-link" aria-label="MSA 적용 방안에 대한 직접 링크" title="MSA 적용 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/msa-monolithic/#msa-%EC%A0%81%EC%9A%A9-%EB%B0%A9%EC%95%88">​</a></h3>
 <ul>
@@ -226,7 +256,7 @@
 <li>코드 커버리지: 코드의 각 구문이 테스트 중 얼마나 실행되었는지 측정하는 지표</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소-적용방안">테스트 커버리지, 코드 커버리지 구성요소, 적용방안<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 구성요소, 적용방안에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소">테스트 커버리지, 코드 커버리지 구성요소<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 구성요소에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EF%BF%BD%EF%BF%BD%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-구성요소">테스트 커버리지, 코드 커버리지 구성요소<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 구성요소에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>커버리지</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>기능 커버리지</td><td>요구사항별, 유스케이스, 시나리오</td></tr><tr><td>-</td><td>사용자시나리오 커버리지</td><td>UI, 통합, 시스템</td></tr><tr><td>코드 커버리지</td><td>라인 커버리지</td><td>코드라인, 구문, 조건</td></tr><tr><td>-</td><td>함수 커버리지</td><td>함수 호출, 함수 내부</td></tr><tr><td>-</td><td>분기 커버리지</td><td>조건, 결정, 다중 조건</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="테스트-커버리지-코드-커버리지-적용방안">테스트 커버리지, 코드 커버리지 적용방안<a class="hash-link" aria-label="테스트 커버리지, 코드 커버리지 적용방안에 대한 직접 링크" title="테스트 커버리지, 코드 커버리지 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/test-coverage-code-coverage/#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>적용방안</th><th>비고</th></tr></thead><tbody><tr><td>테스트 커버리지</td><td>테스트 계획 단계부터 목표 수립</td><td>테스트 관리도구 활용</td></tr><tr><td>-</td><td>테스트 실행시 커버리지 측정 보고서 작성</td><td>-</td></tr><tr><td>코드 커버리지</td><td>코드 커버리지 측정도구 활용</td><td>적정분석도구 통합</td></tr><tr><td>-</td><td>테스트 실행 후 커버리지 분석</td><td>CI/CD 통합</td></tr></tbody></table>
@@ -258,7 +288,7 @@
 <ul>
 <li>예방, 평가 비용을 높혀 실패비용을 줄이는 것이 품질비용 관리의 목표</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-구성요소">품질비용항목 구성요소<a class="hash-link" aria-label="품질비용항목 구성요소에 대한 직접 링크" title="품질비용항목 구성요소에 대한 ��직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-구성요소">품질비용항목 구성요소<a class="hash-link" aria-label="품질비용항목 구성요소에 대한 직접 링크" title="품질비용항목 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EF%BF%BD%EC%9A%A9%ED%95%AD%EB%AA%A9-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>결함 예방 투입 비용</td><td>교육, 훈련, 프로세스 개선</td></tr><tr><td>평가비용</td><td>제품 품질 평가 및 검증 비용</td><td>테스트, 리뷰, 감리</td></tr><tr><td>내부실패비용</td><td>개발단계에서 발견된 결함 수정 비용</td><td>재작업, 수정, 폐기</td></tr><tr><td>외부실패비용</td><td>출시 후 결함 발생 비용</td><td>고객지원, 환불, 소송</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="품질비용항목-주요사례">품질비용항목 주요사례<a class="hash-link" aria-label="품질비용항목 주요사례에 대한 직접 링크" title="품질비용항목 주요사례에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/quality-cost/#%ED%92%88%EC%A7%88%EB%B9%84%EC%9A%A9%ED%95%AD%EB%AA%A9-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>프로젝트 및 자원관리</td><td>품질 계획, 수립, 통제, 형상, 보안 관리</td></tr><tr><td>-</td><td>예방품질활동</td><td>프로세스 점검, 산출물 검토, 내부QA</td></tr><tr><td>평가비용</td><td>평가품질활동</td><td>장비검수, 피어리뷰, 코드리뷰</td></tr><tr><td>-</td><td>테스트</td><td>단위, 통합, 시스템, 인수</td></tr><tr><td>내부실패비용</td><td>내부실패 관리, 품질활동</td><td>추가 작업비용, 조치</td></tr><tr><td>-</td><td>테스트 결함 조치</td><td>테스트 후 결함 조치</td></tr><tr><td>외부실패비용</td><td>결함 처리 조치</td><td>이미지 손실, 고객불만 처리</td></tr><tr><td>-</td><td>납기 지연 대응</td><td>프로젝트 지연 대응, 장애 복구</td></tr></tbody></table>
@@ -285,57 +315,13 @@
 <li>애자일방법론: SW개발을 반복적이고 점진적으로 진행하고, 변경에 유연하게 대응하는 방법론</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-구성요소-주요-기법-적용방안">구조적 방법론, 애자일 방법론 구성요소, 주요 기법, 적용방안<a class="hash-link" aria-label="구조적 방법론, 애자일 방법론 구성요소, 주요 기법, 적용방안에 대한 직접 링크" title="구조적 방법론, 애자일 방법론 구성요소, 주요 기법, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-구성요소-비교">구조적 방법론, 애자일 방법론 구성요소 비교<a class="hash-link" aria-label="구조적 방법론, 애자일 방법론 구성요소 비교에 대한 직접 링크" title="구�조적 방법론, 애자일 방법론 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-구성요소-비교">구조적 방법론, 애자일 방법론 구성요소 비교<a class="hash-link" aria-label="구조적 방법론, 애자일 방법론 구성요소 비교에 대한 직접 링크" title="구조적 방법론, 애자일 방법론 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>구조적 방법론</th><th>애자일 방법론</th></tr></thead><tbody><tr><td>접근방식</td><td>계획중심, 단계적</td><td>반복적, 유연한 방식, 짧은 개발 사이클</td></tr><tr><td>문서화</td><td>모든 단계에서 상세한 문서화</td><td>문서보다는 동작하는 SW에 가치</td></tr><tr><td>고객 참여</td><td>프로젝트 초기에 요구사항 정의 후 참여 없음</td><td>지속적인 피드백과 개선</td></tr><tr><td>변경관리</td><td>변경에 유연하지 않음</td><td>유연한 변경 수용</td></tr><tr><td>개발 속도</td><td>긴 개발 주기</td><td>빠른 개발 주기</td></tr><tr><td>장점</td><td>명확한 구조와 규정된 프로세스를 통한 크고 복잡한 프로젝트 적합</td><td>변화하는 시장 요구사항에 빠른 대응</td></tr><tr><td>단점</td><td>유연성 부족, 계획 변경 어려움</td><td>문서 부족으로 인한 리스크</td></tr><tr><td>주요 기법</td><td>데이터 흐름 다이어그램, 분할 정복, 정형화</td><td>스크럼, 칸반, TDD</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="애자일-방법론의-주요-기법-스크럼-칸반-비교">애자일 방법론의 주요 기법 스크럼, 칸반 비교<a class="hash-link" aria-label="애자일 방법론의 주요 기법 스크럼, 칸반 비교에 대한 직접 링크" title="애자일 방법론의 주요 기법 스크럼, 칸반 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/#%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%8A%A4%ED%81%AC%EB%9F%BC-%EC%B9%B8%EB%B0%98-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>스크럼</th><th>칸반</th></tr></thead><tbody><tr><td>개념</td><td>고정된 역할과 이벤트를 통한 작업관리</td><td>시각화를 통한 작업 흐름 관리</td></tr><tr><td>특징</td><td>스프린트, 데일리스크럼, 회고</td><td>칸반보드, 대기행렬, 총 주기 시간</td></tr><tr><td>장점</td><td>명확한 역할분담, 짧은 주기와 반복작업</td><td>유연한 작업관리, 지속적인 개선</td></tr><tr><td>단점</td><td>초기적응 어려움</td><td>역할 불명확, 관리 어려움</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="개발-방법론-선택시-고려사항">개발 방법론 선택시 고려사항<a class="hash-link" aria-label="개발 방법론 선택시 고려사항에 대한 직접 링크" title="개발 방법론 선택시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/structured-and-agile-development-methodology/#%EA%B0%9C%EB%B0%9C-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>레거시시스템 여부, 팀 성숙도 측면을 고려하여 구조적 방법론과 애자일 방법론 중 선택 필요.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[차세대시스템과 오픈결함]]></title>
-        <id>https://gracefullight.dev/pe/engineering/차세대시스템과-오픈결함/</id>
-        <link href="https://gracefullight.dev/pe/engineering/차세대시스템과-오픈결함/"/>
-        <updated>2024-06-23T10:41:09.632Z</updated>
-        <summary type="html"><![CDATA[차세대시스템과 오픈결함]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="차세대-시스템-오픈관련-문제점-개요">차세대 시스템 오픈관련 문제점 개요<a class="hash-link" aria-label="차세대 시스템 오픈관련 문제점 개요에 대한 직접 링크" title="차세대 시스템 오픈관련 문제점 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%B0%A8%EC%84%B8%EB%8C%80-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%98%A4%ED%94%88%EA%B4%80%EB%A0%A8-%EB%AC%B8%EC%A0%9C%EC%A0%90-%EA%B0%9C%EC%9A%94">​</a></h2>
-<ul>
-<li>사업 사전준비 부족과 프로젝트 관리 역량 부족 등 미진한 대응으로 대국민 서비스 품질 저하 및 공공기관 신뢰성 저하</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="오픈-관련-문제점의-원인">오픈 관련 문제점의 원인<a class="hash-link" aria-label="오픈 관련 문제점의 원인에 대한 직접 링크" title="오픈 관련 문제점의 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%98%A4%ED%94%88-%EA%B4%80%EB%A0%A8-%EB%AC%B8%EC%A0%9C%EC%A0%90%EC%9D%98-%EC%9B%90%EC%9D%B8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="기술적-원인">기술적 원인<a class="hash-link" aria-label="기술적 원인에 대한 직접 링크" title="기술적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B8%B0%EC%88%A0%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
-<table><thead><tr><th>구분</th><th>문제짐</th><th>내용</th></tr></thead><tbody><tr><td>데이터</td><td>데이터 전환 미흡</td><td>마이그레이션 후 정합성 문제</td></tr><tr><td>-</td><td>도메인 분석 미흡</td><td>시스템 통합에 딸느 영향도 파악 부족</td></tr><tr><td>기능</td><td>기능 미구현</td><td>다양한 유저의 필요 기능 불안전 구현</td></tr><tr><td>-</td><td>개발자 역량</td><td>개발자의 도메인 지식 부족</td></tr><tr><td>시스템</td><td>테스트 부족</td><td>시스템 통합 후 미구현 기능 발견</td></tr><tr><td>-</td><td>시스템 검수 미흡</td><td>성능 요구사항 미준수</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="관리적-원인">관리적 원인<a class="hash-link" aria-label="관리적 원인에 대한 직접 링크" title="관리적 원인에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B4%80%EB%A6%AC%EC%A0%81-%EC%9B%90%EC%9D%B8">​</a></h3>
-<table><thead><tr><th>구분</th><th>문제점</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>불명확한 요구사항</td><td>일정 지연 원인</td></tr><tr><td>-</td><td>리스크 관리 부족</td><td>위험 수집, 판별, 분석, 대응 미흡</td></tr><tr><td>제도</td><td>대기업 참여제한</td><td>프로젝트 관리 경험 부족</td></tr><tr><td>-</td><td>감리체계 미흡</td><td>산출물 위주 감리로 실무 괴리</td></tr><tr><td>적정대가 미지급</td><td>불공정한 과업 변경</td><td>이해관계자 협의 없는 변경</td></tr><tr><td>-</td><td>개발자 이탈</td><td>핵심인력 중 90% 과업 진행 중 이탈</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책-및-법제도-보완점">재발 방지를 위한 대책 및 법,제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" title="재발 방지를 위한 대책 및 법,제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85-%EB%B0%8F-%EB%B2%95%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-대책">재발 방지를 위한 대책<a class="hash-link" aria-label="재발 방지를 위한 대책에 대한 직접 링크" title="재발 방지를 위한 대책에 대한 직�접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8C%80%EC%B1%85">​</a></h3>
-<table><thead><tr><th>구분</th><th>대책</th><th>내용</th></tr></thead><tbody><tr><td>요구사항</td><td>공공 PMO 활용</td><td>사업의 성공적 수행을 위한 관리</td></tr><tr><td>-</td><td>사전심사제도</td><td>과제 진행 전 이슈 분석</td></tr><tr><td>적정대가 미지급</td><td>과업심의위원회</td><td>심의 의무화로 합의 진행</td></tr><tr><td>-</td><td>RFP</td><td>FP 기반한 대가 산출</td></tr><tr><td>데이터</td><td>데이터 품질 검증</td><td>마이그레이션 테스트 계획 수립</td></tr><tr><td>-</td><td>전문가 활용</td><td>업무 도메인, 데이터 전문가 활용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="재발-방지를-위한-법-제도-보완점">재발 방지를 위한 법, 제도 보완점<a class="hash-link" aria-label="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" title="재발 방지를 위한 법, 제도 보완점에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%9E%AC%EB%B0%9C-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B2%95-%EC%A0%9C%EB%8F%84-%EB%B3%B4%EC%99%84%EC%A0%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>보완점</th><th>내용</th></tr></thead><tbody><tr><td>발주</td><td>발주 시행근거 마련</td><td>발주기관 지표 항목 개선</td></tr><tr><td>-</td><td>분리분할발주 강화</td><td>사업 규모 따른 관리 위험 완화</td></tr><tr><td>사업참여</td><td>대기업 참여제한 완화</td><td>프로젝트 관리 경험 증가로 안정성 증가</td></tr><tr><td>-</td><td>컨소시엄 구성 체계 변경</td><td>동일 사업 참여 컨소시엄 책임 조정</td></tr><tr><td>제도</td><td>감리제도 강화</td><td>업무 부문 감리 항목 강화</td></tr><tr><td>-</td><td>하도급 제도 개선</td><td>하도급 관리 기준 개정 효율화</td></tr><tr><td>-</td><td>SW산업 진흥법 개선</td><td>공공 SW사업 기반 제도 수정</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="오픈준비-점검지표">오픈준비 점검지표<a class="hash-link" aria-label="오픈준비 점검지표에 대한 직접 링크" title="오픈준비 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%98%A4%ED%94%88%EC%A4%80%EB%B9%84-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h2>
-<blockquote>
-<p>ISO 25010 기반</p>
-</blockquote>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="기능-점검지표">기능 점검지표<a class="hash-link" aria-label="기능 점검지표에 대한 직접 링크" title="기능 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EA%B8%B0%EB%8A%A5-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h3>
-<ul>
-<li>적합성</li>
-<li>정확성</li>
-<li>상호운용성</li>
-<li>호환성</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="성능-점검지표">성능 점검지표<a class="hash-link" aria-label="성능 점검지표에 대한 직접 링크" title="성능 점검지표에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/%EC%B0%A8%EC%84%B8%EB%8C%80%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B3%BC-%EC%98%A4%ED%94%88%EA%B2%B0%ED%95%A8/#%EC%84%B1%EB%8A%A5-%EC%A0%90%EA%B2%80%EC%A7%80%ED%91%9C">​</a></h3>
-<ul>
-<li>사용성</li>
-<li>신뢰성</li>
-<li>유지보수성</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
