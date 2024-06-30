@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-06-30T11:15:24.181Z</updated>
+    <updated>2024-06-30T11:58:48.214Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[노코드]]></title>
+        <id>https://gracefullight.dev/en/pe/architecture/no-code/</id>
+        <link href="https://gracefullight.dev/en/pe/architecture/no-code/"/>
+        <updated>2024-06-30T11:58:48.214Z</updated>
+        <summary type="html"><![CDATA[No-Code]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="노코드-개념">노코드 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>프로그래밍 지식 없이 UI와 드래그 앤 드랍 기능 등을 활용하여 SW를 개발할 수 있도록하는 플랫폼 또는 도구</li>
+<li>개발 속도 향상으로 인한 비용절감과 비전문가도 어플리케이션을 개발할 수 있는 접근성 향상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="노코드-구성도-구성요소-적용방안">노코드 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="노코드-구성도">노코드 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="노코드-구성요소">노코드 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>사용자 인터페이스</td><td>시각적으로 어플리케이션 또는 워크플로우 조작</td><td>드래그 앤 드랍</td></tr><tr><td>모듈</td><td>사전 구성된 기능 모듈</td><td>재사용 가능</td></tr><tr><td>버전관리</td><td>다중 사용자 환경 구축</td><td>문서 버저닝</td></tr><tr><td>데이터 모델 통합</td><td>기능과 비지니스 로직, 데이터 모델 통합</td><td>API, 데이터 제어</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="노코드-적용방안">노코드 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>코딩 없는 SW 개발 교육</td><td>생산성 향상</td></tr><tr><td>금융</td><td>데이터 분석 도구 시각화</td><td>대쉬보드 사용성</td></tr><tr><td>민간</td><td>빠른 프로토타이핑, 시장 출시</td><td>효율성, 비용절감</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="노코드-사용시-고려사항">노코드 사용시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/no-code/#%EB%85%B8%EC%BD%94%EB%93%9C-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>커스터마이징이 필요한 경우, Low-code 플랫폼이나 전통적 코딩 방식으로 어플리케이션 구현 필요.</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/ca" term="pe/ca"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RAID]]></title>
         <id>https://gracefullight.dev/en/pe/architecture/RAID/</id>
@@ -294,34 +323,6 @@
 <table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>예방비용</td><td>프로젝트 및 자원관리</td><td>품질 계획, 수립, 통제, 형상, 보안 관리</td></tr><tr><td>-</td><td>예방품질활동</td><td>프로세스 점검, 산출물 검토, 내부QA</td></tr><tr><td>평가비용</td><td>평가품질활동</td><td>장비검수, 피어리뷰, 코드리뷰</td></tr><tr><td>-</td><td>테스트</td><td>단위, 통합, 시스템, 인수</td></tr><tr><td>내부실패비용</td><td>내부실패 관리, 품질활동</td><td>추가 작업비용, 조치</td></tr><tr><td>-</td><td>테스트 결함 조치</td><td>테스트 후 결함 조치</td></tr><tr><td>외부실패비용</td><td>결함 처리 조치</td><td>이미지 손실, 고객불만 처리</td></tr><tr><td>-</td><td>납기 지연 대응</td><td>프로젝트 지연 대응, 장애 복구</td></tr></tbody></table>
 <ul>
 <li>품질비용은 예방, 평가, 내부실패, 외부실패 순으로 사용 권장</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[구조적 방법론, 애자일 방법론]]></title>
-        <id>https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/</id>
-        <link href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/"/>
-        <updated>2024-06-23T11:10:44.076Z</updated>
-        <summary type="html"><![CDATA[Structured and agile development methodology]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-개념">구조적 방법론, 애자일 방법론 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>구조적방법론: 전체 시스템을 기능에 따라 분할하여 개발하고, 이를 통합하는 프로세스 중심의 하향식 방법론</li>
-<li>애자일방법론: SW개발을 반복적이고 점진적으로 진행하고, 변경에 유연하게 대응하는 방법론</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-구성요소-주요-기법-적용방안">구조적 방법론, 애자일 방법론 구성요소, 주요 기법, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="구조적-방법론-애자일-방법론-구성요소-비교">구조적 방법론, 애자일 방법론 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/#%EA%B5%AC%EC%A1%B0%EC%A0%81-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>구조적 방법론</th><th>애자일 방법론</th></tr></thead><tbody><tr><td>접근방식</td><td>계획중심, 단계적</td><td>반복적, 유연한 방식, 짧은 개발 사이클</td></tr><tr><td>문서화</td><td>모든 단계에서 상세한 문서화</td><td>문서보다는 동작하는 SW에 가치</td></tr><tr><td>고객 참여</td><td>프로젝트 초기에 요구사항 정의 후 참여 없음</td><td>지속적인 피드백과 개선</td></tr><tr><td>변경관리</td><td>변경에 유연하지 않음</td><td>유연한 변경 수용</td></tr><tr><td>개발 속도</td><td>긴 개발 주기</td><td>빠른 개발 주기</td></tr><tr><td>장점</td><td>명확한 구조와 규정된 프로세스를 통한 크고 복잡한 프로젝트 적합</td><td>변화하는 시장 요구사항에 빠른 대응</td></tr><tr><td>단점</td><td>유연성 부족, 계획 변경 어려움</td><td>문서 부족으로 인한 리스크</td></tr><tr><td>주요 기법</td><td>데이터 흐름 다이어그램, 분할 정복, 정형화</td><td>스크럼, 칸반, TDD</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="애자일-방법론의-주요-기법-스크럼-칸반-비교">애자일 방법론의 주요 기법 스크럼, 칸반 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/#%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0%EC%9D%98-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%8A%A4%ED%81%AC%EB%9F%BC-%EC%B9%B8%EB%B0%98-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>스크럼</th><th>칸반</th></tr></thead><tbody><tr><td>개념</td><td>고정된 역할과 이벤트를 통한 작업관리</td><td>시각화를 통한 작업 흐름 관리</td></tr><tr><td>특징</td><td>스프린트, 데일리스크럼, 회고</td><td>칸반보드, 대기행렬, 총 주기 시간</td></tr><tr><td>장점</td><td>명확한 역할분담, 짧은 주기와 반복작업</td><td>유연한 작업관리, 지속적인 개선</td></tr><tr><td>단점</td><td>초기적응 어려움</td><td>역할 불명확, 관리 어려움</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="개발-방법론-선택시-고려사항">개발 방법론 선택시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/structured-and-agile-development-methodology/#%EA%B0%9C%EB%B0%9C-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>레거시시스템 여부, 팀 성숙도 측면을 고려하여 구조적 방법론과 애자일 방법론 중 선택 필요.</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
