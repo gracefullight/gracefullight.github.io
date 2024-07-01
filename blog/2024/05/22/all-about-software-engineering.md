@@ -423,6 +423,18 @@ graph TB
 - 동작 다이어그램: 유스케이스, 액티비티, 상태
 - 인터랙션 다이어그램: 시퀀스, 커뮤니케이션, 인터랙션 오버뷰, 타이밍
 
+## 아키텍처 평가 모델
+
+### SAAM
+
+- Software Architecture Analysis Method
+- 이해관계자 품질 민감 시나리오 도출, 시나리오 우선순위, 시나리오 기반 아키텍처 평가
+
+### ATAM
+
+- Architecture Trade-off Analysis Method
+- 업무 배경 및 요구사항으로 품질 속성 도출, 시나리오 기반 아키텍처 절충점, 리스크 분석, 아키텍처 반영 및 평가
+
 ## 참조
 
 - [소프트웨어 공학의 모든 것](https://m.yes24.com/Goods/Detail/87531385)
