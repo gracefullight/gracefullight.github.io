@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 05 Jul 2024 12:42:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2024 12:51:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[SBOM, Software Bill of Materials]]></title>
+            <link>https://gracefullight.dev/en/pe/security/sbom/</link>
+            <guid>https://gracefullight.dev/en/pe/security/sbom/</guid>
+            <pubDate>Fri, 05 Jul 2024 12:51:10 GMT</pubDate>
+            <description><![CDATA[Software Bill of Materials]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-개념">SBOM의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW개발 및 배포 과정에 사용된 모든 오픈소스, 라이브러리, 패키지, 모듈 등의 구성요소를 체계화한 SW자재 명세서</li>
+<li>SW복잡성의 증가로 인한 보안취약점, OSS라이센스 관리, SW공급망 투명성 확보, 구성요소들의 품질 관리를 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-개념도-구성요소-적용사례">SBOM의 개념도, 구성요소, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-개념도">SBOM의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>SBOM 도입으로 관리자가 SW를 통합 관리 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-구성요소">SBOM의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>지침, 절차</td><td>SBOM 요청, 생성, 사용에 관한 절차 정의</td><td>생성 빈도, 분석 깊이, 접근 제어 등</td></tr><tr><td>컴포넌트 명세</td><td>추적해야할 각 컴포넌트의 식별정보, 관계정보</td><td>이름, 버전, 고유식별자, 의존관계, 라이센스</td></tr><tr><td>자동화 지원</td><td>기계 가독성 데이터포맷으로 자동화된 추적관리</td><td>SPDX, CycloneDX 등 SBOM 프로토콜</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="sbom-적용사례">SBOM 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>디지털 플랫폼 정부</td><td>SW공급망 보안 가이드라인</td></tr><tr><td>국외</td><td>바이든 행정부</td><td>행정명령 통한 주요 인프라SW SBOM 의무화</td></tr><tr><td>-</td><td>리눅스 재단</td><td>SPDX 표준 관리 통한 SBOM 정보 교환 및 활용 지원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="sbom-도입-후-고려사항">SBOM 도입 후 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom-%EB%8F%84%EC%9E%85-%ED%9B%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>SW구성요소 변경시 SBOM을 최신상태로 유지하여 정보 정확성을 확보하고, 주기적인 오픈소스 버전 업데이트로 보안 취약점 개선</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-적용사례">SBOM의 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="sbom-도입-후-고려사항-1">SBOM 도입 후 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom-%EB%8F%84%EC%9E%85-%ED%9B%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD-1">​</a></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[크리덴셜 스터핑]]></title>
             <link>https://gracefullight.dev/en/pe/security/credential-stuffing/</link>
@@ -73,7 +103,7 @@
 <div class="language-text codeBlockContainer_gEVH theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_MNMt"><pre tabindex="0" class="prism-code language-text codeBlock_RqKF thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_ObsJ"><span class="token-line" style="color:#9CDCFE"><span class="token plain">   우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup_gp13"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_NISv" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_HXzq"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_CQHE"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="우선순위-역전현상-세부-절차">우선순위 역전현상 세부 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>순번</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>1</td><td>임계영역 진입</td><td>Task3은 자원R 사용 위해 진입</td></tr><tr><td>2</td><td>프로세스 선점</td><td>높은 우선순위의 Task1은 Task3의 임계영역 선점 스케줄링 실행</td></tr><tr><td>3</td><td>임계영역 대기</td><td>Task3이 진입 중이므로, Task1은 대기</td></tr><tr><td>4</td><td>우선순위 역전</td><td>중간 우선순위의 Task2가 선점하여 스케줄링, Task1은 계속 대기</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="우선순위-역전현상-해결방안">우선순위 역전현상 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="우선순위-역전현상-해결방안">우선순위 역전현상 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EF%BF%BD%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="우선순위-상속">우선순위 상속<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%83%81%EC%86%8D">​</a></h3>
 <div class="language-text codeBlockContainer_gEVH theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_MNMt"><pre tabindex="0" class="prism-code language-text codeBlock_RqKF thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_ObsJ"><span class="token-line" style="color:#9CDCFE"><span class="token plain">    우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup_gp13"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_NISv" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_HXzq"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_CQHE"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <ul>
@@ -273,7 +303,7 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하요인의-개념도-세부요인-해결방안">웹 성능 저하요인의 개념도, 세부요인, 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98%EC%9A%94%EC%9D%B8%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%9A%94%EC%9D%B8-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하요인의-개념도">웹 성능 저하요인의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98%EC%9A%94%EC%9D%B8%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하-세부요인">웹 성능 저하 세부요인<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98-%EC%84%B8%EB%B6%80%EF%BF%BD%EC%9A%94%EC%9D%B8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-저하-세부요인">웹 성능 저하 세부요인<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%A0%80%ED%95%98-%EC%84%B8%EB%B6%80%EC%9A%94%EC%9D%B8">​</a></h3>
 <table><thead><tr><th>구분</th><th>요인</th><th>비고</th></tr></thead><tbody><tr><td>브라우저</td><td>렌더링 최적화 미흡, 많은 자바스크립트 로드</td><td>렌더링 차단 리소스, 불필요한 JS로드</td></tr><tr><td>네트워크</td><td>많은 리소스 요청, 대역폭 부족</td><td>대용량 파일, 압축되지 않은 파일, 느린 N/W 속도</td></tr><tr><td>서버</td><td>서버 처리능력 부족, DB 처리능력 부족</td><td>H/W 성능 부족, 서버 과부하</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-최적화-방안">웹 성능 최적화 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>원인</th><th>해결방안</th><th>비고</th></tr></thead><tbody><tr><td>대용량 파일</td><td>이미지 최적화, 압축</td><td>리사이즈, WebP 압축</td></tr><tr><td>많은 HTTP 요청</td><td>요청 횟수 절감, 병렬처리</td><td>HTTP2, 이미지스프라이팅</td></tr><tr><td>느린 N/W 속도</td><td>사용자와 가까운 곳에 리소스 배치</td><td>CDN 사용</td></tr><tr><td>느린 서버 응답</td><td>하드웨어 개선, 튜닝, 부하 분산</td><td>스케일업, 쿼리 튜닝, 샤딩</td></tr><tr><td>렌더링 차단 리소스</td><td>JS 실행 시간 단축</td><td>비동기처리, 트리쉐이킹</td></tr></tbody></table>
@@ -311,53 +341,6 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="인터리빙-고려사항">인터리빙 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/memory-interleaving/#%EC%9D%B8%ED%84%B0%EB%A6%AC%EB%B9%99-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>메모리 접근 패턴, 시스템 성능 요구사항, 비용, 복잡도 등을 고려하여 최적의 인터리빙 방식 선택</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[정보시스템 하드웨어 규모산정 지침]]></title>
-            <link>https://gracefullight.dev/en/pe/architecture/정보시스템-하드웨어-규모산정-지침/</link>
-            <guid>https://gracefullight.dev/en/pe/architecture/정보시스템-하드웨어-규모산정-지침/</guid>
-            <pubDate>Sun, 30 Jun 2024 13:34:47 GMT</pubDate>
-            <description><![CDATA[정보시스템 하드웨어 규모산정 지침]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-지침-개념">정보시스템 하드웨어 규모산정 지침 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>정보시스템 구축 시 필요한 하드웨어 자원의 적정 규모를 산정하기 위한 지침으로 시스템 성능 요구사항을 충족하면서 비용 효율적 H/W 자원을 도입학리 위해 사용</li>
-<li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>규모산정은 성능요구사항이나 성능을 결정하는 용량계획, 용량관리의 하위 개념</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-구성요소">정보시스템 하드웨어 규모산정 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>용량관리</td><td>요구사항 충족을 위해 용량계획수립, 비용-용량 균형 제고</td><td>조직, 지속적</td></tr><tr><td>용량계획</td><td>시스템 성능 요구사항과 성능을 결정하기 위한 계획</td><td>조직, 시스템, 지속적</td></tr><tr><td>규모산정</td><td>기본적인 용량과 성능 요구사항이 제시되었을 때, 시스템 요구사항으로 반영하는 것</td><td>시스템, 일시적</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-주요기법">정보시스템 하드웨어 규모산정 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>수식계산법</td><td>유저 수 등 규모산정 요소 기반으로 용량 수치를 계산하고 보정하는 방법</td><td>근거 명확, 보정치 오류 가능성</td></tr><tr><td>참조법</td><td>업무량 등 기존 데이터를 기반으로 대략적인 시스템의 규모를 비교하여 산정</td><td>비교적 안정, 근거 불명확</td></tr><tr><td>시뮬레이션법</td><td>대상 업무에 대한 작업 부하를 모델링, 시뮬레이션하여 규모 산정</td><td>높은 정확성, 시간 및 비용 소요</td></tr></tbody></table>
-<ul>
-<li>공공부문에선 현실적으로 수식계산법을 사용하나, 다른 방법도 필요시 고려</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-대상-및-절차">정보시스템 하드웨어 규모산정 대상 및 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EB%8C%80%EC%83%81-%EB%B0%8F-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-대상">정보시스템 하드웨어 규모산정 대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EB%8C%80%EC%83%81">​</a></h3>
-<!-- -->
-<ul>
-<li>CPU, 스토리지는 OLTP, WEB/WAS 등 서버가 받는 부하에 따라 다르게 산정</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-절차">정보시스템 하드웨어 규모산정 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A0%88%EC%B0%A8">​</a></h3>
-<ol>
-<li>구축 방향 및 기초 자료 조사</li>
-<li>기초 자료 및 업무 분석</li>
-<li>참조 모델 결정 및 서버 규모 산정</li>
-<li>참조 모델별 가중치 적용</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>구축 시스템의 중장기적 측면 고려</li>
-<li>시스템 전략에 맞는 규모 여부 파악</li>
-<li>장비 설치 조건의 적합성</li>
-<li>기종별 슬롯 수 확인</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
