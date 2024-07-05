@@ -2,11 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-01T09:31:49.345Z</updated>
+    <updated>2024-07-05T12:42:30.378Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[크리덴셜 스터핑]]></title>
+        <id>https://gracefullight.dev/pe/security/credential-stuffing/</id>
+        <link href="https://gracefullight.dev/pe/security/credential-stuffing/"/>
+        <updated>2024-07-05T12:42:30.378Z</updated>
+        <summary type="html"><![CDATA[Credential Stuffing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑의-개념">크리덴셜 스터핑의 개념<a class="hash-link" aria-label="크리덴셜 스터핑의 개념에 대한 직접 링크" title="크리덴셜 스터핑의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>공격자가 미리 확보한 사용자의 계정, 인증정보를 이용하여 다른 사이트에 무작위로 대입하여 정보를 탈취하는 사이버 공격</li>
+<li>인터넷 사용자가 동일 로그인 정보를 여러 사이트에서 사용한다는 점을 노린 자동화 공격</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑-개념도-공격절차-대응방안">크리덴셜 스터핑 개념도, 공격절차, 대응방안<a class="hash-link" aria-label="크리덴셜 스터핑 개념도, 공격절차, 대응방안에 대한 직접 링크" title="크리덴셜 스터핑 개념도, 공격절차, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑-개념도">크리덴셜 스터핑 개념도<a class="hash-link" aria-label="크리덴셜 스터핑 개념도에 대한 직접 링크" title="크리덴셜 스터핑 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>무차별 대입 공격으로 탈취한 정보를 판매하여 2차 피해 발생</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑-공격절차">크리덴셜 스터핑 공격절차<a class="hash-link" aria-label="크리덴셜 스터핑 공격절차에 대한 직접 링크" title="크리덴셜 스터핑 공격절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>수집</td><td>백도어 삽입</td><td>취약점 이용 백도어 삽입</td></tr><tr><td>-</td><td>개인정보 탈취</td><td>내부시스템의 계정, 인증 정보 탈취</td></tr><tr><td>공격</td><td>무차별 대입 공격</td><td>계정정보로 무차별 로그인, 권한 획득</td></tr><tr><td>-</td><td>중요정보 탈취</td><td>중요정보 탈취 후 협박, 유포, 금전 요구</td></tr><tr><td>반복</td><td>중요정보 판매</td><td>정보를 다크웹에 판매, 공개</td></tr><tr><td>-</td><td>추가피해 발생</td><td>공개된 정보로 추가 공격 수행</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑의-대응방안">크리덴셜 스터핑의 대응방안<a class="hash-link" aria-label="크리덴셜 스터핑의 대응방안에 대한 직접 링크" title="크리덴셜 스터핑의 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91%EC%9D%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>설명</th></tr></thead><tbody><tr><td>개인</td><td>사이트별 고유 계정 사용</td><td>동일 정보 사용 지양</td></tr><tr><td>-</td><td>다단계 인증 활성화</td><td>MFA 등 2단계 인증 활성화</td></tr><tr><td>-</td><td>회사 이메일 사용 지양</td><td>가입시 개인 이메일 사용</td></tr><tr><td>기업</td><td>보안 모니터링</td><td>트래픽 탐지로 동일 IP 차단</td></tr><tr><td>-</td><td>로그인 시도 제한</td><td>자동화 공격 방지</td></tr><tr><td>-</td><td>대응 계획 수립</td><td>개인 보안 조치, 주기적 교육</td></tr></tbody></table>
+<ul>
+<li>크리덴셜 스터핑 공격은 자동화되어있으므로, 트래픽 변화, 로그인 실패 빈도 증가 등 선행 징조 확인 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="크리덴셜-스터핑-대응시-고려사항">크리덴셜 스터핑 대응시 고려사항<a class="hash-link" aria-label="크리덴셜 스터핑 대응시 고려사항에 대한 직접 링크" title="크리덴셜 스터핑 대응시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EB%8C%80%EC%9D%91%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>공격을 사전에 예방하기 위해 IP보안, 2단계 인증 등 사용성을 고려한 보안 정책 도입 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[실시간 스케줄링, 우선순위 역전]]></title>
         <id>https://gracefullight.dev/pe/architecture/realtime-scheduling-priority-inversion/</id>
@@ -121,7 +156,7 @@
 <li>리틀 엔디언: 데이터를 메모리에 적재시 메모리 시작 주소에 데이터의 하위 바이트부터 순차 저장하는 방식</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="빅-엔디언-리틀-엔디언-개념도-세부-요소-적용사례">빅 엔디언, 리틀 엔디언 개념도, 세부 요소, 적용사례<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언 개념도, 세부 요소, 적용사례에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언 개념도, 세부 요소, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80-%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="빅-엔디언-리틀-엔디언-개념도">빅 엔디언, 리틀 엔디언 개념도<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언 개념도에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언 ��개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="빅-엔디언-리틀-엔디언-개념도">빅 엔디언, 리틀 엔디언 개념도<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언 개념도에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="빅-엔디언-리틀-엔디언-세부-요소">빅 엔디언, 리틀 엔디언 세부 요소<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언 세부 요소에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언 세부 요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EC%84%B8%EB%B6%80-%EC%9A%94%EC%86%8C">​</a></h3>
@@ -163,7 +198,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="그린-배포-카나리-배포-핵심요소-비교">그린 배포, 카나리 배포 핵심요소 비교<a class="hash-link" aria-label="그린 배포, 카나리 배포 핵심요소 비교에 대한 직접 링크" title="그린 배포, 카나리 배포 핵심요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>그린</th><th>카나리</th></tr></thead><tbody><tr><td>목적</td><td>신규버전 트래픽 일괄 전환</td><td>신규버전 점진적 배포</td></tr><tr><td>리스크</td><td>모든 사용자가 신규버전 즉시 사용</td><td>리스크 최소화</td></tr><tr><td>복잡도</td><td>일괄전환으로 간단</td><td>비율 조정으로 복잡</td></tr><tr><td>테스트 범위</td><td>모든 사용자가 새 버전 테스트</td><td>초기 소규모 사용자만 테스트</td></tr><tr><td>배포 시간</td><td>단시간</td><td>상대적 장시간</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="그린-배포-카나리-배포-세부-절차">그린 배포, 카나리 배포 세부 절차<a class="hash-link" aria-label="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" title="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="그린-배포-카나리-배포-세부-절차">그린 배포, 카나리 배포 세부 절차<a class="hash-link" aria-label="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" title="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EF%BF%BD%EF%BF%BD%EB%B0%B0%ED%8F%AC-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>구분</th><th>그린</th><th>카나리</th></tr></thead><tbody><tr><td>준비단계</td><td>신규버전 배포, 테스트</td><td>카나리 환경 준비 초기 테스트</td></tr><tr><td>배포 방식</td><td>전체 트래픽 일괄 전환</td><td>소규모 트래픽에서 점진적 전환</td></tr><tr><td>모니터링</td><td>전환 후 트래픽 모니터링</td><td>점진적 모니터링 오류확인</td></tr><tr><td>롤백</td><td>문제시 전체 롤백</td><td>필요시 특정 비율 롤백</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="리버스-프록시와-로드밸런서-비교">리버스 프록시와 로드밸런서 비교<a class="hash-link" aria-label="리버스 프록시와 로드밸런서 비교에 대한 직접 링크" title="리버스 프록시와 로드밸런서 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="리버스-프록시-로드밸런서-개념도">리버스 프록시, 로드밸런서 개념도<a class="hash-link" aria-label="리버스 프록시, 로드밸런서 개념도에 대한 직접 링크" title="리버스 프록시, 로드밸런서 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%94%84%EB%A1%9D%EC%8B%9C-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
@@ -199,14 +234,14 @@
 <h2 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트의-구성도-구성요소-비교">스프링부트의 구성도, 구성요소, 비교<a class="hash-link" aria-label="스프링부트의 구성도, 구성요소, 비교에 대한 직접 링크" title="스프링부트의 구성도, 구성요소, 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트의-구성도">스프링부트의 구성도<a class="hash-link" aria-label="스프링부트의 구성도에 대한 직접 링크" title="스프링부트의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트의-구성요소">스프링부트의 구성요소<a class="hash-link" aria-label="스프링부트의 구성요소에 대한 직접 링크" title="스프��링부트의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트의-구성요소">스프링부트의 구성요소<a class="hash-link" aria-label="스프링부트의 구성요소에 대한 직접 링크" title="스프링부트의 구성요소에 �대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>내장톰캣서버</td><td>스프링부트 자체 웹서버</td><td>독립 실행 가능</td></tr><tr><td>컨트롤러</td><td>사용자 요청 처리, 비지니스 로직 응답 반환</td><td>RestController 등</td></tr><tr><td>서비스레이어</td><td>비지니스 로직을 처리하는 계층</td><td>DB연동, 트랜잭션 관리</td></tr><tr><td>레파지토리</td><td>DB 접근하여 CRUD 작업 수행</td><td>JpaRepository 등</td></tr><tr><td>모델</td><td>데이터 구조를 정의하는 클래스</td><td>Entity, DTO</td></tr></tbody></table>
 <ul>
 <li>Spring Starter, Auto Configurator 등 스프링부트 모듈을 활용하여 쉽게 기본 구성 사용 가능</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="스프링-프레임워크와-스프링부트-비교">스프링 프레임워크와 스프링부트 비교<a class="hash-link" aria-label="스프링 프레임워크와 스프링부트 비교에 대한 직접 링크" title="스프링 프레임워크와 스프링부트 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>스프링 프레임워크</th><th>스프링 부트</th></tr></thead><tbody><tr><td>설정방식</td><td>수동설정, XML, Properties 등</td><td>최소설정, 자동설정</td></tr><tr><td>의존성 관리</td><td>직접 의존성 명시, 관리</td><td>스타터를 통한 의존성 그룹화, 자동 관리</td></tr><tr><td>내장서버</td><td>없음</td><td>있음</td></tr><tr><td>목적</td><td>엔터프라이즈 앱 개발 등</td><td>REST API 개발 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트-사용시-고려사항">스프링부트 사용시 고려사항<a class="hash-link" aria-label="스프링부트 사용시 고려사항에 대한 직접 링크" title="스프링부트 사용시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="스프링부트-사용시-고려사항">스프링부트 사용시 고려사항<a class="hash-link" aria-label="스프링부트 사�용시 고려사항에 대한 직접 링크" title="스프링부트 사용시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/spring-boot/#%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>많은 어노테이션과 추상화된 설정과 라이브러리를 사용해야하므로, 개발자 숙련도를 고려하여 기능 선택 필요</li>
 </ul>]]></content>
@@ -240,7 +275,7 @@
 <table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>핵심기술</td><td>하이퍼바이저, VM스냅샷</td><td>컨테이너, 네임스페이스, CGROUP</td></tr><tr><td>환경</td><td>다양한 OS지원, 독점적 자원할당</td><td>단일 OS지원, 호스트OS커널 공유</td></tr><tr><td>장점</td><td>강한 보안성, 장애 격리, 다양한 OS 실행</td><td>빠른 부트시간, 이미지 경량화, 자원사용 효율성</td></tr><tr><td>단점</td><td>높은 자원 소모, OS 라이센스 비용</td><td>커널 공유로 인한 낮은 보안성, 호스트OS 종속성</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="vm-container-적용방안">VM, Container 적용방안<a class="hash-link" aria-label="VM, Container 적용방안에 대한 직접 링크" title="VM, Container 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/vm-and-container/#vm-container-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>보안 및 격리</td><td>높은 보안성과 격리성이 필요한 경우</td><td>프로세스 수준 격리와 빠른 복구가 필요한 경우</td></tr><tr><td>CI/CD</td><td>DevOps환경에서 다양한 운영체제 테스트 시나리오 자동화</td><td>IaC 기반, GitOps의 지속적 통합, 배포</td></tr><tr><td>적합 환경</td><td>기존, 레거시, 모놀리스</td><td>클라우드 네이티브</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화시-고려사항">가상화시 고려사항<a class="hash-link" aria-label="가상화시 고려사항에 대한 직접 링크" title="가상화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/vm-and-container/#%EA%B0%80%EC%83%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="가상화시-고려사항">가상화시 고려사항<a class="hash-link" aria-label="가상화시 고��려사항에 대한 직접 링크" title="가상화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/vm-and-container/#%EA%B0%80%EC%83%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>이미지, 스냅샷 레지스트리 관리와 보안 스캐닝을 통해 취약점 사전 조치 필요</li>
 </ul>]]></content>
@@ -269,7 +304,7 @@
 <table><thead><tr><th>구분</th><th>요인</th><th>비고</th></tr></thead><tbody><tr><td>브라우저</td><td>렌더링 최적화 미흡, 많은 자바스크립트 로드</td><td>렌더링 차단 리소스, 불필요한 JS로드</td></tr><tr><td>네트워크</td><td>많은 리소스 요청, 대역폭 부족</td><td>대용량 파일, 압축되지 않은 파일, 느린 N/W 속도</td></tr><tr><td>서버</td><td>서버 처리능력 부족, DB 처리능력 부족</td><td>H/W 성능 부족, 서버 과부하</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="웹-성능-최적화-방안">웹 성능 최적화 방안<a class="hash-link" aria-label="웹 성능 최적화 방안에 대한 직접 링크" title="웹 성능 최적화 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/website-optimization/#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>원인</th><th>해결방안</th><th>비고</th></tr></thead><tbody><tr><td>대용량 파일</td><td>이미지 최적화, 압축</td><td>리사이즈, WebP 압축</td></tr><tr><td>많은 HTTP 요청</td><td>요청 횟수 절감, 병렬처리</td><td>HTTP2, 이미지스프라이팅</td></tr><tr><td>느린 N/W 속도</td><td>사용자와 가까운 곳에 리소스 배치</td><td>CDN 사용</td></tr><tr><td>느린 서버 응답</td><td>하드웨어 개선, 튜닝, 부하 분산</td><td>스케일업, 쿼리 튜닝, 샤딩</td></tr><tr><td>렌더링 차단 리소스</td><td>JS 실행 시간 단축</td><td>비동기처리, 트리쉐이킹</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-최적화시-고려사항">웹 최적화시 고려사항<a class="hash-link" aria-label="웹 최적화시 고려사항에 대한 직접 링크" title="웹 최적화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/website-optimization/#%EC%9B%B9-%EC%B5%9C%EC%A0%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="웹-최적화시-고려사항">웹 최적화시 고려사항<a class="hash-link" aria-label="웹 최적화시 고려사항��에 대한 직접 링크" title="웹 최적화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/website-optimization/#%EC%9B%B9-%EC%B5%9C%EC%A0%81%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>Page Speed 등 웹 성능 측정도구를 활용하여 최적화 전/후 성능 비교 필요</li>
 </ul>]]></content>
@@ -304,7 +339,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="인터리빙의-액세스-방식">인터리빙의 액세스 방식<a class="hash-link" aria-label="인터리빙의 액세스 방식에 대한 직접 링크" title="인터리빙의 액세스 방식에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-interleaving/#%EC%9D%B8%ED%84%B0%EB%A6%AC%EB%B9%99%EC%9D%98-%EC%95%A1%EC%84%B8%EC%8A%A4-%EB%B0%A9%EC%8B%9D">​</a></h3>
 <table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>C-Access, 순차접근</td><td>-</td><td>주솓르이 버스를 통해 순차적으로 모듈에 도착, 버스 경합 발생가능</td></tr><tr><td>S-Access, 병렬접근</td><td>-</td><td>읽기 동시 진행, 데이터 순차 전송하여 동시성 확보로 높은 성능, DDR DRAM 적용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="인터리빙-고려사항">인터리빙 고려사항<a class="hash-link" aria-label="인터리빙 고려사항에 대한 직접 링크" title="인터리빙 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-interleaving/#%EC%9D%B8%ED%84%B0%EB%A6%AC%EB%B9%99-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="인터리빙-고려사항">인터리빙 고려사항<a class="hash-link" aria-label="인터리빙 고려사항에 대한 직접 링크" title="인터리빙 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-interleaving/#%EC%9D%B8%ED%84%B0%EF%BF%BD%EB%A6%AC%EB%B9%99-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>메모리 접근 패턴, 시스템 성능 요구사항, 비용, 복잡도 등을 고려하여 최적의 인터리빙 방식 선택</li>
 </ul>]]></content>
@@ -326,7 +361,7 @@
 <li>정보시스템 구축 시 필요한 하드웨어 자원의 적정 규모를 산정하기 위한 지침으로 시스템 성능 요구사항을 충족하면서 비용 효율적 H/W 자원을 도입학리 위해 사용</li>
 <li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법에 대한 직접 링크" title="정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법에 대한 직접 링크" title="정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EF%BF%BD%EF%BF%BD%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%B2%95">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_O5py" id="정보시스템-하드웨어-규모산정-개념도">정보시스템 하드웨어 규모산정 개념도<a class="hash-link" aria-label="정보시스템 하드웨어 규모산정 개념도에 대한 직접 링크" title="정보시스템 하드웨어 규모산정 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A7%80%EC%B9%A8/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
@@ -358,51 +393,6 @@
 <li>시스템 전략에 맞는 규모 여부 파악</li>
 <li>장비 설치 조건의 적합성</li>
 <li>기종별 슬롯 수 확인</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/ca" term="pe/ca"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[메모리 반도체, 비메모리 반도체]]></title>
-        <id>https://gracefullight.dev/pe/architecture/memory-and-logic-chips/</id>
-        <link href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/"/>
-        <updated>2024-06-30T13:17:58.762Z</updated>
-        <summary type="html"><![CDATA[memory and logic chips]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-반도체-비메모리-반도체-개념">메모리 반도체, 비메모리 반도체 개념<a class="hash-link" aria-label="메모리 반도체, 비메모리 반도체 개념에 대한 직접 링크" title="메모리 반도체, 비메모리 반도체 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EB%B9%84%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>메모리 반도체: 저장방식에 따라 휘발성 RAM, 비휘발성 ROM으로 구분되는 정볼르 저장하기 위한 반도체</li>
-<li>비메모리 반도체: CPU, AP, 센서 등의 정보를 연산하고 처리하기 위한 시스템 반도체</li>
-<li>메모리 반도체는 단순구조로 저가, 비메모리 반도체는 복잡한 설계가 필요하여 고가 형성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="메모리-반도체-비메모리-반도체-비교">메모리 반도체, 비메모리 반도체 비교<a class="hash-link" aria-label="메모리 반도체, 비메모리 반도체 비교에 대한 직접 링크" title="메모리 반도체, 비메모리 반도체 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EB%B9%84%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%B0%98%EB%8F%84%EC%B2%B4-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="기술적-요소-비교">기술적 요소 비교<a class="hash-link" aria-label="기술적 요소 비교에 대한 직접 링크" title="기술적 요소 비교에 대한 직접 링��크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EA%B8%B0%EC%88%A0%EC%A0%81-%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>메모리</th><th>비메모리</th></tr></thead><tbody><tr><td>설계복잡도</td><td>낮음</td><td>높음</td></tr><tr><td>집적도</td><td>높음</td><td>낮음</td></tr><tr><td>주요성능지표</td><td>용량, 속도, 전력소비</td><td>연산 성능, 전력효율, 기능</td></tr><tr><td>주요기술</td><td>셀 구조</td><td>트랜지스터</td></tr><tr><td>제품</td><td>DRAM, SRAM, NAND</td><td>CPU, GPU, AP, NPU</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="관리적-요소-비교">관리적 요소 비교<a class="hash-link" aria-label="관리적 요소 비교에 대한 직접 링크" title="관리적 요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EA%B4%80%EB%A6%AC%EC%A0%81-%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>메모리</th><th>비메모리</th></tr></thead><tbody><tr><td>생산방식</td><td>소품종 대량생산</td><td>다품종 소량생산</td></tr><tr><td>시장구조</td><td>범용시장</td><td>특화시장</td></tr><tr><td>생산구조</td><td>설계업체가 대부분 생산</td><td>대부분 설계, 양산 분리</td></tr><tr><td>변동성</td><td>높음</td><td>낮음</td></tr><tr><td>주요업체</td><td>삼성, 하이닉스</td><td>인텔, 엔비디아</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="반도체-가치사슬">반도체 가치사슬<a class="hash-link" aria-label="반도체 가치사슬에 대한 직접 링크" title="반도체 가치사슬에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="반도체-가치사슬-구성도">반도체 가치사슬 구성도<a class="hash-link" aria-label="반도체 가치사슬 구성도에 대한 직접 링크" title="반도체 가치사슬 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="반도체-가치사슬-세부-구성요소">반도체 가치사슬 세부 구성요소<a class="hash-link" aria-label="반도체 가치사슬 세부 구성요소에 대한 직접 링크" title="반도체 가치사슬 세부 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B0%80%EC%B9%98%EC%82%AC%EC%8A%AC-%EC%84%B8%EB%B6%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>주요 기업</th></tr></thead><tbody><tr><td>R&amp;D, 설계</td><td>반도체 기능 정의, 회로설계, 제품 및 제조공정 연구</td><td>인텔, 삼성전자, 엔비디아, 퀄컴</td></tr><tr><td>조달</td><td>반도체에 필요한 장비 및 소재 공급</td><td>ASML 등</td></tr><tr><td>생산</td><td>웨이퍼 생산, 패키징, 테스트 등의 과정을 통한 칩 생산</td><td>TSMC, 삼성전자, 하이닉스</td></tr><tr><td>수요</td><td>생산된 반도체를 사용하는 시장</td><td>애플, 삼성전자 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="반도체-산업-발전방향">반도체 산업 발전방향<a class="hash-link" aria-label="반도체 산업 발전방향에 대한 직접 링크" title="반도체 산업 발전방향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/memory-and-logic-chips/#%EB%B0%98%EB%8F%84%EC%B2%B4-%EC%82%B0%EC%97%85-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
-<ul>
-<li>비전<!-- -->
-<ul>
-<li>기술 리더쉽 확보</li>
-<li>시장 다각화</li>
-<li>생태계 구축</li>
-</ul>
-</li>
-<li>전략<!-- -->
-<ul>
-<li>R&amp;D 투자 강화</li>
-<li>글로벌 파트너쉽</li>
-</ul>
-</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
