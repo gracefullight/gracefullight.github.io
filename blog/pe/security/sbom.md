@@ -58,6 +58,6 @@ graph LR
 
 - SW구성요소 변경시 SBOM을 최신상태로 유지하여 정보 정확성을 확보하고, 주기적인 오픈소스 버전 업데이트로 보안 취약점 개선
 
-### SBOM의 적용사례
+## 참조
 
-## SBOM 도입 후 고려사항
+- [KISA: SW 공급망 보안 가이드라인 1.0](https://www.kisa.or.kr/2060204/form?postSeq=15&page=1)
