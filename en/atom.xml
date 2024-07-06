@@ -66,8 +66,10 @@
 <ul>
 <li>SW구성요소 변경시 SBOM을 최신상태로 유지하여 정보 정확성을 확보하고, 주기적인 오픈소스 버전 업데이트로 보안 취약점 개선</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_O5py" id="sbom의-적용사례">SBOM의 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom%EC%9D%98-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_O5py" id="sbom-도입-후-고려사항-1">SBOM 도입 후 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#sbom-%EB%8F%84%EC%9E%85-%ED%9B%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD-1">​</a></h2>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_O5py" id="참조">참조<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/sbom/#%EC%B0%B8%EC%A1%B0">​</a></h2>
+<ul>
+<li><a href="https://www.kisa.or.kr/2060204/form?postSeq=15&amp;page=1" target="_blank" rel="noopener noreferrer">KISA: SW 공급망 보안 가이드라인 1.0</a></li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
