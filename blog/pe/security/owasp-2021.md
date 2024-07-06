@@ -13,7 +13,7 @@ tags:
 - Open Web Application Security Project
 - 소프트웨어의 보안 취약점을 분석하고 연구하는 비영리 단체
 
-## OWASP 2024 Top 10 취약점
+## OWASP 2021 Top 10 취약점
 
 ### 1. 접근 권한 취약점
 
