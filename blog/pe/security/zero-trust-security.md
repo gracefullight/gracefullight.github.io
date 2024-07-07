@@ -62,3 +62,7 @@ graph LR
 ## 제로 트러스트 보안 적용시 고려사항
 
 - ITAM 도입을 선행하여 정보 자산의 추적용이성 확보
+
+## 참조
+
+- [KISA: 제로트러스트 가이드라인 1.0](https://www.kisa.or.kr/2060205/form?postSeq=20&page=1)
