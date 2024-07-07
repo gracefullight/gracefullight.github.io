@@ -64,7 +64,7 @@
     "@tsconfig/docusaurus": "^2.0.3",
     "@types/fs-extra": "^11.0.4",
     "@types/luxon": "^3.4.2",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "@types/pako": "^2.0.3",
     "@types/react": "^18.3.3",
     "clipanion": "4.0.0-rc.3",
@@ -74,11 +74,11 @@
     "hexo-util": "^3.3.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
-    "oxlint": "^0.5.1",
+    "oxlint": "^0.5.2",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^2.10.0",
-    "tsx": "^4.16.0",
-    "typescript": "^5.5.2"
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
   },
   "packageManager": "pnpm@9.4.0",
   "engines": {
