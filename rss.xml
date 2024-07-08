@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 08 Jul 2024 12:30:52 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jul 2024 12:42:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[개인정보 가명화, 익명화]]></title>
+            <link>https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/</link>
+            <guid>https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/</guid>
+            <pubDate>Mon, 08 Jul 2024 12:42:36 GMT</pubDate>
+            <description><![CDATA[Data Pseudonymization and Anonymization]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명정보-익명정보의-개념">개인정보, 가명정보, 익명정보의 개념<a class="hash-link" aria-label="개인정보, 가명정보, 익명정보의 개념에 대한 직접 링크" title="개인정보, 가명정보, 익명정보의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%A0%95%EB%B3%B4-%EC%9D%B5%EB%AA%85%EC%A0%95%EB%B3%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>개인을 알아볼 수 있는 정보를 가명처리하여 통계작성, 연구 목적활용, 익명처리하여 동의 없이 서비스에 활용</li>
+<li>개인정보 보호법 준수, 개인 프라이버시 보호, 서비스 신뢰성 확보</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리의-절차-주요-기술-안정성-확보조치">개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치<a class="hash-link" aria-label="개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치에 대한 직접 링크" title="개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%A0%88%EC%B0%A8-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%88%A0-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4%EC%A1%B0%EC%B9%98">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-절차">개인정보 가명처리 절차<a class="hash-link" aria-label="개인정보 가명처리 절차에 대한 직접 링크" title="개인정보 가명처리 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>사전준비</td><td>대상 선정, 적합성 검토</td><td>관리적 준비사항</td></tr><tr><td>위험성 검토</td><td>식별 위험성 평가, 특성 분석</td><td>데이터 환경요소 고려</td></tr><tr><td>가명처리</td><td>가명처리 기술 적용, 처리수준 결정</td><td>관리적, 기술적 조치 병행</td></tr><tr><td>적정성 검토</td><td>결과의 적정성 검토, 추가 진행</td><td>외부 전문가 포함 가능</td></tr><tr><td>안전한 관리</td><td>재식별 방지조치 마련</td><td>내부 관리 계획 수립</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-주요-기술">개인정보 가명처리 주요 기술<a class="hash-link" aria-label="개인정보 가명처리 주요 기술에 대한 직접 링크" title="개인정보 가명처리 주요 기술에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%88%A0">​</a></h3>
+<table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>삭제 기술</td><td>부분, 전체 삭제</td><td>원본 정보 전체 또는 일부 삭제</td></tr><tr><td>-</td><td>마스킹</td><td>특정 정보 공백, 문자 치환</td></tr><tr><td>통계도구</td><td>총계처리</td><td>평균값, 최솟값, 최댓값 처리, 오차 범위기반 처리</td></tr><tr><td>일반화(범주화)</td><td>라운딩</td><td>올림, 내림, 반올림 기준 집계</td></tr><tr><td>-</td><td>샘플링</td><td>무작위 레코드 추출</td></tr><tr><td>-</td><td>로컬 일반화</td><td>특정 식별 값을 일반화</td></tr><tr><td>암호화</td><td>해시</td><td>원문 비교 연산 활용하는 경우</td></tr><tr><td>-</td><td>동형암호화</td><td>암호화 상태에서 연산 및 처리</td></tr><tr><td>무작위화</td><td>토큰화</td><td>특정 데이터 토큰 대체</td></tr><tr><td>-</td><td>난수생성기</td><td>예측 불가한 값으로 대체</td></tr><tr><td>-</td><td>차분 프라이버시</td><td>응답값에 임의의 숫자 노이즈 추가</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-안정성-확보-조치">개인정보 가명처리 안정성 확보 조치<a class="hash-link" aria-label="개인정보 가명처리 안정성 확보 조치에 대한 직접 링크" title="개인정보 가명처리 안정성 확보 조치에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98">​</a></h3>
+<table><thead><tr><th>구분</th><th>조치</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>내부 관리계획 수립</td><td>가명 처리 전 과정 적용</td></tr><tr><td>-</td><td>접근 권한 관리</td><td>-</td></tr><tr><td>물리적</td><td>보안 구역 설정</td><td>중요 데이터</td></tr><tr><td>-</td><td>출입 통제 시스템 운영</td><td>보관 장소에 적용</td></tr><tr><td>기술적</td><td>접근 통제 시스템 적용</td><td>데이터 저장, 전송시 적용</td></tr><tr><td>-</td><td>보안 SW사용</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리시-고려사항">개인정보 가명처리시 고려사항<a class="hash-link" aria-label="개인정보 가명처리시 고려사항에 대한 직접 링크" title="개인정보 가명처리시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>비정형 데이터에 대한 블러링, 필터링, 마스킹과 AI를 활용한 부분 합성데이터 사용 고려</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[인포스틸러]]></title>
             <link>https://gracefullight.dev/pe/security/info-stealer/</link>
@@ -72,7 +98,7 @@
 <li>기존 인증제도에 평가기준이 없는 제품의 공공시장 진입 가능, 정부 및 공공기관의 혁신 제품 도입을 통한 신규 보안 위협 대응</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-절차도-세부절차-도입요건">정보보호제품 신속확인제도 절차도, 세부절차, 도입요건<a class="hash-link" aria-label="정보보호제품 신속확인제도 절차도, 세부절차, 도입요건에 대한 직접 링크" title="정보보호제품 신속확인제도 절차도, 세부절차, 도입요건에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EB%8F%84%EC%9E%85%EC%9A%94%EA%B1%B4">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-절차도">정보보호제품 신속확인제도 절차도<a class="hash-link" aria-label="정보보호제품 신속확인제도 절차도에 대한 직접 링크" title="정보보호제품 신속확인제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-절차도">정보보호제품 신속확인제도 절차도<a class="hash-link" aria-label="정보보호제품 신속확인제도 절차도에 대한 직접 링크" title="정보보호제품 신속확인제도 절차도에 대한 직��접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-세부절차">정보보호제품 신속확인제도 세부절차<a class="hash-link" aria-label="정보보호제품 신속확인제도 세부절차에 대한 직접 링크" title="정보보호제품 신속확인제도 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기존제도 가능여부 검토</td><td>제품이 기존 인증제도에서 평가 가능한지 검토</td><td>CC인증 등</td></tr><tr><td>신속 확인 준비</td><td>신속 확인 신청을 위한 점검</td><td>취약점 진단, 기능 시험</td></tr><tr><td>신속 확인 신청</td><td>진단서, 평가서, 서약서 제출</td><td>2개월 소요</td></tr><tr><td>심의 및 확인서 발급</td><td>심의 적합시 확인서 발급</td><td>2년 유효기간</td></tr><tr><td>변경 승인 기준 마련</td><td>변경시 취약점 코드 점검, 기존제도 평가 기준 마련시 연장 불가</td><td>변경 관리</td></tr></tbody></table>
@@ -102,7 +128,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성도-구성요소-적용방안">3-상태 버퍼의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="3-상태 버퍼의 구성도, 구성요소, 적용방안에 대한 직접 링크" title="3-상태 버퍼의 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성도">3-상태 버퍼의 구성도<a class="hash-link" aria-label="3-상태 버퍼의 구성도에 대한 직접 링크" title="3-상태 버퍼의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">            Enable</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">              |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">              v</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           +---------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Input ----&gt;|         |----&gt; Output</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           | 3-State |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           | Buffer  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           |         |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           +---------+</span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성요소">3-상태 버퍼의 구성요소<a class="hash-link" aria-label="3-상태 버퍼의 구성요소에 대한 직접 링크" title="3-상태 버퍼의 구성요소에 ��대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성요소">3-상태 버퍼의 구성요소<a class="hash-link" aria-label="3-상태 버퍼의 구성요소에 대한 직접 링크" title="3-상태 �버퍼의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>입력</td><td>입력 신호를 받는 단자</td><td>입력 신호 인입</td></tr><tr><td>출력</td><td>입력 신호를 출력으로 내보내는 단자</td><td>출력 신호 출력</td></tr><tr><td>제어</td><td>버퍼의 상태를 제어하는 단자</td><td>High/Low Impedance</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-적용방안">3-상태 버퍼의 적용방안<a class="hash-link" aria-label="3-상태 버퍼의 적용방안에 대한 직접 링크" title="3-상태 버퍼의 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 버스 제어</td><td>여러 장치가 공유하는 데이터 버스에 연결하여 특정 시간에만 데이터 전송</td><td>버스 충돌 방지</td></tr><tr><td>메모리 인터페이스</td><td>메모리 칩 선택 및 데이터 입출력 제어</td><td>주소 디코더와 함께 사용하여 특정 메모리 칩만 활성화</td></tr><tr><td>주변장치 인터페이스</td><td>주변 장치가 데이터를 보낼 준비가 되었을 때만 버퍼 활성화</td><td>주변 장치와의 데이터 수신</td></tr></tbody></table>
@@ -282,52 +308,6 @@
 <div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">    우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">자원 R |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <ul>
 <li>임계영역 자원R에 가장 높은 우선순위를 부여하고, 임계영역 진입 태스크의 우선순위를 자원의 우선순위로 올림</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[CPU, GPU, FPGA, ASIC]]></title>
-            <link>https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/</link>
-            <guid>https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/</guid>
-            <pubDate>Mon, 01 Jul 2024 09:24:33 GMT</pubDate>
-            <description><![CDATA[CPU, GPU, FPGA, ASIC]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="컴퓨팅-아키텍처의-개요">컴퓨팅 아키텍처의 개요<a class="hash-link" aria-label="컴퓨팅 아키텍처의 개요에 대한 직접 링크" title="컴퓨팅 아키텍처의 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
-<!-- -->
-<ul>
-<li>AI 등 병렬처리와 연산 효율이 필요한 최적화된 칩 수요의 증가로 ASIC 기반의 SoC으로 발전</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cpu-gpu-fpga-asic-개념-및-특징-적용분야">CPU, GPU, FPGA, ASIC 개념 및 특징, 적용분야<a class="hash-link" aria-label="CPU, GPU, FPGA, ASIC 개념 및 특징, 적용분야에 대한 직접 링크" title="CPU, GPU, FPGA, ASIC 개념 및 특징, 적용분야에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#cpu-gpu-fpga-asic-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B6%84%EC%95%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cpu-gpu-fpga-asic-개념-및-특징">CPU, GPU, FPGA, ASIC 개념 및 특징<a class="hash-link" aria-label="CPU, GPU, FPGA, ASIC 개념 및 특징에 대한 직접 링크" title="CPU, GPU, FPGA, ASIC 개념 및 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#cpu-gpu-fpga-asic-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_n3DU" id="cpu">CPU<a class="hash-link" aria-label="CPU에 대한 직접 링크" title="CPU에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#cpu">​</a></h4>
-<!-- -->
-<ul>
-<li>복잡한 연산, 순차처리, 범용성</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="gpu">GPU<a class="hash-link" aria-label="GPU에 대한 직접 링크" title="GPU에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#gpu">​</a></h3>
-<!-- -->
-<ul>
-<li>단순한 연산, 병렬처리, 소숫점 연산 특화/FPU</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_n3DU" id="fpga">FPGA<a class="hash-link" aria-label="FPGA에 대한 직접 링크" title="FPGA에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#fpga">​</a></h4>
-<!-- -->
-<ul>
-<li>설계 가능한 논리소자, 회로</li>
-<li>스위치를 주변으로 CLB가 감싸고 있는 구조</li>
-<li>목적별 재구성 가능, 유연성</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_n3DU" id="asic">ASIC<a class="hash-link" aria-label="ASIC에 대한 직접 링크" title="ASIC에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#asic">​</a></h4>
-<!-- -->
-<ul>
-<li>특화 반도체</li>
-<li>저전력, 고효율, 대량생산</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cpu-gpu-fpga-asic-적용분야">CPU, GPU, FPGA, ASIC 적용분야<a class="hash-link" aria-label="CPU, GPU, FPGA, ASIC 적용분야에 대한 직접 링크" title="CPU, GPU, FPGA, ASIC 적용분야에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#cpu-gpu-fpga-asic-%EC%A0%81%EC%9A%A9%EB%B6%84%EC%95%BC">​</a></h3>
-<table><thead><tr><th>구분</th><th>분야</th><th>비고</th></tr></thead><tbody><tr><td>CPU</td><td>범용 컴퓨팅</td><td>웹브라우징, 오피스업무</td></tr><tr><td>GPU</td><td>그래픽 렌더링, 병렬처리</td><td>게임, 시뮬레이션, 머신 러닝</td></tr><tr><td>FPGA</td><td>맞춤형 H/W</td><td>디지털 회로 프로그래밍</td></tr><tr><td>ASIC</td><td>특정 작업 최적화, 고성능</td><td>스마트폰, N/W 장치, AI가속기</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="fpga-asic-선택시-고려사항">FPGA, ASIC 선택시 고려사항<a class="hash-link" aria-label="FPGA, ASIC 선택시 고려사항에 대한 직접 링크" title="FPGA, ASIC 선택시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#fpga-asic-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<!-- -->
-<ul>
-<li>대량생산시 비용 절충점을 고려하여 ASIC 기반 SoC 도입 검토 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
