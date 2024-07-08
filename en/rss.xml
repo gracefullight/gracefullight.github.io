@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 08 Jul 2024 12:22:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jul 2024 12:30:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[인포스틸러]]></title>
+            <link>https://gracefullight.dev/en/pe/security/info-stealer/</link>
+            <guid>https://gracefullight.dev/en/pe/security/info-stealer/</guid>
+            <pubDate>Mon, 08 Jul 2024 12:30:52 GMT</pubDate>
+            <description><![CDATA[Info Stealer]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-개념">인포스틸러의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>운영체제나 프로그램에 저장된 자격증명과 각종 정보를 훔치는 악성코드</li>
+<li>암호화폐 지갑, 게임 등 탈취 가능한 자격증명의 증가, 자동화, 지능화된 악성코드 실행</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-매커니즘-공격절차-대응방안">인포스틸러의 매커니즘, 공격절차, 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-매커니즘">인포스틸러의 매커니즘<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-공격절차">인포스틸러 공격절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 피싱메일, 링크 접근</td><td>악성링크 클릭 유도, 불법파일 설치 유도</td><td>사용자 부주의 이용</td></tr><tr><td>2. 악성코드 실행</td><td>인포스틸러 SW자동설치 및 실행</td><td>백신, 방화벽 우회시도</td></tr><tr><td>3. 정보탈취</td><td>사용자정보, 금융정보, 계정정보 탈취</td><td>C&amp;C서버 활용</td></tr><tr><td>4. 중요정보 판매</td><td>탈취한 정보를 다크웹 판매, 협박</td><td>2차 피해 발생</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-대응방안">인포스틸러 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>대응방안</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>보안정책 수립 및 교육, 강력한 PW, 일회성 PW 사용</td><td>2차 인증 활성화</td></tr><tr><td>물리적</td><td>중요 정보 암호화, 디스크 별도 백업</td><td>정보 유출 피해 최소화</td></tr><tr><td>기술적</td><td>백신, 침입탐지시스템 등 보안 솔루션 설치, 버전 업데이트</td><td>주기적인 검사 및 관리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-고려사항">인포스틸러 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>공격의 지능화에 따라 사용자가 신뢰할 수 없는 링크 클릭을 금지하는 등 개인 보안 수칙 준수 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[LDAP, Lightweight Directory Access Protocol]]></title>
             <link>https://gracefullight.dev/en/pe/security/ldap/</link>
@@ -248,7 +273,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-세부-절차">우선순위 역전현상 세부 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>순번</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>1</td><td>임계영역 진입</td><td>Task3은 자원R 사용 위해 진입</td></tr><tr><td>2</td><td>프로세스 선점</td><td>높은 우선순위의 Task1은 Task3의 임계영역 선점 스케줄링 실행</td></tr><tr><td>3</td><td>임계영역 대기</td><td>Task3이 진입 중이므로, Task1은 대기</td></tr><tr><td>4</td><td>우선순위 역전</td><td>중간 우선순위의 Task2가 선점하여 스케줄링, Task1은 계속 대기</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-해결방안">우선순위 역전현상 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선�순위-상속">우선순위 상속<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%83%81%EC%86%8D">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-상속">우선순위 상속<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%83%81%EC%86%8D">​</a></h3>
 <div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">    우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <ul>
 <li>임계영역에 진입한 낮은 우선순위 태스크의 우선순위를 진입 대기하는 높은 우선순위 태스크와 동일하게 부여</li>
@@ -303,32 +328,6 @@
 <!-- -->
 <ul>
 <li>대량생산시 비용 절충점을 고려하여 ASIC 기반 SoC 도입 검토 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[빅 엔디언, 리틀 엔디언]]></title>
-            <link>https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/</link>
-            <guid>https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/</guid>
-            <pubDate>Mon, 01 Jul 2024 09:05:42 GMT</pubDate>
-            <description><![CDATA[Big endian, Little endian]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언의-개념">빅 엔디언, 리틀 엔디언의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>빅 엔디언: 데이터를 메모리에 적재시 메모리 시작 주소에 데이터의 상위 바이트부터 순차 저장하는 방식</li>
-<li>리틀 엔디언: 데이터를 메모리에 적재시 메모리 시작 주소에 데이터의 하위 바이트부터 순차 저장하는 방식</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-개념도-세부-요소-적용사례">빅 엔디언, 리틀 엔디언 개념도, 세부 요소, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80-%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-개념도">빅 엔디언, 리틀 엔디언 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-세부-요소">빅 엔디언, 리틀 엔디언 세부 요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EC%84%B8%EB%B6%80-%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>빅 엔디언</th><th>리틀 엔디언</th></tr></thead><tbody><tr><td>저장방식</td><td>낮은 주소에 MSB부터 저장, 앞쪽부터 스택에 푸쉬</td><td>낮은 주소에 LSB부터 저장, 뒤쪽부터 스택에 푸쉬</td></tr><tr><td>장점</td><td>우수한 가독성, 디버깅 편의성, 빠른 비교 연산</td><td>후위 비트만 사용하는 계산 용이, 올림 연산 빠른, 가산기 구현 단순</td></tr><tr><td>단점</td><td>수학 연산 어려움, 타입캐스팅 느림</td><td>숫자 비교 느림, SW 디버깅 불편</td></tr><tr><td>대표회사</td><td>IBM</td><td>Intel, AMD</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-적용사례">빅 엔디언, 리틀 엔디언 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>빅 엔디언</th><th>리틀 엔디언</th></tr></thead><tbody><tr><td>N/W 프로토콜</td><td>TCP/IP 주소 전송</td><td>N/A</td></tr><tr><td>운영체제</td><td>일부 유닉스 시스템</td><td>윈도우, 맥, 리눅스</td></tr><tr><td>CPU 아키텍처</td><td>IBM 메인프레임, 모토로라 프로세서</td><td>x86, ARM 등 대부분 CPU</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-nw-측면-고려사항">빅 엔디언, 리틀 엔디언, N/W 측면 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-nw-%EC%B8%A1%EB%A9%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>N/W 데이터 전송시 ntohl, htonl 함수를 사용하여 목적지 바이트 순서 변경 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
