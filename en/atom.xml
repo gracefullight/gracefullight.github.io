@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-08T12:42:36.151Z</updated>
+    <updated>2024-07-08T12:52:18.071Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[RaaS, Ransomware as a Service]]></title>
+        <id>https://gracefullight.dev/en/pe/security/raas/</id>
+        <link href="https://gracefullight.dev/en/pe/security/raas/"/>
+        <updated>2024-07-08T12:52:18.071Z</updated>
+        <summary type="html"><![CDATA[Ransomware as a Service]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="랜섬웨어의-개념">랜섬웨어의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/raas/#%EB%9E%9C%EC%84%AC%EC%9B%A8%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>몸값(Ransome)과 소프트웨어의 합성어로 시스템을 감염시커 사용 불가능한 샅애로 만들거나, 데이터를 암호화해 사용할 수 없게한 뒤 금전을 요구하는 악성프로그램</li>
+<li>다크웹 등 익명 N/W를 통해 누구나 랜섬웨어를 의뢰, 구매하여 공격에 활용할 수 있는 RaaS 형태로 진화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="raas의-매커니즘-공격절차-대응방안">RaaS의 매커니즘, 공격절차, 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/raas/#raas%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="raas의-매커니즘">RaaS의 매커니즘<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/raas/#raas%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h3>
+]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[개인정보 가명화, 익명화]]></title>
         <id>https://gracefullight.dev/en/pe/security/data-pseudonymization-anonymization/</id>
@@ -175,7 +196,7 @@
 <ul>
 <li>제로 트러스트 패러당미에 맞는 지속적인 요청 검증, 마이크로 세그먼테이션, SDN기반 경계 정의 필요</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안-핵심요소">제로 트러스트 보안 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안-핵심요소">제로 트러스트 보안 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%EF%BF%BD%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기존 트러스트 보안</th><th>제로 트러스트 보안</th></tr></thead><tbody><tr><td>신뢰성</td><td>신뢰 기반</td><td>비신뢰 기반</td></tr><tr><td>인증</td><td>연결시에만 인증 수행</td><td>연결 후에도 지속적인 인증</td></tr><tr><td>권한</td><td>높은 수준 권한 부여</td><td>최소 수준 권한 부여</td></tr><tr><td>경계</td><td>기업망 단위 보안 경계</td><td>SW 정의 보안 경계</td></tr><tr><td>NW분할</td><td>네트워크 세그먼테이션</td><td>마이크로 세그먼테이션</td></tr><tr><td>리소스 검증</td><td>인증시 리소스 접근 가능</td><td>정책결정포인트, 정책집행포인트</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-적용분야">제로 트러스트 적용분야<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B6%84%EC%95%BC">​</a></h3>
 <table><thead><tr><th>구분</th><th>분야</th><th>내용</th></tr></thead><tbody><tr><td>클라우드환경</td><td>클라우드 서비스 접근제어</td><td>클라우드 서비스 접근시 사용자기기, 앱에 대한 지속적 검증, 인증</td></tr><tr><td>원격근무환경</td><td>VPN 접속시 다중 인증</td><td>VPN 접근 사용자 인증 강화, 기기 상태 확인</td></tr><tr><td>데이터 보호</td><td>중요데이터 접근 제어</td><td>사용자 권한 및 데이터 접근 맥락 확인, 사용자 액션 로깅</td></tr></tbody></table>
@@ -288,7 +309,7 @@
 <ul>
 <li>크리덴셜 스터핑 공격은 자동화되어있으므로, 트래픽 변화, 로그인 실패 빈도 증가 등 선행 징조 확인 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-대응시-고려사항">크리덴셜 스터핑 대응시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EB%8C%80%EC%9D%91%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-대응시-고려사항">크리덴셜 스터핑 대응시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EB%8C%80%EC%9D%91%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%EF%BF%BD%EF%BF%BD%ED%95%AD">​</a></h2>
 <ul>
 <li>공격을 사전에 예방하기 위해 IP보안, 2단계 인증 등 사용성을 고려한 보안 정책 도입 필요</li>
 </ul>]]></content>
@@ -298,57 +319,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[실시간 스케줄링, 우선순위 역전]]></title>
-        <id>https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/</id>
-        <link href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/"/>
-        <updated>2024-07-01T09:31:49.345Z</updated>
-        <summary type="html"><![CDATA[Realtime Scheduling, Priority Inversion]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="realtime-scheduling의-개념">Realtime Scheduling의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#realtime-scheduling%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>실시간 스케쥴링은 특정 태스크가 주어진 데드라인 내에 완료되도록 프로세싱을 보장하는 스케줄링 방법</li>
-<li>시스템 제약 만족, 예측 가능성, 응답성, Mission Critical 프로세스 처리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-기반-스케줄링-기법">우선순위 기반 스케줄링 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EA%B8%B0%EB%B0%98-%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="rm-rate-monotonic">RM, Rate Monotonic<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#rm-rate-monotonic">​</a></h3>
-<blockquote>
-<p>비율 단조</p>
-</blockquote>
-<ul>
-<li>태스크의 주기가 짧을 수록 높은 우선순위로 스케줄링</li>
-<li>스케줄링 예상 가능, 단순 구현, 고정 우선순위, 제한적 CPU 활용, Soft RTOS</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="edf-earliest-deadline-first">EDF, Earliest Deadline First<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#edf-earliest-deadline-first">​</a></h3>
-<blockquote>
-<p>최단 마감시간 우선</p>
-</blockquote>
-<ul>
-<li>태스크의 데드라인이 가까울 수록 높은 우선순위로 스케줄링</li>
-<li>스케줄링 예상 어려움, 높은 CPU 활용, 동적 우선순위, 효율적, Hard RTOS</li>
-<li>주기가 짧거나 데드라인이 긴 태스크가 공유 자원을 선점하는 경우 우선순위 역전현상 발생</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-개념-및-세부-절차">우선순위 역전현상 개념 및 세부 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-개념도">우선순위 역전현상 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">   우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-세부-절차">우선순위 역전현상 세부 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>순번</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>1</td><td>임계영역 진입</td><td>Task3은 자원R 사용 위해 진입</td></tr><tr><td>2</td><td>프로세스 선점</td><td>높은 우선순위의 Task1은 Task3의 임계영역 선점 스케줄링 실행</td></tr><tr><td>3</td><td>임계영역 대기</td><td>Task3이 진입 중이므로, Task1은 대기</td></tr><tr><td>4</td><td>우선순위 역전</td><td>중간 우선순위의 Task2가 선점하여 스케줄링, Task1은 계속 대기</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-역전현상-해결방안">우선순위 역전현상 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-상속">우선순위 상속<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%83%81%EC%86%8D">​</a></h3>
-<div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">    우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<ul>
-<li>임계영역에 진입한 낮은 우선순위 태스크의 우선순위를 진입 대기하는 높은 우선순위 태스크와 동일하게 부여</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="우선순위-올림">우선순위 올림<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/architecture/realtime-scheduling-priority-inversion/#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%EC%98%AC%EB%A6%BC">​</a></h3>
-<div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">    우선순위</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">자원 R |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task1 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task2 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Task3 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      --------------------------------------------&gt; 시간</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       [                 자원R                    ]                 </span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<ul>
-<li>임계영역 자원R에 가장 높은 우선순위를 부여하고, 임계영역 진입 태스크의 우선순위를 자원의 우선순위로 올림</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/ca" term="pe/ca"/>
     </entry>
 </feed>
