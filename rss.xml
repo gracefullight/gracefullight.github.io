@@ -4,10 +4,37 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 08 Jul 2024 12:16:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jul 2024 12:22:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[LDAP, Lightweight Directory Access Protocol]]></title>
+            <link>https://gracefullight.dev/pe/security/ldap/</link>
+            <guid>https://gracefullight.dev/pe/security/ldap/</guid>
+            <pubDate>Mon, 08 Jul 2024 12:22:09 GMT</pubDate>
+            <description><![CDATA[Lightweight Directory Access Protocol]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념">접근제어의 개념<a class="hash-link" aria-label="접근제어의 개념에 대한 직접 링크" title="접근제어의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>사용자의 신원을 식별, 인증하여 대상, 정보의 접근 및 사용 수준을 인가하는 관리 기법</li>
+<li>최소 권한과 직무 분리로 제로 트러스트 기반 기밀성, 무결성 달성을 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념도-주요-유형">접근제어의 개념도, 주요 유형<a class="hash-link" aria-label="접근제어의 개념도, 주요 유형에 대한 직접 링크" title="접근제어의 개념도, 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념도">접근제어의 개념도<a class="hash-link" aria-label="접근제어의 개념도에 대한 직접 링크" title="접근제어의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-주요-유형">접근제어의 주요 유형<a class="hash-link" aria-label="접근제어의 주요 유형에 대한 직접 링크" title="접근제어의 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>DAC, 임의적 접근제어</td><td>사용자나 그룹에 근거한 접근제어, 특정 권한 주체가 권한 위임 가능</td><td>ACM, ACL</td></tr><tr><td>MAC, 강제적 접근제어</td><td>객체별로 정의된 권한을 근거로 접근제어, 보안등급, 규칙 기반</td><td>벨라파둘라, 비바, 클락윌슨, 만리장성</td></tr><tr><td>RBAC, 역할기반 접근제어</td><td>권한을 그룹에 부여하고, 그룹이 수행할 역할을 정의하여 접근제어</td><td>IAM 등</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-개념-및-접근제어-방안">LDAP 프로토콜의 개념 및 접근제어 방안<a class="hash-link" aria-label="LDAP 프로토콜의 개념 및 접근제어 방안에 대한 직접 링크" title="LDAP 프로토콜의 개념 및 접근제어 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-개념">LDAP 프로토콜의 개념<a class="hash-link" aria-label="LDAP 프로토콜의 개념에 대한 직접 링크" title="LDAP 프로토콜의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>사용자, 시스템, N/W, 어플리케이션 정보를 트리로 저장하여 조회, 수정 등 디렉토리 서비스와 정보를 전달하는 프로토콜</li>
+<li>DAP의 통신비용을 절감하기 위해 표준화</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-접근제어-방안">LDAP 프로토콜의 접근제어 방안<a class="hash-link" aria-label="LDAP 프로토콜의 접근제어 방안에 대한 직접 링크" title="LDAP 프로토콜의 접근제어 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인증</td><td>Bind요청을 통한 사용자, 클라이언트 신원 검증</td><td>비밀번호, SASL 등</td></tr><tr><td>인가</td><td>LDAP 디렉토리 내 객체와 속성 권한 확인 후 권한 부여</td><td>사용자, 그룹정보로 ACL 처리</td></tr><tr><td>감사, Audit</td><td>LDAP 서버 활동 기록, 보안 및 규정준수 추적</td><td>Audit Log, Change Log 관리</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[정보보호제품 신속확인제도]]></title>
             <link>https://gracefullight.dev/pe/security/정보보호제품-신속확인제도/</link>
@@ -108,13 +135,13 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리의-주요-원칙-적용방안">인공지능 윤리의 주요 원칙, 적용방안<a class="hash-link" aria-label="인공지능 윤리의 주요 원칙, 적용방안에 대한 직접 링크" title="인공지능 윤리의 주요 원칙, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리의-주요-원칙">인공지능 윤리의 주요 원칙<a class="hash-link" aria-label="인공지능 윤리의 주요 원칙에 대한 직접 링크" title="인공지능 윤리의 주요 원칙에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리-주요-원칙-상세설명">인공지능 윤리 주요 원칙 상세설명<a class="hash-link" aria-label="인공지능 윤리 주요 원칙 상세설명에 대한 직접 링크" title="인공��지능 윤리 주요 원칙 상세설명에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리-주요-원칙-상세설명">인공지능 윤리 주요 원칙 상세설명<a class="hash-link" aria-label="인공지능 윤리 주요 원칙 상세설명에 대한 직접 링크" title="인공지능 윤리 주요 원칙 상세설명에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85">​</a></h3>
 <table><thead><tr><th>구분</th><th>세부 원칙</th><th>설명</th></tr></thead><tbody><tr><td>인간존엄성</td><td>인권보장</td><td>인간중심, 인권, 자유 보장</td></tr><tr><td>-</td><td>프라이버시 보호</td><td>사생활 보호, 개인정보 오용 최소화</td></tr><tr><td>-</td><td>다양성 존중</td><td>다양성, 접근성 보장, 편향 및 차별 금지</td></tr><tr><td>사회공공선</td><td>침해 금지</td><td>인간에 무해한 목적으로 활용</td></tr><tr><td>-</td><td>공공성</td><td>인류 공통 이익 중시, 순기능 극대화</td></tr><tr><td>-</td><td>연대성</td><td>이해관계자 참여 기회 보장</td></tr><tr><td>기술합목적성</td><td>데이터 관리</td><td>목적 외의 용도 사용 금지, 품질 관리</td></tr><tr><td>-</td><td>책임성</td><td>책임 명확화, 주체별 책임 분산</td></tr><tr><td>-</td><td>안전성</td><td>잠재적 위험 방지, 안전 보장 활동</td></tr><tr><td>-</td><td>투명성</td><td>설명 가능성 확보, 유의사항 고지</td></tr></tbody></table>
 <ul>
 <li>AI 윤리 원칙을 준수하기 위해 기업 내 AI 거버너스 확립</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-모형-개념도-구성요소-주요-사례">AI 거버넌스 모형 개념도, 구성요소, 주요 사례<a class="hash-link" aria-label="AI 거버넌스 모형 개념도, 구성요소, 주요 사례에 대한 직접 링크" title="AI 거버넌스 모형 개념도, 구성요소, 주요 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EB%AA%A8%ED%98%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-모형-개념도">AI 거버넌스 모형 개념도<a class="hash-link" aria-label="AI 거버넌스 모형 개념도에 대한 직접 링크" title="AI 거��버넌스 모형 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EB%AA%A8%ED%98%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-모형-개념도">AI 거버넌스 모형 개념도<a class="hash-link" aria-label="AI 거버넌스 모형 개념도에 대한 직접 링크" title="AI 거버넌스 모형 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EF%BF%BD%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EB%AA%A8%ED%98%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-구성요소">AI 거버넌스 구성요소<a class="hash-link" aria-label="AI 거버넌스 구성요소에 대한 직접 링크" title="AI 거버넌스 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>기술</td><td>설명가능성</td><td>희소오토인코더 기반 xAI 구현</td></tr><tr><td>-</td><td>공정성</td><td>편향, 차별 식별 및 제거</td></tr><tr><td>보안</td><td>프라이버시 보호</td><td>개인 데이터 학습에 의한 침해 방지</td></tr><tr><td>-</td><td>안정성, 보안성</td><td>적대적 공격, 환각 방지</td></tr><tr><td>사회</td><td>공공성</td><td>AI로 인한 일자리 변화 고려</td></tr><tr><td>-</td><td>연대성</td><td>긍정적인 사회 변화 선도</td></tr><tr><td>규제</td><td>오남용 방지 규제</td><td>딥페이크 등 오남용 규제</td></tr><tr><td>-</td><td>국제사회 협력</td><td>국제 사회 소통을 통한 규제 마련</td></tr></tbody></table>
@@ -252,7 +279,7 @@
 <ul>
 <li>복잡한 연산, 순차처리, 범용성</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="gpu">GPU<a class="hash-link" aria-label="GPU에 대한 직접 링크" title="GPU에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#gpu">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="gpu">GPU<a class="hash-link" aria-label="GPU에 대한 직접 링크" title="GPU에 대한 직��접 링크" href="https://gracefullight.dev/pe/architecture/cpu-gpu-fpga-asic/#gpu">​</a></h3>
 <!-- -->
 <ul>
 <li>단순한 연산, 병렬처리, 소숫점 연산 특화/FPU</li>
@@ -299,52 +326,10 @@
 <table><thead><tr><th>구분</th><th>빅 엔디언</th><th>리틀 엔디언</th></tr></thead><tbody><tr><td>저장방식</td><td>낮은 주소에 MSB부터 저장, 앞쪽부터 스택에 푸쉬</td><td>낮은 주소에 LSB부터 저장, 뒤쪽부터 스택에 푸쉬</td></tr><tr><td>장점</td><td>우수한 가독성, 디버깅 편의성, 빠른 비교 연산</td><td>후위 비트만 사용하는 계산 용이, 올림 연산 빠른, 가산기 구현 단순</td></tr><tr><td>단점</td><td>수학 연산 어려움, 타입캐스팅 느림</td><td>숫자 비교 느림, SW 디버깅 불편</td></tr><tr><td>대표회사</td><td>IBM</td><td>Intel, AMD</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-적용사례">빅 엔디언, 리틀 엔디언 적용사례<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언 적용사례에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>빅 엔디언</th><th>리틀 엔디언</th></tr></thead><tbody><tr><td>N/W 프로토콜</td><td>TCP/IP 주소 전송</td><td>N/A</td></tr><tr><td>운영체제</td><td>일부 유닉스 시스템</td><td>윈도우, 맥, 리눅스</td></tr><tr><td>CPU 아키텍처</td><td>IBM 메인프레임, 모토로라 프로세서</td><td>x86, ARM 등 대부분 CPU</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔��디언-리틀-엔디언-nw-측면-고려사항">빅 엔디언, 리틀 엔디언, N/W 측면 고려사항<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언, N/W 측면 고려사항에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언, N/W 측면 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-nw-%EC%B8%A1%EB%A9%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="빅-엔디언-리틀-엔디언-nw-측면-고려사항">빅 엔디언, 리틀 엔디언, N/W 측면 고려사항<a class="hash-link" aria-label="빅 엔디언, 리틀 엔디언, N/W 측면 고려사항에 대한 직접 링크" title="빅 엔디언, 리틀 엔디언, N/W 측면 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/big-endian-little-endian/#%EB%B9%85-%EC%97%94%EB%94%94%EC%96%B8-%EB%A6%AC%ED%8B%80-%EC%97%94%EB%94%94%EC%96%B8-nw-%EC%B8%A1%EB%A9%B4-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>N/W 데이터 전송시 ntohl, htonl 함수를 사용하여 목적지 바이트 순서 변경 필요</li>
 </ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[리버스프록시, 로드밸런서, 그린 배포, 카나리 배포]]></title>
-            <link>https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/</link>
-            <guid>https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/</guid>
-            <pubDate>Mon, 01 Jul 2024 08:51:51 GMT</pubDate>
-            <description><![CDATA[Reverse proxy, Load balancer, Green and Canary deployment]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="무중단-배포의-개념">무중단 배포의 개념<a class="hash-link" aria-label="무중단 배포의 개념에 대한 직접 링크" title="무중단 배포의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>유저에게 서비스 중단 없이 새로운 버전의 서비스를 배포하는 것을 목표로 하는 배포 전략</li>
-<li>신규 버전 배포시 리스크 최소화, 빠른 롤백, 클라우드 컴퓨팅, 가상화 기술 발전으로 무중단 배포 활용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="그린-배포-카나리-배포의-개념도-핵심-요소-세부-절차">그린 배포, 카나리 배포의 개념도, 핵심 요소, 세부 절차<a class="hash-link" aria-label="그린 배포, 카나리 배포의 개념도, 핵심 요소, 세부 절차에 대한 직접 링크" title="그린 배포, 카나리 배포의 개념도, 핵심 요소, 세부 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC-%EC%9A%94%EC%86%8C-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="그린-배포-카나리-배포의-개념도">그린 배포, 카나리 배포의 개념도<a class="hash-link" aria-label="그린 배포, 카나리 배포의 개념도에 대한 직접 링크" title="그린 배포, 카나리 배포의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>신버전을 모두 배포하고 트래픽을 일괄 전환하여 배포</li>
-</ul>
-<!-- -->
-<ul>
-<li>신버전에 점진적으로 트래픽을 늘려 위험을 감지하고 대응하여 배포</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="그린-배포-카나리-배포-핵심요소-비교">그린 배포, 카나리 배포 핵심요소 비교<a class="hash-link" aria-label="그린 배포, 카나리 배포 핵심요소 비교에 대한 직접 링크" title="그린 배포, 카나리 배포 핵심요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>그린</th><th>카나리</th></tr></thead><tbody><tr><td>목적</td><td>신규버전 트래픽 일괄 전환</td><td>신규버전 점진적 배포</td></tr><tr><td>리스크</td><td>모든 사용자가 신규버전 즉시 사용</td><td>리스크 최소화</td></tr><tr><td>복잡도</td><td>일괄전환으로 간단</td><td>비율 조정으로 복잡</td></tr><tr><td>테스트 범위</td><td>모든 사용자가 새 버전 테스트</td><td>초기 소규모 사용자만 테스트</td></tr><tr><td>배포 시간</td><td>단시간</td><td>상대적 장시간</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="그린-배포-카나리-배포-세부-절차">그린 배포, 카나리 배포 세부 절차<a class="hash-link" aria-label="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" title="그린 배포, 카나리 배포 세부 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EC%B9%B4%EB%82%98%EB%A6%AC-%EB%B0%B0%ED%8F%AC-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>그린</th><th>카나리</th></tr></thead><tbody><tr><td>준비단계</td><td>신규버전 배포, 테스트</td><td>카나리 환경 준비 초기 테스트</td></tr><tr><td>배포 방식</td><td>전체 트래픽 일괄 전환</td><td>소규모 트래픽에서 점진적 전환</td></tr><tr><td>모니터링</td><td>전환 후 트래픽 모니터링</td><td>점진적 모니터링 오류확인</td></tr><tr><td>롤백</td><td>문제시 전체 롤백</td><td>필요시 특정 비율 롤백</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="리버스-프록시와-로드밸런서-비교">리버스 프록시와 로드밸런서 비교<a class="hash-link" aria-label="리버스 프록시와 로드밸런서 비교에 대한 직접 링크" title="리버스 프록시와 로드밸런서 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="리버스-프록시-로드밸런서-개념도">리버스 프록시, 로드밸런서 개념도<a class="hash-link" aria-label="리버스 프록시, 로드밸런서 개념도에 대한 직접 링크" title="리버스 프록시, 로드밸런서 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%94%84%EB%A1%9D%EC%8B%9C-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>클라이언트 요청을 내부 서버로 전달하고 서버의 응답을 반환하는 중계 서버</li>
-<li>리버스 프록시는 L7 로드밸런서의 기능도 일부 수행</li>
-</ul>
-<!-- -->
-<ul>
-<li>트래픽을 여러 서버에 분산하여 부하를 관리하는 장치 또는 SW</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="로드밸런서의-구성요소">로드밸런서의 구성요소<a class="hash-link" aria-label="로드밸런서의 구성요소에 대한 직접 링크" title="로드밸런서의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/reverse-proxy-load-balancer-green-and-canary-deployment/#%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>유형</td><td>L4 로드밸런서</td><td>네트워크 계층이나 전송계층 정보로 부하 분산</td></tr><tr><td>-</td><td>L7 로드밸런서</td><td>응용 계층에서 헤더, 쿠키 등 요청 기반 정보로 부하 분산</td></tr><tr><td>알고리즘</td><td>Round Robin</td><td>순차, 순환, 응답시간 빠르고 구성이 간편</td></tr><tr><td>-</td><td>Least Connection</td><td>백엔드 서버 중 활성화 된 연결 계산, 가장 적은 커넥션을 가진 서버로 로드 밸런싱</td></tr><tr><td>-</td><td>Response Time</td><td>가장 빠른 응답 시간을 제공하는 서버로 로드 밸런싱</td></tr><tr><td>-</td><td>Hashing</td><td>TCP/UDP 연결시 각 클라이언트에 대한 해시 생성하여 동일 서버 연결, 세션 유지 가능</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
         </item>
