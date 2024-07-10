@@ -4,279 +4,274 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 08 Jul 2024 12:52:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jul 2024 10:05:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <item>
-            <title><![CDATA[RaaS, Ransomware as a Service]]></title>
-            <link>https://gracefullight.dev/pe/security/raas/</link>
-            <guid>https://gracefullight.dev/pe/security/raas/</guid>
-            <pubDate>Mon, 08 Jul 2024 12:52:18 GMT</pubDate>
-            <description><![CDATA[Ransomware as a Service]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="랜섬웨어의-개념">랜섬웨어의 개념<a class="hash-link" aria-label="랜섬웨어의 개념에 대한 직접 링크" title="랜섬웨어의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/raas/#%EB%9E%9C%EC%84%AC%EC%9B%A8%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[양자암호통신]]></title>
+            <link>https://gracefullight.dev/pe/security/quantum-cryptography/</link>
+            <guid>https://gracefullight.dev/pe/security/quantum-cryptography/</guid>
+            <pubDate>Wed, 10 Jul 2024 10:05:06 GMT</pubDate>
+            <description><![CDATA[Quantum cryptography]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-개념">양자암호통신의 개념<a class="hash-link" aria-label="양자암호통신의 개념에 대한 직접 링크" title="양자암호통신의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>몸값(Ransome)과 소프트웨어의 합성어로 시스템을 감염시커 사용 불가능한 샅애로 만들거나, 데이터를 암호화해 사용할 수 없게한 뒤 금전을 요구하는 악성프로그램</li>
-<li>다크웹 등 익명 N/W를 통해 누구나 랜섬웨어를 의뢰, 구매하여 공격에 활용할 수 있는 RaaS 형태로 진화</li>
+<li>양자역학의 원리를 이용하여 송신자, 수신자 간 비밀키를 안전하게 생성하고 분배하는 통신기술</li>
+<li>RSA 기반 전자봉투 비밀키 교환 방식은 양자컴퓨터의 발달로 해독 가능성 존재, 양자 불확정성 원리로 도,감청시 키가 변형되므로 보안성 우수</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="raas의-매커니즘-공격절차-대응방안">RaaS의 매커니즘, 공격절차, 대응방안<a class="hash-link" aria-label="RaaS의 매커니즘, 공격절차, 대응방안에 대한 직접 링크" title="RaaS의 매커니즘, 공격절차, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/raas/#raas%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="raas의-매커니즘">RaaS의 매커니즘<a class="hash-link" aria-label="RaaS의 매커니즘에 대한 직접 링크" title="RaaS의 매커니즘에 대한 직접 링크" href="https://gracefullight.dev/pe/security/raas/#raas%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h3>
-]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[개인정보 가명화, 익명화]]></title>
-            <link>https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/</link>
-            <guid>https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/</guid>
-            <pubDate>Mon, 08 Jul 2024 12:42:36 GMT</pubDate>
-            <description><![CDATA[Data Pseudonymization and Anonymization]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명정보-익명정보의-개념">개인정보, 가명정보, 익명정보의 개념<a class="hash-link" aria-label="개인정보, 가명정보, 익명정보의 개념에 대한 직접 링크" title="개인정보, 가명정보, 익명정보의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%A0%95%EB%B3%B4-%EC%9D%B5%EB%AA%85%EC%A0%95%EB%B3%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성도-구성요소-적용방안">양자암호통신의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="양자암호통신의 구성도, 구성요소, 적용방안에 대한 직접 링크" title="양자암호통신의 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성도">양자암호통신의 구성도<a class="hash-link" aria-label="양자암호통신의 구성도에 대한 직접 링크" title="양자암호통신의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성요소">양자암호통신의 구성요소<a class="hash-link" aria-label="양자암호통신의 구성요소에 대한 직접 링크" title="양자암호통신의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%EF%BF%BD%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양자키분배기(QKD)</td><td>양자비트 생성 후 비밀키 교환, 양자비트 수신 후 비밀키 측정</td><td>양자상태 유지, 측정 후 키 생성</td></tr><tr><td>양자 채널</td><td>양자 비트를 전달하는 통신채널</td><td>광섬유, 위성</td></tr><tr><td>기존 채널</td><td>QKD 이후 암호문을 송수신하고 복호화하는 채널</td><td>TLS 등 N/W 보안 고려</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-적용방안">양자암호통신의 적용방안<a class="hash-link" aria-label="양자암호통신의 적용방안에 대한 직접 링크" title="양자암호통신의 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>국가 기밀 통신</td><td>높은 보안 수준 요구</td></tr><tr><td>-</td><td>군사 통신</td><td>-</td></tr><tr><td>금융</td><td>금융 거래 보호</td><td>비용 대비 효과 고려</td></tr><tr><td>-</td><td>기업 비밀 문서 전송</td><td>-</td></tr><tr><td>민간</td><td>개인정보보호, IoT 보안</td><td>프라이버시 보호</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신-고려사항">양자암호통신 고려사항<a class="hash-link" aria-label="양자암호통신 고려사항에 대한 직접 링크" title="양자암호통신 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
-<li>개인을 알아볼 수 있는 정보를 가명처리하여 통계작성, 연구 목적활용, 익명처리하여 동의 없이 서비스에 활용</li>
-<li>개인정보 보호법 준수, 개인 프라이버시 보호, 서비스 신뢰성 확보</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리의-절차-주요-기술-안정성-확보조치">개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치<a class="hash-link" aria-label="개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치에 대한 직접 링크" title="개인정보 가명처리의 절차, 주요 기술, 안정성 확보조치에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC%EC%9D%98-%EC%A0%88%EC%B0%A8-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%88%A0-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4%EC%A1%B0%EC%B9%98">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-절차">개인정보 가명처리 절차<a class="hash-link" aria-label="개인정보 가명처리 절차에 대한 직접 링크" title="개인정보 가명처리 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>사전준비</td><td>대상 선정, 적합성 검토</td><td>관리적 준비사항</td></tr><tr><td>위험성 검토</td><td>식별 위험성 평가, 특성 분석</td><td>데이터 환경요소 고려</td></tr><tr><td>가명처리</td><td>가명처리 기술 적용, 처리수준 결정</td><td>관리적, 기술적 조치 병행</td></tr><tr><td>적정성 검토</td><td>결과의 적정성 검토, 추가 진행</td><td>외부 전문가 포함 가능</td></tr><tr><td>안전한 관리</td><td>재식별 방지조치 마련</td><td>내부 관리 계획 수립</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-주요-기술">개인정보 가명처리 주요 기술<a class="hash-link" aria-label="개인정보 가명처리 주요 기술에 대한 직접 링크" title="개인정보 가명처리 주요 기술에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%88%A0">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>삭제 기술</td><td>부분, 전체 삭제</td><td>원본 정보 전체 또는 일부 삭제</td></tr><tr><td>-</td><td>마스킹</td><td>특정 정보 공백, 문자 치환</td></tr><tr><td>통계도구</td><td>총계처리</td><td>평균값, 최솟값, 최댓값 처리, 오차 범위기반 처리</td></tr><tr><td>일반화(범주화)</td><td>라운딩</td><td>올림, 내림, 반올림 기준 집계</td></tr><tr><td>-</td><td>샘플링</td><td>무작위 레코드 추출</td></tr><tr><td>-</td><td>로컬 일반화</td><td>특정 식별 값을 일반화</td></tr><tr><td>암호화</td><td>해시</td><td>원문 비교 연산 활용하는 경우</td></tr><tr><td>-</td><td>동형암호화</td><td>암호화 상태에서 연산 및 처리</td></tr><tr><td>무작위화</td><td>토큰화</td><td>특정 데이터 토큰 대체</td></tr><tr><td>-</td><td>난수생성기</td><td>예측 불가한 값으로 대체</td></tr><tr><td>-</td><td>차분 프라이버시</td><td>응답값에 임의의 숫자 노이즈 추가</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리-안정성-확보-조치">개인정보 가명처리 안정성 확보 조치<a class="hash-link" aria-label="개인정보 가명처리 안정성 확보 조치에 대한 직접 링크" title="개인정보 가명처리 안정성 확보 조치에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98">​</a></h3>
-<table><thead><tr><th>구분</th><th>조치</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>내부 관리계획 수립</td><td>가명 처리 전 과정 적용</td></tr><tr><td>-</td><td>접근 권한 관리</td><td>-</td></tr><tr><td>물리적</td><td>보안 구역 설정</td><td>중요 데이터</td></tr><tr><td>-</td><td>출입 통제 시스템 운영</td><td>보관 장소에 적용</td></tr><tr><td>기술적</td><td>접근 통제 시스템 적용</td><td>데이터 저장, 전송시 적용</td></tr><tr><td>-</td><td>보안 SW사용</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-가명처리시-고려사항">개인정보 가명처리시 고려사항<a class="hash-link" aria-label="개인정보 가명처리시 고려사항에 대한 직접 링크" title="개인정보 가명처리시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/data-pseudonymization-anonymization/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EA%B0%80%EB%AA%85%EC%B2%98%EB%A6%AC%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>비정형 데이터에 대한 블러링, 필터링, 마스킹과 AI를 활용한 부분 합성데이터 사용 고려</li>
+<li>기술 표준화 부재로 시스템 간 호환성을 고려한 운영비용 산정 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[인포스틸러]]></title>
-            <link>https://gracefullight.dev/pe/security/info-stealer/</link>
-            <guid>https://gracefullight.dev/pe/security/info-stealer/</guid>
-            <pubDate>Mon, 08 Jul 2024 12:30:52 GMT</pubDate>
-            <description><![CDATA[Info Stealer]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-개념">인포스틸러의 개념<a class="hash-link" aria-label="인포스틸러의 개념에 대한 직접 링크" title="인포스틸러의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[블록 암호화 알고리즘]]></title>
+            <link>https://gracefullight.dev/pe/security/block-cipher/</link>
+            <guid>https://gracefullight.dev/pe/security/block-cipher/</guid>
+            <pubDate>Wed, 10 Jul 2024 10:03:53 GMT</pubDate>
+            <description><![CDATA[Block Cipher]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화의-개념">블록 암호화의 개념<a class="hash-link" aria-label="블록 암호화의 개념에 대한 직접 링크" title="블록 암호화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>운영체제나 프로그램에 저장된 자격증명과 각종 정보를 훔치는 악성코드</li>
-<li>암호화폐 지갑, 게임 등 탈취 가능한 자격증명의 증가, 자동화, 지능화된 악성코드 실행</li>
+<li>평문을 고정길이의 블록 단위로 나누어 각 블록마다 암호화하여, 병렬 암호화 처리가 가능한 대칭키 암호화 방식</li>
+<li>다양한 운영모드를 통한 암호화 요구사항 충족, 병렬 암호화 처리로 암복호화 성능 우수, 데이터 무결성, 기밀성 보장</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-매커니즘-공격절차-대응방안">인포스틸러의 매커니즘, 공격절차, 대응방안<a class="hash-link" aria-label="인포스틸러의 매커니즘, 공격절차, 대응방안에 대한 직접 링크" title="인포스틸러의 매커니즘, 공격절차, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러의-매커니즘">인포스틸러의 매커니즘<a class="hash-link" aria-label="인포스틸러의 매커니즘에 대한 직접 링크" title="인포스틸러의 매커니즘에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC%EC%9D%98-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록암호화의-개념도-주요-유형-운영-모드">블록암호화의 개념도, 주요 유형, 운영 모드<a class="hash-link" aria-label="블록암호화의 개념도, 주요 유형, 운영 모드에 대한 직접 링크" title="블록암호화의 개념도, 주요 유형, 운영 모드에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%9A%B4%EC%98%81-%EB%AA%A8%EB%93%9C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화의-개념도">블록 암호화의 개념도<a class="hash-link" aria-label="블록 암호화의 개념도에 대한 직접 링크" title="블록 암호화의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-공격절차">인포스틸러 공격절차<a class="hash-link" aria-label="인포스틸러 공격절차에 대한 직접 링크" title="인포스틸러 공격절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 피싱메일, 링크 접근</td><td>악성링크 클릭 유도, 불법파일 설치 유도</td><td>사용자 부주의 이용</td></tr><tr><td>2. 악성코드 실행</td><td>인포스틸러 SW자동설치 및 실행</td><td>백신, 방화벽 우회시도</td></tr><tr><td>3. 정보탈취</td><td>사용자정보, 금융정보, 계정정보 탈취</td><td>C&amp;C서버 활용</td></tr><tr><td>4. 중요정보 판매</td><td>탈취한 정보를 다크웹 판매, 협박</td><td>2차 피해 발생</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-대응방안">인포스틸러 대응방안<a class="hash-link" aria-label="인포스틸러 대응방안에 대한 직접 링크" title="인포스틸러 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>대응방안</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>보안정책 수립 및 교육, 강력한 PW, 일회성 PW 사용</td><td>2차 인증 활성화</td></tr><tr><td>물리적</td><td>중요 정보 암호화, 디스크 별도 백업</td><td>정보 유출 피해 최소화</td></tr><tr><td>기술적</td><td>백신, 침입탐지시스템 등 보안 솔루션 설치, 버전 업데이트</td><td>주기적인 검사 및 관리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인포스틸러-고려사항">인포스틸러 고려사항<a class="hash-link" aria-label="인포스틸러 고려사항에 대한 직접 링크" title="인포스틸러 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/info-stealer/#%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%8B%B8%EB%9F%AC-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화-주요-유형">블록 암호화 주요 유형<a class="hash-link" aria-label="블록 암호화 주요 유형에 대한 직접 링크" title="블록 암호화 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>Feistal 방식</td><td>DES</td><td>56bit 키, 64bit 평문 블록 사용, 보안 취약성 존재</td></tr><tr><td>-</td><td>LEA</td><td>128bit 고속, 경량 환경 대응</td></tr><tr><td>-</td><td>SEED</td><td>128bit 평문, 국내 개발</td></tr><tr><td>SPN 방식</td><td>AES</td><td>128bit 평문, 미국 표준 알고리즘</td></tr><tr><td>-</td><td>ARIA</td><td>초경량, HW지원용 알고리즘</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화-운영모드-비교">블록 암호화 운영모드 비교<a class="hash-link" aria-label="블록 암호화 운영모드 비교에 대한 직접 링크" title="블록 암호화 운영모드 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94-%EC%9A%B4%EC%98%81%EB%AA%A8%EB%93%9C-%EB%B9%84%EA%B5%90">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>ECB</th><th>CBC</th><th>CTR</th></tr></thead><tbody><tr><td>초기화벡터</td><td>불필요</td><td>필요</td><td>필요</td></tr><tr><td>오류전파</td><td>미전파</td><td>이후블록</td><td>미전파</td></tr><tr><td>병렬처리</td><td>암복호화</td><td>복호화</td><td>암복호화</td></tr><tr><td>복잡도</td><td>낮음</td><td>중간</td><td>높음</td></tr></tbody></table>
 <ul>
-<li>공격의 지능화에 따라 사용자가 신뢰할 수 없는 링크 클릭을 금지하는 등 개인 보안 수칙 준수 필요</li>
+<li>ECB 모드는 Brute-Force 공격에 취약하므로 다른 모드 사용 권장</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화시-고려사항">블록 암호화시 고려사항<a class="hash-link" aria-label="블록 암호화시 고려사항에 대한 직접 링크" title="블록 암호화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>암호화 키를 주기적으로 변경하는 등의 키관리 조치 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[LDAP, Lightweight Directory Access Protocol]]></title>
-            <link>https://gracefullight.dev/pe/security/ldap/</link>
-            <guid>https://gracefullight.dev/pe/security/ldap/</guid>
-            <pubDate>Mon, 08 Jul 2024 12:22:09 GMT</pubDate>
-            <description><![CDATA[Lightweight Directory Access Protocol]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념">접근제어의 개념<a class="hash-link" aria-label="접근제어의 개념에 대한 직접 링크" title="접근제어의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[적대적 공격]]></title>
+            <link>https://gracefullight.dev/pe/security/Adversarial-Attack/</link>
+            <guid>https://gracefullight.dev/pe/security/Adversarial-Attack/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:55:48 GMT</pubDate>
+            <description><![CDATA[Adversarial Attack]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="머신러닝-적대적-공격의-개념">머신러닝 적대적 공격의 개념<a class="hash-link" aria-label="머신러닝 적대적 공격의 개념에 대한 직접 링크" title="머신러닝 적대적 공격의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>사용자의 신원을 식별, 인증하여 대상, 정보의 접근 및 사용 수준을 인가하는 관리 기법</li>
-<li>최소 권한과 직무 분리로 제로 트러스트 기반 기밀성, 무결성 달성을 위해 필요</li>
+<li>머신러닝 모델의 취약점을 악용하여 잘못된 예측을 유도하기 위해 고의적으로 조작된 입력을 사용하는 공격</li>
+<li>딥러닝 모델의 발전과 함께 적대적 공격기법 발전</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념도-주요-유형">접근제어의 개념도, 주요 유형<a class="hash-link" aria-label="접근제어의 개념도, 주요 유형에 대한 직접 링크" title="접근제어의 개념도, 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-개념도">접근제어의 개념도<a class="hash-link" aria-label="접근제어의 개념도에 대한 직접 링크" title="접근제어의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-개념도-주요-공격기법-방어기법">적대적 공격의 개념도, 주요 공격기법, 방어기법<a class="hash-link" aria-label="적대적 공격의 개념도, 주요 공격기법, 방어기법에 대한 직접 링크" title="적대적 공격의 개념도, 주요 공격기법, 방어기법에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B3%B5%EA%B2%A9%EA%B8%B0%EB%B2%95-%EB%B0%A9%EC%96%B4%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-개념도">적대적 공격의 개념도<a class="hash-link" aria-label="적대적 공격의 개념도에 대한 직접 링크" title="적대적 공격의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="접근제어의-주요-유형">접근제어의 주요 유형<a class="hash-link" aria-label="접근제어의 주요 유형에 대한 직접 링크" title="접근제어의 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>DAC, 임의적 접근제어</td><td>사용자나 그룹에 근거한 접근제어, 특정 권한 주체가 권한 위임 가능</td><td>ACM, ACL</td></tr><tr><td>MAC, 강제적 접근제어</td><td>객체별로 정의된 권한을 근거로 접근제어, 보안등급, 규칙 기반</td><td>벨라파둘라, 비바, 클락윌슨, 만리장성</td></tr><tr><td>RBAC, 역할기반 접근제어</td><td>권한을 그룹에 부여하고, 그룹이 수행할 역할을 정의하여 접근제어</td><td>IAM 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-개념-및-접근제어-방안">LDAP 프로토콜의 개념 및 접근제어 방안<a class="hash-link" aria-label="LDAP 프로토콜의 개념 및 접근제어 방안에 대한 직접 링크" title="LDAP 프로토콜의 개념 및 접근제어 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-개념">LDAP 프로토콜의 개념<a class="hash-link" aria-label="LDAP 프로토콜의 개념에 대한 직접 링크" title="LDAP 프로토콜의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>사용자, 시스템, N/W, 어플리케이션 정보를 트리로 저장하여 조회, 수정 등 디렉토리 서비스와 정보를 전달하는 프로토콜</li>
-<li>DAP의 통신비용을 절감하기 위해 표준화</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ldap-프로토콜의-접근제어-방안">LDAP 프로토콜의 접근제어 방안<a class="hash-link" aria-label="LDAP 프로토콜의 접근제어 방안에 대한 직접 링크" title="LDAP 프로토콜의 접근제어 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ldap/#ldap-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인증</td><td>Bind요청을 통한 사용자, 클라이언트 신원 검증</td><td>비밀번호, SASL 등</td></tr><tr><td>인가</td><td>LDAP 디렉토리 내 객체와 속성 권한 확인 후 권한 부여</td><td>사용자, 그룹정보로 ACL 처리</td></tr><tr><td>감사, Audit</td><td>LDAP 서버 활동 기록, 보안 및 규정준수 추적</td><td>Audit Log, Change Log 관리</td></tr></tbody></table>]]></content:encoded>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-주요-공격기법">적대적 공격의 주요 공격기법<a class="hash-link" aria-label="적대적 공격의 주요 공격기법에 대한 직접 링크" title="적대적 공격의 주요 공격기법에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EC%A3%BC%EC%9A%94-%EA%B3%B5%EA%B2%A9%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>학습데이터 추출공격</td><td>모델에 수많은 쿼리를 던져 학습에 사용된 데이터 추출</td><td>학습데이터 내 중요정보 추출</td></tr><tr><td>중독공격</td><td>악의적 학습데이터를 주입하여 ML 모델의 결과값 조작</td><td>MS테이, 이루다</td></tr><tr><td>회피공격</td><td>입력 데이터를 최소한으로 변조, 모델 무결성 파괴</td><td>도로 표지판 오인식</td></tr><tr><td>모델 추출공격</td><td>모델 질의 후 결과값을 분석하여 사용된 모델 추출</td><td>유사 모델 제작</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-방어기법">적대적 공격의 방어기법<a class="hash-link" aria-label="적대적 공격의 방어기법에 대한 직접 링크" title="적대적 공격의 방어기법에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EB%B0%A9%EC%96%B4%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Defense GAN</td><td>생성적 적대 신경망을 활용한 공격 방어</td><td>회피 공격 방어</td></tr><tr><td>적대적 훈련</td><td>가능한 많은 적대적 사례를 학습데이터에 포함해 훈련</td><td>중독, 회피공격 방어</td></tr><tr><td>결과값 분석 차단</td><td>학습 모델의 결과값을 분석할 수 없게 합성데이터 활용</td><td>추출공격 방어</td></tr><tr><td>쿼리 횟수 제한</td><td>반복 질의시 제한하여 정보 유출 방지</td><td>추출공격 방어</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="생성형-언어모델-보안-취약점과-대응방안">생성형 언어모델 보안 취약점과 대응방안<a class="hash-link" aria-label="생성형 언어모델 보안 취약점과 대응방안에 대한 직접 링크" title="생성형 언어모델 보안 취약점과 대��응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/Adversarial-Attack/#%EC%83%9D%EC%84%B1%ED%98%95-%EC%96%B8%EC%96%B4%EB%AA%A8%EB%8D%B8-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90%EA%B3%BC-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<table><thead><tr><th>구분</th><th>취약점</th><th>대응방안</th></tr></thead><tbody><tr><td>개인정보, 민감정보 유출</td><td>무분별한 데이터 입력</td><td>개인정보 등 답변 차단</td></tr><tr><td>-</td><td>개인, 민감 정보 추출</td><td>자동탐지, 익명화</td></tr><tr><td>악성코드 생성</td><td>악성코드 생성 자동화</td><td>API 포함 코드 검수 단계 추가</td></tr><tr><td>-</td><td>취약점 생성 자동화</td><td>반환 코드 분석, 실행 차단</td></tr><tr><td>AI 모델 취약점</td><td>생성형 모델에 대한 적대적 공격</td><td>xAI 구현, Defense-GAN 구현</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[정보보호제품 신속확인제도]]></title>
-            <link>https://gracefullight.dev/pe/security/정보보호제품-신속확인제도/</link>
-            <guid>https://gracefullight.dev/pe/security/정보보호제품-신속확인제도/</guid>
-            <pubDate>Mon, 08 Jul 2024 12:16:06 GMT</pubDate>
-            <description><![CDATA[정보보호제품 신속확인제도]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도">정보보호제품 신속확인제도<a class="hash-link" aria-label="정보보호제품 신속확인제도에 대한 직접 링크" title="정보보호제품 신속확인제도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84">​</a></h2>
+            <title><![CDATA[드론 보안위협]]></title>
+            <link>https://gracefullight.dev/pe/security/drone-threats/</link>
+            <guid>https://gracefullight.dev/pe/security/drone-threats/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:55:09 GMT</pubDate>
+            <description><![CDATA[Drone Threats]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협-개념">드론 보안위협 개념<a class="hash-link" aria-label="드론 보안위협 개념에 대한 직접 링크" title="드론 보안위협 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>신기술, 융복합 제품에 대해 최소한의 절차와 인증 기준으로 보안제품을 평가한 뒤 평가 기준이 마련될 때까지 공공부문에 제품을 적용할 수 있도록하는 제도</li>
-<li>기존 인증제도에 평가기준이 없는 제품의 공공시장 진입 가능, 정부 및 공공기관의 혁신 제품 도입을 통한 신규 보안 위협 대응</li>
+<li>드론 외부의 악의적 행위로 인해 드론 자체 또는 드론이 수집하는 데이터가 탈취, 변조, 파괴 되는 등 드론 운동에 악역향을 주는 모든 위협</li>
+<li>드론 서비스 활성화에 따라 보안 위협 대책 요구 증가</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-절차도-세부절차-도입요건">정보보호제품 신속확인제도 절차도, 세부절차, 도입요건<a class="hash-link" aria-label="정보보호제품 신속확인제도 절차도, 세부절차, 도입요건에 대한 직접 링크" title="정보보호제품 신속확인제도 절차도, 세부절차, 도입요건에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EB%8F%84%EC%9E%85%EC%9A%94%EA%B1%B4">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-절차도">정보보호제품 신속확인제도 절차도<a class="hash-link" aria-label="정보보호제품 신속확인제도 절차도에 대한 직접 링크" title="정보보호제품 신속확인제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EF%BF%BD%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-개념도-주요-유형-대응방안">드론 보안위협의 개념도, 주요 유형, 대응방안<a class="hash-link" aria-label="드론 보안위협의 개념도, 주요 유형, 대응방안에 대한 직접 링크" title="드론 보안위협의 개념도, 주요 유형, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-개념도">드론 보안위협의 개념도<a class="hash-link" aria-label="드론 보안위협의 개념도에 대한 직접 링크" title="드론 보안위협의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-세부절차">정보보호제품 신속확인제도 세부절차<a class="hash-link" aria-label="정보보호제품 신속확인제도 세부절차에 대한 직접 링크" title="정보보호제품 신속확인제도 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기존제도 가능여부 검토</td><td>제품이 기존 인증제도에서 평가 가능한지 검토</td><td>CC인증 등</td></tr><tr><td>신속 확인 준비</td><td>신속 확인 신청을 위한 점검</td><td>취약점 진단, 기능 시험</td></tr><tr><td>신속 확인 신청</td><td>진단서, 평가서, 서약서 제출</td><td>2개월 소요</td></tr><tr><td>심의 및 확인서 발급</td><td>심의 적합시 확인서 발급</td><td>2년 유효기간</td></tr><tr><td>변경 승인 기준 마련</td><td>변경시 취약점 코드 점검, 기존제도 평가 기준 마련시 연장 불가</td><td>변경 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인제도-도입-요건">정보보호제품 신속확인제도 도입 요건<a class="hash-link" aria-label="정보보호제품 신속확인제도 도입 요건에 대한 직접 링크" title="정보보호제품 신속확인제도 도입 요건에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EB%8F%84%EC%9E%85-%EC%9A%94%EA%B1%B4">​</a></h3>
 <ul>
-<li>'가' 그룹의 경우 국정원의 보안적합성 검증 필요</li>
-<li>세부 요건은 국가사이버안보센터 보안적합성 검증 체계 참조</li>
+<li>드론 센서, 구동부와 제어 네트워크 해킹, 교란부 위협</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보보호제품-신속확인��제도-발전방향">정보보호제품 신속확인제도 발전방향<a class="hash-link" aria-label="정보보호제품 신속확인제도 발전방향에 대한 직접 링크" title="정보보호제품 신속확인제도 발전방향에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84/#%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%A0%9C%ED%92%88-%EC%8B%A0%EC%86%8D%ED%99%95%EC%9D%B8%EC%A0%9C%EB%8F%84-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-주요-유형">드론 보안위협의 주요 유형<a class="hash-link" aria-label="드론 보안위협의 주요 유형에 대한 직접 링크" title="드론 보안위협의 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EF%BF%BD%EF%BF%BD%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-대응방안">드론 보안위협의 대응방안<a class="hash-link" aria-label="드론 보안위협의 대응방안에 대한 직접 링크" title="드론 보안위협의 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협-고려사항">드론 보안위협 고려사항<a class="hash-link" aria-label="드론 보안위협 고려사항에 대한 직접 링크" title="드론 보안위협 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
-<li>국가용 보안 요구사항에 정의된 내용을 기반으로 체크리스트 도입, 정보보호 기업의 준비절차 간소화</li>
+<li>드론의 SW와 펌웨어를 정기적으로 업데이트하여 최신 보안 위협 대비 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[3-상태 버퍼]]></title>
-            <link>https://gracefullight.dev/pe/architecture/tri-state-buffer/</link>
-            <guid>https://gracefullight.dev/pe/architecture/tri-state-buffer/</guid>
-            <pubDate>Sat, 06 Jul 2024 06:33:10 GMT</pubDate>
-            <description><![CDATA[Tri-State Buffer]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-개념">3-상태 버퍼의 개념<a class="hash-link" aria-label="3-상태 버퍼의 개념에 대한 직접 링크" title="3-상태 버퍼의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[클라우드 보안 고려요소]]></title>
+            <link>https://gracefullight.dev/pe/security/cloud-security/</link>
+            <guid>https://gracefullight.dev/pe/security/cloud-security/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:54:42 GMT</pubDate>
+            <description><![CDATA[Cloud security]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념">클라우드 보안 개념<a class="hash-link" aria-label="클라우드 보안 개념에 대한 직접 링크" title="클라우드 보안 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>디지털 회로에서 사용되는 논리게이트의 한 종류로, 일반적인 0과 1의 논리 사태 외에 High Impedance (Z) 상태를 가질 수 있는 버퍼게이트로 고 임피던스 상태에서는 회로에서 연결이 끊어진 것처럼 동작하여, 다른 장치 출력에 영향을 주지 않고 버퍼의 출력을 Floating 상태로 제어</li>
-<li>회로 간 전기적 분리가 가능하므로, 여러 장치가 동일한 데이터 버스를 효과적으로 제어 가능</li>
+<li>클라우드 컴퓨팅 환경에서 데이터를 보호하고, 어플리케이션 및 인프라의 보안을 유지하기 위한 관리적, 물리적, 기술적 보안</li>
+<li>2025년까지 모든 행정 공공, 정보시스템 클라우드 전환 시 데이터 보호와 서비스 신뢰성 확보를 위해 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성도-구성요소-적용방안">3-상태 버퍼의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="3-상태 버퍼의 구성도, 구성요소, 적용방안에 대한 직접 링크" title="3-상태 버퍼의 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성도">3-상태 버퍼의 구성도<a class="hash-link" aria-label="3-상태 버퍼의 구성도에 대한 직접 링크" title="3-상태 버퍼의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">            Enable</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">              |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">              v</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           +---------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">Input ----&gt;|         |----&gt; Output</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           | 3-State |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           | Buffer  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           |         |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">           +---------+</span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-구성요소">3-상태 버퍼의 구성요소<a class="hash-link" aria-label="3-상태 버퍼의 구성요소에 대한 직접 링크" title="3-상태 버퍼의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>입력</td><td>입력 신호를 받는 단자</td><td>입력 신호 인입</td></tr><tr><td>출력</td><td>입력 신호를 출력으로 내보내는 단자</td><td>출력 신호 출력</td></tr><tr><td>제어</td><td>버퍼의 상태를 제어하는 단자</td><td>High/Low Impedance</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼의-적용방안">3-상태 버퍼의 적용방안<a class="hash-link" aria-label="3-상태 버퍼의 적용방안에 대한 직접 링크" title="3-상태 버퍼의 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 버스 제어</td><td>여러 장치가 공유하는 데이터 버스에 연결하여 특정 시간에만 데이터 전송</td><td>버스 충돌 방지</td></tr><tr><td>메모리 인터페이스</td><td>메모리 칩 선택 및 데이터 입출력 제어</td><td>주소 디코더와 함께 사용하여 특정 메모리 칩만 활성화</td></tr><tr><td>주변장치 인터페이스</td><td>주변 장치가 데이터를 보낼 준비가 되었을 때만 버퍼 활성화</td><td>주변 장치와의 데이터 수신</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="3-상태-버퍼-고려사항">3-상태 버퍼 고려사항<a class="hash-link" aria-label="3-상태 버퍼 고려사항에 대한 직접 링크" title="3-상태 버퍼 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/tri-state-buffer/#3-%EC%83%81%ED%83%9C-%EB%B2%84%ED%8D%BC-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>고임피던스 상태일 때 전류 소모가 적지만, 활성화 상태에서는 전류 소모가 발생할 수 있으므로 전력 관리가 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[제로 트러스트 보안]]></title>
-            <link>https://gracefullight.dev/pe/security/zero-trust-security/</link>
-            <guid>https://gracefullight.dev/pe/security/zero-trust-security/</guid>
-            <pubDate>Sat, 06 Jul 2024 05:06:52 GMT</pubDate>
-            <description><![CDATA[Zero Trust Security]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안의-개념">제로 트러스트 보안의 개념<a class="hash-link" aria-label="제로 트러스트 보안의 개념에 대한 직접 링크" title="제로 트러스트 보안의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>전통적 보안 모델과 달리 네트워크 내/외부를 고려하지 않고, 모든 접근 요청에 대해 철저한 인증과 검증을 끊임없이 수행하는 보안 모델</li>
-<li>클라우드 컴퓨팅, 원격 근무로 인한 네트워크 경계의 모호성, 지능화된 사이버공격, 데이터 유출 위험의 증가 방지</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안의-개념도-핵심요소-적용-분야">제로 트러스트 보안의 개념도, 핵심요소, 적용 분야<a class="hash-link" aria-label="제로 트러스트 보안의 개념도, 핵심요소, 적용 분야에 대한 직접 링크" title="제로 트러스트 보안의 개념도, 핵심요소, 적용 분야에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9-%EB%B6%84%EC%95%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안의-개념도">제로 트러스트 보안의 개념도<a class="hash-link" aria-label="제로 트러스트 보안의 개념도에 대한 직접 링크" title="제로 트러스트 보안의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념도-주요-위협-대응-방안">클라우드 보안 개념도, 주요 위협, 대응 방안<a class="hash-link" aria-label="클라우드 보안 개념도, 주요 위협, 대응 방안에 대한 직접 링크" title="클라우드 보안 개념도, 주요 위협, 대응 방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%84%ED%98%91-%EB%8C%80%EC%9D%91-%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념도">클라우드 보안 개념도<a class="hash-link" aria-label="클라우드 보안 개념도에 대한 직접 링크" title="클라우드 보안 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
-<li>제로 트러스트 패러당미에 맞는 지속적인 요청 검증, 마이크로 세그먼테이션, SDN기반 경계 정의 필요</li>
+<li>기존 기업의 보안 프레임워크가 클라우드로 확장, 클라우드 서비스 제공 데이터센터의 물리적 보안은 CSP책임</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안-핵심요소">제로 트러스트 보안 핵심요소<a class="hash-link" aria-label="제로 트러스트 보안 핵심요소에 대한 직접 링크" title="제로 트러스트 보안 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>기존 트러스트 보안</th><th>제로 트러스트 보안</th></tr></thead><tbody><tr><td>신뢰성</td><td>신뢰 기반</td><td>비신뢰 기반</td></tr><tr><td>인증</td><td>연결시에만 인증 수행</td><td>연결 후에도 지속적인 인증</td></tr><tr><td>권한</td><td>높은 수준 권한 부여</td><td>최소 수준 권한 부여</td></tr><tr><td>경계</td><td>기업망 단위 보안 경계</td><td>SW 정의 보안 경계</td></tr><tr><td>NW분할</td><td>네트워크 세그먼테이션</td><td>마이크로 세그먼테이션</td></tr><tr><td>리소스 검증</td><td>인증시 리소스 접근 가능</td><td>정책결정포인트, 정책집행포인트</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-적용분야">제로 트러스트 적용분야<a class="hash-link" aria-label="제로 트러스트 적용분야에 대한 직접 링크" title="제로 트러스트 적용분야에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B6%84%EC%95%BC">​</a></h3>
-<table><thead><tr><th>구분</th><th>분야</th><th>내용</th></tr></thead><tbody><tr><td>클라우드환경</td><td>클라우드 서비스 접근제어</td><td>클라우드 서비스 접근시 사용자기기, 앱에 대한 지속적 검증, 인증</td></tr><tr><td>원격근무환경</td><td>VPN 접속시 다중 인증</td><td>VPN 접근 사용자 인증 강화, 기기 상태 확인</td></tr><tr><td>데이터 보호</td><td>중요데이터 접근 제어</td><td>사용자 권한 및 데이터 접근 맥락 확인, 사용자 액션 로깅</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="제로-트러스트-보안-적용시-고려사항">제로 트러스트 보안 적용시 고려사항<a class="hash-link" aria-label="제로 트러스트 보안 적용시 고려사항에 대한 직접 링크" title="제로 트러스트 보안 적용시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%A0%9C%EB%A1%9C-%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B3%B4%EC%95%88-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-주요-위협">클라우드 보안 주요 위협<a class="hash-link" aria-label="클라우드 보안 주요 위협에 대한 직접 링크" title="클라우드 보안 주요 위협에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9A%94-%EC%9C%84%ED%98%91">​</a></h3>
+<table><thead><tr><th>구분</th><th>위협</th><th>내용</th></tr></thead><tbody><tr><td>SaaS</td><td>정보 훼손 및 유출</td><td>고객 정보 훼손 및 유출 위협</td></tr><tr><td>-</td><td>웹 취약점 공격</td><td>악성코드, 인젝션, XSS 등</td></tr><tr><td>-</td><td>버전 통제 문제</td><td>다른 버전 서비스 호환 가능성</td></tr><tr><td>PaaS</td><td>Buffer Overflow</td><td>제공된 자원 권한 이상 접근</td></tr><tr><td>-</td><td>표준화 부재</td><td>설계, 코딩 표준 부재</td></tr><tr><td>-</td><td>인증 문제</td><td>취약한 인증, 계정 탈취, 플랫폼 종속</td></tr><tr><td>IaaS</td><td>가상화 취약점</td><td>하이퍼바이저, 도커 취약점</td></tr><tr><td>-</td><td>서버 관리 문제</td><td>DDoS, 시스템 장애</td></tr><tr><td>-</td><td>데이터 손실 문제</td><td>고객 데이터 유실</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-대응방안">클라우드 보안 대응방안<a class="hash-link" aria-label="클라우드 보안 대응방안에 대한 직접 링크" title="클라우드 보안 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>보안 정책 수립, 시행</td><td>보안 거버넌스 확립, SLA 협약</td></tr><tr><td>-</td><td>교육 및 훈련</td><td>클라우드 보안 교육, 대응방안 교육</td></tr><tr><td>물리적</td><td>데이터센터 보안</td><td>물리적 보안 강화, 접근 통제</td></tr><tr><td>-</td><td>백업 및 재해복구</td><td>데이터 손실, 서비스 중단 대응</td></tr><tr><td>기술적</td><td>암호화</td><td>데이터 자체와 N/W 구간 암호화</td></tr><tr><td>-</td><td>방화벽, IDS, IPS</td><td>트래픽 감시, 사전 차단</td></tr></tbody></table>
 <ul>
-<li>ITAM 도입을 선행하여 정보 자산의 추적용이성 확보</li>
+<li>SDN, IAM 등을 활용하여 최소 권한 부여</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="참조">참조<a class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크" href="https://gracefullight.dev/pe/security/zero-trust-security/#%EC%B0%B8%EC%A1%B0">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-고려사항">클라우드 보안 고려사항<a class="hash-link" aria-label="클라우드 보안 고려사항에 대한 직접 링크" title="클라우드 보안 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
-<li><a href="https://www.kisa.or.kr/2060205/form?postSeq=20&amp;page=1" target="_blank" rel="noopener noreferrer">KISA: 제로트러스트 가이드라인 1.0</a></li>
+<li>각 국의 산업 표준 및 법적 요구사항 준수 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[인공지능 윤리]]></title>
-            <link>https://gracefullight.dev/pe/security/ai-ethics/</link>
-            <guid>https://gracefullight.dev/pe/security/ai-ethics/</guid>
-            <pubDate>Sat, 06 Jul 2024 04:46:23 GMT</pubDate>
-            <description><![CDATA[AI Ethics]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리의-개념">인공지능 윤리의 개념<a class="hash-link" aria-label="인공지능 윤리의 개념에 대한 직접 링크" title="인공지능 윤리의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[디지털 역기능]]></title>
+            <link>https://gracefullight.dev/pe/security/digital-dysfunction/</link>
+            <guid>https://gracefullight.dev/pe/security/digital-dysfunction/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:22:27 GMT</pubDate>
+            <description><![CDATA[Digital Dysfunction]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능">디지털 역기능<a class="hash-link" aria-label="디지털 역기능에 대한 직접 링크" title="디지털 역기능에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5">​</a></h2>
+<ul>
+<li>디지털 기술 및 서비스 이용과정에서 발생하는 예상치 못한 부정적인 결과</li>
+<li>빠른 기술 발전 속도, 정보 격차, 디지털도구와의 의존성으로 인해 발생</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-개념도-주요-유형-해결방안">디지털 역기능 개념도, 주요 유형, 해결방안<a class="hash-link" aria-label="디지털 역기능 개념도, 주요 유형, 해결방안에 대한 직접 링크" title="디지털 역기능 개념도, 주요 유형, 해결방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-개념도">디지털 역기능 개념도<a class="hash-link" aria-label="디지털 역기능 개념도에 대한 직접 링크" title="디지털 역기능 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
-<li>AI 산업 전반에서 AI시스템의 개발, 배포, 사용과 관련된 윤리적 원칙가 가치</li>
-<li>AI의 급속한 발전으로 인한 오남용이 심화됨에 따라 AI 개발, 적용 과정에서의 설명가능성, 투명성 확보를 위한 윤리 기준과 거버넌스 필요</li>
+<li>디지털 기술의 급격한 발전에 따라 역기능 다양화</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리의-주요-원칙-적용방안">인공지능 윤리의 주요 원칙, 적용방안<a class="hash-link" aria-label="인공지능 윤리의 주요 원칙, 적용방안에 대한 직접 링크" title="인공지능 윤리의 주요 원칙, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리의-주요-원칙">인공지능 윤리의 주요 원칙<a class="hash-link" aria-label="인공지능 윤리의 주요 원칙에 대한 직접 링크" title="인공지능 윤리의 주요 원칙에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인공지능-윤리-주요-원칙-상세설명">인공지능 윤리 주요 원칙 상세설명<a class="hash-link" aria-label="인공지능 윤리 주요 원칙 상세설명에 대한 직접 링크" title="인공지능 윤리 주요 원칙 상세설명에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EC%9C%A4%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EC%9B%90%EC%B9%99-%EC%83%81%EC%84%B8%EC%84%A4%EF%BF%BD%EF%BF%BD%EB%AA%85">​</a></h3>
-<table><thead><tr><th>구분</th><th>세부 원칙</th><th>설명</th></tr></thead><tbody><tr><td>인간존엄성</td><td>인권보장</td><td>인간중심, 인권, 자유 보장</td></tr><tr><td>-</td><td>프라이버시 보호</td><td>사생활 보호, 개인정보 오용 최소화</td></tr><tr><td>-</td><td>다양성 존중</td><td>다양성, 접근성 보장, 편향 및 차별 금지</td></tr><tr><td>사회공공선</td><td>침해 금지</td><td>인간에 무해한 목적으로 활용</td></tr><tr><td>-</td><td>공공성</td><td>인류 공통 이익 중시, 순기능 극대화</td></tr><tr><td>-</td><td>연대성</td><td>이해관계자 참여 기회 보장</td></tr><tr><td>기술합목적성</td><td>데이터 관리</td><td>목적 외의 용도 사용 금지, 품질 관리</td></tr><tr><td>-</td><td>책임성</td><td>책임 명확화, 주체별 책임 분산</td></tr><tr><td>-</td><td>안전성</td><td>잠재적 위험 방지, 안전 보장 활동</td></tr><tr><td>-</td><td>투명성</td><td>설명 가능성 확보, 유의사항 고지</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-주요-유형">디지털 역기능 주요 유형<a class="hash-link" aria-label="디지털 역기능 주요 유형에 대한 직접 링크" title="디지털 역기능 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작 정보</td><td>거짓 정보를 퍼뜨려서 사람들을 의도적으로 혼란스럽게하거나 조종하려는 행위</td><td>가짜뉴스 전파, 조작된 정보 유통 등</td></tr><tr><td>디지털 혐오표현</td><td>특정 속성을 가진 집단이 디지털 수단을 통해 차별, 폭력 등의 표현을 받는 행위</td><td>악플러, 사이버 렉카 등</td></tr><tr><td>디지털 성범죄</td><td>디지털 기기로 상대방의 동의없이 신체 일부 등을 촬영, 유포, 전시하는 행위</td><td>텔레그램, n번방 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-해결방안">디지털 역기능 해결방안<a class="hash-link" aria-label="디지털 역기능 해결방안에 대한 직접 링크" title="디지털 역기능 해결방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작정보, 성범죄</td><td>방지, 추적 기술</td><td>사전 업로드 방지, 사후 추적</td></tr><tr><td>-</td><td>알고리즘 편향 식별</td><td>알고리즘 신뢰성 확보</td></tr><tr><td>디지털 혐오표현, 과의존</td><td>가상 체험 서비스</td><td>역기능 체험, 사전 예방</td></tr><tr><td>-</td><td>전문 치료 서비스</td><td>역기능별 사후 치료, 관리</td></tr><tr><td>디지털 격차</td><td>개인 맞춤형 가상비서</td><td>개인 특성, 경험 기반</td></tr><tr><td>-</td><td>시뮬레이션 기반 컨설팅</td><td>디지털 트윈 활용 격차 해소</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-고려사항">디지털 역기능 고려사항<a class="hash-link" aria-label="디지털 역기능 고려사항에 대한 직접 링크" title="디지털 역기능 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
-<li>AI 윤리 원칙을 준수하기 위해 기업 내 AI 거버너스 확립</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-모형-개념도-구성요소-주요-사례">AI 거버넌스 모형 개념도, 구성요소, 주요 사례<a class="hash-link" aria-label="AI 거버넌스 모형 개념도, 구성요소, 주요 사례에 대한 직접 링크" title="AI 거버넌스 모형 개념도, 구성요소, 주요 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EB%AA%A8%ED%98%95-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-모형-개념도">AI 거버넌스 모형 개념도<a class="hash-link" aria-label="AI 거버넌스 모형 개념도에 대한 직접 링크" title="AI 거버넌스 모형 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EB%AA%A8%ED%98%95-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-구성요소">AI 거버넌스 구성요소<a class="hash-link" aria-label="AI 거버넌스 구성요소에 대한 직접 링크" title="AI 거버넌스 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>기술</td><td>설명가능성</td><td>희소오토인코더 기반 xAI 구현</td></tr><tr><td>-</td><td>공정성</td><td>편향, 차별 식별 및 제거</td></tr><tr><td>보안</td><td>프라이버시 보호</td><td>개인 데이터 학습에 의한 침해 방지</td></tr><tr><td>-</td><td>안정성, 보안성</td><td>적대적 공격, 환각 방지</td></tr><tr><td>사회</td><td>공공성</td><td>AI로 인한 일자리 변화 고려</td></tr><tr><td>-</td><td>연대성</td><td>긍정적인 사회 변화 선도</td></tr><tr><td>규제</td><td>오남용 방지 규제</td><td>딥페이크 등 오남용 규제</td></tr><tr><td>-</td><td>국제사회 협력</td><td>국제 사회 소통을 통한 규제 마련</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ai-거버넌스-주요-사례">AI 거버넌스 주요 사례<a class="hash-link" aria-label="AI 거버넌스 주요 사례에 대한 직접 링크" title="AI 거버넌스 주요 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/ai-ethics/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>카카오</td><td>국내 최초 AI 윤리 헌장 제정</td></tr><tr><td>-</td><td>삼성전자</td><td>AI 국제 컨소시엄 가입</td></tr><tr><td>국외</td><td>미국</td><td>AI 이니셔티브 행정 명령</td></tr><tr><td>-</td><td>EU</td><td>AI 윤리 가이드라인 발표</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[SBOM, Software Bill of Materials]]></title>
-            <link>https://gracefullight.dev/pe/security/sbom/</link>
-            <guid>https://gracefullight.dev/pe/security/sbom/</guid>
-            <pubDate>Fri, 05 Jul 2024 12:51:10 GMT</pubDate>
-            <description><![CDATA[Software Bill of Materials]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sbom의-개념">SBOM의 개념<a class="hash-link" aria-label="SBOM의 개념에 대한 직접 링크" title="SBOM의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>SW개발 및 배포 과정에 사용된 모든 오픈소스, 라이브러리, 패키지, 모듈 등의 구성요소를 체계화한 SW자재 명세서</li>
-<li>SW복잡성의 증가로 인한 보안취약점, OSS라이센스 관리, SW공급망 투명성 확보, 구성요소들의 품질 관리를 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sbom의-개념도-구성요소-적용사례">SBOM의 개념도, 구성요소, 적용사례<a class="hash-link" aria-label="SBOM의 개념도, 구성요소, 적용사례에 대한 직접 링크" title="SBOM의 개념도, 구성요소, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sbom의-개념도">SBOM의 개념도<a class="hash-link" aria-label="SBOM의 개념도에 대한 직접 링크" title="SBOM의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>SBOM 도입으로 관리자가 SW를 통합 관리 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sbom의-구성요소">SBOM의 구성요소<a class="hash-link" aria-label="SBOM의 구성요소에 대한 직접 링크" title="SBOM의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>지침, 절차</td><td>SBOM 요청, 생성, 사용에 관한 절차 정의</td><td>생성 빈도, 분석 깊이, 접근 제어 등</td></tr><tr><td>컴포넌트 명세</td><td>추적해야할 각 컴포넌트의 식별정보, 관계정보</td><td>이름, 버전, 고유식별자, 의존관계, 라이센스</td></tr><tr><td>자동화 지원</td><td>기계 가독성 데이터포맷으로 자동화된 추적관리</td><td>SPDX, CycloneDX 등 SBOM 프로토콜</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sbom-적용사례">SBOM 적용사례<a class="hash-link" aria-label="SBOM 적용사례에 대한 직접 링크" title="SBOM 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>디지털 플랫폼 정부</td><td>SW공급망 보안 가이드라인</td></tr><tr><td>국외</td><td>바이든 행정부</td><td>행정명령 통한 주요 인프라SW SBOM 의무화</td></tr><tr><td>-</td><td>리눅스 재단</td><td>SPDX 표준 관리 통한 SBOM 정보 교환 및 활용 지원</td></tr><tr><td>-</td><td>EU</td><td>사이버복원력법 제정, 유통되는 모든 디지털 기기의 SBOM 의무화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sbom-도입-후-고려사항">SBOM 도입 후 고려사항<a class="hash-link" aria-label="SBOM 도입 후 고려사항에 대한 직접 링크" title="SBOM 도입 후 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#sbom-%EB%8F%84%EC%9E%85-%ED%9B%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>SW구성요소 변경시 SBOM을 최신상태로 유지하여 정보 정확성을 확보하고, 주기적인 오픈소스 버전 업데이트로 보안 취약점 개선</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="참조">참조<a class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크" href="https://gracefullight.dev/pe/security/sbom/#%EC%B0%B8%EC%A1%B0">​</a></h2>
-<ul>
-<li><a href="https://www.kisa.or.kr/2060204/form?postSeq=15&amp;page=1" target="_blank" rel="noopener noreferrer">KISA: SW 공급망 보안 가이드라인 1.0</a></li>
+<li>디지털 역기능 예방을 위해 디지털 리서터릿 교육 강화, 정보판별력 역량 강화</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
         <item>
-            <title><![CDATA[크리덴셜 스터핑]]></title>
-            <link>https://gracefullight.dev/pe/security/credential-stuffing/</link>
-            <guid>https://gracefullight.dev/pe/security/credential-stuffing/</guid>
-            <pubDate>Fri, 05 Jul 2024 12:42:30 GMT</pubDate>
-            <description><![CDATA[Credential Stuffing]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑의-개념">크리덴셜 스터핑의 개념<a class="hash-link" aria-label="크리덴셜 스터핑의 개념에 대한 직접 링크" title="크리덴셜 스터핑의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+            <title><![CDATA[디지털 포렌식]]></title>
+            <link>https://gracefullight.dev/pe/security/digital-forensics/</link>
+            <guid>https://gracefullight.dev/pe/security/digital-forensics/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:11:58 GMT</pubDate>
+            <description><![CDATA[Digital Forensics]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-개념">디지털 포렌식의 개념<a class="hash-link" aria-label="디지털 포렌식의 개념에 대한 직접 링크" title="디지털 포렌식의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>공격자가 미리 확보한 사용자의 계정, 인증정보를 이용하여 다른 사이트에 무작위로 대입하여 정보를 탈취하는 사이버 공격</li>
-<li>인터넷 사용자가 동일 로그인 정보를 여러 사이트에서 사용한다는 점을 노린 자동화 공격</li>
+<li>디지털 기기에서 정보를 식별, 수집, 분석, 보존하고, 법정에 증거로 제출하여 언제든지 검증가능한 형태로 자료를 준비하는 절차</li>
+<li>범죄의 지능화, 고도화로 인해 보안사고 및 법적 분쟁해결을 위한 증거로써 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-개념도-공격절차-대응방안">크리덴셜 스터핑 개념도, 공격절차, 대응방안<a class="hash-link" aria-label="크리덴셜 스터핑 개념도, 공격절차, 대응방안에 대한 직접 링크" title="크리덴셜 스터핑 개념도, 공격절차, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-개념도">크리덴셜 스터핑 개념도<a class="hash-link" aria-label="크리덴셜 스터핑 개념도에 대한 직접 링크" title="크리덴셜 스터핑 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-5원칙-주요-유형-절차">디지털 포렌식의 5원칙, 주요 유형, 절차<a class="hash-link" aria-label="디지털 포렌식의 5원칙, 주요 유형, 절차에 대한 직접 링크" title="디지털 포렌식의 5원칙, 주요 유형, 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-5%EC%9B%90%EC%B9%99-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-5원칙">디지털 포렌식의 5원칙<a class="hash-link" aria-label="디지털 포렌식의 5원칙에 대한 직접 링크" title="디지털 포렌식의 5원칙에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-5%EC%9B%90%EC%B9%99">​</a></h3>
+<blockquote>
+<p>정재신연무</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정당성</td><td>적법한 절차에 따라 증거 수집</td><td>영장 발부 등</td></tr><tr><td>재현성</td><td>동일 환경에서 동일하게 재현</td><td>같은 조건, 결과</td></tr><tr><td>신속성</td><td>전 과정이 신속하게 처리</td><td>데이터 휘발성</td></tr><tr><td>연계성</td><td>전 단계에서 증거의 명확한 관리</td><td>문서화, 책임</td></tr><tr><td>무결성</td><td>증거의 위변조 없음을 증명</td><td>해시 비교 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-주요-유형">디지털 포렌식의 주요 유형<a class="hash-link" aria-label="디지털 포렌식의 주요 유형에 대한 직접 링크" title="디지털 포렌식의 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>저장 데이터 포렌식</td><td>미디어 포렌식</td><td>이미지, 영상 등 미디어 파일 추출</td></tr><tr><td>-</td><td>디스크 포렌식</td><td>삭제 파일, 포맷 영역 복구</td></tr><tr><td>-</td><td>DB 포렌식</td><td>DB, 메타데이터 로그 수집</td></tr><tr><td>휘발성 데이터 포렌식</td><td>메모리 포렌식</td><td>메모리, CPU캐시, 버퍼</td></tr><tr><td>-</td><td>SNS 포렌식</td><td>SNS 활동, 메세지, 교류 패턴</td></tr><tr><td>-</td><td>N/W 포렌식</td><td>트래픽, 악성코드, 해킹 분석</td></tr></tbody></table>
+<ul>
+<li>영구적이고 삭제 불가능하도록 전 과정에서 연계보관성 준수</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식-절차">디지털 포렌식 절차<a class="hash-link" aria-label="디지털 포렌식 절차에 대한 직접 링크" title="디지털 포렌식 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식-기술">디지털 포렌식 기술<a class="hash-link" aria-label="디지털 포렌식 기술에 대한 직접 링크" title="디지털 포렌식 기술에 대한 직접 링크" href="https://gracefullight.dev/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B8%B0%EC%88%A0">​</a></h2>
+<table><thead><tr><th>구분</th><th>주요 기술</th><th>내용</th></tr></thead><tbody><tr><td>데이터 수집 기술</td><td>디스크 이미징</td><td>저장 매체 사본생성, 원본 보존</td></tr><tr><td>-</td><td>활성시스템 조사</td><td>N/W 역추적, 웹캐시, 프록시 수집</td></tr><tr><td>-</td><td>프로파일링</td><td>SW역공학, 메모리, MBR 분석</td></tr><tr><td>데이터 분석 기술</td><td>타임라인 분석</td><td>시계열 분석, 생성, 사용시간 분석</td></tr><tr><td>-</td><td>디스크 브라우징</td><td>디스크 이미지 구조와 파일시스템 확인</td></tr><tr><td>-</td><td>데이터 카빙</td><td>디스크 비할당 영역에서 파일 복구</td></tr><tr><td>-</td><td>데이터 뷰잉</td><td>데이터 구조 파악, 시각화</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
+        <item>
+            <title><![CDATA[ISMS, ISMS-P]]></title>
+            <link>https://gracefullight.dev/pe/security/isms-ismsp/</link>
+            <guid>https://gracefullight.dev/pe/security/isms-ismsp/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:02:25 GMT</pubDate>
+            <description><![CDATA[ISMS, ISMS-P]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념">ISMS, ISMS-P 개념<a class="hash-link" aria-label="ISMS, ISMS-P 개념에 대한 직접 링크" title="ISMS, ISMS-P 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>정보통신망법, 개인정보보호법을 근거로 기업 및 기관의 정보보호 및 개인정보보호를 위한 일련의 조치와 활동을 KISA가 증명하는 제도</li>
+<li>체계적인 관리체계 적용으로 정보보호 및 개인정보관리 수준 향상, 각종 보안 사고시 신속한 대응 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념도-구성요소-적용대상">ISMS, ISMS-P 개념도, 구성요소, 적용대상<a class="hash-link" aria-label="ISMS, ISMS-P 개념도, 구성요소, 적용대상에 대한 직접 링크" title="ISMS, ISMS-P 개념도, 구성요소, 적용대상에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8C%80%EC%83%81">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념도">ISMS, ISMS-P 개념도<a class="hash-link" aria-label="ISMS, ISMS-P 개념도에 대한 직접 링크" title="ISMS, ISMS-P 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-구성요소-비교">ISMS, ISMS-P 구성요소 비교<a class="hash-link" aria-label="ISMS, ISMS-P 구성요소 비교에 대한 직접 링크" title="ISMS, ISMS-P 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-isms-p-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>ISMS</th><th>ISMS-P</th></tr></thead><tbody><tr><td>인증목적</td><td>정보보호를 위한 일련의 조치와 활동의 적합성</td><td>정보보호 및 개인정보보호 위한 조치와 활동의 적합성</td></tr><tr><td>대상조직</td><td>기존 ISMS 대상 기업, 개인정보 없거나 개인정보 흐름의 보호가 불필요한 기업</td><td>정보시스템에 개인정보보호 흐름 포함, 개인정보 처리 단계별 보안 강화가 필요한 기업</td></tr><tr><td>심사 항목</td><td>관리체계 수립 및 운영, 보호대책 요구사항</td><td>관리체계 수립 및 운영, 보호대책 요구사항, 개인정보처리 단계별 요구사항</td></tr><tr><td>최고책임자지정</td><td>정보보호 최고 책임자</td><td>정보보호 최고 책임자, 개인정보보호 책임자</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-적용-대상">ISMS-P 적용 대상<a class="hash-link" aria-label="ISMS-P 적용 대상에 대한 직접 링크" title="ISMS-P 적용 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-p-%EC%A0%81%EC%9A%A9-%EB%8C%80%EC%83%81">​</a></h3>
+<table><thead><tr><th>구분</th><th>대상</th><th>예시</th></tr></thead><tbody><tr><td>정보통신망 서비스 제공사</td><td>서울시, 광역시 에서 정보통신망 서비스를 제공하는 자 등</td><td>인터넷 사업자, 모바일 사업자</td></tr><tr><td>집적정보통신 시설 사업자</td><td>정보통신망법 제46조 따른 IDC 사업자</td><td>서버호스팅 사업자, 보안관제 사업자</td></tr><tr><td>병원</td><td>연매출 1,500억 이상 상급 종합 병원</td><td>병상 수, 서비스 기준 3년마다 재평가</td></tr><tr><td>학교</td><td>연매출 1,500억 또는 전년도 재학생 10,000명 이상</td><td>대학, 교육대학, 방송통신대학</td></tr><tr><td>정봍오신서비스 제공자</td><td>전년 매출 100억 이상, 전년도 3개월 간 DAU 100만 이상</td><td>포털, 전자상거래, 금융, 콘텐츠</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-인증-예외-사항">ISMS-P 인증 예외 사항<a class="hash-link" aria-label="ISMS-P 인증 예외 사항에 대한 직접 링크" title="ISMS-P 인증 예외 사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/isms-ismsp/#isms-p-%EC%9D%B8%EC%A6%9D-%EC%98%88%EC%99%B8-%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>정보통신서비스와 관련성이 낮은 ERP, 그룹웨어 등 내부 시스템과 영업, 마케팅 조직은 인증범위 제외</li>
+<li>금융권 제외</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
+        <item>
+            <title><![CDATA[NFT 취약점]]></title>
+            <link>https://gracefullight.dev/pe/security/nft-vulnerability/</link>
+            <guid>https://gracefullight.dev/pe/security/nft-vulnerability/</guid>
+            <pubDate>Wed, 10 Jul 2024 09:01:00 GMT</pubDate>
+            <description><![CDATA[NFT Vulnerability]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="nft의-개념">NFT의 개념<a class="hash-link" aria-label="NFT의 개념에 대한 직접 링크" title="NFT의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/nft-vulnerability/#nft%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="nft의-보안-취약점-개념도-주요-유형-대응방안">NFT의 보안 취약점 개념도, 주요 유형, 대응방안<a class="hash-link" aria-label="NFT의 보안 취약점 개념도, 주요 유형, 대응방안에 대한 직접 링크" title="NFT의 보안 취약점 개념도, 주요 유형, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/nft-vulnerability/#nft%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nft의-보안취약점-개념도">NFT의 보안취약점 개념도<a class="hash-link" aria-label="NFT의 보안취약점 개념도에 대한 직접 링크" title="NFT의 보안취약점 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/nft-vulnerability/#nft%EC%9D%98-%EB%B3%B4%EC%95%88%EC%B7%A8%EC%95%BD%EC%A0%90-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
-<li>무차별 대입 공격으로 탈취한 정보를 판매하여 2차 피해 발생</li>
+<li>NFT생태계의 복잡성으로 인해 다양한 유형의 취약점 존재</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-공격절차">크리덴셜 스터핑 공격절차<a class="hash-link" aria-label="크리덴셜 스터핑 공격절차에 대한 ��직접 링크" title="크리덴셜 스터핑 공격절차에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>수집</td><td>백도어 삽입</td><td>취약점 이용 백도어 삽입</td></tr><tr><td>-</td><td>개인정보 탈취</td><td>내부시스템의 계정, 인증 정보 탈취</td></tr><tr><td>공격</td><td>무차별 대입 공격</td><td>계정정보로 무차별 로그인, 권한 획득</td></tr><tr><td>-</td><td>중요정보 탈취</td><td>중요정보 탈취 후 협박, 유포, 금전 요구</td></tr><tr><td>반복</td><td>중요정보 판매</td><td>정보를 다크웹에 판매, 공개</td></tr><tr><td>-</td><td>추가피해 발생</td><td>공개된 정보로 추가 공격 수행</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑의-대응방안">크리덴셜 스터핑의 대응방안<a class="hash-link" aria-label="크리덴셜 스터핑의 대응방안에 대한 직접 링크" title="크리덴셜 스터핑의 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91%EC%9D%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>설명</th></tr></thead><tbody><tr><td>개인</td><td>사이트별 고유 계정 사용</td><td>동일 정보 사용 지양</td></tr><tr><td>-</td><td>다단계 인증 활성화</td><td>MFA 등 2단계 인증 활성화</td></tr><tr><td>-</td><td>회사 이메일 사용 지양</td><td>가입시 개인 이메일 사용</td></tr><tr><td>기업</td><td>보안 모니터링</td><td>트래픽 탐지로 동일 IP 차단</td></tr><tr><td>-</td><td>로그인 시도 제한</td><td>자동화 공격 방지</td></tr><tr><td>-</td><td>대응 계획 수립</td><td>개인 보안 조치, 주기적 교육</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nft-보안-취약점-주요-유형">NFT 보안 취약점 주요 유형<a class="hash-link" aria-label="NFT 보안 취약점 주요 유형에 대한 직접 링크" title="NFT 보안 취약점 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/nft-vulnerability/#nft-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>플랫폼 취약점</td><td>마켓플레이스 웹 취약점</td><td>해킹, 스캠 등</td></tr><tr><td>-</td><td>피싱, 사이트, 메일 등 정보 탈취</td><td>-</td></tr><tr><td>코드 취약점</td><td>스마트 컨트랙트 코드 오류, 개인 지갑 확장 프로그램 오류</td><td>악성코드 감염, 실행</td></tr><tr><td>키관리</td><td>개인 지갑 비밀번호, 복구구문 탈취</td><td>권한 상실, 도난</td></tr><tr><td>프로토콜 취약점</td><td>블록체인 네트워크 합의 알고리즘 결함</td><td>거래 무효화, 이중 지불 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nft-보안-취약점-대응방안">NFT 보안 취약점 대응방안<a class="hash-link" aria-label="NFT 보안 취약점 대응방안에 대한 직접 링크" title="NFT 보안 취약점 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/nft-vulnerability/#nft-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>스마트컨트랙트 코드 표준 준수 감사</td><td>ERC-721</td></tr><tr><td>-</td><td>신원 인증 강화, 거래소 신뢰도 평가</td><td>커뮤니티 관리</td></tr><tr><td>물리적</td><td>개인정보 암호화, 백업시스템 도입</td><td>데이터 기밀성, 무결성 확보</td></tr><tr><td>기술적</td><td>소유권 정보 일관성 유지</td><td>검증시스테 구현</td></tr><tr><td>-</td><td>안전한 합의 알고리즘 사용</td><td>지분증명</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/security</category>
+        </item>
+        <item>
+            <title><![CDATA[개인정보 안정성 확보 조치 기준]]></title>
+            <link>https://gracefullight.dev/pe/security/개인정보-안정성-확보-조치-기준/</link>
+            <guid>https://gracefullight.dev/pe/security/개인정보-안정성-확보-조치-기준/</guid>
+            <pubDate>Wed, 10 Jul 2024 08:21:46 GMT</pubDate>
+            <description><![CDATA[개인정보 안정성 확보 조치 기준]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안정성-확보-조치-기준-개념">개인정보 안정성 확보 조치 기준 개념<a class="hash-link" aria-label="개인정보 안정성 확보 조치 기준 개념에 대한 직접 링크" title="개인정보 안정성 확보 조치 기준 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>크리덴셜 스터핑 공격은 자동화되어있으므로, 트래픽 변화, 로그인 실패 빈도 증가 등 선행 징조 확인 필요</li>
+<li>개인정보의 분식, 유출, 위변조를 방지하고 안전성을 확보하기 위해 개인정보 처리자가 준수해야할 안전 조치 기준</li>
+<li>개인정보 보호법 29조, 30조 준수</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="크리덴셜-스터핑-대응시-고려사항">크리덴셜 스터핑 대응시 고려사항<a class="hash-link" aria-label="크리덴셜 스터핑 대응시 고려사항에 대한 직접 링크" title="크리덴셜 스터핑 대응시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/credential-stuffing/#%ED%81%AC%EB%A6%AC%EB%8D%B4%EC%85%9C-%EC%8A%A4%ED%84%B0%ED%95%91-%EB%8C%80%EC%9D%91%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안전성-확보조치-기준-구성-개정내용-적용방안">개인정보 안전성 확보조치 기준 구성, 개정내용, 적용방안<a class="hash-link" aria-label="개인정보 안전성 확보조치 기준 구성, 개정내용, 적용방안에 대한 직접 링크" title="개인정보 안전성 확보조치 기준 구성, 개정내용, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1-%EA%B0%9C%EC%A0%95%EB%82%B4%EC%9A%A9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안전성-확보조치-기준-구성">개인정보 안전성 확보조치 기준 구성<a class="hash-link" aria-label="개인정보 안전성 확보조치 기준 구성에 대한 직접 링크" title="개인정보 안전성 확보조치 기준 구성에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>관리적 지침</td><td>개인정보보호책임자</td><td>개인정보 관련 업무 전반 수행</td></tr><tr><td>-</td><td>개인정보 보호조직 구성</td><td>기관 환경 고려 자체 구성</td></tr><tr><td>-</td><td>접근 권한 관리</td><td>업무별 최소권한 부여</td></tr><tr><td>-</td><td>개인정보 취급자 교육</td><td>정기적 교육 실시</td></tr><tr><td>-</td><td>개인정보 유출사고 대응</td><td>유출사고시 대응 절차 마련</td></tr><tr><td>-</td><td>위험도 분석 및 대응</td><td>유출 위험원 식별, 평가 분석</td></tr><tr><td>기술적 지침</td><td>접근 통제</td><td>침입탐지, 차단</td></tr><tr><td>-</td><td>암호 조치</td><td>정보 자체 및 통신구간 암호화</td></tr><tr><td>-</td><td>접근기록 보관, 점검</td><td>개인정보 접근시 사유확인 기준</td></tr><tr><td>-</td><td>악성프로그램 방지</td><td>백신 SW프로그램 설치</td></tr><tr><td>물리적 지침</td><td>물리적 안전조치</td><td>전살실 출입통제 절차 수립</td></tr><tr><td>-</td><td>재해 ,재난 대비</td><td>백업 빛 복구 계획 수립</td></tr></tbody></table>
 <ul>
-<li>공격을 사전에 예방하기 위해 IP보안, 2단계 인증 등 사용성을 고려한 보안 정책 도입 필요</li>
+<li>개인정보 암호화 수준에 따라 추가 피해 방지</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안전성-확보조치-개정-내역">개인정보 안전성 확보조치 개정 내역<a class="hash-link" aria-label="개인정보 안전성 확보조치 개정 내역에 대한 직접 링크" title="개인정보 안전성 확보조치 개정 내역에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4%EC%A1%B0%EC%B9%98-%EA%B0%9C%EC%A0%95-%EB%82%B4%EC%97%AD">​</a></h3>
+<ul>
+<li>공공시스템 운영기관의 개인정보 안전성 확보조치 기준 마련</li>
+<li>100만명 이상 개인정보를 가지고 있거나, 개인정보취급자 수 200명 이상일 경우</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안전성-확보-조치-기준-적용방안">개인정보 안전성 확보 조치 기준 적용방안<a class="hash-link" aria-label="개인정보 안전성 확보 조치 기준 적용방안에 대한 직접 링크" title="개인정보 안전성 확보 조치 기준 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>정보전송 암호화</td><td>정보통신망 암호화 전송</td><td>N/W구간 암호화, TLS 1.3</td></tr><tr><td>-</td><td>DMZ 구간 암호화 저장</td><td>외부접근 가능구간 고려</td></tr><tr><td>정보저장 암호화</td><td>비밀번호 단방향 암호화</td><td>해시함수 사용, 위변조 방지</td></tr><tr><td>-</td><td>안전한 알고리즘 사용</td><td>AES256이상, 국내외 권고 준수</td></tr><tr><td>암호키 관리</td><td>키 관리 절차 수립</td><td>난수, 대칭, 비대칭키 관리 정책</td></tr><tr><td>-</td><td>보관, 파기 절차 수립</td><td>보관 기간 및 평문 파기 절차</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="개인정보-안전성-확보-조치시-고려사항">개인정보 안전성 확보 조치시 고려사항<a class="hash-link" aria-label="개인정보 안전성 확보 조치시 고려사항에 대한 직접 링크" title="개인정보 안전성 확보 조치시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%95%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98-%EA%B8%B0%EC%A4%80/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EC%A1%B0%EC%B9%98%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>업무 환경 및 시스템 구성을 고려하여 유출탐지, 차단 등 적절한 대응조치 수행</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
