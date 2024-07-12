@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.03d0a511.css">
-<script src="/en/assets/js/runtime~main.728d1b3a.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.47b0e598.js" defer="defer"></script>
 <script src="/en/assets/js/main.2c2ca358.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -163,8 +163,8 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="로드밸런서의-구성요소">로드밸런서의 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#로드밸런서의-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>유형</td><td>L4 로드밸런서</td><td>네트워크 계층이나 전송계층 정보로 부하 분산</td></tr><tr><td>-</td><td>L7 로드밸런서</td><td>응용 계층에서 헤더, 쿠키 등 요청 기반 정보로 부하 분산</td></tr><tr><td>알고리즘</td><td>Round Robin</td><td>순차, 순환, 응답시간 빠르고 구성이 간편</td></tr><tr><td>-</td><td>Least Connection</td><td>백엔드 서버 중 활성화 된 연결 계산, 가장 적은 커넥션을 가진 서버로 로드 밸런싱</td></tr><tr><td>-</td><td>Response Time</td><td>가장 빠른 응답 시간을 제공하는 서버로 로드 밸런싱</td></tr><tr><td>-</td><td>Hashing</td><td>TCP/UDP 연결시 각 클라이언트에 대한 해시 생성하여 동일 서버 연결, 세션 유지 가능</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-ca/">pe/ca</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/architecture/spring-boot/">스프링 부트</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-07-01T08:47:14.918Z">July 1, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="스프링부트의-개념">스프링부트의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#스프링부트의-개념">​</a></h2>
 <ul>
-<li>스프링 프레임워크를 기반으로 하여 쉽게 독립 실행형 어플리케이션을 만들 수 있도록 도와주는 오픈소스 프레임워크</li>
-<li>스프링 프레임워크의 복잡한 설정과 구성 문제를 해결하기 위해 등장</li>
+<li>스프링 프레임워크를 기반으로 하여 쉽게 <strong>독립 실행형 어플리케이션</strong>을 만들 수 있도록 도와주는 오픈소스 프레임워크</li>
+<li>스프링 프레임워크의 <strong>복잡한 설정과 구성 문제를 해결</strong>하기 위해 등장</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="스프링부트의-구성도-구성요소-비교">스프링부트의 구성도, 구성요소, 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#스프링부트의-구성도-구성요소-비교">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="스프링부트의-구성도">스프링부트의 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#스프링부트의-구성도">​</a></h3>
@@ -183,25 +183,25 @@
 <!-- -->
 <ul>
 <li>물리적인 자원들을 논리적으로 표현해 효율적으로 사용하고 관리하기 위한 기술</li>
-<li>클라우드 전환으로 자원활용률, 보안성, 확장성 높은 가상화 기술로 서버 제공, 논리적 투명성으로 사용자는 물리적 자원의 세부사항 미고려</li>
+<li>클라우드 전환으로 자원활용률, 보안성, 확장성 높은 가상화 기술로 서버 제공, <strong>논리적 투명성</strong>으로 사용자는 물리적 자원의 세부사항 미고려</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="vm-container의-개념도-핵심요소-적용방안">VM, Container의 개념도, 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#vm-container의-개념도-핵심요소-적용방안">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="vm-container-개념도">VM, Container 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#vm-container-개념도">​</a></h3>
 <!-- -->
 <ul>
-<li>VM: 하이퍼바이저를 통해 물리자원을 추상화한 Guest OS기반 가상화</li>
-<li>Container: Host OS 커널 통해 격리된 컨테이너를 제공하는 가상화</li>
+<li>VM: <strong>하이퍼바이저</strong>를 통해 물리자원을 추상화한 <strong>Guest OS기반</strong> 가상화</li>
+<li>Container: <strong>Host OS 커널</strong> 통해 격리된 컨테이너를 제공하는 가상화</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="vm-container-핵심요소-비교">VM, Container 핵심요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#vm-container-핵심요소-비교">​</a></h3>
 <table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>핵심기술</td><td>하이퍼바이저, VM스냅샷</td><td>컨테이너, 네임스페이스, CGROUP</td></tr><tr><td>환경</td><td>다양한 OS지원, 독점적 자원할당</td><td>단일 OS지원, 호스트OS커널 공유</td></tr><tr><td>장점</td><td>강한 보안성, 장애 격리, 다양한 OS 실행</td><td>빠른 부트시간, 이미지 경량화, 자원사용 효율성</td></tr><tr><td>단점</td><td>높은 자원 소모, OS 라이센스 비용</td><td>커널 공유로 인한 낮은 보안성, 호스트OS 종속성</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="vm-container-적용방안">VM, Container 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#vm-container-적용방안">​</a></h3>
-<table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>보안 및 격리</td><td> 높은 보안성과 격리성이 필요한 경우</td><td>프로세스 수준 격리와 빠른 복구가 필요한 경우</td></tr><tr><td>CI/CD</td><td>DevOps환경에서 다양한 운영체제 테스트 시나리오 자동화</td><td>IaC 기반, GitOps의 지속적 통합, 배포</td></tr><tr><td>적합 환경</td><td>기존, 레거시, 모놀리스</td><td>클라우드 네이티브</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>VM</th><th>Container</th></tr></thead><tbody><tr><td>보안 및 격리</td><td>높은 보안성과 격리성이 필요한 경우</td><td>프로세스 수준 격리와 빠른 복구가 필요한 경우</td></tr><tr><td>CI/CD</td><td>DevOps환경에서 다양한 운영체제 테스트 시나리오 자동화</td><td>IaC 기반, GitOps의 지속적 통합, 배포</td></tr><tr><td>적합 환경</td><td>기존, 레거시, 모놀리스</td><td>클라우드 네이티브</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="가상화시-고려사항">가상화시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#가상화시-고려사항">​</a></h2>
 <ul>
 <li>이미지, 스냅샷 레지스트리 관리와 보안 스캐닝을 통해 취약점 사전 조치 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-ca/">pe/ca</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/architecture/website-optimization/">웹 기반 서비스 성능관리, 웹 최적화</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-06-30T14:29:32.358Z">June 30, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="웹-최적화의-개념">웹 최적화의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#웹-최적화의-개념">​</a></h2>
 <ul>
-<li>웹 페이지의 로딩 속도, 응답속도 등 전반적인 성능을 향상시켜 사용자 경험을 개선하는 활동</li>
+<li>웹 페이지의 로딩 속도, 응답속도 등 전반적인 <strong>성능을 향상</strong>시켜 <strong>사용자 경험을 개선</strong>하는 활동</li>
 <li>페이지 로드가 길어지면 이탈률 증가, SEO 지표 증가로 검색 우선순위 개선, 대역폭 사용 감소로 비용 절감</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="웹-성능-저하요인의-개념도-세부요인-해결방안">웹 성능 저하요인의 개념도, 세부요인, 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#웹-성능-저하요인의-개념도-세부요인-해결방안">​</a></h2>
@@ -225,7 +225,7 @@
 <ul>
 <li>뱅크0 접근, 뱅크0 읽기 및 뱅크1 접근 순으로 병렬 접근</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="메모리-인터리빙의-유형">메모리 인터리빙의 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#메모리-인터리빙의-유형">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="메모리-인터리빙의-유형">  메모리 인터리빙의 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#메모리-인터리빙의-유형">​</a></h3>
 <table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>상위 인터리빙</td><td>-</td><td>주소의 상위비트로 모듈 선택, 순차적, 에러시 하나의 모듈 영향</td></tr><tr><td>하위 인터리빙</td><td>-</td><td>주소의 하위비트로 모듈 선택, 다수의 모듈 동시 접근, 에러 전파</td></tr><tr><td>혼합 인터리빙</td><td>-</td><td>모듈을 뱅크로 그룹화 , 뱅크 선택시 상위 인터리빙, 뱅크 내 모듈 선택시 하위 인터리빙</td></tr></tbody></table>
 <!-- -->
 <!-- -->
@@ -237,7 +237,7 @@
 <li>메모리 접근 패턴, 시스템 성능 요구사항, 비용, 복잡도 등을 고려하여 최적의 인터리빙 방식 선택</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-ca/">pe/ca</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/architecture/정보시스템-하드웨어-규모산정-지침/">정보시스템 하드웨어 규모산정 지침</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-06-30T13:34:47.878Z">June 30, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정-지침-개념">정보시스템 하드웨어 규모산정 지침 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정-지침-개념">​</a></h2>
 <ul>
-<li>정보시스템 구축 시 필요한 하드웨어 자원의 적정 규모를 산정하기 위한 지침으로 시스템 성능 요구사항을 충족하면서 비용 효율적 H/W 자원을 도입학리 위해 사용</li>
+<li>정보시스템 구축 시 필요한 <strong>하드웨어 자원</strong>의 <strong>적정 규모를 산정</strong>하기 위한 지침으로 시스템 성능 요구사항을 충족하면서 비용 효율적 H/W 자원을 도입하기 위해 사용</li>
 <li>경험기반 부정확한 규모산정 사례 증가, H/W 성능 향상으로 인한 기존 표준 개선 요구, 정보화 투자 및 효율 제고</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">정보시스템 하드웨어 규모산정 개념도, 구성요소, 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정-개념도-구성요소-주요기법">​</a></h2>
@@ -249,7 +249,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정-구성요소">정보시스템 하드웨어 규모산정 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>용량관리</td><td>요구사항 충족을 위해 용량계획수립, 비용-용량 균형 제고</td><td>조직, 지속적</td></tr><tr><td>용량계획</td><td>시스템 성능 요구사항과 성능을 결정하기 위한 계획</td><td>조직, 시스템, 지속적</td></tr><tr><td>규모산정</td><td>기본적인 용량과 성능 요구사항이 제시되었을 때, 시스템 요구사항으로 반영하는 것</td><td>시스템, 일시적</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정-주요기법">정보시스템 하드웨어 규모산정 주요기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정-주요기법">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>수식계산법</td><td>유저 수 등 규모산정 요소 기반으로 용량 수치를 계산하고 보정하는 방법</td><td>  근거 명확, 보정치 오류 가능성</td></tr><tr><td>참조법</td><td>업무량 등 기존 데이터를 기반으로 대략적인 시스템의 규모를 비교하여 산정</td><td>비교적 안정, 근거 불명확</td></tr><tr><td>시뮬레이션법</td><td>대상 업무에 대한 작업 부하를 모델링, 시뮬레이션하여 규모 산정</td><td>높은 정확성, 시간 및 비용 소요</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><strong>수식계산법</strong></td><td>유저 수 등 규모산정 요소 기반으로 용량 수치를 계산하고 보정하는 방법</td><td>근거 명확, 보정치 오류 가능성</td></tr><tr><td><strong>참조법</strong></td><td>업무량 등 기존 데이터를 기반으로 대략적인 시스템의 규모를 비교하여 산정</td><td>비교적 안정, 근거 불명확</td></tr><tr><td><strong>시뮬레이션법</strong></td><td>대상 업무에 대한 작업 부하를 모델링, 시뮬레이션하여 규모 산정</td><td>높은 정확성, 시간 및 비용 소요</td></tr></tbody></table>
 <ul>
 <li>공공부문에선 현실적으로 수식계산법을 사용하나, 다른 방법도 필요시 고려</li>
 </ul>
@@ -266,7 +266,7 @@
 <li>참조 모델 결정 및 서버 규모 산정</li>
 <li>참조 모델별 가중치 적용</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사  항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정시-고려사항">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-하드웨어-규모산정시-고려사항">정보시스템 하드웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#정보시스템-하드웨어-규모산정시-고려사항">​</a></h2>
 <ul>
 <li>구축 시스템의 중장기적 측면 고려</li>
 <li>시스템 전략에 맞는 규모 여부 파악</li>
@@ -274,7 +274,7 @@
 <li>기종별 슬롯 수 확인</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-ca/">pe/ca</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/architecture/memory-and-logic-chips/">메모리 반도체, 비메모리 반도체</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-06-30T13:17:58.762Z">June 30, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="메모리-반도체-비메모리-반도체-개념">메모리 반도체, 비메모리 반도체 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe/page/3/#메모리-반도체-비메모리-반도체-개념">​</a></h2>
 <ul>
-<li>메모리 반도체: 저장방식에 따라 휘발 성 RAM, 비휘발성 ROM으로 구분되는 정볼르 저장하기 위한 반도체</li>
+<li>메모리 반도체: 저장방식에 따라 휘발성 RAM, 비휘발성 ROM으로 구분되는 정볼르 저장하기 위한 반도체</li>
 <li>비메모리 반도체: CPU, AP, 센서 등의 정보를 연산하고 처리하기 위한 시스템 반도체</li>
 <li>메모리 반도체는 단순구조로 저가, 비메모리 반도체는 복잡한 설계가 필요하여 고가 형성</li>
 </ul>
@@ -299,7 +299,7 @@
 </li>
 <li>전략<!-- -->
 <ul>
-<li>R&amp;D   투자 강화</li>
+<li>R&amp;D 투자 강화</li>
 <li>글로벌 파트너쉽</li>
 </ul>
 </li>
