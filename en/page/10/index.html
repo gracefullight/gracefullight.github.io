@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.03d0a511.css">
-<script src="/en/assets/js/runtime~main.80b34a20.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.12990885.js" defer="defer"></script>
 <script src="/en/assets/js/main.da007d16.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -162,8 +162,8 @@
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-algorithm/">pe/algorithm</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/algorithm/decision-tree/">의사결정나무</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-05-03T11:53:34.498Z">May 3, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-개요">의사결정나무 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-개요">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-개념">의사결정나무 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-개념">​</a></h3>
 <ul>
-<li>주어진 입력값들의 조합을 <strong>의사결정규칙</strong>에 따라 <strong>출력값을 예측</strong>하는 모형</li>
-<li><strong>의사결정규칙</strong>을 트리구조로 나타내어 <strong>분류와 예측</strong>을 수행하는 분석 방법</li>
+<li>주어진 입력값들의 조합을 <mark class="flexible-marker flexible-marker-default">의사결정규칙</mark>에 따라 <mark class="flexible-marker flexible-marker-default">출력값을 예측</mark>하는 모형</li>
+<li><mark class="flexible-marker flexible-marker-default">의사결정규칙</mark>을 트리구조로 나타내어 <mark class="flexible-marker flexible-marker-default">분류와 예측</mark>을 수행하는 분석 방법</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-구성-유형-절차">의사결정나무 구성, 유형, 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-구성-유형-절차">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-구성">의사결정나무 구성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-구성">​</a></h3>
@@ -177,10 +177,10 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-유형">의사결정나무 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-유형">​</a></h3>
 <ul>
-<li>분류트리: <strong>범주형 변수</strong>를 예측하기 위해 사용되는 트리 모델, 데이터를 여러 범주로 분류</li>
-<li>회귀트리: <strong>연속형 변수</strong>의 값을 예측하기 위한 트리모델</li>
+<li>분류트리: <mark class="flexible-marker flexible-marker-default">범주형 변수</mark>를 예측하기 위해 사용되는 트리 모델, 데이터를 여러 범주로 분류</li>
+<li>회귀트리: <mark class="flexible-marker flexible-marker-default">연속형 변수</mark>의 값을 예측하기 위한 트리모델</li>
 </ul>
-<table><thead><tr><th>구분</th><th>분류트리</th><th>회귀트리</th></tr></thead><tbody><tr><td>대상</td><td>범주형 변수 대상</td><td>연속형 변수 대상</td></tr><tr><td>특징</td><td>불순도를 기준으로 최적 분류 결정</td><td>분산을 최소화하는 방향으로 분할</td></tr><tr><td>평가방법</td><td><strong>지니지수, 엔트로피</strong></td><td><strong>오차제곱합</strong></td></tr><tr><td>사용시기</td><td>명확한 범주를 가진 데이터 분류</td><td>연속적 수치 예측, 트렌드 예측</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>분류트리</th><th>회귀트리</th></tr></thead><tbody><tr><td>대상</td><td>범주형 변수 대상</td><td>연속형 변수 대상</td></tr><tr><td>특징</td><td>불순도를 기준으로 최적 분류 결정</td><td>분산을 최소화하는 방향으로 분할</td></tr><tr><td>평가방법</td><td><mark class="flexible-marker flexible-marker-default">지니지수, 엔트로피</mark></td><td><mark class="flexible-marker flexible-marker-default">오차제곱합</mark></td></tr><tr><td>사용시기</td><td>명확한 범주를 가진 데이터 분류</td><td>연속적 수치 예측, 트렌드 예측</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-절차">의사결정나무 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#의사결정나무-절차">​</a></h3>
 <!-- -->
 <ul>
@@ -306,7 +306,7 @@
 <li>마케팅</li>
 <li>서비스</li>
 </ul>
-<table><thead><tr><th>구분</th><th>ERP</th><th>MES</th><th>SCM</th><th>CRM</th></tr></thead><tbody><tr><td>목적</td><td>전사지원</td><td>생산관리</td><td>물류/공급망관리</td><td>고객관리</td></tr><tr><td>대상</td><td>전사활동</td><td>공정</td><td>유통</td><td>고객</td></tr><tr><td>활동</td><td>전사자원통합</td><td>통합 생산</td><td>공급망 최적화</td><td>마케팅, 서비스</td></tr><tr><td>가치사슬</td><td>주요+보조</td><td>주요</td><td>주요</td><td>주요</td></tr><tr><td>신기술</td><td>DX</td><td>디지털트윈</td><td>빅데이터</td><td>O2O</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>ERP</th><th>MES</th><th>SCM</th><th>CRM</th></tr></thead><tbody><tr><td>목적</td><td>전사지원</td><td>생산관리</td><td>물류/공급망관리</td><td>고객관리</td></tr><tr><td>대상</td><td>전사활동</td><td>공정</td><td>유통</td><td>  고객</td></tr><tr><td>활동</td><td>전사자원통합</td><td>통합 생산</td><td>공급망 최적화</td><td>마케팅, 서비스</td></tr><tr><td>가치사슬</td><td>주요+보조</td><td>주요</td><td>주요</td><td>주요</td></tr><tr><td>신기술</td><td>DX</td><td>디지털트윈</td><td>빅데이터</td><td>O2O</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="보조활동">보조활동<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#보조활동">​</a></h3>
 <ul>
 <li>기업 인프라</li>
@@ -343,7 +343,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-인증-체계">ISMS-P 인증 체계<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#isms-p-인증-체계">​</a></h3>
 <ul>
 <li>정책기관: 과기정통부, 개인정보보호위원회</li>
-<li>인증기관: 한국 인터넷진흥원(KISA), 금융보안원(FSI)</li>
+<li>인증기관: 한국인터넷진흥원(KISA), 금융보안원(FSI)</li>
 <li>심사기관: 한국정보통신진흥협회(KAIT), 한국정보통신기술협회(TTA), 개인정보보호협회(OPA), 차세대정보보안인증원(NISC)</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-인증-기준">ISMS-P 인증 기준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#isms-p-인증-기준">​</a></h3>
@@ -375,7 +375,7 @@
 <li>개인정보 보유 및 이용 시 보호조치</li>
 <li>개인정보 제공 시 보호조치</li>
 <li>개인정보 파기 시 보호조치</li>
-<li>정보주체 권리  보호</li>
+<li>정보주체 권리 보호</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="참조">참조<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/10/#참조">​</a></h2>
 <ul>
