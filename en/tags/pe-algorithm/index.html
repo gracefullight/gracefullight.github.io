@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.03d0a511.css">
-<script src="/en/assets/js/runtime~main.9c09ce11.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.61da0c48.js" defer="defer"></script>
 <script src="/en/assets/js/main.46ded3a2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -82,13 +82,13 @@
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe-algorithm/">pe/algorithm</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/algorithm/autogpt/">AutoGPT</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-05-06T13:38:33.513Z">May 6, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-개요">AutoGPT 개요<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-개요">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-개념">AutoGPT 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-개념">​</a></h3>
 <ul>
-<li>GPT-4 기반으로 질문의 태스크를 생성하고, 에이전트는 그 과정을 반복하여 점진적으로 목표를 달성하는 기술</li>
+<li>GPT-4 기반으로 질문의 ==태스크를 생성==하고, ==에이전트==는 그 과정을 ==반복==하여 ==점진적==으로 ==목표를 달성==하는 기술</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-구성도-및-구성요소">AutoGPT 구성도 및 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-구성도-및-구성요소">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-구성도">AutoGPT 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-구성도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-구성요소">AutoGPT 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-구성요소">​</a></h3>
-<table><thead><tr><th>구성요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>사용자 입력</td><td>AutoGPT에 제공되는 목표 또는 작업</td><td>이메일 자동 답변 생성</td></tr><tr><td>LLM</td><td>태스크를 생성하기 위해 사용되는 언어 모델</td><td>GPT-4</td></tr><tr><td>에이전트</td><td>사용자 입력을 기반으로 태스크를 수행, 피드백 루프를 통해 결과를   개선</td><td>이메일 자동 답변 생성 에이전트</td></tr><tr><td>피드백 루프</td><td>작업의 결과를 반복적으로 입력으로 사용하여 결과를 개선</td><td>결과 수정 및 재입력</td></tr></tbody></table>
+<table><thead><tr><th>구성요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>사용자 입력</td><td>AutoGPT에 제공되는 목표 또는 작업</td><td>이메일 자동 답변 생성</td></tr><tr><td>LLM</td><td>태스크를 생성하기 위해 사용되는 언어 모델</td><td>GPT-4</td></tr><tr><td>에이전트</td><td>사용자 입력을 기반으로 태스크를 수행, 피드백 루프를 통해 결과를 개선</td><td>이메일 자동 답변 생성 에이전트</td></tr><tr><td>피드백 루프</td><td>작업의 결과를 반복적으로 입력으로 사용하여 결과를 개선</td><td>결과 수정 및 재입력</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-활용">AutoGPT 활용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-활용">​</a></h2>
 <table><thead><tr><th>적용 분야</th><th>활용 예시</th><th>설명</th></tr></thead><tbody><tr><td>소프트웨어 개발</td><td>자동 코드 생성</td><td>어플리케이션 전체 자동 생성</td></tr><tr><td>디지털 마케팅</td><td>콘텐츠 추천 시스템</td><td>사용자의 활동을 기반한 개인화된 콘텐츠를 추천</td></tr><tr><td>정보 관리</td><td>자동 문서 요약</td><td>긴 문서를 요약하여 핵심 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="autogpt-성공포인트">AutoGPT 성공포인트<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#autogpt-성공포인트">​</a></h2>
@@ -116,7 +116,7 @@
 <table><thead><tr><th>구분</th><th>설명</th><th>특징</th></tr></thead><tbody><tr><td>웹인터페이스</td><td>질의 가능한 웹 인터페이스</td><td>챗봇 형태로 사용</td></tr><tr><td>벡터데이터베이스</td><td>임베딩 데이터 저장</td><td>최신/프라이빗 데이터 반환</td></tr><tr><td>LLM</td><td>자연어처리, 일반 지식 응답</td><td>임베딩 데이터 포함 응답</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="rag-절차">RAG 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#rag-절차">​</a></h3>
 <ul>
-<li>외부 데이터 생성 및 준비: 텍스트, 이미지, 파일 등 다양한 소스로 임베딩 후 벡터DB 저장</li>
+<li>외부 데이터 생성 및 준 비: 텍스트, 이미지, 파일 등 다양한 소스로 임베딩 후 벡터DB 저장</li>
 <li>관련 정보 검색: 질문을 기반으로 벡터 유사도 기반 데이터 검색</li>
 <li>LLM 프롬프트 확장: 검색된 데이터는 LLM 프롬프트와 결합하여 응답 반환</li>
 <li>외부 데이터 업데이트: 벡터DB에 새로운 데이터를 주기적으로 업데이트하여 최신화</li>
@@ -134,7 +134,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="sllm-배경">sLLM 배경<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#sllm-배경">​</a></h3>
 <ul>
-<li>LLM은 거대 언어모델로 천문학적인   비용과 학습 시간 필요</li>
+<li>LLM은 거대 언어모델로 천문학적인 비용과 학습 시간 필요</li>
 <li>매개변수를 줄이고, 미세조정하여 정확도 향상</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="llm과-sllm-비교">LLM과 sLLM 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#llm과-sllm-비교">​</a></h2>
@@ -146,7 +146,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="svm의-개념도-문제-해결방법-장단점">SVM의 개념도, 문제 해결방법, 장단점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#svm의-개념도-문제-해결방법-장단점">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="개념도">개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#개념도">​</a></h3>
 <table><thead><tr><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="SVM" src="/en/assets/images/svm-linear-cba32516a64a0791673f89e0edf490e5.webp" width="921" height="473" class="img_sHug"></td><td><img decoding="async" loading="lazy" alt="SVM" src="/en/assets/images/svm-non-linear-4afecde40c5b80af508ac09467bd96a0.webp" width="838" height="334" class="img_sHug"></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="문제-해결-방법">문제 해결 방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#문제-해결-방법">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="문제-해결-방법">문제 해결 방  법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#문제-해결-방법">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형 문제</th><th>비선형 문제</th></tr></thead><tbody><tr><td>특징</td><td>초평면 분리 가능</td><td>초평면 분리 불가</td></tr><tr><td>해결방법</td><td>마진을 최대화하는 서포트벡터 탐색 후 분류</td><td>커널 트릭 사용하여 데이터 고차원 매핑</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="선형-문제">선형 문제<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#선형-문제">​</a></h3>
 <ul>
@@ -187,7 +187,7 @@
 <li>분류트리: <strong>범주형 변수</strong>를 예측하기 위해 사용되는 트리 모델, 데이터를 여러 범주로 분류</li>
 <li>회귀트리: <strong>연속형 변수</strong>의 값을 예측하기 위한 트리모델</li>
 </ul>
-<table><thead><tr><th>구분</th><th>분류트리</th><th>회귀트리</th></tr></thead><tbody><tr><td>대상</td><td>범주형 변수 대상</td><td>연속형 변수 대상</td></tr><tr><td>특징</td><td>불순도를 기준으로 최적 분류 결정</td><td>분산을 최소화하는 방향으로 분할</td></tr><tr><td>평가방법</td><td><strong>지니지수, 엔트로피</strong></td><td><strong>오차제곱합</strong></td></tr><tr><td>사용  시기</td><td>명확한 범주를 가진 데이터 분류</td><td>연속적 수치 예측, 트렌드 예측</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>분류트리</th><th>회귀트리</th></tr></thead><tbody><tr><td>대상</td><td>범주형 변수 대상</td><td>연속형 변수 대상</td></tr><tr><td>특징</td><td>불순도를 기준으로 최적 분류 결정</td><td>분산을 최소화하는 방향으로 분할</td></tr><tr><td>평가방법</td><td><strong>지니지수, 엔트로피</strong></td><td><strong>오차제곱합</strong></td></tr><tr><td>사용시기</td><td>명확한 범주를 가진 데이터 분류</td><td>연속적 수치 예측, 트렌드 예측</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="의사결정나무-절차">의사결정나무 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/tags/pe-algorithm/#의사결정나무-절차">​</a></h3>
 <!-- -->
 <ul>
