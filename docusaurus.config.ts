@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import dotenv from "dotenv";
 import { themes } from "prism-react-renderer";
 import rehypeKatex from "rehype-katex";
+import remarkFlexibleMarkers from "remark-flexible-markers";
 import remarkMath from "remark-math";
 // Note: type annotations allow type checking and IDEs autocompletion
 dotenv.config();
@@ -52,7 +53,7 @@ const config: Config = {
             type: "all",
             limit: 10,
           },
-          remarkPlugins: [remarkMath],
+          remarkPlugins: [remarkMath, remarkFlexibleMarkers],
           rehypePlugins: [rehypeKatex],
         },
         theme: {
