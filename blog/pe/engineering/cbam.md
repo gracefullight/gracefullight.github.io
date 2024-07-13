@@ -15,11 +15,11 @@ tags:
 ### CBAM의 개념
 
 - Cost Benefit Analysis Method
-- 시스템 아키텍처 의사결정에 있어 시스템 엔지니어와 이해관계자들이 잠재적 비용과 편익을 비교한 SW아키텍처 평가모델
+- 시스템 아키텍처 의사결정에 있어 시스템 엔지니어와 이해관계자들이 ==잠재적 비용과 편익==을 비교한 ==SW아키텍처 평가모델==
 
 ### CBAM의 배경
 
-- SAAM, ATAM의 기술적 측면만 고려한 평가에서 기존 아키텍처 평가 방법의 한계로 비용 측면까지 고려 필요.
+- SAAM, ATAM의 기술적 측면만 고려한 평가에서 기존 아키텍처 평가 방법의 한계로 ==비용 측면까지 고려== 필요.
   - SAAM: Software Architecture Analysis Method
   - ATAM: Architecture Trade-off Analysis Method
 
