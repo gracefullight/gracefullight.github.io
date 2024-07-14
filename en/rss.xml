@@ -4,10 +4,20 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 14 Jul 2024 14:41:21 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Jul 2024 14:50:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ISO/IEC Standards]]></title>
+            <link>https://gracefullight.dev/en/2024/07/14/iso-iec-standards/</link>
+            <guid>https://gracefullight.dev/en/2024/07/14/iso-iec-standards/</guid>
+            <pubDate>Sun, 14 Jul 2024 14:50:32 GMT</pubDate>
+            <description><![CDATA[주요 ISO/IEC 표준]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="주요-iso-표준">주요 ISO 표준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/2024/07/14/iso-iec-standards/#%EC%A3%BC%EC%9A%94-iso-%ED%91%9C%EC%A4%80">​</a></h2>
+<table><thead><tr><th>표준</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>ISO 12119</td><td>테스트 품질요구사항</td><td>제품설명서, 사용자문서, SW제품 및 데이터</td></tr><tr><td>ISO 12207</td><td>SDLC</td><td>기본, 지원, 조직 생명주기</td></tr><tr><td>ISO 14143</td><td>FP</td><td>기능점수, EI, EO, EQ, ILF, EIF</td></tr><tr><td>ISO 15504</td><td>SPICE</td><td>주요, 지원, 조직 프로세스</td></tr><tr><td>ISO 19770</td><td>SAM</td><td>소프트웨어 자산 관리, 라이선스 관리</td></tr><tr><td>ISO 20000</td><td>ITSM</td><td>서비스 관리체계 구축</td></tr><tr><td>ISO 25000</td><td>SQUARE</td><td>SW 품질 모델, 품질 측정, 품질 요구, 품질 평가, 기신사효유이호보, 효생안만</td></tr><tr><td>ISO 26262</td><td>자동차 안전</td><td>QM, ASIL A~D, AUTOSAR</td></tr><tr><td>ISO 29119</td><td>테스트</td><td>V&amp;V, 테스트 프로세스, 문서화, 기법, 키워드주도 테스팅</td></tr><tr><td>ISO 31000</td><td>위험관리</td><td>식별, 분석, 평가, 처리, 회전감수</td></tr><tr><td>IEC 61508</td><td>전기, 전자, 프로그램 가능한 전자시스템 기능안전</td><td>SIL 1~4</td></tr></tbody></table>]]></content:encoded>
+            <category>me</category>
+        </item>
         <item>
             <title><![CDATA[ATAM, CBAM 비교]]></title>
             <link>https://gracefullight.dev/en/pe/engineering/atam-cbam/</link>
@@ -178,7 +188,7 @@
 <ul>
 <li>SDN, IAM 등을 활용하여 최소 권한 부여</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-고려사항">클라우드 보안 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B3%A0%EF%BF%BD%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-고려사항">클라우드 보안 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>각 국의 산업 표준 및 법적 요구사항 준수 필요</li>
 </ul>]]></content:encoded>
@@ -239,32 +249,6 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식-기술">디지털 포렌식 기술<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B8%B0%EC%88%A0">​</a></h2>
 <table><thead><tr><th>구분</th><th>주요 기술</th><th>내용</th></tr></thead><tbody><tr><td>데이터 수집 기술</td><td>디스크 이미징</td><td>저장 매체 사본생성, 원본 보존</td></tr><tr><td>-</td><td>활성시스템 조사</td><td>N/W 역추적, 웹캐시, 프록시 수집</td></tr><tr><td>-</td><td>프로파일링</td><td>SW역공학, 메모리, MBR 분석</td></tr><tr><td>데이터 분석 기술</td><td>타임라인 분석</td><td>시계열 분석, 생성, 사용시간 분석</td></tr><tr><td>-</td><td>디스크 브라우징</td><td>디스크 이미지 구조와 파일시스템 확인</td></tr><tr><td>-</td><td>데이터 카빙</td><td>디스크 비할당 영역에서 파일 복구</td></tr><tr><td>-</td><td>데이터 뷰잉</td><td>데이터 구조 파악, 시각화</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[ISMS, ISMS-P]]></title>
-            <link>https://gracefullight.dev/en/pe/security/isms-ismsp/</link>
-            <guid>https://gracefullight.dev/en/pe/security/isms-ismsp/</guid>
-            <pubDate>Wed, 10 Jul 2024 09:02:25 GMT</pubDate>
-            <description><![CDATA[ISMS, ISMS-P]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념">ISMS, ISMS-P 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>정보통신망법, 개인정보보호법을 근거로 기업 및 기관의 정보보호 및 개인정보보호를 위한 일련의 조치와 활동을 KISA가 증명하는 제도</li>
-<li>체계적인 관리체계 적용으로 정보보호 및 개인정보관리 수준 향상, 각종 보안 사고시 신속한 대응 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념도-구성요소-적용대상">ISMS, ISMS-P 개념도, 구성요소, 적용대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8C%80%EC%83%81">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-개념도">ISMS, ISMS-P 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-isms-p-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-isms-p-구성요소-비교">ISMS, ISMS-P 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-isms-p-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>ISMS</th><th>ISMS-P</th></tr></thead><tbody><tr><td>인증목적</td><td>정보보호를 위한 일련의 조치와 활동의 적합성</td><td>정보보호 및 개인정보보호 위한 조치와 활동의 적합성</td></tr><tr><td>대상조직</td><td>기존 ISMS 대상 기업, 개인정보 없거나 개인정보 흐름의 보호가 불필요한 기업</td><td>정보시스템에 개인정보보호 흐름 포함, 개인정보 처리 단계별 보안 강화가 필요한 기업</td></tr><tr><td>심사 항목</td><td>관리체계 수립 및 운영, 보호대책 요구사항</td><td>관리체계 수립 및 운영, 보호대책 요구사항, 개인정보처리 단계별 요구사항</td></tr><tr><td>최고책임자지정</td><td>정보보호 최고 책임자</td><td>정보보호 최고 책임자, 개인정보보호 책임자</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-적용-대상">ISMS-P 적용 대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-p-%EC%A0%81%EC%9A%A9-%EB%8C%80%EC%83%81">​</a></h3>
-<table><thead><tr><th>구분</th><th>대상</th><th>예시</th></tr></thead><tbody><tr><td>정보통신망 서비스 제공사</td><td>서울시, 광역시 에서 정보통신망 서비스를 제공하는 자 등</td><td>인터넷 사업자, 모바일 사업자</td></tr><tr><td>집적정보통신 시설 사업자</td><td>정보통신망법 제46조 따른 IDC 사업자</td><td>서버호스팅 사업자, 보안관제 사업자</td></tr><tr><td>병원</td><td>연매출 1,500억 이상 상급 종합 병원</td><td>병상 수, 서비스 기준 3년마다 재평가</td></tr><tr><td>학교</td><td>연매출 1,500억 또는 전년도 재학생 10,000명 이상</td><td>대학, 교육대학, 방송통신대학</td></tr><tr><td>정봍오신서비스 제공자</td><td>전년 매출 100억 이상, 전년도 3개월 간 DAU 100만 이상</td><td>포털, 전자상거래, 금융, 콘텐츠</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isms-p-인증-예외-사항">ISMS-P 인증 예외 사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/isms-ismsp/#isms-p-%EC%9D%B8%EC%A6%9D-%EC%98%88%EC%99%B8-%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>정보통신서비스와 관련성이 낮은 ERP, 그룹웨어 등 내부 시스템과 영업, 마케팅 조직은 인증범위 제외</li>
-<li>금융권 제외</li>
-</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
