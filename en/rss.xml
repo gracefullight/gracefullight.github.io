@@ -4,10 +4,123 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 14 Jul 2024 14:50:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Jul 2024 10:03:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[소프트웨어 안전관리]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/software-safety/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/software-safety/</guid>
+            <pubDate>Mon, 15 Jul 2024 10:03:19 GMT</pubDate>
+            <description><![CDATA[Software Safety]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전관리-개념">소프트웨어 안전관리 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW자체에 내포된 위험뿐 아니라 시스템 전체에 대한 위험요인을 고려하여 사람의 신체와 재산을 보호하는 관리 방법</li>
+<li>시스템 안정성, 신뢰성 보장, 오작동으로 인한 사고 예방</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역-프레임워크-동향">소프트웨어 안전진단 영역, 프레임워크, 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%8F%99%ED%96%A5">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역">소프트웨어 안전진단 영역<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD">​</a></h3>
+<table><thead><tr><th>안전 기능 충분성</th><th>SW 품질 안정성</th><th>기반 SW 안정성</th></tr></thead><tbody><tr><td>시스템 잠재위험분석</td><td>주요 기능 정상동작</td><td>기반SW 지속 운영 진단</td></tr><tr><td>위험원 감지, 회피, 제거</td><td>안전 관련기능 정상동작</td><td>장애감지, 백업, 복구</td></tr><tr><td>안전기능마련 여부 진단</td><td>정적분석 통한 잠재결함 진단</td><td>성능, 다중화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-프레�임워크">소프트웨어 안전진단 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전-동향">소프트웨어 안전 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%EB%8F%99%ED%96%A5">​</a></h3>
+<table><thead><tr><th>구분</th><th>동향</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>정부주도 소프트웨어 안정성 강화 정책</td><td>TTA, 국가기술 표준원 주도</td></tr><tr><td>-</td><td>ISO26262 적용 확대</td><td>-</td></tr><tr><td>국외</td><td>유럽, 미국 기능 안전 표준 강화</td><td>IEC 61508</td></tr><tr><td>-</td><td>자율주행차 등 신기술 적용 확대</td><td>ISO 26262</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전-보안-품질-비교">소프트웨어 안전, 보안, 품질 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%EB%B3%B4%EC%95%88-%ED%92%88%EC%A7%88-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>안전</th><th>보안</th><th>품질</th></tr></thead><tbody><tr><td>보호대상</td><td>사람 신체, 생명, 재산</td><td>시스템, 데이터 기밀성, 무결성, 가용성</td><td>사용자 요구사항, 성능, 스펙</td></tr><tr><td>주요 활동</td><td>위험 식별, 완화, 평가</td><td>접근제어, 암호화, 인증, 인가</td><td>요구사항 분석, 테스트, 검증</td></tr><tr><td>위험요인</td><td>안전요구사항 누락, 설계 오류, 오구현</td><td>접근제어 오류, 해킹, 제로데이공격</td><td>기능 미구현, 요구 변경</td></tr><tr><td>위험결과</td><td>사망, 부상, 재물 손실</td><td>정보 유출, 손실, 제어권 상실</td><td>시스템 미동작, 기능 오류, 사용자 불편</td></tr><tr><td>예상시스템</td><td>안전필수시스템</td><td>모든 SW</td><td>모든 SW</td></tr><tr><td>예시</td><td>항공관제, 열차제어, 자동차제어</td><td>IDS, IPS, DDoS 대응</td><td>DBMS, OS, 웹</td></tr><tr><td>표준</td><td>IEC 61508, ISO 26262</td><td>ISO 27000, ISO 15408</td><td>ISO 25000, ISO 12207</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전관리-원칙-gamab-alarp-비교">소프트웨어 안전관리 원칙 GAMAB, ALARP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC-%EC%9B%90%EC%B9%99-gamab-alarp-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>GAMAB</th><th>ALARP</th></tr></thead><tbody><tr><td>목표</td><td>기존 시스템 이상의 안전수준 유지</td><td>합리적으로 실현 가능한 최소 위험 수준</td></tr><tr><td>적용범위</td><td>철도,항공 등 고안전성 산업</td><td>원자력, 화학, 섬유 등</td></tr><tr><td>접근방법</td><td>기존시스템과 비교 평가</td><td>비용대비 효과 분석</td></tr><tr><td>특징</td><td>최소 안전 수준, 지속적 개선</td><td>상위, 중간, 하위 위험도</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
+        <item>
+            <title><![CDATA[인수테스트, 알파테스트, 베타테스트]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/acceptance-test/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/acceptance-test/</guid>
+            <pubDate>Mon, 15 Jul 2024 09:50:57 GMT</pubDate>
+            <description><![CDATA[Acceptance test, Alpha test, Beta test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트의-개념">인수테스트의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>시스템 인수를 위해 기능, 비기능적 요구사항을 사용자가 직접 테스트하여 개발이 완료되었음을 증명하는 테스트</li>
+<li>준수성 확인, 고객 피드백, 배포 가능성 평가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-개념도-특징-적용방안">알파테스트, 베타테스트 개념도, 특징, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-개념도">알파테스트, 베타테스트 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>소규모, 한정된 개발환경에서 고객 피드백을 반영하고, 최종 사용자의 사용경험 확보와 이해 향상</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>환경</td><td>개발환경</td><td>사용자환경</td></tr><tr><td>목표</td><td>결함발견, 부하검사, 신뢰성</td><td>사용자제품평가, 공개테스트서비스</td></tr><tr><td>시점</td><td>서비스 개발 완성 시점</td><td>공개 서비스 발매 전 최종 심의</td></tr><tr><td>참가자 개발자, 테스터, 선택된 사용자</td><td>고객, 최종 사용자</td><td></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베사테스트-적용방안">알파테스트, 베사테스트 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%EC%82%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>기능적합성</td><td>요구 기능 검증, 주요 기능 확인</td><td>실제 사용자 요구 충족, 기능의 실사용 평가</td></tr><tr><td>효율성</td><td>코드 최적화, 성능문제 발견</td><td>실제 사용 환경 내 성능테스트, 자원 사용 검토</td></tr><tr><td>사용성</td><td>사용자 인터페이스 기본 검토, 개선</td><td>실제 사용자 경험 수집, 만족도 평가</td></tr><tr><td>호환성</td><td>다양한 내부시스템 및 환경과 호환성 테스트</td><td>다양한 사용자 환경 및 플랫폼 호환성 테스트</td></tr><tr><td>신뢰성</td><td>주요 결함, 버그 식별, 시스템 안정성 초기 검토</td><td>장기간 사용 안정성 평가, 시스템 실패율 검증</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트-고려사항">인수테스트 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>실제 사용자 환경에서 보안성 검토 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
+        <item>
+            <title><![CDATA[성능테스트]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/performance-test/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/performance-test/</guid>
+            <pubDate>Mon, 15 Jul 2024 09:42:22 GMT</pubDate>
+            <description><![CDATA[Performance Test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트의-개념">성능테스트의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>시스템의 <mark class="flexible-marker flexible-marker-default">비기능 요구사항</mark>을 만족하는지 확인하기 위해 실제 환경과 비슷한 환경에서 수행하는 테스트</li>
+<li>시스템 안정성 확인, 사용자 경험 개선, 비용 절감, 확장성 검증</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트-구성도-구성요소-주요-지표">성능테스트 구성도, 구성요소, 주요 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트-구성도">성능테스트 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>테스트 시나리오를 작성 후 부하생성, 모니터링 및 분석 후 시스템에 추가 반영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능-테스트-구성요소">성능 테스트 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>부하 생성기</td><td>시나리오를 기반으로 시스템에 부하를 발생시키는 도구</td><td>JMeter, LoadRunner</td></tr><tr><td>모니터링, 분석 도구</td><td>시스템 성능 지표 실시간 모니터링, 테스트 결과 분석, 성능 문제 식별</td><td>New Relic, ELK Stack</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능-테스트-주요-지표">성능 테스트 주요 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
+<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>테스트환경</td><td>동시사용자</td><td>성능테스트의 가상사용자 수</td></tr><tr><td>-</td><td>활성사용자</td><td>서버에 연결되어 요청을 처리 중인 사용자로 트랜잭션 발생 사용자</td></tr><tr><td>성능</td><td>응답시간</td><td>요청 후 응답이 완료되어 사용자 화면에 출력될 때까지 시간</td></tr><tr><td>-</td><td>대기시간</td><td>하나의 요청에 응답을 수신하고 다음 요청을 보낼 때까지의 시간</td></tr><tr><td>-</td><td>TPS</td><td>단위 시간 당 서버, DB에서 처리된 요청 수</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="tps-계산">TPS 계산<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/performance-test/#tps-%EA%B3%84%EC%82%B0">​</a></h2>
+<blockquote>
+<p>Little's Law</p>
+</blockquote>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mi>U</mi><mo>=</mo><mi>λ</mi><mo>∗</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">  CU = \lambda * W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">C</span><span class="mord mathnormal" style="margin-right:0.10903em">U</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span></span></span></span></span>
+<ul>
+<li>동시사용자 = TPS * (Request Time + Think Time)</li>
+<li>웹 시스템에선 동시 사용자와 활성사용자 간 차이가 있으므로 TPS 가정 하에 활성 사용자 계산</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
+        <item>
+            <title><![CDATA[페어 프로그래밍, 핑퐁 프로그래밍]]></title>
+            <link>https://gracefullight.dev/en/pe/engineering/pair-programming/</link>
+            <guid>https://gracefullight.dev/en/pe/engineering/pair-programming/</guid>
+            <pubDate>Mon, 15 Jul 2024 05:01:18 GMT</pubDate>
+            <description><![CDATA[Pair Programming, Ping Pong Programming]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-개념">페어 프로그래밍 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>XP 개발 방법론에서 개발자 고립과 낮은 생산성 문제를 해결하기 위해 페어프로그래밍 기법 등장, 애자일 방법론에서 TDD 기반의 핑퐁 프래밍 기법으로 발전.</li>
+<li>오류에 빠른 대응 가능, 코드에 대한 책임 분담으로 실수 방지 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-프로그래밍의-개념도-구성요소-적용방안">페어 프로그래밍, 핑퐁 프로그래밍의 개념도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-프로그래밍의-개념도">페어 프로그래밍, 핑퐁 프로그래밍의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-프로그래밍-구성요소-비교">페어 프로그래밍, 핑퐁 프로그래밍 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>페어 프로그래밍</th><th>핑퐁 프로그래밍</th></tr></thead><tbody><tr><td>개념</td><td>두 개발자가 한 컴퓨터에서 개발하는 프로그래밍 방식</td><td>두 개발자가 번갈아가며 테스트와 코드 작성</td></tr><tr><td>역할</td><td>드라이버, 네비게이터</td><td>테스트 작성자, 코드 작성자</td></tr><tr><td>특징</td><td>코드 품질 향상, 코드 리뷰</td><td>TDD 촉진</td></tr><tr><td>장점</td><td>오류 감소, 지식 공유, 생산성 향상</td><td>테스트와 코드 작성의 연계</td></tr><tr><td>단점</td><td>의사소통 비용 발생</td><td>잦은 인터럽트 발생</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-적용방안">페어 프로그래밍 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>숙련도가 다른 개발자</td><td>시니어-주니어 페어로 네비게이터-드라이버 역할 수행</td><td>주니어의 빠른 성장 기대</td></tr><tr><td>신기술 학습</td><td>새로운 기술 적용시 여러 관점 고려 가능</td><td>학습효과 극대화</td></tr><tr><td>문제 해결</td><td>다양한 접근 방식으로 빠른 이슈 해결</td><td>역할 교체</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍시-고려사항">페어 프로그래밍시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>서로 신뢰하고 존중하는 분위기가 선행되어야 페어 프로그래밍시 커뮤니케이션 비용 대비 생산성 효과 극대화</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/engineering</category>
+        </item>
         <item>
             <title><![CDATA[ISO/IEC Standards]]></title>
             <link>https://gracefullight.dev/en/2024/07/14/iso-iec-standards/</link>
@@ -15,7 +128,7 @@
             <pubDate>Sun, 14 Jul 2024 14:50:32 GMT</pubDate>
             <description><![CDATA[주요 ISO/IEC 표준]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="주요-iso-표준">주요 ISO 표준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/2024/07/14/iso-iec-standards/#%EC%A3%BC%EC%9A%94-iso-%ED%91%9C%EC%A4%80">​</a></h2>
-<table><thead><tr><th>표준</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>ISO 12119</td><td>테스트 품질요구사항</td><td>제품설명서, 사용자문서, SW제품 및 데이터</td></tr><tr><td>ISO 12207</td><td>SDLC</td><td>기본, 지원, 조직 생명주기</td></tr><tr><td>ISO 14143</td><td>FP</td><td>기능점수, EI, EO, EQ, ILF, EIF</td></tr><tr><td>ISO 15504</td><td>SPICE</td><td>주요, 지원, 조직 프로세스</td></tr><tr><td>ISO 19770</td><td>SAM</td><td>소프트웨어 자산 관리, 라이선스 관리</td></tr><tr><td>ISO 20000</td><td>ITSM</td><td>서비스 관리체계 구축</td></tr><tr><td>ISO 25000</td><td>SQUARE</td><td>SW 품질 모델, 품질 측정, 품질 요구, 품질 평가, 기신사효유이호보, 효생안만</td></tr><tr><td>ISO 26262</td><td>자동차 안전</td><td>QM, ASIL A~D, AUTOSAR</td></tr><tr><td>ISO 29119</td><td>테스트</td><td>V&amp;V, 테스트 프로세스, 문서화, 기법, 키워드주도 테스팅</td></tr><tr><td>ISO 31000</td><td>위험관리</td><td>식별, 분석, 평가, 처리, 회전감수</td></tr><tr><td>IEC 61508</td><td>전기, 전자, 프로그램 가능한 전자시스템 기능안전</td><td>SIL 1~4</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>표준</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>ISO 12119</td><td>테스트 품질요구사항</td><td>제품설명서, 사용자문서, SW제품 및 데이터</td></tr><tr><td>ISO 12207</td><td>SDLC</td><td>기본, 지원, 조직 생명주기</td></tr><tr><td>ISO 14143</td><td>FP</td><td>기능점수, EI, EO, EQ, ILF, EIF</td></tr><tr><td>ISO 15504</td><td>SPICE</td><td>주요, 지원, 조직 프로세스</td></tr><tr><td>ISO 19770</td><td>SAM</td><td>소프트웨어 자산 관리, 라이선스 관리</td></tr><tr><td>ISO 20000</td><td>ITSM</td><td>서비스 관리체계 구축</td></tr><tr><td>ISO 25000</td><td>SQUARE</td><td>SW 품질 모델, 품질 측정, 품질 요구, 품질 평가, 기신사효유이호보, 효생안만</td></tr><tr><td>ISO 26262</td><td>자동차 안전</td><td>QM, ASIL A~D, AUTOSAR</td></tr><tr><td>ISO 29119</td><td>테스트</td><td>V&amp;V, 테스트 프로세스, 문서화, 기법, 키워드주도 테스팅</td></tr><tr><td>ISO 31000</td><td>위험관리</td><td>식별, 분석, 평가, 처리, 회전감수</td></tr><tr><td>ISO 42010</td><td>아키텍처</td><td>시스템/SW 아키텍처 설명, 뷰, 관점, 이해관계자</td></tr><tr><td>IEC 61508</td><td>전기, 전자, 프로그램 가능한 전자시스템 기능안전</td><td>SIL 1~4</td></tr></tbody></table>]]></content:encoded>
             <category>me</category>
         </item>
         <item>
@@ -135,120 +248,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Defense GAN</td><td>생성적 적대 신경망을 활용한 공격 방어</td><td>회피 공격 방어</td></tr><tr><td>적대적 훈련</td><td>가능한 많은 적대적 사례를 학습데이터에 포함해 훈련</td><td>중독, 회피공격 방어</td></tr><tr><td>결과값 분석 차단</td><td>학습 모델의 결과값을 분석할 수 없게 합성데이터 활용</td><td>추출공격 방어</td></tr><tr><td>쿼리 횟수 제한</td><td>반복 질의시 제한하여 정보 유출 방지</td><td>추출공격 방어</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="생성형-언어모델-보안-취약점과-대응방안">생성형 언어모델 보안 취약점과 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%83%9D%EC%84%B1%ED%98%95-%EC%96%B8%EC%96%B4%EB%AA%A8%EB%8D%B8-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90%EA%B3%BC-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>취약점</th><th>대응방안</th></tr></thead><tbody><tr><td>개인정보, 민감정보 유출</td><td>무분별한 데이터 입력</td><td>개인정보 등 답변 차단</td></tr><tr><td>-</td><td>개인, 민감 정보 추출</td><td>자동탐지, 익명화</td></tr><tr><td>악성코드 생성</td><td>악성코드 생성 자동화</td><td>API 포함 코드 검수 단계 추가</td></tr><tr><td>-</td><td>취약점 생성 자동화</td><td>반환 코드 분석, 실행 차단</td></tr><tr><td>AI 모델 취약점</td><td>생성형 모델에 대한 적대적 공격</td><td>xAI 구현, Defense-GAN 구현</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[드론 보안위협]]></title>
-            <link>https://gracefullight.dev/en/pe/security/drone-threats/</link>
-            <guid>https://gracefullight.dev/en/pe/security/drone-threats/</guid>
-            <pubDate>Wed, 10 Jul 2024 09:55:09 GMT</pubDate>
-            <description><![CDATA[Drone Threats]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협-개념">드론 보안위협 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>드론 외부의 악의적 행위로 인해 드론 자체 또는 드론이 수집하는 데이터가 탈취, 변조, 파괴 되는 등 드론 운동에 악역향을 주는 모든 위협</li>
-<li>드론 서비스 활성화에 따라 보안 위협 대책 요구 증가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-개념도-주요-유형-대응방안">드론 보안위협의 개념도, 주요 유형, 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-개념도">드론 보안위협의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>드론 센서, 구동부와 제어 네트워크 해킹, 교란부 위협</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-주요-유형">드론 보안위협의 주요 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협의-대응방안">드론 보안위협의 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EC%9D%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="드론-보안위협-고려사항">드론 보안위협 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/drone-threats/#%EB%93%9C%EB%A1%A0-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>드론의 SW와 펌웨어를 정기적으로 업데이트하여 최신 보안 위협 대비 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[클라우드 보안 고려요소]]></title>
-            <link>https://gracefullight.dev/en/pe/security/cloud-security/</link>
-            <guid>https://gracefullight.dev/en/pe/security/cloud-security/</guid>
-            <pubDate>Wed, 10 Jul 2024 09:54:42 GMT</pubDate>
-            <description><![CDATA[Cloud security]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념">클라우드 보안 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>클라우드 컴퓨팅 환경에서 데이터를 보호하고, 어플리케이션 및 인프라의 보안을 유지하기 위한 관리적, 물리적, 기술적 보안</li>
-<li>2025년까지 모든 행정 공공, 정보시스템 클라우드 전환 시 데이터 보호와 서비스 신뢰성 확보를 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념도-주요-위협-대응-방안">클라우드 보안 개념도, 주요 위협, 대응 방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%84%ED%98%91-%EB%8C%80%EC%9D%91-%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-개념도">클라우드 보안 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>기존 기업의 보안 프레임워크가 클라우드로 확장, 클라우드 서비스 제공 데이터센터의 물리적 보안은 CSP책임</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-주요-위협">클라우드 보안 주요 위협<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EC%A3%BC%EC%9A%94-%EC%9C%84%ED%98%91">​</a></h3>
-<table><thead><tr><th>구분</th><th>위협</th><th>내용</th></tr></thead><tbody><tr><td>SaaS</td><td>정보 훼손 및 유출</td><td>고객 정보 훼손 및 유출 위협</td></tr><tr><td>-</td><td>웹 취약점 공격</td><td>악성코드, 인젝션, XSS 등</td></tr><tr><td>-</td><td>버전 통제 문제</td><td>다른 버전 서비스 호환 가능성</td></tr><tr><td>PaaS</td><td>Buffer Overflow</td><td>제공된 자원 권한 이상 접근</td></tr><tr><td>-</td><td>표준화 부재</td><td>설계, 코딩 표준 부재</td></tr><tr><td>-</td><td>인증 문제</td><td>취약한 인증, 계정 탈취, 플랫폼 종속</td></tr><tr><td>IaaS</td><td>가상화 취약점</td><td>하이퍼바이저, 도커 취약점</td></tr><tr><td>-</td><td>서버 관리 문제</td><td>DDoS, 시스템 장애</td></tr><tr><td>-</td><td>데이터 손실 문제</td><td>고객 데이터 유실</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-대응방안">클라우드 보안 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>보안 정책 수립, 시행</td><td>보안 거버넌스 확립, SLA 협약</td></tr><tr><td>-</td><td>교육 및 훈련</td><td>클라우드 보안 교육, 대응방안 교육</td></tr><tr><td>물리적</td><td>데이터센터 보안</td><td>물리적 보안 강화, 접근 통제</td></tr><tr><td>-</td><td>백업 및 재해복구</td><td>데이터 손실, 서비스 중단 대응</td></tr><tr><td>기술적</td><td>암호화</td><td>데이터 자체와 N/W 구간 암호화</td></tr><tr><td>-</td><td>방화벽, IDS, IPS</td><td>트래픽 감시, 사전 차단</td></tr></tbody></table>
-<ul>
-<li>SDN, IAM 등을 활용하여 최소 권한 부여</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-보안-고려사항">클라우드 보안 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/cloud-security/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>각 국의 산업 표준 및 법적 요구사항 준수 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[디지털 역기능]]></title>
-            <link>https://gracefullight.dev/en/pe/security/digital-dysfunction/</link>
-            <guid>https://gracefullight.dev/en/pe/security/digital-dysfunction/</guid>
-            <pubDate>Wed, 10 Jul 2024 09:22:27 GMT</pubDate>
-            <description><![CDATA[Digital Dysfunction]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능">디지털 역기능<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5">​</a></h2>
-<ul>
-<li>디지털 기술 및 서비스 이용과정에서 발생하는 예상치 못한 부정적인 결과</li>
-<li>빠른 기술 발전 속도, 정보 격차, 디지털도구와의 의존성으로 인해 발생</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-개념도-주요-유형-해결방안">디지털 역기능 개념도, 주요 유형, 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-개념도">디지털 역기능 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>디지털 기술의 급격한 발전에 따라 역기능 다양화</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-주요-유형">디지털 역기능 주요 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작 정보</td><td>거짓 정보를 퍼뜨려서 사람들을 의도적으로 혼란스럽게하거나 조종하려는 행위</td><td>가짜뉴스 전파, 조작된 정보 유통 등</td></tr><tr><td>디지털 혐오표현</td><td>특정 속성을 가진 집단이 디지털 수단을 통해 차별, 폭력 등의 표현을 받는 행위</td><td>악플러, 사이버 렉카 등</td></tr><tr><td>디지털 성범죄</td><td>디지털 기기로 상대방의 동의없이 신체 일부 등을 촬영, 유포, 전시하는 행위</td><td>텔레그램, n번방 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-해결방안">디지털 역기능 해결방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작정보, 성범죄</td><td>방지, 추적 기술</td><td>사전 업로드 방지, 사후 추적</td></tr><tr><td>-</td><td>알고리즘 편향 식별</td><td>알고리즘 신뢰성 확보</td></tr><tr><td>디지털 혐오표현, 과의존</td><td>가상 체험 서비스</td><td>역기능 체험, 사전 예방</td></tr><tr><td>-</td><td>전문 치료 서비스</td><td>역기능별 사후 치료, 관리</td></tr><tr><td>디지털 격차</td><td>개인 맞춤형 가상비서</td><td>개인 특성, 경험 기반</td></tr><tr><td>-</td><td>시뮬레이션 기반 컨설팅</td><td>디지털 트윈 활용 격차 해소</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-역기능-고려사항">디지털 역기능 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-dysfunction/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%AD%EA%B8%B0%EB%8A%A5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>디지털 역기능 예방을 위해 디지털 리서터릿 교육 강화, 정보판별력 역량 강화</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[디지털 포렌식]]></title>
-            <link>https://gracefullight.dev/en/pe/security/digital-forensics/</link>
-            <guid>https://gracefullight.dev/en/pe/security/digital-forensics/</guid>
-            <pubDate>Wed, 10 Jul 2024 09:11:58 GMT</pubDate>
-            <description><![CDATA[Digital Forensics]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-개념">디지털 포렌식의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>디지털 기기에서 정보를 식별, 수집, 분석, 보존하고, 법정에 증거로 제출하여 언제든지 검증가능한 형태로 자료를 준비하는 절차</li>
-<li>범죄의 지능화, 고도화로 인해 보안사고 및 법적 분쟁해결을 위한 증거로써 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-5원칙-주요-유형-절차">디지털 포렌식의 5원칙, 주요 유형, 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-5%EC%9B%90%EC%B9%99-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-5원칙">디지털 포렌식의 5원칙<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-5%EC%9B%90%EC%B9%99">​</a></h3>
-<blockquote>
-<p>정재신연무</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정당성</td><td>적법한 절차에 따라 증거 수집</td><td>영장 발부 등</td></tr><tr><td>재현성</td><td>동일 환경에서 동일하게 재현</td><td>같은 조건, 결과</td></tr><tr><td>신속성</td><td>전 과정이 신속하게 처리</td><td>데이터 휘발성</td></tr><tr><td>연계성</td><td>전 단계에서 증거의 명확한 관리</td><td>문서화, 책임</td></tr><tr><td>무결성</td><td>증거의 위변조 없음을 증명</td><td>해시 비교 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식의-주요-유형">디지털 포렌식의 주요 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D%EC%9D%98-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>저장 데이터 포렌식</td><td>미디어 포렌식</td><td>이미지, 영상 등 미디어 파일 추출</td></tr><tr><td>-</td><td>디스크 포렌식</td><td>삭제 파일, 포맷 영역 복구</td></tr><tr><td>-</td><td>DB 포렌식</td><td>DB, 메타데이터 로그 수집</td></tr><tr><td>휘발성 데이터 포렌식</td><td>메모리 포렌식</td><td>메모리, CPU캐시, 버퍼</td></tr><tr><td>-</td><td>SNS 포렌식</td><td>SNS 활동, 메세지, 교류 패턴</td></tr><tr><td>-</td><td>N/W 포렌식</td><td>트래픽, 악성코드, 해킹 분석</td></tr></tbody></table>
-<ul>
-<li>영구적이고 삭제 불가능하도록 전 과정에서 연계보관성 준수</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식-절차">디지털 포렌식 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-포렌식-기술">디지털 포렌식 기술<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/digital-forensics/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B8%B0%EC%88%A0">​</a></h2>
-<table><thead><tr><th>구분</th><th>주요 기술</th><th>내용</th></tr></thead><tbody><tr><td>데이터 수집 기술</td><td>디스크 이미징</td><td>저장 매체 사본생성, 원본 보존</td></tr><tr><td>-</td><td>활성시스템 조사</td><td>N/W 역추적, 웹캐시, 프록시 수집</td></tr><tr><td>-</td><td>프로파일링</td><td>SW역공학, 메모리, MBR 분석</td></tr><tr><td>데이터 분석 기술</td><td>타임라인 분석</td><td>시계열 분석, 생성, 사용시간 분석</td></tr><tr><td>-</td><td>디스크 브라우징</td><td>디스크 이미지 구조와 파일시스템 확인</td></tr><tr><td>-</td><td>데이터 카빙</td><td>디스크 비할당 영역에서 파일 복구</td></tr><tr><td>-</td><td>데이터 뷰잉</td><td>데이터 구조 파악, 시각화</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
         </item>
