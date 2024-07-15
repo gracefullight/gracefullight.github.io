@@ -2,11 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-15T10:03:19.072Z</updated>
+    <updated>2024-07-15T15:03:23.651Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ISO 29119]]></title>
+        <id>https://gracefullight.dev/en/pe/engineering/iso-29119/</id>
+        <link href="https://gracefullight.dev/en/pe/engineering/iso-29119/"/>
+        <updated>2024-07-15T15:03:23.651Z</updated>
+        <summary type="html"><![CDATA[ISO 29119]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-개념">ISO 29119 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW개발 생명주기 전 과정에 걸쳐있는 테스팅 프로세스와 관련 산출물에 대한 표준</li>
+<li>최근 GDC를 활용한 글로벌 원격지 개발로 인해, 테스트 프로세스 정의와 테스트 문서화의 중요성 대두</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-구성요소-프로세스-설계기법">ISO 29119 구성요소, 프로세스, 설계기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%84%A4%EA%B3%84%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-구성요소">ISO 29119 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<!-- -->
+<ul>
+<li>소프트웨어 테스팅 원리, 개요, 테스팅 프로세스, 테스팅 관련문서 템플릿, 테스팅 기법으로 구성</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-테스팅-프로세스">ISO 29119 테스팅 프로세스<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%ED%85%8C%EC%8A%A4%ED%8C%85-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
+<!-- -->
+<ul>
+<li>조직 테스트의 명세 개발 및 관리, 개별테스트 단계의 테스트 관리, 특정 테스트 단계 또는 테스트 유형 내에서 동적 테스팅을 수행 관리하는 프로세스 제공</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-테스트-설계-기법">ISO 29119 테스트 설계 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84-%EA%B8%B0%EB%B2%95">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="명세기반-테스트-설계기법과-품질-속성">명세기반 테스트 설계기법과 품질 속성<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#%EB%AA%85%EC%84%B8%EA%B8%B0%EB%B0%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EA%B8%B0%EB%B2%95%EA%B3%BC-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1">​</a></h2>
+<table><thead><tr><th>기법</th><th>품질 속성</th><th>비고</th></tr></thead><tbody><tr><td>경계값 분석</td><td>기능 적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>성능 효율성</td><td>시간 반응성, 용량성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>신뢰성</td><td>결함허용성</td></tr><tr><td>-</td><td>보안성</td><td>기밀성, 무결성</td></tr><tr><td>원인결과그래프</td><td>기능적합성</td><td>완전성, 무결성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>호환성</td><td>공존성</td></tr><tr><td>분류트리</td><td>기능적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>동등분할</td><td>기능적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>신뢰성</td><td>가용성</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-관련-고려사항">ISO 29119 관련 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/iso-29119/#iso-29119-%EA%B4%80%EB%A0%A8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>요구사항명세서 기반의 명세기반 테스트 계획과, 프로그램 사양서 기반의 구조기반 테스트 계획으로 소프트웨어 품질 제고</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/engineering" term="pe/engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[소프트웨어 안전관리]]></title>
         <id>https://gracefullight.dev/en/pe/engineering/software-safety/</id>
@@ -21,7 +58,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역-프레임워크-동향">소프트웨어 안전진단 영역, 프레임워크, 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%8F%99%ED%96%A5">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역">소프트웨어 안전진단 영역<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD">​</a></h3>
 <table><thead><tr><th>안전 기능 충분성</th><th>SW 품질 안정성</th><th>기반 SW 안정성</th></tr></thead><tbody><tr><td>시스템 잠재위험분석</td><td>주요 기능 정상동작</td><td>기반SW 지속 운영 진단</td></tr><tr><td>위험원 감지, 회피, 제거</td><td>안전 관련기능 정상동작</td><td>장애감지, 백업, 복구</td></tr><tr><td>안전기능마련 여부 진단</td><td>정적분석 통한 잠재결함 진단</td><td>성능, 다중화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-프레�임워크">소프트웨어 안전진단 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-프레임워크">소프트웨어 안전진단 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전-동향">소프트웨어 안전 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/engineering/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%EB%8F%99%ED%96%A5">​</a></h3>
 <table><thead><tr><th>구분</th><th>동향</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>정부주도 소프트웨어 안정성 강화 정책</td><td>TTA, 국가기술 표준원 주도</td></tr><tr><td>-</td><td>ISO26262 적용 확대</td><td>-</td></tr><tr><td>국외</td><td>유럽, 미국 기능 안전 표준 강화</td><td>IEC 61508</td></tr><tr><td>-</td><td>자율주행차 등 신기술 적용 확대</td><td>ISO 26262</td></tr></tbody></table>
@@ -256,33 +293,6 @@
 <ul>
 <li>암호화 키를 주기적으로 변경하는 등의 키관리 조치 필요</li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[적대적 공격]]></title>
-        <id>https://gracefullight.dev/en/pe/security/Adversarial-Attack/</id>
-        <link href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/"/>
-        <updated>2024-07-10T09:55:48.952Z</updated>
-        <summary type="html"><![CDATA[Adversarial Attack]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="머신러닝-적대적-공격의-개념">머신러닝 적대적 공격의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>머신러닝 모델의 취약점을 악용하여 잘못된 예측을 유도하기 위해 고의적으로 조작된 입력을 사용하는 공격</li>
-<li>딥러닝 모델의 발전과 함께 적대적 공격기법 발전</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-개념도-주요-공격기법-방어기법">적대적 공격의 개념도, 주요 공격기법, 방어기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B3%B5%EA%B2%A9%EA%B8%B0%EB%B2%95-%EB%B0%A9%EC%96%B4%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-개념도">적대적 공격의 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-주요-공격기법">적대적 공격의 주요 공격기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EC%A3%BC%EC%9A%94-%EA%B3%B5%EA%B2%A9%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>학습데이터 추출공격</td><td>모델에 수많은 쿼리를 던져 학습에 사용된 데이터 추출</td><td>학습데이터 내 중요정보 추출</td></tr><tr><td>중독공격</td><td>악의적 학습데이터를 주입하여 ML 모델의 결과값 조작</td><td>MS테이, 이루다</td></tr><tr><td>회피공격</td><td>입력 데이터를 최소한으로 변조, 모델 무결성 파괴</td><td>도로 표지판 오인식</td></tr><tr><td>모델 추출공격</td><td>모델 질의 후 결과값을 분석하여 사용된 모델 추출</td><td>유사 모델 제작</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="적대적-공격의-방어기법">적대적 공격의 방어기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%A0%81%EB%8C%80%EC%A0%81-%EA%B3%B5%EA%B2%A9%EC%9D%98-%EB%B0%A9%EC%96%B4%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Defense GAN</td><td>생성적 적대 신경망을 활용한 공격 방어</td><td>회피 공격 방어</td></tr><tr><td>적대적 훈련</td><td>가능한 많은 적대적 사례를 학습데이터에 포함해 훈련</td><td>중독, 회피공격 방어</td></tr><tr><td>결과값 분석 차단</td><td>학습 모델의 결과값을 분석할 수 없게 합성데이터 활용</td><td>추출공격 방어</td></tr><tr><td>쿼리 횟수 제한</td><td>반복 질의시 제한하여 정보 유출 방지</td><td>추출공격 방어</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="생성형-언어모델-보안-취약점과-대응방안">생성형 언어모델 보안 취약점과 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/security/Adversarial-Attack/#%EC%83%9D%EC%84%B1%ED%98%95-%EC%96%B8%EC%96%B4%EB%AA%A8%EB%8D%B8-%EB%B3%B4%EC%95%88-%EC%B7%A8%EC%95%BD%EC%A0%90%EA%B3%BC-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
-<table><thead><tr><th>구분</th><th>취약점</th><th>대응방안</th></tr></thead><tbody><tr><td>개인정보, 민감정보 유출</td><td>무분별한 데이터 입력</td><td>개인정보 등 답변 차단</td></tr><tr><td>-</td><td>개인, 민감 정보 추출</td><td>자동탐지, 익명화</td></tr><tr><td>악성코드 생성</td><td>악성코드 생성 자동화</td><td>API 포함 코드 검수 단계 추가</td></tr><tr><td>-</td><td>취약점 생성 자동화</td><td>반환 코드 분석, 실행 차단</td></tr><tr><td>AI 모델 취약점</td><td>생성형 모델에 대한 적대적 공격</td><td>xAI 구현, Defense-GAN 구현</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
