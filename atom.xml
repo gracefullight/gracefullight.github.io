@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-15T15:03:23.651Z</updated>
+    <updated>2024-07-15T15:31:05.398Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[인터미턴트 컴퓨팅]]></title>
+        <id>https://gracefullight.dev/pe/architecture/intermittent-computing/</id>
+        <link href="https://gracefullight.dev/pe/architecture/intermittent-computing/"/>
+        <updated>2024-07-15T15:31:05.398Z</updated>
+        <summary type="html"><![CDATA[Intermittent Computing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅의-개념">인터미턴트 컴퓨팅의 개념<a class="hash-link" aria-label="인터미턴트 컴퓨팅의 개념에 대한 직접 링크" title="인터미턴트 컴퓨팅의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">전원이 불안정하거나 간헐적으로 공급되는 환경</mark>에서 컴퓨팅 시스템이 작업을 지속적으로 수행할 수 있도록 하는 기술</li>
+<li>IoT 확산, 에너지 비용 절감, 안정성 향상, 에너지 제약환경, AI 모델 학습 전력 사용량 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도-핵심요소-기술-동향">인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도">인터미턴트 컴퓨팅 개념도<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-핵심요소">인터미턴트 컴퓨팅 핵심요소<a class="hash-link" aria-label="인터미턴트 ��컴퓨팅 핵심요소에 대한 직접 링크" title="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>컴퓨터 내부</td><td>FRAM</td><td>비휘발성 저전력 램 사용, 단전시 저장 바이트 복구</td></tr><tr><td>-</td><td>Data Deduplication</td><td>중복 데이터를 포인터로만 저장하여 실시간 백업 처리</td></tr><tr><td>-</td><td>메인보드 비상전력 공급</td><td>기존 5V 건전지 대체 파워시스템 구현</td></tr><tr><td>컴퓨터 외부</td><td>축전기</td><td>단전시 비상전력 가동</td></tr><tr><td>-</td><td>재생가능에너지</td><td>전력 소스를 다각화하여 재해복구성 확보</td></tr><tr><td>-</td><td>ESS</td><td>수집한 에너지를 저장하여 필요시 사용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-기술-동향">인터미턴트 컴퓨팅 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>-</td><td>-</td></tr><tr><td>국외</td><td>-</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-발전-방향">인터미턴트 컴퓨팅 발전 방향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 발전 방향에 대한 직접 링크" title="인터미턴트 컴퓨팅 발전 방향에 대한 직접 링크" href="https://gracefullight.dev/pe/architecture/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5">​</a></h2>
+<ul>
+<li>뉴로모픽 칩과 멤리스터 소자의 개발로 저장과 연산을 초저전력으로 처리하여 전력 공급 내성을 가질 것 으로 예상</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/architecture" term="pe/architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ISO 29119]]></title>
         <id>https://gracefullight.dev/pe/engineering/iso-29119/</id>
@@ -91,7 +120,7 @@
 <ul>
 <li>소규모, 한정된 개발환경에서 고객 피드백을 반영하고, 최종 사용자의 사용경험 확보와 이해 향상</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="알파테스트, 베타테스트 특�징에 대한 직접 링크" title="알파테스트, 베타테스트 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="알파테스트, 베타테�스트 특징에 대한 직접 링크" title="알파테스트, 베타테스트 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>환경</td><td>개발환경</td><td>사용자환경</td></tr><tr><td>목표</td><td>결함발견, 부하검사, 신뢰성</td><td>사용자제품평가, 공개테스트서비스</td></tr><tr><td>시점</td><td>서비스 개발 완성 시점</td><td>공개 서비스 발매 전 최종 심의</td></tr><tr><td>참가자 개발자, 테스터, 선택된 사용자</td><td>고객, 최종 사용자</td><td></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베사테스트-적용방안">알파테스트, 베사테스트 적용방안<a class="hash-link" aria-label="알파테스트, 베사테스트 적용방안에 대한 직접 링크" title="알파테스트, 베사테스트 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/engineering/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%EC%82%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>기능적합성</td><td>요구 기능 검증, 주요 기능 확인</td><td>실제 사용자 요구 충족, 기능의 실사용 평가</td></tr><tr><td>효율성</td><td>코드 최적화, 성능문제 발견</td><td>실제 사용 환경 내 성능테스트, 자원 사용 검토</td></tr><tr><td>사용성</td><td>사용자 인터페이스 기본 검토, 개선</td><td>실제 사용자 경험 수집, 만족도 평가</td></tr><tr><td>호환성</td><td>다양한 내부시스템 및 환경과 호환성 테스트</td><td>다양한 사용자 환경 및 플랫폼 호환성 테스트</td></tr><tr><td>신뢰성</td><td>주요 결함, 버그 식별, 시스템 안정성 초기 검토</td><td>장기간 사용 안정성 평가, 시스템 실패율 검증</td></tr></tbody></table>
@@ -252,46 +281,13 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성도-구성요소-적용방안">양자암호통신의 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="양자암호통신의 구성도, 구성요소, 적용방안에 대한 직접 링크" title="양자암호통신의 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성도">양자암호통신의 구성도<a class="hash-link" aria-label="양자암호통신의 구성도에 대한 직접 링크" title="양자암호통신의 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성요소">양자암호통신의 구성요소<a class="hash-link" aria-label="양자암호통신의 구성요소에 대한 직접 링크" title="양자암호통신의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-구성요소">양자암호통신의 구성요소<a class="hash-link" aria-label="양자암호통신의 구성요소에 대한 직접 링크" title="양자암호통신의 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EF%BF%BD%EF%BF%BD%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양자키분배기(QKD)</td><td>양자비트 생성 후 비밀키 교환, 양자비트 수신 후 비밀키 측정</td><td>양자상태 유지, 측정 후 키 생성</td></tr><tr><td>양자 채널</td><td>양자 비트를 전달하는 통신채널</td><td>광섬유, 위성</td></tr><tr><td>기존 채널</td><td>QKD 이후 암호문을 송수신하고 복호화하는 채널</td><td>TLS 등 N/W 보안 고려</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신의-적용방안">양자암호통신의 적용방안<a class="hash-link" aria-label="양자암호통신의 적용방안에 대한 직접 링크" title="양자암호통신의 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0%EC%9D%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>국가 기밀 통신</td><td>높은 보안 수준 요구</td></tr><tr><td>-</td><td>군사 통신</td><td>-</td></tr><tr><td>금융</td><td>금융 거래 보호</td><td>비용 대비 효과 고려</td></tr><tr><td>-</td><td>기업 비밀 문서 전송</td><td>-</td></tr><tr><td>민간</td><td>개인정보보호, IoT 보안</td><td>프라이버시 보호</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="양자암호통신-고려사항">양자암호통신 고려사항<a class="hash-link" aria-label="양자암호통신 고려사항에 대한 직접 링크" title="양자암호통신 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/quantum-cryptography/#%EC%96%91%EC%9E%90%EC%95%94%ED%98%B8%ED%86%B5%EC%8B%A0-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>기술 표준화 부재로 시스템 간 호환성을 고려한 운영비용 산정 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[블록 암호화 알고리즘]]></title>
-        <id>https://gracefullight.dev/pe/security/block-cipher/</id>
-        <link href="https://gracefullight.dev/pe/security/block-cipher/"/>
-        <updated>2024-07-10T10:03:53.922Z</updated>
-        <summary type="html"><![CDATA[Block Cipher]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화의-개념">블록 암호화의 개념<a class="hash-link" aria-label="블록 암호화의 개념에 대한 직접 링크" title="블록 암호화의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>평문을 고정길이의 블록 단위로 나누어 각 블록마다 암호화하여, 병렬 암호화 처리가 가능한 대칭키 암호화 방식</li>
-<li>다양한 운영모드를 통한 암호화 요구사항 충족, 병렬 암호화 처리로 암복호화 성능 우수, 데이터 무결성, 기밀성 보장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록암호화의-개념도-주요-유형-운영-모드">블록암호화의 개념도, 주요 유형, 운영 모드<a class="hash-link" aria-label="블록암호화의 개념도, 주요 유형, 운영 모드에 대한 직접 링크" title="블록암호화의 개념도, 주요 유형, 운영 모드에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%9A%B4%EC%98%81-%EB%AA%A8%EB%93%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화의-개념도">블록 암호화의 개념도<a class="hash-link" aria-label="블록 암호화의 개념도에 대한 직접 링크" title="블록 암호화의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화-주요-유형">블록 암호화 주요 유형<a class="hash-link" aria-label="블록 암호화 주요 유형에 대한 직접 링크" title="블록 암호화 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>Feistal 방식</td><td>DES</td><td>56bit 키, 64bit 평문 블록 사용, 보안 취약성 존재</td></tr><tr><td>-</td><td>LEA</td><td>128bit 고속, 경량 환경 대응</td></tr><tr><td>-</td><td>SEED</td><td>128bit 평문, 국내 개발</td></tr><tr><td>SPN 방식</td><td>AES</td><td>128bit 평문, 미국 표준 알고리즘</td></tr><tr><td>-</td><td>ARIA</td><td>초경량, HW지원용 알고리즘</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화-운영모드-비교">블록 암호화 운영모드 비교<a class="hash-link" aria-label="블록 암호화 운영모드 비교에 대한 직접 링크" title="블록 암호화 운영모드 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94-%EC%9A%B4%EC%98%81%EB%AA%A8%EB%93%9C-%EB%B9%84%EA%B5%90">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>ECB</th><th>CBC</th><th>CTR</th></tr></thead><tbody><tr><td>초기화벡터</td><td>불필요</td><td>필요</td><td>필요</td></tr><tr><td>오류전파</td><td>미전파</td><td>이후블록</td><td>미전파</td></tr><tr><td>병렬처리</td><td>암복호화</td><td>복호화</td><td>암복호화</td></tr><tr><td>복잡도</td><td>낮음</td><td>중간</td><td>높음</td></tr></tbody></table>
-<ul>
-<li>ECB 모드는 Brute-Force 공격에 취약하므로 다른 모드 사용 권장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="블록-암호화시-고려사항">블록 암호화시 고려사항<a class="hash-link" aria-label="블록 암호화시 고려사항에 대한 직접 링크" title="블록 암호화시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/security/block-cipher/#%EB%B8%94%EB%A1%9D-%EC%95%94%ED%98%B8%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>암호화 키를 주기적으로 변경하는 등의 키관리 조치 필요</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
