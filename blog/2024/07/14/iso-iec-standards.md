@@ -11,6 +11,8 @@ tags:
 
 | 표준 | 설명 | 비고 |
 | --- | --- | --- |
+| ISO 7498 | OSI 7 Layer | 물데네전세표응 |
+| ISO 11898 | CAN, Controller Area Network | 컨트롤러, 트랜시버, 버스 |
 | ISO 12119 | 테스트 품질요구사항 | 제품설명서, 사용자문서, SW제품 및 데이터 |
 | ISO 12207 | SDLC | 기본, 지원, 조직 생명주기 |
 | ISO 14143 | FP | 기능점수, EI, EO, EQ, ILF, EIF |
