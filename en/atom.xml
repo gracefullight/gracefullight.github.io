@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-16T14:21:35.297Z</updated>
+    <updated>2024-07-17T09:10:33.996Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[소프트웨어 품질성능평가]]></title>
+        <id>https://gracefullight.dev/en/pe/sw/소프트웨어-품질성능평가/</id>
+        <link href="https://gracefullight.dev/en/pe/sw/소프트웨어-품질성능평가/"/>
+        <updated>2024-07-17T09:10:33.996Z</updated>
+        <summary type="html"><![CDATA[소프트웨어 품질성능평가]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념">소프트웨어 품질성능평가 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>동종의 경쟁제품간 비교시험을 통해 SW 구매자의 요구사항을 만족하고 품질 및 성능이 우수한 제품을 선정하는 시험</li>
+<li>공공 및 민간 부문 SW구매 결정의 신뢰성 제고, 비용절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념도-대상">소프트웨어 품질성능평가 개념도, 대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8C%80%EC%83%81">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념도">소프트웨어 품질성능평가 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>품질성능평가 후 SW 도입으로 안정성 증가</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-적용-및-제외대상">소프트웨어 품질성능평가 적용 및 제외대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%A0%9C%EC%99%B8%EB%8C%80%EC%83%81">​</a></h3>
+<table><thead><tr><th>적용대상</th><th>제외대상</th></tr></thead><tbody><tr><td>구매금액 1억 이상 상용 소프트웨어</td><td>조달청 쇼핑몰 등록 제품</td></tr><tr><td>직접구매제외대상인 경우, 구매금액 2억 이상 상용 소프트웨어</td><td>정보보호제품 성능평가를 통과한 소프트웨어</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질-성능-평가-절차">소프트웨어 품질 성능 평가 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-평가시험-대상-소프트웨어-분야">소프트웨어 평가시험 대상 소프트웨어 분야<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%8F%89%EA%B0%80%EC%8B%9C%ED%97%98-%EB%8C%80%EC%83%81-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%B6%84%EC%95%BC">​</a></h2>
+<table><thead><tr><th>구분</th><th>분야</th><th>내용</th></tr></thead><tbody><tr><td>시스템SW</td><td>통신SW</td><td>논리적 망분리, 망연계SW</td></tr><tr><td>-</td><td>유틸리티SW</td><td>화상회의, OCR</td></tr><tr><td>-</td><td>시스템관리SW</td><td>시스템관리, NW관리, APM, AI플랫폼</td></tr><tr><td>-</td><td>정보보호SW</td><td>DB, 보안, 접근제어, 개인정보SW</td></tr><tr><td>-</td><td>미들웨어SW</td><td>WAS, WEB서버, 가상화, 검색</td></tr><tr><td>개발용SW</td><td>데이터관리용SW</td><td>DBMS, OLAP, 메타데이터 관리</td></tr><tr><td>응용SW</td><td>기업관리SW</td><td>전자문서관리(EDMS)</td></tr><tr><td>-</td><td>GIS SW</td><td>GIS</td></tr><tr><td>-</td><td>기타 응용SW</td><td>자연어처리, 분배 관리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능-평가시-고려사항">소프트웨어 품질성능 평가시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>ISO 25000 시리즈를 참조하여 평가항목 선정 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/sw" term="pe/sw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[암달의 법칙]]></title>
         <id>https://gracefullight.dev/en/pe/ca/amdahl-s-law/</id>
@@ -276,25 +310,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/engineering" term="pe/engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[네트워크 스위치]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/switch/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/switch/"/>
-        <updated>2024-07-13T01:58:57.218Z</updated>
-        <summary type="html"><![CDATA[Network Switch]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="스위치의-개념">스위치의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/switch/#%EC%8A%A4%EC%9C%84%EC%B9%98%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>여러 컴퓨터나 장치를 서로 연결하고 데이터 패킷을 올바른 목적지로 전달하고, 데이터를 효율적으로 전달하기 위해 트래픽을 관리하기 위한 장치</li>
-<li>효율적 데이터 전달, 브로드캐스트 트래픽 감소, QoS 지원, 네트워크 확장성, 보안 강화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="스위치의-유형">스위치의 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/switch/#%EC%8A%A4%EC%9C%84%EC%B9%98%EC%9D%98-%EC%9C%A0%ED%98%95">​</a></h2>
-<table><thead><tr><th>구분</th><th>유형</th><th>설명</th></tr></thead><tbody><tr><td>L7 어플리케이션 계층</td><td>L7 스위치</td><td>콘텐츠 기반 라우팅, 고급 로드밸런싱</td></tr><tr><td>L4 전송 계층</td><td>L4 스위치</td><td>TCP/UDP 포트 기반 라우팅, 세션 처리</td></tr><tr><td>L3 네트워크 계층</td><td>L3 스위치</td><td>IP 주소 기반 패킷 전달</td></tr><tr><td>L2 데이터링크 계층</td><td>L2 스위치</td><td>MAC 주소 기반 프레임 전달</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/network" term="pe/network"/>
     </entry>
 </feed>
