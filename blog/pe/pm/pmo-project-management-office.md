@@ -5,7 +5,7 @@ description: Project Management Office
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/pm
 ---
 
 ## PMO의 개요
