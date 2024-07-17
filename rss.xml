@@ -4,10 +4,66 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 12:19:20 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 12:30:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[FP, 기능 점수]]></title>
+            <link>https://gracefullight.dev/pe/pm/function-point/</link>
+            <guid>https://gracefullight.dev/pe/pm/function-point/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:30:52 GMT</pubDate>
+            <description><![CDATA[Function Point]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-개념">기능점수 개념<a class="hash-link" aria-label="기능점수 개념에 대한 직접 링크" title="기능점수 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>논리적 설꼐를 기초로 SW기능을 정량화하고 계수적 측정을 통한 실험적 관계를 통해 개발 규모를 산정하는 방법</li>
+<li>사용자의 요구사항으로부터 SW비용 산정 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-측정-절차-계산-요소-기법">기능점수 측정 절차, 계산 요소, 기법<a class="hash-link" aria-label="기능점수 측정 절차, 계산 요소, 기법에 대한 직접 링크" title="기능점수 측정 절차, 계산 요소, 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EC%B8%A1%EC%A0%95-%EC%A0%88%EC%B0%A8-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-측정-절차">기능점수 측정 절차<a class="hash-link" aria-label="기능점수 측정 절차에 대한 직접 링크" title="기능점수 측정 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EC%B8%A1%EC%A0%95-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-계산-요소">기능점수 계산 요소<a class="hash-link" aria-label="기능점수 계산 요소에 대한 직접 링크" title="기능점수 계산 요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>예시</th></tr></thead><tbody><tr><td>EI</td><td>등록, 수정, 삭제되는 기능 입력</td><td>사용자 정보 CUD</td></tr><tr><td>EO</td><td>통계, 출력되는 기능 입력</td><td>방문자 통계, 합계</td></tr><tr><td>EQ</td><td>조회 기능 입력</td><td>사용자 조회</td></tr><tr><td>ILF</td><td>테이블 정보 입력</td><td>회원 정보</td></tr><tr><td>EIF</td><td>타 시스템 연계 테이블 정보 입력</td><td>지하철 노선 정보</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통법-비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="기능점수 간이법, 정통법 비교에 대한 직접 링크" title="기능점수 간이법, 정통법 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>간이법</th><th>정통법</th></tr></thead><tbody><tr><td>측정항목</td><td>데이터 기능, 트랜잭션 수</td><td>데이터 필드 수, 연계 테이블, 트랜잭션 수</td></tr><tr><td>복잡도</td><td>평균 복잡도</td><td>기능별 복잡도</td></tr><tr><td>장점</td><td>SW규모 측정 간소화, 신속한 규모 측정</td><td>정확한 규모 측정, 경험DB 축적, 재사용</td></tr><tr><td>단점</td><td>제한적 데이터 재활용, 상대적 낮은 정확도</td><td>사업 초기 적용 어려움, 러닝 커브</td></tr><tr><td>적용시기</td><td>개발 요건 정의시 모든 단계에서 적용 가능</td><td>개발 요건 및 요건별 상세설계 제공 이후</td></tr></tbody></table>
+<ul>
+<li>개발 초기 제안, 개발 단계에서 간이법을 개발 완료 후 비용 정산시 정통법 주로 사용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-고려사항">기능점수 고려사항<a class="hash-link" aria-label="기능점수 고려사항에 대한 직접 링크" title="기능점수 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>기능점수 산출이 어려운 자율 주행 등 융합IT 영역에서의 대책 또는 가이드 수립 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
+        <item>
+            <title><![CDATA[WBS, 작업 분류 체계]]></title>
+            <link>https://gracefullight.dev/pe/pm/wbs/</link>
+            <guid>https://gracefullight.dev/pe/pm/wbs/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:24:42 GMT</pubDate>
+            <description><![CDATA[Work Breakdown Structure]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념">WBS 개념<a class="hash-link" aria-label="WBS 개념에 대한 직접 링크" title="WBS 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>프로젝트의 목표를 달성하기 위해 필요한 모든 작업을 관리 가능한 단위로 세분화한 분류 체계</li>
+<li>프로젝트 범위 명확화, 체계적인 작업관리, 진행 상황 및 성과 측정, 책임 소재 명확화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념도-작성-원칙-작성-이점">WBS 개념도, 작성 원칙, 작성 이점<a class="hash-link" aria-label="WBS 개념도, 작성 원칙, 작성 이점에 대한 직접 링크" title="WBS 개념도, 작성 원칙, 작성 이점에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99-%EC%9E%91%EC%84%B1-%EC%9D%B4%EC%A0%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념도">WBS 개념도<a class="hash-link" aria-label="WBS 개념도에 대한 직접 링크" title="WBS 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<table><thead><tr><th>레벨</th><th>WBS</th></tr></thead><tbody><tr><td>레벨0: 정의</td><td>프로젝트</td></tr><tr><td>레벨1: 단계</td><td>기획 - 설계 - 개발</td></tr><tr><td>레벨2: 주기능</td><td>FE개발 - BE 개발</td></tr><tr><td>레벨3: 상세기능</td><td>마크업 - UI개발 - JS개발</td></tr><tr><td>레벨4: 세부작업</td><td>페이지1 - 페이지2 - 페이지3</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성-원칙">WBS 작성 원칙<a class="hash-link" aria-label="WBS 작성 원칙에 대한 직접 링크" title="WBS 작성 원칙에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>100% 원칙</td><td>모든 세부작업의 합이 전체 범위를 100% 포함</td><td>누락, 중복 방지</td></tr><tr><td>상호배타성</td><td>각 작업은 명확히 구분되어야하고 고유해야함</td><td>중복으로 인한 혼란 방지</td></tr><tr><td>결과지향성</td><td>작업 수행 방법이 아닌 결과에 초점 필요</td><td>객관적 완료 판단 기준</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성-이점">WBS 작성 이점<a class="hash-link" aria-label="WBS 작성 이점에 대한 직접 링크" title="WBS 작성 이점에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1-%EC%9D%B4%EC%A0%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로젝트 관리</td><td>일원화</td><td>-</td></tr><tr><td>-</td><td>진척도 관리</td><td>-</td></tr><tr><td>-</td><td>우선순위 관리</td><td>-</td></tr><tr><td>-</td><td>일정수립근거</td><td>-</td></tr><tr><td>-</td><td>예산 관리</td><td>-</td></tr><tr><td>의사소통</td><td>이해관계자 소통</td><td>-</td></tr><tr><td>-</td><td>현황 공유</td><td>-</td></tr><tr><td>프로세스</td><td>생산성</td><td>-</td></tr><tr><td>-</td><td>R&amp;R</td><td>-</td></tr><tr><td>-</td><td>위험 관리</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성시-고려사항">WBS 작성시 고려사항<a class="hash-link" aria-label="WBS 작성시 고려사항에 대한 직접 링크" title="WBS 작성시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>프로젝트 범위 명확화</li>
+<li>유연성 확보</li>
+<li>표준 용어의 정의</li>
+<li>이해관계자 의견 수렴</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[ISO 21500]]></title>
             <link>https://gracefullight.dev/pe/pm/iso-21500/</link>
@@ -50,14 +106,14 @@
 <ul>
 <li>가능한 입력에 대해 확률 분포에 따라 표본 수집 후 근사치 계산</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="몬테카를로 방법 핵심요소에 �대한 직접 링크" title="몬테카를로 방법 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="몬테카를로 방법 핵심요소에 대한 직접 링크" title="몬테카를로 방법 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>구성요소</td><td>입력변수</td><td>결과에 영향을 주는 무작위 값</td></tr><tr><td>-</td><td>출력변수</td><td>몬테카를로 분석 결과값</td></tr><tr><td>-</td><td>수학적 모델</td><td>입출력 변수 간의 수학적 관계</td></tr><tr><td>확률분포</td><td>정규분포</td><td>대부분의 실제 이벤트 분포</td></tr><tr><td>-</td><td>균일분포</td><td>확률이 동일한 확률변수의 통계적 표현</td></tr><tr><td>-</td><td>삼각분포</td><td>최소값, 최대값, 최빈값 사용</td></tr></tbody></table>
 <ul>
 <li>변수의 확률분표가 매개변수로 표현이 가능한 경우 MCMC 샘플러 사용</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-활용방안">몬테카를로 방법 활용방안<a class="hash-link" aria-label="몬테카를로 방법 활용방안에 대한 직접 링크" title="몬테카를로 방법 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>금융</td><td>미래 불확실성을 고려하는 의사결정 활용</td><td>주가 예측, 파생상품 관리</td></tr><tr><td>과학</td><td>복잡한 물리 현상 시뮬레이션 및 분석</td><td>입자 시뮬레이션, 방사선 모델링</td></tr><tr><td>신경망</td><td>모델 학습과 추론 과정 개선 및 최적화</td><td>강화학습, 심층신경망</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 �대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>시뮬레이션 횟수와 결과의 정확도 간 절충점을 고려하여 시뮬레이션 수행</li>
 </ul>]]></content:encoded>
@@ -164,7 +220,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성도">CMMI 구성도<a class="hash-link" aria-label="CMMI 구성도에 대한 직접 링크" title="CMMI 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>SW-CMM</td><td>SW프로세스 성숙도 측정, 개선</td></tr><tr><td>SA-CMM</td><td>SW획득 과정 능력 개선</td></tr><tr><td>SE-CMM</td><td>시스템 공학적 적용요소</td></tr><tr><td>P-CMM</td><td>인적자원 능력수준 향상</td></tr><tr><td>IPD-CMM</td><td>통합제품 개발프로세스 개선</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성요소">CMMI 구성요소<a class="hash-link" aria-label="CMMI 구성요소에 대한 직접 링크" title="CMMI 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성요소">CMMI 구성요소<a class="hash-link" aria-label="CMMI 구성요소에 대한 ��직접 링크" title="CMMI 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로세스 영역</td><td>특정 비지니스 목적을 달성하기 위해 필요한 관련 활동들의 집합</td><td>22개 영역</td></tr><tr><td>성숙도 레벨</td><td>조직의 프로세스 성숙도를 나타내는 5단계</td><td>초기-최적화</td></tr><tr><td>프로세스 수행</td><td>프로세스 영역 내에서 수행할 활동 및 방법</td><td>구체적인 실행 방법</td></tr><tr><td>목표</td><td>각 프로세스 영역이 달성해야하는 목표</td><td>개선 방향 제시</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-성숙단계">CMMI 성숙단계<a class="hash-link" aria-label="CMMI 성숙단계에 대한 직접 링크" title="CMMI 성숙단계에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EC%84%B1%EC%88%99%EB%8B%A8%EA%B3%84">​</a></h3>
 <blockquote>
@@ -209,57 +265,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/sw</category>
-        </item>
-        <item>
-            <title><![CDATA[암달의 법칙]]></title>
-            <link>https://gracefullight.dev/pe/ca/amdahl-s-law/</link>
-            <guid>https://gracefullight.dev/pe/ca/amdahl-s-law/</guid>
-            <pubDate>Tue, 16 Jul 2024 14:21:35 GMT</pubDate>
-            <description><![CDATA[Amdahl's law]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="암달의-법칙-개념">암달의 법칙 개념<a class="hash-link" aria-label="암달의 법칙 개념에 대한 직접 링크" title="암달의 법칙 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/amdahl-s-law/#%EC%95%94%EB%8B%AC%EC%9D%98-%EB%B2%95%EC%B9%99-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>컴퓨터 시스템의 <mark class="flexible-marker flexible-marker-default">일부를 개선할 때</mark> 전체적인 <mark class="flexible-marker flexible-marker-default">성능향상의 최대 폭이 제한</mark>된다는 법칙</li>
-<li><mark class="flexible-marker flexible-marker-default">병렬 컴퓨팅에서</mark> 멀티프로세서 사용시 <mark class="flexible-marker flexible-marker-default">성능향상의 최대폭이 순차적인 프로그래밍 때문에 제한</mark>되는 것을 증명</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="암달의-법칙-개념도-구성요소-활용-예시">암달의 법칙 개념도, 구성요소, 활용 예시<a class="hash-link" aria-label="암달의 법칙 개념도, 구성요소, 활용 예시에 대한 직접 링크" title="암달의 법칙 개념도, 구성요소, 활용 예시에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/amdahl-s-law/#%EC%95%94%EB%8B%AC%EC%9D%98-%EB%B2%95%EC%B9%99-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="암달의-법칙-개념도">암달의 법칙 개념도<a class="hash-link" aria-label="암달의 법칙 개념도에 대한 직접 링크" title="암달의 법칙 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/amdahl-s-law/#%EC%95%94%EB%8B%AC%EC%9D%98-%EB%B2%95%EC%B9%99-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="암달의-법칙-구성요소">암달의 법칙 구성요소<a class="hash-link" aria-label="암달의 법칙 구성요소에 대한 직접 링크" title="암달의 법칙 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/amdahl-s-law/#%EC%95%94%EB%8B%AC%EC%9D%98-%EB%B2%95%EF%BF%BD%EC%B9%99-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">)</mo><mo>−</mo><mfrac><mi>P</mi><mi>S</mi></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{(1 - P) - \frac{P}{S}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4288em;vertical-align:-1.1073em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em"><span style="top:-2.2377em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8723em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em">S</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.1073em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
-<ul>
-<li>P = 전체 작업시간의 부분</li>
-<li>S = 성능 향상</li>
-<li>반비례 관계로 최대 성능의 향상폭 제한</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="암달의-법칙-활용-예시">암달의 법칙 활용 예시<a class="hash-link" aria-label="암달의 법칙 활용 예시에 대한 직접 링크" title="암달의 법칙 활용 예시에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/amdahl-s-law/#%EC%95%94%EB%8B%AC%EC%9D%98-%EB%B2%95%EC%B9%99-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>예시</th><th>내용</th></tr></thead><tbody><tr><td>설계</td><td>CPU 설계시 최대 트랜지스터 제한</td><td>트랜지스터 수를 늘려 단위시간 당 최대 성능향상 지점 파악</td></tr><tr><td>-</td><td>GPU 설계시 FPU, ARU 갯수 조정</td><td>FPU, ALU의 갯수를 조정하여 병렬 컴퓨팅 최대효과 추적</td></tr><tr><td>분석</td><td>하드웨어 규모산정</td><td>CPU, 메모리 등 시스템 규모산정시 스케일업 규모 파악</td></tr><tr><td>최적화</td><td>멀티쓰레딩 최적화</td><td>쓰레드의 수를 증가시켜 병렬 처리의 이점을 극대화하면서 병목 현상 분석</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[인터미턴트 컴퓨팅]]></title>
-            <link>https://gracefullight.dev/pe/ca/intermittent-computing/</link>
-            <guid>https://gracefullight.dev/pe/ca/intermittent-computing/</guid>
-            <pubDate>Mon, 15 Jul 2024 15:31:05 GMT</pubDate>
-            <description><![CDATA[Intermittent Computing]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅의-개념">인터미턴트 컴퓨팅의 개념<a class="hash-link" aria-label="인터미턴트 컴퓨팅의 개념에 대한 직접 링크" title="인터미턴트 컴퓨팅의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">전원이 불안정하거나 간헐적으로 공급되는 환경</mark>에서 컴퓨팅 시스템이 작업을 지속적으로 수행할 수 있도록 하는 기술</li>
-<li>IoT 확산, 에너지 비용 절감, 안정성 향상, 에너지 제약환경, AI 모델 학습 전력 사용량 증가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도-핵심요소-기술-동향">인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도">인터미턴트 컴퓨팅 개념도<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-핵심요소">인터미턴트 컴퓨팅 핵심요소<a class="hash-link" aria-label="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" title="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>컴퓨터 내부</td><td>FRAM</td><td>비휘발성 저전력 램 사용, 단전시 저장 바이트 복구</td></tr><tr><td>-</td><td>Data Deduplication</td><td>중복 데이터를 포인터로만 저장하여 실시간 백업 처리</td></tr><tr><td>-</td><td>메인보드 비상전력 공급</td><td>기존 5V 건전지 대체 파워시스템 구현</td></tr><tr><td>컴퓨터 외부</td><td>축전기</td><td>단전시 비상전력 가동</td></tr><tr><td>-</td><td>재생가능에너지</td><td>전력 소스를 다각화하여 재해복구성 확보</td></tr><tr><td>-</td><td>ESS</td><td>수집한 에너지를 저장하여 필요시 사용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-기술-동향">인터미턴트 컴퓨팅 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>-</td><td>-</td></tr><tr><td>국외</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-발전-방향">인터미턴트 컴퓨팅 발전 방향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 발전 방향에 대한 직접 링크" title="인터미턴트 컴퓨팅 발전 방향에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5">​</a></h2>
-<ul>
-<li>뉴로모픽 칩과 멤리스터 소자의 개발로 저장과 연산을 초저전력으로 처리하여 전력 공급 내성을 가질 것 으로 예상</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/architecture</category>
         </item>
     </channel>
 </rss>
