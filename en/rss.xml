@@ -4,10 +4,39 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 14:34:22 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 14:48:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[감리원 직접 테스트, 현장감리]]></title>
+            <link>https://gracefullight.dev/en/pe/pm/감리원-직접-테스트/</link>
+            <guid>https://gracefullight.dev/en/pe/pm/감리원-직접-테스트/</guid>
+            <pubDate>Wed, 17 Jul 2024 14:48:22 GMT</pubDate>
+            <description><![CDATA[감리원 직접 테스트, 현장감리]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="현장감리의-개념">현장감리의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%ED%98%84%EC%9E%A5%EA%B0%90%EB%A6%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>정보시스템 효율성을 향상시키고, 안정성을 확보하기 위해 사업의 수행과정과 결과물을 검토하는 활동</li>
+<li>시스템 초기 요구사항을 정확히 반영했는지 품질보증하기 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="현장감리-절차-감리원-직접-테스트-문제점">현장감리 절차, 감리원 직접 테스트, 문제점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%ED%98%84%EC%9E%A5%EA%B0%90%EB%A6%AC-%EC%A0%88%EC%B0%A8-%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%AC%B8%EC%A0%9C%EC%A0%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="현장감리-절차">현장감리 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%ED%98%84%EC%9E%A5%EA%B0%90%EB%A6%AC-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리원-직접-테스트-방법">감리원 직접 테스트 방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B0%A9%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기능테스트</td><td>시스템과 각 기능이 요구사항에 맞게 동작하는지 확인</td><td>테스트 시나리오 사용</td></tr><tr><td>비기능테스트</td><td>시스템 성능, 보안 등 비기능적 요구사항 충족 확인</td><td>성능시험결과서, 보안점검보고서 확인</td></tr><tr><td>문서 검토</td><td>개발 산출물이 요구사항을 충족하는지 검토</td><td>설계산출물, 표준 준수여부 검토</td></tr><tr><td>인터뷰</td><td>개발자, 사용자 인터뷰 통한 요구사항 반영 확인</td><td>인터뷰 결과서, 회의록 확인</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="깜리원-직접-테스트의-문제점">깜리원 직접 테스트의 문제점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%EA%B9%9C%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90">​</a></h3>
+<table><thead><tr><th>SW 높은 복잡도</th><th>잦은 요구 변경</th><th>납기일정 부족</th></tr></thead><tbody><tr><td>소스코드 복잡성</td><td>조기과업대비 변경점 발생</td><td>감리원 대비 부족한 테스트 일정</td></tr><tr><td>도메인, 기술 특화 기능</td><td>테스트 중 기능 변경</td><td>개발 지연 시 테스트 일정 축소</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="검토-및-확인-방법-제-3자-검증-점검-방법">검토 및 확인 방법, 제 3자 검증 점검 방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%EA%B2%80%ED%86%A0-%EB%B0%8F-%ED%99%95%EC%9D%B8-%EB%B0%A9%EB%B2%95-%EC%A0%9C-3%EC%9E%90-%EA%B2%80%EC%A6%9D-%EC%A0%90%EA%B2%80-%EB%B0%A9%EB%B2%95">​</a></h2>
+<table><thead><tr><th>구분</th><th>검토 및 확인</th><th>제 3자 검증</th></tr></thead><tbody><tr><td>개념</td><td>사업자가 제출한 근거와 대비표에 대한 문서적 검토와 질문을 통한 확인</td><td>대표 과업항목 선정 후 직접 테스트하거나 사업자가 테스트한 수행 방식 및 결과물 관찰</td></tr><tr><td>세부방안</td><td>문서검토, 질문</td><td>재수행, 관찰</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="현장감리-성공-포인트">현장감리 성공 포인트<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/%EA%B0%90%EB%A6%AC%EC%9B%90-%EC%A7%81%EC%A0%91-%ED%85%8C%EC%8A%A4%ED%8A%B8/#%ED%98%84%EC%9E%A5%EA%B0%90%EB%A6%AC-%EC%84%B1%EA%B3%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8">​</a></h2>
+<ul>
+<li>과업대비표 주기적 업데이트</li>
+<li>전문 감리원 보충</li>
+<li>감리수행가이드 변경 추진</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[감리시점과 감리영역]]></title>
             <link>https://gracefullight.dev/en/pe/pm/감리시점과-감리영역/</link>
@@ -115,7 +144,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-계산-요소">기능점수 계산 요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>예시</th></tr></thead><tbody><tr><td>EI</td><td>등록, 수정, 삭제되는 기능 입력</td><td>사용자 정보 CUD</td></tr><tr><td>EO</td><td>통계, 출력되는 기능 입력</td><td>방문자 통계, 합계</td></tr><tr><td>EQ</td><td>조회 기능 입력</td><td>사용자 조회</td></tr><tr><td>ILF</td><td>테이블 정보 입력</td><td>회원 정보</td></tr><tr><td>EIF</td><td>타 시스템 연계 테이블 정보 입력</td><td>지하철 노선 정보</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통��법-비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통법-�비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>간이법</th><th>정통법</th></tr></thead><tbody><tr><td>측정항목</td><td>데이터 기능, 트랜잭션 수</td><td>데이터 필드 수, 연계 테이블, 트랜잭션 수</td></tr><tr><td>복잡도</td><td>평균 복잡도</td><td>기능별 복잡도</td></tr><tr><td>장점</td><td>SW규모 측정 간소화, 신속한 규모 측정</td><td>정확한 규모 측정, 경험DB 축적, 재사용</td></tr><tr><td>단점</td><td>제한적 데이터 재활용, 상대적 낮은 정확도</td><td>사업 초기 적용 어려움, 러닝 커브</td></tr><tr><td>적용시기</td><td>개발 요건 정의시 모든 단계에서 적용 가능</td><td>개발 요건 및 요건별 상세설계 제공 이후</td></tr></tbody></table>
 <ul>
 <li>개발 초기 제안, 개발 단계에서 간이법을 개발 완료 후 비용 정산시 정통법 주로 사용</li>
@@ -259,32 +288,6 @@
 <table><thead><tr><th>구분</th><th>감리</th><th>PMO</th></tr></thead><tbody><tr><td>목적</td><td>기술적 품질 보증</td><td>프로젝트 관리</td></tr><tr><td>관점</td><td>제 3자 관점, 독립적</td><td>발주자 관점</td></tr><tr><td>권고, 의무</td><td>의무사항</td><td>권고사항</td></tr><tr><td>방법론</td><td>표준화된 감리 절차 및 기법</td><td>프로젝트 관리 방법론, PMBOK</td></tr><tr><td>주요 산출물</td><td>감리계획서, 감리 수행결과 보고서, 시정조치 확인서</td><td>요구사항 정의서, 아키텍처 정의서, 사업자 관리 계획서</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/pm</category>
-        </item>
-        <item>
-            <title><![CDATA[IEC 61508, 안전 무결성 등급]]></title>
-            <link>https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/</link>
-            <guid>https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/</guid>
-            <pubDate>Wed, 17 Jul 2024 11:38:00 GMT</pubDate>
-            <description><![CDATA[Security Integrity Level]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508의-개념">IEC 61508의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>산업분야에서 전자, 전기, 프로갦 가능 전자 시스템의 기능 안전을 위한 국제 표준으로 위험 분석을 통한 SIL 설정으로 시스템 안전 기능에 대한 요구 수준 결정 표준</li>
-<li>인명, 재산 손실 소화, 법적 규제 요구사항 충족, 안전 관련 설비 신뢰성 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-구성도-주요-유형-적용방안">IEC 61508 구성도, 주요 유형, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-구성도">IEC 61508 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-주요-유형">IEC 61508 주요 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>하드웨어 안전 무결성</td><td>환경 요소에 의한 HW 성능 저하, 부품 제작 상의 허용 오차</td><td>평균 고장 발생률로 측정 가능</td></tr><tr><td>시스템 안전 무결성</td><td>안전 요구사항 명세, 설계, 구현 오류 관련 휴먼 에러</td><td>평균 고장  달성률 측정 불가</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-안전-무결성-수준">IEC 61508 안전 무결성 수준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EC%95%88%EC%A0%84-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%88%98%EC%A4%80">​</a></h2>
-<table><thead><tr><th>수준</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>SIL1</td><td>경미한 부상, 재산 피해</td><td>낮은 위험</td></tr><tr><td>SIL2</td><td>심각한 부상, 재산 피해</td><td>중요 위험</td></tr><tr><td>SIL3</td><td>사망 또는 심각한 환경 피해</td><td>높은 위험</td></tr><tr><td>SIL4</td><td>다수 사망, 대규모 환경 피해</td><td>매우 높은 위험</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-고려사항">IEC 61508 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<!-- -->
-<ul>
-<li>SW의 전체 수명주기 동안 기능, 성능 안전을 유지하기 위한 안전 유지활동 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/sw</category>
         </item>
     </channel>
 </rss>
