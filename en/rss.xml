@@ -4,10 +4,41 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 12:07:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 12:13:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[몬테카를로 방법]]></title>
+            <link>https://gracefullight.dev/en/pe/pm/monte-carlo-method/</link>
+            <guid>https://gracefullight.dev/en/pe/pm/monte-carlo-method/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:13:34 GMT</pubDate>
+            <description><![CDATA[Monte-Carlo Method]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-개념">몬테카를로 방법 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">랜덤 샘플링</mark>과 <mark class="flexible-marker flexible-marker-default">확률적 모델링</mark>을 사용하여 복잡한 시스템의 행동을 분석하거나 문제를 해결하는 수학적 기법</li>
+<li>복잡한 문제의 <mark class="flexible-marker flexible-marker-default">근사적 해 접근</mark>, 입력 변수의 불확실성 처리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-절차-핵심요소-활용방안">몬테카를로 방법 절차, 핵심요소, 활용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EC%A0%88%EC%B0%A8-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-절차">몬테카를로 방법 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<ul>
+<li>가능한 입력에 대해 확률 분포에 따라 표본 수집 후 근사치 계산</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>구성요소</td><td>입력변수</td><td>결과에 영향을 주는 무작위 값</td></tr><tr><td>-</td><td>출력변수</td><td>몬테카를로 분석 결과값</td></tr><tr><td>-</td><td>수학적 모델</td><td>입출력 변수 간의 수학적 관계</td></tr><tr><td>확률분포</td><td>정규분포</td><td>대부분의 실제 이벤트 분포</td></tr><tr><td>-</td><td>균일분포</td><td>확률이 동일한 확률변수의 통계적 표현</td></tr><tr><td>-</td><td>삼각분포</td><td>최소값, 최대값, 최빈값 사용</td></tr></tbody></table>
+<ul>
+<li>변수의 확률분표가 매개변수로 표현이 가능한 경우 MCMC 샘플러 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-활용방안">몬테카를로 방법 활용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>금융</td><td>미래 불확실성을 고려하는 의사결정 활용</td><td>주가 예측, 파생상품 관리</td></tr><tr><td>과학</td><td>복잡한 물리 현상 시뮬레이션 및 분석</td><td>입자 시뮬레이션, 방사선 모델링</td></tr><tr><td>신경망</td><td>모델 학습과 추론 과정 개선 및 최적화</td><td>강화학습, 심층신경망</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>시뮬레이션 횟수와 결과의 정확도 간 절충점을 고려하여 시뮬레이션 수행</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[소프트웨어 규모산정]]></title>
             <link>https://gracefullight.dev/en/pe/pm/software-project-estimation/</link>
@@ -235,31 +266,6 @@
 <ul>
 <li>요구사항명세서 기반의 명세기반 테스트 계획과, 프로그램 사양서 기반의 구조기반 테스트 계획으로 소프트웨어 품질 제고</li>
 </ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[소프트웨어 안전관리]]></title>
-            <link>https://gracefullight.dev/en/pe/sw/software-safety/</link>
-            <guid>https://gracefullight.dev/en/pe/sw/software-safety/</guid>
-            <pubDate>Mon, 15 Jul 2024 10:03:19 GMT</pubDate>
-            <description><![CDATA[Software Safety]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전관리-개념">소프트웨어 안전관리 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>SW자체에 내포된 위험뿐 아니라 시스템 전체에 대한 위험요인을 고려하여 사람의 신체와 재산을 보호하는 관리 방법</li>
-<li>시스템 안정성, 신뢰성 보장, 오작동으로 인한 사고 예방</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역-프레임워크-동향">소프트웨어 안전진단 영역, 프레임워크, 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%8F%99%ED%96%A5">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-영역">소프트웨어 안전진단 영역<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%EC%98%81%EC%97%AD">​</a></h3>
-<table><thead><tr><th>안전 기능 충분성</th><th>SW 품질 안정성</th><th>기반 SW 안정성</th></tr></thead><tbody><tr><td>시스템 잠재위험분석</td><td>주요 기능 정상동작</td><td>기반SW 지속 운영 진단</td></tr><tr><td>위험원 감지, 회피, 제거</td><td>안전 관련기능 정상동작</td><td>장애감지, 백업, 복구</td></tr><tr><td>안전기능마련 여부 진단</td><td>정적분석 통한 잠재결함 진단</td><td>성능, 다중화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전진단-프레임워크">소프트웨어 안전진단 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EC%A7%84%EB%8B%A8-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전-동향">소프트웨어 안전 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%EB%8F%99%ED%96%A5">​</a></h3>
-<table><thead><tr><th>구분</th><th>동향</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>정부주도 소프트웨어 안정성 강화 정책</td><td>TTA, 국가기술 표준원 주도</td></tr><tr><td>-</td><td>ISO26262 적용 확대</td><td>-</td></tr><tr><td>국외</td><td>유럽, 미국 기능 안전 표준 강화</td><td>IEC 61508</td></tr><tr><td>-</td><td>자율주행차 등 신기술 적용 확대</td><td>ISO 26262</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전-보안-품질-비교">소프트웨어 안전, 보안, 품질 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%EB%B3%B4%EC%95%88-%ED%92%88%EC%A7%88-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>안전</th><th>보안</th><th>품질</th></tr></thead><tbody><tr><td>보호대상</td><td>사람 신체, 생명, 재산</td><td>시스템, 데이터 기밀성, 무결성, 가용성</td><td>사용자 요구사항, 성능, 스펙</td></tr><tr><td>주요 활동</td><td>위험 식별, 완화, 평가</td><td>접근제어, 암호화, 인증, 인가</td><td>요구사항 분석, 테스트, 검증</td></tr><tr><td>위험요인</td><td>안전요구사항 누락, 설계 오류, 오구현</td><td>접근제어 오류, 해킹, 제로데이공격</td><td>기능 미구현, 요구 변경</td></tr><tr><td>위험결과</td><td>사망, 부상, 재물 손실</td><td>정보 유출, 손실, 제어권 상실</td><td>시스템 미동작, 기능 오류, 사용자 불편</td></tr><tr><td>예상시스템</td><td>안전필수시스템</td><td>모든 SW</td><td>모든 SW</td></tr><tr><td>예시</td><td>항공관제, 열차제어, 자동차제어</td><td>IDS, IPS, DDoS 대응</td><td>DBMS, OS, 웹</td></tr><tr><td>표준</td><td>IEC 61508, ISO 26262</td><td>ISO 27000, ISO 15408</td><td>ISO 25000, ISO 12207</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전관리-원칙-gamab-alarp-비교">소프트웨어 안전관리 원칙 GAMAB, ALARP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC-%EC%9B%90%EC%B9%99-gamab-alarp-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>GAMAB</th><th>ALARP</th></tr></thead><tbody><tr><td>목표</td><td>기존 시스템 이상의 안전수준 유지</td><td>합리적으로 실현 가능한 최소 위험 수준</td></tr><tr><td>적용범위</td><td>철도,항공 등 고안전성 산업</td><td>원자력, 화학, 섬유 등</td></tr><tr><td>접근방법</td><td>기존시스템과 비교 평가</td><td>비용대비 효과 분석</td></tr><tr><td>특징</td><td>최소 안전 수준, 지속적 개선</td><td>상위, 중간, 하위 위험도</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
         </item>
