@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 12:30:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 12:38:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[EVM, 획득 가치 관리]]></title>
+            <link>https://gracefullight.dev/pe/pm/evm/</link>
+            <guid>https://gracefullight.dev/pe/pm/evm/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:38:05 GMT</pubDate>
+            <description><![CDATA[Earned Value Management]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="evm-개념">EVM 개념<a class="hash-link" aria-label="EVM 개념에 대한 직접 링크" title="EVM 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>프로젝트의 범위, 일정, 자원 측정치를 모두 결합하여 프로젝트 성과 및 진척률을 평가하는 방법론</li>
+<li>객관적인 성과 측정, 조기 문제 발견, 예측 비용, 일정 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="evm-구성도-구성요소-예시">EVM 구성도, 구성요소, 예시<a class="hash-link" aria-label="EVM 구성도, 구성요소, 예시에 대한 직접 링크" title="EVM 구성도, 구성요소, 예시에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%98%88%EC%8B%9C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="evm-구성도">EVM 구성도<a class="hash-link" aria-label="EVM 구성도에 대한 직접 링크" title="EVM 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="evm-구성요소">EVM 구성요소<a class="hash-link" aria-label="EVM 구성요소에 대한 직접 링크" title="EVM 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>측정요소</td><td><code>PV</code> 계획가치</td><td>현재시점까지 계획된 예상 비용</td></tr><tr><td>-</td><td><code>EV</code> 획득가치</td><td>현재까지 완료된 성과에 대한 비용</td></tr><tr><td>-</td><td><code>AC</code> 실제 원가</td><td>현재 완료된 작업의 지출 원가</td></tr><tr><td>-</td><td><code>BAC</code> 완료시점예산</td><td>전체 프로젝트 할당 예산</td></tr><tr><td>분석요소</td><td><code>SV</code> 일정차이</td><td><code>EV-PV</code> 계획대비 일정 편차</td></tr><tr><td>-</td><td><code>CV</code> 원가차이</td><td><code>EV-AC</code> 예산 초과 분석</td></tr><tr><td>-</td><td><code>SPI</code> 일정성과지수</td><td><code>EV/PV</code> 일정 대비 진척도 분석</td></tr><tr><td>-</td><td><code>CPI</code> 원가성과지수</td><td><code>EV/AC</code> 투입 원가 지출 효율 분석</td></tr><tr><td>예측요소</td><td><code>ETC</code> 잔여분 산정치</td><td><code>BAC-EV</code> 완료하기 위한 예상 비용</td></tr><tr><td>-</td><td><code>EAC</code> 완료 예측 비용</td><td><code>AC+ETC</code> 완료 예측 비용 추정치</td></tr><tr><td>-</td><td><code>VAC</code> 완료 추가 원가</td><td><code>BAC-EAC</code> 완료시 추가 발생 비용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="evm-예시">EVM 예시<a class="hash-link" aria-label="EVM 예시에 대한 직접 링크" title="EVM 예시에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EC%98%88%EC%8B%9C">​</a></h3>
+<blockquote>
+<p>PV 600만, EV 500만, AC 450만</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>요소</th><th>예시</th></tr></thead><tbody><tr><td>측정요소</td><td>PV</td><td>600만</td></tr><tr><td>-</td><td>EV</td><td>500만</td></tr><tr><td>-</td><td>AC</td><td>450만</td></tr><tr><td>분석요소</td><td>SV</td><td>-100만 <code>EV-PV</code></td></tr><tr><td>-</td><td>CV</td><td>50만 <code>EV-AC</code></td></tr><tr><td>-</td><td>SPI</td><td>0.83 <code>EV/PV</code></td></tr><tr><td>-</td><td>CPI</td><td>1.11 <code>EV/AC</code></td></tr></tbody></table>
+<ul>
+<li>일정 0.83으로 지연, 비용 1.11로 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="evm-위험-대응방안">EVM 위험 대응방안<a class="hash-link" aria-label="EVM 위험 대응방안에 대한 직접 링크" title="EVM 위험 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/evm/#evm-%EC%9C%84%ED%97%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<table><thead><tr><th>구분</th><th>방안</th></tr></thead><tbody><tr><td>회피</td><td>계획 변경, 연장</td></tr><tr><td>전가</td><td>위험과 책임을 제 3자로 전가</td></tr><tr><td>감수</td><td>위험을 허용 가능한 수준으로 낮춤</td></tr><tr><td>수용</td><td>위험을 허용 범위 내에서 수용</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[FP, 기능 점수]]></title>
             <link>https://gracefullight.dev/pe/pm/function-point/</link>
@@ -106,14 +134,14 @@
 <ul>
 <li>가능한 입력에 대해 확률 분포에 따라 표본 수집 후 근사치 계산</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="몬테카를로 방법 핵심요소에 대한 직접 링크" title="몬테카를로 방법 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="몬테카를로 방법 핵심요소에 대한 직접 링크" title="몬테카를로 방법 핵��심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>구성요소</td><td>입력변수</td><td>결과에 영향을 주는 무작위 값</td></tr><tr><td>-</td><td>출력변수</td><td>몬테카를로 분석 결과값</td></tr><tr><td>-</td><td>수학적 모델</td><td>입출력 변수 간의 수학적 관계</td></tr><tr><td>확률분포</td><td>정규분포</td><td>대부분의 실제 이벤트 분포</td></tr><tr><td>-</td><td>균일분포</td><td>확률이 동일한 확률변수의 통계적 표현</td></tr><tr><td>-</td><td>삼각분포</td><td>최소값, 최대값, 최빈값 사용</td></tr></tbody></table>
 <ul>
 <li>변수의 확률분표가 매개변수로 표현이 가능한 경우 MCMC 샘플러 사용</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-활용방안">몬테카를로 방법 활용방안<a class="hash-link" aria-label="몬테카를로 방법 활용방안에 대한 직접 링크" title="몬테카를로 방법 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>금융</td><td>미래 불확실성을 고려하는 의사결정 활용</td><td>주가 예측, 파생상품 관리</td></tr><tr><td>과학</td><td>복잡한 물리 현상 시뮬레이션 및 분석</td><td>입자 시뮬레이션, 방사선 모델링</td></tr><tr><td>신경망</td><td>모델 학습과 추론 과정 개선 및 최적화</td><td>강화학습, 심층신경망</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 �대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>시뮬레이션 횟수와 결과의 정확도 간 절충점을 고려하여 시뮬레이션 수행</li>
 </ul>]]></content:encoded>
@@ -134,7 +162,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-구성도-주요-기법-적용방안">소프트웨어 규모산정 구성도, 주요 기법, 적용방안<a class="hash-link" aria-label="소프트웨어 규모산정 구성도, 주요 기법, 적용방안에 대한 직접 링크" title="소프트웨어 규모산정 구성도, 주요 기법, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-구성도">소프트웨어 규모산정 구성도<a class="hash-link" aria-label="소프트웨어 규모산정 구성도에 대한 직접 링크" title="소프트웨어 규모산정 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-주요-기법">소프트웨어 규모산정 주요 기법<a class="hash-link" aria-label="소프트웨어 규모산정 주요 기법에 대한 직접 링크" title="소프트웨어 규모산정 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-주요-기법">소프트웨어 규모산정 주요 기법<a class="hash-link" aria-label="소프트웨어 규모산정 주요 기법에 대한 직접 링크" title="소프트웨어 규모산정 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EF%BF%BD%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>LoC</td><td>소스 코드 라인수 측정, 기대치, 낙관치, 비관치로 예측치 반영</td><td>측정 단순</td></tr><tr><td>M/M, 맨먼스</td><td>한 사람이 한 달동안 작업하면 되는 양으로 공수 측정</td><td>사람 * 시간</td></tr><tr><td>전문가 감정</td><td>경험적으로 단언하여 측정</td><td>주관적</td></tr><tr><td>델파이</td><td>주관적 편견을 보완하기 위해 많은 전문가 의견을 종합 산정</td><td>추가 자문 비용</td></tr><tr><td>기능 점수</td><td>사용자 관점에서 SW개발 규모 측정을 위해 기능 정량화 후 계수적 측정</td><td>간이법, 정규법</td></tr><tr><td>COCOMO</td><td>시스템을 구성하는 모듈과 서브시스템 비용 합계를 계산하여 측정</td><td>알고리즘 사용</td></tr></tbody></table>
 <ul>
 <li>재사용을 중시하는 SW개발 방법론의 진화에 따라 LoC에서 FP, COCOMO 방식 대두</li>
@@ -220,7 +248,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성도">CMMI 구성도<a class="hash-link" aria-label="CMMI 구성도에 대한 직접 링크" title="CMMI 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>SW-CMM</td><td>SW프로세스 성숙도 측정, 개선</td></tr><tr><td>SA-CMM</td><td>SW획득 과정 능력 개선</td></tr><tr><td>SE-CMM</td><td>시스템 공학적 적용요소</td></tr><tr><td>P-CMM</td><td>인적자원 능력수준 향상</td></tr><tr><td>IPD-CMM</td><td>통합제품 개발프로세스 개선</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성요소">CMMI 구성요소<a class="hash-link" aria-label="CMMI 구성요소에 대한 ��직접 링크" title="CMMI 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-구성요소">CMMI 구성요소<a class="hash-link" aria-label="CMMI 구성요소에 대한 직접 링크" title="CMMI 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로세스 영역</td><td>특정 비지니스 목적을 달성하기 위해 필요한 관련 활동들의 집합</td><td>22개 영역</td></tr><tr><td>성숙도 레벨</td><td>조직의 프로세스 성숙도를 나타내는 5단계</td><td>초기-최적화</td></tr><tr><td>프로세스 수행</td><td>프로세스 영역 내에서 수행할 활동 및 방법</td><td>구체적인 실행 방법</td></tr><tr><td>목표</td><td>각 프로세스 영역이 달성해야하는 목표</td><td>개선 방향 제시</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-성숙단계">CMMI 성숙단계<a class="hash-link" aria-label="CMMI 성숙단계에 대한 직접 링크" title="CMMI 성숙단계에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EC%84%B1%EC%88%99%EB%8B%A8%EA%B3%84">​</a></h3>
 <blockquote>
@@ -232,36 +260,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="cmmi-도입시-고려사항">CMMI 도입시 고려사항<a class="hash-link" aria-label="CMMI 도입시 고려사항에 대한 직접 링크" title="CMMI 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/cmmi/#cmmi-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>도입 목적과 기대효과를 명확히 정의하고 조직 내 가이드하여 조직문화 조성 선행 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/sw</category>
-        </item>
-        <item>
-            <title><![CDATA[소프트웨어 품질성능평가]]></title>
-            <link>https://gracefullight.dev/pe/sw/소프트웨어-품질성능평가/</link>
-            <guid>https://gracefullight.dev/pe/sw/소프트웨어-품질성능평가/</guid>
-            <pubDate>Wed, 17 Jul 2024 09:10:33 GMT</pubDate>
-            <description><![CDATA[소프트웨어 품질성능평가]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념">소프트웨어 품질성능평가 개념<a class="hash-link" aria-label="소프트웨어 품질성능평가 개념에 대한 직접 링크" title="소프트웨어 품질성능평가 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>동종의 경쟁제품간 비교시험을 통해 SW 구매자의 요구사항을 만족하고 품질 및 성능이 우수한 제품을 선정하는 시험</li>
-<li>공공 및 민간 부문 SW구매 결정의 신뢰성 제고, 비용절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념도-대상">소프트웨어 품질성능평가 개념도, 대상<a class="hash-link" aria-label="소프트웨어 품질성능평가 개념도, 대상에 대한 직접 링크" title="소프트웨어 품질성능평가 개념도, 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8C%80%EC%83%81">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-개념도">소프트웨어 품질성능평가 개념도<a class="hash-link" aria-label="소프트웨어 품질성능평가 개념도에 대한 직접 링크" title="소프트웨어 품질성능평가 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>품질성능평가 후 SW 도입으로 안정성 증가</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능평가-적용-및-제외대상">소프트웨어 품질성능평가 적용 및 제외대상<a class="hash-link" aria-label="소프트웨어 품질성능평가 적용 및 제외대상에 대한 직접 링크" title="소프트웨어 품질성능평가 적용 및 제외대상에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%A0%9C%EC%99%B8%EB%8C%80%EC%83%81">​</a></h3>
-<table><thead><tr><th>적용대상</th><th>제외대상</th></tr></thead><tbody><tr><td>구매금액 1억 이상 상용 소프트웨어</td><td>조달청 쇼핑몰 등록 제품</td></tr><tr><td>직접구매제외대상인 경우, 구매금액 2억 이상 상용 소프트웨어</td><td>정보보호제품 성능평가를 통과한 소프트웨어</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질-성능-평가-절차">소프트웨어 품질 성능 평가 절차<a class="hash-link" aria-label="소프트웨어 품질 성능 평가 절차에 대한 직접 링크" title="소프트웨어 품질 성능 평가 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-평가시험-대상-소프트웨어-분야">소프트웨어 평가시험 대상 소프트웨어 분야<a class="hash-link" aria-label="소프트웨어 평가시험 대상 소프트웨어 분야에 대한 직접 링크" title="소프트웨어 평가시험 대상 소프트웨어 분야에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%8F%89%EA%B0%80%EC%8B%9C%ED%97%98-%EB%8C%80%EC%83%81-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%B6%84%EC%95%BC">​</a></h2>
-<table><thead><tr><th>구분</th><th>분야</th><th>내용</th></tr></thead><tbody><tr><td>시스템SW</td><td>통신SW</td><td>논리적 망분리, 망연계SW</td></tr><tr><td>-</td><td>유틸리티SW</td><td>화상회의, OCR</td></tr><tr><td>-</td><td>시스템관리SW</td><td>시스템관리, NW관리, APM, AI플랫폼</td></tr><tr><td>-</td><td>정보보호SW</td><td>DB, 보안, 접근제어, 개인정보SW</td></tr><tr><td>-</td><td>미들웨어SW</td><td>WAS, WEB서버, 가상화, 검색</td></tr><tr><td>개발용SW</td><td>데이터관리용SW</td><td>DBMS, OLAP, 메타데이터 관리</td></tr><tr><td>응용SW</td><td>기업관리SW</td><td>전자문서관리(EDMS)</td></tr><tr><td>-</td><td>GIS SW</td><td>GIS</td></tr><tr><td>-</td><td>기타 응용SW</td><td>자연어처리, 분배 관리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-품질성능-평가시-고려사항">소프트웨어 품질성능 평가시 고려사항<a class="hash-link" aria-label="소프트웨어 품질성능 평가시 고려사항에 대한 직접 링크" title="소프트웨어 품질성능 평가시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5%ED%8F%89%EA%B0%80/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%92%88%EC%A7%88%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>ISO 25000 시리즈를 참조하여 평가항목 선정 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/sw</category>
