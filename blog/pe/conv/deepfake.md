@@ -5,7 +5,7 @@ description: 딥페이크
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 딥페이크의 개요

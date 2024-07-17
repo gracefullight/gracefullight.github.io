@@ -5,7 +5,7 @@ description: 2024년 가트너 전략기술 트렌드
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 가트너 10대 전략기술 개요

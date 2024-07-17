@@ -6,7 +6,7 @@ authors: me
 tags:
   - pe
   - pe/130
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 웹 3.0의 개요

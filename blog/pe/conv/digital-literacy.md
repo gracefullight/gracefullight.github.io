@@ -5,7 +5,7 @@ description: digital literacy
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 디지털 리터러시의 개념

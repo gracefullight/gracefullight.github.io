@@ -5,7 +5,7 @@ description: 음성 데이터 마이닝
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
   - pe/130
 ---
 

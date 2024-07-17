@@ -5,7 +5,7 @@ description: 앰비언트 컴퓨팅
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 앰비언트 컴퓨팅의 개요

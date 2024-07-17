@@ -6,7 +6,7 @@ authors: me
 tags:
   - pe
   - pe/131
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 오토스케일링 개요

@@ -5,7 +5,7 @@ description: 양자컴퓨터
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 양자컴퓨터의 개요

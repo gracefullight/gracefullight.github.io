@@ -5,7 +5,7 @@ description: matter
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 매터의 개요

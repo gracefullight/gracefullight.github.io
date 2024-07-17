@@ -5,7 +5,7 @@ description: NFT
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
   - pe/130
 ---
 

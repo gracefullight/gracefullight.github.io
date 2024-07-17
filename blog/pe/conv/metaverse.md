@@ -5,7 +5,7 @@ description: 메타버스
 authors: me
 tags:
   - pe
-  - pe/convergence
+  - pe/conv
 ---
 
 ## 메타버스의 개념
