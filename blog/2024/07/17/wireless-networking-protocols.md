@@ -22,6 +22,6 @@ tags:
 | 와이파이 7     | 802.11be   | 최대 30 Gbps  | 2.4/5/6 GHz | 320 MHz        | 초고속, 저지연, ==6 GHz 대역 지원==         |
 | 와이맥스       | 802.16     | 최대 1 Gbps   | 2-11 GHz    | 200 MHz        | 무선 광대역, 고속 인터넷               |
 | LTE            | 3GPP Rel.8 | 최대 300 Mbps | 700 MHz~2.7 GHz | 20 MHz     | 고속 데이터 전송, 넓은 커버리지, ==OFDMA, MIMO==        |
-| LTE-A          | 3GPP Rel.10| 최대 1 Gbps   | 700 MHz~2.7 GHz | 100 MHz    | 향상된 속도, 더 많은 사용자 지원, ==Carrier Aggregation==       |
+| LTE-A          | 3GPP Rel.10 | 최대 1 Gbps   | 700 MHz~2.7 GHz | 100 MHz    | 향상된 속도, 더 많은 사용자 지원, ==Carrier Aggregation==       |
 | 5G             | 3GPP Rel.15| 최대 10 Gbps  | 24 GHz 이하 | 400 MHz        | 초고속, 저지연, 대량 연결 가능, ==대규모 MIMO, 네트워크 슬라이싱, 밀리미터파==          |
 | 6G             | 개발 중          | 최대 1 Tbps   | 100 GHz 이하| 1-10 THz       | ==테라헤르츠 주파수== 사용, ==초저지연==, 전 세계적인 커버리지, AI 통합 |
