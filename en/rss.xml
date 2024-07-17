@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 12:00:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 12:07:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[소프트웨어 규모산정]]></title>
+            <link>https://gracefullight.dev/en/pe/pm/software-project-estimation/</link>
+            <guid>https://gracefullight.dev/en/pe/pm/software-project-estimation/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:07:49 GMT</pubDate>
+            <description><![CDATA[Software Project Estimation]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-개념">소프트웨어 규모산정 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>SW개발 프로젝트의 크기와 복잡도를 평가하여 개발 계획 수립에 필요한 비용을 산정하는 기법</li>
+<li>현실적 일정, 계획, 예산 반영으로 프로젝트 추적 관리 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-구성도-주요-기법-적용방안">소프트웨어 규모산정 구성도, 주요 기법, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-구성도">소프트웨어 규모산정 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-주요-기법">소프트웨어 규모산정 주요 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>LoC</td><td>소스 코드 라인수 측정, 기대치, 낙관치, 비관치로 예측치 반영</td><td>측정 단순</td></tr><tr><td>M/M, 맨먼스</td><td>한 사람이 한 달동안 작업하면 되는 양으로 공수 측정</td><td>사람 * 시간</td></tr><tr><td>전문가 감정</td><td>경험적으로 단언하여 측정</td><td>주관적</td></tr><tr><td>델파이</td><td>주관적 편견을 보완하기 위해 많은 전문가 의견을 종합 산정</td><td>추가 자문 비용</td></tr><tr><td>기능 점수</td><td>사용자 관점에서 SW개발 규모 측정을 위해 기능 정량화 후 계수적 측정</td><td>간이법, 정규법</td></tr><tr><td>COCOMO</td><td>시스템을 구성하는 모듈과 서브시스템 비용 합계를 계산하여 측정</td><td>알고리즘 사용</td></tr></tbody></table>
+<ul>
+<li>재사용을 중시하는 SW개발 방법론의 진화에 따라 LoC에서 FP, COCOMO 방식 대두</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정-적용방안">소프트웨어 규모산정 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>내용</th></tr></thead><tbody><tr><td>대규모 프로젝트</td><td>COCOMO</td><td>대규모 연구개발 프로젝트의 수학적 비용 산정</td></tr><tr><td>중소규모 프로젝트</td><td>FP</td><td>요구사항 기반으로 일관성 있는 규모산정</td></tr><tr><td>임베디드 프로젝트</td><td>LoC</td><td>라인 수 기반으로 시스템 크기 추정</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-규모산정시-고려사항">소프트웨어 규모산정시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/software-project-estimation/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B7%9C%EB%AA%A8%EC%82%B0%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>비기능적 요구사항도 평가지표에 포함하여 정확한 규모산정 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[감리, PMO]]></title>
             <link>https://gracefullight.dev/en/pe/pm/supervision-pmo/</link>
@@ -232,35 +260,6 @@
 <table><thead><tr><th>구분</th><th>안전</th><th>보안</th><th>품질</th></tr></thead><tbody><tr><td>보호대상</td><td>사람 신체, 생명, 재산</td><td>시스템, 데이터 기밀성, 무결성, 가용성</td><td>사용자 요구사항, 성능, 스펙</td></tr><tr><td>주요 활동</td><td>위험 식별, 완화, 평가</td><td>접근제어, 암호화, 인증, 인가</td><td>요구사항 분석, 테스트, 검증</td></tr><tr><td>위험요인</td><td>안전요구사항 누락, 설계 오류, 오구현</td><td>접근제어 오류, 해킹, 제로데이공격</td><td>기능 미구현, 요구 변경</td></tr><tr><td>위험결과</td><td>사망, 부상, 재물 손실</td><td>정보 유출, 손실, 제어권 상실</td><td>시스템 미동작, 기능 오류, 사용자 불편</td></tr><tr><td>예상시스템</td><td>안전필수시스템</td><td>모든 SW</td><td>모든 SW</td></tr><tr><td>예시</td><td>항공관제, 열차제어, 자동차제어</td><td>IDS, IPS, DDoS 대응</td><td>DBMS, OS, 웹</td></tr><tr><td>표준</td><td>IEC 61508, ISO 26262</td><td>ISO 27000, ISO 15408</td><td>ISO 25000, ISO 12207</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-안전관리-원칙-gamab-alarp-비교">소프트웨어 안전관리 원칙 GAMAB, ALARP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/software-safety/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84%EA%B4%80%EB%A6%AC-%EC%9B%90%EC%B9%99-gamab-alarp-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>GAMAB</th><th>ALARP</th></tr></thead><tbody><tr><td>목표</td><td>기존 시스템 이상의 안전수준 유지</td><td>합리적으로 실현 가능한 최소 위험 수준</td></tr><tr><td>적용범위</td><td>철도,항공 등 고안전성 산업</td><td>원자력, 화학, 섬유 등</td></tr><tr><td>접근방법</td><td>기존시스템과 비교 평가</td><td>비용대비 효과 분석</td></tr><tr><td>특징</td><td>최소 안전 수준, 지속적 개선</td><td>상위, 중간, 하위 위험도</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[인수테스트, 알파테스트, 베타테스트]]></title>
-            <link>https://gracefullight.dev/en/pe/sw/acceptance-test/</link>
-            <guid>https://gracefullight.dev/en/pe/sw/acceptance-test/</guid>
-            <pubDate>Mon, 15 Jul 2024 09:50:57 GMT</pubDate>
-            <description><![CDATA[Acceptance test, Alpha test, Beta test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트의-개념">인수테스트의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>시스템 인수를 위해 기능, 비기능적 요구사항을 사용자가 직접 테스트하여 개발이 완료되었음을 증명하는 테스트</li>
-<li>준수성 확인, 고객 피드백, 배포 가능성 평가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-개념도-특징-적용방안">알파테스트, 베타테스트 개념도, 특징, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-개념도">알파테스트, 베타테스트 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>소규모, 한정된 개발환경에서 고객 피드백을 반영하고, 최종 사용자의 사용경험 확보와 이해 향상</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>환경</td><td>개발환경</td><td>사용자환경</td></tr><tr><td>목표</td><td>결함발견, 부하검사, 신뢰성</td><td>사용자제품평가, 공개테스트서비스</td></tr><tr><td>시점</td><td>서비스 개발 완성 시점</td><td>공개 서비스 발매 전 최종 심의</td></tr><tr><td>참가자</td><td>개발자, 테스터, 선택된 사용자</td><td>고객, 최종 사용자</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베사테스트-적용방안">알파테스트, 베사테스트 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%EC%82%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>기능적합성</td><td>요구 기능 검증, 주요 기능 확인</td><td>실제 사용자 요구 충족, 기능의 실사용 평가</td></tr><tr><td>효율성</td><td>코드 최적화, 성능문제 발견</td><td>실제 사용 환경 내 성능테스트, 자원 사용 검토</td></tr><tr><td>사용성</td><td>사용자 인터페이스 기본 검토, 개선</td><td>실제 사용자 경험 수집, 만족도 평가</td></tr><tr><td>호환성</td><td>다양한 내부시스템 및 환경과 호환성 테스트</td><td>다양한 사용자 환경 및 플랫폼 호환성 테스트</td></tr><tr><td>신뢰성</td><td>주요 결함, 버그 식별, 시스템 안정성 초기 검토</td><td>장기간 사용 안정성 평가, 시스템 실패율 검증</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트-고려사항">인수테스트 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>실제 사용자 환경에서 보안성 검토 필요</li>
-</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
         </item>
