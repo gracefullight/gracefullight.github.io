@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 14:13:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 14:34:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[감리시점과 감리영역]]></title>
+            <link>https://gracefullight.dev/pe/pm/감리시점과-감리영역/</link>
+            <guid>https://gracefullight.dev/pe/pm/감리시점과-감리영역/</guid>
+            <pubDate>Wed, 17 Jul 2024 14:34:22 GMT</pubDate>
+            <description><![CDATA[감리시점과 감리영역]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="감리점검-프레임워크의-개념">감리점검 프레임워크의 개념<a class="hash-link" aria-label="감리점검 프레임워크의 개념에 대한 직접 링크" title="감리점검 프레임워크의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%A0%90%EA%B2%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>감리점검체계를 논리적이고 구조적인 형태로 개선하기 위해 감리시행에 대한 논리적인 흐름을 나타낸 점검모델</li>
+<li>감리 수행에 기준을 제공하여 성공적인 감리 수행과 이행 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="감리점검-프레임워크-개념도-감리시점-감리영역">감리점검 프레임워크 개념도, 감리시점, 감리영역<a class="hash-link" aria-label="감리점검 프레임워크 개념도, 감리시점, 감리영역에 대한 직접 링크" title="감리점검 프레임워크 개념도, 감리시점, 감리영역에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%A0%90%EA%B2%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리점검-프레임워크-개념도">감리점검 프레임워크 개념도<a class="hash-link" aria-label="감리점검 프레임워크 개념도에 대한 직접 링크" title="감리점검 프레임워크 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%A0%90%EA%B2%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">        사업유형 / 감리시점</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       +--------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      /                                /|</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">     /         감리점검 프레임워크         / |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    +--------------------------------+  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">감리 |                                |  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">영역 |                                |  +</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |                                | / 감리관점 / 점검기준 </span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |                                |/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    +--------------------------------+</span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리시점-감리영역">감리시점, 감리영역<a class="hash-link" aria-label="감리시점, 감리영역에 대한 직접 링크" title="감리시점, 감리영역에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD">​</a></h3>
+<table><thead><tr><th>구분</th><th>감리시점</th><th>감리영역</th></tr></thead><tbody><tr><td>정보기술 아키텍처 구축</td><td>기반 정립, 현행아키텍처 수립, 목표아키텍처 구축, 이행계획 수립</td><td>기반 정립, 현행아키텍처, 목표아키텍처 구축, 관리체계</td></tr><tr><td>정보화 전략 계획 수립</td><td>현황 분석, 전략 수집, 개선 모델 및 실행 계획 수립</td><td>업무, 기술, 정보화계획, 품질 보증 활등</td></tr><tr><td>시스템 개발</td><td>요구분석, 설계, 구현, 테스트, 전개</td><td>시스템아키텍처, 응용시스템, DB, 테스트활동, 운영준비</td></tr><tr><td>데이터베이스 구축</td><td>준비, 구축</td><td>데이터 수집 및 시범 구축, 데이터 구축, 품질 검사</td></tr><tr><td>시스템 운영</td><td>운영</td><td>서비스 제공, 지원</td></tr><tr><td>유지보수</td><td>유지보수</td><td>유지보수 이행</td></tr></tbody></table>
+<ul>
+<li>감리시점 전반에서 사업관리 수행</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="감리-점검시-고려사항">감리 점검시 고려사항<a class="hash-link" aria-label="감리 점검시 고려사항에 대한 직접 링크" title="감리 점검시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC-%EC%A0%90%EA%B2%80%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>감리 과정에서 시스템 기밀성, 무결성, 가용성 등 정보보안요소 점검 후 취약점 개선방안 제시 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
         <item>
             <title><![CDATA[큐비트]]></title>
             <link>https://gracefullight.dev/pe/conv/qubit/</link>
@@ -178,7 +204,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-활용방안">몬테카를로 방법 활용방안<a class="hash-link" aria-label="몬테카를로 방법 활용방안에 대한 직접 링크" title="몬테카를로 방법 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>금융</td><td>미래 불확실성을 고려하는 의사결정 활용</td><td>주가 예측, 파생상품 관리</td></tr><tr><td>과학</td><td>복잡한 물리 현상 시뮬레이션 및 분석</td><td>입자 시뮬레이션, 방사선 모델링</td></tr><tr><td>신경망</td><td>모델 학습과 추론 과정 개선 및 최적화</td><td>강화학습, 심층신경망</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EF%BF%BD%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EF%BF%BD%EF%BF%BD%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>시뮬레이션 횟수와 결과의 정확도 간 절충점을 고려하여 시뮬레이션 수행</li>
 </ul>]]></content:encoded>
@@ -259,16 +285,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/sw</category>
-        </item>
-        <item>
-            <title><![CDATA[무선 네트워크 프로토콜]]></title>
-            <link>https://gracefullight.dev/2024/07/17/wireless-networking-protocols/</link>
-            <guid>https://gracefullight.dev/2024/07/17/wireless-networking-protocols/</guid>
-            <pubDate>Wed, 17 Jul 2024 11:28:39 GMT</pubDate>
-            <description><![CDATA[Wireless Networking Protocols]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="무선-네트워크-프로토콜-비교">무선 네트워크 프로토콜 비교<a class="hash-link" aria-label="무선 네트워크 프로토콜 비교에 대한 직접 링크" title="무선 네트워크 프로토콜 비교에 대한 직접 링크" href="https://gracefullight.dev/2024/07/17/wireless-networking-protocols/#%EB%AC%B4%EC%84%A0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>무선통신기술</th><th>표준번호</th><th>속도</th><th>주파수</th><th>대역폭</th><th>특징</th></tr></thead><tbody><tr><td>블루투스</td><td>802.15.1</td><td>1 Mbps</td><td>2.4 GHz</td><td>1 MHz</td><td>근거리 무선 통신, 저전력 소비, <mark class="flexible-marker flexible-marker-default">주파수 호핑</mark></td></tr><tr><td>Zigbee</td><td>802.15.4</td><td>250 kbps</td><td>2.4 GHz</td><td>2 MHz</td><td>저전력, 저비용, <mark class="flexible-marker flexible-marker-default">산업 자동화</mark></td></tr><tr><td>Thread</td><td>802.15.4</td><td>250 kbps</td><td>2.4 GHz</td><td>2 MHz</td><td>저전력, 메시 네트워크, <mark class="flexible-marker flexible-marker-default">IoT 기기, IPv6</mark></td></tr><tr><td>Li-Fi</td><td>802.15.7</td><td>최대 224 Gbps</td><td>가시광선</td><td>400~800 THz</td><td>빛을 이용한 무선통신, <mark class="flexible-marker flexible-marker-default">높은 보안성</mark></td></tr><tr><td>초광대역(UWB)</td><td>802.15.3a</td><td>480 Mbps</td><td>3.1-10.6 GHz</td><td>7.5 GHz</td><td>초저전력, 고속 데이터 전송, 실내 거리 측정</td></tr><tr><td>무선 PAN</td><td>802.15</td><td>250 kbps</td><td>2.4 GHz</td><td>2 MHz</td><td>개인 영역 네트워크, 저비용</td></tr><tr><td>와이파이 5</td><td>802.11ac</td><td>최대 1.3 Gbps</td><td>5 GHz</td><td>160 MHz</td><td>빠른 속도, 더 넓은 커버리지, MU-MIMO, 빔포밍</td></tr><tr><td>와이파이 6</td><td>802.11ax</td><td>최대 9.6 Gbps</td><td>2.4/5 GHz</td><td>160 MHz</td><td>높은 효율성, 많은 기기 연결 지원, OFDMA, MU-MIMO, BSS Coloring</td></tr><tr><td>와이파이 7</td><td>802.11be</td><td>최대 30 Gbps</td><td>2.4/5/6 GHz</td><td>320 MHz</td><td>초고속, 저지연, <mark class="flexible-marker flexible-marker-default">6 GHz 대역 지원</mark></td></tr><tr><td>와이맥스</td><td>802.16</td><td>최대 1 Gbps</td><td>2-11 GHz</td><td>200 MHz</td><td>무선 광대역, 고속 인터넷</td></tr><tr><td>LTE</td><td>3GPP Rel.8</td><td>최대 300 Mbps</td><td>700 MHz~2.7 GHz</td><td>20 MHz</td><td>고속 데이터 전송, 넓은 커버리지, <mark class="flexible-marker flexible-marker-default">OFDMA, MIMO</mark></td></tr><tr><td>LTE-A</td><td>3GPP Rel.10</td><td>최대 1 Gbps</td><td>700 MHz~2.7 GHz</td><td>100 MHz</td><td>향상된 속도, 더 많은 사용자 지원, <mark class="flexible-marker flexible-marker-default">Carrier Aggregation</mark></td></tr><tr><td>5G</td><td>3GPP Rel.15</td><td>최대 10 Gbps</td><td>24 GHz 이하</td><td>400 MHz</td><td>초고속, 저지연, 대량 연결 가능, <mark class="flexible-marker flexible-marker-default">대규모 MIMO, 네트워크 슬라이싱, 밀리미터파</mark></td></tr><tr><td>6G</td><td>개발 중</td><td>최대 1 Tbps</td><td>100 GHz 이하</td><td>1-10 THz</td><td><mark class="flexible-marker flexible-marker-default">테라헤르츠 주파수</mark> 사용, <mark class="flexible-marker flexible-marker-default">초저지연</mark>, 전 세계적인 커버리지, AI 통합</td></tr></tbody></table>]]></content:encoded>
-            <category>me</category>
         </item>
     </channel>
 </rss>
