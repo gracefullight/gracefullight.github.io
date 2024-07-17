@@ -4,10 +4,57 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 17 Jul 2024 11:28:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jul 2024 12:00:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[감리, PMO]]></title>
+            <link>https://gracefullight.dev/pe/pm/supervision-pmo/</link>
+            <guid>https://gracefullight.dev/pe/pm/supervision-pmo/</guid>
+            <pubDate>Wed, 17 Jul 2024 12:00:08 GMT</pubDate>
+            <description><![CDATA[Supervision, PMO]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-감리와-pmo-개요">정보시스템 감리와 PMO 개요<a class="hash-link" aria-label="정보시스템 감리와 PMO 개요에 대한 직접 링크" title="정보시스템 감리와 PMO 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/supervision-pmo/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%90%EB%A6%AC%EC%99%80-pmo-%EA%B0%9C%EC%9A%94">​</a></h2>
+<!-- -->
+<ul>
+<li>PMO는 사전적, 감리는 사후적 대응으로 프로젝트를 관리하는 상호보완적 관계</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="정보시스템-감리와-pmo-개념-절차-특징">정보시스템 감리와 PMO 개념, 절차, 특징<a class="hash-link" aria-label="정보시스템 감리와 PMO 개념, 절차, 특징에 대한 직접 링크" title="정보시스템 감리와 PMO 개념, 절차, 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/supervision-pmo/#%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%90%EB%A6%AC%EC%99%80-pmo-%EA%B0%9C%EB%85%90-%EC%A0%88%EC%B0%A8-%ED%8A%B9%EC%A7%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리-pmo-개념-비교">감리, PMO 개념 비교<a class="hash-link" aria-label="감리, PMO 개념 비교에 대한 직접 링크" title="감리, PMO 개념 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/supervision-pmo/#%EA%B0%90%EB%A6%AC-pmo-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>감리</th><th>PMO</th></tr></thead><tbody><tr><td>개념</td><td>정보시스템 구축 사업의 법적 요구사항 준수, 품질 확보</td><td>정보시스템 구축 사업의 효율적인 관리 및 성공을 위한 전문 지원 조직</td></tr><tr><td>근거</td><td>전자정부법 제 57조</td><td>전자정부법 제 64조 2항</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리-pmo-절차-비교">감리, PMO 절차 비교<a class="hash-link" aria-label="감리, PMO 절차 비교에 대한 직접 링크" title="감리, PMO 절차 비교에 대한 직접 링�크" href="https://gracefullight.dev/pe/pm/supervision-pmo/#%EA%B0%90%EB%A6%AC-pmo-%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>감리</th><th>PMO</th></tr></thead><tbody><tr><td>사업준비</td><td>감리 계약 체결, 감리 계획 수립</td><td>PMO 설치 계획 수립, 인력 구성</td></tr><tr><td>사업 착수</td><td>착수 회의, 사업 계획 검토</td><td>PMO 착수 회의, 사업 계획 수립 지원</td></tr><tr><td>사업 진행</td><td>정기/수시 점검, 산출물 검토, 테스트 지원</td><td>사업 진행상황 관리, 품질/위험 관리 지원</td></tr><tr><td>사업 종료</td><td>최종 감리보고서 작성, 감리 결과 보고</td><td>최종 PMO 보고서 작성, PMO 종료</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리-pmo-특징-비교">감리, PMO 특징 비교<a class="hash-link" aria-label="감리, PMO 특징 비교에 대한 직접 링크" title="감리, PMO 특징 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/supervision-pmo/#%EA%B0%90%EB%A6%AC-pmo-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>감리</th><th>PMO</th></tr></thead><tbody><tr><td>목적</td><td>기술적 품질 보증</td><td>프로젝트 관리</td></tr><tr><td>관점</td><td>제 3자 관점, 독립적</td><td>발주자 관점</td></tr><tr><td>권고, 의무</td><td>의무사항</td><td>권고사항</td></tr><tr><td>방법론</td><td>표준화된 감리 절차 및 기법</td><td>프로젝트 관리 방법론, PMBOK</td></tr><tr><td>주요 산출물</td><td>감리계획서, 감리 수행결과 보고서, 시정조치 확인서</td><td>요구사항 정의서, 아키텍처 정의서, 사업자 관리 계획서</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/pm</category>
+        </item>
+        <item>
+            <title><![CDATA[IEC 61508, 안전 무결성 등급]]></title>
+            <link>https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/</link>
+            <guid>https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/</guid>
+            <pubDate>Wed, 17 Jul 2024 11:38:00 GMT</pubDate>
+            <description><![CDATA[Security Integrity Level]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508의-개념">IEC 61508의 개념<a class="hash-link" aria-label="IEC 61508의 개념에 대한 직접 링크" title="IEC 61508의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>산업분야에서 전자, 전기, 프로갦 가능 전자 시스템의 기능 안전을 위한 국제 표준으로 위험 분석을 통한 SIL 설정으로 시스템 안전 기능에 대한 요구 수준 결정 표준</li>
+<li>인명, 재산 손실 소화, 법적 규제 요구사항 충족, 안전 관련 설비 신뢰성 향상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-구성도-주요-유형-적용방안">IEC 61508 구성도, 주요 유형, 적용방안<a class="hash-link" aria-label="IEC 61508 구성도, 주요 유형, 적용방안에 대한 직접 링크" title="IEC 61508 구성도, 주요 유형, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-구성도">IEC 61508 구성도<a class="hash-link" aria-label="IEC 61508 구성도에 대한 직접 링크" title="IEC 61508 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-주요-유형">IEC 61508 주요 유형<a class="hash-link" aria-label="IEC 61508 주요 유형에 대한 직접 링크" title="IEC 61508 주요 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>하드웨어 안전 무결성</td><td>환경 요소에 의한 HW 성능 저하, 부품 제작 상의 허용 오차</td><td>평균 고장 발생률로 측정 가능</td></tr><tr><td>시스템 안전 무결성</td><td>안전 요구사항 명세, 설계, 구현 오류 관련 휴먼 에러</td><td>평균 고장  달성률 측정 불가</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-안전-무결성-수준">IEC 61508 안전 무결성 수준<a class="hash-link" aria-label="IEC 61508 안전 무결성 수준에 대한 직접 링크" title="IEC 61508 안전 무결성 수준에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EC%95%88%EC%A0%84-%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%88%98%EC%A4%80">​</a></h2>
+<table><thead><tr><th>수준</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>SIL1</td><td>경미한 부상, 재산 피해</td><td>낮은 위험</td></tr><tr><td>SIL2</td><td>심각한 부상, 재산 피해</td><td>중요 위험</td></tr><tr><td>SIL3</td><td>사망 또는 심각한 환경 피해</td><td>높은 위험</td></tr><tr><td>SIL4</td><td>다수 사망, 대규모 환경 피해</td><td>매우 높은 위험</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iec-61508-고려사항">IEC 61508 고려사항<a class="hash-link" aria-label="IEC 61508 고려사항에 대한 직접 링크" title="IEC 61508 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iec-61508-security-integrity-level/#iec-61508-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<!-- -->
+<ul>
+<li>SW의 전체 수명주기 동안 기능, 성능 안전을 유지하기 위한 안전 유지활동 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/sw</category>
+        </item>
         <item>
             <title><![CDATA[무선 네트워크 프로토콜]]></title>
             <link>https://gracefullight.dev/2024/07/17/wireless-networking-protocols/</link>
@@ -119,7 +166,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도-핵심요소-기술-동향">인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도, 핵심요소, 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-개념도">인터미턴트 컴퓨팅 개념도<a class="hash-link" aria-label="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" title="인터미턴트 컴퓨팅 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-핵심요소">인터미턴트 컴퓨팅 핵심요소<a class="hash-link" aria-label="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" title="인�터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-핵심요소">인터미턴트 컴퓨팅 핵심요소<a class="hash-link" aria-label="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" title="인터미턴트 컴퓨팅 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>컴퓨터 내부</td><td>FRAM</td><td>비휘발성 저전력 램 사용, 단전시 저장 바이트 복구</td></tr><tr><td>-</td><td>Data Deduplication</td><td>중복 데이터를 포인터로만 저장하여 실시간 백업 처리</td></tr><tr><td>-</td><td>메인보드 비상전력 공급</td><td>기존 5V 건전지 대체 파워시스템 구현</td></tr><tr><td>컴퓨터 외부</td><td>축전기</td><td>단전시 비상전력 가동</td></tr><tr><td>-</td><td>재생가능에너지</td><td>전력 소스를 다각화하여 재해복구성 확보</td></tr><tr><td>-</td><td>ESS</td><td>수집한 에너지를 저장하여 필요시 사용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="인터미턴트-컴퓨팅-기술-동향">인터미턴트 컴퓨팅 기술 동향<a class="hash-link" aria-label="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" title="인터미턴트 컴퓨팅 기술 동향에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/intermittent-computing/#%EC%9D%B8%ED%84%B0%EB%AF%B8%ED%84%B4%ED%8A%B8-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B8%B0%EC%88%A0-%EB%8F%99%ED%96%A5">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>-</td><td>-</td></tr><tr><td>국외</td><td>-</td><td>-</td></tr></tbody></table>
@@ -156,7 +203,7 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="명세기반-테스트-설계기법과-품질-속성">명세기반 테스트 설계기법과 품질 속성<a class="hash-link" aria-label="명세기반 테스트 설계기법과 품질 속성에 대한 직접 링크" title="명세기반 테스트 설계기법과 품질 속성에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-29119/#%EB%AA%85%EC%84%B8%EA%B8%B0%EB%B0%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%84%A4%EA%B3%84%EA%B8%B0%EB%B2%95%EA%B3%BC-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1">​</a></h2>
 <table><thead><tr><th>기법</th><th>품질 속성</th><th>비고</th></tr></thead><tbody><tr><td>경계값 분석</td><td>기능 적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>성능 효율성</td><td>시간 반응성, 용량성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>신뢰성</td><td>결함허용성</td></tr><tr><td>-</td><td>보안성</td><td>기밀성, 무결성</td></tr><tr><td>원인결과그래프</td><td>기능적합성</td><td>완전성, 무결성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>호환성</td><td>공존성</td></tr><tr><td>분류트리</td><td>기능적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>동등분할</td><td>기능적합성</td><td>완전성, 정확성, 적절성</td></tr><tr><td>-</td><td>사용성</td><td>사용자 오류 방지성</td></tr><tr><td>-</td><td>신뢰성</td><td>가용성</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-관련-�고려사항">ISO 29119 관련 고려사항<a class="hash-link" aria-label="ISO 29119 관련 고려사항에 대한 직접 링크" title="ISO 29119 관련 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-29119/#iso-29119-%EA%B4%80%EB%A0%A8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-29119-관��련-고려사항">ISO 29119 관련 고려사항<a class="hash-link" aria-label="ISO 29119 관련 고려사항에 대한 직접 링크" title="ISO 29119 관련 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-29119/#iso-29119-%EA%B4%80%EB%A0%A8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>요구사항명세서 기반의 명세기반 테스트 계획과, 프로그램 사양서 기반의 구조기반 테스트 계획으로 소프트웨어 품질 제고</li>
 </ul>]]></content:encoded>
@@ -206,72 +253,13 @@
 <ul>
 <li>소규모, 한정된 개발환경에서 고객 피드백을 반영하고, 최종 사용자의 사용경험 확보와 이해 향상</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="알파테스트, 베타테스트 특징에 대한 직접 링크" title="알파테스트, 베타테스트 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베타테스트-특징">알파테스트, 베타테스트 특징<a class="hash-link" aria-label="알파테스트, 베타테스트 특징에 대한 직접 링크" title="알��파테스트, 베타테스트 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%ED%83%80%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8A%B9%EC%A7%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>환경</td><td>개발환경</td><td>사용자환경</td></tr><tr><td>목표</td><td>결함발견, 부하검사, 신뢰성</td><td>사용자제품평가, 공개테스트서비스</td></tr><tr><td>시점</td><td>서비스 개발 완성 시점</td><td>공개 서비스 발매 전 최종 심의</td></tr><tr><td>참가자</td><td>개발자, 테스터, 선택된 사용자</td><td>고객, 최종 사용자</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="알파테스트-베사테스트-적용방안">알파테스트, 베사테스트 적용방안<a class="hash-link" aria-label="알파테스트, 베사테스트 적용방안에 대한 직접 링크" title="알파테스트, 베사테스트 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/acceptance-test/#%EC%95%8C%ED%8C%8C%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B2%A0%EC%82%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>알파테스트</th><th>베타테스트</th></tr></thead><tbody><tr><td>기능적합성</td><td>요구 기능 검증, 주요 기능 확인</td><td>실제 사용자 요구 충족, 기능의 실사용 평가</td></tr><tr><td>효율성</td><td>코드 최적화, 성능문제 발견</td><td>실제 사용 환경 내 성능테스트, 자원 사용 검토</td></tr><tr><td>사용성</td><td>사용자 인터페이스 기본 검토, 개선</td><td>실제 사용자 경험 수집, 만족도 평가</td></tr><tr><td>호환성</td><td>다양한 내부시스템 및 환경과 호환성 테스트</td><td>다양한 사용자 환경 및 플랫폼 호환성 테스트</td></tr><tr><td>신뢰성</td><td>주요 결함, 버그 식별, 시스템 안정성 초기 검토</td><td>장기간 사용 안정성 평가, 시스템 실패율 검증</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트-고�려사항">인수테스트 고려사항<a class="hash-link" aria-label="인수테스트 고려사항에 대한 직접 링크" title="인수테스트 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="인수테스트-�고려사항">인수테스트 고려사항<a class="hash-link" aria-label="인수테스트 고려사항에 대한 직접 링크" title="인수테스트 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/acceptance-test/#%EC%9D%B8%EC%88%98%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>실제 사용자 환경에서 보안성 검토 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[성능테스트]]></title>
-            <link>https://gracefullight.dev/pe/sw/performance-test/</link>
-            <guid>https://gracefullight.dev/pe/sw/performance-test/</guid>
-            <pubDate>Mon, 15 Jul 2024 09:42:22 GMT</pubDate>
-            <description><![CDATA[Performance Test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트의-개념">성능테스트의 개념<a class="hash-link" aria-label="성능테스트의 개념에 대한 직접 링크" title="성능테스트의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>시스템의 <mark class="flexible-marker flexible-marker-default">비기능 요구사항</mark>을 만족하는지 확인하기 위해 실제 환경과 비슷한 환경에서 수행하는 테스트</li>
-<li>시스템 안정성 확인, 사용자 경험 개선, 비용 절감, 확장성 검증</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트-구성도-구성요소-주요-지표">성능테스트 구성도, 구성요소, 주요 지표<a class="hash-link" aria-label="성능테스트 구성도, 구성요소, 주요 지표에 대한 직접 링크" title="성능테스트 구성도, 구성요소, 주요 지표에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능테스트-구성도">성능테스트 구성도<a class="hash-link" aria-label="성능테스트 구성도에 대한 직접 링크" title="성능테스트 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#%EC%84%B1%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>테스트 시나리오를 작성 후 부하생성, 모니터링 및 분석 후 시스템에 추가 반영</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능-테스트-구성요소">성능 테스트 구성요소<a class="hash-link" aria-label="성능 테스트 구성요소에 대한 직접 링크" title="성능 테스트 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>부하 생성기</td><td>시나리오를 기반으로 시스템에 부하를 발생시키는 도구</td><td>JMeter, LoadRunner</td></tr><tr><td>모니터링, 분석 도구</td><td>시스템 성능 지표 실시간 모니터링, 테스트 결과 분석, 성능 문제 식별</td><td>New Relic, ELK Stack</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="성능-테스트-주요-지표">성능 테스트 주요 지표<a class="hash-link" aria-label="성능 테스트 주요 지표에 대한 직접 링크" title="성능 테스트 주요 지표에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#%EC%84%B1%EB%8A%A5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>테스트환경</td><td>동시사용자</td><td>성능테스트의 가상사용자 수</td></tr><tr><td>-</td><td>활성사용자</td><td>서버에 연결되어 요청을 처리 중인 사용자로 트랜잭션 발생 사용자</td></tr><tr><td>성능</td><td>응답시간</td><td>요청 후 응답이 완료되어 사용자 화면에 출력될 때까지 시간</td></tr><tr><td>-</td><td>대기시간</td><td>하나의 요청에 응답을 수신하고 다음 요청을 보낼 때까지의 시간</td></tr><tr><td>-</td><td>TPS</td><td>단위 시간 당 서버, DB에서 처리된 요청 수</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="tps-계산">TPS 계산<a class="hash-link" aria-label="TPS 계산에 대한 직접 링크" title="TPS 계산에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/performance-test/#tps-%EA%B3%84%EC%82%B0">​</a></h2>
-<blockquote>
-<p>Little's Law</p>
-</blockquote>
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mi>U</mi><mo>=</mo><mi>λ</mi><mo>∗</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">  CU = \lambda * W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">C</span><span class="mord mathnormal" style="margin-right:0.10903em">U</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span></span></span></span></span>
-<ul>
-<li>동시사용자 = TPS * (Request Time + Think Time)</li>
-<li>웹 시스템에선 동시 사용자와 활성사용자 간 차이가 있으므로 TPS 가정 하에 활성 사용자 계산</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[페어 프로그래밍, 핑퐁 프로그래밍]]></title>
-            <link>https://gracefullight.dev/pe/sw/pair-programming/</link>
-            <guid>https://gracefullight.dev/pe/sw/pair-programming/</guid>
-            <pubDate>Mon, 15 Jul 2024 05:01:18 GMT</pubDate>
-            <description><![CDATA[Pair Programming, Ping Pong Programming]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-개념">페어 프로그래밍 개념<a class="hash-link" aria-label="페어 프로그래밍 개념에 대한 직접 링크" title="페어 프로그래밍 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>XP 개발 방법론에서 개발자 고립과 낮은 생산성 문제를 해결하기 위해 페어프로그래밍 기법 등장, 애자일 방법론에서 TDD 기반의 핑퐁 프래밍 기법으로 발전.</li>
-<li>오류에 빠른 대응 가능, 코드에 대한 책임 분담으로 실수 방지 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-프로그래밍의-개념도-구성요소-적용방안">페어 프로그래밍, 핑퐁 프로그래밍의 개념도, 구성요소, 적용방안<a class="hash-link" aria-label="페어 프로그래밍, 핑퐁 프로그래밍의 개념도, 구성요소, 적용방안에 대한 직접 링크" title="페어 프로그래밍, 핑퐁 프로그래밍의 개념도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-프로그래밍의-개념도">페어 프로그래밍, 핑퐁 프로그래밍의 개념도<a class="hash-link" aria-label="페어 프로그래밍, 핑퐁 프로그래밍의 개념도에 대한 직접 링크" title="페어 프로그래밍, 핑퐁 프로그래밍의 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-핑퐁-��프로그래밍-구성요소-비교">페어 프로그래밍, 핑퐁 프로그래밍 구성요소 비교<a class="hash-link" aria-label="페어 프로그래밍, 핑퐁 프로그래밍 구성요소 비교에 대한 직접 링크" title="페어 프로그래밍, 핑퐁 프로그래밍 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%91%ED%90%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>페어 프로그래밍</th><th>핑퐁 프로그래밍</th></tr></thead><tbody><tr><td>개념</td><td>두 개발자가 한 컴퓨터에서 개발하는 프로그래밍 방식</td><td>두 개발자가 번갈아가며 테스트와 코드 작성</td></tr><tr><td>역할</td><td>드라이버, 네비게이터</td><td>테스트 작성자, 코드 작성자</td></tr><tr><td>특징</td><td>코드 품질 향상, 코드 리뷰</td><td>TDD 촉진</td></tr><tr><td>장점</td><td>오류 감소, 지식 공유, 생산성 향상</td><td>테스트와 코드 작성의 연계</td></tr><tr><td>단점</td><td>의사소통 비용 발생</td><td>잦은 인터럽트 발생</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍-적용방안">페어 프로그래밍 적용방안<a class="hash-link" aria-label="페어 프로그래밍 적용방안에 대한 직접 링크" title="페어 프로그래밍 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>숙련도가 다른 개발자</td><td>시니어-주니어 페어로 네비게이터-드라이버 역할 수행</td><td>주니어의 빠른 성장 기대</td></tr><tr><td>신기술 학습</td><td>새로운 기술 적용시 여러 관점 고려 가능</td><td>학습효과 극대화</td></tr><tr><td>문제 해결</td><td>다양한 접근 방식으로 빠른 이슈 해결</td><td>역할 교체</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="페어-프로그래밍시-고려사항">페어 프로그래밍시 고려사항<a class="hash-link" aria-label="페어 프로그래밍시 고려사항에 대한 직접 링크" title="페어 프로그래밍시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/pair-programming/#%ED%8E%98%EC%96%B4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>서로 신뢰하고 존중하는 분위기가 선행되어야 페어 프로그래밍시 커뮤니케이션 비용 대비 생산성 효과 극대화</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/engineering</category>
