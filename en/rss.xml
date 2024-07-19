@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 19 Jul 2024 12:28:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 12:39:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[CAN, Controller Area Network]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/can/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/can/</guid>
+            <pubDate>Fri, 19 Jul 2024 12:39:37 GMT</pubDate>
+            <description><![CDATA[Controller Area Network]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-개념">CAN 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#can-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>여러 개의 ==전자제어장치<!-- -->:ECU<mark class="flexible-marker flexible-marker-default">가 차량 내에서 서로 통신하기 위해 설계된 ==ISO 11898 표준 직렬 버스시스템</mark></li>
+<li>엔진 제어, 변속기 제어, 제동, 안전 시스템 등 장치 간 <mark class="flexible-marker flexible-marker-default">우선순위 기반</mark> 효율적 통신을 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성도-구성요소-취약점">CAN 구성도, 구성요소, 취약점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%B7%A8%EC%95%BD%EC%A0%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성도">CAN 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성요소">CAN 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CAN 노드</td><td>네트워크에 연결된 장치</td><td>ECU, 센서 등</td></tr><tr><td>CAN 컨트롤러</td><td>CAN 프로토콜 처리 핵심 부품</td><td>노드 내장</td></tr><tr><td>CAN 트랜시버</td><td>컨트롤러와 버스사이 인터페이스 역할</td><td>변조, 복조</td></tr><tr><td>CAN 버스</td><td>노드를 연결하는 전선</td><td>2개선 차등 신호</td></tr><tr><td>터미네이터</td><td>신호 반사와 간섭 방지</td><td>양 끝단 위치</td></tr></tbody></table>
+<ul>
+<li>멀티마스터, ID 기반 우선순위 프로토콜로 높은 신뢰성 보유</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-취약점-대응방안">CAN 취약점, 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#can-%EC%B7%A8%EC%95%BD%EC%A0%90-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>대응방안</th></tr></thead><tbody><tr><td>전송 데이터 도청</td><td>암호화되지 않은 데이터 전송</td><td>암호화 적용</td></tr><tr><td>메세지 위조</td><td>잘못된 데이터 네트워크 주입</td><td>HMAC 검증</td></tr><tr><td>장애 전파</td><td>특정 노드 장애가 브로드캐스팅</td><td>오류 감지, 복구</td></tr><tr><td>부하 공격</td><td>네트워크상 과다 트래픽</td><td>비정상 차단</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="차량-네트워크-발전-방향">차량 네트워크 발전 방향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/can/#%EC%B0%A8%EB%9F%89-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5">​</a></h2>
+<ul>
+<li>ADAS 운용을 위해 데이트 프레임, 멀티 컨트롤러 기반의 100Mbps 성능의 EtherLoop 통신으로 전환 예상</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/nw</category>
+        </item>
         <item>
             <title><![CDATA[소스코딩, 채널코딩]]></title>
             <link>https://gracefullight.dev/en/pe/nw/source-and-channel-coding/</link>
@@ -25,7 +53,11 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-세부절차">소스코딩, 채널코딩 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 소스코딩</td><td>불필요 정보 제거, 중복 제거</td><td>손실, 무손실</td></tr><tr><td>2. 채널코딩</td><td>오류 검출, 정정 비트 추가</td><td>패리티, 해밍 코드</td></tr><tr><td>3. 변조</td><td>전송 가능한 신호로 변조</td><td>ASK, FSK, PSK</td></tr><tr><td>4. 복조</td><td>변조 신호에서 원본 데이터 추출</td><td>반송파 제거</td></tr><tr><td>5. 채널디코딩</td><td>오류 검출, 정정 비트 제거</td><td>잉여 비트 제거</td></tr><tr><td>6. 소스디코딩</td><td>압축 데이터 복원</td><td>원 정보 추출</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-비교">소스코딩, 채널코딩 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>목적</td><td>전송 효율 향상</td><td>전송 오류 검출, 정정</td></tr><tr><td>기능</td><td>압축, 부호화</td><td>에러 검출, 에러 정정</td></tr><tr><td>순서</td><td>선수행</td><td>후수행</td></tr><tr><td>기법</td><td>H.264, PCM, 허프만 부호화</td><td>짝수 패리티, 해밍코드, Read Solomon 코드</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>구분</th><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>목적</td><td>전송 효율 향상</td><td>전송 오류 검출, 정정</td></tr><tr><td>기능</td><td>압축, 부호화</td><td>에러 검출, 에러 정정</td></tr><tr><td>순서</td><td>선수행</td><td>후수행</td></tr><tr><td>기법</td><td>H.264, PCM, 허프만 부호화</td><td>짝수 패리티, 해밍코드, Read Solomon 코드</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-전송시-고려사항">디지털 전송시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A0%84%EC%86%A1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>케이블, 광섬유 등 물리적 매체를 이용한 전송시 라인코딩 기법을 활용하여 동기화, 전송효율 확보</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/nw</category>
         </item>
@@ -158,7 +190,7 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-강화학습-적용방안">SDN 강화학습 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">RL 에이전트</mark></td><td>SDN 컨트롤러 내장, 네트워크 상태 관찰, 행동 결정</td><td>보상 최대화 학습</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상태</mark></td><td>트래픽, 링크 상태, QoS, 요구사항 등 네트워크 환경정보</td><td>의사결정시 필요 정보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">행동</mark></td><td>트래픽 경로 결정, QoS 설정, 로드밸런싱 등 네트워크 제어</td><td>RL에이전트 동작 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">보상</mark></td><td>네트워크 성능지표, 지연시간, 지터, 처리량, 패킷손실률 등</td><td>에이전트 행동 피드백</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력�사항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력사항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>SDN 컨트롤러는 SpoF 이므로, 컨트롤러 보안 대비 및 고가용성 확보 필요</li>
 </ul>]]></content:encoded>
@@ -282,34 +314,6 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="evm-위험-대응방안">EVM 위험 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/evm/#evm-%EC%9C%84%ED%97%98-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>방안</th></tr></thead><tbody><tr><td>회피</td><td>계획 변경, 연장</td></tr><tr><td>전가</td><td>위험과 책임을 제 3자로 전가</td></tr><tr><td>감수</td><td>위험을 허용 가능한 수준으로 낮춤</td></tr><tr><td>수용</td><td>위험을 허용 범위 내에서 수용</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/pm</category>
-        </item>
-        <item>
-            <title><![CDATA[FP, 기능 점수]]></title>
-            <link>https://gracefullight.dev/en/pe/pm/function-point/</link>
-            <guid>https://gracefullight.dev/en/pe/pm/function-point/</guid>
-            <pubDate>Wed, 17 Jul 2024 12:30:52 GMT</pubDate>
-            <description><![CDATA[Function Point]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-개념">기능점수 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>논리적 설꼐를 기초로 SW기능을 정량화하고 계수적 측정을 통한 실험적 관계를 통해 개발 규모를 산정하는 방법</li>
-<li>사용자의 요구사항으로부터 SW비용 산정 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-측정-절차-계산-요소-기법">기능점수 측정 절차, 계산 요소, 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EC%B8%A1%EC%A0%95-%EC%A0%88%EC%B0%A8-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-측정-절차">기능점수 측정 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EC%B8%A1%EC%A0%95-%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-계산-요소">기능점수 계산 요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>예시</th></tr></thead><tbody><tr><td>EI</td><td>등록, 수정, 삭제되는 기능 입력</td><td>사용자 정보 CUD</td></tr><tr><td>EO</td><td>통계, 출력되는 기능 입력</td><td>방문자 통계, 합계</td></tr><tr><td>EQ</td><td>조회 기능 입력</td><td>사용자 조회</td></tr><tr><td>ILF</td><td>테이블 정보 입력</td><td>회원 정보</td></tr><tr><td>EIF</td><td>타 시스템 연계 테이블 정보 입력</td><td>지하철 노선 정보</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통법-비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>간이법</th><th>정통법</th></tr></thead><tbody><tr><td>측정항목</td><td>데이터 기능, 트랜잭션 수</td><td>데이터 필드 수, 연계 테이블, 트랜잭션 수</td></tr><tr><td>복잡도</td><td>평균 복잡도</td><td>기능별 복잡도</td></tr><tr><td>장점</td><td>SW규모 측정 간소화, 신속한 규모 측정</td><td>정확한 규모 측정, 경험DB 축적, 재사용</td></tr><tr><td>단점</td><td>제한적 데이터 재활용, 상대적 낮은 정확도</td><td>사업 초기 적용 어려움, 러닝 커브</td></tr><tr><td>적용시기</td><td>개발 요건 정의시 모든 단계에서 적용 가능</td><td>개발 요건 및 요건별 상세설계 제공 이후</td></tr></tbody></table>
-<ul>
-<li>개발 초기 제안, 개발 단계에서 간이법을 개발 완료 후 비용 정산시 정통법 주로 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-고려사항">기능점수 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>기능점수 산출이 어려운 자율 주행 등 융합IT 영역에서의 대책 또는 가이드 수립 필요</li>
-</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/pm</category>
         </item>
