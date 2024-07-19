@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 19 Jul 2024 12:18:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jul 2024 12:28:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[소스코딩, 채널코딩]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/source-and-channel-coding/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/source-and-channel-coding/</guid>
+            <pubDate>Fri, 19 Jul 2024 12:28:47 GMT</pubDate>
+            <description><![CDATA[Source and Channel coding]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념">소스코딩, 채널코딩 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90">​</a></h2>
+<table><thead><tr><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>데이터의 효율적 전송, 저장을 위해 중복정보를 압축하여 전송데이터를 만드는 기법</td><td>전송 채널 간 잡음, 간섭 등으로 인한 오류를 검출, 정정하기 위해 추가 정보를 넣어 감지 및 복원하는 기법</td></tr></tbody></table>
+<ul>
+<li>전송효율과 신뢰성을 위한 필수 통신 기법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도-세부절차-비교">소스코딩, 채널코딩 개념도, 세부절차, 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도">소스코딩, 채널코딩 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-세부절차">소스코딩, 채널코딩 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 소스코딩</td><td>불필요 정보 제거, 중복 제거</td><td>손실, 무손실</td></tr><tr><td>2. 채널코딩</td><td>오류 검출, 정정 비트 추가</td><td>패리티, 해밍 코드</td></tr><tr><td>3. 변조</td><td>전송 가능한 신호로 변조</td><td>ASK, FSK, PSK</td></tr><tr><td>4. 복조</td><td>변조 신호에서 원본 데이터 추출</td><td>반송파 제거</td></tr><tr><td>5. 채널디코딩</td><td>오류 검출, 정정 비트 제거</td><td>잉여 비트 제거</td></tr><tr><td>6. 소스디코딩</td><td>압축 데이터 복원</td><td>원 정보 추출</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-비교">소스코딩, 채널코딩 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>목적</td><td>전송 효율 향상</td><td>전송 오류 검출, 정정</td></tr><tr><td>기능</td><td>압축, 부호화</td><td>에러 검출, 에러 정정</td></tr><tr><td>순서</td><td>선수행</td><td>후수행</td></tr><tr><td>기법</td><td>H.264, PCM, 허프만 부호화</td><td>짝수 패리티, 해밍코드, Read Solomon 코드</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/nw</category>
+        </item>
         <item>
             <title><![CDATA[CIDR, Classless Inter-Domain Routing]]></title>
             <link>https://gracefullight.dev/en/pe/nw/cidr/</link>
@@ -137,7 +158,7 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-강화학습-적용방안">SDN 강화학습 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">RL 에이전트</mark></td><td>SDN 컨트롤러 내장, 네트워크 상태 관찰, 행동 결정</td><td>보상 최대화 학습</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상태</mark></td><td>트래픽, 링크 상태, QoS, 요구사항 등 네트워크 환경정보</td><td>의사결정시 필요 정보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">행동</mark></td><td>트래픽 경로 결정, QoS 설정, 로드밸런싱 등 네트워크 제어</td><td>RL에이전트 동작 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">보상</mark></td><td>네트워크 성능지표, 지연시간, 지터, 처리량, 패킷손실률 등</td><td>에이전트 행동 피드백</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력사항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력�사항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>SDN 컨트롤러는 SpoF 이므로, 컨트롤러 보안 대비 및 고가용성 확보 필요</li>
 </ul>]]></content:encoded>
@@ -288,34 +309,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-고려사항">기능점수 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>기능점수 산출이 어려운 자율 주행 등 융합IT 영역에서의 대책 또는 가이드 수립 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/pm</category>
-        </item>
-        <item>
-            <title><![CDATA[WBS, 작업 분류 체계]]></title>
-            <link>https://gracefullight.dev/en/pe/pm/wbs/</link>
-            <guid>https://gracefullight.dev/en/pe/pm/wbs/</guid>
-            <pubDate>Wed, 17 Jul 2024 12:24:42 GMT</pubDate>
-            <description><![CDATA[Work Breakdown Structure]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념">WBS 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>프로젝트의 목표를 달성하기 위해 필요한 모든 작업을 관리 가능한 단위로 세분화한 분류 체계</li>
-<li>프로젝트 범위 명확화, 체계적인 작업관리, 진행 상황 및 성과 측정, 책임 소재 명확화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념도-작성-원칙-작성-이점">WBS 개념도, 작성 원칙, 작성 이점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99-%EC%9E%91%EC%84%B1-%EC%9D%B4%EC%A0%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-개념도">WBS 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<table><thead><tr><th>레벨</th><th>WBS</th></tr></thead><tbody><tr><td>레벨0: 정의</td><td>프로젝트</td></tr><tr><td>레벨1: 단계</td><td>기획 - 설계 - 개발</td></tr><tr><td>레벨2: 주기능</td><td>FE개발 - BE 개발</td></tr><tr><td>레벨3: 상세기능</td><td>마크업 - UI개발 - JS개발</td></tr><tr><td>레벨4: 세부작업</td><td>페이지1 - 페이지2 - 페이지3</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성-원칙">WBS 작성 원칙<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>100% 원칙</td><td>모든 세부작업의 합이 전체 범위를 100% 포함</td><td>누락, 중복 방지</td></tr><tr><td>상호배타성</td><td>각 작업은 명확히 구분되어야하고 고유해야함</td><td>중복으로 인한 혼란 방지</td></tr><tr><td>결과지향성</td><td>작업 수행 방법이 아닌 결과에 초점 필요</td><td>객관적 완료 판단 기준</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성-이점">WBS 작성 이점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1-%EC%9D%B4%EC%A0%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로젝트 관리</td><td>일원화</td><td>-</td></tr><tr><td>-</td><td>진척도 관리</td><td>-</td></tr><tr><td>-</td><td>우선순위 관리</td><td>-</td></tr><tr><td>-</td><td>일정수립근거</td><td>-</td></tr><tr><td>-</td><td>예산 관리</td><td>-</td></tr><tr><td>의사소통</td><td>이해관계자 소통</td><td>-</td></tr><tr><td>-</td><td>현황 공유</td><td>-</td></tr><tr><td>프로세스</td><td>생산성</td><td>-</td></tr><tr><td>-</td><td>R&amp;R</td><td>-</td></tr><tr><td>-</td><td>위험 관리</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="wbs-작성시-고려사항">WBS 작성시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/wbs/#wbs-%EC%9E%91%EC%84%B1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>프로젝트 범위 명확화</li>
-<li>유연성 확보</li>
-<li>표준 용어의 정의</li>
-<li>이해관계자 의견 수렴</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/pm</category>
