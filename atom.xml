@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-19T11:50:44.128Z</updated>
+    <updated>2024-07-19T11:57:14.108Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Socket, TCP, HTTP, Websocket 통신]]></title>
+        <id>https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/</id>
+        <link href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/"/>
+        <updated>2024-07-19T11:57:14.108Z</updated>
+        <summary type="html"><![CDATA[Socket, TCP, HTTP and Websocket Communication]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-개요">소켓 통신의 개요<a class="hash-link" aria-label="소켓 통신의 개요에 대한 직접 링크" title="소켓 통신의 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-개념">소켓 통신의 개념<a class="hash-link" aria-label="소켓 통신의 개념에 대한 직접 링크" title="소켓 통신의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
+<!-- -->
+<ul>
+<li>네트워크 상에서 서로 다른 시스템 간에 데이터를 송수신할 수 있게하는 인터페이스 제공</li>
+<li>IP, Port를 활용하여 통신연결 설정</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-특징">소켓 통신의 특징<a class="hash-link" aria-label="소켓 통신의 특징에 대한 직접 링크" title="소켓 통신의 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%ED%8A%B9%EC%A7%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양방향 통신</td><td>데이터 양방향 송수신 가능</td><td>다양한 데이터 타입</td></tr><tr><td>실시간성</td><td>연결이 유지되는 동안 실시간 송수신</td><td>지연시간 최소화</td></tr><tr><td>프로토콜 독립적</td><td>다양한 네트워크 프로토콜 사용 가능</td><td>TCP, UDP</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도-특징">TCP 소켓 구성도, 특징<a class="hash-link" aria-label="TCP 소켓 구성도, 특징에 대한 직접 링크" title="TCP 소켓 구성도, 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%8A%B9%EC%A7%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도">TCP 소켓 구성도<a class="hash-link" aria-label="TCP 소켓 구성도에 대한 직접 링크" title="TCP 소켓 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-특징">TCP 소켓 특징<a class="hash-link" aria-label="TCP 소켓 특징에 대한 직접 링크" title="TCP 소켓 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%ED%8A%B9%EC%A7%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>신뢰성</td><td>데이터 손실 없이 정확히 전달 보장</td><td>순서보장</td></tr><tr><td>연결지향</td><td>통신 전 연결 설정 후 종료까지 유지</td><td>재연결 오버헤드</td></tr><tr><td>흐름제어</td><td>데이터 흐름제어로 수신자 처리속도 맞춤 설정</td><td>송수신 속도 불일치 해결</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="http-개념-실시간-통신-기법">HTTP 개념, 실시간 통신 기법<a class="hash-link" aria-label="HTTP 개념, 실시간 통신 기법에 대한 직접 링크" title="HTTP 개념, 실시간 통신 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EA%B0%9C%EB%85%90-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0-%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-개념">HTTP 개념<a class="hash-link" aria-label="HTTP 개념에 대한 직접 링크" title="HTTP 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>요청, 응답 단일요청을 위해 비연결성, 무상태성, 효율성 특징</li>
+<li>실시간 데이터 통신을 위해 폴링, 롱폴링 기법 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-실시간-통신-기법">HTTP 실시간 통신 기법<a class="hash-link" aria-label="HTTP 실시간 통신 기법에 대한 직접 링크" title="HTTP 실시간 통신 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
+<ul>
+<li>HTTP 헤더 및 커넥션 오버헤드 증가로 HTML5에서 웹소켓으로 표준화 진행</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_n3DU" id="폴링">폴링<a class="hash-link" aria-label="폴링에 대한 직접 링크" title="폴링에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%ED%8F%B4%EB%A7%81">​</a></h4>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_n3DU" id="롱폴링">롱폴링<a class="hash-link" aria-label="롱폴링에 대한 직접 링크" title="롱폴링에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EB%A1%B1%ED%8F%B4%EB%A7%81">​</a></h4>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="웹소켓">웹소켓<a class="hash-link" aria-label="웹소켓에 대한 직접 링크" title="웹소켓에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%9B%B9%EC%86%8C%EC%BC%93">​</a></h2>
+<!-- -->
+<ul>
+<li>전이중통신, 지속연결, 확장성</li>
+<li>초기 핸드쉐이킹 비용이 크므로 DNS캐시, TLS 인증서 캐시, HSTS 등 연결 비용 감소 기법 활용</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NFC, Near Field Communication]]></title>
         <id>https://gracefullight.dev/pe/nw/nfc/</id>
@@ -23,7 +70,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-구성요소">NFC 구성요소<a class="hash-link" aria-label="NFC 구성요소에 대한 직접 링크" title="NFC 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/nfc/#nfc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>NFC 칩</td><td>데이터 처리 및 저장 담당</td><td>RF 인터페이스 프로토콜 처리</td></tr><tr><td>안테나</td><td>데이터 송수신 담당</td><td>13.56MHz</td></tr><tr><td>NFC 컨트롤러</td><td>NFC 칩, 안테나 제어 및 통신 관리</td><td>기기와 연동하여 NFC 기능 제공</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-적용방안">NFC 적용방안<a class="hash-link" aria-label="NFC 적용방안에 대한 직접 링크" title="NFC 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/nfc/#nfc-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-��적용방안">NFC 적용방안<a class="hash-link" aria-label="NFC 적용방안에 대한 직접 링크" title="NFC 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/nfc/#nfc-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>대중교통요금, 출입통제, 관광정보</td><td>편의성, 효율성</td></tr><tr><td>금융</td><td>모바일 결제, ATM 출금, 포인트 적립</td><td>간편, 안전 결제</td></tr><tr><td>민간</td><td>제품정보제공, 쿠폰발행, 마케팅 활용</td><td>고객 혜택, 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="무선통신기술-비교">무선통신기술 비교<a class="hash-link" aria-label="무선통신기술 비교에 대한 직접 링크" title="무선통신기술 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/nfc/#%EB%AC%B4%EC%84%A0%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>NFC</th><th>Bluetooth</th><th>Thread</th></tr></thead><tbody><tr><td>주파수</td><td>13.56MHz</td><td>2.4GHz</td><td>2.4GHz</td></tr><tr><td>거리</td><td>~10cm</td><td>~50m</td><td>~100m</td></tr><tr><td>전력소비</td><td>매우 낮음</td><td>낮음</td><td>낮음</td></tr><tr><td>속도</td><td>424kbps</td><td>50mbps</td><td>250kbps</td></tr><tr><td>용도</td><td>결제, 인증, 데이터 교환</td><td>오디오 스트리밍, 데이터 전송, 웨어러블 디바이스</td><td>스마트홈 자동화</td></tr></tbody></table>
@@ -116,7 +163,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="감리점검-프레임워크-개념도-감리시점-감리영역">감리점검 프레임워크 개념도, 감리시점, 감리영역<a class="hash-link" aria-label="감리점검 프레임워크 개념도, 감리시점, 감리영역에 대한 직접 링크" title="감리점검 프레임워크 개념도, 감리시점, 감리영역에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%A0%90%EA%B2%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리점검-프레임워크-개념도">감리점검 프레임워크 개념도<a class="hash-link" aria-label="감리점검 프레임워크 개념도에 대한 직접 링크" title="감리점검 프레임워크 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%A0%90%EA%B2%80-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <div class="language-text codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-text codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain">        사업유형 / 감리시점</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">       +--------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">      /                                /|</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">     /         감리점검 프레임워크         / |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    +--------------------------------+  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">감리 |                                |  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">영역 |                                |  +</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |                                | / 감리관점 / 점검기준 </span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    |                                |/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    +--------------------------------+</span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리시점-감리영역">감리시점, 감리영역<a class="hash-link" aria-label="감리�시점, 감리영역에 대한 직접 링크" title="감리시점, 감리영역에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="감리시점-감리영역">감리시점, 감리영역<a class="hash-link" aria-label="감리시점, 감리영역에 대한 직접 링크" title="감리시점, 감리영역에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90%EA%B3%BC-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD/#%EA%B0%90%EB%A6%AC%EC%8B%9C%EC%A0%90-%EA%B0%90%EB%A6%AC%EC%98%81%EC%97%AD">​</a></h3>
 <table><thead><tr><th>구분</th><th>감리시점</th><th>감리영역</th></tr></thead><tbody><tr><td>정보기술 아키텍처 구축</td><td>기반 정립, 현행아키텍처 수립, 목표아키텍처 구축, 이행계획 수립</td><td>기반 정립, 현행아키텍처, 목표아키텍처 구축, 관리체계</td></tr><tr><td>정보화 전략 계획 수립</td><td>현황 분석, 전략 수집, 개선 모델 및 실행 계획 수립</td><td>업무, 기술, 정보화계획, 품질 보증 활등</td></tr><tr><td>시스템 개발</td><td>요구분석, 설계, 구현, 테스트, 전개</td><td>시스템아키텍처, 응용시스템, DB, 테스트활동, 운영준비</td></tr><tr><td>데이터베이스 구축</td><td>준비, 구축</td><td>데이터 수집 및 시범 구축, 데이터 구축, 품질 검사</td></tr><tr><td>시스템 운영</td><td>운영</td><td>서비스 제공, 지원</td></tr><tr><td>유지보수</td><td>유지보수</td><td>유지보수 이행</td></tr></tbody></table>
 <ul>
 <li>감리시점 전반에서 사업관리 수행</li>
@@ -290,41 +337,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-도입시-고려사항">ISO 21500 도입시 고려사항<a class="hash-link" aria-label="ISO 21500 도입시 고려사항에 대한 직접 링크" title="ISO 21500 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/iso-21500/#iso-21500-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>조직에 특성에 맞는 테일러링 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/pm" term="pe/pm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[몬테카를로 방법]]></title>
-        <id>https://gracefullight.dev/pe/pm/monte-carlo-method/</id>
-        <link href="https://gracefullight.dev/pe/pm/monte-carlo-method/"/>
-        <updated>2024-07-17T12:13:34.179Z</updated>
-        <summary type="html"><![CDATA[Monte-Carlo Method]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-개념">몬테카를로 방법 개념<a class="hash-link" aria-label="몬테카를로 방법 개념에 대한 직접 링크" title="몬테카를로 방법 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">랜덤 샘플링</mark>과 <mark class="flexible-marker flexible-marker-default">확률적 모델링</mark>을 사용하여 복잡한 시스템의 행동을 분석하거나 문제를 해결하는 수학적 기법</li>
-<li>복잡한 문제의 <mark class="flexible-marker flexible-marker-default">근사적 해 접근</mark>, 입력 변수의 불확실성 처리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-절차-핵심요소-활용방안">몬테카를로 방법 절차, 핵심요소, 활용방안<a class="hash-link" aria-label="몬테카를로 방법 절차, 핵심요소, 활용방안에 대한 직접 링크" title="몬테카를로 방법 절차, 핵심요소, 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EC%A0%88%EC%B0%A8-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-절차">몬테카를로 방법 절차<a class="hash-link" aria-label="몬테카를로 방법 절차에 대한 직접 링크" title="몬테카를로 방법 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<ul>
-<li>가능한 입력에 대해 확률 분포에 따라 표본 수집 후 근사치 계산</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-핵심요소">몬테카를로 방법 핵심요소<a class="hash-link" aria-label="몬테카를로 방법 핵심요소에 대한 직접 링크" title="몬테카를로 방법 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>요소</th><th>설명</th></tr></thead><tbody><tr><td>구성요소</td><td>입력변수</td><td>결과에 영향을 주는 무작위 값</td></tr><tr><td>-</td><td>출력변수</td><td>몬테카를로 분석 결과값</td></tr><tr><td>-</td><td>수학적 모델</td><td>입출력 변수 간의 수학적 관계</td></tr><tr><td>확률분포</td><td>정규분포</td><td>대부분의 실제 이벤트 분포</td></tr><tr><td>-</td><td>균일분포</td><td>확률이 동일한 확률변수의 통계적 표현</td></tr><tr><td>-</td><td>삼각분포</td><td>최소값, 최대값, 최빈값 사용</td></tr></tbody></table>
-<ul>
-<li>변수의 확률분표가 매개변수로 표현이 가능한 경우 MCMC 샘플러 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-활용방안">몬테카를로 방법 활용방안<a class="hash-link" aria-label="몬테카를로 방법 활용방안에 대한 직접 링크" title="몬테카를로 방법 활용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>금융</td><td>미래 불확실성을 고려하는 의사결정 활용</td><td>주가 예측, 파생상품 관리</td></tr><tr><td>과학</td><td>복잡한 물리 현상 시뮬레이션 및 분석</td><td>입자 시뮬레이션, 방사선 모델링</td></tr><tr><td>신경망</td><td>모델 학습과 추론 과정 개선 및 최적화</td><td>강화학습, 심층신경망</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="몬테카를로-방법-고려사항">몬테카를로 방법 고려사항<a class="hash-link" aria-label="몬테카를로 방법 고려사항에 대한 직접 링크" title="몬테카를로 방법 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/pm/monte-carlo-method/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EB%B0%A9%EB%B2%95-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>시뮬레이션 횟수와 결과의 정확도 간 절충점을 고려하여 시뮬레이션 수행</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
