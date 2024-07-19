@@ -2,11 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-19T11:57:14.108Z</updated>
+    <updated>2024-07-19T12:18:06.485Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[CIDR, Classless Inter-Domain Routing]]></title>
+        <id>https://gracefullight.dev/en/pe/nw/cidr/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/cidr/"/>
+        <updated>2024-07-19T12:18:06.485Z</updated>
+        <summary type="html"><![CDATA[Classless Inter-Domain Routing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cidr-개념">CIDR 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#cidr-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>IP 주소를 효율적으로 할당하고, 인터넷 라우팅 정보를 경제적으로 관리하게 해주는 <mark class="flexible-marker flexible-marker-default">주소할당 및 라우팅 기법</mark></li>
+<li>IP 주소 고갈문제 해결, 라우팅 테이블 축소, 유연한 네트워크 설계</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-슈퍼네팅-개념-특징">서브네팅, 슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85-%EC%8A%88%ED%8D%BC%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-개념-특징">서브네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>하나의 큰 네트워크를 여러 개의 작은 네트워크로 나누는 기법</td></tr><tr><td>특징</td><td>브로드캐스팅 감소, IP 주소 낭비 최소화</td></tr><tr><td>예시</td><td>부서별 네트워크 분리, 보안 강화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="슈퍼네팅-개념-특징">슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%8A%88%ED%8D%BC%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>여러 작은 네트워크를 하나의 큰 네트워크로 묶는 기법</td></tr><tr><td>특징</td><td>라우팅 테이블 크기 감소, 부담 완화, 트래픽 효율성</td></tr><tr><td>예시</td><td>ISP의 IP 주소 할당, BGP 라우팅</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="서브넷-마스크-개념-특징">서브넷 마스크 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%B7-%EB%A7%88%EC%8A%A4%ED%81%AC-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
+<ul>
+<li>IP 주소에서 <mark class="flexible-marker flexible-marker-default">네트워크 주소부와 호스트 주소부를 구분</mark>하는데 사용하는 <mark class="flexible-marker flexible-marker-default">32bit 값</mark></li>
+<li><mark class="flexible-marker flexible-marker-default">네트워크 주소부는 1로, 호스트 주소부는 0으로 표시</mark></li>
+</ul>
+<blockquote>
+<p>192.168.0.0/24 에서 4개의 네트워크 구성 예시</p>
+</blockquote>
+<table><thead><tr><th>192</th><th>168</th><th>100</th><th>0</th></tr></thead><tbody><tr><td>1100 0000</td><td>1010 1000</td><td>0110 0100</td><td><strong>00</strong>00 0000</td></tr></tbody></table>
+<blockquote>
+<p>네트워크 아이디: 1100 0000 1010 1000 0110 0100
+호스트 아이디: 0000 0000</p>
+</blockquote>
+<table><thead><tr><th>네트워크 아이디</th><th>호스트 아이디</th><th>네트워크 주소</th></tr></thead><tbody><tr><td>192.168.100.</td><td><strong>00</strong>00 0000</td><td>192.168.100.0</td></tr><tr><td>192.168.100.</td><td><strong>01</strong>00 0000</td><td>192.168.100.64</td></tr><tr><td>192.168.100.</td><td><strong>10</strong>00 0000</td><td>192.168.100.128</td></tr><tr><td>192.168.100.</td><td><strong>11</strong>00 0000</td><td>192.168.100.192</td></tr></tbody></table>
+<blockquote>
+<p>서브넷마스크: 255.255.255.192/26
+사용가능 호스트: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>62</mn><mo>=</mo><msup><mn>2</mn><mn>6</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">62 = 2^6 - 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">62</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">2</span></span></span></span> (네트워크 아이디, 브로드캐스트 주소)</p>
+</blockquote>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Socket, TCP, HTTP, Websocket 통신]]></title>
         <id>https://gracefullight.dev/en/pe/nw/socket-tcp-http-websocket/</id>
@@ -70,7 +113,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-구성요소">NFC 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/nfc/#nfc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>NFC 칩</td><td>데이터 처리 및 저장 담당</td><td>RF 인터페이스 프로토콜 처리</td></tr><tr><td>안테나</td><td>데이터 송수신 담당</td><td>13.56MHz</td></tr><tr><td>NFC 컨트롤러</td><td>NFC 칩, 안테나 제어 및 통신 관리</td><td>기기와 연동하여 NFC 기능 제공</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-적용방안">NFC 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/nfc/#nfc-%EF%BF%BD%EF%BF%BD%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nfc-적용방안">NFC 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/nfc/#nfc-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>대중교통요금, 출입통제, 관광정보</td><td>편의성, 효율성</td></tr><tr><td>금융</td><td>모바일 결제, ATM 출금, 포인트 적립</td><td>간편, 안전 결제</td></tr><tr><td>민간</td><td>제품정보제공, 쿠폰발행, 마케팅 활용</td><td>고객 혜택, 정보 제공</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="무선통신기술-비교">무선통신기술 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/nfc/#%EB%AC%B4%EC%84%A0%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>NFC</th><th>Bluetooth</th><th>Thread</th></tr></thead><tbody><tr><td>주파수</td><td>13.56MHz</td><td>2.4GHz</td><td>2.4GHz</td></tr><tr><td>거리</td><td>~10cm</td><td>~50m</td><td>~100m</td></tr><tr><td>전력소비</td><td>매우 낮음</td><td>낮음</td><td>낮음</td></tr><tr><td>속도</td><td>424kbps</td><td>50mbps</td><td>250kbps</td></tr><tr><td>용도</td><td>결제, 인증, 데이터 교환</td><td>오디오 스트리밍, 데이터 전송, 웨어러블 디바이스</td><td>스마트홈 자동화</td></tr></tbody></table>
@@ -268,7 +311,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-계산-요소">기능점수 계산 요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B3%84%EC%82%B0-%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>예시</th></tr></thead><tbody><tr><td>EI</td><td>등록, 수정, 삭제되는 기능 입력</td><td>사용자 정보 CUD</td></tr><tr><td>EO</td><td>통계, 출력되는 기능 입력</td><td>방문자 통계, 합계</td></tr><tr><td>EQ</td><td>조회 기능 입력</td><td>사용자 조회</td></tr><tr><td>ILF</td><td>테이블 정보 입력</td><td>회원 정보</td></tr><tr><td>EIF</td><td>타 시스템 연계 테이블 정보 입력</td><td>지하철 노선 정보</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통��법-비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="기능점수-간이법-정통법-비교">기능점수 간이법, 정통법 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/function-point/#%EA%B8%B0%EB%8A%A5%EC%A0%90%EC%88%98-%EA%B0%84%EC%9D%B4%EB%B2%95-%EC%A0%95%ED%86%B5%EB%B2%95-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>간이법</th><th>정통법</th></tr></thead><tbody><tr><td>측정항목</td><td>데이터 기능, 트랜잭션 수</td><td>데이터 필드 수, 연계 테이블, 트랜잭션 수</td></tr><tr><td>복잡도</td><td>평균 복잡도</td><td>기능별 복잡도</td></tr><tr><td>장점</td><td>SW규모 측정 간소화, 신속한 규모 측정</td><td>정확한 규모 측정, 경험DB 축적, 재사용</td></tr><tr><td>단점</td><td>제한적 데이터 재활용, 상대적 낮은 정확도</td><td>사업 초기 적용 어려움, 러닝 커브</td></tr><tr><td>적용시기</td><td>개발 요건 정의시 모든 단계에서 적용 가능</td><td>개발 요건 및 요건별 상세설계 제공 이후</td></tr></tbody></table>
 <ul>
 <li>개발 초기 제안, 개발 단계에서 간이법을 개발 완료 후 비용 정산시 정통법 주로 사용</li>
@@ -308,35 +351,6 @@
 <li>유연성 확보</li>
 <li>표준 용어의 정의</li>
 <li>이해관계자 의견 수렴</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/pm" term="pe/pm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ISO 21500]]></title>
-        <id>https://gracefullight.dev/en/pe/pm/iso-21500/</id>
-        <link href="https://gracefullight.dev/en/pe/pm/iso-21500/"/>
-        <updated>2024-07-17T12:19:20.928Z</updated>
-        <summary type="html"><![CDATA[ISO 21500]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-개념">ISO 21500 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>프로젝트 관리에 대한 원칙과 프로세스를 제공하는 국제 표준</li>
-<li>다양한 산업 및 조직에서 프로젝트 관리에 대한 일관성 및 효율성 제공, 프로젝트 성공률 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-구성도-구성요소-적용방안">ISO 21500 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-구성도">ISO 21500 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-구성요소">ISO 21500 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>착수</td><td>프로젝트 시작시 프로젝트 목적 정의, PM 임명</td><td>프로젝트 헌장, 이해관계자 식별</td></tr><tr><td>기획</td><td>세부 계획 수립, 성과 측정 기준선 수립</td><td>프로젝트 기획 수립, 범위, 일정, 비용 추정</td></tr><tr><td>이행/실행</td><td>프로젝트 관리 활동 수행, 계획에 따른 프로젝트 실행</td><td>프로젝트 작업 지시, 품질 보증 수행</td></tr><tr><td>통제</td><td>프로젝트 실적 모니터링, 측정, 통제, 예방, 변경 요청</td><td>프로젝트 작업통제, 변경 통제</td></tr><tr><td>종료</td><td>프로젝트 완료, 문서 정리</td><td>최종 보고서 작성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-적용방안">ISO 21500 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>평가 및 계획</td><td>조직 현재 프로젝트 관리체계 평가 및 개선 계획 수립</td><td>AS-IS 절차 문서화, 평가</td></tr><tr><td>교육 및 도입</td><td>ISO 21500에 따른 교육 및 인식 제고</td><td>워크숍, 세미나</td></tr><tr><td>실행 및 모니터링</td><td>표준에 따른 프로세스 실행 및 지속적 관리</td><td>정기적인 검토</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-21500-도입시-고려사항">ISO 21500 도입시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/pm/iso-21500/#iso-21500-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>조직에 특성에 맞는 테일러링 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
