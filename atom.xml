@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[Controller Area Network]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-개념">CAN 개념<a class="hash-link" aria-label="CAN 개념에 대한 직접 링크" title="CAN 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>여러 개의 ==전자제어장치<!-- -->:ECU<mark class="flexible-marker flexible-marker-default">가 차량 내에서 서로 통신하기 위해 설계된 ==ISO 11898 표준 직렬 버스시스템</mark></li>
+<li>여러 개의 <mark class="flexible-marker flexible-marker-default">전자제어장치,ECU</mark>가 차량 내에서 서로 통신하기 위해 설계된 <mark class="flexible-marker flexible-marker-default">ISO 11898 표준 직렬 버스시스템</mark></li>
 <li>엔진 제어, 변속기 제어, 제동, 안전 시스템 등 장치 간 <mark class="flexible-marker flexible-marker-default">우선순위 기반</mark> 효율적 통신을 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성도-구성요소-취약점">CAN 구성도, 구성요소, 취약점<a class="hash-link" aria-label="CAN 구성도, 구성요소, 취약점에 대한 직접 링크" title="CAN 구성도, 구성요소, 취약점에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%B7%A8%EC%95%BD%EC%A0%90">​</a></h2>
