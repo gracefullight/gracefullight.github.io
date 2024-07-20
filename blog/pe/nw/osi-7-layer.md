@@ -5,7 +5,7 @@ description: OSI 7 레이어 설명
 authors: me
 tags:
   - pe
-  - pe/network
+  - pe/nw
 ---
 
 ## OSI 7 레이어 개념

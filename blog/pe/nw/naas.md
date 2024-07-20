@@ -5,7 +5,7 @@ description: Network as a Service
 authors: me
 tags:
   - pe
-  - pe/network
+  - pe/nw
 ---
 
 ## NaaS의 개념
