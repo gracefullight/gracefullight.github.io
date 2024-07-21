@@ -9,26 +9,26 @@
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Ethernet, 이더넷]]></title>
-        <id>https://gracefullight.dev/en/pe/ethernet/</id>
-        <link href="https://gracefullight.dev/en/pe/ethernet/"/>
+        <id>https://gracefullight.dev/en/pe/nw/ethernet/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/ethernet/"/>
         <updated>2024-07-20T06:00:55.008Z</updated>
         <summary type="html"><![CDATA[Ethernet, IEEE 802.3]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-개념">이더넷 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-개념">이더넷 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>네트워크에 연결된 기기들이 상호 데이터를 교환할 수 있게 해주는 48bit 길이 MAC 주소기반 통신 프로토콜</li>
 <li>유선 연결, 높은 속도, 다양한 토폴로지 지원, 높은 신뢰성</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구조-구성요소-적용방안">이더넷 프레임 구조, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구조">이더넷 프레임 구조<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구조-구성요소-적용방안">이더넷 프레임 구조, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구조">이더넷 프레임 구조<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0">​</a></h3>
 <table><thead><tr><th>Preamble</th><th>SFD</th><th>MAC 도착 주소</th><th>MAC 출발 주소</th><th>길이</th><th>데이터 ...</th><th>FSC</th></tr></thead><tbody><tr><td>7</td><td>1</td><td>6</td><td>6</td><td>2</td><td>46 - 1500</td><td>4</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구성요소">이더넷 프레임 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-구성요소">이더넷 프레임 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프리앰블</td><td>프레임 시작 알림, 수신 클럭 동기화</td><td>반복 패턴</td></tr><tr><td>시작 구분자</td><td>실제 프레임 시작을 표현</td><td>1바이트 배턴</td></tr><tr><td>목적지 MAC</td><td>데이터가 전송될 하드웨어 주소</td><td>6바이트 주소</td></tr><tr><td>출발지 MAC</td><td>데이터 전송 하드웨어 주소</td><td>6바이트 주소</td></tr><tr><td>유형, 길이</td><td>프레임 내 데이터 유형과 길이</td><td>구분값</td></tr><tr><td>데이터</td><td>실제 전송 정보</td><td>MTU 조절</td></tr><tr><td>프레임 검사 시퀀스</td><td>데이터 무결성 검증용 오류 검출 코드</td><td>CRC</td></tr></tbody></table>
 <ul>
 <li>전이중 통신 도입으로 IPG 제거</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-적용방안">이더넷 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-적용방안">이더넷 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기업네트워크</td><td>사무실 내 컴퓨터 네트워크 구성</td><td>내부망</td></tr><tr><td>데이터센터</td><td>대규모 데이터 관리, 처리</td><td>고속 이더넷</td></tr><tr><td>스마트홈</td><td>가정 내 다양한 스마트 기기 연결</td><td>안정성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-최소-크기가-64byte인-이유">이더넷 프레임 최소 크기가 64Byte인 이유<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EC%B5%9C%EC%86%8C-%ED%81%AC%EA%B8%B0%EA%B0%80-64byte%EC%9D%B8-%EC%9D%B4%EC%9C%A0">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-최소-크기가-64byte인-이유">이더넷 프레임 최소 크기가 64Byte인 이유<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%ED%94%84%EB%A0%88%EC%9E%84-%EC%B5%9C%EC%86%8C-%ED%81%AC%EA%B8%B0%EA%B0%80-64byte%EC%9D%B8-%EC%9D%B4%EC%9C%A0">​</a></h3>
 <ul>
 <li>CSMA/CD로 충돌을 감지하기 위한 대역폭 대비 최소 프레임 크기</li>
 <li>현재는 전이중 채널 사용으로 고려 대상 아님</li>
@@ -242,7 +242,7 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-강화학습-적용방안">SDN 강화학습 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">RL 에이전트</mark></td><td>SDN 컨트롤러 내장, 네트워크 상태 관찰, 행동 결정</td><td>보상 최대화 학습</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상태</mark></td><td>트래픽, 링크 상태, QoS, 요구사항 등 네트워크 환경정보</td><td>의사결정시 필요 정보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">행동</mark></td><td>트래픽 경로 결정, QoS 설정, 로드밸런싱 등 네트워크 제어</td><td>RL에이전트 동작 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">보상</mark></td><td>네트워크 성능지표, 지연시간, 지터, 처리량, 패킷손실률 등</td><td>에이전트 행동 피드백</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력사항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sdn-고력사�항">SDN 고력사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/sdn/#sdn-%EA%B3%A0%EB%A0%A5%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>SDN 컨트롤러는 SpoF 이므로, 컨트롤러 보안 대비 및 고가용성 확보 필요</li>
 </ul>]]></content>
