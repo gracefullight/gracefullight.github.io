@@ -2,11 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-21T12:43:04.748Z</updated>
+    <updated>2024-07-21T12:54:08.944Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[해밍코드]]></title>
+        <id>https://gracefullight.dev/pe/nw/hamming-code/</id>
+        <link href="https://gracefullight.dev/pe/nw/hamming-code/"/>
+        <updated>2024-07-21T12:54:08.944Z</updated>
+        <summary type="html"><![CDATA[Hamming Code]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-개념">해밍코드 개념<a class="hash-link" aria-label="해밍코드 개념에 대한 직접 링크" title="해밍코드 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>데이터 전송과정에서 발생하는 오류를 검출하고 수정하기 위한 자기정정부호로 추가 패리티 비트를 삽입하여 데이터 손상 검증</li>
+<li>통신 과정의 노이즈, 간섭으로 인한 무결성 저해 해결, 신뢰성, 정확성 보장</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-패리티-공식-계산-절차-적용-사례">해밍코드 패리티 공식, 계산 절차, 적용 사례<a class="hash-link" aria-label="해밍코드 패리티 공식, 계산 절차, 적용 사례에 대한 직접 링크" title="해밍코드 패리티 공식, 계산 절차, 적용 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%8C%A8%EB%A6%AC%ED%8B%B0-%EA%B3%B5%EC%8B%9D-%EA%B3%84%EC%82%B0-%EC%A0%88%EC%B0%A8-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-패리티-공식">해밍코드 패리티 공식<a class="hash-link" aria-label="해밍코드 패리티 공식에 대한 직접 링크" title="해밍코드 패리티 공식에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%8C%A8%EB%A6%AC%ED%8B%B0-%EA%B3%B5%EC%8B%9D">​</a></h3>
+<blockquote>
+<p>1100<sub>2</sub></p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>패리티 수</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup><mo>&gt;</mo><mo>=</mo><mi>P</mi><mo>+</mo><mi>d</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^p &gt;= P + d + 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7035em;vertical-align:-0.0391em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1</span></span></span></span></td></tr><tr><td>-</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup><mo>&gt;</mo><mo>=</mo><mi>P</mi><mo>+</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^p &gt;= P + 4 + 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7035em;vertical-align:-0.0391em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1</span></span></span></span></td></tr><tr><td>-</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">P = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">3</span></span></span></span></td></tr><tr><td>총 전송 비트 수</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">7 = (3 + 4)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">(</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">4</span><span class="mclose">)</span></span></span></span></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-계산-절차">해밍코드 계산 절차<a class="hash-link" aria-label="해밍코드 계산 절차에 대한 직접 링크" title="해밍코드 계산 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B3%84%EC%82%B0-%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>구성 방법</td><td><strong>P1</strong> <strong>P2</strong> D1 <strong>P3</strong> D2 D3 D4</td></tr><tr><td>패리티 위치</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup></mrow><annotation encoding="application/x-tex">2^p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></td></tr><tr><td>패리티 계산</td><td>X X 1 X 1 0 0</td></tr><tr><td>P1</td><td><em><strong>0</strong></em> X <em>1</em> X <em>1</em> 0 0</td></tr><tr><td>P2</td><td>0 <em><strong>1</strong></em> <em>1</em> X 1 <em>0 0</em></td></tr><tr><td>P3</td><td>0 1 1 <em><strong>1</strong> 1 0 0</em></td></tr></tbody></table>
+<ul>
+<li>합이 짞수가 되게 패리티 비트 추가</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-활용-사례">해밍코드 활용 사례<a class="hash-link" aria-label="해밍코드 활용 사례에 대한 직접 링크" title="해밍코드 활용 사례에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>통신시스템</td><td>데이터 전송과정에서 발생한 오류를 정정, 검출하여 신뢰성 제고</td><td>위성통신, 이동통신</td></tr><tr><td>저장장치</td><td>저장 및 읽기 과정에서 발생 오류 검출, 정정하여 무결성 제고</td><td>SSD, HDD</td></tr><tr><td>메모리</td><td>메모리 셀 불량 오류 검출, 수정하여 시스템 안정성 제고</td><td>ECC 메모리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-고려사항">해밍코드 고려사항<a class="hash-link" aria-label="해밍코드 고려사항에 대한 직접 링크" title="해밍코드 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>패리티 비트로 인한 전송 오버헤드 고려 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[5G 특화망]]></title>
         <id>https://gracefullight.dev/pe/nw/5g-특화망/</id>
@@ -28,7 +63,8 @@
 <table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>SDN</td><td>어플리케이션, 컨트롤플레인, 데이터플레인</td><td>데이터 전달 기능과 제어기능을 분리하여 OpenFlow를 통해 SW로 제어하는 네트워크</td></tr><tr><td>NFV</td><td>스위치,라우터 --- 가상화 --- VNFs, MANO</td><td>네트워크 기능을 추상화하여 SW적으로 제어가 가능하도록 하는 기술</td></tr><tr><td>-</td><td>-</td><td>Virtual Network Functions, Management and Orchestration</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-적용사례">5G 특화망 적용사례<a class="hash-link" aria-label="5G 특화망 적용사례에 대한 직접 링크" title="5G 특화망 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>스마트팩토리 생산 자동화</td><td>LG CNS</td></tr><tr><td>-</td><td>자율주행 C-V2X 네트워크</td><td>현대자동차</td></tr><tr><td>국외</td><td>공항 수하물 추적, 보안 검색</td><td>두바이 공항</td></tr><tr><td>-</td><td>항만 자동화, 크레인 제어</td><td>함부르크 항만</td></tr></tbody></table>
-<h2></h2>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-5g-특화망-비교">5G, 5G 특화망 비교<a class="hash-link" aria-label="5G, 5G 특화망 비교에 대한 직접 링크" title="5G, 5G 특화망 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>5G</th><th>5G 특화망</th></tr></thead><tbody><tr><td>서비스 대상</td><td>불특정 다수</td><td>특정 기업, 기관</td></tr><tr><td>네트워크 범위</td><td>광범위</td><td>제한적</td></tr><tr><td>서비스 특성</td><td>다양한 서비스</td><td>특화 서비스</td></tr><tr><td>보안</td><td>상대적 취약</td><td>강화된 보안</td></tr><tr><td>자원관리</td><td>낮은 효율</td><td>높은 효율</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
@@ -164,7 +200,7 @@
 <ul>
 <li>ADHOC 네트워크에 포함된 기기 하나라도 연결시 모든 노드가 기간망 접근 가능</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-핵심요소">ADHOC 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" title="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-핵심요소">ADHOC 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 핵심요소에 �대한 직접 링크" title="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>경로탐색</td><td>네트워크 내에서 최적의 데이터 전송 경로를 동적으로 발견</td><td>Proactive, Reactive</td></tr><tr><td>경로유지</td><td>링크 상태를 모니터링, 경로 이탈시 재구성, 오류 처리</td><td>고속 이동성 지원</td></tr><tr><td>데이터 전달</td><td>탐색 경로를 통한 패킷 전송</td><td>재전송 오류 수정</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-적용방안">ADHOC 라우팅 프로토콜 적용방안<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 적용방안에 대한 직접 링크" title="ADHOC 라우팅 프로토콜 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>재난 안전망</td><td>기존 통신망 마비시 재해복구 지원</td></tr><tr><td>-</td><td>전장 운용망</td><td>군사 작전시 유선망 대체</td></tr><tr><td>민간</td><td>IoT 통신</td><td>환경 감시 및 실시간 모니터링</td></tr><tr><td>-</td><td>스마트 팩토리</td><td>공장 네트워크 효율화</td></tr></tbody></table>
@@ -312,35 +348,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="차량-네트워크-발전-방향">차량 네트워크 발전 방향<a class="hash-link" aria-label="차량 네트워크 발전 방향에 대한 직접 링크" title="차량 네트워크 발전 방향에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#%EC%B0%A8%EB%9F%89-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5">​</a></h2>
 <ul>
 <li>ADAS 운용을 위해 데이트 프레임, 멀티 컨트롤러 기반의 100Mbps 성능의 EtherLoop 통신으로 전환 예상</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[소스코딩, 채널코딩]]></title>
-        <id>https://gracefullight.dev/pe/nw/source-and-channel-coding/</id>
-        <link href="https://gracefullight.dev/pe/nw/source-and-channel-coding/"/>
-        <updated>2024-07-19T12:28:47.434Z</updated>
-        <summary type="html"><![CDATA[Source and Channel coding]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념">소스코딩, 채널코딩 개념<a class="hash-link" aria-label="소스코딩, 채널코딩 개념에 대한 직접 링크" title="소스코딩, 채널코딩 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90">​</a></h2>
-<table><thead><tr><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>데이터의 효율적 전송, 저장을 위해 중복정보를 압축하여 전송데이터를 만드는 기법</td><td>전송 채널 간 잡음, 간섭 등으로 인한 오류를 검출, 정정하기 위해 추가 정보를 넣어 감지 및 복원하는 기법</td></tr></tbody></table>
-<ul>
-<li>전송효율과 신뢰성을 위한 필수 통신 기법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도-세부절차-비교">소스코딩, 채널코딩 개념도, 세부절차, 비교<a class="hash-link" aria-label="소스코딩, 채널코딩 개념도, 세부절차, 비교에 대한 직접 링크" title="소스코딩, 채널코딩 개념도, 세부절차, 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도">소스코딩, 채널코딩 개념도<a class="hash-link" aria-label="소스코딩, 채널코딩 개념도에 대한 직접 링크" title="소스코딩, 채널코딩 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-세부절차">소스코딩, 채널코딩 세부절차<a class="hash-link" aria-label="소스코딩, 채널코딩 세부절차에 대한 직접 링크" title="소스코딩, 채널코딩 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 소스코딩</td><td>불필요 정보 제거, 중복 제거</td><td>손실, 무손실</td></tr><tr><td>2. 채널코딩</td><td>오류 검출, 정정 비트 추가</td><td>패리티, 해밍 코드</td></tr><tr><td>3. 변조</td><td>전송 가능한 신호로 변조</td><td>ASK, FSK, PSK</td></tr><tr><td>4. 복조</td><td>변조 신호에서 원본 데이터 추출</td><td>반송파 제거</td></tr><tr><td>5. 채널디코딩</td><td>오류 검출, 정정 비트 제거</td><td>잉여 비트 제거</td></tr><tr><td>6. 소스디코딩</td><td>압축 데이터 복원</td><td>원 정보 추출</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-비교">소스코딩, 채널코딩 비교<a class="hash-link" aria-label="소스코딩, 채널코딩 비교에 대한 직접 링크" title="소스코딩, 채널코딩 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>목적</td><td>전송 효율 향상</td><td>전송 오류 검출, 정정</td></tr><tr><td>기능</td><td>압축, 부호화</td><td>에러 검출, 에러 정정</td></tr><tr><td>순서</td><td>선수행</td><td>후수행</td></tr><tr><td>기법</td><td>H.264, PCM, 허프만 부호화</td><td>짝수 패리티, 해밍코드, Read Solomon 코드</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-전송시-고려사항">디지털 전송시 고려사항<a class="hash-link" aria-label="디지털 전송시 고려사항에 대한 직접 링크" title="디지털 전송시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A0%84%EC%86%A1%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>케이블, 광섬유 등 물리적 매체를 이용한 전송시 라인코딩 기법을 활용하여 동기화, 전송효율 확보</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
