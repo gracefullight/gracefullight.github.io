@@ -5,7 +5,7 @@ description: Trusted Platform Module
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## TPM의 개념

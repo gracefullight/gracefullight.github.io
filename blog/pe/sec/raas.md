@@ -5,7 +5,7 @@ description: Ransomware as a Service
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 랜섬웨어의 개념

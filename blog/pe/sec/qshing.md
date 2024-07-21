@@ -5,7 +5,7 @@ description: 큐싱
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 큐싱의 개념

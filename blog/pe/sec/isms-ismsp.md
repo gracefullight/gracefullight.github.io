@@ -5,7 +5,7 @@ description: ISMS, ISMS-P
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## ISMS, ISMS-P 개념

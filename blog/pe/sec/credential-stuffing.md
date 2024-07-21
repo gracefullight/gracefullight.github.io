@@ -5,7 +5,7 @@ description: Credential Stuffing
 authors: me
 tags: 
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 크리덴셜 스터핑의 개념

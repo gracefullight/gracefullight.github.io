@@ -5,7 +5,7 @@ description: 접근제어
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 접근제어 개념

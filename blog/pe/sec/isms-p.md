@@ -5,7 +5,7 @@ description: 정보보호 및 개인정보보호 관리체계 인증 등에 관�
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## ISMS-P 개요

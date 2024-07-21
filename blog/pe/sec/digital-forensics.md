@@ -5,7 +5,7 @@ description: Digital Forensics
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 디지털 포렌식의 개념

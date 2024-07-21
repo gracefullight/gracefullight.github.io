@@ -5,7 +5,7 @@ description: Digital Dysfunction
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 디지털 역기능

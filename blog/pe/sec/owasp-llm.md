@@ -5,7 +5,7 @@ description: LLM 어플리케이션을 위한 OWASP 취약점 리스트
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## OWASP LLM 개요

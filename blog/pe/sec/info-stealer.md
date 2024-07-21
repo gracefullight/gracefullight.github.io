@@ -5,7 +5,7 @@ description: Info Stealer
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 인포스틸러의 개념

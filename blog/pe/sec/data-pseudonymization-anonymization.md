@@ -5,7 +5,7 @@ description: Data Pseudonymization and Anonymization
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 개인정보, 가명정보, 익명정보의 개념

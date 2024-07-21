@@ -5,7 +5,7 @@ description: Lightweight Directory Access Protocol
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 접근제어의 개념

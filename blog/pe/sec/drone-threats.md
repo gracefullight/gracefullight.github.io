@@ -5,7 +5,7 @@ description: Drone Threats
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 드론 보안위협 개념

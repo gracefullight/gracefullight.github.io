@@ -5,7 +5,7 @@ description: 대칭 암호화, 비대칭 암호화
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 대칭 암호화와 비대칭 암호화의 개념

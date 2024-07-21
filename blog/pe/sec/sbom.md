@@ -5,7 +5,7 @@ description: Software Bill of Materials
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## SBOM의 개념

@@ -5,7 +5,7 @@ description: Quantum cryptography
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 양자암호통신의 개념

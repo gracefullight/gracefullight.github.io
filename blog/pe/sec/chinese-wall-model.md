@@ -5,7 +5,7 @@ description: Chinese wall model
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 만리장성 모델의 개념

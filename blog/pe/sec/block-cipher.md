@@ -5,7 +5,7 @@ description: Block Cipher
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 블록 암호화의 개념

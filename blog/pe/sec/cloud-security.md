@@ -5,7 +5,7 @@ description: Cloud security
 authors: me
 tags: 
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 클라우드 보안 개념

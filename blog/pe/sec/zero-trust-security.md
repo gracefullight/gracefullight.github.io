@@ -5,7 +5,7 @@ description: Zero Trust Security
 authors: me
 tags: 
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## 제로 트러스트 보안의 개념

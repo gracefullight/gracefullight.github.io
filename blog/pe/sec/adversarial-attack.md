@@ -5,7 +5,7 @@ description: Adversarial Attack
 authors: me
 tags: 
   - pe
-  - pe/security 
+  - pe/sec 
 ---
 
 ## 머신러닝 적대적 공격의 개념

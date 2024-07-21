@@ -5,7 +5,7 @@ description: OWASP 2021 TOP 10 취약점 리스트
 authors: me
 tags:
   - pe
-  - pe/security
+  - pe/sec
 ---
 
 ## OWASP 개요
