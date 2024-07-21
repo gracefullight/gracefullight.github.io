@@ -23,8 +23,14 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념-및-특징">5G, 6G 개념 및 특징<a class="hash-link" aria-label="5G, 6G 개념 및 특징에 대한 직접 링크" title="5G, 6G 개념 및 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념">5G, 6G 개념<a class="hash-link" aria-label="5G, 6G 개념에 대한 직접 링크" title="5G, 6G 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>5G: 빠른 데이터, 저지연 기반 5세대 이동통신 기술</li>
+<li>6G: 촉롱간, 초저지연 기반 6세대 이동통신 기술</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-특징-비교">5G, 6G 특징 비교<a class="hash-link" aria-label="5G, 6G 특징 비교에 대한 직접 링크" title="5G, 6G 특징 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>체감속도</td><td>100Mbps</td><td>1Gbps</td></tr><tr><td>최대속도</td><td>20Gbps</td><td>1Tbps</td></tr><tr><td>주파수</td><td>6GHz, 24GHz</td><td>150GHz</td></tr><tr><td>대역폭</td><td>수 GHz</td><td>수십 GHz</td></tr><tr><td>지원고도</td><td>120m 이하</td><td>10km 이하</td></tr><tr><td>특징</td><td>광대역, 초연결, 저지연</td><td>초광대역, 초공간, 초연결, 초정밀, 초저지연, 초지능</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-적용방안">5G, 6G 적용방안<a class="hash-link" aria-label="5G, 6G 적용방안에 대한 직접 링크" title="5G, 6G 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>공공</td><td>스마트팩토리, 스마트교육</td><td>스타므시티, 지능형 재난안전망</td></tr><tr><td>금융</td><td>모바일금융, 핀테크, 비대면금융</td><td>몰입형금융, 실시간글로벌금융</td></tr><tr><td>민간</td><td>스마트홈, 자율주행</td><td>메타버스, 촉각인터넷, 로보택시</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="6g-고려사항">6G 고려사항<a class="hash-link" aria-label="6G 고려사항에 대한 직접 링크" title="6G 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#6g-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content>
         <author>
             <name>Eunkwang Shin</name>
