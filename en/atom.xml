@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-21T14:07:37.904Z</updated>
+    <updated>2024-07-21T14:15:25.120Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[MQTT]]></title>
+        <id>https://gracefullight.dev/en/pe/nw/mqtt/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/mqtt/"/>
+        <updated>2024-07-21T14:15:25.120Z</updated>
+        <summary type="html"><![CDATA[Message Queuing Telemetry Transport]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-개념">MQTT 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>클라이언트와 서버간 비동기 메세지 전달을 위한 경량 Pub/Sub 구조 TCP 프로토콜</li>
+<li>저전력, 대역폭 제한 환경, 메세징, IoT, 낮은 지연, 실시간, 다양한 OS, 언어 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성도-구성요소-적용방안">MQTT 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성도">MQTT 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성요소">MQTT 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Publisher</td><td>메세지를 특정 토픽에 발행하는 클라이언트</td><td>센서, 모바일기기 등</td></tr><tr><td>Subscriber</td><td>특정 토픽의 메세지를 구독하는 클라이언트 또는 서버</td><td>모니터링 시스템, 제어장치 등</td></tr><tr><td>Broker</td><td>발행된 메세지를 해당 토픽을 구독하는 클라이언트에 중개</td><td>메세지 라우팅</td></tr><tr><td>Topic</td><td>메세지를 분류하기 위한 계층적 문자열</td><td>home/room/humid 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>스마트홈</td><td>다양한 센서, 장치 간 데이터 전송, 상태 업데이트</td><td>편의성, 에너지 절약</td></tr><tr><td>산업 자동화</td><td>로봇과 센서간 실시간 데이터 처리</td><td>생산성, 안정성</td></tr><tr><td>헬스케어</td><td>환자 상태 모니터링, 의료기기 제어</td><td>응급상황 대처</td></tr><tr><td>스마트시티</td><td>교통정보, 환경정보, 공공시설 관리</td><td>효율성, 편의성</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-고려사항">MQTT 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>장치 간 직접통신이 필요하거나 다양한 유,무선 프로토콜을 커버해야할 경우 Matter 사용 고려</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[망 중립성]]></title>
         <id>https://gracefullight.dev/en/pe/nw/net-neutrality/</id>
@@ -62,7 +91,7 @@
 <ul>
 <li><mark class="flexible-marker flexible-marker-default">DiffServ</mark>: 트래픽을 <mark class="flexible-marker flexible-marker-default">클래스별로 분류</mark>하여 <mark class="flexible-marker flexible-marker-default">차등화</mark>된 서비스를 제공하는 기술</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-특징-비교">IntServ, DiffServ 특징 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-특징-비교">IntServ, DiffServ 특징 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%ED%8A%B9%EF%BF%BD%EF%BF%BD%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>IntServ</th><th>DiffServ</th></tr></thead><tbody><tr><td>목적</td><td>사전 경로지정, 자원 예약</td><td>트래픽별 서비스 차등화</td></tr><tr><td>특징</td><td>라우팅 오버헤드 발생</td><td>RSVP 연결비용 절감</td></tr><tr><td>서비스 목표</td><td>실시간 서비스 트래픽 흐름 지원</td><td>다양한 서비스 레벨 지원</td></tr><tr><td>엄격한 지연보증</td><td>보증 가능</td><td>불가</td></tr><tr><td>QoS 구분</td><td><mark class="flexible-marker flexible-marker-default">RSVP</mark>로 라우터에서 패킷 확인</td><td><mark class="flexible-marker flexible-marker-default">DSCP</mark> 이용 구분</td></tr><tr><td>규모</td><td>소규모</td><td>대규모</td></tr><tr><td>구현복잡도</td><td>높음, 연결 상태 관리</td><td>낮음, 분류, 마킹</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-적용방안">IntServ, DiffServ 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <ul>
@@ -295,51 +324,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="smtp-메일-전송-과정">SMTP 메일 전송 과정<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ip-mac-port-smtp/#smtp-%EB%A9%94%EC%9D%BC-%EC%A0%84%EC%86%A1-%EA%B3%BC%EC%A0%95">​</a></h2>
 <!-- -->
 <table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>연결 설정</td><td>서버의 SMTP 포트로 TCP 연결</td><td>연결 수락</td></tr><tr><td>메일 정보 전송</td><td>HELO/EHLO 명령으로 인사 후 메일 주소 교환</td><td>각 명령에 OK 수신</td></tr><tr><td>메일 데이터 전송</td><td>DATA 전송 후 헤더, 본문 전송, <code>.</code> 전송 후 본문 마침</td><td>354 Start, 250 OK</td></tr><tr><td>연결 종료</td><td>QUIT 명령 수신 후 연결 종료</td><td>221 Bye</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ADHOC, AODV]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/adhoc-aodv/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/"/>
-        <updated>2024-07-21T04:04:55.858Z</updated>
-        <summary type="html"><![CDATA[ADHOC, Adhoc On Demand Vector]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜의-개념">ADHOC 라우팅 프로토콜의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>기반시설이 없는 무선 네트워크 환경에서 동적으로 구성되는 라우팅 프로토콜로 각 노드가 라우터 역할을 수행하며 네트워크 토폴로지 변화에 따른 능동적 경로 탐색, 유지 가능</li>
-<li>저전력, 가입-이탈 자율성, 동적 토폴로지, 이동성, 자가치유, 자가구성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도-핵심요소-적용방안">ADHOC 라우팅 프로토콜 구성도, 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도">ADHOC 라우팅 프로토콜 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>기반구조 없이 노드가 호스트, 라우터로 동작하여 동적 경로 형성</li>
-</ul>
-<!-- -->
-<ul>
-<li>ADHOC 네트워크에 포함된 기기 하나라도 연결시 모든 노드가 기간망 접근 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-핵심요소">ADHOC 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>경로탐색</td><td>네트워크 내에서 최적의 데이터 전송 경로를 동적으로 발견</td><td>Proactive, Reactive</td></tr><tr><td>경로유지</td><td>링크 상태를 모니터링, 경로 이탈시 재구성, 오류 처리</td><td>고속 이동성 지원</td></tr><tr><td>데이터 전달</td><td>탐색 경로를 통한 패킷 전송</td><td>재전송 오류 수정</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-적용방안">ADHOC 라우팅 프로토콜 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>재난 안전망</td><td>기존 통신망 마비시 재해복구 지원</td></tr><tr><td>-</td><td>전장 운용망</td><td>군사 작전시 유선망 대체</td></tr><tr><td>민간</td><td>IoT 통신</td><td>환경 감시 및 실시간 모니터링</td></tr><tr><td>-</td><td>스마트 팩토리</td><td>공장 네트워크 효율화</td></tr></tbody></table>
-<ul>
-<li>VANET, FANET 등 차량, UAM 간 ADHOC 통신 구현 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프로토콜">AODV 라우팅 프로토콜<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프로토콜-개념">AODV 라우팅 프로토콜 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90">​</a></h3>
-<!-- -->
-<ul>
-<li>데이터 전송이 발생할 때 경로탐색을 하는 Reactive 방식의 ADHOC 라우팅 프로토콜</li>
-<li>경로 탐색 오버헤드 감소, 동적 토폴로지 대응, 구현 용이, 에너지 효율</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프로토콜-핵심요소">AODV 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>RREQ</td><td>경로 발견을 위해 네트워크 내 브로드캐스팅</td><td>소스 노드, 주소, 요청 ID 포함</td></tr><tr><td>RREP</td><td>경로 발견시 목적지 노드에서 응답</td><td>라우팅테이블 갱신</td></tr><tr><td>RERR</td><td>경로의 장애 발생 알림</td><td>인접노드 전파</td></tr><tr><td>경로 유지</td><td>링크 감지 실패시 RERR 메시지를 전송하고 새로운 RREQ 시작</td><td>네트워크 신뢰성</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
