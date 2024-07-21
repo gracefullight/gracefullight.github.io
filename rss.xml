@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 21 Jul 2024 12:54:08 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jul 2024 13:04:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[RAN Sharing]]></title>
+            <link>https://gracefullight.dev/pe/nw/ran-sharing/</link>
+            <guid>https://gracefullight.dev/pe/nw/ran-sharing/</guid>
+            <pubDate>Sun, 21 Jul 2024 13:04:17 GMT</pubDate>
+            <description><![CDATA[Radio Access Network Sharing]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-개념">RAN Sharing 개념<a class="hash-link" aria-label="RAN Sharing 개념에 대한 직접 링크" title="RAN Sharing 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ran-sharing/#ran-sharing-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>여러 이동통신사업자가 하나의 무선 기지국 및 관련 인프라를 공유하여 통신서비스를 제공하는 기술</li>
+<li>네트워크 투자, 유지 비용 절감, 효율성 증대, 커버리지 확대, 환경보호</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성도-구성요소-공공안전망-적용방안">RAN Sharing 구성도, 구성요소, 공공안전망 적용방안<a class="hash-link" aria-label="RAN Sharing 구성도, 구성요소, 공공안전망 적용방안에 대한 직접 링크" title="RAN Sharing 구성도, 구성요소, 공공안전망 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B3%B5%EA%B3%B5%EC%95%88%EC%A0%84%EB%A7%9D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성도">RAN Sharing 구성도<a class="hash-link" aria-label="RAN Sharing 구성도에 대한 직접 링크" title="RAN Sharing 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성요소">RAN Sharing 구성요소<a class="hash-link" aria-label="RAN Sharing 구성요소에 대한 직접 링크" title="RAN Sharing 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>eNodeB</td><td>단말과 연결되어 데이터 송수신</td><td>여러 사업자 단말 수용</td></tr><tr><td>MME</td><td>단말의 접속관리, 이동성 관리</td><td>각 사업자별 독립 구성</td></tr><tr><td>GW</td><td>네트워크 간 연결하여 트래픽 송수신</td><td>S-GW, P-GW</td></tr><tr><td>HSS</td><td>가입자 정보 저장 및 관리</td><td>사업자 간 가입자 공유 가능</td></tr><tr><td>기지국</td><td>신호 송수신을 위한 사이트</td><td>유지보수 비용 분담</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="rand-sharing-고려사항">RAND Sharing 고려사항<a class="hash-link" aria-label="RAND Sharing 고려사항에 대한 직접 링크" title="RAND Sharing 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ran-sharing/#rand-sharing-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>3GPP 표준으로 정의된 RAN Sharing 기술 준수 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/nw</category>
+        </item>
         <item>
             <title><![CDATA[해밍코드]]></title>
             <link>https://gracefullight.dev/pe/nw/hamming-code/</link>
@@ -71,7 +94,7 @@
             <guid>https://gracefullight.dev/pe/nw/5g-6g/</guid>
             <pubDate>Sun, 21 Jul 2024 08:08:39 GMT</pubDate>
             <description><![CDATA[5G, 6G]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이동통신기술-개념">이동통신기술 개념<a class="hash-link" aria-label="이동통신기술 개념에 대한 직접 링크" title="이동통신기술 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이동통신기술-개��념">이동통신기술 개념<a class="hash-link" aria-label="이동통신기술 개념에 대한 직접 링크" title="이동통신기술 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90">​</a></h2>
 <blockquote>
 <p>차트로 표현</p>
 </blockquote>
@@ -181,7 +204,7 @@
 <ul>
 <li>ADHOC 네트워크에 포함된 기기 하나라도 연결시 모든 노드가 기간망 접근 가능</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-핵심요소">ADHOC 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 핵심요소에 �대한 직접 링크" title="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-핵심요소">ADHOC 라우팅 프로토콜 핵심요소<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" title="ADHOC 라우팅 프로토콜 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>경로탐색</td><td>네트워크 내에서 최적의 데이터 전송 경로를 동적으로 발견</td><td>Proactive, Reactive</td></tr><tr><td>경로유지</td><td>링크 상태를 모니터링, 경로 이탈시 재구성, 오류 처리</td><td>고속 이동성 지원</td></tr><tr><td>데이터 전달</td><td>탐색 경로를 통한 패킷 전송</td><td>재전송 오류 수정</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-적용방안">ADHOC 라우팅 프로토콜 적용방안<a class="hash-link" aria-label="ADHOC 라우팅 프로토콜 적용방안에 대한 직접 링크" title="ADHOC 라우팅 프로토콜 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>재난 안전망</td><td>기존 통신망 마비시 재해복구 지원</td></tr><tr><td>-</td><td>전장 운용망</td><td>군사 작전시 유선망 대체</td></tr><tr><td>민간</td><td>IoT 통신</td><td>환경 감시 및 실시간 모니터링</td></tr><tr><td>-</td><td>스마트 팩토리</td><td>공장 네트워크 효율화</td></tr></tbody></table>
@@ -266,7 +289,7 @@
             <guid>https://gracefullight.dev/pe/nw/ethernet/</guid>
             <pubDate>Sat, 20 Jul 2024 06:00:55 GMT</pubDate>
             <description><![CDATA[Ethernet, IEEE 802.3]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-개념">이더넷 개념<a class="hash-link" aria-label="이더넷 개념에 대한 직접 링크" title="이더넷 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B0%9C%EB%85%90">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="��이더넷-개념">이더넷 개념<a class="hash-link" aria-label="이더넷 개념에 대한 직접 링크" title="이더넷 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/ethernet/#%EC%9D%B4%EB%8D%94%EB%84%B7-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>네트워크에 연결된 기기들이 상호 데이터를 교환할 수 있게 해주는 48bit 길이 MAC 주소기반 통신 프로토콜</li>
 <li>유선 연결, 높은 속도, 다양한 토폴로지 지원, 높은 신뢰성</li>
@@ -285,34 +308,6 @@
 <ul>
 <li>CSMA/CD로 충돌을 감지하기 위한 대역폭 대비 최소 프레임 크기</li>
 <li>현재는 전이중 채널 사용으로 고려 대상 아님</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/nw</category>
-        </item>
-        <item>
-            <title><![CDATA[CAN, Controller Area Network]]></title>
-            <link>https://gracefullight.dev/pe/nw/can/</link>
-            <guid>https://gracefullight.dev/pe/nw/can/</guid>
-            <pubDate>Fri, 19 Jul 2024 12:39:37 GMT</pubDate>
-            <description><![CDATA[Controller Area Network]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-개념">CAN 개념<a class="hash-link" aria-label="CAN 개념에 대한 직접 링크" title="CAN 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>여러 개의 <mark class="flexible-marker flexible-marker-default">전자제어장치,ECU</mark>가 차량 내에서 서로 통신하기 위해 설계된 <mark class="flexible-marker flexible-marker-default">ISO 11898 표준 직렬 버스시스템</mark></li>
-<li>엔진 제어, 변속기 제어, 제동, 안전 시스템 등 장치 간 <mark class="flexible-marker flexible-marker-default">우선순위 기반</mark> 효율적 통신을 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성도-구성요소-취약점">CAN 구성도, 구성요소, 취약점<a class="hash-link" aria-label="CAN 구성도, 구성요소, 취약점에 대한 직접 링크" title="CAN 구성도, 구성요소, 취약점에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%B7%A8%EC%95%BD%EC%A0%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성도">CAN 구성도<a class="hash-link" aria-label="CAN 구성도에 대한 직접 링크" title="CAN 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-구성요소">CAN 구성요소<a class="hash-link" aria-label="CAN 구성요소에 대한 직접 링크" title="CAN 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CAN 노드</td><td>네트워크에 연결된 장치</td><td>ECU, 센서 등</td></tr><tr><td>CAN 컨트롤러</td><td>CAN 프로토콜 처리 핵심 부품</td><td>노드 내장</td></tr><tr><td>CAN 트랜시버</td><td>컨트롤러와 버스사이 인터페이스 역할</td><td>변조, 복조</td></tr><tr><td>CAN 버스</td><td>노드를 연결하는 전선</td><td>2개선 차등 신호</td></tr><tr><td>터미네이터</td><td>신호 반사와 간섭 방지</td><td>양 끝단 위치</td></tr></tbody></table>
-<ul>
-<li>멀티마스터, ID 기반 우선순위 프로토콜로 높은 신뢰성 보유</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-취약점-대응방안">CAN 취약점, 대응방안<a class="hash-link" aria-label="CAN 취약점, 대응방안에 대한 직접 링크" title="CAN 취약점, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#can-%EC%B7%A8%EC%95%BD%EC%A0%90-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>대응방안</th></tr></thead><tbody><tr><td>전송 데이터 도청</td><td>암호화되지 않은 데이터 전송</td><td>암호화 적용</td></tr><tr><td>메세지 위조</td><td>잘못된 데이터 네트워크 주입</td><td>HMAC 검증</td></tr><tr><td>장애 전파</td><td>특정 노드 장애가 브로드캐스팅</td><td>오류 감지, 복구</td></tr><tr><td>부하 공격</td><td>네트워크상 과다 트래픽</td><td>비정상 차단</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="차량-네트워크-발전-방향">차량 네트워크 발전 방향<a class="hash-link" aria-label="차량 네트워크 발전 방향에 대한 직접 링크" title="차량 네트워크 발전 방향에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/can/#%EC%B0%A8%EB%9F%89-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5">​</a></h2>
-<ul>
-<li>ADAS 운용을 위해 데이트 프레임, 멀티 컨트롤러 기반의 100Mbps 성능의 EtherLoop 통신으로 전환 예상</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/nw</category>
