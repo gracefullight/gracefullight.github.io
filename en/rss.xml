@@ -32,7 +32,10 @@
 <table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>체감속도</td><td>100Mbps</td><td>1Gbps</td></tr><tr><td>최대속도</td><td>20Gbps</td><td>1Tbps</td></tr><tr><td>주파수</td><td>6GHz, 24GHz</td><td>150GHz</td></tr><tr><td>대역폭</td><td>수 GHz</td><td>수십 GHz</td></tr><tr><td>지원고도</td><td>120m 이하</td><td>10km 이하</td></tr><tr><td>특징</td><td>광대역, 초연결, 저지연</td><td>초광대역, 초공간, 초연결, 초정밀, 초저지연, 초지능</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-적용방안">5G, 6G 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#5g-6g-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>공공</td><td>스마트팩토리, 스마트교육</td><td>스타므시티, 지능형 재난안전망</td></tr><tr><td>금융</td><td>모바일금융, 핀테크, 비대면금융</td><td>몰입형금융, 실시간글로벌금융</td></tr><tr><td>민간</td><td>스마트홈, 자율주행</td><td>메타버스, 촉각인터넷, 로보택시</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="6g-고려사항">6G 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#6g-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="6g-고려사항">6G 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#6g-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>초공간 통신을 위해 저궤도 위성 기술 개발 선행 필요</li>
+</ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/nw</category>
         </item>
