@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 21 Jul 2024 08:08:39 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jul 2024 12:43:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[5G 특화망]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/5g-특화망/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/5g-특화망/</guid>
+            <pubDate>Sun, 21 Jul 2024 12:43:04 GMT</pubDate>
+            <description><![CDATA[5G 특화망]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-개념">5G 특화망 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>기업사업자가 건물, 토지, 시설 등 제한된 범위 내에서 5G 서비스를 이용하기 위해 기업 맞춤형 무선 네트워크를 구축하는 기술</li>
+<li>맞춤형 서비스, 보안 강화, 효율적인 자원 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-네트워크-슬라이싱-구성기술-적용사례">5G 특화망 네트워크 슬라이싱, 구성기술, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%EA%B5%AC%EC%84%B1%EA%B8%B0%EC%88%A0-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-네트워크-슬라이싱">5G 특화망 네트워크 슬라이싱<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1">​</a></h3>
+<!-- -->
+<ul>
+<li>하나의 네트워크 안에서 논리적으로 분리하여 각각의 가상 네트워크에 필요한 성능과 자원(대역폭, QoS) 제공</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="네트워크-슬라이싱-구성-기술">네트워크 슬라이싱 구성 기술<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%EA%B5%AC%EC%84%B1-%EA%B8%B0%EC%88%A0">​</a></h3>
+<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>SDN</td><td>어플리케이션, 컨트롤플레인, 데이터플레인</td><td>데이터 전달 기능과 제어기능을 분리하여 OpenFlow를 통해 SW로 제어하는 네트워크</td></tr><tr><td>NFV</td><td>스위치,라우터 --- 가상화 --- VNFs, MANO</td><td>네트워크 기능을 추상화하여 SW적으로 제어가 가능하도록 하는 기술</td></tr><tr><td>-</td><td>-</td><td>Virtual Network Functions, Management and Orchestration</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-적용사례">5G 특화망 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>스마트팩토리 생산 자동화</td><td>LG CNS</td></tr><tr><td>-</td><td>자율주행 C-V2X 네트워크</td><td>현대자동차</td></tr><tr><td>국외</td><td>공항 수하물 추적, 보안 검색</td><td>두바이 공항</td></tr><tr><td>-</td><td>항만 자동화, 크레인 제어</td><td>함부르크 항만</td></tr></tbody></table>
+<h2></h2>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/nw</category>
+        </item>
         <item>
             <title><![CDATA[5G, 6G]]></title>
             <link>https://gracefullight.dev/en/pe/nw/5g-6g/</link>
@@ -282,45 +307,6 @@
 <ul>
 <li>케이블, 광섬유 등 물리적 매체를 이용한 전송시 라인코딩 기법을 활용하여 동기화, 전송효율 확보</li>
 </ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/nw</category>
-        </item>
-        <item>
-            <title><![CDATA[CIDR, Classless Inter-Domain Routing]]></title>
-            <link>https://gracefullight.dev/en/pe/nw/cidr/</link>
-            <guid>https://gracefullight.dev/en/pe/nw/cidr/</guid>
-            <pubDate>Fri, 19 Jul 2024 12:18:06 GMT</pubDate>
-            <description><![CDATA[Classless Inter-Domain Routing]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cidr-개념">CIDR 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#cidr-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>IP 주소를 효율적으로 할당하고, 인터넷 라우팅 정보를 경제적으로 관리하게 해주는 <mark class="flexible-marker flexible-marker-default">주소할당 및 라우팅 기법</mark></li>
-<li>IP 주소 고갈문제 해결, 라우팅 테이블 축소, 유연한 네트워크 설계</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-슈퍼네팅-개념-특징">서브네팅, 슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85-%EC%8A%88%ED%8D%BC%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-개념-특징">서브네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>하나의 큰 네트워크를 여러 개의 작은 네트워크로 나누는 기법</td></tr><tr><td>특징</td><td>브로드캐스팅 감소, IP 주소 낭비 최소화</td></tr><tr><td>예시</td><td>부서별 네트워크 분리, 보안 강화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="슈퍼네팅-개념-특징">슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%8A%88%ED%8D%BC%EB%84%A4%ED%8C%85-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>여러 작은 네트워크를 하나의 큰 네트워크로 묶는 기법</td></tr><tr><td>특징</td><td>라우팅 테이블 크기 감소, 부담 완화, 트래픽 효율성</td></tr><tr><td>예시</td><td>ISP의 IP 주소 할당, BGP 라우팅</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="서브넷-마스크-개념-특징">서브넷 마스크 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/cidr/#%EC%84%9C%EB%B8%8C%EB%84%B7-%EB%A7%88%EC%8A%A4%ED%81%AC-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">​</a></h3>
-<ul>
-<li>IP 주소에서 <mark class="flexible-marker flexible-marker-default">네트워크 주소부와 호스트 주소부를 구분</mark>하는데 사용하는 <mark class="flexible-marker flexible-marker-default">32bit 값</mark></li>
-<li><mark class="flexible-marker flexible-marker-default">네트워크 주소부는 1로, 호스트 주소부는 0으로 표시</mark></li>
-</ul>
-<blockquote>
-<p>192.168.0.0/24 에서 4개의 네트워크 구성 예시</p>
-</blockquote>
-<table><thead><tr><th>192</th><th>168</th><th>100</th><th>0</th></tr></thead><tbody><tr><td>1100 0000</td><td>1010 1000</td><td>0110 0100</td><td><strong>00</strong>00 0000</td></tr></tbody></table>
-<blockquote>
-<p>네트워크 아이디: 1100 0000 1010 1000 0110 0100
-호스트 아이디: 0000 0000</p>
-</blockquote>
-<table><thead><tr><th>네트워크 아이디</th><th>호스트 아이디</th><th>네트워크 주소</th></tr></thead><tbody><tr><td>192.168.100.</td><td><strong>00</strong>00 0000</td><td>192.168.100.0</td></tr><tr><td>192.168.100.</td><td><strong>01</strong>00 0000</td><td>192.168.100.64</td></tr><tr><td>192.168.100.</td><td><strong>10</strong>00 0000</td><td>192.168.100.128</td></tr><tr><td>192.168.100.</td><td><strong>11</strong>00 0000</td><td>192.168.100.192</td></tr></tbody></table>
-<blockquote>
-<p>서브넷마스크: 255.255.255.192/26
-사용가능 호스트: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>62</mn><mo>=</mo><msup><mn>2</mn><mn>6</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">62 = 2^6 - 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">62</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">2</span></span></span></span> (네트워크 아이디, 브로드캐스트 주소)</p>
-</blockquote>]]></content:encoded>
             <category>pe</category>
             <category>pe/nw</category>
         </item>
