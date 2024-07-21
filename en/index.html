@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.03d0a511.css">
-<script src="/en/assets/js/runtime~main.9c16f4e9.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.a4eb1f74.js" defer="defer"></script>
 <script src="/en/assets/js/main.0ded7d50.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -43,7 +43,7 @@
 <!-- -->
 <ul>
 <li>기반시설이 없는 무선 네트워크 환경에서 동적으로 구성되는 라우팅 프로토콜로 각 노드가 라우터 역할을 수행하며 네트워크 토폴로지 변화에 따른 능동적 경로 탐색, 유지 가능</li>
-<li>네트워크 자동구성, 자가 치유, 유연성, 확장성 ,동적 토폴로지, 비용효율성</li>
+<li>저전력, 가입-이탈 자율성, 동적 토폴로지, 이동성, 자가치유, 자가구성</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도-핵심요소-적용방안">ADHOC 라우팅 프로토콜 구성도, 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#adhoc-라우팅-프로토콜-구성도-핵심요소-적용방안">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도">ADHOC 라우팅 프로토콜 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#adhoc-라우팅-프로토콜-구성도">​</a></h3>
@@ -125,7 +125,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-적용방안">이더넷 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#이더넷-적용방안">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기업네트워크</td><td>사무실 내 컴퓨터 네트워크 구성</td><td>내부망</td></tr><tr><td>데이터센터</td><td>대규모 데이터 관리, 처리</td><td>고속 이더넷</td></tr><tr><td>스마트홈</td><td>가정 내 다양한 스마트 기기 연결</td><td>안정성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이더넷-프레임-최소-크기가-64byte인-이유">이더넷 프레임 최소 크기가 64Byte인 이유<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#이더넷-프레임-최소-크기가-64byte인-이유">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id=" 이더넷-프레임-최소-크기가-64byte인-이유">이더넷 프레임 최소 크기가 64Byte인 이유<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#이더넷-프레임-최소-크기가-64byte인-이유">​</a></h3>
 <ul>
 <li>CSMA/CD로 충돌을 감지하기 위한 대역폭 대비 최소 프레임 크기</li>
 <li>현재는 전이중 채널 사용으로 고려 대상 아님</li>
@@ -143,7 +143,7 @@
 <li>멀티마스터, ID 기반 우선순위 프로토콜로 높은 신뢰성 보유</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="can-취약점-대응방안">CAN 취약점, 대응방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#can-취약점-대응방안">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>대응방안</th></tr></thead><tbody><tr><td>전송 데이터 도청</td><td>암호화되지 않은 데이터 전송</td><td>암호화 적용</td></tr><tr><td>메세지 위조</td><td>잘못된 데이터 네트워크 주입</td><td>HMAC 검증</td></tr><tr><td>장애 전파</td><td>특정 노드 장애가 브로드캐스팅</td><td>오류 감지, 복구</td></tr><tr><td>부하 공격</td><td>네트워크상 과다 트래픽</td><td>비정상 차단</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>대응방안</th></tr></thead><tbody><tr><td>  전송 데이터 도청</td><td>암호화되지 않은 데이터 전송</td><td>암호화 적용</td></tr><tr><td>메세지 위조</td><td>잘못된 데이터 네트워크 주입</td><td>HMAC 검증</td></tr><tr><td>장애 전파</td><td>특정 노드 장애가 브로드캐스팅</td><td>오류 감지, 복구</td></tr><tr><td>부하 공격</td><td>네트워크상 과다 트래픽</td><td>비정상 차단</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="차량-네트워크-발전-방향">차량 네트워크 발전 방향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#차량-네트워크-발전-방향">​</a></h2>
 <ul>
 <li>ADAS 운용을 위해 데이트 프레임, 멀티 컨트롤러 기반의 100Mbps 성능의 EtherLoop 통신으로 전환 예상</li>
@@ -170,7 +170,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-슈퍼네팅-개념-특징">서브네팅, 슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#서브네팅-슈퍼네팅-개념-특징">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="서브네팅-개념-특징">서브네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#서브네팅-개념-특징">​</a></h3>
 <!-- -->
-<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>하나의 큰 네트워크를 여러 개의 작은 네트워크로 나누는 기법</td></tr><tr><td>특징</td><td>브로드캐스팅 감소, IP 주소 낭비 최소화</td></tr><tr><td>예시</td><td>부서별 네트워크 분 리, 보안 강화</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>하나의 큰 네트워크를 여러 개의 작은 네트워크로 나누는 기법</td></tr><tr><td>특징</td><td>브로드캐스팅 감소, IP 주소 낭비 최소화</td></tr><tr><td>예시</td><td>부서별 네트워크 분리, 보안 강화</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="슈퍼네팅-개념-특징">슈퍼네팅 개념, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#슈퍼네팅-개념-특징">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>여러 작은 네트워크를 하나의 큰 네트워크로 묶는 기법</td></tr><tr><td>특징</td><td>라우팅 테이블 크기 감소, 부담 완화, 트래픽 효율성</td></tr><tr><td>예시</td><td>ISP의 IP 주소 할당, BGP 라우팅</td></tr></tbody></table>
@@ -199,7 +199,7 @@
 <li>IP, Port를 활용하여 통신연결 설정</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-특징">소켓 통신의 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#소켓-통신의-특징">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양방향 통신</td><td>데이터 양방향 송수신 가능</td><td>다양한 데이터 타입</td></tr><tr><td>실시간성</td><td>연결이 유지되는 동안 실시간 송수신</td><td>  지연시간 최소화</td></tr><tr><td>프로토콜 독립적</td><td>다양한 네트워크 프로토콜 사용 가능</td><td>TCP, UDP</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양방향 통신</td><td>데이터 양방향 송수신 가능</td><td>다양한 데이터 타입</td></tr><tr><td>실시간성</td><td>연결이 유지되는 동안 실시간 송수신</td><td>지연시간 최소화</td></tr><tr><td>프로토콜 독립적</td><td>다양한 네트워크 프로토콜 사용 가능</td><td>TCP, UDP</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도-특징">TCP 소켓 구성도, 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#tcp-소켓-구성도-특징">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도">TCP 소켓 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#tcp-소켓-구성도">​</a></h3>
 <!-- -->
@@ -211,7 +211,7 @@
 <li>요청, 응답 단일요청을 위해 비연결성, 무상태성, 효율성 특징</li>
 <li>실시간 데이터 통신을 위해 폴링, 롱폴링 기법 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-실시간-통신-기법">HTTP 실시간 통신 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#http-실시간-통신-기법">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-실시간-  통신-기법">HTTP 실시간 통신 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/#http-실시간-통신-기법">​</a></h3>
 <ul>
 <li>HTTP 헤더 및 커넥션 오버헤드 증가로 HTML5에서 웹소켓으로 표준화 진행</li>
 </ul>

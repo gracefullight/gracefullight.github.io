@@ -18,7 +18,7 @@
 <!-- -->
 <ul>
 <li>기반시설이 없는 무선 네트워크 환경에서 동적으로 구성되는 라우팅 프로토콜로 각 노드가 라우터 역할을 수행하며 네트워크 토폴로지 변화에 따른 능동적 경로 탐색, 유지 가능</li>
-<li>네트워크 자동구성, 자가 치유, 유연성, 확장성 ,동적 토폴로지, 비용효율성</li>
+<li>저전력, 가입-이탈 자율성, 동적 토폴로지, 이동성, 자가치유, 자가구성</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도-핵심요소-적용방안">ADHOC 라우팅 프로토콜 구성도, 핵심요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="adhoc-라우팅-프로토콜-구성도">ADHOC 라우팅 프로토콜 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/adhoc-aodv/#adhoc-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
