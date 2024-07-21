@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-21T07:41:27.263Z</updated>
+    <updated>2024-07-21T08:08:39.717Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[5G, 6G]]></title>
+        <id>https://gracefullight.dev/pe/nw/5g-6g/</id>
+        <link href="https://gracefullight.dev/pe/nw/5g-6g/"/>
+        <updated>2024-07-21T08:08:39.717Z</updated>
+        <summary type="html"><![CDATA[5G, 6G]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이동통신기술-개념">이동통신기술 개념<a class="hash-link" aria-label="이동통신기술 개념에 대한 직접 링크" title="이동통신기술 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90">​</a></h2>
+<blockquote>
+<p>차트로 표현</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>3G</th><th>4G</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>도입연도</td><td>2000</td><td>2010</td><td>2020</td><td>2030</td></tr><tr><td>체감속도</td><td>1M</td><td>10M</td><td>100M</td><td>1G</td></tr><tr><td>주요 활용분야</td><td>음성</td><td>영상</td><td>IoT, 자율주행</td><td>3차원공간, 메타버스</td></tr></tbody></table>
+<ul>
+<li>단말 수의 증가로 인한 속도 필요성과 공간 확장을 통해 10년 주기로 이동통신기술 발전</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념-및-특징">5G, 6G 개념 및 특징<a class="hash-link" aria-label="5G, 6G 개념 및 특징에 대한 직접 링크" title="5G, 6G 개념 및 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념">5G, 6G 개념<a class="hash-link" aria-label="5G, 6G 개념에 대한 직접 링크" title="5G, 6G 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-특징-비교">5G, 6G 특징 비교<a class="hash-link" aria-label="5G, 6G 특징 비교에 대한 직접 링크" title="5G, 6G 특징 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-적용방안">5G, 6G 적용방안<a class="hash-link" aria-label="5G, 6G 적용방안에 대한 직접 링크" title="5G, 6G 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#5g-6g-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="6g-고려사항">6G 고려사항<a class="hash-link" aria-label="6G 고려사항에 대한 직접 링크" title="6G 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/5g-6g/#6g-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[오류제어, 흐름제어, 혼잡제어]]></title>
         <id>https://gracefullight.dev/pe/nw/error-flow-congestion-control/</id>
@@ -108,7 +134,7 @@
 <li>VANET, FANET 등 차량, UAM 간 ADHOC 통신 구현 가능</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프로토콜">AODV 라우팅 프로토콜<a class="hash-link" aria-label="AODV 라우팅 프로토콜에 대한 직접 링크" title="AODV 라우팅 프로토콜에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프로토콜-개념">AODV 라우팅 프로토콜 개념<a class="hash-link" aria-label="AODV 라우팅 프로토콜 개념에 대한 직접 링크" title="AODV 라우팅 프로토콜 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="aodv-라우팅-프��로토콜-개념">AODV 라우팅 프로토콜 개념<a class="hash-link" aria-label="AODV 라우팅 프로토콜 개념에 대한 직접 링크" title="AODV 라우팅 프로토콜 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/adhoc-aodv/#aodv-%EB%9D%BC%EC%9A%B0%ED%8C%85-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90">​</a></h3>
 <!-- -->
 <ul>
 <li>데이터 전송이 발생할 때 경로탐색을 하는 Reactive 방식의 ADHOC 라우팅 프로토콜</li>
@@ -148,7 +174,7 @@
 <li>개념: 데이터 전송 속도를 우선시하는 비신뢰성 비연결지향 프로토콜</li>
 <li>특징: <mark class="flexible-marker flexible-marker-default">비신뢰성</mark>, <mark class="flexible-marker flexible-marker-default">비연결지향</mark>, <mark class="flexible-marker flexible-marker-default">단순성</mark>, <mark class="flexible-marker flexible-marker-default">실시간성</mark></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sctp-개념과-특징">SCTP 개념과 특징<a class="hash-link" aria-label="SCTP 개념과 특징에 대한 직접 링크" title="SCTP 개념과 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/tcp-udp-sctp/#sctp-%EA%B0%9C%EB%85%90%EA%B3%BC-%EF%BF%BD%EF%BF%BD%ED%8A%B9%EC%A7%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sctp-개념과-특징">SCTP 개념과 특징<a class="hash-link" aria-label="SCTP 개념과 특징에 대한 직접 링크" title="SCTP 개념과 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/tcp-udp-sctp/#sctp-%EA%B0%9C%EB%85%90%EA%B3%BC-%ED%8A%B9%EC%A7%95">​</a></h3>
 <div class="language-bash codeBlockContainer_Gm1_ theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent__ifM"><pre tabindex="0" class="prism-code language-bash codeBlock_mGwj thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_LMVo"><span class="token-line" style="color:#9CDCFE"><span class="token plain"># SCTP 헤더</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------+-----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|  소스 포트        |  목적지 포트       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------+-----------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|  검증 태그        |  체크섬           |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|         청크 헤더1                  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|            데이터1                 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|         청크 헤더2                  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------------------------+</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|            데이터2                 |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|              ...                  |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">+-----------------------------------+</span><br></span></code></pre><div class="buttonGroup__Dsg"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_L_oj" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_cYiP"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ZLUk"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-udp-sctp-비교">TCP, UDP, SCTP 비교<a class="hash-link" aria-label="TCP, UDP, SCTP 비교에 대한 직접 링크" title="TCP, UDP, SCTP 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/tcp-udp-sctp/#tcp-udp-sctp-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>TCP</th><th>UDP</th><th>SCTP</th></tr></thead><tbody><tr><td>연결방식</td><td>3way - 4way</td><td>없음</td><td>4way - 3way</td></tr><tr><td>데이터 단위</td><td>세그먼트</td><td>데이터그램</td><td>데이터 청크</td></tr><tr><td>신뢰성</td><td>높음</td><td>낮음</td><td>높음</td></tr><tr><td>순서보장</td><td>보장</td><td>없음</td><td>보장</td></tr><tr><td>HoL블로킹</td><td>발생</td><td>없음</td><td>없음, 멀티스트리밍</td></tr><tr><td>속도</td><td>느림</td><td>빠름</td><td>중간</td></tr><tr><td>다중경로</td><td>미지원</td><td>미지원</td><td>지원</td></tr><tr><td>용도</td><td>웹, 이메일, 파일전송</td><td>실시간 스트리밍, DNS, 로깅</td><td>VoIP, 위성통신, MMORPG</td></tr><tr><td>장점</td><td>신뢰성, 무결성</td><td>속도, 실시간성</td><td>신뢰성, 기능안정성</td></tr><tr><td>단점</td><td>느린 속도, 실시간성</td><td>신뢰성, 데이터손실</td><td>복잡한 구조, UDP보다 느린 속도</td></tr></tbody></table>]]></content>
@@ -270,7 +296,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도-세부절차-비교">소스코딩, 채널코딩 개념도, 세부절차, 비교<a class="hash-link" aria-label="소스코딩, 채널코딩 개념도, 세부절차, 비교에 대한 직접 링크" title="소스코딩, 채널코딩 개념도, 세부절차, 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-개념도">소스코딩, 채널코딩 개념도<a class="hash-link" aria-label="소스코딩, 채널코딩 개념도에 대한 직접 링크" title="소스코딩, 채널코딩 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-세부절차">소스코딩, 채널코딩 세부절차<a class="hash-link" aria-label="소스코딩, 채널코딩 세부절차에 대한 직접 링크" title="소스코딩, 채�널코딩 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-세부절차">소스코딩, 채널코딩 세부절차<a class="hash-link" aria-label="소스코딩, 채널코딩 세부절차에 대한 직접 링크" title="소스코딩, 채널코딩 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 소스코딩</td><td>불필요 정보 제거, 중복 제거</td><td>손실, 무손실</td></tr><tr><td>2. 채널코딩</td><td>오류 검출, 정정 비트 추가</td><td>패리티, 해밍 코드</td></tr><tr><td>3. 변조</td><td>전송 가능한 신호로 변조</td><td>ASK, FSK, PSK</td></tr><tr><td>4. 복조</td><td>변조 신호에서 원본 데이터 추출</td><td>반송파 제거</td></tr><tr><td>5. 채널디코딩</td><td>오류 검출, 정정 비트 제거</td><td>잉여 비트 제거</td></tr><tr><td>6. 소스디코딩</td><td>압축 데이터 복원</td><td>원 정보 추출</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소스코딩-채널코딩-비교">소스코딩, 채널코딩 비교<a class="hash-link" aria-label="소스코딩, 채널코딩 비교에 대한 직접 링크" title="소스코딩, 채널코딩 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/source-and-channel-coding/#%EC%86%8C%EC%8A%A4%EC%BD%94%EB%94%A9-%EC%B1%84%EB%84%90%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>소스코딩</th><th>채널코딩</th></tr></thead><tbody><tr><td>목적</td><td>전송 효율 향상</td><td>전송 오류 검출, 정정</td></tr><tr><td>기능</td><td>압축, 부호화</td><td>에러 검출, 에러 정정</td></tr><tr><td>순서</td><td>선수행</td><td>후수행</td></tr><tr><td>기법</td><td>H.264, PCM, 허프만 부호화</td><td>짝수 패리티, 해밍코드, Read Solomon 코드</td></tr></tbody></table>
@@ -321,53 +347,6 @@
 <p>서브넷마스크: 255.255.255.192/26
 사용가능 호스트: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>62</mn><mo>=</mo><msup><mn>2</mn><mn>6</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">62 = 2^6 - 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">62</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">2</span></span></span></span> (네트워크 아이디, 브로드캐스트 주소)</p>
 </blockquote>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Socket, TCP, HTTP, Websocket 통신]]></title>
-        <id>https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/</id>
-        <link href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/"/>
-        <updated>2024-07-19T11:57:14.108Z</updated>
-        <summary type="html"><![CDATA[Socket, TCP, HTTP and Websocket Communication]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-개요">소켓 통신의 개요<a class="hash-link" aria-label="소켓 통신의 개요에 대한 직접 링크" title="소켓 통신의 개요에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B0%9C%EC%9A%94">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-개념">소켓 통신의 개념<a class="hash-link" aria-label="소켓 통신의 개념에 대한 직접 링크" title="소켓 통신의 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h3>
-<!-- -->
-<ul>
-<li>네트워크 상에서 서로 다른 시스템 간에 데이터를 송수신할 수 있게하는 인터페이스 제공</li>
-<li>IP, Port를 활용하여 통신연결 설정</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소켓-통신의-특징">소켓 통신의 특징<a class="hash-link" aria-label="소켓 통신의 특징에 대한 직접 링크" title="소켓 통신의 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%86%8C%EC%BC%93-%ED%86%B5%EC%8B%A0%EC%9D%98-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>양방향 통신</td><td>데이터 양방향 송수신 가능</td><td>다양한 데이터 타입</td></tr><tr><td>실시간성</td><td>연결이 유지되는 동안 실시간 송수신</td><td>지연시간 최소화</td></tr><tr><td>프로토콜 독립적</td><td>다양한 네트워크 프로토콜 사용 가능</td><td>TCP, UDP</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도-특징">TCP 소켓 구성도, 특징<a class="hash-link" aria-label="TCP 소켓 구성도, 특징에 대한 직접 링크" title="TCP 소켓 구성도, 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%8A%B9%EC%A7%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-구성도">TCP 소켓 구성도<a class="hash-link" aria-label="TCP 소켓 구성도에 대한 직접 링크" title="TCP 소켓 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tcp-소켓-특징">TCP 소켓 특징<a class="hash-link" aria-label="TCP 소켓 특징에 대한 직접 링크" title="TCP 소켓 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#tcp-%EC%86%8C%EC%BC%93-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>신뢰성</td><td>데이터 손실 없이 정확히 전달 보장</td><td>순서보장</td></tr><tr><td>연결지향</td><td>통신 전 연결 설정 후 종료까지 유지</td><td>재연결 오버헤드</td></tr><tr><td>흐름제어</td><td>데이터 흐름제어로 수신자 처리속도 맞춤 설정</td><td>송수신 속도 불일치 해결</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="http-개념-실시간-통신-기법">HTTP 개념, 실시간 통신 기법<a class="hash-link" aria-label="HTTP 개념, 실시간 통신 기법에 대한 직접 링크" title="HTTP 개념, 실시간 통신 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EA%B0%9C%EB%85%90-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-개념">HTTP 개념<a class="hash-link" aria-label="HTTP 개념에 대한 직접 링크" title="HTTP 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>요청, 응답 단일요청을 위해 비연결성, 무상태성, 효율성 특징</li>
-<li>실시간 데이터 통신을 위해 폴링, 롱폴링 기법 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="http-실시간-통신-기법">HTTP 실시간 통신 기법<a class="hash-link" aria-label="HTTP 실시간 통신 기법에 대한 직접 링크" title="HTTP 실시간 통신 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#http-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%86%B5%EC%8B%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
-<ul>
-<li>HTTP 헤더 및 커넥션 오버헤드 증가로 HTML5에서 웹소켓으로 표준화 진행</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_n3DU" id="폴링">폴링<a class="hash-link" aria-label="폴링에 대한 직접 링크" title="폴링에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%ED%8F%B4%EB%A7%81">​</a></h4>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_n3DU" id="롱폴링">롱폴링<a class="hash-link" aria-label="롱폴링에 대한 직접 링크" title="롱폴링에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EB%A1%B1%ED%8F%B4%EB%A7%81">​</a></h4>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="웹소켓">웹소켓<a class="hash-link" aria-label="웹소켓에 대한 직접 링크" title="웹소켓에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/socket-tcp-http-websocket/#%EC%9B%B9%EC%86%8C%EC%BC%93">​</a></h2>
-<!-- -->
-<ul>
-<li>전이중통신, 지속연결, 확장성</li>
-<li>초기 핸드쉐이킹 비용이 크므로 DNS캐시, TLS 인증서 캐시, HSTS 등 연결 비용 감소 기법 활용</li>
-</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
