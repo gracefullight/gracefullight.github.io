@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T08:01:25.088Z</updated>
+    <updated>2024-07-22T08:09:23.608Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DPG, 디지털 플랫폼 정부]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/dpg/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/dpg/"/>
+        <updated>2024-07-22T08:09:23.608Z</updated>
+        <summary type="html"><![CDATA[Digital Platform Government]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-개념">디지털 플랫폼 정부 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>모든 데이터가 연결되는 디지털 플랫폼 위에서 국민, 기업, 정부가 함께 사회문제를 해결하고, 새로운 가치를 창출하는 정부</li>
+<li>AI, 빅데이터 등 디지털 심화시대에 데이터활용의 중요 대두, 디지털 플랫폼 비지니스모델 적용 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-특징-구성요소-기대효과">디지털 플랫폼 정부 특징, 구성요소, 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%ED%8A%B9%EC%A7%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-특징">디지털 플랫폼 정부 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%ED%8A%B9%EC%A7%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">국민중심</mark></td><td>모든 국민이 언제,어디서나 디지털서비스 이용 보장</td><td>디지털 포용</td></tr><tr><td>-</td><td>공공서비스는 국민이 원하는 방식으로 통합, 선제, 맞춤 제공</td><td>사용자 중심 서비스</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">하나의 정부</mark></td><td>모든 데이터가 연결된 디지털 플랫폼으로 하나의 정부 구현</td><td>부처 간 협업, 데이터 공유</td></tr><tr><td>-</td><td>행정 프로세스 디지털 중심 재설계</td><td>행정, 조직, 효율성 증대</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">AI, 데이터 기반</mark></td><td>공공 데이터는 사람과 기계가독성을 가진 형식으로 전면 개방</td><td>데이터 활용성 증대</td></tr><tr><td>-</td><td>AI, 빅데이터 기반 정책 결정</td><td>과학적 정책 결정</td></tr><tr><td>민관 협력</td><td>민관협력 혁신 생태계 조성</td><td>민간 참여 활성화</td></tr><tr><td>-</td><td>디지털 모법 국가로 국제사회 기여</td><td>국제적 위상 제고</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-구성요소">디지털 플랫폼 정부 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>플랫폼 제공자</td><td>디지털 플랫폼 구축, 운영, 데이터 통합, 활용 지원</td><td>정부</td></tr><tr><td>공급자</td><td>공공, 민간 서비스, 데이터 제공</td><td>정부, 공공기관</td></tr><tr><td>소비자, 이용자</td><td>맞춤형 서비스와 공공 데이터 활용</td><td>국민, 기업</td></tr><tr><td>플랫폼 생태계 전반</td><td>플랫폼 전반에 걸친 상호작용</td><td>데이터, 서비스, 인프라</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-기대효과">디지털 플랫폼 정부의 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
+<table><thead><tr><th>구분</th><th>기대효과</th><th>내용</th></tr></thead><tbody><tr><td>정부</td><td>정부 역량 강화, 신뢰도 향상</td><td>빅데이터 기반 과학적 정책결정, 투명성 제공</td></tr><tr><td>기업</td><td>민간부문 성장동력 마련</td><td>공공 데이터 활용 혁신 서비스 개발</td></tr><tr><td>국민</td><td>국민 중심의 서비스 제공</td><td>맞춤형 행정 서비스 제공</td></tr><tr><td>사회</td><td>사회 전체 발전 도모</td><td>디지털 격차, 역기능 해소</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-추가적인-고려사항">디지털 플랫폼 정부의 추가적인 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>부처 내 데이터 정보화로 부서 위상 제고</td><td>CDO, CIO 지정</td></tr><tr><td>기술적</td><td>제로트러스트 보안체계 구축</td><td>사이버 위협 대응</td></tr><tr><td>제도적</td><td>개인정보보호법 개정, 하위 법령 정비</td><td>개인정보 전송요구권 도입</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SLA, 서비스 수준 계약]]></title>
         <id>https://gracefullight.dev/en/pe/mng/sla/</id>
@@ -196,7 +224,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성요소">MQTT 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Publisher</td><td>메세지를 특정 토픽에 발행하는 클라이언트</td><td>센서, 모바일기기 등</td></tr><tr><td>Subscriber</td><td>특정 토픽의 메세지를 구독하는 클라이언트 또는 서버</td><td>모니터링 시스템, 제어장치 등</td></tr><tr><td>Broker</td><td>발행된 메세지를 해당 토픽을 구독하는 클라이언트에 중개</td><td>메세지 라우팅</td></tr><tr><td>Topic</td><td>메세지를 분류하기 위한 계층적 문자열</td><td>home/room/humid 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EF%BF%BD%EF%BF%BD%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>스마트홈</td><td>다양한 센서, 장치 간 데이터 전송, 상태 업데이트</td><td>편의성, 에너지 절약</td></tr><tr><td>산업 자동화</td><td>로봇과 센서간 실시간 데이터 처리</td><td>생산성, 안정성</td></tr><tr><td>헬스케어</td><td>환자 상태 모니터링, 의료기기 제어</td><td>응급상황 대처</td></tr><tr><td>스마트시티</td><td>교통정보, 환경정보, 공공시설 관리</td><td>효율성, 편의성</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-고려사항">MQTT 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -298,33 +326,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-방식-선택시-고려사항">오류제어 방식 선택시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%8B%9D-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>채널 환경, 데이터 중요도, 실시간 요구사항을 고려하여 적합한 제어 방식 선택</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RAN Sharing]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/ran-sharing/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/ran-sharing/"/>
-        <updated>2024-07-21T13:04:17.453Z</updated>
-        <summary type="html"><![CDATA[Radio Access Network Sharing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-개념">RAN Sharing 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#ran-sharing-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>여러 이동통신사업자가 하나의 무선 기지국 및 관련 인프라를 공유하여 통신서비스를 제공하는 기술</li>
-<li>네트워크 투자, 유지 비용 절감, 효율성 증대, 커버리지 확대, 환경보호</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성도-구성요소-공공안전망-적용방안">RAN Sharing 구성도, 구성요소, 공공안전망 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B3%B5%EA%B3%B5%EC%95%88%EC%A0%84%EB%A7%9D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성도">RAN Sharing 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ran-sharing-구성요소">RAN Sharing 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#ran-sharing-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>eNodeB</td><td>단말과 연결되어 데이터 송수신</td><td>여러 사업자 단말 수용</td></tr><tr><td>MME</td><td>단말의 접속관리, 이동성 관리</td><td>각 사업자별 독립 구성</td></tr><tr><td>GW</td><td>네트워크 간 연결하여 트래픽 송수신</td><td>S-GW, P-GW</td></tr><tr><td>HSS</td><td>가입자 정보 저장 및 관리</td><td>사업자 간 가입자 공유 가능</td></tr><tr><td>기지국</td><td>신호 송수신을 위한 사이트</td><td>유지보수 비용 분담</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="rand-sharing-고려사항">RAND Sharing 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#rand-sharing-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>3GPP 표준으로 정의된 RAN Sharing 기술 준수 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
