@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T08:09:23.608Z</updated>
+    <updated>2024-07-22T08:19:46.287Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ESG]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/esg/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/esg/"/>
+        <updated>2024-07-22T08:19:46.287Z</updated>
+        <summary type="html"><![CDATA[Environment, Social, Governance]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개념">ESG 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>기업 경영 활동을 <mark class="flexible-marker flexible-marker-default">환경 경영</mark>, <mark class="flexible-marker flexible-marker-default">사회적 책임</mark>, 건전하고 <mark class="flexible-marker flexible-marker-default">투명한 지배구조</mark>에 초점을 둔 지속가능성을 위한 기업 경영의 세가지 <mark class="flexible-marker flexible-marker-default">비재무적 성과지표</mark></li>
+<li>세계적 트랜드와 사회 구성원의 관심으로 인해 기업의 지속가능한 성장을 위한 리스크 관리 수단으로 활용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성도-구성요소-적용방안">ESG 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성도">ESG 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>정보공시시 ESG 측면의 목표를 검증, 점검하여 투명성 제고</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성요소">ESG 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보공시</td><td>투자자, 이해관계자에게 ESG를 투명하게 공개</td><td>ESG 정보공시 방식, 주기, 범위, KPI 등</td></tr><tr><td>환경</td><td>환경 영향 최소화, 지속가능한 환경 위한 기업 노력</td><td>환경 경영 목표, 온실가스 배출량, 에너지 사용량</td></tr><tr><td>사회</td><td>조직구성원, 소비자 등 사회적 책임 이행을 위한 노력</td><td>정규직 비율, 자발적 이직율, 산업재해율, 정보보호시스템 구축</td></tr><tr><td>지배구조</td><td>투명하고 책임감 있는 기업 지배구조 확립</td><td>사외이사비율, 주주권리보호, 윤리경영, 감사기구 설치 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-적용방안">ESG 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보보호시스템 구축 측면</td><td>정보 유출, 해킹 등 사이버 위협으로부터 기업 정보 보호, 사고발생시 신속하고 효과적인 대응체계 구축</td><td>ISMS 인증 획득, 정보보호교육 실시, 대응절차 마련</td></tr><tr><td>개인정보침해 및 규제 측면</td><td>개인정보보호 관련 법규 준수, 개인정보 침해사고 예방 및 피해 최소화</td><td>ISMS-P 인증 획득, 개인정보 접근통제 강화, 피해규제 방안 마련</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-고려사항">ESG 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>RE100 인증, 탄소국경조정제도(CBAM) 대응을 위한 재생에너지 사용비율을 지속적으로 높여야함</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DPG, 디지털 플랫폼 정부]]></title>
         <id>https://gracefullight.dev/en/pe/mng/dpg/</id>
@@ -297,35 +329,6 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-적용방안">IntServ, DiffServ 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <ul>
 <li>DiffServ는 백본망, IntServ는 주변 소규모망에 적용하여 대규모 네트워크 구간 간 QoS 확보 및 소규모망 내 실시간 성능 확보</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FEC, 전진오류수정, ARQ, 검출 후 재전송]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/fec-arq/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/fec-arq/"/>
-        <updated>2024-07-21T13:12:19.667Z</updated>
-        <summary type="html"><![CDATA[Forward Error Correction, Automatic Repeat reQuest]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-방식의-개념">오류제어 방식의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%8B%9D%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="fec-arq-개념-핵심요소-비교">FEC, ARQ 개념, 핵심요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#fec-arq-%EA%B0%9C%EB%85%90-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="fec-arq-개념">FEC, ARQ 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#fec-arq-%EA%B0%9C%EB%85%90">​</a></h3>
-<!-- -->
-<ul>
-<li>FEC는 검증 단말에 오버헤드, ARQ는 재전송으로 인한 네트워크 오베헤드 발생</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="fec-arq-핵심요소-비교">FEC, ARQ 핵심요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#fec-arq-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>FEC</th><th>ARQ</th></tr></thead><tbody><tr><td>특징</td><td>실시간, 높은 처리율</td><td>재전송요구로 복잡한 알고리즘 불필요</td></tr><tr><td>용도</td><td>1<!-- -->:N<!-- --> 통신환경</td><td>실시간 처리 불필요</td></tr><tr><td>-</td><td>채널 열악, 무선환경</td><td>단말 성능 열악</td></tr><tr><td>-</td><td>재전송 시도불가 환경</td><td>전이중 통신 환경</td></tr><tr><td>장점</td><td>연속적 데이터 전송으로 높은 효율, 전송 지연 없음</td><td>알고리즘 간단, 단순한 단말구성, 채널적응력 우수</td></tr><tr><td>단점</td><td>복잡한 검출 알고리즘, 검출 및 정정 하드웨어 성능 필요</td><td>송수신 버퍼 필요, 채널 불안정시 재전송 요구 폭증</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="arq-유형">ARQ 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#arq-%EC%9C%A0%ED%98%95">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Stop &amp; Wait ARQ</td><td>한 번에 하나의 프레임 전송 후 ACK를 받을 때까지 대기</td><td>단순, 낮은 전송 효율</td></tr><tr><td>Go Back N ARQ</td><td>여러 프래임 연속 전송, 오류 발생 프레임 이후 모든 프레임 재전송</td><td>전송효율 상대적 높음</td></tr><tr><td>Selective Repeat ARQ</td><td>여러 프레임 연속 전송, 오류 발생 특정 프레임만 재전송</td><td>전송효율 우수, 구현 복잡</td></tr><tr><td>Adaptive ARQ</td><td>전송환경에 따라 전송 속도나 재전송 전략을 동적 조절</td><td>패킷 오류율, SNR, 전송 지연</td></tr><tr><td>Hybrid ARQ</td><td>FEC로 정정시도 후 실패시 ARQ 시도</td><td>무선, 위선통신, 높은 신뢰성</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-방식-선택시-고려사항">오류제어 방식 선택시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/fec-arq/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EB%B0%A9%EC%8B%9D-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>채널 환경, 데이터 중요도, 실시간 요구사항을 고려하여 적합한 제어 방식 선택</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
