@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T08:19:46.287Z</updated>
+    <updated>2024-07-22T08:28:03.151Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IT 투자분석]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/it-roi/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/it-roi/"/>
+        <updated>2024-07-22T08:28:03.151Z</updated>
+        <summary type="html"><![CDATA[IT Return on investment]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-개념">IT 투자분석 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>IT투자에 대한 성과를 객관적, 논리적으로 분석 및 측정하여 효과성을 파악하는 절차</li>
+<li>중요도와 효과를 사전 분석함으로서 정보화사업의 우선순위 결정, 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프로세스-프레임워크-분석-방법론">IT 투자분석 프로세스, 프레임워크, 분석 방법론<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%B6%84%EC%84%9D-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프로세스">IT 투자분석 프로세스<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>현행 분석 및 계획 수립</td><td>현재 조직의 상태 파악, 투자 계획 수립</td><td>평가 대산, 기간, 조직 분석</td></tr><tr><td>IT투자평가 지표 도출</td><td>사전, 중간, 사후 평가시 지표 마련</td><td><mark class="flexible-marker flexible-marker-default">KPI, 베이스라인</mark></td></tr><tr><td>자료수집 및 평가</td><td>평가지표별 투자효과성 검토</td><td>자료 수집, 효과 산출</td></tr><tr><td>성과 분석 및 사업가치 분석</td><td>성과 분석 및 개선방안 도출</td><td><mark class="flexible-marker flexible-marker-default">CBA</mark></td></tr><tr><td>종합보고 및 피드백</td><td>투자분석, 결과보고, 피드백</td><td>성과보고</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프레임워크">IT 투자분석 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
+<table><thead><tr><th>구분</th><th>프레임워크</th></tr></thead><tbody><tr><td>평가단계</td><td><mark class="flexible-marker flexible-marker-default">사전평가, 중간평가, 사후평가</mark></td></tr><tr><td>시행추진단계</td><td>정보화사업 <mark class="flexible-marker flexible-marker-default">준비</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">수행</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">완료</mark></td></tr><tr><td>성과측정모델</td><td><mark class="flexible-marker flexible-marker-default">BSC</mark>, <mark class="flexible-marker flexible-marker-default">IT-BSC</mark></td></tr><tr><td>분석기법</td><td><mark class="flexible-marker flexible-marker-default">NPV</mark>-순현재가치, <mark class="flexible-marker flexible-marker-default">ROI</mark>-투자수익률 - <mark class="flexible-marker flexible-marker-default">IRR</mark>-투자회수기간, <mark class="flexible-marker flexible-marker-default">PP</mark>-내부수익률</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-방법론">IT 투자분석 방법론<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h3>
+<!-- -->
+<ul>
+<li>재무적, 통계산술적, 다중접근 등의 방법론을 통해 최적 분석안을 선택하여 다층 분석 ㅅ행</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-고려사항">IT 투자분석 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>효율적, 효과적인 IT투자분석을 위해 기업의 IT거버넌스 수립이 우선되어야함</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ESG]]></title>
         <id>https://gracefullight.dev/en/pe/mng/esg/</id>
@@ -246,7 +279,7 @@
         <link href="https://gracefullight.dev/en/pe/nw/mqtt/"/>
         <updated>2024-07-21T14:15:25.120Z</updated>
         <summary type="html"><![CDATA[Message Queuing Telemetry Transport]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-개념">MQTT 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-개��념">MQTT 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>클라이언트와 서버간 비동기 메세지 전달을 위한 경량 Pub/Sub 구조 TCP 프로토콜</li>
 <li>저전력, 대역폭 제한 환경, 메세징, IoT, 낮은 지연, 실시간, 다양한 OS, 언어 지원</li>
@@ -294,41 +327,6 @@
 <ul>
 <li>높은 망 사용 비용으로 해외 주요서비스가 철수하여 사용자의 서비스 선택권 저해</li>
 <li>발신자 종량제 폐지로 피어링 비용 부담 완화 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[QoS, DiffServ, IntServ]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/"/>
-        <updated>2024-07-21T13:45:43.683Z</updated>
-        <summary type="html"><![CDATA[Quality of Service, Differentiated services, Integrated services]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="qos-개념">QoS 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#qos-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>한정된 네트워크 대역폭을 효율적으로 사용하기 위해 전송품질, 전송속도를 보장하여 종단간 서비스 품질을 향상시키는 기술</li>
-<li>대역폭, 딜레이, 지터, 패킷로스 등으로 측정</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="qos-보장모델-개념-특징-적용사례">QoS 보장모델 개념, 특징, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#qos-%EB%B3%B4%EC%9E%A5%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="qos-보장모델-intserv-diffserv-개념">QoS 보장모델 IntServ, DiffServ 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#qos-%EB%B3%B4%EC%9E%A5%EB%AA%A8%EB%8D%B8-intserv-diffserv-%EA%B0%9C%EB%85%90">​</a></h3>
-<!-- -->
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">IntServ</mark>: QoS 보장을 위해 <mark class="flexible-marker flexible-marker-default">수신자 주도</mark>로 <mark class="flexible-marker flexible-marker-default">경로상의 자원을 미리 예약</mark>하는 기술</li>
-</ul>
-<!-- -->
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">DiffServ</mark>: 트래픽을 <mark class="flexible-marker flexible-marker-default">클래스별로 분류</mark>하여 <mark class="flexible-marker flexible-marker-default">차등화</mark>된 서비스를 제공하는 기술</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-특징-비교">IntServ, DiffServ 특징 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>IntServ</th><th>DiffServ</th></tr></thead><tbody><tr><td>목적</td><td>사전 경로지정, 자원 예약</td><td>트래픽별 서비스 차등화</td></tr><tr><td>특징</td><td>라우팅 오버헤드 발생</td><td>RSVP 연결비용 절감</td></tr><tr><td>서비스 목표</td><td>실시간 서비스 트래픽 흐름 지원</td><td>다양한 서비스 레벨 지원</td></tr><tr><td>엄격한 지연보증</td><td>보증 가능</td><td>불가</td></tr><tr><td>QoS 구분</td><td><mark class="flexible-marker flexible-marker-default">RSVP</mark>로 라우터에서 패킷 확인</td><td><mark class="flexible-marker flexible-marker-default">DSCP</mark> 이용 구분</td></tr><tr><td>규모</td><td>소규모</td><td>대규모</td></tr><tr><td>구현복잡도</td><td>높음, 연결 상태 관리</td><td>낮음, 분류, 마킹</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="intserv-diffserv-적용방안">IntServ, DiffServ 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/qos-diffserv-intserv/#intserv-diffserv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<ul>
-<li>DiffServ는 백본망, IntServ는 주변 소규모망에 적용하여 대규모 네트워크 구간 간 QoS 확보 및 소규모망 내 실시간 성능 확보</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
