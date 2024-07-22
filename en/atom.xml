@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T08:40:44.911Z</updated>
+    <updated>2024-07-22T08:48:23.818Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[과업심의 가이드, 과업변경 적정성 판단 평가기준]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/과업심의-가이드/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/과업심의-가이드/"/>
+        <updated>2024-07-22T08:48:23.818Z</updated>
+        <summary type="html"><![CDATA[과업심의 가이드, 과업변경 적정성 판단 평가기준]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업심의-가이드-개념">과업심의 가이드 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">공공 SW사업 계획 단계</mark>에서 <mark class="flexible-marker flexible-marker-default">과업 확정과 사업 기간의 적정성 평가를 지원</mark>하고, <mark class="flexible-marker flexible-marker-default">과업 내용 변경시 절차를 준수</mark>하도록 하기 위한 가이드</li>
+<li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업심의-가이드-기대효과">과업심의 가이드 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
+<table><thead><tr><th>구분</th><th>기대효과</th><th>비고</th></tr></thead><tbody><tr><td>발주자</td><td>명확한 과업 범위 설정을 통한 예산 낭비 방지</td><td>과업변경 최소화 노력</td></tr><tr><td>사업자</td><td>과업 변경시 합리적 절차 통한 권리 보호</td><td>과업 규모 산정 용이</td></tr><tr><td>기타</td><td>SW사업의 효율성, 품질 향상</td><td>SW사업 관련 분쟁 감소</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경시-고려사항">과업변경시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>정통법으로 기능점수를 산정하여 과업 변경에 대한 정확한 비용 추정 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SCM, 공급망 관리]]></title>
         <id>https://gracefullight.dev/en/pe/mng/scm/</id>
@@ -301,34 +330,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/algo" term="pe/algo"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MQTT]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/mqtt/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/mqtt/"/>
-        <updated>2024-07-21T14:15:25.120Z</updated>
-        <summary type="html"><![CDATA[Message Queuing Telemetry Transport]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-개념">MQTT 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>클라이언트와 서버간 비동기 메세지 전달을 위한 경량 Pub/Sub 구조 TCP 프로토콜</li>
-<li>저전력, 대역폭 제한 환경, 메세징, IoT, 낮은 지연, 실시간, 다양한 OS, 언어 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성도-구성요소-적용방안">MQTT 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성도">MQTT 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성요소">MQTT 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Publisher</td><td>메세지를 특정 토픽에 발행하는 클라이언트</td><td>센서, 모바일기기 등</td></tr><tr><td>Subscriber</td><td>특정 토픽의 메세지를 구독하는 클라이언트 또는 서버</td><td>모니터링 시스템, 제어장치 등</td></tr><tr><td>Broker</td><td>발행된 메세지를 해당 토픽을 구독하는 클라이언트에 중개</td><td>메세지 라우팅</td></tr><tr><td>Topic</td><td>메세지를 분류하기 위한 계층적 문자열</td><td>home/room/humid 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>스마트홈</td><td>다양한 센서, 장치 간 데이터 전송, 상태 업데이트</td><td>편의성, 에너지 절약</td></tr><tr><td>산업 자동화</td><td>로봇과 센서간 실시간 데이터 처리</td><td>생산성, 안정성</td></tr><tr><td>헬스케어</td><td>환자 상태 모니터링, 의료기기 제어</td><td>응급상황 대처</td></tr><tr><td>스마트시티</td><td>교통정보, 환경정보, 공공시설 관리</td><td>효율성, 편의성</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-고려사항">MQTT 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>장치 간 직접통신이 필요하거나 다양한 유,무선 프로토콜을 커버해야할 경우 Matter 사용 고려</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
     </entry>
 </feed>
