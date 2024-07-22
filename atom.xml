@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T11:16:41.250Z</updated>
+    <updated>2024-07-22T11:23:39.263Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[소프트웨어 사업의 단계별 발주제도]]></title>
+        <id>https://gracefullight.dev/pe/mng/소프트웨어-사업의-단계별-발주제도/</id>
+        <link href="https://gracefullight.dev/pe/mng/소프트웨어-사업의-단계별-발주제도/"/>
+        <updated>2024-07-22T11:23:39.263Z</updated>
+        <summary type="html"><![CDATA[소프트웨어 사업의 단계별 발주제도]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-개념">소프트웨어 사업의 단계별 발주제도 개념<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 개념에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>정보기술용역을 구성하는 SW, HW, 시스템 개발 등을 일괄 발주하지 않고 <mark class="flexible-marker flexible-marker-default">선행, 후속 사업 2단계</mark>로 분석, 설계를 우선 실시하고, 산출물에 의거하여 구현 사업을 수행하는 제도</li>
+<li>단계별 요구사항 명확화, 단계별 예산 효율적 관리, <mark class="flexible-marker flexible-marker-default">설계와 구현 분리</mark>로 인한 품질 향상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도-세부-내용">소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="소�프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-세부-내용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<table><thead><tr><th>구분</th><th>표준 프로세스</th><th>주요 산출물</th></tr></thead><tbody><tr><td>선행사업</td><td>요구사항 질의, 분석</td><td>요구사항 명세서, Use Case 시나리오</td></tr><tr><td>-</td><td>기본설계 (논리적)</td><td>기본 설계서</td></tr><tr><td>후속사업</td><td>상세설계 (물리적)</td><td>DB설계서, 테스트 명세서</td></tr><tr><td>-</td><td>개발</td><td>코드, 단위모듈 설계서, 테스트 시나리오</td></tr><tr><td>-</td><td>테스트</td><td>테스트 결과서, 품질 검토서</td></tr><tr><td>-</td><td>인수</td><td>인수 계획서, 설치 결과서, 시범운영계획서</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-일괄-발주-비교">소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%EF%BF%BD%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%9D%BC%EA%B4%84-%EB%B0%9C%EC%A3%BC-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>단계별 발주</th><th>일괄 발주</th></tr></thead><tbody><tr><td>특징</td><td>설계와 구현 분리 발주</td><td>설계와 구현 일괄 발주</td></tr><tr><td>리스트 관리</td><td>단계별 리스크 식별, 관리</td><td>프로젝트 전체 리스크 관리</td></tr><tr><td>참여업체 수</td><td>다수 업체</td><td>동일 업체</td></tr><tr><td>발주 행정부담</td><td>복수사업자 선정에 따른 행정 절차 부담 증가</td><td>단일 사업자 수행으로 행정 절차 감소</td></tr><tr><td>시스템 통합 책임</td><td>별도 시스템 통합 사업자 선정</td><td>구축 사업자가 통합 책임</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주시-고려사항">소프트웨어 사업의 단계별 발주시 고려사항<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주시 고려사항에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>다수업체 발주로 인한 프로젝트관리, 품질관리를 위해 PMO, QMO 도입 검토 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[협상에 의한 계약체결 방식]]></title>
         <id>https://gracefullight.dev/pe/mng/협상에-의한-계약체결-방식/</id>
@@ -24,7 +53,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" title="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" title="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EF%BF%BD%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-비교">공공기관 정보시스템 구축업체 선정방식 비교<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>협상에 의한 계약 체결</th><th>경쟁적 대화에 의한 계약 체결</th></tr></thead><tbody><tr><td>근거</td><td>국가계약법 제 43조 2</td><td>국가계약법 제 43조 3</td></tr><tr><td>대상</td><td>기술력, 가격 모두 중요한 경우</td><td>요구사항 불명확, 기술적 해결방안이 다양한 경우</td></tr><tr><td>주요 절차</td><td><mark class="flexible-marker flexible-marker-default">제안서 평가, 협상, 계약 체결</mark></td><td><mark class="flexible-marker flexible-marker-default">대화 단계</mark>, 제안서 평가, 협상, 계약 체결</td></tr><tr><td>평가 요소</td><td>기술 능력, 입찰 가격</td><td>기술적 제안, 대화 결과, 가격</td></tr></tbody></table>
@@ -183,7 +212,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1단계</td><td>SW사업 기본정보 작성</td><td>사업명, 주요내용, 사업기간</td></tr><tr><td>2단계</td><td>운영계획 검토</td><td>운영기관 또는 사용자와의 공동 사용여부 분석</td></tr><tr><td>3단계</td><td>민간 SW시장 침해가능성 검토</td><td>동일, 유사 SW 존재 여부 확인</td></tr><tr><td>4단계</td><td>사업 필요성, 공공성 검토</td><td>유사 민간 SW 있으나 추진하는 사유</td></tr><tr><td>5단계</td><td>종합의견 작성</td><td>민간 SW 시장침해 가능성 종합 판단</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-평가항목">SW사업 영향평가 평가항목<a class="hash-link" aria-label="SW사업 영향평가 평가항목에 대한 직접 링크" title="SW사업 영향평가 평가항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%ED%8F%89%EA%B0%80%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>평가기준</td><td>민간SW시장 침해 가능성</td><td>SW사업 주요기능과 동일, 유사한 SW를 민간에서 제공하는지 여부</td></tr><tr><td>-</td><td>SW사업 필요성, 공공성</td><td>민간 SW가 있지만, 사업을 추진해야하는 이유</td></tr><tr><td>평가방법</td><td>자체평가</td><td>사업부서에서 직접 검토</td></tr><tr><td>-</td><td>기술지원</td><td>과기정통부, 정보통신산업진흥원 지원 요청</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-검토시-고려사항">SW사업 영향평가 검토시 고려사항<a class="hash-link" aria-label="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" title="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B2%80%ED%86%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-검토시-고려사항">SW사업 영향평가 검토시 고려사항<a class="hash-link" aria-label="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" title="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EF%BF%BD%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B2%80%ED%86%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>OpenAPI 등을 통한 공공 데이터 개방으로 사업을 통한 민간 서비스 시장 활성화 기여 필요</li>
 </ul>]]></content>
@@ -237,7 +266,7 @@
 <li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 �개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개�념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" title="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
@@ -275,39 +304,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="scm-추가적-고려사항">SCM 추가적 고려사항<a class="hash-link" aria-label="SCM 추가적 고려사항에 대한 직접 링크" title="SCM 추가적 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/scm/#scm-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>자연재해, 정치 이슈 등 다양한 외부 리스크에 대한 대응 계획 수립 및 <mark class="flexible-marker flexible-marker-default">공급망 다각화</mark> 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IT 투자분석]]></title>
-        <id>https://gracefullight.dev/pe/mng/it-roi/</id>
-        <link href="https://gracefullight.dev/pe/mng/it-roi/"/>
-        <updated>2024-07-22T08:28:03.151Z</updated>
-        <summary type="html"><![CDATA[IT Return on investment]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-개념">IT 투자분석 개념<a class="hash-link" aria-label="IT 투자분석 개념에 대한 직접 링크" title="IT 투자분석 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>IT투자에 대한 성과를 객관적, 논리적으로 분석 및 측정하여 효과성을 파악하는 절차</li>
-<li>중요도와 효과를 사전 분석함으로서 정보화사업의 우선순위 결정, 비용 절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프로세스-프레임워크-분석-방법론">IT 투자분석 프로세스, 프레임워크, 분석 방법론<a class="hash-link" aria-label="IT 투자분석 프로세스, 프레임워크, 분석 방법론에 대한 직접 링크" title="IT 투자분석 프로세스, 프레임워크, 분석 방법론에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%B6%84%EC%84%9D-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프로세스">IT 투자분석 프로세스<a class="hash-link" aria-label="IT 투자분석 프로세스에 대한 직접 링크" title="IT 투자분석 프로세스에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>현행 분석 및 계획 수립</td><td>현재 조직의 상태 파악, 투자 계획 수립</td><td>평가 대산, 기간, 조직 분석</td></tr><tr><td>IT투자평가 지표 도출</td><td>사전, 중간, 사후 평가시 지표 마련</td><td><mark class="flexible-marker flexible-marker-default">KPI, 베이스라인</mark></td></tr><tr><td>자료수집 및 평가</td><td>평가지표별 투자효과성 검토</td><td>자료 수집, 효과 산출</td></tr><tr><td>성과 분석 및 사업가치 분석</td><td>성과 분석 및 개선방안 도출</td><td><mark class="flexible-marker flexible-marker-default">CBA</mark></td></tr><tr><td>종합보고 및 피드백</td><td>투자분석, 결과보고, 피드백</td><td>성과보고</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프레임워크">IT 투자분석 프레임워크<a class="hash-link" aria-label="IT 투자분석 프레임워크에 대한 직접 링크" title="IT 투자분석 프레임워크에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
-<table><thead><tr><th>구분</th><th>프레임워크</th></tr></thead><tbody><tr><td>평가단계</td><td><mark class="flexible-marker flexible-marker-default">사전평가, 중간평가, 사후평가</mark></td></tr><tr><td>시행추진단계</td><td>정보화사업 <mark class="flexible-marker flexible-marker-default">준비</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">수행</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">완료</mark></td></tr><tr><td>성과측정모델</td><td><mark class="flexible-marker flexible-marker-default">BSC</mark>, <mark class="flexible-marker flexible-marker-default">IT-BSC</mark></td></tr><tr><td>분석기법</td><td><mark class="flexible-marker flexible-marker-default">NPV</mark>-순현재가치, <mark class="flexible-marker flexible-marker-default">ROI</mark>-투자수익률 - <mark class="flexible-marker flexible-marker-default">IRR</mark>-투자회수기간, <mark class="flexible-marker flexible-marker-default">PP</mark>-내부수익률</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-방법론">IT 투자분석 방법론<a class="hash-link" aria-label="IT 투자분석 방법론에 대한 직접 링크" title="IT 투자분석 방법론에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h3>
-<!-- -->
-<ul>
-<li>재무적, 통계산술적, 다중접근 등의 방법론을 통해 최적 분석안을 선택하여 다층 분석 ㅅ행</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-고려사항">IT 투자분석 고려사항<a class="hash-link" aria-label="IT 투자분석 고려사항에 대한 직접 링크" title="IT 투자분석 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>효율적, 효과적인 IT투자분석을 위해 기업의 IT거버넌스 수립이 우선되어야함</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
