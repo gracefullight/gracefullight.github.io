@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T11:23:39.263Z</updated>
+    <updated>2024-07-22T11:30:48.801Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[RFP, PMO]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/rfp-pmo/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/rfp-pmo/"/>
+        <updated>2024-07-22T11:30:48.801Z</updated>
+        <summary type="html"><![CDATA[RFP, PMO]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="rfp-pmo-개념">RFP, PMO 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#rfp-pmo-%EA%B0%9C%EB%85%90">​</a></h2>
+<table><thead><tr><th>RFP</th><th>PMO</th></tr></thead><tbody><tr><td>요구사항을 기능점수를 산출 가능하도록 상세화한 제안서</td><td>프로젝트 관리, 표준화, 조정을 담당하는 조직</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pmo-사업-유형의-rfp-목차">PMO 사업 유형의 RFP 목차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#pmo-%EC%82%AC%EC%97%85-%EC%9C%A0%ED%98%95%EC%9D%98-rfp-%EB%AA%A9%EC%B0%A8">​</a></h2>
+<table><thead><tr><th>목차</th><th>세부 목차</th><th>비고</th></tr></thead><tbody><tr><td>사업 개요</td><td>추진 배경 및 필요성</td><td>-</td></tr><tr><td>-</td><td>대상 사업 개요</td><td>-</td></tr><tr><td>-</td><td>사업 범위</td><td>-</td></tr><tr><td>-</td><td>기대효과 및 성과지표</td><td>-</td></tr><tr><td>PMO 대상사업</td><td>사업 개요</td><td>-</td></tr><tr><td>-</td><td>추진 목표</td><td>-</td></tr><tr><td>-</td><td>추진 범위 및 내용</td><td>-</td></tr><tr><td>-</td><td>사업 추진 체계</td><td>-</td></tr><tr><td>-</td><td>사업 추진 일정</td><td>-</td></tr><tr><td>사업 추진 방안</td><td>추진 목표</td><td>-</td></tr><tr><td>-</td><td>추진 방안</td><td>-</td></tr><tr><td>제안 요청 내용</td><td>제안 요청 개요</td><td>-</td></tr><tr><td>-</td><td>용어의 정의</td><td>-</td></tr><tr><td>-</td><td>상세 요구사항</td><td>-</td></tr><tr><td>제안서 작성 요령</td><td>제안서의 효력</td><td>-</td></tr><tr><td>-</td><td>제안서 작성 지침</td><td>-</td></tr><tr><td>-</td><td>제안서 목차</td><td>-</td></tr><tr><td>-</td><td>세부 작성 지침</td><td>-</td></tr><tr><td>제안 안내사항</td><td>입찰 방식</td><td>-</td></tr><tr><td>-</td><td>제안서 평가 기법</td><td>-</td></tr><tr><td>-</td><td>기술서 평가 기준</td><td>-</td></tr><tr><td>-</td><td>제출 서류 참조</td><td>-</td></tr><tr><td>-</td><td>제안 요청 설명회</td><td>-</td></tr><tr><td>-</td><td>입찰시 유의사항</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pmo-사업-유형의-제안요청서-중-필수-요구사항">PMO 사업 유형의 제안요청서 중 필수 요구사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#pmo-%EC%82%AC%EC%97%85-%EC%9C%A0%ED%98%95%EC%9D%98-%EC%A0%9C%EC%95%88%EC%9A%94%EC%B2%AD%EC%84%9C-%EC%A4%91-%ED%95%84%EC%88%98-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD">​</a></h2>
+<table><thead><tr><th>필수요구사항</th><th>상세내용</th><th>비고</th></tr></thead><tbody><tr><td>제약사항 COR</td><td>시스템 개발</td><td>-</td></tr><tr><td>-</td><td>데이터</td><td>-</td></tr><tr><td>-</td><td>설계 및 구현</td><td>-</td></tr><tr><td>-</td><td>업무</td><td>-</td></tr><tr><td>-</td><td>표준</td><td>-</td></tr><tr><td>프로젝트 관리 PMR</td><td>사업수행조직 구성</td><td>-</td></tr><tr><td>-</td><td>개발 방법론</td><td>-</td></tr><tr><td>-</td><td>사업관리</td><td>-</td></tr><tr><td>-</td><td>보안관리</td><td>-</td></tr><tr><td>프로젝트 지원 PSR</td><td>시스템 안정화</td><td>-</td></tr><tr><td>-</td><td>하자보수</td><td>-</td></tr><tr><td>-</td><td>시스템 운영</td><td>-</td></tr><tr><td>-</td><td>교육 및 기술 지원</td><td>-</td></tr><tr><td>컨설팅 CNR</td><td>ISP</td><td>-</td></tr><tr><td>-</td><td>프로젝트 관리 요구사항</td><td>-</td></tr><tr><td>-</td><td>ISMP</td><td>-</td></tr><tr><td>-</td><td>EA</td><td>-</td></tr><tr><td>-</td><td>ETC</td><td>-</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[소프트웨어 사업의 단계별 발주제도]]></title>
         <id>https://gracefullight.dev/en/pe/mng/소프트웨어-사업의-단계별-발주제도/</id>
@@ -50,7 +69,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차-세부-내용">협상에 의한 계약체결 방식 절차, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차">협상에 의한 계약체결 방식 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EF%BF%BD%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
@@ -268,42 +287,13 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적��정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업심의-가이드-기대효과">과업심의 가이드 기대효과<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
 <table><thead><tr><th>구분</th><th>기대효과</th><th>비고</th></tr></thead><tbody><tr><td>발주자</td><td>명확한 과업 범위 설정을 통한 예산 낭비 방지</td><td>과업변경 최소화 노력</td></tr><tr><td>사업자</td><td>과업 변경시 합리적 절차 통한 권리 보호</td><td>과업 규모 산정 용이</td></tr><tr><td>기타</td><td>SW사업의 효율성, 품질 향상</td><td>SW사업 관련 분쟁 감소</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경시-고려사항">과업변경시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>정통법으로 기능점수를 산정하여 과업 변경에 대한 정확한 비용 추정 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SCM, 공급망 관리]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/scm/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/scm/"/>
-        <updated>2024-07-22T08:40:44.911Z</updated>
-        <summary type="html"><![CDATA[Supply Chain Management]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="scm-개념">SCM 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">고객 서비스 수준을 만족시키면서 시스템 전반의 비용을 최소화</mark>할 수 있도록 제품이 적절한 수량, 시간, 장소에서 생산, 유통이 가능하게 하기 위해 공급자, 제조업자, 창고, 보관업자, 소매상 등을 효율적으로 통합하기 위한 관리 방법</li>
-<li><mark class="flexible-marker flexible-marker-default">부가가치의 70~80%가 공급사슬</mark>에서 발생, 비용절감, 효율성 증대, 고객 만족도 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="scm-구성도-구성요소-적용사례">SCM 구성도, 구성요소, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="scm-구성도">SCM 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="scm-구성요소">SCM 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>계획</td><td>수요 예측, 자원 계획, 일정 관리</td><td>예측 정확도</td></tr><tr><td>조달</td><td>원자재 및 부품 공급자 선정 관리</td><td>품질, 가격 협상</td></tr><tr><td>제조</td><td>제품 생산 및 조립 관리</td><td><mark class="flexible-marker flexible-marker-default">생산효율성</mark></td></tr><tr><td>물류</td><td>제품의 창고 보관, 운송 관리</td><td><mark class="flexible-marker flexible-marker-default">적시성</mark></td></tr><tr><td>반품관리</td><td>제품 반품 및 재고 관리</td><td>고객 서비스 향상</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="scm-적용사례">SCM 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>삼성전자 글로벌 공급망 통합관리</td><td>부품 조달, 생산, 유통 통합</td></tr><tr><td>국외</td><td>아마존 IT기술 융합 재고 최적화</td><td>이커머스 선도 모델</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="scm-추가적-고려사항">SCM 추가적 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/scm/#scm-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>자연재해, 정치 이슈 등 다양한 외부 리스크에 대한 대응 계획 수립 및 <mark class="flexible-marker flexible-marker-default">공급망 다각화</mark> 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
