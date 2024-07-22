@@ -4,17 +4,50 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 10:57:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jul 2024 11:10:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[디자인 씽킹]]></title>
+            <link>https://gracefullight.dev/pe/mng/design-thinking/</link>
+            <guid>https://gracefullight.dev/pe/mng/design-thinking/</guid>
+            <pubDate>Mon, 22 Jul 2024 11:10:53 GMT</pubDate>
+            <description><![CDATA[Design Thinking]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-개념">디자인 씽킹 개념<a class="hash-link" aria-label="디자인 씽킹 개념에 대한 직접 링크" title="디자인 씽킹 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>디자이너가 생각하는 방식으로 문제를 찾아 해결하는 과정에서의 태도와 생각하는 절차 및 방법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-핵심요소-프로세스-적용방안">디자인 씽킹 핵심요소, 프로세스, 적용방안<a class="hash-link" aria-label="디자인 씽킹 핵심요소, 프로세스, 적용방안에 대한 직접 링크" title="디자인 씽킹 핵심요소, 프로세스, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-핵심요소">디자인 씽킹 핵심요소<a class="hash-link" aria-label="디자인 씽킹 핵심요소에 대한 직접 링크" title="디자인 씽킹 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<!-- -->
+<ul>
+<li>사람들이 원하는 것, 기술적으로 가능한 것, 사업가치가 있는 것을 활용하여 고객 경험 혁신을 위한 전략 도출</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-프로세스">디자인 씽킹 프로세스<a class="hash-link" aria-label="디자인 씽킹 프로세스에 대한 직접 링크" title="디자인 씽킹 프로세스에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
+<!-- -->
+<p>| 구분 | 내용 | 비고 |
+| 공감 | 사용자 관찰을 통해 요구와 문제를 파악하는 단계 | 인터뷰, 설문조사 |
+| 정의 | 파악한 문제 기반 핵심 문제 정의 | 의견 조율, 정의서 작성 |
+| 아이디어 | 다양한 해결책 모색, 가장 유망한 아이디어 선정 | 브레인스토밍, 아이디어 스케치 |
+| 프로토타입 | 아이디어 구현, 시각화 | 저비용 프로토타이핑 |
+| 테스트 | 프로토타이핑 테스트, 피드백, 개선 | 반복적 테스트, 사용성 테스트 |</p>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인씽킹-적용방안">디자인씽킹 적용방안<a class="hash-link" aria-label="디자인씽킹 적용방안에 대한 직접 링크" title="디자인씽킹 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8%EC%94%BD%ED%82%B9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터분석</td><td>사용자 행동 분석, 서비스 요구사항 도출</td><td>데이터 경량화</td></tr><tr><td>UI/UX 디자인</td><td>사용자가 쉽게 사용할 수 있는 인터페이스, 기능 설계</td><td>사용자 중심 설계</td></tr><tr><td>SW 개발</td><td>사용자 요구사항 반영 SW 기능 개발, 클래스 설계</td><td>사용자 피드백 반영</td></tr><tr><td>유지보수</td><td>사용자 피드백을 반영하여 지속적인 서비스 개선</td><td>반복적 개선</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인씽킹-고려사항">디자인씽킹 고려사항<a class="hash-link" aria-label="디자인씽킹 고려사항에 대한 직접 링크" title="디자인씽킹 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8%EC%94%BD%ED%82%B9-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>반복적으로 문제를 정의하고 분석, 개선해나가기 위해 실패를 학습의 기회로 삼고 새로운 시도를 하는 조직문화 조성 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/mng</category>
+        </item>
         <item>
             <title><![CDATA[MECE]]></title>
             <link>https://gracefullight.dev/pe/mng/mece/</link>
             <guid>https://gracefullight.dev/pe/mng/mece/</guid>
             <pubDate>Mon, 22 Jul 2024 10:57:36 GMT</pubDate>
             <description><![CDATA[Mutually Exclusive and Collectively Exhaustive]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-개념">MECE 개념<a class="hash-link" aria-label="MECE 개념에 대한 직접 링크" title="MECE 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EA%B0%9C%EB%85%90">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-��개념">MECE 개념<a class="hash-link" aria-label="MECE 개념에 대한 직접 링크" title="MECE 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>상호배타적이며 전체를 포괄하는 분류를 통해 대상이나 개념을 철저히 분석하는 방법론</li>
 <li>문제해결, 전략수립, 의사결정 등 복잡한 상황에서 명확하고 논리적인 판단을 돕는 도구로 활용</li>
@@ -149,7 +182,7 @@
 <li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EF%BF%BD%EF%BF%BD%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EF%BF%BD%EF%BF%BD%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" title="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
@@ -222,7 +255,7 @@
             <guid>https://gracefullight.dev/pe/mng/esg/</guid>
             <pubDate>Mon, 22 Jul 2024 08:19:46 GMT</pubDate>
             <description><![CDATA[Environment, Social, Governance]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개�념">ESG 개념<a class="hash-link" aria-label="ESG 개념에 대한 직접 링크" title="ESG 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개념">ESG 개념<a class="hash-link" aria-label="ESG 개념에 대한 직접 링크" title="ESG 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>기업 경영 활동을 <mark class="flexible-marker flexible-marker-default">환경 경영</mark>, <mark class="flexible-marker flexible-marker-default">사회적 책임</mark>, 건전하고 <mark class="flexible-marker flexible-marker-default">투명한 지배구조</mark>에 초점을 둔 지속가능성을 위한 기업 경영의 세가지 <mark class="flexible-marker flexible-marker-default">비재무적 성과지표</mark></li>
 <li>세계적 트랜드와 사회 구성원의 관심으로 인해 기업의 지속가능한 성장을 위한 리스크 관리 수단으로 활용</li>
@@ -241,30 +274,6 @@
 <ul>
 <li>RE100 인증, 탄소국경조정제도(CBAM) 대응을 위한 재생에너지 사용비율을 지속적으로 높여야함</li>
 </ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[DPG, 디지털 플랫폼 정부]]></title>
-            <link>https://gracefullight.dev/pe/mng/dpg/</link>
-            <guid>https://gracefullight.dev/pe/mng/dpg/</guid>
-            <pubDate>Mon, 22 Jul 2024 08:09:23 GMT</pubDate>
-            <description><![CDATA[Digital Platform Government]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-개념">디지털 플랫폼 정부 개념<a class="hash-link" aria-label="디지털 플랫폼 정부 개념에 대한 직접 링크" title="디지털 플랫폼 정부 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>모든 데이터가 연결되는 디지털 플랫폼 위에서 국민, 기업, 정부가 함께 사회문제를 해결하고, 새로운 가치를 창출하는 정부</li>
-<li>AI, 빅데이터 등 디지털 심화시대에 데이터활용의 중요 대두, 디지털 플랫폼 비지니스모델 적용 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-특징-구성요소-기대효과">디지털 플랫폼 정부 특징, 구성요소, 기대효과<a class="hash-link" aria-label="디지털 플랫폼 정부 특징, 구성요소, 기대효과에 대한 직접 링크" title="디지털 플랫폼 정부 특징, 구성요소, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%ED%8A%B9%EC%A7%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-특징">디지털 플랫폼 정부 특징<a class="hash-link" aria-label="디지털 플랫폼 정부 특징에 대한 직접 링크" title="디지털 플랫폼 정부 특징에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">국민중심</mark></td><td>모든 국민이 언제,어디서나 디지털서비스 이용 보장</td><td>디지털 포용</td></tr><tr><td>-</td><td>공공서비스는 국민이 원하는 방식으로 통합, 선제, 맞춤 제공</td><td>사용자 중심 서비스</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">하나의 정부</mark></td><td>모든 데이터가 연결된 디지털 플랫폼으로 하나의 정부 구현</td><td>부처 간 협업, 데이터 공유</td></tr><tr><td>-</td><td>행정 프로세스 디지털 중심 재설계</td><td>행정, 조직, 효율성 증대</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">AI, 데이터 기반</mark></td><td>공공 데이터는 사람과 기계가독성을 가진 형식으로 전면 개방</td><td>데이터 활용성 증대</td></tr><tr><td>-</td><td>AI, 빅데이터 기반 정책 결정</td><td>과학적 정책 결정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">민관 협력</mark></td><td>민관협력 혁신 생태계 조성</td><td>민간 참여 활성화</td></tr><tr><td>-</td><td>디지털 모법 국가로 국제사회 기여</td><td>국제적 위상 제고</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-구성요소">디지털 플랫폼 정부 구성요소<a class="hash-link" aria-label="디지털 플랫폼 정부 구성요소에 대한 직접 링크" title="디지털 플랫폼 정부 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>플랫폼 제공자</td><td>디지털 플랫폼 구축, 운영, 데이터 통합, 활용 지원</td><td>정부</td></tr><tr><td>공급자</td><td>공공, 민간 서비스, 데이터 제공</td><td>정부, 공공기관</td></tr><tr><td>소비자, 이용자</td><td>맞춤형 서비스와 공공 데이터 활용</td><td>국민, 기업</td></tr><tr><td>플랫폼 생태계 전반</td><td>플랫폼 전반에 걸친 상호작용</td><td>데이터, 서비스, 인프라</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-기대효과">디지털 플랫폼 정부의 기대효과<a class="hash-link" aria-label="디지털 플랫폼 정부의 기대효과에 대한 직접 링크" title="디지털 플랫폼 정부의 기대효�과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
-<table><thead><tr><th>구분</th><th>기대효과</th><th>내용</th></tr></thead><tbody><tr><td>정부</td><td>정부 역량 강화, 신뢰도 향상</td><td>빅데이터 기반 과학적 정책결정, 투명성 제공</td></tr><tr><td>기업</td><td>민간부문 성장동력 마련</td><td>공공 데이터 활용 혁신 서비스 개발</td></tr><tr><td>국민</td><td>국민 중심의 서비스 제공</td><td>맞춤형 행정 서비스 제공</td></tr><tr><td>사회</td><td>사회 전체 발전 도모</td><td>디지털 격차, 역기능 해소</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-추가적인-고려사항">디지털 플랫폼 정부의 추가적인 고려사항<a class="hash-link" aria-label="디지털 플랫폼 정부의 추가적인 고려사항에 대한 직접 링크" title="디지털 플랫폼 정부의 추가적인 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>부처 내 데이터 정보화로 부서 위상 제고</td><td>CDO, CIO 지정</td></tr><tr><td>기술적</td><td>제로트러스트 보안체계 구축</td><td>사이버 위협 대응</td></tr><tr><td>제도적</td><td>개인정보보호법 개정, 하위 법령 정비</td><td>개인정보 전송요구권 도입</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/mng</category>
         </item>
