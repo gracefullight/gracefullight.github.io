@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 10:06:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jul 2024 10:34:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[SW사업 영향평가]]></title>
+            <link>https://gracefullight.dev/pe/mng/SW사업-영향평가/</link>
+            <guid>https://gracefullight.dev/pe/mng/SW사업-영향평가/</guid>
+            <pubDate>Mon, 22 Jul 2024 10:34:17 GMT</pubDate>
+            <description><![CDATA[SW사업 영향평가]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-개념">SW사업 영향평가 개념<a class="hash-link" aria-label="SW사업 영향평가 개념에 대한 직접 링크" title="SW사업 영향평가 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>국가 SW사업의 예산 편성, 발주, SW 배포 및 서비스를 추진하는 경우, <mark class="flexible-marker flexible-marker-default">민간 SW 산업 생태계에 미치는 영향을 검토하여 사전 조정</mark>하는 제도</li>
+<li>민간 SW시장 침해 예방, 민간 SW기업 경쟁력 확보, 공공-민간 중복개발 및 경쟁 방지, 예산 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-절차도-세부절차-평가항목">SW사업 영향평가 절차도, 세부절차, 평가항목<a class="hash-link" aria-label="SW사업 영향평가 절차도, 세부절차, 평가항목에 대한 직접 링크" title="SW사업 영향평가 절차도, 세부절차, 평가항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%ED%8F%89%EA%B0%80%ED%95%AD%EB%AA%A9">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-절차도">SW사업 영향평가 절차도<a class="hash-link" aria-label="SW사업 영향평가 절차도에 대한 직접 링크" title="SW사업 영향평가 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-세부절차">SW사업 영향평가 세부절차<a class="hash-link" aria-label="SW사업 영향평가 세부절차에 대한 직접 링크" title="SW사업 영향평가 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1단계</td><td>SW사업 기본정보 작성</td><td>사업명, 주요내용, 사업기간</td></tr><tr><td>2단계</td><td>운영계획 검토</td><td>운영기관 또는 사용자와의 공동 사용여부 분석</td></tr><tr><td>3단계</td><td>민간 SW시장 침해가능성 검토</td><td>동일, 유사 SW 존재 여부 확인</td></tr><tr><td>4단계</td><td>사업 필요성, 공공성 검토</td><td>유사 민간 SW 있으나 추진하는 사유</td></tr><tr><td>5단계</td><td>종합의견 작성</td><td>민간 SW 시장침해 가능성 종합 판단</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-평가항목">SW사업 영향평가 평가항목<a class="hash-link" aria-label="SW사업 영향평가 평가항목에 대한 직접 링크" title="SW사업 영향평가 평가항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%ED%8F%89%EA%B0%80%ED%95%AD%EB%AA%A9">​</a></h3>
+<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>평가기준</td><td>민간SW시장 침해 가능성</td><td>SW사업 주요기능과 동일, 유사한 SW를 민간에서 제공하는지 여부</td></tr><tr><td>-</td><td>SW사업 필요성, 공공성</td><td>민간 SW가 있지만, 사업을 추진해야하는 이유</td></tr><tr><td>평가방법</td><td>자체평가</td><td>사업부서에서 직접 검토</td></tr><tr><td>-</td><td>기술지원</td><td>과기정통부, 정보통신산업진흥원 지원 요청</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-검토시-고려사항">SW사업 영향평가 검토시 고려사항<a class="hash-link" aria-label="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" title="SW사업 영향평가 검토시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B2%80%ED%86%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>OpenAPI 등을 통한 공공 데이터 개방으로 사업을 통한 민간 서비스 시장 활성화 기여 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/mng</category>
+        </item>
         <item>
             <title><![CDATA[ISO 25029]]></title>
             <link>https://gracefullight.dev/pe/sw/iso-25029/</link>
@@ -47,7 +72,7 @@
 <li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EF%BF%BD%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링��크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" title="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
@@ -265,38 +290,6 @@
 <ul>
 <li>가치경영 도입 및 사회적 책임에 대한 경영 방식을 결합하여 기업의 경쟁력 제고</li>
 <li>RE100 달성을 위한 기업 내 전략 수립 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[ISP, BPR]]></title>
-            <link>https://gracefullight.dev/pe/mng/isp-bpr/</link>
-            <guid>https://gracefullight.dev/pe/mng/isp-bpr/</guid>
-            <pubDate>Mon, 22 Jul 2024 05:55:48 GMT</pubDate>
-            <description><![CDATA[Information Strategic Planning, Business Process Re-engineering]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-개념">ISP, BPR 개념<a class="hash-link" aria-label="ISP, BPR 개념에 대한 직접 링크" title="ISP, BPR 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#isp-bpr-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>ISP는 <mark class="flexible-marker flexible-marker-default">기업의 비전과 목표 달성을 위해 ICT기술을 어떻게 활용</mark>할지 전략 수립, BPR은 <mark class="flexible-marker flexible-marker-default">기존 업무 프로세스를 검토하고 혁신</mark>하여 효율성을 극대화하는 전략 수립</li>
-<li>기업의 비지니스 아키텍처, 전사적 아키텍처를 개선하고 비지니스 목표를 달성하기 위한 필수 요소</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-절차도-세부절차">ISP, BPR 절차도, 세부절차<a class="hash-link" aria-label="ISP, BPR 절차도, 세부절차에 대한 직접 링크" title="ISP, BPR 절차도, 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#isp-bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-절차도-세부절차">ISP 절차도, 세부절차<a class="hash-link" aria-label="ISP 절차도, 세부절차에 대한 직접 링크" title="ISP 절차도, 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#isp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>환경분석</td><td><mark class="flexible-marker flexible-marker-default">비지니스 환경과 내부 역량 파악</mark>, <mark class="flexible-marker flexible-marker-default">기회, 위험요인 식별</mark></td><td>외부 환경 분석, 내부 환경 분석</td></tr><tr><td>현황분석</td><td>현재 <mark class="flexible-marker flexible-marker-default">정보시스템 현황파악</mark>, <mark class="flexible-marker flexible-marker-default">벤치마킹</mark>, <mark class="flexible-marker flexible-marker-default">개선방향 설정</mark></td><td>정보기술 분석, 업무체계 분석</td></tr><tr><td>목표 모델 설계</td><td><mark class="flexible-marker flexible-marker-default">정보시스템 비전 및 목표설정</mark>, <mark class="flexible-marker flexible-marker-default">아키텍처 설계</mark></td><td>정보화 전략, 운영관리 체계</td></tr><tr><td>실행계획수립</td><td>목표모델 실현을 위한 <mark class="flexible-marker flexible-marker-default">구체적 실행방안</mark> 마련</td><td>추진전략수립, 추진일정수립</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bpr-절차도-세부절차">BPR 절차도, 세부절차<a class="hash-link" aria-label="BPR 절차도, 세부절차에 대한 직접 링크" title="BPR 절차도, 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<!-- -->
-<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>고객가치파악</td><td>고객중심 프로세스 개선 기반 마련</td><td>고객 가치 분석, 요구사항 파악</td></tr><tr><td>현재 프로세스 분석</td><td>AS-IS 프로세스 문제점, 개선 기회 파악</td><td>프로세스 분석서</td></tr><tr><td>프로세스 목표 설정</td><td>개선 목표 및 효과 측정, 평가 기준 마련</td><td>개선 목표 설정, KPI 정의</td></tr><tr><td>개선 프로세스 설계</td><td>현신적 프로세스 구현을 위한 실행방안 마련</td><td>RPA 등 자동화시스템 도입</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-비교">ISP, BPR 비교<a class="hash-link" aria-label="ISP, BPR 비교에 대한 직접 링크" title="ISP, BPR 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#isp-bpr-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>ISP</th><th>BPR</th></tr></thead><tbody><tr><td>관점</td><td>전략적 관점</td><td>전술적 관점</td></tr><tr><td>계획</td><td>장기적 계획</td><td>단기적 실행</td></tr><tr><td>개선포인트</td><td>정보시스템 중심</td><td>업무프로세스 중심</td></tr></tbody></table>
-<ul>
-<li>ISP를 진행하고, 현행 비지니스 프로세스 수준이 낮을 경우 BPR을 상호보완적으로 활용하여 정보시스템에 최적화된 프로세스 수립</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-도입-시-고려사항">ISP, BPR 도입 시 고려사항<a class="hash-link" aria-label="ISP, BPR 도입 시 고려사항에 대한 직접 링크" title="ISP, BPR 도입 시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/isp-bpr/#isp-bpr-%EB%8F%84%EC%9E%85-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>성공적인 변화 관리를 위해 이사회, 경영진의 강력한 의지와 지원 필요</li>
-<li>조직 구성원은 변화하는 환경에 적극적, 지속적 프로세스 개선 노력 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/mng</category>
