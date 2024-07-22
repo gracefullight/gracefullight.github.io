@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T11:10:53.021Z</updated>
+    <updated>2024-07-22T11:16:41.250Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[협상에 의한 계약체결 방식]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/협상에-의한-계약체결-방식/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/협상에-의한-계약체결-방식/"/>
+        <updated>2024-07-22T11:16:41.250Z</updated>
+        <summary type="html"><![CDATA[협상에 의한 계약체결 방식]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-개념">협상에 의한 계약체결 방식 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">국가계약법 제 43조</mark>에 따라 입찰자가 제출한 제안서를 <mark class="flexible-marker flexible-marker-default">기술 능력과 입찰 가격을 기준</mark>으로 종합 평가 후 협상하여 최종 낙찰자를 결정하는 방식</li>
+<li>기술이 우수한 사업자 선정 가능, 협상을 통한 요구사항 조절 가능, 복잡하고 다양한 기술적 요구 사업 적합</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차-세부-내용">협상에 의한 계약체결 방식 절차, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차">협상에 의한 계약체결 방식 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EF%BF%BD%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-비교">공공기관 정보시스템 구축업체 선정방식 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>협상에 의한 계약 체결</th><th>경쟁적 대화에 의한 계약 체결</th></tr></thead><tbody><tr><td>근거</td><td>국가계약법 제 43조 2</td><td>국가계약법 제 43조 3</td></tr><tr><td>대상</td><td>기술력, 가격 모두 중요한 경우</td><td>요구사항 불명확, 기술적 해결방안이 다양한 경우</td></tr><tr><td>주요 절차</td><td><mark class="flexible-marker flexible-marker-default">제안서 평가, 협상, 계약 체결</mark></td><td><mark class="flexible-marker flexible-marker-default">대화 단계</mark>, 제안서 평가, 협상, 계약 체결</td></tr><tr><td>평가 요소</td><td>기술 능력, 입찰 가격</td><td>기술적 제안, 대화 결과, 가격</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-진행시-고려사항">협상에 의한 계약체결 진행시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EC%A7%84%ED%96%89%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>과업 내용 변경으로 인한 하도급 대금 지급 비율 변경 가능성을 고려한 예산 반영 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[디자인 씽킹]]></title>
         <id>https://gracefullight.dev/en/pe/mng/design-thinking/</id>
@@ -120,7 +152,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성요소">BSC 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>재무 관점</td><td>전통적 성과 측정 방식</td><td>매출액, 현금 흐름</td></tr><tr><td>내부 프로세스 관점</td><td>조직 내부 프로세스 최적화, 프로세스 향상 노력 성과화</td><td>생산 사이클시간, 단위원가</td></tr><tr><td>고객 관점</td><td>고객 충성도 제고, 만족도 향상</td><td>고객 만족도, 적시공급율</td></tr><tr><td>학습과 성장 관점</td><td>학습 노력과 역량증진을 성과화</td><td>종업원 만족도, 자격취득건수</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-비교">BSC, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-�비교">BSC, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>BSC</th><th>IT-BSC</th></tr></thead><tbody><tr><td>관점</td><td>재무, 고객, 내부프로세스, 학습과 성장</td><td>기업공헌도, 사용자 만족도, 운영 프로세스, 미래지향</td></tr><tr><td>목표</td><td>기업의 행동과 프로세스 변화</td><td>IT 가치전달 및 성과 달성</td></tr><tr><td>활동</td><td>비지니스 거버넌스</td><td>IT 거버넌스</td></tr><tr><td>적용분야</td><td>모든 비지니스 분야</td><td>IT 부서, IT 서비스 제공자</td></tr><tr><td>도입효과</td><td>조직 전반 성과 개선</td><td>IT 성과, 서비스 품질 향상</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-고려사항">BSC 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -266,7 +298,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프로세스">IT 투자분석 프로세스<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>현행 분석 및 계획 수립</td><td>현재 조직의 상태 파악, 투자 계획 수립</td><td>평가 대산, 기간, 조직 분석</td></tr><tr><td>IT투자평가 지표 도출</td><td>사전, 중간, 사후 평가시 지표 마련</td><td><mark class="flexible-marker flexible-marker-default">KPI, 베이스라인</mark></td></tr><tr><td>자료수집 및 평가</td><td>평가지표별 투자효과성 검토</td><td>자료 수집, 효과 산출</td></tr><tr><td>성과 분석 및 사업가치 분석</td><td>성과 분석 및 개선방안 도출</td><td><mark class="flexible-marker flexible-marker-default">CBA</mark></td></tr><tr><td>종합보고 및 피드백</td><td>투자분석, 결과보고, 피드백</td><td>성과보고</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프레임워�크">IT 투자분석 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-프레임워크">IT 투자분석 프레임워크<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC">​</a></h3>
 <table><thead><tr><th>구분</th><th>프레임워크</th></tr></thead><tbody><tr><td>평가단계</td><td><mark class="flexible-marker flexible-marker-default">사전평가, 중간평가, 사후평가</mark></td></tr><tr><td>시행추진단계</td><td>정보화사업 <mark class="flexible-marker flexible-marker-default">준비</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">수행</mark>, 정보화사업 <mark class="flexible-marker flexible-marker-default">완료</mark></td></tr><tr><td>성과측정모델</td><td><mark class="flexible-marker flexible-marker-default">BSC</mark>, <mark class="flexible-marker flexible-marker-default">IT-BSC</mark></td></tr><tr><td>분석기법</td><td><mark class="flexible-marker flexible-marker-default">NPV</mark>-순현재가치, <mark class="flexible-marker flexible-marker-default">ROI</mark>-투자수익률 - <mark class="flexible-marker flexible-marker-default">IRR</mark>-투자회수기간, <mark class="flexible-marker flexible-marker-default">PP</mark>-내부수익률</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-방법론">IT 투자분석 방법론<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h3>
 <!-- -->
@@ -276,38 +308,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="it-투자분석-고려사항">IT 투자분석 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/it-roi/#it-%ED%88%AC%EC%9E%90%EB%B6%84%EC%84%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>효율적, 효과적인 IT투자분석을 위해 기업의 IT거버넌스 수립이 우선되어야함</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ESG]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/esg/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/esg/"/>
-        <updated>2024-07-22T08:19:46.287Z</updated>
-        <summary type="html"><![CDATA[Environment, Social, Governance]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개념">ESG 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>기업 경영 활동을 <mark class="flexible-marker flexible-marker-default">환경 경영</mark>, <mark class="flexible-marker flexible-marker-default">사회적 책임</mark>, 건전하고 <mark class="flexible-marker flexible-marker-default">투명한 지배구조</mark>에 초점을 둔 지속가능성을 위한 기업 경영의 세가지 <mark class="flexible-marker flexible-marker-default">비재무적 성과지표</mark></li>
-<li>세계적 트랜드와 사회 구성원의 관심으로 인해 기업의 지속가능한 성장을 위한 리스크 관리 수단으로 활용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성도-구성요소-적용방안">ESG 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성도">ESG 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>정보공시시 ESG 측면의 목표를 검증, 점검하여 투명성 제고</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-구성요소">ESG 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보공시</td><td>투자자, 이해관계자에게 ESG를 투명하게 공개</td><td>ESG 정보공시 방식, 주기, 범위, KPI 등</td></tr><tr><td>환경</td><td>환경 영향 최소화, 지속가능한 환경 위한 기업 노력</td><td>환경 경영 목표, 온실가스 배출량, 에너지 사용량</td></tr><tr><td>사회</td><td>조직구성원, 소비자 등 사회적 책임 이행을 위한 노력</td><td>정규직 비율, 자발적 이직율, 산업재해율, 정보보호시스템 구축</td></tr><tr><td>지배구조</td><td>투명하고 책임감 있는 기업 지배구조 확립</td><td>사외이사비율, 주주권리보호, 윤리경영, 감사기구 설치 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="esg-적용방안">ESG 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보보호시스템 구축 측면</td><td>정보 유출, 해킹 등 사이버 위협으로부터 기업 정보 보호, 사고발생시 신속하고 효과적인 대응체계 구축</td><td>ISMS 인증 획득, 정보보호교육 실시, 대응절차 마련</td></tr><tr><td>개인정보침해 및 규제 측면</td><td>개인정보보호 관련 법규 준수, 개인정보 침해사고 예방 및 피해 최소화</td><td>ISMS-P 인증 획득, 개인정보 접근통제 강화, 피해규제 방안 마련</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-고려사항">ESG 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/esg/#esg-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>RE100 인증, 탄소국경조정제도(CBAM) 대응을 위한 재생에너지 사용비율을 지속적으로 높여야함</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
