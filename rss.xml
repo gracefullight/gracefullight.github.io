@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 10:34:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jul 2024 10:45:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[BSC, 균형성과기록표]]></title>
+            <link>https://gracefullight.dev/pe/mng/bsc/</link>
+            <guid>https://gracefullight.dev/pe/mng/bsc/</guid>
+            <pubDate>Mon, 22 Jul 2024 10:45:16 GMT</pubDate>
+            <description><![CDATA[Balance Score Card]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-개념">BSC 개념<a class="hash-link" aria-label="BSC 개념에 대한 직접 링크" title="BSC 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>기업 내 거버넌스 관점을 측정 가능한 핵심 성과지표로 전환하여 균형적인 경영 성과관리를 수행하는 성과관리기법</li>
+<li>균형 잡힌 성과 평가, 전략적 목표 달성, 지속가능한 성장, 책임성과 투명성 강화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성도-구성요소-it-bsc-비교">BSC 구성도, 구성요소, IT-BSC 비교<a class="hash-link" aria-label="BSC 구성도, 구성요소, IT-BSC 비교에 대한 직접 링크" title="BSC 구성도, 구성요소, IT-BSC 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-it-bsc-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성도">BSC 구성도<a class="hash-link" aria-label="BSC 구성도에 대한 직접 링크" title="BSC 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<blockquote>
+<p>재고내학</p>
+</blockquote>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성요소">BSC 구성요소<a class="hash-link" aria-label="BSC 구성요소에 대한 직접 링크" title="BSC 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>재무 관점</td><td>전통적 성과 측정 방식</td><td>매출액, 현금 흐름</td></tr><tr><td>내부 프로세스 관점</td><td>조직 내부 프로세스 최적화, 프로세스 향상 노력 성과화</td><td>생산 사이클시간, 단위원가</td></tr><tr><td>고객 관점</td><td>고객 충성도 제고, 만족도 향상</td><td>고객 만족도, 적시공급율</td></tr><tr><td>학습과 성장 관점</td><td>학습 노력과 역량증진을 성과화</td><td>종업원 만족도, 자격취득건수</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-비교">BSC, IT-BSC 비교<a class="hash-link" aria-label="BSC, IT-BSC 비교에 대한 직접 링크" title="BSC, IT-BSC 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>BSC</th><th>IT-BSC</th></tr></thead><tbody><tr><td>관점</td><td>재무, 고객, 내부프로세스, 학습과 성장</td><td>기업공헌도, 사용자 만족도, 운영 프로세스, 미래지향</td></tr><tr><td>목표</td><td>기업의 행동과 프로세스 변화</td><td>IT 가치전달 및 성과 달성</td></tr><tr><td>활동</td><td>비지니스 거버넌스</td><td>IT 거버넌스</td></tr><tr><td>적용분야</td><td>모든 비지니스 분야</td><td>IT 부서, IT 서비스 제공자</td></tr><tr><td>도입효과</td><td>조직 전반 성과 개선</td><td>IT 성과, 서비스 품질 향상</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-고려사항">BSC 고려사항<a class="hash-link" aria-label="BSC 고려사항에 대한 직접 링크" title="BSC 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/bsc/#bsc-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>IT 서비스 품질향상, 개발 생산성 향상을 지원하기 위해 IT-BSC 기법 활용 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/mng</category>
+        </item>
         <item>
             <title><![CDATA[SW사업 영향평가]]></title>
             <link>https://gracefullight.dev/pe/mng/SW사업-영향평가/</link>
@@ -72,7 +100,7 @@
 <li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링��크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" title="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
@@ -255,41 +283,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-추가적-고려사항">ISMP 추가적 고려사항<a class="hash-link" aria-label="ISMP 추가적 고려사항에 대한 직접 링크" title="ISMP 추가적 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/ismp/#ismp-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>디지털플랫폼 정부 기본 원칙인 클라우드, 국민 중심, 하나의 정부, AI 데이터, 민간 협력을 우선시 하여 사업 효율성 제고</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[SEM, 전략적 기업 경영]]></title>
-            <link>https://gracefullight.dev/pe/mng/sem/</link>
-            <guid>https://gracefullight.dev/pe/mng/sem/</guid>
-            <pubDate>Mon, 22 Jul 2024 07:35:47 GMT</pubDate>
-            <description><![CDATA[Strategic Enterprise Management]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-개념">SEM 개념<a class="hash-link" aria-label="SEM 개념에 대한 직접 링크" title="SEM 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>기업 경영진의 <mark class="flexible-marker flexible-marker-default">가치중심경영</mark>을 전사적으로 구현하기 위해 <mark class="flexible-marker flexible-marker-default">원가, 성과관리</mark>를 통해 <mark class="flexible-marker flexible-marker-default">전략 중심의 조직</mark>을 구현하기 위한 <mark class="flexible-marker flexible-marker-default">경영지원시스템</mark></li>
-<li>가치중심경영, ERP의 경영지원 한계점, 신속한 의사결정 지원, ESG 연계를 통한 기업의 연속성 제고</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도-구성요소-적용방안">SEM 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="SEM 구성도, 구성요소, 적용방안에 대한 직접 링크" title="SEM 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도">SEM 구성도<a class="hash-link" aria-label="SEM 구성도에 대한 직접 링크" title="SEM 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>전사적 연계를 통한 신속한 의사결정 지원</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성요소">SEM 구성요소<a class="hash-link" aria-label="SEM 구성요소에 대한 직접 링크" title="SEM 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">VBM</mark></td><td>가치중심 과제 관리, 투자 이익평가</td><td>KPI 중심, 현금 흐름 창출</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">ABM</mark></td><td>원가 관리, 자원 배분 관리</td><td>가격 결정, 의사 결정, 원가 분석, 프로세스 개선</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">BSC</mark></td><td>기업 성과 관리, 경영 품질 모니터링</td><td><mark class="flexible-marker flexible-marker-default">재무, 고객, 내부프로세스, 학습 관점</mark>, IT BSC 연계</td></tr></tbody></table>
-<blockquote>
-<p>재고내학, 기사운미</p>
-</blockquote>
-<ul>
-<li>기존 현황 파악, 실적 관리를 위한 의사결정시스템 구축 필요</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-시스템-적용방안">SEM 시스템 적용방안<a class="hash-link" aria-label="SEM 시스템 적용방안에 대한 직접 링크" title="SEM 시스템 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>자료 수집, 분석</td><td>대상 범위 명확화, 데이터 통합 분석 구현</td><td>SWOT, PEST, 3C 기법 통한 내외부 정보 수집</td></tr><tr><td>핵심가치 관리</td><td>종합적 성과관리 체계 구축, KPI 기반 보상체계 구축</td><td>IT BSC</td></tr><tr><td>의사결정 실행</td><td>실행 조직 구성, 프로세스 개선, 성과측정, 평가</td><td>성과 피드백, 보상, 지속적 개선</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-추가적인-고려사항">SEM 추가적인 고려사항<a class="hash-link" aria-label="SEM 추가적인 고려사항에 대한 직접 링크" title="SEM 추가적인 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sem/#sem-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>가치경영 도입 및 사회적 책임에 대한 경영 방식을 결합하여 기업의 경쟁력 제고</li>
-<li>RE100 달성을 위한 기업 내 전략 수립 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/mng</category>
