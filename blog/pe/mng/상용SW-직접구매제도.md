@@ -5,7 +5,7 @@ description: 상용SW 직접구매제도
 authors: me
 tags:
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## 상용SW 직접구매제도 개념

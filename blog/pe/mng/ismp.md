@@ -5,7 +5,7 @@ description: Information System Master Plan
 authors: me
 tags: 
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## ISMP 개념

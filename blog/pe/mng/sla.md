@@ -5,7 +5,7 @@ description: Service Level Agreement
 authors: me
 tags: 
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## SLA 개념

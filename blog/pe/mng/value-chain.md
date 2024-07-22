@@ -5,7 +5,7 @@ description: 가치사슬 설명
 authors: me
 tags:
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## 가치사슬 개념

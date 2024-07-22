@@ -5,7 +5,7 @@ description: Strategic Enterprise Management
 authors: me
 tags: 
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## SEM 개념

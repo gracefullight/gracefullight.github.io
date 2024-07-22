@@ -5,7 +5,7 @@ description: Real Time Enterprise
 authors: me
 tags:
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## RTE 개요

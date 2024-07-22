@@ -5,7 +5,7 @@ description: Information Strategic Planning, Business Process Re-engineering
 authors: me
 tags: 
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## ISP, BPR 개념

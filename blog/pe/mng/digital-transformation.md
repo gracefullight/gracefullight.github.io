@@ -5,7 +5,7 @@ description: Digital Transformation
 authors: me
 tags:
   - pe
-  - pe/management
+  - pe/mng
 ---
 
 ## 디지털 트랜스포메이션의 개념
