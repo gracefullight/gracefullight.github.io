@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T10:53:43.327Z</updated>
+    <updated>2024-07-22T10:57:36.442Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[MECE]]></title>
+        <id>https://gracefullight.dev/pe/mng/mece/</id>
+        <link href="https://gracefullight.dev/pe/mng/mece/"/>
+        <updated>2024-07-22T10:57:36.442Z</updated>
+        <summary type="html"><![CDATA[Mutually Exclusive and Collectively Exhaustive]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-개념">MECE 개념<a class="hash-link" aria-label="MECE 개념에 대한 직접 링크" title="MECE 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>상호배타적이며 전체를 포괄하는 분류를 통해 대상이나 개념을 철저히 분석하는 방법론</li>
+<li>문제해결, 전략수립, 의사결정 등 복잡한 상황에서 명확하고 논리적인 판단을 돕는 도구로 활용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-절차도-세부절차-주요-기법">MECE 방법론 절차도, 세부절차, 주요 기법<a class="hash-link" aria-label="MECE 방법론 절차도, 세부절차, 주요 기법에 대한 직접 링크" title="MECE 방법론 절차도, 세부절차, 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-절차도">MECE 방법론 절차도<a class="hash-link" aria-label="MECE 방법론 절차도에 대한 직접 링크" title="MECE 방법론 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-세부절차">MECE 방법론 세부절차<a class="hash-link" aria-label="MECE 방법론 세부절차에 대한 직접 링크" title="MECE 방법론 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>문제 정의</td><td>명확한 문제 정의 및 목표 설정</td><td>핵심 목표 도출</td></tr><tr><td>문제 분해</td><td>문제를 세부 항목으로 나누어 분석</td><td>중복, 누락 방지</td></tr><tr><td>MECE 분류</td><td>도출된 요소를 상호배타적, 전체포괄 방식으로 분류</td><td>기준 명확화</td></tr><tr><td>해결책 도출</td><td>분석 결과 기반 해결책 제시</td><td>실현 가능성 평가, 피드백</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-주요-기법">MECE 주요 기법<a class="hash-link" aria-label="MECE 주요 기법에 대한 직접 링크" title="MECE 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>기법</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>3C</td><td>자사, 경쟁사, 고객 분석</td><td>시장 상황 분석</td></tr><tr><td>5F</td><td>잠재적 진입자, 공급자, 구매자, 대체제, 기존 경쟁자 분석</td><td>산업 경쟁 환경 분석</td></tr><tr><td>PEST</td><td>정치적, 경제적, 사회적, 기술적 요인 분석</td><td>거시 환경 분석</td></tr><tr><td>SWOT</td><td>강점, 약점, 기회, 위험 분석</td><td>내부, 외부 환경 분석</td></tr><tr><td>CPND</td><td>컨텐츠, 플랫폼, 네트워크, 디바이스 측면 분석</td><td>기술 측면 전략 분석</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-분석-시-고려사항">MECE 분석 시 고려사항<a class="hash-link" aria-label="MECE 분석 시 고려사항에 대한 직접 링크" title="MECE 분석 시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B6%84%EC%84%9D-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>MECE는 완벽한 답을 찾는 것이 아니라, 문제 해결을 위한 사고 프레임워크를 제공함으로 상황에 따라 효과적으로 활용해야함</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[EGDI, 전자정부 발전지수]]></title>
         <id>https://gracefullight.dev/pe/mng/egdi/</id>
@@ -139,7 +168,7 @@
 <li>SW사업은 산출물이 구체화될 때 무형의 계약목적물을 다루므로, <mark class="flexible-marker flexible-marker-default">과업 변경시 합리성, 공정성을 확보</mark>하고, <mark class="flexible-marker flexible-marker-default">발주처와 사업자간 원활한 업무수행을 지원</mark>하기 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도-검토항목-기대효과">과업변경 적정성 판단기준 개념도, 검토항목, 기대효과<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도, 검토항목, 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-개념도">과업변경 적정성 판단기준 개념도<a class="hash-link" aria-label="과업변경 적정성 판단기준 개념도에 대한 직접 링크" title="과업변경 적정성 판단기준 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EF%BF%BD%EF%BF%BD%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="과업변경-적정성-판단기준-검토항목">과업변경 적정성 판단기준 검토항목<a class="hash-link" aria-label="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" title="과업변경 적정성 판단기준 검토항목에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EA%B3%BC%EC%97%85%EC%8B%AC%EC%9D%98-%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B3%BC%EC%97%85%EB%B3%80%EA%B2%BD-%EC%A0%81%EC%A0%95%EC%84%B1-%ED%8C%90%EB%8B%A8%EA%B8%B0%EC%A4%80-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>적정한 과업변경</td><td>법령 개정 등 법제도 변경</td><td>과업심의위원회 심의 권고, 변경시 기간, 금액 등 후속 협의</td></tr><tr><td>-</td><td>기술, 정책적 환경 변화</td><td>과업심위위원회 심의 권고, 예산 절감, 대국민 편의, 행정효율 개선 가능한 경우</td></tr><tr><td>-</td><td>수,발주자간 사업 기간 조정 없이 합의한 경미한 과업 변경</td><td>심의 불필요, 필요시 계약기간 조정 등 권고</td></tr><tr><td>불필요한 과업변경</td><td>적절한 과업 변경에 해당하지 않는 과업변경</td><td>제도 변화 무관, 예산 절감 효과 없음, 수,발주자 간 합의 등</td></tr></tbody></table>
@@ -224,7 +253,7 @@
         <link href="https://gracefullight.dev/pe/mng/esg/"/>
         <updated>2024-07-22T08:19:46.287Z</updated>
         <summary type="html"><![CDATA[Environment, Social, Governance]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개념">ESG 개념<a class="hash-link" aria-label="ESG 개념에 대한 직접 링크" title="ESG 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="esg-개�념">ESG 개념<a class="hash-link" aria-label="ESG 개념에 대한 직접 링크" title="ESG 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/esg/#esg-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>기업 경영 활동을 <mark class="flexible-marker flexible-marker-default">환경 경영</mark>, <mark class="flexible-marker flexible-marker-default">사회적 책임</mark>, 건전하고 <mark class="flexible-marker flexible-marker-default">투명한 지배구조</mark>에 초점을 둔 지속가능성을 위한 기업 경영의 세가지 <mark class="flexible-marker flexible-marker-default">비재무적 성과지표</mark></li>
 <li>세계적 트랜드와 사회 구성원의 관심으로 인해 기업의 지속가능한 성장을 위한 리스크 관리 수단으로 활용</li>
@@ -267,48 +296,10 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">국민중심</mark></td><td>모든 국민이 언제,어디서나 디지털서비스 이용 보장</td><td>디지털 포용</td></tr><tr><td>-</td><td>공공서비스는 국민이 원하는 방식으로 통합, 선제, 맞춤 제공</td><td>사용자 중심 서비스</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">하나의 정부</mark></td><td>모든 데이터가 연결된 디지털 플랫폼으로 하나의 정부 구현</td><td>부처 간 협업, 데이터 공유</td></tr><tr><td>-</td><td>행정 프로세스 디지털 중심 재설계</td><td>행정, 조직, 효율성 증대</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">AI, 데이터 기반</mark></td><td>공공 데이터는 사람과 기계가독성을 가진 형식으로 전면 개방</td><td>데이터 활용성 증대</td></tr><tr><td>-</td><td>AI, 빅데이터 기반 정책 결정</td><td>과학적 정책 결정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">민관 협력</mark></td><td>민관협력 혁신 생태계 조성</td><td>민간 참여 활성화</td></tr><tr><td>-</td><td>디지털 모법 국가로 국제사회 기여</td><td>국제적 위상 제고</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부-구성요소">디지털 플랫폼 정부 구성요소<a class="hash-link" aria-label="디지털 플랫폼 정부 구성요소에 대한 직접 링크" title="디지털 플랫폼 정부 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>플랫폼 제공자</td><td>디지털 플랫폼 구축, 운영, 데이터 통합, 활용 지원</td><td>정부</td></tr><tr><td>공급자</td><td>공공, 민간 서비스, 데이터 제공</td><td>정부, 공공기관</td></tr><tr><td>소비자, 이용자</td><td>맞춤형 서비스와 공공 데이터 활용</td><td>국민, 기업</td></tr><tr><td>플랫폼 생태계 전반</td><td>플랫폼 전반에 걸친 상호작용</td><td>데이터, 서비스, 인프라</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-기대효과">디지털 플랫폼 정부의 기대효과<a class="hash-link" aria-label="디지털 플랫폼 정부의 기대효과에 대한 직접 링크" title="디지털 플랫�폼 정부의 기대효과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-기대효과">디지털 플랫폼 정부의 기대효과<a class="hash-link" aria-label="디지털 플랫폼 정부의 기대효과에 대한 직접 링크" title="디지털 플랫폼 정부의 기대효�과에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC">​</a></h3>
 <table><thead><tr><th>구분</th><th>기대효과</th><th>내용</th></tr></thead><tbody><tr><td>정부</td><td>정부 역량 강화, 신뢰도 향상</td><td>빅데이터 기반 과학적 정책결정, 투명성 제공</td></tr><tr><td>기업</td><td>민간부문 성장동력 마련</td><td>공공 데이터 활용 혁신 서비스 개발</td></tr><tr><td>국민</td><td>국민 중심의 서비스 제공</td><td>맞춤형 행정 서비스 제공</td></tr><tr><td>사회</td><td>사회 전체 발전 도모</td><td>디지털 격차, 역기능 해소</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="디지털-플랫폼-정부의-추가적인-고려사항">디지털 플랫폼 정부의 추가적인 고려사항<a class="hash-link" aria-label="디지털 플랫폼 정부의 추가적인 고려사항에 대한 직접 링크" title="디지털 플랫폼 정부의 추가적인 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/dpg/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%A0%95%EB%B6%80%EC%9D%98-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>부처 내 데이터 정보화로 부서 위상 제고</td><td>CDO, CIO 지정</td></tr><tr><td>기술적</td><td>제로트러스트 보안체계 구축</td><td>사이버 위협 대응</td></tr><tr><td>제도적</td><td>개인정보보호법 개정, 하위 법령 정비</td><td>개인정보 전송요구권 도입</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SLA, 서비스 수준 계약]]></title>
-        <id>https://gracefullight.dev/pe/mng/sla/</id>
-        <link href="https://gracefullight.dev/pe/mng/sla/"/>
-        <updated>2024-07-22T08:01:25.088Z</updated>
-        <summary type="html"><![CDATA[Service Level Agreement]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-개념">SLA 개념<a class="hash-link" aria-label="SLA 개념에 대한 직접 링크" title="SLA 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#sla-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>정보시스템 사용자와 공급자 사이 상호 동의에 의하여 서비스 수준을 정량화하여 명시적으로 정의하고, 서비스 수준이 미달되는 경우 손해배상을 하도록하여 서비스 품질을 보장하기 위한 약정서</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-클라우드sla-금융클라우드sla-주요-지표">SLA, 클라우드SLA, 금융클라우드SLA 주요 지표<a class="hash-link" aria-label="SLA, 클라우드SLA, 금융클라우드SLA 주요 지표에 대한 직접 링크" title="SLA, 클라우드SLA, 금융클라우드SLA 주요 지표에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#sla-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9Csla-%EA%B8%88%EC%9C%B5%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9Csla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sla-주요지표">SLA 주요지표<a class="hash-link" aria-label="SLA 주요지표에 대한 직접 링크" title="SLA 주요지표에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#sla-%EC%A3%BC%EC%9A%94%EC%A7%80%ED%91%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>서비스 가용성</td><td>가용성</td><td>서비스 접근 가능한 시간 비율</td></tr><tr><td>-</td><td>평균복구시간</td><td>장애시 복구 완료까지 걸리는 평균 시간</td></tr><tr><td>-</td><td>평균고장간격</td><td>장애 발생 간 평균 시간</td></tr><tr><td>데이터 백업 및 복구</td><td>백업 주기</td><td>정기적 백업 주기</td></tr><tr><td>-</td><td>백업준수율</td><td>계획된 백업 정상 수행 비율</td></tr><tr><td>-</td><td>데이터 복구시간</td><td>복구요청으로부터 완료 시간</td></tr><tr><td>-</td><td>백업데이터 보관기간</td><td>백업데이터 보존 기간</td></tr><tr><td>고객지원</td><td>고객요청 처리시간</td><td>요청 접수부터 처리 완료까지 시간</td></tr><tr><td>-</td><td>고객요청 처리율</td><td>처리된 요청 비율</td></tr><tr><td>-</td><td>요청적기 처리율</td><td>기간 내 요청 처리 비율</td></tr><tr><td>-</td><td>변경 반영시 오류율</td><td>변경 적용시 오류 발생 비율</td></tr></tbody></table>
-<ul>
-<li>클라우드 SLA는 SLA의 주요 지표를 표함하여 클라우드 환경의 특성 반영</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-sla-주요-지표">클라우드 SLA 주요 지표<a class="hash-link" aria-label="클라우드 SLA 주요 지표에 대한 직접 링크" title="클라우드 SLA 주요 지표에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-sla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>성능</td><td>응답시간</td><td>요청에 대한 평균 응답 시간</td></tr><tr><td>-</td><td>처리량</td><td>초당 트랜잭션 처리량</td></tr><tr><td>-</td><td>지연시간</td><td>네트워크 지연 시간</td></tr><tr><td>확장성</td><td>동시접속 가능 사용자</td><td>동시 요청 가능 트랜잭션</td></tr><tr><td>-</td><td>자원할당량</td><td>서버 자원 할당량</td></tr></tbody></table>
-<ul>
-<li>금융 클라우드 SLA는 클라우드 SLA 주요 지표를 포함하여 금융 분야의 특수성 반영</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="금융-클라우드-sla-주요-지표">금융 클라우드 SLA 주요 지표<a class="hash-link" aria-label="금융 클라우드 SLA 주요 지표에 대한 직접 링크" title="금융 클라우드 SLA 주요 지표에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#%EA%B8%88%EC%9C%B5-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-sla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>보안</td><td>ISMS 인증</td><td>ISMS, ISMS-P 인증 여부</td></tr><tr><td>-</td><td>침해사고 대응시간</td><td>침해시 평균 대응시간</td></tr><tr><td>규제 준수</td><td>금융 관련 법규 준수</td><td>정보통신망법, 개인정보보호법</td></tr><tr><td>데이터 처리 위치</td><td>금융데이터 처리 위치</td><td>국내, 해외서버</td></tr></tbody></table>
-<ul>
-<li>규제준수 및 데이터 처리, 폐기에 대한 SLA 협의 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-추가적인-고려사항">SLA 추가적인 고려사항<a class="hash-link" aria-label="SLA 추가적인 고려사항에 대한 직접 링크" title="SLA 추가적인 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/sla/#sla-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>비지니스 환경, 기술변화 등을 고려하여 SLA를 정기적으로 검토하고 개선 필요</li>
-</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
