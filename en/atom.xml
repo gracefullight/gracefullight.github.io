@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T07:35:47.026Z</updated>
+    <updated>2024-07-22T07:49:46.309Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ISMP, 정보시스템 마스터 플랜]]></title>
+        <id>https://gracefullight.dev/en/pe/management/ismp/</id>
+        <link href="https://gracefullight.dev/en/pe/management/ismp/"/>
+        <updated>2024-07-22T07:49:46.309Z</updated>
+        <summary type="html"><![CDATA[Information System Master Plan]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-개념">ISMP 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>정보시스템 구축 사업에 대한 <mark class="flexible-marker flexible-marker-default">제안요청서를 마련</mark>하기 위해 목표시스템을 체계적으로 파악하고 요구사항을 상세히 분석하여 구축 전략 및 이행계획을 수립하는 활동</li>
+<li>ISP의 형식적 수립으로 인한 중복 구축, 대가산정 부적절, 데이터 표준화 미준수, 정보시스템활용률 저조 등 예산 낭비 절감, 구축 및 운영단계에서 발생할 문제 사전 예방</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도-구성요소">ISMP 절차도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도">ISMP 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<blockquote>
+<p>착방업구이</p>
+</blockquote>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-구성요소">ISMP 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>단계</th><th>주요 활동</th><th>산출물</th></tr></thead><tbody><tr><td>1. <mark class="flexible-marker flexible-marker-default">프로젝트 착수</mark></td><td>경영진 지원 조직 형성</td><td>프로젝트 역할 정의서</td></tr><tr><td>-</td><td>프로젝트 수행 조직 편성</td><td>ISMP 팀 조직</td></tr><tr><td>2. <mark class="flexible-marker flexible-marker-default">방향성 수립</mark></td><td>정보화 전략 검토</td><td>정보화 전략 분석서</td></tr><tr><td>-</td><td>정보시스템 범위, 방향성 검토</td><td>정보시스템 추진 목표, 방향 보고서</td></tr><tr><td>3. <mark class="flexible-marker flexible-marker-default">업무 및 기술요건 분석</mark></td><td>업무 및 정보기술 현황 분석</td><td>아키텍처 분석서</td></tr><tr><td>-</td><td>업무 및 정보기술 요건 검토</td><td>정보기술 요구사항 분석서</td></tr><tr><td>4. <mark class="flexible-marker flexible-marker-default">구조 요건 정의</mark></td><td>요건 간 이행 연관성 분석</td><td>요구사항 연관표</td></tr><tr><td>-</td><td>정보시스템 요건 기술서 작성 검토</td><td>정보시스템 요건 기술서</td></tr><tr><td>5. <mark class="flexible-marker flexible-marker-default">이행 방안 수립</mark></td><td>분리발주 가능성 평가</td><td>분리발주 가능성 보고서</td></tr><tr><td>-</td><td>제안요청서 작성</td><td>RFP</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-비교">ISP, ISMP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-관계도">ISP, ISMP 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>ISP로 조직의 정보화 방향 제시, ISP로 특정 정보시스템 구축 및 운영에 대한 구체적 계획 수립</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-상세-비교">ISP, ISMP 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>ISP</th><th>ISMP</th></tr></thead><tbody><tr><td>목적</td><td>목표 모델 설계</td><td>기능, 비기능 프로젝트 자원 요건 도출</td></tr><tr><td>사업 구분</td><td>신규 사업 적합</td><td>재구축 사업 적합</td></tr><tr><td>기업 이해도</td><td>이해도 낮을 경우</td><td>이해도 높은 경우</td></tr><tr><td>주요 산출물</td><td>정보화전략 계획서</td><td>RFP</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-추가적-고려사항">ISMP 추가적 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>디지털플랫폼 정부 기본 원칙인 클라우드, 국민 중심, 하나의 정부, AI 데이터, 민간 협력을 우선시 하여 사업 효율성 제고</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/management" term="pe/management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SEM, 전략적 기업 경영]]></title>
         <id>https://gracefullight.dev/en/pe/management/sem/</id>
@@ -285,36 +323,6 @@
 <ul>
 <li>패리티 비트로 인한 전송 오버헤드 고려 필요</li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5G 특화망]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/5g-특화망/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/5g-특화망/"/>
-        <updated>2024-07-21T12:43:04.748Z</updated>
-        <summary type="html"><![CDATA[5G 특화망]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-개념">5G 특화망 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>기업사업자가 건물, 토지, 시설 등 제한된 범위 내에서 5G 서비스를 이용하기 위해 기업 맞춤형 무선 네트워크를 구축하는 기술</li>
-<li>맞춤형 서비스, 보안 강화, 효율적인 자원 관리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-네트워크-슬라이싱-구성기술-적용사례">5G 특화망 네트워크 슬라이싱, 구성기술, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%EA%B5%AC%EC%84%B1%EA%B8%B0%EC%88%A0-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-네트워크-슬라이싱">5G 특화망 네트워크 슬라이싱<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1">​</a></h3>
-<!-- -->
-<ul>
-<li>하나의 네트워크 안에서 논리적으로 분리하여 각각의 가상 네트워크에 필요한 성능과 자원(대역폭, QoS) 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="네트워크-슬라이싱-구성-기술">네트워크 슬라이싱 구성 기술<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1-%EA%B5%AC%EC%84%B1-%EA%B8%B0%EC%88%A0">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>SDN</td><td>어플리케이션, 컨트롤플레인, 데이터플레인</td><td>데이터 전달 기능과 제어기능을 분리하여 OpenFlow를 통해 SW로 제어하는 네트워크</td></tr><tr><td>NFV</td><td>스위치,라우터 --- 가상화 --- VNFs, MANO</td><td>네트워크 기능을 추상화하여 SW적으로 제어가 가능하도록 하는 기술</td></tr><tr><td>-</td><td>-</td><td>Virtual Network Functions, Management and Orchestration</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-특화망-적용사례">5G 특화망 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>스마트팩토리 생산 자동화</td><td>LG CNS</td></tr><tr><td>-</td><td>자율주행 C-V2X 네트워크</td><td>현대자동차</td></tr><tr><td>국외</td><td>공항 수하물 추적, 보안 검색</td><td>두바이 공항</td></tr><tr><td>-</td><td>항만 자동화, 크레인 제어</td><td>함부르크 항만</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-5g-특화망-비교">5G, 5G 특화망 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>5G</th><th>5G 특화망</th></tr></thead><tbody><tr><td>서비스 대상</td><td>불특정 다수</td><td>특정 기업, 기관</td></tr><tr><td>네트워크 범위</td><td>광범위</td><td>제한적</td></tr><tr><td>서비스 특성</td><td>다양한 서비스</td><td>특화 서비스</td></tr><tr><td>보안</td><td>상대적 취약</td><td>강화된 보안</td></tr><tr><td>자원관리</td><td>낮은 효율</td><td>높은 효율</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
