@@ -4,10 +4,77 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 05:45:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jul 2024 07:35:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[SEM, 전략적 기업 경영]]></title>
+            <link>https://gracefullight.dev/en/pe/management/sem/</link>
+            <guid>https://gracefullight.dev/en/pe/management/sem/</guid>
+            <pubDate>Mon, 22 Jul 2024 07:35:47 GMT</pubDate>
+            <description><![CDATA[Strategic Enterprise Management]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-개념">SEM 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>기업 경영진의 <mark class="flexible-marker flexible-marker-default">가치중심경영</mark>을 전사적으로 구현하기 위해 <mark class="flexible-marker flexible-marker-default">원가, 성과관리</mark>를 통해 <mark class="flexible-marker flexible-marker-default">전략 중심의 조직</mark>을 구현하기 위한 <mark class="flexible-marker flexible-marker-default">경영지원시스템</mark></li>
+<li>가치중심경영, ERP의 경영지원 한계점, 신속한 의사결정 지원, ESG 연계를 통한 기업의 연속성 제고</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도-구성요소-적용방안">SEM 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도">SEM 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>전사적 연계를 통한 신속한 의사결정 지원</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성요소">SEM 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">VBM</mark></td><td>가치중심 과제 관리, 투자 이익평가</td><td>KPI 중심, 현금 흐름 창출</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">ABM</mark></td><td>원가 관리, 자원 배분 관리</td><td>가격 결정, 의사 결정, 원가 분석, 프로세스 개선</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">BSC</mark></td><td>기업 성과 관리, 경영 품질 모니터링</td><td><mark class="flexible-marker flexible-marker-default">재무, 고객, 내부프로세스, 학습 관점</mark>, IT BSC 연계</td></tr></tbody></table>
+<blockquote>
+<p>재고내학, 기사운미</p>
+</blockquote>
+<ul>
+<li>기존 현황 파악, 실적 관리를 위한 의사결정시스템 구축 필요</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-시스템-적용방안">SEM 시스템 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>자료 수집, 분석</td><td>대상 범위 명확화, 데이터 통합 분석 구현</td><td>SWOT, PEST, 3C 기법 통한 내외부 정보 수집</td></tr><tr><td>핵심가치 관리</td><td>종합적 성과관리 체계 구축, KPI 기반 보상체계 구축</td><td>IT BSC</td></tr><tr><td>의사결정 실행</td><td>실행 조직 구성, 프로세스 개선, 성과측정, 평가</td><td>성과 피드백, 보상, 지속적 개선</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-추가적인-고려사항">SEM 추가적인 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>가치경영 도입 및 사회적 책임에 대한 경영 방식을 결합하여 기업의 경쟁력 제고</li>
+<li>RE100 달성을 위한 기업 내 전략 수립 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/management</category>
+        </item>
+        <item>
+            <title><![CDATA[ISP, BPR]]></title>
+            <link>https://gracefullight.dev/en/pe/management/isp-bpr/</link>
+            <guid>https://gracefullight.dev/en/pe/management/isp-bpr/</guid>
+            <pubDate>Mon, 22 Jul 2024 05:55:48 GMT</pubDate>
+            <description><![CDATA[Information Strategic Planning, Business Process Re-engineering]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-개념">ISP, BPR 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>ISP는 <mark class="flexible-marker flexible-marker-default">기업의 비전과 목표 달성을 위해 ICT기술을 어떻게 활용</mark>할지 전략 수립, BPR은 <mark class="flexible-marker flexible-marker-default">기존 업무 프로세스를 검토하고 혁신</mark>하여 효율성을 극대화하는 전략 수립</li>
+<li>기업의 비지니스 아키텍처, 전사적 아키텍처를 개선하고 비지니스 목표를 달성하기 위한 필수 요소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-절차도-세부절차">ISP, BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-절차도-세부절차">ISP 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>환경분석</td><td><mark class="flexible-marker flexible-marker-default">비지니스 환경과 내부 역량 파악</mark>, <mark class="flexible-marker flexible-marker-default">기회, 위험요인 식별</mark></td><td>외부 환경 분석, 내부 환경 분석</td></tr><tr><td>현황분석</td><td>현재 <mark class="flexible-marker flexible-marker-default">정보시스템 현황파악</mark>, <mark class="flexible-marker flexible-marker-default">벤치마킹</mark>, <mark class="flexible-marker flexible-marker-default">개선방향 설정</mark></td><td>정보기술 분석, 업무체계 분석</td></tr><tr><td>목표 모델 설계</td><td><mark class="flexible-marker flexible-marker-default">정보시스템 비전 및 목표설정</mark>, <mark class="flexible-marker flexible-marker-default">아키텍처 설계</mark></td><td>정보화 전략, 운영관리 체계</td></tr><tr><td>실행계획수립</td><td>목표모델 실현을 위한 <mark class="flexible-marker flexible-marker-default">구체적 실행방안</mark> 마련</td><td>추진전략수립, 추진일정수립</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bpr-절차도-세부절차">BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>고객가치파악</td><td>고객중심 프로세스 개선 기반 마련</td><td>고객 가치 분석, 요구사항 파악</td></tr><tr><td>현재 프로세스 분석</td><td>AS-IS 프로세스 문제점, 개선 기회 파악</td><td>프로세스 분석서</td></tr><tr><td>프로세스 목표 설정</td><td>개선 목표 및 효과 측정, 평가 기준 마련</td><td>개선 목표 설정, KPI 정의</td></tr><tr><td>개선 프로세스 설계</td><td>현신적 프로세스 구현을 위한 실행방안 마련</td><td>RPA 등 자동화시스템 도입</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-비교">ISP, BPR 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EB%B9%84%EA%B5%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>ISP</th><th>BPR</th></tr></thead><tbody><tr><td>관점</td><td>전략적 관점</td><td>전술적 관점</td></tr><tr><td>계획</td><td>장기적 계획</td><td>단기적 실행</td></tr><tr><td>개선포인트</td><td>정보시스템 중심</td><td>업무프로세스 중심</td></tr></tbody></table>
+<ul>
+<li>ISP를 진행하고, 현행 비지니스 프로세스 수준이 낮을 경우 BPR을 상호보완적으로 활용하여 정보시스템에 최적화된 프로세스 수립</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-도입-시-고려사항">ISP, BPR 도입 시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EB%8F%84%EC%9E%85-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>성공적인 변화 관리를 위해 이사회, 경영진의 강력한 의지와 지원 필요</li>
+<li>조직 구성원은 변화하는 환경에 적극적, 지속적 프로세스 개선 노력 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/management</category>
+        </item>
         <item>
             <title><![CDATA[베르누이 분포, 기하 분포]]></title>
             <link>https://gracefullight.dev/en/pe/algo/bernoulli-geometric-distribution/</link>
@@ -213,81 +280,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>스마트팩토리 생산 자동화</td><td>LG CNS</td></tr><tr><td>-</td><td>자율주행 C-V2X 네트워크</td><td>현대자동차</td></tr><tr><td>국외</td><td>공항 수하물 추적, 보안 검색</td><td>두바이 공항</td></tr><tr><td>-</td><td>항만 자동화, 크레인 제어</td><td>함부르크 항만</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-5g-특화망-비교">5G, 5G 특화망 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-%ED%8A%B9%ED%99%94%EB%A7%9D/#5g-5g-%ED%8A%B9%ED%99%94%EB%A7%9D-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>5G</th><th>5G 특화망</th></tr></thead><tbody><tr><td>서비스 대상</td><td>불특정 다수</td><td>특정 기업, 기관</td></tr><tr><td>네트워크 범위</td><td>광범위</td><td>제한적</td></tr><tr><td>서비스 특성</td><td>다양한 서비스</td><td>특화 서비스</td></tr><tr><td>보안</td><td>상대적 취약</td><td>강화된 보안</td></tr><tr><td>자원관리</td><td>낮은 효율</td><td>높은 효율</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/nw</category>
-        </item>
-        <item>
-            <title><![CDATA[5G, 6G]]></title>
-            <link>https://gracefullight.dev/en/pe/nw/5g-6g/</link>
-            <guid>https://gracefullight.dev/en/pe/nw/5g-6g/</guid>
-            <pubDate>Sun, 21 Jul 2024 08:08:39 GMT</pubDate>
-            <description><![CDATA[5G, 6G]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="이동통신기술-개념">이동통신기술 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90">​</a></h2>
-<blockquote>
-<p>차트로 표현</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>3G</th><th>4G</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>도입연도</td><td>2000</td><td>2010</td><td>2020</td><td>2030</td></tr><tr><td>체감속도</td><td>1M</td><td>10M</td><td>100M</td><td>1G</td></tr><tr><td>주요 활용분야</td><td>음성</td><td>영상</td><td>IoT, 자율주행</td><td>3차원공간, 메타버스</td></tr></tbody></table>
-<ul>
-<li>단말 수의 증가로 인한 속도 필요성과 공간 확장을 통해 10년 주기로 이동통신기술 발전</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념-및-특징">5G, 6G 개념 및 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-개념">5G, 6G 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#5g-6g-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>5G: 빠른 데이터, 저지연 기반 5세대 이동통신 기술</li>
-<li>6G: 촉롱간, 초저지연 기반 6세대 이동통신 기술</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-특징-비교">5G, 6G 특징 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#5g-6g-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>체감속도</td><td>100Mbps</td><td>1Gbps</td></tr><tr><td>최대속도</td><td>20Gbps</td><td>1Tbps</td></tr><tr><td>주파수</td><td>6GHz, 24GHz</td><td>150GHz</td></tr><tr><td>대역폭</td><td>수 GHz</td><td>수십 GHz</td></tr><tr><td>지원고도</td><td>120m 이하</td><td>10km 이하</td></tr><tr><td>특징</td><td>광대역, 초연결, 저지연</td><td>초광대역, 초공간, 초연결, 초정밀, 초저지연, 초지능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="5g-6g-적용방안">5G, 6G 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#5g-6g-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>5G</th><th>6G</th></tr></thead><tbody><tr><td>공공</td><td>스마트팩토리, 스마트교육</td><td>스타므시티, 지능형 재난안전망</td></tr><tr><td>금융</td><td>모바일금융, 핀테크, 비대면금융</td><td>몰입형금융, 실시간글로벌금융</td></tr><tr><td>민간</td><td>스마트홈, 자율주행</td><td>메타버스, 촉각인터넷, 로보택시</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="6g-고려사항">6G 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/5g-6g/#6g-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>초공간 통신을 위해 저궤도 위성 기술 개발 선행 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/nw</category>
-        </item>
-        <item>
-            <title><![CDATA[오류제어, 흐름제어, 혼잡제어]]></title>
-            <link>https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/</link>
-            <guid>https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/</guid>
-            <pubDate>Sun, 21 Jul 2024 07:41:27 GMT</pubDate>
-            <description><![CDATA[Error, Flow, and Congestion Control]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="네트워크-프로토콜-설계-개념">네트워크 프로토콜 설계 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%84%A4%EA%B3%84-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>네트워크 프로토콜 설계시 주소표현과 데이터 전달방식을 결정하고 신뢰성을 위해 오류제어와 흐름제어 기능 추가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-개념-및-기법">오류제어 개념 및 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-개념">오류제어 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>부가정보를 추가하여 데이터 전송 중 발생하는 오류를 검출하여 재전송요구(BEC)하거나, 수신 측에서 직접 수정(FEC)하는 매커니즘</li>
-<li>데이터 무결성, 신뢰성</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="오류제어-기법">오류제어 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>오류 검출</td><td>패리티 검사</td><td>짝수, 홀수 패티리 추가로 오류 검출</td></tr><tr><td>-</td><td>체크섬</td><td>데이터 블록 합을 계산해서 오류 검출</td></tr><tr><td>-</td><td>CRC</td><td>데이터 블록을 다항식으로 나눈 나머지 추가</td></tr><tr><td>FEC</td><td>블록부호</td><td>일정 크기 데이터 블록에 중복 비트 추가</td></tr><tr><td>-</td><td>길쌈부호</td><td>연속적 데이터 흐름에 중복 비트 추가</td></tr><tr><td>BEC</td><td>ARQ</td><td>오류 발생시 송신 측에 재요청</td></tr><tr><td>-</td><td>Hybrid ARQ</td><td>FEC + ARQ, 일부 오류 수정 후 불가시 재요청</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="흐름제어-개념-및-기법">흐름제어 개념 및 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="흐름제어-개념">흐름제어 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>송신자, 수신자 간 데이터 전송속도를 조절하여 수신자가 처리 가능한 범위를 넘은 전송을 방지하는 기법</li>
-<li>데이터 손실 최소화, 수신 버퍼 오버플로우 방지, 혼잡 완화</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="흐름제어-기법">흐름제어 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Stop &amp; Wait</td><td>송신측은 데이터 패킷을 하나씩 전송, 수신측의 ACK 응답 대기</td><td>낮은 효율, 같은 구현</td></tr><tr><td>Sliding Window</td><td>여러 개의 패킷 연속 전송, 수신측의 ACK 수신 확인 후 윈도우 조절</td><td>효율적, 범용적</td></tr><tr><td>Rate-based Flow Control</td><td>송신측은 수신측의 피드백 정보를 기반으로 데이터 전송속도 조절</td><td>혼잡제어 같이 사용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="혼잡제어-개념-및-매커니즘">혼잡제어 개념 및 매커니즘<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="혼잡제어-개념">혼잡제어 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>데이터 전송 중에 네트워크 혼잡을 방지하고 효율적으로 데이터 패킷을 전달하기 위한 메커니즘</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="혼잡제어-매커니즘">혼잡제어 매커니즘<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. Slow Start</td><td>새로운 연결 또는 타임아웃 후 시작 혼잡 윈도우를 작게 시작해 지수적으로 증가</td><td>초기 네트워크 상태 탐색</td></tr><tr><td>2. Congestion avoidance</td><td>네트워크 혼잡을 예방하는 단계 AIMD 알고리즘 사용 혼잡 윈도우 크기를 조절</td><td>혼잡시 Threshold 감소</td></tr><tr><td>3. Fast Recovery</td><td>패킷 손실 시 혼잡 윈도우를 반으로 줄이고 전송 지속</td><td>손실 후에도 데이터 전송 계속</td></tr><tr><td>4. Fast Transmit</td><td>중복된 ACK 3개 이상 수신 시 손실된 패킷 즉시 재전송 타임아웃 없이 손실 처리</td><td>전송 효율 증가</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-전송방식-개념-및-기법">데이터 전송방식 개념 및 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-전송방식-개념">데이터 전송방식 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1%EB%B0%A9%EC%8B%9D-%EA%B0%9C%EB%85%90">​</a></h3>
-<ul>
-<li>데이터가 송수신측 사이에서 어떻게 전달할지를 구현하는 방법</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-전송-기법">데이터 전송 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/error-flow-congestion-control/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Simplex</td><td>단방향 아이디 전송</td><td>TV, 라디오</td></tr><tr><td>Half-Duplex</td><td>양방향 전송이나 한 순간에는 한 방향만 가능</td><td>무전기</td></tr><tr><td>Full-Duplex</td><td>동시에 양방향 전송 가능</td><td>전화, 화상통화</td></tr></tbody></table>]]></content:encoded>
             <category>pe</category>
             <category>pe/nw</category>
         </item>
