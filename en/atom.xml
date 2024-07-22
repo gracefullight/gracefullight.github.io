@@ -2,39 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-22T07:49:46.309Z</updated>
+    <updated>2024-07-22T08:01:25.088Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[SLA, 서비스 수준 계약]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/sla/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/sla/"/>
+        <updated>2024-07-22T08:01:25.088Z</updated>
+        <summary type="html"><![CDATA[Service Level Agreement]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-개념">SLA 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#sla-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>정보시스템 사용자와 공급자 사이 상호 동의에 의하여 서비스 수준을 정량화하여 명시적으로 정의하고, 서비스 수준이 미달되는 경우 손해배상을 하도록하여 서비스 품질을 보장하기 위한 약정서</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-클라우드sla-금융클라우드sla-주요-지표">SLA, 클라우드SLA, 금융클라우드SLA 주요 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#sla-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9Csla-%EA%B8%88%EC%9C%B5%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9Csla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sla-주요지표">SLA 주요지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#sla-%EC%A3%BC%EC%9A%94%EC%A7%80%ED%91%9C">​</a></h3>
+<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>서비스 가용성</td><td>가용성</td><td>서비스 접근 가능한 시간 비율</td></tr><tr><td>-</td><td>평균복구시간</td><td>장애시 복구 완료까지 걸리는 평균 시간</td></tr><tr><td>-</td><td>평균고장간격</td><td>장애 발생 간 평균 시간</td></tr><tr><td>데이터 백업 및 복구</td><td>백업 주기</td><td>정기적 백업 주기</td></tr><tr><td>-</td><td>백업준수율</td><td>계획된 백업 정상 수행 비율</td></tr><tr><td>-</td><td>데이터 복구시간</td><td>복구요청으로부터 완료 시간</td></tr><tr><td>-</td><td>백업데이터 보관기간</td><td>백업데이터 보존 기간</td></tr><tr><td>고객지원</td><td>고객요청 처리시간</td><td>요청 접수부터 처리 완료까지 시간</td></tr><tr><td>-</td><td>고객요청 처리율</td><td>처리된 요청 비율</td></tr><tr><td>-</td><td>요청적기 처리율</td><td>기간 내 요청 처리 비율</td></tr><tr><td>-</td><td>변경 반영시 오류율</td><td>변경 적용시 오류 발생 비율</td></tr></tbody></table>
+<ul>
+<li>클라우드 SLA는 SLA의 주요 지표를 표함하여 클라우드 환경의 특성 반영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="클라우드-sla-주요-지표">클라우드 SLA 주요 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-sla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
+<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>성능</td><td>응답시간</td><td>요청에 대한 평균 응답 시간</td></tr><tr><td>-</td><td>처리량</td><td>초당 트랜잭션 처리량</td></tr><tr><td>-</td><td>지연시간</td><td>네트워크 지연 시간</td></tr><tr><td>확장성</td><td>동시접속 가능 사용자</td><td>동시 요청 가능 트랜잭션</td></tr><tr><td>-</td><td>자원할당량</td><td>서버 자원 할당량</td></tr></tbody></table>
+<ul>
+<li>금융 클라우드 SLA는 클라우드 SLA 주요 지표를 포함하여 금융 분야의 특수성 반영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="금융-클라우드-sla-주요-지표">금융 클라우드 SLA 주요 지표<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#%EA%B8%88%EC%9C%B5-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-sla-%EC%A3%BC%EC%9A%94-%EC%A7%80%ED%91%9C">​</a></h3>
+<table><thead><tr><th>구분</th><th>지표</th><th>내용</th></tr></thead><tbody><tr><td>보안</td><td>ISMS 인증</td><td>ISMS, ISMS-P 인증 여부</td></tr><tr><td>-</td><td>침해사고 대응시간</td><td>침해시 평균 대응시간</td></tr><tr><td>규제 준수</td><td>금융 관련 법규 준수</td><td>정보통신망법, 개인정보보호법</td></tr><tr><td>데이터 처리 위치</td><td>금융데이터 처리 위치</td><td>국내, 해외서버</td></tr></tbody></table>
+<ul>
+<li>규제준수 및 데이터 처리, 폐기에 대한 SLA 협의 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sla-추가적인-고려사항">SLA 추가적인 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sla/#sla-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>비지니스 환경, 기술변화 등을 고려하여 SLA를 정기적으로 검토하고 개선 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/mng" term="pe/mng"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[ISMP, 정보시스템 마스터 플랜]]></title>
-        <id>https://gracefullight.dev/en/pe/management/ismp/</id>
-        <link href="https://gracefullight.dev/en/pe/management/ismp/"/>
+        <id>https://gracefullight.dev/en/pe/mng/ismp/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/ismp/"/>
         <updated>2024-07-22T07:49:46.309Z</updated>
         <summary type="html"><![CDATA[Information System Master Plan]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-개념">ISMP 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-개념">ISMP 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#ismp-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>정보시스템 구축 사업에 대한 <mark class="flexible-marker flexible-marker-default">제안요청서를 마련</mark>하기 위해 목표시스템을 체계적으로 파악하고 요구사항을 상세히 분석하여 구축 전략 및 이행계획을 수립하는 활동</li>
 <li>ISP의 형식적 수립으로 인한 중복 구축, 대가산정 부적절, 데이터 표준화 미준수, 정보시스템활용률 저조 등 예산 낭비 절감, 구축 및 운영단계에서 발생할 문제 사전 예방</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도-구성요소">ISMP 절차도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도">ISMP 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도-구성요소">ISMP 절차도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-절차도">ISMP 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#ismp-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <blockquote>
 <p>착방업구이</p>
 </blockquote>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-구성요소">ISMP 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-구성요소">ISMP 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#ismp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>단계</th><th>주요 활동</th><th>산출물</th></tr></thead><tbody><tr><td>1. <mark class="flexible-marker flexible-marker-default">프로젝트 착수</mark></td><td>경영진 지원 조직 형성</td><td>프로젝트 역할 정의서</td></tr><tr><td>-</td><td>프로젝트 수행 조직 편성</td><td>ISMP 팀 조직</td></tr><tr><td>2. <mark class="flexible-marker flexible-marker-default">방향성 수립</mark></td><td>정보화 전략 검토</td><td>정보화 전략 분석서</td></tr><tr><td>-</td><td>정보시스템 범위, 방향성 검토</td><td>정보시스템 추진 목표, 방향 보고서</td></tr><tr><td>3. <mark class="flexible-marker flexible-marker-default">업무 및 기술요건 분석</mark></td><td>업무 및 정보기술 현황 분석</td><td>아키텍처 분석서</td></tr><tr><td>-</td><td>업무 및 정보기술 요건 검토</td><td>정보기술 요구사항 분석서</td></tr><tr><td>4. <mark class="flexible-marker flexible-marker-default">구조 요건 정의</mark></td><td>요건 간 이행 연관성 분석</td><td>요구사항 연관표</td></tr><tr><td>-</td><td>정보시스템 요건 기술서 작성 검토</td><td>정보시스템 요건 기술서</td></tr><tr><td>5. <mark class="flexible-marker flexible-marker-default">이행 방안 수립</mark></td><td>분리발주 가능성 평가</td><td>분리발주 가능성 보고서</td></tr><tr><td>-</td><td>제안요청서 작성</td><td>RFP</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-비교">ISP, ISMP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-관계도">ISP, ISMP 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-비교">ISP, ISMP 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#isp-ismp-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-관계도">ISP, ISMP 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#isp-ismp-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
 <li>ISP로 조직의 정보화 방향 제시, ISP로 특정 정보시스템 구축 및 운영에 대한 구체적 계획 수립</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-상세-비교">ISP, ISMP 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#isp-ismp-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-ismp-상세-비교">ISP, ISMP 상세 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#isp-ismp-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>ISP</th><th>ISMP</th></tr></thead><tbody><tr><td>목적</td><td>목표 모델 설계</td><td>기능, 비기능 프로젝트 자원 요건 도출</td></tr><tr><td>사업 구분</td><td>신규 사업 적합</td><td>재구축 사업 적합</td></tr><tr><td>기업 이해도</td><td>이해도 낮을 경우</td><td>이해도 높은 경우</td></tr><tr><td>주요 산출물</td><td>정보화전략 계획서</td><td>RFP</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-추가적-고려사항">ISMP 추가적 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/ismp/#ismp-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="ismp-추가적-고려사항">ISMP 추가적 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/ismp/#ismp-%EC%B6%94%EA%B0%80%EC%A0%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>디지털플랫폼 정부 기본 원칙인 클라우드, 국민 중심, 하나의 정부, AI 데이터, 민간 협력을 우선시 하여 사업 효율성 제고</li>
 </ul>]]></content>
@@ -43,26 +81,26 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/management" term="pe/management"/>
+        <category label="pe/mng" term="pe/mng"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[SEM, 전략적 기업 경영]]></title>
-        <id>https://gracefullight.dev/en/pe/management/sem/</id>
-        <link href="https://gracefullight.dev/en/pe/management/sem/"/>
+        <id>https://gracefullight.dev/en/pe/mng/sem/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/sem/"/>
         <updated>2024-07-22T07:35:47.026Z</updated>
         <summary type="html"><![CDATA[Strategic Enterprise Management]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-개념">SEM 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-개념">SEM 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>기업 경영진의 <mark class="flexible-marker flexible-marker-default">가치중심경영</mark>을 전사적으로 구현하기 위해 <mark class="flexible-marker flexible-marker-default">원가, 성과관리</mark>를 통해 <mark class="flexible-marker flexible-marker-default">전략 중심의 조직</mark>을 구현하기 위한 <mark class="flexible-marker flexible-marker-default">경영지원시스템</mark></li>
 <li>가치중심경영, ERP의 경영지원 한계점, 신속한 의사결정 지원, ESG 연계를 통한 기업의 연속성 제고</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도-구성요소-적용방안">SEM 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도">SEM 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도-구성요소-적용방안">SEM 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성도">SEM 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <ul>
 <li>전사적 연계를 통한 신속한 의사결정 지원</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성요소">SEM 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-구성요소">SEM 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">VBM</mark></td><td>가치중심 과제 관리, 투자 이익평가</td><td>KPI 중심, 현금 흐름 창출</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">ABM</mark></td><td>원가 관리, 자원 배분 관리</td><td>가격 결정, 의사 결정, 원가 분석, 프로세스 개선</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">BSC</mark></td><td>기업 성과 관리, 경영 품질 모니터링</td><td><mark class="flexible-marker flexible-marker-default">재무, 고객, 내부프로세스, 학습 관점</mark>, IT BSC 연계</td></tr></tbody></table>
 <blockquote>
 <p>재고내학, 기사운미</p>
@@ -70,9 +108,9 @@
 <ul>
 <li>기존 현황 파악, 실적 관리를 위한 의사결정시스템 구축 필요</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-시스템-적용방안">SEM 시스템 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sem-시스템-적용방안">SEM 시스템 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>자료 수집, 분석</td><td>대상 범위 명확화, 데이터 통합 분석 구현</td><td>SWOT, PEST, 3C 기법 통한 내외부 정보 수집</td></tr><tr><td>핵심가치 관리</td><td>종합적 성과관리 체계 구축, KPI 기반 보상체계 구축</td><td>IT BSC</td></tr><tr><td>의사결정 실행</td><td>실행 조직 구성, 프로세스 개선, 성과측정, 평가</td><td>성과 피드백, 보상, 지속적 개선</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-추가적인-고려사항">SEM 추가적인 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/sem/#sem-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sem-추가적인-고려사항">SEM 추가적인 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/sem/#sem-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>가치경영 도입 및 사회적 책임에 대한 경영 방식을 결합하여 기업의 경쟁력 제고</li>
 <li>RE100 달성을 위한 기업 내 전략 수립 필요</li>
@@ -82,33 +120,33 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/management" term="pe/management"/>
+        <category label="pe/mng" term="pe/mng"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[ISP, BPR]]></title>
-        <id>https://gracefullight.dev/en/pe/management/isp-bpr/</id>
-        <link href="https://gracefullight.dev/en/pe/management/isp-bpr/"/>
+        <id>https://gracefullight.dev/en/pe/mng/isp-bpr/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/isp-bpr/"/>
         <updated>2024-07-22T05:55:48.908Z</updated>
         <summary type="html"><![CDATA[Information Strategic Planning, Business Process Re-engineering]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-개념">ISP, BPR 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-개념">ISP, BPR 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#isp-bpr-%EA%B0%9C%EB%85%90">​</a></h2>
 <!-- -->
 <ul>
 <li>ISP는 <mark class="flexible-marker flexible-marker-default">기업의 비전과 목표 달성을 위해 ICT기술을 어떻게 활용</mark>할지 전략 수립, BPR은 <mark class="flexible-marker flexible-marker-default">기존 업무 프로세스를 검토하고 혁신</mark>하여 효율성을 극대화하는 전략 수립</li>
 <li>기업의 비지니스 아키텍처, 전사적 아키텍처를 개선하고 비지니스 목표를 달성하기 위한 필수 요소</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-절차도-세부절차">ISP, BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-절차도-세부절차">ISP 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-절차도-세부절차">ISP, BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#isp-bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="isp-절차도-세부절차">ISP 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#isp-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
 <table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>환경분석</td><td><mark class="flexible-marker flexible-marker-default">비지니스 환경과 내부 역량 파악</mark>, <mark class="flexible-marker flexible-marker-default">기회, 위험요인 식별</mark></td><td>외부 환경 분석, 내부 환경 분석</td></tr><tr><td>현황분석</td><td>현재 <mark class="flexible-marker flexible-marker-default">정보시스템 현황파악</mark>, <mark class="flexible-marker flexible-marker-default">벤치마킹</mark>, <mark class="flexible-marker flexible-marker-default">개선방향 설정</mark></td><td>정보기술 분석, 업무체계 분석</td></tr><tr><td>목표 모델 설계</td><td><mark class="flexible-marker flexible-marker-default">정보시스템 비전 및 목표설정</mark>, <mark class="flexible-marker flexible-marker-default">아키텍처 설계</mark></td><td>정보화 전략, 운영관리 체계</td></tr><tr><td>실행계획수립</td><td>목표모델 실현을 위한 <mark class="flexible-marker flexible-marker-default">구체적 실행방안</mark> 마련</td><td>추진전략수립, 추진일정수립</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bpr-절차도-세부절차">BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bpr-절차도-세부절차">BPR 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#bpr-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
 <table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>고객가치파악</td><td>고객중심 프로세스 개선 기반 마련</td><td>고객 가치 분석, 요구사항 파악</td></tr><tr><td>현재 프로세스 분석</td><td>AS-IS 프로세스 문제점, 개선 기회 파악</td><td>프로세스 분석서</td></tr><tr><td>프로세스 목표 설정</td><td>개선 목표 및 효과 측정, 평가 기준 마련</td><td>개선 목표 설정, KPI 정의</td></tr><tr><td>개선 프로세스 설계</td><td>현신적 프로세스 구현을 위한 실행방안 마련</td><td>RPA 등 자동화시스템 도입</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-비교">ISP, BPR 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EB%B9%84%EA%B5%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-비교">ISP, BPR 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#isp-bpr-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>ISP</th><th>BPR</th></tr></thead><tbody><tr><td>관점</td><td>전략적 관점</td><td>전술적 관점</td></tr><tr><td>계획</td><td>장기적 계획</td><td>단기적 실행</td></tr><tr><td>개선포인트</td><td>정보시스템 중심</td><td>업무프로세스 중심</td></tr></tbody></table>
 <ul>
 <li>ISP를 진행하고, 현행 비지니스 프로세스 수준이 낮을 경우 BPR을 상호보완적으로 활용하여 정보시스템에 최적화된 프로세스 수립</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-도입-시-고려사항">ISP, BPR 도입 시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/management/isp-bpr/#isp-bpr-%EB%8F%84%EC%9E%85-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="isp-bpr-도입-시-고려사항">ISP, BPR 도입 시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/isp-bpr/#isp-bpr-%EB%8F%84%EC%9E%85-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>성공적인 변화 관리를 위해 이사회, 경영진의 강력한 의지와 지원 필요</li>
 <li>조직 구성원은 변화하는 환경에 적극적, 지속적 프로세스 개선 노력 필요</li>
@@ -118,7 +156,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/management" term="pe/management"/>
+        <category label="pe/mng" term="pe/mng"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[베르누이 분포, 기하 분포]]></title>
@@ -158,7 +196,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-구성요소">MQTT 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Publisher</td><td>메세지를 특정 토픽에 발행하는 클라이언트</td><td>센서, 모바일기기 등</td></tr><tr><td>Subscriber</td><td>특정 토픽의 메세지를 구독하는 클라이언트 또는 서버</td><td>모니터링 시스템, 제어장치 등</td></tr><tr><td>Broker</td><td>발행된 메세지를 해당 토픽을 구독하는 클라이언트에 중개</td><td>메세지 라우팅</td></tr><tr><td>Topic</td><td>메세지를 분류하기 위한 계층적 문자열</td><td>home/room/humid 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-적용방안">MQTT 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EF%BF%BD%EF%BF%BD%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>스마트홈</td><td>다양한 센서, 장치 간 데이터 전송, 상태 업데이트</td><td>편의성, 에너지 절약</td></tr><tr><td>산업 자동화</td><td>로봇과 센서간 실시간 데이터 처리</td><td>생산성, 안정성</td></tr><tr><td>헬스케어</td><td>환자 상태 모니터링, 의료기기 제어</td><td>응급상황 대처</td></tr><tr><td>스마트시티</td><td>교통정보, 환경정보, 공공시설 관리</td><td>효율성, 편의성</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="mqtt-고려사항">MQTT 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/mqtt/#mqtt-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -287,41 +325,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="rand-sharing-고려사항">RAND Sharing 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/ran-sharing/#rand-sharing-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>3GPP 표준으로 정의된 RAN Sharing 기술 준수 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[해밍코드]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/hamming-code/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/hamming-code/"/>
-        <updated>2024-07-21T12:54:08.944Z</updated>
-        <summary type="html"><![CDATA[Hamming Code]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-개념">해밍코드 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>데이터 전송과정에서 발생하는 오류를 검출하고 수정하기 위한 자기정정부호로 추가 패리티 비트를 삽입하여 데이터 손상 검증</li>
-<li>통신 과정의 노이즈, 간섭으로 인한 무결성 저해 해결, 신뢰성, 정확성 보장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-패리티-공식-계산-절차-적용-사례">해밍코드 패리티 공식, 계산 절차, 적용 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%8C%A8%EB%A6%AC%ED%8B%B0-%EA%B3%B5%EC%8B%9D-%EA%B3%84%EC%82%B0-%EC%A0%88%EC%B0%A8-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-패리티-공식">해밍코드 패리티 공식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%8C%A8%EB%A6%AC%ED%8B%B0-%EA%B3%B5%EC%8B%9D">​</a></h3>
-<blockquote>
-<p>1100<sub>2</sub></p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>패리티 수</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup><mo>&gt;</mo><mo>=</mo><mi>P</mi><mo>+</mo><mi>d</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^p &gt;= P + d + 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7035em;vertical-align:-0.0391em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1</span></span></span></span></td></tr><tr><td>-</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup><mo>&gt;</mo><mo>=</mo><mi>P</mi><mo>+</mo><mn>4</mn><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^p &gt;= P + 4 + 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7035em;vertical-align:-0.0391em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1</span></span></span></span></td></tr><tr><td>-</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">P = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">3</span></span></span></span></td></tr><tr><td>총 전송 비트 수</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>=</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">7 = (3 + 4)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">(</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">4</span><span class="mclose">)</span></span></span></span></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-계산-절차">해밍코드 계산 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B3%84%EC%82%B0-%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>구성 방법</td><td><strong>P1</strong> <strong>P2</strong> D1 <strong>P3</strong> D2 D3 D4</td></tr><tr><td>패리티 위치</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>p</mi></msup></mrow><annotation encoding="application/x-tex">2^p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></td></tr><tr><td>패리티 계산</td><td>X X 1 X 1 0 0</td></tr><tr><td>P1</td><td><em><strong>0</strong></em> X <em>1</em> X <em>1</em> 0 0</td></tr><tr><td>P2</td><td>0 <em><strong>1</strong></em> <em>1</em> X 1 <em>0 0</em></td></tr><tr><td>P3</td><td>0 1 1 <em><strong>1</strong> 1 0 0</em></td></tr></tbody></table>
-<ul>
-<li>합이 짞수가 되게 패리티 비트 추가</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-활용-사례">해밍코드 활용 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>통신시스템</td><td>데이터 전송과정에서 발생한 오류를 정정, 검출하여 신뢰성 제고</td><td>위성통신, 이동통신</td></tr><tr><td>저장장치</td><td>저장 및 읽기 과정에서 발생 오류 검출, 정정하여 무결성 제고</td><td>SSD, HDD</td></tr><tr><td>메모리</td><td>메모리 셀 불량 오류 검출, 수정하여 시스템 안정성 제고</td><td>ECC 메모리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="해밍코드-고려사항">해밍코드 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/hamming-code/#%ED%95%B4%EB%B0%8D%EC%BD%94%EB%93%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>패리티 비트로 인한 전송 오버헤드 고려 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
