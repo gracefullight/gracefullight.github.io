@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-23T09:49:39.725Z</updated>
+    <updated>2024-07-23T23:29:49.838Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DQM, 데이터 품질관리]]></title>
+        <id>https://gracefullight.dev/pe/db/data-quality-management/</id>
+        <link href="https://gracefullight.dev/pe/db/data-quality-management/"/>
+        <updated>2024-07-23T23:29:49.838Z</updated>
+        <summary type="html"><![CDATA[Data Quality Management]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-개념">데이터 품질관리 개념<a class="hash-link" aria-label="데이터 품질관리 개념에 대한 직접 링크" title="데이터 품질관리 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>좆기 내 외부 정보시스템 및 이해관계자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선활동</li>
+<li>안정성, 신뢰성, 이용편의성, 공익성 제고</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-아키텍처-대상">데이터 품질관리 아키텍처, 대상<a class="hash-link" aria-label="데이터 품질관리 아키텍처, 대상에 대한 직접 링크" title="데이터 품질관리 아키텍처, 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EB%8C%80%EC%83%81">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-아키텍처">데이터 품질관리 아키텍처<a class="hash-link" aria-label="데이터 품질관리 아키텍처에 대한 직접 링크" title="데이터 품질관리 아키텍처에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">​</a></h3>
+<table><thead><tr><th>구분</th><th>데이터</th><th>데이터 구조</th><th>데이터관리 프로세스</th></tr></thead><tbody><tr><td>CDO 개괄적관점</td><td>데이터</td><td>관리</td><td>정책</td></tr><tr><td>DA 개념적관점</td><td>표준 데이터</td><td>개념데이터 모델</td><td>데이터 표준관리, 요구사항 관리</td></tr><tr><td>Modeler 논리적관점</td><td>몯레데이터</td><td>논리데이터 모델</td><td>데이터 모델관리, 데이터 흐름관리</td></tr><tr><td>DBA 물리적관점</td><td>관리데이터</td><td>물리데이터 모델</td><td>데이터베이스 관리</td></tr><tr><td>User 운용적관점</td><td>업무데이터</td><td>사용자 뷰</td><td>데이터 활용관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-대상">데이터 품질관리 대상<a class="hash-link" aria-label="데이터 품질관리 대상에 대한 직접 링크" title="데이터 품질관리 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EB%8C%80%EC%83%81">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터</td><td>조직 내 목표 달성을 위해 사용되어지는 전산화된 데이터</td><td>데이터 현상값, 데이터 구조값</td></tr><tr><td>데이터 구조</td><td>데이터를 취급하는 관점에따라 뷰, 모델, 파일, DB로 제공</td><td>단계별 데이터 구조, 조직별 데이터 구조</td></tr><tr><td>데이터 관리 프로세스</td><td>데이터, 데이터 구조, 품질을 유지하기 위한 절차, 조직, 인력</td><td>데이터 정의 프로세스, 데이터 변경 프로세스</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형-구성요소">데이터 품질관리 성숙모형, 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형">데이터 품질관리 성숙모형<a class="hash-link" aria-label="데이터 품질관리 성숙모형에 대한 직접 링크" title="데이터 품질관리 성숙모형에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙도-구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 픔질기준</td><td>데이터 품질 정의</td><td>데이터 유효성, 데이터 활용성</td></tr><tr><td>품질관리 프로세스</td><td>데이터 품질기준 향상을 위한 필요 프로세스</td><td>요구사항 관리, 데이터 구조 관리, 데이터 흐름관리, DB관리, 표준 관리</td></tr><tr><td>품질관리 성숙수준</td><td>현재 수준 파악 후 5단계 개선 모형 정의</td><td>도입, 정형화, 통합화, 정량화, 최적화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙-수준">데이터 품질관리 성숙 수준<a class="hash-link" aria-label="데이터 품질관리 성숙 수준에 대한 직접 링크" title="데이터 품질관리 성숙 수준에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99-%EC%88%98%EC%A4%80">​</a></h2>
+<blockquote>
+<p>도형통량최</p>
+</blockquote>
+<table><thead><tr><th>단계</th><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>5</td><td>최적화</td><td>데이터 품질관리 개선 도출, 지속 적용</td></tr><tr><td>4</td><td>정량화</td><td>정량적 측정 통한 데이터 품질 관리</td></tr><tr><td>3</td><td>통합화</td><td>전사적 연계 통합 관점, 일관성 있는 품질 관리</td></tr><tr><td>2</td><td>정형화</td><td>품질관리 위한 제반 프로세스 정형화</td></tr><tr><td>1</td><td>도입</td><td>데이터 품질관리 문제점 인식, 부분적 활동</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/db" term="pe/db"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[뮤테이션 테스트]]></title>
         <id>https://gracefullight.dev/pe/sw/mutation-test/</id>
@@ -220,11 +253,11 @@
 <li>단계별 요구사항 명확화, 단계별 예산 효율적 관리, <mark class="flexible-marker flexible-marker-default">설계와 구현 분리</mark>로 인한 품질 향상</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도-세부-내용">소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제��도 절차도에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-세부-내용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>표준 프로세스</th><th>주요 산출물</th></tr></thead><tbody><tr><td>선행사업</td><td>요구사항 질의, 분석</td><td>요구사항 명세서, Use Case 시나리오</td></tr><tr><td>-</td><td>기본설계 (논리적)</td><td>기본 설계서</td></tr><tr><td>후속사업</td><td>상세설계 (물리적)</td><td>DB설계서, 테스트 명세서</td></tr><tr><td>-</td><td>개발</td><td>코드, 단위모듈 설계서, 테스트 시나리오</td></tr><tr><td>-</td><td>테스트</td><td>테스트 결과서, 품질 검토서</td></tr><tr><td>-</td><td>인수</td><td>인수 계획서, 설치 결과서, 시범운영계획서</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-일괄-발주-비교">소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%9D%BC%EA%B4%84-%EB%B0%9C%EC%A3%BC-%EB%B9%84%EA%B5%90">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-일괄-발주-비교">소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EF%BF%BD%EB%8F%84-%EC%9D%BC%EA%B4%84-%EB%B0%9C%EC%A3%BC-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>단계별 발주</th><th>일괄 발주</th></tr></thead><tbody><tr><td>특징</td><td>설계와 구현 분리 발주</td><td>설계와 구현 일괄 발주</td></tr><tr><td>리스트 관리</td><td>단계별 리스크 식별, 관리</td><td>프로젝트 전체 리스크 관리</td></tr><tr><td>참여업체 수</td><td>다수 업체</td><td>동일 업체</td></tr><tr><td>발주 행정부담</td><td>복수사업자 선정에 따른 행정 절차 부담 증가</td><td>단일 사업자 수행으로 행정 절차 감소</td></tr><tr><td>시스템 통합 책임</td><td>별도 시스템 통합 사업자 선정</td><td>구축 사업자가 통합 책임</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주시-고려사항">소프트웨어 사업의 단계별 발주시 고려사항<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주시 고려사항에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -254,50 +287,13 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" title="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" title="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EF%BF%BD%EF%BF%BD%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-비교">공공기관 정보시스템 구축업체 선정방식 비교<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>협상에 의한 계약 체결</th><th>경쟁적 대화에 의한 계약 체결</th></tr></thead><tbody><tr><td>근거</td><td>국가계약법 제 43조 2</td><td>국가계약법 제 43조 3</td></tr><tr><td>대상</td><td>기술력, 가격 모두 중요한 경우</td><td>요구사항 불명확, 기술적 해결방안이 다양한 경우</td></tr><tr><td>주요 절차</td><td><mark class="flexible-marker flexible-marker-default">제안서 평가, 협상, 계약 체결</mark></td><td><mark class="flexible-marker flexible-marker-default">대화 단계</mark>, 제안서 평가, 협상, 계약 체결</td></tr><tr><td>평가 요소</td><td>기술 능력, 입찰 가격</td><td>기술적 제안, 대화 결과, 가격</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-진행시-고려사항">협상에 의한 계약체결 진행시 고려사항<a class="hash-link" aria-label="협상에 의한 계약체결 진행시 고려사항에 대한 직접 링크" title="협상에 의한 계약체결 진행시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EC%A7%84%ED%96%89%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>과업 내용 변경으로 인한 하도급 대금 지급 비율 변경 가능성을 고려한 예산 반영 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[디자인 씽킹]]></title>
-        <id>https://gracefullight.dev/pe/mng/design-thinking/</id>
-        <link href="https://gracefullight.dev/pe/mng/design-thinking/"/>
-        <updated>2024-07-22T11:10:53.021Z</updated>
-        <summary type="html"><![CDATA[Design Thinking]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-개념">디자인 씽킹 개념<a class="hash-link" aria-label="디자인 씽킹 개념에 대한 직접 링크" title="디자인 씽킹 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>디자이너가 생각하는 방식으로 문제를 찾아 해결하는 과정에서의 태도와 생각하는 절차 및 방법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-핵심요소-프로세스-적용방안">디자인 씽킹 핵심요소, 프로세스, 적용방안<a class="hash-link" aria-label="디자인 씽킹 핵심요소, 프로세스, 적용방안에 대한 직접 링크" title="디자인 씽킹 핵심요소, 프로세스, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-핵심요소">디자인 씽킹 핵심요소<a class="hash-link" aria-label="디자인 씽킹 핵심요소에 대한 직접 링크" title="디자인 씽킹 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<!-- -->
-<ul>
-<li>사람들이 원하는 것, 기술적으로 가능한 것, 사업가치가 있는 것을 활용하여 고객 경험 혁신을 위한 전략 도출</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인-씽킹-프로세스">디자인 씽킹 프로세스<a class="hash-link" aria-label="디자인 씽킹 프로세스에 대한 직접 링크" title="디자인 씽킹 프로세스에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8-%EC%94%BD%ED%82%B9-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4">​</a></h3>
-<!-- -->
-<p>| 구분 | 내용 | 비고 |
-| 공감 | 사용자 관찰을 통해 요구와 문제를 파악하는 단계 | 인터뷰, 설문조사 |
-| 정의 | 파악한 문제 기반 핵심 문제 정의 | 의견 조율, 정의서 작성 |
-| 아이디어 | 다양한 해결책 모색, 가장 유망한 아이디어 선정 | 브레인스토밍, 아이디어 스케치 |
-| 프로토타입 | 아이디어 구현, 시각화 | 저비용 프로토타이핑 |
-| 테스트 | 프로토타이핑 테스트, 피드백, 개선 | 반복적 테스트, 사용성 테스트 |</p>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="디자인씽킹-적용방안">디자인씽킹 적용방안<a class="hash-link" aria-label="디자인씽킹 적용방안에 대한 직접 링크" title="디자인씽킹 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8%EC%94%BD%ED%82%B9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터분석</td><td>사용자 행동 분석, 서비스 요구사항 도출</td><td>데이터 경량화</td></tr><tr><td>UI/UX 디자인</td><td>사용자가 쉽게 사용할 수 있는 인터페이스, 기능 설계</td><td>사용자 중심 설계</td></tr><tr><td>SW 개발</td><td>사용자 요구사항 반영 SW 기능 개발, 클래스 설계</td><td>사용자 피드백 반영</td></tr><tr><td>유지보수</td><td>사용자 피드백을 반영하여 지속적인 서비스 개선</td><td>반복적 개선</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인씽킹-고려사항">디자인씽킹 고려사항<a class="hash-link" aria-label="디자인씽킹 고려사항에 대한 직접 링크" title="디자인씽킹 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8%EC%94%BD%ED%82%B9-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>반복적으로 문제를 정의하고 분석, 개선해나가기 위해 실패를 학습의 기회로 삼고 새로운 시도를 하는 조직문화 조성 필요</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
