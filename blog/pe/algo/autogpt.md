@@ -5,7 +5,7 @@ description: AutoGPT 설명
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## AutoGPT 개요

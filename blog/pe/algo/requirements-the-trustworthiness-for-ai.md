@@ -5,7 +5,7 @@ description: Requirements for Enhancing the Trustworthiness for Artificial Intel
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## 인공지능 시스템 신뢰성 제고를 위한 요구사항 개요

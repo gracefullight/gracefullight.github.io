@@ -5,7 +5,7 @@ description: 서포트 백터 머신 정리
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## SVM 개념

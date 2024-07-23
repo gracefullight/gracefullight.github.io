@@ -5,7 +5,7 @@ description: small LLM
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## sLLM 개요

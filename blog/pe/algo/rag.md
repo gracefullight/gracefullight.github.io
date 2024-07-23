@@ -5,7 +5,7 @@ description: Retrieval Augmented Generation
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## RAG 개요

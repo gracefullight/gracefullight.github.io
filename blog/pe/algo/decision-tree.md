@@ -5,7 +5,7 @@ description: 의사결정나무
 authors: me
 tags:
   - pe
-  - pe/algorithm
+  - pe/algo
 ---
 
 ## 의사결정나무 개요
