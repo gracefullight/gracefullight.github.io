@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-23T08:13:35.854Z</updated>
+    <updated>2024-07-23T09:49:39.725Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[mutation test]]></title>
+        <id>https://gracefullight.dev/pe/sw/mutation-test/</id>
+        <link href="https://gracefullight.dev/pe/sw/mutation-test/"/>
+        <updated>2024-07-23T09:49:39.725Z</updated>
+        <summary type="html"><![CDATA[mutation test]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-개념">뮤테이션 테스트 개념<a class="hash-link" aria-label="뮤테이션 테스트 개념에 대한 직접 링크" title="뮤테이션 테스트 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>소스 <mark class="flexible-marker flexible-marker-default">코드의 일부를 의도적으로 변경</mark>하여 테스트 케이스가 이 <mark class="flexible-marker flexible-marker-default">변경된 코드를 검출할 수 있는지 확인</mark>하는 화이트박스 테스트 기법</li>
+<li>테스트 케이스 유효성 검증, 코드 품질 향상, 테스트 커버리지 보완, 버그 발견</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성도-구성요소-적용방안">뮤테이션 테스트 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="뮤테이션 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" title="뮤테이션 테스트 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성도">뮤테이션 테스트 구성도<a class="hash-link" aria-label="뮤테이션 테스트 구성도에 대한 직접 링크" title="뮤테이션 테스트 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성요소">뮤테이션 테스트 구성요소<a class="hash-link" aria-label="뮤테이션 테스트 구성요소에 대한 직접 링크" title="뮤테이션 테스트 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원본 코드</td><td>테스트할 소스 코드</td><td>소프트웨어의 실제 기능을 수행하는 코드</td></tr><tr><td>뮤턴트</td><td>원본 코드를 변형하여 만든 코드</td><td>의도적으로 결함을 삽입한 코드</td></tr><tr><td>테스트 케이스</td><td>원본 코드와 뮤턴트를 검증하기 위한 테스트 시나리오</td><td>다양한 상황을 가정하여 작성된 테스트</td></tr><tr><td>킬드 뮤턴트</td><td>테스트 케이스가 검출한 뮤턴트</td><td>뮤턴트를 정확히 찾아내는 테스트 케이스</td></tr><tr><td>라이브 뮤턴트</td><td>테스트 케이스가 검출하지 못한 뮤턴트</td><td>테스트 케이스의 수정이 필요</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-오퍼레이터">뮤테이션 테스트 오퍼레이터<a class="hash-link" aria-label="뮤테이션 테스트 오퍼레이터에 대한 직접 링크" title="뮤테이션 테스트 오퍼레이터에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%98%A4%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>연산자 교체</td><td>코드 내의 연산자를 다른 연산자로 교체</td><td><code>+</code>를 <code>-</code>로, <code>&gt;</code>를 <code>&lt;</code>로 변경</td></tr><tr><td>상수 값 변경</td><td>코드 내의 상수 값을 다른 값으로 변경</td><td><code>int x = 5;</code>를 <code>int x = 10;</code>으로 변경</td></tr><tr><td>조건문 변경</td><td>조건문의 논리적 또는 비교 연산자를 변경</td><td><code>if (a &gt; b)</code>를 <code>if (a &lt; b)</code>로 변경</td></tr><tr><td>논리적 연산자 변경</td><td>논리적 연산자를 다른 연산자로 교체</td><td><code>and</code>를 <code>or</code>로 변경</td></tr><tr><td>제어 구조 변경</td><td>루프나 조건문 등의 제어 구조를 변경</td><td><code>for</code> 루프를 <code>while</code> 루프로 변경</td></tr><tr><td>문장 삭제</td><td>코드의 특정 문장을 삭제</td><td>변수 할당 문장 또는 조건문 삭제</td></tr><tr><td>반환 값 변경</td><td>메서드의 반환 값을 다른 값으로 변경</td><td><code>return x;</code>를 <code>return -x;</code>로 변경</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트시-고려사항">뮤테이션 테스트시 고려사항<a class="hash-link" aria-label="뮤테이션 테스트시 고려사항에 대한 직접 링크" title="뮤테이션 테스트시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h3>
+<ul>
+<li>많은 뮤턴트 생성으로 인한 높은 컴퓨팅 자원과 결과해석에 대한 인적 리소스 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/sw" term="pe/sw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CRC, 순환중복검사]]></title>
         <id>https://gracefullight.dev/pe/nw/crc/</id>
@@ -85,7 +114,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="MIV 구성요소에 대한 직접 링크" title="MIV 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="MIV 적용방안에 대한 직접 링크" title="MIV 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적��용방안">MIV 적용방안<a class="hash-link" aria-label="MIV 적용방안에 대한 직접 링크" title="MIV 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="MIV 고려사항에 대한 직접 링크" title="MIV 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -191,7 +220,7 @@
 <li>단계별 요구사항 명확화, 단계별 예산 효율적 관리, <mark class="flexible-marker flexible-marker-default">설계와 구현 분리</mark>로 인한 품질 향상</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도-세부-내용">소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직��접 링크" title="소프트웨어 사업의 단계별 발주제도 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-세부-내용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" title="소프트웨어 사업의 단계별 발주제도 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>표준 프로세스</th><th>주요 산출물</th></tr></thead><tbody><tr><td>선행사업</td><td>요구사항 질의, 분석</td><td>요구사항 명세서, Use Case 시나리오</td></tr><tr><td>-</td><td>기본설계 (논리적)</td><td>기본 설계서</td></tr><tr><td>후속사업</td><td>상세설계 (물리적)</td><td>DB설계서, 테스트 명세서</td></tr><tr><td>-</td><td>개발</td><td>코드, 단위모듈 설계서, 테스트 시나리오</td></tr><tr><td>-</td><td>테스트</td><td>테스트 결과서, 품질 검토서</td></tr><tr><td>-</td><td>인수</td><td>인수 계획서, 설치 결과서, 시범운영계획서</td></tr></tbody></table>
@@ -222,10 +251,10 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차-세부-내용">협상에 의한 계약체결 방식 절차, 세부 내용<a class="hash-link" aria-label="협상에 의한 계약체결 방식 절차, 세부 내용에 대한 직접 링크" title="협상에 의한 계약체결 방식 절차, 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차">협상에 의한 계약체결 방식 절차<a class="hash-link" aria-label="협상에 의한 계약체결 방식 절차에 대한 직접 링크" title="협상에 의한 계약체결 방식 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약��체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" title="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상��에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" title="협상에 의한 계약체결 방식 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" title="공공기관 정보시스템 구축업체 산정방식에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 관계도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EF%BF%BD%EF%BF%BD%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-비교">공공기관 정보시스템 구축업체 선정방식 비교<a class="hash-link" aria-label="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" title="공공기관 정보시스템 구축업체 선정방식 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>협상에 의한 계약 체결</th><th>경쟁적 대화에 의한 계약 체결</th></tr></thead><tbody><tr><td>근거</td><td>국가계약법 제 43조 2</td><td>국가계약법 제 43조 3</td></tr><tr><td>대상</td><td>기술력, 가격 모두 중요한 경우</td><td>요구사항 불명확, 기술적 해결방안이 다양한 경우</td></tr><tr><td>주요 절차</td><td><mark class="flexible-marker flexible-marker-default">제안서 평가, 협상, 계약 체결</mark></td><td><mark class="flexible-marker flexible-marker-default">대화 단계</mark>, 제안서 평가, 협상, 계약 체결</td></tr><tr><td>평가 요소</td><td>기술 능력, 입찰 가격</td><td>기술적 제안, 대화 결과, 가격</td></tr></tbody></table>
@@ -269,35 +298,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="디자인씽킹-고려사항">디자인씽킹 고려사항<a class="hash-link" aria-label="디자인씽킹 고려사항에 대한 직접 링크" title="디자인씽킹 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/design-thinking/#%EB%94%94%EC%9E%90%EC%9D%B8%EC%94%BD%ED%82%B9-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>반복적으로 문제를 정의하고 분석, 개선해나가기 위해 실패를 학습의 기회로 삼고 새로운 시도를 하는 조직문화 조성 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MECE]]></title>
-        <id>https://gracefullight.dev/pe/mng/mece/</id>
-        <link href="https://gracefullight.dev/pe/mng/mece/"/>
-        <updated>2024-07-22T10:57:36.442Z</updated>
-        <summary type="html"><![CDATA[Mutually Exclusive and Collectively Exhaustive]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-개념">MECE 개념<a class="hash-link" aria-label="MECE 개념에 대한 직접 링크" title="MECE 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>상호배타적이며 전체를 포괄하는 분류를 통해 대상이나 개념을 철저히 분석하는 방법론</li>
-<li>문제해결, 전략수립, 의사결정 등 복잡한 상황에서 명확하고 논리적인 판단을 돕는 도구로 활용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-절차도-세부절차-주요-기법">MECE 방법론 절차도, 세부절차, 주요 기법<a class="hash-link" aria-label="MECE 방법론 절차도, 세부절차, 주요 기법에 대한 직접 링크" title="MECE 방법론 절차도, 세부절차, 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-절차도">MECE 방법론 절차도<a class="hash-link" aria-label="MECE 방법론 절차도에 대한 직접 링크" title="MECE 방법론 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-방법론-세부절차">MECE 방법론 세부절차<a class="hash-link" aria-label="MECE 방법론 세부절차에 대한 직접 링크" title="MECE 방법론 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>문제 정의</td><td>명확한 문제 정의 및 목표 설정</td><td>핵심 목표 도출</td></tr><tr><td>문제 분해</td><td>문제를 세부 항목으로 나누어 분석</td><td>중복, 누락 방지</td></tr><tr><td>MECE 분류</td><td>도출된 요소를 상호배타적, 전체포괄 방식으로 분류</td><td>기준 명확화</td></tr><tr><td>해결책 도출</td><td>분석 결과 기반 해결책 제시</td><td>실현 가능성 평가, 피드백</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="mece-주요-기법">MECE 주요 기법<a class="hash-link" aria-label="MECE 주요 기법에 대한 직접 링크" title="MECE 주요 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>기법</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>3C</td><td>자사, 경쟁사, 고객 분석</td><td>시장 상황 분석</td></tr><tr><td>5F</td><td>잠재적 진입자, 공급자, 구매자, 대체제, 기존 경쟁자 분석</td><td>산업 경쟁 환경 분석</td></tr><tr><td>PEST</td><td>정치적, 경제적, 사회적, 기술적 요인 분석</td><td>거시 환경 분석</td></tr><tr><td>SWOT</td><td>강점, 약점, 기회, 위험 분석</td><td>내부, 외부 환경 분석</td></tr><tr><td>CPND</td><td>컨텐츠, 플랫폼, 네트워크, 디바이스 측면 분석</td><td>기술 측면 전략 분석</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-분석-시-고려사항">MECE 분석 시 고려사항<a class="hash-link" aria-label="MECE 분석 시 고려사항에 대한 직접 링크" title="MECE 분석 시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/mece/#mece-%EB%B6%84%EC%84%9D-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>MECE는 완벽한 답을 찾는 것이 아니라, 문제 해결을 위한 사고 프레임워크를 제공함으로 상황에 따라 효과적으로 활용해야함</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
