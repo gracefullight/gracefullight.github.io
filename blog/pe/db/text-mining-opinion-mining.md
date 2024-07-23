@@ -5,7 +5,7 @@ description: Text mining, Opinion Mining
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 데이터마이닝의 개념

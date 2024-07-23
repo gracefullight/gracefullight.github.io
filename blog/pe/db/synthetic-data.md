@@ -5,7 +5,7 @@ description: Synthetic data
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 합성데이터의 개념

@@ -5,7 +5,7 @@ description: NoSQL
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## NoSQL의 개념

@@ -5,7 +5,7 @@ description: Data Standardization
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 데이터 표준화의 개념

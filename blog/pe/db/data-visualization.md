@@ -5,7 +5,7 @@ description: data visualization
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 데이터 시각화의 개념

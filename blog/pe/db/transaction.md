@@ -5,7 +5,7 @@ description: Database Transaction
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 데이터베이스 트랜잭션의 개념

@@ -5,7 +5,7 @@ description: Concurrency Control
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 병행제어의 개념

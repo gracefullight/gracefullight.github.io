@@ -5,7 +5,7 @@ description: Data Governance
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 데이터 거버넌스의 개념

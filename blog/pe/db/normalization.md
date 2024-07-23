@@ -5,7 +5,7 @@ description: DB Normalization
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 정규화의 개념

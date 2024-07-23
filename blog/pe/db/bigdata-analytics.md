@@ -5,7 +5,7 @@ description: Big-data analytics
 authors: me
 tags:
   - pe
-  - pe/database
+  - pe/db
 ---
 
 ## 빅데이터 분석의 개념
