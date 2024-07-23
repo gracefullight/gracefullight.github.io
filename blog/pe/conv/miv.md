@@ -23,6 +23,7 @@ graph LR
   깊이 --> 인코딩
 
   subgraph 인코딩
+    direction LR
     TMIV인코더
     비디오인코더1[비디오 인코더]
     비디오인코더2[비디오 인코더]
@@ -32,6 +33,7 @@ graph LR
   end
 
   subgraph 디코딩
+    direction LR
     비디오디코더1[비디오 디코더]
     비디오디코더2[비디오 디코더]
 
