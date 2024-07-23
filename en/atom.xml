@@ -24,7 +24,11 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EF%BF%BD%EF%BF%BD%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>압축 기술 뿐아니라 5G 네트워크를 통해 데이터를 1Gbps 이상으로 송신 필요</li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
