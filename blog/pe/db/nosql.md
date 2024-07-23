@@ -27,10 +27,11 @@ tags:
 
 | 구분          | 내용                                              | 비고             |
 | ------------- | ------------------------------------------------- | ---------------- |
-| Key-Value     | 키와 값의 간단한 쌍으로 저장, 빠른 조회 가능      | Redis, DynamoDB  |
-| Column Family | 열 기반 데이터 저장, 유연한 스키마                | Cassandra, HBase |
-| Document      | JSON 문서 형식으로 저장, 빠른 조회 가능           | MongoDB, CouchDB |
-| Graph         | 노드와 간선으로 구성된 그래프 형식의 데이터베이스 | Neo4j            |
+| ==Key-Value==     | 키와 값의 간단한 쌍으로 저장, 빠른 조회 가능      | Redis, DynamoDB  |
+| ==Column Family== | 열 기반 데이터 저장, 유연한 스키마                | Cassandra, HBase |
+| ==Document==      | JSON 문서 형식으로 저장, 빠른 조회 가능           | MongoDB, CouchDB |
+| ==Graph==        | 노드와 간선으로 구성된 그래프 형식의 데이터베이스 | Neo4j            |
+| ==Vector== | 데이터 간 유사도를 벡터로 저장하여 거리 계산 | milvus |
 
 ## NoSQL의 CAP 이론, 유형
 
