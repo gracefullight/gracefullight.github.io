@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 23 Jul 2024 02:08:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2024 05:16:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[MIV, MPEG Immersive Video]]></title>
+            <link>https://gracefullight.dev/en/pe/conv/miv/</link>
+            <guid>https://gracefullight.dev/en/pe/conv/miv/</guid>
+            <pubDate>Tue, 23 Jul 2024 05:16:01 GMT</pubDate>
+            <description><![CDATA[MPEG Immersive Video]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-개념">MIV 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>다수의 카메라로 3D 캡쳐한 영상을 6DoF지원하여 압축하는 비디오 압축 표준</li>
+<li>VR, AR 등 몰입형 미디어에 대한 압축 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성도-구성요소-적용방안">MIV 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성도">MIV 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EF%BF%BD%EF%BF%BD%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/conv</category>
+        </item>
         <item>
             <title><![CDATA[CXL, Compute Express Link]]></title>
             <link>https://gracefullight.dev/en/pe/ca/cxl/</link>
@@ -24,7 +45,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성요소">CXL 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL.io</td><td>초기설정, 가상화, 장치 연결 등 입출력 프로토콜</td><td>PCIe 기반</td></tr><tr><td>CXL.cache</td><td>메모리 캐시 일관성 제공, CPU와 가속기 간의 빠른 데이터 전송 가능</td><td>낮은 지연, 고속 전송</td></tr><tr><td>CXL.mem</td><td>메모리 공유 및 풀링 기능 제공, 여러 장치 간의 메모리 자원 공유 가능</td><td>고대역폭 메모리 접근, 메모리 풀링</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%A0%81%EF%BF%BD%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>데이터 센터</td><td>고성능 컴퓨팅, AI 가속기와 CPU 간의 고속 데이터 전송</td><td>높은 대역폭과 낮은 지연 시간 요구 환경</td></tr><tr><td>클라우드 서비스</td><td>클라우드 기반의 자원 효율적인 데이터 처리, 메모리 풀링을 통한 자원 공유</td><td>유연한 자원 할당 및 확장성 제공</td></tr><tr><td>스토리지 시스템</td><td>고속 NVMe SSD와 CPU 간의 데이터 전송 최적화</td><td>데이터 액세스 속도 향상, 스토리지 병목 현상 해결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형-pcie-비교">CXL 유형, PCIe 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95-pcie-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형">CXL 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95">​</a></h3>
@@ -91,7 +112,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도-세부-내용">소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-��세부-내용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-세부-내용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>표준 프로세스</th><th>주요 산출물</th></tr></thead><tbody><tr><td>선행사업</td><td>요구사항 질의, 분석</td><td>요구사항 명세서, Use Case 시나리오</td></tr><tr><td>-</td><td>기본설계 (논리적)</td><td>기본 설계서</td></tr><tr><td>후속사업</td><td>상세설계 (물리적)</td><td>DB설계서, 테스트 명세서</td></tr><tr><td>-</td><td>개발</td><td>코드, 단위모듈 설계서, 테스트 시나리오</td></tr><tr><td>-</td><td>테스트</td><td>테스트 결과서, 품질 검토서</td></tr><tr><td>-</td><td>인수</td><td>인수 계획서, 설치 결과서, 시범운영계획서</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-일괄-발주-비교">소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%9D%BC%EA%B4%84-%EB%B0%9C%EC%A3%BC-%EB%B9%84%EA%B5%90">​</a></h2>
 <table><thead><tr><th>구분</th><th>단계별 발주</th><th>일괄 발주</th></tr></thead><tbody><tr><td>특징</td><td>설계와 구현 분리 발주</td><td>설계와 구현 일괄 발주</td></tr><tr><td>리스트 관리</td><td>단계별 리스크 식별, 관리</td><td>프로젝트 전체 리스크 관리</td></tr><tr><td>참여업체 수</td><td>다수 업체</td><td>동일 업체</td></tr><tr><td>발주 행정부담</td><td>복수사업자 선정에 따른 행정 절차 부담 증가</td><td>단일 사업자 수행으로 행정 절차 감소</td></tr><tr><td>시스템 통합 책임</td><td>별도 시스템 통합 사업자 선정</td><td>구축 사업자가 통합 책임</td></tr></tbody></table>
@@ -116,7 +137,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차-세부-내용">협상에 의한 계약체결 방식 절차, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차">협상에 의한 계약체결 방식 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EF%BF%BD%EF%BF%BD%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EF%BF%BD%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
@@ -231,36 +252,11 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성요소">BSC 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>재무 관점</td><td>전통적 성과 측정 방식</td><td>매출액, 현금 흐름</td></tr><tr><td>내부 프로세스 관점</td><td>조직 내부 프로세스 최적화, 프로세스 향상 노력 성과화</td><td>생산 사이클시간, 단위원가</td></tr><tr><td>고객 관점</td><td>고객 충성도 제고, 만족도 향상</td><td>고객 만족도, 적시공급율</td></tr><tr><td>학습과 성장 관점</td><td>학습 노력과 역량증진을 성과화</td><td>종업원 만족도, 자격취득건수</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-비교">BSC, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-비�교">BSC, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>BSC</th><th>IT-BSC</th></tr></thead><tbody><tr><td>관점</td><td>재무, 고객, 내부프로세스, 학습과 성장</td><td>기업공헌도, 사용자 만족도, 운영 프로세스, 미래지향</td></tr><tr><td>목표</td><td>기업의 행동과 프로세스 변화</td><td>IT 가치전달 및 성과 달성</td></tr><tr><td>활동</td><td>비지니스 거버넌스</td><td>IT 거버넌스</td></tr><tr><td>적용분야</td><td>모든 비지니스 분야</td><td>IT 부서, IT 서비스 제공자</td></tr><tr><td>도입효과</td><td>조직 전반 성과 개선</td><td>IT 성과, 서비스 품질 향상</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-고려사항">BSC 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>IT 서비스 품질향상, 개발 생산성 향상을 지원하기 위해 IT-BSC 기법 활용 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[SW사업 영향평가]]></title>
-            <link>https://gracefullight.dev/en/pe/mng/SW사업-영향평가/</link>
-            <guid>https://gracefullight.dev/en/pe/mng/SW사업-영향평가/</guid>
-            <pubDate>Mon, 22 Jul 2024 10:34:17 GMT</pubDate>
-            <description><![CDATA[SW사업 영향평가]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-개념">SW사업 영향평가 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>국가 SW사업의 예산 편성, 발주, SW 배포 및 서비스를 추진하는 경우, <mark class="flexible-marker flexible-marker-default">민간 SW 산업 생태계에 미치는 영향을 검토하여 사전 조정</mark>하는 제도</li>
-<li>민간 SW시장 침해 예방, 민간 SW기업 경쟁력 확보, 공공-민간 중복개발 및 경쟁 방지, 예산 절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-절차도-세부절차-평가항목">SW사업 영향평가 절차도, 세부절차, 평가항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%ED%8F%89%EA%B0%80%ED%95%AD%EB%AA%A9">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-절차도">SW사업 영향평가 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-세부절차">SW사업 영향평가 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1단계</td><td>SW사업 기본정보 작성</td><td>사업명, 주요내용, 사업기간</td></tr><tr><td>2단계</td><td>운영계획 검토</td><td>운영기관 또는 사용자와의 공동 사용여부 분석</td></tr><tr><td>3단계</td><td>민간 SW시장 침해가능성 검토</td><td>동일, 유사 SW 존재 여부 확인</td></tr><tr><td>4단계</td><td>사업 필요성, 공공성 검토</td><td>유사 민간 SW 있으나 추진하는 사유</td></tr><tr><td>5단계</td><td>종합의견 작성</td><td>민간 SW 시장침해 가능성 종합 판단</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-평가항목">SW사업 영향평가 평가항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%ED%8F%89%EA%B0%80%ED%95%AD%EB%AA%A9">​</a></h3>
-<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>평가기준</td><td>민간SW시장 침해 가능성</td><td>SW사업 주요기능과 동일, 유사한 SW를 민간에서 제공하는지 여부</td></tr><tr><td>-</td><td>SW사업 필요성, 공공성</td><td>민간 SW가 있지만, 사업을 추진해야하는 이유</td></tr><tr><td>평가방법</td><td>자체평가</td><td>사업부서에서 직접 검토</td></tr><tr><td>-</td><td>기술지원</td><td>과기정통부, 정보통신산업진흥원 지원 요청</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="sw사업-영향평가-검토시-고려사항">SW사업 영향평가 검토시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/SW%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80/#sw%EC%82%AC%EC%97%85-%EC%98%81%ED%96%A5%ED%8F%89%EA%B0%80-%EA%B2%80%ED%86%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>OpenAPI 등을 통한 공공 데이터 개방으로 사업을 통한 민간 서비스 시장 활성화 기여 필요</li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/mng</category>
