@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Jul 2024 11:37:26 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jul 2024 02:08:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[CXL, Compute Express Link]]></title>
+            <link>https://gracefullight.dev/pe/ca/cxl/</link>
+            <guid>https://gracefullight.dev/pe/ca/cxl/</guid>
+            <pubDate>Tue, 23 Jul 2024 02:08:42 GMT</pubDate>
+            <description><![CDATA[Compute Express Link]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-개념">CXL 개념<a class="hash-link" aria-label="CXL 개념에 대한 직접 링크" title="CXL 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>프로세서와 메모리 사이의 고속, 고용량 연결의 위한 개방형 표준 인터페이스</li>
+<li>PCIe 인터페이스의 메모리 일관성과 공유 기능 부족, 고성능, 저지연 데이터 전송과 메모리 일관성 제공, 효율성 향상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성도-구성요소-적용사례">CXL 구성도, 구성요소, 적용사례<a class="hash-link" aria-label="CXL 구성도, 구성요소, 적용사례에 대한 직접 링크" title="CXL 구성도, 구성요소, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성도">CXL 구성도<a class="hash-link" aria-label="CXL 구성도에 대한 직접 링크" title="CXL 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성요소">CXL 구성요소<a class="hash-link" aria-label="CXL 구성요소에 대한 직접 링크" title="CXL 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL.io</td><td>초기설정, 가상화, 장치 연결 등 입출력 프로토콜</td><td>PCIe 기반</td></tr><tr><td>CXL.cache</td><td>메모리 캐시 일관성 제공, CPU와 가속기 간의 빠른 데이터 전송 가능</td><td>낮은 지연, 고속 전송</td></tr><tr><td>CXL.mem</td><td>메모리 공유 및 풀링 기능 제공, 여러 장치 간의 메모리 자원 공유 가능</td><td>고대역폭 메모리 접근, 메모리 풀링</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="CXL 적용사례에 대한 직접 링크" title="CXL 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>데이터 센터</td><td>고성능 컴퓨팅, AI 가속기와 CPU 간의 고속 데이터 전송</td><td>높은 대역폭과 낮은 지연 시간 요구 환경</td></tr><tr><td>클라우드 서비스</td><td>클라우드 기반의 자원 효율적인 데이터 처리, 메모리 풀링을 통한 자원 공유</td><td>유연한 자원 할당 및 확장성 제공</td></tr><tr><td>스토리지 시스템</td><td>고속 NVMe SSD와 CPU 간의 데이터 전송 최적화</td><td>데이터 액세스 속도 향상, 스토리지 병목 현상 해결</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형-pcie-비교">CXL 유형, PCIe 비교<a class="hash-link" aria-label="CXL 유형, PCIe 비교에 대한 직접 링크" title="CXL 유형, PCIe 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95-pcie-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형">CXL 유형<a class="hash-link" aria-label="CXL 유형에 대한 직접 링크" title="CXL 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL Type 1</td><td>메모리 일관성 없이 I/O 가속기를 연결하여 고속 데이터 전송을 지원</td><td>단순 I/O 연결, 낮은 지연 시간</td></tr><tr><td>CXL Type 2</td><td>메모리 일관성을 유지하며 CPU와 가속기 간의 데이터 전송을 지원</td><td>CPU와 가속기 간의 일관성 유지</td></tr><tr><td>CXL Type 3</td><td>메모리 풀링을 통해 여러 장치 간의 메모리 자원을 공유하고 관리</td><td>메모리 공유 및 풀링 기능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-pcie-비교">CXL PCIe 비교<a class="hash-link" aria-label="CXL PCIe 비교에 대한 직접 링크" title="CXL PCIe 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-pcie-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>PCIe</th><th>CXL</th></tr></thead><tbody><tr><td>기능</td><td>데이터 전송, I/O 장치 연결</td><td>데이터 전송, 메모리 일관성, 메모리 공유</td></tr><tr><td>지연 시간</td><td>낮은 지연 시간</td><td>매우 낮은 지연 시간</td></tr><tr><td>호환성</td><td>다양한 I/O 장치와 호환</td><td>PCIe와 호환되며, 추가 메모리 및 가속기와도 호환</td></tr><tr><td>메모리 일관성</td><td>없음</td><td>보장</td></tr><tr><td>메모리 공유</td><td>없음</td><td>메모리 풀링 및 자원 공유 가능</td></tr><tr><td>주요 사용처</td><td>일반적인 컴퓨터 및 서버의 I/O 장치 연결</td><td>데이터 센터, 고성능 컴퓨팅, 클라우드 컴퓨팅</td></tr><tr><td>버전</td><td>PCIe 5.0</td><td>CXL 3.0</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-고려사항">CXL 고려사항<a class="hash-link" aria-label="CXL 고려사항에 대한 직접 링크" title="CXL 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>다양한 벤더의 하드웨어 간의 호환성 확보 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/ca</category>
+        </item>
         <item>
             <title><![CDATA[트리정렬]]></title>
             <link>https://gracefullight.dev/pe/algo/tree-sort/</link>
@@ -234,33 +264,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[ISO 25029]]></title>
-            <link>https://gracefullight.dev/pe/sw/iso-25029/</link>
-            <guid>https://gracefullight.dev/pe/sw/iso-25029/</guid>
-            <pubDate>Mon, 22 Jul 2024 10:06:57 GMT</pubDate>
-            <description><![CDATA[ISO 25029]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-25029-개념">ISO 25029 개념<a class="hash-link" aria-label="ISO 25029 개념에 대한 직접 링크" title="ISO 25029 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-25029/#iso-25029-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>인공지능 SW시스템의 품질 속성 모델 표준</li>
-<li>인공지능 SW는 일반적으로 불투명하고 예측이 어려움, 사용 학습 모델 구조, 학습 모델 파라미터 규모, 사용 데이터 양과 질, 학습 절차 등이 모두 품질 영향</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-25029-품질속성-개념도-세부-내용">ISO 25029 품질속성 개념도, 세부 내용<a class="hash-link" aria-label="ISO 25029 품질속성 개념도, 세부 내용에 대한 직접 링크" title="ISO 25029 품질속성 개념도, 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-25029/#iso-25029-%ED%92%88%EC%A7%88%EC%86%8D%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-25029-품질속성-개념도">ISO 25029 품질속성 개념도<a class="hash-link" aria-label="ISO 25029 품질속성 개념도에 대한 직접 링크" title="ISO 25029 품질속성 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-25029/#iso-25029-%ED%92%88%EC%A7%88%EC%86%8D%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<blockquote>
-<p>제강적 개투정</p>
-</blockquote>
-<!-- -->
-<ul>
-<li>ISO 25000 이하 AI 특징을 반영한 품질 속성 추가</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-25029-품질-속성-세부-내용">ISO 25029 품질 속성 세부 내용<a class="hash-link" aria-label="ISO 25029 품질 속성 세부 내용에 대한 직접 링크" title="ISO 25029 품질 속성 세부 내용에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-25029/#iso-25029-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">기능 정확성</mark></td><td>요구되는 정확도로 올바른 출력을 생성하는지 확인</td><td>학습 모델 종류에 따라 분류, 클러스터링, 회귀 예측 평가</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">기능 적응성</mark></td><td>AI시스템이 배포된 환경에 변화에 따라 행위를 맞춰 나가는 것</td><td>지속 학습, 확증 편향</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">제어 가능성</mark></td><td>사용자가 원할 때 작동 중인 AI시스템에 개입 가능 여부</td><td>자율 주행</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">투명성</mark></td><td>AI 시스템의 정보를 충분히 제공</td><td>해석 가능성, 설명 가능성</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">강건성</mark></td><td>AI가 편향, 적대적 공격 등을 감내할 수 있는 환경 변화의 정도</td><td>운영 신뢰성</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">개입 가능성</mark></td><td>쉽게 AI시스템을 운용 및 제어 가능하도록 인터페이스 설계가 되어있는지의 여부</td><td>인간중심적</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-25029-품질-속성-시험-기법">ISO 25029 품질 속성 시험 기법<a class="hash-link" aria-label="ISO 25029 품질 속성 시험 기법에 대한 직접 링크" title="ISO 25029 품질 속성 시험 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/sw/iso-25029/#iso-25029-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1-%EC%8B%9C%ED%97%98-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>시험 기법</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">기능 정확성</mark></td><td><mark class="flexible-marker flexible-marker-default">분류</mark></td><td>학습 당시 없던 새로운 데이터 입력시 데이터가 어디에 속하는지 분류</td></tr><tr><td>-</td><td>-</td><td><mark class="flexible-marker flexible-marker-default">Accuracy, Precision, Recall, ROC</mark></td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">회귀 분석</mark></td><td>시계열 데이터에 대해 직선, 곡선을 추론하는 기법</td></tr><tr><td>-</td><td>-</td><td><mark class="flexible-marker flexible-marker-default">평균절대오차MAE, 평균제곱오차MSE, 평균제곱근오차RMSE</mark></td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">군집화</mark></td><td>고객 분할, 이미지 분할, 비정상적 탐지 군집화</td></tr><tr><td>-</td><td>-</td><td><mark class="flexible-marker flexible-marker-default">Purity, NMI, RI</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">강건성</mark></td><td><mark class="flexible-marker flexible-marker-default">악의적 입력 생성</mark></td><td>화이트박스기반 손실 함수 <mark class="flexible-marker flexible-marker-default">기울기 반대방향</mark>으로 <mark class="flexible-marker flexible-marker-default">노이즈를 주어 오판 유도</mark></td></tr><tr><td>-</td><td>-</td><td>블랙박스기반 학습 모델을 <mark class="flexible-marker flexible-marker-default">대체품으로 만들어 악의적 입력</mark> 활용</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">분포 외 데이터 처리</mark></td><td>학습 데이터와 동떨어진 데이터 <mark class="flexible-marker flexible-marker-default">OOD 검증</mark></td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">블랙박스 시험 기법</mark></td><td><mark class="flexible-marker flexible-marker-default">메타몰픽 테스트</mark>, 초기 테스트 사례와 후속 테스트 사례 입력 사이의 <mark class="flexible-marker flexible-marker-default">편차를 검증 (A/B)</mark></td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">화이트박스 시험 기법</mark></td><td><mark class="flexible-marker flexible-marker-default">CNN기반 커버리지</mark>, 뉴런 커버리지, 부호 변화 커버리지, 값 변화 커버리지, 부호-부호 커버리지</td></tr><tr><td>-</td><td>-</td><td><mark class="flexible-marker flexible-marker-default">RNN기반 커버리지</mark>, <mark class="flexible-marker flexible-marker-default">셀 스테이트</mark>(반대단어), <mark class="flexible-marker flexible-marker-default">히든 스테이트</mark>(유사단어)</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/sw</category>
         </item>
     </channel>
 </rss>
