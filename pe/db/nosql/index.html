@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.03d0a511.css">
-<script src="/assets/js/runtime~main.5f2b6964.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.608891b5.js" defer="defer"></script>
 <script src="/assets/js/main.83f99b36.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,7 +48,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-base-특성">NoSQL의 BASE 특성<a class="hash-link" aria-label="NoSQL의 BASE 특성에 대한 직접 링크" title="NoSQL의 BASE 특성에 대한 직접 링크" href="/pe/db/nosql/#nosql의-base-특성">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Basically Available</td><td>시스템 장애에도 부분적으로 데이터 접근 가능</td><td>모든 요청 응답, 가용성 중시</td></tr><tr><td>Soft State</td><td>데이터 일관성이 즉시 보장되지 않음</td><td>최종적 일관성</td></tr><tr><td>Eventual Consistency</td><td>모든 복제물이 결국에는 동일한 상태로 수렴</td><td>일관성 완화</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-유형">NoSQL의 유형<a class="hash-link" aria-label="NoSQL의 유형에 대한 직접 링크" title="NoSQL의 유형에 대한 직접 링크" href="/pe/db/nosql/#nosql의-유형">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Key-Value</td><td>키와 값의 간단한 쌍으 로 저장, 빠른 조회 가능</td><td>Redis, DynamoDB</td></tr><tr><td>Column Family</td><td>열 기반 데이터 저장, 유연한 스키마</td><td>Cassandra, HBase</td></tr><tr><td>Document</td><td>JSON 문서 형식으로 저장, 빠른 조회 가능</td><td>MongoDB, CouchDB</td></tr><tr><td>Graph</td><td>노드와 간선으로 구성된 그래프 형식의 데이터베이스</td><td>Neo4j</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">Key-Value</mark></td><td>키와 값의 간단한 쌍으로 저장, 빠른 조회 가능</td><td>Redis, DynamoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Column Family</mark></td><td>열 기반 데이터 저장, 유연한 스키마</td><td>Cassandra, HBase</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Document</mark></td><td>JSON 문서 형식으로 저장, 빠른 조회 가능</td><td>MongoDB, CouchDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Graph</mark></td><td>노드와 간선으로 구성된 그래프 형식의 데이터베이스</td><td>Neo4j</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Vector</mark></td><td>데이터 간 유사도를 벡터로 저장하여 거리 계산</td><td>milvus</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-cap-이론-유형">NoSQL의 CAP 이론, 유형<a class="hash-link" aria-label="NoSQL의 CAP 이론, 유형에 대한 직접 링크" title="NoSQL의 CAP 이론, 유형에 대한 직접 링크" href="/pe/db/nosql/#nosql의-cap-이론-유형">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론">CAP 이론<a class="hash-link" aria-label="CAP 이론에 대한 직접 링크" title="CAP 이론에 대한 직접 링크" href="/pe/db/nosql/#cap-이론">​</a></h3>
 <!-- -->
@@ -57,7 +57,7 @@
 <li>CAP 중 2가지만 만족 가능</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-유형">CAP 유형<a class="hash-link" aria-label="CAP 유형에 대한 직접 링크" title="CAP 유형에 대한 직접 링크" href="/pe/db/nosql/#cap-유형">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>네트워크 분할시에도 일관성을 보장, 가용성 일부 희생</td><td>HBase, MongoDB</td></tr><tr><td>A + P</td><td>네트워크 분할시에도 가용성을 보장, 일관성 일부 희생</td><td>CouchDB, DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할 발생하지 않는 상황에서 일관성과 가용성  모듀 우지</td><td>RDBMS</td></tr></tbody></table>
+<table><thead><tr><th>구 분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>네트워크 분할시에도 일관성을 보장, 가용성 일부 희생</td><td>HBase, MongoDB</td></tr><tr><td>A + P</td><td>네트워크 분할시에도 가용성을 보장, 일관성 일부 희생</td><td>CouchDB, DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할 발생하지 않는 상황에서 일관성과 가용성 모듀 우지</td><td>RDBMS</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-모델링시-고려사항">NoSQL 모델링시 고려사항<a class="hash-link" aria-label="NoSQL 모델링시 고려사항에 대한 직접 링크" title="NoSQL 모델링시 고려사항에 대한 직접 링크" href="/pe/db/nosql/#nosql-모델링시-고려사항">​</a></h2>
 <ul>
 <li>비정형 데이터를 저장해야하므로 도메인 모델링 후 쿼리 결과를 정의한 뒤 저장할 테이블 모델을 설계해야함.</li>
