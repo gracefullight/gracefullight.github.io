@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.03d0a511.css">
-<script src="/assets/js/runtime~main.36ccd386.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.86357553.js" defer="defer"></script>
 <script src="/assets/js/main.0ed1a08e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -109,9 +109,9 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-용량산정방법-개념도">데이터베이스 용량산정방법 개념도<a class="hash-link" aria-label="데이터베이스 용량산정방법 개념도에 대한 직접 링크" title="데이터베이스 용량산정방법 개념도에 대한 직접 링크" href="/tags/pe/page/13/#데이터베이스-용량산정방법-개념도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-용량산정방법-세부절차">데이터베이스 용량산정방법 세부절차<a class="hash-link" aria-label="데이터베이스 용량산정방법 세부절차에 대한 직접 링크" title="데이터베이스 용량산정방법 세부절차에 대한 직접 링크" href="/tags/pe/page/13/#데이터베이스-용량산정방법-세부절차">​</a></h3>
-<table><thead><tr><th>구분</th><th>세부절차</th><th>내용</th></tr></thead><tbody><tr><td>오브젝트별 용량산정</td><td>테이블 크기 계산</td><td>테이블 Row 평균 수 계산</td></tr><tr><td>-</td><td>-</td><td>테이블 요구 블록, 메서드 계산</td></tr><tr><td>테이블스페이스 용량산정</td><td>테이블 용량 계산</td><td>테이블 크기기반 스페이스 용량 계산</td></tr><tr><td>-</td><td>여유 용량 계산</td><td>대략 40% 여유 스페이스 확보</td></tr><tr><td>디스크 용량산정</td><td>데이터 용량 계산</td><td>DB설치, 관리 위한 시스템 용량 포함</td></tr><tr><td>-</td><td>시스템 사용용량 계산</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>세부절차</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">오브젝트별 용량산정</mark></td><td>테이블 크기 계산</td><td>테이블 Row 평균 수 계산</td></tr><tr><td>-</td><td>-</td><td>테이블 요구 블록, 메서드 계산</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">테이블스페이스 용량산정</mark></td><td>테이블 용량 계산</td><td>테이블 크기기반 스페이스 용량 계산</td></tr><tr><td>-</td><td>여유 용량 계산</td><td>대략 40% 여유 스페이스 확보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">디스크 용량산정</mark></td><td>데이터 용량 계산</td><td>DB설치, 관리 위한 시스템 용량 포함</td></tr><tr><td>-</td><td>시스템 사용용량 계산</td><td>-</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-용량산정방법-기준">데이터베이스 용량산정방법 기준<a class="hash-link" aria-label="데이터베이스 용량산정방법 기준에 대한 직접 링크" title="데이터베이스 용량산정방법 기준에 대한 직접 링크" href="/tags/pe/page/13/#데이터베이스-용량산정방법-기준">​</a></h3>
-<table><thead><tr><th>구분</th><th>항목</th><th>비고</th></tr></thead><tbody><tr><td>트랜잭션 수</td><td>연간 트랜잭션 현황, 일평균 현황</td><td>1,000 TPS</td></tr><tr><td>-</td><td>피크타임 현황, 예상증가량</td><td>30%</td></tr><tr><td>온라인업무량</td><td>CRUD별  레코드 크기</td><td>300건</td></tr><tr><td>배치업무량</td><td>온라인 업무에 대한 배치업무비</td><td>9:1</td></tr><tr><td>데이터백업</td><td>데이터 백업여부, 레이드 구성, 백업량</td><td>50G, RAID5</td></tr><tr><td>데이터유형</td><td>이미지, 텍스트, 미디어 파일 비율</td><td>1:1:3</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>항목</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">트랜잭션 수</mark></td><td>연간 트랜잭션 현황, 일평균 현황</td><td>1,000 TPS</td></tr><tr><td>-</td><td>피크타임 현황, 예상증가량</td><td>30%</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">온라인업무량</mark></td><td>CRUD별 레코드 크기</td><td>300건</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">배치업무량</mark></td><td>온라인 업무에 대한 배치업무비</td><td>9:1</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">데이터 백업</mark></td><td>데이터 백업여부, 레이드 구성, 백업량</td><td>50G, RAID5</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">데이터 유형</mark></td><td>이미지, 텍스트, 미디어 파일 비율</td><td>1:1:3</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-용량산정-고려사항">데이터베이스 용량산정 고려사항<a class="hash-link" aria-label="데이터베이스 용량산정 고려사항에 대한 직접 링크" title="데이터베이스 용량산정 고려사항에 대한 직접 링크" href="/tags/pe/page/13/#데이터베이스-용량산정-고려사항">​</a></h2>
 <ul>
 <li>개발, 테스트, 스테이징 환경에 필요한 추가용량</li>
@@ -123,7 +123,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="정규화의-절차-함수종속성-이상현상">정규화의 절차, 함수종속성, 이상현상<a class="hash-link" aria-label="정규화의 절차, 함수종속성, 이상현상에 대한 직접 링크" title="정규화의 절차, 함수종속성, 이상현상에 대한 직접 링크" href="/tags/pe/page/13/#정규화의-절차-함수종속성-이상현상">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="정규화의-절차">정규화의 절차<a class="hash-link" aria-label="정규화의 절차에 대한 직접 링크" title="정규화의 절차에 대한 직접 링크" href="/tags/pe/page/13/#정규화의-절차">​</a></h3>
-<table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>제1정규형</td><td>원자값이 아닌 도메인 분해</td><td>데이터 중복 높음 / Join 적음 / 결합성 낮음</td></tr><tr><td>제2정규형</td><td>부분함수 종속성 제거</td><td>-</td></tr><tr><td>제3정규형</td><td>이행함수 종속성 제거</td><td>-</td></tr><tr><td>BCNF정규형</td><td>결정자가 후보키가 아닌 함수종속 제거</td><td>-</td></tr><tr><td>제4정규형</td><td>다중값 종속성 제거</td><td>-</td></tr><tr><td>제5정규형</td><td>조인 종속성 제거</td><td>데이터 중복 낮음 / Join 많음 / 결합성 높음</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>절차</th><th>비고</th></tr></thead><tbody><tr><td>제1정규형</td><td>원자값이 아닌 도메인 분해</td><td>  데이터 중복 높음 / Join 적음 / 결합성 낮음</td></tr><tr><td>제2정규형</td><td>부분함수 종속성 제거</td><td>-</td></tr><tr><td>제3정규형</td><td>이행함수 종속성 제거</td><td>-</td></tr><tr><td>BCNF정규형</td><td>결정자가 후보키가 아닌 함수종속 제거</td><td>-</td></tr><tr><td>제4정규형</td><td>다중값 종속성 제거</td><td>-</td></tr><tr><td>제5정규형</td><td>조인 종속성 제거</td><td>데이터 중복 낮음 / Join 많음 / 결합성 높음</td></tr></tbody></table>
 <ul>
 <li>무손실 분해와 하수적 종속성 제거를 통한 이상현상 제거</li>
 </ul>
@@ -138,7 +138,7 @@
 <ul>
 <li>릴레이션의 데이터 중복관리로 인해 데이터 조작시 발생하는 의도치 않은 결과를 초래하는 비합리적 현상</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이상현상의-유형">이상현상의 유형<a class="hash-link" aria-label="이상현상의 유형에 대한 직접 링크" title="이상현상의 유형에 대한 직접 링크" href="/tags/pe/page/13/#이상현상의-유형">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="이상현상의-유형">이상현상의 유형<a class="hash-link" aria-label="이상현상의 유형에 대한 직접 링크" title="이  상현상의 유형에 대한 직접 링크" href="/tags/pe/page/13/#이상현상의-유형">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>Anomaly</th></tr></thead><tbody><tr><td>삽입이상</td><td>릴렐이션 내 하나의 튜플 삽입시 원하지 않은 추가 데이터 삽입</td><td>Insertion</td></tr><tr><td>삭제이상</td><td>릴레이션 내 하나의 튜플 삭제시 유지되어야할 정보까지 연쇄 삭제</td><td>Deletion</td></tr><tr><td>갱신이상</td><td>중복 튜플 중 일부를 업데이트할 때 정보의 모순성 발생</td><td>Update</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="정규화시-고려사항">정규화시 고려사항<a class="hash-link" aria-label="정규화시 고려사항에 대한 직접 링크" title="정규화시 고려사항에 대한 직접 링크" href="/tags/pe/page/13/#정규화시-고려사항">​</a></h2>
 <ul>
@@ -152,7 +152,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="상용sw-직접구매제도-적용대상">상용SW 직접구매제도 적용대상<a class="hash-link" aria-label="상용SW 직접구매제도 적용대상에 대한 직접 링크" title="상용SW 직접구매제도 적용대상에 대한 직접 링크" href="/tags/pe/page/13/#상용sw-직접구매제도-적용대상">​</a></h3>
 <!-- -->
 <blockquote>
-<p>3억 이상 -&gt; 조달청, 5천만원이상, 품질인증, 국정원</p>
+<p>3억 이상 -&gt; 조달청, 5천만원이상, 품질인  증, 국정원</p>
 </blockquote>
 <ul>
 <li>1차 조건 충족시, 2차 조건 중 하나라도 해당되는 경우 상용SW 직접구매 대상</li>
@@ -179,7 +179,7 @@
 <li>무결성 검증을 위해 키, 패스워드, 인증서를 안전하게 저장하기 위한 기능을 주로 하드웨어 기반으로 구현한 보안 암호화 프로세서</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="tpm의-구성도-구성요소-적용사례">TPM의 구성도, 구성요소, 적용사례<a class="hash-link" aria-label="TPM의 구성도, 구성요소, 적용사례에 대한 직접 링크" title="TPM의 구성도, 구성요소, 적용사례에 대한 직접 링크" href="/tags/pe/page/13/#tpm의-구성도-구성요소-적용사례">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tpm의-구성도">TPM의 구성도<a class="hash-link" aria-label="TPM의 구성도에 대한 직접 링크" title="TPM의 구성도에 대한 직접 링크" href="/tags/pe/page/13/#tpm의-구성도">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="tpm의-구성도">TPM의 구성도<a class="hash-link" aria-label="TPM의 구성도에 대한  직접 링크" title="TPM의 구성도에 대한 직접 링크" href="/tags/pe/page/13/#tpm의-구성도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="tpm의-구성요소">TPM의 구성요소<a class="hash-link" aria-label="TPM의 구성요소에 대한 직접 링크" title="TPM의 구성요소에 대한 직접 링크" href="/tags/pe/page/13/#tpm의-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>I/O 버퍼</td><td>입출력을 위한 버퍼</td><td>호스트 시스템 간 인터페이스</td></tr><tr><td>암호화 하위시스템</td><td>암호화 기능을 담당하는 하드웨어 모듈</td><td>RSA, HMAC, 해시, 서명 연산, 키 생성</td></tr><tr><td>인증 하위시스템</td><td>인증 기능을 담당하는 하드웨어 모듈</td><td>명령어 실행 전후 호출 권한 확인</td></tr><tr><td>랜덤 액세스 메모리</td><td>임시 데이터 저장을 위한 메모리</td><td>PCR, 객체, 세션</td></tr><tr><td>비휘발성 메모리</td><td>영구 데이터 저장을 위한 메모리</td><td>TPM 상태, 시드, 증명 값</td></tr><tr><td>전원 감지 모듈</td><td>전원 상태 모니터링 모듈</td><td>전원 변동시 적절한 조치 수행</td></tr></tbody></table>
@@ -201,7 +201,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="매터의-구성도">매터의 구성도<a class="hash-link" aria-label="매터의 구성도에 대한 직접 링크" title="매터의 구성도에 대한 직접 링크" href="/tags/pe/page/13/#매터의-구성도">​</a></h3>
 <table><thead><tr><th>프로토콜</th><th>레이어</th></tr></thead><tbody><tr><td>어플리케이션</td><td>어플리케이션</td></tr><tr><td>TCP, UDP</td><td>전송</td></tr><tr><td>IPv6</td><td>네트워크</td></tr><tr><td>Wifi / Ethernet / Thread(802.15.4)</td><td>물리, 데이터링크</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="매터의-구성요소">매터의 구성요소<a class="hash-link" aria-label="매터의 구성요소에 대한 직접 링크" title="매터의 구성요소에 대한 직접 링크" href="/tags/pe/page/13/#매터의-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>응용 계층</td><td>기기 간 데이터 교환 위한 프로토콜</td><td>데이터 모델</td></tr><tr><td>전송 계층</td><td>안정적 데이터 전송</td><td>TCP, UDP</td></tr><tr><td>네트워크 계층</td><td>All IP 기반 데이터 전달</td><td>IPv6</td></tr><tr><td>물리, 데이터링크</td><td>다양한 통신기술 지원, 저전력 통신</td><td>Wifi, Ethernet, Thread</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>응용 계층</td><td>기  기 간 데이터 교환 위한 프로토콜</td><td>데이터 모델</td></tr><tr><td>전송 계층</td><td>안정적 데이터 전송</td><td>TCP, UDP</td></tr><tr><td>네트워크 계층</td><td>All IP 기반 데이터 전달</td><td>IPv6</td></tr><tr><td>물리, 데이터링크</td><td>다양한 통신기술 지원, 저전력 통신</td><td>Wifi, Ethernet, Thread</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="매터와-기존-표준과의-비교">매터와 기존 표준과의 비교<a class="hash-link" aria-label="매터와 기존 표준과의 비교에 대한 직접 링크" title="매터와 기존 표준과의 비교에 대한 직접 링크" href="/tags/pe/page/13/#매터와-기존-표준과의-비교">​</a></h3>
 <table><thead><tr><th>구분</th><th>매터</th><th>기존 스마트홈</th></tr></thead><tbody><tr><td>상호운용성</td><td>높음</td><td>벤더별 상이</td></tr><tr><td>보안</td><td>표준화된 보안 프로토콜</td><td>다양성으로 인한 신뢰성 저하</td></tr><tr><td>확장성</td><td>높음</td><td>낮음</td></tr><tr><td>개방성</td><td>높음</td><td>낮음</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="매터-적용-사례">매터 적용 사례<a class="hash-link" aria-label="매터 적용 사례에 대한 직접 링크" title="매터 적용 사례에 대한 직접 링크" href="/tags/pe/page/13/#매터-적용-사례">​</a></h2>
