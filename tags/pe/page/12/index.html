@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.03d0a511.css">
-<script src="/assets/js/runtime~main.86357553.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d3e51e27.js" defer="defer"></script>
 <script src="/assets/js/main.0ed1a08e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -183,14 +183,17 @@
 <li>BASE 특성에 중점을 두어 트랜잭션 구현 및 관리 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>태그:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/tags/pe/">pe</a></li><li class="tag_ZSoL"><a class="tag__ULd tagRegular_Nz6R" href="/tags/pe-database/">pe/database</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/pe/db/concurrency-control/">병행제어</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-06-15T04:39:23.693Z">2024년 6월 15일</time> · <!-- -->약 3분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Eunkwang Shin</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어의-개념">병행제어의 개념<a class="hash-link" aria-label="병행제어의 개념에 대한 직접 링크" title="병행제어의 개념에 대한 직접 링크" href="/tags/pe/page/12/#병행제어의-개념">​</a></h2>
 <ul>
-<li>다수의 트랜잭션이 동일한 데이터에 동시에 접근하고자할 때, 각 트랜잭션이 독  립적으로 수행된 결과를 보장하는 기법</li>
+<li>다수의 트랜잭션이 동일한 데이터에 <mark class="flexible-marker flexible-marker-default">동  시에 접근</mark>하고자할 때, 각 <mark class="flexible-marker flexible-marker-default">트랜잭션이 독립적으로 수행된 결과를 보장</mark>하는 기법</li>
 <li>갱신손실, 연쇄복귀, 모순성 제거, 무결성 일관성 보장</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어-미수행시-문제점과-해결기법">병행제어 미수행시 문제점과 해결기법<a class="hash-link" aria-label="병행제어 미수행시 문제점과 해결기법에 대한 직접 링크" title="병행제어 미수행시 문제점과 해결기법에 대한 직접 링크" href="/tags/pe/page/12/#병행제어-미수행시-문제점과-해결기법">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어-미수행시-문제점">병행제어 미수행시 문제점<a class="hash-link" aria-label="병행제어 미수행시 문제점에 대한 직접 링크" title="병행제어 미수행시 문제점에 대한 직접 링크" href="/tags/pe/page/12/#병행제어-미수행시-문제점">​</a></h3>
-<table><thead><tr><th>문제</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>갱실분실</td><td>트랜잭션의 동일 데이터 동시 갱신시 발생</td><td>고립성 위배</td></tr><tr><td>불일치</td><td>다중 사용자 트랜잭션들이 동시 실행시 모순된 결과 반환</td><td>일관성, 고립성 위배</td></tr><tr><td>연쇄복귀</td><td>한 트랜잭션이 실패 후 롤백될 때 다른 트랜잭션 처리 취소 불가</td><td>일관성, 원자성 위배</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어-해결기법">병행제어 해결기법<a class="hash-link" aria-label="병행제어 해결기법에 대한 직접 링크" title="병행제어 해결기법에 대한 직접 링크" href="/tags/pe/page/12/#병행제어-해결기법">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Locking</td><td>트랜잭션 사용 자원에 대해 상호배제 기능 제공</td><td>DB락, Table락, Row락, Column락</td></tr><tr><td>2PL</td><td>모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행</td><td>직렬가능성 보장, 교착상태 예방필요</td></tr><tr><td>Timestamp</td><td>트랜잭션 입력시 Timestamp 시간 순으로 직렬화</td><td>직렬가능성 보장, 교착상태 방지</td></tr><tr><td>낙관적 기법</td><td>트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사</td><td>Read, Validate, Write 단계</td></tr><tr><td>다중버전 병행제어</td><td>여러 버전 저장 후 일관성이 보장된 트랜잭션 선택</td><td>동시성 우수, I/O오버헤드 증가</td></tr></tbody></table>
+<table><thead><tr><th>문제</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">갱실분실</mark></td><td>트랜잭션의 동일 데이터 동시 갱신시 발생</td><td>고립성 위배</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">불일치</mark></td><td>다중 사용자 트랜잭션들이 동시 실행시 모순된 결과 반환</td><td>일관성, 고립성 위배</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">연쇄복귀</mark></td><td>한 트랜잭션이 실패 후 롤백될 때 다른 트랜잭션 처리 취소 불가</td><td>일관성, 원자성 위배</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어-해결기법">병행제어 해결기법<a class="hash-link" aria-label="병행제어 해결기법에 대한 직접 링크" title="병행제어 해결기법에 대한 직접 링크" href="/tags/pe/page/12/#  병행제어-해결기법">​</a></h3>
+<blockquote>
+<p>그립 표현</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">Locking</mark></td><td>트랜잭션 사용 자원에 대해 상호배제 기능 제공</td><td>DB락, Table락, Row락, Column락</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">2PL</mark></td><td>모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행</td><td>직렬가능성 보장, 교착상태 예방필요</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Timestamp</mark></td><td>트랜잭션 입력시 Timestamp 시간 순으로 직렬화</td><td>직렬가능성 보장, 교착상태 방지</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">낙관적 기법</mark></td><td>트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사</td><td>Read, Validate, Write 단계</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">다중버전 병행제어</mark></td><td>여러 버전 저장 후 일관성이 보장된 트랜잭션 선택</td><td>동시성 우수, I/O오버헤드 증가</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="병행제어-고려사항">병행제어 고려사항<a class="hash-link" aria-label="병행제어 고려사항에 대한 직접 링크" title="병행제어 고려사항에 대한 직접 링크" href="/tags/pe/page/12/#병행제어-고려사항">​</a></h2>
 <ul>
 <li>분산 데이터베이스 시스템의 경우, NW 지연, 노드 장애 등 문제 발생을 대비하기 위해 2PL 기법 사용</li>
@@ -202,7 +205,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-base특성-유형">NoSQL의 BASE특성, 유형<a class="hash-link" aria-label="NoSQL의 BASE특성, 유형에 대한 직접 링크" title="NoSQL의 BASE특성, 유형에 대한 직접 링크" href="/tags/pe/page/12/#nosql의-base특성-유형">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-base-특성">NoSQL의 BASE 특성<a class="hash-link" aria-label="NoSQL의 BASE 특성에 대한 직접 링크" title="NoSQL의 BASE 특성에 대한 직접 링크" href="/tags/pe/page/12/#nosql의-base-특성">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Basically Available</td><td>시스템 장애에도 부분적으로 데이터 접근 가능</td><td>모든 요청 응답, 가용성 중시</td></tr><tr><td>Soft State</td><td>데이터 일관성이 즉시 보장되지 않음</td><td>최종적 일관성</td></tr><tr><td>Eventual Consistency</td><td>모든 복제물이 결국에는 동일한 상태로 수렴</td><td>일관성 완화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-유형">NoSQL의 유형<a class="hash-link" aria-label="NoSQL의 유형에 대 한 직접 링크" title="NoSQL의 유형에 대한 직접 링크" href="/tags/pe/page/12/#nosql의-유형">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-유형">NoSQL의 유형<a class="hash-link" aria-label="NoSQL의 유형에 대한 직접 링크" title="NoSQL의 유형에 대한 직접 링크" href="/tags/pe/page/12/#nosql의-유형">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Key-Value</td><td>키와 값의 간단한 쌍으로 저장, 빠른 조회 가능</td><td>Redis, DynamoDB</td></tr><tr><td>Column Family</td><td>열 기반 데이터 저장, 유연한 스키마</td><td>Cassandra, HBase</td></tr><tr><td>Document</td><td>JSON 문서 형식으로 저장, 빠른 조회 가능</td><td>MongoDB, CouchDB</td></tr><tr><td>Graph</td><td>노드와 간선으로 구성된 그래프 형식의 데이터베이스</td><td>Neo4j</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql의-cap-이론-유형">NoSQL의 CAP 이론, 유형<a class="hash-link" aria-label="NoSQL의 CAP 이론, 유형에 대한 직접 링크" title="NoSQL의 CAP 이론, 유형에 대한 직접 링크" href="/tags/pe/page/12/#nosql의-cap-이론-유형">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론">CAP 이론<a class="hash-link" aria-label="CAP 이론에 대한 직접 링크" title="CAP 이론에 대한 직접 링크" href="/tags/pe/page/12/#cap-이론">​</a></h3>
@@ -212,7 +215,7 @@
 <li>CAP 중 2가지만 만족 가능</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-유형">CAP 유형<a class="hash-link" aria-label="CAP 유형에 대한 직접 링크" title="CAP 유형에 대한 직접 링크" href="/tags/pe/page/12/#cap-유형">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>네트워크 분할시에도 일관성을 보장, 가용성 일 부 희생</td><td>HBase, MongoDB</td></tr><tr><td>A + P</td><td>네트워크 분할시에도 가용성을 보장, 일관성 일부 희생</td><td>CouchDB, DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할 발생하지 않는 상황에서 일관성과 가용성 모듀 우지</td><td>RDBMS</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>네트워크 분할시에도 일관성을 보장, 가용성 일부 희생</td><td>HBase, MongoDB</td></tr><tr><td>A + P</td><td>네트워크 분할시에도 가용성을 보장, 일관성 일부 희생</td><td>CouchDB, DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할 발생하지 않는 상황에서 일관성과 가용성 모듀 우지</td><td>RDBMS</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-모델링시-고려사항">NoSQL 모델링시 고려사항<a class="hash-link" aria-label="NoSQL 모델링시 고려사항에 대한 직접 링크" title="NoSQL 모델링시 고려사항에 대한 직접 링크" href="/tags/pe/page/12/#nosql-모델링시-고려사항">​</a></h2>
 <ul>
 <li>비정형 데이터를 저장해야하므로 도메인 모델링 후 쿼리 결과를 정의한 뒤 저장할 테이블 모델을 설계해야함.</li>
