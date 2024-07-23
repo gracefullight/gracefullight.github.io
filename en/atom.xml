@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-23T05:16:01.584Z</updated>
+    <updated>2024-07-23T05:59:13.237Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[엣지컴퓨팅]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/edge-computing/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/edge-computing/"/>
+        <updated>2024-07-23T05:59:13.237Z</updated>
+        <summary type="html"><![CDATA[Edge Computing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-개념">엣지컴퓨팅 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>데이터가 생성되는 위치 근처에서 데이터를 처리하고 저장하는 분산 컴퓨팅 모델</li>
+<li>빠른 응답속도, 대역폭 효율, 민감정보 로컬 처리로 인한 보안 강화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성도-구성요소-적용방안">엣지컴퓨팅 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성도">엣지컴퓨팅 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성요소">엣지컴퓨팅 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클라우드</td><td>대규모 데이터 저장, 분석</td><td>중앙 관리</td></tr><tr><td>엣지 노드</td><td>데이터 처리, 저장, 필터링</td><td>디바이스와 클라우드 간 데이터 중재</td></tr><tr><td>엣지 디바이스</td><td>데이터를 수집, 전송, 로컬 처리</td><td>IoT 디바이스, 스마트폰 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-적용방안">엣지컴퓨팅 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>자율주행차</td><td>센서, 데이터 실시간 처리</td><td>실시간 판단, 주행</td></tr><tr><td>스마트시티</td><td>교통, 안전, 에너지 실시간 분석</td><td>관리 효율성</td></tr><tr><td>헬스케어</td><td>환자 데이터 실시간 모니터링</td><td>원격 진료</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-장단점">엣지컴퓨팅 장단점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%9E%A5%EB%8B%A8%EC%A0%90">​</a></h2>
+<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>장점</td><td>대기시간 감소</td><td>-</td></tr><tr><td>-</td><td>비용절감</td><td>-</td></tr><tr><td>-</td><td>실시간 데이터 처리</td><td>-</td></tr><tr><td>단점</td><td>데이터 보안 문제</td><td>-</td></tr><tr><td>-</td><td>복잡한 아키텍처</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-고려사항">엣지컴퓨팅 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>매터 등 IoT 표준 프로토콜을 사용하여 확장성 대응</li>
+<li>분산 환경의 로컬 데이터 보안을 위해 E2E 암호화 필요</li>
+<li>탄소인지컴퓨팅 패러다임으로 데이터센터의 탄소 사용량을 절감하기 위해, 엣지컴퓨팅 활성화 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/conv" term="pe/conv"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MIV, MPEG Immersive Video]]></title>
         <id>https://gracefullight.dev/en/pe/conv/miv/</id>
@@ -23,7 +56,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EF%BF%BD%EF%BF%BD%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EF%BF%BD%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -52,7 +85,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성요소">CXL 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL.io</td><td>초기설정, 가상화, 장치 연결 등 입출력 프로토콜</td><td>PCIe 기반</td></tr><tr><td>CXL.cache</td><td>메모리 캐시 일관성 제공, CPU와 가속기 간의 빠른 데이터 전송 가능</td><td>낮은 지연, 고속 전송</td></tr><tr><td>CXL.mem</td><td>메모리 공유 및 풀링 기능 제공, 여러 장치 간의 메모리 자원 공유 가능</td><td>고대역폭 메모리 접근, 메모리 풀링</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%A0%81%EF%BF%BD%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>데이터 센터</td><td>고성능 컴퓨팅, AI 가속기와 CPU 간의 고속 데이터 전송</td><td>높은 대역폭과 낮은 지연 시간 요구 환경</td></tr><tr><td>클라우드 서비스</td><td>클라우드 기반의 자원 효율적인 데이터 처리, 메모리 풀링을 통한 자원 공유</td><td>유연한 자원 할당 및 확장성 제공</td></tr><tr><td>스토리지 시스템</td><td>고속 NVMe SSD와 CPU 간의 데이터 전송 최적화</td><td>데이터 액세스 속도 향상, 스토리지 병목 현상 해결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형-pcie-비교">CXL 유형, PCIe 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95-pcie-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형">CXL 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95">​</a></h3>
@@ -160,7 +193,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차-세부-내용">협상에 의한 계약체결 방식 절차, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-절차">협상에 의한 계약체결 방식 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EF%BF%BD%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="협상에-의한-계약체결-방식-세부-내용">협상에 의한 계약체결 방식 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>내용</th></tr></thead><tbody><tr><td>사업 발주</td><td>입찰 공고</td><td>사업명, 내용, 기간, 예산 명시</td></tr><tr><td>-</td><td>제안서 제출</td><td>과업 내용, 요구사항, 계약조건 명시</td></tr><tr><td>사업자 선정</td><td>제안서 평가</td><td>기술 능력과 입찰가 종합 평가</td></tr><tr><td>-</td><td>협상 적격자 선정</td><td>기술 능력 평가 고득점 순</td></tr><tr><td>-</td><td>협상</td><td>사업 내용, 이행 방법, 일정 협상</td></tr><tr><td>-</td><td>계약체결</td><td>협상 완료 후 10일 이내 체결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-산정방식">공공기관 정보시스템 구축업체 산정방식<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-정보시스템-구축업체-선정방식-관계도">공공기관 정보시스템 구축업체 선정방식 관계도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%98%91%EC%83%81%EC%97%90-%EC%9D%98%ED%95%9C-%EA%B3%84%EC%95%BD%EC%B2%B4%EA%B2%B0-%EB%B0%A9%EC%8B%9D/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EC%97%85%EC%B2%B4-%EC%84%A0%EC%A0%95%EB%B0%A9%EC%8B%9D-%EA%B4%80%EA%B3%84%EB%8F%84">​</a></h3>
@@ -264,38 +297,6 @@
 <ul>
 <li>전자정부에 대한 범국가적 관심 유도</li>
 <li>전자정부 선도국 위상에 걸맞는 국제사회 공헌활동 강화</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BSC, 균형성과기록표]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/bsc/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/bsc/"/>
-        <updated>2024-07-22T10:45:16.751Z</updated>
-        <summary type="html"><![CDATA[Balance Score Card]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-개념">BSC 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>기업 내 거버넌스 관점을 측정 가능한 핵심 성과지표로 전환하여 균형적인 경영 성과관리를 수행하는 성과관리기법</li>
-<li>균형 잡힌 성과 평가, 전략적 목표 달성, 지속가능한 성장, 책임성과 투명성 강화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성도-구성요소-it-bsc-비교">BSC 구성도, 구성요소, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-it-bsc-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성도">BSC 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<blockquote>
-<p>재고내학</p>
-</blockquote>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-구성요소">BSC 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>재무 관점</td><td>전통적 성과 측정 방식</td><td>매출액, 현금 흐름</td></tr><tr><td>내부 프로세스 관점</td><td>조직 내부 프로세스 최적화, 프로세스 향상 노력 성과화</td><td>생산 사이클시간, 단위원가</td></tr><tr><td>고객 관점</td><td>고객 충성도 제고, 만족도 향상</td><td>고객 만족도, 적시공급율</td></tr><tr><td>학습과 성장 관점</td><td>학습 노력과 역량증진을 성과화</td><td>종업원 만족도, 자격취득건수</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-it-bsc-비�교">BSC, IT-BSC 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-it-bsc-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>BSC</th><th>IT-BSC</th></tr></thead><tbody><tr><td>관점</td><td>재무, 고객, 내부프로세스, 학습과 성장</td><td>기업공헌도, 사용자 만족도, 운영 프로세스, 미래지향</td></tr><tr><td>목표</td><td>기업의 행동과 프로세스 변화</td><td>IT 가치전달 및 성과 달성</td></tr><tr><td>활동</td><td>비지니스 거버넌스</td><td>IT 거버넌스</td></tr><tr><td>적용분야</td><td>모든 비지니스 분야</td><td>IT 부서, IT 서비스 제공자</td></tr><tr><td>도입효과</td><td>조직 전반 성과 개선</td><td>IT 성과, 서비스 품질 향상</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bsc-고려사항">BSC 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/bsc/#bsc-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>IT 서비스 품질향상, 개발 생산성 향상을 지원하기 위해 IT-BSC 기법 활용 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
