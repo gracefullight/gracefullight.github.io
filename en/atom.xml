@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-23T05:59:13.237Z</updated>
+    <updated>2024-07-23T08:13:35.854Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[CRC, 순환중복검사]]></title>
+        <id>https://gracefullight.dev/en/pe/nw/crc/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/crc/"/>
+        <updated>2024-07-23T08:13:35.854Z</updated>
+        <summary type="html"><![CDATA[Cyclic Redundancy Check]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="crc-개념">CRC 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>데이터 전송시 무결성을 확인하기 위해 <mark class="flexible-marker flexible-marker-default">특정한 다항식</mark>으로 <mark class="flexible-marker flexible-marker-default">체크섬</mark>을 구하여 오류를 검출하는 방식</li>
+<li>데이터 전송 신뢰성 향상, 간단한 계산 속도 및 효율성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="crc-구성도-구성요소-적용방안">CRC 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="crc-구성도">CRC 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="crc-구성요소">CRC 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터</td><td>전송하거나 저장하려는 원본 데이터 블록</td><td>원본 데이터</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">생성 다항식</mark></td><td>오류 검출을 위한 기준 다항식</td><td>CRC 생성 기준</td></tr><tr><td>CRC 계산기</td><td>데이터 블록에 대해 CRC 값을 계산하는 알고리즘</td><td>하드웨어 또는 소프트웨어</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">코드워드</mark></td><td>원본 데이터에 CRC 값을 추가한 최종 데이터 블록</td><td>전송 또는 저장될 데이터</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="crc-적용방안">CRC 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>네트워크 통신</td><td>TCP/IP, Ethernet 등에서 데이터 패킷의 무결성을 확인</td><td>다양한 통신 프로토콜에 사용</td></tr><tr><td>저장 장치</td><td>하드 드라이브, SSD, CD/DVD 등에서 데이터 무결성 보장</td><td>저장된 데이터의 오류 검출</td></tr><tr><td>파일 전송</td><td>FTP에서 데이터 전송 중 발생할 수 있는 오류를 검출</td><td>파일 전송 프로토콜에 적용</td></tr><tr><td>임베디드 시스템</td><td>마이크로컨트롤러 등에서 데이터 전송 무결성 확인</td><td>내장형 시스템의 데이터 통신 신뢰성 보장</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="crc-고려사항">CRC 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/crc/#crc-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>CRC-32 등 표준 다항식 사용으로 안전성, 상호 운용성 확보</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/nw" term="pe/nw"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[엣지컴퓨팅]]></title>
         <id>https://gracefullight.dev/en/pe/conv/edge-computing/</id>
@@ -56,7 +85,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EF%BF%BD%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -269,34 +298,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="mece-분석-시-고려사항">MECE 분석 시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/mece/#mece-%EB%B6%84%EC%84%9D-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>MECE는 완벽한 답을 찾는 것이 아니라, 문제 해결을 위한 사고 프레임워크를 제공함으로 상황에 따라 효과적으로 활용해야함</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[EGDI, 전자정부 발전지수]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/egdi/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/egdi/"/>
-        <updated>2024-07-22T10:53:43.327Z</updated>
-        <summary type="html"><![CDATA[E-Government Development Index]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="전자정부-발전지수-개념">전자정부 발전지수 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/egdi/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EB%B0%9C%EC%A0%84%EC%A7%80%EC%88%98-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>UN에서 발표하는 각 국의 전자정부서비스 제공 능력, ICT 인프라 수준, 인적자본의 지적 능력을 종합 평가하여 전자정부의 전반적 발전 수준을 나타내는 수치</li>
-<li>각 국의 발전현황 파악, 우수 사례 공유, 정부정책 참여강화, 국제 협력 추진</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="전자정부-발전지수-구성도-구성요소">전자정부 발전지수 구성도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/egdi/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EB%B0%9C%EC%A0%84%EC%A7%80%EC%88%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="전자정부-발전지수-구성도">전자정부 발전지수 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/egdi/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EB%B0%9C%EC%A0%84%EC%A7%80%EC%88%98-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="전자정부-발전지수-구성요소">전자정부 발전지수 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/egdi/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EB%B0%9C%EC%A0%84%EC%A7%80%EC%88%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>온라인 서비스 지수</td><td>정부 웹사이트를 통한 서비스 제공수준 평가</td><td>서비스 범위, 품질, 편의성</td></tr><tr><td>통신 기반시설 지수</td><td>전자정부의 선행 조건인 통신 인프라 수준 평가</td><td>인터넷이용자 수, 모바일가입자 수</td></tr><tr><td>인적자본 지수</td><td>전자정부 이용 일반 국민의 교육 수준 평가</td><td>성인문해율, 취학률, 교육기관</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="전자정부-고려사항">전자정부 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/egdi/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>전자정부에 대한 범국가적 관심 유도</li>
-<li>전자정부 선도국 위상에 걸맞는 국제사회 공헌활동 강화</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
