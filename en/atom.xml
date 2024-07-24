@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-24T05:21:28.070Z</updated>
+    <updated>2024-07-24T07:25:43.338Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[BCP, 비지니스 연속성 계획]]></title>
+        <id>https://gracefullight.dev/en/pe/sec/bcp/</id>
+        <link href="https://gracefullight.dev/en/pe/sec/bcp/"/>
+        <updated>2024-07-24T07:25:43.338Z</updated>
+        <summary type="html"><![CDATA[Business Continuity Planning]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념">BCP 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>재해나 위기 상황에서 조직의 핵심 비즈니스 기능이 지속될 수 있도록 마련된 계획으로 IT 복구뿐만 아니라, 전체 비즈니스 프로세스의 복원 목표</li>
+<li>비지니스 연속성 보장, 법적 규제 준수, 고객 신뢰성 확보, 재무 손실 최소화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도-구성요소-절차">BCP 개념도, 구성요소, 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도">BCP 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-구성요소">BCP 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>종류</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>재해복구</td><td>IT 시스템과 데이터 복구 계획, 시스템 중단 시 신속한 복구 목표</td><td>데이터 백업 및 복구 절차</td></tr><tr><td>업무복구</td><td>비즈니스 프로세스 복원 계획, 핵심 업무 프로세스가 중단 방지</td><td>핵심 업무 기능 복구 절차 및 우선순위 설정</td></tr><tr><td>업무재개</td><td>중단된 업무의 재개를 위한 구체적인 절차, 계획</td><td>대체 프로세스, 임시 운영 절차</td></tr><tr><td>비상계획</td><td>비상 상황에 대한 대비와 대응 계획, 예상치 못한 사건에 대한 대응</td><td>위기 관리 팀 구성, 대응 매뉴얼 마련</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bia-절차">BIA 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bia-%EC%A0%88%EC%B0%A8">​</a></h2>
+<blockquote>
+<p>Business Impact Analysis</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>주요 업무 식별</td><td>비즈니스 운영에 필수적인 핵심 업무 프로세스 식별</td><td>조직의 가치 사슬 분석</td></tr><tr><td>재해 유형 분석</td><td>재해의 유형과 발생 가능성을 분석, 비즈니스 영향 평가</td><td>FMEA</td></tr><tr><td>손실 평가</td><td>재해 발생 시 예상되는 재무적, 운영적 손실 평가</td><td>재무적, 운영적, 법적 손실 평가 기준 설정</td></tr><tr><td>우선순위 설정</td><td>복구 대상의 우선순위를 설정하고, 복구 순서 결정</td><td>RTO, RPO 목표 설정</td></tr><tr><td>복구 목표 설정</td><td>서비스 재개 시간, 데이터 손실 허용 시간 설정</td><td>RTO: 2h, RPO: 0</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-성공-포인트">BCP 성공 포인트<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EC%84%B1%EA%B3%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8">​</a></h2>
+<ul>
+<li>정기적인 훈련과 모의 테스트를 통한 실전 대응 능력 향상</li>
+<li>Third Party Risk Management 전략 수립</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ISO 14000]]></title>
         <id>https://gracefullight.dev/en/pe/mng/iso-14000/</id>
@@ -119,7 +152,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EA%B3%A0-%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>샤딩</th><th>파티셔닝</th></tr></thead><tbody><tr><td>목적</td><td>데이터 분산저장, 고가용성, 성능</td><td>데이터 관리용이, 성능</td></tr><tr><td>분할방법</td><td>수평분할</td><td>수평, 수직분할</td></tr><tr><td>분할관점</td><td>테이블을 여러 DB로 분할</td><td>하나의 DB에서 테이블 분할</td></tr><tr><td>관리노드</td><td>샤드간 라우팅 수행용 마스터</td><td>마스터노드 없음</td></tr><tr><td>테이블연동</td><td>분할 테이블 간 조인 불가</td><td>테이블 간 조인 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="주요-데이터베이�스-분할-기법">주요 데이터베이스 분할 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="주요-데이터베�이스-분할-기법">주요 데이터베이스 분할 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도-세부절차">데이터베이스 분할 절차도, 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도">데이터베이스 분할 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
@@ -304,34 +337,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[뮤테이션 테스트]]></title>
-        <id>https://gracefullight.dev/en/pe/sw/mutation-test/</id>
-        <link href="https://gracefullight.dev/en/pe/sw/mutation-test/"/>
-        <updated>2024-07-23T09:49:39.725Z</updated>
-        <summary type="html"><![CDATA[Mutation Test]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-개념">뮤테이션 테스트 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>소스 <mark class="flexible-marker flexible-marker-default">코드의 일부를 의도적으로 변경</mark>하여 테스트 케이스가 이 <mark class="flexible-marker flexible-marker-default">변경된 코드를 검출할 수 있는지 확인</mark>하는 화이트박스 테스트 기법</li>
-<li>테스트 케이스 유효성 검증, 코드 품질 향상, 테스트 커버리지 보완, 버그 발견</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성도-구성요소-적용방안">뮤테이션 테스트 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성도">뮤테이션 테스트 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성요소">뮤테이션 테스트 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원본 코드</td><td>테스트할 소스 코드</td><td>소프트웨어의 실제 기능을 수행하는 코드</td></tr><tr><td>뮤턴트</td><td>원본 코드를 변형하여 만든 코드</td><td>의도적으로 결함을 삽입한 코드</td></tr><tr><td>테스트 케이스</td><td>원본 코드와 뮤턴트를 검증하기 위한 테스트 시나리오</td><td>다양한 상황을 가정하여 작성된 테스트</td></tr><tr><td>킬드 뮤턴트</td><td>테스트 케이스가 검출한 뮤턴트</td><td>뮤턴트를 정확히 찾아내는 테스트 케이스</td></tr><tr><td>라이브 뮤턴트</td><td>테스트 케이스가 검출하지 못한 뮤턴트</td><td>테스트 케이스의 수정이 필요</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-오퍼레이터">뮤테이션 테스트 오퍼레이터<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%98%A4%ED%8D%BC%EB%A0%88%EC%9D%B4%ED%84%B0">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>연산자 교체</td><td>코드 내의 연산자를 다른 연산자로 교체</td><td><code>+</code>를 <code>-</code>로, <code>&gt;</code>를 <code>&lt;</code>로 변경</td></tr><tr><td>상수 값 변경</td><td>코드 내의 상수 값을 다른 값으로 변경</td><td><code>int x = 5;</code>를 <code>int x = 10;</code>으로 변경</td></tr><tr><td>조건문 변경</td><td>조건문의 논리적 또는 비교 연산자를 변경</td><td><code>if (a &gt; b)</code>를 <code>if (a &lt; b)</code>로 변경</td></tr><tr><td>논리적 연산자 변경</td><td>논리적 연산자를 다른 연산자로 교체</td><td><code>and</code>를 <code>or</code>로 변경</td></tr><tr><td>제어 구조 변경</td><td>루프나 조건문 등의 제어 구조를 변경</td><td><code>for</code> 루프를 <code>while</code> 루프로 변경</td></tr><tr><td>문장 삭제</td><td>코드의 특정 문장을 삭제</td><td>변수 할당 문장 또는 조건문 삭제</td></tr><tr><td>반환 값 변경</td><td>메서드의 반환 값을 다른 값으로 변경</td><td><code>return x;</code>를 <code>return -x;</code>로 변경</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트시-고려사항">뮤테이션 테스트시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sw/mutation-test/#%EB%AE%A4%ED%85%8C%EC%9D%B4%EC%85%98-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h3>
-<ul>
-<li>많은 뮤턴트 생성으로 인한 높은 컴퓨팅 자원과 결과해석에 대한 인적 리소스 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/software-engineering" term="pe/software-engineering"/>
     </entry>
 </feed>
