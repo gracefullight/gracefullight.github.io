@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 24 Jul 2024 02:24:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Jul 2024 02:33:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[샤딩, 파티셔닝]]></title>
+            <link>https://gracefullight.dev/pe/db/sharding-partitioning/</link>
+            <guid>https://gracefullight.dev/pe/db/sharding-partitioning/</guid>
+            <pubDate>Wed, 24 Jul 2024 02:33:02 GMT</pubDate>
+            <description><![CDATA[Sharding and Partitioning]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-개념">샤딩, 파티셔닝 개념<a class="hash-link" aria-label="샤딩, 파티셔닝 개념에 대한 직접 링크" title="샤딩, 파티셔닝 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B0%9C%EB%85%90">​</a></h2>
+<!-- -->
+<ul>
+<li>파티셔닝: 큰 테이블을 관리하기 쉬운 단위로 분할하는 기법</li>
+<li>샤딩: 테이블을 분리하여 다수의 물리DB서버에 분산 저장하는 기법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법<a class="hash-link" aria-label="샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법에 대한 직접 링크" title="샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EA%B3%A0-%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a class="hash-link" aria-label="샤딩, 파티셔닝 구성요소 비교에 대한 직접 링크" title="샤딩, 파티셔닝 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>샤딩</th><th>파티셔닝</th></tr></thead><tbody><tr><td>목적</td><td>데이터 분산저장, 고가용성, 성능</td><td>데이터 관리용이, 성능</td></tr><tr><td>분할방법</td><td>수평분할</td><td>수평, 수직분할</td></tr><tr><td>분할관점</td><td>테이블을 여러 DB로 분할</td><td>하나의 DB에서 테이블 분할</td></tr><tr><td>관리노드</td><td>샤드간 라우팅 수행용 마스터</td><td>마스터노드 없음</td></tr><tr><td>테이블연동</td><td>분할 테이블 간 조인 불가</td><td>테이블 간 조인 가능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="주요-데이터베이스-분할-기법">주요 데이터베이스 분할 기법<a class="hash-link" aria-label="주요 데이터베이스 분할 기법에 대한 직접 링크" title="주요 데이터베이스 분할 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도-세부절차">데이터베이스 분할 절차도, 세부절차<a class="hash-link" aria-label="데이터베이스 분할 절차도, 세부절차에 대한 직접 링크" title="데이터베이스 분할 절차도, 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도">데이터베이스 분할 절차도<a class="hash-link" aria-label="데이터베이스 분할 절차도에 대한 직접 링크" title="데이터베이스 분할 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-�분할-세부절자">데이터베이스 분할 세부절자<a class="hash-link" aria-label="데이터베이스 분할 세부절자에 대한 직접 링크" title="데이터베이스 분할 세부절자에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%9E%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 분할 필요성 증가</td><td>-</td><td>-</td></tr><tr><td>2. 분할 방법 결정</td><td>-</td><td>-</td></tr><tr><td>3. AS-IS 성능 측정</td><td>-</td><td>-</td></tr><tr><td>4. 분할 적용, 이관</td><td>-</td><td>-</td></tr><tr><td>5. 어플리케이션 수정</td><td>-</td><td>-</td></tr><tr><td>6. 테스트, 모니터링</td><td>-</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="데이터베이스 분할시 고려사항에 대한 직접 링크" title="데이터베이스 분할시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>수평적 확장이 핑료한 대규모 데이터 분할시 샤딩 고려</li>
+<li>특정 액세스 패턴 최적화시 파티셔닝 고려</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/db</category>
+        </item>
         <item>
             <title><![CDATA[데이터베이스 옵티마이저]]></title>
             <link>https://gracefullight.dev/pe/db/database-optimizer/</link>
@@ -84,7 +114,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-유형-보장방법-적용방안">무결성 유형, 보장방법, 적용방안<a class="hash-link" aria-label="무결성 유형, 보장방법, 적용방안에 대한 직접 링크" title="무결성 유형, 보장방법, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%9C%A0%ED%98%95-%EB%B3%B4%EC%9E%A5%EB%B0%A9%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-유형">무결성 유형<a class="hash-link" aria-label="무결성 유형에 대한 직접 링크" title="무결성 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%9C%A0%ED%98%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개체무결성</td><td>각 행을 구분하는 유일한 식별자</td><td>기본키 사용</td></tr><tr><td>참조무결성</td><td>외래키는 참조 테이블의 기본키와 일치</td><td>외래키 사용</td></tr><tr><td>도메인무결성</td><td>각 열의 값이 속성에 정의된 도메인 값</td><td>데이터 형식, 범위 제한</td></tr><tr><td>사용자정의무결성</td><td>비지니스 규칙에 따라 사용자 정의</td><td>트리거, 프로시저</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-보장방법">무결성 보장방법<a class="hash-link" aria-label="무결성 보장방법에 대한 직접 링크" title="무결성 보장방법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EB%B3%B4%EC%9E%A5%EB%B0%A9%EB%B2%95">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-보장방법">무결성 보장방법<a class="hash-link" aria-label="무결성 보장방법에 대한 직접 링크" title="무결성 보장방법에 ��대한 직접 링크" href="https://gracefullight.dev/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EB%B3%B4%EC%9E%A5%EB%B0%A9%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>응용프로그램</td><td>무결성 조건 코드 추가</td><td>프로그램상 구현</td></tr><tr><td>DB 트리거</td><td>Stored Procedure 활용 데이터 변경시 제약 추가</td><td>복잡한 요구 구현</td></tr><tr><td>제약조건</td><td>스키마에 제약조건 설정</td><td>변경 용이, 쉬운 구현</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-적용방안">무결성 적용방안<a class="hash-link" aria-label="무결성 적용방안에 대한 직접 링크" title="무결성 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 모델링</td><td>모델링시 무결성 유형 고려 정의</td><td>무결성 확보 설계</td></tr><tr><td>데이터 설계</td><td>테이블 생성시 제약조건, 트리거 설정</td><td>DBMS 기능 활용</td></tr><tr><td>응용프로그램 개발</td><td>데이터 입력, 수정, 삭제시 무결성 검사</td><td>입력 데이터 검증</td></tr><tr><td>운영, 유지보수</td><td>주기적인 데이터 값 프로파일링</td><td>진단 및 조치</td></tr></tbody></table>
@@ -109,7 +139,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-절차도-세부절차-프로파일링-기법">데이터 마이그레이션 절차도, 세부절차, 프로파일링 기법<a class="hash-link" aria-label="데이터 마이그레이션 절차도, 세부절차, 프로파일링 기법에 대한 직접 링크" title="데이터 마이그레이션 절차도, 세부절차, 프로파일링 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-migration/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81-%EA%B8%B0%EB%B2%95">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-절차도">데이터 마이그레이션 절차도<a class="hash-link" aria-label="데이터 마이그레이션 절차도에 대한 직접 링크" title="데이터 마이그레이션 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-migration/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-세부절차">데이터 마이그레이션 세부절차<a class="hash-link" aria-label="데이터 마이그레이션 세부절차에 대한 직접 링크" title="데이터 마이그레이션 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-migration/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-��세부절차">데이터 마이그레이션 세부절차<a class="hash-link" aria-label="데이터 마이그레이션 세부절차에 대한 직접 링크" title="데이터 마이그레이션 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-migration/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 계획 수립</td><td>마이그레이션 범위, 목표 정의</td><td>리소스 할당, 일정 계획</td></tr><tr><td>2. 데이터 프로파일링</td><td>데이터 품질 및 구조 분석</td><td>AS-IS시스템 품질 관리</td></tr><tr><td>3. 데이터 변환</td><td>소스 데이터를 타겟 데이터 포맷으로 변환</td><td>매핑 테이블 등</td></tr><tr><td>4. 데이터 로드</td><td>변환된 데이터를 타겟 시스템으로 로드</td><td>롤백 전략 수립</td></tr><tr><td>5. 검증 테스트</td><td>마이그레이션 데이터 검증 및 테스트</td><td>데이터 무결성 확인</td></tr><tr><td>6. 시스템 전환</td><td>새 시스템으로 운영 전환</td><td>사용자 교육, 모니터링</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-값-진단-프로파일링-기법">데이터 값 진단 프로파일링 기법<a class="hash-link" aria-label="데이터 값 진단 프로파일링 기법에 대한 직접 링크" title="데이터 값 진단 프로파일링 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-migration/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B0%92-%EC%A7%84%EB%8B%A8-%ED%94%84%EB%A1%9C%ED%8C%8C%EC%9D%BC%EB%A7%81-%EA%B8%B0%EB%B2%95">​</a></h3>
 <table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>기초 데이터 분석</td><td>컬럼 속성 분석</td><td>메타데이터 정합성 확인</td></tr><tr><td>컬럼 값 분석</td><td>누락 값 분석</td><td>필수 값이지만 누락 데이터 확인</td></tr><tr><td>-</td><td>값 허용범위 분석</td><td>컬럼 속성 범위 내 값 확인</td></tr><tr><td>-</td><td>허용 값 목록 분석</td><td>컬럼 허용 값 목록, 집합 확인</td></tr><tr><td>-</td><td>문자열 패턴 분석</td><td>문자열 반복시 특성 확인</td></tr><tr><td>-</td><td>날짜 유형 분석</td><td>날짜 포맷, 범위 확인</td></tr><tr><td>-</td><td>특수 도메인 분석</td><td>주민번호, ISBN 등 특정 패턴 확인</td></tr><tr><td>-</td><td>유일값 분석</td><td>유일 컬럼 중복값 확인</td></tr></tbody></table>
@@ -145,7 +175,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형-구성요소">데이터 품질관리 성숙모형, 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형">데이터 품질관리 성숙모형<a class="hash-link" aria-label="데이터 품질관리 성숙모형에 대한 직접 링크" title="데이터 품질관리 성숙모형에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙도-��구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙도-구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 픔질기준</td><td>데이터 품질 정의</td><td>데이터 유효성, 데이터 활용성</td></tr><tr><td>품질관리 프로세스</td><td>데이터 품질기준 향상을 위한 필요 프로세스</td><td>요구사항 관리, 데이터 구조 관리, 데이터 흐름관리, DB관리, 표준 관리</td></tr><tr><td>품질관리 성숙수준</td><td>현재 수준 파악 후 5단계 개선 모형 정의</td><td>도입, 정형화, 통합화, 정량화, 최적화</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙-수준">데이터 품질관리 성숙 수준<a class="hash-link" aria-label="데이터 품질관리 성숙 수준에 대한 직접 링크" title="데이터 품질관리 성숙 수준에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99-%EC%88%98%EC%A4%80">​</a></h2>
 <blockquote>
@@ -258,36 +288,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/conv</category>
-        </item>
-        <item>
-            <title><![CDATA[CXL, Compute Express Link]]></title>
-            <link>https://gracefullight.dev/pe/ca/cxl/</link>
-            <guid>https://gracefullight.dev/pe/ca/cxl/</guid>
-            <pubDate>Tue, 23 Jul 2024 02:08:42 GMT</pubDate>
-            <description><![CDATA[Compute Express Link]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-개념">CXL 개념<a class="hash-link" aria-label="CXL 개념에 대한 직접 링크" title="CXL 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>프로세서와 메모리 사이의 고속, 고용량 연결의 위한 개방형 표준 인터페이스</li>
-<li>PCIe 인터페이스의 메모리 일관성과 공유 기능 부족, 고성능, 저지연 데이터 전송과 메모리 일관성 제공, 효율성 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성도-구성요소-적용사례">CXL 구성도, 구성요소, 적용사례<a class="hash-link" aria-label="CXL 구성도, 구성요소, 적용사례에 대한 직접 링크" title="CXL 구성도, 구성요소, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성도">CXL 구성도<a class="hash-link" aria-label="CXL 구성도에 대한 직접 링크" title="CXL 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-구성요소">CXL 구성요소<a class="hash-link" aria-label="CXL 구성요소에 대한 직접 링크" title="CXL 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL.io</td><td>초기설정, 가상화, 장치 연결 등 입출력 프로토콜</td><td>PCIe 기반</td></tr><tr><td>CXL.cache</td><td>메모리 캐시 일관성 제공, CPU와 가속기 간의 빠른 데이터 전송 가능</td><td>낮은 지연, 고속 전송</td></tr><tr><td>CXL.mem</td><td>메모리 공유 및 풀링 기능 제공, 여러 장치 간의 메모리 자원 공유 가능</td><td>고대역폭 메모리 접근, 메모리 풀링</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-적용사례">CXL 적용사례<a class="hash-link" aria-label="CXL 적용사례에 대한 직접 링크" title="CXL 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>데이터 센터</td><td>고성능 컴퓨팅, AI 가속기와 CPU 간의 고속 데이터 전송</td><td>높은 대역폭과 낮은 지연 시간 요구 환경</td></tr><tr><td>클라우드 서비스</td><td>클라우드 기반의 자원 효율적인 데이터 처리, 메모리 풀링을 통한 자원 공유</td><td>유연한 자원 할당 및 확장성 제공</td></tr><tr><td>스토리지 시스템</td><td>고속 NVMe SSD와 CPU 간의 데이터 전송 최적화</td><td>데이터 액세스 속도 향상, 스토리지 병목 현상 해결</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형-pcie-비교">CXL 유형, PCIe 비교<a class="hash-link" aria-label="CXL 유형, PCIe 비교에 대한 직접 링크" title="CXL 유형, PCIe 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95-pcie-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-유형">CXL 유형<a class="hash-link" aria-label="CXL 유형에 대한 직접 링크" title="CXL 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CXL Type 1</td><td>메모리 일관성 없이 I/O 가속기를 연결하여 고속 데이터 전송을 지원</td><td>단순 I/O 연결, 낮은 지연 시간</td></tr><tr><td>CXL Type 2</td><td>메모리 일관성을 유지하며 CPU와 가속기 간의 데이터 전송을 지원</td><td>CPU와 가속기 간의 일관성 유지</td></tr><tr><td>CXL Type 3</td><td>메모리 풀링을 통해 여러 장치 간의 메모리 자원을 공유하고 관리</td><td>메모리 공유 및 풀링 기능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-pcie-비교">CXL PCIe 비교<a class="hash-link" aria-label="CXL PCIe 비교에 대한 직접 링크" title="CXL PCIe 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-pcie-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>PCIe</th><th>CXL</th></tr></thead><tbody><tr><td>기능</td><td>데이터 전송, I/O 장치 연결</td><td>데이터 전송, 메모리 일관성, 메모리 공유</td></tr><tr><td>지연 시간</td><td>낮은 지연 시간</td><td>매우 낮은 지연 시간</td></tr><tr><td>호환성</td><td>다양한 I/O 장치와 호환</td><td>PCIe와 호환되며, 추가 메모리 및 가속기와도 호환</td></tr><tr><td>메모리 일관성</td><td>없음</td><td>보장</td></tr><tr><td>메모리 공유</td><td>없음</td><td>메모리 풀링 및 자원 공유 가능</td></tr><tr><td>주요 사용처</td><td>일반적인 컴퓨터 및 서버의 I/O 장치 연결</td><td>데이터 센터, 고성능 컴퓨팅, 클라우드 컴퓨팅</td></tr><tr><td>버전</td><td>PCIe 5.0</td><td>CXL 3.0</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cxl-고려사항">CXL 고려사항<a class="hash-link" aria-label="CXL 고려사항에 대한 직접 링크" title="CXL 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/cxl/#cxl-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>다양한 벤더의 하드웨어 간의 호환성 확보 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/ca</category>
         </item>
     </channel>
 </rss>
