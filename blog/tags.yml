@@ -1,0 +1,40 @@
+pe:
+  label: "pe"
+  permalink: "/pe"
+  description: "기술사 관련 포스트"
+pe/algo:
+  label: "pe/algorithm"
+  permalink: "/pe/algo"
+  description: "기술사 알고리즘, 인공지능 토픽"
+pe/ca:
+  label: "pe/computer-architecture"
+  permalink: "/pe/ca"
+  description: "기술사 컴퓨터 아키텍처 토픽"
+pe/conv:
+  label: "pe/it-convergence"
+  permalink: "/pe/conv"
+  description: "기술사 융합IT 토픽"
+pe/db:
+  label: "pe/database"
+  permalink: "/pe/db"
+  description: "기술사 데이터베이스 토픽"
+pe/mng:
+  label: "pe/it-management"
+  permalink: "/pe/mng"
+  description: "기술사 IT경영 토픽"
+pe/pm:
+  label: "pe/project-management"
+  permalink: "/pe/pm"
+  description: "기술사 프로젝트관리 토픽"
+pe/nw:
+  label: "pe/network"
+  permalink: "/pe/nw"
+  description: "기술사 네트워크 토픽"
+pe/sec:
+  label: "pe/security"
+  permalink: "/pe/sec"
+  description: "기술사 보안 토픽"
+pe/sw:
+  label: "pe/software-engineering"
+  permalink: "/pe/sw"
+  description: "기술사 소프트웨어공학 토픽"
