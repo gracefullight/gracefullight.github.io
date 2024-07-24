@@ -29,6 +29,7 @@ graph LR
   subgraph 튜닝수행[튜닝 수행]
     설계내용튜닝
     SQL튜닝
+  end
 
   subgraph 결과평가
     TO-BE성능비교
