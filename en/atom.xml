@@ -2,11 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-24T02:33:02.391Z</updated>
+    <updated>2024-07-24T03:20:57.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[pe/db/cap-pacelc]]></title>
+        <id>https://gracefullight.dev/en/pe/db/cap-pacelc/</id>
+        <link href="https://gracefullight.dev/en/pe/db/cap-pacelc/"/>
+        <updated>2024-07-24T03:20:57.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[샤딩, 파티셔닝]]></title>
         <id>https://gracefullight.dev/en/pe/db/sharding-partitioning/</id>
@@ -29,7 +35,11 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-세부절자">데이터베이스 분할 세부절자<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%9E%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 분할 필요성 증가</td><td>-</td><td>-</td></tr><tr><td>2. 분할 방법 결정</td><td>-</td><td>-</td></tr><tr><td>3. AS-IS 성능 측정</td><td>-</td><td>-</td></tr><tr><td>4. 분할 적용, 이관</td><td>-</td><td>-</td></tr><tr><td>5. 어플리케이션 수정</td><td>-</td><td>-</td></tr><tr><td>6. 테스트, 모니터링</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>수평적 확장이 핑료한 대규모 데이터 분할시 샤딩 고려</li>
+<li>특정 액세스 패턴 최적화시 파티셔닝 고려</li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
@@ -287,35 +297,6 @@
 <li>매터 등 IoT 표준 프로토콜을 사용하여 확장성 대응</li>
 <li>분산 환경의 로컬 데이터 보안을 위해 E2E 암호화 필요</li>
 <li>탄소인지컴퓨팅 패러다임으로 데이터센터의 탄소 사용량을 절감하기 위해, 엣지컴퓨팅 활성화 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/conv" term="pe/conv"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MIV, MPEG Immersive Video]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/miv/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/miv/"/>
-        <updated>2024-07-23T05:16:01.584Z</updated>
-        <summary type="html"><![CDATA[MPEG Immersive Video]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-개념">MIV 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>다수의 카메라로 3D 캡쳐한 영상을 6DoF지원하여 압축하는 비디오 압축 표준</li>
-<li>VR, AR 등 몰입형 미디어에 대한 압축 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성도-구성요소-적용방안">MIV 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성도">MIV 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>압축 기술 뿐아니라 5G 네트워크를 통해 데이터를 1Gbps 이상으로 송신 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
