@@ -5,7 +5,7 @@ description: Performance Test
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/sw 
 ---
 
 ## 성능테스트의 개념

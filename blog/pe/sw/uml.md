@@ -5,7 +5,7 @@ description: UML
 authors: me
 tags: 
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## UML 개념

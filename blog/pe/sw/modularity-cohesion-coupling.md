@@ -5,7 +5,7 @@ description: 모듈화 및 응집도 결합도 비교
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 128

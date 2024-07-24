@@ -5,7 +5,7 @@ description: Structured and agile development methodology
 authors: me
 tags: 
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 구조적 방법론, 애자일 방법론 개념

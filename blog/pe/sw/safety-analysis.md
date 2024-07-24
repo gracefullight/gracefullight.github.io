@@ -5,7 +5,7 @@ description: 소프트 웨어 안정성 분석 필요성 및 기법
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 131

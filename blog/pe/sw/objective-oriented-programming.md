@@ -5,7 +5,7 @@ description: Objective Oriented Programming
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 객체지향방법론의 개념

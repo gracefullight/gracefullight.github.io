@@ -5,7 +5,7 @@ description: White box test, Black box test
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 129

@@ -5,7 +5,7 @@ description: Cost Benefit Analysis Method
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 128

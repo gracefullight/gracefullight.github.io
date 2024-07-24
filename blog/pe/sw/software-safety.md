@@ -5,7 +5,7 @@ description: Software Safety
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/sw 
 ---
 
 ## 소프트웨어 안전관리 개념

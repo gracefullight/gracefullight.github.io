@@ -5,7 +5,7 @@ description: Micro Service Architecture, Monolithic Architecture
 authors: me
 tags: 
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## MSA, 모놀리틱 아키텍처 개념

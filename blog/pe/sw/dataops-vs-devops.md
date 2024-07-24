@@ -5,7 +5,7 @@ description: DataOps, DevOps
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 130

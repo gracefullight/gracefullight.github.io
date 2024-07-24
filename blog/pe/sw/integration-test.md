@@ -5,7 +5,7 @@ description: 통합테스트
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 131/3/3

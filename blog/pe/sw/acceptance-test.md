@@ -5,7 +5,7 @@ description: Acceptance test, Alpha test, Beta test
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/sw 
 ---
 
 ## 인수테스트의 개념

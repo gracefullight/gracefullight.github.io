@@ -5,7 +5,7 @@ description: Test coverage, Code coverage
 authors: me
 tags: 
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 테스트 커버리지와 코드 커버리지의 개념

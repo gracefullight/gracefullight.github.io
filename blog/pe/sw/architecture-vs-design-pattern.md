@@ -5,7 +5,7 @@ description: 아키텍처 스타일과 디자인 패턴 비교
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 131

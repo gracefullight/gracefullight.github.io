@@ -5,7 +5,7 @@ description: 리팩토링
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 129

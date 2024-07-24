@@ -5,7 +5,7 @@ description: 리먼(Lehman)의 소프트웨어 진화 법칙
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 > 129

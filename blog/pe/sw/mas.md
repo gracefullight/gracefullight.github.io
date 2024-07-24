@@ -5,7 +5,7 @@ description: 상용SW 다수 공급자 계약(MAS, Multiple Award Schedule) 제�
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## MAS 개념

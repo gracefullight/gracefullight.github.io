@@ -5,7 +5,7 @@ description: Quality Cost
 authors: me
 tags: 
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 품질비용 항목의 개념

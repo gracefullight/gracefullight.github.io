@@ -5,7 +5,7 @@ description: canary test
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 카나리 테스트 개념

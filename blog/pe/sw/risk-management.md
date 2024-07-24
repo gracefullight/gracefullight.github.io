@@ -5,7 +5,7 @@ description: 위험관리
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 위험관리

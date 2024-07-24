@@ -5,7 +5,7 @@ description: SW유지보수를 위한 재사용, 재공학, 역공학
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 3R의 개요

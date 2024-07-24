@@ -5,7 +5,7 @@ description: ATAM, CBAM
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/sw 
 ---
 
 ## SW아키텍처 평가모델의 개요

@@ -5,7 +5,7 @@ description: 소프트웨어 공학의 모든 것
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 특징

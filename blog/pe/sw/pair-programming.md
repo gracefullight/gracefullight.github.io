@@ -5,7 +5,7 @@ description: Pair Programming, Ping Pong Programming
 authors: me
 tags: 
   - pe
-  - pe/engineering 
+  - pe/sw 
 ---
 
 ## 페어 프로그래밍 개념

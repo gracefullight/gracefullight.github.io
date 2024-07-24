@@ -5,7 +5,7 @@ description: Software Requirements Specifications
 authors: me
 tags:
   - pe
-  - pe/engineering
+  - pe/sw
 ---
 
 ## 요구사항 명세서 개념
