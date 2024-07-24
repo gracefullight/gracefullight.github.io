@@ -16,23 +16,23 @@
             <description><![CDATA[Business Continuity Planning]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념">BCP 개념<a class="hash-link" aria-label="BCP 개념에 대한 직접 링크" title="BCP 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
-<li>재해나 위기 상황에서 조직의 핵심 비즈니스 기능이 지속될 수 있도록 마련된 계획으로 IT 복구뿐만 아니라, 전체 비즈니스 프로세스의 복원 목표</li>
-<li>비지니스 연속성 보장, 법적 규제 준수, 고객 신뢰성 확보, 재무 손실 최소화</li>
+<li><mark class="flexible-marker flexible-marker-default">재해나 위기 상황에서 조직의 핵심 비즈니스 기능이 지속될 수 있도록 마련된 계획</mark>으로 IT 복구뿐만 아니라, <mark class="flexible-marker flexible-marker-default">전체 비즈니스 프로세스의 복원</mark> 목표</li>
+<li><mark class="flexible-marker flexible-marker-default">비지니스 연속성 보장</mark>, 법적 규제 준수, <mark class="flexible-marker flexible-marker-default">고객 신뢰성 확보</mark>, <mark class="flexible-marker flexible-marker-default">재무 손실 최소화</mark></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도-구성요소-절차">BCP 개념도, 구성요소, 절차<a class="hash-link" aria-label="BCP 개념도, 구성요소, 절차에 대한 직접 링크" title="BCP 개념도, 구성요소, 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%88%EC%B0%A8">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도">BCP 개념도<a class="hash-link" aria-label="BCP 개념도에 대한 직접 링크" title="BCP 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-구성요소">BCP 구성요소<a class="hash-link" aria-label="BCP 구성요소에 대한 직접 링크" title="BCP 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bcp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>종류</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>재해복구</td><td>IT 시스템과 데이터 복구 계획, 시스템 중단 시 신속한 복구 목표</td><td>데이터 백업 및 복구 절차</td></tr><tr><td>업무복구</td><td>비즈니스 프로세스 복원 계획, 핵심 업무 프로세스가 중단 방지</td><td>핵심 업무 기능 복구 절차 및 우선순위 설정</td></tr><tr><td>업무재개</td><td>중단된 업무의 재개를 위한 구체적인 절차, 계획</td><td>대체 프로세스, 임시 운영 절차</td></tr><tr><td>비상계획</td><td>비상 상황에 대한 대비와 대응 계획, 예상치 못한 사건에 대한 대응</td><td>위기 관리 팀 구성, 대응 매뉴얼 마련</td></tr></tbody></table>
+<table><thead><tr><th>종류</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">재해복구</mark></td><td>IT 시스템과 데이터 복구 계획, 시스템 중단 시 신속한 복구 목표</td><td>데이터 백업 및 복구 절차</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">업무복구</mark></td><td>비즈니스 프로세스 복원 계획, 핵심 업무 프로세스가 중단 방지</td><td>핵심 업무 기능 복구 절차 및 우선순위 설정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">업무재개</mark></td><td>중단된 업무의 재개를 위한 구체적인 절차, 계획</td><td>대체 프로세스, 임시 운영 절차</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">비상계획</mark></td><td>비상 상황에 대한 대비와 대응 계획, 예상치 못한 사건에 대한 대응</td><td>위기 관리 팀 구성, 대응 매뉴얼 마련</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="bia-절차">BIA 절차<a class="hash-link" aria-label="BIA 절차에 대한 직접 링크" title="BIA 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bia-%EC%A0%88%EC%B0%A8">​</a></h2>
 <blockquote>
 <p>Business Impact Analysis</p>
 </blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>주요 업무 식별</td><td>비즈니스 운영에 필수적인 핵심 업무 프로세스 식별</td><td>조직의 가치 사슬 분석</td></tr><tr><td>재해 유형 분석</td><td>재해의 유형과 발생 가능성을 분석, 비즈니스 영향 평가</td><td>FMEA</td></tr><tr><td>손실 평가</td><td>재해 발생 시 예상되는 재무적, 운영적 손실 평가</td><td>재무적, 운영적, 법적 손실 평가 기준 설정</td></tr><tr><td>우선순위 설정</td><td>복구 대상의 우선순위를 설정하고, 복구 순서 결정</td><td>RTO, RPO 목표 설정</td></tr><tr><td>복구 목표 설정</td><td>서비스 재개 시간, 데이터 손실 허용 시간 설정</td><td>RTO: 2h, RPO: 0</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">주요 업무 식별</mark></td><td>비즈니스 운영에 필수적인 핵심 업무 프로세스 식별</td><td>조직의 가치 사슬 분석</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">재해 유형 분석</mark></td><td>재해의 유형과 발생 가능성을 분석, 비즈니스 영향 평가</td><td>FMEA</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">손실 평가</mark></td><td>재해 발생 시 예상되는 재무적, 운영적 손실 평가</td><td>재무적, 운영적, 법적 손실 평가 기준 설정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">우선순위 설정</mark></td><td>복구 대상의 우선순위를 설정하고, 복구 순서 결정</td><td>손실 비용 기반</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">복구 목표 설정</mark></td><td>서비스 목표 복구 시간, 데이터 손실 허용 시간 설정</td><td><mark class="flexible-marker flexible-marker-default">RTO</mark>: 2h, <mark class="flexible-marker flexible-marker-default">RPO</mark>: 0</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-성공-포인트">BCP 성공 포인트<a class="hash-link" aria-label="BCP 성공 포인트에 대한 직접 링크" title="BCP 성공 포인트에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/bcp/#bcp-%EC%84%B1%EA%B3%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8">​</a></h2>
 <ul>
-<li>정기적인 훈련과 모의 테스트를 통한 실전 대응 능력 향상</li>
-<li>Third Party Risk Management 전략 수립</li>
+<li><mark class="flexible-marker flexible-marker-default">정기적인 훈련과 모의 테스트</mark>를 통한 실전 대응 능력 향상</li>
+<li><mark class="flexible-marker flexible-marker-default">Third Party Risk Management 전략 수립</mark></li>
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/security</category>
