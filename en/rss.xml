@@ -4,10 +4,97 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 23 Jul 2024 23:49:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Jul 2024 02:24:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[데이터베이스 옵티마이저]]></title>
+            <link>https://gracefullight.dev/en/pe/db/database-optimizer/</link>
+            <guid>https://gracefullight.dev/en/pe/db/database-optimizer/</guid>
+            <pubDate>Wed, 24 Jul 2024 02:24:14 GMT</pubDate>
+            <description><![CDATA[Database Optimizer]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-개념">옵티마이저 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>DBMS 내에서 SQL <mark class="flexible-marker flexible-marker-default">쿼리 실행 계획을 분석</mark>하고 <mark class="flexible-marker flexible-marker-default">최적의 계획을 수립</mark>하는 <mark class="flexible-marker flexible-marker-default">핵심 엔진</mark></li>
+<li>최적화된 쿼리 실행으로 시스템 자원의 효율적 사용과 응답시간 단축</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성도-구성요소-rbo-cbo">옵티마이저 구성도, 구성요소, RBO, CBO<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-rbo-cbo">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성도">옵티마이저 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성요소">옵티마이저 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. SQL Parser</td><td>쿼리파싱, 구문분석, 구문트리생성</td><td>문법 검사</td></tr><tr><td>2. Query Transformer</td><td>쿼리 변환 하의 최적화 가능성 제고</td><td>쿼리 재작성</td></tr><tr><td>3. Plan Generator</td><td>ㅇ여러 가능한 실행 계획 생성</td><td>조인, 인덱스 경로</td></tr><tr><td>4. Cost Estimator</td><td>각 실행 계획 예상 비용 계산</td><td>통계 저장, 참조</td></tr><tr><td>5. Plan Selector</td><td>가장 낮은 비용 실행 계획 선택, 실행</td><td>RBO, CBO 방식</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="rbo-cbo-비교">RBO, CBO 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#rbo-cbo-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>RBO</th><th>CBO</th></tr></thead><tbody><tr><td>최적화 기준</td><td>고정된 규칙 사용</td><td>실행 비용 추정</td></tr><tr><td>결정자</td><td>인덱스 구조, 연산자, 조건 등</td><td>레코드 블록 수, 평균 행 길이, 인덱스 높이, 컬럼 수 분포, 디스크 I/O</td></tr><tr><td>특징</td><td>실행 계획 예측 용이</td><td>저장된 통계 정보 활용</td></tr><tr><td>장점</td><td>규칙 단순, 빠른 최적화</td><td>더 효율적인 실행 계획 수립</td></tr><tr><td>단점</td><td>복잡한 쿼리 최적화 어려움, 규칙 관리 필요</td><td>통계 정보 부정확할시 오류 발생</td></tr></tbody></table>
+<ul>
+<li>최신 DBMS는 CBO 방식 채택</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-적용방안">옵티마이저 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>DA</td><td>모델링시 인덱스 전략 설계, 파티셔닝 고려</td><td>효율적 구조 설계</td></tr><tr><td>DBA</td><td>통계정보 수립 및 갱신, 실행계획 최적화</td><td>모너티링, 대응</td></tr><tr><td>User</td><td>쵲거화된 쿼리 작성, 인덱스 힌트 사용</td><td>개발단계 쿼리 최적화, EXPLAIN PLAN</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵�티마이저-고려사항">옵티마이저 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>개발자가 쿼리에 EXPLAIN PLAN을 사용하여 분석 후 최적화된 쿼리 구현 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/db</category>
+        </item>
+        <item>
+            <title><![CDATA[데이터베이스 튜닝]]></title>
+            <link>https://gracefullight.dev/en/pe/db/database-tuning/</link>
+            <guid>https://gracefullight.dev/en/pe/db/database-tuning/</guid>
+            <pubDate>Wed, 24 Jul 2024 02:14:28 GMT</pubDate>
+            <description><![CDATA[Database Tuning]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-튜닝-개념">데이터베이스 튜닝 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%9C%EB%8B%9D-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>응용프로그램, DB, 운영체제 등을 조정하여 한정된 자원으로 최적의 성능을 얻도록하는 개선 작업</li>
+<li>처리능력증대, 처리시간단축, 응답시간단축, DB로드시간단축</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-튜닝-절차-튜닝-기법">데이터베이스 튜닝 절차, 튜닝 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%9C%EB%8B%9D-%EC%A0%88%EC%B0%A8-%ED%8A%9C%EB%8B%9D-%EA%B8%B0%EB%B2%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-튜닝-절차">데이터베이스 튜닝 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%9C%EB%8B%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="설계단계-튜닝-기법">설계단계 튜닝 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%EC%84%A4%EA%B3%84%EB%8B%A8%EA%B3%84-%ED%8A%9C%EB%8B%9D-%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정규화</td><td>데이터 중복 제거, 함수종속성 제거</td><td>무결성 확보</td></tr><tr><td>반정규화</td><td>성능 향상을 위한 중복 허용</td><td>조회 성능 개선</td></tr><tr><td>파티셔닝</td><td>대용량 데이블 분할 관리</td><td>관리효율, 조회성능</td></tr><tr><td>인덱스 설계</td><td>데이터 접근, 스캔 경로 최적화</td><td>CBO, RBO</td></tr><tr><td>인덱스 지정</td><td>PK, FK 지정</td><td>조회, 수정 성능 개선</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="sql-튜닝-기법">SQL 튜닝 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#sql-%ED%8A%9C%EB%8B%9D-%EA%B8%B0%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>쿼리재작성</td><td>불필요 연산 제거, 분리</td><td>실행계획 분석</td></tr><tr><td>조인방식변경</td><td>조인방식, 순서 변경</td><td>조인 유형 고려</td></tr><tr><td>인덱스 활용</td><td>적절한 인덱스 사용</td><td>제약조건 확인</td></tr><tr><td>힌트 사용</td><td>최적 실행 계획 제어</td><td>옵티마이저 제어</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="힌트-개념-및-유형">힌트 개념 및 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%ED%9E%8C%ED%8A%B8-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EC%9C%A0%ED%98%95">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="힌트-개념">힌트 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%ED%9E%8C%ED%8A%B8-%EA%B0%9C%EB%85%90">​</a></h3>
+<ul>
+<li>SQL문에 주석형태로 옵티마이저에게 실행계획을 지시하는 구문</li>
+<li>옵티마이저의 기본 실행 계획이 최적이 아닐 경우, 성능 개선 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="힌트-유형">힌트 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%ED%9E%8C%ED%8A%B8-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Scan 힌트</td><td>효율적인 데이터 접근방식 선택</td><td>테이블 또는 인덱스</td></tr><tr><td>Join 힌트</td><td>효율적인 조인 방식 선택</td><td>특정 조인 방식 지정</td></tr><tr><td>Leading 힌트</td><td>실행 계획의 조인 순서 제어</td><td>조인순서 지정</td></tr><tr><td>Set 힌트</td><td>워크로드나 특정 쿼리에 최적화된 파라미터 선택</td><td>쿼리 변수 오버라이딩</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-튜닝시-고려사항">데이터베이스 튜닝시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-tuning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%9C%EB%8B%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>튜닝 전,후 성능 변화를 지속적으로 모니터링하고 필요시 추가 튜닝 (시스템 등) 수행</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/db</category>
+        </item>
+        <item>
+            <title><![CDATA[무결성]]></title>
+            <link>https://gracefullight.dev/en/pe/db/integrity/</link>
+            <guid>https://gracefullight.dev/en/pe/db/integrity/</guid>
+            <pubDate>Tue, 23 Jul 2024 23:59:02 GMT</pubDate>
+            <description><![CDATA[Integrity]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-개념">무결성 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>사용자가 데이터를 변경할 때 관계, 참조 등의 <mark class="flexible-marker flexible-marker-default">무결성 제약이나 규칙에 의해</mark> 데이터의 <mark class="flexible-marker flexible-marker-default">일관성과 정확성을 유지</mark>하는 것</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-유형-보장방법-적용방안">무결성 유형, 보장방법, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%9C%A0%ED%98%95-%EB%B3%B4%EC%9E%A5%EB%B0%A9%EB%B2%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-유형">무결성 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개체무결성</td><td>각 행을 구분하는 유일한 식별자</td><td>기본키 사용</td></tr><tr><td>참조무결성</td><td>외래키는 참조 테이블의 기본키와 일치</td><td>외래키 사용</td></tr><tr><td>도메인무결성</td><td>각 열의 값이 속성에 정의된 도메인 값</td><td>데이터 형식, 범위 제한</td></tr><tr><td>사용자정의무결성</td><td>비지니스 규칙에 따라 사용자 정의</td><td>트리거, 프로시저</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-보장방법">무결성 보장방법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EB%B3%B4%EC%9E%A5%EB%B0%A9%EB%B2%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>응용프로그램</td><td>무결성 조건 코드 추가</td><td>프로그램상 구현</td></tr><tr><td>DB 트리거</td><td>Stored Procedure 활용 데이터 변경시 제약 추가</td><td>복잡한 요구 구현</td></tr><tr><td>제약조건</td><td>스키마에 제약조건 설정</td><td>변경 용이, 쉬운 구현</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-적용방안">무결성 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 모델링</td><td>모델링시 무결성 유형 고려 정의</td><td>무결성 확보 설계</td></tr><tr><td>데이터 설계</td><td>테이블 생성시 제약조건, 트리거 설정</td><td>DBMS 기능 활용</td></tr><tr><td>응용프로그램 개발</td><td>데이터 입력, 수정, 삭제시 무결성 검사</td><td>입력 데이터 검증</td></tr><tr><td>운영, 유지보수</td><td>주기적인 데이터 값 프로파일링</td><td>진단 및 조치</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="무결성-고려사항">무결성 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/integrity/#%EB%AC%B4%EA%B2%B0%EC%84%B1-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>병행제어를 통해 트랜잭션 실패시 무결성을 위반하지 않도록 제어 필요</li>
+</ul>]]></content:encoded>
+            <category>pe</category>
+            <category>pe/db</category>
+        </item>
         <item>
             <title><![CDATA[데이터 마이그레이션]]></title>
             <link>https://gracefullight.dev/en/pe/db/data-migration/</link>
@@ -163,7 +250,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-구성요소">MIV 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술</th><th>내용</th></tr></thead><tbody><tr><td>인코더</td><td>TMIV 인코더</td><td>다수의 텍스터, 기하정보 활용 인코딩</td></tr><tr><td>-</td><td>비디오 인코더</td><td>공간 중복 제거 후 인코딩, 아틀라스 포맷기반 HEVC, VCC 코덱으로 전송</td></tr><tr><td>디코더</td><td>비디오 디코더</td><td>비트스트림을 영상으로 디코딩, 아틀라스 포맷으로 MIV 디코더 전달</td></tr><tr><td>-</td><td>MIV 디코더</td><td>후처리, 공간 시점 영상 합성, 사용자 움직임에 따른 뷰포트 생성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EF%BF%BD%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="miv-적용방안">MIV 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>VR, AR 컨텐츠</td><td>몰입감 높은 컨텐츠 제작</td><td>6DoF</td></tr><tr><td>스포트 중계</td><td>다양한 시점에서 경기 관람</td><td>현장감</td></tr><tr><td>교육 컨텐츠</td><td>실감형 교육 컨텐츠 제작</td><td>체험형</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="miv-고려사항">MIV 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/miv/#miv-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -201,70 +288,6 @@
 </ul>]]></content:encoded>
             <category>pe</category>
             <category>pe/ca</category>
-        </item>
-        <item>
-            <title><![CDATA[트리정렬]]></title>
-            <link>https://gracefullight.dev/en/pe/algo/tree-sort/</link>
-            <guid>https://gracefullight.dev/en/pe/algo/tree-sort/</guid>
-            <pubDate>Mon, 22 Jul 2024 11:37:26 GMT</pubDate>
-            <description><![CDATA[Tree sort]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="트리정렬-개념">트리정렬 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/algo/tree-sort/#%ED%8A%B8%EB%A6%AC%EC%A0%95%EB%A0%AC-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>이진 탐색 트리를 만들어 데이터를 정렬하는 알고리즘</li>
-<li>각 요소에 따라 부모노드의 자식을 좌,우로 결정</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="트리정렬-개념도-특징-적용방안">트리정렬 개념도, 특징, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/algo/tree-sort/#%ED%8A%B8%EB%A6%AC%EC%A0%95%EB%A0%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="트리정렬-개념도">트리정렬 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/algo/tree-sort/#%ED%8A%B8%EB%A6%AC%EC%A0%95%EB%A0%AC-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>중위 순회로 정렬</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="트리정렬-특징">트리정렬 특징<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/algo/tree-sort/#%ED%8A%B8%EB%A6%AC%EC%A0%95%EB%A0%AC-%ED%8A%B9%EC%A7%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>시간복잡도</td><td>균형이 무너지면 최악케이스</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td></tr><tr><td>공간복잡도</td><td>트리구조 저장 구조 필요</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></td></tr><tr><td>안정성</td><td>동일한 값의 순서 보장 불가</td><td>불안정 정렬</td></tr><tr><td>사용 트리</td><td>트리 균형을 유지해야 성능 향상</td><td>BST, AVL 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="트리정렬-적용방안">트리정렬 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/algo/tree-sort/#%ED%8A%B8%EB%A6%AC%EC%A0%95%EB%A0%AC-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 셋</td><td>중간 크기의 데이터 세트에 가장 효과적인 정렬</td><td>빅데이터인 경우 메모리 사용량 폭증</td></tr><tr><td>데이터 분포</td><td>랜덤으로 분포된 데이터 정렬시 효율적</td><td>군집의 경우, 편향트리 처리</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/algo</category>
-        </item>
-        <item>
-            <title><![CDATA[RFP, PMO]]></title>
-            <link>https://gracefullight.dev/en/pe/mng/rfp-pmo/</link>
-            <guid>https://gracefullight.dev/en/pe/mng/rfp-pmo/</guid>
-            <pubDate>Mon, 22 Jul 2024 11:30:48 GMT</pubDate>
-            <description><![CDATA[RFP, PMO]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="rfp-pmo-개념">RFP, PMO 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#rfp-pmo-%EA%B0%9C%EB%85%90">​</a></h2>
-<table><thead><tr><th>RFP</th><th>PMO</th></tr></thead><tbody><tr><td>요구사항을 기능점수를 산출 가능하도록 상세화한 제안서</td><td>프로젝트 관리, 표준화, 조정을 담당하는 조직</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pmo-사업-유형의-rfp-목차">PMO 사업 유형의 RFP 목차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#pmo-%EC%82%AC%EC%97%85-%EC%9C%A0%ED%98%95%EC%9D%98-rfp-%EB%AA%A9%EC%B0%A8">​</a></h2>
-<table><thead><tr><th>목차</th><th>세부 목차</th><th>비고</th></tr></thead><tbody><tr><td>사업 개요</td><td>추진 배경 및 필요성</td><td>-</td></tr><tr><td>-</td><td>대상 사업 개요</td><td>-</td></tr><tr><td>-</td><td>사업 범위</td><td>-</td></tr><tr><td>-</td><td>기대효과 및 성과지표</td><td>-</td></tr><tr><td>PMO 대상사업</td><td>사업 개요</td><td>-</td></tr><tr><td>-</td><td>추진 목표</td><td>-</td></tr><tr><td>-</td><td>추진 범위 및 내용</td><td>-</td></tr><tr><td>-</td><td>사업 추진 체계</td><td>-</td></tr><tr><td>-</td><td>사업 추진 일정</td><td>-</td></tr><tr><td>사업 추진 방안</td><td>추진 목표</td><td>-</td></tr><tr><td>-</td><td>추진 방안</td><td>-</td></tr><tr><td>제안 요청 내용</td><td>제안 요청 개요</td><td>-</td></tr><tr><td>-</td><td>용어의 정의</td><td>-</td></tr><tr><td>-</td><td>상세 요구사항</td><td>-</td></tr><tr><td>제안서 작성 요령</td><td>제안서의 효력</td><td>-</td></tr><tr><td>-</td><td>제안서 작성 지침</td><td>-</td></tr><tr><td>-</td><td>제안서 목차</td><td>-</td></tr><tr><td>-</td><td>세부 작성 지침</td><td>-</td></tr><tr><td>제안 안내사항</td><td>입찰 방식</td><td>-</td></tr><tr><td>-</td><td>제안서 평가 기법</td><td>-</td></tr><tr><td>-</td><td>기술서 평가 기준</td><td>-</td></tr><tr><td>-</td><td>제출 서류 참조</td><td>-</td></tr><tr><td>-</td><td>제안 요청 설명회</td><td>-</td></tr><tr><td>-</td><td>입찰시 유의사항</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pmo-사업-유형의-제안요청서-중-필수-요구사항">PMO 사업 유형의 제안요청서 중 필수 요구사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/rfp-pmo/#pmo-%EC%82%AC%EC%97%85-%EC%9C%A0%ED%98%95%EC%9D%98-%EC%A0%9C%EC%95%88%EC%9A%94%EC%B2%AD%EC%84%9C-%EC%A4%91-%ED%95%84%EC%88%98-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD">​</a></h2>
-<table><thead><tr><th>필수요구사항</th><th>상세내용</th><th>비고</th></tr></thead><tbody><tr><td>제약사항 COR</td><td>시스템 개발</td><td>-</td></tr><tr><td>-</td><td>데이터</td><td>-</td></tr><tr><td>-</td><td>설계 및 구현</td><td>-</td></tr><tr><td>-</td><td>업무</td><td>-</td></tr><tr><td>-</td><td>표준</td><td>-</td></tr><tr><td>프로젝트 관리 PMR</td><td>사업수행조직 구성</td><td>-</td></tr><tr><td>-</td><td>개발 방법론</td><td>-</td></tr><tr><td>-</td><td>사업관리</td><td>-</td></tr><tr><td>-</td><td>보안관리</td><td>-</td></tr><tr><td>프로젝트 지원 PSR</td><td>시스템 안정화</td><td>-</td></tr><tr><td>-</td><td>하자보수</td><td>-</td></tr><tr><td>-</td><td>시스템 운영</td><td>-</td></tr><tr><td>-</td><td>교육 및 기술 지원</td><td>-</td></tr><tr><td>컨설팅 CNR</td><td>ISP</td><td>-</td></tr><tr><td>-</td><td>프로젝트 관리 요구사항</td><td>-</td></tr><tr><td>-</td><td>ISMP</td><td>-</td></tr><tr><td>-</td><td>EA</td><td>-</td></tr><tr><td>-</td><td>ETC</td><td>-</td></tr></tbody></table>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
-        </item>
-        <item>
-            <title><![CDATA[소프트웨어 사업의 단계별 발주제도]]></title>
-            <link>https://gracefullight.dev/en/pe/mng/소프트웨어-사업의-단계별-발주제도/</link>
-            <guid>https://gracefullight.dev/en/pe/mng/소프트웨어-사업의-단계별-발주제도/</guid>
-            <pubDate>Mon, 22 Jul 2024 11:23:39 GMT</pubDate>
-            <description><![CDATA[소프트웨어 사업의 단계별 발주제도]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-개념">소프트웨어 사업의 단계별 발주제도 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>정보기술용역을 구성하는 SW, HW, 시스템 개발 등을 일괄 발주하지 않고 <mark class="flexible-marker flexible-marker-default">선행, 후속 사업 2단계</mark>로 분석, 설계를 우선 실시하고, 산출물에 의거하여 구현 사업을 수행하는 제도</li>
-<li>단계별 요구사항 명확화, 단계별 예산 효율적 관리, <mark class="flexible-marker flexible-marker-default">설계와 구현 분리</mark>로 인한 품질 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도-세부-내용">소프트웨어 사업의 단계별 발주제도 절차도, 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-절차도">소프트웨어 사업의 단계별 발주제도 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-세부-내�용">소프트웨어 사업의 단계별 발주제도 세부 내용<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9">​</a></h3>
-<table><thead><tr><th>구분</th><th>표준 프로세스</th><th>주요 산출물</th></tr></thead><tbody><tr><td>선행사업</td><td>요구사항 질의, 분석</td><td>요구사항 명세서, Use Case 시나리오</td></tr><tr><td>-</td><td>기본설계 (논리적)</td><td>기본 설계서</td></tr><tr><td>후속사업</td><td>상세설계 (물리적)</td><td>DB설계서, 테스트 명세서</td></tr><tr><td>-</td><td>개발</td><td>코드, 단위모듈 설계서, 테스트 시나리오</td></tr><tr><td>-</td><td>테스트</td><td>테스트 결과서, 품질 검토서</td></tr><tr><td>-</td><td>인수</td><td>인수 계획서, 설치 결과서, 시범운영계획서</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주제도-일괄-발주-비교">소프트웨어 사업의 단계별 발주제도, 일괄 발주 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84-%EC%9D%BC%EA%B4%84-%EB%B0%9C%EC%A3%BC-%EB%B9%84%EA%B5%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>단계별 발주</th><th>일괄 발주</th></tr></thead><tbody><tr><td>특징</td><td>설계와 구현 분리 발주</td><td>설계와 구현 일괄 발주</td></tr><tr><td>리스트 관리</td><td>단계별 리스크 식별, 관리</td><td>프로젝트 전체 리스크 관리</td></tr><tr><td>참여업체 수</td><td>다수 업체</td><td>동일 업체</td></tr><tr><td>발주 행정부담</td><td>복수사업자 선정에 따른 행정 절차 부담 증가</td><td>단일 사업자 수행으로 행정 절차 감소</td></tr><tr><td>시스템 통합 책임</td><td>별도 시스템 통합 사업자 선정</td><td>구축 사업자가 통합 책임</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="소프트웨어-사업의-단계별-발주시-고려사항">소프트웨어 사업의 단계별 발주시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%A0%9C%EB%8F%84/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EB%B0%9C%EC%A3%BC%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>다수업체 발주로 인한 프로젝트관리, 품질관리를 위해 PMO, QMO 도입 검토 필요</li>
-</ul>]]></content:encoded>
-            <category>pe</category>
-            <category>pe/mng</category>
         </item>
     </channel>
 </rss>
