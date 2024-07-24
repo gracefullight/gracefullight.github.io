@@ -5,7 +5,7 @@ description: Intermittent Computing
 authors: me
 tags: 
   - pe
-  - pe/architecture 
+  - pe/ca 
 ---
 
 ## 인터미턴트 컴퓨팅의 개념
@@ -43,7 +43,7 @@ graph TB
 
 | 구분 | 핵심요소 | 내용 |
 | --- | --- | --- |
-| 컴퓨터 내부 | FRAM | 비휘발성 저전력 램 사용, 단전시 저장 바이트 복구 |
+| 컴퓨터 내부 | ==FRAM== | 비휘발성 저전력 램 사용, 단전시 저장 바이트 복구 |
 | - | Data Deduplication | 중복 데이터를 포인터로만 저장하여 실시간 백업 처리 |
 | - | 메인보드 비상전력 공급 | 기존 5V 건전지 대체 파워시스템 구현 |
 | 컴퓨터 외부 | 축전기 | 단전시 비상전력 가동 |
