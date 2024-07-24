@@ -1,5 +1,5 @@
 pe:
-  label: "pe"
+  label: "professional-engineer"
   permalink: "/pe"
   description: "기술사 관련 포스트"
 pe/algo:
