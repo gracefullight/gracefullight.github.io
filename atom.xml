@@ -29,11 +29,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-�분할-세부절자">데이터베이스 분할 세부절자<a class="hash-link" aria-label="데이터베이스 분할 세부절자에 대한 직접 링크" title="데이터베이스 분할 세부절자에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%9E%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 분할 필요성 증가</td><td>-</td><td>-</td></tr><tr><td>2. 분할 방법 결정</td><td>-</td><td>-</td></tr><tr><td>3. AS-IS 성능 측정</td><td>-</td><td>-</td></tr><tr><td>4. 분할 적용, 이관</td><td>-</td><td>-</td></tr><tr><td>5. 어플리케이션 수정</td><td>-</td><td>-</td></tr><tr><td>6. 테스트, 모니터링</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="데이터베이스 분할시 고려사항에 대한 직접 링크" title="데이터베이스 분할시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>수평적 확장이 핑료한 대규모 데이터 분할시 샤딩 고려</li>
-<li>특정 액세스 패턴 최적화시 파티셔닝 고려</li>
-</ul>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="데이터베이스 분할시 고려사항에 대한 직접 링크" title="데이터베이스 분할시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
