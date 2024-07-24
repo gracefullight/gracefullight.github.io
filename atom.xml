@@ -2,16 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-24T03:20:57.000Z</updated>
+    <updated>2024-07-24T03:21:21.567Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[pe/db/cap-pacelc]]></title>
+        <title type="html"><![CDATA[공공기관 데이터베이스 표준화지침]]></title>
+        <id>https://gracefullight.dev/pe/공공기관-데이터베이스-표준화지침/</id>
+        <link href="https://gracefullight.dev/pe/공공기관-데이터베이스-표준화지침/"/>
+        <updated>2024-07-24T03:21:21.567Z</updated>
+        <summary type="html"><![CDATA[공공기관 데이터베이스 표준화지침]]></summary>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/db" term="pe/db"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAP, PACELC]]></title>
         <id>https://gracefullight.dev/pe/db/cap-pacelc/</id>
         <link href="https://gracefullight.dev/pe/db/cap-pacelc/"/>
-        <updated>2024-07-24T03:20:57.000Z</updated>
+        <updated>2024-07-24T02:45:17.503Z</updated>
+        <summary type="html"><![CDATA[CAP, PACELC]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념">CAP 이론 개념<a class="hash-link" aria-label="CAP 이론 개념에 대한 직접 링크" title="CAP 이론 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>분산시스템이 동시에 일관성, 가용성, 분할내성을 모두 만족시킬 수 없다는 이론</li>
+<li>분산시스템의 특성을 이해하고 Trade-Off를 고려하여 데이터베이스를 설계하는 원칙</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념도-구성요소">CAP 이론 개념도, 구성요소<a class="hash-link" aria-label="CAP 이론 개념도, 구성요소에 대한 직접 링크" title="CAP 이론 개념도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념도">CAP 이론 개념도<a class="hash-link" aria-label="CAP 이론 개념도에 대한 직접 링크" title="CAP 이론 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-구성요소">CAP 이론 구성요소<a class="hash-link" aria-label="CAP 이론 구성요소에 대한 직접 링크" title="CAP 이론 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td>A + P</td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도-구성요소">PACELC 이론 개념도, 구성요소<a class="hash-link" aria-label="PACELC 이론 개념도, 구성요소에 대한 직접 링크" title="PACELC 이론 개념도, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도">PACELC 이론 개념도<a class="hash-link" aria-label="PACELC 이론 개념도에 대한 직접 링크" title="PACELC 이론 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>CAP이론을 보완하여 네트워크 분할 여부나 정상 작동 여부에 따라 지연시간과 일관성의 Trade-Off를 고려한 이론</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-구성요소">PACELC 이론 구성요소<a class="hash-link" aria-label="PACELC 이론 구성요소에 대한 직접 링크" title="PACELC 이론 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PA/EL</td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td>PA/EC</td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td>PC/EL</td><td>장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td>PC/EC</td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-데이터베이스-도입시-고려사항">NoSQL 데이터베이스 도입시 고려사항<a class="hash-link" aria-label="NoSQL 데이터베이스 도입시 고려사항에 대한 직접 링크" title="NoSQL 데이터베이스 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#nosql-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>MongoDB 등 NOSQL의 오픈소스 라이센스가 SSPL로 이동함에 따라 CSP 서비스 개발시 Fork 버전 사용 등 대안 마련</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="pe" term="pe"/>
+        <category label="pe/db" term="pe/db"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[샤딩, 파티셔닝]]></title>
@@ -200,7 +242,7 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형-구성요소">데이터 품질관리 성숙모형, 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙모형, 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙모형">데이터 품질관리 성숙모형<a class="hash-link" aria-label="데이터 품질관리 성숙모형에 대한 직접 링크" title="데이터 품질관리 성숙모형에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%AA%A8%ED%98%95">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-��성숙도-구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙도-구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" title="데이터 품질관리 성숙도 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 픔질기준</td><td>데이터 품질 정의</td><td>데이터 유효성, 데이터 활용성</td></tr><tr><td>품질관리 프로세스</td><td>데이터 품질기준 향상을 위한 필요 프로세스</td><td>요구사항 관리, 데이터 구조 관리, 데이터 흐름관리, DB관리, 표준 관리</td></tr><tr><td>품질관리 성숙수준</td><td>현재 수준 파악 후 5단계 개선 모형 정의</td><td>도입, 정형화, 통합화, 정량화, 최적화</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙-수준">데이터 품질관리 성숙 수준<a class="hash-link" aria-label="데이터 품질관리 성숙 수준에 대한 직접 링크" title="데이터 품질관리 성숙 수준에 대한 직접 링크" href="https://gracefullight.dev/pe/db/data-quality-management/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EC%84%B1%EC%88%99-%EC%88%98%EC%A4%80">​</a></h2>
 <blockquote>
@@ -271,38 +313,5 @@
         </author>
         <category label="pe" term="pe"/>
         <category label="pe/nw" term="pe/nw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[엣지컴퓨팅]]></title>
-        <id>https://gracefullight.dev/pe/conv/edge-computing/</id>
-        <link href="https://gracefullight.dev/pe/conv/edge-computing/"/>
-        <updated>2024-07-23T05:59:13.237Z</updated>
-        <summary type="html"><![CDATA[Edge Computing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-개념">엣지컴퓨팅 개념<a class="hash-link" aria-label="엣지컴퓨팅 개념에 대한 직접 링크" title="엣지컴퓨팅 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>데이터가 생성되는 위치 근처에서 데이터를 처리하고 저장하는 분산 컴퓨팅 모델</li>
-<li>빠른 응답속도, 대역폭 효율, 민감정보 로컬 처리로 인한 보안 강화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성도-구성요소-적용방안">엣지컴퓨팅 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="엣지컴퓨팅 구성도, 구성요소, 적용방안에 대한 직접 링크" title="엣지컴퓨팅 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성도">엣지컴퓨팅 구성도<a class="hash-link" aria-label="엣지컴퓨팅 구성도에 대한 직접 링크" title="엣지컴퓨팅 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성요소">엣지컴퓨팅 구성요소<a class="hash-link" aria-label="엣지컴퓨팅 구성요소에 대한 직접 링크" title="엣지컴퓨팅 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클라우드</td><td>대규모 데이터 저장, 분석</td><td>중앙 관리</td></tr><tr><td>엣지 노드</td><td>데이터 처리, 저장, 필터링</td><td>디바이스와 클라우드 간 데이터 중재</td></tr><tr><td>엣지 디바이스</td><td>데이터를 수집, 전송, 로컬 처리</td><td>IoT 디바이스, 스마트폰 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-적용방안">엣지컴퓨팅 적용방안<a class="hash-link" aria-label="엣지컴퓨팅 적용방안에 대한 직접 링크" title="엣지컴퓨팅 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>자율주행차</td><td>센서, 데이터 실시간 처리</td><td>실시간 판단, 주행</td></tr><tr><td>스마트시티</td><td>교통, 안전, 에너지 실시간 분석</td><td>관리 효율성</td></tr><tr><td>헬스케어</td><td>환자 데이터 실시간 모니터링</td><td>원격 진료</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-장단점">엣지컴퓨팅 장단점<a class="hash-link" aria-label="엣지컴퓨팅 장단점에 대한 직접 링크" title="엣지컴퓨팅 장단점에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%9E%A5%EB%8B%A8%EC%A0%90">​</a></h2>
-<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>장점</td><td>대기시간 감소</td><td>-</td></tr><tr><td>-</td><td>비용절감</td><td>-</td></tr><tr><td>-</td><td>실시간 데이터 처리</td><td>-</td></tr><tr><td>단점</td><td>데이터 보안 문제</td><td>-</td></tr><tr><td>-</td><td>복잡한 아키텍처</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-고려사항">엣지컴퓨팅 고려사항<a class="hash-link" aria-label="엣지컴퓨팅 고려사항에 대한 직접 링크" title="엣지컴퓨팅 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/edge-computing/#%EC%97%A3%EC%A7%80%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>매터 등 IoT 표준 프로토콜을 사용하여 확장성 대응</li>
-<li>분산 환경의 로컬 데이터 보안을 위해 E2E 암호화 필요</li>
-<li>탄소인지컴퓨팅 패러다임으로 데이터센터의 탄소 사용량을 절감하기 위해, 엣지컴퓨팅 활성화 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="pe" term="pe"/>
-        <category label="pe/conv" term="pe/conv"/>
     </entry>
 </feed>
