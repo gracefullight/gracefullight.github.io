@@ -38,7 +38,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/mng" term="pe/mng"/>
+        <category label="pe/it-management" term="pe/it-management"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[공공기관 데이터베이스 표준화지침]]></title>
@@ -67,7 +67,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[CAP, PACELC]]></title>
@@ -102,7 +102,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[샤딩, 파티셔닝]]></title>
@@ -136,7 +136,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[데이터베이스 옵티마이저]]></title>
@@ -170,7 +170,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[데이터베이스 튜닝]]></title>
@@ -207,7 +207,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[무결성]]></title>
@@ -235,7 +235,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[데이터 마이그레이션]]></title>
@@ -270,7 +270,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[DQM, 데이터 품질관리]]></title>
@@ -303,7 +303,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/db" term="pe/db"/>
+        <category label="pe/database" term="pe/database"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[뮤테이션 테스트]]></title>
@@ -332,6 +332,6 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="pe" term="pe"/>
-        <category label="pe/sw" term="pe/sw"/>
+        <category label="pe/software-engineering" term="pe/software-engineering"/>
     </entry>
 </feed>

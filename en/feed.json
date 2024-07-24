@@ -17,7 +17,7 @@
             },
             "tags": [
                 "pe",
-                "pe/mng"
+                "pe/it-management"
             ]
         },
         {
@@ -33,7 +33,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -49,7 +49,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -65,7 +65,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -81,7 +81,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -97,7 +97,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -113,7 +113,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -129,7 +129,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -145,7 +145,7 @@
             },
             "tags": [
                 "pe",
-                "pe/db"
+                "pe/database"
             ]
         },
         {
@@ -161,7 +161,7 @@
             },
             "tags": [
                 "pe",
-                "pe/sw"
+                "pe/software-engineering"
             ]
         }
     ]
