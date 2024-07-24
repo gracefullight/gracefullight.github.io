@@ -39,7 +39,7 @@ graph LR
 |---|---|---|
 | 국내 | 금융사 데이터 유출 | 서드파티 클라우드 보안 취약점으로 인해 대규모 고객 데이터 유출 |
 | 국외 | MS CrowdStrike | CrowdStrike 보안 툴의 소프트웨어 업데이트로 인해 글로벌 시스템 장애 발생 |
-| 국외 | NPM faker.js | Node.js 패키지 faker.js가 개발자의 사보타주로 인하 글로벌 배포 장애 |
+| - | NPM faker.js | Node.js 패키지 faker.js가 개발자의 사보타주로 인하 글로벌 배포 장애 |
 
 ## TPRM 고려사항
 
