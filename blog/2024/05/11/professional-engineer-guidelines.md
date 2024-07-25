@@ -5,7 +5,7 @@ description: 정보통신분야 기술사 출제기준
 authors: me
 tags:
   - me
-  - 정보처리
+  - pe
 ---
 
 - [정보통신분야 기술사 훑어보기](/2023/10/07/professional-engineer-information-overview/)
