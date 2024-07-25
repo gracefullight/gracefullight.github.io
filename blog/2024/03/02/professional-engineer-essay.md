@@ -154,6 +154,13 @@ IV. ~의 성공을 위한 추가적인 고려사항 || 성공 포인트
 - 핵심요소
 - 적용방안
 
+### 위험
+
+- 식별
+- 분석
+- 평가
+- 대응
+
 ## 참조
 
 - [Youtube: IT 전문가 - 에세이 시리즈](https://www.youtube.com/playlist?list=PLCs7T50izAdnO3q-LZocc2mIYBC2jfAf5)
