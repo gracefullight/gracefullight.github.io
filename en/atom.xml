@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-26T02:52:04.925Z</updated>
+    <updated>2024-07-26T04:42:54.111Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[사이버 복원력]]></title>
+        <id>https://gracefullight.dev/en/pe/sec/cyber-resilience/</id>
+        <link href="https://gracefullight.dev/en/pe/sec/cyber-resilience/"/>
+        <updated>2024-07-26T04:42:54.111Z</updated>
+        <summary type="html"><![CDATA[Cyber Resilience]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-개념">사이버 복원력 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>사이버 공격이나 관련 문제에 대해 적극 대응하고, 공격으로 인해 발생된 피해로부터 신속하게 정상화 및 회복하는 활동</li>
+<li>MS CrowdStrike 보안 업데이트, xz backdoor 이슈 등 소프트웨어 공급망 장애로 인해 중요성 강조</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-구성도-구성요소-비교">사이버 복원력 구성도, 구성요소, 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-구성도">사이버 복원력 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>두 역량의 상호작용을 통한 비지니스 연속성 제고</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-구성요소">사이버 복원력 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">비지니스 연속성</mark></td><td>정보시스템 보호를 넘어 비지니스 임무, 목표의 지속적 달성</td><td><mark class="flexible-marker flexible-marker-default">BCP</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">전사적 활동</mark></td><td>IT자산과 보안부서 활동을 넘어서 전사적 기술, 사람의 노력 필요</td><td>ITAM, ITSM</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">생태계 보호</mark></td><td>상호 연결된 협력사, 외부 기관가 시스템을 보호하기 위한 상호 협력, 정보 공유</td><td><mark class="flexible-marker flexible-marker-default">TPRM</mark></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-사이버-보안-비교">사이버 복원력, 사이버 보안 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EB%B9%84%EA%B5%90">​</a></h3>
+<table><thead><tr><th>구분</th><th>사이버 복원력</th><th>사이버 보안</th></tr></thead><tbody><tr><td>개념</td><td>사이버 자산을 운용하는 조직차원에서 역량</td><td>사이버 공격 등 위협으로부터 데이터 및 IT시스템 보호</td></tr><tr><td>객체</td><td>비지니스 결과물 전달 보장</td><td>데이터, 정보시스템, 네트워크 등 보호</td></tr><tr><td>적용 범위</td><td>전사적, 관련 조직, 생태계</td><td>보안 부서</td></tr><tr><td>목표</td><td>비지니스 요구사항, 연속서 유지</td><td>사이버 공격 위험 저하, IT자산 보호</td></tr><tr><td>특징</td><td>사고 예측, 탐지, 복구 역량 강화, 보안 모범 사례 정규화 등</td><td>위협 예방, IT 통제, 접근제어</td></tr><tr><td>관점</td><td>조직차원 내재 역량</td><td>사이버 자산 대상 기술 및 솔루션 도입 보호</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="사이버-복원력-동향">사이버 복원력 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EB%8F%99%ED%96%A5">​</a></h2>
+<ul>
+<li>바이든행정부 국가안보전략 상 사이버복원력 확보를 위한 국가적 협력 강조 및 방안 제시</li>
+<li>주요 기반 시설의 위험을 감소시키고 복원력을 강화하기 위한 <mark class="flexible-marker flexible-marker-default">BCP, DRP</mark> 수립 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[인공지능을 위한 공개된 개인정보 처리 가이드]]></title>
         <id>https://gracefullight.dev/en/pe/sec/인공지능을-위한-공개된-개인정보-처리-가이드/</id>
@@ -291,40 +324,6 @@
 <ul>
 <li>수평적 확장이 핑료한 대규모 데이터 분할시 샤딩 고려</li>
 <li>특정 액세스 패턴 최적화시 파티셔닝 고려</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터베이스 옵티마이저]]></title>
-        <id>https://gracefullight.dev/en/pe/db/database-optimizer/</id>
-        <link href="https://gracefullight.dev/en/pe/db/database-optimizer/"/>
-        <updated>2024-07-24T02:24:14.092Z</updated>
-        <summary type="html"><![CDATA[Database Optimizer]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-개념">옵티마이저 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>DBMS 내에서 SQL <mark class="flexible-marker flexible-marker-default">쿼리 실행 계획을 분석</mark>하고 <mark class="flexible-marker flexible-marker-default">최적의 계획을 수립</mark>하는 <mark class="flexible-marker flexible-marker-default">핵심 엔진</mark></li>
-<li>최적화된 쿼리 실행으로 시스템 자원의 효율적 사용과 응답시간 단축</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성도-구성요소-rbo-cbo">옵티마이저 구성도, 구성요소, RBO, CBO<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-rbo-cbo">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성도">옵티마이저 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-구성요소">옵티마이저 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. SQL Parser</td><td>쿼리파싱, 구문분석, 구문트리생성</td><td>문법 검사</td></tr><tr><td>2. Query Transformer</td><td>쿼리 변환 하의 최적화 가능성 제고</td><td>쿼리 재작성</td></tr><tr><td>3. Plan Generator</td><td>ㅇ여러 가능한 실행 계획 생성</td><td>조인, 인덱스 경로</td></tr><tr><td>4. Cost Estimator</td><td>각 실행 계획 예상 비용 계산</td><td>통계 저장, 참조</td></tr><tr><td>5. Plan Selector</td><td>가장 낮은 비용 실행 계획 선택, 실행</td><td>RBO, CBO 방식</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="rbo-cbo-비교">RBO, CBO 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#rbo-cbo-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>RBO</th><th>CBO</th></tr></thead><tbody><tr><td>최적화 기준</td><td>고정된 규칙 사용</td><td>실행 비용 추정</td></tr><tr><td>결정자</td><td>인덱스 구조, 연산자, 조건 등</td><td>레코드 블록 수, 평균 행 길이, 인덱스 높이, 컬럼 수 분포, 디스크 I/O</td></tr><tr><td>특징</td><td>실행 계획 예측 용이</td><td>저장된 통계 정보 활용</td></tr><tr><td>장점</td><td>규칙 단순, 빠른 최적화</td><td>더 효율적인 실행 계획 수립</td></tr><tr><td>단점</td><td>복잡한 쿼리 최적화 어려움, 규칙 관리 필요</td><td>통계 정보 부정확할시 오류 발생</td></tr></tbody></table>
-<ul>
-<li>최신 DBMS는 CBO 방식 채택</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-적용방안">옵티마이저 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td>DA</td><td>모델링시 인덱스 전략 설계, 파티셔닝 고려</td><td>효율적 구조 설계</td></tr><tr><td>DBA</td><td>통계정보 수립 및 갱신, 실행계획 최적화</td><td>모너티링, 대응</td></tr><tr><td>User</td><td>쵲거화된 쿼리 작성, 인덱스 힌트 사용</td><td>개발단계 쿼리 최적화, EXPLAIN PLAN</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="옵티마이저-고려사항">옵티마이저 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/database-optimizer/#%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>개발자가 쿼리에 EXPLAIN PLAN을 사용하여 분석 후 최적화된 쿼리 구현 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
