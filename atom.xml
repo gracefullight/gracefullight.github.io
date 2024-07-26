@@ -20,6 +20,7 @@
 <li>HW자원의 효율적 활용, SW자원의 신속한 제공, 간편한 SW유지보수, 안정적 시스템 운영, <mark class="flexible-marker flexible-marker-default">클라우드 이동성 확보</mark></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-구성도-인증-대상">K-PaaS 구성도, 인증 대상<a class="hash-link" aria-label="K-PaaS 구성도, 인증 대상에 대한 직접 링크" title="K-PaaS 구성도, 인증 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%9D%B8%EC%A6%9D-%EB%8C%80%EC%83%81">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-구성도">K-PaaS 구성도<a class="hash-link" aria-label="K-PaaS 구성도에 대한 직접 링크" title="K-PaaS 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-인증-대상">K-PaaS 인증 대상<a class="hash-link" aria-label="K-PaaS 인증 대상에 대한 직접 링크" title="K-PaaS 인증 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EC%9D%B8%EC%A6%9D-%EB%8C%80%EC%83%81">​</a></h3>
 <table><thead><tr><th>구분</th><th>대상</th><th>내용</th></tr></thead><tbody><tr><td>K-PaaS 적합성 인증</td><td>PaaS</td><td>K-PaaS 코어, API 지원 취약점 점검 통과한 클라우드 플랫폼 서비스</td></tr><tr><td>K-PaaS 호환성 인증</td><td>SaaS</td><td>단일/멀티 클라우드 플랫폼에서 배포 및 운용가능한 클라우드 서비스</td></tr><tr><td>K-PaaS 호환성 연동형 인증</td><td>백엔드 서비스</td><td>K-PaaS와 연동을 통해 제공하는 DB, Queue 등 백엔드 클라우드 서비스</td></tr></tbody></table>
