@@ -16,6 +16,8 @@ tags:
 
 ## K-PaaS 구성도, 인증 대상
 
+### K-PaaS 구성도
+
 ```mermaid
 graph TB
   subgraph 개발
