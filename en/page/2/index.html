@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.03d0a511.css">
-<script src="/en/assets/js/runtime~main.e02f15ed.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.2406320c.js" defer="defer"></script>
 <script src="/en/assets/js/main.aa33a49e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,15 +48,15 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념도">CAP 이론 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#cap-이론-개념도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-구성요소">CAP 이론 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#cap-이론-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td>A + P</td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도-구성요소">PACELC 이론 개념도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#pacelc-이론-개념도-구성요소">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">C + P</mark></td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">A + P</mark></td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">C + A</mark></td><td>네트워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도-구성요소">PACELC 이론 개념도,   구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#pacelc-이론-개념도-구성요소">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도">PACELC 이론 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#pacelc-이론-개념도">​</a></h3>
 <!-- -->
 <ul>
 <li>CAP이론을 보완하여 네트워크 분할 여부나 정상 작동 여부에 따라 지연시간과 일관성의 Trade-Off를 고려한 이론</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-구성요소">PACELC 이론 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#pacelc-이론-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PA/EL</td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td>PA/EC</td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td>PC/EL</td><td>장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td>PC/EC</td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">PA/EL</mark></td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PA/EC</mark></td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EL</mark></td><td>장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EC</mark></td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-데이터베이스-도입시-고려사항">NoSQL 데이터베이스 도입시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#nosql-데이터베이스-도입시-고려사항">​</a></h2>
 <ul>
 <li>MongoDB 등 NOSQL의 오픈소스 라이센스가 SSPL로 이동함에 따라 CSP 서비스 개발시 Fork 버전 사용 등 대안 마련</li>
@@ -67,7 +67,7 @@
 <li>샤딩: 테이블을 분리하여 다수의 물리DB서버에 분산 저장하는 기법</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#샤딩-파티셔닝-구  성요소-비교">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#샤딩-파티셔닝-구성요소-비교">​</a></h3>
 <table><thead><tr><th>구분</th><th>샤딩</th><th>파티셔닝</th></tr></thead><tbody><tr><td>목적</td><td>데이터 분산저장, 고가용성, 성능</td><td>데이터 관리용이, 성능</td></tr><tr><td>분할방법</td><td>수평분할</td><td>수평, 수직분할</td></tr><tr><td>분할관점</td><td>테이블을 여러 DB로 분할</td><td>하나의 DB에서 테이블 분할</td></tr><tr><td>관리노드</td><td>샤드간 라우팅 수행용 마스터</td><td>마스터노드 없음</td></tr><tr><td>테이블연동</td><td>분할 테이블 간 조인 불가</td><td>테이블 간 조인 가능</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="주요-데이터베이스-분할-기법">주요 데이터베이스 분할 기법<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#주요-데이터베이스-분할-기법">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
@@ -119,7 +119,7 @@
 <li>옵티마이저의 기본 실행 계획이 최적이 아닐 경우, 성능 개선 가능</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="힌트-유형">힌트 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#힌트-유형">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Scan 힌트</td><td>효율적인 데이터 접근방식 선택</td><td>테이블 또는 인덱스</td></tr><tr><td>Join 힌트</td><td>효율적인 조인 방식 선택</td><td>특정 조인 방식 지정</td></tr><tr><td>Leading 힌트</td><td>실행 계획의 조인 순서 제어</td><td>조인순서 지정</td></tr><tr><td>Set 힌트</td><td>워크  로드나 특정 쿼리에 최적화된 파라미터 선택</td><td>쿼리 변수 오버라이딩</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Scan 힌트</td><td>효율적인 데이터 접근방식 선택</td><td>테이블 또는 인덱스</td></tr><tr><td>Join 힌트</td><td>효율적인 조인 방식 선택</td><td>특정 조인 방식 지정</td></tr><tr><td>Leading 힌트</td><td>실행 계획의 조인 순서 제어</td><td>조인순서 지정</td></tr><tr><td>Set 힌트</td><td>워크로드나 특정 쿼리에 최적화된 파라미터 선택</td><td>쿼리 변수 오버라이딩</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-튜닝시-고려사항">데이터베이스 튜닝시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터베이스-튜닝시-고려사항">​</a></h2>
 <ul>
 <li>튜닝 전,후 성능 변화를 지속적으로 모니터링하고 필요시 추가 튜닝 (시스템 등) 수행</li>
@@ -153,14 +153,14 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-검증테스트-절차도">데이터 마이그레이션 검증테스트 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-마이그레이션-검증테스트-절차도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션-검증테스트-세부절차">데이터 마이그레이션 검증테스트 세부절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-마이그레이션-검증테스트-세부절차">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 검증팀 구성</td><td>-</td><td>-</td></tr><tr><td>2. 검증 범위 식별</td><td>-</td><td>-</td></tr><tr><td>3. 데이터 검증</td><td>-</td><td>-</td></tr><tr><td>4. 시스템 영향도 파악</td><td>-</td><td>-</td></tr><tr><td>5. 시스템 오픈</td><td>-</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 검증팀 구성</td><td>-</td><td>-</td></tr><tr><td>2. 검증 범위 식  별</td><td>-</td><td>-</td></tr><tr><td>3. 데이터 검증</td><td>-</td><td>-</td></tr><tr><td>4. 시스템 영향도 파악</td><td>-</td><td>-</td></tr><tr><td>5. 시스템 오픈</td><td>-</td><td>-</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-마이그레이션시-고려사항">데이터 마이그레이션시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-마이그레이션시-고려사항">​</a></h2>
 <ul>
 <li>테이블 크기에 따라 샘플링하여 마이그레이션 필요</li>
 <li>마이그레이션 실패, 검증 실패시 롤백 시나리오 수립 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a title="기술사 관련 포스트" class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_ZSoL"><a title="기술사 데이터베이스 토픽" class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/db/">pe/database</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_C6pa"><a href="/en/pe/db/data-quality-management/">DQM, 데이터 품질관리</a></h2><div class="container_dCba margin-vert--md"><time datetime="2024-07-23T23:29:49.838Z">July 23, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_XPy2"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span>Gracefullight</span></a></div><small class="avatar__subtitle">Owner</small></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-개념">데이터 품질관리 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-품질관리-개념">​</a></h2>
 <ul>
-<li>좆기 내 외부 정보시스템 및 이해관계자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선  활동</li>
+<li>좆기 내 외부 정보시스템 및 이해관계자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선활동</li>
 <li>안정성, 신뢰성, 이용편의성, 공익성 제고</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-아키텍처-대상">데이터 품질관리 아키텍처, 대상<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-품질관리-아키텍처-대상">​</a></h2>
@@ -173,7 +173,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙도-구성요소">데이터 품질관리 성숙도 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-품질관리-성숙도-구성요소">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 픔질기준</td><td>데이터 품질 정의</td><td>데이터 유효성, 데이터 활용성</td></tr><tr><td>품질관리 프로세스</td><td>데이터 품질기준 향상을 위한 필요 프로세스</td><td>요구사항 관리, 데이터 구조 관리, 데이터 흐름관리, DB관리, 표준 관리</td></tr><tr><td>품질관리 성숙수준</td><td>현재 수준 파악 후 5단계 개선 모형 정의</td><td>도입, 정형화, 통합화, 정량화, 최적화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙-수준">데이터 품질관리 성숙 수준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이  터-품질관리-성숙-수준">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터-품질관리-성숙-수준">데이터 품질관리 성숙 수준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#데이터-품질관리-성숙-수준">​</a></h2>
 <blockquote>
 <p>도형통량최</p>
 </blockquote>
@@ -186,9 +186,9 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성도">뮤테이션 테스트 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#뮤테이션-테스트-구성도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-구성요소">뮤테이션 테스트 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#뮤테이션-테스트-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원본 코드</td><td>테스트할 소스 코드</td><td>소프트웨어의 실제 기능을 수행하는 코드</td></tr><tr><td>뮤턴트</td><td>원본 코드를 변형하여 만든 코드</td><td>의도적으로 결함을 삽입한 코드</td></tr><tr><td>테스트 케이스</td><td>원본 코드와 뮤턴트를 검증하기 위한 테스트 시나리오</td><td>다양한 상황을  가정하여 작성된 테스트</td></tr><tr><td>킬드 뮤턴트</td><td>테스트 케이스가 검출한 뮤턴트</td><td>뮤턴트를 정확히 찾아내는 테스트 케이스</td></tr><tr><td>라이브 뮤턴트</td><td>테스트 케이스가 검출하지 못한 뮤턴트</td><td>테스트 케이스의 수정이 필요</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원본 코드</td><td>테스트할 소스 코드</td><td>소프트웨어의 실제 기능을 수행하는 코드</td></tr><tr><td>뮤턴트</td><td>원본 코드를 변형하여 만든 코드</td><td>의도적으로 결함을 삽입한 코드</td></tr><tr><td>테스트 케이스</td><td>원본 코드와 뮤턴트를 검증하기 위한 테스트 시나리오</td><td>다양한 상황을 가정하여 작성된 테스트</td></tr><tr><td>킬드 뮤턴트</td><td>테스트 케이스가 검출한 뮤턴트</td><td>뮤턴트를 정확히 찾아내는 테스트 케이스</td></tr><tr><td>라이브 뮤턴트</td><td>테스트 케이스가 검출하지 못한 뮤턴트</td><td>테스트 케이스의 수정이 필요</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트-오퍼레이터">뮤테이션 테스트 오퍼레이터<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#뮤테이션-테스트-오퍼레이터">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>연산자 교체</td><td>코드 내의 연산자를 다른 연산자로 교체</td><td><code>+</code>를 <code>-</code>로, <code>&gt;</code>를 <code>&lt;</code>로 변경</td></tr><tr><td>상수 값 변경</td><td>코드 내의 상수 값을 다른 값으로 변경</td><td><code>int x = 5;</code>를 <code>int x = 10;</code>으로 변경</td></tr><tr><td>조건문 변경</td><td>조건문의 논리적 또는 비교 연산자를 변경</td><td><code>if (a &gt; b)</code>를 <code>if (a &lt; b)</code>로 변경</td></tr><tr><td>논리적 연산자 변경</td><td>논리적 연산자를 다른 연산자로 교체</td><td><code>and</code>를 <code>or</code>로 변경</td></tr><tr><td>제어 구조 변경</td><td>루프나 조건문 등의 제어 구조를 변경</td><td><code>for</code> 루프를 <code>while</code> 루프로 변경</td></tr><tr><td>문장 삭제</td><td>코드의 특정 문장을 삭제</td><td>변수 할당 문장 또는 조건문 삭제</td></tr><tr><td>반환 값 변경</td><td>메서드의 반환 값을 다른 값으로 변경</td><td><code>return x;</code>를 <code>return -x;</code>로 변경</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>연산자 교체</td><td>코드 내의 연산자를 다른 연산자로 교체</td><td><code>+</code>를 <code>-</code>로, <code>&gt;</code>를 <code>&lt;</code>로 변경</td></tr><tr><td>상수 값 변경</td><td>코드 내의 상수 값을 다른 값으로 변경</td><td><code>int x = 5;</code>를 <code>int x = 10;</code>으로 변경</td></tr><tr><td>조건문 변경</td><td>조건문의 논리적 또는 비교 연산자를 변경</td><td><code>if (a &gt; b)</code>를 <code>if (a &lt; b)</code>로 변경</td></tr><tr><td>논리적 연산자 변경</td><td>논리적 연산자를 다른 연산자로 교체</td><td><code>and</code>를 <code>or</code>로 변경</td></tr><tr><td>제어 구조 변경</td><td>루프나 조건문 등의 제어 구조를 변경</td><td><code>for</code> 루프를 <code>while</code> 루프로 변경</td></tr><tr><td>문장 삭제</td><td>코드의 특  정 문장을 삭제</td><td>변수 할당 문장 또는 조건문 삭제</td></tr><tr><td>반환 값 변경</td><td>메서드의 반환 값을 다른 값으로 변경</td><td><code>return x;</code>를 <code>return -x;</code>로 변경</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="뮤테이션-테스트시-고려사항">뮤테이션 테스트시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#뮤테이션-테스트시-고려사항">​</a></h3>
 <ul>
 <li>많은 뮤턴트 생성으로 인한 높은 컴퓨팅 자원과 결과해석에 대한 인적 리소스 필요</li>
@@ -216,7 +216,7 @@
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성도">엣지컴퓨팅 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#엣지컴퓨팅-구성도">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-구성요소">엣지컴퓨팅 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#엣지컴퓨팅-구성요소">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클라우드</td><td>대규모 데이터 저장, 분석</td><td>중앙 관리</td></tr><tr><td>엣지 노드</td><td>데이터 처리, 저장, 필터링</td><td>디바이스와 클라우드 간 데이터 중재</td></tr><tr><td>엣지 디바이스</td><td>데이터를 수집, 전송, 로컬 처리</td><td>IoT 디바이스, 스마트폰 등</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클라우드</td><td>대규모 데이터 저장, 분석</td><td>중앙 관리</td></tr><tr><td>엣지 노드</td><td>데이터   처리, 저장, 필터링</td><td>디바이스와 클라우드 간 데이터 중재</td></tr><tr><td>엣지 디바이스</td><td>데이터를 수집, 전송, 로컬 처리</td><td>IoT 디바이스, 스마트폰 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-적용방안">엣지컴퓨팅 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#엣지컴퓨팅-적용방안">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>자율주행차</td><td>센서, 데이터 실시간 처리</td><td>실시간 판단, 주행</td></tr><tr><td>스마트시티</td><td>교통, 안전, 에너지 실시간 분석</td><td>관리 효율성</td></tr><tr><td>헬스케어</td><td>환자 데이터 실시간 모니터링</td><td>원격 진료</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="엣지컴퓨팅-장단점">엣지컴퓨팅 장단점<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="/en/page/2/#엣지컴퓨팅-장단점">​</a></h2>
@@ -225,7 +225,7 @@
 <ul>
 <li>매터 등 IoT 표준 프로토콜을 사용하여 확장성 대응</li>
 <li>분산 환경의 로컬 데이터 보안을 위해 E2E 암호화 필요</li>
-<li>탄소인지컴퓨팅 패러다임으로 데이터센터의 탄소 사용량을 절감하기 위해, 엣지컴퓨팅 활성화 필요</li>
+<li>탄소인지컴퓨팅 패러다임으로 데이터센  터의 탄소 사용량을 절감하기 위해, 엣지컴퓨팅 활성화 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_JggH padding--none margin-left--sm"><li class="tag_ZSoL"><a title="기술사 관련 포스트" class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_ZSoL"><a title="기술사 융합IT 토픽" class="tag__ULd tagRegular_Nz6R" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><nav class="pagination-nav" aria-label="Blog list page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/en/"><div class="pagination-nav__label">Newer Entries</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/en/page/3/"><div class="pagination-nav__label">Older Entries</div></a></nav></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Support Me</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.buymeacoffee.com/LOUB2kN" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
                 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="height: auto !important;width: auto !important;">
               </a></li></ul></div><div class="col footer__col"><div class="footer__title">Feeds</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://gracefullight.dev/rss.xml" target="_blank" rel="noopener noreferrer" class="footer__link-item">RSS<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_pvqy"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://gracefullight.dev/atom.xml" target="_blank" rel="noopener noreferrer" class="footer__link-item">Atom<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_pvqy"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2016 - 2023 Gracefullight. Built with Docusaurus.</div></div></div></footer></div>
