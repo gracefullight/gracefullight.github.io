@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 26 Jul 2024 05:17:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jul 2024 05:45:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[SECaaS, Security as a Service]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/secaas/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/secaas/</guid>
+            <pubDate>Fri, 26 Jul 2024 05:45:32 GMT</pubDate>
+            <description><![CDATA[Security as a Service]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-개념">SECaaS 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>온프레미스 보안 솔루션을 자체적으로 구축하고 유지관리하는 대신, 클라우드 서비스를 통해 보안 기능을 사용하는 클라우드 서비스 모델</li>
+<li>비용 절감, 최신 보안기술 도입, 보안서비스 확장 유연성, 유지보수성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-서비스-구성도-서비스-유형-적용사례">SECaaS 서비스 구성도, 서비스 유형, 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-서비스-구성도">SECaaS 서비스 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-서비스-유형">SECaaS 서비스 유형<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>방화벽</td><td>클라우드 기반의 방화벽 서비스로, 트래픽 모니터링 및 제어</td><td>관리 용이</td></tr><tr><td>IDS/IPS</td><td>침입 탐지 및 방지 시스템을 클라우드에서 제공</td><td>실시간 탐지</td></tr><tr><td>웹 보안</td><td>웹 애플리케이션 방화벽(WAF), DDoS 보호 등</td><td>안정성 강화</td></tr><tr><td>이메일 보안</td><td>피싱, 스팸, 멀웨어로부터 이메일 보호</td><td>비즈니스 보호</td></tr><tr><td>데이터 암호화</td><td>데이터 저장 및 전송 시 암호화 서비스</td><td>기밀성 유지</td></tr><tr><td>SIEM</td><td>보안 정보 및 이벤트 관리</td><td>통합 관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-적용사례">SECaaS 적용사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>대기업</td><td>복잡한 보안 요구 사항을 통합 관리</td><td>관리 효율성 증가</td></tr><tr><td>중소기업</td><td>초기 비용 부담 없이 강력한 보안 솔루션 도입</td><td>비용 효율성 높음</td></tr><tr><td>금융기관</td><td>민감한 데이터 보호 및 규제 준수</td><td>높은 보안 수준</td></tr><tr><td>교육기관</td><td>학생 및 교직원 정보 보호, 사이버 공격 방어</td><td>안정성 중요</td></tr><tr><td>의료기관</td><td>환자 정보 보호 및 HIPAA 준수</td><td>규제 준수 필수</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="secaas-도입시-고려사항">SECaaS 도입시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/secaas/#secaas-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>보안 미들웨어는 SPoF가 될 수 있으므로 서비스 제공자의 신뢰성, 안정성, 과거 성과, 데이터 및 개인정보 관리 측면 검토 필요</li>
+<li>클라우드 SLA를 통해 서비스 중단 시 대처 방안 약정 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[EDR, 엔드포인트 감지 및 응답]]></title>
             <link>https://gracefullight.dev/en/pe/sec/edr/</link>
@@ -251,40 +277,9 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>표준화 관리</td><td>표준화 관리체계 구축, 표준 수립, 적용, 산출물 관리</td><td>데이터 표준 사전 작성, 코드 표준 준수</td></tr><tr><td>공통 표준용어 관리</td><td>공통 표준 용어 관리 원칙, 구성요소 및 관리 항목</td><td>재개정시 이해관계자 협의</td></tr><tr><td>메타데이터 관리</td><td>기관 중앙 메타데이터 관리 시스템 구축 및 운영</td><td>메타데이터 표준 관리항목 등록</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-적용방안">공공기관 데이터베이스 표준화지침 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공기관</td><td>표준화 관리체계 구축, 메타데이터 등록 및 관리</td><td>기관 여건에 맞는 시행 세칙 제정</td></tr><tr><td>행정안전부</td><td>예산확보, 지원, 지침 재,개정, 공통 표준 용어 관리</td><td>표준화 협의체 운영</td></tr><tr><td>데이터 활용지원센터</td><td>표준화 정책, 제도 조사 및 연구, 기술 개발 및 지원, 홍보 교육</td><td>전담 조직 구성 및 운영</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="표준화지침-이행시-고려사항">표준화지침 이행시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EF%BF%BD%EF%BF%BD%EC%B9%A8/#%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EC%9D%B4%ED%96%89%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="표준화지침-이행시-고려사항">표준화지침 이행시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EC%9D%B4%ED%96%89%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>표준화 중요성에 대한 인식 제고 및 주기적인 교육 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[CAP, PACELC]]></title>
-            <link>https://gracefullight.dev/en/pe/db/cap-pacelc/</link>
-            <guid>https://gracefullight.dev/en/pe/db/cap-pacelc/</guid>
-            <pubDate>Wed, 24 Jul 2024 02:45:17 GMT</pubDate>
-            <description><![CDATA[CAP, PACELC]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념">CAP 이론 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>분산시스템이 동시에 일관성, 가용성, 분할내성을 모두 만족시킬 수 없다는 이론</li>
-<li>분산시스템의 특성을 이해하고 Trade-Off를 고려하여 데이터베이스를 설계하는 원칙</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념도-구성요소">CAP 이론 개념도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-개념도">CAP 이론 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="cap-이론-구성요소">CAP 이론 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#cap-%EC%9D%B4%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>C + P</td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td>A + P</td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td>C + A</td><td>네트워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도-구성요소">PACELC 이론 개념도, 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-개념도">PACELC 이론 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li>CAP이론을 보완하여 네트워크 분할 여부나 정상 작동 여부에 따라 지연시간과 일관성의 Trade-Off를 고려한 이론</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="pacelc-이론-구성요소">PACELC 이론 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#pacelc-%EC%9D%B4%EB%A1%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PA/EL</td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td>PA/EC</td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td>PC/EL</td><td>장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td>PC/EC</td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-데이터베이스-도입시-고려사항">NoSQL 데이터베이스 도입시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/db/cap-pacelc/#nosql-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>MongoDB 등 NOSQL의 오픈소스 라이센스가 SSPL로 이동함에 따라 CSP 서비스 개발시 Fork 버전 사용 등 대안 마련</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
