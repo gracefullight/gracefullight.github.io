@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-26T05:45:32.807Z</updated>
+    <updated>2024-07-26T06:00:09.876Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[K-PaaS]]></title>
+        <id>https://gracefullight.dev/pe/conv/k-paas/</id>
+        <link href="https://gracefullight.dev/pe/conv/k-paas/"/>
+        <updated>2024-07-26T06:00:09.876Z</updated>
+        <summary type="html"><![CDATA[k-paas]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-개념">K-PaaS 개념<a class="hash-link" aria-label="K-PaaS 개념에 대한 직접 링크" title="K-PaaS 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>개방형 클라우드 플랫폼 표준모델(K-PaaS 표준모델, 오픈소스)과 이를 기반으로 K-PaaS 적합성을 인증받은
+클라우드플랫폼서비스와 솔루션들을 통칭</li>
+<li>HW자원의 효율적 활용, SW자원의 신속한 제공, 간편한 SW유지보수, 안정적 시스템 운영, <mark class="flexible-marker flexible-marker-default">클라우드 이동성 확보</mark></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-구성도-인증-대상">K-PaaS 구성도, 인증 대상<a class="hash-link" aria-label="K-PaaS 구성도, 인증 대상에 대한 직접 링크" title="K-PaaS 구성도, 인증 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%9D%B8%EC%A6%9D-%EB%8C%80%EC%83%81">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-인증-대상">K-PaaS 인증 대상<a class="hash-link" aria-label="K-PaaS 인증 대상에 대한 직접 링크" title="K-PaaS 인증 대상에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EC%9D%B8%EC%A6%9D-%EB%8C%80%EC%83%81">​</a></h3>
+<table><thead><tr><th>구분</th><th>대상</th><th>내용</th></tr></thead><tbody><tr><td>K-PaaS 적합성 인증</td><td>PaaS</td><td>K-PaaS 코어, API 지원 취약점 점검 통과한 클라우드 플랫폼 서비스</td></tr><tr><td>K-PaaS 호환성 인증</td><td>SaaS</td><td>단일/멀티 클라우드 플랫폼에서 배포 및 운용가능한 클라우드 서비스</td></tr><tr><td>K-PaaS 호환성 연동형 인증</td><td>백엔드 서비스</td><td>K-PaaS와 연동을 통해 제공하는 DB, Queue 등 백엔드 클라우드 서비스</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-인증-절차">K-PaaS 인증 절차<a class="hash-link" aria-label="K-PaaS 인증 절차에 대한 직접 링크" title="K-PaaS 인증 절차에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EC%9D%B8%EC%A6%9D-%EC%A0%88%EC%B0%A8">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="k-paas-고려사항">K-PaaS 고려사항<a class="hash-link" aria-label="K-PaaS 고려사항에 대한 직접 링크" title="K-PaaS 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#k-paas-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">재난관리 의무 사업자</mark>들의 멀티 클라우드 도입을 위한 K-PaaS 고려 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="참조">참조<a class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/k-paas/#%EC%B0%B8%EC%A1%B0">​</a></h2>
+<ul>
+<li><a href="https://k-paas.or.kr/intro/history" target="_blank" rel="noopener noreferrer">K-PaaS: 소개</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SECaaS, Security as a Service]]></title>
         <id>https://gracefullight.dev/pe/sec/secaas/</id>
@@ -208,14 +241,14 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="drp-개념도-핵심요소-재해복구센터-구성방안">DRP 개념도, 핵심요소, 재해복구센터 구성방안<a class="hash-link" aria-label="DRP 개념도, 핵심요소, 재해복구센터 구성방안에 대한 직접 링크" title="DRP 개념도, 핵심요소, 재해복구센터 구성방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B5%AC%EC%84%B1%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="drp-개념도">DRP 개념도<a class="hash-link" aria-label="DRP 개념도에 대한 직접 링크" title="DRP 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="drp-핵심요소">DRP 핵심요소<a class="hash-link" aria-label="DRP 핵심요소에 대한 직접 링크" title="DRP 핵심요소에 대한 직접 링�크" href="https://gracefullight.dev/pe/sec/drp/#drp-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="drp-핵심요소">DRP 핵심요소<a class="hash-link" aria-label="DRP 핵심요소에 대한 직접 링크" title="DRP 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">업무영향 분석</mark></td><td>재해가 비즈니스에 미치는 영향을 분석하는 프로세스</td><td>복구 우선순위 및 목표 설정 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">운영 방안</mark></td><td>조직체계, 평상시 운영 절차, 재해 시 운영 절차, 모의 훈련 절차 포함</td><td>자원 관리 표준 및 절차 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">백업 방안</mark></td><td>데이터 및 시스템 백업 방안 수립</td><td><mark class="flexible-marker flexible-marker-default">Hot Standby, DB Shadowing, 원격 백업</mark> 등</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">재해복구 센터</mark></td><td>백업센터 운영 형태 및 기술 형태 결정</td><td>백업센터 위치 및 운영 방식 고려</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-구성방안">재해복구센터 구성방안<a class="hash-link" aria-label="재해복구센터 구성방안에 대한 직접 링크" title="재해복구센터 구성방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B5%AC%EC%84%B1%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">백업센터 유형 결정</mark></td><td>자체센터, 외부위탁, 공동이용, 상호이용 등 백업센터 유형 결정</td><td>구축 비용, 운영 효율성, 복구 목표 시간 고려</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">데이터 백업 방식</mark></td><td>데이터 백업 방식 및 범위 결정</td><td>HW 솔루션 또는 SW 백업 방식 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">통신 회선 및 시설</mark></td><td>통신 회선 사용료, 시설 유지비 등 고려</td><td>HW 도입 및 유지 비용 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">비용 산정</mark></td><td>구축 시 소요 비용 비교</td><td>유형별 비용 산정</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-운영형태-기술형태-비교">재해복구센터 운영형태, 기술형태 비교<a class="hash-link" aria-label="재해복구센터 운영형태, 기술형태 비교에 대한 직접 링크" title="재해복구센터 운영형태, 기술형태 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9A%B4%EC%98%81%ED%98%95%ED%83%9C-%EA%B8%B0%EC%88%A0%ED%98%95%ED%83%9C-%EB%B9%84%EA%B5%90">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-운영형태">재해복구센터 운영형태<a class="hash-link" aria-label="재해복구센터 운영형태에 대한 직접 링크" title="재해복구센터 운영형태에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9A%B4%EC%98%81%ED%98%95%ED%83%9C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>독자 구축</td><td>자체적으로 백업센터 구축 및 운영</td><td>보안 용이, 고가 투자 및 운영 비용 소모</td></tr><tr><td>공동 이용</td><td>공동으로 백업센터 구축</td><td>비용 절감, 보안 이슈</td></tr><tr><td>상호 이용</td><td>기업 간 상호 백업센터 역할 수행</td><td>비용 절감 가능, 절차 협의 어려움</td></tr><tr><td>외부 위탁</td><td>외부 전문 업체에 백업센터 운영 위탁</td><td>비용 절감, 보안 및 데이터 관리 이슈</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-기술형태">재해복구센터 기술형태<a class="hash-link" aria-label="재해복구센터 기술형태에 대한 직접 링크" title="재해복구센터 기술형태에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EF%BF%BD%EA%B8%B0%EC%88%A0%ED%98%95%ED%83%9C">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-기술형태">재해복구센터 기술형태<a class="hash-link" aria-label="재해복구센터 기술형태에 대한 직접 링크" title="재해복구센터 기술형태에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B8%B0%EC%88%A0%ED%98%95%ED%83%9C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">Mirror Site</mark></td><td>실시간 데이터 복제 및 동기화</td><td>높은 비용, 완전한 데이터 복구 가능</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Hot Site</mark></td><td>주요 시스템과 데이터를 즉시 사용 가능하게 유지</td><td>빠른 복구, 높은 유지 비용</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Warm Site</mark></td><td>필요한 자원과 데이터를 일부 준비</td><td>복구 시간 길지만 비용 절감</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Cold Site</mark></td><td>최소한의 자원만 준비, 필요 시 추가 설치</td><td>비용 절감, 복구 시간 길어짐</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구-전략-수립시-고려사항">재해복구 전략 수립시 고려사항<a class="hash-link" aria-label="재해복구 전략 수립시 고려사항에 대한 직접 링크" title="재해복구 전략 수립시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC-%EC%A0%84%EB%9E%B5-%EC%88%98%EB%A6%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -282,7 +315,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>환경 경영 시스템</td><td>환경 목표 및 방향 설정</td><td>조직의 전반적인 환경 관리 프레임워크 설정</td></tr><tr><td>환경 성과 평가</td><td>환경 성과 체계적 평가</td><td>환경 영향 및 개선 사항 지속적 모니터링</td></tr><tr><td>환경 라벨링</td><td>제품 환경 성과 표시</td><td>소비자 인식 향상 및 친환경 제품 판촉 기여</td></tr><tr><td>온실가스 배출량 및 제거량 측정</td><td>온실가스 배출량 측정 및 관리</td><td>기후 변화 완화 및 규제 준수 지원</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-적용방안">ISO 14000 적용방안<a class="hash-link" aria-label="ISO 14000 적용방안에 대한 직접 링크" title="ISO 14000 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/iso-14000/#iso-14000-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Standard</td><td>ISO 14001, ISO 14004 등의 구체적 표준 적용</td><td>환경 경영 시스템 요구사항 및 시스템 가이드라인 제공</td></tr><tr><td>Process</td><td>환경 영향 평가, 자원 사용량 모니터링, 폐기물 관리 등 프로세스 도입</td><td>환경 성과 지표 설정, 데이터 수집 및 분석</td></tr><tr><td>Organization</td><td>전사적 환경 경영 체계 구축, 모든 부서 환경 목표 공유</td><td>부서별 역할과 책임 명확히 정의, 전사적 협력 유도</td></tr><tr><td>Technology</td><td>최신 기술 도입, 에너지 효율성 향상, 오염 물질 배출 최소화</td><td>탄소인지시스템, 오염 방지 기술 도입</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-고려사항">ISO 14000 고려사항<a class="hash-link" aria-label="ISO 14000 고려사항에 대한 직접 링크" title="ISO 14000 고려사항에 대한 직접 링��크" href="https://gracefullight.dev/pe/mng/iso-14000/#iso-14000-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-고려사항">ISO 14000 고려사항<a class="hash-link" aria-label="ISO 14000 고려사항에 대한 직접 링크" title="ISO 14000 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/mng/iso-14000/#iso-14000-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>법규 및 규제 준수, 경영진의 적극적 참여와 지원 필요</li>
 <li>지속적 개선과 이해관계자 참여, 효과적인 커뮤니케이션 필요</li>
@@ -293,34 +326,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-management" term="pe/it-management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[공공기관 데이터베이스 표준화지침]]></title>
-        <id>https://gracefullight.dev/pe/db/공공기관-데이터베이스-표준화지침/</id>
-        <link href="https://gracefullight.dev/pe/db/공공기관-데이터베이스-표준화지침/"/>
-        <updated>2024-07-24T03:21:21.567Z</updated>
-        <summary type="html"><![CDATA[공공기관 데이터베이스 표준화지침]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-개념">공공기관 데이터베이스 표준화지침 개념<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 개념에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>공공기관이 생성 또는 취득하여 관리하는 데이터베이스 표준화에 필요한 세부 사항을 정립한 지침</li>
-<li>데이터 품질향상, 호환성, 공공기관 간 데이터 상호운용성, 공공데이터 신뢰성, 투명성 보장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성도-구성요소-적용방안">공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성도">공공기관 데이터베이스 표준화지침 구성도<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성도에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 ��구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성요소">공공기관 데이터베이스 표준화지침 구성요소<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성요소에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>표준화 관리</td><td>표준화 관리체계 구축, 표준 수립, 적용, 산출물 관리</td><td>데이터 표준 사전 작성, 코드 표준 준수</td></tr><tr><td>공통 표준용어 관리</td><td>공통 표준 용어 관리 원칙, 구성요소 및 관리 항목</td><td>재개정시 이해관계자 협의</td></tr><tr><td>메타데이터 관리</td><td>기관 중앙 메타데이터 관리 시스템 구축 및 운영</td><td>메타데이터 표준 관리항목 등록</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-적용방안">공공기관 데이터베이스 표준화지침 적용방안<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 적용방안에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공기관</td><td>표준화 관리체계 구축, 메타데이터 등록 및 관리</td><td>기관 여건에 맞는 시행 세칙 제정</td></tr><tr><td>행정안전부</td><td>예산확보, 지원, 지침 재,개정, 공통 표준 용어 관리</td><td>표준화 협의체 운영</td></tr><tr><td>데이터 활용지원센터</td><td>표준화 정책, 제도 조사 및 연구, 기술 개발 및 지원, 홍보 교육</td><td>전담 조직 구성 및 운영</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="표준화지침-이행시-고려사항">표준화지침 이행시 고려사항<a class="hash-link" aria-label="표준화지침 이행시 고려사항에 대한 직접 링크" title="표준화지침 이행시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EC%9D%B4%ED%96%89%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>표준화 중요성에 대한 인식 제고 및 주기적인 교육 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/database" term="pe/database"/>
     </entry>
 </feed>
