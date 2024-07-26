@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 26 Jul 2024 04:42:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Jul 2024 05:17:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[EDR, 엔드포인트 감지 및 응답]]></title>
+            <link>https://gracefullight.dev/pe/sec/edr/</link>
+            <guid>https://gracefullight.dev/pe/sec/edr/</guid>
+            <pubDate>Fri, 26 Jul 2024 05:17:11 GMT</pubDate>
+            <description><![CDATA[Endpoint Detection and Response]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="edr-개념">EDR 개념<a class="hash-link" aria-label="EDR 개념에 대한 직접 링크" title="EDR 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>IDS, IPS 기능을 포함하여 네트워크의 엔드포인트에서 발생하는 보안 이벤트를 실시간으로 감지하고 대응하는 기술</li>
+<li>복잡한 위협 환경 실시간 대응 가능, 포렌식 및 분석 기능 제공, 통합 정책 적용, 관리 용이</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="edr-구성도-구성요소-적용방안">EDR 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="EDR 구성도, 구성요소, 적용방안에 대한 직접 링크" title="EDR 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="edr-구성도">EDR 구성도<a class="hash-link" aria-label="EDR 구성도에 대한 직접 링크" title="EDR 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="edr-구성요소">EDR 구성요소<a class="hash-link" aria-label="EDR 구성요소에 대한 직접 링크" title="EDR 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 수집 에이전트</td><td>엔드포인트에서 데이터를 실시간으로 수집</td><td>다양한 OS 지원</td></tr><tr><td>중앙 관리 서버</td><td>수집된 데이터를 중앙에서 관리 및 저장</td><td>확장 가능성</td></tr><tr><td>위협 분석 엔진</td><td>수집된 데이터를 분석하여 위협을 탐지</td><td>AI/ML 기반</td></tr><tr><td>실시간 경고 시스템</td><td>위협이 탐지되면 관리자에게 경고 알림을 전송</td><td>즉각적인 대응</td></tr><tr><td>대응 및 격리 조치</td><td>탐지된 위협에 대해 즉각적인 대응 및 격리 조치 수행</td><td>자동화 가능</td></tr><tr><td>보고 및 포렌식 분석</td><td>위협에 대한 보고서 작성 및 포렌식 분석 제공</td><td>감사 및 컴플라이언스</td></tr><tr><td>보안 오케스트레이션</td><td>다양한 보안 솔루션과의 연계 및 조정</td><td>통합 관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="edr-적용방안">EDR 적용방안<a class="hash-link" aria-label="EDR 적용방안에 대한 직접 링크" title="EDR 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>엔드포인트</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데스크탑/노트북</td><td>실시간 위협 탐지 및 대응, 사용자 활동 모니터링</td><td>다양한 OS 지원</td></tr><tr><td>서버</td><td>중요 데이터 보호, 서버 자원 모니터링 및 침입 탐지</td><td>고가용성 필요</td></tr><tr><td>모바일 기기</td><td>모바일 보안 위협 탐지 및 데이터 유출 방지</td><td>BYOD 정책 준수</td></tr><tr><td>IoT 장치</td><td>IoT 특화 위협 탐지 및 대응, 장치 간 통신 모니터링</td><td>경량 에이전트 필요</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="edr-고려사항">EDR 고려사항<a class="hash-link" aria-label="EDR 고려사항에 대한 직접 링크" title="EDR 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>조직의 성장으로 인한 엔드포인트 확장성과, 다양한 운영체제, 디바이스 호환성 고려 필요</li>
+<li>생성형 AI 기반 검증, 감사용 데이터로 보안 로그를 활용할 수 있도록 로깅 포맷의 정형화 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[사이버 복원력]]></title>
             <link>https://gracefullight.dev/pe/sec/cyber-resilience/</link>
@@ -219,7 +245,7 @@
 <li>데이터 품질향상, 호환성, 공공기관 간 데이터 상호운용성, 공공데이터 신뢰성, 투명성 보장</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성도-구성요소-적용방안">공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성도">공공기관 데이터베이스 표준화지침 구성도<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성도에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성도에 대��한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성도">공공기관 데이터베이스 표준화지침 구성도<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성도에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성도에 대�한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_n3DU" id="공공기관-데이터베이스-표준화지침-구성요소">공공기관 데이터베이스 표준화지침 구성요소<a class="hash-link" aria-label="공공기관 데이터베이스 표준화지침 구성요소에 대한 직접 링크" title="공공기관 데이터베이스 표준화지침 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/db/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8/#%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%91%9C%EC%A4%80%ED%99%94%EC%A7%80%EC%B9%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>표준화 관리</td><td>표준화 관리체계 구축, 표준 수립, 적용, 산출물 관리</td><td>데이터 표준 사전 작성, 코드 표준 준수</td></tr><tr><td>공통 표준용어 관리</td><td>공통 표준 용어 관리 원칙, 구성요소 및 관리 항목</td><td>재개정시 이해관계자 협의</td></tr><tr><td>메타데이터 관리</td><td>기관 중앙 메타데이터 관리 시스템 구축 및 운영</td><td>메타데이터 표준 관리항목 등록</td></tr></tbody></table>
@@ -259,36 +285,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="nosql-데이터베이스-도입시-고려사항">NoSQL 데이터베이스 도입시 고려사항<a class="hash-link" aria-label="NoSQL 데이터베이스 도입시 고려사항에 대한 직접 링크" title="NoSQL 데이터베이스 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/cap-pacelc/#nosql-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>MongoDB 등 NOSQL의 오픈소스 라이센스가 SSPL로 이동함에 따라 CSP 서비스 개발시 Fork 버전 사용 등 대안 마련</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[샤딩, 파티셔닝]]></title>
-            <link>https://gracefullight.dev/pe/db/sharding-partitioning/</link>
-            <guid>https://gracefullight.dev/pe/db/sharding-partitioning/</guid>
-            <pubDate>Wed, 24 Jul 2024 02:33:02 GMT</pubDate>
-            <description><![CDATA[Sharding and Partitioning]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-개념">샤딩, 파티셔닝 개념<a class="hash-link" aria-label="샤딩, 파티셔닝 개념에 대한 직접 링크" title="샤딩, 파티셔닝 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B0%9C%EB%85%90">​</a></h2>
-<!-- -->
-<ul>
-<li>파티셔닝: 큰 테이블을 관리하기 쉬운 단위로 분할하는 기법</li>
-<li>샤딩: 테이블을 분리하여 다수의 물리DB서버에 분산 저장하는 기법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법<a class="hash-link" aria-label="샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법에 대한 직접 링크" title="샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EA%B3%A0-%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a class="hash-link" aria-label="샤딩, 파티셔닝 구성요소 비교에 대한 직접 링크" title="샤딩, 파티셔닝 구성요소 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%83%A4%EB%94%A9-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>샤딩</th><th>파티셔닝</th></tr></thead><tbody><tr><td>목적</td><td>데이터 분산저장, 고가용성, 성능</td><td>데이터 관리용이, 성능</td></tr><tr><td>분할방법</td><td>수평분할</td><td>수평, 수직분할</td></tr><tr><td>분할관점</td><td>테이블을 여러 DB로 분할</td><td>하나의 DB에서 테이블 분할</td></tr><tr><td>관리노드</td><td>샤드간 라우팅 수행용 마스터</td><td>마스터노드 없음</td></tr><tr><td>테이블연동</td><td>분할 테이블 간 조인 불가</td><td>테이블 간 조인 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="주요-데이터베이스-분할-기법">주요 데이터베이스 분할 기법<a class="hash-link" aria-label="주요 데이터베이스 분할 기법에 대한 직접 링크" title="주요 데이터베이스 분할 기법에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EC%A3%BC%EC%9A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EA%B8%B0%EB%B2%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도-세부절차">데이터베이스 분할 절차도, 세부절차<a class="hash-link" aria-label="데이터베이스 분할 절차도, 세부절차에 대한 직접 링크" title="데이터베이스 분할 절차도, 세부절차에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-절차도">데이터베이스 분할 절차도<a class="hash-link" aria-label="데이터베이스 분할 절차도에 대한 직접 링크" title="데이터베이스 분할 절차도에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%EF%BF%BD%EF%BF%BD%ED%95%A0-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할-세부절자">데이터베이스 분할 세부절자<a class="hash-link" aria-label="데이터베이스 분할 세부절자에 대한 직접 링크" title="데이터베이스 분할 세부절자에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0-%EC%84%B8%EB%B6%80%EC%A0%88%EC%9E%90">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. 분할 필요성 증가</td><td>-</td><td>-</td></tr><tr><td>2. 분할 방법 결정</td><td>-</td><td>-</td></tr><tr><td>3. AS-IS 성능 측정</td><td>-</td><td>-</td></tr><tr><td>4. 분할 적용, 이관</td><td>-</td><td>-</td></tr><tr><td>5. 어플리케이션 수정</td><td>-</td><td>-</td></tr><tr><td>6. 테스트, 모니터링</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="데이터베이스-분할시-고려사항">데이터베이스 분할시 고려사항<a class="hash-link" aria-label="데이터베이스 분할시 고려사항에 대한 직접 링크" title="데이터베이스 분할시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/db/sharding-partitioning/#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B6%84%ED%95%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>수평적 확장이 핑료한 대규모 데이터 분할시 샤딩 고려</li>
-<li>특정 액세스 패턴 최적화시 파티셔닝 고려</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
