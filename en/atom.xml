@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-26T06:00:09.876Z</updated>
+    <updated>2024-07-29T10:58:42.467Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[플랫폼 엔지니어링]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/platform-engineering/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/platform-engineering/"/>
+        <updated>2024-07-29T10:58:42.467Z</updated>
+        <summary type="html"><![CDATA[Platform Engineering]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링의-개념">플랫폼 엔지니어링의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>다양한 애플리케이션과 서비스의 효율적 개발, 운영, 관리, 배포를 위해 공통된 플랫폼을 설계, 구축, 유지하는 엔지니어링 분야</li>
+<li>개발 효율성 증대, 일관된 품질 확보, 공통된 플랫폼으로 시스템 유지보수 용이, 자동화로 인한 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링-구성도-구성요소-적용방안">플랫폼 엔지니어링 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링-구성도">플랫폼 엔지니어링 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링-구성요소">플랫폼 엔지니어링 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개발자 도구</td><td>코드 리포지토리, 테스트 자동화 도구</td><td>Git, Jenkins</td></tr><tr><td>CI/CD 파이프라인</td><td>빌드 자동화, 배포 자동화</td><td>Jenkins, GitLab</td></tr><tr><td>모니터링 및 로깅</td><td>모니터링 대시보드, 로그 분석</td><td>Prometheus, ELK</td></tr><tr><td>인프라 관리</td><td>클라우드 인프라, 온프레미스 인프라</td><td>AWS, GCP, Azure</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링-적용방안">플랫폼 엔지니어링 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>공공 데이터와 서비스를 통합 관리하여 효율성 증대</td><td>데이터 통합 및 관리 효율성 향상</td></tr><tr><td>금융</td><td>데이터 암호화와 접근 제어를 통한 보안 강화</td><td>금융 데이터 보호</td></tr><tr><td>민간</td><td>모듈화된 아키텍처로 다양한 비즈니스 요구 대응</td><td>유연한 비즈니스 확장</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링시-고려사항">플랫폼 엔지니어링시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>개발자가 아닌 조직 구성원이 쉽게 데이터를 확인하고, 사용할 수 있는 FaaS, Jupyter Notebook 인터페이스 제공</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[K-PaaS]]></title>
         <id>https://gracefullight.dev/en/pe/conv/k-paas/</id>
@@ -294,38 +323,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ISO 14000]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/iso-14000/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/iso-14000/"/>
-        <updated>2024-07-24T05:21:28.070Z</updated>
-        <summary type="html"><![CDATA[ISO 14000]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-개념">ISO 14000 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>기업이 <mark class="flexible-marker flexible-marker-default">환경 성과를 개선하고 법규를 준수</mark>하도록 하는 <mark class="flexible-marker flexible-marker-default">환경 경영 시스템(EMS)에 대한 국제 표준</mark></li>
-<li>환경 보호의 필요성 증가, 지속 가능한 발전, 파리협약-RE100 등 국제 협약 준수</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-구성도-구성요소-적용방안">ISO 14000 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-구성도">ISO 14000 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">환경 경영 시스템</mark>, <mark class="flexible-marker flexible-marker-default">환경 성과 평가</mark>, <mark class="flexible-marker flexible-marker-default">온실가스 측정</mark></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-구성요소">ISO 14000 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>환경 경영 시스템</td><td>환경 목표 및 방향 설정</td><td>조직의 전반적인 환경 관리 프레임워크 설정</td></tr><tr><td>환경 성과 평가</td><td>환경 성과 체계적 평가</td><td>환경 영향 및 개선 사항 지속적 모니터링</td></tr><tr><td>환경 라벨링</td><td>제품 환경 성과 표시</td><td>소비자 인식 향상 및 친환경 제품 판촉 기여</td></tr><tr><td>온실가스 배출량 및 제거량 측정</td><td>온실가스 배출량 측정 및 관리</td><td>기후 변화 완화 및 규제 준수 지원</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-적용방안">ISO 14000 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Standard</td><td>ISO 14001, ISO 14004 등의 구체적 표준 적용</td><td>환경 경영 시스템 요구사항 및 시스템 가이드라인 제공</td></tr><tr><td>Process</td><td>환경 영향 평가, 자원 사용량 모니터링, 폐기물 관리 등 프로세스 도입</td><td>환경 성과 지표 설정, 데이터 수집 및 분석</td></tr><tr><td>Organization</td><td>전사적 환경 경영 체계 구축, 모든 부서 환경 목표 공유</td><td>부서별 역할과 책임 명확히 정의, 전사적 협력 유도</td></tr><tr><td>Technology</td><td>최신 기술 도입, 에너지 효율성 향상, 오염 물질 배출 최소화</td><td>탄소인지시스템, 오염 방지 기술 도입</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="iso-14000-고려사항">ISO 14000 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/iso-14000/#iso-14000-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>법규 및 규제 준수, 경영진의 적극적 참여와 지원 필요</li>
-<li>지속적 개선과 이해관계자 참여, 효과적인 커뮤니케이션 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-management" term="pe/it-management"/>
     </entry>
 </feed>
