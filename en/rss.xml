@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 29 Jul 2024 10:58:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jul 2024 11:09:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[촉각 인터넷]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/tactile-internet/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/tactile-internet/</guid>
+            <pubDate>Mon, 29 Jul 2024 11:09:59 GMT</pubDate>
+            <description><![CDATA[Tactile Internet]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-개념">촉각인터넷 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>초저지연 네트워크 기술을 통해 원격지의 물리적, 촉각적 정보를 실시간으로 주고받을 수 있는 인터넷 기술</li>
+<li>원격 작업 및 의료, 교육 및 훈련, 가상현실 및 증강현실, 로봇 공학 및 자동화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-구성도-구성요소-적용방안">촉각인터넷 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-구성도">촉각인터넷 구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-구성요소">촉각인터넷 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Human-System Interface (HSI)</td><td>사용자와 시스템 간의 상호작용을 담당</td><td>VR/AR 장치 포함</td></tr><tr><td>센서</td><td>물체의 촉질감, 위치, 압력 등의 정보를 수집</td><td>압전 센서 등</td></tr><tr><td>액추에이터</td><td>수집된 촉각 정보를 물리적 촉각으로 변환</td><td>멀티몰프 구조 압전 액추에이터 등</td></tr><tr><td>구동 드라이버</td><td>센서와 액추에이터를 제어하고 신호를 처리</td><td>저전력 소모 및 고속 응답</td></tr><tr><td>통신</td><td>센서와 액추에이터 간의 데이터를 실시간으로 전송</td><td>5G, 6G 등</td></tr><tr><td>데이터 센터</td><td>모든 데이터의 저장 및 관리</td><td>높은 보안 및 신뢰성 요구</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-적용방안">촉각인터넷 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원격 의료</td><td>원격 수술 및 치료에 사용</td><td>전문 의료 기기 필요</td></tr><tr><td>교육 및 훈련</td><td>현실감 있는 시뮬레이션 및 실습 제공</td><td>VR/AR 헤드셋 및 햅틱 장치 필요</td></tr><tr><td>제조 및 자동화</td><td>로봇의 정밀한 제어 가능</td><td>산업용 로봇 및 제어 시스템 필요</td></tr><tr><td>가상현실/증강현실</td><td>몰입감 있는 사용자 경험 제공</td><td>VR/AR 헤드셋 필요</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="촉각인터넷-고려사항">촉각인터넷 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>촉각인터넷이 제대로 작동하기 위해서 1ms 이하의 지연 시간을 가진 FTTH망 필요</li>
+<li>촉각 피드백을 실시간 데이터 전송 과정에서 보안과 프라이버시 보호 준수</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[플랫폼 엔지니어링]]></title>
             <link>https://gracefullight.dev/en/pe/conv/platform-engineering/</link>
@@ -252,35 +278,6 @@
 <h2 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구-전략-수립시-고려사항">재해복구 전략 수립시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC-%EC%A0%84%EB%9E%B5-%EC%88%98%EB%A6%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li><mark class="flexible-marker flexible-marker-default">복구 시간(RTO), 복구 지점(RPO), 복구 범위(RSO), 커뮤니케이션(RCO), 복구 센터(BCO)</mark>를 모두 고려한 재해복구 전략 수립 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[BCP, 비지니스 연속성 계획]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/bcp/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/bcp/</guid>
-            <pubDate>Wed, 24 Jul 2024 07:25:43 GMT</pubDate>
-            <description><![CDATA[Business Continuity Planning]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념">BCP 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">재해나 위기 상황에서 조직의 핵심 비즈니스 기능이 지속될 수 있도록 마련된 계획</mark>으로 IT 복구뿐만 아니라, <mark class="flexible-marker flexible-marker-default">전체 비즈니스 프로세스의 복원</mark> 목표</li>
-<li><mark class="flexible-marker flexible-marker-default">비지니스 연속성 보장</mark>, 법적 규제 준수, <mark class="flexible-marker flexible-marker-default">고객 신뢰성 확보</mark>, <mark class="flexible-marker flexible-marker-default">재무 손실 최소화</mark></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도-구성요소-절차">BCP 개념도, 구성요소, 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%88%EC%B0%A8">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-개념도">BCP 개념도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-구성요소">BCP 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>종류</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">재해복구</mark></td><td>IT 시스템과 데이터 복구 계획, 시스템 중단 시 신속한 복구 목표</td><td>데이터 백업 및 복구 절차</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">업무복구</mark></td><td>비즈니스 프로세스 복원 계획, 핵심 업무 프로세스가 중단 방지</td><td>핵심 업무 기능 복구 절차 및 우선순위 설정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">업무재개</mark></td><td>중단된 업무의 재개를 위한 구체적인 절차, 계획</td><td>대체 프로세스, 임시 운영 절차</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">비상계획</mark></td><td>비상 상황에 대한 대비와 대응 계획, 예상치 못한 사건에 대한 대응</td><td>위기 관리 팀 구성, 대응 매뉴얼 마련</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bia-절차">BIA 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bia-%EC%A0%88%EC%B0%A8">​</a></h2>
-<blockquote>
-<p>Business Impact Analysis</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">주요 업무 식별</mark></td><td>비즈니스 운영에 필수적인 핵심 업무 프로세스 식별</td><td>조직의 가치 사슬 분석</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">재해 유형 분석</mark></td><td>재해의 유형과 발생 가능성을 분석, 비즈니스 영향 평가</td><td>FMEA</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">손실 평가</mark></td><td>재해 발생 시 예상되는 재무적, 운영적 손실 평가</td><td>재무적, 운영적, 법적 손실 평가 기준 설정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">우선순위 설정</mark></td><td>복구 대상의 우선순위를 설정하고, 복구 순서 결정</td><td>손실 비용 기반</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">복구 목표 설정</mark></td><td>서비스 목표 복구 시간, 데이터 손실 허용 시간 설정</td><td><mark class="flexible-marker flexible-marker-default">RTO</mark>: 2h, <mark class="flexible-marker flexible-marker-default">RPO</mark>: 0</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="bcp-성공-포인트">BCP 성공 포인트<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/bcp/#bcp-%EC%84%B1%EA%B3%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">정기적인 훈련과 모의 테스트</mark>를 통한 실전 대응 능력 향상</li>
-<li><mark class="flexible-marker flexible-marker-default">Third Party Risk Management 전략 수립</mark></li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
