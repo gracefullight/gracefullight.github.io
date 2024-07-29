@@ -13,7 +13,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/platform-engineering/"/>
         <updated>2024-07-29T10:58:42.467Z</updated>
         <summary type="html"><![CDATA[Platform Engineering]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링의-개념">플랫폼 엔지니어링의 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%9D%98-%EA%B0%9C%EB%85%90">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="플랫폼-엔지니어링-개념">플랫폼 엔지니어링 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B0%9C%EB%85%90">​</a></h2>
 <ul>
 <li>다양한 애플리케이션과 서비스의 효율적 개발, 운영, 관리, 배포를 위해 공통된 플랫폼을 설계, 구축, 유지하는 엔지니어링 분야</li>
 <li>개발 효율성 증대, 일관된 품질 확보, 공통된 플랫폼으로 시스템 유지보수 용이, 자동화로 인한 비용 절감</li>
