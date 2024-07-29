@@ -5,7 +5,7 @@ description: poe
 authors: me
 tags: 
   - pe
-  - pe/ca
+  - pe/nw
 ---
 
 ## PoE 개념
