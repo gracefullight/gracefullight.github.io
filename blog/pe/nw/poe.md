@@ -35,7 +35,7 @@ graph LR
     E1 -->|전기| D1
   end
 
-  subgraph To-Be
+  subgraph TO-BE
     direction BT
     A2[PoE 스위치]
     C2[IP 카메라]
