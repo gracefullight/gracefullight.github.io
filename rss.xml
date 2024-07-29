@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 29 Jul 2024 11:09:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jul 2024 11:32:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Power over Ethernet]]></title>
+            <link>https://gracefullight.dev/pe/ca/poe/</link>
+            <guid>https://gracefullight.dev/pe/ca/poe/</guid>
+            <pubDate>Mon, 29 Jul 2024 11:32:58 GMT</pubDate>
+            <description><![CDATA[poe]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="poe-개념">PoE 개념<a class="hash-link" aria-label="PoE 개념에 대한 직접 링크" title="PoE 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>하나의 이더넷 케이블을 통해 데이터와 전력을 동시에 공급할 수 있는 기술</li>
+<li>전력 케이블이 없으므로 간편한 설치, 유연한 배치 가능, PoE 스위치를 통한 중앙 집중 전력 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="poe-구성도-구성요소-적용방안">PoE 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="PoE 구성도, 구성요소, 적용방안에 대한 직접 링크" title="PoE 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="poe-구성도">PoE 구성도<a class="hash-link" aria-label="PoE 구성도에 대한 직접 링크" title="PoE 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="poe-구성요소">PoE 구성요소<a class="hash-link" aria-label="PoE 구성요소에 대한 직접 링크" title="PoE 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PSE (Power Sourcing Equipment)</td><td>전력을 공급하는 장비</td><td>PoE 스위치, PoE 인젝터</td></tr><tr><td>PD (Powered Device)</td><td>전력을 받는 장비</td><td>IP 카메라, 무선 AP, VoIP 전화기 등</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="poe-적용방안">PoE 적용방안<a class="hash-link" aria-label="PoE 적용방안에 대한 직접 링크" title="PoE 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>VoIP 전화기</td><td>PoE를 통해 전원 공급 및 네트워크 연결</td><td>설치 간소화 및 비용 절감</td></tr><tr><td>무선 액세스 포인트</td><td>PoE로 전력 및 데이터 공급</td><td>위치 유연성 증가</td></tr><tr><td>IP 카메라</td><td>PoE로 전력 및 데이터 공급</td><td>보안 시스템 구축 용이</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="poe-기술-표준">PoE 기술 표준<a class="hash-link" aria-label="PoE 기술 표준에 대한 직접 링크" title="PoE 기술 표준에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B8%B0%EC%88%A0-%ED%91%9C%EC%A4%80">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="poe-ieee-국제-표준">PoE IEEE 국제 표준<a class="hash-link" aria-label="PoE IEEE 국제 표준에 대한 직접 링크" title="PoE IEEE 국제 표준에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-ieee-%EA%B5%AD%EC%A0%9C-%ED%91%9C%EC%A4%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IEEE 802.3af</td><td>최대 15.4W 전력 공급</td><td>기본적인 IP 전화기 및 무선 AP에 적합</td></tr><tr><td>IEEE 802.3at (PoE+)</td><td>최대 25.5W 전력 공급</td><td>고성능 IP 카메라 및 고급 VoIP 전화기 지원</td></tr><tr><td>IEEE 802.3bt (PoE++) Type 3</td><td>최대 60W 전력 공급</td><td>PTZ 카메라 및 멀티채널 무선 AP에 적합</td></tr><tr><td>IEEE 802.3bt (PoE++) Type 4</td><td>최대 100W 전력 공급</td><td>디지털 사이니지 및 고성능 장비에 적합</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_n3DU" id="poe-ieee-국내-표준">PoE IEEE 국내 표준<a class="hash-link" aria-label="PoE IEEE 국내 표준에 대한 직접 링크" title="PoE IEEE 국내 표준에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-ieee-%EA%B5%AD%EB%82%B4-%ED%91%9C%EC%A4%80">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>전파법</td><td>전자파 적합성 인증 필요</td><td>전자파 간섭 방지</td></tr><tr><td>전기통신기술기준</td><td>네트워크 장비의 안전성과 성능 규정</td><td>전력 공급 관련 안전성 기준</td></tr><tr><td>KS C IEC 60950</td><td>정보기기 안전성 표준</td><td>과전압, 과전류 보호 장치 포함</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_n3DU" id="poe-고려사항">PoE 고려사항<a class="hash-link" aria-label="PoE 고려사항에 대한 직접 링크" title="PoE 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/ca/poe/#poe-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>PoE 네트워크 구축 시 각 장비의 전력 소모량을 고려하여 총 전력 예산 관리 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/computer-architecture</category>
+        </item>
         <item>
             <title><![CDATA[촉각인터넷]]></title>
             <link>https://gracefullight.dev/pe/nw/tactile-internet/</link>
@@ -251,36 +281,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
-        </item>
-        <item>
-            <title><![CDATA[DRP, 재해복구 계획]]></title>
-            <link>https://gracefullight.dev/pe/sec/drp/</link>
-            <guid>https://gracefullight.dev/pe/sec/drp/</guid>
-            <pubDate>Wed, 24 Jul 2024 10:02:11 GMT</pubDate>
-            <description><![CDATA[Disaster Recovery Planning]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_n3DU" id="drp-개념">DRP 개념<a class="hash-link" aria-label="DRP 개념에 대한 직접 링크" title="DRP 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">재해나 재난 발생 시 정보 시스템과 중요 업무 기능의 신속한 복구를 목표로 하는 계획</mark>으로 <mark class="flexible-marker flexible-marker-default">데이터 손실을 방지</mark>하고, <mark class="flexible-marker flexible-marker-default">시스템 다운타임을 최소화</mark></li>
-<li><mark class="flexible-marker flexible-marker-default">비지니스 연속성 유지</mark>, <mark class="flexible-marker flexible-marker-default">데이터 보호</mark>, <mark class="flexible-marker flexible-marker-default">법적 요구사항 준수</mark>, <mark class="flexible-marker flexible-marker-default">재정 손실 최소화</mark></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="drp-개념도-핵심요소-재해복구센터-구성방안">DRP 개념도, 핵심요소, 재해복구센터 구성방안<a class="hash-link" aria-label="DRP 개념도, 핵심요소, 재해복구센터 구성방안에 대한 직접 링크" title="DRP 개념도, 핵심요소, 재해복구센터 구성방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B5%AC%EC%84%B1%EB%B0%A9%EC%95%88">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="drp-개념도">DRP 개념도<a class="hash-link" aria-label="DRP 개념도에 대한 직접 링크" title="DRP 개념도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%EA%B0%9C%EB%85%90%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="drp-핵심요소">DRP 핵심요소<a class="hash-link" aria-label="DRP 핵심요소에 대한 직접 링크" title="DRP 핵심요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#drp-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">업무영향 분석</mark></td><td>재해가 비즈니스에 미치는 영향을 분석하는 프로세스</td><td>복구 우선순위 및 목표 설정 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">운영 방안</mark></td><td>조직체계, 평상시 운영 절차, 재해 시 운영 절차, 모의 훈련 절차 포함</td><td>자원 관리 표준 및 절차 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">백업 방안</mark></td><td>데이터 및 시스템 백업 방안 수립</td><td><mark class="flexible-marker flexible-marker-default">Hot Standby, DB Shadowing, 원격 백업</mark> 등</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">재해복구 센터</mark></td><td>백업센터 운영 형태 및 기술 형태 결정</td><td>백업센터 위치 및 운영 방식 고려</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-구성방안">재해복구센터 구성방안<a class="hash-link" aria-label="재해복구센터 구성방안에 대한 직접 링크" title="재해복구센터 구성방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B5%AC%EC%84%B1%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">백업센터 유형 결정</mark></td><td>자체센터, 외부위탁, 공동이용, 상호이용 등 백업센터 유형 결정</td><td>구축 비용, 운영 효율성, 복구 목표 시간 고려</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">데이터 백업 방식</mark></td><td>데이터 백업 방식 및 범위 결정</td><td>HW 솔루션 또는 SW 백업 방식 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">통신 회선 및 시설</mark></td><td>통신 회선 사용료, 시설 유지비 등 고려</td><td>HW 도입 및 유지 비용 포함</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">비용 산정</mark></td><td>구축 시 소요 비용 비교</td><td>유형별 비용 산정</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-운영형태-기술형태-비교">재해복구센터 운영형태, 기술형태 비교<a class="hash-link" aria-label="재해복구센터 운영형태, 기술형태 비교에 대한 직접 링크" title="재해복구센터 운영형태, 기술형태 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9A%B4%EC%98%81%ED%98%95%ED%83%9C-%EA%B8%B0%EC%88%A0%ED%98%95%ED%83%9C-%EB%B9%84%EA%B5%90">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-운영형태">재해복구센터 운영형태<a class="hash-link" aria-label="재해복구센터 운영형태에 대한 직접 링크" title="재해복구센터 운영형태에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9A%B4%EC%98%81%ED%98%95%ED%83%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>독자 구축</td><td>자체적으로 백업센터 구축 및 운영</td><td>보안 용이, 고가 투자 및 운영 비용 소모</td></tr><tr><td>공동 이용</td><td>공동으로 백업센터 구축</td><td>비용 절감, 보안 이슈</td></tr><tr><td>상호 이용</td><td>기업 간 상호 백업센터 역할 수행</td><td>비용 절감 가능, 절차 협의 어려움</td></tr><tr><td>외부 위탁</td><td>외부 전문 업체에 백업센터 운영 위탁</td><td>비용 절감, 보안 및 데이터 관리 이슈</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구센터-기술형태">재해복구센터 기술형태<a class="hash-link" aria-label="재해복구센터 기술형태에 대한 직접 링크" title="재해복구센터 기술형태에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC%EC%84%BC%ED%84%B0-%EA%B8%B0%EC%88%A0%ED%98%95%ED%83%9C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">Mirror Site</mark></td><td>실시간 데이터 복제 및 동기화</td><td>높은 비용, 완전한 데이터 복구 가능</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Hot Site</mark></td><td>주요 시스템과 데이터를 즉시 사용 가능하게 유지</td><td>빠른 복구, 높은 유지 비용</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Warm Site</mark></td><td>필요한 자원과 데이터를 일부 준비</td><td>복구 시간 길지만 비용 절감</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Cold Site</mark></td><td>최소한의 자원만 준비, 필요 시 추가 설치</td><td>비용 절감, 복구 시간 길어짐</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_n3DU" id="재해복구-전략-수립시-고려사항">재해복구 전략 수립시 고려사항<a class="hash-link" aria-label="재해복구 전략 수립시 고려사항에 대한 직접 링크" title="재해복구 전략 수립시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/drp/#%EC%9E%AC%ED%95%B4%EB%B3%B5%EA%B5%AC-%EC%A0%84%EB%9E%B5-%EC%88%98%EB%A6%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">복구 시간(RTO), 복구 지점(RPO), 복구 범위(RSO), 커뮤니케이션(RCO), 복구 센터(BCO)</mark>를 모두 고려한 재해복구 전략 수립 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
