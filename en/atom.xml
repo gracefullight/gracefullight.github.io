@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-07-29T11:32:58.023Z</updated>
+    <updated>2024-07-29T14:24:30.514Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시/"/>
+        <updated>2024-07-29T14:24:30.514Z</updated>
+        <summary type="html"><![CDATA[행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-개념">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>클라우드 컴퓨팅 서비스의 계약, 이용, 안전성 검토 및 정보 보호 등의 내용을 포함하는 행정기관과 공공기관이 클라우드 컴퓨팅 서비스를 이용할 때 필요한 기준과 안전성 확보 방법을 규정하는 고시</li>
+<li>전자정부법 제54조의2, <mark class="flexible-marker flexible-marker-default">안전성과 효율성 확보</mark>, 이용계약의 체결 및 종료 과정에서 정보의 반환 및 파기 방법 등을 명확히 규정하여 <mark class="flexible-marker flexible-marker-default">정보 보안과 데이터 보호 강화</mark>, 클라우드 컴퓨팅 서비스의 이용 촉진 <mark class="flexible-marker flexible-marker-default">공공부문 디지털 전환 가속</mark></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-구성도-서비스-운영-분야-안전성-검토-항목-적용방안">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 구성도, 서비스 운영 분야 안전성 검토 항목, 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="구성도">구성도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="서비스-운영-분야-안전성-검토-항목">서비스 운영 분야 안전성 검토 항목<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9">​</a></h3>
+<table><thead><tr><th>구분</th><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>필수 검토 항목</td><td>보안성</td><td>서비스 제공자의 클라우드컴퓨팅서비스가 보안인증을 받았는지 여부</td></tr><tr><td>-</td><td>안정성</td><td>서비스 제공자의 재해복구 계획 및 데이터 백업 시스템의 유효성</td></tr><tr><td>-</td><td>법적 준수</td><td>관련 법률 및 규제 준수 여부 확인</td></tr><tr><td>선택 검토 항목</td><td>확장성</td><td>서비스 제공자의 인프라가 향후 확장을 수용할 수 있는지 여부</td></tr><tr><td>-</td><td>비용 효율성</td><td>서비스 이용에 따른 비용 절감 효과 및 경제적 효율성 검토</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="적용방안">적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>적용방안</th><th>비고</th></tr></thead><tbody><tr><td>관리적 측면</td><td>경쟁 입찰 및 수의계약 방식 활용</td><td>계약 방법 준수</td></tr><tr><td>-</td><td>계약 종료 30일 전 통지 및 데이터 반환/파기 방법 안내</td><td>필수 적용</td></tr><tr><td>-</td><td>이용 정보를 범정부 EA포털에 등록 및 관리</td><td>30일 이내</td></tr><tr><td>-</td><td>3년마다 고시의 법령과 현실 여건 변화 검토</td><td>정기적 재검토 필요</td></tr><tr><td>기술적 측면</td><td>클라우드 컴퓨팅 서비스의 보안성 및 안전성 정기 점검</td><td>주기적 점검 필요</td></tr><tr><td>-</td><td>데이터 반환 및 파기 시 암호화하여 안전하게 전송</td><td>정보보호 강화</td></tr><tr><td>-</td><td>재난, 재해 또는 서비스 중단 상황 대비 서비스 연속성 확보 계획 수립</td><td>서비스 안정성 확보</td></tr><tr><td>-</td><td>재해 시 업무 연속성을 위한 재해복구 서비스 활용</td><td>재해 대비</td></tr><tr><td>-</td><td>행정기관의 특성에 맞는 클라우드 서비스 활용 모델 개발 및 보안 요건 협의</td><td>맞춤형 서비스 도입</td></tr><tr><td>-</td><td>클라우드 서비스 구현 시 행정적, 재정적, 기술적 지원 제공</td><td>지원 방안 마련</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-고려사항">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>재난 및 재해 상황에 대비하여 서비스 연속성을 확보하기 위해 BCP, DRP 진행</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Power over Ethernet]]></title>
         <id>https://gracefullight.dev/en/pe/nw/poe/</id>
@@ -23,7 +52,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-구성요소">PoE 구성요소<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/poe/#poe-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>PSE (Power Sourcing Equipment)</td><td>전력을 공급하는 장비</td><td>PoE 스위치, PoE 인젝터</td></tr><tr><td>PD (Powered Device)</td><td>전력을 받는 장비</td><td>IP 카메라, 무선 AP, VoIP 전화기 등</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-적용방안">PoE 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/poe/#poe-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-적용방안">PoE 적용방안<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/poe/#poe-%EF%BF%BD%EF%BF%BD%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>VoIP 전화기</td><td>PoE를 통해 전원 공급 및 네트워크 연결</td><td>설치 간소화 및 비용 절감</td></tr><tr><td>무선 액세스 포인트</td><td>PoE로 전력 및 데이터 공급</td><td>위치 유연성 증가</td></tr><tr><td>IP 카메라</td><td>PoE로 전력 및 데이터 공급</td><td>보안 시스템 구축 용이</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_ekos" id="poe-기술-표준">PoE 기술 표준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/poe/#poe-%EA%B8%B0%EC%88%A0-%ED%91%9C%EC%A4%80">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-ieee-국제-표준">PoE IEEE 국제 표준<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/nw/poe/#poe-ieee-%EA%B5%AD%EC%A0%9C-%ED%91%9C%EC%A4%80">​</a></h3>
@@ -215,7 +244,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">비지니스 연속성</mark></td><td>정보시스템 보호를 넘어 비지니스 임무, 목표의 지속적 달성</td><td><mark class="flexible-marker flexible-marker-default">BCP</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">전사적 활동</mark></td><td>IT자산과 보안부서 활동을 넘어서 전사적 기술, 사람의 노력 필요</td><td>ITAM, ITSM</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">생태계 보호</mark></td><td>상호 연결된 협력사, 외부 기관가 시스템을 보호하기 위한 상호 협력, 정보 공유</td><td><mark class="flexible-marker flexible-marker-default">TPRM</mark></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="사이버-복원력-사이버-보안-비교">사이버 복원력, 사이버 보안 비교<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>사이버 복원력</th><th>사이버 보안</th></tr></thead><tbody><tr><td>개념</td><td>사이버 자산을 운용하는 조직차원에서 역량</td><td>사이버 공격 등 위협으로부터 데이터 및 IT시스템 보호</td></tr><tr><td>객체</td><td>비지니스 결과물 전달 보장</td><td>데이터, 정보시스템, 네트워크 등 보호</td></tr><tr><td>적용 범위</td><td>전사적, 관련 조직, 생태계</td><td>보안 부서</td></tr><tr><td>목표</td><td>비지니스 요구사항, 연속서 유지</td><td>사이버 공격 위험 저하, IT자산 보호</td></tr><tr><td>특징</td><td>사고 예측, 탐지, 복구 역량 강화, 보안 모범 사례 정규화 등</td><td>위협 예방, IT 통제, 접근제어</td></tr><tr><td>관점</td><td>조직차원 내재 역량</td><td>사이버 자산 대상 기술 및 솔루션 도입 보호</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="사이버-복원력-동향">사이버 복원력 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EB%8F%99%ED%96%A5">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="사이버-복��원력-동향">사이버 복원력 동향<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/sec/cyber-resilience/#%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B5%EC%9B%90%EB%A0%A5-%EB%8F%99%ED%96%A5">​</a></h2>
 <ul>
 <li>바이든행정부 국가안보전략 상 사이버복원력 확보를 위한 국가적 협력 강조 및 방안 제시</li>
 <li>주요 기반 시설의 위험을 감소시키고 복원력을 강화하기 위한 <mark class="flexible-marker flexible-marker-default">BCP, DRP</mark> 수립 필요</li>
@@ -290,35 +319,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TPRM, 제3자 리스크 관리]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/tprm/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/tprm/"/>
-        <updated>2024-07-24T10:25:15.771Z</updated>
-        <summary type="html"><![CDATA[Third Party Risk Management]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="tprm-개념">TPRM 개념<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>조직이 외부 파트너, 공급업체, 서비스 제공자 등 서드파티와의 관계에서 발생할 수 있는 리스크를 식별, 평가, 관리 및 모니터링하는 프로세스</li>
-<li>규제 준수, 평판 관리, 정보 보안, 재무 리스크 관리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="tprm-절차도-세부-절차-주요-사례">TPRM 절차도, 세부 절차, 주요 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="tprm-절차도">TPRM 절차도<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EC%A0%88%EC%B0%A8%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="tprm-세부-절차">TPRM 세부 절차<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8">​</a></h3>
-<table><thead><tr><th>단계</th><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>1단계</td><td><mark class="flexible-marker flexible-marker-default">계획</mark></td><td>서드파티 사용 계획 수립, 리스크 평가</td></tr><tr><td>2단계</td><td><mark class="flexible-marker flexible-marker-default">서드파티 선정</mark></td><td>잠재적인 서드파티를 평가, 실사 수행 후 적합한 파트너 선정</td></tr><tr><td>3단계</td><td><mark class="flexible-marker flexible-marker-default">계약</mark> 협상 및 체결</td><td>서드파티 계약 협상 및 체결</td></tr><tr><td>4단계</td><td>지속적 <mark class="flexible-marker flexible-marker-default">모니터링</mark></td><td>서드파티 성과, 리스크 지속적 모니터링</td></tr><tr><td>5단계</td><td><mark class="flexible-marker flexible-marker-default">관계 종료</mark></td><td>서드파티 관계 종료 관리, 긴급 사태 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="tprm-관련-주요-사례">TPRM 관련 주요 사례<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>금융사 데이터 유출</td><td>서드파티 클라우드 보안 취약점으로 인해 대규모 고객 데이터 유출</td></tr><tr><td>국외</td><td>MS CrowdStrike</td><td>CrowdStrike 보안 툴의 소프트웨어 업데이트로 인해 글로벌 시스템 장애 발생</td></tr><tr><td>-</td><td>NPM faker.js</td><td>Node.js 패키지 faker.js가 개발자의 사보타주로 인하 글로벌 배포 장애</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="tprm-고려사항">TPRM 고려사항<a class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" href="https://gracefullight.dev/en/pe/mng/tprm/#tprm-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>SBOM 도입을 통해 서드파티 소프트웨어의 구성 요소  파악 및 장애, 재해시 위험의 빠른 식별 및 대응 가능</li>
-<li>소프트웨어 품질 성능평가를 통해 안정적인 서드파티 소프트웨어 사용</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-management" term="pe/it-management"/>
     </entry>
 </feed>
