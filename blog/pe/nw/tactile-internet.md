@@ -1,5 +1,5 @@
 ---
-title: 촉각 인터넷
+title: 촉각인터넷
 date: 2024-07-29T20:09:59.466+09:00
 description: Tactile Internet
 authors: me
