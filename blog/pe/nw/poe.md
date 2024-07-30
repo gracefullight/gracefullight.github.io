@@ -1,7 +1,7 @@
 ---
-title: Power over Ethernet
+title: PoE, Power over Ethernet
 date: 2024-07-29T20:32:58.023+09:00
-description: poe
+description: Power over Ethernet
 authors: me
 tags: 
   - pe
