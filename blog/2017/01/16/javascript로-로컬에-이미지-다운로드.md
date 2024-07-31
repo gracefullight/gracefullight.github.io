@@ -149,4 +149,4 @@ function downloadImage(img, fileName) {
 
 # 여담
 
-![image from hexo](https://i.imgur.com/36Rf76J.gif title:"실망시키지 않는 IE")
+![image from hexo](https://i.imgur.com/36Rf76J.gif)
