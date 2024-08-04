@@ -2,6 +2,7 @@
 title: DaaS, Desktop as a Service
 date: 2024-08-03T08:16:44.322+09:00
 description: Desktop as a Service
+image: ./assets/daas.webp
 authors: me
 tags: 
   - pe
