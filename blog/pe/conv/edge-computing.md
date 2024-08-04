@@ -2,6 +2,7 @@
 title: 엣지컴퓨팅
 date: 2024-07-23T14:59:13.237+09:00
 description: Edge Computing
+image: ./assets/edge-computing.png
 authors: me
 tags: 
   - pe

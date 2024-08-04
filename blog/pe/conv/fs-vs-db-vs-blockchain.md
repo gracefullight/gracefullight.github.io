@@ -2,6 +2,7 @@
 title: 파일시스템, 데이터베이스, 블록체인의 저장 특성
 date: 2024-03-10T11:00:00.000+09:00
 description: 파일시스템, 데이터베이스, 블록체인 비교
+image: ./assets/fs-db-blockchain.png
 authors: me
 tags:
   - pe

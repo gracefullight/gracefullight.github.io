@@ -2,6 +2,7 @@
 title: 클라우드 컴퓨팅, 서비스 모델, 배포모델
 date: 2024-03-10T10:24:00.000+09:00
 description: 클라우드 컴퓨팅, 서비스 모델, 배포모델
+image: ./assets/cloud-computing.png
 authors: me
 tags:
   - pe

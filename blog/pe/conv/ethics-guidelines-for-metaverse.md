@@ -2,6 +2,7 @@
 title: 메타버스 윤리원칙
 date: 2024-07-30T20:42:46.893+09:00
 description: Ethics Guidelines for Metaverse
+image: ./assets/ethics-metaverse.png
 authors: me
 tags: 
   - pe
