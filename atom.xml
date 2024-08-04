@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-02T23:05:50.842Z</updated>
+    <updated>2024-08-02T23:16:44.322Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DaaS, Desktop as a Service]]></title>
+        <id>https://gracefullight.dev/pe/conv/daas/</id>
+        <link href="https://gracefullight.dev/pe/conv/daas/"/>
+        <updated>2024-08-02T23:16:44.322Z</updated>
+        <summary type="html"><![CDATA[Desktop as a Service]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="daas-개념">DaaS 개념<a class="hash-link" aria-label="DaaS 개념에 대한 직접 링크" title="DaaS 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>클라우드 기반 가상화 기술을 활용하여 사용자에게 <mark class="flexible-marker flexible-marker-default">데스크탑 환경을 제공</mark>하는 <mark class="flexible-marker flexible-marker-default">클라우드 서비스 모델</mark></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="daas-구성도-구성요소-적용방안">DaaS 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="DaaS 구성도, 구성요소, 적용방안에 대한 직접 링크" title="DaaS 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="daas-구성도">DaaS 구성도<a class="hash-link" aria-label="DaaS 구성도에 대한 직접 링크" title="DaaS 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>사용자는 자신의 디바이스로 DaaS클라이언트에 접근하여 디바이스, 지역에 관계없이 업무 수행 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="daas-구성요소">DaaS 구성요소<a class="hash-link" aria-label="DaaS 구성요소에 대한 직접 링크" title="DaaS 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>DaaS클라이언트</td><td>원격 VM에 접근하기 위한 클라이언트</td><td>VMWare 등</td></tr><tr><td>DaaS서버</td><td>VM 환경 제공, 연결 관리</td><td>하이퍼바이저, 커넥션매니저</td></tr><tr><td>DaaS자원관리</td><td>자원 모니터링, 프로비저닝, 패치</td><td>CMS 연동</td></tr><tr><td>CMS</td><td>조직 구성 관리 자동화</td><td>SW 패치, 라이센스 관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="daas-적용방안">DaaS 적용방안<a class="hash-link" aria-label="DaaS 적용방안에 대한 직접 링크" title="DaaS 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원격업무지원</td><td>재택, 원격 근무자에게 내부망 환경 제공</td><td>HW 구매비용 절감</td></tr><tr><td>계약직</td><td>계약, 계절적 업무 증가시 IT인프라 제공</td><td>유연한 확장</td></tr><tr><td>직원 교육</td><td>교육기관에서 일관된 학습 환경 제공</td><td>OS, Tool 등</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="daas-고려사항">DaaS 고려사항<a class="hash-link" aria-label="DaaS 고려사항에 대한 직접 링크" title="DaaS 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/daas/#daas-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<ul>
+<li>CSAP DaaS 인증을 대비하여, DaaS 접근시 2차인증과 종료시 데이터 파기 절차 필요</li>
+<li>금융권 망분리 완화로 인한 인프라 확보 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[데이터 3법과 마이데이터 활성화 방안]]></title>
         <id>https://gracefullight.dev/pe/conv/데이터-3법과-마이데이터-활성화-방안/</id>
@@ -107,7 +139,7 @@
 <li>메타버스 내 창작물에 대한 저작권 관련 내용 부재</li>
 <li>인터넷 윤리 내 저작권 침해 문제점 관련 교육 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="인터넷-윤리-ai-윤리-메타버스-윤리-비교-저작권-윤리-추가방안">인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안<a class="hash-link" aria-label="인터넷 윤리, AI 윤리, 메��타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" title="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9C%A4%EB%A6%AC-ai-%EC%9C%A4%EB%A6%AC-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="인터넷-윤리-ai-윤리-메타버스-윤리-비교-저작권-윤리-추가방안">인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안<a class="hash-link" aria-label="인터넷 윤리, AI 윤리, 메타버스 ��윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" title="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9C%A4%EB%A6%AC-ai-%EC%9C%A4%EB%A6%AC-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="윤리-비교">윤리 비교<a class="hash-link" aria-label="윤리 비교에 대한 직접 링크" title="윤리 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>인터넷 윤리</th><th>AI 윤리</th><th>메타버스 윤리</th></tr></thead><tbody><tr><td>개념</td><td>인터넷 상에서 지켜야할 윤리</td><td>AI 기술 개발 활용시 지켜야할 윤리</td><td>메타버스 개발, 활용시 지켜야할 윤리</td></tr><tr><td>문제점</td><td>음란물, 저작권 침해, 사생활 침해</td><td>인권 침해, 편향</td><td>사이버 폭력, 저작권</td></tr><tr><td>주요 가이드</td><td>네티즌 윤리강령</td><td>EU AI 윤리 가이드</td><td>메타버스 윤리원칙</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-원칙-내-저작권-윤리-추가방안">메타버스 윤리 원칙 내 저작권 윤리 추가방안<a class="hash-link" aria-label="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크" title="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EC%9B%90%EC%B9%99-%EB%82%B4-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h3>
@@ -115,7 +147,7 @@
 <ul>
 <li>메타버스 내 2차 창작물에 대해 NFT 민팅을 통한 창작물 고유화, 저작권 중요성 상기</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-활성화방안">메타버스 윤리 활성화방안<a class="hash-link" aria-label="메타버스 윤리 ��활성화방안에 대한 직접 링크" title="메타버스 윤리 활성화방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-활성화방안">메타버스 윤리 활성화방안<a class="hash-link" aria-label="메타버스 윤리 활성화방안에 대한 직접 링크" title="메타버스 윤리 활성화방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>주체</th><th>활동</th></tr></thead><tbody><tr><td>홍보</td><td>국내</td><td>메타버스 윤리원칙 인지를 위한 홍보</td></tr><tr><td>-</td><td>국외</td><td>메타버스 윤리원칙 번역본 배포</td></tr><tr><td>보급 및 확산</td><td>기업</td><td>메타버스 윤리원칙 내제화 지원</td></tr><tr><td>-</td><td>학교</td><td>찾아가는 메타버스 윤리원칙 교육</td></tr></tbody></table>
 <ul>
 <li>메타버스 활성화를 위한 윤리 중요성 강조</li>
@@ -306,36 +338,6 @@
 <ul>
 <li>보안 미들웨어는 SPoF가 될 수 있으므로 서비스 제공자의 신뢰성, 안정성, 과거 성과, 데이터 및 개인정보 관리 측면 검토 필요</li>
 <li>클라우드 SLA를 통해 서비스 중단 시 대처 방안 약정 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[EDR, 엔드포인트 감지 및 응답]]></title>
-        <id>https://gracefullight.dev/pe/sec/edr/</id>
-        <link href="https://gracefullight.dev/pe/sec/edr/"/>
-        <updated>2024-07-26T05:17:11.518Z</updated>
-        <summary type="html"><![CDATA[Endpoint Detection and Response]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="edr-개념">EDR 개념<a class="hash-link" aria-label="EDR 개념에 대한 직접 링크" title="EDR 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>IDS, IPS 기능을 포함하여 네트워크의 엔드포인트에서 발생하는 보안 이벤트를 실시간으로 감지하고 대응하는 기술</li>
-<li>복잡한 위협 환경 실시간 대응 가능, 포렌식 및 분석 기능 제공, 통합 정책 적용, 관리 용이</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="edr-구성도-구성요소-적용방안">EDR 구성도, 구성요소, 적용방안<a class="hash-link" aria-label="EDR 구성도, 구성요소, 적용방안에 대한 직접 링크" title="EDR 구성도, 구성요소, 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="edr-구성도">EDR 구성도<a class="hash-link" aria-label="EDR 구성도에 대한 직접 링크" title="EDR 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h2>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="edr-구성요소">EDR 구성요소<a class="hash-link" aria-label="EDR 구성요소에 대한 직접 링크" title="EDR 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 수집 에이전트</td><td>엔드포인트에서 데이터를 실시간으로 수집</td><td>다양한 OS 지원</td></tr><tr><td>중앙 관리 서버</td><td>수집된 데이터를 중앙에서 관리 및 저장</td><td>확장 가능성</td></tr><tr><td>위협 분석 엔진</td><td>수집된 데이터를 분석하여 위협을 탐지</td><td>AI/ML 기반</td></tr><tr><td>실시간 경고 시스템</td><td>위협이 탐지되면 관리자에게 경고 알림을 전송</td><td>즉각적인 대응</td></tr><tr><td>대응 및 격리 조치</td><td>탐지된 위협에 대해 즉각적인 대응 및 격리 조치 수행</td><td>자동화 가능</td></tr><tr><td>보고 및 포렌식 분석</td><td>위협에 대한 보고서 작성 및 포렌식 분석 제공</td><td>감사 및 컴플라이언스</td></tr><tr><td>보안 오케스트레이션</td><td>다양한 보안 솔루션과의 연계 및 조정</td><td>통합 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="edr-적용방안">EDR 적용방안<a class="hash-link" aria-label="EDR 적용방안에 대한 직접 링크" title="EDR 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
-<table><thead><tr><th>엔드포인트</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데스크탑/노트북</td><td>실시간 위협 탐지 및 대응, 사용자 활동 모니터링</td><td>다양한 OS 지원</td></tr><tr><td>서버</td><td>중요 데이터 보호, 서버 자원 모니터링 및 침입 탐지</td><td>고가용성 필요</td></tr><tr><td>모바일 기기</td><td>모바일 보안 위협 탐지 및 데이터 유출 방지</td><td>BYOD 정책 준수</td></tr><tr><td>IoT 장치</td><td>IoT 특화 위협 탐지 및 대응, 장치 간 통신 모니터링</td><td>경량 에이전트 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="edr-고려사항">EDR 고려사항<a class="hash-link" aria-label="EDR 고려사항에 대한 직접 링크" title="EDR 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/edr/#edr-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>조직의 성장으로 인한 엔드포인트 확장성과, 다양한 운영체제, 디바이스 호환성 고려 필요</li>
-<li>생성형 AI 기반 검증, 감사용 데이터로 보안 로그를 활용할 수 있도록 로깅 포맷의 정형화 필요</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
