@@ -19,6 +19,17 @@ tags:
 
 ```mermaid
 graph LR
+  subgraph TO-BE
+    direction BT
+    A2[PoE 스위치]
+    C2[IP 카메라]
+    D2[Wi-Fi]
+    E4[VoIP 전화기]
+    A2 -->|PoE 신호| C2
+    A2 -->|PoE 신호| D2
+    A2 -->|PoE 신호| E4
+  end
+
   subgraph AS-IS
     direction BT
     A1[스위치]
@@ -33,17 +44,6 @@ graph LR
     E1 -->|전기| B1
     E1 -->|전기| C1
     E1 -->|전기| D1
-  end
-
-  subgraph TO-BE
-    direction BT
-    A2[PoE 스위치]
-    C2[IP 카메라]
-    D2[Wi-Fi]
-    E4[VoIP 전화기]
-    A2 -->|PoE 신호| C2
-    A2 -->|PoE 신호| D2
-    A2 -->|PoE 신호| E4
   end
 ```
 
