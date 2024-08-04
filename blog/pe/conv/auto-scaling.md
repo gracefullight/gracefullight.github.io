@@ -51,8 +51,3 @@ tags:
 
 - maxUnavailable, maxSurge 적절히 조절
 - scale down 으로 비용 절감
-
-## 기출
-
-- 131/1/8
-- 121/2/5
