@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 02 Aug 2024 23:16:44 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Aug 2024 11:09:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[OECD 디지털세]]></title>
+            <link>https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/</link>
+            <guid>https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/</guid>
+            <pubDate>Sun, 04 Aug 2024 11:09:00 GMT</pubDate>
+            <description><![CDATA[The OECD and Digital Services Taxes]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-개념">OECD 디지털세 개념<a class="hash-link" aria-label="OECD 디지털세 개념에 대한 직접 링크" title="OECD 디지털세 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EA%B0%9C%EB%85%90">​</a></h2>
+<ul>
+<li>글로벌 IT기업이 자국 내에서 일으킨 매출에 대해 각 국이 부과하는 법인세와 별도 세금</li>
+<li>과세 형평성 제고, 안정적 세수 확보, 사업장이 없는 다국적 기업의 서비스 수익에 대한 과세</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-구성도-구성요소-대응방안">OECD 디지털세 구성도, 구성요소, 대응방안<a class="hash-link" aria-label="OECD 디지털세 구성도, 구성요소, 대응방안에 대한 직접 링크" title="OECD 디지털세 구성도, 구성요소, 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-구성도">OECD 디지털세 구성도<a class="hash-link" aria-label="OECD 디지털세 구성도에 대한 직접 링크" title="OECD 디지털세 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
+<!-- -->
+<ul>
+<li>시장 소재지 국가에 과세권을 배분하고, 글로벌 최저한세율 도입으로 국가 간 법인 세율 경쟁 방지</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-구성요소">OECD 디지털세 구성요소<a class="hash-link" aria-label="OECD 디지털세 구성요소에 대한 직접 링크" title="OECD 디지털세 구성요소에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>필러1</td><td>시장 소재지 추가 과세권 배분</td><td>초과이익의 일정부 과세</td></tr><tr><td>-</td><td>디지털 서비스 기업 대상</td><td>연매출 200억 이상, 이익률 10% 이상</td></tr><tr><td>필러2</td><td>글로벌 최저한 세율 15% 도입</td><td>법인 세율 차이 감소</td></tr><tr><td>-</td><td>모든 다국적 기업 대상</td><td>연매출 7억 5천만 유로 이상</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-대응방안">OECD 디지털세 대응방안<a class="hash-link" aria-label="OECD 디지털세 대응방안에 대한 직접 링크" title="OECD 디지털세 대응방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기업</td><td>글로벌 사업구조 재검토</td><td>세금 부담 최소화, 효율적 조세 전략</td></tr><tr><td>-</td><td>정부정책 모니터링</td><td>각국 디지털세 도입 현황, 규제 파악</td></tr><tr><td>공공</td><td>국제 협력 강화</td><td>OECD, G20 국가 간 협력 통한 시행</td></tr><tr><td>-</td><td>국내 법, 제도 정비</td><td>OECD 모델 규칙 반영, 국내 상황 반영</td></tr><tr><td>민간</td><td>의견 수렴, 정책 제안</td><td>이해관계자 의견 수렴, 반영</td></tr><tr><td>-</td><td>디지털세 관련 정보 제공</td><td>기업, 개인에게 디지털세 교육</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="oecd-디지털세-전망">OECD 디지털세 전망<a class="hash-link" aria-label="OECD 디지털세 전망에 대한 직접 링크" title="OECD 디지털세 전망에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/the-oecd-and-digital-services-taxes/#oecd-%EB%94%94%EC%A7%80%ED%84%B8%EC%84%B8-%EC%A0%84%EB%A7%9D">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>다자간 조약 체결</td><td>디지털세 규칙을 반영한 조약 체결 및 이행</td><td>각국 비준 절차, 국내 법제화 필요</td></tr><tr><td>디지털세 범위 확대</td><td>기업 적용 가능성 확보</td><td>디지털 경제 발전 따라 변동 가능</td></tr><tr><td>새로운 과세 모델</td><td>필러 1,2 외의 모델 개발</td><td>디지털 경제 변화에 따른 조세 제도 개편</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[DaaS, Desktop as a Service]]></title>
             <link>https://gracefullight.dev/pe/conv/daas/</link>
@@ -128,7 +154,7 @@
 <li>메타버스 내 창작물에 대한 저작권 관련 내용 부재</li>
 <li>인터넷 윤리 내 저작권 침해 문제점 관련 교육 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="인터넷-윤리-ai-윤리-메타버스-윤리-비교-저작권-윤리-추가방안">인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안<a class="hash-link" aria-label="인터넷 윤리, AI 윤리, 메타버스 ��윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" title="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9C%A4%EB%A6%AC-ai-%EC%9C%A4%EB%A6%AC-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="인터넷-윤리-ai-윤리-메타버스-윤리-비교-저작권-윤리-추가방안">인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안<a class="hash-link" aria-label="인터넷 윤리, AI 윤��리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" title="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9C%A4%EB%A6%AC-ai-%EC%9C%A4%EB%A6%AC-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="윤리-비교">윤리 비교<a class="hash-link" aria-label="윤리 비교에 대한 직접 링크" title="윤리 비교에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90">​</a></h3>
 <table><thead><tr><th>구분</th><th>인터넷 윤리</th><th>AI 윤리</th><th>메타버스 윤리</th></tr></thead><tbody><tr><td>개념</td><td>인터넷 상에서 지켜야할 윤리</td><td>AI 기술 개발 활용시 지켜야할 윤리</td><td>메타버스 개발, 활용시 지켜야할 윤리</td></tr><tr><td>문제점</td><td>음란물, 저작권 침해, 사생활 침해</td><td>인권 침해, 편향</td><td>사이버 폭력, 저작권</td></tr><tr><td>주요 가이드</td><td>네티즌 윤리강령</td><td>EU AI 윤리 가이드</td><td>메타버스 윤리원칙</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-원칙-내-저작권-윤리-추가방안">메타버스 윤리 원칙 내 저작권 윤리 추가방안<a class="hash-link" aria-label="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크" title="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EC%9B%90%EC%B9%99-%EB%82%B4-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88">​</a></h3>
@@ -136,7 +162,7 @@
 <ul>
 <li>메타버스 내 2차 창작물에 대해 NFT 민팅을 통한 창작물 고유화, 저작권 중요성 상기</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-활성화방안">메타버스 윤리 활성화방안<a class="hash-link" aria-label="메타버스 윤리 활성화방안에 대한 직접 링크" title="메타버스 윤리 활성화방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="메타버스-윤리-활성화방안">메타버스 윤리 활성화방안<a class="hash-link" aria-label="메타버스 �윤리 활성화방안에 대한 직접 링크" title="메타버스 윤리 활성화방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>주체</th><th>활동</th></tr></thead><tbody><tr><td>홍보</td><td>국내</td><td>메타버스 윤리원칙 인지를 위한 홍보</td></tr><tr><td>-</td><td>국외</td><td>메타버스 윤리원칙 번역본 배포</td></tr><tr><td>보급 및 확산</td><td>기업</td><td>메타버스 윤리원칙 내제화 지원</td></tr><tr><td>-</td><td>학교</td><td>찾아가는 메타버스 윤리원칙 교육</td></tr></tbody></table>
 <ul>
 <li>메타버스 활성화를 위한 윤리 중요성 강조</li>
@@ -191,7 +217,7 @@
 <h2 class="anchor anchorWithStickyNavbar_ekos" id="poe-기술-표준">PoE 기술 표준<a class="hash-link" aria-label="PoE 기술 표준에 대한 직접 링크" title="PoE 기술 표준에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/poe/#poe-%EA%B8%B0%EC%88%A0-%ED%91%9C%EC%A4%80">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-ieee-국제-표준">PoE IEEE 국제 표준<a class="hash-link" aria-label="PoE IEEE 국제 표준에 대한 직접 링크" title="PoE IEEE 국제 표준에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/poe/#poe-ieee-%EA%B5%AD%EC%A0%9C-%ED%91%9C%EC%A4%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IEEE 802.3af</td><td>최대 15.4W 전력 공급</td><td>기본적인 IP 전화기 및 무선 AP에 적합</td></tr><tr><td>IEEE 802.3at (PoE+)</td><td>최대 25.5W 전력 공급</td><td>고성능 IP 카메라 및 고급 VoIP 전화기 지원</td></tr><tr><td>IEEE 802.3bt (PoE++) Type 3</td><td>최대 60W 전력 공급</td><td>PTZ 카메라 및 멀티채널 무선 AP에 적합</td></tr><tr><td>IEEE 802.3bt (PoE++) Type 4</td><td>최대 100W 전력 공급</td><td>디지털 사이니지 및 고성능 장비에 적합</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-국내-기술-기준">PoE 국내 기술 기준<a class="hash-link" aria-label="PoE 국내 기술 기준에 대한 직접 링크" title="PoE 국내 기술 기준에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/poe/#poe-%EA%B5%AD%EB%82%B4-%EA%B8%B0%EC%88%A0-%EA%B8%B0%EC%A4%80">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_ekos" id="poe-국내-기술-기준">PoE 국내 기술 기준<a class="hash-link" aria-label="PoE 국내 기술 기�준에 대한 직접 링크" title="PoE 국내 기술 기준에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/poe/#poe-%EA%B5%AD%EB%82%B4-%EA%B8%B0%EC%88%A0-%EA%B8%B0%EC%A4%80">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>전파법</td><td>전자파 적합성 인증 필요</td><td>전자파 간섭 방지</td></tr><tr><td>전기통신기술기준</td><td>네트워크 장비의 안전성과 성능 규정</td><td>전력 공급 관련 안전성 기준</td></tr><tr><td>KS C IEC 60950</td><td>정보기기 안전성 표준</td><td>과전압, 과전류 보호 장치 포함</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_ekos" id="poe-고려사항">PoE 고려사항<a class="hash-link" aria-label="PoE 고려사항에 대한 직접 링크" title="PoE 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/poe/#poe-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
@@ -218,7 +244,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Human-System Interface (HSI)</td><td>사용자와 시스템 간의 상호작용을 담당</td><td>VR/AR 장치 포함</td></tr><tr><td>센서</td><td>물체의 촉질감, 위치, 압력 등의 정보를 수집</td><td>압전 센서 등</td></tr><tr><td>액추에이터</td><td>수집된 촉각 정보를 물리적 촉각으로 변환</td><td>멀티몰프 구조 압전 액추에이터 등</td></tr><tr><td>구동 드라이버</td><td>센서와 액추에이터를 제어하고 신호를 처리</td><td>저전력 소모 및 고속 응답</td></tr><tr><td>통신</td><td>센서와 액추에이터 간의 데이터를 실시간으로 전송</td><td>5G, 6G 등</td></tr><tr><td>데이터 센터</td><td>모든 데이터의 저장 및 관리</td><td>높은 보안 및 신뢰성 요구</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_ekos" id="촉각인터넷-적용방안">촉각인터넷 적용방안<a class="hash-link" aria-label="촉각인터넷 적용방안에 대한 직접 링크" title="촉각인터넷 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원격 의료</td><td>원격 수술 및 치료에 사용</td><td>전문 의료 기기 필요</td></tr><tr><td>교육 및 훈련</td><td>현실감 있는 시뮬레이션 및 실습 제공</td><td>VR/AR 헤드셋 및 햅틱 장치 필요</td></tr><tr><td>제조 및 자동화</td><td>로봇의 정밀한 제어 가능</td><td>산업용 로봇 및 제어 시스템 필요</td></tr><tr><td>가상현실/증강현실</td><td>몰입감 있는 사용자 경험 제공</td><td>VR/AR 헤드셋 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="촉각인터넷-고려사항">촉각인터넷 고려사항<a class="hash-link" aria-label="촉각인터넷 고려사항에 대한 직접 링크" title="촉각인터넷 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="촉각인터넷-고려사항">촉각인터넷 고려사항<a class="hash-link" aria-label="촉각인터넷 고려사항에 대한 직접 링크" title="촉각인터넷 고려사항에 ��대한 직접 링크" href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>촉각인터넷이 제대로 작동하기 위해서 1ms 이하의 지연 시간을 가진 FTTH망 필요</li>
 <li>촉각 피드백을 실시간 데이터 전송 과정에서 보안과 프라이버시 보호 준수</li>
@@ -244,7 +270,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개발자 도구</td><td>코드 리포지토리, 테스트 자동화 도구</td><td>Git, Jenkins</td></tr><tr><td>CI/CD 파이프라인</td><td>빌드 자동화, 배포 자동화</td><td>Jenkins, GitLab</td></tr><tr><td>모니터링 및 로깅</td><td>모니터링 대시보드, 로그 분석</td><td>Prometheus, ELK</td></tr><tr><td>인프라 관리</td><td>클라우드 인프라, 온프레미스 인프라</td><td>AWS, GCP, Azure</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_ekos" id="플랫폼-엔지니어링-적용방안">플랫폼 엔지니어링 적용방안<a class="hash-link" aria-label="플랫폼 엔지니어링 적용방안에 대한 직접 링크" title="플랫폼 엔지니어링 적용방안에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>공공 데이터와 서비스를 통합 관리하여 효율성 증대</td><td>데이터 통합 및 관리 효율성 향상</td></tr><tr><td>금융</td><td>데이터 암호화와 접근 제어를 통한 보안 강화</td><td>금융 데이터 보호</td></tr><tr><td>민간</td><td>모듈화된 아키텍처로 다양한 비즈니스 요구 대응</td><td>유연한 비즈니스 확장</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="플랫폼-엔지니어링시-고려사항">플랫폼 엔지니어링시 고려사항<a class="hash-link" aria-label="플랫폼 엔지니어링시 고려사항에 대한 직접 링크" title="플랫폼 엔지니어링시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_ekos" id="플랫폼-엔지니어링시-고려사항">플랫폼 엔지니어링시 고려사항<a class="hash-link" aria-label="플랫폼 엔지니어링시 고려사항에 대한 직접 링크" title="플랫폼 엔지니어링시 고려사항에 대한 직접 �링크" href="https://gracefullight.dev/pe/conv/platform-engineering/#%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
 <ul>
 <li>개발자가 아닌 조직 구성원이 쉽게 데이터를 확인하고, 사용할 수 있는 FaaS, Jupyter Notebook 인터페이스 제공</li>
 </ul>]]></content:encoded>
@@ -280,32 +306,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[SECaaS, Security as a Service]]></title>
-            <link>https://gracefullight.dev/pe/sec/secaas/</link>
-            <guid>https://gracefullight.dev/pe/sec/secaas/</guid>
-            <pubDate>Fri, 26 Jul 2024 05:45:32 GMT</pubDate>
-            <description><![CDATA[Security as a Service]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_ekos" id="secaas-개념">SECaaS 개념<a class="hash-link" aria-label="SECaaS 개념에 대한 직접 링크" title="SECaaS 개념에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EA%B0%9C%EB%85%90">​</a></h2>
-<ul>
-<li>온프레미스 보안 솔루션을 자체적으로 구축하고 유지관리하는 대신, 클라우드 서비스를 통해 보안 기능을 사용하는 클라우드 서비스 모델</li>
-<li>비용 절감, 최신 보안기술 도입, 보안서비스 확장 유연성, 유지보수성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="secaas-서비스-구성도-서비스-유형-적용사례">SECaaS 서비스 구성도, 서비스 유형, 적용사례<a class="hash-link" aria-label="SECaaS 서비스 구성도, 서비스 유형, 적용사례에 대한 직접 링크" title="SECaaS 서비스 구성도, 서비스 유형, 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="secaas-서비스-구성도">SECaaS 서비스 구성도<a class="hash-link" aria-label="SECaaS 서비스 구성도에 대한 직접 링크" title="SECaaS 서비스 구성도에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="secaas-서비스-유형">SECaaS 서비스 유형<a class="hash-link" aria-label="SECaaS 서비스 유형에 대한 직접 링크" title="SECaaS 서비스 유형에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>방화벽</td><td>클라우드 기반의 방화벽 서비스로, 트래픽 모니터링 및 제어</td><td>관리 용이</td></tr><tr><td>IDS/IPS</td><td>침입 탐지 및 방지 시스템을 클라우드에서 제공</td><td>실시간 탐지</td></tr><tr><td>웹 보안</td><td>웹 애플리케이션 방화벽(WAF), DDoS 보호 등</td><td>안정성 강화</td></tr><tr><td>이메일 보안</td><td>피싱, 스팸, 멀웨어로부터 이메일 보호</td><td>비즈니스 보호</td></tr><tr><td>데이터 암호화</td><td>데이터 저장 및 전송 시 암호화 서비스</td><td>기밀성 유지</td></tr><tr><td>SIEM</td><td>보안 정보 및 이벤트 관리</td><td>통합 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_ekos" id="secaas-적용사례">SECaaS 적용사례<a class="hash-link" aria-label="SECaaS 적용사례에 대한 직접 링크" title="SECaaS 적용사례에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>대기업</td><td>복잡한 보안 요구 사항을 통합 관리</td><td>관리 효율성 증가</td></tr><tr><td>중소기업</td><td>초기 비용 부담 없이 강력한 보안 솔루션 도입</td><td>비용 효율성 높음</td></tr><tr><td>금융기관</td><td>민감한 데이터 보호 및 규제 준수</td><td>높은 보안 수준</td></tr><tr><td>교육기관</td><td>학생 및 교직원 정보 보호, 사이버 공격 방어</td><td>안정성 중요</td></tr><tr><td>의료기관</td><td>환자 정보 보호 및 HIPAA 준수</td><td>규제 준수 필수</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_ekos" id="secaas-도입시-고려사항">SECaaS 도입시 고려사항<a class="hash-link" aria-label="SECaaS 도입시 고려사항에 대한 직접 링크" title="SECaaS 도입시 고려사항에 대한 직접 링크" href="https://gracefullight.dev/pe/sec/secaas/#secaas-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD">​</a></h2>
-<ul>
-<li>보안 미들웨어는 SPoF가 될 수 있으므로 서비스 제공자의 신뢰성, 안정성, 과거 성과, 데이터 및 개인정보 관리 측면 검토 필요</li>
-<li>클라우드 SLA를 통해 서비스 중단 시 대처 방안 약정 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
