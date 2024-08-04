@@ -2,6 +2,7 @@
 title: 딥페이크
 date: 2024-06-02T11:09:39.018+09:00
 description: 딥페이크
+image: ./assets/deepfake.png
 authors: me
 tags:
   - pe

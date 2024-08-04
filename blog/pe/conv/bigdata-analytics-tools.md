@@ -2,7 +2,7 @@
 title: 빅데이터 분석도구, 선택 원칙
 date: 2024-08-04T20:37:05.182+09:00
 description: Big-data Analytics Tools
-image: ./assets/bigdata-analytics-tools.webp
+image: ./assets/bigdata-analytics-tools.png
 authors: me
 tags: 
   - pe

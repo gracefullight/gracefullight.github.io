@@ -1,7 +1,8 @@
 ---
 title: 디지털 리터러시
 date: 2024-06-06T16:48:40.523+09:00
-description: digital literacy
+description: Digital Literacy
+image: ./assets/digital-literacy.png
 authors: me
 tags:
   - pe
@@ -20,11 +21,11 @@ tags:
 ```mermaid
 graph TB
   D[디지털리터러시]
-  D --> 디지털활용[디지털 활용]
-  D --> 디지털참여[디지털 참여]
-  D --> 창의와혁신[창의와 혁신]
-  D --> 디지털정서지능[디지털 정서지능]
-  D --> 디지털보안및탄력성[디지털 보안 및 탄력성]
+  D --- 디지털활용[디지털 활용]
+  D --- 디지털참여[디지털 참여]
+  D --- 창의와혁신[창의와 혁신]
+  D --- 디지털정서지능[디지털 정서지능]
+  D --- 디지털보안및탄력성[디지털 보안 및 탄력성]
 ```
 
 ### 디지털 리터러시의 구성요소

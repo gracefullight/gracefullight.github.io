@@ -1,7 +1,7 @@
 ---
 title: 앰비언트 컴퓨팅
 date: 2024-06-01T00:12:30.371+09:00
-image: ./assets/ambient-computing.webp
+image: ./assets/ambient-computing.png
 description: 앰비언트 컴퓨팅
 authors: me
 tags:
