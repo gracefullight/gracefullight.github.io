@@ -2,10 +2,12 @@
 title: PoE, Power over Ethernet
 date: 2024-07-29T20:32:58.023+09:00
 description: Power over Ethernet
+image: ./assets/poe.png
 authors: me
 tags: 
   - pe
   - pe/nw
+  - pe/134
 ---
 
 ## PoE 개념
