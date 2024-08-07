@@ -1,7 +1,7 @@
 ---
-title: 대체 불가능 토큰
+title: NFT, 대체 불가능 토큰
 date: 2024-03-10T11:46:00.000+09:00
-description: NFT
+description: Non-Fungible Token 
 authors: me
 tags:
   - pe
@@ -30,11 +30,11 @@ graph LR
 | 구분          | 구성요소     | 비고                   |
 | ------------- | ------------ | ---------------------- |
 | 표준 프로토콜 | ERC-721      | NFT                    |
-| 표준 프로토콜 | ERC-1155     | 다중 토큰              |
+| - | ERC-1155     | 다중 토큰              |
 | 기술요소      | NFT Contract | 스마트 계약            |
-| 기술요소      | NFT Metadata | 컨텐츠 태그            |
-| 기술요소      | NFT Mint     | NFT 발행               |
-| 기술요소      | IPFS         | NFT 미디어 데이터 저장 |
+| -      | NFT Metadata | 컨텐츠 태그            |
+| -      | NFT Mint     | NFT 발행               |
+| -      | IPFS         | NFT 미디어 데이터 저장 |
 
 ## NFT 비교
 
