@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 04 Aug 2024 11:46:13 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Aug 2024 15:54:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[디피-헬만 알고리즘]]></title>
+            <link>https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/</link>
+            <guid>https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/</guid>
+            <pubDate>Sat, 10 Aug 2024 15:54:00 GMT</pubDate>
+            <description><![CDATA[Diffie-Hellman algorithm]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념">디피-헬만 알고리즘 개념<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디피-헬만 알고리즘 개념에 대한 직접 링크" title="디피-헬만 알고리즘 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>안전하지 않은 채널을 통해 암호키를 안전하게 교환할 수 있도록 하는 비밀키 교환 알고리즘</li>
+<li>인터넷과 같은 중개 네트워크 환경에서 안전한 키 교환 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념도-절차-활용사례">디피-헬만 알고리즘 개념도, 절차, 활용사례<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="디피-헬만 알고리즘 개념도, 절차, 활용사례에 대한 직접 링크" title="디피-헬만 알고리즘 개념도, 절차, 활용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념도">디피-헬만 알고리즘 개념도<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="디피-헬만 알고리즘 개념도에 대한 직접 링크" title="디피-헬만 알고리즘 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-절차">디피-헬만 알고리즘 절차<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="디피-헬만 알고리즘 절차에 대한 직접 링크" title="디피-헬만 알고리즘 절차에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설정</td><td>두 사용자는 큰 소수 P와 정수 G 선택</td><td>사전 교환</td></tr><tr><td>-</td><td>비밀키 a, b를 각각 선택</td><td>비밀키 설정</td></tr><tr><td>공개값 교환</td><td>공개값 A, B 나머지 연산</td><td>안전하지 않은 NW 활용</td></tr><tr><td>-</td><td>두 사용자는 공개값 교환</td><td>-</td></tr><tr><td>비밀키 계산</td><td>서로의 공개값으로 비밀키 나머지 연산 후 암호화 통신</td><td>대칭키 기반 통신</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-활용사례">디피-헬만 알고리즘 활용사례<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="디피-헬만 알고리즘 활용사례에 대한 직접 링크" title="디피-헬만 알고리즘 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>VPN</td><td>VPN 연결시 세션 키교환 수행</td><td>비대칭 키 교환</td></tr><tr><td>TLS</td><td>HTTPS 기본 프로토콜인 TLS 키교환시 사용</td><td>ECDHE</td></tr><tr><td>무선보안</td><td>WPA/WPA2 등 무선 보안 프로토콜에 활용</td><td>도청 방지</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-고려사항">디피-헬만 알고리즘 고려사항<a href="https://gracefullight.dev/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="디피-헬만 알고리즘 고려사항에 대한 직접 링크" title="디피-헬만 알고리즘 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>보안을 위해 충분히 큰 키(2048bit 이상)를 사용하여 무차별 연산 공격 방지</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[RPA, Robotic Process Automation]]></title>
             <link>https://gracefullight.dev/pe/conv/rpa/</link>
@@ -283,32 +308,6 @@
             <category>professional-engineer</category>
             <category>pe/network</category>
             <category>pe/134</category>
-        </item>
-        <item>
-            <title><![CDATA[촉각인터넷]]></title>
-            <link>https://gracefullight.dev/pe/nw/tactile-internet/</link>
-            <guid>https://gracefullight.dev/pe/nw/tactile-internet/</guid>
-            <pubDate>Mon, 29 Jul 2024 11:09:59 GMT</pubDate>
-            <description><![CDATA[Tactile Internet]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-개념">촉각인터넷 개념<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="촉각인터넷 개념에 대한 직접 링크" title="촉각인터넷 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>초저지연 네트워크 기술을 통해 원격지의 물리적, 촉각적 정보를 실시간으로 주고받을 수 있는 인터넷 기술</li>
-<li>원격 작업 및 의료, 교육 및 훈련, 가상현실 및 증강현실, 로봇 공학 및 자동화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성도-구성요소-적용방안">촉각인터넷 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="촉각인터넷 구성도, 구성요소, 적용방안에 대한 직접 링크" title="촉각인터넷 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성도">촉각인터넷 구성도<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="촉각인터넷 구성도에 대한 직접 링크" title="촉각인터넷 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성요소">촉각인터넷 구성요소<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="촉각인터넷 구성요소에 대한 직접 링크" title="촉각인터넷 구성요소에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Human-System Interface (HSI)</td><td>사용자와 시스템 간의 상호작용을 담당</td><td>VR/AR 장치 포함</td></tr><tr><td>센서</td><td>물체의 촉질감, 위치, 압력 등의 정보를 수집</td><td>압전 센서 등</td></tr><tr><td>액추에이터</td><td>수집된 촉각 정보를 물리적 촉각으로 변환</td><td>멀티몰프 구조 압전 액추에이터 등</td></tr><tr><td>구동 드라이버</td><td>센서와 액추에이터를 제어하고 신호를 처리</td><td>저전력 소모 및 고속 응답</td></tr><tr><td>통신</td><td>센서와 액추에이터 간의 데이터를 실시간으로 전송</td><td>5G, 6G 등</td></tr><tr><td>데이터 센터</td><td>모든 데이터의 저장 및 관리</td><td>높은 보안 및 신뢰성 요구</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-적용방안">촉각인터넷 적용방안<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="촉각인터넷 적용방안에 대한 직접 링크" title="촉각인터넷 적용방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원격 의료</td><td>원격 수술 및 치료에 사용</td><td>전문 의료 기기 필요</td></tr><tr><td>교육 및 훈련</td><td>현실감 있는 시뮬레이션 및 실습 제공</td><td>VR/AR 헤드셋 및 햅틱 장치 필요</td></tr><tr><td>제조 및 자동화</td><td>로봇의 정밀한 제어 가능</td><td>산업용 로봇 및 제어 시스템 필요</td></tr><tr><td>가상현실/증강현실</td><td>몰입감 있는 사용자 경험 제공</td><td>VR/AR 헤드셋 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-고려사항">촉각인터넷 고려사항<a href="https://gracefullight.dev/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="촉각인터넷 고려사항에 대한 직접 링크" title="촉각인터넷 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>촉각인터넷이 제대로 작동하기 위해서 1ms 이하의 지연 시간을 가진 FTTH망 필요</li>
-<li>촉각 피드백을 실시간 데이터 전송 과정에서 보안과 프라이버시 보호 준수</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
         </item>
     </channel>
 </rss>

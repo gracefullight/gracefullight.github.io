@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-04T11:46:13.267Z</updated>
+    <updated>2024-08-10T15:54:00.631Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[디피-헬만 알고리즘]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/"/>
+        <updated>2024-08-10T15:54:00.631Z</updated>
+        <summary type="html"><![CDATA[Diffie-Hellman algorithm]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념">디피-헬만 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>안전하지 않은 채널을 통해 암호키를 안전하게 교환할 수 있도록 하는 비밀키 교환 알고리즘</li>
+<li>인터넷과 같은 중개 네트워크 환경에서 안전한 키 교환 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념도-절차-활용사례">디피-헬만 알고리즘 개념도, 절차, 활용사례<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념도">디피-헬만 알고리즘 개념도<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-절차">디피-헬만 알고리즘 절차<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>설정</td><td>두 사용자는 큰 소수 P와 정수 G 선택</td><td>사전 교환</td></tr><tr><td>-</td><td>비밀키 a, b를 각각 선택</td><td>비밀키 설정</td></tr><tr><td>공개값 교환</td><td>공개값 A, B 나머지 연산</td><td>안전하지 않은 NW 활용</td></tr><tr><td>-</td><td>두 사용자는 공개값 교환</td><td>-</td></tr><tr><td>비밀키 계산</td><td>서로의 공개값으로 비밀키 나머지 연산 후 암호화 통신</td><td>대칭키 기반 통신</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-활용사례">디피-헬만 알고리즘 활용사례<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>VPN</td><td>VPN 연결시 세션 키교환 수행</td><td>비대칭 키 교환</td></tr><tr><td>TLS</td><td>HTTPS 기본 프로토콜인 TLS 키교환시 사용</td><td>ECDHE</td></tr><tr><td>무선보안</td><td>WPA/WPA2 등 무선 보안 프로토콜에 활용</td><td>도청 방지</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-고려사항">디피-헬만 알고리즘 고려사항<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>보안을 위해 충분히 큰 키(2048bit 이상)를 사용하여 무차별 연산 공격 방지</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RPA, Robotic Process Automation]]></title>
         <id>https://gracefullight.dev/en/pe/conv/rpa/</id>
@@ -140,7 +169,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/데이터-3법과-마이데이터-활성화-방안/"/>
         <updated>2024-08-02T23:05:50.842Z</updated>
         <summary type="html"><![CDATA[데이터 3법과 마이데이터 활성화 방안]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-3법-개요">데이터 3법 개요<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EF%BF%BD%EF%BF%BD%EB%B2%95-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-3법-개요">데이터 3법 개요<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-3법-개념">데이터 3법 개념<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>데이터 산업에 관련 있는 <mark class="flexible-marker flexible-marker-default">개인정보보호법, 정보통신망법, 신용정보법</mark>을 말함</li>
@@ -153,7 +182,7 @@
 <ul>
 <li>개인의 자기정보 결정권과 데이터의 활용, 통제하는 권리를 갖는 서비스</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="마이데이터-구성요소">마이데이터 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="마이데이터-구성요소">마이데이터 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EF%BF%BD%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정보주체</td><td>정보제공자에게 신용정보 전송 요구</td><td>금융회사 신용조회 등</td></tr><tr><td>정보제공자</td><td>인증수단활용 본인확인, 마이데이터 API 전송</td><td>가명처리, 암호화</td></tr><tr><td>마이데이터사업자</td><td>다수의 정보제공자로 수집된 신용정보 조회 등 기능 제공</td><td>보험, 금융, 신용 조회</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="마이데이터-활용방안">마이데이터 활용방안<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-3%EB%B2%95%EA%B3%BC-%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EB%A7%88%EC%9D%B4%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>제공범위</th><th>활용방안</th></tr></thead><tbody><tr><td>은행/카드</td><td>계좌잔액, 결제내역, 대출내역 등</td><td>통합자산조회</td></tr><tr><td>통신</td><td>통신료납부, 소액결제 등</td><td>통신료납부 신용 반영</td></tr><tr><td>공공</td><td>국세, 관세, 지방세 납부증명 등</td><td>납부증명 신용 반영</td></tr></tbody></table>
@@ -172,7 +201,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/types-of-cloud-services/"/>
         <updated>2024-07-31T11:37:12.761Z</updated>
         <summary type="html"><![CDATA[Types of Cloud Services]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="클라우드-서비스-유형-구성도-구성요소">클라우드 서비스 유형 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/types-of-cloud-services/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%EF%BF%BD%ED%98%95-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="클라우드-서비스-유형-구성도-구성요소">클라우드 서비스 유형 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/types-of-cloud-services/#%ED%81%B4%EF%BF%BD%EF%BF%BD%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="클라우드-서비스-유형-구성도">클라우드 서비스 유형 구성도<a href="https://gracefullight.dev/en/pe/conv/types-of-cloud-services/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="클라우드-서비스-유형-구성요소">클라우드 서비스 유형 구성요소<a href="https://gracefullight.dev/en/pe/conv/types-of-cloud-services/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -266,7 +295,7 @@
 <li>클라우드 컴퓨팅 서비스의 계약, 이용, 안전성 검토 및 정보 보호 등의 내용을 포함하는 행정기관과 공공기관이 클라우드 컴퓨팅 서비스를 이용할 때 필요한 기준과 안전성 확보 방법을 규정하는 고시</li>
 <li>전자정부법 제54조의2, <mark class="flexible-marker flexible-marker-default">안전성과 효율성 확보</mark>, 이용계약의 체결 및 종료 과정에서 정보의 반환 및 파기 방법 등을 명확히 규정하여 <mark class="flexible-marker flexible-marker-default">정보 보안과 데이터 보호 강화</mark>, 클라우드 컴퓨팅 서비스의 이용 촉진 <mark class="flexible-marker flexible-marker-default">공공부문 디지털 전환 가속</mark></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-구성도-서비스-운영-분야-안전성-검토-항목-적용방안">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 구성도, 서비스 운영 분야 안전성 검토 항목, 적용방안<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-구성도-서비스-운영-분야-안전성-검토-항목-적용방안">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 구성도, 서비스 운영 분야 안전성 검토 항목, 적용방안<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EF%BF%BD%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="구성도">구성도<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="서비스-운영-분야-안전성-검토-항목">서비스 운영 분야 안전성 검토 항목<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -318,35 +347,5 @@
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/network" term="pe/network"/>
         <category label="pe/134" term="pe/134"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[촉각인터넷]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/tactile-internet/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/tactile-internet/"/>
-        <updated>2024-07-29T11:09:59.466Z</updated>
-        <summary type="html"><![CDATA[Tactile Internet]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-개념">촉각인터넷 개념<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>초저지연 네트워크 기술을 통해 원격지의 물리적, 촉각적 정보를 실시간으로 주고받을 수 있는 인터넷 기술</li>
-<li>원격 작업 및 의료, 교육 및 훈련, 가상현실 및 증강현실, 로봇 공학 및 자동화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성도-구성요소-적용방안">촉각인터넷 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성도">촉각인터넷 구성도<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-구성요소">촉각인터넷 구성요소<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Human-System Interface (HSI)</td><td>사용자와 시스템 간의 상호작용을 담당</td><td>VR/AR 장치 포함</td></tr><tr><td>센서</td><td>물체의 촉질감, 위치, 압력 등의 정보를 수집</td><td>압전 센서 등</td></tr><tr><td>액추에이터</td><td>수집된 촉각 정보를 물리적 촉각으로 변환</td><td>멀티몰프 구조 압전 액추에이터 등</td></tr><tr><td>구동 드라이버</td><td>센서와 액추에이터를 제어하고 신호를 처리</td><td>저전력 소모 및 고속 응답</td></tr><tr><td>통신</td><td>센서와 액추에이터 간의 데이터를 실시간으로 전송</td><td>5G, 6G 등</td></tr><tr><td>데이터 센터</td><td>모든 데이터의 저장 및 관리</td><td>높은 보안 및 신뢰성 요구</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인�터넷-적용방안">촉각인터넷 적용방안<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원격 의료</td><td>원격 수술 및 치료에 사용</td><td>전문 의료 기기 필요</td></tr><tr><td>교육 및 훈련</td><td>현실감 있는 시뮬레이션 및 실습 제공</td><td>VR/AR 헤드셋 및 햅틱 장치 필요</td></tr><tr><td>제조 및 자동화</td><td>로봇의 정밀한 제어 가능</td><td>산업용 로봇 및 제어 시스템 필요</td></tr><tr><td>가상현실/증강현실</td><td>몰입감 있는 사용자 경험 제공</td><td>VR/AR 헤드셋 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="촉각인터넷-고려사항">촉각인터넷 고려사항<a href="https://gracefullight.dev/en/pe/nw/tactile-internet/#%EC%B4%89%EA%B0%81%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>촉각인터넷이 제대로 작동하기 위해서 1ms 이하의 지연 시간을 가진 FTTH망 필요</li>
-<li>촉각 피드백을 실시간 데이터 전송 과정에서 보안과 프라이버시 보호 준수</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/network" term="pe/network"/>
     </entry>
 </feed>
