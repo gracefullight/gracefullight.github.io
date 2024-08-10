@@ -31,5 +31,5 @@ console.log(packageJson.version);
 
 ## 참조
 
-- <https://github.com/microsoft/TypeScript/issues/26224>
-- <https://github.com/microsoft/TypeScript/pull/26825/files>
+- [Github/TypeScript#26224](https://github.com/microsoft/TypeScript/issues/26224)
+- [Github/TypeScript#26825](https://github.com/microsoft/TypeScript/pull/26825/files)

@@ -57,8 +57,8 @@ sitemap 등록 메뉴로 이동합니다.
 
 textarea 에 사이트맵 경로를 라인마다 입력한다.
 
-- <https://gracefullight.github.io/sitemap.xml>
-- <https://gracefullight.github.io/feed.xml>
+- [https://gracefullight.github.io/sitemap.xml](https://gracefullight.github.io/sitemap.xml)
+- [https://gracefullight.github.io/feed.xml](https://gracefullight.github.io/feed.xml)
 
 #### 인증문자 입력
 

@@ -24,7 +24,7 @@ date: 2019-05-07 00:10:55
 
 ### http 예외
 
-http 로 서빙하는 경우가 있다면 <www.gracefullight.dev> 도 사용할 수 있게 CNAME 을 등록하자.
+http 로 서빙하는 경우가 있다면 `www.gracefullight.dev` 도 사용할 수 있게 CNAME 을 등록하자.
 
 ```txt
 www CNAME 1h gracefullight.github.io.
@@ -47,7 +47,7 @@ github.com/gracefullight/gracefullight.github.io/settings 의 **GitHub Pages** �
 
 아래 문구가 보이면 성공한 것이다.
 
-> Your site is published at <https://gracefullight.dev/>
+> Your site is published at `https://gracefullight.dev`
 
 ## 웹마스터 설정
 

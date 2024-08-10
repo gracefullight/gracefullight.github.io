@@ -86,7 +86,7 @@ Github, Bitbucket 와 달리 Webhook 설정하는 법이 조금은 복잡하다.
 
 람다는 웹(URL)으로 호출할 수 있는 Javascript function 이다.
 
-#### 설정
+#### Lambda 설정
 
 먼저 **Lambda > 함수 > 함수생성 > 새로 작성** 메뉴에서 webhook 이란 이름의 함수를 생성한다.
 **트리거 구성** 메뉴에서 CodeCommit 을 선택하고 입력 폼을 잘 채워주자.
@@ -94,7 +94,7 @@ Github, Bitbucket 와 달리 Webhook 설정하는 법이 조금은 복잡하다.
 ![image from hexo](https://i.imgur.com/qpDqsjv.png)
 
 **기존 브랜치로 푸시, master 브랜치**를 선택했다.
-**사용자 지정데이터**에는 webhook 을 걸 URL 경로를 넣어준다. (예: <https://yourdomain.com/webhook>)
+**사용자 지정데이터**에는 webhook 을 걸 URL 경로를 넣어준다. (예: `https://yourdomain.com/webhook`)
 
 #### 소스
 
@@ -152,4 +152,4 @@ https 커넥션이 아닌 경우 `http` 모듈을 사용해서 request 를 보�
 
 ## 여담
 
-> [AWS Korea week in review](https://aws.amazon.com/ko/blogs/korea/week-in-review-28-08-17/)에 소개되었다.
+- [AWS Korea week in review](https://aws.amazon.com/ko/blogs/korea/week-in-review-28-08-17/)에 소개되었다.
