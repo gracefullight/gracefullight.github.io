@@ -5,22 +5,22 @@ tags: [javascript, jquery, moment]
 date: 2016-12-21 18:19:49
 ---
 
-# Datetimepicker JS with Moment JS
+## Datetimepicker JS with Moment JS
 
 개발을 하다보면 datetime 이 같이 필요한 경우가 생긴다.
 pickadate 를 사용해 date 와 time picker 를 모두 사용해 만들 수도 있지만
 [datetimepicker](https://github.com/xdan/datetimepicker)가 편하고 쉽다.
 
-## 설치
+### 설치
 
 ```bash
-# datetimepicker
+## datetimepicker
 $ bower install https://github.com/xdan/datetimepicker.git --save
-# moment
+## moment
 $ bower install moment --save
 ```
 
-## 예제
+### 예제
 
 ```html
 <link
@@ -61,6 +61,6 @@ $ bower install moment --save
 <input type="text" name="endDate" class="datetimepicker" />
 ```
 
-## 여담
+### 여담
 
 pickadate 에서 datetime 을 같이 지원해주는 모듈도 만들어주면 얼마나 좋을까?

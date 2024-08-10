@@ -9,7 +9,7 @@ date: 2017-11-23 10:58:22
 
 검색해보면 `AsyncComponent`를 만들라는 게 보이는데, 더 쉬운 방법이 있다.
 
-# React-Loadable
+## React-Loadable
 
 [React-router 의 Code Splitting](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/code-splitting.md#code-splitting)탭 에서 찾아볼 수 있는데, 아주 간결하게 컴포넌트를 불러 온다.
 
@@ -33,6 +33,6 @@ export default class LoadableDashboard extends Component {
 
 너무 너무 쉽다. 진작에 이 정도 레벨의 추상화가 있었어야했다.
 
-## 옵션
+### 옵션
 
 자세한 옵션 `delay`, `timeout` 등은 [여기](https://github.com/thejameskyle/react-loadable#------------api-docs)서 확인할 수 있다.

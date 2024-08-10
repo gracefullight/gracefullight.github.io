@@ -21,11 +21,11 @@ Docker, SSH Login, LetsEncrypt, sed 명령어의 사용법을 알고 있어야 �
 - HTTP2
 - Redis
 
-# Docker 설치
+## Docker 설치
 
 [이전 포스트](/2017/07/23/Install-docker-docker-compose-to-centos/)를 참조하자.
 
-# Container 쇼핑
+## Container 쇼핑
 
 [Docker Hub](https://hub.docker.com/)에서 마음에 드는 Container 를 사용해도 되지만, 생각처럼 돌아가는 Container 는 다음과 같았다.
 
@@ -40,9 +40,9 @@ Docker, SSH Login, LetsEncrypt, sed 명령어의 사용법을 알고 있어야 �
 > 3. Git repo 를 Clone 받아서 Docker-compose 로 Container 를 구동하기 때문에 추후 ECS 에 적용할 수가 없는 구조였다.
 > 4. 직접 구축해보고 싶었다.
 
-# 세팅
+## 세팅
 
-## nginx-php-fpm
+### nginx-php-fpm
 
 Laravel 용 및 튜닝을 위해 Docker hub 의 이미지 대신 Git repo 의 이미지를 Clone 해서 세팅을 해보자.
 

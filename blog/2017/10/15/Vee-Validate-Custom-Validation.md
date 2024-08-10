@@ -8,7 +8,7 @@ date: 2017-10-15 13:57:29
 커스텀 validation을 추가해야할 때가 있다.
 created에 \$validator 인스턴스를 확장해주면 된다.
 
-# 소스
+## 소스
 
 ```js
 const option = {
@@ -29,7 +29,7 @@ const option = {
 
 모듈형태거나 전역설정이면 `import { Validator } from 'vee-validate';` 후에 `Validator.extend`로 접근하면 된다.
 
-# 사용법
+## 사용법
 
 추가한 룰 이름으로 v-validate 속성에 넣어주면 끝이다.
 
@@ -37,7 +37,7 @@ const option = {
 <input type="text" name="help" v-validate="'required|customRule'" />
 ```
 
-## 스크립트 상에서 추가
+### 스크립트 상에서 추가
 
 attach 메소드로 붙히면 된다.
 

@@ -11,7 +11,7 @@ Bower의 시대가 끝났다. [홈페이지](https://bower.io/)를 들어가보�
 
 **Yarn**을 사용해보자.
 
-# 설치
+## 설치
 
 > 2020년에는 npm 사용을 추천드립니다. 더 이상 느리지 않습니다.
 
@@ -25,13 +25,13 @@ $ yarn --version
 0.24.5
 ```
 
-# 사용법
+## 사용법
 
 npm 사용법과 아주 유사하다.
 기존 NodeJS 패키지에서 **yarn** 명령어만을 입력하면 완벽히 호환이 되고, 새로운 프로젝트라면 **yarn init** 명령어를 실행하면 된다.
 package.json을 사용하기 때문에 그냥 명령어만 바뀌었다고 생각하면 된다. (패키지들도 npm의 것을 공유한다.)
 
-## 명령어 비교
+### 명령어 비교
 
 install이 **add**로, uninstall이 **remove**로, update가 **upgrade**로 바뀐게 사실상 끝이다.
 자세한 옵션은 [CLI Docs](https://yarnpkg.com/en/docs/cli/)를 참조하자.
@@ -60,20 +60,20 @@ install이 **add**로, uninstall이 **remove**로, update가 **upgrade**로 바�
 | npm cache clean                         | yarn cache clean                   |
 | rm -rf node_modules && npm install      | yarn upgrade                       |
 
-# Global 경로
+## Global 경로
 
 - Windows: **%LOCALAPPDATA%/Yarn/config/global**
 
-## 환경 변수 설정
+### 환경 변수 설정
 
 설정을 확인한 뒤 prefix 경로를 PATH에 추가해주면 된다.
 
 ```bash
 $ yarn config list
-# { prefix: 'C:\\Users\\{NAME}\\npm' }
+## { prefix: 'C:\\Users\\{NAME}\\npm' }
 ```
 
-# 결론
+## 결론
 
 bower_components 안녕
 이젠 node_modules만 있겠구나

@@ -8,7 +8,7 @@ date: 2017-01-10 22:17:49
 localhost 에서 Https 페이지로 httpcon 을 열면 오류가 발생한다.
 인증을 받아야하기 때문인데 함수하나만 호출하면 연결이 가능해진다.
 
-# 소스
+## 소스
 
 ```java
 private void setTrustAllCerts() throws Exception{
@@ -43,6 +43,6 @@ private void setTrustAllCerts() throws Exception{
 
 [원본](https://stackoverflow.com/questions/373518/how-do-i-use-a-local-https-url-in-java)에서 가져왔다.
 
-# 예제
+## 예제
 
 HTTPCON 전에 호출하면 인증서 없이 HTTPS 연결이 가능하다.

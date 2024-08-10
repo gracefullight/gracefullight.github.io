@@ -8,11 +8,11 @@ date: 2016-12-22 16:44:30
 es5 부터 객체의 수정을 제어할 수 있다.
 ie9 부터 지원하고, ie8 은 [es5-sham](https://github.com/es-shims/es5-shim)을 추가하면 된다.
 
-# freeze method
+## freeze method
 
 객체를 불변으로 만든다.
 
-## 예제
+### 예제
 
 ```js
 const frozenObject = {
@@ -36,11 +36,11 @@ frozenObject.value3 = 3;
 console.log(frozenObject.value3); // undefined
 ```
 
-# seal method
+## seal method
 
 확장, 축소는 불가능하지만 writable 쓰기 가능하다.
 
-## 예제
+### 예제
 
 ```js
 const sealedObject = {
@@ -64,11 +64,11 @@ sealedObject.value3 = 3;
 console.log(sealedObject.value3); // undefined
 ```
 
-# preventExtensions method
+## preventExtensions method
 
 확장만 불가능하다.
 
-## 예제
+### 예제
 
 ```js
 const preventExtensionObject = {
@@ -92,7 +92,7 @@ preventExtensionObject.value3 = 3;
 console.log(preventExtensionObject.value3); // undefined
 ```
 
-# 설명
+## 설명
 
 불변하게 하려면 얼리고,
 수정이 가능하게 하려면 봉인하고
@@ -100,16 +100,16 @@ console.log(preventExtensionObject.value3); // undefined
 
 client 에서 객체 변조를 못하게 전역변수를 얼려버리자
 
-# 여담
+## 여담
 
 freeze 는 중첩된 object 에 적용이 안 되는데,
 이 때 deepFreeze 함수를 사용해 재귀적으로 객체를 얼려버리면 된다.
 
-## deepFreeze method
+### deepFreeze method
 
 [mdn](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)을 참조했다.
 
-## 소스
+### 소스
 
 ```js
 function deepFreeze(obj) {

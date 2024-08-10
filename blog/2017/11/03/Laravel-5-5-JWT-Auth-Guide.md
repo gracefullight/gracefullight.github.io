@@ -8,17 +8,17 @@ date: 2017-11-03 07:59:40
 검색해 나온 포스트들은 5.4버전에 대해서만 나와있어서, 5.5에서는 아무짝에 쓸모가 없었다.
 라라벨에서 좃인증을 시작해보자.
 
-# 설치
+## 설치
 
-## jwt-auth
+### jwt-auth
 
 171103 기준으로 dev-develop 버전의 패키지를 설치해야한다.
 
 ```bash
-$ composer require tymon/jwt-auth:1.0.0-rc.1
+composer require tymon/jwt-auth:1.0.0-rc.1
 ```
 
-## service provider 등록
+### service provider 등록
 
 ```php title="config/app.php"
 <?php
@@ -34,21 +34,21 @@ $ composer require tymon/jwt-auth:1.0.0-rc.1
 ],
 ```
 
-## 설정파일 publish
+### 설정파일 publish
 
 ```bash
-$ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider" --force
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider" --force
 ```
 
-## secret key 생성
+### secret key 생성
 
 ```bash
-$ php artisan jwt:secret
+php artisan jwt:secret
 ```
 
-# 연동
+## 연동
 
-## API Route 설정
+### API Route 설정
 
 API 가드와 유저 모델을 설정하다.
 
@@ -78,7 +78,7 @@ return [
 ];
 ```
 
-## Member Model 설정
+### Member Model 설정
 
 ```php title="app/Models/Member.php"
 <?php
@@ -101,9 +101,9 @@ class Member extends Authenticatable implements JWTSubject
 }
 ```
 
-# 사용하기
+## 사용하기
 
-## login
+### login
 
 ```php title="app/Http/MemberController.php"
 <?php
@@ -133,23 +133,23 @@ public function guard() {
 }
 ```
 
-## Authorized Routes
+### Authorized Routes
 
-### Accept Header
+#### Accept Header
 
 > **application/json** 로 설정해야 오류가 예쁘게 반환된다.
 
-### token 태우기
+#### token 태우기
 
 ```bash
-# header 이용한 방법
+## header 이용한 방법
 Authorization: Bearer yourtokens...
 
-# Querystring으로도 인증 가능
+## Querystring으로도 인증 가능
 https://gracefullight.github.io/me?token=yourtokens...
 ```
 
-### routes
+#### routes
 
 ```php title="routes/api.php"
 Route::group(['middleware' => 'auth:api'], function() {
@@ -158,7 +158,7 @@ Route::group(['middleware' => 'auth:api'], function() {
 });
 ```
 
-## logout
+### logout
 
 ```php title="app/Http/MemberController.php"
 <?php
@@ -168,7 +168,7 @@ public function logout(Request $request) {
 }
 ```
 
-## refresh
+### refresh
 
 refresh는 auth:api 미들웨어 없이 처리되어야한다.
 
@@ -179,7 +179,7 @@ public function refresh() {
 }
 ```
 
-# 여담
+## 여담
 
 Expired거나 Unauthoriezed경우 status code로 체크하면 된다.
 5.5버전 메뉴얼이 부족하다.

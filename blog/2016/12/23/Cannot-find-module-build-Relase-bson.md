@@ -7,7 +7,7 @@ date: 2016-12-23 15:19:05
 
 mongoose-post-find 모듈 사용시 bson 라이브러리를 찾지 못해 설치가 안되는 경우가 있다.
 
-# 오류
+## 오류
 
 ```log
 { Error: Cannot find module '../build/Release/bson'
@@ -31,7 +31,7 @@ mongoose-post-find 모듈 사용시 bson 라이브러리를 찾지 못해 설치
 js-bson: Failed to load c++ bson extension, using pure JS version
 ```
 
-# 해결
+## 해결
 
 해당 패키지 경로의 15번째 줄을 따라가보면 bson 패키지의 경로를 지정해주는 부분이 있는데,
 이 부분을 같은 패키지 내의 bson 경로로 일치시켜주면 된다.

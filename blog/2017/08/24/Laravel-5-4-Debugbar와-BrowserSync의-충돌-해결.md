@@ -8,7 +8,7 @@ date: 2017-08-24 22:06:11
 Laravel Mix로 browserSync 옵션을 활성화 시에 Debugbar가 생기지 않는 오류가 발생할 경우 (스크립트 단에서 JSON parse 오류가 발생한다)
 다음과 같이 설정해주면 된다.
 
-# 해결
+## 해결
 
 ```js title="webpack.mix.js"
 mix.browserSync({

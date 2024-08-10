@@ -8,7 +8,7 @@ date: 2017-07-19 00:11:01
 일본 통신사 중 소프트뱅크와 AU는 UTF8 메일이 깨져서 들어간다. (도코모는 정상적)
 Laravel 뿐아니라 일본으로 메일을 보내고 싶다면, 이 포스팅의 방식대로 접근하면 된다.
 
-# iso-2022-jp
+## iso-2022-jp
 
 먼저 인코딩을 iso-2022-jp로 바꿔줘야한다.
 
@@ -41,7 +41,7 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-# 7bit
+## 7bit
 
 위키를 참조해보면 iso-2022는 문자열을 7bit 또는 8bit로 표현하는 기술이다. 근데, 소프트뱅크 문서에 7bit로 달란다.
 메일 폼을 열어서 build시에 인코딩 바이트를 변경하자.
@@ -68,7 +68,7 @@ class YourMailForm extends Mailable
 }
 ```
 
-# mail.view
+## mail.view
 
 가장 중요한 것은 Mail View에서도 charset meta tag를 등록해줘야 한다는 것이다.
 이 걸 세팅안하고 얼마나 삽질을 해댔는지, 없던 이두근이 생길지경.
@@ -86,7 +86,7 @@ class YourMailForm extends Mailable
 
 이렇게 세팅을 하고 메일을 보내면 정상적으로 보내지는 걸 확인할 수 있다.
 
-# 여담
+## 여담
 
 세 가지만 기억하자.
 

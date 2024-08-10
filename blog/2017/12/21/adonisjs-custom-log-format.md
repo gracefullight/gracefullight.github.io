@@ -23,7 +23,7 @@ date: 2017-12-21 15:25:45
 [2017-12-21 15:01:03.506] INFO serving app on http://127.0.0.1:3333
 ```
 
-# 수정
+## 수정
 
 > 오늘 날짜를 구하기 위해 `moment`를 먼저 설치하자.
 > `winston` 패키지는 `@adonisjs/framework` 패키지에 종속된다.
@@ -58,7 +58,7 @@ module.exports = {
 };
 ```
 
-# 버전
+## 버전
 
 - @adonis/framework: 4.0.28
 - winston: 2.4.0

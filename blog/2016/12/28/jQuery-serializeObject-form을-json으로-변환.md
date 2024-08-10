@@ -7,7 +7,7 @@ date: 2016-12-28 12:38:00
 
 비동기 submit 을 진행시에 form 값을 확인해보고 json object 로 받아 한 번에 request 를 날리고 싶을 때 유용하다.
 
-# 소스
+## 소스
 
 ```js
 /*
@@ -34,13 +34,13 @@ $.fn.serializeObject = function () {
 };
 ```
 
-# 예제
+## 예제
 
 ```javascript
 const formData = $("#form").serializeObject();
 ```
 
-# 여담
+## 여담
 
 checkbox 같은 경우 여러 개 선택시 하나의 key 에 배열로 반환된다.
 

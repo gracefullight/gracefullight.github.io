@@ -5,7 +5,7 @@ tags: [javascript]
 date: 2016-12-21 23:48:07
 ---
 
-# 소스
+## 소스
 
 ```js
 // function
@@ -19,6 +19,6 @@ Number.prototype.format = function () {
 };
 ```
 
-# 설명
+## 설명
 
 첫번째는 함수 호출방식이고, 두번째는 NumberValue.format(); 으로 호출하면 된다.

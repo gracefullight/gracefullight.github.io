@@ -7,22 +7,22 @@ date: 2017-07-09 22:46:57
 
 [이전 포스팅](/2017/06/06/Laravel-5-4-Eloquent-Model/)에서 데이터를 가져왔으니, 로그인을 구현해보자.
 
-# Basic Auth
+## Basic Auth
 
 라라벨에서 제공하는 회원가입, 로그인, 비밀번호 찾기 기능을 사용하고 싶다면 artisan 명령어로 간단하게 시작할 수 있다.
 
 ```bash
-$ php artisan make:auth
+php artisan make:auth
 ```
 
 명령어를 실행하면 **resources/views/auth** 폴더에 뷰가 **app/Http/Controllers/Auth**에 로직이 생성되고 **routes/web.php**에 라우팅이 등록된다.
 DB도 같이 만들고 싶다면 [Docs](https://laravel.com/docs/5.4/authentication)를 따라하자.
 
-## 다른 테이블 사용
+### 다른 테이블 사용
 
 제공된 user 테이블을 안 쓰려면 커스터마이징이 필요하다.
 
-### 설정 변경
+#### 설정 변경
 
 **config/auth.php** 파일로 이동해 다른 모델을 등록하자.
 
@@ -63,7 +63,7 @@ class Member extends Authenticatable {
 }
 ```
 
-### 인증 필드 변경
+#### 인증 필드 변경
 
 Basic Auth는 기본 필드를 email로 잡고 있기 때문에 id 필드를 사용하게 변경해야한다.
 
@@ -76,7 +76,7 @@ public function username() {
 }
 ```
 
-## 회원가입 후 자동로그인
+### 회원가입 후 자동로그인
 
 회원가입이 성공하면 세션을 생성해줘야한다.
 
@@ -94,9 +94,9 @@ protected function registered(Request $request, $user) {
 }
 ```
 
-## ajax 처리
+### ajax 처리
 
-### 로그인
+#### 로그인
 
 로그인을 ajax로 처리해야될 경우 커스터마이징이 필요하다.
 
@@ -116,7 +116,7 @@ protected function authenticated(Request $request, $user) {
 }
 ```
 
-### 비밀번호 찾기
+#### 비밀번호 찾기
 
 비밀번호 찾기를 ajax로 처리해야될 경우 커스터마이징이 필요하다.
 
@@ -143,7 +143,7 @@ public function sendResetLinkEmail(Request $request) {
 }
 ```
 
-## routing 예외
+### routing 예외
 
 ajax 요청으로 바꿨다면 굳이 필요없는 기본 route는 등록할 필요가 없다. (예를 들면 로그인 페이지)
 먼저 **routes/web.php**에서 `Auth::routes();` 를 지워주고 라라벨 route 파일을 열어보자.
@@ -171,7 +171,7 @@ public function auth()
 
 입맛에 맞게 web.php로 가져와 사용하자.
 
-## notification 예외
+### notification 예외
 
 Noticifation은 사용자에게 빠르게 알림을 보낼 수 있는 기능이지만, 정해져 있는 템플릿을 사용하므로 커스터마이징이 되게 힘들다.
 비밀번호 찾기시에 보낼 메일을 정해진 템플릿을 사용할 수 없다면 메소드를 수정하자.
@@ -185,12 +185,12 @@ public function sendPasswordResetNotification($token) {
 }
 ```
 
-# Auth
+## Auth
 
 Basic Auth를 사용하는데 건드려야 되는 곳이 많으므로 Auth 모듈만 사용하는게 정신건강에 좋다고 본다.
 (Bootstrap 기반의 Laravel에 딱 맞는 모양을 입은 프로젝트라면 기본 인증이 좋겠지만)
 
-## 로그인
+### 로그인
 
 **먼저 사용할 모델에 Authenticatable 클래스를 상속 받자**
 그리고 LoginController에서 **Auth::attempt()** 메소드를 실행하면 끝이다.
@@ -208,7 +208,7 @@ public function login(Request $request) {
 }
 ```
 
-### not bcrypt
+#### not bcrypt
 
 Auth 모듈은 기본으로 bcrypt를 사용해 비밀번호를 암호화하고 비교하는데 다른 암호화 방식을 사용해야하는 경우가 있다.
 bcrypt를 사용하지 않게 처리해보자.
@@ -223,11 +223,11 @@ public function getAuthPassword() {
 
 이제 **Auth::attempt()** 메소드에 패스워드를 넘길 때 암호화를 해주고 넘기면 된다.
 
-## N개의 세션
+### N개의 세션
 
 관리자와 회원은 같은 세션을 사용하면 안 된다. 세션을 분기해보자.
 
-### 모델 생성
+#### 모델 생성
 
 먼저 모델을 하나 만들고 Authenticatable 클래스를 상속받는다.
 
@@ -241,7 +241,7 @@ class Admin extends Authenticatable {
 }
 ```
 
-### 설정 추가
+#### 설정 추가
 
 만든 모델을 Laravel Auth에서 사용한다고 등록을 해줘야한다.
 
@@ -269,7 +269,7 @@ return [
 
 passowrds 속성은 제공되는 password_resets 기능을 사용할 경우에만 추가해주면 된다.
 
-### 미들웨어
+#### 미들웨어
 
 관리자 세션이 인증된 사람만 관리자 페이지에 접근할 수 있어야한다.
 **php artisan make:middleware Admin** 명령어를 실행해 Admin Middleware를 만들자.
@@ -344,7 +344,7 @@ Route::group(['middleware' => 'admin', 'as' => 'admin.'], function() {
 });
 ```
 
-### 활용
+#### 활용
 
 기존 Auth 메소드들에 guard만 추가해주면 쉽게 사용 가능하다.
 
@@ -356,13 +356,13 @@ Auth::guard('admin')->user();
 Auth::guard('admin')->logout();
 ```
 
-## 로그아웃
+### 로그아웃
 
 **Auth::logout()** 메소드를 호출하면 된다.
 
-# 이슈
+## 이슈
 
-## 세션 아이디
+### 세션 아이디
 
 라라벨에선 로그인을 할 때 세션아이디를 새로운 값으로 엎어쳐버린다.
 따라서 같은 환경에서 접근했는데, 로그인을 하면 다른 사용자가 되는 경우가 생긴다.
@@ -375,20 +375,20 @@ $old_session_id = Session::getId();
 // 로그인이 성공하면 DB에서 등록된 세션값을 업데이트하자.
 ```
 
-# 소셜 로그인
+## 소셜 로그인
 
 `laravel/socialite` 패키지를 설치하고 아주 쉽게 연동이 가능하다.
 
-## 세팅
+### 세팅
 
 ```bash
-$ composer require laravel/socialite
+composer require laravel/socialite
 ```
 
 기본 socialite 패키지는 `facebook`, `twitter`, `linkedin`, `google`, `github` or `bitbucket` 만 연동이 가능하므로 다른 소셜 로그인을 연동하고 싶을 경우 [`Socialite Providers`](https://socialiteproviders.github.io/) 패키지를 사용하면 된다.
 
 > Socialite Providers 사이트에는 Naver, Kakao, BattleNet(?) 등의 소셜 연동이 가능한 패키지가 무수히 많다.
 
-# 여담
+## 여담
 
 [JWT 인증](/2017/11/03/Laravel-5-5-JWT-Auth-Guide)과 같이본다면 Laravel을 사용한 실무에서 필요한 인증은 다 마무리한 셈일 듯

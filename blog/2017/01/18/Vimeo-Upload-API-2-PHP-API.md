@@ -7,20 +7,20 @@ date: 2017-01-18 10:50:14
 
 [Vimeo Developers 등록](/2017/01/16/Vimeo-Upload-API-1-Vimeo-Developers/)에서 이어집니다.
 
-# PHP API 설치
+## PHP API 설치
 
 [Vimeo Libraries](https://developer.vimeo.com/api/libraries)에서 원하는 API를 선택하면 된다.
 **Server Libraries PHP**에서 Download를 클릭하면 Github로 이동하고 [Installation](https://github.com/vimeo/vimeo.php#installation)을 참조하면 된다.
 
-## composer
+### composer
 
 composer가 있으면 쉽게 설치할 수 있다.
 
 ```bash
-$ composer require vimeo/vimeo-api
+composer require vimeo/vimeo-api
 ```
 
-## 직접 설치
+### 직접 설치
 
 [v1.2.5](https://github.com/vimeo/vimeo.php/archive/1.2.5.zip)를 다운 받고 원하는 곳에 압축을 푼 뒤 class를 load한다.
 
@@ -30,15 +30,15 @@ $ composer require vimeo/vimeo-api
 ?>
 ```
 
-# 설정 변경
+## 설정 변경
 
 **vimeo.php\config.json** 파일을 열어 **client_id, client_secret, access_token** 값을 수정하자.
 
-# Upload API 사용
+## Upload API 사용
 
 **vimeo.php\example\upload.php**를 커스터마이징 해보자.
 
-## 기본 예제 소스
+### 기본 예제 소스
 
 ```php title="example\upload.php"
 <?php
@@ -88,7 +88,7 @@ foreach ($files as $file_name) {
 // }
 ```
 
-## 커스터마이징
+### 커스터마이징
 
 25번째 줄의 [request 요청](https://github.com/vimeo/vimeo.php#make-requests)에 추가로 영상정보를 변경하게 요청할 수 있다.
 영상정보를 가져오는건 변하지 않는다.
@@ -133,7 +133,7 @@ $video_data = $lib->request($uri, array(
 옵션은 [해당 endpoints](https://developer.vimeo.com/api/endpoints/videos#PATCH/videos/{video_id}) 참조하자.
 ![image from hexo](https://i.imgur.com/EsTv4Ld.png)
 
-## video_data endpoint
+### video_data endpoint
 
 업로드된 파일의 response data에는 파일 metadata가 들어있다.
 **\$video_data\['body'\]\['키값'\]** 으로 접근하면 된다. 입맛에 맞게 사용해보자.
@@ -304,7 +304,7 @@ $video_data = $lib->request($uri, array(
 }
 ```
 
-# 여담
+## 여담
 
 API의 내부 구조는 헤더추가와 curl로만 이루어져있다.
 OAuth2.0과 RESTful를 이해했다면 아주 쉬울 것이다.

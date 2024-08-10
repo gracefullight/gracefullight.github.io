@@ -9,12 +9,12 @@ date: 2017-01-14 23:17:39
 
 리눅스에서는 Curl 모듈을 확장만 하면 사용이 가능하지만 윈도우 로컬 서버에서는 사용이 되지 않는다. 해결해보자.
 
-# 모듈 확장
+## 모듈 확장
 
 **php.ini**에서 **php_curl** 모듈의 주석을 해제한다.
 ![image from hexo](https://i.imgur.com/FY06asi.jpg)
 
-# dll 복사
+## dll 복사
 
 총 4 개의 dll 파일을 **C:\Windows\system32** 폴더로 복사해야한다.
 

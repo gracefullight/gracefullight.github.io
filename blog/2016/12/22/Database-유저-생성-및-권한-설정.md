@@ -5,7 +5,7 @@ tags: [database, mariadb, mysql]
 date: 2016-12-22 22:46:07
 ---
 
-# 유저 생성
+## 유저 생성
 
 ```sql
 CREATE USER '유저명'@'%' IDENTIFIED BY '비밀번호'; -- 모든 아이피 접근
@@ -13,26 +13,26 @@ CREATE USER '유저명'@'localhost' IDENTIFIED BY '비밀번호'; -- 로컬호�
 CREATE USER '유저명'@'127.0.0.1' IDENTIFIED BY '비밀번호'; -- 로컬호스트 접근
 ```
 
-# 데이터베이스에 모든 권한 부여
+## 데이터베이스에 모든 권한 부여
 
 ```sql
 -- 해당 디비명의 유저의 모든권한 설정
 GRANT ALL PRIVILEGES ON 디비명.* TO '유저명'@'%' WITH GRANT OPTION;
 ```
 
-# 권한 적용
+## 권한 적용
 
 ```sql
 FLUSH PRIVILEGES;
 ```
 
-# 권한 확인
+## 권한 확인
 
 ```sql
 SHOW GRANTS FOR '유저명'@'%';
 ```
 
-# 여담
+## 여담
 
 권한 부여는 쉘상에서 접근해야지 오류가 없다.
 

@@ -10,13 +10,13 @@ cURL error 60: SSL certificate problem...으로 시작하는 오류가 발생할
 
 ![image from hexo](https://i.imgur.com/u6XZCfz.png)
 
-# 해결
+## 해결
 
-## 키 다운로드
+### 키 다운로드
 
 [root certificate bundle](https://curl.haxx.se/ca/cacert.pem)을 다운로드 받아 php 하위 경로로 넣어준다.
 
-## 등록
+### 등록
 
 **php.ini**에서 키를 추가한다.
 
@@ -27,6 +27,6 @@ cURL error 60: SSL certificate problem...으로 시작하는 오류가 발생할
 curl.cainfo = D:/php7/extras/ssl/cacert.pem
 ```
 
-# 참조
+## 참조
 
 - [PHP cURL error code 60](http://stackoverflow.com/questions/21114371/php-curl-error-code-60)

@@ -7,14 +7,14 @@ date: 2016-12-22 20:16:37
 
 javascript throttle 패턴과 debounce 패턴에 대해 알아보자.
 
-# Throttle
+## Throttle
 
 매 ms 마다 한 번만 호출된다.
 mousemove, scroll 같은 이벤트로 호출되는 함수는 이벤트 발생시 무한정 호출되어 성능 저하를 가지고 오는데, 이를 방지할 수 있다.
 
 모바일에서 스크롤링 더보기에 사용할 수 있다.
 
-## 소스
+### 소스
 
 ```js
 const throttleFunction = (function () {
@@ -39,14 +39,14 @@ const throttleFunction = (function () {
 throttleFunction(param1, param2);
 ```
 
-# Debounce
+## Debounce
 
 마지막 호출로부터 ms 후에 함수를 한번 호출한다.
 지연된 호출을 할 수 있게 해주는데, 호출이 반복되는 동안은 실행을 방지하고, 호출이 멈춘 뒤 지정한 ms 후에 함수를 실행해 성능 저하를 막을 수 있다.
 
 검색 자동완성 기능에 적합하다.
 
-## 소스
+### 소스
 
 ```js
 const debounceFunction = (function () {
@@ -75,7 +75,7 @@ const debounceFunction = (function () {
 debounceFunction(param1, param2);
 ```
 
-# 여담
+## 여담
 
 즐겨 사용하는 sublime text package 인 [javascript patterns](https://packagecontrol.io/packages/JavaScript%20Patterns)에서 참조했다.
 

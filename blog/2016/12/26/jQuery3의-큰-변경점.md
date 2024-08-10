@@ -7,7 +7,7 @@ date: 2016-12-26 13:57:15
 
 jQuery3이 기존 버전에서 어떻게 달라졌는지 알아보자.
 
-# load(), unload(), error() 삭제
+## load(), unload(), error() 삭제
 
 이 함수들은 이제 ajax 기능으로만 사용할 수 있다.
 다음처럼 url 을 로드하는 데에만 사용할 수 있다.
@@ -31,43 +31,43 @@ $(img).on("load", function () {
 });
 ```
 
-# document on Ready 삭제
+## document on Ready 삭제
 
 document 로드시에 호출되는 함수들을 정의하기 위한 위의 형태는 더 이상 사용할 수 없다.
 `$(document).ready(function(){ });` 으로 변경해도 되나
 
 => `$(function(){ });` **로 사용하자, 권장하는 방법이다.**
 
-# deferred의 Promise 스펙
+## deferred의 Promise 스펙
 
 Promise/A+ 스펙을 지키지 않은 2버전까지는 오류가 있었다고 하는데, then, when 등의 메소드를 사용 중엔 별다른 문제가 없어서
 체감상 크게 느껴지지 않았다.
 
 => **then().then().then().then().catch() 와 같은 구문이 가능하다.**
 
-# bind(), unbind(), delegate() undelegate() 삭제
+## bind(), unbind(), delegate() undelegate() 삭제
 
 위 구문 사용시 console.warning이 떴기에 바꿔왔더라면 큰 문제는 없다.
 
 => **on(), off() 로 대체하면 된다.**
 
-# andSelf() 삭제
+## andSelf() 삭제
 
 이 메소드가 삭제되어 sementic UI 사용시 오류가 발생한다.
 
 => **addBack() 으로 대체하면 된다.**
 
-# param() 이 %20 을 + 기호로 바꾸지 않음
+## param() 이 %20 을 + 기호로 바꾸지 않음
 
 `$.ajax`로 return 받을 때 가끔씩 빈칸이 더하기로 반환되는 문제가 드디어 해결되었다.
 
-# event.props, event.fixHooks 삭제
+## event.props, event.fixHooks 삭제
 
 jquery.onoff 라이브러리 사용시 오류가 난다.
 
 => **fixHooks는 fix로 대체 가능하고, props는 빈 배열로 초기화시키면 된다.**
 
-# data attribute 정의시 kebab-case를 사용가능
+## data attribute 정의시 kebab-case를 사용가능
 
 이 부분은 jQuery 문서의 예제를 참조했다.
 

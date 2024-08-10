@@ -8,7 +8,7 @@ date: 2017-07-23 20:37:34
 윈도우도 Program Files 가 무슨 폴더인지 보자마자 알듯 리눅스도 폴더명이 친숙해지면 더 쉬워지지 않을까 했다. (보통 /home, /etc, /var, /tmp 정도만 왔다 갔다 하니까)
 이 정도만 정리해 놓으면 CPU 정보를 볼때 왜 /proc/cpuinfo를 까야되는지 한 번에 감이 올 것 같다.
 
-# Directory Structure
+## Directory Structure
 
 | 경로                        | 설명                                                |
 | --------------------------- | --------------------------------------------------- |
@@ -34,6 +34,6 @@ date: 2017-07-23 20:37:34
 | /usr/share                  | 다른 유닉스 머신과 작업해야 할 파일                 |
 | /vmlinuz 또는 /boot/vmlinuz | 리눅스 커널                                         |
 
-# 여담
+## 여담
 
 [Linux Kernel](https://github.com/torvalds/linux)을 이해하는 그 날까지

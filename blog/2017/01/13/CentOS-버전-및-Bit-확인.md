@@ -7,7 +7,7 @@ date: 2017-01-13 00:33:12
 
 리눅스에 모듈을 설치할 때 항상 버전과 Bit확인이 필요하다.
 
-# Version
+## Version
 
 ```bash
 $ cat /etc/*release*
@@ -15,7 +15,7 @@ $ cat /etc/*release*
 CentOS release 6.6 (Final)
 ```
 
-# Bit
+## Bit
 
 ```bash
 $ getconf LONG_BIT

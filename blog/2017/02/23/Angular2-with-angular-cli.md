@@ -5,7 +5,7 @@ tags: [angular, webpack]
 date: 2017-02-23 23:30:24
 ---
 
-# 앞서
+## 앞서
 
 지난시간에는 [Angular with Webpack](/2017/02/06/Angular2-with-Webpack/)으로 ng2 의 기본 실행 틀에 대해 알아봤다.
 매번 이렇게 세팅을하려면 아무도 ng2 를 쉽게 사용하지 못할 것이다.
@@ -13,7 +13,7 @@ date: 2017-02-23 23:30:24
 
 이걸 모두 해결한 정말 멋진 모듈인 Angular-cli 로 ng2 project 를 시작해보자.
 
-# 설치
+## 설치
 
 [Angular-cli](https://github.com/angular/angular-cli)를 참조해도 되지만 하나씩 해보자.
 
@@ -31,7 +31,7 @@ ng --version
 
 ![image from hexo](https://i.imgur.com/komN3rp.png)
 
-# 프로젝트 생성
+## 프로젝트 생성
 
 **ng new 프로젝트명** 명령어로 프로젝트를 생성하면 된다.
 
@@ -44,24 +44,24 @@ ng new ng2-cli-test --routing
 --routing 명령어는 기본으로 angular 라우팅을 app module 에 넣어준다.
 angular routing 을 사용하지 않을 경우 옵션을 제외시키면 된다.
 
-## 프로젝트 실행
+### 프로젝트 실행
 
 **생성한 프로젝트로 이동**해 프로젝트를 실행해보자
 
-## 패키지 설치
+### 패키지 설치
 
 ```bash
-# cd ng-cli-test
+## cd ng-cli-test
 $ npm install
 ```
 
 1~3 분정도 걸리니 느긋하게 기다리면 된다.
 
-## 웹서버 실행
+### 웹서버 실행
 
 ```bash
 $ npm start
-# 또는
+## 또는
 $ ng serve
 ```
 
@@ -90,7 +90,7 @@ package.json 을 열어 start 명령어 실행시 브라우져가 바로 뜨게 
 ![image from hexo](https://i.imgur.com/0i4hGvZ.png)
 쉽게 실행되었다!
 
-# 컴포넌트 추가
+## 컴포넌트 추가
 
 컴포넌트도 쉽게 생성할 수 있다.
 
@@ -120,7 +120,7 @@ export class MyModule {}
 정말 영롱하다.
 자세한 generate component 옵션은 [여기](https://github.com/angular/angular-cli/blob/master/docs/documentation/generate/component.md)서 확인할 수 있다.
 
-# 라우팅
+## 라우팅
 
 이제 **app-routing.module.ts** 파일을 열어 sub.component 로 라우팅이 되게 해보자.
 
@@ -162,16 +162,16 @@ subpage 버튼 링크를 클릭시 sub work! 라는 sub component 의 뷰가 보
 
 > ng2 의 routing 은 router-outlet directive 바로 다음에 생성된다.
 
-# 라이브러리
+## 라이브러리
 
-## polyfills
+### polyfills
 
 하위 버전 브라우저를 위해 polyfills 를 활성화 해준다.
 **polyfils.ts**의 core-js/es6 구문들의 주석을 해제만 해주면 된다.
 
 ![image from hexo](https://i.imgur.com/bXnifWX.png)
 
-## global script
+### global script
 
 전역에서 사용해야할 스크립트가 있다면 **.angular-cli.json** 파일의 **apps.scripts** 안에 넣어주면 된다.
 
@@ -187,7 +187,7 @@ subpage 버튼 링크를 클릭시 sub work! 라는 sub component 의 뷰가 보
 }
 ```
 
-## global css
+### global css
 
 global script 와 마찬가지로 angular-cli.json 에 넣는 방식이 있지만
 **src/style.css**에 import 방식으로 넣어줘도 된다.
@@ -197,7 +197,7 @@ global script 와 마찬가지로 angular-cli.json 에 넣는 방식이 있지�
 @import "~https://fonts.googleapis.com/icon?family=Material+Icons";
 ```
 
-## third party
+### third party
 
 third party library 를 사용해야한다면 라이브러리와 @types 를 설치해 사용하고 싶은 컴포넌트에서 import 구문으로 사용하면 된다.
 
@@ -210,19 +210,19 @@ npm install @types/lodash --save-dev
 import * as _ from "lodash";
 ```
 
-# 빌드
+## 빌드
 
 웹 브라우저에서 실행할 수 있게 프로젝트를 빌드해보자.
 
 ```bash
 $ ng build
-# minify 옵션 추가
+## minify 옵션 추가
 $ ng build --prod
 ```
 
 빌드를 실행하면 **.angular-cli.json** 파일에 있는 root 와 outDir 경로를 이용해 진행된다.
 
-# 여담
+## 여담
 
 이번 시간을 통해 로컬에 ng2 프로젝트를 쉽게 생성하고, 관리할 수 있게 되었습니다.
 

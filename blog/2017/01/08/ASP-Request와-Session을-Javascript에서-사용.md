@@ -5,11 +5,11 @@ tags: [asp, javascript]
 date: 2017-01-08 01:40:10
 ---
 
-# 선행
+## 선행
 
 classic asp 는 기본 json 모듈이 없기 때문에 [여기](https://code.google.com/archive/p/aspjson/downloads)에서 모듈을 다운로드 해야한다.
 
-# 소스
+## 소스
 
 ```asp
 <!--#include virtual = "/JSON_2.0.4.asp"-->
@@ -57,7 +57,7 @@ NEXT
 </script>
 ```
 
-# 설명
+## 설명
 
 1 줄에서 JSON 모듈을 include 시켜주고 6~27 줄에서 Get 방식과 Post 방식의 Request 를 모두 파싱한다. 30~33 줄에서 Session 을 파싱한다.
 40 줄에서 request 와 session 을 javascript 변수로 받고, 클라이언트가 변조하지 못하게 Object.freeze 로 얼려버린다.

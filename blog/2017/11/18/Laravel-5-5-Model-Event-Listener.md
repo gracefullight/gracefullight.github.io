@@ -9,9 +9,9 @@ date: 2017-11-18 11:12:21
 Model이 Create 될 때 이벤트 리스너를 붙혀 다른 기능을 연결하는 예제가 가장 쉽다.
 (예를 들면 로그가 생성될 때 SMS를 날리는 경우)
 
-# 이벤트 생성
+## 이벤트 생성
 
-## EventServiceProvider
+### EventServiceProvider
 
 먼저 EventServiceProvider에 내가 사용할 이벤트와 리스너를 등록해줘야한다.
 
@@ -31,19 +31,19 @@ class EventServiceProvider extends ServiceProvider
 
 > `$listen` 변수에 기본으로 등록되어있는 이벤트는 지워주자
 
-## generate
+### generate
 
 이제 소스 파일을 생성시켜준다.
 
 ```bash
-$ php artisan event:generate
+php artisan event:generate
 ```
 
 명령어를 실행하면 `app/Events`와 `app/Listeners`에 방금 등록한 이벤트 리스너 파일이 자동으로 생성된다.
 
-# 바인딩
+## 바인딩
 
-## 모델
+### 모델
 
 모델에서 방금 추가된 이벤트를 연결시켜주자.
 
@@ -62,7 +62,7 @@ class Log extends Model
 }
 ```
 
-## 이벤트
+### 이벤트
 
 이벤트에서 해당 모델을 연결시켜주자.
 
@@ -92,7 +92,7 @@ class LogCreated
 }
 ```
 
-# 처리
+## 처리
 
 리스너에서 받은 이벤트를 처리하자.
 
@@ -119,6 +119,6 @@ class LogCreatedListener
 
 > `ShouldQueue`로 확장해 큐에 담을 수도 있다.
 
-# 여담
+## 여담
 
 메일 발송과 비슷한 플로우였다.

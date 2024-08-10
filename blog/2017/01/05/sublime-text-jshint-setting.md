@@ -8,25 +8,25 @@ date: 2017-01-05 18:11:50
 javascript 에서 linter 의 역활은 중요하다.
 Sublime Text 나 VSCode 에서 jshint linter 를 설치하고, 기본 설정을 수정해보자.
 
-# 설치
+## 설치
 
-## Sublime
+### Sublime
 
-### 모듈 설치
+#### 모듈 설치
 
 Sublime Linter 패키지가 선행되어야한다.
 
 **Package Control**을 열어 [Sublime-Linter jshint](https://github.com/SublimeLinter/SublimeLinter-jshint)를 설치한다.
 간단히 jshint 로 검색해도 된다.
 
-### jshint 설치
+#### jshint 설치
 
 ```bash
-# 전역으로 jshint를 설치한다.
+## 전역으로 jshint를 설치한다.
 $ npm install -g jshint
 ```
 
-### 설정 경로 변경
+#### 설정 경로 변경
 
 **Preferences > Package Settings > SublimeLinter > Settings - user** 메뉴로 들어가,
 "users.linters.jshint.args"에 경로를 수정한다.
@@ -46,7 +46,7 @@ $ npm install -g jshint
 }
 ```
 
-## VSCode
+### VSCode
 
 내장되어있다.
 **파일 > 기본설정 > 설정**에서 아래 속성을 만져주면 된다.
@@ -57,9 +57,9 @@ $ npm install -g jshint
 }
 ```
 
-# 설정 파일
+## 설정 파일
 
-## 소스
+### 소스
 
 ```json
 {
@@ -96,7 +96,7 @@ $ npm install -g jshint
 }
 ```
 
-## 설명
+### 설명
 
 - **esnext** : es6 의 구문을 사용할 수 있음
 - **asi** : 세미콜론이 없을 수 있음

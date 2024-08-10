@@ -7,11 +7,11 @@ date: 2017-09-06 21:38:37
 
 Laravel DebugBar 를 이용하는게 편하지만 dump 나 json 리턴시에 DebugBar 가 보이지 않으므로 직접 찍어줘야하는 경우가 많다.
 
-# 소스
+## 소스
 
 ```php
 <?php
-# DB 파사드를 추가한다.
+## DB 파사드를 추가한다.
 use DB;
 ...
 
@@ -28,6 +28,6 @@ public function your_func(Request $request) {
 }
 ```
 
-# 결과
+## 결과
 
 배열에 query, bindings (preparedStatement 를 위한 것), time 이 상세하게 나온다.

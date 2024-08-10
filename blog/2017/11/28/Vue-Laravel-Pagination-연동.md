@@ -27,7 +27,7 @@ Laravel에서 `paginate` 메소드를 `json`으로 받았을 시에 데이터는
 [Laravel Vue Pagination](https://github.com/gilbitron/laravel-vue-pagination) 패키지를 활용하면 된다.
 **SPA**일 경우에는 다운 받고 **Usage** 탭에 적힌대로 바로 사용하면 되지만, Multi Page일경우는 직접 컴포넌트를 가져와야한다.
 
-# 사용법
+## 사용법
 
 ```html
 <ul>
@@ -68,6 +68,6 @@ Laravel에서 `paginate` 메소드를 `json`으로 받았을 시에 데이터는
 </script>
 ```
 
-# 예외처리
+## 예외처리
 
 [Component 소스](https://github.com/gilbitron/laravel-vue-pagination/blob/master/src/laravel-vue-pagination.js#L25)의 _template_ 부분을 보면 nav로 감싸져있지 않기에 Laravel 기본 템플릿과 일치시키려면 `nav` 태그로 감싸주면 된다.

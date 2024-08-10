@@ -7,20 +7,20 @@ date: 2017-01-10 16:27:06
 
 d3 와 d3-cloud 를 사용해 R 의 Word Cloud 를 javascript 로 구현해보자.
 
-# 설치
+## 설치
 
 ```bash
-# npm
+## npm
 $ npm install d3
 $ npm install d3.layout.cloud
-# bower
+## bower
 $ bower install d3
 $ bower install d3-cloud
 ```
 
-# 예제
+## 예제
 
-## 소스
+### 소스
 
 ```html
 <script src="/bower_components/d3/d3.min.js"></script>
@@ -94,6 +94,6 @@ $ bower install d3-cloud
 
 [d3-cloud](https://github.com/jasondavies/d3-cloud)의 예제소스는 nodejs 환경에서만 돌릴 수 있어 모든 웹에서 예제를 사용할 수 있게 수정했다.
 
-## 결과
+### 결과
 
 ![image from hexo](https://i.imgur.com/BnCfjGK.png)

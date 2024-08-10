@@ -5,18 +5,18 @@ tags: [javascript, pwa, serviceworker]
 date: 2017-12-22 20:53:41
 ---
 
-# 개요
+## 개요
 
 Progressive Web App의 시대가 왔다.
 Client단에서 모든 static 파일을 브라우저에 캐시를 할 수 있고 **웹을 앱처럼 오프라인**에서 작업하게 할 수 있다.
 그 첫번째로 캐싱에 대해 알아보자.
 
-# 준비
+## 준비
 
 Promise, Fetch, Worker 및 Javascript 의 실행 구조, DOM 에 대한 사전지식이 필히 있어야 한다.
 HTTP Cache 를 걸어봤다면 이해가 쉬울 듯 싶다.
 
-## ServiceWorker
+### ServiceWorker
 
 서비스 워커는 **브라우저가 백그라운드에서 실행하는 스크립트**이며, **클라이언트에 설치되는 프록시**다.
 이 개념은 중요해서 외워야한다. **브라우저 백그라운드에서 네트워크를 가로채는 Thread** 라고 보면 된다.
@@ -25,14 +25,14 @@ HTTP Cache 를 걸어봤다면 이해가 쉬울 듯 싶다.
 
 웹 캐싱은 [CacheStorage](https://developer.mozilla.org/ko/docs/Web/API/CacheStorage)를 사용한다. Sqlite 같은 클라이언트 데이터베이스인데, Key:value 로 구성된 데이터베이스라고 보면 된다.
 
-### 주의
+#### 주의
 
 > https 환경 또는 localhost 도메인에서만 이 기능을 사용할 수 있다.
 
 브라우저별 지원상황은 [다음](https://jakearchibald.github.io/isserviceworkerready/#service-worker-enthusiasm)과 같다 1803기준 Safari에도 Shipped가 되었다!
 ~~1712 기준 Safari가 아직도 Developement 상태인게 조금 아쉽다~~
 
-### 세팅
+#### 세팅
 
 `sw.js`란 파일을 `public`폴더(index.html이 있는)에 생성하자.
 그리고 메인 script파일에 다음과 같이 service-worker를 불러오는 구문을 추가한다.
@@ -61,7 +61,7 @@ if ("serviceWorker" in navigator) {
 
 이렇게 뜨면 설치된 것이다.
 
-# Basic
+## Basic
 
 서비스워커에서는 `self` 키워드로 자기 자신을 접근할 수 있다. 몇 가지 static 파일들을 캐싱처리 해보자.
 모던 브라우저에서만 지원이 되므로 `arrow function`을 사용해도 된다.
@@ -99,11 +99,11 @@ self.addEventListener("install", (event) => {
 
 그리고 개발자도구의 Network 탭에서 호출하는 이미지의 size에 **(from ServiceWorker)**가 보인다.
 
-# Intermediate
+## Intermediate
 
 내용이 업데이트 되야하는 페이지나 리소스에 대해서는 동적으로 캐싱 처리를 해야한다.
 
-## Dynamic caching
+### Dynamic caching
 
 ```js title="sw.js"
 const DYNAMIC_CACHE_NAME = "다이나믹-캐시-스토리지1";
@@ -150,7 +150,7 @@ self.addEventListener("fetch", (event) => {
 });
 ```
 
-## 오래된 캐시 삭제
+### 오래된 캐시 삭제
 
 캐시 스토리지명을 바꿔 캐시의 버전을 올리면 기존 캐시 스토리지는 삭제해줘야한다.
 
@@ -185,7 +185,7 @@ self.addEventListener("activate", (event) => {
 
 결과적으로 `DYNAMIC_CACHE_NAME`이 아닌 캐시 스토리지는 삭제된다.
 
-## offline fallback
+### offline fallback
 
 캐시된 페이지와 리소스는 오프라인에서도 접근이 가능하다.
 여기서 오류가 발생하면 offline.html 같은 페이지로 떨어지게 할 수 있다. (마치 404 오류 페이지처럼)
@@ -212,12 +212,12 @@ self.addEventListener("fetch", (event) => {
 });
 ```
 
-# Advanced
+## Advanced
 
 서비스워커에 static, dynamic cache를 첨가했는데 소스가 너무 지저분하다.
 직관적으로 만들어보자.
 
-## 리팩토링
+### 리팩토링
 
 ```js title="sw.js"
 (() => {
@@ -250,7 +250,7 @@ self.addEventListener("fetch", (event) => {
 
 IIFE를 사용해 좀 더 예쁘게 변했다.
 
-## cross domain request
+### cross domain request
 
 서비스워커에서 fetch로 외부 리소스를 가지고오면 `opaque` response가 반환된다.
 cors 정책이 설정되어 있지 않아 아무 정보도 가지고 올 수 없는 건데, 이런 리소스만 골라서 캐싱처리를 하고 싶다면 request url이나 response content-type을 가지고 처리할 수 있다.
@@ -299,17 +299,17 @@ const dynamicCacheStrategy = (event) => {
 };
 ```
 
-# WorkBox
+## WorkBox
 
 이제 클라이언트 캐시가 어떻게 돌아가는지 확인했으니 구글에서 만든 [멋진 라이브러리](https://developers.google.com/web/tools/workbox/)를 사용해보자.
 
 간결하고 직관적인 문법으로 위의 구문들을 예쁘게 만들 수 있다.
 
-## Stratergy
+### Stratergy
 
 그 전에 캐싱 전략을 알아야한다.
 
-### cacheFirst
+#### cacheFirst
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/ss-falling-back-to-network.png)
 
@@ -317,7 +317,7 @@ const dynamicCacheStrategy = (event) => {
 
 > 오프라인을 우선적으로 보여주는 페이지에 적합하다.
 
-### cacheOnly
+#### cacheOnly
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/ss-cache-only.png)
 
@@ -325,20 +325,20 @@ const dynamicCacheStrategy = (event) => {
 
 > static file들이 여기에 해당된다.
 
-### networkFirst
+#### networkFirst
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/ss-network-falling-back-to-cache.png)
 
 네트워크를 먼저 접근하고 오프라인일 경우 캐시를 가져온다.
 이 방법은 연결이 원활하지 않거나 느린 경우 네트워크가 실패할 때까지 기다린 뒤 리소스가 보여지므로 UX에 좋지 않을 수 있다.
 
-### networkOnly
+#### networkOnly
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/ss-network-only.png)
 
 캐시가 필요없는 GET 메소드가 아닌 다른 메소드가 주로 여기에 해당된다.
 
-### staleWhileRevalidate
+#### staleWhileRevalidate
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/cm-stale-while-revalidate.png)
 
@@ -347,19 +347,19 @@ const dynamicCacheStrategy = (event) => {
 
 > 주로 이 방식이 사용된다.
 
-### Cache then network
+#### Cache then network
 
 ![image from hexo](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/images/ss-cache-then-network.png)
 
 페이지가 두 개의 요청(캐시에 요청, 네트워크에 요청)을 동시에 하고 캐시된 데이터를 먼저 표시한 다음 네트워크 데이터가 도착하면 페이지를 업데이트를 한다.
 WorkBox에는 없는 strategy인데 networkFirst보다 UX상 좋다고 한다.
 
-## 설치
+### 설치
 
 ServiceWorker에서는 라우팅 기능을 사용하기 위해 구글 CDN에서 제공하는 스크립트를 사용하고
 Pre-Cache를 정의하기 위해 로컬에서 `workbox-cli`를 추가해야한다.
 
-### importScript
+#### importScript
 
 [importScript](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts)는 ServiceWorker 파일에서만 사용가능한 구문으로 `import`나 `require`와 같다고 보면 된다.
 
@@ -369,15 +369,15 @@ importScripts(
 );
 ```
 
-### workbox-cli
+#### workbox-cli
 
 ```bash
-$ yarn global add workbox-cli
+yarn global add workbox-cli
 ```
 
-## 메소드
+### 메소드
 
-### precache
+#### precache
 
 프리캐시는 정적 자원들을 미리 캐싱처리해서 **Cache Only Stratergy**를 사용하는 것이다.
 주로 이미지나 css, vendor-js 등을 여기에 담아준다.
@@ -385,13 +385,13 @@ $ yarn global add workbox-cli
 workbox-cli를 설치하고 wizard 명령어를 실행하면 [config 파일](https://developers.google.com/web/tools/workbox/modules/workbox-cli#configuration)이 생성된다.
 
 ```bash
-$ workbox wizard
+workbox wizard
 ```
 
 설정을 입맛에 맞게 변경해주고 pre-cache할 파일 목록을 생성해주는 명령어를 실행하자
 
 ```bash
-$ workbox injectManifest config.js
+workbox injectManifest config.js
 ```
 
 ServiceWorker에 `workbox.precaching.precacheAndRoute([])` 구문이 있다면 목록이 들어가 있는 걸 확인할 수 있다.
@@ -408,7 +408,7 @@ workbox.precaching.precacheAndRoute([
 ]);
 ```
 
-### Routing
+#### Routing
 
 WorkBox를 사용하는 이유는 바로 이 라우팅에 있다.
 위에서 많은 양의 라우팅 분기 코드로 캐싱을 처리했는데 WorkBox는 다음과 같이 간결해진다.
@@ -454,7 +454,7 @@ workbox.routing.registerRoute(
 코드가 너무 예뻐졌다. callback으로 Request의 모든 걸 캐치해 낼 수 있다.
 더 구체적으로 쓰고 싶으면 [문서](https://developers.google.com/web/tools/workbox/guides/route-requests)를 참조하자
 
-## 부가 기능
+### 부가 기능
 
 이 기능 말고도 다음과 같은 멋진 기능을 사용할 수 있다, 하지만 언제 쯤 써볼 수 있을지..
 
@@ -462,7 +462,7 @@ workbox.routing.registerRoute(
 - [broadcastUpdate](https://developers.google.com/web/tools/workbox/modules/workbox-broadcast-cache-update) (postMessage를 사용하는 그 것 맞다)
 - [cacheableResponse](https://developers.google.com/web/tools/workbox/modules/workbox-cacheable-response)
 
-### offline GA
+#### offline GA
 
 오프라인에서도 [Google Analytics](https://developers.google.com/web/tools/workbox/modules/workbox-google-analytics) 를 사용할 수 있다.
 
@@ -472,17 +472,17 @@ workbox.routing.registerRoute(
 workbox.googleAnalytics.initialize();
 ```
 
-## Webpack
+### Webpack
 
 웹팩에 [WorkBox-Webpack-Plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)을 붙힐 수 있는데 아직 도전을 안 해봤다. 후술할 sw-precache를 굳이 뺄 이유가 없고, 레퍼런스도 워낙 많기에..
 
-# sw-precache
+## sw-precache
 
 `create-react-app`이나 `Vue-Cli`나 `@angular/cli` 모두 클라이언트 캐싱에 WorkBox 대신 이 라이브러리를 사용하고 있다. (WorkBox에서 캐싱기능만 떼어낸 라이브러리라고 보면 된다)
 
 기본 설정을 굳이 안 건들여도 되고, `exact`해서 사용 중이라면 옵션을 [라이브러리](https://github.com/GoogleChromeLabs/sw-precache)를 한 번 쯤 봐주는 것도 나쁘지 않다.
 
-# 참고
+## 참고
 
 - [Google Web Fundementals Guides Base Technology](https://developers.google.com/web/fundamentals/primers/service-workers/)
 - [Google Web Fundamentals Offline cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/)
@@ -490,7 +490,7 @@ workbox.googleAnalytics.initialize();
 - [WorkBox](https://github.com/GoogleChrome/workbox)
 - [sw-precache](https://github.com/GoogleChromeLabs/sw-precache)
 
-# 여담
+## 여담
 
 - 기술 정리하는 건 시간이 너무 오래 걸린다.
 - Redis, eTag, Vanish, SW 까지 사용하면 성능상에 이점은 있겠지만 키를 어떻게 관리해야될지가 중요할 듯

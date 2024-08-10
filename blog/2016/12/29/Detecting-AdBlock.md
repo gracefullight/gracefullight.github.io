@@ -7,7 +7,7 @@ date: 2016-12-29 17:15:58
 
 Google Analytics, Facebook Pixel, Naver Analytics 등의 분석 스크립트 및 Google Adsence 를 차단하는 AdBlock 을 감지해보자
 
-# 소스
+## 소스
 
 ```js
 /**
@@ -37,7 +37,7 @@ Google Analytics, Facebook Pixel, Naver Analytics 등의 분석 스크립트 및
 
 출처의 소스를 즉시실행함수로 변경하고, 문구를 추가했다.
 
-# 설명
+## 설명
 
 AdBlock 에 의해 차단되는 영역인 .adsbox div 의 생성유무를 확인해 AdBlock 의 adBlockEnabled 변수의 값을 정한다.
 

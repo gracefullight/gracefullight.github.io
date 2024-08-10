@@ -8,21 +8,21 @@ date: 2017-06-06 11:49:33
 Eloquent ORM을 사용해 데이터를 가져와보자.
 [이전 포스팅](/2017/05/16/Laravel-5-4-Start/)에서 이어진다. (Eloquent ORM 기능만 필요하다면 3.Model 부터 보면 된다)
 
-# Migration
+## Migration
 
 DBMS에 상관 없이 테이블을 똑같이 생성하기 위한 기능이다.
 
-## 생성
+### 생성
 
 artisan 명령어로 간단히 생성할 수 있다. 날짜\_테이블 형식의 파일이 database/migrations 밑에 생성된다.
 **이 파일들의 자동 생성된 이름을 절대 변경하지 말자** 내부적으로 언더스코어를 *explode*해 class를 호출하기 때문에 건들면 고생한다.
 
 ```bash
-# 모델을 생성하면서 같이 생성
-# m 옵션을 추가한다.
+## 모델을 생성하면서 같이 생성
+## m 옵션을 추가한다.
 $ php artisan make:model -m 모델명
 
-# 마이그레이션만 생성
+## 마이그레이션만 생성
 $ php artisan make:migration 마이그레이션명
 ```
 
@@ -52,7 +52,7 @@ public function down() {
 }
 ```
 
-## 실행
+### 실행
 
 php artisan migrate 명령어로 실행하면 된다.
 
@@ -61,22 +61,22 @@ php artisan migrate 명령어로 실행하면 된다.
 - migrate:rollback => 마지막 migrate 시점으로 돌림
 - migrate:reset => 제거
 
-## Tinker
+### Tinker
 
 이미 데이터가 들어간 테이블이 있어 migrate --path로 한 파일만을 실행해야 하는데, tinker를 사용하면 더 쉽게 해당 마이그레이션을 실행시킬 수 있다.
 Tinker는 커맨드로 라라벨 쉘(실행환경)으로 들어간다고 생각하면 된다.
 
 ```bash
-# tinker
+## tinker
 $ php artisan tinker
 
-# shell로 접속된다.
+## shell로 접속된다.
 Psy Shell v0.8.5 (PHP 7.0.7 ??cli) by Justin Hileman
 New version is available (current: v0.8.5, latest: v0.8.8)
 >>>
-# blueprint 의존성을 추가해주고 (Blueprint는 up 메소드에 DI로 들어가 있기에 읽지 못한다.)
+## blueprint 의존성을 추가해주고 (Blueprint는 up 메소드에 DI로 들어가 있기에 읽지 못한다.)
 $ use Illuminate\Database\Schema\Blueprint;
-# 새로 실행하려 했던 스키마를 실행시켜주기만 하면 된다.
+## 새로 실행하려 했던 스키마를 실행시켜주기만 하면 된다.
 $ Schema::create('new_table', function (Blueprint $table) {
     $table->increments('idx');
     $table->string('id', 20)->unique();
@@ -86,12 +86,12 @@ $ Schema::create('new_table', function (Blueprint $table) {
 
 DB에 해당 테이블이 생성된 걸 확인할 수 있다.
 
-# Seed
+## Seed
 
 Seed는 테이블에 필수 데이터 또는 더미 데이터를 심어주는 과정이다.
 테스트에 필요한 데이터를 넣어주는데 아주 효과적이다.
 
-## 생성
+### 생성
 
 ```bash
 php artisan make:seeder 시더명
@@ -118,7 +118,7 @@ public function run() {
 }
 ```
 
-### Faker
+#### Faker
 
 랜덤한 테스트용 데이터가 많이 필요하다면, 가짜(더미) 데이터를 생성해주는 [라이브러리](https://github.com/fzaninotto/Faker)를 사용할 수 있다.
 링크를 따라가보면 정말 엄청난 종류의 랜덤 데이터를 생성할 수 있음에 놀랄 것이다.
@@ -148,7 +148,7 @@ $factory->define(App\Models\Product::class, function(Faker\Generator $faker){
 });
 ```
 
-## 실행
+### 실행
 
 위에서 선언한 faker 모델을 seed에서 호출해보자.
 
@@ -166,12 +166,12 @@ php artisan db:seed
 
 테이블에 상품 더미데이터가 100개 생성된 것을 확인할 수 있다.
 
-# Model
+## Model
 
 모델은 하나의 테이블의 타입을 정해 놓은 것이라 보면 된다.
 데이터를 가져오거나 넣을 때 모델에 정의된 형태로 가져온다.
 
-## 기본 구조
+### 기본 구조
 
 아래 구조 정도만 알아두면 된다. 더 자세한건 [Eloquent Model Class](https://github.com/laravel/framework/blob/5.4/src/Illuminate/Database/Eloquent/Model.php)를 확인해보자.
 
@@ -213,17 +213,17 @@ class Board extends Model {
 }
 ```
 
-## Relationship
+### Relationship
 
-### 1:1
+#### 1:1
 
 hasOne과 belongsTo로 연결한다.
 
-### 1:n
+#### 1:n
 
 hasMany와 belongsTo로 연결한다.
 
-### n:m
+#### n:m
 
 belongsToMany로 연결한다.
 처음에 제일 감이 안왔던 Relationship이지만 코드를 보면 이해하기가 쉽다.
@@ -243,7 +243,7 @@ public function product(){
 이렇게 정의하면 뷰에서 **order->product**를 *foreach*로 돌려 **product->product_id**처럼 접근할 수 있고
 **product->pivot->price**로 pivot 테이블의 데이터도 가져올 수 있다.
 
-### 1:1:1
+#### 1:1:1
 
 이런 관계가 있을 경우에 라라벨에서 관계메소드를 직접 지원하지는 않는다.
 억지로 사용하려면, `hasOne`을 두 번 사용해 연결해야하는데, Select Query를 두 번 날려야 된다는 소리다. (참을 수 없다)
@@ -251,24 +251,24 @@ public function product(){
 [BelongsToThrough](https://github.com/znck/belongs-to-through) trait 패키지를 통해 깔끔하게 해결할 수 있다.
 메소드에서 `belongsToMany`처럼 커스텀 외래키를 사용해야할 경우엔 5번째 파라미터로 **[ 클래스 => 키 ]** 형식으로 넘겨주면 된다. ([여기](https://github.com/znck/belongs-to-through/pull/25/files)의 소스를 참고하자)
 
-## 이슈
+### 이슈
 
-### ORM의 Join 방식
+#### ORM의 Join 방식
 
 한 방 쿼리가 불가능하다. 오직 PK를 통해 Select된 데이터들을 다시 PHP 단에서 합쳐서 보여준다.
 한 방이 필요할 때는 Database에서 View를 이용하거나 DB 파사드를 써야한다.
 
-### Composite Key
+#### Composite Key
 
 라라벨 Eloquent Model에서 복합키를 사용할 수는 없다. 편법으로 [trait를 추가](https://stackoverflow.com/questions/31415213/how-i-can-put-composite-keys-in-models-in-laravel-5)할 수 있는데 find 메소드도 overriding 해야 된다.
 
-### Timestamps
+#### Timestamps
 
 created_at과 updated_at은 timestamps 형식이라 date_format과 같은 쿼리함수 대신 whereDate 메소드로 연산을 실행해야한다.
 물론 DB에 데이터가 들어가기 전 datetime으로 해당 컬럼을 변경해주면 된다.
 (timestamps의 유효기간은 2035년까지므로.)
 
-### Group By
+#### Group By
 
 GroupBy를 이용한 쿼리 사용시에 **Syntax error or access violation: 1055 'table.column' isn't in GROUP BY**라는 오류 메세지가 보이며 실행이 안 되는 경우가 있다. 해당 컬럼으로 GroupBy를 하지 않았는데도 발생한다.
 
@@ -294,7 +294,7 @@ database config의 strict 모드 중 **ONLY_FULL_GROUP_BY** 모드가 활성화 
 
 변경 후 config:cache로 config 파일들을 다시 캐싱해주자.
 
-## 연동
+### 연동
 
 만든 모델을 선언만 하면 [Eloquent Model 메소드](https://laravel.com/docs/5.4/eloquent#inserting-and-updating-models)와 [Query Builder 메소드](https://laravel.com/docs/5.4/queries)를 사용할 수 있다.
 
@@ -355,7 +355,7 @@ public function test($id) {
 }
 ```
 
-## Collection과 Model의 차이
+### Collection과 Model의 차이
 
 Model에서 쓸 수 있는 메소드와 Collection에서 쓸 수 있는 메소드가 다르다.
 Model Class에서 정의하는 관계 메소드들은 Model에서만 사용 가능하다.
@@ -363,7 +363,7 @@ Model Class에서 정의하는 관계 메소드들은 Model에서만 사용 가�
 - **Collection**: `Array<Model>` 즉 모델의 집합이다.
 - **Model**: 테이블에서 하나의 행이라고 생각하자.
 
-# Paging
+## Paging
 
 모델에서 paginate 메소드를 사용하면, querystring에 page 변수가 붙어 페이징이 된다. (예를들면 /boards?page=1)
 라라벨의 기본 페이징은 Bootstrap의 Class를 사용한다.
@@ -386,12 +386,12 @@ Model::where()->simplePaginate(10);
 php artisan vendor:publish --tag=laravel-pagination
 ```
 
-## ajax pagination
+### ajax pagination
 
 실무에선 Paging 호출을 GET보단 AJAX를 쓰는게 깔끔한데 List View와 ListItem View, Controller 세부분을 모두 변경해줘야한다.
 아래 소스는 jQuery를 사용하고 있다고 가정한다. (Frontend Framework를 같이 사용하고 있다면 더 깔끔하게 처리 될 수 있을듯)
 
-### Controller
+#### Controller
 
 ```php title="YourController.php"
 <?php
@@ -410,7 +410,7 @@ public function list(Request $request) {
 }
 ```
 
-### List view
+#### List view
 
 ```php title="list.blade.php"
 <div id="list">
@@ -441,7 +441,7 @@ $(function () {
 </script>
 ```
 
-### ListItem view
+#### ListItem view
 
 ```php title="listitem.blade.php"
 <ul>
@@ -453,7 +453,7 @@ $(function () {
 {{ $data->links() }}
 ```
 
-## multiple pagination
+### multiple pagination
 
 한 페이지에 여러 리스트가 있는 경우가 종종 있다. 먼저 [paginate 메소드](https://github.com/laravel/framework/blob/5.4/src/Illuminate/Database/Query/Builder.php#L1723)를 살펴보자.
 
@@ -476,7 +476,7 @@ public function paginate($perPage = 15, $columns = ['*'], $pageName = 'page', $p
 - **pageName**: page 변수명 (예를들면 /boards?page=1 에서 page 변수명을 변경 가능)
 - **page**: 가져올 페이지
 
-### Controller
+#### Controller
 
 Controller에서 paginate 메소드를 활용해보자.
 
@@ -515,7 +515,7 @@ protected function get_list2() {
 }
 ```
 
-### List view
+#### List view
 
 위의 script에서 조금만 수정해주면 된다.
 (list item view는 위와 동일한 코드의 반복이므로 생략)
@@ -551,7 +551,7 @@ var get_list = function (url, target) {
 </script>
 ```
 
-# 여담
+## 여담
 
 이제 DB에서 데이터를 가져오는 것까지 끝났다.
 [다음 포스팅](/2017/07/09/Laravel-5-4-Login-with-Auth/)에서는 User Login을 구현해보자.

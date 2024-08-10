@@ -5,12 +5,12 @@ tags: [php, openssl]
 date: 2017-07-07 22:33:46
 ---
 
-# MCRYPT
+## MCRYPT
 
 - 암호화 함수인 `mcrypt` 가 PHP 7.1 버전부터 Deprecated 되었다.
 - 왜 사라졌는지는 [링크](https://paragonie.com/blog/2015/05/if-you-re-typing-word-mcrypt-into-your-code-you-re-doing-it-wrong)에 자세하게 나와있다.
 
-## 기존 소스
+### 기존 소스
 
 - PHP 구버전에서는 `mcrypt` 와 `MCRYPT_RIJNDAEL_128` 알고리즘을 통해 AES128 이 구현되어 있을 것이다.
 - **MCRYPT_RIJNDAEL_128**은 **AES 128**과 **동일**하다.
@@ -36,14 +36,14 @@ function pkcs5_pad($text, $blockSize = 16) {
 }
 ```
 
-## 대안
+### 대안
 
 - PHP 5.3 부터 사용 가능한 **openssl_encrypt** 함수를 쓰면 된다.
 - openssl 확장 모듈이 설치되어야한다.
 
-# OPENSSL
+## OPENSSL
 
-## Encrypt
+### Encrypt
 
 ```php
 <?php
@@ -52,7 +52,7 @@ $cipherText = openssl_encrypt($plainText, 'AES-128-CBC', $key, OPENSSL_RAW_DATA,
 $cipherText = openssl_encrypt(pkcs5_pad($plainText), 'AES-128-CBC', $key, OPENSSL_RAW_DATA, $iv);
 ```
 
-## Decrypt
+### Decrypt
 
 ```php
 <?php
@@ -72,7 +72,7 @@ function pkcs5_unpad($text) {
 }
 ```
 
-## PKCS5 vs PKCS7
+### PKCS5 vs PKCS7
 
 - `openssl_encrypt`의 default padding 은 PKCS7 padding 인데, 어떻게 호환이 되는 것일까?
 - [여기](https://social.msdn.microsoft.com/Forums/en-US/09fef7b7-b568-4895-8e52-f386be80aa2d/pkcs7-padding-in-net-vs-pkcs5-padding-in-java?forum=csharpgeneral)서 해답을 찾았다.
@@ -82,7 +82,7 @@ function pkcs5_unpad($text) {
 > So fundamentally PKCS#5 padding is a subset of PKCS#7 padding for 8 byte block sizes.
 > so, data encrypted with PKCS#5 is able to decrypt with PKCS#7, but data encrypted with PKCS#7 may not be able to decrypt with PKCS#5.
 
-## triple des
+### triple des
 
 - `des-ede3-cbc`가 triple des 알고리즘이다.
 
@@ -95,12 +95,12 @@ openssl_encrypt($text, "des-ede3-cbc", $key, OPENSSL_RAW_DATA, $iv);
 openssl_decrypt($cipherText, "des-ede3-cbc", $key, OPENSSL_RAW_DATA, $iv);
 ```
 
-# 패키지
+## 패키지
 
 - 이 모든 걸 커버하는 라이브러리를 사용하자. [phpseclib/mcrypt_compat](https://github.com/phpseclib/mcrypt_compat)
 - _phpseclib_ 는 laravel/passport 에서도 사용되었다.
 
-# 여담
+## 여담
 
 카카오페이가 PHP 5 버전만 지원해 문의해봤지만 계획이 없어 이번 기회에 모듈을 다 뜯어봤는데 MCRYPT 만 만져주면 정상적으로 결제가 되었다.
 

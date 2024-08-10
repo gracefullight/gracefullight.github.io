@@ -13,7 +13,7 @@ $("#id").removeClass("AAA").addClass("BBB");
 
 보통 이런 방식으로 사용하는데, alterClass 함수를 곁들이면 더 나이스하게 바꿀 수 있다.
 
-# 소스
+## 소스
 
 ```js
 /**
@@ -45,7 +45,7 @@ $.fn.alterClass = function (removals, additions) {
 };
 ```
 
-# 예제
+## 예제
 
 ```javascript
 // AAA to BBB
@@ -56,6 +56,6 @@ $("#id").alterClass("AAA-* BBB-*", "AAABBB");
 
 **asterisk(\*)**를 이용해 여러 개의 클래스를 한꺼번에 원하는 클래스로 변경할 수 있다.
 
-# 여담
+## 여담
 
 jQuery UI 를 사용 중이라면, [.switchClass](https://api.jqueryui.com/switchclass/)를 사용하면 된다.

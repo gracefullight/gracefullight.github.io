@@ -5,7 +5,7 @@ tags: [angular, webpack]
 date: 2017-02-06 14:54:06
 ---
 
-# 앞서
+## 앞서
 
 정말 angular2 를 배우고 싶었다.
 
@@ -25,7 +25,7 @@ date: 2017-02-06 14:54:06
 
 하나하나 차근차근 알아가며 angular2 로 빠져보자.
 
-# npm
+## npm
 
 먼저 angular2 (이하 ng2)는 npm 으로 설치를 해야한다.
 
@@ -35,7 +35,7 @@ date: 2017-02-06 14:54:06
 
 [nodejs 다운로드](https://nodejs.org/ko/download/)에서 맞는 윈도우 버전을 다운로드해 설치하자.
 
-# package.json
+## package.json
 
 npm 으로 자바스크립트 라이브러리를 다운받기 위해선 package.json(설정파일)이 필요하다.
 원하는 위치에 폴더를 만들자. (D:\\workspace\\ng-test)
@@ -63,7 +63,7 @@ npm 으로 자바스크립트 라이브러리를 다운받기 위해선 package.
 }
 ```
 
-## 설명
+### 설명
 
 - name : 프로젝트의 이름
 - version : 버전 기법에 맞게 원하는대로 적는다.
@@ -83,22 +83,22 @@ npm 으로 자바스크립트 라이브러리를 다운받기 위해선 package.
 
 ng2 의 기능들과 그 기능을 하위버전 브라우저에서도 사용하기 위한 라이브러리들을 포함했다.
 
-## 설치
+### 설치
 
 프로젝트에서 쉘을 실행시켜 설치를 진행하자.
 
 ```bash
-$ npm install
+npm install
 ```
 
 **node_modules** 폴더가 생성된 걸 확인할 수 있다.
 
-# Hello World
+## Hello World
 
 - **src** 라는 폴더를 새로 만든다. (D:\\workspace\\ng-test\\src)
 - index.html 과 main.ts 파일을 생성한다.
 
-## index.html
+### index.html
 
 ```html title="index.html"
 <!doctype html>
@@ -112,7 +112,7 @@ $ npm install
 </html>
 ```
 
-## main.ts
+### main.ts
 
 main.ts 는 ng2 의 기능을 하나로 통합시켜주는 **시작 스크립트**이다.
 
@@ -127,7 +127,7 @@ import { AppModule } from "./app/app.module";
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
-## app.module.ts
+### app.module.ts
 
 - src 밑에 **app 폴더**를 만든다.
 - src\\app\\ 아래에 **app.module.ts** 파일을 생성한다.
@@ -148,7 +148,7 @@ export class AppModule {}
 
 이 파일은 ng2 에서 **어떤 모듈을 사용할지** 알려준다.
 
-### 설명
+#### 설명
 
 - imports : 이 모듈에 필요한 다른 모듈
 - declarations : 모듈에 속하는 뷰 클래스, 앵귤러에는 components, directives, pipes 라는 세가지 뷰 클래스가 있다.
@@ -157,7 +157,7 @@ export class AppModule {}
 > **컴포넌트란 무엇인가?**
 > 컴포넌트는 화면(뷰)를 제어하는 자바스크립트 클래스이다.
 
-## app.component.ts
+### app.component.ts
 
 app.module.ts 에서 사용할 메인 컴포넌트를 생성하자.
 
@@ -171,7 +171,7 @@ import { Component } from "@angular/core";
 export class AppComponent {}
 ```
 
-### 설명
+#### 설명
 
 - selector : 어떤 위치에 삽입할지 attribute 이름을 적는다.
 - template : 어떤 템플릿을 사용할지 ` 기호를 사용해 적는다.
@@ -179,7 +179,7 @@ export class AppComponent {}
 > 여기까지가 ng2 의 가장 기본적인 틀이다.
 > 이제 실행을 하기 위해 만만치 않은 작업이 남았다.
 
-# TypeScript
+## TypeScript
 
 ng2 는 typescript 를 주 언어로 사용한다. **typescript 는 javascript 의 상위 집합**이다.
 상위집합이란 말이 어렵다면.. 그냥 **javascript 랑 똑같다**고 생각해도 된다.
@@ -190,14 +190,14 @@ ng2 는 typescript 를 주 언어로 사용한다. **typescript 는 javascript �
 그러기 위해 몇가지 라이브러리를 npm 에서 추가로 설치해줘야한다.
 
 ```bash
-# 타입스크립트 다운로드
+## 타입스크립트 다운로드
 $ npm install --save-dev typescript
 ```
 
 위 명령어를 실행하면 개발버전(save-dev)으로 typescript 라이브러리가 설치된다.
 package.json 을 보면 devDependencies 옵션 밑에 의존성이 추가 된 것을 볼 수 있다.
 
-## tsconfig.json
+### tsconfig.json
 
 typescript 를 javascript 로 컴파일하기 위해 기본 옵션을 설정해줘야한다.
 root 에 **tsconfig.json** 파일을 만들자.
@@ -218,12 +218,12 @@ root 에 **tsconfig.json** 파일을 만들자.
 
 여기까지가 ng2 의 typescript 기본 설정이다.
 
-## compile
+### compile
 
 아래 명령어를 실행한다.
 
 ```bash
-$ $(npm bin)/tsc --rootDir src --outDir dist
+$(npm bin)/tsc --rootDir src --outDir dist
 ```
 
 ![image from hexo](https://i.imgur.com/EZon2zR.png)
@@ -231,26 +231,26 @@ $ $(npm bin)/tsc --rootDir src --outDir dist
 근데 아직까진 여러 오류가 보인다.
 es6 의 기능을 사용할 수 없다는 오류인데 우리에겐 core-js 라이브러리가 있으니 typescript 에 core-js 를 사용하고 있다고 알려주자.
 
-## typings
+### typings
 
 라이브러리를 사용하고 있다고 알려주기 위해선 typings 를 설치해야한다.
 
 ```bash
-$ npm install --save-dev typings
+npm install --save-dev typings
 ```
 
-## core-js
+### core-js
 
 core-js 에 type 이 들어간 interface 를 typings 로 추가한다.
 
 ```bash
-$ $(npm bin)/typings install --global --save dt~core-js
+$(npm bin)/typings install --global --save dt~core-js
 ```
 
 typings 폴더와 typings.json 파일이 추가된 것을 확인할 수 있다.
 다시 컴파일을 해보면 오류 없이 js 로 컴파일 된다.
 
-## custom scripts
+### custom scripts
 
 매번 \$(npm bin)/... 명령어를 치기는 너무 귀찮다.
 package.json 을 열어 명령어를 줄인 **script** 기능을 사용해보자.
@@ -295,23 +295,23 @@ index.html 을 열면 아래와 같은 오류가 나온다.
 
 해결하기 위해 Webpack 을 설치하자.
 
-# Webpack
+## Webpack
 
 > **Webpack 은 무엇인가?**
 > 내가 원하는 모든 파일을 하나의 javascript 파일로 불러올 수 있게 하는 모듈 번들러다.
 
-## 설치
+### 설치
 
 ```bash
-$ npm install --save-dev webpack
+npm install --save-dev webpack
 ```
 
 webpack 이 typescript 파일을 로드하기 위해선 typescript loader 모듈을 설치해줘야한다.
 
-## typescript-loader
+### typescript-loader
 
 ```bash
-$ npm install --save-dev awesome-typescript-loader
+npm install --save-dev awesome-typescript-loader
 ```
 
 설치 후에 tsconfig.json 파일을 열어 webpack 을 사용한다는 옵션을 줘야한다.
@@ -329,7 +329,7 @@ $ npm install --save-dev awesome-typescript-loader
 }
 ```
 
-## 설정
+### 설정
 
 root 에 **webpack.config.js** 파일을 만들자.
 
@@ -360,7 +360,7 @@ module.exports = {
 };
 ```
 
-### 설명
+#### 설명
 
 - entry : 웹팩이 읽을 파일
 - output : 어디로 파일을 내보낼지
@@ -370,7 +370,7 @@ module.exports = {
 
 plugins 에 angular 설정을 주지 않으면 오류가 발생한다.
 
-## 실행
+### 실행
 
 package.json 에서 build script 를 변경한다.
 
@@ -389,12 +389,12 @@ package.json 에서 build script 를 변경한다.
 dist 폴더를 삭제한 뒤 빌드 스크립트를 실행한다.
 
 ```bash
-# 쉘에서
+## 쉘에서
 $ rm -rf dist
-# 터미널에서
+## 터미널에서
 $ rmdir dist
 
-# 빌드 실행
+## 빌드 실행
 $ npm run build
 ```
 
@@ -402,25 +402,25 @@ dist/app.bundle.js 가 생성된 것을 확인할 수 있다.
 index.html 에서 app.bundle.js 를 가져오게 추가한 뒤 실행해보자
 ![image from hexo](https://i.imgur.com/RjLYaXd.png)
 
-## 구조
+### 구조
 
 현재까지의 폴더 구조는 이렇다.
 ![image from hexo](https://i.imgur.com/mv0raPX.png)
 
-# webpack-dev
+## webpack-dev
 
 매번 컴파일할 수 없으니 자동으로 컴파일이 되고 브라우저로 볼 수 있게 해보자.
 
-## 설치
+### 설치
 
 **webpack-dev-server**와 **html-webpack-plugin**을 설치한다.
 
 ```bash
-$ npm install --save-dev webpack-dev-server
-$ npm install --save-dev html-webpack-plugin
+npm install --save-dev webpack-dev-server
+npm install --save-dev html-webpack-plugin
 ```
 
-## html-webpack-plugin
+### html-webpack-plugin
 
 **webpack.config.js**에 html plugin 설정을 추가한다.
 
@@ -459,7 +459,7 @@ index.html 에서 스크립트 삽입부분을 지운다.
 </html>
 ```
 
-## webpack-dev-server
+### webpack-dev-server
 
 package.json 에 start 스크립트를 추가한다.
 
@@ -467,12 +467,12 @@ package.json 에 start 스크립트를 추가한다.
     "start": "webpack-dev-server --inline --progress"
 ```
 
-## 실행
+### 실행
 
 ```bash
-# 다시 빌드
+## 다시 빌드
 $ npm run build
-# 서버 시작
+## 서버 시작
 $ npm start
 ```
 
@@ -500,7 +500,7 @@ $ npm start
 바로 반영되어 브라우저에 보여지는 걸 확인할 수 있다.
 ![image from hexo](https://i.imgur.com/NRGPYPi.png)
 
-# 여담
+## 여담
 
 이로써 ng2-webpack 기본틀이 완성되었습니다.
 

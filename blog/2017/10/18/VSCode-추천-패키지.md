@@ -5,7 +5,7 @@ tags: [vscode]
 date: 2017-10-18 00:24:05
 ---
 
-# 필수 패키지
+## 필수 패키지
 
 - Auto Close Tag: 자동으로 태그를 닫아준다.
 - Auto Rename Tag: 자동으로 짝 태그의 이름을 바꿔준다.
@@ -31,13 +31,13 @@ date: 2017-10-18 00:24:05
 - VS Live Share: Code 환경 간 세션 공유 가능
 - XML tools: xml 하이라이터
 
-# 개발환경별 취향
+## 개발환경별 취향
 
-## css
+### css
 
 - Sass
 
-## java
+### java
 
 - Debugger for Java
 - Java Extension Pack
@@ -45,13 +45,13 @@ date: 2017-10-18 00:24:05
 - Maven for Java
 - Sprint Initialzr Java Support
 
-## javascript
+### javascript
 
 - EJS language support: EJS syntax highlighter 중 제일 낫다.
 - JavaScript (ES6) code snippets
 - Veltur: Vue 매니아라면
 
-## php
+### php
 
 - Laravel 5 Snippets: 라라벨 backend
 - laravel Blade Snippets: 라라벨 frontend
@@ -60,31 +60,31 @@ date: 2017-10-18 00:24:05
 - PHP Intellisense - Crane: PHP intellisense 모듈 중에 가장 똑똑하다.
 - PHP Namespace Resolver - 타입힌팅에 쓰이는 클래스를 바로 import 가능
 
-## python
+### python
 
 - Python: Python 이 필요하다면
 - Anaconda Extension Pack
 
-## server
+### server
 
 - Apache Conf: 아파치 속성을 많이 열어봐야 한다면
 - Docker: 도커를 쓴다면
 - ~~ftp-kr~~: FTP 환경에서 작업할 일이 있다면
 - sftp: ftp-kr 보다 적응되면 나은 것 같다.
 
-## 기타
+### 기타
 
 - Markdown Shortcuts: markdown 의 폰트, 표 기능들을 쉽게 이용 가능하다.
 - vscode-pdf: PDF 파일도 열어보고 싶다면
 - Rainbow CSV: CSV 파일의 색깔을 입혀준다.
 
-# 테마 및 아이콘
+## 테마 및 아이콘
 
-## 테마
+### 테마
 
 - Dracula Official: 드라큘라 테마
 - Shades of Purple: 보라색 테마
 
-## 아이콘
+### 아이콘
 
 - vscode-icons: 주관적으로 제일 예쁘다.

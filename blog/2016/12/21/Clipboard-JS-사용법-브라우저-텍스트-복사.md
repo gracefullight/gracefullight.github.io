@@ -7,21 +7,21 @@ tags:
 date: 2016-12-21 17:57:06
 ---
 
-# Clipboard JS
+## Clipboard JS
 
 텍스트 복사는 zeroclipboard 를 사용하라고 많이 나오는데, flash 를 이용해 복사하는 방법이다.
 더 쉽고 간편하게 [ClipboardJS](https://clipboardjs.com) 라이브러리를 사용해보자
 
-## 설치
+### 설치
 
 ```bash
-# npm
+## npm
 $ npm install clipboard --save
 
 $ yarn add clipboard
 ```
 
-## 소스
+### 소스
 
 ```html
 <script src="/bower_components/clipboard/dist/clipboard.min.js"></script>
@@ -55,7 +55,7 @@ $ yarn add clipboard
 </button>
 ```
 
-# 설명
+## 설명
 
 html5 attribute 를 사용해 쉽게 제어가 가능하다.
 

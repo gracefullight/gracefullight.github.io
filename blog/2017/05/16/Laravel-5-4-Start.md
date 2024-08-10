@@ -5,7 +5,7 @@ tags: [php, laravel]
 date: 2017-05-16 22:34:39
 ---
 
-# 왜 라라벨인가?
+## 왜 라라벨인가?
 
 ![image from hexo](https://i.imgur.com/TuwFZD4.png)
 
@@ -30,9 +30,9 @@ _더군다나 라라벨을 도입하면서 삽질한 내용을 정리하고 있�
 - 다른 MVC 프레임워크
 - Lodash
 
-# 설치
+## 설치
 
-## PHP
+### PHP
 
 PHP 7 이상을 설치해주고, 아래 Extension은 웬만하면 열어주는 것들이니 크게 신경쓰지 말자.
 
@@ -43,11 +43,11 @@ PHP 7 이상을 설치해주고, 아래 Extension은 웬만하면 열어주는 �
 - Tokenizer PHP Extension
 - XML PHP Extension
 
-## Composer
+### Composer
 
 [Composer 홈페이지](https://getcomposer.org/download/)에서 다운받고 전역설정만 해주면 된다.
 
-## Laravel Cli
+### Laravel Cli
 
 Laravel 명령어를 사용할 수 있게 composer로 전역 설치하자.
 
@@ -55,9 +55,9 @@ Laravel 명령어를 사용할 수 있게 composer로 전역 설치하자.
 composer global require "laravel/installer"
 ```
 
-# 프로젝트 생성
+## 프로젝트 생성
 
-## 초기 생성
+### 초기 생성
 
 ```bash
 laravel new 프로젝트명
@@ -65,23 +65,23 @@ laravel new 프로젝트명
 
 위 명령어를 실행하면, 알아서 composer 패키지까지 설치된다.
 
-## clone 했을 때
+### clone 했을 때
 
 환경 설정 파일과 프로젝트 키가 없으므로 적절하게 세팅해줘야한다.
 
 ```bash
-# 패키지 의존성 설치
+## 패키지 의존성 설치
 $ composer install
 
-# .env 파일 복사 (설정파일 생성)
-# post-root-package-install scripts로 들어가 있긴한데, 복사가 안 되는 경우
+## .env 파일 복사 (설정파일 생성)
+## post-root-package-install scripts로 들어가 있긴한데, 복사가 안 되는 경우
 $ cp .env.example .env
 
-# 프로젝트 키 생성
+## 프로젝트 키 생성
 $ php artisan key:generate
 ```
 
-## 실행
+### 실행
 
 프로젝트를 실행해보자.
 
@@ -94,7 +94,7 @@ php artisan serve
 > php artisan 명령어는 laravel에서 사용하는 커맨드 쉘이다.
 > **php artisan**로 명령어 리스트가 나오고 **php artisan help 명령어** 로 해당 명령어의 옵션을 볼 수 있다.
 
-# 프로젝트 구조
+## 프로젝트 구조
 
 [라라벨 한글 메뉴얼](https://laravel.kr/docs/5.4/structure)이나 [공식 메뉴얼](https://laravel.com/docs/5.4/structure)을 보면 되는데 마치 사전을 펴놓았는데 어떤 단어를 찾는지 까먹은 느낌이 들 것이다.
 
@@ -107,7 +107,7 @@ php artisan serve
 > 모델은 어딨어? 라고 생각할 것 같은데 Model을 완벽하게 사용하려면 ORM을 써야하고 DB를 ORM에 맞게 정규화해야하며 이 작업은 처음 진행하기에 고통스럽다.
 > 다음 포스트에 진행해보자.
 
-## Route
+### Route
 
 모든 웹 프레임워크의 기본은 Routing이다.
 routes 폴더에 기본으로 api, channels, console, web 파일이 보이는데 그 중 2가지만 알면 된다.
@@ -115,23 +115,23 @@ routes 폴더에 기본으로 api, channels, console, web 파일이 보이는데
 - api.php: Token 인증이 필요한 라우터로 `/api/{route}` 로 접근이 가능하다.
 - web.php: 기본적인 Route이다. GET이 아닌 다른 메소드는 CSRF Token이 있어야만 호출이 가능하다.
 
-## Controller
+### Controller
 
 Routing 요청을 처리하는 로직이 들어있는 부분이다.
 
-## View
+### View
 
 Controller에서 처리된 데이터를 플랫폼에 보여주는 부분이다.
 
-# 프로젝트 세팅
+## 프로젝트 세팅
 
-## App 설정
+### App 설정
 
-### env 파일
+#### env 파일
 
 .env 파일에서 APP_NAME과 DB로 시작하는 설정을 바꿔준다.
 
-### app 파일
+#### app 파일
 
 ```php title="config/app.php"
 <?php
@@ -144,7 +144,7 @@ return [
 ]
 ```
 
-### database 파일
+#### database 파일
 
 ```php title="config/database.php"
 <?php
@@ -167,7 +167,7 @@ return [
 > config 내의 파일과 .env파일을 건드릴 경우 laravel 환경을 다시 캐싱해주거나 아예 삭제해야 적용이 된다.
 > **php artisan config:cache** 명령어 또는 **php artisan config:clear** 명령어를 실행해주자.
 
-## Debug Bar
+### Debug Bar
 
 정말 멋진 디버깅 툴이다.
 간단히 설치 후에 .env 파일의 **APP_DEBUG** 옵션이 true이면 자동으로 View 하단에 생성된다.
@@ -182,33 +182,33 @@ return [
 - 실행 시간
 - Request
 
-### 설치
+#### 설치
 
 ```bash
 composer require barryvdh/laravel-debugbar
 ```
 
-## laravel-lang
+### laravel-lang
 
 기본 오류 메세지들의 localization 패키지이다.
 
-### 설치
+#### 설치
 
 ```bash
 composer require caouecs/laravel-lang:~3.0
 ```
 
-### 적용
+#### 적용
 
 `vendor/caouecs/laravel-lang/src/{국가}` 폴더를
 `resources/lang/{국가}` 로 복사하고 **config/app.php** 의 **fallback_locale**을 `{국가}`로 바꿔주면 된다.
 
 ```bash
-# 귀찮으니 git bash에서 날려봅시다.
+## 귀찮으니 git bash에서 날려봅시다.
 $ cp -r ./vendor/caouecs/laravel-lang/src/ko ./resources/lang/ko
 ```
 
-# 라우팅
+## 라우팅
 
 ```php title="routes/web.php"
 <?php
@@ -222,21 +222,21 @@ Route::get('/your_url/{id?}', function($id = null) {
 });
 ```
 
-# 컨트롤러
+## 컨트롤러
 
-## 생성
+### 생성
 
 artisan 명령어로 간단히 생성할 수 있다.
 
 ```bash
-# make:controller 폴더명/컨트롤러명
+## make:controller 폴더명/컨트롤러명
 $ php artisan make:controller TestController
 
-# 리소스 메소드를 같이 생성
+## 리소스 메소드를 같이 생성
 $ php artisan make:controller TestController --resource
 ```
 
-## 연결
+### 연결
 
 ```php title="routes/web.php"
 <?php
@@ -283,7 +283,7 @@ class TestController extends Controller{
 }
 ```
 
-### Resource
+#### Resource
 
 리소스 사용시라면 아래와 같은 메소드로 구성되어야한다.
 게시판 컨트롤러라면 아래와 같은 구성일 것이다.
@@ -298,7 +298,7 @@ class TestController extends Controller{
 | PUT/PATCH | `/boards/{id}`      | 게시글 수정로직   | boards.update  |
 | DELETE    | `/boards/{id}`      | 게시글 삭제       | boards.destroy |
 
-# 뷰
+## 뷰
 
 블레이드 템플릿을 사용하며 [홈페이지](https://laravel.com/docs/5.4/blade#control-structures) 설명이 꽤나 자세하다.
 당장 알아야 할건 아래 두 개 정도 뿐이다. 나머지는 그때 그때 문서를 참조하자.
@@ -326,7 +326,7 @@ class TestController extends Controller{
 </form>
 ```
 
-# 여담
+## 여담
 
 이제 라라벨을 이용해 데이터를 서버에 보내고 뷰를 구성할 수 있게 되었다.
 [다음 포스팅](/2017/06/06/Laravel-5-4-Eloquent-Model/)에서는 DB 연동과 ORM 모델을 사용해 데이터를 가져오고 페이징 처리를 해보자.

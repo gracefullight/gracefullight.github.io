@@ -5,7 +5,7 @@ tags: [php, vimeo]
 date: 2017-01-16 23:47:41
 ---
 
-# 앱 등록
+## 앱 등록
 
 [비메오 개발자 커뮤니티](https://developer.vimeo.com/) 로그인 후 **MyApps > Create New App** 버튼을 클릭한다.
 ![image from hexo](https://i.imgur.com/hyD4cDi.jpg)
@@ -14,7 +14,7 @@ App Callback URL은 하나의 계정안에 멀티 유저를 두고 각자의 유
 OAuth2.0 인증을 통해 인증을 받기위한 것인데, 단순한 업로드 로직일 경우에는 필요가 없다.
 앱에서 업로드가 있는 폴더안으로 경로만 대충 잡아주면 된다.
 
-# 권한 신청
+## 권한 신청
 
 생성된 앱으로 들어가 **Request Upload Access**를 클릭한다.
 ![image from hexo](https://i.imgur.com/S5SgDDD.jpg)
@@ -36,7 +36,7 @@ Yes 클릭시 비메오측 승인이 없으면 요금청구를 할 수 없다는
 Request Upload Access를 클릭하면 5영업일 내에 처리해주겠다는 상태가 된다.
 ![image from hexo](https://i.imgur.com/X1iTaZC.jpg)
 
-# 토큰 생성
+## 토큰 생성
 
 생성된 앱에서 **Authentication** 메뉴로 들어가 scope를 설정하고 **Generate Token** 버튼을 클릭한다.
 ![image from hexo](https://i.imgur.com/dgSUFer.jpg)
@@ -46,7 +46,7 @@ Create는 채널을 만드는거라 필요없고 **Edit, Delete, Upload** 권한
 **Access Token, Client Identifier, Client Secret**를 모두 저장해둔다.
 Access Token은 분실시 다시 확인할 수 없고, 재발급만 가능하니 잘 간직하자.
 
-# 회신 기다리기
+## 회신 기다리기
 
 회원가입시 등록한 메일 주소로 Vimeo 측에서 Upload Access에 대한 회신메일이 온다.
 Reject시 상세한 이유가 Approved시 환영한다라는 내용이다.

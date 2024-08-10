@@ -8,7 +8,7 @@ date: 2016-12-21 23:00:18
 **jQuery Validation with Materialize CSS**
 Materialize CSS 와 연동해 사용할 수 있다.
 
-# 소스
+## 소스
 
 ```js
 // p 태그를 이용하는 방법
@@ -41,6 +41,6 @@ $.validator.setDefaults({
 });
 ```
 
-# 여담
+## 여담
 
 bootstrap tooltip 을 활용한 validation 처럼 toast 를 활용한 플러그인이 나오면 좋으련만...

@@ -9,7 +9,7 @@ date: 2017-02-19 17:33:38
 통계 또는 비밀번호의 연속성을 체크하기 위해 필요할 때가 있다.
 비밀번호 연속성 체크에는 target[j]의 데이터를 charCodeAt 을 붙여 처리하면 된다.
 
-# 소스
+## 소스
 
 ```js
 function checkSequenceNumbers(target, counterLength = 6) {
@@ -44,13 +44,13 @@ console.log(checkSequnceNumbers(target));
 // => [1, 2, 1, 1, 0, 0]
 ```
 
-# 설명
+## 설명
 
 n 과 n+1... n+n-1 을 비교해서 카운트한다.
 결과는 sequentialCounter 배열에 각 포지션에 들어간다.
 
 > 2 연속 숫자 1 개가 있다면 sequentialCounter[2] = 1;
 
-# 여담
+## 여담
 
 왜 이런걸 공유를 안할까?

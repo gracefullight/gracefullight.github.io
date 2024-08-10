@@ -5,9 +5,9 @@ tags: [javascript]
 date: 2017-03-31 11:06:37
 ---
 
-# 예제
+## 예제
 
-## Single line
+### Single line
 
 ```js
 let i,
@@ -17,7 +17,7 @@ for (i = 0; i < 10; ++i, sum += i);
 console.log(`${i} ${sum}`);
 ```
 
-## 일반적인 형태
+### 일반적인 형태
 
 ```js
 let j,
@@ -32,11 +32,11 @@ console.log(`${j} ${sum2}`);
 두 예제의 결과는 어떻게 나올까.
 첫번째는 **10 55**, 두번째는 **10 45**가 나온다.
 
-# 설명
+## 설명
 
 i 와 j 의 전위 후위 연산은 별로 중요하지 않다. (++i 나 i++이나 결과는 같게 나온다)
 
-## Single line
+### Single line
 
 ```js
 let i,
@@ -47,7 +47,7 @@ for (i = 0; i < 10; ++i, sum += i);
 console.log(`${i} ${sum}`);
 ```
 
-## 일반적인 형태
+### 일반적인 형태
 
 ```js
 let j,
@@ -61,7 +61,7 @@ for (j = 0; j < 10; ++j) {
 console.log(`${j} ${sum2}`);
 ```
 
-## 안티패턴의 끝
+### 안티패턴의 끝
 
 ```js
 let k,

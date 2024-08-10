@@ -16,11 +16,11 @@ Windows10 을 쓰다가 어느순간 보면 탐색기에서 Onedrive 메뉴가 �
 
 없애보자.
 
-# 해결
+## 해결
 
 1. [삭제프로그램](https://github.com/tomchappelow/onedrive-uninstaller/archive/master.zip)을 다운받는다.
 2. 압축을 풀고 **uninstaller.cmd**를 **관리자권한으로 실행**한다.
 
-# 여담
+## 여담
 
 [오픈소스](https://github.com/tomchappelow/onedrive-uninstaller)라 믿고 사용해도 된다.

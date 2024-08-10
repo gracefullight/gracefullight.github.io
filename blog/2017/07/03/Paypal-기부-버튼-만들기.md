@@ -10,7 +10,7 @@ date: 2017-07-03 00:48:55
 [Paypal.Me](https://www.paypal.com/KR/webapps/mpp/paypal-me?locale.x=ko_KR)에 들어가서 서비스 가입만 하면 된다.
 _Paypal 계정이 없으면 가입 후에 계좌 인증이 필요하다_
 
-# 소스
+## 소스
 
 아래 소스를 추가해주자.
 기존 페이팔 버튼의 소스에서 action 부분만 변경해주었다.
@@ -37,7 +37,7 @@ _Paypal 계정이 없으면 가입 후에 계좌 인증이 필요하다_
 </form>
 ```
 
-# 결과
+## 결과
 
 ![image from hexo](https://i.imgur.com/rHzzZUM.png)
 

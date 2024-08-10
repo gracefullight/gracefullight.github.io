@@ -10,7 +10,7 @@ aaa.com 에서 bbb.com 의 세션을 jsonp 방식을 활용해서 생성하고 �
 
 이는 P3P (Platform for Personal Preferences) 규약이 적용되어 세션을 가져오지 않는 것인데, 아래와 같은 방법으로 해결할 수 있다.
 
-# 소스
+## 소스
 
 ```php
 <!-- 세션을 만들어줄 서버에서 P3P 헤더를 설정 -->

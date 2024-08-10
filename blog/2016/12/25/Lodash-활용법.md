@@ -9,11 +9,11 @@ Lodash는 underscore에서 성능을 개선한 라이브러리며
 IE의 하위 브라우저에서 es5, es6의 메소드를 사용할 수 있게 해줄 뿐만 아니라 통계 사용시에는 필수로 사용할 수 밖에 없다.
 공식 문서를 봐도 되지만 구체적인 예시가 있어야 이해하기가 편하다 시작해보자.
 
-# Collection
+## Collection
 
 배열과 객체 모두 사용가능한 메소드
 
-## filter
+### filter
 
 **\_.filter**( 콜렉션, 검색할 데이터 또는 콜백함수 )
 콜렉션에서 해당 데이터 또는 콜백 조건에 맞는 데이터를 포함한 콜렉션을 반환한다.
@@ -42,7 +42,7 @@ _.filter(users, "active");
 // => [ { 'user': 'barney', 'age': 36, 'active': true } ]
 ```
 
-## reject
+### reject
 
 **\_.reject**( 콜렉션, 제외시킬 데이터 또는 콜백함수 )
 콜렉션에서 해당 데이터 또는 콜백 조건에 맞는 데이터를 제외한 콜렉션을 반환한다.
@@ -64,7 +64,7 @@ $scope.remove = function (data) {
 };
 ```
 
-## size
+### size
 
 **\_.size**( 콜렉션 )
 콜렉션의 사이즈를 반환한다. length와 같다고 생각하면 된다.
@@ -80,7 +80,7 @@ _.size("apple");
 // => 5
 ```
 
-## sampleSize
+### sampleSize
 
 **\_.sampleSize**( 콜렉션, [추출 갯수=1])
 콜렉션에서 추출 갯수만큼 랜덤 값을 배열로 반환한다.
@@ -90,11 +90,11 @@ _.sampleSize(_.range(1, 45), 7);
 // => 로또 번호 추출
 ```
 
-# Array
+## Array
 
 배열에 사용 가능한 메소드
 
-## compact
+### compact
 
 **\_.compact**( 배열 )
 배열에서 false, null, 0, ""(빈값), undefined, NaN의 값을 제외시킨 배열을 반환한다.
@@ -104,7 +104,7 @@ _.compact([0, 1, false, 2, "", 3]);
 // => [1, 2, 3]
 ```
 
-## take
+### take
 
 **\_.take**( 배열, [가져올 요소 수=1])
 배열에서 앞에서부터 n개의 요소를 반환한다.
@@ -114,7 +114,7 @@ _.take([3, 5, 4, 7, 9], 3);
 // => [3, 5, 4]
 ```
 
-## uniq
+### uniq
 
 **\_.uniq**( 배열 )
 배열의 중복 값을 제거한다.
@@ -124,7 +124,7 @@ _.uniq([1, 1, 3]);
 // => [1, 3]
 ```
 
-## zip
+### zip
 
 **\_.zip**( 배열, 배열... )
 배열의 인덱스에 따라 배열을 다시 만든다.
@@ -135,11 +135,11 @@ _.zip(["a", "b"], [1, 2], [true, false]);
 // => [['a', 1, true], ['b', 2, false]]
 ```
 
-# Object
+## Object
 
 객체에 사용 가능한 메소드
 
-## get
+### get
 
 **\_.get**( 객체, 가져올 키, 기본값 )
 객체에서 해당 키 값만을 가져온다.
@@ -160,7 +160,7 @@ _.get(object, "e.f");
 // 5
 ```
 
-## omit
+### omit
 
 **\_.omit**( 객체, 제외할 키 배열 )
 객체에서 해당 키를 제외한 객체를 반환한다.
@@ -175,7 +175,7 @@ _.omit(object, "a");
 // => { 'b': '2', 'c': 3 }
 ```
 
-## values
+### values
 
 **\_.values**( 객체 )
 객체에서 값만을 추출한 배열을 반환한다.
@@ -188,11 +188,11 @@ _.values("hi");
 // => ['h', 'i']
 ```
 
-# Util
+## Util
 
 유틸성이 있는 메소드
 
-## constant
+### constant
 
 **\_.constant**( 반환 값 )
 반환 값을 반환해주는 함수이다.
@@ -206,7 +206,7 @@ _.constant({ a: 1 });
 // => { a: 1 }
 ```
 
-## times
+### times
 
 **\_.times**( 반복횟수, 콜백함수 )
 콜백함수 조건에 맞게 반복횟수만큼의 데이터를 배열로 반환한다.
@@ -217,7 +217,7 @@ _.times(3, _.constant(0));
 // => [0, 0, 0]
 ```
 
-## range
+### range
 
 **\_.range**( [시작인덱스], 종료인덱스, [증가 폭=1])
 배열을 초기화 시킬 때 유용하다. 단지 배열을 숫자로 초기화해야된다면 _.range가 속도면에서_.times(n, _constant_)보다 [월등히 빠르다](https://jsperf.com/lodash-times-vs-range/1).
@@ -230,11 +230,11 @@ _.range(4);
 // => [0, 1, 2, 3]
 ```
 
-# Why
+## Why
 
 이런 편리함이 있는데도 왜 안 쓰는지 모르겠지만, 몇 가지 이유가 더 있다
 
-## Lazy Evaluation
+### Lazy Evaluation
 
 [링크](http://filimanjaro.com/blog/2014/introducing-lazy-evaluation/)를 참조하자
 
@@ -268,7 +268,7 @@ for (let i = 0; i < source.length; i++) {
 }
 ```
 
-## chaining
+### chaining
 
 또 다른 큰 이유는 [chain](https://lodash.com/docs#chain)을 활용해 functional programming이 가능하단 것이다.
 예를 들어 다음과 같은 데이터가 있다고 보자
@@ -320,7 +320,7 @@ for (let i = 0; i < source.length; i++) {
 ];
 ```
 
-### js
+#### js
 
 이 데이터의 nodes 데이터만 가져와서 새로운 data 배열을 만들고 싶다면 어떻게 할까?
 lodash를 모르는 상태라면 대충 이런식의 로직이 나온다.
@@ -350,7 +350,7 @@ result = data
   }, []);
 ```
 
-### With lodash
+#### With lodash
 
 lodash를 사용하면 다음과 같이 직관적으로 구현이 가능하다.
 
@@ -361,7 +361,7 @@ result = _.chain(data).map("tag.media.nodes").flatten().values();
 [{ id: "uid1" }, { id: "uid2" }, { id: "uid3" }, { id: "uid4" }];
 ```
 
-# 여담
+## 여담
 
 Lodash는 jQuery와 중복되는 이름을 가진 메소드가 몇 가지 있는데,
 차이점은 콜백함수에서 value를 첫번째 인자로 받는다는 것이고 브라우저에서 native method를 사용할 수 있으면 그걸 사용한다는 것이다. (each를 예를들면 array.forEach)

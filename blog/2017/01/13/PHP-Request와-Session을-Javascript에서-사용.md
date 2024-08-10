@@ -5,7 +5,7 @@ tags: [php, javascript]
 date: 2017-01-13 13:49:58
 ---
 
-# 소스
+## 소스
 
 ```html
 <script>
@@ -16,6 +16,6 @@ date: 2017-01-13 13:49:58
 </script>
 ```
 
-# 설명
+## 설명
 
 addcslashes 로 파싱을 안하면 json text 를 request 로 보낼 때 Unexpected Token [오류가 발생하는 경우](https://stackoverflow.com/questions/5611468/is-there-a-php-function-that-only-adds-slashes-to-double-quotes-not-single-quote)가 있다.

@@ -7,7 +7,7 @@ date: 2017-01-10 16:51:23
 
 @value, @reg 같은 사용자 변수가 들어간 쿼리에서 오류가 발생한다.
 
-# 해결
+## 해결
 
 Connection을 맺을 때 **Allow User Variables=True** 옵션을 추가해줘야한다.
 

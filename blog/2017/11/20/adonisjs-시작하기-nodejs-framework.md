@@ -5,13 +5,13 @@ tags: [nodejs, javascript]
 date: 2017-11-20 18:53:10
 ---
 
-# 개요
+## 개요
 
 nodejs로 정말 간단한 _oauth2, jwt 등의 인증을 사용하지 않는_ API를 만들기에는 `express`가 정말 딱이다.
 
 하지만 조금 더 깔끔한 코드를 원하거나 새롭지만 반복적인 기능을 넣기 위해선 더 큰 프레임워크가 필요했다.
 
-## 조건
+### 조건
 
 언제나 개발시간은 부족하기에 내가 필요한 기능들을 정리해 보았다.
 
@@ -27,7 +27,7 @@ nodejs로 정말 간단한 _oauth2, jwt 등의 인증을 사용하지 않는_ AP
 
 이 조건을 거르니 `adonisjs` 라는 처음 보는 프레임워크가 눈앞에 있었다.
 
-## 성능
+### 성능
 
 ![image from hexo](https://raygun.com/blog/wp-content/uploads/2017/04/performance-results-1.png)
 
@@ -35,7 +35,7 @@ nodejs로 정말 간단한 _oauth2, jwt 등의 인증을 사용하지 않는_ AP
 
 - [여기](https://raygun.com/blog/node-js-performance-2017/)서 자세한 내용을 확인할 수 있다.
 
-## 평판
+### 평판
 
 이 프레임워크를 쓰는 다른 사람은 어떻게 생각할까도 궁금했다.
 
@@ -47,35 +47,35 @@ nodejs로 정말 간단한 _oauth2, jwt 등의 인증을 사용하지 않는_ AP
 
 한글로 번역하면 **왜 안 쓰시죠?** 정도가 되시겠다.
 
-# 시작하기
+## 시작하기
 
-## 요구사항
+### 요구사항
 
 - Node >= 8.0
 - NPM >= 3.0
 
 1711 기준 8.9가 LTS 버전이기 때문에 그냥 쓰면 된다.
 
-## Cli 설치
+### Cli 설치
 
 요즘 멋진 프레임워크들은 다들 cli를 가지고 있다.
 
 ```bash
-$ yarn global add @adonisjs/cli
+yarn global add @adonisjs/cli
 ```
 
-## 앱 설치
+### 앱 설치
 
 ```bash
-$ adonis new 프로젝트명
-$ cd 프로젝트명
-$ adonis serve --dev
+adonis new 프로젝트명
+cd 프로젝트명
+adonis serve --dev
 ```
 
 `localhost:3333`에서 서버가 돌아간다.
 ![image from hexo](https://res.cloudinary.com/adonisjs/image/upload/q_100/v1502292352/welcome-page.png)
 
-# 폴더 구조
+## 폴더 구조
 
 ```
 .
@@ -99,11 +99,11 @@ $ adonis serve --dev
 | start/kernel.js | 미들웨어를 등록한다.                                            |
 | start/routes.js | 라우팅                                                          |
 
-# 라우팅
+## 라우팅
 
 `start/routes.js`에서 등록한다.
 
-## 메소드
+### 메소드
 
 Route 뒤에 method를 붙히면 된다.
 
@@ -116,7 +116,7 @@ Route.get("/boards/:id", async ({ params }) => {
 });
 ```
 
-### 컨트롤러와 연결
+#### 컨트롤러와 연결
 
 ```js
 Route.get("boards", "BoardController.index");
@@ -133,7 +133,7 @@ Route.resource("boards", "BoardController").only(["index", "destroy"]);
 Route.resource("boards", "BoardController").except(["index", "destroy"]);
 ```
 
-## 그룹화
+### 그룹화
 
 보통은 기능이 비슷한 것 끼리 그룹화를 해서 가독성을 높인다.
 
@@ -145,20 +145,20 @@ Route.group(() => {
 }).prefix("api");
 ```
 
-# 컨트롤러
+## 컨트롤러
 
 cli에서 쉽게 생성이 가능하다.
 
 ```bash
-$ adonis make:controller BoardController
+adonis make:controller BoardController
 ```
 
-## 리소스 컨트롤러
+### 리소스 컨트롤러
 
 리소스가 대단한 건 아니고 미리 정의 된 메소드 7개로 RESTful API를 빠르게 만들기 위한 것이다.
 
 ```bash
-$ adonis make:controller BoardController --resource
+adonis make:controller BoardController --resource
 ```
 
 각 메소드들이 연결되는 건 다음과 같다.
@@ -171,15 +171,15 @@ $ adonis make:controller BoardController --resource
 - update: PUT boards/:id
 - destory: DELETE boards/:id
 
-# 모델
+## 모델
 
 하나의 모델은 하나의 테이블과 매칭된다고 보면 된다.
 
 ```bash
-$ adonis make:model Board
+adonis make:model Board
 ```
 
-## 모델 구조
+### 모델 구조
 
 모델 생성 후에 몇 가지 설정을 해줘야한다.
 
@@ -226,17 +226,17 @@ class Board extends Model {
 
 위 속성을 제외하고는 [문서](http://adonisjs.com/docs/4.0/lucid)를 참조해보자.
 
-# 기존 코드를 내려받을 때
+## 기존 코드를 내려받을 때
 
 `.env.example` 파일을 `.env`로 복사해 환경설정을 해주고 로그를 남기기 위해 `tmp` 폴더를 생성해준다
 
 ```bash title="/"
 $ cp .env.example .env
-# .env 파일을 수정하고
+## .env 파일을 수정하고
 
 $ mkdir tmp
 ```
 
-# 여담
+## 여담
 
 이 프레임워크는 라라벨 스타일로 만들어졌기 때문에 (개념이 같다) 모던 PHP 개발자가 되는 건 식은 죽 먹기가 될 수 있다.

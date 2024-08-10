@@ -11,65 +11,65 @@ Thread Pool, 강화된 스토리지 엔진 (InnoDB -> XtraDB), 새로운 스토�
 
 설치를 시작해보자!
 
-# 버전 확인 후 yum repo 추가
+## 버전 확인 후 yum repo 추가
 
-## 버전 및 bit 확인
+### 버전 및 bit 확인
 
 ```bash
-# get version
+## get version
 $ cat /etc/*release*
-# get bit
+## get bit
 $ getconf LONG_BIT
 ```
 
-## yum repo 복사
+### yum repo 복사
 
 [maria](https://downloads.mariadb.org/mariadb/repositories/#mirror=kaist&distro=CentOS&distro_release=centos6-amd64--centos6&version=10.1)로 이동해 맞는 버전을 추가한다.
 
 ![image from hexo](https://i.imgur.com/X3A73UI.png)
 
-## yum repo 추가
+### yum repo 추가
 
 ```bash
-$ vi /etc/yum.repos.d/MariaDB.repo
+vi /etc/yum.repos.d/MariaDB.repo
 ```
 
 명령어로 MariaDB repository 를 생성한 뒤 복사한 내용을 붙히고 저장한다.
 
-# 설치
+## 설치
 
 ```bash
-$ yum install -y MariaDB-server MariaDB-client
+yum install -y MariaDB-server MariaDB-client
 ```
 
 혹여 설치가 안되면 [maria](https://mariadb.com/kb/en/mariadb/yum/) 문서를 참고해서 따라해보자 (영어)
 
-# 부팅 서비스 등록
+## 부팅 서비스 등록
 
 ```bash
 $ chkconfig mysql on
-# 또는
+## 또는
 $ chkconfig --add mysql
 $ chkconfig --level 345 mysql on
 
-# 등록 확인
+## 등록 확인
 $ chkconfig --list mysql
 ```
 
 ※ [maria](https://mariadb.com/kb/en/mariadb/starting-and-stopping-mariadb-automatically/)에서는 345 레벨을 on 하라고 했는데, chkconfig mysql on 으로 실행시켜 2345 레벨을 모두 on 시켰다.
 2 레벨은 not networking 이라 DB 의 원격지 접속이 안될테니 off 시켜도 무관하다.
 
-# 서비스 실행
+## 서비스 실행
 
 ```bash
-$ service mysql start
+service mysql start
 ```
 
 Starting MySQL.... [ **OK** ]
 
 Maria 의 서비스명은 MySQL 로 뜬다.
 
-# Config 파일 수정 및 통합
+## Config 파일 수정 및 통합
 
 처음 설치시 my.cnf 에서 my-server, my-client 등의 파일을 임포트해 분할 관리하게 되어있는데,
 하나로 합쳐보자.
@@ -81,7 +81,7 @@ MariaDB 설치 폴더를 들어가면 My innoDB Huge 라는 config 파일이 존
 
 Thread Pool 기능을 사용하기 위해 extra_port 를 3307 로 줬다.
 
-## 소스
+### 소스
 
 ```ini title="my.cnf"
 [client]
@@ -121,12 +121,12 @@ secure_auth =1
 skip_external_locking
 skip_symbolic_links
 
-# Replication related settings
+## Replication related settings
 server-id = 1
 expire_logs_days = 3
 log_slave_updates
 
-# MyISAM Specific options
+## MyISAM Specific options
 key_buffer_size = 32M
 bulk_insert_buffer_size = 64M
 myisam_sort_buffer_size = 8M
@@ -134,7 +134,7 @@ myisam_max_sort_file_size = 16M
 myisam_repair_threads = 1
 myisam_recover = FORCE,BACKUP
 
-# INNODB Specific options
+## INNODB Specific options
 innodb_additional_mem_pool_size = 16M
 innodb_buffer_pool_size = 2G
 innodb_data_file_path = ibdata1:10M:autoextend
@@ -170,7 +170,7 @@ interactive-timeout
 open-files-limit = 8192
 
 [mariadb]
-# thread pool
+## thread pool
 thread_handling=pool-of-threads
 thread_pool_idle_timeout = 3600
 thread_pool_stall_limit = 100

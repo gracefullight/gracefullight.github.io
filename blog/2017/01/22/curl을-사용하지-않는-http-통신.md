@@ -8,9 +8,9 @@ date: 2017-01-22 11:29:48
 curl 기능이 확장되어있지 않아 http 통신을 할 수 없는 경우가 있다.
 **fsockopen** 메소드를 사용해 같은 기능을 할 수 있다.
 
-# 소스
+## 소스
 
-## GET
+### GET
 
 ```php
 <?php
@@ -54,7 +54,7 @@ function getData($str, $data) {
 }
 ```
 
-## POST
+### POST
 
 ```php
 <?php
@@ -132,7 +132,7 @@ function postData($str, $data, $sleepMs=0) {
 }
 ```
 
-# 예제
+## 예제
 
 ```php
 <?php
@@ -148,7 +148,7 @@ $post_data = postData('http://your.apiurl.com', $param);
 ?>
 ```
 
-# 설명
+## 설명
 
 fsockopen 으로 소켓을 연 뒤 해당 host 로 request 만들어 전송한다.
 

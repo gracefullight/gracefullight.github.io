@@ -11,16 +11,16 @@ date: 2017-01-13 14:13:26
 
 그럴 때 [서브라임텍스트 소다테마](http://www.codeigniter-kr.org/bbs/view/file?idx=3525)를 적용하면 된다.
 
-# 설치
+## 설치
 
-## 다운로드
+### 다운로드
 
 [파일](http://blogattach.naver.net/1f8a03b0a4f3fb2709e588bf88601d6dcd946c820b/20161001_37_blogfile/eks020_1475316070829_9az41E_zip/Editplus_sublime_text_theme%28Soda_Light%29.zip)을 다운받는다.
 
 EditPlus 폴더 안에 theme 폴더를 만들고 그 안에 압출을 풀어주자.
 ![image from hexo](https://i.imgur.com/1FY2d16.png)
 
-## 설정
+### 설정
 
 **도구 > 기본설정 > 일반 > 색상** 탭에서 **가져오기** 버튼을 클릭하고 ini 파일을 읽어들인다.
 ![image from hexo](https://i.imgur.com/KjK9unS.png)

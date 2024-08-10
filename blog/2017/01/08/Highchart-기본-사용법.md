@@ -7,12 +7,12 @@ date: 2017-01-08 23:21:05
 
 D3.js 로 그래프를 만들 수 있지만 더 사용성이 좋은 highchart 로 데이터를 시각화해보자
 
-# 설치
+## 설치
 
 ```bash
-# npm
+## npm
 $ npm install highcharts --save
-# yarn
+## yarn
 $ yarn add highcharts
 ```
 
@@ -25,7 +25,7 @@ $ yarn add highcharts
 <script src="/bower_components/highcharts/themes/grid-light.js"></script>
 ```
 
-# 기본 예제
+## 기본 예제
 
 홈페이지에 나와있는 [예제](https://www.highcharts.com/demo/line-basic)는 다음과 같다.
 
@@ -40,11 +40,11 @@ $ yarn add highcharts
 기본 예제로도 차트를 만들 수 있지만 업무에 사용하려면 비동기로 데이터가 갱신될 때마다 차트도 다시 그려져야한다.
 세부 옵션은 [API 문서](https://api.highcharts.com/highcharts)를 참조하자.
 
-# Redraw 예제
+## Redraw 예제
 
 **div#chart**에 차트를 그린다고 가정한다.
 
-## 소스
+### 소스
 
 ```js
 Highcharts.setOptions({
@@ -133,11 +133,11 @@ const chartCallback = function (data) {
 redraw 를 이용할 때 `new Highcharts.Chart`를 사용해야한다.
 categories 와 series 의 모양을 만들어줄 때는 lodash 를 사용해야 편하다.
 
-## 결과
+### 결과
 
 ![image from hexo](https://i.imgur.com/7v56peZ.png)
 
-# 대안
+## 대안
 
 - Chart.js
 - E Charts

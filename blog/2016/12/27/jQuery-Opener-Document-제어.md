@@ -5,7 +5,7 @@ tags: [javascript, jquery]
 date: 2016-12-27 23:58:18
 ---
 
-# pure javascript
+## pure javascript
 
 부모창을 제어하는 구문은 아래처럼 사용한다.
 
@@ -14,7 +14,7 @@ document.parent.getElementById("id");
 window.opener.document.getElementById("id");
 ```
 
-# jQuery
+## jQuery
 
 jQuery를 사용하고 있다면 생각보다 쉽게 요소 선택을 할 수 있다.
 

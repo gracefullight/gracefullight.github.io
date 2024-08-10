@@ -9,15 +9,15 @@ date: 2017-11-17 16:45:23
 
 [Vuejs-kr](https://vuejs-kr.github.io/jekyll/update/2017/03/02/vuejs-jquery-bootstrap/)에 좋은 내용이 있지만 웹팩을 통해 jquery를 꺼내는 방법이 더 간단하다.
 
-# 설치
+## 설치
 
 ```bash
-$ yarn add jquery bootstrap
+yarn add jquery bootstrap
 ```
 
-# 설정
+## 설정
 
-## webpack
+### webpack
 
 ```js title="build/webpack.base.conf.js"
 const webpack = require("webpack");
@@ -34,7 +34,7 @@ module.exports = {
 };
 ```
 
-## eslint
+### eslint
 
 ```js title=".enlintrs.js"
 module.exports = {
@@ -45,7 +45,7 @@ module.exports = {
 };
 ```
 
-# 연동
+## 연동
 
 ```js title="src/main.js"
 import "bootstrap";

@@ -17,11 +17,11 @@ shorttag는 URL 창에서 바로 보여질 수도 있지만 그렇지 않을경�
 **Save** 또는 **Update** 버튼을 누르면 나오는 **Embed** 메뉴에서 확인할 수 있다.
 ![image from hexo](https://i.imgur.com/FzTXSX3.png)
 
-# 문제점
+## 문제점
 
 https인 github.io에서 http로 jsfiddle을 호출해서 차단된다.
 
-# 해결
+## 해결
 
 **node_module\hexo\lib\plugins\tag\jsfiddle.js** 파일의 jsfiddle 치환 함수를 변경한다.
 

@@ -5,7 +5,7 @@ tags: [javascript, fb]
 date: 2017-01-10 16:14:21
 ---
 
-# 페이스북 모듈 연동
+## 페이스북 모듈 연동
 
 ```javascript
 window.fbAsyncInit = function () {
@@ -28,7 +28,7 @@ window.fbAsyncInit = function () {
 })(document, "script", "facebook-jssdk");
 ```
 
-# Page 권한 얻기 (선택)
+## Page 권한 얻기 (선택)
 
 앱공개를 한 뒤 **페이스북 개발자 > 앱 검수** 에서 **publish_pages, manage_pages** 권한을 부여해야한다.
 
@@ -48,7 +48,7 @@ FB.login(
 // 이 두 권한이 꼭 필요하다
 ```
 
-# 해당 Page 관리자 권한 얻기
+## 해당 Page 관리자 권한 얻기
 
 페이지 아이디가 필요한데, 내 페이지로 이동하면 뒤에보이는 주소 번호가 있다.
 또는 페이지 아이디를 [여기](http://findmyfbid.com/)서 주소로 검색해보자
@@ -65,7 +65,7 @@ FB.api(
 );
 ```
 
-# Page Feed 작성
+## Page Feed 작성
 
 Graph API 를 사용해 피드를 작성한다.
 자세한 옵션 설정은 [API 문서](https://developers.facebook.com/docs/graph-api/reference/v2.8/page/feed)를 참조하자.
@@ -91,7 +91,7 @@ FB.api(
 );
 ```
 
-# 소스
+## 소스
 
 ```js
 FB.login(
@@ -140,7 +140,7 @@ function postFbPage(token_result) {
 }
 ```
 
-# 여담
+## 여담
 
 OAuth 및 RESTful 의 개념이 잡혔다면 쉽게 접근할 수 있을듯
 Graph API 로 모든 페이스북 API 이용이 가능한 것 같다.

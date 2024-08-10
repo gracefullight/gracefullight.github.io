@@ -8,7 +8,7 @@ date: 2016-12-23 15:51:23
 기본예제는 type="date" 로만 설정이 되있어서 type="text"에도 적용 가능하게 onSet callback 을 설정했고,
 한글로 보이게 수정했다.
 
-# 소스
+## 소스
 
 ```html
 <input type="text" name="date" class="date" />
@@ -71,6 +71,6 @@ date: 2016-12-23 15:51:23
 </script>
 ```
 
-# 결과
+## 결과
 
 ![image from hexo](https://i.imgur.com/arG9DCJ.png)

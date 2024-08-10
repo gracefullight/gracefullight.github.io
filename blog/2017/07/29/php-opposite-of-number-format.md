@@ -10,7 +10,7 @@ number_format 으로 쉽게 comma 가 들어간 숫자를 만들 수 있는데,
 
 더 간단하게 변경할 수 있는 방법은 바로 **filter_var**를 사용하는 것이다.
 
-# 소스
+## 소스
 
 ```php
 <?php
@@ -27,6 +27,6 @@ echo $number; // 10000;
 echo $number2; // 10000;
 ```
 
-# 필터 옵션
+## 필터 옵션
 
 필터 상수에 대해 궁금해졌다면 [공홈](https://php.net/manual/en/filter.filters.php)을 참조하자.
