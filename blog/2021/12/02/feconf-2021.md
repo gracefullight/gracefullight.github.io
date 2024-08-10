@@ -5,9 +5,9 @@ tags: [conference, javascript]
 date: 2021-12-02 07:19:12
 ---
 
-# feconf 2021
+## feconf 2021
 
-## A1: Do more, with less
+### A1: Do more, with less
 
 UI 개발의 일반적인 문제
 
@@ -113,12 +113,12 @@ React + DST (46:20)
 - DST 의 스펙만 확장시키면 됨
 - Server driven UI 나 다른 언어 컴포넌트로 전환도 가능해보임.
 
-## A6: swc
+### A6: swc
 
 - 많은 벤더가 전환 중
 
 개인적인 의견: 엄청 빨라짐, 아직 롤업 플러그인 지원은 미비, 모든 Node 생태계가 러스트로 이동 중, swcpack 프로덕션 기대
 
-## B1: recoil
+### B1: recoil
 
 개인적인 의견: 인포그래픽 아름다워서 공유용으로 적합.
