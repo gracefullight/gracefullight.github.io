@@ -7,11 +7,11 @@ date: 2020-12-12 16:43:17
 
 import ReactPlayer from "react-player/lazy";
 
-# Chrome dev summit 2020
+## Chrome dev summit 2020
 
 Performance (특히 CLS)와 Privacy 가 행사 전반에 녹아있었다. 가장 중요했던 건 이제 Web Vitals 수치가 SEO 에 반영이 된다는 것이다.
 
-## State of speed tooling
+### State of speed tooling
 
 ![Field vs Lab](https://i.imgur.com/FTrEBLz.png)
 
@@ -21,7 +21,7 @@ Performance (특히 CLS)와 Privacy 가 행사 전반에 녹아있었다. 가장
 - Third party 에 대한 측정도 추가되었다.
 - [Thrid party facades](https://web.dev/third-party-facades/) 를 통해 iframe 등도 lazy load 해야한다.
 
-## Fixing common Web Vitals issues
+### Fixing common Web Vitals issues
 
 - CLS를 측정하고 개선하는 방안에 대해 설명하였다.
 - [GoogleChrome/web-vitals](https://github.com/GoogleChrome/web-vitals) 로 측정해라.
@@ -39,18 +39,18 @@ sendToAnalytics({ cls, debugInfo });
 // Debugging info specific to your app (e.g. tokens)
 ```
 
-## UX patterns optimized for Core Web Vitals
+### UX patterns optimized for Core Web Vitals
 
 ![Prevent CLS](https://i.imgur.com/nqt5T73.png)
 
 - Placeholder 를 놓아 CLS 를 막아야한다는 내용이였다.
 - Click 해서 내용이 추가되는 경우도 마찬가지이다.
 
-## Exploring the future of Core Web Vitals
+### Exploring the future of Core Web Vitals
 
 - [Web Vitals Changelogs](https://chromium.googlesource.com/chromium/src/+/master/docs/speed/metrics_changelog/README.md) 확인하고 피드백 주면 좋겠다.
 
-## Core Web Vitals and SEO
+### Core Web Vitals and SEO
 
 <ReactPlayer
   url="https://www.youtube.com/watch?v=ggpZA5U2rZk"
@@ -73,7 +73,7 @@ sendToAnalytics({ cls, debugInfo });
 - `Great relevant content > Page experience`
 - Page experience 가 좋으면 유저의 이탈율이 24% 감소한다. ([The Science Behind Web Vitals](https://blog.chromium.org/2020/05/the-science-behind-web-vitals.html))
 
-## Beyond fast
+### Beyond fast
 
 - 동적으로 로드되는 영역에 대해 [content-visibility](https://caniuse.com/css-content-visibility)을 줘서 placeholder 를 구현할 수 있다.
 
@@ -94,7 +94,7 @@ sendToAnalytics({ cls, debugInfo });
 - 포탈을 쓰면 스토리지 제한이 없어서 두 사이트 간 content 공유가 쉽다.
 - [quicklink](https://github.com/GoogleChromeLabs/quicklink) 도 짧게 소개했다. newegg 사는 50% 컨버젼 상승과 4x faster navigation 을 달성했다고 한다.
 
-## Enable and debug cross-origin isolated
+### Enable and debug cross-origin isolated
 
 - 헤더가 추가된다.
   - `Cross-Origin-Opener-Policy: same-origin` 코옵
@@ -105,39 +105,39 @@ sendToAnalytics({ cls, debugInfo });
 - 요약하면 아래와 같다.
 
 ```bash
-# 타 도메인 리소스
+## 타 도메인 리소스
 Cross-Origin-Resource-Policy: cross-origin
-# 또는 CORS 열고 img[crossorigin] 추가
+## 또는 CORS 열고 img[crossorigin] 추가
 
-# 타 도메인 아이프레인
+## 타 도메인 아이프레인
 Cross-Origin-Resource-Policy: cross-origin
 
-# 내 사이트
+## 내 사이트
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
-# 또는 a[no-openner] 추가
+## 또는 a[no-openner] 추가
 ```
 
-## Introducing the Privacy Budget
+### Introducing the Privacy Budget
 
 - [브라우저 fingerprint](http://fingerprint-demo.glitch.me) 를 방지하기 위한 proposal
 - [Privacy Sandbox](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
 - Less entropy, User-Agent Client Hints 로 개선하여 특정하지 못 하게 할 것이다.
 
-## A more private way to measure ad conversions
+### A more private way to measure ad conversions
 
 - 쿠키를 심어서 arbitrary information까지 추적이 가능한 걸 개선하려한다.
 - `conversiondestination, impressiondata, reportingorigin` 가 추가된다.
 - 브라우저 자체에 고유값이 저장되며 `chrome://conversion-internals` 에서 디버깅 가능하다.
 - [A more private way to measure ad conversions, the Event Conversion Measurement API](https://web.dev/conversion-measurement/)와 [Demo](https://peacock-demo-283822.nw.r.appspot.com) 를 보는 게 이해가 쉬웠다.
 
-## Sign-up form best practices
+### Sign-up form best practices
 
 - [한 판](https://web.dev/sign-in-form-best-practices/)을 정리해놓아서 이 것만 보면 된다.
 - 이름 검사에 정규식을 사용할 때 유니코드 기반을 사용해야한다. `/[\p{L} ]+/u`
 - 개인적으로 듣기 제일 좋았다.
 
-## SMS OTP form best practices
+### SMS OTP form best practices
 
 ```html
 <input
@@ -154,7 +154,7 @@ Cross-Origin-Opener-Policy: same-origin
 - OTP 문자 마지막 라인에는 `@${bound-domain} #${OTP}` 처럼 넣어주면 브라우저에서 파싱이 가능하다. (e.g. `@gracefullight.dev #123456`)
 - [Web OTP API](https://web.dev/web-otp/)를 사용하여 서버에서 바로 받아서 사용할 수도 있다.
 
-## What's new in DevTools
+### What's new in DevTools
 
 - Gird 지원 추가
 - Location 변경 기능 추가, Timezone, Language
@@ -168,19 +168,19 @@ Cross-Origin-Opener-Policy: same-origin
 - CSS Overview 탭 추가
 - Media 디버깅 패널 추가
 
-## Extending CSS with Houdini
+### Extending CSS with Houdini
 
 - [Houdini.how](http://houdini.how)에 Worklet 확인 가능
 - `CSS.paintWorklet.addModule` 로 바로 가져와서 쓸 수 있다고 강조했다.
 - Static gradient worklet 가 예뻐보였다.
 
-## Debugging WebAssembly with modern tools
+### Debugging WebAssembly with modern tools
 
 - emcc 로 c++ 디버깅 옵션을 주면 c++ 소스를 바로 디버깅도 가능하다.
 - 추후 memory inspection, custom formatters, profiling, code coverage 기능을 추가할 예정이다.
 - google map 에 어떤 wasm 기술이 적용되었는지 알려주면 좋을텐데 아쉬웠다.
 
-## Transitioning to modern JavaScript
+### Transitioning to modern JavaScript
 
 ![6x slower](https://i.imgur.com/3ycfeAy.png)
 
@@ -191,7 +191,7 @@ Cross-Origin-Opener-Policy: same-origin
 - [EStimator](https://estimator.dev) 를 사용하여 어떤 코드를 변경해야할지 확인할 수 있다.
 - [Publish, ship, and install modern JavaScript for faster applications](https://web.dev/publish-modern-javascript/)
 
-## Next-level web apps on desktop
+### Next-level web apps on desktop
 
 - PWA 로 추가될 내용들이였다. 기능 설명 위주였다.
 - `navigator.runOnOsLogin`
@@ -203,24 +203,24 @@ Cross-Origin-Opener-Policy: same-origin
 - Badging (이게 드디어 나온다.)
 - Digital goods API
 
-## New logic to detect PWA offline support
+### New logic to detect PWA offline support
 
 - 현재는 오프라인 체크시 서비스워커에 `fetch event` 가 정의되어있는지만 확인하는데 이제는 offine 시에 200 이 반환되어야한다.
 - chrome88 에서 `check-offline-capability` 플래그를 활성화하여 테스트 가능하다.
 - chrome89 에서 console.warn 을 발생시킬 것이다.
 - offline.html 파일을 강제시키는 bug fix 느낌이다.
 
-## What’s new for web apps in Play
+### What’s new for web apps in Play
 
 - `bubblewrap/cli` 사용하여서 TWA 를 만드는 방법
 - `PaymentRequest` 로 PWA 와 구글 결제 연동 가능
 
-## Extending Workbox: custom strategies and plugins
+### Extending Workbox: custom strategies and plugins
 
 - Workbox v6 이 되면서 Lifecycle hook 과 기존 strategy 를 확장 가능하게 변경되었다.
 - [한 판](https://web.dev/extending-workbox/)을 정리해놓아 이 것만 보면 된다.
 
-## Structured data for developers
+### Structured data for developers
 
 - Dynamic structred data 가 가능하다.
 
@@ -239,14 +239,14 @@ fetch(`/api/events/structured-data?id=${id}`)
 - 테스트는 Rich Results Test 에서 가능하다.
 - `schema-dts, react-schemaorg` 패키지도 있다.
 
-## Making the web more visual with Web Stories
+### Making the web more visual with Web Stories
 
 - Web story 를 만드는 방법에 대해 나온다.
 - [stories.google](https://stories.google) 나 [Google의 웹 스토리 사용 설정하기](https://developers.google.com/search/docs/guides/enable-web-stories) 참조하자.
 - [nws.ai](https://nws.ai), [wp.stories.google](https://wp.stories.google), [makestories.io](https://makestories.io) 에서 만들거나 amp story 로 가능하다.
 - 구글 검색에도 표시되어서 언젠가는 만들어야할 것 같다.
 
-## The web ahead
+### The web ahead
 
 ![The web ahead](https://i.imgur.com/AertrvA.png)
 

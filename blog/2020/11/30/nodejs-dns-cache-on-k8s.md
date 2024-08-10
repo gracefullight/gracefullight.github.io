@@ -5,7 +5,7 @@ tags: [nodejs, dns, k8s, docker]
 date: 2020-11-30 00:06:31
 ---
 
-# DNS Cache
+## DNS Cache
 
 쿠버네티스 환경에서는 Node.js 이미지를 올릴 시 종종 아래와 같은 IP 반환 에러메세지가 보인다.
 이는 서비스 연결조차 불가능하게 만들어 운영에 지장을 주었다.
@@ -16,7 +16,7 @@ Error: getaddrinfo EAI_AGAIN your-service
 
 먼저 Node.js 레벨에서부터 확인을 시작하였다.
 
-## UV_THREAD_POOL_SIZE
+### UV_THREAD_POOL_SIZE
 
 Node.js Man 을 보면 다음과 같은 [주의사항](https://nodejs.org/dist/latest-v14.x/docs/api/dns.html#dns_dns_lookup)이 있다.
 
@@ -35,7 +35,7 @@ Node.js Man 을 보면 다음과 같은 [주의사항](https://nodejs.org/dist/l
 
 이 메소드들을 사용할 때는 병렬 요청과 부하에 신경을 써야하며 `UV_THREADPOOL_SIZE` 사이즈를 Node.js 기본값인 **4**에서 적절히 증가시켜줘야한다.
 
-## dns.lookup
+### dns.lookup
 
 `dns.lookup`가 비동기인척하는 동기 메소드임을 확인할 수 있었다.
 보통 이 메소드를 직접 사용하는 경우는 거의 없다.
@@ -46,14 +46,14 @@ java 는 30s[¹](https://github.com/AdoptOpenJDK/openjdk-jdk/blob/97f8261e4190b8
 
 Node.js 커뮤니티에서는 [native dns lookup cache 기능이 제안](https://github.com/nodejs/node/issues/5893) 되었지만, `dns.resolve4` 와 `dns.resolve6` 에 서버에서 반환하는 `ttl` 값을 사용할 수 있게 추가되어 이걸 사용하여 DNS 캐싱을 하게 권장되었다.
 
-## alpine
+### alpine
 
 alpine 이미지에는 musl 을 사용하므로 다음과 같은 이슈가 발생할 수 있으나 해당 서비스는 그렇지 않았다.
 
 - [docker-alpine#dns](https://github.com/gliderlabs/docker-alpine/blob/master/docs/caveats.md#dns)
 - [musl#dns](https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS)
 
-## kube-dns
+### kube-dns
 
 남은 건 쿠버네티스 환경이었다. [kube-dns 대신 dnsmasq 를 사용하자 제안](https://github.com/kubernetes/kubernetes/issues/32749)이 있었고, [DNS intermittent delays of 5s](https://github.com/kubernetes/kubernetes/issues/56903) 이슈와 공식 문서의 [NodeLocal DNS Cache Daemonset](https://github.com/kubernetes/enhancements/blob/master/keps/sig-network/1024-nodelocal-cache-dns/README.md) 으로 이 문제를 해결할 수 있어보였다.
 
@@ -61,7 +61,7 @@ alpine 이미지에는 musl 을 사용하므로 다음과 같은 이슈가 발�
 
 그렇다면 어플리케이션에서 해결할 방법을 찾아야했다.
 
-## cacheable-lookup
+### cacheable-lookup
 
 Node.js 의 HTTP 모듈에서는 lookup 속성을 지원하며 이는 기본값으로 `dns.lookup` 을 사용한다.
 결국 `Node.js(HTTP -> dns.lookup) -> Alpine(getaddrinfo) -> K8S(socket)` 의 어느 구간이라도 캐싱을 하면 되는 것이다.
@@ -80,11 +80,11 @@ cacheable.install(http.globalAgent);
 전역 agent 를 오염시키는 느낌이라 아예 HTTP 라이브러리를 `got` 으로 변경하였다.
 `got` 에서는 `dnsCache: true` 를 주어 이 기능을 [쉽게 활성화](https://github.com/sindresorhus/got/issues/661) 할 수 있었다.
 
-# 결론
+## 결론
 
 - 언어 수준에서의 DNS 캐시는 짧게나마 필요해보였다.
 - `deno` 에선 [reqwest](https://docs.rs/reqwest/0.10.9/reqwest/) 모듈 위에 HTTP 를 올려놓았는데, `trust-dns` 란 DNS 캐시 모듈을 활성화하는 옵션은 [들어가있지 않았다.](https://github.com/denoland/deno/commit/35e3c06aed851f65ad0d561d73a447ab5765fc13) 따라서 쿠버네티스 환경에서 같은 오류를 뱉을지 테스트해보고 싶다.
 
-# 참조
+## 참조
 
 - [What does getaddrinfo do](https://jameshfisher.com/2018/02/03/what-does-getaddrinfo-do/)

@@ -5,11 +5,11 @@ tags: [css, layout, html]
 date: 2020-03-01 14:52:04
 ---
 
-# CSS3
+## CSS3
 
 사용할 수 없는 브라우저에서 신규 문법은 무시된다.
 
-## BFC
+### BFC
 
 **Block Formatting Context**이며 아래 조건에서 생성된다.
 
@@ -22,9 +22,9 @@ date: 2020-03-01 14:52:04
 - grid item
 - table cell
 
-# layout
+## layout
 
-## float
+### float
 
 ```html
 <style>
@@ -52,7 +52,7 @@ date: 2020-03-01 14:52:04
 - `overflow: hidden` 으로 플로팅 요소를 잡는 것은 `box-shadow`가 잘리는 등의 문제가 있다.
 - `display: flow-root`는 모던 브라우저에서만 지원한다.
 
-## position
+### position
 
 - `static`: 기본 값이다. 코드상 노출된 순서대로 표시된다.
 - `relative`: 오프셋(top, left...)와 함께 사용된다.
@@ -87,7 +87,7 @@ date: 2020-03-01 14:52:04
 </div>
 ```
 
-## multi-column
+### multi-column
 
 `column-count`, `column-width`로 단 효과를 낼 수 있다.
 
@@ -104,7 +104,7 @@ date: 2020-03-01 14:52:04
 </div>
 ```
 
-## axis
+### axis
 
 - **주축**과 **교차축**이 있다.
   - 기본은 `flex-direction: row`이며 교차축은 수직이다.
@@ -113,7 +113,7 @@ date: 2020-03-01 14:52:04
 - `교차축 === 블럭축(block axis)` 이다.
 - 그리드에서는 `컬럼 축(column axis)`이라고도 한다.
 
-## flexbox
+### flexbox
 
 > 1차원 레이아웃
 
@@ -121,9 +121,9 @@ date: 2020-03-01 14:52:04
 - flex item은 `min-content`로 설정한 너비보다 작아질 수 없으므로 컨테이너를 벗어난다.
   - `min-content`는 아이템 내부 단어 중 가장 긴 것을 기준으로 설정된다.
 - `flex-wrap: wrap;` 속성 설정 시 여러 줄에 걸쳐 표현된다.
-- 줄이 넘어가면 넘어간 줄이 _flex container_ 가 된다.
+- 줄이 넘어가면 넘어간 줄이 *flex container* 가 된다.
 
-### 플렉스 아이템 배치
+#### 플렉스 아이템 배치
 
 - `align-items`
   - `stretch`: 기본값으로 늘어난다.
@@ -132,7 +132,7 @@ date: 2020-03-01 14:52:04
   - `center`: 중앙에 배치된다.
 - `align-self`: flex item 에서 위 속성을 덮는다.
 
-### 플렉스 아이템 정렬
+#### 플렉스 아이템 정렬
 
 - `justify-content`
   - `flex-direction: row`면 가로줄, `column`이면 세로줄에서 동작한다.
@@ -150,7 +150,7 @@ date: 2020-03-01 14:52:04
   - 나머지 동작은 justify-content와 같다.
 - `margin-left: auto;` 를 사용하면 원하는 아이템을 반대방향에 배치할 수 있다.
 
-### 반응형 플렉스박스
+#### 반응형 플렉스박스
 
 - `flex-grow`: flex-basis에 설정한 값보다 커질 수 있는지 설정한다.
 - `flex-shrink`: flex-basis에 설정한 값보다 작아질 수 있는지 설정한다.
@@ -160,14 +160,14 @@ date: 2020-03-01 14:52:04
   - `flex-basis: auto`: 플렉스 아이템에 `width` 속성이 있다면 그 값을 flex-basis 로 사용한다. 특별한 경우가 아니라면 auto가 권장된다.
 - 보통 세 속성을 합쳐서 `flex: 0 0 200px;` 처럼 적는다.
 
-### 플렉스박스 방향
+#### 플렉스박스 방향
 
 > 플렉스박스와 그리드는 `dir=ltr` `dir=rtl` 속성에 좌,우 영향을 받는다.
 
 - `flex-direction: row-reverse`
 - `flex-direction: column-reverse`
 
-## grid
+### grid
 
 > 2차원 레이아웃
 
@@ -204,16 +204,16 @@ date: 2020-03-01 14:52:04
 </div>
 ```
 
-### fr
+#### fr
 
-- _fraction_
+- *fraction*
 - 유연한 너비를 나타내는 단위이다.
 
-### 그리드 트랙
+#### 그리드 트랙
 
 - 그리드의 열과 행을 나타낸다.
 
-### 그리드 배치
+#### 그리드 배치
 
 > 프로그래머의 수는 0부터 시작이지만 그리드 배치에서는 1부터여야한다.
 
@@ -252,12 +252,12 @@ date: 2020-03-01 14:52:04
 
 `grid-column: auto / span 2;` 처럼 시작 위치를 auto로 잡고 끝 위치를 span 2로 잡으면 자동 배치 기능에 의해 그리드 아이템 위치는 자동으로 정해지고 너비는 항상 컬럼 두 개만큼 확장한다.
 
-### 그리드 정렬
+#### 그리드 정렬
 
 - `justify-items`로 설정하며 각 영역 안에서 정렬된다.
 - 초기값은 `stretch`이다.
 
-### named area
+#### named area
 
 - 그리드에 이름을 직접 지정할 수도 있다.
 - `.`은 공백을 나타낸다.
@@ -292,7 +292,7 @@ date: 2020-03-01 14:52:04
 }
 ```
 
-### 반응형 그리드
+#### 반응형 그리드
 
 - `auto-fill`: 너비가 허용하는만큼 최대한 많이, 다만 아이템 갯수가 부족하면 빈 공간을 남긴다.
 - `auto-fit`: 아이템 갯수가 부족하면 남은 공간은 균등하게 분배된다.
@@ -308,7 +308,7 @@ date: 2020-03-01 14:52:04
 }
 ```
 
-### 그리드 흐름
+#### 그리드 흐름
 
 - `grid-auto-flow` 속성으로 조절한다.
   - `row`: 기본값이며 왼쪽 위부터 오른쪽으로 칸을 채워나간다.
@@ -319,6 +319,6 @@ date: 2020-03-01 14:52:04
 이 외에 `order` 속성으로 직접 순서 제어가 가능하다.
 다만 `dense`나 `order`는 탭 순서까지 변경해주지 않아 접근성을 벗어난다.
 
-# supports
+## supports
 
 구 브라우져와의 호환을 위해 `@supports (display: grid)` 처럼 서포트 피쳐쿼리를 사용할 수 있다.

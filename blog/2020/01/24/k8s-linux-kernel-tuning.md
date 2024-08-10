@@ -5,7 +5,7 @@ tags: [k8s, docker, linux]
 date: 2020-01-24 23:43:55
 ---
 
-# 변경가능한 커널 설정
+## 변경가능한 커널 설정
 
 노드 레벨의 sysctl과 네임스페이스 sysctl과 같은 커널 파라미터를 sysctl 인터페이스로 변경할 수 있다.
 변경 가능한 파라미터는 다음과 같다.
@@ -20,7 +20,7 @@ date: 2020-01-24 23:43:55
 
 `taint, toleration` 을 같이 사용해 사이드이펙을 방지하라고 권하고 있다.
 
-## ARP 캐시
+### ARP 캐시
 
 > neighbour: arp_cache: neighbor table overflow!
 
@@ -38,7 +38,7 @@ net.ipv4.neigh.default.gc_thresh2 = 90000
 net.ipv4.neigh.default.gc_thresh3 = 100000
 ```
 
-# 예시
+## 예시
 
 ```yaml
 apiVersion: v1
@@ -60,11 +60,11 @@ spec:
         value: "1024 65536"
 ```
 
-# 여담
+## 여담
 
 - 파면 팔수록 리눅스부터 다시 정리해야되겠다는 느낌이 든다.
 
-# 참조
+## 참조
 
 - [Using sysctls in a Kubernetes Cluster](https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/)
 - [리눅스 서버의 TCP 네트워크 성능을 결정짓는 커널 파라미터 이야기 - 2편](https://meetup.toast.com/posts/54)

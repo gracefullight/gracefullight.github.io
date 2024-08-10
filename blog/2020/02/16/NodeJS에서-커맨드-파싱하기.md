@@ -5,11 +5,11 @@ tags: [nodejs, javascript, bash]
 date: 2020-02-16 20:10:12
 ---
 
-# arg
+## arg
 
 [zeit/arg](https://github.com/zeit/arg) 패키지를 이용하면 된다.
 
-## 사용법
+### 사용법
 
 arg 함수 하나로 파싱이 가능하다.
 
@@ -29,7 +29,7 @@ const args = arg(
 2. 옵션과 축약 옵션을 정하고
 3. 검증을 넣는다.
 
-## 소스
+### 소스
 
 ```js
 // 계정정보를 받는 스크립트라면

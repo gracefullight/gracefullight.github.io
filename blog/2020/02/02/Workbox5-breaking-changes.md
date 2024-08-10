@@ -5,12 +5,12 @@ tags: [javascript, pwa, serviceworker, workbox]
 date: 2020-02-02 16:47:22
 ---
 
-# Workbox5 버전
+## Workbox5 버전
 
 잘 돌던 `workbox-cli` 가 5버전 릴리즈 후부터 돌지 않아서 확인해보았다.
 전체 문서는 [여기](https://developers.google.com/web/tools/workbox/guides/migrations/migrate-from-v4)서 확인 가능하다.
 
-## injectManifest
+### injectManifest
 
 `self.__WB_MANIFEST` 를 주입받는 방식으로 변경되었다.
 
@@ -22,11 +22,11 @@ precacheAndRoute([]);
 precacheAndRoute(self.__WB_MANIFEST);
 ```
 
-## NavigationRoute
+### NavigationRoute
 
 blacklist, whitelist 에서 denylist, allowlist 로 키 명이 변경되었다.
 
-## BroadcastChannel
+### BroadcastChannel
 
 broadcast-update 가 자체 API 에서 `postMessage()`로 변경되었다.
 이벤트 리스너가 많아져 복잡해지고, 기존 API에서는 메세징의 버퍼 기능이 없었기 때문이다.

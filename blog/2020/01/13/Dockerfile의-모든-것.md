@@ -7,7 +7,7 @@ tags:
 date: 2020-01-13 22:36:44
 ---
 
-# 인스트럭션
+## 인스트럭션
 
 - **FROM**: 빌드하는 이미지의 기반 이미지 지정
 - **RUN**: 이미지 빌드 시 컨테이너에서 실행할 명령어 정의
@@ -31,13 +31,13 @@ date: 2020-01-13 22:36:44
 - **ONBUILD**: 컨테이너 안에서 실행되는 명령 정의, 이미지에서 실행되지 않는다.
   - ONBUILD 를 정의한 이미지를 기반 이미지로 삼아 다른 이미지를 빌드할 때 실행된다.
 
-# 이미지
+## 이미지
 
-## 린팅
+### 린팅
 
 [hadolint](https://github.com/hadolint/hadolint) 를 설치해 [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) 에 기반해 이미지를 생성했는지 검증하자.
 
-## 기반 이미지
+### 기반 이미지
 
 - scratch: 아무 것도 없는 이미지
   - https 통신이 필요한 경우 cacert.pem 을 /etc/ssl/certs 에 추가해야한다.
@@ -50,7 +50,7 @@ date: 2020-01-13 22:36:44
   - `apk add --no-cache package`
   - `apk add --no-cache --virtual=ailas package` && `apk del --no-cache ailas`
 
-## 멀티스테이지 빌드
+### 멀티스테이지 빌드
 
 golang과 같은 빌드가 필요한 이미지에서는 멀티스테이지 빌드를 이용해 빌드 환경과 프로덕션 환경을 다르게 가져갈 수 있다.
 
@@ -67,7 +67,7 @@ COPY --from=build /go/src/.../bin/start /usr/local/bin/
 CMD ["start"]
 ```
 
-## distroless 이미지
+### distroless 이미지
 
 - 운영체제 기능은 없이 언어에 중점을 둔 이미지이다.
 - [distroless](https://github.com/GoogleContainerTools/distroless) 에서 확인 가능하며 주로 구글이 배포한다.
@@ -86,7 +86,7 @@ WORKDIR /app
 CMD ["hello.js"]
 ```
 
-## chucksum 검증
+### chucksum 검증
 
 `ADD` 인스트럭션으로 추가 된 파일은 해시기반 체크섬 검증을 해주는 것이 좋다.
 
@@ -95,20 +95,20 @@ ADD library.zip .
 ADD library_SHA256 .
 ADD library_SHA256.sig .
 
-# Import PGP public key
+## Import PGP public key
 RUN curl https://.../pgp_keys.asc | gpg --import
 
-# 라이브러리 전자 서명 검증
+## 라이브러리 전자 서명 검증
 RUN gpg --verify library_SHA256.sig library_SHA256
 
-# Verify checksum
+## Verify checksum
 RUN cat library_SHA256 | grep linux_amd64 | sha256sum -cs
 RUN unzip libary.zip
 RUN mv library /usr/local/bin
-# 실행
+## 실행
 ```
 
-## dockerigonore
+### dockerigonore
 
 - Dockerfile 빌드 시에 따라 들어가지 않게 된다.
 - Dockerfile 과 같은 레벨 디렉토리에 있어야한다.
@@ -121,7 +121,7 @@ RUN mv library /usr/local/bin
 *.log
 ```
 
-## 이미지 테스트
+### 이미지 테스트
 
 빌드 후의 이미지 내부에 상태가 적절한지 테스트하기 위해 아래 두 가지 yaml 기반의 테스트 툴을 사용할 수 있다.
 
@@ -130,9 +130,9 @@ RUN mv library /usr/local/bin
 
 이 중 **goss**는 실제 포트 및 서비스가 서빙 중인지 확인이 가능해 더 유용할 것으로 보인다.
 
-## 이미지 보안
+### 이미지 보안
 
-### user
+#### user
 
 호스트의 리소스를 컨테이너에서 공유하는 Docker는 사용자 UID도 0으로 같이 공유되므로 같은 권한을 갖게 된다.
 이 문제를 방지하기 위해 `useradd` 로 어플리케이션 실행 유저를 만들어 주고 `USER` 인스트럭션을 사용해 실행을 해줘야한다.
@@ -149,17 +149,17 @@ USER gracefullight
 CMD ["go", "RUN", "/app/main.go"]
 ```
 
-### secret
+#### secret
 
 - [Vault](https://www.vaultproject.io/docs/install/)
 
-# dockerd 튜닝
+## dockerd 튜닝
 
 - max-concurrent-downloads: 기본값은 3이며, `docker image pull` 로 한 번에 다운로드 되는 이미지 스레드 수를 증가시켜준다.
 - max-concurrent-uploads: 기본값은 5이며, `docker image push` 시에 이미지 업로드 스레드 수를 증가시켜준다.
 - registry-mirrors: Docker hub의 미러 레지스트리를 만들어 트래픽 향상에 이점을 줄 수 있다.
 
-# private registry
+## private registry
 
 빠른 이미지 푸쉬/풀과 소스 때문이라도 private registry 는 필수적이다.
 docker 에서 제공하는 registry 이미지를 사용하면 된다.

@@ -8,9 +8,9 @@ date: 2020-08-07 22:45:42
 항상 `WeakMap`, `WeakSet`을 어떤 방식으로 쓸까 많이 고민되었다.
 참조가 없는 경우 메모리를 반환하는데에 이점이 있는데, 여러 활용방안이 있었다.
 
-# WeakMap
+## WeakMap
 
-## Cache
+### Cache
 
 ```js
 // 📁 cache.js
@@ -39,7 +39,7 @@ const result2 = process(obj);
 obj = null;
 ```
 
-## Sealer
+### Sealer
 
 값을 봉인하고 `box`를 반환해 `box` object 전체가 와야만 내부값을 알 수 있게 해준다.
 
@@ -60,9 +60,9 @@ function sealerFactory() {
 }
 ```
 
-# WeakSet
+## WeakSet
 
-## Circular references
+### Circular references
 
 ```js
 // Execute a callback on everything stored inside an object
@@ -96,7 +96,7 @@ foo.bar.baz = foo; // Circular reference!
 execRecursively((obj) => console.log(obj), foo);
 ```
 
-# 참조
+## 참조
 
 - [MDN WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
 - [The Modern JavaScript Tutorial - WeakMap](https://javascript.info/weakmap-weakset#use-case-caching)

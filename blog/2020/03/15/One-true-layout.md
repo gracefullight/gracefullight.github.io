@@ -5,14 +5,14 @@ tags: [css, layout, html]
 date: 2020-03-15 22:54:18
 ---
 
-# One true layout
+## One true layout
 
 Header, Navigation, Aside, Section, Footer 로 이루어진 레이아웃을 만들 시에
 `float` 을 사용해서 구성할 경우 틀어짐을 잡는 방법에 대한 내용이다.
 
 [원문](http://www.positioniseverything.net/articles/onetruelayout/equalheight)으로 보이는 링크에서는 **진정한 하나의 레이아웃**을 찾는 과정 중 하나이며 **Eqaul Height Columns - revisited**로 소개되고 있다.
 
-## 이슈
+### 이슈
 
 아래와 같은 레이아웃에는 `footer` 영역이 섹션에 붙어 올라온다.
 
@@ -68,9 +68,9 @@ Header, Navigation, Aside, Section, Footer 로 이루어진 레이아웃을 만�
 </body>
 ```
 
-## 해결방안
+### 해결방안
 
-### overflow: hidden
+#### overflow: hidden
 
 래퍼에 이 속성을 넣는 것으로 해결 된다.
 
@@ -92,7 +92,7 @@ body {
 }
 ```
 
-### clear: both
+#### clear: both
 
 또는 래퍼를 삭제하고 구획을 나누는 부분에 `sibling` 노드로 `clear: both` 속성을 주면 된다.
 

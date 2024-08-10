@@ -5,7 +5,7 @@ tags: [javascript, pwa, serviceworker]
 date: 2020-01-16 23:58:30
 ---
 
-# 앞서
+## 앞서
 
 서비스워커로 Navigation Request 나 Static Assets 에 대한 리소스 캐시는 쉽다.
 ([이전 포스팅](/2017/12/22/PWA-ServiceWorker-Web-Caching/) 참조)
@@ -13,7 +13,7 @@ date: 2020-01-16 23:58:30
 하지만 `POST Request` 에 대한 레퍼런스는 찾기 힘들어 결국 만들어버렸다.
 복잡한 로직이지만 Request Body 를 SHA1로 해싱해 키로 IndexedDB 에 저장하고 그 키가 맞으면 꺼내주는 방식이다.
 
-# 소스
+## 소스
 
 ```js
 // IndexedDB 는 Promisify 되어있지 않아서 라이브러리가 필요하다.
@@ -116,7 +116,7 @@ const postRequestFetchListener = (fetchEvent) => {
 self.addEventListener("fetch", postRequestFetchListener);
 ```
 
-# 여담
+## 여담
 
 - WorkBox 를 사용할 수 있다면 [CacheableResponse](https://developers.google.com/web/tools/workbox/modules/workbox-cacheable-response#caching_based_on_headers)와 CacheFirst 정책으로 단번에 처리 가능할 것이다.
 - 굳이 해시를 키로 사용하지 않아도 된다. RequestBody 의 Serialize 를 키로 써도 된다. (만들면서 crypto 라이브러리를 사용해보고 싶었을 뿐)
