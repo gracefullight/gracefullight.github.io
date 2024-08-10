@@ -226,16 +226,6 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "https://github.com/gracefullight",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://www.linkedin.com/in/gracefullight",
-          label: "LinkedIn",
-          position: "right",
-        },
-        {
           to: "/archive",
           label: "Archives",
         },
