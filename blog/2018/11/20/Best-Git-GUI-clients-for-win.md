@@ -10,7 +10,7 @@ Git 고수들은 CLI 만 사용한다지만
 
 그래서 [공식 GUI Clients](https://git-scm.com/download/gui/windows)에서 무료 Git 클라이언트를 파해쳐봤다.
 
-# 분석
+## 분석
 
 21세기 디자인이면서 커밋 그래프가 제공되고 git flow가 가능하며 쉬운 rebase 가 지원되는 클라이언트는 **[git kraken](https://www.gitkraken.com/)** 과 **[git fork](https://git-fork.com/)** 였다.
 
@@ -54,7 +54,7 @@ Git 고수들은 CLI 만 사용한다지만
 - RepoZ
   - 애드온 같은 느낌이다.
 
-## Git Kraken
+### Git Kraken
 
 - 느렸는데 최근 빨라졌다.
 - 근데 아직도 느리다. 일렉트론 기반이라 그런 것 같다.
@@ -64,7 +64,7 @@ Git 고수들은 CLI 만 사용한다지만
 - 검은색 테마가 가능하다.
 - non-commercial use 라 회사에서 못 쓴다.
 
-## Git Fork
+### Git Fork
 
 - 빠르고 직관적이다.
 - 그래프가 지원된다.
@@ -74,7 +74,7 @@ Git 고수들은 CLI 만 사용한다지만
 - 지속적인 버전 업데이트가 되고 있다.
 - 구글에서 git fork를 검색하면 정말 fork 하는 방법만 나오고 검색이 되지 않는다.
 
-# 결론
+## 결론
 
 **[GitFork](https://git-fork.com/)** 를 쓰자.
 첫 실행 시에 `git config` 설정 UI 가 뜨는데 제대로 입력해줘야한다.

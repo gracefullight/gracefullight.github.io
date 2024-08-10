@@ -16,24 +16,24 @@ date: 2018-11-20 20:42:17
 
 클라이언트에서 리소스를 확인할 수 있는 방법이 있을까?
 
-# 삽질
+## 삽질
 
-## ajax
+### ajax
 
 - 당연하지만 크로스도메인 XHR 은 CORS 가 없는 이상 막힌다.
 - HEAD 메소드도 똑같다.
 - fetch 도 똑같다.
 
-## script
+### script
 
 - script tag 를 DOM 에 렌더링하는 것이므로 XSS 공격이 가능하다.
 - 스크립트 태그에 한해서 onLoad 와 onError 로 체크가 가능하다.
 
-## image
+### image
 
 - 이미지 태그에 한해서 onLoad 와 onError 로 체크가 가능하다.
 
-## link
+### link
 
 - css 일 경우 onLoad 와 onError 로 체크가 가능하다.
 - DOM 에 렌더링하는 것이므로 UI가 틀어질 수 있다.
@@ -60,23 +60,23 @@ link.onload = (loadEvent) => {
 };
 ```
 
-## video
+### video
 
 - 없는 영상에 대해 onError 가 동작하지 않는다.
 
-## 기타
+### 기타
 
 - embed 나 iframe 은 _X-Frame-Options_ 헤더에 차단되거나 XSS 공격이 가능하다.
 - onError 이벤트의 일관성이 없다.
 
-# 해결
+## 해결
 
 삽질의 결과로 js (script), css (link), image (img) 에 한해서 리소스 체크가 가능한 걸 확인했다.
 하지만 js 와 css 의 렌더링으로 인해 페이지가 틀어지는 걸 어떻게 방지할 수 있을까?
 
 불현듯 샌드박스란 단어가 떠올랐다.
 
-## sandbox
+### sandbox
 
 보이지 않는 샌드박스 프레임을 만들고, 거기에서 위험한 일을 하면 된다.
 

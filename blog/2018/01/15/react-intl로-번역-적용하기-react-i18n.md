@@ -10,13 +10,13 @@ date: 2018-01-15 16:21:41
 
 step by step으로 간단하게 적용해보자
 
-# 설치
+## 설치
 
 ```bash
 npm install react-intl
 ```
 
-# 번역 데이터 생성
+## 번역 데이터 생성
 
 편의상 root에 **locale.js**로 만들었다. 서비스시엔 locale 폴더에 언어별로 파일을 나눠 관리하자.
 
@@ -34,7 +34,7 @@ export default {
 };
 ```
 
-# 연동
+## 연동
 
 ```js title="index.js"
 import { IntlProvider, addLocaleData } from "react-intl";
@@ -59,7 +59,7 @@ ReactDOM.render(
 );
 ```
 
-# 사용
+## 사용
 
 ```js
 import { FormattedMessage } from "react-intl";
@@ -68,7 +68,7 @@ import { FormattedMessage } from "react-intl";
 // 저장되어 있는 언어 값에 따라 Hello, 안녕하세요, こんにちは 중 하나가 보여진다
 ```
 
-## inject
+### inject
 
 placeholder 등에서 텍스트만 필요할 때 `component`를 사용하지않고 다음과 같이 intl을 주입해서 사용한다.
 
@@ -97,7 +97,7 @@ class SignupForm extends Component {
 export default injectIntl(SignupForm);
 ```
 
-## child
+### child
 
 HOC를 사용하지 않을 경우 `FormattedMessage`의 child로 번역된 문구를 받으면 된다
 
@@ -107,7 +107,7 @@ HOC를 사용하지 않을 경우 `FormattedMessage`의 child로 번역된 문�
 </FormattedMessage>
 ```
 
-## dynamic
+### dynamic
 
 Hello, `{Gracefullight}` 처럼 동적으로 문구가 변해야할 경우`values`prop을 활용하자
 먼저,`locale.js`에서 변수가 될 부분을 {}로 감싸준다
@@ -137,6 +137,6 @@ export default {
 />
 ```
 
-# 여담
+## 여담
 
 mo, po 파일 건들던 시간들이 너무 아깝다

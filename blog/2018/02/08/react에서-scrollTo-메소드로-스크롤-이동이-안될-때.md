@@ -17,7 +17,7 @@ date: 2018-02-08 17:16:14
 잠깐만 component 라는게 하나의 element 안에서 쇼를 하는 거 잖아.
 그럼 element 안에서 스크롤을 이동하면?
 
-# 해결
+## 해결
 
 ```jsx title="Footer.js"
 class Footer extends Component {
@@ -39,6 +39,6 @@ class Footer extends Component {
 
 index.js 에서 ReactDOM 을 렌더링해주는 element(나같은 경우엔 **div#root**)를 찾아서 그 엘레먼트의 스크롤을 올려주자
 
-# 여담
+## 여담
 
 책에서 봤는데 뇌가 쉴 때 가장 좋은 아이디어가 나온다고 했는데, 사실인 것 같다

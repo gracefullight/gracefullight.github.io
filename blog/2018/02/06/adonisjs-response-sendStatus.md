@@ -7,7 +7,7 @@ date: 2018-02-06 10:02:51
 
 `express`에 있는 sendStatus 기능을 활용하기 위해 **start/hooks.js**에도 다음 로직을 추가하자
 
-# 소스
+## 소스
 
 ```js title="start/hooks.js"
 const { hooks } = require("@adonisjs/ignitor");

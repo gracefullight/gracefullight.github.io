@@ -21,10 +21,10 @@ react 로 form 을 만들어 사용하는 일은 생각보다 많은 걸 해야�
 > - [redux](https://redux.js.org/), [react-redux](https://github.com/reactjs/react-redux)
 > - [HOC](https://reactjs.org/docs/higher-order-components.html)
 
-# 설치
+## 설치
 
 ```bash
-$ yarn add redux-form
+yarn add redux-form
 ```
 
 redux-form 의 리듀서를 연결시켜줘야한다
@@ -40,7 +40,7 @@ const rootReducer = combineReducers({
 export default rootRecuder;
 ```
 
-# 사용
+## 사용
 
 redux-form component 와 redux-form 이 들어갈 compoent 를 만들어야한다
 편의상 **Login component**와 **LoginForm component**라고 하자
@@ -120,7 +120,7 @@ input tag 대신 Field Component 의 component 속성으로 input 을 만들어�
 오 꽤 나이스하다
 하지만 필드만 덩그라니 있는 경우는 없다 더 업그레이드 해보자
 
-## 스타일이 필요한 필드
+### 스타일이 필요한 필드
 
 보통의 필드들은 `label`이 들어가 있고, `selectBox`, `checkBox`의 경우엔 스타일을 주기위해 대부분 외부 라이브러리를 쓴다
 이럴 때 Field Component 의 **component** 속성에 원하는 모양을 만들어서 넣어주면 된다
@@ -202,7 +202,7 @@ const renderInputField = (field) => {
 
 이제 _type, label, placeholder 는 field.input prop 에 없어서 직접 넣어줬고, meta 는 이미 정의되어 있었구나_ 란 renderInputField 함수의 props 가 보일 것이고 Field Component 의 구조를 마음대로 변경할 수 있게 되었다
 
-## 동적으로 value 를 바꿔야할 때
+### 동적으로 value 를 바꿔야할 때
 
 checkbox, select 의 경우엔 스타일이 들어가면 element 의 onClick 를 잡아서 hidden field 의 데이터를 바꿔줘야한다
 checkbox 전체 영역을 클릭할 때마다 기존의 값을 toggle 해주는 component 를 만들 수 있다
@@ -233,7 +233,7 @@ changeInputValue = (targetInputName, val) => {
 };
 ```
 
-## 초기값
+### 초기값
 
 로그인 폼에는 **아이디 저장** 기능을 붙히면 폼이 초기화될 때 그 값을 가져와야한다
 
@@ -286,10 +286,10 @@ export default reduxForm({
 `localStorage.userId`에 값이 들어있다면 그 값으로 id Field 가 초기화 된다
 컴포넌트가 로딩되기 전에 값이 정해져있다면 `enableReinitialize` 옵션이 없어도 되지만, 수정 폼처럼 기존 데이터 fetch 후 또는 componentDidMount 후에 값을 가져온다면 해당 옵션값을 `true`로 넣어줘야한다
 
-## validation
+### validation
 
 여기까지 이해했다면 validation 은 큰 어려움 없이 [문서](https://redux-form.com/7.2.3/examples/asyncchangevalidation/)의 예제소스를 참조하면 붙힐 수 있다
 
-# 여담
+## 여담
 
 react 라이브러리들은 읽은 뒤 바로 적용하긴 힘들다고 생각한다 매번 삽질이 필요한듯
