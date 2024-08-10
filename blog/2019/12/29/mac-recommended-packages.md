@@ -7,15 +7,15 @@ date: 2019-12-29 13:57:47
 
 여러 맥 기기의 환경을 구성하다보니 적어 놓는 게 나을 듯 싶었다.
 
-# brew
+## brew
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## formulae
+### formulae
 
-### main formulae
+#### main formulae
 
 ```bash
 brew install azure-cli \
@@ -44,7 +44,7 @@ brew install azure-cli \
 - tree
 - wget
 
-### sub formulae
+#### sub formulae
 
 > [docker for mac](https://docs.docker.com/docker-for-mac/install/)
 
@@ -78,7 +78,7 @@ brew install git \
 - zsh-autosuggestions
 - zsh-syntax-highlighting
 
-## cask
+### cask
 
 ```bash
 brew tap homebrew/cask-fonts
@@ -153,7 +153,7 @@ brew cask install adguard \
 - zoom: 줌
 - zulu: 자바
 
-# App store
+## App store
 
 ```bash
 mas install 497799835 \
@@ -174,7 +174,7 @@ mas install 497799835 \
 - shazam: **897118787** 음악 찾기
 - unicorn https: **1475628500** Encrypt DNS query
 
-# Bunblefile
+## Bunblefile
 
 > [bundle](https://github.com/Homebrew/homebrew-bundle)
 
@@ -226,7 +226,7 @@ cask "iterm2" # 터미널
 cask "jetbrains-toolbox"
 cask "keepingyouawake" # 잠자기 해제
 cask "keka" # 압축 프로그램
-# cask "logitech-options" # 로지텍 사용자만
+## cask "logitech-options" # 로지텍 사용자만
 cask "macs-fan-control" # 팬 조절
 cask "microsoft-edge" # edge
 cask "monitorcontrol" # 외장 모니터 조절
@@ -236,14 +236,14 @@ cask "rectangle" # 창 조절
 cask "sequel-pro" # mysql gui
 cask "slack" # slack
 cask "telegram-desktop" # telegram
-# cask "udeler" # udemy downloader
+## cask "udeler" # udemy downloader
 cask "visual-studio-code" # vscode
-# cask "yt-music" # youtube music
+## cask "yt-music" # youtube music
 cask "zoom" # zoom
 cask "zulu" # zulu jdk
 
-# mas "Bitwarden", id: 1352778147
-# mas "Dropover", id: 1355679052
+## mas "Bitwarden", id: 1352778147
+## mas "Dropover", id: 1355679052
 mas "Microsoft Remote Desktop", id: 1295203466 # remote desktop
 mas "Polyglot", id: 1471801525 # translator
 mas "Shazam", id: 897118787 # music finder

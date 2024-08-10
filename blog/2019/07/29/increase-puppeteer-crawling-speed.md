@@ -7,7 +7,7 @@ date: 2019-07-29 21:44:24
 
 페이지를 가져온 뒤 css, image, font를 차단하면 더 빠른 DOM 액세스가 가능하다.
 
-# 리소스 차단
+## 리소스 차단
 
 ```ts
 // @types/puppeteer

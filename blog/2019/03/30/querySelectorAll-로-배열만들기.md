@@ -7,7 +7,7 @@ date: 2019-03-30 22:11:05
 
 `document.querySelectorAll('.class')` 와 같이 엘레먼트를 받았는데, `for`문을 돌리면 오류가 발생한다.
 
-# 해결
+## 해결
 
 ```js
 // 이 방법이나
@@ -19,7 +19,7 @@ classes = [...document.querySelectorAll(".class")];
 classes = Array.prototype.slice.call(document.querySelectorAll(".class"));
 ```
 
-# 여담
+## 여담
 
 puppeteer 로 크롤링할 때 항상 헷갈린다.
 삽질로 찾았는데 stackoverflow 에 정리된 게 있는 듯..

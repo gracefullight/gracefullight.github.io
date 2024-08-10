@@ -5,9 +5,9 @@ tags: [python]
 date: 2019-12-15 16:52:01
 ---
 
-# The Basics
+## The Basics
 
-## Types
+### Types
 
 - 아무 것도 없는 타입은 `None`
 - 주석
@@ -30,7 +30,7 @@ date: 2019-12-15 16:52:01
 - list
   - merge는 더하기로 가능 `[] + []`
 
-## Operaters
+### Operaters
 
 - if
   - 값 체킹에는 `0.0` `''` `[]` `()` `{}` `set()` 등 모든 빈 값이 `false` 로 떨어진다.
@@ -79,7 +79,7 @@ date: 2019-12-15 16:52:01
   - `raise IndexError('test error')` 처럼 raise 로 에러 발생 가능
   - 기본에러는 exception hierarchy 참조
 
-## Package
+### Package
 
 - `__init__.py` 가 있어야한다.
 - ~~import package.utils~~ 또는 `from package import utils` 해서 `utils.func` 롤 호출
@@ -93,13 +93,13 @@ date: 2019-12-15 16:52:01
 - import 라이브러리 순서는 위에서부터 **표준, pip, 로컬패키지, 로컬파일**
 - `if __name__ == '__main__': main()` 은 **entrypoint 스크립트**에서 사용되는 패턴이다.
 
-## Class
+### Class
 
 - 생성자 `__init__(self):`, `Instance()` 로 new 없이 생성
 - 소멸자 `__del__(self):`, `del instance` 로 삭제
 - class method 의 첫 인자로는 self를 받아야 this처럼 사용이 가능하다. 두 번째 부터 파라미터를 받을 수 있다.
 
-### protected
+#### protected
 
 - proteced 변수는 `_var` 처럼 underscore 하나를 넣는다.
 - `@property`, `@property_name.setter` 데코레이터를 통해 **getter/setter** 처리가 가능하다.
@@ -118,17 +118,17 @@ intance = Instance()
 instance.foo = bar
 ```
 
-### private
+#### private
 
 - private 변수는 `self.__foo` 로 underscore 두 개를 넣는다.
 - 인스턴스 밖에서 접근이 불가능하다.
 
-### class variable
+#### class variable
 
 - 클래스 변수는 모든 오브젝트 초기화시에 공유되므로 list, dict.. 등을 사용하지 않아야한다.
 - 상수처럼 쓰는게 좋을 듯
 
-### class method
+#### class method
 
 - class 메소드는 `@classmethod` 데코레이터로 가능하다.
 
@@ -142,11 +142,11 @@ class Instance(object):
 Instance.foo()
 ```
 
-### static method
+#### static method
 
 - static 메소드는 `@staticmethod` 데코레이터로 정의할 수 있으나 잘 사용되지는 않는다.
 
-### 상속
+#### 상속
 
 ```python
 class Parent(object):
@@ -161,7 +161,7 @@ class Child(Parent):
 - 다중상속 하지말자
 - `class Twins(Parent, Parent2)` 로 되지만 메소드명이 같을 경우 왼쪽에 선언된 것만 실행된다.
 
-### 추상
+#### 추상
 
 ```python
 import abc
@@ -176,7 +176,7 @@ class Child(Parent):
         print('foo')
 ```
 
-### 특수 메소드
+#### 특수 메소드
 
 - 많지만 `__str__` 이 제일 많이 쓴다. `toString()` 과 같다.
 - `__len__` (len(instance))
@@ -185,7 +185,7 @@ class Child(Parent):
 - 등등..
 - 클래스 기본기능을 해치는 개인적인 느낌
 
-# 여담
+## 여담
 
 - MSA의 시대에 살고 있는 어플리케이션 레이어의 개발자는 어쩔 수 없이 폴리글랏 프로그래머가 되기 마련이다.
 - 하나의 언어에 능통하면 다른 언어로 넘어가는 데에는 익숙함의 문제지만,

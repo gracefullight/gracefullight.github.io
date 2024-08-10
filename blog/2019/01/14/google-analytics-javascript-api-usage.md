@@ -5,15 +5,15 @@ tags: [javascript, ga]
 date: 2019-01-14 21:42:16
 ---
 
-# GA Client JS API
+## GA Client JS API
 
 [문서](https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/web-js)가 있는데 생각보다 사용하기가 어렵다. 하나하나 시작해보자.
 
-## 인증 토큰 발급
+### 인증 토큰 발급
 
 [Cridentials page](https://console.developers.google.com/apis/credentials)에서 Create credentials 를 눌러 OAuth Client ID 를 발급받는다.
 
-## 예제
+### 예제
 
 받은 Client ID 를 메타태그에 넣어준다.
 
@@ -75,6 +75,6 @@ date: 2019-01-14 21:42:16
 
 ```
 
-## 파라미터 확인
+### 파라미터 확인
 
 문서의 내용을 확인하기 보다 [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/)에서 테스트 후에 그 값들을 Body 로 옮겨 적는 게 확인하기 쉽다.

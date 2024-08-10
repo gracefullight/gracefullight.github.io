@@ -5,7 +5,7 @@ tags: [k8s, docker]
 date: 2019-12-27 20:43:20
 ---
 
-# Deployment
+## Deployment
 
 Deployment 의 파드 교체 전략에는 **RollingUpdate** 와 **Recreate** 가 있다.
 기본 값은 **RollingUpdate** 이며 간단한 설정이 적용된 디플로이먼트는 아래와 같을 것이다.
@@ -41,9 +41,9 @@ spec:
 
 여기서 롤링업데이트 속성을 좀 더 자세히 알아보자.
 
-## RollingUpdate
+### RollingUpdate
 
-### maxUnavailable
+#### maxUnavailable
 
 - 롤링 업데이트 중 동시에 삭제할 수 있는 파드의 최대 갯수
 - 기본 값은 replicas의 25% 이다.
@@ -54,7 +54,7 @@ spec:
   - 하지만 롤링업데이트 중에 남아 있는 파드에 요청 수가 몰릴 수 있다.
   - 따라서 `1`로 설정해 파드를 하나씩 교체하는 것이 안전할 수 있다.
 
-### maxSurge
+#### maxSurge
 
 - 롤링 업데이트 중 동시에 생성하는 파드 갯수
 - 기본 값은 replicas의 25% 이다.
@@ -62,22 +62,22 @@ spec:
 - 이 값을 높게 설정하면 필요한 파드를 빨리 생성하므로 파드 교체 시간이 단축된다.
   - 하지만 필요한 시스템 자원이 급증할 수 있다.
 
-## Probe
+### Probe
 
 세부 설정은 [Docs](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes)를 참조하자
 
-### livenessProbe
+#### livenessProbe
 
 - 애플리케이션 헬스 체크 기능
 - 애플리케이션이 의존하는 컨테이너 안의 파일의 존재여부 확인
 - Unhealthy 상태의 경우 파드 재시작
 
-### readinessProbe
+#### readinessProbe
 
 - 컨테이너 외부에서 HTTP 등의 트래픽을 발생시켜 처리할 수 있는 상태인지 확인
 - `tcpSocket`으로 포트 지정도 가능하다.
 
-## 응답 중인 파드 교체
+### 응답 중인 파드 교체
 
 응답 중인 파드가 교체되는 경우 `SIGTERM` 신호를 보내 파드가 삭제되는데,
 `Graceful Shutdown` 상태로 만들기 위해서 종료 처리가 오래 걸리는 파드엔 **terminationGracePeriodSeconds** 를 설정해주는 것이 좋다.
@@ -107,7 +107,7 @@ spec:
             command: ["/usr/sbin/nginx", "-s", "quit"]
 ```
 
-## 파드 1:1 교체
+### 파드 1:1 교체
 
 그렇다면 `replicas: 1`인 파드를 1:1 교체 시에는 어떤 전략을 가져가야할까
 답은 아래와 같다.
@@ -139,7 +139,7 @@ readinessProbe:
 5초 후에 5초마다 `/ping` 을 보내 성공여부를 확인한다.
 타임아웃은 3초며 3번까지 재시도한다.
 
-## Blue/Green
+### Blue/Green
 
 - 디플로이먼트를 2개 만들고, 서비스의 selector 값을 라벨에 따라 변경하자.
 - 서비스메시를 연동하면 카나리아 배포 방식도 가능하다.

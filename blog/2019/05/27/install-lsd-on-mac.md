@@ -5,19 +5,19 @@ tags: [mac]
 date: 2019-05-27 23:55:47
 ---
 
-# lsd
+## lsd
 
 ![ls -al](https://i.imgur.com/ieTdKPd.png)
 
 [LSDeluxe](https://github.com/Peltoche/lsd) 커맨드로 `ls` 명령어를 예쁘게 변경해보자.
 
-## 설치
+### 설치
 
 ```bash
-# 설치
+## 설치
 $ brew install lsd
 
-# alias 설정
+## alias 설정
 $ vi ~/.zshrc
 
 alias ls='lsd'
@@ -28,10 +28,10 @@ $ source ~/.zshrc
 
 설치는 했지만 아이콘이 깨져서 보일 것이다.
 
-## 글꼴 설정
+### 글꼴 설정
 
 ```bash
-# 글꼴 설치
+## 글꼴 설치
 $ brew tap homebrew/cask-fonts
 $ brew cask install font-hack-nerd-font
 ```

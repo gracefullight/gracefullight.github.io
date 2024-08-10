@@ -5,7 +5,7 @@ tags: [k8s, helm, docker]
 date: 2019-10-27 17:10:13
 ---
 
-# Helm
+## Helm
 
 > Helm is a tool for manaing Kubernetes charts.
 > Charts are packages of pre-configured Kubernetes resources.
@@ -15,32 +15,32 @@ date: 2019-10-27 17:10:13
 - 같은 어플레케이션을 여러 환경에 배포시 환경 변수, 도메인 등의 manifest 파일을 차트를 통해 관리
 - 차트를 중심으로 하는 쿠버네티스 개발 종합 관리 도구
 
-# 설치
+## 설치
 
 ```bash
-# 설치
+## 설치
 brew install kubernetes-helm
 
-# 초기화
+## 초기화
 helm init
 
-# tiller 파드 확인
+## tiller 파드 확인
 kubectl -n kube-system get service,deployment,pod --selector app=helm
 
-# 버전 확인
+## 버전 확인
 helm version
 ```
 
-# 구성
+## 구성
 
 - cli와 쿠버네티스 클러스터에 설치되는 서버인 tiller(틸러)로 구성
 
-## chart
+### chart
 
 - 쿠버네티스는 service, deployment, ingress 등 리소스를 생성하고 manifest 파일을 적용하는 방식으로 어플리케이션을 배포한다. 이 manifest 파일을 생성하는 템플릿을 여러 개 패키징한 것
 - helm repository 에 tgz 파일로 저장
 
-### chart 구성
+#### chart 구성
 
 ```bash
 chart-example
@@ -55,7 +55,7 @@ chart-example
 
 차트 설치시 `values.yaml` 에 override 할 값을 정의한 `yaml` 파일을 만들면 된다.
 
-## repository
+### repository
 
 - local: 헬름 클라이언트가 설치된 로컬 리포, 로컬에서 생성한 패키지가 존재
 - stable: stable charts repo, 기본값이며 [helm/charts](https://github.com/helm/charts/tree/master/stable) 차트 사용 가능
@@ -63,9 +63,9 @@ chart-example
   - `helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com/`
 - `helm search` 로 차트 검색 가능
 
-# 명령어
+## 명령어
 
-## init
+### init
 
 보통은 `helm init`
 실서버에서는 `helm init --service-account tiller --node-selectors system --history-max 10`
@@ -76,11 +76,11 @@ chart-example
 - --upgrade: 틸러 업그레이드
 - --history-max: 리소스 하나당 유지할 최대 히스토리 수
 
-## create
+### create
 
 `helm create 차트명`
 
-## package
+### package
 
 `helm package 차트명`
 차트를 압축파일로 패키징
@@ -88,20 +88,20 @@ chart-example
 - --version: 차트 버전 지정
   - 없을 경우 차트의 버전을 따른다.
 
-## search
+### search
 
 `helm search 검색어`
 
 - -r, --regexp: 검색어를 정규표현식으로 사용
 - -l, --versions: 버전 목록도 출력
 
-## fetch
+### fetch
 
 `helm fetch 차트경로`
 
 - --version: 특정 버전 지정
 
-## serve
+### serve
 
 `helm serve`
 로컬 레포지토리로 사용할 웹 서버 시작
@@ -110,7 +110,7 @@ chart-example
   - 기본값은 127.0.0.1:8879
 - --repo-path: 차트 레포지토리가 될 로컬 디렉토리
 
-## install
+### install
 
 `helm install 차트명`
 차트로 애플리케이션 설치
@@ -130,7 +130,7 @@ helm install stable/redis --version 3.6.0 \
 - -f, --values: yaml 파일 경로 (다수 가능)
 - --version: 차트 버전 지정
 
-## list
+### list
 
 `helm list`
 `helm list --namespace kube-system`
@@ -138,14 +138,14 @@ helm install stable/redis --version 3.6.0 \
 - --deleted: 삭제된 릴리즈 포함
 - --namespace: 해당 네임스페이스만 확인
 
-## get
+### get
 
 `helm get 릴리즈명`
 설치된 릴리스 상ㅇ세 정보를 yaml 으로 출력
 
 - --revision: 릴리즈 리비전 확인
 
-## delete
+### delete
 
 `helm delete 릴리즈명`
 

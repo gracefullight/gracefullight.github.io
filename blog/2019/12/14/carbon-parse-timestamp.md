@@ -5,7 +5,7 @@ tags: [php, carbon, timezone]
 date: 2019-12-14 00:05:56
 ---
 
-# Timestamp
+## Timestamp
 
 `Carbon`으로 타임스탬프를 파싱하는 데에는 `createFromTimestamp` 메소드가 있다.
 
@@ -31,7 +31,7 @@ echo $date->format('U = Y-m-d H:i:s') . "\n";
 ?>
 ```
 
-# 참조
+## 참조
 
 - timestamp 는 UTC 기준이며 (1970년부터의 차이) timezone 을 정의할 수 없다.
 - [php man: datetime.settimestamp](https://www.php.net/manual/en/datetime.settimestamp.php)

@@ -9,7 +9,7 @@ triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물
 
 레거시 언어들에는 **3des** 암호화된 로직이 많은데, 포팅하면서 개발해야될 필요성이 생겼다.
 
-# 암호화
+## 암호화
 
 - nodejs 의 암호화 패키지는 crypto 안에 들어있다.
 - `crypto.getCiphers();` 메소드로 사용할 수 있는 알고리즘을 확인할 수 있다.
@@ -17,7 +17,7 @@ triple des 알고리즘으로 암호화하는 일은 요새는 드문데, 드물
 - 3des 알고리즘은 `des-ede3` 로 시작한다.
 - 키는 24bytes 이며, iv 는 8bytes 다.
 
-# 소스
+## 소스
 
 ```js
 import crypto from "node:crypto";
@@ -87,7 +87,7 @@ let encrypted = Buffer.concat([
 encrypted = encrypted.toString("hex");
 ```
 
-# 사용법
+## 사용법
 
 ```js
 const TripleDes = require("./TripleDes");
@@ -99,6 +99,6 @@ const encrypted = tripleDes.encrypt("yummy");
 const decrypted = tripleDes.decrypt(encrypted);
 ```
 
-# 참조
+## 참조
 
 - [nodejs.crypto](https://nodejs.org/api/crypto.html)

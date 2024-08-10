@@ -5,7 +5,7 @@ tags: [php]
 date: 2019-04-12 19:42:34
 ---
 
-# 앞서
+## 앞서
 
 보통 디렉토리 순회를 한다고하면 무슨 메소드를 쓸까?
 
@@ -20,9 +20,9 @@ scandir('dir');
 
 위 방법은 간단하지만 `/home/gracefullight/tmp/**/*.bak` 와 같은 중첩된 디렉토리 파일의 데이터를 가져오려면 엄청난 `if/else` 처리가 들어갈 것이다.
 
-# RecursiveIterator
+## RecursiveIterator
 
-## RecursiveDirectoryIterator
+### RecursiveDirectoryIterator
 
 오토로딩을 하기 위해 필수로 들어가있는 [Standard PHP Library](https://www.php.net/manual/en/book.spl.php)엔 파일 순회에 사용할 수 있는 이터레이터 클래스가 들어가 있다.
 
@@ -41,7 +41,7 @@ foreach ($iterator as $file) {
 
 `$file`은 [SplFileInfo](https://www.php.net/manual/en/class.splfileinfo.php) 이다.
 
-## RecursiveFilterIterator
+### RecursiveFilterIterator
 
 위의 `foreach` 문 안에서 조건을 줘서 필터링할 수 있지만 다른 깔끔한 방법이 있다.
 
@@ -79,7 +79,7 @@ $iterator = new RecursiveIteratorIterator(
 );
 ```
 
-## RecursiveCallbackFilterIterator
+### RecursiveCallbackFilterIterator
 
 콜백으로 만들어 더 예쁘게 짤 수 있다.
 
@@ -105,6 +105,6 @@ $textFilterIterator = new RecursiveCallbackFilterIterator(
 $iterator = new RecursiveIteratorIterator($textFilterIterator);
 ```
 
-# 여담
+## 여담
 
 쓸 수 있다면 [symfony/finder](https://packagist.org/packages/symfony/finder) 쓰자.

@@ -5,7 +5,7 @@ tags: [javascript, typescript, nodejs, json]
 date: 2019-11-26 21:39:39
 ---
 
-# TS5071
+## TS5071
 
 node 에서 즐겨쓰는 `package.json` import 방법은 아래와 같다.
 
@@ -29,7 +29,7 @@ console.log(packageJson.version);
 
 또는 `tsc` 실행시에 `--esModuleInterop`, `--resolveJsonModule` 옵션을 추가해 빌드해줘야한다.
 
-# 참조
+## 참조
 
-- https://github.com/microsoft/TypeScript/issues/26224
-- https://github.com/microsoft/TypeScript/pull/26825/files
+- <https://github.com/microsoft/TypeScript/issues/26224>
+- <https://github.com/microsoft/TypeScript/pull/26825/files>
