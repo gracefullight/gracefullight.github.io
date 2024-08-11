@@ -265,6 +265,19 @@ const config: Config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.vsDark,
+      // ? https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9
+      additionalLanguages: [
+        "bash",
+        "cs",
+        "diff",
+        "dockerfile",
+        "html",
+        "http",
+        "ini",
+        "json",
+        "php",
+        "scss",
+      ],
     },
   } satisfies Preset.ThemeConfig,
 };
