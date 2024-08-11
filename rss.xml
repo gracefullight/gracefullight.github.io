@@ -4,10 +4,34 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 11 Aug 2024 01:22:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Aug 2024 01:34:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[독립표본 T검정, 대응표본 T검정]]></title>
+            <link>https://gracefullight.dev/pe/algo/independent-and-paired-t-test/</link>
+            <guid>https://gracefullight.dev/pe/algo/independent-and-paired-t-test/</guid>
+            <pubDate>Sun, 11 Aug 2024 01:34:17 GMT</pubDate>
+            <description><![CDATA[Independent and Paired t-test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="t검정-개념">T검정 개념<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#t%EA%B2%80%EC%A0%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="T검정 개념에 대한 직접 링크" title="T검정 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>두 집단 이하의 평균을 비교하여 차이가 있는지 검증하는 통계적 방법으로 독립표본 T검정과 대응표본 T검정으로 구분</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-비교-적용사례">독립표본 T검정, 대응표본 T검정 비교, 적용사례<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 비교, 적용사례에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 비교, 적용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-비교">독립표본 T검정, 대응표본 T검정 비교<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 비교에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 비교에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>독립표본 T검정</th><th>대응표본 T검정</th></tr></thead><tbody><tr><td>개념</td><td>두 독립된 집단의 평균 비교</td><td>동일한 집단의 두 시점 비교</td></tr><tr><td>표본</td><td>독립적인 두 집단</td><td>동일한 집단 반복</td></tr><tr><td>가정</td><td>두 그룹 모집단이 정규분포를 따르고, 분산은 동일</td><td>두 시점 간 차이가 정규분포를 따름</td></tr><tr><td>검정통계량</td><td>두 그룹의 평균차이를 표준오차로 나눠 T값 계산</td><td>두 시점의 차이를 표준 오차로 나눠 T값 계산</td></tr><tr><td>자유도</td><td><code>n1 + n2 - 2</code></td><td><code>n - 1</code></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-적용사례">독립표본 T검정, 대응표본 T검정 적용사례<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 적용사례에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 적용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>기법</th><th>사례</th></tr></thead><tbody><tr><td>두 개의 독립된 집단 비교</td><td>독립표본 T검정</td><td>남, 여 평균 체지방 비교</td></tr><tr><td>동일 집단의 두 시점 비교</td><td>대응표본 T검정</td><td>같은 학생의 기말고사 전/후 성적 비교</td></tr><tr><td>같은 집단의 두 조건 비교</td><td>대응표본 T검정</td><td>동일 환자의 약물치료 전/후 체중 비교</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="t검정시-고려사항">T검정시 고려사항<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#t%EA%B2%80%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="T검정시 고려사항에 대한 직접 링크" title="T검정시 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>세 개 이상의 독립된 집단 간의 평균 비교시 ANOVA 기법 활용</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[머신러닝, 딥러닝]]></title>
             <link>https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/</link>
@@ -257,51 +281,6 @@
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="csap-인증-고려사항">CSAP 인증 고려사항<a href="https://gracefullight.dev/pe/conv/types-of-cloud-services/#csap-%EC%9D%B8%EC%A6%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="CSAP 인증 고려사항에 대한 직접 링크" title="CSAP 인증 고려사항에 대한 직접 링크">​</a></h2>
 <ul>
 <li>과한 인증비용 대비 인증 사용 범위가 적으므로, 현실적인 대응 방안 마련 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[메타버스 윤리원칙]]></title>
-            <link>https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/</link>
-            <guid>https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/</guid>
-            <pubDate>Tue, 30 Jul 2024 11:42:46 GMT</pubDate>
-            <description><![CDATA[Ethics Guidelines for Metaverse]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리원칙-개념">메타버스 윤리원칙 개념<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC%EC%9B%90%EC%B9%99-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="메타버스 윤리원칙 개념에 대한 직접 링크" title="메타버스 윤리원칙 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>메타버스를 개발, 운영하는 과정에서 모든 사회 구성원이 메타버스 내 윤리문제를 사전 인식해 자발적 정화노력에 활용할 수 있는 가이드라인</li>
-<li>안전하고 신뢰할 수 있는 메타버스 환경 조성을 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리원칙-구성도-구성요소-보완점">메타버스 윤리원칙 구성도, 구성요소, 보완점<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC%EC%9B%90%EC%B9%99-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%99%84%EC%A0%90" class="hash-link" aria-label="메타버스 윤리원칙 구성도, 구성요소, 보완점에 대한 직접 링크" title="메타버스 윤리원칙 구성도, 구성요소, 보완점에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리원칙-구성도">메타버스 윤리원칙 구성도<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC%EC%9B%90%EC%B9%99-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="메타버스 윤리원칙 구성도에 대한 직접 링크" title="메타버스 윤리원칙 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>3대 지향점, 8대 실천 원칙 제시</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리원칙-구성요소">메타버스 윤리원칙 구성요소<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC%EC%9B%90%EC%B9%99-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="메타버스 윤리원칙 구성요소에 대한 직접 링크" title="메타버스 윤리원칙 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>원칙</th><th>설명</th></tr></thead><tbody><tr><td>온전한 자아</td><td>진정성</td><td>자아 실현을 위한 노력</td></tr><tr><td>-</td><td>자율성</td><td>능동적, 자발적 참여</td></tr><tr><td>지속 가능한 번영</td><td>호혜성</td><td>협력적 상호작용</td></tr><tr><td>-</td><td>사생활존중</td><td>사적 영역 존중</td></tr><tr><td>-</td><td>공정성</td><td>차별 없는 기회</td></tr><tr><td>안전한 경험</td><td>개인정보보호</td><td>정보 주체 권리 보장</td></tr><tr><td>-</td><td>포용성</td><td>다양상 존중, 접근성 마련</td></tr><tr><td>-</td><td>책임성</td><td>미래 세대를 위한 노력</td></tr></tbody></table>
-<ul>
-<li>메타버스 생태계에 참여하는 모두의 협력과 책임 필요</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리원칙-보완점">메타버스 윤리원칙 보완점<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC%EC%9B%90%EC%B9%99-%EB%B3%B4%EC%99%84%EC%A0%90" class="hash-link" aria-label="메타버스 윤리원칙 보완점에 대한 직접 링크" title="메타버스 윤리원칙 보완점에 대한 직접 링크">​</a></h3>
-<ul>
-<li>메타버스 내 창작물에 대한 저작권 관련 내용 부재</li>
-<li>인터넷 윤리 내 저작권 침해 문제점 관련 교육 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="인터넷-윤리-ai-윤리-메타버스-윤리-비교-저작권-윤리-추가방안">인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9D%B8%ED%84%B0%EB%84%B7-%EC%9C%A4%EB%A6%AC-ai-%EC%9C%A4%EB%A6%AC-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88" class="hash-link" aria-label="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크" title="인터넷 윤리, AI 윤리, 메타버스 윤리 비교, 저작권 윤리 추가방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="윤리-비교">윤리 비교<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EC%9C%A4%EB%A6%AC-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="윤리 비교에 대한 직접 링크" title="윤리 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>인터넷 윤리</th><th>AI 윤리</th><th>메타버스 윤리</th></tr></thead><tbody><tr><td>개념</td><td>인터넷 상에서 지켜야할 윤리</td><td>AI 기술 개발 활용시 지켜야할 윤리</td><td>메타버스 개발, 활용시 지켜야할 윤리</td></tr><tr><td>문제점</td><td>음란물, 저작권 침해, 사생활 침해</td><td>인권 침해, 편향</td><td>사이버 폭력, 저작권</td></tr><tr><td>주요 가이드</td><td>네티즌 윤리강령</td><td>EU AI 윤리 가이드</td><td>메타버스 윤리원칙</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리-원칙-내-저작권-윤리-추가방안">메타버스 윤리 원칙 내 저작권 윤리 추가방안<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%EC%9B%90%EC%B9%99-%EB%82%B4-%EC%A0%80%EC%9E%91%EA%B6%8C-%EC%9C%A4%EB%A6%AC-%EC%B6%94%EA%B0%80%EB%B0%A9%EC%95%88" class="hash-link" aria-label="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크" title="메타버스 윤리 원칙 내 저작권 윤리 추가방안에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>메타버스 내 2차 창작물에 대해 NFT 민팅을 통한 창작물 고유화, 저작권 중요성 상기</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="메타버스-윤리-활성화방안">메타버스 윤리 활성화방안<a href="https://gracefullight.dev/pe/conv/ethics-guidelines-for-metaverse/#%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%9C%A4%EB%A6%AC-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88" class="hash-link" aria-label="메타버스 윤리 활성화방안에 대한 직접 링크" title="메타버스 윤리 활성화방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>주체</th><th>활동</th></tr></thead><tbody><tr><td>홍보</td><td>국내</td><td>메타버스 윤리원칙 인지를 위한 홍보</td></tr><tr><td>-</td><td>국외</td><td>메타버스 윤리원칙 번역본 배포</td></tr><tr><td>보급 및 확산</td><td>기업</td><td>메타버스 윤리원칙 내제화 지원</td></tr><tr><td>-</td><td>학교</td><td>찾아가는 메타버스 윤리원칙 교육</td></tr></tbody></table>
-<ul>
-<li>메타버스 활성화를 위한 윤리 중요성 강조</li>
-<li>내재화로 인한 새로운 가치 창출 가능</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
