@@ -295,7 +295,7 @@
         <link href="https://gracefullight.dev/pe/algo/dimensionality-reduction/"/>
         <updated>2024-08-11T01:04:46.954Z</updated>
         <summary type="html"><![CDATA[Dimensionality reduction]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소">데이터 차원 축소<a href="https://gracefullight.dev/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C" class="hash-link" aria-label="데이터 차원 축소에 대한 직접 링크" title="데이터 차원 축소에 대한 직접 링크">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-개념">데이터 차원 축소 개념<a href="https://gracefullight.dev/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이터 차원 축소 개념에 대한 직접 링크" title="데이터 차원 축소 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>다차원 데이터세트의 차원을 축소해 새로운 저차원 데이터를 생성하는 과정 또는 기술</li>
 <li>차원의 저주해결, 성능 및 계싼 효율, 학습 효율성, 데이터 시각화</li>
