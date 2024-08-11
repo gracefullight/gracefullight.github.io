@@ -267,12 +267,12 @@ const config: Config = {
       theme: themes.github,
       darkTheme: themes.vsDark,
       // ? https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9
+      // ? https://github.com/PrismJS/prism/tree/master/components
       additionalLanguages: [
         "bash",
         "csharp",
         "diff",
-        "dockerfile",
-        "html",
+        "docker",
         "http",
         "ini",
         "json",
