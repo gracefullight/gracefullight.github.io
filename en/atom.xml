@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-11T01:04:46.954Z</updated>
+    <updated>2024-08-11T01:22:06.083Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[머신러닝, 딥러닝]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/"/>
+        <updated>2024-08-11T01:22:06.083Z</updated>
+        <summary type="html"><![CDATA[Machine Learning and Deep Learning]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-개념">머신러닝, 딥러닝 개념<a href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>머신러닝: 입력 데이터를 스스로 학습하여 결과를 예측하거나 분류하는 기술</li>
+<li>딥러닝: 인공신경망에서 은닉층을 깊게 쌓은 머신러닝 기법</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-핵심요소-비교-적용방안">머신러닝, 딥러닝 핵심요소 비교, 적용방안<a href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-핵심요소-비교">머신러닝, 딥러닝 핵심요소 비교<a href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>머신러닝</th><th>딥러닝</th></tr></thead><tbody><tr><td>특징</td><td>사람의 개입</td><td>사람 개입 최소화</td></tr><tr><td>학습구성</td><td>지도, 비지도, 강화</td><td>인공신경망</td></tr><tr><td>알고리즘</td><td>선형회귀, 의사결정나무, SVM, K-means 등</td><td>CNN, RNN, GAN, DBN 등</td></tr><tr><td>활용</td><td>예측, 분류</td><td>예측, 분류, 생성</td></tr><tr><td>성능</td><td>적은 데이터에서 우수한 성능</td><td>대규모 데이터에서 우수한 성능</td></tr><tr><td>-</td><td>복잡한 패턴인식 한계</td><td>복잡한 패턴인식 가능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-적용방안">머신러닝, 딥러닝 적용방안<a href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>머신러닝</th><th>딥러닝</th></tr></thead><tbody><tr><td>금융</td><td>신용점수예측, 사기탐지</td><td>주가예측, 금융모델링</td></tr><tr><td>의료</td><td>진단보조, 환자위험도 평가</td><td>의료이미지분석, 유전자분석</td></tr><tr><td>커머스</td><td>고객행동분석, 추천시스템</td><td>고객감정분석, 행동패턴분석</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-성공포인트">머신러닝 성공포인트<a href="https://gracefullight.dev/en/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%B1%EA%B3%B5%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>포인트</th><th>내용</th></tr></thead><tbody><tr><td>기술측면</td><td>Zero-Shot 학습</td><td>학습 비용의 효율화</td></tr><tr><td>-</td><td>1-Bit 가중치 인코딩</td><td>저장 비용의 효율화</td></tr><tr><td>에너지측면</td><td>태양열 에너지</td><td>에너지 사용 학습 비용 절감</td></tr><tr><td>-</td><td>소형모듈원전</td><td>모듈화 원전으로 학습 에너지 충족</td></tr></tbody></table>
+<ul>
+<li>학습, 저장 비용의 효율화와 에너지 비용절감을 통해 탄소인지 MLOps 환경 구축 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[데이터 차원 축소]]></title>
         <id>https://gracefullight.dev/en/pe/algo/dimensionality-reduction/</id>
@@ -45,7 +74,7 @@
         <link href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/"/>
         <updated>2024-08-10T15:54:00.631Z</updated>
         <summary type="html"><![CDATA[Diffie-Hellman algorithm]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념">디피-헬만 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EF%BF%BD%EF%BF%BD%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="디피-헬만-알고리즘-개념">디피-헬만 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/diffie-hellman-algorithm/#%EB%94%94%ED%94%BC-%ED%97%AC%EB%A7%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>안전하지 않은 채널을 통해 암호키를 안전하게 교환할 수 있도록 하는 비밀키 교환 알고리즘</li>
 <li>인터넷과 같은 중개 네트워크 환경에서 안전한 키 교환 가능</li>
@@ -315,34 +344,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시/"/>
-        <updated>2024-07-29T14:24:30.514Z</updated>
-        <summary type="html"><![CDATA[행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-개념">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 개념<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>클라우드 컴퓨팅 서비스의 계약, 이용, 안전성 검토 및 정보 보호 등의 내용을 포함하는 행정기관과 공공기관이 클라우드 컴퓨팅 서비스를 이용할 때 필요한 기준과 안전성 확보 방법을 규정하는 고시</li>
-<li>전자정부법 제54조의2, <mark class="flexible-marker flexible-marker-default">안전성과 효율성 확보</mark>, 이용계약의 체결 및 종료 과정에서 정보의 반환 및 파기 방법 등을 명확히 규정하여 <mark class="flexible-marker flexible-marker-default">정보 보안과 데이터 보호 강화</mark>, 클라우드 컴퓨팅 서비스의 이용 촉진 <mark class="flexible-marker flexible-marker-default">공공부문 디지털 전환 가속</mark></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-구성도-서비스-운영-분야-안전성-검토-항목-적용방안">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 구성도, 서비스 운영 분야 안전성 검토 항목, 적용방안<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="구성도">구성도<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="서비스-운영-분야-안전성-검토-항목">서비스 운영 분야 안전성 검토 항목<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B6%84%EC%95%BC-%EC%95%88%EC%A0%84%EC%84%B1-%EA%B2%80%ED%86%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>대상</th><th>비고</th></tr></thead><tbody><tr><td>인프라</td><td>관제 및 모니터링</td><td>관제시스템, 운영체계, 연계지원</td></tr><tr><td>-</td><td>장애대응</td><td>장애전파, 대응체계, 재발방지</td></tr><tr><td>-</td><td>서비스안정성</td><td>장애현황, 정보시스템 노후화, 재난재해 대응체계</td></tr><tr><td>-</td><td>인프라 운영관리</td><td>인프라 점검, 백업, 현황관리, 모의훈련, 기반환경</td></tr><tr><td>서비스 운영</td><td>자체 관제체계</td><td>운영 현황, 환경 구성</td></tr><tr><td>-</td><td>비상연락체계</td><td>전파 대상, 비상연락망</td></tr><tr><td>-</td><td>실시간 모니터링</td><td>툴, 외부/내부 지원, 관제 항목, 어플리케이션, CSP, 안내주기 및 임계치 설정, 현황 보고</td></tr><tr><td>-</td><td>장애 대응 및 위험 관리</td><td>조직 구성, 사전 예방, 교육, 백업 및 복구</td></tr><tr><td>-</td><td>계정 및 보안관리</td><td>서버, 인프라서비스 제공자, 접근통제, PC보안, 인력 보안</td></tr><tr><td>운영 시설</td><td>인증관리</td><td>데이터센터 인증</td></tr><tr><td>-</td><td>출입통제</td><td>출입 통제, 보안 설비, 출입 기록, CCTV 설치</td></tr><tr><td>-</td><td>화재대응설비</td><td>내화구조, 자동소화설비, 전용소화기, 화재감지기, 건축자제, 방화문</td></tr><tr><td>-</td><td>전력대응설비</td><td>전원 이중화, 무정전 전원장치, 비상발전기, 접지설비</td></tr><tr><td>-</td><td>항온항습장비</td><td>항온항습기 설치, 운영</td></tr><tr><td>-</td><td>지진대응설비</td><td>내진설계</td></tr><tr><td>-</td><td>시스템모니터링</td><td>상황실, 관제시스템</td></tr><tr><td>-</td><td>방호설비</td><td>방폭문, 가스차단, 가스입자여과기, EMP차폐</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="적용방안">적용방안<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>적용방안</th><th>비고</th></tr></thead><tbody><tr><td>관리적 측면</td><td>경쟁 입찰 및 수의계약 방식 활용</td><td>계약 방법 준수</td></tr><tr><td>-</td><td>계약 종료 30일 전 통지 및 데이터 반환/파기 방법 안내</td><td>필수 적용</td></tr><tr><td>-</td><td>이용 정보를 범정부 EA포털에 등록 및 관리</td><td>30일 이내</td></tr><tr><td>-</td><td>3년마다 고시의 법령과 현실 여건 변화 검토</td><td>정기적 재검토 필요</td></tr><tr><td>기술적 측면</td><td>클라우드 컴퓨팅 서비스의 보안성 및 안전성 정기 점검</td><td>주기적 점검 필요</td></tr><tr><td>-</td><td>데이터 반환 및 파기 시 암호화하여 안전하게 전송</td><td>정보보호 강화</td></tr><tr><td>-</td><td>재난, 재해 또는 서비스 중단 상황 대비 서비스 연속성 확보 계획 수립</td><td>서비스 안정성 확보</td></tr><tr><td>-</td><td>재해 시 업무 연속성을 위한 재해복구 서비스 활용</td><td>재해 대비</td></tr><tr><td>-</td><td>행정기관의 특성에 맞는 클라우드 서비스 활용 모델 개발 및 보안 요건 협의</td><td>맞춤형 서비스 도입</td></tr><tr><td>-</td><td>클라우드 서비스 구현 시 행정적, 재정적, 기술적 지원 제공</td><td>지원 방안 마련</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="행정기관-및-공공기관의-클라우드-컴퓨팅-서비스-이용-기준-및-안전성-확보-등에-관한-고시-고려사항">행정기관 및 공공기관의 클라우드 컴퓨팅 서비스 이용 기준 및 안전성 확보 등에 관한 고시 고려사항<a href="https://gracefullight.dev/en/pe/mng/%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C/#%ED%96%89%EC%A0%95%EA%B8%B0%EA%B4%80-%EB%B0%8F-%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9-%EA%B8%B0%EC%A4%80-%EB%B0%8F-%EC%95%88%EC%A0%84%EC%84%B1-%ED%99%95%EB%B3%B4-%EB%93%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B3%A0%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>재난 및 재해 상황에 대비하여 서비스 연속성을 확보하기 위해 BCP, DRP 진행</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-management" term="pe/it-management"/>
     </entry>
 </feed>
