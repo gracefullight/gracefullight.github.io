@@ -235,7 +235,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Eunkwang Shin.`,
+      copyright: `Copyright © 2016-${new Date().getFullYear()} Eunkwang Shin.`,
       links: [
         {
           title: "Support Me",
