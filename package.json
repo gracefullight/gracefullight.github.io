@@ -41,7 +41,7 @@
     "@gracefullight/docusaurus-plugin-naver-analytics": "^1.0.0",
     "@iconify/react": "^5.0.2",
     "@mdx-js/react": "^3.0.1",
-    "ahooks": "^3.8.0",
+    "ahooks": "^3.8.1",
     "clsx": "^2.1.1",
     "crc-32": "^1.2.2",
     "luxon": "^3.5.0",
