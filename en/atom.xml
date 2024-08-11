@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-11T13:08:03.704Z</updated>
+    <updated>2024-08-11T13:18:06.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[전이학습]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/transfer-learning/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/transfer-learning/"/>
+        <updated>2024-08-11T13:18:06.367Z</updated>
+        <summary type="html"><![CDATA[Transfer Learning]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-개념">전이학습 개념<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>한 도메인에서 학습된 모델이나 지식을 다른 모데인으로 전이하여 학습 성능을 향상시키는 기법</li>
+<li>데이터 부족 문제 해결, 학습시간 단축, 모델성능 향상, 컴퓨팅 리소스 절약</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-구성도-구성요소-적용방안">전이학습 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-구성도">전이학습 구성도<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>전이학습시 전수되는 은닉층은 가중치 고정, 나머지 은닉층은 타겟도메인에 맞게 미세조정</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-구성요소">전이학습 구성요소<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>소스도메인</td><td>기존 학습 데이터 및 모델이 있는 도메인</td><td>풍부한 데이터 보유</td></tr><tr><td>타겟도메인</td><td>지식 전이하여 학습할 신규 도메인</td><td>데이터 부족 해결</td></tr><tr><td>특징 추출기</td><td>소스 도메인에서 추출된 중요 특징을 타겟 도메인 모델 활용</td><td>초기 가이드라인 제공</td></tr><tr><td>모델 최적화</td><td>타겟도메인 데이터를 통해 모델 재학습 또는 미세조정</td><td>성능 최적화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-적용방안">전이학습 적용방안<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>자연어 처리</td><td>번역 및 감정분석시 사전학습 언어모델 활용하여 신규언어 적용</td><td>확장성, 적응력 향상</td></tr><tr><td>게임 개발</td><td>캐릭터 및 환경 생성시 사전학습 모델활용 컨텐츠 생성</td><td>학습시간 단축, 현실감</td></tr><tr><td>의료 진단</td><td>X-Ray, MRI 등 의료 이미지 분석시 사전 학습모델 미세조정 활용</td><td>희귀 질병 진단 가능</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="전이학습-고려사항">전이학습 고려사항<a href="https://gracefullight.dev/en/pe/algo/transfer-learning/#%EC%A0%84%EC%9D%B4%ED%95%99%EC%8A%B5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>소스도메인에서 사용된 모델이 타켓도메인에 적합한지 적절성 평가 필요</li>
+<li>학습률 조정, 드롭아웃 등 정규화 기법을 통해 과적합 방지</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[정렬 알고리즘, 버블정렬, 삽입정렬, 퀵정렬]]></title>
         <id>https://gracefullight.dev/en/pe/algo/sorting-algorithm/</id>
@@ -86,7 +119,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="인공지능-파운데이션-모델-핵심요소">인공지능 파운데이션 모델 핵심요소<a href="https://gracefullight.dev/en/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>모델</td><td>방대한 학습데이터</td><td>텍스트, 이미지, 데이터 이해</td></tr><tr><td>-</td><td>대규모 파라미터</td><td>최소 수억개 이상 파라미터</td></tr><tr><td>기술</td><td>트랜스포머</td><td>순차 데이터 내 관계 학습</td></tr><tr><td>-</td><td>Few-Shot 러닝</td><td>적은 양의 데이터로 미세 조정</td></tr><tr><td>기능</td><td>범용성</td><td>생성형 기반 추론 가능</td></tr><tr><td>-</td><td>유연성</td><td>자연어 처리, 영상 인식 등 다수 분야 활용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="�인공지능-파운데이션-모델-기술동향">인공지능 파운데이션 모델 기술동향<a href="https://gracefullight.dev/en/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="인공지능-파운데이션-모델-기술동향">인공지능 파운데이션 모델 기술동향<a href="https://gracefullight.dev/en/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>모델</th><th>내용</th></tr></thead><tbody><tr><td>OpenAI</td><td>Sora</td><td>텍스트에서 영상 생성</td></tr><tr><td>-</td><td>GPT4o</td><td>뛰어난 감정표현 가능</td></tr><tr><td>X</td><td>Grok1.5</td><td>오픈소스기반 대규모 컨텍스트 처리</td></tr><tr><td>Meta</td><td>Llama3.1</td><td>오픈소스기반, sLLM</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="인공지능-파운데이션-모델-고려사항">인공지능 파운데이션 모델 고려사항<a href="https://gracefullight.dev/en/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -120,7 +153,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="비선형-데이터-구조-유형">비선형 데이터 구조 유형<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>그래프</td><td>-</td><td>정점과 간선의 집합, 방향, 무방향 그래프 존재</td></tr><tr><td>트리</td><td>-</td><td>계층 구조의 노드 집합, 부모-자식 관계 구성</td></tr><tr><td>힙</td><td>-</td><td>완전이진트리의 일종, 부모 노드가 자식보다 크거나 작음</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="선형-비선형-데이터-구조-�비교">선형, 비선형 데이터 구조 비교<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EC%84%A0%ED%98%95-%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="선형-비선형-데이터-구조-비��교">선형, 비선형 데이터 구조 비교<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EC%84%A0%ED%98%95-%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형구조</th><th>비선형구조</th></tr></thead><tbody><tr><td>데이터 탐색</td><td>순차접근, 탐색</td><td>계층접근, 네트워크접근</td></tr><tr><td>메모리효율</td><td>비효율</td><td>효율</td></tr><tr><td>구현용이성</td><td>쉬움</td><td>어려움</td></tr><tr><td>레벨</td><td>단일레벨</td><td>다중레벨</td></tr><tr><td>사례</td><td>스케쥴링, 버퍼 등</td><td>SNS, NW모델링, DOM 등</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-구조-선택시-고려사항">데이터 구조 선택시 고려사항<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -282,35 +315,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RPA, Robotic Process Automation]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/rpa/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/rpa/"/>
-        <updated>2024-08-04T11:46:13.267Z</updated>
-        <summary type="html"><![CDATA[rpa]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-개념">RPA 개념<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>소프트웨어 봇을 활용하여 반복적이고 규칙적인 업무와 프로세스를 지능형 자동화 하는 기술</li>
-<li>생성형 모델의 에이전트 기반으로 태스크의 완전한 자동화 가능성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-구성도-구성요소-적용방안">RPA 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-구성도">RPA 구성도<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-구성요소">RPA 구성요소<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>RPA 개발도구</td><td>프로세스 모방 스크립트 작성</td><td>AI 모델 통합</td></tr><tr><td>RPA 봇</td><td>로봇 실행, 자동화</td><td>데이터 수집</td></tr><tr><td>모니터링</td><td>봇 작업 모니터링, 자원 관리</td><td>AI 모델 업데이트</td></tr><tr><td>지능형 자동화</td><td>AI 기반 스크립트 자동화</td><td>작업자 개입 최소화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-적용방안">RPA 적용방안<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>데이터 입력, 문서 처리, 보고서 작성 자동화 등 행정 업무 자동화</td><td>효율성 증대 및 오류 감소</td></tr><tr><td>금융</td><td>대출 신청 처리, 고객 상담 자동화 등 고객 서비스 개선</td><td>서비스 품질 향상 및 대기 시간 감소</td></tr><tr><td>민간</td><td>재고 관리, 구매 주문 처리 자동화 등 생산성 향상</td><td>운영 비용 절감 및 생산성 증가</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="rpa-고려사항">RPA 고려사항<a href="https://gracefullight.dev/en/pe/conv/rpa/#rpa-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>RPA 사용방법에 대한 지속적인 업무 교육으로 러닝커브 감소 필요</li>
-<li>RPA 결과에 대한 검증 절차 마련 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>
