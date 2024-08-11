@@ -52,6 +52,7 @@ const config: Config = {
           feedOptions: {
             type: "all",
             limit: 10,
+            xslt: true,
           },
           remarkPlugins: [remarkMath, remarkFlexibleMarkers],
           rehypePlugins: [rehypeKatex],
