@@ -14,7 +14,6 @@ date: 2017-07-07 22:33:46
 
 - PHP 구버전에서는 `mcrypt` 와 `MCRYPT_RIJNDAEL_128` 알고리즘을 통해 AES128 이 구현되어 있을 것이다.
 - **MCRYPT_RIJNDAEL_128**은 **AES 128**과 **동일**하다.
-
 - 타 언어와는 조금 다른데, 호환을 위해선 pkcs5 padding 으로 변경해주는 작업이 필요하다.
 - php mcrypt function 의 기본 패딩은 zeros padding
 
@@ -106,5 +105,3 @@ openssl_decrypt($cipherText, "des-ede3-cbc", $key, OPENSSL_RAW_DATA, $iv);
 
 곧 이 짓을 안해도 될 듯하다.
 ![KakaoPay 종료](https://i.imgur.com/QBA9xnP.jpg)
-
-이러다가 다시 선형대수학 공부하겠어.
