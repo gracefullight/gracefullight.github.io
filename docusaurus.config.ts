@@ -269,7 +269,7 @@ const config: Config = {
       // ? https://github.com/FormidableLabs/prism-react-renderer/blob/master/packages/generate-prism-languages/index.ts#L9
       additionalLanguages: [
         "bash",
-        "cs",
+        "csharp",
         "diff",
         "dockerfile",
         "html",
