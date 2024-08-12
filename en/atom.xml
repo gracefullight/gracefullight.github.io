@@ -2,18 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-11T13:58:25.583Z</updated>
+    <updated>2024-08-12T12:54:40.191Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[강화학습]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/reinforcement-learning/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/"/>
+        <updated>2024-08-12T12:54:40.191Z</updated>
+        <summary type="html"><![CDATA[Reinforcement Learning]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-개념">강화학습 개념<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>에이전트가 환경과 상호작용하여 보상을 최대화하는 행동을 학습하는 방법</li>
+<li>복잡한 환경에서의 문제 해결, 환경 상호작용, 보상 기반 학습</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-구성도-주요-알고리즘-적용방안">강화학습 구성도, 주요 알고리즘, 적용방안<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-구성도">강화학습 구성도<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>상태를 인식하고, 행동을 취하며, 보상을 최대화하는 최적의 정책 학습</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-주요-알고리즘">강화학습 주요 알고리즘<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Q-Learning</td><td>가치기반 학습방법, 각 상태-행동 쌍에 대한 가치를 업데이트하여 최적 정책 학습</td><td>오프라인학습, 단순 문제</td></tr><tr><td>SARSA</td><td>실제 정책을 사용하여 상태-행동 가치함수를 학습하는 시간차 방법</td><td>온라인 학습</td></tr><tr><td>DQN</td><td>딥러닝을 이용한 Q-Learning, 신경망을 사용하여 Q값을 근사 처리</td><td>복합한 문제</td></tr><tr><td>Policy Gradient</td><td>보상 기대값을 최대화하는 방향의 정책을 직접 학습</td><td>연속적 행동 적합</td></tr><tr><td>Actor-Critic</td><td>정책기반과 가치기반 알고리즘 결합, 액터는 정책경사모델로 행동 결정, 크리틱은 Q러닝으로 행동 비평</td><td>안정성, 효율성</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-적용방안">강화학습 적용방안<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>게임AI</td><td>게임 내 최적 전략을 학습하여 사람과 경쟁가능한 AI 개발</td><td>Starcraft, Dota2</td></tr><tr><td>로봇제어</td><td>로봇 움직임을 강화학습하여 자율적 환경 탐색 및 작업 수행</td><td>자율주행, 드론제어</td></tr><tr><td>금융거래</td><td>거래 데이터로 강화학습하여 최적의 거래 전략 학습/적용</td><td>리스크 관리, 포트폴리오 최적화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="강화학습-고려사항">강화학습 고려사항<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Exploitation과 Exploration 사이의 적절한 균형을 찾는 알고리즘 선택</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[알고리즘 시간복잡도, 공간복잡도]]></title>
         <id>https://gracefullight.dev/en/pe/algo/time-complexity-and-space-complexity/</id>
         <link href="https://gracefullight.dev/en/pe/algo/time-complexity-and-space-complexity/"/>
         <updated>2024-08-11T13:58:25.583Z</updated>
         <summary type="html"><![CDATA[Time Complexity and Space Complexity]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="알고리즘-시간복잡도-공간복잡도-개념">알고리즘 시간복잡도, 공간복잡도 개념<a href="https://gracefullight.dev/en/pe/algo/time-complexity-and-space-complexity/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EF%BF%BD%EF%BF%BD%EB%8F%84-%EA%B3%B5%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="알고리즘-시간복잡도-공간복잡도-개념">알고리즘 시간복잡도, 공간복잡도 개념<a href="https://gracefullight.dev/en/pe/algo/time-complexity-and-space-complexity/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84-%EA%B3%B5%EA%B0%84%EB%B3%B5%EF%BF%BD%EF%BF%BD%EC%9E%A1%EB%8F%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>시간복잡도: 주어진 입력에 따라 알고리즘이 실행되는데 걸리는 시간의 양</li>
 <li>공간복잡도: 주어진 입력에 따라 필요한 저장 공간의 양</li>
@@ -187,7 +219,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_DRJ6" id="비선형-데이터-구조-유형">비선형 데이터 구조 유형<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td>그래프</td><td>-</td><td>정점과 간선의 집합, 방향, 무방향 그래프 존재</td></tr><tr><td>트리</td><td>-</td><td>계층 구조의 노드 집합, 부모-자식 관계 구성</td></tr><tr><td>힙</td><td>-</td><td>완전이진트리의 일종, 부모 노드가 자식보다 크거나 작음</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="선형-��비선형-데이터-구조-비교">선형, 비선형 데이터 구조 비교<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EC%84%A0%ED%98%95-%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="선형-비선형-데��이터-구조-비교">선형, 비선형 데이터 구조 비교<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EC%84%A0%ED%98%95-%EB%B9%84%EC%84%A0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>선형구조</th><th>비선형구조</th></tr></thead><tbody><tr><td>데이터 탐색</td><td>순차접근, 탐색</td><td>계층접근, 네트워크접근</td></tr><tr><td>메모리효율</td><td>비효율</td><td>효율</td></tr><tr><td>구현용이성</td><td>쉬움</td><td>어려움</td></tr><tr><td>레벨</td><td>단일레벨</td><td>다중레벨</td></tr><tr><td>사례</td><td>스케쥴링, 버퍼 등</td><td>SNS, NW모델링, DOM 등</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-구조-선택시-고려사항">데이터 구조 선택시 고려사항<a href="https://gracefullight.dev/en/pe/algo/data-structure/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0-%EC%84%A0%ED%83%9D%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -281,38 +313,6 @@
 <table><thead><tr><th>구분</th><th>포인트</th><th>내용</th></tr></thead><tbody><tr><td>기술측면</td><td>Zero-Shot 학습</td><td>학습 비용의 효율화</td></tr><tr><td>-</td><td>1-Bit 가중치 인코딩</td><td>저장 비용의 효율화</td></tr><tr><td>에너지측면</td><td>태양열 에너지</td><td>에너지 사용 학습 비용 절감</td></tr><tr><td>-</td><td>소형모듈원전</td><td>모듈화 원전으로 학습 에너지 충족</td></tr></tbody></table>
 <ul>
 <li>학습, 저장 비용의 효율화와 에너지 비용절감을 통해 탄소인지 MLOps 환경 구축 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 차원 축소]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/dimensionality-reduction/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/"/>
-        <updated>2024-08-11T01:04:46.954Z</updated>
-        <summary type="html"><![CDATA[Dimensionality reduction]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-개념">데이터 차원 축소 개념<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>다차원 데이터세트의 차원을 축소해 새로운 저차원 데이터를 생성하는 과정 또는 기술</li>
-<li>차원의 저주해결, 성능 및 계싼 효율, 학습 효율성, 데이터 시각화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-개념도-주요-유형-적용방안">데이터 차원 축소 개념도, 주요 유형, 적용방안<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-개념도">데이터 차원 축소 개념도<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<blockquote>
-<p>2차원 데이터 PCA로 1차원되는 그림</p>
-</blockquote>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-주요-유형">데이터 차원 축소 주요 유형<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EC%A3%BC%EC%9A%94-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>선형</td><td>PCA, 주성분 분석</td><td>데이터 분산이 큰 방향으로 차원 축소</td></tr><tr><td>-</td><td>LDA, 선형판별분석</td><td>클래스 간 분산 최대화, 클래스 내 분산 최소화</td></tr><tr><td>-</td><td>SVD, 특이값분해</td><td>데이터 행렬 분해하여 차원 축소, 압축</td></tr><tr><td>-</td><td>ICA, 독립성분분석</td><td>데이터의 독립성분을 추출하여 표현</td></tr><tr><td>비선형</td><td>t-SNE</td><td>고차원 데이터를 확률적 모델링하여 매핑</td></tr><tr><td>-</td><td>LLE, 지역선형임베딩</td><td>인접데이터의 선형관계를 보존하여 축소</td></tr><tr><td>-</td><td>Isomap, 등거리매핑</td><td>데이터 간 거리를 보존하여 저차원 매핑</td></tr><tr><td>-</td><td>MDS, 다차원스케일링</td><td>데이터 간 거리 정보를 근접행렬로 유지 후 매핑</td></tr><tr><td>-</td><td>커널 PCA</td><td>커널트릭 활용 고차원 공간에서 PCA 수행</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-적용방안">데이터 차원 축소 적용방안<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 시각화</td><td>고차 데이터를 2D, 3D로 변환, 시각화</td><td>t-SNE 등</td></tr><tr><td>노이즈제거</td><td>데이터 주요 특징만 남겨 데이터 품질 향상</td><td>PCA 등</td></tr><tr><td>특성 선택</td><td>중요 속성만 선택하여 분석, 학습 활용</td><td>LDA 등</td></tr><tr><td>데이터 압축</td><td>저장 공간 절약 및 전송 효율성</td><td>SVD 등</td></tr><tr><td>패턴 인식</td><td>데이터 잠재 구조 파악, 패턴 이해</td><td>LLE, Isomap</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="데이터-차원-축소-고려사항">데이터 차원 축소 고려사항<a href="https://gracefullight.dev/en/pe/algo/dimensionality-reduction/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>대규모 데이터셋 차원축소 전 계산 비용을 줄이기 위해 데이터 샘플링 고려</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
