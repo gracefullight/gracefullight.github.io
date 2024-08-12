@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-12T12:54:40.191Z</updated>
+    <updated>2024-08-12T13:01:25.863Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[머신러닝 최적화 알고리즘]]></title>
+        <id>https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/</id>
+        <link href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/"/>
+        <updated>2024-08-12T13:01:25.863Z</updated>
+        <summary type="html"><![CDATA[Machine Learning Optimization Algorithms]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-최적화-알고리즘">머신러닝 최적화 알고리즘<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="머신러닝 최적화 알고리즘에 대한 직접 링크" title="머신러닝 최적화 알고리즘에 대한 직접 링크">​</a></h2>
+<ul>
+<li>머신러닝 모델 학습과정에서 모델의 오차를 최소화하거나, 정확도를 최대화하기 위해 파라미터를 조정하여 모델 성능을 최적화하는 알고리즘</li>
+<li>손실함수를 최소화하여 정확도 향상, 학습 효율화, 과적합 방지</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-최적화-개념도-주요-알고리즘-고려사항">머신러닝 최적화 개념도, 주요 알고리즘, 고려사항<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="머신러닝 최적화 개념도, 주요 알고리즘, 고려사항에 대한 직접 링크" title="머신러닝 최적화 개념도, 주요 알고리즘, 고려사항에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-최적화-개념도">머신러닝 최적화 개념도<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="머신러닝 최적화 개념도에 대한 직접 링크" title="머신러닝 최적화 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-최적화-주요-알고리즘">머신러닝 최적화 주요 알고리즘<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="머신러닝 최적화 주요 알고리즘에 대한 직접 링크" title="머신러닝 최적화 주요 알고리즘에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>경사하강법</td><td>기울기를 사용하여 손실함수 값 최소화하여 파라미터 업데이트</td><td>보편적 알고리즘</td></tr><tr><td>확률적 경사하강법</td><td>한 개의 데이터 셋을 샘플링하여 파라미터 업데이트</td><td>학습속도 향상</td></tr><tr><td>미니배치 경사하강법</td><td>적당한 크기의 미니 데이터셋으로 나눠 경사하강법 적용</td><td>병렬 컴퓨팅</td></tr><tr><td>모멘텀 최적화</td><td>이전 기울기를 사용하여 관성기반 파라미터 업데이트 가속화</td><td>지역최소값 회피</td></tr><tr><td>RMSProp</td><td>기울기 크기에 따라 학습률을 조정하여 파라미터 최적화</td><td>효율적, 지속적 학습</td></tr><tr><td>Adam</td><td>모멘텀과 RMSProp 장점 결합 최적화 수행</td><td>높은 성능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-최적화-알고리즘-고려사항">머신러닝 최적화 알고리즘 고려사항<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="머신러닝 최적화 알고리즘 고려사항에 대한 직접 링크" title="머신러닝 최적화 알고리즘 고려사항에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>모델 선택</td><td>문제 특성에 맞는 모델 선택</td><td>데이터 크기, 특성</td></tr><tr><td>하이퍼파라미터 튜닝</td><td>학습률, 배치 크기 등 하이퍼파라미터 조정하여 모델 성능 최적화</td><td>실험적 접근 필요</td></tr><tr><td>초기화방법</td><td>파라미터 초기화는 수렴속도와 성능에 영향을 주므로, 적절한 초기화 전략 선택</td><td>무작위, Xavier 초기화</td></tr><tr><td>정규화</td><td>L1, L2 정규화를 통한 과적합 방지</td><td>리지 패널티, 라쏘, 티코노프</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[강화학습]]></title>
         <id>https://gracefullight.dev/pe/algo/reinforcement-learning/</id>
@@ -284,35 +309,6 @@
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="t검정시-고려사항">T검정시 고려사항<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#t%EA%B2%80%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="T검정시 고려사항에 대한 직접 링크" title="T검정시 고려사항에 대한 직접 링크">​</a></h2>
 <ul>
 <li>세 개 이상의 독립된 집단 간의 평균 비교시 ANOVA 기법 활용</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[머신러닝, 딥러닝]]></title>
-        <id>https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/</id>
-        <link href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/"/>
-        <updated>2024-08-11T01:22:06.083Z</updated>
-        <summary type="html"><![CDATA[Machine Learning and Deep Learning]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-개념">머신러닝, 딥러닝 개념<a href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="머신러닝, 딥러닝 개념에 대한 직접 링크" title="머신러닝, 딥러닝 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>머신러닝: 입력 데이터를 스스로 학습하여 결과를 예측하거나 분류하는 기술</li>
-<li>딥러닝: 인공신경망에서 은닉층을 깊게 쌓은 머신러닝 기법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-핵심요소-비교-적용방안">머신러닝, 딥러닝 핵심요소 비교, 적용방안<a href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="머신러닝, 딥러닝 핵심요소 비교, 적용방안에 대한 직접 링크" title="머신러닝, 딥러닝 핵심요소 비교, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-핵심요소-비교">머신러닝, 딥러닝 핵심요소 비교<a href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="머신러닝, 딥러닝 핵심요소 비교에 대한 직접 링크" title="머신러닝, 딥러닝 핵심요소 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>머신러닝</th><th>딥러닝</th></tr></thead><tbody><tr><td>특징</td><td>사람의 개입</td><td>사람 개입 최소화</td></tr><tr><td>학습구성</td><td>지도, 비지도, 강화</td><td>인공신경망</td></tr><tr><td>알고리즘</td><td>선형회귀, 의사결정나무, SVM, K-means 등</td><td>CNN, RNN, GAN, DBN 등</td></tr><tr><td>활용</td><td>예측, 분류</td><td>예측, 분류, 생성</td></tr><tr><td>성능</td><td>적은 데이터에서 우수한 성능</td><td>대규모 데이터에서 우수한 성능</td></tr><tr><td>-</td><td>복잡한 패턴인식 한계</td><td>복잡한 패턴인식 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-딥러닝-적용방안">머신러닝, 딥러닝 적용방안<a href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="머신러닝, 딥러닝 적용방안에 대한 직접 링크" title="머신러닝, 딥러닝 적용방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>머신러닝</th><th>딥러닝</th></tr></thead><tbody><tr><td>금융</td><td>신용점수예측, 사기탐지</td><td>주가예측, 금융모델링</td></tr><tr><td>의료</td><td>진단보조, 환자위험도 평가</td><td>의료이미지분석, 유전자분석</td></tr><tr><td>커머스</td><td>고객행동분석, 추천시스템</td><td>고객감정분석, 행동패턴분석</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="머신러닝-성공포인트">머신러닝 성공포인트<a href="https://gracefullight.dev/pe/algo/machine-learning-and-deep-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%B1%EA%B3%B5%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="머신러닝 성공포인트에 대한 직접 링크" title="머신러닝 성공포인트에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>포인트</th><th>내용</th></tr></thead><tbody><tr><td>기술측면</td><td>Zero-Shot 학습</td><td>학습 비용의 효율화</td></tr><tr><td>-</td><td>1-Bit 가중치 인코딩</td><td>저장 비용의 효율화</td></tr><tr><td>에너지측면</td><td>태양열 에너지</td><td>에너지 사용 학습 비용 절감</td></tr><tr><td>-</td><td>소형모듈원전</td><td>모듈화 원전으로 학습 에너지 충족</td></tr></tbody></table>
-<ul>
-<li>학습, 저장 비용의 효율화와 에너지 비용절감을 통해 탄소인지 MLOps 환경 구축 필요</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
