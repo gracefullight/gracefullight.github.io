@@ -4,10 +4,32 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 12 Aug 2024 13:01:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Aug 2024 13:16:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[빅데이터 플랫폼 아키텍쳐]]></title>
+            <link>https://gracefullight.dev/pe/conv/bigdata-platform-architecture/</link>
+            <guid>https://gracefullight.dev/pe/conv/bigdata-platform-architecture/</guid>
+            <pubDate>Mon, 12 Aug 2024 13:16:38 GMT</pubDate>
+            <description><![CDATA[Big-data Platform Architecture]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="빅테이터-플랫폼-아키텍처-개념">빅테이터 플랫폼 아키텍처 개념<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%ED%85%8C%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="빅테이터 플랫폼 아키텍처 개념에 대한 직접 링크" title="빅테이터 플랫폼 아키텍처 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>빅데이터의 3V(크기, 다양성, 속도) 측면을 효과적으로 처리, 분석하기 위한 시스템 아키텍처</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="빅데이터-플랫폼-아키텍처-구성도-구성요소-적용방안">빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="빅데이터-플랫폼-아키텍처-구성도">빅데이터 플랫폼 아키텍처 구성도<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성도에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="빅데이터-플랫폼-아키텍처-구성요소">빅데이터 플랫폼 아키텍처 구성요소<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성요소에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터수집</td><td>실시간 데이터 수집</td><td>Kafka</td></tr><tr><td>데이터저장</td><td>대용량 데이터 저장</td><td>HDFS, S3, NoSQL DB</td></tr><tr><td>데이터처리</td><td>배치 및 실시간 처리</td><td>Spark, MapReduce</td></tr><tr><td>데이터분석</td><td>SQL 기반 데이터 분석</td><td>Hive, Spark SQL</td></tr><tr><td>데이터시각화</td><td>분석 결과 시각화</td><td>Tableau, Grafana</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="빅데이터-플랫폼-아키텍처-적용방안">빅데이터 플랫폼 아키텍처 적용방안<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 적용방안에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 적용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>소셜미디어 분석</td><td>사용자 행동 패턴 분석</td><td>실시간 처리</td></tr><tr><td>로그 분석</td><td>시스템 장애 예측, 최적화</td><td>대용량 처리</td></tr><tr><td>금융사기탐지</td><td>이상거래 탐지, 사기 탐지</td><td>실시간 처리, AI</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="빅데이터-플랫폼-아키텍처-고려사항">빅데이터 플랫폼 아키텍처 고려사항<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 고려사항에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>확장성</td><td>데이터 증가에 따른 유연한 대응</td><td>수평적 확장 고려</td></tr><tr><td>성능</td><td>빠른 데이터 처리 분석 속도</td><td>실시간 처리 요구사항</td></tr><tr><td>보안</td><td>데이터 접근통제 암호화</td><td>분석 후 폐기, RBAC</td></tr><tr><td>비용</td><td>효율적 자원 활용, 스케일 다운</td><td>클라우드 기반 아키텍처</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[머신러닝 최적화 알고리즘]]></title>
             <link>https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/</link>
@@ -250,30 +272,6 @@
 <h2 class="anchor anchorWithStickyNavbar_DRJ6" id="ai-hub-성공포인트">AI HUB 성공포인트<a href="https://gracefullight.dev/pe/algo/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%97%88%EB%B8%8C-%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B%EC%9D%98-%ED%92%88%EC%A7%88/#ai-hub-%EC%84%B1%EA%B3%B5%ED%8F%AC%EC%9D%B8%ED%8A%B8" class="hash-link" aria-label="AI HUB 성공포인트에 대한 직접 링크" title="AI HUB 성공포인트에 대한 직접 링크">​</a></h2>
 <ul>
 <li>최신 데이터를 주기적으로 업데이트하여 AI파트너, AI생산자에게 최신트랜드와 패턴 학습 기회 제공</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[독립표본 T검정, 대응표본 T검정]]></title>
-            <link>https://gracefullight.dev/pe/algo/independent-and-paired-t-test/</link>
-            <guid>https://gracefullight.dev/pe/algo/independent-and-paired-t-test/</guid>
-            <pubDate>Sun, 11 Aug 2024 01:34:17 GMT</pubDate>
-            <description><![CDATA[Independent and Paired t-test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="t검정-개념">T검정 개념<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#t%EA%B2%80%EC%A0%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="T검정 개념에 대한 직접 링크" title="T검정 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>두 집단 이하의 평균을 비교하여 차이가 있는지 검증하는 통계적 방법으로 독립표본 T검정과 대응표본 T검정으로 구분</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-비교-적용사례">독립표본 T검정, 대응표본 T검정 비교, 적용사례<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 비교, 적용사례에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 비교, 적용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-비교">독립표본 T검정, 대응표본 T검정 비교<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 비교에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 비교에 대한 직접 링크">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>독립표본 T검정</th><th>대응표본 T검정</th></tr></thead><tbody><tr><td>개념</td><td>두 독립된 집단의 평균 비교</td><td>동일한 집단의 두 시점 비교</td></tr><tr><td>표본</td><td>독립적인 두 집단</td><td>동일한 집단 반복</td></tr><tr><td>가정</td><td>두 그룹 모집단이 정규분포를 따르고, 분산은 동일</td><td>두 시점 간 차이가 정규분포를 따름</td></tr><tr><td>검정통계량</td><td>두 그룹의 평균차이를 표준오차로 나눠 T값 계산</td><td>두 시점의 차이를 표준 오차로 나눠 T값 계산</td></tr><tr><td>자유도</td><td><code>n1 + n2 - 2</code></td><td><code>n - 1</code></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_DRJ6" id="독립표본-t검정-대응표본-t검정-적용사례">독립표본 T검정, 대응표본 T검정 적용사례<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#%EB%8F%85%EB%A6%BD%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EB%8C%80%EC%9D%91%ED%91%9C%EB%B3%B8-t%EA%B2%80%EC%A0%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="독립표본 T검정, 대응표본 T검정 적용사례에 대한 직접 링크" title="독립표본 T검정, 대응표본 T검정 적용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기법</th><th>사례</th></tr></thead><tbody><tr><td>두 개의 독립된 집단 비교</td><td>독립표본 T검정</td><td>남, 여 평균 체지방 비교</td></tr><tr><td>동일 집단의 두 시점 비교</td><td>대응표본 T검정</td><td>같은 학생의 기말고사 전/후 성적 비교</td></tr><tr><td>같은 집단의 두 조건 비교</td><td>대응표본 T검정</td><td>동일 환자의 약물치료 전/후 체중 비교</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_DRJ6" id="t검정시-고려사항">T검정시 고려사항<a href="https://gracefullight.dev/pe/algo/independent-and-paired-t-test/#t%EA%B2%80%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="T검정시 고려사항에 대한 직접 링크" title="T검정시 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>세 개 이상의 독립된 집단 간의 평균 비교시 ANOVA 기법 활용</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
