@@ -134,6 +134,7 @@
     "RREP",
     "RREQ",
     "SAAM",
+    "SARSA",
     "SASL",
     "SCTP",
     "SDLC",
