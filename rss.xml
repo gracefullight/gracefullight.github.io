@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 18 Aug 2024 13:40:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 14:00:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[K-means, DBSCAN 클러스터링]]></title>
+            <link>https://gracefullight.dev/pe/algo/kmeans-and-dbscan/</link>
+            <guid>https://gracefullight.dev/pe/algo/kmeans-and-dbscan/</guid>
+            <pubDate>Sun, 18 Aug 2024 14:00:16 GMT</pubDate>
+            <description><![CDATA[K-means and DBSCAN Clustering]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="클러스터링-개념">클러스터링 개념<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="클러스터링 개념에 대한 직접 링크" title="클러스터링 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>데이터 포인터들을 여러 군집으로 나누어 각 군집 간 유사성을 최소화, 군집 내 유사성을 최대화하는 비지도학습 알고리즘</li>
+<li>데이터 내 잠재적 패턴, 그룹 발견, 군집별 맞춤 전략 수립, 군집별 전처리 및 축소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="k-means-dbscan-클러스터링-개념-비교">K-means, DBSCAN 클러스터링 개념, 비교<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#k-means-dbscan-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="K-means, DBSCAN 클러스터링 개념, 비교에 대한 직접 링크" title="K-means, DBSCAN 클러스터링 개념, 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="k-means-클러스터링-개념-및-특징">K-means 클러스터링 개념 및 특징<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#k-means-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="K-means 클러스터링 개념 및 특징에 대한 직접 링크" title="K-means 클러스터링 개념 및 특징에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>데이터셋을 K개의 클러스터로 나눠 각 데이터가 가장 가까운 클러스터 중심에 할당하여 군집화하는 알고리즘</td></tr><tr><td>특징</td><td>초기 중심점 설정 민감, 이상치 민감</td></tr><tr><td>-</td><td>가벼운 시간 복잡도, 구형 클러스터 적합</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="dbscan-클러스터링-개념-및-특징">DBSCAN 클러스터링 개념 및 특징<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#dbscan-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B0%9C%EF%BF%BD%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="DBSCAN 클러스터링 개념 및 특징에 대한 직접 링크" title="DBSCAN 클러스터링 개념 및 특징에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>밀도가 높은 지역에서 클러스터를 형성하고, 밀도가 낮은 지역은 노이즈로 간주하는 알고리즘</td></tr><tr><td>특징</td><td>클러스터 모양이 불규칙해도 좋은 성능</td></tr><tr><td>-</td><td>입실론 거리와 최소 포인트 수 조정이 성능의 핵심 요소</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="k-means-dbscan-클러스터링-비교">K-means, DBSCAN 클러스터링 비교<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#k-means-dbscan-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="K-means, DBSCAN 클러스터링 비교에 대한 직접 링크" title="K-means, DBSCAN 클러스터링 비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>K-means</th><th>DBSCAN</th></tr></thead><tbody><tr><td>기반</td><td>거리기반</td><td>밀도기반</td></tr><tr><td>클러스터 형태</td><td>구형 클러스터 적합</td><td>임의 모양 식별 가능</td></tr><tr><td>노이즈 처리</td><td>약함</td><td>강함</td></tr><tr><td>처리 속도</td><td>빠름</td><td>느림</td></tr><tr><td>초기화</td><td>초기 중심점 선택 중요</td><td>덜 민감</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="클러스터링-고려사항">클러스터링 고려사항<a href="https://gracefullight.dev/pe/algo/kmeans-and-dbscan/#%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="클러스터링 고려사항에 대한 직접 링크" title="클러스터링 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>데이터 크기, 형태, 노이즈에 따라 적절한 알고리즘 선택 필요</li>
+<li>Dunn Index, Silhouette Coefficient 등의 지표로 클러스터링 결과 평가 후 하이퍼파라미터 조정</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[DSML, MLOps]]></title>
             <link>https://gracefullight.dev/pe/algo/dsml-and-mlops/</link>
@@ -247,33 +273,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[인공지능 파운데이션 모델]]></title>
-            <link>https://gracefullight.dev/pe/algo/ai-foundation-model/</link>
-            <guid>https://gracefullight.dev/pe/algo/ai-foundation-model/</guid>
-            <pubDate>Sun, 11 Aug 2024 02:21:50 GMT</pubDate>
-            <description><![CDATA[AI Foundation Model]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-개념">인공지능 파운데이션 모델 개념<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="인공지능 파운데이션 모델 개념에 대한 직접 링크" title="인공지능 파운데이션 모델 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>대량의 무라벨 데이터로 학습되어 목적에 맞는 다운스트림 작업에 적용될 수 있는 일반화된 기초 모델</li>
-<li>데이터의 증가와 하드웨어의 연산 속도 증가로 다양한 작업에서 높은 성능을 보여주는 파운데이션 모델 등장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-개념도-핵심요소-기술동향">인공지능 파운데이션 모델 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="인공지능 파운데이션 모델 개념도, 핵심요소, 기술동향에 대한 직접 링크" title="인공지능 파운데이션 모델 개념도, 핵심요소, 기술동향에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-개념도">인공지능 파운데이션 모델 개념도<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="인공지능 파운데이션 모델 개념도에 대한 직접 링크" title="인공지능 파운데이션 모델 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-핵심요소">인공지능 파운데이션 모델 핵심요소<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="인공지능 파운데이션 모델 핵심요소에 대한 직접 링크" title="인공지능 파운데이션 모델 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>요소</th><th>내용</th></tr></thead><tbody><tr><td>모델</td><td>방대한 학습데이터</td><td>텍스트, 이미지, 데이터 이해</td></tr><tr><td>-</td><td>대규모 파라미터</td><td>최소 수억개 이상 파라미터</td></tr><tr><td>기술</td><td>트랜스포머</td><td>순차 데이터 내 관계 학습</td></tr><tr><td>-</td><td>Few-Shot 러닝</td><td>적은 양의 데이터로 미세 조정</td></tr><tr><td>기능</td><td>범용성</td><td>생성형 기반 추론 가능</td></tr><tr><td>-</td><td>유연성</td><td>자연어 처리, 영상 인식 등 다수 분야 활용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-기술동향">인공지능 파운데이션 모델 기술동향<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="인공지능 파운데이션 모델 기술동향에 대한 직접 링크" title="인공지능 파운데이션 모델 기술동향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>모델</th><th>내용</th></tr></thead><tbody><tr><td>OpenAI</td><td>Sora</td><td>텍스트에서 영상 생성</td></tr><tr><td>-</td><td>GPT4o</td><td>뛰어난 감정표현 가능</td></tr><tr><td>X</td><td>Grok1.5</td><td>오픈소스기반 대규모 컨텍스트 처리</td></tr><tr><td>Meta</td><td>Llama3.1</td><td>오픈소스기반, sLLM</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="인공지능-파운데이션-모델-고려사항">인공지능 파운데이션 모델 고려사항<a href="https://gracefullight.dev/pe/algo/ai-foundation-model/#%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98-%EB%AA%A8%EB%8D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="인공지능 파운데이션 모델 고려사항에 대한 직접 링크" title="인공지능 파운데이션 모델 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>지적재산권, 생성물저작권</li>
-<li>모델 운영 전력, 훈련시 탄소배출 비용</li>
-<li>편향, 환각 등 역기능 제거 노력, 윤리원칙 준수 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
         </item>
     </channel>
 </rss>
