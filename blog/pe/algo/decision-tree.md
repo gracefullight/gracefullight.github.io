@@ -1,7 +1,7 @@
 ---
 title: 의사결정나무
 date: 2024-05-03T20:53:34.498+09:00
-description: 의사결정나무
+description: Decision Tree
 authors: me
 tags:
   - pe
