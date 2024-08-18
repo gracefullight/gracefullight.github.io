@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 18 Aug 2024 14:00:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 14:09:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[튜링테스트]]></title>
+            <link>https://gracefullight.dev/pe/algo/turing-test/</link>
+            <guid>https://gracefullight.dev/pe/algo/turing-test/</guid>
+            <pubDate>Sun, 18 Aug 2024 14:09:33 GMT</pubDate>
+            <description><![CDATA[Turing Test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-개념">튜링테스트 개념<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="튜링테스트 개념에 대한 직접 링크" title="튜링테스트 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>인공지능의 수준을 평가하기 위해 인간과 인공지능의 사고능력을 비교하는 블라인드 테스트</li>
+<li>자연어 처리기술 발전, 기계와 인간 구분의 모호성, AI활용 서비스 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성도-구성요소-활용사례">튜링테스트 구성도, 구성요소, 활용사례<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="튜링테스트 구성도, 구성요소, 활용사례에 대한 직접 링크" title="튜링테스트 구성도, 구성요소, 활용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성도">튜링테스트 구성도<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="튜링테스트 구성도에 대한 직접 링크" title="튜링테스트 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성요소">튜링테스트 구성요소<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="튜링테스트 구성요소에 대한 직접 링크" title="튜링테스트 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>심판</td><td>AI와 인간을 구별하는 역할</td><td>익명 대화</td></tr><tr><td>AI</td><td>인간처럼 행동하는 인공지능</td><td>언어모델 등</td></tr><tr><td>인간</td><td>별도 공간에서 질의응답</td><td>대조군 역할</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-활용사례">튜링테스트 활용사례<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="튜링테스트 활용사례에 대한 직접 링크" title="튜링테스트 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>챗봇 개발</td><td>고객지원 및 서비스 챗봇으리 자연스러운 대화능력 평가</td><td>사용자 만족도 평가 활용</td></tr><tr><td>AI 어시스턴트</td><td>Siri 등 가상비서의 대화 성능 측정</td><td>사용자 경험 개선 기여</td></tr><tr><td>AI 연구</td><td>AI 시스템의 지능 수준 평가</td><td>AI 발전지표</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-고려사항">튜링테스트 고려사항<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="튜링테스트 고려사항에 대한 직접 링크" title="튜링테스트 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>LLM의 발전으로 사람보다 더 뛰어난 답변으로 GPT4o모델을 구별해낼 수 있어 튜링테스트 실패 가능</li>
+<li>인공지능 품질속성을 기반으로 새로운 평가체계마련 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[K-means, DBSCAN 클러스터링]]></title>
             <link>https://gracefullight.dev/pe/algo/kmeans-and-dbscan/</link>
@@ -245,34 +271,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[DID, Digital Information Display]]></title>
-            <link>https://gracefullight.dev/pe/conv/did/</link>
-            <guid>https://gracefullight.dev/pe/conv/did/</guid>
-            <pubDate>Sun, 11 Aug 2024 12:16:10 GMT</pubDate>
-            <description><![CDATA[Digital Information Display]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-개념">DID 개념<a href="https://gracefullight.dev/pe/conv/did/#did-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="DID 개념에 대한 직접 링크" title="DID 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>화면을 통해 텍스트, 이미지, 비디오, 인터렉티브 요소와 같은 동적 컨텐츠를 표시하는 시각적 커뮤니케이션 도구</li>
-<li>물리적 자료 인쇄, 배포에 드는 비용 절감, 효율적인 정보 전달 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성도-구성요소-활용사례">DID 구성도, 구성요소, 활용사례<a href="https://gracefullight.dev/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="DID 구성도, 구성요소, 활용사례에 대한 직접 링크" title="DID 구성도, 구성요소, 활용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성도">DID 구성도<a href="https://gracefullight.dev/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="DID 구성도에 대한 직접 링크" title="DID 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>CMS를 통해 다양한 디스플레이 장치에 정보 표현</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성요소">DID 구성요소<a href="https://gracefullight.dev/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="DID 구성요소에 대한 직접 링크" title="DID 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>핵심기술</th></tr></thead><tbody><tr><td>디스플레이 장치</td><td>텍스트, 이미지, 비디오 등 다양한 형태의 컨텐츠 표시</td><td>LCD/LED/OLED 디스플레이</td></tr><tr><td>콘텐츠 관리 시스템</td><td>디스플레이에 표시될 컨텐츠 생성, 편집, 관리 소프트웨어</td><td>웹 기반, 데이터베이스</td></tr><tr><td>네트워크</td><td>디스플레이 장치와 CMS 간의 데이터 전송, 원격 업데이트용 네트워크 인프라</td><td>엣지 컴퓨팅</td></tr><tr><td>인터렉티브 요소</td><td>사용자와 상호작용할 수 있는 기능 제공하여 경험 향상</td><td>터치스크린, 센싱</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-활용사례">DID 활용사례<a href="https://gracefullight.dev/pe/conv/did/#did-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="DID 활용사례에 대한 직접 링크" title="DID 활용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>항공정보, 안내방송, 광고 등 공공 정보 제공</td><td>실시간 업데이트</td></tr><tr><td>금융</td><td>수업 시간표, 이벤트 알림, 공지사항 등 정보 제공</td><td>정보 집중도 증가</td></tr><tr><td>민간</td><td>회의 일정, 공지사항, 직원 정보 제공</td><td>내부 커뮤니케이션</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-고려사항">DID 고려사항<a href="https://gracefullight.dev/pe/conv/did/#did-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="DID 고려사항에 대한 직접 링크" title="DID 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>앰비언트 컴퓨팅을 활용하여 사용자에게 맞춤형, 적응형 컨텐츠 표현</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
         </item>
     </channel>
 </rss>

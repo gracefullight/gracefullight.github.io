@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 18 Aug 2024 14:00:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 14:09:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[튜링테스트]]></title>
+            <link>https://gracefullight.dev/en/pe/algo/turing-test/</link>
+            <guid>https://gracefullight.dev/en/pe/algo/turing-test/</guid>
+            <pubDate>Sun, 18 Aug 2024 14:09:33 GMT</pubDate>
+            <description><![CDATA[Turing Test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-개념">튜링테스트 개념<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>인공지능의 수준을 평가하기 위해 인간과 인공지능의 사고능력을 비교하는 블라인드 테스트</li>
+<li>자연어 처리기술 발전, 기계와 인간 구분의 모호성, AI활용 서비스 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성도-구성요소-활용사례">튜링테스트 구성도, 구성요소, 활용사례<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성도">튜링테스트 구성도<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-구성요소">튜링테스트 구성요소<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>심판</td><td>AI와 인간을 구별하는 역할</td><td>익명 대화</td></tr><tr><td>AI</td><td>인간처럼 행동하는 인공지능</td><td>언어모델 등</td></tr><tr><td>인간</td><td>별도 공간에서 질의응답</td><td>대조군 역할</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="튜링테스트-활용사례">튜링테스트 활용사례<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>챗봇 개발</td><td>고객지원 및 서비스 챗봇으리 자연스러운 대화능력 평가</td><td>사용자 만족도 평가 활용</td></tr><tr><td>AI 어시스턴트</td><td>Siri 등 가상비서의 대화 성능 측정</td><td>사용자 경험 개선 기여</td></tr><tr><td>AI 연구</td><td>AI 시스템의 지능 수준 평가</td><td>AI 발전지표</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="�튜링테스트-고려사항">튜링테스트 고려사항<a href="https://gracefullight.dev/en/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>LLM의 발전으로 사람보다 더 뛰어난 답변으로 GPT4o모델을 구별해낼 수 있어 튜링테스트 실패 가능</li>
+<li>인공지능 품질속성을 기반으로 새로운 평가체계마련 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[K-means, DBSCAN 클러스터링]]></title>
             <link>https://gracefullight.dev/en/pe/algo/kmeans-and-dbscan/</link>
@@ -24,7 +50,7 @@
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>데이터셋을 K개의 클러스터로 나눠 각 데이터가 가장 가까운 클러스터 중심에 할당하여 군집화하는 알고리즘</td></tr><tr><td>특징</td><td>초기 중심점 설정 민감, 이상치 민감</td></tr><tr><td>-</td><td>가벼운 시간 복잡도, 구형 클러스터 적합</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_FIHG" id="dbscan-클러스터링-개념-및-특징">DBSCAN 클러스터링 개념 및 특징<a href="https://gracefullight.dev/en/pe/algo/kmeans-and-dbscan/#dbscan-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념</td><td>밀도가 높은 지역에서 클러스터를 형성하고, 밀도가 낮은 지역은 노이즈로 간주하는 알고리즘</td></tr><tr><td>특징</td><td>클러스터 모양이 불규칙해도 좋은 성능</td></tr><tr><td>-</td><td>입실론 거리와 최소 포인트 수 조정이 성능의 핵심 요소</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="k-means-dbscan-클러스터링-비교">K-means, DBSCAN 클러스터링 비교<a href="https://gracefullight.dev/en/pe/algo/kmeans-and-dbscan/#k-means-dbscan-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="k-means-dbscan-클러스터링-비교">K-means, DBSCAN 클러스터링 비교<a href="https://gracefullight.dev/en/pe/algo/kmeans-and-dbscan/#k-means-dbscan-%ED%81%B4%EB%9F%AC%EF%BF%BD%EC%8A%A4%ED%84%B0%EB%A7%81-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>K-means</th><th>DBSCAN</th></tr></thead><tbody><tr><td>기반</td><td>거리기반</td><td>밀도기반</td></tr><tr><td>클러스터 형태</td><td>구형 클러스터 적합</td><td>임의 모양 식별 가능</td></tr><tr><td>노이즈 처리</td><td>약함</td><td>강함</td></tr><tr><td>처리 속도</td><td>빠름</td><td>느림</td></tr><tr><td>초기화</td><td>초기 중심점 선택 중요</td><td>덜 민감</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_FIHG" id="클러스터링-고려사항">클러스터링 고려사항<a href="https://gracefullight.dev/en/pe/algo/kmeans-and-dbscan/#%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -79,7 +105,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_FIHG" id="전자정부-uiux-설계기준-구성요소">전자정부 UI/UX 설계기준 구성요소<a href="https://gracefullight.dev/en/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원칙</td><td>방향성과 설꼐 기준</td><td>상위원칙, 준수방안</td></tr><tr><td>스타일</td><td>컴포넌트, 패턴을 시각적 일관성을 표현하기 위한 규칙</td><td>시각적 경험, 규칙 기반</td></tr><tr><td>컴포넌트</td><td>UI의 기본단위로 공통 요소에 대한 가이드</td><td>특성, 역할, 유형, 용례</td></tr><tr><td>기본패턴</td><td>컴포넌트의 조합으로 사용되는 UI 집합</td><td>공통 과업 패턴</td></tr><tr><td>서비스패턴</td><td>사용자 여정 기반 UX 설계 가이드</td><td>필수, 권장, 우수 단계</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="전자정��부-uiux-설계기준-적용범위-및-항목">전자정부 UI/UX 설계기준 적용범위 및 항목<a href="https://gracefullight.dev/en/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EC%A0%81%EC%9A%A9%EB%B2%94%EC%9C%84-%EB%B0%8F-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_FIHG" id="전자정부-uiux-설계기준-적용범위-및-항목">전자정부 UI/UX 설계기준 적용범위 및 항목<a href="https://gracefullight.dev/en/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EC%A0%81%EC%9A%A9%EB%B2%94%EC%9C%84-%EB%B0%8F-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>적용범위</th><th>항목</th></tr></thead><tbody><tr><td>중앙행정기관</td><td>정부로고, 독자로고 사용 중앙행정기관 어플리케이션</td><td>공식 배너, 헤더, 푸터</td></tr><tr><td>공공기관</td><td>공공기관 대표 운영 어플리케이션</td><td>헤더, 푸터</td></tr><tr><td>지방자치단체</td><td>지방자치단게 운영 어플리케이션</td><td>공식 배너, 헤더, 푸터</td></tr></tbody></table>
 <ul>
 <li>UI/UX 스타일 가이드와 컴포넌트 패턴 가이드를 모두 준수 필요</li>
@@ -151,7 +177,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_FIHG" id="강화학습-주요-알고리즘">강화학습 주요 알고리즘<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Q-Learning</td><td>가치기반 학습방법, 각 상태-행동 쌍에 대한 가치를 업데이트하여 최적 정책 학습</td><td>오프라인학습, 단순 문제</td></tr><tr><td>SARSA</td><td>실제 정책을 사용하여 상태-행동 가치함수를 학습하는 시간차 방법</td><td>온라인 학습</td></tr><tr><td>DQN</td><td>딥러닝을 이용한 Q-Learning, 신경망을 사용하여 Q값을 근사 처리</td><td>복합한 문제</td></tr><tr><td>Policy Gradient</td><td>보상 기대값을 최대화하는 방향의 정책을 직접 학습</td><td>연속적 행동 적합</td></tr><tr><td>Actor-Critic</td><td>정책기반과 가치기반 알고리즘 결합, 액터는 정책경사모델로 행동 결정, 크리틱은 Q러닝으로 행동 비평</td><td>안정성, 효율성</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="강화학습-적용방안">강화학습 적용방안<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EF%BF%BD%EC%8A%B5-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_FIHG" id="강화학습-적용방안">강화학습 적용방안<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%A0%81%EF%BF%BD%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>게임AI</td><td>게임 내 최적 전략을 학습하여 사람과 경쟁가능한 AI 개발</td><td>Starcraft, Dota2</td></tr><tr><td>로봇제어</td><td>로봇 움직임을 강화학습하여 자율적 환경 탐색 및 작업 수행</td><td>자율주행, 드론제어</td></tr><tr><td>금융거래</td><td>거래 데이터로 강화학습하여 최적의 거래 전략 학습/적용</td><td>리스크 관리, 포트폴리오 최적화</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_FIHG" id="강화학습-고려사항">강화학습 고려사항<a href="https://gracefullight.dev/en/pe/algo/reinforcement-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -245,34 +271,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[DID, Digital Information Display]]></title>
-            <link>https://gracefullight.dev/en/pe/conv/did/</link>
-            <guid>https://gracefullight.dev/en/pe/conv/did/</guid>
-            <pubDate>Sun, 11 Aug 2024 12:16:10 GMT</pubDate>
-            <description><![CDATA[Digital Information Display]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-개념">DID 개념<a href="https://gracefullight.dev/en/pe/conv/did/#did-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>화면을 통해 텍스트, 이미지, 비디오, 인터렉티브 요소와 같은 동적 컨텐츠를 표시하는 시각적 커뮤니케이션 도구</li>
-<li>물리적 자료 인쇄, 배포에 드는 비용 절감, 효율적인 정보 전달 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성도-구성요소-활용사례">DID 구성도, 구성요소, 활용사례<a href="https://gracefullight.dev/en/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성도">DID 구성도<a href="https://gracefullight.dev/en/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>CMS를 통해 다양한 디스플레이 장치에 정보 표현</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-구성요소">DID 구성요소<a href="https://gracefullight.dev/en/pe/conv/did/#did-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>핵심기술</th></tr></thead><tbody><tr><td>디스플레이 장치</td><td>텍스트, 이미지, 비디오 등 다양한 형태의 컨텐츠 표시</td><td>LCD/LED/OLED 디스플레이</td></tr><tr><td>콘텐츠 관리 시스템</td><td>디스플레이에 표시될 컨텐츠 생성, 편집, 관리 소프트웨어</td><td>웹 기반, 데이터베이스</td></tr><tr><td>네트워크</td><td>디스플레이 장치와 CMS 간의 데이터 전송, 원격 업데이트용 네트워크 인프라</td><td>엣지 컴퓨팅</td></tr><tr><td>인터렉티브 요소</td><td>사용자와 상호작용할 수 있는 기능 제공하여 경험 향상</td><td>터치스크린, 센싱</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_FIHG" id="did-활용사례">DID 활용사례<a href="https://gracefullight.dev/en/pe/conv/did/#did-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>항공정보, 안내방송, 광고 등 공공 정보 제공</td><td>실시간 업데이트</td></tr><tr><td>금융</td><td>수업 시간표, 이벤트 알림, 공지사항 등 정보 제공</td><td>정보 집중도 증가</td></tr><tr><td>민간</td><td>회의 일정, 공지사항, 직원 정보 제공</td><td>내부 커뮤니케이션</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_FIHG" id="did-고려사항">DID 고려사항<a href="https://gracefullight.dev/en/pe/conv/did/#did-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>앰비언트 컴퓨팅을 활용하여 사용자에게 맞춤형, 적응형 컨텐츠 표현</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
         </item>
     </channel>
 </rss>
