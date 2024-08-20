@@ -24,7 +24,7 @@ block-beta
     columns 2
     뉴런
     시냅스
-    통신:2
+    통신모듈1["통신모듈"]:2
   end
   blockArrowId1<["스파이크"]>(up):1
   block:group2:2
