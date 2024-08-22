@@ -78,7 +78,7 @@
     "lint-staged": "^15.2.9",
     "oxlint": "^0.7.2",
     "regenerator-runtime": "^0.14.1",
-    "sort-package-json": "^2.10.0",
+    "sort-package-json": "^2.10.1",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   },
