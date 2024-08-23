@@ -16,7 +16,7 @@
     "docusaurus": "docusaurus",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "lint": "oxlint --fix",
+    "lint": "oxlint --fix --import-plugin",
     "prepare": "husky",
     "serve": "docusaurus serve",
     "start": "docusaurus start",
