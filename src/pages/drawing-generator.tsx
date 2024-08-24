@@ -1,5 +1,7 @@
+import type { Color } from "@site/src/utils";
 import {
   addMetadataChunks,
+  calculateColorDistance,
   downloadImage,
   removeTEXtChunks,
   validateImageSize,
@@ -7,7 +9,7 @@ import {
 import Layout from "@theme/Layout";
 import { DateTime } from "luxon";
 import { kmeans } from "ml-kmeans";
-import { useEffect, useRef, useState, type ChangeEvent } from "react";
+import { type ChangeEvent, useEffect, useRef, useState } from "react";
 
 export default function DrawingGeneratorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -66,10 +68,10 @@ export default function DrawingGeneratorPage() {
     ctx: CanvasRenderingContext2D,
     userHexColor: string,
   ) => {
-    const userColor = {
-      r: parseInt(userHexColor.slice(1, 3), 16),
-      g: parseInt(userHexColor.slice(3, 5), 16),
-      b: parseInt(userHexColor.slice(5, 7), 16),
+    const userColor: Color = {
+      r: Number.parseInt(userHexColor.slice(1, 3), 16),
+      g: Number.parseInt(userHexColor.slice(3, 5), 16),
+      b: Number.parseInt(userHexColor.slice(5, 7), 16),
     };
 
     const imageData = ctx.getImageData(
@@ -98,11 +100,7 @@ export default function DrawingGeneratorPage() {
       let minDistance = Number.MAX_SAFE_INTEGER;
       for (let i = 0; i < centroids.length; i++) {
         const centroid = centroids[i];
-        const distance = Math.sqrt(
-          Math.pow(userColor.r - centroid.r, 2) +
-            Math.pow(userColor.g - centroid.g, 2) +
-            Math.pow(userColor.b - centroid.b, 2),
-        );
+        const distance = calculateColorDistance(userColor, centroid);
 
         if (distance < minDistance) {
           minDistance = distance;
@@ -297,7 +295,9 @@ export default function DrawingGeneratorPage() {
                     max="0.5"
                     step="0.01"
                     value={colorWeight}
-                    onChange={(e) => setColorWeight(parseFloat(e.target.value))}
+                    onChange={(e) =>
+                      setColorWeight(Number.parseFloat(e.target.value))
+                    }
                     title="가중치 설정"
                   />
                 </div>
