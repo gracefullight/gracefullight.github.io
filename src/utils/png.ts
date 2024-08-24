@@ -72,14 +72,16 @@ function createZTXtChunk(keyword: string, data: string): Chunk {
   // Compression method
   fullData.set(compressionMethod, keywordBytes.length + 1);
   // Compressed data
-  fullData.set(compressedData, keywordBytes.length + 1 + 1);
+  fullData.set(compressedData, keywordBytes.length + 2);
 
   // Prepare CRC calculation
   const crcBuffer = new Uint8Array(4 + fullData.length);
   crcBuffer.set(new TextEncoder().encode(type), 0);
   crcBuffer.set(fullData, 4);
+
+  // Correct CRC calculation, using the correct buffer and index range
   // ? https://github.com/SheetJS/js-crc32#best-practices
-  const crcValue = buf(crcBuffer, 0);
+  const crcValue = buf(crcBuffer);
 
   return {
     type,
@@ -130,10 +132,17 @@ export function addMetadataChunks(
 
   const authIdChunk = createZTXtChunk("authid", authId);
   const authorChunk = createZTXtChunk("author", author);
-  const insertIdx =
-    chunks.findIndex(({ type }) => type === "IHDR" || type === "PLTE") + 1;
 
-  chunks.splice(insertIdx, 0, authIdChunk, authorChunk);
+  // Improved logic to find the correct insertion point
+  const insertIdx = chunks.findIndex(({ type }) => type === "IHDR") + 1;
+
+  // If no PLTE exists, insert after IHDR
+  if (chunks[insertIdx]?.type === "PLTE") {
+    chunks.splice(insertIdx + 1, 0, authIdChunk, authorChunk);
+  } else {
+    chunks.splice(insertIdx, 0, authIdChunk, authorChunk);
+  }
+
   const totalLength = calculateTotalLength(chunks);
 
   return createPngArrayBuffer(totalLength, arrayBuffer, chunks);
