@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.4579590d.css">
-<script src="/assets/js/runtime~main.5742b082.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.388175b0.js" defer="defer"></script>
 <script src="/assets/js/main.1ba007b1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -119,13 +119,13 @@
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-보안의-개념도">제로 트러스트 보안의 개념도<a href="#제로-트러스트-보안의-개념도" class="hash-link" aria-label="제로 트러스트 보안의 개념도에 대한 직접 링크" title="제로 트러스트 보안의 개념도에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
-<li>제로 트러스트 패러다임에 맞는 지속적인 요청 검증, 마이크로 세그먼테이션, SDN기반 경계 정의 필요</li>
+<li>제로 트러스트 패러다임에 맞는 지속적인 요청 검증, 마이크로 세그먼테이션, SDN기반 경계 정의 (<mark class="flexible-marker flexible-marker-default">SDP</mark>) 필요</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-보안-핵심요소">제로 트러스트 보안 핵심요소<a href="#제로-트러스트-보안-핵심요소" class="hash-link" aria-label="제로 트러  스트 보안 핵심요소에 대한 직접 링크" title="제로 트러스트 보안 핵심요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-보안-핵심요소">제로 트러스트 보안 핵심요소<a href="#제로-트러스트-보안-핵심요소" class="hash-link" aria-label="제로 트러스트 보안 핵심요소에 대한 직접 링크" title="제로 트러스트 보안 핵심요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>기존 트러스트 보안</th><th>제로 트러스트 보안</th></tr></thead><tbody><tr><td>신뢰성</td><td>신뢰 기반</td><td>비신뢰 기반</td></tr><tr><td>인증</td><td>연결시에만 인증 수행</td><td>연결 후에도 지속적인 인증</td></tr><tr><td>권한</td><td>높은 수준 권한 부여</td><td>최소 수준 권한 부여</td></tr><tr><td>경계</td><td>기업망 단위 보안 경계</td><td>SW 정의 보안 경계</td></tr><tr><td>NW분할</td><td>네트워크 세그먼테이션</td><td>마이크로 세그먼테이션</td></tr><tr><td>리소스 검증</td><td>인증시 리소스 접근 가능</td><td>정책결정포인트, 정책집행포인트</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-적용분야">제로 트러스트 적용분야<a href="#제로-트러스트-적용분야" class="hash-link" aria-label="제로 트러스트 적용분야에 대한 직접 링크" title="제로 트러스트 적용분야에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>분야</th><th>내용</th></tr></thead><tbody><tr><td>클라우드환경</td><td>클라우드 서비스 접근제어</td><td>클라우드 서비스 접근시 사용자기기, 앱에 대한 지속적 검증, 인증</td></tr><tr><td>원격근무환경</td><td>VPN 접속시 다중 인증</td><td>VPN 접근 사용자 인증 강화, 기기 상태 확인</td></tr><tr><td>데이터 보호</td><td>중요데이터 접근 제어</td><td>사용자 권한 및 데이터 접근 맥락 확인, 사용자 액션 로깅</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-보안-적용시-고려사항">제로 트러스트 보안 적용시 고려사항<a href="#제로-트러스트-보안-적용시-고려사항" class="hash-link" aria-label="제로 트러스트 보 안 적용시 고려사항에 대한 직접 링크" title="제로 트러스트 보안 적용시 고려사항에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="제로-트러스트-보안-적용시-고려사항">제로 트러스트 보안 적용시 고려사항<a href="#제로-트러스트-보안-적용시-고려사항" class="hash-link" aria-label="제로 트러스트 보안 적용시 고려사항에 대한 직접 링크" title="제로 트러스트 보안 적용시 고려사항에 대한 직접 링크">​</a></h2>
 <ul>
 <li>ITAM 도입을 선행하여 정보 자산의 추적용이성 확보</li>
 </ul>
