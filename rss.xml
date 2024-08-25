@@ -4,10 +4,48 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 25 Aug 2024 11:47:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 25 Aug 2024 13:20:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[무선충전 기술]]></title>
+            <link>https://gracefullight.dev/pe/conv/wireless-power-transfer/</link>
+            <guid>https://gracefullight.dev/pe/conv/wireless-power-transfer/</guid>
+            <pubDate>Sun, 25 Aug 2024 13:20:54 GMT</pubDate>
+            <description><![CDATA[Wireless Power Transfer]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-개념">무선충전 기술 개념<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="무선충전 기술 개념에 대한 직접 링크" title="무선충전 기술 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>전자기유도나 전자기파를 이용하여 전력을 무선으로 전송하여 배터리를 충전하는 기술</li>
+<li>IoT 무선충전, 자율주행차 무선 충전을 위해 중요성 대두</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-방식-유형">무선충전 방식 유형<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EB%B0%A9%EC%8B%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="무선충전 방식 유형에 대한 직접 링크" title="무선충전 방식 유형에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="자기유도-방식">자기유도 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%9E%90%EA%B8%B0%EC%9C%A0%EB%8F%84-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="자기유도 방식에 대한 직접 링크" title="자기유도 방식에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Inductive coupling</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>1,2차 코일 간 자기유도현상을 이용</td><td>패러데이 법칙</td></tr><tr><td>특징</td><td>고효율, 짧은 거리, 충전패드 접촉</td><td>범용성</td></tr><tr><td>응용</td><td>스마트폰, 웨어러블 기기</td><td>Qi 표준</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="자기공명-방식">자기공명 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%9E%90%EA%B8%B0%EA%B3%B5%EB%AA%85-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="자기공명 방식에 대한 직접 링크" title="자기공명 방식에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Resonant magnetic coupling</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>송수신 코일 간의 자기장 공명 이용</td><td>에너지 효율성</td></tr><tr><td>특징</td><td>수m 전송 가능, 동시 충전 가능</td><td>공간 자유도</td></tr><tr><td>응용</td><td>전기자동차, 휴머노이드</td><td>AirFuel 표준</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="전자기파-방식">전자기파 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%A0%84%EC%9E%90%EA%B8%B0%ED%8C%8C-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="전자기파 방식에 대한 직접 링크" title="전자기파 방식에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>RF-based wireless power</p>
+</blockquote>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>송신 안테나에서 전자기파 발생, 수신 안테나에서 전력 변환</td><td>넓은 커버리지</td></tr><tr><td>특징</td><td>매우 긴 전송거리, 장애물 투과, 저효율</td><td>원거리 무선충전</td></tr><tr><td>응용</td><td>IoT 센서, 소형 전자기기</td><td>Wi-charge</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-비교">무선충전 기술 비교<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="무선충전 기술 비교에 대한 직접 링크" title="무선충전 기술 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>자기유도</th><th>자기공명</th><th>전자기파</th></tr></thead><tbody><tr><td>거리</td><td>초단거리, cm</td><td>단거리, m</td><td>장거리, km</td></tr><tr><td>효율</td><td>높음, 70%이상</td><td>보통 40~60%</td><td>낮음 1%미만</td></tr><tr><td>정렬 필요성</td><td>높음</td><td>낮음</td><td>낮음</td></tr><tr><td>응용분야</td><td>스마트폰, 웨어러블 디바이스</td><td>전기차, 로봇</td><td>IoT 센서, 소형기기</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-고려사항">무선충전 기술 고려사항<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="무선충전 기술 고려사항에 대한 직접 링크" title="무선충전 기술 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>효율, 안전, 비용</li>
+<li>폐배터리</li>
+<li>충전인프라</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[스마트 양식장]]></title>
             <link>https://gracefullight.dev/pe/nw/smart-aqua-farming/</link>
@@ -250,35 +288,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[전자정부 UI/UX 설계기준]]></title>
-            <link>https://gracefullight.dev/pe/db/전자정부-UI-UX-설계기준/</link>
-            <guid>https://gracefullight.dev/pe/db/전자정부-UI-UX-설계기준/</guid>
-            <pubDate>Tue, 13 Aug 2024 08:26:41 GMT</pubDate>
-            <description><![CDATA[전자정부 UI/UX 설계기준]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-설계기준-개념">전자정부 UI/UX 설계기준 개념<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="전자정부 UI/UX 설계기준 개념에 대한 직접 링크" title="전자정부 UI/UX 설계기준 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>전자정부 웹사이트 구축시 사용자 경험 최적화와 접근성 제고를 위해 표준화된 지침</li>
-<li>사용자중심 설계, 접근성 향상, 법적요구사항 준수, 일관성 유지, 유지보수성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-설계기준-구성도-구성요소-적용범위-및-항목">전자정부 UI/UX 설계기준 구성도, 구성요소, 적용범위 및 항목<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B2%94%EC%9C%84-%EB%B0%8F-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="전자정부 UI/UX 설계기준 구성도, 구성요소, 적용범위 및 항목에 대한 직접 링크" title="전자정부 UI/UX 설계기준 구성도, 구성요소, 적용범위 및 항목에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-설계기준-구성도">전자정부 UI/UX 설계기준 구성도<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="전자정부 UI/UX 설계기준 구성도에 대한 직접 링크" title="전자정부 UI/UX 설계기준 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>원칙을 기반으로 스타일, 컴포넌트, 패턴을 확장하여 설계</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-설계기준-구성요소">전자정부 UI/UX 설계기준 구성요소<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="전자정부 UI/UX 설계기준 구성요소에 대한 직접 링크" title="�전자정부 UI/UX 설계기준 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>원칙</td><td>방향성과 설꼐 기준</td><td>상위원칙, 준수방안</td></tr><tr><td>스타일</td><td>컴포넌트, 패턴을 시각적 일관성을 표현하기 위한 규칙</td><td>시각적 경험, 규칙 기반</td></tr><tr><td>컴포넌트</td><td>UI의 기본단위로 공통 요소에 대한 가이드</td><td>특성, 역할, 유형, 용례</td></tr><tr><td>기본패턴</td><td>컴포넌트의 조합으로 사용되는 UI 집합</td><td>공통 과업 패턴</td></tr><tr><td>서비스패턴</td><td>사용자 여정 기반 UX 설계 가이드</td><td>필수, 권장, 우수 단계</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-설계기준-적용범위-및-항목">전자정부 UI/UX 설계기준 적용범위 및 항목<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80-%EC%A0%81%EC%9A%A9%EB%B2%94%EC%9C%84-%EB%B0%8F-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="전자정부 UI/UX 설계기준 적용범위 및 항목에 대한 직접 링크" title="전자정부 UI/UX 설계기준 적용범위 및 항목에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>적용범위</th><th>항목</th></tr></thead><tbody><tr><td>중앙행정기관</td><td>정부로고, 독자로고 사용 중앙행정기관 어플리케이션</td><td>공식 배너, 헤더, 푸터</td></tr><tr><td>공공기관</td><td>공공기관 대표 운영 어플리케이션</td><td>헤더, 푸터</td></tr><tr><td>지방자치단체</td><td>지방자치단게 운영 어플리케이션</td><td>공식 배너, 헤더, 푸터</td></tr></tbody></table>
-<ul>
-<li>UI/UX 스타일 가이드와 컴포넌트 패턴 가이드를 모두 준수 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-가이드라인-활용방안">전자정부 UI/UX 가이드라인 활용방안<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="전자정부 UI/UX 가이드라인 활용방안에 대한 직접 링크" title="전자정부 UI/UX 가이드라인 활용방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>요구사항 정의</td><td>프로젝트 초기 요구사항에 설계기준 포함</td><td>명확한 목표 설정</td></tr><tr><td>설계 및 개발</td><td>설계 기준과 가이드라인 참고 UI/UX 설계, 개발</td><td>일관된 디자인 보장</td></tr><tr><td>테스트</td><td>품질 점검표 사용 UI/UX 품질 검사</td><td>오류/개선점 식별</td></tr><tr><td>유지보수</td><td>정기적 UI/UX 평가 및 개선</td><td>지속적 사용자 만족도유지</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
         </item>
     </channel>
 </rss>
