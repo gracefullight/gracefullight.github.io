@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-25T10:18:27.583Z</updated>
+    <updated>2024-08-25T11:47:28.385Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[스마트 양식장]]></title>
+        <id>https://gracefullight.dev/pe/nw/smart-aqua-farming/</id>
+        <link href="https://gracefullight.dev/pe/nw/smart-aqua-farming/"/>
+        <updated>2024-08-25T11:47:28.385Z</updated>
+        <summary type="html"><![CDATA[Smart Aqua-farming]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-개념">스마트 양식장 개념<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="스마트 양식장 개념에 대한 직접 링크" title="스마트 양식장 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>IoT, AI, 빅데이터 활용하여 양식환경을 자동화, 지능화한 시스템을 갖춘 양식장</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도-구성요소-적용단계">스마트 양식장 구성도, 구성요소, 적용단계<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="스마트 양식장 구성도, 구성요소, 적용단계에 대한 직접 링크" title="스마트 양식장 구성도, 구성요소, 적용단계에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도">스마트 양식장 구성도<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="스마트 양식장 구성도에 대한 직접 링크" title="스마트 양식장 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>5G 특화망 네트워크 내에서 각 시스템 연결</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성요소">스마트 양식장 구성요소<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="스마트 양식장 구성요소에 대한 직접 링크" title="스마트 양식장 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관제시스템</td><td>수온, pH, 용존산소 등 데이터 관제</td><td>통제 및 의사결정</td></tr><tr><td>제어시스템</td><td>최적 생육 환경 유지, 자동화</td><td>자동급이, 용수 배출</td></tr><tr><td>데이터 분석플랫폼</td><td>데이터 저장, 분석, 시각화, 머신러닝</td><td>클라우드 기반</td></tr><tr><td>5G 특화망</td><td>실시간 데이터 전송</td><td>저지연, 원격제어</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-적용단계">스마트 양식장 적용단계<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="스마트 양식장 적용단계에 대한 직접 링크" title="스마트 양식장 적용단계에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>단계</th><th>내용</th><th>핵심기술</th></tr></thead><tbody><tr><td>4</td><td>자율 양식 시장 수요예측, 생산량 자동 조절</td><td>디지털 트윈</td></tr><tr><td>3</td><td>생육환경 최적화, 지능화</td><td>AI</td></tr><tr><td>2</td><td>복합환경 데이터기반 자동화</td><td>빅데이터</td></tr><tr><td>1</td><td>수질환경 실시간 확인 및 원격제어</td><td>IoT</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-고려사항">스마트 양식장 고려사항<a href="https://gracefullight.dev/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="스마트 양식장 고려사항에 대한 직접 링크" title="스마트 양식장 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>장기적 운영 및 시스템 고도화 비용 고려</td><td>유지보수성, 확장성</td></tr><tr><td>환경적</td><td>환경부담 최소화, 지속가능한 양식 기반 마련</td><td>에너지 효율성</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[오픈플랫폼, 오픈API]]></title>
         <id>https://gracefullight.dev/pe/conv/open-platform-and-open-api/</id>
@@ -283,32 +312,6 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_xtJj" id="전자정부-uiux-가이드라인-활용방안">전자정부 UI/UX 가이드라인 활용방안<a href="https://gracefullight.dev/pe/db/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-UI-UX-%EC%84%A4%EA%B3%84%EA%B8%B0%EC%A4%80/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-uiux-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="전자정부 UI/UX 가이드라인 활용방안에 대한 직접 링크" title="전자정부 UI/UX 가이드라인 활용방안에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>요구사항 정의</td><td>프로젝트 초기 요구사항에 설계기준 포함</td><td>명확한 목표 설정</td></tr><tr><td>설계 및 개발</td><td>설계 기준과 가이드라인 참고 UI/UX 설계, 개발</td><td>일관된 디자인 보장</td></tr><tr><td>테스트</td><td>품질 점검표 사용 UI/UX 품질 검사</td><td>오류/개선점 식별</td></tr><tr><td>유지보수</td><td>정기적 UI/UX 평가 및 개선</td><td>지속적 사용자 만족도유지</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[빅데이터 플랫폼 아키텍쳐]]></title>
-        <id>https://gracefullight.dev/pe/conv/bigdata-platform-architecture/</id>
-        <link href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/"/>
-        <updated>2024-08-12T13:16:38.222Z</updated>
-        <summary type="html"><![CDATA[Big-data Platform Architecture]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="빅테이터-플랫폼-아키텍처-개념">빅테이터 플랫폼 아키텍처 개념<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%ED%85%8C%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="빅테이터 플랫폼 아키텍처 개념에 대한 직접 링크" title="빅테이터 플랫폼 아키텍처 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>빅데이터의 3V(크기, 다양성, 속도) 측면을 효과적으로 처리, 분석하기 위한 시스템 아키텍처</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="빅데이터-플랫폼-아키텍처-구성도-구성요소-적용방안">빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="빅데이터-플랫폼-아키텍처-구성도">빅데이터 플랫폼 아키텍처 구성도<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성도에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="빅데이터-플랫폼-아키텍처-구성요소">빅데이터 플랫폼 아키텍처 구성요소<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 구성요소에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터수집</td><td>실시간 데이터 수집</td><td>Kafka</td></tr><tr><td>데이터저장</td><td>대용량 데이터 저장</td><td>HDFS, S3, NoSQL DB</td></tr><tr><td>데이터처리</td><td>배치 및 실시간 처리</td><td>Spark, MapReduce</td></tr><tr><td>데이터분석</td><td>SQL 기반 데이터 분석</td><td>Hive, Spark SQL</td></tr><tr><td>데이터시각화</td><td>분석 결과 시각화</td><td>Tableau, Grafana</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="빅데이터-플랫폼-아키텍처-적용방안">빅데이터 플랫폼 아키텍처 적용방안<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 적용방안에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 적용방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>소셜미디어 분석</td><td>사용자 행동 패턴 분석</td><td>실시간 처리</td></tr><tr><td>로그 분석</td><td>시스템 장애 예측, 최적화</td><td>대용량 처리</td></tr><tr><td>금융사기탐지</td><td>이상거래 탐지, 사기 탐지</td><td>실시간 처리, AI</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="빅데이터-플랫폼-아키텍처-고려사항">빅데이터 플랫폼 아키텍처 고려사항<a href="https://gracefullight.dev/pe/conv/bigdata-platform-architecture/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="빅데이터 플랫폼 아키텍처 고려사항에 대한 직접 링크" title="빅데이터 플랫폼 아키텍처 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>확장성</td><td>데이터 증가에 따른 유연한 대응</td><td>수평적 확장 고려</td></tr><tr><td>성능</td><td>빠른 데이터 처리 분석 속도</td><td>실시간 처리 요구사항</td></tr><tr><td>보안</td><td>데이터 접근통제 암호화</td><td>분석 후 폐기, RBAC</td></tr><tr><td>비용</td><td>효율적 자원 활용, 스케일 다운</td><td>클라우드 기반 아키텍처</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
