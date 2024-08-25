@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-24T22:59:54.386Z</updated>
+    <updated>2024-08-25T10:18:27.583Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[오픈플랫폼, 오픈API]]></title>
+        <id>https://gracefullight.dev/pe/conv/open-platform-and-open-api/</id>
+        <link href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/"/>
+        <updated>2024-08-25T10:18:27.583Z</updated>
+        <summary type="html"><![CDATA[Open Platform and Open API]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-개념">오픈플랫폼 개념<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="오픈플랫폼 개념에 대한 직접 링크" title="오픈플랫폼 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>기업이 보유한 서비스, 정보 등을 쉽게 활용할 수 있도록하여 웹서비스 및 어플리케이션 개발을 지원하는 개방지향적 플랫폼</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성도-구성요소-문제점">오픈플랫폼 구성도, 구성요소, 문제점<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%AC%B8%EC%A0%9C%EC%A0%90" class="hash-link" aria-label="오픈플랫폼 구성도, 구성요소, 문제점에 대한 직접 링크" title="오픈플랫폼 구성도, 구성요소, 문제점에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성도">오픈플랫폼 구성도<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="오픈플랫폼 구성도에 대한 직접 링크" title="오픈플랫폼 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>사용자는 API 신청 이후 OpenAPI 인증 및ㄴ 활용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성요소">오픈플랫폼 구성요소<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="오픈플랫폼 구성요소에 대한 직접 링크" title="오픈플랫폼 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>사용자</td><td>OpenAPI 활용 개발 주체</td><td>개발자, 기업</td></tr><tr><td>오픈API</td><td>표준화된 API 명세 제공</td><td>OpenAPI 3.0</td></tr><tr><td>API게이트웨이</td><td>사용자 요청 검증, 라우팅, 캐싱</td><td>보안, 트래픽 처리</td></tr><tr><td>개발자포털</td><td>사용자에게 API 정보 제공</td><td>SDK, 인증, 계정 발급</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈api-문제점">오픈API 문제점<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88api-%EB%AC%B8%EC%A0%9C%EC%A0%90" class="hash-link" aria-label="오픈API 문제점에 대한 직접 링크" title="오픈API 문제점에 대한 직접 링크">​</a></h3>
+<ul>
+<li>외부 공개 APi로 데이터 노출, 악의적 사용에 대한 보안 위험</li>
+<li>API 업데이트 및 버전관리 어려움</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈api문제-해결방안">오픈API문제 해결방안<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88api%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="오픈API문제 해결방안에 대한 직접 링크" title="오픈API문제 해결방안에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>인증 및 접근 권한 부여</td><td>OAuth 2.0</td></tr><tr><td>-</td><td>버전관리 및 문서화</td><td>Swagger</td></tr><tr><td>관리적</td><td>개인정보보호법, 정보통신망법 준수</td><td>오픈API 법규 제정</td></tr><tr><td>-</td><td>사용량, 응답시간, 오류 모니터링</td><td>가용성 확보</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[앙상블 모델, 배깅, 부스팅]]></title>
         <id>https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/</id>
@@ -283,30 +315,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[머신러닝 최적화 알고리즘]]></title>
-        <id>https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/</id>
-        <link href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/"/>
-        <updated>2024-08-12T13:01:25.863Z</updated>
-        <summary type="html"><![CDATA[Machine Learning Optimization Algorithms]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="머신러닝-최적화-알고리즘">머신러닝 최적화 알고리즘<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="머신러닝 최적화 알고리즘에 대한 직접 링크" title="머신러닝 최적화 알고리즘에 대한 직접 링크">​</a></h2>
-<ul>
-<li>머신러닝 모델 학습과정에서 모델의 오차를 최소화하거나, 정확도를 최대화하기 위해 파라미터를 조정하여 모델 성능을 최적화하는 알고리즘</li>
-<li>손실함수를 최소화하여 정확도 향상, 학습 효율화, 과적합 방지</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="머신러닝-최적화-개념도-주요-알고리즘-고려사항">머신러닝 최적화 개념도, 주요 알고리즘, 고려사항<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="머신러닝 최적화 개념도, 주요 알고리즘, 고려사항에 대한 직접 링크" title="머신러닝 최적화 개념도, 주요 알고리즘, 고려사항에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="머신러닝-최적화-개념도">머신러닝 최적화 개념도<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="머신러닝 최적화 개념도에 대한 직접 링크" title="머신러닝 최적화 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="머신러닝-최적화-주요-알고리즘">머신러닝 최적화 주요 알고리즘<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A3%BC%EC%9A%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="hash-link" aria-label="머신러닝 최적화 주요 알고리즘에 대한 직접 링크" title="머신러닝 최적화 주요 알고리즘에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>경사하강법</td><td>기울기를 사용하여 손실함수 값 최소화하여 파라미터 업데이트</td><td>보편적 알고리즘</td></tr><tr><td>확률적 경사하강법</td><td>한 개의 데이터 셋을 샘플링하여 파라미터 업데이트</td><td>학습속도 향상</td></tr><tr><td>미니배치 경사하강법</td><td>적당한 크기의 미니 데이터셋으로 나눠 경사하강법 적용</td><td>병렬 컴퓨팅</td></tr><tr><td>모멘텀 최적화</td><td>이전 기울기를 사용하여 관성기반 파라미터 업데이트 가속화</td><td>지역최소값 회피</td></tr><tr><td>RMSProp</td><td>기울기 크기에 따라 학습률을 조정하여 파라미터 최적화</td><td>효율적, 지속적 학습</td></tr><tr><td>Adam</td><td>모멘텀과 RMSProp 장점 결합 최적화 수행</td><td>높은 성능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="머신러닝-최적화-알고리즘-고려사항">머신러닝 최적화 알고리즘 고려사항<a href="https://gracefullight.dev/pe/algo/machine-learning-optimization-algorithms/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="머신러닝 최적화 알고리즘 고려사항에 대한 직접 링크" title="머신러닝 최적화 알고리즘 고려사항에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>모델 선택</td><td>문제 특성에 맞는 모델 선택</td><td>데이터 크기, 특성</td></tr><tr><td>하이퍼파라미터 튜닝</td><td>학습률, 배치 크기 등 하이퍼파라미터 조정하여 모델 성능 최적화</td><td>실험적 접근 필요</td></tr><tr><td>초기화방법</td><td>파라미터 초기화는 수렴속도와 성능에 영향을 주므로, 적절한 초기화 전략 선택</td><td>무작위, Xavier 초기화</td></tr><tr><td>정규화</td><td>L1, L2 정규화를 통한 과적합 방지</td><td>리지 패널티, 라쏘, 티코노프</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
     </entry>
 </feed>
