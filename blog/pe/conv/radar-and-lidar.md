@@ -43,6 +43,8 @@ graph LR
 
 ### 라이다 개념도, 구성요소
 
+> Radio Detection and Ranging
+
 ```mermaid
 graph LR
   신호처리기 --> 레이저송신기 --> 렌즈1((렌즈))
@@ -59,6 +61,8 @@ graph LR
 | 신호처리기 | 수집된 신호 분석, 정보 추출 | 디지털 신호 처리 |
 
 ### 레이더, 라이다 비교
+
+> Light Detection and Ranging
 
 | 구분 | 레이더 | 라이다 |
 | --- | --- | --- |
