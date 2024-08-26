@@ -4,10 +4,42 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 26 Aug 2024 08:55:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Aug 2024 11:38:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[클라우드 서비스 품질 성능에 관한 기준]]></title>
+            <link>https://gracefullight.dev/pe/conv/클라우드-서비스-품질-성능에-관한-기준/</link>
+            <guid>https://gracefullight.dev/pe/conv/클라우드-서비스-품질-성능에-관한-기준/</guid>
+            <pubDate>Mon, 26 Aug 2024 11:38:56 GMT</pubDate>
+            <description><![CDATA[클라우드 서비스 품질 성능에 관한 기준]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="클라우드-서비스-품질-성능-개념">클라우드 서비스 품질 성능 개념<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="클라우드 서비스 품질 성능 개념에 대한 직접 링크" title="클라우드 서비스 품질 성능 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>클라우드컴퓨팅 서비스가 사용자의 요구사항을 충족시키고 기대하는 성능수준을 제공하는 정도</li>
+<li>서비스 품질에 대한 기준 미비로 사용자, CSP간 분쟁, 서비스 장애로 인한 손실 등 문제 발생</li>
+<li>서비스 신뢰성 확보, 권익 보호, 산업 발전</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="클라우드-서비스-품질-성능-평가-기준">클라우드 서비스 품질 성능 평가 기준<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="클라우드 서비스 품질 성능 평가 기준에 대한 직접 링크" title="클라우드 서비스 품질 성능 평가 기준에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="시스템-품질-속성">시스템 품질 속성<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1" class="hash-link" aria-label="시스템 품질 속성에 대한 직접 링크" title="시스템 품질 속성에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>설명</th><th>평가기준예시</th></tr></thead><tbody><tr><td>가용성</td><td>클라우드컴퓨팅 서비스가 장애없이 운영되는 능력</td><td>가용률 등</td></tr><tr><td>응답성</td><td>클라우드컴퓨팅 서비스 이용자의 요청이 얼마나 빨리 응답하는지에 대한 능력</td><td>응답시간 등</td></tr><tr><td>확장성</td><td>이용자 요청에 따라 자원의 양을 할당할 수 있는 능력</td><td>스케일아웃, 스케일업</td></tr><tr><td>신뢰성</td><td>CSP가 클라우드컴퓨팅 서비스를 정상적으로 운영할 수 있는 능력</td><td>서비스 회복시간, 백업주기, 백업준수율</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="고객-품질-속성">고객 품질 속성<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EA%B3%A0%EA%B0%9D-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1" class="hash-link" aria-label="고객 품질 속성에 대한 직접 링크" title="고객 품질 속성에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>설명</th><th>평가기준예시</th></tr></thead><tbody><tr><td>서비스 지속성</td><td>CSP가 클라우드 컴퓨팅서비스를 안정적으로 지속적으로 제공할 수 있는 능력</td><td>서비스 지속 역량</td></tr><tr><td>서비스 지원</td><td>클라우드 컴퓨팅 서비스의 이용 편의성을 제공하기 위한 능력</td><td>서비스 지원 환경</td></tr><tr><td>고객 대응</td><td>클라우드 서비스를 이용하는 고객 요청에 대응하는 일련의 활동</td><td>고객지원, 불만처리체계</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="클라우드-서비스-회복시간-정량적-측정지표">클라우드 서비스 회복시간 정량적 측정지표<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%9A%8C%EB%B3%B5%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%9F%89%EC%A0%81-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C" class="hash-link" aria-label="클라우드 서비스 회복시간 정량적 측정지표에 대한 직접 링크" title="클라우드 서비스 회복시간 정량적 측정지표에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>지표</th><th>설명</th><th>관련 품질</th></tr></thead><tbody><tr><td>MTBF</td><td>평균 고장 간격</td><td>안정성</td></tr><tr><td>MTTF</td><td>평균 고장 시간</td><td>내구성</td></tr><tr><td>MTTB</td><td>고장 후 복구까지의 평균 시간</td><td>유지보수성</td></tr><tr><td>가용률</td><td>시스템 정상 운영시간 비율</td><td>가용성</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="클라우드-서비스-품질-성능-측정시-고려사항">클라우드 서비스 품질 성능 측정시 고려사항<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="클라우드 서비스 품질 성능 측정시 고려사항에 대한 직접 링크" title="클라우드 서비스 품질 성능 측정시 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>SLA, SLI</li>
+<li>성능 모니터링</li>
+<li>데이터 보안</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="참조">참조<a href="https://gracefullight.dev/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://law.go.kr/%ed%96%89%ec%a0%95%ea%b7%9c%ec%b9%99/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%bb%b4%ed%93%a8%ed%8c%85%ec%84%9c%eb%b9%84%ec%8a%a4%ed%92%88%ec%a7%88%c2%b7%ec%84%b1%eb%8a%a5%ec%97%90%ea%b4%80%ed%95%9c%ea%b8%b0%ec%a4%80" target="_blank" rel="noopener noreferrer">국가법령정보센터: 클라우드컴퓨팅서비스 품질·성능에 관한 기준</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[3D 프린팅]]></title>
             <link>https://gracefullight.dev/pe/conv/3d-printing/</link>
@@ -264,32 +296,6 @@
 <h2 class="anchor anchorWithStickyNavbar_xtJj" id="참조">참조<a href="https://gracefullight.dev/pe/algo/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%ED%95%99%EC%8A%B5%EC%9A%A9-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%92%88%EC%A7%88%EA%B4%80%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://aihub.or.kr/aihubnews/qlityguidance/view.do?currMenu=135&amp;topMenu=103&amp;nttSn=10269" target="_blank" rel="noopener noreferrer">AI Hub: 인공지능 학습용 데이터 품질관리 가이드라인 v3.1</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[튜링테스트]]></title>
-            <link>https://gracefullight.dev/pe/algo/turing-test/</link>
-            <guid>https://gracefullight.dev/pe/algo/turing-test/</guid>
-            <pubDate>Sun, 18 Aug 2024 14:09:33 GMT</pubDate>
-            <description><![CDATA[Turing Test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-개념">튜링테스트 개념<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="튜링테스트 개념에 대한 직접 링크" title="튜링테스트 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>인공지능의 수준을 평가하기 위해 인간과 인공지능의 사고능력을 비교하는 블라인드 테스트</li>
-<li>자연어 처리기술 발전, 기계와 인간 구분의 모호성, AI활용 서비스 증가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-구성도-구성요소-활용사례">튜링테스트 구성도, 구성요소, 활용사례<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="튜링테스트 구성도, 구성요소, 활용사례에 대한 직접 링크" title="튜링테스트 구성도, 구성요소, 활용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-구성도">튜링테스트 구성도<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="튜링테스트 구성도에 대한 직접 링크" title="튜링테스트 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-구성요소">튜링테스트 구성요소<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="튜링테스트 구성요소에 대한 직접 링크" title="튜링테스트 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>심판</td><td>AI와 인간을 구별하는 역할</td><td>익명 대화</td></tr><tr><td>AI</td><td>인간처럼 행동하는 인공지능</td><td>언어모델 등</td></tr><tr><td>인간</td><td>별도 공간에서 질의응답</td><td>대조군 역할</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-활용사례">튜링테스트 활용사례<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="튜링테스트 활용사례에 대한 직접 링크" title="튜링테스트 활용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>비고</th></tr></thead><tbody><tr><td>챗봇 개발</td><td>고객지원 및 서비스 챗봇으리 자연스러운 대화능력 평가</td><td>사용자 만족도 평가 활용</td></tr><tr><td>AI 어시스턴트</td><td>Siri 등 가상비서의 대화 성능 측정</td><td>사용자 경험 개선 기여</td></tr><tr><td>AI 연구</td><td>AI 시스템의 지능 수준 평가</td><td>AI 발전지표</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="튜링테스트-고려사항">튜링테스트 고려사항<a href="https://gracefullight.dev/pe/algo/turing-test/#%ED%8A%9C%EB%A7%81%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="튜링테스트 고려사항에 대한 직접 링크" title="튜링테스트 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>LLM의 발전으로 사람보다 더 뛰어난 답변으로 GPT4o모델을 구별해낼 수 있어 튜링테스트 실패 가능</li>
-<li>인공지능 품질속성을 기반으로 새로운 평가체계마련 필요</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
