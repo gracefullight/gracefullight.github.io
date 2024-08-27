@@ -76,13 +76,13 @@
     "hexo-util": "^3.3.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
-    "oxlint": "^0.8.0",
+    "oxlint": "^0.9.0",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^2.10.1",
-    "tsx": "^4.18.0",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": "20"
   }
