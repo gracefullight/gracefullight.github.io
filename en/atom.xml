@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-26T13:14:45.216Z</updated>
+    <updated>2024-08-29T15:16:55.505Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[스마트 팩토리]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/smart-factory/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/smart-factory/"/>
+        <updated>2024-08-29T15:16:55.505Z</updated>
+        <summary type="html"><![CDATA[Smart Factory]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-개념">스마트 팩토리 개념<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>단순 생산설비에서 대량으로 상품을 생산해왔던 기존 공장 생산체계에 ICT 기술을 접목하여 생산과정을 최소의 비용과 최적의 절차로 운영을 가능하게한 공장</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-구성도-구성요소-발전단계">스마트 팩토리 구성도, 구성요소, 발전단계<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-구성도">스마트 팩토리 구성도<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<div class="language-text codeBlockContainer_TuH5 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_X0NZ"><pre tabindex="0" class="prism-code language-text codeBlock_D38v thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_i7RF"><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| SW (MES, ERP ) |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|  NW   |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| HW (센서, 로봇)  |  (5G) |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| 데이터 (생산품질)  |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span></code></pre><div class="buttonGroup_RFZY"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_YTHs" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_DJ6f"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Rz_h"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-구성요소">스마트 팩토리 구성요소<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>SW</td><td>생산 데이터 관리, 분석, 의사결정 지원</td><td>MES, ERP, PLM</td></tr><tr><td>HW</td><td>생산 공정 자동화, 데이터 수집</td><td>IoT센서, 로봇, 3D프린터</td></tr><tr><td>데이터</td><td>생산 효율성 분석, 지능화 기반</td><td>생산 품질 설비 데이터</td></tr><tr><td>NW</td><td>실시간 데이터 수집, 제어</td><td>5G 특화망</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-발전단계">스마트 팩토리 발전단계<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>단계</th><th>내용</th></tr></thead><tbody><tr><td>4단계</td><td>지능화, 자율화, 디지털 트윈</td></tr><tr><td>3단계</td><td>운영레벨 자동화, AI, 로봇</td></tr><tr><td>2단계</td><td>생산레벨 자동화, 원격 제어</td></tr><tr><td>1단계</td><td>필드레벨 자동화, 센서, 액츄어에이터</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-팩토리-발전-방향">스마트 팩토리 발전 방향<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>3D프린팅 기술의 대형화, 프린팅속도 가속화, 재료 다양화로 고객 맞춤형 생산</li>
+<li>디지털 트윈 기반 시뮬레이션으로 데이터 수집, 지속적 개선으로 물리적 비용 절감</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[블록체인 트릴레마]]></title>
         <id>https://gracefullight.dev/en/pe/conv/blockchain-trilemma/</id>
@@ -225,7 +254,7 @@
 <ul>
 <li>IoT, AI, 빅데이터 활용하여 양식환경을 자동화, 지능화한 시스템을 갖춘 양식장</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도-구��성요소-적용단계">스마트 양식장 구성도, 구성요소, 적용단계<a href="https://gracefullight.dev/en/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도-구성요소-적용단계">스마트 양식장 구성도, 구성요소, 적용단계<a href="https://gracefullight.dev/en/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도">스마트 양식장 구성도<a href="https://gracefullight.dev/en/pe/nw/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -305,35 +334,6 @@
 <table><thead><tr><th>구분</th><th>배깅</th><th>부스팅</th></tr></thead><tbody><tr><td>목표</td><td>분산 감소, 과적합 방지</td><td>편향 감소</td></tr><tr><td>계산 비용</td><td>빠름, 병렬</td><td>느림, 순차</td></tr><tr><td>결합 방식</td><td>평균, 투표</td><td>가중 평균</td></tr></tbody></table>
 <ul>
 <li>데이터 분산, 편향을 참조하여 앙상블 기법 선택</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[연합학습]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/federated-learning/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/federated-learning/"/>
-        <updated>2024-08-21T09:41:57.493Z</updated>
-        <summary type="html"><![CDATA[Federated Learning]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-개념">연합학습 개념<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>데이터를 중앙 저장하지 않고 다수의 로컬 디바이스에서 모델 훈련 후, 훈련된 모델 파라미터를 중앙서버로 전송해 모델을 업데이트하는 분산 인공지능 학습모델</li>
-<li>데이터 프라이버시, 보안, 통신비용 절감, 확장성, 속도</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-구성도-주요-기법-보안">연합학습 구성도, 주요 기법, 보안<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95-%EB%B3%B4%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-구성도">연합학습 구성도<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-주요-기법">연합학습 주요 기법<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>FedSGD</td><td>모든 로컬 디바이스에서 계산된 그라디언트를 중앙에서 평균화하여 모델 업데이트</td><td>데이터 이질성 취약</td></tr><tr><td>FedAVG</td><td>로컬에서 여러 배치 업데이트를 수행 후 결과를 중앙 서버로 전송</td><td>통신 비용 절감</td></tr><tr><td>FedDyn</td><td>이질적 데이터셋에서 로컬 손실함수에 동적으로 정규화 적용, 글로벌 손실 수렴처리</td><td>데이터 이질성에 강건함</td></tr><tr><td>HyFDCA</td><td>하이브리드 연합학습으로 클라이언트 다양성을 고려한 모델의 조정과 개인화</td><td>적응적 개인화 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-보안">연합학습 보안<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%B3%B4%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 암호화</td><td>모델 업데이트 정보 암호화</td><td>전송구간 보호</td></tr><tr><td>차등프라이버시</td><td>모델 업데이트시 노이즈 추가, 개인 데이터 노출 방지</td><td>프라이버시 강화</td></tr><tr><td>인증, 접근제어</td><td>로컬장치-서버 간 신뢰할 수 있는 통신 보장</td><td>무단 접근 차단, HMAC, OAuth</td></tr><tr><td>안전한 집계</td><td>값 노출 없이 중앙서버에서 각 장치의 업데이트 처리</td><td>중간자 공격 방어</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="연합학습-고려사항">연합학습 고려사항<a href="https://gracefullight.dev/en/pe/algo/federated-learning/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>다양한 하드웨어와 네트워크 조건에서 일관된 성능을 보장할 수 있도록 흐름제어, 오류제어 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
