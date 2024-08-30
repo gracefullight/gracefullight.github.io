@@ -1,0 +1,17 @@
+{
+  "extends": "oxlint:recommended",
+  "rules": {
+    "array-type": "error",
+    "consistent-type-definitions": "error",
+    "consistent-type-imports": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+
+    "no-import-node-test": "error"
+  }
+}

@@ -1,7 +1,7 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
 import { useLocalStorageState, useResponsive } from "ahooks";
-import { useState, type KeyboardEvent } from "react";
+import { type KeyboardEvent, useState } from "react";
 
 export default function DictionaryPage() {
   const [query, setQuery] = useState("");
