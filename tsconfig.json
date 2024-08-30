@@ -1,6 +1,13 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "strict": true,
+    "types": [
+      "node",
+      "@docusaurus/module-type-aliases",
+      "@docusaurus/theme-classic",
+      "@testing-library/jest-dom"
+    ]
   }
 }
