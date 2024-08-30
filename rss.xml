@@ -4,10 +4,30 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 30 Aug 2024 08:50:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 08:57:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[모바일 엣지 컴퓨팅]]></title>
+            <link>https://gracefullight.dev/pe/conv/mobile-edge-computing/</link>
+            <guid>https://gracefullight.dev/pe/conv/mobile-edge-computing/</guid>
+            <pubDate>Fri, 30 Aug 2024 08:57:26 GMT</pubDate>
+            <description><![CDATA[Mobile Edge Computing]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="모바일-엣지-컴퓨팅-개념">모바일 엣지 컴퓨팅 개념<a href="https://gracefullight.dev/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="모바일 엣지 컴퓨팅 개념에 대한 직접 링크" title="모바일 엣지 컴퓨팅 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>기지국 근처 등 네트워크 엣지에 컴퓨터 자원을 분산시켜 데이터 처리 및 서비스를 제공하여 저지연, 고대역, 실시간 응답을 구현한 컴퓨팅 패러다임</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="모바일-엣지-컴퓨팅-구성도-구성요소">모바일 엣지 컴퓨팅 구성도, 구성요소<a href="https://gracefullight.dev/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="모바일 엣지 컴퓨팅 구성도, 구성요소에 대한 직접 링크" title="모바일 엣지 컴퓨팅 구성도, 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="모바일-엣지-컴퓨팅-구성도">모바일 엣지 컴퓨팅 구성도<a href="https://gracefullight.dev/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="모바일 엣지 컴퓨팅 구성도에 대한 직접 링크" title="모바일 엣지 컴퓨팅 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="모바일-엣지-컴퓨팅-구성요소">모바일 엣지 컴퓨팅 구성요소<a href="https://gracefullight.dev/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="모바일 엣지 컴퓨팅 구성요소에 대한 직접 링크" title="모바일 엣지 컴퓨팅 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>모바일 엣지 디바이스</td><td>데이터 생성 및 서비스 사용 주체</td><td>스마트폰, IoT기기 등</td></tr><tr><td>기지국</td><td>데이터 전송 및 통신 담당</td><td>무선 네트워크</td></tr><tr><td>엣지서버</td><td>네트워크 가장자리에 배치</td><td>데이터 처리, 저장</td></tr><tr><td>MEC 플랫폼</td><td>엣지서버 관리, 모바일 서비스 제공</td><td>관리, 운영</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="모바일-엣지-컴퓨팅-고려사항">모바일 엣지 컴퓨팅 고려사항<a href="https://gracefullight.dev/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="모바일 엣지 컴퓨팅 고려사항에 대한 직접 링크" title="모바일 엣지 컴퓨팅 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>표준화, 데이터 권한 관리</td><td>보안성</td></tr><tr><td>기술적</td><td>네트워크 대역폭 관리, 서버 관리</td><td>안정성</td></tr><tr><td>물리적</td><td>엣지서버 위치, 전력 공급</td><td>효율성</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[스마트시티 서비스 활성화 방안]]></title>
             <link>https://gracefullight.dev/pe/conv/스마트시티-서비스-활성화-방안/</link>
@@ -248,44 +268,6 @@
 <ul>
 <li>비용, 성능</li>
 <li>데이터 프라이버시, 폐기 정책</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[무선충전 기술]]></title>
-            <link>https://gracefullight.dev/pe/conv/wireless-power-transfer/</link>
-            <guid>https://gracefullight.dev/pe/conv/wireless-power-transfer/</guid>
-            <pubDate>Sun, 25 Aug 2024 13:20:54 GMT</pubDate>
-            <description><![CDATA[Wireless Power Transfer]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-개념">무선충전 기술 개념<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="무선충전 기술 개념에 대한 직접 링크" title="무선충전 기술 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>전자기유도나 전자기파를 이용하여 전력을 무선으로 전송하여 배터리를 충전하는 기술</li>
-<li>IoT 무선충전, 자율주행차 무선 충전을 위해 중요성 대두</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-방식-유형">무선충전 방식 유형<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EB%B0%A9%EC%8B%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="무선충전 방식 유형에 대한 직접 링크" title="무선충전 방식 유형에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="자기유도-방식">자기유도 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%9E%90%EA%B8%B0%EC%9C%A0%EB%8F%84-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="자기유도 방식에 대한 직접 링크" title="자기유도 방식에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Inductive coupling</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>1,2차 코일 간 자기유도현상을 이용</td><td>패러데이 법칙</td></tr><tr><td>특징</td><td>고효율, 짧은 거리, 충전패드 접촉</td><td>범용성</td></tr><tr><td>응용</td><td>스마트폰, 웨어러블 기기</td><td>Qi 표준</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="자기공명-방식">자기공명 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%9E%90%EA%B8%B0%EA%B3%B5%EB%AA%85-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="자기공명 방식에 대한 직접 링크" title="자기공명 방식에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Resonant magnetic coupling</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>송수신 코일 간의 자기장 공명 이용</td><td>에너지 효율성</td></tr><tr><td>특징</td><td>수m 전송 가능, 동시 충전 가능</td><td>공간 자유도</td></tr><tr><td>응용</td><td>전기자동차, 휴머노이드</td><td>AirFuel 표준</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="전자기파-방식">전자기파 방식<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EC%A0%84%EC%9E%90%EA%B8%B0%ED%8C%8C-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="전자기파 방식에 대한 직접 링크" title="전자기파 방식에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>RF-based wireless power</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>동작원리</td><td>송신 안테나에서 전자기파 발생, 수신 안테나에서 전력 변환</td><td>넓은 커버리지</td></tr><tr><td>특징</td><td>매우 긴 전송거리, 장애물 투과, 저효율</td><td>원거리 무선충전</td></tr><tr><td>응용</td><td>IoT 센서, 소형 전자기기</td><td>Wi-charge</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-비교">무선충전 기술 비교<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="무선충전 기술 비교에 대한 직접 링크" title="무선충전 기술 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>자기유도</th><th>자기공명</th><th>전자기파</th></tr></thead><tbody><tr><td>거리</td><td>초단거리, cm</td><td>단거리, m</td><td>장거리, km</td></tr><tr><td>효율</td><td>높음, 70%이상</td><td>보통 40~60%</td><td>낮음 1%미만</td></tr><tr><td>정렬 필요성</td><td>높음</td><td>낮음</td><td>낮음</td></tr><tr><td>응용분야</td><td>스마트폰, 웨어러블 디바이스</td><td>전기차, 로봇</td><td>IoT 센서, 소형기기</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="무선충전-기술-고려사항">무선충전 기술 고려사항<a href="https://gracefullight.dev/pe/conv/wireless-power-transfer/#%EB%AC%B4%EC%84%A0%EC%B6%A9%EC%A0%84-%EA%B8%B0%EC%88%A0-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="무선충전 기술 고려사항에 대한 직접 링크" title="무선충전 기술 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>효율, 안전, 비용</li>
-<li>폐배터리</li>
-<li>충전인프라</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
