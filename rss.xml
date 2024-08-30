@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 29 Aug 2024 15:16:55 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 08:36:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[디지털 트윈]]></title>
+            <link>https://gracefullight.dev/pe/conv/digital-twin/</link>
+            <guid>https://gracefullight.dev/pe/conv/digital-twin/</guid>
+            <pubDate>Fri, 30 Aug 2024 08:36:33 GMT</pubDate>
+            <description><![CDATA[Digital Twin]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-개념">디지털 트윈 개념<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디지털 트윈 개념에 대한 직접 링크" title="디지털 트윈 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>현실세계의 물리적 자산, 시스템, 프로세스 등을 디지털 공간에 모델링하여 데이터를 실시간으로 모니터링, 분석,ㅡ 예측하여 문제를 해결하는 기술</li>
+<li>검증, 오류 수정 등을 디지털에서 수행하여 비용절감, 위험감소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-구성도-구성요소-적용방안">디지털 트윈 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 트윈 구성도, 구성요소, 적용방안에 대한 직접 링크" title="디지털 트윈 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-구성도">디지털 트윈 구성도<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="디지털 트윈 구성도에 대한 직접 링크" title="디지털 트윈 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-구성요소">디지털 트윈 구성요소<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="디지털 트윈 구성요소에 대한 직접 링크" title="디지털 트윈 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>물리적 객체</td><td>현실 세계의 실존 객체</td><td>디지털 트윈 대상</td></tr><tr><td>디지털 트윈 모델</td><td>물리 객체를 가상 공간에 복제</td><td>시뮬레이션 및 분석</td></tr><tr><td>분석 시스템</td><td>데이터 분석, 물리 객체 최적화</td><td>실시간 반영</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-적용방안">디지털 트윈 적용방안<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 트윈 적용방안에 대한 직접 링크" title="디지털 트윈 적용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>적용방안</th><th>설명</th></tr></thead><tbody><tr><td>스마트시티</td><td>-</td><td>-</td></tr><tr><td>에너지</td><td>-</td><td>-</td></tr><tr><td>헬스케어</td><td>-</td><td>-</td></tr><tr><td>제조</td><td>-</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="시뮬레이션과 디지털 트윈 비교에 대한 직접 링크" title="시뮬레이션과 디지털 트윈 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>시뮬레이션</th><th>디지털 트윈</th></tr></thead><tbody><tr><td>개념</td><td>특정조건 동작 모방</td><td>가상공간 복제</td></tr><tr><td>데이터</td><td>과거, 가정</td><td>실시간</td></tr><tr><td>상호작용</td><td>제한적</td><td>현실세계 실시간 반영</td></tr><tr><td>목적</td><td>시스템 동작예측, 평가</td><td>현실세계 문제 해결</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-발전모델">디지털 트윈 발전모델<a href="https://gracefullight.dev/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B0%9C%EC%A0%84%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="디지털 트윈 발전모델에 대한 직접 링크" title="디지털 트윈 발전모델에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>단계</th><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>5</td><td>자율</td><td>자율적 문제 인지 및 해결</td></tr><tr><td>4</td><td>연합</td><td>디지털 트윈 상호 연결</td></tr><tr><td>3</td><td>모의</td><td>디지털 결과 현실 객체 적용 및 최적화</td></tr><tr><td>2</td><td>관제</td><td>물리 객체 모니터링</td></tr><tr><td>1</td><td>모사</td><td>물리 객체 복제</td></tr></tbody></table>
+<ul>
+<li>현재 모의단계로 연합모델로 가기 위해 상호운용성과 프로토콜 표준화 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[스마트 팩토리]]></title>
             <link>https://gracefullight.dev/pe/conv/smart-factory/</link>
@@ -269,39 +297,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>인증 및 접근 권한 부여</td><td>OAuth 2.0</td></tr><tr><td>-</td><td>버전관리 및 문서화</td><td>Swagger</td></tr><tr><td>관리적</td><td>개인정보보호법, 정보통신망법 준수</td><td>오픈API 법규 제정</td></tr><tr><td>-</td><td>사용량, 응답시간, 오류 모니터링</td><td>가용성 확보</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[앙상블 모델, 배깅, 부스팅]]></title>
-            <link>https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/</link>
-            <guid>https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/</guid>
-            <pubDate>Sat, 24 Aug 2024 22:59:54 GMT</pubDate>
-            <description><![CDATA[Ensemble model, Bagging and Boosting]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="앙상블-모델의-개념">앙상블 모델의 개념<a href="https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/#%EC%95%99%EC%83%81%EB%B8%94-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="앙상블 모델의 개념에 대한 직접 링크" title="앙상블 모델의 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>여러 개별 모델을 결합하여 하나의 강력한 예측 모델을 만드는 기법</li>
-<li>배깅은 독립적으로 학습시킨 모델의 결과를 취합하고, 부스팅은 순차학습시켜 이전 모델의 오차를 보완하는 기법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="배깅-부스팅의-구성도-구성요소">배깅, 부스팅의 구성도, 구성요소<a href="https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/#%EB%B0%B0%EA%B9%85-%EB%B6%80%EC%8A%A4%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="배깅, 부스팅의 구성도, 구성요소에 대한 직접 링크" title="배깅, 부스팅의 구성도, 구성요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="배깅의-구성도-구성요소-비교">배깅의 구성도, 구성요소, 비교<a href="https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/#%EB%B0%B0%EA%B9%85%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="배깅의 구성도, 구성요소, 비교에 대한 직접 링크" title="배깅의 구성도, 구성요소, 비교에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>다수 모델을 학습시켜 예측 결과 도출</li>
-</ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>랜덤 샘플링</td><td>원본 데이터셋을 복원 추출</td><td>개별 모델 다양성 확보, 과적합 방지</td></tr><tr><td>병렬모델학습</td><td>각 모델을 독립적으로 학습 수행</td><td>랜덤 포레스트 등 결정 트리 기반</td></tr><tr><td>예측 결합</td><td>각 예측 데이터를 합산하여 결과 도출</td><td>평균, 투표</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="부스팅의-구성도-구성요소">부스팅의 구성도, 구성요소<a href="https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/#%EB%B6%80%EC%8A%A4%ED%8C%85%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="부스팅의 구성도, 구성요소에 대한 직접 링크" title="부스팅의 구성도, 구성요소에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>모델을 순차적으로 학습, 가중치 반영하여 예측 결과 도출</li>
-</ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>순차모델 학습</td><td>이전 모델의 오차를 보완하여 학습</td><td>오차 감소</td></tr><tr><td>가중치 업데이트</td><td>오차가 큰 데이터에 높은 가중치 부여</td><td>오답 집중 학습</td></tr><tr><td>반복 학습</td><td>가중치 반영 모델 반복 학습</td><td>순차 실행</td></tr><tr><td>예측 결합</td><td>모든 모델 예측에 가중치 반영한 평균 계산</td><td>그라디언트 부스팅</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="배깅-부스팅-비교">배깅, 부스팅 비교<a href="https://gracefullight.dev/pe/algo/ensemble-model-bagging-and-boosting/#%EB%B0%B0%EA%B9%85-%EB%B6%80%EC%8A%A4%ED%8C%85-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="배깅, 부스팅 비교에 대한 직접 링크" title="배깅, 부스팅 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>배깅</th><th>부스팅</th></tr></thead><tbody><tr><td>목표</td><td>분산 감소, 과적합 방지</td><td>편향 감소</td></tr><tr><td>계산 비용</td><td>빠름, 병렬</td><td>느림, 순차</td></tr><tr><td>결합 방식</td><td>평균, 투표</td><td>가중 평균</td></tr></tbody></table>
-<ul>
-<li>데이터 분산, 편향을 참조하여 앙상블 기법 선택</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
         </item>
     </channel>
 </rss>
