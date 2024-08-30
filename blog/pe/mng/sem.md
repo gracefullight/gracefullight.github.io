@@ -3,7 +3,7 @@ title: SEM, 전략적 기업 경영
 date: 2024-07-22T16:35:47.026+09:00
 description: Strategic Enterprise Management
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

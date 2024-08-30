@@ -3,7 +3,7 @@ title: 튜링테스트
 date: 2024-08-18T23:09:33.456+09:00
 description: Turing Test
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

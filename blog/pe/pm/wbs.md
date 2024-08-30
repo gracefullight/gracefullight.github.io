@@ -3,7 +3,7 @@ title: WBS, 작업 분류 체계
 date: 2024-07-17T21:24:42.495+09:00
 description: Work Breakdown Structure
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

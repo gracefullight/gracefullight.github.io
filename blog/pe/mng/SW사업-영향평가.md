@@ -3,7 +3,7 @@ title: SW사업 영향평가
 date: 2024-07-22T19:34:17.520+09:00
 description: SW사업 영향평가
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

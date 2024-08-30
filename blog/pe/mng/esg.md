@@ -3,7 +3,7 @@ title: ESG
 date: 2024-07-22T17:19:46.287+09:00
 description: Environment, Social, Governance
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

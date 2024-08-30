@@ -3,7 +3,7 @@ title: IP, MAC, Port, SMTP
 date: 2024-07-21T15:36:44.065+09:00
 description: Internet Protocol, Medium Access Control Address, Port, Simple Mail Transfer Protocol
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

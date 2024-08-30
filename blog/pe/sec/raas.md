@@ -3,7 +3,7 @@ title: RaaS, Ransomware as a Service
 date: 2024-07-08T21:52:18.071+09:00
 description: Ransomware as a Service
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

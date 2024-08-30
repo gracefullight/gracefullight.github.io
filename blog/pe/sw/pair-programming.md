@@ -3,7 +3,7 @@ title: 페어 프로그래밍, 핑퐁 프로그래밍
 date: 2024-07-15T14:01:18.223+09:00
 description: Pair Programming, Ping Pong Programming
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw 
 ---

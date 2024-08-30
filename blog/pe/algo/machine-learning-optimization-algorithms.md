@@ -3,7 +3,7 @@ title: 머신러닝 최적화 알고리즘
 date: 2024-08-12T22:01:25.863+09:00
 description: Machine Learning Optimization Algorithms
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

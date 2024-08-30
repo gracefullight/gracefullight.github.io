@@ -3,9 +3,9 @@ title: 오픈플랫폼, 오픈API
 date: 2024-08-25T19:18:27.583+09:00
 description: Open Platform and Open API
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 오픈플랫폼 개념

@@ -3,7 +3,7 @@ title: 감리, PMO
 date: 2024-07-17T21:00:08.862+09:00
 description: Supervision, PMO
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

@@ -3,7 +3,7 @@ title: ISO/IEC Standards
 date: 2024-07-14T23:50:32.166+09:00
 description: 주요 ISO/IEC 표준
 authors: me
-tags: 
+tags:
   - pe
 ---
 

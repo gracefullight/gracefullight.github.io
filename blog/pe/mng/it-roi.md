@@ -3,7 +3,7 @@ title: IT 투자분석
 date: 2024-07-22T17:28:03.151+09:00
 description: IT Return on investment
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

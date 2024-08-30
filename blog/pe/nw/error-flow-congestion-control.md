@@ -3,7 +3,7 @@ title: 오류제어, 흐름제어, 혼잡제어
 date: 2024-07-21T16:41:27.263+09:00
 description: Error, Flow, and Congestion Control
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

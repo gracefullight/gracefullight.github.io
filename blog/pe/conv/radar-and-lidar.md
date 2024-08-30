@@ -3,9 +3,9 @@ title: 레이더, 라이다
 date: 2024-08-26T21:39:25.698+09:00
 description: Radar and Lidar
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 거리측청센서 개념

@@ -3,7 +3,7 @@ title: 베르누이 분포, 기하 분포
 date: 2024-07-22T14:45:16.214+09:00
 description: Bernoulli and Geometric Distribution
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo
 ---

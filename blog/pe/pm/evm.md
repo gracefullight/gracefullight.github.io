@@ -3,7 +3,7 @@ title: EVM, 획득 가치 관리
 date: 2024-07-17T21:38:05.584+09:00
 description: Earned Value Management
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

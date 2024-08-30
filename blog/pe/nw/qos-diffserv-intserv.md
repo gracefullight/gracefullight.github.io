@@ -3,7 +3,7 @@ title: QoS, DiffServ, IntServ
 date: 2024-07-21T22:45:43.683+09:00
 description: Quality of Service, Differentiated services, Integrated services
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

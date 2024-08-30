@@ -3,7 +3,7 @@ title: 트리정렬
 date: 2024-07-22T20:37:26.602+09:00
 description: Tree sort
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo
 ---

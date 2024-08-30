@@ -4,9 +4,9 @@ date: 2024-08-04T20:37:05.182+09:00
 description: Big-data Analytics Tools
 image: ./assets/bigdata-analytics-tools.png
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 빅데이터 분석도구 개념

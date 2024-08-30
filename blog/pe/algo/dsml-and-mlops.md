@@ -3,7 +3,7 @@ title: DSML, MLOps
 date: 2024-08-18T22:40:06.474+09:00
 description: Data Science and Machine Learning with MLOps
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo
 ---

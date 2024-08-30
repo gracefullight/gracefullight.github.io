@@ -3,7 +3,7 @@ title: 귀납적 사고, 머신러닝
 date: 2024-08-20T22:33:51.108+09:00
 description: Inductive Reasoning and Machine Learning
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

@@ -3,7 +3,7 @@ title: 데이터구조, 선형구조, 비선형구조
 date: 2024-08-11T11:15:51.950+09:00
 description: Data Structure, Linear and Non-linear Data Structure
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

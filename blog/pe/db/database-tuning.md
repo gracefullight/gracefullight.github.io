@@ -3,7 +3,7 @@ title: 데이터베이스 튜닝
 date: 2024-07-24T11:14:28.100+09:00
 description: Database Tuning
 authors: me
-tags: 
+tags:
   - pe
   - pe/db 
 ---

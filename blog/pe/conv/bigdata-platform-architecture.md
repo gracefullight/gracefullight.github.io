@@ -3,9 +3,9 @@ title: 빅데이터 플랫폼 아키텍쳐
 date: 2024-08-12T22:16:38.222+09:00
 description: Big-data Platform Architecture
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 빅테이터 플랫폼 아키텍처 개념

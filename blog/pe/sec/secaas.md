@@ -3,7 +3,7 @@ title: SECaaS, Security as a Service
 date: 2024-07-26T14:45:32.807+09:00
 description: Security as a Service
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

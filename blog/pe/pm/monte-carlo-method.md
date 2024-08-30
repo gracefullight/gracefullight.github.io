@@ -3,7 +3,7 @@ title: 몬테카를로 방법
 date: 2024-07-17T21:13:34.179+09:00
 description: Monte-Carlo Method
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

@@ -3,7 +3,7 @@ title: 페이징, 세그먼테이션
 date: 2024-06-30T11:35:14.892+09:00
 description: Paging and Segmentation
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

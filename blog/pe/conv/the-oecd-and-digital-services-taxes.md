@@ -3,9 +3,9 @@ title: OECD 디지털세
 date: 2024-08-04T20:09:00.544+09:00
 description: The OECD and Digital Services Taxes
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 

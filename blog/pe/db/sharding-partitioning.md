@@ -3,7 +3,7 @@ title: 샤딩, 파티셔닝
 date: 2024-07-24T11:33:02.391+09:00
 description: Sharding and Partitioning
 authors: me
-tags: 
+tags:
   - pe
   - pe/db
 ---

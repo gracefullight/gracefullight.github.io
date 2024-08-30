@@ -3,7 +3,7 @@ title: RAID
 date: 2024-06-30T20:15:24.181+09:00
 description: Redundant Array Independent Disks
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

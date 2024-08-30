@@ -3,7 +3,7 @@ title: NFC, Near Field Communication
 date: 2024-07-19T20:50:44.128+09:00
 description: Near Field Communication
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw 
 ---

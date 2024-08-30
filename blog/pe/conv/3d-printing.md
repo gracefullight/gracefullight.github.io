@@ -3,9 +3,9 @@ title: 3D 프린팅
 date: 2024-08-26T17:55:57.665+09:00
 description: 3D Printing
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 3D 프린팅

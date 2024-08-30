@@ -3,7 +3,7 @@ title: SBOM, Software Bill of Materials
 date: 2024-07-05T21:51:10.569+09:00
 description: Software Bill of Materials
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

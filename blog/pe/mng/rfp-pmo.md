@@ -3,7 +3,7 @@ title: RFP, PMO
 date: 2024-07-22T20:30:48.801+09:00
 description: RFP, PMO
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

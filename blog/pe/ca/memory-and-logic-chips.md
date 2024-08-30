@@ -3,7 +3,7 @@ title: 메모리 반도체, 비메모리 반도체
 date: 2024-06-30T22:17:58.762+09:00
 description: memory and logic chips
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca
 ---

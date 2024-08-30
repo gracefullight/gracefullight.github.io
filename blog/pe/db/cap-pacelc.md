@@ -3,7 +3,7 @@ title: CAP, PACELC
 date: 2024-07-24T11:45:17.503+09:00
 description: CAP, PACELC
 authors: me
-tags: 
+tags:
   - pe
   - pe/db
 ---

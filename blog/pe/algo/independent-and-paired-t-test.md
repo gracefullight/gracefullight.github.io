@@ -3,7 +3,7 @@ title: 독립표본 T검정, 대응표본 T검정
 date: 2024-08-11T10:34:17.642+09:00
 description: Independent and Paired t-test
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

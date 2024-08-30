@@ -3,7 +3,7 @@ title: CAN, Controller Area Network
 date: 2024-07-19T21:39:37.324+09:00
 description: Controller Area Network
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw 
 ---

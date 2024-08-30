@@ -3,7 +3,7 @@ title: 전이학습
 date: 2024-08-11T22:18:06.367+09:00
 description: Transfer Learning
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

@@ -3,7 +3,7 @@ title: 리버스프록시, 로드밸런서, 그린 배포, 카나리 배포
 date: 2024-07-01T17:51:51.135+09:00
 description: Reverse proxy, Load balancer, Green and Canary deployment
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca
 ---

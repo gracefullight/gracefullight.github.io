@@ -3,7 +3,7 @@ title: FEC, 전진오류수정, ARQ, 검출 후 재전송
 date: 2024-07-21T22:12:19.667+09:00
 description: Forward Error Correction, Automatic Repeat reQuest
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

@@ -3,7 +3,7 @@ title: 디지털 역기능
 date: 2024-07-10T18:22:27.101+09:00
 description: Digital Dysfunction
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

@@ -3,7 +3,7 @@ title: TPRM, 제3자 리스크 관리
 date: 2024-07-24T19:25:15.771+09:00
 description: Third Party Risk Management
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng 
 ---

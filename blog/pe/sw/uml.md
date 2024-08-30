@@ -3,7 +3,7 @@ title: UML, Unified Modeling Language
 date: 2024-06-23T23:13:08.788+09:00
 description: UML
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw
 ---

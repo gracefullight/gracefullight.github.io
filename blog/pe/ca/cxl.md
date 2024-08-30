@@ -3,7 +3,7 @@ title: CXL, Compute Express Link
 date: 2024-07-23T11:08:42.951+09:00
 description: Compute Express Link
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

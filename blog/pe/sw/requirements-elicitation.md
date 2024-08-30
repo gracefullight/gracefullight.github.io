@@ -3,7 +3,7 @@ title: 요구사항 추출
 date: 2024-06-23T17:13:20.543+09:00
 description: Requirements Elicitation
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw
 ---

@@ -3,7 +3,7 @@ title: BSC, 균형성과기록표
 date: 2024-07-22T19:45:16.751+09:00
 description: Balance Score Card
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

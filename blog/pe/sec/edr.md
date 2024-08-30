@@ -3,7 +3,7 @@ title: EDR, 엔드포인트 감지 및 응답
 date: 2024-07-26T14:17:11.518+09:00
 description: Endpoint Detection and Response
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

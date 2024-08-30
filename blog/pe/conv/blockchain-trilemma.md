@@ -3,9 +3,9 @@ title: 블록체인 트릴레마
 date: 2024-08-26T22:14:45.216+09:00
 description: Blockchain Trilemma
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 블록체인 트릴레마 개념

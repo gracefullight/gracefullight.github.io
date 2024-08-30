@@ -3,7 +3,7 @@ title: MQTT
 date: 2024-07-21T23:15:25.120+09:00
 description: Message Queuing Telemetry Transport
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw 
 ---

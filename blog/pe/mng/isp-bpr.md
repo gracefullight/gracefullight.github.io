@@ -3,7 +3,7 @@ title: ISP, BPR
 date: 2024-07-22T14:55:48.908+09:00
 description: Information Strategic Planning, Business Process Re-engineering
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

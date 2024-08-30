@@ -3,7 +3,7 @@ title: SCM, 공급망 관리
 date: 2024-07-22T17:40:44.911+09:00
 description: Supply Chain Management
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

@@ -3,7 +3,7 @@ title: 실시간 스케줄링, 우선순위 역전
 date: 2024-07-01T18:31:49.345+09:00
 description: Realtime Scheduling, Priority Inversion
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca
 ---

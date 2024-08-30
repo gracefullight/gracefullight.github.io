@@ -3,7 +3,7 @@ title: CPU, GPU, FPGA, ASIC
 date: 2024-07-01T18:24:33.269+09:00
 description: CPU, GPU, FPGA, ASIC
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

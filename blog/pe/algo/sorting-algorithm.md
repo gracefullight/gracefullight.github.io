@@ -3,7 +3,7 @@ title: 정렬 알고리즘, 버블정렬, 삽입정렬, 퀵정렬
 date: 2024-08-11T22:08:03.704+09:00
 description: Sorting algorithm, Bubble, Insertion, Quick sort.
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

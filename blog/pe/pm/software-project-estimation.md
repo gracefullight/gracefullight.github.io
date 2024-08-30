@@ -3,7 +3,7 @@ title: 소프트웨어 규모산정
 date: 2024-07-17T21:07:49.080+09:00
 description: Software Project Estimation
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

@@ -5,7 +5,7 @@ description: Mobile Edge Computing
 authors: me
 tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 모바일 엣지 컴퓨팅 개념

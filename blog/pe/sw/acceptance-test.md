@@ -3,7 +3,7 @@ title: 인수테스트, 알파테스트, 베타테스트
 date: 2024-07-15T18:50:57.356+09:00
 description: Acceptance test, Alpha test, Beta test
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw 
 ---

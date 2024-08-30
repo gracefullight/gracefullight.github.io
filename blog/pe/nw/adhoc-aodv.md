@@ -3,7 +3,7 @@ title: ADHOC, AODV
 date: 2024-07-21T13:04:55.858+09:00
 description: ADHOC, Adhoc On Demand Vector
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

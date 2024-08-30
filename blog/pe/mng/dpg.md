@@ -3,7 +3,7 @@ title: DPG, 디지털 플랫폼 정부
 date: 2024-07-22T17:09:23.608+09:00
 description: Digital Platform Government
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

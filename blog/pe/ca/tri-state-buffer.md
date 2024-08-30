@@ -3,7 +3,7 @@ title: 3-상태 버퍼
 date: 2024-07-06T15:33:10.505+09:00
 description: Tri-State Buffer
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

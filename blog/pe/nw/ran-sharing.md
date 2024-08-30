@@ -3,7 +3,7 @@ title: RAN Sharing
 date: 2024-07-21T22:04:17.453+09:00
 description: Radio Access Network Sharing
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw
 ---

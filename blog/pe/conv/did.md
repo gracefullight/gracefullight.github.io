@@ -3,9 +3,9 @@ title: DID, Digital Information Display
 date: 2024-08-11T21:16:10.950+09:00
 description: Digital Information Display
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## DID 개념

@@ -3,7 +3,7 @@ title: FP, 기능 점수
 date: 2024-07-17T21:30:52.240+09:00
 description: Function Point
 authors: me
-tags: 
+tags:
   - pe
   - pe/pm 
 ---

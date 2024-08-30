@@ -3,7 +3,7 @@ title: EGDI, 전자정부 발전지수
 date: 2024-07-22T19:53:43.327+09:00
 description: E-Government Development Index
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

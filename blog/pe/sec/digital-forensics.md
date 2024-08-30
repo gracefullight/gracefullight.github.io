@@ -3,7 +3,7 @@ title: 디지털 포렌식
 date: 2024-07-10T18:11:58.674+09:00
 description: Digital Forensics
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

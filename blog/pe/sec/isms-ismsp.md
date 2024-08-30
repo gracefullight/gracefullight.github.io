@@ -3,7 +3,7 @@ title: ISMS, ISMS-P
 date: 2024-07-10T18:02:25.752+09:00
 description: ISMS, ISMS-P
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

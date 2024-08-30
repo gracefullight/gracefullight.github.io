@@ -3,7 +3,7 @@ title: 머신러닝, 딥러닝
 date: 2024-08-11T10:22:06.083+09:00
 description: Machine Learning and Deep Learning
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

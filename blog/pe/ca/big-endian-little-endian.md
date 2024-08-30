@@ -3,7 +3,7 @@ title: 빅 엔디언, 리틀 엔디언
 date: 2024-07-01T18:05:42.436+09:00
 description: Big endian, Little endian
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

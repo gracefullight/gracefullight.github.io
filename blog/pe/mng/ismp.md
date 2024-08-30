@@ -3,7 +3,7 @@ title: ISMP, 정보시스템 마스터 플랜
 date: 2024-07-22T16:49:46.309+09:00
 description: Information System Master Plan
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

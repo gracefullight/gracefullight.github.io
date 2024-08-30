@@ -3,7 +3,7 @@ title: DRP, 재해복구 계획
 date: 2024-07-24T19:02:11.766+09:00
 description: Disaster Recovery Planning
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec 
 ---

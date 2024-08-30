@@ -3,7 +3,7 @@ title: Ethernet, 이더넷
 date: 2024-07-20T15:00:55.008+09:00
 description: Ethernet, IEEE 802.3
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw 
 ---

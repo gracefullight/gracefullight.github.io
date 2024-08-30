@@ -3,7 +3,7 @@ title: 암달의 법칙
 date: 2024-07-16T23:21:35.297+09:00
 description: Amdahl's law
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

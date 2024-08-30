@@ -3,7 +3,7 @@ title: IaC, 코드형 인프라스트럭처
 date: 2024-06-30T21:17:37.100+09:00
 description: Infrastructure as Code
 authors: me
-tags: 
+tags:
   - pe
   - pe/ca 
 ---

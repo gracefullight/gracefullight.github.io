@@ -3,7 +3,7 @@ title: 품질비용 항목
 date: 2024-06-23T21:30:10.167+09:00
 description: Quality Cost
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw
 ---

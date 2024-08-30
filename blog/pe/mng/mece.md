@@ -3,7 +3,7 @@ title: MECE
 date: 2024-07-22T19:57:36.442+09:00
 description: Mutually Exclusive and Collectively Exhaustive
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

@@ -3,7 +3,7 @@ title: BCP, 비지니스 연속성 계획
 date: 2024-07-24T16:25:43.338+09:00
 description: Business Continuity Planning
 authors: me
-tags: 
+tags:
   - pe
   - pe/sec
 ---

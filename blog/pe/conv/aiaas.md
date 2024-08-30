@@ -3,9 +3,9 @@ title: AIaaS
 date: 2024-08-26T07:46:49.399+09:00
 description: AI as a Service
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## AIaaS 개념

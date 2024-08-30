@@ -3,7 +3,7 @@ title: MSA, 모놀리틱 아키텍처
 date: 2024-06-23T21:57:06.961+09:00
 description: Micro Service Architecture, Monolithic Architecture
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw
 ---

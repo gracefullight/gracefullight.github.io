@@ -3,7 +3,7 @@ title: 무선 네트워크 프로토콜
 date: 2024-07-17T20:28:39.235+09:00
 description: Wireless Networking Protocols
 authors: me
-tags: 
+tags:
   - me
 ---
 

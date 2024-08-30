@@ -3,9 +3,9 @@ title: 큐비트
 date: 2024-07-17T23:13:23.754+09:00
 description: Qubit
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 큐비트의 개념

@@ -3,7 +3,7 @@ title: 인공지능 파운데이션 모델
 date: 2024-08-11T11:21:50.798+09:00
 description: AI Foundation Model
 authors: me
-tags: 
+tags:
   - pe
   - pe/algo 
 ---

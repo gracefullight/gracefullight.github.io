@@ -3,7 +3,7 @@ title: 구조적 방법론, 애자일 방법론
 date: 2024-06-23T20:10:44.076+09:00
 description: Structured and agile development methodology
 authors: me
-tags: 
+tags:
   - pe
   - pe/sw
 ---

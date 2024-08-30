@@ -3,7 +3,7 @@ title: 디자인 씽킹
 date: 2024-07-22T20:10:53.021+09:00
 description: Design Thinking
 authors: me
-tags: 
+tags:
   - pe
   - pe/mng
 ---

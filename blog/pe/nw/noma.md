@@ -3,7 +3,7 @@ title: NOMA, 비직교 다중 접속
 date: 2024-07-21T10:42:14.592+09:00
 description: NOMA, Non-Orthogonal Multiple Access
 authors: me
-tags: 
+tags:
   - pe
   - pe/nw 
 ---

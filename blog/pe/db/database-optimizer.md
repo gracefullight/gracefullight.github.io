@@ -3,7 +3,7 @@ title: 데이터베이스 옵티마이저
 date: 2024-07-24T11:24:14.092+09:00
 description: Database Optimizer
 authors: me
-tags: 
+tags:
   - pe
   - pe/db 
 ---
