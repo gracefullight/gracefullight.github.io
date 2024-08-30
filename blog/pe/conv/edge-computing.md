@@ -4,9 +4,9 @@ date: 2024-07-23T14:59:13.237+09:00
 description: Edge Computing
 image: ./assets/edge-computing.png
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 엣지컴퓨팅 개념

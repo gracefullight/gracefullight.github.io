@@ -3,9 +3,9 @@ title: MIV, MPEG Immersive Video
 date: 2024-07-23T14:16:01.584+09:00
 description: MPEG Immersive Video
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## MIV 개념
