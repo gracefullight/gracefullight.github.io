@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 30 Aug 2024 08:36:33 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 08:43:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[OTT]]></title>
+            <link>https://gracefullight.dev/pe/conv/ott/</link>
+            <guid>https://gracefullight.dev/pe/conv/ott/</guid>
+            <pubDate>Fri, 30 Aug 2024 08:43:40 GMT</pubDate>
+            <description><![CDATA[Over The Top]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="ott-개념">OTT 개념<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="OTT 개념에 대한 직접 링크" title="OTT 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>인터넷을 통해 미디어 콘텐츠를 제공하는 서비스로 셋탑박스 유무에 상관없이 다양한 기기를 통해 콘텐츠에 접근 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성도-구성요소-서비스-사업자-유형">OTT 구성도, 구성요소, 서비스 사업자 유형<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%97%85%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="OTT 구성도, 구성요소, 서비스 사업자 유형에 대한 직접 링크" title="OTT 구성도, 구성요소, 서비스 사업자 유형에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성도">OTT 구성도<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="OTT 구성도에 대한 직접 링크" title="OTT 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성요소">OTT 구성요소<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="OTT 구성요소에 대한 직접 링크" title="OTT 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CP</td><td>콘텐츠 구매, 자체 제작</td><td>다양한 콘텐츠 확보</td></tr><tr><td>CMS</td><td>콘텐츠 메타데이터 관리, 송출</td><td>DRM, 추천, 압축</td></tr><tr><td>CDN</td><td>콘텐츠의 효율적인 스트리밍</td><td>지역 캐싱</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="ott-서비스-사업자-유형">OTT 서비스 사업자 유형<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%97%85%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="OTT 서비스 사업자 유형에 대한 직접 링크" title="OTT 서비스 사업자 유형에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="ott-고려사항">OTT 고려사항<a href="https://gracefullight.dev/pe/conv/ott/#ott-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="OTT 고려사항에 대한 직접 링크" title="OTT 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>목적</th><th>비고</th></tr></thead><tbody><tr><td>네트워크 안정성</td><td>압축, 효율, 비용절감</td><td>H265, H266</td></tr><tr><td>인터페이스 디자인</td><td>디지털 역기능 방지</td><td>접근성, 사용성</td></tr><tr><td>지역기반 캐싱서버</td><td>ISP와의 상생</td><td>망사용료 이슈 대응</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[디지털 트윈]]></title>
             <link>https://gracefullight.dev/pe/conv/digital-twin/</link>
@@ -267,34 +288,6 @@
 <table><thead><tr><th>단계</th><th>내용</th><th>핵심기술</th></tr></thead><tbody><tr><td>4</td><td>자율 양식 시장 수요예측, 생산량 자동 조절</td><td>디지털 트윈</td></tr><tr><td>3</td><td>생육환경 최적화, 지능화</td><td>AI</td></tr><tr><td>2</td><td>복합환경 데이터기반 자동화</td><td>빅데이터</td></tr><tr><td>1</td><td>수질환경 실시간 확인 및 원격제어</td><td>IoT</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-고려사항">스마트 양식장 고려사항<a href="https://gracefullight.dev/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="스마트 양식장 고려사항에 대한 직접 링크" title="스마트 양식장 고려사항에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>장기적 운영 및 시스템 고도화 비용 고려</td><td>유지보수성, 확장성</td></tr><tr><td>환경적</td><td>환경부담 최소화, 지속가능한 양식 기반 마련</td><td>에너지 효율성</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[오픈플랫폼, 오픈API]]></title>
-            <link>https://gracefullight.dev/pe/conv/open-platform-and-open-api/</link>
-            <guid>https://gracefullight.dev/pe/conv/open-platform-and-open-api/</guid>
-            <pubDate>Sun, 25 Aug 2024 10:18:27 GMT</pubDate>
-            <description><![CDATA[Open Platform and Open API]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-개념">오픈플랫폼 개념<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="오픈플랫폼 개념에 대한 직접 링크" title="오픈플랫폼 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>기업이 보유한 서비스, 정보 등을 쉽게 활용할 수 있도록하여 웹서비스 및 어플리케이션 개발을 지원하는 개방지향적 플랫폼</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성도-구성요소-문제점">오픈플랫폼 구성도, 구성요소, 문제점<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%AC%B8%EC%A0%9C%EC%A0%90" class="hash-link" aria-label="오픈플랫폼 구성도, 구성요소, 문제점에 대한 직접 링크" title="오픈플랫폼 구성도, 구성요소, 문제점에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성도">오픈플랫폼 구성도<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="오픈플랫폼 구성도에 대한 직접 링크" title="오픈플랫폼 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>사용자는 API 신청 이후 OpenAPI 인증 및ㄴ 활용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈플랫폼-구성요소">오픈플랫폼 구성요소<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="오픈플랫폼 구성요소에 대한 직접 링크" title="오픈플랫폼 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>사용자</td><td>OpenAPI 활용 개발 주체</td><td>개발자, 기업</td></tr><tr><td>오픈API</td><td>표준화된 API 명세 제공</td><td>OpenAPI 3.0</td></tr><tr><td>API게이트웨이</td><td>사용자 요청 검증, 라우팅, 캐싱</td><td>보안, 트래픽 처리</td></tr><tr><td>개발자포털</td><td>사용자에게 API 정보 제공</td><td>SDK, 인증, 계정 발급</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="오픈api-문제점">오픈API 문제점<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88api-%EB%AC%B8%EC%A0%9C%EC%A0%90" class="hash-link" aria-label="오픈API 문제점에 대한 직접 링크" title="오픈API 문제점에 대한 직접 링크">​</a></h3>
-<ul>
-<li>외부 공개 APi로 데이터 노출, 악의적 사용에 대한 보안 위험</li>
-<li>API 업데이트 및 버전관리 어려움</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="오픈api문제-해결방안">오픈API문제 해결방안<a href="https://gracefullight.dev/pe/conv/open-platform-and-open-api/#%EC%98%A4%ED%94%88api%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="오픈API문제 해결방안에 대한 직접 링크" title="오픈API문제 해결방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>인증 및 접근 권한 부여</td><td>OAuth 2.0</td></tr><tr><td>-</td><td>버전관리 및 문서화</td><td>Swagger</td></tr><tr><td>관리적</td><td>개인정보보호법, 정보통신망법 준수</td><td>오픈API 법규 제정</td></tr><tr><td>-</td><td>사용량, 응답시간, 오류 모니터링</td><td>가용성 확보</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
         </item>
