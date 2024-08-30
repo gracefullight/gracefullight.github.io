@@ -275,7 +275,6 @@ const config: Config = {
         "docker",
         "http",
         "ini",
-        "json",
         "php",
         "scss",
       ],
