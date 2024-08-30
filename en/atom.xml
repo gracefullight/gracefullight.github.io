@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-30T08:57:26.310Z</updated>
+    <updated>2024-08-30T09:53:17.488Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[자율주행]]></title>
+        <id>https://gracefullight.dev/en/pe/self-driving/</id>
+        <link href="https://gracefullight.dev/en/pe/self-driving/"/>
+        <updated>2024-08-30T09:53:17.488Z</updated>
+        <summary type="html"><![CDATA[Self Driving]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="자율주행-개념">자율주행 개념<a href="https://gracefullight.dev/en/pe/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>운전자 조작 없이 자동차 스스로 주변 환경을 인식하고 상황을 판단하여 목적지까지 운전하는 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="자율주행-기술-구성-및-적용단계">자율주행 기술 구성 및 적용단계<a href="https://gracefullight.dev/en/pe/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="자율주행-기술-구성">자율주행 기술 구성<a href="https://gracefullight.dev/en/pe/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인지</td><td>다양한 센서를 융합하여 물체 인지</td><td>카메라, 레이다, 라이다</td></tr><tr><td>판단</td><td>인지정보 기반 주행경로 계획, 판단</td><td>ADAS, E2E AI</td></tr><tr><td>제어</td><td>판단한 전략에 따라 차량 제어</td><td>조향, 브레이크, 속도</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="자율주행-적용단계">자율주행 적용단계<a href="https://gracefullight.dev/en/pe/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>5단계</td><td>운전자 개입 필요 없음</td><td>완전 자동화</td></tr><tr><td>4단계</td><td>대부분 상황에서 스스로 운행 가능</td><td>고도 자동화</td></tr><tr><td>3단계</td><td>특정 조건에서 모든 주행 기능 수행</td><td>조건부 자동화</td></tr><tr><td>2단계</td><td>가속, 조향 등 일부 기능 자동화</td><td>부분 자동화</td></tr><tr><td>1단계</td><td>차량의 일부 기능 지원</td><td>운전자 지원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="자율주행-고려사항">자율주행 고려사항<a href="https://gracefullight.dev/en/pe/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>해결방안</th></tr></thead><tbody><tr><td>기술적</td><td>악천후 등 다양한 상황의 성능 확보</td><td>연구 개발</td></tr><tr><td>제도적</td><td>사고시 책임소재, 윤리 기준, 개인정보 수집 방안</td><td>법규 정비</td></tr><tr><td>사회적</td><td>자율주행 일자리 변화</td><td>민관 협의, 정책 지원</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[모바일 엣지 컴퓨팅]]></title>
         <id>https://gracefullight.dev/en/pe/conv/mobile-edge-computing/</id>
@@ -102,7 +126,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>물리적 객체</td><td>현실 세계의 실존 객체</td><td>디지털 트윈 대상</td></tr><tr><td>디지털 트윈 모델</td><td>물리 객체를 가상 공간에 복제</td><td>시뮬레이션 및 분석</td></tr><tr><td>분석 시스템</td><td>데이터 분석, 물리 객체 최적화</td><td>실시간 반영</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-적용방안">디지털 트윈 적용방안<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>적용방안</th><th>설명</th></tr></thead><tbody><tr><td>스마트시티</td><td>-</td><td>-</td></tr><tr><td>에너지</td><td>-</td><td>-</td></tr><tr><td>헬스케어</td><td>-</td><td>-</td></tr><tr><td>제조</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B9%84%EF%BF%BD%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EF%BF%BD%EC%9C%88-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>시뮬레이션</th><th>디지털 트윈</th></tr></thead><tbody><tr><td>개념</td><td>특정조건 동작 모방</td><td>가상공간 복제</td></tr><tr><td>데이터</td><td>과거, 가정</td><td>실시간</td></tr><tr><td>상호작용</td><td>제한적</td><td>현실세계 실시간 반영</td></tr><tr><td>목적</td><td>시스템 동작예측, 평가</td><td>현실세계 문제 해결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_xtJj" id="디지털-트윈-발전모델">디지털 트윈 발전모델<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B0%9C%EC%A0%84%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>단계</th><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>5</td><td>자율</td><td>자율적 문제 인지 및 해결</td></tr><tr><td>4</td><td>연합</td><td>디지털 트윈 상호 연결</td></tr><tr><td>3</td><td>모의</td><td>디지털 결과 현실 객체 적용 및 최적화</td></tr><tr><td>2</td><td>관제</td><td>물리 객체 모니터링</td></tr><tr><td>1</td><td>모사</td><td>물리 객체 복제</td></tr></tbody></table>
@@ -182,7 +206,7 @@
 <ul>
 <li>물체의 거리를 감지하고 측정하기 위한 장치로 레이더, 라이다, 초음파, 적외선, 카메라 사용</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="레이더-라이다-개념도-구성요소">레이더, 라이다 개념도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EB%9D%BC%EC%9D%B4%EB%8B%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="레이더-라이다-개념도-구�성요소">레이더, 라이다 개념도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EB%9D%BC%EC%9D%B4%EB%8B%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="레이더-개념도-구성요소">레이더 개념도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -269,40 +293,6 @@
 <li>재료 선택: 사용 목적에 맞는 재료, 성질, 비용</li>
 <li>설계 요소: 구조적 무결성, 지지구도, CAD 사용</li>
 <li>후처리: 표면 마감, 지지구조 제거, 경화, 품질향상, 기능성</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AIaaS]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/aiaas/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/aiaas/"/>
-        <updated>2024-08-25T22:46:49.399Z</updated>
-        <summary type="html"><![CDATA[AI as a Service]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-개념">AIaaS 개념<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>AI 학습, 모델링, 자연어처리, CV, 음성인식 등의 AI 기술을 온디맨드로 제공하는 클라우드 서비스 모델</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-구성도-서비스-유형-적용사례">AIaaS 서비스 구성도, 서비스 유형, 적용사례<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-구성도">AIaaS 서비스 구성도<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-유형">AIaaS 서비스 유형<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>유형</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>AIaaS 플랫폼</td><td>AI모델 개발, 학습, 배포, 관리</td><td>CSP 사용</td></tr><tr><td>ML 서비스</td><td>머신러닝 모델 학습, 예측, 분류, 평가</td><td>인공신경망</td></tr><tr><td>NLP 서비스</td><td>텍스트 분석, 번역, 감정분석</td><td>챗봇</td></tr><tr><td>CV 서비스</td><td>이미지 분석, 비디오 분석, 인식</td><td>YoLo</td></tr><tr><td>음성인식 서비스</td><td>STT, 음성 분석</td><td>DeepSpeech</td></tr><tr><td>LLM 서비스</td><td>생성형 AI 서비스 제공</td><td>Llama</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-적용사례">AIaaS 적용사례<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>ChatGPT</li>
-<li>Copilot</li>
-<li>Gemini</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-고려사항">AIaaS 고려사항<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>비용, 성능</li>
-<li>데이터 프라이버시, 폐기 정책</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
