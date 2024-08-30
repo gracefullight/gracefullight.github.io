@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-30T08:43:40.478Z</updated>
+    <updated>2024-08-30T08:50:40.242Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[스마트시티 서비스 활성화 방안]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/스마트시티-서비스-활성화-방안/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/스마트시티-서비스-활성화-방안/"/>
+        <updated>2024-08-30T08:50:40.242Z</updated>
+        <summary type="html"><![CDATA[스마트시티 서비스 활성화 방안]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-활성화-방안-개념-및-구성요소">스마트시티 서비스 활성화 방안 개념 및 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="��스마트시티-서비스-활성화-방안-개념">스마트시티 서비스 활성화 방안 개념<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-구성요소">스마트시티 서비스 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>커뮤니케이션 인프라</td><td>실시간 데이터 수집 기반 통신사업자와의 협력</td><td>5G 특화망</td></tr><tr><td>데이터 플랫폼</td><td>제조, 교통 등 기반 설비 센서 데이터 분석, 처리, 의사결정 지원</td><td>빅데이터, AI</td></tr><tr><td>클라우드 플랫폼</td><td>온디맨드 방식으로 비용절감, 사용량에 따른 Scale Out, Scale In</td><td>IaaS, PaaS, SaaS</td></tr></tbody></table>
+<ul>
+<li>K-PaaS 서비스 모델을 활용하여 신뢰성있는 클라우드 서비스 구축 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-모델의-유형과-적용방안">스마트시티 서비스 모델의 유형과 적용방안<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EC%9C%A0%ED%98%95%EA%B3%BC-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-모델-유형">스마트시티 서비스 모델 유형<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%AA%A8%EB%8D%B8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>OBM</td><td>소유주가 직접 건설 및 운영</td><td>초기 비용 높음</td></tr><tr><td>BOM</td><td>건설에서 유지보수까지 위탁</td><td>운영 효율성</td></tr><tr><td>BOT</td><td>일정기간 소유 후 소유권 이전</td><td>장기 계획 필요</td></tr><tr><td>BOD</td><td>지자체 건설, 소유, 운영</td><td>중앙 통제 가능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-모델-적용방안">스마트시티 서비스 모델 적용방안<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%AA%A8%EB%8D%B8-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>적용방안</th><th>특징</th></tr></thead><tbody><tr><td>소도시</td><td>BOM 모델로 외부 자본 유치</td><td>비용 절감</td></tr><tr><td>대도시</td><td>BOO 모델로 민간 투자 유도</td><td>지속 가능성</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트시티-서비스-활성화-고려사항">스마트시티 서비스 활성화 고려사항<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>정부, 지자체 정책 지원 및 규제</td><td>지속가능 발전</td></tr><tr><td>금융</td><td>금융지원, 투자 유치</td><td>프로젝트 지원</td></tr><tr><td>민간</td><td>참여 유도, 기술 개발 혁신</td><td>민관 협력 모델</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OTT]]></title>
         <id>https://gracefullight.dev/en/pe/conv/ott/</id>
@@ -17,7 +45,7 @@
 <ul>
 <li>인터넷을 통해 미디어 콘텐츠를 제공하는 서비스로 셋탑박스 유무에 상관없이 다양한 기기를 통해 콘텐츠에 접근 가능</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성도-구성요소-서비스-사업자-유형">OTT 구성도, 구성요소, 서비스 사업자 유형<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%84%9C%EB%B9%84%EF%BF%BD%EF%BF%BD%EC%8A%A4-%EC%82%AC%EC%97%85%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성도-구성요소-서비스-사업자-유형">OTT 구성도, 구성요소, 서비스 사업자 유형<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%97%85%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성도">OTT 구성도<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="ott-구성요소">OTT 구성요소<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -236,7 +264,7 @@
 <ul>
 <li>AI 학습, 모델링, 자연어처리, CV, 음성인식 등의 AI 기술을 온디맨드로 제공하는 클라우드 서비스 모델</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-구성도-서비스-유형-적용사례">AIaaS 서비스 구성도, 서비스 유형, 적용사례<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EF%BF%BD%EF%BF%BD%EC%8A%A4-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-구성도-서비스-유형-적용사례">AIaaS 서비스 구성도, 서비스 유형, 적용사례<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-구성도">AIaaS 서비스 구성도<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_xtJj" id="aiaas-서비스-유형">AIaaS 서비스 유형<a href="https://gracefullight.dev/en/pe/conv/aiaas/#aiaas-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -294,35 +322,6 @@
 <li>폐배터리</li>
 <li>충전인프라</li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[스마트 양식장]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/smart-aqua-farming/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/"/>
-        <updated>2024-08-25T11:47:28.385Z</updated>
-        <summary type="html"><![CDATA[Smart Aqua-farming]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-개념">스마트 양식장 개념<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>IoT, AI, 빅데이터 활용하여 양식환경을 자동화, 지능화한 시스템을 갖춘 양식장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도-구성요소-적용단계">스마트 양식장 구성도, 구성요소, 적용단계<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성도">스마트 양식장 구성도<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>5G 특화망 네트워크 내에서 각 시스템 연결</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-구성요소">스마트 양식장 구성요소<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관제시스템</td><td>수온, pH, 용존산소 등 데이터 관제</td><td>통제 및 의사결정</td></tr><tr><td>제어시스템</td><td>최적 생육 환경 유지, 자동화</td><td>자동급이, 용수 배출</td></tr><tr><td>데이터 분석플랫폼</td><td>데이터 저장, 분석, 시각화, 머신러닝</td><td>클라우드 기반</td></tr><tr><td>5G 특화망</td><td>실시간 데이터 전송</td><td>저지연, 원격제어</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-적용단계">스마트 양식장 적용단계<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>내용</th><th>핵심기술</th></tr></thead><tbody><tr><td>4</td><td>자율 양식 시장 수요예측, 생산량 자동 조절</td><td>디지털 트윈</td></tr><tr><td>3</td><td>생육환경 최적화, 지능화</td><td>AI</td></tr><tr><td>2</td><td>복합환경 데이터기반 자동화</td><td>빅데이터</td></tr><tr><td>1</td><td>수질환경 실시간 확인 및 원격제어</td><td>IoT</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_xtJj" id="스마트-양식장-고려사항">스마트 양식장 고려사항<a href="https://gracefullight.dev/en/pe/conv/smart-aqua-farming/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%96%91%EC%8B%9D%EC%9E%A5-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기술적</td><td>장기적 운영 및 시스템 고도화 비용 고려</td><td>유지보수성, 확장성</td></tr><tr><td>환경적</td><td>환경부담 최소화, 지속가능한 양식 기반 마련</td><td>에너지 효율성</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
