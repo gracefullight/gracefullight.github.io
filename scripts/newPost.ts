@@ -11,7 +11,7 @@ title: %s
 date: %s
 description: %s
 authors: me
-tags: 
+tags:
   %s
 ---\n`;
 

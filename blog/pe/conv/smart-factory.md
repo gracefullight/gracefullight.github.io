@@ -3,9 +3,9 @@ title: 스마트 팩토리
 date: 2024-08-30T00:16:55.505+09:00
 description: Smart Factory
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 스마트 팩토리 개념

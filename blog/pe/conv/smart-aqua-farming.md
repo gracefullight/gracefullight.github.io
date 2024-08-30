@@ -3,7 +3,7 @@ title: 스마트 양식장
 date: 2024-08-25T20:47:28.385+09:00
 description: Smart Aqua-farming
 authors: me
-tags: 
+tags:
   - pe
   - pe/conv
 ---

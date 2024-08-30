@@ -3,9 +3,9 @@ title: 클라우드 서비스 유형
 date: 2024-07-31T20:37:12.761+09:00
 description: Types of Cloud Services
 authors: me
-tags: 
+tags:
   - pe
-  - pe/conv 
+  - pe/conv
 ---
 
 ## 클라우드 서비스 유형 구성도, 구성요소
