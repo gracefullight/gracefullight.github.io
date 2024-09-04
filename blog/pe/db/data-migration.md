@@ -5,7 +5,7 @@ description: Data Migration
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 데이터 마이그레이션 개념

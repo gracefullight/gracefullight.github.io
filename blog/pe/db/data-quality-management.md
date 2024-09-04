@@ -5,7 +5,7 @@ description: Data Quality Management
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 데이터 품질관리 개념

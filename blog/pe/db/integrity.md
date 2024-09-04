@@ -5,7 +5,7 @@ description: Integrity
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 무결성 개념

@@ -5,7 +5,7 @@ description: Database Tuning
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 데이터베이스 튜닝 개념

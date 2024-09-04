@@ -5,7 +5,7 @@ description: Database Optimizer
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 옵티마이저 개념
