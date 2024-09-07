@@ -85,7 +85,7 @@
     "hexo-util": "^3.3.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
-    "oxlint": "^0.9.2",
+    "oxlint": "^0.9.3",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^2.10.1",
     "tsx": "^4.19.0",
