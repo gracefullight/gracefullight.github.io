@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-08-30T09:53:17.488Z</updated>
+    <updated>2024-09-08T12:20:23.920Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[선형대수학 용어집]]></title>
+        <id>https://gracefullight.dev/en/2024/09/08/linear-algebra-terminology/</id>
+        <link href="https://gracefullight.dev/en/2024/09/08/linear-algebra-terminology/"/>
+        <updated>2024-09-08T12:20:23.920Z</updated>
+        <summary type="html"><![CDATA[Linear Algebra Terminology in Korean and English]]></summary>
+        <content type="html"><![CDATA[<table><thead><tr><th>한글</th><th>영어</th></tr></thead><tbody><tr><td>가우스 소거법</td><td>Gauss Elimination</td></tr><tr><td>내적</td><td>Dot Product</td></tr><tr><td>빗변</td><td>Hypotenuse</td></tr><tr><td>사다리꼴행렬</td><td>Echelon Form</td></tr><tr><td>선형 독립</td><td>Linear Independence</td></tr><tr><td>선형 종속</td><td>Linear Dependence</td></tr><tr><td>사영</td><td>Projection</td></tr><tr><td>열</td><td>Column</td></tr><tr><td>직각삼각형 삼각비</td><td>Sohcahtoa</td></tr><tr><td>행</td><td>Row</td></tr><tr><td>행렬</td><td>Matrix</td></tr><tr><td>행렬식</td><td>Determinant</td></tr><tr><td>회전행렬</td><td>Rotation Matrix</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_uDOX" id="참조">참조<a href="https://gracefullight.dev/en/2024/09/08/linear-algebra-terminology/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mnemonics_in_trigonometry" target="_blank" rel="noopener noreferrer">Wikipedia: Mnemonics in trigonometry</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="math" term="math"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[자율주행]]></title>
         <id>https://gracefullight.dev/en/pe/conv/self-driving/</id>
@@ -126,7 +143,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>물리적 객체</td><td>현실 세계의 실존 객체</td><td>디지털 트윈 대상</td></tr><tr><td>디지털 트윈 모델</td><td>물리 객체를 가상 공간에 복제</td><td>시뮬레이션 및 분석</td></tr><tr><td>분석 시스템</td><td>데이터 분석, 물리 객체 최적화</td><td>실시간 반영</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_uDOX" id="디지털-트윈-적용방안">디지털 트윈 적용방안<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>적용방안</th><th>설명</th></tr></thead><tbody><tr><td>스마트시티</td><td>-</td><td>-</td></tr><tr><td>에너지</td><td>-</td><td>-</td></tr><tr><td>헬스케어</td><td>-</td><td>-</td></tr><tr><td>제조</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_uDOX" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%EF%BF%BD%EF%BF%BD%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_uDOX" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>시뮬레이션</th><th>디지털 트윈</th></tr></thead><tbody><tr><td>개념</td><td>특정조건 동작 모방</td><td>가상공간 복제</td></tr><tr><td>데이터</td><td>과거, 가정</td><td>실시간</td></tr><tr><td>상호작용</td><td>제한적</td><td>현실세계 실시간 반영</td></tr><tr><td>목적</td><td>시스템 동작예측, 평가</td><td>현실세계 문제 해결</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_uDOX" id="디지털-트윈-발전모델">디지털 트윈 발전모델<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B0%9C%EC%A0%84%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>단계</th><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>5</td><td>자율</td><td>자율적 문제 인지 및 해결</td></tr><tr><td>4</td><td>연합</td><td>디지털 트윈 상호 연결</td></tr><tr><td>3</td><td>모의</td><td>디지털 결과 현실 객체 적용 및 최적화</td></tr><tr><td>2</td><td>관제</td><td>물리 객체 모니터링</td></tr><tr><td>1</td><td>모사</td><td>물리 객체 복제</td></tr></tbody></table>
@@ -262,37 +279,6 @@
 <h2 class="anchor anchorWithStickyNavbar_uDOX" id="참조">참조<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://law.go.kr/%ed%96%89%ec%a0%95%ea%b7%9c%ec%b9%99/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%bb%b4%ed%93%a8%ed%8c%85%ec%84%9c%eb%b9%84%ec%8a%a4%ed%92%88%ec%a7%88%c2%b7%ec%84%b1%eb%8a%a5%ec%97%90%ea%b4%80%ed%95%9c%ea%b8%b0%ec%a4%80" target="_blank" rel="noopener noreferrer">국가법령정보센터: 클라우드컴퓨팅서비스 품질·성능에 관한 기준</a></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3D 프린팅]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/3d-printing/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/3d-printing/"/>
-        <updated>2024-08-26T08:55:57.665Z</updated>
-        <summary type="html"><![CDATA[3D Printing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_uDOX" id="3d-프린팅">3D 프린팅<a href="https://gracefullight.dev/en/pe/conv/3d-printing/#3d-%ED%94%84%EB%A6%B0%ED%8C%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>디지털 모델을 기반으로 재료를 적층하여 제조해 기존에 만들 수 없는 복잡한 형상을 효율적으로 제조하는 프린팅 기법</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_uDOX" id="3d-프린팅-공정-분류-및-설명">3D 프린팅 공정 분류 및 설명<a href="https://gracefullight.dev/en/pe/conv/3d-printing/#3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EA%B3%B5%EC%A0%95-%EB%B6%84%EB%A5%98-%EB%B0%8F-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_uDOX" id="3d-프린팅-공정-분류">3D 프린팅 공정 분류<a href="https://gracefullight.dev/en/pe/conv/3d-printing/#3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EA%B3%B5%EC%A0%95-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>소재와 출력 기법에 따라 다양한 공정이 존재하나 SW측면에서 전처리, 프린팅, 후처리로 구분</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_uDOX" id="3d-프린팅-공정-설명">3D 프린팅 공정 설명<a href="https://gracefullight.dev/en/pe/conv/3d-printing/#3d-%ED%94%84%EB%A6%B0%ED%8C%85-%EA%B3%B5%EC%A0%95-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>모델링</td><td>물체를 3D로 역공학</td><td>3D 스캐닝, 리버싱</td></tr><tr><td>-</td><td>모델 설계</td><td>3D 모델링 SW</td></tr><tr><td>-</td><td>모델 시뮬레이션</td><td>시뮬레이션 SW</td></tr><tr><td>편집 및 변환</td><td>모델 파일 무결성</td><td>STL 편집 SW</td></tr><tr><td>-</td><td>모델링 재료, 경도 결정</td><td>슬라이싱 SW</td></tr><tr><td>프린팅</td><td>프린터 헤드, 베드 조작, 빌드</td><td>호스트 SW</td></tr><tr><td>출력물 검사</td><td>출력물 검증, 후가공</td><td>출력물 검사 SW</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_uDOX" id="3d-프린팅시-고려사항">3D 프린팅시 고려사항<a href="https://gracefullight.dev/en/pe/conv/3d-printing/#3d-%ED%94%84%EB%A6%B0%ED%8C%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>재료 선택: 사용 목적에 맞는 재료, 성질, 비용</li>
-<li>설계 요소: 구조적 무결성, 지지구도, CAD 사용</li>
-<li>후처리: 표면 마감, 지지구조 제거, 경화, 품질향상, 기능성</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
