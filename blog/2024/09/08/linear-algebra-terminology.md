@@ -22,6 +22,7 @@ tags:
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
+| 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 직각삼각형 삼각비 | Sohcahtoa |
 | 직교 | Orthogonal |
 | 항등 행렬 | Identity Matrix |
