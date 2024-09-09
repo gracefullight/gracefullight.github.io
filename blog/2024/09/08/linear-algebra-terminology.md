@@ -10,6 +10,7 @@ tags:
 | 한글 | 영어 |
 | --- | --- |
 | 가우스 소거법 | Gauss Elimination |
+| 그람-슈미트 과정 | Gram–Schmidt process |
 | 내적 | Dot Product |
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
@@ -26,9 +27,11 @@ tags:
 | 외적 | Outer Product |
 | 전치 행렬 | Transposed Matrix |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
+| 정규 직교 행렬 | Orthonormal Matrix |
 | 좌표계 | Coordinate Frame |
 | 직각삼각형 삼각비 | Sohcahtoa |
 | 직교 | Orthogonal |
+| 직교 행렬 | Orthogonal Matrix |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
 | 행렬 | Matrix |
