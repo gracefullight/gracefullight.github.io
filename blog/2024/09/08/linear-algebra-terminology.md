@@ -20,6 +20,7 @@ tags:
 | 사영 | Projection |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 열 | Column |
+| 영 | Nought |
 | 외적 | Outer Product |
 | 직각삼각형 삼각비 | Sohcahtoa |
 | 직교 | Orthogonal |
