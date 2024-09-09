@@ -18,6 +18,7 @@ tags:
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
+| 삼각법 | Trigonometry |
 | 선형 독립 | Linear Independence |
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
