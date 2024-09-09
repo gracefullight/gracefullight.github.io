@@ -13,6 +13,7 @@ tags:
 | 내적 | Dot Product |
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
+| 대각선 | Diagonal |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
@@ -23,6 +24,7 @@ tags:
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
+| 전치 행렬 | Transposed Matrix |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 좌표계 | Coordinate Frame |
 | 직각삼각형 삼각비 | Sohcahtoa |
