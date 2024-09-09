@@ -30,6 +30,7 @@ tags:
 | 정규 직교 행렬 | Orthonormal Matrix |
 | 좌표계 | Coordinate Frame |
 | 직각삼각형 삼각비 | Sohcahtoa |
+| 직각의 | Perpendicular |
 | 직교 | Orthogonal |
 | 직교 행렬 | Orthogonal Matrix |
 | 항등 행렬 | Identity Matrix |
