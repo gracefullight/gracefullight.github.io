@@ -10,6 +10,7 @@ tags:
 | 한글 | 영어 |
 | --- | --- |
 | 가우스 소거법 | Gauss Elimination |
+| 고유값 | Eigenvalue |
 | 고유 벡터 | Eigenvector |
 | 그람-슈미트 과정 | Gram–Schmidt process |
 | 내적 | Dot Product |
