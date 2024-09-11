@@ -14,6 +14,7 @@ tags:
 | 고유 벡터 | Eigenvector |
 | 그람-슈미트 과정 | Gram–Schmidt process |
 | 내적 | Dot Product |
+| 다항식 | Polynomial |
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
 | 대각선 | Diagonal |
