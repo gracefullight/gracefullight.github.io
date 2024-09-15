@@ -27,6 +27,7 @@ tags:
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
+| 여사건 | Complement Event |
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
