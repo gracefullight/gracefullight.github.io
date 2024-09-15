@@ -18,6 +18,7 @@ tags:
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
 | 대각선 | Diagonal |
+| 대각화 | Diagonalization |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
@@ -37,6 +38,7 @@ tags:
 | 직각의 | Perpendicular |
 | 직교 | Orthogonal |
 | 직교 행렬 | Orthogonal Matrix |
+| 특성 다항식 | Characteristic Polynomial |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
 | 행렬 | Matrix |
