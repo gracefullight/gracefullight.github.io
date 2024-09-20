@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-09-08T12:20:23.920Z</updated>
+    <updated>2024-09-20T05:25:46.581Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Git Alias]]></title>
+        <id>https://gracefullight.dev/en/2024/09/20/git-alias/</id>
+        <link href="https://gracefullight.dev/en/2024/09/20/git-alias/"/>
+        <updated>2024-09-20T05:25:46.581Z</updated>
+        <summary type="html"><![CDATA[My Git Alias]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="code">Code<a href="https://gracefullight.dev/en/2024/09/20/git-alias/#code" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<div class="language-bash codeBlockContainer_cDTc theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_Hudg"><pre tabindex="0" class="prism-code language-bash codeBlock_NlsB thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_IqnC"><span class="token-line" style="color:#9CDCFE"><span class="token punctuation" style="color:rgb(212, 212, 212)">[</span><span class="token plain">alias</span><span class="token punctuation" style="color:rgb(212, 212, 212)">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  branch-name </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(206, 145, 120)">"!git rev-parse --abbrev-ref HEAD"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  n </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> checkout </span><span class="token parameter variable" style="color:rgb(156, 220, 254)">-b</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  c </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> checkout</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  s </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> status</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  p </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(206, 145, 120)">"!git push -u origin </span><span class="token string variable" style="color:rgb(156, 220, 254)">$(</span><span class="token string variable function" style="color:rgb(220, 220, 170)">git</span><span class="token string variable" style="color:rgb(156, 220, 254)"> branch-name</span><span class="token string variable" style="color:rgb(156, 220, 254)">)</span><span class="token string" style="color:rgb(206, 145, 120)">"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">  undo </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> reset HEAD~1</span><br></span></code></pre><div class="buttonGroup_AFEW"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_KkDr" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_fBSt"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_uwAp"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="description">Description<a href="https://gracefullight.dev/en/2024/09/20/git-alias/#description" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<p>I share some useful Git aliases to streamline and simplify daily Git operations. These aliases are shortcuts for common Git commands, making them quicker and easier to execute. The following are the specific commands and their aliases:</p>
+<ul>
+<li><code>branch-name</code>: Retrieves the current branch name using <code>git rev-parse --abbrev-ref HEAD</code>. This alias is particularly useful for the <code>p</code> command, as it automatically includes the current branch name when pushing to the remote repository.</li>
+<li><code>n</code>: A shortcut to create a new branch with <code>checkout -b</code>.</li>
+<li><code>c</code>: A simplified alias for <code>checkout</code>, used to switch between branches.</li>
+<li><code>s</code>: Short for <code>status</code>, displays the current working directory status.</li>
+<li><code>p</code>: Pushes the current branch to the remote repository using <code>git push -u origin</code> and automatically includes the branch name.</li>
+<li><code>undo</code>: A quick command to undo the last commit by resetting the HEAD pointer to the previous commit.</li>
+</ul>
+<p>These aliases are designed to improve productivity and reduce the time spent typing lengthy commands, especially when working with Git frequently.</p>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[선형대수학 용어집]]></title>
         <id>https://gracefullight.dev/en/2024/09/08/linear-algebra-terminology/</id>
@@ -34,7 +59,7 @@
 <ul>
 <li>운전자 조작 없이 자동차 스스로 주변 환경을 인식하고 상황을 판단하여 목적지까지 운전하는 기술</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="자율주행-기술-구성-및-적용단계">자율주행 기술 구성 및 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="자율주행-기술-구성-및-적용단계">자율주행 기술 구성 및 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EF%BF%BD%EC%88%A0-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_UCDQ" id="자율주행-기술-구성">자율주행 기술 구성<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인지</td><td>다양한 센서를 융합하여 물체 인지</td><td>카메라, 레이다, 라이다</td></tr><tr><td>판단</td><td>인지정보 기반 주행경로 계획, 판단</td><td>ADAS, E2E AI</td></tr><tr><td>제어</td><td>판단한 전략에 따라 차량 제어</td><td>조향, 브레이크, 속도</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_UCDQ" id="자율주행-적용단계">자율주행 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -79,7 +104,7 @@
         <updated>2024-08-30T08:50:40.242Z</updated>
         <summary type="html"><![CDATA[스마트시티 서비스 활성화 방안]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트시티-서비스-활성화-방안-개념-및-구성요소">스마트시티 서비스 활성화 방안 개념 및 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트시티-서비스-활성화-방안-개념">스마트시티 서비스 활성화 방안 개념<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트시티-서비스-활성화-�방안-개념">스마트시티 서비스 활성화 방안 개념<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트시티-서비스-구성요소">스마트시티 서비스 구성요소<a href="https://gracefullight.dev/en/pe/conv/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88/#%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%9C%ED%8B%B0-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>커뮤니케이션 인프라</td><td>실시간 데이터 수집 기반 통신사업자와의 협력</td><td>5G 특화망</td></tr><tr><td>데이터 플랫폼</td><td>제조, 교통 등 기반 설비 센서 데이터 분석, 처리, 의사결정 지원</td><td>빅데이터, AI</td></tr><tr><td>클라우드 플랫폼</td><td>온디맨드 방식으로 비용절감, 사용량에 따른 Scale Out, Scale In</td><td>IaaS, PaaS, SaaS</td></tr></tbody></table>
@@ -167,7 +192,7 @@
 <ul>
 <li>단순 생산설비에서 대량으로 상품을 생산해왔던 기존 공장 생산체계에 ICT 기술을 접목하여 생산과정을 최소의 비용과 최적의 절차로 운영을 가능하게한 공장</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트-팩토리-구성도-구성요소-발전단계">스마트 팩토리 구성도, 구성요소, 발전단계<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="스마�트-팩토리-구성도-구성요소-발전단계">스마트 팩토리 구성도, 구성요소, 발전단계<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트-팩토리-구성도">스마트 팩토리 구성도<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <div class="language-text codeBlockContainer_cDTc theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_Hudg"><pre tabindex="0" class="prism-code language-text codeBlock_NlsB thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_IqnC"><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| SW (MES, ERP)  |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|  NW   |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| HW (센서, 로봇)  |  (5G) |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| 데이터 (생산품질)  |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span></code></pre><div class="buttonGroup_AFEW"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_KkDr" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_fBSt"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_uwAp"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_UCDQ" id="스마트-팩토리-구성요소">스마트 팩토리 구성요소<a href="https://gracefullight.dev/en/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -244,42 +269,6 @@
 <p>Light Detection and Ranging</p>
 </blockquote>
 <table><thead><tr><th>구분</th><th>레이더</th><th>라이다</th></tr></thead><tbody><tr><td>신호</td><td>라디오 전파</td><td>레이더</td></tr><tr><td>거리</td><td>김</td><td>짧음</td></tr><tr><td>방향</td><td>특정방향</td><td>360도</td></tr><tr><td>장점</td><td>악천후에 안정적</td><td>높은 정확도</td></tr><tr><td>-</td><td>넓은 범위 탐지</td><td>3차원 정보</td></tr><tr><td>단점</td><td>낮은 해상도</td><td>악천후 취약</td></tr><tr><td>-</td><td>형태 파악불가</td><td>측정거리 제한</td></tr><tr><td>분야</td><td>항공, 해상, 군사, 자율주행</td><td>드론, 로봇, 자율주행</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[클라우드 서비스 품질 성능에 관한 기준]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/클라우드-서비스-품질-성능에-관한-기준/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/클라우드-서비스-품질-성능에-관한-기준/"/>
-        <updated>2024-08-26T11:38:56.090Z</updated>
-        <summary type="html"><![CDATA[클라우드 서비스 품질 성능에 관한 기준]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="클라우드-서비스-품질-성능-개념">클라우드 서비스 품질 성능 개념<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>클라우드컴퓨팅 서비스가 사용자의 요구사항을 충족시키고 기대하는 성능수준을 제공하는 정도</li>
-<li>서비스 품질에 대한 기준 미비로 사용자, CSP간 분쟁, 서비스 장애로 인한 손실 등 문제 발생</li>
-<li>서비스 신뢰성 확보, 권익 보호, 산업 발전</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="클라우드-서비스-품질-성능-평가-기준">클라우드 서비스 품질 성능 평가 기준<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_UCDQ" id="시스템-품질-속성">시스템 품질 속성<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>평가기준예시</th></tr></thead><tbody><tr><td>가용성</td><td>클라우드컴퓨팅 서비스가 장애없이 운영되는 능력</td><td>가용률 등</td></tr><tr><td>응답성</td><td>클라우드컴퓨팅 서비스 이용자의 요청이 얼마나 빨리 응답하는지에 대한 능력</td><td>응답시간 등</td></tr><tr><td>확장성</td><td>이용자 요청에 따라 자원의 양을 할당할 수 있는 능력</td><td>스케일아웃, 스케일업</td></tr><tr><td>신뢰성</td><td>CSP가 클라우드컴퓨팅 서비스를 정상적으로 운영할 수 있는 능력</td><td>서비스 회복시간, 백업주기, 백업준수율</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_UCDQ" id="고객-품질-속성">고객 품질 속성<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EA%B3%A0%EA%B0%9D-%ED%92%88%EC%A7%88-%EC%86%8D%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>평가기준예시</th></tr></thead><tbody><tr><td>서비스 지속성</td><td>CSP가 클라우드 컴퓨팅서비스를 안정적으로 지속적으로 제공할 수 있는 능력</td><td>서비스 지속 역량</td></tr><tr><td>서비스 지원</td><td>클라우드 컴퓨팅 서비스의 이용 편의성을 제공하기 위한 능력</td><td>서비스 지원 환경</td></tr><tr><td>고객 대응</td><td>클라우드 서비스를 이용하는 고객 요청에 대응하는 일련의 활동</td><td>고객지원, 불만처리체계</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="클라우드-서비스-회복시간-정량적-측정지표">클라우드 서비스 회복시간 정량적 측정지표<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%9A%8C%EB%B3%B5%EC%8B%9C%EA%B0%84-%EC%A0%95%EB%9F%89%EC%A0%81-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>지표</th><th>설명</th><th>관련 품질</th></tr></thead><tbody><tr><td>MTBF</td><td>평균 고장 간격</td><td>안정성</td></tr><tr><td>MTTF</td><td>평균 고장 시간</td><td>내구성</td></tr><tr><td>MTTB</td><td>고장 후 복구까지의 평균 시간</td><td>유지보수성</td></tr><tr><td>가용률</td><td>시스템 정상 운영시간 비율</td><td>가용성</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="클라우드-서비스-품질-성능-측정시-고려사항">클라우드 서비스 품질 성능 측정시 고려사항<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5-%EC%B8%A1%EC%A0%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>SLA, SLI</li>
-<li>성능 모니터링</li>
-<li>데이터 보안</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_UCDQ" id="참조">참조<a href="https://gracefullight.dev/en/pe/conv/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%92%88%EC%A7%88-%EC%84%B1%EB%8A%A5%EC%97%90-%EA%B4%80%ED%95%9C-%EA%B8%B0%EC%A4%80/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://law.go.kr/%ed%96%89%ec%a0%95%ea%b7%9c%ec%b9%99/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%bb%b4%ed%93%a8%ed%8c%85%ec%84%9c%eb%b9%84%ec%8a%a4%ed%92%88%ec%a7%88%c2%b7%ec%84%b1%eb%8a%a5%ec%97%90%ea%b4%80%ed%95%9c%ea%b8%b0%ec%a4%80" target="_blank" rel="noopener noreferrer">국가법령정보센터: 클라우드컴퓨팅서비스 품질·성능에 관한 기준</a></li>
-</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
