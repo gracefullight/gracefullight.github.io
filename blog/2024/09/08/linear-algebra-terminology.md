@@ -10,6 +10,7 @@ tags:
 | 한글 | 영어 |
 | --- | --- |
 | 가우스 소거법 | Gauss Elimination |
+| 결합 확률 | Joint Probability |
 | 경험적 확률 | Empirical Probability |
 | 고유값 | Eigenvalue |
 | 고유 벡터 | Eigenvector |
@@ -37,6 +38,7 @@ tags:
 | 정규 직교 행렬 | Orthonormal Matrix |
 | 조건부 확률 | Conditional Probability |
 | 좌표계 | Coordinate Frame |
+| 주변 확률 | Marginal Probability |
 | 직각삼각형 삼각비 | Sohcahtoa |
 | 직각의 | Perpendicular |
 | 직교 | Orthogonal |
