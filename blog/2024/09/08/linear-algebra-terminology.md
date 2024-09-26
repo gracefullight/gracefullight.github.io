@@ -15,6 +15,7 @@ tags:
 | 고유값 | Eigenvalue |
 | 고유 벡터 | Eigenvector |
 | 그람-슈미트 과정 | Gram–Schmidt process |
+| 기대값 | Expected Value |
 | 내적 | Dot Product |
 | 누적 확률 | Cumulative Probability |
 | 다항식 | Polynomial |
@@ -34,6 +35,7 @@ tags:
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
+| 이항 분포 | Binomial Distribution |
 | 전치 행렬 | Transposed Matrix |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 정규 직교 행렬 | Orthonormal Matrix |
