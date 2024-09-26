@@ -23,6 +23,7 @@ tags:
 | 단위 행렬 | Unit Matrix |
 | 대각선 | Diagonal |
 | 대각화 | Diagonalization |
+| 독립항등분포 | IID, Independent and Identically Distributed |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
