@@ -14,6 +14,7 @@ tags:
 | 경험적 확률 | Empirical Probability |
 | 고유값 | Eigenvalue |
 | 고유 벡터 | Eigenvector |
+| 균일 분포 | Uniformed Distribution |
 | 그람-슈미트 과정 | Gram–Schmidt process |
 | 기대값 | Expected Value |
 | 내적 | Dot Product |
@@ -33,11 +34,14 @@ tags:
 | 사영 | Projection |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 여사건 | Complement Event |
+| 연속 확률 변수 | Continuous Random Variables |
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
+| 이산 확률 변수 | Discrete Random Variables |
 | 이항 분포 | Binomial Distribution |
 | 전치 행렬 | Transposed Matrix |
+| 정규 분포 | Normal Distribution |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 정규 직교 행렬 | Orthonormal Matrix |
 | 조건부 확률 | Conditional Probability |
