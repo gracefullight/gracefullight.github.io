@@ -10,6 +10,7 @@ tags:
 | 한글 | 영어 |
 | --- | --- |
 | 가우스 소거법 | Gauss Elimination |
+| 가역 행렬 | Invertible Matrix |
 | 결합 확률 | Joint Probability |
 | 경험적 확률 | Empirical Probability |
 | 고유값 | Eigenvalue |
@@ -27,7 +28,9 @@ tags:
 | 대각행렬 | Diagonal Matrix |
 | 대각화 | Diagonalization |
 | 대칭행렬 | Symmetric Matrix |
+| 도함수 | Derivative |
 | 독립항등분포 | IID, Independent and Identically Distributed |
+| 미분가능성 | Differentiability |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
@@ -36,6 +39,7 @@ tags:
 | 선형 독립 | Linear Independence |
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
+| 실수 | Real |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 여사건 | Complement Event |
 | 연속 확률 변수 | Continuous Random Variables |
@@ -44,6 +48,7 @@ tags:
 | 외적 | Outer Product |
 | 이산 확률 변수 | Discrete Random Variables |
 | 이항 분포 | Binomial Distribution |
+| 임계점 | Critical Point |
 | 전치 행렬 | Transposed Matrix |
 | 정규 분포 | Normal Distribution |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
