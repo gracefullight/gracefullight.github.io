@@ -67,6 +67,11 @@ tags:
 | 확률 밀도 함수 | PDF, Probability Density Function |
 | 회전행렬 | Rotation Matrix |
 
+| 한글 | 영문 | 설명 |
+| 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
+| 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
+| 후위 순회 | Post-order traversal | 왼쪽 - 오른쪽 - 루트 |
+
 ## 참조
 
 - [Wikipedia: Mnemonics in trigonometry](https://en.wikipedia.org/wiki/Mnemonics_in_trigonometry)
