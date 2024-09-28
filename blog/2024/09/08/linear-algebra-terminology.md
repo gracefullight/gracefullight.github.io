@@ -24,12 +24,15 @@ tags:
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
 | 대각선 | Diagonal |
+| 대각행렬 | Diagonal Matrix |
 | 대각화 | Diagonalization |
+| 대칭행렬 | Symmetric Matrix |
 | 독립항등분포 | IID, Independent and Identically Distributed |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
 | 삼각법 | Trigonometry |
+| 삼각행렬 | Triangular Matrix |
 | 선형 독립 | Linear Independence |
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
