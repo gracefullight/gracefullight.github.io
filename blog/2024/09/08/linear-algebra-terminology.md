@@ -18,6 +18,7 @@ tags:
 | 그람-슈미트 과정 | Gram–Schmidt process |
 | 기대값 | Expected Value |
 | 내적 | Dot Product |
+| 누적 분포 함수 | CDF, Cumulative Distribution Function |
 | 누적 확률 | Cumulative Probability |
 | 다항식 | Polynomial |
 | 단위 벡터 | Unit Vector |
@@ -44,7 +45,9 @@ tags:
 | 정규 분포 | Normal Distribution |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 정규 직교 행렬 | Orthonormal Matrix |
+| 정규 확률 | Normal Probability |
 | 조건부 확률 | Conditional Probability |
+| 종 곡선 | Bell Curve |
 | 좌표계 | Coordinate Frame |
 | 주변 확률 | Marginal Probability |
 | 직각삼각형 삼각비 | Sohcahtoa |
@@ -52,10 +55,13 @@ tags:
 | 직교 | Orthogonal |
 | 직교 행렬 | Orthogonal Matrix |
 | 특성 다항식 | Characteristic Polynomial |
+| 평균 | Mean |
+| 표준 편차 | Standard Deviation |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
 | 행렬 | Matrix |
 | 행렬식 | Determinant |
+| 확률 밀도 함수 | PDF, Probability Density Function |
 | 회전행렬 | Rotation Matrix |
 
 ## 참조
