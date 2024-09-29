@@ -41,11 +41,13 @@ tags:
 | 사영 | Projection |
 | 실수 | Real |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
+| 양의 정부호 행렬 | Positive Definite Matrix |
 | 여사건 | Complement Event |
 | 연속 확률 변수 | Continuous Random Variables |
 | 열 | Column |
 | 영 | Nought |
 | 외적 | Outer Product |
+| 음의 정부호 | Negative Definite Matrix |
 | 이산 확률 변수 | Discrete Random Variables |
 | 이항 분포 | Binomial Distribution |
 | 임계점 | Critical Point |
