@@ -30,6 +30,7 @@ tags:
 | 대칭행렬 | Symmetric Matrix |
 | 도함수 | Derivative |
 | 독립항등분포 | IID, Independent and Identically Distributed |
+| 멱영 행렬 | Nilpotent Matrix |
 | 미분가능성 | Differentiability |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
@@ -59,6 +60,7 @@ tags:
 | 조건부 확률 | Conditional Probability |
 | 종 곡선 | Bell Curve |
 | 좌표계 | Coordinate Frame |
+| 주대각합 | Trace of Matrix |
 | 주변 확률 | Marginal Probability |
 | 직각삼각형 삼각비 | Sohcahtoa |
 | 직각의 | Perpendicular |
@@ -75,9 +77,21 @@ tags:
 | 회전행렬 | Rotation Matrix |
 
 | 한글 | 영문 | 설명 |
+| --- | --- | --- |
 | 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
+| 전위 표기법 | Prefix Expression | - |
 | 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
 | 후위 순회 | Post-order traversal | 왼쪽 - 오른쪽 - 루트 |
+| 후위 표기법 | Postfix Expression | - |
+
+| f(x) | f'(x) |
+| --- | --- |
+| sin(x) | cos(x) |
+| cos(x) | -sin(x) |
+| sec(x) | sec(x) * tan(x) |
+| tan(x) | sec(x) * sec(x) |
+| csc(x) | -csc(x) * cot(x) |
+| cot(x) | -csc(x) * csc(x) |
 
 ## 참조
 
