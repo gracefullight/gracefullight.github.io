@@ -7,7 +7,9 @@ tags:
   - math 
 ---
 
-| 한글 | 영어 |
+## Linear Algebra
+
+| KO | EN |
 | --- | --- |
 | 가우스 소거법 | Gauss Elimination |
 | 가역 행렬 | Invertible Matrix |
@@ -33,6 +35,7 @@ tags:
 | 대칭행렬 | Symmetric Matrix |
 | 도함수 | Derivative |
 | 독립항등분포 | IID, Independent and Identically Distributed |
+| 둘레 | Perimeter |
 | 매클로린 급수 | Maclaurin Series |
 | 멱영 행렬 | Nilpotent Matrix |
 | 미분가능성 | Differentiability |
@@ -56,6 +59,7 @@ tags:
 | 영 | Nought |
 | 영 공간 | Null Space |
 | 외적 | Outer Product |
+| 유사 변환 | Similarity Transformation |
 | 음의 정부호 | Negative Definite Matrix |
 | 이산 확률 변수 | Discrete Random Variables |
 | 이차계획법 | Quadratic Programming |
@@ -87,14 +91,9 @@ tags:
 | 확률 밀도 함수 | PDF, Probability Density Function |
 | 회전행렬 | Rotation Matrix |
 
-| 한글 | 영문 | 설명 |
-| --- | --- | --- |
-| 불 대수 | Boolean algebra | - |
-| 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
-| 전위 표기법 | Prefix Expression | - |
-| 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
-| 후위 순회 | Post-order traversal | 왼쪽 - 오른쪽 - 루트 |
-| 후위 표기법 | Postfix Expression | - |
+## Trigonometric Functions
+
+### Derivatives of Trigonometric Functions
 
 | f(x) | f'(x) |
 | --- | --- |
@@ -104,6 +103,141 @@ tags:
 | tan(x) | sec(x) * sec(x) |
 | csc(x) | -csc(x) * cot(x) |
 | cot(x) | -csc(x) * csc(x) |
+
+## CS
+
+| KO | EN | Description |
+| --- | --- | --- |
+| 불 대수 | Boolean algebra | - |
+| 완전 이진 트리 | Complete Binary Tree | - |
+| 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
+| 전위 표기법 | Prefix Expression | - |
+| 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
+| 후위 순회 | Post-order traversal | 왼쪽 - 오른쪽 - 루트 |
+| 후위 표기법 | Postfix Expression | - |
+
+### Complexity
+
+| Algorithm | Time complexity |
+| --- | --- |
+| Binary Search | $O(\log{n})$ |
+| Balanced Binary Search | $O(\log{n})$ |
+| Bubble Sort | $O(n^2)$ |
+| DFS Graph | $O(V + E)$ |
+| Heap Sort | $O(n \log{n})$ |
+| Quick Select | $O(n)$ |
+
+## 예시
+
+### 대각행렬
+
+$$
+\mathbf{A} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 3
+\end{pmatrix}
+$$
+
+### 대칭행렬
+
+> $A = A^T$
+
+$$
+\mathbf{B} = \begin{pmatrix}
+1 & 2 & 3 \\
+2 & 4 & 5 \\
+3 & 5 & 6
+\end{pmatrix}
+$$
+
+### 삼각행렬
+
+$$
+\mathbf{C} = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & 4 & 5 \\
+0 & 0 & 6
+\end{pmatrix}
+$$
+
+$$
+\mathbf{D} = \begin{pmatrix}
+1 & 0 & 0 \\
+2 & 3 & 0 \\
+4 & 5 & 6
+\end{pmatrix}
+$$
+
+### 직교행렬
+
+> $A^T \cdot A = I$
+
+$$
+\mathbf{E} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 0 & -1 \\
+0 & 1 & 0
+\end{pmatrix}
+$$
+
+### 정규직교행렬
+
+> $A^T \cdot A = I$
+> $||\mathbf{v}_i|| = 1$
+> $\mathbf{v}_i \cdot \mathbf{v}_j = 0 \quad (i \neq j)$
+
+$$
+\mathbf{F_1} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+$$
+\mathbf{F_2} = \begin{pmatrix}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0 \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+$$
+||\mathbf{v}_1|| = \sqrt{\left( \frac{1}{\sqrt{2}} \right)^2 + \left( -\frac{1}{\sqrt{2}} \right)^2 + 0^2} = \sqrt{\frac{1}{2} + \frac{1}{2}} = \sqrt{1} = 1
+$$
+
+$$
+||\mathbf{v}_2|| = \sqrt{\left( \frac{1}{\sqrt{2}} \right)^2 + \left( \frac{1}{\sqrt{2}} \right)^2 + 0^2} = \sqrt{\frac{1}{2} + \frac{1}{2}} = \sqrt{1} = 1
+$$
+
+$$
+||\mathbf{v}_3|| = \sqrt{0^2 + 0^2 + 1^2} = \sqrt{1} = 1
+$$
+
+$$
+\mathbf{v}_1 \cdot \mathbf{v}_2 = \left( \frac{1}{\sqrt{2}} \right) \left( \frac{1}{\sqrt{2}} \right) + \left( -\frac{1}{\sqrt{2}} \right) \left( \frac{1}{\sqrt{2}} \right) + 0 \cdot 0 = \frac{1}{2} - \frac{1}{2} + 0 = 0
+$$
+
+$$
+\mathbf{v}_1 \cdot \mathbf{v}_3 = \left( \frac{1}{\sqrt{2}} \right) \cdot 0 + \left( -\frac{1}{\sqrt{2}} \right) \cdot 0 + 0 \cdot 1 = 0
+$$
+
+$$
+\mathbf{v}_2 \cdot \mathbf{v}_3 = \left( \frac{1}{\sqrt{2}} \right) \cdot 0 + \left( \frac{1}{\sqrt{2}} \cdot 0 \right) + 0 \cdot 1 = 0
+$$
+
+## 멱영행렬
+
+> $A^k = 0 \quad (K > 0)$
+
+$$
+\mathbf{G} = \begin{pmatrix}
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+0 & 0 & 0
+\end{pmatrix}
+$$
 
 ## 참조
 
