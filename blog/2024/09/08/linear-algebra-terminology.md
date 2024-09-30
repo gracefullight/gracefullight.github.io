@@ -91,6 +91,24 @@ tags:
 | 확률 밀도 함수 | PDF, Probability Density Function |
 | 회전행렬 | Rotation Matrix |
 
+## Optimization
+
+| 제약유무            | EN                              | KO                  |
+|------------------|--------------------------------------------|------------------------------|
+| Constrained | Active Set Method                         | 활성 집합 방법              |
+|                  | Barrier Method                           | 베리어 방법                 |
+|                  | Interior Point Method                     | 내부 점 방법                |
+|                  | Lagrange Multipliers                      | 라그랑주 승수법           |
+|                  | Penalty Function Method                   | 페널티 함수 방법           |
+|                  | Sequential Quadratic Programming (SQP)   | 순차적 이차 프로그래밍     |
+| Unconstrained | Conjugate Gradient Method                 | 켤레기울기법, 공역기울기법                |
+|                  | Genetic Algorithm                         | 유전자 알고리즘            |
+|                  | Gradient Descent                          | 경사 하강법                |
+|                  | Nelder-Mead Method                        | 넬더-미드 방법             |
+|                  | Newton's Method                           | 뉴턴 방법                  |
+|                  | Quasi-Newton Methods (BFGS)              | 준 뉴턴 방법 (BFGS)        |
+|                  | Simulated Annealing                       | 시뮬레이티드 어닐링, 담금질법        |
+
 ## Trigonometric Functions
 
 ### Derivatives of Trigonometric Functions
@@ -122,8 +140,12 @@ tags:
 | --- | --- |
 | Binary Search | $O(\log{n})$ |
 | Balanced Binary Search | $O(\log{n})$ |
+| Bellman-Ford | $O(V*E)$ |
 | Bubble Sort | $O(n^2)$ |
+| Dijkstra | $O(E\log{V})$ |
 | DFS Graph | $O(V + E)$ |
+| Floyd-Warshall | $O(V^3)$ |
+| Hash Table | $O(1)$ |
 | Heap Sort | $O(n \log{n})$ |
 | Quick Select | $O(n)$ |
 
@@ -227,7 +249,7 @@ $$
 \mathbf{v}_2 \cdot \mathbf{v}_3 = \left( \frac{1}{\sqrt{2}} \right) \cdot 0 + \left( \frac{1}{\sqrt{2}} \cdot 0 \right) + 0 \cdot 1 = 0
 $$
 
-## 멱영행렬
+### 멱영행렬
 
 > $A^k = 0 \quad (K > 0)$
 
@@ -237,6 +259,130 @@ $$
 0 & 0 & 1 \\
 0 & 0 & 0
 \end{pmatrix}
+$$
+
+### 기대값
+
+> 이산 확률
+
+$$
+E(X) = \sum_{i=1}^{n} x_i P(X = x_i)
+$$
+
+> 연속 확률
+
+$$
+E(X) = \int_{-\infty}^{\infty} x f(x) \, dx
+$$
+
+f(x)는 확률밀도함수 PDF
+
+### 분산
+
+$$
+\text{Var}(X) = E\left[(X - E(X))^2\right] = E(X^2) - (E(X))^2
+$$
+
+### 표준편차
+
+$$
+\sigma = \sqrt{\text{Var}(X)}
+$$
+
+### 테일러 급수
+
+$$
+f(x) = f(a) + f'(a)(x - a) + \frac{f''(a)}{2!}(x - a)^2 + \frac{f'''(a)}{3!}(x - a)^3 + \ldots = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x - a)^n
+$$
+
+### 맥클로린 급수
+
+> 테일러급수 + $a = 0$
+
+$$
+f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \ldots = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n
+$$
+
+$$
+e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \ldots = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+$$
+
+$$
+\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \ldots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n + 1)!} x^{2n + 1}
+$$
+
+$$
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n}
+$$
+
+### 이항 분포
+
+$$
+E(X) = n \cdot p
+$$
+
+$$
+\text{Var}(X) = n \cdot p \cdot (1 - p)
+$$
+
+$$
+\sigma = \sqrt{n \cdot p \cdot (1 - p)}
+$$
+
+### 정규 분포
+
+$$
+E(X) = \mu
+$$
+
+$$
+\text{Var}(X) = \sigma^2
+$$
+
+$$
+\sigma = \sqrt{\text{Var}(X)} = \sigma
+$$
+
+### 균등 분포
+
+$$
+E(X) = \frac{a + b}{2}
+$$
+
+$$
+\text{Var}(X) = \frac{(b - a)^2}{12}
+$$
+
+$$
+\sigma = \sqrt{\text{Var}(X)} = \frac{b - a}{\sqrt{12}}
+$$
+
+### 포아송 분포
+
+$$
+E(X) = \lambda
+$$
+
+$$
+\text{Var}(X) = \lambda
+$$
+
+$$
+\sigma = \sqrt{\lambda}
+$$
+
+### 기하 분포
+
+$$
+E(X) = \frac{1}{p}
+$$
+
+$$
+\text{Var}(X) = \frac{1 - p}{p^2}
+$$
+
+$$
+\sigma = \sqrt{\text{Var}(X)} = \frac{\sqrt{1 - p}}{p}
 $$
 
 ## 참조
