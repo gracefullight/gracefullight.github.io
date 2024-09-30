@@ -18,20 +18,26 @@ tags:
 | 균일 분포 | Uniformed Distribution |
 | 그람-슈미트 과정 | Gram–Schmidt process |
 | 기대값 | Expected Value |
+| 기하 분포 | Geometric Distribution |
 | 내적 | Dot Product |
 | 누적 분포 함수 | CDF, Cumulative Distribution Function |
 | 누적 확률 | Cumulative Probability |
 | 다항식 | Polynomial |
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
+| 단체법 | Simplex Method |
+| 담금질 기법 | Simulated Annealing |
 | 대각선 | Diagonal |
 | 대각행렬 | Diagonal Matrix |
 | 대각화 | Diagonalization |
 | 대칭행렬 | Symmetric Matrix |
 | 도함수 | Derivative |
 | 독립항등분포 | IID, Independent and Identically Distributed |
+| 매클로린 급수 | Maclaurin Series |
 | 멱영 행렬 | Nilpotent Matrix |
 | 미분가능성 | Differentiability |
+| 미적분 | Calculus |
+| 볼록 최적화 | Convex Optimization |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
@@ -40,6 +46,7 @@ tags:
 | 선형 독립 | Linear Independence |
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
+| 선형계획법 | Linear Programming |
 | 실수 | Real |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 양의 정부호 행렬 | Positive Definite Matrix |
@@ -47,9 +54,11 @@ tags:
 | 연속 확률 변수 | Continuous Random Variables |
 | 열 | Column |
 | 영 | Nought |
+| 영 공간 | Null Space |
 | 외적 | Outer Product |
 | 음의 정부호 | Negative Definite Matrix |
 | 이산 확률 변수 | Discrete Random Variables |
+| 이차계획법 | Quadratic Programming |
 | 이항 분포 | Binomial Distribution |
 | 임계점 | Critical Point |
 | 전치 행렬 | Transposed Matrix |
@@ -66,8 +75,10 @@ tags:
 | 직각의 | Perpendicular |
 | 직교 | Orthogonal |
 | 직교 행렬 | Orthogonal Matrix |
+| 켤레기울기법 | Conjugate Gradient Method |
 | 특성 다항식 | Characteristic Polynomial |
 | 평균 | Mean |
+| 포아송 분포 | Poisson Distribution |
 | 표준 편차 | Standard Deviation |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
@@ -78,6 +89,7 @@ tags:
 
 | 한글 | 영문 | 설명 |
 | --- | --- | --- |
+| 불 대수 | Boolean algebra | - |
 | 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
 | 전위 표기법 | Prefix Expression | - |
 | 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
