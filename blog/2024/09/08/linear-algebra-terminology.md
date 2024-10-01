@@ -93,21 +93,22 @@ tags:
 
 ## Optimization
 
-| 제약유무            | EN                              | KO                  |
-|------------------|--------------------------------------------|------------------------------|
-| Constrained | Active Set Method                         | 활성 집합 방법              |
-|                  | Barrier Method                           | 베리어 방법                 |
-|                  | Interior Point Method                     | 내부 점 방법                |
-|                  | Lagrange Multipliers                      | 라그랑주 승수법           |
-|                  | Penalty Function Method                   | 페널티 함수 방법           |
-|                  | Sequential Quadratic Programming (SQP)   | 순차적 이차 프로그래밍     |
-| Unconstrained | Conjugate Gradient Method                 | 켤레기울기법, 공역기울기법                |
-|                  | Genetic Algorithm                         | 유전자 알고리즘            |
-|                  | Gradient Descent                          | 경사 하강법                |
-|                  | Nelder-Mead Method                        | 넬더-미드 방법             |
-|                  | Newton's Method                           | 뉴턴 방법                  |
-|                  | Quasi-Newton Methods (BFGS)              | 준 뉴턴 방법 (BFGS)        |
-|                  | Simulated Annealing                       | 시뮬레이티드 어닐링, 담금질법        |
+| 제약유무 | EN | KO |
+|---|---|---|
+| Constrained | Active Set Method | 활성 집합 방법 |
+|             | Barrier Method | 베리어 방법 |
+|             | Interior Point Method | 내부 점 방법 |
+|             | Lagrange Multipliers | 라그랑주 승수법 |
+|             | Penalty Function Method | 페널티 함수 방법 |
+|             | Sequential Quadratic Programming | 순차적 이차 프로그래밍 |
+|             | Simplex Method | 심플렉스법, 단체법 |
+| Unconstrained | Conjugate Gradient Method | 켤레기울기법, 공역기울기법 |
+|               | Genetic Algorithm | 유전자 알고리즘 |
+|               | Gradient Descent | 경사 하강법 |
+|               | Nelder-Mead Method | 넬더-미드 방법 |
+|               | Newton's Method | 뉴턴 방법 |
+|               | Quasi-Newton Methods | 준 뉴턴 방법 (BFGS) |
+|               | Simulated Annealing | 시뮬레이티드 어닐링, 담금질법 |
 
 ## Trigonometric Functions
 
