@@ -51,6 +51,7 @@ tags:
 | 사영 | Projection |
 | 선형계획법 | Linear Programming |
 | 실수 | Real |
+| 아다마르 곱 | Hadamard product |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 양의 정부호 행렬 | Positive Definite Matrix |
 | 여사건 | Complement Event |
