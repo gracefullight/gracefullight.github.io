@@ -85,6 +85,7 @@ tags:
 | 평균 | Mean |
 | 포아송 분포 | Poisson Distribution |
 | 표준 편차 | Standard Deviation |
+| 프로베니우스 놈 | Frobenius norm |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
 | 행렬 | Matrix |
