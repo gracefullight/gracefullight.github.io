@@ -16,6 +16,7 @@ tags:
 | 결합 확률 | Joint Probability |
 | 경험적 확률 | Empirical Probability |
 | 고유값 | Eigenvalue |
+| 고유값 분해 | Eigen-decomposition |
 | 고유 벡터 | Eigenvector |
 | 균일 분포 | Uniformed Distribution |
 | 그람-슈미트 과정 | Gram–Schmidt process |
@@ -55,6 +56,7 @@ tags:
 | 아인슈타인 표기법 | Eienstein Summation Convention |
 | 아핀 변환 | Affine Transformation |
 | 양의 정부호 행렬 | Positive Definite Matrix |
+| 양의 준정부호 행렬 | Positive Semi-definite Matrix |
 | 여사건 | Complement Event |
 | 연속 확률 변수 | Continuous Random Variables |
 | 열 | Column |
@@ -63,6 +65,7 @@ tags:
 | 외적 | Outer Product |
 | 유사 변환 | Similarity Transformation |
 | 음의 정부호 | Negative Definite Matrix |
+| 음의 준정부호 | Negative Semi-definite Matrix |
 | 이산 확률 변수 | Discrete Random Variables |
 | 이차계획법 | Quadratic Programming |
 | 이항 분포 | Binomial Distribution |
