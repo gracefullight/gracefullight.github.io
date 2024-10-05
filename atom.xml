@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-09-20T05:25:46.581Z</updated>
+    <updated>2024-10-05T02:08:26.262Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[가상화폐 스캠탐지]]></title>
+        <id>https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/</id>
+        <link href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/"/>
+        <updated>2024-10-05T02:08:26.262Z</updated>
+        <summary type="html"><![CDATA[Cryptocurrency Scam Detection]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠-개념">가상화폐 스캠 개념<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가상화폐 스캠 개념에 대한 직접 링크" title="가상화폐 스캠 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>폰지사기라고 표현되며 가격의 높은 변동성과 익명성을 악용해 투자자들을 속이는 위협</li>
+<li>블록체인, 가상화폐의 급속한 발전으로 폰지사기, 피싱공격, 가짜 ICOs, 러그폰, 다중서명지갑 해킹 등 다양한 유형의 사기 범죄 출현</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠-탐지-개념도-분석-유형-탐지-절차">가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0-%ED%83%90%EC%A7%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95-%ED%83%90%EC%A7%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차에 대한 직접 링크" title="가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠탐지-개념도">가상화폐 스캠탐지 개념도<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가상화폐 스캠탐지 개념도에 대한 직접 링크" title="가상화폐 스캠탐지 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠탐지-분석-유형">가상화폐 스캠탐지 분석 유형<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="가상화폐 스캠탐지 분석 유형에 대한 직접 링크" title="가상화폐 스캠탐지 분석 유형에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>기반</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>기계학습 기반</td><td>로지스틱 회귀</td><td>거래 데이터의 다양한 속성 기반으로 확률 분석하여 결정 경계 정의</td></tr><tr><td>-</td><td>랜덤포레스트</td><td>다수의 결정 트리로 거래 특성 분석, 종합하여 스캠 여부 판별</td></tr><tr><td>-</td><td>SVM</td><td>거래 데이터를 고차원에서 분류하여 최적 결정경계를 찾아서 높은 정확도</td></tr><tr><td>-</td><td>ADABoost</td><td>약분류기 결합, 반복학습, 스캠 특성 포착</td></tr><tr><td>-</td><td>LGBM</td><td>복잡한 거래 뎅치터를 수직적 방식으로 빠르게 탐지</td></tr><tr><td>딥러닝 기반</td><td>LSTM-FCN&amp;BP</td><td>LSTM-FCN과 BP 신경망을 결합한 하이브리드 모델 사용</td></tr><tr><td>-</td><td>LSTM-CNN</td><td>순차 데이터 처리용 LSTM과 구조적 특징 파악용 CNN 결합</td></tr><tr><td>그래프 기반<br>경로임베딩</td><td>Trans2Vec</td><td>거래량과 타임스탬프에 랜덤워크 기법과 SVM 활용 분류</td></tr><tr><td>-</td><td>Node2Vec</td><td>EtherScanDB로 Node2Vec과 SVM 활용 분류</td></tr><tr><td>그래프신경망 기반<br>그래프 임베딩</td><td>GCN</td><td>노드와 이웃 간 정보 집계 후 노드 임베딩 생성</td></tr><tr><td>-</td><td>TTAGN</td><td>거래내역 시간, 구조적 정보를 통합, LSTM, 어텐션 활용 스캠 탐지</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠탐지-절차">가상화폐 스캠탐지 절차<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="가상화폐 스캠탐지 절차에 대한 직접 링크" title="가상화폐 스캠탐지 절차에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_OeQQ" id="가상화폐-스캠탐지시-고려사항">가상화폐 스캠탐지시 고려사항<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="가상화폐 스캠탐지시 고려사항에 대한 직접 링크" title="가상화폐 스캠탐지시 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>클래스 불균형으로 인한 오탐 방지 위해 오버샘플링, 언더샘플링, 가중치 조정 등 고려</li>
+<li>가상화폐 거래 네트워크의 지속적 변화 학습</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Git Alias]]></title>
         <id>https://gracefullight.dev/2024/09/20/git-alias/</id>
@@ -807,45 +838,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <table><thead><tr><th>구분</th><th>해결방안</th><th>비고</th></tr></thead><tbody><tr><td>확장성</td><td>샤딩, 레이어링, 포크</td><td>블록체인 병렬 및 분산 처리</td></tr><tr><td>보안성</td><td>다중서명, 영지식 증명 활용</td><td>합의 알고리즘 개선</td></tr><tr><td>탈중앙화</td><td>오프체인, 온체인</td><td>권력 분산</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OeQQ" id="블록체인-트릴레마-주요-사례">블록체인 트릴레마 주요 사례<a href="https://gracefullight.dev/pe/conv/blockchain-trilemma/#%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%ED%8A%B8%EB%A6%B4%EB%A0%88%EB%A7%88-%EC%A3%BC%EC%9A%94-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="블록체인 트릴레마 주요 사례에 대한 직접 링크" title="블록체인 트릴레마 주요 사례에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>트릴레마</th><th>설명</th></tr></thead><tbody><tr><td>비트코인</td><td>낮은 확장성, 높은 탈중앙화</td><td>네트워크 확장에 따른 트랜잭션 속도 저하</td></tr><tr><td>이더리움</td><td>낮은 확장성, 높은 보안성</td><td>스마트컨트랙트, DApp 지원으로 인한 확장성 문제</td></tr><tr><td>리플</td><td>낮은 탈중앙화, 높은 확장성</td><td>위임 노드들의 합의 방식으로 낮은 탈중앙화</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[레이더, 라이다]]></title>
-        <id>https://gracefullight.dev/pe/conv/radar-and-lidar/</id>
-        <link href="https://gracefullight.dev/pe/conv/radar-and-lidar/"/>
-        <updated>2024-08-26T12:39:25.698Z</updated>
-        <summary type="html"><![CDATA[Radar and Lidar]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OeQQ" id="거리측청센서-개념">거리측청센서 개념<a href="https://gracefullight.dev/pe/conv/radar-and-lidar/#%EA%B1%B0%EB%A6%AC%EC%B8%A1%EC%B2%AD%EC%84%BC%EC%84%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="거리측청센서 개념에 대한 직접 링크" title="거리측청센서 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>물체의 거리를 감지하고 측정하기 위한 장치로 레이더, 라이다, 초음파, 적외선, 카메라 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OeQQ" id="레이더-라이다-개념도-구성요소">레이더, 라이다 개념도, 구성요소<a href="https://gracefullight.dev/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EB%9D%BC%EC%9D%B4%EB%8B%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="레이더, 라이다 개념도, 구성요소에 대한 직접 링크" title="레이더, 라이다 개념도, 구성요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="레이더-개념도-구성요소">레이더 개념도, 구성요소<a href="https://gracefullight.dev/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="레이더 개념도, 구성요소에 대한 직접 링크" title="레이더 개념도, 구성요소에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>전자기파를 방사하고 물체에 반사되는 전파를 분석하여 물체 간 거리를 측정하는 기술</li>
-</ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>송신기</td><td>고주파 전파 생성, 방사</td><td>레이더 성능 결졍</td></tr><tr><td>수신기</td><td>반사된 전파로 수신하여 신호 변환</td><td>감도, 잡음 처리</td></tr><tr><td>안테나</td><td>전파 방사, 수신 역할</td><td>탐지범위, 해상도</td></tr><tr><td>신호처리기</td><td>신호 분석 후 표적 정보 파악</td><td>디지털 신호 처리</td></tr><tr><td>통제기</td><td>레이더 시스템 동작 제어</td><td>운용 최적화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="라이다-개념도-구성요소">라이다 개념도, 구성요소<a href="https://gracefullight.dev/pe/conv/radar-and-lidar/#%EB%9D%BC%EC%9D%B4%EB%8B%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="라이다 개념도, 구성요소에 대한 직접 링크" title="라이다 개념도, 구성요소에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Radio Detection and Ranging</p>
-</blockquote>
-<!-- -->
-<ul>
-<li>레이저 빛을 발사하고 물체에 반사된 시간을 측정하여 거리, 형상, 속도 등을 측정하는 기술</li>
-</ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>레이저 송신기</td><td>레이저 생성 및 방출</td><td>다양한 파장 사용</td></tr><tr><td>레이저 수신기</td><td>반사된 레이저 수신, 신호 변경</td><td>광검출기</td></tr><tr><td>렌즈 광학시스템</td><td>빛의 방향 스캔, 수신한 빛 집중</td><td>회전식 렌즈</td></tr><tr><td>신호처리기</td><td>수집된 신호 분석, 정보 추출</td><td>디지털 신호 처리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OeQQ" id="레이더-라이다-비교">레이더, 라이다 비교<a href="https://gracefullight.dev/pe/conv/radar-and-lidar/#%EB%A0%88%EC%9D%B4%EB%8D%94-%EB%9D%BC%EC%9D%B4%EB%8B%A4-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="레이더, 라이다 비교에 대한 직접 링크" title="레이더, 라이다 비교에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Light Detection and Ranging</p>
-</blockquote>
-<table><thead><tr><th>구분</th><th>레이더</th><th>라이다</th></tr></thead><tbody><tr><td>신호</td><td>라디오 전파</td><td>레이더</td></tr><tr><td>거리</td><td>김</td><td>짧음</td></tr><tr><td>방향</td><td>특정방향</td><td>360도</td></tr><tr><td>장점</td><td>악천후에 안정적</td><td>높은 정확도</td></tr><tr><td>-</td><td>넓은 범위 탐지</td><td>3차원 정보</td></tr><tr><td>단점</td><td>낮은 해상도</td><td>악천후 취약</td></tr><tr><td>-</td><td>형태 파악불가</td><td>측정거리 제한</td></tr><tr><td>분야</td><td>항공, 해상, 군사, 자율주행</td><td>드론, 로봇, 자율주행</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
