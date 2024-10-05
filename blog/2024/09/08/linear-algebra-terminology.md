@@ -53,6 +53,7 @@ tags:
 | 실수 | Real |
 | 아다마르 곱 | Hadamard product |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
+| 아핀 변환 | Affine Transformation |
 | 양의 정부호 행렬 | Positive Definite Matrix |
 | 여사건 | Complement Event |
 | 연속 확률 변수 | Continuous Random Variables |
