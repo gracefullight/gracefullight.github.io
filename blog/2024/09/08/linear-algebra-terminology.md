@@ -39,6 +39,7 @@ tags:
 | 둘레 | Perimeter |
 | 매클로린 급수 | Maclaurin Series |
 | 멱영 행렬 | Nilpotent Matrix |
+| 무어-팬로즈 유사역행렬 | Moore-Penrose Pseudoinverse Matrix |
 | 미분가능성 | Differentiability |
 | 미적분 | Calculus |
 | 볼록 최적화 | Convex Optimization |
