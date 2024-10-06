@@ -18,8 +18,10 @@ tags:
 | 고유값 | Eigenvalue |
 | 고유값 분해 | Eigen-decomposition |
 | 고유 벡터 | Eigenvector |
+| 과결정계 | Overdetermined System |
+| 과소결정계 | Underdetermined System |
 | 균일 분포 | Uniformed Distribution |
-| 그람-슈미트 과정 | Gram–Schmidt process |
+| 그람-슈미트 과정 | Gram-Schmidt process |
 | 기대값 | Expected Value |
 | 기하 분포 | Geometric Distribution |
 | 내적 | Dot Product |
@@ -52,6 +54,7 @@ tags:
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
 | 선형계획법 | Linear Programming |
+| 수신자 조작 특성 | ROC, Receiver Operating Characteristics |
 | 실수 | Real |
 | 아다마르 곱 | Hadamard product |
 | 아인슈타인 표기법 | Eienstein Summation Convention |
@@ -72,6 +75,7 @@ tags:
 | 이항 분포 | Binomial Distribution |
 | 임계점 | Critical Point |
 | 전치 행렬 | Transposed Matrix |
+| 접선 | Tangent |
 | 정규 분포 | Normal Distribution |
 | 정규 직교 기저 벡터 | Orthonormal Basis Vector |
 | 정규 직교 행렬 | Orthonormal Matrix |
