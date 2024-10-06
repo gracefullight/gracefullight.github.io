@@ -126,7 +126,11 @@ tags:
 
 ### Product Rule
 
-$$[f(x)g(x)]'=f(x)g(x)'+f(x)'g(x)$$
+$$[f(x)g(x)]'=f(x)'g(x)+f(x)g(x)'$$
+
+### Quotient Rule
+
+$$[\frac{f(x)}{g(x)}]' = \frac{f(x)'g(x)-f(x)g(x)'}{g(x)^2}$$
 
 ### Derivatives of Trigonometric Functions
 
