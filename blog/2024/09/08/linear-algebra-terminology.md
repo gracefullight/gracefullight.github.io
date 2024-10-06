@@ -132,6 +132,12 @@ $$[f(x)g(x)]'=f(x)'g(x)+f(x)g(x)'$$
 
 $$[\frac{f(x)}{g(x)}]' = \frac{f(x)'g(x)-f(x)g(x)'}{g(x)^2}$$
 
+### Chain Rule
+
+> Composition
+
+$$\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}$$
+
 ### Derivatives of Trigonometric Functions
 
 | f(x) | f'(x) |
