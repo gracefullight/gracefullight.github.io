@@ -70,10 +70,12 @@ tags:
 | 유사 변환 | Similarity Transformation |
 | 음의 정부호 | Negative Definite Matrix |
 | 음의 준정부호 | Negative Semi-definite Matrix |
+| 이계도함수 | Second-Order Partial Derivatives |
 | 이산 확률 변수 | Discrete Random Variables |
 | 이차계획법 | Quadratic Programming |
 | 이항 분포 | Binomial Distribution |
 | 임계점 | Critical Point |
+| 자동 미분 | Automatic Differentiation |
 | 전치 행렬 | Transposed Matrix |
 | 접선 | Tangent |
 | 정규 분포 | Normal Distribution |
@@ -155,6 +157,7 @@ $$\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}$$
 | --- | --- | --- |
 | 불 대수 | Boolean algebra | - |
 | 완전 이진 트리 | Complete Binary Tree | - |
+| 유향 비순환 그래프 | DAG, Directed Acyclic Graph | - |
 | 전위 순회 | Pre-order Traversal | 루트 - 왼쪽 - 오른쪽 |
 | 전위 표기법 | Prefix Expression | - |
 | 중위 순회 | In-order Traversal | 왼쪽 - 루트 - 오른쪽 |
