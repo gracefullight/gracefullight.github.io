@@ -50,6 +50,7 @@ tags:
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
+| 사다리꼴 공식 | Trapezoidal Rule |
 | 삼각법 | Trigonometry |
 | 삼각행렬 | Triangular Matrix |
 | 선형 독립 | Linear Independence |
