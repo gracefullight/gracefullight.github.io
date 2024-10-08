@@ -104,6 +104,7 @@ tags:
 | 행 | Row |
 | 행렬 | Matrix |
 | 행렬식 | Determinant |
+| 혼동 행렬 | Confusion Matrix |
 | 확률 밀도 함수 | PDF, Probability Density Function |
 | 회귀 | Regression |
 | 회전행렬 | Rotation Matrix |
