@@ -28,6 +28,7 @@ tags:
 | 누적 분포 함수 | CDF, Cumulative Distribution Function |
 | 누적 확률 | Cumulative Probability |
 | 다항식 | Polynomial |
+| 다항 분포 | Multinomial Distribution |
 | 단위 벡터 | Unit Vector |
 | 단위 행렬 | Unit Matrix |
 | 단체법 | Simplex Method |
@@ -45,6 +46,7 @@ tags:
 | 미분가능성 | Differentiability |
 | 미적분 | Calculus |
 | 볼록 최적화 | Convex Optimization |
+| 분류 | Classification |
 | 비직교 | Non-orthogonal |
 | 빗변 | Hypotenuse |
 | 사다리꼴행렬 | Echelon Form |
@@ -103,6 +105,7 @@ tags:
 | 행렬 | Matrix |
 | 행렬식 | Determinant |
 | 확률 밀도 함수 | PDF, Probability Density Function |
+| 회귀 | Regression |
 | 회전행렬 | Rotation Matrix |
 
 ## Optimization
