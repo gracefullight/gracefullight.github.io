@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 05 Oct 2024 03:17:07 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Oct 2024 07:37:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[전자정부 성과 측정지표]]></title>
+            <link>https://gracefullight.dev/pe/mng/전자정부-성과-측정지표/</link>
+            <guid>https://gracefullight.dev/pe/mng/전자정부-성과-측정지표/</guid>
+            <pubDate>Sat, 12 Oct 2024 07:37:58 GMT</pubDate>
+            <description><![CDATA[전자정부 성과 측정지표]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="전자정부-정보시스템-성과-측정-개념">전자정부 정보시스템 성과 측정 개념<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="전자정부 정보시스템 성과 측정 개념에 대한 직접 링크" title="전자정부 정보시스템 성과 측정 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>정보시스템 운영의 효율성과 효과성을 평가하여 시스템의 운영 타당성을 판단하고, 지속적인 운영성과 제고를 위한 체계적인 관리와 지원을 제공하는 활동</li>
+<li>최근 정보시스템의 지속적인 증가와 노후화로 인해 운영 및 유지보수 비용 증가, 운영 성과를 객관적으로 측정하여 불필요하거나 과도한 비용 투입을 방지하고, 신규 투자 기회를 확대할 수 있는 효율적인 투자 관리 방안 수립을 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_kg_F" id="전자정부-정보시스템-성과-측정-지표">전자정부 정보시스템 성과 측정 지표<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EC%A7%80%ED%91%9C" class="hash-link" aria-label="전자정부 정보시스템 성과 측정 지표에 대한 직접 링크" title="전자정부 정보시스템 성과 측정 지표에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="비용-측면-성과-측정-지표">비용 측면 성과 측정 지표<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EB%B9%84%EC%9A%A9-%EC%B8%A1%EB%A9%B4-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EC%A7%80%ED%91%9C" class="hash-link" aria-label="비용 측면 성과 측정 지표에 대한 직접 링크" title="비용 측면 성과 측정 지표에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>운영의 적정성</td><td>개발비와 유지보수비의 비율을 점검하여 적정한 비용구조로 운영하는지 평가</td><td>110% 이상: 2점, 50% 미만: 10점</td></tr><tr><td>유지의 용이성</td><td>투입된 운영유지비의 증감 수준을 점검하여 비용 효율적 구조를 유지하고 있는지 평가</td><td>전년 대비 20% 이상 증가: 2점, 감소: 10점</td></tr><tr><td>비용의 효율성</td><td>정보시스템의 활용규모 대비 비용 효율적 구조를 유지하고 있는지 평가</td><td>활용규모당 운영유지비 20% 이상 증가: 4점, 감소: 20점</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="업무-측면-성과-측정-지표">업무 측면 성과 측정 지표<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EC%97%85%EB%AC%B4-%EC%B8%A1%EB%A9%B4-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EC%A7%80%ED%91%9C" class="hash-link" aria-label="업무 측면 성과 측정 지표에 대한 직접 링크" title="업무 측면 성과 측정 지표에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>기능 활용도</td><td>업무지원 및 서비스 제공을 위해 구현된 기능의 실제 활용 수준 평가</td><td>기능별 전년 대비 사용량 증감률에 따라 점수 부여</td></tr><tr><td>업무 성과 달성도</td><td>직전 연도의 공통지표 성과 목표 대비 업무성과의 달성 수준 평가</td><td>목표 대비 실적이 85% 미만: 2점, 100% 이상: 10점</td></tr><tr><td>고유 지표 성과 달성도</td><td>직전 연도의 고유 지표 성과 목표 대비 업무성과의 달성 수준 평가</td><td>목표 대비 실적에 따라 최대 30점까지 부여</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="지표-적용을-위한-실행-방안">지표 적용을 위한 실행 방안<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EC%A7%80%ED%91%9C-%EC%A0%81%EC%9A%A9%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%8B%A4%ED%96%89-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="지표 적용을 위한 실행 방안에 대한 직접 링크" title="지표 적용을 위한 실행 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>실행방안</th><th>비고</th></tr></thead><tbody><tr><td>성과측정 절차</td><td>정보시스템 운영 성과를 측정하기 위한 구체적인 기준과 절차를 제공하여 객관적인 방법으로 신속하게 운영성과 측정</td><td>매년 운영 성과 측정, 후속 조치</td></tr><tr><td>교육 및 확산</td><td>정보시스템 운영 성과관리 확산 및 교육자료 활용, 관련 정보화 정책 및 제도를 실행함에 있어 참고자료로 제공</td><td>관련 담당자 교육, 적용</td></tr><tr><td>정책 및 제도 활용</td><td>정보화 총괄부서 담당자 판단으로 정보화 업무 추진 과정에서 적절하게 활용 및 안내</td><td>피드백 루프, 추가 지원 방안 마련</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_kg_F" id="참조">참조<a href="https://gracefullight.dev/pe/mng/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80-%EC%84%B1%EA%B3%BC-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://law.go.kr/%ed%96%89%ec%a0%95%ea%b7%9c%ec%b9%99/%ec%a0%84%ec%9e%90%ec%a0%95%eb%b6%80%ec%84%b1%ea%b3%bc%ea%b4%80%eb%a6%ac%ec%a7%80%ec%b9%a8" target="_blank" rel="noopener noreferrer">국가법령정보센터: 전자정부 성과관리 지침</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-management</category>
+        </item>
         <item>
             <title><![CDATA[감정 인식 기술]]></title>
             <link>https://gracefullight.dev/pe/algo/emotion-recognition/</link>
@@ -789,31 +814,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <table><thead><tr><th>단계</th><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>5</td><td>자율</td><td>자율적 문제 인지 및 해결</td></tr><tr><td>4</td><td>연합</td><td>디지털 트윈 상호 연결</td></tr><tr><td>3</td><td>모의</td><td>디지털 결과 현실 객체 적용 및 최적화</td></tr><tr><td>2</td><td>관제</td><td>물리 객체 모니터링</td></tr><tr><td>1</td><td>모사</td><td>물리 객체 복제</td></tr></tbody></table>
 <ul>
 <li>현재 모의단계로 연합모델로 가기 위해 상호운용성과 프로토콜 표준화 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[스마트 팩토리]]></title>
-            <link>https://gracefullight.dev/pe/conv/smart-factory/</link>
-            <guid>https://gracefullight.dev/pe/conv/smart-factory/</guid>
-            <pubDate>Thu, 29 Aug 2024 15:16:55 GMT</pubDate>
-            <description><![CDATA[Smart Factory]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-개념">스마트 팩토리 개념<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="스마트 팩토리 개념에 대한 직접 링크" title="스마트 팩토리 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>단순 생산설비에서 대량으로 상품을 생산해왔던 기존 공장 생산체계에 ICT 기술을 접목하여 생산과정을 최소의 비용과 최적의 절차로 운영을 가능하게한 공장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-구성도-구성요소-발전단계">스마트 팩토리 구성도, 구성요소, 발전단계<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="스마트 팩토리 구성도, 구성요소, 발전단계에 대한 직접 링크" title="스마트 팩토리 구성도, 구성요소, 발전단계에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-구성도">스마트 팩토리 구성도<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="스마트 팩토리 구성도에 대한 직접 링크" title="스마트 팩토리 구성도에 대한 직접 링크">​</a></h3>
-<div class="language-text codeBlockContainer_md94 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_mT9H"><pre tabindex="0" class="prism-code language-text codeBlock_cs4p thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_pXP7"><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| SW (MES, ERP)  |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|  NW   |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| HW (센서, 로봇)  |  (5G) |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">| 데이터 (생산품질)  |       |</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">|----------------|-------|</span><br></span></code></pre><div class="buttonGroup_kCZ3"><button type="button" aria-label="클립보드에 코드 복사" title="복사" class="clean-btn"><span class="copyButtonIcons_Gy9c" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_XiJU"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_KnvO"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-구성요소">스마트 팩토리 구성요소<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="스마트 팩토리 구성요소에 대한 직접 링크" title="스마트 팩토리 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>SW</td><td>생산 데이터 관리, 분석, 의사결정 지원</td><td>MES, ERP, PLM</td></tr><tr><td>HW</td><td>생산 공정 자동화, 데이터 수집</td><td>IoT센서, 로봇, 3D프린터</td></tr><tr><td>데이터</td><td>생산 효율성 분석, 지능화 기반</td><td>생산 품질 설비 데이터</td></tr><tr><td>NW</td><td>실시간 데이터 수집, 제어</td><td>5G 특화망</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-발전단계">스마트 팩토리 발전단계<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%B0%9C%EC%A0%84%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="스마트 팩토리 발전단계에 대한 직접 링크" title="스마트 팩토리 발전단계에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단계</th><th>내용</th></tr></thead><tbody><tr><td>4단계</td><td>지능화, 자율화, 디지털 트윈</td></tr><tr><td>3단계</td><td>운영레벨 자동화, AI, 로봇</td></tr><tr><td>2단계</td><td>생산레벨 자동화, 원격 제어</td></tr><tr><td>1단계</td><td>필드레벨 자동화, 센서, 액츄어에이터</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="스마트-팩토리-발전-방향">스마트 팩토리 발전 방향<a href="https://gracefullight.dev/pe/conv/smart-factory/#%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%B0%9C%EC%A0%84-%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="스마트 팩토리 발전 방향에 대한 직접 링크" title="스마트 팩토리 발전 방향에 대한 직접 링크">​</a></h2>
-<ul>
-<li>3D프린팅 기술의 대형화, 프린팅속도 가속화, 재료 다양화로 고객 맞춤형 생산</li>
-<li>디지털 트윈 기반 시뮬레이션으로 데이터 수집, 지속적 개선으로 물리적 비용 절감</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
