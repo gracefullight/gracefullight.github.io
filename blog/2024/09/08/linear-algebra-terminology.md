@@ -54,6 +54,7 @@ tags:
 | 삼각법 | Trigonometry |
 | 삼각행렬 | Triangular Matrix |
 | 선형 독립 | Linear Independence |
+| 선형 방정식 | Linear Equation |
 | 선형 종속 | Linear Dependence |
 | 사영 | Projection |
 | 선형계획법 | Linear Programming |
@@ -98,6 +99,7 @@ tags:
 | 특성 다항식 | Characteristic Polynomial |
 | 특이값 분해 | SVD, Singular Value Decomposition |
 | 평균 | Mean |
+| 폐쇄성 | Closure |
 | 포아송 분포 | Poisson Distribution |
 | 표준 편차 | Standard Deviation |
 | 프로베니우스 놈 | Frobenius norm |
