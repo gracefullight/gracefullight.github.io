@@ -97,6 +97,7 @@ tags:
 | 직교 행렬 | Orthogonal Matrix |
 | 켤레기울기법 | Conjugate Gradient Method |
 | 특성 다항식 | Characteristic Polynomial |
+| 특수해 | Particular Solution |
 | 특이값 분해 | SVD, Singular Value Decomposition |
 | 평균 | Mean |
 | 폐쇄성 | Closure |
