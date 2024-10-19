@@ -30,11 +30,12 @@ export default function DrawingGeneratorPage() {
         if (canvas) {
           canvas.width = img.width;
           canvas.height = img.height;
-
           const ctx = canvas.getContext("2d");
-          ctx.drawImage(img, 0, 0);
-          modifyWhitePixels(ctx);
-          reduceToFourColors(ctx, selectedColor);
+          if (ctx) {
+            ctx.drawImage(img, 0, 0);
+            modifyWhitePixels(ctx);
+            reduceToFourColors(ctx, selectedColor);
+          }
         }
       };
     }
