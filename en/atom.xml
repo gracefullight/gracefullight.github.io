@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-10-12T07:37:58.035Z</updated>
+    <updated>2024-10-19T00:48:05.086Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[터크만 사다리 모델]]></title>
+        <id>https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/</id>
+        <link href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/"/>
+        <updated>2024-10-19T00:48:05.086Z</updated>
+        <summary type="html"><![CDATA[Tuckman Ladder Model]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="터크만-사다리-모델의-개념">터크만 사다리 모델의 개념<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>프로젝트 수행 시 팀 개발 과정을 형성, 스토밍, 표준화, 수행, 해산의 5단계로 표현한 모델</li>
+<li>조직이 성장하고 도전에 대응하고 문제의식을 갖고 해결책을 찾으며 작업계획을 세우고 결과를 만들기
+위하여 필요한 팀 개발 방법론</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_kg_F" id="터크만-사다리-모델의-구성도-특징-적용방안">터크만 사다리 모델의 구성도, 특징, 적용방안<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="터크만-사다리-모델의-구성도">터크만 사다리 모델의 구성도<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>세부 단계별 프로젝트 팀의 관심과 리더십, 필요 활동 상이</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="터크만-사다리-모델의-단계별-특징">터크만 사다리 모델의 단계별 특징<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>단계</th><th>주요 관심</th><th>리더십</th><th>필요 활동</th></tr></thead><tbody><tr><td>형성기</td><td>상호 인식</td><td>지시형</td><td>팀 방향 설정</td></tr><tr><td>혼돈기</td><td>갈등 처리</td><td>지도형</td><td>계획, 역할 명료화</td></tr><tr><td>규범기</td><td>협력 관계 구축</td><td>참여형</td><td>업무, 역할 몰입</td></tr><tr><td>성취기</td><td>생산성 증대</td><td>위임형</td><td>수행 관리, 평가</td></tr><tr><td>해산기</td><td>과업종료</td><td>지시형</td><td>Lesson Learned</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="performing-단계-진입-촉진을-위한-적용방안">Performing 단계 진입 촉진을 위한 적용방안<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#performing-%EB%8B%A8%EA%B3%84-%EC%A7%84%EC%9E%85-%EC%B4%89%EC%A7%84%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A0%81%EF%BF%BD%EF%BF%BD%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>기법</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>Ground Rule</td><td>팀 내 규범을 설정하여 성과를 저해하는 요소를 사전에 제거</td><td>팀워크, 협업촉진</td></tr><tr><td>RACI</td><td>각 구성원의 역할과 책임을 명확하게 정의</td><td>업무 소통 효율화, 책임 소재 명확화</td></tr><tr><td>1-on-1</td><td>리더와 팀원이 정기적으로 1:1 미팅을 통해 개인 성과 및 문제를 논의</td><td>개인성장촉진,의사소통강화</td></tr><tr><td>OKR</td><td>목표와 주요 결과를 설정하여 팀과 개인의 방향성을 명확화</td><td>성과측정, 조직비전일치</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/project-management" term="pe/project-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[전자정부 정보시스템 성과 측정지표]]></title>
         <id>https://gracefullight.dev/en/pe/mng/전자정부-정보시스템-성과-측정지표/</id>
@@ -732,7 +761,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <ul>
 <li>운전자 조작 없이 자동차 스스로 주변 환경을 인식하고 상황을 판단하여 목적지까지 운전하는 기술</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="자율주행-기술-구성-및-적용�단계">자율주행 기술 구성 및 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_kg_F" id="자율주행-기술-�구성-및-적용단계">자율주행 기술 구성 및 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1-%EB%B0%8F-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_kg_F" id="자율주행-기술-구성">자율주행 기술 구성<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>인지</td><td>다양한 센서를 융합하여 물체 인지</td><td>카메라, 레이다, 라이다</td></tr><tr><td>판단</td><td>인지정보 기반 주행경로 계획, 판단</td><td>ADAS, E2E AI</td></tr><tr><td>제어</td><td>판단한 전략에 따라 차량 제어</td><td>조향, 브레이크, 속도</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_kg_F" id="자율주행-적용단계">자율주행 적용단계<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -816,38 +845,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h3 class="anchor anchorWithStickyNavbar_kg_F" id="ott-서비스-사업자-유형">OTT 서비스 사업자 유형<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%82%AC%EC%97%85%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h2 class="anchor anchorWithStickyNavbar_kg_F" id="ott-고려사항">OTT 고려사항<a href="https://gracefullight.dev/en/pe/conv/ott/#ott-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>목적</th><th>비고</th></tr></thead><tbody><tr><td>네트워크 안정성</td><td>압축, 효율, 비용절감</td><td>H265, H266</td></tr><tr><td>인터페이스 디자인</td><td>디지털 역기능 방지</td><td>접근성, 사용성</td></tr><tr><td>지역기반 캐싱서버</td><td>ISP와의 상생</td><td>망사용료 이슈 대응</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[디지털 트윈]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/digital-twin/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/digital-twin/"/>
-        <updated>2024-08-30T08:36:33.379Z</updated>
-        <summary type="html"><![CDATA[Digital Twin]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-개념">디지털 트윈 개념<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>현실세계의 물리적 자산, 시스템, 프로세스 등을 디지털 공간에 모델링하여 데이터를 실시간으로 모니터링, 분석,ㅡ 예측하여 문제를 해결하는 기술</li>
-<li>검증, 오류 수정 등을 디지털에서 수행하여 비용절감, 위험감소</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-구성도-구성요소-적용방안">디지털 트윈 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-구성도">디지털 트윈 구성도<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-구성요소">디지털 트윈 구성요소<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>물리적 객체</td><td>현실 세계의 실존 객체</td><td>디지털 트윈 대상</td></tr><tr><td>디지털 트윈 모델</td><td>물리 객체를 가상 공간에 복제</td><td>시뮬레이션 및 분석</td></tr><tr><td>분석 시스템</td><td>데이터 분석, 물리 객체 최적화</td><td>실시간 반영</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-적용방안">디지털 트윈 적용방안<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>적용방안</th><th>설명</th></tr></thead><tbody><tr><td>스마트시티</td><td>-</td><td>-</td></tr><tr><td>에너지</td><td>-</td><td>-</td></tr><tr><td>헬스케어</td><td>-</td><td>-</td></tr><tr><td>제조</td><td>-</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="시뮬레이션과-디지털-트윈-비교">시뮬레이션과 디지털 트윈 비교<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EA%B3%BC-%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>시뮬레이션</th><th>디지털 트윈</th></tr></thead><tbody><tr><td>개념</td><td>특정조건 동작 모방</td><td>가상공간 복제</td></tr><tr><td>데이터</td><td>과거, 가정</td><td>실시간</td></tr><tr><td>상호작용</td><td>제한적</td><td>현실세계 실시간 반영</td></tr><tr><td>목적</td><td>시스템 동작예측, 평가</td><td>현실세계 문제 해결</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="디지털-트윈-발전모델">디지털 트윈 발전모델<a href="https://gracefullight.dev/en/pe/conv/digital-twin/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EB%B0%9C%EC%A0%84%EB%AA%A8%EB%8D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>단계</th><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>5</td><td>자율</td><td>자율적 문제 인지 및 해결</td></tr><tr><td>4</td><td>연합</td><td>디지털 트윈 상호 연결</td></tr><tr><td>3</td><td>모의</td><td>디지털 결과 현실 객체 적용 및 최적화</td></tr><tr><td>2</td><td>관제</td><td>물리 객체 모니터링</td></tr><tr><td>1</td><td>모사</td><td>물리 객체 복제</td></tr></tbody></table>
-<ul>
-<li>현재 모의단계로 연합모델로 가기 위해 상호운용성과 프로토콜 표준화 필요</li>
-</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
