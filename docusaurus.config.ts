@@ -183,8 +183,7 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      defaultMode: "dark",
-      disableSwitch: true,
+      defaultMode: "light",
     },
     metadata: [
       // ? https://search.google.com/search-console
