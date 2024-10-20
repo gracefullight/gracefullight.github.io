@@ -6,7 +6,6 @@ authors: me
 tags:
   - pe
   - pe/ca
-draft: true
 ---
 
 ## HBM 개념
