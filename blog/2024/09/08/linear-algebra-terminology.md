@@ -106,6 +106,7 @@ tags:
 | 프로베니우스 놈 | Frobenius norm |
 | 항등 행렬 | Identity Matrix |
 | 행 | Row |
+| 행 사다리꼴 행렬 | Row-Echelon Form |
 | 행렬 | Matrix |
 | 행렬식 | Determinant |
 | 혼동 행렬 | Confusion Matrix |
