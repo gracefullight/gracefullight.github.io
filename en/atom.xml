@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-10-19T01:29:56.990Z</updated>
+    <updated>2024-10-19T04:52:50.872Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[HBM]]></title>
+        <id>https://gracefullight.dev/en/pe/ca/hbm/</id>
+        <link href="https://gracefullight.dev/en/pe/ca/hbm/"/>
+        <updated>2024-10-19T04:52:50.872Z</updated>
+        <summary type="html"><![CDATA[High Bandwidth Memory]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="hbm-개념">HBM 개념<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>3D TSV 기술을 사용하여 여러 개의 DRAM 칩을 수직으로 쌓고, 초고속 인터커넥트를 통해 각 층을 연결함으로써 높은 대역폭과 낮은 전력 소비를 실현한 고대역폭 메모리</li>
+<li>기존 DDR 램의 대역폭, 레이턴시의 한계와 AI 학습으로 대량 데이터 처리 수요 증가로 저전력 고속 연산 메모리 필요성 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_kg_F" id="hbm-구성도-구성요소-비교">HBM 구성도, 구성요소, 비교<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="hbm-구성도">HBM 구성도<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>수직 적층, TSV, 인터포저 등 기술을 통해 고성능 컴퓨팅 분야에서 핵심적인 역할을 하는 메모리 아키텍처</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="hbm-구성요소">HBM 구성요소<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>기술요소</th><th>상세 설명</th></tr></thead><tbody><tr><td>메모리 적층 구조</td><td>TSV</td><td>DRAM Die 를 뚫어 전도성 재료를 채운 수직 실리콘 관통 전극</td></tr><tr><td>-</td><td>DRAM Die</td><td>DRAM Cell 그룹, 패키징 단위</td></tr><tr><td>-</td><td>Logic Die</td><td>다른 칩셋 및 PHY 와 DRAM die 연결</td></tr><tr><td>프로세스 유닛</td><td>PHY</td><td>물리계층 인터페이스, Logic Die - Process Die 간 연결</td></tr><tr><td>-</td><td>CPU/GPU</td><td>그래픽, 명령어 처리 위한 프로세서</td></tr><tr><td>칩셋</td><td>Silicon Interposer</td><td>Logic Die (CPU, GPU 등)와 HBM 칩 사이의 연결</td></tr><tr><td>-</td><td>Package Substrate</td><td>Silicon Interposer 과 그래픽카드 연결하는 PCB 기판</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="hbm과-ddr6-비교">HBM과 DDR6 비교<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm%EA%B3%BC-ddr6-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>HBM</th><th>DDR6</th></tr></thead><tbody><tr><td>용도</td><td>AI 학습용</td><td>그래픽 카드, AI 추론용</td></tr><tr><td>Pin Data Rate</td><td>6.4 Gbps</td><td>16 Gbps</td></tr><tr><td>Pin</td><td>1,024개</td><td>32개</td></tr><tr><td>Bandwidth</td><td>819 GB/s</td><td>64 GB/s</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[정적 SQL과 동적 SQL]]></title>
         <id>https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/</id>
@@ -21,7 +49,7 @@
 <h2 class="anchor anchorWithStickyNavbar_kg_F" id="정적-sql과-동적-sql-상세-비교">정적 SQL과 동적 SQL 상세 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_kg_F" id="정적-sql과-동적-sql-구현-비교">정적 SQL과 동적 SQL 구현 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EA%B5%AC%ED%98%84-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>구문</td><td>컴파일 시점에 구문 및 의미 체계 체크 가능</td><td>실행 시점에 구문이 확정되므로 사전 체크 불가</td></tr><tr><td>최적화</td><td>사전 컴파일로 최적화 가능</td><td>런타임 최적화가 어려움</td></tr><tr><td>보안</td><td>주로 컴파일 타임에 보안 검토 가능</td><td>사용자 입력 검증 필요, 보안 관리 복잡</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="정적-sql과-동적-sql-특징-비교">정적 SQL과 동적 SQL 특징 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%ED%8A%B9%EC%A7%95-%EB%B9%84%EF%BF%BD%EF%BF%BD%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_kg_F" id="정적-sql과-동적-sql-특징-비교">정적 SQL과 동적 SQL 특징 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>유연성</td><td>낮음, 고정된 쿼리 구조</td><td>높음, 다양한 조건에 따라 쿼리 변경 가능</td></tr><tr><td>보안</td><td>상대적으로 안전함</td><td>SQL 인젝션 및 보안 취약점</td></tr><tr><td>성능</td><td>빠르고 최적화 가능</td><td>실행 시점에 최적화가 어려움</td></tr><tr><td>사용 사례</td><td>고정된 데이터 조회나 트랜잭션 처리</td><td>사용자 입력 기반의 동적 데이터 조회 및 처리</td></tr><tr><td>캐싱 효율</td><td>높음</td><td>낮음</td></tr><tr><td>장점</td><td>빠른 속도, 쿼리 해석 사전 수행</td><td>유연한 SQL 구조, 코딩 양 최소화</td></tr><tr><td>단점</td><td>데이터 분포에 따른 성능 저하</td><td>반복적 쿼리 파싱에 따른 성능 저하</td></tr></tbody></table>
 <ul>
 <li>동적 SQL 사용시 WAF, Stored Procedure, Prepared Statement 등을 활용하여 보안 강화 필요</li>
@@ -821,30 +849,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>5단계</td><td>운전자 개입 필요 없음</td><td>완전 자동화</td></tr><tr><td>4단계</td><td>대부분 상황에서 스스로 운행 가능</td><td>고도 자동화</td></tr><tr><td>3단계</td><td>특정 조건에서 모든 주행 기능 수행</td><td>조건부 자동화</td></tr><tr><td>2단계</td><td>가속, 조향 등 일부 기능 자동화</td><td>부분 자동화</td></tr><tr><td>1단계</td><td>차량의 일부 기능 지원</td><td>운전자 지원</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_kg_F" id="자율주행-고려사항">자율주행 고려사항<a href="https://gracefullight.dev/en/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>고려사항</th><th>해결방안</th></tr></thead><tbody><tr><td>기술적</td><td>악천후 등 다양한 상황의 성능 확보</td><td>연구 개발</td></tr><tr><td>제도적</td><td>사고시 책임소재, 윤리 기준, 개인정보 수집 방안</td><td>법규 정비</td></tr><tr><td>사회적</td><td>자율주행 일자리 변화</td><td>민관 협의, 정책 지원</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[모바일 엣지 컴퓨팅]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/mobile-edge-computing/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/"/>
-        <updated>2024-08-30T08:57:26.310Z</updated>
-        <summary type="html"><![CDATA[Mobile Edge Computing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_kg_F" id="모바일-엣지-컴퓨팅-개념">모바일 엣지 컴퓨팅 개념<a href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>기지국 근처 등 네트워크 엣지에 컴퓨터 자원을 분산시켜 데이터 처리 및 서비스를 제공하여 저지연, 고대역, 실시간 응답을 구현한 컴퓨팅 패러다임</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="모바일-엣지-컴퓨팅-구성도-구성요소">모바일 엣지 컴퓨팅 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="모바일-엣지-컴퓨팅-구성도">모바일 엣지 컴퓨팅 구성도<a href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_kg_F" id="모바일-엣지-컴퓨팅-구성요소">모바일 엣지 컴퓨팅 구성요소<a href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>모바일 엣지 디바이스</td><td>데이터 생성 및 서비스 사용 주체</td><td>스마트폰, IoT기기 등</td></tr><tr><td>기지국</td><td>데이터 전송 및 통신 담당</td><td>무선 네트워크</td></tr><tr><td>엣지서버</td><td>네트워크 가장자리에 배치</td><td>데이터 처리, 저장</td></tr><tr><td>MEC 플랫폼</td><td>엣지서버 관리, 모바일 서비스 제공</td><td>관리, 운영</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_kg_F" id="모바일-엣지-컴퓨팅-고려사��항">모바일 엣지 컴퓨팅 고려사항<a href="https://gracefullight.dev/en/pe/conv/mobile-edge-computing/#%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%97%A3%EC%A7%80-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>표준화, 데이터 권한 관리</td><td>보안성</td></tr><tr><td>기술적</td><td>네트워크 대역폭 관리, 서버 관리</td><td>안정성</td></tr><tr><td>물리적</td><td>엣지서버 위치, 전력 공급</td><td>효율성</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
