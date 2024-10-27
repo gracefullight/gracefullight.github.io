@@ -40,7 +40,7 @@ export class NewPost extends Command {
 
     let tagList = "- me";
     if (this.tags) {
-      tagList = `- ${this.tags.replace(/,/g, "\n  - ")} `;
+      tagList = `- ${this.tags.replaceAll(/,/g, "\n  - ")} `;
     }
 
     if (this.pe) {

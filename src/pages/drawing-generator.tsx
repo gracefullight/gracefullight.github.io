@@ -25,7 +25,7 @@ export default function DrawingGeneratorPage() {
     if (previewSrc) {
       const img = new Image();
       img.src = previewSrc;
-      img.onload = () => {
+      img.addEventListener("load", () => {
         const canvas = canvasRef.current;
         if (canvas) {
           canvas.width = img.width;
@@ -37,7 +37,7 @@ export default function DrawingGeneratorPage() {
             reduceToFourColors(ctx, selectedColor);
           }
         }
-      };
+      });
     }
 
     return () => {

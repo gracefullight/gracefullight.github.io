@@ -36,7 +36,7 @@ export default function DictionaryPage() {
 
     const updatedSearches = [
       inputQuery,
-      ...recentSearches.filter((term) => term !== inputQuery),
+      ...(recentSearches?.filter((term) => term !== inputQuery) ?? []),
     ].slice(0, 5);
 
     setRecentSearches(updatedSearches);
@@ -89,7 +89,7 @@ export default function DictionaryPage() {
           </button>
         </div>
         <div style={{ marginBottom: "1.5rem" }}>
-          {recentSearches.map((term) => (
+          {recentSearches?.map((term) => (
             <span
               key={term}
               onClick={() => search(term)}
@@ -116,22 +116,26 @@ export default function DictionaryPage() {
             >
               <iframe
                 src={iframeSrc.daum}
+                title="Daum Dictionary"
                 style={{
                   width: "100%",
                   height: "100vh",
                   borderRadius: "0.25rem",
                 }}
                 loading="lazy"
+                sandbox=""
                 referrerPolicy="no-referrer"
               ></iframe>
               <iframe
                 src={iframeSrc.naver}
+                title="Naver Dictionary"
                 style={{
                   width: "100%",
                   height: "100vh",
                   borderRadius: "0.25rem",
                 }}
                 loading="lazy"
+                sandbox=""
                 referrerPolicy="no-referrer"
               ></iframe>
             </div>

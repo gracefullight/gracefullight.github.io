@@ -14,15 +14,15 @@ export async function validateImageSize({
     const img = new Image();
     img.src = url;
 
-    img.onload = () => {
+    img.addEventListener("load", () => {
       URL.revokeObjectURL(url);
       resolve(img.width <= maxWidth && img.height <= maxHeight);
-    };
+    });
 
-    img.onerror = () => {
+    img.addEventListener("error", () => {
       URL.revokeObjectURL(url);
       resolve(false);
-    };
+    });
   });
 }
 

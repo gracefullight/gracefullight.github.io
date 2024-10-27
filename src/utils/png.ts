@@ -18,7 +18,7 @@ function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
     const length = dataView.getUint32(offset);
     offset += 4;
 
-    const type = String.fromCharCode(
+    const type = String.fromCodePoint(
       dataView.getUint8(offset),
       dataView.getUint8(offset + 1),
       dataView.getUint8(offset + 2),
