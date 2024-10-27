@@ -813,7 +813,10 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="자율주행-적용단계">자율주행 적용단계<a href="https://gracefullight.dev/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EC%A0%81%EC%9A%A9%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="자율주행 적용단계에 대한 직접 링크" title="자율주행 적용단계에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>5단계</td><td>운전자 개입 필요 없음</td><td>완전 자동화</td></tr><tr><td>4단계</td><td>대부분 상황에서 스스로 운행 가능</td><td>고도 자동화</td></tr><tr><td>3단계</td><td>특정 조건에서 모든 주행 기능 수행</td><td>조건부 자동화</td></tr><tr><td>2단계</td><td>가속, 조향 등 일부 기능 자동화</td><td>부분 자동화</td></tr><tr><td>1단계</td><td>차량의 일부 기능 지원</td><td>운전자 지원</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="자율주행-고려사항">자율주행 고려사항<a href="https://gracefullight.dev/pe/conv/self-driving/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="자율주행 고려사항에 대한 직접 링크" title="자율주행 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>고려사항</th><th>해결방안</th></tr></thead><tbody><tr><td>기술적</td><td>악천후 등 다양한 상황의 성능 확보</td><td>연구 개발</td></tr><tr><td>제도적</td><td>사고시 책임소재, 윤리 기준, 개인정보 수집 방안</td><td>법규 정비</td></tr><tr><td>사회적</td><td>자율주행 일자리 변화</td><td>민관 협의, 정책 지원</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>해결방안</th></tr></thead><tbody><tr><td>기술적</td><td>악천후 등 다양한 상황의 성능 확보</td><td>연구 개발</td></tr><tr><td>제도적</td><td>사고시 책임소재, 윤리 기준, 개인정보 수집 방안</td><td>법규 정비</td></tr><tr><td>사회적</td><td>자율주행 일자리 변화</td><td>민관 협의, 정책 지원</td></tr></tbody></table>
+<ul>
+<li>ISO 26262 표준 준수</li>
+</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
         </item>
