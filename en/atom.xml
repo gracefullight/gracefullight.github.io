@@ -20,8 +20,11 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="pest-3c-swot-전략-분석">PEST, 3C, SWOT 전략 분석<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#pest-3c-swot-%EC%A0%84%EB%9E%B5-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_Sk2S" id="pest">PEST<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#pest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>분석 요소</th></tr></thead><tbody><tr><td>정치</td><td>정부의 정책, 정치적 환경</td><td>세금, 법, 관세, 풍토</td></tr><tr><td>경제</td><td>경제적 환경</td><td>경제성장률, 인플레이션, 환율, 금리</td></tr><tr><td>사회</td><td>사회문화적 환경</td><td>전통, 관습, 양식, 종교</td></tr><tr><td>기술</td><td>기술적 진보와 기술 환경</td><td>정보기술, 빅데이터, AI</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_Sk2S" id="3c">3C<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#3c" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>분석 요소</th></tr></thead><tbody><tr><td>자사</td><td>자사의 역량</td><td>기획, 설계 수준, 연구 개발 인력 수준</td></tr><tr><td>경쟁사</td><td>경쟁사의 역량</td><td>마켓쉐어, 매출, 이익 규모, 경쟁력</td></tr><tr><td>고객</td><td>고객의 요구사항</td><td>고객 특성, 시장성장률, 시장성숙도</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_Sk2S" id="swot">SWOT<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#swot" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>분석 요소</th></tr></thead><tbody><tr><td>강점</td><td>자사의 장점</td><td>기술, 노하우, 인력, 자금, 브랜드</td></tr><tr><td>약점</td><td>자사의 약점</td><td>인력, 자금, 브랜드, 기술, 노하우</td></tr><tr><td>기회</td><td>외부환경의 기회</td><td>시장 확대, 기술 발전, 정책 변화</td></tr><tr><td>위협</td><td>외부환경의 위협</td><td>경쟁사, 기술 발전, 정책 변화</td></tr><tr><td>분석전략</td><td>강점과 기회를 활용, 약점과 위협을 극복</td><td>SO(Max-Max), ST(Max-Min), WO(Min-Max), WT(Min-Min)</td></tr></tbody></table>
 <ul>
 <li>내부조건은 7S, 외부환경은 5F로 추가 분석</li>
 </ul>]]></content>
