@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 02 Nov 2024 02:56:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Nov 2024 03:47:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[SWOT, 3C, PEST]]></title>
+            <link>https://gracefullight.dev/en/pe/mng/swot-3c-pest/</link>
+            <guid>https://gracefullight.dev/en/pe/mng/swot-3c-pest/</guid>
+            <pubDate>Sat, 02 Nov 2024 03:47:44 GMT</pubDate>
+            <description><![CDATA[SWOT, 3C, PEST]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="swot-3c-pest-개요">SWOT, 3C, PEST 개요<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#swot-3c-pest-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>거시적, 미시적, 전략적 분석을 통해 기업 환경을 분석하고 경쟁전략 수립</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="pest-3c-swot-전략-분석">PEST, 3C, SWOT 전략 분석<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#pest-3c-swot-%EC%A0%84%EB%9E%B5-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="pest">PEST<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#pest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="3c">3C<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#3c" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="swot">SWOT<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#swot" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>내부조건은 7S, 외부환경은 5F로 추가 분석</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-management</category>
+        </item>
         <item>
             <title><![CDATA[ISO 20000, ITSM]]></title>
             <link>https://gracefullight.dev/en/pe/mng/iso-20000-itsm/</link>
@@ -58,7 +79,7 @@
             <guid>https://gracefullight.dev/en/pe/mng/it-governance/</guid>
             <pubDate>Sat, 02 Nov 2024 02:17:09 GMT</pubDate>
             <description><![CDATA[IT governance, ISO 38500]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버�넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>기업의 전략과 목표에 부합하도록 IT 자원과 프로세스를 통제하고 관리하는 프레임워크</li>
 <li>IT의 중요성, 기업 리스크 증대, 효과성, 책임성, 투명성 제고</li>
@@ -110,7 +131,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/hbm/</guid>
             <pubDate>Sat, 19 Oct 2024 04:52:50 GMT</pubDate>
             <description><![CDATA[High Bandwidth Memory]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="hbm-개�념">HBM 개념<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="hbm-개념">HBM 개념<a href="https://gracefullight.dev/en/pe/ca/hbm/#hbm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>3D TSV 기술을 사용하여 여러 개의 DRAM 칩을 수직으로 쌓고, 초고속 인터커넥트를 통해 각 층을 연결함으로써 높은 대역폭과 낮은 전력 소비를 실현한 고대역폭 메모리</li>
 <li>기존 DDR 램의 대역폭, 레이턴시의 한계와 AI 학습으로 대량 데이터 처리 수요 증가로 저전력 고속 연산 메모리 필요성 증가</li>
@@ -134,7 +155,7 @@
             <guid>https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/</guid>
             <pubDate>Sat, 19 Oct 2024 01:29:56 GMT</pubDate>
             <description><![CDATA[Static SQL and Dynamic SQL]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="정적-sql과-동적-sql-개념-비교">정적 SQL과 동적 SQL 개념 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="�정적-sql과-동적-sql-개념-비교">정적 SQL과 동적 SQL 개념 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>애플리케이션에 하드 코딩되어 런타임 시 변경되지 않는 SQL</td><td>런타임 시점에 사용자로부터 SQL 문의 일부 또는 전부를 입력받아 실행되는 SQL</td></tr></tbody></table>
 <ul>
 <li>정적 SQL은 컴파일 전 단계에서 구문분석, 유효 오브젝트 여부확인 등 체크가 가능하지만 동적 SQL은 불가</li>
@@ -222,31 +243,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
-        </item>
-        <item>
-            <title><![CDATA[감정 인식 기술]]></title>
-            <link>https://gracefullight.dev/en/pe/algo/emotion-recognition/</link>
-            <guid>https://gracefullight.dev/en/pe/algo/emotion-recognition/</guid>
-            <pubDate>Sat, 05 Oct 2024 03:17:07 GMT</pubDate>
-            <description><![CDATA[emotion recognition]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="감정-인식-기술-개념">감정 인식 기술 개념<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EA%B0%90%EC%A0%95-%EC%9D%B8%EC%8B%9D-%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>자연어로 전달되는 감정을 분류하는 감정 분석 대비 표정, 음성, 자세 등을 관찰하여 광범위한 감정상태를 식별하는 기술</li>
-<li>감정 임베딩과 대화형 봇 감정 인식 기술을 통해 다양한 상황과 사용자 요구 대응</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="감정-인식-기술-유형-활용-분야">감정 인식 기술 유형, 활용 분야<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EA%B0%90%EC%A0%95-%EC%9D%B8%EC%8B%9D-%EA%B8%B0%EC%88%A0-%EC%9C%A0%ED%98%95-%ED%99%9C%EC%9A%A9-%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="감정-임베딩-기술-유형">감정 임베딩 기술 유형<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EA%B0%90%EC%A0%95-%EC%9E%84%EB%B2%A0%EB%94%A9-%EA%B8%B0%EC%88%A0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>관련 기술</th></tr></thead><tbody><tr><td>감정 단어 임베딩</td><td>감정 정보를 단어 임베딩으로 임베딩하는데 중점</td><td>Emo2Vec, SSWE</td></tr><tr><td>이모티콘 임베딩</td><td>감정을 표현하기 위해 채팅 메세지 내부 이모티콘을 임베딩</td><td>Emoji2Vec, DeepMoji</td></tr><tr><td>다중감정 인식용 단어 인베딩</td><td>여러 감정 레이블을 동시 할당하여 감정을 더 자세히 설명</td><td>다중라벨분류, SGM</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="대화형-봇-윈한-감정-인식-기술-유형">대화형 봇 윈한 감정 인식 기술 유형<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EB%8C%80%ED%99%94%ED%98%95-%EB%B4%87-%EC%9C%88%ED%95%9C-%EA%B0%90%EC%A0%95-%EC%9D%B8%EC%8B%9D-%EA%B8%B0%EC%88%A0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>앙상블 모델 기반 감정인식</td><td>여러 개별 모델을 결합하여 포괄적, 강인한 모델 구성</td><td>주요 감정 모델 간 가중 평균 처리</td></tr><tr><td>지식 표현 기반 감정인식</td><td>사전 지식에 정서어휘, 상식, 언어패턴, 정서의미규칙 등 포함하여 표현향상</td><td>어휘기반 감성 지식 통합</td></tr><tr><td>감정인식 위한 전이학습</td><td>부족한 훈련 데이터 문제 완화, 유도적 전이학습 사용</td><td>순차전이학습, 다중작업학습</td></tr><tr><td>이모티콘수용 감정인식</td><td>이모티콘 기반에 SVM 등 분류기로 감정 주석 추가</td><td>이모티콘 포함 텍스트 희소</td></tr><tr><td>맥락이해기반 감정인식</td><td>상황적 표현 학습 위해 발화 및 컨텍스트 수준에서 셀프 어텐션 사용</td><td>GPT-4o 등 LLM</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="감정-인식-기술-활용분야">감정 인식 기술 활용분야<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EA%B0%90%EC%A0%95-%EC%9D%B8%EC%8B%9D-%EA%B8%B0%EC%88%A0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>활용분야</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>SNS 공개 데이터 분석, 감정 모니터링 자살예방, 테러리스트 탐지</td><td>범죄예방, 안전</td></tr><tr><td>의료</td><td>긴급 상황에서 환자의 감정 예측</td><td>환자 의도 파악</td></tr><tr><td>민간</td><td>대화형 봇 감정인식 활용 감정기반 응답시스템 구축</td><td>고객응대, 마케팅</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="감정-인식-기술-고려사항">감정 인식 기술 고려사항<a href="https://gracefullight.dev/en/pe/algo/emotion-recognition/#%EA%B0%90%EC%A0%95-%EC%9D%B8%EC%8B%9D-%EA%B8%B0%EC%88%A0-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>사용자 데이터의 최소 수집 및 목적 제한을 위한 법, 제도 마련 필요</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
         </item>
     </channel>
 </rss>
