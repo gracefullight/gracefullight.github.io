@@ -50,6 +50,8 @@ graph LR
 | - | 운영 성과 | IT 서비스 운영 성과 |
 | - | 사용자 만족도 | IT 서비스 만족도 |
 
+- KPI, KGI (SMART/Specific, Measurable, Achievable, Relevant, Time-bound)
+
 ## IT 거버넌스 효과 측정 방법론
 
 | 구분 | 측정 방법론 | 설명 |
