@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 02 Nov 2024 02:46:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Nov 2024 02:56:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[ISO 20000, ITSM]]></title>
+            <link>https://gracefullight.dev/pe/mng/iso-20000-itsm/</link>
+            <guid>https://gracefullight.dev/pe/mng/iso-20000-itsm/</guid>
+            <pubDate>Sat, 02 Nov 2024 02:56:29 GMT</pubDate>
+            <description><![CDATA[ISO 20000, Information Technology Service Management]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="iso-20000-개념">ISO 20000 개념<a href="https://gracefullight.dev/pe/mng/iso-20000-itsm/#iso-20000-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="ISO 20000 개념에 대한 직접 링크" title="ISO 20000 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>IT 서비스의 품질 보장을 목표로 한 프로세스 기반의 관리 방법</li>
+<li>서비스 품질 향상, 고객 만족도 증가, IT관리 비용절감, IT관리 리스크 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="iso-20000-itsm-개념도">ISO 20000, ITSM 개념도<a href="https://gracefullight.dev/pe/mng/iso-20000-itsm/#iso-20000-itsm-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="ISO 20000, ITSM 개념도에 대한 직접 링크" title="ISO 20000, ITSM 개념도에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>기업 IT 인프라 및 서비스 전체 수명주기 관리, 지원을 위해 ITIL에 기반한 ITSM 활용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="itsm-도입-기대효과">ITSM 도입 기대효과<a href="https://gracefullight.dev/pe/mng/iso-20000-itsm/#itsm-%EB%8F%84%EC%9E%85-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="ITSM 도입 기대효과에 대한 직접 링크" title="ITSM 도입 기대효과에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>기대효과</th><th>설명</th></tr></thead><tbody><tr><td>Standard</td><td>서비스 품질 향상</td><td>표준화된 프로세스와 자동화</td></tr><tr><td>Process</td><td>운영 효율성 증대</td><td>프로세스 간소화 및 자동화</td></tr><tr><td>Organization</td><td>협업 강화, 책임 명확화</td><td>명확한 R&amp;R, 커뮤니케이션 비용 절감</td></tr><tr><td>Technology</td><td>비용 절감, 다운타임 감소</td><td>IT 운영비용 절감, 빠른 이슈 해결</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="iso-20000-개정사항">ISO 20000 개정사항<a href="https://gracefullight.dev/pe/mng/iso-20000-itsm/#iso-20000-%EA%B0%9C%EC%A0%95%EC%82%AC%ED%95%AD" class="hash-link" aria-label="ISO 20000 개정사항에 대한 직접 링크" title="ISO 20000 개정사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>개정사항</th><th>설명</th></tr></thead><tbody><tr><td>리스크 중심</td><td>리스크 기반 사고 요구</td><td>리스크 관리 중요성 강조</td></tr><tr><td>-</td><td>단계별 리스크 고려</td><td>단계별 리스크 체계적 관리</td></tr><tr><td>경영진 의지</td><td>경영진 도입 의지 강조</td><td>경영진 참여와 지원 강화</td></tr><tr><td>-</td><td>수명주기 강조</td><td>서비스 수명주기 일관성 유지</td></tr><tr><td>신규 항목</td><td>지식 관리 추가</td><td>지식 관리 체계화로 품질 향상</td></tr><tr><td>-</td><td>서비스 카탈로그 관리 추가</td><td>서비스 목록과 정보 관리 강화</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>me</category>
+        </item>
         <item>
             <title><![CDATA[TAM, 기술수용모델]]></title>
             <link>https://gracefullight.dev/pe/mng/tam/</link>
@@ -48,11 +71,11 @@
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-측정지표">IT 거버넌스 측정지표<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C" class="hash-link" aria-label="IT 거버넌스 측정지표에 대한 직접 링크" title="IT 거버넌스 측정지표에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>측정지표</th><th>설명</th></tr></thead><tbody><tr><td>전략적 측면</td><td>전략일치도</td><td>BITA 일치도</td></tr><tr><td>-</td><td>컴플라이언스</td><td>법규 준수 여부</td></tr><tr><td>-</td><td>혁신도</td><td>IT 혁신성과</td></tr><tr><td>-</td><td>프로젝트 성공률</td><td>프로젝트별 진척도</td></tr><tr><td>운영 측면</td><td>위험관리 효과성</td><td>위험관리 성과</td></tr><tr><td>-</td><td>자원 최적화</td><td>자원 활용 효율성</td></tr><tr><td>-</td><td>운영 성과</td><td>IT 서비스 운영 성과</td></tr><tr><td>-</td><td>사용자 만족도</td><td>IT 서비스 만족도</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-효과-측정-방법론">IT 거버넌스 효과 측정 방법론<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%9A%A8%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="IT 거버넌스 효과 측정 방법론에 대한 직접 링크" title="IT 거버넌스 효과 측정 방법론에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>측정 방법론</th><th>설명</th></tr></thead><tbody><tr><td>정량적</td><td>EVA</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td>TCO</td><td>총 소유 비용</td></tr><tr><td>-</td><td>ROI</td><td>투자 수익률</td></tr><tr><td>-</td><td>EVS</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td>TEI</td><td>기술 투자 효과</td></tr><tr><td>-</td><td>TVO</td><td>기술 가치 평가</td></tr><tr><td>정성적</td><td>IO</td><td>정보 가치 평가</td></tr><tr><td>-</td><td>IPM</td><td>정보 자산 관리</td></tr><tr><td>-</td><td>IE</td><td>정보 경제성</td></tr><tr><td>-</td><td>BCG Matrix</td><td>비즈니스 가치 평가</td></tr><tr><td>-</td><td>Value Chain</td><td>가치 사슬 평가</td></tr><tr><td>전략적</td><td>BSC</td><td>재무, 고객, 내부, 학습 성과</td></tr><tr><td>-</td><td>IT BSC</td><td>기업 공헌도, 사용자, 운영 프로세스, 미래 지향</td></tr><tr><td>-</td><td>ROV</td><td>리스크 가치 평가</td></tr><tr><td>-</td><td>AIE</td><td>자산 가치 평가</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>측정 방법론</th><th>설명</th></tr></thead><tbody><tr><td>정량적</td><td>EVA</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">TCO</mark></td><td>총 소유 비용</td></tr><tr><td>-</td><td>TVO</td><td>기술 가치 평가</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">CVA</mark></td><td>비용 효과 분석, NPV, ROI, IRR, PP</td></tr><tr><td>-</td><td>EVS</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td>TEI</td><td>기술 투자 효과</td></tr><tr><td>정성적</td><td><mark class="flexible-marker flexible-marker-default">IO</mark></td><td>정보화 평가</td></tr><tr><td>-</td><td>IPM</td><td>IT 포트폴리오 관리</td></tr><tr><td>-</td><td>IE</td><td>정보 경제학</td></tr><tr><td>전략적</td><td><mark class="flexible-marker flexible-marker-default">BSC</mark></td><td>재무, 고객, 내부, 학습 성과</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">IT BSC</mark></td><td>기업 공헌도, 사용자, 운영 프로세스, 미래 지향</td></tr><tr><td>통계산술적</td><td><mark class="flexible-marker flexible-marker-default">ROV</mark></td><td>실물 옵션 가치</td></tr><tr><td>-</td><td>AIE</td><td>응용 정보 경제학</td></tr></tbody></table>
 <ul>
 <li>ISO 38500 기반으로 IT 거버넌스 효과 측정</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="iso-38500">ISO 38500<a href="https://gracefullight.dev/pe/mng/it-governance/#iso-38500" class="hash-link" aria-label="ISO 38500에 대한 직접 링크" title="ISO 38500에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="iso-38500">ISO 38500<a href="https://gracefullight.dev/pe/mng/it-governance/#iso-38500" class="hash-link" aria-label="ISO 38500에 대한 직접 링크" title="ISO 38500에 대��한 직접 링크">​</a></h2>
 ]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
@@ -223,33 +246,6 @@
 <li>사용자 데이터의 최소 수집 및 목적 제한을 위한 법, 제도 마련 필요</li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[가상화폐 스캠탐지]]></title>
-            <link>https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/</link>
-            <guid>https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/</guid>
-            <pubDate>Sat, 05 Oct 2024 02:08:26 GMT</pubDate>
-            <description><![CDATA[Cryptocurrency Scam Detection]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠-개념">가상화폐 스캠 개념<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="가상화폐 스캠 개념에 대한 직접 링크" title="가상화폐 스캠 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>폰지사기라고 표현되며 가격의 높은 변동성과 익명성을 악용해 투자자들을 속이는 위협</li>
-<li>블록체인, 가상화폐의 급속한 발전으로 폰지사기, 피싱공격, 가짜 ICOs, 러그폰, 다중서명지갑 해킹 등 다양한 유형의 사기 범죄 출현</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠-탐지-개념도-분석-유형-탐지-절차">가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0-%ED%83%90%EC%A7%80-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95-%ED%83%90%EC%A7%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차에 대한 직접 링크" title="가상화폐 스캠 탐지 개념도, 분석 유형, 탐지 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠탐지-개념도">가상화폐 스캠탐지 개념도<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="가상화폐 스캠탐지 개념도에 대한 직접 링크" title="가상화폐 스캠탐지 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠탐지-분석-유형">가상화폐 스캠탐지 분석 유형<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="가상화폐 스캠탐지 분석 유형에 대한 직접 링크" title="가상화폐 스캠탐지 분석 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>기반</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>기계학습 기반</td><td>로지스틱 회귀</td><td>거래 데이터의 다양한 속성 기반으로 확률 분석하여 결정 경계 정의</td></tr><tr><td>-</td><td>랜덤포레스트</td><td>다수의 결정 트리로 거래 특성 분석, 종합하여 스캠 여부 판별</td></tr><tr><td>-</td><td>SVM</td><td>거래 데이터를 고차원에서 분류하여 최적 결정경계를 찾아서 높은 정확도</td></tr><tr><td>-</td><td>ADABoost</td><td>약분류기 결합, 반복학습, 스캠 특성 포착</td></tr><tr><td>-</td><td>LGBM</td><td>복잡한 거래 뎅치터를 수직적 방식으로 빠르게 탐지</td></tr><tr><td>딥러닝 기반</td><td>LSTM-FCN&amp;BP</td><td>LSTM-FCN과 BP 신경망을 결합한 하이브리드 모델 사용</td></tr><tr><td>-</td><td>LSTM-CNN</td><td>순차 데이터 처리용 LSTM과 구조적 특징 파악용 CNN 결합</td></tr><tr><td>그래프 기반<br>경로임베딩</td><td>Trans2Vec</td><td>거래량과 타임스탬프에 랜덤워크 기법과 SVM 활용 분류</td></tr><tr><td>-</td><td>Node2Vec</td><td>EtherScanDB로 Node2Vec과 SVM 활용 분류</td></tr><tr><td>그래프신경망 기반<br>그래프 임베딩</td><td>GCN</td><td>노드와 이웃 간 정보 집계 후 노드 임베딩 생성</td></tr><tr><td>-</td><td>TTAGN</td><td>거래내역 시간, 구조적 정보를 통합, LSTM, 어텐션 활용 스캠 탐지</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠탐지-절차">가상화폐 스캠탐지 절차<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="가상화폐 스캠탐지 절차에 대한 직접 링크" title="가상화폐 스캠탐지 절차에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="가상화폐-스캠탐지시-고려사항">가상화폐 스캠탐지시 고려사항<a href="https://gracefullight.dev/pe/conv/cryptocurrency-scam-detection/#%EA%B0%80%EC%83%81%ED%99%94%ED%8F%90-%EC%8A%A4%EC%BA%A0%ED%83%90%EC%A7%80%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="가상화폐 스캠탐지시 고려사항에 대한 직접 링크" title="가상화폐 스캠탐지시 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>클래스 불균형으로 인한 오탐 방지 위해 오버샘플링, 언더샘플링, 가중치 조정 등 고려</li>
-<li>가상화폐 거래 네트워크의 지속적 변화 학습</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
             <category>pe/algorithm</category>
         </item>
     </channel>
