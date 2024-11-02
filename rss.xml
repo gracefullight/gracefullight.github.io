@@ -72,7 +72,13 @@
 <li>인지된 유용성과 이용용이성을 기반으로 형성된 태도는 개인 신념과 감정을 투영하여 행동 영향</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_Sk2S" id="tam-비교">TAM 비교<a href="https://gracefullight.dev/pe/mng/tam/#tam-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="TAM 비교에 대한 직접 링크" title="TAM 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>TAM</th><th>TAM2</th><th>TAM3</th></tr></thead><tbody><tr><td>구성요소</td><td>인지된 유용성, 인지된 이용용이성</td><td>+주관적 규범, 사회적 이미지, 업무 관련성, 결과 및 품질</td><td>+ 컴퓨터 자기 효능감, 외부 지원 인식, 컴퓨터 불안, 유의성</td></tr><tr><td>적용범위</td><td>정보시스템, SW, HW</td><td>모바일 앱 등 확장</td><td>다양한 환경 대응</td></tr><tr><td>목적</td><td>기술수용의도, 실제 행동 예측</td><td>외부요인 포함하여 확장</td><td>IT에 대한 조직 구성원 의사결정 통합모델 제시</td></tr></tbody></table>]]></content:encoded>
+<!-- -->
+<table><thead><tr><th>구분</th><th>TAM</th><th>TAM2</th><th>TAM3</th></tr></thead><tbody><tr><td>구성요소</td><td>인지된 유용성, 인지된 이용용이성</td><td>+주관적 규범, 사회적 이미지, 업무 관련성, 결과 및 품질</td><td>+ 컴퓨터 자기 효능감, 외부 지원 인식, 컴퓨터 불안, 유의성</td></tr><tr><td>적용범위</td><td>정보시스템, SW, HW</td><td>모바일 앱 등 확장</td><td>다양한 환경 대응</td></tr><tr><td>목적</td><td>기술수용의도, 실제 행동 예측</td><td>외부요인 포함하여 확장</td><td>IT에 대한 조직 구성원 의사결정 통합모델 제시</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="신기술-도입시-추가적인-고려사항">신기술 도입시 추가적인 고려사항<a href="https://gracefullight.dev/pe/mng/tam/#%EC%8B%A0%EA%B8%B0%EC%88%A0-%EB%8F%84%EC%9E%85%EC%8B%9C-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="신기술 도입시 추가적인 고려사항에 대한 직접 링크" title="신기술 도입시 추가적인 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>비용 측면, 조직구성원 측면</li>
+<li>설문조사, 동향 파악, VoC, ISO 25000...</li>
+</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
         </item>
