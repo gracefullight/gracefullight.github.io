@@ -1,6 +1,5 @@
 import { resolve } from "node:path";
 import { format } from "node:util";
-
 import { Command, Option } from "clipanion";
 import { ensureDir, writeFile } from "fs-extra";
 import { slugize } from "hexo-util";
@@ -24,28 +23,11 @@ export class NewPost extends Command {
 
   async execute(): Promise<number | void> {
     const now = DateTime.now();
-
-    const target = this.pe
-      ? resolve(__dirname, "..", "blog", "pe")
-      : resolve(
-          __dirname,
-          "..",
-          "blog",
-          now.toFormat("yyyy"),
-          now.toFormat("MM"),
-          now.toFormat("dd"),
-        );
+    const target = this.getTargetDirectory(now);
 
     this.context.stdout.write(`Create new post "${this.title}"\n`);
 
-    let tagList = "- me";
-    if (this.tags) {
-      tagList = `- ${this.tags.replaceAll(/,/g, "\n  - ")} `;
-    }
-
-    if (this.pe) {
-      tagList = `- pe\n  ${tagList}`;
-    }
+    const tagList = this.generateTagList();
 
     await ensureDir(target);
 
@@ -57,5 +39,31 @@ export class NewPost extends Command {
     );
 
     this.context.stdout.write(`Done: ${mdxPath}\n`);
+  }
+
+  private getTargetDirectory(now: DateTime): string {
+    return this.pe
+      ? resolve(__dirname, "..", "blog", "pe")
+      : resolve(
+          __dirname,
+          "..",
+          "blog",
+          now.toFormat("yyyy"),
+          now.toFormat("MM"),
+          now.toFormat("dd"),
+        );
+  }
+
+  private generateTagList(): string {
+    let tagList = "- me";
+    if (this.tags) {
+      tagList = `- ${this.tags.replaceAll(/,/g, "\n  - ")} `;
+    }
+
+    if (this.pe) {
+      tagList = `- pe\n  ${tagList}`;
+    }
+
+    return tagList;
   }
 }
