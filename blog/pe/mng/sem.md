@@ -20,14 +20,14 @@ tags:
 ```mermaid
 graph RL
   subgraph SEM
-    direction LR
-    VBM[VBM\n가치경영영]
-    ABM[ABM\n원가관리]
-    BSC[BSC\n성과측정]
+    direction TB
+    VBM[VBM<br/>가치경영]
+    ABM[ABM<br/>원가관리]
+    BSC[BSC<br/>성과측정]
 
-    VBM <--> ABM
+     VBM <--> BSC
+    VBM <-->|EVA, Economic Value Added| ABM
     ABM <--> BSC
-    BSC <--> VBM
   end
 
   DW_OLAP[Data Warehouse, OLAP]
