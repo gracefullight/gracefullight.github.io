@@ -4,10 +4,37 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 02 Nov 2024 07:29:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 02 Nov 2024 13:30:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[AHP, 계층화 분석법]]></title>
+            <link>https://gracefullight.dev/en/pe/mng/ahp/</link>
+            <guid>https://gracefullight.dev/en/pe/mng/ahp/</guid>
+            <pubDate>Sat, 02 Nov 2024 13:30:12 GMT</pubDate>
+            <description><![CDATA[Analytic Hierarchy Process]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="ahp-개념">AHP 개념<a href="https://gracefullight.dev/en/pe/mng/ahp/#ahp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>의사결정과정을 목표, 기준, 대안 등의 계층으로 구조화한 뒤 쌍대비교하여 도출된 객관적이고 정량적인 결과값을 통해 의사결정을 지원하는 방법론</li>
+<li>계측적 구조화, 우선순위 도출, 일관성 검토, 계층요소 비교</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="ahp-프로세스-상세-설명-도입-효과">AHP 프로세스, 상세 설명, 도입 효과<a href="https://gracefullight.dev/en/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="ahp-프로세스">AHP 프로세스<a href="https://gracefullight.dev/en/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>계층 분리, 쌍대비교 후 도출된 우선순위를 통해 일관성 검사 진행하여 최종 의사 결정 사안 도출</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="ahp-프로세스-설명">AHP 프로세스 설명<a href="https://gracefullight.dev/en/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>단계</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>1. 계층화</td><td>관련 요소식별 및 선정, 단계별 계층 구조 형성</td><td>문제 목표와 세부 평가기준 설정</td></tr><tr><td>2. 쌍대비교</td><td>각 계층의 요소들을 쌍으로 비교하여 상대적 중요도 평가</td><td>1~9단계 점수, 비교 행렬 작성</td></tr><tr><td>3. 부분 우선순위</td><td>쌍대비교 결과 표준화, 각 요소 가중치 계산</td><td>우선순위 벡터</td></tr><tr><td>4. 일관성 검토</td><td>평가 일관성 검증, 판단 신뢰성 제고</td><td>일관성 비율(CR) 1 미만</td></tr><tr><td>5. 최종 우선순위</td><td>최종 종합 가중치 계산, 의사결정 수행</td><td>최적 대안 선정</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="ahp-도입-효과">AHP 도입 효과<a href="https://gracefullight.dev/en/pe/mng/ahp/#ahp-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>장점</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>다기준 의사결정 지원</td><td>다양한 평가 기준 분석을 통한 최적 대안 도출</td><td>비용, 품질, 납기 등</td></tr><tr><td>의사결정의 일관성 확보</td><td>쌍비교 통한 상대적 중요도 평가</td><td>평가 신뢰성 강화</td></tr><tr><td>정량적 및 정성적 요소 통합</td><td>데이터와 정성적 요소를 고려한 종합적 평가</td><td>전문가 판단 수용</td></tr><tr><td>우선순위 설정의 명확성</td><td>각 대안 우선순위 도출 후 전략 수립</td><td>자원 배분 최적화</td></tr><tr><td>투명한 의사결정 과정</td><td>계층 구조와 평과 과정을 통한 이해관계자 신뢰 증진</td><td>투명성, 신뢰성 강화</td></tr></tbody></table>
+<ul>
+<li>SCM, TPRM 등 공급업체의 가격, 품질, 납기, 유연성, 신뢰성, 보안성, 리스크 등 다양한 평가기준을 종합적으로 평가할 때 활용</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-management</category>
+        </item>
         <item>
             <title><![CDATA[CLA Assistant 적용]]></title>
             <link>https://gracefullight.dev/en/2024/11/02/cla-assistant/</link>
@@ -40,7 +67,7 @@
             <guid>https://gracefullight.dev/en/pe/mng/swot-3c-pest/</guid>
             <pubDate>Sat, 02 Nov 2024 03:47:44 GMT</pubDate>
             <description><![CDATA[SWOT, 3C, PEST]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="swot-3c-pest-개요">SWOT, 3C, PEST 개요<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#swot-3c-pest-%EA%B0%9C%EF%BF%BD%EF%BF%BD%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="swot-3c-pest-개요">SWOT, 3C, PEST 개요<a href="https://gracefullight.dev/en/pe/mng/swot-3c-pest/#swot-3c-pest-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>거시적, 미시적, 전략적 분석을 통해 기업 환경을 분석하고 경쟁전략 수립</li>
@@ -114,7 +141,7 @@
             <guid>https://gracefullight.dev/en/pe/mng/it-governance/</guid>
             <pubDate>Sat, 02 Nov 2024 02:17:09 GMT</pubDate>
             <description><![CDATA[IT governance, ISO 38500]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EF%BF%BD%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>기업의 전략과 목표에 부합하도록 IT 자원과 프로세스를 통제하고 관리하는 프레임워크</li>
 <li>IT의 중요성, 기업 리스크 증대, 효과성, 책임성, 투명성 제고</li>
@@ -231,31 +258,6 @@
 <table><thead><tr><th>유형</th><th>기법</th><th>설명</th></tr></thead><tbody><tr><td>이미지 수준</td><td>이미지 분류</td><td>이미지 파일 단순 분류</td></tr><tr><td>객체 수준</td><td>바운딩 박스</td><td>객체의 최소 사각형으로 분류</td></tr><tr><td>-</td><td>폴리곤</td><td>객체의 윤곽을 따라 다각형으로 어노테이션</td></tr><tr><td>-</td><td>키포인트</td><td>객체의 주요 특징점 어노테이션</td></tr><tr><td>-</td><td>3D 큐보이드</td><td>객체를 3차원 박스로 식별하여 위치 및 크기 판별</td></tr><tr><td>픽셀 수준</td><td>시맨틱 세그멘테이션</td><td>이미지 각 픽셀별 클래스 지정</td></tr><tr><td>-</td><td>인스턴스 세그멘테이션</td><td>클래스 내에서 개별 객체를 구분해 픽셀 레이블 지정</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[터크만 사다리 모델]]></title>
-            <link>https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/</link>
-            <guid>https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/</guid>
-            <pubDate>Sat, 19 Oct 2024 00:48:05 GMT</pubDate>
-            <description><![CDATA[Tuckman Ladder Model]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="터크만-사다리-모델의-개념">터크만 사다리 모델의 개념<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>프로젝트 수행 시 팀 개발 과정을 형성, 스토밍, 표준화, 수행, 해산의 5단계로 표현한 모델</li>
-<li>조직이 성장하고 도전에 대응하고 문제의식을 갖고 해결책을 찾으며 작업계획을 세우고 결과를 만들기
-위하여 필요한 팀 개발 방법론</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="터크만-사다리-모델의-구성도-특징-적용방안">터크만 사다리 모델의 구성도, 특징, 적용방안<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%8A%B9%EC%A7%95-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="터크만-사다리-모델의-구성도">터크만 사다리 모델의 구성도<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>세부 단계별 프로젝트 팀의 관심과 리더십, 필요 활동 상이</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="터크만-사다리-모델의-단계별-특징">터크만 사다리 모델의 단계별 특징<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#%ED%84%B0%ED%81%AC%EB%A7%8C-%EC%82%AC%EB%8B%A4%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>주요 관심</th><th>리더십</th><th>필요 활동</th></tr></thead><tbody><tr><td>형성기</td><td>상호 인식</td><td>지시형</td><td>팀 방향 설정</td></tr><tr><td>혼돈기</td><td>갈등 처리</td><td>지도형</td><td>계획, 역할 명료화</td></tr><tr><td>규범기</td><td>협력 관계 구축</td><td>참여형</td><td>업무, 역할 몰입</td></tr><tr><td>성취기</td><td>생산성 증대</td><td>위임형</td><td>수행 관리, 평가</td></tr><tr><td>해산기</td><td>과업종료</td><td>지시형</td><td>Lesson Learned</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="performing-단계-진입-촉진을-위한-적용방안">Performing 단계 진입 촉진을 위한 적용방안<a href="https://gracefullight.dev/en/pe/pm/tuckman-ladder-model/#performing-%EB%8B%A8%EA%B3%84-%EC%A7%84%EC%9E%85-%EC%B4%89%EC%A7%84%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>기법</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>Ground Rule</td><td>팀 내 규범을 설정하여 성과를 저해하는 요소를 사전에 제거</td><td>팀워크, 협업촉진</td></tr><tr><td>RACI</td><td>각 구성원의 역할과 책임을 명확하게 정의</td><td>업무 소통 효율화, 책임 소재 명확화</td></tr><tr><td>1-on-1</td><td>리더와 팀원이 정기적으로 1:1 미팅을 통해 개인 성과 및 문제를 논의</td><td>개인성장촉진,의사소통강화</td></tr><tr><td>OKR</td><td>목표와 주요 결과를 설정하여 팀과 개인의 방향성을 명확화</td><td>성과측정, 조직비전일치</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/project-management</category>
         </item>
     </channel>
 </rss>
