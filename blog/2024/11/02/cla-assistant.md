@@ -13,7 +13,7 @@ tags:
 
 ## CLA Assistant
 
-- <https://cla-assistant.io/> 을 연동해두면 **공개** 레파지토리에 대해 자동으로 CLA를 체크하고 받아주는데, private 레파지토리에 대해서는 동작하지 않는다.
+- [cla-assistant.io](https://cla-assistant.io/) 을 연동해두면 **공개** 레파지토리에 대해 자동으로 CLA를 체크하고 받아주는데, private 레파지토리에 대해서는 동작하지 않는다.
 
 ## CLA Assistant Lite Action
 
