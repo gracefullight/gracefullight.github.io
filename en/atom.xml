@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-11-02T02:17:09.186Z</updated>
+    <updated>2024-11-02T02:46:39.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[TAM, 기술수용모델]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/tam/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/tam/"/>
+        <updated>2024-11-02T02:46:39.114Z</updated>
+        <summary type="html"><![CDATA[Technology Acceptance Model]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="tam-개념">TAM 개념<a href="https://gracefullight.dev/en/pe/mng/tam/#tam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>사용자가 새로운 기술을 수용하는 과정에서 인지된 유용성과 인지된 이용용이성을 기반으로 이유를 설명하는 이론적 모델</li>
+<li>기술 도입시 발생할 수 있는 문제를 사전 파악, 사용자의 신기술 수용여부 예측</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="tam-구성도">TAM 구성도<a href="https://gracefullight.dev/en/pe/mng/tam/#tam-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>인지된 유용성과 이용용이성을 기반으로 형성된 태도는 개인 신념과 감정을 투영하여 행동 영향</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="tam-비교">TAM 비교<a href="https://gracefullight.dev/en/pe/mng/tam/#tam-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>TAM</th><th>TAM2</th><th>TAM3</th></tr></thead><tbody><tr><td>구성요소</td><td>인지된 유용성, 인지된 이용용이성</td><td>+주관적 규범, 사회적 이미지, 업무 관련성, 결과 및 품질</td><td>+ 컴퓨터 자기 효능감, 외부 지원 인식, 컴퓨터 불안, 유의성</td></tr><tr><td>적용범위</td><td>정보시스템, SW, HW</td><td>모바일 앱 등 확장</td><td>다양한 환경 대응</td></tr><tr><td>목적</td><td>기술수용의도, 실제 행동 예측</td><td>외부요인 포함하여 확장</td><td>IT에 대한 조직 구성원 의사결정 통합모델 제시</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IT 거버넌스]]></title>
         <id>https://gracefullight.dev/en/pe/mng/it-governance/</id>
@@ -265,28 +290,5 @@
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Git Alias]]></title>
-        <id>https://gracefullight.dev/en/2024/09/20/git-alias/</id>
-        <link href="https://gracefullight.dev/en/2024/09/20/git-alias/"/>
-        <updated>2024-09-20T05:25:46.581Z</updated>
-        <summary type="html"><![CDATA[My Git Alias]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="code">Code<a href="https://gracefullight.dev/en/2024/09/20/git-alias/#code" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<div class="language-bash codeBlockContainer_cTiR theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_RHYq"><pre tabindex="0" class="prism-code language-bash codeBlock_HSEM thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_LXNv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">alias</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  branch-name </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"!git rev-parse --abbrev-ref HEAD"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  n </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> checkout </span><span class="token parameter variable" style="color:#36acaa">-b</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  c </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> checkout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  s </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> status</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  p </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"!git push -u origin </span><span class="token string variable" style="color:#36acaa">$(</span><span class="token string variable function" style="color:#d73a49">git</span><span class="token string variable" style="color:#36acaa"> branch-name</span><span class="token string variable" style="color:#36acaa">)</span><span class="token string" style="color:#e3116c">"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  undo </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> reset HEAD~1</span><br></span></code></pre><div class="buttonGroup_wBfM"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_tALT" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_fPh1"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_EqZA"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="description">Description<a href="https://gracefullight.dev/en/2024/09/20/git-alias/#description" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><code>branch-name</code>: Retrieves the current branch name using <code>git rev-parse --abbrev-ref HEAD</code>. This alias is particularly useful for the <code>p</code> command, as it automatically includes the current branch name when pushing to the remote repository.</li>
-<li><code>n</code>: A shortcut to create a new branch with <code>checkout -b</code>.</li>
-<li><code>c</code>: A simplified alias for <code>checkout</code>, used to switch between branches.</li>
-<li><code>s</code>: Short for <code>status</code>, displays the current working directory status.</li>
-<li><code>p</code>: Pushes the current branch to the remote repository using <code>git push -u origin</code> and automatically includes the branch name.</li>
-<li><code>undo</code>: A quick command to undo the last commit by resetting the HEAD pointer to the previous commit.</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
     </entry>
 </feed>
