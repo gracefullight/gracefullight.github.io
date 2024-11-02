@@ -18,6 +18,7 @@ tags:
 ## CLA Assistant Lite Action
 
 - `.github/workflows/cla-assistant.yml` 로 아래처럼 생성하면 비공개 레파지토리에서도 파이프라인과 파일을 통해 CLA를 체크할 수 있다.
+- [CLA Assistant Lite](https://github.com/contributor-assistant/github-action)
 
 ```yaml
 name: "CLA Assistant"
