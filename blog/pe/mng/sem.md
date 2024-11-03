@@ -10,7 +10,7 @@ tags:
 
 ## SEM 개념
 
-- 기업 경영진의 ==가치중심경영==을 전사적으로 구현하기 위해 ==원가, 성과관리==를 통해 ==전략 중심의 조직==을 구현하기 위한 ==경영지원시스템==
+- 경영진의 ==가치중심경영==을 전사적으로 구현하기 위해 ==원가, 성과관리==를 통해 ==전략 중심의 조직==을 구현하기 위한 ==경영지원시스템==
 - 가치중심경영, ERP의 경영지원 한계점, 신속한 의사결정 지원, ESG 연계를 통한 기업의 연속성 제고
 
 ## SEM 구성도, 구성요소, 적용방안
@@ -20,14 +20,14 @@ tags:
 ```mermaid
 graph RL
   subgraph SEM
-    direction TB
+    direction LR
     VBM[VBM<br/>가치경영]
     ABM[ABM<br/>원가관리]
     BSC[BSC<br/>성과측정]
 
-     VBM <--> BSC
+     VBM <-->|SPM, Strategic Perf. Mng.| BSC
     VBM <-->|EVA, Economic Value Added| ABM
-    ABM <--> BSC
+    ABM <-->|ABC, Activity-Based Costing| BSC
   end
 
   DW_OLAP[Data Warehouse, OLAP]
