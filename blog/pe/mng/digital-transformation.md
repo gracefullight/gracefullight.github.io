@@ -12,9 +12,9 @@ tags:
 
 ```mermaid
 graph LR
-  Digitization[Digitization\n전자화]
-  Digitalization[Digitalization\n업무전산화]
-  DigitalTransformation[Digital Transformation\nICT신기술 기반 혁신]
+  Digitization[Digitization<br/>전자화]
+  Digitalization[Digitalization<br/>업무전산화]
+  DigitalTransformation[Digital Transformation<br/>ICT신기술 기반 혁신]
 
   Digitization --> Digitalization
   Digitalization --> DigitalTransformation
