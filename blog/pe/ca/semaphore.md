@@ -1,7 +1,7 @@
 ---
-title: Semahpore, 세마포어
+title: 세마포어
 date: 2024-06-02T20:47:50.074+09:00
-description: 세마포어
+description: Semaphore
 authors: me
 tags:
   - pe
