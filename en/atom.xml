@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-11-02T13:40:11.327Z</updated>
+    <updated>2024-11-04T10:17:04.135Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[클라우드 아웃소싱]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/cloud-outsourcing/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/"/>
+        <updated>2024-11-04T10:17:04.135Z</updated>
+        <summary type="html"><![CDATA[Cloud Outsourcing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="클라우드-아웃소싱-개념">클라우드 아웃소싱 개념<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>기업이 IT 인프라, 소프트웨어, 데이터 관리 등 다양한 IT 업무를 외부의 클라우드 서비스 제공자(CSP)나 관리형 서비스 제공자(MSP)에게 위탁하는 방식</li>
+<li>비용 절감, 확장성, 유연성, 보안성, 데이터 주권 확보, 위험 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="클라우드-아웃소싱-개념도-구성요소-적용방안">클라우드 아웃소싱 개념도, 구성요소, 적용방안<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="클라우드-아웃소싱-개념도">클라우드 아웃소싱 개념도<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>책임공유모델(SRM)과 서비스수준 계약(SLA)을 통해 각 주체가 수행하는 역할을 명확히 규정</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="클라우드-아웃소싱-구성요소">클라우드 아웃소싱 구성요소<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CSP</td><td>서버, 스토리지, 네트워크 인프라 및 다양한 클라우드 서비스 모델(IaaS, PaaS, SaaS) 제공</td><td>AWS, Microsoft Azure 등</td></tr><tr><td>MSP</td><td>클라우드 설계, 구축, 보안 관리 및 유지보수를 지원하며, 규제 준수와 최적화 서비스 제공</td><td>메가존클라우드, 베스핀글로벌 등</td></tr><tr><td>기업</td><td>클라우드를 도입해 핵심 비즈니스에 집중하고, IT 인프라 관리 부담임 감소</td><td>SRM을 통한 보안 설정 관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="클라우드-아웃소싱-적용-방안">클라우드 아웃소싱 적용 방안<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EC%A0%81%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CSP 및 MSP 선택</td><td>비즈니스 요구사항에 맞는 CSP와 MSP를 선택하여 SLA로 서비스 품질을 보장</td><td>글로벌/국내 CSP 선택</td></tr><tr><td>클라우드 전환 전략</td><td>MSP와 협력하여 장기적인 디지털 전환 전략을 수립하고 데이터 마이그레이션 및 교육을 진행</td><td>단계별 전환 계획</td></tr><tr><td>보안 및 규제 준수</td><td>SRM을 통해 보안 책임을 명확히 하고, MSP의 컨설팅을 통해 규제 준수 체계를 마련</td><td>금융, 의료 등 규제 엄격한 산업에 필수</td></tr><tr><td>비용 최적화</td><td>MSP의 성능 모니터링 및 최적화 방안을 통해 불필요한 자원 낭비 없이 비용 효율성을 확보</td><td>성능 모니터링으로 시스템 가용성 유지</td></tr><tr><td>지속적 개선</td><td>MSP와 협력하여 최신 기술 업데이트와 최적화 작업을 지속적으로 수행하여 경쟁력을 유지</td><td>주기적 리뷰 및 개선</td></tr><tr><td>SLA 관리</td><td>SLA를 통해 가용성, 응답 시간, 문제 해결 시간 등 서비스 수준을 보장하고, 위반 시 보상 조건 설정</td><td>크레딧, 환불 등의 보상 가능</td></tr><tr><td>소버린 클라우드 적용</td><td>데이터 주권과 국가별 규제를 준수하며, 소버린 클라우드를 활용해 특정 국가 내 데이터 저장 및 처리</td><td>법적 규제가 엄격한 산업 필수</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IT 직무제, SW 기술자 등급제]]></title>
         <id>https://gracefullight.dev/en/pe/mng/it-직무제-sw-기술자-등급제/</id>
@@ -182,7 +210,7 @@
         <link href="https://gracefullight.dev/en/pe/mng/it-governance/"/>
         <updated>2024-11-02T02:17:09.186Z</updated>
         <summary type="html"><![CDATA[IT governance, ISO 38500]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EF%BF%BD%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/en/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>기업의 전략과 목표에 부합하도록 IT 자원과 프로세스를 통제하고 관리하는 프레임워크</li>
 <li>IT의 중요성, 기업 리스크 증대, 효과성, 책임성, 투명성 제고</li>
@@ -266,31 +294,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[정적 SQL과 동적 SQL]]></title>
-        <id>https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/</id>
-        <link href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/"/>
-        <updated>2024-10-19T01:29:56.990Z</updated>
-        <summary type="html"><![CDATA[Static SQL and Dynamic SQL]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="정적-sql과-동적-sql-개념-비교">정적 SQL과 동적 SQL 개념 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>애플리케이션에 하드 코딩되어 런타임 시 변경되지 않는 SQL</td><td>런타임 시점에 사용자로부터 SQL 문의 일부 또는 전부를 입력받아 실행되는 SQL</td></tr></tbody></table>
-<ul>
-<li>정적 SQL은 컴파일 전 단계에서 구문분석, 유효 오브젝트 여부확인 등 체크가 가능하지만 동적 SQL은 불가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_Sk2S" id="정적-sql과-동적-sql-상세-비교">정적 SQL과 동적 SQL 상세 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="정적-sql과-동적-sql-구현-비교">정적 SQL과 동적 SQL 구현 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%EA%B5%AC%ED%98%84-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>구문</td><td>컴파일 시점에 구문 및 의미 체계 체크 가능</td><td>실행 시점에 구문이 확정되므로 사전 체크 불가</td></tr><tr><td>최적화</td><td>사전 컴파일로 최적화 가능</td><td>런타임 최적화가 어려움</td></tr><tr><td>보안</td><td>주로 컴파일 타임에 보안 검토 가능</td><td>사용자 입력 검증 필요, 보안 관리 복잡</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_Sk2S" id="정적-sql과-동적-sql-특징-비교">정적 SQL과 동적 SQL 특징 비교<a href="https://gracefullight.dev/en/pe/db/static-sql-and-dynamic-sql/#%EC%A0%95%EC%A0%81-sql%EA%B3%BC-%EB%8F%99%EC%A0%81-sql-%ED%8A%B9%EC%A7%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>정적 SQL</th><th>동적 SQL</th></tr></thead><tbody><tr><td>유연성</td><td>낮음, 고정된 쿼리 구조</td><td>높음, 다양한 조건에 따라 쿼리 변경 가능</td></tr><tr><td>보안</td><td>상대적으로 안전함</td><td>SQL 인젝션 및 보안 취약점</td></tr><tr><td>성능</td><td>빠르고 최적화 가능</td><td>실행 시점에 최적화가 어려움</td></tr><tr><td>사용 사례</td><td>고정된 데이터 조회나 트랜잭션 처리</td><td>사용자 입력 기반의 동적 데이터 조회 및 처리</td></tr><tr><td>캐싱 효율</td><td>높음</td><td>낮음</td></tr><tr><td>장점</td><td>빠른 속도, 쿼리 해석 사전 수행</td><td>유연한 SQL 구조, 코딩 양 최소화</td></tr><tr><td>단점</td><td>데이터 분포에 따른 성능 저하</td><td>반복적 쿼리 파싱에 따른 성능 저하</td></tr></tbody></table>
-<ul>
-<li>동적 SQL 사용시 WAF, Stored Procedure, Prepared Statement 등을 활용하여 보안 강화 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/database" term="pe/database"/>
     </entry>
 </feed>
