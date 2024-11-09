@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[Parallel Computing]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_qFkN" id="병렬-컴퓨팅-개념">병렬 컴퓨팅 개념<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EB%B3%91%EB%A0%AC-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="병렬 컴퓨팅 개념에 대한 직접 링크" title="병렬 컴퓨팅 개념에 대한 직접 링크">​</a></h2>
 <ul>
-<li>프로그램 내 계싼 영역을 여러 개로 나누어 각 계산을 여러 프로세서에서 동시 수행하는 기술</li>
+<li>프로그램 내 계산 영역을 여러 개로 나누어 각 계산을 여러 프로세서에서 동시 수행하는 기술</li>
 <li>생성형 AI 발전, GPU 품귀, 단일 프로세서 한계</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_qFkN" id="병렬-컴퓨팅-특징">병렬 컴퓨팅 특징<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EB%B3%91%EB%A0%AC-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="병렬 컴퓨팅 특징에 대한 직접 링크" title="병렬 컴퓨팅 특징에 대한 직접 링크">​</a></h2>
