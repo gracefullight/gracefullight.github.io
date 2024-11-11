@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.cefd2825.css">
-<script src="/en/assets/js/runtime~main.0106b09d.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.0c5d1cf4.js" defer="defer"></script>
 <script src="/en/assets/js/main.73728c27.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -210,10 +210,14 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_qFkN" id="프로세스-스레싱의-개념도-원인-해결방안">프로세스 스레싱의 개념도, 원인, 해결방안<a href="#프로세스-스레싱의-개념도-원인-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_qFkN" id="프로세스-스레싱의-개념도">프로세스 스레싱의 개념도<a href="#프로세스-스레싱의-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_qFkN" id="프로세스-스레싱의-원인">프로세스 스레싱의 원인<a href="#프로세스-스레싱의-원인" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>원인</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">리소스 부족</mark></td><td>저사양 CPU</td><td>CPU 코어부족, 속도 부족</td></tr><tr><td>-</td><td>메모리 용량 부족</td><td>용량 부족으로 인한 가상메모리 사용 증가</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">부적절한 페이지 교체 정책</mark></td><td>지역성 미고려</td><td>페이지 교체 정책 효율성 저하</td></tr><tr><td>-</td><td>페이지 빈도 미고려</td><td>부적절한 페이지 교체 알고리즘 사용</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">과도한 멀티프로그래밍</mark></td><td>다중 프로세스 수용 초과</td><td>과도한 멀티프로그래밍으로 페이지 폴트</td></tr><tr><td>-</td><td>페이지 교체 수용 추가</td><td>페이지 수 초과로 인한 페이지 폴트</td></tr></tbody></table>
 <ul>
-<li>Working Set Model, Page Fault Frequency 기버을 통해 발 생을 최소화하는 것이 최선의 방법</li>
+<li>다중 프로그래밍의 정도가 높아짐에 따라 프로세서 이용률이 향상되지맂 임계치 도달 후 프로세서 이용률이
+낮아짐</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_qFkN" id="프로세스-스레싱의-원인">프로세스 스레싱의 원인<a href="#프로세스-스레싱의-원인" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>원인</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">리소스 부족</mark></td><td>저사양 CPU</td><td>CPU 코어부족, 속도 부족</td></tr><tr><td>-</td><td>메모리 용량 부족</td><td>용량 부족으로 인한 가상메모리 사용 증가</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">부적절한 페이지 교체 정책</mark></td><td>지역성 미고려</td><td>페이지 교체 정책 효율성 저하</td></tr><tr><td>-</td><td>페이지 빈도 미고려</td><td>부적절한 페이지 교체 알고리즘 사용</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">과도한 멀티프로그래밍</mark></td><td>다중 프로세스 수용 초과</td><td>과도한 멀티프로그래밍으로 페이지 폴트</td></tr><tr><td>-</td><td>페이  지 교체 수용 추가</td><td>페이지 수 초과로 인한 페이지 폴트</td></tr></tbody></table>
+<ul>
+<li>Working Set Model, Page Fault Frequency 기버을 통해 발생을 최소화하는 것이 최선의 방법</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_qFkN" id="프로세스-스레싱-해결방안">프로세스 스레싱 해결방안<a href="#프로세스-스레싱-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
@@ -251,7 +255,7 @@
 <ul>
 <li>제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_qFkN" id="페이징-기법-세그먼테이션-기법-개념도-핵심요소">페이징 기법, 세그먼테이션 기법 개념도, 핵심요소<a href="#페이징-기법-세그먼테이션-기법-개념도-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_qFkN" id="페이징-기법-세그먼테이션-기법-개념도-핵심요소">페이징 기법, 세그먼테이션 기법 개념도, 핵심요소<a href="#페이징-기법-세그먼테이션-기법-개념도-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading"> ​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_qFkN" id="페이징-기법-세그먼테이션-기법-개념도">페이징 기법, 세그먼테이션 기법 개념도<a href="#페이징-기법-세그먼테이션-기법-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <!-- -->
