@@ -46,6 +46,8 @@ graph LR
 
 ### CXL 유형
 
+![유형 참조](https://www.viavisolutions.com/sites/default/files/images/diagram-cxl-device-types-viavi.png)
+
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
 | CXL Type 1 | 메모리 일관성 없이 I/O 가속기를 연결하여 고속 데이터 전송을 지원 | 단순 I/O 연결, 낮은 지연 시간 |
