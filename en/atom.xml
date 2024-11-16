@@ -89,7 +89,7 @@
 <h3 class="anchor anchorWithStickyNavbar_T17t" id="클라우드-아웃소싱-개념도">클라우드 아웃소싱 개념도<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
-<li>책임공유모델(SRM)과 서비스수준 계약(SLA)을 통해 각 주체가 수행하는 역할을 명확히 규정</li>
+<li>책임공유모델(SRM)과 서비스수준 계약(SLA)을 통해 각 주체가 수행하는 역할을 규정하고, 안정적인 클라우드 서비스 운영</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_T17t" id="클라우드-아웃소싱-구성요소">클라우드 아웃소싱 구성요소<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CSP</td><td>서버, 스토리지, 네트워크 인프라 및 다양한 클라우드 서비스 모델(IaaS, PaaS, SaaS) 제공</td><td>AWS, Microsoft Azure 등</td></tr><tr><td>MSP</td><td>클라우드 설계, 구축, 보안 관리 및 유지보수를 지원하며, 규제 준수와 최적화 서비스 제공</td><td>메가존클라우드, 베스핀글로벌 등</td></tr><tr><td>기업</td><td>클라우드를 도입해 핵심 비즈니스에 집중하고, IT 인프라 관리 부담임 감소</td><td>SRM을 통한 보안 설정 관리</td></tr></tbody></table>
