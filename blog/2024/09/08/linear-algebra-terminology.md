@@ -47,6 +47,8 @@ tags:
 | 미적분 | Calculus | 함수의 변화율과 넓이를 다루는 수학 분야 |
 | 볼록 최적화 | Convex Optimization | 볼록 함수의 최솟값을 찾는 문제 |
 | 분류 | Classification | 데이터를 여러 개의 클래스로 나누는 작업 |
+| 블록행렬 | Block Matrix | 행렬을 작은 행렬로 나누어 표현한 것 |
+| 블록대각행렬 | Block Diagonal Matrix | 대각선 이외의 모든 행렬 블록이 영행렬인 블록 행렬 |
 | 비직교 | Non-orthogonal | 서로 직교하지 않는 |
 | 빗변 | Hypotenuse | 직각삼각형에서 직각을 마주보는 가장 긴 변 |
 | 사다리꼴행렬 | Echelon Form | 행렬의 특정한 형태로, 가우스 소거법을 통해 얻을 수 있음 |
