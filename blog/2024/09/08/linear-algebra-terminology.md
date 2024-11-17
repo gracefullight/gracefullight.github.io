@@ -63,6 +63,7 @@ tags:
 | 실수 | Real | 유리수와 무리수를 포함하는 수 |
 | 아다마르 곱 | Hadamard product | 두 행렬의 같은 위치에 있는 성분끼리 곱하여 새로운 행렬을 만드는 연산 |
 | 아인슈타인 표기법 | Eienstein Summation Convention | 반복되는 문자(인덱스)가 보이면 자동으로 더하는 표기법<br/>시그마 생략 |
+| 아핀 공간 | Affine Space | 벡터 공간에서 원점을 포함하지 않는 공간 |
 | 아핀 변환 | Affine Transformation | 평행 이동, 회전, 축척 등의 변환을 포함하는 선형 변환 |
 | 양의 정부호 행렬 | Positive Definite Matrix | 모든 고유값이 양수인 대칭 행렬 |
 | 양의 준정부호 행렬 | Positive Semi-definite Matrix | 모든 고유값이 0 이상인 대칭 행렬 |
