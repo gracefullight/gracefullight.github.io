@@ -27,6 +27,7 @@ tags:
 | 내적 | Dot Product | 두 벡터 사이의 각도와 크기를 이용하여 스칼라 값을 얻는 연산 |
 | 누적 분포 함수 | CDF, Cumulative Distribution Function | 확률 변수가 특정 값 이하의 값을 가질 확률을 나타내는 함수 |
 | 누적 확률 | Cumulative Probability | 특정 값 이하의 값을 가질 확률 |
+| 다중선형성 | Multi-linearity | 행렬의 열 벡터 중 특정 벡터를 변화시킬 때, 다른 벡터를 고정한 상태에서 선형적인 방식으로 반응하는 성질 |
 | 다항식 | Polynomial | 여러 개의 항으로 이루어진 식 |
 | 다항 분포 | Multinomial Distribution | 여러 개의 범주 중 하나를 선택하는 시행을 반복할 때, 각 범주에 속하는 횟수를 나타내는 이산 확률 분포 |
 | 단위 벡터 | Unit Vector | 크기가 1인 벡터 |
