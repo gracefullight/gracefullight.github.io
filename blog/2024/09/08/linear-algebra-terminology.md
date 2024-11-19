@@ -141,9 +141,41 @@ tags:
 
 ## Calculus
 
+### Log
+
+$$
+\int \ln x \, dx = x(\ln x - 1) + C
+$$
+
+$$
+\frac{d}{dx} [\ln x] = \frac{1}{x}
+$$
+
+$$
+\int \log_2 x \, dx = \frac{x (\log_2 x - 1)}{\ln 2} + C
+$$
+
+$$
+\frac{d}{dx} [\log_2 x] = \frac{1}{x \ln 2}
+$$
+
+### Fraction
+
+$$
+\int \frac{1}{x} dx = \ln|x| + C
+$$
+
+$$
+\frac{d}{dx} \left[ \frac{1}{x} \right] = -\frac{1}{x^2}
+$$
+
 ### Product Rule
 
 $$[f(x)g(x)]'=f(x)'g(x)+f(x)g(x)'$$
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
 
 ### Quotient Rule
 
@@ -193,6 +225,13 @@ $$\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}$$
 | Hash Table | $O(1)$ |
 | Heap Sort | $O(n \log{n})$ |
 | Quick Select | $O(n)$ |
+
+### Graph Search Algorithms
+
+- DFS
+- Dijkstra's algorithm
+- Bellman-Ford algorithm
+- Floyd-Warshall algorithm
 
 ## 예시
 
