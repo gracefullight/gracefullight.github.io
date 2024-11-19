@@ -57,5 +57,5 @@ $$
   CU = \lambda * W
 $$
 
-- 동시사용자 = TPS * (Request Time + Think Time)
+- 동시사용자 = TPS * (Response Time + Think Time)
 - 웹 시스템에선 동시 사용자와 활성사용자 간 차이가 있으므로 TPS 가정 하에 활성 사용자 계산
