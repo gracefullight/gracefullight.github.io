@@ -231,6 +231,11 @@ const config: Config = {
           to: "/tags",
           label: "Tags",
         },
+        {
+          href: "https://github.com/gracefullight",
+          label: "GitHub",
+          position: "right",
+        },
       ],
     },
     footer: {
