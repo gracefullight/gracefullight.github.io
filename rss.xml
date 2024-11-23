@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 23 Nov 2024 04:49:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Nov 2024 05:14:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[ISO 26262]]></title>
+            <link>https://gracefullight.dev/pe/sw/iso-26262/</link>
+            <guid>https://gracefullight.dev/pe/sw/iso-26262/</guid>
+            <pubDate>Sat, 23 Nov 2024 05:14:32 GMT</pubDate>
+            <description><![CDATA[ISO 26262]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_m3LE" id="iso-26262-개념">ISO 26262 개념<a href="https://gracefullight.dev/pe/sw/iso-26262/#iso-26262-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="ISO 26262 개념에 대한 직접 링크" title="ISO 26262 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>자동차에 탑재된 전기전자시스템의 오작동으로 인해 발생할 수 있는 사고를 방지하기 위한 자동차 기능안전 국제 표준</li>
+<li>전기차, 자율주행, E2E AI 등 신기술 도입으로 SW 비준하는 전기전자 제어 시스템의 안전성 확보 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_m3LE" id="iso-26262-구성도-구성요소">ISO 26262 구성도, 구성요소<a href="https://gracefullight.dev/pe/sw/iso-26262/#iso-26262-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 26262 구성도, 구성요소에 대한 직접 링크" title="ISO 26262 구성도, 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_m3LE" id="iso-26262-구성요소">ISO 26262 구성요소<a href="https://gracefullight.dev/pe/sw/iso-26262/#iso-26262-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ISO 26262 구성요소에 대한 직접 링크" title="ISO 26262 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>파트</th><th>구성요소</th><th>상세설명</th></tr></thead><tbody><tr><td>Part1</td><td>용어</td><td>ISO26262 사용용어 및 약어 정의</td></tr><tr><td>Part2</td><td>기능안전</td><td>프로젝트 전반 안전성 관리 요구사항 정의</td></tr><tr><td>Part3</td><td>구상단계</td><td>위험분석(HARA) 및 안전 목표 설정</td></tr><tr><td>Part4</td><td>시스템 레벨 제품 개발</td><td>시스템 아키텍처 설계, 기술적 안전 요구사항, 테스트 요구사항</td></tr><tr><td>Part5</td><td>HW레벨 제품 개발</td><td>HW설계, 아키텍처 평가, 검증 요구사항 정의</td></tr><tr><td>Part6</td><td>SW레벨 제품 개발</td><td>SW안전 요구사항, ASPICE와 연계하여 SW개발 프로세스 관리</td></tr><tr><td>Part7</td><td>생산 및 운영</td><td>차량 생산, 운영 중 발생가능한 위험관리와 폐기 안전 절차</td></tr><tr><td>Part8</td><td>지원 프로세스</td><td>형상 관리, 변경 관리, 문서화 등의 지원 절차</td></tr><tr><td>Part9</td><td>ASIL 및 안전 중심 분석</td><td>ASIL 평가 방법론과 안전 구성요소 간 종속 조건 정의</td></tr><tr><td>Part10</td><td>가이드라인</td><td>표준 적용 시 참고할 수 있는 추가 가이드라인 제공</td></tr><tr><td>Part11</td><td>반도체 산업 적용 가이드라인</td><td>반도체 제조업체를 위한 세부 정보 제공</td></tr><tr><td>Part12</td><td>모터사이클 적용 요구사항</td><td>모터사이클에 특화된 기능 안전 요구사항</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_m3LE" id="asil-평가-절차-asil-등급">ASIL 평가 절차, ASIL 등급<a href="https://gracefullight.dev/pe/sw/iso-26262/#asil-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8-asil-%EB%93%B1%EA%B8%89" class="hash-link" aria-label="ASIL 평가 절차, ASIL 등급에 대한 직접 링크" title="ASIL 평가 절차, ASIL 등급에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_m3LE" id="asil-평가-절차도">ASIL 평가 절차도<a href="https://gracefullight.dev/pe/sw/iso-26262/#asil-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="ASIL 평가 절차도에 대한 직접 링크" title="ASIL 평가 절차도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_m3LE" id="asil-등급">ASIL 등급<a href="https://gracefullight.dev/pe/sw/iso-26262/#asil-%EB%93%B1%EA%B8%89" class="hash-link" aria-label="ASIL 등급에 대한 직접 링크" title="ASIL 등급에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>등급</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>ASIL A</td><td>상대적 낮은 위험, 기본 안전조치 필요</td><td>경상</td></tr><tr><td>ASIL B</td><td>중간 수준 위험, 추가적인 안전조치 필요</td><td>중상</td></tr><tr><td>ASIL C</td><td>높은 위험 수준, 엄격한 안전조치 필요</td><td>사망</td></tr><tr><td>ASIL D</td><td>매우 높은 위험 수준, 최고 수준의 안전조치 필요</td><td>다수 사망</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_m3LE" id="자율주행시대의-자동차-안전-고려사항">자율주행시대의 자동차 안전 고려사항<a href="https://gracefullight.dev/pe/sw/iso-26262/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%9E%90%EB%8F%99%EC%B0%A8-%EC%95%88%EC%A0%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="자율주행시대의 자동차 안전 고려사항에 대한 직접 링크" title="자율주행시대의 자동차 안전 고려사항에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>ISO 21448을 통하여 자율주행시 알려진, 알려지지 않은 시나리오를 평가하여 위험 감소</li>
+<li>ISO 21434를 통하여 개발단계의 사이버보안에서부터 사고 대응, 복구, 모니터링 및 공급망 관리 절차 강화</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/software-engineering</category>
+        </item>
         <item>
             <title><![CDATA[SP인증, SW 프로세스 품질 인증]]></title>
             <link>https://gracefullight.dev/pe/sw/sw-process-quality-certification/</link>
@@ -265,37 +293,6 @@
 <li>비용 측면, 조직구성원 측면</li>
 <li>설문조사, 동향 파악, VoC, ISO 25000...</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-management</category>
-        </item>
-        <item>
-            <title><![CDATA[IT 거버넌스]]></title>
-            <link>https://gracefullight.dev/pe/mng/it-governance/</link>
-            <guid>https://gracefullight.dev/pe/mng/it-governance/</guid>
-            <pubDate>Sat, 02 Nov 2024 02:17:09 GMT</pubDate>
-            <description><![CDATA[IT governance, ISO 38500]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_m3LE" id="it-거버넌스-개념">IT 거버넌스 개념<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IT 거버넌스 개념에 대한 직접 링크" title="IT 거버넌스 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>기업의 전략과 목표에 부합하도록 IT 자원과 프로세스를 통제하고 관리하는 프레임워크</li>
-<li>IT의 중요성, 기업 리스크 증대, 효과성, 책임성, 투명성 제고</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_m3LE" id="it-거버넌스-프레임워크">IT 거버넌스 프레임워크<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC" class="hash-link" aria-label="IT 거버넌스 프레임워크에 대한 직접 링크" title="IT 거버넌스 프레임워크에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>조직의 IT 자원과 활동을 효과적으로 관리하고, 최적화하여 비지니스 목표 달성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_m3LE" id="it-거버넌스-측정지표">IT 거버넌스 측정지표<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%EC%B8%A1%EC%A0%95%EC%A7%80%ED%91%9C" class="hash-link" aria-label="IT 거버넌스 측정지표에 대한 직접 링크" title="IT 거버넌스 측정지표에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>측정지표</th><th>설명</th></tr></thead><tbody><tr><td>전략적 측면</td><td>전략일치도</td><td>BITA 일치도</td></tr><tr><td>-</td><td>컴플라이언스</td><td>법규 준수 여부</td></tr><tr><td>-</td><td>혁신도</td><td>IT 혁신성과</td></tr><tr><td>-</td><td>프로젝트 성공률</td><td>프로젝트별 진척도</td></tr><tr><td>운영 측면</td><td>위험관리 효과성</td><td>위험관리 성과</td></tr><tr><td>-</td><td>자원 최적화</td><td>자원 활용 효율성</td></tr><tr><td>-</td><td>운영 성과</td><td>IT 서비스 운영 성과</td></tr><tr><td>-</td><td>사용자 만족도</td><td>IT 서비스 만족도</td></tr></tbody></table>
-<ul>
-<li>KPI, KGI (SMART/Specific, Measurable, Achievable, Relevant, Time-bound)</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_m3LE" id="it-거버넌스-효과-측정-방법론">IT 거버넌스 효과 측정 방법론<a href="https://gracefullight.dev/pe/mng/it-governance/#it-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%9A%A8%EA%B3%BC-%EC%B8%A1%EC%A0%95-%EB%B0%A9%EB%B2%95%EB%A1%A0" class="hash-link" aria-label="IT 거버넌스 효과 측정 방법론에 대한 직접 링크" title="IT 거버넌스 효과 측정 방법론에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>측정 방법론</th><th>설명</th></tr></thead><tbody><tr><td>정량적</td><td>EVA</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">TCO</mark></td><td>총 소유 비용</td></tr><tr><td>-</td><td>TVO</td><td>기술 가치 평가</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">CVA</mark></td><td>비용 효과 분석, NPV, ROI, IRR, PP</td></tr><tr><td>-</td><td>EVS</td><td>경제적 가치 평가</td></tr><tr><td>-</td><td>TEI</td><td>기술 투자 효과</td></tr><tr><td>정성적</td><td><mark class="flexible-marker flexible-marker-default">IO</mark></td><td>정보화 평가</td></tr><tr><td>-</td><td>IPM</td><td>IT 포트폴리오 관리</td></tr><tr><td>-</td><td>IE</td><td>정보 경제학</td></tr><tr><td>전략적</td><td><mark class="flexible-marker flexible-marker-default">BSC</mark></td><td>재무, 고객, 내부, 학습 성과</td></tr><tr><td>-</td><td><mark class="flexible-marker flexible-marker-default">IT BSC</mark></td><td>기업 공헌도, 사용자, 운영 프로세스, 미래 지향</td></tr><tr><td>통계산술적</td><td><mark class="flexible-marker flexible-marker-default">ROV</mark></td><td>실물 옵션 가치</td></tr><tr><td>-</td><td>AIE</td><td>응용 정보 경제학</td></tr></tbody></table>
-<ul>
-<li>ISO 38500 기반으로 IT 거버넌스 효과 측정</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_m3LE" id="iso-38500">ISO 38500<a href="https://gracefullight.dev/pe/mng/it-governance/#iso-38500" class="hash-link" aria-label="ISO 38500에 대한 직접 링크" title="ISO 38500에 대한 직접 링크">​</a></h2>
-]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
         </item>
