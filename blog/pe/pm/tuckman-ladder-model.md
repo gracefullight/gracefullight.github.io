@@ -20,10 +20,10 @@ tags:
 
 ```mermaid
 xychart-beta
-  title "Tuckman Team Development Model"
+  title "터크만 사다리 모델"
   x-axis ["Forming", "Storming", "Norming", "Performing", "Adjourning"]
-  y-axis "Performance Level" 0 --> 100
-  line [30, 10, 50, 90, 50]
+  y-axis "구성원간 상호의존성" 0 --> 100
+  line [10, 30, 50, 70, 40]
 ```
 
 - 세부 단계별 프로젝트 팀의 관심과 리더십, 필요 활동 상이
