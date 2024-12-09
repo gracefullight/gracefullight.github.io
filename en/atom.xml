@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-12-03T13:22:26.536Z</updated>
+    <updated>2024-12-09T13:23:24.776Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[WiFi 7]]></title>
+        <id>https://gracefullight.dev/en/pe/nw/wifi-7/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/wifi-7/"/>
+        <updated>2024-12-09T13:23:24.776Z</updated>
+        <summary type="html"><![CDATA[WiFi 7, IEEE 802.11be]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_my9V" id="wifi-7-개념">WiFi 7 개념<a href="https://gracefullight.dev/en/pe/nw/wifi-7/#wifi-7-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>46Gbps의 최대 전송률과 2.4, 5, 6GHz 무선 대역에서 초실감 컨텐츠를 전송하기 위한 IEEE 802.11be 표준 무선통신 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_my9V" id="wifi-7-구성도-구성요소">WiFi 7 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/nw/wifi-7/#wifi-7-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_my9V" id="wifi-7-구성도">WiFi 7 구성도<a href="https://gracefullight.dev/en/pe/nw/wifi-7/#wifi-7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_my9V" id="wifi-7-구성요소">WiFi 7 구성요소<a href="https://gracefullight.dev/en/pe/nw/wifi-7/#wifi-7-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>설명</th></tr></thead><tbody><tr><td>MAC</td><td>MLO</td><td>서로 다른 주파수 대역을 동시 활용하여 지연 감소 및 처리량 증대</td></tr><tr><td>-</td><td>Multi AP Coordination</td><td>주변 AP와 데이터 공유를 통해 전파 간섭 최소화, 전체 네트워크 성능 및 커버리지 개선</td></tr><tr><td>-</td><td>H-ARQ</td><td>FEC, BEC를 결합하여 오류제어 및 재전송</td></tr><tr><td>PHY</td><td>혼합 빔포밍</td><td>320MHz 광대역을 다수 협대역을 분할하여 프리코딩</td></tr><tr><td>-</td><td>4096-QAM</td><td>기존 대비 4배 많은 비트 전송, 20% 성능향상</td></tr><tr><td>-</td><td>Preamble/Puncturing</td><td>특정 서브 채널을 제외하거나 활용하여 채널 효율 개선, 간섭 최소화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_my9V" id="wifi-6-7-비교">WiFi 6, 7 비교<a href="https://gracefullight.dev/en/pe/nw/wifi-7/#wifi-6-7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>WiFi 6</th><th>WiFi 7</th></tr></thead><tbody><tr><td>표준</td><td>IEEE 802.11ax</td><td>IEEE 802.11be</td></tr><tr><td>최대전송속도</td><td>9.6Gbps</td><td>46Gbps</td></tr><tr><td>최대대역폭</td><td>160MHz</td><td>320MHz</td></tr><tr><td>변조방식</td><td>1024-QAM</td><td>4096-QAM</td></tr><tr><td>MU-MIMO</td><td>8x8</td><td>16x16</td></tr><tr><td>적용기술</td><td>OFDMA, MU-MIMO</td><td>MLO, H-ARQ, Multi AP</td></tr><tr><td>주파수</td><td>2.4, 5, 6GHz (6E)</td><td>2.4, 5, 6GHz</td></tr><tr><td>타겟 서비스</td><td>고화질 스트리밍, 스마트홈, 대규모 밀접시설</td><td>AR, VR, 8K 스트리밍, 초저지연 무선통신</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/network" term="pe/network"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[한비자]]></title>
         <id>https://gracefullight.dev/en/2024/12/03/han-feizi/</id>
@@ -41,7 +65,7 @@
 <li>두번째는 능력도 없고 의욕도 없는 사람</li>
 <li>마지막이 능력도 있고 욕심도 있는 사람</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_my9V" id="�덕장">덕장<a href="https://gracefullight.dev/en/2024/12/03/han-feizi/#%EB%8D%95%EC%9E%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_my9V" id="덕장">덕장<a href="https://gracefullight.dev/en/2024/12/03/han-feizi/#%EB%8D%95%EC%9E%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>리더가 부하들을 따듯하고 세심하게 포용하면서 능력을 발휘하게끔 한다.</li>
 <li>사람들이 기만당하게 되는 많은 부분은 자신이 잘 아는 분야에서 전문가인 것을 자만하다가 오히려 확인을 섣불리 한다.</li>
@@ -291,7 +315,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_my9V" id="sp-인증-구성요소">SP 인증 구성요소<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>영역</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로젝트 관리</td><td>프로젝트 계획 수립, 통제, 협력업체 관리</td><td>계획 수립, 일정 관리, 리스크 관리</td></tr><tr><td>개발</td><td>요구사항 관리, 분석, 설계, 구현, 테스트</td><td>기능 명세, 코드 품질, 단위 테스트</td></tr><tr><td>지원</td><td>품질 보증, 형상 관리, 측정 및 분석</td><td>형상 베이스라인, QA 프로세스, 데이터 분석</td></tr><tr><td>조직 관리</td><td>조직 프로세스 관리, 구성원 교육</td><td>프로세스 성숙도, 교육 이수, 인재 양성</td></tr><tr><td>프로세스 개선</td><td>조직 성과 관리, 문제 해결, 프로세스 개선 관리</td><td>성과 지표, 지속적 개선, 프로세스 성과</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_my9V" id="sp-인증등급">SP 인증등급<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_my9V" id="sp-인증등��급">SP 인증등급<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>등급</th><th>영역</th><th>설명</th></tr></thead><tbody><tr><td>1등급</td><td>심사대상 아님</td><td>프로젝트 성공여부와 관계 없이 특정 프로젝트를 수행할 수 잇는 수준, 역량 개선 필요</td></tr><tr><td>2등급</td><td>프로젝트 관리, 개발, 지원</td><td>개별 프로젝트를 수행하기 위해 프로세스 수립, 이를 기반으로 프로젝트를 통제하여 성공적 수행 가능</td></tr><tr><td>3등급</td><td>프로세스 관리, 조직관리, 프로젝트 관리, 개발, 지원</td><td>조직 프로세스 체계 정의, 정량적인 데이터 관리로 일관된 품질 수준의 프로젝트 수행 가능, 지속적 프로세스 개선 가능</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_my9V" id="sp-인증-문제점과-해결방안">SP 인증 문제점과 해결방안<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>문제점</th><th>해결방안</th><th>기대효과</th></tr></thead><tbody><tr><td>SP인증심사 혜택 확대</td><td>SP인증기업 프로젝트 수주 우대 등 혜택</td><td>참여기업증가, 제도 활성화</td></tr><tr><td>지속홍보 및 전문가 교육</td><td>지속적 심사 홍보, 기업 SW품질 담당 육성</td><td>인증제도 인식 확대, 역량 강화</td></tr><tr><td>컨설팅 등 서비스 부족</td><td>SP인증 준비 기업 사전 지원 서비스</td><td>기업 어려움 완화, 인증 성공률 강화</td></tr><tr><td>인증 시간, 노력, 비용 부담</td><td>SP인증 개선 토론, 설문조사</td><td>인증과정 효율성 향상</td></tr><tr><td>SP인증 심사원 부족</td><td>기술사 등 인력풀 활용, 전문교육</td><td>심사원 확보로 인증 적체 해소</td></tr></tbody></table>]]></content>
@@ -509,32 +533,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-management" term="pe/it-management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ISO 20000, ITSM]]></title>
-        <id>https://gracefullight.dev/en/pe/mng/iso-20000-itsm/</id>
-        <link href="https://gracefullight.dev/en/pe/mng/iso-20000-itsm/"/>
-        <updated>2024-11-02T02:56:29.541Z</updated>
-        <summary type="html"><![CDATA[ISO 20000, Information Technology Service Management]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_my9V" id="iso-20000-개념">ISO 20000 개념<a href="https://gracefullight.dev/en/pe/mng/iso-20000-itsm/#iso-20000-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>IT 서비스의 품질 보장을 목표로 한 프로세스 기반의 관리 방법</li>
-<li>서비스 품질 향상, 고객 만족도 증가, IT관리 비용절감, IT관리 리스크 절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_my9V" id="iso-20000-itsm-개념도">ISO 20000, ITSM 개념도<a href="https://gracefullight.dev/en/pe/mng/iso-20000-itsm/#iso-20000-itsm-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>기업 IT 인프라 및 서비스 전체 수명주기 관리, 지원을 위해 ITIL에 기반한 ITSM 활용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_my9V" id="itsm-도입-기대효과">ITSM 도입 기대효과<a href="https://gracefullight.dev/en/pe/mng/iso-20000-itsm/#itsm-%EB%8F%84%EC%9E%85-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>기대효과</th><th>설명</th></tr></thead><tbody><tr><td>Standard</td><td>서비스 품질 향상</td><td>표준화된 프로세스와 자동화</td></tr><tr><td>Process</td><td>운영 효율성 증대</td><td>프로세스 간소화 및 자동화</td></tr><tr><td>Organization</td><td>협업 강화, 책임 명확화</td><td>명확한 R&amp;R, 커뮤니케이션 비용 절감</td></tr><tr><td>Technology</td><td>비용 절감, 다운타임 감소</td><td>IT 운영비용 절감, 빠른 이슈 해결</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_my9V" id="iso-20000-개정사항">ISO 20000 개정사항<a href="https://gracefullight.dev/en/pe/mng/iso-20000-itsm/#iso-20000-%EA%B0%9C%EC%A0%95%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>개정사항</th><th>설명</th></tr></thead><tbody><tr><td>리스크 중심</td><td>리스크 기반 사고 요구</td><td>리스크 관리 중요성 강조</td></tr><tr><td>-</td><td>단계별 리스크 고려</td><td>단계별 리스크 체계적 관리</td></tr><tr><td>경영진 의지</td><td>경영진 도입 의지 강조</td><td>경영진 참여와 지원 강화</td></tr><tr><td>-</td><td>수명주기 강조</td><td>서비스 수명주기 일관성 유지</td></tr><tr><td>신규 항목</td><td>지식 관리 추가</td><td>지식 관리 체계화로 품질 향상</td></tr><tr><td>-</td><td>서비스 카탈로그 관리 추가</td><td>서비스 목록과 정보 관리 강화</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="me" term="me"/>
     </entry>
 </feed>
