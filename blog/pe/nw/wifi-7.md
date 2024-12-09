@@ -25,7 +25,7 @@ graph TB
   end
 
   subgraph PHY레이어
-    320MHz대역폭
+    혼합빔포밍
     4096-QAM
     Preamble/Puncturing
   end
