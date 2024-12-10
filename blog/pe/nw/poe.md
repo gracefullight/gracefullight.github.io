@@ -7,7 +7,6 @@ authors: me
 tags:
   - pe
   - pe/nw
-  - pe/134
 ---
 
 ## PoE 개념
@@ -53,8 +52,9 @@ graph LR
 
 | 구분 | 내용 | 비고 |
 |---|---|---|
-| PSE (Power Sourcing Equipment) | 전력을 공급하는 장비 | PoE 스위치, PoE 인젝터 |
-| PD (Powered Device) | 전력을 받는 장비 | IP 카메라, 무선 AP, VoIP 전화기 등 |
+| PSE (Power Sourcing Equipment) | 데이터를 전송하면서 전력을 공급하는 장치 | PoE 스위치, PoE 인젝터 |
+| PD (Powered Device) | 네트워크 연결과 동시에 전력을 공급받는 장치 | IP 카메라, 무선 AP, VoIP 전화기 등 |
+| 이더넷케이블 | 데이터와 전력을 동시 전달하는 매개체 | Cat5, Cat6, Cat7 |
 
 ### PoE 적용방안
 
