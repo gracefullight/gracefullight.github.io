@@ -31,7 +31,7 @@ graph LR
 | --- | --- | --- |
 | 1. SQL Parser | 쿼리파싱, 구문분석, 구문트리생성 | 문법 검사 |
 | 2. Query Transformer | 쿼리 변환 하의 최적화 가능성 제고 | 쿼리 재작성 |
-| 3. Plan Generator | ㅇ여러 가능한 실행 계획 생성 | 조인, 인덱스 경로 |
+| 3. Plan Generator | 여러 가능한 실행 계획 생성 | 조인, 인덱스 경로 |
 | 4. Cost Estimator | 각 실행 계획 예상 비용 계산 | 통계 저장, 참조 |
 | 5. Plan Selector | 가장 낮은 비용 실행 계획 선택, 실행 | RBO, CBO 방식 |
 
