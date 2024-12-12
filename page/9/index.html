@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.45ac696a.css">
-<script src="/assets/js/runtime~main.eca0e9c6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e286acb0.js" defer="defer"></script>
 <script src="/assets/js/main.603e7b3a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -102,7 +102,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LqpC" id="옵티마이저-구성도">옵티마이저 구성도<a href="#옵티마이저-구성도" class="hash-link" aria-label="옵티마이저 구성도에 대한 직접 링크" title="옵티마이저 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_LqpC" id="옵티마이저-구성요소">옵티마이저 구성요소<a href="#옵티마이저-구성요소" class="hash-link" aria-label="옵티마이저 구성요소에 대한 직접 링크" title="옵티마이저 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. SQL Parser</td><td>쿼리파싱, 구문분석, 구문트리생성</td><td>문법 검사</td></tr><tr><td>2. Query Transformer</td><td>쿼리 변환 하의 최적화 가능성 제고</td><td>쿼리 재작성</td></tr><tr><td>3. Plan Generator</td><td>ㅇ여러 가능한 실행 계획 생성</td><td>조인, 인덱스 경로</td></tr><tr><td>4. Cost Estimator</td><td>각 실행 계획 예상 비용 계산</td><td>통계 저장, 참조</td></tr><tr><td>5. Plan Selector</td><td>가장 낮은 비용 실행 계획 선택, 실행</td><td>RBO, CBO 방식</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. SQL Parser</td><td>쿼리파싱, 구문분석, 구문트리생성</td><td>문법 검사</td></tr><tr><td>2. Query Transformer</td><td>쿼리 변환 하의 최적화 가능성 제고</td><td>쿼리 재작성</td></tr><tr><td>3. Plan Generator</td><td>여러 가능한 실행 계획 생성</td><td>조인, 인덱스 경로</td></tr><tr><td>4. Cost Estimator</td><td>각 실행 계획 예상 비용 계산</td><td>통계 저장, 참조</td></tr><tr><td>5. Plan Selector</td><td>가장 낮은 비용 실행 계획 선택, 실행</td><td>RBO, CBO 방식</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LqpC" id="rbo-cbo-비교">RBO, CBO 비교<a href="#rbo-cbo-비교" class="hash-link" aria-label="RBO, CBO 비교에 대한 직접 링크" title="RBO, CBO 비교에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>RBO</th><th>CBO</th></tr></thead><tbody><tr><td>최적화 기준</td><td>고정된 규칙 사용</td><td>실행 비용 추정</td></tr><tr><td>결정자</td><td>인덱스 구조, 연산자, 조건 등</td><td>레코드 블록 수, 평균 행 길이, 인덱스 높이, 컬럼 수 분포, 디스크 I/O</td></tr><tr><td>특징</td><td>실행 계획 예측 용이</td><td>저장된 통계 정보 활용</td></tr><tr><td>장점</td><td>규칙 단순, 빠른 최적화</td><td>더 효율적인 실행 계획 수립</td></tr><tr><td>단점</td><td>복잡한 쿼리 최적화 어려움, 규칙 관리 필요</td><td>통계 정보 부정확할시 오류 발생</td></tr></tbody></table>
 <ul>
