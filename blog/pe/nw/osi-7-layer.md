@@ -70,7 +70,7 @@ tags:
 
 ## OSI 7 레이어와 TCP/IP와의 비교
 
-| TCP/IP 비교                            | 프로토콜 구조                                     |
+| TCP/IP 비교 | 프로토콜 구조 |
 | -------------------------------------- | ------------------------------------------------- |
 | ![tcp/ip](/img/pe/osi-tcp-hybrid.webp) | ![tcp/ip protocol](/img/pe/osi-tcp-protocol.webp) |
 
