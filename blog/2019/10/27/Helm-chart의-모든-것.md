@@ -141,7 +141,7 @@ helm install stable/redis --version 3.6.0 \
 ### get
 
 `helm get 릴리즈명`
-설치된 릴리스 상ㅇ세 정보를 yaml 으로 출력
+설치된 릴리스 상세 정보를 yaml 으로 출력
 
 - --revision: 릴리즈 리비전 확인
 
