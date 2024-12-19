@@ -85,7 +85,7 @@ graph LR
       동기화
     end
 
-    subgraph 데이터전송측면ㄴ
+    subgraph 데이터전송측면
       캡슐화
       멀티플렉싱
     end
