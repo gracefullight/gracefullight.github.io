@@ -4,10 +4,61 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 19 Dec 2024 14:08:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Dec 2024 14:25:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[HDLC 프로토콜]]></title>
+            <link>https://gracefullight.dev/pe/nw/hdlc-protocol/</link>
+            <guid>https://gracefullight.dev/pe/nw/hdlc-protocol/</guid>
+            <pubDate>Fri, 20 Dec 2024 14:25:23 GMT</pubDate>
+            <description><![CDATA[High-Level Data Link Control Protocol]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_KBwT" id="hdlc-프로토콜-개념">HDLC 프로토콜 개념<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="HDLC 프로토콜 개념에 대한 직접 링크" title="HDLC 프로토콜 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>일대일, 일대다 연결 환경에서 비트프레임 구조의 데이터를 송수신하는 데이터링크 계층 ISO13239 표준 프로토콜</li>
+<li>비트지향 프로토콜, 동기식 전송, 다양한 토폴로지 지원, 오류제어, 흐름제어, 모드 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_KBwT" id="hdlc-프레임-구조-동작-모드">HDLC 프레임 구조, 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 구조, 동작 모드에 대한 직접 링크" title="HDLC 프레임 구조, 동작 모드에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_KBwT" id="hdlc-프레임-구조">HDLC 프레임 구조<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="HDLC 프레임 구조에 대한 직접 링크" title="HDLC 프레임 구조에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>필드</th><th>길이</th><th>설명</th></tr></thead><tbody><tr><td>Flag</td><td>8</td><td>프레임 시작, 종료 표시, 01111110<sub>2</sub></td></tr><tr><td>Address</td><td>8</td><td>일대다 주국, 종국 주소, 일대일 명령, 응답 구분</td></tr><tr><td>Control</td><td>8</td><td>프레임 종류, 제어 정보, 송수신 순서번호</td></tr><tr><td>Data</td><td>가변</td><td>L3 계층이 송신한 패킷 데이터</td></tr><tr><td>FCS</td><td>16</td><td>오류제어, CRC-16 기반 오류 검출 코드</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_KBwT" id="hdlc-프레임-동작-모드">HDLC 프레임 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 동작 모드에 대한 직접 링크" title="HDLC 프레임 동작 모드에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_KBwT" id="nrm-normal-response-mode">NRM (Normal Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#nrm-normal-response-mode" class="hash-link" aria-label="NRM (Normal Response Mode)에 대한 직접 링크" title="NRM (Normal Response Mode)에 대한 직접 링크">​</a></h4>
+<blockquote>
+<p>정규응답모드</p>
+</blockquote>
+<!-- -->
+<ul>
+<li>주국/종국 구분 동작</li>
+<li>종국은 주국의 폴링 요청에만 응답</li>
+<li>종국은 프레임 전송 후 다시 허가 대기</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_KBwT" id="arm-asynchronous-response-mode">ARM (Asynchronous Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#arm-asynchronous-response-mode" class="hash-link" aria-label="ARM (Asynchronous Response Mode)에 대한 직접 링크" title="ARM (Asynchronous Response Mode)에 대한 직접 링크">​</a></h4>
+<blockquote>
+<p>비동기응답모드</p>
+</blockquote>
+<!-- -->
+<ul>
+<li>종국은 주국 승인 없이 비동기적 응답 가능</li>
+<li>종국의 모든 전송은 주국으로 전송되어 최종 목적지로 중계</li>
+<li>실제로 거의 사용되지 않음</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_KBwT" id="abm-asynchronous-balanced-mode">ABM (Asynchronous Balanced Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#abm-asynchronous-balanced-mode" class="hash-link" aria-label="ABM (Asynchronous Balanced Mode)에 대한 직접 링크" title="ABM (Asynchronous Balanced Mode)에 대한 직접 링크">​</a></h4>
+<blockquote>
+<p>비동기균형모드</p>
+</blockquote>
+<!-- -->
+<ul>
+<li>복합국은 동등한 권한을 가짐</li>
+<li>양쪽에서 명령/응답 전송 가능</li>
+<li>폴링 오버헤드가 없어 P2P 환경에서 가장 많이 사용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_KBwT" id="hdlc-이더넷-비교">HDLC, 이더넷 비교<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%EC%9D%B4%EB%8D%94%EB%84%B7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="HDLC, 이더넷 비교에 대한 직접 링�크" title="HDLC, 이더넷 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>HDLC</th><th>이더넷</th></tr></thead><tbody><tr><td>네트워크 환경</td><td>WAN 환경</td><td>LAN 환경</td></tr><tr><td>데이터 구조</td><td>비트 중심</td><td>프레임 중심</td></tr><tr><td>송수신 형식</td><td>동기식, 비동기 모드 지원</td><td>비동기식</td></tr><tr><td>표준</td><td>ISO 13239</td><td>IEEE 802.3</td></tr><tr><td>주소체계</td><td>Address 필드</td><td>MAC 주소</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[네트워크 프로토콜]]></title>
             <link>https://gracefullight.dev/pe/nw/network-protocol/</link>
@@ -479,33 +530,6 @@
 <h2 class="anchor anchorWithStickyNavbar_KBwT" id="it-직무제-개선-방안">IT 직무제 개선 방안<a href="https://gracefullight.dev/pe/mng/it-%EC%A7%81%EB%AC%B4%EC%A0%9C-sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C/#it-%EC%A7%81%EB%AC%B4%EC%A0%9C-%EA%B0%9C%EC%84%A0-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="IT 직무제 개선 방안에 대한 직접 링크" title="IT 직무제 개선 방안에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>개선 방안</th><th>내용</th></tr></thead><tbody><tr><td>현장 저항감</td><td>현장 교육, 워크숍, 파일럿 프로그램, 단계적 도입 고려</td><td>현장 요구사항 반영</td></tr><tr><td>직무 정의 모호성</td><td>용어 정의 개선, 직업 예시 제공</td><td>직무별 역량 세부 정의</td></tr><tr><td>학위 유관성</td><td>다양한 기술, 역량 가진 인재 우대</td><td>학위 이외 역량 인정</td></tr><tr><td>평균 임금 데이터 오류</td><td>직무별 표본 확보, SW기술자 등급제와의 매핑, SW사업 기여도 따른 가중치 적용</td><td>실제 임금과의 연계성 강화</td></tr></tbody></table>
 <p>`</p>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-management</category>
-        </item>
-        <item>
-            <title><![CDATA[AHP, 계층화 분석법]]></title>
-            <link>https://gracefullight.dev/pe/mng/ahp/</link>
-            <guid>https://gracefullight.dev/pe/mng/ahp/</guid>
-            <pubDate>Sat, 02 Nov 2024 13:30:12 GMT</pubDate>
-            <description><![CDATA[Analytic Hierarchy Process]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_KBwT" id="ahp-개념">AHP 개념<a href="https://gracefullight.dev/pe/mng/ahp/#ahp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="AHP 개념에 대한 직접 링크" title="AHP 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>의사결정과정을 목표, 기준, 대안 등의 계층으로 구조화한 뒤 쌍대비교하여 도출된 객관적이고 정량적인 결과값을 통해 의사결정을 지원하는 방법론</li>
-<li>계측적 구조화, 우선순위 도출, 일관성 검토, 계층요소 비교</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_KBwT" id="ahp-프로세스-상세-설명-도입-효과">AHP 프로세스, 상세 설명, 도입 효과<a href="https://gracefullight.dev/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="AHP 프로세스, 상세 설명, 도입 효과에 대한 직접 링크" title="AHP 프로세스, 상세 설명, 도입 효과에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_KBwT" id="ahp-프로세스">AHP 프로세스<a href="https://gracefullight.dev/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" class="hash-link" aria-label="AHP 프로세스에 대한 직접 링크" title="AHP 프로세스에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>계층 분리, 쌍대비교 후 도출된 우선순위를 통해 일관성 검사 진행하여 최종 의사 결정 사안 도출</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_KBwT" id="ahp-프로세스-설명">AHP 프로세스 설명<a href="https://gracefullight.dev/pe/mng/ahp/#ahp-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="AHP 프로세스 설명에 대한 직접 링크" title="AHP 프로세스 설명에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단계</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>1. 계층화</td><td>관련 요소식별 및 선정, 단계별 계층 구조 형성</td><td>문제 목표와 세부 평가기준 설정</td></tr><tr><td>2. 쌍대비교</td><td>각 계층의 요소들을 쌍으로 비교하여 상대적 중요도 평가</td><td>1~9단계 점수, 비교 행렬 작성</td></tr><tr><td>3. 부분 우선순위</td><td>쌍대비교 결과 표준화, 각 요소 가중치 계산</td><td>우선순위 벡터</td></tr><tr><td>4. 일관성 검토</td><td>평가 일관성 검증, 판단 신뢰성 제고</td><td>일관성 비율(CR) 1 미만</td></tr><tr><td>5. 최종 우선순위</td><td>최종 종합 가중치 계산, 의사결정 수행</td><td>최적 대안 선정</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_KBwT" id="ahp-도입-효과">AHP 도입 효과<a href="https://gracefullight.dev/pe/mng/ahp/#ahp-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="AHP 도입 효과에 대한 직접 링크" title="AHP 도입 효과에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>도입 효과</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>다기준 의사결정 지원</td><td>다양한 평가 기준 분석을 통한 최적 대안 도출</td><td>비용, 품질, 납기 등</td></tr><tr><td>의사결정의 일관성 확보</td><td>쌍비교 통한 상대적 중요도 평가</td><td>평가 신뢰성 강화</td></tr><tr><td>정량적 및 정성적 요소 통합</td><td>데이터와 정성적 요소를 고려한 종합적 평가</td><td>전문가 판단 수용</td></tr><tr><td>우선순위 설정의 명확성</td><td>각 대안 우선순위 도출 후 전략 수립</td><td>자원 배분 최적화</td></tr><tr><td>투명한 의사결정 과정</td><td>계층 구조와 평과 과정을 통한 이해관계자 신뢰 증진</td><td>투명성, 신뢰성 강화</td></tr></tbody></table>
-<ul>
-<li>SCM, TPRM 등 공급업체의 가격, 품질, 납기, 유연성, 신뢰성, 보안성, 리스크 등 다양한 평가기준을 종합적으로 평가할 때 활용</li>
-</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
         </item>
