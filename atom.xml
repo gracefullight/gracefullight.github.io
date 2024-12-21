@@ -2,11 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-12-21T09:04:45.061Z</updated>
+    <updated>2024-12-21T09:21:11.642Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ICMP, IGMP]]></title>
+        <id>https://gracefullight.dev/pe/nw/icmp-igmp/</id>
+        <link href="https://gracefullight.dev/pe/nw/icmp-igmp/"/>
+        <updated>2024-12-21T09:21:11.642Z</updated>
+        <summary type="html"><![CDATA[Internet Control Message Protocol, Internet Group Management Protocol]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-개념-구성도">ICMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 개념, 구성도에 대한 직접 링크" title="ICMP 개념, 구성도에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-개념">ICMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="ICMP 개념에 대한 직접 링크" title="ICMP 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>IP 패킷을 전송하는 과정에서 발생하는 오류 및 제어 메시지를 처리하기 위한 프로토콜</li>
+<li>Ping(Echo Request/Reply), Destination Unreachable 등 네트워크 진단 및 관리에 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-패킷-구성도">ICMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 패킷 구성도에 대한 직접 링크" title="ICMP 패킷 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>크기</th><th>설명</th></tr></thead><tbody><tr><td>Type</td><td>8</td><td>ICMP 메시지 유형<br>0=Echo Reply, 8=Echo Request, 3=Dest. Unreachable 등</td></tr><tr><td>Code</td><td>8</td><td>Type에 따른 세부 코드</td></tr><tr><td>Checksum</td><td>16</td><td>ICMP 헤더+데이터를 합한 오류 검출을 위한 체크섬</td></tr><tr><td>Rest of Header</td><td>32 이상</td><td>Type, Code 조합에 따라 식별자, 시퀀스 등 추가 정보</td></tr><tr><td>Data</td><td>가변</td><td>ICMP 메시지의 실제 데이터</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-개념-구성도">IGMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 개념, 구성도에 대한 직접 링크" title="IGMP 개념, 구성도에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-개념">IGMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IGMP 개념에 대한 직접 링크" title="IGMP 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>호스트와 라우터가 멀티캐스트 그룹에 대한 가입(Join)과 탈퇴(Leave) 등을 관리하기 위한 프로토콜</li>
+<li>멀티캐스트 통신을 효율적으로 지원하기 위해 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-패킷-구성도">IGMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 패킷 구성도에 대한 직접 링크" title="IGMP 패킷 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>크기</th><th>설명</th></tr></thead><tbody><tr><td>Type</td><td>8</td><td>IGMP 메시지 유형<br>0x11=Membership Query, 0x16=Membership Report v2, 0x17=Leave Group 등</td></tr><tr><td>Max Resp Time</td><td>8</td><td>Membership Query에 대한 최대 응답 시간</td></tr><tr><td>Checksum</td><td>16</td><td>IGMP 헤더 전체에 대한 오류 검출을 위한 체크섬</td></tr><tr><td>Group Address</td><td>32</td><td>멀티캐스트 그룹 주소<br>General Query 시 0.0.0.0, 특정 그룹 쿼리 시 해당 멀티캐스트 주소</td></tr></tbody></table>
+<ul>
+<li>IGMP V3에서는 소스별 멀티캐스트 트래픽 관리 기능이 추가되어 Number of Sources와 Source Address 필드가 추가됨</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-igmp-비교">ICMP, IGMP 비교<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-igmp-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="ICMP, IGMP 비교에 대한 직접 링크" title="ICMP, IGMP 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>ICMP</th><th>IGMP</th></tr></thead><tbody><tr><td>목적</td><td>IP 패킷 전송 오류 및 제어 메시지 처리</td><td>멀티캐스트 그룹 가입/탈퇴 관리</td></tr><tr><td>유형</td><td>Echo Request/Reply, Dest. Unreachable 등</td><td>Membership Query, Membership Report, Leave Group 등</td></tr><tr><td>계층</td><td>네트워크 계층</td><td>네트워크 계층</td></tr><tr><td>사례</td><td>Ping, Traceroute</td><td>IPTV, 온라인 게임 등 멀티캐스트 서비스</td></tr><tr><td>데이터전송</td><td>오류, 제어 메세지 전송<br>데이터 페이로드는 네트워크 진단용</td><td>그룹 멤버십 정보 전송<br>실제 멀티캐스트 데이터는 UDP, RTP 상위 프로토콜 사용</td></tr><tr><td>보안 취약점</td><td>Ping Flooding, DDoS 등</td><td>IGMP Spoofing, IGMP Flooding 등</td></tr><tr><td>특징</td><td>일부 환경에서 ICMP 차단하여 진단 제약 발생 가능</td><td>그룹별, 소스별 트래픽 구분하여 필요 트래픽 전달 가능</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/network" term="pe/network"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[네트워크 실시간 측위]]></title>
         <id>https://gracefullight.dev/pe/nw/network-realtime-kinematic/</id>
@@ -510,72 +546,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/software-engineering" term="pe/software-engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[병렬컴퓨팅, 병렬 프로세서]]></title>
-        <id>https://gracefullight.dev/pe/ca/parallel-computing/</id>
-        <link href="https://gracefullight.dev/pe/ca/parallel-computing/"/>
-        <updated>2024-11-09T01:53:08.126Z</updated>
-        <summary type="html"><![CDATA[Parallel Computing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="병렬-컴퓨팅-개념">병렬 컴퓨팅 개념<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EB%B3%91%EB%A0%AC-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="병렬 컴퓨팅 개념에 대한 직접 링크" title="병렬 컴퓨팅 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>프로그램 내 계산 영역을 여러 개로 나누어 각 계산을 여러 프로세서에서 동시 수행하는 기술</li>
-<li>생성형 AI 발전, GPU 품귀, 단일 프로세서 한계</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="병렬-컴퓨팅-특징">병렬 컴퓨팅 특징<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EB%B3%91%EB%A0%AC-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="병렬 컴퓨팅 특징에 대한 직접 링크" title="병렬 컴퓨팅 특징에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>특징</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>실행시간 단축</td><td>Wall clock time 단축</td></tr><tr><td>-</td><td>작업 동시 수행</td><td>HW, SW 측면 작업 분할</td></tr><tr><td>유형</td><td>작업 단위 병렬성</td><td>다수 독립 작업 프로그램</td></tr><tr><td>-</td><td>태스크 단위 병렬성</td><td>서로 다른 기능 태스크</td></tr><tr><td>-</td><td>스레드 단위 병렬성</td><td>동시 처리 스레드</td></tr><tr><td>-</td><td>명령어 단위 병렬성</td><td>어셈블리 명령어</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="병렬-프로세서의-분류">병렬 프로세서의 분류<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EB%B3%91%EB%A0%AC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%9D%98-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="병렬 프로세서의 분류에 대한 직접 링크" title="병렬 프로세서의 분류에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="flynn의-분류">Flynn의 분류<a href="https://gracefullight.dev/pe/ca/parallel-computing/#flynn%EC%9D%98-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="Flynn의 분류에 대한 직접 링크" title="Flynn의 분류에 대한 직접 �링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="sisd">SISD<a href="https://gracefullight.dev/pe/ca/parallel-computing/#sisd" class="hash-link" aria-label="SISD에 대한 직접 링크" title="SISD에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>명령어 순차처리</li>
-<li>단일 프로세서 시스템</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="simd">SIMD<a href="https://gracefullight.dev/pe/ca/parallel-computing/#simd" class="hash-link" aria-label="SIMD에 대한 직접 링크" title="SIMD에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>하나의 제어 유닛으로 동기화</li>
-<li>벡터, 행렬 연산 처리</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="misd">MISD<a href="https://gracefullight.dev/pe/ca/parallel-computing/#misd" class="hash-link" aria-label="MISD에 대한 직접 링크" title="MISD에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>프로세서 처리 결과로 연산 수행</li>
-<li>실제 구현 불가</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="mimd">MIMD<a href="https://gracefullight.dev/pe/ca/parallel-computing/#mimd" class="hash-link" aria-label="MIMD에 대한 직접 링크" title="MIMD에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>각 프로세서가 비동기적 처리</li>
-<li>강결합시 공유메모리 사용</li>
-<li>약결합시 분산메모리와 메시지 패싱 기법 사용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="시스템-구성-방법에-따른-분류">시스템 구성 방법에 따른 분류<a href="https://gracefullight.dev/pe/ca/parallel-computing/#%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%84%B1-%EB%B0%A9%EB%B2%95%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="시스템 구성 방법에 따른 분류에 대한 직접 링크" title="시스템 구성 방법에 따른 분류에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="smp">SMP<a href="https://gracefullight.dev/pe/ca/parallel-computing/#smp" class="hash-link" aria-label="SMP에 대한 직접 링크" title="SMP에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>프로그래밍 용이</li>
-<li>메모리 접근 병목</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="mpp">MPP<a href="https://gracefullight.dev/pe/ca/parallel-computing/#mpp" class="hash-link" aria-label="MPP에 대한 직접 링크" title="MPP에 대한 직�접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>프로그래밍 복잡</li>
-<li>낮은 가용성</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="numa">NUMA<a href="https://gracefullight.dev/pe/ca/parallel-computing/#numa" class="hash-link" aria-label="NUMA에 대한 직접 링크" title="NUMA에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>장점 결합</li>
-<li>분산 로컬 메모리, 글로벌 메모리 사용</li>
-<li>다양한 프로세서 사용 가능</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
     </entry>
 </feed>
