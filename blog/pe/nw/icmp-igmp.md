@@ -95,6 +95,26 @@ graph LR
 
 - IGMP V3에서는 소스별 멀티캐스트 트래픽 관리 기능이 추가되어 Number of Sources와 Source Address 필드가 추가됨
 
+## IGMP 가입 절차도, 세부 절차
+
+### IGMP 가입 절차도
+
+```mermaid
+flowchart LR
+  A[그룹 가입<br>Host -> Report] --> B[멤버십 모니터링<br>Router -> Query]
+  B --> C[멤버십 응답<br>Host -> Report]
+  C --> D[멤버십 탈퇴<br>Host -> Leave]
+```
+
+### IGMP 가입 세부 절차
+
+| 단계 | 설명 | 비고 |
+| --- | --- | --- |
+| 1. 그룹 가입 | 호스트가 새 멀티캐스트 그룹에 참여하고자 할 때 라우터에 가입 알림 전송 | Membership Report |
+| 2. 멤버십 모니터링 | 라우터는 주기적으로 Query 메시지를 전송, 현재 그룹을 계속 사용하는 호스트가 있는지 확인 | Membership Query |
+| 3. 멤버십 응답 | 호스트는 Query에 응답하여 아직 그룹이 필요함을 알림, 무응답 시 라우터는 더 이상 호스트가 없음 판단 | Membership Report |
+| 4. 멤버십 탈퇴 | 호스트가 멀티캐스트 수신을 중단하고 싶으면 Leave Group 메시지 전송 | Leave Group |
+
 ## ICMP, IGMP 비교
 
 | 구분 | ICMP | IGMP |
