@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 20 Dec 2024 14:25:23 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Dec 2024 08:46:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[TCP 핸드쉐이킹]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/tcp-handshaking/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/tcp-handshaking/</guid>
+            <pubDate>Sat, 21 Dec 2024 08:46:49 GMT</pubDate>
+            <description><![CDATA[Transmission Control Protocol's handshaking]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-개념">TCP 4-way 핸드쉐이킹 개념<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>TCP 장치들 사이에 논리적으로 성립된 연결을 해제하는 프로세스</li>
+<li>데이터 유실 방지, TIME_WAIT 제공</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-과정">TCP 4-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-절차도">TCP 4-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-세부-절차">TCP 4-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>Client</td><td>FIN_WAIT1</td><td>클라이언트가 연결 종료를 위한 FIN 플래그 전송 후 ACK, FIN 수신 대기</td></tr><tr><td>Server</td><td>CLOSE_WAIT</td><td>ACK 전송 후 어플리케이션 종료 대기, Close socket 후 FIN 전송</td></tr><tr><td>Client</td><td>FIN_WAIT2</td><td>서버로부터 FIN 수신 후 ACK 전송, 타이머 시작</td></tr><tr><td>Server</td><td>LAST_ACK</td><td>클라이언트로부터 ACK 수신 후 타이머 시작, 연결 종료</td></tr><tr><td>Client</td><td>TIME_WAIT</td><td>타이머 종료 후 연결 종료, TIME_WAIT 상태로 대기</td></tr><tr><td>-</td><td>CLOSED</td><td>서버, 클라이언트 연결 종료</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-절차도">TCP 3-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-세부-절차">TCP 3-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>Client</td><td>SYN_SENT</td><td>서버에게 연결 요청을 위한 SYN 패킷 전송</td></tr><tr><td>Server</td><td>SYN_RCVD</td><td>클라이언트로부터 SYN 패킷 수신 후 ACK, SYN 패킷 전송</td></tr><tr><td>Client</td><td>ESTABLISHED</td><td>서버로부터 ACK, SYN 패킷 수신 후 ACK 패킷 전송, 연결 성립</td></tr><tr><td>Server</td><td>ESTABLISHED</td><td>클라이언트로부터 ACK 패킷 수신 후 연결 성립</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-제어-플래그-설명">TCP 제어 플래그 설명<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-%EC%A0%9C%EC%96%B4-%ED%94%8C%EB%9E%98%EA%B7%B8-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>제어 플래그</th><th>설명</th></tr></thead><tbody><tr><td>긴급할당</td><td>URG</td><td>송신 측 상위 계층의 긴급 데이터 확인시 1 설정</td></tr><tr><td>확인응답</td><td>ACK</td><td>1 확인번호 유효, 0 확인번호 미포함</td></tr><tr><td>버퍼데이터공간</td><td>PSH</td><td>버퍼링 데이터를 상위 계층으로 즉시 전달</td></tr><tr><td>연결초기화</td><td>RST</td><td>연결 확립된 세션을 강제 리셋 요청</td></tr><tr><td>연결시작</td><td>SYN</td><td>TCP 연결설정 시 순서번호를 동기화</td></tr><tr><td>연결종료</td><td>FIN</td><td>송신 측 연결 종료 요청</td></tr></tbody></table>
+<ul>
+<li>3way는 SYN, SYN+ACK, ACK 사용, 4way는 FIN, ACK 사용</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[HDLC 프로토콜]]></title>
             <link>https://gracefullight.dev/en/pe/nw/hdlc-protocol/</link>
@@ -513,23 +541,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>CSP 및 MSP 선택</td><td>비즈니스 요구사항에 맞는 CSP와 MSP를 선택하여 SLA로 서비스 품질을 보장</td><td>글로벌/국내 CSP 선택</td></tr><tr><td>클라우드 전환 전략</td><td>MSP와 협력하여 장기적인 디지털 전환 전략을 수립하고 데이터 마이그레이션 및 교육을 진행</td><td>단계별 전환 계획</td></tr><tr><td>보안 및 규제 준수</td><td>SRM을 통해 보안 책임을 명확히 하고, MSP의 컨설팅을 통해 규제 준수 체계를 마련</td><td>금융, 의료 등 규제 엄격한 산업에 필수</td></tr><tr><td>비용 최적화</td><td>MSP의 성능 모니터링 및 최적화 방안을 통해 불필요한 자원 낭비 없이 비용 효율성을 확보</td><td>성능 모니터링으로 시스템 가용성 유지</td></tr><tr><td>지속적 개선</td><td>MSP와 협력하여 최신 기술 업데이트와 최적화 작업을 지속적으로 수행하여 경쟁력을 유지</td><td>주기적 리뷰 및 개선</td></tr><tr><td>SLA 관리</td><td>SLA를 통해 가용성, 응답 시간, 문제 해결 시간 등 서비스 수준을 보장하고, 위반 시 보상 조건 설정</td><td>크레딧, 환불 등의 보상 가능</td></tr><tr><td>소버린 클라우드 활용</td><td>데이터 주권과 국가별 규제를 준수하며, 소버린 클라우드를 활용해 특정 국가 내 데이터 저장 및 처리</td><td>법적 규제가 엄격한 산업 필수</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="클라우드-아웃소싱-유형">클라우드 아웃소싱 유형<a href="https://gracefullight.dev/en/pe/mng/cloud-outsourcing/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%EC%9B%83%EC%86%8C%EC%8B%B1-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>이점</th></tr></thead><tbody><tr><td>전체 클라우드 아웃소싱</td><td>IT 서비스 전체를 클라우드로 이전</td><td>핵심 비즈니스 집중</td></tr><tr><td>선택적 클라우드 아웃소싱</td><td>IT 서비스 중 일부만 클라우드로 이전하여 특정 기능이나 업무를 CSP 또는 MSP에 위탁하는 방식</td><td>관리 효율성 향상</td></tr><tr><td>SI + 클라우드 아웃소싱</td><td>시스템 통합(SI) 후 운영을 위한 클라우드 아웃소싱을 통해 구축과 운영을 외부 서비스 제공자에게 위탁하는 방식</td><td>안정적이고 유연한 운영 가능</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-management</category>
-        </item>
-        <item>
-            <title><![CDATA[IT 직무제, SW 기술자 등급제]]></title>
-            <link>https://gracefullight.dev/en/pe/mng/it-직무제-sw-기술자-등급제/</link>
-            <guid>https://gracefullight.dev/en/pe/mng/it-직무제-sw-기술자-등급제/</guid>
-            <pubDate>Sat, 02 Nov 2024 13:40:11 GMT</pubDate>
-            <description><![CDATA[IT 직무제, SW 기술자 등급제]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="it-역량분류-체계-개요">IT 역량분류 체계 개요<a href="https://gracefullight.dev/en/pe/mng/it-%EC%A7%81%EB%AC%B4%EC%A0%9C-sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C/#it-%EC%97%AD%EB%9F%89%EB%B6%84%EB%A5%98-%EC%B2%B4%EA%B3%84-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="sw-기술자-등급제-it-직무제-비교-개선-방안">SW 기술자 등급제, IT 직무제 비교, 개선 방안<a href="https://gracefullight.dev/en/pe/mng/it-%EC%A7%81%EB%AC%B4%EC%A0%9C-sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C/#sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C-it-%EC%A7%81%EB%AC%B4%EC%A0%9C-%EB%B9%84%EA%B5%90-%EA%B0%9C%EC%84%A0-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sw-기술자-등급제-it-직무제-비교">SW 기술자 등급제, IT 직무제 비교<a href="https://gracefullight.dev/en/pe/mng/it-%EC%A7%81%EB%AC%B4%EC%A0%9C-sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C/#sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C-it-%EC%A7%81%EB%AC%B4%EC%A0%9C-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>SW 기술자 등급제</th><th>IT 직무제</th></tr></thead><tbody><tr><td>개념</td><td>학력, 경력 기반 기술자 등급 산정</td><td>국가직무능력표준 기반 직무별 기술자 역량 평가</td></tr><tr><td>평가기준</td><td>학력, 경력, 자격기반</td><td>직무수행능력, 실제업무역량, 자격, 경력 등</td></tr><tr><td>장점</td><td>등급체계 단순</td><td>다양한 평가 기준</td></tr><tr><td>-</td><td>대가산정 용이</td><td>NCS 기반 역량 표준화, 직무 세분화</td></tr><tr><td>단점</td><td>실무 능력 괴리</td><td>새로운 체계에 대한 현장 저항감</td></tr><tr><td>-</td><td>분류기준 한계</td><td>직무정의 모호성으로 인한 혼란</td></tr><tr><td>-</td><td>경력증빙 복잡</td><td>학위 유관성</td></tr><tr><td>-</td><td>비용 부담</td><td>평균 임금 데이터 오류</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="it-직무제-개선-방안">IT 직무제 개선 방안<a href="https://gracefullight.dev/en/pe/mng/it-%EC%A7%81%EB%AC%B4%EC%A0%9C-sw-%EA%B8%B0%EC%88%A0%EC%9E%90-%EB%93%B1%EA%B8%89%EC%A0%9C/#it-%EC%A7%81%EB%AC%B4%EC%A0%9C-%EA%B0%9C%EC%84%A0-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>개선 방안</th><th>내용</th></tr></thead><tbody><tr><td>현장 저항감</td><td>현장 교육, 워크숍, 파일럿 프로그램, 단계적 도입 고려</td><td>현장 요구사항 반영</td></tr><tr><td>직무 정의 모호성</td><td>용어 정의 개선, 직업 예시 제공</td><td>직무별 역량 세부 정의</td></tr><tr><td>학위 유관성</td><td>다양한 기술, 역량 가진 인재 우대</td><td>학위 이외 역량 인정</td></tr><tr><td>평균 임금 데이터 오류</td><td>직무별 표본 확보, SW기술자 등급제와의 매핑, SW사업 기여도 따른 가중치 적용</td><td>실제 임금과의 연계성 강화</td></tr></tbody></table>
-<p>`</p>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-management</category>
         </item>
