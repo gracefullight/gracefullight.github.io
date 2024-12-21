@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 21 Dec 2024 09:21:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Dec 2024 11:49:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Open RAN]]></title>
+            <link>https://gracefullight.dev/en/pe/nw/open-ran/</link>
+            <guid>https://gracefullight.dev/en/pe/nw/open-ran/</guid>
+            <pubDate>Sat, 21 Dec 2024 11:49:12 GMT</pubDate>
+            <description><![CDATA[Open Radio Access Network]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-개념">Open RAN 개념<a href="https://gracefullight.dev/en/pe/nw/open-ran/#open-ran-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>다양한 5G 장비업체 간 호환성, 네트워크 설계 유연성을 위해 기지국 연결 인터페이스와 기지국 OS를 개방하고 표준화한 기술</li>
+<li>기존 RAN의 단점 극복, 5G 네트워크 설계 유연성 확보, 장비업체 간 경쟁 활성화, 통신 기술 발전, 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성도-구성요소-발전과정">Open RAN 구성도, 구성요소, 발전과정<a href="https://gracefullight.dev/en/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성도">Open RAN 구성도<a href="https://gracefullight.dev/en/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성요소">Open RAN 구성요소<a href="https://gracefullight.dev/en/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>Radio Unit</td><td>스마트폰 등 통신장비 주파수를 잡아서 연결, 안테나로 받은 라디오 신호 처리</td><td>RF, Low PHY 처리</td></tr><tr><td>Distributed Unit</td><td>통신장비에서 요청한 데이터를 전송하는 장치, 라디오 신호에서 디지털 신호 분리</td><td>MAC, RLC, High PHY 처리</td></tr><tr><td>Centralized Unit</td><td>네트워크 제어, 사용자 데이터 처리, DU와 CU 간 데이터 전송</td><td>RRC, PDCP 등 프로토콜 활용</td></tr><tr><td>RIC</td><td>인공지능 기반, 로드 밸런싱 기반 CU, DU 관리</td><td>비실시간, 준실시간</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-발전과정">Open RAN 발전과정<a href="https://gracefullight.dev/en/pe/nw/open-ran/#open-ran-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_es5Y" id="레거시-비가상화-사이트">레거시 비가상화 사이트<a href="https://gracefullight.dev/en/pe/nw/open-ran/#%EB%A0%88%EA%B1%B0%EC%8B%9C-%EB%B9%84%EA%B0%80%EC%83%81%ED%99%94-%EC%82%AC%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_es5Y" id="c-ran">C-RAN<a href="https://gracefullight.dev/en/pe/nw/open-ran/#c-ran" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_es5Y" id="v-ran">V-RAN<a href="https://gracefullight.dev/en/pe/nw/open-ran/#v-ran" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_es5Y" id="o-ran">O-RAN<a href="https://gracefullight.dev/en/pe/nw/open-ran/#o-ran" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[ICMP, IGMP]]></title>
             <link>https://gracefullight.dev/en/pe/nw/icmp-igmp/</link>
@@ -82,6 +110,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-세부-절차">TCP 4-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>Client</td><td>FIN_WAIT1</td><td>클라이언트가 연결 종료를 위한 FIN 플래그 전송 후 ACK, FIN 수신 대기</td></tr><tr><td>Server</td><td>CLOSE_WAIT</td><td>ACK 전송 후 어플리케이션 종료 대기, Close socket 후 FIN 전송</td></tr><tr><td>Client</td><td>FIN_WAIT2</td><td>서버로부터 FIN 수신 후 ACK 전송, 타이머 시작</td></tr><tr><td>Server</td><td>LAST_ACK</td><td>클라이언트로부터 ACK 수신 후 타이머 시작, 연결 종료</td></tr><tr><td>Client</td><td>TIME_WAIT</td><td>타이머 종료 후 연결 종료, TIME_WAIT 상태로 대기</td></tr><tr><td>-</td><td>CLOSED</td><td>서버, 클라이언트 연결 종료</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-과정">TCP 3-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-절차도">TCP 3-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-세부-절차">TCP 3-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/en/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -402,7 +431,7 @@
 <li>편안하게 잘 있는 사람을 위태롭게 하는 것</li>
 <li>사랑해야 할 사람을 가까이하지 않고 미워해야 할 자를 멀리하지 않는 것</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="견마최난犬馬最難-귀매최이鬼魅易之">견마최난(犬馬最難), 귀매최이(鬼魅易之)<a href="https://gracefullight.dev/en/2024/12/03/han-feizi/#%EA%B2%AC%EB%A7%88%EC%B5%9C%EB%82%9C%E7%8A%AC%E9%A6%AC%E6%9C%80%E9%9B%A3-%EA%B7%80%EB%A7%A4%EC%B5%9C%EC%9D%B4%E9%AC%BC%E9%AD%85%E6%98%93%EF%BF%BD%EF%BF%BD%E4%B9%8B" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="견마최난犬馬最難-귀매최이鬼魅易之">견마최난(犬馬最難), 귀매최이(鬼魅易之)<a href="https://gracefullight.dev/en/2024/12/03/han-feizi/#%EA%B2%AC%EB%A7%88%EC%B5%9C%EB%82%9C%E7%8A%AC%E9%A6%AC%E6%9C%80%E9%9B%A3-%EA%B7%80%EB%A7%A4%EC%B5%9C%EC%9D%B4%E9%AC%BC%E9%AD%85%E6%98%93%E4%B9%8B" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>그림을 그리더라도 누구나 다 알고 있는 것이 더 그리기 어렵다.</li>
 </ul>
@@ -487,29 +516,6 @@
 <li><mark class="flexible-marker flexible-marker-default">ISO 21448</mark>을 통하여 자율주행시 알려진, 알려지지 않은 시나리오를 평가하여 위험 감소</li>
 <li><mark class="flexible-marker flexible-marker-default">ISO 21434</mark>를 통하여 개발단계의 사이버보안에서부터 사고 대응, 복구, 모니터링 및 공급망 관리 절차 강화</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/software-engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[SP인증, SW 프로세스 품질 인증]]></title>
-            <link>https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/</link>
-            <guid>https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/</guid>
-            <pubDate>Sat, 23 Nov 2024 04:49:49 GMT</pubDate>
-            <description><![CDATA[Software Process Quality Certification]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="sp인증-개념">SP인증 개념<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp%EC%9D%B8%EC%A6%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>SW 프로세스 품질 향상과 신뢰성 확보를 위해 SW 기업 및 개발 조직의 SW 프로세스 품질 역량 수준을 심사하여 등급을 부여하는 제도</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="sp-인증-개념도-구성요소-인증등급">SP 인증 개념도, 구성요소, 인증등급<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%9D%B8%EC%A6%9D%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sp-인증-개념도">SP 인증 개념도<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sp-인증-구성요소">SP 인증 구성요소<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>영역</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>프로젝트 관리</td><td>프로젝트 계획 수립, 통제, 협력업체 관리</td><td>계획 수립, 일정 관리, 리스크 관리</td></tr><tr><td>개발</td><td>요구사항 관리, 분석, 설계, 구현, 테스트</td><td>기능 명세, 코드 품질, 단위 테스트</td></tr><tr><td>지원</td><td>품질 보증, 형상 관리, 측정 및 분석</td><td>형상 베이스라인, QA 프로세스, 데이터 분석</td></tr><tr><td>조직 관리</td><td>조직 프로세스 관리, 구성원 교육</td><td>프로세스 성숙도, 교육 이수, 인재 양성</td></tr><tr><td>프로세스 개선</td><td>조직 성과 관리, 문제 해결, 프로세스 개선 관리</td><td>성과 지표, 지속적 개선, 프로세스 성과</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sp-인증등급">SP 인증등급<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>등급</th><th>영역</th><th>설명</th></tr></thead><tbody><tr><td>1등급</td><td>심사대상 아님</td><td>프로젝트 성공여부와 관계 없이 특정 프로젝트를 수행할 수 잇는 수준, 역량 개선 필요</td></tr><tr><td>2등급</td><td>프로젝트 관리, 개발, 지원</td><td>개별 프로젝트를 수행하기 위해 프로세스 수립, 이를 기반으로 프로젝트를 통제하여 성공적 수행 가능</td></tr><tr><td>3등급</td><td>프로세스 관리, 조직관리, 프로젝트 관리, 개발, 지원</td><td>조직 프로세스 체계 정의, 정량적인 데이터 관리로 일관된 품질 수준의 프로젝트 수행 가능, 지속적 프로세스 개선 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="sp-인증-문제점과-해결방안">SP 인증 문제점과 해결방안<a href="https://gracefullight.dev/en/pe/sw/sw-process-quality-certification/#sp-%EC%9D%B8%EC%A6%9D-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>문제점</th><th>해결방안</th><th>기대효과</th></tr></thead><tbody><tr><td>SP인증심사 혜택 확대</td><td>SP인증기업 프로젝트 수주 우대 등 혜택</td><td>참여기업증가, 제도 활성화</td></tr><tr><td>지속홍보 및 전문가 교육</td><td>지속적 심사 홍보, 기업 SW품질 담당 육성</td><td>인증제도 인식 확대, 역량 강화</td></tr><tr><td>컨설팅 등 서비스 부족</td><td>SP인증 준비 기업 사전 지원 서비스</td><td>기업 어려움 완화, 인증 성공률 강화</td></tr><tr><td>인증 시간, 노력, 비용 부담</td><td>SP인증 개선 토론, 설문조사</td><td>인증과정 효율성 향상</td></tr><tr><td>SP인증 심사원 부족</td><td>기술사 등 인력풀 활용, 전문교육</td><td>심사원 확보로 인증 적체 해소</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/software-engineering</category>
         </item>
