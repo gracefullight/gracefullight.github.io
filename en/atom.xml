@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2024-12-21T11:49:12.290Z</updated>
+    <updated>2024-12-21T12:20:04.321Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[맨체스터 코딩, 차등 맨체스터 코딩]]></title>
+        <id>https://gracefullight.dev/en/pe/nw/manchester-code/</id>
+        <link href="https://gracefullight.dev/en/pe/nw/manchester-code/"/>
+        <updated>2024-12-21T12:20:04.321Z</updated>
+        <summary type="html"><![CDATA[Manchester code and Differential Manchester code]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-개념">맨체스터 코딩 개념<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>각 비트의 중간 시점에 전압 레벨을 반전시켜, 동기화와 오류검출에 이점을 가진 라인코딩 방식</li>
+<li>클록 동기화 용이, 오류 검출 유리, DC(직류성분) 감소, NRZ 대비 대역폭 2배 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-구조도-동작-원리">맨체스터 코딩 구조도, 동작 원리<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-구조도">맨체스터 코딩 구조도<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Manchester code" src="https://gracefullight.dev/en/assets/images/manchester-3986a7b9cbd88b22e5ceec792bb03741.png" width="1975" height="793" class="img_hlsJ"></p>
+<ul>
+<li>비트 중간에서 하향 전이하면 0, 상향 전이하면 1로 부호화</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-동작원리">맨체스터 코딩 동작원리<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<table><thead><tr><th>순서</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>1</td><td>인코더에 데이터 입력</td><td>이진 데이터 입력, 비트별 부호화 수행</td></tr><tr><td>2</td><td>비트상태 변환 및 전송</td><td>0 비트 하향 전이, 1 비트 상향 전이 후 전송</td></tr><tr><td>3</td><td>데이터 신호 해석</td><td>비트 중간 반전 시점 해석, 데이터 추출</td></tr><tr><td>4</td><td>이진 데이터 비트 출력</td><td>추출 데이터를 비트로 출력하여 원 데이터 수신</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="차등-맨체스터-코딩-구조도">차등 맨체스터 코딩 구조도<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EC%B0%A8%EB%93%B1-%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Difference Manchester code" src="https://gracefullight.dev/en/assets/images/differential-manchester-b5227c02deb14e1da8a5f65279369f28.png" width="1975" height="793" class="img_hlsJ"></p>
+<ul>
+<li>0: 시작점에서 전이, 1: 시작점에서 전이 없음, 모든 비트 중간점에서 항상 전이</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-차등-멘체스터-코딩-비교">맨체스터 코딩, 차등 멘체스터 코딩 비교<a href="https://gracefullight.dev/en/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EC%B0%A8%EB%93%B1-%EB%A9%98%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>맨체스터 코딩</th><th>차등 맨체스터 코딩</th></tr></thead><tbody><tr><td>개념</td><td>비트 중간 신호를 상하향 전이, 시간 정보와 데이터 전달 역할 수행</td><td>인접 신호의 변화를 표현하기 위한 차등 인코딩과 맨체스터 코딩 결합</td></tr><tr><td>신호표현</td><td>0: +전압에서 -로 하향 전이<br>1: -전압에서 +로 상향 전이</td><td>0: 비트 시작 전이 없음<br>비트 중간 전이 발생, 1: 비트 시작, 중간 모두 전이</td></tr><tr><td>장점</td><td>설계, 구현 단순<br>에지 검출로 클록 동기화 용이</td><td>빠른 전송 속도<br>극성 반전 없음, 노이즈 강건성</td></tr><tr><td>단점</td><td>낮은 대역폭 효율성</td><td>높은 구현 복잡도, 초기 상태 의존성</td></tr><tr><td>활용 분야</td><td>초기 이더넷, RFID</td><td>Token Ring LAN, 극성 완전 네트워크</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/network" term="pe/network"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open RAN]]></title>
         <id>https://gracefullight.dev/en/pe/nw/open-ran/</id>
@@ -525,37 +559,5 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="me" term="me"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ISO 26262]]></title>
-        <id>https://gracefullight.dev/en/pe/sw/iso-26262/</id>
-        <link href="https://gracefullight.dev/en/pe/sw/iso-26262/"/>
-        <updated>2024-11-23T05:14:32.579Z</updated>
-        <summary type="html"><![CDATA[ISO 26262]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="iso-26262-개념">ISO 26262 개념<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#iso-26262-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>자동차에 탑재된 전기전자시스템의 오작동으로 인해 발생할 수 있는 사고를 방지하기 위한 <mark class="flexible-marker flexible-marker-default">자동차 기능안전 국제 표준</mark></li>
-<li>전기차, 자율주행, E2E AI 등 신기술 도입으로 SW 비준하는 <mark class="flexible-marker flexible-marker-default">전기전자 제어시스템의 안전성 확보</mark> 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="iso-26262-구성도-구성요소">ISO 26262 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#iso-26262-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="iso-26262-구성요소">ISO 26262 구성요소<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#iso-26262-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>파트</th><th>구성요소</th><th>상세설명</th></tr></thead><tbody><tr><td>Part1</td><td>용어</td><td>ISO26262 사용용어 및 약어 정의</td></tr><tr><td>Part2</td><td>기능안전</td><td>프로젝트 전반 안전성 관리 요구사항 정의</td></tr><tr><td>Part3</td><td>구상단계</td><td>위험분석(HARA) 및 안전 목표 설정</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Part4</mark></td><td><mark class="flexible-marker flexible-marker-default">시스템 레벨 제품 개발</mark></td><td>시스템 아키텍처 설계, 기술적 안전 요구사항, 테스트 요구사항</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Part5</mark></td><td><mark class="flexible-marker flexible-marker-default">HW레벨 제품 개발</mark></td><td>HW설계, 아키텍처 평가, 검증 요구사항 정의</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Part6</mark></td><td><mark class="flexible-marker flexible-marker-default">SW레벨 제품 개발</mark></td><td>SW안전 요구사항, ASPICE와 연계하여 SW개발 프로세스 관리</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Part7</mark></td><td><mark class="flexible-marker flexible-marker-default">생산 및 운영</mark></td><td>차량 생산, 운영 중 발생가능한 위험관리와 폐기 안전 절차</td></tr><tr><td>Part8</td><td>지원 프로세스</td><td>형상 관리, 변경 관리, 문서화 등의 지원 절차</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">Part9</mark></td><td><mark class="flexible-marker flexible-marker-default">ASIL 및 안전 중심 분석</mark></td><td>ASIL 평가 방법론과 안전 구성요소 간 종속 조건 정의</td></tr><tr><td>Part10</td><td>가이드라인</td><td>표준 적용 시 참고할 수 있는 추가 가이드라인 제공</td></tr><tr><td>Part11</td><td>반도체 산업 적용 가이드라인</td><td>반도체 제조업체를 위한 세부 정보 제공</td></tr><tr><td>Part12</td><td>모터사이클 적용 요구사항</td><td>모터사이클에 특화된 기능 안전 요구사항</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="asil-평가-절차-asil-등급">ASIL 평가 절차, ASIL 등급<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#asil-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8-asil-%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="asil-평가-절차도">ASIL 평가 절차도<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#asil-%ED%8F%89%EA%B0%80-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="asil-등급">ASIL 등급<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#asil-%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>등급</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>ASIL A</td><td>상대적 낮은 위험, 기본 안전조치 필요</td><td>경상</td></tr><tr><td>ASIL B</td><td>중간 수준 위험, 추가적인 안전조치 필요</td><td>중상</td></tr><tr><td>ASIL C</td><td>높은 위험 수준, 엄격한 안전조치 필요</td><td>사망</td></tr><tr><td>ASIL D</td><td>매우 높은 위험 수준, 최고 수준의 안전조치 필요</td><td>다수 사망</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="자율주행시대의-자동차-안전-고려사항">자율주행시대의 자동차 안전 고려사항<a href="https://gracefullight.dev/en/pe/sw/iso-26262/#%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%9E%90%EB%8F%99%EC%B0%A8-%EC%95%88%EC%A0%84-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li><mark class="flexible-marker flexible-marker-default">ISO 21448</mark>을 통하여 자율주행시 알려진, 알려지지 않은 시나리오를 평가하여 위험 감소</li>
-<li><mark class="flexible-marker flexible-marker-default">ISO 21434</mark>를 통하여 개발단계의 사이버보안에서부터 사고 대응, 복구, 모니터링 및 공급망 관리 절차 강화</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/software-engineering" term="pe/software-engineering"/>
     </entry>
 </feed>
