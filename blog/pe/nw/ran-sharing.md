@@ -46,6 +46,6 @@ graph LR
 | HSS | 가입자 정보 저장 및 관리 | 사업자 간 가입자 공유 가능 |
 | 기지국 | 신호 송수신을 위한 사이트 | 유지보수 비용 분담 |
 
-## RAND Sharing 고려사항
+## RAN Sharing 고려사항
 
 - 3GPP 표준으로 정의된 RAN Sharing 기술 준수 필요
