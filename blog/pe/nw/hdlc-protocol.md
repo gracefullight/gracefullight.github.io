@@ -31,7 +31,7 @@ graph LR
     Control1[Control]
   end
   
-  subgraph Data[Data >= 0]
+  subgraph Data[Data 가변]
     Data1[Data]
   end
   
