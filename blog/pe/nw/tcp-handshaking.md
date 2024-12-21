@@ -51,6 +51,8 @@ sequenceDiagram
 | Client | TIME_WAIT | 타이머 종료 후 연결 종료, TIME_WAIT 상태로 대기 |
 | - | CLOSED | 서버, 클라이언트 연결 종료 |
 
+## TCP 3-way 핸드쉐이킹 과정
+
 ### TCP 3-way 핸드쉐이킹 절차도
 
 ```mermaid
