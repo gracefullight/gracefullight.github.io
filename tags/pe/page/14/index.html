@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.8f848acf.css">
-<script src="/assets/js/runtime~main.a3a53186.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9bcd1039.js" defer="defer"></script>
 <script src="/assets/js/main.7f18ff6f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -70,7 +70,10 @@
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="openflow-구성요소">OpenFlow 구성요소<a href="#openflow-구성요소" class="hash-link" aria-label="OpenFlow 구성요소에 대한 직접 링크" title="OpenFlow 구성요소에 대한 직접 링크">​</a></h3>
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="sdn-강화학습-적용방안">SDN 강화학습 적용방안<a href="#sdn-강화학습-적용방안" class="hash-link" aria-label="SDN 강화학습 적용방안에 대한 직접 링크" title="SDN 강화학습 적용방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">RL 에이전트</mark></td><td>SDN 컨트롤러 내장, 네트워크 상태 관찰, 행동 결정</td><td>보상 최대화 학습</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상태</mark></td><td>트래픽, 링크 상태, QoS, 요구사항 등 네트워크 환경정보</td><td>의사결정시 필요 정보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">행동</mark></td><td>트래픽 경로 결정, QoS 설정, 로드밸런싱 등 네트워크 제어</td><td>RL에이전트 동작 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">보상</mark></td><td>네트워크 성능지표, 지연시간, 지터, 처리량, 패킷손실률 등</td><td>에이전트 행동 피드백</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sdn-강화학습-적용방안-개념도">SDN 강화학습 적용방안 개념도<a href="#sdn-강화학습-적용방안-개념도" class="hash-link" aria-label="SDN 강화학습 적용방안 개념도에 대한 직접 링크" title="SDN 강화학습 적용방안 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sdn-강화학습-적용방안-상세">SDN 강화학습 적용방안 상세<a href="#sdn-강화학습-적용방안-상세" class="hash-link" aria-label="SDN 강화학습 적용방안 상세에 대한 직접 링크" title="SDN 강화학습 적용방안 상세에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">RL 에이전트</mark></td><td>SDN 컨트롤러 내장, 네트워크 상태 관찰, 행동 결정</td><td>보상 최대화 학습</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상태</mark></td><td>트래픽, 링크 상태, QoS, 요구사항 등 네트워크 환경정보</td><td>의사결정시 필요 정보</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">정책</mark></td><td>상태에 따라 최대 보상을 얻기 위한 최적 행동을 결정하는 의사결정 전략</td><td>Q-Learning, DQN, PPO</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">행동</mark></td><td>트래픽 경로 결정, QoS 설정, 로드밸런싱 등 네트워크 제어</td><td>RL에이전트 동작 선택</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">보상</mark></td><td>네트워크 성능지표, 지연시간, 지터, 처리량, 패킷손실률 등</td><td>에이전트 행동 피드백</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="sdn-고력사항">SDN 고력사항<a href="#sdn-고력사항" class="hash-link" aria-label="SDN 고력사항에 대한 직접 링크" title="SDN 고력사항에 대한 직접 링크">​</a></h2>
 <ul>
 <li>SDN 컨트롤러는 SpoF 이므로, 컨트롤러 보안 대비 및 고가용성 확보 필요</li>
