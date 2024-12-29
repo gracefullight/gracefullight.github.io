@@ -84,7 +84,7 @@
     "happy-dom": "^15.11.7",
     "hexo-util": "^3.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "oxlint": "^0.15.3",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^2.12.0",
