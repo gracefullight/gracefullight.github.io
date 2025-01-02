@@ -142,6 +142,7 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="me" term="me"/>
+        <category label="uae" term="uae"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[맨체스터 코딩, 차등 맨체스터 코딩]]></title>
