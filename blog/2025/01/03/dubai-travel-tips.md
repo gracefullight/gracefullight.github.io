@@ -5,6 +5,7 @@ description: Dubai Travel Tips
 authors: me
 tags:
   - me
+  - uae
 ---
 
 ## 숙소
