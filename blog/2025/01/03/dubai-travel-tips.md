@@ -66,7 +66,7 @@ tags:
 
 ### 두바이 프레임
 
-- 올라가지 말고 Zabeel Park 들어가서 사진찍으면 잘 나온다.
+- 올라가지 말고 [Zabeel Park](https://maps.app.goo.gl/sGi9EVrfYCXnWHR77) 들어가서 사진찍으면 잘 나온다.
 - 유료 공원이라 관리도 잘 되어있다.
 
 ### 시장
