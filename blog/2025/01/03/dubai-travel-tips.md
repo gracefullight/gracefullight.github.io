@@ -51,7 +51,7 @@ tags:
 - 양고기는 [RAWABI AL SHAM RESTAURANT & BUTCHERY](https://maps.app.goo.gl/qQanDN7agdWTf1JD8)가 정육식당 느낌인데, 가성비 있고 현지인들도 많고 굉장히 맛있었다.
 - 수크 쪽에서는 [Al Bait Al Qadeem Restaurant](https://maps.app.goo.gl/usMTQjEZ96DycVpp6)가 현지식 도전하기에 좋았다.
   - 한국인들도 많이와 단체로가면 비빔밥도 해준다고 한다.
-- 영국인들이 많이있는 식당인 [Arabian Tea House Restaurant](https://maps.app.goo.gl/PMFyJ1WgEJ5JJAWh8)는 가성비는 아니지만, 서비스와 맛은 좋았다.
+- 영국인들이 많이있는 식당인 [Arabian Tea House Restaurant](https://maps.app.goo.gl/PMFyJ1WgEJ5JJAWh8)는 가격만큼 서비스와 맛이 좋았다.
   - 아침은 좀 아까웠고, 점심/저녁 추천.
 - 부르즈할리파를 배경으로 사진을 찍고 싶다면 56층에 위치한 [CÉ LA VI](https://maps.app.goo.gl/WNoeW1huMuacneXt9)를 가면 된다.
   - 아시안들이 밥을 많이 시키고 현지인들은 음료만 시키고 사진 찍고 가는 것 같았다.
