@@ -10,5 +10,6 @@
       "@docusaurus/theme-classic",
       "@testing-library/jest-dom"
     ]
-  }
+  },
+  "exclude": [".docusaurus", "build"]
 }
