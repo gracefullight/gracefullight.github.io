@@ -26,7 +26,7 @@ tags:
 
 ### 구성도
 
-![rag](/img/pe/rag.webp)
+![RAG](./assets/rag.webp)
 
 > 웹인터페이스 -> 벡터데이터베이스 -> LLM
 
