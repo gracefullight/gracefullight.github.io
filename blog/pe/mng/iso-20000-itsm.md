@@ -5,7 +5,7 @@ description: ISO 20000, Information Technology Service Management
 authors: me
 tags:
   - pe
-  - me
+  - pe/mng
 ---
 
 ## ISO 20000 개념
