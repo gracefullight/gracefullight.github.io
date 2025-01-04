@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-04T02:54:36.754Z</updated>
+    <updated>2025-01-04T09:53:15.312Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[SOM, 자기조직화지도]]></title>
+        <id>https://gracefullight.dev/en/pe/db/self-organizing-map/</id>
+        <link href="https://gracefullight.dev/en/pe/db/self-organizing-map/"/>
+        <updated>2025-01-04T09:53:15.312Z</updated>
+        <summary type="html"><![CDATA[Self Organizing Map]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="som-개념">SOM 개념<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>고차원 데이터의 위상을 보존하여 저차원 그리드로 매핑하는 비지도학습 기반 인공 신경망</li>
+<li>차원축소, 위상보존, 경쟁학습, 시각화 및 군집화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="som-구성도-구성요소-ann과의-차이점">SOM 구성도, 구성요소, ANN과의 차이점<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-ann%EA%B3%BC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="som-구성도">SOM 구성도<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="SOM" src="https://gracefullight.dev/en/assets/images/som-f8c04e2aac5257cbcd97926522a2a8e4.png" width="1900" height="1429" class="img_Hfj7"></p>
+<ul>
+<li>경쟁층 뉴런들이 2차원 격자구조로 배열, 고차원 입력 데이터를 저차원 공간에 시각적으로 표현하는 구조</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="som-구성요소">SOM 구성요소<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>설명</th></tr></thead><tbody><tr><td>레이어</td><td>입력층</td><td>고차원 입력 특성을 받는 층</td></tr><tr><td>-</td><td>경쟁층(출력층)</td><td>2D 그리드 구조로 입력 데이터와의 거리 측정 후 가장 가까운 뉴런 선정</td></tr><tr><td>연결요소</td><td>연결가중치</td><td>입출력층 연결, 초기 무작위 가중치 설정 후 경쟁학습을 통해 업데이트</td></tr><tr><td>-</td><td>BMV</td><td>입력벡터와 가장 유사한 출력층 뉴런, 유클리드 최소 거리 계산</td></tr></tbody></table>
+<ul>
+<li>역전파와 체인룰 없이 승자 독식 경쟁학습 알고리즘 사용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="som과-ann의-차이점">SOM과 ANN의 차이점<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som%EA%B3%BC-ann%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>SOM</th><th>ANN</th></tr></thead><tbody><tr><td>학습방식</td><td>비지도학습</td><td>지도학습</td></tr><tr><td>학습알고리즘</td><td>경쟁학습</td><td>역전파 등 오류수정기반</td></tr><tr><td>주요목적</td><td>시각화, 군집화, 차원축소</td><td>분류, 회귀, 예측</td></tr><tr><td>출력구조</td><td>2차원 격자</td><td>다층 퍼셉트론</td></tr><tr><td>데이터 요구사항</td><td>레이블 불필요</td><td>레이블 필요</td></tr><tr><td>활용사례</td><td>데이터 시각화, 군집 분석</td><td>이미지 인식, 음성 인식, 자연어 처리</td></tr><tr><td>해석가능성</td><td>결과의 직관적 해석</td><td>블랙박스, 해석 어려움</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/database" term="pe/database"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[다차원 색인 구조]]></title>
         <id>https://gracefullight.dev/en/pe/db/multi-dimensional-indexes/</id>
@@ -36,21 +67,11 @@
 </blockquote>
 <table><thead><tr><th>개념도</th><th>개념</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="hnsw" src="https://gracefullight.dev/en/assets/images/hnsw-99cda91980c70560637a68f95c31ee52.webp" width="1920" height="1080" class="img_Hfj7"></td><td>계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공</td></tr></tbody></table>
 <ul>
-<li>
-<p>다층 그래프 사용 저장</p>
-</li>
-<li>
-<p>지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색</p>
-</li>
-<li>
-<p>메모리 기반, 빠름, 고차원 데이터 효율적 처리</p>
-</li>
-<li>
-<p>Milvus, Pinecone 방식</p>
-</li>
-<li>
-<p><a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank" rel="noopener noreferrer">Pinecone: Hierarchical Navigable Small Worlds</a></p>
-</li>
+<li>다층 그래프 사용 저장</li>
+<li>지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색</li>
+<li>메모리 기반, 빠름, 고차원 데이터 효율적 처리</li>
+<li>Milvus, Pinecone 방식</li>
+<li><a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank" rel="noopener noreferrer">Pinecone: Hierarchical Navigable Small Worlds</a></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
@@ -454,36 +475,6 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-이더넷-비교">HDLC, 이더넷 비교<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%EC%9D%B4%EB%8D%94%EB%84%B7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>HDLC</th><th>이더넷</th></tr></thead><tbody><tr><td>네트워크 환경</td><td>WAN 환경</td><td>LAN 환경</td></tr><tr><td>데이터 구조</td><td>비트 중심</td><td>프레임 중심</td></tr><tr><td>송수신 형식</td><td>동기식, 비동기 모드 지원</td><td>비동기식</td></tr><tr><td>표준</td><td>ISO 13239</td><td>IEEE 802.3</td></tr><tr><td>주소체계</td><td>Address 필드</td><td>MAC 주소</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/network" term="pe/network"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[네트워크 프로토콜]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/network-protocol/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/network-protocol/"/>
-        <updated>2024-12-19T14:08:06.868Z</updated>
-        <summary type="html"><![CDATA[Network protocol]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="네트워크-프로토콜-개념">네트워크 프로토콜 개념<a href="https://gracefullight.dev/en/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>네트워크 상에서 데이터 전송 규칙과 절차를 정의하여 효율적이고 신뢰서 있는 통신을 보장하는 규약</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="네트워크-프로토콜-구성도-3가지-요소">네트워크 프로토콜 구성도, 3가지 요소<a href="https://gracefullight.dev/en/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-구성도">프로토콜 구성도<a href="https://gracefullight.dev/en/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>프로토콜을 정의한 RFC 문서에 따라 구문, 의미, 타이밍 등을 기반으로 송수신 장치간 네트워크 통신 수행</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-3가지-요소-상세">프로토콜 3가지 요소 상세<a href="https://gracefullight.dev/en/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C-%EC%83%81%EC%84%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>상세요소</th><th>설명</th></tr></thead><tbody><tr><td>구문</td><td>포맷</td><td>통신, 처리, 해석에 적합하도록 형식, 규격화된 표현</td></tr><tr><td>-</td><td>부호화</td><td>Row data와 부호 간의 대응 관계, 압축, 암호화 수행</td></tr><tr><td>-</td><td>신호레벨</td><td>물리적인 신호 크기, 감도, 주파수 크기</td></tr><tr><td>의미</td><td>정보규격정의</td><td>특정 패턴을 어떻게 해석하고 동작할지 결정</td></tr><tr><td>-</td><td>오류제어</td><td>의미 기반 통신 메세지 오류 제어</td></tr><tr><td>-</td><td>동기제어</td><td>송수신 장치 간 상태 일치 및 제어</td></tr><tr><td>타이밍</td><td>속도</td><td>통신 속도, 단위, Band Rate 등</td></tr><tr><td>-</td><td>순서제어</td><td>송수신 장치 간 메세지 순서 규정 및 제어</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-유형-및-기능">프로토콜 유형 및 기능<a href="https://gracefullight.dev/en/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%9C%A0%ED%98%95-%EB%B0%8F-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>ISO7498 표준에 따른 응용계층, 전송계층, 네트워크계층, 물리계층 프로토콜로 구분</li>
-</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
