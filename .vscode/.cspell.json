@@ -86,6 +86,7 @@
     "hdlc",
     "HELO",
     "HMAC",
+    "HNSW",
     "HSTS",
     "htonl",
     "iconify",

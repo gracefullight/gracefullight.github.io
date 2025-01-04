@@ -48,3 +48,18 @@ tags:
 | - | 위성영상분석 | 사분트리, 위성데이터 분할 저장 |
 | 멀티미디어 | 이미지 | K-D 트리, 사분 트리, 이미지 속성 저장 |
 | - | 비디오 | K-D 트리, 메타데이터 인덱싱 |
+
+## HNSW
+
+> Hierarchical Navigable Small Worlds
+
+| 개념도 | 개념 |
+| --- | --- |
+| ![hnsw](./assets/hnsw.webp) | 계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공 |
+
+- 다층 그래프 사용 저장
+- 지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색
+- 메모리 기반, 빠름, 고차원 데이터 효율적 처리
+- Milvus, Pinecone 방식
+
+- [Pinecone: Hierarchical Navigable Small Worlds](https://www.pinecone.io/learn/series/faiss/hnsw/)
