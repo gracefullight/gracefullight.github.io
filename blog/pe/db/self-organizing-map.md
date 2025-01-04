@@ -5,7 +5,7 @@ description: Self Organizing Map
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## SOM 개념
