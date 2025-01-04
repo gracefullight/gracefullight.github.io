@@ -49,6 +49,11 @@ ielts:
   permalink: "/ielts"
   description: "International English Language Testing System"
 
+retro:
+  label: "retrospective"
+  permalink: "/retro"
+  description: "회고"
+
 정보처리:
   label: "정보처리"
   permalink: "/정보처리"
