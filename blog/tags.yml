@@ -43,3 +43,13 @@ me:
   label: "me"
   permalink: "/me"
   description: "Life Logging"
+
+ielts:
+  label: "ielts"
+  permalink: "/ielts"
+  description: "International English Language Testing System"
+
+정보처리:
+  label: "정보처리"
+  permalink: "/정보처리"
+  description: "Engineer Information Processing"
