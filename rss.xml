@@ -14,28 +14,28 @@
             <guid>https://gracefullight.dev/pe/db/multi-dimensional-indexes/</guid>
             <pubDate>Sat, 04 Jan 2025 02:54:36 GMT</pubDate>
             <description><![CDATA[Multi-Dimensional Indexes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-개념">다차원 색인구조 개념<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="다차원 색인구조 개념에 대한 직접 링크" title="다차원 색인구조 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="다차원-색인구조-개념">다차원 색인구조 개념<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="다차원 색인구조 개념에 대한 직접 링크" title="다차원 색인구조 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>이미지나 멀티미디어 등 비정형 데이터의 효율적 검색을 위해 다차원 필드를 동시에 키로 사용한 색인 구조</li>
 <li>차원확장성, 유사성 기반 내용 검색, 다양항 데이터 처리, 저장공간 절감, RAG, Vector DB 활용</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-유형">다차원 색인구조 유형<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="다차원 색인구조 유형에 대한 직접 링크" title="다차원 색인구조 유형에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>Point Access Method (PAM)</td><td><img decoding="async" loading="lazy" alt="PAM" src="https://gracefullight.dev/assets/images/pam-c78533146f162a9ae6fc218ce7d71507.png" width="1280" height="1322" class="img_hlsJ"></td><td>다차원 점 데이터 저장 및 검색<br>K-D 트리, K-D-B 트리, Grid File, 사분트리</td></tr><tr><td>Spatial Access Method (SAM)</td><td><img decoding="async" loading="lazy" alt="SAM" src="https://gracefullight.dev/assets/images/sam-60ea17c4c8932a83313bbca6cfd48a17.png" width="1280" height="1322" class="img_hlsJ"></td><td>선, 면 등 크기를 갖는 다차원 공간 데이터 저장 및 검색<br>R-Tree, R*-Tree, R+Tree, X-Tree</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-상세">다차원 색인구조 상세<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EC%83%81%EC%84%B8" class="hash-link" aria-label="다차원 색인구조 상세에 대한 직접 링크" title="다차원 색인구조 상세에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="pam-기반-다차원-색인구조">PAM 기반 다차원 색인구조<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#pam-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="PAM 기반 다차원 색인구조에 대한 직접 링크" title="PAM 기반 다차원 색인구조에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>K-D 트리</td><td><img decoding="async" loading="lazy" alt="K-D Tree" src="https://gracefullight.dev/assets/images/k-d-tree-6ad1b41fc46021b95f2495b1ecf6c25e.png" width="1589" height="1053" class="img_hlsJ"></td><td>이진탐색트리 BST를 다차원 확장하여 K차원 점 데이터 색인<br>트리 레벨과 값을 번갈아 비교</td></tr><tr><td>Grid File</td><td><img decoding="async" loading="lazy" alt="Grid File" src="https://gracefullight.dev/assets/images/grid-file-0f98620ab4af384cd359566d5937b81d.png" width="1365" height="1409" class="img_hlsJ"></td><td>데이터포인트를 다차원 그리드 공간에 매핑하여 저장<br>각 차원 범위를 선형눈금계로 나눠 격자 배열 생성</td></tr><tr><td>사분트리</td><td><img decoding="async" loading="lazy" alt="Quad Tree" src="https://gracefullight.dev/assets/images/quad-tree-54a17c8dbff170fa6e536a5aa099eaab.png" width="1376" height="1409" class="img_hlsJ"></td><td>공간을 반복적으로 4개의 하위 영역으로 분할하는 자료구조<br>고차원 데이터 부적합, 공간 분할로인한 비효율적 메모리 사용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="sam-기반-다차원-색인구조">SAM 기반 다차원 색인구조<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#sam-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="SAM 기반 다차원 색인구조에 대한 직접 링크" title="SAM 기반 다차원 색인구조에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>R 트리</td><td><img decoding="async" loading="lazy" alt="R Tree" src="https://gracefullight.dev/assets/images/r-tree-07624d18628562133db80d8105c73189.png" width="1280" height="1014" class="img_hlsJ"></td><td>MBR을 구하여 인덱스를 엔트리로 저장하는 자료구조<br>완전균형트리로 데이터 객체를 여러 차원의 구간들로 표현</td></tr><tr><td>R+ 트리</td><td><img decoding="async" loading="lazy" alt="R+ Tree" src="https://gracefullight.dev/assets/images/r-plus-tree-60e7e9d5fe183ca44eaa1b6cf66eb2de.png" width="1900" height="1638" class="img_hlsJ"></td><td>여러 MBR과 중첩되는 데이터는 여러 노드에 중복 저장하는 자료구조<br>K-D 트리와 R 트리의 중간 형태</td></tr><tr><td>R* 트리</td><td><img decoding="async" loading="lazy" alt="R* Tree" src="https://gracefullight.dev/assets/images/r-asterisk-tree-1eee4d41d5bdbda9c8dde58bc603f1e0.png" width="1589" height="1330" class="img_hlsJ"></td><td>R 트리와 구조, 연산은 유사하나 삽입 삭제시 노드 간 MBR 중첩 최소화한 자료구조</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="다차원-색인구조-유형">다차원 색인구조 유형<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="다차원 색인구조 유형에 대한 직접 링크" title="다차원 색인구조 유형에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>Point Access Method (PAM)</td><td><img decoding="async" loading="lazy" alt="PAM" src="https://gracefullight.dev/assets/images/pam-c78533146f162a9ae6fc218ce7d71507.png" width="1280" height="1322" class="img_Hfj7"></td><td>다차원 점 데이터 저장 및 검색<br>K-D 트리, K-D-B 트리, Grid File, 사분트리</td></tr><tr><td>Spatial Access Method (SAM)</td><td><img decoding="async" loading="lazy" alt="SAM" src="https://gracefullight.dev/assets/images/sam-60ea17c4c8932a83313bbca6cfd48a17.png" width="1280" height="1322" class="img_Hfj7"></td><td>선, 면 등 크기를 갖는 다차원 공간 데이터 저장 및 검색<br>R-Tree, R*-Tree, R+Tree, X-Tree</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="다차원-색인구조-상세">다차원 색인구조 상세<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%EC%83%81%EC%84%B8" class="hash-link" aria-label="다차원 색인구조 상세에 대한 직접 링크" title="다차원 색인구조 상세에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="pam-기반-다차원-색인구조">PAM 기반 다차원 색인구조<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#pam-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="PAM 기반 다차원 색인구조에 대한 직접 링크" title="PAM 기반 다차원 색인구조에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>K-D 트리</td><td><img decoding="async" loading="lazy" alt="K-D Tree" src="https://gracefullight.dev/assets/images/k-d-tree-6ad1b41fc46021b95f2495b1ecf6c25e.png" width="1589" height="1053" class="img_Hfj7"></td><td>이진탐색트리 BST를 다차원 확장하여 K차원 점 데이터 색인<br>트리 레벨과 값을 번갈아 비교</td></tr><tr><td>Grid File</td><td><img decoding="async" loading="lazy" alt="Grid File" src="https://gracefullight.dev/assets/images/grid-file-0f98620ab4af384cd359566d5937b81d.png" width="1365" height="1409" class="img_Hfj7"></td><td>데이터포인트를 다차원 그리드 공간에 매핑하여 저장<br>각 차원 범위를 선형눈금계로 나눠 격자 배열 생성</td></tr><tr><td>사분트리</td><td><img decoding="async" loading="lazy" alt="Quad Tree" src="https://gracefullight.dev/assets/images/quad-tree-54a17c8dbff170fa6e536a5aa099eaab.png" width="1376" height="1409" class="img_Hfj7"></td><td>공간을 반복적으로 4개의 하위 영역으로 분할하는 자료구조<br>고차원 데이터 부적합, 공간 분할로인한 비효율적 메모리 사용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="sam-기반-다차원-색인구조">SAM 기반 다차원 색인구조<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#sam-%EA%B8%B0%EB%B0%98-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="SAM 기반 다차원 색인구조에 대한 직접 링크" title="SAM 기반 다차원 색인구조에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>R 트리</td><td><img decoding="async" loading="lazy" alt="R Tree" src="https://gracefullight.dev/assets/images/r-tree-07624d18628562133db80d8105c73189.png" width="1280" height="1014" class="img_Hfj7"></td><td>MBR을 구하여 인덱스를 엔트리로 저장하는 자료구조<br>완전균형트리로 데이터 객체를 여러 차원의 구간들로 표현</td></tr><tr><td>R+ 트리</td><td><img decoding="async" loading="lazy" alt="R+ Tree" src="https://gracefullight.dev/assets/images/r-plus-tree-60e7e9d5fe183ca44eaa1b6cf66eb2de.png" width="1900" height="1638" class="img_Hfj7"></td><td>여러 MBR과 중첩되는 데이터는 여러 노드에 중복 저장하는 자료구조<br>K-D 트리와 R 트리의 중간 형태</td></tr><tr><td>R* 트리</td><td><img decoding="async" loading="lazy" alt="R* Tree" src="https://gracefullight.dev/assets/images/r-asterisk-tree-1eee4d41d5bdbda9c8dde58bc603f1e0.png" width="1589" height="1330" class="img_Hfj7"></td><td>R 트리와 구조, 연산은 유사하나 삽입 삭제시 노드 간 MBR 중첩 최소화한 자료구조</td></tr></tbody></table>
 <ul>
 <li>X 트리는 고차원 데이터를 다루는 슈퍼노드를 사용한 R 트리 확장 구조</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-활용분야">다차원 색인구조 활용분야<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="다차원 색인구조 활용분야에 대한 직접 링크" title="다차원 색인구조 활용분야에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="다차원-색인구조-활용분야">다차원 색인구조 활용분야<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="다차원 색인구조 활용분야에 대한 직접 링크" title="다차원 색인구조 활용분야에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>지리 정보</td><td>GIS</td><td>R트리 활용 지리 정보 저장 및 검색</td></tr><tr><td>-</td><td>위성영상분석</td><td>사분트리, 위성데이터 분할 저장</td></tr><tr><td>멀티미디어</td><td>이미지</td><td>K-D 트리, 사분 트리, 이미지 속성 저장</td></tr><tr><td>-</td><td>비디오</td><td>K-D 트리, 메타데이터 인덱싱</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hnsw">HNSW<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#hnsw" class="hash-link" aria-label="HNSW에 대한 직접 링크" title="HNSW에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hnsw">HNSW<a href="https://gracefullight.dev/pe/db/multi-dimensional-indexes/#hnsw" class="hash-link" aria-label="HNSW에 대한 직접 링크" title="HNSW에 대한 직접 링크">​</a></h2>
 <blockquote>
 <p>Hierarchical Navigable Small Worlds</p>
 </blockquote>
-<table><thead><tr><th>개념도</th><th>개념</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="hnsw" src="https://gracefullight.dev/assets/images/hnsw-99cda91980c70560637a68f95c31ee52.webp" width="1920" height="1080" class="img_hlsJ"></td><td>계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공</td></tr></tbody></table>
+<table><thead><tr><th>개념도</th><th>개념</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="hnsw" src="https://gracefullight.dev/assets/images/hnsw-99cda91980c70560637a68f95c31ee52.webp" width="1920" height="1080" class="img_Hfj7"></td><td>계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공</td></tr></tbody></table>
 <ul>
 <li>
 <p>다층 그래프 사용 저장</p>
@@ -62,35 +62,35 @@
             <guid>https://gracefullight.dev/pe/db/isolation-levels/</guid>
             <pubDate>Sat, 04 Jan 2025 02:23:08 GMT</pubDate>
             <description><![CDATA[Isolation Levels]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="트랜잭션-격리수준-개념">트랜잭션 격리수준 개념<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="트랜잭션 격리수준 개념에 대한 직접 링크" title="트랜잭션 격리수준 개념에 대한 직접 링크">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Isolation Levels" src="https://gracefullight.dev/assets/images/isolation-levels-4990090445f50eedc4325af5cd5c8ef9.png" width="1955" height="1180" class="img_hlsJ"></p>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="트랜잭션-격리수준-개념">트랜잭션 격리수준 개념<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="트랜잭션 격리수준 개념에 대한 직접 링크" title="트랜잭션 격리수준 개념에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Isolation Levels" src="https://gracefullight.dev/assets/images/isolation-levels-4990090445f50eedc4325af5cd5c8ef9.png" width="1955" height="1180" class="img_Hfj7"></p>
 <ul>
 <li>병행 트랜잭션 실행 시 데이터를 일관성 있게 읽을 수 있도록 고립성을 유지하기 위한 데이터 허용 수준</li>
 <li>Dirty Read, Non-Repeatable Read, Phantom Read 등 이상 현상 발생 가능</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="트랜잭션-격리-수준-상세">트랜잭션 격리 수준 상세<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-%EC%83%81%EC%84%B8" class="hash-link" aria-label="트랜잭션 격리 수준 상세에 대한 직접 링크" title="트랜잭션 격리 수준 상세에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="read-uncommitted">Read Uncommitted<a href="https://gracefullight.dev/pe/db/isolation-levels/#read-uncommitted" class="hash-link" aria-label="Read Uncommitted에 대한 직접 링크" title="Read Uncommitted에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="트랜잭션-격리-수준-상세">트랜잭션 격리 수준 상세<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-%EC%83%81%EC%84%B8" class="hash-link" aria-label="트랜잭션 격리 수준 상세에 대한 직접 링크" title="트랜잭션 격리 수준 상세에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="read-uncommitted">Read Uncommitted<a href="https://gracefullight.dev/pe/db/isolation-levels/#read-uncommitted" class="hash-link" aria-label="Read Uncommitted에 대한 직접 링크" title="Read Uncommitted에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
 <li>트랜잭션이 완료되지 않은 데이터를 다른 트랜잭션이 참조하는 것을 허용하는 격리수준</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="read-committed">Read Committed<a href="https://gracefullight.dev/pe/db/isolation-levels/#read-committed" class="hash-link" aria-label="Read Committed에 대한 직접 링크" title="Read Committed에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="read-committed">Read Committed<a href="https://gracefullight.dev/pe/db/isolation-levels/#read-committed" class="hash-link" aria-label="Read Committed에 대한 직접 링크" title="Read Committed에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
 <li>트랜잭션이 완료된 데이터만 읽을 수 있는 격리 수준</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="repeatable-read">Repeatable Read<a href="https://gracefullight.dev/pe/db/isolation-levels/#repeatable-read" class="hash-link" aria-label="Repeatable Read에 대한 직접 링크" title="Repeatable Read에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="repeatable-read">Repeatable Read<a href="https://gracefullight.dev/pe/db/isolation-levels/#repeatable-read" class="hash-link" aria-label="Repeatable Read에 대한 직접 링크" title="Repeatable Read에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
 <li>동일한 행을 여러 번 읽을 때 항상 동일한 값을 반환하도록 보장하는 격리수준</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="serializable">Serializable<a href="https://gracefullight.dev/pe/db/isolation-levels/#serializable" class="hash-link" aria-label="Serializable에 대한 직접 링크" title="Serializable에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="serializable">Serializable<a href="https://gracefullight.dev/pe/db/isolation-levels/#serializable" class="hash-link" aria-label="Serializable에 대한 직접 링크" title="Serializable에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
 <li>여러 트랜잭션이 순차적으로 하나씩 실행되도록 보장하는 격리수준</li>
 <li>동시성이 낮아 거의 사용되지 않음</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="트랜잭션-격리수준-고려사항">트랜잭션 격리수준 고려사항<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="트랜잭션 격리수준 고려사항에 대한 직접 링크" title="트랜잭션 격리수준 고려사항에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="트랜잭션-격리수준-고려사항">트랜잭션 격리수준 고려사항<a href="https://gracefullight.dev/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="트랜잭션 격리수준 고려사항에 대한 직접 링크" title="트랜잭션 격리수준 고려사항에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Locking, 2PL, Timestamp Ordering, 낙관적 기법 등 병행제어 필요</li>
 </ul>]]></content:encoded>
@@ -103,7 +103,7 @@
             <guid>https://gracefullight.dev/2025/01/03/dubai-travel-tips/</guid>
             <pubDate>Thu, 02 Jan 2025 16:02:19 GMT</pubDate>
             <description><![CDATA[Dubai Travel Tips]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="숙소">숙소<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%88%99%EC%86%8C" class="hash-link" aria-label="숙소에 대한 직접 링크" title="숙소에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="숙소">숙소<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%88%99%EC%86%8C" class="hash-link" aria-label="숙소에 대한 직접 링크" title="숙소에 대한 직접 링크">​</a></h2>
 <ul>
 <li>두바이에는 지하철이 있고, 레드라인 주변으로 잡으면 된다.<!-- -->
 <ul>
@@ -112,24 +112,24 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="교통">교통<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B5%90%ED%86%B5" class="hash-link" aria-label="교통에 대한 직접 링크" title="교통에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="지하철">지하철<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%A7%80%ED%95%98%EC%B2%A0" class="hash-link" aria-label="지하철에 대한 직접 링크" title="지하철에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="교통">교통<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B5%90%ED%86%B5" class="hash-link" aria-label="교통에 대한 직접 링크" title="교통에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="지하철">지하철<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%A7%80%ED%95%98%EC%B2%A0" class="hash-link" aria-label="지하철에 대한 직접 링크" title="지하철에 대한 직접 링크">​</a></h3>
 <ul>
 <li>여자끼리만 여행한다면 실버 NOL 카드에 여성 전용칸을 타면 된다.</li>
 <li>아니라면 무조건 골드 NOL 카드 사자. 출퇴근시간 강남역 생각났다.</li>
 <li>택시비로 어딜가든 2만원씩 나오기에 지하철을 이용하는 것이 좋다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="버스">버스<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%B2%84%EC%8A%A4" class="hash-link" aria-label="버스에 대한 직접 링크" title="버스에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="버스">버스<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%B2%84%EC%8A%A4" class="hash-link" aria-label="버스에 대한 직접 링크" title="버스에 대한 직접 링크">​</a></h3>
 <ul>
 <li>NOL 카드 내릴 때 찍어야한다.</li>
 <li>생각보다 지연이 많아 잘 안 이용했다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="택시">택시<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%ED%83%9D%EC%8B%9C" class="hash-link" aria-label="택시에 대한 직접 링크" title="택시에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="택시">택시<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%ED%83%9D%EC%8B%9C" class="hash-link" aria-label="택시에 대한 직접 링크" title="택시에 대한 직접 링크">​</a></h3>
 <ul>
 <li>Careem 앱 전화번호 없어도 이용 가능하다.</li>
 <li>Bolt 앱 10번 탑승까지 50% 할인된다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="두바이-아부다비">두바이-아부다비<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%91%90%EB%B0%94%EC%9D%B4-%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84" class="hash-link" aria-label="두바이-아부다비에 대한 직접 링크" title="두바이-아부다비에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="두바이-아부다비">두바이-아부다비<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%91%90%EB%B0%94%EC%9D%B4-%EC%95%84%EB%B6%80%EB%8B%A4%EB%B9%84" class="hash-link" aria-label="두바이-아부다비에 대한 직접 링크" title="두바이-아부다비에 대한 직접 링크">​</a></h3>
 <ul>
 <li>IBN Station 에서 E101 버스를 타면 25디르함에 아부다비로 갈 수 있다.<!-- -->
 <ul>
@@ -143,8 +143,8 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="식사">식사<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9D%EC%82%AC" class="hash-link" aria-label="식사에 대한 직접 링크" title="식사에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="식당">식당<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9D%EB%8B%B9" class="hash-link" aria-label="식당에 대한 직접 링크" title="식당에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="식사">식사<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9D%EC%82%AC" class="hash-link" aria-label="식사에 대한 직접 링크" title="식사에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="식당">식당<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9D%EB%8B%B9" class="hash-link" aria-label="식당에 대한 직접 링크" title="식당에 대한 직접 링크">​</a></h3>
 <ul>
 <li>두바이 물가가 원래 한국보다 약간 비쌌고, 원화가치도 폭락하면서 더 비싸졌다.<!-- -->
 <ul>
@@ -170,24 +170,24 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="카페">카페<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%B9%B4%ED%8E%98" class="hash-link" aria-label="카페에 대한 직접 링크" title="카페에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="카페">카페<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%B9%B4%ED%8E%98" class="hash-link" aria-label="카페에 대한 직접 링크" title="카페에 대한 직접 링크">​</a></h3>
 <ul>
 <li>동남아와 다르게 과일스무디, 과일쥬스들이 엄청 비싸다. 한 잔에 최소 12,000원 정도.</li>
 <li>아이스 아메리카노도 그란데 사이즈 기준 8,000원 정도.</li>
 <li>마트 내 카페는 상대적으로 저렴하고, Soft Drink가 저렴해서 제로콜라를 많이 먹게 되었다.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="관광지">관광지<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B4%80%EA%B4%91%EC%A7%80" class="hash-link" aria-label="관광지에 대한 직접 링크" title="관광지에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="두바이-프레임">두바이 프레임<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%91%90%EB%B0%94%EC%9D%B4-%ED%94%84%EB%A0%88%EC%9E%84" class="hash-link" aria-label="두바이 프레임에 대한 직접 링크" title="두바이 프레임에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="관광지">관광지<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B4%80%EA%B4%91%EC%A7%80" class="hash-link" aria-label="관광지에 대한 직접 링크" title="관광지에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="두바이-프레임">두바이 프레임<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%91%90%EB%B0%94%EC%9D%B4-%ED%94%84%EB%A0%88%EC%9E%84" class="hash-link" aria-label="두바이 프레임에 대한 직접 링크" title="두바이 프레임에 대한 직접 링크">​</a></h3>
 <ul>
 <li>올라가지 말고 <a href="https://maps.app.goo.gl/sGi9EVrfYCXnWHR77" target="_blank" rel="noopener noreferrer">Zabeel Park</a> 들어가서 사진찍으면 잘 나온다.</li>
 <li>유료 공원이라 관리도 잘 되어있다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="시장">시장<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9C%EC%9E%A5" class="hash-link" aria-label="시장에 대한 직접 링크" title="시장에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="시장">시장<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%8B%9C%EC%9E%A5" class="hash-link" aria-label="시장에 대한 직접 링크" title="시장에 대한 직접 링크">​</a></h3>
 <ul>
 <li>골드수크와 스파이스수크는 호객문화가 심해서 이런 문화가 있다 정도로만 둘러보면 된다.</li>
 <li><a href="https://maps.app.goo.gl/1ADih4ptk5VXgiaj8" target="_blank" rel="noopener noreferrer">Deira Old Souq Marine Transport Station</a>에서 1디르함에 바지선을 타고 두바이크릭을 건너오는 건 좋았다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="아쿠아벤처">아쿠아벤처<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%95%84%EC%BF%A0%EC%95%84%EB%B2%A4%EC%B2%98" class="hash-link" aria-label="아쿠아벤처에 대한 직접 링크" title="아쿠아벤처에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="아쿠아벤처">아쿠아벤처<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%95%84%EC%BF%A0%EC%95%84%EB%B2%A4%EC%B2%98" class="hash-link" aria-label="아쿠아벤처에 대한 직접 링크" title="아쿠아벤처에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://maps.app.goo.gl/1vxpnTUoerRn9KwS7" target="_blank" rel="noopener noreferrer">아쿠아벤처 워터파크</a>는 무조건 오픈런해야한다.<!-- -->
 <ul>
@@ -198,14 +198,14 @@
 <li>워터슈즈는 나눠주는걸로 충분했다.</li>
 <li>밥은 스타벅스 가서 샌드위치 먹는게 가성비 좋다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="악어공원">악어공원<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%95%85%EC%96%B4%EA%B3%B5%EC%9B%90" class="hash-link" aria-label="악어공원에 대한 직접 링크" title="악어공원에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="악어공원">악어공원<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%95%85%EC%96%B4%EA%B3%B5%EC%9B%90" class="hash-link" aria-label="악어공원에 대한 직접 링크" title="악어공원에 대한 직접 링크">​</a></h3>
 <ul>
 <li><a href="https://maps.app.goo.gl/5QTndXmMZ4dBmic48" target="_blank" rel="noopener noreferrer">Dubai Crocodile Park</a>은 공항 옆이라 첫날, 마지막날 시간 뜰 때 가면 좋다.</li>
 <li>16:30 에 악어 직접 만져볼 수 있다. 특정 요일엔 먹이도 줄 수 있다고 한다.</li>
 <li>조경도 잘 해놓고 관리가 잘 된 느낌이라 좋았다.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="기타">기타<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B8%B0%ED%83%80" class="hash-link" aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="불꽃놀이">불꽃놀이<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4" class="hash-link" aria-label="불꽃놀이에 대한 직접 링크" title="불꽃놀이에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="기타">기타<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B8%B0%ED%83%80" class="hash-link" aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="불꽃놀이">불꽃놀이<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4" class="hash-link" aria-label="불꽃놀이에 대한 직접 링크" title="불꽃놀이에 대한 직접 링크">​</a></h3>
 <ul>
 <li>신년행사로 불꽃놀이는 두바이 어느 해변이나 명소에 가도 한다.</li>
 <li>두바이몰은 16:00 이후로 교통 통제 된다.<!-- -->
@@ -216,13 +216,13 @@
 </li>
 <li>아부다비에선 50분동안 불꽃놀이를 한다고하기에 나중엔 아부다비에서 신년을 맞이하는게 나아보였다.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="경찰서">경찰서<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B2%BD%EC%B0%B0%EC%84%9C" class="hash-link" aria-label="경찰서에 대한 직접 링크" title="경찰서에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="경찰서">경찰서<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EA%B2%BD%EC%B0%B0%EC%84%9C" class="hash-link" aria-label="경찰서에 대한 직접 링크" title="경찰서에 대한 직접 링크">​</a></h3>
 <ul>
 <li>두바이엔 Smart Police Station, SPS가 경찰서다.</li>
 <li>야간에도 운영하는데, Dubai Police 앱을 다운받고 가거나 직접 앱으로 민원을 접수할 수 있다.</li>
 <li><a href="https://maps.app.goo.gl/uUNV2Vp24JSXx2rv7" target="_blank" rel="noopener noreferrer">Dubai SPS Muraqqabat</a>가 우리나라의 경찰서와 규모가 비슷한 느낌이었다</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="여담">여담<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%97%AC%EB%8B%B4" class="hash-link" aria-label="여담에 대한 직접 링크" title="여담에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="여담">여담<a href="https://gracefullight.dev/2025/01/03/dubai-travel-tips/#%EC%97%AC%EB%8B%B4" class="hash-link" aria-label="여담에 대한 직접 링크" title="여담에 대한 직접 링크">​</a></h2>
 <ul>
 <li>여행객을 위한 도시, Dubai Night를 위한 도시</li>
 <li>사람 사는 맛은 아부다비에 더 있었다.</li>
@@ -236,26 +236,26 @@
             <guid>https://gracefullight.dev/pe/nw/manchester-code/</guid>
             <pubDate>Sat, 21 Dec 2024 12:20:04 GMT</pubDate>
             <description><![CDATA[Manchester code and Differential Manchester code]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-개념">맨체스터 코딩 개념<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="맨체스터 코딩 개념에 대한 직접 링크" title="맨체스터 코딩 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-개념">맨체스터 코딩 개념<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="맨체스터 코딩 개념에 대한 직접 링크" title="맨체스터 코딩 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>각 비트의 중간 시점에 전압 레벨을 반전시켜, 동기화와 오류검출에 이점을 가진 라인코딩 방식</li>
 <li>클록 동기화 용이, 오류 검출 유리, DC(직류성분) 감소, NRZ 대비 대역폭 2배 필요</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-구조도-동작-원리">맨체스터 코딩 구조도, 동작 원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크" title="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-구조도">맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="맨체스터 코딩 구조도에 대한 직접 링크" title="맨체스터 코딩 구조도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Manchester code" src="https://gracefullight.dev/assets/images/manchester-3986a7b9cbd88b22e5ceec792bb03741.png" width="1975" height="793" class="img_hlsJ"></p>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-구조도-동작-원리">맨체스터 코딩 구조도, 동작 원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크" title="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-구조도">맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="맨체스터 코딩 구조도에 대한 직접 링크" title="맨체스터 코딩 구조도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Manchester code" src="https://gracefullight.dev/assets/images/manchester-3986a7b9cbd88b22e5ceec792bb03741.png" width="1975" height="793" class="img_Hfj7"></p>
 <ul>
 <li>비트 중간에서 하향 전이하면 0, 상향 전이하면 1로 부호화</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-동작원리">맨체스터 코딩 동작원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 동작원리에 대한 직접 링크" title="맨체스터 코딩 동작원리에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-동작원리">맨체스터 코딩 동작원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 동작원리에 대한 직접 링크" title="맨체스터 코딩 동작원리에 대한 직접 링크">​</a></h3>
 <!-- -->
 <table><thead><tr><th>순서</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>1</td><td>인코더에 데이터 입력</td><td>이진 데이터 입력, 비트별 부호화 수행</td></tr><tr><td>2</td><td>비트상태 변환 및 전송</td><td>0 비트 하향 전이, 1 비트 상향 전이 후 전송</td></tr><tr><td>3</td><td>데이터 신호 해석</td><td>비트 중간 반전 시점 해석, 데이터 추출</td></tr><tr><td>4</td><td>이진 데이터 비트 출력</td><td>추출 데이터를 비트로 출력하여 원 데이터 수신</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="차등-맨체스터-코딩-구조도">차등 맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EC%B0%A8%EB%93%B1-%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="차등 맨체스터 코딩 구조도에 대한 직접 링크" title="차등 맨체스터 코딩 구조도에 대한 직접 링크">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Difference Manchester code" src="https://gracefullight.dev/assets/images/differential-manchester-b5227c02deb14e1da8a5f65279369f28.png" width="1975" height="793" class="img_hlsJ"></p>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="차등-맨체스터-코딩-구조도">차등 맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EC%B0%A8%EB%93%B1-%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="차등 맨체스터 코딩 구조도에 대한 직접 링크" title="차등 맨체스터 코딩 구조도에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Difference Manchester code" src="https://gracefullight.dev/assets/images/differential-manchester-b5227c02deb14e1da8a5f65279369f28.png" width="1975" height="793" class="img_Hfj7"></p>
 <ul>
 <li>0: 시작점에서 전이, 1: 시작점에서 전이 없음, 모든 비트 중간점에서 항상 전이</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="맨체스터-코딩-차등-멘체스터-코딩-비교">맨체스터 코딩, 차등 멘체스터 코딩 비교<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EC%B0%A8%EB%93%B1-%EB%A9%98%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크" title="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-차등-멘체스터-코딩-비교">맨체스터 코딩, 차등 멘체스터 코딩 비교<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EC%B0%A8%EB%93%B1-%EB%A9%98%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크" title="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>맨체스터 코딩</th><th>차등 맨체스터 코딩</th></tr></thead><tbody><tr><td>개념</td><td>비트 중간 신호를 상하향 전이, 시간 정보와 데이터 전달 역할 수행</td><td>인접 신호의 변화를 표현하기 위한 차등 인코딩과 맨체스터 코딩 결합</td></tr><tr><td>신호표현</td><td>0: +전압에서 -로 하향 전이<br>1: -전압에서 +로 상향 전이</td><td>0: 비트 시작 전이 없음, 비트 중간 전이 발생<br>1: 비트 시작, 중간 모두 전이</td></tr><tr><td>장점</td><td>설계, 구현 단순<br>에지 검출로 클록 동기화 용이</td><td>빠른 전송 속도<br>극성 반전 없음, 노이즈 강건성</td></tr><tr><td>단점</td><td>낮은 대역폭 효율성</td><td>높은 구현 복잡도, 초기 상태 의존성</td></tr><tr><td>활용 분야</td><td>초기 이더넷, RFID</td><td>Token Ring LAN, 극성 완전 네트워크</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
@@ -266,24 +266,24 @@
             <guid>https://gracefullight.dev/pe/nw/open-ran/</guid>
             <pubDate>Sat, 21 Dec 2024 11:49:12 GMT</pubDate>
             <description><![CDATA[Open Radio Access Network]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-개념">Open RAN 개념<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Open RAN 개념에 대한 직접 링크" title="Open RAN 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="open-ran-개념">Open RAN 개념<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Open RAN 개념에 대한 직접 링크" title="Open RAN 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>다양한 5G 장비업체 간 호환성, 네트워크 설계 유연성을 위해 기지국 연결 인터페이스와 기지국 OS를 개방하고 표준화한 기술</li>
 <li>기존 RAN의 단점 극복, 5G 네트워크 설계 유연성 확보, 장비업체 간 경쟁 활성화, 통신 기술 발전, 비용 절감</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성도-구성요소-발전과정">Open RAN 구성도, 구성요소, 발전과정<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Open RAN 구성도, 구성요소, 발전과정에 대한 직접 링크" title="Open RAN 구성도, 구성요소, 발전과정에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성도">Open RAN 구성도<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Open RAN 구성도에 대한 직접 링크" title="Open RAN 구성도에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="open-ran-구성도-구성요소-발전과정">Open RAN 구성도, 구성요소, 발전과정<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Open RAN 구성도, 구성요소, 발전과정에 대한 직접 링크" title="Open RAN 구성도, 구성요소, 발전과정에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="open-ran-구성도">Open RAN 구성도<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Open RAN 구성도에 대한 직접 링크" title="Open RAN 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-구성요소">Open RAN 구성요소<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Open RAN 구성요소에 대한 직접 링크" title="Open RAN 구성요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="open-ran-구성요소">Open RAN 구성요소<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Open RAN 구성요소에 대한 직접 링크" title="Open RAN 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>Radio Unit</td><td>스마트폰 등 통신장비 주파수를 잡아서 연결, 안테나로 받은 라디오 신호 처리</td><td>RF, Low PHY 처리</td></tr><tr><td>Distributed Unit</td><td>통신장비에서 요청한 데이터를 전송하는 장치, 라디오 신호에서 디지털 신호 분리</td><td>MAC, RLC, High PHY 처리</td></tr><tr><td>Centralized Unit</td><td>네트워크 제어, 사용자 데이터 처리, DU와 CU 간 데이터 전송</td><td>RRC, PDCP 등 프로토콜 활용</td></tr><tr><td>RIC</td><td>인공지능 기반, 로드 밸런싱 기반 CU, DU 관리</td><td>비실시간, 준실시간</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="open-ran-발전과정">Open RAN 발전과정<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Open RAN 발전과정에 대한 직접 링크" title="Open RAN 발전과정에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="레거시-비가상화-사이트">레거시 비가상화 사이트<a href="https://gracefullight.dev/pe/nw/open-ran/#%EB%A0%88%EA%B1%B0%EC%8B%9C-%EB%B9%84%EA%B0%80%EC%83%81%ED%99%94-%EC%82%AC%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="레거시 비가상화 사이트에 대한 직접 링크" title="레거시 비가상화 사이트에 대한 직접 링크">​</a></h4>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="open-ran-발전과정">Open RAN 발전과정<a href="https://gracefullight.dev/pe/nw/open-ran/#open-ran-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="Open RAN 발전과정에 대한 직접 링크" title="Open RAN 발전과정에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="레거시-비가상화-사이트">레거시 비가상화 사이트<a href="https://gracefullight.dev/pe/nw/open-ran/#%EB%A0%88%EA%B1%B0%EC%8B%9C-%EB%B9%84%EA%B0%80%EC%83%81%ED%99%94-%EC%82%AC%EC%9D%B4%ED%8A%B8" class="hash-link" aria-label="레거시 비가상화 사이트에 대한 직접 링크" title="레거시 비가상화 사이트에 대한 직접 링크">​</a></h4>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="c-ran">C-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#c-ran" class="hash-link" aria-label="C-RAN에 대한 직접 링크" title="C-RAN에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="c-ran">C-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#c-ran" class="hash-link" aria-label="C-RAN에 대한 직접 링크" title="C-RAN에 대한 직접 링크">​</a></h4>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="v-ran">V-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#v-ran" class="hash-link" aria-label="V-RAN에 대한 직접 링크" title="V-RAN에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="v-ran">V-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#v-ran" class="hash-link" aria-label="V-RAN에 대한 직접 링크" title="V-RAN에 대한 직접 링크">​</a></h4>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="o-ran">O-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#o-ran" class="hash-link" aria-label="O-RAN에 대한 직접 링크" title="O-RAN에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="o-ran">O-RAN<a href="https://gracefullight.dev/pe/nw/open-ran/#o-ran" class="hash-link" aria-label="O-RAN에 대한 직접 링크" title="O-RAN에 대한 직접 링크">​</a></h4>
 ]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
@@ -294,33 +294,33 @@
             <guid>https://gracefullight.dev/pe/nw/icmp-igmp/</guid>
             <pubDate>Sat, 21 Dec 2024 09:21:11 GMT</pubDate>
             <description><![CDATA[Internet Control Message Protocol, Internet Group Management Protocol]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-개념-구성도">ICMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 개념, 구성도에 대한 직접 링크" title="ICMP 개념, 구성도에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-개념">ICMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="ICMP 개념에 대한 직접 링크" title="ICMP 개념에 대한 직접 링크">​</a></h3>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="icmp-개념-구성도">ICMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 개념, 구성도에 대한 직접 링크" title="ICMP 개념, 구성도에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="icmp-개념">ICMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="ICMP 개념에 대한 직접 링크" title="ICMP 개념에 대한 직접 링크">​</a></h3>
 <ul>
 <li>IP 패킷을 전송하는 과정에서 발생하는 오류 및 제어 메시지를 처리하기 위한 프로토콜</li>
 <li>Ping(Echo Request/Reply), Destination Unreachable 등 네트워크 진단 및 관리에 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-패킷-구성도">ICMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 패킷 구성도에 대한 직접 링크" title="ICMP 패킷 구성도에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="icmp-패킷-구성도">ICMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ICMP 패킷 구성도에 대한 직접 링크" title="ICMP 패킷 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>크기</th><th>설명</th></tr></thead><tbody><tr><td>Type</td><td>8</td><td>ICMP 메시지 유형<br>0=Echo Reply, 8=Echo Request, 3=Dest. Unreachable 등</td></tr><tr><td>Code</td><td>8</td><td>Type에 따른 세부 코드</td></tr><tr><td>Checksum</td><td>16</td><td>ICMP 헤더+데이터를 합한 오류 검출을 위한 체크섬</td></tr><tr><td>Rest of Header</td><td>32 이상</td><td>Type, Code 조합에 따라 식별자, 시퀀스 등 추가 정보</td></tr><tr><td>Data</td><td>가변</td><td>ICMP 메시지의 실제 데이터</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-개념-구성도">IGMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 개념, 구성도에 대한 직접 링크" title="IGMP 개념, 구성도에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-개념">IGMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IGMP 개념에 대한 직접 링크" title="IGMP 개념에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-개념-구성도">IGMP 개념, 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 개념, 구성도에 대한 직접 링크" title="IGMP 개념, 구성도에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-개념">IGMP 개념<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IGMP 개념에 대한 직접 링크" title="IGMP 개념에 대한 직접 링크">​</a></h3>
 <ul>
 <li>호스트와 라우터가 멀티캐스트 그룹에 대한 가입(Join)과 탈퇴(Leave) 등을 관리하기 위한 프로토콜</li>
 <li>멀티캐스트 통신을 효율적으로 지원하기 위해 사용</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-패킷-구성도">IGMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 패킷 구성도에 대한 직접 링크" title="IGMP 패킷 구성도에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-패킷-구성도">IGMP 패킷 구성도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%ED%8C%A8%ED%82%B7-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IGMP 패킷 구성도에 대한 직접 링크" title="IGMP 패킷 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
 <table><thead><tr><th>구분</th><th>크기</th><th>설명</th></tr></thead><tbody><tr><td>Type</td><td>8</td><td>IGMP 메시지 유형<br>0x11=Membership Query, 0x16=Membership Report v2, 0x17=Leave Group 등</td></tr><tr><td>Max Resp Time</td><td>8</td><td>Membership Query에 대한 최대 응답 시간</td></tr><tr><td>Checksum</td><td>16</td><td>IGMP 헤더 전체에 대한 오류 검출을 위한 체크섬</td></tr><tr><td>Group Address</td><td>32</td><td>멀티캐스트 그룹 주소<br>General Query 시 0.0.0.0, 특정 그룹 쿼리 시 해당 멀티캐스트 주소</td></tr></tbody></table>
 <ul>
 <li>IGMP V3에서는 소스별 멀티캐스트 트래픽 관리 기능이 추가되어 Number of Sources와 Source Address 필드가 추가됨</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-가입-절차도-세부-절차">IGMP 가입 절차도, 세부 절차<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IGMP 가입 절차도, 세부 절차에 대한 직접 링크" title="IGMP 가입 절차도, 세부 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-가입-절차도">IGMP 가입 절차도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="IGMP 가입 절차도에 대한 직접 링크" title="IGMP 가입 절차도에 대한 직��접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-가입-절차도-세부-절차">IGMP 가입 절차도, 세부 절차<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%A0%88%EC%B0%A8%EB%8F%84-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IGMP 가입 절차도, 세부 절차에 대한 직접 링크" title="IGMP 가입 절차도, 세부 절차에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-가입-절차도">IGMP 가입 절차도<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="IGMP 가입 절차도에 대한 직접 링크" title="IGMP 가입 절차도에 대한 직��접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="igmp-가입-세부-절차">IGMP 가입 세부 절차<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IGMP 가입 세부 절차에 대한 직접 링크" title="IGMP 가입 세부 절차에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="igmp-가입-세부-절차">IGMP 가입 세부 절차<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#igmp-%EA%B0%80%EC%9E%85-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="IGMP 가입 세부 절차에 대한 직접 링크" title="IGMP 가입 세부 절차에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>단계</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>1. 그룹 가입</td><td>호스트가 새 멀티캐스트 그룹에 참여하고자 할 때 라우터에 가입 알림 전송</td><td>Membership Report</td></tr><tr><td>2. 멤버십 모니터링</td><td>라우터는 주기적으로 Query 메시지를 전송, 현재 그룹을 계속 사용하는 호스트가 있는지 확인</td><td>Membership Query</td></tr><tr><td>3. 멤버십 응답</td><td>호스트는 Query에 응답하여 아직 그룹이 필요함을 알림, 무응답 시 라우터는 더 이상 호스트가 없음 판단</td><td>Membership Report</td></tr><tr><td>4. 멤버십 탈퇴</td><td>호스트가 멀티캐스트 수신을 중단하고 싶으면 Leave Group 메시지 전송</td><td>Leave Group</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="icmp-igmp-비교">ICMP, IGMP 비교<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-igmp-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="ICMP, IGMP 비교에 대한 직접 링크" title="ICMP, IGMP 비교에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="icmp-igmp-비교">ICMP, IGMP 비교<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-igmp-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="ICMP, IGMP 비교에 대한 직접 링크" title="ICMP, IGMP 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>ICMP</th><th>IGMP</th></tr></thead><tbody><tr><td>목적</td><td>IP 패킷 전송 오류 및 제어 메시지 처리</td><td>멀티캐스트 그룹 가입/탈퇴 관리</td></tr><tr><td>유형</td><td>Echo Request/Reply, Dest. Unreachable 등</td><td>Membership Query, Membership Report, Leave Group 등</td></tr><tr><td>계층</td><td>네트워크 계층</td><td>네트워크 계층</td></tr><tr><td>사례</td><td>Ping, Traceroute</td><td>IPTV, 온라인 게임 등 멀티캐스트 서비스</td></tr><tr><td>데이터전송</td><td>오류, 제어 메세지 전송<br>데이터 페이로드는 네트워크 진단용</td><td>그룹 멤버십 정보 전송<br>실제 멀티캐스트 데이터는 UDP, RTP 상위 프로토콜 사용</td></tr><tr><td>보안 취약점</td><td>Ping Flooding, DDoS 등</td><td>IGMP Spoofing, IGMP Flooding 등</td></tr><tr><td>특징</td><td>일부 환경에서 ICMP 차단하여 진단 제약 발생 가능</td><td>그룹별, 소스별 트래픽 구분하여 필요 트래픽 전달 가능</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
@@ -331,17 +331,17 @@
             <guid>https://gracefullight.dev/pe/nw/network-realtime-kinematic/</guid>
             <pubDate>Sat, 21 Dec 2024 09:04:45 GMT</pubDate>
             <description><![CDATA[Network Real-Time Kinematic]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="nrtk-개념">NRTK 개념<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NRTK 개념에 대한 직접 링크" title="NRTK 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-개념">NRTK 개념<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NRTK 개념에 대한 직접 링크" title="NRTK 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>GNSS를 기반으로 다수의 기준국 네트워크를 이용하여 오차를 실시간으로 보정하고 이동국의 위치를 세티미터 단위로 정밀하게 측정하는 기술</li>
 <li>기존 RTK 범위, 오차로 인한 한계 극복, 위치 정밀보정 요구 증가, 통신 기술 발전</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="nrtk-구성도-구성요소-보정신호-구분">NRTK 구성도, 구성요소, 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크" title="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="nrtk-구성도">NRTK 구성도<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="NRTK 구성도에 대한 직접 링크" title="NRTK 구성도에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성도-구성요소-보정신호-구분">NRTK 구성도, 구성요소, 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크" title="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성도">NRTK 구성도<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="NRTK 구성도에 대한 직접 링크" title="NRTK 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="nrtk-구성요소">NRTK 구성요소<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="NRTK 구성요소에 대한 직접 링크" title="NRTK 구성요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성요소">NRTK 구성요소<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="NRTK 구성요소에 대한 직접 링크" title="NRTK 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>기준국</td><td>다수 GNSS 기지국이 위성신호를 수신하여 오차데이터를 제어센터로 전송</td><td>광역오차 데이터 수집</td></tr><tr><td>제어센터</td><td>기준국 데이터 옹합, 오차모델 생성, 가상 기준점 생성</td><td>실시간 보정 데이터 전송</td></tr><tr><td>이동국</td><td>GNSS 신호와 보정데이터를 결합하여 정밀한 위치 계산</td><td>cm 단위 오차 보정</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="nrtk-보정신호-구분">NRTK 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 보정신호 구분에 대한 직접 링크" title="NRTK 보정신호 구분에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-보정신호-구분">NRTK 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 보정신호 구분에 대한 직접 링크" title="NRTK 보정신호 구분에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>방식</th><th>설명</th><th>특징</th></tr></thead><tbody><tr><td>VRS</td><td>사용자 위치에 가상기준국을 생성하여 보정신호 제공</td><td>양방향 통신 필요</td></tr><tr><td>FKP</td><td>기준국 관측망 전체에 적용 가능한 보정신호 제공</td><td>삼각망 내 모든 지점 적용 가능</td></tr><tr><td>MAC</td><td>주기준국과 보조기준국 간 차이를 계산하여 셀 단위 보정 신호 제공</td><td>셀 내 모든 지점에 대한 보정 정보 제공</td></tr><tr><td>SSR</td><td>상태공간 표현을 통해 위성 및 대기 상태 정보를 분리하여 제공</td><td>위성 궤도, 전리층, 대류층 상태 포함</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
@@ -352,22 +352,22 @@
             <guid>https://gracefullight.dev/pe/nw/tcp-handshaking/</guid>
             <pubDate>Sat, 21 Dec 2024 08:46:49 GMT</pubDate>
             <description><![CDATA[Transmission Control Protocol's handshaking]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-개념">TCP 4-way 핸드쉐이킹 개념<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 개념에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-4-way-핸드쉐이킹-개념">TCP 4-way 핸드쉐이킹 개념<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 개념에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>TCP 장치들 사이에 논리적으로 성립된 연결을 해제하는 프로세스</li>
 <li>데이터 유실 방지, TIME_WAIT 제공</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-과정">TCP 4-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 과정에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 과정에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-절차도">TCP 4-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 절차도에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 절차도에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-4-way-핸드쉐이킹-과정">TCP 4-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 과정에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 과정에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-4-way-핸드쉐이킹-절차도">TCP 4-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 절차도에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 절차도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-4-way-핸드쉐이킹-세부-절차">TCP 4-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 세부 절차에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 세부 절차에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-4-way-핸드쉐이킹-세부-절차">TCP 4-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-4-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="TCP 4-way 핸드쉐이킹 세부 절차에 대한 직접 링크" title="TCP 4-way 핸드쉐이킹 세부 절차에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>Client</td><td>FIN_WAIT1</td><td>클라이언트가 연결 종료를 위한 FIN 플래그 전송 후 ACK, FIN 수신 대기</td></tr><tr><td>Server</td><td>CLOSE_WAIT</td><td>ACK 전송 후 어플리케이션 종료 대기, Close socket 후 FIN 전송</td></tr><tr><td>Client</td><td>FIN_WAIT2</td><td>서버로부터 FIN 수신 후 ACK 전송, 타이머 시작</td></tr><tr><td>Server</td><td>LAST_ACK</td><td>클라이언트로부터 ACK 수신 후 타이머 시작, 연결 종료</td></tr><tr><td>Client</td><td>TIME_WAIT</td><td>타이머 종료 후 연결 종료, TIME_WAIT 상태로 대기</td></tr><tr><td>-</td><td>CLOSED</td><td>서버, 클라이언트 연결 종료</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-과정">TCP 3-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 과정에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 과정에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-절차도">TCP 3-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 절차도에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 절차도에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-3-way-핸드쉐이킹-과정">TCP 3-way 핸드쉐이킹 과정<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 과정에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 과정에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-3-way-핸드쉐이킹-절차도">TCP 3-way 핸드쉐이킹 절차도<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%A0%88%EC%B0%A8%EB%8F%84" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 절차도에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 절차도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-3-way-핸드쉐이킹-세부-절차">TCP 3-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 세부 절차에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 세부 절차에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-3-way-핸드쉐이킹-세부-절차">TCP 3-way 핸드쉐이킹 세부 절차<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-3-way-%ED%95%B8%EB%93%9C%EC%89%90%EC%9D%B4%ED%82%B9-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="TCP 3-way 핸드쉐이킹 세부 절차에 대한 직접 링크" title="TCP 3-way 핸드쉐이킹 세부 절차에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>Client</td><td>SYN_SENT</td><td>서버에게 연결 요청을 위한 SYN 패킷 전송</td></tr><tr><td>Server</td><td>SYN_RCVD</td><td>클라이언트로부터 SYN 패킷 수신 후 ACK, SYN 패킷 전송</td></tr><tr><td>Client</td><td>ESTABLISHED</td><td>서버로부터 ACK, SYN 패킷 수신 후 ACK 패킷 전송, 연결 성립</td></tr><tr><td>Server</td><td>ESTABLISHED</td><td>클라이언트로부터 ACK 패킷 수신 후 연결 성립</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="tcp-제어-플��래그-설명">TCP 제어 플래그 설명<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-%EC%A0%9C%EC%96%B4-%ED%94%8C%EB%9E%98%EA%B7%B8-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="TCP 제어 플래그 설명에 대한 직접 링크" title="TCP 제어 플래그 설명에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="tcp-제어-플��래그-설명">TCP 제어 플래그 설명<a href="https://gracefullight.dev/pe/nw/tcp-handshaking/#tcp-%EC%A0%9C%EC%96%B4-%ED%94%8C%EB%9E%98%EA%B7%B8-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="TCP 제어 플래그 설명에 대한 직접 링크" title="TCP 제어 플래그 설명에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>제어 플래그</th><th>설명</th></tr></thead><tbody><tr><td>긴급할당</td><td>URG</td><td>송신 측 상위 계층의 긴급 데이터 확인시 1 설정</td></tr><tr><td>확인응답</td><td>ACK</td><td>1 확인번호 유효, 0 확인번호 미포함</td></tr><tr><td>버퍼데이터공간</td><td>PSH</td><td>버퍼링 데이터를 상위 계층으로 즉시 전달</td></tr><tr><td>연결초기화</td><td>RST</td><td>연결 확립된 세션을 강제 리셋 요청</td></tr><tr><td>연결시작</td><td>SYN</td><td>TCP 연결설정 시 순서번호를 동기화</td></tr><tr><td>연결종료</td><td>FIN</td><td>송신 측 연결 종료 요청</td></tr></tbody></table>
 <ul>
 <li>3way는 SYN, SYN+ACK, ACK 사용, 4way는 FIN, ACK 사용</li>
@@ -381,17 +381,17 @@
             <guid>https://gracefullight.dev/pe/nw/hdlc-protocol/</guid>
             <pubDate>Fri, 20 Dec 2024 14:25:23 GMT</pubDate>
             <description><![CDATA[High-Level Data Link Control Protocol]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hdlc-프로토콜-개념">HDLC 프로토콜 개념<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="HDLC 프로토콜 개념에 대한 직접 링크" title="HDLC 프로토콜 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프로토콜-개념">HDLC 프로토콜 개념<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="HDLC 프로토콜 개념에 대한 직접 링크" title="HDLC 프로토콜 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>일대일, 일대다 연결 환경에서 비트프레임 구조의 데이터를 송수신하는 데이터링크 계층 ISO13239 표준 프로토콜</li>
 <li>비트지향 프로토콜, 동기식 전송, 다양한 토폴로지 지원, 오류제어, 흐름제어, 모드 지원</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hdlc-프레임-구조-동작-모드">HDLC 프레임 구조, 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 구조, 동작 모드에 대한 직접 링크" title="HDLC 프레임 구조, 동작 모드에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="hdlc-프레임-구조">HDLC 프레임 구조<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="HDLC 프레임 구조에 대한 직접 링크" title="HDLC 프레임 구조에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-구조-동작-모드">HDLC 프레임 구조, 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 구조, 동작 모드에 대한 직접 링크" title="HDLC 프레임 구조, 동작 모드에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-구조">HDLC 프레임 구조<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="HDLC 프레임 구조에 대한 직접 링크" title="HDLC 프레임 구조에 대한 직접 링크">​</a></h3>
 <!-- -->
 <table><thead><tr><th>필드</th><th>길이</th><th>설명</th></tr></thead><tbody><tr><td>Flag</td><td>8</td><td>프레임 시작, 종료 표시, 01111110<sub>2</sub></td></tr><tr><td>Address</td><td>8</td><td>일대다 주국, 종국 주소, 일대일 명령, 응답 구분</td></tr><tr><td>Control</td><td>8</td><td>프레임 종류, 제어 정보, 송수신 순서번호</td></tr><tr><td>Data</td><td>가변</td><td>L3 계층이 송신한 패킷 데이터</td></tr><tr><td>FCS</td><td>16</td><td>오류제어, CRC-16 기반 오류 검출 코드</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="hdlc-프레임-동작-모드">HDLC 프레임 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 동작 모드에 대한 직접 링크" title="HDLC 프레임 동작 모드에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="nrm-normal-response-mode">NRM (Normal Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#nrm-normal-response-mode" class="hash-link" aria-label="NRM (Normal Response Mode)에 대한 직접 링크" title="NRM (Normal Response Mode)에 대한 직접 링크">​</a></h4>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-동작-모드">HDLC 프레임 동작 모드<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="HDLC 프레임 동작 모드에 대한 직접 링크" title="HDLC 프레임 동작 모드에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="nrm-normal-response-mode">NRM (Normal Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#nrm-normal-response-mode" class="hash-link" aria-label="NRM (Normal Response Mode)에 대한 직접 링크" title="NRM (Normal Response Mode)에 대한 직접 링크">​</a></h4>
 <blockquote>
 <p>정규응답모드</p>
 </blockquote>
@@ -401,7 +401,7 @@
 <li>종국은 주국의 폴링 요청에만 응답</li>
 <li>종국은 프레임 전송 후 다시 허가 대기</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="arm-asynchronous-response-mode">ARM (Asynchronous Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#arm-asynchronous-response-mode" class="hash-link" aria-label="ARM (Asynchronous Response Mode)에 대한 직접 링크" title="ARM (Asynchronous Response Mode)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="arm-asynchronous-response-mode">ARM (Asynchronous Response Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#arm-asynchronous-response-mode" class="hash-link" aria-label="ARM (Asynchronous Response Mode)에 대한 직접 링크" title="ARM (Asynchronous Response Mode)에 대한 직접 링크">​</a></h4>
 <blockquote>
 <p>비동기응답모드</p>
 </blockquote>
@@ -411,7 +411,7 @@
 <li>종국의 모든 전송은 주국으로 전송되어 최종 목적지로 중계</li>
 <li>실제로 거의 사용되지 않음</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_es5Y" id="abm-asynchronous-balanced-mode">ABM (Asynchronous Balanced Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#abm-asynchronous-balanced-mode" class="hash-link" aria-label="ABM (Asynchronous Balanced Mode)에 대한 직접 링크" title="ABM (Asynchronous Balanced Mode)에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="abm-asynchronous-balanced-mode">ABM (Asynchronous Balanced Mode)<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#abm-asynchronous-balanced-mode" class="hash-link" aria-label="ABM (Asynchronous Balanced Mode)에 대한 직접 링크" title="ABM (Asynchronous Balanced Mode)에 대한 직접 링크">​</a></h4>
 <blockquote>
 <p>비동기균형모드</p>
 </blockquote>
@@ -421,7 +421,7 @@
 <li>양쪽에서 명령/응답 전송 가능</li>
 <li>폴링 오버헤드가 없어 P2P 환경에서 가장 많이 사용</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hdlc-이더넷-비교">HDLC, 이더넷 비교<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%EC%9D%B4%EB%8D%94%EB%84%B7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="HDLC, 이더넷 비교에 대한 직접 링�크" title="HDLC, 이더넷 비교에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-이더넷-비교">HDLC, 이더넷 비교<a href="https://gracefullight.dev/pe/nw/hdlc-protocol/#hdlc-%EC%9D%B4%EB%8D%94%EB%84%B7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="HDLC, 이더넷 비교에 대한 직접 링�크" title="HDLC, 이더넷 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>HDLC</th><th>이더넷</th></tr></thead><tbody><tr><td>네트워크 환경</td><td>WAN 환경</td><td>LAN 환경</td></tr><tr><td>데이터 구조</td><td>비트 중심</td><td>프레임 중심</td></tr><tr><td>송수신 형식</td><td>동기식, 비동기 모드 지원</td><td>비동기식</td></tr><tr><td>표준</td><td>ISO 13239</td><td>IEEE 802.3</td></tr><tr><td>주소체계</td><td>Address 필드</td><td>MAC 주소</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
@@ -432,19 +432,19 @@
             <guid>https://gracefullight.dev/pe/nw/network-protocol/</guid>
             <pubDate>Thu, 19 Dec 2024 14:08:06 GMT</pubDate>
             <description><![CDATA[Network protocol]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_es5Y" id="네트워크-프로토콜-개념">네트워크 프로토콜 개념<a href="https://gracefullight.dev/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="네트워크 프로토콜 개념에 대한 직접 링크" title="네트워크 프로토콜 개념에 대한 직접 링크">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="네트워크-프로토콜-개념">네트워크 프로토콜 개념<a href="https://gracefullight.dev/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="네트워크 프로토콜 개념에 대한 직접 링크" title="네트워크 프로토콜 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>네트워크 상에서 데이터 전송 규칙과 절차를 정의하여 효율적이고 신뢰서 있는 통신을 보장하는 규약</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="네트워크-프로토콜-구성도-3가지-요소">네트워크 프로토콜 구성도, 3가지 요소<a href="https://gracefullight.dev/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="네트워크 프로토콜 구성도, 3가지 요소에 대한 직접 링크" title="네트워크 프로토콜 구성도, 3가지 요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="프로토콜-구성도">프로토콜 구성도<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="프로토콜 구성도에 대한 직접 링크" title="프로토콜 구성도에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="네트워크-프로토콜-구성도-3가지-요소">네트워크 프로토콜 구성도, 3가지 요소<a href="https://gracefullight.dev/pe/nw/network-protocol/#%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="네트워크 프로토콜 구성도, 3가지 요소에 대한 직접 링크" title="네트워크 프로토콜 구성도, 3가지 요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-구성도">프로토콜 구성도<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="프로토콜 구성도에 대한 직접 링크" title="프로토콜 구성도에 대한 직접 링크">​</a></h3>
 <!-- -->
 <ul>
 <li>프로토콜을 정의한 RFC 문서에 따라 구문, 의미, 타이밍 등을 기반으로 송수신 장치간 네트워크 통신 수행</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="프로토콜-3가지-요소-상세">프로토콜 3가지 요소 상세<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C-%EC%83%81%EC%84%B8" class="hash-link" aria-label="프로토콜 3가지 요소 상세에 대한 직접 링크" title="프로토콜 3가지 요소 상세에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-3가지-요소-상세">프로토콜 3가지 요소 상세<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-3%EA%B0%80%EC%A7%80-%EC%9A%94%EC%86%8C-%EC%83%81%EC%84%B8" class="hash-link" aria-label="프로토콜 3가지 요소 상세에 대한 직접 링크" title="프로토콜 3가지 요소 상세에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>상세요소</th><th>설명</th></tr></thead><tbody><tr><td>구문</td><td>포맷</td><td>통신, 처리, 해석에 적합하도록 형식, 규격화된 표현</td></tr><tr><td>-</td><td>부호화</td><td>Row data와 부호 간의 대응 관계, 압축, 암호화 수행</td></tr><tr><td>-</td><td>신호레벨</td><td>물리적인 신호 크기, 감도, 주파수 크기</td></tr><tr><td>의미</td><td>정보규격정의</td><td>특정 패턴을 어떻게 해석하고 동작할지 결정</td></tr><tr><td>-</td><td>오류제어</td><td>의미 기반 통신 메세지 오류 제어</td></tr><tr><td>-</td><td>동기제어</td><td>송수신 장치 간 상태 일치 및 제어</td></tr><tr><td>타이밍</td><td>속도</td><td>통신 속도, 단위, Band Rate 등</td></tr><tr><td>-</td><td>순서제어</td><td>송수신 장치 간 메세지 순서 규정 및 제어</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_es5Y" id="프로토콜-유형-및-기능">프로토콜 유형 및 기능<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%9C%A0%ED%98%95-%EB%B0%8F-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="프로토콜 유형 및 기능에 대한 직접 링크" title="프로토콜 유형 및 기능에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="프로토콜-유형-및-기능">프로토콜 유형 및 기능<a href="https://gracefullight.dev/pe/nw/network-protocol/#%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EC%9C%A0%ED%98%95-%EB%B0%8F-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="프로토콜 유형 및 기능에 대한 직접 링크" title="프로토콜 유형 및 기능에 대한 직접 링크">​</a></h2>
 <!-- -->
 <ul>
 <li>ISO7498 표준에 따른 응용계층, 전송계층, 네트워크계층, 물리계층 프로토콜로 구분</li>
