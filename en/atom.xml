@@ -29,7 +29,29 @@
 <li>X 트리는 고차원 데이터를 다루는 슈퍼노드를 사용한 R 트리 확장 구조</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-활용분야">다차원 색인구조 활용분야<a href="https://gracefullight.dev/en/pe/db/multi-dimensional-indexes/#%EB%8B%A4%EC%B0%A8%EC%9B%90-%EC%83%89%EC%9D%B8%EA%B5%AC%EC%A1%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>지리 정보</td><td>GIS</td><td>R트리 활용 지리 정보 저장 및 검색</td></tr><tr><td>-</td><td>위성영상분석</td><td>사분트리, 위성데이터 분할 저장</td></tr><tr><td>멀티미디어</td><td>이미지</td><td>K-D 트리, 사분 트리, 이미지 속성 저장</td></tr><tr><td>-</td><td>비디오</td><td>K-D 트리, 메타데이터 인덱싱</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>지리 정보</td><td>GIS</td><td>R트리 활용 지리 정보 저장 및 검색</td></tr><tr><td>-</td><td>위성영상분석</td><td>사분트리, 위성데이터 분할 저장</td></tr><tr><td>멀티미디어</td><td>이미지</td><td>K-D 트리, 사분 트리, 이미지 속성 저장</td></tr><tr><td>-</td><td>비디오</td><td>K-D 트리, 메타데이터 인덱싱</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hnsw">HNSW<a href="https://gracefullight.dev/en/pe/db/multi-dimensional-indexes/#hnsw" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>Hierarchical Navigable Small Worlds</p>
+</blockquote>
+<table><thead><tr><th>개념도</th><th>개념</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="hnsw" src="https://gracefullight.dev/en/assets/images/hnsw-99cda91980c70560637a68f95c31ee52.webp" width="1920" height="1080" class="img_hlsJ"></td><td>계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공</td></tr></tbody></table>
+<ul>
+<li>
+<p>다층 그래프 사용 저장</p>
+</li>
+<li>
+<p>지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색</p>
+</li>
+<li>
+<p>메모리 기반, 빠름, 고차원 데이터 효율적 처리</p>
+</li>
+<li>
+<p>Milvus, Pinecone 방식</p>
+</li>
+<li>
+<p><a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank" rel="noopener noreferrer">Pinecone: Hierarchical Navigable Small Worlds</a></p>
+</li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>

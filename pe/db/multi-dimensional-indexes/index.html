@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.8f848acf.css">
-<script src="/assets/js/runtime~main.347f4044.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.469ac8fc.js" defer="defer"></script>
 <script src="/assets/js/main.1bf5c7bb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -53,7 +53,29 @@
 <li>X 트리는 고차원 데이터를 다루는 슈퍼노드를 사용한 R 트리 확장 구조</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="다차원-색인구조-활용분야">다차원 색인구조 활용분야<a href="#다차원-색인구조-활용분야" class="hash-link" aria-label="다차원 색인구조 활용분야에 대한 직접 링크" title="다차원 색인구조 활용분야에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>지리 정보</td><td>GIS</td><td>R트리 활용 지리 정보 저장 및 검색</td></tr><tr><td>-</td><td>위성영상분석</td><td>사분트리, 위성데이터 분할 저장</td></tr><tr><td>멀티미디어</td><td>이미지</td><td>K-D 트리, 사분 트리, 이미지 속성 저장</td></tr><tr><td>-</td><td>비디오</td><td>K-D 트리, 메타데이터 인덱싱</td></tr></tbody></table></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>태그:</b><ul class="tags_zicD padding--none margin-left--sm"><li class="tag_Sx2u"><a title="기술사 관련 포스트" class="tag_juns tagRegular_hpf_" href="/tags/pe/">professional-engineer</a></li><li class="tag_Sx2u"><a title="기술사 데이터베이스 토픽" class="tag_juns tagRegular_hpf_" href="/tags/pe/db/">pe/database</a></li></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--next" href="/pe/db/isolation-levels/"><div class="pagination-nav__sublabel">다음 게시물</div><div class="pagination-nav__label">트랜잭션 격리수준</div></a></nav></main><div class="col col--2"><div class="tableOfContents_fqFr thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#다차원-색인구조-개념" class="table-of-contents__link toc-highlight">다차원 색인구조 개념</a></li><li><a href="#다차원-색인구조-유형" class="table-of-contents__link toc-highlight">다차원 색인구조 유형</a></li><li><a href="#다차원-색인구조-상세" class="table-of-contents__link toc-highlight">다차원 색인구조 상세</a><ul><li><a href="#pam-기반-다차원-색인구조" class="table-of-contents__link toc-highlight">PAM 기반 다차원 색인구조</a></li><li><a href="#sam-기반-다차원-색인구조" class="table-of-contents__link toc-highlight">SAM 기반 다차원 색인구조</a></li></ul></li><li><a href="#다차원-색인구조-활용분야" class="table-of-contents__link toc-highlight">다차원 색인구조 활용분야</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Support Me</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.buymeacoffee.com/LOUB2kN" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>지리 정보</td><td>GIS</td><td>R트리 활용 지리 정보 저장 및 검색</td></tr><tr><td>-</td><td>위성영상분석</td><td>사분트리, 위성데이터 분할 저장</td></tr><tr><td>멀티미디어</td><td>이미지</td><td>K-D 트리, 사분 트리, 이미지 속성 저장</td></tr><tr><td>-</td><td>비디오</td><td>K-D 트리, 메타데이터 인덱싱</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_es5Y" id="hnsw">HNSW<a href="#hnsw" class="hash-link" aria-label="HNSW에 대한 직접 링크" title="HNSW에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Hierarchical Navigable Small Worlds</p>
+</blockquote>
+<table><thead><tr><th>개념도</th><th>개념</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="hnsw" src="/assets/images/hnsw-99cda91980c70560637a68f95c31ee52.webp" width="1920" height="1080" class="img_hlsJ"></td><td>계층적 그래프와 Small World Network 기반의 근사 최근접 이웃 검색(ANN)을 수행하여 대규모 벡터 데이터에서 빠르고 정확한 검색 제공</td></tr></tbody></table>
+<ul>
+<li>
+<p>다층 그래프 사용 저장</p>
+</li>
+<li>
+<p>지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색</p>
+</li>
+<li>
+<p>메모리 기반, 빠름, 고차원 데이터 효율적 처리</p>
+</li>
+<li>
+<p>Milvus, Pinecone 방식</p>
+</li>
+<li>
+<p><a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank" rel="noopener noreferrer">Pinecone: Hierarchical Navigable Small Worlds</a></p>
+</li>
+</ul></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>태그:</b><ul class="tags_zicD padding--none margin-left--sm"><li class="tag_Sx2u"><a title="기술사 관련 포스트" class="tag_juns tagRegular_hpf_" href="/tags/pe/">professional-engineer</a></li><li class="tag_Sx2u"><a title="기술사 데이터베이스 토픽" class="tag_juns tagRegular_hpf_" href="/tags/pe/db/">pe/database</a></li></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--next" href="/pe/db/isolation-levels/"><div class="pagination-nav__sublabel">다음 게시물</div><div class="pagination-nav__label">트랜잭션 격리수준</div></a></nav></main><div class="col col--2"><div class="tableOfContents_fqFr thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#다차원-색인구조-개념" class="table-of-contents__link toc-highlight">다차원 색인구조   개념</a></li><li><a href="#다차원-색인구조-유형" class="table-of-contents__link toc-highlight">다차원 색인구조 유형</a></li><li><a href="#다차원-색인구조-상세" class="table-of-contents__link toc-highlight">다차원 색인구조 상세</a><ul><li><a href="#pam-기반-다차원-색인구조" class="table-of-contents__link toc-highlight">PAM 기반 다차원 색인구조</a></li><li><a href="#sam-기반-다차원-색인구조" class="table-of-contents__link toc-highlight">SAM 기반 다차원 색인구조</a></li></ul></li><li><a href="#다차원-색인구조-활용분야" class="table-of-contents__link toc-highlight">다차원 색인구조 활용분야</a></li><li><a href="#hnsw" class="table-of-contents__link toc-highlight">HNSW</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Support Me</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.buymeacoffee.com/LOUB2kN" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
                 <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="height: auto !important;width: auto !important;">
               </a></li></ul></div><div class="col footer__col"><div class="footer__title">Feeds</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://gracefullight.dev/rss.xml" target="_blank" rel="noopener noreferrer" class="footer__link-item">RSS<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_OBcN"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://gracefullight.dev/atom.xml" target="_blank" rel="noopener noreferrer" class="footer__link-item">Atom<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_OBcN"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2016-2025 Eunkwang Shin.</div></div></div></footer></div>
 </body>
