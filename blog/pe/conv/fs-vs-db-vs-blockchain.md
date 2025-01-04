@@ -6,7 +6,6 @@ image: ./assets/fs-db-blockchain.png
 authors: me
 tags:
   - pe
-  - pe/130
   - pe/conv
 ---
 

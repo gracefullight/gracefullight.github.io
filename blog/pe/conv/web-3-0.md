@@ -5,7 +5,6 @@ description: 웹 3.0 분석
 authors: me
 tags:
   - pe
-  - pe/130
   - pe/conv
 ---
 

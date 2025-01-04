@@ -5,7 +5,6 @@ description: 오토스케일링
 authors: me
 tags:
   - pe
-  - pe/131
   - pe/conv
 ---
 

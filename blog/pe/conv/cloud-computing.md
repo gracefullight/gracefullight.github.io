@@ -6,7 +6,6 @@ image: ./assets/cloud-computing.png
 authors: me
 tags:
   - pe
-  - pe/131
   - pe/conv
 ---
 

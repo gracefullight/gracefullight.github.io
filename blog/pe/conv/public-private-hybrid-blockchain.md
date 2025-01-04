@@ -5,7 +5,6 @@ description: Public, Private, Hybrid Blockchain
 authors: me
 tags:
   - pe
-  - pe/126
   - pe/conv
 ---
 

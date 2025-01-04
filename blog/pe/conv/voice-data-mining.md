@@ -6,7 +6,6 @@ authors: me
 tags:
   - pe
   - pe/conv
-  - pe/130
 ---
 
 ## 음성 데이터 마이닝의 개요

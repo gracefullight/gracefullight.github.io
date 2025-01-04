@@ -6,7 +6,6 @@ authors: me
 tags:
   - pe
   - pe/conv
-  - pe/130
 ---
 
 ## NFT 개념
