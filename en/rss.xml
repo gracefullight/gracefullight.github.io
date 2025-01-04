@@ -21,7 +21,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_wVfg" id="som-구성도-구성요소-ann과의-차이점">SOM 구성도, 구성요소, ANN과의 차이점<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-ann%EA%B3%BC%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_wVfg" id="som-구성도">SOM 구성도<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="SOM" src="https://gracefullight.dev/en/assets/images/som-f8c04e2aac5257cbcd97926522a2a8e4.png" width="1900" height="1429" class="img_Hfj7"></p>
+<p><img decoding="async" loading="lazy" alt="SOM" src="https://gracefullight.dev/en/assets/images/som-d0ff0d937a7a87fb8fa74b1e480a5a37.png" width="1953" height="1429" class="img_Hfj7"></p>
 <ul>
 <li>경쟁층 뉴런들이 2차원 격자구조로 배열, 고차원 입력 데이터를 저차원 공간에 시각적으로 표현하는 구조</li>
 </ul>
