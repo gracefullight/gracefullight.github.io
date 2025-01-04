@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.1f5fe35e.css">
-<script src="/en/assets/js/runtime~main.af3bd1ed.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.b955d8ac.js" defer="defer"></script>
 <script src="/en/assets/js/main.14443d8f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,7 +48,7 @@
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="pam-기반-다차원-색인구조">PAM 기반 다차원 색인구조<a href="#pam-기반-다차원-색인구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>K-D 트리</td><td><img decoding="async" loading="lazy" alt="K-D Tree" src="/en/assets/images/k-d-tree-6ad1b41fc46021b95f2495b1ecf6c25e.png" width="1589" height="1053" class="img_hlsJ"></td><td>이진탐색트리 BST를 다차원 확장하여 K차원 점 데이터 색인<br>트리 레벨과 값을 번갈아 비교</td></tr><tr><td>Grid File</td><td><img decoding="async" loading="lazy" alt="Grid File" src="/en/assets/images/grid-file-0f98620ab4af384cd359566d5937b81d.png" width="1365" height="1409" class="img_hlsJ"></td><td>데이터포인트를 다차원 그리드 공간에 매핑하여 저장<br>각 차원 범위를 선형눈금계로 나눠 격자 배열 생성</td></tr><tr><td>사분트리</td><td><img decoding="async" loading="lazy" alt="Quad Tree" src="/en/assets/images/quad-tree-54a17c8dbff170fa6e536a5aa099eaab.png" width="1376" height="1409" class="img_hlsJ"></td><td>공간을 반복적으로 4개의 하위 영역으로 분할하는 자료구조<br>고차원 데이터 부적합, 공간 분할로인한 비효율적 메모리 사용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="sam-기반-다차원-색인구조">SAM 기반 다차원 색인구조<a href="#sam-기반-다차원-색인구조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>R 트리</td><td><img decoding="async" loading="lazy" alt="R Tree" src="/en/assets/images/r-tree-07624d18628562133db80d8105c73189.png" width="1280" height="1014" class="img_hlsJ"></td><td>MBR을 구하여 인덱스를 엔트리로 저장하는 자료구조<br>완전균형트리로   데이터 객체를 여러 차원의 구간들로 표현</td></tr><tr><td>R+ 트리</td><td><img decoding="async" loading="lazy" alt="R+ Tree" src="/en/assets/images/r-plus-tree-60e7e9d5fe183ca44eaa1b6cf66eb2de.png" width="1900" height="1638" class="img_hlsJ"></td><td>여러 MBR과 중첩되는 데이터는 여러 노드에 중복 저장하는 자료구조<br>K-D 트리와 R 트리의 중간 형태</td></tr><tr><td>R* 트리</td><td>-</td><td>R 트리와 구조, 연산은 유사하나 삽입 삭제시 노드 간 MBR 중첩 최소화한 자료구조</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>개념도</th><th>설명</th></tr></thead><tbody><tr><td>R 트리</td><td><img decoding="async" loading="lazy" alt="R Tree" src="/en/assets/images/r-tree-07624d18628562133db80d8105c73189.png" width="1280" height="1014" class="img_hlsJ"></td><td>MBR을 구하여 인덱스를 엔트리로 저장하는 자료구조<br>완전균형트리로   데이터 객체를 여러 차원의 구간들로 표현</td></tr><tr><td>R+ 트리</td><td><img decoding="async" loading="lazy" alt="R+ Tree" src="/en/assets/images/r-plus-tree-60e7e9d5fe183ca44eaa1b6cf66eb2de.png" width="1900" height="1638" class="img_hlsJ"></td><td>여러 MBR과 중첩되는 데이터는 여러 노드에 중복 저장하는 자료구조<br>K-D 트리와 R 트리의 중간 형태</td></tr><tr><td>R* 트리</td><td><img decoding="async" loading="lazy" alt="R* Tree" src="/en/assets/images/r-asterisk-tree-1eee4d41d5bdbda9c8dde58bc603f1e0.png" width="1589" height="1330" class="img_hlsJ"></td><td>R 트리와 구조, 연산은 유사하나 삽입 삭제시 노드 간 MBR 중첩 최소화한 자료구조</td></tr></tbody></table>
 <ul>
 <li>X 트리는 고차원 데이터를 다루는 슈퍼노드를 사용한 R 트리 확장 구조</li>
 </ul>
@@ -63,7 +63,7 @@
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="read-uncommitted">Read Uncommitted<a href="#read-uncommitted" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
-<li>트  랜잭션이 완료되지 않은 데이터를 다른 트랜잭션이 참조하는 것을 허용하는 격리수준</li>
+<li>트랜잭션이 완료되지 않은 데이터를 다른 트랜잭션이 참조하는 것을 허용하는 격리수준</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="read-committed">Read Committed<a href="#read-committed" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
@@ -98,15 +98,15 @@
 <li>동적 SQL 사용시 WAF, Stored Procedure, Prepared Statement 등을 활용하여 보안 강화 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_zicD padding--none margin-left--sm"><li class="tag_Sx2u"><a title="기술사 관련 포스트" class="tag_juns tagRegular_hpf_" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_Sx2u"><a title="기술사 데이터베이스 토픽" class="tag_juns tagRegular_hpf_" href="/en/tags/pe/db/">pe/database</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_QTnL"><a href="/en/pe/db/공공기관-데이터베이스-표준화지침/">공공기관 데이터베이스 표준화지침</a></h2><div class="container_Hspk margin-vert--md"><time datetime="2024-07-24T03:21:21.567Z">July 24, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_wAaV"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_fysX" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_wilB"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_pbjK">Gracefullight</span></a></div><small class="authorTitle_bMZf" title="Owner">Owner</small><div class="authorSocials_CH46"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-개념">공공기관 데이터베이스 표준화지침 개념<a href="#공공기관-데이터베이스-표준화지침-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>공공기관이 생성 또는 취득하여 관리하는 데이터베이스 표준화에 필요한 세부 사항을 정립한 지침</li>
-<li>데이터 품질향상, 호환성, 공공기관 간 데이터 상호운용성, 공공데이터  신뢰성, 투명성 보장</li>
+<li>공공기관이 생성 또는 취득하여 관리하는 데이터  베이스 표준화에 필요한 세부 사항을 정립한 지침</li>
+<li>데이터 품질향상, 호환성, 공공기관 간 데이터 상호운용성, 공공데이터 신뢰성, 투명성 보장</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-구성도-구성요소-적용방안">공공기관 데이터베이스 표준화지침 구성도, 구성요소, 적용방안<a href="#공공기관-데이터베이스-표준화지침-구성도-구성요소-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-구성도">공공기관 데이터베이스 표준화지침 구성도<a href="#공공기관-데이터베이스-표준화지침-구성도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-구성요소">공공기관 데이터베이스 표준화지침 구성요소<a href="#공공기관-데이터베이스-표준화지침-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>표준화 관리</td><td>표준화 관리체계 구축, 표준 수립, 적용, 산출물 관리</td><td>데이터 표준 사전 작성, 코드 표준 준수</td></tr><tr><td>공통 표준용어 관리</td><td>공통 표준 용어 관리 원칙, 구성요소 및 관리 항목</td><td>재개정시 이해관계자 협의</td></tr><tr><td>메타데이터 관리</td><td>기관 중앙 메타데이터 관리 시스템 구축 및 운영</td><td>메타데이터 표준 관리항목 등록</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-적용방안">공공기관 데이터베이스 표준화지침 적용방안<a href="#공공기관-데이터베이스-표준화지침-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="공공기관-데이터베이스-표준화지침-적용방안">공공기관 데이터  베이스 표준화지침 적용방안<a href="#공공기관-데이터베이스-표준화지침-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공기관</td><td>표준화 관리체계 구축, 메타데이터 등록 및 관리</td><td>기관 여건에 맞는 시행 세칙 제정</td></tr><tr><td>행정안전부</td><td>예산확보, 지원, 지침 재,개정, 공통 표준 용어 관리</td><td>표준화 협의체 운영</td></tr><tr><td>데이터 활용지원센터</td><td>표준화 정책, 제도 조사 및 연구, 기술 개발 및 지원, 홍보 교육</td><td>전담 조직 구성 및 운영</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="표준화지침-이행시-고려사항">표준화지침 이행시 고려사항<a href="#표준화지침-이행시-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -120,7 +120,7 @@
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="cap-이론-개념도">CAP 이론 개념도<a href="#cap-이론-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="cap-이론-구성요소">CAP 이론 구성요소<a href="#cap-이론-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">C + P</mark></td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">A + P</mark></td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">C + A</mark></td><td>네트 워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">C + P</mark></td><td>일부 노드 장애시에도 일관성 유지</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">A + P</mark></td><td>일부 노드 장애시에도 시스템은 계속 응답</td><td>DynamoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">C + A</mark></td><td>네트워크 분할이 없을시 일관성, 가용성 보장</td><td>RDBMS</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="pacelc-이론-개념도-구성요소">PACELC 이론 개념도, 구성요소<a href="#pacelc-이론-개념도-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="pacelc-이론-개념도">PACELC 이론 개념도<a href="#pacelc-이론-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
@@ -136,13 +136,13 @@
 <!-- -->
 <ul>
 <li>파티셔닝: 큰 테이블을 관리하기 쉬운 단위로 분할하는 기법</li>
-<li>샤딩: 테이블을 분리하여 다수의 물리DB서버 에 분산 저장하는 기법</li>
+<li>샤딩: 테이블을 분리하여 다수의 물리DB서버에 분산 저장하는 기법</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법">샤딩, 파티셔닝 구성요고, 주요 데이터베이스 분할 기법<a href="#샤딩-파티셔닝-구성요고-주요-데이터베이스-분할-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="샤딩-파티셔닝-구성요소-비교">샤딩, 파티셔닝 구성요소 비교<a href="#샤딩-파티셔닝-구성요소-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>샤딩</th><th>파티셔닝</th></tr></thead><tbody><tr><td>목적</td><td>데이터 분산저장, 고가용성, 성능</td><td>데이터 관리용이, 성능</td></tr><tr><td>분할방법</td><td>수평분할</td><td>수평, 수직분할</td></tr><tr><td>분할관점</td><td>테이블을 여러 DB로 분할</td><td>하나의 DB에서 테이블 분할</td></tr><tr><td>관리노드</td><td>샤드간 라우팅 수행용 마스터</td><td>마스터노드 없음</td></tr><tr><td>테이블연동</td><td>분할 테이블 간 조인 불가</td><td>테이블 간 조인 가능</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="주요-데이터베이스-분할-기법">주요 데이터베이스 분할 기법<a href="#주요-데이터베이스-분할-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Vertical 분할</td><td>테이블별, 열별 분할</td><td>구현 간단</td></tr><tr><td>Range-Based 분할</td><td>하나의 기능이나 테이블이 비대해 질시 행 분할</td><td>예측 가능성</td></tr><tr><td>Key 또는 Hash 분할</td><td>엔티티를 해싱하여 분할 결정</td><td>균등분포 해싱함수</td></tr><tr><td>Directory 기반 분할</td><td>파티셔닝 매커니즘을 제공하는 추상화된 서비스를 사용하여 분할</td><td>샤딩 사용, 샤드키 연동</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="데이터베이스-분할-절차도-세부절차">데이터베이스 분할 절차도, 세부절차<a href="#데이터베이스-분할-절차도-세부절차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="데이터베이스-분할-절차도">데이터베이스 분할 절차도<a href="#데이터베이스-분할-절차도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
@@ -180,7 +180,7 @@
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="데이터베이스-튜닝-절차-튜닝-기법">데이터베이스 튜닝 절차, 튜닝 기법<a href="#데이터베이스-튜닝-절차-튜닝-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="데이터베이스-튜닝-절차">데이터베이스 튜닝 절차<a href="#데이터베이스-튜닝-절차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_es5Y" id="설계단계-튜닝-기법">설계단계 튜닝 기법<a href="#설계단계- 튜닝-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_es5Y" id="설계단계-튜닝-기법">설계단계 튜닝 기법<a href="#설계단계-튜닝-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정규화</td><td>데이터 중복 제거, 함수종속성 제거</td><td>무결성 확보</td></tr><tr><td>반정규화</td><td>성능 향상을 위한 중복 허용</td><td>조회 성능 개선</td></tr><tr><td>파티셔닝</td><td>대용량 데이블 분할 관리</td><td>관리효율, 조회성능</td></tr><tr><td>인덱스 설계</td><td>데이터 접근, 스캔 경로 최적화</td><td>CBO, RBO</td></tr><tr><td>인덱스 지정</td><td>PK, FK 지정</td><td>조회, 수정 성능 개선</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="sql-튜닝-기법">SQL 튜닝 기법<a href="#sql-튜닝-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>쿼리재작성</td><td>불필요 연산 제거, 분리</td><td>실행계획 분석</td></tr><tr><td>조인방식변경</td><td>조인방식, 순서 변경</td><td>조인 유형 고려</td></tr><tr><td>인덱스 활용</td><td>적절한 인덱스 사용</td><td>제약조건 확인</td></tr><tr><td>힌트 사용</td><td>최적 실행 계획 제어</td><td>옵티마이저 제어</td></tr></tbody></table>
@@ -201,7 +201,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="무결성-유형-보장방법-적용방안">무결성 유형, 보장방법, 적용방안<a href="#무결성-유형-보장방법-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="무결성-유형">무결성 유형<a href="#무결성-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개체무결성</td><td>각 행을 구분하는 유일한 식별자</td><td>기본키 사용</td></tr><tr><td>참조무결성</td><td>외래키는 참조 테이블의 기본키와 일치</td><td>외래키 사용</td></tr><tr><td>도메인무결성</td><td>각 열의 값이 속성에 정의된 도메인 값</td><td>데이터 형식, 범위 제한</td></tr><tr><td>사용자정의무결성</td><td>비지니스 규칙에 따라 사용자 정의</td><td>트리거, 프로시저</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>개체무결성</td><td>각 행을 구분하는 유일한 식별자</td><td>기본키 사용</td></tr><tr><td>참조무결성</td><td>외래키는 참조 테이블의 기본키 와 일치</td><td>외래키 사용</td></tr><tr><td>도메인무결성</td><td>각 열의 값이 속성에 정의된 도메인 값</td><td>데이터 형식, 범위 제한</td></tr><tr><td>사용자정의무결성</td><td>비지니스 규칙에 따라 사용자 정의</td><td>트리거, 프로시저</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="무결성-보장방법">무결성 보장방법<a href="#무결성-보장방법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>응용프로그램</td><td>무결성 조건 코드 추가</td><td>프로그램상 구현</td></tr><tr><td>DB 트리거</td><td>Stored Procedure 활용 데이터 변경시 제약 추가</td><td>복잡한 요구 구현</td></tr><tr><td>제약조건</td><td>스키마에 제약조건 설정</td><td>변경 용이, 쉬운 구현</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_es5Y" id="무결성-적용방안">무결성 적용방안<a href="#무결성-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -211,7 +211,7 @@
 <li>병행제어를 통해 트랜잭션 실패시 무결성을 위반하지 않도록 제어 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_zicD padding--none margin-left--sm"><li class="tag_Sx2u"><a title="기술사 관련 포스트" class="tag_juns tagRegular_hpf_" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_Sx2u"><a title="기술사 데이터베이스 토픽" class="tag_juns tagRegular_hpf_" href="/en/tags/pe/db/">pe/database</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_QTnL"><a href="/en/pe/db/data-migration/">데이터 마이그레이션</a></h2><div class="container_Hspk margin-vert--md"><time datetime="2024-07-23T23:49:24.371Z">July 23, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_wAaV"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_fysX" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_wilB"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_pbjK">Gracefullight</span></a></div><small class="authorTitle_bMZf" title="Owner">Owner</small><div class="authorSocials_CH46"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_es5Y" id="데이터-마이그레이션-개념">데이터 마이그레이션 개념<a href="#데이터-마이그레이션-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>데이터의 <mark class="flexible-marker flexible-marker-default">정확성과 무결성을 유지</mark>하면서, <mark class="flexible-marker flexible-marker-default">기존 시스템의 데이터를 새로운 시스템</mark>으로 안전히 이전하는 과정</li>
+<li>데이터의 <mark class="flexible-marker flexible-marker-default">정확성과 무결성을 유지</mark>하면서, <mark class="flexible-marker flexible-marker-default">기존 시스템의 데이터를   새로운 시스템</mark>으로 안전히 이전하는 과정</li>
 <li>마이그레이션 대상 데이터의 품질 확인 및 전략 수립을 위해 <mark class="flexible-marker flexible-marker-default">진단 프로파일링</mark>과 마이그레이션 이후 무결성 확인을 위해 <mark class="flexible-marker flexible-marker-default">검증 테스트</mark> 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_es5Y" id="데이터-마이그레이션-절차도-세부절차-프로파일링-기법">데이터 마이그레이션 절차도, 세부절차, 프로파일링 기법<a href="#데이터-마이그레이션-절차도-세부절차-프로파일링-기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
