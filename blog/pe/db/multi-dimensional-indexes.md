@@ -61,5 +61,4 @@ tags:
 - 지역최솟값을 찾을 때까지 가까운 정점으로 Greedy 탐색
 - 메모리 기반, 빠름, 고차원 데이터 효율적 처리
 - Milvus, Pinecone 방식
-
 - [Pinecone: Hierarchical Navigable Small Worlds](https://www.pinecone.io/learn/series/faiss/hnsw/)
