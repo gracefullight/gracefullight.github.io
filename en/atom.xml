@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-04T09:53:15.312Z</updated>
+    <updated>2025-01-04T15:01:26.851Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[NoSQL 모델링]]></title>
+        <id>https://gracefullight.dev/en/pe/db/nosql-data-modeling/</id>
+        <link href="https://gracefullight.dev/en/pe/db/nosql-data-modeling/"/>
+        <updated>2025-01-04T15:01:26.851Z</updated>
+        <summary type="html"><![CDATA[NoSQL Data Modeling]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="nosql-유형-모델링-절차">NoSQL 유형, 모델링 절차<a href="https://gracefullight.dev/en/pe/db/nosql-data-modeling/#nosql-%EC%9C%A0%ED%98%95-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nosql-유형">NoSQL 유형<a href="https://gracefullight.dev/en/pe/db/nosql-data-modeling/#nosql-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Key-Value: 키와 값의 쌍으로 관리, 빠른 조회, Redis, DynamoDB</li>
+<li>Column Family: 열 기반 데이터 저장, 키 범위 처리 요구 개선, 유연성 극대화, HBase, Cassandra</li>
+<li>Document: 문서형태 데이터 저장, 빠른 조회, MongoDB, CouchDB</li>
+<li>Graph: 노드와 간선로 관계 저장, 모든 노드와 간선에 고유식별자, Neo4j</li>
+<li>Vector: 데이터 간 유사도, HNSW, Milvus</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nosql-모델링-절차">NoSQL 모델링 절차<a href="https://gracefullight.dev/en/pe/db/nosql-data-modeling/#nosql-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>탐색</td><td>도메인 모델 파악</td><td>데이터 개체 간 관계 분석, 도메인 파악,<br>ERD 작성하여 결과 도식화</td></tr><tr><td>설계</td><td>쿼리 결과 디자인</td><td>도메인 모델 기반 쿼리 결과값 정의<br>데이터 출력과 저장에 효율적인 구조로 디자인</td></tr><tr><td>-</td><td>패턴 기반 데이터 모델링</td><td>I/O 횟수를 최소화하기 위해 반정규화, 데이터 중복 저장</td></tr><tr><td>-</td><td>기능 최적화</td><td>필요시 Secondary Index 활용하여 전체 데이터 Scan 최소화</td></tr><tr><td>최적화</td><td>후보 NoSQL 선정</td><td>구조, 특징 분석 후 부하테스트, 안정성테스트 수행<br> 후보쿼리 선정</td></tr><tr><td>-</td><td>데이터모델 최적화 및 HW 튜닝</td><td>선정된 쿼리에 적합한 데이터 모델 최적화,<br>어플리케이션 인터페이스 설계<br>NoSQL 설정 및 HW 튜닝</td></tr></tbody></table>
+<ul>
+<li>쿼리 성능 최적화를 위해 중첩데이터와 반정규화된 데이터 구조로 디자인 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/database" term="pe/database"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SOM, 자기조직화지도]]></title>
         <id>https://gracefullight.dev/en/pe/db/self-organizing-map/</id>
@@ -420,61 +447,6 @@
 <ul>
 <li>3way는 SYN, SYN+ACK, ACK 사용, 4way는 FIN, ACK 사용</li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/network" term="pe/network"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HDLC 프로토콜]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/hdlc-protocol/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/"/>
-        <updated>2024-12-20T14:25:23.643Z</updated>
-        <summary type="html"><![CDATA[High-Level Data Link Control Protocol]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프로토콜-개념">HDLC 프로토콜 개념<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>일대일, 일대다 연결 환경에서 비트프레임 구조의 데이터를 송수신하는 데이터링크 계층 ISO13239 표준 프로토콜</li>
-<li>비트지향 프로토콜, 동기식 전송, 다양한 토폴로지 지원, 오류제어, 흐름제어, 모드 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-구조-동작-모드">HDLC 프레임 구조, 동작 모드<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-구조">HDLC 프레임 구조<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<table><thead><tr><th>필드</th><th>길이</th><th>설명</th></tr></thead><tbody><tr><td>Flag</td><td>8</td><td>프레임 시작, 종료 표시, 01111110<sub>2</sub></td></tr><tr><td>Address</td><td>8</td><td>일대다 주국, 종국 주소, 일대일 명령, 응답 구분</td></tr><tr><td>Control</td><td>8</td><td>프레임 종류, 제어 정보, 송수신 순서번호</td></tr><tr><td>Data</td><td>가변</td><td>L3 계층이 송신한 패킷 데이터</td></tr><tr><td>FCS</td><td>16</td><td>오류제어, CRC-16 기반 오류 검출 코드</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-프레임-동작-모드">HDLC 프레임 동작 모드<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%ED%94%84%EB%A0%88%EC%9E%84-%EB%8F%99%EC%9E%91-%EB%AA%A8%EB%93%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_wVfg" id="nrm-normal-response-mode">NRM (Normal Response Mode)<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#nrm-normal-response-mode" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<blockquote>
-<p>정규응답모드</p>
-</blockquote>
-<!-- -->
-<ul>
-<li>주국/종국 구분 동작</li>
-<li>종국은 주국의 폴링 요청에만 응답</li>
-<li>종국은 프레임 전송 후 다시 허가 대기</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_wVfg" id="arm-asynchronous-response-mode">ARM (Asynchronous Response Mode)<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#arm-asynchronous-response-mode" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<blockquote>
-<p>비동기응답모드</p>
-</blockquote>
-<!-- -->
-<ul>
-<li>종국은 주국 승인 없이 비동기적 응답 가능</li>
-<li>종국의 모든 전송은 주국으로 전송되어 최종 목적지로 중계</li>
-<li>실제로 거의 사용되지 않음</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_wVfg" id="abm-asynchronous-balanced-mode">ABM (Asynchronous Balanced Mode)<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#abm-asynchronous-balanced-mode" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<blockquote>
-<p>비동기균형모드</p>
-</blockquote>
-<!-- -->
-<ul>
-<li>복합국은 동등한 권한을 가짐</li>
-<li>양쪽에서 명령/응답 전송 가능</li>
-<li>폴링 오버헤드가 없어 P2P 환경에서 가장 많이 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="hdlc-이더넷-비교">HDLC, 이더넷 비교<a href="https://gracefullight.dev/en/pe/nw/hdlc-protocol/#hdlc-%EC%9D%B4%EB%8D%94%EB%84%B7-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>HDLC</th><th>이더넷</th></tr></thead><tbody><tr><td>네트워크 환경</td><td>WAN 환경</td><td>LAN 환경</td></tr><tr><td>데이터 구조</td><td>비트 중심</td><td>프레임 중심</td></tr><tr><td>송수신 형식</td><td>동기식, 비동기 모드 지원</td><td>비동기식</td></tr><tr><td>표준</td><td>ISO 13239</td><td>IEEE 802.3</td></tr><tr><td>주소체계</td><td>Address 필드</td><td>MAC 주소</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
