@@ -55,12 +55,10 @@ erDiagram
 erDiagram
     Customer {
         int CustomerID PK
-        string Name
     }
     Order {
         int OrderID PK
         int CustomerID FK
-        date OrderDate
     }
     Customer ||..o{ Order : places
 ```
