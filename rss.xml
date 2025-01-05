@@ -4,10 +4,41 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 05 Jan 2025 08:00:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Jan 2025 09:56:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[데이터 모델링]]></title>
+            <link>https://gracefullight.dev/pe/db/data-modeling/</link>
+            <guid>https://gracefullight.dev/pe/db/data-modeling/</guid>
+            <pubDate>Sun, 05 Jan 2025 09:56:56 GMT</pubDate>
+            <description><![CDATA[Data Modeling]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="데이터-모델링-개념">데이터 모델링 개념<a href="https://gracefullight.dev/pe/db/data-modeling/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이터 모델링 개념에 대한 직접 링크" title="데이터 모델링 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>현실 세계 업무 프로세스를 추상화하여 물리적으로 데이터베이스화하기 위한 과정으로, 실체와 관계 중심으로 데이터 모형을 표현하는 모델링</li>
+<li>가시화, 명세화, 문서화, 추상화, 통합성, 이해성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="데이터-모델링-단계-식별비식별-관계-비교">데이터 모델링 단계, 식별/비식별 관계 비교<a href="https://gracefullight.dev/pe/db/data-modeling/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EB%8B%A8%EA%B3%84-%EC%8B%9D%EB%B3%84%EB%B9%84%EC%8B%9D%EB%B3%84-%EA%B4%80%EA%B3%84-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="데이터 모델링 단계, 식별/비식별 관계 비교에 대한 직접 링크" title="데이터 모델링 단계, 식별/비식별 관계 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="데이터-모델링-단계">데이터 모델링 단계<a href="https://gracefullight.dev/pe/db/data-modeling/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="데이터 모델링 단계에 대한 직접 링크" title="데이터 모델링 단계에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>단계</th><th>설명</th></tr></thead><tbody><tr><td>개념 모델링</td><td>요구사항을 데이터 모델로 변환</td></tr><tr><td>-</td><td>엔티티와 속성 정의, 엔티티 간 식별/비식별 관게 설정</td></tr><tr><td>논리 모델링</td><td>개념스키마를 실제 DBMS 스키마로 변환</td></tr><tr><td>-</td><td>데이터 구조와 무결성 제약 설정</td></tr><tr><td>-</td><td>식별/비식별 관례를 기본키, 외래키로 추가</td></tr><tr><td>물리 모델링</td><td>저장구조, 저장방법 기술, 성능 기준 충족</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="식별비식별-관계-개념-비교">식별/비식별 관계 개념 비교<a href="https://gracefullight.dev/pe/db/data-modeling/#%EC%8B%9D%EB%B3%84%EB%B9%84%EC%8B%9D%EB%B3%84-%EA%B4%80%EA%B3%84-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="식별/비식별 관계 개념 비교에 대한 직접 링크" title="식별/비식별 관계 개념 비교에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="식별-관계">식별 관계<a href="https://gracefullight.dev/pe/db/data-modeling/#%EC%8B%9D%EB%B3%84-%EA%B4%80%EA%B3%84" class="hash-link" aria-label="식별 관계에 대한 직접 링크" title="식별 관계에 대한 직접 링크">​</a></h4>
+<!-- -->
+<ul>
+<li>하위 엔티티의 PK 구성이 상위 엔티티의 PK에 포함되는 관계</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_wVfg" id="비식별-관계">비식별 관계<a href="https://gracefullight.dev/pe/db/data-modeling/#%EB%B9%84%EC%8B%9D%EB%B3%84-%EA%B4%80%EA%B3%84" class="hash-link" aria-label="비식별 관계에 대한 직접 링크" title="비식별 관계에 대한 직접 링크">​</a></h4>
+<!-- -->
+<ul>
+<li>하위 엔티티의 일반 속성에 상위 엔티티의 PK가 포함되는 관계</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="식별비식별-관계-상세-비교">식별/비식별 관계 상세 비교<a href="https://gracefullight.dev/pe/db/data-modeling/#%EC%8B%9D%EB%B3%84%EB%B9%84%EC%8B%9D%EB%B3%84-%EA%B4%80%EA%B3%84-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="식별/비식별 관계 상세 비교에 대한 직접 링크" title="식별/비식별 관계 상세 비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>식별 관계</th><th>비식별 관계</th></tr></thead><tbody><tr><td>결합도</td><td>강한 연결관계</td><td>약한 연결관계</td></tr><tr><td>표기법</td><td>실선 표현</td><td>점선 표현</td></tr><tr><td>PK</td><td>하위 엔티티 PK 구성 포함</td><td>미포함</td></tr><tr><td>관계</td><td>자식 엔티티가 부모에 종속적</td><td>자식 엔티티가 부모에 독립적</td></tr><tr><td>데이터 무결성</td><td>부모 엔티티 삭제시 자식 엔티티 함께 삭제</td><td>부모 엔티티 삭제시 자식 엔티티 유지, 관계 해제</td></tr><tr><td>예시</td><td>Order 와 OrderItem</td><td>Customer 와 Order</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/database</category>
+        </item>
         <item>
             <title><![CDATA[CRUD 매트릭스]]></title>
             <link>https://gracefullight.dev/pe/db/crud-matrix/</link>
@@ -392,27 +423,6 @@
 <table><thead><tr><th>단계</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>1. 그룹 가입</td><td>호스트가 새 멀티캐스트 그룹에 참여하고자 할 때 라우터에 가입 알림 전송</td><td>Membership Report</td></tr><tr><td>2. 멤버십 모니터링</td><td>라우터는 주기적으로 Query 메시지를 전송, 현재 그룹을 계속 사용하는 호스트가 있는지 확인</td><td>Membership Query</td></tr><tr><td>3. 멤버십 응답</td><td>호스트는 Query에 응답하여 아직 그룹이 필요함을 알림, 무응답 시 라우터는 더 이상 호스트가 없음 판단</td><td>Membership Report</td></tr><tr><td>4. 멤버십 탈퇴</td><td>호스트가 멀티캐스트 수신을 중단하고 싶으면 Leave Group 메시지 전송</td><td>Leave Group</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_wVfg" id="icmp-igmp-비교">ICMP, IGMP 비교<a href="https://gracefullight.dev/pe/nw/icmp-igmp/#icmp-igmp-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="ICMP, IGMP 비교에 대한 직접 링크" title="ICMP, IGMP 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>ICMP</th><th>IGMP</th></tr></thead><tbody><tr><td>목적</td><td>IP 패킷 전송 오류 및 제어 메시지 처리</td><td>멀티캐스트 그룹 가입/탈퇴 관리</td></tr><tr><td>유형</td><td>Echo Request/Reply, Dest. Unreachable 등</td><td>Membership Query, Membership Report, Leave Group 등</td></tr><tr><td>계층</td><td>네트워크 계층</td><td>네트워크 계층</td></tr><tr><td>사례</td><td>Ping, Traceroute</td><td>IPTV, 온라인 게임 등 멀티캐스트 서비스</td></tr><tr><td>데이터전송</td><td>오류, 제어 메세지 전송<br>데이터 페이로드는 네트워크 진단용</td><td>그룹 멤버십 정보 전송<br>실제 멀티캐스트 데이터는 UDP, RTP 상위 프로토콜 사용</td></tr><tr><td>보안 취약점</td><td>Ping Flooding, DDoS 등</td><td>IGMP Spoofing, IGMP Flooding 등</td></tr><tr><td>특징</td><td>일부 환경에서 ICMP 차단하여 진단 제약 발생 가능</td><td>그룹별, 소스별 트래픽 구분하여 필요 트래픽 전달 가능</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[네트워크 실시간 측위]]></title>
-            <link>https://gracefullight.dev/pe/nw/network-realtime-kinematic/</link>
-            <guid>https://gracefullight.dev/pe/nw/network-realtime-kinematic/</guid>
-            <pubDate>Sat, 21 Dec 2024 09:04:45 GMT</pubDate>
-            <description><![CDATA[Network Real-Time Kinematic]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-개념">NRTK 개념<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NRTK 개념에 대한 직접 링크" title="NRTK 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>GNSS를 기반으로 다수의 기준국 네트워크를 이용하여 오차를 실시간으로 보정하고 이동국의 위치를 세티미터 단위로 정밀하게 측정하는 기술</li>
-<li>기존 RTK 범위, 오차로 인한 한계 극복, 위치 정밀보정 요구 증가, 통신 기술 발전</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성도-구성요소-보정신호-구분">NRTK 구성도, 구성요소, 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크" title="NRTK 구성도, 구성요소, 보정신호 구분에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성도">NRTK 구성도<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="NRTK 구성도에 대한 직접 링크" title="NRTK 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-구성요소">NRTK 구성요소<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="NRTK 구성요소에 대한 직접 링크" title="NRTK 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>기준국</td><td>다수 GNSS 기지국이 위성신호를 수신하여 오차데이터를 제어센터로 전송</td><td>광역오차 데이터 수집</td></tr><tr><td>제어센터</td><td>기준국 데이터 옹합, 오차모델 생성, 가상 기준점 생성</td><td>실시간 보정 데이터 전송</td></tr><tr><td>이동국</td><td>GNSS 신호와 보정데이터를 결합하여 정밀한 위치 계산</td><td>cm 단위 오차 보정</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="nrtk-보정신호-구분">NRTK 보정신호 구분<a href="https://gracefullight.dev/pe/nw/network-realtime-kinematic/#nrtk-%EB%B3%B4%EC%A0%95%EC%8B%A0%ED%98%B8-%EA%B5%AC%EB%B6%84" class="hash-link" aria-label="NRTK 보정신호 구분에 대한 직접 링크" title="NRTK 보정신호 구분에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>방식</th><th>설명</th><th>특징</th></tr></thead><tbody><tr><td>VRS</td><td>사용자 위치에 가상기준국을 생성하여 보정신호 제공</td><td>양방향 통신 필요</td></tr><tr><td>FKP</td><td>기준국 관측망 전체에 적용 가능한 보정신호 제공</td><td>삼각망 내 모든 지점 적용 가능</td></tr><tr><td>MAC</td><td>주기준국과 보조기준국 간 차이를 계산하여 셀 단위 보정 신호 제공</td><td>셀 내 모든 지점에 대한 보정 정보 제공</td></tr><tr><td>SSR</td><td>상태공간 표현을 통해 위성 및 대기 상태 정보를 분리하여 제공</td><td>위성 궤도, 전리층, 대류층 상태 포함</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
         </item>
