@@ -17,7 +17,7 @@ tags:
 
 ### 가치사슬 구성도
 
-![value-chain](/img/pe/value-chain.webp)
+![Value Chain](./assets/value-chain.webp)
 
 ### 가치사슬 구성요소
 
