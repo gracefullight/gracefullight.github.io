@@ -18,8 +18,7 @@ date: 2019-12-29 13:57:47
 #### main formulae
 
 ```bash
-brew install azure-cli \
-  fzf \
+brew install fzf \
   git \
   go \
   kubernetes-cli \
@@ -31,7 +30,6 @@ brew install azure-cli \
   wget
 ```
 
-- azure-cli
 - fzf
 - git
 - go
@@ -54,7 +52,6 @@ brew tap spring-io/tap
 
 ```bash
 brew install git \
-  gitui \
   hadolint \
   helm \
   kubectx \
@@ -68,7 +65,6 @@ brew install git \
 ```
 
 - git
-- gitui
 - helm
 - kubectx
 - springboot
@@ -87,11 +83,9 @@ brew tap homebrew/cask-fonts
 ```bash
 brew cask install adguard \
   appcleaner \
-  authy \
   bitwarden \
-  cheatsheet \
+  dbeaver-community \
   firefox \
-  flutter \
   font-cascadia \
   font-hack-nerd-font \
   fork \
@@ -107,12 +101,14 @@ brew cask install adguard \
   macs-fan-control \
   monitorcontrol \
   microsoft-edge \
+  orange \
+  pika \
+  podman-desktop \
   postman \
-  rancher \
-  sequel-pro \
+  rectangle \
+  rocket \
   slack \
   telegram-desktop \
-  udeler \
   visual-studio-code \
   yt-music \
   zoom \
@@ -121,12 +117,9 @@ brew cask install adguard \
 
 - adguard: 💰
 - appcleaner: 앱 클리너
-- authy: 2차 인증
 - bitwarden: 비밀번호 관리
-- cheatsheet: ⌘ 키를 오래 누르면 해당 프로그램의 모든 단축키를 볼 수 있음
-- devtoys: 개발용 툴
+- dbeaver-community: DBMS 클라이언트
 - firefox: 파이어폭스
-- flutter: 플러터
 - font-cascadia: Cascadis Code 폰트
 - font-hack-nerd-font: iTerm2 용 터미널 폰트
 - fork: 무료 중 최고의 git client
@@ -141,13 +134,14 @@ brew cask install adguard \
 - macs-fan-control: 팬 조절
 - monitorcontrol: 외장모니터 제어
 - microsoft-edge: edge
+- orange: orange3 데이터 분석
+- pika: 색상 선택기
+- podman-desktop: docker desktop 대체
 - postman: 포스트맨
-- rancher: rancher-desktop
 - rectangle: 창 크기 조절
-- sequel-pro: MySQL GUI client
+- rocket: 이모지 선택기
 - slack: 슬랙
 - telegram-desktop: 텔레그램
-- udeler: udemy 강의 다운로더
 - visual-studio-code: vscode
 - yt-music: 유튜브 뮤직 플레이어
 - zoom: 줌
@@ -192,7 +186,6 @@ cask_args appdir: "~/Applications", require_sha: true
 brew "fzf" # fuzzy finder
 brew "gh" # github clone
 brew "git" # git
-brew "gitui" # git cui
 brew "hadolint" # dockerfile linter
 brew "helm" # helm chart
 brew "k9s" # k8s dashboard
@@ -210,12 +203,9 @@ brew "zsh-syntax-highlighting"
 brew "spring-io/tap/spring-boot" # spring cli
 
 cask "appcleaner" # 앱 클리너
-cask "authy" # 2차 인증
 cask "bitwarden" # 비밀번호 관리
-cask "cheatsheet" # 단축키
-cask "devtoys" # 개발 툴
+cask "dbeaver-community" # dbms client
 cask "firefox" # 파이어폭스
-cask "flutter" # 플러터
 cask "font-cascadia-code" # ms 개발 폰트
 cask "font-hack-nerd-font" # 터미널 폰트
 cask "fork" # git gui
@@ -230,20 +220,19 @@ cask "keka" # 압축 프로그램
 cask "macs-fan-control" # 팬 조절
 cask "microsoft-edge" # edge
 cask "monitorcontrol" # 외장 모니터 조절
+cask "orange" # orange3
+cask "pika" # 색상 선택기
+cask "podman-desktop" # docker desktop 대체
 cask "postman" # postman
-cask "rancher" # docker desktop `alias docker=nerdctl`
 cask "rectangle" # 창 조절
-cask "sequel-pro" # mysql gui
+cask "rocket" # 이모지
 cask "slack" # slack
 cask "telegram-desktop" # telegram
-## cask "udeler" # udemy downloader
 cask "visual-studio-code" # vscode
-## cask "yt-music" # youtube music
 cask "zoom" # zoom
 cask "zulu" # zulu jdk
 
-## mas "Bitwarden", id: 1352778147
-## mas "Dropover", id: 1355679052
+mas "Dropover", id: 1355679052
 mas "Microsoft Remote Desktop", id: 1295203466 # remote desktop
 mas "Polyglot", id: 1471801525 # translator
 mas "Shazam", id: 897118787 # music finder
