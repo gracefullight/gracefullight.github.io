@@ -28,7 +28,10 @@
 <h3 class="anchor anchorWithStickyNavbar_wVfg" id="비지도학습-성능지표">비지도학습 성능지표<a href="https://gracefullight.dev/en/pe/algo/performance-metrics-in-machine-learning/#%EB%B9%84%EC%A7%80%EB%8F%84%ED%95%99%EC%8A%B5-%EC%84%B1%EB%8A%A5%EC%A7%80%ED%91%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>성능지표</th><th>설명</th></tr></thead><tbody><tr><td>클러스터링</td><td>실루엣 지수</td><td>클러스터의 밀집 정도를 계산, 1에 가까우면 높은 성능</td></tr><tr><td>-</td><td>Dunn Index</td><td>군집 간 거리의 최소값, 군집 내 요소 간 거리 최대값의 비율</td></tr><tr><td>차원축소</td><td>재구성오차</td><td>축소 복원시 원본과의 오차를 평가</td></tr><tr><td>-</td><td>설명분산비율</td><td>축소된 차원에서 전체 데이터 분산 중 설명되는 비율</td></tr><tr><td>-</td><td>스트레스</td><td>저차원 공간에서 고차원 데이터 간 거리의 보존 정도를 평가</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_wVfg" id="강화학습-성능지표">강화학습 성능지표<a href="https://gracefullight.dev/en/pe/algo/performance-metrics-in-machine-learning/#%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5-%EC%84%B1%EB%8A%A5%EC%A7%80%ED%91%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-]]></content:encoded>
+<!-- -->
+<ul>
+<li>환경과 상호작용하며 보상이 최대화되는지 평가</li>
+</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
         </item>
