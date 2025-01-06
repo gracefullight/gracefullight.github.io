@@ -16,7 +16,7 @@
             <description><![CDATA[Performance Metrics in Machine Learning]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="머신러닝-성능지표-개념">머신러닝 성능지표 개념<a href="https://gracefullight.dev/pe/algo/performance-metrics-in-machine-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%B1%EB%8A%A5%EC%A7%80%ED%91%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="머신러닝 성능지표 개념에 대한 직접 링크" title="머신러닝 성능지표 개념에 대한 직접 링크">​</a></h2>
 <ul>
-<li>실제 값과 모델에 의해 예측ㄷ된 값을 비교하여 머신러닝 모델이 얼마나 잘 학습했는지 평가하기 위한 지표</li>
+<li>실제 값과 모델에 의해 예측된 값을 비교하여 머신러닝 모델이 얼마나 잘 학습했는지 평가하기 위한 지표</li>
 <li>지도학습, 비지도학습, 강화학습 별 다른 성능지표 활용</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_wVfg" id="머신러닝-성능지표-상세">머신러닝 성능지표 상세<a href="https://gracefullight.dev/pe/algo/performance-metrics-in-machine-learning/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%B1%EB%8A%A5%EC%A7%80%ED%91%9C-%EC%83%81%EC%84%B8" class="hash-link" aria-label="머신러닝 성능지표 상세에 대한 직접 링크" title="머신러닝 성능지표 상세에 대한 직접 링크">​</a></h2>
