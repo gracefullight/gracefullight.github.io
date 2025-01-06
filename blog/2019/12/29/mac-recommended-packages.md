@@ -1,7 +1,9 @@
 ---
 title: 맥 추천 패키지
 authors: me
-tags: [mac]
+tags:
+  - me
+  - mac
 date: 2019-12-29 13:57:47
 ---
 
