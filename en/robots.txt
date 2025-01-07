@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /__docusaurus/
 Sitemap: https://gracefullight.dev/sitemap.xml
 Host: gracefullight.dev
 
