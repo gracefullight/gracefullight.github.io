@@ -4,10 +4,42 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 06 Jan 2025 13:07:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Jan 2025 11:42:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[PLM, LLM]]></title>
+            <link>https://gracefullight.dev/pe/algo/plm-llm/</link>
+            <guid>https://gracefullight.dev/pe/algo/plm-llm/</guid>
+            <pubDate>Tue, 07 Jan 2025 11:42:53 GMT</pubDate>
+            <description><![CDATA[Pre-trained Language Model, Large Language Model]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="자연어-모델-개요">자연어 모델 개요<a href="https://gracefullight.dev/pe/algo/plm-llm/#%EC%9E%90%EC%97%B0%EC%96%B4-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="자연어 모델 개요에 대한 직접 링크" title="자연어 모델 개요에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="LLM History" src="https://gracefullight.dev/assets/images/llm-history-9518ba8a13a27a26b5c032ee9b67eaa5.png" width="1960" height="1180" class="img_Hfj7"></p>
+<ul>
+<li>트랜스포머 구조 등장으로 자연어 처리능력이 비약적으로 상승, 생성형 AI시대 진입</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="plm-개념-및-특성">PLM 개념 및 특성<a href="https://gracefullight.dev/pe/algo/plm-llm/#plm-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%84%B1" class="hash-link" aria-label="PLM 개념 및 특성에 대한 직접 링크" title="PLM 개념 및 특성에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="plm-개념">PLM 개념<a href="https://gracefullight.dev/pe/algo/plm-llm/#plm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="PLM 개념에 대한 직접 링크" title="PLM 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>대규모 텍스트 코퍼르소부터 언어 패턴을 사전 학습한 자연어 처리 모델</li>
+<li>BERT, GPT 등이 주요한 Pre-trained Language Model로 활용</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="plm-특성">PLM 특성<a href="https://gracefullight.dev/pe/algo/plm-llm/#plm-%ED%8A%B9%EC%84%B1" class="hash-link" aria-label="PLM 특성에 대한 직접 링크" title="PLM 특성에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>특성</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>사전학습</td><td>대규모 텍스트 데이터로 비지도학습 수행<br>언어의 통계적 특성 학습</td><td>BERT, GPT</td></tr><tr><td>범용성</td><td>다양한 NLP 작업에 적용 가능<br>전이학습으로 성능 개선 가능</td><td>텍스트생성, 감정분석</td></tr><tr><td>언어이해능력</td><td>중요 단어에 더 큰 가중치 부여하여 학습<br>문맥적 의미 반영한 표현 생성</td><td>어텐션 매커니즘</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="llm-생성과정-및-특성">LLM 생성과정 및 특성<a href="https://gracefullight.dev/pe/algo/plm-llm/#llm-%EC%83%9D%EC%84%B1%EA%B3%BC%EC%A0%95-%EB%B0%8F-%ED%8A%B9%EC%84%B1" class="hash-link" aria-label="LLM 생성과정 및 특성에 대한 직접 링크" title="LLM 생성과정 및 특성에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="llm-생성과정">LLM 생성과정<a href="https://gracefullight.dev/pe/algo/plm-llm/#llm-%EC%83%9D%EC%84%B1%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="LLM 생성과정에 대한 직접 링크" title="LLM 생성과정에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>PLM에서 파라미터를 비약적으로 늘려 범용 성능을 가진 LLM 생성</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_wVfg" id="llm-특성">LLM 특성<a href="https://gracefullight.dev/pe/algo/plm-llm/#llm-%ED%8A%B9%EC%84%B1" class="hash-link" aria-label="LLM 특성에 대한 직접 링크" title="LLM 특성에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>특성</th><th>설명</th><th>기대효과</th></tr></thead><tbody><tr><td>초대형 파라미터</td><td>수십억-수천억개 이상 파라미터 확장<br>다양한 문맥정보를 정교하게 표현</td><td>Few-shot, Zero-shot 응답</td></tr><tr><td>범용성 확대</td><td>파인튜닝, RLHF 등을 통해 응답 품질개선<br>다중언어, 다분야 처리능력향상</td><td>범용 AI</td></tr><tr><td>인간수준 자연어생성</td><td>최적화를 통한 완결성있는 문장 생성<br>대화의 맥락 추론 가능</td><td>태스크 자동화, 효율화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_wVfg" id="plm과-llm-비교">PLM과 LLM 비교<a href="https://gracefullight.dev/pe/algo/plm-llm/#plm%EA%B3%BC-llm-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="PLM과 LLM 비교에 대한 직접 링크" title="PLM과 LLM 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>PLM</th><th>LLM</th></tr></thead><tbody><tr><td>데이터규모</td><td>수억-수십억 토큰</td><td>수십억-수조 토큰</td></tr><tr><td>모델파라미터</td><td>수천만-수억 개</td><td>수십억-수천억 개</td></tr><tr><td>학습방식</td><td>사전학습, 파인튜닝</td><td>사전학습, 파인튜닝, 인스트럭션 튜닝</td></tr><tr><td>응용범위</td><td>특정 작업시 전이학습 필요</td><td>다양한 작업에 높은 성능</td></tr><tr><td>컴퓨팅 파워</td><td>상대적 낮음</td><td>고성능 GPU 필요</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[머신러닝 성능지표]]></title>
             <link>https://gracefullight.dev/pe/algo/performance-metrics-in-machine-learning/</link>
@@ -417,36 +449,6 @@
 </ul>]]></content:encoded>
             <category>me</category>
             <category>uae</category>
-        </item>
-        <item>
-            <title><![CDATA[맨체스터 코딩, 차등 맨체스터 코딩]]></title>
-            <link>https://gracefullight.dev/pe/nw/manchester-code/</link>
-            <guid>https://gracefullight.dev/pe/nw/manchester-code/</guid>
-            <pubDate>Sat, 21 Dec 2024 12:20:04 GMT</pubDate>
-            <description><![CDATA[Manchester code and Differential Manchester code]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-개념">맨체스터 코딩 개념<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="맨체스터 코딩 개념에 대한 직접 링크" title="맨체스터 코딩 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>각 비트의 중간 시점에 전압 레벨을 반전시켜, 동기화와 오류검출에 이점을 가진 라인코딩 방식</li>
-<li>클록 동기화 용이, 오류 검출 유리, DC(직류성분) 감소, NRZ 대비 대역폭 2배 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-구조도-동작-원리">맨체스터 코딩 구조도, 동작 원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크" title="맨체스터 코딩 구조도, 동작 원리에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-구조도">맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="맨체스터 코딩 구조도에 대한 직접 링크" title="맨체스터 코딩 구조도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Manchester code" src="https://gracefullight.dev/assets/images/manchester-3986a7b9cbd88b22e5ceec792bb03741.png" width="1975" height="793" class="img_Hfj7"></p>
-<ul>
-<li>비트 중간에서 하향 전이하면 0, 상향 전이하면 1로 부호화</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-동작원리">맨체스터 코딩 동작원리<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="맨체스터 코딩 동작원리에 대한 직접 링크" title="맨체스터 코딩 동작원리에 대한 직접 링크">​</a></h3>
-<!-- -->
-<table><thead><tr><th>순서</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>1</td><td>인코더에 데이터 입력</td><td>이진 데이터 입력, 비트별 부호화 수행</td></tr><tr><td>2</td><td>비트상태 변환 및 전송</td><td>0 비트 하향 전이, 1 비트 상향 전이 후 전송</td></tr><tr><td>3</td><td>데이터 신호 해석</td><td>비트 중간 반전 시점 해석, 데이터 추출</td></tr><tr><td>4</td><td>이진 데이터 비트 출력</td><td>추출 데이터를 비트로 출력하여 원 데이터 수신</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="차등-맨체스터-코딩-구조도">차등 맨체스터 코딩 구조도<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EC%B0%A8%EB%93%B1-%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="차등 맨체스터 코딩 구조도에 대한 직접 링크" title="차등 맨체스터 코딩 구조도에 대한 직접 링크">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Difference Manchester code" src="https://gracefullight.dev/assets/images/differential-manchester-b5227c02deb14e1da8a5f65279369f28.png" width="1975" height="793" class="img_Hfj7"></p>
-<ul>
-<li>0: 시작점에서 전이, 1: 시작점에서 전이 없음, 모든 비트 중간점에서 항상 전이</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_wVfg" id="맨체스터-코딩-차등-멘체스터-코딩-비교">맨체스터 코딩, 차등 멘체스터 코딩 비교<a href="https://gracefullight.dev/pe/nw/manchester-code/#%EB%A7%A8%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EC%B0%A8%EB%93%B1-%EB%A9%98%EC%B2%B4%EC%8A%A4%ED%84%B0-%EC%BD%94%EB%94%A9-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크" title="맨체스터 코딩, 차등 멘체스터 코딩 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>맨체스터 코딩</th><th>차등 맨체스터 코딩</th></tr></thead><tbody><tr><td>개념</td><td>비트 중간 신호를 상하향 전이, 시간 정보와 데이터 전달 역할 수행</td><td>인접 신호의 변화를 표현하기 위한 차등 인코딩과 맨체스터 코딩 결합</td></tr><tr><td>신호표현</td><td>0: +전압에서 -로 하향 전이<br>1: -전압에서 +로 상향 전이</td><td>0: 비트 시작 전이 없음, 비트 중간 전이 발생<br>1: 비트 시작, 중간 모두 전이</td></tr><tr><td>장점</td><td>설계, 구현 단순<br>에지 검출로 클록 동기화 용이</td><td>빠른 전송 속도<br>극성 반전 없음, 노이즈 강건성</td></tr><tr><td>단점</td><td>낮은 대역폭 효율성</td><td>높은 구현 복잡도, 초기 상태 의존성</td></tr><tr><td>활용 분야</td><td>초기 이더넷, RFID</td><td>Token Ring LAN, 극성 완전 네트워크</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
         </item>
     </channel>
 </rss>
