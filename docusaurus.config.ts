@@ -44,6 +44,7 @@ const config: Config = {
     [
       "classic",
       {
+        debug: true,
         docs: false,
         blog: {
           routeBasePath: "/",
