@@ -1,7 +1,7 @@
 ---
-title: ann
+title: 인공신경망
 date: 2025-01-09T00:36:00.538+09:00
-description: ann
+description: Artificial Neural Network
 authors: me
 tags:
   - pe
