@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-08T15:36:00.538Z</updated>
+    <updated>2025-01-12T01:50:41.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[베이지안 최적화]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/bayesain-optimization/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/"/>
+        <updated>2025-01-12T01:50:41.296Z</updated>
+        <summary type="html"><![CDATA[Bayesain optimization]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="베이지안-최적화-개념">베이지안 최적화 개념<a href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/#%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>가우시안 프로세스 등 확률적 모델을 통해 함수 분포를 추정하고, 획득함수를 통해 탐색 지점을 결정하는 블랙박스 함수의 최적화 기법</li>
+<li>기존 Grid Search, Random Search 기법 비효율 개선, 목적함수 평가 비용 최소화, 사전 지식을 통합한 확률적 모델 필요성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="베이지안-최적화-개념도-구성요소-절차">베이지안 최적화 개념도, 구성요소, 절차<a href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/#%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="베이지안-최적화-개념도">베이지안 최적화 개념도<a href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/#%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="베이지안 최적화" src="https://gracefullight.dev/en/assets/images/bayesian-optimization-18f065de164c5c75c896265d8cf5cc04.webp" width="1140" height="500" class="img_xC7_"></p>
+<ul>
+<li><a href="https://firasalhafez.com/2021/05/12/finding-the-optimal-learning-rate-using-bayesian-optimization/%3E" target="_blank" rel="noopener noreferrer">이미지 출처</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="베이지안-최적화-구성요소">베이지안 최적화 구성요소<a href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/#%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%EC%B5%9C%EC%A0%81%ED%99%94-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>확률적 모델</td><td>데이터와 사전지식을 결합하여 함수 분포와 불확실성 모델링</td><td>가우시안 프로세스 등</td></tr><tr><td>목적함수</td><td>실제 최적값을 목표로 예측의 기준이 되는 함수</td><td>블랙박스 함수</td></tr><tr><td>획득함수</td><td>기존 입력값과 다음 최적값을 확률로 찾는 함수</td><td>탐색지점 결정</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="베이지안-최적화-절차">베이지안 최적화 절차<a href="https://gracefullight.dev/en/pe/algo/bayesain-optimization/#%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>절차</th><th>세부절차</th><th>내용</th></tr></thead><tbody><tr><td>모델링</td><td>초기 데이터 수집</td><td>변수 공간에서 초기 표본 데이터 수집</td></tr><tr><td>-</td><td>가우시안 프로세스 모델링</td><td>함수 사전 분포 정의</td></tr><tr><td>예측</td><td>획득 함수 계산</td><td>현재 사후 분포 기반 계산</td></tr><tr><td>-</td><td>다음 탐색 지점 선정</td><td>획득 함수 최대화하여 우선순위 선정</td></tr><tr><td>평가</td><td>목적 함수 평가</td><td>선정지점에서 목적함수 평가 수행</td></tr><tr><td>-</td><td>확률적 모델 업데이트</td><td>모델 업데이트 및 반복</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[인공신경망]]></title>
         <id>https://gracefullight.dev/en/pe/algo/ann/</id>
@@ -146,7 +174,7 @@
 <li>접근할 데이터가 물리적으로 여러 사이트에 복제되었는지 알 필요가 없는 특성</li>
 <li>점진적 일관성 유지, 전파 갱신 처리 부하</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="장애-투명��성">장애 투명성<a href="https://gracefullight.dev/en/pe/db/distribution-transparency/#%EC%9E%A5%EC%95%A0-%ED%88%AC%EB%AA%85%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="장애-투�명성">장애 투명성<a href="https://gracefullight.dev/en/pe/db/distribution-transparency/#%EC%9E%A5%EC%95%A0-%ED%88%AC%EB%AA%85%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
 <li>지역 시스템, 통신에 장애가 있어도 데이터 무결성을 보존하는 성질</li>
@@ -341,51 +369,6 @@
 <li>메모리 기반, 빠름, 고차원 데이터 효율적 처리</li>
 <li>Milvus, Pinecone 방식</li>
 <li><a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank" rel="noopener noreferrer">Pinecone: Hierarchical Navigable Small Worlds</a></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/database" term="pe/database"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[트랜잭션 격리수준]]></title>
-        <id>https://gracefullight.dev/en/pe/db/isolation-levels/</id>
-        <link href="https://gracefullight.dev/en/pe/db/isolation-levels/"/>
-        <updated>2025-01-04T02:23:08.461Z</updated>
-        <summary type="html"><![CDATA[Isolation Levels]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="트랜잭션-격리수준-개념">트랜잭션 격리수준 개념<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Isolation Levels" src="https://gracefullight.dev/en/assets/images/isolation-levels-4990090445f50eedc4325af5cd5c8ef9.png" width="1955" height="1180" class="img_xC7_"></p>
-<ul>
-<li>병행 트랜잭션 실행 시 데이터를 일관성 있게 읽을 수 있도록 고립성을 유지하기 위한 데이터 허용 수준</li>
-<li>Dirty Read, Non-Repeatable Read, Phantom Read 등 이상 현상 발생 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="트랜잭션-격리-수준-상세">트랜잭션 격리 수준 상세<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC-%EC%88%98%EC%A4%80-%EC%83%81%EC%84%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="read-uncommitted">Read Uncommitted<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#read-uncommitted" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>트랜잭션이 완료되지 않은 데이터를 다른 트랜잭션이 참조하는 것을 허용하는 격리수준</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="read-committed">Read Committed<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#read-committed" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>트랜잭션이 완료된 데이터만 읽을 수 있는 격리 수준</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="repeatable-read">Repeatable Read<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#repeatable-read" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>동일한 행을 여러 번 읽을 때 항상 동일한 값을 반환하도록 보장하는 격리수준</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="serializable">Serializable<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#serializable" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>여러 트랜잭션이 순차적으로 하나씩 실행되도록 보장하는 격리수준</li>
-<li>동시성이 낮아 거의 사용되지 않음</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="트랜잭션-격리수준-고려사항">트랜잭션 격리수준 고려사항<a href="https://gracefullight.dev/en/pe/db/isolation-levels/#%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Locking, 2PL, Timestamp Ordering, 낙관적 기법 등 병행제어 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
