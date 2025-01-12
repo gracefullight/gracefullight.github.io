@@ -296,7 +296,7 @@
 <li>역전파와 체인룰 없이 승자 독식 경쟁학습 알고리즘 사용</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="som과-ann의-차이점">SOM과 ANN의 차이점<a href="https://gracefullight.dev/en/pe/db/self-organizing-map/#som%EA%B3%BC-ann%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>SOM</th><th>ANN</th></tr></thead><tbody><tr><td>학습방식</td><td>비지도학습</td><td>지도학습</td></tr><tr><td>학습알고리즘</td><td>경쟁학습</td><td>역전파 등 오류수정기반</td></tr><tr><td>주요목적</td><td>시각화, 군집화, 차원축소</td><td>분류, 회귀, 예측</td></tr><tr><td>출력구조</td><td>2차원 격자</td><td>다층 퍼셉트론</td></tr><tr><td>데이터 요구사항</td><td>레이블 불필요</td><td>레이블 필요</td></tr><tr><td>활용사례</td><td>데이터 시각화, 군집 분석</td><td>이미지 인식, 음성 인식, 자연어 처리</td></tr><tr><td>해석가능성</td><td>결과의 직관적 해석</td><td>블랙박스, 해석 어려움</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>구분</th><th>SOM</th><th>ANN</th></tr></thead><tbody><tr><td>학습방식</td><td>비지도학습</td><td>비지도/지도학습</td></tr><tr><td>학습알고리즘</td><td>경쟁학습</td><td>역전파 등 오류수정기반</td></tr><tr><td>주요목적</td><td>시각화, 군집화, 차원축소</td><td>분류, 회귀, 예측</td></tr><tr><td>출력구조</td><td>2차원 격자</td><td>다층 퍼셉트론</td></tr><tr><td>데이터 요구사항</td><td>레이블 불필요</td><td>레이블 필요</td></tr><tr><td>활용사례</td><td>데이터 시각화, 군집 분석</td><td>이미지 인식, 음성 인식, 자연어 처리</td></tr><tr><td>해석가능성</td><td>결과의 직관적 해석</td><td>블랙박스, 해석 어려움</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
         </item>
