@@ -4,10 +4,68 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 12 Jan 2025 07:59:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Jan 2025 12:47:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[중심극한정리, t검정, z검정]]></title>
+            <link>https://gracefullight.dev/pe/algo/clt-t-test-z-test/</link>
+            <guid>https://gracefullight.dev/pe/algo/clt-t-test-z-test/</guid>
+            <pubDate>Mon, 13 Jan 2025 12:47:32 GMT</pubDate>
+            <description><![CDATA[Central Limit Theorem, T-Test, Z-Test]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="추론통계-개념">추론통계 개념<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%B6%94%EB%A1%A0%ED%86%B5%EA%B3%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="추론통계 개념에 대한 직접 링크" title="추론통계 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>샘플데이터를 기반으로 모집단의 특성을 추론하거나 가설을 검증하는 통계방법</li>
+<li>표본추출<!-- -->
+<ul>
+<li>랜덤추출</li>
+<li>계통추출</li>
+<li>집락추출</li>
+<li>층화추출</li>
+</ul>
+</li>
+<li>기술통계<!-- -->
+<ul>
+<li>평균</li>
+<li>분산</li>
+<li>표준편차</li>
+</ul>
+</li>
+<li>추론<!-- -->
+<ul>
+<li>점추정</li>
+<li>구간추정</li>
+</ul>
+</li>
+<li>가설검정<!-- -->
+<ul>
+<li>모수검정</li>
+<li>비모수검정</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-개념-및-특징">중심극한정리 개념 및 특징<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="중심극한정리 개념 및 특징에 대한 직접 링크" title="중심극한정리 개념 및 특징에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-개념도">중심극한정리 개념도<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="중심극한정리 개념도에 대한 직접 링크" title="중심극한정리 개념도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="CLT" src="https://gracefullight.dev/assets/images/clt-15896110e118a498c1434f2dcc674a46.webp" width="1024" height="626" class="img_xC7_"></p>
+<ul>
+<li>모집단으로부터 추출된 표본의 크기가 충분히 커지면 모집단 표본 분포와 상관없이 표본들의 평균분포가 표준정규분포를 따른다는 법칙</li>
+<li><a href="https://corporatefinanceinstitute.com/resources/data-science/central-limit-theorem/" target="_blank" rel="noopener noreferrer">이미지출처</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-특징">중심극한정리 특징<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="중심극한정리 특징에 대한 직접 링크" title="중심극한정리 특징에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>특징</th><th>내용</th></tr></thead><tbody><tr><td>통계적 추론</td><td>정규분포 근사화</td><td>표본 평균을 정규분포에 근사화하여 통계적 추론을 간편하게 만들어줌</td></tr><tr><td>-</td><td>추론 강화</td><td>적은 표본에도 모집단 추론 가능</td></tr><tr><td>표본과 모집단</td><td>표본 크기 영향</td><td>표본 크기 중에서 중심극한정리 적용 용이</td></tr><tr><td>-</td><td>모집단 분포 독립ㅈ거</td><td>모집단 데이터 분포에 상관없이 평균분포 근사값 제공</td></tr></tbody></table>
+<ul>
+<li>모집단의 분포가 정규분포가 아니여도 중심극한정리에 의해 정규분포로 가정 후 통계분석 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-비교">T검정, Z검정 비교<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="T검정, Z검정 비교에 대한 직접 링크" title="T검정, Z검정 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-관계도">T검정, Z검정 관계도<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EA%B4%80%EA%B3%84%EB%8F%84" class="hash-link" aria-label="T검정, Z검정 관계도에 대한 직접 링크" title="T검정, Z검정 관계도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-상세비교">T검정, Z검정 상세비교<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EC%83%81%EC%84%B8%EB%B9%84%EA%B5%90" class="hash-link" aria-label="T검정, Z검정 상세비교에 대한 직접 링크" title="T검정, Z검정 상세비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>T검정</th><th>Z검정</th></tr></thead><tbody><tr><td>모집단 정보</td><td>표준편차 모를 때 사용</td><td>표준편차 알 때 사용</td></tr><tr><td>표본 크기</td><td>소규모</td><td>대규모</td></tr><tr><td>유연성</td><td>표본 크기가 작아도 정확한 추론</td><td>표본 크기 작으면 부정확</td></tr><tr><td>분포 사용</td><td>T분포</td><td>Z분포</td></tr><tr><td>예시</td><td>학생성적 빅교, 소규모 실험 전/후 비교</td><td>공장 생산품질 비교, 대규모 설문조사 분석</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[다중공선성]]></title>
             <link>https://gracefullight.dev/pe/algo/multicolinearity/</link>
@@ -287,29 +345,6 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-분석-사례">CRUD 매트릭스 분석 사례<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EB%B6%84%EC%84%9D-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="CRUD 매트릭스 분석 사례에 대한 직접 링크" title="CRUD 매트릭스 분석 사례에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>해결방안</th></tr></thead><tbody><tr><td>요구검증</td><td>고객 등록, 상품 조회, 주문 생성, 주문 조회 기능 검증</td><td>미비 기능 구현</td></tr><tr><td>무결성검증</td><td>상품 엔티티는 R만 존재</td><td>C, U 기능 추가</td></tr><tr><td>성능튜닝</td><td>주문 엔티티는 트랜잭션이 몰려 부하 발생 가능</td><td>파티션 추가, 테이블 분리</td></tr><tr><td>불필요 작업 제거</td><td>주문 조회시 업데이트 발생</td><td>R만 수행하도록 수정</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[NoSQL 모델링]]></title>
-            <link>https://gracefullight.dev/pe/db/nosql-data-modeling/</link>
-            <guid>https://gracefullight.dev/pe/db/nosql-data-modeling/</guid>
-            <pubDate>Sat, 04 Jan 2025 15:01:26 GMT</pubDate>
-            <description><![CDATA[NoSQL Data Modeling]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="nosql-유형-모델링-절차">NoSQL 유형, 모델링 절차<a href="https://gracefullight.dev/pe/db/nosql-data-modeling/#nosql-%EC%9C%A0%ED%98%95-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="NoSQL 유형, 모델링 절차에 대한 직접 링크" title="NoSQL 유형, 모델링 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="nosql-유형">NoSQL 유형<a href="https://gracefullight.dev/pe/db/nosql-data-modeling/#nosql-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="NoSQL 유형에 대한 직접 링크" title="NoSQL 유형에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Key-Value: 키와 값의 쌍으로 관리, 빠른 조회, Redis, DynamoDB</li>
-<li>Column Family: 열 기반 데이터 저장, 키 범위 처리 요구 개선, 유연성 극대화, HBase, Cassandra</li>
-<li>Document: 문서형태 데이터 저장, 빠른 조회, MongoDB, CouchDB</li>
-<li>Graph: 노드와 간선로 관계 저장, 모든 노드와 간선에 고유식별자, Neo4j</li>
-<li>Vector: 데이터 간 유사도, HNSW, Milvus</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="nosql-모델링-절차">NoSQL 모델링 절차<a href="https://gracefullight.dev/pe/db/nosql-data-modeling/#nosql-%EB%AA%A8%EB%8D%B8%EB%A7%81-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="NoSQL 모델링 절차에 대한 직접 링크" title="NoSQL 모델링 절차에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>절차</th><th>설명</th></tr></thead><tbody><tr><td>탐색</td><td>도메인 모델 파악</td><td>데이터 개체 간 관계 분석, 도메인 파악,<br>ERD 작성하여 결과 도식화</td></tr><tr><td>설계</td><td>쿼리 결과 디자인</td><td>도메인 모델 기반 쿼리 결과값 정의<br>데이터 출력과 저장에 효율적인 구조로 디자인</td></tr><tr><td>-</td><td>패턴 기반 데이터 모델링</td><td>I/O 횟수를 최소화하기 위해 반정규화, 데이터 중복 저장</td></tr><tr><td>-</td><td>기능 최적화</td><td>필요시 Secondary Index 활용하여 전체 데이터 Scan 최소화</td></tr><tr><td>최적화</td><td>후보 NoSQL 선정</td><td>구조, 특징 분석 후 부하테스트, 안정성테스트 수행<br> 후보쿼리 선정</td></tr><tr><td>-</td><td>데이터모델 최적화 및 HW 튜닝</td><td>선정된 쿼리에 적합한 데이터 모델 최적화,<br>어플리케이션 인터페이스 설계<br>NoSQL 설정 및 HW 튜닝</td></tr></tbody></table>
-<ul>
-<li>쿼리 성능 최적화를 위해 중첩데이터와 반정규화된 데이터 구조로 디자인 필요</li>
-</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
         </item>
