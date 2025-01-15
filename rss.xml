@@ -4,10 +4,57 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 13 Jan 2025 12:47:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jan 2025 10:29:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[선형 자료구조, 스택, 큐, 리스트]]></title>
+            <link>https://gracefullight.dev/pe/algo/linear-data-structures/</link>
+            <guid>https://gracefullight.dev/pe/algo/linear-data-structures/</guid>
+            <pubDate>Wed, 15 Jan 2025 10:29:42 GMT</pubDate>
+            <description><![CDATA[Linear data structures, stack, queue, list]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="선형-자료구조-개념">선형 자료구조 개념<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EC%84%A0%ED%98%95-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="선형 자료구조 개념에 대한 직접 링크" title="선형 자료구조 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스택-입출력-원리-활용-예시">스택 입출력 원리, 활용 예시<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EC%8A%A4%ED%83%9D-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="스택 입출력 원리, 활용 예시에 대한 직접 링크" title="스택 입출력 원리, 활용 예시에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="스택-입출력-원리">스택 입출력 원리<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EC%8A%A4%ED%83%9D-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="스택 입출력 원리에 대한 직접 링크" title="스택 입출력 원리에 대한 직접 링크">​</a></h3>
+<ul>
+<li>개념도</li>
+</ul>
+<table><thead><tr><th>구분</th><th></th><th>내용</th></tr></thead><tbody><tr><td>입출력 원리</td><td></td><td>LIFO 원칙으로 가장 마지막에 삽입된 데이터가 가장 먼저 나오는 자료구조</td></tr><tr><td>구성</td><td>PUSH</td><td>스택의 맨 위에 데이터 추가</td></tr><tr><td></td><td>POP</td><td>스택의 맨 위에 잇는 데이터 제거하고 반환</td></tr><tr><td></td><td>TOP</td><td>스택에서 삽입, 삭제가 일어나는 리스트의 끝</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="스택-활용-예시">스택 활용 예시<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EC%8A%A4%ED%83%9D-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="스택 활용 예시에 대한 직접 링크" title="스택 활용 예시에 대한 직접 링크">​</a></h3>
+<ul>
+<li>괄호의 짝 검사</li>
+<li>함수 호출, 복귀 순서 관리</li>
+<li>웹 브라우저 히스토리</li>
+<li>실행취소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="큐-입출력-원리-활용-예시">큐 입출력 원리, 활용 예시<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%ED%81%90-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="큐 입출력 원리, 활용 예시에 대한 직접 링크" title="큐 입출력 원리, 활용 예시에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="큐-입출력-원리">큐 입출력 원리<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%ED%81%90-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="큐 입출력 원리에 대한 직접 링크" title="큐 입출력 원리에 대한 직접 링크">​</a></h3>
+<ul>
+<li>개념도</li>
+</ul>
+<table><thead><tr><th>구분</th><th></th><th>내용</th></tr></thead><tbody><tr><td>입출력 원리</td><td></td><td>선형리스트 한 쪽에서는 삽입이 일어나고, 다른 한 쪽에서는 삭제만 이뤄지도록하여 먼저 들어온 데이터가 먼저 나가는 자료구조</td></tr><tr><td>구성</td><td>Front</td><td>리스트 맨 앞 출력부</td></tr><tr><td></td><td>Rear</td><td>리스트 맨 뒤 입력부</td></tr><tr><td></td><td>Enqueue</td><td>Rear에 데이터를 삽입하는 작업</td></tr><tr><td></td><td>Dequeue</td><td>Front에서 데이터를 삭제하는 작업</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="큐-활용-예시">큐 활용 예시<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%ED%81%90-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="큐 활용 예시에 대한 직접 링크" title="큐 활용 예시에 대한 직접 링크">​</a></h3>
+<ul>
+<li>대기열에 사용: 서로 다른 쓰레드 사이, 프로세스 사이, 네트워크 데이터 전송</li>
+<li>웹 서버 요청</li>
+<li>너비 우선 탐색</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="리스트-입출력-원리-활용-예시">리스트 입출력 원리, 활용 예시<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="리스트 입출력 원리, 활용 예시에 대한 직접 링크" title="리스트 입출력 원리, 활용 예시에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="리스트-입출력-원리">리스트 입출력 원리<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="리스트 입출력 원리에 대한 직접 링크" title="리스트 입출력 원리에 대한 직접 링크">​</a></h3>
+<ul>
+<li>개념도</li>
+</ul>
+<table><thead><tr><th>구분</th><th></th><th>내용</th></tr></thead><tbody><tr><td>입출력 원리</td><td></td><td>순서를 가진 데이터의 집합으로, 배열 기반 또는 링크드 리스트 기반으로 데이터 저장하는 자료구조</td></tr><tr><td>구성</td><td>Insert</td><td>리스트의 특정 위치에 데이터 삽입</td></tr><tr><td></td><td>Delete</td><td>리스트 특정 위치의 데이터 제거</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="리스트-활용-예씨">리스트 활용 예씨<a href="https://gracefullight.dev/pe/algo/linear-data-structures/#%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%94%A8" class="hash-link" aria-label="리스트 활용 예씨에 대한 직접 링크" title="리스트 활용 예씨에 대한 직접 링크">​</a></h3>
+<ul>
+<li>트리, 그래프 등 계층 구조 구현</li>
+<li>커널 모드 프로그래밍</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[중심극한정리, t검정, z검정]]></title>
             <link>https://gracefullight.dev/pe/algo/clt-t-test-z-test/</link>
@@ -315,36 +362,6 @@
 <li>성능: 정규화, 반정규화, 인덱싱, 연결함정, 파티셔닝</li>
 <li>용량관리: 데이터 양, 저장소, 확장성</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[CRUD 매트릭스]]></title>
-            <link>https://gracefullight.dev/pe/db/crud-matrix/</link>
-            <guid>https://gracefullight.dev/pe/db/crud-matrix/</guid>
-            <pubDate>Sun, 05 Jan 2025 08:00:29 GMT</pubDate>
-            <description><![CDATA[CRUD Matrix]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-개념">CRUD 매트릭스 개념<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="CRUD 매트릭스 개념에 대한 직접 링크" title="CRUD 매트릭스 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>데이터 엔티티와 각 기능 간의 상관관계를 매트릭스 형태로 나타내어 데이터 모델링 과정을 검증하는 도구</li>
-<li>데이터와 프로세스 관계 명확화, 기능별 데이터 활용 파악, 테스트 시나리오 도출, 성능 최적화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-작성-절차-표현-방법-분석-사례">CRUD 매트릭스 작성 절차, 표현 방법, 분석 사례<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EC%9E%91%EC%84%B1-%EC%A0%88%EC%B0%A8-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95-%EB%B6%84%EC%84%9D-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="CRUD 매트릭스 작성 절차, 표현 방법, 분석 사례에 대한 직접 링크" title="CRUD 매트릭스 작성 절차, 표현 방법, 분석 사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-작성-절차">CRUD 매트릭스 작성 절차<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EC%9E%91%EC%84%B1-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="CRUD 매트릭스 작성 절차에 대한 직접 링크" title="CRUD 매트릭스 작성 절차에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ol>
-<li>데이터엔티티/기능정의: 시스템 관리되는 주요 엔티티, 기능 식별</li>
-<li>CRUD 관계식별 : 각 기능과 엔티티에 수행하는 작업 정의</li>
-<li>CRUD 매트릭스 작성: 엔티티/기능 매트릭스 작성, CRUD 표기</li>
-<li>중복, 누락, 불필요 작업 파악 및 개선</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-표현-방법">CRUD 매트릭스 표현 방법<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%ED%91%9C%ED%98%84-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="CRUD 매트릭스 표현 방법�에 대한 직접 링크" title="CRUD 매트릭스 표현 방법에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>엔티티/기능</th><th>고객 등록</th><th>상품 조회</th><th>주문 생성</th><th>주문 조회</th></tr></thead><tbody><tr><td>고객</td><td>C, R</td><td>-</td><td>-</td><td>-</td></tr><tr><td>상품</td><td>-</td><td>R</td><td>-</td><td>-</td></tr><tr><td>주문</td><td>-</td><td>R</td><td>C</td><td>R, U</td></tr></tbody></table>
-<ul>
-<li>행에는 프로세스, 열에는 엔티티, 교차점에 트랜잭션 표시</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="crud-매트릭스-분석-사례">CRUD 매트릭스 분석 사례<a href="https://gracefullight.dev/pe/db/crud-matrix/#crud-%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EB%B6%84%EC%84%9D-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="CRUD 매트릭스 분석 사례에 대한 직접 링크" title="CRUD 매트릭스 분석 사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>해결방안</th></tr></thead><tbody><tr><td>요구검증</td><td>고객 등록, 상품 조회, 주문 생성, 주문 조회 기능 검증</td><td>미비 기능 구현</td></tr><tr><td>무결성검증</td><td>상품 엔티티는 R만 존재</td><td>C, U 기능 추가</td></tr><tr><td>성능튜닝</td><td>주문 엔티티는 트랜잭션이 몰려 부하 발생 가능</td><td>파티션 추가, 테이블 분리</td></tr><tr><td>불필요 작업 제거</td><td>주문 조회시 업데이트 발생</td><td>R만 수행하도록 수정</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
         </item>
