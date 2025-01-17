@@ -17,12 +17,7 @@ tags:
 
 ### 데이터 차원 축소 개념도
 
-> 2차원 데이터 PCA로 1차원되는 그림
-
-```mermaid
-graph LR
-  고차원 --> |차원축소| 저차원
-```
+![Dimensionality Reduction](./assets/dimensionality-reduction.png)
 
 ### 데이터 차원 축소 주요 유형
 
