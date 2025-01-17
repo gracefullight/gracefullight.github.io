@@ -1,11 +1,11 @@
 ---
 title: 데이터 차원 축소
 date: 2024-08-11T10:04:46.954+09:00
-description: Dimensionality reduction
+description: Dimensionality Reduction
 authors: me
 tags:
   - pe
-  - pe/algo 
+  - pe/algo
 ---
 
 ## 데이터 차원 축소 개념
