@@ -202,7 +202,7 @@
 <li><a href="https://corporatefinanceinstitute.com/resources/data-science/central-limit-theorem/" target="_blank" rel="noopener noreferrer">이미지출처</a></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-특징">중심극한정리 특징<a href="https://gracefullight.dev/en/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>특징</th><th>내용</th></tr></thead><tbody><tr><td>통계적 추론</td><td>정규분포 근사화</td><td>표본 평균을 정규분포에 근사화하여 통계적 추론을 간편하게 만들어줌</td></tr><tr><td>-</td><td>추론 강화</td><td>적은 표본에도 모집단 추론 가능</td></tr><tr><td>표본과 모집단</td><td>표본 크기 영향</td><td>표본 크기 중에서 중심극한정리 적용 용이</td></tr><tr><td>-</td><td>모집단 분포 독립ㅈ거</td><td>모집단 데이터 분포에 상관없이 평균분포 근사값 제공</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>특징</th><th>내용</th></tr></thead><tbody><tr><td>통계적 추론</td><td>정규분포 근사화</td><td>표본 평균을 정규분포에 근사화하여 통계적 추론을 간편하게 만들어줌</td></tr><tr><td>-</td><td>추론 강화</td><td>적은 표본에도 모집단 추론 가능</td></tr><tr><td>표본과 모집단</td><td>표본 크기 영향</td><td>표본 크기 중에서 중심극한정리 적용 용이</td></tr><tr><td>-</td><td>모집단 분포 독립적</td><td>모집단 데이터 분포에 상관없이 평균분포 근사값 제공</td></tr></tbody></table>
 <ul>
 <li>모집단의 분포가 정규분포가 아니여도 중심극한정리에 의해 정규분포로 가정 후 통계분석 가능</li>
 </ul>
