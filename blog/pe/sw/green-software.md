@@ -51,3 +51,7 @@ graph TD
 | 회원사 증가 | 지속 가능성을 목표로 기업 참여 확대 | MS, Google, 지멘스 등 64개 회원사 참여 |
 | 표준화 작업 | SCER, TOSS 등 친환경 SW 표준 개발 | SW 탄소배출량 측정 기준 ISO 표준 승인 |
 | 오픈소스 프로젝트 | SW 개발 및 운영 효율성 및 탄소 절감 도구 제공 |Carbon Aware SDK, Impact Framework, Carbon CI |
+
+## 참조
+
+- [IITP 주간기술동향 2148호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1333)
