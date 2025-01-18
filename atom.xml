@@ -27,7 +27,11 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-구성요소">6G 무선 포지셔닝 및 센싱 구성요소<a href="https://gracefullight.dev/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="6G 무선 포지셔닝 및 센싱 구성요소에 대한 직접 링크" title="6G 무선 포지셔닝 및 센싱 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>위성 통신</td><td>저궤도 위성을 활용해 실외 환경에서 높은 커버리지와 안정성 제공</td><td>5G 대비 10배 이상 커버리지 확대</td></tr><tr><td>지능형 표면</td><td>RIS 활용 신호 반사 및 경로 재구성</td><td>장애물 극복 및 신호 품질 개선</td></tr><tr><td>다기능 하드웨어</td><td>통신과 센싱을 통합 수행할 수 있는 하드웨어 설계</td><td>E-MIMO, SDR 등</td></tr><tr><td>AI 플랫폼</td><td>데이터 분석 및 기계 학습을 통해 센싱 및 포지셔닝 최적화</td><td>신속한 의사결정과 정확도 개선</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-기술동향">6G 무선 포지셔닝 및 센싱 기술동향<a href="https://gracefullight.dev/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="6G 무선 포지셔닝 및 센싱 기술동향에 대한 직접 링크" title="6G 무선 포지셔닝 및 센싱 기술동향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>과기정통부 6G 전략 로드맵</td><td>2030년까지 6G 상용화를 목표로 초정밀 포지셔닝 및 고감도 센싱 기술 개발 진행</td></tr><tr><td></td><td>국제 표준화 작업</td><td>ETRI와 TTA의 ITU 및 3GPP의 국제 표준화 작업 참여</td></tr><tr><td>국외</td><td>미국</td><td>연방통신위원회, 국방부의 6G 포지셔닝 및 센싱 기술 연구 지원, 위성 및 드론 기반 기술 연구</td></tr><tr><td></td><td>유럽</td><td>Horizon Europe 프로젝트로 테라헤르츠 기반 고정밀 포지셔닝 기술 개발</td></tr><tr><td></td><td>중국</td><td>차세대 정보통신 기술 혁신 전략을 통한 대규모 투자</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>과기정통부 6G 전략 로드맵</td><td>2030년까지 6G 상용화를 목표로 초정밀 포지셔닝 및 고감도 센싱 기술 개발 진행</td></tr><tr><td></td><td>국제 표준화 작업</td><td>ETRI와 TTA의 ITU 및 3GPP의 국제 표준화 작업 참여</td></tr><tr><td>국외</td><td>미국</td><td>연방통신위원회, 국방부의 6G 포지셔닝 및 센싱 기술 연구 지원, 위성 및 드론 기반 기술 연구</td></tr><tr><td></td><td>유럽</td><td>Horizon Europe 프로젝트로 테라헤르츠 기반 고정밀 포지셔닝 기술 개발</td></tr><tr><td></td><td>중국</td><td>차세대 정보통신 기술 혁신 전략을 통한 대규모 투자</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/6g-wireless-positioning-sensing/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1335" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2150호</a></li>
+</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
@@ -58,7 +62,7 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회원사 증가</td><td>지속 가능성을 목표로 기업 참여 확대</td><td>MS, Google, 지멘스 등 64개 회원사 참여</td></tr><tr><td>표준화 작업</td><td>SCER, TOSS 등 친환경 SW 표준 개발</td><td>SW 탄소배출량 측정 기준 ISO 표준 승인</td></tr><tr><td>오픈소스 프로젝트</td><td>SW 개발 및 운영 효율성 및 탄소 절감 도구 제공</td><td>Carbon Aware SDK, Impact Framework, Carbon CI</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sw/green-software/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP 주간기술동향 2148호</a></li>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2148호</a></li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
@@ -90,7 +94,7 @@
 <table><thead><tr><th>구분</th><th>사례</th><th>내용</th></tr></thead><tbody><tr><td>스마트시티</td><td>도시 항공 교통과 지상 교통 통합</td><td>6G 통신의 실시간 데이터 분석과 IoE 통합을 통해 도심 혼잡 해소 및 고속 이동 제공</td></tr><tr><td>자율 교통망</td><td>교통 혼잡 해소 및 이동성 증대</td><td>교통 네트워크의 완전한 통합 운영 및 실시간 데이터 분석 가능</td></tr><tr><td>IoE 통합</td><td>수백억 IoE 센서 기반 운영</td><td>기상, 교통정보 등을 실시간 반영한 PAV 경로 최적화, 운영 효율성 향상</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP 주간기술동향 2148호</a></li>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2148호</a></li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
@@ -119,7 +123,7 @@
 <table><thead><tr><th>구분</th><th>동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>삼성전자 X-MIMO</td><td>FR3 대역의 전파 손실 해결 및 안테나 밀도 향상 연구</td></tr><tr><td></td><td>중소기업 및 연구기관</td><td>선진 기술에 필적하는 E-MIMO 연구 및 프로토타입 개발</td></tr><tr><td>국외</td><td>퀄컴 GIGA MIMO</td><td>4096개 안테나와 256 디지털 체인을 기반으로 높은 용량 제공</td></tr><tr><td></td><td>화웨이</td><td>에너지 절감을 위한 PowerStar 솔루션 연구 및 6G 확장</td></tr><tr><td></td><td>에릭슨</td><td>유럽 프로젝트와 협력하여 친환경 기지국과 반도체 기술 발전 연구</td></tr><tr><td></td><td>노키아</td><td>FR1 기지국 재사용을 통한 FR3 비용 감소 및 6G 준비</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/e-mimo/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1331" target="_blank" rel="noopener noreferrer">IITP 주간기술동향 2146호</a></li>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1331" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2146호</a></li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
