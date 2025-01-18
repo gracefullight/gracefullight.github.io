@@ -44,7 +44,6 @@ graph TD
     IoTSensors --> AIPlatform
     MultiFunctionHardware --> AIPlatform
     AIPlatform --> EndUser
-
 ```
 
 ### 6G 무선 포지셔닝 및 센싱 구성요소
