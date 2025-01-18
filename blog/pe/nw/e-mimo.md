@@ -67,4 +67,4 @@ graph LR
 
 ## 참조
 
-- [IITP 주간기술동향 2146호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1331)
+- [IITP: 주간기술동향 2146호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1331)

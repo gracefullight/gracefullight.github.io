@@ -54,4 +54,4 @@ graph TD
 
 ## 참조
 
-- [IITP 주간기술동향 2148호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1333)
+- [IITP: 주간기술동향 2148호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1333)

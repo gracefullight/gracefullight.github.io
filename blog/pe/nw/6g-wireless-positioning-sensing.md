@@ -65,3 +65,7 @@ graph TD
 | 국외 | 미국 | 연방통신위원회, 국방부의 6G 포지셔닝 및 센싱 기술 연구 지원, 위성 및 드론 기반 기술 연구 |
 | | 유럽 | Horizon Europe 프로젝트로 테라헤르츠 기반 고정밀 포지셔닝 기술 개발 |
 | | 중국 | 차세대 정보통신 기술 혁신 전략을 통한 대규모 투자 |
+
+## 참조
+
+- [IITP: 주간기술동향 2150호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1335)
