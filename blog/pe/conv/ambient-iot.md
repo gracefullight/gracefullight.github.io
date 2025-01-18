@@ -79,3 +79,7 @@ sequenceDiagram
 | | 동적 에너지 관리 시스템 | AI 기반 에너지 수집 및 분배 최적화로 에너지 사용 최소화 |
 | 확장성 및 표준화 | 6G와의 통합 | 초저지연 네트워크와 대규모 IoT 연결 지원하여 더 높은 데이터 전송 속도와 넓은 커버리지 제공 |
 | | 국제 표준화 | 3GPP, IEEE와 협력하여 글로벌 표준 정립, 상호운용성 강화 및 산업 협력 촉진 |
+
+## 참조
+
+- [IITP: 주간기술동향 2150호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1335)
