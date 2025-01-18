@@ -4,10 +4,38 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 18 Jan 2025 08:21:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 18 Jan 2025 11:18:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[비정지궤도 위성통신]]></title>
+            <link>https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/</link>
+            <guid>https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/</guid>
+            <pubDate>Sat, 18 Jan 2025 11:18:00 GMT</pubDate>
+            <description><![CDATA[Non-geostationary Satellite Communication]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위성통신-개요">위성통신 개요<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="위성통신 개요에 대한 직접 링크" title="위성통신 개요에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="위성통신-개념도">위성통신 개념도<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="위성통신 개념도에 대한 직접 링크" title="위성통신 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-개념">비정지궤도 위성통신 개념<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="비정지궤도 위성통신 개념에 대한 직접 링크" title="비정지궤도 위성통신 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>LEO 및 MEO 위성을 활용하여 높은 데이터 전송 속도, 낮은 지연시간, 글로벌 커버리지를 제공하는 통신 기술</li>
+<li>GEO 대비 낮은 전송 지연으로 IoT, 자율주행, 의료 등 다양한 서비스 적합 / LEO 위성 서비스 활성화로 인한 데이터 수요 충족 / 긴급 SOS 메시징 및 극지방 커버리지 등 기존 위성 통신 문제 해결</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도-구성요소-기술동향">비정지궤도 위성통신 구성도, 구성요소, 기술동향<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="비정지궤도 위성통신 구성도, 구성요소, 기술동향에 대한 직접 링크" title="비정지궤도 위성통신 구성도, 구성요소, 기술동향에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도">비정지궤도 위성통신 구성도<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="비정지궤도 위성통신 구성도에 대한 직접 링크" title="비정지궤도 위성통신 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성요소">비정지궤도 위성통신 구성요소<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="비정지궤도 위성통신 구성요소에 대한 직접 링크" title="비정지궤도 위성통신 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>위성</td><td>LEO/MEO 위성</td><td>저지연, 고속 데이터 전송, 글로벌 커버리지 제공</td></tr><tr><td></td><td>위성 간 링크 (ISL)</td><td>위성 간 데이터 중계 및 글로벌 라우팅 지원</td></tr><tr><td>단말</td><td>위성 파라볼릭 안테나 단말</td><td>GEO+MEO+LEO 지원, 주로 해상 및 고정형 통신 환경에서 사용</td></tr><tr><td></td><td>위성 평판 안테나 단말</td><td>위상 배열형 전자적 빔 조향 안테나, 높은 내구성, 다중궤도/다중대역 지원</td></tr><tr><td></td><td>항공기 IFC 단말</td><td>기내 인터넷 연결, 실시간 스트리밍 지원</td></tr><tr><td></td><td>해상용 단말</td><td>극지방 커버리지 및 해상 데이터 통신 지원</td></tr><tr><td></td><td>지상 휴대 단말</td><td>긴급 SOS 메시지, IoT 연동, 위성 직접 통신</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-기술동향">비정지궤도 위성통신 기술동향<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="비정지궤도 위성통신 기술동향에 대한 직접 링크" title="비정지궤도 위성통신 기술동향에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>LEO 위성 테스트베드 구축</td><td>2030년까지 시범시스템 확보를 목표로 기술 개발</td></tr><tr><td></td><td>표준화 참여</td><td>3GPP NTN 표준화 및 위성-지상 통합 기술 개발</td></tr><tr><td>국외</td><td>스타링크</td><td>6,100개 이상의 위성을 운영하며 100개국에서 300만 명의 가입자 확보</td></tr><tr><td></td><td>Amazon Kuiper</td><td>3,236개의 Ka 대역 위성으로 글로벌 커버리지 구축 계획</td></tr><tr><td></td><td>EU IRIS² 프로젝트</td><td>LEO/MEO/GEO 다중 궤도 기반 초고속 통신 서비스 구축</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/non-geostationary-satellite-communication/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1336" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2151호</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[앰비언트 IoT]]></title>
             <link>https://gracefullight.dev/pe/conv/ambient-iot/</link>
@@ -280,64 +308,6 @@
 <li>트리, 그래프 등 계층 구조 구현</li>
 <li>커널 모드 프로그래밍</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[중심극한정리, t검정, z검정]]></title>
-            <link>https://gracefullight.dev/pe/algo/clt-t-test-z-test/</link>
-            <guid>https://gracefullight.dev/pe/algo/clt-t-test-z-test/</guid>
-            <pubDate>Mon, 13 Jan 2025 12:47:32 GMT</pubDate>
-            <description><![CDATA[Central Limit Theorem, T-Test, Z-Test]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="추론통계-개념">추론통계 개념<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%B6%94%EB%A1%A0%ED%86%B5%EA%B3%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="추론통계 개념에 대한 직접 링크" title="추론통계 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>샘플데이터를 기반으로 모집단의 특성을 추론하거나 가설을 검증하는 통계방법</li>
-<li>표본추출<!-- -->
-<ul>
-<li>랜덤추출</li>
-<li>계통추출</li>
-<li>집락추출</li>
-<li>층화추출</li>
-</ul>
-</li>
-<li>기술통계<!-- -->
-<ul>
-<li>평균</li>
-<li>분산</li>
-<li>표준편차</li>
-</ul>
-</li>
-<li>추론<!-- -->
-<ul>
-<li>점추정</li>
-<li>구간추정</li>
-</ul>
-</li>
-<li>가설검정<!-- -->
-<ul>
-<li>모수검정</li>
-<li>비모수검정</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-개념-및-특징">중심극한정리 개념 및 특징<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="중심극한정리 개념 및 특징에 대한 직접 링크" title="중심극한정리 개념 및 특징에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-개념도">중심극한정리 개념도<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="중심극한정리 개념도에 대한 직접 링크" title="중심극한정리 개념도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="CLT" src="https://gracefullight.dev/assets/images/clt-15896110e118a498c1434f2dcc674a46.webp" width="1024" height="626" class="img_xC7_"></p>
-<ul>
-<li>모집단으로부터 추출된 표본의 크기가 충분히 커지면 모집단 표본 분포와 상관없이 표본들의 평균분포가 표준정규분포를 따른다는 법칙</li>
-<li><a href="https://corporatefinanceinstitute.com/resources/data-science/central-limit-theorem/" target="_blank" rel="noopener noreferrer">이미지출처</a></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="중심극한정리-특징">중심극한정리 특징<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#%EC%A4%91%EC%8B%AC%EA%B7%B9%ED%95%9C%EC%A0%95%EB%A6%AC-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="중심극한정리 특징에 대한 직접 링크" title="중심극한정리 특징에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>특징</th><th>내용</th></tr></thead><tbody><tr><td>통계적 추론</td><td>정규분포 근사화</td><td>표본 평균을 정규분포에 근사화하여 통계적 추론을 간편하게 만들어줌</td></tr><tr><td>-</td><td>추론 강화</td><td>적은 표본에도 모집단 추론 가능</td></tr><tr><td>표본과 모집단</td><td>표본 크기 영향</td><td>표본 크기 중에서 중심극한정리 적용 용이</td></tr><tr><td>-</td><td>모집단 분포 독립적</td><td>모집단 데이터 분포에 상관없이 평균분포 근사값 제공</td></tr></tbody></table>
-<ul>
-<li>모집단의 분포가 정규분포가 아니여도 중심극한정리에 의해 정규분포로 가정 후 통계분석 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-비교">T검정, Z검정 비교<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="T검정, Z검정 비교에 대한 직접 링크" title="T검정, Z검정 비교에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-관계도">T검정, Z검정 관계도<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EA%B4%80%EA%B3%84%EB%8F%84" class="hash-link" aria-label="T검정, Z검정 관계도에 대한 직접 링크" title="T검정, Z검정 관계도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="t검정-z검정-상세비교">T검정, Z검정 상세비교<a href="https://gracefullight.dev/pe/algo/clt-t-test-z-test/#t%EA%B2%80%EC%A0%95-z%EA%B2%80%EC%A0%95-%EC%83%81%EC%84%B8%EB%B9%84%EA%B5%90" class="hash-link" aria-label="T검정, Z검정 상세비교에 대한 직접 링크" title="T검정, Z검정 상세비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>T검정</th><th>Z검정</th></tr></thead><tbody><tr><td>모집단 정보</td><td>표준편차 모를 때 사용</td><td>표준편차 알 때 사용</td></tr><tr><td>표본 크기</td><td>소규모</td><td>대규모</td></tr><tr><td>유연성</td><td>표본 크기가 작아도 정확한 추론</td><td>표본 크기 작으면 부정확</td></tr><tr><td>분포 사용</td><td>T분포</td><td>Z분포</td></tr><tr><td>예시</td><td>학생성적 비교, 소규모 실험 전/후 비교</td><td>공장 생산품질 비교, 대규모 설문조사 분석</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
         </item>
