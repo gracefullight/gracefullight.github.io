@@ -1,7 +1,7 @@
 ---
 title: AI를 이용한 사이버 공격 패러다임
 date: 2025-01-19T19:01:10.702+09:00
-description:AI Enabled Cyber Attack Paradigms
+description: AI Enabled Cyber Attack Paradigms
 authors: me
 tags:
   - pe
