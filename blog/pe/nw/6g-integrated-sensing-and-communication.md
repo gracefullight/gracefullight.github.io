@@ -14,23 +14,17 @@ tags:
 
 ```mermaid
 graph TD
-  IMT2030["IMT-2030 사용 시나리오"]
-  
-  subgraph 핵심 기술
-      ISAC["Integrated Sensing<br/>and Communication (ISAC)"]
-      Immersive["Immersive Communication"]
-      AIComm["Integrated AI<br/>and Communication"]
-      Reliable["Hyper Reliable<br/>and Low-Latency Communication"]
-      Massive["Massive Communication"]
-      Ubiquitous["Ubiquitous Connectivity"]
-  end
+  subgraph IMT2030["IMT-2030 사용 시나리오"]
+    direction LR
+    ISAC["Integrated Sensing<br/>and Communication (ISAC)"]
+    Immersive["Immersive Communication"]
+    AIComm["Integrated AI<br/>and Communication"]
+    Reliable["Hyper Reliable<br/>and Low-Latency Communication"]
+    Massive["Massive Communication"]
+    Ubiquitous["Ubiquitous Connectivity"]
 
-  IMT2030 --> ISAC
-  IMT2030 --> Immersive
-  IMT2030 --> AIComm
-  IMT2030 --> Reliable
-  IMT2030 --> Massive
-  IMT2030 --> Ubiquitous
+    ISAC <--> Immersive <--> AIComm <--> Reliable <--> Massive <--> Ubiquitous <--> ISAC
+  end
 ```
 
 - 센싱과 통신을 단일 플랫폼에서 통합적으로 수행하여 데이터 전송과 환경 감지 기능을 동시에 제공하는 기술
