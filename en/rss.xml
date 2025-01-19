@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 19 Jan 2025 11:19:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jan 2025 13:06:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[AI 시대의 사이버 보안 기술]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/</guid>
+            <pubDate>Sun, 19 Jan 2025 13:06:30 GMT</pubDate>
+            <description><![CDATA[AI Era Cybersecurity Technologies]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-시대-사이버-보안-개념">AI 시대 사이버 보안 개념<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#ai-%EC%8B%9C%EB%8C%80-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>인공지능 기술이 발전하면서 기존 보안 체계를 무력화할 수 있는 지능형 사이버 공격 등장하여 새로운 보안 기술 요구</li>
+<li>자동화된 피싱, 악성코드 생성, 딥페이크 등과 같은 위협 증가 / AI를 활용한 보안 기술 개발과 국제적인 규제 및 협력 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-보안-위협-유형-규제-정책-동향">AI 보안 위협 유형, 규제 정책 동향<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#ai-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EC%9C%A0%ED%98%95-%EA%B7%9C%EC%A0%9C-%EC%A0%95%EC%B1%85-%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-보안-위협-유형">AI 보안 위협 유형<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#ai-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>위협</th><th>시사점</th></tr></thead><tbody><tr><td>AI 시스템 특성</td><td>AI 자율성으로 비의도적 결정 및 조작 발생 가능</td><td>고위험 AI 통제를 위한 감시 및 행동 예측 필요</td></tr><tr><td></td><td>AI 블랙박스 특성으로 오류 탐지 및 대응 어려움</td><td>AI 모델 해석 및 투명성 강화 기술 필요</td></tr><tr><td>데이터 및 개인정보</td><td>편향된 데이터 학습으로 사회적 신뢰 저하</td><td>데이터 정합성 검증 및 공정성 평가 필요</td></tr><tr><td></td><td>개인정보 보호와 AI 생성물의 신뢰성 문제 대두</td><td>민감 정보 보호 기술 및 신뢰성 강화 필요</td></tr><tr><td>고위험 및 새로운 위협</td><td>고위험 AI의 인간 권리 및 개인정보 침해 가능</td><td>실시간 모니터링 및 컴플라이언스 체계 필요</td></tr><tr><td></td><td>새로운 사이버 위협 등장, 대응 기술 부족</td><td>AI 취약점 탐지 및 선제적 방어 체계 구축 필요</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-규제-정책-동향">AI 규제 정책 동향<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#ai-%EA%B7%9C%EC%A0%9C-%EC%A0%95%EC%B1%85-%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>주요 내용</th><th>적용사례</th></tr></thead><tbody><tr><td>EU 인공지능법 (AI Act)</td><td>AI를 위험 수준(4단계)으로 분류하여 고위험 AI 시스템은 사전 인증 필수</td><td>의료 AI 인증, 자율주행차 AI 투명성 확보</td></tr><tr><td></td><td>실시간 생체 인식 기술 금지 및 투명성 요건 강화</td><td>감시 AI 금지</td></tr><tr><td>미국 NIST AI RMF</td><td>AI 설계 단계에서 투명성과 신뢰성을 확보하기 위한 위험 관리 가이드라인 제공</td><td>자율주행 AI 판단 신뢰성 확보.</td></tr><tr><td></td><td>지속적 모니터링과 업데이트를 통해 시스템 신뢰성 유지</td><td>AI 기반 신용평가 공정성 강화</td></tr><tr><td>중국 심층합성 관리 규정</td><td>AI 생성물의 신뢰성과 투명성을 강화</td><td>허위 정보 방지 기술 도입</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-시대-사이버-보안-고려사항">AI 시대 사이버 보안 고려사항<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#ai-%EC%8B%9C%EB%8C%80-%EC%82%AC%EC%9D%B4%EB%B2%84-%EB%B3%B4%EC%95%88-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>기술적 측면</td><td>AI 기반 위협 탐지 및 방어 기술 필요</td><td>실시간 모니터링 및 위협 탐지 기술 개발, 적대적 AI 방어 기술 도입</td></tr><tr><td>사회적 측면</td><td>AI 편향성과 윤리 문제로 인한 사회적 신뢰 저하</td><td>데이터 공정성 검증 및 AI 윤리적 기준 강화</td></tr><tr><td>정책적 측면</td><td>AI의 위험을 통제하고 규제하기 위한 법적 장치 마련</td><td>국제 표준화 및 글로벌 협력 체계 구축, AI 규제 법안 마련</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/sec/ai-era-cybersecurity-technologies/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1345" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2160호</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[대규모 언어 모델 성능 향상을 위한 연구동향]]></title>
             <link>https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/</link>
@@ -198,7 +223,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-필요성">의도 기반 네트워킹 필요성<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>관리 복잡성</td><td>네트워크 증가 및 복잡성 완화</td><td>기존 네트워크는 수동 구성으로 인해 시간 소모 및 오류 가능성 존재</td></tr><tr><td>자동화</td><td>AI/ML 기반 최적화</td><td>인공지능 및 기계 학습 기반으로 실시간 네트워크 최적화와 적응형 관리 가능</td></tr><tr><td>표준화</td><td>환경 적합성</td><td>다중 연결 장치와 네트워크의 효율적 관리를 위해 표준화된 접근 방식 요구</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-��기반-네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-��네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도">의도 기반 네트워킹 개념도<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -263,7 +288,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-등장배경">앰비언트 IoT 등장배경<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%EB%93%B1%EC%9E%A5%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>배경</th><th>내용</th></tr></thead><tbody><tr><td>기술적 요구</td><td>IoT 디바이스 급증</td><td>수십억 개 IoT 디바이스로 인한 배터리 교체 및 유지보수 부담</td></tr><tr><td>환경적 요인</td><td>에너지 소비와 환경 문제</td><td>배터리 사용을 줄이고 에너지 하베스팅 기술로 지속 가능성 강화</td></tr><tr><td>미래 요구</td><td>6G 및 mMTC 기술 확장 필요</td><td>초연결성 요구 해결 및 높은 연결 밀도 지원</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저-기능요구사항-유��즈케이스">앰비언트 IoT 프로시저, 기능요구사항, 유즈케이스<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80-%EA%B8%B0%EB%8A%A5%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저-기능요구사항-유즈케이스">앰비언트 IoT 프로시저, 기능요구사항, 유즈케이스<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80-%EA%B8%B0%EB%8A%A5%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저">앰비언트 IoT 프로시저<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -281,34 +306,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[6G 무선통신 기반 포지셔닝 및 센싱]]></title>
-            <link>https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/</link>
-            <guid>https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/</guid>
-            <pubDate>Sat, 18 Jan 2025 07:44:03 GMT</pubDate>
-            <description><![CDATA[6G wireless communication systems for precise positioning and sensing]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-개요">6G 무선 포지셔닝 및 센싱 개요<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-개념">6G 무선 포지셔닝 및 센싱 개념<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>6G 무선 통신 시스템은 초고속 데이터 전송, 초저지연, 광범위한 연결성을 제공하며, 포지셔닝 및 센싱 기능을 통해 초정밀 위치 추적 및 환경 데이터 수집을 가능하게함</li>
-<li>테라비트급 속도, 초정밀 포지셔닝, AI 및 ML 통합</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-필요성">6G 무선 포지셔닝 및 센싱 필요성<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>정밀도</td><td>하드웨어 한계 해결</td><td>고주파 대역에서 높은 정밀도를 위한 ADC, 다중 안테나 배열 등 고성능 설계 필요</td></tr><tr><td>채널 문제</td><td>복잡한 신호 경로 처리</td><td>도심 환경의 다중 경로 반사 문제를 해결하기 위한 기술 요구</td></tr><tr><td>다기능성</td><td>통신과 센싱의 융합</td><td>MIMO, SDR 기술 기반으로 통신과 센싱 기능을 동시 구현하는 다기능 하드웨어 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-구성도-구성요소-기술동향">6G 무선 포지셔닝 및 센싱 구성도, 구성요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-구성도">6G 무선 포지셔닝 및 센싱 구성도<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-구성요소">6G 무선 포지셔닝 및 센싱 구성요소<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>위성 통신</td><td>저궤도 위성을 활용해 실외 환경에서 높은 커버리지와 안정성 제공</td><td>5G 대비 10배 이상 커버리지 확대</td></tr><tr><td>지능형 표면</td><td>RIS 활용 신호 반사 및 경로 재구성</td><td>장애물 극복 및 신호 품질 개선</td></tr><tr><td>다기능 하드웨어</td><td>통신과 센싱을 통합 수행할 수 있는 하드웨어 설계</td><td>E-MIMO, SDR 등</td></tr><tr><td>AI 플랫폼</td><td>데이터 분석 및 기계 학습을 통해 센싱 및 포지셔닝 최적화</td><td>신속한 의사결정과 정확도 개선</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-무선-포지셔닝-및-센싱-기술동향">6G 무선 포지셔닝 및 센싱 기술동향<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#6g-%EB%AC%B4%EC%84%A0-%ED%8F%AC%EC%A7%80%EC%85%94%EB%8B%9D-%EB%B0%8F-%EC%84%BC%EC%8B%B1-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>과기정통부 6G 전략 로드맵</td><td>2030년까지 6G 상용화를 목표로 초정밀 포지셔닝 및 고감도 센싱 기술 개발 진행</td></tr><tr><td></td><td>국제 표준화 작업</td><td>ETRI와 TTA의 ITU 및 3GPP의 국제 표준화 작업 참여</td></tr><tr><td>국외</td><td>미국</td><td>연방통신위원회, 국방부의 6G 포지셔닝 및 센싱 기술 연구 지원, 위성 및 드론 기반 기술 연구</td></tr><tr><td></td><td>유럽</td><td>Horizon Europe 프로젝트로 테라헤르츠 기반 고정밀 포지셔닝 기술 개발</td></tr><tr><td></td><td>중국</td><td>차세대 정보통신 기술 혁신 전략을 통한 대규모 투자</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/nw/6g-wireless-positioning-sensing/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1335" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2150호</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
         </item>
     </channel>
 </rss>
