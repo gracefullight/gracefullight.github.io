@@ -28,12 +28,12 @@ graph TB
     EDR["사고기록장치 (EDR)"]
     ECU["전자제어장치 (ECU)"]
     PCM["파워트레인 제어모듈 (PCM)"]
-    IVI["인포테인먼트 시스템 (IVI)"]
   end
 
   subgraph 운전데이터
     ADAS["첨단운전자보조시스템 (ADAS)"]
     DSSAD["자율주행정보 기록장치 (DSSAD)"]
+    IVI["인포테인먼트 시스템 (IVI)"]
   end
 
   스마트폰 -->|통신 및 연동| 차량
