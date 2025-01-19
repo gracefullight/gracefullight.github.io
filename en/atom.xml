@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-19T03:09:09.067Z</updated>
+    <updated>2025-01-19T07:05:58.736Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[5G New Radio의 AI/ML 기술]]></title>
+        <id>https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/</id>
+        <link href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/"/>
+        <updated>2025-01-19T07:05:58.736Z</updated>
+        <summary type="html"><![CDATA[5G New Radio AI/ML Technologies]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-개요">5G NR 개요<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-개념도-핵심요소-기대효과">5G NR AI/ML 프레임워크 개념도, 핵심요소, 기대효과<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-개념도">5G NR AI/ML 프레임워크 개념도<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-핵심요소">5G NR AI/ML 프레임워크 핵심요소<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>데이터 처리</td><td>데이터 수집</td><td>AI/ML 학습 및 추론을 위해 네트워크 데이터를 수집 및 전처리</td></tr><tr><td>모델 관리</td><td>모델 학습</td><td>수집된 데이터를 기반으로 최적의 AI/ML 모델 학습 및 평가</td></tr><tr><td></td><td>모델 저장</td><td>학습된 모델을 저장하여 추론 기능에서 활용 가능</td></tr><tr><td>모델 운영</td><td>추론</td><td>실시간 데이터 기반 추론으로 네트워크 상태를 진단 및 예측</td></tr><tr><td></td><td>관리</td><td>성능 모니터링 및 피드백을 통해 네트워크 최적화와 모델 업데이트 수행</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-적용-기대효과">5G NR AI/ML 적용 기대효과<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%EC%A0%81%EC%9A%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>기술</th><th>내용</th><th>기대 효과</th></tr></thead><tbody><tr><td>CSI 피드백</td><td>채널 상태 정보를 AI/ML로 예측하여 오버헤드 감소</td><td>데이터 전송 효율 및 정확도 향상</td></tr><tr><td>빔 관리</td><td>빔포밍, 빔 스위칭 등 AI 기반 관리</td><td>밀리미터파 대역에서 통신 성능 최적화</td></tr><tr><td>측위 정확도 향상</td><td>NLOS 환경에서도 AI 기반 예측 기술 활용</td><td>고정밀 위치 추적 가능</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-적용시-고려사항">5G NR AI/ML 적용시 고려사항<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>기술적</td><td>데이터 품질</td><td>AI/ML 모델 학습 및 추론의 정확도를 보장하기 위한 고품질 데이터 필요</td></tr><tr><td></td><td>모델 복잡성</td><td>적응형 네트워크 환경에서 실시간 추론이 가능하도록 경량화된 모델 설계</td></tr><tr><td>경제적</td><td>비용 효율성</td><td>AI/ML 인프라 구축 및 운영 비용을 최소화하기 위한 클라우드 활용</td></tr><tr><td>운영적</td><td>표준화</td><td>다중 공급업체 환경에서 AI/ML 모델의 상호운용성을 보장하기 위한 표준 필요</td></tr><tr><td></td><td>보안</td><td>AI/ML 모델과 네트워크 데이터의 무결성을 보장하기 위한 보안 메커니즘 필요</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1342" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2157호</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ISAC, 6G 센싱/통신 통합 기술]]></title>
         <id>https://gracefullight.dev/en/pe/nw/6g-integrated-sensing-and-communication/</id>
@@ -62,7 +90,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-필요성">의도 기반 네트워킹 필요성<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>관리 복잡성</td><td>네트워크 증가 및 복잡성 완화</td><td>기존 네트워크는 수동 구성으로 인해 시간 소모 및 오류 가능성 존재</td></tr><tr><td>자동화</td><td>AI/ML 기반 최적화</td><td>인공지능 및 기계 학습 기반으로 실시간 네트워크 최적화와 적응형 관리 가능</td></tr><tr><td>표준화</td><td>환경 적합성</td><td>다중 연결 장치와 네트워크의 효율적 관리를 위해 표준화된 접근 방식 요구</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EF%BF%BD%EF%BF%BD%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도">의도 기반 네트워킹 개념도<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -106,7 +134,7 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도-구성요소-기술동향">비정지궤도 위성통신 구성도, 구성요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도">비정지궤도 위성통신 구성도<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성요소">비정지궤도 위성통신 구성요소<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성요소">비정지궤도 위성통신 구성요소<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EF%BF%BD%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>위성</td><td>LEO/MEO 위성</td><td>저지연, 고속 데이터 전송, 글로벌 커버리지 제공</td></tr><tr><td></td><td>위성 간 링크 (ISL)</td><td>위성 간 데이터 중계 및 글로벌 라우팅 지원</td></tr><tr><td>단말</td><td>위성 파라볼릭 안테나 단말</td><td>GEO+MEO+LEO 지원, 주로 해상 및 고정형 통신 환경에서 사용</td></tr><tr><td></td><td>위성 평판 안테나 단말</td><td>위상 배열형 전자적 빔 조향 안테나, 높은 내구성, 다중궤도/다중대역 지원</td></tr><tr><td></td><td>항공기 IFC 단말</td><td>기내 인터넷 연결, 실시간 스트리밍 지원</td></tr><tr><td></td><td>해상용 단말</td><td>극지방 커버리지 및 해상 데이터 통신 지원</td></tr><tr><td></td><td>지상 휴대 단말</td><td>긴급 SOS 메시지, IoT 연동, 위성 직접 통신</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-기술동향">비정지궤도 위성통신 기술동향<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>LEO 위성 테스트베드 구축</td><td>2030년까지 시범시스템 확보를 목표로 기술 개발</td></tr><tr><td></td><td>표준화 참여</td><td>3GPP NTN 표준화 및 위성-지상 통합 기술 개발</td></tr><tr><td>국외</td><td>스타링크</td><td>6,100개 이상의 위성을 운영하며 100개국에서 300만 명의 가입자 확보</td></tr><tr><td></td><td>Amazon Kuiper</td><td>3,236개의 Ka 대역 위성으로 글로벌 커버리지 구축 계획</td></tr><tr><td></td><td>EU IRIS² 프로젝트</td><td>LEO/MEO/GEO 다중 궤도 기반 초고속 통신 서비스 구축</td></tr></tbody></table>
@@ -135,7 +163,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-등장배경">앰비언트 IoT 등장배경<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%EB%93%B1%EC%9E%A5%EB%B0%B0%EA%B2%BD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>배경</th><th>내용</th></tr></thead><tbody><tr><td>기술적 요구</td><td>IoT 디바이스 급증</td><td>수십억 개 IoT 디바이스로 인한 배터리 교체 및 유지보수 부담</td></tr><tr><td>환경적 요인</td><td>에너지 소비와 환경 문제</td><td>배터리 사용을 줄이고 에너지 하베스팅 기술로 지속 가능성 강화</td></tr><tr><td>미래 요구</td><td>6G 및 mMTC 기술 확장 필요</td><td>초연결성 요구 해결 및 높은 연결 밀도 지원</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저-기능요구사항-유즈케이스">앰비언트 IoT 프로시저, 기능요구사항, 유즈케이스<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80-%EA%B8%B0%EB%8A%A5%EF%BF%BD%EF%BF%BD%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저-기능요구사항-유즈케이스">앰비언트 IoT 프로시저, 기능요구사항, 유즈케이스<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80-%EA%B8%B0%EB%8A%A5%EC%9A%94%EA%B5%AC%EC%82%AC%EF%BF%BD%ED%95%AD-%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-iot-프로시저">앰비언트 IoT 프로시저<a href="https://gracefullight.dev/en/pe/conv/ambient-iot/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-iot-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -310,40 +338,6 @@
 <ul>
 <li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1330" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2145호</a></li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[설비 예지정비, LangChain]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/"/>
-        <updated>2025-01-17T10:08:01.893Z</updated>
-        <summary type="html"><![CDATA[Predictive Maintenance with LangChain]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="설비-예지정비-개념">설비 예지정비 개념<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#%EC%84%A4%EB%B9%84-%EC%98%88%EC%A7%80%EC%A0%95%EB%B9%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>설비의 상태 데이터를 분석하여 고장 가능성을 사전에 예측하고, 필요한 유지보수를 미리 수행함으로써 비계획적인 가동 중단을 방지하고 설비 수명을 연장하는 기술</li>
-<li>장비 신뢰성 향상, 운영 효율성 극대화, 유지보수 비용 절감, 안전성 강화, 생산성 증대, 데이터 활용 극대화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="langchain-프레임워크-llm">LangChain 프레임워크, LLM<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#langchain-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-llm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="langchain-프레임워크-개념">LangChain 프레임워크 개념<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#langchain-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>대규모 언어모델을 활용한 서비스 개발 시 여러 언어모델과의 통합을 간소화하도록 설계된 애플리케이션 개발 프레임워크</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-개념">LLM 개념<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#llm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>대량의 텍스트 데이터를 학습하여 인간과 유사한 언어 이해 및 생성 능력을 갖춘 초거대 언어 AI 모델</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="langchain을-이용한-설비-예지정비">LangChain을 이용한 설비 예지정비<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#langchain%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%A4%EB%B9%84-%EC%98%88%EC%A7%80%EC%A0%95%EB%B9%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="langchain을-이용한-설비-예지정비-매커니즘">LangChain을 이용한 설비 예지정비 매커니즘<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#langchain%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%A4%EB%B9%84-%EC%98%88%EC%A7%80%EC%A0%95%EB%B9%84-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="langchai을-이용한-설비-예지정비-기능">LangChai을 이용한 설비 예지정비 기능<a href="https://gracefullight.dev/en/pe/algo/predictive-maintenance-with-langchain/#langchai%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%A4%EB%B9%84-%EC%98%88%EC%A7%80%EC%A0%95%EB%B9%84-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>기능</th><th>상세 설명</th></tr></thead><tbody><tr><td>데이터 수집</td><td>IoT 및 센서 통합</td><td>실시간 제조설비 데이터 수집 및 저장</td></tr><tr><td>데이터 분석</td><td>LLM 기반 패턴 분석</td><td>이상 징후 탐지, 고장 원인 규명, 상관분석 수행</td></tr><tr><td>프로세스 마이닝</td><td>핵심 프로세스 분석</td><td>빅데이터 기반으로 설비 운영 프로세스 최적화</td></tr><tr><td>진단/관리/정비</td><td>이상 진단 및 사전 경고</td><td>고장 예측 및 사전 경고 시스템 구축</td></tr><tr><td>사용자 인터페이스</td><td>직관적 시각화</td><td>대시보드 형태로 실시간 상태 모니터링 제공</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
