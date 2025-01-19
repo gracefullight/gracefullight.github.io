@@ -21,7 +21,6 @@ tags:
 graph BT
   subgraph HumanWorld["인간 세계"]
     Interaction["사용자 상호작용"]
-    Feedback["피드백"]
   end
   
   subgraph DigitalWorld["디지털 세계"]
