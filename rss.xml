@@ -4,10 +4,94 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 19 Jan 2025 08:58:41 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 19 Jan 2025 11:19:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[대규모 언어 모델 성능 향상을 위한 연구동향]]></title>
+            <link>https://gracefullight.dev/pe/algo/llm-performance-research-trends/</link>
+            <guid>https://gracefullight.dev/pe/algo/llm-performance-research-trends/</guid>
+            <pubDate>Sun, 19 Jan 2025 11:19:23 GMT</pubDate>
+            <description><![CDATA[LLM Performance Research Trends]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="llm-모델-성능-개요">LLM 모델 성능 개요<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#llm-%EB%AA%A8%EB%8D%B8-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="LLM 모델 성능 개요에 대한 직접 링크" title="LLM 모델 성능 개요에 대한 직접 링크">​</a></h2>
+<ul>
+<li>LLM 기술은 언어 이해, 번역, 생성에서 뛰어난 성능을 발휘하며, 인간 전문가 수준의 문제 해결 능력을 가짐</li>
+<li>논리적 추론 능력, 정보 정확성 부족, 모델의 단일 작업 최적화의 한계점 존재</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="llm-모델-성능-향상-방안">LLM 모델 성능 향상 방안<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#llm-%EB%AA%A8%EB%8D%B8-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="LLM 모델 성능 향상 방안에 대한 직접 링크" title="LLM 모델 성능 향상 방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-논리적-사고-능력-향상-방안">LLM 논리적 사고 능력 향상 방안<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#llm-%EB%85%BC%EB%A6%AC%EC%A0%81-%EC%82%AC%EA%B3%A0-%EB%8A%A5%EB%A0%A5-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="LLM 논리적 사고 능력 향상 방안에 대한 직접 링크" title="LLM 논리적 사고 능력 향상 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술/모델</th></tr></thead><tbody><tr><td>CoT (Chain of Thought)</td><td>LLM이 복잡한 문제를 단계별로 풀이하도록 유도하여 논리적 추론을 강화하는 방법</td><td>GPT-4, PaLM</td></tr><tr><td></td><td>수학 문제, 법적 논증 등 단계적 사고가 필요한 작업에서 성능 대폭 개선</td><td></td></tr><tr><td>ToT (Tree of Thought)</td><td>문제를 계층적으로 분해하고 각 경로의 결과를 비교해 최적의 답을 찾는 기법</td><td>Anthropic Claude</td></tr><tr><td></td><td>다양한 결과를 시뮬레이션하여 복잡한 의사결정 문제를 해결할 때 유리</td><td></td></tr><tr><td>Meta-Reasoning</td><td>LLM이 자신의 추론 과정을 평가하고 잘못된 부분을 스스로 교정하는 기법</td><td>Self-Reflection, ReAct</td></tr><tr><td></td><td>자기반성과 재구성(ReAct)을 통해 고난도 문제에서 정밀도 향상</td><td></td></tr><tr><td>Mutual Reasoning</td><td>두 개 이상의 모델이 협력하여 상호 검증과 보완을 통해 오류를 줄이는 방식</td><td>rStar</td></tr><tr><td></td><td>각 모델이 상대방의 결과를 비판적으로 평가함으로써 신뢰성을 강화</td><td></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-정확도-향상-방안">LLM 정확도 향상 방안<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#llm-%EC%A0%95%ED%99%95%EB%8F%84-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="LLM 정확도 향상 방안에 대한 직접 링크" title="LLM 정확도 향상 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술</th></tr></thead><tbody><tr><td>RAG (Retrieval-Augmented Generation)</td><td>모델이 외부 데이터베이스에서 정보를 검색한 후 해당 데이터를 응답 생성에 통합하는 기법</td><td>Bing GPT, OpenAI ChatGPT</td></tr><tr><td></td><td>고정된 훈련 데이터의 한계를 극복하며 최신성과 신뢰성을 강화</td><td></td></tr><tr><td>RIG (Retrieval-Integrated Generation)</td><td>모델이 실시간으로 검색 엔진과 통합되어 정보를 검색한 후 이를 즉시 응답에 반영하는 기술</td><td>Google Gemini</td></tr><tr><td></td><td>최신 정보 활용이 필요한 실시간 데이터 환경에 적합</td><td></td></tr><tr><td>맥락 검색 (Context Retrieval)</td><td>문서와 질문 간의 연관성을 높이기 위해 추가적인 맥락 정보 제공</td><td>Anthropic Contextual BM25</td></tr><tr><td></td><td>유사도 기반 검색과 고정밀 검색 알고리즘을 결합하여 정확도 극대화</td><td></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-기능-확장-방안">LLM 기능 확장 방안<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#llm-%EA%B8%B0%EB%8A%A5-%ED%99%95%EC%9E%A5-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="LLM 기능 확장 방안에 대한 직접 링크" title="LLM 기능 확장 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술</th></tr></thead><tbody><tr><td>모델 병합 (Model Merging)</td><td>서로 다른 LLM을 결합하여 다양한 작업을 동시에 수행할 수 있도록 하는 방법</td><td>DARE, Evolutionary Merging</td></tr><tr><td></td><td>하나의 모델은 자연어 처리에, 다른 모델은 이미지 분석에 최적화</td><td></td></tr><tr><td>모델 결합 (Model Combination)</td><td>LLM과 다른 파운데이션 모델(예: 이미지, 음성 모델)을 통합하여 멀티모달 작업을 지원</td><td>Whisper+GPT, SeamlessM4T</td></tr><tr><td></td><td>음성 텍스트 변환(Whisper)과 자연어 응답(GPT)을 결합하여 음성 비서, 다중언어 번역 등에 활용</td><td></td></tr><tr><td>어댑터 기반 결합</td><td>모델이 다양한 작업과 모달리티를 지원할 수 있도록 가볍고 모듈화된 어댑터를 추가하는 방식</td><td>Conv-based 어댑터</td></tr><tr><td></td><td>어댑터를 통해 특정 작업에 맞춘 빠른 조정이 가능하며, 대규모 재훈련 불필요</td><td></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/algo/llm-performance-research-trends/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1344" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2159호</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
+        <item>
+            <title><![CDATA[음성 딥페이크 탐지기술]]></title>
+            <link>https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/</link>
+            <guid>https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/</guid>
+            <pubDate>Sun, 19 Jan 2025 10:54:18 GMT</pubDate>
+            <description><![CDATA[Voice Deepfake Detection Techniques]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥러닝-기반-음성-합성기술-개념">딥러닝 기반 음성 합성기술 개념<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EB%94%A5%EB%9F%AC%EB%8B%9D-%EA%B8%B0%EB%B0%98-%EC%9D%8C%EC%84%B1-%ED%95%A9%EC%84%B1%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="딥러닝 기반 음성 합성기술 개념에 대한 직접 링크" title="딥러닝 기반 음성 합성기술 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>TTS, 보이스 컨버전, 딥러닝 기술을 활용하여 사람의 음성을 자연스럽고 정교하게 합성하는 기술</li>
+<li>최근 Transformer 기반의 음성 합성 기술로 고품질 음성 합성이 가능해져 부정적 활용 사례 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크-음성-탐지기술-개념도-핵심요소-악용사례">딥페이크 음성 탐지기술 개념도, 핵심요소, 악용사례<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%EC%9D%8C%EC%84%B1-%ED%83%90%EC%A7%80%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%95%85%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="딥페이크 음성 탐지기술 개념도, 핵심요소, 악용사례에 대한 직접 링크" title="딥페이크 음성 탐지기술 개념도, 핵심요소, 악용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크-음성-탐지기술-개념도">딥페이크 음성 탐지기술 개념도<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%EC%9D%8C%EC%84%B1-%ED%83%90%EC%A7%80%EA%B8%B0%EC%88%A0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="딥페이크 음성 탐지기술 개념도에 대한 직접 링크" title="딥페이크 음성 탐지기술 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>입력 음성을 주파수 기반으로 분석 후, 딥페이크 탐지 모델로 학습하여 진짜/가짜 여부를 분류</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크-음성-탐지기술-핵심요소">딥페이크 음성 탐지기술 핵심요소<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%EC%9D%8C%EC%84%B1-%ED%83%90%EC%A7%80%EA%B8%B0%EC%88%A0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="딥페이크 음성 탐지기술 핵심요소에 대한 직접 링크" title="딥페이크 음성 탐지기술 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>데이터 처리</td><td>특징 추출</td><td>Mel-frequency Cepstral Coefficients (MFCC), Spectrogram, Wav2Vec 기반</td></tr><tr><td>탐지 모델</td><td>AASIST</td><td>주파수-시간 특징 결합, 그래프 어텐션 네트워크를 적용하여 정밀 탐지</td></tr><tr><td>백엔드 분석</td><td>Conformer</td><td>전역적/지역적 특징 동시 학습, 긴 문맥 내 정보 포착으로 탐지 성능 강화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="음성-딥페이크-악용사례">음성 딥페이크 악용사례<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EC%9D%8C%EC%84%B1-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%EC%95%85%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="음성 딥페이크 악용사례에 대한 직접 링크" title="음성 딥페이크 악용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>사례</th><th>내용</th><th>대응방안</th></tr></thead><tbody><tr><td>보이스피싱</td><td>가족, 직장 상사 등 신뢰도 높은 화자의 목소리를 변조해 금전 요구</td><td>음성 인증 및 추가적인 신원 확인 절차 강화</td></tr><tr><td>가짜 뉴스</td><td>정치인 음성을 변조해 거짓 정보를 전파 (예: 젤렌스키의 항복 선언)</td><td>딥페이크 탐지 시스템 도입 및 음성 출처 검증</td></tr><tr><td>선거 조작</td><td>선거 직전 딥페이크 음성으로 유권자를 현혹하는 음성 유포</td><td>미디어 모니터링 및 딥페이크 탐지 기술 활용</td></tr><tr><td>투자 사기</td><td>유명인의 변조 음성을 사용해 신뢰도를 조작, 투자 유도</td><td>투자 플랫폼의 음성 데이터 검증 및 사용자 인식 제고</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="음성-딥페이크-탐지기술의-추가적인-고려사항">음성 딥페이크 탐지기술의 추가적인 고려사항<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EC%9D%8C%EC%84%B1-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%83%90%EC%A7%80%EA%B8%B0%EC%88%A0%EC%9D%98-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="음성 딥페이크 탐지기술의 추가적인 고려사항에 대한 직접 링크" title="음성 딥페이크 탐지기술의 추가적인 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>제도적 측면</td><td>법적 규제 및 표준화 필요</td><td>AI 음성 기술 활용 가이드라인 마련, 음성 합성과 탐지 기술의 국제 표준화 작업 강화 기술적 측면</td></tr><tr><td></td><td>법안 제정 및 책임 부여</td><td>EU 초대형 플랫폼 규제 정책, 미국 딥페이크 책임법안 사례 참조</td></tr><tr><td>사회적 측면</td><td>사용자 인식 제고</td><td>딥페이크 음성의 위험성을 알리고 개인 정보 보호를 강화하는 캠페인 및 교육 필요</td></tr><tr><td></td><td>대중 참여형 탐지 시스템 개발</td><td>일반 사용자가 탐지 기술에 쉽게 접근할 수 있도록 대중 참여형 탐지 도구 및 플랫폼 제공</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/algo/voice-deepfake-detection-techniques/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1344" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2159호</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
+        <item>
+            <title><![CDATA[AI를 이용한 사이버 공격 패러다임]]></title>
+            <link>https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/</link>
+            <guid>https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/</guid>
+            <pubDate>Sun, 19 Jan 2025 10:01:10 GMT</pubDate>
+            <description><![CDATA[AI Enabled Cyber Attack Paradigms]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-패러다임-개념">AI를 이용한 사이버 공격 패러다임 개념<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="AI를 이용한 사이버 공격 패러다임 개념에 대한 직접 링크" title="AI를 이용한 사이버 공격 패러다임 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>AI와 ML 기술을 악용해 자동화된 피싱, 정교한 악성코드 생성, 탐지 회피 등을 수행하여 기존 보안 체계를 우회하는 사이버 공격 방식</li>
+<li>AI 기반 공격 도구의 등장, 대규모 데이터 분석과 자동화된 공격 가능, 공격자의 적응적 공격 체계 구축</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-개념도-공격절차-대응방안">AI를 이용한 사이버 공격 개념도, 공격절차, 대응방안<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="AI를 이용한 사이버 공격 개념도, 공격절차, 대응방안에 대한 직접 링크" title="AI를 이용한 사이버 공격 개념도, 공격절차, 대응방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-개념도">AI를 이용한 사이버 공격 개념도<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="AI를 이용한 사이버 공격 개념도에 대한 직접 링크" title="AI를 이용한 사이버 공격 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>FraudGPT, WormGPT, DarkGPT 등을 활용하여 사이버 공격 벡터에 인공지능 접목</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격절차">AI를 이용한 사이버 공격절차<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EF%BF%BD%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="AI를 이용한 사이버 공격절차에 대한 직접 링크" title="AI를 이용한 사이버 공격절차에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>단계</th><th>내용</th><th>세부 내용</th></tr></thead><tbody><tr><td>1. 표적 식별</td><td>대상 시스템 및 취약점 파악</td><td>AI 기반 데이터 분석으로 대상 시스템의 취약점 및 최적의 공격 경로를 탐색</td></tr><tr><td>2. 공격 벡터 설계</td><td>공격 방법 결정</td><td>AI 모델을 활용해 피싱, 악성코드, 사회공학적 공격 등 설계</td></tr><tr><td>3. 공격 실행</td><td>자동화된 공격 수행</td><td>LLM 기반 악성코드 및 피싱 메시지를 표적 시스템에 배포</td></tr><tr><td>4. 탐지 회피</td><td>보안 시스템 무력화</td><td>정상적인 데이터로 위장하거나 탐지 패턴을 AI로 분석해 우회</td></tr><tr><td>5. 데이터 탈취 및 결과 분석</td><td>공격 결과 수집</td><td>공격 성공 후 데이터 탈취, 시스템 무력화, 네트워크 장악 결과를 분석 및 활용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-대응방안">AI를 이용한 사이버 공격 대응방안<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="AI를 이용한 사이버 공격 대응방안에 대한 직접 링크" title="AI를 이용한 사이버 공격 대응방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>대응 방안</th><th>내용</th></tr></thead><tbody><tr><td>AI for Security</td><td>AI 기반 보안 탐지 시스템 도입</td><td>AI/ML 모델을 활용해 이상 트래픽 및 비정상 데이터 패턴 조기 탐지</td></tr><tr><td></td><td>위협 인텔리전스 강화</td><td>알려진 위협과 미확인 위협 분석 및 경고</td></tr><tr><td></td><td>자동화된 방어 체계</td><td>SOAR, XDR 기반 자동화된 대응 체계를 통해 실시간 공격 차단</td></tr><tr><td></td><td>피해 최소화 및 보안 강화</td><td>랜섬웨어 복구 및 데이터 복구, 보안 체계 강화를 통한 추가 공격 방지</td></tr><tr><td>Security for AI</td><td>적대적 AI 공격 방지</td><td>AI 모델에 대한 적대적 공격 방어 기술 개발</td></tr><tr><td></td><td>데이터 무결성 및 보호 강화</td><td>AI 학습 데이터 포이즈닝 방지를 위해 데이터 접근 제어 및 암호화 적용</td></tr><tr><td></td><td>AI 보안 표준화 및 정책 개발</td><td>국제 표준화 작업(OWASP, ISO/IEC)과 보안 정책 수립 및 대응</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/ai-enabled-cyber-attack-paradigms/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1343" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2158호</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[차량 디지털포렌식]]></title>
             <link>https://gracefullight.dev/pe/sec/vehicle-digital-forensics/</link>
@@ -222,87 +306,6 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/6g-wireless-positioning-sensing/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1335" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2150호</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[그린 소프트웨어]]></title>
-            <link>https://gracefullight.dev/pe/sw/green-software/</link>
-            <guid>https://gracefullight.dev/pe/sw/green-software/</guid>
-            <pubDate>Sat, 18 Jan 2025 06:13:08 GMT</pubDate>
-            <description><![CDATA[Green Software]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="그린-소프트웨어-개념">그린 소프트웨어 개념<a href="https://gracefullight.dev/pe/sw/green-software/#%EA%B7%B8%EB%A6%B0-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="그린 소프트웨어 개념에 대한 직접 링크" title="그린 소프트웨어 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>소프트웨어 개발과 운영 과정에서 탄소 배출을 줄이고 지속 가능성을 강화하기 위해 설계된 리눅스 재단 산하 독립 오픈소스 재단</li>
-<li>친환경 SW 기술 확산, 지식 전파, 관련 도구 개발, SW 탄소배출 등급, SW 탄소배출 등급 인증 등 제도 기술 마련</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="그린-소프트웨어-재단-구조도-구성요소-동향">그린 소프트웨어 재단 구조도, 구성요소, 동향<a href="https://gracefullight.dev/pe/sw/green-software/#%EA%B7%B8%EB%A6%B0-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%9E%AC%EB%8B%A8-%EA%B5%AC%EC%A1%B0%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%8F%99%ED%96%A5" class="hash-link" aria-label="그린 소프트웨어 재단 구조도, 구성요소, 동향에 대한 직접 링크" title="그린 소프트웨어 재단 구조도, 구성요소, 동향에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="그린-소프트웨어-재단-구조도">그린 소프트웨어 재단 구조도<a href="https://gracefullight.dev/pe/sw/green-software/#%EA%B7%B8%EB%A6%B0-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%9E%AC%EB%8B%A8-%EA%B5%AC%EC%A1%B0%EB%8F%84" class="hash-link" aria-label="그린 소프트웨어 재단 구조도에 대한 직접 링크" title="그린 소프트웨어 재단 구조도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>SW탄소 효율 등급 표준(SCER), SW지속 가능성 분석 프레임워크(TOSS), 클라우드 사업자를 위한 실시간 에너지/탄소 정보 제공 표준(Real-Time Cloud), SW탄소배출량 측정 지표인 SCI 안내서 제정 및 활성화 기여</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="그린-소프트웨어-재단-구성요소">그린 소프트웨어 재단 구성요소<a href="https://gracefullight.dev/pe/sw/green-software/#%EA%B7%B8%EB%A6%B0-%EC%86%8C%ED%94%84%EF%BF%BD%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%9E%AC%EB%8B%A8-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="그린 소프트웨어 재단 구성요소에 대한 직접 링크" title="그린 소프트웨어 재단 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>표준 작업반</td><td>친환경 소프트웨어 기술의 상호운영성 향상을 위한 4개의 표준 개발 프로젝트를 추진</td><td>SCER, TOSS, Real-Time Cloud, SCI 안내서</td></tr><tr><td>정책 작업반</td><td>친환경 소프트웨어 정책 조사 및 정책 레이다 프로젝트 운영</td><td>녹색 인증 및 정책 대응 담당</td></tr><tr><td>오픈소스 작업반</td><td>Carbon Aware SDK 등 오픈소스 도구 개발</td><td>친환경 SW 도구 및 탄소배출량 측정 지원</td></tr><tr><td>커뮤니티 작업반</td><td>인식 제고, 교육 활동, 모범 사례 확산</td><td>SW 생태계 확산 및 기술 역량 강화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="그린-소프트웨어-재단-동향">그린 소프트웨어 재단 동향<a href="https://gracefullight.dev/pe/sw/green-software/#%EA%B7%B8%EB%A6%B0-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%9E%AC%EB%8B%A8-%EB%8F%99%ED%96%A5" class="hash-link" aria-label="그린 소프트웨어 재단 동향에 대한 직접 링크" title="그린 소프트웨어 재단 동향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>회원사 증가</td><td>지속 가능성을 목표로 기업 참여 확대</td><td>MS, Google, 지멘스 등 64개 회원사 참여</td></tr><tr><td>표준화 작업</td><td>SCER, TOSS 등 친환경 SW 표준 개발</td><td>SW 탄소배출량 측정 기준 ISO 표준 승인</td></tr><tr><td>오픈소스 프로젝트</td><td>SW 개발 및 운영 효율성 및 탄소 절감 도구 제공</td><td>Carbon Aware SDK, Impact Framework, Carbon CI</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sw/green-software/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2148호</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/software-engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[6G 이동통신과 UAM의 융합]]></title>
-            <link>https://gracefullight.dev/pe/nw/6g-uam-convergence/</link>
-            <guid>https://gracefullight.dev/pe/nw/6g-uam-convergence/</guid>
-            <pubDate>Sat, 18 Jan 2025 05:18:57 GMT</pubDate>
-            <description><![CDATA[Convergence of 6G Mobile Communications and Urban Air Mobility]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="uam-개요">UAM 개요<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#uam-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="UAM 개요에 대한 직접 링크" title="UAM 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="uam-개념">UAM 개념<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#uam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="UAM 개념에 대한 직접 링크" title="UAM 개념에 대한 직접 링크">​</a></h3>
-<ul>
-<li>도심 내에서 개인용 항공기(PAV)와 드론 등의 항공기를 기존 교통 인프라에 통합하여 혁신적인 교통 서비스를 제공하는 시스템</li>
-<li>교통 혼잡 해소, 고속 이동성 제공, eVTOL(Electric Vertical Take-Off and Landing Aircraft)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="uam에서의-6g-사용-필요성">UAM에서의 6G 사용 필요성<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#uam%EC%97%90%EC%84%9C%EC%9D%98-6g-%EC%82%AC%EC%9A%A9-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="UAM에서의 6G 사용 필요성에 대한 직접 링크" title="UAM에서의 6G 사용 필요성에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>통신 신뢰성</td><td>실시간 데이터 전송</td><td>초저지연(0.1ms)과 초고속 데이터 전송(최대 1Tbps)을 지원하여 항공기 간 충돌 방지 및 관제 가능</td></tr><tr><td>초연결성</td><td>IoE 통합</td><td>항공기와 지상 인프라, 위성 통신을 연결하여 도시 교통을 완벽히 통합 가능</td></tr><tr><td>안전성</td><td>저궤도 위성 통신 연계</td><td>도심 항공 교통망에서 신뢰성과 안정성을 강화하여 충돌 방지와 경로 최적화 실현</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="6g-uam의-융합">6G, UAM의 융합<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#6g-uam%EC%9D%98-%EC%9C%B5%ED%95%A9" class="hash-link" aria-label="6G, UAM의 융합에 대한 직접 링크" title="6G, UAM의 융합에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-uam-개념도">6G UAM 개념도<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#6g-uam-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="6G UAM 개념도에 대한 직접 링크" title="6G UAM 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-uam-구성요소">6G UAM 구성요소<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#6g-uam-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="6G UAM 구성요소에 대한 직접 링크" title="6G UAM 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>통신 네트워크</td><td>고속 데이터 전송 및 초저지연 실현</td><td>지상 기지국, 저궤도 위성, 항공기 간 통신</td></tr><tr><td>AI 및 엣지 컴퓨팅</td><td>엣지 컴퓨팅을 통한 지연 감소 및 AI 기반 자동화</td><td>안전항법, 충돌방지, 경로 최적화</td></tr><tr><td>센서 및 IoE</td><td>안전성과 운영 효율성 향상을 위한 실시간 데이터 제공</td><td>V2X, 기상 데이터, 교통 상황 센싱</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="6g-uam-활용사례">6G UAM 활용사례<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#6g-uam-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="6G UAM 활용사례에 대한 직접 링크" title="6G UAM 활용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>내용</th></tr></thead><tbody><tr><td>스마트시티</td><td>도시 항공 교통과 지상 교통 통합</td><td>6G 통신의 실시간 데이터 분석과 IoE 통합을 통해 도심 혼잡 해소 및 고속 이동 제공</td></tr><tr><td>자율 교통망</td><td>교통 혼잡 해소 및 이동성 증대</td><td>교통 네트워크의 완전한 통합 운영 및 실시간 데이터 분석 가능</td></tr><tr><td>IoE 통합</td><td>수백억 IoE 센서 기반 운영</td><td>기상, 교통정보 등을 실시간 반영한 PAV 경로 최적화, 운영 효율성 향상</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/6g-uam-convergence/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1333" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2148호</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[E-MIMO]]></title>
-            <link>https://gracefullight.dev/pe/nw/e-mimo/</link>
-            <guid>https://gracefullight.dev/pe/nw/e-mimo/</guid>
-            <pubDate>Sat, 18 Jan 2025 04:33:49 GMT</pubDate>
-            <description><![CDATA[Extreme massive Multiple-Input and Multiple-Output]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="e-mimo-개념">E-MIMO 개념<a href="https://gracefullight.dev/pe/nw/e-mimo/#e-mimo-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="E-MIMO 개념에 대한 직접 링크" title="E-MIMO 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>5G의 mMIMO보다 약 4배 이상 향상된 커버리지와 용량을 목표로 하고, 고주파수의 경로손실문제 해결을 위한 초대규모 다중입출력 기술</li>
-<li>6G에서 Upper-mid Band(7~24GHz, FR3) 사용을 위해 개발, 초고속 통신, 적은 지연시간, 높은 데이터 속도</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="e-mimo-개념도-기술요소-개발동향">E-MIMO 개념도, 기술요소, 개발동향<a href="https://gracefullight.dev/pe/nw/e-mimo/#e-mimo-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C-%EA%B0%9C%EB%B0%9C%EB%8F%99%ED%96%A5" class="hash-link" aria-label="E-MIMO 개념도, 기술요소, 개발동향에 대한 직접 링크" title="E-MIMO 개념도, 기술요소, 개발동향에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="e-mimo-개념도">E-MIMO 개념도<a href="https://gracefullight.dev/pe/nw/e-mimo/#e-mimo-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="E-MIMO 개념도에 대한 직접 링크" title="E-MIMO 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="e-mimo-기술요소">E-MIMO 기술요소<a href="https://gracefullight.dev/pe/nw/e-mimo/#e-mimo-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C" class="hash-link" aria-label="E-MIMO 기술요소에 대한 직접 링크" title="E-MIMO 기술요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술요소</th><th>내용</th></tr></thead><tbody><tr><td>빔포밍</td><td>디지털/하이브리드 빔포밍</td><td>대역폭 활용과 효율적 에너지 소비를 지원</td></tr><tr><td>RF 기술</td><td>GaN, GaAs 반도체 기술</td><td>FR3 대역에 적합한 고출력, 고효율 RF 트랜시버</td></tr><tr><td>안테나 설계</td><td>대규모 어레이 및 모듈화 기술</td><td>효율적 공간 사용과 방사 손실 최소화</td></tr><tr><td>에너지 효율</td><td>저복잡도와 저전력 구현 기술</td><td>탄소절감 에너지 사용의 효율화 달성</td></tr><tr><td>통신-센싱 융합</td><td>환경 센싱 후 이동성 및 빔 형성에 활용</td><td>센싱 기반 커버리지 향상 및 새로운 서비스 제공 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="e-mimo-개발동향">E-MIMO 개발동향<a href="https://gracefullight.dev/pe/nw/e-mimo/#e-mimo-%EA%B0%9C%EB%B0%9C%EB%8F%99%ED%96%A5" class="hash-link" aria-label="E-MIMO 개발동향에 대한 직접 링크" title="E-MIMO 개발동향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>삼성전자 X-MIMO</td><td>FR3 대역의 전파 손실 해결 및 안테나 밀도 향상 연구</td></tr><tr><td></td><td>중소기업 및 연구기관</td><td>선진 기술에 필적하는 E-MIMO 연구 및 프로토타입 개발</td></tr><tr><td>국외</td><td>퀄컴 GIGA MIMO</td><td>4096개 안테나와 256 디지털 체인을 기반으로 높은 용량 제공</td></tr><tr><td></td><td>화웨이</td><td>에너지 절감을 위한 PowerStar 솔루션 연구 및 6G 확장</td></tr><tr><td></td><td>에릭슨</td><td>유럽 프로젝트와 협력하여 친환경 기지국과 반도체 기술 발전 연구</td></tr><tr><td></td><td>노키아</td><td>FR1 기지국 재사용을 통한 FR3 비용 감소 및 6G 준비</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/nw/e-mimo/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1331" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2146호</a></li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
