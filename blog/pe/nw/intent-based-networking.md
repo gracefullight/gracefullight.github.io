@@ -74,3 +74,7 @@ graph TD
 | | 화웨이 | 캠퍼스 네트워크 자동화와 오픈 소스 플랫폼 개발 |
 
 - IBN 시장규모는 연평균 25% 성장할 것으로 예측, 기술 개발 및 표준화에 지속적 관심과 투자 필요
+
+## 참조
+
+- [IITP: 주간기술동향 2155](/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1340)
