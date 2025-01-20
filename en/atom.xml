@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-20T11:54:05.388Z</updated>
+    <updated>2025-01-20T12:29:21.316Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[허위정보 보안]]></title>
+        <id>https://gracefullight.dev/en/pe/sec/disinformation-security/</id>
+        <link href="https://gracefullight.dev/en/pe/sec/disinformation-security/"/>
+        <updated>2025-01-20T12:29:21.316Z</updated>
+        <summary type="html"><![CDATA[Disinformation Security]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-개념">허위정보 보안 개념<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>허위정보 보안은 딥페이크 탐지, 정보의 진위성 검증, 조직과 개인의 신원 및 평판 보호를 목표로 하는 기술과 프로세스</li>
+<li>허위 정보가 기업, 개인, 사회에 미치는 부정적 영향을 최소화하고 디지털 신뢰를 확보하기 위한 필수 보안 체계</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-구성도-공격유형-활용분야">허위정보 보안 구성도, 공격유형, 활용분야<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B3%B5%EA%B2%A9%EC%9C%A0%ED%98%95-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-구성도">허위정보 보안 구성도<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-공격유형">허위정보 보안 공격유형<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EA%B3%B5%EA%B2%A9%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>공격유형</th><th>설명</th><th>주요 사례</th></tr></thead><tbody><tr><td>딥페이크 확산</td><td>합성 미디어를 통해 허위 정보를 퍼뜨림</td><td>음성 및 영상 딥페이크로 인한 금융 사기</td></tr><tr><td>GenAI 기반 대규모 허위 정보 생성</td><td>대량의 허위 정보를 빠르게 생성</td><td>소셜 미디어를 통한 정치적 내러티브 조작</td></tr><tr><td>피싱 및 사칭</td><td>설득력 있는 피싱 이메일 및 브랜드 사칭</td><td>기업 임원을 가장한 피싱 공격</td></tr><tr><td>협업 도구 악용</td><td>인력 협업 도구의 취약점을 활용</td><td>콜센터 시스템 취약점 악용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-대응방안">허위정보 보안 대응방안<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>대응방안</th><th>설명</th></tr></thead><tbody><tr><td>관리적</td><td>정책 및 거버넌스 구축</td><td>조직 내 허위정보 대응을 위한 정책과 절차를 수립하여 명확한 책임 분담과 일관된 대응 체계를 구축</td></tr><tr><td></td><td>사용자 교육 및 인식 제고</td><td>허위정보, 딥페이크 탐지 기술 등에 대한 교육 프로그램을 통해 보안 인식 수준을 향상</td></tr><tr><td></td><td>협업 체계 구축</td><td>IT, 홍보, 법무 등 부서 간 협력을 강화하여 조직적 대응 속도를 높임</td></tr><tr><td>물리적</td><td>보안 인프라 강화</td><td>데이터센터와 서버 접근 제어를 강화하여 물리적 침입 및 데이터 유출을 방지</td></tr><tr><td></td><td>생체 인증 도입</td><td>얼굴, 음성, 지문 등의 생체 정보를 활용한 인증 체계로 사칭 및 공격을 방지</td></tr><tr><td></td><td>콜센터 보안 강화</td><td>콜센터 시스템의 취약점을 점검하고 보호 조치를 통해 내부 시스템 악용 방지</td></tr><tr><td>기술적</td><td>딥페이크 탐지 기술</td><td>합성 미디어 탐지를 위한 AI와 디지털 포렌식 도구를 활용하여 허위정보를 조기 탐지</td></tr><tr><td></td><td>실시간 모니터링</td><td>소셜 미디어 및 다크웹의 활동을 감시하여 허위정보 확산을 방지</td></tr><tr><td></td><td>피싱 이메일 차단</td><td>GenAI 기반의 피싱 이메일을 탐지 및 차단하여 이메일 보안을 강화</td></tr><tr><td></td><td>데이터 검증 도구</td><td>청구 및 문서를 검증하는 알고리즘과 소프트웨어로 허위정보 기반 사기를 예방</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="허위정보-보안-강화시-고려사항">허위정보 보안 강화시 고려사항<a href="https://gracefullight.dev/en/pe/sec/disinformation-security/#%ED%97%88%EC%9C%84%EC%A0%95%EB%B3%B4-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>허위정보의 위험성과 탐지 기술에 대한 실무자 교육을 통해 개개인의 대응 역량 강화 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[에이전트 AI]]></title>
         <id>https://gracefullight.dev/en/pe/algo/agentic-ai/</id>
@@ -288,36 +317,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5G New Radio의 AI/ML 기술]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/"/>
-        <updated>2025-01-19T07:05:58.736Z</updated>
-        <summary type="html"><![CDATA[5G New Radio AI/ML Technologies]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-개요">5G NR 개요<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>AI/ML을 도입하여 네트워크 복잡성을 줄이고, 실시간 적응 및 최적화를 통해 성능을 극대화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-개념도-핵심요소-기대효과">5G NR AI/ML 프레임워크 개념도, 핵심요소, 기대효과<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-개념도">5G NR AI/ML 프레임워크 개념도<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-프레임워크-핵심요소">5G NR AI/ML 프레임워크 핵심요소<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>핵심요소</th><th>내용</th></tr></thead><tbody><tr><td>데이터 처리</td><td>데이터 수집</td><td>AI/ML 학습 및 추론을 위해 네트워크 데이터를 수집 및 전처리</td></tr><tr><td>모델 관리</td><td>모델 학습</td><td>수집된 데이터를 기반으로 최적의 AI/ML 모델 학습 및 평가</td></tr><tr><td></td><td>모델 저장</td><td>학습된 모델을 저장하여 추론 기능에서 활용 가능</td></tr><tr><td>모델 운영</td><td>추론</td><td>실시간 데이터 기반 추론으로 네트워크 상태를 진단 및 예측</td></tr><tr><td></td><td>관리</td><td>성능 모니터링 및 피드백을 통해 네트워크 최적화와 모델 업데이트 수행</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-적용-기대효과">5G NR AI/ML 적용 기대효과<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%EC%A0%81%EC%9A%A9-%EA%B8%B0%EB%8C%80%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>기술</th><th>내용</th><th>기대 효과</th></tr></thead><tbody><tr><td>CSI 피드백</td><td>채널 상태 정보를 AI/ML로 예측하여 오버헤드 감소</td><td>데이터 전송 효율 및 정확도 향상</td></tr><tr><td>빔 관리</td><td>빔포밍, 빔 스위칭 등 AI 기반 관리</td><td>밀리미터파 대역에서 통신 성능 최적화</td></tr><tr><td>측위 정확도 향상</td><td>NLOS 환경에서도 AI 기반 예측 기술 활용</td><td>고정밀 위치 추적 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="5g-nr-aiml-적용시-고려사항">5G NR AI/ML 적용시 고려사항<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#5g-nr-aiml-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>기술적</td><td>데이터 품질</td><td>AI/ML 모델 학습 및 추론의 정확도를 보장하기 위한 고품질 데이터 필요</td></tr><tr><td></td><td>모델 복잡성</td><td>적응형 네트워크 환경에서 실시간 추론이 가능하도록 경량화된 모델 설계</td></tr><tr><td>경제적</td><td>비용 효율성</td><td>AI/ML 인프라 구축 및 운영 비용을 최소화하기 위한 클라우드 활용</td></tr><tr><td>운영적</td><td>표준화</td><td>다중 공급업체 환경에서 AI/ML 모델의 상호운용성을 보장하기 위한 표준 필요</td></tr><tr><td></td><td>보안</td><td>AI/ML 모델과 네트워크 데이터의 무결성을 보장하기 위한 보안 메커니즘 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/algo/5g-new-radio-ai-ml-technologies/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1342" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2157호</a></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
     </entry>
 </feed>
