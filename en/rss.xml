@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 19 Jan 2025 13:44:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jan 2025 10:59:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[공간 컴퓨팅]]></title>
+            <link>https://gracefullight.dev/en/pe/conv/spatial-computing/</link>
+            <guid>https://gracefullight.dev/en/pe/conv/spatial-computing/</guid>
+            <pubDate>Mon, 20 Jan 2025 10:59:36 GMT</pubDate>
+            <description><![CDATA[Spatial Computing]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-개념">공간컴퓨팅 개념<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><mark class="flexible-marker flexible-marker-default">디지털 콘텐츠를 실제 세계에 고정</mark>하여 물리적 세계를 증강하고, 몰입적이며 직관적인 사용자 경험을 제공하는 기술</li>
+<li>증강현실(AR), 혼합현실(MR), 메타버스 기술과 네트워크, HMD 등 하드웨어 기술의 융합하여 물리적 공간을 디지털로 매핑</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-구성도-핵심요소-활용분야">공간컴퓨팅 구성도, 핵심요소, 활용분야<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-구성도">공간컴퓨팅 구성도<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-핵심요소">공간컴퓨팅 핵심요소<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>계층</th><th>핵심 요소</th><th>설명</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">인프라</mark> 계층</td><td>센서 및 하드웨어</td><td>IoT, GPS, 카메라 등 데이터 수집 장치</td></tr><tr><td></td><td>네트워크</td><td>5G/6G 기술과 엣지-클라우드 기반 데이터 처리</td></tr><tr><td></td><td>사용자 장치</td><td>HMD 및 컨트롤러를 통한 몰입형 경험 제공</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">정보</mark> 계층</td><td>데이터 및 AI</td><td>실시간 데이터 분석 및 콘텐츠 생성</td></tr><tr><td></td><td>블록체인</td><td>신뢰성 있는 디지털 자산 관리</td></tr><tr><td></td><td>디지털 트윈</td><td>물리적 세계의 복제 및 시뮬레이션</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상호작용</mark> 계층</td><td>사용자 디바이스</td><td>HMD, 스마트폰 등을 통한 직관적 인터페이스</td></tr><tr><td></td><td>피드백 시스템</td><td>음성 명령, 시선 추적, 모션 센서</td></tr><tr><td></td><td>가상 환경</td><td>메타버스, AR, MR 기반의 몰입형 디지털 공간</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-활용사례">공간컴퓨팅 활용사례<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>기업</td><td>R&amp;D를 위한 가상 협업</td><td>협업 비용 절감 및 의사결정 효율성 향상</td></tr><tr><td></td><td>건설/기계/전기 프로젝트의 디지털 트윈 활용</td><td>설계 및 시뮬레이션으로 문제 해결 속도 증대</td></tr><tr><td></td><td>직원 실습 기술 교육</td><td>실제 상황에 기반한 훈련으로 기술 숙련도 향상</td></tr><tr><td>소비자</td><td>가상 콘서트 및 라이브 공연</td><td>몰입형 엔터테인먼트 경험 제공</td></tr><tr><td></td><td>매장 내 가상 제품 체험</td><td>구매 전환율 증가 및 고객 만족도 향상</td></tr><tr><td></td><td>상황 인식 방향 및 탐색</td><td>사용자 편의성 증대 및 경험 향상</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-도입을-위한-주요-고려사항">공간컴퓨팅 도입을 위한 주요 고려사항<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A3%BC%EC%9A%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>고려사항</th><th>문제점</th><th>해결방안</th></tr></thead><tbody><tr><td>비용 문제</td><td><mark class="flexible-marker flexible-marker-default">고가의 HMD</mark>와 디지털화 자산 구축 비용</td><td>저비용 HMD 개발 및 자산 디지털화 자동화 도구 개발</td></tr><tr><td>기술적 제약</td><td>HMD 무게, 배터리 한계, <mark class="flexible-marker flexible-marker-default">사일로형 앱 통합 문제</mark></td><td>경량화된 HMD 설계 및 표준화된 통합 프로토콜 도입</td></tr><tr><td>보안 문제</td><td>데이터 <mark class="flexible-marker flexible-marker-default">프라이버시</mark> 및 윤리적 이슈</td><td>강력한 데이터 암호화 및 디지털 윤리 규제 마련</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">킬러 앱 부족</mark></td><td>소비자 채택을 가속화할 결정적 사용 사례 부족</td><td>매력적인 엔터테인먼트 및 리테일 중심의 응용 사례 개발</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[메타버스 시스템 연구 동향]]></title>
             <link>https://gracefullight.dev/en/pe/conv/metaverse-system-research-trends/</link>
@@ -215,7 +238,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="isac-필요성">ISAC 필요성<a href="https://gracefullight.dev/en/pe/nw/6g-integrated-sensing-and-communication/#isac-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>고정밀성</td><td>초정밀 데이터 요구 증가</td><td>높은 주파수 대역 활용으로 환경 인지와 통신 정확성을 동시에 실현</td></tr><tr><td>자율성</td><td>통합적 네트워크 관리</td><td>IoT, 자율주행 등 다양한 서비스에서 실시간 통합 관리 요구 충족</td></tr><tr><td>효율성</td><td>자원 활용 최적화</td><td>통신과 센싱 자원의 통합적 사용으로 비용 절감과 에너지 효율성 증대</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="isac-시스템-개념도-기술과제-기�술동향">ISAC 시스템 개념도, 기술과제, 기술동향<a href="https://gracefullight.dev/en/pe/nw/6g-integrated-sensing-and-communication/#isac-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EA%B3%BC%EC%A0%9C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="isac-시스템-개념도-기술과제-기술동향">ISAC 시스템 개념도, 기술과제, 기술동향<a href="https://gracefullight.dev/en/pe/nw/6g-integrated-sensing-and-communication/#isac-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B8%B0%EC%88%A0%EA%B3%BC%EC%A0%9C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="isac-시스템-개념도">ISAC 시스템 개념도<a href="https://gracefullight.dev/en/pe/nw/6g-integrated-sensing-and-communication/#isac-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -251,7 +274,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-필요성">의도 기반 네트워킹 필요성<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%ED%95%84%EC%9A%94%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>필요성</th><th>내용</th></tr></thead><tbody><tr><td>관리 복잡성</td><td>네트워크 증가 및 복잡성 완화</td><td>기존 네트워크는 수동 구성으로 인해 시간 소모 및 오류 가능성 존재</td></tr><tr><td>자동화</td><td>AI/ML 기반 최적화</td><td>인공지능 및 기계 학습 기반으로 실시간 네트워크 최적화와 적응형 관리 가능</td></tr><tr><td>표준화</td><td>환경 적합성</td><td>다중 연결 장치와 네트워크의 효율적 관리를 위해 표준화된 접근 방식 요구</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의도-��기반-네트워킹-개념도-핵심요소-기술동향">의도 기반 네트워킹 개념도, 핵심요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="의도-기반-네트워킹-개념도">의도 기반 네트워킹 개념도<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%9D%98%EB%8F%84-%EA%B8%B0%EB%B0%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
@@ -270,34 +293,6 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/nw/intent-based-networking/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1340" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2155</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[비정지궤도 위성통신]]></title>
-            <link>https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/</link>
-            <guid>https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/</guid>
-            <pubDate>Sat, 18 Jan 2025 11:18:00 GMT</pubDate>
-            <description><![CDATA[Non-geostationary Satellite Communication]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위성통신-개요">위성통신 개요<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="위성통신-개념도">위성통신 개념도<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-개념">비정지궤도 위성통신 개념<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>LEO 및 MEO 위성을 활용하여 높은 데이터 전송 속도, 낮은 지연시간, 글로벌 커버리지를 제공하는 통신 기술</li>
-<li>GEO 대비 낮은 전송 지연으로 IoT, 자율주행, 의료 등 다양한 서비스 적합 / LEO 위성 서비스 활성화로 인한 데이터 수요 충족 / 긴급 SOS 메시징 및 극지방 커버리지 등 기존 위성 통신 문제 해결</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도-구성요소-기술동향">비정지궤도 위성통신 구성도, 구성요소, 기술동향<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성도">비정지궤도 위성통신 구성도<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-구성요소">비정지궤도 위성통신 구성요소<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>위성</td><td>LEO/MEO 위성</td><td>저지연, 고속 데이터 전송, 글로벌 커버리지 제공</td></tr><tr><td></td><td>위성 간 링크 (ISL)</td><td>위성 간 데이터 중계 및 글로벌 라우팅 지원</td></tr><tr><td>단말</td><td>위성 파라볼릭 안테나 단말</td><td>GEO+MEO+LEO 지원, 주로 해상 및 고정형 통신 환경에서 사용</td></tr><tr><td></td><td>위성 평판 안테나 단말</td><td>위상 배열형 전자적 빔 조향 안테나, 높은 내구성, 다중궤도/다중대역 지원</td></tr><tr><td></td><td>항공기 IFC 단말</td><td>기내 인터넷 연결, 실시간 스트리밍 지원</td></tr><tr><td></td><td>해상용 단말</td><td>극지방 커버리지 및 해상 데이터 통신 지원</td></tr><tr><td></td><td>지상 휴대 단말</td><td>긴급 SOS 메시지, IoT 연동, 위성 직접 통신</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="비정지궤도-위성통신-기술동향">비정지궤도 위성통신 기술동향<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EB%B9%84%EC%A0%95%EC%A7%80%EA%B6%A4%EB%8F%84-%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술동향</th><th>내용</th></tr></thead><tbody><tr><td>국내</td><td>LEO 위성 테스트베드 구축</td><td>2030년까지 시범시스템 확보를 목표로 기술 개발</td></tr><tr><td></td><td>표준화 참여</td><td>3GPP NTN 표준화 및 위성-지상 통합 기술 개발</td></tr><tr><td>국외</td><td>스타링크</td><td>6,100개 이상의 위성을 운영하며 100개국에서 300만 명의 가입자 확보</td></tr><tr><td></td><td>Amazon Kuiper</td><td>3,236개의 Ka 대역 위성으로 글로벌 커버리지 구축 계획</td></tr><tr><td></td><td>EU IRIS² 프로젝트</td><td>LEO/MEO/GEO 다중 궤도 기반 초고속 통신 서비스 구축</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/nw/non-geostationary-satellite-communication/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1336" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2151호</a></li>
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
