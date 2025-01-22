@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-22T11:31:53.033Z</updated>
+    <updated>2025-01-22T12:02:42.677Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[하이브리드 컴퓨팅]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/hybrid-computing/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/hybrid-computing/"/>
+        <updated>2025-01-22T12:02:42.677Z</updated>
+        <summary type="html"><![CDATA[Hybrid Computing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-개념">하이브리드 컴퓨팅 개념<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>고전적 컴퓨팅(CPU, GPU)과 차세대 기술(양자, 광자, 뉴로모픽)을 통합하여 <mark class="flexible-marker flexible-marker-default">오케스트레이션</mark> 하고 복잡한 문제를 해결하는 컴퓨팅 패러다임</li>
+<li>데이터 증가와 복잡한 분석 요구, 단일 기술로는 해결할 수 없는 문제로 다중 컴퓨팅 환경의 조화 필요</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-아키텍처-핵심요소-활용방안">하이브리드 컴퓨팅 아키텍처, 핵심요소, 활용방안<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-아키텍처">하이브리드 컴퓨팅 아키텍처<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-핵심요소">하이브리드 컴퓨팅 핵심요소<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>컴퓨팅 환경</td><td>고전적 시스템</td><td>CPU와 GPU는 대규모 데이터 처리를 위한 기본 요소로, 기존 컴퓨팅 워크로드를 담당</td></tr><tr><td></td><td>차세대 시스템</td><td>양자, 광자, 뉴로모픽 기술은 복잡한 최적화 문제와 고차원 데이터 분석에 적합</td></tr><tr><td>오케스트레이션 계층</td><td>데이터 패브릭</td><td>통합 데이터 관리를 통해 서로 다른 시스템 간의 상호 운용성을 제공</td></tr><tr><td></td><td>워크플로 관리</td><td>워크플로를 효율적으로 조정하여 시간과 자원을 절약</td></tr><tr><td>지원 요소</td><td>보안 및 거버넌스</td><td>자율적으로 작동하는 시스템 간 데이터 전송과 보안을 위한 정밀한 관리</td></tr><tr><td></td><td>변화 수용성</td><td>빈번한 기술 변화와 실패를 수용할 수 있는 유연한 조직 구조 필요</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-활용방안">하이브리드 컴퓨팅 활용방안<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>분야</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>제조</td><td>AI와 뉴로모픽 컴퓨팅을 결합하여 생산 라인 자동화</td><td>생산성 향상 및 운영 비용 절감</td></tr><tr><td>금융 서비스</td><td>양자 컴퓨팅 기반 금융 모델링</td><td>초고속 리스크 분석 및 사기 탐지</td></tr><tr><td>생명과학</td><td>양자 및 광학 컴퓨팅을 활용한 신약 개발</td><td>신약 발견 속도 증가 및 연구비용 절감</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="하이브리드-컴퓨팅-도입시-고려사항">하이브리드 컴퓨팅 도입시 고려사항<a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/#%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>통합 아키텍처를 설계하여 하이브리드 시스템 간 상호 운용성 향상 필요</li>
+<li>ATAM, CBAM 통해 조직 내 적합한 기술 융합 필요</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[에너지 효율적 컴퓨팅]]></title>
         <id>https://gracefullight.dev/en/pe/conv/energy-efficient-computing/</id>
@@ -54,7 +84,7 @@
 <table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>데이터 수집</td><td>센서 및 태그</td><td>IoT 센서, Bluetooth, 5G, 백스캐터 등을 활용한 데이터 수집</td></tr><tr><td>에너지 관리</td><td>에너지 수확 기술</td><td>배터리 없는 장치를 통한 지속적 전력 공급</td></tr><tr><td>데이터 처리</td><td>클라우드 분석</td><td>데이터를 클라우드에 저장 및 분석하여 인사이트 도출</td></tr><tr><td>네트워크</td><td>게이트웨이와 수신기</td><td>데이터 전달 및 기기 간 연결 지원</td></tr><tr><td>피드백 제공</td><td>통합 소프트웨어</td><td>수집된 정보를 활용하여 자동화된 의사결정과 환경 제어 지원</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-활용방안">앰비언트 인비저블 인텔리전스 활용방안<a href="https://gracefullight.dev/en/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>분야</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>소매업</td><td>실시간 재고 확인 및 부패 방지 냉장 관리</td><td>공급망 최적화, 비용 절감</td></tr><tr><td>의료</td><td>환자 복약 준수 모니터링</td><td>건강 관리 향상, 오류 방지</td></tr><tr><td>가전 제품</td><td>의류 센서가 세탁기와 통신하여 최적 세탁 모드 설정</td><td>사용자 편의성 및 에너지 효율 증대</td></tr><tr><td>물류</td><td>스마트 포장을 통한 품목 위치 추적</td><td>배송 효율성 향상 및 분실 방지</td></tr><tr><td>제조</td><td>장비와 부품이 재고 수준에 따라 자동 주문 수행</td><td>생산성 증대 및 다운타임 최소화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-도입을-위한-고려사항">앰비언트 인비저블 인텔리전스 도입을 위한 고려사항<a href="https://gracefullight.dev/en/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-도입을-위한-고려사항">앰비언트 인비저블 인텔리전스 도입을 위한 고려사항<a href="https://gracefullight.dev/en/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EF%BF%BD%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>데이터 프라이버시</td><td>사용자 추적 방지</td><td>의류 센서와 같은 기술의 개인정보 보호 대책 필요</td></tr><tr><td>표준화</td><td>통합 프로토콜 개발</td><td>다양한 기기와의 호환성 및 상호작용 보장</td></tr><tr><td>비용</td><td>저비용 구현 가능성</td><td>초저가 센서와 태그를 통한 비용 효율적 확산</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
@@ -176,7 +206,7 @@
 <table><thead><tr><th>구분</th><th>구성 요소</th><th>설명</th></tr></thead><tbody><tr><td>윤리 (Ethics)</td><td>윤리 원칙</td><td>AI 개발 및 배포를 위한 도덕적 지침과 가이드라인 제공</td></tr><tr><td>정책 (Policies)</td><td>책임 있는 AI 정책</td><td>AI 관리, 감독, 배포를 위한 프레임워크 및 프로세스</td></tr><tr><td>기술 (Technology)</td><td>AI 기술</td><td>거버넌스 표준과 일치하는 기술적 역량 및 시스템 기능</td></tr><tr><td>플랫폼 속성</td><td>투명성 (Transparency)</td><td>AI의 의사결정 과정과 성능이 이해 가능하도록 명확히 제공</td></tr><tr><td></td><td>책임성 (Accountability)</td><td>AI 시스템에서 발생하는 결과에 대한 책임 구조 마련</td></tr><tr><td></td><td>공정성 (Fairness)</td><td>데이터 편향을 방지하고 공정한 결과를 보장</td></tr><tr><td></td><td>개인정보 보호 (Privacy)</td><td>데이터의 무결성과 보호를 위한 정책 및 기술 적용</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-거버넌스-플랫폼-활용사례">AI 거버넌스 플랫폼 활용사례<a href="https://gracefullight.dev/en/pe/algo/ai-governance-framework/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>효과</th></tr></thead><tbody><tr><td>위험 평가</td><td>AI 시스템이 초래할 수 있는 편향, 개인정보 침해 및 부정적 사회적 영향을 평가</td><td>잠재적 위험 감소와 AI의 윤리적 활용 보장</td></tr><tr><td>모델 수명 주기 관리</td><td>모델 거버넌스 프로세스를 통해 적절한 게이트와 제어를 적용하여 모델 수명 주기를 관리</td><td>AI 모델의 윤리적 설계 및 배포를 보장</td></tr><tr><td>시스템 모니터링 및 감사</td><td>AI 시스템 사용 현황을 추적하고 성능을 모니터링하며, 의사결정 과정을 감사하여 거버넌스 기준에 부합</td><td>지속적 규정 준수와 신뢰성 확보</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-거버넌스-플랫폼-수립시-고려사항">AI 거버넌스 플랫폼 수립시 고려사항<a href="https://gracefullight.dev/en/pe/algo/ai-governance-framework/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%88%98%EB%A6%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-거버넌스-플랫폼-수립시-고려사항">AI 거버넌스 플랫폼 수립시 고려사항<a href="https://gracefullight.dev/en/pe/algo/ai-governance-framework/#ai-%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%88%98%EB%A6%BD%EF%BF%BD%EF%BF%BD%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>국가적 데이터 주권과 글로벌 규제 준수를 동시에 달성하는 소버린 AI 거버넌스 플랫폼으로의 테일러링 고려</li>
@@ -206,7 +236,7 @@
 <table><thead><tr><th>계층</th><th>핵심 요소</th><th>설명</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">인프라</mark> 계층</td><td>센서 및 하드웨어</td><td>IoT, GPS, 카메라 등 데이터 수집 장치</td></tr><tr><td></td><td>네트워크</td><td>5G/6G 기술과 엣지-클라우드 기반 데이터 처리</td></tr><tr><td></td><td>사용자 장치</td><td>HMD 및 컨트롤러를 통한 몰입형 경험 제공</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">정보</mark> 계층</td><td>데이터 및 AI</td><td>실시간 데이터 분석 및 콘텐츠 생성</td></tr><tr><td></td><td>블록체인</td><td>신뢰성 있는 디지털 자산 관리</td></tr><tr><td></td><td>디지털 트윈</td><td>물리적 세계의 복제 및 시뮬레이션</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">상호작용</mark> 계층</td><td>사용자 디바이스</td><td>HMD, 스마트폰 등을 통한 직관적 인터페이스</td></tr><tr><td></td><td>피드백 시스템</td><td>음성 명령, 시선 추적, 모션 센서</td></tr><tr><td></td><td>가상 환경</td><td>메타버스, AR, MR 기반의 몰입형 디지털 공간</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-활용사례">공간컴퓨팅 활용사례<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>기업</td><td>R&amp;D를 위한 가상 협업</td><td>협업 비용 절감 및 의사결정 효율성 향상</td></tr><tr><td></td><td>건설/기계/전기 프로젝트의 디지털 트윈 활용</td><td>설계 및 시뮬레이션으로 문제 해결 속도 증대</td></tr><tr><td></td><td>직원 실습 기술 교육</td><td>실제 상황에 기반한 훈련으로 기술 숙련도 향상</td></tr><tr><td>소비자</td><td>가상 콘서트 및 라이브 공연</td><td>몰입형 엔터테인먼트 경험 제공</td></tr><tr><td></td><td>매장 내 가상 제품 체험</td><td>구매 전환율 증가 및 고객 만족도 향상</td></tr><tr><td></td><td>상황 인식 방향 및 탐색</td><td>사용자 편의성 증대 및 경험 향상</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-도입을-위한-주요-고려사항">공간컴퓨팅 도입을 위한 주요 고려사항<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A3%BC%EC%9A%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공간컴퓨팅-도입을-위한-주요-고려사항">공간컴퓨팅 도입을 위한 주요 고려사항<a href="https://gracefullight.dev/en/pe/conv/spatial-computing/#%EA%B3%B5%EA%B0%84%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%8F%84%EF%BF%BD%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A3%BC%EC%9A%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>고려사항</th><th>문제점</th><th>해결방안</th></tr></thead><tbody><tr><td>비용 문제</td><td><mark class="flexible-marker flexible-marker-default">고가의 HMD</mark>와 디지털화 자산 구축 비용</td><td>저비용 HMD 개발 및 자산 디지털화 자동화 도구 개발</td></tr><tr><td>기술적 제약</td><td>HMD 무게, 배터리 한계, <mark class="flexible-marker flexible-marker-default">사일로형 앱 통합 문제</mark></td><td>경량화된 HMD 설계 및 표준화된 통합 프로토콜 도입</td></tr><tr><td>보안 문제</td><td>데이터 <mark class="flexible-marker flexible-marker-default">프라이버시</mark> 및 윤리적 이슈</td><td>강력한 데이터 암호화 및 디지털 윤리 규제 마련</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">킬러 앱 부족</mark></td><td>소비자 채택을 가속화할 결정적 사용 사례 부족</td><td>매력적인 엔터테인먼트 및 리테일 중심의 응용 사례 개발</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
@@ -275,34 +305,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[대규모 언어 모델 성능 향상을 위한 연구동향]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/"/>
-        <updated>2025-01-19T11:19:23.465Z</updated>
-        <summary type="html"><![CDATA[LLM Performance Research Trends]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="llm-모델-성능-개요">LLM 모델 성능 개요<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#llm-%EB%AA%A8%EB%8D%B8-%EC%84%B1%EB%8A%A5-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>LLM 기술은 언어 이해, 번역, 생성에서 뛰어난 성능을 발휘하며, 인간 전문가 수준의 문제 해결 능력을 가짐</li>
-<li>논리적 추론 능력, 정보 정확성 부족, 모델의 단일 작업 최적화의 한계점 존재</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="llm-모델-성능-향상-방안">LLM 모델 성능 향상 방안<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#llm-%EB%AA%A8%EB%8D%B8-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-논리적-사고-능력-향상-방안">LLM 논리적 사고 능력 향상 방안<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#llm-%EB%85%BC%EB%A6%AC%EC%A0%81-%EC%82%AC%EA%B3%A0-%EB%8A%A5%EB%A0%A5-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술/모델</th></tr></thead><tbody><tr><td>CoT (Chain of Thought)</td><td>LLM이 복잡한 문제를 단계별로 풀이하도록 유도하여 논리적 추론을 강화하는 방법</td><td>GPT-4, PaLM</td></tr><tr><td></td><td>수학 문제, 법적 논증 등 단계적 사고가 필요한 작업에서 성능 대폭 개선</td><td></td></tr><tr><td>ToT (Tree of Thought)</td><td>문제를 계층적으로 분해하고 각 경로의 결과를 비교해 최적의 답을 찾는 기법</td><td>Anthropic Claude</td></tr><tr><td></td><td>다양한 결과를 시뮬레이션하여 복잡한 의사결정 문제를 해결할 때 유리</td><td></td></tr><tr><td>Meta-Reasoning</td><td>LLM이 자신의 추론 과정을 평가하고 잘못된 부분을 스스로 교정하는 기법</td><td>Self-Reflection, ReAct</td></tr><tr><td></td><td>자기반성과 재구성(ReAct)을 통해 고난도 문제에서 정밀도 향상</td><td></td></tr><tr><td>Mutual Reasoning</td><td>두 개 이상의 모델이 협력하여 상호 검증과 보완을 통해 오류를 줄이는 방식</td><td>rStar</td></tr><tr><td></td><td>각 모델이 상대방의 결과를 비판적으로 평가함으로써 신뢰성을 강화</td><td></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-정확도-향상-방안">LLM 정확도 향상 방안<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#llm-%EC%A0%95%ED%99%95%EB%8F%84-%ED%96%A5%EC%83%81-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술</th></tr></thead><tbody><tr><td>RAG (Retrieval-Augmented Generation)</td><td>모델이 외부 데이터베이스에서 정보를 검색한 후 해당 데이터를 응답 생성에 통합하는 기법</td><td>Bing GPT, OpenAI ChatGPT</td></tr><tr><td></td><td>고정된 훈련 데이터의 한계를 극복하며 최신성과 신뢰성을 강화</td><td></td></tr><tr><td>RIG (Retrieval-Integrated Generation)</td><td>모델이 실시간으로 검색 엔진과 통합되어 정보를 검색한 후 이를 즉시 응답에 반영하는 기술</td><td>Google Gemini</td></tr><tr><td></td><td>최신 정보 활용이 필요한 실시간 데이터 환경에 적합</td><td></td></tr><tr><td>맥락 검색 (Context Retrieval)</td><td>문서와 질문 간의 연관성을 높이기 위해 추가적인 맥락 정보 제공</td><td>Anthropic Contextual BM25</td></tr><tr><td></td><td>유사도 기반 검색과 고정밀 검색 알고리즘을 결합하여 정확도 극대화</td><td></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="llm-기능-확장-방안">LLM 기능 확장 방안<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#llm-%EA%B8%B0%EB%8A%A5-%ED%99%95%EC%9E%A5-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>접근 방식</th><th>설명</th><th>주요 기술</th></tr></thead><tbody><tr><td>모델 병합 (Model Merging)</td><td>서로 다른 LLM을 결합하여 다양한 작업을 동시에 수행할 수 있도록 하는 방법</td><td>DARE, Evolutionary Merging</td></tr><tr><td></td><td>하나의 모델은 자연어 처리에, 다른 모델은 이미지 분석에 최적화</td><td></td></tr><tr><td>모델 결합 (Model Combination)</td><td>LLM과 다른 파운데이션 모델(예: 이미지, 음성 모델)을 통합하여 멀티모달 작업을 지원</td><td>Whisper+GPT, SeamlessM4T</td></tr><tr><td></td><td>음성 텍스트 변환(Whisper)과 자연어 응답(GPT)을 결합하여 음성 비서, 다중언어 번역 등에 활용</td><td></td></tr><tr><td>어댑터 기반 결합</td><td>모델이 다양한 작업과 모달리티를 지원할 수 있도록 가볍고 모듈화된 어댑터를 추가하는 방식</td><td>Conv-based 어댑터</td></tr><tr><td></td><td>어댑터를 통해 특정 작업에 맞춘 빠른 조정이 가능하며, 대규모 재훈련 불필요</td><td></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/algo/llm-performance-research-trends/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1344" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2159호</a></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
     </entry>
 </feed>
