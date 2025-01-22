@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 20 Jan 2025 13:06:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jan 2025 11:10:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[앰비언트 인비저블 인텔리전스]]></title>
+            <link>https://gracefullight.dev/en/pe/ambient-invisible-intelligence/</link>
+            <guid>https://gracefullight.dev/en/pe/ambient-invisible-intelligence/</guid>
+            <pubDate>Wed, 22 Jan 2025 11:10:37 GMT</pubDate>
+            <description><![CDATA[Ambient Invisible Intelligence]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스">앰비언트 인비저블 인텔리전스<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>소형의 스마트 태그와 센서를 활용하여 다양한 물체와 환경의 위치 및 상태를 추적하는 기술로, 수집된 데이터는 클라우드로 전송되어 분석 및 의사결정에 활용</li>
+<li>공급망 효율화, 냉장 상품 품질 유지, 의료 데이터 관리 등 다양한 분야에서 효율성과 비용 절감 / 장기적으로 초저가 전자 제품과 통합 게이트웨이를 통해 더욱 광범위한 환경에 적용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-개념도-핵심요소-활용방안">앰비언트 인비저블 인텔리전스 개념도, 핵심요소, 활용방안<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-개념도">앰비언트 인비저블 인텔리전스 개념도<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-핵심요소">앰비언트 인비저블 인텔리전스 핵심요소<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>데이터 수집</td><td>센서 및 태그</td><td>IoT 센서, Bluetooth, 5G, 백스캐터 등을 활용한 데이터 수집</td></tr><tr><td>에너지 관리</td><td>에너지 수확 기술</td><td>배터리 없는 장치를 통한 지속적 전력 공급</td></tr><tr><td>데이터 처리</td><td>클라우드 분석</td><td>데이터를 클라우드에 저장 및 분석하여 인사이트 도출</td></tr><tr><td>네트워크</td><td>게이트웨이와 수신기</td><td>데이터 전달 및 기기 간 연결 지원</td></tr><tr><td>피드백 제공</td><td>통합 소프트웨어</td><td>수집된 정보를 활용하여 자동화된 의사결정과 환경 제어 지원</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-활용방안">앰비언트 인비저블 인텔리전스 활용방안<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>분야</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>소매업</td><td>실시간 재고 확인 및 부패 방지 냉장 관리</td><td>공급망 최적화, 비용 절감</td></tr><tr><td>의료</td><td>환자 복약 준수 모니터링</td><td>건강 관리 향상, 오류 방지</td></tr><tr><td>가전 제품</td><td>의류 센서가 세탁기와 통신하여 최적 세탁 모드 설정</td><td>사용자 편의성 및 에너지 효율 증대</td></tr><tr><td>물류</td><td>스마트 포장을 통한 품목 위치 추적</td><td>배송 효율성 향상 및 분실 방지</td></tr><tr><td>제조</td><td>장비와 부품이 재고 수준에 따라 자동 주문 수행</td><td>생산성 증대 및 다운타임 최소화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-도입을-위한-고려사항">앰비언트 인비저블 인텔리전스 도입을 위한 고려사항<a href="https://gracefullight.dev/en/pe/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>데이터 프라이버시</td><td>사용자 추적 방지</td><td>의류 센서와 같은 기술의 개인정보 보호 대책 필요</td></tr><tr><td>표준화</td><td>통합 프로토콜 개발</td><td>다양한 기기와의 호환성 및 상호작용 보장</td></tr><tr><td>비용</td><td>저비용 구현 가능성</td><td>초저가 센서와 태그를 통한 비용 효율적 확산</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[양자내성암호]]></title>
             <link>https://gracefullight.dev/en/pe/sec/post-quantum-cryptography/</link>
@@ -248,34 +271,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[AI를 이용한 사이버 공격 패러다임]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/</guid>
-            <pubDate>Sun, 19 Jan 2025 10:01:10 GMT</pubDate>
-            <description><![CDATA[AI Enabled Cyber Attack Paradigms]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-패러다임-개념">AI를 이용한 사이버 공격 패러다임 개념<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>AI와 ML 기술을 악용해 자동화된 피싱, 정교한 악성코드 생성, 탐지 회피 등을 수행하여 기존 보안 체계를 우회하는 사이버 공격 방식</li>
-<li>AI 기반 공격 도구의 등장, 대규모 데이터 분석과 자동화된 공격 가능, 공격자의 적응적 공격 체계 구축</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-개념도-공격절차-대응방안">AI를 이용한 사이버 공격 개념도, 공격절차, 대응방안<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-개념도">AI를 이용한 사이버 공격 개념도<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>FraudGPT, WormGPT, DarkGPT 등을 활용하여 사이버 공격 벡터에 인공지능 접목</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격절차">AI를 이용한 사이버 공격절차<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>내용</th><th>세부 내용</th></tr></thead><tbody><tr><td>1. 표적 식별</td><td>대상 시스템 및 취약점 파악</td><td>AI 기반 데이터 분석으로 대상 시스템의 취약점 및 최적의 공격 경로를 탐색</td></tr><tr><td>2. 공격 벡터 설계</td><td>공격 방법 결정</td><td>AI 모델을 활용해 피싱, 악성코드, 사회공학적 공격 등 설계</td></tr><tr><td>3. 공격 실행</td><td>자동화된 공격 수행</td><td>LLM 기반 악성코드 및 피싱 메시지를 표적 시스템에 배포</td></tr><tr><td>4. 탐지 회피</td><td>보안 시스템 무력화</td><td>정상적인 데이터로 위장하거나 탐지 패턴을 AI로 분석해 우회</td></tr><tr><td>5. 데이터 탈취 및 결과 분석</td><td>공격 결과 수집</td><td>공격 성공 후 데이터 탈취, 시스템 무력화, 네트워크 장악 결과를 분석 및 활용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai를-이용한-사이버-공격-대응방안">AI를 이용한 사이버 공격 대응방안<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#ai%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%B2%84-%EA%B3%B5%EA%B2%A9-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>대응 방안</th><th>내용</th></tr></thead><tbody><tr><td>AI for Security</td><td>AI 기반 보안 탐지 시스템 도입</td><td>AI/ML 모델을 활용해 이상 트래픽 및 비정상 데이터 패턴 조기 탐지</td></tr><tr><td></td><td>위협 인텔리전스 강화</td><td>알려진 위협과 미확인 위협 분석 및 경고</td></tr><tr><td></td><td>자동화된 방어 체계</td><td>SOAR, XDR 기반 자동화된 대응 체계를 통해 실시간 공격 차단</td></tr><tr><td></td><td>피해 최소화 및 보안 강화</td><td>랜섬웨어 복구 및 데이터 복구, 보안 체계 강화를 통한 추가 공격 방지</td></tr><tr><td>Security for AI</td><td>적대적 AI 공격 방지</td><td>AI 모델에 대한 적대적 공격 방어 기술 개발</td></tr><tr><td></td><td>데이터 무결성 및 보호 강화</td><td>AI 학습 데이터 포이즈닝 방지를 위해 데이터 접근 제어 및 암호화 적용</td></tr><tr><td></td><td>AI 보안 표준화 및 정책 개발</td><td>국제 표준화 작업(OWASP, ISO/IEC)과 보안 정책 수립 및 대응</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/sec/ai-enabled-cyber-attack-paradigms/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1343" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2158호</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
