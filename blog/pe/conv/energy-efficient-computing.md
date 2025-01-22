@@ -19,7 +19,7 @@ tags:
 
 ```mermaid
 pie
-  title IT Sustainability Elements
+  title Controlling the Sustainability of IT
   "효율적인 코드 및 알고리즘": 33
   "현대적이고 효율적인 하드웨어": 33
   "녹색 에너지 사용": 33
