@@ -51,10 +51,10 @@ graph LR
   end
 
   subgraph PolyfunctionalRobot[다기능 로봇]
-    PR1[적응형/Adaptive]
+    PR1[모듈형/Modular]
     PR2[협업적/Collaborative]
     PR3[다목적/Versatile]
-    PR4[지능형/Intelligent]
+    PR4[적응형/Adaptive]
   end
 
   H1 --- R1
