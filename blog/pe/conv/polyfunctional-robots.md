@@ -1,7 +1,7 @@
 ---
-title: polyfunctional robots
+title: 다기능 로봇
 date: 2025-01-22T23:55:41.284+09:00
-description: polyfunctional robots
+description: Polyfunctional Robots
 authors: me
 tags:
   - pe
