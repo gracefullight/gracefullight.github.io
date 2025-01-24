@@ -111,4 +111,5 @@ graph LR
 
 ## 참조
 
+- [과기정통부: 철통인증지침, 제로트러스트 가이드라인 2.0](https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3185203)
 - [KISA: 제로트러스트 가이드라인 1.0](https://www.kisa.or.kr/2060205/form?postSeq=20&page=1)
