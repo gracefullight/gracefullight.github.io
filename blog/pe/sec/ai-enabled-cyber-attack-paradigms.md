@@ -65,6 +65,48 @@ graph TB
 | | 데이터 무결성 및 보호 강화 | AI 학습 데이터 포이즈닝 방지를 위해 데이터 접근 제어 및 암호화 적용 |
 | | AI 보안 표준화 및 정책 개발 | 국제 표준화 작업(OWASP, ISO/IEC)과 보안 정책 수립 및 대응 |
 
+## AI for Security, Security for AI
+
+### AI for Security
+
+```mermaid
+graph LR
+  Threats[보안 위협]
+  Detection[위협 탐지]
+  Intelligence[위협 인텔리전스]
+  Automation[자동화된 대응]
+  Tools[활용 기술]
+  XDR[XDR]
+  SOAR[SOAR]
+  DarkBERT[DarkBERT]
+  
+  Threats --> Detection
+  Detection --> Intelligence
+  Intelligence --> Automation
+  Automation --> Tools
+  Tools --> XDR
+  Tools --> SOAR
+  Tools --> DarkBERT
+```
+
+- AI로 새로운 보안 위협을 탐지하고, 자동화된 대응 체계를 구축하여 위협 가시성, 위협 인텔리전스, 자동화된 대응 역량 강화
+
+### Security for AI
+
+| 프레임워크 | 설명 | 비고 |
+| --- | --- | --- |
+| SAIF | AI 모델과 데이터의 보안을 위한 포괄적인 프레임워크 | AI 모델의 신뢰성 및 데이터 무결성 |
+| AI TRISM | AI 시스템의 신뢰성, 위험 관리, 보안에 중점을 둔 AI 보안 관리 프레임워크 | AI 거버넌스 및 위험 모니터링 |
+| AI RMF | NIST의 AI 위험 관리 프레임워크로, AI 위험 식별, 분석, 대응 및 모니터링을 체계화. | AI 위험 평가 및 완화 계획 |
+| OWASP | OWASP의 LLM Top 10을 통해 LLM의 주요 보안 취약점과 위협 요소 식별/대응 | 데이터 보호 및 모델 보안 |
+
+- AI 기술 자체를 보호하고, 학습 데이터와 모델의 안전성을 보장하며, AI 생태계에서 발생하는 윤리적 문제와 보안 취약점에 대응
+
+## AI 기반 사이버 보안 주요 고려사항
+
+- 탐지 정확성을 높이기 위한 신뢰할 수 있는 학습 데이터 확보
+- AI 거버넌스 프레임워크 도입을 통해 공정하고 투명한 AI 기술 구현
+
 ## 참조
 
 - [IITP: 주간기술동향 2158호](https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&masterCode=publication&identifier=1343)
