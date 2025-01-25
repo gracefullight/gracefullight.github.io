@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-25T06:47:41.571Z</updated>
+    <updated>2025-01-25T08:29:37.837Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[컨피덴셜 컴퓨팅]]></title>
+        <id>https://gracefullight.dev/pe/sec/confidential-computing/</id>
+        <link href="https://gracefullight.dev/pe/sec/confidential-computing/"/>
+        <updated>2025-01-25T08:29:37.837Z</updated>
+        <summary type="html"><![CDATA[Confidential Computing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-개념">컨피덴셜 컴퓨팅 개념<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="컨피덴셜 컴퓨팅 개념에 대한 직접 링크" title="컨피덴셜 컴퓨팅 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>데이터 보호와 개인 정보 보안에 중점을 둔 컴퓨팅 환경을 제공하는 기술로 격리, 접근통제, 암호화, 키 관리 기술을 <mark class="flexible-marker flexible-marker-default">하드웨어로 구현</mark>하여 소프트웨어보다 더 강력한 통제 보장</li>
+<li>클라우드 환경에서 데이터 유출 및 무단 접근 방지, 클라우드 운영자나 제3자에 대한 완전 신뢰 없이 데이터 보호 가능, 기밀성 유지</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-구성도-구성요소-적용방안">컨피덴셜 컴퓨팅 구성도, 구성요소, 적용방안<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="컨피덴셜 컴퓨팅 구성도, 구성요소, 적용방안에 대한 직접 링크" title="컨피덴셜 컴퓨팅 구성도, 구성요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-구성도">컨피덴셜 컴퓨팅 구성도<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="컨피덴셜 컴퓨팅 구성도에 대한 직접 링크" title="컨피덴셜 컴퓨팅 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-구성요소">컨피덴셜 컴퓨팅 구성요소<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="컨피덴셜 컴퓨팅 구성요소에 대한 직접 링크" title="컨피덴셜 컴퓨팅 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>신뢰 실행 환경</td><td>하드웨어 기반 격리로 민감 데이터 보호 및 외부 접근 차단</td><td>Intel SGX, AMD SEV 등</td></tr><tr><td>실행 증명</td><td>실행 중인 코드 무결성을 검증하여 신뢰성을 보장</td><td>원격 검증, 내장형 시스템</td></tr><tr><td>주변 장치</td><td>GPU, FPGA 등 신뢰 가능한 컴퓨팅 환경 확장</td><td>보안 기능 통합, 주변 장치 비신뢰</td></tr><tr><td>운영 체제</td><td>TEE 기반 보안 운영체제를 통해 응용 프로그램 실행</td><td>사용자 친화적 API 지원</td></tr><tr><td>응용 프로그램</td><td>기밀성을 보장하며 연산 수행</td><td>TPM 활용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-적용방안">컨피덴셜 컴퓨팅 적용방안<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="컨피덴셜 컴퓨팅 적용방안에 대한 직접 링크" title="컨피덴셜 컴퓨팅 적용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>이슈</th><th>적용방안</th></tr></thead><tbody><tr><td>신뢰 실행 환경</td><td>부채널 분석공격, 성능 저하, 수학적 모델 부재</td><td>관련 방어기법 연구, 증명가능한 TEE 개발</td></tr><tr><td>실행 증명</td><td>공개된 표준 프로토콜 부재</td><td>업계 표준 수립</td></tr><tr><td>주변 장치</td><td>디스크 저장 데이터에 대한 비신뢰 OS의 접근</td><td>가상머신 단위 격리</td></tr><tr><td>운영 체제</td><td>암복호화로 인한 성능 하락</td><td>TPM 가상화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="컨피덴셜-컴퓨팅-주요-고려사항">컨피덴셜 컴퓨팅 주요 고려사항<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%BB%A8%ED%94%BC%EB%8D%B4%EC%85%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%EC%A3%BC%EC%9A%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="컨피덴셜 컴퓨팅 주요 고려사항에 대한 �직접 링크" title="컨피덴셜 컴퓨팅 주요 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>RISC-V와 같은 오픈소스 CPU 설계 생태계의 확장으로 인해 컨피덴셜 컴퓨팅에 대한 국내 연구와 생태계 구축</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/confidential-computing/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://iitp.kr/kr/1/knowledge/periodicalViewA.it?searClassCode=B_ITA_01&amp;masterCode=publication&amp;identifier=1310" target="_blank" rel="noopener noreferrer">IITP: 주간기술동향 2125호</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RIG, 검색삽입생성]]></title>
         <id>https://gracefullight.dev/pe/algo/rig/</id>
@@ -286,33 +319,6 @@
 <ul>
 <li>신경형 및 광 컴퓨팅 기술의 실효성을 지속적으로 평가 및 시험 운영</li>
 </ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[앰비언트 인비저블 인텔리전스]]></title>
-        <id>https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/</id>
-        <link href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/"/>
-        <updated>2025-01-22T11:10:37.536Z</updated>
-        <summary type="html"><![CDATA[Ambient Invisible Intelligence]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스">앰비언트 인비저블 인텔리전스<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스에 대한 직접 링크">​</a></h2>
-<ul>
-<li>소형의 스마트 태그와 센서를 활용하여 다양한 물체와 환경의 위치 및 상태를 추적하는 기술로, 수집된 데이터는 클라우드로 전송되어 분석 및 의사결정에 활용</li>
-<li>공급망 효율화, 냉장 상품 품질 유지, 의료 데이터 관리 등 다양한 분야에서 효율성과 비용 절감 / 장기적으로 초저가 전자 제품과 통합 게이트웨이를 통해 더욱 광범위한 환경에 적용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-개념도-핵심요소-활용방안">앰비언트 인비저블 인텔리전스 개념도, 핵심요소, 활용방안<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스 개념도, 핵심요소, 활용방안에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스 개념도, 핵심요소, 활용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-개념도">앰비언트 인비저블 인텔리전스 개념도<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스 개념도에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-�핵심요소">앰비언트 인비저블 인텔리전스 핵심요소<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스 핵심요소에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>데이터 수집</td><td>센서 및 태그</td><td>IoT 센서, Bluetooth, 5G, 백스캐터 등을 활용한 데이터 수집</td></tr><tr><td>에너지 관리</td><td>에너지 수확 기술</td><td>배터리 없는 장치를 통한 지속적 전력 공급</td></tr><tr><td>데이터 처리</td><td>클라우드 분석</td><td>데이터를 클라우드에 저장 및 분석하여 인사이트 도출</td></tr><tr><td>네트워크</td><td>게이트웨이와 수신기</td><td>데이터 전달 및 기기 간 연결 지원</td></tr><tr><td>피드백 제공</td><td>통합 소프트웨어</td><td>수집된 정보를 활용하여 자동화된 의사결정과 환경 제어 지원</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-활용방안">앰비언트 인비저블 인텔리전스 활용방안<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스 활용방안에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스 활용방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>분야</th><th>사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>소매업</td><td>실시간 재고 확인 및 부패 방지 냉장 관리</td><td>공급망 최적화, 비용 절감</td></tr><tr><td>의료</td><td>환자 복약 준수 모니터링</td><td>건강 관리 향상, 오류 방지</td></tr><tr><td>가전 제품</td><td>의류 센서가 세탁기와 통신하여 최적 세탁 모드 설정</td><td>사용자 편의성 및 에너지 효율 증대</td></tr><tr><td>물류</td><td>스마트 포장을 통한 품목 위치 추적</td><td>배송 효율성 향상 및 분실 방지</td></tr><tr><td>제조</td><td>장비와 부품이 재고 수준에 따라 자동 주문 수행</td><td>생산성 증대 및 다운타임 최소화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-인비저블-인텔리전스-도입을-위한-고려사항">앰비언트 인비저블 인텔리전스 도입을 위한 고려사항<a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/#%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8-%EC%9D%B8%EB%B9%84%EC%A0%80%EB%B8%94-%EC%9D%B8%ED%85%94%EB%A6%AC%EC%A0%84%EC%8A%A4-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="앰비언트 인비저블 인텔리전스 도입을 위한 고려사항에 대한 직접 링크" title="앰비언트 인비저블 인텔리전스 도입을 위한 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>고려사항</th><th>내용</th></tr></thead><tbody><tr><td>데이터 프라이버시</td><td>사용자 추적 방지</td><td>의류 센서와 같은 기술의 개인정보 보호 대책 필요</td></tr><tr><td>표준화</td><td>통합 프로토콜 개발</td><td>다양한 기기와의 호환성 및 상호작용 보장</td></tr><tr><td>비용</td><td>저비용 구현 가능성</td><td>초저가 센서와 태그를 통한 비용 효율적 확산</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
