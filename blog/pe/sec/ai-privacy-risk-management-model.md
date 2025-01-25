@@ -60,3 +60,7 @@ graph LR
 
 - PbD를 적용하여 AI의 설계 단계부터 프라이버시와 보안 고려
 - GDPR, CCPA 등 개인정보 보호 규정을 철저히 준수
+
+## 참조
+
+- [개인정보보호위원회: AI 프라이버시 리스크 관리 모델](https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10870)
