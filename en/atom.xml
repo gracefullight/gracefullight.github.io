@@ -35,6 +35,10 @@
 <ul>
 <li>PbD를 적용하여 AI의 설계 단계부터 프라이버시와 보안 고려</li>
 <li>GDPR, CCPA 등 개인정보 보호 규정을 철저히 준수</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/sec/ai-privacy-risk-management-model/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=10870" target="_blank" rel="noopener noreferrer">개인정보보호위원회: AI 프라이버시 리스크 관리 모델</a></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
