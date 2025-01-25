@@ -1,5 +1,5 @@
 ---
-title: 의도 기반 네트워킹
+title: IBN, 의도 기반 네트워킹
 date: 2025-01-18T22:23:25.394+09:00
 description: Intent Based Networking
 authors: me
