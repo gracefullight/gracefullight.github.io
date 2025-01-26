@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-26T05:51:30.366Z</updated>
+    <updated>2025-01-26T06:08:36.302Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[신뢰성 테스트, 이식성 테스트]]></title>
+        <id>https://gracefullight.dev/pe/sw/reliability-portability-test/</id>
+        <link href="https://gracefullight.dev/pe/sw/reliability-portability-test/"/>
+        <updated>2025-01-26T06:08:36.302Z</updated>
+        <summary type="html"><![CDATA[Reliability and Portability Test]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-테스트의-종류">소프트웨어 테스트의 종류<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%A2%85%EB%A5%98" class="hash-link" aria-label="소프트웨어 테스트의 종류에 대한 직접 링크" title="소프트웨어 테스트의 종류에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-테스트-분류">소프트웨어 테스트 분류<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B6%84%EB%A5%98" class="hash-link" aria-label="소프트웨어 테스트 분류에 대한 직접 링크" title="소프트웨어 테스트 분류에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Software testing classification" src="https://gracefullight.dev/assets/images/software-testing-classification-4ce15d468e6cc24d21501671274218e5.png" width="1272" height="1357" class="img_xC7_"></p>
+<ul>
+<li>소프트웨어 테스트는 테스트 레벨, 테스트 유형, 테스트 설계 기법에 따라 분류</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-테스트-분류-상세설명">소프트웨어 테스트 분류 상세설명<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B6%84%EB%A5%98-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="소프트웨어 테스트 분류 상세설명에 대한 직접 링크" title="소프트웨어 테스트 분류 상세설명에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>분류</th><th>테스트 종류</th><th>설명</th></tr></thead><tbody><tr><td><strong>테스트 레벨</strong></td><td>컴포넌트/단위 테스트</td><td>각각의 컴포넌트를 테스트</td></tr><tr><td></td><td>통합 테스트</td><td>컴포넌트 간의 인터페이스 테스트</td></tr><tr><td></td><td>시스템 테스트</td><td>전체 시스템의 목적 만족 여부 테스트</td></tr><tr><td></td><td>인수 테스트</td><td>사용자의 요구사항 만족 여부 테스트</td></tr><tr><td><strong>테스트 설계</strong></td><td>명세 기반 테스트</td><td>명세를 바탕으로 테스트케이스 생성</td></tr><tr><td></td><td>구조 기반 테스트</td><td>프로그램 코드를 기반으로 테스트케이스 생성</td></tr><tr><td></td><td>경험 기반 테스트</td><td>테스트의 경험을 기반으로 테스트케이스 생성</td></tr><tr><td>정적테스트</td><td>리뷰</td><td>산출물 검토, 프로젝트 진행사항 점검</td></tr><tr><td></td><td>정적 분석</td><td>자동화된 도구로 결함을 검출 및 점검</td></tr><tr><td><strong>테스트 유형</strong></td><td>기능 테스트</td><td>사용자의 요구사항 충족 여부 검출</td></tr><tr><td>비기능테스트</td><td>기능 적합성 테스트</td><td>사용자의 요구사항 만족 기능 제공 여부 테스트</td></tr><tr><td></td><td>성능 효율성 테스트</td><td>시스템의 응답시간/처리량 테스트</td></tr><tr><td></td><td>호환성 테스트</td><td>다른 시스템과의 상호 연동성/공존성 테스트</td></tr><tr><td></td><td>보안성 테스트</td><td>시스템의 보안성 점검을 위한 능동 테스트</td></tr><tr><td></td><td>사용성 테스트</td><td>사용자가 시스템을 효율적으로 용이성 테스트</td></tr><tr><td></td><td>유지보수성 테스트</td><td>규정된 조건/기간에 오동작 없이 수행능력 테스트</td></tr><tr><td></td><td>이식성 테스트</td><td>다양한 환경에서 운영가능 여부 테스트</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="신뢰성-테스트-이식성-테스트">신뢰성 테스트, 이식성 테스트<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%8B%A0%EB%A2%B0%EC%84%B1-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9D%B4%EC%8B%9D%EC%84%B1-%ED%85%8C%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="신뢰성 테스트, 이식성 테스트에 대한 직접 링크" title="신뢰성 테스트, 이식성 테스트에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="신뢰성-테스트">신뢰성 테스트<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%8B%A0%EB%A2%B0%EC%84%B1-%ED%85%8C%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="신뢰성 테스트에 대한 직접 링크" title="신뢰성 테스트에 대한 직접 링크">​</a></h3>
+<ul>
+<li>소프트웨어가 정해진 조건 하에서 일정 기간동안 정상적으로 작동하는지를 확인하는 테스트</li>
+</ul>
+<table><thead><tr><th>분류</th><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>오류 및 결함 발견</td><td>장시간 사용 시 발생할 수 있는 잠재적인 오류와 결함을 조기에 발견하여 수정</td></tr><tr><td></td><td>시스템 안정성 보장</td><td>다양한 환경과 조건에서 시스템이 안정적으로 작동하는지 확인하여 신뢰성을 보장</td></tr><tr><td></td><td>품질 향상</td><td>신뢰성 테스트를 통해 발견된 문제를 개선함으로써 소프트웨어 품질을 높이고 사용자 만족도 향상</td></tr><tr><td>종류</td><td>부하 테스트 (Load Testing)</td><td>시스템에 예상되는 최대 부하를 가하여 성능과 안정성 확인</td></tr><tr><td></td><td>스트레스 테스트 (Stress Testing)</td><td>시스템의 한계를 넘는 부하를 가하여 얼마나 잘 버티는지, 실패 시 어떻게 복구되는지 평가</td></tr><tr><td></td><td>지속적 테스트 (Soak Testing)</td><td>장시간동안 시스템을 가동하여 장기적인 안정성과 메모리 누수 등의 문제를 발견</td></tr><tr><td>절차</td><td>계획 수립</td><td>테스트 목적, 범위, 방법, 성공 기준 정의</td></tr><tr><td></td><td>환경 구성</td><td>테스트 환경과 유사한 테스트 환경 구성</td></tr><tr><td></td><td>시나리오 작성</td><td>다양한 시나리오를 통해 시스템의 신뢰성 평가</td></tr><tr><td></td><td>실행</td><td>계획된 시나리오에 따라 테스트 수행</td></tr><tr><td></td><td>결과 분석 및 보고</td><td>결과 분석을 통해 문제를 발견하고 해결 방안 제시</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="이식성-테스트">이식성 테스트<a href="https://gracefullight.dev/pe/sw/reliability-portability-test/#%EC%9D%B4%EC%8B%9D%EC%84%B1-%ED%85%8C%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="이식성 테스트에 대한 직접 링크" title="이식성 테스트에 대한 직접 링크">​</a></h3>
+<ul>
+<li>소프트웨어가 다양한 환경에서 동일하게 작동하는지 확인하는 테스트</li>
+</ul>
+<table><thead><tr><th>분류</th><th>항목</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>호환성 확인</td><td>소프트웨어가 다양한 플랫폼과 환경에서 호환성을 유지하도록 보장</td></tr><tr><td></td><td>사용자 경험 일관성 유지</td><td>여러 환경에서 동일한 사용자 경험을 제공하여 사용자의 만족도 향상</td></tr><tr><td></td><td>시장 범위 확대</td><td>다양한 환경에서 작동하는 소프트웨어를 통해 더 넓은 시장에 접근성 보장</td></tr><tr><td>종류</td><td>하드웨어 독립성 테스트</td><td>다양한 하드웨어 환경에서 소프트웨어가 정상적으로 작동하는지 확인</td></tr><tr><td></td><td>운영체제 독립성 테스트</td><td>서로 다른 운영 체제에서 소프트웨어의 호환성 평가</td></tr><tr><td></td><td>브라우저 독립성 테스트</td><td>웹 애플리케이션의 다양한 브라우저에서 동일한 기능이 작동하는지 확인</td></tr><tr><td></td><td>언어 및 지역 독립성 테스트</td><td>다국어 지원 소프트웨어의 다양한 언어 및 지역 설정에 서서히 작동하는지 평가</td></tr><tr><td>고려 사항</td><td>테스트 환경 구축의 어려움</td><td>다양한 플랫폼과 환경을 모두 구성하는 난이도 증가</td></tr><tr><td></td><td>테스트 시간 및 비용</td><td>시간과 비용이 많이 소요</td></tr><tr><td></td><td>복잡성 증가</td><td>다양한 테스트 케이스와 시나리오를 구성하는 과정에서 복잡성이 증가</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/software-engineering" term="pe/software-engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[요구 공학]]></title>
         <id>https://gracefullight.dev/pe/sw/requirements-engineering/</id>
@@ -269,39 +301,6 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
 <ul>
 <li><a href="https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=10870" target="_blank" rel="noopener noreferrer">개인정보보호위원회: AI 프라이버시 리스크 관리 모델</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[N²SF, 국가 네트워크 보안 프레임워크]]></title>
-        <id>https://gracefullight.dev/pe/sec/national-network-security-framework/</id>
-        <link href="https://gracefullight.dev/pe/sec/national-network-security-framework/"/>
-        <updated>2025-01-24T09:02:42.741Z</updated>
-        <summary type="html"><![CDATA[National Network Security Framework]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-개념">N²SF 개념<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="N²SF 개념에 대한 직접 링크" title="N²SF 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>국가 보안체계를 망분리 하지 않아도 보안성을 확보하는 것을 목표로 국가 및 공공기관의 정보보안 강화를 위해 도입된 신규 보안 프레임워크</li>
-<li>기존 망분리 정책의 클라우드, AI 등 신기술과 원격 근무 환경에서의 비효율, 제약 해결, 보안정책 패러다임 전환 / 신기술 융합 강화, 스마트 업무환경 조성 / 공공데이터 활용을 통한 디지털 경제 창출</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-개념도-정책-유형-적용-절차">N²SF 개념도, 정책 유형, 적용 절차<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A0%95%EC%B1%85-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="N²SF 개념도, 정책 유형, 적용 절차에 대한 직접 링크" title="N²SF 개념도, 정책 유형, 적용 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-개념도">N²SF 개념도<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="N²SF 개념도에 대한 직접 링크" title="N²SF 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-정책-유형">N²SF 정책 유형<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EC%A0%95%EC%B1%85-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="N²SF 정책 유형에 대한 직접 링크" title="N²SF 정책 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>정책 유형</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>제로트러스트</td><td>사용자와 디바이스를 지속적으로 검증하고, 최소 권한 원칙을 기반으로 접근 통제</td><td>PDP, PEP, PIP</td></tr><tr><td>MLS(Multi-Level Security)</td><td>데이터와 시스템의 보안 등급을 정의하고, 다단계 보안 정책을 적용</td><td>C/S/O</td></tr><tr><td>망분리 완화</td><td>망분리 정책을 완화하며 보안 통제를 강화하여 업무 연속성과 보안의 균형 확보</td><td>스마트 업무환경</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-적용-절차">N²SF 적용 절차<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EC%A0%81%EC%9A%A9-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="N²SF 적용 절차에 대한 직접 링크" title="N²SF 적용 절차에 대한 직접 링크">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>주요 내용</th><th>산출물</th></tr></thead><tbody><tr><td>준비</td><td>다중보안체계 적용을 위한 현황 파악 및 분석</td><td>업무정보 목록, 정보시스템 목록</td></tr><tr><td>C/S/O 등급 분류</td><td>업무 중요도 따른 정보시스템 대상 C/S/O 등급 분류</td><td>정보시스템 C/S/O 목록</td></tr><tr><td>위협식별</td><td>정보서비스 구성 환경 모델링 및 모델링 평가</td><td>정보서비스 구성요소 평가서, 모델 C/S/O 평가결과</td></tr><tr><td>보안대책수립</td><td>보안원칙에 따라 보안통제 선정</td><td>보안통제 선택 목록, 구현계획</td></tr><tr><td>적절성 평가/조정</td><td>등급 분류, 보안통제 적절성 평가 및 재조정</td><td>보안통제 적절성 평가 결과서</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="nsf와-csap-비교">N²SF와 CSAP 비교<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf%EC%99%80-csap-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="N²SF와 CSAP 비교에 대한 직접 링크" title="N²SF와 CSAP 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>N²SF</th><th>CSAP</th></tr></thead><tbody><tr><td>목표</td><td>국가 및 공공기관의 망 보안을 강화하며 데이터 활용성 증대</td><td>공공기관 클라우드 서비스의 안전성과 신뢰성 확보</td></tr><tr><td>주요 특징</td><td>업무 중요도에 따른 등급별 차등 통제 (C/S/O)</td><td>클라우드 서비스 유형(IaaS, SaaS 등)에 따른 보안 인증</td></tr><tr><td>적용 대상</td><td>국가 및 공공기관 전산망</td><td>공공기관에서 사용하는 클라우드 서비스</td></tr><tr><td>관리 주체</td><td>국가정보원</td><td>KISA</td></tr><tr><td>보안 접근법</td><td>위협 식별 및 단계별 보안 대책 수립</td><td>사전 인증 후 공공기관에 서비스 제공 가능</td></tr><tr><td>유효기간</td><td>지속적인 평가와 조정</td><td>인증 후 5년 유효</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="nsf-주요-고려사항">N²SF 주요 고려사항<a href="https://gracefullight.dev/pe/sec/national-network-security-framework/#nsf-%EC%A3%BC%EC%9A%94-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="N²SF 주요 고려사항에 대한 직접 링크" title="N²SF 주요 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>업무 중요도에 따른 C/S/O 등급 분류</li>
-<li>제로트러스트 도입 시간 및 비용 고려</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
