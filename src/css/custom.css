@@ -45,3 +45,7 @@
 .header-github-link:hover::before {
   background-color: var(--ifm-navbar-link-hover-color);
 }
+
+table tr:nth-child(2n) {
+  background-color: transparent;
+}
