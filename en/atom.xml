@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-26T05:08:43.390Z</updated>
+    <updated>2025-01-26T05:51:30.366Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[요구 공학]]></title>
+        <id>https://gracefullight.dev/en/pe/sw/requirements-engineering/</id>
+        <link href="https://gracefullight.dev/en/pe/sw/requirements-engineering/"/>
+        <updated>2025-01-26T05:51:30.366Z</updated>
+        <summary type="html"><![CDATA[Requirements Engineering]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-개념">요구공학 개념<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>시스템의 개발, 변경의 목적(What)을 식별하기 위해 이해관계자들의 요구를 이해 및 조정하여 체계적으로 수집, 분석, 명세화, 확인하는 공정 또는 학문</li>
+<li>비지니스 연속성, 확장성 / 비용절감, 효율성 / 기능 구현 완정성, 오류율 감소 / 조직구성원 이해관계자 만족도, 이해도 증가, 생산성 향상</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차">요구공학 절차<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차-개념도">요구공학 절차 개념도<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차-상세">요구공학 절차 상세<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8-%EC%83%81%EC%84%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>프로세스</th><th>설명</th></tr></thead><tbody><tr><td>요구사항 개발</td><td>요구사항 추출</td><td>요구사항 식별, 분류 및 문서화</td></tr><tr><td></td><td>요구사항 분석</td><td>요구사항 파악 및 도출 단계</td></tr><tr><td></td><td>요구사항 명세</td><td>요구사항 명세서 작성 및 식별(기능/비기능)</td></tr><tr><td></td><td>요구사항 검증</td><td>명세서의 정확성 및 구현 가능성 검토</td></tr><tr><td>요구사항 관리</td><td>요구사항 협상</td><td>구현 가능한 기능 협상</td></tr><tr><td></td><td>요구사항 기준선</td><td>공식 검토된 요구사항 명세서 (Baseline)</td></tr><tr><td></td><td>요구사항 변경관리</td><td>기준선 기반의 변경 통제</td></tr><tr><td></td><td>요구사항 확인 및 검증</td><td>시스템이 요구사항에 부합하는지 확인</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-개념-및-기술-항목">요구사항 명세서 개념 및 기술 항목<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B8%B0%EC%88%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-개념">요구사항 명세서 개념<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>SW를 분석, 설계, 구현, 유지하는 단계에서 검토, 평가, 승인의 기준이 되는 문서</li>
+<li>SW 요구사항 명세를 결정하기 위해 위해 ISO 21948, IEEE 830 표준 참조/반영</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-기술-항목">요구사항 명세서 기술 항목<a href="https://gracefullight.dev/en/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B8%B0%EC%88%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>항목</th><th>설명</th></tr></thead><tbody><tr><td>개요</td><td>범위</td><td>명세서가 다루는 시스템의 요구사항에 대한 범위를 기술</td></tr><tr><td></td><td>목적</td><td>명세서의 작성 목적을 기술</td></tr><tr><td></td><td>시스템 개요</td><td>시스템 전반적인 내용을 요약하여 기술</td></tr><tr><td></td><td>일반 제약사항</td><td>다른 표준이나 하드웨어의 제한으로 인해 적용되는 제한사항에 대하여 기술</td></tr><tr><td>기능적 요구사항</td><td>기능요구사항</td><td>소프트웨어의 입력 처리와 출력을 생성하는 처리 과정에서 발생할 수 있는 기본적인 동작에 대하여 기술</td></tr><tr><td></td><td>외부 인터페이스 요구사항</td><td>모든 소프트웨어 시스템으로의 입력과 출력에 대한 요구사항을 상세히 기술</td></tr><tr><td>기타 요구 및 제약 사항</td><td>성능 요구사항</td><td>소프트웨어 전체적으로 사람과의 상호작용 혹은 소프트웨어에서 확인할 수 있는 정적인 동작인 수치적 요구사항을 기술</td></tr><tr><td></td><td>HW 요구 사항</td><td>기억 장치 규모, 통신 수요 등과 같은 HW 요구 사항 기술</td></tr><tr><td></td><td>논리적 DB 요구사항</td><td>데이터베이스에서 사용될 정보를 위한 논리적 요구사항에 대하여 기술</td></tr><tr><td></td><td>소프트웨어 시스템 속성</td><td>신뢰도, 사용가능성, 보안, 유지보수성, 이식성 등을 기술</td></tr><tr><td>인수 조건</td><td>기능 및 성능 테스트</td><td>최종 개발 산출물에 대해 수용 확인을 위한 테스트 항목</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/software-engineering" term="pe/software-engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[오픈소스 라이센스]]></title>
         <id>https://gracefullight.dev/en/pe/sw/opensource-license/</id>
@@ -271,39 +302,6 @@
 <ul>
 <li>업무 중요도에 따른 C/S/O 등급 분류</li>
 <li>제로트러스트 도입 시간 및 비용 고려</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[제로트러스트 성숙도 모델 2.0]]></title>
-        <id>https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/</id>
-        <link href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/"/>
-        <updated>2025-01-24T08:33:17.564Z</updated>
-        <summary type="html"><![CDATA[Zero Trust Maturity Model]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-모델-개념">제로트러스트 성숙도 모델 개념<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>네트워크 경계 보안에서 벗어나 기업의 보안 체계 성숙도를 평가하고 도입 과정을 체계화하기 위한 모델</li>
-<li>기존 1.0 모델의 보안 요구사항 구체성 부족, 세부 기능과 단계별 가이드 부재, 클라우드 및 분산네트워크 환경 적용방안 제한적</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-모델-개념도-세부-내용-도입절차">제로트러스트 성숙도 모델 개념도, 세부 내용, 도입절차<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%84%B8%EB%B6%80-%EB%82%B4%EC%9A%A9-%EB%8F%84%EC%9E%85%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-모델-개념도">제로트러스트 성숙도 모델 개념도<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-모델-세부내용">제로트러스트 성숙도 모델 세부내용<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%AA%A8%EB%8D%B8-%EC%84%B8%EB%B6%80%EB%82%B4%EC%9A%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>주요 특징</th><th>설명</th></tr></thead><tbody><tr><td>기존 단계</td><td>정적, 경계 기반, 수동</td><td>경계 기반 보안, 제한된 사고 대응 및 시스템 가시성</td></tr><tr><td>초기 단계</td><td>일부 프로세스 자동화</td><td>속성 기반 모니터링과 프로비저닝 최소 권한 관리 가능</td></tr><tr><td>향상 단계</td><td>자동화 범위 확장 및 중앙 집중 통합</td><td>중앙 집중 정책 관리, 상호작용 기반 정책 적용</td></tr><tr><td>최적화 단계</td><td>동적 정책 실행 및 완전 자동화</td><td>동적 정책 기반 트리거 생성 및 표준화된 정책 준수</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-모델-도입절차">제로트러스트 성숙도 모델 도입절차<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%AA%A8%EB%8D%B8-%EB%8F%84%EC%9E%85%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>식별자/신원, 기기/엔드포인트, 네트워크, 시스템, 애플리케이션, 데이터, 가시성/분석, 자동화/통합 관점의 체크리스트를 관리하여 기업의 철통인증지침 도입, 운영 계획 수립</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="제로트러스트-성숙도-달성을-위한-고려사항">제로트러스트 성숙도 달성을 위한 고려사항<a href="https://gracefullight.dev/en/pe/sec/zero-trust-maturity-model/#%EC%A0%9C%EB%A1%9C%ED%8A%B8%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EC%84%B1%EC%88%99%EB%8F%84-%EB%8B%AC%EC%84%B1%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>최적화 수준은 단기적으로 달성할 수 있지 않으므로 조직의 현재 성숙도 수준에 맞춘 점진적 도입 필요</li>
-<li>지속적인 위협 평가와 시스템 성능 개선 방안 수립 필요</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
