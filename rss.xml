@@ -4,10 +4,28 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 26 Jan 2025 06:08:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Jan 2025 06:56:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[좋은 소프트웨어 특징]]></title>
+            <link>https://gracefullight.dev/pe/sw/software-characteristics/</link>
+            <guid>https://gracefullight.dev/pe/sw/software-characteristics/</guid>
+            <pubDate>Sun, 26 Jan 2025 06:56:41 GMT</pubDate>
+            <description><![CDATA[Software Characteristics]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어의-개념">좋은 소프트웨어의 개념<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="좋은 소프트웨어의 개념에 대한 직접 링크" title="좋은 소프트웨어의 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>SW 발주자, 개발자, 사용자 모두에게 이점을 제공하는 소프트웨어로서 기능성, 신뢰성, 사용성, 효율성, 유지보수성, 이식성, 호환성, 보안성 등 소프트웨어 품질특성을 만족하는 소프트웨어</li>
+<li>ISO 25010 국제 표준 기반 특성 정의 및 품질 확보</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어-개념도">좋은 소프트웨어 개념도<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="좋은 소프트웨어 개념도에 대한 직접 링크" title="좋은 소프트웨어 개념도에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어-조건">좋은 소프트웨어 조건<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="좋은 소프트웨어 조건에 대한 직접 링크" title="좋은 소프트웨어 조건에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>특징</th><th>설명</th></tr></thead><tbody><tr><td>기본 요구</td><td>정확성 (Correctness)</td><td>기능이 요구사항과 일치하며 표준에 적합</td></tr><tr><td></td><td>신뢰성 (Reliability)</td><td>오류 없이 일정 기간 안정적으로 작동</td></tr><tr><td>안정성과 성능</td><td>강인성 (Robustness)</td><td>예상하지 못한 상황에서도 정상 작동</td></tr><tr><td></td><td>성능 (Performance)</td><td>처리 속도와 자원 활용 효율성</td></tr><tr><td>사용자 경험</td><td>사용 용이성 (Usability)</td><td>사용자 친화적이고 쉽게 사용할 수 있음</td></tr><tr><td>유지 및 확장성</td><td>유지보수성 (Maintainability)</td><td>결함 수정 및 기능 확장이 용이</td></tr><tr><td></td><td>재사용성 (Reusability)</td><td>기존 소프트웨어를 재사용 가능</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/software-engineering</category>
+        </item>
         <item>
             <title><![CDATA[신뢰성 테스트, 이식성 테스트]]></title>
             <link>https://gracefullight.dev/pe/sw/reliability-portability-test/</link>
@@ -233,42 +251,6 @@
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[AI 프라이버시 리스크 관리 모델]]></title>
-            <link>https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/</link>
-            <guid>https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/</guid>
-            <pubDate>Fri, 24 Jan 2025 16:11:27 GMT</pubDate>
-            <description><![CDATA[AI Privacy Risk Management Model]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-개념">AI PRM 개념<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="AI PRM 개념에 대한 직접 링크" title="AI PRM 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>AI 모델/시스템을 개발/제공할 때 프라이버시 리스크를 체계적으로 관리하기 위한 정부 차원의 모델</li>
-<li>대규모 데이터 처리와 개인 정보 사용으로 인한 프라이버시 리스크, 적법한 데이터 활용, 권리 침해 방지, 투명성/안전성 확보</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-리스크-관리절차-유형-경감방안">AI PRM 리스크 관리절차, 유형, 경감방안<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EA%B4%80%EB%A6%AC%EC%A0%88%EC%B0%A8-%EC%9C%A0%ED%98%95-%EA%B2%BD%EA%B0%90%EB%B0%A9%EC%95%88" class="hash-link" aria-label="AI PRM 리스크 관리절차, 유형, 경감방안에 대한 직접 링크" title="AI PRM 리스크 관리절차, 유형, 경감방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-리스크-관리절차">AI PRM 리스크 관리절차<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EA%B4%80%EB%A6%AC%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="AI PRM 리스크 관리절차에 대한 직접 링크" title="AI PRM 리스크 관리절차에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>AI 유형/용례 파악: AI 모델/시스템의 목적, 데이터 맥락 파악</li>
-<li>리스크 식별: AI 모델/시스템의 유형/용례에 따라 발생 리스크 식별</li>
-<li>리스크 측정: 발생확률, 중대성, 수용가능성, 우선순위 파악</li>
-<li>리스크 경감 방안 검토/도입: 관리적/기술적 방안 검토 및 실행</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-리스크-유형">AI PRM 리스크 유형<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="AI PRM 리스크 유형에 대한 직접 링크" title="AI PRM 리스크 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>일반 리스크</th><th>프라이버시 리스크</th></tr></thead><tbody><tr><td>기획/개발 단계</td><td>저작권, 개인정보, DB권 등 권리침해</td><td>적법하지 않은 학습데이터 수집 이용</td></tr><tr><td></td><td></td><td>AI 학습데이터의 부적절한 보관/관리</td></tr><tr><td>서비스 제공 단계</td><td>AI 합성콘텐츠 오용, 권치 침해</td><td>학습 데이터 암기 및 개인정보 노출</td></tr><tr><td></td><td>편향, 차별, 양극화</td><td>자동화된 결정으로 인한 정보주체 권리 약화, 민감정보 추론</td></tr><tr><td>운영/유지보수 단계</td><td>업데이트 및 추가 학습으로 인한 리스크 누적</td><td>개인정보 보안 취약점, 데이터 이동 시 불법적 이용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-리스크-경감방안">AI PRM 리스크 경감방안<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EB%A6%AC%EC%8A%A4%ED%81%AC-%EA%B2%BD%EA%B0%90%EB%B0%A9%EC%95%88" class="hash-link" aria-label="AI PRM 리스크 경감방안에 대한 직접 링크" title="AI PRM 리스크 경감방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>예시</th></tr></thead><tbody><tr><td>관리적</td><td>AI 시스템 기획 단계에서 개인정보의 목적·범위·처리 기준 명확화</td><td>개인정보 처리 방침 공개</td></tr><tr><td></td><td>데이터 수집 출처·이력 관리</td><td>데이터 수집·이용 기준 수립</td></tr><tr><td></td><td>조직 내 프라이버시 리스크 관리 정책·절차 수립</td><td>리스크 관리 절차 문서화</td></tr><tr><td></td><td>지속적 평가·개선</td><td>정기적 내부 감사</td></tr><tr><td>기술적</td><td>데이터 최소화 및 비식별화 처리</td><td>차분 프라이버시</td></tr><tr><td></td><td>프라이버시 향상 기술(PET) 적용</td><td>가명처리, 익명화</td></tr><tr><td></td><td>암기 방지 필터링 기술 적용</td><td>Presidio, KoELECTRA 필터링</td></tr><tr><td></td><td>생성형 AI의 악의적 콘텐츠 방지</td><td>합성미디어 도용 방지 기술</td></tr><tr><td>조직적</td><td>CPO 역할 강화 및 책임 명확화</td><td>CPO 책임 범위 확대</td></tr><tr><td></td><td>AI 가치망 내 참여자 간 협력 체계 구축</td><td>계약 기반 협력 체계 수립</td></tr><tr><td></td><td>외부 피드백 및 리스크 모니터링 시스템 도입</td><td>프라이버시 영향 평가 수행</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-prm-추가적인-고려사항">AI PRM 추가적인 고려사항<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#ai-prm-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="AI PRM 추가적인 고려사항에 대한 직접 링크" title="AI PRM 추가적인 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>PbD를 적용하여 AI의 설계 단계부터 프라이버시와 보안 고려</li>
-<li>GDPR, CCPA 등 개인정보 보호 규정을 철저히 준수</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/ai-privacy-risk-management-model/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&amp;mCode=C020010000&amp;nttId=10870" target="_blank" rel="noopener noreferrer">개인정보보호위원회: AI 프라이버시 리스크 관리 모델</a></li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
