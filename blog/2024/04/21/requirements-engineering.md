@@ -1,7 +1,7 @@
 ---
-title: 요구 공학
+title: 요구 공학 정리
 date: 2024-04-21T11:35:08.988+09:00
-description: Requirements engineering
+description: Requirements Engineering
 authors: me
 tags:
   - me
@@ -9,7 +9,7 @@ tags:
 
 ## 스텝
 
-> https://ieeexplore.ieee.org/document/1605174
+> [IEEE: 10 small steps to better requirements](https://ieeexplore.ieee.org/document/1605174)
 
 1. Mission & Scope: 미션과 스코프 식별
 2. Stakeholders: 이해관계자 실별
@@ -29,7 +29,7 @@ tags:
 - Modeling only functional requirements: 비기능 요구사항, 예외 시나리오 파악 필요
 - Not inspecting requirements
 - Attempting to perfect requirements before beginning construction: 완벽한 요구사항 도출, 분석은 현실적으로 불가능.
-- Representing requirements in the form of designs: 설계how가 아닌 요구사항을 실현할what에 대해 집중.
+- Representing requirements in the form of designs: 설계how가 아닌 요구사항을 실현할 what에 대해 집중.
 
 ## 어려움
 
