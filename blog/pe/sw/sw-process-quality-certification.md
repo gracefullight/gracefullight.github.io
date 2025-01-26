@@ -5,7 +5,7 @@ description: Software Process Quality Certification
 authors: me
 tags:
   - pe
-  - pe/sw 
+  - pe/sw
 ---
 
 ## SP인증 개념
