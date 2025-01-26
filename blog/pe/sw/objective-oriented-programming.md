@@ -52,11 +52,11 @@ graph LR
 ```mermaid
 graph LR
   subgraph 캡슐화[캡슐화/클래스]
- subgraph 정보은닉
- 속성
- end
+    subgraph 정보은닉
+      속성
+    end
 
- 메서드
+     메서드
   end
 
   외부객체
