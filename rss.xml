@@ -4,10 +4,35 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 26 Jan 2025 11:23:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 00:17:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[다크패턴]]></title>
+            <link>https://gracefullight.dev/pe/sec/dark-pattern/</link>
+            <guid>https://gracefullight.dev/pe/sec/dark-pattern/</guid>
+            <pubDate>Mon, 27 Jan 2025 00:17:03 GMT</pubDate>
+            <description><![CDATA[Dark Pattern]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념">다크패턴 개념<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="다크패턴 개념에 대한 직접 링크" title="다크패턴 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>기업의 이익을 목적으로 이용자를 속이기 위해 교묘하게 설계뙨 사용자 인터페이스 패턴</li>
+<li>온라인 시장 점유율 상승, 비대면 거래 확산, 기업 이익도모, 공정거래위원회 다크패턴 유형 정의</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념도-유형-대응방안">다크패턴 개념도, 유형, 대응방안<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9C%A0%ED%98%95-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다크패턴 개념도, 유형, 대응방안에 대한 직접 링크" title="다크패턴 개념도, 유형, 대응방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념도">다크패턴 개념도<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="다크패턴 개념도에 대한 직접 링크" title="다크패턴 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-유형">다크패턴 유형<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="다크패턴 유형에 대한 직접 링크" title="다크패턴 유형에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>유형</th><th>설명</th></tr></thead><tbody><tr><td>편취형</td><td>숨은 결제</td><td>무료에서 유료로 전환 시 별도 고지 없이 결제를 유도하는 행위</td></tr><tr><td></td><td>순차공개 가격책정</td><td>초기 낮은 가격 표시 후 결제 시 추가 금액을 부과하는 행위</td></tr><tr><td></td><td>몰래 장바구니 추가</td><td>소비자가 선택하지 않은 상품을 자동으로 추가하는 행위</td></tr><tr><td></td><td>거짓 할인</td><td>할인 정보 조작으로 소비자를 유도하는 행위</td></tr><tr><td></td><td>거짓 추천</td><td>허위 리뷰 조작으로 상품 구매를 유도하는 행위</td></tr><tr><td></td><td>유인 판매</td><td>판매 불가능 상품을 광고하여 다른 상품 구매를 유도하는 행위</td></tr><tr><td></td><td>위장 광고</td><td>광고임을 숨기고 콘텐츠처럼 보이게 제작된 광고 제공</td></tr><tr><td>오도형</td><td>숙의식 질문</td><td>긴 설명이나 과도한 정보를 제시하여 혼란을 유도하는 행위</td></tr><tr><td></td><td>잘못된 계층 구조</td><td>불리한 옵션을 소비자가 선택하도록 구성하는 행위</td></tr><tr><td></td><td>특정 옵션의 사전 선택</td><td>유리한 옵션을 미리 선택된 상태로 제공하는 행위</td></tr><tr><td>방해형</td><td>취소·탈퇴 방해</td><td>취소·탈퇴 과정을 복잡하게 하거나 제한하는 행위</td></tr><tr><td></td><td>숨겨진 정보</td><td>결정을 위한 중요 정보를 숨기는 행위</td></tr><tr><td></td><td>가격 비교 방해</td><td>상품 간 가격 비교를 어렵게 만드는 행위</td></tr><tr><td>압박형</td><td>클릭 필요 옵션 유발</td><td>불필요한 클릭을 유도하여 불리한 선택을 하게 만드는 행위</td></tr><tr><td></td><td>반복 간섭</td><td>특정 행동을 반복적으로 강요하는 행위</td></tr><tr><td></td><td>감정적 언어사용</td><td>감정을 자극하는 언어 표현을 통해 소비자 행동 압박</td></tr><tr><td></td><td>시간제한 알림</td><td>특정시간/기간에만 할인된 가격으로 표시하여 소비자 의사결정 압박</td></tr><tr><td></td><td>낮은 재고 알림</td><td>재고가 없거나 수요가 높다고 표시하여 소비자 으사결정 압박</td></tr><tr><td></td><td>다른 소비자 활동 알림</td><td>최근 해당 제품을 보거나 구매한 소비자 수 표시하여 소비자 의사결정 압박</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-대응방안">다크패턴 대응방안<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다크패턴 대응방안에 대한 직접 링크" title="다크패턴 대응방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>대응방안</th><th>설명</th></tr></thead><tbody><tr><td>제도적 측면</td><td>법 집행 강화</td><td>표시광고법 및 전자상거래법 적용, Data Act, DSA, DMA 등의 규제 준수</td></tr><tr><td></td><td>제도개선</td><td>가이드라인 제정 및 법 개정 추진</td></tr><tr><td></td><td>적합성평가</td><td>지속 모니터링하여 디지털 공정성 적합성 평가 수행</td></tr><tr><td></td><td>쿠키배너 동의관리</td><td>개인광고에 사용되는 쿠키배너의 동의관리 가이드라인 제정</td></tr><tr><td>소비자 측면</td><td>캠페인 및 교육</td><td>불공정 상거래 행위를 인지할 수 있도록 역량 강화 캠페인과 교육 실시</td></tr><tr><td></td><td>소비자 철회권</td><td>일정 기간 내 이유 없이 계약을 취소할 수 있는 권리 강화</td></tr><tr><td>R&amp;D 측면</td><td>다크패턴 조사/분석</td><td>문제되는 상술을 가장 많이 쓰는 사업자 조사 및 분석</td></tr><tr><td></td><td>사용자 중심 디자인 철학 강화</td><td>혼란스럽거나 과도한 유도 없이 직관적으로 사용할 수 있는 디자인 적용</td></tr><tr><td></td><td>글로벌 UX 설계 가이드라인 개발</td><td>국제적 수준으로 UX 표준화 및 다크패턴 방지 가이드라인 개발</td></tr><tr><td>기술적 측면</td><td>인증기능 알고리즘</td><td>다크패턴을 자동 감지하는 알고리즘 및 UI/UX 분석 도입</td></tr><tr><td></td><td>사용자 행동 추적</td><td>사용자 행동 분석하여 피해 방지 및 효과 검증</td></tr><tr><td></td><td>사용자 피드백</td><td>신고와 문제를 파악할 수 있는 피드백 기능 강화</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-방지를-위한-고려사항">다크패턴 방지를 위한 고려사항<a href="https://gracefullight.dev/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="다크패턴 방지를 위한 고려사항에 대한 직접 링크" title="다크패턴 방지를 위한 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>공정거래위원회 발간 온라인 다크패턴 자율관리 가이드라인 준수</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[공공부문 SaaS 이용 가이드라인]]></title>
             <link>https://gracefullight.dev/pe/sec/공공부문-SaaS-이용-가이드라인/</link>
@@ -228,28 +253,6 @@
 <li>배포 전, 중, 후 모든 단계에서의 지속적 테스트(CT)</li>
 <li>IaC를 통한 자동화된 인프라 관리</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/software-engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[정보은닉]]></title>
-            <link>https://gracefullight.dev/pe/sw/information-hiding/</link>
-            <guid>https://gracefullight.dev/pe/sw/information-hiding/</guid>
-            <pubDate>Sun, 26 Jan 2025 02:35:58 GMT</pubDate>
-            <description><![CDATA[information hiding]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="정보은닉-개념">정보은닉 개념<a href="https://gracefullight.dev/pe/sw/information-hiding/#%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="정보은닉 개념에 대한 직접 링크" title="정보은닉 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>코드 내부 데이터와 메서드를 숨기고 공개 인터페이스를 통해서만 접근이 가능하도록 하는 객체지향 프로그래밍의 특성</li>
-<li>외/내부 구현을 나눠 복잡성 제거, 외부로부터의 데이터 보호</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="정보은닉-개념도-접근제어자-유형-예시">정보은닉 개념도, 접근제어자 유형, 예시<a href="https://gracefullight.dev/pe/sw/information-hiding/#%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9E%90-%EC%9C%A0%ED%98%95-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="정보은닉 개념도, 접근제어자 유형, 예시에 대한 직접 링크" title="정보은닉 개념도, 접근제어자 유형, 예시에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="정보은닉-개념도">정보은닉 개념도<a href="https://gracefullight.dev/pe/sw/information-hiding/#%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="정보은닉 개념도에 대한 직접 링크" title="정보은닉 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>접근제어자를 사용하여 외부객체로부터 데이터 접근 수준 제어</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="접근제어자-유형">접근제어자 유형<a href="https://gracefullight.dev/pe/sw/information-hiding/#%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4%EC%9E%90-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="접근제어자 유형에 대한 직접 링크" title="접근제어자 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>상세설명</th></tr></thead><tbody><tr><td>클래스</td><td>default</td><td>동일 패키지 내 클래스에게 접근 허용</td></tr><tr><td></td><td>public</td><td>모든 클래스에서 접근 허용</td></tr><tr><td>속성/메소드</td><td>private</td><td>비공개, 클래스 내 멤버만 접근 허용</td></tr><tr><td></td><td>default</td><td>동일 패키지 내 클래스일 경우 접근 허용</td></tr><tr><td></td><td>protected</td><td>동일 패키지 또는 상속받은 자식 클래스의 경우 접근 허용</td></tr><tr><td></td><td>public</td><td>공개, 모든 클래스에서 접근 허용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/software-engineering</category>
         </item>
