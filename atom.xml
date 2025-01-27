@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-27T04:07:02.990Z</updated>
+    <updated>2025-01-27T04:21:03.710Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[데이터 안심구역]]></title>
+        <id>https://gracefullight.dev/pe/sec/data-safe-zone/</id>
+        <link href="https://gracefullight.dev/pe/sec/data-safe-zone/"/>
+        <updated>2025-01-27T04:21:03.710Z</updated>
+        <summary type="html"><![CDATA[Data Safe Zone]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념">데이터 안심구역 개념<a href="https://gracefullight.dev/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이터 안심구역 개념에 대한 직접 링크" title="데이터 안심구역 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>누구든지 데이터를 안전하게 분석ㆍ활용할 수 있도록 유용한 데이터와, 다양한 분석도구 및 수준 높은 분석 시스템을 제공하는 안전한 데이터 분석 공간</li>
+<li>보안강화 / 무결성,신뢰성 확보 / 규제 준수, 감사 및 컴플라이언스 / 개인정보 보호, 디지털 격차 해소</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념도-주요-기능-지정요건">데이터 안심구역 개념도, 주요 기능, 지정요건<a href="https://gracefullight.dev/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%A7%80%EC%A0%95%EC%9A%94%EA%B1%B4" class="hash-link" aria-label="데이터 안심구역 개념도, 주요 기능, 지정요건에 대한 직접 링크" title="데이터 안심구역 개념도, 주요 기능, 지정요건에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념도">데이터 안심구역 개념도<a href="https://gracefullight.dev/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="데이터 안심구역 개념도에 대한 직접 링크" title="데이터 안심구역 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>사용을 원하는 누구에게나 분석에 필요한 데이터, 환경, 서비스 및 지원 제공</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-주요-기능">데이터 안심구역 주요 기능<a href="https://gracefullight.dev/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="데이터 안심구역 주요 기능에 대한 직접 링크" title="데이터 안심구역 주요 기능에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>데이터 분석</td><td>미개방 데이터의 안전한 분석환경 제공</td><td>데이터의 무결성, 신뢰성을 보장할 수 있는 기술적, 관리적, 물리적 보안 조치 시행</td></tr><tr><td></td><td>데이터 분석 시스템 및 도구의 지원</td><td>미개방 데이터 분석을 위한 분석도구 및 분석자원 서비스 제공</td></tr><tr><td>데이터 활용</td><td>이용자의 반입자료와 미개방 데이터의 연계 지원</td><td>미개방 데이터와 이용자의 반입자료에 대한 데이터 연계 플랫폼 제공</td></tr><tr><td></td><td>분석결과의 반출 지원</td><td>이용자의 데이터 분석결과에 대한 자료 반출 및 데이터 시각화 지원</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-지정요건">데이터 안심구역 지정요건<a href="https://gracefullight.dev/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EC%A7%80%EC%A0%95%EC%9A%94%EA%B1%B4" class="hash-link" aria-label="데이터 안심구역 지정요건에 대한 직접 링크" title="데이터 안심구역 지정요건에 대한 직접 링크">​</a></h3>
+<!-- -->
+<table><thead><tr><th>구분</th><th>지정요건</th><th>설명</th></tr></thead><tbody><tr><td>기술적</td><td>시설 및 공간</td><td>보안대책 구비될 수 있는 건물 또는 그 밖의 시설 필요</td></tr><tr><td>기술적</td><td>장비 및 시스템 구축</td><td>데이터 분석 활용을 위해 필요한 장비 및 시스템 등을 구축 및 운영</td></tr><tr><td>운영적</td><td>보안 대책 수립 및 시행</td><td>데이터안심구역에 관한 보안대책 수립</td></tr><tr><td></td><td>조직 구성 및 운영</td><td>운영책임자, 보안책임자 선임, 4인 이상의 조직</td></tr><tr><td></td><td>정책 및 절차</td><td>운영체계, 데이터 반출의 정책 필요</td></tr><tr><td></td><td>요건 증명</td><td>최근 3년 이내에 데이터산업법 시행령에 공표된 적 없을시</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PbD, Privacy by Design]]></title>
         <id>https://gracefullight.dev/pe/sec/privacy-by-design/</id>
@@ -271,28 +300,6 @@
 <ul>
 <li><a href="https://law.go.kr/%eb%b2%95%eb%a0%b9/%ec%86%8c%ed%94%84%ed%8a%b8%ec%9b%a8%ec%96%b4%ec%a7%84%ed%9d%a5%eb%b2%95" target="_blank" rel="noopener noreferrer">국가법령정보센터: 소프트웨어 진흥법</a></li>
 </ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/software-engineering" term="pe/software-engineering"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[좋은 소프트웨어 특징]]></title>
-        <id>https://gracefullight.dev/pe/sw/software-characteristics/</id>
-        <link href="https://gracefullight.dev/pe/sw/software-characteristics/"/>
-        <updated>2025-01-26T06:56:41.559Z</updated>
-        <summary type="html"><![CDATA[Software Characteristics]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어의-개념">좋은 소프트웨어의 개념<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="좋은 소프트웨어의 개념에 대한 직접 링크" title="좋은 소프트웨어의 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>SW 발주자, 개발자, 사용자 모두에게 이점을 제공하는 소프트웨어로서 기능성, 신뢰성, 사용성, 효율성, 유지보수성, 이식성, 호환성, 보안성 등 소프트웨어 품질특성을 만족하는 소프트웨어</li>
-<li>ISO 25010 국제 표준 기반 특성 정의 및 품질 확보</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어-개념도">좋은 소프트웨어 개념도<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="좋은 소프트웨어 개념도에 대한 직접 링크" title="좋은 소프트웨어 개념도에 대한 직접 링크">​</a></h2>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="좋은-소프트웨어-조건">좋은 소프트웨어 조건<a href="https://gracefullight.dev/pe/sw/software-characteristics/#%EC%A2%8B%EC%9D%80-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A1%B0%EA%B1%B4" class="hash-link" aria-label="좋은 소프트웨어 조건에 대한 직접 링크" title="좋은 소프트웨어 조건에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>특징</th><th>설명</th></tr></thead><tbody><tr><td>기본 요구</td><td>정확성 (Correctness)</td><td>기능이 요구사항과 일치하며 표준에 적합</td></tr><tr><td></td><td>신뢰성 (Reliability)</td><td>오류 없이 일정 기간 안정적으로 작동</td></tr><tr><td>안정성과 성능</td><td>강인성 (Robustness)</td><td>예상하지 못한 상황에서도 정상 작동</td></tr><tr><td></td><td>성능 (Performance)</td><td>처리 속도와 자원 활용 효율성</td></tr><tr><td>사용자 경험</td><td>사용 용이성 (Usability)</td><td>사용자 친화적이고 쉽게 사용할 수 있음</td></tr><tr><td>유지 및 확장성</td><td>유지보수성 (Maintainability)</td><td>결함 수정 및 기능 확장이 용이</td></tr><tr><td></td><td>재사용성 (Reusability)</td><td>기존 소프트웨어를 재사용 가능</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
