@@ -5,7 +5,7 @@ description: AI Ethics
 authors: me
 tags:
   - pe
-  - pe/sec 
+  - pe/sec
 ---
 
 ## 인공지능 윤리의 개념
