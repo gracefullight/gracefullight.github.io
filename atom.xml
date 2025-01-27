@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-27T04:21:03.710Z</updated>
+    <updated>2025-01-27T04:32:18.838Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[안티포렌식]]></title>
+        <id>https://gracefullight.dev/pe/sec/anti-forensic/</id>
+        <link href="https://gracefullight.dev/pe/sec/anti-forensic/"/>
+        <updated>2025-01-27T04:32:18.838Z</updated>
+        <summary type="html"><![CDATA[Anti-Forensic]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티포렌식-개념">안티포렌식 개념<a href="https://gracefullight.dev/pe/sec/anti-forensic/#%EC%95%88%ED%8B%B0%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="안티포렌식 개념에 대한 직접 링크" title="안티포렌식 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>안티포렌식은 디지털 포렌식 수사를 방해하거나 회피하기 위한 기술과 방법</li>
+<li>포렌식 증거체택이 늘어남에 따라 안티포렌식을 통한 가짜 증거, 증거 인멸 시도역시 증가 추세</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티포렌식-기법">안티포렌식 기법<a href="https://gracefullight.dev/pe/sec/anti-forensic/#%EC%95%88%ED%8B%B0%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="안티포렌식 기법에 대한 직접 링크" title="안티포렌식 기법에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>주요기술</th><th>설명</th></tr></thead><tbody><tr><td>데이터 삭제</td><td>와이핑 (Wiping)</td><td>파일을 복구할 수 없도록 엔트리 정보를 제거한 후, 해당 영역을 반복적으로 덮어쓰는 기술</td></tr><tr><td></td><td>디가우징 (Degaussing)</td><td>하드디스크의 자성을 제거해 데이터를 파괴하고 복구를 방지하는 기술</td></tr><tr><td></td><td>Log Data 삭제</td><td>OS에서 자동으로 생성되는 정보 중, 증거가 될 만한 모든 정보를 즉시 자동으로 삭제</td></tr><tr><td></td><td>디스크 덮어쓰기</td><td>삭제 후 디스크에 남아 있는 데이터를 덮어쓰고 복구를 방지하는 기술</td></tr><tr><td>데이터 암호화</td><td>압축파일 암호화</td><td>Zip, Rar 등의 압축파일에 암호화 기법을 적용하여 데이터 수집 방해</td></tr><tr><td></td><td>문서파일 암호화</td><td>MS 오피스, 한글 파일, PDF 등 문서파일을 암호화해 정보 은폐</td></tr><tr><td></td><td>물리적 암호화</td><td>가상 디스크, USB, OS 영역을 암호화해 데이터 은폐</td></tr><tr><td>데이터 은닉</td><td>스테가노그래피</td><td>이미지, 오디오 파일 등 디지털 미디어에 메시지를 삽입하여 숨기는 기술</td></tr><tr><td></td><td>디스크 내 데이터 은닉</td><td>파일 시스템의 여유 공간, 예약된 영역, 비할당 영역 등에 데이터를 숨기는 기술</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티포렌식-고려사항">안티포렌식 고려사항<a href="https://gracefullight.dev/pe/sec/anti-forensic/#%EC%95%88%ED%8B%B0%ED%8F%AC%EB%A0%8C%EC%8B%9D-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="안티포렌식 고려사항에 대한 직접 링크" title="안티포렌식 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>자기변론을 위한 안티포렌식은 자기부죄거부원칙으로 가능하나 수행 내역이 발견시 증거인멸죄로 처벌하므로 본인책임하에 안티포렌식 수행필요</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[데이터 안심구역]]></title>
         <id>https://gracefullight.dev/pe/sec/data-safe-zone/</id>
@@ -277,34 +301,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[소프트웨어 진흥법]]></title>
-        <id>https://gracefullight.dev/pe/sw/소프트웨어-진흥법/</id>
-        <link href="https://gracefullight.dev/pe/sw/소프트웨어-진흥법/"/>
-        <updated>2025-01-26T07:04:21.459Z</updated>
-        <summary type="html"><![CDATA[소프트웨어 진흥법]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-진흥법-개념">소프트웨어 진흥법 개념<a href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5%EB%B2%95/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5%EB%B2%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="소프트웨어 진흥법 개념에 대한 직접 링크" title="소프트웨어 진흥법 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>국가 전반의 소프트웨어 역량을 강화하고 소프트웨어산업 발전의 기반을 조성함으로써 국가경쟁력의 확보, 국민생활의 향상 및 국민경제의 건전하고 지속적인 발전에 기여</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-안전-확보-지침">소프트웨어 안전 확보 지침<a href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5%EB%B2%95/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%95%88%EC%A0%84-%ED%99%95%EB%B3%B4-%EC%A7%80%EC%B9%A8" class="hash-link" aria-label="소프트웨어 안전 확보 지침에 대한 직접 링크" title="소프트웨어 안전 확보 지침에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>지침</th><th>세부 내용</th></tr></thead><tbody><tr><td>위험 분석</td><td>소프트웨어 안전 위험 분석</td><td>- 소프트웨어의 잠재적 위험요소 식별<br>- 시스템 동작 시 발생 가능한 오류와 영향을 분석<br>- 위험 완화를 위한 우선순위 설정</td></tr><tr><td>설계 및 구현</td><td>안전 설계 및 구현</td><td>- 안전 관련 기능 설계 (예: 결함 허용, 오류 복구)<br>- 코드의 안전성 확보를 위한 코딩 표준 준수<br>- 위험 상황 식별 및 대응 로직 포함</td></tr><tr><td>검증</td><td>안전 검증 및 테스트</td><td>- 안전 요구사항 충족 여부 검증<br>- 단위 테스트, 통합 테스트, 시스템 테스트를 통해 오류 검출<br>- 안전 관련 기능 시험 및 검토</td></tr><tr><td>운영 관리</td><td>운영 환경에서의 안전 확보</td><td>- 운영환경 변경 시 안전 영향 분석<br>- 장애 발생 대비 안전 대책 수립<br>- 유지보수 중 발생 가능한 위험 관리</td></tr><tr><td>준수 및 개선</td><td>안전 준수와 지속적 개선</td><td>- 국제표준과 안전 지침 준수<br>- 안전사고 예방을 위한 프로세스 개선<br>- 피드백을 반영하여 안전성 강화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="소프트웨어-진흥-전략">소프트웨어 진흥 전략<a href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5%EB%B2%95/#%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="소프트웨어 진흥 전략에 대한 직접 링크" title="소프트웨어 진흥 전략에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>디지털 시대를 선도, 글로벌 SW 경쟁력 강화, SW 활용 문화 확대를 위해 7가지 분야에서 혁신 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sw/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%A7%84%ED%9D%A5%EB%B2%95/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://law.go.kr/%eb%b2%95%eb%a0%b9/%ec%86%8c%ed%94%84%ed%8a%b8%ec%9b%a8%ec%96%b4%ec%a7%84%ed%9d%a5%eb%b2%95" target="_blank" rel="noopener noreferrer">국가법령정보센터: 소프트웨어 진흥법</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/software-engineering" term="pe/software-engineering"/>
     </entry>
 </feed>
