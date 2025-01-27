@@ -4,10 +4,34 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 01:54:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 02:33:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[AI 신뢰성]]></title>
+            <link>https://gracefullight.dev/pe/sec/ai-trust-guide/</link>
+            <guid>https://gracefullight.dev/pe/sec/ai-trust-guide/</guid>
+            <pubDate>Mon, 27 Jan 2025 02:33:20 GMT</pubDate>
+            <description><![CDATA[AI Trust Guide]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념">AI 신뢰성 개념<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="AI 신뢰성 개념에 대한 직접 링크" title="AI 신뢰성 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>AI 기술에 내재한 위험과 한계를 극복하고, AI 시스템이 의사결정 및 활동에 영향을 받는 모든 이해관계자의 기대를 충족시키는 능력</li>
+<li>안전성 보장, 사회적 신뢰 구축, 법적 규제 준수, 기업 경쟁력 강화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념도-상세설명-정책동향">AI 신뢰성 개념도, 상세설명, 정책동향<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85-%EC%A0%95%EC%B1%85%EB%8F%99%ED%96%A5" class="hash-link" aria-label="AI 신뢰성 개념도, 상세설명, 정책동향에 대한 직접 링크" title="AI 신뢰성 개념도, 상세설명, 정책동향에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념도">AI 신뢰성 개념도<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="AI 신뢰성 개념도에 대한 직접 링크" title="AI 신뢰성 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-상세설명">AI 신뢰성 상세설명<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="AI 신뢰성 상세설명에 대한 직접 링크" title="AI 신뢰성 상세설명에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>속성</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>정확성</td><td>AI 시스템의 의사결정이 정확하고 신뢰할 수 있는지 보장</td><td>의료 진단, 자율주행 AI</td></tr><tr><td>강건성</td><td>환경 변화나 오류에 대한 저항성을 보장</td><td>자율주행 시스템의 장애물 감지</td></tr><tr><td>설명가능성</td><td>AI 의사결정의 근거와 과정을 명확히 설명 가능</td><td>AI 기반 금융 대출 시스템에서 설명된 점수 기준</td></tr><tr><td>투명성</td><td>AI의 개발 및 사용 과정을 명확히 공개</td><td>AI 채용 시스템의 평가 기준 공개</td></tr><tr><td>공정성</td><td>특정 집단에 대한 차별이나 편향이 없음을 보장</td><td>금융 대출 AI의 편향 제거</td></tr><tr><td>책임성</td><td>AI 의사결정과 결과에 대한 책임을 명확히 함</td><td>AI 의사결정 추적 및 기록</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-정책동향">AI 신뢰성 정책동향<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%95%EC%B1%85%EB%8F%99%ED%96%A5" class="hash-link" aria-label="AI 신뢰성 정책동향에 대한 직접 링크" title="AI 신뢰성 정책동향에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>정책/표준</th><th>주요 내용</th></tr></thead><tbody><tr><td>국내</td><td>TTA AI 신뢰성 인증</td><td>AI 생명주기 전반에 걸친 투명성, 공정성, 안정성 등을 인증</td></tr><tr><td></td><td>신뢰할 수 있는 AI 개발안내서</td><td>AI 개발 및 배포 과정에서 윤리적 가이드라인 제공</td></tr><tr><td>국외</td><td>EU AI법</td><td>고위험 AI를 분류하고 적합성 평가를 통해 규제 적용</td></tr><tr><td></td><td>NIST AI 위험관리 프레임워크</td><td>AI의 안전성과 설명 가능성을 포함한 위험 관리 프레임워크 제공</td></tr><tr><td></td><td>ISO/IEC 22989</td><td>AI 신뢰성을 정의하고, 주요 속성을 제시</td></tr></tbody></table>
+<ul>
+<li>AITrustOps, AI TRiSM, NIA 인공지능 학습용 데이터 품질 가이드라인 등을 참고하여 다양한 관점에서 AI 신뢰성 확보 필요</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[동형암호]]></title>
             <link>https://gracefullight.dev/pe/sec/homomorphic-encryption/</link>
@@ -237,33 +261,6 @@
 <li>소프트웨어가 다양한 환경에서 동일하게 작동하는지 확인하는 테스트</li>
 </ul>
 <table><thead><tr><th>분류</th><th>항목</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>호환성 확인</td><td>소프트웨어가 다양한 플랫폼과 환경에서 호환성을 유지하도록 보장</td></tr><tr><td></td><td>사용자 경험 일관성 유지</td><td>여러 환경에서 동일한 사용자 경험을 제공하여 사용자의 만족도 향상</td></tr><tr><td></td><td>시장 범위 확대</td><td>다양한 환경에서 작동하는 소프트웨어를 통해 더 넓은 시장에 접근성 보장</td></tr><tr><td>종류</td><td>하드웨어 독립성 테스트</td><td>다양한 하드웨어 환경에서 소프트웨어가 정상적으로 작동하는지 확인</td></tr><tr><td></td><td>운영체제 독립성 테스트</td><td>서로 다른 운영 체제에서 소프트웨어의 호환성 평가</td></tr><tr><td></td><td>브라우저 독립성 테스트</td><td>웹 애플리케이션의 다양한 브라우저에서 동일한 기능이 작동하는지 확인</td></tr><tr><td></td><td>언어 및 지역 독립성 테스트</td><td>다국어 지원 소프트웨어의 다양한 언어 및 지역 설정에 서서히 작동하는지 평가</td></tr><tr><td>고려 사항</td><td>테스트 환경 구축의 어려움</td><td>다양한 플랫폼과 환경을 모두 구성하는 난이도 증가</td></tr><tr><td></td><td>테스트 시간 및 비용</td><td>시간과 비용이 많이 소요</td></tr><tr><td></td><td>복잡성 증가</td><td>다양한 테스트 케이스와 시나리오를 구성하는 과정에서 복잡성이 증가</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/software-engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[요구 공학]]></title>
-            <link>https://gracefullight.dev/pe/sw/requirements-engineering/</link>
-            <guid>https://gracefullight.dev/pe/sw/requirements-engineering/</guid>
-            <pubDate>Sun, 26 Jan 2025 05:51:30 GMT</pubDate>
-            <description><![CDATA[Requirements Engineering]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-개념">요구공학 개념<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="요구공학 개념에 대한 직접 링크" title="요구공학 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>시스템의 개발, 변경의 목적(What)을 식별하기 위해 이해관계자들의 요구를 이해 및 조정하여 체계적으로 수집, 분석, 명세화, 확인하는 공정 또는 학문</li>
-<li>비지니스 연속성, 확장성 / 비용절감, 효율성 / 기능 구현 완정성, 오류율 감소 / 조직구성원 이해관계자 만족도, 이해도 증가, 생산성 향상</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차">요구공학 절차<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="요구공학 절차에 대한 직접 링크" title="요구공학 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차-개념도">요구공학 절차 개념도<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="요구공학 절차 개념도에 대한 직접 링크" title="요구공학 절차 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구공학-절차-상세">요구공학 절차 상세<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EA%B3%B5%ED%95%99-%EC%A0%88%EC%B0%A8-%EC%83%81%EC%84%B8" class="hash-link" aria-label="요구공학 절차 상세에 대한 직접 링크" title="요구공학 절차 상세에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>프로세스</th><th>설명</th></tr></thead><tbody><tr><td>요구사항 개발</td><td>요구사항 추출</td><td>요구사항 식별, 분류 및 문서화</td></tr><tr><td></td><td>요구사항 분석</td><td>요구사항 파악 및 도출 단계</td></tr><tr><td></td><td>요구사항 명세</td><td>요구사항 명세서 작성 및 식별(기능/비기능)</td></tr><tr><td></td><td>요구사항 검증</td><td>명세서의 정확성 및 구현 가능성 검토</td></tr><tr><td>요구사항 관리</td><td>요구사항 협상</td><td>구현 가능한 기능 협상</td></tr><tr><td></td><td>요구사항 기준선</td><td>공식 검토된 요구사항 명세서 (Baseline)</td></tr><tr><td></td><td>요구사항 변경관리</td><td>기준선 기반의 변경 통제</td></tr><tr><td></td><td>요구사항 확인 및 검증</td><td>시스템이 요구사항에 부합하는지 확인</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-개념-및-기술-항목">요구사항 명세서 개념 및 기술 항목<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B8%B0%EC%88%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="요구사항 명세서 개념 및 기술 항목에 대한 직접 링크" title="요구사항 명세서 개념 및 기술 항목에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-개념">요구사항 명세서 개념<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="요구사항 명세서 개념에 대한 직접 링크" title="요구사항 명세서 개념에 대한 직접 링크">​</a></h3>
-<ul>
-<li>SW를 분석, 설계, 구현, 유지하는 단계에서 검토, 평가, 승인의 기준이 되는 문서</li>
-<li>SW 요구사항 명세를 결정하기 위해 위해 ISO 21948, IEEE 830 표준 참조/반영</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="요구사항-명세서-기술-항목">요구사항 명세서 기술 항목<a href="https://gracefullight.dev/pe/sw/requirements-engineering/#%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%EB%AA%85%EC%84%B8%EC%84%9C-%EA%B8%B0%EC%88%A0-%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="요구사항 명세서 기술 항목에 대한 직접 링크" title="요구사항 명세서 기술 항목에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>항목</th><th>설명</th></tr></thead><tbody><tr><td>개요</td><td>범위</td><td>명세서가 다루는 시스템의 요구사항에 대한 범위를 기술</td></tr><tr><td></td><td>목적</td><td>명세서의 작성 목적을 기술</td></tr><tr><td></td><td>시스템 개요</td><td>시스템 전반적인 내용을 요약하여 기술</td></tr><tr><td></td><td>일반 제약사항</td><td>다른 표준이나 하드웨어의 제한으로 인해 적용되는 제한사항에 대하여 기술</td></tr><tr><td>기능적 요구사항</td><td>기능요구사항</td><td>소프트웨어의 입력 처리와 출력을 생성하는 처리 과정에서 발생할 수 있는 기본적인 동작에 대하여 기술</td></tr><tr><td></td><td>외부 인터페이스 요구사항</td><td>모든 소프트웨어 시스템으로의 입력과 출력에 대한 요구사항을 상세히 기술</td></tr><tr><td>기타 요구 및 제약 사항</td><td>성능 요구사항</td><td>소프트웨어 전체적으로 사람과의 상호작용 혹은 소프트웨어에서 확인할 수 있는 정적인 동작인 수치적 요구사항을 기술</td></tr><tr><td></td><td>HW 요구 사항</td><td>기억 장치 규모, 통신 수요 등과 같은 HW 요구 사항 기술</td></tr><tr><td></td><td>논리적 DB 요구사항</td><td>데이터베이스에서 사용될 정보를 위한 논리적 요구사항에 대하여 기술</td></tr><tr><td></td><td>소프트웨어 시스템 속성</td><td>신뢰도, 사용가능성, 보안, 유지보수성, 이식성 등을 기술</td></tr><tr><td>인수 조건</td><td>기능 및 성능 테스트</td><td>최종 개발 산출물에 대해 수용 확인을 위한 테스트 항목</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/software-engineering</category>
         </item>
