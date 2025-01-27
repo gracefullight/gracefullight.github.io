@@ -1,5 +1,5 @@
 ---
-title: 양자내성암호
+title: PQC, 양자내성암호
 date: 2025-01-20T22:06:34.164+09:00
 description: Post-Quantum Cryptography
 authors: me
