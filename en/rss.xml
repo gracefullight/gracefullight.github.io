@@ -4,10 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 05:05:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 06:05:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[VPN, IPSec VPN, SSL VPN]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/</guid>
+            <pubDate>Mon, 27 Jan 2025 06:05:25 GMT</pubDate>
+            <description><![CDATA[Virtual Private Network, Internet Protocol Security VPN, Secure Socket Layer VPN]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-개요">VPN 개요<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#vpn-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-개념">VPN 개념<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#vpn-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>인터넷 같은 공중망에서 터널링 기법을 통해 사용자가 사설망에 연결된 것처럼 기밀성, 무결성을 보장하는 네트워크 통신 기술</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-특징">VPN 특징<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#vpn-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>특징</th><th>설명</th></tr></thead><tbody><tr><td>보안 측면</td><td>데이터 기밀성</td><td>암호화를 이용하여 메시지의 내용을 은폐</td></tr><tr><td></td><td>데이터 무결성</td><td>데이터 전송 중 제3자에 의해 변환되지 않았음을 보장</td></tr><tr><td></td><td>데이터 원본 인증</td><td>요청한 수신인에 의해 각 데이터 원본 여부 확인</td></tr><tr><td></td><td>재전송 공격 방지</td><td>인증 헤더에 일련번호를 부여하여 재전송 공격 방지</td></tr><tr><td>비즈니스 측면</td><td>비용 절감</td><td>가상화를 통해 전용망과 같은 효과 기대</td></tr><tr><td></td><td>QoS 보장</td><td>네트워크 사용자 품질 보증 기술로 활용</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn-ssl-vpn">IPSec VPN, SSL VPN<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#ipsec-vpn-ssl-vpn" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn">IPSec VPN<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#ipsec-vpn" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="IPSec VPN" src="https://gracefullight.dev/en/assets/images/ipsec-vpn-6739c40a5089cec24e3e9d4611caf29f.png" width="489" height="172" class="img_xC7_"></p>
+<ul>
+<li>단말간 안전한 통신망 연결을 위해 IPSec Tunneling 기술 이용하는 OSI 3계층 VPN 보안 기술</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ssl-vpn">SSL VPN<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#ssl-vpn" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="SSL VPN" src="https://gracefullight.dev/en/assets/images/ssl-vpn-1e4f932cf4c0d9b88a2ca3bffa47d8c1.png" width="486" height="202" class="img_xC7_"></p>
+<ul>
+<li>OSI 4~7계층에서 웹 브라우저를 통해 원격 액세스를 제공하며, 사용자 인증, 데이터 암호화 및 데이터 무결성을 보장하는 VPN 보안 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn-ssl-vpn-비교">IPSec VPN, SSL VPN 비교<a href="https://gracefullight.dev/en/pe/sec/vpn-ipsec-ssl/#ipsec-vpn-ssl-vpn-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>IPSec VPN</th><th>SSL VPN</th></tr></thead><tbody><tr><td>OSI 레이어</td><td>Layer 3</td><td>Layer 4 ~ 7</td></tr><tr><td>표준</td><td>RFC 4301 (IPSec 기준)</td><td>RFC 5246 (TLS 1.2 기준)</td></tr><tr><td>프로토콜</td><td>IP</td><td>TCP</td></tr><tr><td>인증방식</td><td>비밀키 공유</td><td>X.509 인증서</td></tr><tr><td>구현방식</td><td>Site to Site (Lan to Lan)</td><td>Client to Site</td></tr><tr><td>장점</td><td>높은 안정성</td><td>브라우저 및 Agent 방식 구현</td></tr><tr><td>단점</td><td>고비용 (전용 장비 설치 및 양단 설치)</td><td>저비용 (전용 장비 서버측 설치)</td></tr><tr><td>사례</td><td>본사와 지사의 VPN 연결</td><td>브라우저를 통한 기업 내부망 접속, 재택근무</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[MPC, 다자간 계산]]></title>
             <link>https://gracefullight.dev/en/pe/sec/multi-party-computation/</link>
@@ -223,31 +253,6 @@
 <table><thead><tr><th>구분</th><th>기술적 문제</th><th>설명</th></tr></thead><tbody><tr><td>데이터의 한계</td><td>학습 데이터 제약</td><td>학습 데이터의 양, 질, 종류 제한으로 데이터 편향 및 부족 문제 발생</td></tr><tr><td></td><td>패턴 의존성</td><td>AI 모델이 학습 데이터의 특정 패턴에 지나치게 의존하는 문제</td></tr><tr><td></td><td>학습 데이터 품질</td><td>데이터의 불완전성으로 인한 신뢰성 및 편향성 문제</td></tr><tr><td>AI 모델의 한계</td><td>설명 불가</td><td>AI 모델의 결정 과정을 명확히 설명하기 어려운 문제 (블랙박스 문제)</td></tr><tr><td></td><td>할루시네이션</td><td>AI가 사실이 아닌 그럴싸한 답변을 생성하여 혼란을 초래하는 문제</td></tr><tr><td></td><td>수동 조정 필요</td><td>AI 학습 과정에서 사람의 개입이 필요한 과도한 조정 요구</td></tr><tr><td></td><td>불명확한 범위</td><td>AI 활용의 효과와 업무 영역 식별 부족으로 발생하는 문제</td></tr><tr><td>AI 위험대응 문제</td><td>성능 기준 및 목표 부족</td><td>기대되는 결과물의 성능 기준이 명확하지 않음</td></tr><tr><td></td><td>AI 거버넌스 부족</td><td>책임 기반의 의사결정 체계 부재 및 인공지능 활용에 대한 명확한 가이드라인 부족</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-시스템-기술적이슈-해결방안">AI 시스템 기술적이슈 해결방안<a href="https://gracefullight.dev/en/pe/sec/ai-system-issues/#ai-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B8%B0%EC%88%A0%EC%A0%81%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>해결방안</th><th>설명</th></tr></thead><tbody><tr><td>AI 품질 관리</td><td>XAI (설명 가능한 인공지능)</td><td>인공지능 모델의 결정을 사람이 이해할 수 있도록 설명하는 기술</td></tr><tr><td></td><td>RAG (검색 증강 생성)</td><td>답변 생성에 외부 리소스를 추가하는 기술</td></tr><tr><td></td><td>데이터 품질 관리</td><td>데이터 품질에 따른 편견, 오류 확인 및 품질 보완 기술 적용</td></tr><tr><td>AI 기술 고도화</td><td>AutoML</td><td>머신러닝 모델 개발 과정을 자동화하는 기술</td></tr><tr><td></td><td>프롬프트 엔지니어링</td><td>원하는 결과를 얻기 위해 최적의 질문과 명령을 설계하는 기술</td></tr><tr><td></td><td>병렬처리 및 분산 컴퓨팅</td><td>대량 데이터 연산에 효율적인 하드웨어 사용 (TPU, NPU 등)</td></tr><tr><td>벤치마크 데이터</td><td>이미지넷</td><td>컴퓨터 비전 분야에서 널리 사용되는 대규모 이미지 데이터셋</td></tr><tr><td></td><td>GLUE</td><td>자연어 처리 모델 성능 평가를 위한 벤치마크 데이터셋</td></tr><tr><td></td><td>KLUE</td><td>한국어 이해 평가를 위한 벤치마크 데이터셋</td></tr><tr><td></td><td>KorQuAD</td><td>한국어 기계 독해 데이터셋</td></tr><tr><td>AI 거버넌스 체계</td><td>AI 거버넌스 의사결정 체계</td><td>명확한 역할과 책임을 부여한 의사결정 체계 확립</td></tr><tr><td></td><td>자동화 대상 정의</td><td>과정별 자동화를 통해 업무 프로세스 최적화</td></tr><tr><td></td><td>단계적 로드맵</td><td>성과 도출 가능한 영역부터 시범 적용 후 점진적 확산</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[다크패턴]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/dark-pattern/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/dark-pattern/</guid>
-            <pubDate>Mon, 27 Jan 2025 00:17:03 GMT</pubDate>
-            <description><![CDATA[Dark Pattern]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념">다크패턴 개념<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>기업의 이익을 목적으로 이용자를 속이기 위해 교묘하게 설계뙨 사용자 인터페이스 패턴</li>
-<li>온라인 시장 점유율 상승, 비대면 거래 확산, 기업 이익도모, 공정거래위원회 다크패턴 유형 정의</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념도-유형-대응방안">다크패턴 개념도, 유형, 대응방안<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9C%A0%ED%98%95-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-개념도">다크패턴 개념도<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-유형">다크패턴 유형<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>설명</th></tr></thead><tbody><tr><td>편취형</td><td>숨은 결제</td><td>무료에서 유료로 전환 시 별도 고지 없이 결제를 유도하는 행위</td></tr><tr><td></td><td>순차공개 가격책정</td><td>초기 낮은 가격 표시 후 결제 시 추가 금액을 부과하는 행위</td></tr><tr><td></td><td>몰래 장바구니 추가</td><td>소비자가 선택하지 않은 상품을 자동으로 추가하는 행위</td></tr><tr><td></td><td>거짓 할인</td><td>할인 정보 조작으로 소비자를 유도하는 행위</td></tr><tr><td></td><td>거짓 추천</td><td>허위 리뷰 조작으로 상품 구매를 유도하는 행위</td></tr><tr><td></td><td>유인 판매</td><td>판매 불가능 상품을 광고하여 다른 상품 구매를 유도하는 행위</td></tr><tr><td></td><td>위장 광고</td><td>광고임을 숨기고 콘텐츠처럼 보이게 제작된 광고 제공</td></tr><tr><td>오도형</td><td>숙의식 질문</td><td>긴 설명이나 과도한 정보를 제시하여 혼란을 유도하는 행위</td></tr><tr><td></td><td>잘못된 계층 구조</td><td>불리한 옵션을 소비자가 선택하도록 구성하는 행위</td></tr><tr><td></td><td>특정 옵션의 사전 선택</td><td>유리한 옵션을 미리 선택된 상태로 제공하는 행위</td></tr><tr><td>방해형</td><td>취소·탈퇴 방해</td><td>취소·탈퇴 과정을 복잡하게 하거나 제한하는 행위</td></tr><tr><td></td><td>숨겨진 정보</td><td>결정을 위한 중요 정보를 숨기는 행위</td></tr><tr><td></td><td>가격 비교 방해</td><td>상품 간 가격 비교를 어렵게 만드는 행위</td></tr><tr><td>압박형</td><td>클릭 필요 옵션 유발</td><td>불필요한 클릭을 유도하여 불리한 선택을 하게 만드는 행위</td></tr><tr><td></td><td>반복 간섭</td><td>특정 행동을 반복적으로 강요하는 행위</td></tr><tr><td></td><td>감정적 언어사용</td><td>감정을 자극하는 언어 표현을 통해 소비자 행동 압박</td></tr><tr><td></td><td>시간제한 알림</td><td>특정시간/기간에만 할인된 가격으로 표시하여 소비자 의사결정 압박</td></tr><tr><td></td><td>낮은 재고 알림</td><td>재고가 없거나 수요가 높다고 표시하여 소비자 으사결정 압박</td></tr><tr><td></td><td>다른 소비자 활동 알림</td><td>최근 해당 제품을 보거나 구매한 소비자 수 표시하여 소비자 의사결정 압박</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-대응방안">다크패턴 대응방안<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>대응방안</th><th>설명</th></tr></thead><tbody><tr><td>제도적 측면</td><td>법 집행 강화</td><td>표시광고법 및 전자상거래법 적용, Data Act, DSA, DMA 등의 규제 준수</td></tr><tr><td></td><td>제도개선</td><td>가이드라인 제정 및 법 개정 추진</td></tr><tr><td></td><td>적합성평가</td><td>지속 모니터링하여 디지털 공정성 적합성 평가 수행</td></tr><tr><td></td><td>쿠키배너 동의관리</td><td>개인광고에 사용되는 쿠키배너의 동의관리 가이드라인 제정</td></tr><tr><td>소비자 측면</td><td>캠페인 및 교육</td><td>불공정 상거래 행위를 인지할 수 있도록 역량 강화 캠페인과 교육 실시</td></tr><tr><td></td><td>소비자 철회권</td><td>일정 기간 내 이유 없이 계약을 취소할 수 있는 권리 강화</td></tr><tr><td>R&amp;D 측면</td><td>다크패턴 조사/분석</td><td>문제되는 상술을 가장 많이 쓰는 사업자 조사 및 분석</td></tr><tr><td></td><td>사용자 중심 디자인 철학 강화</td><td>혼란스럽거나 과도한 유도 없이 직관적으로 사용할 수 있는 디자인 적용</td></tr><tr><td></td><td>글로벌 UX 설계 가이드라인 개발</td><td>국제적 수준으로 UX 표준화 및 다크패턴 방지 가이드라인 개발</td></tr><tr><td>기술적 측면</td><td>인증기능 알고리즘</td><td>다크패턴을 자동 감지하는 알고리즘 및 UI/UX 분석 도입</td></tr><tr><td></td><td>사용자 행동 추적</td><td>사용자 행동 분석하여 피해 방지 및 효과 검증</td></tr><tr><td></td><td>사용자 피드백</td><td>신고와 문제를 파악할 수 있는 피드백 기능 강화</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다크패턴-방지를-위한-고려사항">다크패턴 방지를 위한 고려사항<a href="https://gracefullight.dev/en/pe/sec/dark-pattern/#%EB%8B%A4%ED%81%AC%ED%8C%A8%ED%84%B4-%EB%B0%A9%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>공정거래위원회 발간 온라인 다크패턴 자율관리 가이드라인 준수</li>
-</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
