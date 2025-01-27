@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 04:56:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 05:05:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[MPC, 다자간 계산]]></title>
+            <link>https://gracefullight.dev/pe/sec/multi-party-computation/</link>
+            <guid>https://gracefullight.dev/pe/sec/multi-party-computation/</guid>
+            <pubDate>Mon, 27 Jan 2025 05:05:51 GMT</pubDate>
+            <description><![CDATA[Multi-Party Computation]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념">다자간 계산 개념<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="다자간 계산 개념에 대한 직접 링크" title="다자간 계산 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>여러 참여자가 각자의 비밀 정보를 제공하지 않고도 공동 계산을 수행할 수 있도록 하는 암호학 기법</li>
+<li>프라이버시 보호, 신뢰 없는 환경에서 협업, 데이터 보안, 확장성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념도-핵심요소-활용방안">다자간 계산 개념도, 핵심요소, 활용방안<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다자간 계산 개념도, 핵심요소, 활용방안에 대한 직접 링크" title="다자간 계산 개념도, 핵심요소, 활용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념도">다자간 계산 개념도<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="다자간 계산 개념도에 대한 직접 링크" title="다자간 계산 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-핵심요소">다자간 계산 핵심요소<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="다자간 계산 핵심요소에 대한 직접 링크" title="다자간 계산 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>기술</th><th>설명</th></tr></thead><tbody><tr><td>암호화</td><td>동형 암호화</td><td>데이터가 암호화된 상태로 연산 가능</td></tr><tr><td></td><td>비밀 분할</td><td>데이터를 다수의 셰어로 나누어 저장하고, 계산 후 결과 복원.</td></tr><tr><td>프로토콜</td><td>Yao’s Garbled Circuit</td><td>안전한 회로 기반의 계산을 수행하며, 효율적 보안 제공</td></tr><tr><td></td><td>Threshold Cryptography</td><td>일정 수 이상의 셰어가 합쳐질 때만 계산이 가능</td></tr><tr><td></td><td>블라인드 평가</td><td>비밀번호 확인 없이 전송, 내용확인 없이 본인이 질문내역 확인</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-활용분야">다자간 계산 활용분야<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="다자간 계산 활용분야에 대한 직접 링크" title="다자간 계산 활용분야에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>전자 투표 시스템에서 투표자의 익명성을 유지하며 투명한 결과 제공</td><td>선거 공정성과 신뢰 확보</td></tr><tr><td></td><td>민감한 의료 데이터를 보호하면서 병원 간 협력 연구 수행</td><td>환자 데이터 보호 및 연구 효율성 강화</td></tr><tr><td>금융</td><td>암호화폐 지갑에서 개인 키 분산 저장 및 복구 기능 제공</td><td>키 분실 방지 및 보안 강화 (예: ZenGo, Fireblocks)</td></tr><tr><td></td><td>은행 간 신용 평가 및 사기 탐지를 위해 데이터를 비공개 상태로 분석</td><td>금융 기밀 보호와 협력 가능</td></tr><tr><td>민간</td><td>경쟁 기업 간 시장 점유율 분석 시 데이터 보호</td><td>데이터 유출 방지 및 협력 증대</td></tr><tr><td></td><td>블록체인 기반 기업 지갑에서 멀티시그(Multi-Signature) 대체</td><td>분산 서명으로 보안 및 효율성 향상</td></tr><tr><td></td><td>프라이버시를 강화한 연합 학습으로 AI 모델 학습</td><td>데이터 보호 상태에서 AI 성능 향상</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[생성형 AI 활용 보안 가이드라인]]></title>
             <link>https://gracefullight.dev/pe/sec/생성형-AI-활용-보안-가이드라인/</link>
@@ -227,42 +248,6 @@
 <ul>
 <li>공정거래위원회 발간 온라인 다크패턴 자율관리 가이드라인 준수</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[공공부문 SaaS 이용 가이드라인]]></title>
-            <link>https://gracefullight.dev/pe/sec/공공부문-SaaS-이용-가이드라인/</link>
-            <guid>https://gracefullight.dev/pe/sec/공공부문-SaaS-이용-가이드라인/</guid>
-            <pubDate>Sun, 26 Jan 2025 11:23:50 GMT</pubDate>
-            <description><![CDATA[공공부문 SaaS 이용 가이드라인]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="공공부문-saas-이용-가이드라인-개요">공공부문 SaaS 이용 가이드라인 개요<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-saas-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="공공부문 SaaS 이용 가이드라인 개요에 대한 직접 링크" title="공공부문 SaaS 이용 가이드라인 개요에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>국가ㆍ공공기관에서 안전하고 효율적인 SaaS 이용 위한 공공부문 SaaS 이용 가이드라인 배포</li>
-<li>국가 클라우드 컴퓨팅 보안 가이드라인 기준에 SaaS 환경 추가 원칙을 확장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-위험관리-원칙-및-기준">클라우드 서비스 위험관리 원칙 및 기준<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC-%EC%9B%90%EC%B9%99-%EB%B0%8F-%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="클라우드 서비스 위험관리 원칙 및 기준에 대한 직접 링크" title="클라우드 서비스 위험관리 원칙 및 기준에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-위험관리-원칙">클라우드 서비스 위험관리 원칙<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC-%EC%9B%90%EC%B9%99" class="hash-link" aria-label="클라우드 서비스 위험관리 원칙에 대한 직접 링크" title="클라우드 서비스 위험관리 원칙에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>원칙</th><th>상세 내용</th></tr></thead><tbody><tr><td>정책 측면</td><td>공통 기본 원칙</td><td>국가클라우드 컴퓨팅 보안 가이드라인 준수</td></tr><tr><td></td><td></td><td>도입 정보보호시스템 안전성 확인</td></tr><tr><td></td><td></td><td>인터넷·업무망 분리</td></tr><tr><td></td><td></td><td>공급망 관리</td></tr><tr><td></td><td>SaaS 환경 추가</td><td>개발단계부터 보안 취약점의 원인 보안약점 배제</td></tr><tr><td>기술 측면</td><td>기본 원칙</td><td>인프라, 개발·운영 환경의 물리적 위치</td></tr><tr><td></td><td></td><td>보안성 확인</td></tr><tr><td></td><td></td><td>SaaS 개발·운영 환경</td></tr><tr><td></td><td></td><td>허가받은 외부 연동 서비스 연계</td></tr><tr><td></td><td></td><td>영역 분리</td></tr><tr><td></td><td>공통 기본 원칙</td><td>이중화 및 백업체계 구축, 표준운영절차 수립</td></tr><tr><td></td><td></td><td>접근통제 및 격리수단 확보</td></tr><tr><td></td><td></td><td>중요 업무자료 암호화</td></tr><tr><td></td><td></td><td>보안관제</td></tr><tr><td></td><td>SaaS 환경 추가</td><td>외부 공개용 SaaS 영역은 내부 업무용 SaaS 영역과 분리</td></tr><tr><td></td><td></td><td>SaaS 애플리케이션 보안성 강화 방안 마련</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-위험관리-기준">클라우드 서비스 위험관리 기준<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC-%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="클라우드 서비스 위험관리 기준에 대한 직접 링크" title="클라우드 서비스 위험관리 기준에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>분류</th><th>세부 보안 기준</th><th>적용범위</th></tr></thead><tbody><tr><td>정책</td><td>시스템 보호</td><td>공통, IaaS</td></tr><tr><td></td><td>인적 관리</td><td>공통</td></tr><tr><td></td><td>보안 검사</td><td>IaaS</td></tr><tr><td>클라우드 인프라</td><td>가상화 인프라</td><td>공통, IaaS</td></tr><tr><td></td><td>보안관리</td><td>공통, IaaS</td></tr><tr><td>가상환경 보안</td><td>보안관리-SaaS App 개발</td><td>SaaS</td></tr><tr><td></td><td>보안관리-개발운영 환경</td><td>SaaS</td></tr><tr><td></td><td>악성코드 방지</td><td>SaaS</td></tr><tr><td></td><td>접근통제</td><td>공통</td></tr><tr><td>데이터</td><td>관리</td><td>공통, SaaS</td></tr><tr><td></td><td>암호화</td><td>공통</td></tr><tr><td>인증 및 권한</td><td>인증</td><td>공통</td></tr><tr><td></td><td>권한</td><td>공통</td></tr><tr><td>사고 및 장애 대응</td><td>사고</td><td>공통</td></tr><tr><td></td><td>장애</td><td>공통</td></tr></tbody></table>
-<ul>
-<li>모든 유형의 클라우드 컴퓨팅 서비스에 적용해야하는 공통 보안 기준, IaaS 및 SaaS환경에서 요구되는 추가 보안 기준 확장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-보안성-검토">클라우드 보안성 검토<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88%EC%84%B1-%EA%B2%80%ED%86%A0" class="hash-link" aria-label="클라우드 보안성 검토에 대한 직접 링크" title="클라우드 보안성 검토에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>국가 클라우드 컴퓨팅 보안 가이드라인 참고, 국가 정보보안 기본지침에 따라 규모와 중요도를 고려하여 보안성 검토 실행/위임</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-수준-협약">클라우드 서비스 수준 협약<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%98%EC%A4%80-%ED%98%91%EC%95%BD" class="hash-link" aria-label="클라우드 서비스 수준 협약에 대한 직접 링크" title="클라우드 서비스 수준 협약에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-수준-협약-개념도">클라우드 서비스 수준 협약 개념도<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%98%EC%A4%80-%ED%98%91%EC%95%BD-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="클라우드 서비스 수준 협약 개념도에 대한 직접 링크" title="클라우드 서비스 수준 협약 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>클라우드 제공자에게 서비스 수준 협약서 요구 내용에 대해 정기/수시 확인, 필요시 개선 요구</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-수준-협약-상세-설명">클라우드 서비스 수준 협약 상세 설명<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%98%EC%A4%80-%ED%98%91%EC%95%BD-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="클라우드 서비스 수준 협약 상세 설명에 대한 직접 링크" title="클라우드 서비스 수준 협약 상세 설명에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기준</th><th>상세 설명</th></tr></thead><tbody><tr><td>시스템 안정성 측면</td><td>가용성</td><td>가용률 측정을 위한 기능 보유 및 유지 능력</td></tr><tr><td></td><td>신뢰성</td><td>서비스 회복시간, 백업 주기, 백업 준수율</td></tr><tr><td></td><td>서비스 지속성</td><td>재무 상태 및 기술 보증, 서비스 추진 전략</td></tr><tr><td>성능 관리 측면</td><td>응답성</td><td>응답시간 측정을 위한 기능 보유 및 유지 능력</td></tr><tr><td></td><td>확장성</td><td>이용자 요구에 따른 자원 양 줄이거나 늘리는 기능</td></tr><tr><td>고객 지원 측면</td><td>서비스 지원</td><td>단말, 운영체계 등 이용자 서비스 지원 체계</td></tr><tr><td></td><td>고객 대응</td><td>고객 대응 및 고객 불만 수집 체계 및 처리 절차</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
