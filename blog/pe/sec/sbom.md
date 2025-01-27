@@ -5,7 +5,7 @@ description: Software Bill of Materials
 authors: me
 tags:
   - pe
-  - pe/sec 
+  - pe/sec
 ---
 
 ## SBOM의 개념
@@ -19,24 +19,32 @@ tags:
 
 ```mermaid
 graph LR
-  subgraph 도입후
-    direction LR
-      관리자2((관리자))
-      관리자2 -->|SPoC|SBOM
-      SBOM-->|통합관리|SW2[SW] 
-      SW2 -->|개별관리|오픈소스2-1[오픈소스 #1]
-      SW2 -->|개별관리|오픈소스2-2[오픈소스 #2]
+  subgraph 설계/개발/빌드/테스트
+    SBOM콘텐츠
+    SW구성요소
   end
-  subgraph 도입전
-    direction LR
-      관리자1((관리자))
-      관리자1 -->|관리|SW1[SW] 
-      SW1 -->|개별관리|오픈소스1-1[오픈소스 #1]
-      SW1 -->|개별관리|오픈소스1-2[오픈소스 #2]
+
+  subgraph 배포/릴리즈
+    SBOM업데이트
+    이해관계자알림
   end
+
+  subgraph 운영
+    취약성정보
+    취약점전파
+  end
+
+  설계/개발/빌드/테스트 --> 배포/릴리즈 --> 운영
+
+  서드파티[(서드파티 구성요소저장소)]
+
+  설계/개발/빌드/테스트 --> |SBOM컨텐츠| 서드파티
+
+  서드파티 -->|SBOM컨텐츠| 배포/릴리즈
+  서드파티 -->|SBOM컨텐츠| 운영
 ```
 
-- SBOM 도입으로 관리자가 SW를 통합 관리 가능
+- SW 공급망에 대한 SBOM 유통체계를 구축하고 SDLC 전체에서 SW 공급망 보안 관리
 
 ### SBOM의 구성요소
 
