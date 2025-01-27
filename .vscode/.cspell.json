@@ -93,6 +93,7 @@
     "HELO",
     "HMAC",
     "HNSW",
+    "homomorphic",
     "HSTS",
     "htonl",
     "iconify",
