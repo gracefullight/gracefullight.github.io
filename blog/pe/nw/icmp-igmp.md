@@ -101,9 +101,9 @@ graph LR
 
 ```mermaid
 flowchart LR
-  A[그룹 가입<br>Host -> Report] --> B[멤버십 모니터링<br>Router -> Query]
-  B --> C[멤버십 응답<br>Host -> Report]
-  C --> D[멤버십 탈퇴<br>Host -> Leave]
+  A[그룹 가입<br/>Host -> Report] --> B[멤버십 모니터링<br/>Router -> Query]
+  B --> C[멤버십 응답<br/>Host -> Report]
+  C --> D[멤버십 탈퇴<br/>Host -> Leave]
 ```
 
 ### IGMP 가입 세부 절차

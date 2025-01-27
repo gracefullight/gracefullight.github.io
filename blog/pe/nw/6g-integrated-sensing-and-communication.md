@@ -47,7 +47,7 @@ graph TD
   User["사용자/디바이스"]
   Sensing["센싱 모듈"]
   Communication["통신 모듈"]
-  Infrastructure["6G 네트워크 인프라<br>(위성, 기지국 등)"]
+  Infrastructure["6G 네트워크 인프라<br/>(위성, 기지국 등)"]
 
   subgraph ISAC["ISAC 시스템"]
       Sensing -->|"데이터 수집"| Communication

@@ -55,7 +55,7 @@ graph LR
   subgraph ARQ
     direction LR
     송신2[송신] --> 수신2[수신]
-    수신2 --> |ACK,NACK\n재전송요청| 송신2
+    수신2 --> |ACK,NACK<br/>재전송요청| 송신2
   end
 
   subgraph FEC

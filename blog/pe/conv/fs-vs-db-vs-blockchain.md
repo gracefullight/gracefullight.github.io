@@ -26,15 +26,15 @@ graph LR
 ```mermaid
 graph LR
   subgraph 웹1[웹1.0]
-    파일[파일\n접속]
+    파일[파일<br/>접속]
   end
 
   subgraph 웹2[웹2.0]
-    DB[DB\n공유]
+    DB[DB<br/>공유]
   end
 
   subgraph 웹3[웹3.0]
-    블록체인[블록체인\n소유,탈중앙화]
+    블록체인[블록체인<br/>소유,탈중앙화]
   end
 
   파일 --> DB --> 블록체인

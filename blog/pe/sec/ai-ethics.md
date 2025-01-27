@@ -13,7 +13,7 @@ tags:
 ```mermaid
 graph LR
   AI윤리 -->|윤리의식함양|연구자개발자
-  연구자개발자((연구자\n개발자))-->|설명가능한AI|AI프레임워크
+  연구자개발자((연구자<br/>개발자))-->|설명가능한AI|AI프레임워크
 
   subgraph AI프레임워크
     direction LR

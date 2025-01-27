@@ -218,9 +218,9 @@ graph TB
 
 ```mermaid
 graph TB
-    A(정보전략 계획\nInformation Strategy Planning) --> B(비지니스 영역 분석\nBusiness Area Analysis)
-    B --> C(비지니스 시스템 설계\nBusiness System Design)
-    C --> D(시스템 구축\nSystem Construction)
+    A(정보전략 계획<br/>Information Strategy Planning) --> B(비지니스 영역 분석<br/>Business Area Analysis)
+    B --> C(비지니스 시스템 설계<br/>Business System Design)
+    C --> D(시스템 구축<br/>System Construction)
 ```
 
 | 구분 | 내용                                                  | 비고                              |

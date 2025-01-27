@@ -14,7 +14,7 @@ tags:
 graph LR
   InputText["입력 텍스트"]
   LinguisticProcessing["언어 분석 및 규칙 적용"]
-  AcousticModeling["음향 모델링<br>음성 파형 생성"]
+  AcousticModeling["음향 모델링<br/>음성 파형 생성"]
   ProsodyAdjustment["운율 추가 및 자연스러운 음성 생성"]
   OutputSpeech["최종 음성 출력"]
 

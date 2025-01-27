@@ -22,18 +22,18 @@ graph LR
   subgraph 사이버복원력
     direction LR
     subgraph 잠재력
-      적응역량[적응 역량\nAdaptive Capacity]
+      적응역량[적응 역량<br/>Adaptive Capacity]
 
       적응역량 -->|구축| 적응역량
     end
 
     subgraph 현실
-      대응역량[대응 역량\nCoping Ability]
+      대응역량[대응 역량<br/>Coping Ability]
       대응역량 -->|개선| 대응역량
     end 
 
-    적응역량 --> |활성화\nEnabling| 대응역량
-    대응역량 --> |요구\nRequiring| 적응역량
+    적응역량 --> |활성화<br/>Enabling| 대응역량
+    대응역량 --> |요구<br/>Requiring| 적응역량
   end
 ```
 

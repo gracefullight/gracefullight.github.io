@@ -19,7 +19,7 @@ tags:
 
 ```mermaid
 graph LR
-  주체((주체)) -->|접근\nRead/Write/Delete|객체((객체))
+  주체((주체)) -->|접근<br/>Read/Write/Delete|객체((객체))
 
   주체 -->|정책부여| 접근제어정책
   접근제어정책 -->|규칙| 접근제어모델

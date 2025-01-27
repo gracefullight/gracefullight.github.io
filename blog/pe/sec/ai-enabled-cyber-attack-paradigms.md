@@ -25,8 +25,8 @@ graph TB
   Malware["악성코드 및 피싱 메시지 생성"]
   Target["표적 시스템"]
   Victim(("피해자"))
-  Impact["1차 피해<br>데이터 탈취, 시스템 파괴"]
-  SecondaryImpact["2차 피해<br>데이터 오용, 금전적 손실"]
+  Impact["1차 피해<br/>데이터 탈취, 시스템 파괴"]
+  SecondaryImpact["2차 피해<br/>데이터 오용, 금전적 손실"]
 
   %% 공격 흐름
   Attacker -->|명령 전달| AI_Model

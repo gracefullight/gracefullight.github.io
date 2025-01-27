@@ -12,7 +12,7 @@ tags:
 
 ```mermaid
 graph LR
-  SAAM[SAAM\n시나리오 기반]-->|절충점|ATAM[ATAM\n품질속성 기반]-->|경제성|CBAM[CBAM\n비용편익기반]
+  SAAM[SAAM<br/>시나리오 기반]-->|절충점|ATAM[ATAM<br/>품질속성 기반]-->|경제성|CBAM[CBAM<br/>비용편익기반]
 ```
 
 - 시나리오 기반에서 ==품질속성을 평가==하여 아키텍처 내부 리스크를 파악하고, ==설계타협점==을 찾는 ATAM 기법, ==경제성==까지 고려한 CBAM 평가기법으로 진화

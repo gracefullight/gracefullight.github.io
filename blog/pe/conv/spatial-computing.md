@@ -21,23 +21,23 @@ tags:
 graph TB
   subgraph "Infrastructure"
     direction TB
-    Sensors["센서 및 하드웨어<br>(IoT, 카메라, GPS 등)"]
-    Network["네트워크<br>(5G/6G, 클라우드)"]
-    OS["운영체제<br>(Spatial OS)"]
+    Sensors["센서 및 하드웨어<br/>(IoT, 카메라, GPS 등)"]
+    Network["네트워크<br/>(5G/6G, 클라우드)"]
+    OS["운영체제<br/>(Spatial OS)"]
   end
 
   subgraph "Information"
     direction TB
-    Data["데이터 처리<br>(AI, 데이터 분석)"]
+    Data["데이터 처리<br/>(AI, 데이터 분석)"]
     DigitalTwin["디지털 트윈"]
-    Blockchain["블록체인<br>(NFT, 스마트 계약)"]
+    Blockchain["블록체인<br/>(NFT, 스마트 계약)"]
   end
 
   subgraph "Interaction"
     direction TB
-    UserDevices["사용자 디바이스<br>(HMD, 스마트폰 등)"]
-    FeedbackSystems["피드백 시스템<br>(시선 추적, 음성 인식)"]
-    VirtualWorlds["가상 환경<br>(메타버스, AR, MR)"]
+    UserDevices["사용자 디바이스<br/>(HMD, 스마트폰 등)"]
+    FeedbackSystems["피드백 시스템<br/>(시선 추적, 음성 인식)"]
+    VirtualWorlds["가상 환경<br/>(메타버스, AR, MR)"]
   end
 
   Infrastructure --> Information --> Interaction

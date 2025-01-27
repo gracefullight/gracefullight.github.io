@@ -52,7 +52,7 @@ graph LR
   subgraph OpenFlowSwitch[OpenFlow Switch]
     direction LR
     SecureChannel[Secure Channel]
-    FlowTable[Flow Table\n패킷 포워딩 규칙 저장]
+    FlowTable[Flow Table<br/>패킷 포워딩 규칙 저장]
   end
 
   SecureChannel <-->|OpenFlow Protocol|OpenFlowController[OpenFlow Controller]

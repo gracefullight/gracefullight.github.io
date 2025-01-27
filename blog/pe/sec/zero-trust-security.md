@@ -20,7 +20,7 @@ tags:
 ```mermaid
 graph LR
   위협 -->|방화벽| 기업내부망
-  subgraph 기업내부망[기업내부망\n암묵적신뢰구역]
+  subgraph 기업내부망[기업내부망<br/>암묵적신뢰구역]
     direction LR
     서버1[서버]
     서버2[서버]
@@ -29,7 +29,7 @@ graph LR
   end
 
   위협 -->|방화벽| 기업내부망2
-  subgraph 기업내부망2[기업내부망\n비신뢰구역]
+  subgraph 기업내부망2[기업내부망<br/>비신뢰구역]
     direction LR
     서버3[서버]
     서버4[서버]

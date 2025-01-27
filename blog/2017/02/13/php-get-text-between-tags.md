@@ -18,7 +18,7 @@ PHP 로 페이지를 크롤링한 후 HTML tag 안의 데이터가 필요할 때
  * @param  [string] $endWord    [찾을 종료 문자열]
  * @return [array]              [텍스트 사이의 문자열 배열]
  *
- * ex) splitBetweenStr('<br>hi</br><b>test</b><br>graceful_light</br>', '<br>', '</br>')
+ * ex) splitBetweenStr('<br/>hi</br><b>test</b><br/>graceful_light</br>', '<br/>', '</br>')
  *     => ['hi', 'graceful_light']
  */
 function splitBetweenStr($str, $startWord, $endWord) {

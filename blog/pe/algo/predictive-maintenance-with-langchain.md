@@ -5,7 +5,7 @@ description: Predictive Maintenance with LangChain
 authors: me
 tags:
   - pe
-  - pe/algo 
+  - pe/algo
 ---
 
 ## 설비 예지정비 개념

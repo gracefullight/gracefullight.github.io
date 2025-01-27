@@ -5,7 +5,7 @@ description: Distribution Transparency
 authors: me
 tags:
   - pe
-  - pe/db 
+  - pe/db
 ---
 
 ## 분산 데이터베이스 개념
