@@ -4,10 +4,53 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 06:57:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 11:44:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[인터럽트]]></title>
+            <link>https://gracefullight.dev/pe/ca/interrupt/</link>
+            <guid>https://gracefullight.dev/pe/ca/interrupt/</guid>
+            <pubDate>Mon, 27 Jan 2025 11:44:23 GMT</pubDate>
+            <description><![CDATA[Interrupt]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트의-개요">인터럽트의 개요<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="인터럽트의 개요에 대한 직접 링크" title="인터럽트의 개요에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-개념">인터럽트 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="인터럽트 개념에 대한 직접 링크" title="인터럽트 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>컴퓨터 시스템 외부, 내부, SW적 원인으로 CPU에서 처리하던 프로그램을 중단하고 해당 동작을 처리할 수 있도록 보내는 제어신호</li>
+<li>인터럽트는 SW/HW 방식으로 우선순위 판별을 통해 인터럽트 서비스 루틴 수행</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형">인터럽트 유형<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="인터럽트 유형에 대한 직접 링크" title="인터럽트 유형에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>방법</th><th>설명</th></tr></thead><tbody><tr><td>SW</td><td>Polling 방식</td><td>프로그램을 통해 장치 Flag에 의한 우선순위 검사 방식</td></tr><tr><td>HW</td><td>Daisy-Chain 방식</td><td>우선순위 높은 장치를 물리적으로 상위에 배치하는 방식</td></tr><tr><td></td><td>Vector Interrupt 방식</td><td>고유한 번호를 부여하고 해당 번호에 대응하는 ISR 방식</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="폴링">폴링<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81" class="hash-link" aria-label="폴링에 대한 직접 링크" title="폴링에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-개념">폴링 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="폴링 개념에 대�한 직접 링크" title="폴링 개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>SW적으로 CPU가 외부 장치의 상태를 지속적으로 검사하여 인터럽트 요청여부를 확인하는 방식</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="폴링 동작방식에 대한 직접 링크" title="폴링 동작방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>초기화 및 확인</td><td>초기화</td><td>CPU는 외부 장치와의 통신을 위한 인터럽트 관련 레지스터 및 플래그를 초기화</td></tr><tr><td></td><td>장치 확인, 상태 확인</td><td>CPU는 특정 외부 장치(예: 입출력 장치, 타이머 등)의 상태를 주기적으로 확인하기 위해 루프를 실행하며, 루프 내에서 특정 장치에 대한 상태를 확인</td></tr><tr><td></td><td>인터럽트 여부 판단</td><td>CPU는 장치의 상태를 확인한 후 인터럽트가 발생했는지 여부를 판단하며, 특정 플래그나 레지스터의 값을 확인하여 인터럽트 여부를 판단</td></tr><tr><td>처리</td><td>인터럽트 처리</td><td>인터럽트가 발생한 경우, CPU는 해당 인터럽트에 대한 처리를 위해 인터럽트 서비스 루틴을 실행</td></tr><tr><td></td><td>루프 반복</td><td>처리가 완료되면 CPU는 다시 루프를 시작하여 다음 인터럽트가 발생했는지를 확인하고 처리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인">데이지 체인<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8" class="hash-link" aria-label="데이지 체인에 대한 직접 링크" title="데이지 체인에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-개념">데이지 체인 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이�지 체인 개념에 대한 직접 링크" title="데이지 체인 개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>CPU와 가까운 장치가 우선순위가 높게 처리되고, 하나의 인터럽트가 다음 인터럽트를 호출하는 직렬 연계 방식</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-동작방식">데이지 체인 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="데이지 체인 동작방식에 대한 직접 링크" title="데이지 체인 동작방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>발생 및 우선순위 전달</td><td>인터럽트 발생 및 신호 전달</td><td>외부 장치에서 인터럽트가 발생하고, 인터럽트 신호가 체인의 시작점에 있는 인터럽트 컨트롤러에게 전달</td></tr><tr><td></td><td>우선순위 확인 및 결정</td><td>체인 내의 각 인터럽트 컨트롤러는 자신의 우선순위를 확인하고, 처리할 인터럽트를 결정</td></tr><tr><td>처리 및 전달</td><td>인터럽트 처리</td><td>우선순위가 가장 높은 인터럽트 컨트롤러는 해당 인터럽트를 처리하고, 서비스 루틴을 실행</td></tr><tr><td></td><td>인터럽트 전달</td><td>처리가 완료된 인터럽트는 다음 인터럽트 컨트롤러로 전달되며, 다음 우선순위가 높은 인터럽트를 처리</td></tr><tr><td>완료 및 대기</td><td>인터럽트 처리 반복</td><td>처리가 완료되면 다음 인터럽트 컨트롤러로 넘어가며, 이 과정을 반복</td></tr><tr><td></td><td>우선순위 갱신 및 대기</td><td>모든 인터럽트가 처리되면 인터럽트 컨트롤러들은 우선순위를 다시 확인하고 새로운 인터럽트를 대기</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트">벡터 인터럽트<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8" class="hash-link" aria-label="벡터 인터럽트에 대한 직접 링크" title="벡터 인터럽트에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-개념">벡터 인터럽트 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="벡터 인터럽트 개념에 대한 직접 링크" title="벡터 인터럽트 개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>각 인터럽트를 참조하는 인터럽트 벡터 테이블을 관리, 고유 벡터 주소로 서브루틴을 실행하는 방식</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="벡터 인터럽트 동작방식에 대한 직접 링크" title="벡터 인터럽트 동작방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>인터럽트 발생 및 동작</td><td>인터럽트 발생</td><td>외부 장치에서 인터럽트가 발생</td></tr><tr><td></td><td>인터럽트 컨트롤러 동작</td><td>인터럽트 컨트롤러는 발생한 인터럽트를 CPU에 알리고 해당 인터럽트의 번호(인터럽트 벡터)를 제공</td></tr><tr><td>확인 및 처리</td><td>인터럽트 벡터 확인</td><td>CPU는 인터럽트 컨트롤러로부터 받은 인터럽트 벡터를 이용하여 인터럽트 서비스 루틴의 주소를 확인</td></tr><tr><td></td><td>인터럽트 서비스 루틴 실행</td><td>CPU는 찾아낸 인터럽트 서비스 루틴의 주소로 점프하여 해당 인터럽트를 처리</td></tr><tr><td></td><td>인터럽트 서비스 루틴 종료</td><td>인터럽트 서비스 루틴의 실행이 완료되었음을 CPU가 인식</td></tr><tr><td>복귀</td><td>프로그램 복귀</td><td>인터럽트 서비스 루틴 실행 후, CPU는 원래의 프로그램 또는 작업으로 돌아가 수행을 계속 진행</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형-비교">인터럽트 유형 비교<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="인터럽트 유형 비교에 대한 직접 링크" title="인터럽트 유형 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>폴링</th><th>데이지체인</th><th>벡터인터럽트</th></tr></thead><tbody><tr><td>개념</td><td>CPU가 주기적으로 장치 상태를 확인하여 인터럽트를 처리하는 방식</td><td>인터럽트 신호가 장치 간 체인을 따라 전달되며, 우선순위가 높은 장치가 처리되는 방식</td><td>각 장치가 고유의 인터럽트 벡터를 가지며, 벡터를 통해 해당 장치를 즉시 처리하는 방식</td></tr><tr><td>방식</td><td>SW</td><td>HW</td><td>HW</td></tr><tr><td>속도</td><td>느림</td><td>중간, 체인 길이에 따른 지연</td><td>빠름, 벡터 주소로 즉시 처리</td></tr><tr><td>장점</td><td>구현 간단, 추가 HW 불필요</td><td>단일 인터럽트 라인으로 여러 장치 처리 가능</td><td>빠른 속도, 유연한 우선순위</td></tr><tr><td></td><td>단순한 시스템에 효율적</td><td>우선순위 제어 용이</td><td>복잡한 시스템에서 효율적</td></tr><tr><td>단점</td><td>CPU 자원 소모, 성능 저하</td><td>체인 길이가 길어질 시 병목 발생</td><td>구현 복잡, 추가 HW 비용</td></tr><tr><td></td><td>느린 반응 속도</td><td>장치 추가 시 체인 구조 변경 필요</td><td>벡터 테이블 구성/관리 비용</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/computer-architecture</category>
+        </item>
         <item>
             <title><![CDATA[IEC 62443]]></title>
             <link>https://gracefullight.dev/pe/sec/iec-62443/</link>
@@ -214,32 +257,6 @@
 <ul>
 <li>AITrustOps, AI TRiSM, NIA 인공지능 학습용 데이터 품질 가이드라인 등을 참고하여 다양한 관점에서 AI 신뢰성 확보 필요</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[동형암호]]></title>
-            <link>https://gracefullight.dev/pe/sec/homomorphic-encryption/</link>
-            <guid>https://gracefullight.dev/pe/sec/homomorphic-encryption/</guid>
-            <pubDate>Mon, 27 Jan 2025 01:54:21 GMT</pubDate>
-            <description><![CDATA[Homomorphic Encryption]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-개념">동형암호 개념<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="동형암호 개념에 대한 직접 링크" title="동형암호 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>암호화된 데이터를 복호화하지 않고 연산을 수행할 수 있기에  민감한 데이터의 기밀성을 유지하면서 클라우드 컴퓨팅, 빅데이터 분석 등 외부 연산 처리가 가능한 암호화 기법</li>
-<li>서킷 프라이버시: 연산 진행시 연산에 대한 정보를 알지 못하는 성질 / 다중 도약 동형성: 생성된 암호문이 다른 동형 연산의 입력으로 사용가능한 성질 / 기밀성, 연산효율성, 연산가능성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-동작원리-기술요소-유형">동형암호 동작원리, 기술요소, 유형<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="동형암호 동작원리, 기술요소, 유형에 대한 직접 링크" title="동형암호 동작원리, 기술요소, 유형에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-동작원리">동형암호 동작원리<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="동형암호 동작원리에 대한 직접 링크" title="동형암호 동작원리에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>평문의 연산 결과 값과 암호화된 상태에서의 연산 결과 값은 동일</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-기술요소">동형암호 기술요소<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EA%B8%B0%EC%88%A0%EC%9A%94%EC%86%8C" class="hash-link" aria-label="동형암호 기술요소에 대한 직접 링크" title="동형암호 기술요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술요소</th><th>설명</th></tr></thead><tbody><tr><td>구현 원리</td><td>부분 동형 암호 (SHE)</td><td>덧셈과 곱셈 모두 지원, 곱셈은 제한된 횟수까지만 가능</td></tr><tr><td></td><td>스퀴싱 (Squashing)</td><td>복호화 알고리즘을 단순화하여 연산 효율성 개선</td></tr><tr><td></td><td>부트스트래핑 (Bootstrapping)</td><td>암호문을 재암호화하여 무한 연산 가능, 노이즈 감소 지원</td></tr><tr><td>특성</td><td>서킷 프라이버시</td><td>연산 중에도 연산 내용이나 입력값 노출 방지</td></tr><tr><td></td><td>다중 도약 동형성</td><td>한 번 암호화된 데이터로 여러 연산을 수행 가능</td></tr><tr><td></td><td>보안성</td><td>암호문 상태로 연산이 진행되어 데이터 기밀성 보장</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-유형">동형암호 유형<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="동형암호 유형에 대한 직접 링크" title="동형암호 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>유형</th><th>설명</th><th>특징</th></tr></thead><tbody><tr><td>부분 동형암호</td><td>덧셈이나 곱셈 중 한 가지 연산만 지원</td><td>연산 제약, 계산 비용 낮음</td></tr><tr><td>전 동형암호</td><td>덧셈과 곱셈 모두 무제한 지원</td><td>일반적, 연산 속도 느림, 자원 소모 큼</td></tr><tr><td>준 동형암호</td><td>제한된 횟수의 연산을 지원</td><td>연산 횟수 제한, 효율적, 실용적</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-기술동향">동형암호 기술동향<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="동형암호 기술동향에 대한 직접 링크" title="동형암호 기술동향에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>분류</th><th>주요 내용</th><th>활용 사례</th></tr></thead><tbody><tr><td>암호화 기술 개선</td><td>전 동형암호의 복잡도를 낮추고 실시간 연산 가능성을 높이는 연구</td><td>클라우드 데이터 보호</td></tr><tr><td>표준화 노력</td><td>ISO 및 IEEE에서 동형암호 표준화 작업 진행</td><td>의료, 금융 등 산업별 표준 수립</td></tr><tr><td>산업적 활용 확대</td><td>암호화된 데이터 처리 기술을 클라우드 및 AI 환경에 적용</td><td>의료 데이터 분석, 금융 데이터 연산</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
