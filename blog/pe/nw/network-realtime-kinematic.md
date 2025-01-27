@@ -1,11 +1,11 @@
 ---
-title: 네트워크 실시간 측위
+title: NRTK, 네트워크 실시간 측위
 date: 2024-12-21T18:04:45.061+09:00
 description: Network Real-Time Kinematic
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## NRTK 개념

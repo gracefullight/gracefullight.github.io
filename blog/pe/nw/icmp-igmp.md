@@ -5,7 +5,7 @@ description: Internet Control Message Protocol, Internet Group Management Protoc
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## ICMP 개념, 구성도
