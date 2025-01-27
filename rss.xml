@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 06:19:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 06:57:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[IEC 62443]]></title>
+            <link>https://gracefullight.dev/pe/sec/iec-62443/</link>
+            <guid>https://gracefullight.dev/pe/sec/iec-62443/</guid>
+            <pubDate>Mon, 27 Jan 2025 06:57:38 GMT</pubDate>
+            <description><![CDATA[IEC 62443]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-개념">IEC 62443 개념<a href="https://gracefullight.dev/pe/sec/iec-62443/#iec-62443-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IEC 62443 개념에 대한 직접 링크" title="IEC 62443 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>산업제어시스템(IACS) 보안관리 요구사항과 보안기술, 제품의 개발 요구사항 및 구성요소에 대한 기술적 보안 요구사항 등이 정의되어 있는 산업제어시스템 보안 국제 표준</li>
+<li>스마트팩토리, 에너지 관리, 공공 인프라의 실시간 데이터 처리와 안정적 운영, 제어시스템 보안을 위해 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성도-구성요소-보안안정성기준">IEC 62443 구성도, 구성요소, 보안안정성기준<a href="https://gracefullight.dev/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%95%88%EC%95%88%EC%A0%95%EC%84%B1%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="IEC 62443 구성도, 구성요소, 보안안정성기준에 대한 직접 링크" title="IEC 62443 구성도, 구성요소, 보안안정성기준에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성도">IEC 62443 구성도<a href="https://gracefullight.dev/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="IEC 62443 구성도에 대한 직접 링크" title="IEC 62443 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성요소">IEC 62443 구성요소<a href="https://gracefullight.dev/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="IEC 62443 구성요소에 대한 직접 링크" title="IEC 62443 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>General (Part 1)</td><td>용어 정의, 개념, 모델</td><td>7가지 FR(Foundational Requirements) 정의: 식별 및 인증(FR1), 사용자 제어(FR2), 시스템 무결성(FR3), 데이터 기밀성(FR4), 제한된 데이터 흐름(FR5), 이벤트 대응(FR6), 자원 가용성(FR7)</td></tr><tr><td></td><td>용어 및 약어 사전</td><td>IACS 보안에서 사용하는 용어와 약어의 정의 제공, 마스터 용어집 작성</td></tr><tr><td></td><td>시스템 보안 적합성 측정</td><td>IACS의 보안 적합성을 측정할 수 있는 기준과 메트릭 정의</td></tr><tr><td>Policies &amp; Procedures (Part 2)</td><td>보안 프로그램 수립</td><td>사이버 보안 관리 시스템 구축을 위한 정책, 운영 절차 정의</td></tr><tr><td></td><td>보안 관리 가이드</td><td>보안 관리 시스템의 설계, 구현, 운영, 유지보수 가이드를 제공</td></tr><tr><td></td><td>환경 패치 관리</td><td>IT 환경과 다른 IACS 보안 패치 관리 요건 기술</td></tr><tr><td>System (Part 3)</td><td>보안 기술 및 시스템 설계</td><td>IACS 설계 및 유지보수 시 필요한 보안 기술과 요구사항 정의</td></tr><tr><td></td><td>네트워크 및 데이터 보안</td><td>IACS 네트워크 및 데이터 흐름의 보안 목표와 구현 방식 정의</td></tr><tr><td></td><td>위험 관리 및 요구 사항</td><td>시스템 운영 중 발생할 수 있는 위험 요소를 식별하고, 이에 대응하기 위한 요구 사항 정의</td></tr><tr><td>Component (Part 4)</td><td>제품 보안 개발 요구 사항</td><td>보안개발생명주기(SDLC) 요구 사항 및 제품 설계에 따른 보안 기술 정의</td></tr><tr><td></td><td>IACS 컴포넌트 요구 사항</td><td>7가지 FR에 기반하여 각 컴포넌트의 구체적인 보안 요구 사항 제시</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-보안안정성기준">IEC 62443 보안안정성기준<a href="https://gracefullight.dev/pe/sec/iec-62443/#iec-62443-%EB%B3%B4%EC%95%88%EC%95%88%EC%A0%95%EC%84%B1%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="IEC 62443 보안안정성기준에 대한 직접 링크" title="IEC 62443 보안안정성기준에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>레벨</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>SL 1</td><td>무의도적 위협에 대한 보호</td><td>인적 오류로 인한 시스템 오작동 방지</td></tr><tr><td>SL 2</td><td>의도적이지만 단순한 위협에 대한 보호</td><td>저숙련 해커의 단순 공격 방지</td></tr><tr><td>SL 3</td><td>의도적이고 복잡한 위협에 대한 보호</td><td>숙련된 해커의 정교한 공격 방지</td></tr><tr><td>SL 4</td><td>고도의 의도적이고 복잡한 위협에 대한 보호</td><td>자원이 풍부한 공격자의 지속적이고 정교한 공격 방지</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[ISO 31000]]></title>
             <link>https://gracefullight.dev/pe/sec/iso-31000/</link>
@@ -219,33 +240,6 @@
 <table><thead><tr><th>유형</th><th>설명</th><th>특징</th></tr></thead><tbody><tr><td>부분 동형암호</td><td>덧셈이나 곱셈 중 한 가지 연산만 지원</td><td>연산 제약, 계산 비용 낮음</td></tr><tr><td>전 동형암호</td><td>덧셈과 곱셈 모두 무제한 지원</td><td>일반적, 연산 속도 느림, 자원 소모 큼</td></tr><tr><td>준 동형암호</td><td>제한된 횟수의 연산을 지원</td><td>연산 횟수 제한, 효율적, 실용적</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="동형암호-기술동향">동형암호 기술동향<a href="https://gracefullight.dev/pe/sec/homomorphic-encryption/#%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8-%EA%B8%B0%EC%88%A0%EB%8F%99%ED%96%A5" class="hash-link" aria-label="동형암호 기술동향에 대한 직접 링크" title="동형암호 기술동향에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>분류</th><th>주요 내용</th><th>활용 사례</th></tr></thead><tbody><tr><td>암호화 기술 개선</td><td>전 동형암호의 복잡도를 낮추고 실시간 연산 가능성을 높이는 연구</td><td>클라우드 데이터 보호</td></tr><tr><td>표준화 노력</td><td>ISO 및 IEEE에서 동형암호 표준화 작업 진행</td><td>의료, 금융 등 산업별 표준 수립</td></tr><tr><td>산업적 활용 확대</td><td>암호화된 데이터 처리 기술을 클라우드 및 AI 환경에 적용</td><td>의료 데이터 분석, 금융 데이터 연산</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[전자봉투]]></title>
-            <link>https://gracefullight.dev/pe/sec/digital-envelope/</link>
-            <guid>https://gracefullight.dev/pe/sec/digital-envelope/</guid>
-            <pubDate>Mon, 27 Jan 2025 01:22:35 GMT</pubDate>
-            <description><![CDATA[Digital Envelope]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="전자봉투-개념">전자봉투 개념<a href="https://gracefullight.dev/pe/sec/digital-envelope/#%EC%A0%84%EC%9E%90%EB%B4%89%ED%88%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="전자봉투 개념에 대한 직접 링크" title="전자봉투 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>비밀키를 수신자의 공개키로 암호화하여 전송한 뒤 평문을 암호화하여 온라인에서 기밀성을 보장하는 암호화 기술</li>
-<li>승인된 사용자만 메시지 복호화 가능 / 무결성, 부인방지 지원 / 대칭키 암호화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="전자봉투-생성-매커니즘-개봉-절차-핵심-기술">전자봉투 생성 매커니즘, 개봉 절차, 핵심 기술<a href="https://gracefullight.dev/pe/sec/digital-envelope/#%EC%A0%84%EC%9E%90%EB%B4%89%ED%88%AC-%EC%83%9D%EC%84%B1-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B0%9C%EB%B4%89-%EC%A0%88%EC%B0%A8-%ED%95%B5%EC%8B%AC-%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="전자봉투 생성 매커니즘, 개봉 절차, 핵심 기술에 대한 직접 링크" title="전자봉투 생성 매커니즘, 개봉 절차, 핵심 기술에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="전자봉투-생성-매커니즘">전자봉투 생성 매커니즘<a href="https://gracefullight.dev/pe/sec/digital-envelope/#%EC%A0%84%EC%9E%90%EB%B4%89%ED%88%AC-%EC%83%9D%EC%84%B1-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="전자봉투 생성 매커니즘에 대한 직접 링크" title="전자봉투 생성 매커니즘에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>수신자의 공개키로 비밀키를 암호화한 전자봉투를 전송</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="전자봉투-개봉절차">전자봉투 개봉절차<a href="https://gracefullight.dev/pe/sec/digital-envelope/#%EC%A0%84%EC%9E%90%EB%B4%89%ED%88%AC-%EA%B0%9C%EB%B4%89%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="전자봉투 개봉절차에 대한 직접 링크" title="전자봉투 개봉절차에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>전자봉투를 통해 전자서명의 위조불가, 부인방지, 서명자 인증, 변경불가, 재사용 불가와 함께 기밀성 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="전자봉투-핵심-기술">전자봉투 핵심 기술<a href="https://gracefullight.dev/pe/sec/digital-envelope/#%EC%A0%84%EC%9E%90%EB%B4%89%ED%88%AC-%ED%95%B5%EC%8B%AC-%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="전자봉투 핵심 기술에 대한 직접 링크" title="전자봉투 핵심 기술에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>기술</th><th>설명</th><th>알고리즘</th></tr></thead><tbody><tr><td>해시함수</td><td>단방향성과 충돌회피성을 활용하여 고정 길이의 메시지 다이제스트를 생성하는 방식</td><td>MD5, SHA-256</td></tr><tr><td>대칭키 암호화</td><td>동일한 키(비밀키)를 이용해 암호화 및 복호화를 수행하는 방식</td><td>DES, ARIA, SEED</td></tr><tr><td>비대칭키 암호화</td><td>공개키와 비밀키를 이용해 서로 다른 키로 암호화와 복호화를 수행하는 방식</td><td>RSA, 디피헬만</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
