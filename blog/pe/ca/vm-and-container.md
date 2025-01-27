@@ -1,11 +1,11 @@
 ---
 title: VM, Container, 가상머신, 컨테이너
 date: 2024-06-30T23:39:20.335+09:00
-description: VM, Container
+description: Virtual Machine, Container
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/ca
 ---
 
 ## 가상화의 개념
@@ -27,20 +27,46 @@ graph TB
 ```mermaid
 graph TB
   subgraph VM0["VM"]
-    direction LR
-    VM
-    GuestOS["Guest OS"]
-    Hypervisor
-    HostOS0["HOST OS"]
-    HostHW0["HOST H/W"]
+    direction TB
+    subgraph VMs
+      direction LR
+      VM
+      GuestOS["Guest OS"]
+    end
+
+    subgraph VM관리자
+      direction LR
+      Hypervisor
+    end
+
+    subgraph Host리소스
+      direction LR
+      HostOS0["HOST OS"]
+      HostHW0["HOST H/W"]
+    end
+
+    VMs <--> VM관리자 <--> Host리소스
   end
 
   subgraph container0["Container"]
-    direction LR
-    Container
-    ContainerRuntime["Container Runtime"]
-    HostOS["HOST OS"]
-    HostHW["HOST H/W"]
+    direction TB
+    subgraph 컨테이너
+      direction TB
+      App1[App]
+      App2[App]
+    end
+
+    subgraph 컨테이너엔진
+      ContainerRuntime["Container Runtime"]
+    end
+
+    subgraph Host리소스2["Host리소스"]
+      direction LR
+      HostOS["HOST OS"]
+      HostHW["HOST H/W"]
+    end
+
+    컨테이너 <--> 컨테이너엔진 <--> Host리소스2
   end
 ```
 
