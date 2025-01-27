@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.b221e146.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.dc04407c.js" defer="defer"></script>
 <script src="/en/assets/js/main.271b0c5f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -89,13 +89,13 @@
 <ul>
 <li>생성적 적대 신경망 기술의 도입으로 정교하고 사실적인 합성 결과물이 제작되어, 가짜 뉴스, 포르노 등 역기능 발생</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도-핵심요소-사례">딥페이크의 개념도, 핵심요소, 사례<a href="#딥페이크의-개념도-핵심요소-사례" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도-주요기술-사례">딥페이크의 개념도, 주요기술, 사례<a href="#딥페이크의-개념도-주요기술-사례" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도">딥페이크의 개념도<a href="#딥페이크의-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-핵심요소">딥페이크의 핵심요소<a href="#딥페이크의-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터</td><td>합성 대상의 얼굴, 음성, 영상 데이터</td><td>데이터 양과 품질 확보</td></tr><tr><td>딥러닝 모델</td><td>GAN 등 얼굴 합성 및 변형에 특화된 모델</td><td>FaceSwap 등</td></tr><tr><td>영상 생성</td><td>학습된 모델을 이용해 가짜 영상 생성</td><td>모델 성능에 따른 결과 상이</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-주요기술">딥페이크의 주요기술<a href="#딥페이크의-주요기술" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>주요 기술</th><th>설명</th></tr></thead><tbody><tr><td>데이터</td><td>수집 및 훈련</td><td>Source 및 Target 영상을 학습하여 GAN으로 가짜영상을 진짜처럼 학습</td></tr><tr><td></td><td>프레임 적용 및 합성</td><td>색깔, 동작 정보를 LSTM 네트워크로 처리해 영상 재생성</td></tr><tr><td>알고리즘</td><td>GAN</td><td>동영상의 모션 패턴을 모델링하여 3D 모델로 재구성</td></tr><tr><td></td><td>LSTM</td><td>이전 프레임과 현재 프레임의 차이를 벡터화 처리</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-사례">딥페이크의 사례<a href="#딥페이크의-사례" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>연예인 얼굴 합성 음란물, 정치인 얼굴 합성 가짜 뉴스</td><td>사회적 논란 및 피해 발생</td></tr><tr><td>국외</td><td>영화 배우 대역 활 용</td><td>긍정적 활용 가능성 제시</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>연예인 얼굴 합성 음란물, 정치인 얼굴 합성 가짜 뉴스</td><td>사회적 논란 및 피해 발생</td></tr><tr><td>국외</td><td>영화 배우 대역 활용</td><td>긍정적 활용 가능성 제시</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크-고려사항">딥페이크 고려사항<a href="#딥페이크-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>관리적</td><td>오용을 방지위한 윤리적 가이드라인 필요</td><td>내부 관리 체계 구축</td></tr><tr><td>기술적</td><td>워터마킹, NSFW 영상 업로드 필터링</td><td>탐지, 검증 고도화</td></tr><tr><td>제도적</td><td>제작 및 유포에 대한 법적 규제 및 처벌 기준 마련</td><td>국제적 협력 필요</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/ambient-computing/">앰비언트 컴퓨팅</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-05-31T15:12:30.371Z">May 31, 2024</time> · <!-- -->5 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-컴퓨팅의-개요">앰비언트 컴퓨팅의 개요<a href="#앰비언트-컴퓨팅의-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-컴퓨팅의-개념">앰비언트 컴퓨팅의 개념<a href="#앰비언트-컴퓨팅의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -118,7 +118,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-컴퓨팅과-iot의-관계도">앰비언트 컴퓨팅과 IoT의 관계도<a href="#앰비언트-컴퓨팅과-iot의-관계도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-컴퓨팅과-iot-상세-비교">앰비언트 컴퓨팅과 IoT 상세 비교<a href="#앰비언트-컴퓨팅과-iot-상세-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>  앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>앰비언트 컴퓨팅</th><th>IoT</th></tr></thead><tbody><tr><td>개념</td><td>사용자가 인식하지 않아도 자연스럽게 작동하는 컴퓨팅</td><td>다양한 기기가 네트워크에 연결되어 데이터 수집 및 제어 기능 수행</td></tr><tr><td>목표</td><td>사용자 경험의 극대화 및 맞춤형 서비스 제공</td><td>기기 간의 연결성 및 데이터 교환</td></tr><tr><td>기술 요소</td><td>센서, AI, 클라우드 컴퓨팅 등</td><td>센서, 네트워크, 데이터 분석 등</td></tr><tr><td>적용 분야</td><td>스마트 홈, 스마트 시티, 헬스케어 등</td><td>산업 자동화, 스마트 시티, 스마트 농업 등</td></tr><tr><td>서비스 제공 방식</td><td>사용자 행동 및 환경 분석을 통한 자동화 방식</td><td>사용자가 직접 제어하거나 사전 설정된 방식</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="앰비언트-컴퓨팅-활용-방안">앰비언트 컴퓨팅 활용 방안<a href="#앰비언트-컴퓨팅-활용-방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>도시 관리 효율성 향상, 시민 편의 증진</td><td>스마트 시티, 스마트 교통, 스마트 환경 등</td></tr><tr><td>금융</td><td>금융 서비스 접근성 향상, 보안 강화</td><td>개인 맞춤형 금융 서비스, 지능형 보안 시스템 등</td></tr><tr><td>민간</td><td>생활 편의성 증대, 생산성 향상, 건강 관리</td><td>스마트 홈, 스마트 팩토리, 스마트 헬스케어 등</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/gartner-2024/">가트너 10대 전략 기술 트렌드 2024</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-05-01T07:10:00.000Z">May 1, 2024</time> · <!-- -->5 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-10대-전략기술-개요">가트너 10대 전략기술 개요<a href="#가트너-10대-전략기술-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <blockquote>
@@ -128,7 +128,7 @@
 기계고객</p>
 </blockquote>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-10대-전략기술-구성">가트너 10대 전략기술 구성<a href="#가트너-10대-전략기술-구성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">빌더의 부상</mark></td><td>AI 기술로 빌더의 성장과 가치 고도화</td><td>플랫폼 엔지니어링, AI 증강 개발, 산업 클라우드 플랫폼 등</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">투자보호</mark></td><td>AI 기술로 투자자 보호</td><td>AI 신뢰 리스크 보안 관리, 상시 위협 노출 관리</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">가치 전달</mark></td><td>지능형 자동화로 고객 가치 전달</td><td>기계 고객, 증강 연결 인력</td></tr></tbody></table>
+<table><thead><tr><th>구  분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">빌더의 부상</mark></td><td>AI 기술로 빌더의 성장과 가치 고도화</td><td>플랫폼 엔지니어링, AI 증강 개발, 산업 클라우드 플랫폼 등</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">투자보호</mark></td><td>AI 기술로 투자자 보호</td><td>AI 신뢰 리스크 보안 관리, 상시 위협 노출 관리</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">가치 전달</mark></td><td>지능형 자동화로 고객 가치 전달</td><td>기계 고객, 증강 연결 인력</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-10대-전략기술-상세">가트너 10대 전략기술 상세<a href="#가트너-10대-전략기술-상세" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="1-ai-trism">1. AI TRiSM<a href="#1-ai-trism" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
@@ -165,7 +165,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="7-지능형-애플리케이션">7. 지능형 애플리케이션<a href="#7-지능형-애플리케이션" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>Intelligent applications</li>
-<li>AI를 기반으로 사람과 기계에 <mark class="flexible-marker flexible-marker-default">자율적으로 반응</mark>할 수 있는 프로그램</li>
+<li>AI를 기반으로 사람과 기계에 <mark class="flexible-marker flexible-marker-default">자율적으 로 반응</mark>할 수 있는 프로그램</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="8-보편화된-생성형-ai">8. 보편화된 생성형 AI<a href="#8-보편화된-생성형-ai" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
@@ -186,7 +186,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="1-1-설명-가능성-모델-모니터링">1-1. 설명 가능성, 모델 모니터링<a href="#1-1-설명-가능성-모델-모니터링" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>xAI, Explainability / Model Monitoring</li>
-<li>AI <mark class="flexible-marker flexible-marker-default">알고리즘의 설명 가능성 확보</mark>하고 신뢰할 수 있게 하는 것</li>
+<li>AI <mark class="flexible-marker flexible-marker-default">알고리즘의 설명 가  능성 확보</mark>하고 신뢰할 수 있게 하는 것</li>
 <li>AI 모델 성능 모니터링으로 프로세스 효율적 개선 가능</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="1-2-모델옵스">1-2. 모델옵스<a href="#1-2-모델옵스" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -210,7 +210,7 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="#참조" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><a href="https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024" target="_blank" rel="noopener noreferrer">Gartner: Gartner Top 10 Strategic Technology Trends for 2024</a></li>
-<li><a href="https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=82618&amp;bcIdx=26147&amp;parentSeq=26147" target="_blank" rel="noopener noreferrer">NIA: 주요 기관이 전망한 2024년 유망 기술</a></li>
+<li><a href="https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=82618&amp;bcIdx=26147&amp;parentSeq=26147" target="_blank" rel="noopener noreferrer">NIA:   주요 기관이 전망한 2024년 유망 기술</a></li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/web-3-0/">웹 3.0</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T04:47:00.000Z">March 10, 2024</time> · <!-- -->2 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="웹-30의-개요">웹 3.0의 개요<a href="#웹-30의-개요" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="개념">개념<a href="#개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>웹 2.0</th><th>웹 3.0</th></tr></thead><tbody><tr><td>참여</td><td>소유(탈중앙화)</td></tr><tr><td>공유</td><td>융합</td></tr><tr><td>개방</td><td>개인화</td></tr></tbody></table>
@@ -268,7 +268,7 @@
 <ul>
 <li>프라이빗 블록체인은 특정 통제 기관에서 트랜잭션 합의 처리</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="퍼블릭-블록체인-프라이빗-블록체인-구성요소">퍼블릭 블록체인, 프라이 빗 블록체인 구성요소<a href="#퍼블릭-블록체인-프라이빗-블록체인-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="퍼블릭-블록체인-프라이빗-블록체인-구성요소">퍼블릭 블록체인, 프라이빗 블록체인 구성요소<a href="#퍼블릭-블록체인-프라이빗-블록체인-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>퍼블릭 블록체인</th><th>프라이빗 블록체인</th></tr></thead><tbody><tr><td>참여주체</td><td>누구나</td><td>지정된 사용자</td></tr><tr><td>소유자</td><td>없음</td><td>특정 기관</td></tr><tr><td>탈중앙성</td><td>높음</td><td>낮음</td></tr><tr><td>확장성</td><td>낮음</td><td>높음</td></tr><tr><td>보안성</td><td>낮음</td><td>높음</td></tr><tr><td>투명성</td><td>높음</td><td>낮음</td></tr><tr><td>트랜잭션 속도</td><td>느림</td><td>빠름</td></tr><tr><td>합의알고리즘</td><td>PoW, PoS</td><td>PBFT, Raft 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="퍼블릭-블록체인-프라이빗-블록체인-한계점">퍼블릭 블록체인, 프라이빗 블록체인 한계점<a href="#퍼블릭-블록체인-프라이빗-블록체인-한계점" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
@@ -293,7 +293,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="음성-데이터-마이닝-배경">음성 데이터 마이닝 배경<a href="#음성-데이터-마이닝-배경" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
-<li>HMI (Human Machine Interface)가 기존의   텍스트에서 음성으로 변화하고 있고, 톤과 인토네이션의 차이로 같은 문장이라도 화자의 감정을 파악이 가능해짐.</li>
+<li>HMI (Human Machine Interface)가 기존의 텍스트에서 음성으로 변화하고 있고, 톤과 인토네이션의 차이로 같은 문장이라도 화자의 감정을 파악이 가능해짐.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="음성데이터-마이닝의-구성도-구성요소">음성데이터 마이닝의 구성도, 구성요소<a href="#음성데이터-마이닝의-구성도-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="음성데이터-마이닝의-구성도">음성데이터 마이닝의 구성도<a href="#음성데이터-마이닝의-구성도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -301,7 +301,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="음성데이터-마이닝의-구성요소">음성데이터 마이닝의 구성요소<a href="#음성데이터-마이닝의-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>처리기술</td><td>음성 데이터를 디지털 형식으로 변환하고 처리하는 기술</td><td>STT, Media Codec, ADC</td></tr><tr><td>분석기술</td><td>음성 데이터를 분석하고 의미를 도출하는 기술</td><td>데이터 분석 인프라, 시계열 분석 알고리즘, 감정 분석 알고리즘, 상황인지 컴퓨팅</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="음성-데이터-마이닝-적용-방안">음성 데이터 마이닝 적용 방안<a href="#음성-데이터-마이닝-적용-방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>공공 서비스 접근성을 높이고 사회적 포용성을 증대</td><td>음성 민원 자동화</td></tr><tr><td>기업</td><td>업무   효율성 증대 및 운영 비용 절감</td><td>회의록 생성 자동화, 무인화 고객센터, AI 경쟁력 강화</td></tr><tr><td>민간</td><td>개인 편의성 증대 및 새로운 서비스 창출</td><td>실시간 번역 제공, 비대면 원격 진료 기반 마련, IoT 기기 제어</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>공공 서비스 접근성을 높이고 사회적 포용성을 증대</td><td>음성 민원 자동화</td></tr><tr><td>기업</td><td>업무 효율성 증대 및 운영 비용 절감</td><td>회의록 생성 자동화, 무인화 고객센터, AI 경쟁력 강화</td></tr><tr><td>민간</td><td>개인 편의성 증대 및 새로운 서비스 창출</td><td>실시간 번역 제공, 비대면 원격 진료 기반 마련, IoT 기기 제어</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="음성-데이터-마이닝-성공-포인트">음성 데이터 마이닝 성공 포인트<a href="#음성-데이터-마이닝-성공-포인트" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>클라우드 컴퓨팅을 활용하여 온디맨드 방식의 데이터 분석/처리로 비용 절감</li>
@@ -329,8 +329,8 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점과-해결방안">블록체인 저장 방식의 문제점과 해결방안<a href="#블록체인-저장-방식의-문제점과-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점">블록체인 저장 방식의 문제점<a href="#블록체인-저장-방식의-문제점" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
-<li>탈중앙화, 확장성, 보안성 중 모두를 만족할 수 없는 <mark class="flexible-marker flexible-marker-default">블록체인 트릴레마</mark> 존재</li>
-<li>합의   알고리즘 수행에 시간이 걸리므로, 실시간 웹 서비스에는 부적합</li>
+<li>탈중앙화, 확장성, 보안성 중 모  두를 만족할 수 없는 <mark class="flexible-marker flexible-marker-default">블록체인 트릴레마</mark> 존재</li>
+<li>합의 알고리즘 수행에 시간이 걸리므로, 실시간 웹 서비스에는 부적합</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-특성-문제-해결방안">블록체인 저장 특성 문제 해결방안<a href="#블록체인-저장-특성-문제-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>레이어링</td><td>데이터와 처리계층의 분리로 확장성 향상</td><td>오프체인, 사이드체인</td></tr><tr><td>샤딩</td><td>데이터 불할 처리로 확장성 향상</td><td>체인네트워크 샤딩, 코디네이션</td></tr><tr><td>하이브리드</td><td>중앙집중과 탈중앙화의 절충점으로 신뢰성, 보안성, 실시간성 강화</td><td>RDBMS, 카프카 사용</td></tr></tbody></table>

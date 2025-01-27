@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.95d48f0b.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.eb8b80d7.js" defer="defer"></script>
 <script src="/assets/js/main.88f7d744.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -103,11 +103,11 @@
 <ul>
 <li>생성적 적대 신경망 기술의 도입으로 정교하고 사실적인 합성 결과물이 제작되어, 가짜 뉴스, 포르노 등 역기능 발생</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도-핵심요소-사례">딥페이크의 개념도, 핵심요소, 사례<a href="#딥페이크의-개념도-핵심요소-사례" class="hash-link" aria-label="딥페이크의 개념도, 핵심요소, 사례에 대한 직접 링크" title="딥페이크의 개념도, 핵심요소, 사례에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도-주요기술-사례">딥페이크의 개념도, 주요기술, 사례<a href="#딥페이크의-개념도-주요기술-사례" class="hash-link" aria-label="딥페이크의 개념도, 주요기술, 사례에 대한 직접 링크" title="딥페이크의 개념도, 주요기술, 사례에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-개념도">딥페이크의 개념도<a href="#딥페이크의-개념도" class="hash-link" aria-label="딥페이크의 개념도에 대한 직접 링크" title="딥페이크의 개념도에 대한 직접 링크">​</a></h3>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-핵심요소">딥페이크의 핵심요소<a href="#딥페이크의-핵심요소" class="hash-link" aria-label="딥페이크의 핵심요소에 대한 직접 링크" title="딥페이크의 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터</td><td>합성 대상의 얼굴, 음성, 영상 데이터</td><td>데이터 양과 품질 확보</td></tr><tr><td>딥러닝 모델</td><td>GAN 등 얼굴 합성 및 변형에 특화된 모델</td><td>FaceSwap 등</td></tr><tr><td>영상 생성</td><td>학습된 모델을 이용해 가짜 영상 생성</td><td>모델 성능에 따른 결과 상이</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-주요기술">딥페이크의 주요기술<a href="#딥페이크의-주요기술" class="hash-link" aria-label="딥페이크의 주요기술에 대한 직접 링크" title="딥페이크의 주요기술에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>주요 기술</th><th>설명</th></tr></thead><tbody><tr><td>데이터</td><td>수집 및 훈련</td><td>Source 및 Target 영상을 학습하여 GAN으로 가짜영상을 진짜처럼 학습</td></tr><tr><td></td><td>프레임 적용 및 합성</td><td>색깔, 동작 정보를 LSTM 네트워크로 처리해 영상 재생성</td></tr><tr><td>알고리즘</td><td>GAN</td><td>동영상의 모션 패턴을 모델링하여 3D 모델로 재구성</td></tr><tr><td></td><td>LSTM</td><td>이전 프레임과 현재 프레임의 차이를 벡터화 처리</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크의-사례">딥페이크의 사례<a href="#딥페이크의-사례" class="hash-link" aria-label="딥페이크의 사례에 대한 직접 링크" title="딥페이크의 사례에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>국내</td><td>연예인 얼굴 합성 음란물, 정치인 얼굴 합성 가짜 뉴스</td><td>사회적 논란 및 피해 발생</td></tr><tr><td>국외</td><td>영화 배우 대역 활용</td><td>긍정적 활용 가능성 제시</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="딥페이크-고려사항">딥페이크 고려사항<a href="#딥페이크-고려사항" class="hash-link" aria-label="딥페이크 고려사항에 대한 직접 링크" title="딥페이크 고려사항에 대한 직접 링크">​</a></h2>
