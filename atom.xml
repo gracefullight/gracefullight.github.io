@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-27T11:44:23.768Z</updated>
+    <updated>2025-01-27T12:34:26.441Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[제어장치, 마이크로프로그램, 하드와이어]]></title>
+        <id>https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/</id>
+        <link href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/"/>
+        <updated>2025-01-27T12:34:26.441Z</updated>
+        <summary type="html"><![CDATA[The differences between Micro-programmed and Hard-wired Control Units]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="제어장치-개념">제어장치 개념<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#%EC%A0%9C%EC%96%B4%EC%9E%A5%EC%B9%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="제어장치 개념에 대한 직접 링크" title="제어장치 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>프로그램 명령어를 해석하고, 레지스터에 명령실행 제어 신호를 발생시키는 CPU 구성요소</li>
+<li>명령어 해독, 제어신호 생성, 제어신호 인가 기능 수행</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-구현방법-개념-및-구성요소">Micro-programmed 구현방법 개념 및 구성요소<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Micro-programmed 구현방법 개념 및 구성요소에 대한 직접 링크" title="Micro-programmed 구현방법 개념 및 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-개념">Micro-programmed 개념<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Micro-programmed 개념에 대한 직접 링크" title="Micro-programmed 개념에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Micro-programmed" src="https://gracefullight.dev/assets/images/micro-programmed-3512e74694ef73d76d55d7a05612b29e.png" width="1316" height="700" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-구성요소">Micro-programmed 구성요소<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Micro-programmed 구성요소에 대한 직접 링크" title="Micro-programmed 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구성요소</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>IR (Instruction Register)</td><td>명령어 저장</td><td>현재 실행 중인 명령어를 저장하고 제어 메모리 주소를 생성하는 데 사용</td></tr><tr><td>Address Generator</td><td>마이크로 명령 주소 생성</td><td>현재 명령어와 상태를 기반으로 제어 메모리의 다음 주소를 생성</td></tr><tr><td>CAR (Control Address Register)</td><td>제어 메모리 주소 저장</td><td>제어 메모리에서 접근할 주소를 저장</td></tr><tr><td>Control Memory (ROM)</td><td>마이크로코드 저장</td><td>제어 신호 생성을 위한 마이크로 명령어들을 저장</td></tr><tr><td>CDR (Control Data Register)</td><td>제어 데이터 저장</td><td>제어 메모리에서 읽어온 마이크로 명령어를 저장</td></tr><tr><td>Control Signals</td><td>제어 신호</td><td>마이크로 명령어에 따라 생성된 최종 제어 신호</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-구현방법-개념-및-구성요소">Hard-wired 구현방법 개념 및 구성요소<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Hard-wired 구현방법 개념 및 구성요소에 대한 직접 링크" title="Hard-wired 구현방법 개념 및 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-개념">Hard-wired 개념<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Hard-wired 개념에 대한 직접 링크" title="Hard-wired 개념에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Hard-wired" src="https://gracefullight.dev/assets/images/hard-wired-838afeac2c3cb584109bfa1633e83632.png" width="1328" height="710" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-구성요소">Hard-wired 구성요소<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Hard-wired 구성요소에 대한 직접 링크" title="Hard-wired 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구성요소</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>IR (Instruction Register)</td><td>명령어 저장</td><td>현재 실행 중인 명령어를 저장하고 디코더에 전달</td></tr><tr><td>Instruction Decoder</td><td>명령어 해독</td><td>IR에서 전달받은 명령어를 해독하여 제어 신호 생성을 준비</td></tr><tr><td>Control Step Counter</td><td>클록 기반 스텝 제어</td><td>클록 신호를 기반으로 명령 실행 단계를 순차적으로 관리</td></tr><tr><td>Control Signal Generator</td><td>제어 신호 생성</td><td>디코더와 스텝 카운터의 정보를 기반으로 제어 신호를 생성</td></tr><tr><td>Flags</td><td>상태 플래그</td><td>연산 결과나 상태 정보를 저장하고 제어 신호 생성에 활용</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-hard-wired-비교">Micro-programmed, Hard-wired 비교<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-hard-wired-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Micro-programmed, Hard-wired 비교에 대한 직접 링크" title="Micro-programmed, Hard-wired 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>Micro-programmed</th><th>Hard-wired</th></tr></thead><tbody><tr><td>개념</td><td>제어 메모리에 저장된 마이크로코드를 사용하여 제어 신호를 생성하는 방식</td><td>고정된 논리 회로를 사용하여 제어 신호를 생성하는 방식</td></tr><tr><td>속도</td><td>느림, SW 처리</td><td>빠름, HW 회로</td></tr><tr><td>비용</td><td>저가</td><td>고가</td></tr><tr><td>전력소비</td><td>많음</td><td>적음</td></tr><tr><td>적용방식</td><td>CISC</td><td>RISC</td></tr><tr><td>오류발생률</td><td>디버깅 용이, 수정 가능</td><td>설계 오류 시 수정 어려움</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[인터럽트]]></title>
         <id>https://gracefullight.dev/pe/ca/interrupt/</id>
@@ -264,34 +295,6 @@
 <table><thead><tr><th>구분</th><th>전략</th><th>내용</th></tr></thead><tbody><tr><td>데이터지향</td><td>최소화</td><td>프라이버시 침해 가능성을 최소화하기 위해 개인정보의 명확한 활용 목적에 따라 처리되는 개인정보 양을 최소화</td></tr><tr><td></td><td>숨기기</td><td>개인정보가 처리되는 과정에서 평문 전송 등을 방지하여 외부에서 해당 내용을 볼 수 없도록 조치</td></tr><tr><td></td><td>분리</td><td>개인에 대한 다양한 정보를 분리해 저장하여 하나의 DB에서만 식별되지 않도록 조치</td></tr><tr><td></td><td>총체화</td><td>많은 양의 개인정보를 처리할 경우 개인이 식별되지 않도록 식별자를 비식별화하고, 처리 결과는 통계 등 총체적인 형태로 제공</td></tr><tr><td>프로세스 중심 전략</td><td>정보제공</td><td>개인정보 처리와 전반 과정에 대해 정보 주체가 투명하게 알 수 있도록 제공</td></tr><tr><td></td><td>통제</td><td>정보 주체가 개인정보 처리 과정과 전반에 대해 자신의 정보에 대한 권리를 행사할 수 있도록 지원</td></tr><tr><td></td><td>집행</td><td>내부 개인정보보호 정책을 법·제도와 무관하게 강제적으로 시행</td></tr><tr><td></td><td>입증</td><td>컨트롤을 통해 개인정보보호 정책의 효과적 운영과 법적 준수성 입증</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="pbd와-개인정보보호원칙-비교">PbD와 개인정보보호원칙 비교<a href="https://gracefullight.dev/pe/sec/privacy-by-design/#pbd%EC%99%80-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%9B%90%EC%B9%99-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="PbD와 개인정보보호원칙 비교에 대한 직접 링크" title="PbD와 개인정보보호원칙 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>PbD 8대 전략</th><th>개인정보보호 원칙</th></tr></thead><tbody><tr><td>개념</td><td>정보시스템이나 비즈니스 프로세스를 설계하는 초기 단계부터 개인정보보호를 내재화</td><td>개인정보의 수집, 이용, 제공, 보관 등 모든 단계에서 정보주체의 권리를 보호하고 안전하게 처리</td></tr><tr><td>목적</td><td>사전예방</td><td>개인정보 라이프사이클에 대한 보호</td></tr><tr><td>관점</td><td>기본 설정에 의한 프라이버시 보호</td><td>적법하고 공정한 개인정보 수집</td></tr><tr><td>접근방식</td><td>시스템 설계에 통합하여 보호</td><td>정보주체의 권리 보호</td></tr><tr><td>접근방식</td><td>개인의 프라이버시 강화</td><td>기업의 책임과 의무</td></tr><tr><td>범위</td><td>기술적, 조직적, 법적 측면 종합적 접근</td><td>법적인 측면에서 개인정보 처리와 보호</td></tr><tr><td>책임과 의무</td><td>시스템 설계 주체 책임</td><td>개인정보를 처리하는 주체인 기업이나 기관에게 책임과 의무 부여</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI 신뢰성]]></title>
-        <id>https://gracefullight.dev/pe/sec/ai-trust-guide/</id>
-        <link href="https://gracefullight.dev/pe/sec/ai-trust-guide/"/>
-        <updated>2025-01-27T02:33:20.089Z</updated>
-        <summary type="html"><![CDATA[AI Trust Guide]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념">AI 신뢰성 개념<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="AI 신뢰성 개념에 대한 직접 링크" title="AI 신뢰성 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>AI 기술에 내재한 위험과 한계를 극복하고, AI 시스템이 의사결정 및 활동에 영향을 받는 모든 이해관계자의 기대를 충족시키는 능력</li>
-<li>안전성 보장, 사회적 신뢰 구축, 법적 규제 준수, 기업 경쟁력 강화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념도-상세설명-정책동향">AI 신뢰성 개념도, 상세설명, 정책동향<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85-%EC%A0%95%EC%B1%85%EB%8F%99%ED%96%A5" class="hash-link" aria-label="AI 신뢰성 개념도, 상세설명, 정책동향에 대한 직접 링크" title="AI 신뢰성 개념도, 상세설명, 정책동향에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-개념도">AI 신뢰성 개념도<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="AI 신뢰성 개념도에 대한 직접 링크" title="AI 신뢰성 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-상세설명">AI 신뢰성 상세설명<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="AI 신뢰성 상세설명에 대한 직접 링크" title="AI 신뢰성 상세설명에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>속성</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>정확성</td><td>AI 시스템의 의사결정이 정확하고 신뢰할 수 있는지 보장</td><td>의료 진단, 자율주행 AI</td></tr><tr><td>강건성</td><td>환경 변화나 오류에 대한 저항성을 보장</td><td>자율주행 시스템의 장애물 감지</td></tr><tr><td>설명가능성</td><td>AI 의사결정의 근거와 과정을 명확히 설명 가능</td><td>AI 기반 금융 대출 시스템에서 설명된 점수 기준</td></tr><tr><td>투명성</td><td>AI의 개발 및 사용 과정을 명확히 공개</td><td>AI 채용 시스템의 평가 기준 공개</td></tr><tr><td>공정성</td><td>특정 집단에 대한 차별이나 편향이 없음을 보장</td><td>금융 대출 AI의 편향 제거</td></tr><tr><td>책임성</td><td>AI 의사결정과 결과에 대한 책임을 명확히 함</td><td>AI 의사결정 추적 및 기록</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ai-신뢰성-정책동향">AI 신뢰성 정책동향<a href="https://gracefullight.dev/pe/sec/ai-trust-guide/#ai-%EC%8B%A0%EB%A2%B0%EC%84%B1-%EC%A0%95%EC%B1%85%EB%8F%99%ED%96%A5" class="hash-link" aria-label="AI 신뢰성 정책동향에 대한 직접 링크" title="AI 신뢰성 정책동향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>정책/표준</th><th>주요 내용</th></tr></thead><tbody><tr><td>국내</td><td>TTA AI 신뢰성 인증</td><td>AI 생명주기 전반에 걸친 투명성, 공정성, 안정성 등을 인증</td></tr><tr><td></td><td>신뢰할 수 있는 AI 개발안내서</td><td>AI 개발 및 배포 과정에서 윤리적 가이드라인 제공</td></tr><tr><td>국외</td><td>EU AI법</td><td>고위험 AI를 분류하고 적합성 평가를 통해 규제 적용</td></tr><tr><td></td><td>NIST AI 위험관리 프레임워크</td><td>AI의 안전성과 설명 가능성을 포함한 위험 관리 프레임워크 제공</td></tr><tr><td></td><td>ISO/IEC 22989</td><td>AI 신뢰성을 정의하고, 주요 속성을 제시</td></tr></tbody></table>
-<ul>
-<li>AITrustOps, AI TRiSM, NIA 인공지능 학습용 데이터 품질 가이드라인 등을 참고하여 다양한 관점에서 AI 신뢰성 확보 필요</li>
-</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
