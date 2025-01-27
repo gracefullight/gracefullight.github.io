@@ -1,3 +1,6 @@
+# ======================================================================
+# 기술사, 기사
+# ======================================================================
 pe:
   label: "professional-engineer"
   permalink: "/pe"
@@ -39,14 +42,20 @@ pe/sw:
   permalink: "/pe/sw"
   description: "기술사 소프트웨어공학 토픽"
 
+정보처리:
+  label: "정보처리"
+  permalink: "/정보처리"
+  description: "Engineer Information Processing"
+
+# ======================================================================
+# 개인
+# ======================================================================
 me:
   label: "me"
-  permalink: "/me"
   description: "Life Logging"
 
 ielts:
   label: "ielts"
-  permalink: "/ielts"
   description: "International English Language Testing System"
 
 retro:
@@ -54,7 +63,13 @@ retro:
   permalink: "/retro"
   description: "회고"
 
-정보처리:
-  label: "정보처리"
-  permalink: "/정보처리"
-  description: "Engineer Information Processing"
+uae:
+  label: "🇦🇪"
+  description: "UAE"
+
+# ======================================================================
+# 개발
+# ======================================================================
+javascript:
+  label: "javascript"
+  description: "Any application that can be written in JavaScript, will eventually be written in JavaScript"
