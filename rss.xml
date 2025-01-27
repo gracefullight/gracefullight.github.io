@@ -4,10 +4,34 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 27 Jan 2025 04:32:18 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jan 2025 04:56:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[생성형 AI 활용 보안 가이드라인]]></title>
+            <link>https://gracefullight.dev/pe/sec/생성형-AI-활용-보안-가이드라인/</link>
+            <guid>https://gracefullight.dev/pe/sec/생성형-AI-활용-보안-가이드라인/</guid>
+            <pubDate>Mon, 27 Jan 2025 04:56:41 GMT</pubDate>
+            <description><![CDATA[생성형 AI 활용 보안 가이드라인]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-개요">생성형 AI 개요<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="생성형 AI 개요에 대한 직접 링크" title="생성형 AI 개요에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="생성셩-ai-개념">생성셩 AI 개념<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%EC%85%A9-ai-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="생성셩 AI 개념에 대한 직접 링크" title="생성셩 AI 개념에 대한 직접 링크">​</a></h3>
+<ul>
+<li>인공지능 기술의 한 종류로서 이미지, 비디오, 오디오, 텍스트 등을 포함한 대량의 데이터 를 학습하여 사람과 유사한 방식으로 문맥과 의미를 이해하고 새로운 데이터를 자동으로 생성해 주는 기술</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-사례">생성형 AI 사례<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="생성형 AI 사례에 대한 직접 링크" title="생성형 AI 사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>주요 설명</th><th>사례</th></tr></thead><tbody><tr><td>챗봇 및 가상 비서</td><td>사용자의 질문에 답변하고 다양한 작업을 수행하는 AI 기반의 대화형 인터페이스</td><td>ChatGPT, Siri, Alexa</td></tr><tr><td>콘텐츠 생성 도구</td><td>텍스트, 이미지, 비디오 등 다양한 형태의 콘텐츠를 자동으로 생성하는 도구</td><td>ChatGPT, Canva, DALL·E</td></tr><tr><td>언어 번역 서비스</td><td>다양한 언어 간의 실시간 번역을 제공하는 서비스</td><td>DeepL, Google Translate, Papago</td></tr><tr><td>맞춤형 추천 시스템</td><td>사용자 선호도를 기반으로 개인화된 추천을 제공하는 시스템</td><td>Netflix, YouTube, Spotify</td></tr><tr><td>문서 요약 및 분석</td><td>긴 문서를 요약하거나 중요한 정보를 추출하는 도구</td><td>ChatGPT, Notion AI, SummarizeBot</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-원인-및-보안위협">생성형 AI 원인 및 보안위협<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%9B%90%EC%9D%B8-%EB%B0%8F-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91" class="hash-link" aria-label="생성형 AI 원인 및 보안위협에 대한 직접 링크" title="생성형 AI 원인 및 보안위협에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>대표 보안 위협</th><th>주요 원인</th><th>가능한 보안 위협</th></tr></thead><tbody><tr><td>잘못된 정보</td><td>편향최신 데이터 학습 부족<br>환각 현상</td><td>사회적 혼란 조장<br>고위험 의사 결정<br>잘못된 의사 결정 유도</td></tr><tr><td>AI 모델 악용</td><td>적대적 시스템 메시지</td><td>피싱 이메일 및 인물 도용<br>사이버 보안 위협 코드 작성<br>대화형 서비스를 악용한 사이버 범죄<br>커뮤니티 활성화<br>사회 공학적 영향<br>가짜 뉴스 생성</td></tr><tr><td>유사 AI 모델 서비스 빙자</td><td>유사 악성 서비스 접근 유도</td><td>스쿼팅 URL 및 확장 프로그램<br>가짜 애플리케이션</td></tr><tr><td>데이터 유출</td><td>데이터 합성 과정의 문제<br>과도한 훈련 데이터 암기 문제<br>대화 과정에서 개인정보 및 민감 정보 작성</td><td>훈련 데이터 유출<br>데이터 불법 처리 우려<br>기밀 유출<br>대화 기록 유출<br>데이터베이스 해킹 및 회원 추론 공격</td></tr><tr><td>플러그인 취약점</td><td>AI 모델의 적용 범위 확장<br>안정성 확인 미흡<br>해커 공격 범위 확장<br>취약점이 있는 서비스와 연결</td><td>새로운 도메인에서의 모델 오작동<br>‘에이전트’화 된 AI 모델의 악용<br>멀티모달 악용</td></tr><tr><td>확장 프로그램 취약점</td><td>확장 프로그램 내의 악성 서비스 설치<br>서비스 제공 업체의 보안 조치 미흡</td><td>개인정보 수집<br>시스템 공격<br>호스팅 서버 및 스토리지 시스템 위협</td></tr><tr><td>API 취약점</td><td>미흡한 API 키 관리<br>데이터와 명령 사이의 불분명한 경계</td><td>API 키 탈취<br>악의적인 프롬프트 주입</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-개발시-보안위협별-대응방안">생성형 AI 개발시 보안위협별 대응방안<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EB%B3%84-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="생성형 AI 개발시 보안위협별 대응방안에 대한 직접 링크" title="생성형 AI 개발시 보안위협별 대응방안에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>개발 단계</th><th>보안 위협</th><th>대응 방안</th></tr></thead><tbody><tr><td>데이터 수집</td><td>데이터 유출</td><td>데이터 암호화, 접근 제어 강화, 데이터 마스킹, 정기적인 보안 감사</td></tr><tr><td></td><td>데이터 프라이버시 침해</td><td>PII 제거, 데이터 익명화, 프라이버시 보호 기술 적용</td></tr><tr><td>데이터 준비</td><td>데이터 조작</td><td>데이터 무결성 검증, 디지털 서명, 변조 방지 메커니즘 구축</td></tr><tr><td></td><td>모델 중독 (Model Poisoning)</td><td>데이터 검증 및 클렌징, 안전한 데이터 소스 사용, 이상 탐지 시스템 적용</td></tr><tr><td>모델 학습</td><td>악의적인 입력 (Adversarial Attacks)</td><td>입력 검증 및 필터링, 이상 탐지 시스템 적용, 방어적 학습 기법 도입</td></tr><tr><td></td><td>모델 도난 및 역공학</td><td>모델 암호화, 접근 제한, 코드 난독화</td></tr><tr><td>모델 배포</td><td>API 악용</td><td>API 인증 및 권한 부여, Rate Limiting, API Gateway 사용</td></tr><tr><td></td><td>시스템 취약점</td><td>정기적인 취약점 스캔, 보안 패치 적용, 코드 리뷰 강화</td></tr><tr><td></td><td>무단 접근</td><td>다중 인증(MFA), 역할 기반 접근 제어(RBAC), 접근 로그 모니터링</td></tr><tr><td></td><td>서비스 거부 (DoS/DDoS)</td><td>트래픽 모니터링, Rate Limiting, WAF(Web Application Firewall) 적용</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://www.ncsc.go.kr/main/cop/bbs/selectBoardArticle.do?bbsId=InstructionGuide_main&amp;nttId=54340&amp;pageIndex=1#LINK" target="_blank" rel="noopener noreferrer">국가사이버보안센터: 챗GPT 등 생성형 AI 활용 보안 가이드라인</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[안티포렌식]]></title>
             <link>https://gracefullight.dev/pe/sec/anti-forensic/</link>
@@ -239,27 +263,6 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-서비스-수준-협약-상세-설명">클라우드 서비스 수준 협약 상세 설명<a href="https://gracefullight.dev/pe/sec/%EA%B3%B5%EA%B3%B5%EB%B6%80%EB%AC%B8-SaaS-%EC%9D%B4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%88%98%EC%A4%80-%ED%98%91%EC%95%BD-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85" class="hash-link" aria-label="클라우드 서비스 수준 협약 상세 설명에 대한 직접 링크" title="클라우드 서비스 수준 협약 상세 설명에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>기준</th><th>상세 설명</th></tr></thead><tbody><tr><td>시스템 안정성 측면</td><td>가용성</td><td>가용률 측정을 위한 기능 보유 및 유지 능력</td></tr><tr><td></td><td>신뢰성</td><td>서비스 회복시간, 백업 주기, 백업 준수율</td></tr><tr><td></td><td>서비스 지속성</td><td>재무 상태 및 기술 보증, 서비스 추진 전략</td></tr><tr><td>성능 관리 측면</td><td>응답성</td><td>응답시간 측정을 위한 기능 보유 및 유지 능력</td></tr><tr><td></td><td>확장성</td><td>이용자 요구에 따른 자원 양 줄이거나 늘리는 기능</td></tr><tr><td>고객 지원 측면</td><td>서비스 지원</td><td>단말, 운영체계 등 이용자 서비스 지원 체계</td></tr><tr><td></td><td>고객 대응</td><td>고객 대응 및 고객 불만 수집 체계 및 처리 절차</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[PET, 개인정보보호 강화기술]]></title>
-            <link>https://gracefullight.dev/pe/sec/privacy-enhancing-technology/</link>
-            <guid>https://gracefullight.dev/pe/sec/privacy-enhancing-technology/</guid>
-            <pubDate>Sun, 26 Jan 2025 08:56:05 GMT</pubDate>
-            <description><![CDATA[Privacy Enhancing Technology]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="pet-개념">PET 개념<a href="https://gracefullight.dev/pe/sec/privacy-enhancing-technology/#pet-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="PET 개념에 대한 직접 링크" title="PET 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>특정 개인정보 또는 데이터 보호 기능을 달성하거나 개인 또는 자연인 그룹의 개인정보를 위협으로 부터 보호하기 위한 기술 및 프로세스</li>
-<li>AI 개인정보 학습/유출, 클라우드 등 공유 서버 환경 발달, 이동형 영상정보처리기기의 확산</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="pet-유형-적용사례">PET 유형, 적용사례<a href="https://gracefullight.dev/pe/sec/privacy-enhancing-technology/#pet-%EC%9C%A0%ED%98%95-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="PET 유형, 적용사례에 대한 직접 링크" title="PET 유형, 적용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="개인정보-처리-기법-측면의-개인정보보호-강화기술">개인정보 처리 기법 측면의 개인정보보호 강화기술<a href="https://gracefullight.dev/pe/sec/privacy-enhancing-technology/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%B2%98%EB%A6%AC-%EA%B8%B0%EB%B2%95-%EC%B8%A1%EB%A9%B4%EC%9D%98-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8-%EA%B0%95%ED%99%94%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="개인정보 처리 기법 측면의 개인정보보호 강화기술에 대한 직접 링크" title="개인정보 처리 기법 측면의 개인정보보호 강화기술에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술</th><th>설명</th></tr></thead><tbody><tr><td>난독화</td><td>차분 프라이버시</td><td>개인과 연결된 데이터에 무작위성을 부여하거나 노이즈를 적용하여 재식별 가능성을 낮춤</td></tr><tr><td></td><td>합성 데이터 생성(SDG)</td><td>기존 지식을 사용하여 완전한 새로운 데이터를 생성</td></tr><tr><td></td><td>영지식 증명</td><td>정보를 노출하지 않고 진실 여부 검증</td></tr><tr><td>암호화</td><td>동형 암호화(HE)</td><td>일반 텍스트를 공개하지 않고 암호화된 데이터의 연산 수행</td></tr><tr><td></td><td>신원 기반 암호화(IBE)</td><td>전통적 공개키 대신 개인이 생성한 발신자에서 수신자 방향의 메시지에 암호화 적용</td></tr><tr><td></td><td>안전한 다자 연산(SMPC)</td><td>분산 컴퓨팅을 수행하면서 정확성과 최소한의 입력 및 출력 학습을 우선시하여 연산 과정 보호</td></tr><tr><td></td><td>신뢰받는 실행 환경(TEE)</td><td>데이터의 기밀성을 훼손하지 않고 암호화된 키와 민감 데이터를 안전하게 접근하는 기술</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="개인정보-처리-환경-측면의-개인정보보호-강화기술">개인정보 처리 환경 측면의 개인정보보호 강화기술<a href="https://gracefullight.dev/pe/sec/privacy-enhancing-technology/#%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%B2%98%EB%A6%AC-%ED%99%98%EA%B2%BD-%EC%B8%A1%EB%A9%B4%EC%9D%98-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8-%EA%B0%95%ED%99%94%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="개인정보 처리 환경 측면의 개인정보보호 강화기술에 대한 직접 링크" title="개인정보 처리 환경 측면의 개인정보보호 강화기술에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술</th><th>특징</th></tr></thead><tbody><tr><td>연합 및 분석분석</td><td>연합 학습</td><td>개별 엔드포인트로 기계 학습 모델 훈련, 요약 데이터만 중앙 데이터 저장소에 전송할 수 있도록 허용</td></tr><tr><td></td><td>분산 분석</td><td>프라이버시를 보호하는 기계 학습</td></tr><tr><td>데이터 책임도구</td><td>책임 시스템</td><td>데이터에 접근할 수 있는 시기에 대한 규칙 설정 및 집행</td></tr><tr><td></td><td>개인정보 관리시스템</td><td>정보주체에게 자신의 개인정보에 대한 통제권 제공</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="pet-적용사례">PET 적용사례<a href="https://gracefullight.dev/pe/sec/privacy-enhancing-technology/#pet-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="PET 적용사례에 대한 직접 링크" title="PET 적용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>PET 기술</th><th>적용사례</th></tr></thead><tbody><tr><td>애플</td><td>차분 프라이버시 (Differential Privacy)</td><td>메시지 앱, 검색어 추천 시스템에 적용하여 개인 정보 보호 강화</td></tr><tr><td>구글</td><td>연합 학습 (Federated Learning)</td><td>키보드 앱에서 개인정보 전송 기능에 적용, 중앙 서버에 데이터 전송 없이 학습</td></tr><tr><td>메타</td><td>다자간 계산 (Multi-Party Computation, MPC)</td><td>광고 및 마케팅에 활용할 개인정보 수집, 여러 당사자가 협력하여 데이터 분석</td></tr><tr><td>통계청</td><td>안전한 다자 연산 (Secure Multi-Party Computation, SMPC)</td><td>개인정보 보호를 위한 데이터 허브 플랫폼 개발</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
