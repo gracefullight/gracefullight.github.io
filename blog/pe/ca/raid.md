@@ -19,15 +19,15 @@ tags:
 
 | 구분 | 개념도 | 특징 | 최소 디스크 수 |
 | --- | --- | --- | --- |
-| RAID0 | ![raid0](./assets/raid0.jpg) | 데이터 분산 저장, 스트라이핑 | 2 |
-| RAID1 | ![raid1](./assets/raid1.jpg) | 데이터 중복 저장, 미러링 | 2 |
+| RAID0 | ![raid0](./assets/raid0.jpg) | 데이터 분산 저장, 스트라이핑, FT없음, 저비용, 고성능 | 2 |
+| RAID1 | ![raid1](./assets/raid1.jpg) | 데이터 중복 저장, 미러링, 가장 안정적, 고비용 | 2 |
 | RAID2 | - | 해밍코드, 다수 패리티 디스크, 사용안함 | 3 |
 | RAID3 | - | 별도 패리티 디스크, 사용안함 | 3 |
 | RAID4 | - | 블록단위 별도 패리티 디스크, 사용안함 | 3 |
 | RAID5 | ![raid5](./assets/raid5.jpg) | 패리티 스트라이핑, 데이터 무결성 보장 | 3 |
-| RAID6 | ![raid6](./assets/raid6.jpg) | 이중 패리티 스트라이핑, 높은 신뢰성  | 4 |
-| RAID01 | ![raid01](./assets/raid01.jpg) | 스트라이핑 후 미러링, 장애시 전체 복구 | 4 |
-| RAID10 | ![raid10](./assets/raid10.jpg) | 미러링 후 스트라이핑, 손실된 데이터만 복구 | 4 |
+| RAID6 | ![raid6](./assets/raid6.jpg) | 이중 패리티 스트라이핑, 높은 신뢰성 | 4 |
+| RAID01 | ![raid01](./assets/raid01.jpg) | 스트라이핑 후 미러링, 장애시 전체 복구, 고성능, 안정성 | 4 |
+| RAID10 | ![raid10](./assets/raid10.jpg) | 미러링 후 스트라이핑, 손실된 데이터만 복구, 높은 안정성, 실무사용 | 4 |
 
 - RAID50은 최소 디스크 6개 필요
 
