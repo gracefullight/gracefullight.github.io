@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T11:39:41.322Z</updated>
+    <updated>2025-01-28T12:24:55.419Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[위험분석]]></title>
+        <id>https://gracefullight.dev/en/pe/pm/risk-analysis/</id>
+        <link href="https://gracefullight.dev/en/pe/pm/risk-analysis/"/>
+        <updated>2025-01-28T12:24:55.419Z</updated>
+        <summary type="html"><![CDATA[Risk Analysis]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위험분석-개념">위험분석 개념<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EC%9C%84%ED%97%98%EB%B6%84%EC%84%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>정성적 위험 분석<!-- -->
+<ul>
+<li>전문가 판단</li>
+<li>위험 영향 분석</li>
+<li>위험 범주 분류</li>
+</ul>
+</li>
+<li>정량적 위험 분석<!-- -->
+<ul>
+<li>의사결정나무 분석</li>
+<li>금전적 기대값 분석</li>
+<li>몬테카를로 시뮬레이션</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위험분석-유형">위험분석 유형<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EC%9C%84%ED%97%98%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="의사결정나무-분석">의사결정나무 분석<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="의사결정나무분석" src="https://gracefullight.dev/en/assets/images/%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4%EB%B6%84%EC%84%9D-9ada79c1bb51b77d48689d63fe4fcf34.jpg" width="1098" height="772" class="img_xC7_"></td></tr><tr><td>개념</td><td>의사결정규칙을 도표화하여 관심 대상 집단을 소집단 분류 후 분석하는 기법</td></tr><tr><td>특징</td><td>수입규모와 신용기록의 좋고 나쁨에 따른 위험도 분석</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="금전적-기대값-분석">금전적 기대값 분석<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EA%B8%88%EC%A0%84%EC%A0%81-%EA%B8%B0%EB%8C%80%EA%B0%92-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="금전적기대값분석" src="https://gracefullight.dev/en/assets/images/%EA%B8%88%EC%A0%84%EC%A0%81%EA%B8%B0%EB%8C%80%EA%B0%92%EB%B6%84%EC%84%9D-07daa68062a61239d65d77b6484d0651.jpg" width="988" height="678" class="img_xC7_"></td></tr><tr><td>개념</td><td>발생가능 시나리오 따른 미래가치를 통계적 계산하여 기대가치가 더 높은 시나리오를 선택하는 기법</td></tr><tr><td>특징</td><td>의사결정나무 기반 발생확률과 영향력을 모두 고려하여 분석</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="몬테카를로-시뮬레이션-분석">몬테카를로 시뮬레이션 분석<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="몬테카를로시뮬레이션분석" src="https://gracefullight.dev/en/assets/images/%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EB%B6%84%EC%84%9D-ee0777b3913d5e85a4ebdf19db7a9b3e.jpg" width="926" height="716" class="img_xC7_"></td></tr><tr><td>개념</td><td>해를 구하기 어려운 문제를 확률모형과 난수를 이용하여 해를 얻는 시뮬레이션 방법</td></tr><tr><td>특징</td><td>난수생성 후 패턴을 도출하여 목표함수의 확률변수들의 확률분포를 추정</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/project-management" term="pe/project-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[지능정보기술감리 실무가이드]]></title>
         <id>https://gracefullight.dev/en/pe/pm/지능정보기술감리-실무가이드/</id>
@@ -72,7 +110,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념도">클라우드 전환사업 단계별 감리 개념도<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="클라우드 감리" src="https://gracefullight.dev/en/assets/images/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EA%B0%90%EB%A6%AC-4d35f722acbc1a78128c0a6ad5002e15.jpg" width="2408" height="676" class="img_xC7_"></p>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-방법">클라우드 전환사업 단계별 감리 방법<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-계획-수립신청">클라우드 전환 사업 계획 수립/신청<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EA%B3%84%ED%9A%8D-%EC%88%98%EB%A6%BD%EF%BF%BD%EC%8B%A0%EC%B2%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-계획-수립신청">클라우드 전환 사업 계획 수립/신청<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EA%B3%84%ED%9A%8D-%EC%88%98%EB%A6%BD%EC%8B%A0%EC%B2%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>전환 계획 수립 및 준비</td><td>전환 타당성 검토</td><td>클라우드 기반 전환 가능성에 대한 검토 적절성 확인</td></tr><tr><td></td><td>요구사항 및 영향도 분석</td><td>전환 따른 이해관계자 요구사항, OS 지원 영향도 확인</td></tr><tr><td></td><td>자원 구성, 사용량 확정</td><td>성능 안정성 확보 위한 자원 점검 및 사용권 확인</td></tr><tr><td></td><td>구축 및 테스트 계획 수립</td><td>전환에 따른 업무 중단 최소화, 안정성 유지 방안 구축 및 테스트 계획</td></tr><tr><td>전환 실행</td><td>nTOPS 계정 산정</td><td>nTOPS 통합 계정 및 전환 산정 적절성 확인</td></tr><tr><td></td><td>원격접근, 방화벽 방안 산정</td><td>환경 특성 따른 경로 확인, 방화벽 신청 적절성 검토</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-실행서비스-안정화">클라우드 전환 사업 실행/서비스 안정화<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EC%8B%A4%ED%96%89%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%95%88%EC%A0%95%ED%99%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>클라우드 전환</td><td>APP 수정 개발</td><td>IP 변경, 트래픽 분배 등으로 인한 APP 수정 요구 적정성 확인, 테스트 수행</td></tr><tr><td></td><td>APP 원상 복구 설계</td><td>WAS, DB 서버 SW 이관과정의 정상 작동 확인, 연계 SW 영향도 분석</td></tr><tr><td></td><td>클라우드 서비스 이용 환경 구축</td><td>클라우드 리소스를 효율적으로 활용할 수 있는 환경 설정 확인</td></tr><tr><td></td><td>보안 취약점 점검</td><td>HW, APP 등 지원 위험요인 파악, 취약점 분석 및 대응방안 마련</td></tr><tr><td></td><td>데이터 이관</td><td>데이터 이관 계획 수립 및 데이터 무결성 검증 확인</td></tr><tr><td></td><td>통합 테스트 수행</td><td>사용자 환경에서 시나리오 기반 통합 테스트 수행 및 작업 결과 확인</td></tr><tr><td>서비스 안정화</td><td>서비스 전환 및 안정화</td><td>안정적 전환을 위한 APP 및 사용 SW 내 예외 기술 지원 여부, 적정 운영 검토</td></tr></tbody></table>
@@ -126,7 +164,7 @@
         <link href="https://gracefullight.dev/en/pe/ca/multi-gpu/"/>
         <updated>2025-01-28T01:34:39.958Z</updated>
         <summary type="html"><![CDATA[Multi GPU]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="��멀티-gpu-개요">멀티 GPU 개요<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-개요">멀티 GPU 개요<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="multi gpu trends" src="https://gracefullight.dev/en/assets/images/multi-gpu-trends-490e3d4995df05fbb4f0bf2b1098164f.jpg" width="1646" height="700" class="img_xC7_"></p>
 <ul>
 <li>딥러닝에서 대규모 신경망을 효율적으로 학습하기 위해 GPU 활용, 다수 GPU를 연결하기 위한 인터커넥트 기술 발전으로 멀티 GPU 필요성 증가</li>
@@ -141,7 +179,7 @@
 <table><thead><tr><th>구분</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>SM (Streaming Multiprocessor)</td><td>연산 처리 유닛</td><td>GPU 내부에서 병렬 연산을 수행하는 핵심 유닛으로, 작업을 처리하고 메모리 관리 유닛으로 데이터를 전달</td></tr><tr><td>MMU (Memory Management Unit)</td><td>메모리 관리</td><td>GPU의 메모리 액세스를 관리하고 가상 메모리 주소를 물리 메모리 주소로 변환</td></tr><tr><td>NVLink NIC</td><td>데이터 전송 인터페이스</td><td>NVLink를 통해 GPU 간의 고속 데이터 전송을 담당</td></tr><tr><td>NVLink Network Switch</td><td>데이터 전송 경로 관리</td><td>여러 GPU 간 데이터 흐름을 관리하고, 최적의 전송 경로를 설정</td></tr><tr><td>TLB (Translation Lookaside Buffer)</td><td>주소 변환 캐싱</td><td>MMU에서 자주 사용하는 주소 변환 결과를 캐싱하여 속도 향상</td></tr><tr><td>HBM (High Bandwidth Memory)</td><td>고속 메모리</td><td>고속 메모리로 데이터 저장 및 접근을 지원, GPU 연산 속도 최적화</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-장점">멀티 GPU 장점<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>장점</th><th>설명</th></tr></thead><tbody><tr><td>성능향상</td><td>실시간 처리</td><td>멀티 GPU를 통해 연산 작업을 병렬로 처리하여 실시간 성능을 향상시킴</td></tr><tr><td></td><td>대규모 처리</td><td>대규모 데이터 세트나 복잡한 모델을 빠르게 학습 및 추론 가능</td></tr><tr><td>자원최적화</td><td>메모리 용량</td><td>각 GPU의 메모리를 활용하여 단일 GPU의 메모리 제한을 극복</td></tr><tr><td></td><td>모델 병렬화</td><td>모델을 여러 GPU로 분산하여 병렬 연산을 최적화</td></tr><tr><td>확장성</td><td>GPU 확장</td><td>추가 GPU를 연결하여 시스템의 연산 성능을 손쉽게 확장 가능</td></tr><tr><td></td><td>데이터 추가</td><td>대규모 데이터 처리 시 여러 GPU를 활용하여 병렬 데이터 전처리 및 학습 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-학습-환경-구축시-고려사항">멀티 GPU 학습 환경 구축시 고려사항<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%99%EC%8A%B5-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-학습-환경-구축시-고려사항">멀티 GPU 학습 환경 구축시 고려사항<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%99%EC%8A%B5-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EF%BF%BD%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>고려사항</th><th>비고</th></tr></thead><tbody><tr><td>물리적 인프라</td><td>HW구성</td><td>GPU 선택, 서버, CPU, 파워, 냉각시스템</td></tr><tr><td></td><td>NW구성</td><td>내부연결, 서버 간 ㅇ녀결, 로드밸런싱, 스토리지 네트워크</td></tr><tr><td>논리적 시스템</td><td>SW환경</td><td>OS, 프레임워크, 분산훈련, 모니터링 도구</td></tr><tr><td></td><td>성능최적화</td><td>GPU 메모리 관리, 연산정밀도, 배치 크기, 하이퍼파라미터 튜닝</td></tr><tr><td></td><td>병렬처리 환경</td><td>데이터 병렬화, 파이프라인 병렬화, 모델 병렬화</td></tr></tbody></table>
 <ul>
 <li>TIA-942 데이터센터 구축을 위한 표준 요구사항을 참조하여 비용효율성과 가용성 제고</li>
@@ -248,31 +286,6 @@
 <table><thead><tr><th>구분</th><th>측면</th><th>장점</th></tr></thead><tbody><tr><td>기술적</td><td>품질측면</td><td>칩 분할 생산 통한 수율향상</td></tr><tr><td></td><td>제조측면</td><td>바른 설계와 제작 가능</td></tr><tr><td></td><td>결합측면</td><td>상이한 이종칩 결합 가능</td></tr><tr><td>산업적</td><td>비용측면</td><td>제작 및 설계 비용 감소</td></tr><tr><td></td><td>개발측면</td><td>핵심 기술 개발 효율</td></tr><tr><td></td><td>시장측면</td><td>웨이퍼 칩 설계, 제작 진입장벽 낮춤</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="soc-sip-chiplet-비교">SoC, SiP, Chiplet 비교<a href="https://gracefullight.dev/en/pe/ca/chiplet/#soc-sip-chiplet-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>SoC</th><th>SiP</th><th>Chiplet</th></tr></thead><tbody><tr><td>구조</td><td>단일 칩 내 모든 기능 통합</td><td>여러 다이를 하나의 패키지로 통합</td><td>개별/기능별 모듈형 칩 통합</td></tr><tr><td>유연성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>성능최적화</td><td>제한적</td><td>제한적</td><td>각 기능별 최적화 가능</td></tr><tr><td>비용효율성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>개발기간</td><td>김</td><td>중간</td><td>짧음</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[캐시]]></title>
-        <id>https://gracefullight.dev/en/pe/ca/cache/</id>
-        <link href="https://gracefullight.dev/en/pe/ca/cache/"/>
-        <updated>2025-01-27T13:13:52.870Z</updated>
-        <summary type="html"><![CDATA[Cache]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-개념">캐시 개념<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>CPU와 주기억장치 간의 속도차를 완화시켜 프로세서 대기시간을 최소화를 위한 고속 메모리</li>
-<li>캐시 용량이 메인 메모리보다 작아 일부분만 적재되므로 최고의 적중률을 내기 위해 매핑 기법 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시메모리-매핑-방식">캐시메모리 매핑 방식<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%A7%A4%ED%95%91-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>직접 사상</th><th>연관 사상</th><th>집합 연관 사상</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="direct" src="https://gracefullight.dev/en/assets/images/direct-mapping-7f5a88ad42347a48f42b02fca85320cd.png" width="1096" height="842" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="associative" src="https://gracefullight.dev/en/assets/images/associative-mapping-e4cc7d722108d948813d0803e801c9fd.png" width="1158" height="862" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="set-associative" src="https://gracefullight.dev/en/assets/images/set-associative-mapping-5eab21235ddef4acccd1c5881c83097c.png" width="1150" height="800" class="img_xC7_"></td></tr><tr><td>개념</td><td>메모리 블록이 캐시의 특정 라인으로만 로딩 가능</td><td>메모리 블록이 임의의 라인으로 로딩 가능</td><td>메모리 블록이 특정 집합의 모든 라인에 로딩 가능</td></tr><tr><td>장점</td><td>회로 구현 간단, 처리 속도 향상</td><td>캐시 적중률 향상</td><td>캐시:메모리 = N:1로 효율적</td></tr><tr><td>단점</td><td>캐시 실패율 높음</td><td>회로 복잡, 처리 속도 느림</td><td>회로 복잡</td></tr><tr><td>구조</td><td>지정된 특정 라인으로 로딩 가능</td><td>임의의 라인으로 로딩 가능</td><td>특정 집합의 모든 라인에 로딩 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-쓰기-정책">캐시 쓰기 정책<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EC%93%B0%EA%B8%B0-%EC%A0%95%EC%B1%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>Write-Through</th><th>Write-Back</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="write-through" src="https://gracefullight.dev/en/assets/images/write-through-d10b6e19cb0bd4363958f26e1ffe7661.png" width="600" height="314" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="write-back" src="https://gracefullight.dev/en/assets/images/write-back-c3d8158a711c16a30d9d3ab49c5f947a.png" width="602" height="302" class="img_xC7_"></td></tr><tr><td>개념</td><td>모든 쓰기 동작들이 캐시와 주기억장치에 동시에 수행되는 방식</td><td>캐시에서 데이터 변경 후 주기억장치에는 나중에 블록을 복사하여 갱신하는 방식</td></tr><tr><td>특징</td><td>단순, 일관성 보장</td><td>쓰기동작 최소화, 짧은 쓰기 시간</td></tr><tr><td></td><td>긴 쓰기 시간, 많은 트래픽</td><td>일관성 유지 어려움, 블록 교체시 상태 확인 필요</td></tr><tr><td>일관성 문제</td><td><img decoding="async" loading="lazy" alt="write-through" src="https://gracefullight.dev/en/assets/images/write-through-issue-6e112735e46403c6afc8f475ca51c7f5.png" width="1228" height="396" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="write-back" src="https://gracefullight.dev/en/assets/images/write-back-issue-f818fc8d3b1d8471e43e805276f1ee43.png" width="1426" height="388" class="img_xC7_"></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-일관성-유지-기법">캐시 일관성 유지 기법<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EC%9D%BC%EA%B4%80%EC%84%B1-%EC%9C%A0%EC%A7%80-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>기법</th><th>설명</th></tr></thead><tbody><tr><td>SW 기법</td><td>공유 캐시 사용</td><td>모든 프로세서가 하나의 공유 캐시를 사용</td></tr><tr><td></td><td></td><td>항상 캐시 일관성이 유지</td></tr><tr><td></td><td></td><td>프로세서 간 캐시 액세스 충돌로 성능 저하 초래</td></tr><tr><td></td><td>공유 변수 캐시 미사용</td><td>공유변수를 캐시에 저장하지 않는 기법</td></tr><tr><td></td><td></td><td>캐시 저장 불가능 데이터: Lock 변수, 프로세스 큐와 같은 공유 데이터 구조, 입출력 영역에 의해 보호되는 데이터</td></tr><tr><td></td><td></td><td>캐시 적중률 저하 및 I/O 성능 저하 초래</td></tr><tr><td>HW 기법</td><td>디렉토리 프로토콜</td><td>캐시의 정보 상태(캐시 블록 공유상태, 노드 등)을 주기억장치 디렉토리에 저장하여 일관성을 보장하는 방법</td></tr><tr><td></td><td></td><td>Full Map 디렉토리: 디렉토리에 모든 캐시의 포인터와 데이터 저장</td></tr><tr><td></td><td></td><td>Limited 디렉토리: Full Map 디렉토리의 기억장소 부담 감소</td></tr><tr><td></td><td></td><td>Chained 디렉토리: 캐시 포인터를 linked list로 연결, 기억장소 부담 감소</td></tr><tr><td></td><td></td><td>Passive한 방법이며 다중서버 복잡한 시스템에 적합</td></tr><tr><td></td><td>스누피 프로토콜</td><td>멀티 프로세서 내의 모든 캐시 제어기에 캐시 일관성 유지를 위한 정보를 브로드캐스트하는 기법</td></tr><tr><td></td><td></td><td>스누피 제어기: 다른 프로세서에 의한 메모리 액세스 감지 후 상태 조절</td></tr><tr><td></td><td></td><td>쓰기 갱신(Write Update): Write 발생 시 모든 캐시에 갱신된 정보 전송</td></tr><tr><td></td><td></td><td>쓰기 무효(Write Invalidate): Write 발생 시 Invalid 메시지로 브로드캐스팅</td></tr><tr><td></td><td></td><td>MESI 프로토콜: Modified(수정), Exclusive(배타), Shared(2개 이상의 캐시에 공유), Invalid(무효, 다른 캐시가 수정) 4가지 상태로 데이터 유효성 여부 판단</td></tr><tr><td></td><td></td><td>Active한 방법, 소규모 시스템, 높은 버스 대역폭</td></tr><tr><td>프로토콜</td><td>기타 프로토콜</td><td>MEI, MSI, MOESI, MESIF 프로토콜</td></tr><tr><td></td><td></td><td>O(Owned): 변경 상태의 캐시 블록을 다른 곳에서 읽은 경우</td></tr><tr><td></td><td></td><td>F(Forwarding): 여러 프로세서가 공유한 캐시 블록 접근 시</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>

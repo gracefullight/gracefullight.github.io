@@ -4,10 +4,44 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 11:39:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 12:24:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[위험분석]]></title>
+            <link>https://gracefullight.dev/pe/pm/risk-analysis/</link>
+            <guid>https://gracefullight.dev/pe/pm/risk-analysis/</guid>
+            <pubDate>Tue, 28 Jan 2025 12:24:55 GMT</pubDate>
+            <description><![CDATA[Risk Analysis]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위험분석-개념">위험분석 개념<a href="https://gracefullight.dev/pe/pm/risk-analysis/#%EC%9C%84%ED%97%98%EB%B6%84%EC%84%9D-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="위험분석 개념에 대한 직접 링크" title="위험분석 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>정성적 위험 분석<!-- -->
+<ul>
+<li>전문가 판단</li>
+<li>위험 영향 분석</li>
+<li>위험 범주 분류</li>
+</ul>
+</li>
+<li>정량적 위험 분석<!-- -->
+<ul>
+<li>의사결정나무 분석</li>
+<li>금전적 기대값 분석</li>
+<li>몬테카를로 시뮬레이션</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="위험분석-유형">위험분석 유형<a href="https://gracefullight.dev/pe/pm/risk-analysis/#%EC%9C%84%ED%97%98%EB%B6%84%EC%84%9D-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="위험분석 유형에 대한 직접 링크" title="위험분석 유형에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="의사결정나무-분석">의사결정나무 분석<a href="https://gracefullight.dev/pe/pm/risk-analysis/#%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="의사결정나무 분석에 대한 직접 링크" title="의사결정나무 분석에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="의사결정나무분석" src="https://gracefullight.dev/assets/images/%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4%EB%B6%84%EC%84%9D-9ada79c1bb51b77d48689d63fe4fcf34.jpg" width="1098" height="772" class="img_xC7_"></td></tr><tr><td>개념</td><td>의사결정규칙을 도표화하여 관심 대상 집단을 소집단 분류 후 분석하는 기법</td></tr><tr><td>특징</td><td>수입규모와 신용기록의 좋고 나쁨에 따른 위험도 분석</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="금전적-기대값-분석">금전적 기대값 분석<a href="https://gracefullight.dev/pe/pm/risk-analysis/#%EA%B8%88%EC%A0%84%EC%A0%81-%EA%B8%B0%EB%8C%80%EA%B0%92-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="금전적 기대값 분석에 대한 직접 링크" title="금전적 기대값 분석에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="금전적기대값분석" src="https://gracefullight.dev/assets/images/%EA%B8%88%EC%A0%84%EC%A0%81%EA%B8%B0%EB%8C%80%EA%B0%92%EB%B6%84%EC%84%9D-07daa68062a61239d65d77b6484d0651.jpg" width="988" height="678" class="img_xC7_"></td></tr><tr><td>개념</td><td>발생가능 시나리오 따른 미래가치를 통계적 계산하여 기대가치가 더 높은 시나리오를 선택하는 기법</td></tr><tr><td>특징</td><td>의사결정나무 기반 발생확률과 영향력을 모두 고려하여 분석</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="몬테카를로-시뮬레이션-분석">몬테카를로 시뮬레이션 분석<a href="https://gracefullight.dev/pe/pm/risk-analysis/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="몬테카를로 시뮬레이션 분석에 대한 직접 링크" title="몬테카를로 시뮬레이션 분석에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="몬테카를로시뮬레이션분석" src="https://gracefullight.dev/assets/images/%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EB%B6%84%EC%84%9D-ee0777b3913d5e85a4ebdf19db7a9b3e.jpg" width="926" height="716" class="img_xC7_"></td></tr><tr><td>개념</td><td>해를 구하기 어려운 문제를 확률모형과 난수를 이용하여 해를 얻는 시뮬레이션 방법</td></tr><tr><td>특징</td><td>난수생성 후 패턴을 도출하여 목표함수의 확률변수들의 확률분포를 추정</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/project-management</category>
+        </item>
         <item>
             <title><![CDATA[지능정보기술감리 실무가이드]]></title>
             <link>https://gracefullight.dev/pe/pm/지능정보기술감리-실무가이드/</link>
@@ -217,27 +251,6 @@
 <table><thead><tr><th>구분</th><th>측면</th><th>장점</th></tr></thead><tbody><tr><td>기술적</td><td>품질측면</td><td>칩 분할 생산 통한 수율향상</td></tr><tr><td></td><td>제조측면</td><td>바른 설계와 제작 가능</td></tr><tr><td></td><td>결합측면</td><td>상이한 이종칩 결합 가능</td></tr><tr><td>산업적</td><td>비용측면</td><td>제작 및 설계 비용 감소</td></tr><tr><td></td><td>개발측면</td><td>핵심 기술 개발 효율</td></tr><tr><td></td><td>시장측면</td><td>웨이퍼 칩 설계, 제작 진입장벽 낮춤</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="soc-sip-chiplet-비교">SoC, SiP, Chiplet 비교<a href="https://gracefullight.dev/pe/ca/chiplet/#soc-sip-chiplet-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="SoC, SiP, Chiplet 비교에 대한 직접 링크" title="SoC, SiP, Chiplet 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>SoC</th><th>SiP</th><th>Chiplet</th></tr></thead><tbody><tr><td>구조</td><td>단일 칩 내 모든 기능 통합</td><td>여러 다이를 하나의 패키지로 통합</td><td>개별/기능별 모듈형 칩 통합</td></tr><tr><td>유연성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>성능최적화</td><td>제한적</td><td>제한적</td><td>각 기능별 최적화 가능</td></tr><tr><td>비용효율성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>개발기간</td><td>김</td><td>중간</td><td>짧음</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/computer-architecture</category>
-        </item>
-        <item>
-            <title><![CDATA[캐시]]></title>
-            <link>https://gracefullight.dev/pe/ca/cache/</link>
-            <guid>https://gracefullight.dev/pe/ca/cache/</guid>
-            <pubDate>Mon, 27 Jan 2025 13:13:52 GMT</pubDate>
-            <description><![CDATA[Cache]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-개념">캐시 개념<a href="https://gracefullight.dev/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="캐시 개념에 대한 직접 링크" title="캐시 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>CPU와 주기억장치 간의 속도차를 완화시켜 프로세서 대기시간을 최소화를 위한 고속 메모리</li>
-<li>캐시 용량이 메인 메모리보다 작아 일부분만 적재되므로 최고의 적중률을 내기 위해 매핑 기법 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시메모리-매핑-방식">캐시메모리 매핑 방식<a href="https://gracefullight.dev/pe/ca/cache/#%EC%BA%90%EC%8B%9C%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%A7%A4%ED%95%91-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="캐시메모리 매핑 방식에 대한 직접 링크" title="캐시메모리 매핑 방식에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>직접 사상</th><th>연관 사상</th><th>집합 연관 사상</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="direct" src="https://gracefullight.dev/assets/images/direct-mapping-7f5a88ad42347a48f42b02fca85320cd.png" width="1096" height="842" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="associative" src="https://gracefullight.dev/assets/images/associative-mapping-e4cc7d722108d948813d0803e801c9fd.png" width="1158" height="862" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="set-associative" src="https://gracefullight.dev/assets/images/set-associative-mapping-5eab21235ddef4acccd1c5881c83097c.png" width="1150" height="800" class="img_xC7_"></td></tr><tr><td>개념</td><td>메모리 블록이 캐시의 특정 라인으로만 로딩 가능</td><td>메모리 블록이 임의의 라인으로 로딩 가능</td><td>메모리 블록이 특정 집합의 모든 라인에 로딩 가능</td></tr><tr><td>장점</td><td>회로 구현 간단, 처리 속도 향상</td><td>캐시 적중률 향상</td><td>캐시:메모리 = N:1로 효율적</td></tr><tr><td>단점</td><td>캐시 실패율 높음</td><td>회로 복잡, 처리 속도 느림</td><td>회로 복잡</td></tr><tr><td>구조</td><td>지정된 특정 라인으로 로딩 가능</td><td>임의의 라인으로 로딩 가능</td><td>특정 집합의 모든 라인에 로딩 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-쓰기-정책">캐시 쓰기 정책<a href="https://gracefullight.dev/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EC%93%B0%EA%B8%B0-%EC%A0%95%EC%B1%85" class="hash-link" aria-label="캐시 쓰기 정책에 대한 직접 링크" title="캐시 쓰기 정책에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>Write-Through</th><th>Write-Back</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="write-through" src="https://gracefullight.dev/assets/images/write-through-d10b6e19cb0bd4363958f26e1ffe7661.png" width="600" height="314" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="write-back" src="https://gracefullight.dev/assets/images/write-back-c3d8158a711c16a30d9d3ab49c5f947a.png" width="602" height="302" class="img_xC7_"></td></tr><tr><td>개념</td><td>모든 쓰기 동작들이 캐시와 주기억장치에 동시에 수행되는 방식</td><td>캐시에서 데이터 변경 후 주기억장치에는 나중에 블록을 복사하여 갱신하는 방식</td></tr><tr><td>특징</td><td>단순, 일관성 보장</td><td>쓰기동작 최소화, 짧은 쓰기 시간</td></tr><tr><td></td><td>긴 쓰기 시간, 많은 트래픽</td><td>일관성 유지 어려움, 블록 교체시 상태 확인 필요</td></tr><tr><td>일관성 문제</td><td><img decoding="async" loading="lazy" alt="write-through" src="https://gracefullight.dev/assets/images/write-through-issue-6e112735e46403c6afc8f475ca51c7f5.png" width="1228" height="396" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="write-back" src="https://gracefullight.dev/assets/images/write-back-issue-f818fc8d3b1d8471e43e805276f1ee43.png" width="1426" height="388" class="img_xC7_"></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-일관성-유지-기법">캐시 일관성 유지 기법<a href="https://gracefullight.dev/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EC%9D%BC%EA%B4%80%EC%84%B1-%EC%9C%A0%EC%A7%80-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="캐시 일관성 유지 기법에 대한 직접 링크" title="캐시 일관성 유지 기법에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>기법</th><th>설명</th></tr></thead><tbody><tr><td>SW 기법</td><td>공유 캐시 사용</td><td>모든 프로세서가 하나의 공유 캐시를 사용</td></tr><tr><td></td><td></td><td>항상 캐시 일관성이 유지</td></tr><tr><td></td><td></td><td>프로세서 간 캐시 액세스 충돌로 성능 저하 초래</td></tr><tr><td></td><td>공유 변수 캐시 미사용</td><td>공유변수를 캐시에 저장하지 않는 기법</td></tr><tr><td></td><td></td><td>캐시 저장 불가능 데이터: Lock 변수, 프로세스 큐와 같은 공유 데이터 구조, 입출력 영역에 의해 보호되는 데이터</td></tr><tr><td></td><td></td><td>캐시 적중률 저하 및 I/O 성능 저하 초래</td></tr><tr><td>HW 기법</td><td>디렉토리 프로토콜</td><td>캐시의 정보 상태(캐시 블록 공유상태, 노드 등)을 주기억장치 디렉토리에 저장하여 일관성을 보장하는 방법</td></tr><tr><td></td><td></td><td>Full Map 디렉토리: 디렉토리에 모든 캐시의 포인터와 데이터 저장</td></tr><tr><td></td><td></td><td>Limited 디렉토리: Full Map 디렉토리의 기억장소 부담 감소</td></tr><tr><td></td><td></td><td>Chained 디렉토리: 캐시 포인터를 linked list로 연결, 기억장소 부담 감소</td></tr><tr><td></td><td></td><td>Passive한 방법이며 다중서버 복잡한 시스템에 적합</td></tr><tr><td></td><td>스누피 프로토콜</td><td>멀티 프로세서 내의 모든 캐시 제어기에 캐시 일관성 유지를 위한 정보를 브로드캐스트하는 기법</td></tr><tr><td></td><td></td><td>스누피 제어기: 다른 프로세서에 의한 메모리 액세스 감지 후 상태 조절</td></tr><tr><td></td><td></td><td>쓰기 갱신(Write Update): Write 발생 시 모든 캐시에 갱신된 정보 전송</td></tr><tr><td></td><td></td><td>쓰기 무효(Write Invalidate): Write 발생 시 Invalid 메시지로 브로드캐스팅</td></tr><tr><td></td><td></td><td>MESI 프로토콜: Modified(수정), Exclusive(배타), Shared(2개 이상의 캐시에 공유), Invalid(무효, 다른 캐시가 수정) 4가지 상태로 데이터 유효성 여부 판단</td></tr><tr><td></td><td></td><td>Active한 방법, 소규모 시스템, 높은 버스 대역폭</td></tr><tr><td>프로토콜</td><td>기타 프로토콜</td><td>MEI, MSI, MOESI, MESIF 프로토콜</td></tr><tr><td></td><td></td><td>O(Owned): 변경 상태의 캐시 블록을 다른 곳에서 읽은 경우</td></tr><tr><td></td><td></td><td>F(Forwarding): 여러 프로세서가 공유한 캐시 블록 접근 시</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/computer-architecture</category>
         </item>
