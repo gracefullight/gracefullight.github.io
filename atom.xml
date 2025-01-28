@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T13:35:29.823Z</updated>
+    <updated>2025-01-28T22:22:05.061Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[NPU]]></title>
+        <id>https://gracefullight.dev/pe/conv/npu/</id>
+        <link href="https://gracefullight.dev/pe/conv/npu/"/>
+        <updated>2025-01-28T22:22:05.061Z</updated>
+        <summary type="html"><![CDATA[Neural Processing Unit]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="npu-개념">NPU 개념<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NPU 개념에 대한 직접 링크" title="NPU 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>AI, 딥러닝 활용을 위해 행렬연산 등 대량 병렬처리를 효과적으로 수행할 수 있는 차세대 반도체</li>
+<li>저전력, 고성능, 고효율, 온디바이스 AI, ML Framework 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성도-구성요소-gpu-비교">NPU 구성도, 구성요소, GPU 비교<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-gpu-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NPU 구성도, 구성요소, GPU 비교에 대한 직접 링크" title="NPU 구성도, 구성요소, GPU 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성도">NPU 구성도<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="NPU 구성도에 대한 직접 링크" title="NPU 구성도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="NPU" src="https://gracefullight.dev/assets/images/npu-aa20a88037e6f315a633493081b15318.jpg" width="2566" height="788" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성요소">NPU 구성요소<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="NPU 구성요소에 대한 직접 링크" title="NPU 구성요소에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cpu-구성-요소">CPU 구성 요소<a href="https://gracefullight.dev/pe/conv/npu/#cpu-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="CPU 구성 요소에 대한 직접 링크" title="CPU 구성 요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성 요소</th><th>설명</th></tr></thead><tbody><tr><td>연산부</td><td>신경망 ALU</td><td>뉴런 기반 산술 및 논리 연산을 수행하는 장치</td></tr><tr><td></td><td>레지스터</td><td>연산 속도를 높이기 위해 데이터 및 명령어를 저장하는 초고속 메모리</td></tr><tr><td></td><td>Processing Engine</td><td>명령어 실행 및 데이터 처리를 담당하는 핵심 연산 유닛</td></tr><tr><td>제어부</td><td>버스 스케줄러</td><td>CPU 내 데이터 및 명령 전송을 최적화하는 스케줄링 장치</td></tr><tr><td></td><td>버스</td><td>CPU 내부 및 외부 장치 간 데이터 전송을 위한 경로</td></tr><tr><td>메모리부</td><td>캐시(Cache)</td><td>자주 사용하는 데이터를 저장하여 CPU 접근 속도를 향상</td></tr><tr><td></td><td>DMA(Direct Memory Access)</td><td>CPU 개입 없이 데이터 전송을 수행하여 성능 최적화</td></tr><tr><td>입출력부</td><td>I/O 컨트롤러</td><td>외부 장치와의 데이터 입출력을 관리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-gpu-비교">NPU, GPU 비교<a href="https://gracefullight.dev/pe/conv/npu/#npu-gpu-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NPU, GPU 비교에 대한 직접 링크" title="NPU, GPU 비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>NPU</th><th>GPU</th></tr></thead><tbody><tr><td>목적</td><td>딥러닝 및 AI 가속, 신경망 연산 최적화</td><td>그래픽 및 범용 병렬 연산 (GPGPU)</td></tr><tr><td>특징</td><td>저전력, 고성능, 고효율, 최적화된 AI 연산</td><td>대량의 병렬 연산, 높은 메모리 대역폭</td></tr><tr><td>구조</td><td>활성화 함수, 신경망 ALU, 메모리 컨트롤러</td><td>SP (Streaming Processor), SIMD, HBM</td></tr><tr><td>연산 방식</td><td>행렬 연산(MAC, Matrix Multiply-Accumulate) 최적화</td><td>병렬 처리(벡터 연산, 픽셀 렌더링)</td></tr><tr><td>데이터 처리</td><td>텐서 연산 최적화(Tensor Core, TPU 등)</td><td>부동소수점 연산(FP32, FP64), 벡터 연산</td></tr><tr><td>활용 분야</td><td>AI, 딥러닝, 엣지 컴퓨팅, 자율주행</td><td>3D 그래픽, 데이터 병렬처리, 게임, 영상처리</td></tr><tr><td>전력 소비</td><td>저전력</td><td>고전력</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[온디바이스 AI]]></title>
         <id>https://gracefullight.dev/pe/conv/ondevice-ai/</id>
@@ -248,40 +274,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/project-management" term="pe/project-management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SOLID 원칙]]></title>
-        <id>https://gracefullight.dev/pe/sw/solid-principles/</id>
-        <link href="https://gracefullight.dev/pe/sw/solid-principles/"/>
-        <updated>2025-01-28T09:17:54.375Z</updated>
-        <summary type="html"><![CDATA[SOLID Principles]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="solid-원칙-개념">SOLID 원칙 개념<a href="https://gracefullight.dev/pe/sw/solid-principles/#solid-%EC%9B%90%EC%B9%99-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="SOLID 원칙 개념에 대한 직접 링크" title="SOLID 원칙 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>객체지향 설계시 SOLID 5가지 원칙을 준수하여 유지보수성과 확장성을 가진 유연한 소프트웨어 구현 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="단일책임원칙과-개방폐쇄원칙">단일책임원칙과 개방폐쇄원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EB%8B%A8%EC%9D%BC%EC%B1%85%EC%9E%84%EC%9B%90%EC%B9%99%EA%B3%BC-%EA%B0%9C%EB%B0%A9%ED%8F%90%EC%87%84%EC%9B%90%EC%B9%99" class="hash-link" aria-label="단일책임원칙과 개방폐쇄원칙에 대한 직접 링크" title="단일책임원칙과 개방폐쇄원칙에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="단일책임원칙">단일책임원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EB%8B%A8%EC%9D%BC%EC%B1%85%EC%9E%84%EC%9B%90%EC%B9%99" class="hash-link" aria-label="단일책임원칙에 대한 직접 링크" title="단일책임원칙에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="srp" src="https://gracefullight.dev/assets/images/srp-d3c11735d1bc0660d50539236c688f73.jpg" width="658" height="476" class="img_xC7_"></td></tr><tr><td>개념</td><td>객체는 단 하나의 책임만 가져야한다는 원칙</td></tr><tr><td>특징</td><td>변경에 대한 의존성 극복, 응집도 향상</td></tr><tr><td>예시</td><td>파일 읽기, 쓰기 클래스 분리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="개방폐쇄원칙">개방폐쇄원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EA%B0%9C%EB%B0%A9%ED%8F%90%EC%87%84%EC%9B%90%EC%B9%99" class="hash-link" aria-label="개방폐쇄원칙에 대한 직접 링크" title="개방폐쇄원칙에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="ocp" src="https://gracefullight.dev/assets/images/ocp-c40011511a177257160ca6be90353fd4.jpg" width="594" height="484" class="img_xC7_"></td></tr><tr><td>개념</td><td>클래스는 확장에는 열리고 수정에는 닫혀있어야한다는 원칙</td></tr><tr><td>특징</td><td>추상화로인한 다형성, 확장성, 객체지향 장점 극대화</td></tr><tr><td>예시</td><td>새로운 기능 추가시 추상클래스 활용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="리스코프-치환원칙과-인터페이스-분리원칙">리스코프 치환원칙과 인터페이스 분리원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EB%A6%AC%EC%8A%A4%EC%BD%94%ED%94%84-%EC%B9%98%ED%99%98%EC%9B%90%EC%B9%99%EA%B3%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B6%84%EB%A6%AC%EC%9B%90%EC%B9%99" class="hash-link" aria-label="리스코프 치환원칙과 인터페이스 분리원칙에 대한 직접 링크" title="리스코프 치환원칙과 인터페이스 분리원칙에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="리스코프-치환원칙">리스코프 치환원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EB%A6%AC%EC%8A%A4%EC%BD%94%ED%94%84-%EC%B9%98%ED%99%98%EC%9B%90%EC%B9%99" class="hash-link" aria-label="리스코프 치환원칙에 대한 직접 링크" title="리스코프 치환원칙에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="lsp" src="https://gracefullight.dev/assets/images/lsp-d5b22d9b4cd2f7a4ba4138a472111cda.jpg" width="586" height="410" class="img_xC7_"></td></tr><tr><td>개념</td><td>상위 클래스는 하위 클래스로 대체 될 수 있어야한다는 원칙</td></tr><tr><td>특징</td><td>상속을 통한 재사용성 확보, 부모-자식 클래스 간 IS-A 관계 보장</td></tr><tr><td>예시</td><td>HashSet은 Set의 add 메소드 사용 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터페이스-분리원칙">인터페이스 분리원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B6%84%EB%A6%AC%EC%9B%90%EC%B9%99" class="hash-link" aria-label="인터페이스 분리원칙에 대한 직접 링크" title="인터페이스 분리원칙에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="isp" src="https://gracefullight.dev/assets/images/isp-d556ba7f13baf5dca6735d531481bfa8.jpg" width="618" height="484" class="img_xC7_"></td></tr><tr><td>개념</td><td>클라이언트는 자신이 사용하는 인터페이스만 의존해야하는 원칙</td></tr><tr><td>특징</td><td>클라이언트에 목적과 용도에 적합한 인터페이스 제공, 확장성 증가</td></tr><tr><td>예시</td><td>Pet 인터페이스 분리로 짖는 기능 구현</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="의존성역전원칙">의존성역전원칙<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EC%9D%98%EC%A1%B4%EC%84%B1%EC%97%AD%EC%A0%84%EC%9B%90%EC%B9%99" class="hash-link" aria-label="의존성역전원칙에 대한 직접 링크" title="의존성역전원칙에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>설명</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="dip" src="https://gracefullight.dev/assets/images/dip-836645dd3b3ee0223ab7892fd2c66db2.jpg" width="588" height="426" class="img_xC7_"></td></tr><tr><td>개념</td><td>고수준 클라이언트는 저수준 모듈의 구현에 의존하지 않고, 추상화된 인터페이스에 의존해야한다는 원칙</td></tr><tr><td>특징</td><td>변화하기 어려운 인터페이스에 의존, 결합도 완화</td></tr><tr><td>예시</td><td>특정 DB클래스가 아닌 Database 인터페이스 사용 연동</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="객체지향-설계시-고려사항">객체지향 설계시 고려사항<a href="https://gracefullight.dev/pe/sw/solid-principles/#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EC%84%A4%EA%B3%84%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="객체지향 설계시 고려사항에 대한 직접 링크" title="객체지향 설계시 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>SonarLint 등 정적분석도구 활용 SOLID 원칙 준수 감사</li>
-<li>예방비용을 높여 SW품질 향상 필요</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/software-engineering" term="pe/software-engineering"/>
     </entry>
 </feed>
