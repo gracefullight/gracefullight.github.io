@@ -35,6 +35,7 @@ tags:
 
 | 구분 | RAID5 | RAID6 |
 | --- | --- | --- |
+| 개념도 | ![raid5](./assets/raid5.jpg) | ![raid6](./assets/raid6.jpg)|
 | 최소 디스크 수 | 3개 | 4개 |
 | 고장 허용 디스크 | 1개 | 2개 |
 | 패리티 수 | 1 | 2 |
