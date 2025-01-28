@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.6e412c0d.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.c5642b7b.js" defer="defer"></script>
 <script src="/en/assets/js/main.f5c2de47.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -202,7 +202,7 @@
 <li>RAID50은 최소 디스크 6개 필요</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="raid5-6-비교">RAID5, 6 비교<a href="#raid5-6-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>RAID5</th><th>RAID6</th></tr></thead><tbody><tr><td>최소 디스크 수</td><td>3개</td><td>4개</td></tr><tr><td>고장 허용 디스크</td><td>1개</td><td>2개</td></tr><tr><td>패리티 수</td><td>1</td><td>2</td></tr><tr><td>장점</td><td>저장효율성, 관리 용이성, 빠른 읽기 성능, 적절한 쓰기 성능</td><td>이중 디스크 장애허용, 높은 내결함성, 안정성</td></tr><tr><td>단점</td><td>복수 디스크 손상시 데이터 손실</td><td>느린 쓰기 성능, 복잡한 구현</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>RAID5</th><th>RAID6</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="raid5" src="/en/assets/images/raid5-cd58e9217a943759371788c33ba68f5b.jpg" width="1330" height="648" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="raid6" src="/en/assets/images/raid6-53de7a89da00467ab9eaeadf1d685595.jpg" width="1466" height="636" class="img_xC7_"></td></tr><tr><td>최소 디스크 수</td><td>3개</td><td>4개</td></tr><tr><td>고장 허용 디스크</td><td>1개</td><td>2개</td></tr><tr><td>패리티 수</td><td>1</td><td>2</td></tr><tr><td>장점</td><td>저장효율성, 관리 용이성, 빠른 읽기 성능, 적절한 쓰기 성능</td><td>이중 디스크 장애허용, 높은 내결함성, 안정성</td></tr><tr><td>단점</td><td>복수 디스크 손상시 데이터 손실</td><td>느린 쓰기 성능, 복잡한 구현</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="raid-적용시-고려사항">RAID 적용시 고려사항<a href="#raid-적용시-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>RAID는 백업이 아니므로, RTO, RPO를 고려한 별도의 증분 백업 전략 수립</li>
@@ -217,7 +217,7 @@
 <li>다중 프로그래밍의 정도가 높아짐에 따라 프로세서 이용률이 향상되며 임계치 도달 후 프로세서 이용률이 낮아짐</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="프로세스-스레싱의-원인">프로세스 스레싱의 원인<a href="#프로세스-스레싱의-원인" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>원인</th><th>내용</th></tr></thead><tbody><tr><td>하드웨어</td><td>저사양 CPU</td><td>CPU 코어부족, 속도 부족</td></tr><tr><td></td><td>메모리 용량 부족</td><td>용량 부족으로 인한 가상메모리 사용 증가</td></tr><tr><td>알고리즘</td><td>지역성 미고려</td><td>페이지 교체 정책 효율성 저하</td></tr><tr><td></td><td>페이지 빈도 미고려</td><td>부적절한 페이지 교체 알고리즘 사용</td></tr><tr><td>프로세스</td><td>프로세서의 이용률 감시/운영/추가</td><td>낮은 이용률에 신규 프로세스 도입</td></tr><tr><td></td><td>최소 페이지 프레임 불만족</td><td>프로세스 요구로 페이지 폴트 발생</td></tr><tr><td></td><td>페이징으로 인해 Ready Queue Empty</td><td>CPU 이용률 감소</td></tr><tr><td></td><td>CPU 스케쥴러의 다중프로그래밍 정도 증가</td><td>신규 프로세스 추가</td></tr><tr><td></td><td>신규프로세스의 기존 프로세스 페이지 탈취</td><td>페이지 폴트 발생</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>원인</th><th>내용</th></tr></thead><tbody><tr><td>하드웨어</td><td>저사양 CPU</td><td>CPU 코어부족, 속도 부족</td></tr><tr><td></td><td>메모리 용량 부족</td><td>용량 부족으로 인한 가상메모리 사용 증가</td></tr><tr><td>알고리즘</td><td>지역 성 미고려</td><td>페이지 교체 정책 효율성 저하</td></tr><tr><td></td><td>페이지 빈도 미고려</td><td>부적절한 페이지 교체 알고리즘 사용</td></tr><tr><td>프로세스</td><td>프로세서의 이용률 감시/운영/추가</td><td>낮은 이용률에 신규 프로세스 도입</td></tr><tr><td></td><td>최소 페이지 프레임 불만족</td><td>프로세스 요구로 페이지 폴트 발생</td></tr><tr><td></td><td>페이징으로 인해 Ready Queue Empty</td><td>CPU 이용률 감소</td></tr><tr><td></td><td>CPU 스케쥴러의 다중프로그래밍 정도 증가</td><td>신규 프로세스 추가</td></tr><tr><td></td><td>신규프로세스의 기존 프로세스 페이지 탈취</td><td>페이지 폴트 발생</td></tr></tbody></table>
 <ul>
 <li>Working Set Model, Page Fault Frequency 기버을 통해 발생을 최소화하는 것이 최선의 방법</li>
 </ul>
@@ -268,7 +268,7 @@
 <li>제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="페이징-기법-세그먼테이션-기법-개념도-핵심요소">페이징 기법, 세그먼테이션 기법 개념도, 핵심요소<a href="#페이징-기법-세그먼테이션-기법-개념도-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="페이징-기법-세그먼테이션-기법-개념도">페이징 기법, 세그먼테이션 기법 개념도<a href="#페이징-기법-세그먼테이션-기법-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="페이징-기법-세그먼테이션-기법-개념도">페이징 기법, 세그먼테이션 기법 개 념도<a href="#페이징-기법-세그먼테이션-기법-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <!-- -->
 <ul>
