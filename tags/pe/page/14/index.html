@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.7706b7b5.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.001846e1.js" defer="defer"></script>
 <script src="/assets/js/main.4e5ce1ec.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -75,7 +75,7 @@
 <ul>
 <li>모델을 순차적으로 학습, 가중치 반영하여 예측 결과 도출</li>
 </ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>순차모델 학습</td><td>이전 모델의 오차를 보완하여 학습</td><td>오차 감소</td></tr><tr><td>가중치 업데이트</td><td>오차가 큰 데이터에 높은 가중치 부여</td><td>오답 집중 학습</td></tr><tr><td>반복 학습</td><td>가중치 반영 모델 반복 학습</td><td>순차 실행</td></tr><tr><td>예측 결합</td><td>모든 모델 예측에 가중치 반영한 평균 계산</td><td>그라디언트 부스팅</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>순차모델 학습</td><td>이전 모델의 오차를 보완하여 학습</td><td>오차 감소</td></tr><tr><td>가중치 업데이트</td><td>오차가 큰 데이터에 높은 가중치 부여</td><td>오답 집중 학습</td></tr><tr><td>반복 학습</td><td>가중치 반영 모델 반복 학습</td><td>순차 실행</td></tr><tr><td>예측 결합</td><td>모든 모델 예측에 가중치 반영한 평균 계산</td><td>그라디언트 부스팅, XGBoost, CatBoost</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="배깅-부스팅-비교">배깅, 부스팅 비교<a href="#배깅-부스팅-비교" class="hash-link" aria-label="배깅, 부스팅 비교에 대한 직접 링크" title="배깅, 부스팅 비교에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>배깅</th><th>부스팅</th></tr></thead><tbody><tr><td>목표</td><td>분산 감소, 과적합 방지</td><td>편향 감소</td></tr><tr><td>계산 비용</td><td>빠름, 병렬</td><td>느림, 순차</td></tr><tr><td>결합 방식</td><td>평균, 투표</td><td>가중 평균</td></tr></tbody></table>
 <ul>
