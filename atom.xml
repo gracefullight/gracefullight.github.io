@@ -2,11 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T01:08:36.602Z</updated>
+    <updated>2025-01-28T01:34:39.958Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[멀티 GPU]]></title>
+        <id>https://gracefullight.dev/pe/ca/multi-gpu/</id>
+        <link href="https://gracefullight.dev/pe/ca/multi-gpu/"/>
+        <updated>2025-01-28T01:34:39.958Z</updated>
+        <summary type="html"><![CDATA[Multi GPU]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-개요">멀티 GPU 개요<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="멀티 GPU 개요에 대한 직접 링크" title="멀티 GPU 개요에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="multi gpu trends" src="https://gracefullight.dev/assets/images/multi-gpu-trends-490e3d4995df05fbb4f0bf2b1098164f.jpg" width="1646" height="700" class="img_xC7_"></p>
+<ul>
+<li>딥러닝에서 대규모 신경망을 효율적으로 학습하기 위해 GPU 활용, 다수 GPU를 연결하기 위한 인터커넥트 기술 발전으로 멀티 GPU 필요성 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-구성도-핵심요소-장점">멀티 GPU 구성도, 핵심요소, 장점<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="멀티 GPU 구성도, 핵심요소, 장점에 대한 직접 링크" title="멀티 GPU 구성도, 핵심요소, 장점에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-구성도">멀티 GPU 구성도<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="멀티 GPU 구성도에 대한 직접 링크" title="멀티 GPU 구성도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="multi gpu" src="https://gracefullight.dev/assets/images/multi-gpu-dc7fe8ab691b08f33e4d89f5b0270cb5.jpg" width="2866" height="790" class="img_xC7_"></p>
+<ul>
+<li>여러 개의 GPU를 동시에 사용하여 대규모 신경망 학습 및 추론 훈련</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-핵심요소">멀티 GPU 핵심요소<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="멀티 GPU 핵심요소에 대한 직접 링크" title="멀티 GPU 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>SM (Streaming Multiprocessor)</td><td>연산 처리 유닛</td><td>GPU 내부에서 병렬 연산을 수행하는 핵심 유닛으로, 작업을 처리하고 메모리 관리 유닛으로 데이터를 전달</td></tr><tr><td>MMU (Memory Management Unit)</td><td>메모리 관리</td><td>GPU의 메모리 액세스를 관리하고 가상 메모리 주소를 물리 메모리 주소로 변환</td></tr><tr><td>NVLink NIC</td><td>데이터 전송 인터페이스</td><td>NVLink를 통해 GPU 간의 고속 데이터 전송을 담당</td></tr><tr><td>NVLink Network Switch</td><td>데이터 전송 경로 관리</td><td>여러 GPU 간 데이터 흐름을 관리하고, 최적의 전송 경로를 설정</td></tr><tr><td>TLB (Translation Lookaside Buffer)</td><td>주소 변환 캐싱</td><td>MMU에서 자주 사용하는 주소 변환 결과를 캐싱하여 속도 향상</td></tr><tr><td>HBM (High Bandwidth Memory)</td><td>고속 메모리</td><td>고속 메모리로 데이터 저장 및 접근을 지원, GPU 연산 속도 최적화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-장점">멀티 GPU 장점<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="멀티 GPU 장점에 대한 직접 링크" title="멀티 GPU 장점에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>장점</th><th>설명</th></tr></thead><tbody><tr><td>성능향상</td><td>실시간 처리</td><td>멀티 GPU를 통해 연산 작업을 병렬로 처리하여 실시간 성능을 향상시킴</td></tr><tr><td></td><td>대규모 처리</td><td>대규모 데이터 세트나 복잡한 모델을 빠르게 학습 및 추론 가능</td></tr><tr><td>자원최적화</td><td>메모리 용량</td><td>각 GPU의 메모리를 활용하여 단일 GPU의 메모리 제한을 극복</td></tr><tr><td></td><td>모델 병렬화</td><td>모델을 여러 GPU로 분산하여 병렬 연산을 최적화</td></tr><tr><td>확장성</td><td>GPU 확장</td><td>추가 GPU를 연결하여 시스템의 연산 성능을 손쉽게 확장 가능</td></tr><tr><td></td><td>데이터 추가</td><td>대규모 데이터 처리 시 여러 GPU를 활용하여 병렬 데이터 전처리 및 학습 가능</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-학습-환경-구축시-고려사항">멀티 GPU 학습 환경 구축시 고려사항<a href="https://gracefullight.dev/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%99%EC%8A%B5-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="멀티 GPU 학습 환경 구축시 고려사항에 대한 직접 링크" title="멀티 GPU 학습 환경 구축시 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>고려사항</th><th>비고</th></tr></thead><tbody><tr><td>물리적 인프라</td><td>HW구성</td><td>GPU 선택, 서버, CPU, 파워, 냉각시스템</td></tr><tr><td></td><td>NW구성</td><td>내부연결, 서버 간 ㅇ녀결, 로드밸런싱, 스토리지 네트워크</td></tr><tr><td>논리적 시스템</td><td>SW환경</td><td>OS, 프레임워크, 분산훈련, 모니터링 도구</td></tr><tr><td></td><td>성능최적화</td><td>GPU 메모리 관리, 연산정밀도, 배치 크기, 하이퍼파라미터 튜닝</td></tr><tr><td></td><td>병렬처리 환경</td><td>데이터 병렬화, 파이프라인 병렬화, 모델 병렬화</td></tr></tbody></table>
+<ul>
+<li>TIA-942 데이터센터 구축을 위한 표준 요구사항을 참조하여 비용효율성과 가용성 제고</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[스토리지 가상화]]></title>
+        <id>https://gracefullight.dev/pe/ca/storage-virtualization/</id>
+        <link href="https://gracefullight.dev/pe/ca/storage-virtualization/"/>
+        <updated>2025-01-28T01:24:51.260Z</updated>
+        <summary type="html"><![CDATA[Storage Virtualization]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-개념">스토리지 가상화 개념<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="스토리지 가상화 개념에 대한 직접 링크" title="스토리지 가상화 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>물리적으로 분리된 다수 스토리지를 논리적으로 통합하여 스토리지 자원의 가용성과 편리성을 향상시키는 기술</li>
+<li>기존스토리지 낮은 활용도(48%) 극복, 벤더 종속적인 이기종 스토리지 호환성 문제, 유지보수 비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-유형">스토리지 가상화 유형<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="스토리지 가상화 유형에 대한 직접 링크" title="스토리지 가상화 유형에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>블록스토리지 가상화</th><th>파일스토리지 가상화</th><th>오브젝트스토리지 가상화</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="block-storage" src="https://gracefullight.dev/assets/images/block-storage-virtualization-5f6baa6587cd0539cd5881f067b688cf.jpg" width="802" height="332" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="file-storage" src="https://gracefullight.dev/assets/images/file-storage-virtualization-6ca0ddee7bf23d7260cc0fcc85e637ff.jpg" width="838" height="322" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="object-storage" src="https://gracefullight.dev/assets/images/object-storage-virtualization-fd4ffd3af367317e3697578893fb7a02.jpg" width="952" height="320" class="img_xC7_"></td></tr><tr><td>개념</td><td>물리적 스토리지를 블록 단위로 추상화하여 논리적 블록으로 제공</td><td>물리적 스토리지를 파일단위로 추상화하여 파일명, 경로 통해 공유</td><td>데이터를 개체 단위로 관리하여 데이터와 메타데이터를 함께 저장하고 논리적 통합하여 제공</td></tr><tr><td>주요환경</td><td>SAN</td><td>NAS/SAN</td><td>클라우드 스토리지, 대규모 비정형데이터 저장소</td></tr><tr><td>접근방식</td><td>OS가 논리적 블록주소 통해 접근</td><td>파일명, 경로</td><td>RESTful API, HTTP, HTTPS</td></tr><tr><td>프로토콜</td><td>iSCSI, FC</td><td>NFC, SMB, CIFS</td><td>S3API, HTTP, HTTPS</td></tr><tr><td>주요사례</td><td>DB, 고성능 어플리케이션, 가상머신디스크</td><td>파일공유, NW기반 데이터 접근</td><td>클라우드스토리지, 데이터분석, 비정형데이터 저장</td></tr><tr><td>특징</td><td>낮은 오버헤드, 빠른 데이터 전송, OS 무관</td><td>액세스제어 용이, 속성정보 관리 편이</td><td>오브젝트별 고유 ID, OS/FS 의존성 없음, 무한 확장성</td></tr><tr><td>대표기술</td><td>SANique, IBM SVC, 스토리지 어레이</td><td>NFS, GPFS, SNFS, GFS</td><td>S3, Cloud Storage, Blob Storage</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-구축시-고려사항">스토리지 가상화 구축시 고려사항<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="스토리지 가상화 구축시 고려사항에 대한 직접 링크" title="스토리지 가상화 구축시 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>항목</th><th>고려사항</th><th>설명</th></tr></thead><tbody><tr><td>호환성</td><td>지원 프로토콜 및 솔루션</td><td>DBMS, HA 솔루션, 백업 장치 지원 가능<br>FC 프로토콜, iSCSI 프로토콜, CIFS &amp; NFS 지원</td></tr><tr><td>가용성/안정성</td><td>장애 대응 및 데이터 보호</td><td>Failover 기능 지원 및 데이터 유실 방지<br>바이러스 및 기타 공격 차단</td></tr><tr><td>기능성</td><td>서비스 연속성 및 확장성</td><td>무중단 서비스 및 스토리지 추가/제거<br>디스크 볼륨 할당 및 확장 작업 가능</td></tr><tr><td>구축용이성</td><td>시스템 다운타임 최소화</td><td>기존 시스템과의 호환성 고려<br>다운타임 최소화 방안 제시</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[TIA-942]]></title>
         <id>https://gracefullight.dev/pe/ca/tia-942/</id>
@@ -231,65 +286,6 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="iso-31000-세부-절차">ISO 31000 세부 절차<a href="https://gracefullight.dev/pe/sec/iso-31000/#iso-31000-%EC%84%B8%EB%B6%80-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="ISO 31000 세부 절차에 대한 직접 링크" title="ISO 31000 세부 절차에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>절차</th><th>내용</th><th>설명</th></tr></thead><tbody><tr><td>의사소통 및 협의</td><td>조직의 위험 인식에 대한 공유 및 협의</td><td>조직의 위험 관리 프로세스에서 모든 이해관계자의 참여를 유도</td></tr><tr><td>맥락 이해</td><td>조직의 운영 현황과 주변 환경에 대한 이해</td><td>위험 관리의 배경 및 범위를 정의</td></tr><tr><td>위험식별</td><td>조직의 목표에 위협할 영향을 줄 수 있는 내·외부 사건의 파악</td><td>위험사건이 어떻게 발생하고 영향을 줄 것인지 분석</td></tr><tr><td>위험분석</td><td>위험사건의 확률과 피해에 대한 예측 및 위험수용</td><td>정량적/정성적 분석을 통해 위험의 심각성 평가</td></tr><tr><td>위험평가</td><td>정책 대응 여부 판단</td><td>위험등급을 기반으로 직면한 위험 대응</td></tr><tr><td>위험대응</td><td>위험 발생을 줄이거나 통제하는 행동</td><td>회피, 전가, 감수, 수용, 이관, 종료</td></tr><tr><td>감독 및 보고</td><td>모니터링과 평가를 통한 조직 학습</td><td>위험관리 후 지속적인 평가와 개선</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VPN, IPSec VPN, SSL VPN]]></title>
-        <id>https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/</id>
-        <link href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/"/>
-        <updated>2025-01-27T06:05:25.840Z</updated>
-        <summary type="html"><![CDATA[Virtual Private Network, Internet Protocol Security VPN, Secure Socket Layer VPN]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-개요">VPN 개요<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#vpn-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="VPN 개요에 대한 직접 링크" title="VPN 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-개념">VPN 개념<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#vpn-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="VPN 개념에 대한 직접 링크" title="VPN 개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>인터넷 같은 공중망에서 터널링 기법을 통해 사용자가 사설망에 연결된 것처럼 기밀성, 무결성을 보장하는 네트워크 통신 기술</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vpn-특징">VPN 특징<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#vpn-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="VPN 특징에 대한 직접 링크" title="VPN 특징에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>특징</th><th>설명</th></tr></thead><tbody><tr><td>보안 측면</td><td>데이터 기밀성</td><td>암호화를 이용하여 메시지의 내용을 은폐</td></tr><tr><td></td><td>데이터 무결성</td><td>데이터 전송 중 제3자에 의해 변환되지 않았음을 보장</td></tr><tr><td></td><td>데이터 원본 인증</td><td>요청한 수신인에 의해 각 데이터 원본 여부 확인</td></tr><tr><td></td><td>재전송 공격 방지</td><td>인증 헤더에 일련번호를 부여하여 재전송 공격 방지</td></tr><tr><td>비즈니스 측면</td><td>비용 절감</td><td>가상화를 통해 전용망과 같은 효과 기대</td></tr><tr><td></td><td>QoS 보장</td><td>네트워크 사용자 품질 보증 기술로 활용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn-ssl-vpn">IPSec VPN, SSL VPN<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#ipsec-vpn-ssl-vpn" class="hash-link" aria-label="IPSec VPN, SSL VPN에 대한 직접 링크" title="IPSec VPN, SSL VPN에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn">IPSec VPN<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#ipsec-vpn" class="hash-link" aria-label="IPSec VPN에 대한 직접 링크" title="IPSec VPN에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="IPSec VPN" src="https://gracefullight.dev/assets/images/ipsec-vpn-6739c40a5089cec24e3e9d4611caf29f.png" width="489" height="172" class="img_xC7_"></p>
-<ul>
-<li>단말간 안전한 통신망 연결을 위해 IPSec Tunneling 기술 이용하는 OSI 3계층 VPN 보안 기술</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ssl-vpn">SSL VPN<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#ssl-vpn" class="hash-link" aria-label="SSL VPN에 대한 직접 링크" title="SSL VPN에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="SSL VPN" src="https://gracefullight.dev/assets/images/ssl-vpn-1e4f932cf4c0d9b88a2ca3bffa47d8c1.png" width="486" height="202" class="img_xC7_"></p>
-<ul>
-<li>OSI 4~7계층에서 웹 브라우저를 통해 원격 액세스를 제공하며, 사용자 인증, 데이터 암호화 및 데이터 무결성을 보장하는 VPN 보안 기술</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ipsec-vpn-ssl-vpn-비교">IPSec VPN, SSL VPN 비교<a href="https://gracefullight.dev/pe/sec/vpn-ipsec-ssl/#ipsec-vpn-ssl-vpn-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="IPSec VPN, SSL VPN 비교에 대한 직접 링크" title="IPSec VPN, SSL VPN 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>IPSec VPN</th><th>SSL VPN</th></tr></thead><tbody><tr><td>OSI 레이어</td><td>Layer 3</td><td>Layer 4 ~ 7</td></tr><tr><td>표준</td><td>RFC 4301 (IPSec 기준)</td><td>RFC 5246 (TLS 1.2 기준)</td></tr><tr><td>프로토콜</td><td>IP</td><td>TCP</td></tr><tr><td>인증방식</td><td>비밀키 공유</td><td>X.509 인증서</td></tr><tr><td>구현방식</td><td>Site to Site (Lan to Lan)</td><td>Client to Site</td></tr><tr><td>장점</td><td>높은 안정성</td><td>브라우저 및 Agent 방식 구현</td></tr><tr><td>단점</td><td>고비용 (전용 장비 설치 및 양단 설치)</td><td>저비용 (전용 장비 서버측 설치)</td></tr><tr><td>사례</td><td>본사와 지사의 VPN 연결</td><td>브라우저를 통한 기업 내부망 접속, 재택근무</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MPC, 다자간 계산]]></title>
-        <id>https://gracefullight.dev/pe/sec/multi-party-computation/</id>
-        <link href="https://gracefullight.dev/pe/sec/multi-party-computation/"/>
-        <updated>2025-01-27T05:05:51.842Z</updated>
-        <summary type="html"><![CDATA[Multi-Party Computation]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념">다자간 계산 개념<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="다자간 계산 개념에 대한 직접 링크" title="다자간 계산 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>여러 참여자가 각자의 비밀 정보를 제공하지 않고도 공동 계산을 수행할 수 있도록 하는 암호학 기법</li>
-<li>프라이버시 보호, 신뢰 없는 환경에서 협업, 데이터 보안, 확장성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념도-핵심요소-활용방안">다자간 계산 개념도, 핵심요소, 활용방안<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다자간 계산 개념도, 핵심요소, 활용방안에 대한 직접 링크" title="다자간 계산 개념도, 핵심요소, 활용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념도">다자간 계산 개념도<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="다자간 계산 개념도에 대한 직접 링크" title="다자간 계산 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-핵심요소">다자간 계산 핵심요소<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="다자간 계산 핵심요소에 대한 직접 링크" title="다자간 계산 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기술</th><th>설명</th></tr></thead><tbody><tr><td>암호화</td><td>동형 암호화</td><td>데이터가 암호화된 상태로 연산 가능</td></tr><tr><td></td><td>비밀 분할</td><td>데이터를 다수의 셰어로 나누어 저장하고, 계산 후 결과 복원.</td></tr><tr><td>프로토콜</td><td>Yao’s Garbled Circuit</td><td>안전한 회로 기반의 계산을 수행하며, 효율적 보안 제공</td></tr><tr><td></td><td>Threshold Cryptography</td><td>일정 수 이상의 셰어가 합쳐질 때만 계산이 가능</td></tr><tr><td></td><td>블라인드 평가</td><td>비밀번호 확인 없이 전송, 내용확인 없이 본인이 질문내역 확인</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-활용분야">다자간 계산 활용분야<a href="https://gracefullight.dev/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="다자간 계산 활용분야에 대한 직접 링크" title="다자간 계산 활용분야에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>전자 투표 시스템에서 투표자의 익명성을 유지하며 투명한 결과 제공</td><td>선거 공정성과 신뢰 확보</td></tr><tr><td></td><td>민감한 의료 데이터를 보호하면서 병원 간 협력 연구 수행</td><td>환자 데이터 보호 및 연구 효율성 강화</td></tr><tr><td>금융</td><td>암호화폐 지갑에서 개인 키 분산 저장 및 복구 기능 제공</td><td>키 분실 방지 및 보안 강화 (예: ZenGo, Fireblocks)</td></tr><tr><td></td><td>은행 간 신용 평가 및 사기 탐지를 위해 데이터를 비공개 상태로 분석</td><td>금융 기밀 보호와 협력 가능</td></tr><tr><td>민간</td><td>경쟁 기업 간 시장 점유율 분석 시 데이터 보호</td><td>데이터 유출 방지 및 협력 증대</td></tr><tr><td></td><td>블록체인 기반 기업 지갑에서 멀티시그(Multi-Signature) 대체</td><td>분산 서명으로 보안 및 효율성 향상</td></tr><tr><td></td><td>프라이버시를 강화한 연합 학습으로 AI 모델 학습</td><td>데이터 보호 상태에서 AI 성능 향상</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
