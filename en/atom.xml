@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T12:24:55.419Z</updated>
+    <updated>2025-01-28T12:53:53.405Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[쿠버네티스]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/kubernetes/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/kubernetes/"/>
+        <updated>2025-01-28T12:53:53.405Z</updated>
+        <summary type="html"><![CDATA[Kubernetes]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-개념">쿠버네티스 개념<a href="https://gracefullight.dev/en/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>컨테이너화 된 워크로드와 서비스를 관리하기 위해 이식성과 확장성을 갖춘 오픈소스 오케스트레이션 플랫폼</li>
+<li>서비스 디스커버리, 스토리지 오케스트레이션, 자동화 롤아웃, 롤백</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성도-구성요소">쿠버네티스 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성도">쿠버네티스 구성도<a href="https://gracefullight.dev/en/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성요소">쿠버네티스 구성요소<a href="https://gracefullight.dev/en/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>역할</th></tr></thead><tbody><tr><td>유저</td><td>Kubectl</td><td>클러스터 관리 CLI</td></tr><tr><td></td><td>Dashboard</td><td>클러스터 관리 웹 UI</td></tr><tr><td></td><td>컨테이너 리소스 모니터링</td><td>컨테이너 시계열 로그 모니터링</td></tr><tr><td>컨트롤플레인</td><td>API Server</td><td>명령어 전달, ETCD 통신</td></tr><tr><td></td><td>Scheduler</td><td>Pod, 서비스 등 자원할당</td></tr><tr><td></td><td>Controller Manager</td><td>컨틀로러 생성, 노드 배포</td></tr><tr><td></td><td>ETCD</td><td>클러트더 데이터 KV 저장소</td></tr><tr><td>워커노드</td><td>Pod</td><td>기본 배포단위, 컨테이너 포함</td></tr><tr><td></td><td>컨테이너 런타임</td><td>Pod 통한 배포컨테이너 실행 환경</td></tr><tr><td></td><td>Kubelet</td><td>에이전트, Pod 동작 관리</td></tr><tr><td></td><td>Kubeproxy</td><td>NW프록시, 로드밸런싱</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[개방형 API, SOAP, REST]]></title>
+        <id>https://gracefullight.dev/en/pe/conv/openapi-soap-rest/</id>
+        <link href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/"/>
+        <updated>2025-01-28T12:48:40.836Z</updated>
+        <summary type="html"><![CDATA[Open API, SOAP, REST]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-개념">개방형 API 개념<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>누구나 사용할 수 있도록 공개된 API로 웹표준 프로토콜과 버전관리를 통해 호환성, 확장성을 제공</li>
+<li>개방형 API 호출 방식은 SOAP / REST / GraphQL 로 진화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-호출-유형">개방형 API 호출 유형<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%ED%98%B8%EC%B6%9C-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="soap">SOAP<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#soap" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="SOAP" src="https://gracefullight.dev/en/assets/images/soap-dbddaab5f50c7f42ea430e724e0cead8.jpg" width="2076" height="634" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rest">REST<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#rest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="REST" src="https://gracefullight.dev/en/assets/images/rest-56263a245880f5d78d3a44560d80246f.jpg" width="2054" height="460" class="img_xC7_"></p>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[위험분석]]></title>
         <id>https://gracefullight.dev/en/pe/pm/risk-analysis/</id>
@@ -179,7 +226,7 @@
 <table><thead><tr><th>구분</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>SM (Streaming Multiprocessor)</td><td>연산 처리 유닛</td><td>GPU 내부에서 병렬 연산을 수행하는 핵심 유닛으로, 작업을 처리하고 메모리 관리 유닛으로 데이터를 전달</td></tr><tr><td>MMU (Memory Management Unit)</td><td>메모리 관리</td><td>GPU의 메모리 액세스를 관리하고 가상 메모리 주소를 물리 메모리 주소로 변환</td></tr><tr><td>NVLink NIC</td><td>데이터 전송 인터페이스</td><td>NVLink를 통해 GPU 간의 고속 데이터 전송을 담당</td></tr><tr><td>NVLink Network Switch</td><td>데이터 전송 경로 관리</td><td>여러 GPU 간 데이터 흐름을 관리하고, 최적의 전송 경로를 설정</td></tr><tr><td>TLB (Translation Lookaside Buffer)</td><td>주소 변환 캐싱</td><td>MMU에서 자주 사용하는 주소 변환 결과를 캐싱하여 속도 향상</td></tr><tr><td>HBM (High Bandwidth Memory)</td><td>고속 메모리</td><td>고속 메모리로 데이터 저장 및 접근을 지원, GPU 연산 속도 최적화</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-장점">멀티 GPU 장점<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>장점</th><th>설명</th></tr></thead><tbody><tr><td>성능향상</td><td>실시간 처리</td><td>멀티 GPU를 통해 연산 작업을 병렬로 처리하여 실시간 성능을 향상시킴</td></tr><tr><td></td><td>대규모 처리</td><td>대규모 데이터 세트나 복잡한 모델을 빠르게 학습 및 추론 가능</td></tr><tr><td>자원최적화</td><td>메모리 용량</td><td>각 GPU의 메모리를 활용하여 단일 GPU의 메모리 제한을 극복</td></tr><tr><td></td><td>모델 병렬화</td><td>모델을 여러 GPU로 분산하여 병렬 연산을 최적화</td></tr><tr><td>확장성</td><td>GPU 확장</td><td>추가 GPU를 연결하여 시스템의 연산 성능을 손쉽게 확장 가능</td></tr><tr><td></td><td>데이터 추가</td><td>대규모 데이터 처리 시 여러 GPU를 활용하여 병렬 데이터 전처리 및 학습 가능</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-학습-환경-구축시-고려사항">멀티 GPU 학습 환경 구축시 고려사항<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%99%EC%8A%B5-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EF%BF%BD%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-학습-환경-구축시-고려사항">멀티 GPU 학습 환경 구축시 고려사항<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%ED%95%99%EC%8A%B5-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>고려사항</th><th>비고</th></tr></thead><tbody><tr><td>물리적 인프라</td><td>HW구성</td><td>GPU 선택, 서버, CPU, 파워, 냉각시스템</td></tr><tr><td></td><td>NW구성</td><td>내부연결, 서버 간 ㅇ녀결, 로드밸런싱, 스토리지 네트워크</td></tr><tr><td>논리적 시스템</td><td>SW환경</td><td>OS, 프레임워크, 분산훈련, 모니터링 도구</td></tr><tr><td></td><td>성능최적화</td><td>GPU 메모리 관리, 연산정밀도, 배치 크기, 하이퍼파라미터 튜닝</td></tr><tr><td></td><td>병렬처리 환경</td><td>데이터 병렬화, 파이프라인 병렬화, 모델 병렬화</td></tr></tbody></table>
 <ul>
 <li>TIA-942 데이터센터 구축을 위한 표준 요구사항을 참조하여 비용효율성과 가용성 제고</li>
@@ -231,61 +278,6 @@
 <p><img decoding="async" loading="lazy" alt="tia-942" src="https://gracefullight.dev/en/assets/images/tia-942-06f4e5bd7969b8b60766e56180ae4c00.jpg" width="1278" height="620" class="img_xC7_"></p>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-품질등급-상세설명">TIA-942 품질등급 상세설명<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>Tier1</th><th>Tier2</th><th>Tier3</th><th>Tier4</th></tr></thead><tbody><tr><td>장애영향</td><td>비/계획된 액티비티에 대한 사이트 영향 높음</td><td>비/계획된 액티비티에 대한 사이트 영향 보통</td><td>계획된 액티비티에 대한 컴퓨팅 HW 운영지장 없음</td><td>계획된 액티비티에 대한 임계부하 없음</td></tr><tr><td></td><td></td><td></td><td>비계획 작업은 영향</td><td>비계획 액티비티 임계부하 적어도 1번 방어</td></tr><tr><td>전력/냉방시설 이중화</td><td>필요</td><td>N+1</td><td>N+1, 동시 활성화</td><td>2(N+1), 무정지상태</td></tr><tr><td>백본/라우터 이중화</td><td>없음</td><td>없음</td><td>필요</td><td>필요</td></tr><tr><td>적용기간</td><td>3개월</td><td>~6개월</td><td>15~20개월</td><td>15~20개월</td></tr><tr><td>MTTR</td><td>28.8h</td><td>22.0h</td><td>1.6h</td><td>0.4h</td></tr><tr><td>보안시설</td><td>일반 잠금장치</td><td>카드인식</td><td>생체인식</td><td>생체인식</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PIM, Processing In Memory]]></title>
-        <id>https://gracefullight.dev/en/pe/ca/pim/</id>
-        <link href="https://gracefullight.dev/en/pe/ca/pim/"/>
-        <updated>2025-01-28T00:46:42.874Z</updated>
-        <summary type="html"><![CDATA[Processing In Memory]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="pim-개념">PIM 개념<a href="https://gracefullight.dev/en/pe/ca/pim/#pim-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>메모리 내부 연산 기능을 추가하여, 데이터 이동 없이 메모리 자체 연산 수행으로 성능 개선 및 에너지 효율을 높이는 메모리 반도체</li>
-<li>폰 논이만 구조 한계 극복, 추론 AI 패러다임, 데이ㅓ 병목 최소화, 저전력 설계</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="pim-개념도-pnm과의-비교-적용방안">PIM 개념도, PNM과의 비교, 적용방안<a href="https://gracefullight.dev/en/pe/ca/pim/#pim-%EA%B0%9C%EB%85%90%EB%8F%84-pnm%EA%B3%BC%EC%9D%98-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="pim-개념도">PIM 개념도<a href="https://gracefullight.dev/en/pe/ca/pim/#pim-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="pim" src="https://gracefullight.dev/en/assets/images/pim-cdbd67f2a21eb186a72aac5e839f3967.jpg" width="2262" height="648" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="pim-pnm-비교">PIM, PNM 비교<a href="https://gracefullight.dev/en/pe/ca/pim/#pim-pnm-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>PIM</th><th>PNM</th></tr></thead><tbody><tr><td>연산기 위치</td><td>DRAM 칩 내부</td><td>DRAM 근처 별도 칩</td></tr><tr><td>전송지연</td><td>없음</td><td>일부 있음</td></tr><tr><td>장점</td><td>데이터 이동 제거</td><td>범용성 확보</td></tr><tr><td></td><td>병렬처리 극대화</td><td>전력효율성</td></tr><tr><td>단점</td><td>범용성 낮음</td><td>상대적 낮은 성능</td></tr><tr><td>분야</td><td>추론 AI 등</td><td>고성능컴퓨팅, 데이터센터</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="pim-적용바안">PIM 적용바안<a href="https://gracefullight.dev/en/pe/ca/pim/#pim-%EC%A0%81%EC%9A%A9%EB%B0%94%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>AI 가속기</td><td>AI 작업의 대규모 병렬 처리시 활용</td><td>음성인식, 이미지 처리</td></tr><tr><td>빅데이터 분석</td><td>대량 데이터 실시간 처리 최적화</td><td>SEM, EPM 등</td></tr><tr><td>고성능 컴퓨팅</td><td>GPU와 협업하여 워크로드 분산</td><td>MAC 연산 수행</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[칩렛]]></title>
-        <id>https://gracefullight.dev/en/pe/ca/chiplet/</id>
-        <link href="https://gracefullight.dev/en/pe/ca/chiplet/"/>
-        <updated>2025-01-28T00:19:18.460Z</updated>
-        <summary type="html"><![CDATA[Chiplet]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념">칩렛 개념<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>여러 개의 작은 칩(다이)을 모듈화하여 하나의 패키지 안에서 상호연결하는 기술</li>
-<li>무어의 법칙 한계, 단일 SoC를 나누고 조합하여 유연한 아키텍처 제공, 설계/생산비용 절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념도-구현-방법-장점">칩렛 개념도, 구현 방법, 장점<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념도">칩렛 개념도<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="chiplet" src="https://gracefullight.dev/en/assets/images/chiplet-a826476a0852a685f6afac429cc48485.jpg" width="2722" height="798" class="img_xC7_"></p>
-<ul>
-<li>다이 슬롯 모듈화로 다양항 기능을 가진 이기종 칩을 결합하여 사용 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-구현-방법">칩렛 구현 방법<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>와이어본딩</th><th>플립칩 본딩</th><th>TSV</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="wire-bonding" src="https://gracefullight.dev/en/assets/images/wire-bonding-63918e5feb718aac0666a4d6c822bfe7.jpg" width="634" height="294" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="filp-chip-bonding" src="https://gracefullight.dev/en/assets/images/flip-chip-bonding-97ca8c0ddee6d434640d79eafa6de79a.jpg" width="620" height="314" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="through silicon via" src="https://gracefullight.dev/en/assets/images/tsv-df25fdbe21e266d7b2180fd73833905b.jpg" width="646" height="282" class="img_xC7_"></td></tr><tr><td>개념</td><td>칩과 기판 또는 칩 간 연결을 금속 와이어를 통해 구현하는 전통적인 본딩 방식</td><td>칩과 기판을 플립(뒤집어) 배치한 후, 범프(땜납)로 연결하는 본딩 방식</td><td>실리콘 웨이퍼에 수직으로 뚫린 구멍(비아)를 통해 칩 내부 및 칩 간 전기 신호를 연결하는 3D 본딩 방식</td></tr><tr><td>특징</td><td>전기적 신호 전달거리 짧음</td><td>작은 전기저항, 빠른 속도</td><td>칩 간 인터커넥션 길이 감소, 빠른 신호전달</td></tr><tr><td></td><td>전기적 특성 우수</td><td>작은 폼팩터 구현 가능</td><td>고용량, 저전력</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-장점">칩렛 장점<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>측면</th><th>장점</th></tr></thead><tbody><tr><td>기술적</td><td>품질측면</td><td>칩 분할 생산 통한 수율향상</td></tr><tr><td></td><td>제조측면</td><td>바른 설계와 제작 가능</td></tr><tr><td></td><td>결합측면</td><td>상이한 이종칩 결합 가능</td></tr><tr><td>산업적</td><td>비용측면</td><td>제작 및 설계 비용 감소</td></tr><tr><td></td><td>개발측면</td><td>핵심 기술 개발 효율</td></tr><tr><td></td><td>시장측면</td><td>웨이퍼 칩 설계, 제작 진입장벽 낮춤</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="soc-sip-chiplet-비교">SoC, SiP, Chiplet 비교<a href="https://gracefullight.dev/en/pe/ca/chiplet/#soc-sip-chiplet-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>SoC</th><th>SiP</th><th>Chiplet</th></tr></thead><tbody><tr><td>구조</td><td>단일 칩 내 모든 기능 통합</td><td>여러 다이를 하나의 패키지로 통합</td><td>개별/기능별 모듈형 칩 통합</td></tr><tr><td>유연성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>성능최적화</td><td>제한적</td><td>제한적</td><td>각 기능별 최적화 가능</td></tr><tr><td>비용효율성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>개발기간</td><td>김</td><td>중간</td><td>짧음</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
