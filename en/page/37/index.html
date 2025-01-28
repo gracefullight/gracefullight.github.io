@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.21aa951b.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.3c81dd8e.js" defer="defer"></script>
 <script src="/en/assets/js/main.f7c0801f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -153,8 +153,8 @@
 <li>BlockChain: hash based linked list block + merkle tree</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="파일-데이터베이스-블록체인-상세비교">파일, 데이터베이스, 블록체인 상세비교<a href="#파일-데이터베이스-블록체인-상세비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>저장단위</td><td>파일</td><td>테이블</td><td>블록체인</td></tr><tr><td>저장위치</td><td>로컬</td><td>중앙 시스템</td><td>분산 시스템</td></tr><tr><td>저장속도</td><td>빠름</td><td>트랜잭션처리, 빠름</td><td>합의알고리즘, 느림</td></tr><tr><td>데이터 저장 방식</td><td>FS API</td><td>DDL, DML</td><td>합의 알고리즘</td></tr><tr><td>트랜잭션</td><td>없음</td><td>ACID 보장</td><td>합의 알고리즘으로 트랜잭션 처리</td></tr><tr><td>데이터 중복</td><td>단일 데이터</td><td>역정규화로 일부 허용</td><td>참여자 전체 중복 저장</td></tr><tr><td>종류</td><td>FAT, NFTS</td><td>RDBMS, NoSQL</td><td>Public, Private, Hybrid</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점과-해결방안">블록체인 저장   방식의 문제점과 해결방안<a href="#블록체인-저장-방식의-문제점과-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="fs" src="/en/assets/images/fs-f52db6e9cf6c8ce0bc8b929e5ca40d3d.jpg" width="696" height="402" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="db" src="/en/assets/images/db-6629ac6dd8975ae323c3a859ab6a86c7.jpg" width="878" height="390" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="blockchain" src="/en/assets/images/bc-0aaa353aef9759709de16fd3751a1c7b.jpg" width="762" height="396" class="img_xC7_"></td></tr><tr><td>저장단위</td><td>파일</td><td>테이블</td><td>블록체인</td></tr><tr><td>저장위치</td><td>로컬</td><td>중앙 시스템</td><td>분산원장</td></tr><tr><td>저장속도</td><td>빠름</td><td>트랜잭션처리, 빠름</td><td>합의알고리즘, 느림</td></tr><tr><td>데이터 저장 방식</td><td>FS API</td><td>DDL, DML</td><td>합의   알고리즘</td></tr><tr><td>트랜잭션</td><td>없음</td><td>ACID 보장</td><td>합의 알고리즘으로 트랜잭션 처리</td></tr><tr><td>데이터 중복</td><td>단일 데이터</td><td>역정규화로 일부 허용</td><td>참여자 전체 중복 저장</td></tr><tr><td>종류</td><td>FAT, NFTS</td><td>RDBMS, NoSQL</td><td>Public, Private, Hybrid</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점과-해결방안">블록체인 저장 방식의 문제점과 해결방안<a href="#블록체인-저장-방식의-문제점과-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점">블록체인 저장 방식의 문제점<a href="#블록체인-저장-방식의-문제점" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>탈중앙화, 확장성, 보안성 중 모두를 만족할 수 없는 <mark class="flexible-marker flexible-marker-default">블록체인 트릴레마</mark> 존재</li>
@@ -187,7 +187,7 @@
 <ul>
 <li>maxUnavailable, maxSurge 적절히 조절</li>
 <li>scale down 으로 비용 절감</li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/cloud-computing/">클라우드 컴퓨팅, 서비스 모델, 배포모델</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T01:24:00.000Z">March 10, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅의-개념">클라우드 컴퓨팅의 개념<a href="#클라우드-컴퓨팅의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사  융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/cloud-computing/">클라우드 컴퓨팅, 서비스 모델, 배포모델</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T01:24:00.000Z">March 10, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅의-개념">클라우드 컴퓨팅의 개념<a href="#클라우드-컴퓨팅의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>가상화 기술을 이용하여 사용자 필요시 인터넷을 통해서 서비스 형태로 IT자원을 제공하는 컴퓨팅 기법</li>
@@ -206,7 +206,7 @@
 </ul>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Private</td><td></td><td>사용자 소유</td></tr><tr><td>Public</td><td></td><td>제공자 소유</td></tr><tr><td>Hybrid</td><td></td><td>혼합 모델</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="배포모델과-서비스모델-비교">배포모델과 서비스모델 비교<a href="#배포모델과-서비스모델-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>배포모델</th><th>서비스모델</th></tr></thead><tbody><tr><td>목적</td><td>지속 가능 서비스 기반</td><td>온디맨드 서비스</td></tr><tr><td>범위</td><td>클라우드 구성 환경</td><td>클라우드 서비스</td></tr><tr><td>접근</td><td>온프레미스와의 연결성</td><td>비용 절감</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>배포모델</th><th>서비스모델</th></tr></thead><tbody><tr><td>목적</td><td>지속 가능 서비스 기반</td><td>온디맨드 서비  스</td></tr><tr><td>범위</td><td>클라우드 구성 환경</td><td>클라우드 서비스</td></tr><tr><td>접근</td><td>온프레미스와의 연결성</td><td>비용 절감</td></tr></tbody></table>
 <ul>
 <li>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택</li>
 </ul>
@@ -227,14 +227,14 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="기준">기준<a href="#기준" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <p>단어 수 기준으로는 이렇다.</p>
 <ul>
-<li>일반인: 600자/분</li>
+<li>일반  인: 600자/분</li>
 <li>명문대학생: 1,500자/분</li>
 <li>따라읽기의 한계치: 3,000자/분</li>
 <li>속독: 10,000자/분</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="방법">방법<a href="#방법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <p>완벽하게 하려고하지 않는다. 속으로 따라읽지 않는다. 머리나 몸은 고정한다.</p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="빠르게-보기">빠르게 보 기<a href="#빠르게-보기" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="빠르게-보기">빠르게 보기<a href="#빠르게-보기" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>가로, 세로, 횡대각, 종대각<!-- -->
 <ul>
@@ -271,7 +271,7 @@
 <ul>
 <li>단계<!-- -->
 <ul>
-<li>1단계: 10단어씩 끊어서 그 시야 폭의 가운데를 본다.</li>
+<li>1단계: 10단어씩 끊어서 그 시야 폭의 가운데를 본 다.</li>
 <li>2단계: 능동시야를 1행으로, 수동시야를 3행으로 늘린다. 똑같이 문장의 가운데를 본다.</li>
 <li>3단계: 능동시야를 3행으로, 수동시야를 5행으로 늘린다. 속독의 시작.</li>
 </ul>
@@ -279,7 +279,7 @@
 <li>시야폭 늘리기<!-- -->
 <ul>
 <li>눈에서 15~20cm 거리에 둔다. 마지막 사각형이 수동시야에 들어올듯 말듯한 거리</li>
-<li>작은 사각형에서 큰 사각형으로 본다. 큰 사각형까지 봤으면 다시 작은 사각형에서 시작 한다.</li>
+<li>작은 사각형에서 큰 사각형으로 본다. 큰 사각형까지 봤으면 다시 작은 사각형에서 시작한다.</li>
 <li>하나의 사각형을 0.5초 간격으로 본다.</li>
 <li>90~180초 동안 반복한다.</li>
 </ul>
@@ -304,9 +304,9 @@
 <ul>
 <li>내부구조를 파악하는지 여부에 따라 기법 변경</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="화이트박스-블랙박스- 테스트-핵심요소">화이트박스, 블랙박스 테스트 핵심요소<a href="#화이트박스-블랙박스-테스트-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="화이트박스-블랙박스-테스트-핵심요소">화이트박스, 블랙박스 테스트 핵심요소<a href="#화이트박스-블랙박스-테스트-핵심요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>화이트박스</th><th>블랙박스</th></tr></thead><tbody><tr><td>테스트기반</td><td>소스코드, 제어흐름그래프</td><td>요구사항명세서, 유스케이스</td></tr><tr><td>테스트설계</td><td>문장커버리지, 결정커버리지, 조건커버리지, 경로커버리지</td><td>동등분할, 경계값 분석, 오류추정, 원인/결과 분석</td></tr><tr><td>테스트목표</td><td>코드의 정확성, 안정성, 완전성 검증</td><td>기능요구사항 충족여부, UX 및 시스템 동작 검증</td></tr><tr><td>테스트시점</td><td>개발 초기 단계</td><td>개발 후반 단계</td></tr><tr><td>테스트자동화</td><td>JUnit, Jest 등 단위테스트 프레임워크</td><td>Selenium, Playwright 등 UI테스트 프레임워크</td></tr><tr><td>장점</td><td>숨겨진 결함 발견 용이, 테스트 커버리지 향상</td><td>사용자 관점 검증, 비교적 쉬운 TC 설계</td></tr><tr><td>단점</td><td>높은 비용, 시간 소모, 코드 변경시 TC 수정 필요</td><td>숨겨진 결합 발견 어려움, 낮은 TC 커버리지</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="화이트박스-블랙박스-테스트-적용방안">화이트박스, 블랙박스 테스트 적용방안<a href="#화이트박스-블랙박스-테스트-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="화이트박스-블랙박스-테스트-적용방안">화이트박스, 블랙박스  테스트 적용방안<a href="#화이트박스-블랙박스-테스트-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>화이트박스</th><th>블랙박스</th></tr></thead><tbody><tr><td>단위테스트</td><td>각 함수, 모듈 기능 검증</td><td>없음</td></tr><tr><td>통합테스트</td><td>모듈간 인터페이스 상호작용 검증</td><td>여러 모듈 통합 후 기능 검증</td></tr><tr><td>시스템테스트</td><td>없음</td><td>전체 시스템 기능, 성능 검증</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="테스트시-고려사항">테스트시 고려사항<a href="#테스트시-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>

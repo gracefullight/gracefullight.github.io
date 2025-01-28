@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.21aa951b.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.3c81dd8e.js" defer="defer"></script>
 <script src="/en/assets/js/main.f7c0801f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -127,11 +127,11 @@
 <li>BlockChain: hash based linked list block + merkle tree</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="파일-데이터베이스-블록체인-상세비교">파일, 데이터베이스, 블록체인 상세비교<a href="#파일-데이터베이스-블록체인-상세비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>저장단위</td><td>파일</td><td>테이블</td><td>블록체인</td></tr><tr><td>저장위치</td><td>로컬</td><td>중앙 시스템</td><td>분산 시스템</td></tr><tr><td>저장속도</td><td>빠름</td><td>트랜잭션처리, 빠름</td><td>합의알고리즘, 느림</td></tr><tr><td>데이터 저장 방식</td><td>FS API</td><td>DDL, DML</td><td>합의 알고리즘</td></tr><tr><td>트랜잭션</td><td>없음</td><td>ACID 보장</td><td>합의 알고리즘으로 트랜잭션 처리</td></tr><tr><td>데이터 중복</td><td>단일 데이터</td><td>역정규화로 일부 허용</td><td>참여자 전체 중복 저장</td></tr><tr><td>종류</td><td>FAT, NFTS</td><td>RDBMS, NoSQL</td><td>Public, Private, Hybrid</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="fs" src="/en/assets/images/fs-f52db6e9cf6c8ce0bc8b929e5ca40d3d.jpg" width="696" height="402" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="db" src="/en/assets/images/db-6629ac6dd8975ae323c3a859ab6a86c7.jpg" width="878" height="390" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="blockchain" src="/en/assets/images/bc-0aaa353aef9759709de16fd3751a1c7b.jpg" width="762" height="396" class="img_xC7_"></td></tr><tr><td>저장단위</td><td>파일</td><td>테이블</td><td>블록체인</td></tr><tr><td>저장위치</td><td>로컬</td><td>중앙 시스템</td><td>분산원장</td></tr><tr><td>저장속도</td><td>빠름</td><td>트랜잭션처리, 빠름</td><td>합의알고리즘, 느림</td></tr><tr><td>데이터 저장 방식</td><td>FS API</td><td>DDL, DML</td><td>합의 알고리즘</td></tr><tr><td>트랜잭션</td><td>없음</td><td>ACID 보장</td><td>합의 알고리즘으로 트랜잭션 처리</td></tr><tr><td>데이터 중복</td><td>단일 데이터</td><td>역정규화로 일부 허용</td><td>참여자 전체 중복 저장</td></tr><tr><td>종류</td><td>FAT, NFTS</td><td>RDBMS, NoSQL</td><td>Public, Private, Hybrid</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점과-해결방안">블록체인 저장 방식의 문제점과 해결방안<a href="#블록체인-저장-방식의-문제점과-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-방식의-문제점">블록체인 저장 방식의 문제점<a href="#블록체인-저장-방식의-문제점" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
-<li>탈중앙화, 확장성, 보안성 중 모두를 만족  할 수 없는 <mark class="flexible-marker flexible-marker-default">블록체인 트릴레마</mark> 존재</li>
+<li>탈중앙화, 확장성, 보안성 중 모두를 만족할 수 없는 <mark class="flexible-marker flexible-marker-default">블록체인 트릴레마</mark> 존재</li>
 <li>합의 알고리즘 수행에 시간이 걸리므로, 실시간 웹 서비스에는 부적합</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="블록체인-저장-특성-문제-해결방안">블록체인 저장 특성 문제 해결방안<a href="#블록체인-저장-특성-문제-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -142,7 +142,7 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="파일-데이터베이스-블록체인-적용방안">파일, 데이터베이스, 블록체인 적용방안<a href="#파일-데이터베이스-블록체인-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>파일</th><th>데이터베이스</th><th>블록체인</th></tr></thead><tbody><tr><td>개인/기업 데이터저장</td><td>엔터프라이즈 어플리케이션</td><td>암호화폐</td></tr><tr><td>멀티미디어</td><td>웹 어플리케이션</td><td>공급망 관리</td></tr><tr><td>IPFS</td><td>빅데이터 분석</td><td>스마트 컨트랙트</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/auto-scaling/">오토스케일링</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T01:41:00.000Z">March 10, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="오토스케일링-개념">오토스케일링 개념<a href="#오토스케일링-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>시스템 자원 매트릭을 모니터링하여 서버 사이즈를 자동으로 조절하는 기술</li>
+<li>시스템 자원  매트릭을 모니터링하여 서버 사이즈를 자동으로 조절하는 기술</li>
 <li>클라우드 컴퓨팅의 온디맨드 방식을 기반으로 자원 최적화, 고가용성, 온프레미스 대비 운영의 단순화를 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="오토스케일링의-구성">오토스케일링의 구성<a href="#오토스케일링의-구성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -174,7 +174,7 @@
 <ul>
 <li>서비스 모델: 클라우드 자원의 제공 방식에 따른 분류</li>
 </ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IaaS</td><td></td><td>사용자 관리  책임</td></tr><tr><td>PaaS</td><td></td><td>공통 관리 책임</td></tr><tr><td>SaaS</td><td></td><td>제공자 관리 책임</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IaaS</td><td></td><td>사용자 관리 책임</td></tr><tr><td>PaaS</td><td></td><td>공통 관리 책임</td></tr><tr><td>SaaS</td><td></td><td>제공자 관리 책임</td></tr></tbody></table>
 <ul>
 <li>배포 모델: 클라우드 자원 소유주체와 관리방식에 따른 분류</li>
 </ul>
@@ -184,8 +184,8 @@
 <ul>
 <li>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-활성전략">클라우드 컴퓨팅 활성전략<a href="#클라우드-컴퓨팅-활성전략" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>활성전략</th><th>내용</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드</td><td>공공기관이 민간 CSP와 협력해 전용 클라우드 환경 구축</td></tr><tr><td></td><td>금융사 하이브리드 멀티 클라우드</td><td>금융권이 퍼블릭·프라이빗 클라우드를 혼합 운영해 보안·효 율성 확보</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App</td><td>컨테이너·마이크로서비스 기반 클라우드 네이티브 앱 개발 모델</td></tr><tr><td></td><td>K-PaaS</td><td>국내 맞춤형 PaaS, 개발·운영 환경 지원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-활성전략">클라우드 컴퓨팅 활성전략<a href="#클라우드-컴퓨팅-활성전  략" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>활성전략</th><th>내용</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드</td><td>공공기관이 민간 CSP와 협력해 전용 클라우드 환경 구축</td></tr><tr><td></td><td>금융사 하이브리드 멀티 클라우드</td><td>금융권이 퍼블릭·프라이빗 클라우드를 혼합 운영해 보안·효율성 확보</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App</td><td>컨테이너·마이크로서비스 기반 클라우드 네이티브 앱 개발 모델</td></tr><tr><td></td><td>K-PaaS</td><td>국내 맞춤형 PaaS, 개발·운영 환경 지원</td></tr></tbody></table>
 <ul>
 <li>기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택</li>
 </ul>
