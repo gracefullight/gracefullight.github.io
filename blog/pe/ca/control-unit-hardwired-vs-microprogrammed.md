@@ -25,7 +25,7 @@ graph TB
 
 ### Micro-programmed 개념
 
-![Micro-programmed](./assets/micro-programmed.png)
+![Micro-programmed](./assets/micro-programmed.jpg)
 
 ### Micro-programmed 구성요소
 
@@ -42,7 +42,7 @@ graph TB
 
 ### Hard-wired 개념
 
-![Hard-wired](./assets/hard-wired.png)
+![Hard-wired](./assets/hard-wired.jpg)
 
 ### Hard-wired 구성요소
 

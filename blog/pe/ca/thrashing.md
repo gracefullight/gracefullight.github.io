@@ -16,7 +16,7 @@ tags:
 
 ### 프로세스 스레싱의 개념도
 
-![thrashing](./assets/thrashing.png)
+![thrashing](./assets/thrashing.jpg)
 
 - 다중 프로그래밍의 정도가 높아짐에 따라 프로세서 이용률이 향상되며 임계치 도달 후 프로세서 이용률이 낮아짐
 
