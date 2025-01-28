@@ -5,30 +5,25 @@ description: Tuckman Ladder Model
 authors: me
 tags:
   - pe
-  - pe/pm 
+  - pe/pm
 ---
 
 ## 터크만 사다리 모델의 개념
 
 - 프로젝트 수행 시 팀 개발 과정을 Forming, Storming, Norming, Performing, Adjourning의 5단계로 표현한 모델
-- 조직이 성장하고 도전에 대응하고 문제의식을 갖고 해결책을 찾으며 작업계획을 세우고 결과를 만들기
-위하여 필요한 팀 개발 방법론
+- 조직이 성장하고 도전에 대응하고 문제의식을 갖고 해결책을 찾으며 작업계획을 세우고 결과를 만들기 위하여 필요한 팀 개발 방법론
 
 ## 터크만 사다리 모델의 구성도, 특징, 적용방안
 
 ### 터크만 사다리 모델의 구성도
 
-```mermaid
-xychart-beta
-  title "터크만 사다리 모델"
-  x-axis ["Forming", "Storming", "Norming", "Performing", "Adjourning"]
-  y-axis "구성원간 상호의존성" 0 --> 100
-  line [10, 30, 50, 70, 40]
-```
+![tuckman](./assets/tuckman.jpg)
 
 - 세부 단계별 프로젝트 팀의 관심과 리더십, 필요 활동 상이
 
 ### 터크만 사다리 모델의 단계별 특징
+
+> 형혼규성해
 
 | 단계 | 주요 관심 | 리더십 | 필요 활동 |
 | --- | --- | --- | --- |
