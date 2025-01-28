@@ -2,11 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T12:53:53.405Z</updated>
+    <updated>2025-01-28T13:05:57.573Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[데이터 거래소]]></title>
+        <id>https://gracefullight.dev/pe/conv/데이터-거래소/</id>
+        <link href="https://gracefullight.dev/pe/conv/데이터-거래소/"/>
+        <updated>2025-01-28T13:05:57.573Z</updated>
+        <summary type="html"><![CDATA[데이터 거래소]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이터 거래소 개념에 대한 직접 링크" title="데이터 거래소 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>데이터 수집, 가공하여 부가가치를 높혀 소비자에게 공급하는 대규모 플랫폼</li>
+<li>데이터 품질보증, AI학습 데이터 마련, 데이터 활용 경제 활성화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-구성도-활성화-방안">데이터 거래소 구성도, 활성화 방안<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="데이터 거래소 구성도, 활성화 방안에 대한 직접 링크" title="데이터 거래소 구성도, 활성화 방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-구성도">데이터 거래소 구성도<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="데이터 거래소 구성도에 대한 직접 링크" title="데이터 거래소 구성도에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="데이터 거래소" src="https://gracefullight.dev/assets/images/%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B1%B0%EB%9E%98%EC%86%8C-5a885ac3f1c874a880ba56a7ea55ec00.jpg" width="2676" height="1044" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-활성화방안">데이터 거래소 활성화방안<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88" class="hash-link" aria-label="데이터 거래소 활성화방안에 대한 직접 링크" title="데이터 거래소 활성화방안에 대한 직접 링크">​</a></h3>
+<ul>
+<li>데이터 바우처</li>
+<li>빅데이터 캠퍼스</li>
+<li>VM, R, Spark 등 데이터 분석 환경 지원</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[슈퍼앱]]></title>
+        <id>https://gracefullight.dev/pe/conv/superapp/</id>
+        <link href="https://gracefullight.dev/pe/conv/superapp/"/>
+        <updated>2025-01-28T13:02:14.214Z</updated>
+        <summary type="html"><![CDATA[Superapp]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱">슈퍼앱<a href="https://gracefullight.dev/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1" class="hash-link" aria-label="슈퍼앱에 대한 직접 링크" title="슈퍼앱에 대한 직접 링크">​</a></h2>
+<ul>
+<li>하나의 앱 안에서 다양한 서비스를 통합 제공하여 다른 앱을 설치하지 않고 여러 서비스를 이용할 수 있는 앱</li>
+<li>사용편의성, 고객 락인효과, 지속적인 거래경험</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱-멀티앱-비교">슈퍼앱, 멀티앱 비교<a href="https://gracefullight.dev/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1-%EB%A9%80%ED%8B%B0%EC%95%B1-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="슈퍼앱, 멀티앱 비교에 대한 직접 링크" title="슈퍼앱, 멀티앱 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱-개념">슈퍼앱 개념<a href="https://gracefullight.dev/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="슈퍼앱 개념에 대한 직접 링크" title="슈퍼앱 개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>하나의 앱 안에 다양한 미니앱 통합 제공</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="미니앱-개념">미니앱 개념<a href="https://gracefullight.dev/pe/conv/superapp/#%EB%AF%B8%EB%8B%88%EC%95%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="미니앱 개념에 대한 직접 링크" title="미니앱 개념에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>서비스별 앱 분리 후 별도 앱으로 제공</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[쿠버네티스]]></title>
         <id>https://gracefullight.dev/pe/conv/kubernetes/</id>
@@ -231,53 +287,6 @@
 <ul>
 <li>TIA-942 데이터센터 구축을 위한 표준 요구사항을 참조하여 비용효율성과 가용성 제고</li>
 </ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[스토리지 가상화]]></title>
-        <id>https://gracefullight.dev/pe/ca/storage-virtualization/</id>
-        <link href="https://gracefullight.dev/pe/ca/storage-virtualization/"/>
-        <updated>2025-01-28T01:24:51.260Z</updated>
-        <summary type="html"><![CDATA[Storage Virtualization]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-개념">스토리지 가상화 개념<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="스토리지 가상화 개념에 대한 직접 링크" title="스토리지 가상화 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>물리적으로 분리된 다수 스토리지를 논리적으로 통합하여 스토리지 자원의 가용성과 편리성을 향상시키는 기술</li>
-<li>기존스토리지 낮은 활용도(48%) 극복, 벤더 종속적인 이기종 스토리지 호환성 문제, 유지보수 비용 절감</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-유형">스토리지 가상화 유형<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="스토리지 가상화 유형에 대한 직접 링크" title="스토리지 가상화 유형에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>블록스토리지 가상화</th><th>파일스토리지 가상화</th><th>오브젝트스토리지 가상화</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="block-storage" src="https://gracefullight.dev/assets/images/block-storage-virtualization-5f6baa6587cd0539cd5881f067b688cf.jpg" width="802" height="332" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="file-storage" src="https://gracefullight.dev/assets/images/file-storage-virtualization-6ca0ddee7bf23d7260cc0fcc85e637ff.jpg" width="838" height="322" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="object-storage" src="https://gracefullight.dev/assets/images/object-storage-virtualization-fd4ffd3af367317e3697578893fb7a02.jpg" width="952" height="320" class="img_xC7_"></td></tr><tr><td>개념</td><td>물리적 스토리지를 블록 단위로 추상화하여 논리적 블록으로 제공</td><td>물리적 스토리지를 파일단위로 추상화하여 파일명, 경로 통해 공유</td><td>데이터를 개체 단위로 관리하여 데이터와 메타데이터를 함께 저장하고 논리적 통합하여 제공</td></tr><tr><td>주요환경</td><td>SAN</td><td>NAS/SAN</td><td>클라우드 스토리지, 대규모 비정형데이터 저장소</td></tr><tr><td>접근방식</td><td>OS가 논리적 블록주소 통해 접근</td><td>파일명, 경로</td><td>RESTful API, HTTP, HTTPS</td></tr><tr><td>프로토콜</td><td>iSCSI, FC</td><td>NFC, SMB, CIFS</td><td>S3API, HTTP, HTTPS</td></tr><tr><td>주요사례</td><td>DB, 고성능 어플리케이션, 가상머신디스크</td><td>파일공유, NW기반 데이터 접근</td><td>클라우드스토리지, 데이터분석, 비정형데이터 저장</td></tr><tr><td>특징</td><td>낮은 오버헤드, 빠른 데이터 전송, OS 무관</td><td>액세스제어 용이, 속성정보 관리 편이</td><td>오브젝트별 고유 ID, OS/FS 의존성 없음, 무한 확장성</td></tr><tr><td>대표기술</td><td>SANique, IBM SVC, 스토리지 어레이</td><td>NFS, GPFS, SNFS, GFS</td><td>S3, Cloud Storage, Blob Storage</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-구축시-고려사항">스토리지 가상화 구축시 고려사항<a href="https://gracefullight.dev/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B5%AC%EC%B6%95%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="스토리지 가상화 구축시 고려사항에 대한 직접 링크" title="스토리지 가상화 구축시 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>항목</th><th>고려사항</th><th>설명</th></tr></thead><tbody><tr><td>호환성</td><td>지원 프로토콜 및 솔루션</td><td>DBMS, HA 솔루션, 백업 장치 지원 가능<br>FC 프로토콜, iSCSI 프로토콜, CIFS &amp; NFS 지원</td></tr><tr><td>가용성/안정성</td><td>장애 대응 및 데이터 보호</td><td>Failover 기능 지원 및 데이터 유실 방지<br>바이러스 및 기타 공격 차단</td></tr><tr><td>기능성</td><td>서비스 연속성 및 확장성</td><td>무중단 서비스 및 스토리지 추가/제거<br>디스크 볼륨 할당 및 확장 작업 가능</td></tr><tr><td>구축용이성</td><td>시스템 다운타임 최소화</td><td>기존 시스템과의 호환성 고려<br>다운타임 최소화 방안 제시</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TIA-942]]></title>
-        <id>https://gracefullight.dev/pe/ca/tia-942/</id>
-        <link href="https://gracefullight.dev/pe/ca/tia-942/"/>
-        <updated>2025-01-28T01:08:36.602Z</updated>
-        <summary type="html"><![CDATA[TIA-942]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-개념">TIA-942 개념<a href="https://gracefullight.dev/pe/ca/tia-942/#tia-942-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="TIA-942 개념에 대한 직접 링크" title="TIA-942 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>미 통신산업협회가 제정한 데이터센터 설계 및 운영에 필요한 최소 요건을 규정한 데이터 센터 인프라의 Defacto 표준</li>
-<li>데이터센터 안정성, 신뢰성, 확장성, 보안지침 제공, 데이터센터 품질 평가기준</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-구성도-품질등급">TIA-942 구성도, 품질등급<a href="https://gracefullight.dev/pe/ca/tia-942/#tia-942-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89" class="hash-link" aria-label="TIA-942 구성도, 품질등급에 대한 직접 링크" title="TIA-942 구성도, 품질등급에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-구성도">TIA-942 구성도<a href="https://gracefullight.dev/pe/ca/tia-942/#tia-942-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="TIA-942 구성도에 대한 직접 링크" title="TIA-942 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-품질등급-개념도">TIA-942 품질등급 개념도<a href="https://gracefullight.dev/pe/ca/tia-942/#tia-942-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="TIA-942 품질등급 개념도에 대한 직접 링크" title="TIA-942 품질등급 개념도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="tia-942" src="https://gracefullight.dev/assets/images/tia-942-06f4e5bd7969b8b60766e56180ae4c00.jpg" width="1278" height="620" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-품질등급-상세설명">TIA-942 품질등급 상세설명<a href="https://gracefullight.dev/pe/ca/tia-942/#tia-942-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="TIA-942 품질등급 상세설명에 대한 직접 링크" title="TIA-942 품질등급 상세설명에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>Tier1</th><th>Tier2</th><th>Tier3</th><th>Tier4</th></tr></thead><tbody><tr><td>장애영향</td><td>비/계획된 액티비티에 대한 사이트 영향 높음</td><td>비/계획된 액티비티에 대한 사이트 영향 보통</td><td>계획된 액티비티에 대한 컴퓨팅 HW 운영지장 없음</td><td>계획된 액티비티에 대한 임계부하 없음</td></tr><tr><td></td><td></td><td></td><td>비계획 작업은 영향</td><td>비계획 액티비티 임계부하 적어도 1번 방어</td></tr><tr><td>전력/냉방시설 이중화</td><td>필요</td><td>N+1</td><td>N+1, 동시 활성화</td><td>2(N+1), 무정지상태</td></tr><tr><td>백본/라우터 이중화</td><td>없음</td><td>없음</td><td>필요</td><td>필요</td></tr><tr><td>적용기간</td><td>3개월</td><td>~6개월</td><td>15~20개월</td><td>15~20개월</td></tr><tr><td>MTTR</td><td>28.8h</td><td>22.0h</td><td>1.6h</td><td>0.4h</td></tr><tr><td>보안시설</td><td>일반 잠금장치</td><td>카드인식</td><td>생체인식</td><td>생체인식</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
