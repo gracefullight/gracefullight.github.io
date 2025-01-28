@@ -5,7 +5,7 @@ description: Tactile Internet
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 촉각인터넷 개념
@@ -19,14 +19,30 @@ tags:
 
 ```mermaid
 graph LR
-    A[Human-System Interface] --> B[센서]
-    B --> C[액추에이터]
-    C --> D[구동 드라이버]
-    D --> E[저지연통신]
-    E --> F[데이터 센터]
+  subgraph 마스터영역[Master Zone]
+    direction LR
+    센서
+    액츄에이터
+    HSI[Human-System Interface]
+  end
+  
+  subgraph 네트워크영역[NW Zone]
+    direction LR
+    초저지연네트워크
+    위성네트워크
+  end
+  
+  subgraph 컨트롤러영역[Controller Zone]
+    direction LR
+    원격로봇제어
+    원격주행
+    원격의료
+  end
+
+  마스터영역 -..-> 네트워크영역 -..-> 컨트롤러영역
 ```
 
-- 마스터영역, 제어영역, 네트워크영역
+- HSI와 6G/위성 네트워크를 통해 Haptic, Non-Haptic 통신 구현
 
 ## 촉각인터넷 구성요소
 
