@@ -5,7 +5,7 @@ description: Performance Test
 authors: me
 tags:
   - pe
-  - pe/sw 
+  - pe/sw
 ---
 
 ## 성능테스트의 개념
@@ -28,7 +28,14 @@ graph LR
     부하생성기 -->|TPS| 테스트대상시스템[테스트 대상 시스템]
   end
 
-  테스트대상시스템 --> 모니터링
+  테스트대상시스템 --> |측정| 모니터링
+
+  subgraph 모니터링
+    direction LR
+    응답시간
+    대기시간
+    TPS
+  end
 ```
 
 - 테스트 시나리오를 작성 후 부하생성, 모니터링 및 분석 후 시스템에 추가 반영
