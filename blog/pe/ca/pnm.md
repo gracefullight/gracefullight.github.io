@@ -5,7 +5,7 @@ description: Processing Near Memory
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/ca
 ---
 
 ## PNM의 개념

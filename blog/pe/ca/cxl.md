@@ -5,7 +5,7 @@ description: Compute Express Link
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/ca
 ---
 
 ## CXL 개념
@@ -17,14 +17,7 @@ tags:
 
 ### CXL 구성도
 
-```mermaid
-graph LR
-  프로세서 <--> |CXL| 가속기
-
-  subgraph 가속기
-    CXL.io --- CXL.cache --- CXL.mem
-  end
-```
+![cxl](./assets/cxl.jpg)
 
 ### CXL 구성요소
 
@@ -46,13 +39,13 @@ graph LR
 
 ### CXL 유형
 
-![유형 참조](https://www.viavisolutions.com/sites/default/files/images/diagram-cxl-device-types-viavi.png)
+![cxl type](./assets/cxl-type.jpg)
 
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
-| CXL Type 1 | 메모리 일관성 없이 I/O 가속기를 연결하여 고속 데이터 전송을 지원 | 단순 I/O 연결, 낮은 지연 시간 |
-| CXL Type 2 | 메모리 일관성을 유지하며 CPU와 가속기 간의 데이터 전송을 지원  | CPU와 가속기 간의 일관성 유지 |
-| CXL Type 3 | 메모리 풀링을 통해 여러 장치 간의 메모리 자원을 공유하고 관리 | 메모리 공유 및 풀링 기능 |
+| CXL Type 1 | 메모리 일관성 없이 I/O 가속기를 연결하여 고속 데이터 전송을 지원 | 단순 I/O 연결, 낮은 지연 시간, 스마트 NIC |
+| CXL Type 2 | 메모리 일관성을 유지하며 CPU와 가속기 간의 데이터 전송을 지원 | CPU와 가속기 간의 일관성 유지, CPU, 고밀도컴퓨팅 |
+| CXL Type 3 | 메모리 풀링을 통해 여러 장치 간의 메모리 자원을 공유하고 관리 | 메모리 공유 및 풀링 기능, 메모리 확장, 스토리지클래스 |
 
 ### CXL PCIe 비교
 
