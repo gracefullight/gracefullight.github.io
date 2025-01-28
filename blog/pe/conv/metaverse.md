@@ -18,14 +18,22 @@ tags:
 
 ```mermaid
 graph LR
-  U[사용자]
-
   subgraph 인프라
-    direction LR
-    플랫폼 --- 컨텐츠
+    네트워크
+    시스템
   end
 
-  U ---> 인프라
+  subgraph 플랫폼
+    플랫폼개발
+    기술/디바이스
+  end
+
+  subgraph 가상생태계
+    콘텐츠개발
+    콘텐츠소비
+  end
+
+  인프라 --> 플랫폼 --> 가상생태계
 ```
 
 ### 메타버스의 구성요소
