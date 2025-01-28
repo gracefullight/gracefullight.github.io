@@ -2,18 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-27T13:13:52.870Z</updated>
+    <updated>2025-01-28T00:19:18.460Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[칩렛]]></title>
+        <id>https://gracefullight.dev/en/pe/ca/chiplet/</id>
+        <link href="https://gracefullight.dev/en/pe/ca/chiplet/"/>
+        <updated>2025-01-28T00:19:18.460Z</updated>
+        <summary type="html"><![CDATA[Chiplet]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-�개념">칩렛 개념<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>여러 개의 작은 칩(다이)을 모듈화하여 하나의 패키지 안에서 상호연결하는 기술</li>
+<li>무어의 법칙 한계, 단일 SoC를 나누고 조합하여 유연한 아키텍처 제공, 설계/생산비용 절감</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념도-구현-방법-장점">칩렛 개념도, 구현 방법, 장점<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념도">칩렛 개념도<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="chiplet" src="https://gracefullight.dev/en/assets/images/chiplet-a826476a0852a685f6afac429cc48485.jpg" width="2722" height="798" class="img_xC7_"></p>
+<ul>
+<li>다이 슬롯 모듈화로 다양항 기능을 가진 이기종 칩을 결합하여 사용 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-구현-방법">칩렛 구현 방법<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>와이어본딩</th><th>플립칩 본딩</th><th>TSV</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="wire-bonding" src="https://gracefullight.dev/en/assets/images/wire-bonding-63918e5feb718aac0666a4d6c822bfe7.jpg" width="634" height="294" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="filp-chip-bonding" src="https://gracefullight.dev/en/assets/images/flip-chip-bonding-97ca8c0ddee6d434640d79eafa6de79a.jpg" width="620" height="314" class="img_xC7_"></td><td><img decoding="async" loading="lazy" alt="through silicon via" src="https://gracefullight.dev/en/assets/images/tsv-df25fdbe21e266d7b2180fd73833905b.jpg" width="646" height="282" class="img_xC7_"></td></tr><tr><td>개념</td><td>칩과 기판 또는 칩 간 연결을 금속 와이어를 통해 구현하는 전통적인 본딩 방식</td><td>칩과 기판을 플립(뒤집어) 배치한 후, 범프(땜납)로 연결하는 본딩 방식</td><td>실리콘 웨이퍼에 수직으로 뚫린 구멍(비아)를 통해 칩 내부 및 칩 간 전기 신호를 연결하는 3D 본딩 방식</td></tr><tr><td>특징</td><td>전기적 신호 전달거리 짧음</td><td>작은 전기저항, 빠른 속도</td><td>칩 간 인터커넥션 길이 감소, 빠른 신호전달</td></tr><tr><td></td><td>전기적 특성 우수</td><td>작은 폼팩터 구현 가능</td><td>고용량, 저전력</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-장점">칩렛 장점<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>측면</th><th>장점</th></tr></thead><tbody><tr><td>기술적</td><td>품질측면</td><td>칩 분할 생산 통한 수율향상</td></tr><tr><td></td><td>제조측면</td><td>바른 설계와 제작 가능</td></tr><tr><td></td><td>결합측면</td><td>상이한 이종칩 결합 가능</td></tr><tr><td>산업적</td><td>비용측면</td><td>제작 및 설계 비용 감소</td></tr><tr><td></td><td>개발측면</td><td>핵심 기술 개발 효율</td></tr><tr><td></td><td>시장측면</td><td>웨이퍼 칩 설계, 제작 진입장벽 낮춤</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="soc-sip-chiplet-비교">SoC, SiP, Chiplet 비교<a href="https://gracefullight.dev/en/pe/ca/chiplet/#soc-sip-chiplet-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>SoC</th><th>SiP</th><th>Chiplet</th></tr></thead><tbody><tr><td>구조</td><td>단일 칩 내 모든 기능 통합</td><td>여러 다이를 하나의 패키지로 통합</td><td>개별/기능별 모듈형 칩 통합</td></tr><tr><td>유연성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>성능최적화</td><td>제한적</td><td>제한적</td><td>각 기능별 최적화 가능</td></tr><tr><td>비용효율성</td><td>낮음</td><td>중간</td><td>높음</td></tr><tr><td>개발기간</td><td>김</td><td>중간</td><td>짧음</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/computer-architecture" term="pe/computer-architecture"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[캐시]]></title>
         <id>https://gracefullight.dev/en/pe/ca/cache/</id>
         <link href="https://gracefullight.dev/en/pe/ca/cache/"/>
         <updated>2025-01-27T13:13:52.870Z</updated>
         <summary type="html"><![CDATA[Cache]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-개념">캐시 개념<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-�개념">캐시 개념<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>CPU와 주기억장치 간의 속도차를 완화시켜 프로세서 대기시간을 최소화를 위한 고속 메모리</li>
@@ -46,12 +76,12 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-구현방법-개념-및-구성요소">Micro-programmed 구현방법 개념 및 구성요소<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-개념">Micro-programmed 개념<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Micro-programmed" src="https://gracefullight.dev/en/assets/images/micro-programmed-6acc8dd913b53dd129ae96261693b30a.png" width="1316" height="700" class="img_xC7_"></p>
+<p><img decoding="async" loading="lazy" alt="Micro-programmed" src="https://gracefullight.dev/en/assets/images/micro-programmed-b474904168c13307f5674b9c48fa97e6.jpg" width="1316" height="700" class="img_xC7_"></p>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-구성요소">Micro-programmed 구성요소<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구성요소</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>IR (Instruction Register)</td><td>명령어 저장</td><td>현재 실행 중인 명령어를 저장하고 제어 메모리 주소를 생성하는 데 사용</td></tr><tr><td>Address Generator</td><td>마이크로 명령 주소 생성</td><td>현재 명령어와 상태를 기반으로 제어 메모리의 다음 주소를 생성</td></tr><tr><td>CAR (Control Address Register)</td><td>제어 메모리 주소 저장</td><td>제어 메모리에서 접근할 주소를 저장</td></tr><tr><td>Control Memory (ROM)</td><td>마이크로코드 저장</td><td>제어 신호 생성을 위한 마이크로 명령어들을 저장</td></tr><tr><td>CDR (Control Data Register)</td><td>제어 데이터 저장</td><td>제어 메모리에서 읽어온 마이크로 명령어를 저장</td></tr><tr><td>Control Signals</td><td>제어 신호</td><td>마이크로 명령어에 따라 생성된 최종 제어 신호</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-구현방법-개념-및-구성요소">Hard-wired 구현방법 개념 및 구성요소<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B5%AC%ED%98%84%EB%B0%A9%EB%B2%95-%EA%B0%9C%EB%85%90-%EB%B0%8F-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-개념">Hard-wired 개념<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Hard-wired" src="https://gracefullight.dev/en/assets/images/hard-wired-631b315411130581a84aaad896a1e3b4.png" width="1328" height="710" class="img_xC7_"></p>
+<p><img decoding="async" loading="lazy" alt="Hard-wired" src="https://gracefullight.dev/en/assets/images/hard-wired-f76becd9ef64da999798cc3948b963e8.jpg" width="1328" height="710" class="img_xC7_"></p>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="hard-wired-구성요소">Hard-wired 구성요소<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#hard-wired-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구성요소</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>IR (Instruction Register)</td><td>명령어 저장</td><td>현재 실행 중인 명령어를 저장하고 디코더에 전달</td></tr><tr><td>Instruction Decoder</td><td>명령어 해독</td><td>IR에서 전달받은 명령어를 해독하여 제어 신호 생성을 준비</td></tr><tr><td>Control Step Counter</td><td>클록 기반 스텝 제어</td><td>클록 신호를 기반으로 명령 실행 단계를 순차적으로 관리</td></tr><tr><td>Control Signal Generator</td><td>제어 신호 생성</td><td>디코더와 스텝 카운터의 정보를 기반으로 제어 신호를 생성</td></tr><tr><td>Flags</td><td>상태 플래그</td><td>연산 결과나 상태 정보를 저장하고 제어 신호 생성에 활용</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-hard-wired-비교">Micro-programmed, Hard-wired 비교<a href="https://gracefullight.dev/en/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-hard-wired-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -83,7 +113,7 @@
 <ul>
 <li>SW적으로 CPU가 외부 장치의 상태를 지속적으로 검사하여 인터럽트 요청여부를 확인하는 방식</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EF%BF%BD%EF%BF%BD%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>초기화 및 확인</td><td>초기화</td><td>CPU는 외부 장치와의 통신을 위한 인터럽트 관련 레지스터 및 플래그를 초기화</td></tr><tr><td></td><td>장치 확인, 상태 확인</td><td>CPU는 특정 외부 장치(예: 입출력 장치, 타이머 등)의 상태를 주기적으로 확인하기 위해 루프를 실행하며, 루프 내에서 특정 장치에 대한 상태를 확인</td></tr><tr><td></td><td>인터럽트 여부 판단</td><td>CPU는 장치의 상태를 확인한 후 인터럽트가 발생했는지 여부를 판단하며, 특정 플래그나 레지스터의 값을 확인하여 인터럽트 여부를 판단</td></tr><tr><td>처리</td><td>인터럽트 처리</td><td>인터럽트가 발생한 경우, CPU는 해당 인터럽트에 대한 처리를 위해 인터럽트 서비스 루틴을 실행</td></tr><tr><td></td><td>루프 반복</td><td>처리가 완료되면 CPU는 다시 루프를 시작하여 다음 인터럽트가 발생했는지를 확인하고 처리</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인">데이지 체인<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-개념">데이지 체인 개념<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -99,7 +129,7 @@
 <ul>
 <li>각 인터럽트를 참조하는 인터럽트 벡터 테이블을 관리, 고유 벡터 주소로 서브루틴을 실행하는 방식</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="��벡터-인터럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>인터럽트 발생 및 동작</td><td>인터럽트 발생</td><td>외부 장치에서 인터럽트가 발생</td></tr><tr><td></td><td>인터럽트 컨트롤러 동작</td><td>인터럽트 컨트롤러는 발생한 인터럽트를 CPU에 알리고 해당 인터럽트의 번호(인터럽트 벡터)를 제공</td></tr><tr><td>확인 및 처리</td><td>인터럽트 벡터 확인</td><td>CPU는 인터럽트 컨트롤러로부터 받은 인터럽트 벡터를 이용하여 인터럽트 서비스 루틴의 주소를 확인</td></tr><tr><td></td><td>인터럽트 서비스 루틴 실행</td><td>CPU는 찾아낸 인터럽트 서비스 루틴의 주소로 점프하여 해당 인터럽트를 처리</td></tr><tr><td></td><td>인터럽트 서비스 루틴 종료</td><td>인터럽트 서비스 루틴의 실행이 완료되었음을 CPU가 인식</td></tr><tr><td>복귀</td><td>프로그램 복귀</td><td>인터럽트 서비스 루틴 실행 후, CPU는 원래의 프로그램 또는 작업으로 돌아가 수행을 계속 진행</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형-비교">인터럽트 유형 비교<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>폴링</th><th>데이지체인</th><th>벡터인터럽트</th></tr></thead><tbody><tr><td>개념</td><td>CPU가 주기적으로 장치 상태를 확인하여 인터럽트를 처리하는 방식</td><td>인터럽트 신호가 장치 간 체인을 따라 전달되며, 우선순위가 높은 장치가 처리되는 방식</td><td>각 장치가 고유의 인터럽트 벡터를 가지며, 벡터를 통해 해당 장치를 즉시 처리하는 방식</td></tr><tr><td>방식</td><td>SW</td><td>HW</td><td>HW</td></tr><tr><td>속도</td><td>느림</td><td>중간, 체인 길이에 따른 지연</td><td>빠름, 벡터 주소로 즉시 처리</td></tr><tr><td>장점</td><td>구현 간단, 추가 HW 불필요</td><td>단일 인터럽트 라인으로 여러 장치 처리 가능</td><td>빠른 속도, 유연한 우선순위</td></tr><tr><td></td><td>단순한 시스템에 효율적</td><td>우선순위 제어 용이</td><td>복잡한 시스템에서 효율적</td></tr><tr><td>단점</td><td>CPU 자원 소모, 성능 저하</td><td>체인 길이가 길어질 시 병목 발생</td><td>구현 복잡, 추가 HW 비용</td></tr><tr><td></td><td>느린 반응 속도</td><td>장치 추가 시 체인 구조 변경 필요</td><td>벡터 테이블 구성/관리 비용</td></tr></tbody></table>]]></content>
@@ -230,7 +260,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-사례">생성형 AI 사례<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>주요 설명</th><th>사례</th></tr></thead><tbody><tr><td>챗봇 및 가상 비서</td><td>사용자의 질문에 답변하고 다양한 작업을 수행하는 AI 기반의 대화형 인터페이스</td><td>ChatGPT, Siri, Alexa</td></tr><tr><td>콘텐츠 생성 도구</td><td>텍스트, 이미지, 비디오 등 다양한 형태의 콘텐츠를 자동으로 생성하는 도구</td><td>ChatGPT, Canva, DALL·E</td></tr><tr><td>언어 번역 서비스</td><td>다양한 언어 간의 실시간 번역을 제공하는 서비스</td><td>DeepL, Google Translate, Papago</td></tr><tr><td>맞춤형 추천 시스템</td><td>사용자 선호도를 기반으로 개인화된 추천을 제공하는 시스템</td><td>Netflix, YouTube, Spotify</td></tr><tr><td>문서 요약 및 분석</td><td>긴 문서를 요약하거나 중요한 정보를 추출하는 도구</td><td>ChatGPT, Notion AI, SummarizeBot</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-원인-및-보안위협">생성형 AI 원인 및 보안위협<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%EF%BF%BD%ED%98%95-ai-%EC%9B%90%EC%9D%B8-%EB%B0%8F-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-원인-및-보안위협">생성형 AI 원인 및 보안위협<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%9B%90%EC%9D%B8-%EB%B0%8F-%EB%B3%B4%EF%BF%BD%EF%BF%BD%EC%95%88%EC%9C%84%ED%98%91" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>대표 보안 위협</th><th>주요 원인</th><th>가능한 보안 위협</th></tr></thead><tbody><tr><td>잘못된 정보</td><td>편향최신 데이터 학습 부족<br>환각 현상</td><td>사회적 혼란 조장<br>고위험 의사 결정<br>잘못된 의사 결정 유도</td></tr><tr><td>AI 모델 악용</td><td>적대적 시스템 메시지</td><td>피싱 이메일 및 인물 도용<br>사이버 보안 위협 코드 작성<br>대화형 서비스를 악용한 사이버 범죄<br>커뮤니티 활성화<br>사회 공학적 영향<br>가짜 뉴스 생성</td></tr><tr><td>유사 AI 모델 서비스 빙자</td><td>유사 악성 서비스 접근 유도</td><td>스쿼팅 URL 및 확장 프로그램<br>가짜 애플리케이션</td></tr><tr><td>데이터 유출</td><td>데이터 합성 과정의 문제<br>과도한 훈련 데이터 암기 문제<br>대화 과정에서 개인정보 및 민감 정보 작성</td><td>훈련 데이터 유출<br>데이터 불법 처리 우려<br>기밀 유출<br>대화 기록 유출<br>데이터베이스 해킹 및 회원 추론 공격</td></tr><tr><td>플러그인 취약점</td><td>AI 모델의 적용 범위 확장<br>안정성 확인 미흡<br>해커 공격 범위 확장<br>취약점이 있는 서비스와 연결</td><td>새로운 도메인에서의 모델 오작동<br>‘에이전트’화 된 AI 모델의 악용<br>멀티모달 악용</td></tr><tr><td>확장 프로그램 취약점</td><td>확장 프로그램 내의 악성 서비스 설치<br>서비스 제공 업체의 보안 조치 미흡</td><td>개인정보 수집<br>시스템 공격<br>호스팅 서버 및 스토리지 시스템 위협</td></tr><tr><td>API 취약점</td><td>미흡한 API 키 관리<br>데이터와 명령 사이의 불분명한 경계</td><td>API 키 탈취<br>악의적인 프롬프트 주입</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-개발시-보안위협별-대응방안">생성형 AI 개발시 보안위협별 대응방안<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EB%B3%84-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>개발 단계</th><th>보안 위협</th><th>대응 방안</th></tr></thead><tbody><tr><td>데이터 수집</td><td>데이터 유출</td><td>데이터 암호화, 접근 제어 강화, 데이터 마스킹, 정기적인 보안 감사</td></tr><tr><td></td><td>데이터 프라이버시 침해</td><td>PII 제거, 데이터 익명화, 프라이버시 보호 기술 적용</td></tr><tr><td>데이터 준비</td><td>데이터 조작</td><td>데이터 무결성 검증, 디지털 서명, 변조 방지 메커니즘 구축</td></tr><tr><td></td><td>모델 중독 (Model Poisoning)</td><td>데이터 검증 및 클렌징, 안전한 데이터 소스 사용, 이상 탐지 시스템 적용</td></tr><tr><td>모델 학습</td><td>악의적인 입력 (Adversarial Attacks)</td><td>입력 검증 및 필터링, 이상 탐지 시스템 적용, 방어적 학습 기법 도입</td></tr><tr><td></td><td>모델 도난 및 역공학</td><td>모델 암호화, 접근 제한, 코드 난독화</td></tr><tr><td>모델 배포</td><td>API 악용</td><td>API 인증 및 권한 부여, Rate Limiting, API Gateway 사용</td></tr><tr><td></td><td>시스템 취약점</td><td>정기적인 취약점 스캔, 보안 패치 적용, 코드 리뷰 강화</td></tr><tr><td></td><td>무단 접근</td><td>다중 인증(MFA), 역할 기반 접근 제어(RBAC), 접근 로그 모니터링</td></tr><tr><td></td><td>서비스 거부 (DoS/DDoS)</td><td>트래픽 모니터링, Rate Limiting, WAF(Web Application Firewall) 적용</td></tr></tbody></table>
@@ -262,35 +292,6 @@
 <ul>
 <li>자기변론을 위한 안티포렌식은 자기부죄거부원칙으로 가능하나 수행 내역이 발견시 증거인멸죄로 처벌하므로 본인책임하에 안티포렌식 수행필요</li>
 </ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 안심구역]]></title>
-        <id>https://gracefullight.dev/en/pe/sec/data-safe-zone/</id>
-        <link href="https://gracefullight.dev/en/pe/sec/data-safe-zone/"/>
-        <updated>2025-01-27T04:21:03.710Z</updated>
-        <summary type="html"><![CDATA[Data Safe Zone]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념">데이터 안심구역 개념<a href="https://gracefullight.dev/en/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>누구든지 데이터를 안전하게 분석ㆍ활용할 수 있도록 유용한 데이터와, 다양한 분석도구 및 수준 높은 분석 시스템을 제공하는 안전한 데이터 분석 공간</li>
-<li>보안강화 / 무결성,신뢰성 확보 / 규제 준수, 감사 및 컴플라이언스 / 개인정보 보호, 디지털 격차 해소</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념도-주요-기능-지정요건">데이터 안심구역 개념도, 주요 기능, 지정요건<a href="https://gracefullight.dev/en/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%A7%80%EC%A0%95%EC%9A%94%EA%B1%B4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-개념도">데이터 안심구역 개념도<a href="https://gracefullight.dev/en/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>사용을 원하는 누구에게나 분석에 필요한 데이터, 환경, 서비스 및 지원 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-주요-기능">데이터 안심구역 주요 기능<a href="https://gracefullight.dev/en/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>데이터 분석</td><td>미개방 데이터의 안전한 분석환경 제공</td><td>데이터의 무결성, 신뢰성을 보장할 수 있는 기술적, 관리적, 물리적 보안 조치 시행</td></tr><tr><td></td><td>데이터 분석 시스템 및 도구의 지원</td><td>미개방 데이터 분석을 위한 분석도구 및 분석자원 서비스 제공</td></tr><tr><td>데이터 활용</td><td>이용자의 반입자료와 미개방 데이터의 연계 지원</td><td>미개방 데이터와 이용자의 반입자료에 대한 데이터 연계 플랫폼 제공</td></tr><tr><td></td><td>분석결과의 반출 지원</td><td>이용자의 데이터 분석결과에 대한 자료 반출 및 데이터 시각화 지원</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-안심구역-지정요건">데이터 안심구역 지정요건<a href="https://gracefullight.dev/en/pe/sec/data-safe-zone/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%95%88%EC%8B%AC%EA%B5%AC%EC%97%AD-%EC%A7%80%EC%A0%95%EC%9A%94%EA%B1%B4" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<table><thead><tr><th>구분</th><th>지정요건</th><th>설명</th></tr></thead><tbody><tr><td>기술적</td><td>시설 및 공간</td><td>보안대책 구비될 수 있는 건물 또는 그 밖의 시설 필요</td></tr><tr><td>기술적</td><td>장비 및 시스템 구축</td><td>데이터 분석 활용을 위해 필요한 장비 및 시스템 등을 구축 및 운영</td></tr><tr><td>운영적</td><td>보안 대책 수립 및 시행</td><td>데이터안심구역에 관한 보안대책 수립</td></tr><tr><td></td><td>조직 구성 및 운영</td><td>운영책임자, 보안책임자 선임, 4인 이상의 조직</td></tr><tr><td></td><td>정책 및 절차</td><td>운영체계, 데이터 반출의 정책 필요</td></tr><tr><td></td><td>요건 증명</td><td>최근 3년 이내에 데이터산업법 시행령에 공표된 적 없을시</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
