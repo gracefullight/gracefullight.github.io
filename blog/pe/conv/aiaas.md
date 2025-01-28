@@ -11,8 +11,8 @@ tags:
 ## AIaaS 개념
 
 ```mermaid
-graph LR
-  PaaS --> |모델| AIaaS
+graph TB
+  PaaS --> |모델| AIaaS((AIaaS))
   Saas --> |LLM| AIaaS
 ```
 
