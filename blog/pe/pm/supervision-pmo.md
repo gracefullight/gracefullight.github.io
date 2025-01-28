@@ -5,7 +5,7 @@ description: Supervision, PMO
 authors: me
 tags:
   - pe
-  - pe/pm 
+  - pe/pm
 ---
 
 ## 정보시스템 감리와 PMO 개요
