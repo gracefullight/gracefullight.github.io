@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 09:17:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 10:35:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[클라우드 전환사업의 단계별 감리]]></title>
+            <link>https://gracefullight.dev/en/pe/pm/클라우드-전환사업의-단계별-감리/</link>
+            <guid>https://gracefullight.dev/en/pe/pm/클라우드-전환사업의-단계별-감리/</guid>
+            <pubDate>Tue, 28 Jan 2025 10:35:34 GMT</pubDate>
+            <description><![CDATA[클라우드 전환사업의 단계별 감리]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념">클라우드 전환사업 단계별 감리 개념<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>기관이 구축/운영 중인 정보시스템 어플리케이션의 변경 없이 인프라 자원을 대상으로 클라우드로 전환하는 사업에 대한 감리를 수행하여 적정성을 평가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념도-단계별-감리-방법-클라우드-전환사업-검토항목">클라우드 전환사업 단계별 감리 개념도, 단계별 감리 방법, 클라우드 전환사업 검토항목<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EB%B0%A9%EB%B2%95-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념도">클라우드 전환사업 단계별 감리 개념도<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="클라우드 감리" src="https://gracefullight.dev/en/assets/images/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EA%B0%90%EB%A6%AC-4d35f722acbc1a78128c0a6ad5002e15.jpg" width="2408" height="676" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-방법">클라우드 전환사업 단계별 감리 방법<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-계획-수립신청">클라우드 전환 사업 계획 수립/신청<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EA%B3%84%ED%9A%8D-%EC%88%98%EB%A6%BD%EC%8B%A0%EC%B2%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>전환 계획 수립 및 준비</td><td>전환 타당성 검토</td><td>클라우드 기반 전환 가능성에 대한 검토 적절성 확인</td></tr><tr><td></td><td>요구사항 및 영향도 분석</td><td>전환 따른 이해관계자 요구사항, OS 지원 영향도 확인</td></tr><tr><td></td><td>자원 구성, 사용량 확정</td><td>성능 안정성 확보 위한 자원 점검 및 사용권 확인</td></tr><tr><td></td><td>구축 및 테스트 계획 수립</td><td>전환에 따른 업무 중단 최소화, 안정성 유지 방안 구축 및 테스트 계획</td></tr><tr><td>전환 실행</td><td>nTOPS 계정 산정</td><td>nTOPS 통합 계정 및 전환 산정 적절성 확인</td></tr><tr><td></td><td>원격접근, 방화벽 방안 산정</td><td>환경 특성 따른 경로 확인, 방화벽 신청 적절성 검토</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-실행서비스-안정화">클라우드 전환 사업 실행/서비스 안정화<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EC%8B%A4%ED%96%89%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%95%88%EC%A0%95%ED%99%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>클라우드 전환</td><td>APP 수정 개발</td><td>IP 변경, 트래픽 분배 등으로 인한 APP 수정 요구 적정성 확인, 테스트 수행</td></tr><tr><td></td><td>APP 원상 복구 설계</td><td>WAS, DB 서버 SW 이관과정의 정상 작동 확인, 연계 SW 영향도 분석</td></tr><tr><td></td><td>클라우드 서비스 이용 환경 구축</td><td>클라우드 리소스를 효율적으로 활용할 수 있는 환경 설정 확인</td></tr><tr><td></td><td>보안 취약점 점검</td><td>HW, APP 등 지원 위험요인 파악, 취약점 분석 및 대응방안 마련</td></tr><tr><td></td><td>데이터 이관</td><td>데이터 이관 계획 수립 및 데이터 무결성 검증 확인</td></tr><tr><td></td><td>통합 테스트 수행</td><td>사용자 환경에서 시나리오 기반 통합 테스트 수행 및 작업 결과 확인</td></tr><tr><td>서비스 안정화</td><td>서비스 전환 및 안정화</td><td>안정적 전환을 위한 APP 및 사용 SW 내 예외 기술 지원 여부, 적정 운영 검토</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-검토항목">클라우드 전환사업 검토항목<a href="https://gracefullight.dev/en/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>부문</th><th>점검항목</th><th>세부 내용</th></tr></thead><tbody><tr><td>전환 적정성 평가</td><td>클라우드 전환 가능성</td><td>정보시스템 특성과 클라우드 환경 간 적합성 검토</td></tr><tr><td></td><td>상용 SW를 공개 SW로 전환 가능 여부</td><td>현재 상용 SW의 오픈소스 전환 가능성 평가</td></tr><tr><td></td><td>업무단위 이관 가능 여부</td><td>업무시스템별 클라우드 전환 가능성 검토</td></tr><tr><td>인프라/시스템 분석</td><td>장비 사용연한 만료 여부</td><td>장비교체주기 고려한 전환 필요성 검토</td></tr><tr><td></td><td>SW 기술지원 만료여부</td><td>SW기술지원 만료상태 확인</td></tr><tr><td></td><td>시스템용랴안정</td><td>CPU, 메모리, 디스크용량 등 시스템자원 산정</td></tr><tr><td></td><td>시스템 구성</td><td>클라우드 전환을 위한 시스템 구성요소 결정</td></tr><tr><td>NW 및 보안 영향성</td><td>고립망, DR 활용 여부</td><td>재해복구(DR) 또는 고립망 구성 필요성 검토</td></tr><tr><td></td><td>인터넷과 행정서비스 간 데이터 연동 필요여부</td><td>내외부간 데이터 동기화 등 데이터 연동 필요성 검토</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/project-management</category>
+        </item>
         <item>
             <title><![CDATA[SOLID 원칙]]></title>
             <link>https://gracefullight.dev/en/pe/sw/solid-principles/</link>
@@ -45,7 +68,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/multi-gpu/</guid>
             <pubDate>Tue, 28 Jan 2025 01:34:39 GMT</pubDate>
             <description><![CDATA[Multi GPU]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-개요">멀티 GPU 개요<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="멀티-gpu-개�요">멀티 GPU 개요<a href="https://gracefullight.dev/en/pe/ca/multi-gpu/#%EB%A9%80%ED%8B%B0-gpu-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="multi gpu trends" src="https://gracefullight.dev/en/assets/images/multi-gpu-trends-490e3d4995df05fbb4f0bf2b1098164f.jpg" width="1646" height="700" class="img_xC7_"></p>
 <ul>
 <li>딥러닝에서 대규모 신경망을 효율적으로 학습하기 위해 GPU 활용, 다수 GPU를 연결하기 위한 인터커넥트 기술 발전으로 멀티 GPU 필요성 증가</li>
@@ -74,7 +97,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/storage-virtualization/</guid>
             <pubDate>Tue, 28 Jan 2025 01:24:51 GMT</pubDate>
             <description><![CDATA[Storage Virtualization]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-개념">스토리지 가상화 개념<a href="https://gracefullight.dev/en/pe/ca/storage-virtualization/#%EC%8A%A4%EF%BF%BD%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="스토리지-가상화-개념">스토리지 가상화 개념<a href="https://gracefullight.dev/en/pe/ca/storage-virtualization/#%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%83%81%ED%99%94-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>물리적으로 분리된 다수 스토리지를 논리적으로 통합하여 스토리지 자원의 가용성과 편리성을 향상시키는 기술</li>
 <li>기존스토리지 낮은 활용도(48%) 극복, 벤더 종속적인 이기종 스토리지 호환성 문제, 유지보수 비용 절감</li>
@@ -208,7 +231,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/interrupt/</guid>
             <pubDate>Mon, 27 Jan 2025 11:44:23 GMT</pubDate>
             <description><![CDATA[Interrupt]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트의-개요">인터럽트의 개요<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트�의-개요">인터럽트의 개요<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-개념">인터럽트 개념<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>컴퓨터 시스템 외부, 내부, SW적 원인으로 CPU에서 처리하던 프로그램을 중단하고 해당 동작을 처리할 수 있도록 보내는 제어신호</li>
@@ -222,7 +245,7 @@
 <ul>
 <li>SW적으로 CPU가 외부 장치의 상태를 지속적으로 검사하여 인터럽트 요청여부를 확인하는 방식</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EF%BF%BD%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>초기화 및 확인</td><td>초기화</td><td>CPU는 외부 장치와의 통신을 위한 인터럽트 관련 레지스터 및 플래그를 초기화</td></tr><tr><td></td><td>장치 확인, 상태 확인</td><td>CPU는 특정 외부 장치(예: 입출력 장치, 타이머 등)의 상태를 주기적으로 확인하기 위해 루프를 실행하며, 루프 내에서 특정 장치에 대한 상태를 확인</td></tr><tr><td></td><td>인터럽트 여부 판단</td><td>CPU는 장치의 상태를 확인한 후 인터럽트가 발생했는지 여부를 판단하며, 특정 플래그나 레지스터의 값을 확인하여 인터럽트 여부를 판단</td></tr><tr><td>처리</td><td>인터럽트 처리</td><td>인터럽트가 발생한 경우, CPU는 해당 인터럽트에 대한 처리를 위해 인터럽트 서비스 루틴을 실행</td></tr><tr><td></td><td>루프 반복</td><td>처리가 완료되면 CPU는 다시 루프를 시작하여 다음 인터럽트가 발생했는지를 확인하고 처리</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인">데이지 체인<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-개념">데이지 체인 개념<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -238,33 +261,12 @@
 <ul>
 <li>각 인터럽트를 참조하는 인터럽트 벡터 테이블을 관리, 고유 벡터 주소로 서브루틴을 실행하는 방식</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%EF%BF%BD%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터��럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>인터럽트 발생 및 동작</td><td>인터럽트 발생</td><td>외부 장치에서 인터럽트가 발생</td></tr><tr><td></td><td>인터럽트 컨트롤러 동작</td><td>인터럽트 컨트롤러는 발생한 인터럽트를 CPU에 알리고 해당 인터럽트의 번호(인터럽트 벡터)를 제공</td></tr><tr><td>확인 및 처리</td><td>인터럽트 벡터 확인</td><td>CPU는 인터럽트 컨트롤러로부터 받은 인터럽트 벡터를 이용하여 인터럽트 서비스 루틴의 주소를 확인</td></tr><tr><td></td><td>인터럽트 서비스 루틴 실행</td><td>CPU는 찾아낸 인터럽트 서비스 루틴의 주소로 점프하여 해당 인터럽트를 처리</td></tr><tr><td></td><td>인터럽트 서비스 루틴 종료</td><td>인터럽트 서비스 루틴의 실행이 완료되었음을 CPU가 인식</td></tr><tr><td>복귀</td><td>프로그램 복귀</td><td>인터럽트 서비스 루틴 실행 후, CPU는 원래의 프로그램 또는 작업으로 돌아가 수행을 계속 진행</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형-비교">인터럽트 유형 비교<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>폴링</th><th>데이지체인</th><th>벡터인터럽트</th></tr></thead><tbody><tr><td>개념</td><td>CPU가 주기적으로 장치 상태를 확인하여 인터럽트를 처리하는 방식</td><td>인터럽트 신호가 장치 간 체인을 따라 전달되며, 우선순위가 높은 장치가 처리되는 방식</td><td>각 장치가 고유의 인터럽트 벡터를 가지며, 벡터를 통해 해당 장치를 즉시 처리하는 방식</td></tr><tr><td>방식</td><td>SW</td><td>HW</td><td>HW</td></tr><tr><td>속도</td><td>느림</td><td>중간, 체인 길이에 따른 지연</td><td>빠름, 벡터 주소로 즉시 처리</td></tr><tr><td>장점</td><td>구현 간단, 추가 HW 불필요</td><td>단일 인터럽트 라인으로 여러 장치 처리 가능</td><td>빠른 속도, 유연한 우선순위</td></tr><tr><td></td><td>단순한 시스템에 효율적</td><td>우선순위 제어 용이</td><td>복잡한 시스템에서 효율적</td></tr><tr><td>단점</td><td>CPU 자원 소모, 성능 저하</td><td>체인 길이가 길어질 시 병목 발생</td><td>구현 복잡, 추가 HW 비용</td></tr><tr><td></td><td>느린 반응 속도</td><td>장치 추가 시 체인 구조 변경 필요</td><td>벡터 테이블 구성/관리 비용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/computer-architecture</category>
-        </item>
-        <item>
-            <title><![CDATA[IEC 62443]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/iec-62443/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/iec-62443/</guid>
-            <pubDate>Mon, 27 Jan 2025 06:57:38 GMT</pubDate>
-            <description><![CDATA[IEC 62443]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-개념">IEC 62443 개념<a href="https://gracefullight.dev/en/pe/sec/iec-62443/#iec-62443-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>산업제어시스템(IACS) 보안관리 요구사항과 보안기술, 제품의 개발 요구사항 및 구성요소에 대한 기술적 보안 요구사항 등이 정의되어 있는 산업제어시스템 보안 국제 표준</li>
-<li>스마트팩토리, 에너지 관리, 공공 인프라의 실시간 데이터 처리와 안정적 운영, 제어시스템 보안을 위해 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성도-구성요소-보안안정성기준">IEC 62443 구성도, 구성요소, 보안안정성기준<a href="https://gracefullight.dev/en/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%95%88%EC%95%88%EC%A0%95%EC%84%B1%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성도">IEC 62443 구성도<a href="https://gracefullight.dev/en/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-구성요소">IEC 62443 구성요소<a href="https://gracefullight.dev/en/pe/sec/iec-62443/#iec-62443-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>General (Part 1)</td><td>용어 정의, 개념, 모델</td><td>7가지 FR(Foundational Requirements) 정의: 식별 및 인증(FR1), 사용자 제어(FR2), 시스템 무결성(FR3), 데이터 기밀성(FR4), 제한된 데이터 흐름(FR5), 이벤트 대응(FR6), 자원 가용성(FR7)</td></tr><tr><td></td><td>용어 및 약어 사전</td><td>IACS 보안에서 사용하는 용어와 약어의 정의 제공, 마스터 용어집 작성</td></tr><tr><td></td><td>시스템 보안 적합성 측정</td><td>IACS의 보안 적합성을 측정할 수 있는 기준과 메트릭 정의</td></tr><tr><td>Policies &amp; Procedures (Part 2)</td><td>보안 프로그램 수립</td><td>사이버 보안 관리 시스템 구축을 위한 정책, 운영 절차 정의</td></tr><tr><td></td><td>보안 관리 가이드</td><td>보안 관리 시스템의 설계, 구현, 운영, 유지보수 가이드를 제공</td></tr><tr><td></td><td>환경 패치 관리</td><td>IT 환경과 다른 IACS 보안 패치 관리 요건 기술</td></tr><tr><td>System (Part 3)</td><td>보안 기술 및 시스템 설계</td><td>IACS 설계 및 유지보수 시 필요한 보안 기술과 요구사항 정의</td></tr><tr><td></td><td>네트워크 및 데이터 보안</td><td>IACS 네트워크 및 데이터 흐름의 보안 목표와 구현 방식 정의</td></tr><tr><td></td><td>위험 관리 및 요구 사항</td><td>시스템 운영 중 발생할 수 있는 위험 요소를 식별하고, 이에 대응하기 위한 요구 사항 정의</td></tr><tr><td>Component (Part 4)</td><td>제품 보안 개발 요구 사항</td><td>보안개발생명주기(SDLC) 요구 사항 및 제품 설계에 따른 보안 기술 정의</td></tr><tr><td></td><td>IACS 컴포넌트 요구 사항</td><td>7가지 FR에 기반하여 각 컴포넌트의 구체적인 보안 요구 사항 제시</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iec-62443-보안안정성기준">IEC 62443 보안안정성기준<a href="https://gracefullight.dev/en/pe/sec/iec-62443/#iec-62443-%EB%B3%B4%EC%95%88%EC%95%88%EC%A0%95%EC%84%B1%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>레벨</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>SL 1</td><td>무의도적 위협에 대한 보호</td><td>인적 오류로 인한 시스템 오작동 방지</td></tr><tr><td>SL 2</td><td>의도적이지만 단순한 위협에 대한 보호</td><td>저숙련 해커의 단순 공격 방지</td></tr><tr><td>SL 3</td><td>의도적이고 복잡한 위협에 대한 보호</td><td>숙련된 해커의 정교한 공격 방지</td></tr><tr><td>SL 4</td><td>고도의 의도적이고 복잡한 위협에 대한 보호</td><td>자원이 풍부한 공격자의 지속적이고 정교한 공격 방지</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
