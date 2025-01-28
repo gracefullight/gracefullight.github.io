@@ -19,6 +19,8 @@ tags:
 
 > Inductive coupling
 
+![자기유도](./assets/inductive.jpg)
+
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
 | 동작원리 | 1,2차 코일 간 자기유도현상을 이용 | 패러데이 법칙 |
@@ -29,6 +31,8 @@ tags:
 
 > Resonant magnetic coupling
 
+![자기공명](./assets/resonant.jpg)
+
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
 | 동작원리 | 송수신 코일 간의 자기장 공명 이용 | 에너지 효율성 |
@@ -38,6 +42,8 @@ tags:
 ### 전자기파 방식
 
 > RF-based wireless power
+
+![전자기파](./assets/rf-based.jpg)
 
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
