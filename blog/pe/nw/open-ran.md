@@ -5,7 +5,7 @@ description: Open Radio Access Network
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## Open RAN 개념
