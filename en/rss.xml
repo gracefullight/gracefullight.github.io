@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 00:46:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 01:08:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[TIA-942]]></title>
+            <link>https://gracefullight.dev/en/pe/ca/tia-942/</link>
+            <guid>https://gracefullight.dev/en/pe/ca/tia-942/</guid>
+            <pubDate>Tue, 28 Jan 2025 01:08:36 GMT</pubDate>
+            <description><![CDATA[TIA-942]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-개념">TIA-942 개념<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>미 통신산업협회가 제정한 데이터센터 설계 및 운영에 필요한 최소 요건을 규정한 데이터 센터 인프라의 Defacto 표준</li>
+<li>데이터센터 안정성, 신뢰성, 확장성, 보안지침 제공, 데이터센터 품질 평가기준</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-구성도-품질등급">TIA-942 구성도, 품질등급<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-구성도">TIA-942 구성도<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-품질등급-개념도">TIA-942 품질등급 개념도<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="tia-942" src="https://gracefullight.dev/en/assets/images/tia-942-06f4e5bd7969b8b60766e56180ae4c00.jpg" width="1278" height="620" class="img_xC7_"></p>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tia-942-품질등급-상세설명">TIA-942 품질등급 상세설명<a href="https://gracefullight.dev/en/pe/ca/tia-942/#tia-942-%ED%92%88%EC%A7%88%EB%93%B1%EA%B8%89-%EC%83%81%EC%84%B8%EC%84%A4%EB%AA%85" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>Tier1</th><th>Tier2</th><th>Tier3</th><th>Tier4</th></tr></thead><tbody><tr><td>장애영향</td><td>비/계획된 액티비티에 대한 사이트 영향 높음</td><td>비/계획된 액티비티에 대한 사이트 영향 보통</td><td>계획된 액티비티에 대한 컴퓨팅 HW 운영지장 없음</td><td>계획된 액티비티에 대한 임계부하 없음</td></tr><tr><td></td><td></td><td></td><td>비계획 작업은 영향</td><td>비계획 액티비티 임계부하 적어도 1번 방어</td></tr><tr><td>전력/냉방시설 이중화</td><td>필요</td><td>N+1</td><td>N+1, 동시 활성화</td><td>2(N+1), 무정지상태</td></tr><tr><td>백본/라우터 이중화</td><td>없음</td><td>없음</td><td>필요</td><td>필요</td></tr><tr><td>적용기간</td><td>3개월</td><td>~6개월</td><td>15~20개월</td><td>15~20개월</td></tr><tr><td>MTTR</td><td>28.8h</td><td>22.0h</td><td>1.6h</td><td>0.4h</td></tr><tr><td>보안시설</td><td>일반 잠금장치</td><td>카드인식</td><td>생체인식</td><td>생체인식</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/computer-architecture</category>
+        </item>
         <item>
             <title><![CDATA[PIM, Processing In Memory]]></title>
             <link>https://gracefullight.dev/en/pe/ca/pim/</link>
@@ -35,7 +56,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/chiplet/</guid>
             <pubDate>Tue, 28 Jan 2025 00:19:18 GMT</pubDate>
             <description><![CDATA[Chiplet]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-��개념">칩렛 개념<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="칩렛-개념">칩렛 개념<a href="https://gracefullight.dev/en/pe/ca/chiplet/#%EC%B9%A9%EB%A0%9B-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>여러 개의 작은 칩(다이)을 모듈화하여 하나의 패키지 안에서 상호연결하는 기술</li>
 <li>무어의 법칙 한계, 단일 SoC를 나누고 조합하여 유연한 아키텍처 제공, 설계/생산비용 절감</li>
@@ -61,7 +82,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/cache/</guid>
             <pubDate>Mon, 27 Jan 2025 13:13:52 GMT</pubDate>
             <description><![CDATA[Cache]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-��개념">캐시 개념<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캐시-개념">캐시 개념<a href="https://gracefullight.dev/en/pe/ca/cache/#%EC%BA%90%EC%8B%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>CPU와 주기억장치 간의 속도차를 완화시켜 프로세서 대기시간을 최소화를 위한 고속 메모리</li>
@@ -109,7 +130,7 @@
             <guid>https://gracefullight.dev/en/pe/ca/interrupt/</guid>
             <pubDate>Mon, 27 Jan 2025 11:44:23 GMT</pubDate>
             <description><![CDATA[Interrupt]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트의-개요">인터럽트의 개요<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트의-개요">인터럽트의 개요<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EF%BF%BD%EF%BF%BD%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-개념">인터럽트 개념<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>컴퓨터 시스템 외부, 내부, SW적 원인으로 CPU에서 처리하던 프로그램을 중단하고 해당 동작을 처리할 수 있도록 보내는 제어신호</li>
@@ -123,7 +144,7 @@
 <ul>
 <li>SW적으로 CPU가 외부 장치의 상태를 지속적으로 검사하여 인터럽트 요청여부를 확인하는 방식</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EF%BF%BD%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>초기화 및 확인</td><td>초기화</td><td>CPU는 외부 장치와의 통신을 위한 인터럽트 관련 레지스터 및 플래그를 초기화</td></tr><tr><td></td><td>장치 확인, 상태 확인</td><td>CPU는 특정 외부 장치(예: 입출력 장치, 타이머 등)의 상태를 주기적으로 확인하기 위해 루프를 실행하며, 루프 내에서 특정 장치에 대한 상태를 확인</td></tr><tr><td></td><td>인터럽트 여부 판단</td><td>CPU는 장치의 상태를 확인한 후 인터럽트가 발생했는지 여부를 판단하며, 특정 플래그나 레지스터의 값을 확인하여 인터럽트 여부를 판단</td></tr><tr><td>처리</td><td>인터럽트 처리</td><td>인터럽트가 발생한 경우, CPU는 해당 인터럽트에 대한 처리를 위해 인터럽트 서비스 루틴을 실행</td></tr><tr><td></td><td>루프 반복</td><td>처리가 완료되면 CPU는 다시 루프를 시작하여 다음 인터럽트가 발생했는지를 확인하고 처리</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인">데이지 체인<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-개념">데이지 체인 개념<a href="https://gracefullight.dev/en/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -222,7 +243,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/multi-party-computation/</guid>
             <pubDate>Mon, 27 Jan 2025 05:05:51 GMT</pubDate>
             <description><![CDATA[Multi-Party Computation]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념">다자간 계산 개념<a href="https://gracefullight.dev/en/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-개념">다자간 계산 개념<a href="https://gracefullight.dev/en/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EF%BF%BD%EA%B0%84-%EA%B3%84%EC%82%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>여러 참여자가 각자의 비밀 정보를 제공하지 않고도 공동 계산을 수행할 수 있도록 하는 암호학 기법</li>
 <li>프라이버시 보호, 신뢰 없는 환경에서 협업, 데이터 보안, 확장성</li>
@@ -234,30 +255,6 @@
 <table><thead><tr><th>구분</th><th>기술</th><th>설명</th></tr></thead><tbody><tr><td>암호화</td><td>동형 암호화</td><td>데이터가 암호화된 상태로 연산 가능</td></tr><tr><td></td><td>비밀 분할</td><td>데이터를 다수의 셰어로 나누어 저장하고, 계산 후 결과 복원.</td></tr><tr><td>프로토콜</td><td>Yao’s Garbled Circuit</td><td>안전한 회로 기반의 계산을 수행하며, 효율적 보안 제공</td></tr><tr><td></td><td>Threshold Cryptography</td><td>일정 수 이상의 셰어가 합쳐질 때만 계산이 가능</td></tr><tr><td></td><td>블라인드 평가</td><td>비밀번호 확인 없이 전송, 내용확인 없이 본인이 질문내역 확인</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="다자간-계산-활용분야">다자간 계산 활용분야<a href="https://gracefullight.dev/en/pe/sec/multi-party-computation/#%EB%8B%A4%EC%9E%90%EA%B0%84-%EA%B3%84%EC%82%B0-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>공공</td><td>전자 투표 시스템에서 투표자의 익명성을 유지하며 투명한 결과 제공</td><td>선거 공정성과 신뢰 확보</td></tr><tr><td></td><td>민감한 의료 데이터를 보호하면서 병원 간 협력 연구 수행</td><td>환자 데이터 보호 및 연구 효율성 강화</td></tr><tr><td>금융</td><td>암호화폐 지갑에서 개인 키 분산 저장 및 복구 기능 제공</td><td>키 분실 방지 및 보안 강화 (예: ZenGo, Fireblocks)</td></tr><tr><td></td><td>은행 간 신용 평가 및 사기 탐지를 위해 데이터를 비공개 상태로 분석</td><td>금융 기밀 보호와 협력 가능</td></tr><tr><td>민간</td><td>경쟁 기업 간 시장 점유율 분석 시 데이터 보호</td><td>데이터 유출 방지 및 협력 증대</td></tr><tr><td></td><td>블록체인 기반 기업 지갑에서 멀티시그(Multi-Signature) 대체</td><td>분산 서명으로 보안 및 효율성 향상</td></tr><tr><td></td><td>프라이버시를 강화한 연합 학습으로 AI 모델 학습</td><td>데이터 보호 상태에서 AI 성능 향상</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[생성형 AI 활용 보안 가이드라인]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/생성형-AI-활용-보안-가이드라인/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/생성형-AI-활용-보안-가이드라인/</guid>
-            <pubDate>Mon, 27 Jan 2025 04:56:41 GMT</pubDate>
-            <description><![CDATA[생성형 AI 활용 보안 가이드라인]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-개요">생성형 AI 개요<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="생성셩-ai-개념">생성셩 AI 개념<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%EC%85%A9-ai-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>인공지능 기술의 한 종류로서 이미지, 비디오, 오디오, 텍스트 등을 포함한 대량의 데이터 를 학습하여 사람과 유사한 방식으로 문맥과 의미를 이해하고 새로운 데이터를 자동으로 생성해 주는 기술</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-사례">생성형 AI 사례<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>주요 설명</th><th>사례</th></tr></thead><tbody><tr><td>챗봇 및 가상 비서</td><td>사용자의 질문에 답변하고 다양한 작업을 수행하는 AI 기반의 대화형 인터페이스</td><td>ChatGPT, Siri, Alexa</td></tr><tr><td>콘텐츠 생성 도구</td><td>텍스트, 이미지, 비디오 등 다양한 형태의 콘텐츠를 자동으로 생성하는 도구</td><td>ChatGPT, Canva, DALL·E</td></tr><tr><td>언어 번역 서비스</td><td>다양한 언어 간의 실시간 번역을 제공하는 서비스</td><td>DeepL, Google Translate, Papago</td></tr><tr><td>맞춤형 추천 시스템</td><td>사용자 선호도를 기반으로 개인화된 추천을 제공하는 시스템</td><td>Netflix, YouTube, Spotify</td></tr><tr><td>문서 요약 및 분석</td><td>긴 문서를 요약하거나 중요한 정보를 추출하는 도구</td><td>ChatGPT, Notion AI, SummarizeBot</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-원인-및-보안위협">생성형 AI 원인 및 보안위협<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EC%9B%90%EC%9D%B8-%EB%B0%8F-%EB%B3%B4%EC%95%88%EF%BF%BD%EF%BF%BD%EC%9C%84%ED%98%91" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>대표 보안 위협</th><th>주요 원인</th><th>가능한 보안 위협</th></tr></thead><tbody><tr><td>잘못된 정보</td><td>편향최신 데이터 학습 부족<br>환각 현상</td><td>사회적 혼란 조장<br>고위험 의사 결정<br>잘못된 의사 결정 유도</td></tr><tr><td>AI 모델 악용</td><td>적대적 시스템 메시지</td><td>피싱 이메일 및 인물 도용<br>사이버 보안 위협 코드 작성<br>대화형 서비스를 악용한 사이버 범죄<br>커뮤니티 활성화<br>사회 공학적 영향<br>가짜 뉴스 생성</td></tr><tr><td>유사 AI 모델 서비스 빙자</td><td>유사 악성 서비스 접근 유도</td><td>스쿼팅 URL 및 확장 프로그램<br>가짜 애플리케이션</td></tr><tr><td>데이터 유출</td><td>데이터 합성 과정의 문제<br>과도한 훈련 데이터 암기 문제<br>대화 과정에서 개인정보 및 민감 정보 작성</td><td>훈련 데이터 유출<br>데이터 불법 처리 우려<br>기밀 유출<br>대화 기록 유출<br>데이터베이스 해킹 및 회원 추론 공격</td></tr><tr><td>플러그인 취약점</td><td>AI 모델의 적용 범위 확장<br>안정성 확인 미흡<br>해커 공격 범위 확장<br>취약점이 있는 서비스와 연결</td><td>새로운 도메인에서의 모델 오작동<br>‘에이전트’화 된 AI 모델의 악용<br>멀티모달 악용</td></tr><tr><td>확장 프로그램 취약점</td><td>확장 프로그램 내의 악성 서비스 설치<br>서비스 제공 업체의 보안 조치 미흡</td><td>개인정보 수집<br>시스템 공격<br>호스팅 서버 및 스토리지 시스템 위협</td></tr><tr><td>API 취약점</td><td>미흡한 API 키 관리<br>데이터와 명령 사이의 불분명한 경계</td><td>API 키 탈취<br>악의적인 프롬프트 주입</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-ai-개발시-보안위협별-대응방안">생성형 AI 개발시 보안위협별 대응방안<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%83%9D%EC%84%B1%ED%98%95-ai-%EA%B0%9C%EB%B0%9C%EC%8B%9C-%EB%B3%B4%EC%95%88%EC%9C%84%ED%98%91%EB%B3%84-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>개발 단계</th><th>보안 위협</th><th>대응 방안</th></tr></thead><tbody><tr><td>데이터 수집</td><td>데이터 유출</td><td>데이터 암호화, 접근 제어 강화, 데이터 마스킹, 정기적인 보안 감사</td></tr><tr><td></td><td>데이터 프라이버시 침해</td><td>PII 제거, 데이터 익명화, 프라이버시 보호 기술 적용</td></tr><tr><td>데이터 준비</td><td>데이터 조작</td><td>데이터 무결성 검증, 디지털 서명, 변조 방지 메커니즘 구축</td></tr><tr><td></td><td>모델 중독 (Model Poisoning)</td><td>데이터 검증 및 클렌징, 안전한 데이터 소스 사용, 이상 탐지 시스템 적용</td></tr><tr><td>모델 학습</td><td>악의적인 입력 (Adversarial Attacks)</td><td>입력 검증 및 필터링, 이상 탐지 시스템 적용, 방어적 학습 기법 도입</td></tr><tr><td></td><td>모델 도난 및 역공학</td><td>모델 암호화, 접근 제한, 코드 난독화</td></tr><tr><td>모델 배포</td><td>API 악용</td><td>API 인증 및 권한 부여, Rate Limiting, API Gateway 사용</td></tr><tr><td></td><td>시스템 취약점</td><td>정기적인 취약점 스캔, 보안 패치 적용, 코드 리뷰 강화</td></tr><tr><td></td><td>무단 접근</td><td>다중 인증(MFA), 역할 기반 접근 제어(RBAC), 접근 로그 모니터링</td></tr><tr><td></td><td>서비스 거부 (DoS/DDoS)</td><td>트래픽 모니터링, Rate Limiting, WAF(Web Application Firewall) 적용</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/en/pe/sec/%EC%83%9D%EC%84%B1%ED%98%95-AI-%ED%99%9C%EC%9A%A9-%EB%B3%B4%EC%95%88-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://www.ncsc.go.kr/main/cop/bbs/selectBoardArticle.do?bbsId=InstructionGuide_main&amp;nttId=54340&amp;pageIndex=1#LINK" target="_blank" rel="noopener noreferrer">국가사이버보안센터: 챗GPT 등 생성형 AI 활용 보안 가이드라인</a></li>
-</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
