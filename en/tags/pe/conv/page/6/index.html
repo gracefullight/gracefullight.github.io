@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.948b2c65.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.6e5b9fe4.js" defer="defer"></script>
 <script src="/en/assets/js/main.f7c0801f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -161,32 +161,33 @@
 <ul>
 <li>maxUnavailable, maxSurge 적절히 조절</li>
 <li>scale down 으로 비용 절감</li>
-</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/cloud-computing/">클라우드 컴퓨팅, 서비스 모델, 배포모델</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T01:24:00.000Z">March 10, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅의-개념">클라우드 컴퓨팅의 개념<a href="#클라우드-컴퓨팅의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+</ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 융합IT 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/conv/">pe/it-convergence</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/conv/cloud-computing/">클라우드 컴퓨팅, 서비스 모델, 배포모델</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-03-10T01:24:00.000Z">March 10, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅의-개념">클라우드 컴퓨팅의 개념<a href="#클라우드-컴퓨팅의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
 <ul>
 <li>가상화 기술을 이용하여 사용자 필요시 인터넷을 통해서 서비스 형태로 IT자원을 제공하는 컴퓨팅 기법</li>
-<li>서비스 책임범위, 인프라 소유권에 따라 다양한 모델 등장</li>
+<li>클라우드 컴퓨팅에 대한 고객, CSP의 서비스책임 범위, 인프라 소유권에 따라 서비스모델, 배포모델로 분류</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-모델의-구성도-구성요소-비교">클라우드 컴퓨팅 모델의 구성도, 구성요소, 비교<a href="#클라우드-컴퓨팅-모델의-구성도-구성요소-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-모델의-구성도">클라우드 컴퓨팅 모델의 구성도<a href="#클라우드-컴퓨팅-모델의-구성도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
+<p><img decoding="async" loading="lazy" alt="cloud computing model" src="/en/assets/images/cloud-computing-model-e8b7660f74b8bb5e47319c50fbd51cb3.jpg" width="2752" height="1146" class="img_xC7_"></p>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-모델의-구성요소">클라우드 컴퓨팅 모델의 구성요소<a href="#클라우드-컴퓨팅-모델의-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>서비스 모델: 클라우드 자원의 제공 방식에 따른 분류</li>
 </ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IaaS</td><td>-</td><td>사용자 관리 책임</td></tr><tr><td>PaaS</td><td>-</td><td>공통 관리 책임</td></tr><tr><td>SaaS</td><td>-</td><td>제공자 관리 책임</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>IaaS</td><td></td><td>사용자 관리  책임</td></tr><tr><td>PaaS</td><td></td><td>공통 관리 책임</td></tr><tr><td>SaaS</td><td></td><td>제공자 관리 책임</td></tr></tbody></table>
 <ul>
 <li>배포 모델: 클라우드 자원 소유주체와 관리방식에 따른 분류</li>
 </ul>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Private</td><td>-</td><td>사용자 소유</td></tr><tr><td>Public</td><td>-</td><td>제공자 소유</td></tr><tr><td>Hybrid</td><td>-</td><td>혼합 모델</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Private</td><td></td><td>사용자 소유</td></tr><tr><td>Public</td><td></td><td>제공자 소유</td></tr><tr><td>Hybrid</td><td></td><td>혼합 모델</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="배포모델과-서비스모델-비교">배포모델과 서비스모델 비교<a href="#배포모델과-서비스모델-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>배포모델</th><th>서비스모델</th></tr></thead><tbody><tr><td>목적</td><td>지속 가능 서비스 기반</td><td>온디맨드 서비스</td></tr><tr><td>범위</td><td>클라우드 구성 환경</td><td>클라우드 서비스</td></tr><tr><td>접근</td><td>온프레미스와의 연결성</td><td>비용 절감</td></tr></tbody></table>
 <ul>
-<li>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택.</li>
+<li>온프레미스 서비스의 구성 환경에 따라 배포모델을 선택하고, 비지니스 요구사항과 비용에 맞는 서비스모델을 선택</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-활성전략">클라우드 컴퓨팅 활성전략<a href="#클라우드-컴퓨팅-활성전략" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드</td><td>-</td></tr><tr><td>-</td><td>금융사 하이브리드 멀티 클라우드</td><td>-</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App</td><td>-</td></tr><tr><td>-</td><td>K-PaaS</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>활성전략</th><th>내용</th></tr></thead><tbody><tr><td>배포모델</td><td>공공기관/지자체 민관협력형 클라우드</td><td>공공기관이 민간 CSP와 협력해 전용 클라우드 환경 구축</td></tr><tr><td></td><td>금융사 하이브리드 멀티 클라우드</td><td>금융권이 퍼블릭·프라이빗 클라우드를 혼합 운영해 보안·효 율성 확보</td></tr><tr><td>서비스모델</td><td>CNCF Cloud Native App</td><td>컨테이너·마이크로서비스 기반 클라우드 네이티브 앱 개발 모델</td></tr><tr><td></td><td>K-PaaS</td><td>국내 맞춤형 PaaS, 개발·운영 환경 지원</td></tr></tbody></table>
 <ul>
-<li>기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택.</li>
+<li>기업은 목적에 맞는 전략을 활용하여 적절한 모델을 선택</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-컴퓨팅-고려사항">클라우드 컴퓨팅 고려사항<a href="#클라우드-컴퓨팅-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
