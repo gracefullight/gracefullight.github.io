@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 10:35:34 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Jan 2025 10:51:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[운영단계 대가산정]]></title>
+            <link>https://gracefullight.dev/pe/pm/운영단계-대가산정/</link>
+            <guid>https://gracefullight.dev/pe/pm/운영단계-대가산정/</guid>
+            <pubDate>Tue, 28 Jan 2025 10:51:01 GMT</pubDate>
+            <description><![CDATA[운영단계 대가산정]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="운영단계-대가산정-개념">운영단계 대가산정 개념<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="운영단계 대가산정 개념에 대한 직접 링크" title="운영단계 대가산정 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>SW진흥법 제 10조 의거, SW수명주기 중 운영단계 사업 및 서비스의 적정대가를 산정하기 위한 지침</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="운영단계-대가산정-방식">운영단계 대가산정 방식<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="운영단계 대가산정 방식에 대한 직접 링크" title="운영단계 대가산정 방식에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="응용sw요율제-유지관리비-산정방식">응용SW요율제 유지관리비 산정방식<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9D%91%EC%9A%A9sw%EC%9A%94%EC%9C%A8%EC%A0%9C-%EC%9C%A0%EC%A7%80%EA%B4%80%EB%A6%AC%EB%B9%84-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="응용SW요율제 유지관리비 산정방식에 대한 직접 링크" title="응용SW요율제 유지관리비 산정방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>유지관리 대상 SW 식별</td><td>유지관리 대상 SW</td></tr><tr><td>2 유지관리대상 SW 개발비 재산정</td><td>유지관리 대상 SW 개발비를 유지관리 계약적정 FP와 단가로 재산정</td><td>SW개발비 (현재가치)</td></tr><tr><td>3 유지관리 총량 계산</td><td>유지관리횟수, 시스템사용자수, 시스템중요도, 연계, 오류복구신속성 따른 난이도 계산 후 반영</td><td>총 유지관리점수 (TMP)</td></tr><tr><td>4 유지관리 운용예산</td><td>총 건수, 미충 요율 계산</td><td>유지관리 요율</td></tr><tr><td></td><td>요율 = 10 + 5TMP/100</td><td></td></tr><tr><td>5 직접경비 계산</td><td>유지관리실제소요 경비산정</td><td>직접 경비</td></tr><tr><td>6 SW 유지관리비 산정</td><td>SW유지관리비 산정</td><td>SW 유지관리비</td></tr><tr><td></td><td>SW개발비 * 유지관리요율 + 직접경비</td><td></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sw운영-투입공수-산정방식">SW운영 투입공수 산정방식<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#sw%EC%9A%B4%EC%98%81-%ED%88%AC%EC%9E%85%EA%B3%B5%EC%88%98-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="SW운영 투입공수 산정방식에 대한 직접 링크" title="SW운영 투입공수 산정방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>운영 대상 SW 식별, 세부 운영 서비스 항목 정의</td><td>운영 대상 SW 및 서비스 항목</td></tr><tr><td>2 운영 공수 계산</td><td>SW 운영 업무 특성 고려, 필요 직무, 직무별 투입인력, 기간 결정</td><td>IT 직무별 투입공수</td></tr><tr><td>3 직접 인건비 계산</td><td>운영 업무 수행 인력의 직접 인건비 계산</td><td>직접인건비</td></tr><tr><td></td><td>직접 인건비 = 투입인력 기술자 직무공수 * SW기술자 평균임금</td><td></td></tr><tr><td>4 제경비 및 기술료 계산</td><td>운영업무 수행 인력의 제경비와 기술료 계산</td><td>제경비, 기술료</td></tr><tr><td></td><td>제경비 = 작업 인건비 × 144<del>154% / 기술료 = (직접 인건비 + 제경비) × 20</del>40%</td><td></td></tr><tr><td>5 직접 경비 계산</td><td>당해 업무 내 현재 요소로 직접 경비 산정</td><td>직접 경비</td></tr><tr><td>6 SW 운영비 산정</td><td>SW 운영비 산정</td><td>SW운영비</td></tr><tr><td></td><td>직접인건비 + 제경비 + 기술료 + 직접 경비</td><td></td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="고정비-변동비-산정방식">고정비, 변동비 산정방식<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EA%B3%A0%EC%A0%95%EB%B9%84-%EB%B3%80%EB%8F%99%EB%B9%84-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="고정비, 변동비 산정방식에 대한 직접 링크" title="고정비, 변동비 산정방식에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>유지관리 및 운영대상 SW 식별</td><td>유지관리 및 운영대상 SW</td></tr><tr><td></td><td>대상 SW별 유지관리/운영업무 식별</td><td></td></tr><tr><td>2 고정비/변동비 업무 구분</td><td>대상 업무 중 완전유지관리 기능개선 해당업무(변동비) 구분</td><td>고정비/변동비 업무분류표</td></tr><tr><td></td><td>대상 업무 중 비기능 개선업무(고정비) 구분</td><td></td></tr><tr><td>3 고정비/변동비 산정</td><td>SW재개발비 산정방식으로 변동비 산정</td><td>고정비 산정표</td></tr><tr><td></td><td>투입공수 방식 운영비 산정방식 적용 고정비 산정</td><td>변동비 산정표</td></tr><tr><td>4 직접경비계산</td><td>당해업무 실제소요경비 산정</td><td>직접경비</td></tr><tr><td>5 SW유지관리/운영비 산정</td><td>SW유지관리/운영비 산정</td><td>SW 유지관리 및 운영비</td></tr><tr><td></td><td>고정비 + 변동비 + 직접경비</td><td></td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/project-management</category>
+        </item>
         <item>
             <title><![CDATA[클라우드 전환사업의 단계별 감리]]></title>
             <link>https://gracefullight.dev/pe/pm/클라우드-전환사업의-단계별-감리/</link>
@@ -222,49 +243,6 @@
 <table><thead><tr><th>구성요소</th><th>역할</th><th>설명</th></tr></thead><tbody><tr><td>IR (Instruction Register)</td><td>명령어 저장</td><td>현재 실행 중인 명령어를 저장하고 디코더에 전달</td></tr><tr><td>Instruction Decoder</td><td>명령어 해독</td><td>IR에서 전달받은 명령어를 해독하여 제어 신호 생성을 준비</td></tr><tr><td>Control Step Counter</td><td>클록 기반 스텝 제어</td><td>클록 신호를 기반으로 명령 실행 단계를 순차적으로 관리</td></tr><tr><td>Control Signal Generator</td><td>제어 신호 생성</td><td>디코더와 스텝 카운터의 정보를 기반으로 제어 신호를 생성</td></tr><tr><td>Flags</td><td>상태 플래그</td><td>연산 결과나 상태 정보를 저장하고 제어 신호 생성에 활용</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="micro-programmed-hard-wired-비교">Micro-programmed, Hard-wired 비교<a href="https://gracefullight.dev/pe/ca/control-unit-hardwired-vs-microprogrammed/#micro-programmed-hard-wired-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Micro-programmed, Hard-wired 비교에 대한 직접 링크" title="Micro-programmed, Hard-wired 비교에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>Micro-programmed</th><th>Hard-wired</th></tr></thead><tbody><tr><td>개념</td><td>제어 메모리에 저장된 마이크로코드를 사용하여 제어 신호를 생성하는 방식</td><td>고정된 논리 회로를 사용하여 제어 신호를 생성하는 방식</td></tr><tr><td>속도</td><td>느림, SW 처리</td><td>빠름, HW 회로</td></tr><tr><td>비용</td><td>저가</td><td>고가</td></tr><tr><td>전력소비</td><td>많음</td><td>적음</td></tr><tr><td>적용방식</td><td>CISC</td><td>RISC</td></tr><tr><td>오류발생률</td><td>디버깅 용이, 수정 가능</td><td>설계 오류 시 수정 어려움</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/computer-architecture</category>
-        </item>
-        <item>
-            <title><![CDATA[인터럽트]]></title>
-            <link>https://gracefullight.dev/pe/ca/interrupt/</link>
-            <guid>https://gracefullight.dev/pe/ca/interrupt/</guid>
-            <pubDate>Mon, 27 Jan 2025 11:44:23 GMT</pubDate>
-            <description><![CDATA[Interrupt]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트의-개요">인터럽트의 개요<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8%EC%9D%98-%EA%B0%9C%EC%9A%94" class="hash-link" aria-label="인터럽트의 개요에 대한 직접 링크" title="인터럽트의 개요에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-개념">인터럽트 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="인터럽트 개념에 대한 직접 링크" title="인터럽트 개념에 대한 직접 링크">​</a></h3>
-<ul>
-<li>컴퓨터 시스템 외부, 내부, SW적 원인으로 CPU에서 처리하던 프로그램을 중단하고 해당 동작을 처리할 수 있도록 보내는 제어신호</li>
-<li>인터럽트는 SW/HW 방식으로 우선순위 판별을 통해 인터럽트 서비스 루틴 수행</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형">인터럽트 유형<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="인터럽트 유형에 대한 직접 링크" title="인터럽트 유형에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>방법</th><th>설명</th></tr></thead><tbody><tr><td>SW</td><td>Polling 방식</td><td>프로그램을 통해 장치 Flag에 의한 우선순위 검사 방식</td></tr><tr><td>HW</td><td>Daisy-Chain 방식</td><td>우선순위 높은 장치를 물리적으로 상위에 배치하는 방식</td></tr><tr><td></td><td>Vector Interrupt 방식</td><td>고유한 번호를 부여하고 해당 번호에 대응하는 ISR 방식</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="폴링">폴링<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81" class="hash-link" aria-label="폴링에 대한 직접 링크" title="폴링에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-개념">폴링 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="폴링 개념에 대�한 직접 링크" title="폴링 개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>SW적으로 CPU가 외부 장치의 상태를 지속적으로 검사하여 인터럽트 요청여부를 확인하는 방식</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="폴링-동작방식">폴링 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%ED%8F%B4%EB%A7%81-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="폴링 동작방식에 대한 직접 링크" title="폴링 동작방식에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>초기화 및 확인</td><td>초기화</td><td>CPU는 외부 장치와의 통신을 위한 인터럽트 관련 레지스터 및 플래그를 초기화</td></tr><tr><td></td><td>장치 확인, 상태 확인</td><td>CPU는 특정 외부 장치(예: 입출력 장치, 타이머 등)의 상태를 주기적으로 확인하기 위해 루프를 실행하며, 루프 내에서 특정 장치에 대한 상태를 확인</td></tr><tr><td></td><td>인터럽트 여부 판단</td><td>CPU는 장치의 상태를 확인한 후 인터럽트가 발생했는지 여부를 판단하며, 특정 플래그나 레지스터의 값을 확인하여 인터럽트 여부를 판단</td></tr><tr><td>처리</td><td>인터럽트 처리</td><td>인터럽트가 발생한 경우, CPU는 해당 인터럽트에 대한 처리를 위해 인터럽트 서비스 루틴을 실행</td></tr><tr><td></td><td>루프 반복</td><td>처리가 완료되면 CPU는 다시 루프를 시작하여 다음 인터럽트가 발생했는지를 확인하고 처리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인">데이지 체인<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8" class="hash-link" aria-label="데이지 체인에 대한 직접 링크" title="데이지 체인에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-개념">데이지 체인 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이�지 체인 개념에 대한 직접 링크" title="데이지 체인 개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>CPU와 가까운 장치가 우선순위가 높게 처리되고, 하나의 인터럽트가 다음 인터럽트를 호출하는 직렬 연계 방식</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이지-체인-동작방식">데이지 체인 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%8D%B0%EC%9D%B4%EC%A7%80-%EC%B2%B4%EC%9D%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="데이지 체인 동작방식에 대한 직접 링크" title="데이지 체인 동작방식에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>발생 및 우선순위 전달</td><td>인터럽트 발생 및 신호 전달</td><td>외부 장치에서 인터럽트가 발생하고, 인터럽트 신호가 체인의 시작점에 있는 인터럽트 컨트롤러에게 전달</td></tr><tr><td></td><td>우선순위 확인 및 결정</td><td>체인 내의 각 인터럽트 컨트롤러는 자신의 우선순위를 확인하고, 처리할 인터럽트를 결정</td></tr><tr><td>처리 및 전달</td><td>인터럽트 처리</td><td>우선순위가 가장 높은 인터럽트 컨트롤러는 해당 인터럽트를 처리하고, 서비스 루틴을 실행</td></tr><tr><td></td><td>인터럽트 전달</td><td>처리가 완료된 인터럽트는 다음 인터럽트 컨트롤러로 전달되며, 다음 우선순위가 높은 인터럽트를 처리</td></tr><tr><td>완료 및 대기</td><td>인터럽트 처리 반복</td><td>처리가 완료되면 다음 인터럽트 컨트롤러로 넘어가며, 이 과정을 반복</td></tr><tr><td></td><td>우선순위 갱신 및 대기</td><td>모든 인터럽트가 처리되면 인터럽트 컨트롤러들은 우선순위를 다시 확인하고 새로운 인터럽트를 대기</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트">벡터 인터럽트<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8" class="hash-link" aria-label="벡터 인터럽트에 대한 직접 링크" title="벡터 인터럽트에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-개념">벡터 인터럽트 개념<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="벡터 인터럽트 개념에 대한 직접 링크" title="벡터 인터럽트 개념에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>각 인터럽트를 참조하는 인터럽트 벡터 테이블을 관리, 고유 벡터 주소로 서브루틴을 실행하는 방식</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="벡터-인터럽트-동작방식">벡터 인터럽트 동작방식<a href="https://gracefullight.dev/pe/ca/interrupt/#%EB%B2%A1%ED%84%B0-%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EB%8F%99%EC%9E%91%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="벡터 인터럽트 동작방식에 대한 직접 링크" title="벡터 인터럽트 동작방식에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>동작 방식</th><th>설명</th></tr></thead><tbody><tr><td>인터럽트 발생 및 동작</td><td>인터럽트 발생</td><td>외부 장치에서 인터럽트가 발생</td></tr><tr><td></td><td>인터럽트 컨트롤러 동작</td><td>인터럽트 컨트롤러는 발생한 인터럽트를 CPU에 알리고 해당 인터럽트의 번호(인터럽트 벡터)를 제공</td></tr><tr><td>확인 및 처리</td><td>인터럽트 벡터 확인</td><td>CPU는 인터럽트 컨트롤러로부터 받은 인터럽트 벡터를 이용하여 인터럽트 서비스 루틴의 주소를 확인</td></tr><tr><td></td><td>인터럽트 서비스 루틴 실행</td><td>CPU는 찾아낸 인터럽트 서비스 루틴의 주소로 점프하여 해당 인터럽트를 처리</td></tr><tr><td></td><td>인터럽트 서비스 루틴 종료</td><td>인터럽트 서비스 루틴의 실행이 완료되었음을 CPU가 인식</td></tr><tr><td>복귀</td><td>프로그램 복귀</td><td>인터럽트 서비스 루틴 실행 후, CPU는 원래의 프로그램 또는 작업으로 돌아가 수행을 계속 진행</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터럽트-유형-비교">인터럽트 유형 비교<a href="https://gracefullight.dev/pe/ca/interrupt/#%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8-%EC%9C%A0%ED%98%95-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="인터럽트 유형 비교에 대한 직접 링크" title="인터럽트 유형 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>폴링</th><th>데이지체인</th><th>벡터인터럽트</th></tr></thead><tbody><tr><td>개념</td><td>CPU가 주기적으로 장치 상태를 확인하여 인터럽트를 처리하는 방식</td><td>인터럽트 신호가 장치 간 체인을 따라 전달되며, 우선순위가 높은 장치가 처리되는 방식</td><td>각 장치가 고유의 인터럽트 벡터를 가지며, 벡터를 통해 해당 장치를 즉시 처리하는 방식</td></tr><tr><td>방식</td><td>SW</td><td>HW</td><td>HW</td></tr><tr><td>속도</td><td>느림</td><td>중간, 체인 길이에 따른 지연</td><td>빠름, 벡터 주소로 즉시 처리</td></tr><tr><td>장점</td><td>구현 간단, 추가 HW 불필요</td><td>단일 인터럽트 라인으로 여러 장치 처리 가능</td><td>빠른 속도, 유연한 우선순위</td></tr><tr><td></td><td>단순한 시스템에 효율적</td><td>우선순위 제어 용이</td><td>복잡한 시스템에서 효율적</td></tr><tr><td>단점</td><td>CPU 자원 소모, 성능 저하</td><td>체인 길이가 길어질 시 병목 발생</td><td>구현 복잡, 추가 HW 비용</td></tr><tr><td></td><td>느린 반응 속도</td><td>장치 추가 시 체인 구조 변경 필요</td><td>벡터 테이블 구성/관리 비용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/computer-architecture</category>
         </item>
