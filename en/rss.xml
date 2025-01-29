@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 01:47:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 02:02:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[CSRF]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/csrf/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/csrf/</guid>
+            <pubDate>Wed, 29 Jan 2025 02:02:11 GMT</pubDate>
+            <description><![CDATA[Cross Site Request Forgery]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-개념">CSRF 개념<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>사이트 간 요청을 위조하여 사용자가 자신의 의지와 무관하게 공격자의 행위를 수행하도록 하는 보안 공격 기법</li>
+<li>사용자의 세션을 악용하여 비밀번호 변경, 결제 요청, 데이터 조작 등의 불법적인 요청 실행</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-매커니즘-공격-절차-대응방안">CSRF 공격 매커니즘, 공격 절차, 대응방안<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9-%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-매커니즘">CSRF 공격 매커니즘<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-절차">CSRF 공격 절차<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>단계</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>1. 공격 준비</td><td>공격자가 악성 웹사이트, 이메일 등을 통해 CSRF 공격을 수행할 환경을 구축</td><td>피싱 사이트 생성, 악성 링크 포함된 이메일 발송</td></tr><tr><td>2. 공격 수행</td><td>사용자가 악성 사이트에 접속하면 자동으로 요청이 실행됨</td><td>자동 POST 요청, 이미지 태그를 통한 GET 요청 포함</td></tr><tr><td>3. 피해 발생</td><td>사용자의 세션을 활용하여 원치 않는 요청이 실행됨</td><td>비밀번호 변경, 송금 요청, 계정 삭제</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-대응방안">CSRF 공격 대응방안<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>대응방안</th><th>내용</th></tr></thead><tbody><tr><td>토큰 기반 방어</td><td>CSRF 토큰 (CSRF Token)</td><td>요청 시마다 난수 기반 토큰을 포함하여 서버에서 검증</td></tr><tr><td>인증 기반 방어</td><td>SameSite 속성 사용</td><td>쿠키의 SameSite 속성을 Strict 또는 Lax로 설정하여 CSRF 방어</td></tr><tr><td>HTTP 헤더 검증</td><td>Referer 및 Origin 검증</td><td>요청의 Referer 또는 Origin 값을 확인하여 출처가 올바른지 검증</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-xss-비교">CSRF, XSS 비교<a href="https://gracefullight.dev/en/pe/sec/csrf/#csrf-xss-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>구분</th><th>XSS</th><th>CSRF</th></tr></thead><tbody><tr><td>개념</td><td>공격자가 악성 스크립트를 삽입하여 실행하는 공격</td><td>사용자의 인증된 세션을 악용하여 원치 않는 요청을 보내는 공격</td></tr><tr><td>공격 방식</td><td>클라이언트 측에서 실행되는 JavaScript 코드</td><td>서버 측에서 사용자의 세션을 도용하여 요청 수행</td></tr><tr><td>주요 피해</td><td>사용자 정보 탈취, 세션 하이재킹, 웹사이트 변조</td><td>비밀번호 변경, 송금, 계정 삭제 등 원치 않는 행동 수행</td></tr><tr><td>방어 기법</td><td>CSP(Content Security Policy), 입력 검증, HTTPOnly 쿠키 사용</td><td>CSRF 토큰, SameSite 쿠키, Referer 검증</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[CBPR]]></title>
             <link>https://gracefullight.dev/en/pe/sec/cbpr/</link>
@@ -79,7 +102,7 @@
             <guid>https://gracefullight.dev/en/pe/conv/데이터-거래소/</guid>
             <pubDate>Tue, 28 Jan 2025 13:05:57 GMT</pubDate>
             <description><![CDATA[데이터 거래소]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EF%BF%BD%EF%BF%BD%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>데이터 수집, 가공하여 부가가치를 높혀 소비자에게 공급하는 대규모 플랫폼</li>
 <li>데이터 품질보증, AI학습 데이터 마련, 데이터 활용 경제 활성화</li>
@@ -146,7 +169,7 @@
             <guid>https://gracefullight.dev/en/pe/conv/openapi-soap-rest/</guid>
             <pubDate>Tue, 28 Jan 2025 12:48:40 GMT</pubDate>
             <description><![CDATA[Open API, SOAP, REST]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-개념">개방형 API 개념<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-개념">개방형 API 개념<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EF%BF%BD%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>누구나 사용할 수 있도록 공개된 API로 웹표준 프로토콜과 버전관리를 통해 호환성, 확장성을 제공</li>
@@ -200,7 +223,7 @@
             <guid>https://gracefullight.dev/en/pe/pm/지능정보기술감리-실무가이드/</guid>
             <pubDate>Tue, 28 Jan 2025 11:39:41 GMT</pubDate>
             <description><![CDATA[지능정보기술감리 실무가이드]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="지능정보기�술감리-실무가이드-개념">지능정보기술감리 실무가이드 개념<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="지능정보기술감리-실무가이드-개념">지능정보기술감리 실무가이드 개념<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>빅데이터를 구축하고 분석하는 정보화 사업에 대한 감리를 수행함에 있어 필요산 사업의 단계별 감리 점검항목을 제시하기 위한 실무지침</li>
@@ -213,27 +236,6 @@
 <table><thead><tr><th>구분</th><th>점검항목</th><th>내용</th></tr></thead><tbody><tr><td>분석</td><td>빅데이터 서비스 요구사항 정의여부</td><td>상버목표 및 추진전략 검토</td></tr><tr><td></td><td>분석목표 달성을 위한 데이터 항목 정의</td><td>상관관계 정의, 품질수준 설정</td></tr><tr><td></td><td>요구사항 정의 과정에서 데이터 품질요소 검토</td><td>데이터 활용 적합성</td></tr><tr><td>설계</td><td>데이터 수집/정제 체계의 적정 설계여부</td><td>데이터 오류처리, 정제 기준</td></tr><tr><td></td><td>데이터 저장체계 및 보유기관 간 연계 설계</td><td>데이터 이관절차, 주기적 수집 확인</td></tr><tr><td></td><td>데이터 표준화 및 관리체계 설계여부</td><td>데이터 속성정의, 표준항목 관리</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="구축-및-운영-단계-점검항목">구축 및 운영 단계 점검항목<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%9A%B4%EC%98%81-%EB%8B%A8%EA%B3%84-%EC%A0%90%EA%B2%80%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>점검항목</th><th>내용</th></tr></thead><tbody><tr><td>구축</td><td>데이터 생애주기 관리체계 확인</td><td>생성-소멸 전 과정 감리</td></tr><tr><td></td><td>데이터가 설계된 대로 수집/변환되는지 점검</td><td>데이터 품질/변환 절차 확인</td></tr><tr><td></td><td>시스템 구성요소 검증</td><td>HW, SW 구성요소 설계 및 복구 계획</td></tr><tr><td>운영</td><td>데이터 품질, 보안, 서비스 운영 관리체게 검토</td><td>데이터 거버넌스 수립 여부</td></tr><tr><td></td><td>로그저장 및 분석 체계 확인</td><td>데이터 활용패턴, 사용자 만족도 분석</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/project-management</category>
-        </item>
-        <item>
-            <title><![CDATA[운영단계 대가산정]]></title>
-            <link>https://gracefullight.dev/en/pe/pm/운영단계-대가산정/</link>
-            <guid>https://gracefullight.dev/en/pe/pm/운영단계-대가산정/</guid>
-            <pubDate>Tue, 28 Jan 2025 10:51:01 GMT</pubDate>
-            <description><![CDATA[운영단계 대가산정]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="운영단계-대가산정-개��념">운영단계 대가산정 개념<a href="https://gracefullight.dev/en/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>SW진흥법 제 10조 의거, SW수명주기 중 운영단계 사업 및 서비스의 적정대가를 산정하기 위한 지침</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="운영단계-대가산정-방식">운영단계 대가산정 방식<a href="https://gracefullight.dev/en/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95-%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="응용sw요율제-유지관리비-산정방식">응용SW요율제 유지관리비 산정방식<a href="https://gracefullight.dev/en/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EC%9D%91%EC%9A%A9sw%EC%9A%94%EC%9C%A8%EC%A0%9C-%EC%9C%A0%EC%A7%80%EA%B4%80%EB%A6%AC%EB%B9%84-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>유지관리 대상 SW 식별</td><td>유지관리 대상 SW</td></tr><tr><td>2 유지관리대상 SW 개발비 재산정</td><td>유지관리 대상 SW 개발비를 유지관리 계약적정 FP와 단가로 재산정</td><td>SW개발비 (현재가치)</td></tr><tr><td>3 유지관리 총량 계산</td><td>유지관리횟수, 시스템사용자수, 시스템중요도, 연계, 오류복구신속성 따른 난이도 계산 후 반영</td><td>총 유지관리점수 (TMP)</td></tr><tr><td>4 유지관리 운용예산</td><td>총 건수, 미충 요율 계산</td><td>유지관리 요율</td></tr><tr><td></td><td>요율 = 10 + 5TMP/100</td><td></td></tr><tr><td>5 직접경비 계산</td><td>유지관리실제소요 경비산정</td><td>직접 경비</td></tr><tr><td>6 SW 유지관리비 산정</td><td>SW유지관리비 산정</td><td>SW 유지관리비</td></tr><tr><td></td><td>SW개발비 * 유지관리요율 + 직접경비</td><td></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sw운영-투입공수-산정방식">SW운영 투입공수 산정방식<a href="https://gracefullight.dev/en/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#sw%EC%9A%B4%EC%98%81-%ED%88%AC%EC%9E%85%EA%B3%B5%EC%88%98-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>운영 대상 SW 식별, 세부 운영 서비스 항목 정의</td><td>운영 대상 SW 및 서비스 항목</td></tr><tr><td>2 운영 공수 계산</td><td>SW 운영 업무 특성 고려, 필요 직무, 직무별 투입인력, 기간 결정</td><td>IT 직무별 투입공수</td></tr><tr><td>3 직접 인건비 계산</td><td>운영 업무 수행 인력의 직접 인건비 계산</td><td>직접인건비</td></tr><tr><td></td><td>직접 인건비 = 투입인력 기술자 직무공수 * SW기술자 평균임금</td><td></td></tr><tr><td>4 제경비 및 기술료 계산</td><td>운영업무 수행 인력의 제경비와 기술료 계산</td><td>제경비, 기술료</td></tr><tr><td></td><td>제경비 = 작업 인건비 × 144<del>154% / 기술료 = (직접 인건비 + 제경비) × 20</del>40%</td><td></td></tr><tr><td>5 직접 경비 계산</td><td>당해 업무 내 현재 요소로 직접 경비 산정</td><td>직접 경비</td></tr><tr><td>6 SW 운영비 산정</td><td>SW 운영비 산정</td><td>SW운영비</td></tr><tr><td></td><td>직접인건비 + 제경비 + 기술료 + 직접 경비</td><td></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="고정비-변동비-산정방식">고정비, 변동비 산정방식<a href="https://gracefullight.dev/en/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EA%B3%A0%EC%A0%95%EB%B9%84-%EB%B3%80%EB%8F%99%EB%B9%84-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>유지관리 및 운영대상 SW 식별</td><td>유지관리 및 운영대상 SW</td></tr><tr><td></td><td>대상 SW별 유지관리/운영업무 식별</td><td></td></tr><tr><td>2 고정비/변동비 업무 구분</td><td>대상 업무 중 완전유지관리 기능개선 해당업무(변동비) 구분</td><td>고정비/변동비 업무분류표</td></tr><tr><td></td><td>대상 업무 중 비기능 개선업무(고정비) 구분</td><td></td></tr><tr><td>3 고정비/변동비 산정</td><td>SW재개발비 산정방식으로 변동비 산정</td><td>고정비 산정표</td></tr><tr><td></td><td>투입공수 방식 운영비 산정방식 적용 고정비 산정</td><td>변동비 산정표</td></tr><tr><td>4 직접경비계산</td><td>당해업무 실제소요경비 산정</td><td>직접경비</td></tr><tr><td>5 SW유지관리/운영비 산정</td><td>SW유지관리/운영비 산정</td><td>SW 유지관리 및 운영비</td></tr><tr><td></td><td>고정비 + 변동비 + 직접경비</td><td></td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/project-management</category>
         </item>
