@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-29T14:21:09.116Z</updated>
+    <updated>2025-01-29T21:35:20.634Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[차세대 블록체인 합의 알고리즘]]></title>
+        <id>https://gracefullight.dev/pe/conv/consensus-algorithm/</id>
+        <link href="https://gracefullight.dev/pe/conv/consensus-algorithm/"/>
+        <updated>2025-01-29T21:35:20.634Z</updated>
+        <summary type="html"><![CDATA[Consensus Algorithm]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념">합의 알고리즘 개념<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="합의 알고리즘 개념에 대한 직접 링크" title="합의 알고리즘 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>네트워크 내 노드들이 신뢰 기반으로 데이터의 유효성을 검증하고 합의에 도달하는 방식</li>
+<li>PoW(Proof of Work), PoS(Proof of Stake) 방식의 높은 에너지 소비, 확장성 문제, 속도 저하 / 확장성과 효율성을 극대화하면서도 탈중앙성을 유지 / 대중화와 다양한 산업 응용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념도-차세대-합의-알고리즘-특징-주요사례">합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%95-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80" class="hash-link" aria-label="합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례에 대한 직접 링크" title="합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념도">합의 알고리즘 개념도<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="합의 알고리즘 개념도에 대한 직접 링크" title="합의 알고리즘 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-특징">차세대 합의 알고리즘 특징<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="차세대 합의 알고리즘 특징에 대한 직접 링크" title="차세대 합의 알고리즘 특징에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>에너지 효율성</td><td>PoS, DPoS 등을 활용하여 기존 PoW 대비 전력 소비 절감</td><td>저전력 합의 방식, 이더리움</td></tr><tr><td>확장성 강화</td><td>네트워크 처리량 증가를 목표로 설계되어 대규모 트랜잭션을 지원</td><td>샤딩, DAG, 질리카</td></tr><tr><td>탈중앙성 유지</td><td>중앙 집중화 문제를 해결하고, 네트워크 내에서 신뢰를 유지</td><td>Pure PoS, 알고랜드</td></tr><tr><td>하이브리드 설계</td><td>여러 합의 알고리즘의 장점을 결합한 방식</td><td>PoS, PBFT, 텐더민트</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-주요사례">차세대 합의 알고리즘 주요사례<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80" class="hash-link" aria-label="차세대 합의 알고리즘 주요사례에 대한 직접 링크" title="차세대 합의 알고리즘 주요사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>알고리즘</th><th>특징</th><th>사례</th></tr></thead><tbody><tr><td>Proof of History (PoH)</td><td>시간 기반 트랜잭션 순서 기록</td><td>솔라나, 65,000 TPS 지원</td></tr><tr><td>Directed Acyclic Graph (DAG)</td><td>블록 대신 그래프 구조 활용</td><td>아이오타, IoT 최적화</td></tr><tr><td>Proof of Authority (PoA)</td><td>신뢰할 수 있는 검증자 선정</td><td>비체인, 비즈니스 친화적 블록체인</td></tr><tr><td>Hybrid PoW/PoS</td><td>PoW + PoS 결합으로 보안과 효율성 동시 제공</td><td>디크레드, 보안성과 탈중앙성 유지</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-발전방향">차세대 합의 알고리즘 발전방향<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="차세대 합의 알고리즘 발전방향에 대한 직접 링크" title="차세대 합의 알고리즘 발전방향��에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>복잡성 증가</td><td>새로운 합의 알고리즘 설계와 구현이 복잡</td><td>오픈소스 프레임워크 및 개발자 도구 제공</td></tr><tr><td>보안 강화 필요</td><td>새로운 알고리즘에서 보안 취약점 발생 가능</td><td>지속적인 보안 테스트 및 업그레이드</td></tr><tr><td>산업 표준화 부족</td><td>알고리즘 간 표준화 부족으로 상호 운용성 저하</td><td>국제 표준화 기구(ISO)의 블록체인 표준 참여</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[가속화된 GPU 기반 분산 처리]]></title>
         <id>https://gracefullight.dev/pe/ca/accelerated-gpu-distributed-computing/</id>
@@ -239,29 +266,6 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="융합보안-관제-구성요소">융합보안 관제 구성요소<a href="https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88-%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="융합보안 관제 구성요소에 대한 직접 링크" title="융합보안 관제 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>세부요소</th><th>설명</th></tr></thead><tbody><tr><td>정보수집</td><td>IoT 센서</td><td>환경 모니터링, 물체 움직임 감지 센서</td></tr><tr><td>물리보안</td><td>출입 통제기</td><td>인가자 이외의 출입 가능 통제</td></tr><tr><td></td><td>영상 감시 시스템</td><td>영상 분석을 통한 인가/비인가자 판별</td></tr><tr><td>정보보안</td><td>접속관리</td><td>인증 및 패킷 분석, 침입차단</td></tr><tr><td></td><td>NW 침입탐지 시스템</td><td>IDS, IPS 등을 통한 네트워크 보안</td></tr><tr><td>융합보안</td><td>통합 보안 이벤트 분석</td><td>물리/정보보안 이벤트를 통합 분석, 패턴 감지</td></tr><tr><td></td><td>빅데이터 저장소</td><td>정보 및 보안 데이터 수집, 저장 및 가공</td></tr><tr><td>보안대응</td><td>침해 대응 장비</td><td>DDoS 대응 장비, 안티바이러스 등</td></tr><tr><td></td><td>침해 관제 분석</td><td>침해 분석 및 탐지 분석 기능</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[안티드론]]></title>
-        <id>https://gracefullight.dev/pe/sec/anti-drone/</id>
-        <link href="https://gracefullight.dev/pe/sec/anti-drone/"/>
-        <updated>2025-01-29T05:29:42.094Z</updated>
-        <summary type="html"><![CDATA[Anti Drone]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-개념">안티드론 개념<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="안티드론 개념에 대한 직접 링크" title="안티드론 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>무인비행채 접근 탐지기술과 비행을 무력화 시키는 기술을 융합하여 드론 범죄나 테러 등을 예방하는 기술</li>
-<li>사생활 침해 방지, 테러 방지, 보안시설 촬영 방지</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-구성도-핵심요소">안티드론 구성도, 핵심요소<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="안티드론 구성도, 핵심요소에 대한 직접 링크" title="안티드론 구성도, 핵심요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-구성도">안티드론 구성도<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="안티드론 구성도에 대한 직접 링크" title="안티드론 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-핵심요소">안티드론 핵심요소<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="안티드론 핵심요소에 대한 직접 링크" title="안티드론 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>분류</th><th>기술요소</th><th>설명</th></tr></thead><tbody><tr><td>탐지</td><td>레이더</td><td>X-band / Ku-band 이용 탐지</td></tr><tr><td></td><td>RF 스캐너</td><td>통신 신호 분석</td></tr><tr><td></td><td>광학카메라</td><td>강학신호 탐지 카메라 이용</td></tr><tr><td></td><td>IR 카메라</td><td>IR 센서 탐지 카메라 이용</td></tr><tr><td>식별</td><td>육안식별</td><td>초고 고해상도 부착 식별</td></tr><tr><td></td><td>전자식별</td><td>색채반응의 전자·원격식별</td></tr><tr><td>Hard Kill</td><td>고폭 / 네트</td><td>고폭 / 네트 이용 요격</td></tr><tr><td></td><td>전자에너지 무기</td><td>레이저 / RF 광학전(GM) 공격</td></tr><tr><td>Soft Kill</td><td>통신 재밍</td><td>전파 방해로 비행통신 제어</td></tr><tr><td></td><td>위성항법재밍</td><td>귀환 라디오 유리해 비행방향전환</td></tr><tr><td></td><td>지오 펜싱</td><td>항법 SW GPS에 비행금지구역 정보 전송</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
