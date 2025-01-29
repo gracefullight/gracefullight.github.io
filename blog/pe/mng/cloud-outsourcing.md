@@ -5,7 +5,7 @@ description: Cloud Outsourcing
 authors: me
 tags:
   - pe
-  - pe/mng 
+  - pe/mng
 ---
 
 ## 클라우드 아웃소싱 개념
