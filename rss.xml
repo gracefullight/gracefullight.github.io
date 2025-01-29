@@ -4,10 +4,59 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 04:25:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 05:23:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[SAM, Segment Anything Model]]></title>
+            <link>https://gracefullight.dev/pe/algo/sam/</link>
+            <guid>https://gracefullight.dev/pe/algo/sam/</guid>
+            <pubDate>Wed, 29 Jan 2025 05:23:34 GMT</pubDate>
+            <description><![CDATA[Segment Anything Model]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념">SAM 개념<a href="https://gracefullight.dev/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="SAM 개념에 대한 직접 링크" title="SAM 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>사용자 프롬프트(점, 박스, 마스크 등) 에 따라 정확한 객체 분할을 수행하는 딥러닝 기반 실시간 객체 분할 모델</li>
+<li>Transformer 아키텍처와 메모리 메커니즘을 활용하여 이미지 및 비디오에서 객체를 빠르고 정확하게 분할, Zero-shot 세그멘테이션 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념도-동작-절차-활용-사례">SAM 개념도, 동작 절차, 활용 사례<a href="https://gracefullight.dev/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="SAM 개념도, 동작 절차, 활용 사례에 대한 직접 링크" title="SAM 개념도, 동작 절차, 활용 사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념도">SAM 개념도<a href="https://gracefullight.dev/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="SAM 개념도에 대한 직접 링크" title="SAM 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-동작-절차">SAM 동작 절차<a href="https://gracefullight.dev/pe/algo/sam/#sam-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="SAM 동작 절차에 대한 직접 링크" title="SAM 동작 절차에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>특징 추출</td><td>입력된 이미지/비디오에서 고수준 특징을 추출</td><td>Vision Transformer 활용</td></tr><tr><td>프롬프트 인코딩</td><td>사용자의 입력(점, 바운딩 박스, 마스크 등)을 인코딩하여 분할 수행</td><td>Zero-shot 학습 가능</td></tr><tr><td>메모리 메커니즘</td><td>이전 프레임의 정보를 활용하여 연속된 객체 추적</td><td>비디오 객체 분할 지원</td></tr><tr><td>마스크 디코딩</td><td>객체 분할 마스크를 생성하여 최종 결과 출력</td><td>실시간 처리 가능</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-활용사례">SAM 활용사례<a href="https://gracefullight.dev/pe/algo/sam/#sam-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="SAM 활용사례에 대한 직접 링크" title="SAM 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>비디오 편집</td><td>특정 객체 분리</td><td>영상에서 특정 객체를 분리하여 편집 효과를 적용</td></tr><tr><td>증강 현실 (AR)</td><td>실시간 객체 추적</td><td>실제 환경에서 가상 객체와의 인터랙션을 강화</td></tr><tr><td>의료 영상 분석</td><td>의료 영상에서 관심 영역 탐지</td><td>MRI, CT 스캔에서 특정 병변을 자동 분할</td></tr><tr><td>자율 주행</td><td>도로 객체 실시간 인식</td><td>차량, 보행자, 도로 표지판 등의 분할 및 인식</td></tr><tr><td>보안 및 감시</td><td>움직이는 물체 실시간 탐지</td><td>CCTV에서 이상 행동 감지 및 객체 식별</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-sam-비교">YOLO, SAM 비교<a href="https://gracefullight.dev/pe/algo/sam/#yolo-sam-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="YOLO, SAM 비교에 대한 직접 링크" title="YOLO, SAM 비교에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>YOLO (You Only Look Once)</th><th>SAM 2 (Segment Anything Model 2)</th></tr></thead><tbody><tr><td>목적</td><td>객체 감지 (Object Detection)</td><td>객체 분할 (Segmentation)</td></tr><tr><td>주요 기능</td><td>바운딩 박스로 객체 위치 예측</td><td>픽셀 단위 객체 분할</td></tr><tr><td>입력 데이터</td><td>이미지, 비디오</td><td>이미지, 비디오</td></tr><tr><td>출력 결과</td><td>객체의 바운딩 박스 + 클래스 라벨</td><td>객체의 분할 마스크</td></tr><tr><td>처리 방식</td><td>단일 패스로 CNN 기반 객체 감지</td><td>Transformer 기반 프롬프트 분할</td></tr><tr><td>프레임워크</td><td>CNN 기반 YOLO 아키텍처</td><td>Vision Transformer 기반 모델</td></tr><tr><td>사용자 프롬프트</td><td>없음 (자동 탐지)</td><td>점, 바운딩 박스, 마스크 입력 가능</td></tr><tr><td>비디오 지원</td><td>가능 (Frame-by-Frame 감지)</td><td>가능 (Frame-to-Frame 추적)</td></tr><tr><td>활용 분야</td><td>자율주행, 감시 시스템, 드론, 스마트시티</td><td>영상 편집, 의료 분석, AR/VR, 보안</td></tr><tr><td>장점</td><td>실시간 감지, 속도 최적화</td><td>정밀한 객체 분할, Zero-shot 세그멘테이션</td></tr><tr><td>단점</td><td>객체 분할 불가능, 픽셀 수준 정보 부족</td><td>감지 불가능, 바운딩 박스 제공 안됨</td></tr></tbody></table>
+<ul>
+<li>YOLO는 "어디에 무엇이 있는가?"(객체 감지) 를 해결하는 반면, SAM 2는 "정확한 경계를 찾아라"(객체 분할) 에 집중</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
+        <item>
+            <title><![CDATA[YOLO, You Only Look Once]]></title>
+            <link>https://gracefullight.dev/pe/algo/yolo/</link>
+            <guid>https://gracefullight.dev/pe/algo/yolo/</guid>
+            <pubDate>Wed, 29 Jan 2025 05:15:05 GMT</pubDate>
+            <description><![CDATA[yolo]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념">YOLO 개념<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="YOLO 개념에 대한 직접 링크" title="YOLO 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>실시간 객채 템지를 위한 CV 알고리즘으로 이미지를 한 번만 보고 객체의 위치와 분류를 동시에 예측하는 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념도-동작-절차-활용사례">YOLO 개념도, 동작 절차, 활용사례<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="YOLO 개념도, 동작 절차, 활용사례에 대한 직접 링크" title="YOLO 개념도, 동작 절차, 활용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념도">YOLO 개념도<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="YOLO 개념도에 대한 직접 링크" title="YOLO 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>빠른 객체 인식 속도로 사용 증가, 현재 V8 버전 모델까지 활용 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-동작-절차">YOLO 동작 절차<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="YOLO 동작 절차에 대한 직접 링크" title="YOLO 동작 절차에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>그리드 분할</td><td>이미지를 SxS 크기의 격자로 나눔</td><td>각 셀에서 객체의 존재 여부를 예측</td></tr><tr><td>바운딩박스생성</td><td>각 셀에서 객체가 존재할 가능성이 높은 바운딩 박스를 생성</td><td>중심 좌표(x, y), 너비(w), 높이(h), 신뢰도 포함</td></tr><tr><td>클래스 확률 맵 구성</td><td>각 바운딩 박스에 대해 클래스별 확률 계산</td><td>다중 클래스 분류 수행</td></tr><tr><td>객체 참지</td><td>신경망을 통해 가장 가능성이 높은 바운딩 박스를 선택</td><td>NMS(Non-Maximum Suppression) 기법 활용 중복 제거</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-활용사례">YOLO 활용사례<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="YOLO 활용사례에 대한 직접 링크" title="YOLO 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>전자상거래</td><td>제품 검색 및 자동 태깅</td><td>온라인 쇼핑몰에서 제품 이미지를 분석하여 카테고리 분류 및 추천 시스템 활용</td></tr><tr><td>신분확인</td><td>생체 인식 및 보안 시스템</td><td>얼굴 인식 기반 출입 통제 시스템, CCTV 영상 분석을 통한 신원 확인</td></tr><tr><td>엔터테인먼트</td><td>게임 및 증강 현실(AR) 기술</td><td>AR 게임 및 가상현실(VR)에서 객체 추적 및 인터랙티브 콘텐츠 생성</td></tr><tr><td>의료</td><td>의료 영상 분석</td><td>X-ray, CT 스캔 이미지에서 질병 탐지 및 의료 진단 지원</td></tr><tr><td>자율주행</td><td>도로 객체 탐지</td><td>차량, 보행자, 신호등 등을 실시간으로 탐지하여 자율주행 시스템에 적용</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[국가정보원 보안성 검토]]></title>
             <link>https://gracefullight.dev/pe/sec/국가정보원-보안성-검토/</link>
@@ -176,52 +225,6 @@
 <table><thead><tr><th>구분</th><th>XSS</th><th>CSRF</th></tr></thead><tbody><tr><td>개념</td><td>공격자가 악성 스크립트를 삽입하여 실행하는 공격</td><td>사용자의 인증된 세션을 악용하여 원치 않는 요청을 보내는 공격</td></tr><tr><td>공격 방식</td><td>클라이언트 측에서 실행되는 JavaScript 코드</td><td>서버 측에서 사용자의 세션을 도용하여 요청 수행</td></tr><tr><td>주요 피해</td><td>사용자 정보 탈취, 세션 하이재킹, 웹사이트 변조</td><td>비밀번호 변경, 송금, 계정 삭제 등 원치 않는 행동 수행</td></tr><tr><td>방어 기법</td><td>CSP(Content Security Policy), 입력 검증, HTTPOnly 쿠키 사용</td><td>CSRF 토큰, SameSite 쿠키, Referer 검증</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[CBPR]]></title>
-            <link>https://gracefullight.dev/pe/sec/cbpr/</link>
-            <guid>https://gracefullight.dev/pe/sec/cbpr/</guid>
-            <pubDate>Wed, 29 Jan 2025 01:47:59 GMT</pubDate>
-            <description><![CDATA[Cross Border Privacy Rule]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념">CBPR 개념<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="CBPR 개념에 대한 직접 링크" title="CBPR 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>APEC 프라이버시 보호 원칙을 기반으로 기업의 개인정보 보호체계를 평가하여 인증하는 글로벌 인증제도</li>
-<li>각국 법제도 비대채성, 자발성, 유연성, 개인정보 국경 간 이동 등 활용 중심</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념도-핵심요소-인증기준">CBPR 개념도, 핵심요소, 인증기준<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%9D%B8%EC%A6%9D%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="CBPR 개념도, 핵심요소, 인증기준에 대한 직접 링크" title="CBPR 개념도, 핵심요소, 인증기준에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념도">CBPR 개념도<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="CBPR 개념도에 대한 직접 링크" title="CBPR 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>APEC 내 개인정보 처리 기업이라면 CBPR인증 후 개인정보 주체 동의 없이 갱니정보 국외 이전 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-핵심요소">CBPR 핵심요소<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="CBPR 핵심요소에 대한 직접 링크" title="CBPR 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>전자상거래 활성화</td><td>APEC 내 국가 간 개인정보 흐름을 원활하게 하여 디지털 경제 촉진</td></tr><tr><td></td><td>개인정보보호</td><td>개인정보의 적절한 보호를 보장하면서도 기업의 데이터 활용과 국제 데이터 전송을 지원</td></tr><tr><td>적용범위</td><td>APEC 회원국</td><td>APEC에 가입한 국가들을 대상으로 하며, 회원국 간의 상호인정 협약 기반으로 운영</td></tr><tr><td>대상</td><td>개인정보</td><td>개인을 식별할 수 있는 모든 정보에 적용</td></tr><tr><td></td><td>개인정보처리자</td><td>개인정보를 수집, 저장, 이용 및 공유하는 기업 또는 조직이 적용 대상</td></tr><tr><td></td><td>수탁처리자 제외</td><td>개인정보를 직접 처리하는 기업(Controller)에 초점을 맞춤</td></tr><tr><td></td><td></td><td>단순 데이터 처리만 수행하는 수탁업체(Processors)는 직접적인 적용 대상이 아님</td></tr><tr><td>갱신주기</td><td>1년 단위 갱신</td><td>CBPR 인증을 받은 기업은 매년 개인정보 보호 준수 여부를 평가받아야 하며, 갱신을 통해 지속적인 적합성을 유지</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-인증기준">CBPR 인증기준<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EC%9D%B8%EC%A6%9D%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="CBPR 인증기준에 대한 직접 링크" title="CBPR 인증기준에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>분야</th><th>세부분야</th><th>내용</th></tr></thead><tbody><tr><td>개인정보관리체계수립</td><td>정책 및 절차 수립</td><td>기업 및 조직이 개인정보 보호를 위한 정책과 절차를 문서화하고 준수하도록 요구</td></tr><tr><td></td><td>책임성 확보</td><td>개인정보 보호책임자 지정, 기업의 개인정보 보호 조치 이행 및 지속적 개선 요구</td></tr><tr><td>개인정보 수집</td><td>최소 수집 원칙</td><td>개인정보는 목적에 필요한 최소한의 정보만 수집하도록 제한</td></tr><tr><td></td><td>투명성 확보</td><td>개인정보 수집 시 정보주체에게 수집 목적, 이용 범위 등을 명확히 고지</td></tr><tr><td>개인정보 이동/위탁/제공</td><td>목적 내 이용</td><td>개인정보는 수집된 목적 내에서만 사용해야 하며, 목적 변경 시 추가 동의 필요</td></tr><tr><td></td><td>제3자 제공 제한</td><td>개인정보를 제3자에게 제공할 경우 명확한 동의 절차 및 보호 조치를 마련해야 함</td></tr><tr><td>정보주체 권리</td><td>열람 및 정정</td><td>정보주체는 자신의 개인정보에 대한 열람 및 정정을 요구할 수 있어야 함</td></tr><tr><td></td><td>선택권 및 동의 철회</td><td>정보주체는 자신의 개인정보 이용에 대한 선택권을 가지며, 언제든 동의를 철회할 수 있음</td></tr><tr><td>무결성</td><td>데이터 품질 유지</td><td>개인정보가 정확하고 최신 상태로 유지될 수 있도록 관리</td></tr><tr><td></td><td>보관 및 삭제 정책</td><td>불필요한 개인정보는 보관하지 않고, 일정 기간 후 안전하게 삭제해야 함</td></tr><tr><td>보호대책</td><td>기술적 보호조치</td><td>암호화, 접근제어, 침입탐지 등 개인정보 보호를 위한 기술적 조치 요구</td></tr><tr><td></td><td>물리적 보호조치</td><td>개인정보를 저장하는 서버, 네트워크, 문서 등의 안전한 보호 필요</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[NPU]]></title>
-            <link>https://gracefullight.dev/pe/conv/npu/</link>
-            <guid>https://gracefullight.dev/pe/conv/npu/</guid>
-            <pubDate>Tue, 28 Jan 2025 22:22:05 GMT</pubDate>
-            <description><![CDATA[Neural Processing Unit]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="npu-개념">NPU 개념<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NPU 개념에 대한 직접 링크" title="NPU 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>AI, 딥러닝 활용을 위해 행렬연산 등 대량 병렬처리를 효과적으로 수행할 수 있는 차세대 반도체</li>
-<li>저전력, 고성능, 고효율, 온디바이스 AI, ML Framework 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성도-구성요소-gpu-비교">NPU 구성도, 구성요소, GPU 비교<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-gpu-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NPU 구성도, 구성요소, GPU 비교에 대한 직접 링크" title="NPU 구성도, 구성요소, GPU 비교에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성도">NPU 구성도<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="NPU 구성도에 대한 직접 링크" title="NPU 구성도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="NPU" src="https://gracefullight.dev/assets/images/npu-aa20a88037e6f315a633493081b15318.jpg" width="2566" height="788" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-구성요소">NPU 구성요소<a href="https://gracefullight.dev/pe/conv/npu/#npu-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="NPU 구성요소에 대한 직접 링크" title="NPU 구성요소에 대한 직접 링크">​</a></h3>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cpu-구성-요소">CPU 구성 요소<a href="https://gracefullight.dev/pe/conv/npu/#cpu-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="CPU 구성 요소에 대한 직접 링크" title="CPU 구성 요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>구성 요소</th><th>설명</th></tr></thead><tbody><tr><td>연산부</td><td>신경망 ALU</td><td>뉴런 기반 산술 및 논리 연산을 수행하는 장치</td></tr><tr><td></td><td>레지스터</td><td>연산 속도를 높이기 위해 데이터 및 명령어를 저장하는 초고속 메모리</td></tr><tr><td></td><td>Processing Engine</td><td>명령어 실행 및 데이터 처리를 담당하는 핵심 연산 유닛</td></tr><tr><td>제어부</td><td>버스 스케줄러</td><td>CPU 내 데이터 및 명령 전송을 최적화하는 스케줄링 장치</td></tr><tr><td></td><td>버스</td><td>CPU 내부 및 외부 장치 간 데이터 전송을 위한 경로</td></tr><tr><td>메모리부</td><td>캐시(Cache)</td><td>자주 사용하는 데이터를 저장하여 CPU 접근 속도를 향상</td></tr><tr><td></td><td>DMA(Direct Memory Access)</td><td>CPU 개입 없이 데이터 전송을 수행하여 성능 최적화</td></tr><tr><td>입출력부</td><td>I/O 컨트롤러</td><td>외부 장치와의 데이터 입출력을 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="npu-gpu-비교">NPU, GPU 비교<a href="https://gracefullight.dev/pe/conv/npu/#npu-gpu-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NPU, GPU 비교에 대한 직접 링크" title="NPU, GPU 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>NPU</th><th>GPU</th></tr></thead><tbody><tr><td>목적</td><td>딥러닝 및 AI 가속, 신경망 연산 최적화</td><td>그래픽 및 범용 병렬 연산 (GPGPU)</td></tr><tr><td>특징</td><td>저전력, 고성능, 고효율, 최적화된 AI 연산</td><td>대량의 병렬 연산, 높은 메모리 대역폭</td></tr><tr><td>구조</td><td>활성화 함수, 신경망 ALU, 메모리 컨트롤러</td><td>SP (Streaming Processor), SIMD, HBM</td></tr><tr><td>연산 방식</td><td>행렬 연산(MAC, Matrix Multiply-Accumulate) 최적화</td><td>병렬 처리(벡터 연산, 픽셀 렌더링)</td></tr><tr><td>데이터 처리</td><td>텐서 연산 최적화(Tensor Core, TPU 등)</td><td>부동소수점 연산(FP32, FP64), 벡터 연산</td></tr><tr><td>활용 분야</td><td>AI, 딥러닝, 엣지 컴퓨팅, 자율주행</td><td>3D 그래픽, 데이터 병렬처리, 게임, 영상처리</td></tr><tr><td>전력 소비</td><td>저전력</td><td>고전력</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
         </item>
     </channel>
 </rss>
