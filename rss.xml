@@ -4,10 +4,29 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 05:23:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 05:29:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[안티드론]]></title>
+            <link>https://gracefullight.dev/pe/sec/anti-drone/</link>
+            <guid>https://gracefullight.dev/pe/sec/anti-drone/</guid>
+            <pubDate>Wed, 29 Jan 2025 05:29:42 GMT</pubDate>
+            <description><![CDATA[Anti Drone]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-개념">안티드론 개념<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="안티드론 개념에 대한 직접 링크" title="안티드론 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>무인비행채 접근 탐지기술과 비행을 무력화 시키는 기술을 융합하여 드론 범죄나 테러 등을 예방하는 기술</li>
+<li>사생활 침해 방지, 테러 방지, 보안시설 촬영 방지</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-구성도-핵심요소">안티드론 구성도, 핵심요소<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="안티드론 구성도, 핵심요소에 대한 직접 링크" title="안티드론 구성도, 핵심요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-구성도">안티드론 구성도<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="안티드론 구성도에 대한 직접 링크" title="안티드론 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-핵심요소">안티드론 핵심요소<a href="https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="안티드론 핵심요소에 대한 직접 링크" title="안티드론 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>분류</th><th>기술요소</th><th>설명</th></tr></thead><tbody><tr><td>탐지</td><td>레이더</td><td>X-band / Ku-band 이용 탐지</td></tr><tr><td></td><td>RF 스캐너</td><td>통신 신호 분석</td></tr><tr><td></td><td>광학카메라</td><td>강학신호 탐지 카메라 이용</td></tr><tr><td></td><td>IR 카메라</td><td>IR 센서 탐지 카메라 이용</td></tr><tr><td>식별</td><td>육안식별</td><td>초고 고해상도 부착 식별</td></tr><tr><td></td><td>전자식별</td><td>색채반응의 전자·원격식별</td></tr><tr><td>Hard Kill</td><td>고폭 / 네트</td><td>고폭 / 네트 이용 요격</td></tr><tr><td></td><td>전자에너지 무기</td><td>레이저 / RF 광학전(GM) 공격</td></tr><tr><td>Soft Kill</td><td>통신 재밍</td><td>전파 방해로 비행통신 제어</td></tr><tr><td></td><td>위성항법재밍</td><td>귀환 라디오 유리해 비행방향전환</td></tr><tr><td></td><td>지오 펜싱</td><td>항법 SW GPS에 비행금지구역 정보 전송</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[SAM, Segment Anything Model]]></title>
             <link>https://gracefullight.dev/pe/algo/sam/</link>
@@ -200,29 +219,6 @@
 <table><thead><tr><th>구분</th><th>세부 유형</th><th>설명</th></tr></thead><tbody><tr><td>텍스트 방식</td><td>텍스트를 이미지화</td><td>사용자가 왜곡된 문자/숫자를 해독하여 입력</td></tr><tr><td></td><td>질문 응답</td><td>간단한 수학 문제나 논리 문제를 풀도록 유도</td></tr><tr><td>오디오방식</td><td>입력텍스트를 오디오로 출력</td><td>시각 장애인을 위한 대체 방법으로, 음성으로 캡차 제공</td></tr><tr><td>이미지방식</td><td>이미지 분류</td><td>특정 조건에 맞는 이미지를 선택하도록 요구</td></tr><tr><td></td><td>이미지 퍼즐</td><td>"나는 로봇이 아닙니다" 체크박스, 퍼즐 조각 맞추기</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-보안-강화-방안">캡차 보안 강화 방안<a href="https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="캡차 보안 강화 방안에 대한 직접 링크" title="캡차 보안 강화 방안에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>방안</th><th>내용</th></tr></thead><tbody><tr><td>난독화 강화</td><td>텍스트 왜곡 및 노이즈 추가</td><td>OCR(광학 문자 인식) 기술을 우회하기 어렵게 함</td></tr><tr><td>멀티모달 적용</td><td>이미지 + 오디오 조합</td><td>시각/청각 장애인을 고려하면서 보안성 강화</td></tr><tr><td>사용자 행동 감지</td><td>마우스 움직임 및 키 입력 분석</td><td>인간 사용자의 행동 패턴을 학습하여 봇 탐지</td></tr><tr><td>AI 대응</td><td>동적 캡차 생성</td><td>캡차 패턴을 인공지능이 학습하지 못하도록 랜덤화</td></tr><tr><td>인증 연계</td><td>MFA(다중 인증) 활용</td><td>로그인 과정에서 추가적인 보안 요소로 활용</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[CSRF]]></title>
-            <link>https://gracefullight.dev/pe/sec/csrf/</link>
-            <guid>https://gracefullight.dev/pe/sec/csrf/</guid>
-            <pubDate>Wed, 29 Jan 2025 02:02:11 GMT</pubDate>
-            <description><![CDATA[Cross Site Request Forgery]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-개념">CSRF 개념<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="CSRF 개념에 대한 직접 링크" title="CSRF 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>사이트 간 요청을 위조하여 사용자가 자신의 의지와 무관하게 공격자의 행위를 수행하도록 하는 보안 공격 기법</li>
-<li>사용자의 세션을 악용하여 비밀번호 변경, 결제 요청, 데이터 조작 등의 불법적인 요청 실행</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-매커니즘-공격-절차-대응방안">CSRF 공격 매커니즘, 공격 절차, 대응방안<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EA%B3%B5%EA%B2%A9-%EC%A0%88%EC%B0%A8-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="CSRF 공격 매커니즘, 공격 절차, 대응방안에 대한 직접 링크" title="CSRF 공격 매커니즘, 공격 절차, 대응방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-매커니즘">CSRF 공격 매커니즘<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="CSRF 공격 매커니즘에 대한 직접 링크" title="CSRF 공격 매커니즘에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-절차">CSRF 공격 절차<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="CSRF 공격 절차에 대한 직접 링크" title="CSRF 공격 절차에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단계</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>1. 공격 준비</td><td>공격자가 악성 웹사이트, 이메일 등을 통해 CSRF 공격을 수행할 환경을 구축</td><td>피싱 사이트 생성, 악성 링크 포함된 이메일 발송</td></tr><tr><td>2. 공격 수행</td><td>사용자가 악성 사이트에 접속하면 자동으로 요청이 실행됨</td><td>자동 POST 요청, 이미지 태그를 통한 GET 요청 포함</td></tr><tr><td>3. 피해 발생</td><td>사용자의 세션을 활용하여 원치 않는 요청이 실행됨</td><td>비밀번호 변경, 송금 요청, 계정 삭제</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-공격-대응방안">CSRF 공격 대응방안<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-%EA%B3%B5%EA%B2%A9-%EB%8C%80%EC%9D%91%EB%B0%A9%EC%95%88" class="hash-link" aria-label="CSRF 공격 대응방안에 대한 직접 링크" title="CSRF 공격 대응방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>대응방안</th><th>내용</th></tr></thead><tbody><tr><td>토큰 기반 방어</td><td>CSRF 토큰 (CSRF Token)</td><td>요청 시마다 난수 기반 토큰을 포함하여 서버에서 검증</td></tr><tr><td>인증 기반 방어</td><td>SameSite 속성 사용</td><td>쿠키의 SameSite 속성을 Strict 또는 Lax로 설정하여 CSRF 방어</td></tr><tr><td>HTTP 헤더 검증</td><td>Referer 및 Origin 검증</td><td>요청의 Referer 또는 Origin 값을 확인하여 출처가 올바른지 검증</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="csrf-xss-비교">CSRF, XSS 비교<a href="https://gracefullight.dev/pe/sec/csrf/#csrf-xss-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="CSRF, XSS 비교에 대한 직접 링크" title="CSRF, XSS 비교에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>XSS</th><th>CSRF</th></tr></thead><tbody><tr><td>개념</td><td>공격자가 악성 스크립트를 삽입하여 실행하는 공격</td><td>사용자의 인증된 세션을 악용하여 원치 않는 요청을 보내는 공격</td></tr><tr><td>공격 방식</td><td>클라이언트 측에서 실행되는 JavaScript 코드</td><td>서버 측에서 사용자의 세션을 도용하여 요청 수행</td></tr><tr><td>주요 피해</td><td>사용자 정보 탈취, 세션 하이재킹, 웹사이트 변조</td><td>비밀번호 변경, 송금, 계정 삭제 등 원치 않는 행동 수행</td></tr><tr><td>방어 기법</td><td>CSP(Content Security Policy), 입력 검증, HTTPOnly 쿠키 사용</td><td>CSRF 토큰, SameSite 쿠키, Referer 검증</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
