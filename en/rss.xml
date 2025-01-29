@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 13:58:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 14:21:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[가속화된 GPU 기반 분산 처리]]></title>
+            <link>https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/</link>
+            <guid>https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/</guid>
+            <pubDate>Wed, 29 Jan 2025 14:21:09 GMT</pubDate>
+            <description><![CDATA[Accelerated GPU Distributed Computing]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-분산-처리-개념">가속화된 GPU 분산 처리 개념<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>GPU의 대규모 병렬 연산 능력을 활용하여 빅데이터, 딥러닝, 과학적 시뮬레이션 등의 고속 처리를 지원하는 기술</li>
+<li>데이터 분석, 인공지능(AI), 금융 연산 등 다양한 분야에서 실시간 처리 및 고성능 컴퓨팅(HPC, High Performance Computing)을 가능</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-분산-처리-개념도-구성요소-활용사례">가속화된 GPU 분산 처리 개념도, 구성요소, 활용사례<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-분산-처리-개념도">가속화된 GPU 분산 처리 개념도<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-분산-처리-구성요소">가속화된 GPU 분산 처리 구성요소<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구성 요소</th><th>설명</th><th>관련 기술</th></tr></thead><tbody><tr><td>GPU 클러스터</td><td>다수의 GPU 노드를 연결하여 병렬 연산 수행</td><td>NVIDIA DGX, AMD Instinct</td></tr><tr><td>연산 프레임워크</td><td>GPU 병렬 연산을 지원하는 API 및 프레임워크</td><td>CUDA, OpenCL, Vulkan</td></tr><tr><td>분산 처리 시스템</td><td>GPU를 클러스터 환경에서 활용하는 플랫폼</td><td>Apache Spark, Ray, TensorFlow</td></tr><tr><td>고속 네트워크</td><td>GPU 간 빠른 데이터 전송을 위한 네트워크</td><td>NVLink, InfiniBand</td></tr><tr><td>메모리 최적화</td><td>GPU 메모리와 호스트 메모리 간 데이터 전송 최적화</td><td>Unified Memory, Zero-Copy</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-분산-처리-활용사례">가속화된 GPU 분산 처리 활용사례<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EB%B6%84%EC%82%B0-%EC%B2%98%EB%A6%AC-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>분야</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>딥러닝 모델 학습</td><td>OpenAI GPT 모델</td><td>수천 개의 GPU를 활용한 신경망 모델 학습</td></tr><tr><td>빅데이터 분석</td><td>NVIDIA RAPIDS</td><td>Apache Spark와 GPU 결합으로 데이터 처리 속도 20배 향상</td></tr><tr><td>과학적 시뮬레이션</td><td>CERN 물리학 연구</td><td>GPU 기반 입자 충돌 시뮬레이션 수행</td></tr><tr><td>의료 영상 처리</td><td>GE Healthcare</td><td>GPU 활용하여 MRI, CT 영상 처리 시간 90% 단축</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="가속화된-gpu-고려사항">가속화된 GPU 고려사항<a href="https://gracefullight.dev/en/pe/ca/accelerated-gpu-distributed-computing/#%EA%B0%80%EC%86%8D%ED%99%94%EB%90%9C-gpu-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>데이터 전송 병목</td><td>GPU 간 데이터 이동 시 전송 비용이 높은 문제</td><td>NVLink, InfiniBand와 같은 고속 네트워크 기술 활용</td></tr><tr><td>전력 소비 증가</td><td>GPU 클러스터의 대규모 전력 소비로 운영 비용 상승</td><td>에너지 효율이 높은 GPU 아키텍처 도입 (NVIDIA Hopper)</td></tr><tr><td>확장성 한계</td><td>클러스터 크기가 커질수록 네트워크 병목 및 관리 복잡성 증가</td><td>Kubernetes 기반 컨테이너 오케스트레이션 도입</td></tr><tr><td>개발 및 운영 복잡성</td><td>GPU 프로그래밍이 어렵고, 병렬 처리 최적화가 필요</td><td>TensorFlow, PyTorch와 같은 고수준 API 활용</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/computer-architecture</category>
+        </item>
         <item>
             <title><![CDATA[eBPF, Extended Berkeley Packet Filter]]></title>
             <link>https://gracefullight.dev/en/pe/sec/eBPF/</link>
@@ -206,32 +229,6 @@
 <table><thead><tr><th>분류</th><th>기술요소</th><th>설명</th></tr></thead><tbody><tr><td>탐지</td><td>레이더</td><td>X-band / Ku-band 이용 탐지</td></tr><tr><td></td><td>RF 스캐너</td><td>통신 신호 분석</td></tr><tr><td></td><td>광학카메라</td><td>강학신호 탐지 카메라 이용</td></tr><tr><td></td><td>IR 카메라</td><td>IR 센서 탐지 카메라 이용</td></tr><tr><td>식별</td><td>육안식별</td><td>초고 고해상도 부착 식별</td></tr><tr><td></td><td>전자식별</td><td>색채반응의 전자·원격식별</td></tr><tr><td>Hard Kill</td><td>고폭 / 네트</td><td>고폭 / 네트 이용 요격</td></tr><tr><td></td><td>전자에너지 무기</td><td>레이저 / RF 광학전(GM) 공격</td></tr><tr><td>Soft Kill</td><td>통신 재밍</td><td>전파 방해로 비행통신 제어</td></tr><tr><td></td><td>위성항법재밍</td><td>귀환 라디오 유리해 비행방향전환</td></tr><tr><td></td><td>지오 펜싱</td><td>항법 SW GPS에 비행금지구역 정보 전송</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[SAM, Segment Anything Model]]></title>
-            <link>https://gracefullight.dev/en/pe/algo/sam/</link>
-            <guid>https://gracefullight.dev/en/pe/algo/sam/</guid>
-            <pubDate>Wed, 29 Jan 2025 05:23:34 GMT</pubDate>
-            <description><![CDATA[Segment Anything Model]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념">SAM 개념<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>사용자 프롬프트(점, 박스, 마스크 등) 에 따라 정확한 객체 분할을 수행하는 딥러닝 기반 실시간 객체 분할 모델</li>
-<li>Transformer 아키텍처와 메모리 메커니즘을 활용하여 이미지 및 비디오에서 객체를 빠르고 정확하게 분할, Zero-shot 세그멘테이션 가능</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념도-동작-절차-활용-사례">SAM 개념도, 동작 절차, 활용 사례<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념도">SAM 개념도<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-동작-절차">SAM 동작 절차<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>특징 추출</td><td>입력된 이미지/비디오에서 고수준 특징을 추출</td><td>Vision Transformer 활용</td></tr><tr><td>프롬프트 인코딩</td><td>사용자의 입력(점, 바운딩 박스, 마스크 등)을 인코딩하여 분할 수행</td><td>Zero-shot 학습 가능</td></tr><tr><td>메모리 메커니즘</td><td>이전 프레임의 정보를 활용하여 연속된 객체 추적</td><td>비디오 객체 분할 지원</td></tr><tr><td>마스크 디코딩</td><td>객체 분할 마스크를 생성하여 최종 결과 출력</td><td>실시간 처리 가능</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sam-활용사례">SAM 활용사례<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>비디오 편집</td><td>특정 객체 분리</td><td>영상에서 특정 객체를 분리하여 편집 효과를 적용</td></tr><tr><td>증강 현실 (AR)</td><td>실시간 객체 추적</td><td>실제 환경에서 가상 객체와의 인터랙션을 강화</td></tr><tr><td>의료 영상 분석</td><td>의료 영상에서 관심 영역 탐지</td><td>MRI, CT 스캔에서 특정 병변을 자동 분할</td></tr><tr><td>자율 주행</td><td>도로 객체 실시간 인식</td><td>차량, 보행자, 도로 표지판 등의 분할 및 인식</td></tr><tr><td>보안 및 감시</td><td>움직이는 물체 실시간 탐지</td><td>CCTV에서 이상 행동 감지 및 객체 식별</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-sam-비교">YOLO, SAM 비교<a href="https://gracefullight.dev/en/pe/algo/sam/#yolo-sam-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>YOLO (You Only Look Once)</th><th>SAM 2 (Segment Anything Model 2)</th></tr></thead><tbody><tr><td>목적</td><td>객체 감지 (Object Detection)</td><td>객체 분할 (Segmentation)</td></tr><tr><td>주요 기능</td><td>바운딩 박스로 객체 위치 예측</td><td>픽셀 단위 객체 분할</td></tr><tr><td>입력 데이터</td><td>이미지, 비디오</td><td>이미지, 비디오</td></tr><tr><td>출력 결과</td><td>객체의 바운딩 박스 + 클래스 라벨</td><td>객체의 분할 마스크</td></tr><tr><td>처리 방식</td><td>단일 패스로 CNN 기반 객체 감지</td><td>Transformer 기반 프롬프트 분할</td></tr><tr><td>프레임워크</td><td>CNN 기반 YOLO 아키텍처</td><td>Vision Transformer 기반 모델</td></tr><tr><td>사용자 프롬프트</td><td>없음 (자동 탐지)</td><td>점, 바운딩 박스, 마스크 입력 가능</td></tr><tr><td>비디오 지원</td><td>가능 (Frame-by-Frame 감지)</td><td>가능 (Frame-to-Frame 추적)</td></tr><tr><td>활용 분야</td><td>자율주행, 감시 시스템, 드론, 스마트시티</td><td>영상 편집, 의료 분석, AR/VR, 보안</td></tr><tr><td>장점</td><td>실시간 감지, 속도 최적화</td><td>정밀한 객체 분할, Zero-shot 세그멘테이션</td></tr><tr><td>단점</td><td>객체 분할 불가능, 픽셀 수준 정보 부족</td><td>감지 불가능, 바운딩 박스 제공 안됨</td></tr></tbody></table>
-<ul>
-<li>YOLO는 "어디에 무엇이 있는가?"(객체 감지) 를 해결하는 반면, SAM 2는 "정확한 경계를 찾아라"(객체 분할) 에 집중</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
         </item>
     </channel>
 </rss>
