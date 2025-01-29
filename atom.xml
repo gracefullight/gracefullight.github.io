@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-29T04:04:34.984Z</updated>
+    <updated>2025-01-29T04:16:17.101Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[디스크 이미징]]></title>
+        <id>https://gracefullight.dev/pe/sec/disk-imaging/</id>
+        <link href="https://gracefullight.dev/pe/sec/disk-imaging/"/>
+        <updated>2025-01-29T04:16:17.101Z</updated>
+        <summary type="html"><![CDATA[Disk Imaging]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이미징-개념">디스크 이미징 개념<a href="https://gracefullight.dev/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디스크 이미징 개념에 대한 직접 링크" title="디스크 이미징 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>원본의 훼손을 방지하고, 분석/데이터 포렌식을 위해 저장 매체의 모든 물리적 데이터 사본을 생성하는 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이미징-유형-활용방안">디스크 이미징 유형, 활용방안<a href="https://gracefullight.dev/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%EC%9C%A0%ED%98%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디스크 이미징 유형, 활용방안에 대한 직접 링크" title="디스크 이미징 유형, 활용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이미징-유형">디스크 이미징 유형<a href="https://gracefullight.dev/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="디스크 이미징 유형에 대한 직접 링크" title="디스크 이미징 유형에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>Disk to Disk</th><th>Disk to File</th></tr></thead><tbody><tr><td>개념도</td><td>디스크 -복사-&gt; 디스크</td><td>대상디스크 -&gt; 쓰기방지장치 -&gt; 디스크이미징도구 -&gt; 이미지파일</td></tr><tr><td>개념</td><td>원본 디스크를 다른 물리적 디스크에 복제</td><td>원본 디스크를 하나의 이미지 파일로 저장</td></tr><tr><td>특징</td><td>빠른 데이터 복제</td><td>단일 파일 형태로 보관 가능</td></tr><tr><td></td><td>동일한 저장 장치 필요</td><td>다양한 포맷 지원 (RAW, E01 등)</td></tr><tr><td></td><td>원본과 동일한 환경 구성</td><td>데이터 무결성 유지</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이미징-활용방안">디스크 이미징 활용방안<a href="https://gracefullight.dev/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디스크 이미징 활용방안에 대한 직접 링크" title="디스크 이미징 활용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>활용방안</th><th>내용</th></tr></thead><tbody><tr><td>보안</td><td>이미지 캡처</td><td>원본 디스크를 보존하고 포렌식 분석을 위한 사본 생성</td></tr><tr><td></td><td>사이버 공격 대응</td><td>랜섬웨어, 악성코드 감염 시스템의 증거 보존 및 복구</td></tr><tr><td></td><td>활성 컴퓨터 시스템 스냅샷</td><td>시스템 메모리, 프로세스 상태를 포함한 포렌식 분석 수행</td></tr><tr><td>연속성 관리</td><td>데이터 백업</td><td>중요 시스템 및 데이터를 무결성 유지 상태로 보관</td></tr><tr><td>배포</td><td>가상 컴퓨터 생성</td><td>원본 시스템을 VM으로 변환하여 운영 환경 유지</td></tr><tr><td></td><td>시스템 배포</td><td>동일한 OS 및 설정을 여러 장치에 신속 배포</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DRM, DLP]]></title>
         <id>https://gracefullight.dev/pe/sec/drm-dlp/</id>
@@ -22,7 +44,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="drm-dlp-개념비교">DRM, DLP 개념비교<a href="https://gracefullight.dev/pe/sec/drm-dlp/#drm-dlp-%EA%B0%9C%EB%85%90%EB%B9%84%EA%B5%90" class="hash-link" aria-label="DRM, DLP 개념비교에 대한 직접 링크" title="DRM, DLP 개념비교에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>DRM</th><th>DLP</th></tr></thead><tbody><tr><td>개념도</td><td>문서 --- 문서유출 --- 열람불가</td><td>문서 --- 다양한 외부 업로드 경로 --- 차단/감지</td></tr><tr><td>개념</td><td>디지털 콘텐츠의 생성과 이용까지 유통 전 과정에 걸쳐 안전한 권한에만 정보를 보이게 통제하는 보안 기술</td><td>기업 내부 민감정보 및 개인정보 등의 데이터 유출을 방지하기 위해 데이터 흐름을 감시하는 보안 기술</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="drm-dlp-상세비교">DRM, DLP 상세비교<a href="https://gracefullight.dev/pe/sec/drm-dlp/#drm-dlp-%EC%83%81%EC%84%B8%EB%B9%84%EA%B5%90" class="hash-link" aria-label="DRM, DLP 상세비교에 대한 직접 링크" title="DRM, DLP 상세비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>DRM</th><th>DLP</th></tr></thead><tbody><tr><td>동작방식</td><td>각 문서단위 권한 제어</td><td>데이터 분류 및 유축 탐지</td></tr><tr><td>암호화</td><td>문서 암호화</td><td>암호화 ㅇ벗음</td></tr><tr><td>적용</td><td>사용자 권한 레벨 정의, 문서 생성자 권한 부여</td><td>데이터 유출 경로, 이메일, 첨부파일 업로드</td></tr><tr><td>목적</td><td>문서 유출시 기밀성 보장</td><td>문서 유출 차단</td></tr><tr><td>예시</td><td>문서 DRM, 멀티미디어 DRM</td><td>네트워크 DLP, 엔드포인트 DLP</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>구분</th><th>DRM</th><th>DLP</th></tr></thead><tbody><tr><td>동작방식</td><td>각 문서단위 권한 제어</td><td>데이터 분류 및 유축 탐지</td></tr><tr><td>암호화</td><td>문서 암호화</td><td>암호화 없음</td></tr><tr><td>적용</td><td>사용자 권한 레벨 정의, 문서 생성자 권한 부여</td><td>데이터 유출 경로, 이메일, 첨부파일 업로드</td></tr><tr><td>목적</td><td>문서 유출시 기밀성 보장</td><td>문서 유출 차단</td></tr><tr><td>예시</td><td>문서 DRM, 멀티미디어 DRM</td><td>네트워크 DLP, 엔드포인트 DLP</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
@@ -226,33 +248,6 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="온디바이스-ai-주요-기술">온디바이스 AI 주요 기술<a href="https://gracefullight.dev/pe/conv/ondevice-ai/#%EC%98%A8%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-ai-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EC%88%A0" class="hash-link" aria-label="온디바이스 AI 주요 기술에 대한 직접 링크" title="온디바이스 AI 주요 기술에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>주요기술</th><th>설명</th></tr></thead><tbody><tr><td>HW 기술</td><td>뉴로모픽</td><td>신경망을 하드웨어적으로 구현하여 초저전력 AI 연산 수행</td></tr><tr><td></td><td>NPU</td><td>AI 연산 최적화 전용 프로세서로 CNN, RNN 등 가속 처리</td></tr><tr><td></td><td>HBM</td><td>고대역폭 메모리로 AI 연산 시 병렬 처리 성능 향상</td></tr><tr><td></td><td>SoC</td><td>CPU, GPU, NPU 통합 설계로 AI 연산 최적화 및 전력 절감</td></tr><tr><td>SW 기술</td><td>엣지컴퓨팅</td><td>데이터가 생성된 기기에서 직접 AI 연산 수행, 실시간 응답 가능</td></tr><tr><td></td><td>경량 AI모델/알고리즘</td><td>모델 경량화, 저전력 최적화 기법으로 모바일·IoT 기기에서도 AI 실행 가능</td></tr><tr><td></td><td>MoE</td><td>전문가 모델(Mixture of Experts)로 AI 연산 효율성 향상</td></tr><tr><td></td><td>BitNet</td><td>저비트(1~2bit) 연산을 활용한 경량 AI 모델, 전력·메모리 사용 절감</td></tr><tr><td>개인정보보호 기술</td><td>차등프라이버시</td><td>데이터에 노이즈를 추가하여 개인정보 보호 강화</td></tr><tr><td></td><td>TPM</td><td>신뢰할 수 있는 환경에서 AI 연산을 수행하는 보안 칩 활용</td></tr><tr><td></td><td>데이터 로컬 처리</td><td>클라우드 전송 없이 기기 내에서 AI 데이터 처리, 보안 및 응답 속도 향상</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 거래소]]></title>
-        <id>https://gracefullight.dev/pe/conv/데이터-거래소/</id>
-        <link href="https://gracefullight.dev/pe/conv/데이터-거래소/"/>
-        <updated>2025-01-28T13:05:57.573Z</updated>
-        <summary type="html"><![CDATA[데이터 거래소]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="데이터 거래소 개념에 대한 직접 링크" title="데이터 거래소 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>데이터 수집, 가공하여 부가가치를 높혀 소비자에게 공급하는 대규모 플랫폼</li>
-<li>데이터 품질보증, AI학습 데이터 마련, 데이터 활용 경제 활성화</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-구성도-활성화-방안">데이터 거래소 구성도, 활성화 방안<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%99%9C%EC%84%B1%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="데이터 거래소 구성도, 활성화 방안에 대한 직접 링크" title="데이터 거래소 구성도, 활성화 방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-구성도">데이터 거래소 구성도<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="데이터 거래소 구성도에 대한 직접 링크" title="데이터 거래소 구성도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="데이터 거래소" src="https://gracefullight.dev/assets/images/%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B1%B0%EB%9E%98%EC%86%8C-5a885ac3f1c874a880ba56a7ea55ec00.jpg" width="2676" height="1044" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-활성화방안">데이터 거래소 활성화방안<a href="https://gracefullight.dev/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%ED%99%9C%EC%84%B1%ED%99%94%EB%B0%A9%EC%95%88" class="hash-link" aria-label="데이터 거래소 활성화방안에 대한 직접 링크" title="데이터 거래소 활성화방안에 대한 직접 링크">​</a></h3>
-<ul>
-<li>데이터 바우처</li>
-<li>빅데이터 캠퍼스</li>
-<li>VM, R, Spark 등 데이터 분석 환경 지원</li>
-</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
