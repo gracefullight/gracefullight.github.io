@@ -5,6 +5,22 @@
     "description": "gracefullight.dev Blog",
     "items": [
         {
+            "id": "https://gracefullight.dev/pe/sec/quantum-key-distribution/",
+            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"양자-키-분배-개념\">양자 키 분배 개념<a href=\"https://gracefullight.dev/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"양자 키 분배 개념에 대한 직접 링크\" title=\"양자 키 분배 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>양자암호통신에서 송신자와 수신자에게 실시간으로 양자 키를 안전하게 분배하는 기술</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"양자-키-분배-구성도-구성요소\">양자 키 분배 구성도, 구성요소<a href=\"https://gracefullight.dev/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"양자 키 분배 구성도, 구성요소에 대한 직접 링크\" title=\"양자 키 분배 구성도, 구성요소에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"양자-키-분배-구성도\">양자 키 분배 구성도<a href=\"https://gracefullight.dev/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"양자 키 분배 구성도에 대한 직접 링크\" title=\"양자 키 분배 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<ul>\n<li>키 분배 장비를 통해 생성된 암호키는 양자채널을 통해 전송, 암호문은 일반 채널로 전송</li>\n</ul>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"양자-키-분배-구성요소\">양자 키 분배 구성요소<a href=\"https://gracefullight.dev/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"양자 키 분배 구성요소에 대한 직접 링크\" title=\"양자 키 분배 구성요소에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>하드웨어</td><td>양자광학계</td><td>단일광자 소스, 편광기, 검출기 등 양자 상태를 생성하고 측정하는 장치</td></tr><tr><td></td><td>양자난수생성기</td><td>예측 불가능한 난수를 생성하여 키 분배에 사용</td></tr><tr><td></td><td>변조기</td><td>광자의 위상, 편광 등을 변조하여 정보를 인코딩</td></tr><tr><td></td><td>전자제어시스템</td><td>양자광학계와 변조기의 동기화 및 제어를 담당</td></tr><tr><td></td><td>양자채널</td><td>비밀키 전송 채널</td></tr><tr><td>소프트웨어</td><td>프로토콜</td><td>BB84, E91 등 양자 키 분배를 위한 통신 규약</td></tr><tr><td></td><td>구현 방식</td><td>단방향, 양방향 등 통신 방식</td></tr></tbody></table>",
+            "url": "https://gracefullight.dev/pe/sec/quantum-key-distribution/",
+            "title": "QKD, 양자 키 분배",
+            "summary": "Quantum Key Distribution",
+            "date_modified": "2025-01-29T06:19:12.297Z",
+            "author": {
+                "name": "Eunkwang Shin",
+                "url": "https://github.com/gracefullight"
+            },
+            "tags": [
+                "professional-engineer",
+                "pe/security"
+            ]
+        },
+        {
             "id": "https://gracefullight.dev/pe/sec/converged-security-monitoring/",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-개념\">융합보안관제 개념<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"융합보안관제 개념에 대한 직접 링크\" title=\"융합보안관제 개념에 대한 직접 링크\">​</a></h2>\n<!-- -->\n<ul>\n<li>컴퓨터/네트워크 상 정보의 위변조, 유출을 막기위한 정보보안과 개인의 신변 안전 및 주요시설 안전 관리를 위한 물리보안을 IT 신기술과 융합ㅇ하여 미리 위협을 탐지하고 해결하기 위한 보안 관제</li>\n<li>사이버 위협 증가 / 운영효율성, 원가절감 / 통합보안 요구, 빅데이터 활용 / 보안 관리 복잡성 증가, 사용자 편리성 제고</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-구성도-구성요소\">융합보안관제 구성도, 구성요소<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"융합보안관제 구성도, 구성요소에 대한 직접 링크\" title=\"융합보안관제 구성도, 구성요소에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-구성도\">융합보안관제 구성도<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"융합보안관제 구성도에 대한 직접 링크\" title=\"융합보안관제 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<ul>\n<li>SIEM을 활용한 통합 보안 이벤트 관제 필요</li>\n</ul>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안-관제-구성요소\">융합보안 관제 구성요소<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88-%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"융합보안 관제 구성요소에 대한 직접 링크\" title=\"융합보안 관제 구성요소에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>세부요소</th><th>설명</th></tr></thead><tbody><tr><td>정보수집</td><td>IoT 센서</td><td>환경 모니터링, 물체 움직임 감지 센서</td></tr><tr><td>물리보안</td><td>출입 통제기</td><td>인가자 이외의 출입 가능 통제</td></tr><tr><td></td><td>영상 감시 시스템</td><td>영상 분석을 통한 인가/비인가자 판별</td></tr><tr><td>정보보안</td><td>접속관리</td><td>인증 및 패킷 분석, 침입차단</td></tr><tr><td></td><td>NW 침입탐지 시스템</td><td>IDS, IPS 등을 통한 네트워크 보안</td></tr><tr><td>융합보안</td><td>통합 보안 이벤트 분석</td><td>물리/정보보안 이벤트를 통합 분석, 패턴 감지</td></tr><tr><td></td><td>빅데이터 저장소</td><td>정보 및 보안 데이터 수집, 저장 및 가공</td></tr><tr><td>보안대응</td><td>침해 대응 장비</td><td>DDoS 대응 장비, 안티바이러스 등</td></tr><tr><td></td><td>침해 관제 분석</td><td>침해 분석 및 탐지 분석 기능</td></tr></tbody></table>",
             "url": "https://gracefullight.dev/pe/sec/converged-security-monitoring/",
@@ -139,22 +155,6 @@
             "title": "CSAP, 클라우드 서비스 보안 인증",
             "summary": "Cloud Security Assurance Program",
             "date_modified": "2025-01-29T03:44:59.586Z",
-            "author": {
-                "name": "Eunkwang Shin",
-                "url": "https://github.com/gracefullight"
-            },
-            "tags": [
-                "professional-engineer",
-                "pe/security"
-            ]
-        },
-        {
-            "id": "https://gracefullight.dev/pe/sec/waf/",
-            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-개념\">WAF 개념<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"WAF 개념에 대한 직접 링크\" title=\"WAF 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>SQL 인젝션, XSS 등 일반적인 웹 취약점으로부터 웹 어플리케이션을 보호하기 위해 트래픽을 탐지/차단하는 방화벽</li>\n<li>L7 계층(HTTP/HTTPS)에서 동작하며, 시그니처 기반, 행동 분석 기반 탐지 기법을 적용하여 웹 공격 방어</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-구성도-주요-기능\">WAF 구성도, 주요 기능<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5\" class=\"hash-link\" aria-label=\"WAF 구성도, 주요 기능에 대한 직접 링크\" title=\"WAF 구성도, 주요 기능에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-구성도\">WAF 구성도<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"WAF 구성도에 대한 직접 링크\" title=\"WAF 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-주요-기능\">WAF 주요 기능<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5\" class=\"hash-link\" aria-label=\"WAF 주요 기능에 대한 직접 링크\" title=\"WAF 주요 기능에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>사용자 요청 검사</td><td>입력 검증(Input Validation)</td><td>사용자 입력값을 필터링하여 SQL 인젝션, XSS 공격 차단</td></tr><tr><td></td><td>요청/응답 필터링</td><td>GET, POST 요청과 응답 패킷을 분석하여 이상 트래픽 탐지</td></tr><tr><td></td><td>세션 관리 보호</td><td>인증 토큰 변조, CSRF 공격 방지</td></tr><tr><td>컨텐츠 보호</td><td>웹사이트 무결성 보호</td><td>웹 쉘(Web Shell) 업로드 차단, 악성 스크립트 방어</td></tr><tr><td></td><td>데이터 유출 방지</td><td>민감 정보(주민등록번호, 카드번호 등) 포함 요청 차단</td></tr><tr><td></td><td>암호화 트래픽 분석</td><td>TLS/SSL 복호화를 통해 암호화된 공격 탐지</td></tr><tr><td>보안</td><td>시그니처 기반 탐지</td><td>OWASP Top 10 기반 탐지 패턴 적용</td></tr><tr><td></td><td>행동 분석 기반 탐지</td><td>이상 징후(비정상 요청 패턴, 속도, 빈도) 감지</td></tr><tr><td></td><td>DDoS 방어</td><td>HTTP Flooding, Slowloris 등 L7 DDoS 공격 차단</td></tr></tbody></table>",
-            "url": "https://gracefullight.dev/pe/sec/waf/",
-            "title": "WAF, 웹 어플리케이션 방화벽",
-            "summary": "Web Application Firewall",
-            "date_modified": "2025-01-29T03:38:57.183Z",
             "author": {
                 "name": "Eunkwang Shin",
                 "url": "https://github.com/gracefullight"
