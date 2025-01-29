@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-29T02:02:11.652Z</updated>
+    <updated>2025-01-29T02:10:00.560Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[캡차]]></title>
+        <id>https://gracefullight.dev/en/pe/sec/captcha/</id>
+        <link href="https://gracefullight.dev/en/pe/sec/captcha/"/>
+        <updated>2025-01-29T02:10:00.560Z</updated>
+        <summary type="html"><![CDATA[Completely Automated Public Turing test to tell Computers and Humans Apart]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념">캡차 개념<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>인간을 구별할 수 있지만 컴퓨터는 구별하기 힘든 의도적인 이미지나 텍스트를 제시하여 봇이 접근하는 것을 방어하는 기술</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념도-유형-보안-강화-방안">캡차 개념도, 유형, 보안 강화 방안<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9C%A0%ED%98%95-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념도">캡차 개념도<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-유형">캡차 유형<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>세부 유형</th><th>설명</th></tr></thead><tbody><tr><td>텍스트 방식</td><td>텍스트를 이미지화</td><td>사용자가 왜곡된 문자/숫자를 해독하여 입력</td></tr><tr><td></td><td>질문 응답</td><td>간단한 수학 문제나 논리 문제를 풀도록 유도</td></tr><tr><td>오디오방식</td><td>입력텍스트를 오디오로 출력</td><td>시각 장애인을 위한 대체 방법으로, 음성으로 캡차 제공</td></tr><tr><td>이미지방식</td><td>이미지 분류</td><td>특정 조건에 맞는 이미지를 선택하도록 요구</td></tr><tr><td></td><td>이미지 퍼즐</td><td>"나는 로봇이 아닙니다" 체크박스, 퍼즐 조각 맞추기</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-보안-강화-방안">캡차 보안 강화 방안<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>방안</th><th>내용</th></tr></thead><tbody><tr><td>난독화 강화</td><td>텍스트 왜곡 및 노이즈 추가</td><td>OCR(광학 문자 인식) 기술을 우회하기 어렵게 함</td></tr><tr><td>멀티모달 적용</td><td>이미지 + 오디오 조합</td><td>시각/청각 장애인을 고려하면서 보안성 강화</td></tr><tr><td>사용자 행동 감지</td><td>마우스 움직임 및 키 입력 분석</td><td>인간 사용자의 행동 패턴을 학습하여 봇 탐지</td></tr><tr><td>AI 대응</td><td>동적 캡차 생성</td><td>캡차 패턴을 인공지능이 학습하지 못하도록 랜덤화</td></tr><tr><td>인증 연계</td><td>MFA(다중 인증) 활용</td><td>로그인 과정에서 추가적인 보안 요소로 활용</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CSRF]]></title>
         <id>https://gracefullight.dev/en/pe/sec/csrf/</id>
@@ -117,7 +141,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/데이터-거래소/"/>
         <updated>2025-01-28T13:05:57.573Z</updated>
         <summary type="html"><![CDATA[데이터 거래소]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EF%BF%BD%EF%BF%BD%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-거래소-개념">데이터 거래소 개념<a href="https://gracefullight.dev/en/pe/conv/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B1%B0%EB%9E%98%EC%86%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>데이터 수집, 가공하여 부가가치를 높혀 소비자에게 공급하는 대규모 플랫폼</li>
 <li>데이터 품질보증, AI학습 데이터 마련, 데이터 활용 경제 활성화</li>
@@ -196,7 +220,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/"/>
         <updated>2025-01-28T12:48:40.836Z</updated>
         <summary type="html"><![CDATA[Open API, SOAP, REST]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-개념">개방형 API 개념<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EF%BF%BD%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개방형-api-개념">개방형 API 개념<a href="https://gracefullight.dev/en/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>누구나 사용할 수 있도록 공개된 API로 웹표준 프로토콜과 버전관리를 통해 호환성, 확장성을 제공</li>
@@ -245,32 +269,6 @@
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="금전적기대값분석" src="https://gracefullight.dev/en/assets/images/%EA%B8%88%EC%A0%84%EC%A0%81%EA%B8%B0%EB%8C%80%EA%B0%92%EB%B6%84%EC%84%9D-07daa68062a61239d65d77b6484d0651.jpg" width="988" height="678" class="img_xC7_"></td></tr><tr><td>개념</td><td>발생가능 시나리오 따른 미래가치를 통계적 계산하여 기대가치가 더 높은 시나리오를 선택하는 기법</td></tr><tr><td>특징</td><td>의사결정나무 기반 발생확률과 영향력을 모두 고려하여 분석</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="몬테카를로-시뮬레이션-분석">몬테카를로 시뮬레이션 분석<a href="https://gracefullight.dev/en/pe/pm/risk-analysis/#%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개념도</td><td><img decoding="async" loading="lazy" alt="몬테카를로시뮬레이션분석" src="https://gracefullight.dev/en/assets/images/%EB%AA%AC%ED%85%8C%EC%B9%B4%EB%A5%BC%EB%A1%9C%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98%EB%B6%84%EC%84%9D-ee0777b3913d5e85a4ebdf19db7a9b3e.jpg" width="926" height="716" class="img_xC7_"></td></tr><tr><td>개념</td><td>해를 구하기 어려운 문제를 확률모형과 난수를 이용하여 해를 얻는 시뮬레이션 방법</td></tr><tr><td>특징</td><td>난수생성 후 패턴을 도출하여 목표함수의 확률변수들의 확률분포를 추정</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/project-management" term="pe/project-management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[지능정보기술감리 실무가이드]]></title>
-        <id>https://gracefullight.dev/en/pe/pm/지능정보기술감리-실무가이드/</id>
-        <link href="https://gracefullight.dev/en/pe/pm/지능정보기술감리-실무가이드/"/>
-        <updated>2025-01-28T11:39:41.322Z</updated>
-        <summary type="html"><![CDATA[지능정보기술감리 실무가이드]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="지능정보기술감리-실무가이드-개념">지능정보기술감리 실무가이드 개념<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>빅데이터를 구축하고 분석하는 정보화 사업에 대한 감리를 수행함에 있어 필요산 사업의 단계별 감리 점검항목을 제시하기 위한 실무지침</li>
-<li>데이터 ㅍ무질, 서비스연계점, 운영안정성 확보, 리스크 최소화, 정보시스템 신뢰성 증대</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="지능정보기술감리-실무가이드-개념도">지능정보기술감리 실무가이드 개념도<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="지능정보기술감리" src="https://gracefullight.dev/en/assets/images/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-309bed4958e2b8b137577fbb3ccfb89c.jpg" width="1880" height="726" class="img_xC7_"></p>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="빅데이터-정보화사업-점검항목">빅데이터 정보화사업 점검항목<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%95%EB%B3%B4%ED%99%94%EC%82%AC%EC%97%85-%EC%A0%90%EA%B2%80%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="분석-및-설계-단계-점검항목">분석 및 설계 단계 점검항목<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EB%B6%84%EC%84%9D-%EB%B0%8F-%EC%84%A4%EA%B3%84-%EB%8B%A8%EA%B3%84-%EC%A0%90%EA%B2%80%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>점검항목</th><th>내용</th></tr></thead><tbody><tr><td>분석</td><td>빅데이터 서비스 요구사항 정의여부</td><td>상버목표 및 추진전략 검토</td></tr><tr><td></td><td>분석목표 달성을 위한 데이터 항목 정의</td><td>상관관계 정의, 품질수준 설정</td></tr><tr><td></td><td>요구사항 정의 과정에서 데이터 품질요소 검토</td><td>데이터 활용 적합성</td></tr><tr><td>설계</td><td>데이터 수집/정제 체계의 적정 설계여부</td><td>데이터 오류처리, 정제 기준</td></tr><tr><td></td><td>데이터 저장체계 및 보유기관 간 연계 설계</td><td>데이터 이관절차, 주기적 수집 확인</td></tr><tr><td></td><td>데이터 표준화 및 관리체계 설계여부</td><td>데이터 속성정의, 표준항목 관리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="구축-및-운영-단계-점검항목">구축 및 운영 단계 점검항목<a href="https://gracefullight.dev/en/pe/pm/%EC%A7%80%EB%8A%A5%EC%A0%95%EB%B3%B4%EA%B8%B0%EC%88%A0%EA%B0%90%EB%A6%AC-%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C/#%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%9A%B4%EC%98%81-%EB%8B%A8%EA%B3%84-%EC%A0%90%EA%B2%80%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>점검항목</th><th>내용</th></tr></thead><tbody><tr><td>구축</td><td>데이터 생애주기 관리체계 확인</td><td>생성-소멸 전 과정 감리</td></tr><tr><td></td><td>데이터가 설계된 대로 수집/변환되는지 점검</td><td>데이터 품질/변환 절차 확인</td></tr><tr><td></td><td>시스템 구성요소 검증</td><td>HW, SW 구성요소 설계 및 복구 계획</td></tr><tr><td>운영</td><td>데이터 품질, 보안, 서비스 운영 관리체게 검토</td><td>데이터 거버넌스 수립 여부</td></tr><tr><td></td><td>로그저장 및 분석 체계 확인</td><td>데이터 활용패턴, 사용자 만족도 분석</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
