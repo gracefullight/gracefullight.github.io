@@ -16,7 +16,7 @@
             <description><![CDATA[Network Segmentation]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-개념">망 분리 개념<a href="https://gracefullight.dev/en/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>외부망을 통한 불법 접근과 내부 정보 유출을 차단하기 위ㅏ해 내부 엄무망과 외부 인터넷망을 분리하는 망 차단 조치</li>
+<li>외부망을 통한 불법 접근과 내부 정보 유출을 차단하기 위해 내부 엄무망과 외부 인터넷망을 분리하는 망 차단 조치</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-구성도-구성요소">망 분리 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-구성도">망 분리 구성도<a href="https://gracefullight.dev/en/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
