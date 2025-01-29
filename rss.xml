@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 12:45:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 13:58:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[eBPF, Extended Berkeley Packet Filter]]></title>
+            <link>https://gracefullight.dev/pe/sec/eBPF/</link>
+            <guid>https://gracefullight.dev/pe/sec/eBPF/</guid>
+            <pubDate>Wed, 29 Jan 2025 13:58:01 GMT</pubDate>
+            <description><![CDATA[Extended Berkeley Packet Filter]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-개념">eBPF 개념<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="eBPF 개념에 대한 직접 링크" title="eBPF 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>전통적인 커널 모듈 대신 동적으로 로드되는 방식으로 작동하여 커널 수준에서 안전한 코드를 실행할 수 있도록 설계된 고성능 기술</li>
+<li>네트워크 모니터링, 보안, 침입탐지, 성능 최적화</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-개념도-핵심요소-활용사례">eBPF 개념도, 핵심요소, 활용사례<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="eBPF 개념도, 핵심요소, 활용사례에 대한 직접 링크" title="eBPF 개념도, 핵심요소, 활용사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-개념도">eBPF 개념도<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="eBPF 개념도에 대한 직접 링크" title="eBPF 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>커널과 사용자 공간 간 컨텍스트 스위칭을 줄여 성능 최적화 및 코드 실행을 동적으로 업데이트할 수 있어 변화하는 요구에 신속히 대응 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-핵심요소">eBPF 핵심요소<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="eBPF 핵심요소에 대한 직접 링크" title="eBPF 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>기능</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>커널 내 코드 실행 환경</td><td>커널 공간에서 사용자 정의 코드 실행</td><td>유연성, 고성능</td></tr><tr><td>검증기(Verifier) 활용</td><td>무한 루프 방지 및 메모리 접근 검증</td><td>안정성 확보</td></tr><tr><td>네트워크 패킷 분석</td><td>트래픽 모니터링 및 패킷 필터링</td><td>DDoS 탐지</td></tr><tr><td>시스템 이벤트 후킹</td><td>시스템 호출, 커널 이벤트 후킹</td><td>침입 탐지(IDS)</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-활용사례">eBPF 활용사례<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="eBPF 활용사례에 대한 직접 링크" title="eBPF 활용사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>활용 사례</th><th>설명</th></tr></thead><tbody><tr><td>네트워크 보안</td><td>DDoS 공격 방지</td><td>악성 트래픽을 실시간 탐지 및 차단</td></tr><tr><td>침입 탐지</td><td>Falco 기반 침입 탐지</td><td>컨테이너 내 이상 행위 탐지</td></tr><tr><td>랜섬웨어 방지</td><td>파일 접근 패턴 모니터링</td><td>랜섬웨어 암호화 탐지 및 차단</td></tr><tr><td>애플리케이션 보안</td><td>특정 애플리케이션 트래픽 필터링</td><td>악성 앱 탐지 및 방어</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="ebpf-도입시-고려사항">eBPF 도입시 고려사항<a href="https://gracefullight.dev/pe/sec/eBPF/#ebpf-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="eBPF 도입시 고려사항에 대한 직접 링크" title="eBPF 도입시 고려사항에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>개발 복잡성</td><td>eBPF 프로그램 작성 및 디버깅이 어렵고 전문 기술 요구</td><td>eBPF 전용 개발 도구 및 문서화 강화</td></tr><tr><td>운영체제 의존성</td><td>최신 Linux 커널에서만 활용 가능, 타 OS 지원 부족</td><td>eBPF를 지원하는 OS 확장 연구 진행</td></tr><tr><td>보안 검증 의존성</td><td>검증기(Verifier)의 성능이 보안성 좌우</td><td>Verifier 강화 및 정적 분석 도구 활용</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[IoB, Internet of Behaviors]]></title>
             <link>https://gracefullight.dev/pe/conv/iob/</link>
@@ -204,29 +230,6 @@
 <ul>
 <li>YOLO는 "어디에 무엇이 있는가?"(객체 감지) 를 해결하는 반면, SAM 2는 "정확한 경계를 찾아라"(객체 분할) 에 집중</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[YOLO, You Only Look Once]]></title>
-            <link>https://gracefullight.dev/pe/algo/yolo/</link>
-            <guid>https://gracefullight.dev/pe/algo/yolo/</guid>
-            <pubDate>Wed, 29 Jan 2025 05:15:05 GMT</pubDate>
-            <description><![CDATA[yolo]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념">YOLO 개념<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="YOLO 개념에 대한 직접 링크" title="YOLO 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>실시간 객채 템지를 위한 CV 알고리즘으로 이미지를 한 번만 보고 객체의 위치와 분류를 동시에 예측하는 기술</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념도-동작-절차-활용사례">YOLO 개념도, 동작 절차, 활용사례<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="YOLO 개념도, 동작 절차, 활용사례에 대한 직접 링크" title="YOLO 개념도, 동작 절차, 활용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념도">YOLO 개념도<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="YOLO 개념도에 대한 직접 링크" title="YOLO 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>빠른 객체 인식 속도로 사용 증가, 현재 V8 버전 모델까지 활용 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-동작-절차">YOLO 동작 절차<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%EB%8F%99%EC%9E%91-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="YOLO 동작 절차에 대한 직접 링크" title="YOLO 동작 절차에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>절차</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>그리드 분할</td><td>이미지를 SxS 크기의 격자로 나눔</td><td>각 셀에서 객체의 존재 여부를 예측</td></tr><tr><td>바운딩박스생성</td><td>각 셀에서 객체가 존재할 가능성이 높은 바운딩 박스를 생성</td><td>중심 좌표(x, y), 너비(w), 높이(h), 신뢰도 포함</td></tr><tr><td>클래스 확률 맵 구성</td><td>각 바운딩 박스에 대해 클래스별 확률 계산</td><td>다중 클래스 분류 수행</td></tr><tr><td>객체 참지</td><td>신경망을 통해 가장 가능성이 높은 바운딩 박스를 선택</td><td>NMS(Non-Maximum Suppression) 기법 활용 중복 제거</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-활용사례">YOLO 활용사례<a href="https://gracefullight.dev/pe/algo/yolo/#yolo-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="YOLO 활용사례에 대한 직접 링크" title="YOLO 활용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>사례</th><th>설명</th></tr></thead><tbody><tr><td>전자상거래</td><td>제품 검색 및 자동 태깅</td><td>온라인 쇼핑몰에서 제품 이미지를 분석하여 카테고리 분류 및 추천 시스템 활용</td></tr><tr><td>신분확인</td><td>생체 인식 및 보안 시스템</td><td>얼굴 인식 기반 출입 통제 시스템, CCTV 영상 분석을 통한 신원 확인</td></tr><tr><td>엔터테인먼트</td><td>게임 및 증강 현실(AR) 기술</td><td>AR 게임 및 가상현실(VR)에서 객체 추적 및 인터랙티브 콘텐츠 생성</td></tr><tr><td>의료</td><td>의료 영상 분석</td><td>X-ray, CT 스캔 이미지에서 질병 탐지 및 의료 진단 지원</td></tr><tr><td>자율주행</td><td>도로 객체 탐지</td><td>차량, 보행자, 신호등 등을 실시간으로 탐지하여 자율주행 시스템에 적용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
         </item>
