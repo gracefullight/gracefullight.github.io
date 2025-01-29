@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-28T22:22:05.061Z</updated>
+    <updated>2025-01-29T01:47:59.622Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[CBPR]]></title>
+        <id>https://gracefullight.dev/pe/sec/cbpr/</id>
+        <link href="https://gracefullight.dev/pe/sec/cbpr/"/>
+        <updated>2025-01-29T01:47:59.622Z</updated>
+        <summary type="html"><![CDATA[Cross Border Privacy Rule]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념">CBPR 개념<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="CBPR 개념에 대한 직접 링크" title="CBPR 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>APEC 프라이버시 보호 원칙을 기반으로 기업의 개인정보 보호체계를 평가하여 인증하는 글로벌 인증제도</li>
+<li>각국 법제도 비대채성, 자발성, 유연성, 개인정보 국경 간 이동 등 활용 중심</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념도-핵심요소-인증기준">CBPR 개념도, 핵심요소, 인증기준<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%9D%B8%EC%A6%9D%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="CBPR 개념도, 핵심요소, 인증기준에 대한 직접 링크" title="CBPR 개념도, 핵심요소, 인증기준에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-개념도">CBPR 개념도<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="CBPR 개념도에 대한 직접 링크" title="CBPR 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>APEC 내 개인정보 처리 기업이라면 CBPR인증 후 개인정보 주체 동의 없이 갱니정보 국외 이전 가능</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-핵심요소">CBPR 핵심요소<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="CBPR 핵심요소에 대한 직접 링크" title="CBPR 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>핵심요소</th><th>설명</th></tr></thead><tbody><tr><td>목적</td><td>전자상거래 활성화</td><td>APEC 내 국가 간 개인정보 흐름을 원활하게 하여 디지털 경제 촉진</td></tr><tr><td></td><td>개인정보보호</td><td>개인정보의 적절한 보호를 보장하면서도 기업의 데이터 활용과 국제 데이터 전송을 지원</td></tr><tr><td>적용범위</td><td>APEC 회원국</td><td>APEC에 가입한 국가들을 대상으로 하며, 회원국 간의 상호인정 협약 기반으로 운영</td></tr><tr><td>대상</td><td>개인정보</td><td>개인을 식별할 수 있는 모든 정보에 적용</td></tr><tr><td></td><td>개인정보처리자</td><td>개인정보를 수집, 저장, 이용 및 공유하는 기업 또는 조직이 적용 대상</td></tr><tr><td></td><td>수탁처리자 제외</td><td>개인정보를 직접 처리하는 기업(Controller)에 초점을 맞춤</td></tr><tr><td></td><td></td><td>단순 데이터 처리만 수행하는 수탁업체(Processors)는 직접적인 적용 대상이 아님</td></tr><tr><td>갱신주기</td><td>1년 단위 갱신</td><td>CBPR 인증을 받은 기업은 매년 개인정보 보호 준수 여부를 평가받아야 하며, 갱신을 통해 지속적인 적합성을 유지</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="cbpr-인증기준">CBPR 인증기준<a href="https://gracefullight.dev/pe/sec/cbpr/#cbpr-%EC%9D%B8%EC%A6%9D%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="CBPR 인증기준에 대한 직접 링크" title="CBPR 인증기준에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>분야</th><th>세부분야</th><th>내용</th></tr></thead><tbody><tr><td>개인정보관리체계수립</td><td>정책 및 절차 수립</td><td>기업 및 조직이 개인정보 보호를 위한 정책과 절차를 문서화하고 준수하도록 요구</td></tr><tr><td></td><td>책임성 확보</td><td>개인정보 보호책임자 지정, 기업의 개인정보 보호 조치 이행 및 지속적 개선 요구</td></tr><tr><td>개인정보 수집</td><td>최소 수집 원칙</td><td>개인정보는 목적에 필요한 최소한의 정보만 수집하도록 제한</td></tr><tr><td></td><td>투명성 확보</td><td>개인정보 수집 시 정보주체에게 수집 목적, 이용 범위 등을 명확히 고지</td></tr><tr><td>개인정보 이동/위탁/제공</td><td>목적 내 이용</td><td>개인정보는 수집된 목적 내에서만 사용해야 하며, 목적 변경 시 추가 동의 필요</td></tr><tr><td></td><td>제3자 제공 제한</td><td>개인정보를 제3자에게 제공할 경우 명확한 동의 절차 및 보호 조치를 마련해야 함</td></tr><tr><td>정보주체 권리</td><td>열람 및 정정</td><td>정보주체는 자신의 개인정보에 대한 열람 및 정정을 요구할 수 있어야 함</td></tr><tr><td></td><td>선택권 및 동의 철회</td><td>정보주체는 자신의 개인정보 이용에 대한 선택권을 가지며, 언제든 동의를 철회할 수 있음</td></tr><tr><td>무결성</td><td>데이터 품질 유지</td><td>개인정보가 정확하고 최신 상태로 유지될 수 있도록 관리</td></tr><tr><td></td><td>보관 및 삭제 정책</td><td>불필요한 개인정보는 보관하지 않고, 일정 기간 후 안전하게 삭제해야 함</td></tr><tr><td>보호대책</td><td>기술적 보호조치</td><td>암호화, 접근제어, 침입탐지 등 개인정보 보호를 위한 기술적 조치 요구</td></tr><tr><td></td><td>물리적 보호조치</td><td>개인정보를 저장하는 서버, 네트워크, 문서 등의 안전한 보호 필요</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NPU]]></title>
         <id>https://gracefullight.dev/pe/conv/npu/</id>
@@ -241,33 +269,6 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>운영 대상 SW 식별, 세부 운영 서비스 항목 정의</td><td>운영 대상 SW 및 서비스 항목</td></tr><tr><td>2 운영 공수 계산</td><td>SW 운영 업무 특성 고려, 필요 직무, 직무별 투입인력, 기간 결정</td><td>IT 직무별 투입공수</td></tr><tr><td>3 직접 인건비 계산</td><td>운영 업무 수행 인력의 직접 인건비 계산</td><td>직접인건비</td></tr><tr><td></td><td>직접 인건비 = 투입인력 기술자 직무공수 * SW기술자 평균임금</td><td></td></tr><tr><td>4 제경비 및 기술료 계산</td><td>운영업무 수행 인력의 제경비와 기술료 계산</td><td>제경비, 기술료</td></tr><tr><td></td><td>제경비 = 작업 인건비 × 144<del>154% / 기술료 = (직접 인건비 + 제경비) × 20</del>40%</td><td></td></tr><tr><td>5 직접 경비 계산</td><td>당해 업무 내 현재 요소로 직접 경비 산정</td><td>직접 경비</td></tr><tr><td>6 SW 운영비 산정</td><td>SW 운영비 산정</td><td>SW운영비</td></tr><tr><td></td><td>직접인건비 + 제경비 + 기술료 + 직접 경비</td><td></td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="고정비-변동비-산정방식">고정비, 변동비 산정방식<a href="https://gracefullight.dev/pe/pm/%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84-%EB%8C%80%EA%B0%80%EC%82%B0%EC%A0%95/#%EA%B3%A0%EC%A0%95%EB%B9%84-%EB%B3%80%EB%8F%99%EB%B9%84-%EC%82%B0%EC%A0%95%EB%B0%A9%EC%8B%9D" class="hash-link" aria-label="고정비, 변동비 산정방식에 대한 직접 링크" title="고정비, 변동비 산정방식에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>산출물</th></tr></thead><tbody><tr><td>1 사전준비</td><td>유지관리 및 운영대상 SW 식별</td><td>유지관리 및 운영대상 SW</td></tr><tr><td></td><td>대상 SW별 유지관리/운영업무 식별</td><td></td></tr><tr><td>2 고정비/변동비 업무 구분</td><td>대상 업무 중 완전유지관리 기능개선 해당업무(변동비) 구분</td><td>고정비/변동비 업무분류표</td></tr><tr><td></td><td>대상 업무 중 비기능 개선업무(고정비) 구분</td><td></td></tr><tr><td>3 고정비/변동비 산정</td><td>SW재개발비 산정방식으로 변동비 산정</td><td>고정비 산정표</td></tr><tr><td></td><td>투입공수 방식 운영비 산정방식 적용 고정비 산정</td><td>변동비 산정표</td></tr><tr><td>4 직접경비계산</td><td>당해업무 실제소요경비 산정</td><td>직접경비</td></tr><tr><td>5 SW유지관리/운영비 산정</td><td>SW유지관리/운영비 산정</td><td>SW 유지관리 및 운영비</td></tr><tr><td></td><td>고정비 + 변동비 + 직접경비</td><td></td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/project-management" term="pe/project-management"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[클라우드 전환사업의 단계별 감리]]></title>
-        <id>https://gracefullight.dev/pe/pm/클라우드-전환사업의-단계별-감리/</id>
-        <link href="https://gracefullight.dev/pe/pm/클라우드-전환사업의-단계별-감리/"/>
-        <updated>2025-01-28T10:35:34.740Z</updated>
-        <summary type="html"><![CDATA[클라우드 전환사업의 단계별 감리]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념">클라우드 전환사업 단계별 감리 개념<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="클라우드 전환사업 단계별 감리 개념에 대한 직접 링크" title="클라우드 전환사업 단계별 감리 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>기관이 구축/운영 중인 정보시스템 어플리케이션의 변경 없이 인프라 자원을 대상으로 클라우드로 전환하는 사업에 대한 감리를 수행하여 적정성을 평가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념도-단계별-감리-방법-클라우드-전환사업-검토항목">클라우드 전환사업 단계별 감리 개념도, 단계별 감리 방법, 클라우드 전환사업 검토항목<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EB%B0%A9%EB%B2%95-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="클라우드 전환사업 단계별 감리 개념도, 단계별 감리 방법, 클라우드 전환사업 검토항목에 대한 직접 링크" title="클라우드 전환사업 단계별 감리 개념도, 단계별 감리 방법, 클라우드 전환사업 검토항목에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-개념도">클라우드 전환사업 단계별 감리 개념도<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="클라우드 전환사업 단계별 감리 개념도에 대한 직접 링크" title="클라우드 전환사업 단계별 감리 개념도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="클라우드 감리" src="https://gracefullight.dev/assets/images/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EA%B0%90%EB%A6%AC-4d35f722acbc1a78128c0a6ad5002e15.jpg" width="2408" height="676" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-단계별-감리-방법">클라우드 전환사업 단계별 감리 방법<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="클라우드 전환사업 단계별 감리 방법에 대한 직접 링크" title="클라우드 전환사업 단계별 감리 방법에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-계획-수립신청">클라우드 전환 사업 계획 수립/신청<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EA%B3%84%ED%9A%8D-%EC%88%98%EB%A6%BD%EC%8B%A0%EC%B2%AD" class="hash-link" aria-label="클라우드 전환 사업 계획 수립/신청에 대한 직접 링크" title="클라우드 전환 사업 계획 수립/신청에 대한 직접 링크">​</a></h4>
-<table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>전환 계획 수립 및 준비</td><td>전환 타당성 검토</td><td>클라우드 기반 전환 가능성에 대한 검토 적절성 확인</td></tr><tr><td></td><td>요구사항 및 영향도 분석</td><td>전환 따른 이해관계자 요구사항, OS 지원 영향도 확인</td></tr><tr><td></td><td>자원 구성, 사용량 확정</td><td>성능 안정성 확보 위한 자원 점검 및 사용권 확인</td></tr><tr><td></td><td>구축 및 테스트 계획 수립</td><td>전환에 따른 업무 중단 최소화, 안정성 유지 방안 구축 및 테스트 계획</td></tr><tr><td>전환 실행</td><td>nTOPS 계정 산정</td><td>nTOPS 통합 계정 및 전환 산정 적절성 확인</td></tr><tr><td></td><td>원격접근, 방화벽 방안 산정</td><td>환경 특성 따른 경로 확인, 방화벽 신청 적절성 검토</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환-사업-실행서비스-안정화">클라우드 전환 사업 실행/서비스 안정화<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98-%EC%82%AC%EC%97%85-%EC%8B%A4%ED%96%89%EC%84%9C%EB%B9%84%EF%BF%BD%EC%8A%A4-%EC%95%88%EC%A0%95%ED%99%94" class="hash-link" aria-label="클라우드 전환 사업 실행/서비스 안정화에 대한 직접 링크" title="클라우드 전환 사업 실행/서비스 안정화에 대한 직접 링크">​</a></h4>
-<table><thead><tr><th>단계</th><th>활동</th><th>세부 내용</th></tr></thead><tbody><tr><td>클라우드 전환</td><td>APP 수정 개발</td><td>IP 변경, 트래픽 분배 등으로 인한 APP 수정 요구 적정성 확인, 테스트 수행</td></tr><tr><td></td><td>APP 원상 복구 설계</td><td>WAS, DB 서버 SW 이관과정의 정상 작동 확인, 연계 SW 영향도 분석</td></tr><tr><td></td><td>클라우드 서비스 이용 환경 구축</td><td>클라우드 리소스를 효율적으로 활용할 수 있는 환경 설정 확인</td></tr><tr><td></td><td>보안 취약점 점검</td><td>HW, APP 등 지원 위험요인 파악, 취약점 분석 및 대응방안 마련</td></tr><tr><td></td><td>데이터 이관</td><td>데이터 이관 계획 수립 및 데이터 무결성 검증 확인</td></tr><tr><td></td><td>통합 테스트 수행</td><td>사용자 환경에서 시나리오 기반 통합 테스트 수행 및 작업 결과 확인</td></tr><tr><td>서비스 안정화</td><td>서비스 전환 및 안정화</td><td>안정적 전환을 위한 APP 및 사용 SW 내 예외 기술 지원 여부, 적정 운영 검토</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-전환사업-검토항목">클라우드 전환사업 검토항목<a href="https://gracefullight.dev/pe/pm/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85%EC%9D%98-%EB%8B%A8%EA%B3%84%EB%B3%84-%EA%B0%90%EB%A6%AC/#%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%A0%84%ED%99%98%EC%82%AC%EC%97%85-%EA%B2%80%ED%86%A0%ED%95%AD%EB%AA%A9" class="hash-link" aria-label="클라우드 전환사업 검토항목에 대한 직접 링크" title="클라우드 전환사업 검토항목에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>부문</th><th>점검항목</th><th>세부 내용</th></tr></thead><tbody><tr><td>전환 적정성 평가</td><td>클라우드 전환 가능성</td><td>정보시스템 특성과 클라우드 환경 간 적합성 검토</td></tr><tr><td></td><td>상용 SW를 공개 SW로 전환 가능 여부</td><td>현재 상용 SW의 오픈소스 전환 가능성 평가</td></tr><tr><td></td><td>업무단위 이관 가능 여부</td><td>업무시스템별 클라우드 전환 가능성 검토</td></tr><tr><td>인프라/시스템 분석</td><td>장비 사용연한 만료 여부</td><td>장비교체주기 고려한 전환 필요성 검토</td></tr><tr><td></td><td>SW 기술지원 만료여부</td><td>SW기술지원 만료상태 확인</td></tr><tr><td></td><td>시스템용랴안정</td><td>CPU, 메모리, 디스크용량 등 시스템자원 산정</td></tr><tr><td></td><td>시스템 구성</td><td>클라우드 전환을 위한 시스템 구성요소 결정</td></tr><tr><td>NW 및 보안 영향성</td><td>고립망, DR 활용 여부</td><td>재해복구(DR) 또는 고립망 구성 필요성 검토</td></tr><tr><td></td><td>인터넷과 행정서비스 간 데이터 연동 필요여부</td><td>내외부간 데이터 동기화 등 데이터 연동 필요성 검토</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
