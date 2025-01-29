@@ -4,17 +4,40 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 05:29:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 05:43:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[융합 보안 관제]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/converged-security-monitoring/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/converged-security-monitoring/</guid>
+            <pubDate>Wed, 29 Jan 2025 05:43:15 GMT</pubDate>
+            <description><![CDATA[Converged Security Monitoring]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="융합보안�관제-개념">융합보안관제 개념<a href="https://gracefullight.dev/en/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>컴퓨터/네트워크 상 정보의 위변조, 유출을 막기위한 정보보안과 개인의 신변 안전 및 주요시설 안전 관리를 위한 물리보안을 IT 신기술과 융합ㅇ하여 미리 위협을 탐지하고 해결하기 위한 보안 관제</li>
+<li>사이버 위협 증가 / 운영효율성, 원가절감 / 통합보안 요구, 빅데이터 활용 / 보안 관리 복잡성 증가, 사용자 편리성 제고</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="융합보안관제-구성도-구성요소">융합보안관제 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="융합보안관제-구성도">융합보안관제 구성도<a href="https://gracefullight.dev/en/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>SIEM을 활용한 통합 보안 이벤트 관제 필요</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="융합보안-관제-구성요소">융합보안 관제 구성요소<a href="https://gracefullight.dev/en/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88-%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>세부요소</th><th>설명</th></tr></thead><tbody><tr><td>정보수집</td><td>IoT 센서</td><td>환경 모니터링, 물체 움직임 감지 센서</td></tr><tr><td>물리보안</td><td>출입 통제기</td><td>인가자 이외의 출입 가능 통제</td></tr><tr><td></td><td>영상 감시 시스템</td><td>영상 분석을 통한 인가/비인가자 판별</td></tr><tr><td>정보보안</td><td>접속관리</td><td>인증 및 패킷 분석, 침입차단</td></tr><tr><td></td><td>NW 침입탐지 시스템</td><td>IDS, IPS 등을 통한 네트워크 보안</td></tr><tr><td>융합보안</td><td>통합 보안 이벤트 분석</td><td>물리/정보보안 이벤트를 통합 분석, 패턴 감지</td></tr><tr><td></td><td>빅데이터 저장소</td><td>정보 및 보안 데이터 수집, 저장 및 가공</td></tr><tr><td>보안대응</td><td>침해 대응 장비</td><td>DDoS 대응 장비, 안티바이러스 등</td></tr><tr><td></td><td>침해 관제 분석</td><td>침해 분석 및 탐지 분석 기능</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[안티드론]]></title>
             <link>https://gracefullight.dev/en/pe/sec/anti-drone/</link>
             <guid>https://gracefullight.dev/en/pe/sec/anti-drone/</guid>
             <pubDate>Wed, 29 Jan 2025 05:29:42 GMT</pubDate>
             <description><![CDATA[Anti Drone]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-개념">안티드론 개념<a href="https://gracefullight.dev/en/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EF%BF%BD%EB%93%9C%EB%A1%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="안티드론-개념">안티드론 개념<a href="https://gracefullight.dev/en/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>무인비행채 접근 탐지기술과 비행을 무력화 시키는 기술을 융합하여 드론 범죄나 테러 등을 예방하는 기술</li>
 <li>사생활 침해 방지, 테러 방지, 보안시설 촬영 방지</li>
@@ -33,7 +56,7 @@
             <guid>https://gracefullight.dev/en/pe/algo/sam/</guid>
             <pubDate>Wed, 29 Jan 2025 05:23:34 GMT</pubDate>
             <description><![CDATA[Segment Anything Model]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-개념">SAM 개념<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sam-��개념">SAM 개념<a href="https://gracefullight.dev/en/pe/algo/sam/#sam-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>사용자 프롬프트(점, 박스, 마스크 등) 에 따라 정확한 객체 분할을 수행하는 딥러닝 기반 실시간 객체 분할 모델</li>
 <li>Transformer 아키텍처와 메모리 메커니즘을 활용하여 이미지 및 비디오에서 객체를 빠르고 정확하게 분할, Zero-shot 세그멘테이션 가능</li>
@@ -59,7 +82,7 @@
             <guid>https://gracefullight.dev/en/pe/algo/yolo/</guid>
             <pubDate>Wed, 29 Jan 2025 05:15:05 GMT</pubDate>
             <description><![CDATA[yolo]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개념">YOLO 개념<a href="https://gracefullight.dev/en/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="yolo-개�념">YOLO 개념<a href="https://gracefullight.dev/en/pe/algo/yolo/#yolo-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>실시간 객채 템지를 위한 CV 알고리즘으로 이미지를 한 번만 보고 객체의 위치와 분류를 동시에 예측하는 기술</li>
 </ul>
@@ -82,7 +105,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/국가정보원-보안성-검토/</guid>
             <pubDate>Wed, 29 Jan 2025 04:25:46 GMT</pubDate>
             <description><![CDATA[국가정보원 보안성 검토]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="국정원-보안성-검토-개념">국정원 보안성 검토 개념<a href="https://gracefullight.dev/en/pe/sec/%EA%B5%AD%EA%B0%80%EC%A0%95%EB%B3%B4%EC%9B%90-%EB%B3%B4%EC%95%88%EC%84%B1-%EA%B2%80%ED%86%A0/#%EA%B5%AD%EC%A0%95%EC%9B%90-%EB%B3%B4%EC%95%88%EC%84%B1-%EA%B2%80%ED%86%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="�국정원-보안성-검토-개념">국정원 보안성 검토 개념<a href="https://gracefullight.dev/en/pe/sec/%EA%B5%AD%EA%B0%80%EC%A0%95%EB%B3%B4%EC%9B%90-%EB%B3%B4%EC%95%88%EC%84%B1-%EA%B2%80%ED%86%A0/#%EA%B5%AD%EC%A0%95%EC%9B%90-%EB%B3%B4%EC%95%88%EC%84%B1-%EA%B2%80%ED%86%A0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>공공기관에서 정보시스템, SW 등을 도입하고 개발하는 사업 진행 시 보안 취약점을 사전에 제거하고 체게적인 보안관리를 하기 위해 국정원을 통해 검토 받는 제도</li>
 <li>법적근거: 국가 정보보안 기본지짐 제 14조</li>
@@ -108,7 +131,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/disk-imaging/</guid>
             <pubDate>Wed, 29 Jan 2025 04:16:17 GMT</pubDate>
             <description><![CDATA[Disk Imaging]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이미징-개념">디스크 이미징 개념<a href="https://gracefullight.dev/en/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디스크-이�미징-개념">디스크 이미징 개념<a href="https://gracefullight.dev/en/pe/sec/disk-imaging/#%EB%94%94%EC%8A%A4%ED%81%AC-%EC%9D%B4%EB%AF%B8%EC%A7%95-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>원본의 훼손을 방지하고, 분석/데이터 포렌식을 위해 저장 매체의 모든 물리적 데이터 사본을 생성하는 기술</li>
 </ul>
@@ -126,7 +149,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/drm-dlp/</guid>
             <pubDate>Wed, 29 Jan 2025 04:04:34 GMT</pubDate>
             <description><![CDATA[Digital Rights Management, Data Loss Prevention]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="문서보안의-개념">문서보안의 개념<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#%EB%AC%B8%EF%BF%BD%EF%BF%BD%EC%84%9C%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="문서보안의-개념">문서보안의 개념<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#%EB%AC%B8%EC%84%9C%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>기업의 문서 보안을 위해 유출탐지를 위한 DLP와 권한/권리제어를 하는 DRM 솔루션 사용</li>
@@ -145,7 +168,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/sandbox/</guid>
             <pubDate>Wed, 29 Jan 2025 03:55:08 GMT</pubDate>
             <description><![CDATA[Sandbox]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-개념">샌드박스 개념<a href="https://gracefullight.dev/en/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EF%BF%BD%EB%B0%95%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-개념">샌드박스 개념<a href="https://gracefullight.dev/en/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>격리된 가상 환경에서 파일을 실행하고 이상 행위를 감시하여 보안 취약점을 확인하여 내부시스템에 악영향을 주는 것을 방지하는 기술</li>
 <li>논리적 분리 영역, 악성코드 예방, 악성코드 수행결과 분석</li>
@@ -155,7 +178,7 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-구성요소">샌드박스 구성요소<a href="https://gracefullight.dev/en/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클래스 로더</td><td>클래스 로드 여부 검사, 파일 실행</td><td>JVM 환경</td></tr><tr><td>바이트 코드 검사기</td><td>클래스가 명확한 바이트 코드 포맷인지 검사</td><td>코드 변조 탐지 가능</td></tr><tr><td>보안관리자</td><td>신뢰없는 클래스가 보호된 자원에 접근하지 않게 차단</td><td>파일 접근, 네트워크 사용 제한</td></tr><tr><td></td><td>외부 시스템과 격리된 가상 환경에서 파일 실행</td><td>가상 실행 환경 제공</td></tr><tr><td></td><td>악성코드 및 의심 파일을 안전 영역(Safe Zone)으로 이동하여 분석</td><td>악성코드 행동 분석</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-활용분야">샌드박스 활용분야<a href="https://gracefullight.dev/en/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-활용분�야">샌드박스 활용분야<a href="https://gracefullight.dev/en/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>활용분야</th><th>내용</th></tr></thead><tbody><tr><td>가상 실행 환경</td><td>애플리케이션 테스트</td><td>샌드박스 내에서 실행하여 시스템에 영향을 주지 않도록 테스트</td></tr><tr><td>SW 보안</td><td>악성코드 분석</td><td>의심 파일을 가상 환경에서 실행하여 악성 여부 판단</td></tr><tr><td></td><td>안전 결제 환경 제공</td><td>온라인 결제 시 악성코드 감염 여부 검사 후 실행</td></tr><tr><td>디바이스 보안</td><td>사용자 단말 보호</td><td>악성코드 탐지 및 랜섬웨어 차단</td></tr><tr><td></td><td>모바일 앱 샌드박스</td><td>앱이 시스템에 미치는 영향을 최소화하고 보안 격리</td></tr><tr><td></td><td>브라우저 샌드박스</td><td>웹사이트 실행 시 악성 코드 감염 방지</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
@@ -198,27 +221,6 @@
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="waf-주요-기능">WAF 주요 기능<a href="https://gracefullight.dev/en/pe/sec/waf/#waf-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>사용자 요청 검사</td><td>입력 검증(Input Validation)</td><td>사용자 입력값을 필터링하여 SQL 인젝션, XSS 공격 차단</td></tr><tr><td></td><td>요청/응답 필터링</td><td>GET, POST 요청과 응답 패킷을 분석하여 이상 트래픽 탐지</td></tr><tr><td></td><td>세션 관리 보호</td><td>인증 토큰 변조, CSRF 공격 방지</td></tr><tr><td>컨텐츠 보호</td><td>웹사이트 무결성 보호</td><td>웹 쉘(Web Shell) 업로드 차단, 악성 스크립트 방어</td></tr><tr><td></td><td>데이터 유출 방지</td><td>민감 정보(주민등록번호, 카드번호 등) 포함 요청 차단</td></tr><tr><td></td><td>암호화 트래픽 분석</td><td>TLS/SSL 복호화를 통해 암호화된 공격 탐지</td></tr><tr><td>보안</td><td>시그니처 기반 탐지</td><td>OWASP Top 10 기반 탐지 패턴 적용</td></tr><tr><td></td><td>행동 분석 기반 탐지</td><td>이상 징후(비정상 요청 패턴, 속도, 빈도) 감지</td></tr><tr><td></td><td>DDoS 방어</td><td>HTTP Flooding, Slowloris 등 L7 DDoS 공격 차단</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[캡차]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/captcha/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/captcha/</guid>
-            <pubDate>Wed, 29 Jan 2025 02:10:00 GMT</pubDate>
-            <description><![CDATA[Completely Automated Public Turing test to tell Computers and Humans Apart]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념">캡차 개념<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>인간을 구별할 수 있지만 컴퓨터는 구별하기 힘든 의도적인 이미지나 텍스트를 제시하여 봇이 접근하는 것을 방어하는 기술</li>
-<li>웹사이트의 로그인, 회원가입, 댓글 작성, 투표 등에서 주로 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념도-유형-보안-강화-방안">캡차 개념도, 유형, 보안 강화 방안<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9C%A0%ED%98%95-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-개념도">캡차 개념도<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-유형">캡차 유형<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EC%9C%A0%ED%98%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>세부 유형</th><th>설명</th></tr></thead><tbody><tr><td>텍스트 방식</td><td>텍스트를 이미지화</td><td>사용자가 왜곡된 문자/숫자를 해독하여 입력</td></tr><tr><td></td><td>질문 응답</td><td>간단한 수학 문제나 논리 문제를 풀도록 유도</td></tr><tr><td>오디오방식</td><td>입력텍스트를 오디오로 출력</td><td>시각 장애인을 위한 대체 방법으로, 음성으로 캡차 제공</td></tr><tr><td>이미지방식</td><td>이미지 분류</td><td>특정 조건에 맞는 이미지를 선택하도록 요구</td></tr><tr><td></td><td>이미지 퍼즐</td><td>"나는 로봇이 아닙니다" 체크박스, 퍼즐 조각 맞추기</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="캡차-보안-강화-방안">캡차 보안 강화 방안<a href="https://gracefullight.dev/en/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>방안</th><th>내용</th></tr></thead><tbody><tr><td>난독화 강화</td><td>텍스트 왜곡 및 노이즈 추가</td><td>OCR(광학 문자 인식) 기술을 우회하기 어렵게 함</td></tr><tr><td>멀티모달 적용</td><td>이미지 + 오디오 조합</td><td>시각/청각 장애인을 고려하면서 보안성 강화</td></tr><tr><td>사용자 행동 감지</td><td>마우스 움직임 및 키 입력 분석</td><td>인간 사용자의 행동 패턴을 학습하여 봇 탐지</td></tr><tr><td>AI 대응</td><td>동적 캡차 생성</td><td>캡차 패턴을 인공지능이 학습하지 못하도록 랜덤화</td></tr><tr><td>인증 연계</td><td>MFA(다중 인증) 활용</td><td>로그인 과정에서 추가적인 보안 요소로 활용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>

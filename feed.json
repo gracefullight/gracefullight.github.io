@@ -5,6 +5,22 @@
     "description": "gracefullight.dev Blog",
     "items": [
         {
+            "id": "https://gracefullight.dev/pe/sec/converged-security-monitoring/",
+            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-개념\">융합보안관제 개념<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"융합보안관제 개념에 대한 직접 링크\" title=\"융합보안관제 개념에 대한 직접 링크\">​</a></h2>\n<!-- -->\n<ul>\n<li>컴퓨터/네트워크 상 정보의 위변조, 유출을 막기위한 정보보안과 개인의 신변 안전 및 주요시설 안전 관리를 위한 물리보안을 IT 신기술과 융합ㅇ하여 미리 위협을 탐지하고 해결하기 위한 보안 관제</li>\n<li>사이버 위협 증가 / 운영효율성, 원가절감 / 통합보안 요구, 빅데이터 활용 / 보안 관리 복잡성 증가, 사용자 편리성 제고</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-구성도-구성요소\">융합보안관제 구성도, 구성요소<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"융합보안관제 구성도, 구성요소에 대한 직접 링크\" title=\"융합보안관제 구성도, 구성요소에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안관제-구성도\">융합보안관제 구성도<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"융합보안관제 구성도에 대한 직접 링크\" title=\"융합보안관제 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<ul>\n<li>SIEM을 활용한 통합 보안 이벤트 관제 필요</li>\n</ul>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"융합보안-관제-구성요소\">융합보안 관제 구성요소<a href=\"https://gracefullight.dev/pe/sec/converged-security-monitoring/#%EC%9C%B5%ED%95%A9%EB%B3%B4%EC%95%88-%EA%B4%80%EC%A0%9C-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"융합보안 관제 구성요소에 대한 직접 링크\" title=\"융합보안 관제 구성요소에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>세부요소</th><th>설명</th></tr></thead><tbody><tr><td>정보수집</td><td>IoT 센서</td><td>환경 모니터링, 물체 움직임 감지 센서</td></tr><tr><td>물리보안</td><td>출입 통제기</td><td>인가자 이외의 출입 가능 통제</td></tr><tr><td></td><td>영상 감시 시스템</td><td>영상 분석을 통한 인가/비인가자 판별</td></tr><tr><td>정보보안</td><td>접속관리</td><td>인증 및 패킷 분석, 침입차단</td></tr><tr><td></td><td>NW 침입탐지 시스템</td><td>IDS, IPS 등을 통한 네트워크 보안</td></tr><tr><td>융합보안</td><td>통합 보안 이벤트 분석</td><td>물리/정보보안 이벤트를 통합 분석, 패턴 감지</td></tr><tr><td></td><td>빅데이터 저장소</td><td>정보 및 보안 데이터 수집, 저장 및 가공</td></tr><tr><td>보안대응</td><td>침해 대응 장비</td><td>DDoS 대응 장비, 안티바이러스 등</td></tr><tr><td></td><td>침해 관제 분석</td><td>침해 분석 및 탐지 분석 기능</td></tr></tbody></table>",
+            "url": "https://gracefullight.dev/pe/sec/converged-security-monitoring/",
+            "title": "융합 보안 관제",
+            "summary": "Converged Security Monitoring",
+            "date_modified": "2025-01-29T05:43:15.485Z",
+            "author": {
+                "name": "Eunkwang Shin",
+                "url": "https://github.com/gracefullight"
+            },
+            "tags": [
+                "professional-engineer",
+                "pe/security"
+            ]
+        },
+        {
             "id": "https://gracefullight.dev/pe/sec/anti-drone/",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"안티드론-개념\">안티드론 개념<a href=\"https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"안티드론 개념에 대한 직접 링크\" title=\"안티드론 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>무인비행채 접근 탐지기술과 비행을 무력화 시키는 기술을 융합하여 드론 범죄나 테러 등을 예방하는 기술</li>\n<li>사생활 침해 방지, 테러 방지, 보안시설 촬영 방지</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"안티드론-구성도-핵심요소\">안티드론 구성도, 핵심요소<a href=\"https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"안티드론 구성도, 핵심요소에 대한 직접 링크\" title=\"안티드론 구성도, 핵심요소에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"안티드론-구성도\">안티드론 구성도<a href=\"https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"안티드론 구성도에 대한 직접 링크\" title=\"안티드론 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"안티드론-핵심요소\">안티드론 핵심요소<a href=\"https://gracefullight.dev/pe/sec/anti-drone/#%EC%95%88%ED%8B%B0%EB%93%9C%EB%A1%A0-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"안티드론 핵심요소에 대한 직접 링크\" title=\"안티드론 핵심요소에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>분류</th><th>기술요소</th><th>설명</th></tr></thead><tbody><tr><td>탐지</td><td>레이더</td><td>X-band / Ku-band 이용 탐지</td></tr><tr><td></td><td>RF 스캐너</td><td>통신 신호 분석</td></tr><tr><td></td><td>광학카메라</td><td>강학신호 탐지 카메라 이용</td></tr><tr><td></td><td>IR 카메라</td><td>IR 센서 탐지 카메라 이용</td></tr><tr><td>식별</td><td>육안식별</td><td>초고 고해상도 부착 식별</td></tr><tr><td></td><td>전자식별</td><td>색채반응의 전자·원격식별</td></tr><tr><td>Hard Kill</td><td>고폭 / 네트</td><td>고폭 / 네트 이용 요격</td></tr><tr><td></td><td>전자에너지 무기</td><td>레이저 / RF 광학전(GM) 공격</td></tr><tr><td>Soft Kill</td><td>통신 재밍</td><td>전파 방해로 비행통신 제어</td></tr><tr><td></td><td>위성항법재밍</td><td>귀환 라디오 유리해 비행방향전환</td></tr><tr><td></td><td>지오 펜싱</td><td>항법 SW GPS에 비행금지구역 정보 전송</td></tr></tbody></table>",
             "url": "https://gracefullight.dev/pe/sec/anti-drone/",
@@ -139,22 +155,6 @@
             "title": "WAF, 웹 어플리케이션 방화벽",
             "summary": "Web Application Firewall",
             "date_modified": "2025-01-29T03:38:57.183Z",
-            "author": {
-                "name": "Eunkwang Shin",
-                "url": "https://github.com/gracefullight"
-            },
-            "tags": [
-                "professional-engineer",
-                "pe/security"
-            ]
-        },
-        {
-            "id": "https://gracefullight.dev/pe/sec/captcha/",
-            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"캡차-개념\">캡차 개념<a href=\"https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"캡차 개념에 대한 직접 링크\" title=\"캡차 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>인간을 구별할 수 있지만 컴퓨터는 구별하기 힘든 의도적인 이미지나 텍스트를 제시하여 봇이 접근하는 것을 방어하는 기술</li>\n<li>웹사이트의 로그인, 회원가입, 댓글 작성, 투표 등에서 주로 사용</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"캡차-개념도-유형-보안-강화-방안\">캡차 개념도, 유형, 보안 강화 방안<a href=\"https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%9C%A0%ED%98%95-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88\" class=\"hash-link\" aria-label=\"캡차 개념도, 유형, 보안 강화 방안에 대한 직접 링크\" title=\"캡차 개념도, 유형, 보안 강화 방안에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"캡차-개념도\">캡차 개념도<a href=\"https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EA%B0%9C%EB%85%90%EB%8F%84\" class=\"hash-link\" aria-label=\"캡차 개념도에 대한 직접 링크\" title=\"캡차 개념도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"캡차-유형\">캡차 유형<a href=\"https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EC%9C%A0%ED%98%95\" class=\"hash-link\" aria-label=\"캡차 유형에 대한 직접 링크\" title=\"캡차 유형에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>세부 유형</th><th>설명</th></tr></thead><tbody><tr><td>텍스트 방식</td><td>텍스트를 이미지화</td><td>사용자가 왜곡된 문자/숫자를 해독하여 입력</td></tr><tr><td></td><td>질문 응답</td><td>간단한 수학 문제나 논리 문제를 풀도록 유도</td></tr><tr><td>오디오방식</td><td>입력텍스트를 오디오로 출력</td><td>시각 장애인을 위한 대체 방법으로, 음성으로 캡차 제공</td></tr><tr><td>이미지방식</td><td>이미지 분류</td><td>특정 조건에 맞는 이미지를 선택하도록 요구</td></tr><tr><td></td><td>이미지 퍼즐</td><td>\"나는 로봇이 아닙니다\" 체크박스, 퍼즐 조각 맞추기</td></tr></tbody></table>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"캡차-보안-강화-방안\">캡차 보안 강화 방안<a href=\"https://gracefullight.dev/pe/sec/captcha/#%EC%BA%A1%EC%B0%A8-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EB%B0%A9%EC%95%88\" class=\"hash-link\" aria-label=\"캡차 보안 강화 방안에 대한 직접 링크\" title=\"캡차 보안 강화 방안에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>방안</th><th>내용</th></tr></thead><tbody><tr><td>난독화 강화</td><td>텍스트 왜곡 및 노이즈 추가</td><td>OCR(광학 문자 인식) 기술을 우회하기 어렵게 함</td></tr><tr><td>멀티모달 적용</td><td>이미지 + 오디오 조합</td><td>시각/청각 장애인을 고려하면서 보안성 강화</td></tr><tr><td>사용자 행동 감지</td><td>마우스 움직임 및 키 입력 분석</td><td>인간 사용자의 행동 패턴을 학습하여 봇 탐지</td></tr><tr><td>AI 대응</td><td>동적 캡차 생성</td><td>캡차 패턴을 인공지능이 학습하지 못하도록 랜덤화</td></tr><tr><td>인증 연계</td><td>MFA(다중 인증) 활용</td><td>로그인 과정에서 추가적인 보안 요소로 활용</td></tr></tbody></table>",
-            "url": "https://gracefullight.dev/pe/sec/captcha/",
-            "title": "캡차",
-            "summary": "Completely Automated Public Turing test to tell Computers and Humans Apart",
-            "date_modified": "2025-01-29T02:10:00.560Z",
             "author": {
                 "name": "Eunkwang Shin",
                 "url": "https://github.com/gracefullight"
