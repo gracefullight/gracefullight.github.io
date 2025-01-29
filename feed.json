@@ -5,6 +5,22 @@
     "description": "gracefullight.dev Blog",
     "items": [
         {
+            "id": "https://gracefullight.dev/pe/sec/csap/",
+            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-개념\">CSAP 개념<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"CSAP 개념에 대한 직접 링크\" title=\"CSAP 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>사용자가 안심하고 ㅡㅋㄹ라우드 서비스를 이용할 수 있도록 클라우드 서비스 제공자의 서비스를 인증기관이 평기/인증하여 지원하는 제도</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-평가인증-구성도-유형-주요항목\">CSAP 평가인증 구성도 유형, 주요항목<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%ED%8F%89%EA%B0%80%EC%9D%B8%EC%A6%9D-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%9C%A0%ED%98%95-%EC%A3%BC%EC%9A%94%ED%95%AD%EB%AA%A9\" class=\"hash-link\" aria-label=\"CSAP 평가인증 구성도 유형, 주요항목에 대한 직접 링크\" title=\"CSAP 평가인증 구성도 유형, 주요항목에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-평가인증-구성도\">CSAP 평가인증 구성도<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%ED%8F%89%EA%B0%80%EC%9D%B8%EC%A6%9D-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"CSAP 평가인증 구성도에 대한 직접 링크\" title=\"CSAP 평가인증 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-평가인증-유형\">CSAP 평가인증 유형<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%ED%8F%89%EA%B0%80%EC%9D%B8%EC%A6%9D-%EC%9C%A0%ED%98%95\" class=\"hash-link\" aria-label=\"CSAP 평가인증 유형에 대한 직접 링크\" title=\"CSAP 평가인증 유형에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>평가대상</td><td>클라우드기반 서비스</td><td>IaaS, SaaS, PaaS, Daas</td></tr><tr><td>평가인증 종류</td><td>평가 시점 및 인증 등급</td><td>평가 최초, 사후, 갱신</td></tr><tr><td></td><td></td><td>표준(IaaS/SaaS/DaaS), 간편(SaaS)</td></tr><tr><td>평가인증 조직</td><td>정책, 평가, 인증, 자문</td><td>정책(과기부), 평가/인증(KISA), 자문(국가보안연구소)</td></tr></tbody></table>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-주요항목\">CSAP 주요항목<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%EC%A3%BC%EC%9A%94%ED%95%AD%EB%AA%A9\" class=\"hash-link\" aria-label=\"CSAP 주요항목에 대한 직접 링크\" title=\"CSAP 주요항목에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>관리적</td><td>정책/조직</td><td>클라우드 서비스 제공자의 보안 정책 수립 및 조직 운영</td></tr><tr><td></td><td>인적보안/교육</td><td>임직원 및 관계자의 보안 교육, 권한 관리, 접근 통제 강화</td></tr><tr><td></td><td>자산 식별 관리</td><td>클라우드 내 IT 자산(서버, 스토리지, 네트워크) 식별 및 보호</td></tr><tr><td></td><td>침해사고 관리</td><td>보안 사고 대응 프로세스 수립, 침해사고 탐지 및 보고 체계 운영</td></tr><tr><td>물리적</td><td>출입통제</td><td>데이터센터 출입 권한 관리 및 접근 통제 절차 마련</td></tr><tr><td></td><td>식별/인증</td><td>데이터센터 및 주요 시스템 접근자에 대한 인증 절차 강화</td></tr><tr><td></td><td>물리적 보호 구역</td><td>보안 구역 설정, 감시 카메라, 출입 기록 관리</td></tr><tr><td></td><td>장비보호</td><td>서버 및 네트워크 장비의 보호 및 물리적 환경(온도, 습도) 관리</td></tr><tr><td>기술적</td><td>가상화 환경 인프라</td><td>가상 머신(VM), 컨테이너 보안 및 하이퍼바이저 보호</td></tr><tr><td></td><td>접근권한 인증</td><td>사용자 및 관리자 접근 권한 제어, MFA(다중 인증) 적용</td></tr><tr><td></td><td>네트워크 보안/암호화</td><td>데이터 암호화, IDS/IPS 적용, 방화벽 운영 및 보안 프로토콜 활용</td></tr></tbody></table>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"csap-개편안\">CSAP 개편안<a href=\"https://gracefullight.dev/pe/sec/csap/#csap-%EA%B0%9C%ED%8E%B8%EC%95%88\" class=\"hash-link\" aria-label=\"CSAP 개편안에 대한 직접 링크\" title=\"CSAP 개편안에 대한 직접 링크\">​</a></h2>\n<table><thead><tr><th>등급</th><th>대상시스템</th><th>비고</th></tr></thead><tbody><tr><td>상</td><td>민감정보, 행정 내부 업무 운영 시스템</td><td>높은 보안 요구사항 적용 (망분리 필수)</td></tr><tr><td>중</td><td>비공개업무자료 포함 또는 운영시스템</td><td>제한적인 인터넷 접근 허용, 강화된 보안통제 적용</td></tr><tr><td>하</td><td>개인정보 미포함, 공개된 공공데이터 운영 시스템</td><td>논리적 망분리 허용</td></tr></tbody></table>",
+            "url": "https://gracefullight.dev/pe/sec/csap/",
+            "title": "CSAP, 클라우드 서비스 보안 인증",
+            "summary": "Cloud Security Assurance Program",
+            "date_modified": "2025-01-29T03:44:59.586Z",
+            "author": {
+                "name": "Eunkwang Shin",
+                "url": "https://github.com/gracefullight"
+            },
+            "tags": [
+                "professional-engineer",
+                "pe/security"
+            ]
+        },
+        {
             "id": "https://gracefullight.dev/pe/sec/waf/",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-개념\">WAF 개념<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"WAF 개념에 대한 직접 링크\" title=\"WAF 개념에 대한 직접 링크\">​</a></h2>\n<ul>\n<li>SQL 인젝션, XSS 등 일반적인 웹 취약점으로부터 웹 어플리케이션을 보호하기 위해 트래픽을 탐지/차단하는 방화벽</li>\n<li>L7 계층(HTTP/HTTPS)에서 동작하며, 시그니처 기반, 행동 분석 기반 탐지 기법을 적용하여 웹 공격 방어</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-구성도-주요-기능\">WAF 구성도, 주요 기능<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B5%AC%EC%84%B1%EB%8F%84-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5\" class=\"hash-link\" aria-label=\"WAF 구성도, 주요 기능에 대한 직접 링크\" title=\"WAF 구성도, 주요 기능에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-구성도\">WAF 구성도<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EA%B5%AC%EC%84%B1%EB%8F%84\" class=\"hash-link\" aria-label=\"WAF 구성도에 대한 직접 링크\" title=\"WAF 구성도에 대한 직접 링크\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"waf-주요-기능\">WAF 주요 기능<a href=\"https://gracefullight.dev/pe/sec/waf/#waf-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5\" class=\"hash-link\" aria-label=\"WAF 주요 기능에 대한 직접 링크\" title=\"WAF 주요 기능에 대한 직접 링크\">​</a></h3>\n<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>사용자 요청 검사</td><td>입력 검증(Input Validation)</td><td>사용자 입력값을 필터링하여 SQL 인젝션, XSS 공격 차단</td></tr><tr><td></td><td>요청/응답 필터링</td><td>GET, POST 요청과 응답 패킷을 분석하여 이상 트래픽 탐지</td></tr><tr><td></td><td>세션 관리 보호</td><td>인증 토큰 변조, CSRF 공격 방지</td></tr><tr><td>컨텐츠 보호</td><td>웹사이트 무결성 보호</td><td>웹 쉘(Web Shell) 업로드 차단, 악성 스크립트 방어</td></tr><tr><td></td><td>데이터 유출 방지</td><td>민감 정보(주민등록번호, 카드번호 등) 포함 요청 차단</td></tr><tr><td></td><td>암호화 트래픽 분석</td><td>TLS/SSL 복호화를 통해 암호화된 공격 탐지</td></tr><tr><td>보안</td><td>시그니처 기반 탐지</td><td>OWASP Top 10 기반 탐지 패턴 적용</td></tr><tr><td></td><td>행동 분석 기반 탐지</td><td>이상 징후(비정상 요청 패턴, 속도, 빈도) 감지</td></tr><tr><td></td><td>DDoS 방어</td><td>HTTP Flooding, Slowloris 등 L7 DDoS 공격 차단</td></tr></tbody></table>",
             "url": "https://gracefullight.dev/pe/sec/waf/",
@@ -139,22 +155,6 @@
             "title": "쿠버네티스",
             "summary": "Kubernetes",
             "date_modified": "2025-01-28T12:53:53.405Z",
-            "author": {
-                "name": "Eunkwang Shin",
-                "url": "https://github.com/gracefullight"
-            },
-            "tags": [
-                "professional-engineer",
-                "pe/it-convergence"
-            ]
-        },
-        {
-            "id": "https://gracefullight.dev/pe/conv/openapi-soap-rest/",
-            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"개방형-api-개념\">개방형 API 개념<a href=\"https://gracefullight.dev/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"개방형 API 개념에 대한 직접 링크\" title=\"개방형 API 개념에 대한 직접 링크\">​</a></h2>\n<!-- -->\n<ul>\n<li>누구나 사용할 수 있도록 공개된 API로 웹표준 프로토콜과 버전관리를 통해 호환성, 확장성을 제공</li>\n<li>개방형 API 호출 방식은 SOAP / REST / GraphQL 로 진화</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"개방형-api-호출-유형\">개방형 API 호출 유형<a href=\"https://gracefullight.dev/pe/conv/openapi-soap-rest/#%EA%B0%9C%EB%B0%A9%ED%98%95-api-%ED%98%B8%EC%B6%9C-%EC%9C%A0%ED%98%95\" class=\"hash-link\" aria-label=\"개방형 API 호출 유형에 대한 직접 링크\" title=\"개방형 API 호출 유형에 대한 직접 링크\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"soap\">SOAP<a href=\"https://gracefullight.dev/pe/conv/openapi-soap-rest/#soap\" class=\"hash-link\" aria-label=\"SOAP에 대한 직접 링크\" title=\"SOAP에 대한 직접 링크\">​</a></h3>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"SOAP\" src=\"https://gracefullight.dev/assets/images/soap-dbddaab5f50c7f42ea430e724e0cead8.jpg\" width=\"2076\" height=\"634\" class=\"img_xC7_\"></p>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"rest\">REST<a href=\"https://gracefullight.dev/pe/conv/openapi-soap-rest/#rest\" class=\"hash-link\" aria-label=\"REST에 대한 직접 링크\" title=\"REST에 대한 직접 링크\">​</a></h3>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"REST\" src=\"https://gracefullight.dev/assets/images/rest-56263a245880f5d78d3a44560d80246f.jpg\" width=\"2054\" height=\"460\" class=\"img_xC7_\"></p>",
-            "url": "https://gracefullight.dev/pe/conv/openapi-soap-rest/",
-            "title": "개방형 API, SOAP, REST",
-            "summary": "Open API, SOAP, REST",
-            "date_modified": "2025-01-28T12:48:40.836Z",
             "author": {
                 "name": "Eunkwang Shin",
                 "url": "https://github.com/gracefullight"
