@@ -2,11 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-29T03:55:08.498Z</updated>
+    <updated>2025-01-29T04:04:34.984Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DRM, DLP]]></title>
+        <id>https://gracefullight.dev/en/pe/sec/drm-dlp/</id>
+        <link href="https://gracefullight.dev/en/pe/sec/drm-dlp/"/>
+        <updated>2025-01-29T04:04:34.984Z</updated>
+        <summary type="html"><![CDATA[Digital Rights Management, Data Loss Prevention]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="문서보안의-개념">문서보안의 개념<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#%EB%AC%B8%EC%84%9C%EB%B3%B4%EC%95%88%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>기업의 문서 보안을 위해 유출탐지를 위한 DLP와 권한/권리제어를 하는 DRM 솔루션 사용</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="drm-dlp-비교">DRM, DLP 비교<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#drm-dlp-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="drm-dlp-개념비교">DRM, DLP 개념비교<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#drm-dlp-%EA%B0%9C%EB%85%90%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>DRM</th><th>DLP</th></tr></thead><tbody><tr><td>개념도</td><td>문서 --- 문서유출 --- 열람불가</td><td>문서 --- 다양한 외부 업로드 경로 --- 차단/감지</td></tr><tr><td>개념</td><td>디지털 콘텐츠의 생성과 이용까지 유통 전 과정에 걸쳐 안전한 권한에만 정보를 보이게 통제하는 보안 기술</td><td>기업 내부 민감정보 및 개인정보 등의 데이터 유출을 방지하기 위해 데이터 흐름을 감시하는 보안 기술</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="drm-dlp-상세비교">DRM, DLP 상세비교<a href="https://gracefullight.dev/en/pe/sec/drm-dlp/#drm-dlp-%EC%83%81%EC%84%B8%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구분</th><th>DRM</th><th>DLP</th></tr></thead><tbody><tr><td>동작방식</td><td>각 문서단위 권한 제어</td><td>데이터 분류 및 유축 탐지</td></tr><tr><td>암호화</td><td>문서 암호화</td><td>암호화 ㅇ벗음</td></tr><tr><td>적용</td><td>사용자 권한 레벨 정의, 문서 생성자 권한 부여</td><td>데이터 유출 경로, 이메일, 첨부파일 업로드</td></tr><tr><td>목적</td><td>문서 유출시 기밀성 보장</td><td>문서 유출 차단</td></tr><tr><td>예시</td><td>문서 DRM, 멀티미디어 DRM</td><td>네트워크 DLP, 엔드포인트 DLP</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/security" term="pe/security"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[샌드박스]]></title>
         <id>https://gracefullight.dev/en/pe/sec/sandbox/</id>
@@ -229,35 +252,6 @@
 <li>데이터 바우처</li>
 <li>빅데이터 캠퍼스</li>
 <li>VM, R, Spark 등 데이터 분석 환경 지원</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[슈퍼앱]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/superapp/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/superapp/"/>
-        <updated>2025-01-28T13:02:14.214Z</updated>
-        <summary type="html"><![CDATA[Superapp]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱">슈퍼앱<a href="https://gracefullight.dev/en/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>하나의 앱 안에서 다양한 서비스를 통합 제공하여 다른 앱을 설치하지 않고 여러 서비스를 이용할 수 있는 앱</li>
-<li>사용편의성, 고객 락인효과, 지속적인 거래경험</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱-멀티앱-비교">슈퍼앱, 멀티앱 비교<a href="https://gracefullight.dev/en/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1-%EB%A9%80%ED%8B%B0%EC%95%B1-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="슈퍼앱-개념">슈퍼앱 개념<a href="https://gracefullight.dev/en/pe/conv/superapp/#%EC%8A%88%ED%8D%BC%EC%95%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>하나의 앱 안에 다양한 미니앱 통합 제공</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="미니앱-개념">미니앱 개념<a href="https://gracefullight.dev/en/pe/conv/superapp/#%EB%AF%B8%EB%8B%88%EC%95%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>서비스별 앱 분리 후 별도 앱으로 제공</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
