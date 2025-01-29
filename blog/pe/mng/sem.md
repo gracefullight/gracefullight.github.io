@@ -51,6 +51,31 @@ graph RL
 
 ### SEM 시스템 적용방안
 
+```mermaid
+graph LR
+  자료수집/분석 --> 핵심가치관리 --> 의사결정수행
+
+  subgraph 자료수집/분석
+    direction LR
+    SWOT
+    PEST
+    3C
+  end
+
+  subgraph 핵심가치관리
+    direction LR
+    BSC
+    IT_BSC[IT BSC]
+  end
+
+  subgraph 의사결정수행
+    direction LR
+    성과피드백
+    보상
+    지속적개선
+  end
+```
+
 | 구분 | 방안 | 비고 |
 | --- | --- | --- |
 | 자료 수집, 분석 | 대상 범위 명확화, 데이터 통합 분석 구현 | SWOT, PEST, 3C 기법 통한 내외부 정보 수집 |
