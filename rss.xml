@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 03:44:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jan 2025 03:55:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[샌드박스]]></title>
+            <link>https://gracefullight.dev/pe/sec/sandbox/</link>
+            <guid>https://gracefullight.dev/pe/sec/sandbox/</guid>
+            <pubDate>Wed, 29 Jan 2025 03:55:08 GMT</pubDate>
+            <description><![CDATA[Sandbox]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-개념">샌드박스 개념<a href="https://gracefullight.dev/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="샌드박스 개념에 대한 직접 링크" title="샌드박스 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>격리된 가상 환경에서 파일을 실행하고 이상 행위를 감시하여 보안 취약점을 확인하여 내부시스템에 악영향을 주는 것을 방지하는 기술</li>
+<li>논리적 분리 영역, 악성코드 예방, 악성코드 수행결과 분석</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-구성도-구성요소">샌드박스 구성도, 구성요소<a href="https://gracefullight.dev/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="샌드박스 구성도, 구성요소에 대한 직접 링크" title="샌드박스 구성도, 구성요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-구성도">샌드박스 구성도<a href="https://gracefullight.dev/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="샌드박스 구성도에 대한 직접 링크" title="샌드박스 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-구성요소">샌드박스 구성요소<a href="https://gracefullight.dev/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="샌드박스 구성요소에 대한 직접 링크" title="샌드박스 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>클래스 로더</td><td>클래스 로드 여부 검사, 파일 실행</td><td>JVM 환경</td></tr><tr><td>바이트 코드 검사기</td><td>클래스가 명확한 바이트 코드 포맷인지 검사</td><td>코드 변조 탐지 가능</td></tr><tr><td>보안관리자</td><td>신뢰없는 클래스가 보호된 자원에 접근하지 않게 차단</td><td>파일 접근, 네트워크 사용 제한</td></tr><tr><td></td><td>외부 시스템과 격리된 가상 환경에서 파일 실행</td><td>가상 실행 환경 제공</td></tr><tr><td></td><td>악성코드 및 의심 파일을 안전 영역(Safe Zone)으로 이동하여 분석</td><td>악성코드 행동 분석</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샌드박스-활용분야">샌드박스 활용분야<a href="https://gracefullight.dev/pe/sec/sandbox/#%EC%83%8C%EB%93%9C%EB%B0%95%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B6%84%EC%95%BC" class="hash-link" aria-label="샌드박스 활용분야에 대한 직접 링크" title="샌드박스 활용분야에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>활용분야</th><th>내용</th></tr></thead><tbody><tr><td>가상 실행 환경</td><td>애플리케이션 테스트</td><td>샌드박스 내에서 실행하여 시스템에 영향을 주지 않도록 테스트</td></tr><tr><td>SW 보안</td><td>악성코드 분석</td><td>의심 파일을 가상 환경에서 실행하여 악성 여부 판단</td></tr><tr><td></td><td>안전 결제 환경 제공</td><td>온라인 결제 시 악성코드 감염 여부 검사 후 실행</td></tr><tr><td>디바이스 보안</td><td>사용자 단말 보호</td><td>악성코드 탐지 및 랜섬웨어 차단</td></tr><tr><td></td><td>모바일 앱 샌드박스</td><td>앱이 시스템에 미치는 영향을 최소화하고 보안 격리</td></tr><tr><td></td><td>브라우저 샌드박스</td><td>웹사이트 실행 시 악성 코드 감염 방지</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[CSAP, 클라우드 서비스 보안 인증]]></title>
             <link>https://gracefullight.dev/pe/sec/csap/</link>
@@ -203,25 +224,6 @@
 <ul>
 <li>서비스별 앱 분리 후 별도 앱으로 제공</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
-        </item>
-        <item>
-            <title><![CDATA[쿠버네티스]]></title>
-            <link>https://gracefullight.dev/pe/conv/kubernetes/</link>
-            <guid>https://gracefullight.dev/pe/conv/kubernetes/</guid>
-            <pubDate>Tue, 28 Jan 2025 12:53:53 GMT</pubDate>
-            <description><![CDATA[Kubernetes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-개념">쿠버네티스 개념<a href="https://gracefullight.dev/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="쿠버네티스 개념에 대한 직접 링크" title="쿠버네티스 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>컨테이너화 된 워크로드와 서비스를 관리하기 위해 이식성과 확장성을 갖춘 오픈소스 오케스트레이션 플랫폼</li>
-<li>서비스 디스커버리, 스토리지 오케스트레이션, 자동화 롤아웃, 롤백</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성도-구성요소">쿠버네티스 구성도, 구성요소<a href="https://gracefullight.dev/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="쿠버네티스 구성도, 구성요소에 대한 직접 링크" title="쿠버네티스 구성도, 구성요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성도">쿠버네티스 구성도<a href="https://gracefullight.dev/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="쿠버네티스 구성도에 대한 직접 링크" title="쿠버네티스 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쿠버네티스-구성요소">쿠버네티스 구성요소<a href="https://gracefullight.dev/pe/conv/kubernetes/#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="쿠버네티스 구성요소에 대한 직접 링크" title="쿠버네티스 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>구성요소</th><th>역할</th></tr></thead><tbody><tr><td>유저</td><td>Kubectl</td><td>클러스터 관리 CLI</td></tr><tr><td></td><td>Dashboard</td><td>클러스터 관리 웹 UI</td></tr><tr><td></td><td>컨테이너 리소스 모니터링</td><td>컨테이너 시계열 로그 모니터링</td></tr><tr><td>컨트롤플레인</td><td>API Server</td><td>명령어 전달, ETCD 통신</td></tr><tr><td></td><td>Scheduler</td><td>Pod, 서비스 등 자원할당</td></tr><tr><td></td><td>Controller Manager</td><td>컨틀로러 생성, 노드 배포</td></tr><tr><td></td><td>ETCD</td><td>클러트더 데이터 KV 저장소</td></tr><tr><td>워커노드</td><td>Pod</td><td>기본 배포단위, 컨테이너 포함</td></tr><tr><td></td><td>컨테이너 런타임</td><td>Pod 통한 배포컨테이너 실행 환경</td></tr><tr><td></td><td>Kubelet</td><td>에이전트, Pod 동작 관리</td></tr><tr><td></td><td>Kubeproxy</td><td>NW프록시, 로드밸런싱</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/it-convergence</category>
         </item>
