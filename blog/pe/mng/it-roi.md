@@ -48,8 +48,9 @@ graph LR
 ### IT 투자분석 방법론
 
 ```mermaid
-graph TB
+graph LR
   subgraph 최적안선정[최적안 선정]
+    direction TB
     subgraph 재무적방식
       CBA
     end
@@ -61,12 +62,14 @@ graph TB
     subgraph 통계산술방식
       ROI
     end
-    
-    재무적방식 --- 다중접근방식 --- 통계산술방식
+
   end
 
   subgraph 다층분석
-    재무적관점 --- 기술적관점 --- 비지니스연계관점
+    direction LR
+    재무적관점
+    기술적관점
+    비지니스연계관점
   end
 
   최적안선정 --> 다층분석
