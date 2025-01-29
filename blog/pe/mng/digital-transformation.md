@@ -27,28 +27,7 @@ graph LR
 
 ### 디지털 트랜스포메이션의 구성도
 
-```mermaid
-block-beta
-
-  columns 5
-  blockArrowId3<["&nbsp;&nbsp;&nbsp;"]>(up):5
-  혁신["신규 비지니스 모델 / 서비스 혁신"]:5
-
-  프로세스:1
-  디자인씽킹:4
-
-  신기술:1
-  block:group1:4
-    AI
-    BigData
-    IoT
-    Robot
-    BlockChain
-  end
-
-  IT플랫폼:1
-  클라우드:4
-```
+![digital transformation](./assets/digital-transformation.jpg)
 
 ### 디지털 트랜스포메이션 구성요소
 
