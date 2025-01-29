@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.36758ae5.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.f856ba08.js" defer="defer"></script>
 <script src="/en/assets/js/main.60c617fc.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -85,6 +85,18 @@
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>학습데이터 추출공격</td><td>모델에 수많은 쿼리를 던져 학습에 사용된 데이터 추출</td><td>학습데이터 내 중요정보 추출</td></tr><tr><td>중독공격</td><td>악의적 학습데이터를 주입하여 ML 모델의 결과값 조작</td><td>MS테이, 이루다</td></tr><tr><td>회피공격</td><td>입력 데이터를 최소한으로 변조, 모델 무결성 파괴</td><td>도로 표지판 오인식</td></tr><tr><td>모델 추출공격</td><td>모델 질의 후 결과값을 분석하여 사용된 모델 추출</td><td>유사 모델 제작</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="적대적-공격의-방어기법">적대적 공격의 방어기법<a href="#적대적-공격의-방어기법" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Defense GAN</td><td>생성적 적대 신경망을 활용한 공격 방어</td><td>회피 공격 방어</td></tr><tr><td>적대적 훈련</td><td>가능한 많은 적대적 사례를 학습데이터에 포함해 훈련</td><td>중독, 회피공격 방어</td></tr><tr><td>결과값 분석 차단</td><td>학습 모델의 결과값을 분석할 수 없게 합성데이터 활용</td><td>추출공격 방어</td></tr><tr><td>쿼리 횟수 제한</td><td>반복 질의시 제한하여 정보 유출 방지</td><td>추출공격 방어</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="적대적-훈련">적대적 훈련<a href="#적대적-훈련" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<!-- -->
+<ul>
+<li>중독, 회피 공격 방어</li>
+<li>적대적 예제에 대한 견고성 및 원본 정확도 간 트레이드오프 고려</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="defense-gan">Defense GAN<a href="#defense-gan" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<!-- -->
+<ul>
+<li>기존 모델의 분류기 수정 없이 방어 가능</li>
+<li>화이트박스, 블랙박스 적대적 공격의 효과적 방어 가능</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="생성형-언어모델-보안-취약점과-대응방안">생성형 언어모델 보안 취약점과 대응방안<a href="#생성형-언어모델-보안-취약점과-대응방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>취약점</th><th>대응방안</th></tr></thead><tbody><tr><td>개인정보, 민감정보 유출</td><td>무분별한 데이터 입력</td><td>개인정보 등 답변 차단</td></tr><tr><td>-</td><td>개인, 민감 정보 추출</td><td>자동탐지, 익명화</td></tr><tr><td>악성코드 생성</td><td>악성코드 생성 자동화</td><td>API 포함 코드 검수 단계 추가</td></tr><tr><td>-</td><td>취약점 생성 자동화</td><td>반환 코드 분석, 실행 차단</td></tr><tr><td>AI 모델 취약점</td><td>생성형 모델에 대한 적대적 공격</td><td>xAI 구현, Defense-GAN 구현</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 보안 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/sec/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/sec/drone-threats/">드론 보안위협</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-07-10T09:55:09.710Z">July 10, 2024</time> · <!-- -->2 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="드론-보안위협-개념">드론 보안위협 개념<a href="#드론-보안위협-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
@@ -104,7 +116,7 @@
 <li>드론의 SW와 펌웨어를 정기적으로 업데이트하여 최신 보안 위협 대비 필요</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 보안 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/sec/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/sec/cloud-security/">클라우드 보안 고려요소</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-07-10T09:54:42.447Z">July 10, 2024</time> · <!-- -->3 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-보안-개념">클라우드 보안 개념<a href="#클라우드-보안-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>클라우드 컴퓨팅 환경에서 데이터를 보호하고, 어플리케이션 및 인프라의 보안을 유지하기 위한 관리적, 물리적, 기술적 보  안</li>
+<li>클라우드 컴퓨팅 환경에서 데이터를 보호하고, 어플리케이션 및 인프라의 보안을 유지하기 위한 관리적, 물리적, 기술적 보안</li>
 <li>2025년까지 모든 행정 공공, 정보시스템 클라우드 전환 시 데이터 보호와 서비스 신뢰성 확보를 위해 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="클라우드-보안-개념도-주요-위협-대응-방안">클라우드 보안 개념도, 주요 위협, 대응 방안<a href="#클라우드-보안-개념도-주요-위협-대응-방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -128,13 +140,13 @@
 <li>디지털 기술 및 서비스 이용과정에서 발생하는 예상치 못한 부정적인 결과</li>
 <li>빠른 기술 발전 속도, 정보 격차, 디지털도구와의 의존성으로 인해 발생</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-역기능-개념도-주요-유형-해결방안">디지털 역기능 개념도, 주요 유형, 해결방안<a href="#디지털-역기능-개념도-주요-유형-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-  역기능-개념도-주요-유형-해결방안">디지털 역기능 개념도, 주요 유형, 해결방안<a href="#디지털-역기능-개념도-주요-유형-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-역기능-개념도">디지털 역기능 개념도<a href="#디지털-역기능-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
 <li>디지털 기술의 급격한 발전에 따라 역기능 다양화</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-역기능-주요-유형">디지털 역기능 주  요 유형<a href="#디지털-역기능-주요-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-역기능-주요-유형">디지털 역기능 주요 유형<a href="#디지털-역기능-주요-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작 정보</td><td>거짓 정보를 퍼뜨려서 사람들을 의도적으로 혼란스럽게하거나 조종하려는 행위</td><td>가짜뉴스 전파, 조작된 정보 유통 등</td></tr><tr><td>디지털 혐오표현</td><td>특정 속성을 가진 집단이 디지털 수단을 통해 차별, 폭력 등의 표현을 받는 행위</td><td>악플러, 사이버 렉카 등</td></tr><tr><td>디지털 성범죄</td><td>디지털 기기로 상대방의 동의없이 신체 일부 등을 촬영, 유포, 전시하는 행위</td><td>텔레그램, n번방 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-역기능-해결방안">디지털 역기능 해결방안<a href="#디지털-역기능-해결방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>디지털 허위조작정보, 성범죄</td><td>방지, 추적 기술</td><td>사전 업로드 방지, 사후 추적</td></tr><tr><td>-</td><td>알고리즘 편향 식별</td><td>알고리즘 신뢰성 확보</td></tr><tr><td>디지털 혐오표현, 과의존</td><td>가상 체험 서비스</td><td>역기능 체험, 사전 예방</td></tr><tr><td>-</td><td>전문 치료 서비스</td><td>역기능별 사후 치료, 관리</td></tr><tr><td>디지털 격차</td><td>개인 맞춤형 가상비서</td><td>개인 특성, 경험 기반</td></tr><tr><td>-</td><td>시뮬레이션 기반 컨설팅</td><td>디지털 트윈 활용 격차 해소</td></tr></tbody></table>
@@ -143,7 +155,7 @@
 <li>디지털 역기능 예방을 위해 디지털 리서터릿 교육 강화, 정보판별력 역량 강화</li>
 </ul></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 보안 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/sec/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/sec/digital-forensics/">디지털 포렌식</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-07-10T09:11:58.674Z">July 10, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-포렌식의-개념">디지털 포렌식의 개념<a href="#디지털-포렌식의-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>디지털 기기에서 정보를 식별, 수집, 분석, 보존하고, 법정에 증거로 제출하여 언제든지 검증가능한 형태로 자료를  준비하는 절차</li>
+<li>디지털 기기에서 정보를 식별, 수집, 분석, 보존하고, 법정에 증거로 제출하여 언제든지 검증가능한 형태로 자료를 준비하는 절차</li>
 <li>범죄의 지능화, 고도화로 인해 보안사고 및 법적 분쟁해결을 위한 증거로써 필요</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-포렌식의-5원칙-주요-유형-절차">디지털 포렌식의 5원칙, 주요 유형, 절차<a href="#디지털-포렌식의-5원칙-주요-유형-절차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -151,7 +163,7 @@
 <blockquote>
 <p>정재신연무</p>
 </blockquote>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정당성</td><td>적법한 절차에 따라 증거 수집</td><td>영장 발부 등</td></tr><tr><td>재현성</td><td>동일 환경에서 동일하게 재현</td><td>같은 조건, 결과</td></tr><tr><td>신속성</td><td>전 과정이 신속하게 처리</td><td>데이터 휘발성</td></tr><tr><td>연계성</td><td>전 단계에서 증거의 명확한 관리</td><td>문서화, 책임</td></tr><tr><td>무결성</td><td>증거의 위변조 없음을 증명</td><td>해시 비교 등</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>정당성</td><td>적법한 절차에 따라 증거 수집</td><td>영장 발부 등</td></tr><tr><td>재현성</td><td>동일 환경에서 동일하게 재현</td><td>같은 조건, 결과</td></tr><tr><td>신속성</td><td>전 과정이 신속하게 처리</td><td>데이터 휘발성</td></tr><tr><td>연계성</td><td>전 단계에서 증거의 명확한 관리</td><td>문서화, 책임</td></tr><tr><td>무결성</td><td>증거의 위변조 없음을 증  명</td><td>해시 비교 등</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-포렌식의-주요-유형">디지털 포렌식의 주요 유형<a href="#디지털-포렌식의-주요-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>유형</th><th>내용</th></tr></thead><tbody><tr><td>저장 데이터 포렌식</td><td>미디어 포렌식</td><td>이미지, 영상 등 미디어 파일 추출</td></tr><tr><td></td><td>디스크 포렌식</td><td>삭제 파일, 포맷 영역 복구</td></tr><tr><td></td><td>DB 포렌식</td><td>DB, 메타데이터 로그 수집</td></tr><tr><td>휘발성 데이터 포렌식</td><td>메모리 포렌식</td><td>메모리, CPU캐시, 버퍼</td></tr><tr><td></td><td>SNS 포렌식</td><td>SNS 활동, 메세지, 교류 패턴</td></tr><tr><td></td><td>N/W 포렌식</td><td>트래픽, 악성코드, 해킹 분석</td></tr></tbody></table>
 <ul>
@@ -162,7 +174,7 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-포렌식-기술">디지털 포렌식 기술<a href="#디지털-포렌식-기술" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>구분</th><th>주요 기술</th><th>내용</th></tr></thead><tbody><tr><td>데이터 수집 기술</td><td>디스크 이미징</td><td>저장 매체 사본생성, 원본 보존</td></tr><tr><td></td><td>활성시스템 조사</td><td>N/W 역추적, 웹캐시, 프록시 수집</td></tr><tr><td></td><td>프로파일링</td><td>SW역공학, 메모리, MBR 분석</td></tr><tr><td>데이터 분석 기술</td><td>타임라인 분석</td><td>시계열 분석, 생성, 사용시간 분석</td></tr><tr><td></td><td>디스크 브라우징</td><td>디스크 이미지 구조와 파일시스템 확인</td></tr><tr><td></td><td>데이터 카빙</td><td>디스크 비할당 영역에서 파일 복구</td></tr><tr><td></td><td>데이터 뷰잉</td><td>데이터 구조 파악, 시각화</td></tr></tbody></table></div><footer class="row docusaurus-mt-lg"><div class="col"><b>Tags:</b><ul class="tags_Z5io padding--none margin-left--sm"><li class="tag_myfv"><a title="기술사 관련 포스트" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/">professional-engineer</a></li><li class="tag_myfv"><a title="기술사 보안 토픽" class="tag_dowt tagRegular_Tck5" href="/en/tags/pe/sec/">pe/security</a></li></ul></div></footer></article><article class="margin-bottom--xl"><header><h2 class="title_Y3xm"><a href="/en/pe/sec/isms-ismsp/">ISMS, ISMS-P</a></h2><div class="container_ftG7 margin-vert--md"><time datetime="2024-07-10T09:02:25.752Z">July 10, 2024</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_CAzg"><div class="avatar margin-bottom--sm"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_JE44" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Gracefullight"></a><div class="avatar__intro authorDetails_NaG3"><div class="avatar__name"><a href="https://github.com/gracefullight" target="_blank" rel="noopener noreferrer"><span class="authorName_eRp_">Gracefullight</span></a></div><small class="authorTitle_GUl9" title="Owner">Owner</small><div class="authorSocials_Zl4u"></div></div></div></div></div></header><div class="markdown"><h2 class="anchor anchorWithStickyNavbar_OSIK" id="isms-isms-p-개념">ISMS, ISMS-P 개념<a href="#isms-isms-p-개념" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>정보통신망법, 개인정보보호법을 근거로 기업 및 기관의 정보보호 및 개인정보보호를 위한 일련의 조치와 활동을 KISA가 증명하는 제도</li>
+<li>정보통신망법,  개인정보보호법을 근거로 기업 및 기관의 정보보호 및 개인정보보호를 위한 일련의 조치와 활동을 KISA가 증명하는 제도</li>
 <li>체계적인 관리체계 적용으로 정보보호 및 개인정보관리 수준 향상, 각종 보안 사고시 신속한 대응 가능</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="isms-isms-p-개념도-구성요소-적용대상">ISMS, ISMS-P 개념도, 구성요소, 적용대상<a href="#isms-isms-p-개념도-구성요소-적용대상" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -194,7 +206,7 @@
 <li>개인정보의 분식, 유출, 위변조를 방지하고 안전성을 확보하기 위해 개인정보 처리자가 준수해야할 안전 조치 기준</li>
 <li>개인정보 보호법 29조, 30조 준수</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개인정보-안전성-확보조치-기준-구성-개정내용-적용방안">개인정보 안전성 확보조치 기준 구성, 개정내용, 적용방안<a href="#개인정보-안전성-확보조치-기준-구성-개정내용-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="개인정보-안전성-확보조치-  기준-구성-개정내용-적용방안">개인정보 안전성 확보조치 기준 구성, 개정내용, 적용방안<a href="#개인정보-안전성-확보조치-기준-구성-개정내용-적용방안" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="개인정보-안전성-확보조치-기준-구성">개인정보 안전성 확보조치 기준 구성<a href="#개인정보-안전성-확보조치-기준-구성" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>관리적 지침</td><td>개인정보보호책임자</td><td>개인정보 관련 업무 전반 수행</td></tr><tr><td>-</td><td>개인정보 보호조직 구성</td><td>기관 환경 고려 자체 구성</td></tr><tr><td>-</td><td>접근 권한 관리</td><td>업무별 최소권한 부여</td></tr><tr><td>-</td><td>개인정보 취급자 교육</td><td>정기적 교육 실시</td></tr><tr><td>-</td><td>개인정보 유출사고 대응</td><td>유출사고시 대응 절차 마련</td></tr><tr><td>-</td><td>위험도 분석 및 대응</td><td>유출 위험원 식별, 평가 분석</td></tr><tr><td>기술적 지침</td><td>접근 통제</td><td>침입탐지, 차단</td></tr><tr><td>-</td><td>암호 조치</td><td>정보 자체 및 통신구간 암호화</td></tr><tr><td>-</td><td>접근기록 보관, 점검</td><td>개인정보 접근시 사유확인 기준</td></tr><tr><td>-</td><td>악성프로그램 방지</td><td>백신 SW프로그램 설치</td></tr><tr><td>물리적 지침</td><td>물리적 안전조치</td><td>전살실 출입통제 절차 수립</td></tr><tr><td>-</td><td>재해 ,재난 대비</td><td>백업 빛 복구 계획 수립</td></tr></tbody></table>
 <ul>
