@@ -16,7 +16,7 @@ import { parse as parseYaml } from "yaml";
 import pLimit from "p-limit";
 
 // 병렬 작업 제한 설정
-const limit = pLimit(10);
+const limit = pLimit(15);
 
 // dist 폴더 및 하위 폴더 경로
 const DIST_DIR = resolve(__dirname, "..", "dist");
@@ -114,24 +114,75 @@ export class PdfCommand extends Command {
         // 모든 HTML 페이지를 하나로 합치기
         const combinedHtml = `
           <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Markdown to PDF</title>
-            <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-              img { max-width: 100%; height: auto; }
-              pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; }
-              table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-              th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-              th { background-color: #f4f4f4; }
-              .markdown-page { page-break-after: always; }
-              .markdown-page:last-child { page-break-after: auto; }
-            </style>
-          </head>
-          <body>${htmlPages.join("")}</body>
-          </html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Markdown to PDF</title>
+              <style>
+                /* 글꼴 크기 및 스타일 조정 */
+                body {
+                  font-family: Arial, sans-serif;
+                  font-size: 14px; /* 기본 글꼴 크기 줄임 */
+                  line-height: 1.5;
+                  padding: 20px;
+                }
+                h1, h2, h3, h4, h5, h6 {
+                  margin-top: 0.5em;
+                  margin-bottom: 0.5em;
+                  font-weight: bold;
+                }
+                h1 { font-size: 1.6em; } /* 제목 크기 조정 */
+                h2 { font-size: 1.4em; }
+                h3 { font-size: 1.2em; }
+                h4 { font-size: 1.1em; }
+                h5 { font-size: 1em; }
+                h6 { font-size: 1em; }
+                img {
+                  max-width: 100%;
+                  height: auto;
+                }
+                pre {
+                  background-color: #f4f4f4;
+                  padding: 10px;
+                  border-radius: 5px;
+                  font-size: 12px; /* 코드 블록 글꼴 크기 줄임 */
+                  overflow-x: auto;
+                }
+                code {
+                  font-size: 12px; /* 인라인 코드 글꼴 크기 줄임 */
+                }
+                table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  margin: 20px 0;
+                  font-size: 1em;
+                }
+                th, td {
+                  border: 1px solid #ddd;
+                  padding: 6px; /* 셀 패딩 줄임 */
+                  text-align: left;
+                }
+                th {
+                  background-color: #f4f4f4;
+                }
+                .markdown-page {
+                  page-break-after: always;
+                }
+                .markdown-page:last-child {
+                  page-break-after: auto;
+                }
+                /* 머메이드 차트 크기 조정 */
+                .mermaid-chart {
+                  transform: scale(0.9); /* 크기를 90%로 축소 */
+                  transform-origin: top left; /* 왼쪽 상단을 기준으로 축소 */
+                  width: 90%; /* 너비도 90%로 설정 */
+                  height: auto; /* 비율 유지 */
+                }
+              </style>
+            </head>
+            <body>${htmlPages.join("")}</body>
+            </html>
         `;
 
         // PDF 파일 경로 설정
@@ -219,7 +270,10 @@ export class PdfCommand extends Command {
     let finalHtml = processedHtml;
     for (const [placeholder, code] of placeholderMap.entries()) {
       const svg = await renderMermaidToSvg(code);
-      finalHtml = finalHtml.replace(placeholder, svg);
+      finalHtml = finalHtml.replace(
+        placeholder,
+        `<div class="mermaid-chart">${svg}</div>`,
+      );
     }
 
     // 각 Markdown 파일의 내용을 새 페이지로 분리
