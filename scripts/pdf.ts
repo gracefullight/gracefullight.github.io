@@ -172,8 +172,7 @@ export class PdfCommand extends Command {
                 .markdown-page:last-child {
                   page-break-after: auto;
                 }
-                /* 머메이드 차트 크기 조정 */
-                .mermaid-chart {
+                .centered-content {
                   display: block; /* 블록 레벨 요소로 설정 */
                   margin: 0 auto; /* 가운데 정렬 */
                   width: 90%; /* 너비를 90%로 축소 */
@@ -272,7 +271,7 @@ export class PdfCommand extends Command {
       const svg = await renderMermaidToSvg(code);
       finalHtml = finalHtml.replace(
         placeholder,
-        `<div class="mermaid-chart">${svg}</div>`,
+        `<div class="centered-content">${svg}</div>`,
       );
     }
 
@@ -306,9 +305,12 @@ export class PdfCommand extends Command {
     // HTML 내부의 이미지 태그를 Base64로 치환
     let processedHtml = html;
     for (const [original, replacement] of replacements) {
-      processedHtml = processedHtml.replace(original, replacement);
+      // 이미지 태그에 클래스 추가
+      processedHtml = processedHtml.replace(
+        original,
+        `class="centered-content" ${replacement}`,
+      );
     }
-
     return processedHtml;
   }
 
