@@ -174,9 +174,9 @@ export class PdfCommand extends Command {
                 }
                 /* 머메이드 차트 크기 조정 */
                 .mermaid-chart {
-                  transform: scale(0.9); /* 크기를 90%로 축소 */
-                  transform-origin: top left; /* 왼쪽 상단을 기준으로 축소 */
-                  width: 90%; /* 너비도 90%로 설정 */
+                  display: block; /* 블록 레벨 요소로 설정 */
+                  margin: 0 auto; /* 가운데 정렬 */
+                  width: 90%; /* 너비를 90%로 축소 */
                   height: auto; /* 비율 유지 */
                 }
               </style>
