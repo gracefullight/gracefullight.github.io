@@ -331,6 +331,7 @@ export class PdfCommand extends Command {
     await page.pdf({
       path: outputPath,
       format: "A4",
+      footerTemplate: "pageNumber",
       printBackground: true,
       margin: {
         top: "5mm", // 상단 여백
