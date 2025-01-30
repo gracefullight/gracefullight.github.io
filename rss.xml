@@ -4,10 +4,19 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 30 Jan 2025 03:06:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jan 2025 12:55:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[다익스트라 알고리즘]]></title>
+            <link>https://gracefullight.dev/pe/algo/dijkstra-algorithm/</link>
+            <guid>https://gracefullight.dev/pe/algo/dijkstra-algorithm/</guid>
+            <pubDate>Thu, 30 Jan 2025 12:55:13 GMT</pubDate>
+            <description><![CDATA[Dijkstra Algorithm]]></description>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[XAI, 설명가능한 AI]]></title>
             <link>https://gracefullight.dev/pe/algo/xai/</link>
@@ -228,27 +237,6 @@
 <table><thead><tr><th>구분</th><th>설명</th><th>활용 사례</th></tr></thead><tbody><tr><td>이상 탐지 및 사전 경고</td><td>AI 기반 성능 및 보안 모니터링</td><td>AWS GuardDuty를 활용한 비정상 네트워크 패턴 탐지</td></tr><tr><td>IT 서비스 관리(ITSM) 최적화</td><td>AI 기반 티켓 자동 분류</td><td>ServiceNow AIOps를 활용한 장애 대응 프로세스 최적화</td></tr><tr><td>애플리케이션 성능 관리(APM)</td><td>AI 기반 성능 최적화</td><td>Dynatrace를 활용한 실시간 애플리케이션 트랜잭션 분석</td></tr><tr><td>하이브리드 클라우드 관리</td><td>클라우드 및 온프레미스 자원 관리</td><td>IBM Watson AIOps를 통한 IT 인프라 운영 최적화</td></tr><tr><td>보안 운영 자동화</td><td>AI 기반 보안 이벤트 분석</td><td>Splunk AIOps를 활용한 실시간 보안 로그 모니터링</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/software-engineering</category>
-        </item>
-        <item>
-            <title><![CDATA[연합학습 데이터 보안 강화 기법]]></title>
-            <link>https://gracefullight.dev/pe/sec/federated-learning-data-security/</link>
-            <guid>https://gracefullight.dev/pe/sec/federated-learning-data-security/</guid>
-            <pubDate>Wed, 29 Jan 2025 08:55:37 GMT</pubDate>
-            <description><![CDATA[Federated Learning Data Security]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="연합학습-개념">연합학습 개념<a href="https://gracefullight.dev/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="연합학습 개념에 대한 직접 링크" title="연합학습 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>분산된 개별 장치에서 로컬 학습을 수행한 후 모델 업데이트만 공유하여 글로벌 모델을 생성하는 기법</li>
-<li>데이터 송수신 및 모델 업데이트 공유 과정에서 보안 위협 발생 존재, 이를 보완하기 위한 보안 강화 기법 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="연합학습-데이터-보안-위협-및-강화-기법">연합학습 데이터 보안 위협 및 강화 기법<a href="https://gracefullight.dev/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EB%B0%8F-%EA%B0%95%ED%99%94-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="연합학습 데이터 보안 위협 및 강화 기법에 대한 직접 링크" title="연합학습 데이터 보안 위협 및 강화 기법에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="연합학습-데이터-보안-위협-개념도">연합학습 데이터 보안 위협 개념도<a href="https://gracefullight.dev/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="연합학습 데이터 보안 위협 개념도에 대한 직접 링크" title="연합학습 데이터 보안 위협 개념도에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="federated learning security" src="https://gracefullight.dev/assets/images/federated-learning-security-89f99771a98fe28092811cd7a2407e6a.jpg" width="1640" height="734" class="img_xC7_"></p>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="연합학습-데이터-보안-위협">연합학습 데이터 보안 위협<a href="https://gracefullight.dev/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91" class="hash-link" aria-label="연합학습 데이터 보안 위협에 대한 직접 링크" title="연합학습 데이터 보안 위협에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>보안 위협</th><th>설명</th></tr></thead><tbody><tr><td>중간자 공격</td><td>모델 업데이트 도난</td><td>공격자가 모델 업데이트를 탈취하여 민감한 데이터를 역추적하거나 모델 성능 저하 유발</td></tr><tr><td>노드 공격</td><td>중독 공격</td><td>공격자가 잘못된 데이터를 삽입하여 글로벌 모델 왜곡</td></tr><tr><td>데이터 편향</td><td>차별적 성능 문제</td><td>일부 참여자의 데이터가 학습되지 않아 특정 그룹의 예측 성능 저하</td></tr><tr><td></td><td>개인정보 학습</td><td>개인정보, 민감정보를 그대로 학습하여 글로벌 모델 업데이트</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="연합학습-데이터-보안-강화-기법">연합학습 데이터 보안 강화 기법<a href="https://gracefullight.dev/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EA%B8%B0%EB%B2%95" class="hash-link" aria-label="연합학습 데이터 보안 강화 기법에 대한 직접 링크" title="연합학습 데이터 보안 강화 기법에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>보안 기법</th><th>내용</th></tr></thead><tbody><tr><td>개인정보 보호</td><td>차분 프라이버시</td><td>모델 업데이트에 노이즈를 추가하여 민감 정보 보호</td></tr><tr><td>암호화 보안</td><td>TLS 및 동형 암호화</td><td>TLS를 통한 데이터 전송 보안, 동형 암호화를 활용한 암호화 상태 학습</td></tr><tr><td>실행 환경 보안</td><td>신뢰할 수 있는 실행 환경(TEE)</td><td>CPU 내 격리된 공간에서 학습 수행하여 외부 접근 차단</td></tr><tr><td>모델 무결성 보장</td><td>Byzantine Fault Tolerance(BFT)</td><td>악의적 업데이트를 탐지 및 배제하여 글로벌 모델 품질 유지</td></tr><tr><td>노드 신뢰성 확보</td><td>AI 기반 참여 노드 검증</td><td>K-평균 클러스터링을 활용하여 비정상적 업데이트 탐지</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>

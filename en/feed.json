@@ -5,6 +5,22 @@
     "description": "gracefullight.dev Blog",
     "items": [
         {
+            "id": "https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/",
+            "content_html": "",
+            "url": "https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/",
+            "title": "다익스트라 알고리즘",
+            "summary": "Dijkstra Algorithm",
+            "date_modified": "2025-01-30T12:55:13.902Z",
+            "author": {
+                "name": "Gracefullight",
+                "url": "https://github.com/gracefullight"
+            },
+            "tags": [
+                "professional-engineer",
+                "pe/algorithm"
+            ]
+        },
+        {
             "id": "https://gracefullight.dev/en/pe/algo/xai/",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xi-개념\">XI 개념<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xi-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h2>\n<ul>\n<li>AI 모델의 의사결정 과정을 사람에게 이해할 수 있는 형태로 설명하는 기술</li>\n<li>AI 결과에 대한 신뢰성, 투명성 향상 / 금융,의료,법률 등 고위험 분야에서의 설명가능성 확보 / GDPR 규제 준수</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xai-개념도-핵심요소-적용방안\">XAI 개념도, 핵심요소, 적용방안<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xai-개념도\">XAI 개념도<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<!-- -->\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xai-핵심요소\">XAI 핵심요소<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xai-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>모델 내부 접근법</td><td>모델 자체가 해석 가능한 구조로 설계</td><td>선형 회귀, 의사결정 나무</td></tr><tr><td>모델 외부 접근법</td><td>블랙박스 모델의 결과를 설명하기 위한 별도의 분석 기법</td><td>LIME, SHAP</td></tr><tr><td>설명 시각화 도구</td><td>기술적 설명을 직관적으로 전달하기 위한 그래프 및 히트맵</td><td>진단 시각화</td></tr></tbody></table>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xai-적용방안\">XAI 적용방안<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xai-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<table><thead><tr><th>구분</th><th>내용</th><th>적용 방안</th></tr></thead><tbody><tr><td>성능과 설명성 균형</td><td>딥러닝 모델의 높은 성능 유지와 동시에 해석 가능성을 확보하기 어려움</td><td>하이브리드 접근법으로 간단한 서브 모델과 복잡한 메인 모델 결합</td></tr><tr><td>다양한 데이터 유형</td><td>특정 데이터 유형(예: 텍스트, 이미지)에만 효과적인 XAI 기법 한계</td><td>다중 도메인 적용 가능한 범용 XAI 알고리즘 개발</td></tr><tr><td>보안 및 프라이버시</td><td>설명 가능성이 높아질수록 민감 데이터 노출 위험 증가</td><td>민감데이터 익명화 및 필터링 기술 도입</td></tr><tr><td>표준화 부족</td><td>XAI의 구현 방식과 평가 기준이 명확하지 않음</td><td>IEEE 및 ISO 표준화 기구의 가이드라인 개발 참여</td></tr></tbody></table>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"xai-추가적인-고려사항\">XAI 추가적인 고려사항<a href=\"https://gracefullight.dev/en/pe/algo/xai/#xai-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h2>\n<ul>\n<li>설명 시각화 도구와 직관적 인터페이스를 개발하여 사용자 이해도 향상 및 AI의 사회적 수용성 증대</li>\n</ul>",
             "url": "https://gracefullight.dev/en/pe/algo/xai/",
@@ -146,22 +162,6 @@
             "tags": [
                 "professional-engineer",
                 "pe/software-engineering"
-            ]
-        },
-        {
-            "id": "https://gracefullight.dev/en/pe/sec/federated-learning-data-security/",
-            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"연합학습-개념\">연합학습 개념<a href=\"https://gracefullight.dev/en/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EA%B0%9C%EB%85%90\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h2>\n<ul>\n<li>분산된 개별 장치에서 로컬 학습을 수행한 후 모델 업데이트만 공유하여 글로벌 모델을 생성하는 기법</li>\n<li>데이터 송수신 및 모델 업데이트 공유 과정에서 보안 위협 발생 존재, 이를 보완하기 위한 보안 강화 기법 필요</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"연합학습-데이터-보안-위협-및-강화-기법\">연합학습 데이터 보안 위협 및 강화 기법<a href=\"https://gracefullight.dev/en/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EB%B0%8F-%EA%B0%95%ED%99%94-%EA%B8%B0%EB%B2%95\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h2>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"연합학습-데이터-보안-위협-개념도\">연합학습 데이터 보안 위협 개념도<a href=\"https://gracefullight.dev/en/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91-%EA%B0%9C%EB%85%90%EB%8F%84\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"federated learning security\" src=\"https://gracefullight.dev/en/assets/images/federated-learning-security-89f99771a98fe28092811cd7a2407e6a.jpg\" width=\"1640\" height=\"734\" class=\"img_xC7_\"></p>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"연합학습-데이터-보안-위협\">연합학습 데이터 보안 위협<a href=\"https://gracefullight.dev/en/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EC%9C%84%ED%98%91\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<table><thead><tr><th>구분</th><th>보안 위협</th><th>설명</th></tr></thead><tbody><tr><td>중간자 공격</td><td>모델 업데이트 도난</td><td>공격자가 모델 업데이트를 탈취하여 민감한 데이터를 역추적하거나 모델 성능 저하 유발</td></tr><tr><td>노드 공격</td><td>중독 공격</td><td>공격자가 잘못된 데이터를 삽입하여 글로벌 모델 왜곡</td></tr><tr><td>데이터 편향</td><td>차별적 성능 문제</td><td>일부 참여자의 데이터가 학습되지 않아 특정 그룹의 예측 성능 저하</td></tr><tr><td></td><td>개인정보 학습</td><td>개인정보, 민감정보를 그대로 학습하여 글로벌 모델 업데이트</td></tr></tbody></table>\n<h3 class=\"anchor anchorWithStickyNavbar_OSIK\" id=\"연합학습-데이터-보안-강화-기법\">연합학습 데이터 보안 강화 기법<a href=\"https://gracefullight.dev/en/pe/sec/federated-learning-data-security/#%EC%97%B0%ED%95%A9%ED%95%99%EC%8A%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94-%EA%B8%B0%EB%B2%95\" class=\"hash-link\" aria-label=\"Direct link to heading\" title=\"Direct link to heading\">​</a></h3>\n<table><thead><tr><th>구분</th><th>보안 기법</th><th>내용</th></tr></thead><tbody><tr><td>개인정보 보호</td><td>차분 프라이버시</td><td>모델 업데이트에 노이즈를 추가하여 민감 정보 보호</td></tr><tr><td>암호화 보안</td><td>TLS 및 동형 암호화</td><td>TLS를 통한 데이터 전송 보안, 동형 암호화를 활용한 암호화 상태 학습</td></tr><tr><td>실행 환경 보안</td><td>신뢰할 수 있는 실행 환경(TEE)</td><td>CPU 내 격리된 공간에서 학습 수행하여 외부 접근 차단</td></tr><tr><td>모델 무결성 보장</td><td>Byzantine Fault Tolerance(BFT)</td><td>악의적 업데이트를 탐지 및 배제하여 글로벌 모델 품질 유지</td></tr><tr><td>노드 신뢰성 확보</td><td>AI 기반 참여 노드 검증</td><td>K-평균 클러스터링을 활용하여 비정상적 업데이트 탐지</td></tr></tbody></table>",
-            "url": "https://gracefullight.dev/en/pe/sec/federated-learning-data-security/",
-            "title": "연합학습 데이터 보안 강화 기법",
-            "summary": "Federated Learning Data Security",
-            "date_modified": "2025-01-29T08:55:37.718Z",
-            "author": {
-                "name": "Gracefullight",
-                "url": "https://github.com/gracefullight"
-            },
-            "tags": [
-                "professional-engineer",
-                "pe/security"
             ]
         }
     ]
