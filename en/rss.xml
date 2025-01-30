@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 29 Jan 2025 22:37:05 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Jan 2025 02:34:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[SD-WAN 보안]]></title>
+            <link>https://gracefullight.dev/en/pe/sec/sd-wan-security/</link>
+            <guid>https://gracefullight.dev/en/pe/sec/sd-wan-security/</guid>
+            <pubDate>Thu, 30 Jan 2025 02:34:55 GMT</pubDate>
+            <description><![CDATA[Software-Defined Wide Area Network Security]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-개념">SD-WAN 개념<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>소프트웨어 정의 네트워킹(SDN) 기술을 활용하여 기업의 WAN(Wide Area Network)을 중앙에서 효율적으로 관리하고, 클라우드 및 분산 환경에 최적화된 네트워크를 제공하는 아키텍처</li>
+<li>네트워크 비용 절감: 기존 MPLS 기반 WAN보다 저렴한 인터넷 회선을 활용하여 운영 비용을 절감 / 클라우드 최적화: 클라우드 애플리케이션과의 연결 성능을 향상 / 보안 강화, 중앙 집중 관리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-동작-매커니즘-핵심요소-보안-과제">SD-WAN 동작 매커니즘, 핵심요소, 보안 과제<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%95%88-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-동작-매커니즘">SD-WAN 동작 매커니즘<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<ul>
+<li>인증 및 접근 제어 문제, 중간자 공격, 클라우드 연결 취약점 존재</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-보안-핵심요소">SD-WAN 보안 핵심요소<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EB%B3%B4%EC%95%88-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>핵심 요소</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>End-to-End 암호화</td><td>IPsec 및 TLS 기반의 암호화 기술을 통해 데이터 전송 시 보안 강화.</td><td>Cisco SD-WAN의 모든 트래픽 IPsec 암호화 적용</td></tr><tr><td>제로 트러스트 네트워크 액세스 (ZTNA)</td><td>사용자 및 디바이스의 신원을 검증하고 최소 권한 원칙을 적용.</td><td>Palo Alto Networks의 ZTNA 기반 네트워크 접근 제어</td></tr><tr><td>Secure Access Service Edge (SASE)</td><td>SD-WAN과 보안을 통합하여 클라우드 및 분산 환경 보호.</td><td>VMware의 SD-WAN SASE 모델 적용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-보안-과제">SD-WAN 보안 과제<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EB%B3%B4%EC%95%88-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>보안 과제</th><th>내용</th><th>해결방안</th></tr></thead><tbody><tr><td>데이터 유출</td><td>분산된 네트워크에서 데이터가 노출될 위험</td><td>End-to-End IPsec/TLS 암호화 적용</td></tr><tr><td>DDoS 공격</td><td>클라우드 연결에서 발생할 수 있는 DDoS 공격</td><td>가상 방화벽 및 DDoS 방어 솔루션 도입</td></tr><tr><td>정책 불일치</td><td>각 지사별로 보안 정책이 일관되지 않아 취약점 발생</td><td>SASE 모델 도입으로 통합 정책 관리</td></tr><tr><td>인증 및 접근제어</td><td>분산 네트워크에서 사용자와 디바이스의 신원 확인 어려움</td><td>AI 기반 위협 탐지와 응답</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-도입을-위한-고려사항">SD-WAN 도입을 위한 고려사항<a href="https://gracefullight.dev/en/pe/sec/sd-wan-security/#sd-wan-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>고려사항</th><th>설명</th><th>해결 방안</th></tr></thead><tbody><tr><td>확장성</td><td>네트워크 확장 시 보안 유지 및 트래픽 증가에 대응.</td><td>클라우드 기반 보안 솔루션 및 동적 정책 적용</td></tr><tr><td>운영 효율성</td><td>복잡한 네트워크 환경에서 보안 운영을 최적화.</td><td>통합 보안 프레임워크 및 자동화 도구 활용</td></tr><tr><td>규제 준수</td><td>금융, 의료 등 특정 산업의 보안 규제 준수 필요.</td><td>GDPR, HIPAA 등 국제 규정에 맞춘 보안 정책 도입</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[Shor, 쇼어 알고리즘]]></title>
             <link>https://gracefullight.dev/en/pe/algo/shor-algorithm/</link>
@@ -212,27 +238,6 @@
 <ul>
 <li>국가 네트워크 보안 프레임워크 정책을 준수하여 망 분리 달성</li>
 </ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[QKD, 양자 키 분배]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/quantum-key-distribution/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/quantum-key-distribution/</guid>
-            <pubDate>Wed, 29 Jan 2025 06:19:12 GMT</pubDate>
-            <description><![CDATA[Quantum Key Distribution]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="양자-키-분배-개념">양자 키 분배 개념<a href="https://gracefullight.dev/en/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>양자암호통신에서 송신자와 수신자에게 실시간으로 양자 키를 안전하게 분배하는 기술</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="양자-키-분배-구성도-구성요소">양자 키 분배 구성도, 구성요소<a href="https://gracefullight.dev/en/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="양자-키-분배-구성도">양자 키 분배 구성도<a href="https://gracefullight.dev/en/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>키 분배 장비를 통해 생성된 암호키는 양자채널을 통해 전송, 암호문은 일반 채널로 전송</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="양자-키-분배-구성요소">양자 키 분배 구성요소<a href="https://gracefullight.dev/en/pe/sec/quantum-key-distribution/#%EC%96%91%EC%9E%90-%ED%82%A4-%EB%B6%84%EB%B0%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>구성요소</th><th>내용</th></tr></thead><tbody><tr><td>하드웨어</td><td>양자광학계</td><td>단일광자 소스, 편광기, 검출기 등 양자 상태를 생성하고 측정하는 장치</td></tr><tr><td></td><td>양자난수생성기</td><td>예측 불가능한 난수를 생성하여 키 분배에 사용</td></tr><tr><td></td><td>변조기</td><td>광자의 위상, 편광 등을 변조하여 정보를 인코딩</td></tr><tr><td></td><td>전자제어시스템</td><td>양자광학계와 변조기의 동기화 및 제어를 담당</td></tr><tr><td></td><td>양자채널</td><td>비밀키 전송 채널</td></tr><tr><td>소프트웨어</td><td>프로토콜</td><td>BB84, E91 등 양자 키 분배를 위한 통신 규약</td></tr><tr><td></td><td>구현 방식</td><td>단방향, 양방향 등 통신 방식</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
         </item>
