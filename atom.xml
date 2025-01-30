@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-30T02:34:55.423Z</updated>
+    <updated>2025-01-30T02:56:05.553Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[디지털 지속 가능성]]></title>
+        <id>https://gracefullight.dev/pe/conv/digital-sustainability/</id>
+        <link href="https://gracefullight.dev/pe/conv/digital-sustainability/"/>
+        <updated>2025-01-30T02:56:05.553Z</updated>
+        <summary type="html"><![CDATA[Digital Sustainability]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념">디지털 지속가능성 개념<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디지털 지속가능성 개념에 대한 직접 링크" title="디지털 지속가능성 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>디지털 기술과 인프라를 활용하여 환경, 사회, 경제적 지속 가능성을 동시에 추구하는 개념</li>
+<li>필요성<!-- -->
+<ul>
+<li>환경적 필요성: 데이터 센터 및 ICT 인프라의 에너지 소비 증가에 따른 탄소 배출 저감 필요</li>
+<li>사회적 필요성: 디지털 격차 해소를 통한 포용적 성장 및 전 세계적 접근성 확보</li>
+<li>경제적 필요성: 디지털 기술을 통한 생산성 향상과 자원 최적화로 지속 가능한 성장 촉진</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도-핵심요소-실현방안">디지털 지속가능성 개념도, 핵심요소, 실현방안<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 지속가능성 개념도, 핵심요소, 실현방안에 대한 직접 링크" title="디지털 지속가능성 개념도, 핵심요소, 실현방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도">디지털 지속가능성 개념도<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="디지털 지속가능성 개념도에 대한 직접 링크" title="디지털 지속가능성 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-핵심요소">디지털 지속가능성 핵심요소<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="디지털 지속가��능성 핵심요소에 대한 직접 링크" title="디지털 지속가능성 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>핵심 요소</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>환경적 지속 가능성</td><td>디지털 기술로 에너지 소비 절감 및 탄소 배출 최소화</td><td>Microsoft의 100% 재생 가능 에너지 데이터 센터</td></tr><tr><td>사회적 지속 가능성</td><td>디지털 접근성을 높여 소외 계층의 기술 혜택 보장</td><td>Google의 Project Loon, 농촌 지역 인터넷 연결</td></tr><tr><td>경제적 지속 가능성</td><td>디지털 기술을 활용한 생산성 향상 및 비용 절감</td><td>스마트 팩토리 도입을 통한 제조 비용 절감</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-실현방안">디지털 지속가능성 실현방안<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 지속가능성 실현방안에 대한 직접 링크" title="디지털 지속가능성 실현방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>실현 방안</th><th>내용</th><th>기대 효과</th></tr></thead><tbody><tr><td>그린 데이터 센터 구축</td><td>에너지 효율적인 서버 및 재생 가능 에너지 도입</td><td>운영 비용 절감 및 탄소 배출 저감</td></tr><tr><td>디지털 탄소 발자국 감소</td><td>클라우드 및 엣지 컴퓨팅 활용으로 에너지 소비 최적화</td><td>IT 인프라의 지속 가능성 향상</td></tr><tr><td>순환 경제 지원</td><td>IT 장비 재활용 및 부품 업사이클링 강화</td><td>전자 폐기물 감축 및 자원 재활용 증가</td></tr><tr><td>디지털 포용성 강화</td><td>저개발국 및 농촌 지역 인터넷 접근성 확대</td><td>글로벌 디지털 격차 해소</td></tr><tr><td>정부-기업 협력 강화</td><td>디지털 지속 가능성을 위한 정책 및 규제 마련</td><td>장기적인 지속 가능성 확보</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-발전방향">디지털 지속가능성 발전방향<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="디지털 지속가능성 발전방향에 대한 직접 링크" title="디지털 지속가능성 발전방향에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>구분</th><th>세부 내용</th><th>발전 방향</th></tr></thead><tbody><tr><td>기술적</td><td>고성능 컴퓨팅의 에너지 소모 문제</td><td>양자컴퓨팅 및 AI 기반 자원 최적화 기술 도입</td></tr><tr><td>정책적</td><td>디지털 지속 가능성을 보장하는 국제적 표준과 규제 부재</td><td>ISO 및 ITU를 통한 글로벌 표준화 작업 가속화</td></tr><tr><td>사회적 과제</td><td>저소득 국가와 지역 간 디지털 격차</td><td>공공과 민간 협력을 통한 인프라 투자 확대</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-convergence" term="pe/it-convergence"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SD-WAN 보안]]></title>
         <id>https://gracefullight.dev/pe/sec/sd-wan-security/</id>
@@ -254,30 +287,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[망 분리]]></title>
-        <id>https://gracefullight.dev/pe/sec/network-segmentation/</id>
-        <link href="https://gracefullight.dev/pe/sec/network-segmentation/"/>
-        <updated>2025-01-29T06:36:59.944Z</updated>
-        <summary type="html"><![CDATA[Network Segmentation]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-개념">망 분리 개념<a href="https://gracefullight.dev/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="망 분리 개념에 대한 직접 링크" title="망 분리 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>외부망을 통한 불법 접근과 내부 정보 유출을 차단하기 위해 내부 엄무망과 외부 인터넷망을 분리하는 망 차단 조치</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-구성도-구성요소">망 분리 구성도, 구성요소<a href="https://gracefullight.dev/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="망 분리 구성도, 구성요소에 대한 직접 링크" title="망 분리 구성도, 구성요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-구성도">망 분리 구성도<a href="https://gracefullight.dev/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="망 분리 구성도에 대한 직접 링크" title="망 분리 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="망-분리-구성요소">망 분리 구성요소<a href="https://gracefullight.dev/pe/sec/network-segmentation/#%EB%A7%9D-%EB%B6%84%EB%A6%AC-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="망 분리 구성요소에 대한 직접 링크" title="망 분리 구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>유형</th><th>설명</th></tr></thead><tbody><tr><td>물리적 망분리</td><td>PC 이중화</td><td>업무망, 인터넷망 PC 분리</td></tr><tr><td></td><td>망전환 장치</td><td>망전환장치를 통해 업무용과 인터넷용 인터페이스 분리</td></tr><tr><td></td><td>폐쇄망 구축</td><td>중요 정보 처리시 별도 차단 공간에 분리</td></tr><tr><td>논리적 망분리</td><td>SBC</td><td>서버 가상화 통한 인터넷망 분리</td></tr><tr><td></td><td>CBC</td><td>사용자의 가상화 영역을 통한 인터넷망 분리</td></tr></tbody></table>
-<ul>
-<li>국가 네트워크 보안 프레임워크 정책을 준수하여 망 분리 달성</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
     </entry>
 </feed>
