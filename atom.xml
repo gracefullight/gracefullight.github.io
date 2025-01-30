@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-30T02:56:05.553Z</updated>
+    <updated>2025-01-30T03:06:53.694Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[XAI, 설명가능한 AI]]></title>
+        <id>https://gracefullight.dev/pe/algo/xai/</id>
+        <link href="https://gracefullight.dev/pe/algo/xai/"/>
+        <updated>2025-01-30T03:06:53.694Z</updated>
+        <summary type="html"><![CDATA[Explainable AI]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xi-개념">XI 개념<a href="https://gracefullight.dev/pe/algo/xai/#xi-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="XI 개념에 대한 직접 링크" title="XI 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>AI 모델의 의사결정 과정을 사람에게 이해할 수 있는 형태로 설명하는 기술</li>
+<li>AI 결과에 대한 신뢰성, 투명성 향상 / 금융,의료,법률 등 고위험 분야에서의 설명가능성 확보 / GDPR 규제 준수</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xai-개념도-핵심요소-적용방안">XAI 개념도, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="XAI 개념도, 핵심요소, 적용방안에 대한 직접 링크" title="XAI 개념도, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-개념도">XAI 개념도<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="XAI 개념도에 대한 직접 링크" title="XAI 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-핵심요소">XAI 핵심요소<a href="https://gracefullight.dev/pe/algo/xai/#xai-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="XAI 핵심요소에 대한 직접 링크" title="XAI 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>모델 내부 접근법</td><td>모델 자체가 해석 가능한 구조로 설계</td><td>선형 회귀, 의사결정 나무</td></tr><tr><td>모델 외부 접근법</td><td>블랙박스 모델의 결과를 설명하기 위한 별도의 분석 기법</td><td>LIME, SHAP</td></tr><tr><td>설명 시각화 도구</td><td>기술적 설명을 직관적으로 전달하기 위한 그래프 및 히트맵</td><td>진단 시각화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-��적용방안">XAI 적용방안<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="XAI 적용방안에 대한 직접 링크" title="XAI 적용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>적용 방안</th></tr></thead><tbody><tr><td>성능과 설명성 균형</td><td>딥러닝 모델의 높은 성능 유지와 동시에 해석 가능성을 확보하기 어려움</td><td>하이브리드 접근법으로 간단한 서브 모델과 복잡한 메인 모델 결합</td></tr><tr><td>다양한 데이터 유형</td><td>특정 데이터 유형(예: 텍스트, 이미지)에만 효과적인 XAI 기법 한계</td><td>다중 도메인 적용 가능한 범용 XAI 알고리즘 개발</td></tr><tr><td>보안 및 프라이버시</td><td>설명 가능성이 높아질수록 민감 데이터 노출 위험 증가</td><td>민감데이터 익명화 및 필터링 기술 도입</td></tr><tr><td>표준화 부족</td><td>XAI의 구현 방식과 평가 기준이 명확하지 않음</td><td>IEEE 및 ISO 표준화 기구의 가이드라인 개발 참여</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xai-추가적인-고려사항">XAI 추가적인 고려사항<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="XAI 추가적인 고려사항에 대한 직접 링크" title="XAI 추가적인 고려사항에 대한 직접 링크">​</a></h2>
+<ul>
+<li>설명 시각화 도구와 직관적 인터페이스를 개발하여 사용자 이해도 향상 및 AI의 사회적 수용성 증대</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/algorithm" term="pe/algorithm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[디지털 지속 가능성]]></title>
         <id>https://gracefullight.dev/pe/conv/digital-sustainability/</id>
@@ -259,33 +288,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[디지털 트윈 기반 상황인지]]></title>
-        <id>https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/</id>
-        <link href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/"/>
-        <updated>2025-01-29T08:11:54.700Z</updated>
-        <summary type="html"><![CDATA[Digital Twin based Situational Awareness]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-개념">디지털 트윈 기반 상황인지 개념<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디지털 트윈 기반 상황인지 개념에 대한 직접 링크" title="디지털 트윈 기반 상황인지 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>현실 세계의 데이터를 실시간으로 수집하고 디지털 공간 복제하여 현재 상태를 이해하고, 미래 상황을 예측하여 최적의 의사 결정을 지원</li>
-<li>제조, 스마트시티, 의료 등 다양한 분야에서 실시간 의사 결정의 정확성과 신속성 제고 / 시뮬레이션 데이터 기반 가치 판단</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-기술-구성도-동작원리-적용사례">디지털 트윈 기반 상황인지 기술 구성도, 동작원리, 적용사례<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1%EB%8F%84-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="디지털 트윈 기반 상황인지 기술 구성도, 동작원리, 적용사례에 대한 직접 링크" title="디지털 트윈 기반 상황인지 기술 구성도, 동작원리, 적용사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-기술-구성도">디지털 트윈 기반 상황인지 기술 구성도<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EA%B8%B0%EC%88%A0-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="디지털 트윈 기반 상황인지 기술 구성도에 대한 직접 링크" title="디지털 트윈 기반 상황인지 기술 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-동작원리">디지털 트윈 기반 상황인지 동작원리<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EF%BF%BD%EF%BF%BD%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="디지털 트윈 기반 상황인지 동작원리에 대한 직접 링크" title="디지털 트윈 기반 상황인지 동작원리에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단계</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>데이터 수집 및 통합</td><td>IoT 센서, CCTV, 클라우드에서 실시간 데이터 수집</td><td>센서 네트워크, 데이터 레이크</td></tr><tr><td>디지털 모델링</td><td>물리적 객체의 디지털 복제본 생성 및 가상 시뮬레이션</td><td>3D 모델링, 디지털 트윈 플랫폼</td></tr><tr><td>상황 분석 및 예측</td><td>AI 기반 데이터 분석을 통해 현재 및 미래 상황 예측</td><td>머신러닝, 딥러닝</td></tr><tr><td>의사 결정 지원</td><td>분석된 정보를 바탕으로 최적의 대응 방안 도출</td><td>의사 결정 시스템, 시뮬레이션</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-적용사례">디지털 트윈 기반 상황인지 적용사례<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EC%A0%81%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="디지털 트윈 기반 상황인지 적용사례에 대한 직접 링크" title="디지털 트윈 기반 상황인지 적용사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>분야</th><th>적용 사례</th><th>설명</th></tr></thead><tbody><tr><td>제조업</td><td>Siemens MindSphere</td><td>공장 기계 상태 실시간 모니터링 및 유지보수 최적화</td></tr><tr><td>스마트 시티</td><td>싱가포르 디지털 트윈</td><td>교통 흐름 및 재난 대비 시뮬레이션</td></tr><tr><td>의료</td><td>GE Healthcare</td><td>환자 데이터 기반 개인 맞춤형 치료 계획</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-트윈-기반-상황인지-기술-도전과제">디지털 트윈 기반 상황인지 기술 도전과제<a href="https://gracefullight.dev/pe/conv/digital-twin-situational-awareness/#%EB%94%94%EC%A7%80%ED%84%B8-%ED%8A%B8%EC%9C%88-%EA%B8%B0%EB%B0%98-%EC%83%81%ED%99%A9%EC%9D%B8%EC%A7%80-%EA%B8%B0%EC%88%A0-%EB%8F%84%EC%A0%84%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="디지털 트윈 기반 상황인지 기술 도전과제에 대한 직접 링크" title="디지털 트윈 기반 상황인지 기술 도전과제에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>데이터 통합 및 표준화 부족</td><td>다양한 IoT 기기에서 비정형 데이터 수집</td><td>MQTT, OPC-UA 등 표준 프로토콜 적용</td></tr><tr><td>실시간 데이터 처리</td><td>대규모 데이터의 실시간 분석 어려움</td><td>엣지 컴퓨팅 및 클라우드 AI 연계</td></tr><tr><td>보안 및 개인정보 보호</td><td>디지털 트윈 모델이 공격에 취약</td><td>데이터 암호화 및 AI 기반 보안 모니터링 적용</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>
