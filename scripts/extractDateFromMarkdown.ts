@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { Command } from "clipanion";
 import { copy, ensureDir, readdir, readFile } from "fs-extra";
 
-export class ExtractDateFromMarkdown extends Command {
+export class ExtractDateFromMarkdownCommand extends Command {
   static readonly paths = [[`extract-date`]];
 
   private getDateMetadata(text: string) {

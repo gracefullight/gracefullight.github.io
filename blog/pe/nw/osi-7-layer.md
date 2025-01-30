@@ -10,7 +10,7 @@ tags:
 
 ## OSI 7 레이어 개념
 
-![OSI 7 레이어](/img/pe/osi-7.webp)
+![OSI 7 레이어](./assets/osi-7.webp)
 
 - 네트워크 충돌 문제 등의 완화를 위해 ISO 7498로 정의된 개방형 시스템 상호연결 국제 표준 네트워크 모델
 - 같은 계층간 논리통신을 제공하기 위하여 터널링 기법(가상통신, Peer to Peer)을 사용
@@ -72,7 +72,7 @@ tags:
 
 | TCP/IP 비교 | 프로토콜 구조 |
 | -------------------------------------- | ------------------------------------------------- |
-| ![tcp/ip](/img/pe/osi-tcp-hybrid.webp) | ![tcp/ip protocol](/img/pe/osi-tcp-protocol.webp) |
+| ![tcp/ip](./assets/osi-tcp-hybrid.webp) | ![tcp/ip protocol](./assets/osi-tcp-protocol.webp) |
 
 - TCP/IP는 인터넷 구현을 위한 프로토콜로 Defacto 표준.
 - OSI 7 레이어는 컴퓨터 구조를 포함하므로 실제는 TCP/IP의 Hybrid 모델로 구현.

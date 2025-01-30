@@ -14,7 +14,7 @@ tags:
   %s
 ---\n`;
 
-export class NewPost extends Command {
+export class NewPostCommand extends Command {
   static readonly paths = [[`new`]];
 
   // 글 제목

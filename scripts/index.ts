@@ -1,6 +1,7 @@
 import { Builtins, Cli } from "clipanion";
-import { ExtractDateFromMarkdown } from "./extractDateFromMarkdown";
-import { NewPost } from "./newPost";
+import { ExtractDateFromMarkdownCommand } from "./extractDateFromMarkdown";
+import { NewPostCommand } from "./newPost";
+import { PdfCommand } from "./pdf";
 
 const [node, app, ...args] = process.argv;
 
@@ -10,7 +11,8 @@ const cli = new Cli({
   binaryVersion: `0.1.0`,
 });
 
-cli.register(ExtractDateFromMarkdown);
-cli.register(NewPost);
+cli.register(ExtractDateFromMarkdownCommand);
+cli.register(NewPostCommand);
+cli.register(PdfCommand);
 cli.register(Builtins.HelpCommand);
 cli.runExit(args);
