@@ -5,7 +5,7 @@ description: Spring Boot
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/sw
 ---
 
 ## 스프링부트의 개념
