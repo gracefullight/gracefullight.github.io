@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-31T05:20:03.953Z</updated>
+    <updated>2025-01-31T05:50:36.300Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ITIL,]]></title>
+        <id>https://gracefullight.dev/pe/mng/itil/</id>
+        <link href="https://gracefullight.dev/pe/mng/itil/"/>
+        <updated>2025-01-31T05:50:36.300Z</updated>
+        <summary type="html"><![CDATA[Information Technology Infrastructure Library]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil">ITIL<a href="https://gracefullight.dev/pe/mng/itil/#itil" class="hash-link" aria-label="ITIL에 대한 직접 링크" title="ITIL에 대한 직접 링크">​</a></h2>
+<ul>
+<li>IT 서비스 관리(ITSM)를 위한 글로벌 표준 프레임워크로, IT 서비스의 품질과 비즈니스 목표 정렬을 최적화하는 역할</li>
+<li>IT 서비스의 효율성 및 품질 개선 / BITA / DevOps, Agile 통합 지원</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil-구성도-핵심요소">ITIL 구성도, 핵심요소<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ITIL 구성도, 핵심요소에 대한 직접 링크" title="ITIL 구성도, 핵심요소에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-구성도">ITIL 구성도<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ITIL 구성도에 대한 직접 링크" title="ITIL 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-핵심요소">ITIL 핵심요소<a href="https://gracefullight.dev/pe/mng/itil/#itil-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ITIL 핵심요소에 대한 직접 링크" title="ITIL 핵심요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>서비스 가치 시스템</td><td>IT 서비스가 조직의 가치를 창출하는 데 필요한 요소와 활동의 프레임워크</td><td>거버넌스, 지속적 개선 포함</td></tr><tr><td>서비스 가치 체인</td><td>IT 서비스 제공 프로세스를 6가지 활동으로 분류</td><td>Plan, Improve, Engage 등</td></tr><tr><td>ITIL 4 실무</td><td>ITIL 3의 프로세스를 발전시켜 34개 실무 영역으로 확장</td><td>인시던트 관리, 문제 관리, 변경 관리 등</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil을-활용한-서비스-관리-방안-적용-사례">ITIL을 활용한 서비스 관리 방안, 적용 사례<a href="https://gracefullight.dev/pe/mng/itil/#itil%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="ITIL을 활용한 서비스 관리 방안, 적용 사례에 대한 직접 링크" title="ITIL을 활용한 서비스 관리 방안, 적용 사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-관리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="ITIL 기반 IT서비스 관리 방안에 대한 직접 링크" title="ITIL 기반 IT서비스 관리 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>DevOps와 Agile 통합</td><td>CI/CD와 결합하여 변경 관리 자동화 및 배포 속도 향상</td><td>AWS 클라우드에서의 자동화된 배포</td></tr><tr><td>서비스 가치 체인 활용</td><td>고객 요구에 따라 특정 활동 선택적 적용</td><td>Engage, Improve 단계 반복 실행</td></tr><tr><td>고객 중심 접근</td><td>AI 챗봇을 활용한 신속한 고객 응대 및 피드백 반영</td><td>서비스 데스크에서 AI 기반 고객 지원</td></tr><tr><td>지속적 개선</td><td>데이터 기반 실시간 의사결정 및 비즈니스 목표 정렬</td><td>IT 운영 데이터 분석으로 장애 원인 식별</td></tr><tr><td>ITIL 실무 통합</td><td>변경 관리와 문제 관리 통합으로 비즈니스 연속성 유지</td><td>병원 IT 인프라에서의 장애 방지</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-적용-사례">ITIL 적용 사례<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="ITIL 적용 사례에 대한 직접 링크" title="ITIL 적용 사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>클라우드 서비스</td><td>AWS에서 변경 관리와 지속적 개선 도입</td><td>클라우드 서비스 품질 향상</td></tr><tr><td>금융 서비스</td><td>DevOps와 ITIL 4 통합으로 빠른 서비스 제공</td><td>보안 유지 및 배포 속도 증가</td></tr><tr><td>헬스케어</td><td>인시던트 관리와 문제 관리 자동화</td><td>의료 데이터 보호 및 응답 시간 단축</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[데이터 주권]]></title>
         <id>https://gracefullight.dev/pe/sec/data-sovereignty/</id>
@@ -273,32 +301,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[차세대 블록체인 합의 알고리즘]]></title>
-        <id>https://gracefullight.dev/pe/conv/consensus-algorithm/</id>
-        <link href="https://gracefullight.dev/pe/conv/consensus-algorithm/"/>
-        <updated>2025-01-29T21:35:20.634Z</updated>
-        <summary type="html"><![CDATA[Consensus Algorithm]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념">합의 알고리즘 개념<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="합의 알고리즘 개념에 대한 직접 링크" title="합의 알고리즘 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>네트워크 내 노드들이 신뢰 기반으로 데이터의 유효성을 검증하고 합의에 도달하는 방식</li>
-<li>PoW(Proof of Work), PoS(Proof of Stake) 방식의 높은 에너지 소비, 확장성 문제, 속도 저하 / 확장성과 효율성을 극대화하면서도 탈중앙성을 유지 / 대중화와 다양한 산업 응용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념도-차세대-합의-알고리즘-특징-주요사례">합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%95-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80" class="hash-link" aria-label="합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례에 대한 직접 링크" title="합의 알고리즘 개념도, 차세대 합의 알고리즘 특징, 주요사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="합의-알고리즘-개념도">합의 알고리즘 개념도<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="합의 알고리즘 개념도에 대한 직접 링크" title="합의 알고리즘 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-특징">차세대 합의 알고리즘 특징<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="차세대 합의 알고리즘 특징에 대한 직접 링크" title="차세대 합의 알고리즘 특징에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>에너지 효율성</td><td>PoS, DPoS 등을 활용하여 기존 PoW 대비 전력 소비 절감</td><td>저전력 합의 방식, 이더리움</td></tr><tr><td>확장성 강화</td><td>네트워크 처리량 증가를 목표로 설계되어 대규모 트랜잭션을 지원</td><td>샤딩, DAG, 질리카</td></tr><tr><td>탈중앙성 유지</td><td>중앙 집중화 문제를 해결하고, 네트워크 내에서 신뢰를 유지</td><td>Pure PoS, 알고랜드</td></tr><tr><td>하이브리드 설계</td><td>여러 합의 알고리즘의 장점을 결합한 방식</td><td>PoS, PBFT, 텐더민트</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-주요사례">차세대 합의 알고리즘 주요사례<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A3%BC%EC%9A%94%EC%82%AC%EB%A1%80" class="hash-link" aria-label="차세대 합의 알고리즘 주요사례에 대한 직접 링크" title="차세대 합의 알고리즘 주요사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>알고리즘</th><th>특징</th><th>사례</th></tr></thead><tbody><tr><td>Proof of History (PoH)</td><td>시간 기반 트랜잭션 순서 기록</td><td>솔라나, 65,000 TPS 지원</td></tr><tr><td>Directed Acyclic Graph (DAG)</td><td>블록 대신 그래프 구조 활용</td><td>아이오타, IoT 최적화</td></tr><tr><td>Proof of Authority (PoA)</td><td>신뢰할 수 있는 검증자 선정</td><td>비체인, 비즈니스 친화적 블록체인</td></tr><tr><td>Hybrid PoW/PoS</td><td>PoW + PoS 결합으로 보안과 효율성 동시 제공</td><td>디크레드, 보안성과 탈중앙성 유지</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="차세대-합의-알고리즘-발전방향">차세대 합의 알고리즘 발전방향<a href="https://gracefullight.dev/pe/conv/consensus-algorithm/#%EC%B0%A8%EC%84%B8%EB%8C%80-%ED%95%A9%EC%9D%98-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="차세대 합의 알고리즘 발전방향에 대한 직접 링크" title="차세대 합의 알고리즘 발전방향��에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>복잡성 증가</td><td>새로운 합의 알고리즘 설계와 구현이 복잡</td><td>오픈소스 프레임워크 및 개발자 도구 제공</td></tr><tr><td>보안 강화 필요</td><td>새로운 알고리즘에서 보안 취약점 발생 가능</td><td>지속적인 보안 테스트 및 업그레이드</td></tr><tr><td>산업 표준화 부족</td><td>알고리즘 간 표준화 부족으로 상호 운용성 저하</td><td>국제 표준화 기구(ISO)의 블록체인 표준 참여</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>
