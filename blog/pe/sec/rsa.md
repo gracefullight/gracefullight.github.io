@@ -1,7 +1,7 @@
 ---
 title: RSA 암호화
 date: 2025-01-31T12:31:47.580+09:00
-description: rsa
+description: Rivest-Shamir-Adleman Encryption
 authors: me
 tags:
   - pe
