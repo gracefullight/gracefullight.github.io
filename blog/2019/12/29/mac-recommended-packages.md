@@ -1,5 +1,5 @@
 ---
-title: 맥 추천 패키지
+title: Brew, 맥 추천 패키지
 authors: me
 tags:
   - me
@@ -86,6 +86,7 @@ brew tap homebrew/cask-fonts
 brew cask install adguard \
   appcleaner \
   bitwarden \
+  cap \
   dbeaver-community \
   firefox \
   font-cascadia \
@@ -100,6 +101,7 @@ brew cask install adguard \
   jetbrains-toolbox \
   keepingyouawake \
   keka \
+  keycastr \
   macs-fan-control \
   monitorcontrol \
   microsoft-edge \
@@ -120,6 +122,7 @@ brew cask install adguard \
 - adguard: 💰
 - appcleaner: 앱 클리너
 - bitwarden: 비밀번호 관리
+- cap: 화면 녹화 및 편집
 - dbeaver-community: DBMS 클라이언트
 - firefox: 파이어폭스
 - font-cascadia: Cascadis Code 폰트
@@ -133,6 +136,7 @@ brew cask install adguard \
 - jetbrains-toolbox: jetbrains IDE 버전 관리
 - keepingyouawake: 잠자기 모드 제어
 - keka: 압축 프로그램
+- keycastr: 키 입력 녹화
 - macs-fan-control: 팬 조절
 - monitorcontrol: 외장모니터 제어
 - microsoft-edge: edge
