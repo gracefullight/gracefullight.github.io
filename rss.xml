@@ -4,10 +4,33 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 Jan 2025 07:54:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 08:05:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[NewSQL]]></title>
+            <link>https://gracefullight.dev/pe/db/newsql/</link>
+            <guid>https://gracefullight.dev/pe/db/newsql/</guid>
+            <pubDate>Fri, 31 Jan 2025 08:05:36 GMT</pubDate>
+            <description><![CDATA[NewSQL]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="newsql-개념">NewSQL 개념<a href="https://gracefullight.dev/pe/db/newsql/#newsql-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="NewSQL 개념에 대한 직접 링크" title="NewSQL 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>전통적인 RDBMS의 ACID(Atomicity, Consistency, Isolation, Durability) 특성을 유지하면서, NoSQL의 확장성을 결합한 차세대 데이터베이스 시스템</li>
+<li>고성능 트랜잭션 처리(RDBMS 확장제한, NoSQL 일관성 보장어려움) / 수평적 확장 지원 / 실시간 데이터 분석 요구 증가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="newsql-동작-매커니즘-동작-원리-기존-db-비교">NewSQL 동작 매커니즘, 동작 원리, 기존 DB 비교<a href="https://gracefullight.dev/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EC%A1%B4-db-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NewSQL 동작 매커니즘, 동작 원리, 기존 DB 비교에 대한 직접 링크" title="NewSQL 동작 매커니즘, 동작 원리, 기존 DB 비교에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="newsql-동작-매커니즘">NewSQL 동작 매커니즘<a href="https://gracefullight.dev/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="NewSQL 동작 매커니즘에 대한 직접 링크" title="NewSQL 동작 매커니즘에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="newsql-동작-원리">NewSQL 동작 원리<a href="https://gracefullight.dev/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="NewSQL 동작 원리에 대한 직접 링크" title="NewSQL 동작 원리에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>설계 원리</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>분산 아키텍처</td><td>데이터를 여러 노드에 분산 저장하여 수평적 확장성 제공</td><td>CockroachDB의 자동 샤딩</td></tr><tr><td>ACID 준수</td><td>트랜잭션의 원자성, 일관성, 격리성, 지속성을 보장</td><td>Google Spanner의 글로벌 트랜잭션</td></tr><tr><td>병렬 처리</td><td>다중 쿼리를 병렬로 처리하여 성능 극대화</td><td>MemSQL의 실시간 분석 쿼리</td></tr><tr><td>인메모리 기술</td><td>데이터를 메모리에서 처리하여 접근 속도 향상</td><td>VoltDB의 초당 수백만 건 처리</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="newsql과-rdbms-비교">NewSQL과 RDBMS 비교<a href="https://gracefullight.dev/pe/db/newsql/#newsql%EA%B3%BC-rdbms-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="NewSQL과 RDBMS 비교에 대한 직접 링크" title="NewSQL과 RDBMS 비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>기존 RDBMS 한계</th><th>NewSQL 개선점</th></tr></thead><tbody><tr><td>분산 트랜잭션</td><td>단일 서버 기반으로 물리적 한계 존재</td><td>Paxos/Raft 알고리즘 활용, TrueTime API 적용</td></tr><tr><td>인메모리 처리</td><td>디스크 I/O 병목 발생</td><td>핫 데이터를 메모리에서 처리, I/O 병목 제거</td></tr><tr><td>자동 샤딩</td><td>수직적 확장으로 확장성 제한</td><td>자동 샤딩으로 데이터 균등 분배, 다운타임 최소화</td></tr><tr><td>하이브리드 저장소</td><td>모든 데이터 동일 계층 저장</td><td>핫/콜드 데이터 분리로 비용 효율성 강화</td></tr><tr><td>병렬 처리</td><td>단일 노드에서 병렬성 제한</td><td>다중 노드에서 분석 쿼리 병렬 처리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="newsql-도입-효과">NewSQL 도입 효과<a href="https://gracefullight.dev/pe/db/newsql/#newsql-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="NewSQL 도입 효과에 대한 직접 링크" title="NewSQL 도입 효과에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>금융 서비스</td><td>글로벌 트랜잭션 시스템 구축</td><td>HSBC의 성능 및 신뢰성 강화</td></tr><tr><td>전자상거래</td><td>실시간 주문 및 재고 관리</td><td>Shopify의 CockroachDB 글로벌 주문 처리 최적화</td></tr><tr><td>IoT 플랫폼</td><td>센서 데이터 실시간 분석</td><td>VoltDB의 초당 수백만 건 이벤트 처리</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/database</category>
+        </item>
         <item>
             <title><![CDATA[VSM, Value Stream Mapping]]></title>
             <link>https://gracefullight.dev/pe/mng/itil-vsm/</link>
@@ -233,31 +256,6 @@
 <table><thead><tr><th>활용분야</th><th>내용</th><th>사례</th></tr></thead><tbody><tr><td>네트워크 라우팅</td><td>OSPF 프로토콜에서 최적의 데이터 경로 탐색</td><td>Cisco 및 Juniper 네트워크 장비</td></tr><tr><td>지도 탐색 서비스</td><td>도로 네트워크의 가중치를 기반으로 최단 경로 제공</td><td>Google Maps, Waze, 네이버 지도</td></tr><tr><td>공장 물류 자동화</td><td>물류 로봇 및 AGV(Automated Guided Vehicle)의 이동 경로 최적화</td><td>Amazon 물류 창고 로봇</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-개선방안">다익스트라 알고리즘 개선방안<a href="https://gracefullight.dev/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EC%84%A0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="다익스트라 알고리즘 개선방안에 대한 직접 링크" title="다익스트라 알고리즘 개선방안에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>한계점</th><th>설명</th><th>개선 방안</th></tr></thead><tbody><tr><td>음수 가중치 미지원</td><td>음수 가중치가 있는 그래프에서는 올바른 결과를 보장하지 못함</td><td>벨만-포드 알고리즘 활용</td></tr><tr><td>대규모 그래프에서 성능 저하</td><td>많은 노드와 간선을 포함하는 그래프에서 높은 계산 비용 발생</td><td>휴리스틱 기반 A* 알고리즘 적용</td></tr><tr><td>복잡한 환경</td><td>동적인 환경에서 즉각적인 경로 변경 어려움</td><td>AI 기반 실시간 경로 재계산 기술 도입</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
-        </item>
-        <item>
-            <title><![CDATA[XAI, 설명가능한 AI]]></title>
-            <link>https://gracefullight.dev/pe/algo/xai/</link>
-            <guid>https://gracefullight.dev/pe/algo/xai/</guid>
-            <pubDate>Thu, 30 Jan 2025 03:06:53 GMT</pubDate>
-            <description><![CDATA[Explainable AI]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xi-개념">XI 개념<a href="https://gracefullight.dev/pe/algo/xai/#xi-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="XI 개념에 대한 직접 링크" title="XI 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>AI 모델의 의사결정 과정을 사람에게 이해할 수 있는 형태로 설명하는 기술</li>
-<li>AI 결과에 대한 신뢰성, 투명성 향상 / 금융,의료,법률 등 고위험 분야에서의 설명가능성 확보 / GDPR 규제 준수</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xai-개념도-핵심요소-적용방안">XAI 개념도, 핵심요소, 적용방안<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="XAI 개념도, 핵심요소, 적용방안에 대한 직접 링크" title="XAI 개념도, 핵심요소, 적용방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-개념도">XAI 개념도<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="XAI 개념도에 대한 직접 링크" title="XAI 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-핵심요소">XAI 핵심요소<a href="https://gracefullight.dev/pe/algo/xai/#xai-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="XAI 핵심요소에 대한 직접 링크" title="XAI 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>모델 내부 접근법</td><td>모델 자체가 해석 가능한 구조로 설계</td><td>선형 회귀, 의사결정 나무</td></tr><tr><td>모델 외부 접근법</td><td>블랙박스 모델의 결과를 설명하기 위한 별도의 분석 기법</td><td>LIME, SHAP</td></tr><tr><td>설명 시각화 도구</td><td>기술적 설명을 직관적으로 전달하기 위한 그래프 및 히트맵</td><td>진단 시각화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="xai-��적용방안">XAI 적용방안<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EC%A0%81%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="XAI 적용방안에 대한 직접 링크" title="XAI 적용방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>적용 방안</th></tr></thead><tbody><tr><td>성능과 설명성 균형</td><td>딥러닝 모델의 높은 성능 유지와 동시에 해석 가능성을 확보하기 어려움</td><td>하이브리드 접근법으로 간단한 서브 모델과 복잡한 메인 모델 결합</td></tr><tr><td>다양한 데이터 유형</td><td>특정 데이터 유형(예: 텍스트, 이미지)에만 효과적인 XAI 기법 한계</td><td>다중 도메인 적용 가능한 범용 XAI 알고리즘 개발</td></tr><tr><td>보안 및 프라이버시</td><td>설명 가능성이 높아질수록 민감 데이터 노출 위험 증가</td><td>민감데이터 익명화 및 필터링 기술 도입</td></tr><tr><td>표준화 부족</td><td>XAI의 구현 방식과 평가 기준이 명확하지 않음</td><td>IEEE 및 ISO 표준화 기구의 가이드라인 개발 참여</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xai-추가적인-고려사항">XAI 추가적인 고려사항<a href="https://gracefullight.dev/pe/algo/xai/#xai-%EC%B6%94%EA%B0%80%EC%A0%81%EC%9D%B8-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="XAI 추가적인 고려사항에 대한 직접 링크" title="XAI 추가적인 고려사항에 대한 직접 링크">​</a></h2>
-<ul>
-<li>설명 시각화 도구와 직관적 인터페이스를 개발하여 사용자 이해도 향상 및 AI의 사회적 수용성 증대</li>
-</ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/algorithm</category>
         </item>
