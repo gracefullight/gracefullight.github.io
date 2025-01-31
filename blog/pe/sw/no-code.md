@@ -5,7 +5,7 @@ description: No-Code
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/sw
 ---
 
 ## 노코드 개념

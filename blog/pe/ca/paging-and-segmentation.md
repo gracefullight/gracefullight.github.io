@@ -28,58 +28,14 @@ graph TB
 
 - 제한된 메모리 리소스를 효율적으로 사용하기 위해 메모리 관리 기법 필요
 
-## 페이징 기법, 세그먼테이션 기법 개념도, 핵심요소
+## 페이징 기법, 세그먼테이션 기법 개념, 핵심요소
 
-### 페이징 기법, 세그먼테이션 기법 개념도
+### 페이징 기법, 세그먼테이션 기법 개념
 
-```mermaid
-graph LR
-  Page0 --> 0
-  Page1 --> 2
-
-  subgraph PageTable
-    direction LR
-    0
-    1
-    2
-  end
-
-  0 --> 1000
-  2 --> 1500
-
-  subgraph PhysicalMemory
-    1000
-    1500
-    2000
-  end
-```
-
-```mermaid
-graph LR
-  subgraph Stack
-    Segment0
-  end
-  subgraph Program
-    Segment1
-  end
-
-  Segment0 --> 0
-  Segment1 --> 1
-
-  subgraph SegmentTable
-    direction LR
-    0 --- base:1400 --- limit:1000
-    1 --- base:3200 --- limit:1100
-  end
-
-  limit:1000 --> segment0:1400-2400
-  limit:1100 --> segment1:3200-4300
-
-  subgraph PhysicalMemory
-    segment0:1400-2400
-    segment1:3200-4300
-  end
-```
+| 구분 | 페이징 | 세그먼테이션 |
+| --- | --- | --- |
+| 개념도 | ![paging](./assets/paging.jpg) | ![segmentation](./assets/segmentation.jpg) |
+| 개념 | 동일한 크기의 페이지 단위로 메모리를 나누고 주소를 매핑 | 프로그램의 논리적 구성(코드, 데이터 등)에 따라 가변 길이의 세그먼트로 메모리를 관리 |
 
 - 페이징 기법은 동일한 크기로, 세그먼테이션 기법은 가변크기로 분할
 
