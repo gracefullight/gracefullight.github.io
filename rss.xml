@@ -4,16 +4,41 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 Jan 2025 03:31:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 04:26:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[TLS 1.3]]></title>
+            <link>https://gracefullight.dev/pe/nw/tls-1-3/</link>
+            <guid>https://gracefullight.dev/pe/nw/tls-1-3/</guid>
+            <pubDate>Fri, 31 Jan 2025 04:26:11 GMT</pubDate>
+            <description><![CDATA[Transport Layer Security 1.3]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tls-13-개념">TLS 1.3 개념<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-13-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="TLS 1.3 개념에 대한 직접 링크" title="TLS 1.3 개념에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>인터넷 통신에서 데이터를 암호화하고 무결성을 보장하는 프로토콜로 1.3버전에서 보안성과 성능을 크게 개선</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tls-13-개념도-개선-내용-적용-사례">TLS 1.3 개념도, 개선 내용, 적용 사례<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-13-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B0%9C%EC%84%A0-%EB%82%B4%EC%9A%A9-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="TLS 1.3 개념도, 개선 내용, 적용 사례에 대한 직접 링크" title="TLS 1.3 개념도, 개선 내용, 적용 사례에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tls-13-개념도">TLS 1.3 개념도<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-13-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="TLS 1.3 개념도에 대한 직접 링크" title="TLS 1.3 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tls-13-개선-내용">TLS 1.3 개선 내용<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-13-%EA%B0%9C%EC%84%A0-%EB%82%B4%EC%9A%A9" class="hash-link" aria-label="TLS 1.3 개선 내용에 대한 직접 링크" title="TLS 1.3 개선 내용에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>변경 사항</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>암호화 강도 강화</td><td>취약한 알고리즘 제거, AES-GCM, ChaCha20-Poly1305 채택</td><td>RC4, SHA-1 제거</td></tr><tr><td>핸드쉐이크 간소화</td><td>1-RTT 기본 적용, 0-RTT 재접속 지원</td><td>초기 연결 시 속도 향상</td></tr><tr><td>PFS 기본 지원</td><td>Diffie-Hellman(ECDHE) 사용으로 세션 키 고유화</td><td>세션 키 유출 시 타 세션 보호</td></tr><tr><td>MITM 공격 방지</td><td>엄격한 인증서 검증</td><td>중간자 공격 가능성 차단</td></tr><tr><td>레거시 프로토콜 제거</td><td>TLS 1.0, 1.1 제거</td><td>최신 보안 요구사항 반영</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="tls-13-적용-사례">TLS 1.3 적용 사례<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-13-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="TLS 1.3 적용 사례에 대한 직접 링크" title="TLS 1.3 적용 사례에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>분야</th><th>적용 사례</th><th>효과</th></tr></thead><tbody><tr><td>웹 브라우저</td><td>Chrome, Firefox 등에서 기본 지원</td><td>HTTPS 보안 강화</td></tr><tr><td>클라우드 서비스</td><td>AWS, Google Cloud에서 TLS 1.3 활용</td><td>데이터 보호 및 성능 개선</td></tr><tr><td>VPN</td><td>OpenVPN, WireGuard에서 TLS 1.3 적용</td><td>안전한 원격 접속</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="tls-발전방향">TLS 발전방향<a href="https://gracefullight.dev/pe/nw/tls-1-3/#tls-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="TLS 발전방향에 대한 직접 링크" title="TLS 발전방향에 대한 직접 링크">​</a></h2>
+<ul>
+<li>양자내성암호와 결합하여 TLS 보안성이 더욱 강화될 것으로 기대</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[RSA 암호화]]></title>
             <link>https://gracefullight.dev/pe/sec/rsa/</link>
             <guid>https://gracefullight.dev/pe/sec/rsa/</guid>
             <pubDate>Fri, 31 Jan 2025 03:31:47 GMT</pubDate>
-            <description><![CDATA[rsa]]></description>
+            <description><![CDATA[Rivest-Shamir-Adleman Encryption]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="RSA 암호화 알고리즘 개념에 대한 직접 링크" title="RSA 암호화 알고리즘 개념에 대한 직접 링크">​</a></h2>
 <ul>
 <li>소인수분해 문제의 계산적 복잡성을 기반으로 하며, 데이터 암호화 및 디지털 서명을 통해 정보의 기밀성, 무결성, 인증을 보장하는 암호화 알고리즘</li>
@@ -233,29 +258,6 @@
 <table><thead><tr><th>도전 과제</th><th>문제점</th><th>해결 방안</th></tr></thead><tbody><tr><td>개발 복잡성</td><td>eBPF 프로그램 작성 및 디버깅이 어렵고 전문 기술 요구</td><td>eBPF 전용 개발 도구 및 문서화 강화</td></tr><tr><td>운영체제 의존성</td><td>최신 Linux 커널에서만 활용 가능, 타 OS 지원 부족</td><td>eBPF를 지원하는 OS 확장 연구 진행</td></tr><tr><td>보안 검증 의존성</td><td>검증기(Verifier)의 성능이 보안성 좌우</td><td>Verifier 강화 및 정적 분석 도구 활용</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[IoB, Internet of Behaviors]]></title>
-            <link>https://gracefullight.dev/pe/conv/iob/</link>
-            <guid>https://gracefullight.dev/pe/conv/iob/</guid>
-            <pubDate>Wed, 29 Jan 2025 12:45:08 GMT</pubDate>
-            <description><![CDATA[Internet of Behaviors]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iob-개념">IoB 개념<a href="https://gracefullight.dev/pe/conv/iob/#iob-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="IoB 개념에 대한 직접 링크" title="IoB 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>IoT에서 생성되는 데이터를 기반으로 인간의 행동과 심리를 분석하는 기술적 접근 방식</li>
-<li>개인화된 경험 제공, 행동 예측, 소비자 행동 모델링 / 프라이버시 침해, 데이터 편향 문제 등의 윤리적 논란</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iob-개념도-동작원리-주요-영향">IoB 개념도, 동작원리, 주요 영향<a href="https://gracefullight.dev/pe/conv/iob/#iob-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%A3%BC%EC%9A%94-%EC%98%81%ED%96%A5" class="hash-link" aria-label="IoB 개념도, 동작원리, 주요 영향에 대한 직접 링크" title="IoB 개념도, 동작원리, 주요 영향에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iob-개념도">IoB 개념도<a href="https://gracefullight.dev/pe/conv/iob/#iob-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="IoB 개념도에 대한 직접 링크" title="IoB 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iob-동작원리">IoB 동작원리<a href="https://gracefullight.dev/pe/conv/iob/#iob-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="IoB 동작원리에 대한 직접 링크" title="IoB 동작원리에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>주요 과정</th><th>설명</th></tr></thead><tbody><tr><td>데이터 수집</td><td>IoT 장치에서 데이터 획득</td><td>스마트워치, 스마트홈 기기 등에서 사용자 행동 데이터 수집</td></tr><tr><td>데이터 처리 및 분석</td><td>머신러닝 기반 분석</td><td>행동 패턴과 심리적 동기를 ML/DL로 분석</td></tr><tr><td>행동 변화 유도</td><td>개인 맞춤형 피드백 제공</td><td>분석 결과를 바탕으로 행동을 개선하는 피드백 전달</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="iob가-데이터-분석에-미치는-주요-영향">IoB가 데이터 분석에 미치는 주요 영향<a href="https://gracefullight.dev/pe/conv/iob/#iob%EA%B0%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EC%97%90-%EB%AF%B8%EC%B9%98%EB%8A%94-%EC%A3%BC%EC%9A%94-%EC%98%81%ED%96%A5" class="hash-link" aria-label="IoB가 데이터 분석에 미치는 주요 영향에 대한 직접 링크" title="IoB가 데이터 분석에 미치는 주요 영향에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>주요 영향</th><th>설명</th></tr></thead><tbody><tr><td>개인화된 데이터 분석</td><td>맞춤형 분석 가능</td><td>개별 사용자의 행동과 환경을 고려한 서비스 제공</td></tr><tr><td>행동 예측 및 의사결정 지원</td><td>미래 행동 예측</td><td>소비 패턴 분석을 통해 맞춤형 혜택 제공</td></tr><tr><td>고객 여정 최적화</td><td>구매 과정 개선</td><td>고객의 클릭 및 구매 데이터를 활용한 추천 알고리즘 적용</td></tr><tr><td>사회적 가치 창출</td><td>공공 데이터 활용</td><td>스마트 시티, 교통 시스템, 에너지 절약 등의 공공 문제 해결</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="iob-도입시-고려사항">IoB 도입시 고려사항<a href="https://gracefullight.dev/pe/conv/iob/#iob-%EB%8F%84%EC%9E%85%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="IoB 도입시 고려사항에 대한 직접 링크" title="IoB 도입시 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>고려사항</th><th>해결 방안</th></tr></thead><tbody><tr><td>프라이버시 침해 우려</td><td>데이터 수집 과정에서 개인정보 유출 가능</td><td>데이터 익명화 및 동의 기반 데이터 수집 방식 적용</td></tr><tr><td>데이터 편향 문제</td><td>특정 집단에 편향된 데이터로 분석 공정성 저하</td><td>다양한 출처의 데이터를 통합하여 편향 최소화</td></tr><tr><td>윤리적 책임</td><td>행동 유도가 특정 결과를 강제할 가능성</td><td>AI 윤리 기준을 기반으로 투명한 데이터 처리 및 피드백 제공</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-convergence</category>
         </item>
     </channel>
 </rss>
