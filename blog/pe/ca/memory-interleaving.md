@@ -32,74 +32,16 @@ graph LR
 
 | 구분 | 개념도 | 내용 |
 | --- | --- | --- |
-| ==상위 인터리빙== | - | 주소의 상위비트로 모듈 선택, ==순차적, 에러시 하나의 모듈 영향== |
-| ==하위 인터리빙== | - | 주소의 하위비트로 모듈 선택, ==다수의 모듈 동시 접근, 에러 전파== |
-| ==혼합 인터리빙== | - | ==모듈을 뱅크로 그룹화==, 뱅크 선택시 상위 인터리빙, 뱅크 내 모듈 선택시 하위 인터리빙 |
-
-```mermaid
-graph LR
-  모듈선택:모듈내주소
-  모듈 <--->|버스| 모듈2
-
-  subgraph 모듈
-    direction LR
-    0
-    1
-  end
-
-  subgraph 모듈2
-    direction LR
-    100
-    101
-  end
-```
-
-```mermaid
-graph LR
-  모듈내주소:모듈선택
-  모듈 <--->|버스| 모듈2
-
-  subgraph 모듈
-    direction LR
-    0
-    100
-  end
-
-  subgraph 모듈2
-    direction LR
-    1
-    101
-  end
-```
-
-```mermaid
-graph LR
-  뱅크선택:모듈내주소:모듈선택
-  모듈 <--->|버스| 모듈2
-
-  subgraph 뱅크
-    direction LR
-    subgraph 모듈
-      direction LR
-      0
-    100
-    end
-
-    subgraph 모듈2
-      direction LR
-      1
-    101
-    end
-
-  end
-```
+| ==상위 인터리빙== | ![high-order](./assets/high-order-interleaving.jpg) | 주소의 상위비트로 모듈 선택, ==순차적, 에러시 하나의 모듈 영향== |
+| ==하위 인터리빙== | ![low-order](./assets/low-order-interleaving.jpg) | 주소의 하위비트로 모듈 선택, ==다수의 모듈 동시 접근, 에러 전파== |
+| ==혼합 인터리빙== | ![hybrid-order](./assets/hybrid-interleaving.jpg) | ==모듈을 뱅크로 그룹화==, 뱅크 선택시 상위 인터리빙, 뱅크 내 모듈 선택시 하위 인터리빙 |
 
 ### 인터리빙의 액세스 방식
 
 | 구분 | 개념도 | 내용 |
 | --- | --- | --- |
-| ==C-Access, 순차접근== | - | 주소가 버스를 통해 순차적으로 모듈에 도착, ==버스 경합 발생가능== |
-| ==S-Access, 병렬접근== | - | ==읽기 동시 진행, 데이터 순차 전송==하여 ==동시성 확보==로 높은 성능, ==DDR DRAM 적용== |
+| ==C-Access, 순차접근== | ![c-access](./assets/c-access.jpg) | 주소가 버스를 통해 순차적으로 모듈에 도착, ==버스 경합 발생가능== |
+| ==S-Access, 병렬접근== | ![s-access](./assets/s-access.jpg) | ==읽기 동시 진행, 데이터 순차 전송==하여 ==동시성 확보==로 높은 성능, ==DDR DRAM 적용== |
 
 ## 인터리빙 고려사항
 
