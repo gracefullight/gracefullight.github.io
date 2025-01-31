@@ -4,10 +4,58 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 Jan 2025 08:05:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 08:11:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Grover 알고리즘]]></title>
+            <link>https://gracefullight.dev/en/pe/algo/grover-algorithm/</link>
+            <guid>https://gracefullight.dev/en/pe/algo/grover-algorithm/</guid>
+            <pubDate>Fri, 31 Jan 2025 08:11:27 GMT</pubDate>
+            <description><![CDATA[Grover Algorithm]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-개념">Grover 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>양자 중첩과 확률 진폭 증폭을 활용하여 비구조적 데이터베이스에서 특정 항목을 검색하는 데 사용되는 검색 알고리즘</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msqrt><mi>N</mi></msqrt><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\sqrt{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1767em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9267em"><span class="svg-align" style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord" style="padding-left:0.833em"><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span><span style="top:-2.8867em"><span class="pstrut" style="height:3em"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1133em"><span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 로 검색속도 향상 / 암호화된 키 공간 효율적 탐색 / 양자 병렬성 활용 고전 검색 알고리즘 한계 극복</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-동작-매커니즘-동작-원리">Grover 알고리즘 동작 매커니즘, 동작 원리<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-동작-매커니즘">Grover 알고리즘 동작 매커니즘<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-동작-원리">Grover 알고리즘 동작 원리<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>단계</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>양자 상태 중첩</td><td>모든 가능한 상태를 동시에 표현</td><td>N개의 데이터 → <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span>개의 상태</td></tr><tr><td>양자 오라클</td><td>목표 데이터를 식별하는 함수</td><td>특정 항목에 해당하는 상태 마킹</td></tr><tr><td>진폭 증폭</td><td>목표 상태의 확률 진폭을 강화</td><td>검색 성공 확률 증가</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-효율성-비교-적용-사례">Grover 알고리즘 효율성 비교, 적용 사례<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%9A%A8%EC%9C%A8%EC%84%B1-%EB%B9%84%EA%B5%90-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-효율성-비교">Grover 알고리즘 효율성 비교<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%9A%A8%EC%9C%A8%EC%84%B1-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>특징</th><th>고전적 검색 알고리즘</th><th>Grover 알고리즘</th></tr></thead><tbody><tr><td>시간 복잡도</td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mclose">)</span></span></span></span></td><td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msqrt><mi>N</mi></msqrt><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\sqrt{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1767em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">(</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9267em"><span class="svg-align" style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord" style="padding-left:0.833em"><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span><span style="top:-2.8867em"><span class="pstrut" style="height:3em"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1133em"><span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td></tr><tr><td>병렬 처리</td><td>불가능</td><td>가능</td></tr><tr><td>대규모 데이터 처리</td><td>비효율적</td><td>효율적</td></tr><tr><td>암호학적 응용</td><td>느림</td><td>빠름 (예: AES 키 공간 검색)</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-적용-사례">Grover 알고리즘 적용 사례<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>적용 분야</th><th>활용 사례</th><th>기대 효과</th></tr></thead><tbody><tr><td>대규모 데이터 검색</td><td>비정형 데이터베이스에서 특정 값 검색</td><td>검색 속도 획기적 향상</td></tr><tr><td>암호 해독</td><td>AES 및 대칭키 암호에서 키 검색 속도 단축</td><td>기존 보안 체계의 취약점 발생 가능</td></tr><tr><td>최적화 문제 해결</td><td>금융, 물류, 헬스케어 등에서 최적 경로 탐색</td><td>계산 속도 향상 및 비용 절감</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="grover-알고리즘-고려사항">Grover 알고리즘 고려사항<a href="https://gracefullight.dev/en/pe/algo/grover-algorithm/#grover-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>한계점</th><th>설명</th><th>해결 방안</th></tr></thead><tbody><tr><td>실제 하드웨어 제약</td><td>현재 양자컴퓨터의 에러율과 결어긋남 문제</td><td>양자 오류 정정 기술 발전 필요</td></tr><tr><td>데이터 구조 고려 부족</td><td>구조화된 데이터 검색에는 비효율적</td><td>특정 문제에 맞는 최적화 필요</td></tr><tr><td>양자컴퓨터의 상용화 지연</td><td>실용화된 양자 하드웨어가 부족</td><td>클라우드 기반 양자컴퓨팅 서비스 활용</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/algorithm</category>
+        </item>
         <item>
             <title><![CDATA[NewSQL]]></title>
             <link>https://gracefullight.dev/en/pe/db/newsql/</link>
@@ -62,7 +110,7 @@
             <guid>https://gracefullight.dev/en/pe/nw/service-mesh/</guid>
             <pubDate>Fri, 31 Jan 2025 07:43:29 GMT</pubDate>
             <description><![CDATA[Service Mesh]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념">서비스메쉬 개념<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EF%BF%BD%EF%BF%BD%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념">서비스메쉬 개념<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>마이크로서비스 환경에서 서비스 간의 통신을 최적화하고 관리하는 구조로, 트래픽 제어, 보안 강화, 모니터링 기능을 제공</li>
 <li>서비스 간 통신 복잡성 증가 / 보안 요구사항 강화 / 대규모 분산 환경 운영 단순화, 실시간 모니터링</li>
@@ -139,7 +187,7 @@
             <guid>https://gracefullight.dev/en/pe/sec/data-sovereignty/</guid>
             <pubDate>Fri, 31 Jan 2025 05:20:03 GMT</pubDate>
             <description><![CDATA[Data Sovereignty]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-개념">데이터 주권 개념<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-개념">데이터 주권 개념<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EF%BF%BD%EA%B6%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>특정 국가 내에서 데이터가 저장, 처리, 관리되어야 한다는 규제를 준수하는 것</li>
 <li>CCPA(미국), GDPR(유럽), 데이터 보안법(중국) 등 데이터 저장/처리 위치 제한 조건을 만족하기 위해 멀티클라우드 환경 사용</li>
@@ -232,32 +280,6 @@
 <table><thead><tr><th>한계점</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>연산 속도 저하</td><td>암호화/복호화 연산이 느려 대규모 데이터 처리에 비효율적</td><td>AES와 결합한 하이브리드 암호 시스템 구축</td></tr><tr><td>양자컴퓨팅 위협</td><td>양자컴퓨팅 기술 발전 시 소인수분해 문제가 해결될 가능성 존재</td><td>양자내성암호, PQC 도입</td></tr><tr><td>키 길이 증가</td><td>보안 강화를 위해 키 길이가 지속적으로 증가함</td><td>효율적인 알고리즘 최적화 및 하드웨어 가속화</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/security</category>
-        </item>
-        <item>
-            <title><![CDATA[다익스트라 알고리즘]]></title>
-            <link>https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/</link>
-            <guid>https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/</guid>
-            <pubDate>Thu, 30 Jan 2025 12:55:13 GMT</pubDate>
-            <description><![CDATA[Dijkstra Algorithm]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-개념">다익스트라 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>가중치가 양수인 그래프에서 한 노드에서 다른 모든 노드로의 최단 경로를 찾는 알고리즘</li>
-<li>탐욕 접근 기반으로 최단 경로 탐색, 네트워크 최적화, 실시간 경로 계산에 적합</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-동작원리-수행절차-활용사례">다익스트라 알고리즘 동작원리, 수행절차, 활용사례<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC-%EC%88%98%ED%96%89%EC%A0%88%EC%B0%A8-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-동작원리">다익스트라 알고리즘 동작원리<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>우선순위 큐 사용시 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O((V+E) log V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="mopen">((</span><span class="mord mathnormal" style="margin-right:0.22222em">V</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="mord mathnormal" style="margin-right:0.22222em">V</span><span class="mclose">)</span></span></span></span>의 시간복잡도로 거리 탐색 가능</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-수행절차">다익스트라 알고리즘 수행절차<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%88%98%ED%96%89%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>초기화</td><td>시작 노드의 거리를 0으로 설정하고 나머지 노드의 거리를 무한대로 초기화</td><td>시작 노드 A: 0, 나머지 노드: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord">∞</span></span></span></span></td></tr><tr><td>노드 선택</td><td>방문하지 않은 노드 중 가장 작은 거리 값을 가진 노드 선택</td><td>현재 노드 A → 인접 노드 B, C</td></tr><tr><td>거리 갱신</td><td>선택된 노드와 인접한 노드들의 거리 값을 갱신</td><td>노드 B 거리: 5, 노드 C 거리: 3</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-활용사례">다익스트라 알고리즘 활용사례<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%99%9C%EC%9A%A9%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>활용분야</th><th>내용</th><th>사례</th></tr></thead><tbody><tr><td>네트워크 라우팅</td><td>OSPF 프로토콜에서 최적의 데이터 경로 탐색</td><td>Cisco 및 Juniper 네트워크 장비</td></tr><tr><td>지도 탐색 서비스</td><td>도로 네트워크의 가중치를 기반으로 최단 경로 제공</td><td>Google Maps, Waze, 네이버 지도</td></tr><tr><td>공장 물류 자동화</td><td>물류 로봇 및 AGV(Automated Guided Vehicle)의 이동 경로 최적화</td><td>Amazon 물류 창고 로봇</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-개선방안">다익스트라 알고리즘 개선방안<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EC%84%A0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>한계점</th><th>설명</th><th>개선 방안</th></tr></thead><tbody><tr><td>음수 가중치 미지원</td><td>음수 가중치가 있는 그래프에서는 올바른 결과를 보장하지 못함</td><td>벨만-포드 알고리즘 활용</td></tr><tr><td>대규모 그래프에서 성능 저하</td><td>많은 노드와 간선을 포함하는 그래프에서 높은 계산 비용 발생</td><td>휴리스틱 기반 A* 알고리즘 적용</td></tr><tr><td>복잡한 환경</td><td>동적인 환경에서 즉각적인 경로 변경 어려움</td><td>AI 기반 실시간 경로 재계산 기술 도입</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/algorithm</category>
         </item>
     </channel>
 </rss>
