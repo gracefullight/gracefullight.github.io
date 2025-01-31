@@ -20,17 +20,17 @@ graph TB
     DB2[(DB)]
     DB3[(DB)]
 
-    OriginDB -->|샤드키| DB1
-    OriginDB -->|샤드키| DB2
-    OriginDB -->|샤드키| DB3
+    OriginDB -->|샤드키| DB1[(분산 DB 1)]
+    OriginDB -->|샤드키| DB2[(분산 DB 2)]
+    OriginDB -->|샤드키| DB3[(분산 DB 3)]
   end
 
   subgraph 파티셔닝
     subgraph DB
       direction TB
-      table1[Table]
-      table2[Table]
-      table3[Table]
+      table1[테이블 파티션 1]
+      table2[테이블 파티션 2]
+      table3[테이블 파티션 3]
     end
   end
 ```
