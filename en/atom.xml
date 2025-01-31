@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-31T05:50:36.300Z</updated>
+    <updated>2025-01-31T05:59:03.725Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[샤딩 전략, 해시 기반, 범위 기반]]></title>
+        <id>https://gracefullight.dev/en/pe/db/sharding-strategies/</id>
+        <link href="https://gracefullight.dev/en/pe/db/sharding-strategies/"/>
+        <updated>2025-01-31T05:59:03.725Z</updated>
+        <summary type="html"><![CDATA[Sharding Strategies, Hash-based Sharding, Range-based Sharding]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="�샤딩-개념">샤딩 개념<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li>대규모 데이터베이스를 여러 서버에 분산 저장하여 처리 성능을 향상시키는 기법</li>
+<li>데이터 접근 패턴에 따른 적절한 샤딩 전략 선택 필요</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-비교-활용-사례">Hash-based 샤딩, Range-based 샤딩 비교, 활용 사례<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EB%B9%84%EA%B5%90-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-개념-비교">Hash-based 샤딩, Range-based 샤딩 개념 비교<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-상세-비교">Hash-based 샤딩, Range-based 샤딩 상세 비교<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>항목</th><th>Hash-based Sharding</th><th>Range-based Sharding</th></tr></thead><tbody><tr><td>분배 방식</td><td>해시 함수 기반</td><td>범위 기반</td></tr><tr><td>데이터 분포</td><td>균등 분배</td><td>불균형 가능</td></tr><tr><td>범위 쿼리 처리</td><td>비효율적</td><td>효율적</td></tr><tr><td>샤드 추가/제거 영향</td><td>전체 데이터 재배치 필요</td><td>일부 데이터 이동</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-활용-사례">샤딩 활용 사례<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>전략</th><th>적용 사례</th><th>효과</th></tr></thead><tbody><tr><td>Hash-based Sharding</td><td>소셜 미디어 플랫폼</td><td>사용자 ID를 해싱하여 부하 균형 유지</td></tr><tr><td>Hash-based Sharding</td><td>온라인 게임</td><td>게임 상태 데이터 분산 저장</td></tr><tr><td>Range-based Sharding</td><td>전자상거래</td><td>날짜별 주문 데이터 저장 및 쿼리 최적화</td></tr><tr><td>Range-based Sharding</td><td>금융 서비스</td><td>계좌 번호 또는 지역 기반 데이터 관리</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-설계시-고려사항">샤딩 설계시 고려사항<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EC%84%A4%EA%B3%84%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>고려사항</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>데이터 접근 패턴</td><td>랜덤 액세스 vs 범위 쿼리</td><td>랜덤 액세스 → Hash-based</td></tr><tr><td></td><td></td><td>범위 쿼리 → Range-based</td></tr><tr><td>부하 분산</td><td>데이터 불균형 발생 가능성</td><td>Hash-based로 균형 유지</td></tr><tr><td>샤드 추가/제거 영향</td><td>데이터 재배치 비용</td><td>샤드 크기 확장을 고려한 설계</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/database" term="pe/database"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ITIL,]]></title>
         <id>https://gracefullight.dev/en/pe/mng/itil/</id>
@@ -133,7 +161,7 @@
         <link href="https://gracefullight.dev/en/pe/sec/rsa/"/>
         <updated>2025-01-31T03:31:47.580Z</updated>
         <summary type="html"><![CDATA[Rivest-Shamir-Adleman Encryption]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개�념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>소인수분해 문제의 계산적 복잡성을 기반으로 하며, 데이터 암호화 및 디지털 서명을 통해 정보의 기밀성, 무결성, 인증을 보장하는 암호화 알고리즘</li>
 <li>데이터 기밀성 보장 / 디지털 서명 활용 / 비대칭 키 관리 용이성</li>
@@ -219,7 +247,7 @@
         <link href="https://gracefullight.dev/en/pe/conv/digital-sustainability/"/>
         <updated>2025-01-30T02:56:05.553Z</updated>
         <summary type="html"><![CDATA[Digital Sustainability]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념">디지털 지속가능성 개념<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속��가능성-개념">디지털 지속가능성 개념<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>디지털 기술과 인프라를 활용하여 환경, 사회, 경제적 지속 가능성을 동시에 추구하는 개념</li>
 <li>필요성<!-- -->
@@ -275,34 +303,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/security" term="pe/security"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shor, 쇼어 알고리즘]]></title>
-        <id>https://gracefullight.dev/en/pe/algo/shor-algorithm/</id>
-        <link href="https://gracefullight.dev/en/pe/algo/shor-algorithm/"/>
-        <updated>2025-01-29T22:37:05.547Z</updated>
-        <summary type="html"><![CDATA[Shor Algorithm]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-개념">쇼어 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>소인수분해 문제를 양자컴퓨터에서 다항 시간(polynomial time)에 해결하는 알고리즘으로, RSA, ECC 등 기존 암호화 체계를 위협하는 대표적 기술</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-개념도-동작-원리-활용가능성">쇼어 알고리즘 개념도, 동작 원리, 활용가능성<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%ED%99%9C%EC%9A%A9%EA%B0%80%EB%8A%A5%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-개념도">쇼어 알고리즘 개념도<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>양자컴퓨팅의 병렬 연산과 양자 중첩(superposition), 얽힘(entanglement)을 활용하여 다항 시간 내에 소인수분해 수행</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-동작-원리">쇼어 알고리즘 동작 원리<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>설명</th><th>주요 기법</th></tr></thead><tbody><tr><td>1. 입력 처리</td><td>소인수분해할 숫자 N을 입력값으로 설정</td><td>정수론 기반 수학</td></tr><tr><td>2. 양자 상태 초기화</td><td>양자 비트를 활용해 병렬 연산 준비</td><td>양자 중첩</td></tr><tr><td>3. 양자 퓨리에 변환(QFT) 수행</td><td>주기성을 찾아 소인수 결정</td><td>양자 퓨리에 변환</td></tr><tr><td>4. 주기 찾기</td><td>확률적으로 반복 연산 후 정확한 주기 탐색</td><td>양자 얽힘 활용</td></tr><tr><td>5. 소인수 계산 및 검증</td><td>고전 컴퓨터를 이용해 소인수 계산</td><td>확률적 연산 최적화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-활용가능성">쇼어 알고리즘 활용가능성<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%99%9C%EC%9A%A9%EA%B0%80%EB%8A%A5%EC%84%B1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>분야</th><th>내용</th><th>사례</th></tr></thead><tbody><tr><td>RSA 암호 해독</td><td>RSA 암호는 소인수분해의 난해함을 기반으로 보안 유지</td><td>2048비트 RSA 암호를 수 분 내 해독 가능</td></tr><tr><td>암호화 알고리즘 대체</td><td>Post-Quantum Cryptography(PQC) 연구 가속화</td><td>NIST, 양자 내성 암호 표준화 작업 진행</td></tr><tr><td>금융·군사 데이터 보안 위협</td><td>금융·국방 분야의 암호화 데이터 보안 취약</td><td>국가적 차원의 대체 암호 알고리즘 필요</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="쇼어-알고리즘-한계-및-해결방안">쇼어 알고리즘 한계 및 해결방안<a href="https://gracefullight.dev/en/pe/algo/shor-algorithm/#%EC%87%BC%EC%96%B4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%95%9C%EA%B3%84-%EB%B0%8F-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>설명</th><th>해결 방안</th></tr></thead><tbody><tr><td>양자컴퓨터의 물리적 제약</td><td>안정적인 수백만 개의 양자 비트(큐비트) 필요</td><td>양자 오류 정정 기술(QEC) 연구 진행</td></tr><tr><td>양자 오류 정정의 복잡성</td><td>환경 변화로 인해 큐비트 유지가 어려움</td><td>토폴로지컬 오류 정정 기술 도입</td></tr><tr><td>연산 자원의 과도한 요구</td><td>고속 연산을 위한 대규모 병렬 연산 필요</td><td>고성능 양자 프로세서 개발 필요</td></tr><tr><td>현재의 제한된 응용 범위</td><td>특정 암호 해독에는 강력하지만 범용성 부족</td><td>응용 분야 확장을 위한 연구 지속</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/algorithm" term="pe/algorithm"/>
     </entry>
 </feed>
