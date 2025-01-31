@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-31T07:43:29.120Z</updated>
+    <updated>2025-01-31T07:54:36.496Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[VSM, Value Stream Mapping]]></title>
+        <id>https://gracefullight.dev/pe/mng/itil-vsm/</id>
+        <link href="https://gracefullight.dev/pe/mng/itil-vsm/"/>
+        <updated>2025-01-31T07:54:36.496Z</updated>
+        <summary type="html"><![CDATA[Value Stream Mapping]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념">VSM 개념<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="VSM 개념에 대한 직접 링크" title="VSM 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>IT 서비스가 고객에게 가치를 전달하는 과정에서 발생하는 모든 활동을 매핑하여 시각적으로 표현하고 최적화하는 기법</li>
+<li>ITIL 서비스 가치 체인(Service Value Chain) 내에서 프로세스 개선과 낭비 제거를 위해 활용 / Lean 원칙 기반 / IT 서비스의 품질과 속도를 지속적 향상</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념도-구성요소-활용방안">VSM 개념도, 구성요소, 활용방안<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="VSM 개념도, 구성요소, 활용방안에 대한 직접 링크" title="VSM 개념도, 구성요소, 활용방안에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-구성요소">VSM 구성요소<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="VSM 구성요소에 대한 직접 링크" title="VSM 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>현재 상태</td><td>현재 프로세스를 매핑하여 병목 구간 및 비효율성 식별</td><td>인시던트 관리 프로세스 분석</td></tr><tr><td>미래 상태</td><td>최적화된 프로세스를 설계하여 이상적인 가치 흐름 구성</td><td>자동화된 소프트웨어 배포 파이프라인</td></tr><tr><td>갭 분석</td><td>현재 상태와 미래 상태 간 차이를 분석하여 구체적인 개선 과제 도출</td><td>처리 시간 단축 목표 설정</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-활용방안">VSM 활용방안<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%ED%99%9C%EC%9A%A9%EF%BF%BD%EF%BF%BD%EB%B0%A9%EC%95%88" class="hash-link" aria-label="VSM 활용방안에 대한 직접 링크" title="VSM 활용방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>방안</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>병목현상 제거</td><td>반복적인 승인 단계나 대기 시간 제거</td><td>불필요한 승인절차 단축</td></tr><tr><td>낭비 최소화</td><td>비부가가치 활동 제거</td><td>불필요한 데이터 이동 자동화</td></tr><tr><td>자동화 도입</td><td>DevOps와 연계하여 수작업 프로세스 자동화</td><td>CI/CD 배포시간 단축</td></tr><tr><td>실시간 모니터링</td><td>KPI 설정 및 성과 측정</td><td>KPI, RTO, RPO</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-도입-효과">VSM 도입 효과<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="VSM 도입 효과에 대한 직접 링크" title="VSM 도입 효과에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>금융</td><td>대출 신청 프로세스 최적화</td><td>처리 시간 40% 단축, 고객 만족도 상승</td></tr><tr><td>IT 서비스 제공</td><td>인시던트 해결 프로세스 개선</td><td>평균 처리 시간 30% 감소</td></tr><tr><td>헬스케어</td><td>환자 데이터 관리 및 진단 절차 간소화</td><td>데이터 처리 효율성 향상</td></tr></tbody></table>
+<ul>
+<li>AI 기반 실시간 데이터 분석과 결합하여 IT 서비스 프로세스 효율성과 품질을 동시 향상</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[서비스 메쉬]]></title>
         <id>https://gracefullight.dev/pe/nw/service-mesh/</id>
@@ -270,38 +299,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[디지털 지속 가능성]]></title>
-        <id>https://gracefullight.dev/pe/conv/digital-sustainability/</id>
-        <link href="https://gracefullight.dev/pe/conv/digital-sustainability/"/>
-        <updated>2025-01-30T02:56:05.553Z</updated>
-        <summary type="html"><![CDATA[Digital Sustainability]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념">디지털 지속가능성 개념<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="디지털 지속가능성 개념에 대한 직접 링크" title="디지털 지속가능성 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>디지털 기술과 인프라를 활용하여 환경, 사회, 경제적 지속 가능성을 동시에 추구하는 개념</li>
-<li>필요성<!-- -->
-<ul>
-<li>환경적 필요성: 데이터 센터 및 ICT 인프라의 에너지 소비 증가에 따른 탄소 배출 저감 필요</li>
-<li>사회적 필요성: 디지털 격차 해소를 통한 포용적 성장 및 전 세계적 접근성 확보</li>
-<li>경제적 필요성: 디지털 기술을 통한 생산성 향상과 자원 최적화로 지속 가능한 성장 촉진</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도-핵심요소-실현방안">디지털 지속가능성 개념도, 핵심요소, 실현방안<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 지속가능성 개념도, 핵심요소, 실현방안에 대한 직접 링크" title="디지털 지속가능성 개념도, 핵심요소, 실현방안에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도">디지털 지속가능성 개념도<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="디지털 지속가능성 개념도에 대한 직접 링크" title="디지털 지속가능성 개념도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-핵심요소">디지털 지속가능성 핵심요소<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="디지털 지속가��능성 핵심요소에 대한 직접 링크" title="디지털 지속가능성 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>핵심 요소</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>환경적 지속 가능성</td><td>디지털 기술로 에너지 소비 절감 및 탄소 배출 최소화</td><td>Microsoft의 100% 재생 가능 에너지 데이터 센터</td></tr><tr><td>사회적 지속 가능성</td><td>디지털 접근성을 높여 소외 계층의 기술 혜택 보장</td><td>Google의 Project Loon, 농촌 지역 인터넷 연결</td></tr><tr><td>경제적 지속 가능성</td><td>디지털 기술을 활용한 생산성 향상 및 비용 절감</td><td>스마트 팩토리 도입을 통한 제조 비용 절감</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-실현방안">디지털 지속가능성 실현방안<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="디지털 지속가능성 실현방안에 대한 직접 링크" title="디지털 지속가능성 실현방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>실현 방안</th><th>내용</th><th>기대 효과</th></tr></thead><tbody><tr><td>그린 데이터 센터 구축</td><td>에너지 효율적인 서버 및 재생 가능 에너지 도입</td><td>운영 비용 절감 및 탄소 배출 저감</td></tr><tr><td>디지털 탄소 발자국 감소</td><td>클라우드 및 엣지 컴퓨팅 활용으로 에너지 소비 최적화</td><td>IT 인프라의 지속 가능성 향상</td></tr><tr><td>순환 경제 지원</td><td>IT 장비 재활용 및 부품 업사이클링 강화</td><td>전자 폐기물 감축 및 자원 재활용 증가</td></tr><tr><td>디지털 포용성 강화</td><td>저개발국 및 농촌 지역 인터넷 접근성 확대</td><td>글로벌 디지털 격차 해소</td></tr><tr><td>정부-기업 협력 강화</td><td>디지털 지속 가능성을 위한 정책 및 규제 마련</td><td>장기적인 지속 가능성 확보</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-발전방향">디지털 지속가능성 발전방향<a href="https://gracefullight.dev/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="디지털 지속가능성 발전방향에 대한 직접 링크" title="디지털 지속가능성 발전방향에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>세부 내용</th><th>발전 방향</th></tr></thead><tbody><tr><td>기술적</td><td>고성능 컴퓨팅의 에너지 소모 문제</td><td>양자컴퓨팅 및 AI 기반 자원 최적화 기술 도입</td></tr><tr><td>정책적</td><td>디지털 지속 가능성을 보장하는 국제적 표준과 규제 부재</td><td>ISO 및 ITU를 통한 글로벌 표준화 작업 가속화</td></tr><tr><td>사회적 과제</td><td>저소득 국가와 지역 간 디지털 격차</td><td>공공과 민간 협력을 통한 인프라 투자 확대</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>

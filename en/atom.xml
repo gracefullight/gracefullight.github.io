@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-31T07:43:29.120Z</updated>
+    <updated>2025-01-31T07:54:36.496Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[VSM, Value Stream Mapping]]></title>
+        <id>https://gracefullight.dev/en/pe/mng/itil-vsm/</id>
+        <link href="https://gracefullight.dev/en/pe/mng/itil-vsm/"/>
+        <updated>2025-01-31T07:54:36.496Z</updated>
+        <summary type="html"><![CDATA[Value Stream Mapping]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념">VSM 개념<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>IT 서비스가 고객에게 가치를 전달하는 과정에서 발생하는 모든 활동을 매핑하여 시각적으로 표현하고 최적화하는 기법</li>
+<li>ITIL 서비스 가치 체인(Service Value Chain) 내에서 프로세스 개선과 낭비 제거를 위해 활용 / Lean 원칙 기반 / IT 서비스의 품질과 속도를 지속적 향상</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념도-구성요소-활용방안">VSM 개념도, 구성요소, 활용방안<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-구성요소">VSM 구성요소<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>현재 상태</td><td>현재 프로세스를 매핑하여 병목 구간 및 비효율성 식별</td><td>인시던트 관리 프로세스 분석</td></tr><tr><td>미래 상태</td><td>최적화된 프로세스를 설계하여 이상적인 가치 흐름 구성</td><td>자동화된 소프트웨어 배포 파이프라인</td></tr><tr><td>갭 분석</td><td>현재 상태와 미래 상태 간 차이를 분석하여 구체적인 개선 과제 도출</td><td>처리 시간 단축 목표 설정</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-활용방안">VSM 활용방안<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>방안</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>병목현상 제거</td><td>반복적인 승인 단계나 대기 시간 제거</td><td>불필요한 승인절차 단축</td></tr><tr><td>낭비 최소화</td><td>비부가가치 활동 제거</td><td>불필요한 데이터 이동 자동화</td></tr><tr><td>자동화 도입</td><td>DevOps와 연계하여 수작업 프로세스 자동화</td><td>CI/CD 배포시간 단축</td></tr><tr><td>실시간 모니터링</td><td>KPI 설정 및 성과 측정</td><td>KPI, RTO, RPO</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-도입-효과">VSM 도입 효과<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>금융</td><td>대출 신청 프로세스 최적화</td><td>처리 시간 40% 단축, 고객 만족도 상승</td></tr><tr><td>IT 서비스 제공</td><td>인시던트 해결 프로세스 개선</td><td>평균 처리 시간 30% 감소</td></tr><tr><td>헬스케어</td><td>환자 데이터 관리 및 진단 절차 간소화</td><td>데이터 처리 효율성 향상</td></tr></tbody></table>
+<ul>
+<li>AI 기반 실시간 데이터 분석과 결합하여 IT 서비스 프로세스 효율성과 품질을 동시 향상</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/it-management" term="pe/it-management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[서비스 메쉬]]></title>
         <id>https://gracefullight.dev/en/pe/nw/service-mesh/</id>
@@ -26,7 +55,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-역할">서비스 메쉬 역할<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>역할</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>트래픽 관리</td><td>로드 밸런싱, 트래픽 분산, 서비스 디스커버리 지원</td><td>카나리 배포로 새 버전 점진적 전환</td></tr><tr><td>보안</td><td>서비스 간 통신 암호화(TLS), 인증 및 권한 부여</td><td>민감 데이터 처리 API의 보안 강화</td></tr><tr><td>모니터링</td><td>메트릭 수집, 분산 추적, 로깅</td><td>Istio 텔레메트리를 통한 성능 시각화</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-도입-장점">서비스 메쉬 도입 장점<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EB%8F%84%EC%9E%85-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-도입-장점">서비스 메쉬 도입 장점<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EB%8F%84%EC%9E%85-%EC%9E%A5%EF%BF%BD%EF%BF%BD%EC%A0%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>문제</th><th>세부 내용</th><th>장점</th></tr></thead><tbody><tr><td>서비스 간 복잡한 통신</td><td>서비스 간 빈번한 통신으로 인한 복잡성 증가</td><td>통신 로직을 Service Mesh로 표준화</td></tr><tr><td>보안 취약점</td><td>네트워크 계층에서의 데이터 유출 위험</td><td>TLS 암호화와 Zero Trust 모델 적용</td></tr><tr><td>운영 문제</td><td>장애 진단 및 성능 최적화 어려움</td><td>실시간 모니터링과 분산 추적 활용</td></tr><tr><td>유연한 배포</td><td>트래픽 제어 및 롤백 어려움</td><td>카나리 배포, 블루-그린 배포 지원</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-주요-도구">서비스 메쉬 주요 도구<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EC%A3%BC%EC%9A%94-%EB%8F%84%EA%B5%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <table><thead><tr><th>도구</th><th>특징</th><th>활용 사례</th></tr></thead><tbody><tr><td>Istio</td><td>로드 밸런싱, 암호화, 인증 기능 제공</td><td>금융 서비스의 민감 데이터 보안 강화</td></tr><tr><td>Linkerd</td><td>경량화된 트래픽 관리</td><td>전자상거래 플랫폼의 성능 지표 모니터링</td></tr><tr><td>Consul</td><td>서비스 디스커버리 및 네트워크 보안</td><td>분산 환경에서의 암호화 통신 관리</td></tr></tbody></table>]]></content>
@@ -43,7 +72,7 @@
         <link href="https://gracefullight.dev/en/pe/db/sharding-strategies/"/>
         <updated>2025-01-31T05:59:03.725Z</updated>
         <summary type="html"><![CDATA[Sharding Strategies, Hash-based Sharding, Range-based Sharding]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="��샤딩-개념">샤딩 개념<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-개념">샤딩 개념<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>대규모 데이터베이스를 여러 서버에 분산 저장하여 처리 성능을 향상시키는 기법</li>
@@ -82,7 +111,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-핵심요소">ITIL 핵심요소<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>서비스 가치 시스템</td><td>IT 서비스가 조직의 가치를 창출하는 데 필요한 요소와 활동의 프레임워크</td><td>거버넌스, 지속적 개선 포함</td></tr><tr><td>서비스 가치 체인</td><td>IT 서비스 제공 프로세스를 6가지 활동으로 분류</td><td>Plan, Improve, Engage 등</td></tr><tr><td>ITIL 4 실무</td><td>ITIL 3의 프로세스를 발전시켜 34개 실무 영역으로 확장</td><td>인시던트 관리, 문제 관리, 변경 관리 등</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil을-활용한-서비스-관리-방안-적용-사례">ITIL을 활용한 서비스 관리 방안, 적용 사례<a href="https://gracefullight.dev/en/pe/mng/itil/#itil%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-�관리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-관리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>DevOps와 Agile 통합</td><td>CI/CD와 결합하여 변경 관리 자동화 및 배포 속도 향상</td><td>AWS 클라우드에서의 자동화된 배포</td></tr><tr><td>서비스 가치 체인 활용</td><td>고객 요구에 따라 특정 활동 선택적 적용</td><td>Engage, Improve 단계 반복 실행</td></tr><tr><td>고객 중심 접근</td><td>AI 챗봇을 활용한 신속한 고객 응대 및 피드백 반영</td><td>서비스 데스크에서 AI 기반 고객 지원</td></tr><tr><td>지속적 개선</td><td>데이터 기반 실시간 의사결정 및 비즈니스 목표 정렬</td><td>IT 운영 데이터 분석으로 장애 원인 식별</td></tr><tr><td>ITIL 실무 통합</td><td>변경 관리와 문제 관리 통합으로 비즈니스 연속성 유지</td><td>병원 IT 인프라에서의 장애 방지</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-적용-사례">ITIL 적용 사례<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>클라우드 서비스</td><td>AWS에서 변경 관리와 지속적 개선 도입</td><td>클라우드 서비스 품질 향상</td></tr><tr><td>금융 서비스</td><td>DevOps와 ITIL 4 통합으로 빠른 서비스 제공</td><td>보안 유지 및 배포 속도 증가</td></tr><tr><td>헬스케어</td><td>인시던트 관리와 문제 관리 자동화</td><td>의료 데이터 보호 및 응답 시간 단축</td></tr></tbody></table>
@@ -115,7 +144,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-관련-주요-도전-과제">데이터 주권 관련 주요 도전 과제<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%8F%84%EC%A0%84-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>도전 과제</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>국가별 데이터 규제</td><td>각국의 데이터 보호 법률 준수 필요</td><td>EU GDPR, 중국 데이터 보안법</td></tr><tr><td>데이터 위치 관리</td><td>데이터가 저장/처리되는 위치 파악 어려움</td><td>다국적 기업의 데이터 이동 관리</td></tr><tr><td>복잡성 증가</td><td>멀티 클라우드 환경에서 데이터 관리 복잡성</td><td>데이터 이동 및 복제로 인한 위험</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-방안-확립-사례">데이터 주권 확립 방안, 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-방안-확립-��사례">데이터 주권 확립 방안, 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-방안">데이터 주권 확립 방안<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>접근 방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>데이터 지역화</td><td>특정 국가 내 데이터 저장 및 처리 전용 인프라 구축</td><td>Microsoft Azure 지역 데이터센터</td></tr><tr><td>데이터 암호화</td><td>데이터 암호화 적용 및 고객이 직접 키를 관리하는 방식(CMK) 활용</td><td>AWS KMS, Azure Key Vault</td></tr><tr><td>정책 기반 제어</td><td>데이터 저장 및 이동을 정책 기반으로 자동 제어</td><td>Terraform, Kubernetes</td></tr><tr><td>TEE 활용</td><td>데이터가 처리 중에도 암호화 상태를 유지하는 환경 제공</td><td>Intel SGX, AMD SEV</td></tr><tr><td>모니터링 솔루션</td><td>데이터 위치 및 이동 실시간 추적</td><td>AWS Macie, Google Cloud DLP</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-사례">데이터 주권 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -133,7 +162,7 @@
         <link href="https://gracefullight.dev/en/pe/sw/ddd-aggregate/"/>
         <updated>2025-01-31T04:50:24.160Z</updated>
         <summary type="html"><![CDATA[Domain Driven Development Aggregate]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="에�그리거트-개념">에그리거트 개념<a href="https://gracefullight.dev/en/pe/sw/ddd-aggregate/#%EC%97%90%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="에그리거트-개�념">에그리거트 개념<a href="https://gracefullight.dev/en/pe/sw/ddd-aggregate/#%EC%97%90%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>도메인 주도 설계(DDD)에서 도메인 모델의 논리적 단위를 정의하며, 데이터 무결성을 유지하고 복잡성을 관리하는 역할 담당</li>
 <li>데이터 무결성 보장, 복잡성 관리, 비지니스 로직을 캡슐화하여 도메인 논리 표현</li>
@@ -191,7 +220,7 @@
         <link href="https://gracefullight.dev/en/pe/sec/rsa/"/>
         <updated>2025-01-31T03:31:47.580Z</updated>
         <summary type="html"><![CDATA[Rivest-Shamir-Adleman Encryption]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개��념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>소인수분해 문제의 계산적 복잡성을 기반으로 하며, 데이터 암호화 및 디지털 서명을 통해 정보의 기밀성, 무결성, 인증을 보장하는 암호화 알고리즘</li>
 <li>데이터 기밀성 보장 / 디지털 서명 활용 / 비대칭 키 관리 용이성</li>
@@ -218,7 +247,7 @@
         <link href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/"/>
         <updated>2025-01-30T12:55:13.902Z</updated>
         <summary type="html"><![CDATA[Dijkstra Algorithm]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-�알고리즘-개념">다익스트라 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="다익스트라-알고리즘-개�념">다익스트라 알고리즘 개념<a href="https://gracefullight.dev/en/pe/algo/dijkstra-algorithm/#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>가중치가 양수인 그래프에서 한 노드에서 다른 모든 노드로의 최단 경로를 찾는 알고리즘</li>
 <li>탐욕 접근 기반으로 최단 경로 탐색, 네트워크 최적화, 실시간 경로 계산에 적합</li>
@@ -248,7 +277,7 @@
         <link href="https://gracefullight.dev/en/pe/algo/xai/"/>
         <updated>2025-01-30T03:06:53.694Z</updated>
         <summary type="html"><![CDATA[Explainable AI]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xi-개념">XI 개념<a href="https://gracefullight.dev/en/pe/algo/xai/#xi-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="xi-개념">XI 개념<a href="https://gracefullight.dev/en/pe/algo/xai/#xi-%EA%B0%9C%EF%BF%BD%EF%BF%BD%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>AI 모델의 의사결정 과정을 사람에게 이해할 수 있는 형태로 설명하는 기술</li>
 <li>AI 결과에 대한 신뢰성, 투명성 향상 / 금융,의료,법률 등 고위험 분야에서의 설명가능성 확보 / GDPR 규제 준수</li>
@@ -270,38 +299,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[디지털 지속 가능성]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/digital-sustainability/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/digital-sustainability/"/>
-        <updated>2025-01-30T02:56:05.553Z</updated>
-        <summary type="html"><![CDATA[Digital Sustainability]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념">디지털 지속가능성 개념<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>디지털 기술과 인프라를 활용하여 환경, 사회, 경제적 지속 가능성을 동시에 추구하는 개념</li>
-<li>필요성<!-- -->
-<ul>
-<li>환경적 필요성: 데이터 센터 및 ICT 인프라의 에너지 소비 증가에 따른 탄소 배출 저감 필요</li>
-<li>사회적 필요성: 디지털 격차 해소를 통한 포용적 성장 및 전 세계적 접근성 확보</li>
-<li>경제적 필요성: 디지털 기술을 통한 생산성 향상과 자원 최적화로 지속 가능한 성장 촉진</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도-핵심요소-실현방안">디지털 지속가능성 개념도, 핵심요소, 실현방안<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-개념도">디지털 지속가능성 개념도<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-핵심요소">디지털 지속가능성 핵심요소<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>핵심 요소</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>환경적 지속 가능성</td><td>디지털 기술로 에너지 소비 절감 및 탄소 배출 최소화</td><td>Microsoft의 100% 재생 가능 에너지 데이터 센터</td></tr><tr><td>사회적 지속 가능성</td><td>디지털 접근성을 높여 소외 계층의 기술 혜택 보장</td><td>Google의 Project Loon, 농촌 지역 인터넷 연결</td></tr><tr><td>경제적 지속 가능성</td><td>디지털 기술을 활용한 생산성 향상 및 비용 절감</td><td>스마트 팩토리 도입을 통한 제조 비용 절감</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-실현방안">디지털 지속가능성 실현방안<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EC%8B%A4%ED%98%84%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>실현 방안</th><th>내용</th><th>기대 효과</th></tr></thead><tbody><tr><td>그린 데이터 센터 구축</td><td>에너지 효율적인 서버 및 재생 가능 에너지 도입</td><td>운영 비용 절감 및 탄소 배출 저감</td></tr><tr><td>디지털 탄소 발자국 감소</td><td>클라우드 및 엣지 컴퓨팅 활용으로 에너지 소비 최적화</td><td>IT 인프라의 지속 가능성 향상</td></tr><tr><td>순환 경제 지원</td><td>IT 장비 재활용 및 부품 업사이클링 강화</td><td>전자 폐기물 감축 및 자원 재활용 증가</td></tr><tr><td>디지털 포용성 강화</td><td>저개발국 및 농촌 지역 인터넷 접근성 확대</td><td>글로벌 디지털 격차 해소</td></tr><tr><td>정부-기업 협력 강화</td><td>디지털 지속 가능성을 위한 정책 및 규제 마련</td><td>장기적인 지속 가능성 확보</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="디지털-지속가능성-발전방향">디지털 지속가능성 발전방향<a href="https://gracefullight.dev/en/pe/conv/digital-sustainability/#%EB%94%94%EC%A7%80%ED%84%B8-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EC%84%B1-%EB%B0%9C%EC%A0%84%EB%B0%A9%ED%96%A5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>구분</th><th>세부 내용</th><th>발전 방향</th></tr></thead><tbody><tr><td>기술적</td><td>고성능 컴퓨팅의 에너지 소모 문제</td><td>양자컴퓨팅 및 AI 기반 자원 최적화 기술 도입</td></tr><tr><td>정책적</td><td>디지털 지속 가능성을 보장하는 국제적 표준과 규제 부재</td><td>ISO 및 ITU를 통한 글로벌 표준화 작업 가속화</td></tr><tr><td>사회적 과제</td><td>저소득 국가와 지역 간 디지털 격차</td><td>공공과 민간 협력을 통한 인프라 투자 확대</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>
