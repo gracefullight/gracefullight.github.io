@@ -22,6 +22,9 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념도-역할-도입-장점">서비스메쉬 개념도, 역할, 도입 장점<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%97%AD%ED%95%A0-%EB%8F%84%EC%9E%85-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="서비스메쉬 개념도, 역할, 도입 장점에 대한 직접 링크" title="서비스메쉬 개념도, 역할, 도입 장점에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념도">서비스메쉬 개념도<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="서비스메쉬 개념도에 대한 직접 링크" title="서비스메쉬 개념도에 대한 직접 링크">​</a></h3>
 <!-- -->
+<ul>
+<li>서비스메쉬 도입으로 개발 효율성, 운영 편의성, 보안성 강화</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-역할">서비스 메쉬 역할<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="서비스 메쉬 역할에 대한 직접 링크" title="서비스 메쉬 역할에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>역할</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>트래픽 관리</td><td>로드 밸런싱, 트래픽 분산, 서비스 디스커버리 지원</td><td>카나리 배포로 새 버전 점진적 전환</td></tr><tr><td>보안</td><td>서비스 간 통신 암호화(TLS), 인증 및 권한 부여</td><td>민감 데이터 처리 API의 보안 강화</td></tr><tr><td>모니터링</td><td>메트릭 수집, 분산 추적, 로깅</td><td>Istio 텔레메트리를 통한 성능 시각화</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-도입-장점">서비스 메쉬 도입 장점<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EB%8F%84%EC%9E%85-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="서비스 메쉬 도입 장점에 대한 직접 링크" title="서비스 메쉬 도입 장점에 대한 직접 링크">​</a></h3>
