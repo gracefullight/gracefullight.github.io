@@ -10,8 +10,8 @@ tags:
 
 ## 가속화된 GPU 분산 처리 개념
 
-- GPU의 대규모 병렬 연산 능력을 활용하여 빅데이터, 딥러닝, 과학적 시뮬레이션 등의 고속 처리를 지원하는 기술
-- 데이터 분석, 인공지능(AI), 금융 연산 등 다양한 분야에서 실시간 처리 및 고성능 컴퓨팅(HPC, High Performance Computing)을 가능
+- GPU의 ==대규모 병렬 연산 능력을 활용==하여 빅데이터, 딥러닝, 과학적 시뮬레이션 등의 ==고속 처리를 지원==하는 기술
+- 데이터 분석, 인공지능(AI), 금융 연산 등 다양한 분야에서 실시간 처리 및 ==고성능 컴퓨팅==(HPC, High Performance Computing)을 가능
 
 ## 가속화된 GPU 분산 처리 개념도, 구성요소, 활용사례
 
@@ -32,10 +32,10 @@ graph TB
 
 | 구성 요소 | 설명 | 관련 기술 |
 | --- | --- | --- |
-| GPU 클러스터 | 다수의 GPU 노드를 연결하여 병렬 연산 수행 | NVIDIA DGX, AMD Instinct |
-| 연산 프레임워크 | GPU 병렬 연산을 지원하는 API 및 프레임워크 | CUDA, OpenCL, Vulkan |
+| ==GPU 클러스터== | 다수의 GPU 노드를 연결하여 병렬 연산 수행 | NVIDIA DGX, AMD Instinct |
+| ==연산 프레임워크== | GPU 병렬 연산을 지원하는 API 및 프레임워크 | CUDA, OpenCL, Vulkan |
 | 분산 처리 시스템 | GPU를 클러스터 환경에서 활용하는 플랫폼 | Apache Spark, Ray, TensorFlow |
-| 고속 네트워크 | GPU 간 빠른 데이터 전송을 위한 네트워크 | NVLink, InfiniBand |
+| ==고속 네트워크== | GPU 간 빠른 데이터 전송을 위한 네트워크 | NVLink, InfiniBand |
 | 메모리 최적화 | GPU 메모리와 호스트 메모리 간 데이터 전송 최적화 | Unified Memory, Zero-Copy |
 
 ### 가속화된 GPU 분산 처리 활용사례
@@ -51,7 +51,7 @@ graph TB
 
 | 도전 과제 | 문제점 | 해결 방안 |
 | --- | --- | --- |
-| 데이터 전송 병목 | GPU 간 데이터 이동 시 전송 비용이 높은 문제 | NVLink, InfiniBand와 같은 고속 네트워크 기술 활용 |
-| 전력 소비 증가 | GPU 클러스터의 대규모 전력 소비로 운영 비용 상승 | 에너지 효율이 높은 GPU 아키텍처 도입 (NVIDIA Hopper) |
+| ==데이터 전송 병목== | GPU 간 데이터 이동 시 전송 비용이 높은 문제 | NVLink, InfiniBand와 같은 고속 네트워크 기술 활용 |
+| ==전력 소비 증가== | GPU 클러스터의 대규모 전력 소비로 운영 비용 상승 | 에너지 효율이 높은 GPU 아키텍처 도입 (NVIDIA Hopper) |
 | 확장성 한계 | 클러스터 크기가 커질수록 네트워크 병목 및 관리 복잡성 증가 | Kubernetes 기반 컨테이너 오케스트레이션 도입 |
-| 개발 및 운영 복잡성 | GPU 프로그래밍이 어렵고, 병렬 처리 최적화가 필요 | TensorFlow, PyTorch와 같은 고수준 API 활용 |
+| ==개발 및 운영 복잡성== | GPU 프로그래밍이 어렵고, 병렬 처리 최적화가 필요 | TensorFlow, PyTorch와 같은 고수준 API 활용 |

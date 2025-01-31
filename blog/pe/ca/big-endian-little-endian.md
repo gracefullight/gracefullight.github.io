@@ -17,37 +17,9 @@ tags:
 
 ### 빅 엔디언, 리틀 엔디언 개념도
 
-```mermaid
-graph TB
-  subgraph 데이터
-    0A --- 0B --- 0C --- 0D
-  end
-
-  0A --> x0A
-  0B --> x0B
-  0C --> x0C
-  0D --> x0D
-
-  subgraph 메모리
-    x0A[100:0A] --- x0B[101:0B] --- x0C[102:0C] --- x0D[103:0D]
-  end
-```
-
-```mermaid
-graph TB
-  subgraph 데이터
-    1A --- 1B --- 1C --- 1D
-  end
-
-  1A --> x1A
-  1B --> x1B
-  1C --> x1C
-  1D --> x1D
-
-  subgraph 메모리
-    x1D[100:1D] --- x1C[101:1C] --- x1B[102:1B] --- x1A[103:1A]
-  end
-```
+| 빅 앤디언 | 리틀 앤디언 |
+| --- | --- |
+| ![big endian](./assets/big-endian.jpg) | ![little endian](./assets/little-endian.jpg) |
 
 ### 빅 엔디언, 리틀 엔디언 세부 요소
 
