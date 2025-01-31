@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-01-31T05:59:03.725Z</updated>
+    <updated>2025-01-31T07:43:29.120Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[서비스 메쉬]]></title>
+        <id>https://gracefullight.dev/pe/nw/service-mesh/</id>
+        <link href="https://gracefullight.dev/pe/nw/service-mesh/"/>
+        <updated>2025-01-31T07:43:29.120Z</updated>
+        <summary type="html"><![CDATA[Service Mesh]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념">서비스메쉬 개념<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="서비스메쉬 개념에 대한 직접 링크" title="서비스메쉬 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>마이크로서비스 환경에서 서비스 간의 통신을 최적화하고 관리하는 구조로, 트래픽 제어, 보안 강화, 모니터링 기능을 제공</li>
+<li>서비스 간 통신 복잡성 증가 / 보안 요구사항 강화 / 대규모 분산 환경 운영 단순화, 실시간 모니터링</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념도-역할-도입-장점">서비스메쉬 개념도, 역할, 도입 장점<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90%EB%8F%84-%EC%97%AD%ED%95%A0-%EB%8F%84%EC%9E%85-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="서비스메쉬 개념도, 역할, 도입 장점에 대한 직접 링크" title="서비스메쉬 개념도, 역할, 도입 장점에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념도">서비스메쉬 개념도<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="서비스메쉬 개념도에 대한 직접 링크" title="서비스메쉬 개념도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-역할">서비스 메쉬 역할<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="서비스 메쉬 역할에 대한 직접 링크" title="서비스 메쉬 역할에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>역할</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>트래픽 관리</td><td>로드 밸런싱, 트래픽 분산, 서비스 디스커버리 지원</td><td>카나리 배포로 새 버전 점진적 전환</td></tr><tr><td>보안</td><td>서비스 간 통신 암호화(TLS), 인증 및 권한 부여</td><td>민감 데이터 처리 API의 보안 강화</td></tr><tr><td>모니터링</td><td>메트릭 수집, 분산 추적, 로깅</td><td>Istio 텔레메트리를 통한 성능 시각화</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-도입-장점">서비스 메쉬 도입 장점<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EB%8F%84%EC%9E%85-%EC%9E%A5%EC%A0%90" class="hash-link" aria-label="서비스 메쉬 도입 장점에 대한 직접 링크" title="서비스 메쉬 도입 장점에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>문제</th><th>세부 내용</th><th>장점</th></tr></thead><tbody><tr><td>서비스 간 복잡한 통신</td><td>서비스 간 빈번한 통신으로 인한 복잡성 증가</td><td>통신 로직을 Service Mesh로 표준화</td></tr><tr><td>보안 취약점</td><td>네트워크 계층에서의 데이터 유출 위험</td><td>TLS 암호화와 Zero Trust 모델 적용</td></tr><tr><td>운영 문제</td><td>장애 진단 및 성능 최적화 어려움</td><td>실시간 모니터링과 분산 추적 활용</td></tr><tr><td>유연한 배포</td><td>트래픽 제어 및 롤백 어려움</td><td>카나리 배포, 블루-그린 배포 지원</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스-메쉬-주요-도구">서비스 메쉬 주요 도구<a href="https://gracefullight.dev/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%A9%94%EC%89%AC-%EC%A3%BC%EC%9A%94-%EB%8F%84%EA%B5%AC" class="hash-link" aria-label="서비스 메쉬 주요 도구에 대한 직접 링크" title="서비스 메쉬 주요 도구에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>도구</th><th>특징</th><th>활용 사례</th></tr></thead><tbody><tr><td>Istio</td><td>로드 밸런싱, 암호화, 인증 기능 제공</td><td>금융 서비스의 민감 데이터 보안 강화</td></tr><tr><td>Linkerd</td><td>경량화된 트래픽 관리</td><td>전자상거래 플랫폼의 성능 지표 모니터링</td></tr><tr><td>Consul</td><td>서비스 디스커버리 및 네트워크 보안</td><td>분산 환경에서의 암호화 통신 관리</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="professional-engineer" term="professional-engineer"/>
+        <category label="pe/network" term="pe/network"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[샤딩 전략, 해시 기반, 범위 기반]]></title>
         <id>https://gracefullight.dev/pe/db/sharding-strategies/</id>
@@ -273,35 +300,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SD-WAN 보안]]></title>
-        <id>https://gracefullight.dev/pe/sec/sd-wan-security/</id>
-        <link href="https://gracefullight.dev/pe/sec/sd-wan-security/"/>
-        <updated>2025-01-30T02:34:55.423Z</updated>
-        <summary type="html"><![CDATA[Software-Defined Wide Area Network Security]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-개념">SD-WAN 개념<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="SD-WAN 개념에 대한 직접 링크" title="SD-WAN 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>소프트웨어 정의 네트워킹(SDN) 기술을 활용하여 기업의 WAN(Wide Area Network)을 중앙에서 효율적으로 관리하고, 클라우드 및 분산 환경에 최적화된 네트워크를 제공하는 아키텍처</li>
-<li>네트워크 비용 절감: 기존 MPLS 기반 WAN보다 저렴한 인터넷 회선을 활용하여 운영 비용을 절감 / 클라우드 최적화: 클라우드 애플리케이션과의 연결 성능을 향상 / 보안 강화, 중앙 집중 관리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-동작-매커니즘-핵심요소-보안-과제">SD-WAN 동작 매커니즘, 핵심요소, 보안 과제<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C-%EB%B3%B4%EC%95%88-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="SD-WAN 동작 매커니즘, 핵심요소, 보안 과제에 대한 직접 링크" title="SD-WAN 동작 매커니즘, 핵심요소, 보안 과제에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-동작-매커니즘">SD-WAN 동작 매커니즘<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="SD-WAN 동작 매커니즘에 대한 직접 링크" title="SD-WAN 동작 매커니즘에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>인증 및 접근 제어 문제, 중간자 공격, 클라우드 연결 취약점 존재</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-보안-핵심요소">SD-WAN 보안 핵심요소<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EB%B3%B4%EC%95%88-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="SD-WAN 보안 핵심요소에 대한 직접 링크" title="SD-WAN 보안 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>핵심 요소</th><th>설명</th><th>적용 사례</th></tr></thead><tbody><tr><td>End-to-End 암호화</td><td>IPsec 및 TLS 기반의 암호화 기술을 통해 데이터 전송 시 보안 강화.</td><td>Cisco SD-WAN의 모든 트래픽 IPsec 암호화 적용</td></tr><tr><td>제로 트러스트 네트워크 액세스 (ZTNA)</td><td>사용자 및 디바이스의 신원을 검증하고 최소 권한 원칙을 적용.</td><td>Palo Alto Networks의 ZTNA 기반 네트워크 접근 제어</td></tr><tr><td>Secure Access Service Edge (SASE)</td><td>SD-WAN과 보안을 통합하여 클라우드 및 분산 환경 보호.</td><td>VMware의 SD-WAN SASE 모델 적용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-보안-과제">SD-WAN 보안 과제<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EB%B3%B4%EC%95%88-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="SD-WAN 보안 과제에 대한 직접 링크" title="SD-WAN 보안 과제에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>보안 과제</th><th>내용</th><th>해결방안</th></tr></thead><tbody><tr><td>데이터 유출</td><td>분산된 네트워크에서 데이터가 노출될 위험</td><td>End-to-End IPsec/TLS 암호화 적용</td></tr><tr><td>DDoS 공격</td><td>클라우드 연결에서 발생할 수 있는 DDoS 공격</td><td>가상 방화벽 및 DDoS 방어 솔루션 도입</td></tr><tr><td>정책 불일치</td><td>각 지사별로 보안 정책이 일관되지 않아 취약점 발생</td><td>SASE 모델 도입으로 통합 정책 관리</td></tr><tr><td>인증 및 접근제어</td><td>분산 네트워크에서 사용자와 디바이스의 신원 확인 어려움</td><td>AI 기반 위협 탐지와 응답</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="sd-wan-도입을-위한-고려사항">SD-WAN 도입을 위한 고려사항<a href="https://gracefullight.dev/pe/sec/sd-wan-security/#sd-wan-%EB%8F%84%EC%9E%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="SD-WAN 도입을 위한 고려사항에 대한 직접 링크" title="SD-WAN 도입을 위한 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>고려사항</th><th>설명</th><th>해결 방안</th></tr></thead><tbody><tr><td>확장성</td><td>네트워크 확장 시 보안 유지 및 트래픽 증가에 대응.</td><td>클라우드 기반 보안 솔루션 및 동적 정책 적용</td></tr><tr><td>운영 효율성</td><td>복잡한 네트워크 환경에서 보안 운영을 최적화.</td><td>통합 보안 프레임워크 및 자동화 도구 활용</td></tr><tr><td>규제 준수</td><td>금융, 의료 등 특정 산업의 보안 규제 준수 필요.</td><td>GDPR, HIPAA 등 국제 규정에 맞춘 보안 정책 도입</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/security" term="pe/security"/>
     </entry>
 </feed>
