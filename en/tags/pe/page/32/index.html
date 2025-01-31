@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.e5f74ff4.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.cf9f40e1.js" defer="defer"></script>
 <script src="/en/assets/js/main.734f2dab.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -229,12 +229,9 @@
 <li>뱅크0 접근, 뱅크0 읽기 및 뱅크1 접근 순으로 병렬 접근</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="메모리-인터리빙의-유형">메모리 인터리빙의 유형<a href="#메모리-인터리빙의-유형" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">상위 인터리빙</mark></td><td>-</td><td>주소의 상위비트로 모듈 선택, <mark class="flexible-marker flexible-marker-default">순차적, 에러시 하나의 모듈 영향</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">하위 인터리빙</mark></td><td>-</td><td>주소의 하위비트로 모듈 선택, <mark class="flexible-marker flexible-marker-default">다수의 모듈 동시 접근, 에러 전파</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">혼합 인터리빙</mark></td><td>-</td><td><mark class="flexible-marker flexible-marker-default">모듈을 뱅크로 그룹화</mark>, 뱅크 선택시 상위 인터리빙, 뱅크 내 모듈 선택시 하위 인터리빙</td></tr></tbody></table>
-<!-- -->
-<!-- -->
-<!-- -->
+<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">상위 인터리빙</mark></td><td><img decoding="async" loading="lazy" alt="high-order" src="/en/assets/images/high-order-interleaving-622f1d1c03f2d640f994551ff73a326e.jpg" width="724" height="316" class="img_xC7_"></td><td>주소의 상위비트로 모듈 선택, <mark class="flexible-marker flexible-marker-default">순차적, 에러시 하나의 모듈 영향</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">하위 인터리빙</mark></td><td><img decoding="async" loading="lazy" alt="low-order" src="/en/assets/images/low-order-interleaving-20d087ce4388afe1500664ee464debca.jpg" width="730" height="336" class="img_xC7_"></td><td>주소의 하위비트로 모듈 선택, <mark class="flexible-marker flexible-marker-default">다수의 모듈 동시 접근, 에러 전파</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">혼합 인터리빙</mark></td><td><img decoding="async" loading="lazy" alt="hybrid-order" src="/en/assets/images/hybrid-interleaving-7a022891dedeffb35c56d723c18252c6.jpg" width="738" height="388" class="img_xC7_"></td><td><mark class="flexible-marker flexible-marker-default">모듈을 뱅크로 그룹화</mark>, 뱅크 선택시 상위 인터리빙, 뱅크 내 모듈 선택시 하위 인터리빙</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="인터리빙의-액세스-방식">인터리빙의 액세스 방식<a href="#인터리빙의-액세스-방식" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">C-Access, 순차접근</mark></td><td>-</td><td>주소가 버스를 통해 순  차적으로 모듈에 도착, <mark class="flexible-marker flexible-marker-default">버스 경합 발생가능</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">S-Access, 병렬접근</mark></td><td>-</td><td><mark class="flexible-marker flexible-marker-default">읽기 동시 진행, 데이터 순차 전송</mark>하여 <mark class="flexible-marker flexible-marker-default">동시성 확보</mark>로 높은 성능, <mark class="flexible-marker flexible-marker-default">DDR DRAM 적용</mark></td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>개념도</th><th>내용</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">C-Access, 순차접근</mark></td><td><img decoding="async" loading="lazy" alt="c-access" src="/en/assets/images/c-access-b33076e7acb4c152a810deffff039c65.jpg" width="736" height="434" class="img_xC7_"></td><td>주소가 버스를 통해 순차적으로 모듈에 도착, <mark class="flexible-marker flexible-marker-default">버스 경합 발생가능</mark></td></tr><tr><td><mark class="flexible-marker flexible-marker-default">S-Access, 병렬접근</mark></td><td><img decoding="async" loading="lazy" alt="s-access" src="/en/assets/images/s-access-99dcfd753fb90ac20ac83a1d06f49001.jpg" width="738" height="338" class="img_xC7_"></td><td><mark class="flexible-marker flexible-marker-default">읽기 동시 진행, 데이터 순차 전송</mark>하여 <mark class="flexible-marker flexible-marker-default">동시성 확보</mark>로 높은 성능, <mark class="flexible-marker flexible-marker-default">DDR DRAM 적용</mark></td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="인터리빙-고려사항">인터리빙 고려사항<a href="#인터리빙-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>메모리 <mark class="flexible-marker flexible-marker-default">접근 패턴</mark>, 시스템 성능 요구사항, 비용, 복잡도 등을 고려하여 최적의 인터리빙 방식 선택</li>
@@ -268,7 +265,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="정보시스템-하드웨어-규모산정-절차">정보시스템 하드웨어 규모산정 절차<a href="#정보시스템-하드웨어-규모산정-절차" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ol>
 <li>구축 방향 및 <mark class="flexible-marker flexible-marker-default">기초 자료 조사</mark></li>
-<li>기초 자 료 및 <mark class="flexible-marker flexible-marker-default">업무 분석</mark></li>
+<li>기초 자료 및 <mark class="flexible-marker flexible-marker-default">업무 분석</mark></li>
 <li><mark class="flexible-marker flexible-marker-default">참조 모델 결정 및 서버 규모 산정</mark></li>
 <li>참조 모델별 <mark class="flexible-marker flexible-marker-default">가중치 적용</mark></li>
 </ol>
@@ -288,7 +285,7 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="기술적-요소-비교">기술적 요소 비교<a href="#기술적-요소-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구분</th><th>메모리</th><th>비메모리</th></tr></thead><tbody><tr><td>설계복잡도</td><td>낮음</td><td>높음</td></tr><tr><td>집적도</td><td>높음</td><td>낮음</td></tr><tr><td>주요성능지표</td><td><mark class="flexible-marker flexible-marker-default">용량, 속도, 전력소비</mark></td><td><mark class="flexible-marker flexible-marker-default">연산 성능, 전력효율, 기능</mark></td></tr><tr><td>주요기술</td><td><mark class="flexible-marker flexible-marker-default">셀 구조</mark></td><td><mark class="flexible-marker flexible-marker-default">트랜지스터</mark></td></tr><tr><td>제품</td><td>DRAM, SRAM, NAND</td><td>CPU, GPU, AP, NPU</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="관리적-요소-비교">관리적 요소 비교<a href="#관리적-요소-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>메모리</th><th>비메모리</th></tr></thead><tbody><tr><td>생산방식</td><td>소품종 대량생산</td><td>다품종 소량생산</td></tr><tr><td>시장구조</td><td>범용시장</td><td>특화시장</td></tr><tr><td>생산구조</td><td>설계업체가 대부분 생산</td><td>대부분 설계, 양산 분리</td></tr><tr><td>변동성</td><td>높음</td><td>낮음</td></tr><tr><td>주요업체</td><td>삼성, 하이닉스</td><td>인텔, 엔비디아</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>메모리</th><th>비메모리</th></tr></thead><tbody><tr><td>생산방식</td><td>소품종 대량생산</td><td>다품종 소량생산</td></tr><tr><td>시장구조</td><td>범용시장</td><td>특화시장</td></tr><tr><td>생산구조</td><td>설계업체가 대부분 생산</td><td>대부분 설계, 양산 분리</td></tr><tr><td>변동성</td><td>높음</td><td>낮음</td></tr><tr><td>  주요업체</td><td>삼성, 하이닉스</td><td>인텔, 엔비디아</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="반도체-가치사슬">반도체 가치사슬<a href="#반도체-가치사슬" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="반도체-가치사슬-구성도">반도체 가치사슬 구성도<a href="#반도체-가치사슬-구성도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
