@@ -1,5 +1,5 @@
 ---
-title: ITIL, 
+title: ITIL
 date: 2025-01-31T14:50:36.300+09:00
 description: Information Technology Infrastructure Library
 authors: me
