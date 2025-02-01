@@ -16,7 +16,7 @@ tags:
 graph TB
   subgraph AI필수요소리스크[AI 필수요소와 리스크]
     direction LR
-    에이전트AI[에이전트 AI]
+    에이전틱AI[에이전틱 AI]
     AI거버넌스플랫폼[AI 거버넌스 플랫폼]
     허위정보보안[허위정보 보안]
   end
@@ -40,7 +40,7 @@ graph TB
 ### 가트너 2025 구성요소
 
 - AI 필수요소와 리스크
-  - [에이전트 AI](../algo/agentic-ai.md)
+  - [에이전틱 AI](../algo/agentic-ai.md)
   - [AI 거버넌스 플랫폼](../algo/ai-governance-platform.md)
   - [허위정보 보안](../sec/disinformation-security.md)
 - 컴퓨팅의 새 지평

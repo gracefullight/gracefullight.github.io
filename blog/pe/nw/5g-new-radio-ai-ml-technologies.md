@@ -5,7 +5,7 @@ description: 5G New Radio AI/ML Technologies
 authors: me
 tags:
   - pe
-  - pe/algo
+  - pe/nw
 ---
 
 ## 5G NR 개요
