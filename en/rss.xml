@@ -4,10 +4,47 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 Jan 2025 08:11:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Feb 2025 00:58:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[가트너 10대 전략 기술 트렌드 2025]]></title>
+            <link>https://gracefullight.dev/en/pe/conv/gartner-2025/</link>
+            <guid>https://gracefullight.dev/en/pe/conv/gartner-2025/</guid>
+            <pubDate>Sat, 01 Feb 2025 00:58:19 GMT</pubDate>
+            <description><![CDATA[2025년 가트너 전략기술 트렌드]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="가�트너-2025">가트너 2025<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-2025-구성도">가트너 2025 구성도<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-2025-구성요소">가트너 2025 구성요소<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>AI 필수요소와 리스크<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/en/pe/algo/agentic-ai/">에이전트 AI</a></li>
+<li><a href="https://gracefullight.dev/en/pe/algo/ai-governance-platform/">AI 거버넌스 플랫폼</a></li>
+<li><a href="https://gracefullight.dev/en/pe/sec/disinformation-security/">허위정보 보안</a></li>
+</ul>
+</li>
+<li>컴퓨팅의 새 지평<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/en/pe/sec/post-quantum-cryptography/">양자내성암호</a></li>
+<li><a href="https://gracefullight.dev/en/pe/conv/ambient-invisible-intelligence/">앰비언트 인비저블 인텔리전스</a></li>
+<li><a href="https://gracefullight.dev/en/pe/conv/energy-efficient-computing/">에너지 효율적 컴퓨팅</a></li>
+<li><a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/">하이브리드 컴퓨팅</a></li>
+</ul>
+</li>
+<li>인간-기계 시너지<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/en/pe/conv/spatial-computing/">공간 컴퓨팅</a></li>
+<li><a href="https://gracefullight.dev/en/pe/conv/polyfunctional-robots/">다기능 로봇</a></li>
+<li><a href="https://gracefullight.dev/en/pe/conv/neurological-enhancement/">신경학적 향상</a></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[Grover 알고리즘]]></title>
             <link>https://gracefullight.dev/en/pe/algo/grover-algorithm/</link>
@@ -110,7 +147,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <guid>https://gracefullight.dev/en/pe/nw/service-mesh/</guid>
             <pubDate>Fri, 31 Jan 2025 07:43:29 GMT</pubDate>
             <description><![CDATA[Service Mesh]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념">서비스메쉬 개념<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EF%BF%BD%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="서비스메쉬-개념">서비스메쉬 개념<a href="https://gracefullight.dev/en/pe/nw/service-mesh/#%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A9%94%EC%89%AC-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>마이크로서비스 환경에서 서비스 간의 통신을 최적화하고 관리하는 구조로, 트래픽 제어, 보안 강화, 모니터링 기능을 제공</li>
 <li>서비스 간 통신 복잡성 증가 / 보안 요구사항 강화 / 대규모 분산 환경 운영 단순화, 실시간 모니터링</li>
@@ -136,7 +173,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <guid>https://gracefullight.dev/en/pe/db/sharding-strategies/</guid>
             <pubDate>Fri, 31 Jan 2025 05:59:03 GMT</pubDate>
             <description><![CDATA[Sharding Strategies, Hash-based Sharding, Range-based Sharding]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-개념">샤딩 개념<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EF%BF%BD%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤��딩-개념">샤딩 개념<a href="https://gracefullight.dev/en/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <!-- -->
 <ul>
 <li>대규모 데이터베이스를 여러 서버에 분산 저장하여 처리 성능을 향상시키는 기법</li>
@@ -171,7 +208,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-핵심요소">ITIL 핵심요소<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>서비스 가치 시스템</td><td>IT 서비스가 조직의 가치를 창출하는 데 필요한 요소와 활동의 프레임워크</td><td>거버넌스, 지속적 개선 포함</td></tr><tr><td>서비스 가치 체인</td><td>IT 서비스 제공 프로세스를 6가지 활동으로 분류</td><td>Plan, Improve, Engage 등</td></tr><tr><td>ITIL 4 실무</td><td>ITIL 3의 프로세스를 발전시켜 34개 실무 영역으로 확장</td><td>인시던트 관리, 문제 관리, 변경 관리 등</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil을-활용한-서비스-관리-방안-적용-사례">ITIL을 활용한 서비스 관리 방안, 적용 사례<a href="https://gracefullight.dev/en/pe/mng/itil/#itil%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-관리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-관��리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>DevOps와 Agile 통합</td><td>CI/CD와 결합하여 변경 관리 자동화 및 배포 속도 향상</td><td>AWS 클라우드에서의 자동화된 배포</td></tr><tr><td>서비스 가치 체인 활용</td><td>고객 요구에 따라 특정 활동 선택적 적용</td><td>Engage, Improve 단계 반복 실행</td></tr><tr><td>고객 중심 접근</td><td>AI 챗봇을 활용한 신속한 고객 응대 및 피드백 반영</td><td>서비스 데스크에서 AI 기반 고객 지원</td></tr><tr><td>지속적 개선</td><td>데이터 기반 실시간 의사결정 및 비즈니스 목표 정렬</td><td>IT 운영 데이터 분석으로 장애 원인 식별</td></tr><tr><td>ITIL 실무 통합</td><td>변경 관리와 문제 관리 통합으로 비즈니스 연속성 유지</td><td>병원 IT 인프라에서의 장애 방지</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-적용-사례">ITIL 적용 사례<a href="https://gracefullight.dev/en/pe/mng/itil/#itil-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>클라우드 서비스</td><td>AWS에서 변경 관리와 지속적 개선 도입</td><td>클라우드 서비스 품질 향상</td></tr><tr><td>금융 서비스</td><td>DevOps와 ITIL 4 통합으로 빠른 서비스 제공</td><td>보안 유지 및 배포 속도 증가</td></tr><tr><td>헬스케어</td><td>인시던트 관리와 문제 관리 자동화</td><td>의료 데이터 보호 및 응답 시간 단축</td></tr></tbody></table>
@@ -187,7 +224,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <guid>https://gracefullight.dev/en/pe/sec/data-sovereignty/</guid>
             <pubDate>Fri, 31 Jan 2025 05:20:03 GMT</pubDate>
             <description><![CDATA[Data Sovereignty]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-개념">데이터 주권 개념<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EF%BF%BD%EF%BF%BD%EA%B6%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-개념">데이터 주권 개념<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>특정 국가 내에서 데이터가 저장, 처리, 관리되어야 한다는 규제를 준수하는 것</li>
 <li>CCPA(미국), GDPR(유럽), 데이터 보안법(중국) 등 데이터 저장/처리 위치 제한 조건을 만족하기 위해 멀티클라우드 환경 사용</li>
@@ -200,7 +237,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-관련-주요-도전-과제">데이터 주권 관련 주요 도전 과제<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%EA%B4%80%EB%A0%A8-%EC%A3%BC%EC%9A%94-%EB%8F%84%EC%A0%84-%EA%B3%BC%EC%A0%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>도전 과제</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>국가별 데이터 규제</td><td>각국의 데이터 보호 법률 준수 필요</td><td>EU GDPR, 중국 데이터 보안법</td></tr><tr><td>데이터 위치 관리</td><td>데이터가 저장/처리되는 위치 파악 어려움</td><td>다국적 기업의 데이터 이동 관리</td></tr><tr><td>복잡성 증가</td><td>멀티 클라우드 환경에서 데이터 관리 복잡성</td><td>데이터 이동 및 복제로 인한 위험</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-방안-확립-사례">데이터 주권 확립 방안, 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-��방안-확립-사례">데이터 주권 확립 방안, 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-방안">데이터 주권 확립 방안<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <table><thead><tr><th>접근 방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>데이터 지역화</td><td>특정 국가 내 데이터 저장 및 처리 전용 인프라 구축</td><td>Microsoft Azure 지역 데이터센터</td></tr><tr><td>데이터 암호화</td><td>데이터 암호화 적용 및 고객이 직접 키를 관리하는 방식(CMK) 활용</td><td>AWS KMS, Azure Key Vault</td></tr><tr><td>정책 기반 제어</td><td>데이터 저장 및 이동을 정책 기반으로 자동 제어</td><td>Terraform, Kubernetes</td></tr><tr><td>TEE 활용</td><td>데이터가 처리 중에도 암호화 상태를 유지하는 환경 제공</td><td>Intel SGX, AMD SEV</td></tr><tr><td>모니터링 솔루션</td><td>데이터 위치 및 이동 실시간 추적</td><td>AWS Macie, Google Cloud DLP</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-주권-확립-사례">데이터 주권 확립 사례<a href="https://gracefullight.dev/en/pe/sec/data-sovereignty/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B6%8C-%ED%99%95%EB%A6%BD-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
@@ -214,7 +251,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <guid>https://gracefullight.dev/en/pe/sw/ddd-aggregate/</guid>
             <pubDate>Fri, 31 Jan 2025 04:50:24 GMT</pubDate>
             <description><![CDATA[Domain Driven Development Aggregate]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="에그리거트-개념">에그리거트 개념<a href="https://gracefullight.dev/en/pe/sw/ddd-aggregate/#%EC%97%90%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="에그�리거트-개념">에그리거트 개념<a href="https://gracefullight.dev/en/pe/sw/ddd-aggregate/#%EC%97%90%EA%B7%B8%EB%A6%AC%EA%B1%B0%ED%8A%B8-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>도메인 주도 설계(DDD)에서 도메인 모델의 논리적 단위를 정의하며, 데이터 무결성을 유지하고 복잡성을 관리하는 역할 담당</li>
 <li>데이터 무결성 보장, 복잡성 관리, 비지니스 로직을 캡슐화하여 도메인 논리 표현</li>
@@ -257,29 +294,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[RSA 암호화]]></title>
-            <link>https://gracefullight.dev/en/pe/sec/rsa/</link>
-            <guid>https://gracefullight.dev/en/pe/sec/rsa/</guid>
-            <pubDate>Fri, 31 Jan 2025 03:31:47 GMT</pubDate>
-            <description><![CDATA[Rivest-Shamir-Adleman Encryption]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>소인수분해 문제의 계산적 복잡성을 기반으로 하며, 데이터 암호화 및 디지털 서명을 통해 정보의 기밀성, 무결성, 인증을 보장하는 암호화 알고리즘</li>
-<li>데이터 기밀성 보장 / 디지털 서명 활용 / 비대칭 키 관리 용이성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-동작-매커니즘-세부절차-키-역할">RSA 암호화 알고리즘 동작 매커니즘, 세부절차, 키 역할<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%ED%82%A4-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-동작-매커니즘">RSA 암호화 알고리즘 동작 매커니즘<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-세부절차">RSA 암호화 알고리즘 세부절차<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>단계</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>소수 선택</td><td>두 개의 큰 소수 p와 q를 선택</td><td>p = 61, q = 53</td></tr><tr><td>모듈러스 계산</td><td>n = p × q 계산 (공개키와 개인키의 공통 기준)</td><td>n = 61 × 53 = 3233</td></tr><tr><td>공개키 생성</td><td>오일러 함수 ϕ(n) 계산 후, ϕ(n)과 서로소인 e 선택</td><td>ϕ(3233) = 3120, e = 17</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘에서의-공개키개인키-역할">RSA 암호화 알고리즘에서의 공개키/개인키 역할<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%97%90%EC%84%9C%EC%9D%98-%EA%B3%B5%EA%B0%9C%ED%82%A4%EA%B0%9C%EC%9D%B8%ED%82%A4-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>키 유형</th><th>역할</th><th>비고</th></tr></thead><tbody><tr><td>공개키</td><td>데이터 암호화 및 디지털 서명 검증</td><td>누구나 접근 가능</td></tr><tr><td>개인키</td><td>데이터 복호화 및 디지털 서명 생성</td><td>비공개로 보호</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-한계-및-해결방안">RSA 암호화 알고리즘 한계 및 해결방안<a href="https://gracefullight.dev/en/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%95%9C%EA%B3%84-%EB%B0%8F-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>한계점</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>연산 속도 저하</td><td>암호화/복호화 연산이 느려 대규모 데이터 처리에 비효율적</td><td>AES와 결합한 하이브리드 암호 시스템 구축</td></tr><tr><td>양자컴퓨팅 위협</td><td>양자컴퓨팅 기술 발전 시 소인수분해 문제가 해결될 가능성 존재</td><td>양자내성암호, PQC 도입</td></tr><tr><td>키 길이 증가</td><td>보안 강화를 위해 키 길이가 지속적으로 증가함</td><td>효율적인 알고리즘 최적화 및 하드웨어 가속화</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>

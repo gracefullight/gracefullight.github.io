@@ -4,10 +4,47 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 31 Jan 2025 08:11:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Feb 2025 00:58:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[가트너 10대 전략 기술 트렌드 2025]]></title>
+            <link>https://gracefullight.dev/pe/conv/gartner-2025/</link>
+            <guid>https://gracefullight.dev/pe/conv/gartner-2025/</guid>
+            <pubDate>Sat, 01 Feb 2025 00:58:19 GMT</pubDate>
+            <description><![CDATA[2025년 가트너 전략기술 트렌드]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-2025">가트너 2025<a href="https://gracefullight.dev/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025" class="hash-link" aria-label="가트너 2025에 대한 직접 링크" title="가트너 2025에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-2025-구성도">가트너 2025 구성도<a href="https://gracefullight.dev/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="가트너 2025 구성도에 대한 직접 링크" title="가트너 2025 구성도에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="가트너-2025-구성요소">가트너 2025 구성요소<a href="https://gracefullight.dev/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="가트너 2025 구성요소에 대한 직접 링크" title="가트너 2025 구성요소에 대한 직접 링크">​</a></h3>
+<ul>
+<li>AI 필수요소와 리스크<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/pe/algo/agentic-ai/">에이전트 AI</a></li>
+<li><a href="https://gracefullight.dev/pe/algo/ai-governance-platform/">AI 거버넌스 플랫폼</a></li>
+<li><a href="https://gracefullight.dev/pe/sec/disinformation-security/">허위정보 보안</a></li>
+</ul>
+</li>
+<li>컴퓨팅의 새 지평<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/pe/sec/post-quantum-cryptography/">양자내성암호</a></li>
+<li><a href="https://gracefullight.dev/pe/conv/ambient-invisible-intelligence/">앰비언트 인비저블 인텔리전스</a></li>
+<li><a href="https://gracefullight.dev/pe/conv/energy-efficient-computing/">에너지 효율적 컴퓨팅</a></li>
+<li><a href="https://gracefullight.dev/pe/conv/hybrid-computing/">하이브리드 컴퓨팅</a></li>
+</ul>
+</li>
+<li>인간-기계 시너지<!-- -->
+<ul>
+<li><a href="https://gracefullight.dev/pe/conv/spatial-computing/">공간 컴퓨팅</a></li>
+<li><a href="https://gracefullight.dev/pe/conv/polyfunctional-robots/">다기능 로봇</a></li>
+<li><a href="https://gracefullight.dev/pe/conv/neurological-enhancement/">신경학적 향상</a></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/it-convergence</category>
+        </item>
         <item>
             <title><![CDATA[Grover 알고리즘]]></title>
             <link>https://gracefullight.dev/pe/algo/grover-algorithm/</link>
@@ -257,29 +294,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[RSA 암호화]]></title>
-            <link>https://gracefullight.dev/pe/sec/rsa/</link>
-            <guid>https://gracefullight.dev/pe/sec/rsa/</guid>
-            <pubDate>Fri, 31 Jan 2025 03:31:47 GMT</pubDate>
-            <description><![CDATA[Rivest-Shamir-Adleman Encryption]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-개념">RSA 암호화 알고리즘 개념<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="RSA 암호화 알고리즘 개념에 대한 직접 링크" title="RSA 암호화 알고리즘 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li>소인수분해 문제의 계산적 복잡성을 기반으로 하며, 데이터 암호화 및 디지털 서명을 통해 정보의 기밀성, 무결성, 인증을 보장하는 암호화 알고리즘</li>
-<li>데이터 기밀성 보장 / 디지털 서명 활용 / 비대칭 키 관리 용이성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-동작-매커니즘-세부절차-키-역할">RSA 암호화 알고리즘 동작 매커니즘, 세부절차, 키 역할<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8-%ED%82%A4-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="RSA 암호화 알고리즘 동작 매커니즘, 세부절차, 키 역할에 대한 직접 링크" title="RSA 암호화 알고리즘 동작 매커니즘, 세부절차, 키 역할에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-동작-매커니즘">RSA 암호화 알고리즘 동작 매커니즘<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="RSA 암호화 알고리즘 동작 매커니즘에 대한 직접 링크" title="RSA 암호화 알고리즘 동작 매커니즘에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-세부절차">RSA 암호화 알고리즘 세부절차<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%84%B8%EB%B6%80%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="RSA 암호화 알고리즘 세부절차에 대한 직접 링크" title="RSA 암호화 알고리즘 세부절차에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단계</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>소수 선택</td><td>두 개의 큰 소수 p와 q를 선택</td><td>p = 61, q = 53</td></tr><tr><td>모듈러스 계산</td><td>n = p × q 계산 (공개키와 개인키의 공통 기준)</td><td>n = 61 × 53 = 3233</td></tr><tr><td>공개키 생성</td><td>오일러 함수 ϕ(n) 계산 후, ϕ(n)과 서로소인 e 선택</td><td>ϕ(3233) = 3120, e = 17</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘에서의-공개키개인키-역할">RSA 암호화 알고리즘에서의 공개키/개인키 역할<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%97%90%EC%84%9C%EC%9D%98-%EA%B3%B5%EA%B0%9C%ED%82%A4%EA%B0%9C%EC%9D%B8%ED%82%A4-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="RSA 암호화 알고리즘에서의 공개키/개인키 역할에 대한 직접 링크" title="RSA 암호화 알고리즘에서의 공개키/개인키 역할에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>키 유형</th><th>역할</th><th>비고</th></tr></thead><tbody><tr><td>공개키</td><td>데이터 암호화 및 디지털 서명 검증</td><td>누구나 접근 가능</td></tr><tr><td>개인키</td><td>데이터 복호화 및 디지털 서명 생성</td><td>비공개로 보호</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rsa-암호화-알고리즘-한계-및-해결방안">RSA 암호화 알고리즘 한계 및 해결방안<a href="https://gracefullight.dev/pe/sec/rsa/#rsa-%EC%95%94%ED%98%B8%ED%99%94-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%95%9C%EA%B3%84-%EB%B0%8F-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88" class="hash-link" aria-label="RSA 암호화 알고리즘 한계 및 해결방안에 대한 직접 링크" title="RSA 암호화 알고리즘 한계 및 해결방안에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>한계점</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>연산 속도 저하</td><td>암호화/복호화 연산이 느려 대규모 데이터 처리에 비효율적</td><td>AES와 결합한 하이브리드 암호 시스템 구축</td></tr><tr><td>양자컴퓨팅 위협</td><td>양자컴퓨팅 기술 발전 시 소인수분해 문제가 해결될 가능성 존재</td><td>양자내성암호, PQC 도입</td></tr><tr><td>키 길이 증가</td><td>보안 강화를 위해 키 길이가 지속적으로 증가함</td><td>효율적인 알고리즘 최적화 및 하드웨어 가속화</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/security</category>
         </item>
     </channel>
 </rss>
