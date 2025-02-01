@@ -1,11 +1,11 @@
 ---
 title: 감정 인식 기술
 date: 2024-10-05T12:17:07.740+09:00
-description: emotion recognition
+description: Emotion Recognition
 authors: me
 tags:
   - pe
-  - pe/algo 
+  - pe/algo
 ---
 
 ## 감정 인식 기술 개념
@@ -23,7 +23,7 @@ tags:
 | 이모티콘 임베딩 | 감정을 표현하기 위해 채팅 메세지 내부 이모티콘을 임베딩 | Emoji2Vec, DeepMoji |
 | 다중감정 인식용 단어 인베딩 | 여러 감정 레이블을 동시 할당하여 감정을 더 자세히 설명 | 다중라벨분류, SGM |
 
-### 대화형 봇 윈한 감정 인식 기술 유형
+### 대화형 봇  감정 인식 기술 유형
 
 | 구분 | 설명 | 비고 |
 | --- | --- | --- |
