@@ -71,7 +71,7 @@ graph TB
   AI[지능화]
   ContextAware[상황인지]
   IoT
-  ABC[앰비언트컴퓨팅]
+  ABC((앰비언트컴퓨팅))
 
   AI-->ABC
   ContextAware-->ABC

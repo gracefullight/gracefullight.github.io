@@ -1,7 +1,7 @@
 ---
 title: AI 거버넌스 플랫폼
 date: 2025-01-20T20:20:01.749+09:00
-description: AI Governance Framework
+description: AI Governance Platform
 authors: me
 tags:
   - pe
