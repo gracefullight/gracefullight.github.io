@@ -135,7 +135,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
         <summary type="html"><![CDATA[Value Stream Mapping]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념">VSM 개념<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>IT 서비스가 고객에게 가치를 전달하는 과정에서 발생하는 모든 활동을 매핑하여 시각적으로 표현하고 최적화하는 기법</li>
+<li><mark class="flexible-marker flexible-marker-default">IT 서비스가 고객에게 가치를 전달</mark>하는 과정에서 발생하는 모든 <mark class="flexible-marker flexible-marker-default">활동을 매핑</mark>하여 <mark class="flexible-marker flexible-marker-default">시각적으로 표현하고 최적화하는 기법</mark></li>
 <li>ITIL 서비스 가치 체인(Service Value Chain) 내에서 프로세스 개선과 낭비 제거를 위해 활용 / Lean 원칙 기반 / IT 서비스의 품질과 속도를 지속적 향상</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념도-구성요소-활용방안">VSM 개념도, 구성요소, 활용방안<a href="https://gracefullight.dev/en/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>

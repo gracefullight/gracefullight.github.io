@@ -124,14 +124,14 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <description><![CDATA[Value Stream Mapping]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념">VSM 개념<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="VSM 개념에 대한 직접 링크" title="VSM 개념에 대한 직접 링크">​</a></h2>
 <ul>
-<li>IT 서비스가 고객에게 가치를 전달하는 과정에서 발생하는 모든 활동을 매핑하여 시각적으로 표현하고 최적화하는 기법</li>
+<li><mark class="flexible-marker flexible-marker-default">IT 서비스가 고객에게 가치를 전달</mark>하는 과정에서 발생하는 모든 <mark class="flexible-marker flexible-marker-default">활동을 매핑</mark>하여 <mark class="flexible-marker flexible-marker-default">시각적으로 표현하고 최적화하는 기법</mark></li>
 <li>ITIL 서비스 가치 체인(Service Value Chain) 내에서 프로세스 개선과 낭비 제거를 위해 활용 / Lean 원칙 기반 / IT 서비스의 품질과 속도를 지속적 향상</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-개념도-구성요소-활용방안">VSM 개념도, 구성요소, 활용방안<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="VSM 개념도, 구성요소, 활용방안에 대한 직접 링크" title="VSM 개념도, 구성요소, 활용방안에 대한 직접 링크">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-구성요소">VSM 구성요소<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="VSM 구성요소에 대한 직접 링크" title="VSM 구성요소에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>현재 상태</td><td>현재 프로세스를 매핑하여 병목 구간 및 비효율성 식별</td><td>인시던트 관리 프로세스 분석</td></tr><tr><td>미래 상태</td><td>최적화된 프로세스를 설계하여 이상적인 가치 흐름 구성</td><td>자동화된 소프트웨어 배포 파이프라인</td></tr><tr><td>갭 분석</td><td>현재 상태와 미래 상태 간 차이를 분석하여 구체적인 개선 과제 도출</td><td>처리 시간 단축 목표 설정</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-활용방안">VSM 활용방안<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%ED%99%9C%EC%9A%A9%EF%BF%BD%EF%BF%BD%EB%B0%A9%EC%95%88" class="hash-link" aria-label="VSM 활용방안에 대한 직접 링크" title="VSM 활용방안에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-활용방안">VSM 활용방안<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88" class="hash-link" aria-label="VSM 활용방안에 대한 직접 링크" title="VSM 활용방안에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>방안</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>병목현상 제거</td><td>반복적인 승인 단계나 대기 시간 제거</td><td>불필요한 승인절차 단축</td></tr><tr><td>낭비 최소화</td><td>비부가가치 활동 제거</td><td>불필요한 데이터 이동 자동화</td></tr><tr><td>자동화 도입</td><td>DevOps와 연계하여 수작업 프로세스 자동화</td><td>CI/CD 배포시간 단축</td></tr><tr><td>실시간 모니터링</td><td>KPI 설정 및 성과 측정</td><td>KPI, RTO, RPO</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="vsm-도입-효과">VSM 도입 효과<a href="https://gracefullight.dev/pe/mng/itil-vsm/#vsm-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="VSM 도입 효과에 대한 직접 링크" title="VSM 도입 효과에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>금융</td><td>대출 신청 프로세스 최적화</td><td>처리 시간 40% 단축, 고객 만족도 상승</td></tr><tr><td>IT 서비스 제공</td><td>인시던트 해결 프로세스 개선</td><td>평균 처리 시간 30% 감소</td></tr><tr><td>헬스케어</td><td>환자 데이터 관리 및 진단 절차 간소화</td><td>데이터 처리 효율성 향상</td></tr></tbody></table>
