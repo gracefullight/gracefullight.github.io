@@ -12,7 +12,7 @@ tags:
 
 ![Isolation Levels](./assets/isolation-levels.png)
 
-- 병행 트랜잭션 실행 시 데이터를 일관성 있게 읽을 수 있도록 고립성을 유지하기 위한 데이터 허용 수준
+- 병행 트랜잭션 실행 시 데이터를 일관성 있게 읽을 수 있도록 ==고립성을 유지하기 위한 데이터 허용 수준==
 - Dirty Read, Non-Repeatable Read, Phantom Read 등 이상 현상 발생 가능
 
 ## 트랜잭션 격리 수준 상세
