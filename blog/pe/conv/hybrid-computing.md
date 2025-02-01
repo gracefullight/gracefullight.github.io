@@ -10,7 +10,7 @@ tags:
 
 ## 하이브리드 컴퓨팅 개념
 
-- 고전적 컴퓨팅(CPU, GPU)과 차세대 기술(양자, 광자, 뉴로모픽)을 통합하여 ==오케스트레이션== 하고 복잡한 문제를 해결하는 컴퓨팅 패러다임
+- ==고전적 컴퓨팅(CPU, GPU)과 차세대 기술(양자, 광자, 뉴로모픽)을 통합==하여 ==오케스트레이션== 하고 복잡한 문제를 해결하는 컴퓨팅 패러다임
 - 데이터 증가와 복잡한 분석 요구, 단일 기술로는 해결할 수 없는 문제로 다중 컴퓨팅 환경의 조화 필요
 
 ### 하이브리드 컴퓨팅 아키텍처, 핵심요소, 활용방안
@@ -26,12 +26,12 @@ graph TD
       DrugDiscovery[Drug Discovery]
     end
 
-    UseCases --> Hybrid["Hybrid Computing<br/>Orchestration Layer"] --> ComputingEnv
+    UseCases <-->|워크플로우 관리| Hybrid["Hybrid Computing<br/>Orchestration Layer"] <--> |상호운용성| ComputingEnv
 
     subgraph ComputingEnv["Computing Environments"]
-      ClassicalSystems["Classical Systems<br/>CPU, GPU"]
-      SpecializedSystems["Specialized Systems<br/>AI ASICs, Neuromorphic"]
-      EmergingSystems["Emerging Systems<br/>Quantum, Photonic, Bio"]
+      ClassicalSystems["고전적 시스템<br/>CPU, GPU"]
+      SpecializedSystems["특화 시스템<br/>AI ASICs, Neuromorphic"]
+      EmergingSystems["차세대 시스템<br/>Quantum, Photonic, Bio"]
     end
 ```
 
@@ -40,9 +40,10 @@ graph TD
 | 구분 | 핵심요소 | 설명 |
 | --- | --- | --- |
 | 컴퓨팅 환경 | 고전적 시스템 | CPU와 GPU는 대규모 데이터 처리를 위한 기본 요소로, 기존 컴퓨팅 워크로드를 담당 |
-| | 차세대 시스템 | 양자, 광자, 뉴로모픽 기술은 복잡한 최적화 문제와 고차원 데이터 분석에 적합 |
+| | 특화 시스템 | ASICs, 뉴로모픽 등 AI 연산, 추론을 담당 |
+| | 차세대 시스템 | 양자, 광자, 바이오 기술은 복잡한 최적화 문제와 고차원 데이터 분석에 적합 |
 | 오케스트레이션 계층 | 데이터 패브릭 | 통합 데이터 관리를 통해 서로 다른 시스템 간의 상호 운용성을 제공 |
-| | 워크플로 관리 | 워크플로를 효율적으로 조정하여 시간과 자원을 절약 |
+| | 워크플로우 관리 | 워크플로우를 효율적으로 조정하여 시간과 자원을 절약 |
 | 지원 요소 | 보안 및 거버넌스 | 자율적으로 작동하는 시스템 간 데이터 전송과 보안을 위한 정밀한 관리 |
 | |변화 수용성 | 빈번한 기술 변화와 실패를 수용할 수 있는 유연한 조직 구조 필요 |
 
