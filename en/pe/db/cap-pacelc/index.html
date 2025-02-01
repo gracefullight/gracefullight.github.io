@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.87ac4448.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.efb39e89.js" defer="defer"></script>
 <script src="/en/assets/js/main.cddad010.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -55,10 +55,10 @@
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="pacelc-이론-개념도">PACELC 이론 개념도<a href="#pacelc-이론-개념도" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
 <ul>
-<li>CAP이론을 보완하여 네트워크 분할 여부나 정상 작동 여부에 따라 지연시간과 일관성의 Trade-Off를 고려한 이론</li>
+<li><mark class="flexible-marker flexible-marker-default">CAP이론을 보완</mark>하여 <mark class="flexible-marker flexible-marker-default">네트워크 분할 여부</mark>나 정상 작동 여부에 따라 <mark class="flexible-marker flexible-marker-default">지연시간과 일관성의 Trade-Off</mark>를 고려한 이론</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="pacelc-이론-구성요소">PACELC 이론 구성요소<a href="#pacelc-이론-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">PA/EL</mark></td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PA/EC</mark></td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EL</mark></td><td> 장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EC</mark></td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td><mark class="flexible-marker flexible-marker-default">PA/EL</mark></td><td>장애시 가용성, 정상시 지연시간 우선 고려</td><td>DynamoDB, Cassandra</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PA/EC</mark></td><td>장애시 가용성, 정상시 일관성 보장</td><td>MongoDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EL</mark></td><td>장애시 일관성, 정상시 지연시간 우선 고려</td><td>PNUT, CosmosDB</td></tr><tr><td><mark class="flexible-marker flexible-marker-default">PC/EC</mark></td><td>장애시 일관성, 정상시 일관성 보장</td><td>HBase</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="nosql-데이터베이스-도입시-고려사항">NoSQL 데이터베이스 도입시 고려사항<a href="#nosql-데이터베이스-도입시-고려사항" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>MongoDB 등 NOSQL의 오픈소스 라이센스가 SSPL로 이동함에 따라 CSP 서비스 개발시 Fork 버전 사용 등 대안 마련</li>
