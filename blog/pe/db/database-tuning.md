@@ -22,18 +22,21 @@ graph LR
   성능진단분석 --> 튜닝수행 --> 결과평가
 
   subgraph 성능진단분석[성능 진단, 분석]
-    AS-IS성능분석
-    설계,시스템구성검토
+    direction LR
+    AS-IS성능분석[AS-IS 성능 분석]
+    설계/시스템구성검토[설계/시스템 구성 검토]
   end
 
   subgraph 튜닝수행[튜닝 수행]
-    설계내용튜닝
-    SQL튜닝
+    direction LR
+    설계내용튜닝[설계 내용 튜닝]
+    SQL튜닝[SQL 튜닝]
   end
 
   subgraph 결과평가
-    TO-BE성능비교
-    튜닝결과산출물작성
+    direction LR
+    TO-BE성능비교[TO-BE 성능 비교]
+    튜닝결과산출물작성[튜닝 결과 산출물 작성]
   end
 ```
 

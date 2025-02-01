@@ -19,8 +19,8 @@ tags:
 
 ```mermaid
 graph LR
-  Parser[1. SQL Parser] --> Transformer[2. Query Transformer] --> PlanGenerator[3. Plan Generator] 
-  PlanGenerator --> CostEstimator[4. Cost Estimator] --> PlanSelector[5. Plan Selector]
+  Parser[1 SQL Parser] --> Transformer[2 Query Transformer] --> PlanGenerator[3 Plan Generator] 
+  PlanGenerator --> CostEstimator[4 Cost Estimator] --> PlanSelector[5 Plan Selector]
 
   CostEstimator <--> |통계 저장, 참조| CatalogManager[(Catalog Manager)]
 ```
@@ -32,7 +32,7 @@ graph LR
 | 1. SQL Parser | 쿼리파싱, 구문분석, 구문트리생성 | 문법 검사 |
 | 2. Query Transformer | 쿼리 변환 하의 최적화 가능성 제고 | 쿼리 재작성 |
 | 3. Plan Generator | 여러 가능한 실행 계획 생성 | 조인, 인덱스 경로 |
-| 4. Cost Estimator | 각 실행 계획 예상 비용 계산 | 통계 저장, 참조 |
+| 4. ==Cost Estimator== | 각 실행 계획 예상 비용 계산 | 통계 저장, 참조 |
 | 5. Plan Selector | 가장 낮은 비용 실행 계획 선택, 실행 | RBO, CBO 방식 |
 
 ### RBO, CBO 비교
@@ -53,7 +53,7 @@ graph LR
 | --- | --- | --- |
 | DA | 모델링시 인덱스 전략 설계, 파티셔닝 고려 | 효율적 구조 설계 |
 | DBA | 통계정보 수립 및 갱신, 실행계획 최적화 | 모너티링, 대응 |
-| User | 쵲거화된 쿼리 작성, 인덱스 힌트 사용 | 개발단계 쿼리 최적화, EXPLAIN PLAN |
+| User | 최적화된 쿼리 작성, 인덱스 힌트 사용 | 개발단계 쿼리 최적화, EXPLAIN PLAN |
 
 ## 옵티마이저 고려사항
 

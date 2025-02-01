@@ -25,15 +25,15 @@ tags:
 
 ### 병행제어 해결기법
 
-> 그립 표현
+> 그림 표현
 
-| 구분 | 내용 | 비고 |
-| --- | --- | --- |
-| ==Locking== | 트랜잭션 사용 자원에 대해 상호배제 기능 제공 | DB락, Table락, Row락, Column락 |
-| ==2PL== | 모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행 | 직렬가능성 보장, 교착상태 예방필요 |
-| ==Timestamp== | 트랜잭션 입력시 Timestamp 시간 순으로 직렬화 | 직렬가능성 보장, 교착상태 방지 |
-| ==낙관적 기법== | 트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사 | Read, Validate, Write 단계 |
-| ==다중버전 병행제어== | 여러 버전 저장 후 일관성이 보장된 트랜잭션 선택 | 동시성 우수, I/O오버헤드 증가 |
+| 구분 | 개념도 | 내용 | 비고 |
+| --- | --- | --- | --- |
+| ==Locking== | ![locking](./assets/locking.png) |트랜잭션 사용 자원에 대해 상호배제 기능 제공 | DB락, Table락, Row락, Column락 |
+| ==2PL== | ![2pl](./assets/2pl.png) | 모든 트랜잭션의 lock과 unlock 연산을 확장, 수축단계로 구분하여 수행 | 직렬가능성 보장, 교착상태 예방필요 |
+| ==Timestamp== | ![timestamp](./assets/timestamp.png) | 트랜잭션 입력시 Timestamp 시간 순으로 직렬화 | 직렬가능성 보장, 교착상태 방지 |
+| ==낙관적 기법== | ![optimistic](./assets/optimistic.png) | 트랜잭션 수행시 미검사, 트랜잭션 종료 전 위반 검사 | Read, Validate, Write 단계 |
+| ==다중버전 병행제어== | ![mvcc](./assets/mvcc.png) | 여러 버전 저장 후 일관성이 보장된 트랜잭션 선택 | 동시성 우수, I/O오버헤드 증가 |
 
 ## 병행제어 고려사항
 
