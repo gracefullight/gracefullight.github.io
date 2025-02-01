@@ -5,7 +5,7 @@ description: IT 직무제, SW 기술자 등급제
 authors: me
 tags:
   - pe
-  - pe/mng 
+  - pe/mng
 ---
 
 ## IT 역량분류 체계 개요
