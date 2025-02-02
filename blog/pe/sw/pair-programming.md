@@ -5,7 +5,7 @@ description: Pair Programming, Ping Pong Programming
 authors: me
 tags:
   - pe
-  - pe/sw 
+  - pe/sw
 ---
 
 ## 페어 프로그래밍 개념
@@ -38,7 +38,7 @@ graph TB
 
     드라이버 --> |코딩| 네비게이터
     네비게이터 --> |지도,검토| 드라이버
-  end  
+  end
 ```
 
 ### 페어 프로그래밍, 핑퐁 프로그래밍 구성요소 비교
