@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.566a2a04.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.47118b12.js" defer="defer"></script>
 <script src="/assets/js/main.755a9e7d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -48,7 +48,7 @@
 <li>FEC는 검증 단말에 오버헤드, ARQ는 재전송으로 인한 네트워크 오베헤드 발생</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="fec-arq-핵심요소-비교">FEC, ARQ 핵심요소 비교<a href="#fec-arq-핵심요소-비교" class="hash-link" aria-label="FEC, ARQ 핵심요소 비교에 대한 직접 링크" title="FEC, ARQ 핵심요소 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>FEC</th><th>ARQ</th></tr></thead><tbody><tr><td>특징</td><td>실시간, 높은 처리율</td><td>재전송요구로 복잡한 알고리즘 불필요</td></tr><tr><td>용도</td><td>1<!-- -->:N<!-- --> 통신환경</td><td>실시간 처리 불필요</td></tr><tr><td>-</td><td>채널 열악, 무선환경</td><td>단말 성능 열악</td></tr><tr><td>-</td><td>재전송 시도불가 환경</td><td>전이중 통신 환경</td></tr><tr><td>장점</td><td>연속적 데이터 전송으로 높은 효율, 전송 지연 없음</td><td>알고리즘 간단, 단순한  단말구성, 채널적응력 우수</td></tr><tr><td>단점</td><td>복잡한 검출 알고리즘, 검출 및 정정 하드웨어 성능 필요</td><td>송수신 버퍼 필요, 채널 불안정시 재전송 요구 폭증</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>FEC</th><th>ARQ</th></tr></thead><tbody><tr><td>특징</td><td>실시간, 높은 처리율</td><td>재전송요구로 복잡한 알고리즘 불필요</td></tr><tr><td>용도</td><td>1<!-- -->:N<!-- --> 통신환경</td><td>실시간 처리 불필요</td></tr><tr><td></td><td>채널 열악, 무선환경</td><td>단말 성능 열악</td></tr><tr><td></td><td>재전송 시도불가 환경</td><td>전이중 통신 환경</td></tr><tr><td>장점</td><td>연속적 데이터 전송으로 높은 효율, 전송 지연 없음</td><td>알고리즘 간단, 단순한 단말구성, 채널적응력 우수</td></tr><tr><td>단점</td><td>복잡한 검출 알고리즘, 검출 및 정정 하드웨어 성능 필요</td><td>송수신 버퍼 필요, 채널 불안정시 재전송 요구 폭증</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="arq-유형">ARQ 유형<a href="#arq-유형" class="hash-link" aria-label="ARQ 유형에 대한 직접 링크" title="ARQ 유형에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Stop &amp; Wait ARQ</td><td>한 번에 하나의 프레임 전송 후 ACK를 받을 때까지 대기</td><td>단순, 낮은 전송 효율</td></tr><tr><td>Go Back N ARQ</td><td>여러 프래임 연속 전송, 오류 발생 프레임 이후 모든 프레임 재전송</td><td>전송효율 상대적 높음</td></tr><tr><td>Selective Repeat ARQ</td><td>여러 프레임 연속 전송, 오류 발생 특정 프레임만 재전송</td><td>전송효율 우수, 구현 복잡</td></tr><tr><td>Adaptive ARQ</td><td>전송환경에 따라 전송 속도나 재전송 전략을 동적 조절</td><td>패킷 오류율, SNR, 전송 지연</td></tr><tr><td>Hybrid ARQ</td><td>FEC로 정정시도 후 실패시 ARQ 시도</td><td>무선, 위선통신, 높은 신뢰성</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="오류제어-방식-선택시-고려사항">오류제어 방식 선택시 고려사항<a href="#오류제어-방식-선택시-고려사항" class="hash-link" aria-label="오류제어 방식 선택시 고려사항에 대한 직접 링크" title="오류제어 방식 선택시 고려사항에 대한 직접 링크">​</a></h2>

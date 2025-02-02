@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.566a2a04.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.47118b12.js" defer="defer"></script>
 <script src="/assets/js/main.755a9e7d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,7 +51,7 @@
 <li>데이터 무결성, 신뢰성</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="오류제어-기법">오류제어 기법<a href="#오류제어-기법" class="hash-link" aria-label="오류제어 기법에 대한 직접 링크" title="오류제어 기법에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>오류 검출</td><td>패리티 검사</td><td>짝수, 홀수 패티리 추가로 오류 검출</td></tr><tr><td>-</td><td>체크섬</td><td>데이터 블록 합을 계산해서 오류 검출</td></tr><tr><td>-</td><td>CRC</td><td> 데이터 블록을 다항식으로 나눈 나머지 추가</td></tr><tr><td>FEC</td><td>블록부호</td><td>일정 크기 데이터 블록에 중복 비트 추가</td></tr><tr><td>-</td><td>길쌈부호</td><td>연속적 데이터 흐름에 중복 비트 추가</td></tr><tr><td>BEC</td><td>ARQ</td><td>오류 발생시 송신 측에 재요청</td></tr><tr><td>-</td><td>Hybrid ARQ</td><td>FEC + ARQ, 일부 오류 수정 후 불가시 재요청</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>기법</th><th>내용</th></tr></thead><tbody><tr><td>오류 검출</td><td>패리티 검사</td><td>짝수, 홀수 패티리 추가로 오류 검출</td></tr><tr><td></td><td>체크섬</td><td>데이터 블록 합을 계산해서 오류 검출</td></tr><tr><td></td><td>CRC</td><td>데이터 블록을 다항식으로 나눈 나머지 추가</td></tr><tr><td>FEC</td><td>블록부호</td><td>일정 크기 데이터 블록에 중복 비트 추가</td></tr><tr><td></td><td>길쌈부호</td><td>연속적 데이터 흐름에 중복 비트 추가</td></tr><tr><td>BEC</td><td>ARQ</td><td>오류 발생시 송신 측에 재요청</td></tr><tr><td></td><td>Hybrid ARQ</td><td>FEC + ARQ, 일부 오류 수정 후 불가시 재요청</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="흐름제어-개념-및-기법">흐름제어 개념 및 기법<a href="#흐름제어-개념-및-기법" class="hash-link" aria-label="흐름제어 개념 및 기법에 대한 직접 링크" title="흐름제어 개념 및 기법에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="흐름제어-개념">흐름제어 개념<a href="#흐름제어-개념" class="hash-link" aria-label="흐름제어 개념에 대한 직접 링크" title="흐름제어 개념에 대한 직접 링크">​</a></h3>
 <ul>
@@ -59,7 +59,7 @@
 <li>데이터 손실 최소화, 수신 버퍼 오버플로우 방지, 혼잡 완화</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="흐름제어-기법">흐름제어 기법<a href="#흐름제어-기법" class="hash-link" aria-label="흐름제어 기법에 대한 직접 링크" title="흐름제어 기법에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Stop &amp; Wait</td><td>송신측은 데이터 패킷을 하나씩 전송, 수신측의 ACK 응답 대기</td><td>낮은 효율, 같은 구현</td></tr><tr><td>Sliding Window</td><td>여러 개의 패킷 연속 전송, 수신측의 ACK 수신 확인 후 윈도우 조절</td><td>효율적, 범용적</td></tr><tr><td>Rate-based Flow Control</td><td>송신측은 수신측의 피드백 정보 를 기반으로 데이터 전송속도 조절</td><td>혼잡제어 같이 사용</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>Stop &amp; Wait</td><td>송신측은 데이터 패킷을 하나씩 전송, 수신측의 ACK 응답 대기</td><td>낮은 효율, 같은 구현</td></tr><tr><td>Sliding Window</td><td>여러 개의 패킷 연속 전송, 수신측의 ACK 수신 확인 후 윈도우 조절</td><td>효율적, 범용적</td></tr><tr><td>Rate-based Flow Control</td><td>송신측은 수신측의 피드백 정보를   기반으로 데이터 전송속도 조절</td><td>혼잡제어 같이 사용</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="혼잡제어-개념-및-매커니즘">혼잡제어 개념 및 매커니즘<a href="#혼잡제어-개념-및-매커니즘" class="hash-link" aria-label="혼잡제어 개념 및 매커니즘에 대한 직접 링크" title="혼잡제어 개념 및 매커니즘에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="혼잡제어-개념">혼잡제어 개념<a href="#혼잡제어-개념" class="hash-link" aria-label="혼잡제어 개념에 대한 직접 링크" title="혼잡제어 개념에 대한 직접 링크">​</a></h3>
 <ul>
@@ -67,7 +67,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="혼잡제어-매커니즘">혼잡제어 매커니즘<a href="#혼잡제어-매커니즘" class="hash-link" aria-label="혼잡제어 매커니즘에 대한 직접 링크" title="혼잡제어 매커니즘에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>내용</th><th>비고</th></tr></thead><tbody><tr><td>1. Slow Start</td><td>새로운 연결 또는 타임아웃 후 시작 혼잡 윈도우를 작게 시작해 지수적으로 증가</td><td>초기 네트워크 상태 탐색</td></tr><tr><td>2. Congestion avoidance</td><td>네트워크 혼잡을 예방하는 단계 AIMD 알고리즘 사용 혼잡 윈도우 크기를 조절</td><td>혼잡시 Threshold 감소</td></tr><tr><td>3. Fast Recovery</td><td>패킷 손실 시 혼잡 윈도우를 반으로 줄이고 전송 지속</td><td>손실 후에도 데이터 전송 계속</td></tr><tr><td>4. Fast Transmit</td><td>중복된 ACK 3개 이상 수신 시 손실된 패킷 즉시 재전송 타임아웃 없이 손실 처리</td><td>전송 효율 증가</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-전송방식-  개념-및-기법">데이터 전송방식 개념 및 기법<a href="#데이터-전송방식-개념-및-기법" class="hash-link" aria-label="데이터 전송방식 개념 및 기법에 대한 직접 링크" title="데이터 전송방식 개념 및 기법에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-전송방식-개념-및-기법">데이터 전송방식 개념 및 기법<a href="#데이터-전송방식-개념-및-기법" class="hash-link" aria-label="데이터 전송방식 개념 및 기법에 대한 직접 링크" title="데이터 전송방식 개념 및 기법에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-전송방식-개념">데이터 전송방식 개념<a href="#데이터-전송방식-개념" class="hash-link" aria-label="데이터 전송방식 개념에 대한 직접 링크" title="데이터 전송방식 개념에 대한 직접 링크">​</a></h3>
 <ul>
 <li>데이터가 송수신측 사이에서 어떻게 전달할지를 구현하는 방법</li>
