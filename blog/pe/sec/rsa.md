@@ -18,17 +18,18 @@ tags:
 ### RSA 암호화 알고리즘 동작 매커니즘
 
 ```mermaid
-graph TB
-    subgraph 키 생성
+graph LR
+    subgraph 키생성[키 생성]
       A[소수 선택] -->|p, q 선택| B[모듈러스 n 계산]
       B -->|n = p * q| C[오일러 함수 ϕn 계산]
       C -->|ϕn = p-1*q-1| D[공개키 e 선택]
       D -->|e는 ϕn과 서로소| E[개인키 d 계산]
     end
 
-    subgraph 암호화 및 복호화
-         E -->|e*d ≡ 1 mod ϕn| F[암호화: C = M^e mod n]
-        F -->|복호화: M = C^d mod n| G[평문 복구]
+    키생성 -->|e*d ≡ 1 mod ϕn| 암복호화
+
+    subgraph 암복호화
+      F[암호화: C = M^e mod n] -->|복호화: M = C^d mod n| G[평문 복구]
     end
 ```
 

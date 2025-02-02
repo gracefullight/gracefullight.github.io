@@ -5,7 +5,7 @@ description: Security as a Service
 authors: me
 tags:
   - pe
-  - pe/sec 
+  - pe/sec
 ---
 
 ## SECaaS 개념

@@ -45,21 +45,25 @@ tags:
 ```mermaid
 graph LR
   subgraph 식별과수집
+    direction LR
     전자적정보확보
     재현성유지
   end
 
   subgraph 분석과정리
+    direction LR
     목적물분석
     증거물이력관리
   end
 
   subgraph 증거제출
+    direction LR
     증거물입증
     법정증언
   end
 
   subgraph 검증
+    direction LR
     결과보고서
     제3기관검증
   end
