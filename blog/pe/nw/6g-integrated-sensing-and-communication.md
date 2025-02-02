@@ -43,7 +43,7 @@ graph TD
 ### ISAC 시스템 개념도
 
 ```mermaid
-graph TD
+graph LR
   User["사용자/디바이스"]
   Sensing["센싱 모듈"]
   Communication["통신 모듈"]

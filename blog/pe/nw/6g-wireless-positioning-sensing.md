@@ -28,7 +28,7 @@ tags:
 ### 6G 무선 포지셔닝 및 센싱 구성도
 
 ```mermaid
-graph TD
+graph LR
     Satellite["위성 통신"]
     RIS["재구성가능 지능형표면"]
     AIPlatform["AI 플랫폼"]

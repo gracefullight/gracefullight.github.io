@@ -5,7 +5,7 @@ description: Net Neutrality
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 망 중립성 개념

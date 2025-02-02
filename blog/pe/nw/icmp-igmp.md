@@ -3,7 +3,7 @@ title: ICMP, IGMP
 date: 2024-12-21T18:21:11.642+09:00
 description: Internet Control Message Protocol, Internet Group Management Protocol
 authors: me
-tags:
+tags: 
   - pe
   - pe/nw
 ---

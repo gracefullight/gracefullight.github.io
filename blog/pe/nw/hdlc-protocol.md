@@ -5,7 +5,7 @@ description: High-Level Data Link Control Protocol
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## HDLC 프로토콜 개념

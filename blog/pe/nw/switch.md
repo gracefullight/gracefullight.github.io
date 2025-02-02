@@ -5,7 +5,7 @@ description: Network Switch
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 스위치 개념
@@ -38,10 +38,10 @@ tags:
 
 | 구분 | 내용 | 비고 |
 | --- | --- | --- |
-| Round Robin | - | - |
-| Least Connection | - | - |
-| Least Response Time | - | - |
-| Hash Based | - | - |
+| Round Robin | 서버 목록을 순차적으로 순환하며 트래픽을 분배 | 단순하고 빠르지만 서버 부하를 고려하지 않음 |
+| Least Connection | 현재 연결 수가 가장 적은 서버로 트래픽을 분배 | 실시간으로 서버 부하를 반영하여 효율적 |
+| Least Response Time | 연결 수와 응답 시간을 모두 고려하여 가장 빠른 서버로 분배 | 최소 연결 알고리즘에 응답 속도 계산을 추가 |
+| Hash Based | 클라이언트 IP 또는 요청 데이터를 해시하여 특정 서버에 할당 | 동일한 클라이언트 요청이 항상 같은 서버로 전달됨 |
 
 ## 스위치 고려사항
 

@@ -5,7 +5,7 @@ description: Manchester code and Differential Manchester code
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 맨체스터 코딩 개념

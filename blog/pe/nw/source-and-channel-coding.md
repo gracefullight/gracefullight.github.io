@@ -5,7 +5,7 @@ description: Source and Channel coding
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 소스코딩, 채널코딩 개념
@@ -23,23 +23,25 @@ tags:
 ```mermaid
 graph LR
   subgraph 송신
-    소스코딩[1. 소스코딩]
-    채널코딩[2. 채널코딩]
-    변조[3. 변조]
+    direction TB
+    소스코딩[1 소스코딩]
+    채널코딩[2 채널코딩]
+    변조[3 변조]
 
     소스코딩 --> |압축| 채널코딩 --> |오류검출, 정정비트| 변조
   end
 
-  변조 --> |ASK/FSK| UpConversion[Up Conversion] 
+  송신 --> |ASK/FSK| UpConversion[Up Conversion] 
   
   UpConversion -..->|RF| DownConversion[Down Conversion]
 
-  DownConversion --> 복조[4.복조]
+  DownConversion --> 수신
 
   subgraph 수신
-    복조[4.복조]
-    채널디코딩[5. 채널디코딩]
-    소스디코딩[6. 소스디코딩]
+    direction BT
+    복조[4 복조]
+    채널디코딩[5 채널디코딩]
+    소스디코딩[6 소스디코딩]
 
     복조 -->|FEC, BEC| 채널디코딩
     채널디코딩 -->|압축 복원| 소스디코딩

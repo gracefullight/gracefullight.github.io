@@ -5,7 +5,7 @@ description: NOMA, Non-Orthogonal Multiple Access
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## NOMA 개념

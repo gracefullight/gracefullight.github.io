@@ -5,7 +5,7 @@ description: Ethernet, IEEE 802.3
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 이더넷 개념

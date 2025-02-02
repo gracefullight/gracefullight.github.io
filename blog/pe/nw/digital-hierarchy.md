@@ -5,7 +5,7 @@ description: Digital Hierarchy
 authors: me
 tags:
   - pe
-  - pe/nw 
+  - pe/nw
 ---
 
 ## 디지털 계위 개념 및 유형

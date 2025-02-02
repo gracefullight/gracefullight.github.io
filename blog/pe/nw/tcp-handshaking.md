@@ -49,7 +49,7 @@ sequenceDiagram
 | Client  | FIN_WAIT2 | 서버로부터 FIN 수신 후 ACK 전송, 타이머 시작 |
 | Server | LAST_ACK | 클라이언트로부터 ACK 수신 후 타이머 시작, 연결 종료 |
 | Client | TIME_WAIT | 타이머 종료 후 연결 종료, TIME_WAIT 상태로 대기 |
-| - | CLOSED | 서버, 클라이언트 연결 종료 |
+| | CLOSED | 서버, 클라이언트 연결 종료 |
 
 ## TCP 3-way 핸드쉐이킹 과정
 
