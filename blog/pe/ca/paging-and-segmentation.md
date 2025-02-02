@@ -62,6 +62,57 @@ graph LR
 
 - 파일 관리는 세그먼트 단위로, 프로그램 조각은 페이지 단위로 관리
 
+## 단편화 해결 기법
+
+### 외부 단편화 해결 기법
+
+```mermaid
+graph LR
+  subgraph 버디메모리
+    direction TB
+    256
+    256 --- 128
+    256 --- 128_2[128]
+    128 --- 64
+    128 --- 64_2[64]
+  end
+```
+
+- 버디 메모리: 메모리를 2의 거듭제곱으로 나눈 뒤 필요시 블록을 나눠서 할당, 반환된 블록을 병합하여 더 큰 블록 생성
+- Best Fit
+
+### 내부 단편화 해결 기법
+
+```mermaid
+graph LR
+  subgraph 슬랩할당
+    direction LR
+    Obj((obj))
+    Obj2((obj))
+
+    Obj --> Block
+    Obj2 --> Block2
+
+    subgraph 캐시
+      direction LR
+      Block
+      Block2[Block]
+    end
+
+    Block --> Slab
+    Block2 --> Slab2
+
+    subgraph Slabs
+      direction LR
+      Slab
+      Slab2
+    end
+  end
+```
+
+- 세그먼테이션
+- 슬랩 할당: 미리 정해진 크기의 슬랩 단위로 메모리 할당, 각 슬랩은 특정 객체의 캐시로 사용
+
 ## 메모리 관리 기법 선택시 고려사항
 
 - 외부단편화와 내부단편화를 줄이기 위해 버디메모리, 슬랩할당자 기법 사용 고려
