@@ -132,9 +132,9 @@ export class PdfCommand extends Command {
                   margin-bottom: 0.5em;
                   font-weight: bold;
                 }
-                h1 { font-size: 1.6em; } /* 제목 크기 조정 */
-                h2 { font-size: 1.4em; }
-                h3 { font-size: 1.2em; }
+                h1 { font-size: 1.6em; border-bottom: 1px solid #c8c8c8; padding-bottom: 3px; } /* 제목 크기 조정 */
+                h2 { font-size: 1.4em; border-bottom: 1px solid #d8d8d8; padding-bottom: 2px; }
+                h3 { font-size: 1.2em; border-bottom: 1px solid #dfdfdf; padding-bottom: 2px; }
                 h4 { font-size: 1.1em; }
                 h5 { font-size: 1em; }
                 h6 { font-size: 1em; }
