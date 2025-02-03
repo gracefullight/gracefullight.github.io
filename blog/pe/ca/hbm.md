@@ -45,12 +45,12 @@ graph TB;
 | 구분 | 기술요소 | 상세 설명 |
 | --- | --- | --- |
 | 메모리 적층 구조 |  TSV  |DRAM Die 를 뚫어 전도성 재료를 채운 수직 실리콘 관통 전극 |
-| - | DRAM Die | DRAM Cell 그룹, 패키징 단위 |
-| - | Logic Die | 다른 칩셋 및 PHY 와 DRAM die 연결 |
+| | DRAM Die | DRAM Cell 그룹, 패키징 단위 |
+| | Logic Die | 다른 칩셋 및 PHY 와 DRAM die 연결 |
 | 프로세스 유닛 | PHY | 물리계층 인터페이스, Logic Die - Process Die 간 연결 |
-| - | CPU/GPU | 그래픽, 명령어 처리 위한 프로세서 |
+| | CPU/GPU | 그래픽, 명령어 처리 위한 프로세서 |
 | 칩셋 | Silicon Interposer | Logic Die (CPU, GPU 등)와 HBM 칩 사이의 연결 |
-| - | Package Substrate | Silicon Interposer 과 그래픽카드 연결하는 PCB 기판 |
+| | Package Substrate | Silicon Interposer 과 그래픽카드 연결하는 PCB 기판 |
 
 ### HBM과 DDR6 비교
 
