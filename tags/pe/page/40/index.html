@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.feeb4240.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2f16bdf9.js" defer="defer"></script>
 <script src="/assets/js/main.755a9e7d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -198,10 +198,10 @@
 <p>Pod, 메트릭모니터링, 로드밸런서 이미지</p>
 </blockquote>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="구성요소">구성요소<a href="#구성요소" class="hash-link" aria-label="구성요소에 대한 직접 링크" title="구성요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>정책, 모니터링</td><td>메트릭 수집, 알람 전송</td><td>-</td></tr><tr><td>서버 이미지 배포</td><td>Scale-Out, Scale-In, 서버 프로비저닝</td><td>-</td></tr><tr><td>서비스 연결</td><td>Health-Check, 트래픽 제어</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>기능</th><th>설명</th></tr></thead><tbody><tr><td>정책, 모니터링</td><td>메트릭 수집, 알람 전송</td><td></td></tr><tr><td>서버 이미지 배포</td><td>Scale-Out, Scale-In, 서버 프로비저닝</td><td></td></tr><tr><td>서비스 연결</td><td>Health-Check, 트래픽 제어</td><td></td></tr></tbody></table>
 <p>오토스케일링시 서버 추가까지 필요한 경우, Scale-Up이 비용절감의 효과를 가져올 수 있음.</p>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="비교">비교<a href="#비교" class="hash-link" aria-label="비교에 대한 직접 링크" title="비교에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="스케쥴기반-부 하기반">스케쥴기반, 부하기반<a href="#스케쥴기반-부하기반" class="hash-link" aria-label="스케쥴기반, 부하기반에 대한 직접 링크" title="스케쥴기반, 부하기반에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="스케쥴기반-부하 기반">스케쥴기반, 부하기반<a href="#스케쥴기반-부하기반" class="hash-link" aria-label="스케쥴기반, 부하기반에 대한 직접 링크" title="스케쥴기반, 부하기반에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>스케쥴 기반 오토스케일링</th><th>부하 기반 오토스케일링</th></tr></thead><tbody><tr><td>트리거</td><td>예약된 시간</td><td>트래픽</td></tr><tr><td>수치</td><td>예측 가능한 부하</td><td>실제 사용량 기반</td></tr><tr><td>장점</td><td>트래픽 증가 지연 방지</td><td>효율적인 리소스 사용량</td></tr><tr><td>단점</td><td>예측을 벗어날시 리소스 낭비, 부족</td><td>인스턴스 배포시간으로 인한 지연</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="scale-up-scale-out">Scale Up, Scale Out<a href="#scale-up-scale-out" class="hash-link" aria-label="Scale Up, Scale Out에 대한 직접 링크" title="Scale Up, Scale Out에 대한 직접 링크">​</a></h3>
 <table><thead><tr><th>구분</th><th>Auto Scale Up</th><th>Auto Scale Out</th></tr></thead><tbody><tr><td>추가리소스</td><td>CPU, Memory</td><td>인스턴스</td></tr><tr><td>장점</td><td>인스턴스, NW관리 없어 간단</td><td>높은 확장성, 인스턴스 장애 격리</td></tr><tr><td>단점</td><td>물리적 한계, 고비용, 시스템 다운타임</td><td>복잡한 NW구성, 세션 처리 등</td></tr></tbody></table>
