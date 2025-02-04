@@ -123,7 +123,7 @@ export class PdfCommand extends Command {
                 /* 글꼴 크기 및 스타일 조정 */
                 body {
                   font-family: Arial, sans-serif;
-                  font-size: 14px; /* 기본 글꼴 크기 줄임 */
+                  font-size: 16px; /* 기본 글꼴 크기 줄임 */
                   line-height: 1.5;
                   padding: 20px;
                 }
