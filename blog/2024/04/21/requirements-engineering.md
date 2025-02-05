@@ -14,7 +14,7 @@ tags:
 1. Mission & Scope: 미션과 스코프 식별
 2. Stakeholders: 이해관계자 실별
 3. Goals: 목표 식별
-4. Goal Conflicts: 상이한 이해관게자 간의 목표 절충
+4. Goal Conflicts: 상이한 이해관계자 간의 목표 절충
 5. Scenarios: 요구사항을 시나리오 형태로 기술
 6. Shall Statement: 해야한다 형태로 기술
 7. Justification: 특정 기능이 포함되어야 하는 이유를 정확히 설명
