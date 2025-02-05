@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.3a0ded2e.css">
-<script src="/assets/js/runtime~main.cb4e1d70.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.eec57e9b.js" defer="defer"></script>
 <script src="/assets/js/main.5cca055f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -115,7 +115,7 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-모델링-단계-식별비식별-관계-비교">데이터 모델링 단계, 식별/비식별 관계 비교<a href="#데이터-모델링-단계-식별비식별-관계-비교" class="hash-link" aria-label="데이터 모델링 단계, 식별/비식별 관계 비교에 대한 직접 링크" title="데이터 모델링 단계, 식별/비식별 관계 비교에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-모델링-단계">데이터 모델링 단계<a href="#데이터-모델링-단계" class="hash-link" aria-label="데이터 모델링 단계에 대한 직접 링크" title="데이터 모델링 단계에 대한 직접 링크">​</a></h3>
 <!-- -->
-<table><thead><tr><th>단계</th><th>설명</th></tr></thead><tbody><tr><td>개념 모델링</td><td>요구사항을 데이터 모델로 변환</td></tr><tr><td></td><td>엔티티와 속성 정의, 엔티티 간 식별/비식별 관게 설정</td></tr><tr><td>논리 모델링</td><td>개념스키마를 실제 DBMS 스키마로 변환</td></tr><tr><td></td><td>데이터 구조와 무결성 제약 설정</td></tr><tr><td></td><td>식별/비식별 관례를 기본키, 외래키로 추가</td></tr><tr><td>물리 모델링</td><td>저장구조, 저장방법 기술, 성능 기준 충족</td></tr></tbody></table>
+<table><thead><tr><th>단계</th><th>설명</th><th>산출물</th></tr></thead><tbody><tr><td>개념 모델링</td><td>요구사항을 데이터 모델로 변환</td><td>ERD</td></tr><tr><td></td><td>엔티티와 속성 정의, 엔티티 간 식별/비식별 관계 설정</td><td>개념 스키마</td></tr><tr><td>논리 모델링</td><td>개념스키마를 실제 DBMS 스키마로 변환</td><td>논리 스키마</td></tr><tr><td></td><td>데이터 구조와 무결성 제약 설정</td><td>테이블 정의서</td></tr><tr><td></td><td>식별/비식별 관례를 기본키, 외래키로 추가</td><td></td></tr><tr><td>물리 모델링</td><td>저장구조, 저장방법 기술, 성능 기준 충족</td><td>접근 권한 매트릭스</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="식별비식별-관계-개념-비교">식별/비식별 관계 개념 비교<a href="#식별비식별-관계-개념-비교" class="hash-link" aria-label="식별/비식별 관계 개념 비교에 대한 직접 링크" title="식별/비식별 관계 개념 비교에 대한 직접 링크">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_OSIK" id="식별-관계">식별 관계<a href="#식별-관계" class="hash-link" aria-label="식별 관계에 대한 직접 링크" title="식별 관계에 대한 직접 링크">​</a></h4>
 <!-- -->
@@ -128,7 +128,7 @@
 <li>하위 엔티티의 일반 속성에 상위 엔티티의 PK가 포함되는 관계</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="식별비식별-관계-상세-비교">식별/비식별 관계 상세 비교<a href="#식별비식별-관계-상세-비교" class="hash-link" aria-label="식별/비식별 관계 상세 비교에 대한 직접 링크" title="식별/비식별 관계 상세 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구분</th><th>식별 관계</th><th>비식별 관계</th></tr></thead><tbody><tr><td>결합도</td><td>강한 연결관계</td><td>약한 연결관계</td></tr><tr><td>표기법</td><td>실선 표현</td><td>점선 표현</td></tr><tr><td>PK</td><td>하위 엔티티 PK 구성 포함</td><td>미포함</td></tr><tr><td>관계</td><td>자식 엔티티가 부모에 종속적</td><td>자식 엔티티가 부모에 독립적</td></tr><tr><td>데이터 무결성</td><td>부모 엔티티 삭제시 자식 엔티티 함께 삭제</td><td>부모 엔티티 삭제시 자식 엔티티 유지, 관계 해제</td></tr><tr><td>예시</td><td>Order   와 OrderItem</td><td>Customer 와 Order</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>식별 관계</th><th>비식별 관계</th></tr></thead><tbody><tr><td>결합도</td><td>강한 연결관계</td><td>약한 연결관계</td></tr><tr><td>표기법</td><td>실선 표현</td><td>점선 표현</td></tr><tr><td>PK</td><td>하위 엔티티 PK 구성 포함</td><td>미포함</td></tr><tr><td>관계</td><td>자식 엔티티가 부모에 종속적</td><td>자식 엔티티가 부모에 독립적</td></tr><tr><td>데이터 무결성</td><td>부모 엔티티 삭제시 자식 엔티티 함께 삭제</td><td>부모 엔티티 삭제시 자식 엔티티 유지, 관계 해제</td></tr><tr><td>예시</td><td>Order 와 OrderItem</td><td>Customer 와 Order</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-모델링시-고려사항">데이터 모델링시 고려사항<a href="#데이터-모델링시-고려사항" class="hash-link" aria-label="데이터 모델링시 고려사항에 대한 직접 링크" title="데이터 모델링시 고려사항에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="비지니스-측면">비지니스 측면<a href="#비지니스-측면" class="hash-link" aria-label="비지니스 측면에 대한 직접 링크" title="비지니스 측면에 대한 직접 링크">​</a></h3>
 <ul>

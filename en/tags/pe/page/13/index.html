@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Person","name":"Eunkwang Shin","url":"https://gracefullight.dev","logo":"https://gracefullight.dev/img/apple-touch-icon.png","image":"https://avatars.githubusercontent.com/u/11773683?v=4","email":"mailto:gracefullight.dev@gmail.com","jobTitle":"FullStack JavaScript Developer","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"]}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous"><link rel="stylesheet" href="/en/assets/css/styles.21852905.css">
-<script src="/en/assets/js/runtime~main.7d8ea479.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.85cef460.js" defer="defer"></script>
 <script src="/en/assets/js/main.90cc3567.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -177,14 +177,14 @@
 <h2 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-모델링-단계-식별비식별-관계-비교">데이터 모델링 단계, 식별/비식별 관계 비교<a href="#데이터-모델링-단계-식별비식별-관계-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="데이터-모델링-단계">데이터 모델링 단계<a href="#데이터-모델링-단계" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
-<table><thead><tr><th>단계</th><th>설명</th></tr></thead><tbody><tr><td>개념 모델링</td><td>요구사항을 데이터 모델로 변환</td></tr><tr><td></td><td>엔티티와 속성 정의, 엔티티 간 식별/비식별 관게 설정</td></tr><tr><td>논리 모델링</td><td>개념스키마를 실제 DBMS 스키마로 변환</td></tr><tr><td></td><td>데이터 구조와 무결성 제약 설정</td></tr><tr><td></td><td>식별/비식별 관례를 기본키, 외래키로 추가</td></tr><tr><td>물리 모델링</td><td>저장구조, 저장방법 기술, 성능 기준 충족</td></tr></tbody></table>
+<table><thead><tr><th>단계</th><th>설명</th><th>산출물</th></tr></thead><tbody><tr><td>개념 모델링</td><td>요구사항을 데이터 모델로 변환</td><td>ERD</td></tr><tr><td></td><td>엔티티와 속성 정의, 엔티티 간 식별/비식별 관계 설정</td><td>개념 스키마</td></tr><tr><td>논리 모델링</td><td>개념스키마를 실제 DBMS 스키마로 변환</td><td>논리 스키마</td></tr><tr><td></td><td>데이터 구조와 무결성 제약 설정</td><td>테이블 정의서</td></tr><tr><td></td><td>식별/비식별 관례를 기본키, 외래키로 추가</td><td></td></tr><tr><td>물리 모델링</td><td>저장구조, 저장방법 기술, 성능 기준 충족</td><td>접근 권한 매트릭스</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="식별비식별-관계-개념-비교">식별/비식별 관계 개념 비교<a href="#식별비식별-관계-개념-비교" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_OSIK" id="식별-관계">식별 관계<a href="#식별-관계" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <!-- -->
 <ul>
 <li>하위 엔티티의 PK 구성이 상위 엔티티의 PK에 포함되는 관계</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_OSIK" id="비식별-관계">비식별 관계<a href="#비식별-관계" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_OSIK" id="비식별-  관계">비식별 관계<a href="#비식별-관계" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
 <!-- -->
 <ul>
 <li>하위 엔티티의 일반 속성에 상위 엔티티의 PK가 포함되는 관계</li>
@@ -199,7 +199,7 @@
 <li>관계 설정: 엔티티 관계, 키 설정</li>
 <li>무결성 제약조건: 개체, 참조, 속성 무결성</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="기술-측면">기술 측면<a href="#기술-측면" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="기술-측면">기술 측면<a href="#기술-측  면" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
 <li>성능: 정규화, 반정규화, 인덱싱, 연결함정, 파티셔닝</li>
 <li>용량관리: 데이터 양, 저장소, 확장성</li>
@@ -242,7 +242,7 @@
 <li>경쟁층 뉴런들이 2차원 격자구조로 배열, 고차원 입력 데이터를 저차원 공간에 시각적으로 표현하는 구조</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_OSIK" id="som-구성요소">SOM 구성요소<a href="#som-구성요소" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>구성요소</th><th>설명</th></tr></thead><tbody><tr><td>레이어</td><td>입력층</td><td>고차원 입력 특성을 받는 층</td></tr><tr><td></td><td>경쟁층(출력층)</td><td>2D 그리드 구조로 입력 데이터와의 거리 측정 후 가장 가까운 뉴런 선정</td></tr><tr><td>연결요소</td><td>연결가중치</td><td>입출력층 연결, 초기 무작위 가중치 설 정 후 경쟁학습을 통해 업데이트</td></tr><tr><td></td><td>BMV</td><td>입력벡터와 가장 유사한 출력층 뉴런, 유클리드 최소 거리 계산</td></tr></tbody></table>
+<table><thead><tr><th>구분</th><th>구성요소</th><th>설명</th></tr></thead><tbody><tr><td>레이어</td><td>입력층</td><td>고차원 입력 특성을 받는 층</td></tr><tr><td></td><td>경쟁층(출력층)</td><td>2D 그리드 구조로 입력 데이터와의 거리 측정 후 가장 가까운 뉴런 선정</td></tr><tr><td>연결요소</td><td>연결가중치</td><td>입출력층 연결, 초기 무작위 가중치 설정 후 경쟁학습을 통해 업데이트</td></tr><tr><td></td><td>BMV</td><td>입력벡터와 가장 유사한 출력층 뉴런, 유클리드 최소 거리 계산</td></tr></tbody></table>
 <ul>
 <li>역전파와 체인룰 없이 승자 독식 경쟁학습 알고리즘 사용</li>
 </ul>
