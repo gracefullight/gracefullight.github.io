@@ -5,7 +5,7 @@ description: CPU, GPU, FPGA, ASIC
 authors: me
 tags:
   - pe
-  - pe/ca 
+  - pe/ca
 ---
 
 ## 컴퓨팅 아키텍처의 개요
@@ -85,7 +85,7 @@ graph LR
   subgraph ASIC
     CPU
     GPU
-    NPM
+    NPU
     Memory
   end
 ```
