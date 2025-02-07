@@ -4,10 +4,36 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 07 Feb 2025 05:11:17 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Feb 2025 05:47:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[이동형 영상정보처리기기를 위한 개인영상정보 보호 활용 안내서]]></title>
+            <link>https://gracefullight.dev/pe/sec/이동형-영상정보처리기기를-위한-개인영상정보-보호-활용-안내서/</link>
+            <guid>https://gracefullight.dev/pe/sec/이동형-영상정보처리기기를-위한-개인영상정보-보호-활용-안내서/</guid>
+            <pubDate>Fri, 07 Feb 2025 05:47:56 GMT</pubDate>
+            <description><![CDATA[이동형 영상정보처리기기를 위한 개인영상정보 보호 활용 안내서]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="이동형-영상정보처리기기의-개념">이동형 영상정보처리기기의 개념<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EC%9D%98-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="이동형 영상정보처리기기의 개념에 대한 직접 링크" title="이동형 영상정보처리기기의 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>자율주행차, 로봇, 드론, 바디캠, 스마트 가전 등의 기기에 부착된 영상처리 장치를 의미하며, 영상 수집·처리 기능을 갖춘 기기</li>
+<li>AI 및 IoT 기술과 융합되어 공공 안전, 교통 관제, 환경 모니터링 등 다양한 분야에서 활용됨</li>
+<li>사회적 편익 증가하나, 개인정보보호 및 프라이버시 침해 가능성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="이동형-영상정보처리기기-개념도-구성요소-개인정보보호-방안">이동형 영상정보처리기기 개념도, 구성요소, 개인정보보호 방안<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0-%EA%B0%9C%EB%85%90%EB%8F%84-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="이동형 영상정보처리기기 개념도, 구성요소, 개인정보보호 방안에 대한 직접 링크" title="이동형 영상정보처리기기 개념도, 구성요소, 개인정보보호 방안에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="이동형-영상정보처리기기-개념도">이동형 영상정보처리기기 개념도<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0-%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="이동형 영상정보처리기기 개념도에 대한 직접 링크" title="이동형 영상정보처리기기 개념도에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="이동형-영상정보처리기기-구성요소">이동형 영상정보처리기기 구성요소<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="이동형 영상정보처리기기 구성요소에 대한 직접 링크" title="이동형 영상정보처리기기 구성요소에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>영상 수집</td><td>카메라 모듈, 광학 센서</td><td>스마트폰, 바디캠, 드론</td></tr><tr><td>저장 장치</td><td>로컬 스토리지, 클라우드 연동</td><td>SD 카드, 서버 저장</td></tr><tr><td>처리 기술</td><td>AI 영상 분석, 객체 인식</td><td>얼굴 인식, 번호판 인식</td></tr><tr><td>보안 장치</td><td>암호화, 접근제어</td><td>블러링, 마스킹 처리</td></tr><tr><td>전송 방식</td><td>무선 네트워크, IoT 연동</td><td>Wi-Fi, 5G, 블루투스</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="이동형-영상정보처리기기-개인정보-보호방안">이동형 영상정보처리기기 개인정보 보호방안<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8%EB%B0%A9%EC%95%88" class="hash-link" aria-label="이동형 영상정보처리기기 개인정보 보호방안에 대한 직접 링크" title="이동형 영상정보처리기기 개인정보 보호방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>주요 내용</th><th>적용 예시</th></tr></thead><tbody><tr><td>관리적</td><td>접근 권한 관리, 내부 감시체계 구축</td><td>관리자 로그 기록, 보안 교육</td></tr><tr><td>기술적</td><td>데이터 암호화, AI 기반 자동 마스킹</td><td>영상 암호화 저장, 얼굴 블러링</td></tr><tr><td>물리적</td><td>저장 장치 분리, 장치 도난 방지</td><td>블랙박스 저장 공간 암호화, CCTV 보호함</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="참조">참조<a href="https://gracefullight.dev/pe/sec/%EC%9D%B4%EB%8F%99%ED%98%95-%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EA%B8%B0%EB%A5%BC-%EC%9C%84%ED%95%9C-%EA%B0%9C%EC%9D%B8%EC%98%81%EC%83%81%EC%A0%95%EB%B3%B4-%EB%B3%B4%ED%98%B8-%ED%99%9C%EC%9A%A9-%EC%95%88%EB%82%B4%EC%84%9C/#%EC%B0%B8%EC%A1%B0" class="hash-link" aria-label="참조에 대한 직접 링크" title="참조에 대한 직접 ��링크">​</a></h2>
+<ul>
+<li><a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EB%B2%95/(20240315,19234,20230314)/%EC%A0%9C25%EC%A1%B0%EC%9D%982" target="_blank" rel="noopener noreferrer">국가법령정보센터: 개인정보 보호법 25조의 2</a></li>
+</ul>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/security</category>
+        </item>
         <item>
             <title><![CDATA[ZKP, 영지식 증명]]></title>
             <link>https://gracefullight.dev/pe/sec/zero-knowledge-proof/</link>
@@ -297,33 +323,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <table><thead><tr><th>고려사항</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>데이터 접근 패턴</td><td>랜덤 액세스 vs 범위 쿼리</td><td>랜덤 액세스 → Hash-based</td></tr><tr><td></td><td></td><td>범위 쿼리 → Range-based</td></tr><tr><td>부하 분산</td><td>데이터 불균형 발생 가능성</td><td>Hash-based로 균형 유지</td></tr><tr><td>샤드 추가/제거 영향</td><td>데이터 재배치 비용</td><td>샤드 크기 확장을 고려한 설계</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/database</category>
-        </item>
-        <item>
-            <title><![CDATA[ITIL]]></title>
-            <link>https://gracefullight.dev/pe/mng/itil/</link>
-            <guid>https://gracefullight.dev/pe/mng/itil/</guid>
-            <pubDate>Fri, 31 Jan 2025 05:50:36 GMT</pubDate>
-            <description><![CDATA[Information Technology Infrastructure Library]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil">ITIL<a href="https://gracefullight.dev/pe/mng/itil/#itil" class="hash-link" aria-label="ITIL에 대한 직접 링크" title="ITIL에 대한 직접 링크">​</a></h2>
-<ul>
-<li>IT 서비스 관리(ITSM)를 위한 글로벌 표준 프레임워크로, IT 서비스의 품질과 비즈니스 목표 정렬을 최적화하는 역할</li>
-<li>IT 서비스의 효율성 및 품질 개선 / BITA / DevOps, Agile 통합 지원</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil-구성도-핵심요소">ITIL 구성도, 핵심요소<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B5%AC%EC%84%B1%EB%8F%84-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ITIL 구성도, 핵심요소에 대한 직접 링크" title="ITIL 구성도, 핵심요소에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-구성도">ITIL 구성도<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="ITIL 구성도에 대한 직접 링크" title="ITIL 구성도에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-핵심요소">ITIL 핵심요소<a href="https://gracefullight.dev/pe/mng/itil/#itil-%ED%95%B5%EC%8B%AC%EC%9A%94%EC%86%8C" class="hash-link" aria-label="ITIL 핵심요소에 대한 직접 링크" title="ITIL 핵심요소에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>구성 요소</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>서비스 가치 시스템</td><td>IT 서비스가 조직의 가치를 창출하는 데 필요한 요소와 활동의 프레임워크</td><td>거버넌스, 지속적 개선 포함</td></tr><tr><td>서비스 가치 체인</td><td>IT 서비스 제공 프로세스를 6가지 활동으로 분류</td><td>Plan, Improve, Engage 등</td></tr><tr><td>ITIL 4 실무</td><td>ITIL 3의 프로세스를 발전시켜 34개 실무 영역으로 확장</td><td>인시던트 관리, 문제 관리, 변경 관리 등</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="itil을-활용한-서비스-관리-방안-적용-사례">ITIL을 활용한 서비스 관리 방안, 적용 사례<a href="https://gracefullight.dev/pe/mng/itil/#itil%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="ITIL을 활용한 서비스 관리 방안, 적용 사례에 대한 직접 링크" title="ITIL을 활용한 서비스 관리 방안, 적용 사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-기반-it서비스-관리-방안">ITIL 기반 IT서비스 관리 방안<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EA%B8%B0%EB%B0%98-it%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="ITIL 기반 IT서비스 관리 방안에 대한 직접 링크" title="ITIL 기반 IT서비스 관리 방안에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>방안</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>DevOps와 Agile 통합</td><td>CI/CD와 결합하여 변경 관리 자동화 및 배포 속도 향상</td><td>AWS 클라우드에서의 자동화된 배포</td></tr><tr><td>서비스 가치 체인 활용</td><td>고객 요구에 따라 특정 활동 선택적 적용</td><td>Engage, Improve 단계 반복 실행</td></tr><tr><td>고객 중심 접근</td><td>AI 챗봇을 활용한 신속한 고객 응대 및 피드백 반영</td><td>서비스 데스크에서 AI 기반 고객 지원</td></tr><tr><td>지속적 개선</td><td>데이터 기반 실시간 의사결정 및 비즈니스 목표 정렬</td><td>IT 운영 데이터 분석으로 장애 원인 식별</td></tr><tr><td>ITIL 실무 통합</td><td>변경 관리와 문제 관리 통합으로 비즈니스 연속성 유지</td><td>병원 IT 인프라에서의 장애 방지</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="itil-적용-사례">ITIL 적용 사례<a href="https://gracefullight.dev/pe/mng/itil/#itil-%EC%A0%81%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="ITIL 적용 사례에 대한 직접 링크" title="ITIL 적용 사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>클라우드 서비스</td><td>AWS에서 변경 관리와 지속적 개선 도입</td><td>클라우드 서비스 품질 향상</td></tr><tr><td>금융 서비스</td><td>DevOps와 ITIL 4 통합으로 빠른 서비스 제공</td><td>보안 유지 및 배포 속도 증가</td></tr><tr><td>헬스케어</td><td>인시던트 관리와 문제 관리 자동화</td><td>의료 데이터 보호 및 응답 시간 단축</td></tr></tbody></table>
-<ul>
-<li>AI, AIOps 기반의 자동화 기술과 통합하여 IT 서비스의 실시간 분석 및 관리 효율성 향상 가능</li>
-</ul>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/it-management</category>
         </item>
     </channel>
 </rss>
