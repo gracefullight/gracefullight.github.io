@@ -4,10 +4,31 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 07 Feb 2025 05:47:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Feb 2025 07:20:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[내부 게이트웨이 프로토콜]]></title>
+            <link>https://gracefullight.dev/pe/nw/internal-gateway-protocol/</link>
+            <guid>https://gracefullight.dev/pe/nw/internal-gateway-protocol/</guid>
+            <pubDate>Fri, 07 Feb 2025 07:20:57 GMT</pubDate>
+            <description><![CDATA[Internal Gateway Protocol]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="내부-게이트웨이-프로토콜">내부 게이트웨이 프로토콜<a href="https://gracefullight.dev/pe/nw/internal-gateway-protocol/#%EB%82%B4%EB%B6%80-%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="내부 게이트웨이 프로토콜에 대한 직접 링크" title="내부 게이트웨이 프로토콜에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>네트워크 규모에 따라 소규모 네트워크에서 주기적으로 라우팅 정보를 교환하는 RIP, 대규모 네트워크에서 Dijkstra 알고리즘을 사용하여 최단 경로를 계산한 OSPF 선택</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_OSIK" id="rip-ospf-동작-매커니즘-상세-비교-활용-방안">RIP, OSPF 동작 매커니즘, 상세 비교, 활용 방안<a href="https://gracefullight.dev/pe/nw/internal-gateway-protocol/#rip-ospf-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="RIP, OSPF 동작 매커니즘, 상세 비교, 활용 방안에 대한 직접 링크" title="RIP, OSPF 동작 매커니즘, 상세 비교, 활용 방안에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rip-ospf-동작-매커니즘">RIP, OSPF 동작 매커니즘<a href="https://gracefullight.dev/pe/nw/internal-gateway-protocol/#rip-ospf-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="RIP, OSPF 동작 매커니즘에 대한 직접 링크" title="RIP, OSPF 동작 매커니즘에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rip-ospf-상세-비교">RIP, OSPF 상세 비교<a href="https://gracefullight.dev/pe/nw/internal-gateway-protocol/#rip-ospf-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="RIP, OSPF 상세 비교에 대한 직접 링크" title="RIP, OSPF 상세 비교에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>RIP</th><th>OSPF</th></tr></thead><tbody><tr><td>프로토콜 유형</td><td>내부 게이트웨이 프로토콜</td><td>내부 게이트웨이 프로토콜</td></tr><tr><td>알고리즘</td><td>거리 벡터 알고리즘</td><td>링크 상태 알고리즘</td></tr><tr><td>최대 홉 수</td><td>15</td><td>제한 없음</td></tr><tr><td>전송 계층 프로토콜</td><td>UDP</td><td>IP</td></tr><tr><td>특징</td><td>주기적 업데이트, 단순 구조</td><td>빠른 수렴, 멀티캐스트 사용</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_OSIK" id="rip-ospf-활용-방안">RIP, OSPF 활용 방안<a href="https://gracefullight.dev/pe/nw/internal-gateway-protocol/#rip-ospf-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="RIP, OSPF 활용 방안에 대한 직접 링크" title="RIP, OSPF 활용 방안에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>구분</th><th>내용</th><th>적용 방안</th></tr></thead><tbody><tr><td>RIP</td><td>소규모 네트워크에서 기본 라우팅 제공</td><td>구현 및 유지보수 용이</td></tr><tr><td></td><td>최대 홉 수 제한으로 인해 대규모 네트워크에는 부적합</td><td>OSPF 등 다른 IGP 프로토콜 검토</td></tr><tr><td>OSPF</td><td>대규모 네트워크에서 확장성과 안정성 요구</td><td>빠른 수렴, 정확한 경로 선택</td></tr><tr><td></td><td>복잡한 설정 및 높은 리소스 요구</td><td>전문가 컨설팅 및 하드웨어 성능 확보</td></tr></tbody></table>]]></content:encoded>
+            <category>professional-engineer</category>
+            <category>pe/network</category>
+        </item>
         <item>
             <title><![CDATA[이동형 영상정보처리기기를 위한 개인영상정보 보호 활용 안내서]]></title>
             <link>https://gracefullight.dev/pe/sec/이동형-영상정보처리기기를-위한-개인영상정보-보호-활용-안내서/</link>
@@ -302,30 +323,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <table><thead><tr><th>도구</th><th>특징</th><th>활용 사례</th></tr></thead><tbody><tr><td>Istio</td><td>로드 밸런싱, 암호화, 인증 기능 제공</td><td>금융 서비스의 민감 데이터 보안 강화</td></tr><tr><td>Linkerd</td><td>경량화된 트래픽 관리</td><td>전자상거래 플랫폼의 성능 지표 모니터링</td></tr><tr><td>Consul</td><td>서비스 디스커버리 및 네트워크 보안</td><td>분산 환경에서의 암호화 통신 관리</td></tr></tbody></table>]]></content:encoded>
             <category>professional-engineer</category>
             <category>pe/network</category>
-        </item>
-        <item>
-            <title><![CDATA[샤딩 전략, 해시 기반, 범위 기반]]></title>
-            <link>https://gracefullight.dev/pe/db/sharding-strategies/</link>
-            <guid>https://gracefullight.dev/pe/db/sharding-strategies/</guid>
-            <pubDate>Fri, 31 Jan 2025 05:59:03 GMT</pubDate>
-            <description><![CDATA[Sharding Strategies, Hash-based Sharding, Range-based Sharding]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-개념">샤딩 개념<a href="https://gracefullight.dev/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="샤딩 개념에 대한 직접 링크" title="샤딩 개념에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>대규모 데이터베이스를 여러 서버에 분산 저장하여 처리 성능을 향상시키는 기법</li>
-<li>데이터 접근 패턴에 따른 적절한 샤딩 전략 선택 필요</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-비교-활용-사례">Hash-based 샤딩, Range-based 샤딩 비교, 활용 사례<a href="https://gracefullight.dev/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EB%B9%84%EA%B5%90-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="Hash-based 샤딩, Range-based 샤딩 비교, 활용 사례에 대한 직접 링크" title="Hash-based 샤딩, Range-based 샤딩 비교, 활용 사례에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-개념-비교">Hash-based 샤딩, Range-based 샤딩 개념 비교<a href="https://gracefullight.dev/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EA%B0%9C%EB%85%90-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Hash-based 샤딩, Range-based 샤딩 개념 비교에 대한 직접 링크" title="Hash-based 샤딩, Range-based 샤딩 개념 비교에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="hash-based-샤딩-range-based-샤딩-상세-비교">Hash-based 샤딩, Range-based 샤딩 상세 비교<a href="https://gracefullight.dev/pe/db/sharding-strategies/#hash-based-%EC%83%A4%EB%94%A9-range-based-%EC%83%A4%EB%94%A9-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Hash-based 샤딩, Range-based 샤딩 상세 비교에 대한 직접 링크" title="Hash-based 샤딩, Range-based 샤딩 상세 비교에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>항목</th><th>Hash-based Sharding</th><th>Range-based Sharding</th></tr></thead><tbody><tr><td>분배 방식</td><td>해시 함수 기반</td><td>범위 기반</td></tr><tr><td>데이터 분포</td><td>균등 분배</td><td>불균형 가능</td></tr><tr><td>범위 쿼리 처리</td><td>비효율적</td><td>효율적</td></tr><tr><td>샤드 추가/제거 영향</td><td>전체 데이터 재배치 필요</td><td>일부 데이터 이동</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-활용-사례">샤딩 활용 사례<a href="https://gracefullight.dev/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%ED%99%9C%EC%9A%A9-%EC%82%AC%EB%A1%80" class="hash-link" aria-label="샤딩 활용 사례에 대한 직접 링크" title="샤딩 활용 사례에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>전략</th><th>적용 사례</th><th>효과</th></tr></thead><tbody><tr><td>Hash-based Sharding</td><td>소셜 미디어 플랫폼</td><td>사용자 ID를 해싱하여 부하 균형 유지</td></tr><tr><td>Hash-based Sharding</td><td>온라인 게임</td><td>게임 상태 데이터 분산 저장</td></tr><tr><td>Range-based Sharding</td><td>전자상거래</td><td>날짜별 주문 데이터 저장 및 쿼리 최적화</td></tr><tr><td>Range-based Sharding</td><td>금융 서비스</td><td>계좌 번호 또는 지역 기반 데이터 관리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_OSIK" id="샤딩-설계시-고려사항">샤딩 설계시 고려사항<a href="https://gracefullight.dev/pe/db/sharding-strategies/#%EC%83%A4%EB%94%A9-%EC%84%A4%EA%B3%84%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD" class="hash-link" aria-label="샤딩 설계시 고려사항에 대한 직접 링크" title="샤딩 설계시 고려사항에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>고려사항</th><th>세부 내용</th><th>해결 방안</th></tr></thead><tbody><tr><td>데이터 접근 패턴</td><td>랜덤 액세스 vs 범위 쿼리</td><td>랜덤 액세스 → Hash-based</td></tr><tr><td></td><td></td><td>범위 쿼리 → Range-based</td></tr><tr><td>부하 분산</td><td>데이터 불균형 발생 가능성</td><td>Hash-based로 균형 유지</td></tr><tr><td>샤드 추가/제거 영향</td><td>데이터 재배치 비용</td><td>샤드 크기 확장을 고려한 설계</td></tr></tbody></table>]]></content:encoded>
-            <category>professional-engineer</category>
-            <category>pe/database</category>
         </item>
     </channel>
 </rss>
