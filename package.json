@@ -93,7 +93,7 @@
     "hexo-util": "^3.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "oxlint": "^0.15.10",
+    "oxlint": "^0.15.11",
     "playwright": "^1.50.1",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^2.14.0",
