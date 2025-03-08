@@ -1,17 +1,20 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
   "files": {
     "ignore": [
-      "**/.DS_Store",
-      "**/node_modules",
-      "**/npm-debug.log",
-      "**/dist",
-      "*/package-lock.json",
-      "**/.vscode",
-      "**/coverage",
-      "**/*.log",
-      "**/package-lock.json",
-      ".docusaurus"
+      ".DS_Store",
+      ".docusaurus",
+      "build",
+      "coverage",
+      "dist",
+      "node_modules",
+      "pnpm-lock.yaml",
+      "**/*.log"
     ]
   },
   "formatter": {
@@ -23,7 +26,22 @@
     "lineWidth": 80,
     "attributePosition": "auto"
   },
+  "organizeImports": {
+    "enabled": true
+  },
   "linter": {
-    "enabled": false
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noLabelWithoutControl": "off",
+        "useKeyWithClickEvents": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
   }
 }

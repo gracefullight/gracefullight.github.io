@@ -46,8 +46,8 @@ export interface Color {
 
 export function calculateColorDistance(color1: Color, color2: Color) {
   return Math.sqrt(
-    Math.pow(color1.r - color2.r, 2) +
-      Math.pow(color1.g - color2.g, 2) +
-      Math.pow(color1.b - color2.b, 2),
+    (color1.r - color2.r) ** 2 +
+      (color1.g - color2.g) ** 2 +
+      (color1.b - color2.b) ** 2,
   );
 }

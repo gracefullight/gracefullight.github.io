@@ -45,7 +45,7 @@ export default function DrawingGeneratorPage() {
         URL.revokeObjectURL(previewSrc);
       }
     };
-  }, [previewSrc]);
+  }, [previewSrc, selectedColor]);
 
   const modifyWhitePixels = (ctx: CanvasRenderingContext2D) => {
     const imageData = ctx.getImageData(
@@ -371,7 +371,7 @@ export default function DrawingGeneratorPage() {
             }}
           >
             <h3>미리보기</h3>
-            <canvas ref={canvasRef}></canvas>
+            <canvas ref={canvasRef} />
           </div>
         )}
       </div>

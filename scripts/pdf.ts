@@ -1,19 +1,20 @@
-// eslint-disable no-await-in-loop
+import type { Root } from "mdast";
+
 import { randomUUID } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { Command } from "clipanion";
-import { mkdir, readdir, readFile, rm, writeFile } from "fs-extra";
-import { chromium } from "playwright";
-import { unified } from "unified";
-import rehypeStringify from "rehype-stringify";
-import rehypeKatex from "rehype-katex";
-import remarkParse from "remark-parse";
-import remarkMath from "remark-math";
-import remarkGfm from "remark-gfm";
-import remarkFrontmatter from "remark-frontmatter";
-import remarkRehype from "remark-rehype";
-import { parse as parseYaml } from "yaml";
+import { mkdir, readFile, readdir, rm, writeFile } from "fs-extra";
 import pLimit from "p-limit";
+import { chromium } from "playwright";
+import rehypeKatex from "rehype-katex";
+import rehypeStringify from "rehype-stringify";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
+import { parse as parseYaml } from "yaml";
 
 // 병렬 작업 제한 설정
 const limit = pLimit(15);
@@ -211,7 +212,7 @@ export class PdfCommand extends Command {
     const markdownContent = await readFile(filePath, "utf8");
 
     // Frontmatter 데이터 저장용 변수
-    let frontmatter: Record<string, any> = {};
+    let frontmatter: Record<string, unknown> = {};
 
     // 머메이드 코드 추출
     const mermaidMatches = Array.from(
@@ -237,16 +238,14 @@ export class PdfCommand extends Command {
     const result = await unified()
       .use(remarkParse) // Markdown 파싱
       .use(remarkFrontmatter, ["yaml"]) // Frontmatter 파싱
-      .use(() => (tree: any) => {
-        // Frontmatter 데이터 추출
+      .use(() => (tree: Root) => {
         const frontmatterNode = tree.children.find(
-          (node: any) => node.type === "yaml",
+          (node) => node.type === "yaml",
         );
-        frontmatter = frontmatterNode ? parseYaml(frontmatterNode.value) : {};
-        // Frontmatter 노드 제거
-        tree.children = tree.children.filter(
-          (node: any) => node.type !== "yaml",
-        );
+        if (frontmatterNode) {
+          frontmatter = parseYaml(frontmatterNode.value);
+          tree.children = tree.children.filter((node) => node.type !== "yaml");
+        }
       })
       .use(remarkGfm) // GFM 표 지원
       .use(remarkMath)

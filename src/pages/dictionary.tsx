@@ -24,27 +24,27 @@ export default function DictionaryPage() {
 
   const responsive = useResponsive();
 
-  const search = (inputQuery: string) => {
-    inputQuery = inputQuery.trim();
-    if (inputQuery.length < 2) {
+  const search = (rawQuery: string) => {
+    const trimmedQuery = rawQuery.trim();
+    if (trimmedQuery.length < 2) {
       alert("검색어는 최소 2글자 이상 입력해주세요.");
       return;
     }
 
-    if (!/^[a-zA-Z-\s]*$/.test(inputQuery)) {
+    if (!/^[a-zA-Z-\s]*$/.test(trimmedQuery)) {
       alert("알파벳, 대시(-), 공백만 허용합니다.");
       return;
     }
 
     const updatedSearches = [
-      inputQuery,
-      ...(recentSearches?.filter((term) => term !== inputQuery) ?? []),
+      trimmedQuery,
+      ...(recentSearches?.filter((term) => term !== trimmedQuery) ?? []),
     ].slice(0, 5);
 
     setRecentSearches(updatedSearches);
     setIframeSrc({
-      daum: `https://dic.daum.net/search.do?q=${inputQuery}&dic=eng`,
-      naver: `https://en.dict.naver.com/#/search?range=word&query=${inputQuery}`,
+      daum: `https://dic.daum.net/search.do?q=${trimmedQuery}&dic=eng`,
+      naver: `https://en.dict.naver.com/#/search?range=word&query=${trimmedQuery}`,
     });
   };
 
@@ -127,7 +127,7 @@ export default function DictionaryPage() {
                 loading="lazy"
                 sandbox=""
                 referrerPolicy="no-referrer"
-              ></iframe>
+              />
               <iframe
                 src={iframeSrc.naver}
                 title="Naver Dictionary"
@@ -139,7 +139,7 @@ export default function DictionaryPage() {
                 loading="lazy"
                 sandbox=""
                 referrerPolicy="no-referrer"
-              ></iframe>
+              />
             </div>
           )}
         </BrowserOnly>

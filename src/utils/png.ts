@@ -38,11 +38,11 @@ function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
   return chunks;
 }
 
-function calculateTotalLength(chunks: Chunk[]): number {
+function calculateTotalLength(chunks: readonly Chunk[]): number {
   let totalLength = 8; // PNG signature length
-  chunks.forEach((chunk) => {
+  for (const chunk of chunks) {
     totalLength += 12 + chunk.data.length; // 12 = 4 bytes for length + 4 for type + 4 for CRC
-  });
+  }
 
   return totalLength;
 }
@@ -103,7 +103,7 @@ export function createPngArrayBuffer(
 
   let offset = 8;
 
-  chunks.forEach(({ type, data, crc }) => {
+  for (const { type, data, crc } of chunks) {
     const chunkView = new DataView(newArrayBuffer, offset, 12 + data.length);
     chunkView.setUint32(0, data.length);
     newArray.set(new TextEncoder().encode(type), offset + 4);
@@ -111,7 +111,7 @@ export function createPngArrayBuffer(
     chunkView.setUint32(8 + data.length, crc);
 
     offset += 12 + data.length;
-  });
+  }
 
   return newArrayBuffer;
 }

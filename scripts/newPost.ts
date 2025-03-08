@@ -15,7 +15,7 @@ tags:
 ---\n`;
 
 export class NewPostCommand extends Command {
-  static readonly paths = [[`new`]];
+  static readonly paths = [["new"]];
 
   // 글 제목
   title = Option.String();
@@ -26,7 +26,7 @@ export class NewPostCommand extends Command {
   // -P 또는 --pe 옵션
   pe = Option.Boolean("-P,--pe", false, { description: "below pe folder" });
 
-  async execute(): Promise<number | void> {
+  async execute(): Promise<number | undefined> {
     const now = DateTime.now();
 
     // 1) 태그 배열 파싱
