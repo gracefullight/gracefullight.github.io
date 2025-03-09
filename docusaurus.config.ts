@@ -119,12 +119,12 @@ const config: Config = {
       },
     ],
     // ! Can't use ts directly https://docusaurus.io/docs/typescript-support#typing-config
-    // [
-    //   "@gracefullight/docusaurus-plugin-google-adsense",
-    //   {
-    //     adClient: "ca-pub-3004788392777865",
-    //   },
-    // ],
+    [
+      "@gracefullight/docusaurus-plugin-google-adsense",
+      {
+        adClient: "ca-pub-3004788392777865",
+      },
+    ],
     [
       "@gracefullight/docusaurus-plugin-microsoft-clarity",
       {
