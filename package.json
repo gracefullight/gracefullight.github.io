@@ -85,8 +85,8 @@
     "@types/node": "^22.13.10",
     "@types/pako": "^2.0.3",
     "@types/react": "^18.3.18",
-    "@vitejs/plugin-react-swc": "^3.8.0",
-    "@vitest/ui": "^3.0.8",
+    "@vitejs/plugin-react-swc": "^3.8.1",
+    "@vitest/ui": "^3.0.9",
     "clipanion": "^4.0.0-rc.4",
     "devmoji": "^2.3.0",
     "dotenv": "^16.4.7",
@@ -94,13 +94,13 @@
     "hexo-util": "^3.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
-    "playwright": "^1.51.0",
+    "playwright": "^1.51.1",
     "regenerator-runtime": "^0.14.1",
     "sort-package-json": "^3.0.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.8"
+    "vitest": "^3.0.9"
   },
   "engines": {
     "node": "22",
