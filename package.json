@@ -89,7 +89,7 @@
     "@vitest/ui": "^3.1.1",
     "clipanion": "^4.0.0-rc.4",
     "devmoji": "^2.3.0",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "fs-extra": "^11.3.0",
     "hexo-util": "^3.3.0",
     "husky": "^9.1.7",
