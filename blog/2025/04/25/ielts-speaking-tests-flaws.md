@@ -1,7 +1,7 @@
 ---
-title: IELTS Speaking
+title: IELTS Speaking 기출 오답노트 2025
 date: 2025-04-25T22:33:06.931+09:00
-description: IELTS Speaking
+description: IELTS Speaking 기출 아이디어 오답노트
 authors: me
 tags:
   - me
