@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-03-30T14:58:45.532Z</updated>
+    <updated>2025-04-25T13:33:06.931Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IELTS Speaking]]></title>
+        <id>https://gracefullight.dev/en/2025/04/25/ielts-speaking-tests-flaws/</id>
+        <link href="https://gracefullight.dev/en/2025/04/25/ielts-speaking-tests-flaws/"/>
+        <updated>2025-04-25T13:33:06.931Z</updated>
+        <summary type="html"><![CDATA[IELTS Speaking]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://gracefullight.dev/en/2023/10/09/ielts-speaking/">방법</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_deMS" id="d1-plants">D1, Plants<a href="https://gracefullight.dev/en/2025/04/25/ielts-speaking-tests-flaws/#d1-plants" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Do you keep plants at homes?<!-- -->
+<ul>
+<li>Yes, I do. I have one plant on my living room desk and another on the dining table. I’m not exactly sure what type they are, but I bought them from an online store because I wanted to try growing some plants.</li>
+</ul>
+</li>
+<li>What plant did you grow when you were young?<!-- -->
+<ul>
+<li>When I was young, I used to grow vegetables and flowers at home. Sometimes, I’d even pick a few lettuce leaves and enjoy eating them.</li>
+</ul>
+</li>
+<li>Do you know anything about growing a plant?<!-- -->
+<ul>
+<li>Well, I don’t know the best growing methods exactly, but I do know the basics. I usually water my plants once a week, keep them near a window for sunlight, and sometimes use fertilizer to enrich the soil.</li>
+</ul>
+</li>
+<li>Do Chinese people send plants a gifts?<!-- -->
+<ul>
+<li>Yes, they do. Although I haven’t experienced it personally, I know that Chinese people often give plants as gifts because they symbolize life, prosperity, and beauty.</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+        <category label="ielts" term="ielts"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MCP, Model Context Protocol]]></title>
         <id>https://gracefullight.dev/en/pe/conv/model-context-protocol/</id>
@@ -371,32 +410,5 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NewSQL]]></title>
-        <id>https://gracefullight.dev/en/pe/db/newsql/</id>
-        <link href="https://gracefullight.dev/en/pe/db/newsql/"/>
-        <updated>2025-01-31T08:05:36.805Z</updated>
-        <summary type="html"><![CDATA[NewSQL]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_deMS" id="newsql-개념">NewSQL 개념<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>전통적인 RDBMS의 ACID(Atomicity, Consistency, Isolation, Durability) 특성을 유지하면서, NoSQL의 확장성을 결합한 차세대 데이터베이스 시스템</li>
-<li>고성능 트랜잭션 처리(RDBMS 확장제한, NoSQL 일관성 보장어려움) / 수평적 확장 지원 / 실시간 데이터 분석 요구 증가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_deMS" id="newsql-동작-매커니즘-동작-원리-기존-db-비교">NewSQL 동작 매커니즘, 동작 원리, 기존 DB 비교<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EC%A1%B4-db-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_deMS" id="newsql-동작-매커니즘">NewSQL 동작 매커니즘<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_deMS" id="newsql-동작-원리">NewSQL 동작 원리<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>설계 원리</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>분산 아키텍처</td><td>데이터를 여러 노드에 분산 저장하여 수평적 확장성 제공</td><td>CockroachDB의 자동 샤딩</td></tr><tr><td>ACID 준수</td><td>트랜잭션의 원자성, 일관성, 격리성, 지속성을 보장</td><td>Google Spanner의 글로벌 트랜잭션</td></tr><tr><td>병렬 처리</td><td>다중 쿼리를 병렬로 처리하여 성능 극대화</td><td>MemSQL의 실시간 분석 쿼리</td></tr><tr><td>인메모리 기술</td><td>데이터를 메모리에서 처리하여 접근 속도 향상</td><td>VoltDB의 초당 수백만 건 처리</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_deMS" id="newsql과-rdbms-비교">NewSQL과 RDBMS 비교<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql%EA%B3%BC-rdbms-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>기존 RDBMS 한계</th><th>NewSQL 개선점</th></tr></thead><tbody><tr><td>분산 트랜잭션</td><td>단일 서버 기반으로 물리적 한계 존재</td><td>Paxos/Raft 알고리즘 활용, TrueTime API 적용</td></tr><tr><td>인메모리 처리</td><td>디스크 I/O 병목 발생</td><td>핫 데이터를 메모리에서 처리, I/O 병목 제거</td></tr><tr><td>자동 샤딩</td><td>수직적 확장으로 확장성 제한</td><td>자동 샤딩으로 데이터 균등 분배, 다운타임 최소화</td></tr><tr><td>하이브리드 저장소</td><td>모든 데이터 동일 계층 저장</td><td>핫/콜드 데이터 분리로 비용 효율성 강화</td></tr><tr><td>병렬 처리</td><td>단일 노드에서 병렬성 제한</td><td>다중 노드에서 분석 쿼리 병렬 처리</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_deMS" id="newsql-도입-효과">NewSQL 도입 효과<a href="https://gracefullight.dev/en/pe/db/newsql/#newsql-%EB%8F%84%EC%9E%85-%ED%9A%A8%EA%B3%BC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>산업</th><th>적용 방법</th><th>효과</th></tr></thead><tbody><tr><td>금융 서비스</td><td>글로벌 트랜잭션 시스템 구축</td><td>HSBC의 성능 및 신뢰성 강화</td></tr><tr><td>전자상거래</td><td>실시간 주문 및 재고 관리</td><td>Shopify의 CockroachDB 글로벌 주문 처리 최적화</td></tr><tr><td>IoT 플랫폼</td><td>센서 데이터 실시간 분석</td><td>VoltDB의 초당 수백만 건 이벤트 처리</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/database" term="pe/database"/>
     </entry>
 </feed>
