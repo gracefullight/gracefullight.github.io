@@ -22,3 +22,12 @@ tags:
   - Well, I don’t know the best growing methods exactly, but I do know the basics. I usually water my plants once a week, keep them near a window for sunlight, and sometimes use fertilizer to enrich the soil.
 - Do Chinese people send plants a gifts?
   - Yes, they do. Although I haven’t experienced it personally, I know that Chinese people often give plants as gifts because they symbolize life, prosperity, and beauty.
+
+## D2, Holidays
+
+- Where did you go for your last holiday?
+- Do you like holidays? Why?
+- Which public holiday do you like the best?
+- What do you do on holidays?
+- Do you like to spend your day at home?
+- Do you prefer a leisure or a busy holiday?
