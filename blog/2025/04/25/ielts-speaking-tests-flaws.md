@@ -26,8 +26,14 @@ tags:
 ## D2, Holidays
 
 - Where did you go for your last holiday?
+  - I went to Jeju Island because my parents live there. I visited Youngmeori beach with them. The rock formations there are amazing because they were shaped by waves over thousands of years.
 - Do you like holidays? Why?
+  - I really like holidays because I've worked for ten years and don't get many vacations. So when I have a holiday, I usually go on a short trip abroad with my wife.
 - Which public holiday do you like the best?
+  - Maybe New Year's Day, because it's the biggest holiday in Korea, and I get to celebrate it with my loved ones.
 - What do you do on holidays?
+  - Sometimes I go on a short trip to another country, and other times I just want to completely relax at home.
 - Do you like to spend your day at home?
+  - Yes, as I mentioned earlier, I sometimes like to completely rest at home. I enjoy it because it helps me recharge and get ready for the next week. Plus, watching Netflix with my wife helps me relieve stress.
 - Do you prefer a leisure or a busy holiday?
+  - It depends on my condition. When I'm feeling good, I love going out, having coffee, and enjoying outdoor activities. But When I'm not, I prefer a leisurely holiday at home.
