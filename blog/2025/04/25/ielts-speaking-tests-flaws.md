@@ -37,3 +37,12 @@ tags:
   - Yes, as I mentioned earlier, I sometimes like to completely rest at home. I enjoy it because it helps me recharge and get ready for the next week. Plus, watching Netflix with my wife helps me relieve stress.
 - Do you prefer a leisure or a busy holiday?
   - It depends on my condition. When I'm feeling good, I love going out, having coffee, and enjoying outdoor activities. But When I'm not, I prefer a leisurely holiday at home.
+
+## D3, Science
+
+- Do you like science?
+- When did you start to learn about science?
+- Which science subject is interesting to you?
+- What kinds of interesting things have you done with science?
+- Do you like watching science TV programs?
+- Do people in your country often visit science museums?
