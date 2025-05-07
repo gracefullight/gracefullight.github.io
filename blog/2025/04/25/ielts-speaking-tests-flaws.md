@@ -46,3 +46,24 @@ tags:
 - What kinds of interesting things have you done with science?
 - Do you like watching science TV programs?
 - Do people in your country often visit science museums?
+
+## D4
+
+- I'm a first-year grad student.
+- I'm in my first year at a grad school.
+- I want to reduce the calories I eat.
+- We became friends from the moment we first met.
+- I traveled alone for nine days in Cambodia.
+- What do you do for fun?
+- What do you like to do?
+- What classes are you taking?
+- Why are you taking English classes?
+- How much holiday time do we really get?
+- What are the perks of this job?
+- What was you major in university?
+- What did you study in university?
+- Do you have any siblings?
+- What do you like to read?
+- What are you reading these days?
+- Do you travel a lot?
+- What are you going to do for the next holiday?
