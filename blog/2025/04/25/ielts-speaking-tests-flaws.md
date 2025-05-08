@@ -60,7 +60,7 @@ tags:
 - Why are you taking English classes?
 - How much holiday time do we really get?
 - What are the perks of this job?
-- What was you major in university?
+- What was your major in university?
 - What did you study in university?
 - Do you have any siblings?
 - What do you like to read?
