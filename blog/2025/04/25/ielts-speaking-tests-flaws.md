@@ -67,3 +67,16 @@ tags:
 - What are you reading these days?
 - Do you travel a lot?
 - What are you going to do for the next holiday?
+
+## D5
+
+- I really like V~ing/N
+- I'm interested in V~ing/N
+- I'm really into V~ing/N
+- I'm crazy about V~ing/N
+- I can't stand V~ing/N
+- I'm not a big fan of V~ing/N
+- It's right up myu street!
+- I can't bear it!
+- It doesn't float my boat!
+- It's not really my cup of tea!
