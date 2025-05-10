@@ -80,3 +80,8 @@ tags:
 - I can't bear it!
 - It doesn't float my boat!
 - It's not really my cup of tea!
+
+## D6
+
+- I think it is excessive regulation
+- There may be no link between the cause and the result
