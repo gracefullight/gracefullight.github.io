@@ -85,13 +85,13 @@ tags:
 
 - I think it is excessive regulation
 - There may be no link between the cause and the result
-- When tourists travel to tourist attractions, they often use large cruise ships and airplanes.
-- These vehicles emit tons of CO2 during operation, which contributes to global warming.
+- When tourists visit popular destinations, they often travel by large cruise ships or airplanes.
+- These vehicles emit large amounts of CO2 during operation, which contributes to global warming.
 - CO2 emissions doubled after COVID-19 restrictions were lifted and international travel resumed.
-- Tourists often create a lot of noise, especially at night.
+- Tourists often cause noise pollution, especially at night.
 - Statistics show that police reports have steadily increased near tourist areas due to drunk tourists.
 - Local residents struggle to sleep at night.
-- People from other regions tend to litter more easily.
-- They do not dispose of their waste properly.
-- Street cleaners have to work harder, which places a financial burden on the city's budget.
+- Visitors from other regions tend to throw rubbish more carelessly.
+- Most of them stay only a few days and do not dispose their waste properly.
+- Street cleaners have to work harder, creating a financial burden for the city's budget.
 - It should be regulated to strike a balance between promoting tourism and preventing over-tourism.
