@@ -86,7 +86,7 @@
     "@types/pako": "^2.0.3",
     "@types/react": "^18.3.23",
     "@vitejs/plugin-react-swc": "^3.10.0",
-    "@vitest/ui": "^3.2.0",
+    "@vitest/ui": "^3",
     "clipanion": "^4.0.0-rc.4",
     "devmoji": "^2.3.0",
     "dotenv": "^16.5.0",
@@ -100,7 +100,7 @@
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.0"
+    "vitest": "^3"
   },
   "engines": {
     "node": "22",
