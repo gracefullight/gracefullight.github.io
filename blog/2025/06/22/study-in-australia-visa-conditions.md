@@ -1,7 +1,7 @@
 ---
 title: 호주 학생 비자 주의사항
 date: 2025-06-22T17:53:43.914+09:00
-description: Study in Australia visa limitations
+description: Study in Australia visa conditions
 authors: me
 tags:
   - me
@@ -9,6 +9,8 @@ tags:
 ---
 
 ## 주의사항
+
+- 비자 받으면 여러 주의사항들이 적혀있는데 한 번 정리가 필요했다.
 
 | 조건 번호 | 핵심 내용 | 주의 포인트 |
 | --- | --- | --- |
