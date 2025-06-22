@@ -1,9 +1,8 @@
 {
-  "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "strict": true,
     "lib": ["DOM", "ESNext"],
+    "strict": true,
     "types": [
       "node",
       "@docusaurus/module-type-aliases",
@@ -11,5 +10,6 @@
       "@testing-library/jest-dom"
     ]
   },
-  "exclude": [".docusaurus", "build"]
+  "exclude": [".docusaurus", "build"],
+  "extends": "@docusaurus/tsconfig"
 }

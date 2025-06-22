@@ -32,7 +32,7 @@ function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
     const crc = dataView.getUint32(offset);
     offset += 4;
 
-    chunks.push({ type, data, crc });
+    chunks.push({ crc, data, type });
   }
 
   return chunks;
@@ -84,9 +84,9 @@ function createZTXtChunk(keyword: string, data: string): Chunk {
   const crcValue = buf(crcBuffer);
 
   return {
-    type,
-    data: fullData,
     crc: crcValue,
+    data: fullData,
+    type,
   };
 }
 

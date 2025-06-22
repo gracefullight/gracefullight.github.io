@@ -1,31 +1,8 @@
 {
-  "name": "gracefullight.github.io",
-  "version": "1.0.0",
-  "private": true,
   "author": {
-    "name": "gracefullight",
     "email": "gracefullight.dev@gmail.com",
+    "name": "gracefullight",
     "url": "https://gracefullight.dev"
-  },
-  "scripts": {
-    "build": "docusaurus build",
-    "build-plugins": "tsc ./src/plugins/*.ts --esModuleInterop --removeComments --module commonjs --target es2021 --pretty false",
-    "clear": "docusaurus clear",
-    "cmd": "tsx ./scripts/index.ts",
-    "deploy": "docusaurus deploy",
-    "docusaurus": "docusaurus",
-    "format": "biome format --write .",
-    "format:check": "biome format .",
-    "lint": "biome lint --write --unsafe",
-    "prepare": "husky",
-    "serve": "docusaurus serve",
-    "start": "docusaurus start",
-    "swizzle": "docusaurus swizzle",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "typecheck": "tsc",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "write-translations": "docusaurus write-translations"
   },
   "dependencies": {
     "@docusaurus/core": "^3.8.1",
@@ -96,7 +73,6 @@
     "lint-staged": "^16.1.2",
     "playwright": "^1.53.1",
     "regenerator-runtime": "^0.14.1",
-    "sort-package-json": "^3.2.1",
     "tsx": "^4",
     "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
@@ -105,5 +81,28 @@
   "engines": {
     "node": "22",
     "pnpm": "10"
-  }
+  },
+  "name": "gracefullight.github.io",
+  "private": true,
+  "scripts": {
+    "build": "docusaurus build",
+    "build-plugins": "tsc ./src/plugins/*.ts --esModuleInterop --removeComments --module commonjs --target es2021 --pretty false",
+    "clear": "docusaurus clear",
+    "cmd": "tsx ./scripts/index.ts",
+    "deploy": "docusaurus deploy",
+    "docusaurus": "docusaurus",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint --write --unsafe",
+    "prepare": "husky",
+    "serve": "docusaurus serve",
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "write-translations": "docusaurus write-translations"
+  },
+  "version": "2.0.0"
 }

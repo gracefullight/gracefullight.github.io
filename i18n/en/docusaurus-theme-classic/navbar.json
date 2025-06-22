@@ -1,18 +1,18 @@
 {
-  "title": {
-    "message": "gracefullight.dev",
-    "description": "The title in the navbar"
+  "item.label.Archives": {
+    "description": "Navbar item with label Archives",
+    "message": "Archives"
   },
   "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
-  },
-  "item.label.Archives": {
-    "message": "Archives",
-    "description": "Navbar item with label Archives"
+    "description": "Navbar item with label GitHub",
+    "message": "GitHub"
   },
   "item.label.Tags": {
-    "message": "Tags",
-    "description": "Navbar item with label Tags"
+    "description": "Navbar item with label Tags",
+    "message": "Tags"
+  },
+  "title": {
+    "description": "The title in the navbar",
+    "message": "gracefullight.dev"
   }
 }

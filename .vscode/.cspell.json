@@ -1,4 +1,5 @@
 {
+  "ignorePaths": ["*.config.js", "package.json"],
   "words": [
     "adsbygoogle",
     "adsense",
@@ -78,6 +79,7 @@
     "FDCA",
     "Feistal",
     "Feizi",
+    "Filenaming",
     "filp",
     "FMEA",
     "FRAM",
@@ -258,6 +260,5 @@
     "Zabeel",
     "zerotrust",
     "Zigbee"
-  ],
-  "ignorePaths": ["*.config.js", "package.json"]
+  ]
 }
