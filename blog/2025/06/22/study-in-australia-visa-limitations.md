@@ -1,7 +1,7 @@
 ---
 title: 호주 학생 비자 주의사항
 date: 2025-06-22T17:53:43.914+09:00
-description: Study in Australia visa restrictions
+description: Study in Australia visa limitations
 authors: me
 tags:
   - me
