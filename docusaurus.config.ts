@@ -15,6 +15,10 @@ const config: Config = {
   baseUrl: "/",
   deploymentBranch: "gh-pages",
   favicon: "img/favicon.ico",
+  future: {
+    experimental_faster: true,
+    v4: true,
+  },
 
   headTags: [
     {
@@ -150,6 +154,7 @@ const config: Config = {
             type: "all",
             xslt: true,
           },
+          onUntruncatedBlogPosts: "ignore",
           rehypePlugins: [rehypeKatex],
           remarkPlugins: [remarkMath, remarkFlexibleMarkers],
           routeBasePath: "/",

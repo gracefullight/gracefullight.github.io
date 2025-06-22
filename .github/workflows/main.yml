@@ -18,13 +18,13 @@ jobs:
         node-version: [22.x]
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - uses: pnpm/action-setup@master
         with:
           version: 10
 
       - name: SETUP_NODE_${{ matrix.node-version }}
-        uses: actions/setup-node@master
+        uses: actions/setup-node@main
         with:
           node-version: ${{ matrix.node-version }}
 

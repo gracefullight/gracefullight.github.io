@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^3.8.1",
+    "@docusaurus/faster": "^3.8.1",
     "@docusaurus/plugin-content-blog": "^3.8.1",
     "@docusaurus/plugin-pwa": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
