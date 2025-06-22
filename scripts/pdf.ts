@@ -3,7 +3,7 @@ import type { Root } from "mdast";
 import { randomUUID } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { Command } from "clipanion";
-import { mkdir, readFile, readdir, rm, writeFile } from "fs-extra";
+import { mkdir, readdir, readFile, rm, writeFile } from "fs-extra";
 import pLimit from "p-limit";
 import { chromium } from "playwright";
 import rehypeKatex from "rehype-katex";
@@ -197,7 +197,9 @@ export class PdfCommand extends Command {
       }
     } finally {
       // dist/temp 폴더 삭제
-      await rm(TEMP_DIR, { recursive: true, force: true }).catch(() => {});
+      await rm(TEMP_DIR, { force: true, recursive: true }).catch(() => {
+        // Ignore errors during temp directory removal
+      });
     }
   }
 
@@ -328,16 +330,16 @@ export class PdfCommand extends Command {
 
     // PDF로 저장 (여백 추가)
     await page.pdf({
-      path: outputPath,
-      format: "A4",
       footerTemplate: "pageNumber",
-      printBackground: true,
+      format: "A4",
       margin: {
-        top: "5mm", // 상단 여백
-        bottom: "5mm", // 하단 여백
-        left: "5mm", // 좌측 여백
-        right: "5mm", // 우측 여백
+        bottom: "5mm", // 상단 여백
+        left: "5mm", // 하단 여백
+        right: "5mm", // 좌측 여백
+        top: "5mm", // 우측 여백
       },
+      path: outputPath,
+      printBackground: true,
     });
 
     await browser.close();

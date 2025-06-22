@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import type { Color } from "./image";
-import { calculateColorDistance } from "./image";
+import type { Color } from "./image.ts";
+import { calculateColorDistance } from "./image.ts";
 
 describe("@calculateColorDistance", () => {
   it("should return 0 for the same color", () => {

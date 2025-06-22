@@ -1,3 +1,4 @@
+// biome-ignore lint/style/useFilenamingConvention: docusaurus uses this convention
 import { Icon } from "@iconify/react";
 import MDXComponents from "@theme-original/MDXComponents";
 

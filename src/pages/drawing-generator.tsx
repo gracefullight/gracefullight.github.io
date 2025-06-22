@@ -1,4 +1,6 @@
 import type { Color } from "@site/src/utils";
+import type { ChangeEvent } from "react";
+
 import {
   addMetadataChunks,
   calculateColorDistance,
@@ -9,7 +11,7 @@ import {
 import Layout from "@theme/Layout";
 import { DateTime } from "luxon";
 import { kmeans } from "ml-kmeans";
-import { type ChangeEvent, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 
 export default function DrawingGeneratorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -20,6 +22,96 @@ export default function DrawingGeneratorPage() {
   const [isUseColorWeight, setIsUseColorWeight] = useState<boolean>(false);
   const [colorWeight, setColorWeight] = useState<number>(0.2);
   const [selectedColor, setSelectedColor] = useState<string>("#F58D16");
+
+  const authIdId = useId();
+  const authorId = useId();
+  const customNameId = useId();
+  const colorWeightId = useId();
+  const selectedColorId = useId();
+  const imageUploadId = useId();
+
+  const modifyWhitePixels = useCallback((ctx: CanvasRenderingContext2D) => {
+    const imageData = ctx.getImageData(
+      0,
+      0,
+      ctx.canvas.width,
+      ctx.canvas.height,
+    );
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+      if (data[i] === 255 && data[i + 1] === 255 && data[i + 2] === 255) {
+        data[i + 2] = 254;
+      }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }, []);
+
+  const reduceToFourColors = useCallback(
+    (ctx: CanvasRenderingContext2D, userHexColor: string) => {
+      const userColor: Color = {
+        b: Number.parseInt(userHexColor.slice(5, 7), 16),
+        g: Number.parseInt(userHexColor.slice(3, 5), 16),
+        r: Number.parseInt(userHexColor.slice(1, 3), 16),
+      };
+
+      const imageData = ctx.getImageData(
+        0,
+        0,
+        ctx.canvas.width,
+        ctx.canvas.height,
+      );
+      const data = imageData.data;
+
+      const colors = [];
+      for (let i = 0; i < data.length; i += 4) {
+        colors.push([data[i], data[i + 1], data[i + 2]]);
+      }
+
+      const result = kmeans(colors, 4, {});
+      const centroids = result.centroids.map((centroid) => ({
+        b: centroid[2],
+        g: centroid[1],
+        r: centroid[0],
+      }));
+
+      // 가장 가까운 중심에 가중치를 부여하여 유저 색상과의 가중평균 계산
+      if (isUseColorWeight) {
+        let closestCentroidIndex = 0;
+        let minDistance = Number.MAX_SAFE_INTEGER;
+        for (let i = 0; i < centroids.length; i++) {
+          const centroid = centroids[i];
+          const distance = calculateColorDistance(userColor, centroid);
+
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestCentroidIndex = i;
+          }
+        }
+
+        const closestCentroid = centroids[closestCentroidIndex];
+        closestCentroid.r =
+          closestCentroid.r * (1 - colorWeight) + userColor.r * colorWeight;
+        closestCentroid.g =
+          closestCentroid.g * (1 - colorWeight) + userColor.g * colorWeight;
+        closestCentroid.b =
+          closestCentroid.b * (1 - colorWeight) + userColor.b * colorWeight;
+      }
+
+      for (let i = 0; i < data.length; i += 4) {
+        const clusterIndex = result.clusters[Math.floor(i / 4)];
+        const centroid = centroids[clusterIndex];
+
+        data[i] = centroid.r;
+        data[i + 1] = centroid.g;
+        data[i + 2] = centroid.b;
+      }
+
+      ctx.putImageData(imageData, 0, 0);
+    },
+    [isUseColorWeight, colorWeight],
+  );
 
   useEffect(() => {
     if (previewSrc) {
@@ -45,119 +137,43 @@ export default function DrawingGeneratorPage() {
         URL.revokeObjectURL(previewSrc);
       }
     };
-  }, [previewSrc, selectedColor]);
+  }, [previewSrc, selectedColor, modifyWhitePixels, reduceToFourColors]);
 
-  const modifyWhitePixels = (ctx: CanvasRenderingContext2D) => {
-    const imageData = ctx.getImageData(
-      0,
-      0,
-      ctx.canvas.width,
-      ctx.canvas.height,
-    );
-    const data = imageData.data;
-
-    for (let i = 0; i < data.length; i += 4) {
-      if (data[i] === 255 && data[i + 1] === 255 && data[i + 2] === 255) {
-        data[i + 2] = 254;
-      }
-    }
-
-    ctx.putImageData(imageData, 0, 0);
-  };
-
-  const reduceToFourColors = (
-    ctx: CanvasRenderingContext2D,
-    userHexColor: string,
-  ) => {
-    const userColor: Color = {
-      r: Number.parseInt(userHexColor.slice(1, 3), 16),
-      g: Number.parseInt(userHexColor.slice(3, 5), 16),
-      b: Number.parseInt(userHexColor.slice(5, 7), 16),
-    };
-
-    const imageData = ctx.getImageData(
-      0,
-      0,
-      ctx.canvas.width,
-      ctx.canvas.height,
-    );
-    const data = imageData.data;
-
-    const colors = [];
-    for (let i = 0; i < data.length; i += 4) {
-      colors.push([data[i], data[i + 1], data[i + 2]]);
-    }
-
-    const result = kmeans(colors, 4, {});
-    const centroids = result.centroids.map((centroid) => ({
-      r: centroid[0],
-      g: centroid[1],
-      b: centroid[2],
-    }));
-
-    // 가장 가까운 중심에 가중치를 부여하여 유저 색상과의 가중평균 계산
-    if (isUseColorWeight) {
-      let closestCentroidIndex = 0;
-      let minDistance = Number.MAX_SAFE_INTEGER;
-      for (let i = 0; i < centroids.length; i++) {
-        const centroid = centroids[i];
-        const distance = calculateColorDistance(userColor, centroid);
-
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestCentroidIndex = i;
-        }
+  const handleImageChange = useCallback(
+    async (e: ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (!file || file.type !== "image/png") {
+        alert("PNG 파일만 업로드 가능합니다.");
+        return;
       }
 
-      const closestCentroid = centroids[closestCentroidIndex];
-      closestCentroid.r =
-        closestCentroid.r * (1 - colorWeight) + userColor.r * colorWeight;
-      closestCentroid.g =
-        closestCentroid.g * (1 - colorWeight) + userColor.g * colorWeight;
-      closestCentroid.b =
-        closestCentroid.b * (1 - colorWeight) + userColor.b * colorWeight;
-    }
+      const isValidSize = await validateImageSize({
+        file,
+        maxHeight: 96,
+        maxWidth: 256,
+      });
 
-    for (let i = 0; i < data.length; i += 4) {
-      const clusterIndex = result.clusters[Math.floor(i / 4)];
-      const centroid = centroids[clusterIndex];
+      if (!isValidSize) {
+        alert("이미지 크기가 256x96 이하여야 합니다.");
+        setPreviewSrc(null);
+        return;
+      }
 
-      data[i] = centroid.r;
-      data[i + 1] = centroid.g;
-      data[i + 2] = centroid.b;
-    }
+      const arrayBuffer = await file.arrayBuffer();
+      const cleanedBuffer = removeTEXtChunks(arrayBuffer);
+      const bufferWithMetadata = addMetadataChunks(
+        cleanedBuffer,
+        authId,
+        author,
+      );
 
-    ctx.putImageData(imageData, 0, 0);
-  };
+      const blob = new Blob([bufferWithMetadata], { type: "image/png" });
+      setPreviewSrc(URL.createObjectURL(blob));
+    },
+    [authId, author],
+  );
 
-  const handleImageChange = async (e: ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file || file.type !== "image/png") {
-      alert("PNG 파일만 업로드 가능합니다.");
-      return;
-    }
-
-    const isValidSize = await validateImageSize({
-      file,
-      maxWidth: 256,
-      maxHeight: 96,
-    });
-
-    if (!isValidSize) {
-      alert("이미지 크기가 256x96 이하여야 합니다.");
-      setPreviewSrc(null);
-      return;
-    }
-
-    const arrayBuffer = await file.arrayBuffer();
-    const cleanedBuffer = removeTEXtChunks(arrayBuffer);
-    const bufferWithMetadata = addMetadataChunks(cleanedBuffer, authId, author);
-
-    const blob = new Blob([bufferWithMetadata], { type: "image/png" });
-    setPreviewSrc(URL.createObjectURL(blob));
-  };
-
-  const saveCanvasAsWebP = () => {
+  const saveCanvasAsWebP = useCallback(() => {
     const canvas = canvasRef.current;
     if (canvas) {
       const formattedDate = DateTime.now().toFormat("yyyyMMdd_HHmmss");
@@ -169,26 +185,26 @@ export default function DrawingGeneratorPage() {
         name,
       });
     }
-  };
+  }, [customName]);
 
   return (
     <Layout>
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           color: "#f49f3f",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        <h1 style={{ margin: "2rem 0", color: "#f49f3f" }}>그림대화 생성기</h1>
+        <h1 style={{ color: "#f49f3f", margin: "2rem 0" }}>그림대화 생성기</h1>
         <div
           style={{
-            width: "400px",
             background: "#242526",
-            padding: "1rem",
             borderRadius: "0.5rem",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+            padding: "1rem",
+            width: "400px",
           }}
         >
           <form
@@ -197,50 +213,52 @@ export default function DrawingGeneratorPage() {
             <div
               style={{
                 display: "flex",
-                justifyContent: "space-between",
                 gap: "1rem",
+                justifyContent: "space-between",
               }}
             >
               <div
                 style={{
-                  flex: 1,
                   display: "flex",
+                  flex: 1,
                   flexDirection: "column",
                   gap: "0.2rem",
                 }}
               >
-                <label>고유아이디</label>
+                <label htmlFor={authIdId}>고유아이디</label>
                 <input
-                  type="text"
-                  value={authId}
+                  id={authIdId}
                   onChange={(e) => setAuthId(e.target.value)}
                   placeholder="AuthID"
                   style={{
-                    padding: "0.5rem",
-                    borderRadius: "0.25rem",
                     border: "1px solid #f49f3f",
+                    borderRadius: "0.25rem",
+                    padding: "0.5rem",
                   }}
+                  type="text"
+                  value={authId}
                 />
               </div>
               <div
                 style={{
-                  flex: 1,
                   display: "flex",
+                  flex: 1,
                   flexDirection: "column",
                   gap: "0.2rem",
                 }}
               >
-                <label>제작자</label>
+                <label htmlFor={authorId}>제작자</label>
                 <input
-                  type="text"
-                  value={author}
+                  id={authorId}
                   onChange={(e) => setAuthor(e.target.value)}
                   placeholder="Author"
                   style={{
-                    padding: "0.5rem",
-                    borderRadius: "0.25rem",
                     border: "1px solid #f49f3f",
+                    borderRadius: "0.25rem",
+                    padding: "0.5rem",
                   }}
+                  type="text"
+                  value={author}
                 />
               </div>
             </div>
@@ -251,17 +269,18 @@ export default function DrawingGeneratorPage() {
                 gap: "0.2rem",
               }}
             >
-              <label>구분할 파일명</label>
+              <label htmlFor={customNameId}>구분할 파일명</label>
               <input
-                type="text"
-                value={customName}
+                id={customNameId}
                 onChange={(e) => setCustomName(e.target.value)}
                 placeholder="Custom File Name"
                 style={{
-                  padding: "0.5rem",
-                  borderRadius: "0.25rem",
                   border: "1px solid #f49f3f",
+                  borderRadius: "0.25rem",
+                  padding: "0.5rem",
                 }}
+                type="text"
+                value={customName}
               />
             </div>
             <div
@@ -273,9 +292,9 @@ export default function DrawingGeneratorPage() {
             >
               <label>
                 <input
-                  type="checkbox"
                   checked={isUseColorWeight}
                   onChange={(e) => setIsUseColorWeight(e.target.checked)}
+                  type="checkbox"
                 />
                 색상 가중치 사용하기
               </label>
@@ -289,17 +308,18 @@ export default function DrawingGeneratorPage() {
                     gap: "0.2rem",
                   }}
                 >
-                  <label>가중치 설정 (0.2 ~ 0.5)</label>
+                  <label htmlFor={colorWeightId}>가중치 설정 (0.2 ~ 0.5)</label>
                   <input
-                    type="range"
-                    min="0.2"
+                    id={colorWeightId}
                     max="0.5"
-                    step="0.01"
-                    value={colorWeight}
+                    min="0.2"
                     onChange={(e) =>
                       setColorWeight(Number.parseFloat(e.target.value))
                     }
+                    step="0.01"
                     title="가중치 설정"
+                    type="range"
+                    value={colorWeight}
                   />
                 </div>
                 <div
@@ -309,12 +329,13 @@ export default function DrawingGeneratorPage() {
                     gap: "0.2rem",
                   }}
                 >
-                  <label>가중치 색상 선택</label>
+                  <label htmlFor={selectedColorId}>가중치 색상 선택</label>
                   <input
-                    type="color"
-                    value={selectedColor}
+                    id={selectedColorId}
                     onChange={(e) => setSelectedColor(e.target.value)}
                     title="가중치 색상"
+                    type="color"
+                    value={selectedColor}
                   />
                 </div>
               </>
@@ -326,18 +347,19 @@ export default function DrawingGeneratorPage() {
                 gap: "0.2rem",
               }}
             >
-              <label>이미지 추가 *</label>
+              <label htmlFor={imageUploadId}>이미지 추가 *</label>
               <input
-                type="file"
                 accept="image/png"
+                id={imageUploadId}
                 onChange={handleImageChange}
-                title="Upload Image"
                 style={{
-                  padding: "0.5rem",
-                  borderRadius: "0.25rem",
                   border: "1px solid #f49f3f",
+                  borderRadius: "0.25rem",
                   cursor: "pointer",
+                  padding: "0.5rem",
                 }}
+                title="Upload Image"
+                type="file"
               />
               <small style={{ color: "#7f8c8d" }}>
                 최대 256x96px, PNG 파일만 가능
@@ -345,15 +367,15 @@ export default function DrawingGeneratorPage() {
             </div>
             {previewSrc && (
               <button
-                type="button"
                 onClick={saveCanvasAsWebP}
                 style={{
                   backgroundColor: "#f28913",
-                  color: "white",
-                  padding: "0.5rem",
                   borderRadius: "0.25rem",
+                  color: "white",
                   cursor: "pointer",
+                  padding: "0.5rem",
                 }}
+                type="button"
               >
                 이미지 다운로드
               </button>
@@ -363,9 +385,9 @@ export default function DrawingGeneratorPage() {
         {previewSrc && (
           <div
             style={{
+              alignItems: "center",
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
               marginTop: "2rem",
               textAlign: "center",
             }}

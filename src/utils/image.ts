@@ -4,7 +4,7 @@ interface ValidateImageSizeProps {
   maxHeight: number;
 }
 
-export async function validateImageSize({
+export function validateImageSize({
   file,
   maxWidth,
   maxHeight,

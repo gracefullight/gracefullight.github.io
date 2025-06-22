@@ -58,53 +58,63 @@ export default function DictionaryPage() {
     <Layout>
       <div style={{ padding: "2.5rem" }}>
         <div
-          style={{ marginBottom: "0.5rem", display: "flex", gap: "0.25rem" }}
+          style={{ display: "flex", gap: "0.25rem", marginBottom: "0.5rem" }}
         >
           <input
-            type="text"
-            value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyPress}
+            pattern="[a-zA-Z-\s]*"
+            placeholder="검색어를 입력하세요"
             style={{
-              flexGrow: 1,
               border: "1px solid #f49f3f",
               borderRadius: "0.25rem",
+              flexGrow: 1,
               padding: "0.5rem 1rem",
             }}
-            placeholder="검색어를 입력하세요"
-            pattern="[a-zA-Z-\s]*"
             title="알파벳, 대시(-), 공백만 허용합니다. 최소 2글자 이상 입력해주세요."
+            type="text"
+            value={query}
           />
           <button
-            type="submit"
             onClick={() => search(query)}
             style={{
               background: "#f49f3f",
               border: 0,
-              color: "white",
-              padding: "0.5rem 1rem",
               borderRadius: "0.25rem",
+              color: "white",
               cursor: "pointer",
+              padding: "0.5rem 1rem",
             }}
+            type="submit"
           >
             검색하기
           </button>
         </div>
         <div style={{ marginBottom: "1.5rem" }}>
           {recentSearches?.map((term) => (
-            <span
+            <button
               key={term}
               onClick={() => search(term)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  search(term);
+                }
+              }}
               style={{
-                margin: "0.25rem",
-                padding: "0.25rem 0.5rem",
+                background: "white",
                 border: "1px solid #f28913",
                 borderRadius: "0.25rem",
+                color: "#f28913",
                 cursor: "pointer",
+                font: "inherit",
+                margin: "0.25rem",
+                padding: "0.25rem 0.5rem",
               }}
+              tabIndex={0}
+              type="button"
             >
               {term}
-            </span>
+            </button>
           ))}
         </div>
         <BrowserOnly>
@@ -112,33 +122,33 @@ export default function DictionaryPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: responsive.md ? "1fr 1fr" : "1fr",
                 gap: "1rem",
+                gridTemplateColumns: responsive.md ? "1fr 1fr" : "1fr",
               }}
             >
               <iframe
-                src={iframeSrc.daum}
-                title="Daum Dictionary"
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  borderRadius: "0.25rem",
-                }}
                 loading="lazy"
-                sandbox=""
                 referrerPolicy="no-referrer"
+                sandbox=""
+                src={iframeSrc.daum}
+                style={{
+                  borderRadius: "0.25rem",
+                  height: "100vh",
+                  width: "100%",
+                }}
+                title="Daum Dictionary"
               />
               <iframe
-                src={iframeSrc.naver}
-                title="Naver Dictionary"
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  borderRadius: "0.25rem",
-                }}
                 loading="lazy"
-                sandbox=""
                 referrerPolicy="no-referrer"
+                sandbox=""
+                src={iframeSrc.naver}
+                style={{
+                  borderRadius: "0.25rem",
+                  height: "100vh",
+                  width: "100%",
+                }}
+                title="Naver Dictionary"
               />
             </div>
           )}

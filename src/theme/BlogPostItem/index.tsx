@@ -1,6 +1,7 @@
 import type { WrapperProps } from "@docusaurus/types";
-import Giscus from "@site/src/components/Giscus";
 import type BlogPostItemType from "@theme-original/BlogPostItem";
+
+import Giscus from "@site/src/components/giscus";
 import BlogPostItem from "@theme-original/BlogPostItem";
 
 type Props = WrapperProps<typeof BlogPostItemType>;

@@ -1,14 +1,13 @@
 import { resolve } from "node:path";
-
 import { Command } from "clipanion";
-import { copy, ensureDir, readFile, readdir } from "fs-extra";
+import { copy, ensureDir, readdir, readFile } from "fs-extra";
 
 export class ExtractDateFromMarkdownCommand extends Command {
   static readonly paths = [["extract-date"]];
 
   private getDateMetadata(text: string) {
     const metadataRegex = /^---\n((?:.+\n)+?)---\n/;
-    const metadataMatch = RegExp(metadataRegex).exec(text);
+    const metadataMatch = new RegExp(metadataRegex).exec(text);
     if (!metadataMatch) {
       return null;
     }

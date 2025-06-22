@@ -54,6 +54,7 @@ export class NewPostCommand extends Command {
     );
 
     this.context.stdout.write(`Done: ${filePath}\n`);
+    return 0;
   }
 
   /**

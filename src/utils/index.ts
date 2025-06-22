@@ -1,2 +1,2 @@
-export * from "./image";
-export * from "./png";
+export * from "./image.ts";
+export * from "./png.ts";

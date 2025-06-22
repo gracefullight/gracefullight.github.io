@@ -1,6 +1,6 @@
 import { Builtins, Cli } from "clipanion";
-import { ExtractDateFromMarkdownCommand } from "./extractDateFromMarkdown";
-import { NewPostCommand } from "./newPost";
+import { ExtractDateFromMarkdownCommand } from "./extract-date-from-markdown";
+import { NewPostCommand } from "./new-post";
 import { PdfCommand } from "./pdf";
 
 const [node, app, ...args] = process.argv;
