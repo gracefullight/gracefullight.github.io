@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-06-22T08:53:43.914Z</updated>
+    <updated>2025-06-23T00:38:29.608Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[구문 분석]]></title>
+        <id>https://gracefullight.dev/en/2025/06/23/syntax-analysis/</id>
+        <link href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/"/>
+        <updated>2025-06-23T00:38:29.608Z</updated>
+        <summary type="html"><![CDATA[Syntax analysis in programming languages]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="개념도">개념도<a href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/#%EA%B0%9C%EB%85%90%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<div class="language-c codeBlockContainer_unZi theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_yrzb"><pre tabindex="0" class="prism-code language-c codeBlock_gxWo thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_ZXIj"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">count </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">100</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  count</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// ...</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<!-- -->
+<ul>
+<li>재귀적 하향 구문 분석: recursive descent parsing</li>
+<li>LL(0) 문법: 어떤 비단말 노드에서 유도되는 규칙이 여러 개인 경우에, 그 중 어떤 규칙을 적용할지는 항상 첫 번째 토큰만 보고 결정 가능한 속성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="구문-예시">구문 예시<a href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/#%EA%B5%AC%EB%AC%B8-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>요소</th><th>예시</th></tr></thead><tbody><tr><td>keyword</td><td><code>'class' | 'function' | 'if' | 'else' | 'while' | 'for' | 'return' | 'int' | 'string' | 'boolean' | 'true' | 'false' | 'null'...</code></td></tr><tr><td>symbol</td><td><code>'(', ')' | '{', '}' | '[', ']' | ';' | ',' | '.' | '=' | '==' | '!=' | '&lt;' | '&gt;' | '&lt;=' | '&gt;=' | '~'</code></td></tr><tr><td>integerConstant</td><td>10진수 숫자</td></tr><tr><td>stringConstant</td><td>따옴표와 줄바꿈 문자를 제외한 유니코드 문자열</td></tr><tr><td>identifier</td><td>숫자로 시작하지 않는, 영문자, 숫자, 밑줄(_)로 구성된 문자열</td></tr><tr><td>comment</td><td><code>//</code>로 시작하는 한 줄 주석, <code>/* ... */</code>로 감싸진 여러 줄 주석</td></tr><tr><td>whitespace</td><td>공백, 탭, 줄바꿈 문자 등</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="프로그램-구조">프로그램 구조<a href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>요소</th><th>예시</th></tr></thead><tbody><tr><td>class</td><td><code>'class' className '{' classVarDec\* subroutineDec\* '}'</code></td></tr><tr><td>classVarDec</td><td><code>('static' | 'field') type varName (',' varName)\* ';'</code></td></tr><tr><td>type</td><td><code>'int' | 'boolean' | 'char' | className</code></td></tr><tr><td>subroutineDec</td><td><code>('constructor' | 'function' | 'method') ('void' | type) subroutineName '(' parameterList ')' '{' varDec\* subroutineBody '}'</code></td></tr><tr><td>parameterList</td><td><code>(type varName (',' type varName)*)?</code></td></tr><tr><td>subroutineBody</td><td><code>'{' varDec* statements '}'</code></td></tr><tr><td>varDec</td><td><code>'var' type varName (',' varName)* ';'</code></td></tr><tr><td>className</td><td>identifier</td></tr><tr><td>subroutineName</td><td>identifier</td></tr><tr><td>varName</td><td>identifier</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="명령문">명령문<a href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/#%EB%AA%85%EB%A0%B9%EB%AC%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>요소</th><th>예시</th></tr></thead><tbody><tr><td>statements</td><td><code>statement\*</code></td></tr><tr><td>statement:</td><td><code>letStatement | ifStatement | whileStatement | doStatement | returnStatement</code></td></tr><tr><td>letStatement</td><td><code>'let' varName ('[' expression ']')? '=' expression ';'</code></td></tr><tr><td>ifStatement</td><td><code>'if' '(' expression ')' '{' statements '}' ('else' '{' statements '}')?</code></td></tr><tr><td>whileStatement</td><td>`'while' '(' expression ')' '<!-- --> statements <!-- -->'``</td></tr><tr><td>doStatement</td><td><code>'do' subroutineCall ';'</code></td></tr><tr><td>returnStatement</td><td><code>'return' (expression)? ';'</code></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="표현식">표현식<a href="https://gracefullight.dev/en/2025/06/23/syntax-analysis/#%ED%91%9C%ED%98%84%EC%8B%9D" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>요소</th><th>예시</th></tr></thead><tbody><tr><td>expression</td><td><code>term (op term)*</code></td></tr><tr><td>term</td><td><code>integerConstant | stringConstant | keywordConstant | varName | varName '[' expression']' | subroutineCall | '(' expression ')' | unaryOp term</code></td></tr><tr><td>subroutineCall</td><td><code>subroutineName '(' expressionList ')' | (className | varName) '.' subroutineName '(' expressionList ')'</code></td></tr><tr><td>expressionList</td><td><code>(expression (',' expression)*)?</code></td></tr><tr><td>op</td><td><code>'+' | '-' | '*' | '/' | '&amp;' | '|' | '&lt;' | '&gt;' | '='</code></td></tr><tr><td>unaryOp</td><td><code>'-' | '~'</code></td></tr><tr><td>keywordConstant</td><td><code>'true' | 'false' | 'null' | 'this'</code></td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="javascript" term="javascript"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[호주 학생 비자 주의사항]]></title>
         <id>https://gracefullight.dev/en/2025/06/22/study-in-australia-visa-conditions/</id>
@@ -469,46 +496,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/algorithm" term="pe/algorithm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[가트너 10대 전략 기술 트렌드 2025]]></title>
-        <id>https://gracefullight.dev/en/pe/conv/gartner-2025/</id>
-        <link href="https://gracefullight.dev/en/pe/conv/gartner-2025/"/>
-        <updated>2025-02-01T00:58:19.847Z</updated>
-        <summary type="html"><![CDATA[2025년 가트너 전략기술 트렌드]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="가트너-2025">가트너 2025<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="가트너-2025-구성도">가트너 2025 구성도<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EB%8F%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="가트너-2025-구성요소">가트너 2025 구성요소<a href="https://gracefullight.dev/en/pe/conv/gartner-2025/#%EA%B0%80%ED%8A%B8%EB%84%88-2025-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>AI 필수요소와 리스크<!-- -->
-<ul>
-<li><a href="https://gracefullight.dev/en/pe/algo/agentic-ai/">에이전틱 AI</a></li>
-<li><a href="https://gracefullight.dev/en/pe/algo/ai-governance-platform/">AI 거버넌스 플랫폼</a></li>
-<li><a href="https://gracefullight.dev/en/pe/sec/disinformation-security/">허위정보 보안</a></li>
-</ul>
-</li>
-<li>컴퓨팅의 새 지평<!-- -->
-<ul>
-<li><a href="https://gracefullight.dev/en/pe/sec/post-quantum-cryptography/">양자내성암호</a></li>
-<li><a href="https://gracefullight.dev/en/pe/conv/ambient-invisible-intelligence/">앰비언트 인비저블 인텔리전스</a></li>
-<li><a href="https://gracefullight.dev/en/pe/conv/energy-efficient-computing/">에너지 효율적 컴퓨팅</a></li>
-<li><a href="https://gracefullight.dev/en/pe/conv/hybrid-computing/">하이브리드 컴퓨팅</a></li>
-</ul>
-</li>
-<li>인간-기계 시너지<!-- -->
-<ul>
-<li><a href="https://gracefullight.dev/en/pe/conv/spatial-computing/">공간 컴퓨팅</a></li>
-<li><a href="https://gracefullight.dev/en/pe/conv/polyfunctional-robots/">다기능 로봇</a></li>
-<li><a href="https://gracefullight.dev/en/pe/conv/neurological-enhancement/">신경학적 향상</a></li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/it-convergence" term="pe/it-convergence"/>
     </entry>
 </feed>
