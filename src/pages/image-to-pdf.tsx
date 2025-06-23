@@ -1,5 +1,3 @@
-import type React from "react";
-
 import Layout from "@theme/Layout";
 import { PDFDocument } from "pdf-lib";
 import { useRef, useState } from "react";
