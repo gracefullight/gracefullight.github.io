@@ -5,7 +5,6 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
-    environment: "happy-dom",
     setupFiles: ["./config/vitest.setup.ts"],
   },
 });

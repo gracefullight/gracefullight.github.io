@@ -61,7 +61,6 @@
   },
   "linter": {
     "domains": {
-      "project": "recommended",
       "react": "all",
       "test": "all"
     },
@@ -76,13 +75,27 @@
       },
       "correctness": {
         "noConstantMathMinMaxClamp": "error",
+        "noPrivateImports": "error",
         "noUnusedFunctionParameters": "error",
         "noUnusedImports": "error",
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error"
       },
-      "nursery": {},
+      "nursery": {
+        "noFloatingPromises": "error",
+        "noUselessBackrefInRegex": "error",
+        "noUselessEscapeInString": "error",
+        "noUselessUndefined": "error",
+        "useConsistentObjectDefinition": "error",
+        "useConsistentResponse": "error",
+        "useExhaustiveSwitchCases": "error",
+        "useNumericSeparators": "error",
+        "useObjectSpread": "error",
+        "useParseIntRadix": "error",
+        "useSingleJsDocAsterisk": "error",
+        "useSymbolDescription": "error"
+      },
       "recommended": true,
       "style": {
         "noEnum": "error",
