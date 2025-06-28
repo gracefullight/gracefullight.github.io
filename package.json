@@ -46,7 +46,7 @@
     "yaml": "^2.8.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.0.4",
+    "@biomejs/biome": "^2.0.6",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
@@ -69,7 +69,7 @@
     "@vitest/ui": "^3",
     "clipanion": "^4.0.0-rc.4",
     "devmoji": "^2.3.0",
-    "dotenv": "^16.5.0",
+    "dotenv": "^17.0.0",
     "fs-extra": "^11.3.0",
     "hexo-util": "^3.3.0",
     "husky": "^9.1.7",
