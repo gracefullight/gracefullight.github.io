@@ -18,8 +18,10 @@ tags:
 
 > Notice of Intended Marriage, 결혼의향서
 
-- [NOIM](https://www.ag.gov.au/families-and-marriage/publications/notice-intended-marriage)
+- [Attorney-General's Department: NOIM](https://www.ag.gov.au/families-and-marriage/publications/notice-intended-marriage)
+- 최소 예식 한 달 전에 작성해야만 한다.
 - 작성 후 호주 내에서 의사, 경찰관 등에게 공증을 받아야한다.
+- 한국인으로서 결혼하려면 직접 진행하기에 관계증명서류, 공증서류들이 많이 필요하기에 업체를 먼저 알아보았다.
 
 ## 예식 예약
 
@@ -28,9 +30,18 @@ tags:
   - 결혼식 최소 한 달 전에 작성되어야 하는 결혼의향서(NOIM) 양식 접수
   - 결혼식 당일 예식을 진행하고 모든 법적 서류를 준비할 주례자
   - NSW 주 출생, 사망, 결혼 관리 당국(BDM)에 결혼을 등록하는 절차
-- 날짜 변경은 원래 예약된 날짜로부터 최소 1달하고도 2일 전까지는 업체 고지 필요
-  - 일정 변경 수수료는 A$85
-  - 그 이후로는 전체 비용 새로 결제 필요
+- 사이트를 통해서만 NOIM 양식을 작성해야하고, Attorney-General's Department 에서 출력한 NOIM 양식은 사용할 수 없다.
+
+### 예식 날짜 결정시
+
+- 예식 날짜는 1달 전에 결정해야 한데 입국과 시험 일정이 어떻게 겹칠지 몰라 선뜻 결정하기 어려웠다.
+- 이럴 때를 위해 Lodgement Voucher를 준비해뒀다고 한다.
+
+### 예식 날짜 변경시
+
+- 날짜 변경은 원래 예약된 날짜로부터 최소 1달하고도 2일 전까지는 업체 고지가 필요하다.
+- 일정 변경 수수료는 A$85
+- 그 이후로는 전체 비용 새로 결제 필요
 
 ## 증명서 발급
 
