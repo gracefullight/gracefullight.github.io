@@ -22,6 +22,8 @@ tags:
 - 최소 예식 한 달 전에 작성해야만 한다.
 - 작성 후 호주 내에서 의사, 경찰관 등에게 공증을 받아야한다.
 - 한국인으로서 결혼하려면 직접 진행하기에 관계증명서류, 공증서류들이 많이 필요하기에 업체를 먼저 알아보았다.
+  - 문서들은 NATTI, National Accreditation Authority for Translators and Interpreters 공증을 받아야하며 건별로 A$30부터 시작하는 듯 했다.
+  - 영사관에서도 [공증이 있지만](https://sydney.mofa.go.kr/au-sydney-ko/brd/m_2464/list.do) 몇몇 서류는 안 되어 직접 방문해봐야할 것 같았다.
 
 ## 예식 예약
 
