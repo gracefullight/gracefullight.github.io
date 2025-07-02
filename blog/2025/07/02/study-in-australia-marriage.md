@@ -36,7 +36,7 @@ tags:
 
 - 예식 날짜는 1달 전에 결정해야 한데 입국과 시험 일정이 어떻게 겹칠지 몰라 선뜻 결정하기 어려웠다.
 - 이럴 때를 위해 [Lodgement Voucher](https://www.simpleceremonies.com.au/location/the-studio-lv)를 준비해뒀다고 한다.
-  - 예비 배우자 비자(서브클래스 300)를 신청하려는 경우
+  - 예비 배우자 비자(Subclass 300)를 신청하려는 경우
   - 결혼식 기간 단축(Shortening of Time)을 신청하려는 경우
   - 결혼식 날짜를 유동적으로 정하고 싶은 경우
   - 일정 변경에 따른 추가 비용을 피하고 싶은 경우
