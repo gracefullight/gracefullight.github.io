@@ -16,14 +16,21 @@ tags:
 
 ## NOIM
 
-> Notice of Intended Marriage, 결혼 허가 신청서
+> Notice of Intended Marriage, 결혼의향서
 
 - [NOIM](https://www.ag.gov.au/families-and-marriage/publications/notice-intended-marriage)
-- 공증
+- 작성 후 호주 내에서 의사, 경찰관 등에게 공증을 받아야한다.
 
 ## 예식 예약
 
 - [Simple Ceremonies](https://www.simpleceremonies.com.au/)
+- 저렴한데 업체를 이용하면 아래 서류들을 다 처리해준다.
+  - 결혼식 최소 한 달 전에 작성되어야 하는 결혼의향서(NOIM) 양식 접수
+  - 결혼식 당일 예식을 진행하고 모든 법적 서류를 준비할 주례자
+  - NSW 주 출생, 사망, 결혼 관리 당국(BDM)에 결혼을 등록하는 절차
+- 날짜 변경은 원래 예약된 날짜로부터 최소 1달하고도 2일 전까지는 업체 고지 필요
+  - 일정 변경 수수료는 A$85
+  - 그 이후로는 전체 비용 새로 결제 필요
 
 ## 증명서 발급
 
