@@ -31,6 +31,7 @@ tags:
   - 결혼식 당일 예식을 진행하고 모든 법적 서류를 준비할 주례자
   - NSW 주 출생, 사망, 결혼 관리 당국(BDM)에 결혼을 등록하는 절차
 - 사이트를 통해서만 NOIM 양식을 작성해야하고, Attorney-General's Department 에서 출력한 NOIM 양식은 사용할 수 없다.
+- [Blues Point Reserve](https://www.simpleceremonies.com.au/location/blues-point-reserve) A$350에 오페라하우스가 뒤로 보이는 다리 앞에서, 한국에서는 규격화된 웨딩문화를 벗어나려고하면 기하급수적으로 비용이 붙어 해볼 수 없던 스몰/야외 결혼식이 가능하다.
 
 ### 예식 날짜 결정시
 
