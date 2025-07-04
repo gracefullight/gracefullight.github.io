@@ -84,9 +84,9 @@ tags:
   - 기타: 아이엘츠 관련 모임 (3h)
     - 오픈챗은 다 홍보이고, 카페도 아독사가 제일 회원이 많은데 with Hackers 라는 suffix가 약간 찜찜했음. 둘러보니 결국 해커스 어학원으로 가라..
     - 하나 건진 건 실전모의고사 제공하는 링크들. 시험전에 풀수 있을 것 같은 것.
-      - https://ielts.idp.com/korea/prepare/article-get-familiar-ielts-on-computer
-      - https://ieltsonlinetests.com/
-      - https://crackieltswithrob.com/
+      - <https://ielts.idp.com/korea/prepare/article-get-familiar-ielts-on-computer>
+      - <https://ieltsonlinetests.com/>
+      - <https://crackieltswithrob.com/>
 - Try
   - L: 틀린 것 여러번 적어봐서 익히기
   - R: 잘 하자
