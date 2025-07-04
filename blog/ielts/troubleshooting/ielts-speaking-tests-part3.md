@@ -11,7 +11,7 @@ tags:
 - [Part1](/ielts/troubleshooting/ielts-speaking-tests-part1)
 - [Part2](/ielts/troubleshooting/ielts-speaking-tests-part2)
 - [Part3](/ielts/troubleshooting/ielts-speaking-tests-part3)
-- [Flaws](/ielts/troubleshooting/ielts-speaking-tests-flaws)
+- [Flaws](/ielts/troubleshooting/ielts-speaking-tests-flaws-2023)
 
 ## activity
 
@@ -22,7 +22,7 @@ tags:
   - `like feeling thrills`
   - `make adventurous friends`.
   - `prefer to get together with those who are not cowards`.
-  - `prove thier strength by doing adventurous activities`.
+  - `prove their strength by doing adventurous activities`.
 - Do older people like adventurous activities?
   - `some older people like`
   - `to keep their health`

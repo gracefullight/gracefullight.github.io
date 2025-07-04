@@ -11,7 +11,7 @@ tags:
 - [Part1](/ielts/troubleshooting/ielts-speaking-tests-part1)
 - [Part2](/ielts/troubleshooting/ielts-speaking-tests-part2)
 - [Part3](/ielts/troubleshooting/ielts-speaking-tests-part3)
-- [Flaws](/ielts/troubleshooting/ielts-speaking-tests-flaws)
+- [Flaws](/ielts/troubleshooting/ielts-speaking-tests-flaws-2023)
 
 ## D1
 
