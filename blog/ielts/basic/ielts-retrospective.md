@@ -90,12 +90,12 @@ tags:
 - Try
   - L: 틀린 것 여러번 적어봐서 익히기
   - R: 잘 하자
-  - W: Grammer Intermediante은 심심할 때마다 풀어보면서 문법 기억하기.
+  - W: Grammar Intermediate은 심심할 때마다 풀어보면서 문법 기억하기.
   - S: 직장인 2분 말하기 따라읽기 많은 주제를 접할 수 있을 것 같음, [빈출 문제들을 내 경험위주로 바꾸고 태깅](https://gracefullight.dev/2023/09/03/refactoring-speaking/)하는 형태로 변경.
   - 일회성, next.js app dir로 마이그레이션할 때 하루는 걸릴 것 같아서 엄두가 안남.
   - 신전은 10분 이하로만..
   - 데일리로 1.5h 헬스장에 4000보 걷는데, 2배로 늘리려면 2~2.5h 를 운동에 써야하는데 포인트 모을 수 있을까..?
-  - 일회성, 그냥 Intermediante W,S단과 + 스터디까지하고, [11월에 응시](https://www.hackers.ac/site/?st=lecture&idx=201&mode=view&small=397145&jijum=1001&subject_no=7)하는 걸로.
+  - 일회성, 그냥 Intermediate W,S단과 + 스터디까지하고, [11월에 응시](https://www.hackers.ac/site/?st=lecture&idx=201&mode=view&small=397145&jijum=1001&subject_no=7)하는 걸로.
 
 ### Sep, W3
 
