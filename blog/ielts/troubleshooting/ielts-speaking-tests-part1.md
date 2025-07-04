@@ -8,10 +8,10 @@ tags:
   - ielts
 ---
 
-- [Part1](/2023/11/16/ielts-speaking-tests-part1)
-- [Part2](/2023/12/02/ielts-speaking-tests-part2)
-- [Part3](/2023/12/02/ielts-speaking-tests-part3)
-- [Flaws](/2023/12/02/ielts-speaking-tests-flaws)
+- [Part1](/ielts/troubleshooting/ielts-speaking-tests-part1)
+- [Part2](/ielts/troubleshooting/ielts-speaking-tests-part2)
+- [Part3](/ielts/troubleshooting/ielts-speaking-tests-part3)
+- [Flaws](/ielts/troubleshooting/ielts-speaking-tests-flaws)
 
 ## fishing
 

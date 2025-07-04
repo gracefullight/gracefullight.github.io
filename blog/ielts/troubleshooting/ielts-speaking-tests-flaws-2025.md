@@ -10,7 +10,7 @@ tags:
 
 - [Part1 기출](https://yourielts.net/prepare-for-ielts/ielts-speaking/ielts-speaking-part-1-topics-september-december-2024)
 - [Part2,3 기출](https://yourielts.net/prepare-for-ielts/ielts-speaking/ielts-speaking-part-2-3-topics-september-december-2024)
-- [방법](/2023/10/09/ielts-speaking)
+- [방법](/ielts/troubleshooting/ielts-speaking)
 
 ## D1, Plants
 
