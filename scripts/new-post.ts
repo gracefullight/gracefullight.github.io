@@ -86,9 +86,9 @@ export class NewPostCommand extends Command {
     const fileName = `ielts-transcription-${nextNum}.md`;
 
     // 3. 타이틀, 태그, 파일명 결정
-    const title = this.title || `IELTS Transcription #${nextNum}`;
+    const title = this.title || `IELTS Transcription @${nextNum}`;
     const tags = ["ielts"];
-    const desc = `IELTS Writing Transcription #${nextNum}`;
+    const desc = `IELTS Writing Transcription @${nextNum}`;
     const body = `\n## Task1\n\n> 1\n\n![task1](./assets/ielts-transcription-${nextNum}.png)\n\n1\n\n## Task2\n\n> 1\n\n1\n`;
     return await this.writePostFile(
       targetDir,
