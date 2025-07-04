@@ -18,8 +18,8 @@ tags:
 export class NewPostCommand extends Command {
   static readonly paths = [["new"]];
 
-  // 글 제목 (필수)
-  title = Option.String();
+  // 글 제목 (선택, 없으면 자동 생성)
+  title = Option.String({ required: false });
 
   // --tags 옵션: 태그 입력 (예: --tags "conv")
   tags = Option.String("--tags", "");
@@ -37,6 +37,14 @@ export class NewPostCommand extends Command {
    * 우선순위: ielts > pe > (기본) 날짜 폴더
    */
   async execute(): Promise<number | undefined> {
+    // --ielts가 아닌데 title이 없으면 에러
+    if (!(this.ielts || this.title)) {
+      this.context.stderr.write(
+        "Error: 제목(title)은 필수입니다. --ielts 모드만 생략 가능합니다.\n",
+      );
+      return 1;
+    }
+
     switch (true) {
       case this.ielts:
         return await this.handleIeltsMode();
@@ -50,7 +58,7 @@ export class NewPostCommand extends Command {
   /**
    * --ielts 옵션 처리
    * blog/ielts/troubleshooting/ielts-transcription-XXX.md 형식으로 순번 파일 생성
-   * 태그: ["ielts", "eng"]
+   * 태그: ["ielts"]
    */
   private handleIeltsMode = async (): Promise<number> => {
     // 1. 폴더 경로 지정
@@ -79,8 +87,17 @@ export class NewPostCommand extends Command {
 
     // 3. 타이틀, 태그, 파일명 결정
     const title = this.title || `IELTS Transcription #${nextNum}`;
-    const tags = ["ielts", "eng"];
-    return await this.writePostFile(targetDir, fileName, title, tags);
+    const tags = ["ielts"];
+    const desc = `IELTS Writing Transcription #${nextNum}`;
+    const body = `\n## Task1\n\n> 1\n\n![task1](./assets/ielts-transcription-${nextNum}.png)\n\n1\n\n## Task2\n\n> 1\n\n1\n`;
+    return await this.writePostFile(
+      targetDir,
+      fileName,
+      title,
+      tags,
+      desc,
+      body,
+    );
   };
 
   /**
@@ -119,9 +136,16 @@ export class NewPostCommand extends Command {
     }
 
     // 파일명: 제목을 slug로 변환
-    const fileName = `${slugize(this.title)}.md`;
-    const title = this.title;
-    return await this.writePostFile(targetDir, fileName, title, parsedTags);
+    const title = this.title ?? "Untitled";
+    const fileName = `${slugize(title)}.md`;
+    return await this.writePostFile(
+      targetDir,
+      fileName,
+      title,
+      parsedTags,
+      title,
+      "",
+    );
   };
 
   /**
@@ -144,9 +168,19 @@ export class NewPostCommand extends Command {
     await ensureDir(targetDir);
 
     // 파일명: 제목을 slug로 변환
-    const fileName = `${slugize(this.title)}.md`;
-    const title = this.title;
-    return await this.writePostFile(targetDir, fileName, title, parsedTags);
+    const title = this.title ?? "Untitled";
+    const fileName = `;
+    $;
+    slugize(title);
+    .md`;
+    return await this.writePostFile(
+      targetDir,
+      fileName,
+      title,
+      parsedTags,
+      title,
+      "",
+    );
   };
 
   /**
@@ -169,20 +203,23 @@ export class NewPostCommand extends Command {
    * - fileName: 파일명
    * - title: 포스트 제목
    * - tags: 태그 배열
+   * - description: 설명
+   * - body: 본문
    */
   private async writePostFile(
     dir: string,
     fileName: string,
     title: string,
     tags: string[],
+    description: string,
+    body: string,
   ): Promise<number> {
-    const frontmatterTags = tags.map((tag) => `- ${tag}`).join("\n  ");
     await ensureDir(dir);
-    await writeFile(
-      resolve(dir, fileName),
-      format(scaffold, title, DateTime.now().toISO(), title, frontmatterTags),
-      "utf8",
-    );
+    const now = DateTime.now();
+    const frontmatterTags = tags.map((tag) => `- ${tag}`).join("\n  ");
+    const content =
+      format(scaffold, title, now.toISO(), description, frontmatterTags) + body;
+    await writeFile(resolve(dir, fileName), content, "utf8");
     this.context.stdout.write(`Done: ${resolve(dir, fileName)}\n`);
     return 0;
   }
