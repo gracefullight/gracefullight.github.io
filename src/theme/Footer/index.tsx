@@ -5,10 +5,6 @@ import Footer from "@theme-original/Footer";
 
 type Props = WrapperProps<typeof FooterType>;
 
-export default function FooterWrapper(props: Props): JSX.Element {
-  return (
-    <>
-      <Footer {...props} />
-    </>
-  );
+export default function FooterWrapper(props: Props) {
+  return <Footer {...props} />;
 }
