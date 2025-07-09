@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-04T16:54:57.413Z</updated>
+    <updated>2025-07-05T07:52:09.901Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IELTS Transcription @002]]></title>
+        <id>https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/</id>
+        <link href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/"/>
+        <updated>2025-07-05T07:52:09.901Z</updated>
+        <summary type="html"><![CDATA[IELTS Writing Transcription @002]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#task1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>The pie chart above shows the percentage distribution of energy sources in Country X in 2024.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/en/assets/images/ielts-transcription-002-6370d9fa384525e7c5b45f2abe90ad4e.png" width="1979" height="1180" class="img_yneg"></p>
+<p>The pie chart illustrates the distribution of energy sources in Country X in 2024. Overall, fossil fuels dominate the mix, though a notable share comes from cleaner alternatives. Coal represents the largest portion at 34%, followed by natural gas at 25%. Together, these two sources account for nearly 60% of the total. Nuclear energy contributes 15%, while hydro and other renewables make up 10% and 16% respectively. The data indicates a reliance on coal, yet the combined renewable segment (26%) slightly exceeds nuclear output, reflecting early steps toward sustainability.</p>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#task2" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>Many people believe that economic growth should be the top priority for governments, while others argue that protecting the environment is more important. Discuss both views and give your own opinion.</p>
+</blockquote>
+<p>Economic development and environmental conservation are often seen as competing objectives. Advocates of economic growth argue that expanding industries generates jobs, increases GDP, and provides revenue for public services. Developing nations, in particular, rely on rapid industrialization to alleviate poverty and improve infrastructure. On the other hand, environmentalists warn that prioritizing growth can lead to pollution, resource depletion, and climate change, undermining long-term health and stability. I contend that governments should pursue sustainable development: integrating green technologies and regulations to ensure economic progress does not compromise environmental integrity.</p>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>Term / Expression</th><th>Definition</th><th>Simpler Paraphrase</th></tr></thead><tbody><tr><td><strong>Fossil fuels</strong></td><td>Natural fuels (coal, oil, or gas) formed from dead organisms over millions of years</td><td>Coal, oil, and gas</td></tr><tr><td><strong>Notable share</strong></td><td>A significant portion</td><td>A large part</td></tr><tr><td><strong>Combined renewable segment</strong></td><td>The total percentage of energy from solar, wind, hydro, etc.</td><td>All green energy added together</td></tr><tr><td><strong>Early steps toward sustainability</strong></td><td>Initial actions to protect the environment while developing</td><td>First actions to go green</td></tr><tr><td><strong>Competing objectives</strong></td><td>Goals that are in opposition</td><td>Goals that clash</td></tr><tr><td><strong>Alleviate poverty</strong></td><td>Reduce the level of poverty</td><td>Lessen poverty</td></tr><tr><td><strong>Environmental integrity</strong></td><td>The state of ecosystems being healthy and undamaged</td><td>Keeping nature healthy</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="ielts" term="ielts"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IELTS Transcription @001]]></title>
         <id>https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-001/</id>
@@ -699,30 +724,5 @@
         </author>
         <category label="professional-engineer" term="professional-engineer"/>
         <category label="pe/it-convergence" term="pe/it-convergence"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[내부 게이트웨이 프로토콜]]></title>
-        <id>https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/</id>
-        <link href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/"/>
-        <updated>2025-02-07T07:20:57.521Z</updated>
-        <summary type="html"><![CDATA[Internal Gateway Protocol]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="내부-게이트웨이-프로토콜">내부 게이트웨이 프로토콜<a href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/#%EB%82%B4%EB%B6%80-%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<ul>
-<li>네트워크 규모에 따라 소규모 네트워크에서 주기적으로 라우팅 정보를 교환하는 RIP, 대규모 네트워크에서 Dijkstra 알고리즘을 사용하여 최단 경로를 계산한 OSPF 선택</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="rip-ospf-동작-매커니즘-상세-비교-활용-방안">RIP, OSPF 동작 매커니즘, 상세 비교, 활용 방안<a href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/#rip-ospf-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="rip-ospf-동작-매커니즘">RIP, OSPF 동작 매커니즘<a href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/#rip-ospf-%EB%8F%99%EC%9E%91-%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="rip-ospf-상세-비교">RIP, OSPF 상세 비교<a href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/#rip-ospf-%EC%83%81%EC%84%B8-%EB%B9%84%EA%B5%90" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>RIP</th><th>OSPF</th></tr></thead><tbody><tr><td>프로토콜 유형</td><td>내부 게이트웨이 프로토콜</td><td>내부 게이트웨이 프로토콜</td></tr><tr><td>알고리즘</td><td>거리 벡터 알고리즘</td><td>링크 상태 알고리즘</td></tr><tr><td>최대 홉 수</td><td>15</td><td>제한 없음</td></tr><tr><td>전송 계층 프로토콜</td><td>UDP</td><td>IP</td></tr><tr><td>특징</td><td>주기적 업데이트, 단순 구조</td><td>빠른 수렴, 멀티캐스트 사용</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="rip-ospf-활용-방안">RIP, OSPF 활용 방안<a href="https://gracefullight.dev/en/pe/nw/internal-gateway-protocol/#rip-ospf-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>구분</th><th>내용</th><th>적용 방안</th></tr></thead><tbody><tr><td>RIP</td><td>소규모 네트워크에서 기본 라우팅 제공</td><td>구현 및 유지보수 용이</td></tr><tr><td></td><td>최대 홉 수 제한으로 인해 대규모 네트워크에는 부적합</td><td>OSPF 등 다른 IGP 프로토콜 검토</td></tr><tr><td>OSPF</td><td>대규모 네트워크에서 확장성과 안정성 요구</td><td>빠른 수렴, 정확한 경로 선택</td></tr><tr><td></td><td>복잡한 설정 및 높은 리소스 요구</td><td>전문가 컨설팅 및 하드웨어 성능 확보</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="professional-engineer" term="professional-engineer"/>
-        <category label="pe/network" term="pe/network"/>
     </entry>
 </feed>
