@@ -169,10 +169,7 @@ export class NewPostCommand extends Command {
 
     // 파일명: 제목을 slug로 변환
     const title = this.title ?? "Untitled";
-    const fileName = `;
-    $;
-    slugize(title);
-    .md`;
+    const fileName = `${slugize(title)}.md`;
     return await this.writePostFile(
       targetDir,
       fileName,
