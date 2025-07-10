@@ -4,7 +4,7 @@ date: 2025-07-10T01:31:18.537+09:00
 description: Troubleshooting a Gemini Cli authentication issue and a brief review of its performance.
 authors: me
 tags:
-  - me
+  - gemini
 ---
 
 ## 인증 무한 대기
