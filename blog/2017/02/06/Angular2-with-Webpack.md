@@ -1,7 +1,9 @@
 ---
 title: Angular2 with Webpack
 authors: me
-tags: [angular, webpack]
+tags:
+  - angular
+  - webpack
 date: 2017-02-06 14:54:06
 ---
 

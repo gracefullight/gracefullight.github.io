@@ -1,7 +1,8 @@
 ---
 title: UMD Patterns
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 18:57:00
 ---
 

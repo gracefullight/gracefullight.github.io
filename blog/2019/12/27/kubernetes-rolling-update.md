@@ -1,7 +1,9 @@
 ---
 title: 쿠버네티스 롤링 업데이트와 배포
 authors: me
-tags: [k8s, docker]
+tags:
+  - k8s
+  - docker
 date: 2019-12-27 20:43:20
 ---
 

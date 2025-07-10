@@ -1,7 +1,9 @@
 ---
 title: "Throttle, Debounce Pattern"
 authors: me
-tags: [javascript, lodash]
+tags:
+  - javascript
+  - lodash
 date: 2016-12-22 20:16:37
 ---
 

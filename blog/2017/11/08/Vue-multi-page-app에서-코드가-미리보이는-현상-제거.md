@@ -1,7 +1,9 @@
 ---
 title: Vue multi page app에서 코드가 미리보이는 현상 제거
 authors: me
-tags: [vue, javascript]
+tags:
+  - vue
+  - javascript
 date: 2017-11-08 10:28:50
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: cron 부팅시 프로그램 실행
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-01-11 15:11:08
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Nginx for Windows - 2. PHP 연동
 authors: me
-tags: [windows, php, nginx]
+tags:
+  - windows
+  - php
+  - nginx
 date: 2017-02-02 11:43:37
 ---
 

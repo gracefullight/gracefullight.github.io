@@ -1,7 +1,8 @@
 ---
 title: Windows10 바탕화면 변경 및 사진적용이 안될 때
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-01-08 22:10:36
 ---
 

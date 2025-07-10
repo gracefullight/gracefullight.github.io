@@ -1,7 +1,9 @@
 ---
 title: React-Router Code Splitting - 가장 쉬운 방법
 authors: me
-tags: [javascript, react]
+tags:
+  - javascript
+  - react
 date: 2017-11-23 10:58:22
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: PWA 홈 설치의 모든 것 (A2HS)
 authors: me
-tags: [pwa, javascript, a2hs, serviceworker]
+tags:
+  - pwa
+  - javascript
+  - a2hs
+  - serviceworker
 date: 2019-02-17 21:39:40
 ---
 

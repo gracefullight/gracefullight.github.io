@@ -1,7 +1,9 @@
 ---
 title: CentOS Tomcat 및 Java(JDK) 설치
 authors: me
-tags: [linux, java]
+tags:
+  - linux
+  - java
 date: 2017-01-10 22:32:28
 ---
 

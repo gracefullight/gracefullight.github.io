@@ -1,7 +1,10 @@
 ---
 title: nodejs triple des 암호화
 authors: me
-tags: [nodejs, javascript, crypto]
+tags:
+  - nodejs
+  - javascript
+  - crypto
 date: 2019-05-12 20:29:20
 ---
 

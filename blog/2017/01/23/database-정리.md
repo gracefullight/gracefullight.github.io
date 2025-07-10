@@ -2,7 +2,9 @@
 title: Database 정리
 password: 1012
 authors: me
-tags: [정보처리, database]
+tags:
+  - 정보처리
+  - database
 date: 2017-01-23 11:13:00
 ---
 

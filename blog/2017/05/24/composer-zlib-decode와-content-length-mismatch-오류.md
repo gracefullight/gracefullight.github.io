@@ -1,7 +1,9 @@
 ---
 title: composer zlib_decode와 content-length mismatch 오류
 authors: me
-tags: [php, composer]
+tags:
+  - php
+  - composer
 date: 2017-05-24 22:14:22
 ---
 

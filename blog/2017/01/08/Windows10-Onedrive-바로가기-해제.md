@@ -1,7 +1,9 @@
 ---
 title: Windows10 Onedrive 바로가기 해제
 authors: me
-tags: [windows, onedrive]
+tags:
+  - windows
+  - onedrive
 date: 2017-01-08 23:02:39
 ---
 

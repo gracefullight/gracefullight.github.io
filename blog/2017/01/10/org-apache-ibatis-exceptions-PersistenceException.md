@@ -1,7 +1,9 @@
 ---
 title: org.apache.ibatis.exceptions.PersistenceException
 authors: me
-tags: [java, mybatis]
+tags:
+  - java
+  - mybatis
 date: 2017-01-10 22:21:04
 ---
 

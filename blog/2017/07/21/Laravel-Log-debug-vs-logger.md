@@ -1,7 +1,9 @@
 ---
 title: Laravel - Log::debug vs logger
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-07-21 00:46:35
 ---
 

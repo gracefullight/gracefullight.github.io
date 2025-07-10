@@ -1,7 +1,8 @@
 ---
 title: git add 안 되는 경우 확인해야될 것
 authors: me
-tags: [git]
+tags:
+  - git
 date: 2016-12-28 02:24:18
 ---
 

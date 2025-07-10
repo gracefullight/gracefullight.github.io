@@ -1,7 +1,8 @@
 ---
 title: PHP에서 HTML tag 사이의 문자 가져오기
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-02-13 15:00:14
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: 따라하면 되는 Git 사용 명령어
 authors: me
-tags: [git]
+tags:
+  - git
 date: 2017-01-07 19:05:58
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: vi 에디터 단축키 마스터하기
 authors: me
-tags: [bash, vim, linux]
+tags:
+  - bash
+  - vim
+  - linux
 date: 2018-09-26 22:27:36
 ---
 

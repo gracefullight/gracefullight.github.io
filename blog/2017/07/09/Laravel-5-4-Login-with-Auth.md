@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - 로그인(Auth) 붙히기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-07-09 22:46:57
 ---
 

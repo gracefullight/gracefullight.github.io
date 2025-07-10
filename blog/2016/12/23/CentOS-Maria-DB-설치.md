@@ -1,7 +1,10 @@
 ---
 title: CentOS Maria DB 설치
 authors: me
-tags: [database, linux, mariadb]
+tags:
+  - database
+  - linux
+  - mariadb
 date: 2016-12-23 08:08:50
 ---
 

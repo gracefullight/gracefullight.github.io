@@ -1,7 +1,8 @@
 ---
 title: 자바스크립트 활성 객체와 함수
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2020-08-09 16:44:41
 ---
 

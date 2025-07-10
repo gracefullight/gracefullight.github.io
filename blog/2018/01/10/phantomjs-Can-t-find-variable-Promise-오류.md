@@ -1,7 +1,9 @@
 ---
 title: phantomjs Can't find variable Promise 오류
 authors: me
-tags: [javascript, nodejs]
+tags:
+  - javascript
+  - nodejs
 date: 2018-01-10 18:40:56
 ---
 

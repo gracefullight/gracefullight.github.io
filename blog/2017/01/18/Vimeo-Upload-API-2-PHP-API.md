@@ -1,7 +1,9 @@
 ---
 title: Vimeo Upload API - 2. PHP API
 authors: me
-tags: [php, vimeo]
+tags:
+  - php
+  - vimeo
 date: 2017-01-18 10:50:14
 ---
 

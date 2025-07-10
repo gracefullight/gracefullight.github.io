@@ -1,7 +1,8 @@
 ---
 title: Hyper-V Virtual Eternet 네트워크 제거
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2018-12-23 22:43:37
 ---
 

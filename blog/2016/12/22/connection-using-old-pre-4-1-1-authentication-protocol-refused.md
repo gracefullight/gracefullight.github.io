@@ -1,7 +1,10 @@
 ---
 title: connection using old (pre-4.1.1) authentication protocol refused
 authors: me
-tags: [database, mysql, windows]
+tags:
+  - database
+  - mysql
+  - windows
 date: 2016-12-22 21:14:44
 ---
 

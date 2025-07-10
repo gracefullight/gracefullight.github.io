@@ -1,7 +1,9 @@
 ---
 title: Laravel - Socialite InvalidStateException
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-09-12 22:24:25
 ---
 

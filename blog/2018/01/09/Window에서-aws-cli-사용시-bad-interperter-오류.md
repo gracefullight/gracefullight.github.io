@@ -1,7 +1,9 @@
 ---
 title: Window에서 aws cli 사용시 bad interperter 오류
 authors: me
-tags: [windows, aws]
+tags:
+  - windows
+  - aws
 date: 2018-01-09 12:10:59
 ---
 

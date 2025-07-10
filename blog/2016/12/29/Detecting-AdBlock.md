@@ -1,7 +1,8 @@
 ---
 title: Detecting AdBlock
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-29 17:15:58
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Openshift를 이용한 무료 서버 구축
 authors: me
-tags: [openshift, linux]
+tags:
+  - openshift
+  - linux
 date: 2017-01-04 13:26:48
 ---
 

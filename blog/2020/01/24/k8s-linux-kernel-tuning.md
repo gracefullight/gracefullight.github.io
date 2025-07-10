@@ -1,7 +1,10 @@
 ---
 title: 쿠버네티스 리눅스 커널 튜닝하기
 authors: me
-tags: [k8s, docker, linux]
+tags:
+  - k8s
+  - docker
+  - linux
 date: 2020-01-24 23:43:55
 ---
 

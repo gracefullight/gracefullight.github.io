@@ -1,7 +1,11 @@
 ---
 title: nodejs alpine3.13 테스트
 authors: me
-tags: [javascript, nodejs, alpine, docker]
+tags:
+  - javascript
+  - nodejs
+  - alpine
+  - docker
 date: 2021-11-17 23:24:45
 ---
 

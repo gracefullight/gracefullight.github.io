@@ -1,7 +1,9 @@
 ---
 title: "Ubuntu에서 timezone 변경"
 authors: me
-tags: [timezone, linux]
+tags:
+  - timezone
+  - linux
 date: 2017-02-15 01:46:18
 ---
 

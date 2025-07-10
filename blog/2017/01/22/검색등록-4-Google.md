@@ -1,7 +1,8 @@
 ---
 title: 검색등록 - 4. Google
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 15:25:47
 ---
 

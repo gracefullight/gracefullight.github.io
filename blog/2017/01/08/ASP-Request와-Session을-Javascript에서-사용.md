@@ -1,7 +1,9 @@
 ---
 title: ASP - Request와 Session을 Javascript에서 사용
 authors: me
-tags: [asp, javascript]
+tags:
+  - asp
+  - javascript
 date: 2017-01-08 01:40:10
 ---
 

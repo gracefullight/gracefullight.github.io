@@ -1,7 +1,8 @@
 ---
 title: imageTTFtext 한글 깨짐 해결
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-01-13 13:46:17
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Laravel - Migration으로 FK 생성이 안될 때
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-10-12 08:19:21
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Mac 에서 포트 접근 확인하기
 authors: me
-tags: [mac]
+tags:
+  - mac
 date: 2019-04-26 12:37:42
 ---
 

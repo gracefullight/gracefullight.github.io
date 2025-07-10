@@ -1,7 +1,9 @@
 ---
 title: Linux startup 파일에서 피해야할 것
 authors: me
-tags: [linux, bash]
+tags:
+  - linux
+  - bash
 date: 2017-11-19 22:53:29
 ---
 

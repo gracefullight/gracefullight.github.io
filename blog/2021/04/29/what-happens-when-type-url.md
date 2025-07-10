@@ -1,7 +1,9 @@
 ---
 title: URL을 입력하면 발생하는 일
 authors: me
-tags: [javascript, chrome]
+tags:
+  - javascript
+  - chrome
 date: 2021-04-29 23:02:15
 ---
 

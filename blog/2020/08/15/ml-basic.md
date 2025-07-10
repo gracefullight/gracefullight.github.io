@@ -1,7 +1,8 @@
 ---
 title: 머신러닝 기초 정리
 authors: me
-tags: [ml]
+tags:
+  - ml
 date: 2020-08-15 19:10:58
 ---
 

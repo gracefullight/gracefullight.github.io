@@ -1,7 +1,8 @@
 ---
 title: ecma 스펙으로 알아보는 this
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2021-05-01 15:04:56
 ---
 

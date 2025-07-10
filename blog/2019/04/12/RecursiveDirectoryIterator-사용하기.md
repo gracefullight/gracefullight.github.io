@@ -1,7 +1,8 @@
 ---
 title: RecursiveDirectoryIterator 사용하기
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2019-04-12 19:42:34
 ---
 

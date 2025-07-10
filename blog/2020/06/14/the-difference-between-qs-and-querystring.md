@@ -1,7 +1,10 @@
 ---
 title: qs 모듈과 querystring 모듈 비교
 authors: me
-tags: [javascript, nodejs, rfc]
+tags:
+  - javascript
+  - nodejs
+  - rfc
 date: 2020-06-14 22:36:28
 ---
 

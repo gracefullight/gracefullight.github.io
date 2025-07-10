@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Multi DB Connection
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-07-31 22:54:58
 ---
 

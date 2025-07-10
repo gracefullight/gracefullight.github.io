@@ -1,7 +1,9 @@
 ---
 title: Centos7 Timezone 변경하기
 authors: me
-tags: [linux, timezone]
+tags:
+  - linux
+  - timezone
 date: 2017-08-09 21:37:34
 ---
 

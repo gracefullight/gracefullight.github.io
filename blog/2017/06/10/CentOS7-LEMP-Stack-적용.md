@@ -1,7 +1,12 @@
 ---
 title: CentOS7 LEMP Stack 설치하기 (HTTP2, PHP7.1, Maria, Letsencrypt)
 authors: me
-tags: [linux, php, nginx, mariadb, letsencrypt]
+tags:
+  - linux
+  - php
+  - nginx
+  - mariadb
+  - letsencrypt
 date: 2017-06-10 10:05:06
 ---
 

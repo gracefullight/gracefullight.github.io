@@ -1,7 +1,9 @@
 ---
 title: Cannot start container iptables failed
 authors: me
-tags: [linux, docker]
+tags:
+  - linux
+  - docker
 date: 2017-08-19 16:32:08
 ---
 

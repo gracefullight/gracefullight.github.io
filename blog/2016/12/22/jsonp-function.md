@@ -1,7 +1,8 @@
 ---
 title: jsonp function
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 18:04:28
 ---
 

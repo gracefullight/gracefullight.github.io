@@ -1,7 +1,9 @@
 ---
 title: Cross Domain Login 중 세션 생성시 IE 오류
 authors: me
-tags: [javascript, php]
+tags:
+  - javascript
+  - php
 date: 2016-12-22 12:46:21
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: hexo jsfiddle tag를 호출하지 못하는 현상
 authors: me
-tags: [hexo, javascript]
+tags:
+  - hexo
+  - javascript
 date: 2017-01-09 23:04:03
 ---
 

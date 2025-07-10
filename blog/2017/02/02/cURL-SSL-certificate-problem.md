@@ -1,7 +1,8 @@
 ---
 title: cURL error 60 SSL certificate problem
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-02-02 23:50:09
 ---
 

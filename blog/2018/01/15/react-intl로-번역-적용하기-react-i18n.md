@@ -1,7 +1,10 @@
 ---
 title: react-intl로 번역 적용하기 (react i18n)
 authors: me
-tags: [javascript, react, react-intl]
+tags:
+  - javascript
+  - react
+  - react-intl
 date: 2018-01-15 16:21:41
 ---
 

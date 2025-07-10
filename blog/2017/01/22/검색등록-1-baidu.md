@@ -1,7 +1,8 @@
 ---
 title: 바이두 검색등록 및 전화인증 없이 회원가입하기
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 12:45:45
 ---
 

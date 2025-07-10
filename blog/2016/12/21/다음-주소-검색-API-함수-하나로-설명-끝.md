@@ -1,7 +1,8 @@
 ---
 title: "다음 주소 검색 API"
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-21 15:33:00
 ---
 

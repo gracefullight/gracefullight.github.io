@@ -1,7 +1,9 @@
 ---
 title: 맥에서 블루투스 장치 차단하기
 authors: me
-tags: [mac, bluetooth]
+tags:
+  - mac
+  - bluetooth
 date: 2020-11-30 00:37:23
 ---
 

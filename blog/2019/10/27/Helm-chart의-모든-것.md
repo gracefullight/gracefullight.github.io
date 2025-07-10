@@ -1,7 +1,10 @@
 ---
 title: Helm chart의 모든 것
 authors: me
-tags: [k8s, helm, docker]
+tags:
+  - k8s
+  - helm
+  - docker
 date: 2019-10-27 17:10:13
 ---
 

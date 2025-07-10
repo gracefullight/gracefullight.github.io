@@ -2,7 +2,9 @@
 title: Maria DB에서 정규식 치환하기
 
 authors: me
-tags: [mariadb, database]
+tags:
+  - mariadb
+  - database
 date: 2017-11-16 12:28:08
 ---
 

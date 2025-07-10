@@ -1,7 +1,8 @@
 ---
 title: 숫자 3자리 단위로 comma 추가 - 정규식 활용
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-21 23:48:07
 ---
 

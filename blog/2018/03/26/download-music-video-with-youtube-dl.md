@@ -1,7 +1,9 @@
 ---
 title: "youtube-dl로 유튜브 무료 다운로드하기"
 authors: me
-tags: [youtube, bash]
+tags:
+  - youtube
+  - bash
 date: 2018-03-26 19:55:54
 ---
 

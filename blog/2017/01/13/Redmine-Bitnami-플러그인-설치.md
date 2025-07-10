@@ -1,7 +1,8 @@
 ---
 title: Redmine Bitnami 플러그인 설치
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-01-13 18:15:52
 ---
 

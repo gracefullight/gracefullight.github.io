@@ -1,7 +1,8 @@
 ---
 title: 일본 우편번호(주소) 검색 API
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2017-08-12 00:28:55
 ---
 

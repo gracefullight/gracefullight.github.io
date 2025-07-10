@@ -1,7 +1,10 @@
 ---
 title: Gitment 사용하기
 authors: me
-tags: [gitment, git, javascript]
+tags:
+  - gitment
+  - git
+  - javascript
 date: 2018-08-25 12:35:05
 ---
 

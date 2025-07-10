@@ -1,7 +1,8 @@
 ---
 title: 페이징시 Row의 순번(인덱스) 구하기
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 12:58:57
 ---
 

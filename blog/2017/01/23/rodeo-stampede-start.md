@@ -1,7 +1,8 @@
 ---
 title: 로데오 스탬피드 공략 및 동물 포획 (170810)
 authors: me
-tags: [game]
+tags:
+  - game
 date: 2017-01-23 00:45:16
 ---
 

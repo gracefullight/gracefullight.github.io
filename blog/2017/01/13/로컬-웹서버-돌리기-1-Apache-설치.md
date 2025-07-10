@@ -1,7 +1,9 @@
 ---
 title: 로컬 웹서버 돌리기 - 1. Apache 설치
 authors: me
-tags: [windows, php]
+tags:
+  - windows
+  - php
 date: 2017-01-13 20:49:41
 ---
 

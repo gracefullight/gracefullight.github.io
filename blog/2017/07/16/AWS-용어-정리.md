@@ -1,7 +1,8 @@
 ---
 title: AWS 용어 정리
 authors: me
-tags: [aws]
+tags:
+  - aws
 date: 2017-07-16 16:03:14
 ---
 

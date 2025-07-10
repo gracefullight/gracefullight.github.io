@@ -1,7 +1,10 @@
 ---
 title: CSS3 레이아웃
 authors: me
-tags: [css, layout, html]
+tags:
+  - css
+  - layout
+  - html
 date: 2020-03-01 14:52:04
 ---
 

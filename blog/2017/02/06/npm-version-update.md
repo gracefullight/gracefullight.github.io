@@ -1,7 +1,9 @@
 ---
 title: npm 업데이트시 npm 폴더가 사라졌을 때
 authors: me
-tags: [javascript, nodejs]
+tags:
+  - javascript
+  - nodejs
 date: 2017-02-06 19:46:53
 ---
 

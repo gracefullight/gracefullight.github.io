@@ -1,7 +1,9 @@
 ---
 title: Can't connect to localhost
 authors: me
-tags: [chrome, dns]
+tags:
+  - chrome
+  - dns
 date: 2017-01-08 17:09:23
 ---
 

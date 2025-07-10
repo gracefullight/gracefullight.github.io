@@ -1,7 +1,8 @@
 ---
 title: Single line for loop
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2017-03-31 11:06:37
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: React 시작하기
 authors: me
-tags: [javascript, react]
+tags:
+  - javascript
+  - react
 date: 2016-12-23 14:38:04
 ---
 

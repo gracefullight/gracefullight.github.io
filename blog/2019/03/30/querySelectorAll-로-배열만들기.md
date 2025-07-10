@@ -1,7 +1,8 @@
 ---
 title: querySelectorAll 로 배열만들기
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2019-03-30 22:11:05
 ---
 

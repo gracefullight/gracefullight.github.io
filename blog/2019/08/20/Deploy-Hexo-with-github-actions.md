@@ -1,7 +1,10 @@
 ---
 title: Github Actions로 Hexo 배포 자동화하기
 authors: me
-tags: [github, hexo, javascript]
+tags:
+  - github
+  - hexo
+  - javascript
 date: 2019-08-20 23:25:15
 ---
 

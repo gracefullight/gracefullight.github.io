@@ -1,7 +1,8 @@
 ---
 title: 나를 위한 면접 (ALL)
 authors: me
-tags: [interview]
+tags:
+  - interview
 date: 2018-01-09 22:13:40
 ---
 

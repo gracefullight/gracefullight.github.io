@@ -1,7 +1,9 @@
 ---
 title: Javascript 기본값 연산자 (축약된 삼항연산자)
 authors: me
-tags: [javascript, php]
+tags:
+  - javascript
+  - php
 date: 2016-12-22 15:15:46
 ---
 

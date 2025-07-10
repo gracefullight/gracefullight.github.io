@@ -1,7 +1,10 @@
 ---
 title: Webpack5 설정
 authors: me
-tags: [javascript, webpack, nodejs]
+tags:
+  - javascript
+  - webpack
+  - nodejs
 date: 2021-01-15 18:28:14
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: 쿠버네티스 환경에서의 Node.js DNS Cache
 authors: me
-tags: [nodejs, dns, k8s, docker]
+tags:
+  - nodejs
+  - dns
+  - k8s
+  - docker
 date: 2020-11-30 00:06:31
 ---
 

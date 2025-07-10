@@ -1,7 +1,10 @@
 ---
 title: PWA - 서비스 워커 웹 캐싱 (Web Caching)
 authors: me
-tags: [javascript, pwa, serviceworker]
+tags:
+  - javascript
+  - pwa
+  - serviceworker
 date: 2017-12-22 20:53:41
 ---
 

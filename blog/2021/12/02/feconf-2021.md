@@ -1,7 +1,9 @@
 ---
 title: feconf 2021
 authors: me
-tags: [conference, javascript]
+tags:
+  - conference
+  - javascript
 date: 2021-12-02 07:19:12
 ---
 

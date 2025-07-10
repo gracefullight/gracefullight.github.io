@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - 일본으로 메일 보내기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-07-19 00:11:01
 ---
 

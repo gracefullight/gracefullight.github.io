@@ -1,7 +1,8 @@
 ---
 title: hasOwnProperty vs prototype.hasOwnProperty
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 20:26:49
 ---
 

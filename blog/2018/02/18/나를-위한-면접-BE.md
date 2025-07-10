@@ -1,7 +1,8 @@
 ---
 title: 나를 위한 면접 (Backend Developer Interview Questions)
 authors: me
-tags: [interview]
+tags:
+  - interview
 date: 2018-02-18 14:13:34
 ---
 

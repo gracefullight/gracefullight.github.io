@@ -1,7 +1,8 @@
 ---
 title: Google Cloud Instance 무료 사용
 authors: me
-tags: [gcp]
+tags:
+  - gcp
 date: 2017-01-10 17:02:17
 ---
 

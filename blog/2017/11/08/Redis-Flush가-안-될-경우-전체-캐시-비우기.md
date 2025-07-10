@@ -1,7 +1,8 @@
 ---
 title: Redis Flush가 안 될 경우 전체 캐시 비우기
 authors: me
-tags: [redis]
+tags:
+  - redis
 date: 2017-11-08 10:29:42
 ---
 

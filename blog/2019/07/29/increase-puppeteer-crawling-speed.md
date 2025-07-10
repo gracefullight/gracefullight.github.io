@@ -1,7 +1,10 @@
 ---
 title: puppeteer 크롤링 속도 증가시키기
 authors: me
-tags: [javascript, nodejs, puppeteer]
+tags:
+  - javascript
+  - nodejs
+  - puppeteer
 date: 2019-07-29 21:44:24
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: 로컬 웹서버 돌리기 - 3. Virtual Host 설정
 authors: me
-tags: [windows, php]
+tags:
+  - windows
+  - php
 date: 2017-01-13 22:51:23
 ---
 

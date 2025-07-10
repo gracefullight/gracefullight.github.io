@@ -1,7 +1,9 @@
 ---
 title: Laravel Query Logging, 쿼리 로그
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-09-06 21:38:37
 ---
 

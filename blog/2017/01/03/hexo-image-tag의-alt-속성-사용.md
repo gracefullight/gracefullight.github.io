@@ -1,7 +1,9 @@
 ---
 title: hexo image tag의 alt 속성 사용
 authors: me
-tags: [hexo, javascript]
+tags:
+  - hexo
+  - javascript
 date: 2017-01-03 13:30:42
 ---
 

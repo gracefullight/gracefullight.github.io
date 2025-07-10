@@ -1,7 +1,9 @@
 ---
 title: Git .ssh key 적용 후에도 비밀번호를 물어볼 때
 authors: me
-tags: [git, linux]
+tags:
+  - git
+  - linux
 date: 2017-01-07 22:23:42
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Windows10 Anniversary 업데이트 후 작업표시줄 폰트가 검게 보일 때
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-01-13 14:19:52
 ---
 

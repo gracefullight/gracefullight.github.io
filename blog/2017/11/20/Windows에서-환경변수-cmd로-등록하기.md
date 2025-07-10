@@ -1,7 +1,8 @@
 ---
 title: Windows에서 환경변수 cmd로 등록하기
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-11-20 18:05:30
 ---
 

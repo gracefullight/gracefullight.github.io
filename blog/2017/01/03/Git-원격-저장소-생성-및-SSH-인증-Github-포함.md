@@ -1,7 +1,10 @@
 ---
 title: Git 원격 저장소 생성 및 SSH 인증 - Github 포함
 authors: me
-tags: [git, ssh, bash]
+tags:
+  - git
+  - ssh
+  - bash
 date: 2017-01-03 13:46:23
 ---
 

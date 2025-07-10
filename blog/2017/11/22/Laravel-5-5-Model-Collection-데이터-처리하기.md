@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Model Collection 데이터 처리하기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-11-22 16:39:54
 ---
 

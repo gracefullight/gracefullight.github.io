@@ -1,7 +1,8 @@
 ---
 title: Web Server for Chrome - 가장 빨리 웹서버 구동하기
 authors: me
-tags: [chrome]
+tags:
+  - chrome
 date: 2017-01-03 12:25:23
 ---
 

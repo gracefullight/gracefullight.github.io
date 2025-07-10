@@ -1,7 +1,9 @@
 ---
 title: .NET에서 MySQL 사용자 변수 사용
 authors: me
-tags: [c#, mysql]
+tags:
+  - c#
+  - mysql
 date: 2017-01-10 16:51:23
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: Workbox5 버전의 주요 변경사항
 authors: me
-tags: [javascript, pwa, serviceworker, workbox]
+tags:
+  - javascript
+  - pwa
+  - serviceworker
+  - workbox
 date: 2020-02-02 16:47:22
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: 검색등록 - 5. Naver
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 15:50:40
 ---
 

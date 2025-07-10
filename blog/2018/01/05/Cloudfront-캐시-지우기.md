@@ -1,7 +1,8 @@
 ---
 title: Cloudfront 캐시 지우기
 authors: me
-tags: [aws]
+tags:
+  - aws
 date: 2018-01-05 13:41:12
 ---
 

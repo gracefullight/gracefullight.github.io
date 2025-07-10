@@ -1,7 +1,9 @@
 ---
 title: HTML 태그 모두 제거
 authors: me
-tags: [javascript, html]
+tags:
+  - javascript
+  - html
 date: 2016-12-22 21:08:10
 ---
 

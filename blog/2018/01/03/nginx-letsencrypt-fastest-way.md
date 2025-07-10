@@ -1,7 +1,10 @@
 ---
 title: nginx에 letsencrypt 인증서로 https 가장 빨리 적용하기
 authors: me
-tags: [linux, nginx, letsencrypt]
+tags:
+  - linux
+  - nginx
+  - letsencrypt
 date: 2018-01-03 13:29:33
 ---
 

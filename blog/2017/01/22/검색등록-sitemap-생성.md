@@ -1,7 +1,8 @@
 ---
 title: 검색등록 - sitemap 생성
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 16:13:53
 ---
 

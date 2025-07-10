@@ -1,7 +1,8 @@
 ---
 title: Database 실기
 authors: me
-tags: [정보처리]
+tags:
+  - 정보처리
 date: 2017-03-26 11:54:27
 ---
 

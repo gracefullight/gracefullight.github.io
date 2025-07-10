@@ -1,7 +1,9 @@
 ---
 title: Vue 선언된 data에 chiledren 추가시 렌더링이 안될 때
 authors: me
-tags: [javascript, vue]
+tags:
+  - javascript
+  - vue
 date: 2017-11-22 16:10:02
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: node-redis vs ioredis
 authors: me
-tags: [nodejs, redis]
+tags:
+  - nodejs
+  - redis
 date: 2022-01-29 22:16:22
 ---
 

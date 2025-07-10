@@ -1,7 +1,9 @@
 ---
 title: 쉘 스크립트 if 조건변수
 authors: me
-tags: [bash, linux]
+tags:
+  - bash
+  - linux
 date: 2017-07-30 21:48:42
 ---
 

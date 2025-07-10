@@ -1,7 +1,8 @@
 ---
 title: "Object freeze, seal, preventExtensions - 객체 수정 제어"
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 16:44:30
 ---
 

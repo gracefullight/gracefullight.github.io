@@ -1,7 +1,8 @@
 ---
 title: Mac에서 lsd 설치하기 (ls 명령어 꾸미기)
 authors: me
-tags: [mac]
+tags:
+  - mac
 date: 2019-05-27 23:55:47
 ---
 

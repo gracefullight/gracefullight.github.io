@@ -1,7 +1,9 @@
 ---
 title: Production ready nodejs dockerfile
 authors: me
-tags: [docker, nodejs]
+tags:
+  - docker
+  - nodejs
 date: 2020-06-06 13:30:01
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Vue로 생성된 DOM에 Events를 붙여야할 때
 authors: me
-tags: [javascript, vue]
+tags:
+  - javascript
+  - vue
 date: 2017-11-22 16:10:11
 ---
 

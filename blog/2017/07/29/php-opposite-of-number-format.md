@@ -1,7 +1,8 @@
 ---
 title: number_format의 반대 함수
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-07-29 11:17:47
 ---
 

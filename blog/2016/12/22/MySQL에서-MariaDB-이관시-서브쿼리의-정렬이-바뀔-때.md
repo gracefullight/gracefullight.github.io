@@ -1,7 +1,10 @@
 ---
 title: MySQL에서 MariaDB 이관시 서브쿼리의 정렬이 바뀔 때
 authors: me
-tags: [database, mysql, mariadb]
+tags:
+  - database
+  - mysql
+  - mariadb
 date: 2016-12-22 22:35:17
 ---
 

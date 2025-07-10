@@ -1,7 +1,10 @@
 ---
 title: Chrome 75 Webview에서 서비스워커의 fetch request 가 실패하는 문제
 authors: me
-tags: [pwa, chrome, serviceworker]
+tags:
+  - pwa
+  - chrome
+  - serviceworker
 date: 2019-06-30 13:50:12
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: PHP - Request와 Session을 Javascript에서 사용
 authors: me
-tags: [php, javascript]
+tags:
+  - php
+  - javascript
 date: 2017-01-13 13:49:58
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: git merge 후 binary 파일 충돌시
 authors: me
-tags: [git]
+tags:
+  - git
 date: 2018-05-11 21:27:29
 ---
 

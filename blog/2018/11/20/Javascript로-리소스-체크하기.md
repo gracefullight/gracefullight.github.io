@@ -1,7 +1,8 @@
 ---
 title: Javascript로 리소스 체크
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2018-11-20 20:42:17
 ---
 

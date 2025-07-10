@@ -1,7 +1,10 @@
 ---
 title: 로컬 웹서버 돌리기 - 4. HTTPS OpenSSL 설정
 authors: me
-tags: [windows, php, openssl]
+tags:
+  - windows
+  - php
+  - openssl
 date: 2017-01-14 22:58:03
 ---
 

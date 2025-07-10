@@ -1,7 +1,8 @@
 ---
 title: Javascript로 로컬에 이미지 다운로드
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2017-01-16 21:57:31
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Docker jenkins 설치시 permission 오류
 authors: me
-tags: [docker, jenkins]
+tags:
+  - docker
+  - jenkins
 date: 2017-10-28 19:43:36
 ---
 

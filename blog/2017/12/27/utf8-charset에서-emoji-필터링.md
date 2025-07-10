@@ -1,7 +1,11 @@
 ---
 title: utf8 charset에서 emoji 필터링하기
 authors: me
-tags: [php, nodejs, mariadb, mysql]
+tags:
+  - php
+  - nodejs
+  - mariadb
+  - mysql
 date: 2017-12-27 13:05:20
 ---
 

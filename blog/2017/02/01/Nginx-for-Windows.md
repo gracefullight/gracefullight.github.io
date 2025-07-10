@@ -1,7 +1,10 @@
 ---
 title: Nginx for Windows - 1. Setup
 authors: me
-tags: [windows, php, nginx]
+tags:
+  - windows
+  - php
+  - nginx
 date: 2017-02-01 16:16:28
 ---
 

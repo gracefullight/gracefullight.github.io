@@ -1,7 +1,10 @@
 ---
 title: jQuery DateTimePicker와 Moment JS의 연동
 authors: me
-tags: [javascript, jquery, moment]
+tags:
+  - javascript
+  - jquery
+  - moment
 date: 2016-12-21 18:19:49
 ---
 

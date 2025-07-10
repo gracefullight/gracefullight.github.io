@@ -1,7 +1,12 @@
 ---
 title: Docker로 LEMP Stack 구축하기
 authors: me
-tags: [linux, docker, php, mariadb, nginx]
+tags:
+  - linux
+  - docker
+  - php
+  - mariadb
+  - nginx
 date: 2017-08-14 23:41:38
 ---
 

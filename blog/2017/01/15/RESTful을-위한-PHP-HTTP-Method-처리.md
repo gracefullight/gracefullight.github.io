@@ -1,7 +1,8 @@
 ---
 title: RESTful을 위한 PHP HTTP Method 처리
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-01-15 17:10:07
 ---
 

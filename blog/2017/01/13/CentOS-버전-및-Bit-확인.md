@@ -1,7 +1,8 @@
 ---
 title: CentOS 버전 및 Bit 확인
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-01-13 00:33:12
 ---
 

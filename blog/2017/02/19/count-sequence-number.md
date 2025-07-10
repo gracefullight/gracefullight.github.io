@@ -1,7 +1,9 @@
 ---
 title: 연속된 번호 카운트 알고리즘
 authors: me
-tags: [javascript, algorithm]
+tags:
+  - javascript
+  - algorithm
 date: 2017-02-19 17:33:38
 ---
 

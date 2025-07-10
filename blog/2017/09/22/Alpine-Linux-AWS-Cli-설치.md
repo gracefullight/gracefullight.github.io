@@ -1,7 +1,9 @@
 ---
 title: Alpine Linux AWS Cli 설치
 authors: me
-tags: [aws, alpine]
+tags:
+  - aws
+  - alpine
 date: 2017-09-22 07:51:15
 ---
 

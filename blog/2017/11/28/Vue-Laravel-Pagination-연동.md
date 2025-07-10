@@ -1,7 +1,11 @@
 ---
 title: Vue - Laravel Pagination 연동
 authors: me
-tags: [javascript, php, vue, laravel]
+tags:
+  - javascript
+  - php
+  - vue
+  - laravel
 date: 2017-11-28 15:36:34
 ---
 

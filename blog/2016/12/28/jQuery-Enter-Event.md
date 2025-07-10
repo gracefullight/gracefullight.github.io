@@ -1,7 +1,9 @@
 ---
 title: jQuery Enter Event
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-28 12:24:35
 ---
 

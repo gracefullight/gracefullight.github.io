@@ -1,7 +1,9 @@
 ---
 title: lynx 리눅스 브라우저 사용법
 authors: me
-tags: [linux, lynx]
+tags:
+  - linux
+  - lynx
 date: 2017-01-10 22:50:44
 ---
 

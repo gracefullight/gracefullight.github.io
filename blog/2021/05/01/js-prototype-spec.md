@@ -1,7 +1,8 @@
 ---
 title: ecma 스펙으로 알아보는 prototype
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2021-05-01 18:16:27
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: Windows10에서 NodeJS MariaSQL 모듈 설치
 authors: me
-tags: [javascript, nodejs, windows, mariadb]
+tags:
+  - javascript
+  - nodejs
+  - windows
+  - mariadb
 date: 2016-12-23 15:34:12
 ---
 

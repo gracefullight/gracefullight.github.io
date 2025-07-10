@@ -1,7 +1,8 @@
 ---
 title: 한글 URL 주소 Ping 확인
 authors: me
-tags: [server]
+tags:
+  - server
 date: 2017-01-13 14:24:17
 ---
 

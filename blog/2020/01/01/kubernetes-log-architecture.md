@@ -1,7 +1,9 @@
 ---
 title: 쿠버네티스 로그 아키텍쳐
 authors: me
-tags: [k8s, docker]
+tags:
+  - k8s
+  - docker
 date: 2020-01-01 15:53:58
 ---
 

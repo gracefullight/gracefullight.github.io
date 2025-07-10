@@ -1,7 +1,9 @@
 ---
 title: D3 Word Cloud
 authors: me
-tags: [javascript, d3]
+tags:
+  - javascript
+  - d3
 date: 2017-01-10 16:27:06
 ---
 

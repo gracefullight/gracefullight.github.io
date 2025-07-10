@@ -1,7 +1,9 @@
 ---
 title: jQuery serializeObject - form을 json으로 변환
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-28 12:38:00
 ---
 

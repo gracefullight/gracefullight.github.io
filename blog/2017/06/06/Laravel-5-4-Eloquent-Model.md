@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Eloquent ORM 사용하기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-06-06 11:49:33
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: 자바스크립트 문자열
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2020-08-08 21:14:27
 ---
 

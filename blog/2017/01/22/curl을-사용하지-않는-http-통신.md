@@ -1,7 +1,8 @@
 ---
 title: curl을 사용하지 않는 http 통신
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-01-22 11:29:48
 ---
 

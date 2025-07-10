@@ -1,7 +1,9 @@
 ---
 title: 맥 구글 계정 연동시 인증 실패
 authors: me
-tags: [mac, google]
+tags:
+  - mac
+  - google
 date: 2019-06-29 12:10:44
 ---
 

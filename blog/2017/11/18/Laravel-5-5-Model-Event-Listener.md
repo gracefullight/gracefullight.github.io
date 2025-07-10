@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Model Event Listener
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-11-18 11:12:21
 ---
 

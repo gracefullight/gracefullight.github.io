@@ -1,7 +1,8 @@
 ---
 title: sublime text custom shortcut
 authors: me
-tags: [sublimetext]
+tags:
+  - sublimetext
 date: 2017-01-13 19:48:32
 ---
 

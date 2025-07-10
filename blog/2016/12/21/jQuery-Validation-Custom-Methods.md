@@ -1,7 +1,9 @@
 ---
 title: jQuery Validation Custom Methods
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-21 23:31:13
 ---
 

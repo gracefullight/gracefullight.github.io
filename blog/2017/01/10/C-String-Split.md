@@ -1,7 +1,8 @@
 ---
 title: "C# String Split"
 authors: me
-tags: [c#]
+tags:
+  - c#
 date: 2017-01-10 16:48:41
 ---
 

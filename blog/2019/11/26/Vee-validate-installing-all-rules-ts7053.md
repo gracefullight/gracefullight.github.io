@@ -1,7 +1,10 @@
 ---
 title: vee-validate3 모든 규칙 추가시 TS7053 오류
 authors: me
-tags: [javascript, vue, typescript]
+tags:
+  - javascript
+  - vue
+  - typescript
 date: 2019-11-26 20:29:46
 ---
 

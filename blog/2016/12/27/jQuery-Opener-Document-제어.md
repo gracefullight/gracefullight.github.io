@@ -1,7 +1,9 @@
 ---
 title: jQuery Opener Document 제어
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-27 23:58:18
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Windows10에서 Telnet 사용
 authors: me
-tags: [telnet, windows]
+tags:
+  - telnet
+  - windows
 date: 2017-01-05 17:18:35
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Log Permission 문제
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-08-18 22:11:35
 ---
 

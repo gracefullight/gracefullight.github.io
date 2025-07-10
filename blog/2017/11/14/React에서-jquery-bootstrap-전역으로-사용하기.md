@@ -1,7 +1,11 @@
 ---
 title: "React에서 jquery, bootstrap 전역으로 사용하기"
 authors: me
-tags: [react, javascript, bootstrap, jquery]
+tags:
+  - react
+  - javascript
+  - bootstrap
+  - jquery
 date: 2017-11-14 16:55:37
 ---
 

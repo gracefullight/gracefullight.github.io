@@ -1,7 +1,8 @@
 ---
 title: 카카오 og tag 캐시 제거
 authors: me
-tags: [kakao]
+tags:
+  - kakao
 date: 2017-01-13 13:24:55
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: redux-form 사용하기
 authors: me
-tags: [javascript, react]
+tags:
+  - javascript
+  - react
 date: 2018-02-05 12:15:39
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: "Array map, filter, values 분석"
 authors: me
-tags: [php, javascript]
+tags:
+  - php
+  - javascript
 date: 2018-09-14 21:46:12
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Nuxt에 ThirdParty js (particles.js) 추가하기
 authors: me
-tags: [javascript, nuxtjs, vue]
+tags:
+  - javascript
+  - nuxtjs
+  - vue
 date: 2018-06-02 13:42:11
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: 로드 모바일 초반 공략
 authors: me
-tags: [game]
+tags:
+  - game
 date: 2017-03-03 00:20:54
 ---
 

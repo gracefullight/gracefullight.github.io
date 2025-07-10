@@ -1,7 +1,11 @@
 ---
 title: mysql, maria 등의 서비스 포트 변경이 안 될때
 authors: me
-tags: [linux, selinux, mysql, mariadb]
+tags:
+  - linux
+  - selinux
+  - mysql
+  - mariadb
 date: 2017-01-10 23:01:42
 ---
 

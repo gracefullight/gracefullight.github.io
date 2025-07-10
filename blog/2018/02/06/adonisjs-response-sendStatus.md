@@ -1,7 +1,9 @@
 ---
 title: adonisjs에 response.sendStatus 추가하기
 authors: me
-tags: [nodejs, javascript]
+tags:
+  - nodejs
+  - javascript
 date: 2018-02-06 10:02:51
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: MySQL 버전 및 설정 확인
 authors: me
-tags: [database, mysql]
+tags:
+  - database
+  - mysql
 date: 2016-12-22 22:29:37
 ---
 

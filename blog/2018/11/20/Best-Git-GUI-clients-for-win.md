@@ -1,7 +1,8 @@
 ---
 title: Git GUI 클라이언트 분석 (windows)
 authors: me
-tags: [git]
+tags:
+  - git
 date: 2018-11-20 21:43:03
 ---
 

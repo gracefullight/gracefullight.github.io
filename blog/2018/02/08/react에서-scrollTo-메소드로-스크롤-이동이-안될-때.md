@@ -1,7 +1,9 @@
 ---
 title: react에서 scrollTo 메소드로 스크롤 이동이 안될 때
 authors: me
-tags: [javascript, react]
+tags:
+  - javascript
+  - react
 date: 2018-02-08 17:16:14
 ---
 

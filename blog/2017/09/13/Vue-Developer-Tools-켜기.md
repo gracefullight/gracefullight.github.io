@@ -1,7 +1,10 @@
 ---
 title: Vue Developer Tools 켜기
 authors: me
-tags: [javascript, laravel, vue]
+tags:
+  - javascript
+  - laravel
+  - vue
 date: 2017-09-13 23:02:02
 ---
 

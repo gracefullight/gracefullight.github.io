@@ -1,7 +1,8 @@
 ---
 title: Paypal 기부 버튼 만들기
 authors: me
-tags: [paypal]
+tags:
+  - paypal
 date: 2017-07-03 00:48:55
 ---
 

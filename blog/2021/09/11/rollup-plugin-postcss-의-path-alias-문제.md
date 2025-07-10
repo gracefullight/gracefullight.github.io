@@ -1,7 +1,9 @@
 ---
 title: rollup-plugin-postcss 의 path alias 문제
 authors: me
-tags: [javascript, rollup]
+tags:
+  - javascript
+  - rollup
 date: 2021-09-11 22:31:22
 ---
 

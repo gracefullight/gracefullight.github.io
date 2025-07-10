@@ -1,7 +1,8 @@
 ---
 title: .NET targetFramework 오류
 authors: me
-tags: [c#]
+tags:
+  - c#
 date: 2017-01-10 16:34:43
 ---
 

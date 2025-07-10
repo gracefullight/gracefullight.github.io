@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - 다형성 관계
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-08-02 23:29:36
 ---
 

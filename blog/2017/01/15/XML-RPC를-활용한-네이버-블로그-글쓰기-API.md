@@ -1,7 +1,8 @@
 ---
 title: XML-RPC를 활용한 네이버 블로그 글쓰기 API
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-01-15 17:14:09
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: 카카오 카풀 후기 (베타 리뷰)
 authors: me
-tags: [carpool, review]
+tags:
+  - carpool
+  - review
 date: 2018-12-17 20:33:40
 ---
 

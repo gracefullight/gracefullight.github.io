@@ -1,7 +1,8 @@
 ---
 title: sublime text Line Break (Word Wrap) 설정
 authors: me
-tags: [sublimetext]
+tags:
+  - sublimetext
 date: 2017-01-08 22:59:24
 ---
 

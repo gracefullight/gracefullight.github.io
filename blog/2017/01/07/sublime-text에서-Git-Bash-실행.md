@@ -1,7 +1,10 @@
 ---
 title: sublime text에서 Git Bash 실행
 authors: me
-tags: [git, bash, sublimetext]
+tags:
+  - git
+  - bash
+  - sublimetext
 date: 2017-01-07 21:43:23
 ---
 

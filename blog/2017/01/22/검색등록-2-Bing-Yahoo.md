@@ -1,7 +1,8 @@
 ---
 title: "검색등록 - 2. Bing (Yahoo)"
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 14:06:21
 ---
 

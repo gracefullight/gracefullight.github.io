@@ -1,7 +1,10 @@
 ---
 title: jshint 설정 (Sublime, VSCode)
 authors: me
-tags: [sublimetext, jslint, javascript]
+tags:
+  - sublimetext
+  - jslint
+  - javascript
 date: 2017-01-05 18:11:50
 ---
 

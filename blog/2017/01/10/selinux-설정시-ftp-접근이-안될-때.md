@@ -1,7 +1,8 @@
 ---
 title: selinux 설정시 ftp 접근이 안될 때
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-01-10 22:54:09
 ---
 

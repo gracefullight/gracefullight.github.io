@@ -1,7 +1,9 @@
 ---
 title: Vee-Validate Custom Validation
 authors: me
-tags: [javascript, vue]
+tags:
+  - javascript
+  - vue
 date: 2017-10-15 13:57:29
 ---
 

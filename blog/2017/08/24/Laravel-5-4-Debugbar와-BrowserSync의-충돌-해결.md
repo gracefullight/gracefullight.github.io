@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - Debugbar와 BrowserSync의 충돌 해결
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-08-24 22:06:11
 ---
 

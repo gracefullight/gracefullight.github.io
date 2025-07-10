@@ -1,7 +1,8 @@
 ---
 title: Linux 유저 비밀번호 변경
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-01-12 20:44:58
 ---
 

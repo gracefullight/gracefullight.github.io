@@ -1,7 +1,8 @@
 ---
 title: 나를 위한 면접 (Frontend Developer Interview Questions)
 authors: me
-tags: [interview]
+tags:
+  - interview
 date: 2018-01-10 22:32:52
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: MySQL Lock 해제
 authors: me
-tags: [database, mysql, mariadb]
+tags:
+  - database
+  - mysql
+  - mariadb
 date: 2016-12-22 22:20:19
 ---
 

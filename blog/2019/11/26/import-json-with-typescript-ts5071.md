@@ -1,7 +1,11 @@
 ---
 title: 타입스크립트에서 json import 방법
 authors: me
-tags: [javascript, typescript, nodejs, json]
+tags:
+  - javascript
+  - typescript
+  - nodejs
+  - json
 date: 2019-11-26 21:39:39
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: MomentJS 활용법
 authors: me
-tags: [javascript, moment]
+tags:
+  - javascript
+  - moment
 date: 2016-12-23 15:57:14
 ---
 

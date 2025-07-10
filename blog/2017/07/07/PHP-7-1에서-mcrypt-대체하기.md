@@ -1,7 +1,9 @@
 ---
 title: PHP 7.1에서 mcrypt 대체하기
 authors: me
-tags: [php, openssl]
+tags:
+  - php
+  - openssl
 date: 2017-07-07 22:33:46
 ---
 

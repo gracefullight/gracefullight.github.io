@@ -1,7 +1,8 @@
 ---
 title: sublime text Recommanded Packages
 authors: me
-tags: [sublimetext]
+tags:
+  - sublimetext
 date: 2017-01-13 17:17:14
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Hyper-V를 사용한 VM 실행"
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-02-23 13:53:08
 ---
 

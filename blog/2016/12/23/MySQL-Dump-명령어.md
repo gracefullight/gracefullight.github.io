@@ -1,7 +1,9 @@
 ---
 title: MySQL Dump 명령어
 authors: me
-tags: [database, mysql]
+tags:
+  - database
+  - mysql
 date: 2016-12-23 07:56:42
 ---
 

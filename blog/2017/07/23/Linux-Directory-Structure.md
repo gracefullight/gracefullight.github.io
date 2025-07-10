@@ -1,7 +1,8 @@
 ---
 title: Linux 폴더 구조
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-07-23 20:37:34
 ---
 

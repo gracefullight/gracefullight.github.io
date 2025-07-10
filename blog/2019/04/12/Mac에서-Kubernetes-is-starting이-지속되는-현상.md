@@ -1,14 +1,17 @@
 ---
 title: Mac에서 Kubernetes is starting이 지속되는 현상
 authors: me
-tags: [docker, k8s, mac]
+tags:
+  - docker
+  - k8s
+  - mac
 date: 2019-04-12 19:30:42
 ---
 
 ## 원인
 
 모하비 문제인지 최근 엣지 버전 Docker for Mac 이 문제인지 잘 모르겠지만,
-부팅시에 **Kubernates is starting** 문구가 지속되며 CPU의 온도를 90도까지 올려버린다.
+부팅시에 **Kubernetes is starting** 문구가 지속되며 CPU의 온도를 90도까지 올려버린다.
 
 맥북이 트랜스포머가 되어 곧 제트기가 될 것처럼 굉음이 나는데 해결해보자.
 

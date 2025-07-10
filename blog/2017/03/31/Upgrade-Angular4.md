@@ -1,7 +1,9 @@
 ---
 title: Angular4로의 업그레이드
 authors: me
-tags: [angular, javascript]
+tags:
+  - angular
+  - javascript
 date: 2017-03-31 17:13:14
 ---
 

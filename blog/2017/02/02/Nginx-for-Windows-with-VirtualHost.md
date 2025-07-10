@@ -1,7 +1,10 @@
 ---
 title: Nginx for Windows - 3. Virtual Host
 authors: me
-tags: [windows, php, nginx]
+tags:
+  - windows
+  - php
+  - nginx
 date: 2017-02-02 18:58:59
 ---
 

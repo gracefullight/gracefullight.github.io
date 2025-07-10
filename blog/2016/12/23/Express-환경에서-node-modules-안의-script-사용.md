@@ -1,7 +1,10 @@
 ---
 title: Express 환경에서 node_modules 안의 script 사용
 authors: me
-tags: [javascript, nodejs, express]
+tags:
+  - javascript
+  - nodejs
+  - express
 date: 2016-12-23 15:47:28
 ---
 

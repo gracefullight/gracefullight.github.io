@@ -1,7 +1,9 @@
 ---
 title: Facebook Graph API를 활용한 Page 글쓰기
 authors: me
-tags: [javascript, fb]
+tags:
+  - javascript
+  - fb
 date: 2017-01-10 16:14:21
 ---
 

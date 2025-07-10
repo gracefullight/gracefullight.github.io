@@ -1,7 +1,8 @@
 ---
 title: Visual Studio 콘솔창 유지
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-01-08 17:25:39
 ---
 

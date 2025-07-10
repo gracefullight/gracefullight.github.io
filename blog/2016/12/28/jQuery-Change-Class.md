@@ -1,7 +1,9 @@
 ---
 title: jQuery Change Class
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-28 15:49:31
 ---
 

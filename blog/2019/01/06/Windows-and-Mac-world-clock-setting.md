@@ -1,7 +1,9 @@
 ---
 title: "Windows와 Mac에서 세계시간 설정하기"
 authors: me
-tags: [windows, mac]
+tags:
+  - windows
+  - mac
 date: 2019-01-06 16:32:34
 ---
 

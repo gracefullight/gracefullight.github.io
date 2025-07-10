@@ -1,7 +1,9 @@
 ---
 title: 왜 리덕스 사가(Redux-saga) 인가?
 authors: me
-tags: [javascript, react]
+tags:
+  - javascript
+  - react
 date: 2017-12-06 09:50:37
 ---
 

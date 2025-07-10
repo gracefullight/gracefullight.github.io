@@ -1,7 +1,11 @@
 ---
 title: Vue에서 jquery와 bootstrap 전역으로 사용하기
 authors: me
-tags: [vue, bootstrap, javascript, jquery]
+tags:
+  - vue
+  - bootstrap
+  - javascript
+  - jquery
 date: 2017-11-17 16:45:23
 ---
 

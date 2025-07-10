@@ -1,7 +1,8 @@
 ---
 title: 검색등록 - 3. Yandex
 authors: me
-tags: [webmaster]
+tags:
+  - webmaster
 date: 2017-01-22 14:27:16
 ---
 

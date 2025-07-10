@@ -1,7 +1,9 @@
 ---
 title: adonisjs 로그 포맷 변경하기 (custom log format)
 authors: me
-tags: [nodejs, javascript]
+tags:
+  - nodejs
+  - javascript
 date: 2017-12-21 15:25:45
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: WeakMap, WeakSet 예제
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2020-08-07 22:45:42
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: 서비스워커로 POST Request 캐싱하기
 authors: me
-tags: [javascript, pwa, serviceworker]
+tags:
+  - javascript
+  - pwa
+  - serviceworker
 date: 2020-01-16 23:58:30
 ---
 

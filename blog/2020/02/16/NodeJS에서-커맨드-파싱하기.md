@@ -1,7 +1,10 @@
 ---
 title: NodeJS에서 커맨드 파싱하기
 authors: me
-tags: [nodejs, javascript, bash]
+tags:
+  - nodejs
+  - javascript
+  - bash
 date: 2020-02-16 20:10:12
 ---
 

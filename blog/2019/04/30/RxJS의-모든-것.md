@@ -1,7 +1,9 @@
 ---
 title: RxJS의 모든 것
 authors: me
-tags: [rxjs, javascript]
+tags:
+  - rxjs
+  - javascript
 date: 2019-04-30 14:12:58
 ---
 

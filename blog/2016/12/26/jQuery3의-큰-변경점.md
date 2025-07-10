@@ -1,7 +1,9 @@
 ---
 title: jQuery3의 큰 변경점
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-26 13:57:15
 ---
 

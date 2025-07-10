@@ -1,7 +1,9 @@
 ---
 title: unpkg cdn 사용하기 (jsdelivr)
 authors: me
-tags: [javascript, nodejs]
+tags:
+  - javascript
+  - nodejs
 date: 2017-07-16 15:50:21
 ---
 

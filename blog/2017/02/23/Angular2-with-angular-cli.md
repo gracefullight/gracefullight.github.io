@@ -1,7 +1,9 @@
 ---
 title: Angular2 with angular-cli
 authors: me
-tags: [angular, webpack]
+tags:
+  - angular
+  - webpack
 date: 2017-02-23 23:30:24
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: java localhost HTTPS Connection
 authors: me
-tags: [java]
+tags:
+  - java
 date: 2017-01-10 22:17:49
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: RxJS 병렬 HTTP 요청
 authors: me
-tags: [rxjs, javascript]
+tags:
+  - rxjs
+  - javascript
 date: 2021-01-04 19:27:14
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: sublime text ConvertToUTF8 Package 단축키 변경
 authors: me
-tags: [sublimetext]
+tags:
+  - sublimetext
 date: 2017-01-08 17:31:18
 ---
 

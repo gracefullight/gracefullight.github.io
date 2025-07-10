@@ -1,7 +1,9 @@
 ---
 title: Javascript Unix Timestamp
 authors: me
-tags: [javascript, linux]
+tags:
+  - javascript
+  - linux
 date: 2016-12-22 12:30:44
 ---
 

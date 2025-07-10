@@ -1,7 +1,10 @@
 ---
 title: 타임존 데이터 최신버전으로 업데이트하기
 authors: me
-tags: [php, timezone, tzdata]
+tags:
+  - php
+  - timezone
+  - tzdata
 date: 2019-06-23 17:19:48
 ---
 

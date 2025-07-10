@@ -1,7 +1,9 @@
 ---
 title: Laravel - Migration 특정 파일만 실행하기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-09-26 22:31:31
 ---
 

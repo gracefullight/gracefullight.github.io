@@ -1,7 +1,9 @@
 ---
 title: "C# MySQL Singleton DB Connection"
 authors: me
-tags: [c#, mysql]
+tags:
+  - c#
+  - mysql
 date: 2017-01-10 16:39:13
 ---
 

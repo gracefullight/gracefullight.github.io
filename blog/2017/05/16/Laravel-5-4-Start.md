@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5 - 시작하기
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-05-16 22:34:39
 ---
 

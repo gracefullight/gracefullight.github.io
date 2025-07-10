@@ -1,7 +1,8 @@
 ---
 title: sublime text를 contextmenu에 추가
 authors: me
-tags: [sublimetext]
+tags:
+  - sublimetext
 date: 2017-03-06 23:11:29
 ---
 

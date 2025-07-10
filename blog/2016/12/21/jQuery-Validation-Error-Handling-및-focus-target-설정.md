@@ -1,7 +1,9 @@
 ---
 title: "jQuery Validation Error Handling 및 focus, target 설정"
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-21 20:38:08
 ---
 

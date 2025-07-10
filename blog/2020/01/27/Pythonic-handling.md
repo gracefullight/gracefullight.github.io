@@ -1,7 +1,8 @@
 ---
 title: Pythonic - 핸들링
 authors: me
-tags: [python]
+tags:
+  - python
 date: 2020-01-27 18:38:10
 ---
 

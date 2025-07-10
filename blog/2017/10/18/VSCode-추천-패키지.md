@@ -1,7 +1,8 @@
 ---
 title: VSCode 추천 패키지
 authors: me
-tags: [vscode]
+tags:
+  - vscode
 date: 2017-10-18 00:24:05
 ---
 

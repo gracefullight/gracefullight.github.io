@@ -1,7 +1,9 @@
 ---
 title: Laravel 5.5로 업그레이드
 authors: me
-tags: [php, laravel]
+tags:
+  - php
+  - laravel
 date: 2017-09-12 22:46:10
 ---
 

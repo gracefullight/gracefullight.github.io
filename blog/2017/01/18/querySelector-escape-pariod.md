@@ -1,7 +1,8 @@
 ---
 title: id에 .(pariod)이 있는 element querySelector
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2017-01-18 15:38:37
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: jQuery Validation과 Materialize의 연동
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-21 23:00:18
 ---
 

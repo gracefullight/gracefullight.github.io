@@ -1,7 +1,9 @@
 ---
 title: Highchart 기본 사용법
 authors: me
-tags: [javascript, highchart]
+tags:
+  - javascript
+  - highchart
 date: 2017-01-08 23:21:05
 ---
 

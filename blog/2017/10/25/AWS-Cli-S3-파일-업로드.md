@@ -1,7 +1,8 @@
 ---
 title: AWS Cli S3 파일 업로드
 authors: me
-tags: [aws]
+tags:
+  - aws
 date: 2017-10-25 08:16:50
 ---
 

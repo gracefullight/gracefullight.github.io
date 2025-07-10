@@ -1,7 +1,9 @@
 ---
 title: 리액트 네이티브 윈도우 네트워크 설정 (react-native)
 authors: me
-tags: [react, javascript]
+tags:
+  - react
+  - javascript
 date: 2018-01-01 23:50:31
 ---
 

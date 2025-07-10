@@ -1,7 +1,10 @@
 ---
 title: Cannot find module '../build/Release/bson'
 authors: me
-tags: [javascript, nodejs, mongoose]
+tags:
+  - javascript
+  - nodejs
+  - mongoose
 date: 2016-12-23 15:19:05
 ---
 

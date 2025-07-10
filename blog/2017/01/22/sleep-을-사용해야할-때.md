@@ -1,7 +1,8 @@
 ---
 title: sleep()을 사용해야할 때
 authors: me
-tags: [php]
+tags:
+  - php
 date: 2017-01-22 01:19:01
 ---
 

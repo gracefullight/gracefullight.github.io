@@ -1,7 +1,9 @@
 ---
 title: adonisjs 시작하기 (nodejs framework)
 authors: me
-tags: [nodejs, javascript]
+tags:
+  - nodejs
+  - javascript
 date: 2017-11-20 18:53:10
 ---
 

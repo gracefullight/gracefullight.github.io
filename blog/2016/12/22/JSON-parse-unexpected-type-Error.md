@@ -1,7 +1,9 @@
 ---
 title: JSON.parse unexpected type Error
 authors: me
-tags: [javascript, json]
+tags:
+  - javascript
+  - json
 date: 2016-12-22 20:47:37
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Flutter와 타 프레임워크 비교
 authors: me
-tags: [flutter, dart, react]
+tags:
+  - flutter
+  - dart
+  - react
 date: 2021-03-07 17:03:16
 ---
 

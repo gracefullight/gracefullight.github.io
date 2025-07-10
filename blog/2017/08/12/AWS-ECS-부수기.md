@@ -1,7 +1,10 @@
 ---
 title: AWS ECS 부수기
 authors: me
-tags: [aws, docker, k8s]
+tags:
+  - aws
+  - docker
+  - k8s
 date: 2017-08-12 00:39:25
 ---
 

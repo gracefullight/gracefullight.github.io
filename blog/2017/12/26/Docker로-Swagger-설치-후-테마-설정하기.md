@@ -1,7 +1,9 @@
 ---
 title: Docker로 스웨거 설치 후 테마 설정하기 (swagger)
 authors: me
-tags: [swagger, docker]
+tags:
+  - swagger
+  - docker
 date: 2017-12-26 22:03:44
 ---
 

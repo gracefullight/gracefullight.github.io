@@ -1,7 +1,10 @@
 ---
 title: AWS CodeCommit 사용하기
 authors: me
-tags: [server, aws, git]
+tags:
+  - server
+  - aws
+  - git
 date: 2017-08-18 22:34:22
 ---
 

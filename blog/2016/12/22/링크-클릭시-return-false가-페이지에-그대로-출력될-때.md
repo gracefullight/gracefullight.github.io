@@ -1,7 +1,8 @@
 ---
 title: 링크 클릭시 return false가 페이지에 그대로 출력될 때
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-22 13:13:35
 ---
 

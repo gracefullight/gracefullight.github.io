@@ -1,7 +1,8 @@
 ---
 title: Top 명령어 단축키
 authors: me
-tags: [linux]
+tags:
+  - linux
 date: 2017-11-16 22:25:47
 ---
 

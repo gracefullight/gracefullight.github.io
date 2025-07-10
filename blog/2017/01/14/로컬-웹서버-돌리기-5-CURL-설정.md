@@ -1,7 +1,9 @@
 ---
 title: 로컬 웹서버 돌리기 - 5. CURL 설정
 authors: me
-tags: [windows, php]
+tags:
+  - windows
+  - php
 date: 2017-01-14 23:17:39
 ---
 

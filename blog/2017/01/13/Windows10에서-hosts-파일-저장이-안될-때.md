@@ -1,7 +1,8 @@
 ---
 title: Windows10에서 hosts 파일 저장이 안될 때
 authors: me
-tags: [windows]
+tags:
+  - windows
 date: 2017-01-13 23:11:42
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Docker와 Docker-compose 제대로 설치하기
 authors: me
-tags: [docker, liux]
+tags:
+  - docker
+  - liux
 date: 2017-07-23 20:57:07
 ---
 

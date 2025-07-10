@@ -1,7 +1,11 @@
 ---
 title: pm2 앱에서 git hook시에 nginx 502 gateway timeout 오류
 authors: me
-tags: [nodejs, javascript, pm2, nginx]
+tags:
+  - nodejs
+  - javascript
+  - pm2
+  - nginx
 date: 2018-01-04 10:19:13
 ---
 

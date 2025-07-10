@@ -1,7 +1,8 @@
 ---
 title: Materialize pickadate 설정
 authors: me
-tags: [javascript]
+tags:
+  - javascript
 date: 2016-12-23 15:51:23
 ---
 

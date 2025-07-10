@@ -1,7 +1,9 @@
 ---
 title: form.reset()의 input hidden 초기화 문제
 authors: me
-tags: [javascript, jquery]
+tags:
+  - javascript
+  - jquery
 date: 2016-12-26 14:41:00
 ---
 

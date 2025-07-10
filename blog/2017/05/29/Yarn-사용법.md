@@ -1,7 +1,10 @@
 ---
 title: Yarn 사용법
 authors: me
-tags: [javascript, nodejs, yarn]
+tags:
+  - javascript
+  - nodejs
+  - yarn
 date: 2017-05-29 22:17:44
 ---
 

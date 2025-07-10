@@ -1,7 +1,9 @@
 ---
 title: Lodash 활용법
 authors: me
-tags: [javascript, lodash]
+tags:
+  - javascript
+  - lodash
 date: 2016-12-25 21:21:05
 ---
 
