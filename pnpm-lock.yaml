@@ -60,8 +60,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@19.1.8)(react@19.1.0)
       ahooks:
-        specifier: ^3.8.5
-        version: 3.8.5(react@19.1.0)
+        specifier: ^3.9.0
+        version: 3.9.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -69,8 +69,8 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2
       luxon:
-        specifier: ^3.6.1
-        version: 3.6.1
+        specifier: ^3.7.1
+        version: 3.7.1
       ml-kmeans:
         specifier: ^6.0.0
         version: 6.0.0
@@ -2966,11 +2966,12 @@ packages:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
 
-  ahooks@3.8.5:
-    resolution: {integrity: sha512-Y+MLoJpBXVdjsnnBjE5rOSPkQ4DK+8i5aPDzLJdIOsCpo/fiAeXcBY1Y7oWgtOK0TpOz0gFa/XcyO1UGdoqLcw==}
+  ahooks@3.9.0:
+    resolution: {integrity: sha512-r20/C38aFyU3Zqp3620gkdLnxmQhnmWORB3eGGTDlM4i/fOc0GUvM+f2oleMzEu7b3+pHXyzz+FB6ojxsUdYdw==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
@@ -5445,8 +5446,8 @@ packages:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
 
-  luxon@3.6.1:
-    resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
+  luxon@3.7.1:
+    resolution: {integrity: sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==}
     engines: {node: '>=12'}
 
   lz-string@1.5.0:
@@ -11771,7 +11772,7 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ahooks@3.8.5(react@19.1.0):
+  ahooks@3.9.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.26.0
       dayjs: 1.11.13
@@ -11779,6 +11780,7 @@ snapshots:
       js-cookie: 3.0.5
       lodash: 4.17.21
       react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
       react-fast-compare: 3.2.2
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
@@ -14483,7 +14485,7 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  luxon@3.6.1: {}
+  luxon@3.7.1: {}
 
   lz-string@1.5.0: {}
 
