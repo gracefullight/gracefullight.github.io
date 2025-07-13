@@ -33,3 +33,15 @@ Conversely, those favouring infrastructure investments contend that efficient ro
 I believe integrating both objectives yields optimal outcomes. Cities should designate sufficient areas for parks while simultaneously upgrading transport corridors. For example, linear greenaways alongside bike lanes and bus rapid transit can merge recreational and mobility functions. Such hybrid developments exemplify how urban design can promote sustainability without sacrificing efficiency.
 
 In conclusion, although public parks and infrastructure serve different needs, their benefits are complementary. Thoughtful urban planning that blends green and built environments will foster healthier, more dynamic
+
+## Vocabulary & Expressions
+
+| Term / Expression | Definition | Simpler Paraphrase |
+| --- | --- | --- |
+| **Disparity** | A noticeable difference | A clear gap |
+| **Hydropower** | Power generated from moving water | Water-based energy |
+| **Geographical constraints** | Limitations due to location or landscape | Location-based restrictions |
+| **Urban heat islands** | Cities that are significantly warmer than surrounding areas | City areas that get hotter |
+| **Biodiversity** | Variety of plant and animal life | Different types of life |
+| **Mobility** | Ability to move or be moved freely | Ease of movement |
+| **Hybrid developments** | Projects combining two different functions | Mixed-use projects |
