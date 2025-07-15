@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-13T06:51:14.457Z</updated>
+    <updated>2025-07-15T13:57:50.608Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IELTS Transcription @006]]></title>
+        <id>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/</id>
+        <link href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/"/>
+        <updated>2025-07-15T13:57:50.608Z</updated>
+        <summary type="html"><![CDATA[IELTS Writing Transcription @006]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/#task1" class="hash-link" aria-label="Task1에 대한 직접 링크" title="Task1에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>The pie chart above shows the primary reasons why people chose to work remotely in 2024.
+Summarize the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/assets/images/ielts-transcription-006-05b06126bc6830a400421e31e38dc533.png" width="1979" height="1180" class="img_yneg"></p>
+<p>The pie chart illustrates the main factors influencing people's decision to work remotely in 2024. The data reveals that work-life balance and reduced commuting time were the most cited reasons.</p>
+<p>Work-life balance accounted for 30% of the responses, making it the leading factor. This was followed closely by the desire to avoid commuting, which represented 25%. Increased productivity was the third most common reason, at 20%, while health and safety concerns contributes to 15% of responses. Finally, flexible working hours were cited by 10% of participants.</p>
+<p>The data shows a clear trend toward personal convenience and well-being. The top of three reasons-balance, commute, and productivity-collectively represent 75% of the motivations, indicating a preference for conditions that enhance individual efficiency and lifestyle. Health-related concerns, while significant during global health crises, appear less dominant in 2024, suggesting a shift in focus from safety to sustained comfort and autonomy.</p>
+<p>In conclusion, the chart underscores the growing importance of quality of life and flexibility in shaping modern work preferences.</p>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/#task2" class="hash-link" aria-label="Task2에 대한 직접 링크" title="Task2에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Some people think it is more important to focus on the present, while others believe planning for the future is essential
+Discuss both views and give your own opinion.</p>
+</blockquote>
+<p>There is an ongoing debate over whether people should prioritize living in the moment or concentrate on future planning. While present-focused individuals argue for making the most of today, others maintain that long-term thinking is vital for success. I believe both perspectives have merit and should be balanced.</p>
+<p>Advocates of living in the present argue that focusing on the now enhances happiness and reduces anxiety. They contend that excessive worry about the future can lead to missed opportunities and mental stress. Mindfulness practices, which encourage awareness of the present moment, have been shown to improve emotional well-being and foster gratitude.</p>
+<p>In contrast, those who support planning ahead believe that setting goals and preparing for possible challenges ensures greater stability. Financial planning, career development, and health maintenance all require foresight. Without long-term thinking, people may struggle tot achieve lasting success or face avoidable setbacks.</p>
+<p>In my view, the most effective approach integrates both attitudes. While it is essential to enjoy and engage with daily life, planning for the future provides direction and security. For example, saving money for retirement does not prevent someone from enjoying today's experiences, but rather ensures peace of mind in the long run.</p>
+<p>In conclusion, while it is beneficial to embrace the present, neglecting future planning can lead to adverse consequences. A balanced mindset that values both present enjoyment and future preparedness is key to a fulfilling life.</p>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="ielts" term="ielts"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IELTS Transcription @005]]></title>
         <id>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-005/</id>
@@ -352,230 +384,5 @@ Discuss both views and give your own opinion.</p>
         </author>
         <category label="me" term="me"/>
         <category label="australia" term="australia"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CGI와 그래픽]]></title>
-        <id>https://gracefullight.dev/2025/06/24/computer-generated-imagery/</id>
-        <link href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/"/>
-        <updated>2025-06-24T13:09:12.823Z</updated>
-        <summary type="html"><![CDATA[Computer Generated Imagery and graphics]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="cgi-용어">CGI 용어<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#cgi-%EC%9A%A9%EC%96%B4" class="hash-link" aria-label="CGI 용어에 대한 직접 링크" title="CGI 용어에 대한 직접 링크">​</a></h2>
-<ul>
-<li>프레임, frame: 연속된 이미지의 한 장면</li>
-<li>잔상, persistence of vision: 다음 프레임과 적절하게 배합하면 마치 사물이 움직이는 것처럼 보이는 현상</li>
-<li>트위닝, tweening: 두 프레임 사이의 중간 프레임을 생성하는 기술</li>
-<li>셀 애니메이션, cel animation: 프레임마다 그림을 그려서 애니메이션을 만드는 기법</li>
-<li>픽셀, pixel: 화소, 화면을 구성하는 가장 작은 단위</li>
-<li>가색법, addictive color mixing: 빛의 색을 혼합하는 방법, RGB 색상 모델, 세 가지 모두 최대 명도를 가지면 흰색.</li>
-<li>감색법, subtractive color mixing: 물체의 색을 혼합하는 방법</li>
-<li>비트맵, bitmap: 색 데이터들의 바이트 목록, 이 바이트의 집합(블록)을 나타냄</li>
-<li>해상도, resolution: 이미지(비트맵)의 높이와 너비를 픽셀 단위로 표현한 것</li>
-<li>화면 버퍼, display buffer: 디지털 화면의 각 픽셀 색을 저장하는 공간</li>
-<li>화면 좌표, screen coordinate: 화면의 픽셀 위치를 나타내는 좌표계, 일반적으로 왼쪽 상단이 원점</li>
-<li>모델, model: 3D 객체의 기하학적 표현, 점, 선, 면 등으로 구성됨</li>
-<li>로컬 좌표, local coordinate: 모델의 좌표계, 모델의 중심을 원점으로 하는 좌표계</li>
-<li>제어점, control point: 모델의 형태를 정의하는 점, 곡선이나 곡면을 정의하는 데 사용</li>
-<li>보간, interpolation: 두 점 사이의 값을 계산하는 방법, 선형 보간, 곡선 보간 등, 트위닝 기법에서 사용</li>
-<li>스케일링, scaling: 모델의 크기를 조정하는 과정, 각 좌표에 특정 숫자를 곱하거나 나눠서 구현</li>
-<li>포지셔닝, positioning: 모델의 위치를 조정하는 과정, 각 좌표에 특정 값을 더하거나 빼서 구현</li>
-<li>레스터라이즈, rasterize: 벡터 그래픽을 픽셀로 변환하는 과정, 모델의 각 점을 화면 좌표로 변환</li>
-<li>톱니바퀴, jaggies: 레스터라이즈 과정에서 발생하는 계단 현상, 픽셀 단위로 표현되기 때문에 발생</li>
-<li>에일리어싱, aliasing: 연속적인 모델과 비연속적인 비트맵 사이에 발생하는 불일치</li>
-<li>안티에일리어싱, anti-aliasing: 톱니바퀴 현상을 줄이기 위한 기술, 주변 픽셀의 색을 평균내어 부드러운 경계를 만듦 (흰색 바탕의 경우 겹치는 픽셀에 회색 추가)</li>
-<li>알파 수준, alpha level: 각 픽셀이 모델에 겹치는 정도에 따라 투명도 조정</li>
-<li>알파 채널, alpha channel: 비트맵에 있는 모든 픽셀의 알파 수준, 비트맵은 모델에 의해 겹쳐지는 픽셀을 색으로 표현한 것이고 알파 채널은 각 픽셀의 투명도를 표현한 것</li>
-<li>렌더링, rendering: 모델을 최종 이미지로 바꾸는 작업</li>
-<li>렌더러, renderer: 렌더링을 수행하는 소프트웨어</li>
-<li>영화수준 렌더링, movie-quality rendering: 고품질 렌더링, 많은 시간과 계산 필요</li>
-<li>월드 좌표, world coordinate: 3D 공간에서 모델의 위치를 나타내는 좌표계, 로컬 좌표를 월드 좌표로 변환하는 과정이 필요</li>
-<li>뷰포인트, viewpoint: 카메라의 위치와 방향, 3D 공간에서 2D 화면으로 모델을 투영하는 데 사용</li>
-<li>투영, projection: 3D 모델을 2D 화면으로 변환하는 과정</li>
-<li>거리 효과, distance effect: 3D 모델의 깊이를 표현하기 위한 기술, 원근법을 사용하여 멀리 있는 객체는 작게, 가까이 있는 객체는 크게 표현</li>
-<li>확산 효과, diffusion effect: 빛의 입사각에 따라 밝기가 달라지는 현상, 빛이 표면을 비추는 각도에 따라 달라지지만 뷰포인트에 따라선 달라지지 않음.</li>
-<li>거울 반사, mirror reflection: 빛의 입사각이 반사각과 일치하는 지점에 나타남, 빛 반사는 빛이 표면에 비치는 각도와 시점 각도에 달라지고, 뷰포인트에 따라 다른 위치에 나타남</li>
-<li>직접 조명, direct lighting: 빛이 광원으로부터 나와 물체의 표면을 직접 비추는 것</li>
-<li>간접 조명, indirect lighting: 빛이 다른 물체에 반사되어 물체의 표면을 비추는 것</li>
-<li>전역 조명 모델, global illumination model: 간접 조명을 포함한 조명 모델, 물체의 표면이 다른 물체에 반사된 빛을 고려하여 조명을 계산</li>
-<li>감색법, subtractive color: 색이 섞이면 어두운 색조가 되는 것, CMY 색상 모델, 세 가지 모두 최대 명도를 가지면 검은색</li>
-<li>광선 추적법, ray tracing: 빛 추적시 비효율을 줄이기 위해 렌더러가 뷰포인트부터 시작해서 빛을 반대로 추적하는 방법<!-- -->
-<ul>
-<li>뷰포인트부터 시작되는 가상의 선이 픽셀 격자의 가운데를 지나가도록 설정</li>
-<li>장면의 모든 모델의 기하학적 구조가 가상의 선과 교차하는지 확인</li>
-<li>뷰포인트로부터 가장 가까이 있는 교차점은 보이는 표면을 나타내며 이 표면의 색으로 픽셀을 채움</li>
-<li>해당 보이는 점으로부터 시작해서 더 많은 선을 그리고 어떤 광선이 직접 또는 간접적으로 이동해서 빛의 출발점에서 끝나는지를 찾아냄</li>
-<li>거울반사를 확인하기 위해 동일 각도로 튕기는 광선을 추적, 확산 반사를 위해 임의 각도로 여러 번 튕기는 광선을 추적</li>
-</ul>
-</li>
-<li>그림자, shadow: 뷰포인트를 기준으로 광선을 추적했을 때 광선이 닿지 않는 부분</li>
-<li>전체 장면 에일리어싱 방지, full-scene anti-aliasing: 전체 장면의 에일리어싱을 방지하기 위한 기술, 광선을 픽셀 중앙으로만 보내지 않고, 픽셀 나머지 공간으로도 보내어 각 픽셀의 최종 색을 중앙 광선과 모서리 부분의 광선을 섞어서 결정</li>
-<li>디지털합성, digital compositing: 여러 이미지를 합성하여 최종 이미지를 만드는 기술, 이미지를 프레임단위로 조합하여 프레임마다 알파를 적용해서 윤곽과 배경을 자연스럽게 합성</li>
-<li>디졸브, dissolve: 다음 장면으로 넘어갈 때 이전 장면과 다음 장면을 겹쳐서 자연스럽게 장면을 바꾸는 효과, 자막처럼 화면 위에 글자가 표시되는 것도 디졸브</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="그래픽-용어">그래픽 용어<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%9A%A9%EC%96%B4" class="hash-link" aria-label="그래픽 용어에 대한 직접 링크" title="그래픽 용어에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>모든 것은 직선이며 곡선은 없다.</p>
-</blockquote>
-<ul>
-<li>폴리곤, polygon: 다각형, 3D 모델의 기본 단위, 삼각형으로 구성</li>
-<li>시야, field of view: 눈에서 멀어질 수록 작아지는 시각적 효과, 가상 월드의 뷰포인트와 투영 화면 사이의 거리를 조정하여 시야를 조정 가능</li>
-<li>화가 알고리즘, painter algorithm: 장면에 있는 모든 삼각형에 뷰포인트로부터의 거리를 기준으로 순서를 부여하고, 위치 상 우선순위가 정해지면 뒤에서부터 앞으로 그리는 방식</li>
-<li>깊이 버퍼, depth buffer: 각 필셀의 깊이 즉 뷰포인트로부터 떨어진 거리를 저장하는 공간, 이를 통해 렌더러는 장면 상에 있는 모든 물체의 순서를 자유롭게 변경 가능<!-- -->
-<ul>
-<li>픽셀을 렌더링하기 전 렌더러가 해당 픽셀의 깊이 버퍼를 확인</li>
-<li>깊이 버퍼가 새로운 픽셀 (화면 버퍼에 있는 픽셀)의 앞이나 뒤인지를 확인</li>
-<li>새로운 픽셀이 화면 버퍼 상에서 기준 픽셀의 뒤에 있다면 렌더러는 건너뛰고 다음 픽셀 처리</li>
-<li>앞에 있다면 화면 버퍼의 픽셀을 새로운 픽셀로 교체하고 깊이 버퍼 업데이트</li>
-<li>깊이 버퍼를 통해 중복된 작업을 방지하고 투영을 효율적으로 처리, 모델의 렌더링 순서를 자유롭게 조절할 수 있으므로 그래픽 프로세서 병렬 처리 가능</li>
-</ul>
-</li>
-<li>픽셀 셰이딩, pixel shading: 각 픽셀의 색을 계산하는 과정, 조명, 재질, 텍스처 등을 고려하여 최종 색상을 결정<!-- -->
-<ul>
-<li>삼각형과 수직을 이루는 수직선을 다른 방향으로 휘어 평면 삼각형의 빛 반사를 제어하여 곡면 구현</li>
-</ul>
-</li>
-<li>그림자 맵, shadow map: 빛의 시작점을 뷰포인트로 해서 화면 버퍼 없이 깊이 버퍼만 계산한 이미지</li>
-<li>그림자 수준, shadow quality: 그림자 맵의 해상도, 해상도가 높을수록 그림자가 더 선명하게 표현</li>
-<li>주변 조명, ambient lighting: 이미지에 자연스렁누 조명을 반영하기 위해 입사각이나 광선의 도달 여부와 상관없이 모든 모델의 표면을 일정하게 밝히는 조명</li>
-<li>주변 폐색, ambient occlusion: 주변 조명으로부터 가짜 그림자를 만들어내는 기법, 틈새나 구멍, 금이 간 곳 등에 그림자 적용</li>
-<li>화면 공간 주변 폐색, screen space ambient occlusion (SSAO): 주변 폐색을 화면 공간에서 계산하는 기법, 깊이 버퍼를 사용하여 주변 조명을 시뮬레이션<!-- -->
-<ul>
-<li>뷰포인트 수직에 둔다.</li>
-<li>표면 상의 수직선에서 수직선을 회전시켜 반구를 만든다.</li>
-<li>셰이딩은 반구 안에 있는 점에서 발생하는 빛의 확산을 관찰한다.</li>
-<li>각 점은 모델상의 점이 화면에 투영될 때와 같은 방식으로 투영된다.</li>
-<li>각 점의 깊이는 해당 픽셀 위치의 깊이 버퍼와 비교해서 점이 모델 앞에 있는지 뒤에 있는지를 확인한다.</li>
-<li>표면 뒤에 있는 점의 비율은 주변 폐색의 비율을 계산하기 위한 근사치가 된다.</li>
-<li>적어도 픽셀 하나당 16개의 점을 투영하고 관찰해야하여 무거운 처리지만 각 픽셀의 계산이 독립적이라 병렬 처리 가능</li>
-</ul>
-</li>
-<li>텍스처 매핑, texture mapping: 모델 표면을 평면으로 된 이미지로 덮는 기술</li>
-<li>텍스처, texture: 텍스처 매핑에 사용되는 비트맵 이미지</li>
-<li>샘플링, sampling: 텍스처를 입힌 영역에서 텍스처를 기반으로 픽셀 색을 결정하는 것</li>
-<li>턱셀, texel: 텍스처 내의 픽셀, 텍스처 매핑에서 사용되는 픽셀 단위</li>
-<li>최근접 샘플링, nearest sampling: 텍스처에서 가장 가까운 턱셀의 색을 픽셀에 적용하는 방법, 빠르지만 품질이 낮음</li>
-<li>이중선형 필터링, bilinear filtering: 텍스처에서 네 개의 인접 턱셀을 혼합한 값에 비례해서 색을 결정하는 방법, 인접한 네 개의 턱셀로 구성되는 사각형의 두 축을 따라 샘플링하여 색을 결정</li>
-<li>밉맵, mipmap: 작은 텍스처의 집합, 텍스처를 확대해서 봐야하는 경우는 높은 해상도의 텍스처를, 텍스처 대상 영역이 작다면 낮은 해상도의 텍스처 사용, 각 단계의 밉맵은 이전 단계 밉맵의 1/4 크기.</li>
-<li>삼중선형 필터링, trilinear filtering: 각 텍스처에 대한 필터링 결과와 이것을 혼합한 것을 다시 필터링하는 방법, 밉맵상의 작은 텍스처와 큰 텍스처를 이중선형 처리하고 결과를 혼합한다.</li>
-<li>뚜렷한 반사, clear reflection: 유리나 거울처럼 사물의 표면이 깨긋할수록 주변에 있는 사물이 뚜렷하게 반사돼 비치는 효과</li>
-<li>환경 매핑, environment mapping: 주변에 있는 사물을 렌더링한 것을 텍스처로 사용해서 상자 안을 포장하고, 이 상자 안에 반짝이는 물체(개념적 물체)를 두는 것</li>
-<li>거리 조작자, distance impostor: 게임에선 각 사물이 두 번 모델링되는데 하나는 많은 삼각형을 사용해 표현한 정밀한 모델, 다른 하나는 적은 삼각형을 사용한 단순한 모델, 단순한 모델이 원본 모델의 "조작자"이며 모델이 뷰포인터로부터 특정 거리 이상으로 멀어지면 정밀한 모델을 조작자로 대체</li>
-<li>범프 매핑, bump mapping: 삼각형의 수는 유지하면서 각 픽셀의 조명 계산을 바꿔서 불균일한 표면을 만드는 것, 평면에 빛이 반사될 때 마치 울퉁불퉁한 평면에 빛이 닿은 것 같은 효과를 주는 것</li>
-<li>높이 맵, height map: 범프 매핑을 위해 텍스처와 같은 크기의 흑백 비트맵을 만들어서 모델 표면에 적용하는 것, 각 픽셀의 밝기가 표면의 높이 정보를 나타낸다.</li>
-<li>조각화, tessellation: 모델의 표면을 더 많은 삼각형으로 나눠 세분화한 삼각형들의 모서리 부분을 높이 맵을 이용해서 하나씩 안쪽이나 바깥쪽으로 조작, 범프 매핑을 이용해 수직선의 방향을 바꾸는 눈속임이 아니라 모델을 실제처럼 정밀하게 만드는 것</li>
-<li>슈퍼 샘플링 안티에일리어싱, super sampling anti-aliasing (SSAA): 다수의 광선을 픽셀 단위로 보내지 않고 원하는 최종 이미지보다 훨씬 큰 중간 단계의 이미지를 만들고 최종 이미지에 있는 각 픽셀의 색은 큰 이미지의 픽셀 샘플들을 혼합한 값으로 결정하는 방법</li>
-<li>서브 픽셀, sub-pixel: 높은 해상도의 렌더링 이미지를 이용해서 최종 렌더링 이미지 픽셀 색을 정하기 위해 사용되는 작은 단위, 서브 픽셀 단위로 색을 결정하여 더 부드러운 경계와 세밀한 디테일을 표현</li>
-<li>멀티 샘플링 안티에일리어싱, multi-sampling anti-aliasing (MSAA): 삼각형 내부에 있는 서브 픽셀은 제외하고 삼각형의 외곽선(울퉁불퉁한 부분) 부분에 있는 서브 픽셀만 처리하여 성능을 향상시키는 방법<!-- -->
-<ul>
-<li>먼저 서브 픽셀이 포함되는 삼각형을 찾은 후 각 서브 픽셀이 동일 삼각형 내에 있다면 모두 같은 색을 적용</li>
-<li>네 개의 서브 픽셀이 모두 같은 삼각형 내에 있으면 멀티 샘플링은 하나의 서브 픽셀만 칠하기 때문에 계산량이 줄어 성능 향상</li>
-</ul>
-</li>
-<li>후처리 에일리어싱 방지, post-processing anti-aliasing: 원하는 해상도로 이미지를 먼저 렌더링한 후 각진 윤곽을 부드럽게 다듬어주는 방법, 잘못된 색으로 칠해진 픽셀을 찾아 정정</li>
-<li>FXAA, fast approximate anti-aliasing: 후처리 에일리어싱 방지의 한 종류, 겹쳐있는 삼각형의 경계에 존재하는 픽셀을 찾아서 주변의 픽셀과 색을 혼합하여 각진 경계를 부드럽게 만들 수 있음<!-- -->
-<ul>
-<li>이미지 상의 각 픽셀을 하나한 확인</li>
-<li>관찰 대상 픽셀인 현재 픽셀의 밝기를 계산하고 주변에 있는 네 개의 픽셀을 확인해서 가장 밝은 픽셀과 어두운 픽셀을 선택</li>
-<li>두 픽셀의 차이를 기준 값과 비교하여 주변 픽셀과 밝기 차이가 큰 경우(고대비인 경우) 에일리어싱 방지 처리 적용</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="압축">압축<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%EC%95%95%EC%B6%95" class="hash-link" aria-label="압축에 대한 직접 링크" title="압축에 대한 직접 링크">​</a></h2>
-<ul>
-<li>연속 길이 부호화, run-length encoding (RLE): 연속된 동일한 값의 길이를 기록하여 압축하는 방법, 예를 들어 "AAAABBBCCDAA"는 "4A3B2C1D2A"로 압축</li>
-<li>독립 픽셀, raw pixel: 동일 색이 두 번 이상 연속되지 않는 픽셀</li>
-<li>사전식 압축, dictionary compression: 자주 사용되는 패턴이나 문자열을 사전에 저장하고, 해당 패턴이 나타날 때 사전의 인덱스를 사용하여 압축하는 방법</li>
-<li>허프만 부호화, Huffman coding: 문서상 단어들을 사용 빈도에 따라 순서를 매겨 압축하는 방법, 자주 사용되는 단어는 짧은 코드로, 덜 사용되는 단어는 긴 코드로 표현</li>
-<li>접두 코드, prefix code: 허프만 부호화에서 사용되는 코드의 형태, 각 코드가 다른 코드의 접두사가 되지 않도록 설계되어 있어, 압축된 데이터를 해석할 때 혼동을 방지</li>
-<li>예측 인코딩, predictive encoding: 원 데이터에서 중복데이터가 없을 경우, 이전 값과의 차이 등 예측 가능한 값을 기록하여 압축하는 방법, 예를 들어 "100, 102, 101, 105"는 "100, +2, -1, +4"로 압축</li>
-<li>deflate 압축: 슬라이딩 윈도우를 사용해서 중복된 단어가 등장한 이전 위치를 수치로 기록하여 단어와 대체, 허프만 부호화를 추가해 가장 자주 등장하는 숫자 쌍에 짧은 코드 할당</li>
-<li>양자화, quantization: 데이터의 정확성을 떨어뜨려서 저장하는 방식</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="tga-기준-예시">TGA 기준 예시<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#tga-%EA%B8%B0%EC%A4%80-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="TGA 기준 예시에 대한 직접 링크" title="TGA 기준 예시에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th></tr></thead><tbody><tr><td>흰색</td><td>흰색</td><td>노란색</td><td>노란색</td><td>노란색</td><td>흰색</td><td>초록색</td><td>파란색</td><td>파란색</td><td>흰색</td></tr></tbody></table>
-<blockquote>
-<p>크기가 0000000 이면 1이고, 0000001이면 2로 실제 크기보다 하나 작게 표현</p>
-</blockquote>
-<table><thead><tr><th>연속/독립</th><th>크기</th><th>Red</th><th>Green</th><th>Blue</th><th>설명</th></tr></thead><tbody><tr><td>1</td><td>0000001</td><td>11111111</td><td>11111111</td><td>11111111</td><td>두 개의 연속 흰색 픽셀</td></tr><tr><td>1</td><td>0000010</td><td>11001100</td><td>11001100</td><td>00000000</td><td>세 개의 연속 노란색 픽셀</td></tr><tr><td>0</td><td>0000001</td><td>11111111</td><td>11111111</td><td>11111111</td><td>픽셀 두 개의 독립 패킷, 첫 번째는 흰색</td></tr><tr><td></td><td></td><td>00000000</td><td>10000000</td><td>00000000</td><td>독립 패킷의 두 번째 픽셀, 초록색</td></tr><tr><td>1</td><td>0000001</td><td>00000000</td><td>00000000</td><td>11111111</td><td>두 개의 연속 파란색 픽셀</td></tr><tr><td>0</td><td>0000000</td><td>11111111</td><td>11111111</td><td>11111111</td><td>하나의 독립 흰색 픽셀</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="사전식-압축-예시">사전식 압축 예시<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%EC%82%AC%EC%A0%84%EC%8B%9D-%EC%95%95%EC%B6%95-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="사전식 압축 예시에 대한 직접 링크" title="사전식 압축 예시에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>위치</th><th>바이너리 위치</th><th>단어</th></tr></thead><tbody><tr><td>1</td><td>000000</td><td>a</td></tr><tr><td>2</td><td>000001</td><td>an</td></tr><tr><td>3</td><td>000010</td><td>An</td></tr><tr><td>4</td><td>000011</td><td>animated</td></tr><tr><td>...</td><td>...</td><td>...</td></tr><tr><td>24</td><td>10111</td><td>When</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="허프만-부호화-예시">허프만 부호화 예시<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%ED%97%88%ED%94%84%EB%A7%8C-%EB%B6%80%ED%98%B8%ED%99%94-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="허프만 부호화 예시에 대한 직접 링크" title="허프만 부호화 예시에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>단어</th><th>빈도</th><th>바이너리 코드</th></tr></thead><tbody><tr><td>the</td><td>25%</td><td>01</td></tr><tr><td>a</td><td>20%</td><td>000</td></tr><tr><td>good</td><td>11%</td><td>110</td></tr><tr><td>ate</td><td>7%</td><td>0011</td></tr><tr><td>...</td><td>...</td><td>...</td></tr><tr><td>forevermore</td><td>1%</td><td>10111</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="jpeg">JPEG<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#jpeg" class="hash-link" aria-label="JPEG에 대한 직접 링크" title="JPEG에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Joint Photographic Experts Group</p>
-</blockquote>
-<ul>
-<li>픽셀 색이 이미지 전체에 다양하게 적용되지만 개별 픽셀은 주변에 있는 픽셀과 비슷하다는 것.<!-- -->
-<ul>
-<li>구름 낀 날씨에 초록색 잎이 무성한 나무를 찍으면 초록 색 잎 픽셀 주변에는 초록색 픽셀들이 있고, 파란색 하늘 픽셀 주변에는 파란색 픽셀들이, 회색 구름 주변에는 회색 픽셀들이 모임</li>
-</ul>
-</li>
-<li>주변 픽셀 중에 다른 것보다 더 밝은 픽셀이 존재한다는 성질<!-- -->
-<ul>
-<li>무성한 나뭇잎 중 어떤 것은 빛을 받아서 더 밝은 픽셀로 나타나지만 각 픽셀이 가진 기본적인 색은 비슷함</li>
-<li>사람의 시각은 색의 차이보다 밝기 차이에 더 민감</li>
-</ul>
-</li>
-<li>JPEG는 이미지를 8x8 픽셀 블록으로 나눠 압축, 밝기와 색을 별도로 압축하기 위해 각 픽셀의 RGB 값을 Y, Cb, Cr로 변환<!-- -->
-<ul>
-<li>Y, luminance: 휘도, 픽셀이 가진 빛의 정도(밝기)</li>
-<li>Cb, blue difference: 파란색 차이</li>
-<li>Cr, red difference: 빨간색 차이</li>
-</ul>
-</li>
-<li>픽셀 간에 발생하는 대부분의 차이가 Y 요소에 집중</li>
-<li>Cb와 Cr 블록의 낮은 분산 정도는 압축에 용이</li>
-<li>색상 차이보다 밝기 차이에 더 민감하기 때문에 손실을 무시한 채 Cb, Cr 블록을 더 크게 압축 가능</li>
-<li>휘도 값의 중간 값이 0이 되도록 조정</li>
-<li>DCT 처리</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="rgb-vs-ycbcr">RGB vs YCbCr<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#rgb-vs-ycbcr" class="hash-link" aria-label="RGB vs YCbCr에 대한 직접 링크" title="RGB vs YCbCr에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>R</th><th>G</th><th>B</th><th>색상</th><th>Y</th><th>Cb</th><th>Cr</th></tr></thead><tbody><tr><td>0</td><td>255</td><td>0</td><td>초록색</td><td>145</td><td>54</td><td>34</td></tr><tr><td>255</td><td>255</td><td>255</td><td>흰색</td><td>235</td><td>128</td><td>128</td></tr><tr><td>0</td><td>255</td><td>255</td><td>아쿠아</td><td>170</td><td>166</td><td>16</td></tr><tr><td>128</td><td>0</td><td>0</td><td>마룬</td><td>49</td><td>109</td><td>184</td></tr><tr><td>255</td><td>0</td><td>0</td><td>빨간색</td><td>76</td><td>85</td><td>255</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="비연속-코사인-변환">비연속 코사인 변환<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%EB%B9%84%EC%97%B0%EC%86%8D-%EC%BD%94%EC%82%AC%EC%9D%B8-%EB%B3%80%ED%99%98" class="hash-link" aria-label="비연속 코사인 변환에 대한 직접 링크" title="비연속 코사인 변환에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>discrete cosine transform (DCT)</p>
-</blockquote>
-<ul>
-<li>절대 휘도와 색 데이터를 상대 측정 값으로 변환하는 것</li>
-<li>각 픽셀이 가진 값 자체가 아닌 픽셀 간의 값 차이를 이용하는 것</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="압축-과정">압축 과정<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#%EC%95%95%EC%B6%95-%EA%B3%BC%EC%A0%95" class="hash-link" aria-label="압축 과정에 대한 직접 링크" title="압축 과정에 대한 직접 링크">​</a></h3>
-<ul>
-<li>DCT 처리된 8x8 나누기용 블록 (왼쪽 위는 낮은 값, 오른쪽 아래는 높은 값)으로 나눠 양자화</li>
-<li>양자화 이후 0이 아닌 값들은 행렬 왼쪽 상단에 모이므로, 지그재그 패턴으로 목록화</li>
-<li>앞에 있는 연속된 0의 수와 계수(0이 아닌 수)를 한 쌍으로 만들어 처리</li>
-</ul>
-<div class="language-js codeBlockContainer_unZi theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_yrzb"><pre tabindex="0" class="prism-code language-js codeBlock_gxWo thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_ZXIj"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">/* 8 10 -7 -7 6 -4 0 -2 1 -2 -1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0... */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">8</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">10</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">7</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">7</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">6</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">4</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// 나머지 모두 0</span><br></span></code></pre></div></div>
-<ul>
-<li>자주 등장하는 쌍은 짧은 허프만 코드 (001, 010 등)로 대체</li>
-<li>나머지 0인 모든 계수들은 1010이라는 특별한 코드 사용</li>
-<li>나누는 수를 크게하여 quality 조정</li>
-<li>시각적 품질을 떨어뜨리지 않고 만들 수 있는 압축률은 일반적으로 10:1 정도</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="mpeg">MPEG<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#mpeg" class="hash-link" aria-label="MPEG에 대한 직접 링크" title="MPEG에 대한 직접 링크">​</a></h2>
-<ul>
-<li>시간의 중복성, temporal redundancy: 프레임과 프레임 사이에 발생하는 데이터의 연속성</li>
-<li>시간적 압축, temporal compression: 프레임 간의 중복 데이터를 제거하여 압축하는 방법, 스트리밍 영상이나 영상 저장 등에 사용하는 핵심 기술</li>
-<li>픽처 그룹, group of pictures (GOP): MPEG에서 사용하는 프레임 그룹<!-- -->
-<ul>
-<li>인트라코드 프레임, Intra-coded frame: 각 GOP 중 프레임 하나를 선택해서 기본 JPEG 압축 이미지로 사용, 다른 나머지 프레임은 모두 시간적 압축 사용</li>
-<li>예측 프레임, Predicted frame: 현재 프레임과 이전 프레임의 픽셀 값 차리를 저장</li>
-<li>양방향 프레임, Bi-directional predicted frame: 이전 프레임과 이후 프레임의 픽셀 값 차이를 저장</li>
-</ul>
-</li>
-<li>매크로 블록, macro block: MPEG에서 사용하는 16x16 픽셀 블록</li>
-<li>오프셋, offset: P-Frame과 I-Frame의 화면 좌표상 위치 차이</li>
-<li>블록화 제거 필터, deblocking filter: 프레임이 매크로 블록으로 나눠진 방식에 따라 블록 경계에서 부조화가 발생하는데, 블록 경계의 픽셀을 평균화하여 부드럽게 만드는 필터</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="mpeg4">MPEG4<a href="https://gracefullight.dev/2025/06/24/computer-generated-imagery/#mpeg4" class="hash-link" aria-label="MPEG4에 대한 직접 링크" title="MPEG4에 대한 직접 링크">​</a></h3>
-<ul>
-<li>32개 프레임을 사용하여 일치 처리</li>
-<li>16x16 매크로 블록 자체를 8x8 블록으로 나눠서 압축</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="graphics" term="graphics"/>
     </entry>
 </feed>
