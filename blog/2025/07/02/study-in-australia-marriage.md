@@ -52,6 +52,13 @@ tags:
 - 일정 변경 수수료는 A$85
 - 그 이후로는 전체 비용 새로 결제 필요
 
+### 결혼 증인
+
+> if a party signs the Notice in Australia: an authorized celebrant, a justice of the peace, a barrister or solicitor, a medical practitioner, or a member of the Australian Federal Police or the police force of a State or Territory.
+
+- NOIM 에는 공인이 서명을 해줘야하는데 가까운 경찰서에 가서 증인을 해달라고 서명을 부탁하면 된다.
+- [The Rocks Police Station](https://maps.app.goo.gl/uxmee7ACkK6VS1Fz7)에서 흔쾌히 해주었다.
+
 ## 증명서 발급
 
 ### 주시드니 대한민국 총영사관
