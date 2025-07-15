@@ -36,3 +36,15 @@ In contrast, those who support planning ahead believe that setting goals and pre
 In my view, the most effective approach integrates both attitudes. While it is essential to enjoy and engage with daily life, planning for the future provides direction and security. For example, saving money for retirement does not prevent someone from enjoying today's experiences, but rather ensures peace of mind in the long run.
 
 In conclusion, while it is beneficial to embrace the present, neglecting future planning can lead to adverse consequences. A balanced mindset that values both present enjoyment and future preparedness is key to a fulfilling life.
+
+## Vocabulary & Expressions
+
+| Term / Expression | Definition | Simpler Paraphrase |
+| --- | --- | --- |
+| **Work-life balance** | Maintaining a healthy separation between job and personal time | Equal time for work and rest  |
+| **Sustained comfort** | Long-lasting ease or convenience | Ongoing comfort |
+| **Mindfulness** | Awareness of the present moment without judgment | Being focused on now |
+| **Foresight** | The ability to predict or prepare for future needs | Planning ahead |
+| **Setbacks** | Difficulties or delays that stop progress | Problems that slow you down |
+| **Peace of mind** | A feeling of calm and security | Feeling relaxed and safe |
+| **Balanced mindset** | A way of thinking that includes multiple perspectives | Thinking in a fair, smart way |

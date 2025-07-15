@@ -13,7 +13,13 @@ tags:
 
 ![task1](./assets/ielts-transcription-002.png)
 
-The pie chart illustrates the distribution of energy sources in Country X in 2024. Overall, fossil fuels dominate the mix, though a notable share comes from cleaner alternatives. Coal represents the largest portion at 34%, followed by natural gas at 25%. Together, these two sources account for nearly 60% of the total. Nuclear energy contributes 15%, while hydro and other renewables make up 10% and 16% respectively. The data indicates a reliance on coal, yet the combined renewable segment (26%) slightly exceeds nuclear output, reflecting early steps toward sustainability.
+The pie chart illustrates the proportions of different energy sources used in Country X in 2024. It is evident that fossil fuels still dominate the energy mix, although renewable and cleaner alternatives make up a substantial share.
+
+Coal accounts for the largest portion of the energy supply at 34%, followed by natural gas at 25%. Combined, these two fossil fuels represent nearly 60% of total energy consumption. Nuclear power contributes 15%, offering a low-emission but non-renewable option. Hydropower and other renewable sources comprise the remainder, with 10% and 16% respectively.
+
+The data highlights a gradual shift towards sustainable energy. Although coal remains the primary source, renewables slightly exceed nuclear energy in contribution. The presence of hydropower also reflects investment in low-impact infrastructure. However, the high reliance on coal and natural gas suggests the country may face challenges meeting long-term emission targets without significant policy changes.
+
+Overall, while Country X has diversified its energy portfolio, fossil fuels continue to play a central role, indicating both progress and persistent dependence on conventional sources.
 
 ## Task2
 
