@@ -139,53 +139,64 @@ export default function DrawingGeneratorPage() {
     };
   }, [previewSrc, selectedColor, modifyWhitePixels, reduceToFourColors]);
 
-  const handleImageChange = useCallback(
-    async (e: ChangeEvent<HTMLInputElement>) => {
-      const file = e.target.files?.[0];
-      if (!file || file.type !== "image/png") {
-        alert("PNG 파일만 업로드 가능합니다.");
-        return;
-      }
+  const handleImageChange = async (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || file.type !== "image/png") {
+      alert("PNG 파일만 업로드 가능합니다.");
+      return;
+    }
 
-      const isValidSize = await validateImageSize({
-        file,
-        maxHeight: 96,
-        maxWidth: 256,
-      });
+    const isValidSize = await validateImageSize({
+      file,
+      maxHeight: 96,
+      maxWidth: 256,
+    });
 
-      if (!isValidSize) {
-        alert("이미지 크기가 256x96 이하여야 합니다.");
-        setPreviewSrc(null);
-        return;
-      }
+    if (!isValidSize) {
+      alert("이미지 크기가 256x96 이하여야 합니다.");
+      setPreviewSrc(null);
+      return;
+    }
 
-      const arrayBuffer = await file.arrayBuffer();
-      const cleanedBuffer = removeTEXtChunks(arrayBuffer);
-      const bufferWithMetadata = addMetadataChunks(
-        cleanedBuffer,
-        authId,
-        author,
-      );
+    const arrayBuffer = await file.arrayBuffer();
 
-      const blob = new Blob([bufferWithMetadata], { type: "image/png" });
-      setPreviewSrc(URL.createObjectURL(blob));
-    },
-    [authId, author],
-  );
+    const blob = new Blob([arrayBuffer], { type: "image/png" });
+    setPreviewSrc(URL.createObjectURL(blob));
+  };
 
-  const saveCanvasAsWebP = useCallback(() => {
+  const saveCanvasAsPNG = () => {
     const canvas = canvasRef.current;
     if (canvas) {
       const formattedDate = DateTime.now().toFormat("yyyyMMdd_HHmmss");
       const name = `chat_${formattedDate}_${customName || "그림대화"}.png`;
-      const href = canvas.toDataURL("image/png");
 
-      downloadImage({
-        href,
-        name,
-      });
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const reader = new FileReader();
+          reader.onload = () => {
+            const arrayBuffer = reader.result as ArrayBuffer;
+            const cleanedBuffer = removeTEXtChunks(arrayBuffer);
+            const bufferWithMetadata = addMetadataChunks(
+              cleanedBuffer,
+              authId,
+              author,
+            );
+            const newBlob = new Blob([bufferWithMetadata], {
+              type: "image/png",
+            });
+            const href = URL.createObjectURL(newBlob);
+
+            downloadImage({
+              href,
+              name,
+            });
+            URL.revokeObjectURL(href);
+          };
+          reader.readAsArrayBuffer(blob);
+        }
+      }, "image/png");
     }
-  }, [customName]);
+  };
 
   return (
     <Layout>
@@ -367,7 +378,7 @@ export default function DrawingGeneratorPage() {
             </div>
             {previewSrc && (
               <button
-                onClick={saveCanvasAsWebP}
+                onClick={saveCanvasAsPNG}
                 style={{
                   backgroundColor: "#f28913",
                   borderRadius: "0.25rem",
