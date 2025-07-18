@@ -35,3 +35,15 @@ Conversely, critics argue that digital communication has replaced face-to-face i
 In my opinion, the key lies in how the internet is used. When leveraged wisely, it enhances human connection by bridging geographical gaps and providing new forms of interaction. However, overreliance on online communication at the expense of physical presence can lead to emotional distance.
 
 In conclusion, while the internet can potentially isolate individuals, its overall effect has been to bring people closer-provided it is used to complement, rather than replace, real-life relationships.
+
+## Vocabulary & Expressions
+
+| Term / Expression | Definition | Simpler Paraphrase |
+| --- | --- | --- |
+| **Inverse relationship** | When one value increases as the other decreases | One goes up, the other goes down |
+| **Digital users** | People who frequently use digital devices or the internet | People who use screens or the web |
+| **Hailed as** | Praised or described as | Called or celebrated as |
+| **Superficial relationships** | Connections lacking depth or sincerity | Shallow friendships |
+| **Leverage** | To use something to maximum advantage | Make good use of something |
+| **At the expense of** | Causing harm to something in order to benefit another | While hurting something else |
+| **Emotional distance** | Lack of emotional closeness between people | Feeling far from someone emotionally |
