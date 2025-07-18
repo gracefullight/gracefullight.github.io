@@ -23,6 +23,15 @@ In summary, screen time is strongly age-dependent, with usage decreasing steadil
 
 ## Task2
 
-> 1
+> Some people believe that the internet has brought people closer together, while others think that it has made people more isolated.
+> Discuss both views and give your own opinion.
 
-1
+The internet is often hailed as a tool that connects people across the globe. However, while some argue that it fosters closeness, others believe it has led to greater social isolation. Both perspectives hold merit, but I personally believe the internet has overall brought people closer together.
+
+Proponents of the internet's social benefits point to the ease of communication. Video calls, messaging apps, and social media allow people to stay connected with family and friends regardless of distance. In addition, online communities can offer support for individuals with shared interests or rare conditions, especially those who might struggle with in-person interactions.
+
+Conversely, critics argue that digital communication has replaced face-to-face interaction. They claim that excessive use of social media may result in superficial relationships, reduced empathy, and a decline in real-world social skills. Furthermore, people who spend long hours online may neglect relationships in their immediate environment.
+
+In my opinion, the key lies in how the internet is used. When leveraged wisely, it enhances human connection by bridging geographical gaps and providing new forms of interaction. However, overreliance on online communication at the expense of physical presence can lead to emotional distance.
+
+In conclusion, while the internet can potentially isolate individuals, its overall effect has been to bring people closer-provided it is used to complement, rather than replace, real-life relationships.
