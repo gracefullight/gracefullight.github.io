@@ -2,11 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-21T13:53:23.234Z</updated>
+    <updated>2025-07-27T11:17:41.516Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AI의 역사]]></title>
+        <id>https://gracefullight.dev/en/2025/07/27/the-history-of-ai/</id>
+        <link href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/"/>
+        <updated>2025-07-27T11:17:41.516Z</updated>
+        <summary type="html"><![CDATA[The history of AI is a fascinating journey that spans decades, from early theoretical concepts to the advanced machine learning models we see today.]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="the-inception-of-artificial-intelligence-19431956">The inception of artificial intelligence (1943–1956)<a href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/#the-inception-of-artificial-intelligence-19431956" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Warren McCulloch와 Walter Pitts (1943): 인공 신경망(artificial neuron model)을 제안.</li>
+<li>Alan Turing (1950): "Computing Machinery and Intelligence" 논문에서 튜링 테스트(Turing Test)라는 개념을 제안.</li>
+<li>John McCarthy, Marvin Minsky, Nathaniel Rochester, Claude Shannon이 1956년 Dartmouth workshop을 개최, 여기서 "artificial intelligence"라는 용어가 공식적으로 등장.</li>
+<li>주요 성과<!-- -->
+<ul>
+<li>Logic Theorist (Newell &amp; Simon): 최초의 ‘논리 추론’ 프로그램.</li>
+<li>General Problem Solver (GPS): 범용 문제 해결 시스템.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="early-enthusiasm-great-expectations-19521969">Early enthusiasm, great expectations (1952–1969)<a href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/#early-enthusiasm-great-expectations-19521969" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>AI 연구자들은 symbolic reasoning과 search를 이용해 문제를 해결하려 시도.</li>
+<li>Perceptron(Rosenblatt, 1957): 초기 신경망 모델로, 패턴 인식에 사용.</li>
+<li>대표적인 시스템<!-- -->
+<ul>
+<li>Samuel의 체커 프로그램: 컴퓨터가 스스로 학습해서 체커를 둘 수 있도록 설계.</li>
+<li>ELIZA: 자연어 처리를 흉내 낸 최초의 대화형 프로그램.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="a-dose-of-reality-19661973">A dose of reality (1966–1973)<a href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/#a-dose-of-reality-19661973" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>**자동 번역(Machine Translation)**의 한계가 드러남: 1966년 ALPAC 보고서가 정부 자금 축소로 이어짐.</li>
+<li>Perceptron의 한계(Minsky &amp; Papert, 1969): XOR 문제 등, 단층 신경망으로는 복잡한 문제를 해결할 수 없다는 것을 증명.</li>
+<li>연구의 중심이 "toy domains"(작은 문제 영역)로 한정.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="expert-systems-19691986">Expert systems (1969–1986)<a href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/#expert-systems-19691986" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Weak methods(약한 방법): 범용성은 있으나 복잡한 문제엔 비효율적.</li>
+<li>Domain-specific knowledge(도메인 특화 지식): 전문가의 경험을 수천 개의 규칙으로 시스템에 구현.</li>
+<li>DENDRAL: 질량 분석 데이터를 바탕으로 분자 구조를 추론하는 시스템. Knowledge-intensive system의 대표 사례.</li>
+<li>MYCIN: 450여 개의 규칙로 혈액 감염을 진단. certainty factors(불확실성 계산) 개념 도입.</li>
+<li>R1(XCON): Digital Equipment Corporation의 컴퓨터 시스템 주문을 자동으로 구성.</li>
+<li>이 시기 Expert system의 상업적 성공: 대기업들이 적극 도입.</li>
+<li>Frame, Semantic Networks, Description Logics 등 다양한 representation and reasoning tools의 등장.</li>
+<li>Prolog와 PLANNER와 같은 논리 프로그래밍 언어의 활용.</li>
+<li>"Fifth Generation" project(일본, 1981): 병렬형 인공지능 컴퓨터 연구 대형 프로젝트(성공적 성과는 제한적).</li>
+<li>미국, 유럽도 대응 프로젝트 진행.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="the-return-of-neural-networks-and-machine-learning-1986present">The return of neural networks and machine learning (1986–present)<a href="https://gracefullight.dev/en/2025/07/27/the-history-of-ai/#the-return-of-neural-networks-and-machine-learning-1986present" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Back-propagation 알고리즘이 재발견되며 심층 신경망(deep neural networks)의 부흥이 시작됨.</li>
+<li>Big Data와 컴퓨팅 파워의 증가로 deep learning이 현실의 다양한 문제를 해결하는 데 쓰이기 시작.</li>
+<li>2010년대 Yann LeCun, Geoffrey Hinton, Yoshua Bengio 등이 딥러닝 혁신을 주도.</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="ai" term="ai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IELTS Transcription @010]]></title>
         <id>https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-010/</id>
@@ -287,37 +347,5 @@ Discuss both views and give your own opinion.</p>
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="gemini" term="gemini"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IELTS Transcription @002]]></title>
-        <id>https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/</id>
-        <link href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/"/>
-        <updated>2025-07-05T07:52:09.901Z</updated>
-        <summary type="html"><![CDATA[IELTS Writing Transcription @002]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#task1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>The pie chart above shows the percentage distribution of energy sources in Country X in 2024.</p>
-</blockquote>
-<p><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/en/assets/images/ielts-transcription-002-6370d9fa384525e7c5b45f2abe90ad4e.png" width="1979" height="1180" class="img_yneg"></p>
-<p>The pie chart illustrates the proportions of different energy sources used in Country X in 2024. It is evident that fossil fuels still dominate the energy mix, although renewable and cleaner alternatives make up a substantial share.</p>
-<p>Coal accounts for the largest portion of the energy supply at 34%, followed by natural gas at 25%. Combined, these two fossil fuels represent nearly 60% of total energy consumption. Nuclear power contributes 15%, offering a low-emission but non-renewable option. Hydropower and other renewable sources comprise the remainder, with 10% and 16% respectively.</p>
-<p>The data highlights a gradual shift towards sustainable energy. Although coal remains the primary source, renewables slightly exceed nuclear energy in contribution. The presence of hydropower also reflects investment in low-impact infrastructure. However, the high reliance on coal and natural gas suggests the country may face challenges meeting long-term emission targets without significant policy changes.</p>
-<p>Overall, while Country X has diversified its energy portfolio, fossil fuels continue to play a central role, indicating both progress and persistent dependence on conventional sources.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#task2" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>Many people believe that economic growth should be the top priority for governments, while others argue that protecting the environment is more important. Discuss both views and give your own opinion.</p>
-</blockquote>
-<p>Economic development and environmental conservation are often perceived as competing priorities for governments. While some advocate for policies that drive economic growth, others argue that environmental protection should come first. I believe a balanced approach is essential.</p>
-<p>Supporters of economic growth argue that it is the foundation for national prosperity. Expanding industries create employment opportunities, raise living standards, and generate tax revenue that can be reinvested into social services. For developing countries especially, rapid economic expansion is crucial to reducing poverty and improving infrastructure. Proponents also contend that strong economies are better equipped to invest in environmental technologies over time.</p>
-<p>In contrast, environmentalists emphasize the long-term consequences of unchecked growth. Industrial expansion often leads to deforestation, air and water pollution, and increased greenhouse gas emissions. These effects can undermine public health, deplete natural resources, and accelerate climate change. Critics warn that prioritizing economic gains without sustainability measures could lead to irreversible damage.</p>
-<p>I believe governments should not view these goals as mutually exclusive. Instead, policies should aim for sustainable development-economic advancement that does not compromise the environment. Investments in green technology, eco-friendly infrastructure, and regulatory frameworks can stimulate the economy while safeguarding natural ecosystems. Countries like Sweden and Costa Rica exemplify how environmental and economic goals can coexist.</p>
-<p>In conclusion, while economic growth is vital for national progress, it should not come at the expense of the environment. A sustainable, dual-focus strategy will yield more resilient and equitable outcomes in the long run.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/ielts/troubleshooting/ielts-transcription-002/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>Term / Expression</th><th>Definition</th><th>Simpler Paraphrase</th></tr></thead><tbody><tr><td><strong>Diversified portfolio</strong></td><td>A mix of different components (here, energy sources)</td><td>A mix of different types</td></tr><tr><td><strong>Sustainable energy</strong></td><td>Energy that doesn’t run out or harm the environment</td><td>Eco-friendly and renewable energy</td></tr><tr><td><strong>Unchecked growth</strong></td><td>Economic growth with no restrictions</td><td>Growth that isn’t controlled</td></tr><tr><td><strong>Sustainable development</strong></td><td>Growth that meets current needs without harming the future</td><td>Growth that doesn’t hurt the environment</td></tr><tr><td><strong>Regulatory frameworks</strong></td><td>Laws and policies that control activities</td><td>Rules made by the government</td></tr><tr><td><strong>Mutually exclusive</strong></td><td>Cannot happen at the same time</td><td>Can’t go together</td></tr><tr><td><strong>Safeguarding</strong></td><td>Protecting from harm</td><td>Keeping safe</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="ielts" term="ielts"/>
     </entry>
 </feed>
