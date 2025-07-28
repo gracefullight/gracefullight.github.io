@@ -7,6 +7,8 @@ tags:
   - ai
 ---
 
+> A **rational agent** is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome
+
 ## The inception of artificial intelligence (1943–1956)
 
 - Warren McCulloch와 Walter Pitts (1943): 인공 신경망(artificial neuron model)을 제안.
