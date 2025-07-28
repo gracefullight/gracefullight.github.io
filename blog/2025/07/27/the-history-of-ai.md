@@ -26,7 +26,7 @@ tags:
 
 ## A dose of reality (1966–1973)
 
-- **자동 번역(Machine Translation)**의 한계가 드러남: 1966년 ALPAC 보고서가 정부 자금 축소로 이어짐.
+- 자동 번역(Machine Translation)의 한계가 드러남: 1966년 ALPAC 보고서가 정부 자금 축소로 이어짐.
 - Perceptron의 한계(Minsky & Papert, 1969): XOR 문제 등, 단층 신경망으로는 복잡한 문제를 해결할 수 없다는 것을 증명.
 - 연구의 중심이 "toy domains"(작은 문제 영역)로 한정.
 
