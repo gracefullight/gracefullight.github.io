@@ -13,6 +13,7 @@ tags:
 - [1. 호주 학생비자 주의사항](/2025/06/22/study-in-australia-visa-conditions)
 - [2. 호주 학생 보험 및 한국 보험, 연금 연기](/2025/06/28/study-in-australia-insurance-pension-health)
 - [3. 호주 결혼 준비](/2025/07/02/study-in-australia-marriage)
+- [4. 호주 집 구하기](/2025/07/29/study-in-australia-housing)
 
 ## 주의사항
 
