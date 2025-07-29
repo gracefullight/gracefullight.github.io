@@ -2,11 +2,193 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-29T05:30:05.989Z</updated>
+    <updated>2025-07-29T09:05:17.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of software development @001]]></title>
+        <id>https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/</id>
+        <link href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/"/>
+        <updated>2025-07-29T09:05:17.618Z</updated>
+        <summary type="html"><![CDATA[Fundamentals of software development 001]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="software-engineering">Software Engineering<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#software-engineering" class="hash-link" aria-label="Software Engineering에 대한 직접 링크" title="Software Engineering에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sdlc">SDLC<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sdlc" class="hash-link" aria-label="SDLC에 대한 직접 링크" title="SDLC에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sw-development-methodologies">SW Development Methodologies<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sw-development-methodologies" class="hash-link" aria-label="SW Development Methodologies에 대한 직접 링크" title="SW Development Methodologies에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="waterfall">Waterfall<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#waterfall" class="hash-link" aria-label="Waterfall에 대한 직접 링크" title="Waterfall에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Pros<!-- -->
+<ul>
+<li>Simple &amp; easy: each phase has specific deliverables</li>
+<li>Clear &amp; set milestones</li>
+<li>Fixed requirements</li>
+<li>Works well for small projects with specific set of requirements</li>
+<li>Determine the schedule early</li>
+<li>Clear structure</li>
+</ul>
+</li>
+<li>Cons<!-- -->
+<ul>
+<li>Working sw produced only at the end</li>
+<li>High uncertainty of sw quality and functionality</li>
+<li>Delayed testing, delays sw bugs discovery</li>
+<li>After completion, no formal way to change the requirements</li>
+<li>Fix working model, difficult to implement for complex projects</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="agile">Agile<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#agile" class="hash-link" aria-label="Agile에 대한 직접 링크" title="Agile에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Iterative cyclical progression of the SDLC<!-- -->
+<ul>
+<li>Repetitive structure based on iterations (sprints)</li>
+<li>2 ~ 4 weeks, SDLC repeats</li>
+<li>Each release has 3 or more iterations</li>
+<li>Working prototype is produced at the end of each iteration</li>
+<li>Prototype is for QA and used as input for next iteration</li>
+<li>Multiple releases</li>
+</ul>
+</li>
+<li>Pros<!-- -->
+<ul>
+<li>Innovation through team collaboration</li>
+<li>Time to market</li>
+<li>Continuous testing</li>
+<li>Risk reduction, finding sw bugs early</li>
+<li>Customer feedback loop</li>
+<li>Flexibility to change requirements</li>
+<li>Automates most of the SDLC === DevOps approach</li>
+</ul>
+</li>
+<li>Cons<!-- -->
+<ul>
+<li>Lack of long-term planning</li>
+<li>Cost estimation is difficult</li>
+<li>Limited documentation</li>
+<li>No finite end</li>
+<li>Difficult to see the end result due due to cyclic nature of agile</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sw-development-paradigms">SW Development Paradigms<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sw-development-paradigms" class="hash-link" aria-label="SW Development Paradigms에 대한 직접 링크" title="SW Development Paradigms에 대한 직접 링크">​</a></h3>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="procedural-programming">Procedural Programming<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#procedural-programming" class="hash-link" aria-label="Procedural Programming에 대한 직접 링크" title="Procedural Programming에 대한 직접 링크">​</a></h4>
+<!-- -->
+<ul>
+<li>Top-down decomposition: Each sub-problem is typically implemented as a function or procedure</li>
+<li>Root represents the main program</li>
+<li>Leaves denote individual procedures or functions</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="object-oriented-programming">Object-Oriented Programming<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#object-oriented-programming" class="hash-link" aria-label="Object-Oriented Programming에 대한 직접 링크" title="Object-Oriented Programming에 대한 직접 링크">​</a></h4>
+<!-- -->
+<ul>
+<li>Abstraction: The process of hiding unnecessary details</li>
+<li>Encapsulation: Restricts the direct access to components of an object, while using methods to access and modify the data</li>
+<li>Inheritance: The process of creating sub-class</li>
+<li>Polymorphism: Allows for the creation, use, and storage of multiple objects that inherit from the same parent class</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="requirements-analysis">Requirements Analysis<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#requirements-analysis" class="hash-link" aria-label="Requirements Analysis에 대한 직접 링크" title="Requirements Analysis에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Instructions provided by the stakeholder describe a target system</p>
+</blockquote>
+<ul>
+<li>system properties, attributes and how a system should behave</li>
+<li>Decomposed into Functional requirements / Non-functional requirements</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="requirements-validation">Requirements Validation<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#requirements-validation" class="hash-link" aria-label="Requirements Validation에 대한 직접 링크" title="Requirements Validation에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Compliance</li>
+<li>Correctness</li>
+<li>Completeness</li>
+<li>Consistency</li>
+<li>Usability</li>
+</ul>
+<!-- -->
+<table><thead><tr><th>Criteria</th><th>Description</th><th>Satisfactory Score (0-5)</th><th>Recommendations</th></tr></thead><tbody><tr><td>Compliance</td><td>Degree to which the requirements meet with industry standards and regulations</td><td>0</td><td>-</td></tr><tr><td>Correctness</td><td>Degree to which the requirements is correct in terms of spelling, accuracy, grammatically.</td><td>0</td><td>-</td></tr><tr><td>Completeness</td><td>Degree to which the functional requirements match the intended software behavior</td><td>0</td><td>-</td></tr><tr><td>Consistency</td><td>Degree to which the requirements can be mapped to use cases</td><td>0</td><td>-</td></tr><tr><td>Expandability</td><td>Degree to which the requirements can be modified and improved to meet the project objectives</td><td>0</td><td>-</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case">Use Case<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case" class="hash-link" aria-label="Use Case에 대한 직접 링크" title="Use Case에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>an actor wants the system to, and captures functional requirements</p>
+</blockquote>
+<ul>
+<li>always started by an actor, always written from the perspective of the actor</li>
+<li>a series of actions that a user must initiate to carry out some useful work and to achieve a goal<!-- -->
+<ul>
+<li>preconditions -&gt; main flow -&gt; alternative flow -&gt; postconditions</li>
+</ul>
+</li>
+<li>reflects all the possible events in the system</li>
+<li>complete set of use cases describes all the possible ways the system will behave and defines all the requirements</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case-backlog-template">Use Case Backlog Template<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case-backlog-template" class="hash-link" aria-label="Use Case Backlog Template에 대한 직접 링크" title="Use Case Backlog Template에 대한 직접 링크">​</a></h3>
+<table><thead><tr><th>ID</th><th>Use Case Title</th><th>Actor(s)</th><th>Goal/Description</th><th>Preconditions</th><th>Postconditions</th><th>Priority</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td>UC-001</td><td>User Login</td><td>User</td><td>Allow users to log in to the system</td><td>User must have an account</td><td>User is logged in</td><td>High</td><td>Open</td><td>-</td></tr><tr><td>UC-002</td><td>View Profile</td><td>User</td><td>Allow users to view their profile information</td><td>User must be logged in</td><td>User profile is displayed</td><td>Medium</td><td>Open</td><td>-</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="user-stories">User Stories<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#user-stories" class="hash-link" aria-label="User Stories에 대한 직접 링크" title="User Stories에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Planned to be delivered in a single iteration, some user stories may span multiple iterations</li>
+<li>Single requirement expressed from developer's perspective</li>
+<li>Describes a functional or non-functional requirement</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>As a</strong> student</li>
+<li><strong>I want to</strong> submit assignments online</li>
+<li><strong>so that</strong> I can receive feedback from my instructor.</li>
+</ul>
+<table><thead><tr><th>ID</th><th>User Story</th><th>Acceptance Criteria</th><th>Priority</th><th>Status</th><th>Story Points</th><th>Notes</th></tr></thead><tbody><tr><td>US-001</td><td>As a student, I want to submit assignments online so that I can receive feedback from my instructor.</td><td>- User can upload assignment files<br>- User receives confirmation of submission<br>- Instructor can view submitted assignments</td><td>High</td><td>Open</td><td>5</td><td>-</td></tr><tr><td>US-002</td><td>As a student, I want to view my grades online so that I can track my academic progress.</td><td>- User can view grades for each assignment<br>- User can see overall course grade<br>- Grades are updated in real-time</td><td>Medium</td><td>Open</td><td>3</td><td>-</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="uml">UML<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#uml" class="hash-link" aria-label="UML에 대한 직접 링크" title="UML에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>Actors: Entity that performs actions in the system</li>
+<li>Use Cases: Oval representation inside the system boundary of a functional requirement</li>
+<li>System Boundary: Square representation of the system scope</li>
+<li>Relationships<!-- -->
+<ul>
+<li>Association: Between an actor and a use case</li>
+<li>Include: Between use cases, The included use case is always necessary for the completion of the activating use case.</li>
+<li>Extend: Between use cases, The extension use case is activated occasionally at specific extension point.</li>
+<li>Generalization/Inheritance: Between use cases, they achieve the same goal but in different ways.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case-model">Use Case Model<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case-model" class="hash-link" aria-label="Use Case Model에 대한 직접 링크" title="Use Case Model에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>System boundary: Defines the scope of the system</li>
+<li>Generalization: Describes the shared parts in a parent use case, then specializes in child use cases<!-- -->
+<ul>
+<li>Inherit features from their parent use case</li>
+<li>Add new features</li>
+<li>Change inherited features</li>
+</ul>
+</li>
+<li>Short, simple use cases on the core functionality may be completed within one iteration.</li>
+<li>Keep use cases short and simple</li>
+<li>Focus on what, not the how</li>
+<li>Avoid functional decomposition</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="uml-use-case-model">UML Use Case Model<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#uml-use-case-model" class="hash-link" aria-label="UML Use Case Model에 대한 직접 링크" title="UML Use Case Model에 대한 직접 링크">​</a></h3>
+<ul>
+<li>CRUD<!-- -->
+<ul>
+<li>Create a record</li>
+<li>Retrieve the record given a key</li>
+<li>Update the record with new data and store it</li>
+<li>Delete a record</li>
+</ul>
+</li>
+<li>Each is a separate goal, possibly carried by a different person with a different security level.</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="fsd" term="fsd"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI 에이전트와 환경]]></title>
         <id>https://gracefullight.dev/2025/07/29/agent-and-environments/</id>
@@ -320,40 +502,6 @@ To what extent do you agree or disagree?</p>
 <p>In conclusion, although online education has considerable advantages, it cannot entirely replace the rich, dynamic experience of traditional classrooms. A hybrid approach is likely to yield the best educational outcomes.</p>
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-007/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>Term / Expression</th><th>Definition</th><th>Simpler Paraphrase</th></tr></thead><tbody><tr><td><strong>Consistent upward trend</strong></td><td>A steady and ongoing increase</td><td>Keeps going up</td></tr><tr><td><strong>Culminating</strong></td><td>Reaching the highest point</td><td>Ending at a peak</td></tr><tr><td><strong>Gained momentum</strong></td><td>Increased in speed or importance</td><td>Grew faster</td></tr><tr><td><strong>Blended model</strong></td><td>A mix of online and in-person learning</td><td>Combining both ways</td></tr><tr><td><strong>Hands-on subjects</strong></td><td>Courses that involve physical activity or tools</td><td>Practical subjects</td></tr><tr><td><strong>Academic rigor</strong></td><td>High standards and thorough learning</td><td>Serious and deep study</td></tr><tr><td><strong>Substitute</strong></td><td>Something that replaces another</td><td>A replacement</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="ielts" term="ielts"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IELTS Transcription @006]]></title>
-        <id>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/</id>
-        <link href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/"/>
-        <updated>2025-07-15T13:57:50.608Z</updated>
-        <summary type="html"><![CDATA[IELTS Writing Transcription @006]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/#task1" class="hash-link" aria-label="Task1에 대한 직접 링크" title="Task1에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>The pie chart above shows the primary reasons why people chose to work remotely in 2024.
-Summarize the information by selecting and reporting the main features, and make comparisons where relevant.</p>
-</blockquote>
-<p><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/assets/images/ielts-transcription-006-05b06126bc6830a400421e31e38dc533.png" width="1979" height="1180" class="img_yneg"></p>
-<p>The pie chart illustrates the main factors influencing people's decision to work remotely in 2024. The data reveals that work-life balance and reduced commuting time were the most cited reasons.</p>
-<p>Work-life balance accounted for 30% of the responses, making it the leading factor. This was followed closely by the desire to avoid commuting, which represented 25%. Increased productivity was the third most common reason, at 20%, while health and safety concerns contributes to 15% of responses. Finally, flexible working hours were cited by 10% of participants.</p>
-<p>The data shows a clear trend toward personal convenience and well-being. The top of three reasons-balance, commute, and productivity-collectively represent 75% of the motivations, indicating a preference for conditions that enhance individual efficiency and lifestyle. Health-related concerns, while significant during global health crises, appear less dominant in 2024, suggesting a shift in focus from safety to sustained comfort and autonomy.</p>
-<p>In conclusion, the chart underscores the growing importance of quality of life and flexibility in shaping modern work preferences.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/#task2" class="hash-link" aria-label="Task2에 대한 직접 링크" title="Task2에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Some people think it is more important to focus on the present, while others believe planning for the future is essential
-Discuss both views and give your own opinion.</p>
-</blockquote>
-<p>There is an ongoing debate over whether people should prioritize living in the moment or concentrate on future planning. While present-focused individuals argue for making the most of today, others maintain that long-term thinking is vital for success. I believe both perspectives have merit and should be balanced.</p>
-<p>Advocates of living in the present argue that focusing on the now enhances happiness and reduces anxiety. They contend that excessive worry about the future can lead to missed opportunities and mental stress. Mindfulness practices, which encourage awareness of the present moment, have been shown to improve emotional well-being and foster gratitude.</p>
-<p>In contrast, those who support planning ahead believe that setting goals and preparing for possible challenges ensures greater stability. Financial planning, career development, and health maintenance all require foresight. Without long-term thinking, people may struggle tot achieve lasting success or face avoidable setbacks.</p>
-<p>In my view, the most effective approach integrates both attitudes. While it is essential to enjoy and engage with daily life, planning for the future provides direction and security. For example, saving money for retirement does not prevent someone from enjoying today's experiences, but rather ensures peace of mind in the long run.</p>
-<p>In conclusion, while it is beneficial to embrace the present, neglecting future planning can lead to adverse consequences. A balanced mindset that values both present enjoyment and future preparedness is key to a fulfilling life.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-006/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Term / Expression</th><th>Definition</th><th>Simpler Paraphrase</th></tr></thead><tbody><tr><td><strong>Work-life balance</strong></td><td>Maintaining a healthy separation between job and personal time</td><td>Equal time for work and rest</td></tr><tr><td><strong>Sustained comfort</strong></td><td>Long-lasting ease or convenience</td><td>Ongoing comfort</td></tr><tr><td><strong>Mindfulness</strong></td><td>Awareness of the present moment without judgment</td><td>Being focused on now</td></tr><tr><td><strong>Foresight</strong></td><td>The ability to predict or prepare for future needs</td><td>Planning ahead</td></tr><tr><td><strong>Setbacks</strong></td><td>Difficulties or delays that stop progress</td><td>Problems that slow you down</td></tr><tr><td><strong>Peace of mind</strong></td><td>A feeling of calm and security</td><td>Feeling relaxed and safe</td></tr><tr><td><strong>Balanced mindset</strong></td><td>A way of thinking that includes multiple perspectives</td><td>Thinking in a fair, smart way</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
