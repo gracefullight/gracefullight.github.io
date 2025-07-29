@@ -1,7 +1,7 @@
 ---
-title: study in australia housing
+title: 호주 집 구하기
 date: 2025-07-29T21:38:34.742+10:00
-description: study in australia housing
+description: A guide to finding housing while studying in Australia
 authors: me
 tags:
   - me
