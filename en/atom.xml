@@ -32,7 +32,7 @@
 <table><thead><tr><th>Agent Type</th><th>Performance Measure</th><th>Environment</th><th>Actuators</th><th>Sensors</th></tr></thead><tbody><tr><td>Taxi driver</td><td>Safe, fast, comfortable transportation</td><td>Roads, traffic, passengers</td><td>Steering wheel, accelerator, brakes</td><td>Cameras, GPS, speedometer</td></tr><tr><td>Medical diagnosis system</td><td>Healthy patient, reduced costs</td><td>Patient, hospital, staff</td><td>Display of questions, tests, diagnosis, treatments</td><td>Touchscreen/voice entry of symptoms and findings</td></tr><tr><td>Satellite image analysis system</td><td>Correct categorization of objects, terrain</td><td>Orbiting satellite, downlink weather</td><td>Display of scene categorization</td><td>High-resolution digital camera</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="agents">Agents<a href="https://gracefullight.dev/en/vocab/vocab-ai-002/#agents" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>SImple reflex agents</li>
+<li>Simple reflex agents</li>
 <li>Model-based reflex agents</li>
 <li>Goal-based agents</li>
 <li>Utility-based agents</li>
