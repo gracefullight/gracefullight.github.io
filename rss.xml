@@ -4,10 +4,56 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 30 Jul 2025 05:23:03 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Jul 2025 13:06:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Fundamentals of Data Analytics @001]]></title>
+            <link>https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/</link>
+            <guid>https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/</guid>
+            <pubDate>Wed, 30 Jul 2025 13:06:27 GMT</pubDate>
+            <description><![CDATA[Fundamentals of Data Analytics @001]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="big-data">Big Data<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#big-data" class="hash-link" aria-label="Big Data에 대한 직접 링크" title="Big Data에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>Volume: describes the data size, up to PB</li>
+<li>Velocity: the speed of data generation and illustrates how fast the datasets are being produced.</li>
+<li>Variety: the complexity of datasets, with datasets including both structured and unstructured data.</li>
+<li>Veracity: The truthfulness or reliability of the data. large + reliable in order to achieve value in the analysis of it.</li>
+<li>Value: The worth in information that can be achieved by the processing and analysis of large datasets. It can be measured by an assessment of the other qualities of big data.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="ml">ML<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#ml" class="hash-link" aria-label="ML에 대한 직접 링크" title="ML에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>Supervised learning: uses the old data to learn the relationship between the inputs and outputs, which will be able to predict the outcomes.<!-- -->
+<ul>
+<li>Decision Trees, Neural Networks, SVM, Random Forests.</li>
+</ul>
+</li>
+<li>Unsupervised learning: try to make sense of the data without labelled responses by representing it in another form.<!-- -->
+<ul>
+<li>Clustering, association rule mining, Neural Networks.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="ai">AI<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#ai" class="hash-link" aria-label="AI에 대한 직접 링크" title="AI에 대한 직접 링크">​</a></h2>
+<ul>
+<li>reasoning</li>
+<li>knowledge representation</li>
+<li>planning</li>
+<li>learning</li>
+<li>natural language processing</li>
+<li>perception</li>
+<li>pattern recognition</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="The Relationships between DA, DS, AI, and ML" src="https://gracefullight.dev/assets/images/fundamentals-of-data-analytics-001-f83b0873f937c194511da1be5254c214.png" width="1670" height="836" class="img_yneg"></p>
+<blockquote>
+<p>Data Science (Second Edition), Chapter 1 - Introduction Pages 1-18, by Vijay Kotu, Bala Deshpande, 2019,</p>
+</blockquote>
+]]></content:encoded>
+            <category>fda</category>
+        </item>
         <item>
             <title><![CDATA[Vocabulary for AI @002]]></title>
             <link>https://gracefullight.dev/vocab/vocab-ai-002/</link>
@@ -430,34 +476,6 @@ Discuss both views and give your own opinion.</p>
 <p>Advocates of public transportation argue that it offers a sustainable solution to urban challenges. Efficient systems like buses, trains, and subways can transport large numbers of people, reducing the number of private vehicles on roads. For instance, cities like Tokyo have invested in extensive metro systems, significantly lowering per-capita emissions and easing traffic flow. Public transport is also more accessible to lower-income groups, promoting social equity. Furthermore, modern electric buses and trains can substantially reduce pollution, aligning with environmental goals.</p>
 <p>Conversely, proponents of road infrastructure improvements argue that better roads enhance traffic efficiency. Widening highways, building flyovers, or implementing smart traffic systems can alleviate bottlenecks, as seen in cities like Dubai, where advanced road networks reduce travel times. Critics of public transport investments note that such projects are costly and time-consuming, and may not address immediate congestion issues in rapidly growing urban areas.</p>
 <p>In my opinion, investing in public transportation is more effective in the long term. It addresses both congestion and pollution while promoting sustainable urban development. However, strategic road improvements can complement these efforts, particularly in areas with limited public transport infrastructure. A balanced approach, prioritizing public transport with targeted road enhancements, offers the most holistic solution to urban mobility challenges.</p>]]></content:encoded>
-            <category>ielts</category>
-        </item>
-        <item>
-            <title><![CDATA[IELTS Transcription @009]]></title>
-            <link>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-009/</link>
-            <guid>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-009/</guid>
-            <pubDate>Sun, 20 Jul 2025 05:12:28 GMT</pubDate>
-            <description><![CDATA[IELTS Writing Transcription @009]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-009/#task1" class="hash-link" aria-label="Task1에 대한 직접 링크" title="Task1에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>The table below shows the percentage of households with internet access in four regions for the years 2010, 2015 and 2020, and the overall change between 2010 and 2020.</p>
-</blockquote>
-<table><thead><tr><th>Region</th><th>2010 (%)</th><th>2015 (%)</th><th>2020 (%)</th><th>Change (%)</th></tr></thead><tbody><tr><td>North America</td><td>65</td><td>80</td><td>92</td><td>+27</td></tr><tr><td>Europe</td><td>58</td><td>75</td><td>89</td><td>+31</td></tr><tr><td>Asia</td><td>42</td><td>60</td><td>75</td><td>+33</td></tr><tr><td>Sub-Saharan Africa</td><td>15</td><td>30</td><td>48</td><td>+33</td></tr></tbody></table>
-<p>The table compares household internet access rates in four regions-North America, Europe, Asia and Sub-Saharan Africa across 2010, 2015 and 2020, and shows the percentage-point change over the decade. Overall, all regions experienced substantial increases, with Asis and Sub-Saharan Africa recording the largest gains.</p>
-<p>In 2010, North America led with 65% access, rising to 92% by 2020, a change of +27 points. Europe followed, increasing from 58% to 89% (+31). Asia saw access climb from 42% to 75% (+33), matching Sub-Saharan Africa's growth, which rose from a low base of 15% to 48% (+33). By 2020, the gap between the highest and lowest regions had narrowed from 50 points in 2010 to 44 points.</p>
-<p>The data indicates that developing regions made the most rapid progress, likely due to infrastructure investments and policy initiatives promoting connectivity. In contrast, advanced regions like North America and Europe showed more modest absolute increases, as they began from higher starting points. In summary, while all regions improved, the greatest relative expansion occurred where initial access was lowest.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-009/#task2" class="hash-link" aria-label="Task2에 대한 직접 링크" title="Task2에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Some people believe that learning computer programming should be a compulsory part of the school curriculum.
-To what extent do you agree or disagree?</p>
-</blockquote>
-<p>While computer programming offers clear benefits, I disagree that it should be compulsory for all school students. Mandating coding risks overloading curricula, may not suit every leaner, and could divert attention from equally vital subjects.</p>
-<p>Firstly, a one-size-fits-all approach can overwhelm students whose strengths lie elsewhere. Not every child has an aptitude for abstract, logical thinking required in programming. Forcing all pupils to learn to code may discourage those who would excel in areas such as the arts, humanities or languages, thereby stifling diverse talents.</p>
-<p>Secondly, curriculum time is finite. Introducing compulsory coding would necessitate reducing hours for other core subjects-such as literature, history or the natural sciences-which cultivate critical cultural awareness and scientific literacy. These disciplines are essential for fostering well-rounded individuals and informed citizens.</p>
-<p>Finally, effective programming instruction requires skilled teachers and up-to-date resources. Many schools, particularly in under-resourced areas, lack qualified computer science educators and sufficient technological infrastructure. Compulsory coding risks creating superficial, checkbox-style lessons that fail to develop genuine proficiency.</p>
-<p>In conclusion, although programming is a valuable skill in our digital age, it should remain an optional subject. Allowing students to choose based on their interests and strengths preserves curriculum balance and respects individual aptitudes, leading to better educational outcomes overall.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-009/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th></tr></thead><tbody><tr><td><strong>A one-size-fits-all</strong></td><td>Designed to apply universally without variation</td><td>Same for everyone</td></tr><tr><td><strong>Abstract thinking</strong></td><td>Thinking about ideas and concepts rather than concrete facts</td><td>Thinking about ideas</td></tr><tr><td><strong>Stifling</strong></td><td>Preventing growth or development</td><td>Holding back</td></tr><tr><td><strong>Finite</strong></td><td>Having limits or an end</td><td>Limited</td></tr><tr><td><strong>Cultural awareness</strong></td><td>Understanding and appreciation of different cultures</td><td>Knowing about other cultures</td></tr><tr><td><strong>Up-to-date</strong></td><td>Modern; using the latest information or technology</td><td>Current</td></tr><tr><td><strong>Checkbox-style lessons</strong></td><td>Superficial teaching that merely fulfils a requirement</td><td>Lessons done just to tick a box</td></tr><tr><td><strong>Educational outcomes</strong></td><td>The results or achievements of learning</td><td>Learning results</td></tr></tbody></table>]]></content:encoded>
             <category>ielts</category>
         </item>
     </channel>
