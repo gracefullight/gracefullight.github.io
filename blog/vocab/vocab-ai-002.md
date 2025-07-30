@@ -71,7 +71,7 @@ graph TD
 
 ## Agents
 
-- SImple reflex agents
+- Simple reflex agents
 - Model-based reflex agents
 - Goal-based agents
 - Utility-based agents
