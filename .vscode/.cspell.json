@@ -1,6 +1,7 @@
 {
   "ignorePaths": ["*.config.js", "package.json"],
   "words": [
+    "acronymically",
     "adsbygoogle",
     "adsense",
     "agentic",
@@ -48,6 +49,7 @@
     "commitlint",
     "concat",
     "Configurator",
+    "consequentialism",
     "conv",
     "CPND",
     "CRICOS",
