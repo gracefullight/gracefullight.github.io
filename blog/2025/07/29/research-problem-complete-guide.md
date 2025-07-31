@@ -5,6 +5,7 @@ description: Research Problem Guide
 authors: me
 tags:
   - research
+  - TRP
 ---
 
 # 연구문제(Research Problem)
