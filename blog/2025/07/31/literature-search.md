@@ -53,8 +53,8 @@ flowchart TD
     STEP1 --> STEP2
     STEP2 --> STEP3
     STEP3 --> STEP4
-    STEP4 --> STEP5
-    STEP5 --> STEP6
+    STEP4 --> STEP5 --> STEP4
+    STEP5 --> STEP6 --> STEP1
 ```
 
 ## 배경 읽기 및 준비
