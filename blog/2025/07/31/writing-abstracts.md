@@ -16,12 +16,6 @@ flowchart TD
     P --> M[Methodology<br>연구방법,과거시제]
     M --> R[Results<br>주요결과,과거시제]
     R --> C[Conclusion/Significance<br>결론/의의,현재/추론조동사]
-
-    style B fill:#E3F2FD,stroke:#2196F3
-    style P fill:#FFF9C4,stroke:#FBC02D
-    style M fill:#E8F5E9,stroke:#43A047
-    style R fill:#FBE9E7,stroke:#D84315
-    style C fill:#F3E5F5,stroke:#8E24AA
 ```
 
 - 초록(Abstract)은 논문·리포트·학위논문에서 **가장 먼저 읽히는 핵심 요약문**
