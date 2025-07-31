@@ -17,7 +17,7 @@ tags:
 - ‘나만의 의견’이 아니라 **evidence-based writing**이 필수
 - 리서치 스킬·비판적 사고·연결 능력을 평가
 
-## 개념 통합의 예시 (원문 그대로)
+## 논거 통합 예시
 
 > In order to transform ourselves, we need to transform our assumptions. Through this project, all stakeholders were forced to confront their mental models (assumptions about self, others and “how the world works” – see Senge, 1995 and Kim,1993) about psychiatric patients and psychiatric disorders.
 > Through exposure to such patients on a regular basis, all came to question their tacit fears and prejudices with respect to this phenomenon and, through collective engagement with it” (2007,p.200).
@@ -27,7 +27,7 @@ tags:
 3. 관련 논문 인용
 4. 실제 사례·프로젝트 결과로 확장
 
-## 근거(Evidence) 활용법
+## 논거 활용법
 
 - **직접 인용(quotation):** 원문 그대로, 따옴표+출처 (전체 과제의 10% 이하 권장)
 - **패러프레이즈(paraphrase):** 아이디어를 내 말로 바꿔 표현
@@ -87,5 +87,5 @@ tags:
 
 - claim(주장)-evidence(근거)-comment(코멘트) 구조를 항상 의식
 - 인용/패러프레이즈/요약 방식 혼합
-- 인용은 반드시 UTS Harvard 스타일로!
+- 인용은 반드시 Harvard 스타일로
 - 인용 뒤 해설/연결문(코멘트) 반드시 포함
