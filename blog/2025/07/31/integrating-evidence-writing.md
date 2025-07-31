@@ -8,9 +8,6 @@ tags:
   - TRP
 ---
 
-
-# Integrating Concepts & Evidence into Your Writing
-
 ## 논거 작성 중요성
 
 - 내 주장은 문헌·연구·전문가의 근거 위에 세워져야 함

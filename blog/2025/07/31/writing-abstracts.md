@@ -8,8 +8,6 @@ tags:
   - TRP
 ---
 
-# 연구논문 초록(Abstract) 개념
-
 ```mermaid
 flowchart TD
     B[Background<br>배경,현재시제] --> P[Purpose<br>목적/질문,과거/현재완료]

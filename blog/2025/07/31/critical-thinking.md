@@ -9,7 +9,7 @@ tags:
 ---
 
 
-# 비판적 사고, 읽기, 쓰기란?
+## 비판적 사고, 읽기, 쓰기 개념
 
 비판적 읽기/쓰기(critical reading & writing)는 단순한 요약(Descriptive writing)과 다르게
 

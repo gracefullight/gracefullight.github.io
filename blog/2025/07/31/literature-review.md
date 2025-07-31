@@ -8,15 +8,13 @@ tags:
   - TRP
 ---
 
-# 문헌 고찰
-
-## 개념
+## 문헌 고찰 개념
 
 > An evaluation of previous research on your topic.
 
 - 문헌 고찰(Literature Review)은 **내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글**이다.
 
-## 목적
+## 문헌 고찰 목적
 
 > "provides background information needed to understand your study  
 > assures your readers that you are familiar with the important research that has been carried out in your area  
@@ -25,13 +23,13 @@ tags:
 
 - 내 연구의 배경을 설명하고, 독자에게 내가 주요 연구를 충분히 파악하고 있다는 점, 그리고 내 연구가 기존 연구의 연장선상에 있음을 보여준다.
 
-## 포함해야 할 내용
+## 문헌 고찰 포함 내용
 
 > Minimum: well-established research in the field; most recent relevant research.
 
 - 문헌 고찰에는 반드시 **이 분야에서 잘 알려진 주요 연구**와 **가장 최근의 관련 연구**를 포함해야 한다.
 
-## 구성
+## 문헌 고찰 구성
 
 ```mermaid
 graph TD

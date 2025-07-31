@@ -8,8 +8,6 @@ tags:
   - TRP
 ---
 
-# Executive Summary & Project Proposal
-
 > 프로젝트 제안서·연구비 지원서·그랜트(Grant) 작성에서 **Executive Summary**는 가장 중요함
 
 ```mermaid

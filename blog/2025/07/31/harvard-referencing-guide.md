@@ -8,8 +8,6 @@ tags:
   - TRP
 ---
 
-# 레퍼런스 스타일
-
 ## 본문 인용(In-text citation)
 
 - 한 명 저자
