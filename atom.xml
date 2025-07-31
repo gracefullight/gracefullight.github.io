@@ -651,7 +651,13 @@
         <updated>2025-07-29T05:30:05.989Z</updated>
         <summary type="html"><![CDATA[AI Agent와 환경의 상호작용 및 설계 원칙]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="에이전트와-환경의-상호작용">에이전트와 환경의 상호작용<a href="https://gracefullight.dev/2025/07/29/agent-and-environments/#%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80-%ED%99%98%EA%B2%BD%EC%9D%98-%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9" class="hash-link" aria-label="에이전트와 환경의 상호작용에 대한 직접 링크" title="에이전트와 환경의 상호작용에 대한 직접 링크">​</a></h2>
-]]></content>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="환경">환경<a href="https://gracefullight.dev/2025/07/29/agent-and-environments/#%ED%99%98%EA%B2%BD" class="hash-link" aria-label="환경에 대한 직접 링크" title="환경에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Static environment: crossword puzzle</li>
+<li>Semi-dynamic environment: Chess</li>
+<li>Dynamic environment: self-driving car</li>
+</ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
