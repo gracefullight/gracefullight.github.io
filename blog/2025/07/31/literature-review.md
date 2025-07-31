@@ -1,5 +1,5 @@
 ---
-title: 문헌고찰, Literature Review
+title: 문헌 고찰, Literature Review
 date: 2025-07-31T13:56:13.420+10:00
 description: Literature Review
 authors: me
@@ -8,13 +8,13 @@ tags:
   - TRP
 ---
 
-# 문헌고찰
+# 문헌 고찰
 
 ## 개념
 
 > An evaluation of previous research on your topic.
 
-- 문헌고찰(Literature Review)은 **내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글**이다.
+- 문헌 고찰(Literature Review)은 **내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글**이다.
 
 ## 목적
 
@@ -29,13 +29,13 @@ tags:
 
 > Minimum: well-established research in the field; most recent relevant research.
 
-- 문헌고찰에는 반드시 **이 분야에서 잘 알려진 주요 연구**와 **가장 최근의 관련 연구**를 포함해야 한다.
+- 문헌 고찰에는 반드시 **이 분야에서 잘 알려진 주요 연구**와 **가장 최근의 관련 연구**를 포함해야 한다.
 
 ## 구성
 
 ```mermaid
 graph TD
-    A[문헌고찰 구성] --> B1[주요 주제/논쟁별 정리<br/>Organized around key themes or debates]
+    A[문헌 고찰 구성] --> B1[주요 주제/논쟁별 정리<br/>Organized around key themes or debates]
     A --> B2[일반적<br/>From distant to close] --> 구체적[구체적 흐름<br/>from less specific to more specific]
     A --> B3[일반지식<br/>Generic knowledge] --> 개념적틀[개념적 틀<br/> Conceptual Framework] --> 맥락[맥락<br/>Context] --> 이론적용[이론 적용<br/>Applying Theory]
     A --> B4[연구방법론별 정리<br/>A methodological approach]
@@ -65,9 +65,9 @@ graph TD
 > Around 15-30% of the whole proposal
 
 - 별도 기준이 없다면 15% - 30%
-- 논문은 60%가 본인의 작업이어야 한다. 문헌고찰이 논문의 40%를 초과하면 안 된다.
+- 논문은 60%가 본인의 작업이어야 한다. 문헌 고찰이 논문의 40%를 초과하면 안 된다.
 
-## 문헌고찰에서 해야 할 일
+## 문헌 고찰에서 해야 할 일
 
 - 분야 내에서 **중요하고 관련 있는 연구들을 파악하는 능력**을 보여준다.
 - 해당 연구들을 **체계적으로 정리, 평가**할 수 있음을 보여준다.
