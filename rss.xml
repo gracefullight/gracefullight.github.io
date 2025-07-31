@@ -4,10 +4,85 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 30 Jul 2025 13:06:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 Jul 2025 03:56:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Literature Review]]></title>
+            <link>https://gracefullight.dev/2025/07/31/literatur-review/</link>
+            <guid>https://gracefullight.dev/2025/07/31/literatur-review/</guid>
+            <pubDate>Thu, 31 Jul 2025 03:56:13 GMT</pubDate>
+            <description><![CDATA[Literature Review]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="개념">개념<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EA%B0%9C%EB%85%90" class="hash-link" aria-label="개념에 대한 직접 링크" title="개념에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>An evaluation of previous research on your topic.</p>
+</blockquote>
+<ul>
+<li>문헌고찰(Literature Review)은 <strong>내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글</strong>이다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="목적">목적<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EB%AA%A9%EC%A0%81" class="hash-link" aria-label="목적에 대한 직접 링크" title="목적에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>"provides background information needed to understand your study<br>
+<!-- -->assures your readers that you are familiar with the important research that has been carried out in your area<br>
+<!-- -->establishes your study as one link in a chain of research that is developing and enlarging knowledge in your field"<br>
+<!-- -->(Weissberg &amp; Buker 1990, p.41)</p>
+</blockquote>
+<ul>
+<li>내 연구의 배경을 설명하고, 독자에게 내가 주요 연구를 충분히 파악하고 있다는 점, 그리고 내 연구가 기존 연구의 연장선상에 있음을 보여준다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="포함해야-할-내용">포함해야 할 내용<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%ED%8F%AC%ED%95%A8%ED%95%B4%EC%95%BC-%ED%95%A0-%EB%82%B4%EC%9A%A9" class="hash-link" aria-label="포함해야 할 내용에 대한 직접 링크" title="포함해야 할 내용에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Minimum: well-established research in the field; most recent relevant research.</p>
+</blockquote>
+<ul>
+<li>문헌고찰에는 반드시 <strong>이 분야에서 잘 알려진 주요 연구</strong>와 <strong>가장 최근의 관련 연구</strong>를 포함해야 한다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="구성">구성<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="구성에 대한 직접 링크" title="구성에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>필요에 따라 조합할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="레퍼런스">레퍼런스<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4" class="hash-link" aria-label="레퍼런스에 대한 직접 링크" title="레퍼런스에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>The REFERENCE system you follow will be that of one of the leading journals in your field: check with your lecturer or supervisor.</p>
+</blockquote>
+<ul>
+<li>분야에서 영향력 있는 저널의 인용 방식을 따라야 하며, 확실하지 않으면 담당 교수나 슈퍼바이저에게 확인</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="인용">인용<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EC%9D%B8%EC%9A%A9" class="hash-link" aria-label="인용에 대한 직접 링크" title="인용에 대한 직접 링크">​</a></h2>
+<ul>
+<li>정보에 초점을 둘지, 저자에 초점을 둘지에 따라 다르다.</li>
+<li>on the information: use name/number in parentheses.<!-- -->
+<ul>
+<li>It was demonstrated [2]</li>
+<li>It was demonstrated (Williams, 2003)</li>
+</ul>
+</li>
+<li>on the author: use acknowledging phrases<!-- -->
+<ul>
+<li>Williams (2003) demonstrated that...</li>
+<li>Williams [2] demonstrated that...</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="길이">길이<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EA%B8%B8%EC%9D%B4" class="hash-link" aria-label="길이에 대한 직접 링크" title="길이에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Around 15-30% of the whole proposal</p>
+</blockquote>
+<ul>
+<li>별도 기준이 없다면 15% - 30%</li>
+<li>논문은 60%가 본인의 작업이어야 한다. 문헌고찰이 논문의 40%를 초과하면 안 된다.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="문헌고찰에서-해야-할-일">문헌고찰에서 해야 할 일<a href="https://gracefullight.dev/2025/07/31/literatur-review/#%EB%AC%B8%ED%97%8C%EA%B3%A0%EC%B0%B0%EC%97%90%EC%84%9C-%ED%95%B4%EC%95%BC-%ED%95%A0-%EC%9D%BC" class="hash-link" aria-label="문헌고찰에서 해야 할 일에 대한 직접 링크" title="문헌고찰에서 해야 할 일에 대한 직접 링크">​</a></h2>
+<ul>
+<li>분야 내에서 <strong>중요하고 관련 있는 연구들을 파악하는 능력</strong>을 보여준다.</li>
+<li>해당 연구들을 <strong>체계적으로 정리, 평가</strong>할 수 있음을 보여준다.</li>
+<li><strong>연구의 빈틈(gap)</strong> 을 파악하고, 내 연구가 그 부분을 채우려 한다는 점을 제시한다.</li>
+</ul>]]></content:encoded>
+            <category>research</category>
+            <category>TRP</category>
+        </item>
         <item>
             <title><![CDATA[Fundamentals of Data Analytics @001]]></title>
             <link>https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/</link>
@@ -357,6 +432,7 @@
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="8-개선-제안-요약">8. 개선 제안 요약<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#8-%EA%B0%9C%EC%84%A0-%EC%A0%9C%EC%95%88-%EC%9A%94%EC%95%BD" class="hash-link" aria-label="8. 개선 제안 요약에 대한 직접 링크" title="8. 개선 제안 요약에 대한 직접 링크">​</a></h2>
 <table><thead><tr><th>항목</th><th>제안 내용</th></tr></thead><tbody><tr><td>유형 비교 도식화</td><td>7가지 유형을 목적/적용성과 함께 도식화</td></tr><tr><td>검색 예시 보강</td><td>고급 검색식 예시 추가 (ex. “EU AND terrorism AND credibility”)</td></tr><tr><td>논제 예시 확장</td><td>분석형, 설명형, 주장형 등 다양한 논제 샘플 제시</td></tr><tr><td>실패 사례 제시</td><td>과도하게 좁은 주제나 불명확한 문제 사례 소개</td></tr><tr><td>전체 개요 문단 추가</td><td>전체 문서 요약용 300자 내외 개요 삽입 (블로그/논문 개요에 활용 가능)</td></tr></tbody></table>]]></content:encoded>
             <category>research</category>
+            <category>TRP</category>
         </item>
         <item>
             <title><![CDATA[Vocabulary for AI @001]]></title>
@@ -452,31 +528,6 @@
 <li>2010년대 Yann LeCun, Geoffrey Hinton, Yoshua Bengio 등이 딥러닝 혁신을 주도.</li>
 </ul>]]></content:encoded>
             <category>ai</category>
-        </item>
-        <item>
-            <title><![CDATA[IELTS Transcription @010]]></title>
-            <link>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-010/</link>
-            <guid>https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-010/</guid>
-            <pubDate>Mon, 21 Jul 2025 13:53:23 GMT</pubDate>
-            <description><![CDATA[IELTS Writing Transcription @010]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task1">Task1<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-010/#task1" class="hash-link" aria-label="Task1에 대한 직접 링크" title="Task1에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>The pie charts below show the distribution of household expenditure in four categories (housing, food, transport, and other) in a country in 2015 and 2020.</p>
-</blockquote>
-<table><thead><tr><th>2015 (%)</th><th>2020 (%)</th></tr></thead><tbody><tr><td><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/assets/images/ielts-transcription-010-1-a47c52eccda304905a4d5e35ce809e5b.png" width="1502" height="866" class="img_yneg"></td><td><img decoding="async" loading="lazy" alt="task1" src="https://gracefullight.dev/assets/images/ielts-transcription-010-2-903232b05eb361097e00cd35598aeaad.png" width="1502" height="866" class="img_yneg"></td></tr></tbody></table>
-<p>The pie charts illustrate the distribution of household expenditure across four categories-housing, food, transport, and other-in a country in 2015 and 2020. Overall, there was a noticeable shift in spending patterns, with food and transport increasing in proportion while housing and other expenses declined.</p>
-<p>In 2015, housing accounted for the largest share at 35% followed by food at 25%, and both transport and other categories at 20% each. By 2020, food expenditure rose to 30%, equalling housing, which decreased to 30%. Transport expenditure increased to 25%, while the "other" category saw a reduction to 15%.</p>
-<p>The most significant change was the 5-percentage-point increase in food expenditure, reflecting its growing importance in household budgets. Transport also gained prominence, rising by 5 percentage points, whereas housing lost its dominant position. The decline in the "other" category suggests a reallocation of funds toward essential expenses, likely driven by economic or lifestyle changes over the five-year period.</p>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="task2">Task2<a href="https://gracefullight.dev/ielts/troubleshooting/ielts-transcription-010/#task2" class="hash-link" aria-label="Task2에 대한 직접 링크" title="Task2에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Some people believe that governments should invest heavily in public transportation to reduce traffic congestion and pollution. Others argue that improving road infrastructure is a more effective solution.
-Discuss both views and give your own opinion.</p>
-</blockquote>
-<p>The debate over whether governments should prioritize public transportation or road infrastructure to address traffic congestion and pollution is multifaceted. Both approaches have merit, but their effectiveness depends on context. This essay will discuss both perspectives and present my own view.</p>
-<p>Advocates of public transportation argue that it offers a sustainable solution to urban challenges. Efficient systems like buses, trains, and subways can transport large numbers of people, reducing the number of private vehicles on roads. For instance, cities like Tokyo have invested in extensive metro systems, significantly lowering per-capita emissions and easing traffic flow. Public transport is also more accessible to lower-income groups, promoting social equity. Furthermore, modern electric buses and trains can substantially reduce pollution, aligning with environmental goals.</p>
-<p>Conversely, proponents of road infrastructure improvements argue that better roads enhance traffic efficiency. Widening highways, building flyovers, or implementing smart traffic systems can alleviate bottlenecks, as seen in cities like Dubai, where advanced road networks reduce travel times. Critics of public transport investments note that such projects are costly and time-consuming, and may not address immediate congestion issues in rapidly growing urban areas.</p>
-<p>In my opinion, investing in public transportation is more effective in the long term. It addresses both congestion and pollution while promoting sustainable urban development. However, strategic road improvements can complement these efforts, particularly in areas with limited public transport infrastructure. A balanced approach, prioritizing public transport with targeted road enhancements, offers the most holistic solution to urban mobility challenges.</p>]]></content:encoded>
-            <category>ielts</category>
         </item>
     </channel>
 </rss>
