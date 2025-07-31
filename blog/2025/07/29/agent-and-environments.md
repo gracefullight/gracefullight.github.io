@@ -125,6 +125,8 @@ graph TD
     style ST fill:#E0F2F9,stroke:#99CCEE,stroke-width:1px
 ```
 
+## 환경
+
 - Static environment: crossword puzzle
 - Semi-dynamic environment: Chess
 - Dynamic environment: self-driving car
