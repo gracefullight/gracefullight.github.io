@@ -2,11 +2,106 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-31T04:38:24.984Z</updated>
+    <updated>2025-07-31T05:06:36.513Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[초록 작성, Writing Abstracts]]></title>
+        <id>https://gracefullight.dev/2025/07/31/writing-abstracts/</id>
+        <link href="https://gracefullight.dev/2025/07/31/writing-abstracts/"/>
+        <updated>2025-07-31T05:06:36.513Z</updated>
+        <summary type="html"><![CDATA[writing abstracts]]></summary>
+        <content type="html"><![CDATA[
+<ul>
+<li>초록(Abstract)은 논문·리포트·학위논문에서 <strong>가장 먼저 읽히는 핵심 요약문</strong></li>
+<li>많은 독자가 초록만 보고 본문을 읽을지 결정하기 때문에, 짧지만 완성도 높고 정보 밀도가 높은 글을 써야함</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="초록-역할">초록 역할<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%B4%88%EB%A1%9D-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="초록 역할에 대한 직접 링크" title="초록 역할에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>독립적(stand-alone)</strong> 텍스트로, 100<del>300단어(학술지/컨퍼런스는 120</del>150단어 내외)</li>
+<li>논문 전체의 <strong>스냅샷</strong></li>
+<li>초록만 읽고도 "무엇을/왜/어떻게/무엇을 발견/왜 중요한지"를 알 수 있어야 함</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="초록의-핵심-포함-요소순서--질문">초록의 핵심 포함 요소(순서 &amp; 질문)<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%B4%88%EB%A1%9D%EC%9D%98-%ED%95%B5%EC%8B%AC-%ED%8F%AC%ED%95%A8-%EC%9A%94%EC%86%8C%EC%88%9C%EC%84%9C--%EC%A7%88%EB%AC%B8" class="hash-link" aria-label="초록의 핵심 포함 요소(순서 &amp; 질문)에 대한 직접 링크" title="초록의 핵심 포함 요소(순서 &amp; 질문)에 대한 직접 링크">​</a></h2>
+<ol>
+<li><strong>Background</strong>: 배경 정보, 연구가 다루는 일반적 문제(현재 시제)</li>
+<li><strong>Purpose</strong>: 연구 목적, 주요 질문(과거/현재완료 시제)</li>
+<li><strong>Methodology</strong>: 연구 방법, 데이터(과거 시제)</li>
+<li><strong>Results</strong>: 핵심 결과(과거 시제)</li>
+<li><strong>Conclusion/Significance</strong>: 결론 또는 시사점, 추천사항(현재 시제 또는 추론/조심스러운 조동사)</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="핵심-질문">핵심 질문<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%ED%95%B5%EC%8B%AC-%EC%A7%88%EB%AC%B8" class="hash-link" aria-label="핵심 질문에 대한 직접 링크" title="핵심 질문에 대한 직접 링크">​</a></h3>
+<ul>
+<li>What did you do? (무엇을 했나?)</li>
+<li>Why did you do it? (왜 했나?)</li>
+<li>How did you do it? (어떻게 했나?)</li>
+<li>What did you find? (무엇을 발견했나?)</li>
+<li>Why does it matter? (왜 중요한가?)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="초록의-언어적-특징--문장-구성">초록의 언어적 특징 &amp; 문장 구성<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%B4%88%EB%A1%9D%EC%9D%98-%EC%96%B8%EC%96%B4%EC%A0%81-%ED%8A%B9%EC%A7%95--%EB%AC%B8%EC%9E%A5-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="초록의 언어적 특징 &amp; 문장 구성에 대한 직접 링크" title="초록의 언어적 특징 &amp; 문장 구성에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>정보 밀도 높게, 간결하고 구체적으로</strong></li>
+<li><strong>읽기 쉬운 구성</strong> (시작-중간-끝이 자연스럽게 이어짐)</li>
+<li><strong>자기완결성</strong>: 약어/고유어 정의, 인용·참조 없이 이해 가능</li>
+<li><strong>키워드 풍부하게 포함</strong></li>
+<li><strong>객관적/사실 중심 서술, 평가는 최소</strong></li>
+<li><strong>동사 중심, 명사·형용사·부사 축소</strong></li>
+<li><strong>중요한 정보부터 문장 맨 앞에</strong></li>
+<li><strong>문법/시제 규칙</strong>
+<ul>
+<li>배경: 현재시제</li>
+<li>목적/주요활동: 과거 or 현재완료</li>
+<li>방법/결과: 과거</li>
+<li>결론/의의: 현재시제, 추론/조동사(should, may 등)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="간결한-초록-작성-팁">간결한 초록 작성 팁<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EA%B0%84%EA%B2%B0%ED%95%9C-%EC%B4%88%EB%A1%9D-%EC%9E%91%EC%84%B1-%ED%8C%81" class="hash-link" aria-label="간결한 초록 작성 팁에 대한 직접 링크" title="간결한 초록 작성 팁에 대한 직접 링크">​</a></h2>
+<ul>
+<li>모든 숫자는 문장 첫머리가 아니면 숫자(1, 2, 3...)로 표기</li>
+<li>가능한 한 <strong>능동태</strong>(active voice) 사용, 1인칭은 지양</li>
+<li>동사로 핵심을 전달, 명사구·수식어 축소</li>
+<li>"at this point in time" → "now" / "on a yearly basis" → "yearly" 등으로 짧게</li>
+<li>의미 없는 수식어·중복 표현 삭제</li>
+<li>불필요한 평가/일반화 문장 피하기</li>
+<li>외부 인용문/참조(특히 서지)는 거의 사용하지 않음</li>
+<li>관례/규정은 소속 분야 또는 학회/저널 예시 참고</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="예시-초록의-전형적-구조와-시제">예시: 초록의 전형적 구조와 시제<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%98%88%EC%8B%9C-%EC%B4%88%EB%A1%9D%EC%9D%98-%EC%A0%84%ED%98%95%EC%A0%81-%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%8B%9C%EC%A0%9C" class="hash-link" aria-label="예시: 초록의 전형적 구조와 시제에 대한 직접 링크" title="예시: 초록의 전형적 구조와 시제에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>요소(순서)</th><th>시제</th><th>예시</th></tr></thead><tbody><tr><td>Background</td><td>현재시제</td><td>Type A behavior is...</td></tr><tr><td>Purpose</td><td>과거/현재완료</td><td>In this study we evaluated...</td></tr><tr><td>Method</td><td>과거시제</td><td>Children performed a 5-trial task.</td></tr><tr><td>Results</td><td>과거시제</td><td>Results showed...</td></tr><tr><td>Conclusion</td><td>현재/조동사</td><td>The results suggest that...</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="체크리스트">체크리스트<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="체크리스트에 대한 직접 링크" title="체크리스트에 대한 직접 링크">​</a></h2>
+<ul class="contains-task-list containsTaskList_AvsV">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Background, Purpose, Method, Results, Conclusion/Significance 모두 포함?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->불필요한 단어나 중복 수식어가 없는가?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->키워드는 충분히 들어있는가?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->초록만 읽어도 논문의 흐름(시작-중간-끝)이 자연스러운가?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->독립적으로 이해될 수 있는가? (외부 인용, 약어 미정의 등 문제 없음?)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->평가/감정적 표현 없이, 사실 중심으로 요약되어 있는가?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->학회/저널의 초록 분량, 작성 규칙을 따랐는가?</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="초록-예시틀">초록 예시(틀)<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EC%B4%88%EB%A1%9D-%EC%98%88%EC%8B%9C%ED%8B%80" class="hash-link" aria-label="초록 예시(틀)에 대한 직접 링크" title="초록 예시(틀)에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>배경:</strong> 주제, 문제 설명</li>
+<li><strong>목적:</strong> 연구 목적, 질문</li>
+<li><strong>방법:</strong> 데이터, 실험, 조사법 등</li>
+<li><strong>결과:</strong> 주요 결과</li>
+<li><strong>의의:</strong> 결론, 실무적/학문적 영향, 한계/미래 연구</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="결론">결론<a href="https://gracefullight.dev/2025/07/31/writing-abstracts/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
+<ul>
+<li>내 분야의 여러 논문 초록을 직접 읽고, 정보 배치/언어/길이를 파악할 것</li>
+<li>초록은 마지막에 급하게 쓰지 말고, 본문보다 더 신경 써서 여러 번 다듬을 것</li>
+<li>반드시 연구의 "새로움, 의의, 차별성"을 한두 문장으로 명확히 드러낼 것</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="research" term="research"/>
+        <category label="TRP" term="TRP"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[연구 주제 구체화, Narrowing Research Topic]]></title>
         <id>https://gracefullight.dev/2025/07/31/narrowing-research-topic/</id>
@@ -663,76 +758,5 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="ai" term="ai"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[연구문제(Research Problem)의 개념, 유형, 선택 전략]]></title>
-        <id>https://gracefullight.dev/2025/07/29/research-problem-complete-guide/</id>
-        <link href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/"/>
-        <updated>2025-07-29T04:21:56.714Z</updated>
-        <summary type="html"><![CDATA[Research Problem Guide]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="1-연구문제-정의-및-역할">1. 연구문제 정의 및 역할<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#1-%EC%97%B0%EA%B5%AC%EB%AC%B8%EC%A0%9C-%EC%A0%95%EC%9D%98-%EB%B0%8F-%EC%97%AD%ED%95%A0" class="hash-link" aria-label="1. 연구문제 정의 및 역할에 대한 직접 링크" title="1. 연구문제 정의 및 역할에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>연구문제는 사회·행동과학에서 분석의 출발점이자 글쓰기의 핵심 조직 원리이며
-학문적 소통의 중심 주제이며, 다른 연구 주제로의 확장 기반이 된다.</p>
-</blockquote>
-<ul>
-<li>새로운 지식과 이해 도출</li>
-<li>실용적 해결책 또는 정책 제안</li>
-<li>인간 조건 개선</li>
-<li>실천적 방법론 개발</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="2-연구문제-유형과-예시-기후변화-주제-기반">2. 연구문제 유형과 예시 (기후변화 주제 기반)<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#2-%EC%97%B0%EA%B5%AC%EB%AC%B8%EC%A0%9C-%EC%9C%A0%ED%98%95%EA%B3%BC-%EC%98%88%EC%8B%9C-%EA%B8%B0%ED%9B%84%EB%B3%80%ED%99%94-%EC%A3%BC%EC%A0%9C-%EA%B8%B0%EB%B0%98" class="hash-link" aria-label="2. 연구문제 유형과 예시 (기후변화 주제 기반)에 대한 직접 링크" title="2. 연구문제 유형과 예시 (기후변화 주제 기반)에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>유형</th><th>설명</th><th>기후 변화 예시</th></tr></thead><tbody><tr><td>Action</td><td>사회 변화 유도 목적</td><td>가뭄 지역 식량 운송 개선</td></tr><tr><td>Applied</td><td>실용적 해결 목표</td><td>해수면 상승 → 기반시설 개선</td></tr><tr><td>Causal</td><td>인과관계 분석</td><td>빙하 감소 → 농업 ↓ → 경제 ↓</td></tr><tr><td>Developmental</td><td>개념 확산/수용 과정 분석</td><td>재생에너지 수용 인식 변화</td></tr><tr><td>Exploratory</td><td>미지 영역 탐색</td><td>산불 연기 → 노인 건강 영향 조사</td></tr><tr><td>Predictive</td><td>미래 예측</td><td>북극 해빙 → 항로 개방 대응 시나리오</td></tr><tr><td>Theoretical</td><td>개념적 이론 확장</td><td>장소애착 이론을 통한 메시지 전략</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="3-연구문제-선정-절차">3. 연구문제 선정 절차<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#3-%EC%97%B0%EA%B5%AC%EB%AC%B8%EC%A0%9C-%EC%84%A0%EC%A0%95-%EC%A0%88%EC%B0%A8" class="hash-link" aria-label="3. 연구문제 선정 절차에 대한 직접 링크" title="3. 연구문제 선정 절차에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="a-주제를-제공받는-경우">A. 주제를 제공받는 경우<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#a-%EC%A3%BC%EC%A0%9C%EB%A5%BC-%EC%A0%9C%EA%B3%B5%EB%B0%9B%EB%8A%94-%EA%B2%BD%EC%9A%B0" class="hash-link" aria-label="A. 주제를 제공받는 경우에 대한 직접 링크" title="A. 주제를 제공받는 경우에 대한 직접 링크">​</a></h3>
-<ol>
-<li>핵심 개념 및 용어 도출</li>
-<li>배경문헌 검토 (ProQuest, JSTOR 등)</li>
-<li>비판적 시각 형성 (찬반 근거 확보)</li>
-<li>아웃라인 구성</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="b-주제-리스트에서-선택하는-경우">B. 주제 리스트에서 선택하는 경우<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#b-%EC%A3%BC%EC%A0%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%97%90%EC%84%9C-%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94-%EA%B2%BD%EC%9A%B0" class="hash-link" aria-label="B. 주제 리스트에서 선택하는 경우에 대한 직접 링크" title="B. 주제 리스트에서 선택하는 경우에 대한 직접 링크">​</a></h3>
-<ul>
-<li>“쉬운 주제”보다 <strong>흥미, 전공, 개인적 의미</strong> 고려</li>
-<li>위와 같은 절차 적용</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="c-자유-주제-설정">C. 자유 주제 설정<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#c-%EC%9E%90%EC%9C%A0-%EC%A3%BC%EC%A0%9C-%EC%84%A4%EC%A0%95" class="hash-link" aria-label="C. 자유 주제 설정에 대한 직접 링크" title="C. 자유 주제 설정에 대한 직접 링크">​</a></h3>
-<ol>
-<li>“무엇을 이해하고 싶은가?”라는 질문에서 시작</li>
-<li>아이디어 수집 전략<!-- -->
-<ul>
-<li>강의자료, 시사 뉴스, SNS, 과거 과제 등</li>
-</ul>
-</li>
-<li>주제를 연구문제로 구체화 후 위 절차 적용</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="4-문헌-활용-전략">4. 문헌 활용 전략<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#4-%EB%AC%B8%ED%97%8C-%ED%99%9C%EC%9A%A9-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="4. 문헌 활용 전략에 대한 직접 링크" title="4. 문헌 활용 전략에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>활용 방식</th><th>설명</th></tr></thead><tbody><tr><td>비판적 활용</td><td>기존 주장의 약점을 반박하거나 대안 제시</td></tr><tr><td>아이디어 확장</td><td>타인의 관점으로 본인 주장을 보완</td></tr><tr><td>역사적 맥락 제공</td><td>주제의 시간적 변화나 발전 과정을 조망</td></tr><tr><td>학제 간 통찰 확보</td><td>사회학, 정치학 등 다양한 관점 비교 분석</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="5-연구문제-vs-논제-thesis-statement">5. 연구문제 vs 논제 (Thesis Statement)<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#5-%EC%97%B0%EA%B5%AC%EB%AC%B8%EC%A0%9C-vs-%EB%85%BC%EC%A0%9C-thesis-statement" class="hash-link" aria-label="5. 연구문제 vs 논제 (Thesis Statement)에 대한 직접 링크" title="5. 연구문제 vs 논제 (Thesis Statement)에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>연구문제</th><th>논제 (Thesis)</th></tr></thead><tbody><tr><td>목적</td><td>해결해야 할 문제 제시</td><td>문제에 대한 명확한 입장 표명</td></tr><tr><td>문서 위치</td><td>서론 초반</td><td>서론 마지막 문단</td></tr><tr><td>성격</td><td>측정 가능한 현상 기술</td><td>분석, 주장, 평가 등 입장 제시</td></tr><tr><td>관계</td><td>논제의 기반이 됨</td><td>연구문제 해석 결과로 도출됨</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="6-실전-리서치-팁">6. 실전 리서치 팁<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#6-%EC%8B%A4%EC%A0%84-%EB%A6%AC%EC%84%9C%EC%B9%98-%ED%8C%81" class="hash-link" aria-label="6. 실전 리서치 팁에 대한 직접 링크" title="6. 실전 리서치 팁에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Google Scholar의 "Cited by"</strong> 기능으로 후속 연구 추적</li>
-<li><strong>동의어 및 관련 키워드</strong>로 검색 확장</li>
-<li><strong>참고문헌 추적</strong>: 자주 인용된 자료는 핵심 이론일 가능성 높음</li>
-<li><strong>EndNote, RefWorks</strong>로 문헌 정리</li>
-<li>아웃라인 작성 시 <strong>논리적 공백이 생기면 추가 조사 필요</strong></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="7-참고용-리서치-도구-및-플랫폼">7. 참고용 리서치 도구 및 플랫폼<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#7-%EC%B0%B8%EA%B3%A0%EC%9A%A9-%EB%A6%AC%EC%84%9C%EC%B9%98-%EB%8F%84%EA%B5%AC-%EB%B0%8F-%ED%94%8C%EB%9E%AB%ED%8F%BC" class="hash-link" aria-label="7. 참고용 리서치 도구 및 플랫폼에 대한 직접 링크" title="7. 참고용 리서치 도구 및 플랫폼에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>CQ Researcher</strong> – 이슈 중심의 정책 보고서 제공</li>
-<li><strong>Opposing Viewpoints In Context</strong> – 사회 문제에 대한 다양한 관점</li>
-<li><strong>Policy Commons</strong> – 글로벌 정책 데이터베이스</li>
-<li><strong>JSTOR</strong> – 학술지 기반의 과거 연구 자료</li>
-<li><strong>New York Times Topics</strong> – 주요 시사 이슈 정리 및 자료</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="8-개선-제안-요약">8. 개선 제안 요약<a href="https://gracefullight.dev/2025/07/29/research-problem-complete-guide/#8-%EA%B0%9C%EC%84%A0-%EC%A0%9C%EC%95%88-%EC%9A%94%EC%95%BD" class="hash-link" aria-label="8. 개선 제안 요약에 대한 직접 링크" title="8. 개선 제안 요약에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>항목</th><th>제안 내용</th></tr></thead><tbody><tr><td>유형 비교 도식화</td><td>7가지 유형을 목적/적용성과 함께 도식화</td></tr><tr><td>검색 예시 보강</td><td>고급 검색식 예시 추가 (ex. “EU AND terrorism AND credibility”)</td></tr><tr><td>논제 예시 확장</td><td>분석형, 설명형, 주장형 등 다양한 논제 샘플 제시</td></tr><tr><td>실패 사례 제시</td><td>과도하게 좁은 주제나 불명확한 문제 사례 소개</td></tr><tr><td>전체 개요 문단 추가</td><td>전체 문서 요약용 300자 내외 개요 삽입 (블로그/논문 개요에 활용 가능)</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="research" term="research"/>
-        <category label="TRP" term="TRP"/>
     </entry>
 </feed>
