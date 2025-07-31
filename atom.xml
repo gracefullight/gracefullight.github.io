@@ -2,11 +2,269 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-31T05:06:36.513Z</updated>
+    <updated>2025-07-31T06:27:05.237Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[논거 작성, Integrating Evidence in Writing]]></title>
+        <id>https://gracefullight.dev/2025/07/31/integrating-evidence-writing/</id>
+        <link href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/"/>
+        <updated>2025-07-31T06:27:05.237Z</updated>
+        <summary type="html"><![CDATA[Integrating Evidence in Writing]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="논거-작성-중요성">논거 작성 중요성<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EB%85%BC%EA%B1%B0-%EC%9E%91%EC%84%B1-%EC%A4%91%EC%9A%94%EC%84%B1" class="hash-link" aria-label="논거 작성 중요성에 대한 직접 링크" title="논거 작성 중요성에 대한 직접 링크">​</a></h2>
+<ul>
+<li>내 주장은 문헌·연구·전문가의 근거 위에 세워져야 함</li>
+<li>‘나만의 의견’이 아니라 <strong>evidence-based writing</strong>이 필수</li>
+<li>리서치 스킬·비판적 사고·연결 능력을 평가</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="개념-통합의-예시-원문-그대로">개념 통합의 예시 (원문 그대로)<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EA%B0%9C%EB%85%90-%ED%86%B5%ED%95%A9%EC%9D%98-%EC%98%88%EC%8B%9C-%EC%9B%90%EB%AC%B8-%EA%B7%B8%EB%8C%80%EB%A1%9C" class="hash-link" aria-label="개념 통합의 예시 (원문 그대로)에 대한 직접 링크" title="개념 통합의 예시 (원문 그대로)에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>In order to transform ourselves, we need to transform our assumptions. Through this project, all stakeholders were forced to confront their mental models (assumptions about self, others and “how the world works” – see Senge, 1995 and Kim,1993) about psychiatric patients and psychiatric disorders.
+Through exposure to such patients on a regular basis, all came to question their tacit fears and prejudices with respect to this phenomenon and, through collective engagement with it” (2007,p.200).</p>
+</blockquote>
+<ol>
+<li>특정 원칙(leadership principle) 명확히 제시</li>
+<li>본인 연구/사례와 연결</li>
+<li>관련 논문 인용</li>
+<li>실제 사례·프로젝트 결과로 확장</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="근거evidence-활용법">근거(Evidence) 활용법<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EA%B7%BC%EA%B1%B0evidence-%ED%99%9C%EC%9A%A9%EB%B2%95" class="hash-link" aria-label="근거(Evidence) 활용법에 대한 직접 링크" title="근거(Evidence) 활용법에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>직접 인용(quotation):</strong> 원문 그대로, 따옴표+출처 (전체 과제의 10% 이하 권장)</li>
+<li><strong>패러프레이즈(paraphrase):</strong> 아이디어를 내 말로 바꿔 표현</li>
+<li><strong>요약(summarize):</strong> 핵심만 간결하게 정리</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="인용-구조">인용 구조<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EC%9D%B8%EC%9A%A9-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="인용 구조에 대한 직접 링크" title="인용 구조에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="author-prominent">Author-prominent<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#author-prominent" class="hash-link" aria-label="Author-prominent에 대한 직접 링크" title="Author-prominent에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>저자중심</p>
+</blockquote>
+<ul>
+<li>Author/year upfront:
+Goldsmith (2013, p.22) argues that as writing is not only a necessary attribute for engineering practice, but also a key element of learning and a means of clarifying one’s thinking and of exploring ideas, its development needs to be both acknowledged and made visible in the engineering curriculum.</li>
+<li>Author/year sandwich:
+Goldsmith identifies the lack of visibility of writing in the engineering curriculum as a key concern for engineering educators (2013, p.24).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="information-prominent">Information-prominent<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#information-prominent" class="hash-link" aria-label="Information-prominent에 대한 직접 링크" title="Information-prominent에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>정보중심</p>
+</blockquote>
+<ul>
+<li>The current delivery of the engineering curriculum in the majority of Australian universities reflects a positivist epistemology (Radcliffe, 2006).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="claim--evidence--comment-구조">Claim – Evidence – Comment 구조<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#claim--evidence--comment-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="Claim – Evidence – Comment 구조에 대한 직접 링크" title="Claim – Evidence – Comment 구조에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Claim</strong>
+<ul>
+<li>There is abundant evidence and research that points to how much writing engineers, both practising engineers and engineering academics, actually do as part of their work.</li>
+</ul>
+</li>
+<li><strong>Including evidence</strong>
+<ul>
+<li>Winsor (1990) makes the point that writing is viewed as part of an engineer’s job, but not part of engineering (p.58). However, despite the perception that engineers have of themselves as people who work with objects, “writing is what engineers do” (p.68).</li>
+</ul>
+</li>
+<li><strong>Comment</strong>
+<ul>
+<li>This point illustrates an essential conflict in how engineers see their work and may explain why writing is not seen as integral to the engineering curriculum.</li>
+</ul>
+</li>
+<li>근거(문헌/데이터) 인용 후 <strong>내 해설(코멘트)</strong> 반드시 추가</li>
+<li>단순 인용/요약/패러프레이즈만 쓰면 감점, 내 논지와의 연결이 필수</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="acknowledging-verbs">Acknowledging verbs<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#acknowledging-verbs" class="hash-link" aria-label="Acknowledging verbs에 대한 직접 링크" title="Acknowledging verbs에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>아래 동사표를 활용해서, ‘사실 단순 전달’ ‘주장/강조’ ‘평가/비판’ 뉘앙스 표현</p>
+</blockquote>
+<table><thead><tr><th>보고·묘사</th><th>주장·강조</th><th>평가·동의</th><th>비판·반박</th></tr></thead><tbody><tr><td>states</td><td>asserts</td><td>agrees</td><td>disagrees</td></tr><tr><td>points out</td><td>claims</td><td>justifies</td><td>contests</td></tr><tr><td>notes</td><td>argues</td><td>affirms</td><td>disputes</td></tr><tr><td>remarks</td><td>contends</td><td>clarifies</td><td>rejects</td></tr><tr><td>describes</td><td>maintains</td><td>supports</td><td>counters</td></tr><tr><td>believes</td><td>demonstrates</td><td>finds/found</td><td>challenges</td></tr><tr><td>adds</td><td>suggests</td><td>confirms</td><td>elaborates</td></tr><tr><td>reports</td><td>implies</td><td>indicates</td><td>illustrates</td></tr><tr><td>questions</td><td>theorizes</td><td>puts forward</td><td>counters</td></tr><tr><td>clarifies</td><td>offers</td><td>reasons</td><td></td></tr></tbody></table>
+<ul>
+<li>동사 선택에 따라 <strong>정보가 사실인지, 주장/의견/이론/비판인지</strong> 의미가 달라짐</li>
+<li>다양한 acknowledging verbs를 활용해 논거와 비판적 사고력을 드러내자</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="결론">결론<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>내 주장은 문헌·데이터·전문가 근거에 세우고, 근거 인용 뒤에는 반드시 <strong>내 생각/코멘트</strong>로 마무리</p>
+</blockquote>
+<ul>
+<li>claim(주장)-evidence(근거)-comment(코멘트) 구조를 항상 의식</li>
+<li>인용/패러프레이즈/요약 방식 혼합</li>
+<li>인용은 반드시 UTS Harvard 스타일로!</li>
+<li>인용 뒤 해설/연결문(코멘트) 반드시 포함</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="research" term="research"/>
+        <category label="TRP" term="TRP"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[레퍼런싱 가이드, Harvard referencing guide]]></title>
+        <id>https://gracefullight.dev/2025/07/31/harvard-referencing-guide/</id>
+        <link href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/"/>
+        <updated>2025-07-31T05:58:13.692Z</updated>
+        <summary type="html"><![CDATA[Harvard referencing guide]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="본문-인용in-text-citation">본문 인용(In-text citation)<a href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/#%EB%B3%B8%EB%AC%B8-%EC%9D%B8%EC%9A%A9in-text-citation" class="hash-link" aria-label="본문 인용(In-text citation)에 대한 직접 링크" title="본문 인용(In-text citation)에 대한 직접 링크">​</a></h2>
+<ul>
+<li>한 명 저자<!-- -->
+<ul>
+<li>(Kim 2021)</li>
+</ul>
+</li>
+<li>두 명 저자<!-- -->
+<ul>
+<li>(Kim &amp; Lee 2020)</li>
+</ul>
+</li>
+<li>3명 이상<!-- -->
+<ul>
+<li>(Kim et al. 2018)</li>
+</ul>
+</li>
+<li>직접 인용(페이지)<!-- -->
+<ul>
+<li>(Smith 2009, p. 7)</li>
+</ul>
+</li>
+<li>없음/기관/미상<!-- -->
+<ul>
+<li>(Australian Bureau of Statistics 2009), (Brown n.d.)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="참고문헌reference-list-기본-규칙">참고문헌(Reference List) 기본 규칙<a href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/#%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8Creference-list-%EA%B8%B0%EB%B3%B8-%EA%B7%9C%EC%B9%99" class="hash-link" aria-label="참고문헌(Reference List) 기본 규칙에 대한 직접 링크" title="참고문헌(Reference List) 기본 규칙에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>저자 성, 이니셜. (연도). <em>제목(이탤릭)</em>, 판(필요시). 출판사, 출판지.</p>
+</blockquote>
+<ul>
+<li>제목/저널명은 이탤릭</li>
+<li>Reference List는 알파벳 순</li>
+<li>본문과 Reference List가 정확히 일치해야 함</li>
+<li>모든 항목은 마침표로 끝남</li>
+<li>저자 4명 이상: 본문엔 첫 저자 et al., Reference List엔 모두 작성</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="자료유형별-참고문헌-예시">자료유형별 참고문헌 예시<a href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/#%EC%9E%90%EB%A3%8C%EC%9C%A0%ED%98%95%EB%B3%84-%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="자료유형별 참고문헌 예시에 대한 직접 링크" title="자료유형별 참고문헌 예시에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>자료유형</th><th>예시</th></tr></thead><tbody><tr><td><strong>단행본(Book)</strong></td><td>Smith, J. 2022, <em>Introduction to AI</em>, Tech Press, Sydney.</td></tr><tr><td><strong>학술지 논문(Journal Article)</strong></td><td>Kim, S. &amp; Lee, J. 2020, ‘Deep learning for image recognition’, <em>Journal of AI Research</em>, vol. 15, no. 3, pp. 123-39.</td></tr><tr><td><strong>책 챕터(Book Chapter)</strong></td><td>Brown, L. 2018, ‘Data analysis techniques’, in S. Miller (ed.), <em>Handbook of statistics</em>, Data Publishing, Melbourne, pp. 45-67.</td></tr><tr><td><strong>웹사이트(Website)</strong></td><td>UTS 2024, UTS Harvard referencing guide, viewed 31 July 2025, <code>&lt;https://www.lib.uts.edu.au/help/referencing/harvard-uts-referencing-guide&gt;</code></td></tr><tr><td><strong>보고서/정부 보고서(Report)</strong></td><td>Australian Bureau of Statistics 2019, <em>Labour force, Australia: May 2019</em> (Catalogue No. 6202.0), ABS, Canberra.</td></tr><tr><td><strong>컨퍼런스 논문(Conference Paper)</strong></td><td>Jakubowicz, A. 2002, ‘Race vilification and communal leadership’, <em>Beyond Tolerance: National Conference on Racism</em>, Human Rights and Equal Opportunities Commission, Sydney, viewed 2 Sep 2009, <code>&lt;http://www.humanrights.gov.au/...&gt;</code></td></tr><tr><td><strong>유튜브/영상(YouTube/Video)</strong></td><td>UTS Library 2009, It’s the UTS Library with Mr Hank, videorecording, YouTube, viewed 21 Sep 2009, <code>&lt;http://www.youtube.com/watch?v=QYP_hZmcRgg&gt;</code></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="틀리기-쉬운-주요-규칙">틀리기 쉬운 주요 규칙<a href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/#%ED%8B%80%EB%A6%AC%EA%B8%B0-%EC%89%AC%EC%9A%B4-%EC%A3%BC%EC%9A%94-%EA%B7%9C%EC%B9%99" class="hash-link" aria-label="틀리기 쉬운 주요 규칙에 대한 직접 링크" title="틀리기 쉬운 주요 규칙에 대한 직접 링크">​</a></h2>
+<ul>
+<li>저자 4명 이상: 본문엔 첫 저자 et al., Reference List엔 모두 작성</li>
+<li>출판연도 없음: n.d. 사용 (예: Brown n.d.)</li>
+<li>직접 인용 페이지: (Kim 2018, p. 22), (Kim 2018, pp. 22–24)</li>
+<li>기관/단체 저자: (Australian Bureau of Statistics 2019)</li>
+<li>웹사이트: ‘viewed 날짜’와 URL 필수</li>
+<li>자료유형별 포맷 엄수</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="citation-style-language">Citation Style Language<a href="https://gracefullight.dev/2025/07/31/harvard-referencing-guide/#citation-style-language" class="hash-link" aria-label="Citation Style Language에 대한 직접 링크" title="Citation Style Language에 대한 직접 링크">​</a></h2>
+<ul>
+<li><a href="https://github.com/citation-style-language/styles/blob/master/harvard-university-of-technology-sydney.csl" target="_blank" rel="noopener noreferrer">Harvard University of Technology Sydney</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="research" term="research"/>
+        <category label="TRP" term="TRP"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[연구비/프로젝트 제안서, Executive Summary & Project Proposal]]></title>
+        <id>https://gracefullight.dev/2025/07/31/proposal-executive-summary/</id>
+        <link href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/"/>
+        <updated>2025-07-31T05:27:52.309Z</updated>
+        <summary type="html"><![CDATA[Executive Summary & Project Proposal]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>프로젝트 제안서·연구비 지원서·그랜트(Grant) 작성에서 <strong>Executive Summary</strong>는 가장 중요함</p>
+</blockquote>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="executive-summary-개념">Executive Summary 개념<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#executive-summary-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="Executive Summary 개념에 대한 직접 링크" title="Executive Summary 개념에 대한 직접 링크">​</a></h2>
+<ul>
+<li>전체 제안서의 “영화 예고편” 역할</li>
+<li>2<del>4단락, 200</del>400단어 이내</li>
+<li>의사결정자·후원자·심사자에게 “왜 이 제안을 지원해야 하는가”를 <strong>짧고 강렬하게 설득</strong></li>
+<li><strong>정보 + 영감(설득)</strong> 이 모두 포함되어야 함 (무엇을/왜/어떻게/우리만의 강점/무엇을 요청하는가)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="executive-summary-필수-요소">Executive Summary 필수 요소<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#executive-summary-%ED%95%84%EC%88%98-%EC%9A%94%EC%86%8C" class="hash-link" aria-label="Executive Summary 필수 요소에 대한 직접 링크" title="Executive Summary 필수 요소에 대한 직접 링크">​</a></h2>
+<ol>
+<li><strong>Who you are</strong>
+<ul>
+<li>조직/팀의 정체성, 미션, 전문성</li>
+</ul>
+</li>
+<li><strong>What you do</strong>
+<ul>
+<li>핵심 사업·프로젝트(이번 제안의 골자)</li>
+</ul>
+</li>
+<li><strong>Problem</strong>
+<ul>
+<li>해결하려는 핵심 이슈, 사회적/과학적 필요성</li>
+</ul>
+</li>
+<li><strong>How</strong>
+<ul>
+<li>어떻게 해결할 것인가? (방법, 서비스, 전략)</li>
+</ul>
+</li>
+<li><strong>What makes you unique</strong>
+<ul>
+<li>차별성, 기존과의 차이, 실적·수치·임팩트</li>
+</ul>
+</li>
+<li><strong>Request/Need</strong>
+<ul>
+<li>필요한 자원, 예산, 협력 등</li>
+</ul>
+</li>
+<li><strong>Call to Action</strong>
+<ul>
+<li>심사자/후원자에게 “지원/협업”을 유도하는 마무리</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="작성예시">작성예시<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#%EC%9E%91%EC%84%B1%EC%98%88%EC%8B%9C" class="hash-link" aria-label="작성예시에 대한 직접 링크" title="작성예시에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="1단락">1단락<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#1%EB%8B%A8%EB%9D%BD" class="hash-link" aria-label="1단락에 대한 직접 링크" title="1단락에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>2~3문장으로 자연스럽게 포함</p>
+</blockquote>
+<ul>
+<li>미션/정체성(Who),</li>
+<li>핵심 내용/프로그램(What),</li>
+<li>요청사항(Request)</li>
+<li>차별성(Why us?)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="2단락">2단락<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#2%EB%8B%A8%EB%9D%BD" class="hash-link" aria-label="2단락에 대한 직접 링크" title="2단락에 대한 직접 링크">​</a></h3>
+<ul>
+<li>제안/프로젝트가 어떤 문제, 대상, 지역에 초점을 두는지</li>
+<li>성장·성과·임팩트 등 구체 데이터</li>
+<li>현재 지원이 왜 필요한지, 구체적으로 설명</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="3단락">3단락<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#3%EB%8B%A8%EB%9D%BD" class="hash-link" aria-label="3단락에 대한 직접 링크" title="3단락에 대한 직접 링크">​</a></h3>
+<ul>
+<li>특별함, 실적, 추천사·통계·객관적 데이터</li>
+<li>심사자·후원자를 행동하게 하는 콜투액션(Call to action)<!-- -->
+<ul>
+<li>(“지금 함께 해달라”, “이 지원이 필요하다” 등)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="작성-팁">작성 팁<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#%EC%9E%91%EC%84%B1-%ED%8C%81" class="hash-link" aria-label="작성 팁에 대한 직접 링크" title="작성 팁에 대한 직접 링크">​</a></h2>
+<ul>
+<li>너무 추상적이거나 정보만 나열하지 않기</li>
+<li>임팩트 있는 수치·결과·추천사 적극 활용</li>
+<li>심사자(후원자)의 관점에서 “왜 지금, 왜 우리”를 답할 것</li>
+<li>본문(프로포절) 전체 내용과 일치, 연결되어야 함</li>
+<li>최종 작성 후 동료/멘토에게 피드백 꼭 받기</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="평가기준">평가기준<a href="https://gracefullight.dev/2025/07/31/proposal-executive-summary/#%ED%8F%89%EA%B0%80%EA%B8%B0%EC%A4%80" class="hash-link" aria-label="평가기준에 대한 직접 링크" title="평가기준에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>항목</th><th>배점</th><th>세부 평가 기준</th></tr></thead><tbody><tr><td><strong>Cover Page and Table of Contents</strong></td><td>2</td><td>지정된 모든 정보(양식, 목차 등)를 정확히 포함하고 있음</td></tr><tr><td><strong>Executive Summary</strong></td><td>6</td><td>제안서를 바탕으로, 간결하면서도 완전한 요약과 합리적인 권고(제안)가 제시되어 있음</td></tr><tr><td><strong>Introduction</strong></td><td>5</td><td>연구 문제, 연구의 맥락, 목표, 작성자 관점이 명확히 진술됨.<br>연구의 중요성과 관련성이 명확히 전달됨.<br>보고서의 주요 결과가 간단히 언급됨. 보고서의 전체 구성에 대한 간략한 안내가 제공됨.</td></tr><tr><td><strong>Research Aims and Objectives</strong></td><td>5</td><td>이해하기 쉽고 실현 가능한 연구 목표와 목적이 제시됨.<br>연구 문제의 명확성과 연구 프로젝트로서의 실행 가능성이 잘 드러남.</td></tr><tr><td><strong>Background</strong></td><td>6</td><td>해당 주제에 대한 기존 지식을 논리적이고 비판적으로 종합함.<br>배경 설명이 연구 문제와 직접적으로 연관되어 있음.</td></tr><tr><td><strong>Research Significance and Innovation</strong></td><td>6</td><td>연구의 중요성이 명확히 진술됨. 연구 결과로 이득을 얻는 대상이 구체적으로 제시됨.<br>연구의 혁신성/새로움이 분명히 기술됨.<br>배경(문헌고찰)과 연계해 왜 이 문제가 연구되어야 하는지 설득력 있게 논증함.</td></tr><tr><td><strong>Research Methods</strong></td><td>6</td><td>선택한 연구 방법이 명확히 설명되고, 적절한 참고 문헌(근거)로 뒷받침됨.<br>선택한 연구 방법과 연구 문제 및 목표 간의 연결이 명확히 드러남.</td></tr><tr><td><strong>Conclusion</strong></td><td>5</td><td>프로젝트 제안서 전체의 논리적 요약을 제공함.<br>연구 문제의 중요성과, 제안된 연구 접근법의 효과성을 설득력 있게 결론지음.</td></tr><tr><td><strong>Reference List</strong></td><td>4</td><td>Harvard 스타일에 맞춘 완벽한 참고문헌 리스트가 작성됨.</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="research" term="research"/>
+        <category label="TRP" term="TRP"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[초록 작성, Writing Abstracts]]></title>
         <id>https://gracefullight.dev/2025/07/31/writing-abstracts/</id>
@@ -118,72 +376,51 @@
 <p>주제를 구체화하면 연구 질문도 자연스럽게 따라옴</p>
 </blockquote>
 <ul>
-<li>
-<p><strong>Aspect</strong>
-연구 문제를 바라보는 하나의 '측면'이나 '관점'만 선택
-<em>예시: 전체 현상 중 한 가지 특성, 한 가지 변수 등</em></p>
+<li><strong>Aspect</strong>: 연구 문제를 바라보는 하나의 '측면'이나 '관점'만 선택<!-- -->
+<ul>
+<li><em>예시: 전체 현상 중 한 가지 특성, 한 가지 변수 등</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Components</strong>
-주제를 더 작은 구성 요소로 분해
-<em>예시: 대상을 세부 단위별로 나누어 분석</em></p>
+<li><strong>Components</strong>: 주제를 더 작은 구성 요소로 분해<!-- -->
+<ul>
+<li><em>예시: 대상을 세부 단위별로 나누어 분석</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Place</strong>
-분석 지역을 좁힐수록 주제도 구체화됨
-<em>예시: 남태평양 지역 → 호주</em></p>
+<li><strong>Place</strong>: 분석 지역을 좁힐수록 주제도 구체화됨<!-- -->
+<ul>
+<li><em>예시: 남태평양 지역 → 호주</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Relationship</strong>
-변수 간 관계나 관점(원인/결과, 비교/대조 등) 초점<br>
-<em>예시: 남녀 비교, 현대/과거 비교, 문제/해결 구조 등</em></p>
+<li><strong>Relationship</strong>: 변수 간 관계나 관점(원인/결과, 비교/대조 등) 초점<!-- -->
+<ul>
+<li><em>예시: 남녀 비교, 현대/과거 비교, 문제/해결 구조 등</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Time</strong>
-분석하는 시간 범위를 한정
-<em>예시: 최근 5년, 특정 역사적 시기 등</em></p>
+<li><strong>Time</strong>: 분석하는 시간 범위를 한정<!-- -->
+<ul>
+<li><em>예시: 최근 5년, 특정 역사적 시기 등</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Type</strong>
-대상을 구체적 유형, 그룹, 사례 등으로 한정<br>
-<em>예시: 교통 → 학교 주변 SUV만, 학생 운전자만 등</em></p>
+<li><strong>Type</strong>: 대상을 구체적 유형, 그룹, 사례 등으로 한정<!-- -->
+<ul>
+<li><em>예시: 교통 → 학교 주변 SUV만, 학생 운전자만 등</em></li>
+</ul>
 </li>
-<li>
-<p><strong>Combination</strong>
-위 전략들을 2개 이상 조합
-<em>예시: 특정 지역 + 특정 시간 + 특정 유형</em></p>
+<li><strong>Combination</strong>: 위 전략들을 2개 이상 조합<!-- -->
+<ul>
+<li><em>예시: 특정 지역 + 특정 시간 + 특정 유형</em></li>
+</ul>
 </li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="주제-구체화를-위한-핵심-질문">주제 구체화를 위한 핵심 질문<a href="https://gracefullight.dev/2025/07/31/narrowing-research-topic/#%EC%A3%BC%EC%A0%9C-%EA%B5%AC%EC%B2%B4%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%95%B5%EC%8B%AC-%EC%A7%88%EB%AC%B8" class="hash-link" aria-label="주제 구체화를 위한 핵심 질문에 대한 직접 링크" title="주제 구체화를 위한 핵심 질문에 대한 직접 링크">​</a></h2>
 <ul>
-<li>
-<p><strong>Who?</strong><br>
-<!-- -->연구의 대상을 누구로 제한할 것인가?</p>
-</li>
-<li>
-<p><strong>What?</strong><br>
-<!-- -->넓은 주제에서 구체적으로 어떤 점이 흥미로운가?</p>
-</li>
-<li>
-<p><strong>Where?</strong>
-지리적 범위를 어디로 한정할 것인가?</p>
-</li>
-<li>
-<p><strong>When?</strong>
-어느 시기에 집중할 것인가?</p>
-</li>
-<li>
-<p><strong>How?</strong>
-연구 방법, 필요한 정보/장비는 무엇인가?</p>
-</li>
-<li>
-<p><strong>How much?</strong>
-기대하는 변화나 측정 가능한 차이는 무엇인가?</p>
-</li>
-<li>
-<p><strong>Why?</strong>
-이 주제가 왜 중요/의미 있는가? 왜 이 주제를 연구하는가?</p>
-</li>
+<li><strong>Who?</strong>: 연구의 대상을 누구로 제한할 것인가?</li>
+<li><strong>What?</strong>: 넓은 주제에서 구체적으로 어떤 점이 흥미로운가?</li>
+<li><strong>Where?</strong>: 지리적 범위를 어디로 한정할 것인가?</li>
+<li><strong>When?</strong>: 어느 시기에 집중할 것인가?</li>
+<li><strong>How?</strong>: 연구 방법, 필요한 정보/장비는 무엇인가?</li>
+<li><strong>How much?</strong>: 기대하는 변화나 측정 가능한 차이는 무엇인가?</li>
+<li><strong>Why?</strong>: 이 주제가 왜 중요/의미 있는가? 왜 이 주제를 연구하는가?</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
@@ -371,7 +608,7 @@
         <category label="TRP" term="TRP"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[문헌고찰, Literature Review]]></title>
+        <title type="html"><![CDATA[문헌 고찰, Literature Review]]></title>
         <id>https://gracefullight.dev/2025/07/31/literature-review/</id>
         <link href="https://gracefullight.dev/2025/07/31/literature-review/"/>
         <updated>2025-07-31T03:56:13.420Z</updated>
@@ -381,7 +618,7 @@
 <p>An evaluation of previous research on your topic.</p>
 </blockquote>
 <ul>
-<li>문헌고찰(Literature Review)은 <strong>내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글</strong>이다.</li>
+<li>문헌 고찰(Literature Review)은 <strong>내가 연구하는 주제와 관련된 기존 연구들을 평가하는 글</strong>이다.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="목적">목적<a href="https://gracefullight.dev/2025/07/31/literature-review/#%EB%AA%A9%EC%A0%81" class="hash-link" aria-label="목적에 대한 직접 링크" title="목적에 대한 직접 링크">​</a></h2>
 <blockquote>
@@ -398,7 +635,7 @@
 <p>Minimum: well-established research in the field; most recent relevant research.</p>
 </blockquote>
 <ul>
-<li>문헌고찰에는 반드시 <strong>이 분야에서 잘 알려진 주요 연구</strong>와 <strong>가장 최근의 관련 연구</strong>를 포함해야 한다.</li>
+<li>문헌 고찰에는 반드시 <strong>이 분야에서 잘 알려진 주요 연구</strong>와 <strong>가장 최근의 관련 연구</strong>를 포함해야 한다.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_B5Wd" id="구성">구성<a href="https://gracefullight.dev/2025/07/31/literature-review/#%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="구성에 대한 직접 링크" title="구성에 대한 직접 링크">​</a></h2>
 <!-- -->
@@ -434,9 +671,9 @@
 </blockquote>
 <ul>
 <li>별도 기준이 없다면 15% - 30%</li>
-<li>논문은 60%가 본인의 작업이어야 한다. 문헌고찰이 논문의 40%를 초과하면 안 된다.</li>
+<li>논문은 60%가 본인의 작업이어야 한다. 문헌 고찰이 논문의 40%를 초과하면 안 된다.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="문헌고찰에서-해야-할-일">문헌고찰에서 해야 할 일<a href="https://gracefullight.dev/2025/07/31/literature-review/#%EB%AC%B8%ED%97%8C%EA%B3%A0%EC%B0%B0%EC%97%90%EC%84%9C-%ED%95%B4%EC%95%BC-%ED%95%A0-%EC%9D%BC" class="hash-link" aria-label="문헌고찰에서 해야 할 일에 대한 직접 링크" title="문헌고찰에서 해야 할 일에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="문헌-고찰에서-해야-할-일">문헌 고찰에서 해야 할 일<a href="https://gracefullight.dev/2025/07/31/literature-review/#%EB%AC%B8%ED%97%8C-%EA%B3%A0%EC%B0%B0%EC%97%90%EC%84%9C-%ED%95%B4%EC%95%BC-%ED%95%A0-%EC%9D%BC" class="hash-link" aria-label="문헌 고찰에서 해야 할 일에 대한 직접 링크" title="문헌 고찰에서 해야 할 일에 대한 직접 링크">​</a></h2>
 <ul>
 <li>분야 내에서 <strong>중요하고 관련 있는 연구들을 파악하는 능력</strong>을 보여준다.</li>
 <li>해당 연구들을 <strong>체계적으로 정리, 평가</strong>할 수 있음을 보여준다.</li>
@@ -534,229 +771,5 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="vocab" term="vocab"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[호주 집 구하기]]></title>
-        <id>https://gracefullight.dev/2025/07/29/study-in-australia-housing/</id>
-        <link href="https://gracefullight.dev/2025/07/29/study-in-australia-housing/"/>
-        <updated>2025-07-29T11:38:34.742Z</updated>
-        <summary type="html"><![CDATA[A guide to finding housing while studying in Australia]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="시리즈">시리즈<a href="https://gracefullight.dev/2025/07/29/study-in-australia-housing/#%EC%8B%9C%EB%A6%AC%EC%A6%88" class="hash-link" aria-label="시리즈에 대한 직접 링크" title="시리즈에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://gracefullight.dev/2025/06/22/study-in-australia-visa-conditions/">1. 호주 학생비자 주의사항</a></li>
-<li><a href="https://gracefullight.dev/2025/06/28/study-in-australia-insurance-pension-health/">2. 호주 학생 보험 및 한국 보험, 연금 연기</a></li>
-<li><a href="https://gracefullight.dev/2025/07/02/study-in-australia-marriage/">3. 호주 결혼 준비</a></li>
-<li><a href="https://gracefullight.dev/2025/07/29/study-in-australia-housing/">4. 호주 집 구하기</a></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="집-구성">집 구성<a href="https://gracefullight.dev/2025/07/29/study-in-australia-housing/#%EC%A7%91-%EA%B5%AC%EC%84%B1" class="hash-link" aria-label="집 구성에 대한 직접 링크" title="집 구성에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>구분</th><th>영어</th><th>내용</th></tr></thead><tbody><tr><td>마스터 룸</td><td>Master room</td><td>한국 안방, 화장실이 딸려있어 다른 방에 비해 비싼 편이고 보통 2~4명까지 들어감</td></tr><tr><td>세컨드 룸</td><td>Second room</td><td>한국 작은방, 2~3명 정도 들어감</td></tr><tr><td>리빙 룸</td><td>Living room</td><td>거실에서 파티션을 치고 생활하는 것, 가격이 저렴하지만 불편함이 많음.</td></tr><tr><td>선 룸</td><td>Sun room</td><td>베란다, 베란다여서 저렴할 것 같지만 독방으로 생각하는 사람들도 있어 의외로 가격이 비쌈</td></tr><tr><td>본드 피</td><td>Bond fee</td><td>한국 월세 보증금, 호주는 주당 방비를 내기 때문에 처음 들어갈 때 4주 정도의 본드 피를 내고 나올 때 돌려받음</td></tr><tr><td>풀리 퍼니시드</td><td>Fully furnished</td><td>풀 옵션(full option), 침대, 책상, 옷장 등의 가구가 갖춰진 방</td></tr><tr><td>어드밴스드 렌트</td><td>Advanced rent</td><td>방값 선불</td></tr></tbody></table>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="me" term="me"/>
-        <category label="australia" term="australia"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of software development @001]]></title>
-        <id>https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/</id>
-        <link href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/"/>
-        <updated>2025-07-29T09:05:17.618Z</updated>
-        <summary type="html"><![CDATA[Fundamentals of software development 001]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="software-engineering">Software Engineering<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#software-engineering" class="hash-link" aria-label="Software Engineering에 대한 직접 링크" title="Software Engineering에 대한 직접 링크">​</a></h2>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sdlc">SDLC<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sdlc" class="hash-link" aria-label="SDLC에 대한 직접 링크" title="SDLC에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sw-development-methodologies">SW Development Methodologies<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sw-development-methodologies" class="hash-link" aria-label="SW Development Methodologies에 대한 직접 링크" title="SW Development Methodologies에 대한 직접 링크">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="waterfall">Waterfall<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#waterfall" class="hash-link" aria-label="Waterfall에 대한 직접 링크" title="Waterfall에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Pros<!-- -->
-<ul>
-<li>Simple &amp; easy: each phase has specific deliverables</li>
-<li>Clear &amp; set milestones</li>
-<li>Fixed requirements</li>
-<li>Works well for small projects with specific set of requirements</li>
-<li>Determine the schedule early</li>
-<li>Clear structure</li>
-</ul>
-</li>
-<li>Cons<!-- -->
-<ul>
-<li>Working sw produced only at the end</li>
-<li>High uncertainty of sw quality and functionality</li>
-<li>Delayed testing, delays sw bugs discovery</li>
-<li>After completion, no formal way to change the requirements</li>
-<li>Fix working model, difficult to implement for complex projects</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="agile">Agile<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#agile" class="hash-link" aria-label="Agile에 대한 직접 링크" title="Agile에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Iterative cyclical progression of the SDLC<!-- -->
-<ul>
-<li>Repetitive structure based on iterations (sprints)</li>
-<li>2 ~ 4 weeks, SDLC repeats</li>
-<li>Each release has 3 or more iterations</li>
-<li>Working prototype is produced at the end of each iteration</li>
-<li>Prototype is for QA and used as input for next iteration</li>
-<li>Multiple releases</li>
-</ul>
-</li>
-<li>Pros<!-- -->
-<ul>
-<li>Innovation through team collaboration</li>
-<li>Time to market</li>
-<li>Continuous testing</li>
-<li>Risk reduction, finding sw bugs early</li>
-<li>Customer feedback loop</li>
-<li>Flexibility to change requirements</li>
-<li>Automates most of the SDLC === DevOps approach</li>
-</ul>
-</li>
-<li>Cons<!-- -->
-<ul>
-<li>Lack of long-term planning</li>
-<li>Cost estimation is difficult</li>
-<li>Limited documentation</li>
-<li>No finite end</li>
-<li>Difficult to see the end result due due to cyclic nature of agile</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="sw-development-paradigms">SW Development Paradigms<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#sw-development-paradigms" class="hash-link" aria-label="SW Development Paradigms에 대한 직접 링크" title="SW Development Paradigms에 대한 직접 링크">​</a></h3>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="procedural-programming">Procedural Programming<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#procedural-programming" class="hash-link" aria-label="Procedural Programming에 대한 직접 링크" title="Procedural Programming에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>Top-down decomposition: Each sub-problem is typically implemented as a function or procedure</li>
-<li>Root represents the main program</li>
-<li>Leaves denote individual procedures or functions</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_B5Wd" id="object-oriented-programming">Object-Oriented Programming<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#object-oriented-programming" class="hash-link" aria-label="Object-Oriented Programming에 대한 직접 링크" title="Object-Oriented Programming에 대한 직접 링크">​</a></h4>
-<!-- -->
-<ul>
-<li>Abstraction: The process of hiding unnecessary details</li>
-<li>Encapsulation: Restricts the direct access to components of an object, while using methods to access and modify the data</li>
-<li>Inheritance: The process of creating sub-class</li>
-<li>Polymorphism: Allows for the creation, use, and storage of multiple objects that inherit from the same parent class</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="requirements-analysis">Requirements Analysis<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#requirements-analysis" class="hash-link" aria-label="Requirements Analysis에 대한 직접 링크" title="Requirements Analysis에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Instructions provided by the stakeholder describe a target system</p>
-</blockquote>
-<ul>
-<li>system properties, attributes and how a system should behave</li>
-<li>Decomposed into Functional requirements / Non-functional requirements</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="requirements-validation">Requirements Validation<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#requirements-validation" class="hash-link" aria-label="Requirements Validation에 대한 직접 링크" title="Requirements Validation에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Compliance</li>
-<li>Correctness</li>
-<li>Completeness</li>
-<li>Consistency</li>
-<li>Usability</li>
-</ul>
-<!-- -->
-<table><thead><tr><th>Criteria</th><th>Description</th><th>Satisfactory Score (0-5)</th><th>Recommendations</th></tr></thead><tbody><tr><td>Compliance</td><td>Degree to which the requirements meet with industry standards and regulations</td><td>0</td><td>-</td></tr><tr><td>Correctness</td><td>Degree to which the requirements is correct in terms of spelling, accuracy, grammatically.</td><td>0</td><td>-</td></tr><tr><td>Completeness</td><td>Degree to which the functional requirements match the intended software behavior</td><td>0</td><td>-</td></tr><tr><td>Consistency</td><td>Degree to which the requirements can be mapped to use cases</td><td>0</td><td>-</td></tr><tr><td>Expandability</td><td>Degree to which the requirements can be modified and improved to meet the project objectives</td><td>0</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case">Use Case<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case" class="hash-link" aria-label="Use Case에 대한 직접 링크" title="Use Case에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>an actor wants the system to, and captures functional requirements</p>
-</blockquote>
-<ul>
-<li>always started by an actor, always written from the perspective of the actor</li>
-<li>a series of actions that a user must initiate to carry out some useful work and to achieve a goal<!-- -->
-<ul>
-<li>preconditions -&gt; main flow -&gt; alternative flow -&gt; postconditions</li>
-</ul>
-</li>
-<li>reflects all the possible events in the system</li>
-<li>complete set of use cases describes all the possible ways the system will behave and defines all the requirements</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case-backlog-template">Use Case Backlog Template<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case-backlog-template" class="hash-link" aria-label="Use Case Backlog Template에 대한 직접 링크" title="Use Case Backlog Template에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>ID</th><th>Use Case Title</th><th>Actor(s)</th><th>Goal/Description</th><th>Preconditions</th><th>Postconditions</th><th>Priority</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td>UC-001</td><td>User Login</td><td>User</td><td>Allow users to log in to the system</td><td>User must have an account</td><td>User is logged in</td><td>High</td><td>Open</td><td>-</td></tr><tr><td>UC-002</td><td>View Profile</td><td>User</td><td>Allow users to view their profile information</td><td>User must be logged in</td><td>User profile is displayed</td><td>Medium</td><td>Open</td><td>-</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="user-stories">User Stories<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#user-stories" class="hash-link" aria-label="User Stories에 대한 직접 링크" title="User Stories에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Planned to be delivered in a single iteration, some user stories may span multiple iterations</li>
-<li>Single requirement expressed from developer's perspective</li>
-<li>Describes a functional or non-functional requirement</li>
-</ul>
-<!-- -->
-<ul>
-<li><strong>As a</strong> student</li>
-<li><strong>I want to</strong> submit assignments online</li>
-<li><strong>so that</strong> I can receive feedback from my instructor.</li>
-</ul>
-<table><thead><tr><th>ID</th><th>User Story</th><th>Acceptance Criteria</th><th>Priority</th><th>Status</th><th>Story Points</th><th>Notes</th></tr></thead><tbody><tr><td>US-001</td><td>As a student, I want to submit assignments online so that I can receive feedback from my instructor.</td><td>- User can upload assignment files<br>- User receives confirmation of submission<br>- Instructor can view submitted assignments</td><td>High</td><td>Open</td><td>5</td><td>-</td></tr><tr><td>US-002</td><td>As a student, I want to view my grades online so that I can track my academic progress.</td><td>- User can view grades for each assignment<br>- User can see overall course grade<br>- Grades are updated in real-time</td><td>Medium</td><td>Open</td><td>3</td><td>-</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="uml">UML<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#uml" class="hash-link" aria-label="UML에 대한 직접 링크" title="UML에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>Actors: Entity that performs actions in the system</li>
-<li>Use Cases: Oval representation inside the system boundary of a functional requirement</li>
-<li>System Boundary: Square representation of the system scope</li>
-<li>Relationships<!-- -->
-<ul>
-<li>Association: Between an actor and a use case</li>
-<li>Include: Between use cases, The included use case is always necessary for the completion of the activating use case.</li>
-<li>Extend: Between use cases, The extension use case is activated occasionally at specific extension point.</li>
-<li>Generalization/Inheritance: Between use cases, they achieve the same goal but in different ways.</li>
-</ul>
-</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="use-case-model">Use Case Model<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#use-case-model" class="hash-link" aria-label="Use Case Model에 대한 직접 링크" title="Use Case Model에 대한 직접 링크">​</a></h3>
-<!-- -->
-<ul>
-<li>System boundary: Defines the scope of the system</li>
-<li>Generalization: Describes the shared parts in a parent use case, then specializes in child use cases<!-- -->
-<ul>
-<li>Inherit features from their parent use case</li>
-<li>Add new features</li>
-<li>Change inherited features</li>
-</ul>
-</li>
-<li>Short, simple use cases on the core functionality may be completed within one iteration.</li>
-<li>Keep use cases short and simple</li>
-<li>Focus on what, not the how</li>
-<li>Avoid functional decomposition</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_B5Wd" id="uml-use-case-model">UML Use Case Model<a href="https://gracefullight.dev/2025/07/29/fundamentals-of-software-development-001/#uml-use-case-model" class="hash-link" aria-label="UML Use Case Model에 대한 직접 링크" title="UML Use Case Model에 대한 직접 링크">​</a></h3>
-<ul>
-<li>CRUD<!-- -->
-<ul>
-<li>Create a record</li>
-<li>Retrieve the record given a key</li>
-<li>Update the record with new data and store it</li>
-<li>Delete a record</li>
-</ul>
-</li>
-<li>Each is a separate goal, possibly carried by a different person with a different security level.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fsd" term="fsd"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI 에이전트와 환경]]></title>
-        <id>https://gracefullight.dev/2025/07/29/agent-and-environments/</id>
-        <link href="https://gracefullight.dev/2025/07/29/agent-and-environments/"/>
-        <updated>2025-07-29T05:30:05.989Z</updated>
-        <summary type="html"><![CDATA[AI Agent와 환경의 상호작용 및 설계 원칙]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="에이전트와-환경의-상호작용">에이전트와 환경의 상호작용<a href="https://gracefullight.dev/2025/07/29/agent-and-environments/#%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80-%ED%99%98%EA%B2%BD%EC%9D%98-%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9" class="hash-link" aria-label="에이전트와 환경의 상호작용에 대한 직접 링크" title="에이전트와 환경의 상호작용에 대한 직접 링크">​</a></h2>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_B5Wd" id="환경">환경<a href="https://gracefullight.dev/2025/07/29/agent-and-environments/#%ED%99%98%EA%B2%BD" class="hash-link" aria-label="환경에 대한 직접 링크" title="환경에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Static environment: crossword puzzle</li>
-<li>Semi-dynamic environment: Chess</li>
-<li>Dynamic environment: self-driving car</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="ai" term="ai"/>
     </entry>
 </feed>
