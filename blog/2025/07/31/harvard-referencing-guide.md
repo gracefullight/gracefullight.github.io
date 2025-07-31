@@ -40,10 +40,10 @@ tags:
 | **단행본(Book)** | Smith, J. 2022, *Introduction to AI*, Tech Press, Sydney. |
 | **학술지 논문(Journal Article)** | Kim, S. & Lee, J. 2020, ‘Deep learning for image recognition’, *Journal of AI Research*, vol. 15, no. 3, pp. 123-39. |
 | **책 챕터(Book Chapter)** | Brown, L. 2018, ‘Data analysis techniques’, in S. Miller (ed.), *Handbook of statistics*, Data Publishing, Melbourne, pp. 45-67. |
-| **웹사이트(Website)** | UTS 2024, UTS Harvard referencing guide, viewed 31 July 2025, <https://www.lib.uts.edu.au/help/referencing/harvard-uts-referencing-guide> |
+| **웹사이트(Website)** | UTS 2024, UTS Harvard referencing guide, viewed 31 July 2025, `<https://www.lib.uts.edu.au/help/referencing/harvard-uts-referencing-guide>` |
 | **보고서/정부 보고서(Report)** | Australian Bureau of Statistics 2019, *Labour force, Australia: May 2019* (Catalogue No. 6202.0), ABS, Canberra. |
-| **컨퍼런스 논문(Conference Paper)** | Jakubowicz, A. 2002, ‘Race vilification and communal leadership’, *Beyond Tolerance: National Conference on Racism*, Human Rights and Equal Opportunities Commission, Sydney, viewed 2 Sep 2009, <http://www.humanrights.gov.au/...> |
-| **유튜브/영상(YouTube/Video)** | UTS Library 2009, It’s the UTS Library with Mr Hank, videorecording, YouTube, viewed 21 Sep 2009, <http://www.youtube.com/watch?v=QYP_hZmcRgg> |
+| **컨퍼런스 논문(Conference Paper)** | Jakubowicz, A. 2002, ‘Race vilification and communal leadership’, *Beyond Tolerance: National Conference on Racism*, Human Rights and Equal Opportunities Commission, Sydney, viewed 2 Sep 2009, `<http://www.humanrights.gov.au/...>` |
+| **유튜브/영상(YouTube/Video)** | UTS Library 2009, It’s the UTS Library with Mr Hank, videorecording, YouTube, viewed 21 Sep 2009, `<http://www.youtube.com/watch?v=QYP_hZmcRgg>` |
 
 ## 틀리기 쉬운 주요 규칙
 
@@ -53,3 +53,7 @@ tags:
 - 기관/단체 저자: (Australian Bureau of Statistics 2019)
 - 웹사이트: ‘viewed 날짜’와 URL 필수
 - 자료유형별 포맷 엄수
+
+## Citation Style Language
+
+- [Harvard University of Technology Sydney](https://github.com/citation-style-language/styles/blob/master/harvard-university-of-technology-sydney.csl)
