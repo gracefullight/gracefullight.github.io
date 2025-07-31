@@ -1,5 +1,5 @@
 ---
-title: Literature Review
+title: 문헌고찰, Literature Review
 date: 2025-07-31T13:56:13.420+10:00
 description: Literature Review
 authors: me
