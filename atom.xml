@@ -74,7 +74,7 @@
 <li>A class can use the methods of another class.
 -&gt; one class (the client) uses or depends on another class (the supplier).</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_p8rR" id="class-diagram">Class diagram<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#class-diagram" class="hash-link" aria-label="Class diagram에 대한 직접 링크" title="Class diagram에 대한 직접 링크">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="uml-class-diagram">UML Class diagram<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#uml-class-diagram" class="hash-link" aria-label="UML Class diagram에 대한 직접 링크" title="UML Class diagram에 대한 직접 링크">​</a></h2>
 <ul>
 <li>UML visual representation of the object-oriented software system.</li>
 <li>Describes the attributes and operations of classes, relationships, and any constraints.</li>
@@ -119,6 +119,103 @@
 <ul>
 <li>an associative type should exist in the background somewhere.</li>
 </ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="generalization--specialization">Generalization &amp; Specialization<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#generalization--specialization" class="hash-link" aria-label="Generalization &amp; Specialization에 대한 직접 링크" title="Generalization &amp; Specialization에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Generalization: the activity of identifying commonalities among concepts and defining superclass (general concept) and subclass (specialized concepts) relationships.</li>
+<li>"is-a" relationship</li>
+<li>a subclass inherits from a superclass.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="benefits-of-generalization">Benefits of generalization<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#benefits-of-generalization" class="hash-link" aria-label="Benefits of generalization에 대한 직접 링크" title="Benefits of generalization에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Code Reusability</li>
+<li>Cleaner/Simplified design</li>
+<li>Scalability</li>
+<li>Extensibility</li>
+<li>Easier Maintenance</li>
+<li>Testability</li>
+<li>Modularity</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="class-inheritance">Class inheritance<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#class-inheritance" class="hash-link" aria-label="Class inheritance에 대한 직접 링크" title="Class inheritance에 대한 직접 링크">​</a></h3>
+<ul>
+<li>same as generalization and specialization.</li>
+<li>the subclasses inherit the attributes and methods of the superclasses.</li>
+</ul>
+<!-- -->
+<ul>
+<li>When a hierarchy is created, statements about the superclass apply to subclasses.</li>
+<li>A conceptual subclass should be a member of the set of the superclass.</li>
+<li>The conceptual subclass is a kind of superclass.</li>
+<li><code>&lt;subclass&gt; is a &lt;superclass&gt;</code></li>
+<li>Every instance of the <code>&lt;subclass&gt;</code> can be viewed as an instance of the <code>&lt;superclass&gt;</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="subclass">Subclass<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#subclass" class="hash-link" aria-label="Subclass에 대한 직접 링크" title="Subclass에 대한 직접 링크">​</a></h3>
+<ul>
+<li>has additional attributes of interest.</li>
+<li>has additional associations of interest.</li>
+<li>is handled differently than the superclass or other subclasses.</li>
+<li>represents an object that behaves differently than the superclass or other subclasses.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="superclass">Superclass<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#superclass" class="hash-link" aria-label="Superclass에 대한 직접 링크" title="Superclass에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Create a conceptual superclass when:<!-- -->
+<ul>
+<li>The potential conceptual subclasses represent variations of a similar concept.</li>
+<li>The subclass fully conforms to the attributes and associations of its superclass. (100% rule)</li>
+</ul>
+</li>
+<li>All subclasses have the same attributes and operations which can be factored out and expressed in the superclass.</li>
+<li>All subclasses have the same associations which can be factored out and related to the superclass.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="abstract-class">Abstract Class<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#abstract-class" class="hash-link" aria-label="Abstract Class에 대한 직접 링크" title="Abstract Class에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a parent class that cannot be instantiated.</li>
+<li>at least one of its operations is abstract.</li>
+<li>an abstract operation has its signature defined in the abstract parent class, but the implementation is defined in the child class.</li>
+<li>create a high-level modelling vocabulary.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="interface--realization">Interface &amp; Realization<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#interface--realization" class="hash-link" aria-label="Interface &amp; Realization에 대한 직접 링크" title="Interface &amp; Realization에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a class with no attributes.</li>
+<li>can't be instantiated.</li>
+<li>simply declares a contract that may be realized by zero or more classes.</li>
+<li>to separate the specification from its implementation.</li>
+<li>only defines a specification for what the class should do and it never implies how it should do it.</li>
+<li>the class implementing an interface has a realization relationship with the interface.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="aggregation">Aggregation<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#aggregation" class="hash-link" aria-label="Aggregation에 대한 직접 링크" title="Aggregation에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a type of whole-part relationship in which the aggregate is made up of many parts.</li>
+<li>Signified with a hollow diamond.</li>
+<li>implies the part may be in many composite instances.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="composition">Composition<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#composition" class="hash-link" aria-label="Composition에 대한 직접 링크" title="Composition에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a stronger form of aggregation.</li>
+<li>the multiplicity at the composite end may be at most one</li>
+<li>Signified with a filled diamond.</li>
+<li>There is a create-delete dependency. Their lifetime is bound within the lifetime of the composite.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="dependency">Dependency<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#dependency" class="hash-link" aria-label="Dependency에 대한 직접 링크" title="Dependency에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a relationship between two or more model elements whereby a change to one element</li>
+<li>The most common dependency stereotype is <code>&lt;&lt;use&gt;&gt;</code>, which simply states that the client makes use of the supplier in some way.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="visibility">Visibility<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#visibility" class="hash-link" aria-label="Visibility에 대한 직접 링크" title="Visibility에 대한 직접 링크">​</a></h3>
+<ul>
+<li><code>+</code> public</li>
+<li><code>-</code> private</li>
+<li><code>#</code> protected</li>
+<li><code>~</code> package</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="example">Example<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#example" class="hash-link" aria-label="Example에 대한 직접 링크" title="Example에 대한 직접 링크">​</a></h3>
 ]]></content>
         <author>
             <name>Eunkwang Shin</name>
