@@ -2,11 +2,130 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-07-31T06:27:05.237Z</updated>
+    <updated>2025-08-04T02:49:53.887Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of software development @002]]></title>
+        <id>https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/</id>
+        <link href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/"/>
+        <updated>2025-08-04T02:49:53.887Z</updated>
+        <summary type="html"><![CDATA[Fundamentals of software development @002]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="classes--objects">Classes &amp; Objects<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#classes--objects" class="hash-link" aria-label="Classes &amp; Objects에 대한 직접 링크" title="Classes &amp; Objects에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="class">Class<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#class" class="hash-link" aria-label="Class에 대한 직접 링크" title="Class에 대한 직접 링크">​</a></h3>
+<ul>
+<li>A template that defines the attributes and methods of an object, which can be used to create many objects.</li>
+<li>Name of the class is noun.</li>
+<li>Functions are defined in the class, containing the function data.</li>
+<li>Many objects can be created from the same class.</li>
+<li>A class can be inherited by many sub-classes</li>
+<li>A child class can have one or more parent classes. (super-classes)</li>
+<li>Encapsulated data</li>
+<li>Behaviors of a class are exposed while the implementation is hidden.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="object">Object<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#object" class="hash-link" aria-label="Object에 대한 직접 링크" title="Object에 대한 직접 링크">​</a></h3>
+<ul>
+<li>An instance of a class, created the class template during runtime.</li>
+<li>Object-oriented software is composed of many objects</li>
+<li>a composite data type identified by its attributes (fields) and behaviors (functions), which are defined in the class.</li>
+<li>object-oriented design analysis: to identify the classes and relationships between the classes to model how the system would work.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="object-oriented-paradigm-principles">Object-Oriented Paradigm Principles<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#object-oriented-paradigm-principles" class="hash-link" aria-label="Object-Oriented Paradigm Principles에 대한 직접 링크" title="Object-Oriented Paradigm Principles에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="abstraction">Abstraction<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#abstraction" class="hash-link" aria-label="Abstraction에 대한 직접 링크" title="Abstraction에 대한 직접 링크">​</a></h3>
+<ul>
+<li>hides the internal implementation of functions and expose to other class the behavior of those functions.</li>
+<li>Data abstraction: hide the variables stored the data and only expose the values.</li>
+<li>Function abstraction: hide the function code and only export the function behavior.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="encapsulation">Encapsulation<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#encapsulation" class="hash-link" aria-label="Encapsulation에 대한 직접 링크" title="Encapsulation에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a fundamental principle of OOP, increases data and code security, enhances performance by reducing object interactions.</li>
+<li>minimize the number of interactions from outside.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="inheritance">Inheritance<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#inheritance" class="hash-link" aria-label="Inheritance에 대한 직접 링크" title="Inheritance에 대한 직접 링크">​</a></h3>
+<ul>
+<li>allows classes to have sub-classes.</li>
+<li>a parent class can have many children.</li>
+<li>a child class can have more than one parent.</li>
+<li>a child class inherits their parent class and can also override them.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="polymorphism">Polymorphism<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#polymorphism" class="hash-link" aria-label="Polymorphism에 대한 직접 링크" title="Polymorphism에 대한 직접 링크">​</a></h3>
+<ul>
+<li>more of the same type of object can be used interchangeably.</li>
+<li>object of different types to be treated as objects of a common parent.</li>
+<li>multiple object types with the same parent can implement the same function in different ways.</li>
+<li>multiple object types with the same parent can use the same attributes with different values.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="object-oriented-design">Object-Oriented Design<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#object-oriented-design" class="hash-link" aria-label="Object-Oriented Design에 대한 직접 링크" title="Object-Oriented Design에 대한 직접 링크">​</a></h2>
+<ul>
+<li>The process of designing a software using oop.</li>
+<li>Identify the classes
+-&gt; Identify the classes' attributes and behaviors
+-&gt; Identify the how classes interact with each other and create a visual class model</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="identify-classes">Identify classes<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#identify-classes" class="hash-link" aria-label="Identify classes에 대한 직접 링크" title="Identify classes에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Classes are derived from use cases and actors described in the requirement analysis process.</li>
+<li>Classes should be identified exactly as needed.</li>
+<li>Reduce coupling and enable extensibility.</li>
+<li>Identifying a class always requires to identify the fields and methods.</li>
+<li>A class can use the methods of another class.
+-&gt; one class (the client) uses or depends on another class (the supplier).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="class-diagram">Class diagram<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#class-diagram" class="hash-link" aria-label="Class diagram에 대한 직접 링크" title="Class diagram에 대한 직접 링크">​</a></h3>
+<ul>
+<li>UML visual representation of the object-oriented software system.</li>
+<li>Describes the attributes and operations of classes, relationships, and any constraints.</li>
+<li>Used as a plan to construct executable code and define the way in which objects may interact.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="associations">Associations<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#associations" class="hash-link" aria-label="Associations에 대한 직접 링크" title="Associations에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a relationship between classes indicating a meaningful connection.</li>
+<li>Labelled by<!-- -->
+<ul>
+<li>Association name</li>
+<li>Role name</li>
+<li>Multiplicity</li>
+<li>Navigability</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_p8rR" id="multiplicity">Multiplicity<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#multiplicity" class="hash-link" aria-label="Multiplicity에 대한 직접 링크" title="Multiplicity에 대한 직접 링크">​</a></h4>
+<ul>
+<li>how many instances of type A can be associated with on instance of type B.</li>
+</ul>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_p8rR" id="recursive-or-reflexive-association">Recursive or reflexive association<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#recursive-or-reflexive-association" class="hash-link" aria-label="Recursive or reflexive association에 대한 직접 링크" title="Recursive or reflexive association에 대한 직접 링크">​</a></h4>
+<ul>
+<li>a class can have an association with itself.</li>
+</ul>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_p8rR" id="attributes">Attributes<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#attributes" class="hash-link" aria-label="Attributes에 대한 직접 링크" title="Attributes에 대한 직접 링크">​</a></h4>
+<!-- -->
+<ul>
+<li>m<!-- -->:m<!-- --> association can be divided into two 1<!-- -->:m<!-- --> associations.</li>
+</ul>
+<!-- -->
+<h4 class="anchor anchorWithStickyNavbar_p8rR" id="association-classes">Association Classes<a href="https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/#association-classes" class="hash-link" aria-label="Association Classes에 대한 직접 링크" title="Association Classes에 대한 직접 링크">​</a></h4>
+<ul>
+<li>An attribute is related to an association.</li>
+<li>Instance of the association class have a life-time dependency on the association.</li>
+</ul>
+<!-- -->
+<ul>
+<li>an associative type should exist in the background somewhere.</li>
+</ul>
+]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="fsd" term="fsd"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[논거 작성, Integrating Evidence in Writing]]></title>
         <id>https://gracefullight.dev/2025/07/31/integrating-evidence-writing/</id>
@@ -736,41 +855,5 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="fda" term="fda"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vocabulary for AI @002]]></title>
-        <id>https://gracefullight.dev/vocab/vocab-ai-002/</id>
-        <link href="https://gracefullight.dev/vocab/vocab-ai-002/"/>
-        <updated>2025-07-30T05:23:03.894Z</updated>
-        <summary type="html"><![CDATA[Vocabulary for AI @002]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/vocab/vocab-ai-002/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Mean</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/perceive" target="_blank" rel="noopener noreferrer">perceive</a></td><td>To become aware of something through the senses</td><td>To notice or become aware of</td><td>인식하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crude" target="_blank" rel="noopener noreferrer">crude</a></td><td>In a raw or unrefined state; lacking sophistication</td><td>Basic or rough; not polished</td><td>조잡한, 대충만든</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/flesh-out" target="_blank" rel="noopener noreferrer">flesh out</a></td><td>To add more details or substance to an idea or plan</td><td>To develop or expand an idea with more information</td><td>구체화하다, 자세히 설명하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/infrared" target="_blank" rel="noopener noreferrer">infrared</a></td><td>Relating to electromagnetic radiation with wavelengths longer than visible light</td><td>A type of light that is not visible to the human eye, often used in technology</td><td>적외선의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-practice" target="_blank" rel="noopener noreferrer">In practice</a></td><td>In reality or in actual use, as opposed to theory</td><td>How something works in real life, not just in theory</td><td>실제로, 실제 사용에서</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/percept" target="_blank" rel="noopener noreferrer">percept</a></td><td>A mental impression or understanding formed by the senses</td><td>An idea or understanding formed by what we see, hear, etc.</td><td>지각, 인식</td></tr><tr><td>percept sequence</td><td>The complete history of everything the agent has ever perceived</td><td>The full record of all the things an agent has noticed or experienced</td><td>지각 순서, 인식의 연속</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/tabulate" target="_blank" rel="noopener noreferrer">tabulate</a></td><td>To arrange data in a table format for easier analysis</td><td>To organize information into a table</td><td>표로 정리하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/artifact" target="_blank" rel="noopener noreferrer">artifact</a></td><td>An object made or used by humans, often of historical or cultural interest</td><td>A human-made object, especially one of historical or cultural significance</td><td>인공물, 유물</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consequentialism" target="_blank" rel="noopener noreferrer">consequentialism</a></td><td>An ethical theory that judges actions by their outcomes or consequences</td><td>A moral philosophy that evaluates actions based on their results</td><td>결과주의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/desirability" target="_blank" rel="noopener noreferrer">desirability</a></td><td>The quality of being desirable or wanted</td><td>How much something is wanted or valued</td><td>바람직함, 선호도</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/knotty" target="_blank" rel="noopener noreferrer">knotty</a></td><td>Complex and difficult to solve or understand</td><td>Complicated and challenging</td><td>복잡한, 어려운</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/criterion" target="_blank" rel="noopener noreferrer">criterion</a></td><td>A standard or principle by which something is judged or decided</td><td>A rule or standard used to evaluate something</td><td>기준, 표준</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/prior" target="_blank" rel="noopener noreferrer">prior</a></td><td>Existing or occurring before something else</td><td>Something that comes before or is earlier in time</td><td>이전의, 선행하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/oscillate" target="_blank" rel="noopener noreferrer">oscillate</a></td><td>To move back and forth in a regular rhythm; to vary between two points</td><td>To swing or fluctuate between two states or values</td><td>진동하다, 오락가락하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/omniscience" target="_blank" rel="noopener noreferrer">omniscience</a></td><td>The state of having complete or unlimited knowledge</td><td>The ability to know everything</td><td>전지전능, 모든 것을 아는 상태</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/pantomime" target="_blank" rel="noopener noreferrer">pantomime</a></td><td>A form of theatrical performance using gestures and body movements without spoken words</td><td>A performance that tells a story through actions and expressions, not speech</td><td>무언극, 몸짓극</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wasp" target="_blank" rel="noopener noreferrer">wasp</a></td><td>A type of stinging insect known for its slender body and aggressive behavior</td><td>A flying insect that can sting, often yellow and black</td><td>말벌</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/entomologist" target="_blank" rel="noopener noreferrer">entomologist</a></td><td>A scientist who studies insects</td><td>An expert in the study of insects</td><td>곤충학자</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/innate" target="_blank" rel="noopener noreferrer">innate</a></td><td>Existing naturally or as part of something; not learned or acquired</td><td>Something that is inborn or inherent</td><td>타고난, 선천적인</td></tr><tr><td>To the extent</td><td>As far as something is true or applicable</td><td>To the degree that something is relevant or valid</td><td>~의 범위 내에서, ~에 한해서, ~한 정도까지는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reflex" target="_blank" rel="noopener noreferrer">reflex</a></td><td>An automatic, involuntary response to a stimulus</td><td>A quick, instinctive reaction to something</td><td>반사 작용, 반사 신경</td></tr><tr><td>acronymically</td><td>In a way that uses the first letters of words to form an abbreviation</td><td>Using the initial letters of words to create a shorter form</td><td>약어로, 두문자어로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/aspire" target="_blank" rel="noopener noreferrer">aspire</a></td><td>To have a strong desire or ambition to achieve something</td><td>To aim for or seek to achieve a goal</td><td>열망하다, 갈망하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/disturbance" target="_blank" rel="noopener noreferrer">disturbance</a></td><td>An interruption or disruption of normal activity or state</td><td>A disturbance is something that disrupts or interrupts</td><td>방해, 소란</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/alley" target="_blank" rel="noopener noreferrer">alley</a></td><td>A narrow passageway between buildings or walls</td><td>A small street or path, often for pedestrians</td><td>골목, 좁은 길</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/speedometer" target="_blank" rel="noopener noreferrer">speedometer</a></td><td>An instrument that measures the speed of a vehicle</td><td>A device that shows how fast a vehicle is going</td><td>속도계</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/accelerometer" target="_blank" rel="noopener noreferrer">accelerometer</a></td><td>An instrument that measures acceleration or changes in speed</td><td>A device that detects how quickly something speeds up or slows down</td><td>가속도계</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/persistent" target="_blank" rel="noopener noreferrer">persistent</a></td><td>Continuing firmly or obstinately in a course of action despite difficulty or opposition</td><td>Continuing to exist or endure over a long period</td><td>지속적인, 끈질긴</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/embody" target="_blank" rel="noopener noreferrer">embody</a></td><td>To give tangible or visible form to an idea, quality, or feeling</td><td>To represent or express something in a physical form</td><td>구체화하다, 구현하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/explicitly" target="_blank" rel="noopener noreferrer">explicitly</a></td><td>In a clear and detailed manner, leaving no room for confusion</td><td>Clearly stated or shown, without ambiguity</td><td>명확하게, 분명히</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/daunting" target="_blank" rel="noopener noreferrer">daunting</a></td><td>Intimidating or discouraging; causing one to lose confidence</td><td>Making someone feel less confident or more afraid</td><td>벅찬, 위협적인, 겁먹게 하는</td></tr></tbody></table>
-<ul>
-<li>Agent function: abstract mathematical description</li>
-<li>Agent program: concrete implementation, running within some physical system</li>
-<li>Agent architecture: running on some sort of computing device with physical sensors and actuators</li>
-<li><code>Agent = architecture + program</code></li>
-</ul>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="peas">PEAS<a href="https://gracefullight.dev/vocab/vocab-ai-002/#peas" class="hash-link" aria-label="PEAS에 대한 직접 링크" title="PEAS에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Performance</li>
-<li>Environment</li>
-<li>Actuators</li>
-<li>Sensors</li>
-</ul>
-<table><thead><tr><th>Agent Type</th><th>Performance Measure</th><th>Environment</th><th>Actuators</th><th>Sensors</th></tr></thead><tbody><tr><td>Taxi driver</td><td>Safe, fast, comfortable transportation</td><td>Roads, traffic, passengers</td><td>Steering wheel, accelerator, brakes</td><td>Cameras, GPS, speedometer</td></tr><tr><td>Medical diagnosis system</td><td>Healthy patient, reduced costs</td><td>Patient, hospital, staff</td><td>Display of questions, tests, diagnosis, treatments</td><td>Touchscreen/voice entry of symptoms and findings</td></tr><tr><td>Satellite image analysis system</td><td>Correct categorization of objects, terrain</td><td>Orbiting satellite, downlink weather</td><td>Display of scene categorization</td><td>High-resolution digital camera</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="agents">Agents<a href="https://gracefullight.dev/vocab/vocab-ai-002/#agents" class="hash-link" aria-label="Agents에 대한 직접 링크" title="Agents에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Simple reflex agents</li>
-<li>Model-based reflex agents</li>
-<li>Goal-based agents</li>
-<li>Utility-based agents</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vocab" term="vocab"/>
     </entry>
 </feed>
