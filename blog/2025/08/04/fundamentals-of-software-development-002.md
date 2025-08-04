@@ -70,7 +70,7 @@ tags:
 - A class can use the methods of another class.
   -> one class (the client) uses or depends on another class (the supplier).
 
-### Class diagram
+## UML Class diagram
 
 - UML visual representation of the object-oriented software system.
 - Describes the attributes and operations of classes, relationships, and any constraints.
@@ -194,4 +194,269 @@ classDiagram
     Student
     Subject
   }
+```
+
+### Generalization & Specialization
+
+- Generalization: the activity of identifying commonalities among concepts and defining superclass (general concept) and subclass (specialized concepts) relationships.
+- "is-a" relationship
+- a subclass inherits from a superclass.
+
+### Benefits of generalization
+
+- Code Reusability
+- Cleaner/Simplified design
+- Scalability
+- Extensibility
+- Easier Maintenance
+- Testability
+- Modularity
+
+### Class inheritance
+
+- same as generalization and specialization.
+- the subclasses inherit the attributes and methods of the superclasses.
+
+```mermaid
+classDiagram
+  direction BT
+  CashPayment --|> Payment
+  CreditCardPayment --|> Payment
+  CheckPayment --|> Payment
+
+  class Payment {
+    amount: Money
+  }
+```
+
+- When a hierarchy is created, statements about the superclass apply to subclasses.
+- A conceptual subclass should be a member of the set of the superclass.
+- The conceptual subclass is a kind of superclass.
+- `<subclass> is a <superclass>`
+- Every instance of the `<subclass>` can be viewed as an instance of the `<superclass>`.
+
+### Subclass
+
+- has additional attributes of interest.
+- has additional associations of interest.
+- is handled differently than the superclass or other subclasses.
+- represents an object that behaves differently than the superclass or other subclasses.
+
+### Superclass
+
+- Create a conceptual superclass when:
+  - The potential conceptual subclasses represent variations of a similar concept.
+  - The subclass fully conforms to the attributes and associations of its superclass. (100% rule)
+- All subclasses have the same attributes and operations which can be factored out and expressed in the superclass.
+- All subclasses have the same associations which can be factored out and related to the superclass.
+
+```mermaid
+classDiagram
+  direction BT
+  class Payment {
+    amount: Money
+  }
+
+  CashPayment --|> Payment
+  CreditPayment --|> Payment
+  CheckPayment --|> Payment
+
+  CreditCard "1" -- "*" CreditPayment: Identifies credit with
+
+  Check "1" -- CheckPayment: Paid with
+
+  Payment "1" -- "1" Sale : Paid for
+
+  note for CreditPayment "additional associations"
+
+  note for CheckPayment "additional associations"
+
+  note for Payment "superclass justified by common attributes and associations"
+```
+
+### Abstract Class
+
+- a parent class that cannot be instantiated.
+- at least one of its operations is abstract.
+- an abstract operation has its signature defined in the abstract parent class, but the implementation is defined in the child class.
+- create a high-level modelling vocabulary.
+
+```mermaid
+classDiagram
+  direction BT
+  class VideoMedium {
+    <<Abstract>>
+    rentalCharge()*: Double
+  }
+
+  class VideoTape {
+    VideoTape()
+    rentalCharge(): Double
+  }
+
+  class VideoDisk {
+    VideoDisk()
+    rentalCharge(): Double
+  }
+
+  VideoTape --|> VideoMedium
+  VideoDisk --|> VideoMedium
+```
+
+### Interface & Realization
+
+- a class with no attributes.
+- can't be instantiated.
+- simply declares a contract that may be realized by zero or more classes.
+- to separate the specification from its implementation.
+- only defines a specification for what the class should do and it never implies how it should do it.
+- the class implementing an interface has a realization relationship with the interface.
+
+```mermaid
+classDiagram
+  direction BT
+  class Borrow {
+    <<interface>>
+    +borrow
+    +return
+    +isOverdue
+  }
+
+  Book ..|> Borrow
+  DVD ..|> Borrow
+```
+
+### Aggregation
+
+- a type of whole-part relationship in which the aggregate is made up of many parts.
+- Signified with a hollow diamond.
+- implies the part may be in many composite instances.
+
+```mermaid
+classDiagram
+  direction LR
+  Crate "0..1" o-- "*" Bottle
+  Playlist "0..*" o-- "*" Song
+```
+
+### Composition
+
+- a stronger form of aggregation.
+- the multiplicity at the composite end may be at most one
+- Signified with a filled diamond.
+- There is a create-delete dependency. Their lifetime is bound within the lifetime of the composite.
+
+```mermaid
+classDiagram
+  direction LR
+  House "1" *-- "1..*" Room
+  Book "1" *-- "1..*" Page
+```
+
+### Dependency
+
+- a relationship between two or more model elements whereby a change to one element
+- The most common dependency stereotype is `<<use>>`, which simply states that the client makes use of the supplier in some way.
+
+```mermaid
+classDiagram
+  direction LR
+  class A {
+    add(b: B)
+    bar() B
+  }
+  A ..> B: uses
+```
+
+### Visibility
+
+- `+` public
+- `-` private
+- `#` protected
+- `~` package
+
+```mermaid
+classDiagram
+  class Customer {
+    #id int
+    -savings Account
+    
+    +deposit(amount) void
+    +withdraw(amount) void
+    +transfer(loan, amount) void
+    +balance() double
+  }
+```
+
+### Example
+
+```mermaid
+classDiagram
+  direction BT
+  class Account {
+    +number
+    +balance
+
+    +deposit()
+    +withdraw()
+    createTransaction()
+  }
+
+  CurrentAccount --|> Account
+  SavingAccount --|> Account
+  CurrentAccount "1" -- "1" SavingAccount : Savings Checking
+
+  class CurrentAccount {
+    +accountNo
+    +balance
+
+    +withdraw()
+  }
+
+  class SavingAccount {
+    +accountNo
+    +balance
+  }
+
+  Account "1" -- "*" ATMTransactions : Account Transaction
+
+  class ATMTransactions {
+    +transactionId
+    +date
+    +type
+    +amount
+    +postBalance
+
+    +modifies()
+  }
+
+  Customer "1" -- "1,2" Account : Has
+  class Customer {
+    +name
+    +address
+    +dob
+    +cardNumber
+    +pin
+
+    +verifyPassword()
+  }
+
+  Account --o Bank
+  class Bank {
+    +code
+    +address
+    +manage()
+    +maintain()
+  }
+
+  ATM --o Bank
+  class ATM {
+    +location
+    +managedBy
+    +identifies()
+    +transactions()
+  }
+
+  Customer --> ATM
+  Account --> ATM
 ```
