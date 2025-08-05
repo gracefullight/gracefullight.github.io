@@ -2,11 +2,130 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-04T02:49:53.887Z</updated>
+    <updated>2025-08-05T04:44:13.745Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introduction to Artificial Intelligence @001]]></title>
+        <id>https://gracefullight.dev/2025/08/05/introduction-to-ai-001/</id>
+        <link href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/"/>
+        <updated>2025-08-05T04:44:13.745Z</updated>
+        <summary type="html"><![CDATA[Introduction to Artificial Intelligence @001]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="ai">AI<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#ai" class="hash-link" aria-label="AI에 대한 직접 링크" title="AI에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>AI refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
+</blockquote>
+<ul>
+<li>As a research field, AI aims to develop techniques including algorithms, methods and models to enable systems to perform tasks which require intelligence when performed by humans.</li>
+<li>AI is concerned with developing machines or computer agents that are capable of performing tasks that typically require human intelligence.</li>
+<li>AI is about the study and construction of agent programs that perform well in a given environment, for a given agent architecture.</li>
+<li>AI is a true universal field.</li>
+<li>The term "Artificial Intelligence" was coined by John McCarthy for the Dartmouth Summer Research Project in 1956, marking the formal beginning of AI as a research field.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="history">History<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#history" class="hash-link" aria-label="History에 대한 직접 링크" title="History에 대한 직접 링크">​</a></h3>
+<ul>
+<li>1943-1956: Inception of AI</li>
+<li>1966-1973: A dose of reality</li>
+<li>1969-1986: Expert systems</li>
+<li>2011-present: Deep learning</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="turing-reward-winners">Turing reward winners<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#turing-reward-winners" class="hash-link" aria-label="Turing reward winners에 대한 직접 링크" title="Turing reward winners에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Defining the foundation of the field based on representation and reasoning<!-- -->
+<ul>
+<li>1969 Marvin Minsky</li>
+<li>1971 John McCarthy</li>
+</ul>
+</li>
+<li>Making fundamental contributions to AI and human cognition<!-- -->
+<ul>
+<li>1975 Allen Newell &amp; Herbert Simon</li>
+</ul>
+</li>
+<li>Developing expert systems that encode human knowledge to solve real-world problems<!-- -->
+<ul>
+<li>Ed Feigenbaum &amp; Raj Reddy</li>
+</ul>
+</li>
+<li>Honored for "probably approximately correct learning (PAC learning)", a foundational theoretical framework for AI and ML<!-- -->
+<ul>
+<li>2010 Leslie Valiant</li>
+</ul>
+</li>
+<li>Developing probabilistic reasoning techniques that deal with uncertainty in a principled manner<!-- -->
+<ul>
+<li>2011 Judea Pearl</li>
+</ul>
+</li>
+<li>Making "deep learning" a critical part of modern computing.<!-- -->
+<ul>
+<li>2018 Yoshua Bengio &amp; Geoffrey Hinton &amp; Yann LeCun</li>
+</ul>
+</li>
+<li>Recognized for lifetime contributions to reinforcement learning, a core method in modern AI<!-- -->
+<ul>
+<li>2024 Andrew Barto &amp; Richard Sutton</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="nobel-prize-in-physics">Nobel Prize in Physics<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#nobel-prize-in-physics" class="hash-link" aria-label="Nobel Prize in Physics에 대한 직접 링크" title="Nobel Prize in Physics에 대한 직접 링크">​</a></h3>
+<ul>
+<li>For foundational discoveries and inventions that enable machine learning with artificial neural networks<!-- -->
+<ul>
+<li>2024 John J. Hopfield &amp; Geoffrey Hinton</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="dimensions-of-ai">Dimensions of AI<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#dimensions-of-ai" class="hash-link" aria-label="Dimensions of AI에 대한 직접 링크" title="Dimensions of AI에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Action (Behavior) vs Thinking (Thought)</p>
+</blockquote>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="ai-tree">AI Tree<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#ai-tree" class="hash-link" aria-label="AI Tree에 대한 직접 링크" title="AI Tree에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="peas">PEAS<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#peas" class="hash-link" aria-label="PEAS에 대한 직접 링크" title="PEAS에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="PEAS" src="https://gracefullight.dev/assets/images/peas-925bfa41135b93dc5461e17a24bfe85a.png" width="1206" height="586" class="img_kCQ_"></p>
+<ul>
+<li>Performance: The performance measure that defines the criterion of success</li>
+<li>Environment: The agent’s prior knowledge of the environment</li>
+<li>Actuators: The actions that the agent can perform through actuators</li>
+<li>Sensors: The agent’s percept sequence to date through sensors</li>
+</ul>
+<table><thead><tr><th>Agent Type</th><th>Performance Measure</th><th>Environment</th><th>Actuators</th><th>Sensors</th></tr></thead><tbody><tr><td>Taxi driver</td><td>Safe, fast, comfortable transportation</td><td>Roads, traffic, passengers</td><td>Steering wheel, accelerator, brakes</td><td>Cameras, GPS, speedometer</td></tr><tr><td>Medical diagnosis system</td><td>Healthy patient, reduced costs</td><td>Patient, hospital, staff</td><td>Display of questions, tests, diagnosis, treatments</td><td>Touchscreen/voice entry of symptoms and findings</td></tr><tr><td>Satellite image analysis system</td><td>Correct categorization of objects, terrain</td><td>Orbiting satellite, downlink weather</td><td>Display of scene categorization</td><td>High-resolution digital camera</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="rational-agent">Rational Agent<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#rational-agent" class="hash-link" aria-label="Rational Agent에 대한 직접 링크" title="Rational Agent에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Agent = architecture + program</p>
+</blockquote>
+<ul>
+<li>Agent function: abstract mathematical description</li>
+<li>Agent program: concrete implementation, running within some physical system</li>
+<li>Agent architecture: running on some sort of computing device with physical sensors and actuators</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="weak-vs-strong-ai">Weak vs Strong AI<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#weak-vs-strong-ai" class="hash-link" aria-label="Weak vs Strong AI에 대한 직접 링크" title="Weak vs Strong AI에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Weak AI: treats a computer as a device that can simulate the performance of a brain</li>
+<li>Strong AI: a theoretical form of machine intelligence that is equal to human intelligence.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="why-ai-becoming-so-hot">Why AI becoming so hot<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#why-ai-becoming-so-hot" class="hash-link" aria-label="Why AI becoming so hot에 대한 직접 링크" title="Why AI becoming so hot에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Big data</li>
+<li>Cloud computing</li>
+<li>Deep learning</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="risks">Risks<a href="https://gracefullight.dev/2025/08/05/introduction-to-ai-001/#risks" class="hash-link" aria-label="Risks에 대한 직접 링크" title="Risks에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Lethal autonomous weapons</li>
+<li>Surveillance and persuasion</li>
+<li>Biased decision making</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="iai" term="iai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of software development @002]]></title>
         <id>https://gracefullight.dev/2025/08/04/fundamentals-of-software-development-002/</id>
@@ -902,55 +1021,5 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
         </author>
         <category label="research" term="research"/>
         <category label="TRP" term="TRP"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of Data Analytics @001]]></title>
-        <id>https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/</id>
-        <link href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/"/>
-        <updated>2025-07-30T13:06:27.533Z</updated>
-        <summary type="html"><![CDATA[Fundamentals of Data Analytics @001]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="big-data">Big Data<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#big-data" class="hash-link" aria-label="Big Data에 대한 직접 링크" title="Big Data에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>Volume: describes the data size, up to PB</li>
-<li>Velocity: the speed of data generation and illustrates how fast the datasets are being produced.</li>
-<li>Variety: the complexity of datasets, with datasets including both structured and unstructured data.</li>
-<li>Veracity: The truthfulness or reliability of the data. large + reliable in order to achieve value in the analysis of it.</li>
-<li>Value: The worth in information that can be achieved by the processing and analysis of large datasets. It can be measured by an assessment of the other qualities of big data.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="ml">ML<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#ml" class="hash-link" aria-label="ML에 대한 직접 링크" title="ML에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>Supervised learning: uses the old data to learn the relationship between the inputs and outputs, which will be able to predict the outcomes.<!-- -->
-<ul>
-<li>Decision Trees, Neural Networks, SVM, Random Forests.</li>
-</ul>
-</li>
-<li>Unsupervised learning: try to make sense of the data without labelled responses by representing it in another form.<!-- -->
-<ul>
-<li>Clustering, association rule mining, Neural Networks.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="ai">AI<a href="https://gracefullight.dev/2025/07/30/fundamentals-of-data-analytics-001/#ai" class="hash-link" aria-label="AI에 대한 직접 링크" title="AI에 대한 직접 링크">​</a></h2>
-<ul>
-<li>reasoning</li>
-<li>knowledge representation</li>
-<li>planning</li>
-<li>learning</li>
-<li>natural language processing</li>
-<li>perception</li>
-<li>pattern recognition</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="The Relationships between DA, DS, AI, and ML" src="https://gracefullight.dev/assets/images/fundamentals-of-data-analytics-001-f83b0873f937c194511da1be5254c214.png" width="1670" height="836" class="img_kCQ_"></p>
-<blockquote>
-<p>Data Science (Second Edition), Chapter 1 - Introduction Pages 1-18, by Vijay Kotu, Bala Deshpande, 2019,</p>
-</blockquote>
-]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fda" term="fda"/>
     </entry>
 </feed>
