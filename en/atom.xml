@@ -165,6 +165,8 @@
 <li>a composite data type identified by its attributes (fields) and behaviors (functions), which are defined in the class.</li>
 <li>object-oriented design analysis: to identify the classes and relationships between the classes to model how the system would work.</li>
 </ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="procedure--function">Procedure &amp; Function<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#procedure--function" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Aspect</th><th>Procedure</th><th>Function</th></tr></thead><tbody><tr><td>Returns value?</td><td>❌ Usually does <strong>not</strong> return a value</td><td>✅ Usually <strong>returns</strong> a value</td></tr><tr><td>Purpose</td><td>Perform an action</td><td>Compute and return a result</td></tr></tbody></table>
 <h2 class="anchor anchorWithStickyNavbar_p8rR" id="object-oriented-paradigm-principles">Object-Oriented Paradigm Principles<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#object-oriented-paradigm-principles" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_p8rR" id="abstraction">Abstraction<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#abstraction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <ul>
