@@ -349,7 +349,16 @@
 </ul>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_p8rR" id="example">Example<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#example" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-]]></content>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="uml-tools">UML Tools<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#uml-tools" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://www.draw.io/" target="_blank" rel="noopener noreferrer">Draw.io</a></li>
+<li><a href="https://www.lucidchart.com/" target="_blank" rel="noopener noreferrer">Lucidchart</a></li>
+<li><a href="https://www.visual-paradigm.com/" target="_blank" rel="noopener noreferrer">Visual Paradigm</a></li>
+<li><a href="https://staruml.io/" target="_blank" rel="noopener noreferrer">StarUML</a></li>
+<li><a href="https://creately.com/" target="_blank" rel="noopener noreferrer">Creately</a></li>
+<li><a href="https://www.planttext.com/" target="_blank" rel="noopener noreferrer">PlantUML</a></li>
+</ul>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
