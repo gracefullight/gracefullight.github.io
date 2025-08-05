@@ -27,6 +27,13 @@ tags:
 - a composite data type identified by its attributes (fields) and behaviors (functions), which are defined in the class.
 - object-oriented design analysis: to identify the classes and relationships between the classes to model how the system would work.
 
+### Procedure & Function
+
+| Aspect | Procedure | Function |
+| --- | --- | --- |
+| Returns value? | ❌ Usually does **not** return a value | ✅ Usually **returns** a value |
+| Purpose | Perform an action | Compute and return a result |
+
 ## Object-Oriented Paradigm Principles
 
 ### Abstraction
