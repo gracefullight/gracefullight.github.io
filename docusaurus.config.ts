@@ -94,7 +94,7 @@ const config: Config = {
           },
           {
             content: "yes",
-            name: "apple-mobile-web-app-capable",
+            name: "mobile-web-app-capable",
             tagName: "meta",
           },
           {
