@@ -53,7 +53,7 @@ tags:
 
 ```mermaid
 quadrantChart
-    title AI의 네 가지 차원 (Thinking vs. Acting / Humanly vs. Rationally)
+    title AI Dimensions (Thinking vs. Acting / Humanly vs. Rationally)
     x-axis Humanly --> Rationally
     y-axis Behavior --> Thought
     quadrant-1 Thinking Rationally
