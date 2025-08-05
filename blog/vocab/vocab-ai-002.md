@@ -44,30 +44,12 @@ tags:
 | [explicitly](https://dictionary.cambridge.org/dictionary/english/explicitly) | In a clear and detailed manner, leaving no room for confusion | Clearly stated or shown, without ambiguity | 명확하게, 분명히 |
 | [daunting](https://dictionary.cambridge.org/dictionary/english/daunting) | Intimidating or discouraging; causing one to lose confidence | Making someone feel less confident or more afraid | 벅찬, 위협적인, 겁먹게 하는 |
 
-- Agent function: abstract mathematical description
-- Agent program: concrete implementation, running within some physical system
-- Agent architecture: running on some sort of computing device with physical sensors and actuators
-- `Agent = architecture + program`
-
 ```mermaid
 graph TD
   Rationality -->|maximize<br/>Information gathering<br/>exploration| expected_performance[Expected Performance]
 
   Perfection -->|maximize| actual_performance[Actual Performance]
 ```
-
-## PEAS
-
-- Performance
-- Environment
-- Actuators
-- Sensors
-
-| Agent Type | Performance Measure | Environment | Actuators | Sensors |
-| --- | --- | --- | --- | --- |
-| Taxi driver | Safe, fast, comfortable transportation | Roads, traffic, passengers | Steering wheel, accelerator, brakes | Cameras, GPS, speedometer |
-| Medical diagnosis system | Healthy patient, reduced costs | Patient, hospital, staff | Display of questions, tests, diagnosis, treatments | Touchscreen/voice entry of symptoms and findings |
-| Satellite image analysis system | Correct categorization of objects, terrain | Orbiting satellite, downlink weather | Display of scene categorization | High-resolution digital camera |
 
 ## Agents
 
