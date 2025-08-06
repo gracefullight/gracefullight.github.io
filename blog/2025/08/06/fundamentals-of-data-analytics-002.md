@@ -419,3 +419,7 @@ graph BT
     class TechnicalSafeguards,PolicyFrameworks,AuditMechanisms,StakeholderEngagement implementStyle
     class TrustworthyAI,SocialGood,RiskMitigation outcomeStyle
 ```
+
+## KNIME
+
+![KNIME](./fundamentals-of-data-analytics-knime-002.png)
