@@ -2,11 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-05T10:23:00.000Z</updated>
+    <updated>2025-08-06T02:58:52.085Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of Data Analytics @002]]></title>
+        <id>https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/</id>
+        <link href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/"/>
+        <updated>2025-08-06T02:58:52.085Z</updated>
+        <summary type="html"><![CDATA[Fundamentals of Data Analytics @002]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="business-intelligence">Business Intelligence<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#business-intelligence" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="kdd">KDD<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#kdd" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>knowledge discovery in databases (KDD) refers to the comprehensive process of finding knowledge in data.</p>
+</blockquote>
+<ul>
+<li>Learning from the application domain</li>
+<li>Creating a target dataset</li>
+<li>Data cleansing/pre-processing</li>
+<li>Data reduction/projection</li>
+<li>Choosing the function of data mining</li>
+<li>Choosing the data mining algorithm</li>
+<li>Data mining</li>
+<li>Interpretation</li>
+<li>Using discovered knowledge</li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="crisp-dm">CRISP-DM<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#crisp-dm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>The Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology provides a structured approach to planning a data mining project.
+As it is a cross-industry standard, it is widely used by practitioners who need a repeatable approach for data mining projects and can be used in a variety of machine learning projects.</p>
+</blockquote>
+<ul>
+<li>Business understanding: Set up a business problem and understand what you want to accomplish from a business perspective.</li>
+<li>Data understanding: Identify, collect and review the required data.</li>
+<li>Data preparation: Prepare your data for modeling.</li>
+<li>Modeling: Analyze possible approaches and develop the model.</li>
+<li>Evaluation: Evaluate results against business needs.</li>
+<li>Deployment: Deploy the model.</li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="statistical-analysis">Statistical Analysis<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#statistical-analysis" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>Data analytics has borrowed from statistical analysis, which involves collecting data, counting, probabilities, and hypothesis testing.</p>
+</blockquote>
+<p>The two main approaches that are relevant to data analytics are:</p>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="descriptive-statistics">Descriptive Statistics<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#descriptive-statistics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Purpose</strong>: Analyze past events using historical data</li>
+<li><strong>Data Source</strong>: Stored data from previous activities</li>
+<li><strong>Application</strong>: Assists companies to make informed decisions based on statistical analysis of historical patterns</li>
+<li><strong>Focus</strong>: "What happened?" - Understanding past performance and trends</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="predictive-statistics">Predictive Statistics<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#predictive-statistics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Purpose</strong>: Predict future events based on currently available data</li>
+<li><strong>Data Source</strong>: Present and historical data combined with analytical models</li>
+<li><strong>Application</strong>: Provides statements or predictions about events that have not yet occurred</li>
+<li><strong>Focus</strong>: "What will happen?" - Forecasting future outcomes and behaviors</li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="data-analytics-results">Data analytics results<a href="https://gracefullight.dev/en/2025/08/06/fundamentals-of-data-analytics-002/#data-analytics-results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>The presentation of data analytics results needs to be understandable by humans, easily used, and accurate on computers.</p>
+</blockquote>
+<p>The effectiveness of different data analytics methods can be evaluated across two dimensions:</p>
+<ul>
+<li><strong>X-axis</strong>: Computer accuracy (how accurate the method is)</li>
+<li><strong>Y-axis</strong>: Human understandability (how easily humans can interpret the results)</li>
+</ul>
+]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="fda" term="fda"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vocabulary for AI @003]]></title>
         <id>https://gracefullight.dev/en/vocab/vocab-ai-003/</id>
@@ -887,79 +961,6 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
 <li>주장/반박/비교·대조 어휘를 적극 활용</li>
 <li>내 의견이 합리적 근거에 기반하고 있는지 늘 점검</li>
 <li>비판적 글쓰기는 연습과 피드백을 통해 발전</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="research" term="research"/>
-        <category label="TRP" term="TRP"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[문헌 검색, Literature Search]]></title>
-        <id>https://gracefullight.dev/en/2025/07/31/literature-search/</id>
-        <link href="https://gracefullight.dev/en/2025/07/31/literature-search/"/>
-        <updated>2025-07-31T04:13:28.151Z</updated>
-        <summary type="html"><![CDATA[Literature Search]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>문헌 검색(literature search)은 연구 주제와 관련된 선행 연구, 주요 이론, 트렌드, 핵심 저자를 체계적으로 찾는 과정</p>
-</blockquote>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="배경-읽기-및-준비">배경 읽기 및 준비<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#%EB%B0%B0%EA%B2%BD-%EC%9D%BD%EA%B8%B0-%EB%B0%8F-%EC%A4%80%EB%B9%84" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>주제의 전반적인 개요를 파악하고, 주요 용어, 저자, 핵심 논문, 자료 조사</p>
-</blockquote>
-<ul>
-<li>Google, Google Scholar 검색</li>
-<li>ProQuest, Scopus, Web of Science 같은 데이터베이스 탐색</li>
-<li>주제별 백과사전, 사전, 입문서 활용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="주제-범위-설정">주제 범위 설정<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#%EC%A3%BC%EC%A0%9C-%EB%B2%94%EC%9C%84-%EC%84%A4%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>검색 방향 구체화하고, 범위를 너무 넓거나 좁지 않게 조정</p>
-</blockquote>
-<ul>
-<li>주제를 세부 개념(키워드)으로 쪼개기</li>
-<li>관련 개념, 동의어, 반의어 탐색</li>
-<li>포함/제외 기준(연도, 지역, 이론, 인구 등) 정하기</li>
-<li>필요한 자료 유형(논문, 통계, 1차자료 등) 확정</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="검색-도구-선정">검색 도구 선정<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#%EA%B2%80%EC%83%89-%EB%8F%84%EA%B5%AC-%EC%84%A0%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>플랫폼 선택 및 자료 검색</p>
-</blockquote>
-<ul>
-<li>도서관 데이터베이스(Finder, Study Guides 등)</li>
-<li>정부·연구기관·대학 리포지터리</li>
-<li>신뢰할 수 있는 공식 웹사이트 등</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="검색-실행-search">검색 실행 (Search)<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#%EA%B2%80%EC%83%89-%EC%8B%A4%ED%96%89-search" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>실제 검색을 통해 자료 찾기</p>
-</blockquote>
-<ul>
-<li>핵심 키워드, 구문(“sustainable development” 등) 선정</li>
-<li>truncation/wildcard(sustainab* -&gt; sustainable, sustainability 등)</li>
-<li>Boolean 연산자(AND, OR, NOT) 조합</li>
-<li>검색 전략을 세우고 직접 실행</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="검색결과-평가-및-전략-수정">검색결과 평가 및 전략 수정<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#%EA%B2%80%EC%83%89%EA%B2%B0%EA%B3%BC-%ED%8F%89%EA%B0%80-%EB%B0%8F-%EC%A0%84%EB%9E%B5-%EC%88%98%EC%A0%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>검색결과의 적합성 평가, 전략 수정</p>
-</blockquote>
-<ul>
-<li>제목, 초록을 훑어보고 실제로 유용한 자료인지 확인</li>
-<li>검색어, 키워드, 범위 등을 조정</li>
-<li>필요하면 다른 데이터베이스, 도구로 확장</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="6-결과-정리-및-관리">6. 결과 정리 및 관리<a href="https://gracefullight.dev/en/2025/07/31/literature-search/#6-%EA%B2%B0%EA%B3%BC-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>자료와 검색 전략 관리, 재사용</p>
-</blockquote>
-<ul>
-<li>EndNote, Mendeley, RefWorks 등 인용·참고문헌 관리 툴 활용</li>
-<li>검색결과를 주제별로 분류 및 정리</li>
-<li>알림(Google Scholar alerts, 데이터베이스 알림 등) 설정하여 최신 연구 follow-up</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
