@@ -74,6 +74,111 @@ As it is a cross-industry standard, it is widely used by practitioners who need 
 <li><strong>X-axis</strong>: Computer accuracy (how accurate the method is)</li>
 <li><strong>Y-axis</strong>: Human understandability (how easily humans can interpret the results)</li>
 </ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="ethical-principles">Ethical Principles<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#ethical-principles" class="hash-link" aria-label="Ethical Principles에 대한 직접 링크" title="Ethical Principles에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Despite the proliferation of ethical principles, some are especially significant for data analytics and AI solutions and must be implemented as mandatory ethical principles.</p>
+</blockquote>
+<p>The five core mandatory ethical principles for AI and data analytics are:</p>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="1-transparency">1. Transparency<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#1-transparency" class="hash-link" aria-label="1. Transparency에 대한 직접 링크" title="1. Transparency에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>The need to describe, inspect and reproduce the mechanisms through which AI systems make decisions and learn to adapt to their environment.</p>
+</blockquote>
+<p><strong>Key Components</strong> (EU AI HLEG):</p>
+<ul>
+<li><strong>Traceability</strong>: Understanding the data flow and decision path</li>
+<li><strong>Explainability</strong>: Providing reasonable explanations for AI outputs</li>
+<li><strong>Communication</strong>: Clear information sharing with stakeholders</li>
+</ul>
+<p><strong>Stakeholder Requirements</strong>:</p>
+<ul>
+<li><strong>Users</strong>: Understanding what the system is doing and why</li>
+<li><strong>Creators</strong>: Validation and certification of AI systems</li>
+<li><strong>Operators</strong>: Understanding processes and input data</li>
+<li><strong>Investigators</strong>: Accident investigation capabilities</li>
+<li><strong>Regulators</strong>: Investigation and compliance support</li>
+<li><strong>Legal System</strong>: Evidence and decision-making support</li>
+<li><strong>Public</strong>: Building confidence in technology</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="2-fairness">2. Fairness<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#2-fairness" class="hash-link" aria-label="2. Fairness에 대한 직접 링크" title="2. Fairness에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>A complex, multi-faceted concept ensuring AI systems do not discriminate against individuals or groups.</p>
+</blockquote>
+<p><strong>Types of Fairness</strong>:</p>
+<ul>
+<li><strong>Process Fairness</strong>: Ethical methods regardless of outcome</li>
+<li><strong>Outcome Fairness</strong>: Ensuring algorithmic outputs don't perpetuate bias</li>
+</ul>
+<p><strong>Ethical Perspectives</strong>:</p>
+<ul>
+<li><strong>Equity</strong>: Discretion and fairness in applying justice</li>
+<li><strong>Social Justice</strong>: Equality and solidarity in society</li>
+<li><strong>Distributive Justice</strong>: Appropriate distribution of benefits</li>
+<li><strong>Procedural Justice</strong>: Fair allocation procedures</li>
+<li><strong>Interactional Justice</strong>: Appropriate interpersonal treatment</li>
+</ul>
+<p><strong>EU AI HLEG Components</strong>:</p>
+<ul>
+<li>Avoidance of bias</li>
+<li>Accessibility and universal design</li>
+<li>Stakeholder participation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="3-accountability">3. Accountability<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#3-accountability" class="hash-link" aria-label="3. Accountability에 대한 직접 링크" title="3. Accountability에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Clear acknowledgement and assumption of responsibility for AI actions, decisions, and impacts.</p>
+</blockquote>
+<p><strong>Three Types of AI Accountability</strong>:</p>
+<ol>
+<li><strong>System-Level</strong>: AI's ability to explain and justify decisions</li>
+<li><strong>Individual/Group</strong>: Determining who is responsible for AI impacts</li>
+<li><strong>Sociotechnical</strong>: Broader system accountability for development and deployment</li>
+</ol>
+<p><strong>EU AI HLEG Components</strong>:</p>
+<ul>
+<li><strong>Auditability</strong>: Systems can be examined and verified</li>
+<li><strong>Impact Reporting</strong>: Minimizing and documenting negative effects</li>
+<li><strong>Trade-off Documentation</strong>: Recording decision rationales</li>
+<li><strong>Redress Ability</strong>: Mechanisms for addressing harm</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="4-privacy">4. Privacy<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#4-privacy" class="hash-link" aria-label="4. Privacy에 대한 직접 링크" title="4. Privacy에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>The right to control how personal data is collected, stored, modified, used, and exchanged.</p>
+</blockquote>
+<p><strong>Seven Types of Privacy</strong> (Finn et al.):</p>
+<ol>
+<li><strong>Privacy of the Person</strong>: Body functions and characteristics (biometrics, genetics)</li>
+<li><strong>Privacy of Behaviour</strong>: Sensitive activities (political, religious, sexual preferences)</li>
+<li><strong>Privacy of Communication</strong>: Private communications protection</li>
+<li><strong>Privacy of Data and Image</strong>: Control over personal data and images</li>
+<li><strong>Privacy of Thoughts and Feelings</strong>: Mental privacy rights</li>
+<li><strong>Privacy of Location and Space</strong>: Movement without tracking</li>
+<li><strong>Privacy of Association</strong>: Freedom to associate without monitoring</li>
+</ol>
+<p><strong>Key Considerations</strong>:</p>
+<ul>
+<li><strong>GDPR Compliance</strong>: EU data protection regulations</li>
+<li><strong>Data Minimization</strong>: Using only necessary data</li>
+<li><strong>Consent Management</strong>: Clear user permissions</li>
+<li><strong>Data Security</strong>: Protecting against breaches</li>
+</ul>
+<p><strong>EU AI HLEG Components</strong>:</p>
+<ul>
+<li>Respect for privacy and data protection</li>
+<li>Quality and integrity of data</li>
+<li>Access to data</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="5-community-benefit">5. Community Benefit<a href="https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/#5-community-benefit" class="hash-link" aria-label="5. Community Benefit에 대한 직접 링크" title="5. Community Benefit에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>AI should deliver clear community or government benefits and maximize social value.</p>
+</blockquote>
+<p><strong>Core Requirements</strong>:</p>
+<ul>
+<li><strong>Public Good</strong>: Solutions must serve broader community interests</li>
+<li><strong>Benefit Maximization</strong>: Optimizing positive social impact</li>
+<li><strong>Alternative Consideration</strong>: Evaluating AI against other analysis tools</li>
+<li><strong>Default Principle</strong>: Should be standard for all AI solutions</li>
+</ul>
 ]]></content>
         <author>
             <name>Eunkwang Shin</name>
