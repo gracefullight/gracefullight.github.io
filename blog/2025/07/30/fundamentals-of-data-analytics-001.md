@@ -68,3 +68,7 @@ graph TD
     end
   end
 ```
+
+## KNIME
+
+![KNIME Flow](./fundamentals-of-data-analytics-knime-001.png)
