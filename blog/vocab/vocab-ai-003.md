@@ -47,3 +47,4 @@ tags:
 | [stipulate](https://dictionary.cambridge.org/dictionary/english/stipulate) | to demand or specify a requirement, typically as part of an agreement; to make an express condition | require or specify | 규정하다, 명시하다 |
 | [implementer](https://dictionary.cambridge.org/dictionary/english/implementer) | a person or entity that puts a plan, decision, or agreement into effect; someone who carries out a task or policy | executor or enforcer | 실행자, 이행자 |
 | [contour](https://dictionary.cambridge.org/dictionary/english/contour) | the outline or shape of something, especially as it relates to its surface; the outer boundary or edge | outline or shape | 윤곽, 외형 |
+| [admissibility](https://dictionary.cambridge.org/dictionary/english/admissibility) | the fact of being considered satisfactory and acceptable in a law court | acceptability or permissibility | 수용 가능성, 허용 가능성 |
