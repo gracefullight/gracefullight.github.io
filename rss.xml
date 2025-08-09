@@ -4,10 +4,68 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Wed, 06 Aug 2025 02:58:52 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Aug 2025 08:31:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Introduction to ai @002]]></title>
+            <link>https://gracefullight.dev/2025/08/09/introduction-to-ai-002/</link>
+            <guid>https://gracefullight.dev/2025/08/09/introduction-to-ai-002/</guid>
+            <pubDate>Sat, 09 Aug 2025 08:31:59 GMT</pubDate>
+            <description><![CDATA[Introduction to ai @002]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="environment">Environment<a href="https://gracefullight.dev/2025/08/09/introduction-to-ai-002/#environment" class="hash-link" aria-label="Environment에 대한 직접 링크" title="Environment에 대한 직접 링크">​</a></h2>
+<ul>
+<li>All possible state and information about how the states are related.</li>
+<li>The costs from one state to each of its adjacent states are also given.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="agent">Agent<a href="https://gracefullight.dev/2025/08/09/introduction-to-ai-002/#agent" class="hash-link" aria-label="Agent에 대한 직접 링크" title="Agent에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Simulated intelligence knows which state it is in.</li>
+<li>If it takes an action at a given state, it knows the next state and the corresponding cost.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="characteristics-of-the-environment">Characteristics of the environment<a href="https://gracefullight.dev/2025/08/09/introduction-to-ai-002/#characteristics-of-the-environment" class="hash-link" aria-label="Characteristics of the environment에 대한 직접 링크" title="Characteristics of the environment에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Fully Observable: The agent always knows the current state of the environment at each point in time.</li>
+<li>Deterministic: The next state of the environment is completely determined by the current state and the action taken by the agent.</li>
+<li>Static: The environment is unchanged.</li>
+<li>Discrete: A limited number of distinct, clearly defined actions.</li>
+<li>Single agent: An agent operating by itself in an environment.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="search-problem">Search problem<a href="https://gracefullight.dev/2025/08/09/introduction-to-ai-002/#search-problem" class="hash-link" aria-label="Search problem에 대한 직접 링크" title="Search problem에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Finding a path from a starting point to a goal point in a space.</p>
+</blockquote>
+<ul>
+<li><strong>The initial state</strong></li>
+<li><strong>State space</strong>: The environment or area where the search takes place</li>
+<li><strong>A set of actions</strong>: The possible actions that the agent can take in each state.<!-- -->
+<ul>
+<li><code>ACTION (s)</code></li>
+</ul>
+</li>
+<li><strong>A transition model</strong>:<!-- -->
+<ul>
+<li>takes in a state and an action.</li>
+<li>returns the successor state, which is any state reachable from doing action <code>a</code> in state <code>s</code>.</li>
+<li><code>RESULT(s, a)</code></li>
+</ul>
+</li>
+<li><strong>A goal state</strong>:<!-- -->
+<ul>
+<li>The target location or position that needs to be reached.</li>
+<li>represented by a goal test function</li>
+</ul>
+</li>
+<li><strong>A path cost function</strong>:<!-- -->
+<ul>
+<li>The cost associated with a particular path taken through the state space.</li>
+<li><code>c(s1, a, s2)</code></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>iai</category>
+        </item>
         <item>
             <title><![CDATA[Fundamentals of Data Analytics @002]]></title>
             <link>https://gracefullight.dev/2025/08/06/fundamentals-of-data-analytics-002/</link>
@@ -931,108 +989,6 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
 <li><strong>How?</strong>: 연구 방법, 필요한 정보/장비는 무엇인가?</li>
 <li><strong>How much?</strong>: 기대하는 변화나 측정 가능한 차이는 무엇인가?</li>
 <li><strong>Why?</strong>: 이 주제가 왜 중요/의미 있는가? 왜 이 주제를 연구하는가?</li>
-</ul>]]></content:encoded>
-            <category>research</category>
-            <category>TRP</category>
-        </item>
-        <item>
-            <title><![CDATA[비판적 사고, Critical Thinking]]></title>
-            <link>https://gracefullight.dev/2025/07/31/critical-thinking/</link>
-            <guid>https://gracefullight.dev/2025/07/31/critical-thinking/</guid>
-            <pubDate>Thu, 31 Jul 2025 04:29:31 GMT</pubDate>
-            <description><![CDATA[Critical Thinking]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-사고-읽기-쓰기-개념">비판적 사고, 읽기, 쓰기 개념<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EC%82%AC%EA%B3%A0-%EC%9D%BD%EA%B8%B0-%EC%93%B0%EA%B8%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="비판적 사고, 읽기, 쓰기 개념에 대한 직접 링크" title="비판적 사고, 읽기, 쓰기 개념에 대한 직접 링크">​</a></h2>
-<p>비판적 읽기/쓰기(critical reading &amp; writing)는 단순한 요약(Descriptive writing)과 다르게</p>
-<ul>
-<li><strong>증거와 논거를 평가</strong>하고,</li>
-<li><strong>여러 관점을 비교</strong>하며,</li>
-<li><strong>논리적이고 균형 잡힌 자기 주장을 펼치는 것</strong></li>
-</ul>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-글쓰기-개념">비판적 글쓰기 개념<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0-%EA%B0%9C%EB%85%90" class="hash-link" aria-label="비판적 글쓰기 개념에 대한 직접 링크" title="비판적 글쓰기 개념에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Descriptive writing:</strong>
-<ul>
-<li>단순히 연구 배경, 기존 연구 요약, 사건의 흐름이나 인물의 이력 등을 나열</li>
-</ul>
-</li>
-<li><strong>Critical writing:</strong>
-<ul>
-<li>논쟁에 참여, 남의 주장과 증거 평가, 자신의 분석 추가, 다양한 관점 반영, 논리와 근거에 따라 결론 도출</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-글쓰기-중요성">비판적 글쓰기 중요성<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%A4%91%EC%9A%94%EC%84%B1" class="hash-link" aria-label="비판적 글쓰기 중요성에 대한 직접 링크" title="비판적 글쓰기 중요성에 대한 직접 링크">​</a></h2>
-<ul>
-<li>대학에서는 읽은 것을 그냥 받아들이지 말고, <strong>다양한 시각에서 분석/비판/종합</strong>할 수 있어야 진짜 학문적 목소리(academic voice)를 가질 수 있음</li>
-<li>여러 관점을 다루고 평가할수록 내 논거가 더 설득력 있어짐</li>
-<li>궁극적으로 <strong>현실 세계에 적용 가능한 지식</strong>을 만드는 게 목표</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-읽기쓰기의-두-단계">비판적 읽기·쓰기의 두 단계<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EC%9D%BD%EA%B8%B0%EC%93%B0%EA%B8%B0%EC%9D%98-%EB%91%90-%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="비판적 읽기·쓰기의 두 단계에 대한 직접 링크" title="비판적 읽기·쓰기의 두 단계에 대한 직접 링크">​</a></h2>
-<ul>
-<li>
-<p><strong>1단계: 비판적 사고의 프레임 갖추기</strong></p>
-<ul>
-<li>정보에 대한 호기심</li>
-<li>합리적 근거에 따르려는 태도</li>
-<li>애매함, 불확실성 받아들이기</li>
-<li>자기 편향, 선입견 인지</li>
-</ul>
-</li>
-<li>
-<p><strong>2단계: 실제로 읽고, 쓰는 과정에서 실천</strong></p>
-<ul>
-<li>타인의 아이디어 존중, 열린 마음</li>
-<li>편견 없이 다양한 관점 보기</li>
-<li>비판적·논리적 평가, 근거를 바탕으로 결론 내리기</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-글쓰기의-실제-단계">비판적 글쓰기의 실제 단계<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%8B%A4%EC%A0%9C-%EB%8B%A8%EA%B3%84" class="hash-link" aria-label="비판적 글쓰기의 실제 단계에 대한 직접 링크" title="비판적 글쓰기의 실제 단계에 대한 직접 링크">​</a></h2>
-<ol>
-<li>
-<p><strong>과제 시작 전</strong></p>
-<ul>
-<li>이미 읽은 자료를 정확히 이해</li>
-<li>과제 질문, 기준, 학술적 글쓰기 규범 확인</li>
-</ul>
-</li>
-<li>
-<p><strong>자료 읽기 중</strong></p>
-<ul>
-<li>정보의 신뢰성, 균형성, 출처 확인</li>
-<li>여러 시각/관점의 증거를 분석</li>
-<li>편향·스폰서십·참여자 수 등 확인 (CRAAP test: Currency, Reliability, Authority, Purpose)</li>
-</ul>
-</li>
-<li>
-<p><strong>과제 작성 중</strong></p>
-<ul>
-<li>전제와 일반화 찾기, 그 한계 분석</li>
-<li>논거 비교·대조, 근거 강약 평가</li>
-<li>논리적으로 결론 도출, 너무 많은 인용은 삼가고 반드시 해석·연결</li>
-</ul>
-</li>
-<li>
-<p><strong>제출 전</strong></p>
-<ul>
-<li>논리적 흐름, 근거, 결론 점검</li>
-<li>평가 기준에 부합하는지 확인</li>
-</ul>
-</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="비판적-글쓰기의-언어적-특징">비판적 글쓰기의 언어적 특징<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EB%B9%84%ED%8C%90%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98-%EC%96%B8%EC%96%B4%EC%A0%81-%ED%8A%B9%EC%A7%95" class="hash-link" aria-label="비판적 글쓰기의 언어적 특징에 대한 직접 링크" title="비판적 글쓰기의 언어적 특징에 대한 직접 링크">​</a></h2>
-<ul>
-<li>주장/반박 표현동사: asserts, doubts, contends 등</li>
-<li>비교·대조 전환어: in addition, moreover, however, in contrast</li>
-<li>판단, 중요성, 의미 부여하는 어휘 사용</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="결론">결론<a href="https://gracefullight.dev/2025/07/31/critical-thinking/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
-<ul>
-<li>너무 많은 인용은 오히려 내 목소리를 약하게 만듦. 반드시 해석·비교·평가까지 덧붙이기</li>
-<li>주장/반박/비교·대조 어휘를 적극 활용</li>
-<li>내 의견이 합리적 근거에 기반하고 있는지 늘 점검</li>
-<li>비판적 글쓰기는 연습과 피드백을 통해 발전</li>
 </ul>]]></content:encoded>
             <category>research</category>
             <category>TRP</category>
