@@ -195,3 +195,75 @@ path = bfs(
 )
 print(path) 
 ```
+
+- Has the shallowest path to every node on the frontier
+- memory-intensive as it stores all nodes.
+
+### DFS
+
+> Stack
+
+```py
+def depth_first_search(initial_state, goal_test, actions):
+    """
+    initial_state: 시작 상태
+    goal_test(s): 상태 s가 목표면 True
+    actions(s): 상태 s에서 이동 가능한 다음 상태들의 리스트 반환
+    반환: start → goal 경로(list) 또는 None
+    """
+
+    # 모든 노드 저장: nodes[i] = (state, parent_index)
+    nodes = [(initial_state, None)]
+
+    # frontier ← FILO 스택 (여기서는 노드 인덱스만 저장)
+    frontier = [0]
+
+    # frontier에 있는 상태들의 집합 (중복 삽입 방지용)
+    stacked_states = {initial_state}
+
+    # explored ← 이미 확장(자식 생성)한 상태들의 집합
+    explored = set()
+
+    # 시작 상태가 목표라면 바로 반환
+    if goal_test(initial_state):
+        return [initial_state]
+
+    # DFS 루프 시작
+    while True:
+        # frontier가 비면 실패
+        if not frontier:
+            return None
+
+        # 스택에서 맨 위 노드 꺼내기
+        node_idx = frontier.pop()
+        state, parent_idx = nodes[node_idx]
+
+        # 스택 상태 집합에서 제거 (이제 확장할 차례)
+        stacked_states.discard(state)
+
+        # 현재 상태에서 가능한 모든 자식 상태 확인
+        for child_state in actions(state):
+            # 자식 상태가 explored나 frontier에 없을 때만 처리
+            if (child_state not in explored) and (child_state not in stacked_states):
+                # 새 노드 저장 (부모는 현재 노드)
+                nodes.append((child_state, node_idx))
+                child_idx = len(nodes) - 1
+
+                # 목표 상태면 경로 복원해서 반환
+                if goal_test(child_state):
+                    path, i = [], child_idx
+                    while i is not None:
+                        path.append(nodes[i][0])
+                        i = nodes[i][1]
+                    return list(reversed(path))
+
+                # 목표가 아니면 스택에 push
+                frontier.append(child_idx)
+                stacked_states.add(child_state)
+
+        # 모든 자식 처리가 끝나면 explored에 추가
+        explored.add(state)
+```
+
+- Low memory usage
+- Can get stuck in deep or infinite branches (Not cost-optimal)
