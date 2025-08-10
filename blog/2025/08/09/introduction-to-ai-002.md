@@ -454,3 +454,33 @@ def astar_path(G, start, goal):
 
     return None
 ```
+
+### Admissibility
+
+- $h(n) \leq h^*(n)$
+- Never overestimate the cost to reach the goal
+- A straight line distance between a node and the goal node is an admissible heuristic as it is always shorter than the actual distance between this node to the goal node.
+- With an admissible heuristic, A* is cost-optimal.
+
+### Consistency
+
+- $h(n) \leq c(n, a, n') + h(n')$
+- `h(n)` is consistent if the estimated cost is always less than or equal to the actual cost.
+
+### Admissible vs Consistent
+
+- Consistent ⇒ Admissible (모든 consistent 휴리스틱은 admissible)
+- Admissible ⇏ Consistent (거꾸로는 성립 안 함)
+- The tree search version of A* is optimal if h(n) is admissible
+- The graph search version of A* is optimal if h(n) is consistent
+
+## Summary
+
+| Measure / Criteria | BFS | DFS | Uniform Cost | A* |
+|--------------------|-----|-----|--------------|----|
+| **Complete?** | Yes | No | Yes | Yes |
+| **Time complexity** | $O(b^d)$ | $O(b^m)$ | $O\left(b^{1 + \lfloor C^* / \epsilon \rfloor}\right)$ | $O(b^d)$ |
+| **Space complexity** | $O(b^d)$ | $O(bm)$ | $O\left(b^{1 + \lfloor C^* / \epsilon \rfloor}\right)$ | $O(b^d)$ |
+| **Cost optimal?** | Yes | No | Yes | Yes |
+
+- $\epsilon$ is the smallest positive cost of any single step (edge) in the search problem.
