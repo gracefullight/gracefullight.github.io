@@ -4,10 +4,113 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 09 Aug 2025 08:31:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Aug 2025 05:27:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Fundamentals of software development @003]]></title>
+            <link>https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/</link>
+            <guid>https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/</guid>
+            <pubDate>Mon, 11 Aug 2025 05:27:23 GMT</pubDate>
+            <description><![CDATA[Fundamentals of software development @003]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_p8rR" id="terminology">Terminology<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#terminology" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Software: A set of statements written in a programming language to perform tasks</li>
+<li>Statement: A single instruction in a program that performs an action when executed.</li>
+<li>Snippet: A block of statements.</li>
+<li>Software Development: The process of creating a software program.</li>
+<li>OOP: Program composed of interconnected objects at runtime.</li>
+<li>Expression: An entity-code component of a statement that can be evaluated to produce a value.</li>
+<li>Assign: The process of storing the result (a value) of one or more expressions.</li>
+<li>Value: A data item (literal or computed) that is stored in a variable.</li>
+<li>Compiler: A special program that translates a programming language's source code into machine code.<!-- -->
+<ul>
+<li>Compilers complete the conversion process all at once after changes are made to the code and before the code is executed</li>
+</ul>
+</li>
+<li>Interpreter: A computer program that directly executes code without requiring it to be previously compiled into machine language.<!-- -->
+<ul>
+<li>Interpreters complete the conversion process one step at a time while the code is being executed.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="software-development">Software development<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#software-development" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Software development process is an iterative approach.</li>
+</ul>
+<!-- -->
+<ul>
+<li>java<!-- -->
+<ul>
+<li><code>javac Welcome.java</code>: Compiles the Java source file <code>Welcome.java</code> into class binary file.</li>
+<li><code>java Welcome</code>: Executes the Java program <code>Welcome</code>.</li>
+</ul>
+</li>
+<li>python<!-- -->
+<ul>
+<li><code>python welcome.py</code>: Executes the Python script <code>welcome.py</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="oop">OOP<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#oop" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Object: An object is a thing, tangible and intangible. An object has fields that contain the data and methods to access and modify the data.</li>
+<li>Class: A class is an abstract definition of objects. A class is a template of a blueprint that defines what data and methods are included in objects.</li>
+<li>Method: A block of code grouped together to perform an operation. A method has a <strong>name</strong>, <strong>parameters</strong>, and a <strong>return type</strong>.</li>
+<li>Field: A field is a data attribute of an object. A field value is exposed using object methods.</li>
+<li>Organizing code into classes improves modularity, reusability, extendability, and scalability.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="java-vs-python">Java vs Python<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#java-vs-python" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Identifier type</th><th>Java</th><th>Python</th></tr></thead><tbody><tr><td>Class</td><td>Use CamelCase for multi-word classes</td><td>Use snake_case for multi-word classes</td></tr><tr><td>Function</td><td>use verbs or verb phrases</td><td>use lowercase_with_underscores</td></tr><tr><td>Procedure</td><td>use verbs or verb phrases</td><td>use lowercase_with_underscores</td></tr><tr><td>Variable</td><td>camelCase</td><td>lowercase_with_underscores</td></tr><tr><td>Constant</td><td>All uppercase words separated by underscores</td><td>All uppercase words separated by underscores</td></tr><tr><td>Package</td><td>Lowercase words separated by dots</td><td>Lowercase words separated by underscores</td></tr></tbody></table>
+<ul>
+<li>Java uses the <code>toString()</code> function to return objects' information.</li>
+<li>Python can refer to attributes directly or use the <code>__str()__</code> function to return objects' information</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="data-types">Data types<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#data-types" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>Data Type</th><th>Size</th><th>Default value</th><th>Description</th></tr></thead><tbody><tr><td>byte</td><td>1 byte</td><td>0</td><td>8-bit signed integer</td></tr><tr><td>short</td><td>2 bytes</td><td>0</td><td>16-bit signed integer</td></tr><tr><td>int</td><td>4 bytes</td><td>0</td><td>32-bit signed integer</td></tr><tr><td>long</td><td>8 bytes</td><td>0</td><td>64-bit signed integer</td></tr><tr><td>float</td><td>4 bytes</td><td>0.0f</td><td>32-bit floating point</td></tr><tr><td>double</td><td>8 bytes</td><td>0.0d</td><td>64-bit floating point</td></tr><tr><td>boolean</td><td>1 bit</td><td>false</td><td>true or false</td></tr><tr><td>char</td><td>2 bytes</td><td>'\u0000'</td><td>16-bit Unicode character</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="non-primitive-data-types">Non-Primitive Data Types<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#non-primitive-data-types" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Non-primitive: Arrays, Classes, Interfaces, and Strings.</li>
+<li>Non-primitive data types are by default set to <strong>null</strong> in Java, <strong>None</strong> in Python.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="variables">Variables<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#variables" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><code>Static</code>: enables the variable to be used without creating an object of its defining class.</li>
+<li><code>Final</code>: makes the variable unchangeable.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="operators">Operators<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#operators" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>Operator Category</th><th>Java</th><th>Python</th></tr></thead><tbody><tr><td>Unary</td><td>expr++ expr--</td><td></td></tr><tr><td></td><td>++expr --expr +expr -expr</td><td>+expr -expr</td></tr><tr><td>Arithmetic</td><td><code>* / &amp;</code></td><td><code>* / &amp;</code></td></tr><tr><td></td><td><code>+ -</code></td><td><code>+ -</code></td></tr><tr><td>Relational</td><td><code>&lt; &gt; &lt;= &gt;=</code></td><td><code>&lt; &gt; &lt;= &gt;=</code></td></tr><tr><td></td><td><code>==  !=</code></td><td><code>==  !=</code></td></tr><tr><td>Logical</td><td><code>! &amp;&amp;</code></td><td><code>not and</code></td></tr><tr><td></td><td>||</td><td><code>or</code></td></tr><tr><td>Ternary</td><td><code>(expr1) ? &lt;expr2&gt; : &lt;expr3&gt;</code></td><td><code>(expr1) if &lt;expr2&gt; then &lt;expr3&gt;</code></td></tr><tr><td>Assignment</td><td><code>= += -= *= /= %=</code></td><td><code>= += -= *= /= %= **=</code></td></tr><tr><td>Identity/Membership</td><td></td><td><code>is  is not  in  not in</code></td></tr></tbody></table>
+<ul>
+<li>Java: <code>boolean q = (5 % 2 != 2) ? true : false</code></li>
+<li>Python: <code>q = True if (5 % 2 != 2) else False</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="standard-input">Standard Input<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#standard-input" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<div class="language-java codeBlockContainer_tHj5 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_d2HS"><pre tabindex="0" class="prism-code language-java codeBlock_a9Az thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_HjJH"><span class="token-line" style="color:#393A34"><span class="token plain">import java.util.Scanner;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class Inputs {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  static Scanner in = new Scanner(System.in);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  public static void main(String[] args) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    System.out.print("X = ");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    int x = in.nextInt();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    System.out.println("x squared = " + Math.pow(x, 2));</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<div class="language-py codeBlockContainer_tHj5 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_d2HS"><pre tabindex="0" class="prism-code language-py codeBlock_a9Az thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_HjJH"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> sys</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">x </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">(</span><span class="token builtin">input</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">"x = "</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">"x squared = "</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token builtin">pow</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">x</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="string">String<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#string" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="string-java">String (java)<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#string-java" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>Immutable</p>
+</blockquote>
+<ul>
+<li><code>String s1 = "Hello";</code>: initialize using literal syntax</li>
+<li><code>String s2 = new String("Hello");</code>: initialize using a constructor</li>
+</ul>
+<div class="language-java codeBlockContainer_tHj5 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_d2HS"><pre tabindex="0" class="prism-code language-java codeBlock_a9Az thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_HjJH"><span class="token-line" style="color:#393A34"><span class="token plain">s1 == s1 // false</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">s1.equals(s2) // true</span><br></span></code></pre></div></div>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="string-format-python">String Format (Python)<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#string-format-python" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Symbol</th><th>Meaning</th><th>Example code</th><th>Output</th></tr></thead><tbody><tr><td><code>&lt;</code></td><td>Left align</td><td><code>f'[{42:&lt;5}]'</code></td><td><code>[42   ]</code></td></tr><tr><td><code>&gt;</code></td><td>Right align</td><td><code>f'[{42:&gt;5}]'</code></td><td><code>[   42]</code></td></tr><tr><td><code>^</code></td><td>Center align</td><td><code>f'[{42:^5}]'</code></td><td><code>[ 42  ]</code></td></tr><tr><td><code>&lt;</code> with fill char</td><td>Left align with custom fill</td><td><code>f'[{42:-&lt;5}]'</code></td><td><code>[42---]</code></td></tr><tr><td><code>&gt;</code> with fill char</td><td>Right align with custom fill</td><td><code>f'[{42:-&gt;5}]'</code></td><td><code>[---42]</code></td></tr><tr><td><code>^</code> with fill char</td><td>Center align with custom fill</td><td><code>f'[{42:-&gt;5}]'</code></td><td><code>[-42--]</code></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="array">Array<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#array" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_p8rR" id="array-java">Array (java)<a href="https://gracefullight.dev/en/2025/08/11/fundamentals-of-software-development-003/#array-java" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><code>int[] x = {2, 4, -1, 11, 3};</code></p>
+<ul>
+<li>Declaration: <code>int[] x</code></li>
+<li>Instantiation: <code>x = new int[5];</code></li>
+<li>Initialization: <code>x[0] = 2; x[1] = 4; x[2] = -1;</code></li>
+</ul>]]></content:encoded>
+            <category>fsd</category>
+        </item>
         <item>
             <title><![CDATA[Introduction to ai @002]]></title>
             <link>https://gracefullight.dev/en/2025/08/09/introduction-to-ai-002/</link>
@@ -1018,71 +1121,6 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
 <li>내 분야의 여러 논문 초록을 직접 읽고, 정보 배치/언어/길이를 파악할 것</li>
 <li>초록은 마지막에 급하게 쓰지 말고, 본문보다 더 신경 써서 여러 번 다듬을 것</li>
 <li>반드시 연구의 "새로움, 의의, 차별성"을 한두 문장으로 명확히 드러낼 것</li>
-</ul>]]></content:encoded>
-            <category>research</category>
-            <category>TRP</category>
-        </item>
-        <item>
-            <title><![CDATA[연구 주제 구체화, Narrowing Research Topic]]></title>
-            <link>https://gracefullight.dev/en/2025/07/31/narrowing-research-topic/</link>
-            <guid>https://gracefullight.dev/en/2025/07/31/narrowing-research-topic/</guid>
-            <pubDate>Thu, 31 Jul 2025 04:38:24 GMT</pubDate>
-            <description><![CDATA[Narrowing Research Topic]]></description>
-            <content:encoded><![CDATA[<ul>
-<li>연구 주제를 너무 넓게 잡으면 관련 자료도 방대해지고, 분석·논의도 모호해짐</li>
-<li>명확하고 구체적인 연구 주제/질문을 만드는 것이 효과적</li>
-</ul>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="구체화-전략">구체화 전략<a href="https://gracefullight.dev/en/2025/07/31/narrowing-research-topic/#%EA%B5%AC%EC%B2%B4%ED%99%94-%EC%A0%84%EB%9E%B5" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>주제를 구체화하면 연구 질문도 자연스럽게 따라옴</p>
-</blockquote>
-<ul>
-<li><strong>Aspect</strong>: 연구 문제를 바라보는 하나의 '측면'이나 '관점'만 선택<!-- -->
-<ul>
-<li><em>예시: 전체 현상 중 한 가지 특성, 한 가지 변수 등</em></li>
-</ul>
-</li>
-<li><strong>Components</strong>: 주제를 더 작은 구성 요소로 분해<!-- -->
-<ul>
-<li><em>예시: 대상을 세부 단위별로 나누어 분석</em></li>
-</ul>
-</li>
-<li><strong>Place</strong>: 분석 지역을 좁힐수록 주제도 구체화됨<!-- -->
-<ul>
-<li><em>예시: 남태평양 지역 → 호주</em></li>
-</ul>
-</li>
-<li><strong>Relationship</strong>: 변수 간 관계나 관점(원인/결과, 비교/대조 등) 초점<!-- -->
-<ul>
-<li><em>예시: 남녀 비교, 현대/과거 비교, 문제/해결 구조 등</em></li>
-</ul>
-</li>
-<li><strong>Time</strong>: 분석하는 시간 범위를 한정<!-- -->
-<ul>
-<li><em>예시: 최근 5년, 특정 역사적 시기 등</em></li>
-</ul>
-</li>
-<li><strong>Type</strong>: 대상을 구체적 유형, 그룹, 사례 등으로 한정<!-- -->
-<ul>
-<li><em>예시: 교통 → 학교 주변 SUV만, 학생 운전자만 등</em></li>
-</ul>
-</li>
-<li><strong>Combination</strong>: 위 전략들을 2개 이상 조합<!-- -->
-<ul>
-<li><em>예시: 특정 지역 + 특정 시간 + 특정 유형</em></li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_p8rR" id="주제-구체화를-위한-핵심-질문">주제 구체화를 위한 핵심 질문<a href="https://gracefullight.dev/en/2025/07/31/narrowing-research-topic/#%EC%A3%BC%EC%A0%9C-%EA%B5%AC%EC%B2%B4%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%95%B5%EC%8B%AC-%EC%A7%88%EB%AC%B8" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Who?</strong>: 연구의 대상을 누구로 제한할 것인가?</li>
-<li><strong>What?</strong>: 넓은 주제에서 구체적으로 어떤 점이 흥미로운가?</li>
-<li><strong>Where?</strong>: 지리적 범위를 어디로 한정할 것인가?</li>
-<li><strong>When?</strong>: 어느 시기에 집중할 것인가?</li>
-<li><strong>How?</strong>: 연구 방법, 필요한 정보/장비는 무엇인가?</li>
-<li><strong>How much?</strong>: 기대하는 변화나 측정 가능한 차이는 무엇인가?</li>
-<li><strong>Why?</strong>: 이 주제가 왜 중요/의미 있는가? 왜 이 주제를 연구하는가?</li>
 </ul>]]></content:encoded>
             <category>research</category>
             <category>TRP</category>
