@@ -73,7 +73,7 @@
 <li>Attributes: the collection of features of the object that are maintained in a dataset.</li>
 <li>Object: a collection of features about which measurements can be taken.<!-- -->
 <ul>
-<li>Car --&gt; fuel consumption, cylinders, horsepower...</li>
+<li>Car: fuel consumption, cylinders, horsepower...</li>
 </ul>
 </li>
 </ul>
@@ -105,7 +105,53 @@
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_p8rR" id="summary">Summary<a href="https://gracefullight.dev/2025/08/14/fundamentals-of-data-analytics-003/#summary" class="hash-link" aria-label="Summary에 대한 직접 링크" title="Summary에 대한 직접 링크">​</a></h3>
-<table><thead><tr><th>Qualitative</th><th>Quantitiative (discrete)</th><th>Quantitiative (continuous)</th></tr></thead><tbody><tr><td>Title</td><td>Duration</td><td>Rating</td></tr><tr><td>Production Country</td><td>Release Year</td><td></td></tr><tr><td>Director</td><td></td><td></td></tr><tr><td>Genres</td><td></td><td></td></tr><tr><td>Description</td><td></td><td></td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>Qualitative</th><th>Quantitiative (discrete)</th><th>Quantitiative (continuous)</th></tr></thead><tbody><tr><td>Title</td><td>Duration</td><td>Rating</td></tr><tr><td>Production Country</td><td>Release Year</td><td></td></tr><tr><td>Director</td><td></td><td></td></tr><tr><td>Genres</td><td></td><td></td></tr><tr><td>Description</td><td></td><td></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="categorizing-attributees">Categorizing attributees<a href="https://gracefullight.dev/2025/08/14/fundamentals-of-data-analytics-003/#categorizing-attributees" class="hash-link" aria-label="Categorizing attributees에 대한 직접 링크" title="Categorizing attributees에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>항목</th><th><strong>Nominal (categorical)</strong></th><th><strong>Ordinal</strong></th><th><strong>Interval</strong></th><th><strong>Ratio</strong></th></tr></thead><tbody><tr><td><strong>정의</strong></td><td>값이 라벨·이름 역할만 함. 순서 없음.</td><td>값 사이에 순서 있음. 간격은 정의되지 않음.</td><td>순서 + 고정·동일한 단위(간격). 절대 0 없음.</td><td>Interval 속성 + 절대적 0 있음. 차이와 비율 모두 의미 있음.</td></tr><tr><td><strong>예시</strong></td><td>머리카락 색 <code>{blonde, brown, ginger}</code><br>우편번호<br>산업코드, 연구분야 코드<br>Blood type, License number</td><td>키: <code>tall &gt; average &gt; short</code><br>체중: <code>light &lt; average &lt; heavy</code><br>Star ratings, Tshirt sizes</td><td>키(cm), 몸무게(kg) (원문 기준)<br>12시간제 시각(차이 비교)<br>시간 간격(5분~10분)<br>Waist size, Time</td><td>나이(년)<br>소득(천 달러)<br>켈빈 온도<br>금액, 개수, 질량, 길이, 전류<br>Body weight, Medicine dosage</td></tr><tr><td><strong>예시</strong></td><td>머리카락 색 <code>{blonde, brown, ginger}</code>, 우편번호, 산업코드/연구분야 코드, Blood type, License number</td><td>키: <code>tall &gt; average &gt; short</code>, 체중: <code>light &lt; average &lt; heavy</code>, Star ratings, Tshirt sizes</td><td>키(cm), 몸무게(kg) (원문 기준), 12시간제 시각(차이 비교), 시간 간격(5분~10분), Waist size, Time</td><td>나이(년), 소득(천 달러), 켈빈 온도, 금액, 개수, 질량, 길이, 전류, Body weight, Medicine dosage</td></tr><tr><td><strong>허용 비교</strong></td><td><code>=, ≠</code></td><td><code>=, ≠, &lt;, &gt;</code></td><td><code>=, ≠, &lt;, &gt;, +, −</code></td><td><code>=, ≠, &lt;, &gt;, +, −, ×, ÷</code></td></tr><tr><td><strong>연산 / 분석</strong></td><td>Mode(최빈값)<br>Entropy(불확실성 측정)<br>Contingency table(교차표)<br>Correlation(Chi-squared test of independence)<br>Chi-squared test</td><td>Median<br>Percentiles<br>Rank correlation(Spearman)<br>Run tests(Mann–Whitney U, Wilcoxon)<br>Sign tests</td><td>Mean<br>Standard Deviation<br>Pearson correlation<br>T-test<br>F-test(ANOVA)</td><td>Geometric Mean<br>Harmonic Mean<br>Percent variation(CV)</td></tr><tr><td><strong>설명</strong></td><td>통계적 평균·표준편차 무의미</td><td>순위는 비교 가능하지만 간격·크기 비교 불가.<br>중앙값·순위기반 통계 적합.</td><td>간격 일정 → +, − 가능.<br>절대 0 없음 → 비율 해석 불가.</td><td>절대 0 → 모든 연산 가능.<br>비율·곱셈 해석 가능.</td></tr><tr><td><strong>변수 특징</strong></td><td>Named variables</td><td>Named &amp; Ordered variables</td><td>Named &amp; Ordered &amp; Distance between variables</td><td>Named &amp; Ordered &amp; Distance between variables &amp; Makes sense to multiply/divide</td></tr><tr><td><strong>Analysis Method</strong></td><td>Frequency</td><td>Frequency<br>Median and percentiles</td><td>Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean</td><td>Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean<br>Ratio</td></tr><tr><td><strong>데이터 유형</strong></td><td>Qualitative</td><td>Qualitative</td><td>Quantitative</td><td>Quantitative</td></tr></tbody></table>
+<table><thead><tr><th>Attribute Type</th><th>Description</th><th>Examples</th><th>Operations</th></tr></thead><tbody><tr><td><strong>Nominal</strong></td><td>The values of a nominal attribute are just different names, i.e. nominal attributes provide only enough information to distinguish one object from another. (<code>=, ≠</code>)</td><td>post codes, employee ID numbers, eye colour, sex: <code>{ male, female }</code></td><td>mode, entropy, contingency, correlation, chi squared test</td></tr><tr><td><strong>Ordinal</strong></td><td>The values of an ordinal attribute provide enough information to order objects. (<code>&lt;, &gt;</code>)</td><td>hardness of minerals, <code>{ good, better, best }</code>, grades, street numbers</td><td>median, percentiles, rank correlation, run tests, sign tests</td></tr><tr><td><strong>Interval</strong></td><td>For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (<code>+, −</code>)</td><td>calendar dates, temperature in Celsius or Fahrenheit</td><td>mean, standard deviation, Pearson’s correlation, t and F tests</td></tr><tr><td><strong>Ratio</strong></td><td>For ratio variables both differences and ratios are meaningful. (<code>×, ÷</code>)</td><td>temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current</td><td>geometric mean, harmonic mean, percent variation</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="structured--unstructured-data">Structured &amp; Unstructured Data<a href="https://gracefullight.dev/2025/08/14/fundamentals-of-data-analytics-003/#structured--unstructured-data" class="hash-link" aria-label="Structured &amp; Unstructured Data에 대한 직접 링크" title="Structured &amp; Unstructured Data에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Structured Data: which has an associated fixed data structure.<!-- -->
+<ul>
+<li>Relational table</li>
+<li>Manageable</li>
+</ul>
+</li>
+<li>Unstructured Data: which is expressed in natural language and no specific structure and domain types are defined.<!-- -->
+<ul>
+<li>Documents and sounds.</li>
+</ul>
+</li>
+<li>Semi-structured Data: the format is not fixed and has some degree of flexibility.<!-- -->
+<ul>
+<li>XML, JSON</li>
+<li>emails, text data, image, video and sound, zipped files, web pages.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_p8rR" id="curse-of-dimensionality">Curse of dimensionality<a href="https://gracefullight.dev/2025/08/14/fundamentals-of-data-analytics-003/#curse-of-dimensionality" class="hash-link" aria-label="Curse of dimensionality에 대한 직접 링크" title="Curse of dimensionality에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>The explosive nature of increasing data dimensions and its resulting exponential increase in computational efforts required for its processing and/or analysis.</p>
+</blockquote>
+<ul>
+<li>Characteristics of structured data<!-- -->
+<ul>
+<li>Dimensionality: Datasets with higher numbers of attributes have more dimensions, challenging to work with high dimensional data.</li>
+<li>Sparsity: A dataset termed spare data or having the property of sparsity, which contains many zeros values for most of the attributes.</li>
+<li>Resolution: The patterns depend on the scale or level of resolution.</li>
+</ul>
+</li>
+<li>Real life data is usually in a lower dimensional manifold<!-- -->
+<ul>
+<li>many dimensions can be either ignored or the dimensionality can be reduced.</li>
+</ul>
+</li>
+<li>Local smoothness: small changes in input values give small changes in output values.<!-- -->
+<ul>
+<li>Local interpolation to make predictions.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
             <category>fda</category>
         </item>
         <item>
