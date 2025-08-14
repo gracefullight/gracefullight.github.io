@@ -66,3 +66,40 @@ tags:
 - Attributes: the collection of features of the object that are maintained in a dataset.
 - Object: a collection of features about which measurements can be taken.
   - Car --> fuel consumption, cylinders, horsepower...
+
+## Qualitative & Quantitative data
+
+- Qualitative data: **less structured**, **non-statistical**, **measured using other descriptors and identifiers**
+  - white, heavy, wild...
+- Quantitative data: **statistical**, **measured using hard numbers.**
+  - 130cm, 400kg, 4 legs...
+
+### Discrete & Continuous (Quantitative) data
+
+```mermaid
+graph TB
+  QualitativeData["Qualitative Data"]
+  QuantitativeData["Quantitative Data"]
+  DiscreteData["Discrete Data"]
+  ContinuousData["Continuous Data"]
+
+  Data -->|is a type of| QualitativeData
+  Data -->|is a type of| QuantitativeData
+  QuantitativeData -->|is a type of| DiscreteData
+  QuantitativeData -->|is a type of| ContinuousData
+```
+
+- Discrete data: **fixed, round numbers**, **countable**
+  - number of legs, count of aeroplane depatures, number of times a person commutes for a job in a week
+- Continuous data: **measured over time intervals**
+  - weight, solar irradiation, temperature of a room
+
+### Summary
+
+| Qualitative | Quantitiative (discrete) | Quantitiative (continuous) |
+| --- | --- | --- |
+| Title | Duration | Rating |
+| Production Country | Release Year | |
+| Director | | |
+| Genres | | |
+| Description | | |
