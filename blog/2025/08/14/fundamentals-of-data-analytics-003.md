@@ -65,7 +65,7 @@ tags:
 - Instance: the terms associated with specific objects. Instances are described by a set of values for the features.
 - Attributes: the collection of features of the object that are maintained in a dataset.
 - Object: a collection of features about which measurements can be taken.
-  - Car --> fuel consumption, cylinders, horsepower...
+  - Car: fuel consumption, cylinders, horsepower...
 
 ## Qualitative & Quantitative data
 
