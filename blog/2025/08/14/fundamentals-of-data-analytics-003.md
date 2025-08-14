@@ -148,3 +148,69 @@ graph TB
   - many dimensions can be either ignored or the dimensionality can be reduced.
 - Local smoothness: small changes in input values give small changes in output values.
   - Local interpolation to make predictions.
+
+## Datasets
+
+- Record Data
+  - Data Matrix
+  - Document data: a special type of data matrix where the attributes are of the same type and are asymmetric.
+  - Transaction data: a special type of record data. Each record involves a set of items. Most often, the attributes are binary, indicating whether or not an item was purchased.
+- Graph data
+  - World wide web, Molecular structures (Simplified molecular-inputline-entry system, SMILES)
+- Ordered data: sequence data, this is a sequence of individual entities, such as a sequence of words or letters.
+  - Spatial data
+  - Temporal data
+  - Sequential data
+
+## Data collection
+
+```mermaid
+graph TD
+  MethodOfDataCollection["Method of Data Collection"]
+    PrimarySources["Primary Sources"]
+      Observation
+        Participant
+        NonParticipant["Non-Participant"]
+      Interviewing
+        Structured
+        Unstructured
+      Questionnaire
+        MailedQuestionnaires["Mailed Questionnaires"]
+        CollectiveQuestionnaires["Collective Questionnaires"]
+    SecondarySources["Secondary Sources"]
+      Documents
+        GovtPublications["Government Publications"]
+        EarlierResearch["Earlier Research"]
+        Census
+        PersonalRecords["Personal Records"]
+        ClientHistories["Client Histories"]
+        ServiceRecords["Service Records"]
+
+  MethodOfDataCollection --> PrimarySources
+  MethodOfDataCollection --> SecondarySources
+    PrimarySources --> Observation
+      Observation --> Participant
+      Observation --> NonParticipant
+    PrimarySources --> Interviewing
+      Interviewing --> Structured
+      Interviewing --> Unstructured
+    PrimarySources --> Questionnaire
+      Questionnaire --> MailedQuestionnaires
+      Questionnaire --> CollectiveQuestionnaires
+    SecondarySources --> Documents
+     Documents --> GovtPublications
+     Documents --> EarlierResearch
+     Documents --> Census
+     Documents --> PersonalRecords
+     Documents --> ClientHistories
+     Documents --> ServiceRecords
+```
+
+### Quality
+
+- Missing values: The data was not collected (e.g. age), or some attributes may not be applicable in all cases (e.g. annual income for children).
+- Empty values: Unlike missing values, an empty value is the one that has no actual value, whereas a missing value has an actual value but it is missing somehow.
+- Noise: The modification of actual values.
+- Outlier: A single or very low frequency occurrence of a value of an attribute that is far from the bulk of attribute values.
+- Duplicate data: The same data is recorded multiple times.
+- Inconsistent formats: When the same set of data appears in multiple tables from different inputs.
