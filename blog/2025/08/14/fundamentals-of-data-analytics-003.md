@@ -124,3 +124,16 @@ graph TB
 | **Ordinal** | The values of an ordinal attribute provide enough information to order objects. (<, >) | hardness of minerals, { good, better, best }, grades, street numbers  | median, percentiles, rank correlation, run tests, sign tests |
 | **Interval** | For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (+, −)  | calendar dates, temperature in Celsius or Fahrenheit | mean, standard deviation, Pearson’s correlation, t and F tests |
 | **Ratio** | For ratio variables both differences and ratios are meaningful. (×, ÷) | temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current | geometric mean, harmonic mean, percent variation |
+
+## Structured & Unstructured Data
+
+- Structured Data: which has an associated fixed data structure.
+  - Relational table
+  - Manageable
+- Unstructured Data: which is expressed in natural language and no specific structure and domain types are defined.
+  - Documents and sounds.
+- Semi-structured Data: the format is not fixed and has some degree of flexibility.
+  - XML, JSON
+  - emails, text data, image, video and sound, zipped files, web pages.
+
+## Curse of dimensionality
