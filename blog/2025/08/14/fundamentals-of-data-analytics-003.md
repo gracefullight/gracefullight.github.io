@@ -117,3 +117,10 @@ graph TB
 | **변수 특징** | Named variables | Named & Ordered variables | Named & Ordered & Distance between variables | Named & Ordered & Distance between variables & Makes sense to multiply/divide |
 | **Analysis Method** | Frequency | Frequency<br>Median and percentiles | Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean | Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean<br>Ratio |
 | **데이터 유형** | Qualitative | Qualitative | Quantitative | Quantitative |
+
+| Attribute Type | Description  | Examples  | Operations |
+| --- | --- | --- | --- |
+| **Nominal** | The values of a nominal attribute are just different names, i.e. nominal attributes provide only enough information to distinguish one object from another. (=, ≠) | post codes, employee ID numbers, eye colour, sex: { male, female }  | mode, entropy, contingency, correlation, chi squared test |
+| **Ordinal** | The values of an ordinal attribute provide enough information to order objects. (<, >) | hardness of minerals, { good, better, best }, grades, street numbers  | median, percentiles, rank correlation, run tests, sign tests |
+| **Interval** | For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (+, −)  | calendar dates, temperature in Celsius or Fahrenheit | mean, standard deviation, Pearson’s correlation, t and F tests |
+| **Ratio** | For ratio variables both differences and ratios are meaningful. (×, ÷) | temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current | geometric mean, harmonic mean, percent variation |
