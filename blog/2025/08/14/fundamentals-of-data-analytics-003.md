@@ -120,10 +120,10 @@ graph TB
 
 | Attribute Type | Description  | Examples  | Operations |
 | --- | --- | --- | --- |
-| **Nominal** | The values of a nominal attribute are just different names, i.e. nominal attributes provide only enough information to distinguish one object from another. (=, ≠) | post codes, employee ID numbers, eye colour, sex: { male, female }  | mode, entropy, contingency, correlation, chi squared test |
-| **Ordinal** | The values of an ordinal attribute provide enough information to order objects. (<, >) | hardness of minerals, { good, better, best }, grades, street numbers  | median, percentiles, rank correlation, run tests, sign tests |
-| **Interval** | For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (+, −)  | calendar dates, temperature in Celsius or Fahrenheit | mean, standard deviation, Pearson’s correlation, t and F tests |
-| **Ratio** | For ratio variables both differences and ratios are meaningful. (×, ÷) | temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current | geometric mean, harmonic mean, percent variation |
+| **Nominal** | The values of a nominal attribute are just different names, i.e. nominal attributes provide only enough information to distinguish one object from another. (`=, ≠`) | post codes, employee ID numbers, eye colour, sex: { male, female }  | mode, entropy, contingency, correlation, chi squared test |
+| **Ordinal** | The values of an ordinal attribute provide enough information to order objects. (`<, >`) | hardness of minerals, { good, better, best }, grades, street numbers  | median, percentiles, rank correlation, run tests, sign tests |
+| **Interval** | For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (`+, −`) | calendar dates, temperature in Celsius or Fahrenheit | mean, standard deviation, Pearson’s correlation, t and F tests |
+| **Ratio** | For ratio variables both differences and ratios are meaningful. (`×, ÷`) | temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current | geometric mean, harmonic mean, percent variation |
 
 ## Structured & Unstructured Data
 
@@ -137,3 +137,14 @@ graph TB
   - emails, text data, image, video and sound, zipped files, web pages.
 
 ## Curse of dimensionality
+
+> The explosive nature of increasing data dimensions and its resulting exponential increase in computational efforts required for its processing and/or analysis.
+
+- Characteristics of structured data
+  - Dimensionality: Datasets with higher numbers of attributes have more dimensions, challenging to work with high dimensional data.
+  - Sparsity: A dataset termed spare data or having the property of sparsity, which contains many zeros values for most of the attributes.
+  - Resolution: The patterns depend on the scale or level of resolution.
+- Real life data is usually in a lower dimensional manifold
+  - many dimensions can be either ignored or the dimensionality can be reduced.
+- Local smoothness: small changes in input values give small changes in output values.
+  - Local interpolation to make predictions.
