@@ -84,7 +84,8 @@
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
         "useParseIntRadix": "error",
-        "useSingleJsDocAsterisk": "error"
+        "useSingleJsDocAsterisk": "error",
+        "useJsxKeyInIterable": "error"
       },
       "nursery": {
         "noFloatingPromises": "error",
