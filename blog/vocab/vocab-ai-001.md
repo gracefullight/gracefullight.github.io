@@ -9,7 +9,7 @@ tags:
 
 ## Vocabulary & Expressions
 
-| Term/Expression | Definition | Simpler Paraphrase | Mean |
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
 | [rationality](https://dictionary.cambridge.org/dictionary/english/rationality) | The quality of being based on reason or logic | Logical thinking | 합리성 |
 | [merely](https://dictionary.cambridge.org/dictionary/english/merely) | Just; Only | only | 단지 |

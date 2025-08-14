@@ -9,7 +9,7 @@ tags:
 
 ## Vocabulary & Expressions
 
-| Term/Expression | Definition | Simpler Paraphrase | Mean |
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
 | [perceive](https://dictionary.cambridge.org/dictionary/english/perceive) | To become aware of something through the senses | To notice or become aware of | 인식하다 |
 | [crude](https://dictionary.cambridge.org/dictionary/english/crude) | In a raw or unrefined state; lacking sophistication | Basic or rough; not polished | 조잡한, 대충만든 |

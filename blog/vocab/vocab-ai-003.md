@@ -9,7 +9,7 @@ tags:
 
 ## Vocabulary & Expressions
 
-| Term/Expression | Definition | Simpler Paraphrase | Mean |
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
 | [asymptotic](https://dictionary.cambridge.org/dictionary/english/asymptotic) | Approaching a limit as a variable approaches infinity; not reaching it but getting infinitely close | Getting closer and closer to a value without actually reaching it | 점근적인, 무한히 가까워지는 |
 | [consult](https://dictionary.cambridge.org/dictionary/english/consult) | to get information or advice from a person, book, etc. with special knowledge on a particular subject | refer to | 참고하다 |
