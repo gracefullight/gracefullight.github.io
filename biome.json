@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -22,7 +22,8 @@
           }
         },
         "useSortedAttributes": "on",
-        "useSortedKeys": "on"
+        "useSortedKeys": "on",
+        "useSortedProperties": "on"
       }
     },
     "enabled": true
@@ -75,26 +76,20 @@
       },
       "correctness": {
         "noConstantMathMinMaxClamp": "error",
+        "noNestedComponentDefinitions": "error",
         "noPrivateImports": "error",
         "noUnusedFunctionParameters": "error",
         "noUnusedImports": "error",
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
-        "useHookAtTopLevel": "error"
+        "useHookAtTopLevel": "error",
+        "useParseIntRadix": "error",
+        "useSingleJsDocAsterisk": "error"
       },
       "nursery": {
         "noFloatingPromises": "error",
-        "noUselessBackrefInRegex": "error",
-        "noUselessEscapeInString": "error",
         "noUselessUndefined": "error",
-        "useConsistentObjectDefinition": "error",
-        "useConsistentResponse": "error",
-        "useExhaustiveSwitchCases": "error",
-        "useNumericSeparators": "error",
-        "useObjectSpread": "error",
-        "useParseIntRadix": "error",
-        "useSingleJsDocAsterisk": "error",
-        "useSymbolDescription": "error"
+        "useExhaustiveSwitchCases": "error"
       },
       "recommended": true,
       "style": {
@@ -112,6 +107,7 @@
         "useCollapsedElseIf": "error",
         "useConsistentArrayType": "error",
         "useConsistentBuiltinInstantiation": "error",
+        "useConsistentObjectDefinitions": "error",
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
         "useEnumInitializers": "error",
@@ -129,15 +125,21 @@
             "style": "separatedType"
           }
         },
+        "useObjectSpread": "error",
         "useNumberNamespace": "error",
+        "useNumericSeparators": "error",
         "useSelfClosingElements": "error",
         "useSingleVarDeclarator": "error",
+        "useSymbolDescription": "error",
         "useThrowNewError": "error"
       },
       "suspicious": {
         "noEmptyBlockStatements": "error",
+        "noUselessEscapeInString": "error",
+        "noUselessRegexBackrefs": "error",
         "useAwait": "error",
-        "useErrorMessage": "error"
+        "useErrorMessage": "error",
+        "useStaticResponseMethods": "error"
       }
     }
   },
