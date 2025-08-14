@@ -214,3 +214,30 @@ graph TD
 - Outlier: A single or very low frequency occurrence of a value of an attribute that is far from the bulk of attribute values.
 - Duplicate data: The same data is recorded multiple times.
 - Inconsistent formats: When the same set of data appears in multiple tables from different inputs.
+
+## Data auditing
+
+- attributes
+- measured values
+- comments
+- attribute type
+- operations we can do
+- data type (knime/py)
+- missing value
+- any comments about qualities
+
+| attributes | measured values | comments | attribute type | operations we can do | Data type (knime/python) | missing value | Any comments about qualities |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| fixed acidity | `[3.8, 15.9]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| volatile acidity | `[0.08, 1.58]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| citric acid | `[0, 1.66]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| residual sugar | `[0.6, 65.8]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| chlorides | `[0.009, 0.611]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| free sulfur dioxide | `[1, 289]` | continuous number | ratio | all arithmetic | int | N/A |  |
+| total sulfur dioxide | `[6, 440]` | continuous number | ratio | all arithmetic | int | N/A |  |
+| density | `[0.98711, 1.03898]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| pH | `[2.72, 4.01]` | continuous number | interval | order, arithmetic | float | N/A |  |
+| sulphates | `[0.22, 2]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| alcohol | `[8, 14.9]` | continuous number | ratio | all arithmetic | float | N/A |  |
+| quality | `[extremely dissatisfied, extremely satisfied, moderately dissatisfied, moderately satisfied, neutral, slightly dissatisfied, slightly satisfied]` | distributed | ordinal | order, counting | str | N/A |  |
+| color | `[white, red]` | distributed | nominal | counting | str | N/A |  |
