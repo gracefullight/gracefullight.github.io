@@ -41,3 +41,4 @@ tags:
 | [in accordance with](https://dictionary.cambridge.org/dictionary/english/in-accordance-with) | following or obeying a rule, law, or wish | according to | ~에 따라, ~에 일치하여 |
 | [constitute](https://dictionary.cambridge.org/dictionary/english/constitute) | to be a part of something | to form | 구성하다 |
 | [permute](https://dictionary.cambridge.org/dictionary/english/permute) | to change the order or arrangement of something | to rearrange | 순열하다, 배열을 바꾸다 |
+| [chromosome](https://dictionary.cambridge.org/dictionary/english/chromosome) | a thread-like structure of nucleic acids and protein found in the nucleus of most living cells | genetic structure | 염색체 |
