@@ -2,11 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-14T06:13:20.434Z</updated>
+    <updated>2025-08-15T23:13:08.242Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introduction to AI @003]]></title>
+        <id>https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/</id>
+        <link href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/"/>
+        <updated>2025-08-15T23:13:08.242Z</updated>
+        <summary type="html"><![CDATA[Introduction to AI @003]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="local-search-problem">Local Search Problem<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#local-search-problem" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>To find the state that gives the <strong>optimal/best value</strong> of the <strong>evaluation function</strong></p>
+</blockquote>
+<ul>
+<li>It can be seen as an optimization problem.</li>
+<li>a computational problem that finds the best solution (a state) that satisfies the given constraints</li>
+<li><code>evaluation function === objective function</code></li>
+<li>Only cares about the optimal solution/best state without considering the paths to reach the best state (the optimal solution)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="feasible-region--solution">Feasible region &amp; solution<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#feasible-region--solution" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Feasible region</strong>: the set of all possible or candidate solutions which are the solutions that satisfies the problem's constraints</li>
+<li><strong>Feasible solution</strong>: a solution in the feasible region</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="search-problem-vs-local-search-problem">Search Problem vs Local Search Problem<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#search-problem-vs-local-search-problem" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>Path-based vs State-based</p>
+</blockquote>
+<table><thead><tr><th>Aspects</th><th>Search Problem</th><th>Local Search Problem</th></tr></thead><tbody><tr><td>State</td><td>All possible states - state-space landscape</td><td>Range of decision variables and constraints</td></tr><tr><td>Goal</td><td>Goal state &amp; goal test</td><td>Evaluation function &amp; objective function</td></tr><tr><td>Evaluation</td><td>Measure closeness to goal - distance/fitness</td><td>Minimize cost or maximize fitness</td></tr><tr><td>Transition/Successor</td><td>Transition function</td><td>Successor function</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="discrete--continuous-optimization">Discrete &amp; Continuous Optimization<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#discrete--continuous-optimization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Discrete optimization</strong>: optimization problems where the solution space is discrete (e.g., 8 queens problem)</li>
+<li><strong>Continuous optimization</strong>: optimization problems where the solution space is continuous (e.g., real numbers, any value within a range)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="information-needed-for-local-search">Information needed for Local Search<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#information-needed-for-local-search" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>All possible states</strong>: state-space landscape</li>
+<li><strong>Transition function</strong>: To find neighbour or successor state</li>
+<li><strong>Goal state</strong></li>
+<li><strong>Objective function</strong>: A way to measure how close to the goal state</li>
+<li><strong>Start state</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="search-state-space">Search state-space<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#search-state-space" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Global Maximum</strong>: A state that maximizes the objective function over the entire state space</li>
+<li><strong>Local Maximum</strong>: A state that maximizes the objective function within a small area around it.</li>
+<li><strong>Plateau</strong>: A state such that the objective function is constant in an area around it.<!-- -->
+<ul>
+<li><strong>Shoulder</strong>: A plateau that has uphill edge.</li>
+<li><strong>Flat</strong>: A plateau whose edges go downhill.</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="iai" term="iai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of data analytics @003]]></title>
         <id>https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/</id>
@@ -1105,73 +1161,6 @@ Goldsmith identifies the lack of visibility of writing in the engineering curric
 <li>인용/패러프레이즈/요약 방식 혼합</li>
 <li>인용은 반드시 Harvard 스타일로</li>
 <li>인용 뒤 해설/연결문(코멘트) 반드시 포함</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="research" term="research"/>
-        <category label="TRP" term="TRP"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[레퍼런싱 가이드, Harvard referencing guide]]></title>
-        <id>https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/</id>
-        <link href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/"/>
-        <updated>2025-07-31T05:58:13.692Z</updated>
-        <summary type="html"><![CDATA[Harvard referencing guide]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="본문-인용in-text-citation">본문 인용(In-text citation)<a href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/#%EB%B3%B8%EB%AC%B8-%EC%9D%B8%EC%9A%A9in-text-citation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>한 명 저자<!-- -->
-<ul>
-<li>(Kim 2021)</li>
-</ul>
-</li>
-<li>두 명 저자<!-- -->
-<ul>
-<li>(Kim &amp; Lee 2020)</li>
-</ul>
-</li>
-<li>3명 이상<!-- -->
-<ul>
-<li>(Kim et al. 2018)</li>
-</ul>
-</li>
-<li>직접 인용(페이지)<!-- -->
-<ul>
-<li>(Smith 2009, p. 7)</li>
-</ul>
-</li>
-<li>없음/기관/미상<!-- -->
-<ul>
-<li>(Australian Bureau of Statistics 2009), (Brown n.d.)</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="참고문헌reference-list-기본-규칙">참고문헌(Reference List) 기본 규칙<a href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/#%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8Creference-list-%EA%B8%B0%EB%B3%B8-%EA%B7%9C%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>저자 성, 이니셜. (연도). <em>제목(이탤릭)</em>, 판(필요시). 출판사, 출판지.</p>
-</blockquote>
-<ul>
-<li>제목/저널명은 이탤릭</li>
-<li>Reference List는 알파벳 순</li>
-<li>본문과 Reference List가 정확히 일치해야 함</li>
-<li>모든 항목은 마침표로 끝남</li>
-<li>저자 4명 이상: 본문엔 첫 저자 et al., Reference List엔 모두 작성</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="자료유형별-참고문헌-예시">자료유형별 참고문헌 예시<a href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/#%EC%9E%90%EB%A3%8C%EC%9C%A0%ED%98%95%EB%B3%84-%EC%B0%B8%EA%B3%A0%EB%AC%B8%ED%97%8C-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>자료유형</th><th>예시</th></tr></thead><tbody><tr><td><strong>단행본(Book)</strong></td><td>Smith, J. 2022, <em>Introduction to AI</em>, Tech Press, Sydney.</td></tr><tr><td><strong>학술지 논문(Journal Article)</strong></td><td>Kim, S. &amp; Lee, J. 2020, ‘Deep learning for image recognition’, <em>Journal of AI Research</em>, vol. 15, no. 3, pp. 123-39.</td></tr><tr><td><strong>책 챕터(Book Chapter)</strong></td><td>Brown, L. 2018, ‘Data analysis techniques’, in S. Miller (ed.), <em>Handbook of statistics</em>, Data Publishing, Melbourne, pp. 45-67.</td></tr><tr><td><strong>웹사이트(Website)</strong></td><td>UTS 2024, UTS Harvard referencing guide, viewed 31 July 2025, <code>&lt;https://www.lib.uts.edu.au/help/referencing/harvard-uts-referencing-guide&gt;</code></td></tr><tr><td><strong>보고서/정부 보고서(Report)</strong></td><td>Australian Bureau of Statistics 2019, <em>Labour force, Australia: May 2019</em> (Catalogue No. 6202.0), ABS, Canberra.</td></tr><tr><td><strong>컨퍼런스 논문(Conference Paper)</strong></td><td>Jakubowicz, A. 2002, ‘Race vilification and communal leadership’, <em>Beyond Tolerance: National Conference on Racism</em>, Human Rights and Equal Opportunities Commission, Sydney, viewed 2 Sep 2009, <code>&lt;http://www.humanrights.gov.au/...&gt;</code></td></tr><tr><td><strong>유튜브/영상(YouTube/Video)</strong></td><td>UTS Library 2009, It’s the UTS Library with Mr Hank, videorecording, YouTube, viewed 21 Sep 2009, <code>&lt;http://www.youtube.com/watch?v=QYP_hZmcRgg&gt;</code></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="틀리기-쉬운-주요-규칙">틀리기 쉬운 주요 규칙<a href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/#%ED%8B%80%EB%A6%AC%EA%B8%B0-%EC%89%AC%EC%9A%B4-%EC%A3%BC%EC%9A%94-%EA%B7%9C%EC%B9%99" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>저자 4명 이상: 본문엔 첫 저자 et al., Reference List엔 모두 작성</li>
-<li>출판연도 없음: n.d. 사용 (예: Brown n.d.)</li>
-<li>직접 인용 페이지: (Kim 2018, p. 22), (Kim 2018, pp. 22–24)</li>
-<li>기관/단체 저자: (Australian Bureau of Statistics 2019)</li>
-<li>웹사이트: ‘viewed 날짜’와 URL 필수</li>
-<li>자료유형별 포맷 엄수</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="citation-style-language">Citation Style Language<a href="https://gracefullight.dev/en/2025/07/31/harvard-referencing-guide/#citation-style-language" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://github.com/citation-style-language/styles/blob/master/harvard-university-of-technology-sydney.csl" target="_blank" rel="noopener noreferrer">Harvard University of Technology Sydney</a></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
