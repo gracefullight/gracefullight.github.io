@@ -25,7 +25,7 @@ date: 2020-01-24 23:43:55
 
 ### ARP 캐시
 
-> neighbour: arp_cache: neighbor table overflow!
+> neighbor: arp_cache: neighbor table overflow!
 
 쿠버네티스가 대량의 IP를 소비하면서 ARP 캐시 공간을 모두 사용할 경우 ARP 캐시 관련 변수 조절이 가능하다.
 대규모 HPC 클러스터에서는 흔한 일이며 쿠버네티스의 주소 소진을 방지할 수 있다.
