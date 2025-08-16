@@ -8,11 +8,11 @@
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[vision-language models for vision tasks review]]></title>
+        <title type="html"><![CDATA[Vision-language models for vision tasks review]]></title>
         <id>https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/</id>
         <link href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/"/>
         <updated>2025-08-16T07:40:55.588Z</updated>
-        <summary type="html"><![CDATA[vision-language models for vision tasks review]]></summary>
+        <summary type="html"><![CDATA[Vision-language models for vision tasks review]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#overview" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <blockquote>
 <p>Most visual recognition studies rely heavily on crowdlabelled data in DNN</p>
@@ -190,13 +190,44 @@
 <p>Align image–text pairs in the embedding space.</p>
 </blockquote>
 <ul>
-<li>Image-Text Matching<!-- -->
+<li>pros<!-- -->
 <ul>
-<li>models the <strong>overall correlation</strong> between an entire image and an entire sentence. (전역적 상관관계)</li>
+<li>simple, easy to optimize</li>
+<li>can be easily extended to model fine-grained vision-language correlation</li>
 </ul>
 </li>
-<li>captures <strong>fine-grained correlations</strong> between image regions and specific words. (지역적 상관관계)</li>
+<li>cons<!-- -->
+<ul>
+<li>little correlation information within vision or language modality.</li>
 </ul>
+</li>
+<li>adopted as auxiliary losses to other VLM pre-training objectives for enhancing modelling the correlation across vision and language modalities.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-matching">Image-Text Matching<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-matching" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>models the <strong>overall correlation</strong> between an entire image and an entire sentence. (전역적 상관관계)</li>
+<li>Image-text matching models global image-text correlation by directly aligning paired images and texts<!-- -->
+<ul>
+<li>FLAVA: matches the given image with its paired text via a classifier and a binary classification loss.</li>
+<li>FIBER: follows to mine hard negatives with pair-wise similarities for better alignment between image and text.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="region-word-matching">Region-Word Matching<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#region-word-matching" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>captures <strong>fine-grained correlations</strong> between image regions and specific words. (지역적 상관관계)</li>
+<li>models local fine-grained vision-language correlation by aligning paired image regions and word tokens.</li>
+<li>benefiting <strong>zero-shot dense predictions</strong> in object detection and semantic segmentation.<!-- -->
+<ul>
+<li>GLIP, FIBER, DetCLIP: replace object classification logits by region-word alignment scores.<!-- -->
+<ul>
+<li>the dot-product similarity between regional visual features and token-wise features.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Region-Word Matching, GLIP" src="https://gracefullight.dev/en/assets/images/vlm-region-word-578b649828e666c5d4d0a9ca7af22e51.png" width="942" height="538" class="img_f7zd"></p>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-pre-training-frameworks">VLM Pre-Training Frameworks<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-pre-training-frameworks" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="VLM pre-training frameworks" src="https://gracefullight.dev/en/assets/images/vlm-pretraining-frameworks-39991946607c915ff2a7126f16d59c30.png" width="715" height="273" class="img_f7zd"></p>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="evaluation">Evaluation<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#evaluation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
@@ -267,6 +298,118 @@
 </ul>
 </li>
 </ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-transfer-learning">VLM Transfer learning<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-transfer-learning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<blockquote>
+<p>which adapts VLMs to fit downstream tasks via prompt tuning, feature adapter.</p>
+</blockquote>
+<ul>
+<li>image and text distributions gap: downstream dataset may have task-specific image styles and text formats</li>
+<li>training objectives gap: VLMs are generally trained with task-agnostic objectives, while downstream tasks often involve task-specific objectives. (coarse or fine-grained classification, region or pixel-level recognition)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-via-prompt-tuning">Transfer via Prompt Tuning<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-via-prompt-tuning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>Inspired by the "prompt learning" in NLP</p>
+</blockquote>
+<ul>
+<li>pros<!-- -->
+<ul>
+<li>simple, easy-to-implement</li>
+<li>requires little extra network layer or complex network modifications</li>
+<li>adapting VLMs in a black-box manner, which has clear advantages in transferring VLMs that involve concerns in intellectual property.</li>
+</ul>
+</li>
+<li>cons<!-- -->
+<ul>
+<li>low flexibility by following the manifold (잠재 공간) of the original VLMs in prompting.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-text-prompt-tuning">Transfer with Text Prompt Tuning<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-text-prompt-tuning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Exploring more effective and efficient learnable text prompts with several labelled downstream samples for each class.<!-- -->
+<ul>
+<li><strong>supervised and few-shot supervised</strong>
+<ul>
+<li>CoOp: Exploring context optimization to learn context words for a single class name with learnable word vectors.</li>
+<li>CoCoOp: Exploring conditional context optimization that generates a specific prompt for each image.</li>
+<li>SubPT: designs subspace prompt tuning to improve the generalization of learned prompts.</li>
+<li>LASP: regularizes learnable prompts with hand-engineered prompts.</li>
+<li>VPT: models text prompts with instance-specific distribution with better generalization on downstream tasks.</li>
+<li>KgCoOp: enhances the generalization of unseen class by mitigating the forgetting of textual knowledge.</li>
+<li>SoftCPT: fine-tunes VLMs on multiple few-shot tasks simultaneously for benefiting from multi-task learning.</li>
+<li>PLOT: employs optimal transport to learn multiple prompts to describe the diverse characteristics of a category.</li>
+<li>DualCoOp, TaI-DP: transport VLMs to multi-label classification tasks.<!-- -->
+<ul>
+<li>DualCoOp: adopts both positive and negative prompts for multi-label classification</li>
+<li>TaI-DP: double-grained prompt tuning for capturing both coarse-grained and fine-grained embeddings.</li>
+</ul>
+</li>
+<li>DenseCLIP: explores language-guided fine-tuning that employs visual features to tune text prompts for dense prediction.</li>
+<li>ProTeCt: improves the consistency of model predictions for hierarchical classification task.</li>
+</ul>
+</li>
+<li><strong>unsupervised</strong>
+<ul>
+<li>UPL: optimizes learnable prompts with self-training on selected pseudo-labeled samples.</li>
+<li>TPT: explores test-time prompt tuning to learn adaptive prompts from a single downstream sample.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Text Prompt Tuning" src="https://gracefullight.dev/en/assets/images/vlm-text-prompt-tuning-90bb346d2a9f42bf7769b169254da344.png" width="600" height="476" class="img_f7zd"></p>
+<ul>
+<li><code>V</code> is learnable word vectors that are optimized by minimizing the classification loss with the downstream samples.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-visual-prompt-tuning">Transfer with Visual Prompt Tuning<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-visual-prompt-tuning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>Transfers VLMs by modulating the input of image encoder.<!-- -->
+<ul>
+<li>VP: adopts learnable image perturbations <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span> to modify the input image <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>I</mi></msup></mrow><annotation encoding="application/x-tex">x^I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8413em"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em">I</span></span></span></span></span></span></span></span></span></span></span> by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>I</mi></msup><mo>+</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">x^I + v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9247em;vertical-align:-0.0833em"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em">I</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span>, aiming to adjust <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span> to minimize a recognition loss.</li>
+<li>RePrompt: integrates retrieval mechanisms into visual prompt tuning, allowing leveraging the knowledge from downstream tasks.</li>
+</ul>
+</li>
+<li>enables pixel-level adaptation to downstream tasks, benefiting them greatly especially for dense prediction tasks.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Visual Prompt Tuning" src="https://gracefullight.dev/en/assets/images/vlm-visual-prompt-tuning-36a78e501672cf89040235b31cd0c448.png" width="632" height="478" class="img_f7zd"></p>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-text-visual-prompt-tuning">Transfer with Text-Visual Prompt Tuning<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-text-visual-prompt-tuning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<ul>
+<li>modulate the text and image inputs simultaneously, benefiting from joint prompt optimization on multiple modalities.<!-- -->
+<ul>
+<li>UPT: unifies prompt tuning to jointly optimize text and image prompts, demonstrating the complementary nature of the two prompt tuning tasks.</li>
+<li>MVLPT: explores multi-task vision-language prompt tuning to incorporate cross-task knowledge into text and image prompt tuning.</li>
+<li>MAPLE: conducts multi-modal prompt tuning by aligning visual prompts with their corresponding language prompts, enabling a mutual promotion between text prompts and image prompts.</li>
+<li>CAVPT: introduces a cross attention between class-aware visual prompts and text prompts, encouraging the visual prompts to concentrate more on visual concepts.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-via-feature-adaptation">Transfer via Feature Adaptation<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-via-feature-adaptation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>adapt image or text features with an additional light-weight feature adapter<!-- -->
+<ul>
+<li>Clip-Adapter: inserts several trainable linear layers after CLIP's language and image encoders and optimized them while keeping CLIP architecture and parameters frozen.</li>
+<li>Tip-adapter: a training-free adapter that directly employs the embeddings of few-shot labelled images as the adapter weights.</li>
+<li>SVL-Adapter: a self-supervised adapter which employs an additional encoder for self-supervised learning on input images.</li>
+</ul>
+</li>
+<li>flexible and effective as its architecture and the insertion manner allow tailoring flexibly for different and complex downstream tasks.</li>
+<li>requires modifying network architecture and thus can not handle VLMs that have concerns in intellectual property.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="other-transfer-methods">Other Transfer Methods<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#other-transfer-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Direct fine-tuning, architecture modification, cross attention<!-- -->
+<ul>
+<li>Wise-FT: combines the weights of a fine-tuned VLM and the original VLM for learning new information from downstream tasks.</li>
+<li>MaskCLIP: extracts dense image features by modifying the architecture of the CLIP image encoder.</li>
+<li>VT-CLIP: introduces visual-guided attention to semantically correlate text features with downstream images, leading to a better transfer performance.</li>
+<li>CALIP: introduces parameter-free attention for effective interaction and communication between visual-guided text features.</li>
+<li>TaskRes: directly tunes text-based classifier to exploit the old knowledge in the pre-trained VLM.</li>
+<li>CuPL, VCD: employ large language models like GPT-3 to augment text prompts for learning rich discriminative text information.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Feature Adaptation" src="https://gracefullight.dev/en/assets/images/vlm-feature-adaptation-de7cf8b41fcfa8659cc658c703b4dbc5.png" width="876" height="498" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-knowledge-distillation">VLM Knowledge Distillation<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-knowledge-distillation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Zhang, J., Huang, J., Jin, S., &amp; Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <code>&lt;https://doi.org/10.1109/TPAMI.2024.3369699&gt;</code></li>
@@ -659,7 +802,7 @@
         <updated>2025-08-14T05:01:26.639Z</updated>
         <summary type="html"><![CDATA[Vocabulary for AI @004]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-004/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/perturbation" target="_blank" rel="noopener noreferrer">perturbation</a></td><td>a small change or variation</td><td>a disturbance</td><td>교란</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/modulate" target="_blank" rel="noopener noreferrer">modulate</a></td><td>to adjust or alter the intensity or frequency of something</td><td>to adjust</td><td>조절하다, 변조하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retrieval" target="_blank" rel="noopener noreferrer">retrieval</a></td><td>the process of getting stored information from a computer</td><td>search</td><td>검색</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/leverage" target="_blank" rel="noopener noreferrer">leverage</a></td><td>to use something to maximum advantage</td><td>to utilize</td><td>활용하다</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
