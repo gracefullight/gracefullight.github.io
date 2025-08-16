@@ -93,3 +93,74 @@ tags:
   - $\Delta E$: how bad the new state is compared to the old state
   - $T$: temperature is getting lower over time
   - $k$: a scaling factor
+- Swap condition: $\Delta E <= 0$ or ${-\Delta E / kT} > \text{random}$
+
+## Evolutionary algorithms
+
+- Local beam search
+- Stochastic beam search
+- **Genetic algorithms**
+
+### Characteristics
+
+- size of the population
+- representation of each individual
+- mixing number
+- selection process for selecting the individuals who will become the parents of the next generation
+- recombination procedure
+- mutation rate
+- makeup of the next generation
+
+### Genetic algorithm
+
+> It uses operators, such reproduction, crossover and mutation, inspired by the natural evolutionary principles.
+
+- **State**: is represented by an individual in a population. Traditional representation is a chromosome
+- **Objective function**: is used to evaluate the fitness of an individual (= fitness function, 적합도 함수)
+- **Successor function**: consists of three operators: reproduction, crossover, and mutation
+- **Solution**: is found through evolution from one generation to another generation
+
+```mermaid
+graph LR
+  InitialPopulation["Initial Population"]
+  Selection["Selection"]
+  Crossover["Crossover"]
+  Mutation["Mutation"]
+
+  InitialPopulation --> |Fitness Function| Selection
+  Selection --> Crossover
+  Crossover -->  Mutation
+```
+
+![Genetic Algorithm](./genetic-algorithm.png)
+
+### Roulette Wheel Selection
+
+- **Compute total fitness** of all individuals.
+  - Example: A=30, B=20, C=40, D=10 → Total = 100.
+- **Calculate probability** of each individual being selected
+  - Formula: $P(i) = \frac{fitness(i)}{total\_fitness}$
+    - A = 30/100 = 0.30
+    - B = 20/100 = 0.20
+    - C = 40/100 = 0.40
+    - D = 10/100 = 0.10
+- **Convert to cumulative probabilities**
+  - P4 = 0.10
+  - P4 + P3 = 0.50
+  - P4 + P3 + P2 = 0.90
+  - P4 + P3 + P2 + P1 = 1.00
+- **Generate a random number** between 0 and 1.
+- Select an individual based on the random number and cumulative probabilities.
+
+![Roulette Wheel Selection](./roulette-wheel-selection.png)
+
+- ⚫ random = 0.07 → falls in P4 (0–0.10)
+- 🔺 random = 0.37 → falls in P3 (0.10–0.50)
+- ⬟ random = 0.82 → falls in P2 (0.50–0.90)
+
+### Applications of GA
+
+- **Parameter tuning**: optimize the parameters in NN
+- **Planning**: economic dispatch, train timetabling
+- **Design & Control problems**: robotic control, adaptive control systems
+- Successful use of GA requires careful engineering of the **representation**
