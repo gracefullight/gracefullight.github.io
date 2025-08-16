@@ -1,7 +1,7 @@
 ---
-title: vision-language models for vision tasks review
+title: Vision-language models for vision tasks review
 date: 2025-08-16T17:40:55.588+10:00
-description: vision-language models for vision tasks review
+description: Vision-language models for vision tasks review
 authors: me
 tags:
   - vlm
@@ -145,9 +145,29 @@ graph LR
 
 > Align image–text pairs in the embedding space.
 
-- Image-Text Matching
-  - models the **overall correlation** between an entire image and an entire sentence. (전역적 상관관계)
+- pros
+  - simple, easy to optimize
+  - can be easily extended to model fine-grained vision-language correlation
+- cons
+  - little correlation information within vision or language modality.
+- adopted as auxiliary losses to other VLM pre-training objectives for enhancing modelling the correlation across vision and language modalities.
+
+#### Image-Text Matching
+
+- models the **overall correlation** between an entire image and an entire sentence. (전역적 상관관계)
+- Image-text matching models global image-text correlation by directly aligning paired images and texts
+  - FLAVA: matches the given image with its paired text via a classifier and a binary classification loss.
+  - FIBER: follows to mine hard negatives with pair-wise similarities for better alignment between image and text.
+
+#### Region-Word Matching
+
 - captures **fine-grained correlations** between image regions and specific words. (지역적 상관관계)
+- models local fine-grained vision-language correlation by aligning paired image regions and word tokens.
+- benefiting **zero-shot dense predictions** in object detection and semantic segmentation.
+  - GLIP, FIBER, DetCLIP: replace object classification logits by region-word alignment scores.
+    - the dot-product similarity between regional visual features and token-wise features.
+
+![Region-Word Matching, GLIP](./vlm-region-word.png)
 
 ### VLM Pre-Training Frameworks
 
@@ -197,6 +217,89 @@ graph LR
   - Semantic Segmentation
     - Cityscapes, Mean IoU
     - ADE20K, Mean IoU
+
+## VLM Transfer learning
+
+> which adapts VLMs to fit downstream tasks via prompt tuning, feature adapter.
+
+- image and text distributions gap: downstream dataset may have task-specific image styles and text formats
+- training objectives gap: VLMs are generally trained with task-agnostic objectives, while downstream tasks often involve task-specific objectives. (coarse or fine-grained classification, region or pixel-level recognition)
+
+### Transfer via Prompt Tuning
+
+> Inspired by the "prompt learning" in NLP
+
+- pros
+  - simple, easy-to-implement
+  - requires little extra network layer or complex network modifications
+  - adapting VLMs in a black-box manner, which has clear advantages in transferring VLMs that involve concerns in intellectual property.
+- cons
+  - low flexibility by following the manifold (잠재 공간) of the original VLMs in prompting.
+
+#### Transfer with Text Prompt Tuning
+
+- Exploring more effective and efficient learnable text prompts with several labelled downstream samples for each class.
+  - **supervised and few-shot supervised**
+    - CoOp: Exploring context optimization to learn context words for a single class name with learnable word vectors.
+    - CoCoOp: Exploring conditional context optimization that generates a specific prompt for each image.
+    - SubPT: designs subspace prompt tuning to improve the generalization of learned prompts.
+    - LASP: regularizes learnable prompts with hand-engineered prompts.
+    - VPT: models text prompts with instance-specific distribution with better generalization on downstream tasks.
+    - KgCoOp: enhances the generalization of unseen class by mitigating the forgetting of textual knowledge.
+    - SoftCPT: fine-tunes VLMs on multiple few-shot tasks simultaneously for benefiting from multi-task learning.
+    - PLOT: employs optimal transport to learn multiple prompts to describe the diverse characteristics of a category.
+    - DualCoOp, TaI-DP: transport VLMs to multi-label classification tasks.
+      - DualCoOp: adopts both positive and negative prompts for multi-label classification
+      - TaI-DP: double-grained prompt tuning for capturing both coarse-grained and fine-grained embeddings.
+    - DenseCLIP: explores language-guided fine-tuning that employs visual features to tune text prompts for dense prediction.
+    - ProTeCt: improves the consistency of model predictions for hierarchical classification task.
+  - **unsupervised**
+    - UPL: optimizes learnable prompts with self-training on selected pseudo-labeled samples.
+    - TPT: explores test-time prompt tuning to learn adaptive prompts from a single downstream sample.
+
+![Text Prompt Tuning](./vlm-text-prompt-tuning.png)
+
+- `V` is learnable word vectors that are optimized by minimizing the classification loss with the downstream samples.
+
+#### Transfer with Visual Prompt Tuning
+
+- Transfers VLMs by modulating the input of image encoder.
+  - VP: adopts learnable image perturbations $v$ to modify the input image $x^I$ by $x^I + v$, aiming to adjust $v$ to minimize a recognition loss.
+  - RePrompt: integrates retrieval mechanisms into visual prompt tuning, allowing leveraging the knowledge from downstream tasks.
+- enables pixel-level adaptation to downstream tasks, benefiting them greatly especially for dense prediction tasks.
+
+![Visual Prompt Tuning](./vlm-visual-prompt-tuning.png)
+
+#### Transfer with Text-Visual Prompt Tuning
+
+- modulate the text and image inputs simultaneously, benefiting from joint prompt optimization on multiple modalities.
+  - UPT: unifies prompt tuning to jointly optimize text and image prompts, demonstrating the complementary nature of the two prompt tuning tasks.
+  - MVLPT: explores multi-task vision-language prompt tuning to incorporate cross-task knowledge into text and image prompt tuning.
+  - MAPLE: conducts multi-modal prompt tuning by aligning visual prompts with their corresponding language prompts, enabling a mutual promotion between text prompts and image prompts.
+  - CAVPT: introduces a cross attention between class-aware visual prompts and text prompts, encouraging the visual prompts to concentrate more on visual concepts.
+
+### Transfer via Feature Adaptation
+
+- adapt image or text features with an additional light-weight feature adapter
+  - Clip-Adapter: inserts several trainable linear layers after CLIP's language and image encoders and optimized them while keeping CLIP architecture and parameters frozen.
+  - Tip-adapter: a training-free adapter that directly employs the embeddings of few-shot labelled images as the adapter weights.
+  - SVL-Adapter: a self-supervised adapter which employs an additional encoder for self-supervised learning on input images.
+- flexible and effective as its architecture and the insertion manner allow tailoring flexibly for different and complex downstream tasks.
+- requires modifying network architecture and thus can not handle VLMs that have concerns in intellectual property.
+
+### Other Transfer Methods
+
+- Direct fine-tuning, architecture modification, cross attention
+  - Wise-FT: combines the weights of a fine-tuned VLM and the original VLM for learning new information from downstream tasks.
+  - MaskCLIP: extracts dense image features by modifying the architecture of the CLIP image encoder.
+  - VT-CLIP: introduces visual-guided attention to semantically correlate text features with downstream images, leading to a better transfer performance.
+  - CALIP: introduces parameter-free attention for effective interaction and communication between visual-guided text features.
+  - TaskRes: directly tunes text-based classifier to exploit the old knowledge in the pre-trained VLM.
+  - CuPL, VCD: employ large language models like GPT-3 to augment text prompts for learning rich discriminative text information.
+
+![Feature Adaptation](./vlm-feature-adaptation.png)
+
+## VLM Knowledge Distillation
 
 ## Ref
 

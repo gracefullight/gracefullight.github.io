@@ -45,3 +45,7 @@ tags:
 | [auxiliary](https://dictionary.cambridge.org/dictionary/english/auxiliary) | providing supplementary or additional help and support | supplementary | 보조의 |
 | [discriminative](https://dictionary.cambridge.org/dictionary/english/discriminative) | able to distinguish or differentiate | distinguishing | 구별 가능한 |
 | [exploit](https://dictionary.cambridge.org/dictionary/english/exploit) | to make full use of and benefit from something | to utilize | 활용하다 |
+| [perturbation](https://dictionary.cambridge.org/dictionary/english/perturbation) | a small change or variation | a disturbance | 교란 |
+| [modulate](https://dictionary.cambridge.org/dictionary/english/modulate) | to adjust or alter the intensity or frequency of something | to adjust | 조절하다, 변조하다 |
+| [retrieval](https://dictionary.cambridge.org/dictionary/english/retrieval) | the process of getting stored information from a computer | search | 검색 |
+| [leverage](https://dictionary.cambridge.org/dictionary/english/leverage) | to use something to maximum advantage | to utilize | 활용하다 |
