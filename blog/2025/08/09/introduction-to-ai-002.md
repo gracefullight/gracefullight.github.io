@@ -1,5 +1,5 @@
 ---
-title: Introduction to ai @002
+title: Introduction to AI @002
 date: 2025-08-09T18:31:59.650+10:00
 description: Introduction to ai @002
 authors: me
