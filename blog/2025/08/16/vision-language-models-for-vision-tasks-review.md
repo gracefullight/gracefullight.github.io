@@ -301,6 +301,79 @@ graph LR
 
 ## VLM Knowledge Distillation
 
+- distils general and robust VLM knowledge to task-specific models without the restriction of VLM architecture, benefiting task-specific designs while tackling various dense prediction tasks.
+- most VLM knowledge distillation methods focus on transferring image-level knowledge to region- or pixel-level tasks such as object detection and semantic segmentation.
+
+### Knowledge Distillation for Object Detection
+
+- To distill VLM knowledge to enlarge the detector vocabulary
+- To better align image-level and object-level representations
+  - ViLD: distills VLM knowledge to a two-stage detector whose embedding space is enforced to be consistent with that of CLIP image encoder.
+  - HierKD: hierarchical global-local knowledge distillation.
+  - RKD: region-based knowledge distillation for better aligning region-level and image-level embeddings.
+  - ZSD-YOLO: self-labeling data augmentation for exploiting CLIP for better object detection.
+  - OADP: proposal features while transferring contextual knowledge.
+  - BARON: uses neighborhood sampling to distill a bag of regions instead of individual regions.
+  - RO-ViT: distills information from VLMs for open-vocabulary detection.
+- VLM distillation via prompt learning
+  - DetPro: a detection prompt technique for learning continuous prompt representations for open-vocabulary object detection.
+  - PrompDet: regional prompt learning for aligning word embeddings with regional image embeddings.
+  - PB-OVD: trains object detectors with VLM-predicted pseudo bounding boxes.
+  - XPM: a robust cross-modal pseudo-labeling strategy that employs VLM-generated pseudo masks for open-vocabulary instance segmentation.
+  - P3OVD: prompt-driven self-training that refines the VLM-generated pseudo labels with fine-grained prompt tuning.
+
+### Knowledge Distillation for Semantic Segmentation
+
+- Leverage VLMs to enlarge the vocabulary of segmentation models, aim to segment pixels described by arbitrary texts. (i.e., any categories of pixels beyond base classes)
+- Tackling the mismatch between image-level and pixel-level representations.
+  - CLIPSeg: a lightweight transformer decoder to extend CLIP for semantic segmentation.
+  - LSeg: maximizes the correlation between CLIP text embeddings and pixel-wise image embedding encoded by segmentation models.
+  - ZegCLIP: employs CLIP to generate semantic masks and introduces a relationship descriptor to mitigate overfitting on base classes.
+  - MaskCLIP+, SSIW: distill knowledge with VLM-predicted pixel-level pseudo labels.
+  - FreeSeg: generates mask proposals first and then performs zero-shot classification for them.
+
+#### Knowledge distillation for weakly-supervised semantic segmentation
+
+- Leverage both VLMs and weak supervision (e.g., image-level labels) for semantic segmentation.
+- CLIP-ES: employs CLIP to refine the class activation map by designing a softmax function and a class-aware attention-based affinity module for mitigating the category confusion issue.
+- CLIMS: employs CLIP knowledge to generate high-quality class activation maps for better weakly-supervised semantic segmentation.
+
+## Performance
+
+- VLM is largely attributed to three factors: Big data, Big Model, and Task-agnostic learning.
+- Limitations
+  - When data/model size keeps increasing, the performance saturates and further scaling up won’t improve performance
+  - Adopting large-scale data in VLM pre-training necessitates extensive computation resources
+  - Adopting large models introduces excessive computation and memory overheads in both training and inference
+- Transfer Learning
+  - can mitigate the domain gaps by learning from task-specific data, being labelled or unlabelled.
+  - Supervised `>` few-shot supervised `=` unsupervised transfer (overfitting but challenging)
+- Knowledge Distillation
+  - brings clear performance improvement on detection and segmentation tasks
+  - introduces general and robust VLM knowledge while benefiting from task-specific designs
+- the development of VLM pre-training for dense visual recognition tasks (on region or pixel-level detection and segmentation) lag far behind.
+- require certain norms in term of training data, networks and downstream tasks.
+  - VLM transfer: release their codes and do not require intensive computation resources, easing reproduction and benchmarking.
+  - VLM pre-training: studied with different data and networks, making benchmarking a very challenging task. also use non-public training data, or require intensive computation resources.
+  - VLM knowledge distillation: adopt different task-specific backbones, which complicates benchmarking.
+
+## Challenges
+
+- VLM pre-training
+  - **Fine-grained vision-language correlation modelling**: can better recognize patches and pixels beyond images, greatly benefiting dense prediction tasks
+  - **Unification of vision and language learning**: enables efficient communications across data modalities which can benefit both training effectiveness and training efficiency.
+  - **Pre-training VLMs with multiple languages**: could introduce bias in term of cultures and regions and hinder VLM applications in other language areas.
+  - **Data-efficient VLMs**: instead of merely learning from each image-text pair, more useful information could be learned with the supervision among image-text pairs.
+  - **Pre-training VLMs with LLMs**: employ LLMs to augment the texts in the raw image-text pairs, which provides richer language knowledge and helps better learn vision-language correlation.
+- VLM Transfer Learning
+  - **Unsupervised VLM transfer**: much lower risk of overfitting than few-shot supervised transfer.
+  - **VLM transfer with visual prompt/adapter**: Existing studies focus on text prompt learning. Visual prompt learning or visual adapter, which is complementary to text prompting and can enable pixel-level adaptation in various dense prediction tasks.
+  - **Test-time VLM transfer**: Existing studies conduct transfer by fine-tuning VLMs on each downstream task (i.e., prompt learning), leading to repetitive efforts while facing many downstream tasks. Adapting prompts on the fly during inference can circumvent the repetitive training in existing VLM transfer.
+  - **VLM transfer with LLMs**: Different from prompt engineering and prompt learning, exploit LLMs to generate text prompts that better describe downstream tasks. This approach is automatic and requires little labelled data.
+- VLM knowledge distillation
+  - **Knowledge distillation from multiple VLMs**: harvest their synergistic effect by coordinating knowledge distillation from multiple VLMs.
+  - **Knowledge distillation for other visual recognition tasks**: leverage the knowledge distilled from VLMs to improve performance on other visual recognition tasks. (instance segmentation, panoptic segmentation, person reidentification)
+
 ## Ref
 
 - Zhang, J., Huang, J., Jin, S., & Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. `<https://doi.org/10.1109/TPAMI.2024.3369699>`
