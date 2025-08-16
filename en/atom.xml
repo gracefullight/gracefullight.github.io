@@ -108,6 +108,78 @@
 <li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span>: a scaling factor</li>
 </ul>
 </li>
+<li>Swap condition: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>E</mi><mo>&lt;</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta E &lt;= 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&lt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>k</mi><mi>T</mi></mrow><mo>&gt;</mo><mtext>random</mtext></mrow><annotation encoding="application/x-tex">{-\Delta E / kT} &gt; \text{random}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord">−</span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.03148em">k</span><span class="mord mathnormal" style="margin-right:0.13889em">T</span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord text"><span class="mord">random</span></span></span></span></span></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="evolutionary-algorithms">Evolutionary algorithms<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#evolutionary-algorithms" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Local beam search</li>
+<li>Stochastic beam search</li>
+<li><strong>Genetic algorithms</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="characteristics">Characteristics<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#characteristics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>size of the population</li>
+<li>representation of each individual</li>
+<li>mixing number</li>
+<li>selection process for selecting the individuals who will become the parents of the next generation</li>
+<li>recombination procedure</li>
+<li>mutation rate</li>
+<li>makeup of the next generation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="genetic-algorithm">Genetic algorithm<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#genetic-algorithm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>It uses operators, such reproduction, crossover and mutation, inspired by the natural evolutionary principles.</p>
+</blockquote>
+<ul>
+<li><strong>State</strong>: is represented by an individual in a population. Traditional representation is a chromosome</li>
+<li><strong>Objective function</strong>: is used to evaluate the fitness of an individual (= fitness function, 적합도 함수)</li>
+<li><strong>Successor function</strong>: consists of three operators: reproduction, crossover, and mutation</li>
+<li><strong>Solution</strong>: is found through evolution from one generation to another generation</li>
+</ul>
+<!-- -->
+<p><img decoding="async" loading="lazy" alt="Genetic Algorithm" src="https://gracefullight.dev/en/assets/images/genetic-algorithm-db5ac52fb262d55d999eff1f47439e1b.png" width="1730" height="430" class="img_f7zd"></p>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="roulette-wheel-selection">Roulette Wheel Selection<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#roulette-wheel-selection" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Compute total fitness</strong> of all individuals.<!-- -->
+<ul>
+<li>Example: A=30, B=20, C=40, D=10 → Total = 100.</li>
+</ul>
+</li>
+<li><strong>Calculate probability</strong> of each individual being selected<!-- -->
+<ul>
+<li>Formula: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mi>i</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi mathvariant="normal">_</mi><mi>f</mi><mi>i</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(i) = \frac{fitness(i)}{total\_fitness}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.572em;vertical-align:-0.562em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight" style="margin-right:0.01968em">l</span><span class="mord mtight" style="margin-right:0.02778em">_</span><span class="mord mathnormal mtight" style="margin-right:0.10764em">f</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.485em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em">f</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.562em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
+<ul>
+<li>A = 30/100 = 0.30</li>
+<li>B = 20/100 = 0.20</li>
+<li>C = 40/100 = 0.40</li>
+<li>D = 10/100 = 0.10</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Convert to cumulative probabilities</strong>
+<ul>
+<li>P4 = 0.10</li>
+<li>P4 + P3 = 0.50</li>
+<li>P4 + P3 + P2 = 0.90</li>
+<li>P4 + P3 + P2 + P1 = 1.00</li>
+</ul>
+</li>
+<li><strong>Generate a random number</strong> between 0 and 1.</li>
+<li>Select an individual based on the random number and cumulative probabilities.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Roulette Wheel Selection" src="https://gracefullight.dev/en/assets/images/roulette-wheel-selection-d6c6fabff2f28f3ba08382b9a4727c13.png" width="1333" height="570" class="img_f7zd"></p>
+<ul>
+<li>⚫ random = 0.07 → falls in P4 (0–0.10)</li>
+<li>🔺 random = 0.37 → falls in P3 (0.10–0.50)</li>
+<li>⬟ random = 0.82 → falls in P2 (0.50–0.90)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="applications-of-ga">Applications of GA<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#applications-of-ga" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Parameter tuning</strong>: optimize the parameters in NN</li>
+<li><strong>Planning</strong>: economic dispatch, train timetabling</li>
+<li><strong>Design &amp; Control problems</strong>: robotic control, adaptive control systems</li>
+<li>Successful use of GA requires careful engineering of the <strong>representation</strong></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
