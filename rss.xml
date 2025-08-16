@@ -23,6 +23,7 @@
 <li>a computational problem that finds the best solution (a state) that satisfies the given constraints</li>
 <li><code>evaluation function === objective function</code></li>
 <li>Only cares about the optimal solution/best state without considering the paths to reach the best state (the optimal solution)</li>
+<li>Not systematic</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="feasible-region--solution">Feasible region &amp; solution<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#feasible-region--solution" class="hash-link" aria-label="Feasible region &amp; solution에 대한 직접 링크" title="Feasible region &amp; solution에 대한 직접 링크">​</a></h3>
 <ul>
@@ -42,7 +43,7 @@
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="information-needed-for-local-search">Information needed for Local Search<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#information-needed-for-local-search" class="hash-link" aria-label="Information needed for Local Search에 대한 직접 링크" title="Information needed for Local Search에 대한 직접 링크">​</a></h3>
 <ul>
 <li><strong>All possible states</strong>: state-space landscape</li>
-<li><strong>Transition function</strong>: To find neighbour or successor state</li>
+<li><strong>Transition function</strong>: To find neighbor or successor state</li>
 <li><strong>Goal state</strong></li>
 <li><strong>Objective function</strong>: A way to measure how close to the goal state</li>
 <li><strong>Start state</strong></li>
@@ -57,6 +58,41 @@
 <li><strong>Flat</strong>: A plateau whose edges go downhill.</li>
 </ul>
 </li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="advantages">Advantages<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#advantages" class="hash-link" aria-label="Advantages에 대한 직접 링크" title="Advantages에 대한 직접 링크">​</a></h3>
+<ul>
+<li>use little memory</li>
+<li>can often find reasonably good solution in large or infinite search spaces</li>
+<li>useful for solving pure optimization problems</li>
+<li>don't need to know the path to the solution.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="hill-climbing">Hill climbing<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#hill-climbing" class="hash-link" aria-label="Hill climbing에 대한 직접 링크" title="Hill climbing에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>keeps track of one current state and on each iteration moves to the neighboring state with highest value.</p>
+</blockquote>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><mo>−</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f = max(-cost(X))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathnormal">cos</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em">X</span><span class="mclose">))</span></span></span></span></li>
+<li>Steps<!-- -->
+<ul>
+<li>Evaluate the initial stat</li>
+<li>If it is equal to the goal state, return. Otherwise, continue.</li>
+<li>Find a neighboring state</li>
+<li>Evaluate this state. If it is closer to the goal state than before, replace the initial state with this state.</li>
+<li>Repeat steps 2-4 until it reaches a goal state (local or global maximum) or runs out of time.</li>
+</ul>
+</li>
+<li>No search tree, No backtracking, Don't look ahead beyond the current state.<!-- -->
+<ul>
+<li>get stuck due to local maxima, plateaus, or ridges.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="variations-of-hc">Variations of HC<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#variations-of-hc" class="hash-link" aria-label="Variations of HC에 대한 직접 링크" title="Variations of HC에 대한 직접 링크">​</a></h3>
+<ul>
+<li><strong>Simple HC</strong>: greedy local search which expands the current state and moves on to the best neighbor.</li>
+<li><strong>Stochastic HC</strong>: choose randomly among the neighbors going uphill.</li>
+<li><strong>First-choice HC</strong>: generate random successor until one is better. Good for states with high numbers of successors.</li>
+<li><strong>Random restart</strong>: conducts a series of hill climbing searches from random initial states until a goal state is found.</li>
 </ul>]]></content:encoded>
             <category>iai</category>
         </item>
