@@ -81,3 +81,15 @@ tags:
 - **Stochastic HC**: choose randomly among the neighbors going uphill.
 - **First-choice HC**: generate random successor until one is better. Good for states with high numbers of successors.
 - **Random restart**: conducts a series of hill climbing searches from random initial states until a goal state is found.
+
+## Simulated Annealing
+
+> based upon the annealing process to model the search process for finding an optimal solution to an optimisation problem
+
+- **annealing schedule**, **temperature**, **energy**
+- finds the **minimal value** of the objective function (energy function)
+- starts with a high temperature and then gradually reduces the temperature
+- $P = e^{-\Delta E / kT}$
+  - $\Delta E$: how bad the new state is compared to the old state
+  - $T$: temperature is getting lower over time
+  - $k$: a scaling factor
