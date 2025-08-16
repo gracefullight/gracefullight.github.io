@@ -92,6 +92,22 @@
 <li><strong>Stochastic HC</strong>: choose randomly among the neighbors going uphill.</li>
 <li><strong>First-choice HC</strong>: generate random successor until one is better. Good for states with high numbers of successors.</li>
 <li><strong>Random restart</strong>: conducts a series of hill climbing searches from random initial states until a goal state is found.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="simulated-annealing">Simulated Annealing<a href="https://gracefullight.dev/2025/08/16/introduction-to-ai-003/#simulated-annealing" class="hash-link" aria-label="Simulated Annealing에 대한 직접 링크" title="Simulated Annealing에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>based upon the annealing process to model the search process for finding an optimal solution to an optimisation problem</p>
+</blockquote>
+<ul>
+<li><strong>annealing schedule</strong>, <strong>temperature</strong>, <strong>energy</strong></li>
+<li>finds the <strong>minimal value</strong> of the objective function (energy function)</li>
+<li>starts with a high temperature and then gradually reduces the temperature</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>k</mi><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P = e^{-\Delta E / kT}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.888em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.05764em">E</span><span class="mord mtight">/</span><span class="mord mathnormal mtight" style="margin-right:0.03148em">k</span><span class="mord mathnormal mtight" style="margin-right:0.13889em">T</span></span></span></span></span></span></span></span></span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">\Delta E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span></span></span></span>: how bad the new state is compared to the old state</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">T</span></span></span></span>: temperature is getting lower over time</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span>: a scaling factor</li>
+</ul>
+</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
