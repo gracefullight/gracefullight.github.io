@@ -2,11 +2,255 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-15T23:13:08.242Z</updated>
+    <updated>2025-08-16T07:40:55.588Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[vision-language models for vision tasks review]]></title>
+        <id>https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/</id>
+        <link href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/"/>
+        <updated>2025-08-16T07:40:55.588Z</updated>
+        <summary type="html"><![CDATA[vision-language models for vision tasks review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#overview" class="hash-link" aria-label="Overview에 대한 직접 링크" title="Overview에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>Most visual recognition studies rely heavily on crowdlabelled data in DNN</p>
+</blockquote>
+<ul>
+<li>Background development of visual recognition paradigms</li>
+<li>Foundations its architecture</li>
+<li>Datasets in VLM pre-training and evaluations</li>
+<li>Review and categorization of existing pre-training methods</li>
+<li>Benchmarking analysis discussion</li>
+<li>Reach challenges &amp; potential research direction</li>
+<li>Training hard<!-- -->
+<ul>
+<li>New learning paradigm</li>
+</ul>
+</li>
+<li>Vision-Language Model Pre-training and Zero-shot Prediction<!-- -->
+<ul>
+<li>Increasing attention</li>
+</ul>
+</li>
+<li>VLMs with transfer learning<!-- -->
+<ul>
+<li>Prompt tuning</li>
+<li>Visual adaption</li>
+</ul>
+</li>
+<li>VLMs with knowledge distillation<!-- -->
+<ul>
+<li>distill knowledge from VLMs to downstream tasks</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="the-development-of-visual-recognition-paradigms">The development of visual recognition paradigms<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#the-development-of-visual-recognition-paradigms" class="hash-link" aria-label="The development of visual recognition paradigms에 대한 직접 링크" title="The development of visual recognition paradigms에 대한 직접 링크">​</a></h2>
+<!-- -->
+<ul>
+<li>Traditional ML: Hand-crafted features for prediction.</li>
+<li>Deep Learning: Deep networks (e.g., ResNet) with large-scale labeled data.</li>
+<li>Supervised Pre-training + Fine-tuning: Learned representations transferred to downstream tasks.</li>
+<li>Unsupervised / Self-supervised Pre-training + Fine-tuning: Objectives like masked modeling and contrastive learning to learn representations.</li>
+<li>Vision-Language Models &amp; Zero-shot: Leverage large-scale web data, enabling zero-shot prediction without task-specific fine-tuning.<!-- -->
+<ul>
+<li>Collecting large-scale informative image-text data</li>
+<li>Designing high-capacity models for effective learning from Bigdata.</li>
+<li>Designing new pre-training objectives for learning effective VLMs.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Illustration of development of VLMs for visual recognition" src="https://gracefullight.dev/assets/images/vlm-paradigm-46050660982130f887307cc0442975c0.png" width="701" height="347" class="img_f7zd"></p>
+<ul>
+<li>CLIP: Image-text contrastive objective and learns by pulling the paired images and texts close and pushing others faraway in the embedding space.<!-- -->
+<ul>
+<li>enables effective usage of web data and allows zero-shot predictions without task-specific finetuning.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-overview">VLM Overview<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-overview" class="hash-link" aria-label="VLM Overview에 대한 직접 링크" title="VLM Overview에 대한 직접 링크">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="VLM Overview" src="https://gracefullight.dev/assets/images/vlm-overview-2abb2d65aeef690c49e399a7ca3ac86c.png" width="1400" height="728" class="img_f7zd"></p>
+<ul>
+<li>Given Image-text pairs.</li>
+<li>Employs a text encoder and an image encoder to extract image and text features.</li>
+<li>Learns the vision-language correlation with certain pre-training objectives.</li>
+<li>GAP: Global Average Pooling, a technique used to reduce the spatial dimensions of feature maps while retaining important information.</li>
+<li>ViT: Vision Transformer: Transformers for image recognition at scale.</li>
+<li>CNN Based: VGG, <strong>ResNet</strong>, EfficientNet<!-- -->
+<ul>
+<li>ResNet: Adopts skip connections between convolutional blocks which mitigates gradient vanishing and explosion and enables DNN training.</li>
+<li>ResNet-D: Replace global average pooling with transformer multi-head attention.</li>
+</ul>
+</li>
+<li>Transformer Based: ViT<!-- -->
+<ul>
+<li>Adding a normalization layer before the transformer encoder.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-pre-training-objectives">VLM pre-training Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-pre-training-objectives" class="hash-link" aria-label="VLM pre-training Objectives에 대한 직접 링크" title="VLM pre-training Objectives에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="contrastive-objectives">Contrastive Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#contrastive-objectives" class="hash-link" aria-label="Contrastive Objectives에 대한 직접 링크" title="Contrastive Objectives에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Pros<!-- -->
+<ul>
+<li>Enforce positive pairs to have similar embeddings in contrast to negative pairs.</li>
+<li>Encourages VLMs to learn discriminative vision and language features, where more discriminative features lead to more confident and accurate zero-shot predictions.</li>
+</ul>
+</li>
+<li>Cons<!-- -->
+<ul>
+<li>Joint optimizing positive and negative pairs is complicated and challenging.</li>
+<li>Involves a heuristic temperature hyper-parameter for controlling the feature discriminability.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-contrastive-learning">Image Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-contrastive-learning" class="hash-link" aria-label="Image Contrastive Learning에 대한 직접 링크" title="Image Contrastive Learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Forcing a query image to be close with its positive keys (its data augmentations)</li>
+<li>Faraway from its negative keys (other images)</li>
+<li><strong>Learn discriminative features</strong> in image modality, which often serves as an auxiliary objective for fully exploiting the image data potential.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-contrastive-learning">Image-Text Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-contrastive-learning" class="hash-link" aria-label="Image-Text Contrastive Learning에 대한 직접 링크" title="Image-Text Contrastive Learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Pulling the embeddings of paired images and texts close while pushing others away.</li>
+<li>Minimizing a symmetrical image-text infoNCE loss</li>
+<li><strong>Learn vision-language correlation</strong> by contrasting image-text pairs.<!-- -->
+<ul>
+<li>CLIP: A symmetrical image-text infoNCE loss</li>
+<li>ALIGN: scales up the VLM pre-training with large-scale (but noisy image-text pair with noise-robust contrastive learning)</li>
+<li>DeCLIP: Nearest-neighbor supervision to utilize the information from similar pairs, enabling effective pre-training on limited data.</li>
+<li>OTTER: Optimal transport to pseudo-pair images and texts reducing the required training data.</li>
+<li>ZeroVL: Limited data resource via debiased data sampling and data augmentation with coin flipping mixup.</li>
+<li>FILIP: Region-word alignment into contrastive learning, enabling to learn fine-grained vision-language corresponding knowledge.</li>
+<li>Pyramid-CLIP: Multiple semantic levels and performs both cross-level and peer-level contrastive learning for effective VLM pre-training.</li>
+<li>LA-CLIP, ALIP: LLM to augment synthetic captions for given images while RA-CLIP retrieves relevant image-text pairs for image-text pair augmentation.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="CLIP" src="https://gracefullight.dev/assets/images/vlm-clip-002c83bc065d184a2350741cacc71908.png" width="848" height="528" class="img_f7zd"></p>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-label-contrastive-learning">Image-Text-Label Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-label-contrastive-learning" class="hash-link" aria-label="Image-Text-Label Contrastive Learning에 대한 직접 링크" title="Image-Text-Label Contrastive Learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Supervised Contrastive Learning into image-text contrastive learning.</li>
+<li><strong>Learn discriminative and task-specific features</strong> by exploiting both supervised labels and unsupervised image-text pairs.<!-- -->
+<ul>
+<li>UniCL: pre-training allows learning both discriminative and task-specific (image classification) features simultaneously with around 900M image-text pairs.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image-Text-Label Contrastive Learning" src="https://gracefullight.dev/assets/images/vlm-image-text-label-83c01a33a07520e54ac28a0ffbb1ceaa.png" width="846" height="558" class="img_f7zd"></p>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="generative-objectives">Generative Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#generative-objectives" class="hash-link" aria-label="Generative Objectives에 대한 직접 링크" title="Generative Objectives에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Masked Image Modelling<!-- -->
+<ul>
+<li>Cross-patch correlation by masking and reconstructing images.</li>
+</ul>
+</li>
+<li>Masked Language Modelling<!-- -->
+<ul>
+<li>Adopted pre-training objectives in NLP.</li>
+<li>Randomly masking a certain percentage of input tokens and predicting them. (15% in BERT)</li>
+</ul>
+</li>
+<li>Masked Cross-Modal Modelling<!-- -->
+<ul>
+<li>Integrates masked image modelling and masked language modelling.</li>
+<li>Given an image-text pair, it randomly masks a subset of image patches and a subset of text tokens and then learns to reconstruct them.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="alignment-objectives">Alignment Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#alignment-objectives" class="hash-link" aria-label="Alignment Objectives에 대한 직접 링크" title="Alignment Objectives에 대한 직접 링크">​</a></h3>
+<blockquote>
+<p>Align image–text pairs in the embedding space.</p>
+</blockquote>
+<ul>
+<li>Image-Text Matching<!-- -->
+<ul>
+<li>models the <strong>overall correlation</strong> between an entire image and an entire sentence. (전역적 상관관계)</li>
+</ul>
+</li>
+<li>captures <strong>fine-grained correlations</strong> between image regions and specific words. (지역적 상관관계)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-pre-training-frameworks">VLM Pre-Training Frameworks<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-pre-training-frameworks" class="hash-link" aria-label="VLM Pre-Training Frameworks에 대한 직접 링크" title="VLM Pre-Training Frameworks에 대한 직접 링크">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="VLM pre-training frameworks" src="https://gracefullight.dev/assets/images/vlm-pretraining-frameworks-39991946607c915ff2a7126f16d59c30.png" width="715" height="273" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="evaluation">Evaluation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#evaluation" class="hash-link" aria-label="Evaluation에 대한 직접 링크" title="Evaluation에 대한 직접 링크">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="zero-shot-prediction">Zero-shot Prediction<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#zero-shot-prediction" class="hash-link" aria-label="Zero-shot Prediction에 대한 직접 링크" title="Zero-shot Prediction에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Image Classification: classify images into pre-defined categories like "prompt engineering".</li>
+<li>Semantic Segmentation: by comparing the embeddings of the given image pixels and texts.</li>
+<li>Object Detection: localize and classify objects in images with the object locating ability learned from auxiliary datasets.</li>
+<li>Image-Text Retrieval<!-- -->
+<ul>
+<li>Text-to-image retrieval that retrieves images based on texts</li>
+<li>Image-to-text retrieval that retrieves texts based on images.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="linear-probing">Linear Probing<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#linear-probing" class="hash-link" aria-label="Linear Probing에 대한 직접 링크" title="Linear Probing에 대한 직접 링크">​</a></h3>
+<ul>
+<li>freezes the pre-trained VLM</li>
+<li>trains a linear classifier to classify the VLM-encoded embeddings to assess the VLM representations.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="datasets">Datasets<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#datasets" class="hash-link" aria-label="Datasets에 대한 직접 링크" title="Datasets에 대한 직접 링크">​</a></h2>
+<ul>
+<li>For Pre-training VLMs<!-- -->
+<ul>
+<li>CLIP, 2021, 400M, English</li>
+<li>ALIGN, 2021, 1.8B, English</li>
+<li>FILIP, 2021, 300M, English</li>
+<li>WebLi, 2022, 12B, 129 Languages</li>
+</ul>
+</li>
+<li>For VLM Evaluation<!-- -->
+<ul>
+<li>Image Classification<!-- -->
+<ul>
+<li>PSACAL VOC 2007 Classification, 11-point mAP</li>
+<li>Oxford-IIIT PETS, Mean Per Class</li>
+<li>EuroSAT, Accuracy</li>
+<li>Hateful Memes, ROC AUC</li>
+<li>Country211, Accuracy</li>
+</ul>
+</li>
+<li>Image-Text Retrieval<!-- -->
+<ul>
+<li>Flickr30k, Recall</li>
+<li>COCO Caption, Recall</li>
+</ul>
+</li>
+<li>Action Recognition<!-- -->
+<ul>
+<li>UCF101, Accuracy</li>
+<li>Kinetics700, Mean(top1, top5)</li>
+<li>RareAct, mWAP, mSAP</li>
+</ul>
+</li>
+<li>Object Detection<!-- -->
+<ul>
+<li>COCO 2017 Detection, box mAP</li>
+<li>LVIS, box mAP</li>
+<li>ODinW, box mAP</li>
+</ul>
+</li>
+<li>Semantic Segmentation<!-- -->
+<ul>
+<li>Cityscapes, Mean IoU</li>
+<li>ADE20K, Mean IoU</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Zhang, J., Huang, J., Jin, S., &amp; Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <code>&lt;https://doi.org/10.1109/TPAMI.2024.3369699&gt;</code></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vlm" term="vlm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introduction to AI @003]]></title>
         <id>https://gracefullight.dev/2025/08/16/introduction-to-ai-003/</id>
@@ -389,7 +633,7 @@
         <updated>2025-08-14T05:01:26.639Z</updated>
         <summary type="html"><![CDATA[Vocabulary for AI @004]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/vocab/vocab-ai-004/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr></tbody></table>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
@@ -504,7 +748,7 @@
         <category label="fsd" term="fsd"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Introduction to ai @002]]></title>
+        <title type="html"><![CDATA[Introduction to AI @002]]></title>
         <id>https://gracefullight.dev/2025/08/09/introduction-to-ai-002/</id>
         <link href="https://gracefullight.dev/2025/08/09/introduction-to-ai-002/"/>
         <updated>2025-08-09T08:31:59.650Z</updated>
@@ -1199,98 +1443,5 @@ As it is a cross-industry standard, it is widely used by practitioners who need 
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="fsd" term="fsd"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[논거 작성, Integrating Evidence in Writing]]></title>
-        <id>https://gracefullight.dev/2025/07/31/integrating-evidence-writing/</id>
-        <link href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/"/>
-        <updated>2025-07-31T06:27:05.237Z</updated>
-        <summary type="html"><![CDATA[Integrating Evidence in Writing]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="논거-작성-중요성">논거 작성 중요성<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EB%85%BC%EA%B1%B0-%EC%9E%91%EC%84%B1-%EC%A4%91%EC%9A%94%EC%84%B1" class="hash-link" aria-label="논거 작성 중요성에 대한 직접 링크" title="논거 작성 중요성에 대한 직접 링크">​</a></h2>
-<ul>
-<li>내 주장은 문헌·연구·전문가의 근거 위에 세워져야 함</li>
-<li>‘나만의 의견’이 아니라 <strong>evidence-based writing</strong>이 필수</li>
-<li>리서치 스킬·비판적 사고·연결 능력을 평가</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="논거-통합-예시">논거 통합 예시<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EB%85%BC%EA%B1%B0-%ED%86%B5%ED%95%A9-%EC%98%88%EC%8B%9C" class="hash-link" aria-label="논거 통합 예시에 대한 직접 링크" title="논거 통합 예시에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>In order to transform ourselves, we need to transform our assumptions. Through this project, all stakeholders were forced to confront their mental models (assumptions about self, others and “how the world works” – see Senge, 1995 and Kim,1993) about psychiatric patients and psychiatric disorders.
-Through exposure to such patients on a regular basis, all came to question their tacit fears and prejudices with respect to this phenomenon and, through collective engagement with it” (2007,p.200).</p>
-</blockquote>
-<ol>
-<li>특정 원칙(leadership principle) 명확히 제시</li>
-<li>본인 연구/사례와 연결</li>
-<li>관련 논문 인용</li>
-<li>실제 사례·프로젝트 결과로 확장</li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="논거-활용법">논거 활용법<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EB%85%BC%EA%B1%B0-%ED%99%9C%EC%9A%A9%EB%B2%95" class="hash-link" aria-label="논거 활용법에 대한 직접 링크" title="논거 활용법에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>직접 인용(quotation):</strong> 원문 그대로, 따옴표+출처 (전체 과제의 10% 이하 권장)</li>
-<li><strong>패러프레이즈(paraphrase):</strong> 아이디어를 내 말로 바꿔 표현</li>
-<li><strong>요약(summarize):</strong> 핵심만 간결하게 정리</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="인용-구조">인용 구조<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EC%9D%B8%EC%9A%A9-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="인용 구조에 대한 직접 링크" title="인용 구조에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="author-prominent">Author-prominent<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#author-prominent" class="hash-link" aria-label="Author-prominent에 대한 직접 링크" title="Author-prominent에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>저자중심</p>
-</blockquote>
-<ul>
-<li>Author/year upfront:
-Goldsmith (2013, p.22) argues that as writing is not only a necessary attribute for engineering practice, but also a key element of learning and a means of clarifying one’s thinking and of exploring ideas, its development needs to be both acknowledged and made visible in the engineering curriculum.</li>
-<li>Author/year sandwich:
-Goldsmith identifies the lack of visibility of writing in the engineering curriculum as a key concern for engineering educators (2013, p.24).</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="information-prominent">Information-prominent<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#information-prominent" class="hash-link" aria-label="Information-prominent에 대한 직접 링크" title="Information-prominent에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>정보중심</p>
-</blockquote>
-<ul>
-<li>The current delivery of the engineering curriculum in the majority of Australian universities reflects a positivist epistemology (Radcliffe, 2006).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="claim--evidence--comment-구조">Claim – Evidence – Comment 구조<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#claim--evidence--comment-%EA%B5%AC%EC%A1%B0" class="hash-link" aria-label="Claim – Evidence – Comment 구조에 대한 직접 링크" title="Claim – Evidence – Comment 구조에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Claim</strong>
-<ul>
-<li>There is abundant evidence and research that points to how much writing engineers, both practising engineers and engineering academics, actually do as part of their work.</li>
-</ul>
-</li>
-<li><strong>Including evidence</strong>
-<ul>
-<li>Winsor (1990) makes the point that writing is viewed as part of an engineer’s job, but not part of engineering (p.58). However, despite the perception that engineers have of themselves as people who work with objects, “writing is what engineers do” (p.68).</li>
-</ul>
-</li>
-<li><strong>Comment</strong>
-<ul>
-<li>This point illustrates an essential conflict in how engineers see their work and may explain why writing is not seen as integral to the engineering curriculum.</li>
-</ul>
-</li>
-<li>근거(문헌/데이터) 인용 후 <strong>내 해설(코멘트)</strong> 반드시 추가</li>
-<li>단순 인용/요약/패러프레이즈만 쓰면 감점, 내 논지와의 연결이 필수</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="acknowledging-verbs">Acknowledging verbs<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#acknowledging-verbs" class="hash-link" aria-label="Acknowledging verbs에 대한 직접 링크" title="Acknowledging verbs에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>아래 동사표를 활용해서, ‘사실 단순 전달’ ‘주장/강조’ ‘평가/비판’ 뉘앙스 표현</p>
-</blockquote>
-<table><thead><tr><th>보고·묘사</th><th>주장·강조</th><th>평가·동의</th><th>비판·반박</th></tr></thead><tbody><tr><td>states</td><td>asserts</td><td>agrees</td><td>disagrees</td></tr><tr><td>points out</td><td>claims</td><td>justifies</td><td>contests</td></tr><tr><td>notes</td><td>argues</td><td>affirms</td><td>disputes</td></tr><tr><td>remarks</td><td>contends</td><td>clarifies</td><td>rejects</td></tr><tr><td>describes</td><td>maintains</td><td>supports</td><td>counters</td></tr><tr><td>believes</td><td>demonstrates</td><td>finds/found</td><td>challenges</td></tr><tr><td>adds</td><td>suggests</td><td>confirms</td><td>elaborates</td></tr><tr><td>reports</td><td>implies</td><td>indicates</td><td>illustrates</td></tr><tr><td>questions</td><td>theorizes</td><td>puts forward</td><td>counters</td></tr><tr><td>clarifies</td><td>offers</td><td>reasons</td><td></td></tr></tbody></table>
-<ul>
-<li>동사 선택에 따라 <strong>정보가 사실인지, 주장/의견/이론/비판인지</strong> 의미가 달라짐</li>
-<li>다양한 acknowledging verbs를 활용해 논거와 비판적 사고력을 드러내자</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="결론">결론<a href="https://gracefullight.dev/2025/07/31/integrating-evidence-writing/#%EA%B2%B0%EB%A1%A0" class="hash-link" aria-label="결론에 대한 직접 링크" title="결론에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>내 주장은 문헌·데이터·전문가 근거에 세우고, 근거 인용 뒤에는 반드시 <strong>내 생각/코멘트</strong>로 마무리</p>
-</blockquote>
-<ul>
-<li>claim(주장)-evidence(근거)-comment(코멘트) 구조를 항상 의식</li>
-<li>인용/패러프레이즈/요약 방식 혼합</li>
-<li>인용은 반드시 Harvard 스타일로</li>
-<li>인용 뒤 해설/연결문(코멘트) 반드시 포함</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="research" term="research"/>
-        <category label="TRP" term="TRP"/>
     </entry>
 </feed>
