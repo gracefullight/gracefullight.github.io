@@ -67,14 +67,42 @@ graph LR
 
 ### Contrastive Objectives
 
-- Image Contrastive Learning
-  - Forcing a query image to be close with its positive keys (its data augmentations)
-  - Faraway from its negative keys (other images)
-- Image-Text Contrastive Learning
-  - Pulling the embeddings of paired images and texts close while pushing others away.
-  - Minimizing a symmetrical image-text infoNCE loss
-- Image-Text-Label Contrastive Learning
-  - Supervised Contrastive Learning into image-text contrastive learning.
+- Pros
+  - Enforce positive pairs to have similar embeddings in contrast to negative pairs.
+  - Encourages VLMs to learn discriminative vision and language features, where more discriminative features lead to more confident and accurate zero-shot predictions.
+- Cons
+  - Joint optimizing positive and negative pairs is complicated and challenging.
+  - Involves a heuristic temperature hyper-parameter for controlling the feature discriminability.
+
+#### Image Contrastive Learning
+
+- Forcing a query image to be close with its positive keys (its data augmentations)
+- Faraway from its negative keys (other images)
+- **Learn discriminative features** in image modality, which often serves as an auxiliary objective for fully exploiting the image data potential.
+
+#### Image-Text Contrastive Learning
+
+- Pulling the embeddings of paired images and texts close while pushing others away.
+- Minimizing a symmetrical image-text infoNCE loss
+- **Learn vision-language correlation** by contrasting image-text pairs.
+  - CLIP: A symmetrical image-text infoNCE loss
+  - ALIGN: scales up the VLM pre-training with large-scale (but noisy image-text pair with noise-robust contrastive learning)
+  - DeCLIP: Nearest-neighbor supervision to utilize the information from similar pairs, enabling effective pre-training on limited data.
+  - OTTER: Optimal transport to pseudo-pair images and texts reducing the required training data.
+  - ZeroVL: Limited data resource via debiased data sampling and data augmentation with coin flipping mixup.
+  - FILIP: Region-word alignment into contrastive learning, enabling to learn fine-grained vision-language corresponding knowledge.
+  - Pyramid-CLIP: Multiple semantic levels and performs both cross-level and peer-level contrastive learning for effective VLM pre-training.
+  - LA-CLIP, ALIP: LLM to augment synthetic captions for given images while RA-CLIP retrieves relevant image-text pairs for image-text pair augmentation.
+
+![CLIP](./vlm-clip.png)
+
+#### Image-Text-Label Contrastive Learning
+
+- Supervised Contrastive Learning into image-text contrastive learning.
+- **Learn discriminative and task-specific features** by exploiting both supervised labels and unsupervised image-text pairs.
+  - UniCL: pre-training allows learning both discriminative and task-specific (image classification) features simultaneously with around 900M image-text pairs.
+
+![Image-Text-Label Contrastive Learning](./vlm-image-text-label.png)
 
 ### Generative Objectives
 
@@ -115,6 +143,35 @@ graph LR
 - freezes the pre-trained VLM
 - trains a linear classifier to classify the VLM-encoded embeddings to assess the VLM representations.
 
+## Datasets
+
+- For Pre-training VLMs
+  - CLIP, 2021, 400M, English
+  - ALIGN, 2021, 1.8B, English
+  - FILIP, 2021, 300M, English
+  - WebLi, 2022, 12B, 129 Languages
+- For VLM Evaluation
+  - Image Classification
+    - PSACAL VOC 2007 Classification, 11-point mAP
+    - Oxford-IIIT PETS, Mean Per Class
+    - EuroSAT, Accuracy
+    - Hateful Memes, ROC AUC
+    - Country211, Accuracy
+  - Image-Text Retrieval
+    - Flickr30k, Recall
+    - COCO Caption, Recall
+  - Action Recognition
+    - UCF101, Accuracy
+    - Kinetics700, Mean(top1, top5)
+    - RareAct, mWAP, mSAP
+  - Object Detection
+    - COCO 2017 Detection, box mAP
+    - LVIS, box mAP
+    - ODinW, box mAP
+  - Semantic Segmentation
+    - Cityscapes, Mean IoU
+    - ADE20K, Mean IoU
+
 ## Ref
 
-- Zhang, J., Huang, J., Jin, S., & Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <https://doi.org/10.1109/TPAMI.2024.3369699>
+- Zhang, J., Huang, J., Jin, S., & Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. `<https://doi.org/10.1109/TPAMI.2024.3369699>`

@@ -43,3 +43,5 @@ tags:
 | [permute](https://dictionary.cambridge.org/dictionary/english/permute) | to change the order or arrangement of something | to rearrange | 순열하다, 배열을 바꾸다 |
 | [chromosome](https://dictionary.cambridge.org/dictionary/english/chromosome) | a thread-like structure of nucleic acids and protein found in the nucleus of most living cells | genetic structure | 염색체 |
 | [auxiliary](https://dictionary.cambridge.org/dictionary/english/auxiliary) | providing supplementary or additional help and support | supplementary | 보조의 |
+| [discriminative](https://dictionary.cambridge.org/dictionary/english/discriminative) | able to distinguish or differentiate | distinguishing | 구별 가능한 |
+| [exploit](https://dictionary.cambridge.org/dictionary/english/exploit) | to make full use of and benefit from something | to utilize | 활용하다 |
