@@ -106,14 +106,40 @@ graph LR
 
 ### Generative Objectives
 
-- Masked Image Modelling
-  - Cross-patch correlation by masking and reconstructing images.
-- Masked Language Modelling
-  - Adopted pre-training objectives in NLP.
-  - Randomly masking a certain percentage of input tokens and predicting them. (15% in BERT)
-- Masked Cross-Modal Modelling
-  - Integrates masked image modelling and masked language modelling.
-  - Given an image-text pair, it randomly masks a subset of image patches and a subset of text tokens and then learns to reconstruct them.
+- Encouraging VLMs to learn rich vision, language and vision-language contexts for better zero-shot predictions.
+- Generally adopted as additional objectives above other VLM pre-training objectives for learning rich context information.
+
+#### Masked Image Modelling
+
+- Cross-patch correlation by masking and reconstructing images.
+- **Learn image context information by masking and reconstructing images**
+  - MAE, BeiT: certain patches in an image are masked and the encoder is trained to reconstruct them conditioned on unmasked patches.
+
+![Masked Image Modelling](./vlm-masked-image-modelling.png)
+
+#### Masked Language Modelling
+
+- Adopted pre-training objectives in NLP.
+- Randomly masking a certain percentage of input tokens and predicting them. (15% in BERT)
+- **Learn by masking a fraction of tokens** in each input text and training networks to predict the masked tokens.
+  - FLAVA: masks out 15% text tokens and reconstructs them from the rest tokens for modelling cross-word correlation.
+  - FIBER: adopts masked language modelling as one of the VLM pre-training objectives to extract better language features.
+
+![Masked Language Modelling](./vlm-masked-language-modelling.png)
+
+#### Masked Cross-Modal Modelling
+
+- Integrates masked image modelling and masked language modelling.
+- Given an image-text pair, it randomly masks a subset of image patches and a subset of text tokens and then learns to reconstruct them.
+- **Learn by masking a certain percentage of image patches and text tokens** and training VLMs to reconstruct them based on the embeddings of unmasked image patches and text tokens.
+  - FLAVA: 40% image patches and 15% text tokens as in, and employs a MLP to predict masked patched and tokens, capturing rich vision-language correspondence information.
+
+#### Image-to-Text Generation
+
+- **Generate descriptive texts for a given image** for capturing fine-grained vision-language correlation by training VLMs to predict tokenized texts.
+  - COCA, NLP, PaLI: train VLMs with the standard encoder-decoder architecture and image captioning objectives.
+
+![Image to caption](./vlm-image-to-caption.png)
 
 ### Alignment Objectives
 
