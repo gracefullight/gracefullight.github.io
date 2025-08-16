@@ -142,24 +142,50 @@
 <p><img decoding="async" loading="lazy" alt="Image-Text-Label Contrastive Learning" src="https://gracefullight.dev/assets/images/vlm-image-text-label-83c01a33a07520e54ac28a0ffbb1ceaa.png" width="846" height="558" class="img_f7zd"></p>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="generative-objectives">Generative Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#generative-objectives" class="hash-link" aria-label="Generative Objectives에 대한 직접 링크" title="Generative Objectives에 대한 직접 링크">​</a></h3>
 <ul>
-<li>Masked Image Modelling<!-- -->
+<li>Encouraging VLMs to learn rich vision, language and vision-language contexts for better zero-shot predictions.</li>
+<li>Generally adopted as additional objectives above other VLM pre-training objectives for learning rich context information.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-image-modelling">Masked Image Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-image-modelling" class="hash-link" aria-label="Masked Image Modelling에 대한 직접 링크" title="Masked Image Modelling에 대한 직접 링크">​</a></h4>
 <ul>
 <li>Cross-patch correlation by masking and reconstructing images.</li>
+<li><strong>Learn image context information by masking and reconstructing images</strong>
+<ul>
+<li>MAE, BeiT: certain patches in an image are masked and the encoder is trained to reconstruct them conditioned on unmasked patches.</li>
 </ul>
 </li>
-<li>Masked Language Modelling<!-- -->
+</ul>
+<p><img decoding="async" loading="lazy" alt="Masked Image Modelling" src="https://gracefullight.dev/assets/images/vlm-masked-image-modelling-0b2757747dbb1e20d94920022ed416e1.png" width="936" height="424" class="img_f7zd"></p>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-language-modelling">Masked Language Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-language-modelling" class="hash-link" aria-label="Masked Language Modelling에 대한 직접 링크" title="Masked Language Modelling에 대한 직접 링크">​</a></h4>
 <ul>
 <li>Adopted pre-training objectives in NLP.</li>
 <li>Randomly masking a certain percentage of input tokens and predicting them. (15% in BERT)</li>
+<li><strong>Learn by masking a fraction of tokens</strong> in each input text and training networks to predict the masked tokens.<!-- -->
+<ul>
+<li>FLAVA: masks out 15% text tokens and reconstructs them from the rest tokens for modelling cross-word correlation.</li>
+<li>FIBER: adopts masked language modelling as one of the VLM pre-training objectives to extract better language features.</li>
 </ul>
 </li>
-<li>Masked Cross-Modal Modelling<!-- -->
+</ul>
+<p><img decoding="async" loading="lazy" alt="Masked Language Modelling" src="https://gracefullight.dev/assets/images/vlm-masked-language-modelling-4673252375ddfbf207081514c51e2eae.png" width="868" height="454" class="img_f7zd"></p>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-cross-modal-modelling">Masked Cross-Modal Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-cross-modal-modelling" class="hash-link" aria-label="Masked Cross-Modal Modelling에 대한 직접 링크" title="Masked Cross-Modal Modelling에 대한 직접 링크">​</a></h4>
 <ul>
 <li>Integrates masked image modelling and masked language modelling.</li>
 <li>Given an image-text pair, it randomly masks a subset of image patches and a subset of text tokens and then learns to reconstruct them.</li>
+<li><strong>Learn by masking a certain percentage of image patches and text tokens</strong> and training VLMs to reconstruct them based on the embeddings of unmasked image patches and text tokens.<!-- -->
+<ul>
+<li>FLAVA: 40% image patches and 15% text tokens as in, and employs a MLP to predict masked patched and tokens, capturing rich vision-language correspondence information.</li>
 </ul>
 </li>
 </ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-to-text-generation">Image-to-Text Generation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-to-text-generation" class="hash-link" aria-label="Image-to-Text Generation에 대한 직접 링크" title="Image-to-Text Generation에 대한 직접 링크">​</a></h4>
+<ul>
+<li><strong>Generate descriptive texts for a given image</strong> for capturing fine-grained vision-language correlation by training VLMs to predict tokenized texts.<!-- -->
+<ul>
+<li>COCA, NLP, PaLI: train VLMs with the standard encoder-decoder architecture and image captioning objectives.</li>
+</ul>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Image to caption" src="https://gracefullight.dev/assets/images/vlm-image-to-caption-4348d37878d43e85e49b73006131f2c2.png" width="924" height="712" class="img_f7zd"></p>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="alignment-objectives">Alignment Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#alignment-objectives" class="hash-link" aria-label="Alignment Objectives에 대한 직접 링크" title="Alignment Objectives에 대한 직접 링크">​</a></h3>
 <blockquote>
 <p>Align image–text pairs in the embedding space.</p>
