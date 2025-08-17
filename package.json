@@ -27,7 +27,7 @@
     "crc-32": "^1.2.2",
     "luxon": "^3.7.1",
     "ml-kmeans": "^6.0.0",
-    "p-limit": "^6.2.0",
+    "p-limit": "^7.0.0",
     "pako": "^2.1.0",
     "pdf-lib": "^1.17.1",
     "prism-react-renderer": "^2.4.1",
