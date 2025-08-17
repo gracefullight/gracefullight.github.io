@@ -2,17 +2,266 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-16T07:40:55.588Z</updated>
+    <updated>2025-08-17T00:02:41.350Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Vision-language models for vision tasks review]]></title>
+        <title type="html"><![CDATA[Trustworthiness in Vision-Language Models Review]]></title>
+        <id>https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/</id>
+        <link href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/"/>
+        <updated>2025-08-17T00:02:41.350Z</updated>
+        <summary type="html"><![CDATA[Trustworthiness in Vision-Language Models Review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#overview" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Mitigates exposure of private data, produces harmful outputs, or is vulnerable to attacks.</li>
+<li>SOTA models: LLaVA, Flamingo, GPT-4</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="privacy">Privacy<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-issues">Privacy Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>risk escalates significantly with relevant images as optimizing in the pixel domain is easier than in text</li>
+<li>can unintentionally memorize sensitive data, leading to leaks without knowledge of the model’s specifics</li>
+<li>Overfitting may also cause retention of sensitive attributes during inference</li>
+<li>gradient-based and backdoor attacks further jeopardize VLM privacy with open-source data</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-mitigation-methods">Privacy Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>New metrics have been created to assess a model’s ability to reproduce training instances and facilitate cross-model comparisons</li>
+<li>models utilizing multiple modalities provide better privacy</li>
+<li>safety modules can be integrated to boost resilience against violations</li>
+<li>adversarial training can enhance privacy but risks reducing accuracy</li>
+<li>New architecture: differentially private CLIP model</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-future-research-directions">Privacy Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Cryptography-based Privacy Preservation<!-- -->
+<ul>
+<li>Secure multi-party computation (SMPC): divides secret information into shares among multiple parties, ensuring that individual shares reveal nothing unless combined</li>
+<li>Homomorphic encryption (HE): allows computations on encrypted data without decryption, and has also been utilized for privacy preservation in transformers</li>
+</ul>
+</li>
+<li>Federated Learning<!-- -->
+<ul>
+<li>enhances privacy in vision-language models (VLMs) by localizing model training, which protects training data from leakage.</li>
+<li>challenges such as communication overhead among devices and statistical heterogeneity from diverse data distributions</li>
+</ul>
+</li>
+<li>Data Manipulation and Finetunning<!-- -->
+<ul>
+<li>Data pseudonymization: substitutes sensitive information with synthetic alternatives.</li>
+<li>Data Sanitization: removes duplicates to reduce memorization and privacy risks.</li>
+<li>knowledge sanitization-fine-tuning: provide safe responses when leakage risks arise.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias">Fairness and Bias<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias-issues">Fairness and Bias Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Bias from training data<!-- -->
+<ul>
+<li>disproportionately features men and lighter-skinned individuals</li>
+<li>outdated vocabulary and imbalanced representation</li>
+<li>clinical models may favor certain patient groups based on gender, language, etc.</li>
+</ul>
+</li>
+<li>Bias from Model<!-- -->
+<ul>
+<li>Gender biases</li>
+<li>misclassification of race-related elements and biased outputs</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias-mitigation-methods">Fairness and Bias Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>New Datasets and Benchmarks<!-- -->
+<ul>
+<li>Harvard-FairVLMed, PATA, and BOLD enhance evaluations but often lack the scale of established benchmarks.</li>
+<li>create synthetic datasets to improve fairness assessments<!-- -->
+<ul>
+<li>gender-balanced dataset generated with DALL-E-3 and another consisting of gender-swapped images</li>
+<li>counterfactual image-text pairs that highlight biases in datasets like COCO Captions</li>
+</ul>
+</li>
+<li>new metrics<!-- -->
+<ul>
+<li>gender polarity</li>
+<li>bias distance in embeddings</li>
+</ul>
+</li>
+<li>human evaluation</li>
+</ul>
+</li>
+<li>De-biasing<!-- -->
+<ul>
+<li>adjust model instructions and architectures for improved fairness</li>
+<li>detecting biased prompts in pre-trained models</li>
+<li>Post-hoc Bias Mitigation (PBM) effectively reduce bias in image retrieval</li>
+<li>Re-sampling underperforming clusters can enhance fairness</li>
+<li>modification of facial features also mitigate biases</li>
+<li>self-debiasing reduces biased text generation, especially when paired with other methods</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-future-research-directions">Fairness Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Optimized De-biasing<!-- -->
+<ul>
+<li>Additive residual learning: for fairer image representations.</li>
+<li>Calibration loss: retain semantically similar embeddings.</li>
+<li>Counterfactual inference framework: help models learn correct responses through cause and effect.</li>
+<li>Adversarial classifiers: predict image attributes from visual-textual similarities can be combined with instruction tuning to reduce bias.</li>
+</ul>
+</li>
+<li>Disentangled Representation Learning (DRL): simplifies complex data by breaking it in to independent feature groups, improving model predictions.<!-- -->
+<ul>
+<li>Traditional DRL<!-- -->
+<ul>
+<li>Variational autoencoders (VAEs) for feature encoding based on impact</li>
+<li>Generative adversarial networks (GANs) for separation.</li>
+</ul>
+</li>
+<li>Attention in text encoders can be adjusted for fairer outputs.</li>
+<li>challenges: varying definitions of "disentanglement", ensuring fairness.</li>
+</ul>
+</li>
+<li>Human-in-the-Loop (HITL): integrating human intervention into their training to improve precision and fairness<!-- -->
+<ul>
+<li>active learning</li>
+<li>reinforcement learning with human feedback</li>
+<li>explainable AI</li>
+<li>challenges: human bias, finance, and ethical and legal issues persist</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="robustness">Robustness<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-issues">Robustness Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Out-of-Distribution (OOD) Robustness<!-- -->
+<ul>
+<li>ChatGPT excels in adversarial tasks but struggles with OOD robustness and informal medical responses</li>
+<li>MLLMs often fail to generalize beyond training domains due to mapping issues</li>
+<li>vision-language models face difficulties with open-domain concepts, especially when overfitting during fine-tuning</li>
+<li>Large pre-trained image classifiers show initial robustness, which diminishes over time</li>
+<li>Current visual question answering (VQA) models are limited to specific benchmarks, hindering generalization to OOD datasets</li>
+<li>fine-tuning may impair model calibration in OOD contexts.</li>
+</ul>
+</li>
+<li>Adversarial Attack Robustness<!-- -->
+<ul>
+<li>Studies indicate that open-sourced VLMs show performance gaps in red teaming tasks, highlighting the need for improved safety and security.</li>
+<li>misalignment between language and vision modalities creates a "modality gap", complicating adversarial vulnerability.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-mitigation-methods">Robustness Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Improving Out-of-Distribution Robustness<!-- -->
+<ul>
+<li>enhance OOD detection and generalization. A simple maximum logit detector has been shown to outperform complex methods for anomaly segmentation</li>
+<li>In-context learning (ICL) can also improve multimodal generalization</li>
+<li>A fine-tuned CLIP excels in unsupervised OOD detection</li>
+<li>The OGEN method synthesizes OOD features</li>
+<li>Maximum Concept Matching aligns visual and textual features, and anchor-based finetuning leads to better domain shifts</li>
+</ul>
+</li>
+<li>Defense Against Adversarial Attacks<!-- -->
+<ul>
+<li>VILLA is a two-stage framework for adversarial training of VLMs, featuring task-agnostic <strong>adversarial pre-training</strong> and <strong>task-specific finetuning</strong>
+<ul>
+<li>conducts adversarial training in the embedding space rather than on raw image pixels and text tokens, improving the model’s resilience against adversarial examples</li>
+<li>SOTA performance across various tasks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-future-research-directions">Robustness Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Data Augmentation<!-- -->
+<ul>
+<li>MixGen: a data augmentation method that generates new image-text pairs by interpolating images and concatenating text to preserve semantics.</li>
+<li>creating synthetic images involves extracting text prompts via an image captioning model for use in text-to-image diffusion, then mixing these with real datasets.</li>
+<li>bimodal augmentation (BiAug): decouples objects and attributes to synthesize vision-language examples and hard negatives, using LLMs and an object detector to generate detailed descriptions and inpaint corresponding images.</li>
+</ul>
+</li>
+<li>Improved Cross-Modal Alignment<!-- -->
+<ul>
+<li>Sharing learnable parameters</li>
+<li>Applying bidirectional constraints</li>
+<li>Adjusting cross-modal projections</li>
+</ul>
+</li>
+<li>challenges: addressing the modality gap, which impacts robustness to OOD data and adversarial examples</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="safety">Safety<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-issues">Safety Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Toxicity<!-- -->
+<ul>
+<li>LAION-400M: contains problematic content, including explicit materials and harmful stereotypes</li>
+<li>Advanced models like GeminiProVision and GPT-4V show inherent biases</li>
+<li>Assigning personas to ChatGPT can increase toxicity and reinforce harmful stereotypes</li>
+</ul>
+</li>
+<li>Jailbreaking Risk<!-- -->
+<ul>
+<li>Perturbation can be performed effectively, while FigStep converts harmful content into images with an 82.5% attack rate across multiple VLMs</li>
+<li>replaces captions with malicious prompts, enabling jailbreaks.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-mitigation-methods">Safety Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li><strong>Safety Fine-Tuning</strong>
+<ul>
+<li>VLGuard</li>
+<li>fine-tuned on synthetic data, reducing sensitivity to NSFW inputs and enhancing performance in cross-modal tasks</li>
+</ul>
+</li>
+<li>Other approach<!-- -->
+<ul>
+<li>Reinforce-Detoxify: uses reinforcement learning to mitigate toxicity and bias in transformer models</li>
+<li>simple mitigations improve automatic scores, these methods risk over-filtering marginalized texts and create discrepancies between automatic and human judgments</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-future-research-directions">Safety Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Context Awareness<!-- -->
+<ul>
+<li>integrating Chain-of-Thought for improved reasoning can enhance CAER tasks with Large VLMs.</li>
+<li>Dual-Aligned Prompt Tuning: combines explicit context from pre-trained LLMs with implicit modeling to create more context-aware prompts</li>
+<li>Visual In-Context Learning: optimizes image retrieval and summarization to enhance task-specific interactions.</li>
+</ul>
+</li>
+<li>Automated Red Teaming (ART)<!-- -->
+<ul>
+<li>RTVLM: a dataset that benchmarks VLMs across faithfulness, privacy, safety, and fairness</li>
+<li>Arondight: automates multi-modal jailbreak attacks using reinforcement learning and uncovers significant security vulnerabilities</li>
+<li>GPT-4 and GPT-4V are more robust against jailbreaks than open-source models</li>
+<li>limited transferability of visual jailbreak methods compared to textual ones</li>
+<li>connects unsafe outputs to prompts, improving the detection of vulnerabilities in text-to-image models</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Kertesz, J., Li, B., Supnithi, T., &amp; Takhom, A. (Eds.). (2025). Computational Data and Social Networks: 13th International Conference, CSoNet 2024, Bangkok, Thailand, December 16–18, 2024, Proceedings (Vol. 15417). Springer Nature Singapore. <code>https://doi.org/10.1007/978-981-96-6389-7</code></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vlm" term="vlm"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vision-Language Models for Vision Tasks Review]]></title>
         <id>https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/</id>
         <link href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/"/>
         <updated>2025-08-16T07:40:55.588Z</updated>
-        <summary type="html"><![CDATA[Vision-language models for vision tasks review]]></summary>
+        <summary type="html"><![CDATA[Vision-Language Models for Vision Tasks Review]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#overview" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <blockquote>
 <p>Most visual recognition studies rely heavily on crowdlabelled data in DNN</p>
@@ -516,7 +765,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/16/vision-language-models-for-vision-tasks-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>Zhang, J., Huang, J., Jin, S., &amp; Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <code>&lt;https://doi.org/10.1109/TPAMI.2024.3369699&gt;</code></li>
+<li>Zhang, J., Huang, J., Jin, S., &amp; Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <code>https://doi.org/10.1109/TPAMI.2024.3369699</code></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
@@ -906,7 +1155,7 @@
         <updated>2025-08-14T05:01:26.639Z</updated>
         <summary type="html"><![CDATA[Vocabulary for AI @004]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-004/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/perturbation" target="_blank" rel="noopener noreferrer">perturbation</a></td><td>a small change or variation</td><td>a disturbance</td><td>교란</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/modulate" target="_blank" rel="noopener noreferrer">modulate</a></td><td>to adjust or alter the intensity or frequency of something</td><td>to adjust</td><td>조절하다, 변조하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retrieval" target="_blank" rel="noopener noreferrer">retrieval</a></td><td>the process of getting stored information from a computer</td><td>search</td><td>검색</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/leverage" target="_blank" rel="noopener noreferrer">leverage</a></td><td>to use something to maximum advantage</td><td>to utilize</td><td>활용하다</td></tr></tbody></table>]]></content>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/perturbation" target="_blank" rel="noopener noreferrer">perturbation</a></td><td>a small change or variation</td><td>a disturbance</td><td>교란</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/modulate" target="_blank" rel="noopener noreferrer">modulate</a></td><td>to adjust or alter the intensity or frequency of something</td><td>to adjust</td><td>조절하다, 변조하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retrieval" target="_blank" rel="noopener noreferrer">retrieval</a></td><td>the process of getting stored information from a computer</td><td>search</td><td>검색</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/leverage" target="_blank" rel="noopener noreferrer">leverage</a></td><td>to use something to maximum advantage</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discrepancy" target="_blank" rel="noopener noreferrer">discrepancy</a></td><td>a difference or inconsistency</td><td>difference</td><td>불일치</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/heterogeneity" target="_blank" rel="noopener noreferrer">heterogeneity</a></td><td>the quality or state of being diverse in character or content</td><td>diversity</td><td>이질성</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/pseudonymization" target="_blank" rel="noopener noreferrer">pseudonymization</a></td><td>the process of replacing private identifiers with fake identifiers or pseudonyms</td><td>anonymization</td><td>가명화</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
@@ -1489,232 +1738,5 @@ As it is a cross-industry standard, it is widely used by practitioners who need 
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="iai" term="iai"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of software development @002]]></title>
-        <id>https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/</id>
-        <link href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/"/>
-        <updated>2025-08-04T02:49:53.887Z</updated>
-        <summary type="html"><![CDATA[Fundamentals of software development @002]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="classes--objects">Classes &amp; Objects<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#classes--objects" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="class">Class<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#class" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>A template that defines the attributes and methods of an object, which can be used to create many objects.</li>
-<li>Name of the class is noun.</li>
-<li>Functions are defined in the class, containing the function data.</li>
-<li>Many objects can be created from the same class.</li>
-<li>A class can be inherited by many sub-classes</li>
-<li>A child class can have one or more parent classes. (super-classes)</li>
-<li>Encapsulated data</li>
-<li>Behaviors of a class are exposed while the implementation is hidden.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="object">Object<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#object" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>An instance of a class, created the class template during runtime.</li>
-<li>Object-oriented software is composed of many objects</li>
-<li>a composite data type identified by its attributes (fields) and behaviors (functions), which are defined in the class.</li>
-<li>object-oriented design analysis: to identify the classes and relationships between the classes to model how the system would work.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="procedure--function">Procedure &amp; Function<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#procedure--function" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>Aspect</th><th>Procedure</th><th>Function</th></tr></thead><tbody><tr><td>Returns value?</td><td>❌ Usually does <strong>not</strong> return a value</td><td>✅ Usually <strong>returns</strong> a value</td></tr><tr><td>Purpose</td><td>Perform an action</td><td>Compute and return a result</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="object-oriented-paradigm-principles">Object-Oriented Paradigm Principles<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#object-oriented-paradigm-principles" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="abstraction">Abstraction<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#abstraction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>hides the internal implementation of functions and expose to other class the behavior of those functions.</li>
-<li>Data abstraction: hide the variables stored the data and only expose the values.</li>
-<li>Function abstraction: hide the function code and only export the function behavior.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="encapsulation">Encapsulation<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#encapsulation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a fundamental principle of OOP, increases data and code security, enhances performance by reducing object interactions.</li>
-<li>minimize the number of interactions from outside.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="inheritance">Inheritance<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#inheritance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>allows classes to have sub-classes.</li>
-<li>a parent class can have many children.</li>
-<li>a child class can have more than one parent.</li>
-<li>a child class inherits their parent class and can also override them.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="polymorphism">Polymorphism<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#polymorphism" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>more of the same type of object can be used interchangeably.</li>
-<li>object of different types to be treated as objects of a common parent.</li>
-<li>multiple object types with the same parent can implement the same function in different ways.</li>
-<li>multiple object types with the same parent can use the same attributes with different values.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="object-oriented-design">Object-Oriented Design<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#object-oriented-design" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>The process of designing a software using oop.</li>
-<li>Identify the classes
--&gt; Identify the classes' attributes and behaviors
--&gt; Identify the how classes interact with each other and create a visual class model</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="identify-classes">Identify classes<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#identify-classes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Classes are derived from use cases and actors described in the requirement analysis process.</li>
-<li>Classes should be identified exactly as needed.</li>
-<li>Reduce coupling and enable extensibility.</li>
-<li>Identifying a class always requires to identify the fields and methods.</li>
-<li>A class can use the methods of another class.
--&gt; one class (the client) uses or depends on another class (the supplier).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="uml-class-diagram">UML Class diagram<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#uml-class-diagram" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>UML visual representation of the object-oriented software system.</li>
-<li>Describes the attributes and operations of classes, relationships, and any constraints.</li>
-<li>Used as a plan to construct executable code and define the way in which objects may interact.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="associations">Associations<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#associations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a relationship between classes indicating a meaningful connection.</li>
-<li>Labelled by<!-- -->
-<ul>
-<li>Association name</li>
-<li>Role name</li>
-<li>Multiplicity</li>
-<li>Navigability</li>
-</ul>
-</li>
-</ul>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="multiplicity">Multiplicity<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#multiplicity" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<ul>
-<li>how many instances of type A can be associated with on instance of type B.</li>
-</ul>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="recursive-or-reflexive-association">Recursive or reflexive association<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#recursive-or-reflexive-association" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<ul>
-<li>a class can have an association with itself.</li>
-</ul>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="attributes">Attributes<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#attributes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<!-- -->
-<ul>
-<li>m<!-- -->:m<!-- --> association can be divided into two 1<!-- -->:m<!-- --> associations.</li>
-</ul>
-<!-- -->
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="association-classes">Association Classes<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#association-classes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<ul>
-<li>An attribute is related to an association.</li>
-<li>Instance of the association class have a life-time dependency on the association.</li>
-</ul>
-<!-- -->
-<ul>
-<li>an associative type should exist in the background somewhere.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="generalization--specialization">Generalization &amp; Specialization<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#generalization--specialization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Generalization: the activity of identifying commonalities among concepts and defining superclass (general concept) and subclass (specialized concepts) relationships.</li>
-<li>"is-a" relationship</li>
-<li>a subclass inherits from a superclass.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="benefits-of-generalization">Benefits of generalization<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#benefits-of-generalization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Code Reusability</li>
-<li>Cleaner/Simplified design</li>
-<li>Scalability</li>
-<li>Extensibility</li>
-<li>Easier Maintenance</li>
-<li>Testability</li>
-<li>Modularity</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="class-inheritance">Class inheritance<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#class-inheritance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>same as generalization and specialization.</li>
-<li>the subclasses inherit the attributes and methods of the superclasses.</li>
-</ul>
-<!-- -->
-<ul>
-<li>When a hierarchy is created, statements about the superclass apply to subclasses.</li>
-<li>A conceptual subclass should be a member of the set of the superclass.</li>
-<li>The conceptual subclass is a kind of superclass.</li>
-<li><code>&lt;subclass&gt; is a &lt;superclass&gt;</code></li>
-<li>Every instance of the <code>&lt;subclass&gt;</code> can be viewed as an instance of the <code>&lt;superclass&gt;</code>.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="subclass">Subclass<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#subclass" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>has additional attributes of interest.</li>
-<li>has additional associations of interest.</li>
-<li>is handled differently than the superclass or other subclasses.</li>
-<li>represents an object that behaves differently than the superclass or other subclasses.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="superclass">Superclass<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#superclass" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Create a conceptual superclass when:<!-- -->
-<ul>
-<li>The potential conceptual subclasses represent variations of a similar concept.</li>
-<li>The subclass fully conforms to the attributes and associations of its superclass. (100% rule)</li>
-</ul>
-</li>
-<li>All subclasses have the same attributes and operations which can be factored out and expressed in the superclass.</li>
-<li>All subclasses have the same associations which can be factored out and related to the superclass.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="abstract-class">Abstract Class<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#abstract-class" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a parent class that cannot be instantiated.</li>
-<li>at least one of its operations is abstract.</li>
-<li>an abstract operation has its signature defined in the abstract parent class, but the implementation is defined in the child class.</li>
-<li>create a high-level modelling vocabulary.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="interface--realization">Interface &amp; Realization<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#interface--realization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a class with no attributes.</li>
-<li>can't be instantiated.</li>
-<li>simply declares a contract that may be realized by zero or more classes.</li>
-<li>to separate the specification from its implementation.</li>
-<li>only defines a specification for what the class should do and it never implies how it should do it.</li>
-<li>the class implementing an interface has a realization relationship with the interface.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="aggregation">Aggregation<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#aggregation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a type of whole-part relationship in which the aggregate is made up of many parts.</li>
-<li>Signified with a hollow diamond.</li>
-<li>implies the part may be in many composite instances.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="composition">Composition<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#composition" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a stronger form of aggregation.</li>
-<li>the multiplicity at the composite end may be at most one</li>
-<li>Signified with a filled diamond.</li>
-<li>There is a create-delete dependency. Their lifetime is bound within the lifetime of the composite.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="dependency">Dependency<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#dependency" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>a relationship between two or more model elements whereby a change to one element</li>
-<li>The most common dependency stereotype is <code>&lt;&lt;use&gt;&gt;</code>, which simply states that the client makes use of the supplier in some way.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="visibility">Visibility<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#visibility" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><code>+</code> public</li>
-<li><code>-</code> private</li>
-<li><code>#</code> protected</li>
-<li><code>~</code> package</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="example">Example<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#example" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="uml-tools">UML Tools<a href="https://gracefullight.dev/en/2025/08/04/fundamentals-of-software-development-002/#uml-tools" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><a href="https://www.draw.io/" target="_blank" rel="noopener noreferrer">Draw.io</a></li>
-<li><a href="https://www.lucidchart.com/" target="_blank" rel="noopener noreferrer">Lucidchart</a></li>
-<li><a href="https://www.visual-paradigm.com/" target="_blank" rel="noopener noreferrer">Visual Paradigm</a></li>
-<li><a href="https://staruml.io/" target="_blank" rel="noopener noreferrer">StarUML</a></li>
-<li><a href="https://creately.com/" target="_blank" rel="noopener noreferrer">Creately</a></li>
-<li><a href="https://www.planttext.com/" target="_blank" rel="noopener noreferrer">PlantUML</a></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fsd" term="fsd"/>
     </entry>
 </feed>
