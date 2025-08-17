@@ -49,3 +49,6 @@ tags:
 | [modulate](https://dictionary.cambridge.org/dictionary/english/modulate) | to adjust or alter the intensity or frequency of something | to adjust | 조절하다, 변조하다 |
 | [retrieval](https://dictionary.cambridge.org/dictionary/english/retrieval) | the process of getting stored information from a computer | search | 검색 |
 | [leverage](https://dictionary.cambridge.org/dictionary/english/leverage) | to use something to maximum advantage | to utilize | 활용하다 |
+| [discrepancy](https://dictionary.cambridge.org/dictionary/english/discrepancy) | a difference or inconsistency | difference | 불일치 |
+| [heterogeneity](https://dictionary.cambridge.org/dictionary/english/heterogeneity) | the quality or state of being diverse in character or content | diversity | 이질성 |
+| [pseudonymization](https://dictionary.cambridge.org/dictionary/english/pseudonymization) | the process of replacing private identifiers with fake identifiers or pseudonyms | anonymization | 가명화 |

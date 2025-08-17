@@ -1,7 +1,7 @@
 ---
-title: Vision-language models for vision tasks review
+title: Vision-Language Models for Vision Tasks Review
 date: 2025-08-16T17:40:55.588+10:00
-description: Vision-language models for vision tasks review
+description: Vision-Language Models for Vision Tasks Review
 authors: me
 tags:
   - vlm
@@ -376,4 +376,4 @@ graph LR
 
 ## Ref
 
-- Zhang, J., Huang, J., Jin, S., & Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. `<https://doi.org/10.1109/TPAMI.2024.3369699>`
+- Zhang, J., Huang, J., Jin, S., & Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. `https://doi.org/10.1109/TPAMI.2024.3369699`
