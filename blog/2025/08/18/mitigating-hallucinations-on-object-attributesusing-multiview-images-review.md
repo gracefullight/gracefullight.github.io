@@ -1,9 +1,7 @@
 ---
-title: Mitigating Hallucinations on Object Attributes
-using Multiview Images and Negative Instructions Review
+title: Mitigating Hallucinations on Object Attributes Review
 date: 2025-08-18T15:44:39.579+10:00
-description: Mitigating Hallucinations on Object Attributes
-using Multiview Images and Negative Instructions Review
+description: Mitigating Hallucinations on Object Attributes Review
 authors: me
 tags:
   - vlm
