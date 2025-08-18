@@ -16,7 +16,7 @@ tags:
 - Proposes **MIAVLM**: leverages **multiview images** (generated from a single image’s 3D representation) and a **Multiview Attributes Perceiver (MAP)** to make fusion **order-invariant**.
 - Adds **negative instructions** during tuning to counter LVLMs’ tendency to answer "Yes".
 - Results: best HoOA metric (**0.775 / 0.787**) with **fastest inference** (**0.071 / 0.105 s**). "9in1" tiling is ineffective; separate multiview inputs help.
-- Training: LM loss, **Adam (lr=0.001)**, **cosine annealing**, **20 epochs**, **single NVIDIA 3090**.
+- Training: LM loss, Adam (lr=0.001), cosine annealing, 20 epochs, single NVIDIA 3090.
 
 ## Hallucinations on Object Attributes (HoOA)
 
@@ -24,9 +24,9 @@ tags:
 
 - HoOA = incorrect attribute descriptions for existing objects (distinct from HoOE/HoOR).
 - Root causes analyzed:
-  1) **Single-view insufficiency**: fine-grained details can be invisible from a single viewpoint.
-  2) **Instruction bias**: overexposure to positive/affirmative patterns → "Yes" bias.
-  3) **Order sensitivity**: multi-image inputs change predictions when view order changes.
+  - **Single-view insufficiency**: fine-grained details can be invisible from a single viewpoint.
+  - **Instruction bias**: overexposure to positive/affirmative patterns → "Yes" bias.
+  - **Order sensitivity**: multi-image inputs change predictions when view order changes.
 
 ### Mitigation Methods (this paper)
 
@@ -41,7 +41,7 @@ tags:
 - Based on **CelebAText-HQ**; manual attribute descriptions rewritten into **Yes/No** questions.
   - **Positive questions** → correct answer "Yes".
   - **Negative questions** → attribute flipped/opposite → correct answer "No" (to expose "Yes" bias).
-- Scale: **1,430 images**, **14,291 positive** + **14,291 negative** questions.
+- Scale: 1,430 images, 14,291 positive + 14,291 negative questions.
 - Split: **9:1** train:test.
 - **Metric**: average of accuracy on positive and negative questions (balanced HoOA score).
 
@@ -60,8 +60,8 @@ tags:
 ### Multihead Sampler (MS)
 
 - Learns **view weights** for fusion.
-- **Decomposer (2-layer MLP)** maps each view’s \([CLS]\) to **\(m=4\)** tokens \(\{e_i^{1},\dots,e_i^{m}\}\).
-- For each token/head \(j\): compute attention scores vs. \(P\) → mean over prompt tokens → \(\mathrm{weights}^j \in \mathbb{R}^n\).
+- **Decomposer (2-layer MLP)** maps each view’s $[CLS]$ to **$m=4$** tokens $\{e_i^{1},\dots,e_i^{m}\}$.
+- For each token/head $j$: compute attention scores vs. $P$ → mean over prompt tokens → $\mathrm{weights}^j \in \mathbb{R}^n$.
 - Average across heads:
   $$
   w_{MS} = \tfrac{1}{m}\sum_{j=1}^{m}\mathrm{weights}^j \in \mathbb{R}^n.

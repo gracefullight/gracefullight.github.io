@@ -11,7 +11,7 @@ tags:
 
 > To find the state that gives the **optimal/best value** of the **evaluation function**
 
-- It can be seen as an optimization problem.
+- It can be seen as an **optimization problem**.
 - a computational problem that finds the best solution (a state) that satisfies the given constraints
 - `evaluation function === objective function`
 - Only cares about the optimal solution/best state without considering the paths to reach the best state (the optimal solution)
