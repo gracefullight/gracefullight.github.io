@@ -52,3 +52,4 @@ tags:
 | [discrepancy](https://dictionary.cambridge.org/dictionary/english/discrepancy) | a difference or inconsistency | difference | 불일치 |
 | [heterogeneity](https://dictionary.cambridge.org/dictionary/english/heterogeneity) | the quality or state of being diverse in character or content | diversity | 이질성 |
 | [pseudonymization](https://dictionary.cambridge.org/dictionary/english/pseudonymization) | the process of replacing private identifiers with fake identifiers or pseudonyms | anonymization | 가명화 |
+| [denote](https://dictionary.cambridge.org/dictionary/english/denote) | to be a sign of something | to signify | 나타내다, 의미하다 |
