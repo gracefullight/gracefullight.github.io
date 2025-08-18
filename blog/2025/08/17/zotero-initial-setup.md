@@ -9,7 +9,7 @@ tags:
 
 ## 동기화 설정
 
-> Settings > Sync > Data Syncing
+> Settings - Sync - Data Syncing
 
 - 로그인하고 자동 동기화 설정
 
@@ -19,24 +19,24 @@ tags:
 
 ## Citation 설정
 
-> Settings > Cite > APA 7th
+> Settings - Cite - APA 7th
 
 - 등록되어있는지 확인
 
-> Export > Item Format > APA 7th
+> Export - Item Format - APA 7th
 
 - 포맷 설정
 
 ### MS Word Plugin 설치
 
-> Settings > Cite > Word Processors
+> Settings - Cite - Word Processors
 
 - Microsoft Word 섹션의 Install/Reinstall Microsoft Word Add-in 클릭
 - 워드 재시작
 
 ## 플러그인 설치
 
-> Tools > Plugins
+> Tools - Plugins
 
 - 다운로드 받은 플러그인 드래그 앤 드랍
 
