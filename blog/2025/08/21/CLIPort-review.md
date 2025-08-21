@@ -50,3 +50,7 @@ tags:
 - CLIPort shows that **multi-task, language-conditioned policies** generalize across tasks better than object-centric or tabula rasa methods.
 - With **action abstraction** and **spatio-semantic priors**, end-to-end models can learn new skills **without requiring hand-engineered pipelines**.
 - Limitations remain for **dexterous 6-DoF manipulation** and complex continuous control.
+
+## Ref
+
+- Shridhar, M., Manuelli, L., & Fox, D. (2022). Cliport: What and where pathways for robotic manipulation. Conference on robot learning.

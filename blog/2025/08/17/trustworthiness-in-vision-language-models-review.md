@@ -168,4 +168,4 @@ tags:
 
 ## Ref
 
-- Kertesz, J., Li, B., Supnithi, T., & Takhom, A. (Eds.). (2025). Computational Data and Social Networks: 13th International Conference, CSoNet 2024, Bangkok, Thailand, December 16–18, 2024, Proceedings (Vol. 15417). Springer Nature Singapore. `https://doi.org/10.1007/978-981-96-6389-7`
+- Vu, K., & Lai, P. (2025). Trustworthiness in Vision-Language Models. In J. Kertesz, B. Li, T. Supnithi, & A. Takhom, Computational Data and Social Networks Singapore.

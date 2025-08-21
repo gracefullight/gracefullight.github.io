@@ -116,4 +116,4 @@ tags:
 
 ## Ref
 
-- Tan, Z., Li, Y., Meng, S., Yuan, X., Li, W., Mo, T., Wang, B., & Chu, X. (2025). Mitigating Hallucinations on Object Attributes using Multiview Images and Negative Instructions. ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 1–5. `https://doi.org/10.1109/ICASSP49660.2025.10888481`
+- Tan, Z., Li, Y., Meng, S., Yuan, X., Li, W., Mo, T., Wang, B., & Chu, X. (2025, 6–11 April 2025). Mitigating Hallucinations on Object Attributes using Multiview Images and Negative Instructions. ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
