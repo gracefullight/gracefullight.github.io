@@ -79,6 +79,10 @@
 <li>CLIPort shows that <strong>multi-task, language-conditioned policies</strong> generalize across tasks better than object-centric or tabula rasa methods.</li>
 <li>With <strong>action abstraction</strong> and <strong>spatio-semantic priors</strong>, end-to-end models can learn new skills <strong>without requiring hand-engineered pipelines</strong>.</li>
 <li>Limitations remain for <strong>dexterous 6-DoF manipulation</strong> and complex continuous control.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/21/CLIPort-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Shridhar, M., Manuelli, L., &amp; Fox, D. (2022). Cliport: What and where pathways for robotic manipulation. Conference on robot learning.</li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
@@ -216,7 +220,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
-<li>Tan, Z., Li, Y., Meng, S., Yuan, X., Li, W., Mo, T., Wang, B., &amp; Chu, X. (2025). Mitigating Hallucinations on Object Attributes using Multiview Images and Negative Instructions. ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 1–5. <code>https://doi.org/10.1109/ICASSP49660.2025.10888481</code></li>
+<li>Tan, Z., Li, Y., Meng, S., Yuan, X., Li, W., Mo, T., Wang, B., &amp; Chu, X. (2025, 6–11 April 2025). Mitigating Hallucinations on Object Attributes using Multiview Images and Negative Instructions. ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).</li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
@@ -533,7 +537,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/17/trustworthiness-in-vision-language-models-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
-<li>Kertesz, J., Li, B., Supnithi, T., &amp; Takhom, A. (Eds.). (2025). Computational Data and Social Networks: 13th International Conference, CSoNet 2024, Bangkok, Thailand, December 16–18, 2024, Proceedings (Vol. 15417). Springer Nature Singapore. <code>https://doi.org/10.1007/978-981-96-6389-7</code></li>
+<li>Vu, K., &amp; Lai, P. (2025). Trustworthiness in&nbsp;Vision-Language Models. In J. Kertesz, B. Li, T. Supnithi, &amp; A. Takhom, Computational Data and Social Networks Singapore.</li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
