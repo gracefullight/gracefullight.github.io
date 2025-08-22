@@ -42,6 +42,30 @@ tags:
     - maps data values to a function
     - Using regression to fit data by finding a mathematical equation may be used to smooth noisy data.
 
+```mermaid
+graph TB
+  subgraph Data
+    Bin1["Bin1: 4, 8, 15"]
+    Bin2["Bin2: 21, 21, 24"]
+    Bin3["Bin3: 25, 28, 34"]
+  end
+
+  subgraph Means["Means, 평균처리"]
+    Bin1_1["Bin1: 9, 9, 9"]
+    Bin1_2["Bin2: 22, 22, 22"]
+    Bin1_3["Bin3: 29, 29, 29"]
+  end
+
+  subgraph Boundaries["Boundaries, 경계처리"]
+    Bin1_Boundary["Bin1: 4, 4, 15"]
+    Bin2_Boundary["Bin2: 21, 21, 24"]
+    Bin3_Boundary["Bin3: 25, 25, 34"]
+  end
+
+  Data --> Means
+  Data --> Boundaries
+```
+
 #### Data Integration
 
 #### Data Transformation
