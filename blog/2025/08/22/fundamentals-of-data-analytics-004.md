@@ -86,8 +86,8 @@ graph TB
 | 51 | `[51, 60]`| `[51, 53]`|
 | 53 | `[51, 60]` | `[51, 53]`|
 
-- Equi-width: Bins have equal width.
-- Equi-depths: Bins have the same number of values in them or almost the same number if they don't divide equally.
+- **Equi-width**: Bins have equal width.
+- **Equi-depth**: Bins have the same number of values in them or almost the same number if they don't divide equally.
 
 ### Data Integration
 
