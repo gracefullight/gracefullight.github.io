@@ -89,7 +89,55 @@ graph TB
 - **Equi-width**: Bins have equal width.
 - **Equi-depth**: Bins have the same number of values in them or almost the same number if they don't divide equally.
 
+#### Equi-width binning
+
+> Equal-interval binning, split the whole range of numbers into intervals with equal size.
+
+- Price: **4, 8, 9, 15, 21, 21, 22, 26, 27, 28, 29, 36**
+- Equal-width binning
+  - Bin1 **[4, 12]**: 4, 8, 9
+  - Bin2 **(12, 20]**: 15
+  - Bin3 **(20, 28]**: 21, 21, 22, 26, 27, 28
+  - Bin4 **(28, 36]**: 29, 36
+- Smoothing by bin means
+  - Bin1: 7, 7, 7
+  - Bin2: 15
+  - Bin3: 24, 24, 24, 24, 24, 24
+  - Bin4: 33, 33
+- Smoothing by bin boundaries
+  - Bin1: 4, **9, 9**
+  - Bin2: 15
+  - Bin3: **21, 21, 21**, **28, 28, 28**
+  - Bin4: 29, 36
+
+#### Equi-depth binning
+
+> Equal-frequency binning, use intervals containing an equal number of values.
+
+- Price: **4, 8, 9, 15, 21, 21, 22, 26, 27, 28, 29, 36**
+- Equal-depth binnning
+  - Bin1: 4, 8, 9
+  - Bin2: 15, 21, 21
+  - Bin3: 22, 26, 27
+  - Bin4: 28, 29, 36
+- Smoothing by bin means: each value in a bin is replaced by the mean value of the bin.
+  - Bin1: 7, 7, 7
+  - Bin2: 19, 19, 19
+  - Bin3: 25, 25, 25
+  - Bin4: 31, 31, 31
+- Smoothing by bin boundaries: each bin value is replace by the closest boundary value.
+  - Bin1: 4, **9, 9**
+  - Bin2: 15, **21, 21**
+  - Bin3: 22, **27, 27**
+  - Bin4: **28, 28**, 36
+
 ### Data Integration
+
+> provides unified data by combining data from various heterogeneous data sources into a coherent data store
+
+- The sources can include flat files, databases or multiple data cubes.
+- Careful integration may help to avoid and reduce inconsistencies and redundancies in the final dataset.
+- Building an enterprise's **data warehouse** is considered one of the most popular data integration implementations.
 
 ### Data Transformation
 

@@ -29,3 +29,4 @@ tags:
 | deviate | to depart from an established course or norm | to diverge or stray | 벗어나다 |
 | asymptotic | approaching a limit as closely as possible | nearing a boundary | 점근적인 |
 | univariate | involving only one variable | single-variable | 단일 변수의 |
+| heterogeneous | composed of different or diverse elements | mixed or varied | 이질적인 |
