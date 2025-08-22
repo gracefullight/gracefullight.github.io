@@ -18,9 +18,18 @@ tags:
 - Duplicated records: when integrating data from different sources, the same data may get entered multiple times.
 - Data transmission problems: when data is sent between different people or databases or companies, things can get lost in the process.
 
-### Techinques
+### Data mining tasks
 
-#### Data Cleaning
+- Classification
+- Estimation
+- Prediction
+- Characterisation
+- Discrimination
+- Affinity grouping
+- Clustering
+- Time series analysis
+
+## Data Cleaning
 
 - Missing data
   - **Ignore the record**
@@ -41,6 +50,8 @@ tags:
     - a data mining function that deals with the prediction of a continuous value rather than a class
     - maps data values to a function
     - Using regression to fit data by finding a mathematical equation may be used to smooth noisy data.
+
+### Binning
 
 ```mermaid
 graph TB
@@ -66,21 +77,20 @@ graph TB
   Data --> Boundaries
 ```
 
-#### Data Integration
+| Price | Equi-width | Equi-depth |
+| --- | --- | --- |
+| 7 | `[0, 10]` | `[7, 20]`|
+| 20 | `[11, 20]` | `[7, 20]`|
+| 22 | `[21, 30]` | `[22, 50]`|
+| 50 | `[41, 50]`| `[22, 50]`|
+| 51 | `[51, 60]`| `[51, 53]`|
+| 53 | `[51, 60]` | `[51, 53]`|
 
-#### Data Transformation
+- Equi-width: Bins have equal width.
+- Equi-depths: Bins have the same number of values in them or almost the same number if they don't divide equally.
 
-#### Data Reduction
+### Data Integration
 
-### Data mining tasks
+### Data Transformation
 
-- Classification
-- Estimation
-- Prediction
-- Characterisation
-- Discrimination
-- Affinity grouping
-- Clustering
-- Time series analysis
-
-## Data cleaning
+### Data Reduction
