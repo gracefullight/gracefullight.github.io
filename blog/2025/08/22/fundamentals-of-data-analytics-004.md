@@ -180,4 +180,17 @@ $$r_{A,B} = \frac{\sum_{} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{} (x_i - \
 
 ### Data Transformation
 
+> The data is consolidated or transformed so that the patterns found are easier to understand, and the consequent mining process is more efficient.
+
+- **Smoothing**: smoothing is used to remove noise from the data to improve clarity around the important features in the dataset
+- **Normalization**: the method of scaling your data, into a regularized range, so that you can compare and represent it more accurately
+- **Discretization** & Concept hierarchy generation
+  - Discretisation is the process of putting values into buckets so that there are a limited number of possible states.
+  - Discretisation transforms a continuous attribute into **a categorical attribute**, usually happens after the data is cleaned.
+  - This process includes replacing lower-level data (primitive) with higher-level concepts through the use of concept hierarchies.
+  - Street may be replaced with city, country or region.
+  - Age may be replaced with senior, adult, younger and youth.
+- **Binarization**: transforming data into binary numbers (e.g. 0, 1).
+  - This helps make classifier algorithms more efficient.
+
 ### Data Reduction
