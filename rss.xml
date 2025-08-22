@@ -4,10 +4,85 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 21 Aug 2025 13:04:08 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 22 Aug 2025 07:30:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Fundamentals of data analytics @004]]></title>
+            <link>https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/</link>
+            <guid>https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/</guid>
+            <pubDate>Fri, 22 Aug 2025 07:30:22 GMT</pubDate>
+            <description><![CDATA[Fundamentals of data analytics @004]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-preparation">Data Preparation<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-preparation" class="hash-link" aria-label="Data Preparation에 대한 직접 링크" title="Data Preparation에 대한 직접 링크">​</a></h2>
+<ul>
+<li>In real world applications, data can be inconsistent, incomplete, and noisy.</li>
+<li>Data Collection problems: when data is collected incorrectly</li>
+<li>Incomplete Data: when information is missing</li>
+<li>Data entry problems: when data is entered incorrectly</li>
+<li>Contradictions in data: when the data says something in one place, and then says a different thing elsewhere in the dataset. We can think of this data as noisy.</li>
+<li>Discrepancy in naming conventions: when data descriptions are unclear, people may misinterpret their meaning.</li>
+<li>Duplicated records: when integrating data from different sources, the same data may get entered multiple times.</li>
+<li>Data transmission problems: when data is sent between different people or databases or companies, things can get lost in the process.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="techinques">Techinques<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#techinques" class="hash-link" aria-label="Techinques에 대한 직접 링크" title="Techinques에 대한 직접 링크">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-cleaning">Data Cleaning<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-cleaning" class="hash-link" aria-label="Data Cleaning에 대한 직접 링크" title="Data Cleaning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Missing data<!-- -->
+<ul>
+<li><strong>Ignore the record</strong></li>
+<li><strong>Fill the missing value manually</strong></li>
+<li><strong>Fill missing values with calculated values</strong>
+<ul>
+<li>The missing values can be filled using the average value for a particular attribute</li>
+<li>or by using attribute mean for all samples belonging to the same class as the given record.</li>
+<li>also be filled using methods such as Bayesian classification or decision trees to automatically infer the values.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Noisy data: a meaningless variation that cannot be interpreted properly by machines<!-- -->
+<ul>
+<li><strong>Binning</strong>
+<ul>
+<li>binning methods use the neighbour's data, this is referred to as local smoothing</li>
+<li>can replace all data in a segment by its mean or boundary values</li>
+</ul>
+</li>
+<li><strong>Clustering</strong>
+<ul>
+<li>grouping of data points according to a distance measure</li>
+<li>use a clustering algorithm to classify each data point into a specific group</li>
+<li>can detect outliers</li>
+</ul>
+</li>
+<li><strong>Regression</strong>
+<ul>
+<li>a data mining function that deals with the prediction of a continuous value rather than a class</li>
+<li>maps data values to a function</li>
+<li>Using regression to fit data by finding a mathematical equation may be used to smooth noisy data.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-integration">Data Integration<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-integration" class="hash-link" aria-label="Data Integration에 대한 직접 링크" title="Data Integration에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-transformation">Data Transformation<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-transformation" class="hash-link" aria-label="Data Transformation에 대한 직접 링크" title="Data Transformation에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-reduction">Data Reduction<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-reduction" class="hash-link" aria-label="Data Reduction에 대한 직접 링크" title="Data Reduction에 대한 직접 링크">​</a></h4>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-mining-tasks">Data mining tasks<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-mining-tasks" class="hash-link" aria-label="Data mining tasks에 대한 직접 링크" title="Data mining tasks에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Classification</li>
+<li>Estimation</li>
+<li>Prediction</li>
+<li>Characterisation</li>
+<li>Discrimination</li>
+<li>Affinity grouping</li>
+<li>Clustering</li>
+<li>Time series analysis</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-cleaning-1">Data cleaning<a href="https://gracefullight.dev/2025/08/22/fundamentals-of-data-analytics-004/#data-cleaning-1" class="hash-link" aria-label="Data cleaning에 대한 직접 링크" title="Data cleaning에 대한 직접 링크">​</a></h2>]]></content:encoded>
+            <category>fda</category>
+        </item>
         <item>
             <title><![CDATA[Vocabulary for AI @005]]></title>
             <link>https://gracefullight.dev/vocab/vocab-ai-005/</link>
@@ -1420,16 +1495,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 </ul>
 <table><thead><tr><th>attributes</th><th>measured values</th><th>comments</th><th>attribute type</th><th>operations we can do</th><th>Data type (knime/python)</th><th>missing value</th><th>Any comments about qualities</th></tr></thead><tbody><tr><td>fixed acidity</td><td><code>[3.8, 15.9]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>volatile acidity</td><td><code>[0.08, 1.58]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>citric acid</td><td><code>[0, 1.66]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>residual sugar</td><td><code>[0.6, 65.8]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>chlorides</td><td><code>[0.009, 0.611]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>free sulfur dioxide</td><td><code>[1, 289]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>int</td><td>N/A</td><td></td></tr><tr><td>total sulfur dioxide</td><td><code>[6, 440]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>int</td><td>N/A</td><td></td></tr><tr><td>density</td><td><code>[0.98711, 1.03898]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>pH</td><td><code>[2.72, 4.01]</code></td><td>continuous number</td><td>interval</td><td>order, arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>sulphates</td><td><code>[0.22, 2]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>alcohol</td><td><code>[8, 14.9]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>quality</td><td><code>[extremely dissatisfied, extremely satisfied, moderately dissatisfied, moderately satisfied, neutral, slightly dissatisfied, slightly satisfied]</code></td><td>distributed</td><td>ordinal</td><td>order, counting</td><td>str</td><td>N/A</td><td></td></tr><tr><td>color</td><td><code>[white, red]</code></td><td>distributed</td><td>nominal</td><td>counting</td><td>str</td><td>N/A</td><td></td></tr></tbody></table>]]></content:encoded>
             <category>fda</category>
-        </item>
-        <item>
-            <title><![CDATA[Vocabulary for AI @004]]></title>
-            <link>https://gracefullight.dev/vocab/vocab-ai-004/</link>
-            <guid>https://gracefullight.dev/vocab/vocab-ai-004/</guid>
-            <pubDate>Thu, 14 Aug 2025 05:01:26 GMT</pubDate>
-            <description><![CDATA[Vocabulary for AI @004]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/vocab/vocab-ai-004/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/relax" target="_blank" rel="noopener noreferrer">relax</a></td><td>to make a rule or control less severe</td><td>to make less strict or severe</td><td>완화하다, 느슨하게 하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reconstruct" target="_blank" rel="noopener noreferrer">reconstruct</a></td><td>to build or form again</td><td>to rebuild</td><td>재구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/reside" target="_blank" rel="noopener noreferrer">reside</a></td><td>to live in a place; to exist or be present</td><td>to live; to be located</td><td>위치하다, 존재하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/lay-out" target="_blank" rel="noopener noreferrer">lay out</a></td><td>to arrange or plan something in a clear and organized way</td><td>to arrange</td><td>배치하다, 설계하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/resemble" target="_blank" rel="noopener noreferrer">resemble</a></td><td>to look like or be similar to someone or something</td><td>to look like</td><td>닮다, 유사하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/amnesia" target="_blank" rel="noopener noreferrer">amnesia</a></td><td>a condition in which a person is unable to remember things</td><td>memory loss</td><td>기억상실증</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/vicinity" target="_blank" rel="noopener noreferrer">vicinity</a></td><td>the area near or surrounding a particular place</td><td>nearby area</td><td>인근, 근처</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/schematically" target="_blank" rel="noopener noreferrer">schematically</a></td><td>in a way that represents the main features or relationships of something in a simple and clear form</td><td>in a simplified way</td><td>도식적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/superimpose" target="_blank" rel="noopener noreferrer">superimpose</a></td><td>to place or lay something over something else</td><td>to overlay</td><td>겹쳐 놓다, 중첩하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/plateaus" target="_blank" rel="noopener noreferrer">plateaus</a></td><td>a state of little or no change following a period of activity or progress</td><td>a period of stability</td><td>정체기, 안정기, 고원</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/wander" target="_blank" rel="noopener noreferrer">wander</a></td><td>to move around without a fixed course, aim, or goal</td><td>to roam</td><td>방황하다, 헤매다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/consecutive" target="_blank" rel="noopener noreferrer">consecutive</a></td><td>following continuously; in unbroken or logical sequence</td><td>sequential</td><td>연속적인</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/converge" target="_blank" rel="noopener noreferrer">converge</a></td><td>to come together from different directions</td><td>to meet</td><td>수렴하다, 모이다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/adage" target="_blank" rel="noopener noreferrer">adage</a></td><td>a saying or proverb expressing a common truth</td><td>a wise saying</td><td>격언, 속담</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/porcupine" target="_blank" rel="noopener noreferrer">porcupine</a></td><td>a large rodent with sharp quills on its back</td><td>a spiny animal</td><td>호저</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/stumble" target="_blank" rel="noopener noreferrer">stumble</a></td><td>to trip or lose balance while walking or running</td><td>to trip</td><td>비틀거리다, 넘어지다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/metallurgy" target="_blank" rel="noopener noreferrer">metallurgy</a></td><td>the science and technology of metals</td><td>metal science</td><td>금속공학</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crystalline" target="_blank" rel="noopener noreferrer">crystalline</a></td><td>having the structure and form of a crystal</td><td>crystal-like</td><td>결정질의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/crevice" target="_blank" rel="noopener noreferrer">crevice</a></td><td>a narrow opening or fissure</td><td>a crack</td><td>틈, 균열</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/bumpy" target="_blank" rel="noopener noreferrer">bumpy</a></td><td>having an uneven or jolting surface</td><td>uneven</td><td>울퉁불퉁한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/dislodge" target="_blank" rel="noopener noreferrer">dislodge</a></td><td>to remove or force out from a position</td><td>to remove</td><td>제거하다, 떼어내다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exponentially" target="_blank" rel="noopener noreferrer">exponentially</a></td><td>in a way that increases rapidly and significantly</td><td>rapidly</td><td>기하급수적으로</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/halt" target="_blank" rel="noopener noreferrer">halt</a></td><td>to stop or pause something</td><td>to stop</td><td>중단하다, 멈추다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/unfruitful" target="_blank" rel="noopener noreferrer">unfruitful</a></td><td>not producing good results</td><td>unproductive</td><td>결실이 없는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/analogous" target="_blank" rel="noopener noreferrer">analogous</a></td><td>similar in some way</td><td>comparable</td><td>유사한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/proportional" target="_blank" rel="noopener noreferrer">proportional</a></td><td>corresponding in size or amount to something else</td><td>relative</td><td>비례하는</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retained" target="_blank" rel="noopener noreferrer">retained</a></td><td>kept or continued to have</td><td>kept</td><td>유지된</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/in-accordance-with" target="_blank" rel="noopener noreferrer">in accordance with</a></td><td>following or obeying a rule, law, or wish</td><td>according to</td><td>~에 따라, ~에 일치하여</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/constitute" target="_blank" rel="noopener noreferrer">constitute</a></td><td>to be a part of something</td><td>to form</td><td>구성하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/permute" target="_blank" rel="noopener noreferrer">permute</a></td><td>to change the order or arrangement of something</td><td>to rearrange</td><td>순열하다, 배열을 바꾸다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/chromosome" target="_blank" rel="noopener noreferrer">chromosome</a></td><td>a thread-like structure of nucleic acids and protein found in the nucleus of most living cells</td><td>genetic structure</td><td>염색체</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/auxiliary" target="_blank" rel="noopener noreferrer">auxiliary</a></td><td>providing supplementary or additional help and support</td><td>supplementary</td><td>보조의</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discriminative" target="_blank" rel="noopener noreferrer">discriminative</a></td><td>able to distinguish or differentiate</td><td>distinguishing</td><td>구별 가능한</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/exploit" target="_blank" rel="noopener noreferrer">exploit</a></td><td>to make full use of and benefit from something</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/perturbation" target="_blank" rel="noopener noreferrer">perturbation</a></td><td>a small change or variation</td><td>a disturbance</td><td>교란</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/modulate" target="_blank" rel="noopener noreferrer">modulate</a></td><td>to adjust or alter the intensity or frequency of something</td><td>to adjust</td><td>조절하다, 변조하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/retrieval" target="_blank" rel="noopener noreferrer">retrieval</a></td><td>the process of getting stored information from a computer</td><td>search</td><td>검색</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/leverage" target="_blank" rel="noopener noreferrer">leverage</a></td><td>to use something to maximum advantage</td><td>to utilize</td><td>활용하다</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/discrepancy" target="_blank" rel="noopener noreferrer">discrepancy</a></td><td>a difference or inconsistency</td><td>difference</td><td>불일치</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/heterogeneity" target="_blank" rel="noopener noreferrer">heterogeneity</a></td><td>the quality or state of being diverse in character or content</td><td>diversity</td><td>이질성</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/pseudonymization" target="_blank" rel="noopener noreferrer">pseudonymization</a></td><td>the process of replacing private identifiers with fake identifiers or pseudonyms</td><td>anonymization</td><td>가명화</td></tr><tr><td><a href="https://dictionary.cambridge.org/dictionary/english/denote" target="_blank" rel="noopener noreferrer">denote</a></td><td>to be a sign of something</td><td>to signify</td><td>나타내다, 의미하다</td></tr></tbody></table>]]></content:encoded>
-            <category>me</category>
         </item>
     </channel>
 </rss>
