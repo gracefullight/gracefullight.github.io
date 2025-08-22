@@ -30,3 +30,4 @@ tags:
 | asymptotic | approaching a limit as closely as possible | nearing a boundary | 점근적인 |
 | univariate | involving only one variable | single-variable | 단일 변수의 |
 | heterogeneous | composed of different or diverse elements | mixed or varied | 이질적인 |
+| derivation | the process of obtaining something from a source or origin | extraction | 유도, 파생 |
