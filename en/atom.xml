@@ -24,8 +24,18 @@
 <li>Duplicated records: when integrating data from different sources, the same data may get entered multiple times.</li>
 <li>Data transmission problems: when data is sent between different people or databases or companies, things can get lost in the process.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="techinques">Techinques<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#techinques" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-cleaning">Data Cleaning<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-cleaning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-mining-tasks">Data mining tasks<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-mining-tasks" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Classification</li>
+<li>Estimation</li>
+<li>Prediction</li>
+<li>Characterisation</li>
+<li>Discrimination</li>
+<li>Affinity grouping</li>
+<li>Clustering</li>
+<li>Time series analysis</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-cleaning">Data Cleaning<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-cleaning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Missing data<!-- -->
 <ul>
@@ -65,22 +75,16 @@
 </ul>
 </li>
 </ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="binning">Binning<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#binning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-integration">Data Integration<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-integration" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-transformation">Data Transformation<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-transformation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="data-reduction">Data Reduction<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-reduction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h4>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-mining-tasks">Data mining tasks<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-mining-tasks" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Price</th><th>Equi-width</th><th>Equi-depth</th></tr></thead><tbody><tr><td>7</td><td><code>[0, 10]</code></td><td><code>[7, 20]</code></td></tr><tr><td>20</td><td><code>[11, 20]</code></td><td><code>[7, 20]</code></td></tr><tr><td>22</td><td><code>[21, 30]</code></td><td><code>[22, 50]</code></td></tr><tr><td>50</td><td><code>[41, 50]</code></td><td><code>[22, 50]</code></td></tr><tr><td>51</td><td><code>[51, 60]</code></td><td><code>[51, 53]</code></td></tr><tr><td>53</td><td><code>[51, 60]</code></td><td><code>[51, 53]</code></td></tr></tbody></table>
 <ul>
-<li>Classification</li>
-<li>Estimation</li>
-<li>Prediction</li>
-<li>Characterisation</li>
-<li>Discrimination</li>
-<li>Affinity grouping</li>
-<li>Clustering</li>
-<li>Time series analysis</li>
+<li>Equi-width: Bins have equal width.</li>
+<li>Equi-depths: Bins have the same number of values in them or almost the same number if they don't divide equally.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-cleaning-1">Data cleaning<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-cleaning-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>]]></content>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-integration">Data Integration<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-integration" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-transformation">Data Transformation<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-transformation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-reduction">Data Reduction<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-reduction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
