@@ -80,8 +80,8 @@
 <!-- -->
 <table><thead><tr><th>Price</th><th>Equi-width</th><th>Equi-depth</th></tr></thead><tbody><tr><td>7</td><td><code>[0, 10]</code></td><td><code>[7, 20]</code></td></tr><tr><td>20</td><td><code>[11, 20]</code></td><td><code>[7, 20]</code></td></tr><tr><td>22</td><td><code>[21, 30]</code></td><td><code>[22, 50]</code></td></tr><tr><td>50</td><td><code>[41, 50]</code></td><td><code>[22, 50]</code></td></tr><tr><td>51</td><td><code>[51, 60]</code></td><td><code>[51, 53]</code></td></tr><tr><td>53</td><td><code>[51, 60]</code></td><td><code>[51, 53]</code></td></tr></tbody></table>
 <ul>
-<li>Equi-width: Bins have equal width.</li>
-<li>Equi-depths: Bins have the same number of values in them or almost the same number if they don't divide equally.</li>
+<li><strong>Equi-width</strong>: Bins have equal width.</li>
+<li><strong>Equi-depth</strong>: Bins have the same number of values in them or almost the same number if they don't divide equally.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-integration">Data Integration<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-integration" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-transformation">Data Transformation<a href="https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/#data-transformation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
