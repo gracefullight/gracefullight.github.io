@@ -32,3 +32,4 @@ tags:
 | heterogeneous | composed of different or diverse elements | mixed or varied | 이질적인 |
 | derivation | the process of obtaining something from a source or origin | extraction | 유도, 파생 |
 | consolidate | to combine or unite into a single entity | to merge or strengthen | 통합하다, 강화하다 |
+| asymptotically | in a manner that approaches a limit | nearing a boundary | 점근적으로 |

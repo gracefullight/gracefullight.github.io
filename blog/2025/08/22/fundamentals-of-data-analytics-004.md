@@ -193,4 +193,92 @@ $$r_{A,B} = \frac{\sum_{} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{} (x_i - \
 - **Binarization**: transforming data into binary numbers (e.g. 0, 1).
   - This helps make classifier algorithms more efficient.
 
+#### Data Nomalization
+
+- the data should be standardised or normalised in order to avoid dependency on the selection of measurement units.
+- This constitutes transforming data to lie within a common or smaller range, like `[0.0, 1.0]` or `[−1, 1]`.
+- **Min-max normalization**
+
+  - Min-max normalisation maps a value of $K$, indicated by $v_n$, to a new value $v'_n$ within the range $[new\_min_K, new\_max_K]$
+    - $$v'_n = \frac{(v_n - min_K)}{(max_K - min_K)} \cdot (new\_max_K - new\_min_K) + new\_min_K$$
+    - **calculates the relative position within the original range and reflects it in the new range accordingly.**
+  - preserves the relationships between the original data values.
+  - It will encounter an **out-of-bounds error** if a future input case for normalisation falls outside of the original data range for K.
+- **Z-Score normalization**
+  - normalises attribute values using the average (i.e., mean) and standard deviation of $K$.
+    - $$v'_n = \frac{(v_n - \mu_K)}{\sigma_K}$$
+    - It converts the **distance of a data point from the mean** into a unitless measure.
+  - is **useful when there are outliers** that dominate the min-max normalisation
+  - is **useful when the actual minimum and maximum of attribute $K$ are unknown.**
+- **Decimal scaling normalization**
+  - The number of decimal points moved is based on the maximum absolute value of $K$.
+    - $$v'_n = \frac{v_n}{10^j}$$
+    - where $j$ is the smallest integer such that $max(|v'_n|) < 1$.
+    - **divides all values by the power of 10 just larger than the maximum absolute value,** bringing them into the range $(-1, 1)$.
+- **Softmax normalization**
+  - a nonlinear transformation that yields an 's'-shaped curve that approaches 0 and 1 asymptotically.
+  - **New values will be mapped between 0 and 1** even if they are beyond the range of your existing data.
+  - $$\alpha = \frac{\nu - \mu}{\lambda \, (\sigma / 2\pi)}, \qquad \nu' = \frac{1}{1 + e^{-\alpha}}$$
+    - Center the data around the mean :: use $(\nu - \mu)$
+    - Remove units by scaling with the standard deviation :: divide by $\sigma$.
+    - Control how steep or flat the curve is :: adjust with $\lambda$.
+    - Add $(2\pi)$ as a conventional constant to better match the logistic curve with statistical distributions.
+    - the formula naturally arises by **centering at the mean, standardizing by the spread, letting the user control the slope, and refining with a scaling constant.**
+- **Sigmoid normalization**
+  - a nonlinear transformation similar to softmax. **It ranges between −1 and 1** (asymptotically), and has a fixed linear portion within $±mu$.
+    - $$ \alpha = \frac{\nu - \mu}{\lambda \, (\sigma / 2\pi)}, \qquad \nu' = \frac{1 - e^{-\alpha}}{1 + e^{-\alpha}}$$
+    - Center the data around the mean :: use $(\nu - \mu)$
+    - Remove units by scaling with the standard deviation :: divide by $\sigma$.
+    - Control how steep or flat the curve is :: adjust with $\lambda$.
+    - Add $(2\pi)$ as a conventional constant to refine scaling with respect to statistical distributions.
+    Apply the hyperbolic tangent :: map the result smoothly into the range $[-1, 1]$.
+    - the formula naturally arises by centering at the mean, standardizing by spread, letting the user control the slope, and using tanh to compress all values into $[-1, 1]$.
+
+#### Discretization & Concept hierarchy generation
+
+- Data discretisation is a form of numerosity reduction that **transforms a continuous attribute into a categorical attribute.**
+- Higher concept labels or a smaller number of intervals (i.e. binning) are used to replace the raw data in order to simplify the original data and increase the efficiency of mining.
+- Discretisation is very beneficial for generating concept hierarchies automatically, which allow data mining at multiple levels of data abstraction.
+- **One or more concept hierarchy can be defined** for the single attribute for accommodating the requirements of various users.
+
+| Salary | Age | ➡️ | Salary | Age |
+| --- | --- | --- | --- | --- |
+| 2000 | 20 | - | `[2000, 2900)` | `[20, 25)` |
+| 2800 | 25 | - | `[2000, 2900)` | `[25, 30)` |
+| 3500 | 23 | - | `[2900, 3800)` | `[20, 25)` |
+| 2400 | 26 | - | `[2000, 2900)` | `[25, 30)` |
+| 5600 | 32 | - | `[5600, 6500)` | `[30, 35)` |
+| 4200 | 36 | - | `[3800, 4700)` | `[35, 40]` |
+| 5000 | 39 | - | `[4700, 5600)` | `[35, 40]` |
+| 5000 | 40 | - | `[4700, 5600)` | `[35, 40]` |
+| 3400 | 35 | - | `[2900, 3800)` | `[35, 40]` |
+| 3600 | 34 | - | `[2900, 3800)` | `[30, 35)` |
+
+- If dependent and independent variables have only a few values, a wide range of classification algorithms can be used.
+
+```mermaid
+graph TD
+    A[All]
+    A --> B[Canada]
+    A --> C[USA]
+
+    B --> B1[British Columbia]
+    B --> B2[Ontario]
+
+    B1 --> B11[Vancouver]
+    B1 --> B12[Victoria]
+
+    B2 --> B21[Toronto]
+    B2 --> B22[Ottawa]
+
+    C --> C1[New York]
+    C --> C2[Illinois]
+
+    C1 --> C11[New York]
+    C1 --> C12[Buffalo]
+
+    C2 --> C21[Chicago]
+    C2 --> C22[Urbano]
+```
+
 ### Data Reduction
