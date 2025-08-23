@@ -281,4 +281,104 @@ graph TD
     C2 --> C22[Urbano]
 ```
 
+#### Data Binarizaion
+
+- maps a categorical or continuous attribute into one or more binary variables.
+- Binarisation can convert a continuous attribute to a categorical attribute which can then be converted into set of binary attributes.
+- only possible to keep the meaning of one categorical value at one time, losing the meaning of the others.
+
+| ID | Gender |
+| --- | --- |
+| 1 | Male |
+| 2 | Female |
+| 3 | Not specified |
+| 4 | Female |
+
+| ID | Male | Female | Not specified |
+| --- | --- | --- | --- |
+| 1 | 1 | 0 | 0 |
+| 2 | 0 | 1 | 0 |
+| 3 | 0 | 0 | 1 |
+| 4 | 0 | 1 | 0 |
+
+| Outlook | Temperature | Humidity | Windy | Play |
+| --- | --- | --- | --- | --- |
+| Sunny | 85 | 85 | False | No |
+| Sunny | 80 | 90 | True | No |
+| Overcast | 83 | 78 | False | Yes |
+| Rain | 70 | 95 | False | Yes |
+| Rain | 68 | 80 | False | Yes |
+
+| Outlook | Outlook | Outlook | Temperature | Humidity | Windy | Play |
+| --- | --- | --- | --- | --- | --- | --- |
+| Overcast | Rain | Sunny | | | | |
+| 0 | 0 | 1 | 85 | 85 | 0 | 0 |
+| 0 | 0 | 1 | 80 | 90 | 1 | 0 |
+| 1 | 0 | 0 | 83 | 78 | 0 | 1 |
+| 0 | 1 | 0 | 70 | 95 | 0 | 1 |
+| 0 | 1 | 0 | 68 | 80 | 0 | 1 |
+
 ### Data Reduction
+
+- to acquire a reduced data set representation which is much smaller in quantity and maintains the quality of the data close to the original data.
+- to reduce data storage and analysis costs while increasing storage efficiency
+
+#### Aggregation
+
+- storing and presenting data as a summary, using statistical metrics like means, median and variance.
+- Data aggregation is often used to construct a data cube for data analysis at multiple levels of abstraction.
+- **Multidimensional aggregated information is stored** in data cubes
+
+![Data cube aggregation](./data-cube-aggregation.png)
+
+#### Dimensionality reduction
+
+- to minimize the number of features
+- **feature subset selection** or **feature selection** detects and removes weakly relevant, redundant, or irrelevant dimensions or attributes
+- to determine a minimum set of attributes so that the resulting probability distribution of the data classes is as near as possible to the original distribution obtained using all attributes.
+- Feature subset selection: uses only available subsets of the features to reduce the dimensionality of the data
+  - Redundant features: Duplicates of all or much of the information present in one or more attributes.
+    - the amount of sales tax paid / purchase price of a product
+  - Irrelevant features: Contain no information that is important for the data mining process at hand.
+    - the color of a product when predicting its price
+  - While some redundant and irrelevant attributes can be eliminated immediately by considering the domain knowledge or common sense.
+  - The ideal approach to feature selection is to **try all possible subsets of features** in the input for the data mining algorithm of interest, and then **consider the subset that gives the best outcome.**
+- Feature subset selection techniques
+  - Brute-force approach
+  - Embedded approaches:
+    - Feature selection occurs naturally as part of the data mining algorithm.
+    - The algorithm decides by itself which attributes are to be ignored.
+  - Filter approaches:
+    - Features are chosen before running the data mining algorithm by taking some of the approaches which are independent of the data mining process.
+    - can be selected with pairwise correlation as low as possible.
+  - Wrapper approaches:
+    - consider the target data mining algorithm as a black box to determine the best subset of attributes.
+    - Instead of evaluating all possible combinations, it intelligently searches only a subset to find a near-optimal feature set.
+    - Heuristic methods: Forward selection, backward elimination, genetic algorithm, greedy search.
+    - Decision tree induction
+
+#### Numerosity reduction
+
+- Regression, clustering, histograms, sampling
+- reducing the volume of the data, without any loss of data
+  - parametric models: store only the model parameters rather than the actual data, regression, log-linear models
+  - non-parametric approaches: clustering, sampling, histograms
+- Histograms
+  - unsupervised techniques that does not use a class label
+  - Singleton bucket: each of the buckets shows only a single frequency pair/attribute value
+  - Equal-width histogram: divided into equal ranges
+  - Equal-frequency(depth) histogram: each bucket has the similar number of data
+- Sampling
+  - a large dataset to be denoted by a smaller random subset (or sample) of the data
+  - often used in preliminary exploration as well as final analysis.
+  - useful when processing the entire dataset is too large or expensive.
+  - If the sample preserves the important properties of the original dataset (e.g., the mean), the sample is said to be representative
+  - **Simple random sampling**: every data point has an equal probability of being chosen.
+  - **Sampling without replacement**: once a data point is chosen, it cannot be selected again.
+  - **Sampling with replacement (bootstrap)**: the same data point can be picked multiple times, since it is placed back into the dataset after selection.
+  - **Cluster sampling**: the dataset is divided into clusters (groups), and sampling is performed at the cluster level.
+  - **Stratified sampling**: the dataset is split into strata (partitions), and random samples are drawn from each stratum. This is especially useful when the data is imbalanced, e.g., sampling customers across different age groups.
+
+![Stratified sampling](./stratified-sample.png)
+
+- Strata: Youth, Middle-aged, Senior
