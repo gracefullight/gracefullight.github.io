@@ -23,6 +23,8 @@
 <ul>
 <li>A family of VLA models (RT-2-PaLI-X, RT-2-PaLM-E) that fine-tune large VLMs on robot trajectories to output <strong>low-level actions</strong>.</li>
 <li>Target: <strong>generalizable, semantically aware</strong> manipulation policies that map images + instructions → actions end-to-end.</li>
+<li>RT-2 does <strong>not rely on a restricted 2D action space or calibrated cameras</strong>.</li>
+<li>The <strong>unified output space</strong> lets language and action tokens share the same model weights, without action-only layers.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-recipe">Core Recipe<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#core-recipe" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
