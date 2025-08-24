@@ -2,11 +2,102 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-24T02:04:59.631Z</updated>
+    <updated>2025-08-24T05:52:19.257Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[RT-1, Robot Transformer 1 Review]]></title>
+        <id>https://gracefullight.dev/en/2025/08/24/rt-1-review/</id>
+        <link href="https://gracefullight.dev/en/2025/08/24/rt-1-review/"/>
+        <updated>2025-08-24T05:52:19.257Z</updated>
+        <summary type="html"><![CDATA[RT-1 review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="rt-1">RT-1<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#rt-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>RT-1 discretizes robot actions into 256-bin tokens, creating a shared "action language" across robots.</li>
+<li>It absorbs heterogeneous data from simulation and other robot morphologies without losing performance.</li>
+<li>It generalizes robustly to new tasks, environments, and long-horizon scenarios (up to 50 steps).</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="RT-1 Architecture" src="https://gracefullight.dev/en/assets/images/rt-1-architecture-adc4a381e6221b91a20467516cdd1752.png" width="820" height="1315" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="introduction--motivation">Introduction &amp; Motivation<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#introduction--motivation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Leveraging large, diverse, task-agnostic datasets enables high performance in zero-shot or small task-specific settings.</li>
+<li>Data collection and curation is a critical bottleneck in robotics ("the unsung hero" of large-scale ML).</li>
+<li>Transformer-based controllers are powerful but inefficient for real-time robotics, requiring architectural adaptations.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="model--architecture">Model &amp; Architecture<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#model--architecture" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>RT-1 architecture: EfficientNet + FiLM layers + TokenLearner for compact vision-language tokenization.</li>
+<li>Action tokenization: 11 action dimensions (7 arm, 3 base, 1 mode) discretized into 256 bins each.</li>
+<li>This abstraction converts continuous robot actions into a discrete "token language", enabling cross-domain and cross-robot transfer.</li>
+<li>Real-time feasibility: optimized design achieves ~3Hz inference speed suitable for real-world control.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="experiments--results">Experiments &amp; Results<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#experiments--results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="general-performance">General Performance<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#general-performance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>RT-1 executes over 700 unique instructions at <strong>97% success rate</strong>.</li>
+<li>On unseen instructions: <strong>76% success</strong>, outperforming next-best baseline by +24%.</li>
+<li>Robustness: 83% success with distractors, 59% with background changes (significantly higher than baselines).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="absorbing-simulation-data">Absorbing Simulation Data<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#absorbing-simulation-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Adding sim data does not degrade real-task performance.</li>
+<li>Objects/tasks only seen in simulation: performance boosted <strong>23% ⇒ 87%</strong>.</li>
+<li>Unseen instructions with sim objects: <strong>7% ⇒ 33%</strong>, showing strong sim-to-real domain transfer.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="absorbing-multi-robot-data">Absorbing Multi-Robot Data<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#absorbing-multi-robot-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Mixed RT-1 + Kuka datasets: only 2% drop in original tasks.</li>
+<li>Bin-picking eval: RT-1 only 22% ⇒ mixed training 39% (almost 2×).</li>
+<li>Kuka-only training: 0% on EDR robots ⇒ morphology transfer alone fails.</li>
+<li>Mixed data enables RT-1 to <strong>leverage cross-robot experiences</strong> without explicit demonstrations.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="long-horizon-scenarios-saycan-integration">Long-Horizon Scenarios (SayCan Integration)<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#long-horizon-scenarios-saycan-integration" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Evaluated in two kitchens:<!-- -->
+<ul>
+<li>Kitchen1: 67% execution success.</li>
+<li>Kitchen2 (novel environment): also 67% execution success.</li>
+</ul>
+</li>
+<li>Outperforms Gato (0% in Kitchen2) and BC-Z (13% in Kitchen2).</li>
+<li>Demonstrated execution of <strong>ultra-long tasks up to 50 steps</strong>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-quantity-vs-diversity">Data Quantity vs Diversity<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#data-quantity-vs-diversity" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Data Diversity" src="https://gracefullight.dev/en/assets/images/rt-1-data-diversity-299befbcb9d0f7eb7912b666b02988e1.png" width="733" height="376" class="img_f7zd"></p>
+<ul>
+<li>Reducing dataset size ⇒ gradual performance/generalization decline.</li>
+<li>Reducing task diversity ⇒ <strong>much sharper decline</strong>, especially in generalization.</li>
+<li>Key takeaway: <strong>Data diversity is more critical than data quantity.</strong></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="conclusions--limitations">Conclusions &amp; Limitations<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#conclusions--limitations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>RT-1 proves large-scale data absorption and strong generalization in robotics.</li>
+<li>Limitations:<!-- -->
+<ul>
+<li>Based on imitation learning ⇒ cannot surpass demonstrator performance.</li>
+<li>Generalization limited to recombinations of known concepts ⇒ fails on truly novel motions.</li>
+<li>Dataset is large but not dexterous (fine manipulation limited).</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="future-directions">Future Directions<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#future-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Enable non-experts to collect training data and prompt models for faster skill scaling.</li>
+<li>Increase environmental diversity to strengthen robustness to backgrounds/environments.</li>
+<li>Improve reaction speed and context retention via scalable attention and memory.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Brohan, A., Brown, N., Carbajal, J., Chebotar, Y., Dabis, J., Finn, C., Gopalakrishnan, K., Hausman, K., Herzog, A., &amp; Hsu, J. (2022). Rt-1: Robotics transformer for real-world control at scale. arXiv preprint arXiv:2212.06817.</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vlm" term="vlm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Do As I Can, Not As I Say Review]]></title>
         <id>https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/</id>
@@ -1755,185 +1846,5 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introduction to AI @003]]></title>
-        <id>https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/</id>
-        <link href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/"/>
-        <updated>2025-08-15T23:13:08.242Z</updated>
-        <summary type="html"><![CDATA[Introduction to AI @003]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="local-search-problem">Local Search Problem<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#local-search-problem" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>To find the state that gives the <strong>optimal/best value</strong> of the <strong>evaluation function</strong></p>
-</blockquote>
-<ul>
-<li>It can be seen as an <strong>optimization problem</strong>.</li>
-<li>a computational problem that finds the best solution (a state) that satisfies the given constraints</li>
-<li><code>evaluation function === objective function</code></li>
-<li>Only cares about the optimal solution/best state without considering the paths to reach the best state (the optimal solution)</li>
-<li>Not systematic</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="feasible-region--solution">Feasible region &amp; solution<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#feasible-region--solution" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Feasible region</strong>: the set of all possible or candidate solutions which are the solutions that satisfies the problem's constraints</li>
-<li><strong>Feasible solution</strong>: a solution in the feasible region</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="search-problem-vs-local-search-problem">Search Problem vs Local Search Problem<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#search-problem-vs-local-search-problem" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<blockquote>
-<p>Path-based vs State-based</p>
-</blockquote>
-<table><thead><tr><th>Aspects</th><th>Search Problem</th><th>Local Search Problem</th></tr></thead><tbody><tr><td>State</td><td>All possible states - state-space landscape</td><td>Range of decision variables and constraints</td></tr><tr><td>Goal</td><td>Goal state &amp; goal test</td><td>Evaluation function &amp; objective function</td></tr><tr><td>Evaluation</td><td>Measure closeness to goal - distance/fitness</td><td>Minimize cost or maximize fitness</td></tr><tr><td>Transition/Successor</td><td>Transition function</td><td>Successor function</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="discrete--continuous-optimization">Discrete &amp; Continuous Optimization<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#discrete--continuous-optimization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Discrete optimization</strong>: optimization problems where the solution space is discrete (e.g., 8 queens problem)</li>
-<li><strong>Continuous optimization</strong>: optimization problems where the solution space is continuous (e.g., real numbers, any value within a range)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="information-needed-for-local-search">Information needed for Local Search<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#information-needed-for-local-search" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>All possible states</strong>: state-space landscape</li>
-<li><strong>Transition function</strong>: To find neighbor or successor state</li>
-<li><strong>Goal state</strong></li>
-<li><strong>Objective function</strong>: A way to measure how close to the goal state</li>
-<li><strong>Start state</strong></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="search-state-space">Search state-space<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#search-state-space" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Global Maximum</strong>: A state that maximizes the objective function over the entire state space</li>
-<li><strong>Local Maximum</strong>: A state that maximizes the objective function within a small area around it.</li>
-<li><strong>Plateau</strong>: A state such that the objective function is constant in an area around it.<!-- -->
-<ul>
-<li><strong>Shoulder</strong>: A plateau that has uphill edge.</li>
-<li><strong>Flat</strong>: A plateau whose edges go downhill.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="advantages">Advantages<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#advantages" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>use little memory</li>
-<li>can often find reasonably good solution in large or infinite search spaces</li>
-<li>useful for solving pure optimization problems</li>
-<li>don't need to know the path to the solution.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="hill-climbing">Hill climbing<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#hill-climbing" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>keeps track of one current state and on each iteration moves to the neighboring state with highest value.</p>
-</blockquote>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><mo>−</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f = max(-cost(X))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">ma</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord">−</span><span class="mord mathnormal">cos</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em">X</span><span class="mclose">))</span></span></span></span></li>
-<li>Steps<!-- -->
-<ul>
-<li>Evaluate the initial stat</li>
-<li>If it is equal to the goal state, return. Otherwise, continue.</li>
-<li>Find a neighboring state</li>
-<li>Evaluate this state. If it is closer to the goal state than before, replace the initial state with this state.</li>
-<li>Repeat steps 2-4 until it reaches a goal state (local or global maximum) or runs out of time.</li>
-</ul>
-</li>
-<li>No search tree, No backtracking, Don't look ahead beyond the current state.<!-- -->
-<ul>
-<li>get stuck due to local maxima, plateaus, or ridges.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="variations-of-hc">Variations of HC<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#variations-of-hc" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Simple HC</strong>: greedy local search which expands the current state and moves on to the best neighbor.</li>
-<li><strong>Stochastic HC</strong>: choose randomly among the neighbors going uphill.</li>
-<li><strong>First-choice HC</strong>: generate random successor until one is better. Good for states with high numbers of successors.</li>
-<li><strong>Random restart</strong>: conducts a series of hill climbing searches from random initial states until a goal state is found.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="simulated-annealing">Simulated Annealing<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#simulated-annealing" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>based upon the annealing process to model the search process for finding an optimal solution to an optimisation problem</p>
-</blockquote>
-<ul>
-<li><strong>annealing schedule</strong>, <strong>temperature</strong>, <strong>energy</strong></li>
-<li>finds the <strong>minimal value</strong> of the objective function (energy function)</li>
-<li>starts with a high temperature and then gradually reduces the temperature</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>k</mi><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P = e^{-\Delta E / kT}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.888em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">Δ</span><span class="mord mathnormal mtight" style="margin-right:0.05764em">E</span><span class="mord mtight">/</span><span class="mord mathnormal mtight" style="margin-right:0.03148em">k</span><span class="mord mathnormal mtight" style="margin-right:0.13889em">T</span></span></span></span></span></span></span></span></span></span></span></span>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">\Delta E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span></span></span></span>: how bad the new state is compared to the old state</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">T</span></span></span></span>: temperature is getting lower over time</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span>: a scaling factor</li>
-</ul>
-</li>
-<li>Swap condition: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>E</mi><mo>&lt;</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta E &lt;= 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&lt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">0</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>E</mi><mi mathvariant="normal">/</mi><mi>k</mi><mi>T</mi></mrow><mo>&gt;</mo><mtext>random</mtext></mrow><annotation encoding="application/x-tex">{-\Delta E / kT} &gt; \text{random}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord">−</span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.03148em">k</span><span class="mord mathnormal" style="margin-right:0.13889em">T</span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord text"><span class="mord">random</span></span></span></span></span></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="evolutionary-algorithms">Evolutionary algorithms<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#evolutionary-algorithms" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Local beam search</li>
-<li>Stochastic beam search</li>
-<li><strong>Genetic algorithms</strong></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="characteristics">Characteristics<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#characteristics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>size of the population</li>
-<li>representation of each individual</li>
-<li>mixing number</li>
-<li>selection process for selecting the individuals who will become the parents of the next generation</li>
-<li>recombination procedure</li>
-<li>mutation rate</li>
-<li>makeup of the next generation</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="genetic-algorithm">Genetic algorithm<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#genetic-algorithm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<blockquote>
-<p>It uses operators, such reproduction, crossover and mutation, inspired by the natural evolutionary principles.</p>
-</blockquote>
-<ul>
-<li><strong>State</strong>: is represented by an individual in a population. Traditional representation is a chromosome</li>
-<li><strong>Objective function</strong>: is used to evaluate the fitness of an individual (= fitness function, 적합도 함수)</li>
-<li><strong>Successor function</strong>: consists of three operators: reproduction, crossover, and mutation</li>
-<li><strong>Solution</strong>: is found through evolution from one generation to another generation</li>
-</ul>
-<!-- -->
-<p><img decoding="async" loading="lazy" alt="Genetic Algorithm" src="https://gracefullight.dev/en/assets/images/genetic-algorithm-db5ac52fb262d55d999eff1f47439e1b.png" width="1730" height="430" class="img_f7zd"></p>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="roulette-wheel-selection">Roulette Wheel Selection<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#roulette-wheel-selection" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Compute total fitness</strong> of all individuals.<!-- -->
-<ul>
-<li>Example: A=30, B=20, C=40, D=10 → Total = 100.</li>
-</ul>
-</li>
-<li><strong>Calculate probability</strong> of each individual being selected<!-- -->
-<ul>
-<li>Formula: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mi>i</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><mrow><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi mathvariant="normal">_</mi><mi>f</mi><mi>i</mi><mi>t</mi><mi>n</mi><mi>e</mi><mi>s</mi><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(i) = \frac{fitness(i)}{total\_fitness}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.572em;vertical-align:-0.562em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight" style="margin-right:0.01968em">l</span><span class="mord mtight" style="margin-right:0.02778em">_</span><span class="mord mathnormal mtight" style="margin-right:0.10764em">f</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.485em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em">f</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">ess</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">i</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.562em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
-<ul>
-<li>A = 30/100 = 0.30</li>
-<li>B = 20/100 = 0.20</li>
-<li>C = 40/100 = 0.40</li>
-<li>D = 10/100 = 0.10</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Convert to cumulative probabilities</strong>
-<ul>
-<li>P4 = 0.10</li>
-<li>P4 + P3 = 0.50</li>
-<li>P4 + P3 + P2 = 0.90</li>
-<li>P4 + P3 + P2 + P1 = 1.00</li>
-</ul>
-</li>
-<li><strong>Generate a random number</strong> between 0 and 1.</li>
-<li>Select an individual based on the random number and cumulative probabilities.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Roulette Wheel Selection" src="https://gracefullight.dev/en/assets/images/roulette-wheel-selection-d6c6fabff2f28f3ba08382b9a4727c13.png" width="1333" height="570" class="img_f7zd"></p>
-<ul>
-<li>⚫ random = 0.07 → falls in P4 (0–0.10)</li>
-<li>🔺 random = 0.37 → falls in P3 (0.10–0.50)</li>
-<li>⬟ random = 0.82 → falls in P2 (0.50–0.90)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="applications-of-ga">Applications of GA<a href="https://gracefullight.dev/en/2025/08/16/introduction-to-ai-003/#applications-of-ga" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Parameter tuning</strong>: optimize the parameters in NN</li>
-<li><strong>Planning</strong>: economic dispatch, train timetabling</li>
-<li><strong>Design &amp; Control problems</strong>: robotic control, adaptive control systems</li>
-<li>Successful use of GA requires careful engineering of the <strong>representation</strong></li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="iai" term="iai"/>
     </entry>
 </feed>
