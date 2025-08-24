@@ -39,3 +39,4 @@ tags:
 | visuomotor | relating to the coordination of visual and motor functions | visual-motor | 시각 운동의 |
 | Preliminary | serving as a preparation or introduction | initial or preparatory | 예비의, 준비의 |
 | Owing to | because of | due to | ~때문에, ~덕분에 |
+| trajectory | the path followed by a moving object | path or course | 궤적 |
