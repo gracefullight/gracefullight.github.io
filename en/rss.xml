@@ -4,10 +4,84 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sun, 24 Aug 2025 10:33:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Aug 2025 13:40:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[RT-2, Robotic Transformer 2 Review]]></title>
+            <link>https://gracefullight.dev/en/2025/08/24/rt-2-review/</link>
+            <guid>https://gracefullight.dev/en/2025/08/24/rt-2-review/</guid>
+            <pubDate>Sun, 24 Aug 2025 13:40:19 GMT</pubDate>
+            <description><![CDATA[RT-2 review]]></description>
+            <content:encoded><![CDATA[<ul>
+<li>Trains a <strong>Vision-Language-Action (VLA)</strong> model by co-fine-tuning web-scale VLMs with robot trajectories, and <strong>treats robot actions as text tokens</strong>.</li>
+<li>Yields <strong>strong generalization</strong> and <strong>emergent capabilities</strong> (symbol understanding, reasoning, human recognition) beyond what appears in robot data.</li>
+<li>Runs in <strong>direct closed-loop control</strong>; largest evaluated model (55B) executes at ~1–3 Hz via a cloud (multi-TPU) inference setup.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="RT-2 Architecture" src="https://gracefullight.dev/en/assets/images/rt-2-architecture-dd9ff6e2cae963c14c20742089b822df.png" width="1674" height="748" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="what-rt-2-is">What RT-2 Is<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#what-rt-2-is" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>A family of VLA models (RT-2-PaLI-X, RT-2-PaLM-E) that fine-tune large VLMs on robot trajectories to output <strong>low-level actions</strong>.</li>
+<li>Target: <strong>generalizable, semantically aware</strong> manipulation policies that map images + instructions → actions end-to-end.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-recipe">Core Recipe<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#core-recipe" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Directly train</strong> open-vocabulary VQA/dialogue VLMs to <strong>output robot actions</strong> while they still solve standard vision-language tasks.</li>
+<li>Build on RT-1 protocol/data, but replace the policy backbone with a <strong>large VLM</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="action-as-language-tokenization">Action as Language (Tokenization)<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#action-as-language-tokenization" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Discretize continuous action dims (Δpos/Δrot, gripper, terminate) into <strong>256 bins</strong>; represent each dimension with an <strong>integer token</strong>.</li>
+<li><strong>PaLI-X</strong>: reuse numeric tokens (<code>≤1000</code>). <strong>PaLM-E</strong>: overwrite <strong>256 least-frequent tokens</strong> as action vocabulary (<strong>symbol tuning</strong>).</li>
+<li>Form a single output string per step (e.g., <code>terminate Δposx Δposy Δposz Δrotx Δroty Δrotz gripper</code>).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="co-fine-tuning--output-constraint">Co-Fine-Tuning &amp; Output Constraint<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#co-fine-tuning--output-constraint" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Mix robot data with original web VQA/caption data</strong> in training batches (up-weight robot samples) to prevent forgetting and improve generalization.</li>
+<li>During decoding on robot tasks, <strong>restrict sampling to valid action tokens</strong> so outputs are always executable.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="closed-loop-control--real-time-inference">Closed-Loop Control &amp; Real-Time Inference<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#closed-loop-control--real-time-inference" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>RT-2 is trained and deployed for <strong>direct closed-loop control</strong> (camera → action → camera …), not just high-level planning.</li>
+<li>For large models, inference runs via a <strong>multi-TPU cloud service</strong>; <strong>RT-2-PaLI-X-55B</strong> reaches <strong>~1–3 Hz</strong>; smaller models ~5 Hz.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="generalization--benchmarks">Generalization &amp; Benchmarks<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#generalization--benchmarks" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Matches RT-1 on seen tasks but <strong>far exceeds</strong> baselines on <strong>unseen objects/backgrounds/environments</strong> (~<strong>2×</strong> vs RT-1/MOO; up to <strong>~6×</strong> vs others).</li>
+<li>Open-source <strong>Language-Table</strong> sim: co-fine-tuned <strong>PaLI-3B</strong> outperforms baselines, showing the approach transfers to other robots/sims.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="emergent-capabilities">Emergent Capabilities<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#emergent-capabilities" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Symbol understanding</strong> (e.g., “move apple to 3 / heart / star”).</li>
+<li><strong>Reasoning</strong> (visual matching, simple math like “sum of two plus one”, <strong>multilingual</strong> commands).</li>
+<li><strong>Human recognition</strong> (e.g., “person with glasses”); none of these were present as low-level actions in robot data.</li>
+<li><strong>Chain-of-thought (CoT) variant</strong> adds a <strong>Plan</strong> step before actions → supports <strong>multi-stage semantic reasoning</strong> (e.g., pick a rock as an improvised hammer; pick an energy drink for a tired person).</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="rt-2-cot" src="https://gracefullight.dev/en/assets/images/rt-2-cot-eb2bee68ad29cc277f1a214c22064f0e.png" width="1748" height="934" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="scaling--ablations">Scaling &amp; Ablations<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#scaling--ablations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>From-scratch</strong> training (even 5B) performs poorly; <strong>fine-tuning</strong> helps; <strong>co-fine-tuning</strong> helps <strong>most</strong>.</li>
+<li><strong>Bigger models</strong> (<code>55B &gt; 5B</code>) generalize better.</li>
+<li>PaLM-E variant shows an edge on <strong>math reasoning</strong>; PaLI-X stronger on symbols/vision reasoning on average.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations">Limitations<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#limitations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Does <strong>not</strong> learn fundamentally <strong>new motor skills</strong> beyond the distribution in robot data; mainly transfers <strong>semantic/visual knowledge</strong>.</li>
+<li><strong>Compute/latency</strong> costly; real-time control can bottleneck. Limited availability of strong open VLMs and convenient FT APIs.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="future-directions-from-the-text">Future Directions (from the text)<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#future-directions-from-the-text" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Acquire new skills from <strong>human videos</strong> or richer datasets.</li>
+<li><strong>Quantization/distillation</strong> for faster/cheaper inference.</li>
+<li>More <strong>open VLMs / FT APIs</strong> to make VLA models broadly buildable.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Zitkovich, B., Yu, T., Xu, S., Xu, P., Xiao, T., Xia, F., Wu, J., Wohlhart, P., Welker, S., Wahid, A., Vuong, Q., Vanhoucke, V., Tran, H., Soricut, R., Singh, A., Singh, J., Sermanet, P., Sanketi, P. R., Salazar, G., Ryoo, M. S., Reymann, K., Rao, K., Pertsch, K., Mordatch, I., Michalewski, H., Lu, Y., Levine, S., Lee, L., Lee, T.-W. E., Leal, I., Kuang, Y., Kalashnikov, D., Julian, R., Joshi, N. J., Irpan, A., Ichter, B., Hsu, J., Herzog, A., Hausman, K., Gopalakrishnan, K., Fu, C., Florence, P., Finn, C., Dubey, K. A., Driess, D., Ding, T., Choromanski, K. M., Chen, X., Chebotar, Y., Carbajal, J., Brown, N., Brohan, A., Arenas, M. G., &amp; Han, K. (2023). RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control Proceedings of The 7th Conference on Robot Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v229/zitkovich23a.html</code></li>
+</ul>]]></content:encoded>
+            <category>vlm</category>
+        </item>
         <item>
             <title><![CDATA[PaLM-E An Embodied Multimodal Language Model Review]]></title>
             <link>https://gracefullight.dev/en/2025/08/24/palm-e-review/</link>
@@ -841,7 +915,7 @@ Apply the hyperbolic tangent :: map the result smoothly into the range <span cla
             <pubDate>Thu, 21 Aug 2025 13:04:08 GMT</pubDate>
             <description><![CDATA[Vocabulary for AI @005]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-005/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>subconsciously</td><td>In a way that is not fully aware or conscious</td><td>Without thinking about it</td><td>무의식적으로</td></tr><tr><td>interleave</td><td>to arrange or mix things by placing them alternately</td><td>to alternate or weave together</td><td>교차 배치하다, 섞다</td></tr><tr><td>induce</td><td>to cause something to happen or exist</td><td>to bring about or give rise to</td><td>유도하다, 초래하다</td></tr><tr><td>polynomial</td><td>a mathematical expression consisting of variables and coefficients, involving only the operations of addition, subtraction, multiplication, and non-negative integer exponentiation of variables</td><td>a type of equation with multiple terms</td><td>다항식</td></tr><tr><td>sinusoidal</td><td>having the shape or characteristics of a sine wave</td><td>wave-like</td><td>사인 곡선의</td></tr><tr><td>piecewise</td><td>defined or done in separate parts or segments</td><td>in segments</td><td>구간별로, 조각조각</td></tr><tr><td>impose</td><td>to force something to be accepted or put in place</td><td>to establish or apply</td><td>부과하다, 강요하다</td></tr><tr><td>dubious</td><td>hesitating or doubting</td><td>uncertain or questionable</td><td>의심스러운</td></tr><tr><td>presumably</td><td>used to convey that what is assumed is likely to be true</td><td>probably</td><td>아마, 추정컨대</td></tr><tr><td>arbitrary</td><td>based on random choice or personal whim, rather than any reason or system</td><td>random or capricious</td><td>임의의, 자의적인</td></tr><tr><td>skimpy</td><td>insufficient in quantity or quality</td><td>scanty or meager</td><td>부족한, 빈약한</td></tr><tr><td>disjunctive</td><td>relating to or denoting a logical operation that combines two or more propositions</td><td>separating or contrasting</td><td>분리적인, 대립적인</td></tr><tr><td>parity</td><td>the state or condition of being equal or equivalent</td><td>equality</td><td>동등성</td></tr><tr><td>intractable</td><td>difficult to manage or control</td><td>stubborn or unmanageable</td><td>다루기 힘든</td></tr><tr><td>at someone's disposal</td><td>available to be used by someone</td><td>at their command</td><td>~가 다룰 수 있는</td></tr><tr><td>deviate</td><td>to depart from an established course or norm</td><td>to diverge or stray</td><td>벗어나다</td></tr><tr><td>asymptotic</td><td>approaching a limit as closely as possible</td><td>nearing a boundary</td><td>점근적인</td></tr><tr><td>univariate</td><td>involving only one variable</td><td>single-variable</td><td>단일 변수의</td></tr><tr><td>heterogeneous</td><td>composed of different or diverse elements</td><td>mixed or varied</td><td>이질적인</td></tr><tr><td>derivation</td><td>the process of obtaining something from a source or origin</td><td>extraction</td><td>유도, 파생</td></tr><tr><td>consolidate</td><td>to combine or unite into a single entity</td><td>to merge or strengthen</td><td>통합하다, 강화하다</td></tr><tr><td>asymptotically</td><td>in a manner that approaches a limit</td><td>nearing a boundary</td><td>점근적으로</td></tr><tr><td>preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>harness</td><td>to make use of something effectively</td><td>to utilize</td><td>활용하다</td></tr><tr><td>repertoire</td><td>a collection or set of skills, abilities, or resources</td><td>a range or inventory</td><td>레퍼토리</td></tr><tr><td>visuomotor</td><td>relating to the coordination of visual and motor functions</td><td>visual-motor</td><td>시각 운동의</td></tr><tr><td>Preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>Owing to</td><td>because of</td><td>due to</td><td>~때문에, ~덕분에</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>subconsciously</td><td>In a way that is not fully aware or conscious</td><td>Without thinking about it</td><td>무의식적으로</td></tr><tr><td>interleave</td><td>to arrange or mix things by placing them alternately</td><td>to alternate or weave together</td><td>교차 배치하다, 섞다</td></tr><tr><td>induce</td><td>to cause something to happen or exist</td><td>to bring about or give rise to</td><td>유도하다, 초래하다</td></tr><tr><td>polynomial</td><td>a mathematical expression consisting of variables and coefficients, involving only the operations of addition, subtraction, multiplication, and non-negative integer exponentiation of variables</td><td>a type of equation with multiple terms</td><td>다항식</td></tr><tr><td>sinusoidal</td><td>having the shape or characteristics of a sine wave</td><td>wave-like</td><td>사인 곡선의</td></tr><tr><td>piecewise</td><td>defined or done in separate parts or segments</td><td>in segments</td><td>구간별로, 조각조각</td></tr><tr><td>impose</td><td>to force something to be accepted or put in place</td><td>to establish or apply</td><td>부과하다, 강요하다</td></tr><tr><td>dubious</td><td>hesitating or doubting</td><td>uncertain or questionable</td><td>의심스러운</td></tr><tr><td>presumably</td><td>used to convey that what is assumed is likely to be true</td><td>probably</td><td>아마, 추정컨대</td></tr><tr><td>arbitrary</td><td>based on random choice or personal whim, rather than any reason or system</td><td>random or capricious</td><td>임의의, 자의적인</td></tr><tr><td>skimpy</td><td>insufficient in quantity or quality</td><td>scanty or meager</td><td>부족한, 빈약한</td></tr><tr><td>disjunctive</td><td>relating to or denoting a logical operation that combines two or more propositions</td><td>separating or contrasting</td><td>분리적인, 대립적인</td></tr><tr><td>parity</td><td>the state or condition of being equal or equivalent</td><td>equality</td><td>동등성</td></tr><tr><td>intractable</td><td>difficult to manage or control</td><td>stubborn or unmanageable</td><td>다루기 힘든</td></tr><tr><td>at someone's disposal</td><td>available to be used by someone</td><td>at their command</td><td>~가 다룰 수 있는</td></tr><tr><td>deviate</td><td>to depart from an established course or norm</td><td>to diverge or stray</td><td>벗어나다</td></tr><tr><td>asymptotic</td><td>approaching a limit as closely as possible</td><td>nearing a boundary</td><td>점근적인</td></tr><tr><td>univariate</td><td>involving only one variable</td><td>single-variable</td><td>단일 변수의</td></tr><tr><td>heterogeneous</td><td>composed of different or diverse elements</td><td>mixed or varied</td><td>이질적인</td></tr><tr><td>derivation</td><td>the process of obtaining something from a source or origin</td><td>extraction</td><td>유도, 파생</td></tr><tr><td>consolidate</td><td>to combine or unite into a single entity</td><td>to merge or strengthen</td><td>통합하다, 강화하다</td></tr><tr><td>asymptotically</td><td>in a manner that approaches a limit</td><td>nearing a boundary</td><td>점근적으로</td></tr><tr><td>preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>harness</td><td>to make use of something effectively</td><td>to utilize</td><td>활용하다</td></tr><tr><td>repertoire</td><td>a collection or set of skills, abilities, or resources</td><td>a range or inventory</td><td>레퍼토리</td></tr><tr><td>visuomotor</td><td>relating to the coordination of visual and motor functions</td><td>visual-motor</td><td>시각 운동의</td></tr><tr><td>Preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>Owing to</td><td>because of</td><td>due to</td><td>~때문에, ~덕분에</td></tr><tr><td>trajectory</td><td>the path followed by a moving object</td><td>path or course</td><td>궤적</td></tr></tbody></table>]]></content:encoded>
             <category>vocab</category>
         </item>
         <item>
@@ -1121,251 +1195,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <li>아직 못 찾음</li>
 </ul>]]></content:encoded>
             <category>zotero</category>
-        </item>
-        <item>
-            <title><![CDATA[Trustworthiness in Vision-Language Models Review]]></title>
-            <link>https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/</link>
-            <guid>https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/</guid>
-            <pubDate>Sun, 17 Aug 2025 00:02:41 GMT</pubDate>
-            <description><![CDATA[Trustworthiness in Vision-Language Models Review]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#overview" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Mitigates exposure of private data, produces harmful outputs, or is vulnerable to attacks.</li>
-<li>SOTA models: LLaVA, Flamingo, GPT-4</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="privacy">Privacy<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-issues">Privacy Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>risk escalates significantly with relevant images as optimizing in the pixel domain is easier than in text</li>
-<li>can unintentionally memorize sensitive data, leading to leaks without knowledge of the model’s specifics</li>
-<li>Overfitting may also cause retention of sensitive attributes during inference</li>
-<li>gradient-based and backdoor attacks further jeopardize VLM privacy with open-source data</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-mitigation-methods">Privacy Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>New metrics have been created to assess a model’s ability to reproduce training instances and facilitate cross-model comparisons</li>
-<li>models utilizing multiple modalities provide better privacy</li>
-<li>safety modules can be integrated to boost resilience against violations</li>
-<li>adversarial training can enhance privacy but risks reducing accuracy</li>
-<li>New architecture: differentially private CLIP model</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="privacy-future-research-directions">Privacy Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#privacy-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Cryptography-based Privacy Preservation<!-- -->
-<ul>
-<li>Secure multi-party computation (SMPC): divides secret information into shares among multiple parties, ensuring that individual shares reveal nothing unless combined</li>
-<li>Homomorphic encryption (HE): allows computations on encrypted data without decryption, and has also been utilized for privacy preservation in transformers</li>
-</ul>
-</li>
-<li>Federated Learning<!-- -->
-<ul>
-<li>enhances privacy in vision-language models (VLMs) by localizing model training, which protects training data from leakage.</li>
-<li>challenges such as communication overhead among devices and statistical heterogeneity from diverse data distributions</li>
-</ul>
-</li>
-<li>Data Manipulation and Finetunning<!-- -->
-<ul>
-<li>Data pseudonymization: substitutes sensitive information with synthetic alternatives.</li>
-<li>Data Sanitization: removes duplicates to reduce memorization and privacy risks.</li>
-<li>knowledge sanitization-fine-tuning: provide safe responses when leakage risks arise.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias">Fairness and Bias<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias-issues">Fairness and Bias Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Bias from training data<!-- -->
-<ul>
-<li>disproportionately features men and lighter-skinned individuals</li>
-<li>outdated vocabulary and imbalanced representation</li>
-<li>clinical models may favor certain patient groups based on gender, language, etc.</li>
-</ul>
-</li>
-<li>Bias from Model<!-- -->
-<ul>
-<li>Gender biases</li>
-<li>misclassification of race-related elements and biased outputs</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-and-bias-mitigation-methods">Fairness and Bias Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-and-bias-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>New Datasets and Benchmarks<!-- -->
-<ul>
-<li>Harvard-FairVLMed, PATA, and BOLD enhance evaluations but often lack the scale of established benchmarks.</li>
-<li>create synthetic datasets to improve fairness assessments<!-- -->
-<ul>
-<li>gender-balanced dataset generated with DALL-E-3 and another consisting of gender-swapped images</li>
-<li>counterfactual image-text pairs that highlight biases in datasets like COCO Captions</li>
-</ul>
-</li>
-<li>new metrics<!-- -->
-<ul>
-<li>gender polarity</li>
-<li>bias distance in embeddings</li>
-</ul>
-</li>
-<li>human evaluation</li>
-</ul>
-</li>
-<li>De-biasing<!-- -->
-<ul>
-<li>adjust model instructions and architectures for improved fairness</li>
-<li>detecting biased prompts in pre-trained models</li>
-<li>Post-hoc Bias Mitigation (PBM) effectively reduce bias in image retrieval</li>
-<li>Re-sampling underperforming clusters can enhance fairness</li>
-<li>modification of facial features also mitigate biases</li>
-<li>self-debiasing reduces biased text generation, especially when paired with other methods</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="fairness-future-research-directions">Fairness Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#fairness-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Optimized De-biasing<!-- -->
-<ul>
-<li>Additive residual learning: for fairer image representations.</li>
-<li>Calibration loss: retain semantically similar embeddings.</li>
-<li>Counterfactual inference framework: help models learn correct responses through cause and effect.</li>
-<li>Adversarial classifiers: predict image attributes from visual-textual similarities can be combined with instruction tuning to reduce bias.</li>
-</ul>
-</li>
-<li>Disentangled Representation Learning (DRL): simplifies complex data by breaking it in to independent feature groups, improving model predictions.<!-- -->
-<ul>
-<li>Traditional DRL<!-- -->
-<ul>
-<li>Variational autoencoders (VAEs) for feature encoding based on impact</li>
-<li>Generative adversarial networks (GANs) for separation.</li>
-</ul>
-</li>
-<li>Attention in text encoders can be adjusted for fairer outputs.</li>
-<li>challenges: varying definitions of "disentanglement", ensuring fairness.</li>
-</ul>
-</li>
-<li>Human-in-the-Loop (HITL): integrating human intervention into their training to improve precision and fairness<!-- -->
-<ul>
-<li>active learning</li>
-<li>reinforcement learning with human feedback</li>
-<li>explainable AI</li>
-<li>challenges: human bias, finance, and ethical and legal issues persist</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="robustness">Robustness<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-issues">Robustness Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Out-of-Distribution (OOD) Robustness<!-- -->
-<ul>
-<li>ChatGPT excels in adversarial tasks but struggles with OOD robustness and informal medical responses</li>
-<li>MLLMs often fail to generalize beyond training domains due to mapping issues</li>
-<li>vision-language models face difficulties with open-domain concepts, especially when overfitting during fine-tuning</li>
-<li>Large pre-trained image classifiers show initial robustness, which diminishes over time</li>
-<li>Current visual question answering (VQA) models are limited to specific benchmarks, hindering generalization to OOD datasets</li>
-<li>fine-tuning may impair model calibration in OOD contexts.</li>
-</ul>
-</li>
-<li>Adversarial Attack Robustness<!-- -->
-<ul>
-<li>Studies indicate that open-sourced VLMs show performance gaps in red teaming tasks, highlighting the need for improved safety and security.</li>
-<li>misalignment between language and vision modalities creates a "modality gap", complicating adversarial vulnerability.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-mitigation-methods">Robustness Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Improving Out-of-Distribution Robustness<!-- -->
-<ul>
-<li>enhance OOD detection and generalization. A simple maximum logit detector has been shown to outperform complex methods for anomaly segmentation</li>
-<li>In-context learning (ICL) can also improve multimodal generalization</li>
-<li>A fine-tuned CLIP excels in unsupervised OOD detection</li>
-<li>The OGEN method synthesizes OOD features</li>
-<li>Maximum Concept Matching aligns visual and textual features, and anchor-based finetuning leads to better domain shifts</li>
-</ul>
-</li>
-<li>Defense Against Adversarial Attacks<!-- -->
-<ul>
-<li>VILLA is a two-stage framework for adversarial training of VLMs, featuring task-agnostic <strong>adversarial pre-training</strong> and <strong>task-specific finetuning</strong>
-<ul>
-<li>conducts adversarial training in the embedding space rather than on raw image pixels and text tokens, improving the model’s resilience against adversarial examples</li>
-<li>SOTA performance across various tasks</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="robustness-future-research-directions">Robustness Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#robustness-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Data Augmentation<!-- -->
-<ul>
-<li>MixGen: a data augmentation method that generates new image-text pairs by interpolating images and concatenating text to preserve semantics.</li>
-<li>creating synthetic images involves extracting text prompts via an image captioning model for use in text-to-image diffusion, then mixing these with real datasets.</li>
-<li>bimodal augmentation (BiAug): decouples objects and attributes to synthesize vision-language examples and hard negatives, using LLMs and an object detector to generate detailed descriptions and inpaint corresponding images.</li>
-</ul>
-</li>
-<li>Improved Cross-Modal Alignment<!-- -->
-<ul>
-<li>Sharing learnable parameters</li>
-<li>Applying bidirectional constraints</li>
-<li>Adjusting cross-modal projections</li>
-</ul>
-</li>
-<li>challenges: addressing the modality gap, which impacts robustness to OOD data and adversarial examples</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="safety">Safety<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-issues">Safety Issues<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-issues" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Toxicity<!-- -->
-<ul>
-<li>LAION-400M: contains problematic content, including explicit materials and harmful stereotypes</li>
-<li>Advanced models like GeminiProVision and GPT-4V show inherent biases</li>
-<li>Assigning personas to ChatGPT can increase toxicity and reinforce harmful stereotypes</li>
-</ul>
-</li>
-<li>Jailbreaking Risk<!-- -->
-<ul>
-<li>Perturbation can be performed effectively, while FigStep converts harmful content into images with an 82.5% attack rate across multiple VLMs</li>
-<li>replaces captions with malicious prompts, enabling jailbreaks.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-mitigation-methods">Safety Mitigation Methods<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-mitigation-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li><strong>Safety Fine-Tuning</strong>
-<ul>
-<li>VLGuard</li>
-<li>fine-tuned on synthetic data, reducing sensitivity to NSFW inputs and enhancing performance in cross-modal tasks</li>
-</ul>
-</li>
-<li>Other approach<!-- -->
-<ul>
-<li>Reinforce-Detoxify: uses reinforcement learning to mitigate toxicity and bias in transformer models</li>
-<li>simple mitigations improve automatic scores, these methods risk over-filtering marginalized texts and create discrepancies between automatic and human judgments</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="safety-future-research-directions">Safety Future Research Directions<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#safety-future-research-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Context Awareness<!-- -->
-<ul>
-<li>integrating Chain-of-Thought for improved reasoning can enhance CAER tasks with Large VLMs.</li>
-<li>Dual-Aligned Prompt Tuning: combines explicit context from pre-trained LLMs with implicit modeling to create more context-aware prompts</li>
-<li>Visual In-Context Learning: optimizes image retrieval and summarization to enhance task-specific interactions.</li>
-</ul>
-</li>
-<li>Automated Red Teaming (ART)<!-- -->
-<ul>
-<li>RTVLM: a dataset that benchmarks VLMs across faithfulness, privacy, safety, and fairness</li>
-<li>Arondight: automates multi-modal jailbreak attacks using reinforcement learning and uncovers significant security vulnerabilities</li>
-<li>GPT-4 and GPT-4V are more robust against jailbreaks than open-source models</li>
-<li>limited transferability of visual jailbreak methods compared to textual ones</li>
-<li>connects unsafe outputs to prompts, improving the detection of vulnerabilities in text-to-image models</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/17/trustworthiness-in-vision-language-models-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Vu, K., &amp; Lai, P. (2025). Trustworthiness in&nbsp;Vision-Language Models. In J. Kertesz, B. Li, T. Supnithi, &amp; A. Takhom, Computational Data and Social Networks Singapore.</li>
-</ul>]]></content:encoded>
-            <category>vlm</category>
         </item>
     </channel>
 </rss>
