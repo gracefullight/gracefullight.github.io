@@ -19,6 +19,8 @@ tags:
 
 - A family of VLA models (RT-2-PaLI-X, RT-2-PaLM-E) that fine-tune large VLMs on robot trajectories to output **low-level actions**.
 - Target: **generalizable, semantically aware** manipulation policies that map images + instructions → actions end-to-end.
+- RT-2 does **not rely on a restricted 2D action space or calibrated cameras**.
+- The **unified output space** lets language and action tokens share the same model weights, without action-only layers.
 
 ## Core Recipe
 
