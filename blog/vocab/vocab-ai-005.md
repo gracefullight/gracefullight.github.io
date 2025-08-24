@@ -35,3 +35,7 @@ tags:
 | asymptotically | in a manner that approaches a limit | nearing a boundary | 점근적으로 |
 | preliminary | serving as a preparation or introduction | initial or preparatory | 예비의, 준비의 |
 | harness | to make use of something effectively | to utilize | 활용하다 |
+| repertoire | a collection or set of skills, abilities, or resources | a range or inventory | 레퍼토리 |
+| visuomotor | relating to the coordination of visual and motor functions | visual-motor | 시각 운동의 |
+| Preliminary | serving as a preparation or introduction | initial or preparatory | 예비의, 준비의 |
+| Owing to | because of | due to | ~때문에, ~덕분에 |
