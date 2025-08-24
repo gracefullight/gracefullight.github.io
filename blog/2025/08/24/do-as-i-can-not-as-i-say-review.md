@@ -7,7 +7,11 @@ tags:
   - vlm
 ---
 
-# SayCan
+## Say Can
+
+- The core of SayCan is using an LLM to decompose high-level instructions into low-level skills, and reinforcement-learned affordance value functions to evaluate whether each skill is feasible in the current environment.
+- The Say × Can structure is modular: different LLMs or affordance models can be swapped in, but each module’s inherent biases are carried into the system.
+- To mitigate limitations, loop-based strategies are essential — CoT and RLHF provide feedback loops for LLMs, while closed-loop feedback enables affordance functions to adapt during execution.
 
 ## Motivation (Why LLMs alone fall short)
 
