@@ -10,8 +10,8 @@ tags:
 
 ## RT-1
 
-- RT-1 discretizes robot actions into 256-bin tokens, creating a shared "action language" across robots.  
-- It absorbs heterogeneous data from simulation and other robot morphologies without losing performance.  
+- RT-1 discretizes robot actions into 256-bin tokens, creating a shared "action language" across robots.
+- It absorbs heterogeneous data from simulation and other robot morphologies without losing performance.
 - It generalizes robustly to new tasks, environments, and long-horizon scenarios (up to 50 steps).
 
 ![RT-1 Architecture](./rt-1-architecture.png)
@@ -24,8 +24,8 @@ tags:
 
 ## Model & Architecture
 
-- RT-1 architecture: EfficientNet + FiLM layers + TokenLearner for compact vision-language tokenization.  
-- Action tokenization: 11 action dimensions (7 arm, 3 base, 1 mode) discretized into 256 bins each.  
+- RT-1 architecture: EfficientNet + FiLM layers + TokenLearner for compact vision-language tokenization.
+- Action tokenization: 11 action dimensions (7 arm, 3 base, 1 mode) discretized into 256 bins each.
 - This abstraction converts continuous robot actions into a discrete "token language", enabling cross-domain and cross-robot transfer.  
 - Real-time feasibility: optimized design achieves ~3Hz inference speed suitable for real-world control.  
 
