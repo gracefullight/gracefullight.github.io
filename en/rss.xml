@@ -14,7 +14,13 @@
             <guid>https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/</guid>
             <pubDate>Sun, 24 Aug 2025 02:04:59 GMT</pubDate>
             <description><![CDATA[Do As I Can, Not As I Say Review]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation-why-llms-alone-fall-short">Motivation (Why LLMs alone fall short)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#motivation-why-llms-alone-fall-short" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="say-can">Say Can<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#say-can" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>The core of SayCan is using an LLM to decompose high-level instructions into low-level skills, and reinforcement-learned affordance value functions to evaluate whether each skill is feasible in the current environment.</li>
+<li>The Say × Can structure is modular: different LLMs or affordance models can be swapped in, but each module’s inherent biases are carried into the system.</li>
+<li>To mitigate limitations, loop-based strategies are essential — CoT and RLHF provide feedback loops for LLMs, while closed-loop feedback enables affordance functions to adapt during execution.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation-why-llms-alone-fall-short">Motivation (Why LLMs alone fall short)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#motivation-why-llms-alone-fall-short" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li><strong>LLMs lack embodiment.</strong> They haven’t acted in the physical world, so using them for decision-making on a specific robot is unreliable.</li>
 <li><strong>LLMs don’t know robot’s abilities or state.</strong> They may split instructions into subtasks, but without context of capabilities and environment, plans can be irrelevant.</li>
