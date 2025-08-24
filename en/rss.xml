@@ -4,10 +4,119 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Fri, 22 Aug 2025 07:30:22 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Aug 2025 02:04:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Do As I Can, Not As I Say Review]]></title>
+            <link>https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/</link>
+            <guid>https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/</guid>
+            <pubDate>Sun, 24 Aug 2025 02:04:59 GMT</pubDate>
+            <description><![CDATA[Do As I Can, Not As I Say Review]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation-why-llms-alone-fall-short">Motivation (Why LLMs alone fall short)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#motivation-why-llms-alone-fall-short" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>LLMs lack embodiment.</strong> They haven’t acted in the physical world, so using them for decision-making on a specific robot is unreliable.</li>
+<li><strong>LLMs don’t know robot’s abilities or state.</strong> They may split instructions into subtasks, but without context of capabilities and environment, plans can be irrelevant.</li>
+<li><strong>Prompting alone isn’t enough.</strong> Structured prompts help, but they don’t guarantee admissible or executable steps.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-proposal-what-saycan-adds">Core Proposal (What SayCan adds)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#core-proposal-what-saycan-adds" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Ground with pretrained skills.</strong> Constrain LLM to propose actions that the robot can actually perform in context.</li>
+<li><strong>Say × Can factorization.</strong>
+<ul>
+<li><strong>Say (task-grounding):</strong> LLM estimates relevance of each skill to the instruction.</li>
+<li><strong>Can (world-grounding):</strong> Affordance functions estimate probability of success from current state.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="probabilistic-formulation">Probabilistic Formulation<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#probabilistic-formulation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Two probabilities multiplied:</strong>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(\ell_\pi|i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span>: LLM score of relevance.</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi>c</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>s</mi><mo separator="true">,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(c_\pi|s,\ell_\pi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>: affordance score of success.</li>
+<li>Select: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>=</mo><mi>arg</mi><mo>⁡</mo><mi>max</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">(</mo><msub><mi>c</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>s</mi><mo separator="true">,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mo stretchy="false">)</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">(</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi = \arg\max p(c_\pi|s,\ell_\pi)\,p(\ell_\pi|i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mop">ar<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="planning-procedure">Planning Procedure<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#planning-procedure" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Planning is structured as a <strong>dialog</strong>: user gives high-level instruction, LLM produces a step sequence, loop until "done."</li>
+<li>Benefit: <strong>Interpretability</strong>—scores provide transparency.</li>
+<li>Caveat: Without affordances, chosen steps may be irrelevant to the current scene.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="affordances-via-rl">Affordances via RL<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#affordances-via-rl" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Affordance = value function.</strong> In sparse reward settings, value ≈ success probability.</li>
+<li>TD RL and MDP formalism used to learn <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>π</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Q_\pi(s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="implementation">Implementation<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#implementation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Skill training:</strong>
+<ul>
+<li>BC-Z (behavioral cloning) and MT-Opt (reinforcement learning).</li>
+<li>Multi-task BC/RL amortizes training cost.</li>
+</ul>
+</li>
+<li><strong>Language conditioning:</strong> Pretrained sentence encoder frozen, text embeddings as input.</li>
+<li><strong>Action space:</strong> 6-DoF end-effector, gripper open/close, base x-y &amp; yaw deltas, terminate.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="metrics">Metrics<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#metrics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Plan success rate:</strong> 2/3 human raters agree that the plan is valid.</li>
+<li><strong>Execution success rate:</strong> 2/3 raters agree robot achieved the task.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="key-results">Key Results<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#key-results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Grounding nearly doubles performance</strong> vs non-grounded baselines.</li>
+<li><strong>Understands sequence order</strong> (approach → pick → bring).</li>
+<li><strong>Failures:</strong> Long-horizon tasks (early termination), negation, ambiguous references.</li>
+<li><strong>Error split:</strong> ~65% LLM, 35% affordance.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ablations">Ablations<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#ablations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Remove LLM (task-grounding):</strong>
+<ul>
+<li>BC-NL: 0% all tasks.</li>
+<li>BC-USE: 60% on single primitives, 0% otherwise.</li>
+</ul>
+</li>
+<li><strong>Remove affordances (world-grounding):</strong>
+<ul>
+<li>No-VF: 67%, Generative: 74% vs 84% (SayCan).</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="scaling--models">Scaling &amp; Models<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#scaling--models" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>PaLM &gt; FLAN.</strong> PaLM-SayCan achieves 84% plan / 74% execute.</li>
+<li>Stronger LMs improve robotics performance.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="extensibility">Extensibility<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#extensibility" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Add new skills easily:</strong> register skill, affordance, prompt example.</li>
+<li><strong>Chain-of-Thought:</strong> Add "Explanation" → helps with negation and reasoning-heavy queries.</li>
+<li><strong>Multilingual:</strong> Almost no performance drop (English, Chinese, French, Spanish).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="open-source-variant">Open-Source Variant<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#open-source-variant" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>CLIPort for pick-and-place.</li>
+<li>Affordances approximated by ViLD open-vocabulary object detector.</li>
+<li>GPT-3 as language model.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--future-work">Limitations &amp; Future Work<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#limitations--future-work" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Limits:</strong> Inherits LLM biases; skill library is bottleneck; hard to react to skill failures.</li>
+<li><strong>Closed-loop extensions:</strong> Huang et al. use environment feedback + inner monologue for replanning.</li>
+<li><strong>Future directions:</strong> Expand/robustify skills, explore new grounding sources (non-robotic), test if natural language is the right ontology, combine planning + language, use LMs for policy pretraining.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Ahn, M., Brohan, A., Brown, N., Chebotar, Y., Cortes, O., David, B., Finn, C., Fu, C., Gopalakrishnan, K., Hausman, K., Herzog, A., Ho, D., Hsu, J., Ibarz, J., Ichter, B., Irpan, A., Jang, E., Ruano, R. J., Jeffrey, K., Jesmonth, S., Joshi, N. J., Julian, R., Kalashnikov, D., Kuang, Y., Lee, K.-H., Levine, S., Lu, Y., Luu, L., Parada, C., Pastor, P., Quiambao, J., Rao, K., Rettinghouse, J., Reyes, D., Sermanet, P., Sievers, N., Tan, C., Toshev, A., Vanhoucke, V., Xia, F., Xiao, T., Xu, P., Xu, S., Yan, M., &amp; Zeng, A. (2022). Do As I Can, Not As I Say: Grounding Language in Robotic Affordances. arXiv. <code>http://arxiv.org/abs/2204.01691</code></li>
+</ul>]]></content:encoded>
+            <category>vlm</category>
+        </item>
         <item>
             <title><![CDATA[Fundamentals of data analytics @004]]></title>
             <link>https://gracefullight.dev/en/2025/08/22/fundamentals-of-data-analytics-004/</link>
@@ -567,7 +676,7 @@ Apply the hyperbolic tangent :: map the result smoothly into the range <span cla
             <pubDate>Thu, 21 Aug 2025 13:04:08 GMT</pubDate>
             <description><![CDATA[Vocabulary for AI @005]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-005/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>subconsciously</td><td>In a way that is not fully aware or conscious</td><td>Without thinking about it</td><td>무의식적으로</td></tr><tr><td>interleave</td><td>to arrange or mix things by placing them alternately</td><td>to alternate or weave together</td><td>교차 배치하다, 섞다</td></tr><tr><td>induce</td><td>to cause something to happen or exist</td><td>to bring about or give rise to</td><td>유도하다, 초래하다</td></tr><tr><td>polynomial</td><td>a mathematical expression consisting of variables and coefficients, involving only the operations of addition, subtraction, multiplication, and non-negative integer exponentiation of variables</td><td>a type of equation with multiple terms</td><td>다항식</td></tr><tr><td>sinusoidal</td><td>having the shape or characteristics of a sine wave</td><td>wave-like</td><td>사인 곡선의</td></tr><tr><td>piecewise</td><td>defined or done in separate parts or segments</td><td>in segments</td><td>구간별로, 조각조각</td></tr><tr><td>impose</td><td>to force something to be accepted or put in place</td><td>to establish or apply</td><td>부과하다, 강요하다</td></tr><tr><td>dubious</td><td>hesitating or doubting</td><td>uncertain or questionable</td><td>의심스러운</td></tr><tr><td>presumably</td><td>used to convey that what is assumed is likely to be true</td><td>probably</td><td>아마, 추정컨대</td></tr><tr><td>arbitrary</td><td>based on random choice or personal whim, rather than any reason or system</td><td>random or capricious</td><td>임의의, 자의적인</td></tr><tr><td>skimpy</td><td>insufficient in quantity or quality</td><td>scanty or meager</td><td>부족한, 빈약한</td></tr><tr><td>disjunctive</td><td>relating to or denoting a logical operation that combines two or more propositions</td><td>separating or contrasting</td><td>분리적인, 대립적인</td></tr><tr><td>parity</td><td>the state or condition of being equal or equivalent</td><td>equality</td><td>동등성</td></tr><tr><td>intractable</td><td>difficult to manage or control</td><td>stubborn or unmanageable</td><td>다루기 힘든</td></tr><tr><td>at someone's disposal</td><td>available to be used by someone</td><td>at their command</td><td>~가 다룰 수 있는</td></tr><tr><td>deviate</td><td>to depart from an established course or norm</td><td>to diverge or stray</td><td>벗어나다</td></tr><tr><td>asymptotic</td><td>approaching a limit as closely as possible</td><td>nearing a boundary</td><td>점근적인</td></tr><tr><td>univariate</td><td>involving only one variable</td><td>single-variable</td><td>단일 변수의</td></tr><tr><td>heterogeneous</td><td>composed of different or diverse elements</td><td>mixed or varied</td><td>이질적인</td></tr><tr><td>derivation</td><td>the process of obtaining something from a source or origin</td><td>extraction</td><td>유도, 파생</td></tr><tr><td>consolidate</td><td>to combine or unite into a single entity</td><td>to merge or strengthen</td><td>통합하다, 강화하다</td></tr><tr><td>asymptotically</td><td>in a manner that approaches a limit</td><td>nearing a boundary</td><td>점근적으로</td></tr><tr><td>preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>harness</td><td>to make use of something effectively</td><td>to utilize</td><td>활용하다</td></tr></tbody></table>]]></content:encoded>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>subconsciously</td><td>In a way that is not fully aware or conscious</td><td>Without thinking about it</td><td>무의식적으로</td></tr><tr><td>interleave</td><td>to arrange or mix things by placing them alternately</td><td>to alternate or weave together</td><td>교차 배치하다, 섞다</td></tr><tr><td>induce</td><td>to cause something to happen or exist</td><td>to bring about or give rise to</td><td>유도하다, 초래하다</td></tr><tr><td>polynomial</td><td>a mathematical expression consisting of variables and coefficients, involving only the operations of addition, subtraction, multiplication, and non-negative integer exponentiation of variables</td><td>a type of equation with multiple terms</td><td>다항식</td></tr><tr><td>sinusoidal</td><td>having the shape or characteristics of a sine wave</td><td>wave-like</td><td>사인 곡선의</td></tr><tr><td>piecewise</td><td>defined or done in separate parts or segments</td><td>in segments</td><td>구간별로, 조각조각</td></tr><tr><td>impose</td><td>to force something to be accepted or put in place</td><td>to establish or apply</td><td>부과하다, 강요하다</td></tr><tr><td>dubious</td><td>hesitating or doubting</td><td>uncertain or questionable</td><td>의심스러운</td></tr><tr><td>presumably</td><td>used to convey that what is assumed is likely to be true</td><td>probably</td><td>아마, 추정컨대</td></tr><tr><td>arbitrary</td><td>based on random choice or personal whim, rather than any reason or system</td><td>random or capricious</td><td>임의의, 자의적인</td></tr><tr><td>skimpy</td><td>insufficient in quantity or quality</td><td>scanty or meager</td><td>부족한, 빈약한</td></tr><tr><td>disjunctive</td><td>relating to or denoting a logical operation that combines two or more propositions</td><td>separating or contrasting</td><td>분리적인, 대립적인</td></tr><tr><td>parity</td><td>the state or condition of being equal or equivalent</td><td>equality</td><td>동등성</td></tr><tr><td>intractable</td><td>difficult to manage or control</td><td>stubborn or unmanageable</td><td>다루기 힘든</td></tr><tr><td>at someone's disposal</td><td>available to be used by someone</td><td>at their command</td><td>~가 다룰 수 있는</td></tr><tr><td>deviate</td><td>to depart from an established course or norm</td><td>to diverge or stray</td><td>벗어나다</td></tr><tr><td>asymptotic</td><td>approaching a limit as closely as possible</td><td>nearing a boundary</td><td>점근적인</td></tr><tr><td>univariate</td><td>involving only one variable</td><td>single-variable</td><td>단일 변수의</td></tr><tr><td>heterogeneous</td><td>composed of different or diverse elements</td><td>mixed or varied</td><td>이질적인</td></tr><tr><td>derivation</td><td>the process of obtaining something from a source or origin</td><td>extraction</td><td>유도, 파생</td></tr><tr><td>consolidate</td><td>to combine or unite into a single entity</td><td>to merge or strengthen</td><td>통합하다, 강화하다</td></tr><tr><td>asymptotically</td><td>in a manner that approaches a limit</td><td>nearing a boundary</td><td>점근적으로</td></tr><tr><td>preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>harness</td><td>to make use of something effectively</td><td>to utilize</td><td>활용하다</td></tr><tr><td>repertoire</td><td>a collection or set of skills, abilities, or resources</td><td>a range or inventory</td><td>레퍼토리</td></tr><tr><td>visuomotor</td><td>relating to the coordination of visual and motor functions</td><td>visual-motor</td><td>시각 운동의</td></tr><tr><td>Preliminary</td><td>serving as a preparation or introduction</td><td>initial or preparatory</td><td>예비의, 준비의</td></tr><tr><td>Owing to</td><td>because of</td><td>due to</td><td>~때문에, ~덕분에</td></tr></tbody></table>]]></content:encoded>
             <category>vocab</category>
         </item>
         <item>
@@ -1781,197 +1890,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <li>Successful use of GA requires careful engineering of the <strong>representation</strong></li>
 </ul>]]></content:encoded>
             <category>iai</category>
-        </item>
-        <item>
-            <title><![CDATA[Fundamentals of data analytics @003]]></title>
-            <link>https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/</link>
-            <guid>https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/</guid>
-            <pubDate>Thu, 14 Aug 2025 06:13:20 GMT</pubDate>
-            <description><![CDATA[Fundamentals of data analytics @003]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="crisp-dm">CRISP-DM<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#crisp-dm" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>CRISP-DM (Cross-Industry Standard Process for Data Mining)</p>
-</blockquote>
-<ol>
-<li>Business understanding</li>
-<li>Data understanding</li>
-<li>Data preparation</li>
-<li>Modeling</li>
-<li>Evaluation</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="business-understanding">Business understanding<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#business-understanding" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Determine business objectives</li>
-<li>Assess situation</li>
-<li>Determine data mining goals</li>
-<li>Produce project plan</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-understanding">Data understanding<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#data-understanding" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Collect initial data</li>
-<li>Describe data</li>
-<li>Explore data</li>
-<li>Verify data quality</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-preperation">Data preperation<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#data-preperation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Select data</li>
-<li>Clean data</li>
-<li>Consturct data</li>
-<li>Integrate data</li>
-<li>Format data</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="modeling">Modeling<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#modeling" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Select modeling technique</li>
-<li>Generate test design</li>
-<li>Build model</li>
-<li>Assess model</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="evaluation">Evaluation<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#evaluation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Evaludate results</li>
-<li>Review process</li>
-<li>Determine next steps</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="deployment">Deployment<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#deployment" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Plan development</li>
-<li>Plan monitoring &amp; maintenance</li>
-<li>Produce final report</li>
-<li>Review project</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="instance--attributes">Instance &amp; Attributes<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#instance--attributes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Instance: the terms associated with specific objects. Instances are described by a set of values for the features.</li>
-<li>Attributes: the collection of features of the object that are maintained in a dataset.</li>
-<li>Object: a collection of features about which measurements can be taken.<!-- -->
-<ul>
-<li>Car: fuel consumption, cylinders, horsepower...</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="qualitative--quantitative-data">Qualitative &amp; Quantitative data<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#qualitative--quantitative-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Qualitative data: <strong>less structured</strong>, <strong>non-statistical</strong>, <strong>measured using other descriptors and identifiers</strong>
-<ul>
-<li>white, heavy, wild...</li>
-</ul>
-</li>
-<li>Quantitative data: <strong>statistical</strong>, <strong>measured using hard numbers.</strong>
-<ul>
-<li>130cm, 400kg, 4 legs...</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="discrete--continuous-quantitative-data">Discrete &amp; Continuous (Quantitative) data<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#discrete--continuous-quantitative-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<!-- -->
-<ul>
-<li>Discrete data: <strong>fixed, round numbers</strong>, <strong>countable</strong>
-<ul>
-<li>number of legs, count of aeroplane depatures, number of times a person commutes for a job in a week</li>
-</ul>
-</li>
-<li>Continuous data: <strong>measured over time intervals</strong>
-<ul>
-<li>weight, solar irradiation, temperature of a room</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="summary">Summary<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#summary" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<table><thead><tr><th>Qualitative</th><th>Quantitiative (discrete)</th><th>Quantitiative (continuous)</th></tr></thead><tbody><tr><td>Title</td><td>Duration</td><td>Rating</td></tr><tr><td>Production Country</td><td>Release Year</td><td></td></tr><tr><td>Director</td><td></td><td></td></tr><tr><td>Genres</td><td></td><td></td></tr><tr><td>Description</td><td></td><td></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="categorizing-attributees">Categorizing attributees<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#categorizing-attributees" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<table><thead><tr><th>항목</th><th><strong>Nominal (categorical)</strong></th><th><strong>Ordinal</strong></th><th><strong>Interval</strong></th><th><strong>Ratio</strong></th></tr></thead><tbody><tr><td><strong>정의</strong></td><td>값이 라벨·이름 역할만 함. 순서 없음.</td><td>값 사이에 순서 있음. 간격은 정의되지 않음.</td><td>순서 + 고정·동일한 단위(간격). 절대 0 없음.</td><td>Interval 속성 + 절대적 0 있음. 차이와 비율 모두 의미 있음.</td></tr><tr><td><strong>예시</strong></td><td>머리카락 색 <code>{blonde, brown, ginger}</code><br>우편번호<br>산업코드, 연구분야 코드<br>Blood type, License number</td><td>키: <code>tall &gt; average &gt; short</code><br>체중: <code>light &lt; average &lt; heavy</code><br>Star ratings, Tshirt sizes</td><td>키(cm), 몸무게(kg) (원문 기준)<br>12시간제 시각(차이 비교)<br>시간 간격(5분~10분)<br>Waist size, Time</td><td>나이(년)<br>소득(천 달러)<br>켈빈 온도<br>금액, 개수, 질량, 길이, 전류<br>Body weight, Medicine dosage</td></tr><tr><td><strong>예시</strong></td><td>머리카락 색 <code>{blonde, brown, ginger}</code>, 우편번호, 산업코드/연구분야 코드, Blood type, License number</td><td>키: <code>tall &gt; average &gt; short</code>, 체중: <code>light &lt; average &lt; heavy</code>, Star ratings, Tshirt sizes</td><td>키(cm), 몸무게(kg) (원문 기준), 12시간제 시각(차이 비교), 시간 간격(5분~10분), Waist size, Time</td><td>나이(년), 소득(천 달러), 켈빈 온도, 금액, 개수, 질량, 길이, 전류, Body weight, Medicine dosage</td></tr><tr><td><strong>허용 비교</strong></td><td><code>=, ≠</code></td><td><code>=, ≠, &lt;, &gt;</code></td><td><code>=, ≠, &lt;, &gt;, +, −</code></td><td><code>=, ≠, &lt;, &gt;, +, −, ×, ÷</code></td></tr><tr><td><strong>연산 / 분석</strong></td><td>Mode(최빈값)<br>Entropy(불확실성 측정)<br>Contingency table(교차표)<br>Correlation(Chi-squared test of independence)<br>Chi-squared test</td><td>Median<br>Percentiles<br>Rank correlation(Spearman)<br>Run tests(Mann–Whitney U, Wilcoxon)<br>Sign tests</td><td>Mean<br>Standard Deviation<br>Pearson correlation<br>T-test<br>F-test(ANOVA)</td><td>Geometric Mean<br>Harmonic Mean<br>Percent variation(CV)</td></tr><tr><td><strong>설명</strong></td><td>통계적 평균·표준편차 무의미</td><td>순위는 비교 가능하지만 간격·크기 비교 불가.<br>중앙값·순위기반 통계 적합.</td><td>간격 일정 → +, − 가능.<br>절대 0 없음 → 비율 해석 불가.</td><td>절대 0 → 모든 연산 가능.<br>비율·곱셈 해석 가능.</td></tr><tr><td><strong>변수 특징</strong></td><td>Named variables</td><td>Named &amp; Ordered variables</td><td>Named &amp; Ordered &amp; Distance between variables</td><td>Named &amp; Ordered &amp; Distance between variables &amp; Makes sense to multiply/divide</td></tr><tr><td><strong>Analysis Method</strong></td><td>Frequency</td><td>Frequency<br>Median and percentiles</td><td>Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean</td><td>Frequency<br>Median and percentiles<br>Add or Subtract<br>Mean, standard deviation, standard error of the mean<br>Ratio</td></tr><tr><td><strong>데이터 유형</strong></td><td>Qualitative</td><td>Qualitative</td><td>Quantitative</td><td>Quantitative</td></tr></tbody></table>
-<table><thead><tr><th>Attribute Type</th><th>Description</th><th>Examples</th><th>Operations</th></tr></thead><tbody><tr><td><strong>Nominal</strong></td><td>The values of a nominal attribute are just different names, i.e. nominal attributes provide only enough information to distinguish one object from another. (<code>=, ≠</code>)</td><td>post codes, employee ID numbers, eye colour, sex: <code>{ male, female }</code></td><td>mode, entropy, contingency, correlation, chi squared test</td></tr><tr><td><strong>Ordinal</strong></td><td>The values of an ordinal attribute provide enough information to order objects. (<code>&lt;, &gt;</code>)</td><td>hardness of minerals, <code>{ good, better, best }</code>, grades, street numbers</td><td>median, percentiles, rank correlation, run tests, sign tests</td></tr><tr><td><strong>Interval</strong></td><td>For interval attributes, the differences between values are meaningful, i.e. a unit of measurement exists. (<code>+, −</code>)</td><td>calendar dates, temperature in Celsius or Fahrenheit</td><td>mean, standard deviation, Pearson’s correlation, t and F tests</td></tr><tr><td><strong>Ratio</strong></td><td>For ratio variables both differences and ratios are meaningful. (<code>×, ÷</code>)</td><td>temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current</td><td>geometric mean, harmonic mean, percent variation</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="structured--unstructured-data">Structured &amp; Unstructured Data<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#structured--unstructured-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Structured Data: which has an associated fixed data structure.<!-- -->
-<ul>
-<li>Relational table</li>
-<li>Manageable</li>
-</ul>
-</li>
-<li>Unstructured Data: which is expressed in natural language and no specific structure and domain types are defined.<!-- -->
-<ul>
-<li>Documents and sounds.</li>
-</ul>
-</li>
-<li>Semi-structured Data: the format is not fixed and has some degree of flexibility.<!-- -->
-<ul>
-<li>XML, JSON</li>
-<li>emails, text data, image, video and sound, zipped files, web pages.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="curse-of-dimensionality">Curse of dimensionality<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#curse-of-dimensionality" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<blockquote>
-<p>The explosive nature of increasing data dimensions and its resulting exponential increase in computational efforts required for its processing and/or analysis.</p>
-</blockquote>
-<ul>
-<li>Characteristics of structured data<!-- -->
-<ul>
-<li>Dimensionality: Datasets with higher numbers of attributes have more dimensions, challenging to work with high dimensional data.</li>
-<li>Sparsity: A dataset termed spare data or having the property of sparsity, which contains many zeros values for most of the attributes.</li>
-<li>Resolution: The patterns depend on the scale or level of resolution.</li>
-</ul>
-</li>
-<li>Real life data is usually in a lower dimensional manifold<!-- -->
-<ul>
-<li>many dimensions can be either ignored or the dimensionality can be reduced.</li>
-</ul>
-</li>
-<li>Local smoothness: small changes in input values give small changes in output values.<!-- -->
-<ul>
-<li>Local interpolation to make predictions.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="datasets">Datasets<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#datasets" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Record Data<!-- -->
-<ul>
-<li>Data Matrix</li>
-<li>Document data: a special type of data matrix where the attributes are of the same type and are asymmetric.</li>
-<li>Transaction data: a special type of record data. Each record involves a set of items. Most often, the attributes are binary, indicating whether or not an item was purchased.</li>
-</ul>
-</li>
-<li>Graph data<!-- -->
-<ul>
-<li>World wide web, Molecular structures (Simplified molecular-inputline-entry system, SMILES)</li>
-</ul>
-</li>
-<li>Ordered data: sequence data, this is a sequence of individual entities, such as a sequence of words or letters.<!-- -->
-<ul>
-<li>Spatial data</li>
-<li>Temporal data</li>
-<li>Sequential data</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-collection">Data collection<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#data-collection" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="quality">Quality<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#quality" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Missing values: The data was not collected (e.g. age), or some attributes may not be applicable in all cases (e.g. annual income for children).</li>
-<li>Empty values: Unlike missing values, an empty value is the one that has no actual value, whereas a missing value has an actual value but it is missing somehow.</li>
-<li>Noise: The modification of actual values.</li>
-<li>Outlier: A single or very low frequency occurrence of a value of an attribute that is far from the bulk of attribute values.</li>
-<li>Duplicate data: The same data is recorded multiple times.</li>
-<li>Inconsistent formats: When the same set of data appears in multiple tables from different inputs.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-auditing">Data auditing<a href="https://gracefullight.dev/en/2025/08/14/fundamentals-of-data-analytics-003/#data-auditing" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>attributes</li>
-<li>measured values</li>
-<li>comments</li>
-<li>attribute type</li>
-<li>operations we can do</li>
-<li>data type (knime/py)</li>
-<li>missing value</li>
-<li>any comments about qualities</li>
-</ul>
-<table><thead><tr><th>attributes</th><th>measured values</th><th>comments</th><th>attribute type</th><th>operations we can do</th><th>Data type (knime/python)</th><th>missing value</th><th>Any comments about qualities</th></tr></thead><tbody><tr><td>fixed acidity</td><td><code>[3.8, 15.9]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>volatile acidity</td><td><code>[0.08, 1.58]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>citric acid</td><td><code>[0, 1.66]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>residual sugar</td><td><code>[0.6, 65.8]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>chlorides</td><td><code>[0.009, 0.611]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>free sulfur dioxide</td><td><code>[1, 289]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>int</td><td>N/A</td><td></td></tr><tr><td>total sulfur dioxide</td><td><code>[6, 440]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>int</td><td>N/A</td><td></td></tr><tr><td>density</td><td><code>[0.98711, 1.03898]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>pH</td><td><code>[2.72, 4.01]</code></td><td>continuous number</td><td>interval</td><td>order, arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>sulphates</td><td><code>[0.22, 2]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>alcohol</td><td><code>[8, 14.9]</code></td><td>continuous number</td><td>ratio</td><td>all arithmetic</td><td>float</td><td>N/A</td><td></td></tr><tr><td>quality</td><td><code>[extremely dissatisfied, extremely satisfied, moderately dissatisfied, moderately satisfied, neutral, slightly dissatisfied, slightly satisfied]</code></td><td>distributed</td><td>ordinal</td><td>order, counting</td><td>str</td><td>N/A</td><td></td></tr><tr><td>color</td><td><code>[white, red]</code></td><td>distributed</td><td>nominal</td><td>counting</td><td>str</td><td>N/A</td><td></td></tr></tbody></table>]]></content:encoded>
-            <category>fda</category>
         </item>
     </channel>
 </rss>
