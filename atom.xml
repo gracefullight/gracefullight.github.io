@@ -2,11 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-24T05:52:19.257Z</updated>
+    <updated>2025-08-24T10:33:27.131Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[PaLM-E An Embodied Multimodal Language Model Review]]></title>
+        <id>https://gracefullight.dev/2025/08/24/palm-e-review/</id>
+        <link href="https://gracefullight.dev/2025/08/24/palm-e-review/"/>
+        <updated>2025-08-24T10:33:27.131Z</updated>
+        <summary type="html"><![CDATA[PaLM-E An Embodied Multimodal Language Model Review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="palm-e">PaLM-E<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#palm-e" class="hash-link" aria-label="PaLM-E에 대한 직접 링크" title="PaLM-E에 대한 직접 링크">​</a></h2>
+<ul>
+<li>ViT (e.g., ViT-4B, ViT-22B) extracts image embeddings.</li>
+<li>OSRT builds object-centric slot representations.</li>
+<li>These are injected into the LLM embedding space (PaLM variants: 8B, 62B, 540B) for high-level abstraction and planning, with execution delegated to low-level policies (e.g., RT-1).</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="PaLM-E Architecture" src="https://gracefullight.dev/assets/images/palm-e-architecture-ca3f220adc8e114bc89a0589703866fb.png" width="1284" height="650" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-idea">Core idea<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#core-idea" class="hash-link" aria-label="Core idea에 대한 직접 링크" title="Core idea에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Build <strong>embodied language models</strong> by <strong>injecting continuous sensor inputs</strong> (images, states, other modalities) directly into a <strong>pretrained LLM’s embedding space</strong>, linking <strong>words ↔ percepts</strong>.</li>
+<li>Inputs are <strong>multimodal sentences</strong> that <strong>interleave</strong> text tokens with encoded visual/state tokens; outputs are <strong>text</strong> (answers or high-level plans).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="architecture--representations">Architecture &amp; representations<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#architecture--representations" class="hash-link" aria-label="Architecture &amp; representations에 대한 직접 링크" title="Architecture &amp; representations에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Start from a <strong>decoder-only, autoregressive LLM</strong> (PaLM) and <strong>condition on a prefix</strong> that mixes text and <strong>encoder-produced vectors</strong>.</li>
+<li>Provide multiple encoder options:<!-- -->
+<ul>
+<li><strong>State vectors</strong> (simplest).</li>
+<li><strong>ViT</strong> features with a learned <strong>projector ψ</strong> to match LLM embedding dimensionality.</li>
+<li><strong>Object-centric, 3D-aware OSRT</strong> (neural scene representations). Supports <strong>entity-label tokens</strong> (<code>&lt;obj j&gt;</code>) so the model can refer to specific objects in generated plans.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="training-setup">Training setup<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#training-setup" class="hash-link" aria-label="Training setup에 대한 직접 링크" title="Training setup에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Train <strong>end-to-end</strong> (encoders + projector + optionally the LLM) to output <strong>sequential decisions as natural text</strong> or answers (VQA, captioning).</li>
+<li>Dataset items contain <strong>(continuous observations, text sequence, prefix index)</strong>; loss is <strong>cross-entropy on non-prefix tokens</strong>.</li>
+<li>Explore <strong>freezing the LLM</strong> (train encoders/projection only), and <strong>co-training</strong> across diverse tasks ("full mixture"; only ~9% is embodied data).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="planning--control-loop">Planning &amp; control loop<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#planning--control-loop" class="hash-link" aria-label="Planning &amp; control loop에 대한 직접 링크" title="Planning &amp; control loop에 대한 직접 링크">​</a></h2>
+<ul>
+<li>For <strong>planning/control</strong>, PaLM-E emits <strong>textual subgoals/skills</strong> drawn from a small skill vocabulary; a separate <strong>low-level policy</strong> executes them.</li>
+<li>The system runs <strong>closed-loop</strong>: execute → observe → (re)plan; PaLM-E acts as a <strong>high-level policy</strong> sequencing low-level skills.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="why-not-text-only-llms-or-affordance-only-grounding">Why not text-only LLMs or affordance-only grounding?<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#why-not-text-only-llms-or-affordance-only-grounding" class="hash-link" aria-label="Why not text-only LLMs or affordance-only grounding?에 대한 직접 링크" title="Why not text-only LLMs or affordance-only grounding?에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Prior work that feeds <strong>only text to the LLM</strong> (and uses external affordance models) is <strong>insufficient</strong> when <strong>spatial layout</strong> matters.</li>
+<li>PaLM-E instead <strong>grounds inside the LLM</strong> by <strong>injecting continuous observations</strong>, enabling <strong>direct plan generation</strong> while leveraging the LLM’s world knowledge.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="environments--use-cases">Environments &amp; use cases<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#environments--use-cases" class="hash-link" aria-label="Environments &amp; use cases에 대한 직접 링크" title="Environments &amp; use cases에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Three domains</strong>: <strong>TAMP</strong> (grasp/stack planning), <strong>Language-Table</strong> (multi-object tabletop pushing), <strong>Mobile manipulation</strong> (kitchen tasks).</li>
+<li><strong>Use cases</strong> to test embodied reasoning: <strong>affordance prediction</strong>, <strong>failure detection</strong>, <strong>long-horizon planning</strong> (low-level policies from <strong>RT-1</strong>).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="results-high-level">Results (high level)<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#results-high-level" class="hash-link" aria-label="Results (high level)에 대한 직접 링크" title="Results (high level)에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Transfer via co-training</strong>: One model trained on mixed tasks/embodiments achieves <strong>higher performance</strong> than task-specialists; "full mixture" yields <code>&gt;2×</code> gains (Fig. 3).</li>
+<li><strong>Few-shot/data efficiency</strong>: Solves robotics tasks with <strong>very few examples</strong> (e.g., <strong>10–80</strong> for Language-Table, <strong>320</strong> for TAMP). <strong>OSRT</strong> further improves data efficiency.</li>
+<li><strong>Mobile manipulation</strong>: End-to-end embodied planning works in real kitchens, robust to disturbances; PaLM-E beats <strong>PaLI (zero-shot)</strong> and <strong>QT-OPT/CLIP baselines</strong> on affordance/failure detection.</li>
+<li><strong>General V+L</strong>: The <strong>562B</strong> generalist achieves <strong>state-of-the-art on OK-VQA</strong> and strong VQAv2/COCO without task-specific finetuning.</li>
+<li><strong>Language retention &amp; scaling</strong>: <strong>Freezing LLM</strong> preserves language ability but can struggle on some robotics tasks; <strong>unfrozen + scale up</strong> significantly reduces <strong>catastrophic forgetting</strong>.</li>
+<li><strong>Emergent behaviors</strong>: <strong>Multimodal chain-of-thought</strong> and <strong>multi-image reasoning</strong> emerge in <strong>PaLM-E-562B</strong>, despite training on <strong>single-image prompts</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="takeaways">Takeaways<a href="https://gracefullight.dev/2025/08/24/palm-e-review/#takeaways" class="hash-link" aria-label="Takeaways에 대한 직접 링크" title="Takeaways에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Injecting <strong>neural scene representations (OSRT)</strong> and <strong>entity-labeled multimodal tokens</strong> is <strong>effective</strong> even without massive embodied data.</li>
+<li><strong>Diverse, joint training</strong> transfers vision-language knowledge <strong>into embodied decision-making</strong>, enabling <strong>data-efficient robot planning</strong>.</li>
+<li>Two viable paths to retain language skills during multimodal finetuning:<!-- -->
+<ol>
+<li><strong>Freeze the LLM</strong>, train encoders (max language retention, sometimes weaker robotics),</li>
+<li><strong>Unfreeze and scale</strong> the LLM (much less forgetting, strong embodied performance).</li>
+</ol>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vlm" term="vlm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[RT-1, Robot Transformer 1 Review]]></title>
         <id>https://gracefullight.dev/2025/08/24/rt-1-review/</id>
@@ -1323,523 +1399,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/17/trustworthiness-in-vision-language-models-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Vu, K., &amp; Lai, P. (2025). Trustworthiness in&nbsp;Vision-Language Models. In J. Kertesz, B. Li, T. Supnithi, &amp; A. Takhom, Computational Data and Social Networks Singapore.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vision-Language Models for Vision Tasks Review]]></title>
-        <id>https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/</id>
-        <link href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/"/>
-        <updated>2025-08-16T07:40:55.588Z</updated>
-        <summary type="html"><![CDATA[Vision-Language Models for Vision Tasks Review]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#overview" class="hash-link" aria-label="Overview에 대한 직접 링크" title="Overview에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>Most visual recognition studies rely heavily on crowdlabelled data in DNN</p>
-</blockquote>
-<ul>
-<li>Background development of visual recognition paradigms</li>
-<li>Foundations its architecture</li>
-<li>Datasets in VLM pre-training and evaluations</li>
-<li>Review and categorization of existing pre-training methods</li>
-<li>Benchmarking analysis discussion</li>
-<li>Reach challenges &amp; potential research direction</li>
-<li>Training hard<!-- -->
-<ul>
-<li>New learning paradigm</li>
-</ul>
-</li>
-<li>Vision-Language Model Pre-training and Zero-shot Prediction<!-- -->
-<ul>
-<li>Increasing attention</li>
-</ul>
-</li>
-<li>VLMs with transfer learning<!-- -->
-<ul>
-<li>Prompt tuning</li>
-<li>Visual adaption</li>
-</ul>
-</li>
-<li>VLMs with knowledge distillation<!-- -->
-<ul>
-<li>distill knowledge from VLMs to downstream tasks</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="the-development-of-visual-recognition-paradigms">The development of visual recognition paradigms<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#the-development-of-visual-recognition-paradigms" class="hash-link" aria-label="The development of visual recognition paradigms에 대한 직접 링크" title="The development of visual recognition paradigms에 대한 직접 링크">​</a></h2>
-<!-- -->
-<ul>
-<li>Traditional ML: Hand-crafted features for prediction.</li>
-<li>Deep Learning: Deep networks (e.g., ResNet) with large-scale labeled data.</li>
-<li>Supervised Pre-training + Fine-tuning: Learned representations transferred to downstream tasks.</li>
-<li>Unsupervised / Self-supervised Pre-training + Fine-tuning: Objectives like masked modeling and contrastive learning to learn representations.</li>
-<li>Vision-Language Models &amp; Zero-shot: Leverage large-scale web data, enabling zero-shot prediction without task-specific fine-tuning.<!-- -->
-<ul>
-<li>Collecting large-scale informative image-text data</li>
-<li>Designing high-capacity models for effective learning from Bigdata.</li>
-<li>Designing new pre-training objectives for learning effective VLMs.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Illustration of development of VLMs for visual recognition" src="https://gracefullight.dev/assets/images/vlm-paradigm-46050660982130f887307cc0442975c0.png" width="701" height="347" class="img_f7zd"></p>
-<ul>
-<li>CLIP: Image-text contrastive objective and learns by pulling the paired images and texts close and pushing others faraway in the embedding space.<!-- -->
-<ul>
-<li>enables effective usage of web data and allows zero-shot predictions without task-specific finetuning.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-overview">VLM Overview<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-overview" class="hash-link" aria-label="VLM Overview에 대한 직접 링크" title="VLM Overview에 대한 직접 링크">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="VLM Overview" src="https://gracefullight.dev/assets/images/vlm-overview-2abb2d65aeef690c49e399a7ca3ac86c.png" width="1400" height="728" class="img_f7zd"></p>
-<ul>
-<li>Given Image-text pairs.</li>
-<li>Employs a text encoder and an image encoder to extract image and text features.</li>
-<li>Learns the vision-language correlation with certain pre-training objectives.</li>
-<li>GAP: Global Average Pooling, a technique used to reduce the spatial dimensions of feature maps while retaining important information.</li>
-<li>ViT: Vision Transformer: Transformers for image recognition at scale.</li>
-<li>CNN Based: VGG, <strong>ResNet</strong>, EfficientNet<!-- -->
-<ul>
-<li>ResNet: Adopts skip connections between convolutional blocks which mitigates gradient vanishing and explosion and enables DNN training.</li>
-<li>ResNet-D: Replace global average pooling with transformer multi-head attention.</li>
-</ul>
-</li>
-<li>Transformer Based: ViT<!-- -->
-<ul>
-<li>Adding a normalization layer before the transformer encoder.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-pre-training-objectives">VLM pre-training Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-pre-training-objectives" class="hash-link" aria-label="VLM pre-training Objectives에 대한 직접 링크" title="VLM pre-training Objectives에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="contrastive-objectives">Contrastive Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#contrastive-objectives" class="hash-link" aria-label="Contrastive Objectives에 대한 직접 링크" title="Contrastive Objectives에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Pros<!-- -->
-<ul>
-<li>Enforce positive pairs to have similar embeddings in contrast to negative pairs.</li>
-<li>Encourages VLMs to learn discriminative vision and language features, where more discriminative features lead to more confident and accurate zero-shot predictions.</li>
-</ul>
-</li>
-<li>Cons<!-- -->
-<ul>
-<li>Joint optimizing positive and negative pairs is complicated and challenging.</li>
-<li>Involves a heuristic temperature hyper-parameter for controlling the feature discriminability.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-contrastive-learning">Image Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-contrastive-learning" class="hash-link" aria-label="Image Contrastive Learning에 대한 직접 링크" title="Image Contrastive Learning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Forcing a query image to be close with its positive keys (its data augmentations)</li>
-<li>Faraway from its negative keys (other images)</li>
-<li><strong>Learn discriminative features</strong> in image modality, which often serves as an auxiliary objective for fully exploiting the image data potential.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-contrastive-learning">Image-Text Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-contrastive-learning" class="hash-link" aria-label="Image-Text Contrastive Learning에 대한 직접 링크" title="Image-Text Contrastive Learning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Pulling the embeddings of paired images and texts close while pushing others away.</li>
-<li>Minimizing a symmetrical image-text infoNCE loss</li>
-<li><strong>Learn vision-language correlation</strong> by contrasting image-text pairs.<!-- -->
-<ul>
-<li>CLIP: A symmetrical image-text infoNCE loss</li>
-<li>ALIGN: scales up the VLM pre-training with large-scale (but noisy image-text pair with noise-robust contrastive learning)</li>
-<li>DeCLIP: Nearest-neighbor supervision to utilize the information from similar pairs, enabling effective pre-training on limited data.</li>
-<li>OTTER: Optimal transport to pseudo-pair images and texts reducing the required training data.</li>
-<li>ZeroVL: Limited data resource via debiased data sampling and data augmentation with coin flipping mixup.</li>
-<li>FILIP: Region-word alignment into contrastive learning, enabling to learn fine-grained vision-language corresponding knowledge.</li>
-<li>Pyramid-CLIP: Multiple semantic levels and performs both cross-level and peer-level contrastive learning for effective VLM pre-training.</li>
-<li>LA-CLIP, ALIP: LLM to augment synthetic captions for given images while RA-CLIP retrieves relevant image-text pairs for image-text pair augmentation.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="CLIP" src="https://gracefullight.dev/assets/images/vlm-clip-002c83bc065d184a2350741cacc71908.png" width="848" height="528" class="img_f7zd"></p>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-label-contrastive-learning">Image-Text-Label Contrastive Learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-label-contrastive-learning" class="hash-link" aria-label="Image-Text-Label Contrastive Learning에 대한 직접 링크" title="Image-Text-Label Contrastive Learning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Supervised Contrastive Learning into image-text contrastive learning.</li>
-<li><strong>Learn discriminative and task-specific features</strong> by exploiting both supervised labels and unsupervised image-text pairs.<!-- -->
-<ul>
-<li>UniCL: pre-training allows learning both discriminative and task-specific (image classification) features simultaneously with around 900M image-text pairs.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Image-Text-Label Contrastive Learning" src="https://gracefullight.dev/assets/images/vlm-image-text-label-83c01a33a07520e54ac28a0ffbb1ceaa.png" width="846" height="558" class="img_f7zd"></p>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="generative-objectives">Generative Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#generative-objectives" class="hash-link" aria-label="Generative Objectives에 대한 직접 링크" title="Generative Objectives에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Encouraging VLMs to learn rich vision, language and vision-language contexts for better zero-shot predictions.</li>
-<li>Generally adopted as additional objectives above other VLM pre-training objectives for learning rich context information.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-image-modelling">Masked Image Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-image-modelling" class="hash-link" aria-label="Masked Image Modelling에 대한 직접 링크" title="Masked Image Modelling에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Cross-patch correlation by masking and reconstructing images.</li>
-<li><strong>Learn image context information by masking and reconstructing images</strong>
-<ul>
-<li>MAE, BeiT: certain patches in an image are masked and the encoder is trained to reconstruct them conditioned on unmasked patches.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Masked Image Modelling" src="https://gracefullight.dev/assets/images/vlm-masked-image-modelling-0b2757747dbb1e20d94920022ed416e1.png" width="936" height="424" class="img_f7zd"></p>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-language-modelling">Masked Language Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-language-modelling" class="hash-link" aria-label="Masked Language Modelling에 대한 직접 링크" title="Masked Language Modelling에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Adopted pre-training objectives in NLP.</li>
-<li>Randomly masking a certain percentage of input tokens and predicting them. (15% in BERT)</li>
-<li><strong>Learn by masking a fraction of tokens</strong> in each input text and training networks to predict the masked tokens.<!-- -->
-<ul>
-<li>FLAVA: masks out 15% text tokens and reconstructs them from the rest tokens for modelling cross-word correlation.</li>
-<li>FIBER: adopts masked language modelling as one of the VLM pre-training objectives to extract better language features.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Masked Language Modelling" src="https://gracefullight.dev/assets/images/vlm-masked-language-modelling-4673252375ddfbf207081514c51e2eae.png" width="868" height="454" class="img_f7zd"></p>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="masked-cross-modal-modelling">Masked Cross-Modal Modelling<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#masked-cross-modal-modelling" class="hash-link" aria-label="Masked Cross-Modal Modelling에 대한 직접 링크" title="Masked Cross-Modal Modelling에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Integrates masked image modelling and masked language modelling.</li>
-<li>Given an image-text pair, it randomly masks a subset of image patches and a subset of text tokens and then learns to reconstruct them.</li>
-<li><strong>Learn by masking a certain percentage of image patches and text tokens</strong> and training VLMs to reconstruct them based on the embeddings of unmasked image patches and text tokens.<!-- -->
-<ul>
-<li>FLAVA: 40% image patches and 15% text tokens as in, and employs a MLP to predict masked patched and tokens, capturing rich vision-language correspondence information.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-to-text-generation">Image-to-Text Generation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-to-text-generation" class="hash-link" aria-label="Image-to-Text Generation에 대한 직접 링크" title="Image-to-Text Generation에 대한 직접 링크">​</a></h4>
-<ul>
-<li><strong>Generate descriptive texts for a given image</strong> for capturing fine-grained vision-language correlation by training VLMs to predict tokenized texts.<!-- -->
-<ul>
-<li>COCA, NLP, PaLI: train VLMs with the standard encoder-decoder architecture and image captioning objectives.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Image to caption" src="https://gracefullight.dev/assets/images/vlm-image-to-caption-4348d37878d43e85e49b73006131f2c2.png" width="924" height="712" class="img_f7zd"></p>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="alignment-objectives">Alignment Objectives<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#alignment-objectives" class="hash-link" aria-label="Alignment Objectives에 대한 직접 링크" title="Alignment Objectives에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Align image–text pairs in the embedding space.</p>
-</blockquote>
-<ul>
-<li>pros<!-- -->
-<ul>
-<li>simple, easy to optimize</li>
-<li>can be easily extended to model fine-grained vision-language correlation</li>
-</ul>
-</li>
-<li>cons<!-- -->
-<ul>
-<li>little correlation information within vision or language modality.</li>
-</ul>
-</li>
-<li>adopted as auxiliary losses to other VLM pre-training objectives for enhancing modelling the correlation across vision and language modalities.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="image-text-matching">Image-Text Matching<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#image-text-matching" class="hash-link" aria-label="Image-Text Matching에 대한 직접 링크" title="Image-Text Matching에 대한 직접 링크">​</a></h4>
-<ul>
-<li>models the <strong>overall correlation</strong> between an entire image and an entire sentence. (전역적 상관관계)</li>
-<li>Image-text matching models global image-text correlation by directly aligning paired images and texts<!-- -->
-<ul>
-<li>FLAVA: matches the given image with its paired text via a classifier and a binary classification loss.</li>
-<li>FIBER: follows to mine hard negatives with pair-wise similarities for better alignment between image and text.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="region-word-matching">Region-Word Matching<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#region-word-matching" class="hash-link" aria-label="Region-Word Matching에 대한 직접 링크" title="Region-Word Matching에 대한 직접 링크">​</a></h4>
-<ul>
-<li>captures <strong>fine-grained correlations</strong> between image regions and specific words. (지역적 상관관계)</li>
-<li>models local fine-grained vision-language correlation by aligning paired image regions and word tokens.</li>
-<li>benefiting <strong>zero-shot dense predictions</strong> in object detection and semantic segmentation.<!-- -->
-<ul>
-<li>GLIP, FIBER, DetCLIP: replace object classification logits by region-word alignment scores.<!-- -->
-<ul>
-<li>the dot-product similarity between regional visual features and token-wise features.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Region-Word Matching, GLIP" src="https://gracefullight.dev/assets/images/vlm-region-word-578b649828e666c5d4d0a9ca7af22e51.png" width="942" height="538" class="img_f7zd"></p>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-pre-training-frameworks">VLM Pre-Training Frameworks<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-pre-training-frameworks" class="hash-link" aria-label="VLM Pre-Training Frameworks에 대한 직접 링크" title="VLM Pre-Training Frameworks에 대한 직접 링크">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="VLM pre-training frameworks" src="https://gracefullight.dev/assets/images/vlm-pretraining-frameworks-39991946607c915ff2a7126f16d59c30.png" width="715" height="273" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="evaluation">Evaluation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#evaluation" class="hash-link" aria-label="Evaluation에 대한 직접 링크" title="Evaluation에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="zero-shot-prediction">Zero-shot Prediction<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#zero-shot-prediction" class="hash-link" aria-label="Zero-shot Prediction에 대한 직접 링크" title="Zero-shot Prediction에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Image Classification: classify images into pre-defined categories like "prompt engineering".</li>
-<li>Semantic Segmentation: by comparing the embeddings of the given image pixels and texts.</li>
-<li>Object Detection: localize and classify objects in images with the object locating ability learned from auxiliary datasets.</li>
-<li>Image-Text Retrieval<!-- -->
-<ul>
-<li>Text-to-image retrieval that retrieves images based on texts</li>
-<li>Image-to-text retrieval that retrieves texts based on images.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="linear-probing">Linear Probing<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#linear-probing" class="hash-link" aria-label="Linear Probing에 대한 직접 링크" title="Linear Probing에 대한 직접 링크">​</a></h3>
-<ul>
-<li>freezes the pre-trained VLM</li>
-<li>trains a linear classifier to classify the VLM-encoded embeddings to assess the VLM representations.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="datasets">Datasets<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#datasets" class="hash-link" aria-label="Datasets에 대한 직접 링크" title="Datasets에 대한 직접 링크">​</a></h2>
-<ul>
-<li>For Pre-training VLMs<!-- -->
-<ul>
-<li>CLIP, 2021, 400M, English</li>
-<li>ALIGN, 2021, 1.8B, English</li>
-<li>FILIP, 2021, 300M, English</li>
-<li>WebLi, 2022, 12B, 129 Languages</li>
-</ul>
-</li>
-<li>For VLM Evaluation<!-- -->
-<ul>
-<li>Image Classification<!-- -->
-<ul>
-<li>PSACAL VOC 2007 Classification, 11-point mAP</li>
-<li>Oxford-IIIT PETS, Mean Per Class</li>
-<li>EuroSAT, Accuracy</li>
-<li>Hateful Memes, ROC AUC</li>
-<li>Country211, Accuracy</li>
-</ul>
-</li>
-<li>Image-Text Retrieval<!-- -->
-<ul>
-<li>Flickr30k, Recall</li>
-<li>COCO Caption, Recall</li>
-</ul>
-</li>
-<li>Action Recognition<!-- -->
-<ul>
-<li>UCF101, Accuracy</li>
-<li>Kinetics700, Mean(top1, top5)</li>
-<li>RareAct, mWAP, mSAP</li>
-</ul>
-</li>
-<li>Object Detection<!-- -->
-<ul>
-<li>COCO 2017 Detection, box mAP</li>
-<li>LVIS, box mAP</li>
-<li>ODinW, box mAP</li>
-</ul>
-</li>
-<li>Semantic Segmentation<!-- -->
-<ul>
-<li>Cityscapes, Mean IoU</li>
-<li>ADE20K, Mean IoU</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-transfer-learning">VLM Transfer learning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-transfer-learning" class="hash-link" aria-label="VLM Transfer learning에 대한 직접 링크" title="VLM Transfer learning에 대한 직접 링크">​</a></h2>
-<blockquote>
-<p>which adapts VLMs to fit downstream tasks via prompt tuning, feature adapter.</p>
-</blockquote>
-<ul>
-<li>image and text distributions gap: downstream dataset may have task-specific image styles and text formats</li>
-<li>training objectives gap: VLMs are generally trained with task-agnostic objectives, while downstream tasks often involve task-specific objectives. (coarse or fine-grained classification, region or pixel-level recognition)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-via-prompt-tuning">Transfer via Prompt Tuning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-via-prompt-tuning" class="hash-link" aria-label="Transfer via Prompt Tuning에 대한 직접 링크" title="Transfer via Prompt Tuning에 대한 직접 링크">​</a></h3>
-<blockquote>
-<p>Inspired by the "prompt learning" in NLP</p>
-</blockquote>
-<ul>
-<li>pros<!-- -->
-<ul>
-<li>simple, easy-to-implement</li>
-<li>requires little extra network layer or complex network modifications</li>
-<li>adapting VLMs in a black-box manner, which has clear advantages in transferring VLMs that involve concerns in intellectual property.</li>
-</ul>
-</li>
-<li>cons<!-- -->
-<ul>
-<li>low flexibility by following the manifold (잠재 공간) of the original VLMs in prompting.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-text-prompt-tuning">Transfer with Text Prompt Tuning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-text-prompt-tuning" class="hash-link" aria-label="Transfer with Text Prompt Tuning에 대한 직접 링크" title="Transfer with Text Prompt Tuning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Exploring more effective and efficient learnable text prompts with several labelled downstream samples for each class.<!-- -->
-<ul>
-<li><strong>supervised and few-shot supervised</strong>
-<ul>
-<li>CoOp: Exploring context optimization to learn context words for a single class name with learnable word vectors.</li>
-<li>CoCoOp: Exploring conditional context optimization that generates a specific prompt for each image.</li>
-<li>SubPT: designs subspace prompt tuning to improve the generalization of learned prompts.</li>
-<li>LASP: regularizes learnable prompts with hand-engineered prompts.</li>
-<li>VPT: models text prompts with instance-specific distribution with better generalization on downstream tasks.</li>
-<li>KgCoOp: enhances the generalization of unseen class by mitigating the forgetting of textual knowledge.</li>
-<li>SoftCPT: fine-tunes VLMs on multiple few-shot tasks simultaneously for benefiting from multi-task learning.</li>
-<li>PLOT: employs optimal transport to learn multiple prompts to describe the diverse characteristics of a category.</li>
-<li>DualCoOp, TaI-DP: transport VLMs to multi-label classification tasks.<!-- -->
-<ul>
-<li>DualCoOp: adopts both positive and negative prompts for multi-label classification</li>
-<li>TaI-DP: double-grained prompt tuning for capturing both coarse-grained and fine-grained embeddings.</li>
-</ul>
-</li>
-<li>DenseCLIP: explores language-guided fine-tuning that employs visual features to tune text prompts for dense prediction.</li>
-<li>ProTeCt: improves the consistency of model predictions for hierarchical classification task.</li>
-</ul>
-</li>
-<li><strong>unsupervised</strong>
-<ul>
-<li>UPL: optimizes learnable prompts with self-training on selected pseudo-labeled samples.</li>
-<li>TPT: explores test-time prompt tuning to learn adaptive prompts from a single downstream sample.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Text Prompt Tuning" src="https://gracefullight.dev/assets/images/vlm-text-prompt-tuning-90bb346d2a9f42bf7769b169254da344.png" width="600" height="476" class="img_f7zd"></p>
-<ul>
-<li><code>V</code> is learnable word vectors that are optimized by minimizing the classification loss with the downstream samples.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-visual-prompt-tuning">Transfer with Visual Prompt Tuning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-visual-prompt-tuning" class="hash-link" aria-label="Transfer with Visual Prompt Tuning에 대한 직접 링크" title="Transfer with Visual Prompt Tuning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Transfers VLMs by modulating the input of image encoder.<!-- -->
-<ul>
-<li>VP: adopts learnable image perturbations <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span> to modify the input image <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>I</mi></msup></mrow><annotation encoding="application/x-tex">x^I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8413em"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em">I</span></span></span></span></span></span></span></span></span></span></span> by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>I</mi></msup><mo>+</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">x^I + v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9247em;vertical-align:-0.0833em"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em">I</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span>, aiming to adjust <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span> to minimize a recognition loss.</li>
-<li>RePrompt: integrates retrieval mechanisms into visual prompt tuning, allowing leveraging the knowledge from downstream tasks.</li>
-</ul>
-</li>
-<li>enables pixel-level adaptation to downstream tasks, benefiting them greatly especially for dense prediction tasks.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Visual Prompt Tuning" src="https://gracefullight.dev/assets/images/vlm-visual-prompt-tuning-36a78e501672cf89040235b31cd0c448.png" width="632" height="478" class="img_f7zd"></p>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-with-text-visual-prompt-tuning">Transfer with Text-Visual Prompt Tuning<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-with-text-visual-prompt-tuning" class="hash-link" aria-label="Transfer with Text-Visual Prompt Tuning에 대한 직접 링크" title="Transfer with Text-Visual Prompt Tuning에 대한 직접 링크">​</a></h4>
-<ul>
-<li>modulate the text and image inputs simultaneously, benefiting from joint prompt optimization on multiple modalities.<!-- -->
-<ul>
-<li>UPT: unifies prompt tuning to jointly optimize text and image prompts, demonstrating the complementary nature of the two prompt tuning tasks.</li>
-<li>MVLPT: explores multi-task vision-language prompt tuning to incorporate cross-task knowledge into text and image prompt tuning.</li>
-<li>MAPLE: conducts multi-modal prompt tuning by aligning visual prompts with their corresponding language prompts, enabling a mutual promotion between text prompts and image prompts.</li>
-<li>CAVPT: introduces a cross attention between class-aware visual prompts and text prompts, encouraging the visual prompts to concentrate more on visual concepts.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="transfer-via-feature-adaptation">Transfer via Feature Adaptation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#transfer-via-feature-adaptation" class="hash-link" aria-label="Transfer via Feature Adaptation에 대한 직접 링크" title="Transfer via Feature Adaptation에 대한 직접 링크">​</a></h3>
-<ul>
-<li>adapt image or text features with an additional light-weight feature adapter<!-- -->
-<ul>
-<li>Clip-Adapter: inserts several trainable linear layers after CLIP's language and image encoders and optimized them while keeping CLIP architecture and parameters frozen.</li>
-<li>Tip-adapter: a training-free adapter that directly employs the embeddings of few-shot labelled images as the adapter weights.</li>
-<li>SVL-Adapter: a self-supervised adapter which employs an additional encoder for self-supervised learning on input images.</li>
-</ul>
-</li>
-<li>flexible and effective as its architecture and the insertion manner allow tailoring flexibly for different and complex downstream tasks.</li>
-<li>requires modifying network architecture and thus can not handle VLMs that have concerns in intellectual property.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="other-transfer-methods">Other Transfer Methods<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#other-transfer-methods" class="hash-link" aria-label="Other Transfer Methods에 대한 직접 링크" title="Other Transfer Methods에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Direct fine-tuning, architecture modification, cross attention<!-- -->
-<ul>
-<li>Wise-FT: combines the weights of a fine-tuned VLM and the original VLM for learning new information from downstream tasks.</li>
-<li>MaskCLIP: extracts dense image features by modifying the architecture of the CLIP image encoder.</li>
-<li>VT-CLIP: introduces visual-guided attention to semantically correlate text features with downstream images, leading to a better transfer performance.</li>
-<li>CALIP: introduces parameter-free attention for effective interaction and communication between visual-guided text features.</li>
-<li>TaskRes: directly tunes text-based classifier to exploit the old knowledge in the pre-trained VLM.</li>
-<li>CuPL, VCD: employ large language models like GPT-3 to augment text prompts for learning rich discriminative text information.</li>
-</ul>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Feature Adaptation" src="https://gracefullight.dev/assets/images/vlm-feature-adaptation-de7cf8b41fcfa8659cc658c703b4dbc5.png" width="876" height="498" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vlm-knowledge-distillation">VLM Knowledge Distillation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#vlm-knowledge-distillation" class="hash-link" aria-label="VLM Knowledge Distillation에 대한 직접 링크" title="VLM Knowledge Distillation에 대한 직접 링크">​</a></h2>
-<ul>
-<li>distils general and robust VLM knowledge to task-specific models without the restriction of VLM architecture, benefiting task-specific designs while tackling various dense prediction tasks.</li>
-<li>most VLM knowledge distillation methods focus on transferring image-level knowledge to region- or pixel-level tasks such as object detection and semantic segmentation.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="knowledge-distillation-for-object-detection">Knowledge Distillation for Object Detection<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#knowledge-distillation-for-object-detection" class="hash-link" aria-label="Knowledge Distillation for Object Detection에 대한 직접 링크" title="Knowledge Distillation for Object Detection에 대한 직접 링크">​</a></h3>
-<ul>
-<li>To distill VLM knowledge to enlarge the detector vocabulary</li>
-<li>To better align image-level and object-level representations<!-- -->
-<ul>
-<li>ViLD: distills VLM knowledge to a two-stage detector whose embedding space is enforced to be consistent with that of CLIP image encoder.</li>
-<li>HierKD: hierarchical global-local knowledge distillation.</li>
-<li>RKD: region-based knowledge distillation for better aligning region-level and image-level embeddings.</li>
-<li>ZSD-YOLO: self-labeling data augmentation for exploiting CLIP for better object detection.</li>
-<li>OADP: proposal features while transferring contextual knowledge.</li>
-<li>BARON: uses neighborhood sampling to distill a bag of regions instead of individual regions.</li>
-<li>RO-ViT: distills information from VLMs for open-vocabulary detection.</li>
-</ul>
-</li>
-<li>VLM distillation via prompt learning<!-- -->
-<ul>
-<li>DetPro: a detection prompt technique for learning continuous prompt representations for open-vocabulary object detection.</li>
-<li>PrompDet: regional prompt learning for aligning word embeddings with regional image embeddings.</li>
-<li>PB-OVD: trains object detectors with VLM-predicted pseudo bounding boxes.</li>
-<li>XPM: a robust cross-modal pseudo-labeling strategy that employs VLM-generated pseudo masks for open-vocabulary instance segmentation.</li>
-<li>P3OVD: prompt-driven self-training that refines the VLM-generated pseudo labels with fine-grained prompt tuning.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="knowledge-distillation-for-semantic-segmentation">Knowledge Distillation for Semantic Segmentation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#knowledge-distillation-for-semantic-segmentation" class="hash-link" aria-label="Knowledge Distillation for Semantic Segmentation에 대한 직접 링크" title="Knowledge Distillation for Semantic Segmentation에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Leverage VLMs to enlarge the vocabulary of segmentation models, aim to segment pixels described by arbitrary texts. (i.e., any categories of pixels beyond base classes)</li>
-<li>Tackling the mismatch between image-level and pixel-level representations.<!-- -->
-<ul>
-<li>CLIPSeg: a lightweight transformer decoder to extend CLIP for semantic segmentation.</li>
-<li>LSeg: maximizes the correlation between CLIP text embeddings and pixel-wise image embedding encoded by segmentation models.</li>
-<li>ZegCLIP: employs CLIP to generate semantic masks and introduces a relationship descriptor to mitigate overfitting on base classes.</li>
-<li>MaskCLIP+, SSIW: distill knowledge with VLM-predicted pixel-level pseudo labels.</li>
-<li>FreeSeg: generates mask proposals first and then performs zero-shot classification for them.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_IhMp" id="knowledge-distillation-for-weakly-supervised-semantic-segmentation">Knowledge distillation for weakly-supervised semantic segmentation<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#knowledge-distillation-for-weakly-supervised-semantic-segmentation" class="hash-link" aria-label="Knowledge distillation for weakly-supervised semantic segmentation에 대한 직접 링크" title="Knowledge distillation for weakly-supervised semantic segmentation에 대한 직접 링크">​</a></h4>
-<ul>
-<li>Leverage both VLMs and weak supervision (e.g., image-level labels) for semantic segmentation.</li>
-<li>CLIP-ES: employs CLIP to refine the class activation map by designing a softmax function and a class-aware attention-based affinity module for mitigating the category confusion issue.</li>
-<li>CLIMS: employs CLIP knowledge to generate high-quality class activation maps for better weakly-supervised semantic segmentation.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="performance">Performance<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#performance" class="hash-link" aria-label="Performance에 대한 직접 링크" title="Performance에 대한 직접 링크">​</a></h2>
-<ul>
-<li>VLM is largely attributed to three factors: Big data, Big Model, and Task-agnostic learning.</li>
-<li>Limitations<!-- -->
-<ul>
-<li>When data/model size keeps increasing, the performance saturates and further scaling up won’t improve performance</li>
-<li>Adopting large-scale data in VLM pre-training necessitates extensive computation resources</li>
-<li>Adopting large models introduces excessive computation and memory overheads in both training and inference</li>
-</ul>
-</li>
-<li>Transfer Learning<!-- -->
-<ul>
-<li>can mitigate the domain gaps by learning from task-specific data, being labelled or unlabelled.</li>
-<li>Supervised <code>&gt;</code> few-shot supervised <code>=</code> unsupervised transfer (overfitting but challenging)</li>
-</ul>
-</li>
-<li>Knowledge Distillation<!-- -->
-<ul>
-<li>brings clear performance improvement on detection and segmentation tasks</li>
-<li>introduces general and robust VLM knowledge while benefiting from task-specific designs</li>
-</ul>
-</li>
-<li>the development of VLM pre-training for dense visual recognition tasks (on region or pixel-level detection and segmentation) lag far behind.</li>
-<li>require certain norms in term of training data, networks and downstream tasks.<!-- -->
-<ul>
-<li>VLM transfer: release their codes and do not require intensive computation resources, easing reproduction and benchmarking.</li>
-<li>VLM pre-training: studied with different data and networks, making benchmarking a very challenging task. also use non-public training data, or require intensive computation resources.</li>
-<li>VLM knowledge distillation: adopt different task-specific backbones, which complicates benchmarking.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="challenges">Challenges<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#challenges" class="hash-link" aria-label="Challenges에 대한 직접 링크" title="Challenges에 대한 직접 링크">​</a></h2>
-<ul>
-<li>VLM pre-training<!-- -->
-<ul>
-<li><strong>Fine-grained vision-language correlation modelling</strong>: can better recognize patches and pixels beyond images, greatly benefiting dense prediction tasks</li>
-<li><strong>Unification of vision and language learning</strong>: enables efficient communications across data modalities which can benefit both training effectiveness and training efficiency.</li>
-<li><strong>Pre-training VLMs with multiple languages</strong>: could introduce bias in term of cultures and regions and hinder VLM applications in other language areas.</li>
-<li><strong>Data-efficient VLMs</strong>: instead of merely learning from each image-text pair, more useful information could be learned with the supervision among image-text pairs.</li>
-<li><strong>Pre-training VLMs with LLMs</strong>: employ LLMs to augment the texts in the raw image-text pairs, which provides richer language knowledge and helps better learn vision-language correlation.</li>
-</ul>
-</li>
-<li>VLM Transfer Learning<!-- -->
-<ul>
-<li><strong>Unsupervised VLM transfer</strong>: much lower risk of overfitting than few-shot supervised transfer.</li>
-<li><strong>VLM transfer with visual prompt/adapter</strong>: Existing studies focus on text prompt learning. Visual prompt learning or visual adapter, which is complementary to text prompting and can enable pixel-level adaptation in various dense prediction tasks.</li>
-<li><strong>Test-time VLM transfer</strong>: Existing studies conduct transfer by fine-tuning VLMs on each downstream task (i.e., prompt learning), leading to repetitive efforts while facing many downstream tasks. Adapting prompts on the fly during inference can circumvent the repetitive training in existing VLM transfer.</li>
-<li><strong>VLM transfer with LLMs</strong>: Different from prompt engineering and prompt learning, exploit LLMs to generate text prompts that better describe downstream tasks. This approach is automatic and requires little labelled data.</li>
-</ul>
-</li>
-<li>VLM knowledge distillation<!-- -->
-<ul>
-<li><strong>Knowledge distillation from multiple VLMs</strong>: harvest their synergistic effect by coordinating knowledge distillation from multiple VLMs.</li>
-<li><strong>Knowledge distillation for other visual recognition tasks</strong>: leverage the knowledge distilled from VLMs to improve performance on other visual recognition tasks. (instance segmentation, panoptic segmentation, person reidentification)</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/16/vision-language-models-for-vision-tasks-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Zhang, J., Huang, J., Jin, S., &amp; Lu, S. (2024). Vision-Language Models for Vision Tasks: A Survey. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(8), 5625–5644. <code>https://doi.org/10.1109/TPAMI.2024.3369699</code></li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
