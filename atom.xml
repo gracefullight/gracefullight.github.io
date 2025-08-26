@@ -2,11 +2,181 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-25T10:15:17.132Z</updated>
+    <updated>2025-08-26T05:29:06.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introduction to AI @004]]></title>
+        <id>https://gracefullight.dev/2025/08/26/introduction-to-ai-004/</id>
+        <link href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/"/>
+        <updated>2025-08-26T05:29:06.764Z</updated>
+        <summary type="html"><![CDATA[Introduction to AI @004]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="influencing-improvement">Influencing improvement<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#influencing-improvement" class="hash-link" aria-label="Influencing improvement에 대한 직접 링크" title="Influencing improvement에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Agent's component</li>
+<li>Agent's prior knowledge, which influence that mode lit builds</li>
+<li>the feedback available to learn from.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="components">Components<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#components" class="hash-link" aria-label="Components에 대한 직접 링크" title="Components에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Given an intelligent agent that performs some intelligent tasks, any components of agent program can be improved by learning.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="prior-knowledge">Prior knowledge<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#prior-knowledge" class="hash-link" aria-label="Prior knowledge에 대한 직접 링크" title="Prior knowledge에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Inductive learning (귀납적 학습): learning a general function or rule (possibly incorrect) from specific input-output pairs<!-- -->
+<ul>
+<li>Bottom to top</li>
+<li>Specific to general</li>
+</ul>
+</li>
+<li>Deductive learning (연역적 학습): going from a general rule to a new specific rule that is logically entailed, but is useful because it allows more efficient processing<!-- -->
+<ul>
+<li>Top to bottom</li>
+<li>general to specific</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="feedback">Feedback<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#feedback" class="hash-link" aria-label="Feedback에 대한 직접 링크" title="Feedback에 대한 직접 링크">​</a></h3>
+<ul>
+<li><strong>feedback</strong> on its percept sequence</li>
+<li><strong>no feedback</strong> on its percept sequence</li>
+<li><strong>rewards</strong> for taking a sequence of actions based on its percept sequence</li>
+</ul>
+<table><thead><tr><th>-</th><th>Supervised Learning</th><th>Unsupervised Learning</th></tr></thead><tbody><tr><td>Training Data</td><td>labeled</td><td>unlabeled</td></tr><tr><td>Computational complexity</td><td>simpler</td><td>Computationally complex</td></tr><tr><td>Accuracy</td><td>high</td><td>less accurate</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="supervised-learning">Supervised learning<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#supervised-learning" class="hash-link" aria-label="Supervised learning에 대한 직접 링크" title="Supervised learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>the agent observes some examples of input-output pairs first and then learns a function or a relationship that maps from inputs to output.</li>
+<li>Attributes/Features: the inputs are independent variables in the problem domain</li>
+<li>Target attribute: the output is the dependent variable which is dependent on the inputs.</li>
+<li>Model: the learned function or relationship</li>
+<li>The agent learns a model using examples and uses this model to predict the outcomes for new inputs.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="unsupervised-learning">Unsupervised learning<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#unsupervised-learning" class="hash-link" aria-label="Unsupervised learning에 대한 직접 링크" title="Unsupervised learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>The agent collects adequate examples in the problem domain but it does not get any explicit feedback to the examples.</li>
+<li>The agent can make sense of the examples through identifying clusters or frequent patterns in the data.</li>
+<li>When shown a large number of examples, the agent can learn to identify clusters of similar examples.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="reinforcement-learning">Reinforcement learning<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#reinforcement-learning" class="hash-link" aria-label="Reinforcement learning에 대한 직접 링크" title="Reinforcement learning에 대한 직접 링크">​</a></h4>
+<ul>
+<li>the agent learns from a series of actions which can be rewards or punishments to improve its performance in completing the task under consideration.</li>
+<li>the feedback helps the agent to enforce positive actions and reduce the negative actions through adjusting the policy.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="supervised-learning-technique">Supervised Learning Technique<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#supervised-learning-technique" class="hash-link" aria-label="Supervised Learning Technique에 대한 직접 링크" title="Supervised Learning Technique에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Decisinon tree</li>
+<li>Random forests</li>
+<li>Linear regrasssion</li>
+<li>Logistic regression</li>
+<li>K nearest neighbours</li>
+<li>Support vector machines</li>
+<li>Neural networks</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="regression-problem">Regression problem<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#regression-problem" class="hash-link" aria-label="Regression problem에 대한 직접 링크" title="Regression problem에 대한 직접 링크">​</a></h3>
+<ul>
+<li>to predict a continuous value as the output for a given input</li>
+<li>weather temperature: solar radiation, wind direction and speed, geographic location..</li>
+<li>how to predict the output value of a new data instance on the basis of observed features from the existing data (historical examples) in the problem domain.</li>
+<li><strong>Elements</strong>
+<ul>
+<li>Collection of existing or historical data samples which are represented by a set of attributes or independent variables</li>
+<li>The output values of the existing data samples<!-- -->
+<ul>
+<li>the output variable or attribute must be continuous</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Regressor</strong>: a function describes the relationship between the attributes of a data sample and the output.<!-- -->
+<ul>
+<li>takes the values of attributes of a data sample and predicts the output value of this given data sample.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="evaluate-a-regressor">Evaluate a regressor<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#evaluate-a-regressor" class="hash-link" aria-label="Evaluate a regressor에 대한 직접 링크" title="Evaluate a regressor에 대한 직접 링크">​</a></h4>
+<ul>
+<li>R Square/Adjust R Square</li>
+<li>MSE Mean Square Error/RMSE Root Mean Square Error</li>
+<li>MAD Mean Absolute Error</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="examples-of-regression-problems">Examples of regression problems<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#examples-of-regression-problems" class="hash-link" aria-label="Examples of regression problems에 대한 직접 링크" title="Examples of regression problems에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Predict the fuel price using the Brent crude oil price, financial performance of the oil related companies (cash flow, projects lined up, etc.) and/or  geopolitical risks (OPEC announcements, government sanctions, etc.)</li>
+<li>Predict the house price of a suburb from the suburb's profile</li>
+<li>Predict the blood pressure of a patient based on the patient's health profile</li>
+<li>Predict the electricity price using temperature, demand and time.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="classification-problem">Classification problem<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#classification-problem" class="hash-link" aria-label="Classification problem에 대한 직접 링크" title="Classification problem에 대한 직접 링크">​</a></h3>
+<ul>
+<li>to predict discrete or categorical value as the output for a given input</li>
+<li>Pass or Failed given learning outcomes, student ID, prior learning, attitude, commitment and attendance.</li>
+<li>how to put a new data instance into one of predefined categories or classes on the basis of observed features from the existing data in the problem domain.</li>
+<li><strong>Elements</strong>
+<ul>
+<li>Collection of existing or historical data samples with class labels</li>
+<li>Predefined categories or classes</li>
+<li>Adequate samples in each category or class in the existing or historical data.</li>
+</ul>
+</li>
+<li><strong>Logic-based techniques</strong>
+<ul>
+<li>Decision tree</li>
+<li>Learning set of rules</li>
+</ul>
+</li>
+<li><strong>Perceptron-based techniques</strong>
+<ul>
+<li>Single-layer perceptron</li>
+<li>Multi-layer perceptron</li>
+<li>RBF network</li>
+</ul>
+</li>
+<li><strong>SVM</strong></li>
+<li><strong>Statistical learning techniques</strong>
+<ul>
+<li>Naive Bayes classifier</li>
+<li>Bayesian networks</li>
+</ul>
+</li>
+<li><strong>Instance-based learning</strong>
+<ul>
+<li>K-nearest neighbor (KNN)</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="evaluate-a-classifier">Evaluate a classifier<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#evaluate-a-classifier" class="hash-link" aria-label="Evaluate a classifier에 대한 직접 링크" title="Evaluate a classifier에 대한 직접 링크">​</a></h4>
+<ul>
+<li>Confusion matrix</li>
+<li>Precision</li>
+<li>Recall/Sensitivity</li>
+<li>Specificity</li>
+<li>F1-Score</li>
+<li>Area Under Curve &amp; Receiver Operating Characteristics Curve (AUC-ROC)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_IhMp" id="examples-of-classification-problems">Examples of classification problems<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#examples-of-classification-problems" class="hash-link" aria-label="Examples of classification problems에 대한 직접 링크" title="Examples of classification problems에 대한 직접 링크">​</a></h4>
+<ul>
+<li>banking, healthcare, medical diagnosis, marketing (sentiment aalysis), telecommunication, agriculture, security (fraud detection).</li>
+<li>e-mails into spam or non-spam class</li>
+<li>loan applications into an approved or a rejected class.</li>
+<li>patients into having a certain disease or not having that disease groups.</li>
+<li>text into positive or negative sentiment.</li>
+<li>customers into churn or non-churn classes.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="overfitting">Overfitting<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#overfitting" class="hash-link" aria-label="Overfitting에 대한 직접 링크" title="Overfitting에 대한 직접 링크">​</a></h3>
+<ul>
+<li>general phenomenon with all types of learning models.</li>
+<li>a modeling error that occurs when a function is too closely or exactly fit to a limited set of data points.</li>
+<li>more likely as the complexity of models and the number of input attributes increase</li>
+<li>less likely as the number of training examples is large.</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="iai" term="iai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of software development @005]]></title>
         <id>https://gracefullight.dev/2025/08/25/fundamentals-of-software-development-005/</id>
@@ -1225,30 +1395,5 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of software development @004]]></title>
-        <id>https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/</id>
-        <link href="https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/"/>
-        <updated>2025-08-18T00:17:57.360Z</updated>
-        <summary type="html"><![CDATA[Fundamentals of software development @004]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="match">match<a href="https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/#match" class="hash-link" aria-label="match에 대한 직접 링크" title="match에 대한 직접 링크">​</a></h2>
-<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">match</span><span class="token plain"> term</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">case</span><span class="token plain"> pattern</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    action</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">case</span><span class="token plain"> pattern</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    action</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">case</span><span class="token plain"> pattern</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">3</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    action</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">3</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># the underscore _ case executes the default code</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">case</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">_</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    action</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">default</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="repetition-statements">Repetition Statements<a href="https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/#repetition-statements" class="hash-link" aria-label="Repetition Statements에 대한 직접 링크" title="Repetition Statements에 대한 직접 링크">​</a></h2>
-<ul>
-<li>The count-controlled repetition: a fixed number of times.</li>
-<li>The sentinel-controlled repetition: a designated value that ends the loop.</li>
-<li>The infinite repetition: continues until externally stopped.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="the-for-loop">The For Loop<a href="https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/#the-for-loop" class="hash-link" aria-label="The For Loop에 대한 직접 링크" title="The For Loop에 대한 직접 링크">​</a></h3>
-<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">value</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token builtin">range</span><span class="token plain"> of values</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">code</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
-<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token builtin">sum</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># [1, 2, ..., 19]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># adds values from 1 to 19 to sum</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> e </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">20</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token builtin">sum</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> e</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string-interpolation string" style="color:#e3116c">f"The sum is: </span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">{</span><span class="token string-interpolation interpolation builtin">sum</span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">}</span><span class="token string-interpolation string" style="color:#e3116c">"</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="loop-and-a-half">Loop-And-A-Half<a href="https://gracefullight.dev/2025/08/18/fundamentals-of-software-development-004/#loop-and-a-half" class="hash-link" aria-label="Loop-And-A-Half에 대한 직접 링크" title="Loop-And-A-Half에 대한 직접 링크">​</a></h3>
-<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token plain">n </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">5</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin">sum</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">10</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token builtin">sum</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> n</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token builtin">sum</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">100</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">break</span><br></span></code></pre></div></div>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fsd" term="fsd"/>
     </entry>
 </feed>
