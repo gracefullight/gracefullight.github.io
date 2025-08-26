@@ -151,3 +151,79 @@ tags:
 ### Implement Decision Tree
 
 - the split (a feature and a condition) that leads to the lowest *impurity* in the resulting child nodes, in a greedy manner
+- For categorical features: each unique value can be a split condition.
+- For continuous features: midpoints between consecutive sorted unique values are used as split conditions.
+- For each potential split condition, the algorithm calculates the impurity of the resulting child nodes.
+- The lowest impurity node becomes the split point for that branch.
+- The process is then repeated recursively for each child node until all leaf nodes are pure, or the stopping criteria are met.
+
+### The selectino of best split attributes
+
+- **ID3**: employs a top-down, greedy search through the space of possible branches with no backtracking *using information gain*
+- C4.5: *using information gain ratio*
+- CART: *using Gini Index*
+- Gini Index
+- Chi-Square
+- Reduction in Variance
+
+### Entropy
+
+> the fundamental quantity in information theory. It is a measure of the uncertainty of a random variable.
+
+- the fundamental quantity in information theory. It is a measure of the uncertainty of a random variable
+- A more homogeneous node with a clear majority class has low impurity and low entropy, while a more mixed distribution of classes has high impurity and high entropy.
+
+### Information gain
+
+> the decrease in entropy.
+
+- The information gain from the attribute test on (split on A) is the expected reduction in entropy.
+- Information gain computes the difference between entropy before the split and average entropy after the split of the dataset based on given attribute values
+- $Entropy(S) = - \sum_{} p_i \log_2 p_i$
+- $Gain(S,A)=Entropy(S) − Entropy_{remain}(S,A)$
+
+### Gini index
+
+- **For classification**, another impurity measure commonly used for classification tasks in decision trees.
+- a lower Gini index indicates lower impurity, meaning that the samples in the node predominantly belong to a single class
+- a bit more computational efficient than entropy as it does not involve logarithm calculations. but results are quite similar.
+- $Gini(S) = 1 - \sum_{i=1}^{K} p_i^2$
+
+### Variance
+
+- **For regression tree**, the target variable is continuous rather than categorical.
+- use variance as a measure of impurity in regression trees.
+- lower variance indicates that the data points are closely clustered around the mean
+- $Var(S) = \frac{1}{N} \sum_{} (y_i - \mu)^2$
+
+### Prediction
+
+- For classification tasks: the predicted class label is **the majority class** among the training samples in the leaf node.
+- For regression tasks: the predicted value is **the mean of the target values** of the training samples in the leaf node.
+
+### Dealing with Overfitting
+
+- **Overfitting**: a common issue in decision trees, where the model captures noise or outliers in the training data rather than the underlying pattern.
+- the model performs poorly when applied to new, unseen data.
+
+#### Setting Stopping Criteria
+
+- prevent the tree from becoming overly complex, which may lead to overfitting
+- applied during the tree construction process
+- limiting the maximum depth of the tree
+- setting a minimum number of samples per leaf node
+- requiring a minimum impurity decrease for a split
+
+#### Pruning Strategies
+
+- applied after the tree has been fully grown
+- removing branches from the fully grown tree to simplify its structure
+- ensure that it captures the underlying patterns in the data rather than noise or outliers
+- Pruned trees perform significantly better than unpruned trees when the data contain a large amount of noise.
+
+#### Ensemble Methods
+
+- combine multiple decision trees to form a more robust and accurate model.
+- address overfitting by averaging the predictions of the individual trees, reducing variance and improving generalization.
+- Random Forests
+- Gradient Boosted Trees
