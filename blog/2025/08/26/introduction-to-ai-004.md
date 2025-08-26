@@ -227,3 +227,31 @@ tags:
 - address overfitting by averaging the predictions of the individual trees, reducing variance and improving generalization.
 - Random Forests
 - Gradient Boosted Trees
+
+### Random Forest
+
+> combines multiple weak decision tree models to create a stronger learning model.
+
+- two types of randomness are introduced to ensure that the individual decision trees are diverse and less prone to overfitting.
+- **Random sampling of the input data**
+- **Bootstraping**:
+  - involves sampling with replacement 복원추출 (meaning that some instances appearing multiple times and others not appearing) from the original dataset, creating a new dataset.
+  - each decision tree is trained on a slightly different set of data points, reducing the likelihood of overfitting.
+- **Random selection of features at each split**
+  - At each split in each decision tree, a random subset of features is considered when determining the best split.
+  - each tree in the ensemble does not rely on the same set of features for making decisions, resulting in a more diverse set of trees.
+  - By considering only a subset of features at each split, the model is less likely to be influenced by a small number of dominant features, leading to a more balanced and accurate prediction.
+
+| 구분 | 데이터 무작위성 (Bootstrapping) | 속성 무작위성 (Feature Subset Selection) |
+|---|---|---|
+| 적용 위치 | 트리 **훈련 데이터** 선택 단계 | 트리의 **각 분할(split)** 단계 |
+| 방법 | 원본 데이터셋에서 **복원 추출**(with replacement)로 샘플링하여 새로운 학습용 부분집합 생성 | 전체 속성 중 무작위로 **일부 속성만** 선택 후, 그 속성들로만 분할 기준 탐색 |
+| 특징 | - 각 나무가 다른 데이터 포인트로 학습됨<br>- 일부 샘플은 여러 번 등장, 일부는 제외될 수 있음 | - 각 분할이 다른 속성을 사용 가능<br>- 동일한 속성에 과도하게 의존하지 않음 |
+| 효과 | - 트리 간의 **데이터 다양성** 확보<br>- 과적합 감소 | - 트리 간의 **속성 다양성** 확보<br>- 소수 지배적 속성의 영향 축소 |
+| 결과 | 더 다양한 데이터 시나리오를 반영한 트리들 생성 | 더 다양한 의사결정 규칙을 반영한 트리들 생성 |
+
+#### Predict with Random Forest
+
+- aggregating the predictions of all individual decision trees in the forest.
+- **Majority voting**: For classification, Count the number of times each class is predicted by the individual decision trees. The class with the highest count is considered as the final prediction.
+- **Averaging**: For regression, Calculate the mean of the predictions made by the individual decision trees. The mean value is considered as the final prediction.
