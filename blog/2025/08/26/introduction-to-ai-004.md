@@ -139,3 +139,15 @@ tags:
 - a modeling error that occurs when a function is too closely or exactly fit to a limited set of data points.
 - more likely as the complexity of models and the number of input attributes increase
 - less likely as the number of training examples is large.
+
+## Decision Tree
+
+- if-then statements to define patterns in data
+- A if-then statement splits the training data into two or more branches based on some values
+- **Best Split**: The results of each branch should be as homogeneous as possible, or has the lowest *impurity* possible.
+  - Information gain
+  - Gini index
+
+### Implement Decision Tree
+
+- the split (a feature and a condition) that leads to the lowest *impurity* in the resulting child nodes, in a greedy manner
