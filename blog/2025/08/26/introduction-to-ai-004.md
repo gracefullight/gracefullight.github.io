@@ -246,8 +246,8 @@ tags:
 |---|---|---|
 | 적용 위치 | 트리 **훈련 데이터** 선택 단계 | 트리의 **각 분할(split)** 단계 |
 | 방법 | 원본 데이터셋에서 **복원 추출**(with replacement)로 샘플링하여 새로운 학습용 부분집합 생성 | 전체 속성 중 무작위로 **일부 속성만** 선택 후, 그 속성들로만 분할 기준 탐색 |
-| 특징 | - 각 나무가 다른 데이터 포인트로 학습됨<br>- 일부 샘플은 여러 번 등장, 일부는 제외될 수 있음 | - 각 분할이 다른 속성을 사용 가능<br>- 동일한 속성에 과도하게 의존하지 않음 |
-| 효과 | - 트리 간의 **데이터 다양성** 확보<br>- 과적합 감소 | - 트리 간의 **속성 다양성** 확보<br>- 소수 지배적 속성의 영향 축소 |
+| 특징 | - 각 나무가 다른 데이터 포인트로 학습됨<br/>- 일부 샘플은 여러 번 등장, 일부는 제외될 수 있음 | - 각 분할이 다른 속성을 사용 가능<br/>- 동일한 속성에 과도하게 의존하지 않음 |
+| 효과 | - 트리 간의 **데이터 다양성** 확보<br/>- 과적합 감소 | - 트리 간의 **속성 다양성** 확보<br/>- 소수 지배적 속성의 영향 축소 |
 | 결과 | 더 다양한 데이터 시나리오를 반영한 트리들 생성 | 더 다양한 의사결정 규칙을 반영한 트리들 생성 |
 
 #### Predict with Random Forest
@@ -255,3 +255,53 @@ tags:
 - aggregating the predictions of all individual decision trees in the forest.
 - **Majority voting**: For classification, Count the number of times each class is predicted by the individual decision trees. The class with the highest count is considered as the final prediction.
 - **Averaging**: For regression, Calculate the mean of the predictions made by the individual decision trees. The mean value is considered as the final prediction.
+
+## Linear regression
+
+> **a learning technique that finds a linear relationship between input variables and the target variable** based on a fundamental assumption that there is a linear relationship between input variables and the target variable
+
+- e.g. the input variables (engine size, weight and car age) ➡️ target variable (car fuel efficiency)
+  - assumption that there is a linear relationship
+- A linear regression technique learns a set of coefficients to estimate the linear relationship between $x$ and $y$, denoted as $h_w$, which can be represented by the following equation.
+  - $$h\_w(x) = w_0 + w_1x_1 + ... + w_nx_n = \sum_{i=0}^{n} w_ix_i$$
+  - $w$ is a **weight vector**
+  - $$\hat{y} = \sum_{i=0}^{n} w_ix_i$$
+- linear regression model is an approximate function between the input variables and the target variable, **there will be an error between the output of the model and the actual output value for a data sample**
+  - This error can be represented by a loss function, which calculates the mean square error
+  - $$Loss(h_w) = \frac{1}{2m}\sum_{j=1}^{m}(h_w(x_j) - y_j)^2 = \frac{1}{2m}\sum_{j=1}^{m}(y_j - \sum_{i=0}^{n} w_ix_{j,i})^2$$
+- **for solving regression problems**
+
+### Solving a linear regression problem
+
+- to find the best linear relationship $h_w$that best fits the training data of $m$ data samples.
+  - makes the loss to be minimised.
+- to find the best weight vector $w^*$, such that for a given training dataset of $m$ data samples.
+  - $w^* = \arg\min_{w} Loss(h_w)$
+- **gradient descent**: continuously resamples the gradient of the weight coefficients in the opposite direction depending on the weight $w$.
+  - Until the loss function $Loss(h_w)$ reaches the global minimum
+  - to change the individual components of $w$ a little bit in the direction that minimises $Loss(h_w)$, and to do this many times.
+- $$w_i \;\leftarrow\; w_i + \alpha \sum_{j=1}^{m} x_{j,i} \Big( y_j - h_w(x_j) \Big)$$
+  - $\alpha$: the step size, **the learning rate**
+- **Training model**: the process of iteratively updating weights with a learning rate to minimise loss, where the final weight vector defines the model used for predicting new data.
+- use regularisation on a multivariate linear function to avoid overfitting.
+- **Batch gradient descent**: consider the entire training dataset $(X, y)$ at once.
+  - $w_0 \;\leftarrow\; w_0 + \alpha \sum_{j=1}^{m} \Big(y_j - (w_0 + w_1 x_j)\Big)$
+  - $w_1 \;\leftarrow\; w_1 + \alpha \Big(\sum_{j=1}^{m} (y_j - (w_0 + w_1 x_j)) \cdot x_j\Big)$
+- **Stochastic gradient descent (SGD)**: consider only a single training data sample $(x_j, y_j)$ at a time.
+  - $w_0 \leftarrow w_0 + \alpha \big( y_j - (w_0 + w_1 x_j) \big)$
+  - $w_1 \leftarrow w_1 + \alpha \big( (y_j - (w_0 + w_1 x_j)) \cdot x_j \big)$
+  - can be used in an online setting, where new data is coming one at a time, or offline, where we cycle through the same data as many times as is necessary, taking a step after considering each single example.
+  - With a fixed learning rate $\alpha$, the stochastic version does not guarantee convergence.
+  - often faster than batch gradient descent.
+  - With a schedule of decreasing learning rates (SA), the stochastic version does guarantee convergence.
+- These update rules are derived as the next weight update equations by taking the partial derivatives of the loss function with respect to $w_0$ and $w_1$.
+
+### Logistic Regression
+
+> an extension of linear regression in such a way that the output of a linear regression model goes through a logistic function
+
+- $$y(x) = \frac{1}{1 + e^{-x}}$$
+- The output value of this logistic function is between 0 and 1.
+- 0 is for certainly being labeled "0" and 1 is for certainly being labeled "1", and **a value between 0 and 1 represents the probability of being labeled "1"**
+- a logistic regression model: a linear regression model + a logistic function
+- **mainly for solving classification problems**
