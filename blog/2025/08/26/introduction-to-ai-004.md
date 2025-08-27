@@ -456,7 +456,7 @@ $$F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$$
 - It is particularly useful when dealing with imbalanced datasets, where one class is significantly more prevalent than the other.
 - It's useful for imbalanced datasets to balance precision and recall.
 
-## Regression evalucation metrics
+## Regression evaluation metrics
 
 ### Mean Absolute Error (MAE)
 
