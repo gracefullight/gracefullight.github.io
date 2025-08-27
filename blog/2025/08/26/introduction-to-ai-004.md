@@ -408,18 +408,32 @@ tags:
 
 ## Classification evaluation metrics
 
+| 용어 | 설명 |
+|------|------|
+| True Positive (TP) | 실제 1, 예측 1 |
+| True Negative (TN) | 실제 0, 예측 0 |
+| False Positive (FP) | 실제 0, 예측 1 (0을 잘못 1로 예측) |
+| False Negative (FN) | 실제 1, 예측 0 (1을 놓쳐서 0으로 예측) |
+
 - **Accuracy**: the proportion of correctly classified instances (data points or samples) among the total instances.
   - a ratio of the number of correct predictions
   - $Accuracy = \frac{TP + TN}{\text{Total number of predictions}}$
+  - it may not be suitable for imbalanced datasets where the class distribution is skewed
+    - a model that always predicts the majority class will have high accuracy but may not be useful in practice.
 - **Precision**: the proportion of true positives among all positive predictions.
   - the model's ability to not mistakenly view negatives as positives
   - A high precision value indicates that the model has made fewer false positive predictions.
   - $Precision = \frac{TP}{\text{number of positive predictions}} = \frac{TP}{TP + FP}$
+  - it's useful to minimize the number of false positives.
 - **Recall**: Sensitivity, True Positive Rate, the proportion of true positive instances among the actual positive instances
   - the model's ability to not mistakenly view actual positives as negatives
   - A high recall value indicates that the model has successfully identified a large portion of the actual positive instances
   - $Recall = \frac{TP}{\text{number of positive instances}} = \frac{TP}{TP + FN}$
+  - it's useful when the cost of false negatives is high
+    - e.g. in medical diagnosis, where failing to identify a disease can have severe consequences
 - **F1 Score**: the harmonic mean of precision and recall
   - a balanced evaluation of the model's performance
   - It is particularly useful when dealing with imbalanced datasets, where one class is significantly more prevalent than the other.
   - $F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$
+  - It's useful for imbalanced datasets to balance precision and recall.
+  
