@@ -1,7 +1,7 @@
 ---
-title: CLIPort review
+title: CLIPort Review
 date: 2025-08-21T23:02:02.850+10:00
-description: CLIPort review
+description: CLIPort Review
 authors: me
 tags:
   - vlm
