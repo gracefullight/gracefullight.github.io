@@ -40,3 +40,9 @@ tags:
 | Preliminary | serving as a preparation or introduction | initial or preparatory | 예비의, 준비의 |
 | Owing to | because of | due to | ~때문에, ~덕분에 |
 | trajectory | the path followed by a moving object | path or course | 궤적 |
+| quadratic | relating to a polynomial of the second degree | second-degree | 이차의 |
+| stationarity | the property of a process whose statistical properties do not change over time | stability | 정상성 |
+| pseudoinverse | a generalization of the inverse matrix for non-square matrices | generalized inverse | 유사 역행렬 |
+| logarithmic | relating to the logarithm of a quantity | log-based | 로그의 |
+| spherical | relating to a sphere | sphere-based | 구형의 |
+| interchangeable | able to be exchanged or replaced with something else | replaceable | 교체 가능한 |
