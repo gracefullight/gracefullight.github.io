@@ -405,3 +405,21 @@ tags:
   - kernel trick is to plug a kernel function $K(x_j \cdot x_k)$ into the dual optimisation problem to replace $(x_j \cdot x_k)$
   - Optimal linear separators can be found efficiently in feature spaces with billions of (or, in some cases, infinitely many) dimensions.
   - we can learn in the higher-dimensional space, but we compute only kernel functions rather than the full list of features for each data point.
+
+## Classification evaluation metrics
+
+- **Accuracy**: the proportion of correctly classified instances (data points or samples) among the total instances.
+  - a ratio of the number of correct predictions
+  - $Accuracy = \frac{TP + TN}{\text{Total number of predictions}}$
+- **Precision**: the proportion of true positives among all positive predictions.
+  - the model's ability to not mistakenly view negatives as positives
+  - A high precision value indicates that the model has made fewer false positive predictions.
+  - $Precision = \frac{TP}{\text{number of positive predictions}} = \frac{TP}{TP + FP}$
+- **Recall**: Sensitivity, True Positive Rate, the proportion of true positive instances among the actual positive instances
+  - the model's ability to not mistakenly view actual positives as negatives
+  - A high recall value indicates that the model has successfully identified a large portion of the actual positive instances
+  - $Recall = \frac{TP}{\text{number of positive instances}} = \frac{TP}{TP + FN}$
+- **F1 Score**: the harmonic mean of precision and recall
+  - a balanced evaluation of the model's performance
+  - It is particularly useful when dealing with imbalanced datasets, where one class is significantly more prevalent than the other.
+  - $F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$
