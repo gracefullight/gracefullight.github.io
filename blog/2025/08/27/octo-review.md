@@ -1,7 +1,7 @@
 ---
 title: Octo Review
 date: 2025-08-27T20:54:09.447+10:00
-description: Octo review
+description: Octo, An Open-Source Generalist Robot Policy Review
 authors: me
 tags:
   - vlm
