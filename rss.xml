@@ -574,7 +574,7 @@ where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.
 <li>It is particularly useful when dealing with imbalanced datasets, where one class is significantly more prevalent than the other.</li>
 <li>It's useful for imbalanced datasets to balance precision and recall.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="regression-evalucation-metrics">Regression evalucation metrics<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#regression-evalucation-metrics" class="hash-link" aria-label="Regression evalucation metrics에 대한 직접 링크" title="Regression evalucation metrics에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="regression-evaluation-metrics">Regression evaluation metrics<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#regression-evaluation-metrics" class="hash-link" aria-label="Regression evaluation metrics에 대한 직접 링크" title="Regression evaluation metrics에 대한 직접 링크">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="mean-absolute-error-mae">Mean Absolute Error (MAE)<a href="https://gracefullight.dev/2025/08/26/introduction-to-ai-004/#mean-absolute-error-mae" class="hash-link" aria-label="Mean Absolute Error (MAE)에 대한 직접 링크" title="Mean Absolute Error (MAE)에 대한 직접 링크">​</a></h3>
 <blockquote>
 <p>the average of the absolute differences between the predicted values and the actual values</p>
