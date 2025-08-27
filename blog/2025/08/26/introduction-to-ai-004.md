@@ -356,6 +356,7 @@ tags:
 
 - supervised learning, binary classification
 - SVM chooses the boundary with the maximum possible geometric margin, which has the largest distance to the nearest training data points of any class
+- initially designed for binary classification problems but can also be applied for solving multi-class classification problems
 
 ### Linear discriminant
 
@@ -377,5 +378,30 @@ tags:
   - $\gamma_i = y_i \left( \frac{w}{\|w\|} \cdot x_i + \frac{w_0}{\|w\|} \right)$
 - **primary optimization problem**: to maximize the minimal geometric distance across the training dataset of m samples.
   - $$\max_{w, w_0} \Big( \min_{i=1,\ldots,N} \gamma_i \Big) = \max_{w, w_0} \Big( \min_{i=1,\ldots,N} \Big( y_i \Big( \frac{w}{\|w\|} \cdot x_i + \frac{w_0}{\|w\|} \Big) \Big) \Big)$$
+  - $\min_{w, w_0} \; \frac{1}{2}\|w\|^2$
   - $\text{s.t. } \; y_i (w \cdot x_i + w_0) \geq \min_{i=1,\ldots,N} \big( y_i (w \cdot x_i + w_0) \big)$
 - **dual optimization problem**: easier to solve. More importantly the dual optimisation problem enables the so-called kernel trick in SVM
+  - $\max_{\alpha} \; \sum_{i=1}^N \alpha_i - \frac{1}{2} \sum_{i=1}^N \sum_{j=1}^N \alpha_i \alpha_j y_i y_j (x_i \cdot x_j)$
+  - $\min_{\alpha} \; \frac{1}{2} \sum_{i=1}^N \sum_{j=1}^N \alpha_i \alpha_j y_i y_j \,(x_i \cdot x_j) \;-\; \sum_{i=1}^N \alpha_i$
+  - $\text{s.t.} \quad \sum_{i=1}^m \alpha_i y_i = 0, \quad \alpha_i \geq 0, \quad i=1,2,\ldots,N$
+
+### Attractive Properties
+
+- SVMs construct a maximum margin separator
+  - the largest possible distance to example points, helping to improve generalization
+- SVMs create a linear separating hyperplane
+  - **kernel trick**: to embed the data into a higher-dimensional space
+  - Often data that are not linearly separable in the original input space are easily separable in a higher-dimensional space
+  - In general (excepted some special cases) if we have $N$ data points then they will always be separable in spaces of $N$ dimensions or more
+- SVMs are a nonparametric method
+  - retain training examples and potentially need to store them all
+  - In practice, they often end up retaining only a small fraction of examples
+  - have the flexibility to represent complex functions, but they are resistant to overfitting
+- not usually expect to find a linear separator in the input space $x$, but we can find linear separators in the high-dimensional feature space $F(x)$ simply by replacing $(x_j x_k)$ in
+  - $argmax_{\alpha} \sum_{j}\alpha_j - \frac{1}{2} \sum_{j,k}\alpha_j \alpha_k y_j y_k (x_j \cdot x_k)$
+    - with $K(x_j, x_k) = F(x_j) \cdot F(x_k)$
+    - $F(x_j) \cdot F(x_k)$ can often be computed without first computing $F$ for each point.
+- In a higher dimensional feature space, which is created by transformation $F(x)$, if we can express $K(x_j \cdot x_k) = F(x_j) \cdot F(x_k)$, the kernel function $K(x_j \cdot x_k)$ can be applied to pairs of input data to evaluate dot product in some corresponding feature space.
+  - kernel trick is to plug a kernel function $K(x_j \cdot x_k)$ into the dual optimisation problem to replace $(x_j \cdot x_k)$
+  - Optimal linear separators can be found efficiently in feature spaces with billions of (or, in some cases, infinitely many) dimensions.
+  - we can learn in the higher-dimensional space, but we compute only kernel functions rather than the full list of features for each data point.
