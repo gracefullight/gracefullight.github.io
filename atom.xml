@@ -2,11 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-26T05:29:06.764Z</updated>
+    <updated>2025-08-27T10:54:09.447Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Octo Review]]></title>
+        <id>https://gracefullight.dev/2025/08/27/octo-review/</id>
+        <link href="https://gracefullight.dev/2025/08/27/octo-review/"/>
+        <updated>2025-08-27T10:54:09.447Z</updated>
+        <summary type="html"><![CDATA[Octo review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="octo">Octo<a href="https://gracefullight.dev/2025/08/27/octo-review/#octo" class="hash-link" aria-label="Octo에 대한 직접 링크" title="Octo에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation">Motivation<a href="https://gracefullight.dev/2025/08/27/octo-review/#motivation" class="hash-link" aria-label="Motivation에 대한 직접 링크" title="Motivation에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Traditional robot learning trains policies <strong>from scratch</strong> on robot/task-specific datasets → costly data collection, narrow generalization.</li>
+<li><strong>Generalist Robot Policies (GRPs)</strong> pretrained on diverse robots/tasks can be <strong>finetuned with little in-domain data</strong> while generalizing broadly.</li>
+<li>Real-world deployments face challenges across <strong>robot embodiments, sensor setups, action spaces, task specs, and environments</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="prior-grps--gaps">Prior GRPs &amp; Gaps<a href="https://gracefullight.dev/2025/08/27/octo-review/#prior-grps--gaps" class="hash-link" aria-label="Prior GRPs &amp; Gaps에 대한 직접 링크" title="Prior GRPs &amp; Gaps에 대한 직접 링크">​</a></h2>
+<ul>
+<li>GRPs aim for <strong>low-level visuomotor control</strong> across tasks, environments, and robotic systems.</li>
+<li>Existing models often have <strong>restricted inputs (e.g., a single camera)</strong>, <strong>lack efficient finetuning to new domains</strong>, and importantly, <strong>largest models are not publicly available</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="contribution-what-is-octo">Contribution (What is Octo?)<a href="https://gracefullight.dev/2025/08/27/octo-review/#contribution-what-is-octo" class="hash-link" aria-label="Contribution (What is Octo?)에 대한 직접 링크" title="Contribution (What is Octo?)에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Octo</strong>: a large transformer-based policy trained on <strong>800k trajectories</strong> from the Open X-Embodiment dataset.</li>
+<li>Accepts <strong>language instructions or goal images</strong>, and can be <strong>finetuned within hours on consumer GPUs</strong> to new sensors and action spaces.</li>
+<li><strong>First GRP</strong> to support <strong>effective finetuning to new observations and actions</strong> and to be <strong>fully open-source</strong> (training pipeline, checkpoints, data).</li>
+<li>Novelty lies in combining: <strong>transformer backbone + language/goal image conditioning + diffusion head</strong> for expressive action distributions.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="architecture">Architecture<a href="https://gracefullight.dev/2025/08/27/octo-review/#architecture" class="hash-link" aria-label="Architecture에 대한 직접 링크" title="Architecture에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Input tokenizers</strong>:<!-- -->
+<ul>
+<li>Language via pretrained <strong>T5-base</strong></li>
+<li>Images via shallow CNN → patch tokens</li>
+</ul>
+</li>
+<li><strong>Transformer backbone</strong>: processes unified token sequence.</li>
+<li><strong>Blockwise masking + Readout tokens</strong>:<!-- -->
+<ul>
+<li>Nonexistent modalities are masked</li>
+<li>Readout tokens <em>only attend</em> to past observations/tasks, not vice versa</li>
+</ul>
+</li>
+<li><strong>Diffusion action head</strong>: predicts <strong>continuous, multimodal, chunked actions</strong>.</li>
+<li><strong>Modularity</strong>: new sensors/outputs can be added by only training lightweight encoders or heads; pretrained backbone remains unchanged.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Octo Architecture" src="https://gracefullight.dev/assets/images/octo-architecture-49b9dd94643695f0566e74ac5a0801bd.png" width="803" height="415" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="training-data--objective">Training Data &amp; Objective<a href="https://gracefullight.dev/2025/08/27/octo-review/#training-data--objective" class="hash-link" aria-label="Training Data &amp; Objective에 대한 직접 링크" title="Training Data &amp; Objective에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Mixture of <strong>25 heterogeneous robot datasets</strong>: diverse robots, sensors (with/without wrist cams), labels (with/without language).</li>
+<li><strong>Conditional diffusion decoding</strong> predicts continuous, multimodal action distributions.<!-- -->
+<ul>
+<li>Transformer runs <strong>one forward pass</strong>; denoising steps are contained in the small diffusion head.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="experiments">Experiments<a href="https://gracefullight.dev/2025/08/27/octo-review/#experiments" class="hash-link" aria-label="Experiments에 대한 직접 링크" title="Experiments에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Evaluated on <strong>7 robotic platforms across 4 institutions</strong>.</li>
+<li>Key questions:<!-- -->
+<ol>
+<li>Zero-shot multi-robot control?</li>
+<li>Do Octo weights improve finetuning vs. scratch or standard pretrained representations?</li>
+<li>Which design choices matter for generalist robot policies?</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="results">Results<a href="https://gracefullight.dev/2025/08/27/octo-review/#results" class="hash-link" aria-label="Results에 대한 직접 링크" title="Results에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Achieves <strong>state-of-the-art zero-shot multi-robot control</strong>, competitive with RT-1-X and RT-2-X.</li>
+<li>Provides a <strong>versatile policy initialization</strong>: significantly outperforms baselines for <strong>data-efficient finetuning</strong> to new obs/action spaces.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--future-work">Limitations / Future Work<a href="https://gracefullight.dev/2025/08/27/octo-review/#limitations--future-work" class="hash-link" aria-label="Limitations / Future Work에 대한 직접 링크" title="Limitations / Future Work에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Needs <strong>better language conditioning</strong>, <strong>improved wrist camera support</strong>, and <strong>data beyond optimal demonstrations</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="one-line-takeaway">One-line Takeaway<a href="https://gracefullight.dev/2025/08/27/octo-review/#one-line-takeaway" class="hash-link" aria-label="One-line Takeaway에 대한 직접 링크" title="One-line Takeaway에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Octo = modular, efficient, open-source GRP</strong>:<br>
+<!-- -->A transformer + diffusion policy trained on large-scale multi-robot data that <strong>adapts quickly with little in-domain data</strong> to new sensors and action spaces, enabling broad generalization.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/27/octo-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Mees, O., Ghosh, D., Pertsch, K., Black, K., Walke, H. R., Dasari, S., Hejna, J., Kreiman, T., Xu, C., &amp; Luo, J. (2024). Octo: An open-source generalist robot policy. First Workshop on Vision-Language Models for Navigation and Manipulation at ICRA 2024.</li>
+</ul>
+<table><thead><tr><th>구분</th><th><strong>단순 비유 버전</strong></th><th><strong>실제 토큰화 버전</strong></th></tr></thead><tbody><tr><td><strong>언어</strong></td><td><code>[문장]</code></td><td><code>[l₁, l₂, l₃, …]</code> <br>→ 문장을 토큰화한 여러 개</td></tr><tr><td><strong>목표 이미지</strong></td><td><code>[목표]</code></td><td><code>[g₁, g₂, g₃, …]</code> <br>→ 이미지를 패치 단위로 쪼갠 여러 개</td></tr><tr><td><strong>관찰(시점 t)</strong></td><td><code>[관찰]</code></td><td><code>[oₜ¹, oₜ², oₜ³, …]</code> <br>→ 카메라 프레임/센서를 패치 단위로 토큰화</td></tr><tr><td><strong>리드토큰</strong></td><td><code>[ ]</code> (빈 슬롯)</td><td><code>[TR,t]</code> <br>→ 시점 t마다 하나 추가, 행동을 뽑는 전용 토큰</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vlm" term="vlm"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introduction to AI @004]]></title>
         <id>https://gracefullight.dev/2025/08/26/introduction-to-ai-004/</id>
@@ -1644,11 +1733,11 @@ Apply the hyperbolic tangent :: map the result smoothly into the range <span cla
         <category label="vocab" term="vocab"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[CLIPort review]]></title>
+        <title type="html"><![CDATA[CLIPort Review]]></title>
         <id>https://gracefullight.dev/2025/08/21/CLIPort-review/</id>
         <link href="https://gracefullight.dev/2025/08/21/CLIPort-review/"/>
         <updated>2025-08-21T13:02:02.850Z</updated>
-        <summary type="html"><![CDATA[CLIPort review]]></summary>
+        <summary type="html"><![CDATA[CLIPort Review]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="key-idea">Key Idea<a href="https://gracefullight.dev/2025/08/21/CLIPort-review/#key-idea" class="hash-link" aria-label="Key Idea에 대한 직접 링크" title="Key Idea에 대한 직접 링크">​</a></h2>
 <ul>
 <li>CLIPort proposes a <strong>two-stream architecture</strong> for vision-based manipulation:<!-- -->
@@ -1708,148 +1797,6 @@ Apply the hyperbolic tangent :: map the result smoothly into the range <span cla
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/21/CLIPort-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Shridhar, M., Manuelli, L., &amp; Fox, D. (2022). Cliport: What and where pathways for robotic manipulation. Conference on robot learning.</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mitigating Hallucinations on Object Attributes Review]]></title>
-        <id>https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/</id>
-        <link href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/"/>
-        <updated>2025-08-18T05:44:39.579Z</updated>
-        <summary type="html"><![CDATA[Mitigating Hallucinations on Object Attributes Review]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="overview">Overview<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#overview" class="hash-link" aria-label="Overview에 대한 직접 링크" title="Overview에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Introduces a <strong>HoOA benchmark</strong> that isolates hallucinations on <strong>object attributes</strong> (color, shape) from existence/relationship errors.</li>
-<li>Proposes <strong>MIAVLM</strong>: leverages <strong>multiview images</strong> (generated from a single image’s 3D representation) and a <strong>Multiview Attributes Perceiver (MAP)</strong> to make fusion <strong>order-invariant</strong>.</li>
-<li>Adds <strong>negative instructions</strong> during tuning to counter LVLMs’ tendency to answer "Yes".</li>
-<li>Results: best HoOA metric (<strong>0.775 / 0.787</strong>) with <strong>fastest inference</strong> (<strong>0.071 / 0.105 s</strong>). "9in1" tiling is ineffective; separate multiview inputs help.</li>
-<li>Training: LM loss, Adam (lr=0.001), cosine annealing, 20 epochs, single NVIDIA 3090.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="hallucinations-on-object-attributes-hooa">Hallucinations on Object Attributes (HoOA)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#hallucinations-on-object-attributes-hooa" class="hash-link" aria-label="Hallucinations on Object Attributes (HoOA)에 대한 직접 링크" title="Hallucinations on Object Attributes (HoOA)에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="issues">Issues<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#issues" class="hash-link" aria-label="Issues에 대한 직접 링크" title="Issues에 대한 직접 링크">​</a></h3>
-<ul>
-<li>HoOA = incorrect attribute descriptions for existing objects (distinct from HoOE/HoOR).</li>
-<li>Root causes analyzed:<!-- -->
-<ul>
-<li><strong>Single-view insufficiency</strong>: fine-grained details can be invisible from a single viewpoint.</li>
-<li><strong>Instruction bias</strong>: overexposure to positive/affirmative patterns → "Yes" bias.</li>
-<li><strong>Order sensitivity</strong>: multi-image inputs change predictions when view order changes.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="mitigation-methods-this-paper">Mitigation Methods (this paper)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#mitigation-methods-this-paper" class="hash-link" aria-label="Mitigation Methods (this paper)에 대한 직접 링크" title="Mitigation Methods (this paper)에 대한 직접 링크">​</a></h3>
-<ul>
-<li><strong>Multiview prompts</strong>: sample views from a single image’s 3D reconstruction to recover missed details.</li>
-<li><strong>MAP (order-invariant fusion)</strong>: learn view weights and fuse per-view features via <strong>weighted sum</strong>; input order has no effect; supports any number of views.</li>
-<li><strong>Negative instructions</strong>: incorporate "No"-answerable questions in tuning to suppress "Yes" bias.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="benchmark-hooa">Benchmark (HoOA)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#benchmark-hooa" class="hash-link" aria-label="Benchmark (HoOA)에 대한 직접 링크" title="Benchmark (HoOA)에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="construction">Construction<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#construction" class="hash-link" aria-label="Construction에 대한 직접 링크" title="Construction에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Based on <strong>CelebAText-HQ</strong>; manual attribute descriptions rewritten into <strong>Yes/No</strong> questions.<!-- -->
-<ul>
-<li><strong>Positive questions</strong> → correct answer "Yes".</li>
-<li><strong>Negative questions</strong> → attribute flipped/opposite → correct answer "No" (to expose "Yes" bias).</li>
-</ul>
-</li>
-<li>Scale: 1,430 images, 14,291 positive + 14,291 negative questions.</li>
-<li>Split: <strong>9:1</strong> train<!-- -->:test<!-- -->.</li>
-<li><strong>Metric</strong>: average of accuracy on positive and negative questions (balanced HoOA score).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="model-miavlm">Model: MIAVLM<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#model-miavlm" class="hash-link" aria-label="Model: MIAVLM에 대한 직접 링크" title="Model: MIAVLM에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="visual-extractor-ve">Visual Extractor (VE)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#visual-extractor-ve" class="hash-link" aria-label="Visual Extractor (VE)에 대한 직접 링크" title="Visual Extractor (VE)에 대한 직접 링크">​</a></h3>
-<ul>
-<li>6 stacked Transformer <strong>decoder</strong> blocks.</li>
-<li><strong>Soft prompts <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mrow><mi>l</mi><mo>×</mo><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P \in \mathbb{R}^{l \times d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8491em"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em">l</span><span class="mbin mtight">×</span><span class="mord mathnormal mtight">d</span></span></span></span></span></span></span></span></span></span></span></span></strong> are <strong>queries</strong>; <strong>image embeddings <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">e_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></strong> are <strong>keys/values</strong>.</li>
-<li>Per-view cross-attention computed <strong>in parallel</strong> (no autoregressive chaining; no assumed order).</li>
-<li>Per-view output:<!-- -->
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>o</mi><mi>i</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">x</mi></mrow><mtext> ⁣</mtext><mrow><mo fence="true">(</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>P</mi><msub><mi>W</mi><mi>Q</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub><mi>e</mi><mi>i</mi></msub><msub><mi>W</mi><mi>K</mi></msub><msup><mo stretchy="false">)</mo><mi mathvariant="normal">⊤</mi></msup></mrow><msqrt><mi>d</mi></msqrt></mfrac><mo fence="true">)</mo></mrow><msub><mi>e</mi><mi>i</mi></msub><msub><mi>W</mi><mi>V</mi></msub><mo separator="true">,</mo><mspace width="1em"></mspace><msub><mi>O</mi><mrow><mi>V</mi><mi>E</mi></mrow></msub><mo>=</mo><mo stretchy="false">{</mo><msub><mi>o</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>o</mi><mi>n</mi></msub><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">o_i = \mathrm{softmax}\!\left(\frac{(P W_Q)(e_i W_K)^\top}{\sqrt{d}}\right) e_i W_V,\quad O_{VE}=\{o_1,\dots,o_n\}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal">o</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:2.4761em;vertical-align:-0.95em"></span><span class="mord"><span class="mord mathrm">softmax</span></span><span class="mspace" style="margin-right:-0.1667em"></span><span class="mspace" style="margin-right:0.1667em"></span><span class="minner"><span class="mopen delimcenter" style="top:0em"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5261em"><span style="top:-2.1778em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9322em"><span class="svg-align" style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord" style="padding-left:0.833em"><span class="mord mathnormal">d</span></span></span><span style="top:-2.8922em"><span class="pstrut" style="height:3em"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1078em"><span></span></span></span></span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">Q</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">⊤</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.93em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em">V</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em"></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em">O</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em">V</span><span class="mord mathnormal mtight" style="margin-right:0.05764em">E</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">o</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal">o</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mord">.</span></span></span></span></span>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="multihead-sampler-ms">Multihead Sampler (MS)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#multihead-sampler-ms" class="hash-link" aria-label="Multihead Sampler (MS)에 대한 직접 링크" title="Multihead Sampler (MS)에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Learns <strong>view weights</strong> for fusion.</li>
-<li><strong>Decomposer (2-layer MLP)</strong> maps each view’s <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>C</mi><mi>L</mi><mi>S</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[CLS]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em">C</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="mclose">]</span></span></span></span> to <strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">m=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">4</span></span></span></span></strong> tokens <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msubsup><mi>e</mi><mi>i</mi><mn>1</mn></msubsup><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msubsup><mi>e</mi><mi>i</mi><mi>m</mi></msubsup><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{e_i^{1},\dots,e_i^{m}\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0728em;vertical-align:-0.2587em"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em"><span style="top:-2.4413em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2587em"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-2.4413em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2587em"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span>.</li>
-<li>For each token/head <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.05724em">j</span></span></span></span>: compute attention scores vs. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span></span></span></span> → mean over prompt tokens → <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">s</mi></mrow><mi>j</mi></msup><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathrm{weights}^j \in \mathbb{R}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1034em;vertical-align:-0.1944em"></span><span class="mord"><span class="mord"><span class="mord mathrm">weights</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.909em"><span style="top:-3.1473em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">j</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6889em"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em"><span style="top:-3.063em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span>.</li>
-<li>Average across heads:<!-- -->
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>w</mi><mrow><mi>M</mi><mi>S</mi></mrow></msub><mo>=</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mi>m</mi></mfrac></mstyle><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><msup><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">s</mi></mrow><mi>j</mi></msup><mo>∈</mo><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">w_{MS} = \tfrac{1}{m}\sum_{j=1}^{m}\mathrm{weights}^j \in \mathbb{R}^n.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em">MS</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:3.0652em;vertical-align:-1.4138em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em"><span style="top:-1.8723em;margin-left:0em"><span class="pstrut" style="height:3.05em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em"><span class="pstrut" style="height:3.05em"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em"><span class="pstrut" style="height:3.05em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord"><span class="mord mathrm">weights</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.909em"><span style="top:-3.1473em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">j</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.7144em"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em"><span style="top:-3.113em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="MS" src="https://gracefullight.dev/assets/images/vlm-MS-9377813c0cacbbe34ababda969307034.png" width="1308" height="866" class="img_f7zd"></p>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="map-multiview-attributes-perceiver">MAP (Multiview Attributes Perceiver)<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#map-multiview-attributes-perceiver" class="hash-link" aria-label="MAP (Multiview Attributes Perceiver)에 대한 직접 링크" title="MAP (Multiview Attributes Perceiver)에 대한 직접 링크">​</a></h3>
-<ul>
-<li><strong>Order-invariant weighted fusion</strong>:<!-- -->
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Output</mtext><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>w</mi><mi>i</mi></msub><mtext> </mtext><msub><mi>o</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\text{Output}=\sum_{i=1}^{n} w_i\,o_i.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em"></span><span class="mord text"><span class="mord">Output</span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:2.9291em;vertical-align:-1.2777em"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em"><span style="top:-1.8723em;margin-left:0em"><span class="pstrut" style="height:3.05em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em"><span class="pstrut" style="height:3.05em"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em"><span class="pstrut" style="height:3.05em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal">o</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span>
-</li>
-<li>Properties: supports <strong>any number of views</strong>; <strong>permutation-invariant</strong> to input order.</li>
-<li>By learning weights for each view, MAP highlights informative perspectives and suppresses less useful ones, ensuring consistent predictions even when the view order changes. This directly addresses the input-order sensitivity observed in baselines such as OpenFlamingo.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="MAP" src="https://gracefullight.dev/assets/images/vlm-MAP-d20f08f8971017b5de5936f013867d6b.png" width="1248" height="732" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="benchmarks">Benchmarks<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#benchmarks" class="hash-link" aria-label="Benchmarks에 대한 직접 링크" title="Benchmarks에 대한 직접 링크">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="baselines--input-modes">Baselines &amp; Input Modes<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#baselines--input-modes" class="hash-link" aria-label="Baselines &amp; Input Modes에 대한 직접 링크" title="Baselines &amp; Input Modes에 대한 직접 링크">​</a></h3>
-<ul>
-<li>Baselines: <strong>BLIP3</strong>, <strong>OpenFlamingo (4 variants)</strong>, <strong>OPERA</strong>, <strong>Idefics2</strong>, <strong>LLaVA-UHD</strong>.</li>
-<li>Two input modes:<!-- -->
-<ol>
-<li><strong>Original image only</strong>.</li>
-<li><strong>Original + 8 generated views</strong>.<!-- -->
-<ul>
-<li>Models that accept only one image use <strong>9in1</strong> tiling (nine images stitched into one).</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="main-results">Main Results<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#main-results" class="hash-link" aria-label="Main Results에 대한 직접 링크" title="Main Results에 대한 직접 링크">​</a></h3>
-<ul>
-<li><strong>MIAVLM</strong>:<!-- -->
-<ul>
-<li><strong>HoOA metric:</strong> <strong>0.775 / 0.787</strong> (modes 1 / 2)</li>
-<li><strong>Positive accuracy:</strong> 0.752 / 0.762</li>
-<li><strong>Negative accuracy:</strong> 0.797 / 0.812</li>
-<li><strong>Inference time:</strong> <strong>0.071 / 0.105 s</strong> (fastest)</li>
-</ul>
-</li>
-<li><strong>9in1</strong> tiling <strong>did not improve</strong> results (likely harder to interpret).</li>
-<li><strong>Nine separate multiview images</strong> generally <strong>improved</strong> performance.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="ablations">Ablations<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#ablations" class="hash-link" aria-label="Ablations에 대한 직접 링크" title="Ablations에 대한 직접 링크">​</a></h3>
-<ul>
-<li><strong>Negative instructions:</strong> boost <strong>negative-question</strong> accuracy but slightly reduce <strong>positive-question</strong> accuracy; overall HoOA <strong>increases</strong> (approx. <strong>0.665 → 0.787</strong>).</li>
-<li><strong>Input-order sensitivity:</strong>
-<ul>
-<li>MIAVLM is <strong>order-invariant</strong></li>
-<li>OpenFlamingos accuracy varies when shuffling view order.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--notes">Limitations &amp; Notes<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#limitations--notes" class="hash-link" aria-label="Limitations &amp; Notes에 대한 직접 링크" title="Limitations &amp; Notes에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Trade-off from negative instructions (negatives ↑, positives ↓).</li>
-<li>Effectiveness depends on the quality of <strong>generated views</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="insights">Insights<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#insights" class="hash-link" aria-label="Insights에 대한 직접 링크" title="Insights에 대한 직접 링크">​</a></h2>
-<ul>
-<li>This approach seems especially suitable for perception, where multiple scene views may arrive in arbitrary order, ensuring consistent attribute recognition.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/18/mitigating-hallucinations-on-object-attributesusing-multiview-images-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Tan, Z., Li, Y., Meng, S., Yuan, X., Li, W., Mo, T., Wang, B., &amp; Chu, X. (2025, 6–11 April 2025). Mitigating Hallucinations on Object Attributes using Multiview Images and Negative Instructions. ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
