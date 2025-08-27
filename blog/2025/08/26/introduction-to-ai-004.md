@@ -305,3 +305,77 @@ tags:
 - 0 is for certainly being labeled "0" and 1 is for certainly being labeled "1", and **a value between 0 and 1 represents the probability of being labeled "1"**
 - a logistic regression model: a linear regression model + a logistic function
 - **mainly for solving classification problems**
+
+## Nearest Neighbor
+
+> a technique to predict the output of a given new sample based on a collection of existing samples.
+
+- is to find the k-nearest neighbours of given sample in the collection and determine the output based on these k neighbours.
+- k is always **chosen to be an odd number.**
+- can be used for **both classification and regression problems.**
+  - For classification: majority vote of the neighbours.
+  - For regression: mean/median (or regression) of the neighbours.
+- **Instance-based learning**
+  - KNN does not learn a separate model.
+  - Instead, it stores all training data and uses them directly at prediction time.
+- **Non-parametric model**
+  - KNN has no parameters (like weights in linear regression) to train.
+  - The model is essentially the full dataset plus a distance measure.
+
+### Distance measures
+
+- **Minkowski distance** or **$L^p$ norm**
+  - $L^p(x_j, x_q) = \left( \sum_i |x_{j,i} - x_{q,i}|^p \right)^{1/p}$
+  - **Euclidean distance**: $p = 2$, for the dimensions are measuring similar properties, such as the width, height and depth of 3D objects.
+  - **Manhattan distance**: $p = 1$, for the dimensions are measuring dissimilar properties, such as age, weight, and gender of a patient.
+  - **Hamming distance**: the number of attributes on which the two points differ, for Boolean attribute values
+
+### Nomarlization
+
+- use the raw data from each dimension then the total distance will be affected by a change in scale in any dimension
+- To avoid this, apply normalization to the measurements in each dimension.
+- to compute the mean $\mu_i$ and standard deviation $\sigma_i$ of the values in each dimension, and rescale them
+- The rescaling is done using the formula:
+  - $x'_{j,i} = \frac{x_{j,i} - \mu_i}{\sigma_i}$
+  where $x'_{j,i}$ is the normalized value, $x_{j,i}$ is the original value, $\mu_i$ is the mean, and $\sigma_i$ is the standard deviation.
+
+### Time complexity
+
+- Conceptually trivial: Given a set of N examples and a query $x_q$, iterate through the examples, measure the distance to $x_q$ from each one, and keep the best k.
+- $NN(k, x_q)$'s time complexity is $O(N)$, N is the number of examples in the training dataset.
+- Use a **k-dimensional tree**: a balanced binary tree with an arbitrary number of dimensions.
+  - Time complexity can be improved to $O(\log N)$
+  - appropriate **only when there are many more examples than dimensions**
+  - It works well with up to 10 dimensions with thousands of examples.
+- Use a **Hash table with a locality-sensitive hash (LSH)**
+  - Time complexity can be improved to $O(1)$
+
+## SVM
+
+> a framework for finding a boundary that distinctly classifies the data points in an optimal way.
+
+- supervised learning, binary classification
+- SVM chooses the boundary with the maximum possible geometric margin, which has the largest distance to the nearest training data points of any class
+
+### Linear discriminant
+
+- $X_i$ is multiplied by its matching weight $w_i$
+- all these products are added together and passed to a threshold function
+- **Decision surface**: if $g(x) = w \cdot x \gt 0$ then $f(x) = +1 (class1)$ else $f(x) = -1 (class2)$
+- **Decision function**: $f(x) = \text{sign}(g(x)) = \text{sign}(w_0 + w_1x)$
+  - To make a decision, the continuous value $g(x)$ is passed through the sign function so that it outputs either +1 or -1.
+- If the data from the two classes can be separated with a hyperplane, **linearly separable**.
+
+### Hyperplane
+
+- separates the data in 2D by a line or in 3D by a plane
+- The orientation of the hyperplane is given by the vector $w$
+- the location of the hyperplane is given by $w_0$
+- The distance from the origin to the hyperplane is $\frac{|w_0|}{\|w\|}$
+- If a given data sample $x^*$ and $g(x^*) = 0$, then this data sample is on the separation boundary. It can normally be assigned to any class.
+- **geometric margin**: the minimum distance between the samples and the hyperplane by constructing and solving a constrained optimization problem
+  - $\gamma_i = y_i \left( \frac{w}{\|w\|} \cdot x_i + \frac{w_0}{\|w\|} \right)$
+- **primary optimization problem**: to maximize the minimal geometric distance across the training dataset of m samples.
+  - $$\max_{w, w_0} \Big( \min_{i=1,\ldots,N} \gamma_i \Big) = \max_{w, w_0} \Big( \min_{i=1,\ldots,N} \Big( y_i \Big( \frac{w}{\|w\|} \cdot x_i + \frac{w_0}{\|w\|} \Big) \Big) \Big)$$
+  - $\text{s.t. } \; y_i (w \cdot x_i + w_0) \geq \min_{i=1,\ldots,N} \big( y_i (w \cdot x_i + w_0) \big)$
+- **dual optimizatino problem**: easier to solve. More importantly the dual optimisation problem enables the so-called kernel trick in SVM
