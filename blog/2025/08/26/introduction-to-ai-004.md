@@ -457,3 +457,44 @@ $$F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$$
 - It's useful for imbalanced datasets to balance precision and recall.
 
 ## Regression evalucation metrics
+
+### Mean Absolute Error (MAE)
+
+> the average of the absolute differences between the predicted values and the actual values
+
+$$MAE = \frac{1}{n} \sum_{i=1}^n \lvert y_i - \hat{y}_i \rvert$$
+
+- It measures the average magnitude of errors made by the model, without considering their direction
+- A lower MAE value indicates that the model has made smaller prediction errors
+
+### Mean Squared Error (MSE)
+
+> the average squared difference between the predicted and actual values
+
+$$MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2$$
+
+- It's useful when you want to penalise larger errors more heavily, making it more sensitive to outliers at the same time
+- often used as a loss function when training regression models
+- A lower MSE value indicates that the model has smaller prediction errors, with a strong preference for avoiding large errors.
+
+### Root Mean Squared Error (RMSE)
+
+> the square root of MSE
+
+$$RMSE = \sqrt{MSE}$$
+
+- it more interpretable as it is in the same units as the dependent variable.
+
+### R-Squared (Coefficient of Determination)
+
+> how well the regression model approximates the actual data
+
+$$R^2 = 1 - \frac{SSR}{SST} = 1 - \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{\sum_{i=1}^n (y_i - \bar{y})^2}$$
+
+- the proportion of "sum squared regression (SSR)" and "total sum of squares (SST)"
+  - SSR obviously captures the model's prediction errors
+  - SST is the variance of the target variable.
+    - can be viewed as a naive model ($\hat{y} = \bar{y}$) using the average value of the target variable as the prediction
+- $R^2 = 1$: The model predicts perfectly (the error is 0).
+- $R^2 = 0$: The model does no better than a naive model that always predicts the mean of the target variable.
+- $R^2 < 0$: The model performs worse than simply predicting the mean, meaning its predictions increase the error compared to the naive baseline.
