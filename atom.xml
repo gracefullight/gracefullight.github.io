@@ -12,7 +12,7 @@
         <id>https://gracefullight.dev/2025/08/27/octo-review/</id>
         <link href="https://gracefullight.dev/2025/08/27/octo-review/"/>
         <updated>2025-08-27T10:54:09.447Z</updated>
-        <summary type="html"><![CDATA[Octo review]]></summary>
+        <summary type="html"><![CDATA[Octo, An Open-Source Generalist Robot Policy Review]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="octo">Octo<a href="https://gracefullight.dev/2025/08/27/octo-review/#octo" class="hash-link" aria-label="Octo에 대한 직접 링크" title="Octo에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Octo is a transformer-based policy with modular tokenizers (language via T5, images via CNN patches), blockwise masking, and readout tokens, trained on 800k multi-robot trajectories.</li>
