@@ -378,4 +378,4 @@ tags:
 - **primary optimization problem**: to maximize the minimal geometric distance across the training dataset of m samples.
   - $$\max_{w, w_0} \Big( \min_{i=1,\ldots,N} \gamma_i \Big) = \max_{w, w_0} \Big( \min_{i=1,\ldots,N} \Big( y_i \Big( \frac{w}{\|w\|} \cdot x_i + \frac{w_0}{\|w\|} \Big) \Big) \Big)$$
   - $\text{s.t. } \; y_i (w \cdot x_i + w_0) \geq \min_{i=1,\ldots,N} \big( y_i (w \cdot x_i + w_0) \big)$
-- **dual optimizatino problem**: easier to solve. More importantly the dual optimisation problem enables the so-called kernel trick in SVM
+- **dual optimization problem**: easier to solve. More importantly the dual optimisation problem enables the so-called kernel trick in SVM
