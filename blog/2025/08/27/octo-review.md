@@ -9,6 +9,25 @@ tags:
 
 ## Octo
 
+- Octo is a transformer-based policy with modular tokenizers (language via T5, images via CNN patches), blockwise masking, and readout tokens, trained on 800k multi-robot trajectories.  
+- Actions are generated through a diffusion head that produces continuous, multimodal, chunked predictions, enabling precise control and broad generalization.
+- It achieves state-of-the-art zero-shot performance across 7 robots and allows efficient finetuning to new sensors and action spaces, while being fully open-source.
+
+| Category | Simple Analogy | Actual Tokenization |
+| --- | --- | --- |
+| **Language** | `[Sentence]` | `[l₁, l₂, l₃, …]` <br/>→ multiple tokens from a tokenized sentence |
+| **Goal Image** | `[Goal]` | `[g₁, g₂, g₃, …]` <br/>→ image split into patches |
+| **Observation (time t)** | `[Observation]` | `[oₜ¹, oₜ², oₜ³, …]` <br/>→ camera frames/sensors tokenized into patches |
+| **Readout Token** | `[ ]` (empty slot) | `[TR,t]` <br/>→ one per timestep, reserved for predicting actions |
+
+```bash
+Time t-1: [l] [g] [o_{t-1}] [TR,t-1]
+Time t:   [l] [g] [o_t]     [TR,t]
+Time t+1: [l] [g] [o_{t+1}] [TR,t+1]
+
+[TR,t-1], [TR,t], [TR,t+1]  ──►  Diffusion head  ──►  [a_t, a_{t+1}, …]
+```
+
 ## Motivation
 
 - Traditional robot learning trains policies **from scratch** on robot/task-specific datasets → costly data collection, narrow generalization.
@@ -72,10 +91,3 @@ tags:
 ## Ref
 
 - Mees, O., Ghosh, D., Pertsch, K., Black, K., Walke, H. R., Dasari, S., Hejna, J., Kreiman, T., Xu, C., & Luo, J. (2024). Octo: An open-source generalist robot policy. First Workshop on Vision-Language Models for Navigation and Manipulation at ICRA 2024.
-
-| 구분 | **단순 비유 버전** | **실제 토큰화 버전** |
-| --- | --- | --- |
-| **언어** | `[문장]` | `[l₁, l₂, l₃, …]` <br/>→ 문장을 토큰화한 여러 개 |
-| **목표 이미지**   | `[목표]` | `[g₁, g₂, g₃, …]` <br/>→ 이미지를 패치 단위로 쪼갠 여러 개 |
-| **관찰(시점 t)** | `[관찰]` | `[oₜ¹, oₜ², oₜ³, …]` <br/>→ 카메라 프레임/센서를 패치 단위로 토큰화 |
-| **리드토큰**  | `[ ]` (빈 슬롯) | `[TR,t]` <br/>→ 시점 t마다 하나 추가, 행동을 뽑는 전용 토큰   |
