@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -83,9 +83,9 @@
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error",
         "useParseIntRadix": "error",
-        "useSingleJsDocAsterisk": "error",
-        "useJsxKeyInIterable": "error"
+        "useSingleJsDocAsterisk": "error"
       },
       "nursery": {
         "noFloatingPromises": "error",
@@ -126,9 +126,9 @@
             "style": "separatedType"
           }
         },
-        "useObjectSpread": "error",
         "useNumberNamespace": "error",
         "useNumericSeparators": "error",
+        "useObjectSpread": "error",
         "useSelfClosingElements": "error",
         "useSingleVarDeclarator": "error",
         "useSymbolDescription": "error",

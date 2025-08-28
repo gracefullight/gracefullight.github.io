@@ -47,7 +47,7 @@
     "yaml": "^2.8.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.0",
+    "@biomejs/biome": "^2.2.2",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
@@ -64,8 +64,8 @@
     "@types/mdast": "^4.0.4",
     "@types/node": "^22",
     "@types/pako": "^2.0.4",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
+    "@types/react": "^19.1",
+    "@types/react-dom": "^19.1",
     "@vitejs/plugin-react-swc": "^4",
     "@vitest/ui": "^3",
     "clipanion": "^4.0.0-rc.4",
