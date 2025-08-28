@@ -77,3 +77,50 @@ tags:
 - 배포 자동화 → 작은 변경은 자동 승인, 큰 변경은 리뷰.  
 - **Online vs Offline model**: 기존 모델 점진적 수정 vs 매번 처음부터 재학습.  
 - 데이터 자체가 바뀔 수도 있음 (스팸 이메일 → 스팸 문자, 음성, 영상 등).  
+
+## Checklist
+
+### Tests for Features and Data
+
+- [ ] Feature expectations are captured in a schema.
+- [ ] All features are beneficial.
+- [ ] No feature’s cost is too much.
+- [ ] Features adhere to meta-level requirements.
+- [ ] The data pipeline has appropriate privacy controls.
+- [ ] New features can be added quickly.
+- [ ] All input feature code is tested.
+
+### Tests for Model Development
+
+- [ ] Every model specification undergoes a code review.
+- [ ] Every model is checked in to a repository.
+- [ ] Offline proxy metrics correlate with actual metrics.
+- [ ] All hyperparameters have been tuned.
+- [ ] The impact of model staleness is known.
+- [ ] A simpler model is not better.
+- [ ] Model quality is sufficient on all important data slices.
+- [ ] The model has been tested for considerations of inclusion.
+
+### Tests for Machine Learning Infrastructure
+
+- [ ] Training is reproducible.
+- [ ] Model specification code is unit tested.
+- [ ] The full ML pipeline is integration tested.
+- [ ] Model quality is validated before attempting to serve it.
+- [ ] The model allows debugging by observing the step-by-step computation of training or inference on a single example.
+- [ ] Models are tested via a canary process before they enter production serving environments.
+- [ ] Models can be quickly and safely rolled back to a previous serving version.
+
+### Monitoring Tests for Machine Learning
+
+- [ ] Dependency changes result in notification.
+- [ ] Data invariants hold in training and serving inputs.
+- [ ] Training and serving features compute the same values.
+- [ ] Models are not too stale.
+- [ ] The model is numerically stable.
+- [ ] The model has not experienced regressions in training speed, serving latency, throughput, or RAM usage.
+- [ ] The model has not experienced a regression in prediction quality on served data.
+
+### Ref
+
+- Breck, E., Cai, S., Nielsen, E., Salib, M., & Sculley, D. (2016). What’s your ML test score? A rubric for ML production systems. NIPS Workshop on Reliable Machine Learning in the Wild.
