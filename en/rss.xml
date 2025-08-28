@@ -93,6 +93,52 @@
 <li>배포 자동화 → 작은 변경은 자동 승인, 큰 변경은 리뷰.</li>
 <li><strong>Online vs Offline model</strong>: 기존 모델 점진적 수정 vs 매번 처음부터 재학습.</li>
 <li>데이터 자체가 바뀔 수도 있음 (스팸 이메일 → 스팸 문자, 음성, 영상 등).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="checklist">Checklist<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#checklist" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="tests-for-features-and-data">Tests for Features and Data<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#tests-for-features-and-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul class="contains-task-list containsTaskList_cTFB">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Feature expectations are captured in a schema.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All features are beneficial.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->No feature’s cost is too much.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Features adhere to meta-level requirements.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The data pipeline has appropriate privacy controls.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->New features can be added quickly.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All input feature code is tested.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="tests-for-model-development">Tests for Model Development<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#tests-for-model-development" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul class="contains-task-list containsTaskList_cTFB">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Every model specification undergoes a code review.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Every model is checked in to a repository.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Offline proxy metrics correlate with actual metrics.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All hyperparameters have been tuned.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The impact of model staleness is known.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->A simpler model is not better.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model quality is sufficient on all important data slices.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The model has been tested for considerations of inclusion.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="tests-for-machine-learning-infrastructure">Tests for Machine Learning Infrastructure<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#tests-for-machine-learning-infrastructure" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul class="contains-task-list containsTaskList_cTFB">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Training is reproducible.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model specification code is unit tested.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The full ML pipeline is integration tested.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model quality is validated before attempting to serve it.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The model allows debugging by observing the step-by-step computation of training or inference on a single example.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Models are tested via a canary process before they enter production serving environments.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Models can be quickly and safely rolled back to a previous serving version.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="monitoring-tests-for-machine-learning">Monitoring Tests for Machine Learning<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#monitoring-tests-for-machine-learning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul class="contains-task-list containsTaskList_cTFB">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Dependency changes result in notification.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Data invariants hold in training and serving inputs.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Training and serving features compute the same values.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Models are not too stale.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The model is numerically stable.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The model has not experienced regressions in training speed, serving latency, throughput, or RAM usage.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->The model has not experienced a regression in prediction quality on served data.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/28/developing-ml-systems/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>Breck, E., Cai, S., Nielsen, E., Salib, M., &amp; Sculley, D. (2016). What’s your ML test score? A rubric for ML production systems. NIPS Workshop on Reliable Machine Learning in the Wild.</li>
 </ul>]]></content:encoded>
             <category>ai</category>
         </item>
