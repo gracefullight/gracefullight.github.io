@@ -2,11 +2,376 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-28T06:04:52.968Z</updated>
+    <updated>2025-08-28T10:48:43.168Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[데이터 시각화 의사 결정 트리]]></title>
+        <id>https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/</id>
+        <link href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/"/>
+        <updated>2025-08-28T10:48:43.168Z</updated>
+        <summary type="html"><![CDATA[데이터 시각화 의사 결정 트리]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="color-legend">Color Legend<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#color-legend" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>Icon</th><th>Category</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>🟡</td><td>Distribution</td><td>분포를 보여주고 싶을 때</td><td>Histogram, Density plot</td></tr><tr><td>⚫</td><td>Correlation</td><td>상관관계를 보여주고 싶을 때</td><td>Scatterplot, Correlogram</td></tr><tr><td>🟢</td><td>Ranking</td><td>순위를 보여주고 싶을 때</td><td>Bar chart, Lollipop chart</td></tr><tr><td>🔴</td><td>Part of a whole</td><td>전체 중 일부를 보여주고 싶을 때</td><td>Pie chart, Treemap</td></tr><tr><td>🔵</td><td>Evolution</td><td>시간에 따른 변화를 보여주고 싶을 때</td><td>Line chart, Area chart</td></tr><tr><td>🟣</td><td>Maps</td><td>지도를 활용해서 공간적 정보를 보여줄 때</td><td>Choropleth map, Bubble Map</td></tr><tr><td>🟤</td><td>Flow</td><td>흐름(흐름도, 이동 경로 등)을 보여줄 때</td><td>Flow map, Sankey-like</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="categoric">Categoric<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#categoric" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>One Variable<!-- -->
+<ul>
+<li>⚫ Waffle</li>
+<li>🟢 Bar Plot</li>
+<li>🟢 Lollipop</li>
+<li>🟢 Word Cloud</li>
+<li>🔴 Circular Packing</li>
+<li>🔴 Doughnut</li>
+<li>🔴 Pie</li>
+<li>🔴 Treemap</li>
+</ul>
+</li>
+<li>Two or More Variables<!-- -->
+<ul>
+<li>Two Independent Lists<!-- -->
+<ul>
+<li>🔴 Venn Diagram</li>
+</ul>
+</li>
+<li>Nested<!-- -->
+<ul>
+<li>🟢 Bar Plot</li>
+<li>🔴 Circular Packing</li>
+<li>🔴 Dendrogram</li>
+<li>🔴 Sunburst</li>
+<li>🔴 Treemap</li>
+</ul>
+</li>
+<li>Subgroup<!-- -->
+<ul>
+<li>⚫ Grouped Scatter</li>
+<li>⚫ Heatmap</li>
+<li>🟢 Lollipop</li>
+<li>🟢 Parallel Plot</li>
+<li>Spider</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🟤 Sankey Diagram</li>
+</ul>
+</li>
+<li>Adjacency<!-- -->
+<ul>
+<li>🟤 Arc</li>
+<li>🟤 Chord</li>
+<li>🟤 Network</li>
+<li>🟤 Sankey</li>
+<li>⚫ Heatmap</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="relational">Relational<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#relational" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Network<!-- -->
+<ul>
+<li>⚫ Heatmap</li>
+<li>🟢 Hive</li>
+<li>🟤 Arc</li>
+<li>🟤 Chord</li>
+<li>🟤 Network</li>
+<li>🟤 Sankey</li>
+</ul>
+</li>
+<li>Nested<!-- -->
+<ul>
+<li>No Value<!-- -->
+<ul>
+<li>🔴 Circular Packing</li>
+<li>🔴 Dendrogram</li>
+<li>🔴 Sunburst</li>
+<li>🔴 Treemap</li>
+<li>🟤 Sankey</li>
+</ul>
+</li>
+<li>Value for Leaf<!-- -->
+<ul>
+<li>🔴 Circular Packing</li>
+<li>🔴 Dendrogram</li>
+<li>🔴 Sunburst</li>
+<li>🔴 Treemap</li>
+<li>🟤 Sankey</li>
+</ul>
+</li>
+<li>Value for Edges<!-- -->
+<ul>
+<li>🔴 Dendrogram</li>
+<li>🟤 Chord</li>
+<li>🟤 Sankey</li>
+</ul>
+</li>
+<li>Value for Connection<!-- -->
+<ul>
+<li>Edge Bundling</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="map">Map<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#map" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>🟣 Bubble Map</li>
+<li>🟣 Choropleth</li>
+<li>🟣 Connected Map</li>
+<li>🟣 Map</li>
+<li>🟣 Map Hexbin</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="time-series">Time Series<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#time-series" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>One Series<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+<li>🟡 Ridge Line</li>
+<li>🔵 Area</li>
+<li>🔵 Line Plot</li>
+<li>🟢 Bar Plot</li>
+<li>🟢 Lollipop</li>
+</ul>
+</li>
+<li>Several Series<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+<li>🟡 Ridge Line</li>
+<li>⚫ Heatmap</li>
+<li>🔵 Line Plot</li>
+<li>🔵 Stacked Area</li>
+<li>🔵 Stream Graph</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="categoric-and-numeric">Categoric and Numeric<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#categoric-and-numeric" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>One Numeric + One Categoric<!-- -->
+<ul>
+<li>One Observation, per Group<!-- -->
+<ul>
+<li>⚫ Waffle</li>
+<li>🟢 Bar Plot</li>
+<li>🟢 Lollipop</li>
+<li>🟢 Word Cloud</li>
+<li>🔴 Circular Packing</li>
+<li>🔴 Doughnut</li>
+<li>🔴 Pie</li>
+<li>🔴 Treemap</li>
+</ul>
+</li>
+<li>Several Observations, per Group<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+<li>🟡 Ridge Line</li>
+<li>🟡 Density</li>
+<li>🟡 Histogram</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>One Category, Several Numeric<!-- -->
+<ul>
+<li>No Order<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+<li>⚫ Grouped Scatter</li>
+<li>⚫ 2D Density</li>
+<li>⚫ PCA</li>
+<li>⚫ Correlogram</li>
+</ul>
+</li>
+<li>A Numeric is Ordered<!-- -->
+<ul>
+<li>⚫ Connected Scatter</li>
+<li>🔵 Area</li>
+<li>🔵 Line Plot</li>
+<li>🔵 Stacked Area</li>
+<li>🔵 Stream Graph</li>
+</ul>
+</li>
+<li>One Value Per Group<!-- -->
+<ul>
+<li>⚫ Grouped Scatter</li>
+<li>⚫ Heatmap</li>
+<li>🟢 Lollipop</li>
+<li>🟢 Parallel Plot</li>
+<li>🟢 Spider Plot</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🟤 Sankey Diagram</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Several Categories, One Numeric<!-- -->
+<ul>
+<li>Subgroup<!-- -->
+<ul>
+<li>One Observation. per Group<!-- -->
+<ul>
+<li>⚫ Grouped Scatter</li>
+<li>⚫ Heatmap</li>
+<li>🟢 Lollipop</li>
+<li>🟢 Parallel Plot</li>
+<li>🟢 Spider Plot</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🔴 Grouped Bar Plot</li>
+<li>🟤 Sankey Diagram</li>
+</ul>
+</li>
+<li>Several Observations, per Group<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Nested<!-- -->
+<ul>
+<li>One Observation. per Group<!-- -->
+<ul>
+<li>🟢 Bar Plot</li>
+<li>🔴 Circular Packing</li>
+<li>🔴 Dendrogram</li>
+<li>🔴 Sunburst</li>
+<li>🔴 Treemap</li>
+</ul>
+</li>
+<li>Several Observations. per Group<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Adjacency<!-- -->
+<ul>
+<li>⚫ Heatmap</li>
+<li>🟤 Arc</li>
+<li>🟤 Chord</li>
+<li>🟤 Network</li>
+<li>🟤 Sankey</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="numeric">Numeric<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#numeric" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>One Numeric Variable<!-- -->
+<ul>
+<li>🟡 Density</li>
+<li>🟡 Histogram</li>
+</ul>
+</li>
+<li>Two Numeric Variables<!-- -->
+<ul>
+<li>Not Ordered<!-- -->
+<ul>
+<li>Few Points<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Histogram</li>
+<li>⚫ Scatter Plot</li>
+</ul>
+</li>
+<li>Many Points<!-- -->
+<ul>
+<li>🟡 Density</li>
+<li>🟡 Violin</li>
+<li>⚫ 2D Density</li>
+<li>🔵 Marginal Distribution</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ordered<!-- -->
+<ul>
+<li>⚫ Connected Scatter</li>
+<li>🔵 Area Plot</li>
+<li>🔵 Line Plot</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Three Numeric Variables<!-- -->
+<ul>
+<li>Not Ordered<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Violin</li>
+<li>⚫ Bubble Plot</li>
+<li>⚫ 3d Scatter or Surface</li>
+</ul>
+</li>
+<li>Ordered<!-- -->
+<ul>
+<li>🔵 Area</li>
+<li>🔵 Line Plot</li>
+<li>🔵 Stacked Area</li>
+<li>🔵 Stream Graph</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Several Numeric Variables<!-- -->
+<ul>
+<li>Ordered<!-- -->
+<ul>
+<li>🔵 Area</li>
+<li>🔵 Line Plot</li>
+<li>🔵 Stacked Area</li>
+<li>🔵 Stream Graph</li>
+</ul>
+</li>
+<li>Not Ordered<!-- -->
+<ul>
+<li>🟡 Box Plot</li>
+<li>🟡 Ridge Line</li>
+<li>🟡 Violin</li>
+<li>⚫ Correlogram</li>
+<li>⚫ Heatmap</li>
+<li>⚫ PCA</li>
+<li>🔴 Dendrogram</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><a href="https://www.data-to-viz.com/" target="_blank" rel="noopener noreferrer">from Data to Viz</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="data" term="data"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vocabulary for AI @006]]></title>
+        <id>https://gracefullight.dev/en/vocab/vocab-ai-006/</id>
+        <link href="https://gracefullight.dev/en/vocab/vocab-ai-006/"/>
+        <updated>2025-08-28T06:13:52.660Z</updated>
+        <summary type="html"><![CDATA[Vocabulary for AI @006]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-006/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>prevalence</td><td>The state of being widespread or common</td><td>Commonness</td><td>유행, 널리 퍼짐</td></tr><tr><td>instantiation</td><td>The act of creating a specific instance of something</td><td>Creation of a specific example</td><td>구체적인 값의 생성</td></tr><tr><td>triviality</td><td>The quality of being trivial or unimportant</td><td>Unimportance</td><td>사소함, 하찮음</td></tr><tr><td>intermediary</td><td>A person or thing that acts as a link between two others</td><td>Middleman</td><td>중개자, 매개체</td></tr><tr><td>dreaded</td><td>Regarded with great fear or apprehension</td><td>Feared</td><td>두려운, 걱정되는</td></tr><tr><td>i.i.d.</td><td>Independent and identically distributed</td><td>Same distribution, no dependence</td><td>독립적이고 동일한 분포</td></tr><tr><td>analogous</td><td>Similar in some way</td><td>Comparable</td><td>유사한, 비슷한</td></tr><tr><td>posteriori</td><td>Relating to knowledge gained through experience or empirical evidence</td><td>Based on observation</td><td>경험적, 관찰에 기초한</td></tr><tr><td>posterior</td><td>Relating to the back or rear</td><td>Back</td><td>뒤쪽의, 후방의</td></tr><tr><td>resemblance</td><td>The state of resembling or being alike</td><td>Similarity</td><td>유사성, 닮음</td></tr><tr><td>stipulate</td><td>To demand or specify a requirement</td><td>Specify</td><td>규정하다, 명시하다</td></tr><tr><td>rectify</td><td>To correct or make right</td><td>Correct</td><td>수정하다, 바로잡다</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Developing ML Systems]]></title>
         <id>https://gracefullight.dev/en/2025/08/28/developing-ml-systems/</id>
@@ -1281,216 +1646,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <li><strong>Unfreeze and scale</strong> the LLM (much less forgetting, strong embodied performance).</li>
 </ol>
 </li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RT-1, Robot Transformer 1 Review]]></title>
-        <id>https://gracefullight.dev/en/2025/08/24/rt-1-review/</id>
-        <link href="https://gracefullight.dev/en/2025/08/24/rt-1-review/"/>
-        <updated>2025-08-24T05:52:19.257Z</updated>
-        <summary type="html"><![CDATA[RT-1 review]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="rt-1">RT-1<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#rt-1" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>RT-1 discretizes robot actions into 256-bin tokens, creating a shared "action language" across robots.</li>
-<li>It absorbs heterogeneous data from simulation and other robot morphologies without losing performance.</li>
-<li>It generalizes robustly to new tasks, environments, and long-horizon scenarios (up to 50 steps).</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="RT-1 Architecture" src="https://gracefullight.dev/en/assets/images/rt-1-architecture-adc4a381e6221b91a20467516cdd1752.png" width="820" height="1315" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="introduction--motivation">Introduction &amp; Motivation<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#introduction--motivation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Leveraging large, diverse, task-agnostic datasets enables high performance in zero-shot or small task-specific settings.</li>
-<li>Data collection and curation is a critical bottleneck in robotics ("the unsung hero" of large-scale ML).</li>
-<li>Transformer-based controllers are powerful but inefficient for real-time robotics, requiring architectural adaptations.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="model--architecture">Model &amp; Architecture<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#model--architecture" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>RT-1 architecture: EfficientNet + FiLM layers + TokenLearner for compact vision-language tokenization.</li>
-<li>Action tokenization: 11 action dimensions (7 arm, 3 base, 1 mode) discretized into 256 bins each.</li>
-<li>This abstraction converts continuous robot actions into a discrete "token language", enabling cross-domain and cross-robot transfer.</li>
-<li>Real-time feasibility: optimized design achieves ~3Hz inference speed suitable for real-world control.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="experiments--results">Experiments &amp; Results<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#experiments--results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="general-performance">General Performance<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#general-performance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>RT-1 executes over 700 unique instructions at <strong>97% success rate</strong>.</li>
-<li>On unseen instructions: <strong>76% success</strong>, outperforming next-best baseline by +24%.</li>
-<li>Robustness: 83% success with distractors, 59% with background changes (significantly higher than baselines).</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="absorbing-simulation-data">Absorbing Simulation Data<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#absorbing-simulation-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Adding sim data does not degrade real-task performance.</li>
-<li>Objects/tasks only seen in simulation: performance boosted <strong>23% ⇒ 87%</strong>.</li>
-<li>Unseen instructions with sim objects: <strong>7% ⇒ 33%</strong>, showing strong sim-to-real domain transfer.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="absorbing-multi-robot-data">Absorbing Multi-Robot Data<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#absorbing-multi-robot-data" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Mixed RT-1 + Kuka datasets: only 2% drop in original tasks.</li>
-<li>Bin-picking eval: RT-1 only 22% ⇒ mixed training 39% (almost 2×).</li>
-<li>Kuka-only training: 0% on EDR robots ⇒ morphology transfer alone fails.</li>
-<li>Mixed data enables RT-1 to <strong>leverage cross-robot experiences</strong> without explicit demonstrations.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="long-horizon-scenarios-saycan-integration">Long-Horizon Scenarios (SayCan Integration)<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#long-horizon-scenarios-saycan-integration" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<ul>
-<li>Evaluated in two kitchens:<!-- -->
-<ul>
-<li>Kitchen1: 67% execution success.</li>
-<li>Kitchen2 (novel environment): also 67% execution success.</li>
-</ul>
-</li>
-<li>Outperforms Gato (0% in Kitchen2) and BC-Z (13% in Kitchen2).</li>
-<li>Demonstrated execution of <strong>ultra-long tasks up to 50 steps</strong>.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-quantity-vs-diversity">Data Quantity vs Diversity<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#data-quantity-vs-diversity" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Data Diversity" src="https://gracefullight.dev/en/assets/images/rt-1-data-diversity-299befbcb9d0f7eb7912b666b02988e1.png" width="733" height="376" class="img_f7zd"></p>
-<ul>
-<li>Reducing dataset size ⇒ gradual performance/generalization decline.</li>
-<li>Reducing task diversity ⇒ <strong>much sharper decline</strong>, especially in generalization.</li>
-<li>Key takeaway: <strong>Data diversity is more critical than data quantity.</strong></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="conclusions--limitations">Conclusions &amp; Limitations<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#conclusions--limitations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>RT-1 proves large-scale data absorption and strong generalization in robotics.</li>
-<li>Limitations:<!-- -->
-<ul>
-<li>Based on imitation learning ⇒ cannot surpass demonstrator performance.</li>
-<li>Generalization limited to recombinations of known concepts ⇒ fails on truly novel motions.</li>
-<li>Dataset is large but not dexterous (fine manipulation limited).</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="future-directions">Future Directions<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#future-directions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Enable non-experts to collect training data and prompt models for faster skill scaling.</li>
-<li>Increase environmental diversity to strengthen robustness to backgrounds/environments.</li>
-<li>Improve reaction speed and context retention via scalable attention and memory.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/rt-1-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Brohan, A., Brown, N., Carbajal, J., Chebotar, Y., Dabis, J., Finn, C., Gopalakrishnan, K., Hausman, K., Herzog, A., &amp; Hsu, J. (2022). Rt-1: Robotics transformer for real-world control at scale. arXiv preprint arXiv:2212.06817.</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Do As I Can, Not As I Say Review]]></title>
-        <id>https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/</id>
-        <link href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/"/>
-        <updated>2025-08-24T02:04:59.631Z</updated>
-        <summary type="html"><![CDATA[Do As I Can, Not As I Say Review]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="say-can">Say Can<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#say-can" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>The core of SayCan is using an LLM to decompose high-level instructions into low-level skills, and reinforcement-learned affordance value functions to evaluate whether each skill is feasible in the current environment.</li>
-<li>The Say × Can structure is modular: different LLMs or affordance models can be swapped in, but each module’s inherent biases are carried into the system.</li>
-<li>To mitigate limitations, loop-based strategies are essential — CoT and RLHF provide feedback loops for LLMs, while closed-loop feedback enables affordance functions to adapt during execution.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation-why-llms-alone-fall-short">Motivation (Why LLMs alone fall short)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#motivation-why-llms-alone-fall-short" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>LLMs lack embodiment.</strong> They haven’t acted in the physical world, so using them for decision-making on a specific robot is unreliable.</li>
-<li><strong>LLMs don’t know robot’s abilities or state.</strong> They may split instructions into subtasks, but without context of capabilities and environment, plans can be irrelevant.</li>
-<li><strong>Prompting alone isn’t enough.</strong> Structured prompts help, but they don’t guarantee admissible or executable steps.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-proposal-what-saycan-adds">Core Proposal (What SayCan adds)<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#core-proposal-what-saycan-adds" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Ground with pretrained skills.</strong> Constrain LLM to propose actions that the robot can actually perform in context.</li>
-<li><strong>Say × Can factorization.</strong>
-<ul>
-<li><strong>Say (task-grounding):</strong> LLM estimates relevance of each skill to the instruction.</li>
-<li><strong>Can (world-grounding):</strong> Affordance functions estimate probability of success from current state.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="probabilistic-formulation">Probabilistic Formulation<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#probabilistic-formulation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Two probabilities multiplied:</strong>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(\ell_\pi|i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span>: LLM score of relevance.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi>c</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>s</mi><mo separator="true">,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(c_\pi|s,\ell_\pi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>: affordance score of success.</li>
-<li>Select: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>=</mo><mi>arg</mi><mo>⁡</mo><mi>max</mi><mo>⁡</mo><mi>p</mi><mo stretchy="false">(</mo><msub><mi>c</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>s</mi><mo separator="true">,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mo stretchy="false">)</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">(</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub><mi mathvariant="normal">∣</mi><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi = \arg\max p(c_\pi|s,\ell_\pi)\,p(\ell_\pi|i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mop">ar<span style="margin-right:0.01389em">g</span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal">i</span><span class="mclose">)</span></span></span></span>.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="planning-procedure">Planning Procedure<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#planning-procedure" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Planning is structured as a <strong>dialog</strong>: user gives high-level instruction, LLM produces a step sequence, loop until "done."</li>
-<li>Benefit: <strong>Interpretability</strong>—scores provide transparency.</li>
-<li>Caveat: Without affordances, chosen steps may be irrelevant to the current scene.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="affordances-via-rl">Affordances via RL<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#affordances-via-rl" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Affordance = value function.</strong> In sparse reward settings, value ≈ success probability.</li>
-<li>TD RL and MDP formalism used to learn <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>π</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Q_\pi(s,a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="implementation">Implementation<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#implementation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Skill training:</strong>
-<ul>
-<li>BC-Z (behavioral cloning) and MT-Opt (reinforcement learning).</li>
-<li>Multi-task BC/RL amortizes training cost.</li>
-</ul>
-</li>
-<li><strong>Language conditioning:</strong> Pretrained sentence encoder frozen, text embeddings as input.</li>
-<li><strong>Action space:</strong> 6-DoF end-effector, gripper open/close, base x-y &amp; yaw deltas, terminate.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="metrics">Metrics<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#metrics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Plan success rate:</strong> 2/3 human raters agree that the plan is valid.</li>
-<li><strong>Execution success rate:</strong> 2/3 raters agree robot achieved the task.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="key-results">Key Results<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#key-results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Grounding nearly doubles performance</strong> vs non-grounded baselines.</li>
-<li><strong>Understands sequence order</strong> (approach → pick → bring).</li>
-<li><strong>Failures:</strong> Long-horizon tasks (early termination), negation, ambiguous references.</li>
-<li><strong>Error split:</strong> ~65% LLM, 35% affordance.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ablations">Ablations<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#ablations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Remove LLM (task-grounding):</strong>
-<ul>
-<li>BC-NL: 0% all tasks.</li>
-<li>BC-USE: 60% on single primitives, 0% otherwise.</li>
-</ul>
-</li>
-<li><strong>Remove affordances (world-grounding):</strong>
-<ul>
-<li>No-VF: 67%, Generative: 74% vs 84% (SayCan).</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="scaling--models">Scaling &amp; Models<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#scaling--models" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>PaLM &gt; FLAN.</strong> PaLM-SayCan achieves 84% plan / 74% execute.</li>
-<li>Stronger LMs improve robotics performance.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="extensibility">Extensibility<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#extensibility" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Add new skills easily:</strong> register skill, affordance, prompt example.</li>
-<li><strong>Chain-of-Thought:</strong> Add "Explanation" → helps with negation and reasoning-heavy queries.</li>
-<li><strong>Multilingual:</strong> Almost no performance drop (English, Chinese, French, Spanish).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="open-source-variant">Open-Source Variant<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#open-source-variant" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>CLIPort for pick-and-place.</li>
-<li>Affordances approximated by ViLD open-vocabulary object detector.</li>
-<li>GPT-3 as language model.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--future-work">Limitations &amp; Future Work<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#limitations--future-work" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Limits:</strong> Inherits LLM biases; skill library is bottleneck; hard to react to skill failures.</li>
-<li><strong>Closed-loop extensions:</strong> Huang et al. use environment feedback + inner monologue for replanning.</li>
-<li><strong>Future directions:</strong> Expand/robustify skills, explore new grounding sources (non-robotic), test if natural language is the right ontology, combine planning + language, use LMs for policy pretraining.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/do-as-i-can-not-as-i-say-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Ahn, M., Brohan, A., Brown, N., Chebotar, Y., Cortes, O., David, B., Finn, C., Fu, C., Gopalakrishnan, K., Hausman, K., Herzog, A., Ho, D., Hsu, J., Ibarz, J., Ichter, B., Irpan, A., Jang, E., Ruano, R. J., Jeffrey, K., Jesmonth, S., Joshi, N. J., Julian, R., Kalashnikov, D., Kuang, Y., Lee, K.-H., Levine, S., Lu, Y., Luu, L., Parada, C., Pastor, P., Quiambao, J., Rao, K., Rettinghouse, J., Reyes, D., Sermanet, P., Sievers, N., Tan, C., Toshev, A., Vanhoucke, V., Xia, F., Xiao, T., Xu, P., Xu, S., Yan, M., &amp; Zeng, A. (2022). Do As I Can, Not As I Say: Grounding Language in Robotic Affordances. arXiv. <code>http://arxiv.org/abs/2204.01691</code></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
