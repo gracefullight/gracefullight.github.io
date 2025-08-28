@@ -49,3 +49,6 @@ tags:
 | admit | to acknowledge or accept the existence or truth of something | to confess or recognize | 인정하다 |
 | differentiable | capable of being differentiated | able to be derived | 미분 가능한 |
 | derivation | the process of obtaining something from a source or origin | extraction | 유도, 파생 |
+| parametric | relating to or expressed in terms of parameters | variable | 모수의 |
+| Extrapolation | the process of estimating unknown values by extending or projecting known information | estimation | 외삽 |
+| Interpolation | the process of estimating unknown values that fall within the range of known values | estimation | 내삽 |
