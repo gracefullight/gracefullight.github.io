@@ -46,3 +46,6 @@ tags:
 | logarithmic | relating to the logarithm of a quantity | log-based | 로그의 |
 | spherical | relating to a sphere | sphere-based | 구형의 |
 | interchangeable | able to be exchanged or replaced with something else | replaceable | 교체 가능한 |
+| admit | to acknowledge or accept the existence or truth of something | to confess or recognize | 인정하다 |
+| differentiable | capable of being differentiated | able to be derived | 미분 가능한 |
+| derivation | the process of obtaining something from a source or origin | extraction | 유도, 파생 |
