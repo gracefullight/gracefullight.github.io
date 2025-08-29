@@ -4,10 +4,110 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Thu, 28 Aug 2025 10:48:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Aug 2025 07:43:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[OpenVLA Review]]></title>
+            <link>https://gracefullight.dev/en/2025/08/29/open-vla-review/</link>
+            <guid>https://gracefullight.dev/en/2025/08/29/open-vla-review/</guid>
+            <pubDate>Fri, 29 Aug 2025 07:43:25 GMT</pubDate>
+            <description><![CDATA[OpenVLA Review]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="openvla">OpenVLA<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#openvla" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>OpenVLA is a 7B open-source VLA model built on Llama2 + DINOv2 + SigLIP, trained on 970k demos, achieving stronger generalization and robustness than closed RT-2-X (55B) and outperforming Diffusion Policy.</li>
+<li>It introduces efficient adaptation via LoRA (1.4% params, 8× compute reduction) and 4-bit quantization (half memory, same accuracy), enabling fine-tuning and inference on consumer GPUs.</li>
+<li>Limitations remain (single-image input, <code>&lt;90%</code> reliability, limited throughput), but OpenVLA provides the first open, scalable framework for generalist robot policies.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="OpenVLA Architecture" src="https://gracefullight.dev/en/assets/images/open-vla-architecture-df4421cc82c1ebceca0ccf1061cd4593.png" width="915" height="366" class="img_f7zd"></p>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation">Motivation<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#motivation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Training robot policies from scratch struggles with robustness and generalization.</li>
+<li>Fine-tuning <strong>vision-language-action (VLA)</strong> models offers reusable, generalizable visuomotor policies.</li>
+<li>Barriers: prior VLAs are <strong>closed-source</strong>, lack best practices for adaptation, and need server-class hardware.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="model--training">Model &amp; Training<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#model--training" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>OpenVLA</strong>: 7B parameters, open-source.</li>
+<li>Built on <strong>Llama 2</strong> with fused <strong>DINOv2 + SigLIP</strong> vision encoders.</li>
+<li>Trained on <strong>970k robot demonstrations</strong> from Open-X Embodiment dataset.</li>
+<li>Represents robot actions as <strong>tokens</strong> (discretized into 256 bins, replacing unused Llama tokens).</li>
+<li>Standard <strong>next-token prediction</strong> objective.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="architecture--approach">Architecture &amp; Approach<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#architecture--approach" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>End-to-end fine-tuning of VLM to generate robot actions as tokens.</li>
+<li>Differs from modular methods (e.g., Octo) that stitch separate encoders/decoders.</li>
+<li>Vision features are obtained by encoding the same input image with both SigLIP and DINOv2, then channel-wise concatenated and passed through an MLP projector. This preserves SigLIP’s semantic alignment with language and DINOv2's spatial reasoning, giving the VLM richer multimodal context for manipulation tasks.</li>
+<li>Uses Prismatic VLM backbone with multi-resolution features (spatial reasoning + semantics).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="performance">Performance<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#performance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Outperforms closed <strong>RT-2-X (55B)</strong> by <strong>+16.5% task success</strong> with 7× fewer parameters.</li>
+<li>Beats <strong>Diffusion Policy</strong> (from-scratch imitation learning) by <strong>+20.4%</strong> on multi-task language-grounded settings.</li>
+<li>Demonstrates <strong>robust behaviors</strong> (distractor resistance, error recovery).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="efficiency">Efficiency<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#efficiency" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Introduces <strong>parameter-efficient fine-tuning</strong>:<!-- -->
+<ul>
+<li><strong>LoRA</strong> updates only 1.4% of parameters yet matches full fine-tuning.</li>
+<li>Can fine-tune on a single A100 GPU in ~10–15 hours (8× compute reduction).</li>
+</ul>
+</li>
+<li><strong>Quantization</strong>:<!-- -->
+<ul>
+<li>4-bit inference matches bfloat16 accuracy while halving memory footprint.</li>
+<li>Runs at 3Hz on consumer GPUs (e.g., A5000, 16GB).</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="evaluations">Evaluations<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#evaluations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Tested across <strong>29 tasks</strong> and multiple robots (WidowX, Google robot, Franka).</li>
+<li>Strong generalization on:<!-- -->
+<ul>
+<li><strong>Visual</strong> (unseen backgrounds/distractors).</li>
+<li><strong>Motion</strong> (new object positions/orientations).</li>
+<li><strong>Physical</strong> (new object shapes/sizes).</li>
+<li><strong>Semantic</strong> (unseen tasks, instructions).</li>
+</ul>
+</li>
+<li>First generalist open-source VLA achieving <strong>≥50% success rate across all tested tasks</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="design-insights">Design Insights<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#design-insights" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li><strong>Fine-tuning the vision encoder</strong> (vs. freezing) crucial for robotic control.</li>
+<li>Higher image resolution (384px vs. 224px) adds 3× compute without performance gains.</li>
+<li>Training required <strong>27 epochs</strong>, far more than typical VLM runs, to surpass 95% action token accuracy.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--future-work">Limitations &amp; Future Work<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#limitations--future-work" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Supports only <strong>single-image observations</strong> (no proprioception, no history).</li>
+<li>Inference throughput (~6Hz on RTX 4090) insufficient for high-frequency control (e.g., ALOHA at 50Hz).</li>
+<li>Success rates remain below 90% in challenging tasks.</li>
+<li>Open questions:<!-- -->
+<ul>
+<li>Impact of base VLM size on performance.</li>
+<li>Benefits of co-training with Internet-scale data.</li>
+<li>Best visual features for VLAs.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="contributions">Contributions<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#contributions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ol>
+<li>First <strong>open-source generalist VLA</strong> with strong performance.</li>
+<li>Scalable <strong>end-to-end training</strong> pipeline (action-as-token).</li>
+<li>Demonstrates <strong>LoRA + quantization</strong> for consumer-grade GPU adaptation.</li>
+<li>Provides <strong>code, checkpoints, and data curation recipes</strong> to support future research.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E., Lam, G., &amp; Sanketi, P. (2024). Openvla: An open-source vision-language-action model. arXiv preprint arXiv:2406.09246.</li>
+</ul>]]></content:encoded>
+            <category>vlm</category>
+        </item>
         <item>
             <title><![CDATA[데이터 시각화 의사 결정 트리]]></title>
             <link>https://gracefullight.dev/en/2025/08/28/data-visualization-desicion-tree/</link>
@@ -1539,78 +1639,6 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/24/rt-2-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
 <li>Zitkovich, B., Yu, T., Xu, S., Xu, P., Xiao, T., Xia, F., Wu, J., Wohlhart, P., Welker, S., Wahid, A., Vuong, Q., Vanhoucke, V., Tran, H., Soricut, R., Singh, A., Singh, J., Sermanet, P., Sanketi, P. R., Salazar, G., Ryoo, M. S., Reymann, K., Rao, K., Pertsch, K., Mordatch, I., Michalewski, H., Lu, Y., Levine, S., Lee, L., Lee, T.-W. E., Leal, I., Kuang, Y., Kalashnikov, D., Julian, R., Joshi, N. J., Irpan, A., Ichter, B., Hsu, J., Herzog, A., Hausman, K., Gopalakrishnan, K., Fu, C., Florence, P., Finn, C., Dubey, K. A., Driess, D., Ding, T., Choromanski, K. M., Chen, X., Chebotar, Y., Carbajal, J., Brown, N., Brohan, A., Arenas, M. G., &amp; Han, K. (2023). RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control Proceedings of The 7th Conference on Robot Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v229/zitkovich23a.html</code></li>
-</ul>]]></content:encoded>
-            <category>vlm</category>
-        </item>
-        <item>
-            <title><![CDATA[PaLM-E An Embodied Multimodal Language Model Review]]></title>
-            <link>https://gracefullight.dev/en/2025/08/24/palm-e-review/</link>
-            <guid>https://gracefullight.dev/en/2025/08/24/palm-e-review/</guid>
-            <pubDate>Sun, 24 Aug 2025 10:33:27 GMT</pubDate>
-            <description><![CDATA[PaLM-E An Embodied Multimodal Language Model Review]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="palm-e">PaLM-E<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#palm-e" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>ViT (e.g., ViT-4B, ViT-22B) extracts image embeddings.</li>
-<li>OSRT builds object-centric slot representations.</li>
-<li>These are injected into the LLM embedding space (PaLM variants: 8B, 62B, 540B) for high-level abstraction and planning, with execution delegated to low-level policies (e.g., RT-1).</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="PaLM-E Architecture" src="https://gracefullight.dev/en/assets/images/palm-e-architecture-ca3f220adc8e114bc89a0589703866fb.png" width="1284" height="650" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-idea">Core idea<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#core-idea" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Build <strong>embodied language models</strong> by <strong>injecting continuous sensor inputs</strong> (images, states, other modalities) directly into a <strong>pretrained LLM’s embedding space</strong>, linking <strong>words ↔ percepts</strong>.</li>
-<li>Inputs are <strong>multimodal sentences</strong> that <strong>interleave</strong> text tokens with encoded visual/state tokens; outputs are <strong>text</strong> (answers or high-level plans).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="architecture--representations">Architecture &amp; representations<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#architecture--representations" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Start from a <strong>decoder-only, autoregressive LLM</strong> (PaLM) and <strong>condition on a prefix</strong> that mixes text and <strong>encoder-produced vectors</strong>.</li>
-<li>Provide multiple encoder options:<!-- -->
-<ul>
-<li><strong>State vectors</strong> (simplest).</li>
-<li><strong>ViT</strong> features with a learned <strong>projector ψ</strong> to match LLM embedding dimensionality.</li>
-<li><strong>Object-centric, 3D-aware OSRT</strong> (neural scene representations). Supports <strong>entity-label tokens</strong> (<code>&lt;obj j&gt;</code>) so the model can refer to specific objects in generated plans.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="training-setup">Training setup<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#training-setup" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Train <strong>end-to-end</strong> (encoders + projector + optionally the LLM) to output <strong>sequential decisions as natural text</strong> or answers (VQA, captioning).</li>
-<li>Dataset items contain <strong>(continuous observations, text sequence, prefix index)</strong>; loss is <strong>cross-entropy on non-prefix tokens</strong>.</li>
-<li>Explore <strong>freezing the LLM</strong> (train encoders/projection only), and <strong>co-training</strong> across diverse tasks ("full mixture"; only ~9% is embodied data).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="planning--control-loop">Planning &amp; control loop<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#planning--control-loop" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>For <strong>planning/control</strong>, PaLM-E emits <strong>textual subgoals/skills</strong> drawn from a small skill vocabulary; a separate <strong>low-level policy</strong> executes them.</li>
-<li>The system runs <strong>closed-loop</strong>: execute → observe → (re)plan; PaLM-E acts as a <strong>high-level policy</strong> sequencing low-level skills.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="why-not-text-only-llms-or-affordance-only-grounding">Why not text-only LLMs or affordance-only grounding?<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#why-not-text-only-llms-or-affordance-only-grounding" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Prior work that feeds <strong>only text to the LLM</strong> (and uses external affordance models) is <strong>insufficient</strong> when <strong>spatial layout</strong> matters.</li>
-<li>PaLM-E instead <strong>grounds inside the LLM</strong> by <strong>injecting continuous observations</strong>, enabling <strong>direct plan generation</strong> while leveraging the LLM’s world knowledge.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="environments--use-cases">Environments &amp; use cases<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#environments--use-cases" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Three domains</strong>: <strong>TAMP</strong> (grasp/stack planning), <strong>Language-Table</strong> (multi-object tabletop pushing), <strong>Mobile manipulation</strong> (kitchen tasks).</li>
-<li><strong>Use cases</strong> to test embodied reasoning: <strong>affordance prediction</strong>, <strong>failure detection</strong>, <strong>long-horizon planning</strong> (low-level policies from <strong>RT-1</strong>).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="results-high-level">Results (high level)<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#results-high-level" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Transfer via co-training</strong>: One model trained on mixed tasks/embodiments achieves <strong>higher performance</strong> than task-specialists; "full mixture" yields <code>&gt;2×</code> gains (Fig. 3).</li>
-<li><strong>Few-shot/data efficiency</strong>: Solves robotics tasks with <strong>very few examples</strong> (e.g., <strong>10–80</strong> for Language-Table, <strong>320</strong> for TAMP). <strong>OSRT</strong> further improves data efficiency.</li>
-<li><strong>Mobile manipulation</strong>: End-to-end embodied planning works in real kitchens, robust to disturbances; PaLM-E beats <strong>PaLI (zero-shot)</strong> and <strong>QT-OPT/CLIP baselines</strong> on affordance/failure detection.</li>
-<li><strong>General V+L</strong>: The <strong>562B</strong> generalist achieves <strong>state-of-the-art on OK-VQA</strong> and strong VQAv2/COCO without task-specific finetuning.</li>
-<li><strong>Language retention &amp; scaling</strong>: <strong>Freezing LLM</strong> preserves language ability but can struggle on some robotics tasks; <strong>unfrozen + scale up</strong> significantly reduces <strong>catastrophic forgetting</strong>.</li>
-<li><strong>Emergent behaviors</strong>: <strong>Multimodal chain-of-thought</strong> and <strong>multi-image reasoning</strong> emerge in <strong>PaLM-E-562B</strong>, despite training on <strong>single-image prompts</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="takeaways">Takeaways<a href="https://gracefullight.dev/en/2025/08/24/palm-e-review/#takeaways" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Injecting <strong>neural scene representations (OSRT)</strong> and <strong>entity-labeled multimodal tokens</strong> is <strong>effective</strong> even without massive embodied data.</li>
-<li><strong>Diverse, joint training</strong> transfers vision-language knowledge <strong>into embodied decision-making</strong>, enabling <strong>data-efficient robot planning</strong>.</li>
-<li>Two viable paths to retain language skills during multimodal finetuning:<!-- -->
-<ol>
-<li><strong>Freeze the LLM</strong>, train encoders (max language retention, sometimes weaker robotics),</li>
-<li><strong>Unfreeze and scale</strong> the LLM (much less forgetting, strong embodied performance).</li>
-</ol>
-</li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
