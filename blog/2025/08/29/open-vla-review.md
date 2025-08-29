@@ -1,17 +1,19 @@
 ---
-title: Open VLA Review
+title: OpenVLA Review
 date: 2025-08-29T17:43:25.796+10:00
-description: Open VLA Review
+description: OpenVLA Review
 authors: me
 tags:
   - vlm
 ---
 
-## Open VLA
+## OpenVLA
 
 - OpenVLA is a 7B open-source VLA model built on Llama2 + DINOv2 + SigLIP, trained on 970k demos, achieving stronger generalization and robustness than closed RT-2-X (55B) and outperforming Diffusion Policy.  
-- It introduces efficient adaptation via LoRA (1.4% params, 8× compute reduction) and 4-bit quantization (half memory, same accuracy), enabling fine-tuning and inference on consumer GPUs.  
-- Limitations remain (single-image input, <90% reliability, limited throughput), but OpenVLA provides the first open, scalable framework for generalist robot policies.  
+- It introduces efficient adaptation via LoRA (1.4% params, 8× compute reduction) and 4-bit quantization (half memory, same accuracy), enabling fine-tuning and inference on consumer GPUs.
+- Limitations remain (single-image input, <90% reliability, limited throughput), but OpenVLA provides the first open, scalable framework for generalist robot policies.
+
+![OpenVLA Architecture](./open-vla-architecture.png)
 
 ## Motivation
 
