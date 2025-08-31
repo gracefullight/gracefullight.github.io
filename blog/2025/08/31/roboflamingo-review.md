@@ -4,7 +4,7 @@ date: 2025-08-31T15:35:06.415+10:00
 description: RoboFlamingo Review
 authors: me
 tags:
-  - VLM
+  - vlm
 ---
 
 ## RoboFlamingo
