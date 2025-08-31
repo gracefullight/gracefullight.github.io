@@ -74,7 +74,7 @@
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
         </author>
-        <category label="VLM" term="VLM"/>
+        <category label="vlm" term="vlm"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[OpenVLA Review]]></title>
@@ -172,7 +172,7 @@
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/29/open-vla-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
 <ul>
-<li>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E., Lam, G., &amp; Sanketi, P. (2024). Openvla: An open-source vision-language-action model. arXiv preprint arXiv:2406.09246.</li>
+<li>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E. P., Sanketi, P. R., Vuong, Q., Kollar, T., Burchfiel, B., Tedrake, R., Sadigh, D., Levine, S., Liang, P., &amp; Finn, C. (2025). OpenVLA: An Open-Source Vision-Language-Action Model Proceedings of The 8th Conference on Robot Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v270/kim25c.html</code></li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>

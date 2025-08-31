@@ -71,7 +71,7 @@
 <ul>
 <li>Li, X., Liu, M., Zhang, H., Yu, C., Xu, J., Wu, H., Cheang, C., Jing, Y., Zhang, W., &amp; Liu, H. (2024). Vision-language foundation models as effective robot imitators. International Conference on Learning Representations (ICLR 2024), Vienna, Austria.</li>
 </ul>]]></content:encoded>
-            <category>VLM</category>
+            <category>vlm</category>
         </item>
         <item>
             <title><![CDATA[OpenVLA Review]]></title>
@@ -169,7 +169,7 @@
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/29/open-vla-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
-<li>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E., Lam, G., &amp; Sanketi, P. (2024). Openvla: An open-source vision-language-action model. arXiv preprint arXiv:2406.09246.</li>
+<li>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E. P., Sanketi, P. R., Vuong, Q., Kollar, T., Burchfiel, B., Tedrake, R., Sadigh, D., Levine, S., Liang, P., &amp; Finn, C. (2025). OpenVLA: An Open-Source Vision-Language-Action Model Proceedings of The 8th Conference on Robot Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v270/kim25c.html</code></li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
