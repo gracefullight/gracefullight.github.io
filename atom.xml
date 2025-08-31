@@ -2,11 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-29T07:43:25.796Z</updated>
+    <updated>2025-08-31T05:35:06.415Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[RoboFlamingo Review]]></title>
+        <id>https://gracefullight.dev/2025/08/31/roboflamingo-review/</id>
+        <link href="https://gracefullight.dev/2025/08/31/roboflamingo-review/"/>
+        <updated>2025-08-31T05:35:06.415Z</updated>
+        <summary type="html"><![CDATA[RoboFlamingo Review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="roboflamingo">RoboFlamingo<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#roboflamingo" class="hash-link" aria-label="RoboFlamingo에 대한 직접 링크" title="RoboFlamingo에 대한 직접 링크">​</a></h2>
+<ul>
+<li>RoboFlamingo <strong>decouples vision-language understanding and control</strong>, using OpenFlamingo for perception and a lightweight policy head for sequential decision-making.</li>
+<li>Unlike prior VLM-based approaches, it requires only <strong>small-scale imitation fine-tuning</strong> on language-conditioned manipulation data, without large-scale co-fine-tuning.</li>
+<li>This design enables <strong>data-efficient, zero-shot generalizable, and deployable</strong> robot manipulation policies on modest compute resources.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="key-idea">Key Idea<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#key-idea" class="hash-link" aria-label="Key Idea에 대한 직접 링크" title="Key Idea에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Proposes <strong>RoboFlamingo</strong>, a simple framework to adapt existing VLMs for robotic manipulation with lightweight fine-tuning.</li>
+<li>Built on <strong>OpenFlamingo</strong>, decoupling <strong>vision-language understanding</strong> from <strong>decision-making</strong>.</li>
+<li>Pre-trained VLM handles <strong>language and visual comprehension</strong>, while a dedicated <strong>policy head models sequential history</strong>.</li>
+<li>Fine-tuned only on <strong>language-conditioned manipulation datasets</strong> using imitation learning.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="advantages">Advantages<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#advantages" class="hash-link" aria-label="Advantages에 대한 직접 링크" title="Advantages에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Requires only a <strong>small amount of demonstrations</strong> to adapt to downstream manipulation tasks.</li>
+<li>Provides <strong>open-loop control</strong> capability → deployable on low-performance platforms.</li>
+<li>Can be trained/evaluated on a <strong>single GPU server</strong>, making it a cost-effective and accessible solution.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="benchmarks">Benchmarks<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#benchmarks" class="hash-link" aria-label="Benchmarks에 대한 직접 링크" title="Benchmarks에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Evaluated on <strong>CALVIN benchmark</strong> (34 tasks, 1000 instruction chains).</li>
+<li>RoboFlamingo achieves <strong>2× performance improvements</strong> over previous state-of-the-art methods.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="performance">Performance<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#performance" class="hash-link" aria-label="Performance에 대한 직접 링크" title="Performance에 대한 직접 링크">​</a></h2>
+<ul>
+<li><strong>Imitation Learning</strong>: Outperforms all baselines across all metrics.</li>
+<li><strong>Zero-shot Generalization</strong>:<!-- -->
+<ul>
+<li><strong>Vision</strong>: Stronger generalization in ABC→D setting.</li>
+<li><strong>Language</strong>: Robust to GPT-4 generated synonymous instructions.</li>
+</ul>
+</li>
+<li><strong>Ablation Studies</strong>:<!-- -->
+<ul>
+<li>Ignoring history (MLP w/o hist) gives worst results.</li>
+<li>LSTM and GPT-based policy heads perform best (LSTM chosen as default).</li>
+<li><strong>VL pre-training</strong> is crucial for downstream manipulation.</li>
+<li><strong>Larger VLMs</strong> show better data efficiency.</li>
+<li><strong>Instruction fine-tuning</strong> improves both seen and unseen tasks.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="flexibility-of-deployment">Flexibility of Deployment<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#flexibility-of-deployment" class="hash-link" aria-label="Flexibility of Deployment에 대한 직접 링크" title="Flexibility of Deployment에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Supports <strong>open-loop control</strong> by predicting entire action sequences with a single inference → reduces latency and test-time compute.</li>
+<li>Direct open-loop use without retraining can degrade performance; mitigated with <strong>jump-step demonstrations</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="conclusion">Conclusion<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#conclusion" class="hash-link" aria-label="Conclusion에 대한 직접 링크" title="Conclusion에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Demonstrates that pre-trained VLMs enable <strong>data efficiency</strong> and strong <strong>zero-shot generalization</strong> in robotic manipulation.</li>
+<li>RoboFlamingo is presented as an <strong>intuitive, efficient, and open solution</strong>, with high potential when combined with large-scale real robot data.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Li, X., Liu, M., Zhang, H., Yu, C., Xu, J., Wu, H., Cheang, C., Jing, Y., Zhang, W., &amp; Liu, H. (2024). Vision-language foundation models as effective robot imitators. International Conference on Learning Representations (ICLR 2024), Vienna, Austria.</li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="VLM" term="VLM"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OpenVLA Review]]></title>
         <id>https://gracefullight.dev/2025/08/29/open-vla-review/</id>
@@ -1600,85 +1669,5 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="fsd" term="fsd"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RT-2, Robotic Transformer 2 Review]]></title>
-        <id>https://gracefullight.dev/2025/08/24/rt-2-review/</id>
-        <link href="https://gracefullight.dev/2025/08/24/rt-2-review/"/>
-        <updated>2025-08-24T13:40:19.433Z</updated>
-        <summary type="html"><![CDATA[RT-2 review]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>Trains a <strong>Vision-Language-Action (VLA)</strong> model by co-fine-tuning web-scale VLMs with robot trajectories, and <strong>treats robot actions as text tokens</strong>.</li>
-<li>Yields <strong>strong generalization</strong> and <strong>emergent capabilities</strong> (symbol understanding, reasoning, human recognition) beyond what appears in robot data.</li>
-<li>Runs in <strong>direct closed-loop control</strong>; largest evaluated model (55B) executes at ~1–3 Hz via a cloud (multi-TPU) inference setup.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="RT-2 Architecture" src="https://gracefullight.dev/assets/images/rt-2-architecture-dd9ff6e2cae963c14c20742089b822df.png" width="1674" height="748" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="what-rt-2-is">What RT-2 Is<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#what-rt-2-is" class="hash-link" aria-label="What RT-2 Is에 대한 직접 링크" title="What RT-2 Is에 대한 직접 링크">​</a></h2>
-<ul>
-<li>A family of VLA models (RT-2-PaLI-X, RT-2-PaLM-E) that fine-tune large VLMs on robot trajectories to output <strong>low-level actions</strong>.</li>
-<li>Target: <strong>generalizable, semantically aware</strong> manipulation policies that map images + instructions → actions end-to-end.</li>
-<li>RT-2 does <strong>not rely on a restricted 2D action space or calibrated cameras</strong>.</li>
-<li>The <strong>unified output space</strong> lets language and action tokens share the same model weights, without action-only layers.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="core-recipe">Core Recipe<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#core-recipe" class="hash-link" aria-label="Core Recipe에 대한 직접 링크" title="Core Recipe에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Directly train</strong> open-vocabulary VQA/dialogue VLMs to <strong>output robot actions</strong> while they still solve standard vision-language tasks.</li>
-<li>Build on RT-1 protocol/data, but replace the policy backbone with a <strong>large VLM</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="action-as-language-tokenization">Action as Language (Tokenization)<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#action-as-language-tokenization" class="hash-link" aria-label="Action as Language (Tokenization)에 대한 직접 링크" title="Action as Language (Tokenization)에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Discretize continuous action dims (Δpos/Δrot, gripper, terminate) into <strong>256 bins</strong>; represent each dimension with an <strong>integer token</strong>.</li>
-<li><strong>PaLI-X</strong>: reuse numeric tokens (<code>≤1000</code>). <strong>PaLM-E</strong>: overwrite <strong>256 least-frequent tokens</strong> as action vocabulary (<strong>symbol tuning</strong>).</li>
-<li>Form a single output string per step (e.g., <code>terminate Δposx Δposy Δposz Δrotx Δroty Δrotz gripper</code>).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="co-fine-tuning--output-constraint">Co-Fine-Tuning &amp; Output Constraint<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#co-fine-tuning--output-constraint" class="hash-link" aria-label="Co-Fine-Tuning &amp; Output Constraint에 대한 직접 링크" title="Co-Fine-Tuning &amp; Output Constraint에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Mix robot data with original web VQA/caption data</strong> in training batches (up-weight robot samples) to prevent forgetting and improve generalization.</li>
-<li>During decoding on robot tasks, <strong>restrict sampling to valid action tokens</strong> so outputs are always executable.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="closed-loop-control--real-time-inference">Closed-Loop Control &amp; Real-Time Inference<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#closed-loop-control--real-time-inference" class="hash-link" aria-label="Closed-Loop Control &amp; Real-Time Inference에 대한 직접 링크" title="Closed-Loop Control &amp; Real-Time Inference에 대한 직접 링크">​</a></h2>
-<ul>
-<li>RT-2 is trained and deployed for <strong>direct closed-loop control</strong> (camera → action → camera …), not just high-level planning.</li>
-<li>For large models, inference runs via a <strong>multi-TPU cloud service</strong>; <strong>RT-2-PaLI-X-55B</strong> reaches <strong>~1–3 Hz</strong>; smaller models ~5 Hz.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="generalization--benchmarks">Generalization &amp; Benchmarks<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#generalization--benchmarks" class="hash-link" aria-label="Generalization &amp; Benchmarks에 대한 직접 링크" title="Generalization &amp; Benchmarks에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Matches RT-1 on seen tasks but <strong>far exceeds</strong> baselines on <strong>unseen objects/backgrounds/environments</strong> (~<strong>2×</strong> vs RT-1/MOO; up to <strong>~6×</strong> vs others).</li>
-<li>Open-source <strong>Language-Table</strong> sim: co-fine-tuned <strong>PaLI-3B</strong> outperforms baselines, showing the approach transfers to other robots/sims.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="emergent-capabilities">Emergent Capabilities<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#emergent-capabilities" class="hash-link" aria-label="Emergent Capabilities에 대한 직접 링크" title="Emergent Capabilities에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Symbol understanding</strong> (e.g., “move apple to 3 / heart / star”).</li>
-<li><strong>Reasoning</strong> (visual matching, simple math like “sum of two plus one”, <strong>multilingual</strong> commands).</li>
-<li><strong>Human recognition</strong> (e.g., “person with glasses”); none of these were present as low-level actions in robot data.</li>
-<li><strong>Chain-of-thought (CoT) variant</strong> adds a <strong>Plan</strong> step before actions → supports <strong>multi-stage semantic reasoning</strong> (e.g., pick a rock as an improvised hammer; pick an energy drink for a tired person).</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="rt-2-cot" src="https://gracefullight.dev/assets/images/rt-2-cot-eb2bee68ad29cc277f1a214c22064f0e.png" width="1748" height="934" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="scaling--ablations">Scaling &amp; Ablations<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#scaling--ablations" class="hash-link" aria-label="Scaling &amp; Ablations에 대한 직접 링크" title="Scaling &amp; Ablations에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>From-scratch</strong> training (even 5B) performs poorly; <strong>fine-tuning</strong> helps; <strong>co-fine-tuning</strong> helps <strong>most</strong>.</li>
-<li><strong>Bigger models</strong> (<code>55B &gt; 5B</code>) generalize better.</li>
-<li>PaLM-E variant shows an edge on <strong>math reasoning</strong>; PaLI-X stronger on symbols/vision reasoning on average.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations">Limitations<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#limitations" class="hash-link" aria-label="Limitations에 대한 직접 링크" title="Limitations에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Does <strong>not</strong> learn fundamentally <strong>new motor skills</strong> beyond the distribution in robot data; mainly transfers <strong>semantic/visual knowledge</strong>.</li>
-<li><strong>Compute/latency</strong> costly; real-time control can bottleneck. Limited availability of strong open VLMs and convenient FT APIs.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="future-directions-from-the-text">Future Directions (from the text)<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#future-directions-from-the-text" class="hash-link" aria-label="Future Directions (from the text)에 대한 직접 링크" title="Future Directions (from the text)에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Acquire new skills from <strong>human videos</strong> or richer datasets.</li>
-<li><strong>Quantization/distillation</strong> for faster/cheaper inference.</li>
-<li>More <strong>open VLMs / FT APIs</strong> to make VLA models broadly buildable.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/24/rt-2-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Zitkovich, B., Yu, T., Xu, S., Xu, P., Xiao, T., Xia, F., Wu, J., Wohlhart, P., Welker, S., Wahid, A., Vuong, Q., Vanhoucke, V., Tran, H., Soricut, R., Singh, A., Singh, J., Sermanet, P., Sanketi, P. R., Salazar, G., Ryoo, M. S., Reymann, K., Rao, K., Pertsch, K., Mordatch, I., Michalewski, H., Lu, Y., Levine, S., Lee, L., Lee, T.-W. E., Leal, I., Kuang, Y., Kalashnikov, D., Julian, R., Joshi, N. J., Irpan, A., Ichter, B., Hsu, J., Herzog, A., Hausman, K., Gopalakrishnan, K., Fu, C., Florence, P., Finn, C., Dubey, K. A., Driess, D., Ding, T., Choromanski, K. M., Chen, X., Chebotar, Y., Carbajal, J., Brown, N., Brohan, A., Arenas, M. G., &amp; Han, K. (2023). RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control Proceedings of The 7th Conference on Robot Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v229/zitkovich23a.html</code></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
     </entry>
 </feed>
