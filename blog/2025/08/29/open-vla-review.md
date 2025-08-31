@@ -86,4 +86,4 @@ tags:
 
 ## Ref
 
-- Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E., Lam, G., & Sanketi, P. (2024). Openvla: An open-source vision-language-action model. arXiv preprint arXiv:2406.09246.
+- Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E. P., Sanketi, P. R., Vuong, Q., Kollar, T., Burchfiel, B., Tedrake, R., Sadigh, D., Levine, S., Liang, P., & Finn, C. (2025). OpenVLA: An Open-Source Vision-Language-Action Model Proceedings of The 8th Conference on Robot Learning, Proceedings of Machine Learning Research. `https://proceedings.mlr.press/v270/kim25c.html`

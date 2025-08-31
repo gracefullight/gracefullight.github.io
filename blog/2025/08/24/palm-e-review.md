@@ -65,3 +65,7 @@ tags:
 - Two viable paths to retain language skills during multimodal finetuning:
   1) **Freeze the LLM**, train encoders (max language retention, sometimes weaker robotics),
   2) **Unfreeze and scale** the LLM (much less forgetting, strong embodied performance).
+
+## Ref
+
+- Driess, D., Xia, F., Sajjadi, M. S. M., Lynch, C., Chowdhery, A., Ichter, B., Wahid, A., Tompson, J., Vuong, Q., Yu, T., Huang, W., Chebotar, Y., Sermanet, P., Duckworth, D., Levine, S., Vanhoucke, V., Hausman, K., Toussaint, M., Greff, K., Zeng, A., Mordatch, I., & Florence, P. (2023). PaLM-E: An Embodied Multimodal Language Model Proceedings of the 40th International Conference on Machine Learning, Proceedings of Machine Learning Research. `https://proceedings.mlr.press/v202/driess23a.html`
