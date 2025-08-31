@@ -28,3 +28,5 @@ tags:
 | cavity | A cavity is a hollow place in a tooth caused by decay | Tooth decay | 충치 |
 | tautological | Relating to or involving tautology (the saying of the same thing twice in different words) | Redundant | 동의어 반복의, 중복적인 |
 | retrospectively | Looking back on or dealing with past events or situations | Looking back | 회고적으로, 과거를 돌아보며 |
+| perturbations | Disturbances or deviations from a normal state | Disturbances | 교란, 변동 |
+| deformable | Capable of being changed in shape or form | Changeable | 변형 가능한 |
