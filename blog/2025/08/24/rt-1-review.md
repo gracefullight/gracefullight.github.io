@@ -45,9 +45,9 @@ tags:
 
 ### Absorbing Multi-Robot Data
 
-- Mixed RT-1 + Kuka datasets: only 2% drop in original tasks.  
-- Bin-picking eval: RT-1 only 22% ⇒ mixed training 39% (almost 2×).  
-- Kuka-only training: 0% on EDR robots ⇒ morphology transfer alone fails.  
+- Mixed RT-1 + Kuka datasets: only 2% drop in original tasks.
+- Bin-picking eval: RT-1 only 22% ⇒ mixed training 39% (almost 2×).
+- Kuka-only training: 0% on EDR robots ⇒ morphology transfer alone fails.
 - Mixed data enables RT-1 to **leverage cross-robot experiences** without explicit demonstrations.
 
 ### Long-Horizon Scenarios (SayCan Integration)
