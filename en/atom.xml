@@ -2,11 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-08-31T14:24:33.716Z</updated>
+    <updated>2025-09-01T00:09:15.360Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of software development @006]]></title>
+        <id>https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/</id>
+        <link href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/"/>
+        <updated>2025-09-01T00:09:15.360Z</updated>
+        <summary type="html"><![CDATA[Fundamentals of software development @006]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="oop-vs-procedural-programming">OOP vs Procedural Programming<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#oop-vs-procedural-programming" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="oop">OOP<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#oop" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>a programming paradigm built around the concept of objects, which contain data and code to manipulate data.</li>
+<li>The idea to model real-world entities and their interactions.</li>
+<li>Global Data (fields) are enclosed in the objects.</li>
+<li>Program components/tasks are easily divided across the development team / Requires more planning and design preparation</li>
+<li>Easier to manage and maintain dependencies between objects / OOP programs are much larger and complex</li>
+<li>Objects export the interface and hide the implementation and data / Tend to use more memory and GPU</li>
+<li>Code is highly reusable and easy to scale and distribute / Making changes in one class potentially impact others, which can complicate the development of the code.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="procedural-programming">Procedural Programming<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#procedural-programming" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<ul>
+<li>the concept of procedure calls by structuring the program around procedures. (or functions/subroutines)</li>
+<li>a sequential manner unless directed otherwise.</li>
+<li>Global data (elements) is exposed to all the functions.</li>
+<li>Easier to compile and interpret / Difficult to scale or extend</li>
+<li>Straightforward and simpler to code / Dependencies between elements are unclear and not well-structured.</li>
+<li>Less memory requirements / Data is exposed and insecure due to its exposure across the whole program</li>
+<li>Easy to track the program flow / Hard to divide the work among programmers in a team.</li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="classes">Classes<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#classes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>A class is a template/blueprint used to create objects</li>
+</ul>
+<table><thead><tr><th>java</th><th>python</th></tr></thead><tbody><tr><td>a pure OOP language</td><td>supports OOP</td></tr><tr><td>code must be written in classes</td><td>classes are optional</td></tr><tr><td>executable class must have <code>main()</code></td><td>scripts run without including a class</td></tr><tr><td>Encapsulation can be enforced by declaring fields as private</td><td>fields (global variables) are public by default</td></tr><tr><td>Visibility is managed through access modifiers</td><td>N/A ("_" to identify private data attributes, but still accessible)</td></tr></tbody></table>
+<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">class</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">class</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">name</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">extend </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> superclass</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">variable</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">name</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">value</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">#Class fields - data members</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">__init</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">self</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">parameters</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">#class constructor - object sbuilder</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">code</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">method</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">name</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">self</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">parameters</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">#methods</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">code</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="classes-py">Classes Py<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#classes-py" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Keywords</th><th>Functions</th></tr></thead><tbody><tr><td><code>class</code></td><td><code>__init__()</code></td></tr><tr><td><code>self</code>: keyword used to refer to object properties</td><td>del: the function is used to delete an object</td></tr><tr><td><code>pass</code>: keyword used to occupy no-code placement in a function</td><td><code>__str__()</code>: The function is used to return string representation of instances</td></tr><tr><td><code>cls</code>: keyword used to refer to class properties</td><td><code>super()</code>: the function is used call a parent method in a child class</td></tr></tbody></table>
+<ul>
+<li>Accessors: functions (with no parameters) in a Python class that provide access to the data attributes of an object.<!-- -->
+<ul>
+<li>known as getter methods, are named starting with the verb get, followed by the field name, which should start with an uppercase letter.</li>
+</ul>
+</li>
+<li>Mutators: procedures (with parameter) in a Python class that enable the developer to modify the values of object attributes.<!-- -->
+<ul>
+<li>known as setter methods, are named starting with the verb set, followed by the field name, which should start with an uppercase letter.</li>
+</ul>
+</li>
+</ul>
+<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> get</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">Variable</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> self</span><span class="token punctuation" style="color:#393A34">.</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">field</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token builtin">set</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">Variable</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">self</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> value</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    self</span><span class="token punctuation" style="color:#393A34">.</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">field</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> value</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="classes-java">Classes Java<a href="https://gracefullight.dev/en/2025/09/01/fundamentals-of-software-development-006/#classes-java" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<div class="language-java codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-java codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token plain">public class Bank {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  private Customer customer;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  private String branch;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  public Bank() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    customer = new Customer();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  public Bank(String name) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    this();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    this.branch = name;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  public boolean find(Bank bank) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return this.branch.equals(bank.branch);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="fsd" term="fsd"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[π0 Review]]></title>
         <id>https://gracefullight.dev/en/2025/09/01/pi-zero-reivew/</id>
@@ -1048,100 +1106,5 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="ai" term="ai"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Octo Review]]></title>
-        <id>https://gracefullight.dev/en/2025/08/27/octo-review/</id>
-        <link href="https://gracefullight.dev/en/2025/08/27/octo-review/"/>
-        <updated>2025-08-27T10:54:09.447Z</updated>
-        <summary type="html"><![CDATA[Octo, An Open-Source Generalist Robot Policy Review]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="octo">Octo<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#octo" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Octo is a transformer-based policy with modular tokenizers (language via T5, images via CNN patches), blockwise masking, and readout tokens, trained on 800k multi-robot trajectories.</li>
-<li>Actions are generated through a diffusion head that produces continuous, multimodal, chunked predictions, enabling precise control and broad generalization.</li>
-<li>It achieves state-of-the-art zero-shot performance across 7 robots and allows efficient finetuning to new sensors and action spaces, while being fully open-source.</li>
-</ul>
-<table><thead><tr><th>Category</th><th>Simple Analogy</th><th>Actual Tokenization</th></tr></thead><tbody><tr><td><strong>Language</strong></td><td><code>[Sentence]</code></td><td><code>[l₁, l₂, l₃, …]</code> <br>→ multiple tokens from a tokenized sentence</td></tr><tr><td><strong>Goal Image</strong></td><td><code>[Goal]</code></td><td><code>[g₁, g₂, g₃, …]</code> <br>→ image split into patches</td></tr><tr><td><strong>Observation (time t)</strong></td><td><code>[Observation]</code></td><td><code>[oₜ¹, oₜ², oₜ³, …]</code> <br>→ camera frames/sensors tokenized into patches</td></tr><tr><td><strong>Readout Token</strong></td><td><code>[ ]</code> (empty slot)</td><td><code>[TR,t]</code> <br>→ one per timestep, reserved for predicting actions</td></tr></tbody></table>
-<div class="language-bash codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-bash codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token plain">Time t-1: </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">l</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">g</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">o_</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">t-1</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t-1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Time t:   </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">l</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">g</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">o_t</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain">     </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Time t+1: </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">l</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">g</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">o_</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">t+1</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t+1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t-1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain">, </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain">, </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">TR,t+1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain">  ──►  Diffusion </span><span class="token function" style="color:#d73a49">head</span><span class="token plain">  ──►  </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">a_t, a_</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">t+1</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain">, …</span><span class="token punctuation" style="color:#393A34">]</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="motivation">Motivation<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#motivation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Traditional robot learning trains policies <strong>from scratch</strong> on robot/task-specific datasets → costly data collection, narrow generalization.</li>
-<li><strong>Generalist Robot Policies (GRPs)</strong> pretrained on diverse robots/tasks can be <strong>finetuned with little in-domain data</strong> while generalizing broadly.</li>
-<li>Real-world deployments face challenges across <strong>robot embodiments, sensor setups, action spaces, task specs, and environments</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="prior-grps--gaps">Prior GRPs &amp; Gaps<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#prior-grps--gaps" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>GRPs aim for <strong>low-level visuomotor control</strong> across tasks, environments, and robotic systems.</li>
-<li>Existing models often have <strong>restricted inputs (e.g., a single camera)</strong>, <strong>lack efficient finetuning to new domains</strong>, and importantly, <strong>largest models are not publicly available</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="contribution-what-is-octo">Contribution (What is Octo?)<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#contribution-what-is-octo" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Octo</strong>: a large transformer-based policy trained on <strong>800k trajectories</strong> from the Open X-Embodiment dataset.</li>
-<li>Accepts <strong>language instructions or goal images</strong>, and can be <strong>finetuned within hours on consumer GPUs</strong> to new sensors and action spaces.</li>
-<li><strong>First GRP</strong> to support <strong>effective finetuning to new observations and actions</strong> and to be <strong>fully open-source</strong> (training pipeline, checkpoints, data).</li>
-<li>Novelty lies in combining: <strong>transformer backbone + language/goal image conditioning + diffusion head</strong> for expressive action distributions.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="architecture">Architecture<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#architecture" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Input tokenizers</strong>:<!-- -->
-<ul>
-<li>Language via pretrained <strong>T5-base</strong></li>
-<li>Images via shallow CNN → patch tokens</li>
-</ul>
-</li>
-<li><strong>Transformer backbone</strong>: processes unified token sequence.</li>
-<li><strong>Blockwise masking + Readout tokens</strong>:<!-- -->
-<ul>
-<li>Nonexistent modalities are masked</li>
-<li>Readout tokens <em>only attend</em> to past observations/tasks, not vice versa</li>
-</ul>
-</li>
-<li><strong>Diffusion action head</strong>: predicts <strong>continuous, multimodal, chunked actions</strong>.</li>
-<li><strong>Modularity</strong>: new sensors/outputs can be added by only training lightweight encoders or heads; pretrained backbone remains unchanged.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Octo Architecture" src="https://gracefullight.dev/en/assets/images/octo-architecture-49b9dd94643695f0566e74ac5a0801bd.png" width="803" height="415" class="img_f7zd"></p>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="training-data--objective">Training Data &amp; Objective<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#training-data--objective" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Mixture of <strong>25 heterogeneous robot datasets</strong>: diverse robots, sensors (with/without wrist cams), labels (with/without language).</li>
-<li><strong>Conditional diffusion decoding</strong> predicts continuous, multimodal action distributions.<!-- -->
-<ul>
-<li>Transformer runs <strong>one forward pass</strong>; denoising steps are contained in the small diffusion head.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="experiments">Experiments<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#experiments" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Evaluated on <strong>7 robotic platforms across 4 institutions</strong>.</li>
-<li>Key questions:<!-- -->
-<ol>
-<li>Zero-shot multi-robot control?</li>
-<li>Do Octo weights improve finetuning vs. scratch or standard pretrained representations?</li>
-<li>Which design choices matter for generalist robot policies?</li>
-</ol>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="results">Results<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Achieves <strong>state-of-the-art zero-shot multi-robot control</strong>, competitive with RT-1-X and RT-2-X.</li>
-<li>Provides a <strong>versatile policy initialization</strong>: significantly outperforms baselines for <strong>data-efficient finetuning</strong> to new obs/action spaces.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="limitations--future-work">Limitations / Future Work<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#limitations--future-work" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Needs <strong>better language conditioning</strong>, <strong>improved wrist camera support</strong>, and <strong>data beyond optimal demonstrations</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="one-line-takeaway">One-line Takeaway<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#one-line-takeaway" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li><strong>Octo = modular, efficient, open-source GRP</strong>:<br>
-<!-- -->A transformer + diffusion policy trained on large-scale multi-robot data that <strong>adapts quickly with little in-domain data</strong> to new sensors and action spaces, enabling broad generalization.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/en/2025/08/27/octo-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
-<ul>
-<li>Mees, O., Ghosh, D., Pertsch, K., Black, K., Walke, H. R., Dasari, S., Hejna, J., Kreiman, T., Xu, C., &amp; Luo, J. (2024). Octo: An open-source generalist robot policy. First Workshop on Vision-Language Models for Navigation and Manipulation at ICRA 2024.</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="vlm" term="vlm"/>
     </entry>
 </feed>
