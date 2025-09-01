@@ -111,3 +111,19 @@ public class Bank {
   }
 }
 ```
+
+## Packages
+
+### Packages Java
+
+- used to group related classes
+- like folders containing files (classes)
+- either Java defined or user-defined
+- used to write maintainable and portable code and to avoid class name conflicts.
+
+### Modules Py
+
+- used to grou prelated functio nand classes together
+- normal Python scripts that are used into other scripts
+- either Python defined or user-defined
+- used to write maintainable and portable code to improve reusability
