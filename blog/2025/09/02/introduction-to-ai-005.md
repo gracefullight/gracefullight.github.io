@@ -11,14 +11,14 @@ tags:
 
 - 1950s-1960s: Early Foundations
   - McCulloch & Pitts (1943): mathematical neuron model
-  - Rosenblatt’s Perceptron (1958): first trainable network
+  - Rosenblatt's Perceptron (1958): first trainable network
   - Minsky & Papert (1969): limitations (XOR problem) → AI Winter
 - 1970s–1980s: First Revival
   - Werbos (1974); Rumelhart, Hinton, Williams (1986): Backpropagation
   - Hopfield Networks (1982): associative memory
   - Renewed optimism but limited by hardware
 - 1990s: Consolidation
-  - LeCun’s CNN (LeNet, 1989): digit recognition
+  - LeCun's CNN (LeNet, 1989): digit recognition
   - Elman, Jordan: Recurrent Neural Networks
   - Symbolic AI still dominated mainstream
 - 2000s: Deep Learning Foundations
@@ -131,7 +131,7 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
 
 - **Activation of each node is computed in two steps:**
   1. **Weighted sum (in):** sum of activations from the previous layer, multiplied by weights.  
-  2. **Apply activation function g:** pass the weighted sum through g to produce the node’s activation.  
+  2. **Apply activation function g:** pass the weighted sum through g to produce the node's activation.  
 
 - **Process:** propagate activations layer by layer towards the output layer.  
 
@@ -173,3 +173,37 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
     - $w_{0,3} \leftarrow w_{0,3} + \alpha (y - h_w(x)) h_w(x)(1 - h_w(x))$
     - $w_{1,3} \leftarrow w_{1,3} + \alpha (y - h_w(x)) h_w(x)(1 - h_w(x)) x_1$  
     - $w_{2,3} \leftarrow w_{2,3} + \alpha (y - h_w(x)) h_w(x)(1 - h_w(x)) x_2$
+
+### Backward phase Steps
+  
+1. **Select a loss function**
+   - For example, squared error loss:
+   - $L(y, \hat{y}) = (y - \hat{y})^2, \quad \hat{y} = h_w(x)$
+2. **Choose an activation function**
+   - Suppose we use a sigmoid:
+   - $h_w(x) = \frac{1}{1 + e^{-W \cdot X}}$
+3. **Calculate the error at the output node**
+   - The delta (error term) at the output is
+   - $\Delta_{out} = 2(\hat{y} - y) \cdot g'(in_{out})$
+4. **Calculate the error at hidden nodes**
+   - A hidden unit may connect to multiple nodes in the next layer.
+   - Therefore, its error is the weighted sum of all deltas it feeds into, scaled by its own derivative:
+   - $ \Delta_i = g'(in_i) \sum_j w_{i,j} \Delta_j$
+   - The summation appears because the hidden node's output influences several downstream nodes, and all those error signals must be aggregated.
+5. **Update the weights with gradient descent**
+   - The gradient with respect to weight $w_{i,j}$ is simply the input times the delta:
+   - $\frac{\partial L}{\partial w_{i,j}} = a_i \Delta_j$  
+   - Update rule:
+   - $w_{i,j} \leftarrow w_{i,j} - \alpha \, a_i \Delta_j$
+
+### Vanishing gradient
+
+- The error signal are extinguished altogher as they are propagated back through the network
+- In deep feedforward networks with `sigmoid/tanh`, repeated multiplication of small derivatives ($0 < g'(z) < 1$) during backpropagation causes the gradient to vanish.
+
+### Optimizer
+
+- Training a neural network consists of modifying the network's parameters, minimizing the loss function on the training set.
+- any kind of optimization algorithm could be used.
+- modern neural networks are almost always trained with some variant of stochastic gradient descent (SGD). **Adam Optimizer**
+- The optimiser is specified in the compilation step with tensorflow.
