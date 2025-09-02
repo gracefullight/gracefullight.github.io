@@ -218,6 +218,10 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
   - $z_t = f(z_{t-1}, x_t)$
   - Once trained, this function represents a time-homogeneous process
   - The same update rule $f_w$ applies at every time step, regardless of whether it’s the first input or the hundredth.
+- RNNs are designed for sequential data.
+- a hidden state that captures information from previous steps.
+- suffer from vanishing/exploding gradients.
+- Good for short-term dependencies.
 
 ### Backpropagtion Through Time, BPTT
 
@@ -241,6 +245,10 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
 - New information enters the memory by adding updates.
   - the gradient expressions do not accumulate multiplicatively over time.
 - include **gating units**: vectors control the flow of information in the LSTM, elementwise multiplication of the corresponding information vector.
+- a type of RNN designed to overcome vanishing gradient.
+- use gates (input, forget, output) to control information flow.
+- Capable of learning long-term dependencies.
+- Widely used in NLP, speech recognition, and time series forecasting.
 
 ### Gates in LSTM
 
@@ -269,6 +277,15 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
 
 - Variant of RNN with gating mechanisms.
 - Designed to capture long-term dependencies without complex architecture.
+- a simpler alternative to LSTMs. (lightweight, effective RNN variant)
+- Captures temporal dependencies (short & long).
+- Combine input and forget gates into a single update gate.
+- Require fewer parameters than LSTM, making them faster to train.
+- Perform comparably to LSTMs in many tasks.
+- Prevents vanishing gradient.
+- Good balance between complexity & performance.
+- Excels in time series forecasting tasks.
+- Widely used in finance, energy and IoT.
 
 ### Gates in GRU
 
@@ -292,3 +309,22 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
   - If $z$ is large → the past memory dominates.
   - If $z$ is small → the new candidate dominates.
 - $h=(1−z)\tilde{h}+zh_{prev}$
+
+## Comparison: RNN vs LSTM vs GRU
+
+| Attribute | RNN | LSTM | GRU |
+|---|---|---|---|
+| Architecture | Simple, hidden state | Complex, memory cell + 3 gates | Simplified, 2 gates (update/reset) |
+| Information Flow | Stored in hidden state | Controlled by gates | Controlled by merged gates |
+| Long-term Dependency | Weak (vanishing gradient) | Strong (gates solve vanishing gradient) | Strong (gates solve vanishing gradient) |
+| Short-term Dependency | Strong | Strong | Strong |
+| Number of Parameters | Few | Many | Fewer than LSTM |
+| Training Speed | Fast | Slow | Fast |
+| Performance | Good for short-term | Good for long-term | Efficient, similar to LSTM |
+| Application Areas | Simple time series, basic NLP | NLP, speech, time series forecasting | Finance, IoT, energy, time series |
+| Vanishing Gradient | Yes | No | No |
+| Typical Use Cases | Text generation, simple prediction | Translation, speech recognition | Time series prediction, sensor data |
+| Simplicity | Very simple, rarely used | More complex, expressive (3 gates) | Simpler than LSTM, fewer parameters |
+| Expressiveness | Limited, struggles with long-term | High, handles very complex sequences | Moderate, good for moderate data size |
+| Training Efficiency | Fast, but limited | Slower, better for complex data | Fast, efficient, similar performance |
+| Trade-off | Simple but weak for long-term | Capacity for complex, long sequences | Simplicity vs. capacity |
