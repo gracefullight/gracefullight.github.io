@@ -98,3 +98,14 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
 - A perceptron separates data into two classes with a hyperplane.
 - if $w \cdot x \geq 0 \rightarrow 1$
 - if $w \cdot x \le 0 \rightarrow 0$
+
+### Learning Rules
+
+| Aspect | Perceptron Learning Rule | Gradient Descent (with Sigmoid) |
+|---|---|---|
+| **Activation function** | Hard threshold (계단 함수)<br/> $Threshold(z) = 1 \; \text{if} \; z \ge 0,\; 0 \; \text{otherwise}$ | Sigmoid (연속 함수)<br/> $h_w(x) = \frac{1}{1+e^{-w \cdot x}}$ |
+| **Output** | 0 또는 1 | 0과 1 사이의 실수 값 |
+| **Loss function** | 없음 (틀리면 조정, 맞으면 유지)<br/> 규칙 기반 학습 | $L = (y - h_w(x))^2$ (L2 loss)<br/> 또는 Cross-Entropy (실무에서 자주 사용) |
+| **Update rule** | 틀렸을 때만:<br/> $w \leftarrow w + \alpha (y - h_w(x))x$ | 경사하강법:<br/> $w \leftarrow w + \alpha (y - h_w(x)) \cdot h_w(x)(1-h_w(x)) \cdot x$ |
+| **Why derivative?** | Hard threshold는 미분 불가능 → 단순 규칙 사용 | Sigmoid는 연속적이고 미분 가능 → Loss 함수의 기울기(gradient)를 따라 업데이트.<br/> 여기서 $h_w(x)(1-h_w(x))$ 항은 sigmoid의 도함수에서 나온 것. |
+| **Interpretation** | 틀리면 정답 방향으로 한 걸음 이동 | Loss가 줄어드는 방향으로 점진적으로 이동 |
