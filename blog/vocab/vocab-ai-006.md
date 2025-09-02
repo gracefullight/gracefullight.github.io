@@ -30,3 +30,5 @@ tags:
 | retrospectively | Looking back on or dealing with past events or situations | Looking back | 회고적으로, 과거를 돌아보며 |
 | perturbations | Disturbances or deviations from a normal state | Disturbances | 교란, 변동 |
 | deformable | Capable of being changed in shape or form | Changeable | 변형 가능한 |
+| Consolidation | The process of combining multiple elements into a single, more effective whole | Integration | 통합 |
+| Oscillation | Fluctuation or variation in a state or condition | Fluctuation | 진동, 변동 |
