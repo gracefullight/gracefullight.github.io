@@ -207,3 +207,88 @@ $$ tanh(x) = \frac{e^{2x} -1}{e^{2x} + 1} $$
 - any kind of optimization algorithm could be used.
 - modern neural networks are almost always trained with some variant of stochastic gradient descent (SGD). **Adam Optimizer**
 - The optimiser is specified in the compilation step with tensorflow.
+
+## Recurrent NN, RNN
+
+- units may take as input a value computed from their own output at an earlier step in the computation.
+- have internal state, or memory: inputs received at earlier time steps affect the RNN's response to the current input.
+- be used to perform more general computations.
+  - to analyze sequential data in which a new input vector $x_t$ arrives at each time step
+- **Markov assumption**: the hidden state $z_t$ of the network suffices to capture the information from all previous inputs.
+  - $z_t = f(z_{t-1}, x_t)$
+  - Once trained, this function represents a time-homogeneous process
+  - The same update rule $f_w$ applies at every time step, regardless of whether it’s the first input or the hundredth.
+
+### Backpropagtion Through Time, BPTT
+
+- gradient expression is recursive.
+  - $\frac{\partial z_t}{\partial w_{z,z}}$
+  - $= \frac{\partial}{\partial w_{z,z}} g_z(in_{z,t})$
+  - $= g_z'(in_{z,t}) \frac{\partial in_{z,t}}{\partial w_{z,z}}$
+  - $= g_z'(in_{z,t}) \frac{\partial}{\partial w_{z,z}} (w_{z,z} z_{t-1} + w_{x,z} x_t + w_{0,z})$
+  - $= g_z'(in_{z,t}) \left( z_{t-1} + w_{z,z} \frac{\partial z_{t-1}}{\partial w_{z,z}} \right)$
+    - $\frac{\partial z_t}{\partial W_{z,z}}$ includes $\frac{\partial z_{t-1}}{\partial W_{z,z}}$
+- the gradient with run time being linear in the size of the network
+- handled automatically by deep learning software systems.
+- Iterating the recursion shows that the gradient at time $T$ includes a term proportional to:
+  - $w_{z,z} \prod_{t=1}^{T} g'_z(in_{z,t})$
+- Since for sigmoid, tanh, and ReLU we have $g' \leq 1$, if $w_{z,z} < 1$ the RNN will suffer from the **vanishing gradient problem**.
+- If $w_{z,z} > 1$, we may encounter the **exploding gradient problem**.
+
+## Long Short-Term Memory, LSTM
+
+- **memory cell** is essentially copied from time step to time step.
+- New information enters the memory by adding updates.
+  - the gradient expressions do not accumulate multiplicatively over time.
+- include **gating units**: vectors control the flow of information in the LSTM, elementwise multiplication of the corresponding information vector.
+
+### Gates in LSTM
+
+- **Forget gate**: decides what information to discard from the cell state.
+- **Input gate**: decides what new information to store in the cell state.
+- **Output gate**: decides what information to output from the cell state.
+  - similar role to the hidden state in basic RNNs.
+- Update equations:
+  - $f_t = \sigma(W_{x,f}x_t + W_{z,f}z_{t-1})$
+    - Decides which parts of the previous cell state $c_{t-1}$ should be kept or discarded.
+  - $i_t = \sigma(W_{x,i}x_t + W_{z,i}z_{t-1})$
+    - Determines how much of the new information from the current input $x_t$ and the previous hidden state $z_{t-1}$ should be added.
+  - $o_t = \sigma(W_{x,o}x_t + W_{z,o}z_{t-1})$
+    - Controls which parts of the current cell state $c_t$ are exposed as the hidden state $z_t$.
+  - $c_t = c_{t-1} \odot f_t + i_t \odot \text{tanh}(W_{x,C}x_t + W_{z,C}z_{t-1})$
+    - Cell state update
+    - Past information ($c_{t-1}$) is partially retained through the forget gate.
+    - New information is added through the input gate and $\tanh$.
+    - Thus, $c_t$ serves as the long-term memory of the LSTM.
+  - $z_t = o_t \odot \text{tanh}(c_t)$
+    - Hidden state update
+    - The cell state is normalized with $\tanh(c_t)$ and filtered by the output gate.
+    - $z_t$ is the hidden state passed forward to the next time step.
+
+## Gated Recurrent Unit, GRU
+
+- Variant of RNN with gating mechanisms.
+- Designed to capture long-term dependencies without complex architecture.
+
+### Gates in GRU
+
+- **Update gate (z)**: decides how much past information to keep
+- **Reset Gate (r)**: decides how much past information to forget
+- **Candidate hidden state ($\tilde{h}$)**: potential new memory
+- **Final hidden state ($h$)**: weighted combination of old and new information.
+
+### GRU Workflow
+
+- Reset gate ($r$)
+  - Controls how much of the previous hidden state should be "forgotten."
+  - A small value means most of the past memory is erased, while a large value means much of it is retained.
+- Update gate ($z$)
+  - Acts as a switch to decide whether to keep the previous state $h_{prev}$ or replace it with the new candidate $\tilde{h}$.
+  - If $z=1$, the past is fully kept; if $z=0$, it is completely replaced by the new candidate.
+- Candidate state ($\tilde{h}$)
+  - Combines the current input $x_t$ with the reset-gated previous hidden state to generate the "candidate" new information.
+- Final hidden state ($h$)
+  - Blends the past and the candidate using the update gate $z$.
+  - If $z$ is large → the past memory dominates.
+  - If $z$ is small → the new candidate dominates.
+- $h=(1−z)\tilde{h}+zh_{prev}$
