@@ -305,6 +305,10 @@
 <li>The same update rule <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>w</mi></msub></mrow><annotation encoding="application/x-tex">f_w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02691em">w</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span> applies at every time step, regardless of whether it’s the first input or the hundredth.</li>
 </ul>
 </li>
+<li>RNNs are designed for sequential data.</li>
+<li>a hidden state that captures information from previous steps.</li>
+<li>suffer from vanishing/exploding gradients.</li>
+<li>Good for short-term dependencies.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="backpropagtion-through-time-bptt">Backpropagtion Through Time, BPTT<a href="https://gracefullight.dev/2025/09/02/introduction-to-ai-005/#backpropagtion-through-time-bptt" class="hash-link" aria-label="Backpropagtion Through Time, BPTT에 대한 직접 링크" title="Backpropagtion Through Time, BPTT에 대한 직접 링크">​</a></h3>
 <ul>
@@ -340,6 +344,10 @@
 </ul>
 </li>
 <li>include <strong>gating units</strong>: vectors control the flow of information in the LSTM, elementwise multiplication of the corresponding information vector.</li>
+<li>a type of RNN designed to overcome vanishing gradient.</li>
+<li>use gates (input, forget, output) to control information flow.</li>
+<li>Capable of learning long-term dependencies.</li>
+<li>Widely used in NLP, speech recognition, and time series forecasting.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="gates-in-lstm">Gates in LSTM<a href="https://gracefullight.dev/2025/09/02/introduction-to-ai-005/#gates-in-lstm" class="hash-link" aria-label="Gates in LSTM에 대한 직접 링크" title="Gates in LSTM에 대한 직접 링크">​</a></h3>
 <ul>
@@ -389,6 +397,15 @@
 <ul>
 <li>Variant of RNN with gating mechanisms.</li>
 <li>Designed to capture long-term dependencies without complex architecture.</li>
+<li>a simpler alternative to LSTMs. (lightweight, effective RNN variant)</li>
+<li>Captures temporal dependencies (short &amp; long).</li>
+<li>Combine input and forget gates into a single update gate.</li>
+<li>Require fewer parameters than LSTM, making them faster to train.</li>
+<li>Perform comparably to LSTMs in many tasks.</li>
+<li>Prevents vanishing gradient.</li>
+<li>Good balance between complexity &amp; performance.</li>
+<li>Excels in time series forecasting tasks.</li>
+<li>Widely used in finance, energy and IoT.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="gates-in-gru">Gates in GRU<a href="https://gracefullight.dev/2025/09/02/introduction-to-ai-005/#gates-in-gru" class="hash-link" aria-label="Gates in GRU에 대한 직접 링크" title="Gates in GRU에 대한 직접 링크">​</a></h3>
 <ul>
@@ -424,7 +441,9 @@
 </ul>
 </li>
 <li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>z</mi><mo stretchy="false">)</mo><mover accent="true"><mi>h</mi><mo>~</mo></mover><mo>+</mo><mi>z</mi><msub><mi>h</mi><mrow><mi>p</mi><mi>r</mi><mi>e</mi><mi>v</mi></mrow></msub></mrow><annotation encoding="application/x-tex">h=(1−z)\tilde{h}+zh_{prev}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1.1813em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span><span class="mclose">)</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9313em"><span style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord mathnormal">h</span></span><span style="top:-3.6134em"><span class="pstrut" style="height:3em"></span><span class="accent-body" style="left:-0.25em"><span class="mord">~</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span></li>
-</ul>]]></content:encoded>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="comparison-rnn-vs-lstm-vs-gru">Comparison: RNN vs LSTM vs GRU<a href="https://gracefullight.dev/2025/09/02/introduction-to-ai-005/#comparison-rnn-vs-lstm-vs-gru" class="hash-link" aria-label="Comparison: RNN vs LSTM vs GRU에 대한 직접 링크" title="Comparison: RNN vs LSTM vs GRU에 대한 직접 링크">​</a></h2>
+<table><thead><tr><th>Attribute</th><th>RNN</th><th>LSTM</th><th>GRU</th></tr></thead><tbody><tr><td>Architecture</td><td>Simple, hidden state</td><td>Complex, memory cell + 3 gates</td><td>Simplified, 2 gates (update/reset)</td></tr><tr><td>Information Flow</td><td>Stored in hidden state</td><td>Controlled by gates</td><td>Controlled by merged gates</td></tr><tr><td>Long-term Dependency</td><td>Weak (vanishing gradient)</td><td>Strong (gates solve vanishing gradient)</td><td>Strong (gates solve vanishing gradient)</td></tr><tr><td>Short-term Dependency</td><td>Strong</td><td>Strong</td><td>Strong</td></tr><tr><td>Number of Parameters</td><td>Few</td><td>Many</td><td>Fewer than LSTM</td></tr><tr><td>Training Speed</td><td>Fast</td><td>Slow</td><td>Fast</td></tr><tr><td>Performance</td><td>Good for short-term</td><td>Good for long-term</td><td>Efficient, similar to LSTM</td></tr><tr><td>Application Areas</td><td>Simple time series, basic NLP</td><td>NLP, speech, time series forecasting</td><td>Finance, IoT, energy, time series</td></tr><tr><td>Vanishing Gradient</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>Typical Use Cases</td><td>Text generation, simple prediction</td><td>Translation, speech recognition</td><td>Time series prediction, sensor data</td></tr><tr><td>Simplicity</td><td>Very simple, rarely used</td><td>More complex, expressive (3 gates)</td><td>Simpler than LSTM, fewer parameters</td></tr><tr><td>Expressiveness</td><td>Limited, struggles with long-term</td><td>High, handles very complex sequences</td><td>Moderate, good for moderate data size</td></tr><tr><td>Training Efficiency</td><td>Fast, but limited</td><td>Slower, better for complex data</td><td>Fast, efficient, similar performance</td></tr><tr><td>Trade-off</td><td>Simple but weak for long-term</td><td>Capacity for complex, long sequences</td><td>Simplicity vs. capacity</td></tr></tbody></table>]]></content:encoded>
             <category>iai</category>
         </item>
         <item>
