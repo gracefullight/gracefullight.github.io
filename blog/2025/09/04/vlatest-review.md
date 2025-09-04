@@ -27,7 +27,7 @@ tags:
 
 ## Training & Evaluation
 
-- **Training:** (1) Train from scratch on robot demonstrations, or (2) **fine-tune a large VLM** (e.g., Llava) with >1B params pretraining.
+- **Training:** (1) Train from scratch on robot demonstrations, or (2) **fine-tune a large VLM** (e.g., Llava) with `>`1B params pretraining.
 - **Evaluation:** Task-specific metrics (e.g., **grasp**, **lift**, **hold** for “pick up”), either in **sim** (auto-metrics) or **real** (manual labels).
 
 ## VLATest Framework
@@ -65,7 +65,7 @@ tags:
 
 - **Scenes:** **18,604** across 4 tasks (ManiSkill2).  
 - **Models:** 7 public VLAs (RT-1-1k/58k/400k, RT-1-X, Octo-small/base, OpenVLA-7b).  
-- **Compute:** >**580 GPU hours**.
+- **Compute:** `>`**580 GPU hours**.
 
 ## Key Results & Findings
 
@@ -90,13 +90,13 @@ tags:
 
 - **Lighting perturbations significantly hurt performance.**
 - **OpenVLA-7b** most robust (**77.9%** of previously passed cases still pass), plausibly due to **SigLIP + DINOv2** pretraining and LLaVA 1.5 mixture.
-- **Sensitivity:** even **α < 2.5** increase drops success to ~**0.7×**; **α > 8** ⇒ ~**40%** of default-pass scenes succeed.
-- **Decreasing** light hurts **less** than increasing; **α < 0.2** still ~**60%** pass.
+- **Sensitivity:** even **α `<` 2.5** increase drops success to ~**0.7×**; **α `>` 8** ⇒ ~**40%** of default-pass scenes succeed.
+- **Decreasing** light hurts **less** than increasing; **α `<` 0.2** still ~**60%** pass.
 
 ### RQ4 — Camera Pose Robustness
 
 - Small pose changes (≤**5°** rotation, ≤**5 cm** shift) reduce success to **34.0%** of default.
-- **RT-1-400k** most robust (**45.6%** retain), **OpenVLA-7b** at **31.3%**; **Octo** models <**10%**.  
+- **RT-1-400k** most robust (**45.6%** retain), **OpenVLA-7b** at **31.3%**; **Octo** models `<`**10%**.  
   - Likely due to **training data scale** differences.
 
 ### RQ5 — Unseen Objects
