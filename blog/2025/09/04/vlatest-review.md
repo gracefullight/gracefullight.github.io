@@ -103,8 +103,8 @@ tags:
 
 - Using **YCB (56 unseen objects)** leads to large performance drops versus seen objects: avg **–74.2%**, **–66.7%**, **–66.7%**, **–20.0%** on Tasks 1–4.
 - **Transfer rate** across steps:
-  - \( \displaystyle T_r^n = \frac{\text{Success rate}_n}{\text{Success rate}_{n-1}} \), with \( \text{Success rate}_0 = 100\% \)
-  - Paired t-tests show significant differences on **\(T_r^1\)** for **Task 1 & 2** (p = 0.011, 0.007; Cohen’s d = 1.34, 0.891).  
+  - $ \displaystyle T_r^n = \frac{\text{Success rate}_n}{\text{Success rate}_{n-1}} $, with $ \text{Success rate}_0 = 100\% $
+  - Paired t-tests show significant differences on **$T_r^1$** for **Task 1 & 2** (p = 0.011, 0.007; Cohen’s d = 1.34, 0.891).  
   - **Primary failure mode:** **recognizing/locating unseen objects**.
 
 ### RQ6 — Instruction Mutations
