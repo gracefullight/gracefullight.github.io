@@ -33,3 +33,4 @@ tags:
 | Consolidation | The process of combining multiple elements into a single, more effective whole | Integration | 통합 |
 | oscillation | Fluctuation or variation in a state or condition | Fluctuation | 진동, 변동 |
 | homogeneous | Of the same kind; alike | Uniform | 동질의, 균일한 |
+| nonstationary | Not stationary; changing over time | Changing | 비정상적인, 시간에 따라 변하는 |
