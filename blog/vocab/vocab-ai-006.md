@@ -34,3 +34,5 @@ tags:
 | oscillation | Fluctuation or variation in a state or condition | Fluctuation | 진동, 변동 |
 | homogeneous | Of the same kind; alike | Uniform | 동질의, 균일한 |
 | nonstationary | Not stationary; changing over time | Changing | 비정상적인, 시간에 따라 변하는 |
+| whereupon | Immediately after which | After which | 그 후에, 그 다음에 |
+| magnitude | The great size or extent of something | Size | 크기, 규모 |
