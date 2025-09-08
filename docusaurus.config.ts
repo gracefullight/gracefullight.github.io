@@ -237,7 +237,7 @@ const config: Config = {
         name: "naver-site-verification",
       },
       // ? https://webmaster.yandex.com
-      { content: "6672f93d837354fb", name: "yandex-verification" },
+      { content: "f7c93483a6f87c79", name: "yandex-verification" },
       { content: "yZEdU1ABcR", name: "baidu-site-verification" },
       {
         content: "uelupjqqsm5egzlhy1aev2rfxow5yt",
