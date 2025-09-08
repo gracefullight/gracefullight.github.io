@@ -36,3 +36,4 @@ tags:
 | nonstationary | Not stationary; changing over time | Changing | 비정상적인, 시간에 따라 변하는 |
 | whereupon | Immediately after which | After which | 그 후에, 그 다음에 |
 | magnitude | The great size or extent of something | Size | 크기, 규모 |
+| maneuver | A movement or series of moves requiring skill and care | Move | 조작, 움직임 |
