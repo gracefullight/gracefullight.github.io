@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-09-04T04:32:03.778Z</updated>
+    <updated>2025-09-08T00:05:07.256Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of software development @007]]></title>
+        <id>https://gracefullight.dev/2025/09/08/fundamentals-of-software-development-007/</id>
+        <link href="https://gracefullight.dev/2025/09/08/fundamentals-of-software-development-007/"/>
+        <updated>2025-09-08T00:05:07.256Z</updated>
+        <summary type="html"><![CDATA[Fundamentals of software development @007]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="collection">Collection<a href="https://gracefullight.dev/2025/09/08/fundamentals-of-software-development-007/#collection" class="hash-link" aria-label="Collection에 대한 직접 링크" title="Collection에 대한 직접 링크">​</a></h2>
+<blockquote>
+<p>a data sturcucture that groups multiple elemtns togehter logically.</p>
+</blockquote>
+<ul>
+<li>referenced by the collection name, and its elements are accessed using indexing or look up methods.</li>
+<li>some collections allow dynamic sizing, expanding and shrinking with the data, others have a fixed size.</li>
+<li>can store mixed data types.<!-- -->
+<ul>
+<li>Java collections are typically type-safe using generics.</li>
+<li>Python uses dynamic typing.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="python-list">Python List<a href="https://gracefullight.dev/2025/09/08/fundamentals-of-software-development-007/#python-list" class="hash-link" aria-label="Python List에 대한 직접 링크" title="Python List에 대한 직접 링크">​</a></h3>
+<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token plain">mylist </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">"Tom"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">30</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">112.5</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">index</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">append</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">insert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># returns a slice of a list from first to last-1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">first</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">last</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">index</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># replaces items from first to last-1 with a list</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">first</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">last</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token builtin">list</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">values</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># adds list 2 at the end of list 1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> list1 </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> list2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># adds list 2 at the end of list 1</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">list1</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">extend</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">list2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">remove</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">pop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">index</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">pop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">del</span><span class="token plain"> mylist</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">index</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">del</span><span class="token plain"> mylist</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">clear</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Sorts the list alphanumerically, ascending</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">sort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">sort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">reverse </span><span class="token operator" style="color:#393A34">=</span><span class="token boolean" style="color:#36acaa">True</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">reverse</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mylist</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">count</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="python-set">Python Set<a href="https://gracefullight.dev/2025/09/08/fundamentals-of-software-development-007/#python-set" class="hash-link" aria-label="Python Set에 대한 직접 링크" title="Python Set에 대한 직접 링크">​</a></h3>
+<ul>
+<li>unordered, not indexed.</li>
+<li>mutable, unique.</li>
+</ul>
+<div class="language-py codeBlockContainer_QFtC theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_vdmG"><pre tabindex="0" class="prism-code language-py codeBlock_CpxK thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines__0Nl"><span class="token-line" style="color:#393A34"><span class="token plain">myset </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'hello'</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">5</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">True</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">3.5</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> x </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> myset</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">x</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Merges myset iwth the otherset, rtaining unique values</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">update</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">otherset</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Adds other set items to a set (only unique items are retained)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mynewset </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">union</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">otherset</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Retain only the items that exists into set1 and set2</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> set1</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">intersection</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">set2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># report error if item not found</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">remove</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">discard</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">item</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">pop</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">myset</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">clear</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">del</span><span class="token plain"> myset</span><br></span></code></pre></div></div>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="fsd" term="fsd"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Sentence structures]]></title>
         <id>https://gracefullight.dev/2025/09/04/sentence-structures/</id>
@@ -1264,356 +1298,5 @@ e.g. Poverty, famine and major public health problems around the developing worl
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="vlm" term="vlm"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[데이터 시각화 의사 결정 트리]]></title>
-        <id>https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/</id>
-        <link href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/"/>
-        <updated>2025-08-28T10:48:43.168Z</updated>
-        <summary type="html"><![CDATA[데이터 시각화 의사 결정 트리]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="color-legend">Color Legend<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#color-legend" class="hash-link" aria-label="Color Legend에 대한 직접 링크" title="Color Legend에 대한 직접 링크">​</a></h2>
-<table><thead><tr><th>Icon</th><th>Category</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>🟡</td><td>Distribution</td><td>분포를 보여주고 싶을 때</td><td>Histogram, Density plot</td></tr><tr><td>⚫</td><td>Correlation</td><td>상관관계를 보여주고 싶을 때</td><td>Scatterplot, Correlogram</td></tr><tr><td>🟢</td><td>Ranking</td><td>순위를 보여주고 싶을 때</td><td>Bar chart, Lollipop chart</td></tr><tr><td>🔴</td><td>Part of a whole</td><td>전체 중 일부를 보여주고 싶을 때</td><td>Pie chart, Treemap</td></tr><tr><td>🔵</td><td>Evolution</td><td>시간에 따른 변화를 보여주고 싶을 때</td><td>Line chart, Area chart</td></tr><tr><td>🟣</td><td>Maps</td><td>지도를 활용해서 공간적 정보를 보여줄 때</td><td>Choropleth map, Bubble Map</td></tr><tr><td>🟤</td><td>Flow</td><td>흐름(흐름도, 이동 경로 등)을 보여줄 때</td><td>Flow map, Sankey-like</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="categoric">Categoric<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#categoric" class="hash-link" aria-label="Categoric에 대한 직접 링크" title="Categoric에 대한 직접 링크">​</a></h2>
-<ul>
-<li>One Variable<!-- -->
-<ul>
-<li>⚫ Waffle</li>
-<li>🟢 Bar Plot</li>
-<li>🟢 Lollipop</li>
-<li>🟢 Word Cloud</li>
-<li>🔴 Circular Packing</li>
-<li>🔴 Doughnut</li>
-<li>🔴 Pie</li>
-<li>🔴 Treemap</li>
-</ul>
-</li>
-<li>Two or More Variables<!-- -->
-<ul>
-<li>Two Independent Lists<!-- -->
-<ul>
-<li>🔴 Venn Diagram</li>
-</ul>
-</li>
-<li>Nested<!-- -->
-<ul>
-<li>🟢 Bar Plot</li>
-<li>🔴 Circular Packing</li>
-<li>🔴 Dendrogram</li>
-<li>🔴 Sunburst</li>
-<li>🔴 Treemap</li>
-</ul>
-</li>
-<li>Subgroup<!-- -->
-<ul>
-<li>⚫ Grouped Scatter</li>
-<li>⚫ Heatmap</li>
-<li>🟢 Lollipop</li>
-<li>🟢 Parallel Plot</li>
-<li>Spider</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🟤 Sankey Diagram</li>
-</ul>
-</li>
-<li>Adjacency<!-- -->
-<ul>
-<li>🟤 Arc</li>
-<li>🟤 Chord</li>
-<li>🟤 Network</li>
-<li>🟤 Sankey</li>
-<li>⚫ Heatmap</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="relational">Relational<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#relational" class="hash-link" aria-label="Relational에 대한 직접 링크" title="Relational에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Network<!-- -->
-<ul>
-<li>⚫ Heatmap</li>
-<li>🟢 Hive</li>
-<li>🟤 Arc</li>
-<li>🟤 Chord</li>
-<li>🟤 Network</li>
-<li>🟤 Sankey</li>
-</ul>
-</li>
-<li>Nested<!-- -->
-<ul>
-<li>No Value<!-- -->
-<ul>
-<li>🔴 Circular Packing</li>
-<li>🔴 Dendrogram</li>
-<li>🔴 Sunburst</li>
-<li>🔴 Treemap</li>
-<li>🟤 Sankey</li>
-</ul>
-</li>
-<li>Value for Leaf<!-- -->
-<ul>
-<li>🔴 Circular Packing</li>
-<li>🔴 Dendrogram</li>
-<li>🔴 Sunburst</li>
-<li>🔴 Treemap</li>
-<li>🟤 Sankey</li>
-</ul>
-</li>
-<li>Value for Edges<!-- -->
-<ul>
-<li>🔴 Dendrogram</li>
-<li>🟤 Chord</li>
-<li>🟤 Sankey</li>
-</ul>
-</li>
-<li>Value for Connection<!-- -->
-<ul>
-<li>Edge Bundling</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="map">Map<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#map" class="hash-link" aria-label="Map에 대한 직접 링크" title="Map에 대한 직접 링크">​</a></h2>
-<ul>
-<li>🟣 Bubble Map</li>
-<li>🟣 Choropleth</li>
-<li>🟣 Connected Map</li>
-<li>🟣 Map</li>
-<li>🟣 Map Hexbin</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="time-series">Time Series<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#time-series" class="hash-link" aria-label="Time Series에 대한 직접 링크" title="Time Series에 대한 직접 링크">​</a></h2>
-<ul>
-<li>One Series<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-<li>🟡 Ridge Line</li>
-<li>🔵 Area</li>
-<li>🔵 Line Plot</li>
-<li>🟢 Bar Plot</li>
-<li>🟢 Lollipop</li>
-</ul>
-</li>
-<li>Several Series<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-<li>🟡 Ridge Line</li>
-<li>⚫ Heatmap</li>
-<li>🔵 Line Plot</li>
-<li>🔵 Stacked Area</li>
-<li>🔵 Stream Graph</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="categoric-and-numeric">Categoric and Numeric<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#categoric-and-numeric" class="hash-link" aria-label="Categoric and Numeric에 대한 직접 링크" title="Categoric and Numeric에 대한 직접 링크">​</a></h2>
-<ul>
-<li>One Numeric + One Categoric<!-- -->
-<ul>
-<li>One Observation, per Group<!-- -->
-<ul>
-<li>⚫ Waffle</li>
-<li>🟢 Bar Plot</li>
-<li>🟢 Lollipop</li>
-<li>🟢 Word Cloud</li>
-<li>🔴 Circular Packing</li>
-<li>🔴 Doughnut</li>
-<li>🔴 Pie</li>
-<li>🔴 Treemap</li>
-</ul>
-</li>
-<li>Several Observations, per Group<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-<li>🟡 Ridge Line</li>
-<li>🟡 Density</li>
-<li>🟡 Histogram</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>One Category, Several Numeric<!-- -->
-<ul>
-<li>No Order<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-<li>⚫ Grouped Scatter</li>
-<li>⚫ 2D Density</li>
-<li>⚫ PCA</li>
-<li>⚫ Correlogram</li>
-</ul>
-</li>
-<li>A Numeric is Ordered<!-- -->
-<ul>
-<li>⚫ Connected Scatter</li>
-<li>🔵 Area</li>
-<li>🔵 Line Plot</li>
-<li>🔵 Stacked Area</li>
-<li>🔵 Stream Graph</li>
-</ul>
-</li>
-<li>One Value Per Group<!-- -->
-<ul>
-<li>⚫ Grouped Scatter</li>
-<li>⚫ Heatmap</li>
-<li>🟢 Lollipop</li>
-<li>🟢 Parallel Plot</li>
-<li>🟢 Spider Plot</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🟤 Sankey Diagram</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Several Categories, One Numeric<!-- -->
-<ul>
-<li>Subgroup<!-- -->
-<ul>
-<li>One Observation. per Group<!-- -->
-<ul>
-<li>⚫ Grouped Scatter</li>
-<li>⚫ Heatmap</li>
-<li>🟢 Lollipop</li>
-<li>🟢 Parallel Plot</li>
-<li>🟢 Spider Plot</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🔴 Grouped Bar Plot</li>
-<li>🟤 Sankey Diagram</li>
-</ul>
-</li>
-<li>Several Observations, per Group<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Nested<!-- -->
-<ul>
-<li>One Observation. per Group<!-- -->
-<ul>
-<li>🟢 Bar Plot</li>
-<li>🔴 Circular Packing</li>
-<li>🔴 Dendrogram</li>
-<li>🔴 Sunburst</li>
-<li>🔴 Treemap</li>
-</ul>
-</li>
-<li>Several Observations. per Group<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Adjacency<!-- -->
-<ul>
-<li>⚫ Heatmap</li>
-<li>🟤 Arc</li>
-<li>🟤 Chord</li>
-<li>🟤 Network</li>
-<li>🟤 Sankey</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="numeric">Numeric<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#numeric" class="hash-link" aria-label="Numeric에 대한 직접 링크" title="Numeric에 대한 직접 링크">​</a></h2>
-<ul>
-<li>One Numeric Variable<!-- -->
-<ul>
-<li>🟡 Density</li>
-<li>🟡 Histogram</li>
-</ul>
-</li>
-<li>Two Numeric Variables<!-- -->
-<ul>
-<li>Not Ordered<!-- -->
-<ul>
-<li>Few Points<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Histogram</li>
-<li>⚫ Scatter Plot</li>
-</ul>
-</li>
-<li>Many Points<!-- -->
-<ul>
-<li>🟡 Density</li>
-<li>🟡 Violin</li>
-<li>⚫ 2D Density</li>
-<li>🔵 Marginal Distribution</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Ordered<!-- -->
-<ul>
-<li>⚫ Connected Scatter</li>
-<li>🔵 Area Plot</li>
-<li>🔵 Line Plot</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Three Numeric Variables<!-- -->
-<ul>
-<li>Not Ordered<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Violin</li>
-<li>⚫ Bubble Plot</li>
-<li>⚫ 3d Scatter or Surface</li>
-</ul>
-</li>
-<li>Ordered<!-- -->
-<ul>
-<li>🔵 Area</li>
-<li>🔵 Line Plot</li>
-<li>🔵 Stacked Area</li>
-<li>🔵 Stream Graph</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Several Numeric Variables<!-- -->
-<ul>
-<li>Ordered<!-- -->
-<ul>
-<li>🔵 Area</li>
-<li>🔵 Line Plot</li>
-<li>🔵 Stacked Area</li>
-<li>🔵 Stream Graph</li>
-</ul>
-</li>
-<li>Not Ordered<!-- -->
-<ul>
-<li>🟡 Box Plot</li>
-<li>🟡 Ridge Line</li>
-<li>🟡 Violin</li>
-<li>⚫ Correlogram</li>
-<li>⚫ Heatmap</li>
-<li>⚫ PCA</li>
-<li>🔴 Dendrogram</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/28/data-visualization-desicion-tree/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
-<ul>
-<li><a href="https://www.data-to-viz.com/" target="_blank" rel="noopener noreferrer">from Data to Viz</a></li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="data" term="data"/>
     </entry>
 </feed>
