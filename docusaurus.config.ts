@@ -141,6 +141,12 @@ const config: Config = {
         token: "c0899829e72b45e98dff77241127252c",
       },
     ],
+    [
+      "@gracefullight/docusaurus-plugin-yandex-metrica",
+      {
+        counterId: "104072655",
+      },
+    ],
   ],
 
   presets: [

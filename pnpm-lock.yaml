@@ -53,6 +53,9 @@ importers:
       '@gracefullight/docusaurus-plugin-naver-analytics':
         specifier: ^1.0.0
         version: 1.0.0(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@gracefullight/docusaurus-plugin-yandex-metrica':
+        specifier: ^1.0.1
+        version: 1.0.1(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@iconify/react':
         specifier: ^6.0.1
         version: 6.0.1(react@19.1.1)
@@ -1836,6 +1839,9 @@ packages:
 
   '@gracefullight/docusaurus-plugin-naver-analytics@1.0.0':
     resolution: {integrity: sha512-3FRsUGl2I1eCNFaQSXUtrTuqwZYm99Ai0RY0YUK1sj3DHsUlVHpsQ0f3wZDekOACqsLPXzemWcI39pmyNTxy2g==}
+
+  '@gracefullight/docusaurus-plugin-yandex-metrica@1.0.1':
+    resolution: {integrity: sha512-Tsz3ghit3ZwP/RsqF3gExfdqrjjqz0W0FmAwOFBwAa82Xulr3Ij76KUbpljC5SSxRfYTVIpgHof9qqslKMrIeA==}
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -10566,6 +10572,18 @@ snapshots:
       - webpack-cli
 
   '@gracefullight/docusaurus-plugin-naver-analytics@1.0.0(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+    dependencies:
+      '@docusaurus/utils-validation': 3.8.1(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - react
+      - react-dom
+      - supports-color
+      - uglify-js
+      - webpack-cli
+
+  '@gracefullight/docusaurus-plugin-yandex-metrica@1.0.1(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
       '@docusaurus/utils-validation': 3.8.1(@swc/core@1.12.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
     transitivePeerDependencies:
