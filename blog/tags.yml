@@ -73,3 +73,14 @@ uae:
 javascript:
   label: "javascript"
   description: "Any application that can be written in JavaScript, will eventually be written in JavaScript"
+
+# ======================================================================
+# 논문
+# ======================================================================
+vla:
+  label: "vla"
+  description: "Vision-Language-Action Models"
+
+vlm:
+  label: "vlm"
+  description: "Vision-Language Models"
