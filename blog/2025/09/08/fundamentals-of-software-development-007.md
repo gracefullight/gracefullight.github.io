@@ -77,3 +77,44 @@ myset.pop()
 myset.clear()
 del myset
 ```
+
+### Python Tuple
+
+- a cllection of items of any type
+- ordered, indexed
+- **unchangable**, once a tuple is created the elemets are fixed
+
+```py
+mytuple = ("Tom", 30, 112.5)
+len(mytuple)
+mytuple[index]
+mytuple[first:last]
+mytuple = tuple + tuple2
+```
+
+### Python Dictionary
+
+- a collection of items represented as key-value pairs
+- unordered, indexed by uniaue keys
+- itmes are mutable
+- allow duplicate values but not duplicate keys
+
+```py
+mydata = {
+  "name": "Tom",
+  "age": 30,
+  "role": "admin"
+}
+
+mydata.keys()
+len(mydata)
+mydata[key]
+mydata[key] = new-value
+del mydata[key]
+del mydata
+
+# Deletes an entry associated with key
+val = mydata.pop(key)
+# Updates/Inserts { k: v } entry into the dictionary
+mydata.update({ k: v })
+```
