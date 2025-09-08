@@ -118,3 +118,107 @@ val = mydata.pop(key)
 # Updates/Inserts { k: v } entry into the dictionary
 mydata.update({ k: v })
 ```
+
+### Java List
+
+- an interface of the Java Collection Framework (JCF)
+- cannot be instantiated.
+- common implementation of List interface
+  - ArrayList
+  - LinkedList
+
+```java
+List<Integer> numbers = new ArrayList<>();
+List<String> names = new LinkedList<>();
+
+numbers.get(0);
+numbers.get(numbers.size() - 1);
+
+names.get(indexOf("Hello"));
+names.get(lastIndexOf("Hello"));
+
+numbers.add(5);
+names.remove("Hello");
+names.remove(indexOf("Hello"));
+
+numbers.removeAll(<another list>);
+// set(2, 12) replaces the item at index 2 with 12
+numbers.set(2, 12);
+```
+
+### Java Set
+
+- an interface of the Java Collection Framework (JCF)
+- unordered, unique objects.
+
+```java
+HashSet<String> names = new HashSet();
+HashSet<String> names = new HashSet(Array.asList("Tom", "Jerry", "Mickey"));
+
+HashSet<String> names = new HashSet();
+ArrayList list1 = new ArrayList();
+ArrayList list2 = new ArrayList();
+
+list1.add("Tom");
+list1.add("Jerry");
+
+names.addAll(list1);
+names.addAll(list2);
+
+names.remove("Tom");
+boolean isRemoved = names.remove("Tom");
+
+for (String name : names) {
+  System.out.println(name);
+}
+
+Iterator<String> it = names.iterator();
+while (it.hasNext()) {
+  System.out.println(it.next());
+}
+
+names.clear();
+names.isEmpty();
+names.contains("Tim");
+names.size();
+names.removeAll(set2);
+names.containsAll(set2);
+// Retain set2 elements and discard the rest
+names.retainAll(set2);
+```
+
+### Java Map
+
+- interface from java.util stores data as a keiy-value pairs
+- contain unique keys that are associated with specific values.
+
+```java
+HashMap<Integer, String> people = new HashMap<>();
+people.put(1, "Tom");
+people.put(2, "Jerry");
+people.put(3, "Mickey");
+
+people.putIfAbsent(2, "Donald");
+System.out.println(people.get(2));
+
+people.put(2, "Lucy");
+people.replace(2, "Amy");
+people.remove(2);
+
+System.out.prinln(people.keySet());
+System.out.println(people.values());
+
+people.clear();
+people.isEmpty();
+people.containsKey(2);
+people.size();
+people.getOrDefault(50, "Unknown");
+// Checks if the value is mapped with one or more keys
+people.containsValue("Jim");
+```
+
+## Operation Patterns
+
+- Finding an item in a list: Using the lookup pattern
+- Finding multiple items in a list: Using the updated-lookup pattern
+- Removing certain items from a list: Using the remove-all pattern
