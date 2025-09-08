@@ -144,7 +144,7 @@ const config: Config = {
     [
       "@gracefullight/docusaurus-plugin-yandex-metrica",
       {
-        counterId: "104072655",
+        counterId: 104_072_655,
       },
     ],
   ],
