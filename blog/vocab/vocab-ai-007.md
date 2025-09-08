@@ -14,6 +14,14 @@ tags:
 | referee | A person who supervises a game or match to ensure the rules are followed | Umpire | 심판 |
 | nonterminal state | The agent is still in the middle of the episode. The environment can continue to produce rewards, and the agent can still take actions. | ongoing state | 비종결 상태 |
 | apprenticeship | a period of time working as an apprentice | internship | 수습 기간 |
+| in a similar vein | in a similar way | similarly | 비슷한 맥락에서 |
+| subsequent | coming after something in time; following | following | 그 다음의 |
+| in the sense | in the most limited meaning of a word, phrase, etc. | in the meaning | ~라는 의미에서 |
+| hypothesis | a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation | assumption | 가설 |
+| untimely | happening or done at an unsuitable time | ill-timed | 때 아닌, 시기상조의 |
+| utility | the state of being useful, profitable, or beneficial | usefulness | 효용 |
+| thereafter | after that time | after that | 그 후에 |
+| analogy | a comparison between two things, typically for the purpose of explanation or clarification | comparison | 유추, 비유 |
 
 ## RL
 
