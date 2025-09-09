@@ -36,7 +36,7 @@ graph LR
 
 - [Driven by Data: Explanatory visualization examples](https://driven-by-data.net/)
 
-### Descirptive statistics
+## Descirptive statistics
 
 - Describe some data through a quantitative summarisation of its behaviour
 - Help us summarise data in a meaningful way.
@@ -51,13 +51,13 @@ graph LR
   - standard deviation
   - interquartile range
 
-### Inferential statistics
+## Inferential statistics
 
 - includes more advanced methods such as hypothesis tests, ANOVA, and regression.
 - make claims about how general this dataset is.
 - we can make inferences from a sample to a population.
 
-### Measures of central tendency
+## Measures of central tendency
 
 - a quick and easy way to describe a dataset by condensing it down to just one representative value.
 - can easily compare one dataset to another.
@@ -67,7 +67,7 @@ graph LR
 
 ![Distribution](./distribution.png)
 
-### Measures of spread
+## Measures of spread
 
 - how similar or varied a set of values are for a particular variable
 - summarise the data in a more detailed way that shows how scattered the values are and how much they differ from the central tendency.
@@ -80,7 +80,7 @@ graph LR
   - First, find the median of a set of data.
   - Then, find the medians of the upper and lower half of the data.
 
-### Frequency distribution
+## Frequency distribution
 
 - Frequency is the number of times a data value occurs or repeats.
 - $frequency(v_i) = \frac{\text{number of objects with attribute value}\thinspace v_i}{m}$

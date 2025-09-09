@@ -22,6 +22,7 @@ tags:
 | utility | the state of being useful, profitable, or beneficial | usefulness | 효용 |
 | thereafter | after that time | after that | 그 후에 |
 | analogy | a comparison between two things, typically for the purpose of explanation or clarification | comparison | 유추, 비유 |
+| inherent | existing in something as a permanent, essential, or characteristic attribute | intrinsic | 내재하는, 타고난 |
 
 ## RL
 
