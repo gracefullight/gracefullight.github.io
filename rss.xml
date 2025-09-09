@@ -4,10 +4,111 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 08 Sep 2025 08:18:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Sep 2025 09:08:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Fundamentals of Data Analytics @005]]></title>
+            <link>https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/</link>
+            <guid>https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/</guid>
+            <pubDate>Tue, 09 Sep 2025 09:08:38 GMT</pubDate>
+            <description><![CDATA[Fundamentals of Data Analytics @005]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="data-visualization">Data visualization<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#data-visualization" class="hash-link" aria-label="Data visualization에 대한 직접 링크" title="Data visualization에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Successful visualization requires data be converted into a visual format.</li>
+<li>Motivation is to play to the strengths of people<!-- -->
+<ul>
+<li>for people to quickly absorb a large mount of informatin and find patterns in it.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="data-visualization-process">Data visualization process<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#data-visualization-process" class="hash-link" aria-label="Data visualization process에 대한 직접 링크" title="Data visualization process에 대한 직접 링크">​</a></h3>
+<!-- -->
+<ul>
+<li>a human who looks at the visual and perceives information.</li>
+<li>the human should be able to answer some questions by looking at the visual after perception.</li>
+</ul>
+<table><thead><tr><th>Item</th><th>Exploratory</th><th>Explanatory</th></tr></thead><tbody><tr><td>Purpose</td><td>To analyse data to solve a question or develop a hypothesis.</td><td>To convey a message or idea.</td></tr><tr><td>Target audience</td><td>Expert users with prior knowledge of the subject.</td><td>Non-expert users with limited or no background knowledge.</td></tr><tr><td>When</td><td>Usually happens during the data analytics project and is internal facing.</td><td>Usually happens after the exploration phase and is often external facing.</td></tr><tr><td>Approach</td><td>Unguided, users explore, with no clear conclusion.</td><td>Guided through author-chosen comparisons, clear conclusions.</td></tr><tr><td>Representation</td><td>Has an analytical purpose and represents the complexity of data.</td><td>No analytical purpose and represents understandable data.</td></tr></tbody></table>
+<ul>
+<li><a href="https://driven-by-data.net/" target="_blank" rel="noopener noreferrer">Driven by Data: Explanatory visualization examples</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="descirptive-statistics">Descirptive statistics<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#descirptive-statistics" class="hash-link" aria-label="Descirptive statistics에 대한 직접 링크" title="Descirptive statistics에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Describe some data through a quantitative summarisation of its behaviour</li>
+<li>Help us summarise data in a meaningful way.</li>
+<li>Highlight things like whether there are any values that are ill defined, or which make no sense.</li>
+<li>measures of central tendency<!-- -->
+<ul>
+<li>mean</li>
+<li>median</li>
+<li>mode</li>
+</ul>
+</li>
+<li>measures of spread<!-- -->
+<ul>
+<li>range</li>
+<li>variance</li>
+<li>standard deviation</li>
+<li>interquartile range</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="inferential-statistics">Inferential statistics<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#inferential-statistics" class="hash-link" aria-label="Inferential statistics에 대한 직접 링크" title="Inferential statistics에 대한 직접 링크">​</a></h3>
+<ul>
+<li>includes more advanced methods such as hypothesis tests, ANOVA, and regression.</li>
+<li>make claims about how general this dataset is.</li>
+<li>we can make inferences from a sample to a population.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="measures-of-central-tendency">Measures of central tendency<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#measures-of-central-tendency" class="hash-link" aria-label="Measures of central tendency에 대한 직접 링크" title="Measures of central tendency에 대한 직접 링크">​</a></h3>
+<ul>
+<li>a quick and easy way to describe a dataset by condensing it down to just one representative value.</li>
+<li>can easily compare one dataset to another.</li>
+<li><strong>Mean</strong>: the averge of a dataset.</li>
+<li><strong>Median</strong>: the middle value in a dataset.</li>
+<li><strong>Mode</strong>: the most commonly occurring value in a dataset.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Distribution" src="https://gracefullight.dev/assets/images/distribution-7fae29f4cb0c9fb211d1d62086edbc9e.png" width="917" height="360" class="img_f7zd"></p>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="measures-of-spread">Measures of spread<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#measures-of-spread" class="hash-link" aria-label="Measures of spread에 대한 직접 링크" title="Measures of spread에 대한 직접 링크">​</a></h3>
+<ul>
+<li>how similar or varied a set of values are for a particular variable</li>
+<li>summarise the data in a more detailed way that shows how scattered the values are and how much they differ from the central tendency.</li>
+<li><strong>Range</strong>: the largest value of a variable and subtracts the smallest.<!-- -->
+<ul>
+<li>The bigger the range the more spread out a data set is.</li>
+</ul>
+</li>
+<li><strong>Variance</strong>: how far a set of numbers are spread out from their average value.</li>
+<li><strong>Standard deviation</strong>: the square root of the variance<!-- -->
+<ul>
+<li>gives us back a value that has the same units as the mean</li>
+</ul>
+</li>
+<li><strong>Interquarile range, IQR</strong>: the difference between the upper and lower medians.<!-- -->
+<ul>
+<li>First, find the median of a set of data.</li>
+<li>Then, find the medians of the upper and lower half of the data.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="frequency-distribution">Frequency distribution<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-005/#frequency-distribution" class="hash-link" aria-label="Frequency distribution에 대한 직접 링크" title="Frequency distribution에 대한 직접 링크">​</a></h3>
+<ul>
+<li>Frequency is the number of times a data value occurs or repeats.</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>r</mi><mi>e</mi><mi>q</mi><mi>u</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>y</mi><mo stretchy="false">(</mo><msub><mi>v</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mtext>number&nbsp;of&nbsp;objects&nbsp;with&nbsp;attribute&nbsp;value</mtext><mtext> </mtext><msub><mi>v</mi><mi>i</mi></msub></mrow><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">frequency(v_i) = \frac{\text{number of objects with attribute value}\thinspace v_i}{m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">re</span><span class="mord mathnormal" style="margin-right:0.03588em">q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em">cy</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.2772em;vertical-align:-0.345em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9322em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.4461em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">number&nbsp;of&nbsp;objects&nbsp;with&nbsp;attribute&nbsp;value</span></span><span class="mspace mtight" style="margin-right:0.1952em"></span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em"><span style="top:-2.357em;margin-left:-0.0359em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>Visual displays that organise and present frequency counts so that the information can be interpreted more easily.</li>
+<li>can show absolute frequencies or relative frequencies, such as proportions or percentages.</li>
+<li>can be shown in a table or graph.</li>
+<li>Some common methods of showing frequency distributions include frequency tables, histograms or bar charts.</li>
+<li><strong>Frequency tables</strong>: display the number of occurrences of a particular value or characteristic.</li>
+<li><strong>Histograms</strong>: a type of graph in which each column represents a numeric variable<!-- -->
+<ul>
+<li>useful for describing the shape, centre and spread to better understand the distribution of the dataset.</li>
+</ul>
+</li>
+<li><strong>Bar charts</strong>: a type of graph in which each column represents a categorical variable or a discrete ungrouped numeric variable.</li>
+</ul>]]></content:encoded>
+            <category>fda</category>
+        </item>
         <item>
             <title><![CDATA[Vocabulary for AI @007]]></title>
             <link>https://gracefullight.dev/vocab/vocab-ai-007/</link>
@@ -1166,71 +1267,6 @@ e.g. Poverty, famine and major public health problems around the developing worl
 <h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/31/vima-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
 <ul>
 <li>Jiang, Y., Gupta, A., Zhang, Z., Wang, G., Dou, Y., Chen, Y., Fei-Fei, L., Anandkumar, A., Zhu, Y., &amp; Fan, L. (2023). VIMA: Robot Manipulation with Multimodal Prompts Proceedings of the 40th International Conference on Machine Learning, Proceedings of Machine Learning Research. <code>https://proceedings.mlr.press/v202/jiang23b.html</code></li>
-</ul>]]></content:encoded>
-            <category>vlm</category>
-        </item>
-        <item>
-            <title><![CDATA[RoboFlamingo Review]]></title>
-            <link>https://gracefullight.dev/2025/08/31/roboflamingo-review/</link>
-            <guid>https://gracefullight.dev/2025/08/31/roboflamingo-review/</guid>
-            <pubDate>Sun, 31 Aug 2025 05:35:06 GMT</pubDate>
-            <description><![CDATA[RoboFlamingo Review]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_IhMp" id="roboflamingo">RoboFlamingo<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#roboflamingo" class="hash-link" aria-label="RoboFlamingo에 대한 직접 링크" title="RoboFlamingo에 대한 직접 링크">​</a></h2>
-<ul>
-<li>RoboFlamingo <strong>decouples vision-language understanding and control</strong>, using OpenFlamingo for perception and a lightweight policy head for sequential decision-making.</li>
-<li>Unlike prior VLM-based approaches, it requires only <strong>small-scale imitation fine-tuning</strong> on language-conditioned manipulation data, without large-scale co-fine-tuning.</li>
-<li>This design enables <strong>data-efficient, zero-shot generalizable, and deployable</strong> robot manipulation policies on modest compute resources.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="key-idea">Key Idea<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#key-idea" class="hash-link" aria-label="Key Idea에 대한 직접 링크" title="Key Idea에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Proposes <strong>RoboFlamingo</strong>, a simple framework to adapt existing VLMs for robotic manipulation with lightweight fine-tuning.</li>
-<li>Built on <strong>OpenFlamingo</strong>, decoupling <strong>vision-language understanding</strong> from <strong>decision-making</strong>.</li>
-<li>Pre-trained VLM handles <strong>language and visual comprehension</strong>, while a dedicated <strong>policy head models sequential history</strong>.</li>
-<li>Fine-tuned only on <strong>language-conditioned manipulation datasets</strong> using imitation learning.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="advantages">Advantages<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#advantages" class="hash-link" aria-label="Advantages에 대한 직접 링크" title="Advantages에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Requires only a <strong>small amount of demonstrations</strong> to adapt to downstream manipulation tasks.</li>
-<li>Provides <strong>open-loop control</strong> capability → deployable on low-performance platforms.</li>
-<li>Can be trained/evaluated on a <strong>single GPU server</strong>, making it a cost-effective and accessible solution.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="benchmarks">Benchmarks<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#benchmarks" class="hash-link" aria-label="Benchmarks에 대한 직접 링크" title="Benchmarks에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Evaluated on <strong>CALVIN benchmark</strong> (34 tasks, 1000 instruction chains).</li>
-<li>RoboFlamingo achieves <strong>2× performance improvements</strong> over previous state-of-the-art methods.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="performance">Performance<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#performance" class="hash-link" aria-label="Performance에 대한 직접 링크" title="Performance에 대한 직접 링크">​</a></h2>
-<ul>
-<li><strong>Imitation Learning</strong>: Outperforms all baselines across all metrics.</li>
-<li><strong>Zero-shot Generalization</strong>:<!-- -->
-<ul>
-<li><strong>Vision</strong>: Stronger generalization in ABC→D setting.</li>
-<li><strong>Language</strong>: Robust to GPT-4 generated synonymous instructions.</li>
-</ul>
-</li>
-<li><strong>Ablation Studies</strong>:<!-- -->
-<ul>
-<li>Ignoring history (MLP w/o hist) gives worst results.</li>
-<li>LSTM and GPT-based policy heads perform best (LSTM chosen as default).</li>
-<li><strong>VL pre-training</strong> is crucial for downstream manipulation.</li>
-<li><strong>Larger VLMs</strong> show better data efficiency.</li>
-<li><strong>Instruction fine-tuning</strong> improves both seen and unseen tasks.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="flexibility-of-deployment">Flexibility of Deployment<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#flexibility-of-deployment" class="hash-link" aria-label="Flexibility of Deployment에 대한 직접 링크" title="Flexibility of Deployment에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Supports <strong>open-loop control</strong> by predicting entire action sequences with a single inference → reduces latency and test-time compute.</li>
-<li>Direct open-loop use without retraining can degrade performance; mitigated with <strong>jump-step demonstrations</strong>.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="conclusion">Conclusion<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#conclusion" class="hash-link" aria-label="Conclusion에 대한 직접 링크" title="Conclusion에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Demonstrates that pre-trained VLMs enable <strong>data efficiency</strong> and strong <strong>zero-shot generalization</strong> in robotic manipulation.</li>
-<li>RoboFlamingo is presented as an <strong>intuitive, efficient, and open solution</strong>, with high potential when combined with large-scale real robot data.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_IhMp" id="ref">Ref<a href="https://gracefullight.dev/2025/08/31/roboflamingo-review/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크">​</a></h2>
-<ul>
-<li>Li, X., Liu, M., Zhang, H., Yu, C., Xu, J., Wu, H., Cheang, C., Jing, Y., Zhang, W., &amp; Liu, H. (2024). Vision-language foundation models as effective robot imitators. International Conference on Learning Representations (ICLR 2024), Vienna, Austria.</li>
 </ul>]]></content:encoded>
             <category>vlm</category>
         </item>
