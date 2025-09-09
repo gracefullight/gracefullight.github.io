@@ -115,3 +115,108 @@ $$ Dist(A, B) = \sqrt{\sum_{} w_i (a_{i} - b_{i})^{2}} $$
 
 - $dist(ID2, ID3) = \sqrt{(0-0)^2 + (0.6-0)^2 + (0.7-0)^2} = 0.92$
 - $dist(ID2, ID4) = \sqrt{(0-1)^2 + (0.6-0.7)^2 + (0.7-0.8)^2} = 1.02$
+
+## Clustring methodologies
+
+```mermaid
+graph TD
+  Clustering
+  Clustering --> Hierarchical
+    Hierarchical --> Agglomerative
+    Hierarchical --> Divisive
+  Clustering --> Partitioning
+    Partitioning --> Distance-based
+    Partitioning --> Model-based
+    Partitioning --> Density-based
+```
+
+- **Hierarchical approach**: create trees of clusters and sub-clusters
+  - Divisive (Top-down): Start with all examples in a single cluster, and decide how to break the cluster into multiple sub-clusters.
+  - Agglomerative (Bottom-up): Start with each example in its own separate cluster. Decide which clusters to merge.
+- **Partitional (K starting points)**: Start with $K$ random cluster centers, and decide which examples to put in each of the clusters.
+  - Adjust the cluster centers after each allocation of examples to clusters.
+  - k-means, k-medoids
+
+### Choosing a clustering method
+
+| Consideration | What to look for | Typical choices |
+| --- | --- | --- |
+| Scalability | Near-linear time and bounded memory on large datasets. | MiniBatch K-Means, BIRCH, scalable DBSCAN with indexing. |
+| Arbitrary shapes | Ability to find non-spherical clusters. | DBSCAN, HDBSCAN, Spectral clustering. |
+| Noise and outliers | Robustness to noise; ability to mark points as noise. | DBSCAN, HDBSCAN (labels noise), GMM with low-weight components. |
+| Mixed attribute types | Works with categorical + numeric or custom distances. | k-prototypes/k-modes, Agglomerative with Gower distance. |
+| Few parameters | Minimal, intuitive hyperparameters; stable defaults. | Agglomerative (linkage, distance), HDBSCAN (min cluster size). |
+| Order insensitivity | Results independent of input order. | Most batch methods; shuffle for MiniBatch K-Means. |
+| High dimensionality | Handles curse of dimensionality or uses reduction. | PCA + K-Means/Agglomerative, Spectral after reduction, cosine distance. |
+| User constraints | Must-link/cannot-link or size constraints supported. | COP-K-Means, constrained agglomerative, semi-supervised variants. |
+| Interpretability | Easy to explain clusters and decisions. | K-Means centroids, Agglomerative dendrograms, GMM probabilities. |
+
+## Clustering Terminology
+
+![Clustering Points](./clustering-points.png)
+
+- **Centroid**: a point in the middle of a cluster. It may not be an actual point in the dataset.
+- **Medoid**: an actual point in the dataset that is centrally located and is, therefore, representative of the cluster.
+- **Representative points**: are points around the cluster that are representative of the cluster.
+- **High intra-class similarity**: the homogeneity, the closeness of data points within a single cluster
+- **Low inter-class similarity**: The distance between two separate clusters
+
+![Class in Cluster](./class-in-cluster.png)
+
+- A good clustering method will produce high-quality clusters with high intra-class similarity and low inter-class similarity.
+
+## Hierarchical clustering
+
+- Hierarchical approaches lead to the formation of dendrograms
+- The top and bottom of a dendrogram represent the two extremes of clustering
+  - At the bottom, a leaf is an individual cluste
+  - At the top, the root is one cluster
+
+### AGNES
+
+> AGgglomerative NESting hierarchical clustering algorithm.
+
+- Agglomerative hierarchical clustering follows a bottom-up approach
+  - starting with clusters of single objects and merging them into bigger and bigger clusters
+- agglomerative clustering process terminates (or finishes) when a termination condition is satisfied or there is only one cluster containing all objects.
+- based on Euclidean distance between two objects
+- steps of the algorithm:
+  1. Make a cluster with only one object as member for all objects
+  2. Calculate the Euclidean distance between each pair of clusters
+  3. Choose the cluster pair with the smallest distance and merge them to make one cluster
+  4. Repeat step 2 with the new combined cluster and the other, older clusters
+  5. Repeat steps 3 and 4 until all the objects are merged into a single cluster.
+
+### DIANA
+
+> DIvisive ANAlysis clustering algorithm.
+
+- The top-to-bottom approach is followed in divisive hierarchical clustering
+  - starts with a cluster containing all objects.
+- This cluster is broken up into smaller clusters, and this process of breaking up clusters continues until each cluster contains one object or a given termination condition is satisfied.
+- steps of the algorithm:
+  1. The process of starts at the root with all the points as one cluster.
+  2. It recursively splits higher-level clusters to build the dendrogram.
+  3. It can be considered as a global approach.
+  4. It is more efficient when compared with agglomerative clustering.
+
+![Agenes vs Diana](./agenes-diana.png)
+
+### Single-linkage clustering
+
+> the minimum method, connectedness, or nearest neighbour method
+
+- two clusters are linked by a single element pair
+- The distance between clusters is defined as the shortest distance from a member of the first cluster to a member of the second cluster.
+
+### Complete-linkage clustering
+
+> the furthest neighbour method, maximum method, or diameter method.
+
+- the distance between two clusters is defined as the greatest distance between any member of the first cluster and any member of second cluster
+
+### Average-linkage clustering
+
+> the minimum variance method
+
+- the distance between two clusters is calculated by averaging the distance between each member of first cluster and each member of second cluster
