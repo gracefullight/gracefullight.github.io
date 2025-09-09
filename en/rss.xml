@@ -172,6 +172,112 @@ c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
 s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
 c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
 M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1.02</span></span></span></span></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="clustring-methodologies">Clustring methodologies<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#clustring-methodologies" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<!-- -->
+<ul>
+<li><strong>Hierarchical approach</strong>: create trees of clusters and sub-clusters<!-- -->
+<ul>
+<li>Divisive (Top-down): Start with all examples in a single cluster, and decide how to break the cluster into multiple sub-clusters.</li>
+<li>Agglomerative (Bottom-up): Start with each example in its own separate cluster. Decide which clusters to merge.</li>
+</ul>
+</li>
+<li><strong>Partitional (K starting points)</strong>: Start with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">K</span></span></span></span> random cluster centers, and decide which examples to put in each of the clusters.<!-- -->
+<ul>
+<li>Adjust the cluster centers after each allocation of examples to clusters.</li>
+<li>k-means, k-medoids</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="choosing-a-clustering-method">Choosing a clustering method<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#choosing-a-clustering-method" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<table><thead><tr><th>Consideration</th><th>What to look for</th><th>Typical choices</th></tr></thead><tbody><tr><td>Scalability</td><td>Near-linear time and bounded memory on large datasets.</td><td>MiniBatch K-Means, BIRCH, scalable DBSCAN with indexing.</td></tr><tr><td>Arbitrary shapes</td><td>Ability to find non-spherical clusters.</td><td>DBSCAN, HDBSCAN, Spectral clustering.</td></tr><tr><td>Noise and outliers</td><td>Robustness to noise; ability to mark points as noise.</td><td>DBSCAN, HDBSCAN (labels noise), GMM with low-weight components.</td></tr><tr><td>Mixed attribute types</td><td>Works with categorical + numeric or custom distances.</td><td>k-prototypes/k-modes, Agglomerative with Gower distance.</td></tr><tr><td>Few parameters</td><td>Minimal, intuitive hyperparameters; stable defaults.</td><td>Agglomerative (linkage, distance), HDBSCAN (min cluster size).</td></tr><tr><td>Order insensitivity</td><td>Results independent of input order.</td><td>Most batch methods; shuffle for MiniBatch K-Means.</td></tr><tr><td>High dimensionality</td><td>Handles curse of dimensionality or uses reduction.</td><td>PCA + K-Means/Agglomerative, Spectral after reduction, cosine distance.</td></tr><tr><td>User constraints</td><td>Must-link/cannot-link or size constraints supported.</td><td>COP-K-Means, constrained agglomerative, semi-supervised variants.</td></tr><tr><td>Interpretability</td><td>Easy to explain clusters and decisions.</td><td>K-Means centroids, Agglomerative dendrograms, GMM probabilities.</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="clustering-terminology">Clustering Terminology<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#clustering-terminology" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Clustering Points" src="https://gracefullight.dev/en/assets/images/clustering-points-4d442e343611525ca28a31cbcdcb0a0c.png" width="555" height="211" class="img_f7zd"></p>
+<ul>
+<li><strong>Centroid</strong>: a point in the middle of a cluster. It may not be an actual point in the dataset.</li>
+<li><strong>Medoid</strong>: an actual point in the dataset that is centrally located and is, therefore, representative of the cluster.</li>
+<li><strong>Representative points</strong>: are points around the cluster that are representative of the cluster.</li>
+<li><strong>High intra-class similarity</strong>: the homogeneity, the closeness of data points within a single cluster</li>
+<li><strong>Low inter-class similarity</strong>: The distance between two separate clusters</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Class in Cluster" src="https://gracefullight.dev/en/assets/images/class-in-cluster-23557dfc04837bd3bca53fda99b05446.png" width="480" height="364" class="img_f7zd"></p>
+<ul>
+<li>A good clustering method will produce high-quality clusters with high intra-class similarity and low inter-class similarity.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="hierarchical-clustering">Hierarchical clustering<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#hierarchical-clustering" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>Hierarchical approaches lead to the formation of dendrograms</li>
+<li>The top and bottom of a dendrogram represent the two extremes of clustering<!-- -->
+<ul>
+<li>At the bottom, a leaf is an individual cluste</li>
+<li>At the top, the root is one cluster</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="agnes">AGNES<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#agnes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>AGgglomerative NESting hierarchical clustering algorithm.</p>
+</blockquote>
+<ul>
+<li>Agglomerative hierarchical clustering follows a bottom-up approach<!-- -->
+<ul>
+<li>starting with clusters of single objects and merging them into bigger and bigger clusters</li>
+</ul>
+</li>
+<li>agglomerative clustering process terminates (or finishes) when a termination condition is satisfied or there is only one cluster containing all objects.</li>
+<li>based on Euclidean distance between two objects</li>
+<li>steps of the algorithm:<!-- -->
+<ol>
+<li>Make a cluster with only one object as member for all objects</li>
+<li>Calculate the Euclidean distance between each pair of clusters</li>
+<li>Choose the cluster pair with the smallest distance and merge them to make one cluster</li>
+<li>Repeat step 2 with the new combined cluster and the other, older clusters</li>
+<li>Repeat steps 3 and 4 until all the objects are merged into a single cluster.</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="diana">DIANA<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#diana" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>DIvisive ANAlysis clustering algorithm.</p>
+</blockquote>
+<ul>
+<li>The top-to-bottom approach is followed in divisive hierarchical clustering<!-- -->
+<ul>
+<li>starts with a cluster containing all objects.</li>
+</ul>
+</li>
+<li>This cluster is broken up into smaller clusters, and this process of breaking up clusters continues until each cluster contains one object or a given termination condition is satisfied.</li>
+<li>steps of the algorithm:<!-- -->
+<ol>
+<li>The process of starts at the root with all the points as one cluster.</li>
+<li>It recursively splits higher-level clusters to build the dendrogram.</li>
+<li>It can be considered as a global approach.</li>
+<li>It is more efficient when compared with agglomerative clustering.</li>
+</ol>
+</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Agenes vs Diana" src="https://gracefullight.dev/en/assets/images/agenes-diana-8b66011c7888df512833a85c23fd9f9e.png" width="3937" height="2479" class="img_f7zd"></p>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="single-linkage-clustering">Single-linkage clustering<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#single-linkage-clustering" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>the minimum method, connectedness, or nearest neighbour method</p>
+</blockquote>
+<ul>
+<li>two clusters are linked by a single element pair</li>
+<li>The distance between clusters is defined as the shortest distance from a member of the first cluster to a member of the second cluster.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="complete-linkage-clustering">Complete-linkage clustering<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#complete-linkage-clustering" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>the furthest neighbour method, maximum method, or diameter method.</p>
+</blockquote>
+<ul>
+<li>the distance between two clusters is defined as the greatest distance between any member of the first cluster and any member of second cluster</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_IhMp" id="average-linkage-clustering">Average-linkage clustering<a href="https://gracefullight.dev/en/2025/09/09/fundamentals-of-data-analytics-006/#average-linkage-clustering" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h3>
+<blockquote>
+<p>the minimum variance method</p>
+</blockquote>
+<ul>
+<li>the distance between two clusters is calculated by averaging the distance between each member of first cluster and each member of second cluster</li>
 </ul>]]></content:encoded>
             <category>fda</category>
         </item>
