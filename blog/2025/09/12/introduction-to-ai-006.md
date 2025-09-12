@@ -54,11 +54,16 @@ tags:
 | **Reward** | additive |
 | **Agent** | Make decisions at time step for actions<br/>Interacts with environment through percepts and actions |
 
+- A set of states: an initial state $S_0$, possible terminal state(s)
+- A set of actions in each state: $ACTIONS(s)$
+- A stochastic Markov transition model: $P(s' | s, a)$
+- A reward function: $R(s)$ or $R(s, a, s')$
+
 ### RL, Reinforcement Learning
 
 - an agent interacts with an environment
-- takes acitons to maximize a cumulative reward signal over time.
-- learns a policy that balanes exploratino and exploittation
+- takes actions to maximize a cumulative reward signal over time.
+- learns a policy that balances exploration and exploitation
   - exploration: trying new actions.
   - exploitation: choosing known good actions.
 
