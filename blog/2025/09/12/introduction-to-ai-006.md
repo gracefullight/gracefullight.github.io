@@ -58,6 +58,8 @@ tags:
 - A set of actions in each state: $ACTIONS(s)$
 - A stochastic Markov transition model: $P(s' | s, a)$
 - A reward function: $R(s)$ or $R(s, a, s')$
+- In MDP, Additive Reward is defined as a function that assigns a numerical value to each state-action pair or state-transition pair.
+  - represents the immediate benefit or cost associated with taking a specific action in a particular state.
 
 ### RL, Reinforcement Learning
 
@@ -105,3 +107,22 @@ tags:
 ### Goal
 
 - To maximize sum of rewards from the start state to a terminate state
+
+## Additive Reward
+
+- a type of reward structure
+- the total reward earned by an agent in an MDP
+- calculated by summing up the individual rewards received at each time step as the agent interacts with the environment.
+
+## Discounted reward
+
+- a techinque used to calcluate the expected cumulative reward over time.
+- applying a discount factor to future rewards, prioritizing more immediate rewards over distant ones.
+
+## Utility
+
+$$ U^{\pi}(s) = E\left[\sum_{t=0}^{\infty} \gamma^t R(S_t, \pi(S_t), S_{t+1})\right] $$
+
+- The expectation $E$ is with repect to the probability distribution over state sequences determined by $s$ and $\pi$.
+- $\gamma$ is the discount factor, $0 \leq \gamma < 1$, which determines the present value of future rewards.
+- $R(S_t, \pi(S_t), S_{t+1})$ is the reward received when transitioning from state $S_t$ to state $S_{t+1}$ by taking action $\pi(S_t)$.
