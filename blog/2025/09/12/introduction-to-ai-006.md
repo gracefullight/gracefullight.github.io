@@ -60,6 +60,10 @@ tags:
 - A reward function: $R(s)$ or $R(s, a, s')$
 - In MDP, Additive Reward is defined as a function that assigns a numerical value to each state-action pair or state-transition pair.
   - represents the immediate benefit or cost associated with taking a specific action in a particular state.
+- The solution must specify what the agent should do for any state that the agent might reach.
+- **Policy**: $π(s)$, an action for each state
+  - A solution to an MDP.
+  - $\pi(s)$ is the action recommended by the policy $\pi$ for state $s$
 
 ### RL, Reinforcement Learning
 
