@@ -64,6 +64,7 @@ tags:
 - **Policy**: $π(s)$, an action for each state
   - A solution to an MDP.
   - $\pi(s)$ is the action recommended by the policy $\pi$ for state $s$
+- Q state: $Q(s, a)$, the expected utility of doing action $a$ in state $s$
 
 ### RL, Reinforcement Learning
 
@@ -130,3 +131,32 @@ $$ U^{\pi}(s) = E\left[\sum_{t=0}^{\infty} \gamma^t R(S_t, \pi(S_t), S_{t+1})\ri
 - The expectation $E$ is with repect to the probability distribution over state sequences determined by $s$ and $\pi$.
 - $\gamma$ is the discount factor, $0 \leq \gamma < 1$, which determines the present value of future rewards.
 - $R(S_t, \pi(S_t), S_{t+1})$ is the reward received when transitioning from state $S_t$ to state $S_{t+1}$ by taking action $\pi(S_t)$.
+
+## Bellman equation
+
+$$U(s) = max_{a \in A(s)} \sum_{s'}P[s'|s,a](R(s,a,s') + \gamma U(s'))$$
+
+| Formula Component | Description |
+| --- | --- |
+| $U(s)$ | the utility of state $s$ |
+| $max_a$ | the maximum over all possible actions $a \in ACTIONS(s)$ |
+| $\sum_{s'}$ | the sum over all possible successor states $s'$ |
+| $P[s'\vert s,a]$ | the transition probability of reaching state $s'$ |
+| $R(s,a,s')$ | the reward received after transitioning from state $s$ to state $s'$ by taking action $a$ |
+| $\gamma$ | the discount factor, $0 \leq \gamma < 1$ |
+| $U(s')$ | the utility of the successor state $s'$ |
+
+- In optimal setting, the neighbor state meets the Bellman equation.
+- From $s_0$ to termination, each step in the sequence should match the Bellman equation.
+
+$$ \pi^{*}_s = argmax_{\pi}U^{\pi}(s) $$
+
+### Q function
+
+- the expected utility of taking a given action in a given state.
+- enables the agent to act optimally simply by choosing
+  - $U(s) = max_a Q(s,a)$
+- The optimal policy can be extracted from the Q-function.
+  - $ \pi^{*}(s) = argmax_a Q(s,a) $
+
+$$ Q(s,a) = \sum_{s'}P[s'|s,a](R(s,a,s') + \gamma U(s')) \\ \space = \sum_{s'}P[s'|s,a](R(s,a,s') + \gamma max_{a'}Q(s',a')) $$
