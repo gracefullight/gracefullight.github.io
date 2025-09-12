@@ -226,3 +226,23 @@ $$ U_i(s) = \sum_{s'}P(s'|s,\pi_{i}(s))[R(s,\pi_{i}(s),s') + \gamma U_{i}(s')] $
 - The transition model $P(s'|s,a)$ is represented as a table and it is estimated directly from the counts that are accumulated in $N_{s'|s,a}$.
 - The counts record how often state $s'$ is reached when executing $a$ in $s$.
   - $P(s'|s,a) = \frac{N_{s'|s,a}}{\sum_{s''}N_{s''|s,a}}$
+
+### Temporal difference, TD
+
+$$ U^{\pi}(s) \leftarrow U^{\pi}(s) + \alpha[R(s,\pi(s),s') + \gamma U^{\pi}(s') - U^{\pi}(s)] $$
+
+- when a transition occurs from state $s$ to state $s'$ via action $\pi(s)$
+- $\alpha$ is the learning rate, $0 < \alpha \leq 1$
+- no need a transition model to perform updates
+- the environment is itself supplies the connection between neighboring states in the form of observed transitions.
+
+### Q learning
+
+- **model-free** reinforcement learning algorithm
+- the agent learns a Q-function, $Q(s,a)$
+- avoids the need for a model by learning an action-utility function $Q(s,a)$ instead of utility function $U(s)$.
+- a model-free Q-learning TD update
+  - $Q(s,a) \leftarrow Q(s,a) + \alpha[R(s,a,s') + \gamma max_{a'}Q(s',a') - Q(s,a)]$
+  - this update is calculated whenever action $a$ is executed in state $s$ leading to state $s'$
+- TD Q-learning agent doesn't need a transition model $P(s'|s,a)$
+  - either for learning or for action selection.
