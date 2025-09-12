@@ -74,6 +74,13 @@
 <li>represents the immediate benefit or cost associated with taking a specific action in a particular state.</li>
 </ul>
 </li>
+<li>The solution must specify what the agent should do for any state that the agent might reach.</li>
+<li><strong>Policy</strong>: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">π(s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span></span></span></span>, an action for each state<!-- -->
+<ul>
+<li>A solution to an MDP.</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi(s)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span></span></span></span> is the action recommended by the policy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">π</span></span></span></span> for state <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">s</span></span></span></span></li>
+</ul>
+</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="rl-reinforcement-learning">RL, Reinforcement Learning<a href="https://gracefullight.dev/2025/09/12/introduction-to-ai-006/#rl-reinforcement-learning" class="hash-link" aria-label="RL, Reinforcement Learning에 대한 직접 링크" title="RL, Reinforcement Learning에 대한 직접 링크">​</a></h3>
 <ul>
