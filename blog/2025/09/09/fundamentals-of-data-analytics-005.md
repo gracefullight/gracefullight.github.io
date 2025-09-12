@@ -1,7 +1,7 @@
 ---
-title: Fundamentals of Data Analytics @005
+title: Fundamentals of data analytics @005
 date: 2025-09-09T19:08:38.526+10:00
-description: Fundamentals of Data Analytics @005
+description: Fundamentals of data analytics @005
 authors: me
 tags:
   - fda
