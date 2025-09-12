@@ -160,3 +160,69 @@ $$ \pi^{*}_s = argmax_{\pi}U^{\pi}(s) $$
   - $ \pi^{*}(s) = argmax_a Q(s,a) $
 
 $$ Q(s,a) = \sum_{s'}P[s'|s,a](R(s,a,s') + \gamma U(s')) \\ \space = \sum_{s'}P[s'|s,a](R(s,a,s') + \gamma max_{a'}Q(s',a')) $$
+
+## Reinforcement Learning
+
+### Key components of RL
+
+- Agent
+- Environment
+- State
+- Action
+- Reward
+- Policy
+
+### Application of RL
+
+- Robotics
+- Autonomous systems
+- Game playing
+  - Atari video games from raw visual input
+  - Playing poker
+  - Alpha Go
+- Recommendation systems
+
+### RL Algorithms
+
+- Model-based RL
+  - often learns a utility function $U(s)$
+  - the sum of rewards from state $s$ onward from observing the effects of its actions on the environment.
+- Model-free RL
+  - Action-utility learning, such as Q-learning
+  - Policy learning
+- Passive RL
+  - the agent's policy is fixed
+  - the task is to learn the utilities of states.
+- Active RL
+  - the agent must figure out what to do through exploration and exploitation.
+    - Exploration: trying new actions to discover their effects.
+    - Exploitation: leveraging known actions that yield high rewards.
+
+### Direct Utility Estimation
+
+- the utility of a state is **the expected total reward** from the state onward.
+  - **the expecgted reward-to-go** from that state.
+  - each trial provides a sample of this quantity for state visited.
+- end of each sequence, the algorighm calculates the observed reward-to-go for each state and updates the estimated utility for the state accordingly.
+- In the limit of infinitly many trials, the sample average will converge to the expectation in teh Bellman equation.
+- Ignores the connections between states.
+  - misses opportunities to learning, it learns nothing until the end of the trial.
+  - often converges very slowly.
+
+### Adaptive Dynamic Programming, ADP
+
+$$ U_i(s) = \sum_{s'}P(s'|s,\pi_{i}(s))[R(s,\pi_{i}(s),s') + \gamma U_{i}(s')] $$
+
+- advantage of the constraints among the utilities of states by learning the transition model
+  - that connects them and solves the corresponding MDP
+  - using dynamic programming to calculate the utilities of the states.
+- These Bellman equations are linear when the policy $\pi_i$ is fixed
+  - can be solved using any linear algebra package.
+
+#### Learning a transition model
+
+- the environment is fully observable
+- the agent can learn the mapping from a state-action pair $(s, a)$ to the resulting state $s'$.
+- The transition model $P(s'|s,a)$ is represented as a table and it is estimated directly from the counts that are accumulated in $N_{s'|s,a}$.
+- The counts record how often state $s'$ is reached when executing $a$ in $s$.
+  - $P(s'|s,a) = \frac{N_{s'|s,a}}{\sum_{s''}N_{s''|s,a}}$
