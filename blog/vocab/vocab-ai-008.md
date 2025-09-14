@@ -20,3 +20,8 @@ tags:
 | diffuse | spread out over a large area; not concentrated | spread out | 확산되다 |
 | albedo | the proportion of the incident light or radiation that is reflected by a surface | reflectivity | 반사율 |
 | color constancy | the feature of the human color perception system which ensures that the perceived color of objects remains relatively constant under varying illumination conditions | consistent color perception | 색채 항등성 |
+| occlusion | the blocking of light or other radiation by an object | blockage | 폐색, 차폐 |
+| deformation | the action or process of changing in shape or distorting, especially through the application of pressure | distortion | 변형 |
+| foreshortening | the visual effect or optical illusion that causes an object or distance to appear shorter than it actually is because it is angled toward the viewer | perspective shortening | 단축, 단축법 |
+| courtesy | provided at no cost | free of charge | 무료 제공 |
+| apprenticeship learning | a type of learning where an agent learns to perform tasks by observing and imitating a more experienced agent | learning by imitation | 도제 학습 |
