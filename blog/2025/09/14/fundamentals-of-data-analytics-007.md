@@ -220,3 +220,27 @@ function id3 (examples, target, attrs):
 - Dynamically define new discrete attributes that partition the continuous attribute.
 - discrete: $A < v = true$ and $A >= v = false $
 - the boundary poins can be estimated from the training data.
+
+## The confusion matrix
+
+- a basic method of evaluation of classifiers
+- The columns have numbers associated with the actual number of positive data points in the test set and the actual number of negative data points in the test set
+
+| | Predicted Positive | Predicted Negative |
+| --- | --- | --- |
+| Actual Positive | True Positive (TP) | False Negative (FN) |
+| Actual Negative | False Positive (FP) | True Negative (TN) |
+
+- TP: the number of correct prediction of positive samples.
+  - the number of data points in the test set that were positive and the classifier correctly assigned them to the positive group
+- TN: the number of correct prediction of negative samples
+  - the number of data points in our test set that was actually negative and predicted as negative by the classifiers
+- FP: the number of incorrect predictions of positive samples
+  - the value of data points in our test set that was actually negative but were predicted by the classifier as positives.
+  - These ones are obvious errors, which is called a type 1 error.
+  - `type I error`
+- FN: the number of incorrect prediction of negative samples.
+  - the number of data points in our test set that was actually positive but were predicted by the classifier as negative
+  - usually called the type 2 error, and when we are trying to build a classification.
+  - might have a trade-off between the number of the type 1 error or the type 2 error.
+  - `type II error`
