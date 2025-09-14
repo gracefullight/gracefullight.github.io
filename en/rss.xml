@@ -218,6 +218,39 @@ i.e. the unpredictability of the data.</p>
 <li>Dynamically define new discrete attributes that partition the continuous attribute.</li>
 <li>discrete: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&lt;</mo><mi>v</mi><mo>=</mo><mi>t</mi><mi>r</mi><mi>u</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">A &lt; v = true</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6151em"></span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mo>=</mo><mi>v</mi><mo>=</mo><mi>f</mi><mi>a</mi><mi>l</mi><mi>s</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">A &gt;= v = false </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">se</span></span></span></span></li>
 <li>the boundary poins can be estimated from the training data.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="the-confusion-matrix">The confusion matrix<a href="https://gracefullight.dev/en/2025/09/14/fundamentals-of-data-analytics-007/#the-confusion-matrix" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading">​</a></h2>
+<ul>
+<li>a basic method of evaluation of classifiers</li>
+<li>The columns have numbers associated with the actual number of positive data points in the test set and the actual number of negative data points in the test set</li>
+</ul>
+<table><thead><tr><th></th><th>Predicted Positive</th><th>Predicted Negative</th></tr></thead><tbody><tr><td>Actual Positive</td><td>True Positive (TP)</td><td>False Negative (FN)</td></tr><tr><td>Actual Negative</td><td>False Positive (FP)</td><td>True Negative (TN)</td></tr></tbody></table>
+<ul>
+<li>TP: the number of correct prediction of positive samples.<!-- -->
+<ul>
+<li>the number of data points in the test set that were positive and the classifier correctly assigned them to the positive group</li>
+</ul>
+</li>
+<li>TN: the number of correct prediction of negative samples<!-- -->
+<ul>
+<li>the number of data points in our test set that was actually negative and predicted as negative by the classifiers</li>
+</ul>
+</li>
+<li>FP: the number of incorrect predictions of positive samples<!-- -->
+<ul>
+<li>the value of data points in our test set that was actually negative but were predicted by the classifier as positives.</li>
+<li>These ones are obvious errors, which is called a type 1 error.</li>
+<li><code>type I error</code></li>
+</ul>
+</li>
+<li>FN: the number of incorrect prediction of negative samples.<!-- -->
+<ul>
+<li>the number of data points in our test set that was actually positive but were predicted by the classifier as negative</li>
+<li>usually called the type 2 error, and when we are trying to build a classification.</li>
+<li>might have a trade-off between the number of the type 1 error or the type 2 error.</li>
+<li><code>type II error</code></li>
+</ul>
+</li>
 </ul>]]></content:encoded>
             <category>fda</category>
         </item>
