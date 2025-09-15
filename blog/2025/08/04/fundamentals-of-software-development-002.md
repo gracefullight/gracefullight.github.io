@@ -1,7 +1,7 @@
 ---
-title: FSD @002
+title: FSD +002
 date: 2025-08-04T12:49:53.887+10:00
-description: Fundamentals of software development @002
+description: Fundamentals of software development +002
 authors: me
 tags:
   - fsd

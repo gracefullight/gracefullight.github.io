@@ -1,7 +1,7 @@
 ---
-title: FSD @006
+title: FSD +006
 date: 2025-09-01T10:09:15.360+10:00
-description: Fundamentals of software development @006
+description: Fundamentals of software development +006
 authors: me
 tags:
   - fsd

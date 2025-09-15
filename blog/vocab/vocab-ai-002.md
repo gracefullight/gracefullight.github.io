@@ -1,7 +1,7 @@
 ---
-title: Vocabulary for AI @002
+title: Vocabulary for AI +002
 date: 2025-07-30T15:23:03.894+10:00
-description: Vocabulary for AI @002
+description: Vocabulary for AI +002
 authors: me
 tags:
   - vocab

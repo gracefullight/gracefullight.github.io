@@ -1,7 +1,7 @@
 ---
-title: IAI @001
+title: IAI +001
 date: 2025-08-05T14:44:13.745+10:00
-description: Introduction to AI @001
+description: Introduction to AI +001
 authors: me
 tags:
   - iai

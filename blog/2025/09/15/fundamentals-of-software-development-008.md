@@ -1,7 +1,7 @@
 ---
-title: FSD @008
+title: FSD +008
 date: 2025-09-15T10:02:30.848+10:00
-description: Fundamentals of software development @008
+description: Fundamentals of software development +008
 authors: me
 tags:
   - fsd

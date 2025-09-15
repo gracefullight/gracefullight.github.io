@@ -1,5 +1,5 @@
 ---
-title: FSD @001
+title: FSD +001
 date: 2025-07-29T19:05:17.618+10:00
 description: Fundamentals of software development 001
 authors: me

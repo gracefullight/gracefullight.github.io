@@ -1,7 +1,7 @@
 ---
-title: FDA @002
+title: FDA +002
 date: 2025-08-06T12:58:52.085+10:00
-description: Fundamentals of Data Analytics @002
+description: Fundamentals of Data Analytics +002
 authors: me
 tags:
   - fda

@@ -1,7 +1,7 @@
 ---
-title: IELTS Transcription @006
+title: IELTS Transcription +006
 date: 2025-07-15T23:57:50.608+10:00
-description: IELTS Writing Transcription @006
+description: IELTS Writing Transcription +006
 authors: me
 tags:
   - ielts

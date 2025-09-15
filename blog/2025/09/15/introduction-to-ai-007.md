@@ -1,7 +1,7 @@
 ---
-title: IAI @007
+title: IAI +007
 date: 2025-09-15T14:41:29.589+10:00
-description: Introduction to AI @007
+description: Introduction to AI +007
 authors: me
 tags:
   - iai
