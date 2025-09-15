@@ -170,3 +170,59 @@ $$R_{L} = R_{L-1} + (k_{L} - 1) \cdot \prod_{i=1}^{L-1} s_i$$
   - it standardizes the input to a layer for each mini-batch.
 - standardizes the mean and variance of the values.
 - maeks it much simpler to train a deep network.
+
+## Tranining in a CNN
+
+$$Cross-entropy(y, \hat{y}) = -\sum_{i} y_i \log(\hat{y}_i)$$
+
+- Forward pass
+- Backward pass
+- Parameter update
+
+## Variants of CNNs
+
+### AlexNet
+
+![AlexNet](./alexnet.png)
+
+![AlexNet Layers](./alexnet-layers.png)
+
+### ResNet
+
+- stands for a residual neural network.
+- was designed to enable hundreds or thousands of convolutional layers.
+- Residual neural networks do this by utilizing skip connections, or shortcurts to jump over some layers.
+- was an innovative solution to the "vanishing gradient" problem.
+
+```bash
+x ────────────────► (+) ──► y
+   │                     ▲
+   ▼                     │
+ [Conv → ReLU → Conv] = F(x)
+```
+
+### VGGNet
+
+- increases the depth of the network through adding more convolutional layers by using small convolution filters (3x3) while other parameters are fixed.
+
+![VGGNet](./vggnet.png)
+
+## Derived model for object detection
+
+### YOLO
+
+1. Split an images to S times S blocks.
+2. Apply object classification to each block and get confidence score of different objecxt for each block.
+3. Based on the class probability map to locate objects.
+
+![YOLO](./yolo.png)
+
+### Calculation AP and mAP
+
+1. Gather Detection results
+2. Match Predictions to Ground Truth
+3. Compute Precision and Recall to generate a set of (recall, precision) points
+4. Build the Precision-Recall (PR) Curve (presioin decreases as recall increases)
+5. Smooth the Precision-Recall Curve
+6. Calculate AP
+7. Extend to mAP
