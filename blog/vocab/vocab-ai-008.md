@@ -25,3 +25,4 @@ tags:
 | foreshortening | the visual effect or optical illusion that causes an object or distance to appear shorter than it actually is because it is angled toward the viewer | perspective shortening | 단축, 단축법 |
 | courtesy | provided at no cost | free of charge | 무료 제공 |
 | apprenticeship learning | a type of learning where an agent learns to perform tasks by observing and imitating a more experienced agent | learning by imitation | 도제 학습 |
+| consolidate | make (something) physically stronger or more solid | strengthen | 강화하다 |

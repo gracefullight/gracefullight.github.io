@@ -1,5 +1,5 @@
 ---
-title: Fundamentals of software development @007
+title: FSD @007
 date: 2025-09-08T10:05:07.256+10:00
 description: Fundamentals of software development @007
 authors: me

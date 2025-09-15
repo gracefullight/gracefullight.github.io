@@ -1,5 +1,5 @@
 ---
-title: Fundamentals of data analytics @006
+title: FDA @006
 date: 2025-09-09T21:02:16.207+10:00
 description: Fundamentals of data analytics @006
 authors: me

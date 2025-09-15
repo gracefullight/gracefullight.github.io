@@ -1,5 +1,5 @@
 ---
-title: Introduction to AI @005
+title: IAI @005
 date: 2025-09-02T12:56:15.922+10:00
 description: Introduction to AI @005
 authors: me

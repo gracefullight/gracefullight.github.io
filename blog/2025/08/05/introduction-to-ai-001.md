@@ -1,5 +1,5 @@
 ---
-title: Introduction to Artificial Intelligence @001
+title: IAI @001
 date: 2025-08-05T14:44:13.745+10:00
 description: Introduction to Artificial Intelligence @001
 authors: me
