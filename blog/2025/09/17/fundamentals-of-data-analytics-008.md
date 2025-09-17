@@ -80,3 +80,18 @@ $$ F = 2 * \frac{Precision * Recall}{Precision + Recall} $$
 - a measure of the accuracy of the test
 - It is the harmonic mean of the recall and precision, where an F1 score reaches its best value at 1 (perfect precision and recall).
 - It allows the Recall and Precision to be assessed in the same calculation.
+
+| Predicted \ Actual | Positive | Negative | Total |
+| ------------------- | -------- | -------- | ----- |
+| **Positive**          | 110       | 5       | 115   |
+| **Negative**          | 10      | 60       | 70    |
+| **Total**              | 120      | 65       | 185   |
+
+- $Accuracy = \frac{110 + 60}{185} = 0.91$
+- $Error Rate = \frac{10 + 5}{185} = 0.08$
+- $True Positive Rate (Sensitivity/Recall) = \frac{110}{115} = 0.95$
+- $False Positive Rate = \frac{10}{70} = 0.14$
+- $True Negative Rate (Specificty) = \frac{60}{70} = 0.85$
+- $False Negative Rate = \frac{5}{115} = 0.04$
+- $Precision = \frac{110}{120} = 0.91$
+- $F1 = (2 * 0.91 * 0.95) / (0.91 + 0.95) = 0.92$
