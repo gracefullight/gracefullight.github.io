@@ -69,3 +69,8 @@ tags:
   - if derivative is $+ve$ (i.e. error increasing) `->` $w_{ij}$ decreased by $u_{ij}$
   - if the derivative is negative (i.e. error decreasing) `->` $w_{ij}$ increased by $u_{ij}$
   - if the derivative changes sign, the last weight update is reverted. (backtracks the last weight update)
+
+## KNIME
+
+- RProp MLP Learner + MultiLayerPerceptron Predictor
+- MultilayerPerceptron + Weka Predictor (back propagation with momentum)
