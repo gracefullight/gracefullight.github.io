@@ -28,6 +28,32 @@
 <h3 class="anchor anchorWithStickyNavbar_IhMp" id="hyperplane">Hyperplane<a href="https://gracefullight.dev/2025/09/21/fundamentals-of-data-analytics-009/#hyperplane" class="hash-link" aria-label="Hyperplane에 대한 직접 링크" title="Hyperplane에 대한 직접 링크">​</a></h3>
 <ul>
 <li>the conceptual divide between data</li>
+<li><strong>Weight vector</strong>: represented and generated in weight space.</li>
+<li>Choosing the hyperplane<!-- -->
+<ul>
+<li>Minimum distance between samples</li>
+<li>Least-squares method</li>
+<li>Gradient Descent</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="artificial-neural-networks-ann">Artificial Neural Networks, ANN<a href="https://gracefullight.dev/2025/09/21/fundamentals-of-data-analytics-009/#artificial-neural-networks-ann" class="hash-link" aria-label="Artificial Neural Networks, ANN에 대한 직접 링크" title="Artificial Neural Networks, ANN에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Strength: for high dimensionality problems, the complex relations between variables</li>
+<li>Weaknesses: theoretically complex, computationally intensive, needs large data sets, complicated to implement</li>
+<li>Kinds of ANN<!-- -->
+<ul>
+<li>Perceptrons, Multilayer Perceptrons</li>
+<li>Deep learning neural networks</li>
+<li>Kohonen networks</li>
+<li>Convolutional neural networks</li>
+<li>Radial Basis Functions</li>
+<li>Recurrent neural networks</li>
+<li>Support Vector Machines</li>
+<li>Competitive learning</li>
+<li>Boltzmann machines</li>
+</ul>
+</li>
 </ul>]]></content:encoded>
             <category>fda</category>
         </item>
