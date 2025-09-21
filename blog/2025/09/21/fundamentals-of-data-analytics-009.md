@@ -38,3 +38,19 @@ tags:
   - Support Vector Machines
   - Competitive learning
   - Boltzmann machines
+
+## Multilayer Perceptrons, MLP
+
+- Challenges
+  - Decide on the network topology.
+    - how many hidden layers are needed
+    - how many neurons in each of the hidden layers
+  - Find values for the weights which make the network produce the correct output values for the given input values.
+- Neural networks only accept numeric data.
+  - need to convert the categorical into numeric.
+- high values may need to be scaled into a similar range as neural networks
+  - need to do a log transform to pull the values into a target range.
+- input neurons should be as small as possible.
+  - adding neurons `->` more parameters and weights `->` amplify any bias. (overtrain the network)
+- one categorical attibute may have many attribute values
+  - each adding a parameter `->` adding risk of overtraining
