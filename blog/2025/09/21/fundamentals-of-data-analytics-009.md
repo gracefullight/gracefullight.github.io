@@ -18,3 +18,23 @@ tags:
 ### Hyperplane
 
 - the conceptual divide between data
+- **Weight vector**: represented and generated in weight space.
+- Choosing the hyperplane
+  - Minimum distance between samples
+  - Least-squares method
+  - Gradient Descent
+
+## Artificial Neural Networks, ANN
+
+- Strength: for high dimensionality problems, the complex relations between variables
+- Weaknesses: theoretically complex, computationally intensive, needs large data sets, complicated to implement
+- Kinds of ANN
+  - Perceptrons, Multilayer Perceptrons
+  - Deep learning neural networks
+  - Kohonen networks
+  - Convolutional neural networks
+  - Radial Basis Functions
+  - Recurrent neural networks
+  - Support Vector Machines
+  - Competitive learning
+  - Boltzmann machines
