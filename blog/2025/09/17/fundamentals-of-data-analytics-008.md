@@ -95,3 +95,28 @@ $$ F = 2 * \frac{Precision * Recall}{Precision + Recall} $$
 - $False Negative Rate = \frac{5}{115} = 0.04$
 - $Precision = \frac{110}{120} = 0.91$
 - $F1 = (2 * 0.91 * 0.95) / (0.91 + 0.95) = 0.92$
+
+### ROC curve
+
+> Receiver Operating Characteristic Curve
+
+- a graphical plot that explains how well a binary classifier system performs as the threshold at which it calls a data point as positive is varied.
+- ROC graphs were originally used in the communications area to look at false alarm rates.
+- The x-axis is the false positive
+- The y-axis is the true positive rate (sensitivity, recall)
+- ROC graphs contain all the information in the confusion matrix.
+  - TPR`(=TP/(TP+FN))`, FPR`(=FP/(FP+TN))`
+- a visual tool to compare trade-offs between the ability of a classifier to correctly identify positive cases and the number of negative cases that are incorrectly identified.
+- an essential evaluation metric for checking the performance of a classification model.
+
+### AUC
+
+> Area Under the ROC Curve
+
+- AUC 0: the model predicts a negative class as a positive class and vice versa.
+- AUC 0.5: the model has no discriminative capacity to differentiate between negative class and positive class
+  - diagonal line from (0,0) to (1,1)
+- AUC 0.7: 70% chance that the model will be able to differentiate between the positive and negative classes.
+- AUC 1: the model predicts all positive class as positive class and all negative class as negative class.
+- **ROC is a probability curve and AUC represents the degree of separability**
+- It shows how capable the model is of differentiating between the classes.

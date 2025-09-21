@@ -37,6 +37,7 @@ tags:
 | person | a grammatical category that distinguishes between different participants in a conversation (e.g., first person, second person, third person) | participant distinction | 인칭 |
 | number | a grammatical category that expresses count distinctions (e.g., singular, plural) | count distinction | 수 |
 | head | the main word in a phrase that determines its syntactic type | main word | 중심어 |
+| separability | the quality of being able to be separated or divided | divisibility | 분리 가능성 |
 
 | 기법 | 아이디어 | 비유 |
 | --- | --- | --- |
