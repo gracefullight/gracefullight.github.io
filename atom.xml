@@ -53,6 +53,40 @@
 <li>Boltzmann machines</li>
 </ul>
 </li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="multilayer-perceptrons-mlp">Multilayer Perceptrons, MLP<a href="https://gracefullight.dev/2025/09/21/fundamentals-of-data-analytics-009/#multilayer-perceptrons-mlp" class="hash-link" aria-label="Multilayer Perceptrons, MLP에 대한 직접 링크" title="Multilayer Perceptrons, MLP에 대한 직접 링크">​</a></h2>
+<ul>
+<li>Challenges<!-- -->
+<ul>
+<li>Decide on the network topology.<!-- -->
+<ul>
+<li>how many hidden layers are needed</li>
+<li>how many neurons in each of the hidden layers</li>
+</ul>
+</li>
+<li>Find values for the weights which make the network produce the correct output values for the given input values.</li>
+</ul>
+</li>
+<li>Neural networks only accept numeric data.<!-- -->
+<ul>
+<li>need to convert the categorical into numeric.</li>
+</ul>
+</li>
+<li>high values may need to be scaled into a similar range as neural networks<!-- -->
+<ul>
+<li>need to do a log transform to pull the values into a target range.</li>
+</ul>
+</li>
+<li>input neurons should be as small as possible.<!-- -->
+<ul>
+<li>adding neurons <code>-&gt;</code> more parameters and weights <code>-&gt;</code> amplify any bias. (overtrain the network)</li>
+</ul>
+</li>
+<li>one categorical attibute may have many attribute values<!-- -->
+<ul>
+<li>each adding a parameter <code>-&gt;</code> adding risk of overtraining</li>
+</ul>
+</li>
 </ul>]]></content>
         <author>
             <name>Eunkwang Shin</name>
