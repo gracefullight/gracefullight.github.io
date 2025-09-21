@@ -109,6 +109,11 @@
 <li>if the derivative changes sign, the last weight update is reverted. (backtracks the last weight update)</li>
 </ul>
 </li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_IhMp" id="knime">KNIME<a href="https://gracefullight.dev/2025/09/21/fundamentals-of-data-analytics-009/#knime" class="hash-link" aria-label="KNIME에 대한 직접 링크" title="KNIME에 대한 직접 링크">​</a></h2>
+<ul>
+<li>RProp MLP Learner + MultiLayerPerceptron Predictor</li>
+<li>MultilayerPerceptron + Weka Predictor (back propagation with momentum)</li>
 </ul>]]></content:encoded>
             <category>fda</category>
         </item>
