@@ -187,3 +187,155 @@ P("This article is on NLP")
   * P("on" | "is") // j = 4
   * P("NLP" | "on") // j = 5
 ```
+
+## Transformer
+
+- given a set of input vectors (tokens), attention lets each token look at the others and form a weighted average of them.
+- The weights are data-dependent.
+- The model learns the weights representing which tokens are relevant to which other tokens.
+
+```mermaid
+graph BT
+  Q((Q))
+  K((K))
+  V((V))
+
+  Q --> MatMul1[MatMul]
+  K --> MatMul1
+
+  MatMul1 --> Scale --> Mask[Optional Masking] --> Softmax
+  Softmax --> MatMul2[MatMul]
+
+  V ------> MatMul2
+```
+
+$$ X = \text{Input Embeddings},\qquad Q = X W_Q,\quad K = X W_K,\quad V = X W_V $$
+
+- Scores: $S = \frac{QK^T}{\sqrt{d}}$
+  - dot products between every query and every key
+  - the scale $\sqrt{d}$ keeps gradients stable
+- Weights: $A = Softmax(S)$
+  - row-wise softmax
+  - each row sums to 1
+- Output: $Attention(Q, K, V) = A V$
+  - each output token is a weighted sum of the value vectors, with weights determined by the attention scores.(how much to pay attention to each position)
+- Query (Q): What am I looking for?
+- Key (K): What is the label/address of the information I have?
+- Value (V): What is the actual information I want to convey?
+
+### Cross-Attention
+
+- look up relevant information in another sequence.
+  - e.g. decoder attending to encoder outputs in translation
+- $Q$ from the current sequence, $K$ and $V$ from the other sequence.
+  - $Q = X_{\text{target}} W_Q, \quad K = X_{\text{source}} W_K, \quad V = X_{\text{source}} W_V$
+- Cross-attention = Which source tokens are relevant to this target token?
+- Self-attention = Which other tokens in this sequence are relevant to this token?
+- $head_i = Attention(Q W_i^Q, K W_i^K, V W_i^V)$
+- $MultiHead(Q, K, V) = Concat(head_1, ..., head_h) W_O$
+
+## Word representation
+
+### One-hot representation
+
+- represents each word as a vector of length `N`.
+- where `N` is the size of the vocabulary.
+
+```text
+vocab = {he, is, singing, she, dancing, stage}
+
+she = [0, 0, 0, 1, 0, 0]
+is = [0, 1, 0, 0, 0, 0]
+singing = [0, 0, 1, 0, 0, 0]
+```
+
+- limitations
+  - incredibly inefficient for large vocabularies
+  - not embed any intrinsic meaning of words
+  - unable to represent similarity between likely words
+  - the representation of documents is sparse vectors
+    - can cause challenges in computation
+
+### Word Embedding
+
+- represents individual words as vectors in a low-dimensional continuous space.
+- a distributed representation of a word.
+- generate a unique value for each word while using smaller vectors compared with one-hot encoding.
+- common vector dictionaries
+  - word2vec
+  - Glove (Global Vectors)
+
+### Contextual embedding
+
+- generates different vectors for the same word based on its context.
+- the word "bank" would have different embeddings in the sentences:
+  - "He went to the bank to deposit money."
+  - "She sat by the river bank and enjoyed the view."
+- BERT or GPT use deep neural networks to process a sequence of tokens.
+- Each token's embedding is computed by considering the token itself, its position in the sequence and the surrounding tokens, context.
+- captures both semantic and syntactic role in that specific context.
+
+## Part of Speech (POS) tagging
+
+- lexical category or tag that indicates the grammatical role of a word in a sentence.
+- parts of speech allow language models to capture generalizations such as "adjectives often modify nouns" or "verbs often follow subjects".
+
+```bash
+From  the start , it  took  a   person
+IN    DT  NN    , PRP VBD   DT  NN
+
+with great qualities  to  succeed
+IN   JJ    NNS        TO  VB
+```
+
+| Tag | Description        | Example  |
+| --- | ------------------ | -------- |
+| CC | Coordinating conjunction | and, but |
+| CD | Cardinal number    | one, two |
+| DT | Determiner         | the, a    |
+| EX | Existential there  | there     |
+| FW | Foreign word       | doppelgänger |
+| IN | Preposition or subordinating conjunction | in, of |
+| JJ | Adjective          | big, old  |
+| JJR | Adjective, comparative | bigger, older |
+| JJS | Adjective, superlative | biggest, oldest |
+| LS | List item marker   | 1, 2, One |
+| MD | Modal              | can, will |
+| NN | Noun, singular or mass | cat, tree |
+| NNS | Noun, plural       | cats, trees |
+| NNP | Proper noun, singular | John, London |
+| NNPS | Proper noun, plural | Smiths, Londons |
+| PDT | Predeterminer      | all, both  |
+| POS | Possessive ending  | 's, s'     |
+| PRP | Personal pronoun   | I, you, he |
+| PRP$ | Possessive pronoun | my, your, his |
+| RB | Adverb             | quickly, very |
+| RBR | Adverb, comparative | faster, better |
+| RBS | Adverb, superlative | fastest, best |
+| RP | Particle           | up, off    |
+| SYM | Symbol             | $, %, &    |
+| TO | to                 | to         |
+| UH | Interjection       | oh, wow    |
+| VB | Verb, base form    | be, have   |
+| VBD | Verb, past tense   | was, had   |
+| VBG | Verb, gerund or present participle | being, having |
+| VBN | Verb, past participle | been, had |
+| VBP | Verb, non-3rd person singular present | talk, have |
+| VBZ | Verb, 3rd person singular present | talks, has |
+| WDT | Wh-determiner     | which, that |
+| WP | Wh-pronoun         | who, what  |
+| WP$ | Possessive wh-pronoun | whose     |
+| WRB | Wh-adverb          | where, when |
+| # | Pound sign       | #          |
+| $ | Dollar sign      | $          |
+| , | Comma            | ,          |
+| . | Sentence-final punctuation | . ! ? |
+
+### Example of POS tagging
+
+- Hidden Markov Model (HMM)
+  - takes in a temproral sequence of evidence observations
+  - predicts the lexical categories
+- Logistic regression
+  - build 45 different logistics regression models, one for each part of speech
+  - ask each model how probable it is that the example word is a member of that category, given the feature values for that word in its particular context.

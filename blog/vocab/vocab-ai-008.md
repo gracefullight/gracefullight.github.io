@@ -38,6 +38,7 @@ tags:
 | number | a grammatical category that expresses count distinctions (e.g., singular, plural) | count distinction | 수 |
 | head | the main word in a phrase that determines its syntactic type | main word | 중심어 |
 | separability | the quality of being able to be separated or divided | divisibility | 분리 가능성 |
+| intrinsic | belonging naturally; essential | inherent | 본질적인 |
 
 | 기법 | 아이디어 | 비유 |
 | --- | --- | --- |
