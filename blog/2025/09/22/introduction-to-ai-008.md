@@ -150,12 +150,12 @@ BoW2 = {He: 0, likes: 1, to: 1, watch: 1, movies: 0, Mary: 1, also: 1, football:
     - The sentiment is **positive**.
 - Spam detection
   - Probabilities learned from data:
-    - \(P(\text{Spam}) = 0.4\), \(P(\text{Ham}) = 0.6\)  
-    - \(P(\text{free}|\text{Spam}) = 0.8\), \(P(\text{free}|\text{Ham}) = 0.1\)  
-    - \(P(\text{win}|\text{Spam}) = 0.7\), \(P(\text{win}|\text{Ham}) = 0.05\)  
+    - $P(\text{Spam}) = 0.4$, $P(\text{Ham}) = 0.6$  
+    - $P(\text{free}|\text{Spam}) = 0.8$, $P(\text{free}|\text{Ham}) = 0.1$  
+    - $P(\text{win}|\text{Spam}) = 0.7$, $P(\text{win}|\text{Ham}) = 0.05$  
   - New document: "free win"  
-    - Spam score: \(0.4 \times 0.8 \times 0.7 = 0.224\)  
-    - Ham score: \(0.6 \times 0.1 \times 0.05 = 0.003\)  
+    - Spam score: $0.4 \times 0.8 \times 0.7 = 0.224$  
+    - Ham score: $0.6 \times 0.1 \times 0.05 = 0.003$  
     → Classified as **Spam**.
 
 ### N-gram model
