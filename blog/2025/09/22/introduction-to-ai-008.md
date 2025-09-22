@@ -157,3 +157,13 @@ BoW2 = {He: 0, likes: 1, to: 1, watch: 1, movies: 0, Mary: 1, also: 1, football:
     - Spam score: \(0.4 \times 0.8 \times 0.7 = 0.224\)  
     - Ham score: \(0.6 \times 0.1 \times 0.05 = 0.003\)  
     → Classified as **Spam**.
+
+### N-gram model
+
+- N-gram: a sequence of written symbols of length `n`
+  - unigram, bigram, trigram
+- the probability of each symbol is dependent only on the `n-1` previous symbols.
+- $P(w_j|w_{1:j-1}) = P(w_j|w_{j-n+1:j-1})$
+- $P(w_1:N) = \prod_{j=1}^{N} P(w_j|w_{1:j-1}) \approx \prod_{j=1}^{N} P(w_j|w_{j-n+1:j-1})$
+
+#### Examples of N-gram
