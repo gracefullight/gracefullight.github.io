@@ -167,3 +167,23 @@ BoW2 = {He: 0, likes: 1, to: 1, watch: 1, movies: 0, Mary: 1, also: 1, football:
 - $P(w_1:N) = \prod_{j=1}^{N} P(w_j|w_{1:j-1}) \approx \prod_{j=1}^{N} P(w_j|w_{j-n+1:j-1})$
 
 #### Examples of N-gram
+
+- $W_{1:N}$ is "This article is on NLP"
+  - N=5
+  - Bigram (n-gram with n=2)
+
+```js
+P("This article is on NLP")
+/* full chain rule,  */
+= P("This") // j = 1
+  * P("article" | "This") // j = 2
+  * P("is" | "This article") // j = 3
+  * P("on" | "This article is") // j = 4
+  * P("NLP" | "This article is on") // j = 5
+/* bigram approximation */
+= P("This") // j =1
+  * P("article" | "This") // j = 2
+  * P("is" | "article") // j = 3
+  * P("on" | "is") // j = 4
+  * P("NLP" | "on") // j = 5
+```
