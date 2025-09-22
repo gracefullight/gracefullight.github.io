@@ -339,3 +339,50 @@ IN   JJ    NNS        TO  VB
 - Logistic regression
   - build 45 different logistics regression models, one for each part of speech
   - ask each model how probable it is that the example word is a member of that category, given the feature values for that word in its particular context.
+
+## Machine translation
+
+- translate a sentence from a source lnaguae to a trget language.
+- train an MT model: a large corpus of source/target sentence paris and hope that the trained MT model can accurately translate new sentences.
+- want to generate a target language sentence that corresponds to the source language sentence
+- the geneartion of each target word is conditional on the entire source sentence and on all previously generated target words.
+
+### Example of machine translation
+
+- a sequance-to-sequence model
+  - use two RNNs (LSTM)
+- attentional sequence-to-sequence model
+  - use attentino to create a context-based summarization of the source sentence into a fixed-dimension representation
+- transformer-based model
+  - encoder: reads the source sentence and turns it into a rich, contextual set of vectors.
+  - decoder: generates the target sentence one token at a time, using what it has generated so far and the encoder's representations.
+
+## Text generation
+
+- a subfield of NLP
+- leverages knowledge in computational linguistics and AI to automatically generate natural language texts
+- can satisfy certain communicativa requirements
+
+### Example of text generation
+
+- Classifier based on word embeddings, e.g. RNN and LSTM
+  - RNN: each input word is encoded as a word embedding vector $x_i$, a hidden layer $z_t$, the classes are the words of the vocabulary
+    - the output $y_t$ will be a softmax probability distribution over the possible values of the next word in the sentence.
+  - LSTM: can choose to remember som parts of the input, copying it over to the next time step, and to forget toher parts.
+- Pre-trained languaeg model using deep learning
+  - BERT
+  - GPT-X, Generativ ePre-trained Transformer
+
+## Transfer learning
+
+- experience with one learning task helps an agent learn better on another task.
+- pretraining: a form of transfer learning in which we use a large amount of shared general-domain language data to train an initial version of an NLP model.
+  - we can use a smaller amount of domain-specific data to refine the model
+  - the refined model can learn the vocabulary, idioms, syntactic structure, and other linguistic phenomena that are specific to the new domain.
+- For NN, learning consist of adjusting weight, so the most plausible approach for transfer learning is to copy over the weights learned for task A to a network that will be trained for task B.
+  - The weights are then updated by gradient descent in the usual way using data for task B.
+- the popularity of transfer learning is the availability of high-quality pretrained models.
+- will want to freeze the first few layers of the pretrained model
+  - these layers serve as feature detectors that will be useful for new model.
+  - new data set will be allowed to modify the parameters of the higher levels only
+    - these are the layers that identify problem-specific features and do classification.
