@@ -35,6 +35,16 @@ tags:
 | causation | the action of causing something | causing | 인과, 원인 제공 |
 | decidedly | in a manner that is clear and definite | clearly | 단호하게, 명확히 |
 | suffice | be enough or adequate | be sufficient | 충분하다 |
+| tautology | a statement that is true by necessity or by virtue of its logical form | redundancy | 동어 반복, 자명한 진리 |
+| conversely | introducing a statement or idea that reverses one that has just been made or referred to | in contrast | 반대로 |
+| contrapositively | in a way that involves the contrapositive of a statement | by contrapositive | 대우적으로 |
+| refutation | the action of proving a statement or theory to be wrong or false; disproof | disproving | 반박, 논박 |
+| monotonicity | the property of a function to be either entirely non-increasing or non-decreasing | consistency | 단조성 |
+| resolvent | a clause obtained by resolving two clauses containing complementary literals | derived clause | 해석절 |
+| soundness | the quality of being based on valid reasoning or good judgment | validity | 타당성 |
+| yield | produce or provide (a natural, agricultural, or industrial product) | produce | 산출하다, 양보하다 |
+| ontological | relating to the branch of metaphysics dealing with the nature of being | existential | 존재론의 |
+| commitment | the state or quality of being dedicated to a cause, activity, etc. | dedication | 헌신, 약속 |
 
 ## Knowledge Base
 
@@ -76,3 +86,14 @@ tags:
 | **false** | **true** | true | false | true | true | false |
 | **true** | **false** | false | false | true | **false** | false |
 | **true** | **true** | false | **true** | true | true | **true** |
+
+- Logical equivalence: $P \equiv Q$:
+- Validity: a sentence is valid if it is true in all models.
+  - Deduction Theorem: For any sentences $\alpha$ and $\beta$, $\alpha \models \beta$ if and only if $(\alpha \implies \beta)$ is valid.
+- Satisfiability: a sentence is satisfiable if it is true in, or satisfied by, some model.
+- Modus Ponens: $\frac{\alpha \implies \beta, \alpha}{\therefore \beta}$
+  - whenever any sentences of the form $\alpha \implies \beta$ and $\alpha$ are given, then the sentence $\beta$ can be inferred.
+- And-Elimination: $\frac{\alpha \land \beta}{\therefore \alpha}$
+  - from a conjunction, one of the conjuncts can be inferred.
+- monotonicity: the set of entailed sentences can only increase as information is added to the knowledge base.
+  - inference rules can be applied whenever suitable premises are found in the knowledge base, regardless of what other sentences are present.
