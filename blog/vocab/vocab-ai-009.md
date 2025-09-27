@@ -13,6 +13,15 @@ tags:
 | --- | --- | --- | --- |
 | canonical | conforming to a general rule or acceptable procedure | standard | 정통의, 표준의 |
 | assert | state a fact or belief confidently and forcefully | declare | 단언하다, 주장하다 |
+| lurking | remaining hidden so as to wait in ambush | hidden | 숨어있는, 잠복하는 |
+| bleak | (of an area of land) lacking vegetation and exposed to the elements | desolate | 황량한, 적막한 |
+| albeit | although | though | 비록 ~일지라도 |
+| stench | a strong and very unpleasant smell | foul smell | 악취 |
+| woeful | characterized by, expressive of, or causing sorrow or misery | sorrowful | 슬픈, 비참한 |
+| As for | with regard to; concerning | regarding | ~에 관하여 |
+| ignorance | lack of knowledge or information | unawareness | 무지, 무식 |
+| utterly | completely and without qualification; absolutely | completely | 완전히, 전적으로 |
+| prudent | acting with or showing care and thought for the future | wise | 신중한, 현명한 |
 
 ## Knowledge Base
 
