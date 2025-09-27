@@ -45,6 +45,13 @@ tags:
 | yield | produce or provide (a natural, agricultural, or industrial product) | produce | 산출하다, 양보하다 |
 | ontological | relating to the branch of metaphysics dealing with the nature of being | existential | 존재론의 |
 | commitment | the state or quality of being dedicated to a cause, activity, etc. | dedication | 헌신, 약속 |
+| pedagogical | relating to teaching | educational | 교육의, 교수법의 |
+| arity | the number of arguments or operands that a function or operation takes | number of arguments | (함수의) 인수 개수 |
+| surrogate mothers | women who carry and give birth to a child for another person or couple | gestational carriers | 대리모 |
+| predicate | a symbol or function that represents a property or relation | property | 술어, 속성 |
+| kinship | blood relationship | family relationship | 친족 관계 |
+| theorem | a general proposition not self-evident but proved by a chain of reasoning; a truth established by means of accepted truths | proven statement | 정리, 명제 |
+| existentially | relating to existence | relating to existence | 존재에 관한 |
 
 ## Knowledge Base
 
