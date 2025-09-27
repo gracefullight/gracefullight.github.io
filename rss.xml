@@ -4,10 +4,50 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Mon, 22 Sep 2025 07:15:01 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Sep 2025 04:31:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
+        <item>
+            <title><![CDATA[Vocabulary for AI 009]]></title>
+            <link>https://gracefullight.dev/vocab/vocab-ai-009/</link>
+            <guid>https://gracefullight.dev/vocab/vocab-ai-009/</guid>
+            <pubDate>Sat, 27 Sep 2025 04:31:42 GMT</pubDate>
+            <description><![CDATA[Vocabulary for AI 009]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/vocab/vocab-ai-009/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>canonical</td><td>conforming to a general rule or acceptable procedure</td><td>standard</td><td>정통의, 표준의</td></tr><tr><td>assert</td><td>state a fact or belief confidently and forcefully</td><td>declare</td><td>단언하다, 주장하다</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_GkGg" id="knowledge-base">Knowledge Base<a href="https://gracefullight.dev/vocab/vocab-ai-009/#knowledge-base" class="hash-link" aria-label="Knowledge Base에 대한 직접 링크" title="Knowledge Base에 대한 직접 링크" translate="no">​</a></h2>
+<ul>
+<li>TELL, ASKS, TELL<!-- -->
+<ul>
+<li>TELLs the knowledge base what it preceives</li>
+<li>ASKs the knowledge base what action it should perform<!-- -->
+<ul>
+<li>reasoning may be done about the current state of the world</li>
+<li>about the outcomes of possible action sequences and so on</li>
+</ul>
+</li>
+<li>TELLs the knowledge base which action was chosen, and returns the action so that it can be executed</li>
+</ul>
+</li>
+<li><code>MAKE-PERCEPT-SENTENCE</code>
+<ul>
+<li>constructs a sentence asserting that the agent preceived the given percept at the given time.</li>
+</ul>
+</li>
+<li><code>MAKE-ACTION-QUERY</code>
+<ul>
+<li>constructs a sentence that asks what action should be done at the current time.</li>
+</ul>
+</li>
+<li><code>MAKE-ACTION-SENTENCE</code>
+<ul>
+<li>constructs a sentence asserting that the chosen action was executed.</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>vocab</category>
+        </item>
         <item>
             <title><![CDATA[IAI +008]]></title>
             <link>https://gracefullight.dev/2025/09/22/introduction-to-ai-008/</link>
@@ -1771,279 +1811,6 @@ i.e. the unpredictability of the data.</p>
 <li>Face-to-face interviews</li>
 </ul>]]></content:encoded>
             <category>research</category>
-        </item>
-        <item>
-            <title><![CDATA[FDA +006]]></title>
-            <link>https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/</link>
-            <guid>https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/</guid>
-            <pubDate>Tue, 09 Sep 2025 11:02:16 GMT</pubDate>
-            <description><![CDATA[Fundamentals of data analytics +006]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="unsupervised-machine-learning">Unsupervised machine learning<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#unsupervised-machine-learning" class="hash-link" aria-label="Unsupervised machine learning에 대한 직접 링크" title="Unsupervised machine learning에 대한 직접 링크" translate="no">​</a></h2>
-<table><thead><tr><th>Item</th><th>Supervised machine learning</th><th>Unsupervised machine learning</th></tr></thead><tbody><tr><td><strong>Data availability</strong></td><td>Input and output variables will be given.</td><td>Only the input data will be given.</td></tr><tr><td><strong>Labeling</strong></td><td>Algorithms are trained using labelled data.</td><td>Algorithms are used against data which is not labelled.</td></tr><tr><td><strong>Algorithms</strong></td><td>Support Vector Machine, Linear and Logistic Regression and Classification Trees.</td><td>Cluster algorithms, K-means, Hierarchical clustering, etc.</td></tr><tr><td><strong>Complexity</strong></td><td>simpler method.</td><td>computationally complex.</td></tr><tr><td><strong>Learning mode</strong></td><td>The learning method takes place offline.</td><td>The learning method takes place in real-time.</td></tr><tr><td><strong>Reliability</strong></td><td>highly accurate and trustworthy method.</td><td>less accurate and less trustworthy method.</td></tr></tbody></table>
-<p><img decoding="async" loading="lazy" alt="Processing data" src="https://gracefullight.dev/assets/images/processing-data-bd59af666ad84c1999edc77e2ebb36a1.png" width="903" height="386" class="img_tzfx"></p>
-<ul>
-<li>most common tasks are <strong>clustering</strong>, <strong>anomaly detection</strong>, and <strong>neural networks</strong>.</li>
-<li>infer underlying patterns without human supervision or intervention and enable us to discover both the differences and similarities in a dataset.</li>
-<li>can be considered ideal solutions for exploratory data mining.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="clustering">Clustering<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#clustering" class="hash-link" aria-label="Clustering에 대한 직접 링크" title="Clustering에 대한 직접 링크" translate="no">​</a></h2>
-<blockquote>
-<p>objects (unlabelled data) are organised into groups, where the members of each group are similar in some way to each other and less similar to those in other groups.</p>
-</blockquote>
-<ul>
-<li><strong>Classification</strong> assigns objects/data to the predefined (labelled) classes</li>
-<li><strong>Clustering</strong> groups the objects/data based on the similarities between them</li>
-<li>used in pattern recognition, image analysis and bioinformatics.</li>
-<li>different clustering algorithms can produce different results based on their own definition of a cluster</li>
-<li>the parameters (such as the distance function, density threshold and the number of expected clusters) of the clustering algorithm should be set based on the particular characteristics of the dataset and the user’s intention</li>
-</ul>
-<table><thead><tr><th>Domain</th><th>Use cases</th></tr></thead><tbody><tr><td>Biology and bioinformatics</td><td>Cluster algorithms have been used in biological systematics for comparing the genus differences in organisms.</td></tr><tr><td>Medicine</td><td>Cluster analysis can be used to detect underlying factors of particular diseases, such as coronary artery disease. It is also used to describe patterns of antibiotic resistance.</td></tr><tr><td>Market basket</td><td>Cluster analysis has gained increasing popularity in market research. It can be used to classify different groups of consumers by behaviour analysis. It helps to build a better understanding of market segmentation, pricing and new product testing.</td></tr><tr><td>Computer science</td><td>Clustering is a powerful tool for various tasks in the area of computer science, such as reforming functionality in software evolution, object recognition in computer vision and lexical ambiguity in natural language process.</td></tr><tr><td>Car insurance</td><td>Identify customer groups with high average claim costs.</td></tr></tbody></table>
-<ul>
-<li><strong>Similarity Measure</strong>: Numerical measure of how alike two data objects often fall between 0 (no similarity) and 1 (complete similarity)</li>
-<li><strong>Dissimilarity, or Distance Measure</strong>: Numerical measure of how different two data objects are range from 0 (objects are alike) to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord">∞</span></span></span></span> (objects are different)</li>
-<li><strong>Proximity</strong>: Refers to a similarity or dissimilarity</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="distance-measures">Distance measures<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#distance-measures" class="hash-link" aria-label="Distance measures에 대한 직접 링크" title="Distance measures에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>Distance metrics or dissimilarity measures</p>
-</blockquote>
-<ul>
-<li>basically deal with finding the proximity or distance between data points and determining if they can be clustered together.</li>
-<li><strong>Manhattan distance</strong>: distance between two vectors if they could only move right angles.<!-- -->
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mo>∑</mo><mrow></mrow></msub><mi mathvariant="normal">∣</mi><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>b</mi><mi>i</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">Dist(A, B) = \sum_{} |a_{i} - b_{i}|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05017em">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.0497em;vertical-align:-0.2997em"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.2997em"><span style="top:-1.7003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></li>
-<li>no diagonal movement involved in calculating the distance.</li>
-</ul>
-</li>
-<li><strong>Euclidean distance</strong>: can best be explained as the length of a segment connecting two points.<!-- -->
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><msub><mo>∑</mo><mrow></mrow></msub><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>b</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">Dist(A, B) = \sqrt{\sum_{} (a_{i} - b_{i})^{2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05017em">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.3299em"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9101em"><span class="svg-align" style="top:-3.2em"><span class="pstrut" style="height:3.2em"></span><span class="mord" style="padding-left:1em"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.2997em"><span style="top:-1.7003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-2.8701em"><span class="pstrut" style="height:3.2em"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3299em"><span></span></span></span></span></span></span></span></span></li>
-<li>calculated from the cartesian coordinates of the points using the Pythagorean theorem.</li>
-<li>Typically, one needs to <strong>normalize the data before using this distance measure</strong>.</li>
-<li>the dimensionality increases of your data, the less useful Euclidean distance becomes</li>
-</ul>
-</li>
-<li><strong>Cosine similarity</strong>: the cosine of the angle between two vectors.<!-- -->
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mo>∑</mo><mrow></mrow></msub><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>⋅</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><msqrt><mrow><msub><mo>∑</mo><mrow></mrow></msub><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>⋅</mo><msub><mo>∑</mo><mrow></mrow></msub><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">Dist(A, B) = \frac{\sum_{} (x_i \cdot y_i)}{\sqrt{\sum_{} x_i^2 \cdot \sum_{} y_i^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05017em">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.8896em;vertical-align:-0.8296em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.06em"><span style="top:-2.4702em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0283em"><span class="svg-align" style="top:-3.4286em"><span class="pstrut" style="height:3.4286em"></span><span class="mord mtight" style="padding-left:1.19em"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.3214em"><span style="top:-1.6786em;margin-left:0em;margin-right:0.0714em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3214em"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.1952em"></span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8051em"><span style="top:-2.1777em;margin-left:0em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-2.8448em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3223em"><span></span></span></span></span></span></span><span class="mbin mtight">⋅</span><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.3214em"><span style="top:-1.6786em;margin-left:0em;margin-right:0.0714em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3214em"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.1952em"></span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8051em"><span style="top:-2.1777em;margin-left:-0.0359em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-2.8448em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3223em"><span></span></span></span></span></span></span></span></span><span style="top:-3.0003em"><span class="pstrut" style="height:3.4286em"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.5429em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.5429em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
-c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
-c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
-c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
-s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
-c69,-144,104.5,-217.7,106.5,-221
-l0 -0
-c5.3,-9.3,12,-14,20,-14
-H400000v40H845.2724
-s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
-c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
-M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4282em"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.535em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.3214em"><span style="top:-1.6786em;margin-left:0em;margin-right:0.0714em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3214em"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em"><span></span></span></span></span></span></span><span class="mbin mtight">⋅</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em"><span style="top:-2.357em;margin-left:-0.0359em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em"><span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8296em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
-<li>a way to counteract Euclidean distance’s problem with high dimensionality.</li>
-<li>has the same inner product of the vectors if they were normalized to both have length one</li>
-<li>The magnitude of vectors is not taken into account, merely their direction.<!-- -->
-<ul>
-<li>In practice, this means that the differences in values are not fully taken into account.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Single link</strong>: the shortest distance between points</li>
-<li><strong>Complete link</strong>: the largest distance between points.</li>
-<li><strong>Average link</strong>: average distance between points.</li>
-<li><strong>Centroid</strong>: the distance between centroids.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_GkGg" id="weighted-distance-measures">Weighted distance measures<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#weighted-distance-measures" class="hash-link" aria-label="Weighted distance measures에 대한 직접 링크" title="Weighted distance measures에 대한 직접 링크" translate="no">​</a></h4>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><msub><mo>∑</mo><mrow></mrow></msub><msub><mi>w</mi><mi>i</mi></msub><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>b</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">Dist(A, B) = \sqrt{\sum_{} w_i (a_{i} - b_{i})^{2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05017em">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.3299em"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9101em"><span class="svg-align" style="top:-3.2em"><span class="pstrut" style="height:3.2em"></span><span class="mord" style="padding-left:1em"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.2997em"><span style="top:-1.7003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-2.8701em"><span class="pstrut" style="height:3.2em"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3299em"><span></span></span></span></span></span></span></span></span></p>
-<ul>
-<li>a weight to the attributes as some attributes are more important than others.</li>
-<li>force clustering to pay more attention to higher weight attributes and form clusters that depend more on those heavily weighted attributes.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_GkGg" id="dissimilarity">Dissimilarity<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#dissimilarity" class="hash-link" aria-label="Dissimilarity에 대한 직접 링크" title="Dissimilarity에 대한 직접 링크" translate="no">​</a></h4>
-<ul>
-<li><strong>Simple matching coefficient, SMC</strong>: invariant, if the binary variable is symmetric.<!-- -->
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>d</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">d(i,j) = \frac{b+c}{a+b+c+d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05724em">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.2834em;vertical-align:-0.4033em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">b</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">c</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">d</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4033em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
-<ul>
-<li>the proportion of mismatches (b+c) out of all attributes (a+b+c+d).</li>
-</ul>
-</li>
-<li>The simple matching coefficient is used when 0 and 1 are equally important, treating matches of both 1s and 0s the same way.</li>
-</ul>
-</li>
-<li><strong>Jaccard coefficient</strong>: non-invariant, if the binary variable is asymmetric.<!-- -->
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">d(i,j) = \frac{b+c}{a+b+c}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.05724em">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.2834em;vertical-align:-0.4033em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">b</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">c</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4033em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>
-<ul>
-<li>ignores cases where both are 0 (d), and only considers mismatches relative to at least one positive case.</li>
-</ul>
-</li>
-<li>The Jaccard coefficient is used when 1 (presence) is more meaningful than 0 (absence).</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_GkGg" id="similarity-matrix">Similarity Matrix<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#similarity-matrix" class="hash-link" aria-label="Similarity Matrix에 대한 직접 링크" title="Similarity Matrix에 대한 직접 링크" translate="no">​</a></h4>
-<ul>
-<li>After calculating all distances, we can create a similarity matrix</li>
-<li>containing the distance between each pair of data points.</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Similarity matrix" src="https://gracefullight.dev/assets/images/similarity-matrix-eac919530cb4dd8581cc13cabd262a5e.png" width="311" height="232" class="img_tzfx"></p>
-<table><thead><tr><th>ID</th><th>Gender</th><th>Age</th><th>Salary</th></tr></thead><tbody><tr><td>1</td><td>M</td><td>45</td><td>45000</td></tr><tr><td>2</td><td>F</td><td>32</td><td>54000</td></tr><tr><td>3</td><td>F</td><td>23</td><td>32000</td></tr><tr><td>4</td><td>M</td><td>36</td><td>58000</td></tr></tbody></table>
-<ul>
-<li>Gender: binarized</li>
-<li>Age: normalized</li>
-<li>Salary: normalized</li>
-</ul>
-<table><thead><tr><th>ID</th><th>Gender</th><th>Age</th><th>Salary</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td><td>0.25</td></tr><tr><td>2</td><td>0</td><td>0.6</td><td>0.7</td></tr><tr><td>3</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>1</td><td>0.7</td><td>0.8</td></tr></tbody></table>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>I</mi><mi>D</mi><mn>2</mn><mo separator="true">,</mo><mi>I</mi><mi>D</mi><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mn>0.6</mn><mo>−</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mn>0.7</mn><mo>−</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>0.92</mn></mrow><annotation encoding="application/x-tex">dist(ID2, ID3) = \sqrt{(0-0)^2 + (0.6-0)^2 + (0.7-0)^2} = 0.92</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em">I</span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.07847em">I</span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.305em"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em"><span class="svg-align" style="top:-3.2em"><span class="pstrut" style="height:3.2em"></span><span class="mord" style="padding-left:1em"><span class="mopen">(</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mopen">(</span><span class="mord">0.6</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mopen">(</span><span class="mord">0.7</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.895em"><span class="pstrut" style="height:3.2em"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">0.92</span></span></span></span></li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>i</mi><mi>s</mi><mi>t</mi><mo stretchy="false">(</mo><mi>I</mi><mi>D</mi><mn>2</mn><mo separator="true">,</mo><mi>I</mi><mi>D</mi><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>−</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mn>0.6</mn><mo>−</mo><mn>0.7</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mn>0.7</mn><mo>−</mo><mn>0.8</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>1.02</mn></mrow><annotation encoding="application/x-tex">dist(ID2, ID4) = \sqrt{(0-1)^2 + (0.6-0.7)^2 + (0.7-0.8)^2} = 1.02</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em">I</span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.07847em">I</span><span class="mord mathnormal" style="margin-right:0.02778em">D</span><span class="mord">4</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.305em"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em"><span class="svg-align" style="top:-3.2em"><span class="pstrut" style="height:3.2em"></span><span class="mord" style="padding-left:1em"><span class="mopen">(</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mopen">(</span><span class="mord">0.6</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">0.7</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mopen">(</span><span class="mord">0.7</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mord">0.8</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em"><span style="top:-2.989em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-2.895em"><span class="pstrut" style="height:3.2em"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6444em"></span><span class="mord">1.02</span></span></span></span></li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="clustring-methodologies">Clustring methodologies<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#clustring-methodologies" class="hash-link" aria-label="Clustring methodologies에 대한 직접 링크" title="Clustring methodologies에 대한 직접 링크" translate="no">​</a></h2>
-<!-- -->
-<ul>
-<li><strong>Hierarchical approach</strong>: create trees of clusters and sub-clusters<!-- -->
-<ul>
-<li>Divisive (Top-down): Start with all examples in a single cluster, and decide how to break the cluster into multiple sub-clusters.</li>
-<li>Agglomerative (Bottom-up): Start with each example in its own separate cluster. Decide which clusters to merge.</li>
-</ul>
-</li>
-<li><strong>Partitional (K starting points)</strong>: Start with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07153em">K</span></span></span></span> random cluster centers, and decide which examples to put in each of the clusters.<!-- -->
-<ul>
-<li>Adjust the cluster centers after each allocation of examples to clusters.</li>
-<li>k-means, k-medoids</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="choosing-a-clustering-method">Choosing a clustering method<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#choosing-a-clustering-method" class="hash-link" aria-label="Choosing a clustering method에 대한 직접 링크" title="Choosing a clustering method에 대한 직접 링크" translate="no">​</a></h3>
-<table><thead><tr><th>Consideration</th><th>What to look for</th><th>Typical choices</th></tr></thead><tbody><tr><td>Scalability</td><td>Near-linear time and bounded memory on large datasets.</td><td>MiniBatch K-Means, BIRCH, scalable DBSCAN with indexing.</td></tr><tr><td>Arbitrary shapes</td><td>Ability to find non-spherical clusters.</td><td>DBSCAN, HDBSCAN, Spectral clustering.</td></tr><tr><td>Noise and outliers</td><td>Robustness to noise; ability to mark points as noise.</td><td>DBSCAN, HDBSCAN (labels noise), GMM with low-weight components.</td></tr><tr><td>Mixed attribute types</td><td>Works with categorical + numeric or custom distances.</td><td>k-prototypes/k-modes, Agglomerative with Gower distance.</td></tr><tr><td>Few parameters</td><td>Minimal, intuitive hyperparameters; stable defaults.</td><td>Agglomerative (linkage, distance), HDBSCAN (min cluster size).</td></tr><tr><td>Order insensitivity</td><td>Results independent of input order.</td><td>Most batch methods; shuffle for MiniBatch K-Means.</td></tr><tr><td>High dimensionality</td><td>Handles curse of dimensionality or uses reduction.</td><td>PCA + K-Means/Agglomerative, Spectral after reduction, cosine distance.</td></tr><tr><td>User constraints</td><td>Must-link/cannot-link or size constraints supported.</td><td>COP-K-Means, constrained agglomerative, semi-supervised variants.</td></tr><tr><td>Interpretability</td><td>Easy to explain clusters and decisions.</td><td>K-Means centroids, Agglomerative dendrograms, GMM probabilities.</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="clustering-terminology">Clustering Terminology<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#clustering-terminology" class="hash-link" aria-label="Clustering Terminology에 대한 직접 링크" title="Clustering Terminology에 대한 직접 링크" translate="no">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Clustering Points" src="https://gracefullight.dev/assets/images/clustering-points-4d442e343611525ca28a31cbcdcb0a0c.png" width="555" height="211" class="img_tzfx"></p>
-<ul>
-<li><strong>Centroid</strong>: a point in the middle of a cluster. It may not be an actual point in the dataset.</li>
-<li><strong>Medoid</strong>: an actual point in the dataset that is centrally located and is, therefore, representative of the cluster.</li>
-<li><strong>Representative points</strong>: are points around the cluster that are representative of the cluster.</li>
-<li><strong>High intra-class similarity</strong>: the homogeneity, the closeness of data points within a single cluster</li>
-<li><strong>Low inter-class similarity</strong>: The distance between two separate clusters</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Class in Cluster" src="https://gracefullight.dev/assets/images/class-in-cluster-23557dfc04837bd3bca53fda99b05446.png" width="480" height="364" class="img_tzfx"></p>
-<ul>
-<li>A good clustering method will produce high-quality clusters with high intra-class similarity and low inter-class similarity.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="hierarchical-clustering">Hierarchical clustering<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#hierarchical-clustering" class="hash-link" aria-label="Hierarchical clustering에 대한 직접 링크" title="Hierarchical clustering에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li>Hierarchical approaches lead to the formation of dendrograms</li>
-<li>The top and bottom of a dendrogram represent the two extremes of clustering<!-- -->
-<ul>
-<li>At the bottom, a leaf is an individual cluste</li>
-<li>At the top, the root is one cluster</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="agnes">AGNES<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#agnes" class="hash-link" aria-label="AGNES에 대한 직접 링크" title="AGNES에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>AGgglomerative NESting hierarchical clustering algorithm.</p>
-</blockquote>
-<ul>
-<li>Agglomerative hierarchical clustering follows a bottom-up approach<!-- -->
-<ul>
-<li>starting with clusters of single objects and merging them into bigger and bigger clusters</li>
-</ul>
-</li>
-<li>agglomerative clustering process terminates (or finishes) when a termination condition is satisfied or there is only one cluster containing all objects.</li>
-<li>based on Euclidean distance between two objects</li>
-<li>steps of the algorithm:<!-- -->
-<ol>
-<li>Make a cluster with only one object as member for all objects</li>
-<li>Calculate the Euclidean distance between each pair of clusters</li>
-<li>Choose the cluster pair with the smallest distance and merge them to make one cluster</li>
-<li>Repeat step 2 with the new combined cluster and the other, older clusters</li>
-<li>Repeat steps 3 and 4 until all the objects are merged into a single cluster.</li>
-</ol>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="diana">DIANA<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#diana" class="hash-link" aria-label="DIANA에 대한 직접 링크" title="DIANA에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>DIvisive ANAlysis clustering algorithm.</p>
-</blockquote>
-<ul>
-<li>The top-to-bottom approach is followed in divisive hierarchical clustering<!-- -->
-<ul>
-<li>starts with a cluster containing all objects.</li>
-</ul>
-</li>
-<li>This cluster is broken up into smaller clusters, and this process of breaking up clusters continues until each cluster contains one object or a given termination condition is satisfied.</li>
-<li>steps of the algorithm:<!-- -->
-<ol>
-<li>The process of starts at the root with all the points as one cluster.</li>
-<li>It recursively splits higher-level clusters to build the dendrogram.</li>
-<li>It can be considered as a global approach.</li>
-<li>It is more efficient when compared with agglomerative clustering.</li>
-</ol>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="Agenes vs Diana" src="https://gracefullight.dev/assets/images/agenes-diana-8b66011c7888df512833a85c23fd9f9e.png" width="3937" height="2479" class="img_tzfx"></p>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="single-linkage-clustering">Single-linkage clustering<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#single-linkage-clustering" class="hash-link" aria-label="Single-linkage clustering에 대한 직접 링크" title="Single-linkage clustering에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>the minimum method, connectedness, or nearest neighbour method</p>
-</blockquote>
-<ul>
-<li>two clusters are linked by a single element pair</li>
-<li>The distance between clusters is defined as the shortest distance from a member of the first cluster to a member of the second cluster.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="complete-linkage-clustering">Complete-linkage clustering<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#complete-linkage-clustering" class="hash-link" aria-label="Complete-linkage clustering에 대한 직접 링크" title="Complete-linkage clustering에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>the furthest neighbour method, maximum method, or diameter method.</p>
-</blockquote>
-<ul>
-<li>the distance between two clusters is defined as the greatest distance between any member of the first cluster and any member of second cluster</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="average-linkage-clustering">Average-linkage clustering<a href="https://gracefullight.dev/2025/09/09/fundamentals-of-data-analytics-006/#average-linkage-clustering" class="hash-link" aria-label="Average-linkage clustering에 대한 직접 링크" title="Average-linkage clustering에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>the minimum variance method</p>
-</blockquote>
-<ul>
-<li>the distance between two clusters is calculated by averaging the distance between each member of first cluster and each member of second cluster</li>
-</ul>]]></content:encoded>
-            <category>fda</category>
         </item>
     </channel>
 </rss>
