@@ -31,7 +31,7 @@ importers:
         version: 3.9.1(@docusaurus/plugin-content-docs@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@docusaurus/theme-mermaid':
         specifier: ^3.9.1
-        version: 3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@docusaurus/plugin-content-docs@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
+        version: 3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@docusaurus/plugin-content-docs@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@mermaid-js/layout-elk@0.2.0(mermaid@11.6.0))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
       '@docusaurus/utils-validation':
         specifier: ^3.9.1
         version: 3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -62,6 +62,9 @@ importers:
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.1.10)(react@19.1.1)
+      '@mermaid-js/layout-elk':
+        specifier: ^0.2.0
+        version: 0.2.0(mermaid@11.6.0)
       '@tanstack/react-query':
         specifier: ^5.90.2
         version: 5.90.2(react@19.1.1)
@@ -1981,6 +1984,11 @@ packages:
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
+
+  '@mermaid-js/layout-elk@0.2.0':
+    resolution: {integrity: sha512-vjjYGnCCjYlIA/rR7M//eFi0rHM6dsMyN1JQKfckpt30DTC/esrw36hcrvA2FNPHaqh3Q/SyBWzddyaky8EtUQ==}
+    peerDependencies:
+      mermaid: ^11.0.2
 
   '@mermaid-js/mermaid-cli@11.12.0':
     resolution: {integrity: sha512-a0swOS6PByXKi0dZnLQQIhbtUEu7ubc6bojmIqXqvUPq7mIJukCNEvVBTv6IAbuEWqB3Ti8QntupoGdz3ej+kg==}
@@ -4210,6 +4218,9 @@ packages:
 
   electron-to-chromium@1.5.166:
     resolution: {integrity: sha512-QPWqHL0BglzPYyJJ1zSSmwFFL6MFXhbACOCcsCdUMCkzPdS9/OIBVxg516X/Ado2qwAq8k0nJJ7phQPCqiaFAw==}
+
+  elkjs@0.9.3:
+    resolution: {integrity: sha512-f/ZeWvW/BCXbhGEf1Ujp29EASo/lk1FDnETgNKwJrsVvGZhUWCZyg3xLJjAsxfOmt8KjswHmI5EwCQcPMpOYhQ==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -10279,7 +10290,7 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/theme-mermaid@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@docusaurus/plugin-content-docs@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)':
+  '@docusaurus/theme-mermaid@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@docusaurus/plugin-content-docs@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@mermaid-js/layout-elk@0.2.0(mermaid@11.6.0))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)':
     dependencies:
       '@docusaurus/core': 3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)))(@mdx-js/react@3.1.1(@types/react@19.1.10)(react@19.1.1))(@rspack/core@1.5.7)(@swc/core@1.13.3)(lightningcss@1.30.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
       '@docusaurus/module-type-aliases': 3.9.1(@swc/core@1.13.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -10290,6 +10301,8 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       tslib: 2.6.2
+    optionalDependencies:
+      '@mermaid-js/layout-elk': 0.2.0(mermaid@11.6.0)
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@docusaurus/plugin-content-docs'
@@ -10865,6 +10878,12 @@ snapshots:
       '@types/mdx': 2.0.9
       '@types/react': 19.1.10
       react: 19.1.1
+
+  '@mermaid-js/layout-elk@0.2.0(mermaid@11.6.0)':
+    dependencies:
+      d3: 7.9.0
+      elkjs: 0.9.3
+      mermaid: 11.6.0
 
   '@mermaid-js/mermaid-cli@11.12.0(puppeteer@23.11.1(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
@@ -13284,6 +13303,8 @@ snapshots:
       jake: 10.8.7
 
   electron-to-chromium@1.5.166: {}
+
+  elkjs@0.9.3: {}
 
   emoji-regex@10.3.0: {}
 

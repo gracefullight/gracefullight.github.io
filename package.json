@@ -23,6 +23,7 @@
     "@gracefullight/docusaurus-plugin-yandex-metrica": "^1.0.1",
     "@iconify/react": "^6.0.2",
     "@mdx-js/react": "^3.1.1",
+    "@mermaid-js/layout-elk": "^0.2.0",
     "@tanstack/react-query": "^5.90.2",
     "ahooks": "^3.9.5",
     "clsx": "^2.1.1",
