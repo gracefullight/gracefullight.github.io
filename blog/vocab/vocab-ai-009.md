@@ -52,6 +52,8 @@ tags:
 | kinship | blood relationship | family relationship | 친족 관계 |
 | theorem | a general proposition not self-evident but proved by a chain of reasoning; a truth established by means of accepted truths | proven statement | 정리, 명제 |
 | existentially | relating to existence | relating to existence | 존재에 관한 |
+| Universal | a type of quantification that states that a predicate holds for all members of a specified set | for all | 전체에 대한 한정 |
+| Existential | a type of quantification that states that a predicate holds for at least one member of a specified set | there exists | 존재에 대한 한정 |
 
 ## Knowledge Base
 
