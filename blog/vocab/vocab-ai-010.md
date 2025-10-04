@@ -22,3 +22,4 @@ tags:
 | casual | relating to or showing the cause of something | cause-related | 인과 관계의 |
 | epidemic | a widespread occurrence of an infectious disease in a community at a particular time | outbreak | 유행병 |
 | proportionately | in a way that corresponds in size or amount to something else | correspondingly | 비례하여 |
+| aching | experiencing a continuous or prolonged dull pain | painful | 아픈, 쑤시는 |
