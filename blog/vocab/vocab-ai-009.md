@@ -54,6 +54,7 @@ tags:
 | existentially | relating to existence | relating to existence | 존재에 관한 |
 | Universal | a type of quantification that states that a predicate holds for all members of a specified set | for all | 전체에 대한 한정 |
 | Existential | a type of quantification that states that a predicate holds for at least one member of a specified set | there exists | 존재에 대한 한정 |
+| latent | existing but not yet developed or manifest; hidden or concealed | hidden | 잠재적인, 숨어있는 |
 
 ## Knowledge Base
 
