@@ -4,10 +4,20 @@
         <title>gracefullight.dev Blog</title>
         <link>https://gracefullight.dev/en/</link>
         <description>gracefullight.dev Blog</description>
-        <lastBuildDate>Sat, 27 Sep 2025 04:31:42 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Oct 2025 06:30:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Vocabulary for AI 010]]></title>
+            <link>https://gracefullight.dev/en/vocab/vocab-ai-010/</link>
+            <guid>https://gracefullight.dev/en/vocab/vocab-ai-010/</guid>
+            <pubDate>Sat, 04 Oct 2025 06:30:29 GMT</pubDate>
+            <description><![CDATA[Vocabulary for AI 010]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-010/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>cavity</td><td>a hollow space within a solid object</td><td>hollow space</td><td>구멍, 공동</td></tr><tr><td>marginalization</td><td>treatment of a person, group, or concept as insignificant or peripheral</td><td>sidelining</td><td>주변화</td></tr><tr><td>abbreviate</td><td>shorten a word, phrase, or text</td><td>shorten</td><td>줄이다, 생략하다</td></tr><tr><td>summation</td><td>the process of adding things together</td><td>addition</td><td>합계, 총합</td></tr><tr><td>multivalue</td><td>having multiple values or meanings</td><td>multiple values</td><td>다중 값</td></tr><tr><td>quantify</td><td>express or measure the quantity of something</td><td>measure</td><td>수량화하다</td></tr><tr><td>derive</td><td>obtain something from (a specified source)</td><td>obtain</td><td>끌어내다, 얻다</td></tr><tr><td>meningitis</td><td>inflammation of the protective membranes covering the brain and spinal cord</td><td>brain inflammation</td><td>수막염</td></tr><tr><td>casual</td><td>relating to or showing the cause of something</td><td>cause-related</td><td>인과 관계의</td></tr><tr><td>epidemic</td><td>a widespread occurrence of an infectious disease in a community at a particular time</td><td>outbreak</td><td>유행병</td></tr><tr><td>proportionately</td><td>in a way that corresponds in size or amount to something else</td><td>correspondingly</td><td>비례하여</td></tr></tbody></table>]]></content:encoded>
+            <category>vocab</category>
+        </item>
         <item>
             <title><![CDATA[Vocabulary for AI 009]]></title>
             <link>https://gracefullight.dev/en/vocab/vocab-ai-009/</link>
@@ -1824,49 +1834,6 @@ i.e. the unpredictability of the data.</p>
 </li>
 </ul>]]></content:encoded>
             <category>iai</category>
-        </item>
-        <item>
-            <title><![CDATA[Research methodology]]></title>
-            <link>https://gracefullight.dev/en/2025/09/10/research-methodology/</link>
-            <guid>https://gracefullight.dev/en/2025/09/10/research-methodology/</guid>
-            <pubDate>Wed, 10 Sep 2025 07:14:49 GMT</pubDate>
-            <description><![CDATA[Research methodology]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="quantitative-and-qualitative-methods">Quantitative and Qualitative Methods<a href="https://gracefullight.dev/en/2025/09/10/research-methodology/#quantitative-and-qualitative-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<table><thead><tr><th>Category</th><th>Sub Category</th><th>Quantitative</th><th>Qualitative</th></tr></thead><tbody><tr><td>Requirement</td><td>Question</td><td>Hypothesis</td><td>Interest</td></tr><tr><td></td><td>Method</td><td>Control and randomization</td><td>Curiosity and reflexivity</td></tr><tr><td></td><td>Data collection</td><td>Response</td><td>Viewpoint</td></tr><tr><td></td><td>Outcome</td><td>Dependent variable</td><td>Accounts</td></tr><tr><td>Ideal</td><td>Data</td><td>Numerical</td><td>Textual</td></tr><tr><td></td><td>Sample size</td><td>Large (power)</td><td>Small (saturation)</td></tr><tr><td></td><td>Context</td><td>Eliminated</td><td>Highlighted</td></tr><tr><td></td><td>Analysis</td><td>Rejection on null</td><td>Synthesis</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="types-of-research-methodology">Types of Research Methodology<a href="https://gracefullight.dev/en/2025/09/10/research-methodology/#types-of-research-methodology" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li>Historical: Qualitative</li>
-<li>Comparative: Qualitative</li>
-<li>Descriptive: Qualitative</li>
-<li>Correlation: Quantitative</li>
-<li>Experimental: Quantitative</li>
-<li>Evaluation: Qualitative</li>
-<li>Action: Qualitative</li>
-<li>Ethnographic: Various (not quantitative)</li>
-<li>Ethnogenic: Various (not quantitative)</li>
-<li>Feminist/Identity Politics: Various (not quantitative)</li>
-<li>Cultural: Various (not quantitative)</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="common-data-collection-methods">Common data collection methods<a href="https://gracefullight.dev/en/2025/09/10/research-methodology/#common-data-collection-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="qualitative-data-collection-methods">Qualitative data collection methods<a href="https://gracefullight.dev/en/2025/09/10/research-methodology/#qualitative-data-collection-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li>Observations: recording what you have seen, heard, or encountered in detailed field notes</li>
-<li>Interviews: asking people questions in one-on-one conversations</li>
-<li>Focus groups: asking questions and generating discussion among a group of people</li>
-<li>Surveys: distributing questionnaires with open-ended questions</li>
-<li>Secondary research: collecting existing data in the form of texts, images, audio or video recordings, etc.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="quantitative-data-collection-methods">Quantitative data collection methods<a href="https://gracefullight.dev/en/2025/09/10/research-methodology/#quantitative-data-collection-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li>Experiments</li>
-<li>Computer Simulation and Agent-Based Models</li>
-<li>Controlled observations</li>
-<li>Surveys: paper, kiosk, mobile, questionnaires</li>
-<li>Longitudinal studies</li>
-<li>Polls and Telephone interviews</li>
-<li>Face-to-face interviews</li>
-</ul>]]></content:encoded>
-            <category>research</category>
         </item>
     </channel>
 </rss>
