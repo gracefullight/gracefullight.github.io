@@ -9,6 +9,8 @@ tags:
 
 ## SVM
 
+> a supervised learning framework for finding a boundary between data points belonging to different classes.
+
 ### Convex Hull
 
 ![Convex Hull](./convex-hulls.png)
@@ -65,3 +67,48 @@ tags:
   \[
     \text{Maximize } W(\alpha) = \sum_{i=1}^{n} \alpha_i - \frac{1}{2} \sum_{i=1}^{n} \sum_{j=1}^{n} \alpha_i \alpha_j y_i y_j (x_i \cdot x_j)
   \]
+- Capital letters such as A, X, Y denote matrices;
+- Greek letters such as $\Phi$, $\kappa$ denote functions;
+- lower-case bold letters such as $a$, $b$ denote vectors;
+- script letters such as $\mathcal{A}$, $\mathcal{B}$, $\mathcal{V}$, $\mathcal{E}$ denote sets or spaces;
+- $||a||$ denotes the $L^2$ norm of vector;
+- $||x||_F$ denotes the Frobenius norm of matrix, and is given by $||x||_F = \big(\sum_{i,j} |x_{ij}|^2\big)^{1/2}$;
+
+### Linear Kernel
+
+$K(x_i, x_j) = x_i \cdot x_j$
+
+### Gaussian Kernel / RBF Kernel
+
+$K(x_i, x_j) = \exp\Big(-\frac{||x_i - x_j||^2}{2\sigma^2}\Big)$
+
+### Polynomial Kernel
+
+$K(x_i, x_j) = (x_i \cdot x_j + 1)^h$
+
+### Sequential Minimal Optimization (SMO)
+
+- an algorithm for solving the quadratic programming (QP) problem that arises during the training of support vector machines (SVMs).
+
+### Advantages
+
+- Overfitting is unlikely
+  - SVM uses the maximum margin hyperplane, which is relatively stable.
+  - the maximum margin hyperplane is only sensitive to the changes in the support vectors.
+  - the variance in the data may have a relatively low effect on the performance
+- Computational complexity
+  - since every time we need to classify a new sample we need to examine that sample with all the support vectors.
+  - Using the kernel trick can help to alleviate this by calculating the dot product before doing the nonlinear mapping.
+
+### Disadvantages
+
+- not perform very well when the data set has more noise
+- where the number of features for each data point exceeds the number of training data samples, the SVM will underperform.
+
+### Applications
+
+- Image classification
+- Handwriting recognition
+- Bioinformatics
+- Text classification
+- [Top 10 SVM Applications](https://techvidvan.com/tutorials/svm-applications/)
