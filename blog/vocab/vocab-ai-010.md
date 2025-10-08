@@ -23,3 +23,5 @@ tags:
 | epidemic | a widespread occurrence of an infectious disease in a community at a particular time | outbreak | 유행병 |
 | proportionately | in a way that corresponds in size or amount to something else | correspondingly | 비례하여 |
 | aching | experiencing a continuous or prolonged dull pain | painful | 아픈, 쑤시는 |
+| soup sth up | modify or improve something to make it more powerful or effective | enhance | 성능을 향상시키다 |
+| perpendicular | at an angle of 90 degrees to a given line, plane, or surface | at right angles | 수직의 |
