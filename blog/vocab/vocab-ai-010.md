@@ -27,3 +27,4 @@ tags:
 | perpendicular | at an angle of 90 degrees to a given line, plane, or surface | at right angles | 수직의 |
 | wiggly | having many curves or bends | curvy | 구불구불한 |
 | versatility | ability to adapt or be adapted to many different functions or activities | adaptability | 다재다능함 |
+| interpolate | estimate or insert (a value or function) between two known values in a sequence | estimate between | 보간하다 |
