@@ -19,10 +19,10 @@ graph TB
       subgraph DL[Deep Learning]
         GenAI[Generative AI]
 
-        GenAI -> GAN
-        GenAI -> VAE
-        GenAI -> AutoregressiveModels
-        GenAI -> DiffusionModels
+        GenAI --> GAN
+        GenAI --> VAE
+        GenAI --> AutoregressiveModels
+        GenAI --> DiffusionModels
       end
     end
   end
@@ -117,12 +117,12 @@ graph LR
 
 ```mermaid
 graph LR
-  RandomInput[Random Input $z$] --> Generator[Generator]
-    Generator --> FakeBatchSamples[Fake Batch Samples $Gz$]
+  RandomInput[Random Input z] --> Generator[Generator]
+    Generator --> FakeBatchSamples[Fake Batch Samples Gz]
 
     FakeBatchSamples --> Discriminator[Discriminator]
 
-  TrainingData[Training Data] --> RealBatchSamples[Real Batch Samples $x$]
+  TrainingData[Training Data] --> RealBatchSamples[Real Batch Samples x]
   RealBatchSamples --> Discriminator
 
   Discriminator --> Decision[Real or Fake]
@@ -147,3 +147,43 @@ graph LR
   - Day to Nihght
   - Edges to Photo
   - Text-to-Image Synthesis
+
+## Autoregressive Models
+
+- a class of generative models where the current value of a time series is expressed as a linear function of its own past values plus some noise.
+- foundational in generative AI and widely used in generative AI, particularly for tasks like text generation, speech synthesis.
+- Examples
+  - GPT series: state-of-the-art autoregressive language models used for text generation.
+  - WaveNet: an autoregressive model for generating high-quality audio by predicting each sample conditioned on previous samples.
+
+### Training Autoregressive Models
+
+- Pretraining
+  - the model sees sequences of tokens and learns to guess the next token.
+  - objective: minimize cross-entropy loss between its guess and the true next token.
+  - this teaches grammar, facts, reasoning patterns, and style from raw text.
+- Supervised fine-tuning (optional)
+  - smaller curated datasets (questions to answer, instructions to respond) teach it to follow directions.
+- Reinforcement learning from Human Feedback (optional)
+  - Humans rank multiple model outputs; a reward model is trained on those rankings; GPT is then optimized to produce higher-reward responses (safer, more helpful, less toxic)
+- Text to **Tokens** via a tokenizer (e.g. BPE, Byte Pair Encoding)
+- Each token becomes a vector (**Embedding**)
+- **Positional encodings** inject order information.
+- **Transformer layer**
+  - **self-attention**: each token looks at all previous token (causal mask) and decides which ones matter, computing weighted combinations.
+  - Multiple **heads** let it attend to different patterns (syntax, long-range links, etc.).
+  - **feed-forward network**: a nonlinear MLP refines each token's representation.
+  - **residual connections & layer norm** stabilize tranining.
+
+### Interfence
+
+- a prompt (the context)
+- GPT computes probabiliites for the next token.
+- A decoding stragety samples a token
+  - Decoding knobs
+    - Greedy: take the top token
+    - Top-K
+    - Nucleus (Top-p) sampling (limit to likely options)
+    - Temperature scales randomness, controls how random the next token choice is
+      - lower = more determistic, higher = more creative
+- append the token and repeat autoregressive generation.
