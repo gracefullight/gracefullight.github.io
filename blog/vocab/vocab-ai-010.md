@@ -26,3 +26,4 @@ tags:
 | soup sth up | modify or improve something to make it more powerful or effective | enhance | 성능을 향상시키다 |
 | perpendicular | at an angle of 90 degrees to a given line, plane, or surface | at right angles | 수직의 |
 | wiggly | having many curves or bends | curvy | 구불구불한 |
+| versatility | ability to adapt or be adapted to many different functions or activities | adaptability | 다재다능함 |
