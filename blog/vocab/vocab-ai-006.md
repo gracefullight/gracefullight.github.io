@@ -23,7 +23,7 @@ tags:
 | stipulate | To demand or specify a requirement | Specify | 규정하다, 명시하다 |
 | rectify | To correct or make right | Correct | 수정하다, 바로잡다 |
 | schematic | Relating to a diagram or representation | Diagrammatic | 도식적인, 다이어그램의 |
-| proposition | A statement or assertion that expresses a judgment or opinion | Proposal | 제안, 명제 |
+| **proposition** | A statement or assertion that expresses a judgment or opinion | Proposal | 제안, 명제 |
 | cavity | A cavity is a hollow place in a tooth caused by decay | Tooth decay | 충치 |
 | tautological | Relating to or involving tautology (the saying of the same thing twice in different words) | Redundant | 동의어 반복의, 중복적인 |
 | retrospectively | Looking back on or dealing with past events or situations | Looking back | 회고적으로, 과거를 돌아보며 |
