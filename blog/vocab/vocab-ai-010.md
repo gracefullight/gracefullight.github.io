@@ -28,3 +28,7 @@ tags:
 | wiggly | having many curves or bends | curvy | 구불구불한 |
 | versatility | ability to adapt or be adapted to many different functions or activities | adaptability | 다재다능함 |
 | interpolate | estimate or insert (a value or function) between two known values in a sequence | estimate between | 보간하다 |
+| commutativity | the property that the order of applying an operation does not change the result | order-independence | 교환법칙 |
+| associativity | the property that the grouping of operations does not change the result | grouping-independence | 결합법칙 |
+| contraposition | a logical operation that involves reversing and negating both the hypothesis and conclusion of a conditional statement | reverse and negate | 대우 |
+| distributivity | the property that an operation can be distributed over another operation | distribution property | 분배법칙 |
