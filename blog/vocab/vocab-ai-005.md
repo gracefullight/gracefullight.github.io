@@ -20,7 +20,7 @@ tags:
 | impose | to force something to be accepted or put in place | to establish or apply | 부과하다, 강요하다 |
 | dubious | hesitating or doubting | uncertain or questionable | 의심스러운 |
 | presumably | used to convey that what is assumed is likely to be true | probably | 아마, 추정컨대 |
-| arbitrary | based on random choice or personal whim, rather than any reason or system | random or capricious | 임의의, 자의적인 |
+| **arbitrary** | based on random choice or personal whim, rather than any reason or system | random or capricious | 임의의, 자의적인 |
 | skimpy | insufficient in quantity or quality | scanty or meager | 부족한, 빈약한 |
 | disjunctive | relating to or denoting a logical operation that combines two or more propositions | separating or contrasting | 분리적인, 대립적인 |
 | parity | the state or condition of being equal or equivalent | equality | 동등성 |
