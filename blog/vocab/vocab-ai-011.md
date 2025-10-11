@@ -33,6 +33,7 @@ tags:
 | semidecidable | a property of a problem where a solution can be verified if given, but not necessarily found | partially decidable | 반결정 문제 |
 | singly | one at a time; individually | one at a time | 하나씩, 개별적으로 |
 | negate | to nullify or make ineffective | nullify | 부정하다, 무효화하다 |
+| subsumption | the process of including one concept within another, more general concept | inclusion | 포섭, 포함 |
 
 ## Ontology
 
