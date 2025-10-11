@@ -34,6 +34,8 @@ tags:
 | singly | one at a time; individually | one at a time | 하나씩, 개별적으로 |
 | negate | to nullify or make ineffective | nullify | 부정하다, 무효화하다 |
 | subsumption | the process of including one concept within another, more general concept | inclusion | 포섭, 포함 |
+| thrust | the main idea, subject, or opinion that is discussed or written about | main idea | 요지, 핵심 |
+| tractability | the quality of being easy to manage or deal with | manageability | 계산 가능성 |
 
 ## Ontology
 
@@ -46,3 +48,11 @@ tags:
 ## Semantic Network
 
 - Semantic networks let us represent logical relationships visually, but their meaning remains purely logical — about objects, categories, and relations.
+
+## Tractability
+
+| Aspect      | Semantic Network | Description Logic | First-Order Logic |
+| ---------- | ----------- | ------------ | ------------------------ |
+| **형식성**    | 낮음 (그래픽 기반) | 중간 (논리 기반)   | 높음 (수학적)                 |
+| **표현력**    | 제한적         | 중간           | 매우 높음                    |
+| **추론 효율성** | 매우 높음       | 높음 (다항시간 목표) | 낮음 (NP-hard~undecidable) |
