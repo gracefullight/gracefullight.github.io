@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-10-09T03:19:13.025Z</updated>
+    <updated>2025-10-10T11:56:36.084Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Vocabulary for AI 011]]></title>
+        <id>https://gracefullight.dev/vocab/vocab-ai-011/</id>
+        <link href="https://gracefullight.dev/vocab/vocab-ai-011/"/>
+        <updated>2025-10-10T11:56:36.084Z</updated>
+        <summary type="html"><![CDATA[Vocabulary for AI 011]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/vocab/vocab-ai-011/#vocabulary--expressions" class="hash-link" aria-label="Vocabulary &amp; Expressions에 대한 직접 링크" title="Vocabulary &amp; Expressions에 대한 직접 링크" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>formalism</td><td>a system of rules and symbols used to represent concepts in a precise and unambiguous way</td><td>structured system</td><td>형식주의, 형식 체계</td></tr><tr><td>disjoint</td><td>not connected or related</td><td>separate</td><td>분리된, 연결되지 않은</td></tr><tr><td>caveat</td><td>a warning or cautionary detail to consider</td><td>warning</td><td>경고, 주의 사항</td></tr><tr><td>instantaneous</td><td>happening immediately</td><td>immediate</td><td>즉각적인, 순간적인</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IAI +010]]></title>
         <id>https://gracefullight.dev/2025/10/09/introduction-to-ai-009/</id>
@@ -1651,255 +1665,5 @@ ii. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.or
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="fsd" term="fsd"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FDA +007]]></title>
-        <id>https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/</id>
-        <link href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/"/>
-        <updated>2025-09-14T10:26:05.674Z</updated>
-        <summary type="html"><![CDATA[Fundamentals of data analytics +007]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_GkGg" id="classification-and-prediction">Classification and Prediction<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#classification-and-prediction" class="hash-link" aria-label="Classification and Prediction에 대한 직접 링크" title="Classification and Prediction에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="classification">Classification<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#classification" class="hash-link" aria-label="Classification에 대한 직접 링크" title="Classification에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>classifies data based on the training set and the class labels and uses it in classifying new data</p>
-</blockquote>
-<ul>
-<li>Model construction (learning)</li>
-<li>Model evaluation (accuracy)</li>
-<li>Model use (classification)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="prediction">Prediction<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#prediction" class="hash-link" aria-label="Prediction에 대한 직접 링크" title="Prediction에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>predicts categorical class labels based on unseen data</p>
-</blockquote>
-<ul>
-<li>models continuous-valued functions</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="classfication-methods">Classfication Methods<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#classfication-methods" class="hash-link" aria-label="Classfication Methods에 대한 직접 링크" title="Classfication Methods에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Decision tree induction</li>
-<li>Bayesian classification</li>
-<li>Nearest neighbour classification, case-based reasoning</li>
-<li>Neural networks</li>
-<li>Support Vector Machines</li>
-<li>Ensemble methods</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="issues-around-classification-and-prediction">Issues around classification and prediction<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#issues-around-classification-and-prediction" class="hash-link" aria-label="Issues around classification and prediction에 대한 직접 링크" title="Issues around classification and prediction에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Predictive accuracy</li>
-<li>Speed and scalability</li>
-<li>Robustness</li>
-<li>Interpretability</li>
-<li>'Goodness' of classifier</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="classification-process">Classification process<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#classification-process" class="hash-link" aria-label="Classification process에 대한 직접 링크" title="Classification process에 대한 직접 링크" translate="no">​</a></h2>
-<!-- -->
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="decision-tree">Decision Tree<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#decision-tree" class="hash-link" aria-label="Decision Tree에 대한 직접 링크" title="Decision Tree에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li>Builds trees to describe data</li>
-<li>Easy to translate into rules</li>
-<li>Robust to niosy data</li>
-<li>able to build disjunctive expressions</li>
-<li>Inductive bias prefers small trees over larger.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="decision-tree-methodologies">Decision Tree Methodologies<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#decision-tree-methodologies" class="hash-link" aria-label="Decision Tree Methodologies에 대한 직접 링크" title="Decision Tree Methodologies에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Itertative Dichotomiser 3 (ID3)</li>
-<li>C4.5</li>
-<li>Classification And Regression Trees (CART)</li>
-<li>Chi-square Automatic Interaction Detection (CHAID)</li>
-<li>Multivariate Adaptive Regression Splines (MARS)</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="decision-tree-forms">Decision Tree Forms<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#decision-tree-forms" class="hash-link" aria-label="Decision Tree Forms에 대한 직접 링크" title="Decision Tree Forms에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Balanced<!-- -->
-<ul>
-<li>each branch has the same depth from the root to leaves.</li>
-<li>all nodes have the same number of splits</li>
-</ul>
-</li>
-<li>Deep<!-- -->
-<ul>
-<li>some nodes have different levels, wherein some of them are split into more branches.</li>
-</ul>
-</li>
-<li>Bushy<!-- -->
-<ul>
-<li>split into multi-way from the root</li>
-<li>undesirable because the split may lead to small numbers of instance in each leaf node.</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="entropy-and-information-gain">Entropy and Information Gain<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#entropy-and-information-gain" class="hash-link" aria-label="Entropy and Information Gain에 대한 직접 링크" title="Entropy and Information Gain에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="entropy">Entropy<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#entropy" class="hash-link" aria-label="Entropy에 대한 직접 링크" title="Entropy에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>measures the amount of disorder / (im)purity in a collection of things.
-i.e. the unpredictability of the data.</p>
-</blockquote>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>y</mi><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msub><mi>p</mi><mo lspace="0em" rspace="0em">+</mo></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><msub><mi>p</mi><mo lspace="0em" rspace="0em">+</mo></msub><mo stretchy="false">)</mo><mo>−</mo><msub><mi>p</mi><mo lspace="0em" rspace="0em">−</mo></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><msub><mi>p</mi><mo lspace="0em" rspace="0em">−</mo></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Entropy(S) = -p_{+} log_2(p_{+}) - p_{-} log_2(p_{-})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.03588em">y</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">o</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">o</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
-<ul>
-<li>Constructing a decision tree is all about finding an attribute that returns the highest information gain and the smallest entropy.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.05764em">S</span></span></span></span> stands for total number of samples</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mo lspace="0em" rspace="0em">+</mo></msub></mrow><annotation encoding="application/x-tex">P_{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span></span></span></span> denotes the likelihood of a yes (positive) answer.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mo lspace="0em" rspace="0em">−</mo></msub></mrow><annotation encoding="application/x-tex">P_{-}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em"><span></span></span></span></span></span></span></span></span></span> denotes the likelihood of a no (negative) outcome.</li>
-</ul>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>c</mi></msubsup><mo>−</mo><msub><mi>p</mi><mi>i</mi></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E(S) = \sum_{i=1}^{c} -p_i log_2(p_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.104em;vertical-align:-0.2997em"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">o</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="information-gain">Information Gain<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#information-gain" class="hash-link" aria-label="Information Gain에 대한 직접 링크" title="Information Gain에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>measures how well a given attribute separates the training examples according to the target classification.</p>
-</blockquote>
-<ul>
-<li>The larger the information gain is, the stronger the feature will be.</li>
-</ul>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>a</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mi>S</mi><mo separator="true">,</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mi>E</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>y</mi><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo><mo>−</mo><msub><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi><mi>a</mi><mi>l</mi><mi>u</mi><mi>e</mi><mi>s</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></msub><mfrac><mrow><mi mathvariant="normal">∣</mi><msub><mi>S</mi><mi>v</mi></msub><mi mathvariant="normal">∣</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi>S</mi><mi mathvariant="normal">∣</mi></mrow></mfrac><mi>E</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>y</mi><mo stretchy="false">(</mo><msub><mi>S</mi><mi>v</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Gain(S,A) = Entropy(S) - \sum_{v \in Values(A)} \frac{|S_v|}{|S|} Entropy(S_v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">ain</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.03588em">y</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em"></span></span><span class="base"><span class="strut" style="height:1.53em;vertical-align:-0.52em"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2253em"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span><span class="mrel mtight">∈</span><span class="mord mathnormal mtight">Va</span><span class="mord mathnormal mtight" style="margin-right:0.01968em">l</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">es</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4747em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathnormal mtight" style="margin-right:0.05764em">S</span><span class="mord mtight">∣</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.485em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em"><span style="top:-2.357em;margin-left:-0.0576em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em"><span></span></span></span></span></span></span><span class="mord mtight">∣</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.05764em">E</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.03588em">y</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.05764em">S</span></span></span></span> = set of training examples</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">A</span></span></span></span> = the particular attribute to be tested</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>l</mi><mi>u</mi><mi>e</mi><mi>s</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Values(A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal">Va</span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">u</span><span class="mord mathnormal">es</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span> = the set of values for the attribute A</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">S_v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em">v</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span> = subset of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.05764em">S</span></span></span></span> with attribute <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">A</span></span></span></span> having value <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span></span></span></span>s</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="iterative-dichotomiser-3">Iterative Dichotomiser 3<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#iterative-dichotomiser-3" class="hash-link" aria-label="Iterative Dichotomiser 3에 대한 직접 링크" title="Iterative Dichotomiser 3에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li>constructs trees in a top-down manner.</li>
-<li>check each instance attribute with a statistical test to see how well it alone classifies (splits) the training examples.</li>
-<li>this becomes the root node.</li>
-<li>descendent is created for each possible value of the attribute and training examples split to the appropriate descendent.</li>
-<li>repeat the procedure for each descendent.</li>
-<li>the algorithm is going to issue recursion on each of the partitions.</li>
-<li>the output of this algorithm is the creation of a Model.</li>
-</ul>
-<div class="language-py codeBlockContainer_xEp_ theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_LsJW"><pre tabindex="0" class="prism-code language-py codeBlock_w7XU thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_uL9c"><span class="token-line" style="color:#393A34"><span class="token plain">function id3 </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">examples</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> attrs</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  create root node </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> tree</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> examples </span><span class="token builtin">all</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain">ve</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> root </span><span class="token keyword" style="color:#00009f">with</span><span class="token plain"> label</span><span class="token operator" style="color:#393A34">=</span><span class="token operator" style="color:#393A34">+</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> examples </span><span class="token builtin">all</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token plain">ve</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> root </span><span class="token keyword" style="color:#00009f">with</span><span class="token plain"> label</span><span class="token operator" style="color:#393A34">=</span><span class="token operator" style="color:#393A34">-</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> attrs </span><span class="token keyword" style="color:#00009f">is</span><span class="token plain"> empty</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> root w</span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> label</span><span class="token operator" style="color:#393A34">=</span><span class="token plain">most common value of target </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> examples </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      A ← attribute </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> attrs that best splits examples</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      root ← A </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> each possible value</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> vi </span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> A</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        add a new branch below root corresp</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain"> to the test A </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> vi</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        examples_v ← the subset of examples </span><span class="token keyword" style="color:#00009f">with</span><span class="token plain"> A </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> vi</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> examples_vi </span><span class="token keyword" style="color:#00009f">is</span><span class="token plain"> empty</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          add a leaf node below branch w</span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> label </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> most common value of target </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> examples</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"> below the branch add the subtree given by</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          id3</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">examples_vi </span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> attrs </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">A</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> root</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="hypothesis-space-search">Hypothesis space search<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#hypothesis-space-search" class="hash-link" aria-label="Hypothesis space search에 대한 직접 링크" title="Hypothesis space search에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>ID3 can be seen as a search through a space of hypotheses for one that matches the training data.</li>
-<li>It's a greedy search</li>
-<li>Hypothesis space = all the possible trees</li>
-<li>Simple to complex, hill climbing search</li>
-<li>Complete search = decision tree can represent all possible hypotheses</li>
-<li>Maintains only one current hypothesis<!-- -->
-<ul>
-<li>cannot find alternative decision trees</li>
-</ul>
-</li>
-<li>No backtracking, maybe stuck in local optima</li>
-<li>Uses all training data at each step<!-- -->
-<ul>
-<li>less sensitive to errors in individual examples</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="inductive-bias">Inductive Bias<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#inductive-bias" class="hash-link" aria-label="Inductive Bias에 대한 직접 링크" title="Inductive Bias에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Shorter trees preferred</li>
-<li>High information gain near the root</li>
-<li>cos' simple to complex search</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="issues-with-decision-trees">Issues with decision trees<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#issues-with-decision-trees" class="hash-link" aria-label="Issues with decision trees에 대한 직접 링크" title="Issues with decision trees에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="overfitting-training-data">Overfitting training data<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#overfitting-training-data" class="hash-link" aria-label="Overfitting training data에 대한 직접 링크" title="Overfitting training data에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>occurs when a tree gives higher accuracy on the training data than another tree, but lower accuracy on the unseen data.</li>
-<li>because the training data is noisy or not representative of the unseen data.</li>
-<li>can measure how well the tree generalizes by checking error on test data.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="dividing-the-data">Dividing the data<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#dividing-the-data" class="hash-link" aria-label="Dividing the data에 대한 직접 링크" title="Dividing the data에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>Training set<!-- -->
-<ul>
-<li>used to build the initial model</li>
-<li>may need to enrich the data to get enough of the special cases</li>
-</ul>
-</li>
-<li>Cross validation set<!-- -->
-<ul>
-<li>used to adjust the initial model</li>
-<li>used to work out the correct values of parameters in model</li>
-<li>models can be tweaked to be less dependent on idiosyncrasies in the training data to be a more general model</li>
-<li>idea is to prevent over-training (i.e. finding patterns where none exist)</li>
-</ul>
-</li>
-<li>Test set<!-- -->
-<ul>
-<li>used to evaluate the model performance</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="avoiding-overfitting">Avoiding Overfitting<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#avoiding-overfitting" class="hash-link" aria-label="Avoiding Overfitting에 대한 직접 링크" title="Avoiding Overfitting에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>stop growing the tree once the test error decreases</li>
-<li>grow the tree as normal (i.e. wit hoverfitting) then post-prune it.</li>
-<li>use a separate set of data apart from training to test when to prune nodes (training &amp; cross-validation set)</li>
-<li>use all data to train, but apply a statistical test whether to expand/prune a node.</li>
-<li>use an explicit complexity measure (e.g. Minimum Description Length, MDL) to trade off accuracy vs complexity.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="reduced-error-pruning">Reduced-Error pruning<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#reduced-error-pruning" class="hash-link" aria-label="Reduced-Error pruning에 대한 직접 링크" title="Reduced-Error pruning에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>build tree</li>
-<li>consider each node in tree for pruning</li>
-<li>pruning<!-- -->
-<ul>
-<li>remove subtree</li>
-<li>make into a leaf</li>
-<li>assign label as most common class in associated training examples.</li>
-</ul>
-</li>
-<li>if pruned tree has as good error on the cross validation set as the unpruned tree, do the prune.</li>
-<li>keep pruning until the error on cross validation set increases.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="cross-validation-set">Cross validation set<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#cross-validation-set" class="hash-link" aria-label="Cross validation set에 대한 직접 링크" title="Cross validation set에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>the main difficulty comes when you don't have much data and need it all for training.</li>
-<li>k-fold cross-validation or leave-one-out training can help.</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="rule-post-pruning">Rule Post-Pruning<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#rule-post-pruning" class="hash-link" aria-label="Rule Post-Pruning에 대한 직접 링크" title="Rule Post-Pruning에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>converts the decision tree to rules</li>
-<li>removes preconditions that do not worsen the accuracy (on the cross validation set or with a statistical test)</li>
-<li>sorts the rules by estimated accuracy and uses this order when classifying new data</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_GkGg" id="continuous-valued-variables">Continuous Valued Variables<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#continuous-valued-variables" class="hash-link" aria-label="Continuous Valued Variables에 대한 직접 링크" title="Continuous Valued Variables에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li>use real valued attributes for tests at nodes.</li>
-<li>Dynamically define new discrete attributes that partition the continuous attribute.</li>
-<li>discrete: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&lt;</mo><mi>v</mi><mo>=</mo><mi>t</mi><mi>r</mi><mi>u</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">A &lt; v = true</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.6151em"></span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mo>=</mo><mi>v</mi><mo>=</mo><mi>f</mi><mi>a</mi><mi>l</mi><mi>s</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">A &gt;= v = false </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em">l</span><span class="mord mathnormal">se</span></span></span></span></li>
-<li>the boundary poins can be estimated from the training data.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="the-confusion-matrix">The confusion matrix<a href="https://gracefullight.dev/2025/09/14/fundamentals-of-data-analytics-007/#the-confusion-matrix" class="hash-link" aria-label="The confusion matrix에 대한 직접 링크" title="The confusion matrix에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li>a basic method of evaluation of classifiers</li>
-<li>The columns have numbers associated with the actual number of positive data points in the test set and the actual number of negative data points in the test set</li>
-</ul>
-<table><thead><tr><th></th><th>Predicted Positive</th><th>Predicted Negative</th></tr></thead><tbody><tr><td>Actual Positive</td><td>True Positive (TP)</td><td>False Negative (FN)</td></tr><tr><td>Actual Negative</td><td>False Positive (FP)</td><td>True Negative (TN)</td></tr></tbody></table>
-<ul>
-<li>TP: the number of correct prediction of positive samples.<!-- -->
-<ul>
-<li>the number of data points in the test set that were positive and the classifier correctly assigned them to the positive group</li>
-</ul>
-</li>
-<li>TN: the number of correct prediction of negative samples<!-- -->
-<ul>
-<li>the number of data points in our test set that was actually negative and predicted as negative by the classifiers</li>
-</ul>
-</li>
-<li>FP: the number of incorrect predictions of positive samples<!-- -->
-<ul>
-<li>the value of data points in our test set that was actually negative but were predicted by the classifier as positives.</li>
-<li>These ones are obvious errors, which is called a type 1 error.</li>
-<li><code>type I error</code></li>
-</ul>
-</li>
-<li>FN: the number of incorrect prediction of negative samples.<!-- -->
-<ul>
-<li>the number of data points in our test set that was actually positive but were predicted by the classifier as negative</li>
-<li>usually called the type 2 error, and when we are trying to build a classification.</li>
-<li>might have a trade-off between the number of the type 1 error or the type 2 error.</li>
-<li><code>type II error</code></li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fda" term="fda"/>
     </entry>
 </feed>
