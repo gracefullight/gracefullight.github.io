@@ -12,7 +12,7 @@ tags:
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
 | invariance | the quality of remaining unchanged when something else changes | unchangingness | 불변성 |
-| disjunction | a logical operation that outputs true whenever at least one of its inputs is true | or operation | 논리합, OR |
+| **disjunction** | a logical operation that outputs true whenever at least one of its inputs is true | or operation | 논리합, OR |
 | convergence | the process of coming together to a common point | coming together | 수렴 |
 | impractically | not in a practical or realistic manner | not practical | 비현실적으로 |
 | receptor | a cell or group of cells that receives stimuli and transmits them to sensory nerves | sensor | 수용체, 감각기 |

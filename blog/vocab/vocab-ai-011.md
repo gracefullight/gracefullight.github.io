@@ -24,8 +24,15 @@ tags:
 | simplistic | treating complex issues in an overly simple way | oversimplified | 지나치게 단순화된 |
 | Event Calculus | a formalism for representing and reasoning about events and their effects over time | temporal reasoning system | 이벤트 연산 |
 | reify | to make something abstract more concrete or real | concretize | 구체화하다, 실체화하다 |
+| reification | the process of making an abstract concept more concrete or real | concretization | 구체화, 실체화 |
 | cease | to stop or bring to an end | stop | 중단하다, 멈추다 |
 | exogenous | originating from outside a system | external | 외부의, 외생적인 |
+| reign | to hold royal office; to rule as a monarch | rule | 통치하다, 군림하다 |
+| obscured | hidden or made less visible | hidden | 가려진, 숨겨진 |
+| by virtue of | because of; as a result of | because of | ~덕분에, ~때문에 |
+| semidecidable | a property of a problem where a solution can be verified if given, but not necessarily found | partially decidable | 반결정 문제 |
+| singly | one at a time; individually | one at a time | 하나씩, 개별적으로 |
+| negate | to nullify or make ineffective | nullify | 부정하다, 무효화하다 |
 
 ## Ontology
 
@@ -34,3 +41,7 @@ tags:
 | **Ontology** | The representation itself — a structured map of concepts and relations | Describes the general framework of the world | The hierarchy (Anything → PhysicalObjects → Humans, etc.) |
 | **Ontology System** | The platform or implementation that holds and reasons about ontologies | Stores, queries, and integrates knowledge | CYC, DBpedia, Google Knowledge Graph |
 | **Ontological Engineering** | The process of designing and maintaining ontologies | Defines general concepts and their logical structure | Defining "PhysicalObject" → later "Robot," "Television," etc. |
+
+## Semantic Network
+
+- Semantic networks let us represent logical relationships visually, but their meaning remains purely logical — about objects, categories, and relations.

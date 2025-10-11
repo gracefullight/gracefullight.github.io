@@ -28,7 +28,7 @@ tags:
 | stands for | represents or signifies | represents | ~을 나타내다 |
 | mnemonic | a device such as a pattern of letters, ideas, or associations that assists in remembering something | memory aid | 기억을 돕는 장치 |
 | parentheses | a pair of round brackets () used to mark off a parenthetical word or expression | brackets | 괄호 |
-| negation | the contradiction or denial of something | denial | 부정, 반대 |
+| **negation** | the contradiction or denial of something | denial | 부정, 반대 |
 | antecedent | a thing or event that existed before or logically precedes another | predecessor | 선행사, 앞서는 것 |
 | precedence | the condition of being considered more important than someone or something else; priority in importance, order, or rank | priority | 우선, 우선권 |
 | disjuncts | a word or phrase that is grammatically independent of the other parts of the sentence in which it occurs | separate part | 분리된 부분 |
@@ -53,7 +53,7 @@ tags:
 | theorem | a general proposition not self-evident but proved by a chain of reasoning; a truth established by means of accepted truths | proven statement | 정리, 명제 |
 | existentially | relating to existence | relating to existence | 존재에 관한 |
 | Universal | a type of quantification that states that a predicate holds for all members of a specified set | for all | 전체에 대한 한정 |
-| Existential | a type of quantification that states that a predicate holds for at least one member of a specified set | there exists | 존재에 대한 한정 |
+| **existential** | a type of quantification that states that a predicate holds for at least one member of a specified set | there exists | 존재에 대한 한정 |
 | latent | existing but not yet developed or manifest; hidden or concealed | hidden | 잠재적인, 숨어있는 |
 
 ## Knowledge Base
