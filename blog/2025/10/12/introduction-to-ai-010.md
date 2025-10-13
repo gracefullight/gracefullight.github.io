@@ -77,7 +77,7 @@ $$\forall x \neg P(x) \equiv \neg \exists x P(x)$$
 
 - For all x, not P(x) is logically equivalent to "it is not the case that there exists an x such that P(x) is true."
 
-## Reasoning & Inference
+## Reasoning
 
 ### Deductive reasoning
 
@@ -89,3 +89,10 @@ $$\forall x \neg P(x) \equiv \neg \exists x P(x)$$
 - the process of resoning from specific observations to borader generalizations and theories.
 - also described as a method where one's experiences and observations are synthesized to cmoe up with a general truth.
 - premises and then conclusion
+
+## Inference
+
+- steps in reasoning
+- moves from premises to logical consequences
+- In AI Context, inference is to derive new logical sentences (as the conclusion) from existing logical sentences (as premises).
+- researchers develop automated inference systems to emulate human inference.
