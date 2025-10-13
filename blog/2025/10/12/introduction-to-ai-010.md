@@ -72,3 +72,7 @@ Truth tables
 | $\neg(\alpha \lor \beta) \equiv (\neg \alpha \land \neg \beta)$ | De Morgan's law for $\lor$       |
 | $(\alpha \land (\beta \lor \gamma)) \equiv ((\alpha \land \beta) \lor (\alpha \land \gamma))$ | Distributivity of $\land$ over $\lor$ |
 | $(\alpha \lor (\beta \land \gamma)) \equiv ((\alpha \lor \beta) \land (\alpha \lor \gamma))$ | Distributivity of $\lor$ over $\land$ |
+
+$$\forall x \neg P(x) \equiv \neg \exists x P(x)$$
+
+- For all x, not P(x) is logically equivalent to "it is not the case that there exists an x such that P(x) is true."
