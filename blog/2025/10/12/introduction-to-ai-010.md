@@ -150,12 +150,12 @@ $$KB \models \gamma$$
 - Desired sentence is needed to be checked whether it is entailed by the KB.
 - The rules of inference are the approved logical equivalences and rules.
 
-| Aspect | Model Checking | Theorem Proving          |
+| Aspect | Model Checking | Theorem Proving |
 | --- | -------------- | ------------------------ |
-| 방식 | 참/거짓으로 실제 계산   | 논리 규칙을 사용해 증명            |
+| 방식 | 참/거짓으로 실제 계산   | 논리 규칙을 사용해 증명 |
 | 예시 | 진리표            | Modus Ponens, Resolution |
-| 장점 | 단순함            | 복잡한 문장도 처리 가능            |
-| 단점 | 계산 많음          | 규칙 익혀야 함                 |
+| 장점 | 단순함            | 복잡한 문장도 처리 가능 |
+| 단점 | 계산 많음          | 규칙 익혀야 함  |
 
 #### Modus Ponens Rule
 
@@ -215,3 +215,25 @@ $$ \frac{(l_1 \lor l_2 \lor ... \lor l_{i-1} \lor l_i \lor l_{i+1} \lor ... \lor
 
 - where $l$ is a literal and $l_i$ and $m_j$ are complementary literals.
 - Full resolution rule takes two clauses which are disjuctions of literals and produces a new clause containing all the literals of the two original clauses except for the two complementary literals.
+
+### Inference via proof by contradiction through resolution
+
+$$ \alpha \models \beta$$
+
+- to prove that $\alpha \models \beta$, we can show that the sentence $\alpha \land \neg \beta$ is unsatisfiable.
+- by deriving an empty clause $()$ from $\alpha \land \neg \beta$ using the resolution rule.
+- In order to derive an empty clause, we use resolution which is a process to resolve complementary literals until to find an empty clause.
+  1. R1: P (observation)
+  2. R2: P $\implies$ Q (knowledge, raining implies ground is wet)
+  - $KB = P \land (P \implies Q)$
+  3. Query sentence: Q
+  4. Inference problem: $KB \models Q$, i.e. from KB=T, get Q=T
+  5. Proof:
+  - Let $(P \land (P \implies Q)) \land \neg Q$ valid
+  - Convert $(P \land (P \implies Q)) \land \neg Q$ to CNF
+  - Apply implication elimination rule, one has $(P \land (\neg P \lor Q)) \land \neg Q$
+    - $C_1: P$
+    - $C_2: \neg P \lor Q$
+    - $C_3: \neg Q$
+  - Apply unit resolution rule to $C_1$ and $C_2$, resolve $P$ and $\neg P$, one has $C_4: Q$
+  - Apply unit resolution rule to $C_3$ and $C_4$, resolve $Q$ and $\neg Q$, one has $C_5: ()$
