@@ -108,3 +108,14 @@ $$KB \models \gamma$$
   - $M(\alpha)$ is the set of all models that satisfy $\alpha$.
   - $M(\beta)$ is the set of all models that satisfy $\beta$.
   - The statement $\alpha \models \beta$ means that in every model where $\alpha$ is true, $\beta$ is also true. In other words, if $\alpha$ holds, then $\beta$ must also hold.
+- Model Checking: enumerates all possible models and checks if the entailment holds in each model.
+  - Knowledge base will be used to draw inferences.
+  - Query sentence, $\gamma$, is needed to be checked whether it is entailed by the KB.
+  - Symbols, a list of all symbols (or atomic propositions) used in the problem context.
+  - Models, assignments of truth and false values to those identified symbols.
+- Model Checking Procedure
+  1. Identify the propositional symbols involved in the KB sentences and query sentence
+  2. Enumerate all possible models by assigning truth values to the identified symbols.
+  3. Evaluate the KB sentence in each model and fined the models in which KB is true.
+  4. Evaluate the query sentence in the models from step 3 and check if query sentence is true in these models.
+  5. Conclude that the KB entails the query sentence $\gamma$ if and only if the query sentence is true in all models where the KB is true.
