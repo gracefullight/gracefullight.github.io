@@ -96,3 +96,15 @@ $$\forall x \neg P(x) \equiv \neg \exists x P(x)$$
 - moves from premises to logical consequences
 - In AI Context, inference is to derive new logical sentences (as the conclusion) from existing logical sentences (as premises).
 - researchers develop automated inference systems to emulate human inference.
+
+### Inference Problem
+
+$$KB \models \gamma$$
+
+- KB, Knowledge Base, is a set of propositions that represent what is known about the world.
+- $\gamma$, Query sentence, is the target conclusion which needs to be confirmed based on the given KB.
+- where $\models$ denotes the relation of logical entailment between KB and the sentence $\gamma$, reading as "KB entails $\gamma$" or "if KB is true, then $\gamma$ must also be true".
+- $\alpha \models \beta \iff M(\alpha) \subseteq M(\beta)$
+  - $M(\alpha)$ is the set of all models that satisfy $\alpha$.
+  - $M(\beta)$ is the set of all models that satisfy $\beta$.
+  - The statement $\alpha \models \beta$ means that in every model where $\alpha$ is true, $\beta$ is also true. In other words, if $\alpha$ holds, then $\beta$ must also hold.
