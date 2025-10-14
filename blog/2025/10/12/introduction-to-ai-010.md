@@ -119,3 +119,99 @@ $$KB \models \gamma$$
   3. Evaluate the KB sentence in each model and fined the models in which KB is true.
   4. Evaluate the query sentence in the models from step 3 and check if query sentence is true in these models.
   5. Conclude that the KB entails the query sentence $\gamma$ if and only if the query sentence is true in all models where the KB is true.
+
+#### Inference Problem Example
+
+- Obersvation **P**: "It is raining"
+- Query sentence **Q**: "The ground is wet"
+- Knowledge: $P \implies Q$ (If it is raining, then the ground is wet)
+- Knowledge Base **KB**: $P \land (P \implies Q)$
+- Inference Problem: $KB \models Q$ from KB=T, get Q=T
+- Proof:
+  1. From the 4 possible models, only Model 1 makes KB true.
+  2. M(KB) = model 1
+  3. Model 1 also makes Q true.
+  4. M(Q) = model 1
+  5. $M(KB) \subseteq M(Q)$, therefore $KB \models Q$
+
+| Model |   P   |   Q   | P $\implies$ Q | P $\land$ (P $\implies$ Q) |
+|-------|-------|-------|----------------|----------------------------|
+|   1   | **T** | **T** |       T        |           **T**            |
+|   2   | **T** |   F   |       F        |             F               |
+|   3   |   F   | **T** |       T        |             F               |
+|   4   |   F   |   F   |       T        |             F               |
+
+### Inference by theorem proving
+
+> to apply rules of inference directly to the sentences in the KB to construct a proof of the desired sentence without consulting models.
+
+- Proof: a chain of consequences that leads to the desired goal.
+- KB will be used to draw inferences.
+- Desired sentence is needed to be checked whether it is entailed by the KB.
+- The rules of inference are the approved logical equivalences and rules.
+
+| Aspect | Model Checking | Theorem Proving          |
+| --- | -------------- | ------------------------ |
+| 방식 | 참/거짓으로 실제 계산   | 논리 규칙을 사용해 증명            |
+| 예시 | 진리표            | Modus Ponens, Resolution |
+| 장점 | 단순함            | 복잡한 문장도 처리 가능            |
+| 단점 | 계산 많음          | 규칙 익혀야 함                 |
+
+#### Modus Ponens Rule
+
+$$ \frac{\alpha \implies \beta, \alpha}{\therefore \beta} $$
+
+- whenever any sentences of the form $\alpha \implies \beta$ and $\alpha$ are given, then the sentence $\beta$ can be inferred.
+
+#### Add-elimination Rule
+
+$$ \frac{\alpha \land \beta}{\therefore \alpha} $$
+
+- from a conjunction, one of the conjuncts can be inferred.
+
+### Terms to contradiction and resolution
+
+```bash
+CNF
+┌────────────────────────────────────────────────┐
+│            (P ∨ Q)         ∧    (¬Q ∨ R)       │
+│   ┌──────────────────────┐   ┌───────────────┐ │
+│   │  Clause 1            │   │  Clause 2     │ │
+│   │  (P ∨ Q)             │   │  (¬Q ∨ R)     │ │
+│   │  ┌───────┬───────┐   │   │  ┌──────┬─────┐ │
+│   │  │  P    │   Q   │   │   │  │ ¬Q   │  R  │ │
+│   │  └───────┴───────┘   │   │  └──────┴─────┘ │
+│   └──────────────────────┘   └───────────────┘ │
+└────────────────────────────────────────────────┘
+```
+
+- Literal: an atomic sentence or its negation
+- Complementary literals: a literal and its negation are complementary literals
+- Clause: an expression formed from a collection of finite literals
+  - In most $l_1 \lor l_2 \lor ... \lor l_n$ cases, a clause is a disjunction of finite literals.
+  - written as the symbol $l_i$.
+- Conjunctive Normal Form: a sentence expressed as a conjunction of clauses.
+- Satisfiability: a sentence is satisfiable if it is true in, or satisfied by, some models.
+
+### Propositional satisfiability (SAT) problem
+
+- to determine the satisfiability of sentences in propositional logic.
+- if there exists a model that satisfies a given logical sentence, then the sentence is satisfiable.
+- Satisfiability can be checked by enumerating the possible models until one is found that satisfies the sentence, or by resolving complementary literals until an empty clause is derived.
+- many problems in CS are really SAT problems.
+
+### Resolution rule
+
+#### Unit resolution rule
+
+$$ \frac{(l_1 \lor l_2 \lor ... \lor l_{i-1} \lor l_i \lor l_{i+1} \lor ... \lor l_k,\space m)}{l_1 \lor ... \lor l_{i-1} \lor l_{i+1} \lor ... \lor l_k}$$
+
+- where $l$ is a literal and $l_i$ and $m$ are complementary literals.
+- Unit resolution rule takes a clause which is a disjunction of literals, and a literal and produces a new clause as the resolvent.
+
+#### Full resolution rule
+
+$$ \frac{(l_1 \lor l_2 \lor ... \lor l_{i-1} \lor l_i \lor l_{i+1} \lor ... \lor l_k,\space m_1 \lor m_2 \lor ... \lor m_{j-1} \lor m_j \lor m_{j+1} \lor ... \lor m_n)}{(l_1 \lor ... \lor l_{i-1} \lor l_{i+1} \lor ... \lor l_k \lor m_1 \lor ... \lor m_{j-1} \lor m_{j+1} \lor ... \lor m_n)}$$
+
+- where $l$ is a literal and $l_i$ and $m_j$ are complementary literals.
+- Full resolution rule takes two clauses which are disjuctions of literals and produces a new clause containing all the literals of the two original clauses except for the two complementary literals.
