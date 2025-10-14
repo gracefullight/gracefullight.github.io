@@ -37,6 +37,7 @@ tags:
 | thrust | the main idea, subject, or opinion that is discussed or written about | main idea | 요지, 핵심 |
 | tractability | the quality of being easy to manage or deal with | manageability | 계산 가능성 |
 | resolvent | a clause derived from two clauses containing complementary literals, used in resolution-based theorem proving | derived clause | 해석자, 해결책 |
+| propositionalzation | the process of converting first-order logic statements into propositional logic statements | conversion to propositional logic | 명제화 |
 
 ## Ontology
 

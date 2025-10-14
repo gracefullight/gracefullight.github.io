@@ -225,10 +225,10 @@ $$ \alpha \models \beta$$
 - In order to derive an empty clause, we use resolution which is a process to resolve complementary literals until to find an empty clause.
   1. R1: P (observation)
   2. R2: P $\implies$ Q (knowledge, raining implies ground is wet)
-  - $KB = P \land (P \implies Q)$
-  3. Query sentence: Q
-  4. Inference problem: $KB \models Q$, i.e. from KB=T, get Q=T
-  5. Proof:
+  3. $KB = P \land (P \implies Q)$
+  4. Query sentence: Q
+  5. Inference problem: $KB \models Q$, i.e. from $KB=T$, get $Q=T$
+  6. Proof:
   - Let $(P \land (P \implies Q)) \land \neg Q$ valid
   - Convert $(P \land (P \implies Q)) \land \neg Q$ to CNF
   - Apply implication elimination rule, one has $(P \land (\neg P \lor Q)) \land \neg Q$
@@ -237,3 +237,14 @@ $$ \alpha \models \beta$$
     - $C_3: \neg Q$
   - Apply unit resolution rule to $C_1$ and $C_2$, resolve $P$ and $\neg P$, one has $C_4: Q$
   - Apply unit resolution rule to $C_3$ and $C_4$, resolve $Q$ and $\neg Q$, one has $C_5: ()$
+
+### Inference in FOL
+
+- convert the first-order inference to propositional inference using the ruls for quantifiers.
+  - universal instantiation (UI)
+  - existential instantiation (EI)
+- do inference in propositional logic using the methods about inference in propositional logic.
+- this approach to first-order logic inference via propositionalization is complete, means any entailed sentences can be proved.
+  - in most cases, this approach works
+  - in some cases, it is slow and only useful when the domain is small.
+- **get rid of quantifiers** by instantiating them with specific constants or variables.
