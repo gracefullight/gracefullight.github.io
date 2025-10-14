@@ -146,7 +146,7 @@
 <ul>
 <li>For all x, not P(x) is logically equivalent to "it is not the case that there exists an x such that P(x) is true."</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_GkGg" id="reasoning--inference">Reasoning &amp; Inference<a href="https://gracefullight.dev/2025/10/12/introduction-to-ai-010/#reasoning--inference" class="hash-link" aria-label="Reasoning &amp; Inference에 대한 직접 링크" title="Reasoning &amp; Inference에 대한 직접 링크" translate="no">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_GkGg" id="reasoning">Reasoning<a href="https://gracefullight.dev/2025/10/12/introduction-to-ai-010/#reasoning" class="hash-link" aria-label="Reasoning에 대한 직접 링크" title="Reasoning에 대한 직접 링크" translate="no">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_GkGg" id="deductive-reasoning">Deductive reasoning<a href="https://gracefullight.dev/2025/10/12/introduction-to-ai-010/#deductive-reasoning" class="hash-link" aria-label="Deductive reasoning에 대한 직접 링크" title="Deductive reasoning에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
 <li>a process of reasoning from one or more statements (premises) to reach a logical conclusion.</li>
@@ -157,6 +157,13 @@
 <li>the process of resoning from specific observations to borader generalizations and theories.</li>
 <li>also described as a method where one's experiences and observations are synthesized to cmoe up with a general truth.</li>
 <li>premises and then conclusion</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_GkGg" id="inference">Inference<a href="https://gracefullight.dev/2025/10/12/introduction-to-ai-010/#inference" class="hash-link" aria-label="Inference에 대한 직접 링크" title="Inference에 대한 직접 링크" translate="no">​</a></h2>
+<ul>
+<li>steps in reasoning</li>
+<li>moves from premises to logical consequences</li>
+<li>In AI Context, inference is to derive new logical sentences (as the conclusion) from existing logical sentences (as premises).</li>
+<li>researchers develop automated inference systems to emulate human inference.</li>
 </ul>]]></content:encoded>
             <category>iai</category>
         </item>
