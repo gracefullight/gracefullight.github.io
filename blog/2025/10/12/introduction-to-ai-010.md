@@ -256,4 +256,9 @@ $$ \frac{\forall v \space \alpha}{\text{Subst}(\{v/g\},\alpha)} $$
 - to convert sentences with universal quantifiers to sentences without universal quantifiers.
 - it can infer any sentence obtained by substituting a ground term for the universally quantified variable.
 - $Subst(\{\theta, \alpha\})$ denotes the result of applying the subsitution $\theta$ to the sentence $\alpha$ and $g$ is a ground term or a constant symbol.
-- existential instatiation can be applied only once, and then the existentially quantified sentnece can be discarded.
+- universal instantiation can be applied many times to produce may different consequences.
+- $\forall x Loves(x, Mary)$
+  - $Loves(John, Mary)$
+  - $Loves(Sue, Mary)$
+  - $Loves(Bill, Mary)$
+  - ...
