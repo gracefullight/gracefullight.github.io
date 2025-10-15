@@ -262,3 +262,15 @@ $$ \frac{\forall v \space \alpha}{\text{Subst}(\{v/g\},\alpha)} $$
   - $Loves(Sue, Mary)$
   - $Loves(Bill, Mary)$
   - ...
+
+#### Existential instantiation (EI)
+
+- to convert sentences with existential quantifiers to sentences without existential quantifiers.
+- the quantified variable can be replaced by a single new constant symbol.
+- for any sentence $\alpha$, variable $v$, and constant symbol $k$ not appear elsewhere in the knowldge base, the following rule is sound:
+  $$ \frac{\exists v \space \alpha}{\text{Subst}(\{v/k\},\alpha)} $$
+- $\text{Subst}\{\theta, \alpha\}$ denotes the result of applying the subsitiution $\theta={v/k}$ in the sentence $\alpha$ and $k$ is ground term or a new constant symbol.
+- Existential instantiation can be applied only once, and then the existentially quantified sentence can be discarded.
+- $\exists x Loves(x, Mary)$
+  - $Loves(K, Mary)$
+  - **where $K$ is a new constant symbol** not appear elsewhere in the knowledge base
