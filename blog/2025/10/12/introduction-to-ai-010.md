@@ -163,7 +163,7 @@ $$ \frac{\alpha \implies \beta, \alpha}{\therefore \beta} $$
 
 - whenever any sentences of the form $\alpha \implies \beta$ and $\alpha$ are given, then the sentence $\beta$ can be inferred.
 
-#### Add-elimination Rule
+#### Add-Elimination Rule
 
 $$ \frac{\alpha \land \beta}{\therefore \alpha} $$
 
@@ -230,7 +230,7 @@ $$ \alpha \models \beta$$
   5. Inference problem: $KB \models Q$, i.e. from $KB=T$, get $Q=T$
   6. Proof:
   - Let $(P \land (P \implies Q)) \land \neg Q$ valid
-  - Convert $(P \land (P \implies Q)) \land \neg Q$ to CNF
+  - Convert $(P \land (P \implies Q)) \land \neg Q$ to **CNF**
   - Apply implication elimination rule, one has $(P \land (\neg P \lor Q)) \land \neg Q$
     - $C_1: P$
     - $C_2: \neg P \lor Q$
@@ -274,3 +274,13 @@ $$ \frac{\forall v \space \alpha}{\text{Subst}(\{v/g\},\alpha)} $$
 - $\exists x Loves(x, Mary)$
   - $Loves(K, Mary)$
   - **where $K$ is a new constant symbol** not appear elsewhere in the knowledge base
+
+## CNF, Conjunctive Normal Form
+
+| Step | Rule Name | Description | Example |
+| --- | --- | --- | --- |
+| 1 | 제거 | $\implies$, $\iff$ 없애기   | $P \implies Q$ → $\neg P \lor Q$ |
+| 2  | De Morgan's | $\lnot$ 분배 | $\lnot(P \lor Q) \rightarrow (\lnot P \land \lnot Q)$ |
+| 3  | Double negation | 이중부정 제거 | $\lnot(\lnot P) \rightarrow P$ |
+| 4  | Distribution | $\lor$ over $\land$ 분배 | $(P \lor (Q \land R))$ → $(P \lor Q) \land (P \lor R)$ |
+| 5  | And-Elimination | $\land$ 분리 | $(A \land B) \rightarrow A, B$ 따로 |
