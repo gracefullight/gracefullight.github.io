@@ -55,6 +55,15 @@
 <ul>
 <li class="">Generates subsets (bags) of traning data by sampling from the original training dataset with replacement.</li>
 <li class="">To overcome the complexity of models that overfit the training data.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="random-forest">Random Forest<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#random-forest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Shallow trees have lower variance and higher bias, whereas deep trees have low bias but high variance.<!-- -->
+<ul>
+<li class="">Shallow trees are chosen for sequential ensemble methods</li>
+<li class="">Deep trees are chosen for bagging methods (or parallel ensemble methods).</li>
+</ul>
+</li>
 </ul>]]></content:encoded>
             <category>fda</category>
         </item>
