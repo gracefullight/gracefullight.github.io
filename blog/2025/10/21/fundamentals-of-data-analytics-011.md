@@ -45,6 +45,12 @@ tags:
 - Generates subsets (bags) of traning data by sampling from the original training dataset with replacement.
 - To overcome the complexity of models that overfit the training data.
 
+### Boosting
+
+- fits multiple models sequentially
+- each model in the sequence is fitted **giving more weight to the data points** that were poorly handled by the previous models in the sequence.
+- This process is iterated until the error function does not change, or the maximum limit of the number of estimators is reached.
+
 ### Random Forest
 
 - Shallow trees have lower variance and higher bias, whereas deep trees have low bias but high variance.
@@ -80,3 +86,25 @@ but don't handle large numbers of irrelevant attributes as well as some other me
 | Finance | Assessing high credit-risk customers, detecting fraud, and addressing option pricing problems | Preferred over other algorithms due to its ability to minimize time spent on data management and pre-processing tasks |
 | Healthcare | Gene expression classification, biomarker discovery, and sequence annotation | Helps doctors estimate drug responses to specific medications |
 | E-commerce | Recommendation engines | Used to achieve cross-selling objectives |
+
+### AdaBoost
+
+> **Ada**ptive **Boost**ing
+
+- simplest boosting algorithm, usaully uses decision trees for modelling
+- multiple sequential models are created, each correcting the errors from the previous model.
+
+### GBM
+
+> **G**radient **B**oosting **M**achine
+
+- works on both regression and classification problems.
+- usually, regression trees are used as base models.
+
+### XGBoost
+
+> e**X**treme **G**radient **Boost**ing
+
+- another implementation of gradient boosting algorithm.
+- has proven to be a highly effective machine learning algorithm.
+- extensively used in machine learning competitions due to its speed and performance.
