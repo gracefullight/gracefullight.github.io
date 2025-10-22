@@ -63,7 +63,17 @@
 <li class="">Deep trees are chosen for bagging methods (or parallel ensemble methods).</li>
 </ul>
 </li>
-</ul>]]></content>
+<li class="">a bagging method where deep trees are used and fitted on bootstrap samples, and then combined to produce an output with lower variance.</li>
+<li class="">selects randomly a set of features which are then used to decide the best split at each node of the tree.</li>
+<li class="">can be applied to both regression and classification tasks.</li>
+<li class="">can learn binary features, categorical features and numerical features.</li>
+</ul>
+<ol>
+<li class="">create from the original dataset multiple bootstrap samples.</li>
+<li class="">at each node in the decision tree, a random set of features is considered to decide the most beneficial split.</li>
+<li class="">train a decision tree on each bootstrap sample.</li>
+<li class="">final prediction is computed by averaging the prediction from all decision trees combined.</li>
+</ol>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>
