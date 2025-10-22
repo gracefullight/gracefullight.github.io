@@ -44,3 +44,9 @@ tags:
 
 - Generates subsets (bags) of traning data by sampling from the original training dataset with replacement.
 - To overcome the complexity of models that overfit the training data.
+
+### Random Forest
+
+- Shallow trees have lower variance and higher bias, whereas deep trees have low bias but high variance.
+  - Shallow trees are chosen for sequential ensemble methods
+  - Deep trees are chosen for bagging methods (or parallel ensemble methods).
