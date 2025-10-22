@@ -50,3 +50,12 @@ tags:
 - Shallow trees have lower variance and higher bias, whereas deep trees have low bias but high variance.
   - Shallow trees are chosen for sequential ensemble methods
   - Deep trees are chosen for bagging methods (or parallel ensemble methods).
+- a bagging method where deep trees are used and fitted on bootstrap samples, and then combined to produce an output with lower variance.
+- selects randomly a set of features which are then used to decide the best split at each node of the tree.
+- can be applied to both regression and classification tasks.
+- can learn binary features, categorical features and numerical features.
+
+1. create from the original dataset multiple bootstrap samples.
+2. at each node in the decision tree, a random set of features is considered to decide the most beneficial split.
+3. train a decision tree on each bootstrap sample.
+4. final prediction is computed by averaging the prediction from all decision trees combined.
