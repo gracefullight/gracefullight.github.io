@@ -8,7 +8,7 @@
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[fda +011]]></title>
+        <title type="html"><![CDATA[FDA +011]]></title>
         <id>https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/</id>
         <link href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/"/>
         <updated>2025-10-21T11:11:19.042Z</updated>
@@ -30,6 +30,30 @@
 <li class="">decision trees, neural networks, logistic regressions, etc.</li>
 </ul>
 </li>
+<li class="">Base models are as diverse as possible.</li>
+<li class="">Train each base model to predict as accurately as possible.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="sequential-ensemble-methods">Sequential ensemble methods<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#sequential-ensemble-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Arrange weak learners in a sequence, such that weak learners learn from next learner in the sequence to create better predictive models.</li>
+<li class="">Each model fits the residual of its predecessor.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="parallel-ensemble-methods">Parallel ensemble methods<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#parallel-ensemble-methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">to use different variations of the same dataset, of the smae classifier, and aggregate the results.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="bootstraping">Bootstraping<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#bootstraping" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Sampling technique that creates multiple subsets of datasets from the original dataset.</li>
+<li class="">when inferring results for a population from results found on a collection of smaller random samples of that population.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="bagging">Bagging<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#bagging" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<blockquote>
+<p><strong>B</strong>ootstrap <strong>agg</strong>regat<strong>ing</strong></p>
+</blockquote>
+<ul>
+<li class="">Generates subsets (bags) of traning data by sampling from the original training dataset with replacement.</li>
+<li class="">To overcome the complexity of models that overfit the training data.</li>
 </ul>]]></content>
         <author>
             <name>Gracefullight</name>
