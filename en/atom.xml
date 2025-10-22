@@ -73,7 +73,21 @@
 <li class="">at each node in the decision tree, a random set of features is considered to decide the most beneficial split.</li>
 <li class="">train a decision tree on each bootstrap sample.</li>
 <li class="">final prediction is computed by averaging the prediction from all decision trees combined.</li>
-</ol>]]></content>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="advantages-of-random-forest">Advantages of Random Forest<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#advantages-of-random-forest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<ul>
+<li class="">generally accurate, quick to train</li>
+<li class="">can handle very large datasets</li>
+<li class="">can estimate importance of features</li>
+<li class="">generates an internal unbiased estimate of accuracy, which can use to know when to stop buildling</li>
+<li class="">can handle missing data</li>
+<li class="">can handle datasets with imbalanced classes</li>
+<li class="">can compute proximity between data points</li>
+<li class="">unsupervised for clustering and outlier detection</li>
+</ul>
+<p>but don't handle large numbers of irrelevant attributes as well as some other methods.</p>
+<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="applications-of-random-forest">Applications of Random Forest<a href="https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/#applications-of-random-forest" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<table><thead><tr><th>Industry</th><th>Applications</th><th>Purpose / Advantages</th></tr></thead><tbody><tr><td>Finance</td><td>Assessing high credit-risk customers, detecting fraud, and addressing option pricing problems</td><td>Preferred over other algorithms due to its ability to minimize time spent on data management and pre-processing tasks</td></tr><tr><td>Healthcare</td><td>Gene expression classification, biomarker discovery, and sequence annotation</td><td>Helps doctors estimate drug responses to specific medications</td></tr><tr><td>E-commerce</td><td>Recommendation engines</td><td>Used to achieve cross-selling objectives</td></tr></tbody></table>]]></content>
         <author>
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
