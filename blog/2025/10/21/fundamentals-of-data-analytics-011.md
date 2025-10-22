@@ -59,3 +59,24 @@ tags:
 2. at each node in the decision tree, a random set of features is considered to decide the most beneficial split.
 3. train a decision tree on each bootstrap sample.
 4. final prediction is computed by averaging the prediction from all decision trees combined.
+
+#### Advantages of Random Forest
+
+- generally accurate, quick to train
+- can handle very large datasets
+- can estimate importance of features
+- generates an internal unbiased estimate of accuracy, which can use to know when to stop buildling
+- can handle missing data
+- can handle datasets with imbalanced classes
+- can compute proximity between data points
+- unsupervised for clustering and outlier detection
+
+but don't handle large numbers of irrelevant attributes as well as some other methods.
+
+#### Applications of Random Forest
+
+| Industry | Applications | Purpose / Advantages |
+| --- | --- | --- |
+| Finance | Assessing high credit-risk customers, detecting fraud, and addressing option pricing problems | Preferred over other algorithms due to its ability to minimize time spent on data management and pre-processing tasks |
+| Healthcare | Gene expression classification, biomarker discovery, and sequence annotation | Helps doctors estimate drug responses to specific medications |
+| E-commerce | Recommendation engines | Used to achieve cross-selling objectives |
