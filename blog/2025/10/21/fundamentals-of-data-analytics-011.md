@@ -112,3 +112,8 @@ but don't handle large numbers of irrelevant attributes as well as some other me
 ## Combining predictions
 
 ### Voting
+
+- **Hard voting** selection process uses predicted class labels for majority rule voting.
+- **Soft voting** uses the predicted probabilities given by each base model, and the class label with the maximum sum of its probabilities is selected.
+  - $\frac{1}{N} \sum_{i=1}^{N} P_{i}(c|x)$
+  - where $N$ is the number of base models, and $P_{i}(c|x)$ is the probability predicted by model $i$ for class $c$ given input $x$.
