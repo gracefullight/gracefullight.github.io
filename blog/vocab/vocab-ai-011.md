@@ -38,6 +38,18 @@ tags:
 | tractability | the quality of being easy to manage or deal with | manageability | 계산 가능성 |
 | resolvent | a clause derived from two clauses containing complementary literals, used in resolution-based theorem proving | derived clause | 해석자, 해결책 |
 | propositionalzation | the process of converting first-order logic statements into propositional logic statements | conversion to propositional logic | 명제화 |
+| transduction | the process of converting one form of data into another | data conversion | 변환, 전환 |
+| transductive learning | a type of machine learning where the model makes predictions on specific test cases based on the training data, rather than generalizing to unseen data | case-based learning | 전이 학습 |
+| representation | the way in which information or knowledge is structured and organized | depiction | 표현, 나타냄 |
+| dispense | the act of distributing or providing something | distribution | 분배, 제공 |
+| factor | to break down a problem into smaller, more manageable parts | breakdown | 분해하다 |
+| inherently | in a way that is a permanent, essential, or characteristic attribute | intrinsically | 본질적으로, 내재적으로 |
+| preclude | to prevent something from happening or to make it impossible | prevent | 배제하다, 막다 |
+| integral | necessary to make a whole complete; essential | essential | 필수적인, 완전한 |
+| eschew | to deliberately avoid or abstain from something | avoid | 피하다, 삼가다 |
+| logarithmically | in a way that relates to logarithms or logarithmic functions | in terms of logarithms | 로그적으로 |
+| counteract | to act in opposition to something to reduce its effect | oppose | 대응하다, 반작용하다 |
+| point-wise | applying a function or operation to each individual element separately | individually | 점별로, 개별적으로 |
 
 ## Ontology
 
