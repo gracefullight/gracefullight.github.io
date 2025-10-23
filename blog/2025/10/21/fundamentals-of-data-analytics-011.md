@@ -108,3 +108,7 @@ but don't handle large numbers of irrelevant attributes as well as some other me
 - another implementation of gradient boosting algorithm.
 - has proven to be a highly effective machine learning algorithm.
 - extensively used in machine learning competitions due to its speed and performance.
+
+## Combining predictions
+
+### Voting
