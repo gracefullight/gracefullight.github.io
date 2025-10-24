@@ -50,6 +50,7 @@ tags:
 | logarithmically | in a way that relates to logarithms or logarithmic functions | in terms of logarithms | 로그적으로 |
 | counteract | to act in opposition to something to reduce its effect | oppose | 대응하다, 반작용하다 |
 | point-wise | applying a function or operation to each individual element separately | individually | 점별로, 개별적으로 |
+| tedious | too long, slow, or dull; tiresome or monotonous | boring | 지루한, 따분한 |
 
 ## Ontology
 
