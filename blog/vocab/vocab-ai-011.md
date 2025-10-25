@@ -53,6 +53,12 @@ tags:
 | tedious | too long, slow, or dull; tiresome or monotonous | boring | 지루한, 따분한 |
 | multiplicative | relating to multiplication or the process of multiplying | relating to multiplication | 곱셈의, 증가하는 |
 | leftward | moving or directed to the left | to the left | 왼쪽으로 |
+| recurrence | the act of returning or happening again | return | 재발, 반복 |
+| sinusoid | a mathematical curve that describes a smooth, periodic oscillation | wave-like curve | 사인 곡선 |
+| desideratum | something that is desired or wanted | desired thing | 바람직한 것, 필요조건 |
+| contiguous | sharing a common border; touching | adjacent | 인접한, 접촉하는 |
+| dilated | made larger or expanded | expanded | 확장된, 팽창된 |
+| exhibit | to show or display something publicly | display | 전시하다, 나타내다 |
 
 ## Ontology
 
