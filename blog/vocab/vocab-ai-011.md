@@ -60,6 +60,8 @@ tags:
 | dilated | made larger or expanded | expanded | 확장된, 팽창된 |
 | exhibit | to show or display something publicly | display | 전시하다, 나타내다 |
 | regime | a system or planned way of doing things, especially one imposed from above | system | 체제, 제도 |
+| perplexity | a state of confusion or uncertainty | confusion | 당혹, 혼란 |
+| reliance | dependence on or trust in someone or something | dependence | 의존, 신뢰 |
 
 ## Ontology
 
