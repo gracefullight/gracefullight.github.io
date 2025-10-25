@@ -59,6 +59,7 @@ tags:
 | contiguous | sharing a common border; touching | adjacent | 인접한, 접촉하는 |
 | dilated | made larger or expanded | expanded | 확장된, 팽창된 |
 | exhibit | to show or display something publicly | display | 전시하다, 나타내다 |
+| regime | a system or planned way of doing things, especially one imposed from above | system | 체제, 제도 |
 
 ## Ontology
 
