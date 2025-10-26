@@ -134,7 +134,6 @@ $$
 &  \quad P(A | E, B) \cdot P(E, B) \\
 &    \quad \quad P(E | B) \cdot P(B) \\
 &  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
-&  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
 &  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
 &    \quad i.e.\space P(E|B) = P(E) \text{ (Earthquake is independent of Burglary)} \\
 &  = P(M|A) \cdot P(J|A) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
