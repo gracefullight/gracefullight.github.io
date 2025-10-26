@@ -128,18 +128,19 @@ graph TD
 $$P(B, E, A, J, M) = \prod_{i}^{5} P(X_i | \text{parents}(X_i)) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 
 $$
-\begin{aligned}
-P(M, J, A, E, B) = P(M | J, A, E, B) \cdot P(J, A, E, B) \\
-  P(J | A, E, B) \cdot P(A, E, B) \\
-  \quad P(A | E, B) \cdot P(E, B) \\
-    \quad \quad P(E | B) \cdot P(B) \\
-  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
-  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
-    \quad i.e.\space P(E|B) = P(E) \text{ (Earthquake is independent of Burglary)} \\
-  = P(M|A) \cdot P(J|A) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
-    \quad i.e.\space P(J|A,E,B) = P(J|A) \text{ (JohnCalls depends only on Alarm)} \\
-    \quad i.e.\space P(M|J,A,E,B) = P(M|A) \text{ (MaryCalls depends only on Alarm)}
-\end{aligned}
+\begin{align*}
+& P(M, J, A, E, B) = P(M | J, A, E, B) \cdot P(J, A, E, B) \\
+&  P(J | A, E, B) \cdot P(A, E, B) \\
+&  \quad P(A | E, B) \cdot P(E, B) \\
+&    \quad \quad P(E | B) \cdot P(B) \\
+&  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
+&  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
+&  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
+&    \quad i.e.\space P(E|B) = P(E) \text{ (Earthquake is independent of Burglary)} \\
+&  = P(M|A) \cdot P(J|A) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
+&    \quad i.e.\space P(J|A,E,B) = P(J|A) \text{ (JohnCalls depends only on Alarm)} \\
+&    \quad i.e.\space P(M|J,A,E,B) = P(M|A) \text{ (MaryCalls depends only on Alarm)}
+\end{align*}
 $$
 
 $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
