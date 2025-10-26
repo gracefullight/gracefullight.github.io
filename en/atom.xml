@@ -2,11 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-10-21T11:11:19.042Z</updated>
+    <updated>2025-10-25T10:50:14.442Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[IAI +011]]></title>
+        <id>https://gracefullight.dev/en/2025/10/25/introduction-to-ai-011/</id>
+        <link href="https://gracefullight.dev/en/2025/10/25/introduction-to-ai-011/"/>
+        <updated>2025-10-25T10:50:14.442Z</updated>
+        <summary type="html"><![CDATA[IAI +011]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="uncertain-domain">Uncertain Domain<a href="https://gracefullight.dev/en/2025/10/25/introduction-to-ai-011/#uncertain-domain" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">Agent may need to handle uncertainty</li>
+<li class="">Environment is partially observable<!-- -->
+<ul>
+<li class="">Fully observable: An agent knows where it is.</li>
+<li class="">The drone never knows its exact position, only an estimated one.</li>
+<li class="">The true user intent is not directly observable, only noisy speech data.</li>
+<li class="">It cannot see the whole environment or detect humans perfectly.</li>
+<li class="">The true health state (disease present or not) is hidden.</li>
+</ul>
+</li>
+<li class="">Environment is non-deterministic<!-- -->
+<ul>
+<li class="">AI Trading Agent<!-- -->
+<ul>
+<li class="">even if the agent takes the same action, the outcome can vary dramatically.</li>
+<li class="">from market prices changes unpredictably due to external events (news, other traders, economic data).</li>
+<li class="">network latency, competing traders' behavior are stochasic and independent, random fluctuations can affect the outcome.</li>
+<li class="">buy action could lead to profit, loss, or no change depending on uncontrollable external factors.</li>
+</ul>
+</li>
+<li class="">AI Helpdesk Chatbot<!-- -->
+<ul>
+<li class="">even when the chatbot executes the same action, it sends queries to multiple backend systems, the result may differ each time.</li>
+<li class="">network latency or failures, backend load, concurrent requests, and external dependencies can lead to different response times or outcomes.</li>
+<li class="">same command doesn't guarantee the same outcome.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Autonomous Driving<!-- -->
+<ul>
+<li class="">Partial Observability<!-- -->
+<ul>
+<li class="">Sensors cannot detect everything, blind spots, weather effects, occluded vehicles.</li>
+</ul>
+</li>
+<li class="">Non-Determinism<!-- -->
+<ul>
+<li class="">Even if the car signals a turn and starts moving, other drivers might brake suddenly, pedestrians might cross unexpectedly, or traffic lights might malfunction.</li>
+<li class="">depending on random external events.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Medical<!-- -->
+<ul>
+<li class="">Partial Observability<!-- -->
+<ul>
+<li class="">The patient's internal health state is not directly visible.</li>
+<li class="">tests can be inaccurate or incomplete: false positives/negatives, missing data</li>
+</ul>
+</li>
+<li class="">Non-Determinism<!-- -->
+<ul>
+<li class="">The same treatment can have different effects on different patients due to genetics, lifestyle, or random biological responses.</li>
+<li class="">A drug may succeed, fail, or cause side effects.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="iai" term="iai"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FDA +011]]></title>
         <id>https://gracefullight.dev/en/2025/10/21/fundamentals-of-data-analytics-011/</id>
@@ -1414,118 +1489,5 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="iai" term="iai"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FDA +009]]></title>
-        <id>https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/</id>
-        <link href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/"/>
-        <updated>2025-09-21T07:18:52.228Z</updated>
-        <summary type="html"><![CDATA[FDA +009]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="linear-separability">Linear Separability<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#linear-separability" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">the data is linearly separable if<!-- -->
-<ul>
-<li class="">it can be separated by a point on a single dimension line of data points</li>
-<li class="">by a line on a two-dimensional representation of data points</li>
-<li class="">by a plane (a two-dimensional surface) in a three-dimensional representation of the data points</li>
-</ul>
-</li>
-<li class="">If it is non-linearly separable, look at other options for classification.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="hyperplane">Hyperplane<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#hyperplane" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li class="">the conceptual divide between data</li>
-<li class=""><strong>Weight vector</strong>: represented and generated in weight space.</li>
-<li class="">Choosing the hyperplane<!-- -->
-<ul>
-<li class="">Minimum distance between samples</li>
-<li class="">Least-squares method</li>
-<li class="">Gradient Descent</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="artificial-neural-networks-ann">Artificial Neural Networks, ANN<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#artificial-neural-networks-ann" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">Strength: for high dimensionality problems, the complex relations between variables</li>
-<li class="">Weaknesses: theoretically complex, computationally intensive, needs large data sets, complicated to implement</li>
-<li class="">Kinds of ANN<!-- -->
-<ul>
-<li class="">Perceptrons, Multilayer Perceptrons</li>
-<li class="">Deep learning neural networks</li>
-<li class="">Kohonen networks</li>
-<li class="">Convolutional neural networks</li>
-<li class="">Radial Basis Functions</li>
-<li class="">Recurrent neural networks</li>
-<li class="">Support Vector Machines</li>
-<li class="">Competitive learning</li>
-<li class="">Boltzmann machines</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="multilayer-perceptrons-mlp">Multilayer Perceptrons, MLP<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#multilayer-perceptrons-mlp" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">Challenges<!-- -->
-<ul>
-<li class="">Decide on the network topology.<!-- -->
-<ul>
-<li class="">how many hidden layers are needed</li>
-<li class="">how many neurons in each of the hidden layers</li>
-</ul>
-</li>
-<li class="">Find values for the weights which make the network produce the correct output values for the given input values.</li>
-</ul>
-</li>
-<li class="">Neural networks only accept numeric data.<!-- -->
-<ul>
-<li class="">need to convert the categorical into numeric.</li>
-<li class="">One-Hot encoding, Thermometer encoding.</li>
-</ul>
-</li>
-<li class="">high values may need to be scaled into a similar range as neural networks<!-- -->
-<ul>
-<li class="">need to do a log transform to pull the values into a target range.</li>
-<li class=""><code>[-1, +1]</code> or <code>[0, 1]</code></li>
-</ul>
-</li>
-<li class="">input neurons should be as small as possible.<!-- -->
-<ul>
-<li class="">adding neurons <code>-&gt;</code> more parameters and weights <code>-&gt;</code> amplify any bias. (overtrain the network)</li>
-</ul>
-</li>
-<li class="">one categorical attribute may have many attribute values<!-- -->
-<ul>
-<li class="">each adding a parameter <code>-&gt;</code> adding risk of overtraining</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="resilient-propagation-rprop">Resilient Propagation, RProp<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#resilient-propagation-rprop" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">directly adjust the weight step based on the local gradient information</li>
-<li class="">introduces a weight update value <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span> for each weight <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span></li>
-<li class="">updates it based on the sign of the partial derivative of the error with respect to the weight</li>
-<li class="">update value <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span>
-<ul>
-<li class="">if sign changes (i.e. jumped over local minima) <code>-&gt;</code> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span> slightly decreased.</li>
-<li class="">if sign remains the same <code>-&gt;</code> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span> slightly increased.</li>
-</ul>
-</li>
-<li class="">weight <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span>
-<ul>
-<li class="">if derivative is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mi>v</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">+ve</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em"></span><span class="mord">+</span><span class="mord mathnormal" style="margin-right:0.03588em">v</span><span class="mord mathnormal">e</span></span></span></span> (i.e. error increasing) <code>-&gt;</code> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span> decreased by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span></li>
-<li class="">if the derivative is negative (i.e. error decreasing) <code>-&gt;</code> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">w_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span> increased by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">u_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em">ij</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span></span></span></span></li>
-<li class="">if the derivative changes sign, the last weight update is reverted. (backtracks the last weight update)</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="knime">KNIME<a href="https://gracefullight.dev/en/2025/09/21/fundamentals-of-data-analytics-009/#knime" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">RProp MLP Learner + MultiLayerPerceptron Predictor</li>
-<li class="">MultilayerPerceptron + Weka Predictor (back propagation with momentum)</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fda" term="fda"/>
     </entry>
 </feed>
