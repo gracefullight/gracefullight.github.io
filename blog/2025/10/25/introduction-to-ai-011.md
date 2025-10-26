@@ -40,6 +40,51 @@ tags:
     - The same treatment can have different effects on different patients due to genetics, lifestyle, or random biological responses.
     - A drug may succeed, fail, or cause side effects.
 
+## Bayes' Theorem
+
+$$ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} $$
+
+- $P(A|B)$: Posterior probability, the probability of event A given taht B has occurred.
+- $P(B|A)$: Likelihood, the probability of event B occurring given that A is true.
+- $P(A)$: Prior probability, the initial probability of A being true before considering B.
+- $P(B)$: Evidence, the total probability of B occurring.
+- examples
+  - 1% of people have a certain disease (prior probability). $P(Disease) = 0.01$
+  - the test for the disease is 99% accurate (likelihood).
+    - $P(PositiveTest|Disease) = 0.99$
+    - $P(NegativeTest|NoDisease) = 0.99$
+    - so $P(PositiveTest|NoDisease) = 0.01$
+  - $P(PositiveTest) = P(PositiveTest|Disease) \cdot P(Disease) + P(PositiveTest|NoDisease) \cdot P(NoDisease)$
+    - $= 0.99 \cdot 0.01 + 0.01 \cdot 0.99 = 0.0198$
+  - $P(Disease|PositiveTest) = \frac{P(PositiveTest|Disease) \cdot P(Disease)}{P(PositiveTest)}$
+    - $= \frac{0.99 \cdot 0.01}{0.0198} \approx 0.5$
+- the conditional probability $P(effect|cause)$ quantifies the relationship in **the causal direction** from cause to effect.
+- but $P(cause|effect)$ is often what we really want to know, describing the relationship in **the diagnostic direction** from effect to cause.
+  - In medical dignosis, the doctor knows $P(symptoms|disease)$ from medical studies, and want to derive a $P(disease|symptoms)$ for a particular patient.
+  - $$P(disease|symptoms) = \frac{P(symptoms|disease) \cdot P(disease)}{P(symptoms)}$$
+
+### General Form of Bayes' Rule
+
+$$P(Y|X) = \alpha \cdot P(X|Y) \cdot P(Y)$$
+
+- $\alpha$ is the normalization constant needed to make the entries in $P(Y|X)$ sum to 1 for each value of X.
+- conditional independency
+  - two variables X and Y are conditionally independent given a third variable Z if the value of X provides no information about Y once Z is known.
+  - $P(X, Y|Z) = P(X|Z) \cdot P(Y|Z)$
+
+### Constructing Bayesian Network
+
+- constructing a Bayesian network in which resulting joint probability distributions are a good representation of the agent's knowledge.
+
+1. $P(x_1, ..., x_n) = \prod_{i=1}^{n} P(x_i | \text{parents}(x_i))$
+2. rewrite the entries in the joint probability distribution in terms of conditional probabilities using the product rule.
+
+- $P(x_1 \land ... \land x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} \land ... \land x_{1})$
+
+3. repeat step 2 until all variables are included.
+
+- $P(x_1, ..., x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} | x_{n-2} \land ... \land x_{1}) \cdots P(x_2 | x_1) \cdot P(x_1)$
+
 ## Knowledge Representation
 
 - The agent's knowledge can at best provide only a degree of belief in the relevant logical sentences.
@@ -80,23 +125,21 @@ graph TD
     A --> M
 ```
 
-## Bayes' Theorem
+$$P(B, E, A, J, M) = \prod_{i}^{5} P(X_i | \text{parents}(X_i)) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 
-$$ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} $$
+$$
+\begin{aligned}
+P(M, J, A, E, B) = P(M | J, A, E, B) \cdot P(J, A, E, B) \\
+  P(J | A, E, B) \cdot P(A, E, B) \\
+  \quad P(A | E, B) \cdot P(E, B) \\
+    \quad \quad P(E | B) \cdot P(B) \\
+  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E|B) \cdot P(B) \\
+  = P(M|J,A,E,B) \cdot P(J|A,E,B) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
+    \quad i.e.\space P(E|B) = P(E) \text{ (Earthquake is independent of Burglary)} \\
+  = P(M|A) \cdot P(J|A) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
+    \quad i.e.\space P(J|A,E,B) = P(J|A) \text{ (JohnCalls depends only on Alarm)} \\
+    \quad i.e.\space P(M|J,A,E,B) = P(M|A) \text{ (MaryCalls depends only on Alarm)}
+\end{aligned}
+$$
 
-- $P(A|B)$: Posterior probability, the probability of event A given taht B has occurred.
-- $P(B|A)$: Likelihood, the probability of event B occurring given that A is true.
-- $P(A)$: Prior probability, the initial probability of A being true before considering B.
-- $P(B)$: Evidence, the total probability of B occurring.
-- examples
-  - 1% of people have a certain disease (prior probability). $P(Disease) = 0.01$
-  - the test for the disease is 99% accurate (likelihood).
-    - $P(PositiveTest|Disease) = 0.99$
-    - $P(NegativeTest|NoDisease) = 0.99$
-    - so $P(PositiveTest|NoDisease) = 0.01$
-  - $P(PositiveTest) = P(PositiveTest|Disease) \cdot P(Disease) + P(PositiveTest|NoDisease) \cdot P(NoDisease)$
-  - $= 0.99 \cdot 0.01 + 0.01 \cdot 0.99 = 0.0198$
-- the conditional probability $P(effect|cause)$ quantifies the relationship in **the causal direction** from cause to effect.
-- but $P(cause|effect)$ is often what we really want to know, describing the relationship in **the diagnostic direction** from effect to cause.
-  - In medical dignosis, the doctor knows $P(symptoms|disease)$ from medical studies, and want to derive a $P(disease|symptoms)$ for a particular patient.
-  - $$P(disease|symptoms) = \frac{P(symptoms|disease) \cdot P(disease)}{P(symptoms)}$$
+$$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
