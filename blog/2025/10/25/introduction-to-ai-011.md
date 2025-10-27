@@ -143,3 +143,32 @@ $$
 $$
 
 $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
+
+## Probabilistic reasnoing
+
+- to explain how to use network models to reason under uncertainty.
+- **Exact inference**: calculate the exact posterior probabilities.
+- **Approximate inference**: Stochastic approximation techniques such as likelihood weighting and Markov Chain Monte Carlo
+  - can give reasonable estimates of the true posterior probabilities in a network
+  - can cope with much larger networks than exact inference algorithms.
+- **Static worlds**: Each random variable has a single fixed value.
+- **Dynamic worlds**: view the world as a series of snapshots, or time slices.
+  - Each of snapshots contains a set of random variables, some observed and some hidden.
+  - The values of these variables can change over time.
+  - With the assumption of state sequences are Markov, the future is independent of the past given the present.
+
+### Inference in Bayesian Networks
+
+- Computing the posterior probability distribution of a set of query variables, given some observed events, called some assignment of values to a set of evidence variables.
+- $X$: query variable(s)
+  - is it raining?
+- $E$: the set of evidence variables with observed values $E_{1}, ..., E_{m}$
+  - weather report says it is cloudy.
+  - weather report says there is high humidity.
+- $e$: a particular observed event.
+  - $E_{1} = \text{cloudy}$
+  - $E_{2} = \text{high humidity}$
+- $Y$: the non-evidence, non-query variables.
+  - the other variables in the network.
+
+$$ X = \{X\} \cup E \cup Y $$
