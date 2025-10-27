@@ -170,5 +170,18 @@ $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
   - $E_{2} = \text{high humidity}$
 - $Y$: the non-evidence, non-query variables.
   - the other variables in the network.
+- $X = \{X\} \cup E \cup Y$
+  - the complete set of variables in the network.
+- $P(X|e)$: the posterior probability distribution of the query variable(s) given the evidence.
+- $P(X|e) = \alpha \sum_{y} P(X, e, y)$
 
-$$ X = \{X\} \cup E \cup Y $$
+#### Exact inference in Bayesian Networks
+
+- One exact inference method is called by inference by **enumeration**.
+- Observed some event $A = true$ and $B = true$, want to compute the posterior probability distribution $P(C|A, B)$.
+  - Use the full conditional probability table
+  - Use the Bayesian Network
+- It calculates all the required probability components in each branch in the evaluation tree, and this results in repetitive calculations.
+- To avoid this, we can use **variable elimination algorithm** and **clustering algorithms**.
+- Calculation of probability distribution for a query variable is complexity exponential.
+- Enumeration method can become intractable in large, multiple connected networks. `->` use approximate inference methods.
