@@ -185,3 +185,38 @@ $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 - To avoid this, we can use **variable elimination algorithm** and **clustering algorithms**.
 - Calculation of probability distribution for a query variable is complexity exponential.
 - Enumeration method can become intractable in large, multiple connected networks. `->` use approximate inference methods.
+
+For any Bayesian network with given nodes, $X = \{X_1, X_2, ..., X_n\}$, the joint probability distribution is given by:
+$$P(X) = P(X_1 \land X_2 \land \ldots \land X_n) = \prod_{i=1}^{n} P(X_i | \text{parents}(X_i))$$
+
+Using the Bayesian network, we can compute the conditional probability.
+$$ P(B | event) = \alpha \sum_{e}\sum_{a} P(B, E, A, j, m)$$
+
+- $i=1, P(X_1 | \text{parents}(X_1)) = P(B)$
+- $i=2, P(X_2 | \text{parents}(X_2)) = P(E)$
+- $i=3, P(X_3 | \text{parents}(X_3)) = P(A|B,E)$
+- $i=4, P(X_4 | \text{parents}(X_4)) = P(j|A)$
+- $i=5, P(X_5 | \text{parents}(X_5)) = P(m|A)$
+- $P(B, E, A, j, m) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(j|A) \cdot P(m|A)$
+
+$$
+\begin{align*}
+& P(B | event) = \alpha \sum_{e}\sum_{a} P(B, E, A, j, m) \\
+& = \alpha \sum_{e}\sum_{a} P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(j|A) \cdot P(m|A) \\
+& = \alpha \cdot P(B) \sum_{e} P(E) \sum_{a} P(A|B,E) \cdot P(j|A) \cdot P(m|A)
+\end{align*}
+$$
+
+Berglary example calculation:
+
+$$
+\begin{align*}
+& P(b | event) = \alpha P(b) \sum_{e} P(E) \sum_{a} P(A|b,E) \cdot P(j|A) \cdot P(m|A) \\
+& = \alpha P(b) \bigg[ P(e) \sum_{a} P(A|b,e) \cdot P(j|A) \cdot P(m|A) + P(\neg e) \sum_{a} P(A|b,\neg e) \cdot P(j|A) \cdot P(m|A) \bigg] \\
+& \quad \sum_{a} P(A,b,e) \cdot P(j|A) \cdot P(m|A) \\
+& \quad = P(a,b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a,b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \\
+& \quad \sum_{a} P(A|b,\neg e) \cdot P(j|A) \cdot P(m|A) \\
+& \quad = P(a,b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a,b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \\
+& = \alpha P(b) \bigg[ P(e) \big( P(a|b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) + P(\neg e) \big( P(a|b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \bigg] \\
+\end{align*}
+$$
