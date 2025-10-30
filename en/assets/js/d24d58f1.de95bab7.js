@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgracefullight_github_io=self.webpackChunkgracefullight_github_io||[]).push([["46314"],{81480:function(e){e.exports=JSON.parse('{"metadata":{"permalink":"/en/page/82","page":82,"postsPerPage":10,"totalPages":87,"totalCount":863,"previousPage":"/en/page/81","nextPage":"/en/page/83","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
