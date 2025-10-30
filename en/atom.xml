@@ -19,7 +19,18 @@
 <li class="">Hierarchical approach: built on classification and uses hierarchies as the structures for knowledge representation, presented in a graphical format.<!-- -->
 <ul>
 <li class="">Semantic networks: nodes represent concepts, and edges represent relationships between concepts.</li>
-<li class="">Ontologies: classes, subclasses, and properties to represent knowledge in a domain.</li>
+<li class="">Ontologies<!-- -->
+<ul>
+<li class="">A formal specification of concepts, relationships, and constraints within a domain that enables machines to reason automatically.</li>
+<li class="">It defines classes (concepts), subclasses (hierarchical relations), and properties (attributes or relations) that describe how entities interact.</li>
+<li class="">Unlike simple taxonomies, ontologies also include logical axioms and constraints that specify allowable relationships and permit inference and consistency checking through automated reasoning.</li>
+<li class="">Classes: Main concepts or categories (e.g. Person, Animal).</li>
+<li class="">Subclasses: Subcategories (e.g. Dog ⊂ Animal).</li>
+<li class="">Properties: Attributes (e.g. hasPart, hasColor).</li>
+<li class="">Relations: Connection rules (e.g. MemberOf, SubsetOf).</li>
+<li class="">Constraints: Logical constraints (e.g. disjointness, transitivity) that enable inference.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>]]></content>
