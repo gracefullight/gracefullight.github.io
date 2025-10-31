@@ -154,9 +154,9 @@ graph LR
 
 ![Roulette Wheel Selection](./roulette-wheel-selection.png)
 
-- ⚫ random = 0.07 → falls in P4 (0–0.10)
-- 🔺 random = 0.37 → falls in P3 (0.10–0.50)
-- ⬟ random = 0.82 → falls in P2 (0.50–0.90)
+- ⚫ random = 0.07 → falls in P4 `[0, 0.10)`
+- 🔺 random = 0.37 → falls in P3 `[0.10, 0.50)`
+- ⬟ random = 0.82 → falls in P2 `[0.50, 0.90)`
 
 ### Applications of GA
 
