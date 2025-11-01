@@ -7,7 +7,7 @@ tags:
   - iai
 ---
 
-## Knnowledge representation
+## Knowledge representation
 
 - Intelligent agents need knowledge about the world in order to reach good decisions.
 - Declarative knowledge is represented in a form of sentences in a knowledge representation language and stored in a knowledge base.

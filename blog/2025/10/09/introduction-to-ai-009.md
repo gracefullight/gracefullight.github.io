@@ -1,7 +1,7 @@
 ---
-title: IAI +010
+title: IAI +009
 date: 2025-10-09T14:19:13.025+11:00
-description: Introduction to AI +010
+description: Introduction to AI +009
 authors: me
 tags:
   - iai
