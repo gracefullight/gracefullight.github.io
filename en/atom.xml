@@ -542,7 +542,7 @@
         <link href="https://gracefullight.dev/en/2025/10/12/introduction-to-ai-010/"/>
         <updated>2025-10-12T12:34:42.267Z</updated>
         <summary type="html"><![CDATA[Introduction to AI +010]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="knnowledge-representation">Knnowledge representation<a href="https://gracefullight.dev/en/2025/10/12/introduction-to-ai-010/#knnowledge-representation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="knowledge-representation">Knowledge representation<a href="https://gracefullight.dev/en/2025/10/12/introduction-to-ai-010/#knowledge-representation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
 <ul>
 <li class="">Intelligent agents need knowledge about the world in order to reach good decisions.</li>
 <li class="">Declarative knowledge is represented in a form of sentences in a knowledge representation language and stored in a knowledge base.</li>
@@ -833,11 +833,11 @@
         <category label="vocab" term="vocab"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[IAI +010]]></title>
+        <title type="html"><![CDATA[IAI +009]]></title>
         <id>https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/</id>
         <link href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/"/>
         <updated>2025-10-09T03:19:13.025Z</updated>
-        <summary type="html"><![CDATA[Introduction to AI +010]]></summary>
+        <summary type="html"><![CDATA[Introduction to AI +009]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="generative-ai">Generative AI<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#generative-ai" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
 <ul>
 <li class="">Gen AI refers to a category of AI models designed to generte new content, synt99hetic data that resembles a given dataset.</li>
