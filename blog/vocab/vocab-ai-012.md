@@ -12,3 +12,5 @@ tags:
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
 | plurality | the state of being plural or multiple | multiplicity | 복수성, 다수 |
+| premise | a statement or proposition from which another is inferred or follows as a conclusion | assumption | 전제 |
+| taxonomy | the classification of something, especially organisms | classification | 분류 |
