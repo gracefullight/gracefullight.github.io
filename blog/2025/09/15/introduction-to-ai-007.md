@@ -144,9 +144,15 @@ $$ z_i = \sum_{j=1}^{l} k_j \cdot x_{j + (i-1)s} $$
 
 $$R_{L} = R_{L-1} + (k_{L} - 1) \cdot \prod_{i=1}^{L-1} s_i$$
 
-- **\(R_L\)**: receptive field size at the \(L\)-th layer  
-- **\(k_L\)**: kernel size at the \(L\)-th layer  
-- **\(s_i\)**: stride at the \(i\)-th layer  
+- $R_L$: receptive field size at the $L-th$ layer
+- $k_L$: kernel size at the $L-th$ layer
+- $s_i$: stride at the $i-th$ layer
+
+| Layer | Kernel k | Stride s | Calculation | Result RF |
+| ----- | ---- | ------- | ----------- | ----- |
+| Conv1 | 3    | 1       | 1 + (3-1)*1 | 3     |
+| Pool1 | 2    | 2       | 3 + (2-1)*1 | 4     |
+| Conv2 | 3    | 1       | 4 + (3-1)*2 | **8** |
 
 ### Pooling
 
