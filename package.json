@@ -85,7 +85,7 @@
     "vitest": "^4.0"
   },
   "engines": {
-    "node": "22",
+    "node": "24",
     "pnpm": "10"
   },
   "name": "gracefullight.github.io",
@@ -112,6 +112,6 @@
   },
   "version": "2.0.0",
   "volta": {
-    "node": "22.20.0"
+    "node": "24.11.0"
   }
 }
