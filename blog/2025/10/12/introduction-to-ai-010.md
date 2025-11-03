@@ -137,9 +137,9 @@ $$KB \models \gamma$$
 | Model |   P   |   Q   | P $\implies$ Q | P $\land$ (P $\implies$ Q) |
 |-------|-------|-------|----------------|----------------------------|
 |   1   | **T** | **T** |       T        |           **T**            |
-|   2   | **T** |   F   |       F        |             F               |
-|   3   |   F   | **T** |       T        |             F               |
-|   4   |   F   |   F   |       T        |             F               |
+|   2   | **T** |   F   |       F        |             F              |
+|   3   |   F   | **T** |       T        |             F              |
+|   4   |   F   |   F   |       T        |             F              |
 
 ### Inference by theorem proving
 
@@ -279,8 +279,8 @@ $$ \frac{\forall v \space \alpha}{\text{Subst}(\{v/g\},\alpha)} $$
 
 | Step | Rule Name | Description | Example |
 | --- | --- | --- | --- |
-| 1 | 제거 | $\implies$, $\iff$ 없애기   | $P \implies Q$ → $\neg P \lor Q$ |
-| 2  | De Morgan's | $\lnot$ 분배 | $\lnot(P \lor Q) \rightarrow (\lnot P \land \lnot Q)$ |
-| 3  | Double negation | 이중부정 제거 | $\lnot(\lnot P) \rightarrow P$ |
-| 4  | Distribution | $\lor$ over $\land$ 분배 | $(P \lor (Q \land R))$ → $(P \lor Q) \land (P \lor R)$ |
-| 5  | And-Elimination | $\land$ 분리 | $(A \land B) \rightarrow A, B$ 따로 |
+| 1 | 제거 | $\implies$, $\iff$ 없애기 | $P \implies Q$ → $\neg P \lor Q$ |
+| 2 | De Morgan's | $\lnot$ 분배 | $\lnot(P \lor Q) \rightarrow (\lnot P \land \lnot Q)$ |
+| 3 | Double negation | 이중부정 제거 | $\lnot(\lnot P) \rightarrow P$ |
+| 4 | Distribution | $\lor$ over $\land$ 분배 | $(P \lor (Q \land R))$ → $(P \lor Q) \land (P \lor R)$ |
+| 5 | And-Elimination | $\land$ 분리 | $(A \land B) \rightarrow A, B$ 따로 |
