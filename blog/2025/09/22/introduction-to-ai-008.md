@@ -100,6 +100,27 @@ BoW2 = {He: 0, likes: 1, to: 1, watch: 1, movies: 0, Mary: 1, also: 1, football:
 - **TF-IDF score**
   - $TFIDF(q_i, d_j, D) = TF(q_i, d_j) \cdot IDF(q_i, D)$
 
+#### Examples of TF-IDF
+
+- Document 1: "John likes to watch movies."
+- Document 2: "Mary likes movies too."
+- Document 3: "John also likes football."
+
+| Step | Term | Document | Number of times term `t` appears in document `d`​ | Total number of terms in document `d` | `TF(t, d)` | Total number of documents | Number of documents containing the term `t` | `IDF(t)` | `IDF(t) (base 10)` |`TF-IDF(t,d)` | `TF-IDF(t,d)` (base 10) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | t=likes | d1 | 1 | 5 | 0.2 | 3 | 3 | 0 | 0 | 0 | 0 |
+| | t=likes | d2 | 1 | 4 | 0.25 |  |  |  |  | 0 | 0 |
+| | t=likes | d3 | 1 | 4 | 0.25 |  |  |  |  | 0 | 0 |
+| 2 | t=watch | d1 | 1 | 5 | 0.2 | 3 | 1 | 1.098612289 | 0.477121255 | 0.219722458 | 0.095424251 |
+| | t=watch | d2 | 0 | 4 | 0 |  |  |  |  | 0 | 0 |
+| | t=watch | d3 | 0 | 4 | 0 |  |  |  |  | 0 | 0 |
+| 3 | t=mary | d1 | 0 | 5 | 0 | 3 | 1 | 1.098612289 | 0.477121255 | 0 | 0 |
+| | t=mary | d2 | 1 | 4 | 0.25 | | |  |  | 0.274653072 | 0.119280314 |
+| | t=mary | d3 | 0 | 4 | 0 | | |  |  | 0 | 0 |
+| 4 | t=football | d1 | 0 | 5 | 0 | 3 | 1 | 1.098612289 | 0.477121255 | 0 | 0 |
+| | t=football | d2 | 0 | 4 | 0 | | |  |  | 0 | 0 |
+| | t=football | d3 | 1 | 4 | 0.25 | | |  |  | 0.274653072 | 0.119280314 |
+
 ### Naive Bayes
 
 - naive refers to a very strong simplifying assumption about the features
@@ -187,6 +208,14 @@ P("This article is on NLP")
   * P("on" | "is") // j = 4
   * P("NLP" | "on") // j = 5
 ```
+
+| Step (j) | Word (W_j) | Bigram | Trigram |
+| --- | --- | --- | --- |
+| 1 | This | $(P(\text{This}))$ | $(P(\text{This}))$ |
+| 2 | article | $(P(\text{article} \mid \text{This}))$ | $(P(\text{article} \mid \text{This}))$ |
+| 3 | is | $(P(\text{is} \mid \text{article}))$ | $(P(\text{is} \mid \text{This, article}))$ |
+| 4 | on | $(P(\text{on} \mid \text{is}))$ | $(P(\text{on} \mid \text{article, is}))$ |
+| 5 | NLP | $(P(\text{NLP} \mid \text{on}))$ | $(P(\text{NLP} \mid \text{is, on}))$ |
 
 ## Transformer
 
