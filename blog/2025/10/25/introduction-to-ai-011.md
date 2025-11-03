@@ -214,6 +214,7 @@ $$
 & \quad = P(a,b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a,b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \\
 & \quad \sum_{a} P(A|b,\neg e) \cdot P(j|A) \cdot P(m|A) \\
 & \quad = P(a,b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a,b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \\
-& = \alpha P(b) \bigg[ P(e) \big( P(a|b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) + P(\neg e) \big( P(a|b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \bigg] \\
+& = \alpha P(b) \bigg[ P(e) \big( P(a|b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \\
+& \quad \quad + P(\neg e) \big( P(a|b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \bigg] \\
 \end{align*}
 $$
