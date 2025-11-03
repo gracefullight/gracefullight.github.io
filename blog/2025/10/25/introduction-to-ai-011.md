@@ -75,15 +75,11 @@ $$P(Y|X) = \alpha \cdot P(X|Y) \cdot P(Y)$$
 ### Constructing Bayesian Network
 
 - constructing a Bayesian network in which resulting joint probability distributions are a good representation of the agent's knowledge.
-
-1. $P(x_1, ..., x_n) = \prod_{i=1}^{n} P(x_i | \text{parents}(x_i))$
-2. rewrite the entries in the joint probability distribution in terms of conditional probabilities using the product rule.
-
-- $P(x_1 \land ... \land x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} \land ... \land x_{1})$
-
-3. repeat step 2 until all variables are included.
-
-- $P(x_1, ..., x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} | x_{n-2} \land ... \land x_{1}) \cdots P(x_2 | x_1) \cdot P(x_1)$
+- 1. $P(x_1, ..., x_n) = \prod_{i=1}^{n} P(x_i | \text{parents}(x_i))$
+- 2. rewrite the entries in the joint probability distribution in terms of conditional probabilities using the product rule.
+  - $P(x_1 \land ... \land x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} \land ... \land x_{1})$
+- 3. repeat step 2 until all variables are included.
+  - $P(x_1, ..., x_n) = P(x_n | x_{n-1} \land ... \land x_{1}) \cdot P(x_{n-1} | x_{n-2} \land ... \land x_{1}) \cdots P(x_2 | x_1) \cdot P(x_1)$
 
 ## Knowledge Representation
 
@@ -189,7 +185,8 @@ $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 For any Bayesian network with given nodes, $X = \{X_1, X_2, ..., X_n\}$, the joint probability distribution is given by:
 $$P(X) = P(X_1 \land X_2 \land \ldots \land X_n) = \prod_{i=1}^{n} P(X_i | \text{parents}(X_i))$$
 
-Using the Bayesian network, we can compute the conditional probability.
+**Using the Bayesian network, we can compute the conditional probability.**
+
 $$ P(B | event) = \alpha \sum_{e}\sum_{a} P(B, E, A, j, m)$$
 
 - $i=1, P(X_1 | \text{parents}(X_1)) = P(B)$
@@ -207,7 +204,7 @@ $$
 \end{align*}
 $$
 
-Berglary example calculation:
+**Berglary example calculation:**
 
 $$
 \begin{align*}
