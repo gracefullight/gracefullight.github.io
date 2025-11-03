@@ -106,7 +106,7 @@ BoW2 = {He: 0, likes: 1, to: 1, watch: 1, movies: 0, Mary: 1, also: 1, football:
 - Document 2: "Mary likes movies too."
 - Document 3: "John also likes football."
 
-| Step | Term | Document | Number of times term `t` appears in document `d`​ | Total number of terms in document `d` | `TF(t, d)` | Total number of documents | Number of documents containing the term `t` | `IDF(t)` | `IDF(t) (base 10)` |`TF-IDF(t,d)` | `TF-IDF(t,d)` (base 10) |
+| Step | Term | Document | Number of times term `t`<br/>appears in document `d`​ | Total number of terms<br/>in document `d` | `TF(t, d)` | Total number of documents | Number of documents<br/>containing the term `t` | `IDF(t)` | `IDF(t) (base 10)` |`TF-IDF(t,d)` | `TF-IDF(t,d)` (base 10) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | t=likes | d1 | 1 | 5 | 0.2 | 3 | 3 | 0 | 0 | 0 | 0 |
 | | t=likes | d2 | 1 | 4 | 0.25 |  |  |  |  | 0 | 0 |
