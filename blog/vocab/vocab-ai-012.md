@@ -17,6 +17,8 @@ tags:
 | PII scrubbed | the process of removing personally identifiable information from data sets | data anonymization | 개인 식별 정보 제거 |
 | Air-gapped Environment | a secure computer network that is physically isolated from unsecured networks | isolated network | 격리된 네트워크 |
 | attenuation | the reduction of the force, effect, or value of something | reduction | 감쇠 |
-| RSSI | Received Signal Strength Indicator; a measure of the power present in a received radio signal | signal strength measure | 수신 신호 세기 지표 |
 | CQI | Channel Quality Indicator; a measure of the quality of a communication channel | channel quality measure | 채널 품질 지표 |
-| IBC | In-Band Coverage; a method of transmitting data within the same frequency band as the primary signal | in-band data transmission | 대역 내 커버리지 |
+| IBC | In-Building Coverage; the ability of a wireless communication system to provide coverage within buildings | indoor coverage | 실내 커버리지 |
+| RSRP | Reference Signal Received Power; a measure of the power level of a reference signal in a wireless communication system | reference signal power measure | 기준 신호 수신 전력 |
+| RSRQ | Reference Signal Received Quality; a measure of the quality of a reference signal in a wireless communication system | reference signal quality measure | 기준 신호 수신 품질 |
+| RSSI | Received Signal Strength Indicator; a measure of the power present in a received radio signal | signal strength measure | 수신 신호 세기 지표 |
