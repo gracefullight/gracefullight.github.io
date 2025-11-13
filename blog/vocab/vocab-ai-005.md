@@ -50,7 +50,7 @@ tags:
 | differentiable | capable of being differentiated | able to be derived | 미분 가능한 |
 | derivation | the process of obtaining something from a source or origin | extraction | 유도, 파생 |
 | parametric | relating to or expressed in terms of parameters | variable | 모수의 |
-| extrapolation | the process of estimating unknown values by extending or projecting known information | estimation | 외삽 |
-| interpolation | the process of estimating unknown values that fall within the range of known values | estimation | 내삽 |
+| extrapolation | the process of estimating values beyond the known data points | estimation beyond known data | 외삽 |
+| interpolation | the process of estimating values within the range of known data points | estimation within known data | 보간, 내삽 |
 | plateaued | having reached a state of little or no change after a period of activity or progress | stabilized | 정체된 |
 | compelling | evoking interest, attention, or admiration in a powerfully irresistible way | captivating | 매력적인 |

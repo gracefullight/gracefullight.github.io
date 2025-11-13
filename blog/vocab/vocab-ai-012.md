@@ -16,3 +16,7 @@ tags:
 | taxonomy | the classification of something, especially organisms | classification | 분류 |
 | PII scrubbed | the process of removing personally identifiable information from data sets | data anonymization | 개인 식별 정보 제거 |
 | Air-gapped Environment | a secure computer network that is physically isolated from unsecured networks | isolated network | 격리된 네트워크 |
+| attenuation | the reduction of the force, effect, or value of something | reduction | 감쇠 |
+| RSSI | Received Signal Strength Indicator; a measure of the power present in a received radio signal | signal strength measure | 수신 신호 세기 지표 |
+| CQI | Channel Quality Indicator; a measure of the quality of a communication channel | channel quality measure | 채널 품질 지표 |
+| IBC | In-Band Coverage; a method of transmitting data within the same frequency band as the primary signal | in-band data transmission | 대역 내 커버리지 |
