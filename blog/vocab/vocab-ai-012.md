@@ -28,3 +28,8 @@ tags:
 | comprise | to consist of or be made up of | to include | 포함하다, 구성하다 |
 | attenuation coefficient | a measure of how much a material reduces the intensity of a signal passing through it | signal reduction measure | 감쇠 계수 |
 | calibration | the process of adjusting and standardizing the accuracy of a measuring instrument or system | adjustment for accuracy | 보정, 교정 |
+| obstruction | something that blocks or hinders progress or movement | blockage | 장애물 |
+| annotate | to add notes or comments to a text or diagram | to comment on | 주석을 달다 |
+| equidistantly | at equal distances | uniformly spaced | 등거리로 |
+| intricate | very complicated or detailed | complex | 복잡한, 정교한 |
+| proximity | nearness in space, time, or relationship | closeness | 근접 |
