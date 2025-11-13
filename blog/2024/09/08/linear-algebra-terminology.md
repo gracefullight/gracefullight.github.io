@@ -4,7 +4,7 @@ date: 2024-09-08T21:20:23.920+09:00
 description: Linear Algebra Terminology in Korean and English
 authors: me
 tags:
-  - math 
+  - math
 ---
 
 ## Linear Algebra

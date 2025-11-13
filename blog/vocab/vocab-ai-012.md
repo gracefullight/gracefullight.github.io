@@ -22,3 +22,9 @@ tags:
 | RSRP | Reference Signal Received Power; a measure of the power level of a reference signal in a wireless communication system | reference signal power measure | 기준 신호 수신 전력 |
 | RSRQ | Reference Signal Received Quality; a measure of the quality of a reference signal in a wireless communication system | reference signal quality measure | 기준 신호 수신 품질 |
 | RSSI | Received Signal Strength Indicator; a measure of the power present in a received radio signal | signal strength measure | 수신 신호 세기 지표 |
+| encompass | to surround or include comprehensively | to include | 포함하다, 둘러싸다 |
+| accommodate | to provide space or make adjustments for something | to make room for | 수용하다, 적응하다 |
+| acquisition | the process of getting something | obtaining | 획득, 습득 |
+| comprise | to consist of or be made up of | to include | 포함하다, 구성하다 |
+| attenuation coefficient | a measure of how much a material reduces the intensity of a signal passing through it | signal reduction measure | 감쇠 계수 |
+| calibration | the process of adjusting and standardizing the accuracy of a measuring instrument or system | adjustment for accuracy | 보정, 교정 |
