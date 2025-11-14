@@ -43,3 +43,4 @@ tags:
 | applicability | the quality of being relevant or suitable | relevance | 적용 가능성 |
 | adaptability | the ability to adjust to new conditions | flexibility | 적응성 |
 | interfere | to obstruct or disrupt | to hinder | 방해하다 |
+| degradation | the process of declining in quality or condition | deterioration | 저하, 악화 |

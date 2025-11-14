@@ -107,6 +107,33 @@ UploadSimulated --> UploadFloorplan --> AnnotatePath --> ConvertTo3D --> Predict
 - Refined deep learning architectures, and validation across varied building materials and layouts
 - Enhance the framework’s scalability and practical utility.
 
+## Spider GAN
+
+> Sample
+
+```json
+{
+  "nodes": [
+    { "id": 0, "name": "Drone",   "type": "source",   "features": [1, 0, 0, 0, 0.0] },
+    { "id": 1, "name": "Room1",   "type": "room",     "features": [0, 1, 0, 0, -70.0] },
+    { "id": 2, "name": "Room2",   "type": "room",     "features": [0, 1, 0, 0, -75.0] },
+    { "id": 3, "name": "Room3",   "type": "room",     "features": [0, 1, 0, 0, -80.0] },
+    { "id": 4, "name": "Corridor","type": "corridor", "features": [0, 0, 1, 0, -72.0] },
+    { "id": 5, "name": "Wall_R1_R2","type": "wall",  "features": [0, 0, 0, 1, 0.0] },
+    { "id": 6, "name": "Wall_R2_R3","type": "wall",  "features": [0, 0, 0, 1, 0.0] }
+  ],
+
+  "edges": [
+    { "source": 0, "target": 1, "attenuation_db": 5.0  },
+    { "source": 1, "target": 5, "attenuation_db": 8.0  },
+    { "source": 5, "target": 2, "attenuation_db": 8.0  },
+    { "source": 2, "target": 6, "attenuation_db": 10.0 },
+    { "source": 6, "target": 3, "attenuation_db": 10.0 },
+    { "source": 2, "target": 4, "attenuation_db": 3.0  }
+  ]
+}
+```
+
 ## Ref
 
 - Hason Rudd, D., Sanin, C., En, K. M., Gao, X., Islam, M. R., Hasan, M., Wang, X., Huo, A., & Xu, G. (2025). Location-Aware Deep Neural Network for Predicting Indoor 5G RSSI and CQI Using Drone-Based External RF Sensing. Procedia Computer Science, 270, 4765–4775. `https://doi.org/10.1016/j.procs.2025.09.602`
