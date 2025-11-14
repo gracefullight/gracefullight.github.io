@@ -38,3 +38,7 @@ tags:
 | account for sth | to explain or justify something | to explain | ~을 설명하다 |
 | calibrate | to adjust or standardize a measuring instrument or system | to adjust for accuracy | 보정하다, 교정하다 |
 | extrude | to force or push something out | to expel | 밀어내다, 추출하다 |
+| affirm | to state or assert positively | to confirm | 확언하다, 단언하다 |
+| substantially | to a great extent or degree | significantly | 상당히, 크게 |
+| applicability | the quality of being relevant or suitable | relevance | 적용 가능성 |
+| adaptability | the ability to adjust to new conditions | flexibility | 적응성 |

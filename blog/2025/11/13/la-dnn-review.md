@@ -99,6 +99,14 @@ PredictCoverage[Predict 5G Coverage]
 UploadSimulated --> UploadFloorplan --> AnnotatePath --> ConvertTo3D --> PredictCoverage --> |Repeat for each Level| UploadFloorplan
 ```
 
+## Limitations
+
+- Building structural details are unavailable or drone operations are restricted.
+- Highly irregular floor plans or buildings constructed with unique materials not extensively represented in the training data.
+- Real-time data integration
+- Refined deep learning architectures, and validation across varied building materials and layouts
+- Enhance the framework’s scalability and practical utility.
+
 ## Ref
 
 - Hason Rudd, D., Sanin, C., En, K. M., Gao, X., Islam, M. R., Hasan, M., Wang, X., Huo, A., & Xu, G. (2025). Location-Aware Deep Neural Network for Predicting Indoor 5G RSSI and CQI Using Drone-Based External RF Sensing. Procedia Computer Science, 270, 4765–4775. `https://doi.org/10.1016/j.procs.2025.09.602`
