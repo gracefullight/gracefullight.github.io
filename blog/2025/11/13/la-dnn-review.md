@@ -85,6 +85,20 @@ Heatmap3D --> FinalOutput[Indoor RSSI CQI Predictions and 3D Visualizations]
 3. Enhance the contrast of wall lines using Canny edge detection.
 4. Employ Hough Transform to detect and map wall lines.
 
+## 3D Visualization
+
+```mermaid
+graph LR
+
+UploadSimulated[Upload Simulated In-Building Dataset]
+UploadFloorplan[Upload Floorplan]
+AnnotatePath[Annotate Path on Floorplan]
+ConvertTo3D[Convert Floorplan to 3D Render]
+PredictCoverage[Predict 5G Coverage]
+
+UploadSimulated --> UploadFloorplan --> AnnotatePath --> ConvertTo3D --> PredictCoverage --> |Repeat for each Level| UploadFloorplan
+```
+
 ## Ref
 
 - Hason Rudd, D., Sanin, C., En, K. M., Gao, X., Islam, M. R., Hasan, M., Wang, X., Huo, A., & Xu, G. (2025). Location-Aware Deep Neural Network for Predicting Indoor 5G RSSI and CQI Using Drone-Based External RF Sensing. Procedia Computer Science, 270, 4765–4775. `https://doi.org/10.1016/j.procs.2025.09.602`

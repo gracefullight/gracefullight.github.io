@@ -36,3 +36,5 @@ tags:
 | induce | to cause something to happen or exist | to bring about | 유도하다, 초래하다 |
 | delineate | to describe or mark the edge of something | to outline | 윤곽을 그리다, 묘사하다 |
 | account for sth | to explain or justify something | to explain | ~을 설명하다 |
+| calibrate | to adjust or standardize a measuring instrument or system | to adjust for accuracy | 보정하다, 교정하다 |
+| extrude | to force or push something out | to expel | 밀어내다, 추출하다 |
