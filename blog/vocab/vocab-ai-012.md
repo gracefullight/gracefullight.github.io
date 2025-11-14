@@ -42,3 +42,4 @@ tags:
 | substantially | to a great extent or degree | significantly | 상당히, 크게 |
 | applicability | the quality of being relevant or suitable | relevance | 적용 가능성 |
 | adaptability | the ability to adjust to new conditions | flexibility | 적응성 |
+| interfere | to obstruct or disrupt | to hinder | 방해하다 |
