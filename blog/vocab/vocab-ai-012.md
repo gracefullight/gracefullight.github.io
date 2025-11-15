@@ -44,3 +44,5 @@ tags:
 | adaptability | the ability to adjust to new conditions | flexibility | 적응성 |
 | interfere | to obstruct or disrupt | to hinder | 방해하다 |
 | degradation | the process of declining in quality or condition | deterioration | 저하, 악화 |
+| counterargument | an argument made to oppose another argument | opposing argument | 반론 |
+| walk sb through sth | to slowly and carefully explain something to someone or show someone how to do something | to explain step-by-step | ~에게 ~을 차근차근 설명하다 |
