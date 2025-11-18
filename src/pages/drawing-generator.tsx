@@ -24,6 +24,9 @@ const DEFAULT_COLOR = "#F58D16" as const;
 const TARGET_WIDTH = 256 as const;
 const TARGET_HEIGHT = 96 as const;
 
+// Types
+type Point2D = { x: number; y: number };
+
 // Form default values
 const DEFAULT_FORM_VALUES = {
   authId: "-1379962171",
@@ -64,17 +67,11 @@ export default function DrawingGeneratorPage() {
   } | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   // kept in ref for move calculations
-  const [cropPos, setCropPos] = useState<{ x: number; y: number }>({
-    x: 0,
-    y: 0,
-  });
+  const [cropPos, setCropPos] = useState<Point2D>({ x: 0, y: 0 });
   const isDraggingRef = useRef(false);
-  const dragOffsetRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
-  const cropPosRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
-  const cropInitRef = useRef<boolean>(false);
+  const dragOffsetRef = useRef<Point2D>({ x: 0, y: 0 });
+  const cropPosRef = useRef<Point2D>({ x: 0, y: 0 });
   const loadedImageRef = useRef<HTMLImageElement | null>(null);
-  const lastUrlRef = useRef<string | null>(null);
-  const containerRectRef = useRef<DOMRect | null>(null);
   const [customName, setCustomName] = useState<string>(
     DEFAULT_FORM_VALUES.customName,
   );
@@ -207,32 +204,34 @@ export default function DrawingGeneratorPage() {
   const displaySize = _imgSize
     ? { h: _imgSize.height, w: _imgSize.width }
     : null;
+  const displayW = displaySize?.w;
+  const displayH = displaySize?.h;
 
   const needsCrop =
     !!imgNaturalSize &&
     !(imgNaturalSize.w === TARGET_WIDTH && imgNaturalSize.h === TARGET_HEIGHT);
+  const imgNaturalW = imgNaturalSize?.w;
+  const imgNaturalH = imgNaturalSize?.h;
 
   // Initialize crop position centered when sizes known
   useEffect(() => {
     if (!needsCrop) return;
-    if (!displaySize) return;
-    if (cropInitRef.current) return;
-    const scale = imgNaturalSize ? displaySize.w / imgNaturalSize.w : 1;
+    if (!displayW) return;
+    if (!displayH) return;
+    if (!imgNaturalW) return;
+    if (!imgNaturalH) return;
+
+    const scale = displayW / imgNaturalW;
     const cropW = TARGET_WIDTH * scale;
     const cropH = TARGET_HEIGHT * scale;
     const pos = {
-      x: Math.max(0, (displaySize.w - cropW) / 2),
-      y: Math.max(0, (displaySize.h - cropH) / 2),
+      x: Math.max(0, (displayW - cropW) / 2),
+      y: Math.max(0, (displayH - cropH) / 2),
     };
-    // Avoid update loops by only setting when position actually changes
-    const dx = Math.abs((cropPosRef.current?.x ?? -1) - pos.x);
-    const dy = Math.abs((cropPosRef.current?.y ?? -1) - pos.y);
-    if (dx > 0.5 || dy > 0.5) {
-      cropPosRef.current = pos;
-      setCropPos(pos);
-      cropInitRef.current = true;
-    }
-  }, [needsCrop, displaySize, imgNaturalSize]);
+
+    cropPosRef.current = pos;
+    setCropPos(pos);
+  }, [needsCrop, displayW, displayH, imgNaturalW, imgNaturalH]);
 
   // Keep ref in sync with state for move calculations
   useEffect(() => {
@@ -310,9 +309,6 @@ export default function DrawingGeneratorPage() {
         const arrayBuffer = await file.arrayBuffer();
         const blob = new Blob([arrayBuffer], { type: "image/png" });
         const url = URL.createObjectURL(blob);
-        // Revoke previous URL if exists
-        if (lastUrlRef.current) URL.revokeObjectURL(lastUrlRef.current);
-        lastUrlRef.current = url;
 
         const img = new Image();
         img.src = url;
@@ -322,14 +318,12 @@ export default function DrawingGeneratorPage() {
               `이미지의 최소 크기는 ${TARGET_WIDTH}x${TARGET_HEIGHT} 입니다. 더 큰 이미지를 선택하세요.`,
             );
             URL.revokeObjectURL(url);
-            lastUrlRef.current = null;
             setPreviewSrc(null);
             setImgNaturalSize(null);
             loadedImageRef.current = null;
             return;
           }
           loadedImageRef.current = img;
-          cropInitRef.current = false;
           setImgNaturalSize({ h: img.height, w: img.width });
           setPreviewSrc(url);
           setIsProcessed(false);
@@ -343,7 +337,6 @@ export default function DrawingGeneratorPage() {
         img.onerror = () => {
           alert("이미지 로드에 실패했습니다.");
           URL.revokeObjectURL(url);
-          lastUrlRef.current = null;
           setPreviewSrc(null);
         };
       } catch (err) {
@@ -359,9 +352,9 @@ export default function DrawingGeneratorPage() {
 
   useEffect(() => {
     return () => {
-      if (lastUrlRef.current) URL.revokeObjectURL(lastUrlRef.current);
+      if (previewSrc) URL.revokeObjectURL(previewSrc);
     };
-  }, []);
+  }, [previewSrc]);
 
   const saveCanvasAsPNG = useMemoizedFn(() => {
     const canvas = canvasRef.current;
@@ -433,10 +426,9 @@ export default function DrawingGeneratorPage() {
     e.preventDefault();
     if (!displaySize) return;
     if (!imgNaturalSize) return;
-    const rect = (
-      previewWrapRef.current as HTMLDivElement
-    ).getBoundingClientRect();
-    containerRectRef.current = rect;
+    if (!previewWrapRef.current) return;
+
+    const rect = previewWrapRef.current.getBoundingClientRect();
     const startX = e.clientX - rect.left;
     const startY = e.clientY - rect.top;
     const offset = {
@@ -453,10 +445,9 @@ export default function DrawingGeneratorPage() {
       e.preventDefault();
       if (!displaySize) return;
       if (!imgNaturalSize) return;
-      const rect = (
-        previewWrapRef.current as HTMLDivElement
-      ).getBoundingClientRect();
-      containerRectRef.current = rect;
+      if (!previewWrapRef.current) return;
+
+      const rect = previewWrapRef.current.getBoundingClientRect();
       const startX = e.clientX - rect.left;
       const startY = e.clientY - rect.top;
       const offset = {
@@ -474,8 +465,9 @@ export default function DrawingGeneratorPage() {
     if (!isDraggingRef.current) return;
     if (!displaySize) return;
     if (!imgNaturalSize) return;
-    const rect = containerRectRef.current;
-    if (!rect) return;
+    if (!previewWrapRef.current) return;
+
+    const rect = previewWrapRef.current.getBoundingClientRect();
     const scale = displaySize.w / imgNaturalSize.w;
     const cropW = TARGET_WIDTH * scale;
     const cropH = TARGET_HEIGHT * scale;
@@ -514,8 +506,9 @@ export default function DrawingGeneratorPage() {
     if (!isDraggingRef.current) return;
     if (!displaySize) return;
     if (!imgNaturalSize) return;
-    const rect = containerRectRef.current;
-    if (!rect) return;
+    if (!previewWrapRef.current) return;
+
+    const rect = previewWrapRef.current.getBoundingClientRect();
     const scale = displaySize.w / imgNaturalSize.w;
     const cropW = TARGET_WIDTH * scale;
     const cropH = TARGET_HEIGHT * scale;
@@ -829,7 +822,7 @@ export default function DrawingGeneratorPage() {
                           style={{
                             all: "unset",
                             background: "transparent",
-                            border: "2px solid #F58D16",
+                            border: `2px solid ${DEFAULT_COLOR}`,
                             boxShadow: "0 0 0 100vmax rgba(0,0,0,0.35)",
                             cursor: isDragging ? "grabbing" : "grab",
                             height: `${(displaySize.w / imgNaturalSize.w) * TARGET_HEIGHT}px`,
