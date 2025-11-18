@@ -1,25 +1,16 @@
 import { Icon } from "@iconify/react";
-import { useQuery } from "@tanstack/react-query";
+import { useDictionaryQuery } from "@site/src/hooks/use-dictionary-query";
 import Layout from "@theme/Layout";
 import { useLocalStorageState } from "ahooks";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { z } from "zod";
 
-export type Phonetic = { text?: string; audio?: string };
-export type Definition = {
-  definition: string;
-  example?: string;
-  synonyms?: string[];
-  antonyms?: string[];
-};
-export type Meaning = { partOfSpeech: string; definitions: Definition[] };
-export type DictResult = {
-  word: string;
-  phonetic?: string;
-  phonetics?: Phonetic[];
-  origin?: string;
-  meanings?: Meaning[];
-  error?: boolean;
-} | null;
+// Zod schema for search input validation
+const searchInputSchema = z
+  .string()
+  .trim()
+  .min(2, "검색어는 최소 2글자 이상 입력해주세요.")
+  .regex(/^[A-Za-z\s-]*$/, "알파벳, 대시(-), 공백만 허용합니다.");
 
 export default function DictionaryPage() {
   const [term, setTerm] = useState("");
@@ -30,55 +21,43 @@ export default function DictionaryPage() {
       defaultValue: [],
     },
   );
-  const queryResult = useQuery<DictResult, Error>({
-    enabled: lastSearch.length >= 2,
-    queryFn: async () => {
-      const res = await fetch(
-        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lastSearch)}`,
-      );
-      if (!res.ok) throw new Error("검색 결과가 없습니다.");
-      const data: unknown = await res.json();
-      if (
-        Array.isArray(data) &&
-        data.length > 0 &&
-        typeof data[0] === "object" &&
-        data[0] !== null &&
-        "word" in data[0]
-      ) {
-        return data[0] as DictResult;
-      }
-      throw new Error("검색 결과가 없습니다.");
-    },
-    queryKey: ["dictionary", lastSearch],
-    retry: false,
-  });
+  const queryResult = useDictionaryQuery(lastSearch);
 
   const search = (rawQuery: string) => {
-    const trimmedQuery = rawQuery.trim();
-    if (trimmedQuery.length < 2) {
-      alert("검색어는 최소 2글자 이상 입력해주세요.");
+    const parseResult = searchInputSchema.safeParse(rawQuery);
+    if (!parseResult.success) {
+      const firstError = parseResult.error.issues[0];
+      alert(firstError?.message ?? "입력 형식이 올바르지 않습니다.");
       return;
     }
-    if (!/^[A-Za-z\s-]*$/.test(trimmedQuery)) {
-      alert("알파벳, 대시(-), 공백만 허용합니다.");
-      return;
-    }
+
+    const validQuery = parseResult.data;
     const updatedSearches = [
-      trimmedQuery,
-      ...(recentSearches?.filter((t) => t !== trimmedQuery) ?? []),
+      validQuery,
+      ...(recentSearches?.filter((t) => t !== validQuery) ?? []),
     ].slice(0, 5);
 
-    setLastSearch(trimmedQuery);
+    setLastSearch(validQuery);
     setRecentSearches(updatedSearches);
   };
 
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const playAudio = (url: string) => {
-    const audio = new Audio(url.startsWith("//") ? `https:${url}` : url);
-    audio.play();
+    const src = url.startsWith("//") ? `https:${url}` : url;
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current.src = src;
+    } else {
+      audioRef.current = new Audio(src);
+    }
+    void audioRef.current.play();
   };
 
   const dictResult = queryResult.data;
   const loading = queryResult.isFetching;
+  const hasQuery = lastSearch.length > 0;
+  const showEmpty = queryResult.isSuccess && hasQuery && !dictResult;
 
   return (
     <Layout>
@@ -98,7 +77,7 @@ export default function DictionaryPage() {
             pattern="[A-Za-z\s-]*"
             placeholder="검색어를 입력하세요"
             style={{
-              border: "1px solid #f49f3f",
+              border: "1px solid var(--ifm-color-primary)",
               borderRadius: "0.25rem",
               flexGrow: 1,
               padding: "0.5rem 1rem",
@@ -110,7 +89,7 @@ export default function DictionaryPage() {
           <button
             disabled={loading}
             style={{
-              background: "#f49f3f",
+              background: "var(--ifm-color-primary)",
               border: 0,
               borderRadius: "0.25rem",
               color: "white",
@@ -137,9 +116,9 @@ export default function DictionaryPage() {
               }}
               style={{
                 background: "white",
-                border: "1px solid #f28913",
+                border: "1px solid var(--ifm-color-primary-darker)",
                 borderRadius: "0.25rem",
-                color: "#f28913",
+                color: "var(--ifm-color-primary-darker)",
                 cursor: "pointer",
                 font: "inherit",
                 margin: "0.25rem",
@@ -163,8 +142,8 @@ export default function DictionaryPage() {
           {dictResult && !queryResult.isError && (
             <div
               style={{
-                background: "#fff8f0",
-                border: "1px solid #f49f3f",
+                background: "var(--ifm-background-surface-color)",
+                border: "1px solid var(--ifm-color-primary)",
                 borderRadius: "0.5rem",
                 boxShadow: "0 2px 8px rgba(244,159,63,0.08)",
                 marginBottom: "1.5rem",
@@ -188,7 +167,7 @@ export default function DictionaryPage() {
                     key={p.audio || p.text || `phonetic-${idx}`}
                     style={{
                       alignItems: "center",
-                      color: "#f49f3f",
+                      color: "var(--ifm-color-primary)",
                       display: "inline-flex",
                       fontSize: "1.1rem",
                       gap: "0.25rem",
@@ -209,7 +188,7 @@ export default function DictionaryPage() {
                         type="button"
                       >
                         <Icon
-                          color="#f49f3f"
+                          color="var(--ifm-color-primary)"
                           height={20}
                           icon="lucide:volume-2"
                           width={20}
@@ -237,7 +216,7 @@ export default function DictionaryPage() {
                 >
                   <div
                     style={{
-                      color: "#f28913",
+                      color: "var(--ifm-color-primary-darker)",
                       fontWeight: 600,
                       marginBottom: "0.3rem",
                     }}
@@ -248,7 +227,7 @@ export default function DictionaryPage() {
                     <div
                       key={d.definition || `def-${didx}`}
                       style={{
-                        borderLeft: "2px solid #f49f3f",
+                        borderLeft: "2px solid var(--ifm-color-primary)",
                         marginBottom: "0.5rem",
                         paddingLeft: "0.5rem",
                       }}
@@ -272,10 +251,21 @@ export default function DictionaryPage() {
               ))}
             </div>
           )}
+          {showEmpty && (
+            <output
+              aria-live="polite"
+              style={{ color: "#888", marginBottom: "1rem" }}
+            >
+              검색 결과가 없습니다.
+            </output>
+          )}
           {queryResult.isError && (
             <div
               role="alert"
-              style={{ color: "#f28913", marginBottom: "1rem" }}
+              style={{
+                color: "var(--ifm-color-primary-darker)",
+                marginBottom: "1rem",
+              }}
             >
               {queryResult.error?.message ?? "검색 결과가 없습니다."}
             </div>

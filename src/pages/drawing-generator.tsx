@@ -3,7 +3,6 @@ import type { ChangeEvent } from "react";
 
 import {
   addMetadataChunks,
-  calculateColorDistance,
   downloadImage,
   removeTEXtChunks,
   validateImageSize,
@@ -13,15 +12,96 @@ import { useMemoizedFn } from "ahooks";
 import { DateTime } from "luxon";
 import { kmeans } from "ml-kmeans";
 import { useEffect, useId, useRef, useState } from "react";
+import { z } from "zod";
 
-// Theme colors for the drawing generator
-const THEME = {
-  background: "#242526", // Dark gray
-  defaultColor: "#F58D16", // Default drawing color
-  primary: "#f49f3f", // Orange
-  primaryDark: "#f28913", // Dark orange
-  textMuted: "#7f8c8d", // Gray
-} as const;
+const DEFAULT_COLOR = "#F58D16" as const;
+
+// Helpers
+function parseHexToColor(hex: string): Color {
+  return {
+    b: Number.parseInt(hex.slice(5, 7), 16),
+    g: Number.parseInt(hex.slice(3, 5), 16),
+    r: Number.parseInt(hex.slice(1, 3), 16),
+  };
+}
+
+function buildColorMapFromImageData(imageData: ImageData): Map<string, number> {
+  const { data } = imageData;
+  const colorMap = new Map<string, number>();
+  for (let i = 0; i < data.length; i += 4) {
+    const key = `${data[i]},${data[i + 1]},${data[i + 2]}`;
+    colorMap.set(key, (colorMap.get(key) || 0) + 1);
+  }
+  return colorMap;
+}
+
+function getUniqueColorsFromMap(colorMap: Map<string, number>): number[][] {
+  return Array.from(colorMap.keys()).map((key) => {
+    const [r, g, b] = key.split(",").map(Number);
+    return [r, g, b];
+  });
+}
+
+function tryFastPathIfFewColors(
+  ctx: CanvasRenderingContext2D,
+  imageData: ImageData,
+  colorMap: Map<string, number>,
+): boolean {
+  if (colorMap.size > 4) return false;
+
+  const { data } = imageData;
+  const uniqueColors = Array.from(colorMap.keys()).map((key) => {
+    const [r, g, b] = key.split(",").map(Number);
+    return { b, g, r } as Color;
+  });
+
+  const first = uniqueColors[0];
+  for (let i = 0; i < data.length; i += 4) {
+    data[i] = first.r;
+    data[i + 1] = first.g;
+    data[i + 2] = first.b;
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+  return true;
+}
+
+function buildColorToCentroidMap(
+  uniqueColors: number[][],
+  clusters: number[],
+  centroids: Color[],
+): Map<string, Color> {
+  const map = new Map<string, Color>();
+  for (let i = 0; i < uniqueColors.length; i++) {
+    const key = `${uniqueColors[i][0]},${uniqueColors[i][1]},${uniqueColors[i][2]}`;
+    map.set(key, centroids[clusters[i]]);
+  }
+  return map;
+}
+
+// Zod Schemas
+const hexColorSchema = z
+  .string()
+  .regex(/^#([0-9a-fA-F]{6})$/, "6자리 HEX 색상이어야 합니다.");
+
+const formSchema = z.object({
+  authId: z.string().regex(/^-?\d+$/, "숫자 문자열이어야 합니다."),
+  author: z.string().min(1, "제작자를 입력하세요.").max(50),
+  colorWeight: z.number().min(0.2).max(0.5),
+  customName: z.string().max(100).optional().or(z.literal("")),
+  isUseColorWeight: z.boolean(),
+  selectedColor: hexColorSchema,
+});
+
+const imageFileSchema = z
+  .instanceof(File)
+  .refine((file) => file.type === "image/png", "PNG 파일만 업로드 가능합니다.")
+  .refine(
+    async (file) => validateImageSize({ file, maxHeight: 96, maxWidth: 256 }),
+    {
+      message: "이미지 크기가 256x96 이하여야 합니다.",
+    },
+  );
 
 export default function DrawingGeneratorPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -31,9 +111,7 @@ export default function DrawingGeneratorPage() {
   const [author, setAuthor] = useState("Eargasm");
   const [isUseColorWeight, setIsUseColorWeight] = useState<boolean>(false);
   const [colorWeight, setColorWeight] = useState<number>(0.2);
-  const [selectedColor, setSelectedColor] = useState<string>(
-    THEME.defaultColor,
-  );
+  const [selectedColor, setSelectedColor] = useState<string>(DEFAULT_COLOR);
 
   const formId = useId();
 
@@ -55,39 +133,9 @@ export default function DrawingGeneratorPage() {
     ctx.putImageData(imageData, 0, 0);
   });
 
-  const applyColorWeight = useMemoizedFn(
-    (centroids: Color[], userColor: Color) => {
-      if (!isUseColorWeight) return;
-
-      let closestCentroidIndex = 0;
-      let minDistance = Number.MAX_SAFE_INTEGER;
-      for (let i = 0; i < centroids.length; i++) {
-        const centroid = centroids[i];
-        const distance = calculateColorDistance(userColor, centroid);
-
-        if (distance < minDistance) {
-          minDistance = distance;
-          closestCentroidIndex = i;
-        }
-      }
-
-      const closestCentroid = centroids[closestCentroidIndex];
-      closestCentroid.r =
-        closestCentroid.r * (1 - colorWeight) + userColor.r * colorWeight;
-      closestCentroid.g =
-        closestCentroid.g * (1 - colorWeight) + userColor.g * colorWeight;
-      closestCentroid.b =
-        closestCentroid.b * (1 - colorWeight) + userColor.b * colorWeight;
-    },
-  );
-
   const reduceToFourColors = useMemoizedFn(
     (ctx: CanvasRenderingContext2D, userHexColor: string) => {
-      const userColor: Color = {
-        b: Number.parseInt(userHexColor.slice(5, 7), 16),
-        g: Number.parseInt(userHexColor.slice(3, 5), 16),
-        r: Number.parseInt(userHexColor.slice(1, 3), 16),
-      };
+      const userColor = parseHexToColor(userHexColor);
 
       const imageData = ctx.getImageData(
         0,
@@ -98,36 +146,25 @@ export default function DrawingGeneratorPage() {
       const data = imageData.data;
 
       // Build color histogram to reduce memory usage and improve performance
-      const colorMap = new Map<string, number>();
-      for (let i = 0; i < data.length; i += 4) {
-        const key = `${data[i]},${data[i + 1]},${data[i + 2]}`;
-        colorMap.set(key, (colorMap.get(key) || 0) + 1);
-      }
+      const colorMap = buildColorMapFromImageData(imageData);
 
-      // If image already has 4 or fewer colors, no need for k-means
-      if (colorMap.size <= 4) {
-        const uniqueColors = Array.from(colorMap.keys()).map((key) => {
-          const [r, g, b] = key.split(",").map(Number);
-          return { b, g, r };
-        });
+      // Fast path: <= 4 colors
+      if (tryFastPathIfFewColors(ctx, imageData, colorMap)) return;
 
-        // Just use the first color (could be improved to map correctly)
-        const first = uniqueColors[0];
-        for (let i = 0; i < data.length; i += 4) {
-          data[i] = first.r;
-          data[i + 1] = first.g;
-          data[i + 2] = first.b;
+      // Extract unique colors for k-means to reduce computation
+      const uniqueColors = getUniqueColorsFromMap(colorMap);
+
+      // Weighting: duplicate the selected color to bias clustering
+      const colors = uniqueColors.slice();
+      if (isUseColorWeight) {
+        const influenceCount = Math.max(
+          1,
+          Math.round(uniqueColors.length * colorWeight),
+        );
+        for (let i = 0; i < influenceCount; i++) {
+          colors.push([userColor.r, userColor.g, userColor.b]);
         }
-
-        ctx.putImageData(imageData, 0, 0);
-        return;
       }
-
-      // Use unique colors for k-means to reduce computation
-      const colors = Array.from(colorMap.keys()).map((key) => {
-        const [r, g, b] = key.split(",").map(Number);
-        return [r, g, b];
-      });
 
       // Use k-means++ initialization for better consistency
       const result = kmeans(colors, 4, { initialization: "kmeans++" });
@@ -137,12 +174,17 @@ export default function DrawingGeneratorPage() {
         r: centroid[0],
       }));
 
-      // Apply color weight to closest centroid
-      applyColorWeight(centroids, userColor);
+      // Map each unique color to its assigned centroid
+      const colorToCentroid = buildColorToCentroidMap(
+        uniqueColors,
+        result.clusters,
+        centroids,
+      );
 
       for (let i = 0; i < data.length; i += 4) {
-        const clusterIndex = result.clusters[Math.floor(i / 4)];
-        const centroid = centroids[clusterIndex];
+        const key = `${data[i]},${data[i + 1]},${data[i + 2]}`;
+        const centroid = colorToCentroid.get(key);
+        if (!centroid) continue;
 
         data[i] = centroid.r;
         data[i + 1] = centroid.g;
@@ -197,27 +239,23 @@ export default function DrawingGeneratorPage() {
   const handleImageChange = useMemoizedFn(
     async (e: ChangeEvent<HTMLInputElement>) => {
       const file = e.target.files?.[0];
-      if (!file || file.type !== "image/png") {
-        alert("PNG 파일만 업로드 가능합니다.");
-        return;
-      }
-
-      const isValidSize = await validateImageSize({
-        file,
-        maxHeight: 96,
-        maxWidth: 256,
-      });
-
-      if (!isValidSize) {
-        alert("이미지 크기가 256x96 이하여야 합니다.");
+      if (!file) {
         setPreviewSrc(null);
         return;
       }
-
-      const arrayBuffer = await file.arrayBuffer();
-
-      const blob = new Blob([arrayBuffer], { type: "image/png" });
-      setPreviewSrc(URL.createObjectURL(blob));
+      try {
+        await imageFileSchema.parseAsync(file);
+        const arrayBuffer = await file.arrayBuffer();
+        const blob = new Blob([arrayBuffer], { type: "image/png" });
+        setPreviewSrc(URL.createObjectURL(blob));
+      } catch (err) {
+        const message =
+          err instanceof z.ZodError
+            ? err.issues[0]?.message
+            : "알 수 없는 오류";
+        alert(message);
+        setPreviewSrc(null);
+      }
     },
   );
 
@@ -225,6 +263,22 @@ export default function DrawingGeneratorPage() {
     const canvas = canvasRef.current;
     if (!canvas) {
       alert("캔버스를 찾을 수 없습니다.");
+      return;
+    }
+
+    try {
+      formSchema.parse({
+        authId,
+        author,
+        colorWeight,
+        customName,
+        isUseColorWeight,
+        selectedColor,
+      });
+    } catch (err) {
+      const message =
+        err instanceof z.ZodError ? err.issues[0]?.message : "알 수 없는 오류";
+      alert(message);
       return;
     }
 
@@ -276,17 +330,17 @@ export default function DrawingGeneratorPage() {
       <div
         style={{
           alignItems: "center",
-          color: THEME.primary,
+          color: "var(--ifm-color-primary)",
           display: "flex",
           flexDirection: "column",
         }}
       >
-        <h1 style={{ color: THEME.primary, margin: "2rem 0" }}>
+        <h1 style={{ color: "var(--ifm-color-primary)", margin: "2rem 0" }}>
           그림대화 생성기
         </h1>
         <div
           style={{
-            background: THEME.background,
+            background: "var(--ifm-background-color)",
             borderRadius: "0.5rem",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
             padding: "1rem",
@@ -317,7 +371,7 @@ export default function DrawingGeneratorPage() {
                   onChange={(e) => setAuthId(e.target.value)}
                   placeholder="AuthID"
                   style={{
-                    border: `1px solid ${THEME.primary}`,
+                    border: "1px solid var(--ifm-color-primary)",
                     borderRadius: "0.25rem",
                     padding: "0.5rem",
                   }}
@@ -339,7 +393,7 @@ export default function DrawingGeneratorPage() {
                   onChange={(e) => setAuthor(e.target.value)}
                   placeholder="Author"
                   style={{
-                    border: `1px solid ${THEME.primary}`,
+                    border: "1px solid var(--ifm-color-primary)",
                     borderRadius: "0.25rem",
                     padding: "0.5rem",
                   }}
@@ -361,7 +415,7 @@ export default function DrawingGeneratorPage() {
                 onChange={(e) => setCustomName(e.target.value)}
                 placeholder="Custom File Name"
                 style={{
-                  border: `1px solid ${THEME.primary}`,
+                  border: "1px solid var(--ifm-color-primary)",
                   borderRadius: "0.25rem",
                   padding: "0.5rem",
                 }}
@@ -443,7 +497,7 @@ export default function DrawingGeneratorPage() {
                 id={`${formId}-image-upload`}
                 onChange={handleImageChange}
                 style={{
-                  border: `1px solid ${THEME.primary}`,
+                  border: "1px solid var(--ifm-color-primary)",
                   borderRadius: "0.25rem",
                   cursor: "pointer",
                   padding: "0.5rem",
@@ -451,7 +505,7 @@ export default function DrawingGeneratorPage() {
                 title="Upload Image"
                 type="file"
               />
-              <small style={{ color: THEME.textMuted }}>
+              <small style={{ color: "var(--ifm-color-emphasis-600)" }}>
                 최대 256x96px, PNG 파일만 가능
               </small>
             </div>
@@ -459,7 +513,7 @@ export default function DrawingGeneratorPage() {
               <button
                 onClick={saveCanvasAsPNG}
                 style={{
-                  backgroundColor: THEME.primaryDark,
+                  backgroundColor: "var(--ifm-color-primary-dark)",
                   borderRadius: "0.25rem",
                   color: "white",
                   cursor: "pointer",
