@@ -10,11 +10,23 @@ interface Chunk {
 }
 
 function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
+  // Verify PNG signature
+  const signature = new Uint8Array(arrayBuffer, 0, 8);
+  const pngSignature = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
+  if (!signature.every((byte, i) => byte === pngSignature[i])) {
+    throw new Error("Invalid PNG signature");
+  }
+
   const dataView = new DataView(arrayBuffer);
   let offset = 8;
   const chunks = [];
 
   while (offset < dataView.byteLength) {
+    // Check if we have enough bytes for chunk header
+    if (offset + 8 > dataView.byteLength) {
+      throw new Error("Incomplete PNG chunk header");
+    }
+
     const length = dataView.getUint32(offset);
     offset += 4;
 
@@ -26,6 +38,11 @@ function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
     );
     offset += 4;
 
+    // Check if we have enough bytes for chunk data and CRC
+    if (offset + length + 4 > dataView.byteLength) {
+      throw new Error(`Incomplete PNG chunk: ${type}`);
+    }
+
     const data = new Uint8Array(arrayBuffer, offset, length);
     offset += length;
 
@@ -33,6 +50,11 @@ function readChunks(arrayBuffer: ArrayBuffer): Chunk[] {
     offset += 4;
 
     chunks.push({ crc, data, type });
+
+    // Stop at IEND chunk
+    if (type === "IEND") {
+      break;
+    }
   }
 
   return chunks;
@@ -50,8 +72,11 @@ function calculateTotalLength(chunks: readonly Chunk[]): number {
 function createZTXtChunk(keyword: string, data: string): Chunk {
   const type = "zTXt";
 
-  // Keyword and Null separator
+  // Validate keyword length (1-79 bytes per PNG spec)
   const keywordBytes = new TextEncoder().encode(keyword);
+  if (keywordBytes.length === 0 || keywordBytes.length > 79) {
+    throw new Error("PNG keyword must be 1-79 bytes");
+  }
 
   // Compression method (0)
   const compressionMethod = new Uint8Array([0]);
@@ -81,7 +106,8 @@ function createZTXtChunk(keyword: string, data: string): Chunk {
 
   // Correct CRC calculation, using the correct buffer and index range
   // ? https://github.com/SheetJS/js-crc32#best-practices
-  const crcValue = buf(crcBuffer);
+  // Convert signed int32 to unsigned uint32
+  const crcValue = buf(crcBuffer) >>> 0;
 
   return {
     crc: crcValue,

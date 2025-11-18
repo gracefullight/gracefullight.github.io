@@ -114,28 +114,42 @@ export default function DrawingGeneratorPage() {
   );
 
   useEffect(() => {
-    if (previewSrc) {
-      const img = new Image();
-      img.src = previewSrc;
-      img.addEventListener("load", () => {
-        const canvas = canvasRef.current;
-        if (canvas) {
-          canvas.width = img.width;
-          canvas.height = img.height;
-          const ctx = canvas.getContext("2d");
-          if (ctx) {
-            ctx.drawImage(img, 0, 0);
-            modifyWhitePixels(ctx);
-            reduceToFourColors(ctx, selectedColor);
-          }
-        }
-      });
-    }
+    if (!previewSrc) return;
+
+    const img = new Image();
+    let isMounted = true;
+
+    const handleLoad = () => {
+      if (!isMounted) return;
+
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext("2d");
+      if (ctx) {
+        ctx.drawImage(img, 0, 0);
+        modifyWhitePixels(ctx);
+        reduceToFourColors(ctx, selectedColor);
+      }
+    };
+
+    const handleError = () => {
+      if (!isMounted) return;
+      console.error("Failed to load image");
+      alert("이미지 로드에 실패했습니다.");
+    };
+
+    img.addEventListener("load", handleLoad);
+    img.addEventListener("error", handleError);
+    img.src = previewSrc;
 
     return () => {
-      if (previewSrc) {
-        URL.revokeObjectURL(previewSrc);
-      }
+      isMounted = false;
+      img.removeEventListener("load", handleLoad);
+      img.removeEventListener("error", handleError);
+      URL.revokeObjectURL(previewSrc);
     };
   }, [previewSrc, selectedColor, modifyWhitePixels, reduceToFourColors]);
 
@@ -166,36 +180,52 @@ export default function DrawingGeneratorPage() {
 
   const saveCanvasAsPNG = () => {
     const canvas = canvasRef.current;
-    if (canvas) {
-      const formattedDate = DateTime.now().toFormat("yyyyMMdd_HHmmss");
-      const name = `chat_${formattedDate}_${customName || "그림대화"}.png`;
-
-      canvas.toBlob((blob) => {
-        if (blob) {
-          const reader = new FileReader();
-          reader.onload = () => {
-            const arrayBuffer = reader.result as ArrayBuffer;
-            const cleanedBuffer = removeTEXtChunks(arrayBuffer);
-            const bufferWithMetadata = addMetadataChunks(
-              cleanedBuffer,
-              authId,
-              author,
-            );
-            const newBlob = new Blob([bufferWithMetadata], {
-              type: "image/png",
-            });
-            const href = URL.createObjectURL(newBlob);
-
-            downloadImage({
-              href,
-              name,
-            });
-            URL.revokeObjectURL(href);
-          };
-          reader.readAsArrayBuffer(blob);
-        }
-      }, "image/png");
+    if (!canvas) {
+      alert("캔버스를 찾을 수 없습니다.");
+      return;
     }
+
+    const formattedDate = DateTime.now().toFormat("yyyyMMdd_HHmmss");
+    const name = `chat_${formattedDate}_${customName || "그림대화"}.png`;
+
+    canvas.toBlob((blob) => {
+      if (!blob) {
+        alert("이미지 생성에 실패했습니다.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const arrayBuffer = reader.result as ArrayBuffer;
+          const cleanedBuffer = removeTEXtChunks(arrayBuffer);
+          const bufferWithMetadata = addMetadataChunks(
+            cleanedBuffer,
+            authId,
+            author,
+          );
+          const newBlob = new Blob([bufferWithMetadata], {
+            type: "image/png",
+          });
+          const href = URL.createObjectURL(newBlob);
+
+          downloadImage({
+            href,
+            name,
+          });
+          URL.revokeObjectURL(href);
+        } catch (error) {
+          console.error("PNG 메타데이터 추가 실패:", error);
+          alert(
+            `이미지 처리 중 오류가 발생했습니다: ${error instanceof Error ? error.message : "알 수 없는 오류"}`,
+          );
+        }
+      };
+      reader.onerror = () => {
+        alert("파일 읽기에 실패했습니다.");
+      };
+      reader.readAsArrayBuffer(blob);
+    }, "image/png");
   };
 
   return (
