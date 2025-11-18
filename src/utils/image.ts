@@ -51,3 +51,57 @@ export function calculateColorDistance(color1: Color, color2: Color) {
       (color1.b - color2.b) ** 2,
   );
 }
+
+/**
+ * HEX 색상 문자열을 Color 객체로 변환
+ */
+export function parseHexToColor(hex: string): Color {
+  return {
+    b: Number.parseInt(hex.slice(5, 7), 16),
+    g: Number.parseInt(hex.slice(3, 5), 16),
+    r: Number.parseInt(hex.slice(1, 3), 16),
+  };
+}
+
+/**
+ * ImageData에서 색상 히스토그램 생성
+ */
+export function buildColorMapFromImageData(
+  imageData: ImageData,
+): Map<string, number> {
+  const { data } = imageData;
+  const colorMap = new Map<string, number>();
+  for (let i = 0; i < data.length; i += 4) {
+    const key = `${data[i]},${data[i + 1]},${data[i + 2]}`;
+    colorMap.set(key, (colorMap.get(key) || 0) + 1);
+  }
+  return colorMap;
+}
+
+/**
+ * 색상 맵에서 고유 색상 배열 추출
+ */
+export function getUniqueColorsFromMap(
+  colorMap: Map<string, number>,
+): number[][] {
+  return Array.from(colorMap.keys()).map((key) => {
+    const [r, g, b] = key.split(",").map(Number);
+    return [r, g, b];
+  });
+}
+
+/**
+ * k-means 클러스터링 결과를 색상 맵으로 변환
+ */
+export function buildColorToCentroidMap(
+  uniqueColors: number[][],
+  clusters: number[],
+  centroids: Color[],
+): Map<string, Color> {
+  const map = new Map<string, Color>();
+  for (let i = 0; i < uniqueColors.length; i++) {
+    const key = `${uniqueColors[i][0]},${uniqueColors[i][1]},${uniqueColors[i][2]}`;
+    map.set(key, centroids[clusters[i]]);
+  }
+  return map;
+}

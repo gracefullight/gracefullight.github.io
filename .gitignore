@@ -21,3 +21,4 @@ src/plugins/*.js
 dist
 
 .serena
+.playwright-mcp
