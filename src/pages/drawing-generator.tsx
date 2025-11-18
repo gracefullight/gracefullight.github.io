@@ -24,6 +24,16 @@ const DEFAULT_COLOR = "#F58D16" as const;
 const TARGET_WIDTH = 256 as const;
 const TARGET_HEIGHT = 96 as const;
 
+// Form default values
+const DEFAULT_FORM_VALUES = {
+  authId: "-1379962171",
+  author: "Eargasm",
+  colorWeight: 0.2,
+  customName: "",
+  isUseColorWeight: false,
+  selectedColor: DEFAULT_COLOR,
+};
+
 // Zod Schemas
 const hexColorSchema = z
   .string()
@@ -65,12 +75,20 @@ export default function DrawingGeneratorPage() {
   const loadedImageRef = useRef<HTMLImageElement | null>(null);
   const lastUrlRef = useRef<string | null>(null);
   const containerRectRef = useRef<DOMRect | null>(null);
-  const [customName, setCustomName] = useState<string>("");
-  const [authId, setAuthId] = useState("-1379962171");
-  const [author, setAuthor] = useState("Eargasm");
-  const [isUseColorWeight, setIsUseColorWeight] = useState<boolean>(false);
-  const [colorWeight, setColorWeight] = useState<number>(0.2);
-  const [selectedColor, setSelectedColor] = useState<string>(DEFAULT_COLOR);
+  const [customName, setCustomName] = useState<string>(
+    DEFAULT_FORM_VALUES.customName,
+  );
+  const [authId, setAuthId] = useState(DEFAULT_FORM_VALUES.authId);
+  const [author, setAuthor] = useState(DEFAULT_FORM_VALUES.author);
+  const [isUseColorWeight, setIsUseColorWeight] = useState<boolean>(
+    DEFAULT_FORM_VALUES.isUseColorWeight,
+  );
+  const [colorWeight, setColorWeight] = useState<number>(
+    DEFAULT_FORM_VALUES.colorWeight,
+  );
+  const [selectedColor, setSelectedColor] = useState<string>(
+    DEFAULT_FORM_VALUES.selectedColor,
+  );
 
   const formId = useId();
 
@@ -737,10 +755,7 @@ export default function DrawingGeneratorPage() {
                 />
                 <small style={{ color: "var(--ifm-color-emphasis-600)" }}>
                   PNG만 가능. 최소 {TARGET_WIDTH}×{TARGET_HEIGHT}px. 다른 크기면
-                  영역을 선택해 크롭하세요.
-                  <br />
-                  색상 가중치가 높을수록 선택한 색상이 결과에 더 강하게
-                  반영됩니다.
+                  영역을 선택해 잘라내세요.
                 </small>
               </div>
               {previewSrc && isProcessed && (
