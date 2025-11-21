@@ -16,7 +16,16 @@
         <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ai-application-categories">AI Application Categories<a href="https://gracefullight.dev/2025/11/21/ai-engineering/#ai-application-categories" class="hash-link" aria-label="AI Application Categories에 대한 직접 링크" title="AI Application Categories에 대한 직접 링크" translate="no">​</a></h2>
 <!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_iWpj" id="llm-adoption-by-use-case">LLM Adoption by Use Case<a href="https://gracefullight.dev/2025/11/21/ai-engineering/#llm-adoption-by-use-case" class="hash-link" aria-label="LLM Adoption by Use Case에 대한 직접 링크" title="LLM Adoption by Use Case에 대한 직접 링크" translate="no">​</a></h2>
-]]></content>
+<ol>
+<li class="">Text Summarization: 62%</li>
+<li class="">Internal Knowledge Management: 60%</li>
+<li class="">Customer Service: 59%</li>
+<li class="">Marketing Copy: 53%</li>
+<li class="">Software Development: 53%</li>
+<li class="">Contract Review: 45%</li>
+<li class="">External Chatbots: 39%</li>
+<li class="">Recommendation Algorithms: 39%</li>
+</ol>]]></content>
         <author>
             <name>Eunkwang Shin</name>
             <uri>https://github.com/gracefullight</uri>

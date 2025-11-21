@@ -17,7 +17,16 @@
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ai-application-categories">AI Application Categories<a href="https://gracefullight.dev/en/2025/11/21/ai-engineering/#ai-application-categories" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
 <!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_iWpj" id="llm-adoption-by-use-case">LLM Adoption by Use Case<a href="https://gracefullight.dev/en/2025/11/21/ai-engineering/#llm-adoption-by-use-case" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-]]></content:encoded>
+<ol>
+<li class="">Text Summarization: 62%</li>
+<li class="">Internal Knowledge Management: 60%</li>
+<li class="">Customer Service: 59%</li>
+<li class="">Marketing Copy: 53%</li>
+<li class="">Software Development: 53%</li>
+<li class="">Contract Review: 45%</li>
+<li class="">External Chatbots: 39%</li>
+<li class="">Recommendation Algorithms: 39%</li>
+</ol>]]></content:encoded>
             <category>me</category>
         </item>
         <item>
