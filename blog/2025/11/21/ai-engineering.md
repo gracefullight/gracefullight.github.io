@@ -23,10 +23,11 @@ pie title AI Application Categories
 
 ## LLM Adoption by Use Case
 
-```mermaid
-xychart-beta
-    title "Willingness to Use LLMs"
-    x-axis ["Text Summarization", "Internal Knowledge Management", "Customer Service", "Marketing Copy", "Software Development", "Contract Review", "External Chatbots", "Recommendation Algorithms"]
-    y-axis "Percentage (%)" 0 --> 100
-    bar [62, 60, 59, 53, 53, 45, 39, 39]
-```
+1. Text Summarization: 62%
+2. Internal Knowledge Management: 60%
+3. Customer Service: 59%
+4. Marketing Copy: 53%
+5. Software Development: 53%
+6. Contract Review: 45%
+7. External Chatbots: 39%
+8. Recommendation Algorithms: 39%
