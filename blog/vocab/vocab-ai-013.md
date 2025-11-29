@@ -22,3 +22,14 @@ tags:
 | defy | to openly resist or refuse to obey | to resist | 반항하다 |
 | In light of | considering or taking into account | taking into account | ~을 고려하여 |
 | relevance | the quality of being closely connected or appropriate to the matter at hand | pertinence | 관련성 |
+| circumvent | to find a way around an obstacle or difficulty | to bypass | 우회하다 |
+| pairwise | relating to or involving pairs of things | in pairs | 쌍으로 된 |
+| enrich | to improve or enhance the quality or value of something | to enhance | 풍부하게 하다 |
+| nuanced | characterized by subtle distinctions or variations | subtle | 미묘한 |
+| affinity | a natural liking or attraction to something | liking | 친밀감, 유사성 |
+| asymmetric | not identical on both sides of a central line; lacking symmetry | uneven | 비대칭 |
+| trump | to surpass or outdo someone or something | to surpass | 능가하다 |
+| diffuse | to spread out over a large area; not concentrated | to spread | 확산시키다 |
+| inclusion | the act of including or being included within a group or structure | incorporation | 포함 |
+| task-agnostic | not specific to any particular task or function | task-independent | 작업에 구애받지 않는 |
+| bifurcate | to divide into two branches or parts | to split | 두 갈래로 나누다, 분기하다 |
