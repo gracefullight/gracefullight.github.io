@@ -4,7 +4,7 @@ date: 2025-11-21T22:18:26.198+11:00
 description: AI Engineering
 authors: me
 tags:
-  - me
+  - ai
 ---
 
 ## AI Application Categories

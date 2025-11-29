@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
     "unifiedjs.vscode-mdx",
     "yoavbls.pretty-ts-errors",
     "aaron-bond.better-comments",
