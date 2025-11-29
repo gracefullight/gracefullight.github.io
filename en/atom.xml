@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/en/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-11-21T11:18:26.198Z</updated>
+    <updated>2025-11-29T04:05:49.118Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/en/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Vocabulary for AI 013]]></title>
+        <id>https://gracefullight.dev/en/vocab/vocab-ai-013/</id>
+        <link href="https://gracefullight.dev/en/vocab/vocab-ai-013/"/>
+        <updated>2025-11-29T04:05:49.118Z</updated>
+        <summary type="html"><![CDATA[Vocabulary for AI 013]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/vocab-ai-013/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>contamination</td><td>the introduction of foreign matter into a system or process</td><td>introduction of foreign matter</td><td>외부 물질의 입힘, 오염</td></tr><tr><td>insulation</td><td>the process of separating or isolating a system or process from external influences</td><td>separation or isolation</td><td>분리, 격리</td></tr><tr><td>compound</td><td>a substance made up of two or more different elements combined in fixed proportions</td><td>mixture of elements</td><td>조합물</td></tr><tr><td>uniformity</td><td>the quality of being uniform or consistent</td><td>consistency</td><td>일관성</td></tr><tr><td>high-fidelity</td><td>the quality of being faithful</td><td>faithfulness</td><td>고성능</td></tr><tr><td>electromagnetic</td><td>the quality of being electromagnetic</td><td>electromagnetic</td><td>전자기능</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI Engineering]]></title>
         <id>https://gracefullight.dev/en/2025/11/21/ai-engineering/</id>
@@ -30,7 +44,7 @@
             <name>Gracefullight</name>
             <uri>https://github.com/gracefullight</uri>
         </author>
-        <category label="me" term="me"/>
+        <category label="ai" term="ai"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Location-Aware Deep Neural Network Review]]></title>
@@ -906,207 +920,5 @@
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="vocab" term="vocab"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IAI +009]]></title>
-        <id>https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/</id>
-        <link href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/"/>
-        <updated>2025-10-09T03:19:13.025Z</updated>
-        <summary type="html"><![CDATA[Introduction to AI +009]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="generative-ai">Generative AI<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#generative-ai" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">Gen AI refers to a category of AI models designed to generte new content, synt99hetic data that resembles a given dataset.</li>
-<li class="">Gen AI models create new content, including text, images, audio, and video.</li>
-</ul>
-<!-- -->
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="historcal-context-of-gen-ai">Historcal context of Gen AI<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#historcal-context-of-gen-ai" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li class="">1980s: The development of statistical approaches to AI emerged, focusing on probabilistic models</li>
-<li class="">1990s: Hidden Markov Models (HMMs) became popular in speech recognition and sequence generation tasks, making a shift towards using statistical methods in generative processes.</li>
-<li class="">1990s-2000s: The resurgence of Neural Networks, with the introduction of deep learning techniques. However, hardware and data limitations hampered progress.</li>
-<li class="">2010s: The advent of deep learning algorithms, especially convolutional neural networks (CNNs) and recurrent neural networks (RNNs), transformed the landscape of AI.</li>
-<li class="">2013: VAEs were introduced, providing a probabilistic approach to data generation, allowing for smooth latent space interpolation and structure.</li>
-<li class="">2014: GANs, a novel framework where two neural networks (a generator and a discriminator) are trained simultaneously, allowing for the generation of highly realistic images and other data types.</li>
-<li class="">2015-2020: Generative models began to find applications beyond image synthesis, including text generation, music composition, and even video generation. OpenAI's GPT-2 showcased the potential of transformer-based models for generating coherent text.</li>
-<li class="">2020s: The introduction of larger and more capable models like OpenAI's GPT-3 and subsequent iterations revolutionized natural language processing.<!-- -->
-<ul>
-<li class="">DALL-E and Stable Diffusion pushed the boundaries of image generation, allowing users to create images from textual descriptions. This sparked creative exploration and practical applications in marketing, art, and design.</li>
-</ul>
-</li>
-<li class="">Present: The integration of multiple data modalities (text, image, audio) led to the development of models like CLIP and GPT-4, which can understand and generate content across different formats, enhancing the versatility of generative AI.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="variational-autoencoders-vaes">Variational Autoencoders, VAEs<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#variational-autoencoders-vaes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">VAEs are from the probabilistic approach to build a generative AI model</li>
-<li class="">VAE learns a latent distribution instead of a fixed latent presentation, allowing for the generation of new samples.</li>
-<li class="">Latent space<!-- -->
-<ul>
-<li class="">sample from a Gaussian distribution</li>
-<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em"></span><span class="mord mathnormal">μ</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.03588em">σ</span></span></span></span> are learned during training</li>
-<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span></span></span></span> is a new sample from the latent space</li>
-</ul>
-</li>
-<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>ϕ</mi></msub><mo stretchy="false">(</mo><mi>z</mi><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">q_\phi(z|x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">ϕ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.04398em">z</span><span class="mord">∣</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> is the encoder that maps input data <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span> to a distribution over the latent space <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span></span></span></span></li>
-<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>θ</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mi mathvariant="normal">∣</mi><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p_\theta(x|z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.04398em">z</span><span class="mclose">)</span></span></span></span> is the decoder that maps a latent variable <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span></span></span></span> back to the data space <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span></li>
-<li class="">During training, the model optimizes the reconstruction loss and a regularization term (KL divergence) to ensure the learned latent distribution is close to a prior distribution (usually a standard normal distribution).</li>
-<li class="">Latent Representation<!-- -->
-<ul>
-<li class="">Dimensionality Reduction: latent space is typically lower-dimensional than the input space</li>
-<li class="">Smoothness: In a well-structured latent space, similar inputs will be represented by nearby points.</li>
-<li class="">Generative Capabilities: Once trained, can sample from the latent space to generate new data that resembles the training set.</li>
-<li class="">Regularization: The VAE incorporates a regularization term in its loss function (KL divergence), which encourages the lerned latent distribution to be close to a standard normal distribution.</li>
-</ul>
-</li>
-<li class="">Decoder<!-- -->
-<ul>
-<li class="">The decoder takes the sampled latent representation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal" style="margin-right:0.04398em">z</span></span></span></span> and reconstructs the original input data.</li>
-<li class="">The goal is to make the reconstructed data as close as possible to the original input.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="vae-examples">VAE Examples<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#vae-examples" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="face-generation-example">Face Generation Example<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#face-generation-example" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
-<ul>
-<li class="">Trains a VAE on face photos.</li>
-<li class="">Latent space learns meaningful features (e.g. hair color, glasses, smile)</li>
-<li class="">By sampling and interpolating in latent space, can generate new faces or smoothly morph one face into another.</li>
-</ul>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="anomaly-detection-example">Anomaly Detection Example<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#anomaly-detection-example" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
-<ul>
-<li class="">Train a VAE on normal sensor data.</li>
-<li class="">When fed unusual data, reconstruction error will be high.</li>
-<li class="">Use this for fault detection in machines, fraud detction, etc.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="autoencoder">Autoencoder<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#autoencoder" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<!-- -->
-<ul>
-<li class="">Encoder<!-- -->
-<ul>
-<li class="">Input Layer: takes in the original data</li>
-<li class="">Hidden Layer: These layers progrssively reduce the dimensionality of the input through operations like linear transformations and non-linear activations. (e.g., ReLU-Rectified Linear Unit)</li>
-<li class="">Ouput Layer: Produces the final latent represntation. Sometimes Sigmoid or Tanh are used depending on the nature of the input data.</li>
-<li class="">Learns to capture meaningful patterns in the data by minimizaing reconstruction loss, which mesures the difference between the original input and the reconstructed output produced by the decoder.</li>
-</ul>
-</li>
-<li class="">Decoder<!-- -->
-<ul>
-<li class="">typically mirrors the structure of the encoder but in reverse.</li>
-<li class="">During trainng, Mean squared Error (MSE) for continuous data or Binary Cross-Entropy (BCE) for binary data are commonly used to quantify the reconstruction loss.</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="image-reconstuction-example">Image Reconstuction Example<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#image-reconstuction-example" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
-<ul>
-<li class="">input: 28x28 pixel</li>
-<li class="">encoder: compresses it to just 16 numbers (latent vector)</li>
-<li class="">decoder: expands those 16 numbers back into a 28x28 image</li>
-<li class="">result: the reconstructed digit looks similar to the original but not in the training set.</li>
-</ul>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="denoising-images">Denoising Images<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#denoising-images" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
-<ul>
-<li class="">input: a noisy photo of a cat</li>
-<li class="">encoder: learns to ignore the noise and compress meaningful features.</li>
-<li class="">decoder: rebuilds the image without the noise.</li>
-<li class="">output: a clearer cat image.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="loss-function">Loss function<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#loss-function" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li class="">Reconstruction loss: Ensure output similar to input</li>
-<li class="">KL divergence loss: Push the learned distribution to be close to a standard normal distribution. (can sample new data)</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="generative-adversarial-network-gan">Generative Adversarial Network, GAN<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#generative-adversarial-network-gan" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<!-- -->
-<ul>
-<li class="">Generator: Learns to generate fake (generated) data that resembles data distribution.</li>
-<li class="">Discriminator: Learns to distinguish between real data and data generated by the Generator.</li>
-<li class="">Steps<!-- -->
-<ol>
-<li class="">Generator creates fake data samples fro mrandom input (noise).</li>
-<li class="">Discriminator evaludates these samples together with real data samples.</li>
-<li class="">Discriminator outputs probabilities indicatcing whether each sample is real or fake.</li>
-<li class="">Based on the prediction of the Discriminator, the Generator and Discriminator are updated using specific loss functions.</li>
-</ol>
-</li>
-<li class="">Applications<!-- -->
-<ul>
-<li class="">Labels to Street Scenes</li>
-<li class="">Labels to Facade</li>
-<li class="">BW to Color</li>
-<li class="">Aerial to Map</li>
-<li class="">Day to Nihght</li>
-<li class="">Edges to Photo</li>
-<li class="">Text-to-Image Synthesis</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="autoregressive-models">Autoregressive Models<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#autoregressive-models" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
-<ul>
-<li class="">a class of generative models where the current value of a time series is expressed as a linear function of its own past values plus some noise.</li>
-<li class="">foundational in generative AI and widely used in generative AI, particularly for tasks like text generation, speech synthesis.</li>
-<li class="">Examples<!-- -->
-<ul>
-<li class="">GPT series: state-of-the-art autoregressive language models used for text generation.</li>
-<li class="">WaveNet: an autoregressive model for generating high-quality audio by predicting each sample conditioned on previous samples.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="training-autoregressive-models">Training Autoregressive Models<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#training-autoregressive-models" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li class="">Pretraining<!-- -->
-<ul>
-<li class="">the model sees sequences of tokens and learns to guess the next token.</li>
-<li class="">objective: minimize cross-entropy loss between its guess and the true next token.</li>
-<li class="">this teaches grammar, facts, reasoning patterns, and style from raw text.</li>
-</ul>
-</li>
-<li class="">Supervised fine-tuning (optional)<!-- -->
-<ul>
-<li class="">smaller curated datasets (questions to answer, instructions to respond) teach it to follow directions.</li>
-</ul>
-</li>
-<li class="">Reinforcement learning from Human Feedback (optional)<!-- -->
-<ul>
-<li class="">Humans rank multiple model outputs; a reward model is trained on those rankings; GPT is then optimized to produce higher-reward responses (safer, more helpful, less toxic)</li>
-</ul>
-</li>
-<li class="">Text to <strong>Tokens</strong> via a tokenizer (e.g. BPE, Byte Pair Encoding)</li>
-<li class="">Each token becomes a vector (<strong>Embedding</strong>)</li>
-<li class=""><strong>Positional encodings</strong> inject order information.</li>
-<li class=""><strong>Transformer layer</strong>
-<ul>
-<li class=""><strong>self-attention</strong>: each token looks at all previous token (causal mask) and decides which ones matter, computing weighted combinations.</li>
-<li class="">Multiple <strong>heads</strong> let it attend to different patterns (syntax, long-range links, etc.).</li>
-<li class=""><strong>feed-forward network</strong>: a nonlinear MLP refines each token's representation.</li>
-<li class=""><strong>residual connections &amp; layer norm</strong> stabilize tranining.</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="interfence">Interfence<a href="https://gracefullight.dev/en/2025/10/09/introduction-to-ai-009/#interfence" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
-<ul>
-<li class="">a prompt (the context)</li>
-<li class="">GPT computes probabiliites for the next token.</li>
-<li class="">A decoding stragety samples a token<!-- -->
-<ul>
-<li class="">Decoding knobs<!-- -->
-<ul>
-<li class="">Greedy: take the top token</li>
-<li class="">Top-K</li>
-<li class="">Nucleus (Top-p) sampling (limit to likely options)</li>
-<li class="">Temperature scales randomness, controls how random the next token choice is<!-- -->
-<ul>
-<li class="">lower = more determistic, higher = more creative</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="">append the token and repeat autoregressive generation.</li>
-</ul>]]></content>
-        <author>
-            <name>Gracefullight</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="iai" term="iai"/>
     </entry>
 </feed>
