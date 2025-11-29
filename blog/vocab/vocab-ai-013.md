@@ -17,3 +17,8 @@ tags:
 | uniformity | the quality of being uniform or consistent | consistency | 균일성 |
 | high-fidelity | the accurate reproduction of sound or images | accurate reproduction | 고성능 |
 | electromagnetic | relating to the interrelation of electric currents or fields and magnetic fields | electric and magnetic | 전자기 |
+| anisotropic | having properties that vary depending on the direction of measurement | direction-dependent | 이방성 |
+| discontinuity | a point or area where something is not continuous or uniform | interruption | 불연속 |
+| defy | to openly resist or refuse to obey | to resist | 반항하다 |
+| In light of | considering or taking into account | taking into account | ~을 고려하여 |
+| relevance | the quality of being closely connected or appropriate to the matter at hand | pertinence | 관련성 |

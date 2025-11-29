@@ -32,7 +32,6 @@ tags:
 | annotate | to add notes or comments to a text or diagram | to comment on | 주석을 달다 |
 | equidistantly | at equal distances | uniformly spaced | 등거리로 |
 | intricate | very complicated or detailed | complex | 복잡한, 정교한 |
-| proximity | nearness in space, time, or relationship | closeness | 근접 |
 | induce | to cause something to happen or exist | to bring about | 유도하다, 초래하다 |
 | delineate | to describe or mark the edge of something | to outline | 윤곽을 그리다, 묘사하다 |
 | account for sth | to explain or justify something | to explain | ~을 설명하다 |
