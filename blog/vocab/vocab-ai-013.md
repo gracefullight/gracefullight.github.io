@@ -33,3 +33,14 @@ tags:
 | inclusion | the act of including or being included within a group or structure | incorporation | 포함 |
 | task-agnostic | not specific to any particular task or function | task-independent | 작업에 구애받지 않는 |
 | bifurcate | to divide into two branches or parts | to split | 두 갈래로 나누다, 분기하다 |
+| governed | controlled or regulated by a set of rules or principles | controlled | 지배되는 |
+| In this sense | in the way just described; in this context | in this context | 이런 의미에서 |
+| tractable | able to be easily managed or controlled | manageable | 다루기 쉬운 |
+| suppress | to put an end to the activities of something | to restrain | 억제하다 |
+| deliberately | in a careful and intentional manner | intentionally | 고의로, 의도적으로 |
+| coherent | logical and consistent | logical | 일관된, 논리적인 |
+| monotonic | consistently increasing or decreasing without any reversals | unchanging | 단조로운 |
+| atop | on the top of; above | on top of | ~의 꼭대기에 |
+| saliency | the quality of being particularly noticeable or important | prominence | 두드러짐, 현저함 |
+| reception | the act of receiving or being received | receiving | 수신 |
+| jointly | together with one or more other people or things | together | 공동으로 |
