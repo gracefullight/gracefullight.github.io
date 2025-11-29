@@ -11,9 +11,9 @@ tags:
 
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
-| contamination | the introduction of foreign matter into a system or process | introduction of foreign matter | 외부 물질의 입힘, 오염 |
-| insulation | the process of separating or isolating a system or process from external influences | separation or isolation | 분리, 격리 |
-| compound | a substance made up of two or more different elements combined in fixed proportions | mixture of elements | 조합물 |
-| uniformity | the quality of being uniform or consistent | consistency | 일관성 |
-| high-fidelity | the quality of being faithful | faithfulness | 고성능 |
-| electromagnetic | the quality of being electromagnetic | electromagnetic | 전자기능 |
+| contamination | the process of making something impure or unsuitable by contact with something unclean | impurity | 오염 |
+| insulation | the process of protecting something by surrounding it with a material that reduces or prevents the transmission of heat, sound, or electricity | protective covering | 절연 |
+| compound | a substance formed from two or more elements chemically bonded together | mixture | 화합물 |
+| uniformity | the quality of being uniform or consistent | consistency | 균일성 |
+| high-fidelity | the accurate reproduction of sound or images | accurate reproduction | 고성능 |
+| electromagnetic | relating to the interrelation of electric currents or fields and magnetic fields | electric and magnetic | 전자기 |
