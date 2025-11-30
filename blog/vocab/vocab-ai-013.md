@@ -44,3 +44,10 @@ tags:
 | saliency | the quality of being particularly noticeable or important | prominence | 두드러짐, 현저함 |
 | reception | the act of receiving or being received | receiving | 수신 |
 | jointly | together with one or more other people or things | together | 공동으로 |
+| extrusion | the process of shaping material by forcing it through a die | shaping process | 압출 |
+| blockage | an obstruction that prevents movement or flow | obstruction | 막힘, 장애 |
+| waypoint | a reference point in physical space used for navigation | navigation point | 웨이포인트, 경유지 |
+| redistribute | to distribute something again or differently | to reallocate | 재분배하다 |
+| planar | relating to or existing in a flat, two-dimensional surface | flat | 평면의 |
+| perimeter | the outer boundary or edge of an area or object | boundary | 둘레, 주변 |
+| ablation | the removal of material from the surface of an object by vaporization, chipping, or other erosive processes | removal process | 제거 |
