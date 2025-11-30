@@ -55,3 +55,5 @@ tags:
 | sparsification | the process of making something sparse or less dense | thinning | 희소화 |
 | standpoint | a particular perspective or position from which something is considered | perspective | 관점 |
 | implication | a possible effect or result of an action or decision | consequence | 시사점 |
+| cardinal sides | the four main directions: north, south, east, and west | main directions | 모든 방향 (동서남북) |
+| undergo | to experience or be subjected to something | to experience | 겪다 |
