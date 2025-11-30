@@ -57,3 +57,5 @@ tags:
 | implication | a possible effect or result of an action or decision | consequence | 시사점 |
 | cardinal sides | the four main directions: north, south, east, and west | main directions | 모든 방향 (동서남북) |
 | undergo | to experience or be subjected to something | to experience | 겪다 |
+| discernible | able to be perceived or recognized | noticeable | 인지할 수 있는 |
+| sliceable | able to be cut into thin, flat pieces | cuttable | 얇게 자를 수 있는 |
