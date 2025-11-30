@@ -51,3 +51,7 @@ tags:
 | planar | relating to or existing in a flat, two-dimensional surface | flat | 평면의 |
 | perimeter | the outer boundary or edge of an area or object | boundary | 둘레, 주변 |
 | ablation | the removal of material from the surface of an object by vaporization, chipping, or other erosive processes | removal process | 제거 |
+| indiscriminate | not showing careful judgment or distinction | random | 무차별적인 |
+| sparsification | the process of making something sparse or less dense | thinning | 희소화 |
+| standpoint | a particular perspective or position from which something is considered | perspective | 관점 |
+| implication | a possible effect or result of an action or decision | consequence | 시사점 |
