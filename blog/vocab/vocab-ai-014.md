@@ -19,3 +19,9 @@ tags:
 | discriminatory | showing prejudice or bias against certain groups or individuals | biased | 차별적인 |
 | exacerbated | made worse or more severe | worsened | 악화된 |
 | devise | to plan or invent something by careful thought | to invent | 고안하다 |
+| analogously | in a way that is similar or comparable to something else | similarly | 유사하게 |
+| firsthand | obtained directly from personal experience | direct experience | 직접적인 경험 |
+| plausible | seeming reasonable or probable | believable | 그럴듯한 |
+| off-the-shelf | readily available for use without modification | ready-made | 기성품의 |
+| granularity | the quality of being detailed or specific | detail level | 세분성 |
+| holonomic base | a system in which all constraints can be expressed as functions of the coordinates and time | fully constrained system | 전체 구속 시스템 |

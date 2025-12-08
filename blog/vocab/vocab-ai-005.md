@@ -37,7 +37,6 @@ tags:
 | harness | to make use of something effectively | to utilize | 활용하다 |
 | repertoire | a collection or set of skills, abilities, or resources | a range or inventory | 레퍼토리 |
 | visuomotor | relating to the coordination of visual and motor functions | visual-motor | 시각 운동의 |
-| Preliminary | serving as a preparation or introduction | initial or preparatory | 예비의, 준비의 |
 | Owing to | because of | due to | ~때문에, ~덕분에 |
 | trajectory | the path followed by a moving object | path or course | 궤적 |
 | quadratic | relating to a polynomial of the second degree | second-degree | 이차의 |
