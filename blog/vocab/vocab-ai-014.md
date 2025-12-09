@@ -25,3 +25,8 @@ tags:
 | off-the-shelf | readily available for use without modification | ready-made | 기성품의 |
 | granularity | the quality of being detailed or specific | detail level | 세분성 |
 | holonomic base | a system in which all constraints can be expressed as functions of the coordinates and time | fully constrained system | 전체 구속 시스템 |
+| denoising | the process of removing noise from a signal or data | noise reduction | 잡음 제거 |
+| audacious | showing a willingness to take bold risks | bold | 대담한 |
+| dimensionality | the number of independent parameters or coordinates needed to specify a point in a space | number of dimensions | 차원 수 |
+| lowntirelyr-dimensional | relating to or denoting a space of low dimensions | low-dimensional | 저차원의 |
+| jointly | together; in combination | together | 함께, 공동으로 |
