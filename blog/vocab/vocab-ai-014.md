@@ -30,3 +30,5 @@ tags:
 | dimensionality | the number of independent parameters or coordinates needed to specify a point in a space | number of dimensions | 차원 수 |
 | lowntirelyr-dimensional | relating to or denoting a space of low dimensions | low-dimensional | 저차원의 |
 | jointly | together; in combination | together | 함께, 공동으로 |
+| in-the-wild | occurring in natural, uncontrolled environments | natural setting | 자연 환경에서 |
+| novelty | the quality of being new, original, or unusual | newness | 새로움, 참신함 |
