@@ -120,3 +120,7 @@ The training is split into two distinct stages based on the $\alpha$ parameter a
 * **Future Directions:**
   * Incorporating richer context and memory for better handling of partial observability.
   * Expanding data sources, particularly exploring **verbal instructions** as a powerful new supervision modality.
+
+## Ref
+
+* Intelligence, P., Black, K., Brown, N., Darpinian, J., Dhabalia, K., Driess, D., Esmail, A., Equi, M., Finn, C., & Fusai, N. (2025). π0.5: a Vision-Language-Action Model with Open-World Generalization. arXiv preprint arXiv:2504.16054.
