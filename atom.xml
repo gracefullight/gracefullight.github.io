@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gracefullight.dev/</id>
     <title>gracefullight.dev Blog</title>
-    <updated>2025-12-10T10:43:46.884Z</updated>
+    <updated>2025-12-10T13:40:52.653Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gracefullight.dev/"/>
     <subtitle>gracefullight.dev Blog</subtitle>
     <icon>https://gracefullight.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AI 시대의 개발자]]></title>
+        <id>https://gracefullight.dev/2025/12/10/developer-in-ai-era/</id>
+        <link href="https://gracefullight.dev/2025/12/10/developer-in-ai-era/"/>
+        <updated>2025-12-10T13:40:52.653Z</updated>
+        <summary type="html"><![CDATA[Developer in AI Era]]></summary>
+        <content type="html"><![CDATA[<p>AI 시대에 개발자는 어떻게 살아남아야 할까? LLM의 코드 퀄리티는 이미 나보다 탁월하고, 더 빠른 속도로 코드를 찍어낸다. 이런 상황에서 나는 무엇을 해야 할까? 5년 안에 대부분의 개발자가 대체될 것이라는 두려움 속에서, 나는 지금 무엇을 배워야 할까?</p>
+<p>ChatGPT 이후의 모델들을 사용하며 느낀 점은, 결국 내가 모델에게 어떤 데이터를 먹이로 주느냐(feed)가 결과물의 퀄리티를 결정한다는 것이다. 시니어 개발자가 AI를 활용해 더 뛰어난 아웃풋을 낼 수 있는 이유는 단순하다. 그들은 좋은 코드와 아키텍처를 수없이 봐왔고, 개념을 피부로 느껴왔으며, 협업과 실무 경험을 통해 축적된 노하우가 있기 때문이다. 즉, 모델에 입력할 수 있는 키워드와 컨텍스트의 크기가 다르다는 뜻이다.</p>
+<p>그렇다면 앞으로 개발자의 역할은 한마디로 무엇일까? 나는 <strong>GAN(생성적 적대 신경망)에서의 Discriminator, 즉 판별자의 역할</strong>이라고 생각한다.</p>
+<p>AI 모델이 쏟아내는 코드와 아키텍처가 논리적으로 맞는지, 효율적인지, 혹은 더 나은 방법은 없는지를 판단하는 능력. 그리고 그 판단에 맞춰 프롬프트를 조정하고, AI에게 피드백을 주어 결과물을 개선해 나가는 능력. 이것이 개발자가 가져야 할 핵심 역량이다.</p>
+<p>가트너는 이러한 개발 방식을 <strong>AI-native Software Engineering</strong>이라고 정의한다 (Khandabattu &amp; Tamersoy, 2025). 단순 코딩은 AI에게 위임하고, 개발자는 더 **본질적인 과업(Meaningful tasks)**에 집중해야 한다는 것이다. 기계적인 구현에서 벗어나 비판적 사고(Critical thinking), 인간 고유의 독창성(Ingenuity), 그리고 사용자를 향한 공감(Empathy) 같은 영역 말이다. 결국 우리가 판별자가 되어야 하는 이유는, 인간만이 할 수 있는 이 고유한 가치를 지키고 확장하기 위함이다.</p>
+<p>다른 한편으론, 리누스 토발즈의 말처럼 지금의 AI 하이프(Hype)의 90%는 마케팅이고 10%만이 진짜일 것이다 (TFiR, 2024, 37:59). 그 10%를 가려내기 위해서는 이론을 더 깊게 파고들어야 한다. 이론이 어떻게 엔지니어링으로 구현되는지를 직접 경험해 봐야만 판별할 수 있는 눈이 생긴다.</p>
+<p>프레임워크나 라이브러리는 금방 변한다. 하지만 그 기저에 있는 개념들은 쉽게 바뀌지 않는다. 왜냐하면 모든 프로그래밍은 결국 자료구조와 분할 정복(Divide and Conquer)으로 귀결되기 때문이다. AI는 단지 그 추상화된 레이어를 한 단계 더 높여줄 뿐이다.</p>
+<p>다수는 AI 시대에 학위가 필요 없어질 것이라 말하지만, 나는 반대로 생각한다. 정말로 그 개념을 제대로 알고 있는지가 중요해지는 만큼, 학위나 자격증처럼 기초 지식을 증명하는 수단이 오히려 더 중요해질 것이다.</p>
+<p>그렇다면 주니어들은 어디서 좋은 코드와 아키텍처를 배울 수 있을까? 소프트웨어 엔지니어링의 정수는 오픈소스에 있기에, 그곳에서 답을 찾을 수 있을 것이다.</p>
+<p>나는 매주 Github 인기 레파지토리를 30분씩 스킴 리딩(Skim reading) 하는 루틴을 가지고 있다. 관심 가는 프로젝트는 스타를 눌러 북마크 해두고, 폴더 구조와 사용된 패키지, 그리고 그 구현체를 뜯어본다. 해당 소스에서 참신함이 느껴진다면, 포크해서 LLM을 통해 개괄하고, 핵심 기능을 찾아 바닥부터 직접 만들어 보기도 한다.</p>
+<p>나보다 더 많은 시간을 쏟고, 해당 문제에 대해 더 깊이 고민했을 오픈소스 컨트리뷰터들의 방법론을 내 것으로 만드는 것. 그것이 AI-native 시대에 대체되지 않는 개발자가 살아남는 길 중 하나일 것이다.</p>
+<p>공학이 중요하다. 다른 모든 것은 그 개념의 implementation일 뿐이다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ref">Ref<a href="https://gracefullight.dev/2025/12/10/developer-in-ai-era/#ref" class="hash-link" aria-label="Ref에 대한 직접 링크" title="Ref에 대한 직접 링크" translate="no">​</a></h2>
+<ul>
+<li class="">Khandabattu, H., &amp; Tamersoy, B. (2025, June 11). Hype Cycle for artificial intelligence, 2025 (ID G00828523). Gartner. <a href="https://www.gartner.com/interactive/hc/6579402" target="_blank" rel="noopener noreferrer" class="">https://www.gartner.com/interactive/hc/6579402</a></li>
+<li class="">TFiR. (2024, October 17). Linus Torvalds on the kernel, GenAI, EVs, programming languages and more… [Video]. YouTube. <a href="https://youtu.be/s4wlrxFf2lM?t=2279" target="_blank" rel="noopener noreferrer" class="">https://youtu.be/s4wlrxFf2lM</a></li>
+</ul>]]></content>
+        <author>
+            <name>Eunkwang Shin</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[π0.5 Review]]></title>
         <id>https://gracefullight.dev/2025/12/10/pi-oh-five-review/</id>
@@ -725,134 +754,5 @@ M347 1759 V0 H263 V1759 v0 v1759 h84z"></path></svg></span></span></span><span c
             <uri>https://github.com/gracefullight</uri>
         </author>
         <category label="iai" term="iai"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FDA +011]]></title>
-        <id>https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/</id>
-        <link href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/"/>
-        <updated>2025-10-21T11:11:19.042Z</updated>
-        <summary type="html"><![CDATA[fda +011]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="bias">Bias<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#bias" class="hash-link" aria-label="Bias에 대한 직접 링크" title="Bias에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li class="">Bias quantifies how much on average the predicted values differ from the actual values.</li>
-<li class="">High bias implies the model is under-performing.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="variance">Variance<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#variance" class="hash-link" aria-label="Variance에 대한 직접 링크" title="Variance에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li class="">Variance quantifies how sensitive the model is to small changes in the training samples.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ensemble-methods">Ensemble Methods<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#ensemble-methods" class="hash-link" aria-label="Ensemble Methods에 대한 직접 링크" title="Ensemble Methods에 대한 직접 링크" translate="no">​</a></h2>
-<ul>
-<li class="">The intuition behind ensemble methods is to decrease bias and variance by using multiple machine learning algorithms.</li>
-<li class="">Any machine learning algorithm can be used in ensemble methods.<!-- -->
-<ul>
-<li class="">decision trees, neural networks, logistic regressions, etc.</li>
-</ul>
-</li>
-<li class="">Base models are as diverse as possible.</li>
-<li class="">Train each base model to predict as accurately as possible.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="sequential-ensemble-methods">Sequential ensemble methods<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#sequential-ensemble-methods" class="hash-link" aria-label="Sequential ensemble methods에 대한 직접 링크" title="Sequential ensemble methods에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Arrange weak learners in a sequence, such that weak learners learn from next learner in the sequence to create better predictive models.</li>
-<li class="">Each model fits the residual of its predecessor.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="parallel-ensemble-methods">Parallel ensemble methods<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#parallel-ensemble-methods" class="hash-link" aria-label="Parallel ensemble methods에 대한 직접 링크" title="Parallel ensemble methods에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">to use different variations of the same dataset, of the smae classifier, and aggregate the results.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="bootstraping">Bootstraping<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#bootstraping" class="hash-link" aria-label="Bootstraping에 대한 직접 링크" title="Bootstraping에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Sampling technique that creates multiple subsets of datasets from the original dataset.</li>
-<li class="">when inferring results for a population from results found on a collection of smaller random samples of that population.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="bagging">Bagging<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#bagging" class="hash-link" aria-label="Bagging에 대한 직접 링크" title="Bagging에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p><strong>B</strong>ootstrap <strong>agg</strong>regat<strong>ing</strong></p>
-</blockquote>
-<ul>
-<li class="">Generates subsets (bags) of traning data by sampling from the original training dataset with replacement.</li>
-<li class="">To overcome the complexity of models that overfit the training data.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="boosting">Boosting<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#boosting" class="hash-link" aria-label="Boosting에 대한 직접 링크" title="Boosting에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">fits multiple models sequentially</li>
-<li class="">each model in the sequence is fitted <strong>giving more weight to the data points</strong> that were poorly handled by the previous models in the sequence.</li>
-<li class="">This process is iterated until the error function does not change, or the maximum limit of the number of estimators is reached.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="random-forest">Random Forest<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#random-forest" class="hash-link" aria-label="Random Forest에 대한 직접 링크" title="Random Forest에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class="">Shallow trees have lower variance and higher bias, whereas deep trees have low bias but high variance.<!-- -->
-<ul>
-<li class="">Shallow trees are chosen for sequential ensemble methods</li>
-<li class="">Deep trees are chosen for bagging methods (or parallel ensemble methods).</li>
-</ul>
-</li>
-<li class="">a bagging method where deep trees are used and fitted on bootstrap samples, and then combined to produce an output with lower variance.</li>
-<li class="">selects randomly a set of features which are then used to decide the best split at each node of the tree.</li>
-<li class="">can be applied to both regression and classification tasks.</li>
-<li class="">can learn binary features, categorical features and numerical features.</li>
-</ul>
-<ol>
-<li class="">create from the original dataset multiple bootstrap samples.</li>
-<li class="">at each node in the decision tree, a random set of features is considered to decide the most beneficial split.</li>
-<li class="">train a decision tree on each bootstrap sample.</li>
-<li class="">final prediction is computed by averaging the prediction from all decision trees combined.</li>
-</ol>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="advantages-of-random-forest">Advantages of Random Forest<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#advantages-of-random-forest" class="hash-link" aria-label="Advantages of Random Forest에 대한 직접 링크" title="Advantages of Random Forest에 대한 직접 링크" translate="no">​</a></h4>
-<ul>
-<li class="">generally accurate, quick to train</li>
-<li class="">can handle very large datasets</li>
-<li class="">can estimate importance of features</li>
-<li class="">generates an internal unbiased estimate of accuracy, which can use to know when to stop buildling</li>
-<li class="">can handle missing data</li>
-<li class="">can handle datasets with imbalanced classes</li>
-<li class="">can compute proximity between data points</li>
-<li class="">unsupervised for clustering and outlier detection</li>
-</ul>
-<p>but don't handle large numbers of irrelevant attributes as well as some other methods.</p>
-<h4 class="anchor anchorTargetStickyNavbar_iWpj" id="applications-of-random-forest">Applications of Random Forest<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#applications-of-random-forest" class="hash-link" aria-label="Applications of Random Forest에 대한 직접 링크" title="Applications of Random Forest에 대한 직접 링크" translate="no">​</a></h4>
-<table><thead><tr><th>Industry</th><th>Applications</th><th>Purpose / Advantages</th></tr></thead><tbody><tr><td>Finance</td><td>Assessing high credit-risk customers, detecting fraud, and addressing option pricing problems</td><td>Preferred over other algorithms due to its ability to minimize time spent on data management and pre-processing tasks</td></tr><tr><td>Healthcare</td><td>Gene expression classification, biomarker discovery, and sequence annotation</td><td>Helps doctors estimate drug responses to specific medications</td></tr><tr><td>E-commerce</td><td>Recommendation engines</td><td>Used to achieve cross-selling objectives</td></tr></tbody></table>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="adaboost">AdaBoost<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#adaboost" class="hash-link" aria-label="AdaBoost에 대한 직접 링크" title="AdaBoost에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p><strong>Ada</strong>ptive <strong>Boost</strong>ing</p>
-</blockquote>
-<ul>
-<li class="">simplest boosting algorithm, usaully uses decision trees for modelling</li>
-<li class="">multiple sequential models are created, each correcting the errors from the previous model.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="gbm">GBM<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#gbm" class="hash-link" aria-label="GBM에 대한 직접 링크" title="GBM에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p><strong>G</strong>radient <strong>B</strong>oosting <strong>M</strong>achine</p>
-</blockquote>
-<ul>
-<li class="">works on both regression and classification problems.</li>
-<li class="">usually, regression trees are used as base models.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="xgboost">XGBoost<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#xgboost" class="hash-link" aria-label="XGBoost에 대한 직접 링크" title="XGBoost에 대한 직접 링크" translate="no">​</a></h3>
-<blockquote>
-<p>e<strong>X</strong>treme <strong>G</strong>radient <strong>Boost</strong>ing</p>
-</blockquote>
-<ul>
-<li class="">another implementation of gradient boosting algorithm.</li>
-<li class="">has proven to be a highly effective machine learning algorithm.</li>
-<li class="">extensively used in machine learning competitions due to its speed and performance.</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="combining-predictions">Combining predictions<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#combining-predictions" class="hash-link" aria-label="Combining predictions에 대한 직접 링크" title="Combining predictions에 대한 직접 링크" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="voting">Voting<a href="https://gracefullight.dev/2025/10/21/fundamentals-of-data-analytics-011/#voting" class="hash-link" aria-label="Voting에 대한 직접 링크" title="Voting에 대한 직접 링크" translate="no">​</a></h3>
-<ul>
-<li class=""><strong>Hard voting</strong> selection process uses predicted class labels for majority rule voting.</li>
-<li class=""><strong>Soft voting</strong> uses the predicted probabilities given by each base model, and the class label with the maximum sum of its probabilities is selected.<!-- -->
-<ul>
-<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>P</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>c</mi><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{1}{N} \sum_{i=1}^{N} P_{i}(c|x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3262em;vertical-align:-0.345em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em">N</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9812em"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mord">∣</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></li>
-<li class="">where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span></span></span></span> is the number of base models, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>c</mi><mi mathvariant="normal">∣</mi><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P_{i}(c|x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mord">∣</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span> is the probability predicted by model <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em"></span><span class="mord mathnormal">i</span></span></span></span> for class <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">c</span></span></span></span> given input <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span>.</li>
-</ul>
-</li>
-</ul>]]></content>
-        <author>
-            <name>Eunkwang Shin</name>
-            <uri>https://github.com/gracefullight</uri>
-        </author>
-        <category label="fda" term="fda"/>
     </entry>
 </feed>
