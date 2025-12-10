@@ -1,7 +1,7 @@
 ---
 title: Conditional GAN Review
 date: 2025-12-07T15:12:58.610+11:00
-description: Conditional GAN review
+description: Conditional GAN Review
 authors: me
 tags:
   - ai
