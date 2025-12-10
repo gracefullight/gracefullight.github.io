@@ -32,3 +32,7 @@ tags:
 | jointly | together; in combination | together | 함께, 공동으로 |
 | in-the-wild | occurring in natural, uncontrolled environments | natural setting | 자연 환경에서 |
 | novelty | the quality of being new, original, or unusual | newness | 새로움, 참신함 |
+| palpitate | to beat rapidly or strongly | to throb | 두근거리다 |
+| prohibitively | in a way that is too expensive or too much | excessively | 엄두를 못낼 만큼, 엄청나게 |
+| ablate | to remove or destroy something by melting, vaporizing, or eroding | to remove | 제거하다 |
+| occlude | to block or obstruct something | to block | 가리다, 막다 |
