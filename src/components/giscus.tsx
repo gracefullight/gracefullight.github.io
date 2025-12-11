@@ -20,7 +20,7 @@ export default function Giscus() {
         lang={i18n.currentLocale}
         loading="lazy"
         mapping="url"
-        reactionsEnabled="1"
+        reactionsEnabled="0"
         repo="gracefullight/gracefullight.github.io"
         repoId="MDEwOlJlcG9zaXRvcnk3Njk3NDY3NQ=="
         strict="1"
