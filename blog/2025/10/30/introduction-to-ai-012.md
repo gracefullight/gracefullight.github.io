@@ -67,3 +67,10 @@ tags:
 - Examples:
   - `Partof(Wheel, Car)`: A wheel is part of a car (**one-to-one** relation).
   - `BunchOf({Wheel1, Wheel2, Wheel3, Wheel4})`: A car is a bunch of four wheels (**many-to-one** relation).
+- Link between `PartOf` and `BunchOf`:
+  - $\forall x (x \in s \implies PartOf(x, BunchOf(s)))$
+  - $\forall y \Big[\big(\forall x (x \in s \implies PartOf(x, y)\big) \implies PartOf(BunchOf(s), y)\Big]$
+- Why useful?
+  - Reasoning from individual `parts -> group -> larger object`.
+  - Avoiding ambiguity between: "this thing is part of", "these things together form"
+  - Without `BunchOf`, ontologies cannot represent: piles, colleciton, aggregates, composite physical structures.
