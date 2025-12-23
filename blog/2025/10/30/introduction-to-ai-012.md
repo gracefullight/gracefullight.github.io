@@ -21,3 +21,27 @@ tags:
     - Properties: Attributes (e.g. hasPart, hasColor).
     - Relations: Connection rules (e.g. MemberOf, SubsetOf).
     - Constraints: Logical constraints (e.g. disjointness, transitivity) that enable inference.
+
+### Requirement of hierarchices
+
+- Inclusiveness
+- Species/differentia
+- Inheritance
+- Transitivity
+- Systematic and predictable rules for association and distinction
+- Mutual exclusivity
+- Necessary and sfficient criteria
+
+### Advantage of hierarchical approach
+
+- Inferring from incomplete evidence (if the shared criteria are not obvious or easily observable).
+  - `Animal → Mammal → Dog`: If an entity is classified as a *Mammal*, we can infer properties such as *having fur* and *giving live birth*, even if the entity is not explicitly identified as a *Dog*.
+- Excellent representations in mature domains
+  - Domains where entities and relationships are well understood and stable
+  - e.g. medical diagnosis, biological taxonomy, type systems in programming languages.
+- Useful for entities that are well defined and have clear class boudnaries.
+  - Good fit: HTTP status codes, chemical elements, and biological species
+  - Poor fit: emotions, social roles, and cultural practices
+- Some theory or model is necessary to guide the identification
+  - Provides criteria for defining entities and relationships
+  - e.g. Evolutionary theory in biological taxonomy, Type theory in programming languages
