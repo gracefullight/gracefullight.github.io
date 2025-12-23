@@ -24,13 +24,15 @@ tags:
 
 ### Requirement of hierarchices
 
-- Inclusiveness
-- Species/differentia
-- Inheritance
-- Transitivity
+- Inclusiveness: `Dog ⊆ Mammal ⊆ Animal`
+- Species/differentia: `Dog = Mammal + (barks, canine traits, etc.)`
+- Inheritance: `Mammal: has_fur, gives_live_birth` → `Dog: inherits all Mammal properties`
+- Transitivity: If `Dog ⊆ Mammal` and `Mammal ⊆ Animal`, then `Dog ⊆ Animal`
 - Systematic and predictable rules for association and distinction
-- Mutual exclusivity
-- Necessary and sfficient criteria
+- Mutual exclusivity: `Reptile ∩ Mammal = ∅`
+- Necessary and sfficient criteria:
+  - Necessary: $\forall x,\ \text{Mammal}(x) \Rightarrow \text{Vertebrate}(x) \land \text{ProducesMilk}(x)$
+  - Sufficient: $\forall x,\ \text{Vertebrate}(x) \land \text{ProducesMilk}(x) \Rightarrow \text{Mammal}(x)$
 
 ### Advantage of hierarchical approach
 
@@ -45,3 +47,23 @@ tags:
 - Some theory or model is necessary to guide the identification
   - Provides criteria for defining entities and relationships
   - e.g. Evolutionary theory in biological taxonomy, Type theory in programming languages
+
+### Partition
+
+> A partition of a category is a set of subcategories that form a disjoint, exhaustive composition of that category.
+
+- Disjoint: Two or more categories are disjoint if they don't share common members.
+- Exhaustive composition: The subcategories together cover all members of the parent category, leaving no member unclassified.
+- Examples:
+  - ❌ Category: Animal (Not a partition)
+    - Mammal, Bird (Reptiles, fish, insects are missing, not exhaustive)
+  - ✅ Category: Integer (Partition)
+    - Even, Odd (Disjoint and exhaustive)
+
+### Physical composition
+
+- **PartOf** Relation: `Partof(a, b)` is a relation representing that one thing, 'a', is a part of another thing, 'b'.
+- **BunchOf** Relation: `BunchOf(a)` is a relation, taking a set of objects 'a', to represent a composite object made up of those parts.
+- Examples:
+  - `Partof(Wheel, Car)`: A wheel is part of a car (**one-to-one** relation).
+  - `BunchOf({Wheel1, Wheel2, Wheel3, Wheel4})`: A car is a bunch of four wheels (**many-to-one** relation).

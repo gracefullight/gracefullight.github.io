@@ -46,3 +46,4 @@ tags:
 | counterargument | an argument made to oppose another argument | opposing argument | 반론 |
 | walk sb through sth | to slowly and carefully explain something to someone or show someone how to do something | to explain step-by-step | ~에게 ~을 차근차근 설명하다 |
 | transitivity | the property of a relation where if A relates to B and B relates to C, then A relates to C | relational property | 추이성 |
+| exhaustive | including all possibilities; comprehensive | complete | 철저한, 포괄적인 |
