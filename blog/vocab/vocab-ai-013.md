@@ -59,3 +59,4 @@ tags:
 | undergo | to experience or be subjected to something | to experience | 겪다 |
 | discernible | able to be perceived or recognized | noticeable | 인지할 수 있는 |
 | sliceable | able to be cut into thin, flat pieces | cuttable | 얇게 자를 수 있는 |
+| substance | a particular kind of matter with uniform properties | material | 물질 |

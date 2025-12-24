@@ -48,7 +48,7 @@ tags:
   - Provides criteria for defining entities and relationships
   - e.g. Evolutionary theory in biological taxonomy, Type theory in programming languages
 
-### Partition
+## Partition
 
 > A partition of a category is a set of subcategories that form a disjoint, exhaustive composition of that category.
 
@@ -60,7 +60,7 @@ tags:
   - ✅ Category: Integer (Partition)
     - Even, Odd (Disjoint and exhaustive)
 
-### Physical composition
+## Physical composition
 
 - **PartOf** Relation: `Partof(a, b)` is a relation representing that one thing, 'a', is a part of another thing, 'b'.
 - **BunchOf** Relation: `BunchOf(a)` is a relation, taking a set of objects 'a', to represent a composite object made up of those parts.
@@ -74,3 +74,25 @@ tags:
   - Reasoning from individual `parts -> group -> larger object`.
   - Avoiding ambiguity between: "this thing is part of", "these things together form"
   - Without `BunchOf`, ontologies cannot represent: piles, colleciton, aggregates, composite physical structures.
+
+## Measurements
+
+- Quantitive measures (Ratio, Interval)
+  - Represented as numbers with units
+  - Support arithmetic and unit conversion
+  - Enable numeric reasoing (e.g. 2.54cm = 1 inch)
+- Non-quantitative measures (Ordinal)
+  - Cannot be meaningufully represented as numbers
+  - Can still be compared using ordering relactions (`<`, `>`, `=`)
+  - Suppor qualitative reasoning (e.g. one task is more difficult than another)
+- Stuff
+  - Represents substances
+  - Uncountable masses
+  - Definitions include only **intrinsic** properties (e.g. Butter, Unsalted Butter)
+  - $b \in Butter \land PartOf(p, b) \implies p \in Butter$
+- Things
+  - Represents discrete objects
+  - Countable entities
+  - Definitions include **extrinsic** properties (e.g. PoundOfButter, StickOfButter)
+    - It depends on measurement
+    - It depends on contextual constraints
