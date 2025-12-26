@@ -239,3 +239,42 @@ Lecturer -->|teaches| Course
 | Alice | Student | $enrolledIn(CS101)$, $assessedBy(Prof.Smith)$ |
 | Prof.Smith | Lecturer | $memberOf(Lecturer)$, $teaches(CS101)$ |
 | CS101 | Course | $belongsTo(CSDepartment)$ |
+
+## Knowledge graph
+
+- represents information and its relationships using a graph structure.
+- Nodes: entities or concepts (e.g. people, places, things).
+- Edges: relationships between nodes (e.g. "is a", "part of", "located in").
+
+### Types of Knowledge Graphs
+
+- General Knowledge Graphs
+- Domain-Specific Knowledge Graphs
+- Semantic Knowledge Graphs
+- Social Knowledge Graphs
+- Temporal Knowledge Graphs
+- Special Knowledge Graphs
+- Statistical Knowledge Graphs
+- Probabilistic Knowledge Graphs
+- Textual Knowledge Graphs
+- Multi-modal Knowledge Graphs
+
+#### General Knowledge Graphs
+
+- Comprehensive information representation
+- Entity-Relationship Structure
+- Linked Data
+- Semantic Enrichment
+- Capabilities & Use Cases
+  - Querying and Analysis
+  - Data Integration
+  - ML and AI applications
+
+#### Examples
+
+- DBPedia
+- Wikidata
+- YAGO
+- Google Knowledge Graph
+- Microsoft Academic Graph
+- IBM Watson Knowledge Studio
