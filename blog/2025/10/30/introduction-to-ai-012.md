@@ -306,3 +306,8 @@ Lecturer -->|teaches| Course
 ## RDF
 
 > Resource Description Framework (RDF)
+
+- Triple Structure: `subject -> predicate -> object`
+- Subject: represents the resource being described or identified by a URI.
+- Predicate (or Property): desribes the relationship between the subject and the object. also represented by a URI.
+- Object: represents the value or target of the relationship. It can be a URI or a literal (a string, number, or date).
