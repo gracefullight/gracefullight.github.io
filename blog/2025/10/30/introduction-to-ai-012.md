@@ -151,3 +151,91 @@ tags:
     - $On(A, X)$: A is now on position X
     - $Clear(B)$: B is now clear
     - $Clear(X)$: X is no longer clear (X is now occupied by A)
+
+## Semantic networks
+
+- Visually represent a knowledge base.
+- Support efficient inference.
+- Allow properties of an object ot be inferred from its category membership.
+- Representing individual objects, categories of objects, and relations among objects.
+- Categories are the primary buildling blokcs of large-scale knowledge representation schemes.
+
+```mermaid
+graph LR
+Bird -->|is a| Animal
+Bird -->|can| Fly
+Bird --> |has part| Wings
+Penguin -->|is a| Bird
+Penguin -->|cannot| Fly
+Cockatoo -->|is a| Bird
+Cockatoo -->|has color| White
+```
+
+### Taxonomy hierarchy
+
+- A hierarchical structure of categories
+- Each lower category is a more specific kind of its parent
+- Organized from general → specific
+
+```mermaid
+graph TD
+Anything
+Anything --- AbstractObjects
+Anything --- GeneralizedEvents
+
+AbstractObjects --- Sets
+AbstractObjects --- Numbers
+AbstractObjects --- RepresentationalObjects
+
+Sets --- Categories
+RepresentationalObjects --- Sentences
+RepresentationalObjects --- Measurements
+
+Measurements --- Times
+Measurements --- Weights
+
+GeneralizedEvents --- Intervals
+GeneralizedEvents --- Places
+GeneralizedEvents --- PhysicalObjects
+GeneralizedEvents --- Processes
+
+Intervals --- Moments
+PhysicalObjects --- Stuff
+PhysicalObjects --- Things
+
+Things --- Animals
+Things --- Agents
+Stuff --- Solid
+Stuff --- Liquid
+Stuff --- Gas
+
+Animals --- Humans
+Agents --- Humans
+```
+
+### University Ontology
+
+```mermaid
+graph TD
+Alice -->|enrolled in| CS101
+Alice -->|assessed by| Prof.Smith
+Alice -->|member of| Student
+
+CS101 -->|member of| Course
+CS101 -->|belongs to| CSDepartment
+
+CSDepartment -->|member of| Department
+CSDepartment -->|belongs to| Course
+
+Student -->|subset of| Person
+Lecturer -->|subset of| Person
+
+Prof.Smith -->|memberOf| Lecturer
+Lecturer -->|teaches| Course
+```
+
+| Entity | Class | Example Statemnets |
+| --- | --- | --- |
+| Alice | Student | $enrolledIn(CS101)$, $assessedBy(Prof.Smith)$ |
+| Prof.Smith | Lecturer | $memberOf(Lecturer)$, $teaches(CS101)$ |
+| CS101 | Course | $belongsTo(CSDepartment)$ |
