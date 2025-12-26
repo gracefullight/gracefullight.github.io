@@ -132,3 +132,22 @@ tags:
 - T(On(Box, Table), 12, 20)
 - Terminates(RemoveBoxFromTable, On(Box, Table), 20)
   - Terminated(On(box, table), 18, 22)
+
+### Successor-state axiom
+
+> 후속상태공리
+
+- Define how the world changes after an action occurs.
+  - what changes when an action happens
+  - what stays the same.
+- Without successor-state axioms, we face the frame problem:
+  - after every action, we would need to explicitly list all facts that did not change.
+- $Move(A, B, X)$: moving block A from the top of block B to position X.
+  - Preconditions:
+    - $On(A, B)$: A is on top of B
+    - $Clear(A)$: nothing is on top of A
+    - $Clear(X)$: nothing is on position X
+  - Effects:
+    - $On(A, X)$: A is now on position X
+    - $Clear(B)$: B is now clear
+    - $Clear(X)$: X is no longer clear (X is now occupied by A)
