@@ -272,9 +272,37 @@ Lecturer -->|teaches| Course
 
 #### Examples
 
-- DBPedia
+- DBPedia: RDF, resource descritions framework
 - Wikidata
 - YAGO
 - Google Knowledge Graph
 - Microsoft Academic Graph
 - IBM Watson Knowledge Studio
+
+### Reasoning for categories
+
+- Infer the presence of certain objects from perceptual input
+- Infer category membership from perceived properties
+- Use category information to make predictions
+- It enables an agent to identify objects from observed properties and to predict further characteristics using category knowledge.
+
+### Reasoning using Semantic networks
+
+- Semantic networks are:
+  - systems designed specifically for organizing categories reasoning with categories.
+  - Provide graphical representations of a knowledge base
+- Using a semanctic network, reasoning can be performed based on:
+  - relationships between objects
+  - category membership
+  - inheritance between categories
+  - properties associated with categories
+  - Allows an object to inherit general knowledge from its category.
+- The inheritance algorithm:
+  - Starts from the object itself
+  - Follows links upwards through the category hierarchy
+  - Stops as soon as it finds a value for the property
+  - This suppors efficient reasoning, default values, and exception handling.
+
+## RDF
+
+> Resource Description Framework (RDF)
