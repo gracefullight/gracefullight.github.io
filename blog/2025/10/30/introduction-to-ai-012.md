@@ -85,6 +85,9 @@ tags:
   - Cannot be meaningufully represented as numbers
   - Can still be compared using ordering relactions (`<`, `>`, `=`)
   - Suppor qualitative reasoning (e.g. one task is more difficult than another)
+
+### Objects
+
 - Stuff
   - Represents substances
   - Uncountable masses
@@ -96,3 +99,36 @@ tags:
   - Definitions include **extrinsic** properties (e.g. PoundOfButter, StickOfButter)
     - It depends on measurement
     - It depends on contextual constraints
+
+### Time
+
+- Fluent: a condition whose truth value can change over time.
+  - e.g. "The box is on the table", $On(box, table)$, $On(box, table, t)$
+  - a time-dependent proposition.
+- Time scale and absolute time
+  - Ontology represents time along a single continuous timeline with a fixed reference point.
+  - $Date(0, 20, 21, 24, 1, 1995) = Seconds(300000000)$
+  - It allows arithmetic operations on time and comparisons between time points.
+- Time intertvals
+  - Time can be represented as moments (instants) or intervals (durations).
+  - $Duration(i) = Time(End(i)) - Time(Start(i))$
+- Partition of time
+  - $Partition({Moments, ExtendedIntervals}, Intervals)$
+  - All time intervals can be partitioned into moments and extended (non-zero-length) intervals.
+  - It provides a complete and precise ontology of time.
+
+#### Event calculus
+
+- $T(f, t_1, t_2)$: Fluent $f$ is true for all time between time $t_1$ and $t_2$.
+- $Happens(e, t_1, t_2)$: Event $e$ start at time $t_1$ and ends at time $t_2$.
+- $Initiate(e, f, t)$: Event $e$ causes fluent $f$ to become true at time $t$.
+- $Terminates(e, f, t)$: Event $e$ causes fluent $f$ to cease to be true at time $t$.
+- $Initiated(f, t_1, t_2)$: Fluent $f$ becomes true at some point between $t_1$ and $t_2$.
+- $Terminated(f, t_1, t_2)$: Fluent $f$ ceases to be true at some point between $t_1$ and $t_2$.
+- $t_1 < t_2$: Time point $t_1$ occurs before time point $t_2$.
+- Happens(PutBoxOnTable, 10, 12)
+- Initiate(PutBoxOnTable, On(Box, Table), 12)
+  - Initiated(On(box, table), 10, 12)
+- T(On(Box, Table), 12, 20)
+- Terminates(RemoveBoxFromTable, On(Box, Table), 20)
+  - Terminated(On(box, table), 18, 22)
