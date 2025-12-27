@@ -288,6 +288,7 @@ const config: Config = {
         "http",
         "ini",
         "java",
+        "openqasm",
         "php",
         "scss",
         "yaml",
