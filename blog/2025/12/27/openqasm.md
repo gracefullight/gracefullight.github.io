@@ -36,6 +36,21 @@ measure q[1] -> c[1]; // 1
 measure q[2] -> c[2]; // 1
 ```
 
+## Linear Algebra
+
+### Vectors
+
+- In quantum computing, **vectors** represent quantum states.
+- A 2-dimensional vactor can be written as:
+- $|\psi\rangle = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix}$
+
+### Computational Basis
+
+$$ |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} $$
+
+- $|\psi\rangle$ is a linear combination of basis states as follows:
+- $ |\psi\rangle = \psi_0|0\rangle + \psi_1|1\rangle = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix} $
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
