@@ -51,6 +51,20 @@ $$ |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pm
 - $|\psi\rangle$ is a linear combination of basis states as follows:
 - $ |\psi\rangle = \psi_0|0\rangle + \psi_1|1\rangle = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix} $
 
+### Indentity Matrix
+
+- $\mathbb I \psi\rangle =  \begin{bmatrix} \psi_0 \\ \psi_1 \end{bmatrix}$
+- $\mathbb I^2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$
+
+### Conjugate Transpose
+
+- **Bra**: $|\psi\rangle^\dagger = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix}^\dagger = \begin{pmatrix} \overline{\psi_0} & \overline{\psi_1} \end{pmatrix} = \langle \psi|$
+  - $\langle \psi| := |\psi\rangle^\dagger$
+  - ket: $|\psi\rangle$
+  - bra: $\langle \psi|$
+  - bra + ket: dot product $\langle \phi|\psi\rangle$
+- **Dagger**: $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \implies A^\dagger = \begin{bmatrix} \overline{a} & \overline{c} \\ \overline{b} & \overline{d} \end{bmatrix}$
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
