@@ -65,6 +65,17 @@ $$ |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pm
   - bra + ket: dot product $\langle \phi|\psi\rangle$
 - **Dagger**: $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \implies A^\dagger = \begin{bmatrix} \overline{a} & \overline{c} \\ \overline{b} & \overline{d} \end{bmatrix}$
 
+```py
+psi_dagger = psi.conjugate().T
+psi_dagger = psi.conjugate().transpose()
+psi_dagger = psi.H
+```
+
+- $(\alpha A)\dagger = \overline\alpha A^\dagger$
+- $(A^\dagger)^\dagger = A$
+- $(A + B)^\dagger = A^\dagger + B^\dagger$
+- $(AB)^\dagger = B^\dagger A^\dagger$
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
