@@ -76,6 +76,36 @@ psi_dagger = psi.H
 - $(A + B)^\dagger = A^\dagger + B^\dagger$
 - $(AB)^\dagger = B^\dagger A^\dagger$
 
+### Hermitian
+
+- A matrix is equal to its conjugate transpose.
+- $H = H^\dagger$
+
+```py
+A_dagger = A.H
+AA_dagger = A * A_dagger
+# (AA†)†=AA†?
+is_hermitian = AA_dagger.is_hermitian
+```
+
+### Unitary
+
+- A matrix whose conjugate transpose is also its inverse.
+- $U^\dagger U = U U^\dagger = \mathbb I$
+- $U = \begin{pmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{pmatrix}$
+
+```py
+U = Matrix([
+  [cos(theta), sin(theta)], 
+  [-sin(theta), cos(theta)]
+])
+
+U_dagger = U.H
+U_dagger_U = trigsimp(U_dagger * U)
+
+is_unitary = U_dagger_U == I
+```
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
