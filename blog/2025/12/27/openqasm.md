@@ -106,6 +106,13 @@ U_dagger_U = trigsimp(U_dagger * U)
 is_unitary = U_dagger_U == I
 ```
 
+### Inner Product
+
+- $\langle \psi|\phi\rangle = \begin{pmatrix} \overline{\psi_0} & \overline{\psi_1} \end{pmatrix} \begin{pmatrix} \phi_0 \\ \phi_1 \end{pmatrix} = \overline{\psi_0}\phi_0 + \overline{\psi_1}\phi_1$
+- $|\langle \psi|\phi\rangle|^2 = \langle \psi|\phi\rangle \langle \phi|\psi\rangle$
+
+### Orthogonality
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
