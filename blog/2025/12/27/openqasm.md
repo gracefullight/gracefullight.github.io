@@ -135,7 +135,9 @@ $$\|\psi\rangle\|^2 = |\psi_0|^2 + |\psi_1|^2$$
 - $\|\psi\rangle\| = \sqrt{\langle \psi|\psi\rangle} = \sqrt{|\psi_0|^2 + |\psi_1|^2}$
 - $\| |\psi\rangle\|^2 = \langle \psi|\psi\rangle$
   - $\langle \psi|\psi\rangle = \overline{\psi_0}\psi_0 + \overline{\psi_1}\psi_1 = |\psi_0|^2 + |\psi_1|^2$
-  
+
+### Outer product
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.

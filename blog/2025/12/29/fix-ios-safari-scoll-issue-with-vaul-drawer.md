@@ -52,14 +52,14 @@ Vaul 컴포넌트에 다음 옵션을 추가하여 Safari의 불완전한 스타
 >
 ```
 
-- disablePreventScroll
+- `disablePreventScroll={true}`
   - Vaul이 body에 강제로 스크롤 락 스타일을 적용하지 않도록 한다
   - iOS에서 발생하는 스크롤 점프 현상을 완화
   - 단, Drawer가 열려 있는 동안 배경 스크롤이 허용될 수 있음
-- repositionInputs={false}
+- `repositionInputs={false}`
   - 가상 키보드 대응을 위한 viewport 재배치 로직 비활성화
   - iOS Safari에서 input + 모달 조합 시 발생하는 레이아웃 충돌 방지
-- shouldScaleBackground={false}
+- `shouldScaleBackground={false}`
   - Drawer 오픈 시 배경을 scale 처리하지 않음
   - 불필요한 body 스타일 변경을 줄여 안정성 확보
 
