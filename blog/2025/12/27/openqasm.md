@@ -110,9 +110,32 @@ is_unitary = U_dagger_U == I
 
 - $\langle \psi|\phi\rangle = \begin{pmatrix} \overline{\psi_0} & \overline{\psi_1} \end{pmatrix} \begin{pmatrix} \phi_0 \\ \phi_1 \end{pmatrix} = \overline{\psi_0}\phi_0 + \overline{\psi_1}\phi_1$
 - $|\langle \psi|\phi\rangle|^2 = \langle \psi|\phi\rangle \langle \phi|\psi\rangle$
+- $|\langle\psi|\phi\rangle| = |\langle\phi|\psi\rangle|$
 
 ### Orthogonality
 
+- $|0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$
+  - orthonormal basis
+- $\langle 0 | 1 \rangle = \begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = 0$
+  - $\langle 1 | 0 \rangle = 0$
+- $\langle 0 | 0 \rangle = \begin{pmatrix} 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix} = 1$
+  - $\langle 1 | 1 \rangle = 1$
+
+$$\langle \psi|\phi\rangle = \overline{\psi_0}\phi_0 + \overline{\psi_1}\phi_1$$
+
+- $|\psi\rangle = \psi_0|0\rangle + \psi_1|1\rangle, \quad |\phi\rangle = \phi_0|0\rangle + \phi_1|1\rangle$
+- $\langle \psi| = \overline{\psi_0}\langle 0| + \overline{\psi_1}\langle 1|$
+- $\langle \psi|\phi\rangle = \overline{\psi_0}\phi_0\langle 0|0\rangle + \overline{\psi_0}\phi_1\langle 0|1\rangle + \overline{\psi_1}\phi_0\langle 1|0\rangle + \overline{\psi_1}\phi_1\langle 1|1\rangle$
+- $\langle 0|1\rangle = 0, \quad \langle 1|0\rangle = 0$
+
+### Magnitude
+
+$$\|\psi\rangle\|^2 = |\psi_0|^2 + |\psi_1|^2$$
+
+- $\|\psi\rangle\| = \sqrt{\langle \psi|\psi\rangle} = \sqrt{|\psi_0|^2 + |\psi_1|^2}$
+- $\| |\psi\rangle\|^2 = \langle \psi|\psi\rangle$
+  - $\langle \psi|\psi\rangle = \overline{\psi_0}\psi_0 + \overline{\psi_1}\psi_1 = |\psi_0|^2 + |\psi_1|^2$
+  
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
