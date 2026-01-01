@@ -1,7 +1,7 @@
 ---
 title: End of Year Retro 2025
-date: 2025-12-31T15:43:35.574+11:00
-description: End of Year Retro 2025
+date: 2026-01-01T16:43:35.574+11:00
+description: 2025년의 다사다난했던 여정과 시드니에서의 새로운 도전에 대한 회고
 authors: me
 tags:
   - me
