@@ -60,10 +60,12 @@ const config: Config = {
   },
 
   markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
     mermaid: true,
   },
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn", // Usually your GitHub org/user name.
 
   // ? https://docusaurus.io/docs/deployment#deploying-to-github-pages
   // GitHub pages deployment config.
