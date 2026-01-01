@@ -1,46 +1,44 @@
-name: Node CI
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "package.json"
+      - "pnpm-lock.yaml"
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-    permissions:
-      contents: read
-
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-
-    env:
-      GIT_USER: ${{ secrets.GIT_USER }}
-      GIT_PASS: ${{ secrets.GIT_PASS }}
-
-    strategy:
-      matrix:
-        node-version: [24.x]
-
     steps:
-      - uses: actions/checkout@main
-      - uses: pnpm/action-setup@master
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      - name: SETUP_NODE_${{ matrix.node-version }}
-        uses: actions/setup-node@main
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 24
+          cache: "pnpm"
 
-      - name: BEFORE_SCRIPT
-        run: |
-          git config --global user.name 'gracefullight'
-          git config --global user.email 'gracefullight.dev@gmail.com'
-
-      - name: INSTALL_PACKAGES
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: BUILD
-        run: pnpm run build
+      - name: Build website
+        run: pnpm build
 
-      - name: DEPLOY
-        run: pnpm run deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
