@@ -180,6 +180,18 @@ $$ H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} $$
 
 $$ R(\theta) = \begin{pmatrix} \cos{\theta} & \sin{\theta} \\ -\sin{\theta} & \cos{\theta} \end{pmatrix} $$
 
+## The Bloch Sphere
+
+$$ |\psi\rangle = \cos(\theta) |0\rangle + e^{i\phi}\sin(\theta)|1\rangle $$
+
+- where $0 \leq \theta \leq \pi$ and $0 \leq \phi < 2\pi$.
+- $\theta$: the polar (or colatitude) angle, measured from the "north pole" of the sphere.
+  - polar angle: 편각
+- $\phi$: the azimuthal (or longitude) angle around the equator.
+  - azimuthal angle: 방위각
+
+![bloch_sphere](./bloch.png)
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
@@ -199,3 +211,7 @@ $$ R(\theta) = \begin{pmatrix} \cos{\theta} & \sin{\theta} \\ -\sin{\theta} & \c
 - `\newcommand{\ket}[1]{\left|#1\right\rangle}`: defines a custom command for ket notation. `\ket{\psi}`
 - `\tag{}`: Assigns a custom tag to an equation.
 - `\unicode{}`: Inserts a Unicode character using its code.
+
+## Ref
+
+- [OpenQASM 2.0](https://github.com/openqasm/openqasm/tree/OpenQASM2.x)
