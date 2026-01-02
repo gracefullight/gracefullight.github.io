@@ -138,6 +138,48 @@ $$\|\psi\rangle\|^2 = |\psi_0|^2 + |\psi_1|^2$$
 
 ### Outer product
 
+- $|\psi\rangle\langle\phi| = (\psi_0 | 0\rangle + \psi_1 |1\rangle)(\overline{\phi_0}\langle 0| + \overline{\phi_1}\langle 1|) \\ \quad =\psi_0\overline{\phi_0}|0\rangle\langle 0| + \psi_0\overline{\phi_1}|0\rangle\langle 1| + \psi_1\overline{\phi_0}|1\rangle\langle 0| + \psi_1\overline{\phi_1}|1\rangle\langle 1|$
+- $|\psi\rangle\langle\phi| = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix} \begin{pmatrix} \overline{\phi_0} & \overline{\phi_1} \end{pmatrix} = \begin{pmatrix} \psi_0\overline{\phi_0} & \psi_0\overline{\phi_1} \\ \psi_1\overline{\phi_0} & \psi_1\overline{\phi_1} \end{pmatrix}$
+- $|0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 & 1 \end{pmatrix}$
+- $|0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$
+- $A = \begin{pmatrix} a_{00} & a_{0 1} \\ a_{1 0} & a_{1 1} \end{pmatrix} \\ \quad = a_{00}|0\rangle\langle 0| + a_{01}|0\rangle\langle 1| + a_{10}|1\rangle\langle 0| + a_{11}|1\rangle\langle 1|$
+
+## Qubit
+
+$$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$
+
+- where $\alpha, \beta$ are complex numbers satisfying $|\alpha|^2 + |\beta|^2 = 1$.
+- phase factor: $e^{i\phi}$, turn the state by angle $\phi$ in the complex plane, but does not affect measurement probabilities.
+  - $|e^{i\phi}| = 1$
+
+## One-Qubit Gates
+
+### Identity Gate
+
+$$ \mathbb{I} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} $$
+
+### Pauli-X Gate
+
+$$ X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} $$
+
+- NOT gate
+
+### Pauli-Y Gate
+
+$$ Y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} $$
+
+### Pauli-Z Gate
+
+$$ Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $$
+
+### Hadamard Gate
+
+$$ H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} $$
+
+### Rotation Gate
+
+$$ R(\theta) = \begin{pmatrix} \cos{\theta} & \sin{\theta} \\ -\sin{\theta} & \cos{\theta} \end{pmatrix} $$
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
