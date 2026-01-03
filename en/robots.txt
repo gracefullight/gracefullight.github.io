@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /__docusaurus/
+Sitemap: https://gracefullight.dev/sitemap.xml
+Host: gracefullight.dev
+
+#DaumWebMasterTool:54826cb0130c68e17202484289606b49d84d02d3644d982e3ddbfbe3ffa3e234:PgjqoJYrJ90mzvIl6oTbow==
