@@ -144,6 +144,16 @@ $$\|\psi\rangle\|^2 = |\psi_0|^2 + |\psi_1|^2$$
 - $|0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$
 - $A = \begin{pmatrix} a_{00} & a_{0 1} \\ a_{1 0} & a_{1 1} \end{pmatrix} \\ \quad = a_{00}|0\rangle\langle 0| + a_{01}|0\rangle\langle 1| + a_{10}|1\rangle\langle 0| + a_{11}|1\rangle\langle 1|$
 
+### Tensor Product
+
+- $|\psi\rangle \otimes |\phi\rangle = \begin{pmatrix} \psi_0 \\ \psi_1 \end{pmatrix} \otimes \begin{pmatrix} \phi_0 \\ \phi_1 \end{pmatrix} = \begin{pmatrix} \psi_0\phi_0 \\ \psi_0\phi_1 \\ \psi_1\phi_0 \\ \psi_1\phi_1 \end{pmatrix}$
+- $|\psi\rangle \otimes |\phi\rangle \equiv |\psi\rangle|\phi\rangle \equiv |\psi\phi\rangle$
+- $A \otimes B = \begin{pmatrix} a_{00}B & a_{01}B \\ a_{10}B & a_{11}B \end{pmatrix}$
+- $|0\rangle \langle 1| \otimes |1\rangle \langle 0| = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \otimes \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$
+- $|0\rangle \langle 1| \otimes |1\rangle \langle 0| = \begin{pmatrix} 0\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} & 1\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} \\ 0\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} & 0\begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}$
+- $|0\rangle \langle 1| \otimes |1\rangle \langle 0| \equiv (|0\rangle \otimes |1\rangle)(\langle 1| \otimes \langle 0|) \\ \quad \equiv |0\rangle|1\rangle \langle 0|\langle 1| \\ \quad \equiv |01\rangle \langle 10|$
+  - $ket \otimes ket, \quad bra \otimes bra$
+
 ## Qubit
 
 $$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$$
