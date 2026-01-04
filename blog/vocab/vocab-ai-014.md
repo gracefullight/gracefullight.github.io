@@ -36,3 +36,4 @@ tags:
 | prohibitively | in a way that is too expensive or too much | excessively | 엄두를 못낼 만큼, 엄청나게 |
 | ablate | to remove or destroy something by melting, vaporizing, or eroding | to remove | 제거하다 |
 | occlude | to block or obstruct something | to block | 가리다, 막다 |
+| can be factored into | can be included as a factor in | can be included | 인수분해 가능한 |

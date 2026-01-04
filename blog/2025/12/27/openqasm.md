@@ -202,6 +202,38 @@ $$ |\psi\rangle = \cos(\theta) |0\rangle + e^{i\phi}\sin(\theta)|1\rangle $$
 
 ![bloch_sphere](./bloch.png)
 
+## Bases
+
+- **Computational Basis**: $\{|0\rangle, |1\rangle\}$
+- two qubits: $\{|00\rangle, |01\rangle, |10\rangle, |11\rangle\}$
+- three qubits: $\{|000\rangle, |001\rangle, |010\rangle, |011\rangle, |100\rangle, |101\rangle, |110\rangle, |111\rangle\}$
+
+## Rule of Thumb
+
+> What starts on the left of the tensor product stays on the left.
+
+- $|\psi\rangle \otimes |\phi\rangle \equiv |\psi\rangle|\phi\rangle \equiv |\psi\phi\rangle$
+- $(|\psi\rangle \otimes |\phi\rangle)^* = \langle\psi| \otimes \langle\phi|$
+- $(\alpha |\psi\rangle + \beta |\phi\rangle) \otimes |\omega\rangle = \alpha|\psi\rangle \otimes |\omega\rangle + \beta |\phi\rangle \otimes | \omega\rangle$
+- $(\langle\psi| \otimes \langle\phi|)(|\omega\rangle \otimes |\eta\rangle) = \langle\psi|\omega\rangle \cdot \langle\phi|\eta\rangle)$
+- $(A + B) \otimes C = A \otimes C + B \otimes C$
+- $A \otimes (B + C) = A \otimes B + A \otimes C$
+- $(A \otimes B)(C \otimes D) = (AC) \otimes (BD)$
+- $(A \otimes B)^* = A^* \otimes B^*$
+
+## Entanglement
+
+- $|\Psi\rangle = \alpha_{00} |00\rangle + \alpha_{01} |01\rangle + \alpha_{10} |10\rangle + \alpha_{11} |11\rangle$
+  - where $\|\Psi\rangle\|^2 = 1$
+- If the state is not separable, it is **entangled**.
+- A state is separable if it can be written as a tensor product of two individual qubit state.
+- $|\Psi\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |01\rangle) \\ \quad = \frac{1}{\sqrt{2}} |0\rangle \otimes (|0\rangle + |1\rangle) \\ \quad = |0\rangle \otimes \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)$
+  - separable
+- $|\Phi\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)$
+  - $|\Phi\rangle = (a|0\rangle + b|1\rangle) \otimes (c|0\rangle + d|1\rangle) \\ \quad = ac|00\rangle + ad|01\rangle + bc|10\rangle + bd|11\rangle$
+  - $ad = 0, \quad bc = 0$ which is impossible.
+  - entangled
+
 ## Latex
 
 - `\texttip{}`: Displays a tooltip when hovering over the equation.
