@@ -11,7 +11,6 @@ tags:
 
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
-| Calm down | To become less agitated or upset | Relax | 진정되다, 가라앉다 |
 | Get together (with ~) | TO meet and spend time with each other | Meet up (with ~) | 만나서 함께 시간을 보내다 |
 | Find out ~ / Find ~ out | To discover some information | Learn (about) ~ | ~을 알아내다, 발견하다 |
 | Take after ~ | To resemble or behave like an older family member | Resemble ~ | (외모, 성격이) ~을 닮다 |

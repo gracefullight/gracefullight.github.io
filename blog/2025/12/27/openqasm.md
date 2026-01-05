@@ -202,6 +202,28 @@ $$ |\psi\rangle = \cos(\theta) |0\rangle + e^{i\phi}\sin(\theta)|1\rangle $$
 
 ![bloch_sphere](./bloch.png)
 
+## Two-Qubit Gates
+
+### CNOT Gate
+
+> Controlled-NOT or CX gate
+
+$$ CNOT = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{pmatrix} $$
+
+- CNOT gate flips the second qubit (target) if the first qubit (control) is $|1\rangle$.
+
+### SWAP Gate
+
+$$ SWAP = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix} $$
+
+- SWAP gate exchanges the states of the two qubits.
+
+### Controlled-Z Gate
+
+$$ CZ = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} $$
+
+- CZ gate applies a Z gate to the second qubit if the first qubit is in state $|1\rangle$.
+
 ## Bases
 
 - **Computational Basis**: $\{|0\rangle, |1\rangle\}$
