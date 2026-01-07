@@ -22,3 +22,8 @@ tags:
 | Put up with ~ | To tolerate ~ | Tolerate ~ | ~를 참아내다 |
 | Turn one's back on ~ | To ignore ~ | Ignore ~ | ~에게 등을 돌리다, ~를 무시하다 |
 | Grow apart (from ~) | To become lesss close as time goes by | Become less close (to ~) | 시간이 지나면서 ~와 점점 사이가 멀어지다 |
+| Catch fire | To start bunning | Start burning | 불이 나다 |
+| Catch hell | To be criticized severely | Be severely criticized | 심하게 꾸중 듣다, 크게 혼나다 |
+| Catch lighting in a bottle | To succeed very luckily | Succeed luckily | 아주 운 좋게 성공하다 |
+| Long story short | To summarize something briefly | Summarize briefly | 간단히 말해서 |
+| in a nutshell | To summarize something briefly | Summarize briefly | 간단히 말해서 |
