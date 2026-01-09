@@ -23,3 +23,4 @@ tags:
 | Stick to ~ | To continue doing ~ even if it is difficult | Continue (doing ~) | 힘들어도 계속 ~를 하다 |
 | Cool down | To do light stretching after strenuous exercise | To relax the body after exercise | 격렬한 운동 후 가벼운 마무리 운동을 하다 |
 | strenuous | Requiring great effort and energy | Requiring great effort | 격렬한, 힘든 |
+| Take it slow | to do something carefully and gradually | Do something carefully | ~를 조심스레 서서히 조금씩 하다 |
