@@ -11,13 +11,13 @@ tags:
 
 ## Terminology
 
-- Drone-BS: Drone Base Station
-- GWO: Grey Wolf Optimizer, a nature-inspired optimization algorithm based on the social hierarchy and hunting behavior of grey wolves.
-- LOS: Line of Sight, a direct path between transmitter and receiver without obstructions.
-- MINLP: Mixed Integer Non-Linear Programming, an optimization problem involving both integer and continuous variables with non-linear relationships.
-- NLOS: Non-Line of Sight, a path between transmitter and receiver that is obstructed.
-- SINR: Signal to Interference plus Noise Ratio, a measure of signal quality.
-- UVA-BS: Unmanned Aerial Vehicle Base Station
+- **Drone-BS**: Drone Base Station
+- **GWO**: Grey Wolf Optimizer, a nature-inspired optimization algorithm based on the social hierarchy and hunting behavior of grey wolves.
+- **LOS**: Line of Sight, a direct path between transmitter and receiver without obstructions.
+- **MINLP**: Mixed Integer Non-Linear Programming, an optimization problem involving both integer and continuous variables with non-linear relationships.
+- **NLOS**: Non-Line of Sight, a path between transmitter and receiver that is obstructed.
+- **SINR**: Signal to Interference plus Noise Ratio, a measure of signal quality.
+- **UVA-BS**: Unmanned Aerial Vehicle Base Station
 
 ## Ref
 
