@@ -1,7 +1,7 @@
 ---
-title: comparative analysis of ml algorithms for 5g coverage prediction review
+title: Comparative analysis of ML algorithms for 5G coverage prediction review
 date: 2026-01-05T19:24:21.458+11:00
-description: comparative analysis of ml algorithms for 5g coverage prediction review
+description: Comparative analysis of ML algorithms for 5G coverage prediction review
 authors: me
 tags:
   - drone
