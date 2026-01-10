@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gracefullight.dev/en/</id>
+    <title>gracefullight.dev Blog</title>
+    <updated>2026-01-10T04:42:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gracefullight.dev/en/"/>
+    <subtitle>gracefullight.dev Blog</subtitle>
+    <icon>https://gracefullight.dev/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 006]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-006/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-006/"/>
+        <updated>2026-01-10T04:42:00.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 006]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-006/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>sinuses</td><td>The hollow spaces in the bones around the nose</td><td>Hollow spaces around the nose</td><td>부비동, 코곁굴</td></tr><tr><td>Good grief!</td><td>An expression of surprise or shock</td><td>Expression of surprise</td><td>세상에! / 맙소사!</td></tr><tr><td>It keeps getting worse</td><td>A phrase used to describe a situation that is continuously deteriorating</td><td>Continuously getting worse</td><td>점입가경이네</td></tr><tr><td>Go around</td><td>To spread or be contagious</td><td>Spread (contagious)</td><td>(질병이) 퍼지다</td></tr><tr><td>Be/Get stuffed up</td><td>To be/get congested</td><td>Be congested</td><td>(코가) 막히다</td></tr><tr><td>Come down with ~</td><td>To become sick with an illness</td><td>Become sick with ~</td><td>병에 걸려 아프다</td></tr><tr><td>Come back</td><td>To return</td><td>Return</td><td>돌아오다 / 테스트 결과가 나오다</td></tr><tr><td>strep throat</td><td>A bacterial infection that causes a sore throat</td><td>Bacterial sore throat</td><td>연쇄상구균 인두염</td></tr><tr><td>Pass out</td><td>To faint</td><td>Faint</td><td>기절하다</td></tr><tr><td>fumes</td><td>Strong, unpleasant, and often dangerous smells or gases</td><td>Strong unpleasant gases</td><td>유독 가스</td></tr><tr><td>Throw up</td><td>To vomit</td><td>Vomit</td><td>토하다</td></tr><tr><td>Break out in ~</td><td>To show signs of a rash</td><td>Show rash</td><td>두드러기나 발진 등이 생기다</td></tr><tr><td>hives</td><td>A skin condition characterized by red, itchy welts</td><td>Red itchy skin welts</td><td>두드러기</td></tr><tr><td>red spots</td><td>Small red marks on the skin</td><td>Small red marks</td><td>붉은 반점</td></tr><tr><td>Swell up</td><td>For a body part to swell as a result of infection or injury</td><td>Body part becomes swollen</td><td>(감염이나 부상으로 인해) 부어오르다</td></tr><tr><td>Fight off ~ / Fight ~ off</td><td>To resist illness or infection</td><td>Resist illness/infection</td><td>(병이나 감염을) 싸워 이겨내다</td></tr><tr><td>go around in circles</td><td>To keep doing the same thing without making any progress</td><td>Keep doing the same thing</td><td>제자리걸음하다</td></tr><tr><td>what goes around comes around</td><td>A saying that means the way you treat others will eventually come back to you</td><td>Treat others how you want to be treated</td><td>자업자득이다</td></tr><tr><td>nauseous</td><td>Feeling like you are going to vomit</td><td>Feeling like vomiting</td><td>메스꺼운</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Coverage analysis and Efficient placement of drone BS review]]></title>
+        <id>https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/</id>
+        <link href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/"/>
+        <updated>2026-01-09T05:55:50.188Z</updated>
+        <summary type="html"><![CDATA[Coverage analysis and Efficient placement of drone BS review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="summary">Summary<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#summary" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">This study reformulates Drone-BS 3D deployment as a SINR-based coverage probability optimization problem rather than a distance- or area-based one.</li>
+<li class="">By jointly considering LOS/NLOS propagation, altitude-dependent SINR behavior, and system constraints, the deployment problem is formulated as an NP-hard MINLP.</li>
+<li class="">A meta-heuristic optimizer (GWO) is used as a practical solver, demonstrating that high coverage can be achieved with a minimal number of Drone-BSs.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="introduction">Introduction<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#introduction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="background">Background<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#background" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">In 5G networks, Drone-BSs (UAV-BSs) have attracted significant attention as a promising solution to enhance coverage and capacity in dense urban environments.</li>
+<li class="">Although the use of the mmWave band enables high data rates, determining the optimal 3D deployment (horizontal location and altitude) of Drone-BSs has emerged as a critical challenge.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="limitations-of-existing-studies">Limitations of Existing Studies<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#limitations-of-existing-studies" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Assumption of fixed Drone-BS altitude</li>
+<li class="">Reliance on heuristic-based approaches</li>
+<li class="">Consideration of limited system constraints</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="objective-of-this-study">Objective of This Study<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#objective-of-this-study" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">This study aims to derive an optimal Drone-BS deployment strategy by combining</li>
+<li class="">SINR-based downlink coverage probability analysis and</li>
+<li class="">a meta-heuristic optimization algorithm, namely the Grey Wolf Optimizer (GWO).</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="methods">Methods<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="system-model">System Model<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#system-model" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Users (N) and Drone-BSs (M) are randomly distributed in an urban environment.</li>
+<li class="">A mmWave path loss model considering LOS and NLOS propagation conditions is applied.</li>
+<li class="">A predefined SINR threshold is used as the Quality-of-Service (QoS) criterion.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="coverage-probability-analysis">Coverage Probability Analysis<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#coverage-probability-analysis" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The probability that SINR exceeds a predefined threshold is derived based on stochastic geometry.</li>
+<li class="">Shadow fading is modeled as a Gaussian random variable.</li>
+<li class="">The downlink coverage probability is expressed using a Q-function formulation.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="optimization-problem-formulation">Optimization Problem Formulation<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#optimization-problem-formulation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Objective function<!-- -->
+<ul>
+<li class="">Maximize the number of covered users.</li>
+</ul>
+</li>
+<li class="">Constraints<!-- -->
+<ul>
+<li class="">Minimum number of deployed Drone-BSs</li>
+<li class="">Drone-BS altitude limits</li>
+<li class="">Total available bandwidth constraint</li>
+</ul>
+</li>
+<li class="">The problem is formulated as a Mixed Integer Non-Linear Programming (MINLP) problem and is NP-hard.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="solution-approach">Solution Approach<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#solution-approach" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The Grey Wolf Optimizer (GWO) is employed to search for the optimal 3D locations (x, y, h) of Drone-BSs.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="results">Results<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="simulation-setup">Simulation Setup<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#simulation-setup" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Area size: 2 × 2 km²</li>
+<li class="">Number of users: 200</li>
+<li class="">Maximum number of Drone-BSs: 10</li>
+<li class="">Carrier frequency: 28 GHz</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="key-findings">Key Findings<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#key-findings" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The downlink coverage probability increases as the Drone-BS altitude increases.</li>
+<li class="">A coverage probability of approximately 0.76–0.82 can be achieved with only five Drone-BSs.</li>
+<li class="">Reducing the number of Drone-BSs leads to uncovered regions.</li>
+<li class="">Increasing the number of Drone-BSs may result in higher inter-cell interference.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="discussion">Discussion<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#discussion" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="performance-analysis">Performance Analysis<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#performance-analysis" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The GWO-based deployment achieves high coverage performance while minimizing the number of Drone-BSs.</li>
+<li class="">Increasing altitude improves coverage but introduces a trade-off in terms of reduced energy efficiency.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="limitations-and-future-work">Limitations and Future Work<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#limitations-and-future-work" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The proposed approach does not consider blockage effects or handover and coverage overlap issues.</li>
+<li class="">These aspects are identified as important directions for future research.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="terminology">Terminology<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#terminology" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Drone-BS</strong>: Drone Base Station</li>
+<li class=""><strong>GWO</strong>: Grey Wolf Optimizer, a nature-inspired optimization algorithm based on the social hierarchy and hunting behavior of grey wolves.</li>
+<li class=""><strong>LOS</strong>: Line of Sight, a direct path between transmitter and receiver without obstructions.</li>
+<li class=""><strong>MINLP</strong>: Mixed Integer Non-Linear Programming, an optimization problem involving both integer and continuous variables with non-linear relationships.</li>
+<li class=""><strong>NLOS</strong>: Non-Line of Sight, a path between transmitter and receiver that is obstructed.</li>
+<li class=""><strong>SINR</strong>: Signal to Interference plus Noise Ratio, a measure of signal quality.</li>
+<li class=""><strong>UVA-BS</strong>: Unmanned Aerial Vehicle Base Station</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ref">Ref<a href="https://gracefullight.dev/en/2026/01/09/coverage-analysis-and-efficient-placement-of-drone-bs-review/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">Ouamri, M. A., Oteşteanu, M.-E., Barb, G., &amp; Gueguen, C. (2022). Coverage Analysis and Efficient Placement of Drone-BSs in 5G Networks. The 1st International Conference on Computational Engineering and Intelligent Systems, 18. <a href="https://doi.org/10.3390/engproc2022014018" target="_blank" rel="noopener noreferrer" class="">https://doi.org/10.3390/engproc2022014018</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="drone" term="drone"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 005]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-005/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-005/"/>
+        <updated>2026-01-09T03:45:00.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 005]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-005/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>Get in shape</td><td>To become more physically fit</td><td>Become more fit</td><td>몸매를 가꾸다, 건강해지다</td></tr><tr><td>Work out</td><td>To do exercise</td><td>Exercise</td><td>운동하다</td></tr><tr><td>rejuvenated</td><td>To feel more energetic and refreshed</td><td>Feel more energetic</td><td>활력이 넘치는</td></tr><tr><td>Go out</td><td>(With the body or utilities) When something stops functioning or does not function properly</td><td>Stop functioning</td><td>(신체나 설비 등이) 맛이 가버리다, 나가다</td></tr><tr><td>Put on (weight)</td><td>To gain (weight)</td><td>Gain (weight)</td><td>살찌다</td></tr><tr><td>Warm up</td><td>To do easy exercise or practice to prepare the body or mind for exercise or learning</td><td>Prepare the body/mind</td><td>준비운동 하다, 몸을 풀다</td></tr><tr><td>Keep off (weight) / Keep (weight) off</td><td>To not increase one's weight / To not add weight to something</td><td>Not gain weight</td><td>(체중을) 유지하거나 감량하다 / 무언가에 무게가 덜 실리게 하다</td></tr><tr><td>Go on (a diet)</td><td>To begin (a diet or nutriotional plan)</td><td>Begin (a diet)</td><td>(다이어트 또는 식단을) 시작하다</td></tr><tr><td>Take up ~ / Take ~ up</td><td>To begin doing a hobby or sport</td><td>Begin (a hobby/sport)</td><td>(취미나 운동을) 시작하다</td></tr><tr><td>Stick to ~</td><td>To continue doing ~ even if it is difficult</td><td>Continue (doing ~)</td><td>힘들어도 계속 ~를 하다</td></tr><tr><td>Cool down</td><td>To do light stretching after strenuous exercise</td><td>To relax the body after exercise</td><td>격렬한 운동 후 가벼운 마무리 운동을 하다</td></tr><tr><td>strenuous</td><td>Requiring great effort and energy</td><td>Requiring great effort</td><td>격렬한, 힘든</td></tr><tr><td>Take it slow</td><td>to do something carefully and gradually</td><td>Do something carefully</td><td>~를 조심스레 서서히 조금씩 하다</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 004]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-004/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-004/"/>
+        <updated>2026-01-07T13:34:00.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 004]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-004/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>Catch up with ~</td><td>To share recent news about each other</td><td>Share recent news</td><td>서로의 최근 소식을 나누다</td></tr><tr><td>Help out ~ / Help ~ out</td><td>To help ~ by doing something</td><td>Assist ~</td><td>도움이 필요한 ~를 도와주다</td></tr><tr><td>Let down ~ / Let ~ down</td><td>To disappoint ~</td><td>Disappoint ~</td><td>~를 실망시키다</td></tr><tr><td>Keep up with ~</td><td>To remain in contact with</td><td>Stay in contact with ~</td><td>~와 계속 연락하며 지내다</td></tr><tr><td>Turn against ~</td><td>To become hostile toward ~</td><td>Become hostile to ~</td><td>~에게 등을 돌리다</td></tr><tr><td>Fall out (with ~)</td><td>To stop having a good relationship over an argument</td><td>Stop being friends (with ~)</td><td>(~와) 싸워서 사이가 틀어지다</td></tr><tr><td>Put down ~ / Put ~ down</td><td>To make someone look stupid</td><td>Insult ~</td><td>~를 깎아내리다, 깔아뭉개다, 바보로 만들다</td></tr><tr><td>Look down on ~</td><td>To treat ~ as an inferior person</td><td>Treat ~ as inferior</td><td>~를 깔보다, 얕보다</td></tr><tr><td>Put up with ~</td><td>To tolerate ~</td><td>Tolerate ~</td><td>~를 참아내다</td></tr><tr><td>Turn one's back on ~</td><td>To ignore ~</td><td>Ignore ~</td><td>~에게 등을 돌리다, ~를 무시하다</td></tr><tr><td>Grow apart (from ~)</td><td>To become lesss close as time goes by</td><td>Become less close (to ~)</td><td>시간이 지나면서 ~와 점점 사이가 멀어지다</td></tr><tr><td>Catch fire</td><td>To start bunning</td><td>Start burning</td><td>불이 나다</td></tr><tr><td>Catch hell</td><td>To be criticized severely</td><td>Be severely criticized</td><td>심하게 꾸중 듣다, 크게 혼나다</td></tr><tr><td>Catch lighting in a bottle</td><td>To succeed very luckily</td><td>Succeed luckily</td><td>아주 운 좋게 성공하다</td></tr><tr><td>Long story short</td><td>To summarize something briefly</td><td>Summarize briefly</td><td>간단히 말해서</td></tr><tr><td>in a nutshell</td><td>To summarize something briefly</td><td>Summarize briefly</td><td>간단히 말해서</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Comparative analysis of ML algorithms for 5G coverage prediction review]]></title>
+        <id>https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/</id>
+        <link href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/"/>
+        <updated>2026-01-05T08:24:21.458Z</updated>
+        <summary type="html"><![CDATA[Comparative analysis of ML algorithms for 5G coverage prediction review]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="summary">Summary<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#summary" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">Model performance in 5G coverage prediction is primarily determined by the alignment between data characteristics, feature design, and model inductive bias, rather than by model complexity alone.</li>
+<li class="">Using real-world 5G NR drive-test data with physics-informed numerical features, this study demonstrates that Random Forest can achieve SOTA performance, outperforming more complex models such as XGBoost and deep neural networks.</li>
+<li class="">The results highlight the continued importance of domain-informed feature engineering and show that deep learning becomes advantageous only when the data representation and scale justify its use.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="introduction">Introduction<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#introduction" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">Coverage prediction in 5G networks is a core component of network planning, optimization, and resource allocation.</li>
+<li class="">Conventional propagation and path loss models are limited in their ability to accurately capture the complexity of dense urban environments and the unique characteristics of 5G systems.</li>
+<li class="">Machine Learning and Deep Learning have emerged as promising alternatives, as they can model complex non-linear relationships across multiple parameters.</li>
+<li class="">However, prior studies typically suffer from several limitations:<!-- -->
+<ul>
+<li class="">Most focus on 4G networks or rely on a limited set of input features.</li>
+<li class="">Comparisons across a wide range of algorithms are often insufficient.</li>
+<li class="">Systematic analyses of feature importance are largely lacking.</li>
+</ul>
+</li>
+</ul>
+<p><strong>The objectives of this study are to:</strong></p>
+<ul>
+<li class="">Conduct a comprehensive comparison of multiple ML and DL algorithms using a unified dataset.</li>
+<li class="">Identify dominant feature parameters that significantly influence 5G coverage prediction.</li>
+<li class="">Demonstrate performance improvements over previously reported methods.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="methods">Methods<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#methods" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="data-collection">Data Collection<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#data-collection" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Real-world 5G NR drive test measurements conducted in Bandung, Indonesia (Batununggal area).</li>
+<li class="">Approximately 1,500 SS-RSRP samples collected.</li>
+<li class="">Deployment includes 10 gNodeBs, each configured with three sectors.</li>
+<li class="">Measurement vehicle speed maintained below 30 km/h to minimize fast fading effects.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="input-features-10-total">Input Features (10 Total)<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#input-features-10-total" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">2D Distance between Transmitter and Receiver</li>
+<li class="">Frequency</li>
+<li class="">Transmitter Tilt Angle</li>
+<li class="">Transmitter Azimuth Angle</li>
+<li class="">Altitude</li>
+<li class="">Elevation Angle</li>
+<li class="">Azimuth Offset Angle</li>
+<li class="">Tilting Offset Angle</li>
+<li class="">Horizontal Distance of Receiver from Transmitter Antenna Boresight</li>
+<li class="">Vertical Distance of Receiver from Transmitter Antenna Boresight</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="algorithms">Algorithms<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#algorithms" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p><strong>Machine Learning (Classification-based):</strong></p>
+<ul>
+<li class="">Logistic Regression</li>
+<li class="">K-Nearest Neighbors (KNN)</li>
+<li class="">Naive Bayes</li>
+<li class="">Random Forest</li>
+<li class="">Support Vector Machine (SVM)</li>
+<li class="">XGBoost</li>
+<li class="">LightGBM</li>
+<li class="">AdaBoost</li>
+<li class="">Bayesian Network Classifier</li>
+</ul>
+<p><strong>Deep Learning:</strong></p>
+<ul>
+<li class="">Multi-Layer Perceptron (MLP)</li>
+<li class="">Long Short-Term Memory (LSTM)</li>
+<li class="">Convolutional Neural Network (CNN)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="training-and-validation">Training and Validation<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#training-and-validation" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Experiments conducted using Google Colab.</li>
+<li class="">10-fold cross-validation applied for all models.</li>
+<li class="">Hyperparameter optimization performed only on the best-performing models.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="evaluation-metrics">Evaluation Metrics<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#evaluation-metrics" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Regression Metrics:</strong> RMSE, MAE, R²</li>
+<li class=""><strong>Classification Metrics:</strong> Accuracy, Precision, Recall, F1-score</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="results">Results<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#results" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="machine-learning">Machine Learning<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#machine-learning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p><strong>Random Forest:</strong></p>
+<ul>
+<li class="">RMSE = 1.14 dB</li>
+<li class="">MAE = 0.12</li>
+<li class="">R² = 0.97</li>
+<li class="">Accuracy / Precision / Recall / F1-score ≈ 98.4%</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="deep-learning">Deep Learning<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#deep-learning" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p><strong>Convolutional Neural Network (CNN):</strong></p>
+<ul>
+<li class="">
+<p>RMSE = 0.289</p>
+</li>
+<li class="">
+<p>MAE = 0.289</p>
+</li>
+<li class="">
+<p>R² = 0.78</p>
+</li>
+<li class="">
+<p>Accuracy = 75%</p>
+</li>
+<li class="">
+<p>Precision = 85.6%</p>
+</li>
+<li class="">
+<p>Recall = 87.8%</p>
+</li>
+<li class="">
+<p>F1-score = 89.9%</p>
+</li>
+<li class="">
+<p>MLP and LSTM exhibit inferior performance compared to CNN.</p>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="feature-importance">Feature Importance<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#feature-importance" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">The 2D Transmitter–Receiver Distance is identified as the most dominant feature across all algorithms.</li>
+<li class="">Incorporating horizontal and vertical distances from the antenna boresight significantly improves prediction accuracy.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="comparison-with-previous-studies">Comparison with Previous Studies<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#comparison-with-previous-studies" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Both Random Forest and CNN achieve lower RMSE values compared to prior studies.</li>
+<li class="">Random Forest, in particular, demonstrates state-of-the-art performance relative to existing 4G and 5G coverage prediction research.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="discussion">Discussion<a href="https://gracefullight.dev/en/2026/01/05/comparative-analysis-of-ml-algorithms-for-5g-coverage-prediction-review/#discussion" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Random Forest</strong>
+<ul>
+<li class="">Highly effective for small-to-medium-sized datasets with numerical features.</li>
+<li class="">Offers strong interpretability and robust performance stability.</li>
+</ul>
+</li>
+<li class=""><strong>Convolutional Neural Network</strong>
+<ul>
+<li class="">Well-suited for grid-based or spatial data representations.</li>
+<li class="">Shows greater potential when image-based or satellite-derived features are incorporated.</li>
+<li class="">In this study, CNN was applied by transforming numerical features into a matrix-like structure.</li>
+</ul>
+</li>
+<li class="">The results empirically demonstrate that feature design and selection can be more critical than the choice of learning algorithm itself.</li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="drone" term="drone"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 003]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-003/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-003/"/>
+        <updated>2026-01-05T04:43:00.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 003]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-003/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>right off the bat</td><td>Immediately, without delay</td><td>Immediately</td><td>즉시, 지체 없이</td></tr><tr><td>from the get-go</td><td>From the very beginning</td><td>From the start</td><td>처음부터</td></tr><tr><td>What are friends for</td><td>Used to express that friends are there to help each other</td><td>That's why we have friends</td><td>친구 좋다는게 뭐니</td></tr><tr><td>Turn someone down</td><td>To reject or refuse someone</td><td>Reject someone</td><td>거절하다</td></tr><tr><td>Go out (with ~)</td><td>To date ~</td><td>Date someone</td><td>~와 사귀다</td></tr><tr><td>Cheat on ~</td><td>To have a sexual relationship with someone other than your partner</td><td>Be unfaithful to ~</td><td>다른 사람과 성적 관계를 갖다, 바람 피다</td></tr><tr><td>Settle down</td><td>To start live a steady life</td><td>Start a stable life</td><td>정착해서 안정된 삶을 살기 시작하다</td></tr><tr><td>Break up (with ~)</td><td>To end a romanctic relationship with ~</td><td>End a relationship with ~</td><td>~와 헤어지다</td></tr><tr><td>Fall in love (with ~)</td><td>To have a deep romantic feeling (with ~)</td><td>Develop romantic feelings for ~</td><td>~와 사랑에 빠지다</td></tr><tr><td>Fall for ~</td><td>To fall in love with ~</td><td>Fall in love with ~</td><td>~와 사랑에 빠지다</td></tr><tr><td>Hit it off (with ~)</td><td>To get along with ~</td><td>Become good friends quickly (with ~)</td><td>(~와) 사이좋게 지내다</td></tr><tr><td>Drift apart</td><td>To become less close</td><td>Grow apart</td><td>서서히 사이가 멀어지다</td></tr><tr><td>Talk ~ out</td><td>To talk about ~ in order to settle a disagreement or misunderstanding</td><td>Discuss ~ to resolve a problem</td><td>~에 대해 대화로 해결하려고 하다</td></tr><tr><td>green-eyed</td><td>Jealous or envious</td><td>Jealous</td><td>질투하는</td></tr><tr><td>black market</td><td>An illegal market where goods are bought and sold</td><td>Illegal market</td><td>암시장</td></tr><tr><td>gray area</td><td>An unclear situation or area where the rules are not clear</td><td>Unclear situation</td><td>불분명한 상황</td></tr><tr><td>in the red</td><td>Losing money or in debt</td><td>Losing money</td><td>적자 상태인</td></tr><tr><td>in the black</td><td>Making a profit or not in debt</td><td>Making money</td><td>흑자</td></tr><tr><td>in the pink</td><td>In very good health</td><td>Very healthy</td><td>매우 건강한</td></tr><tr><td>Move in with ~</td><td>To start living in the same home with ~</td><td>Live together with ~</td><td>~와 동거를 시작하다</td></tr><tr><td>Split up (with ~)</td><td>To end a relationship (with ~)</td><td>End a relationship (with ~)</td><td>~와 헤어지다</td></tr><tr><td>Pick up ~ / Pick ~ up</td><td>To start a romantic relationship with ~</td><td>Start dating ~</td><td>~를 꼬시다</td></tr><tr><td>Hit on ~</td><td>To flirt with ~</td><td>Flirt with ~</td><td>~를 꼬시다</td></tr><tr><td>Make up (with ~)</td><td>To be reconceiled (with ~)</td><td>Reconcile (with ~)</td><td>~와 화해하다</td></tr><tr><td>Wear down ~ / Wear ~ down</td><td>To tire ~</td><td>Tire ~ out</td><td>~를 피곤하게 하다</td></tr><tr><td>Get over ~</td><td>To recover from a difficult and bad experience / To stop being bothered by ~</td><td>Recover from ~</td><td>~를 극복하다, 불행을 잊다, 이별한 연인을 잊다</td></tr><tr><td>Be hung up on ~</td><td>To be extremely interested in ~ and constantly thinking about ~</td><td>Be obsessed with ~</td><td>~에 집착하다, 매달리다</td></tr><tr><td>Ask ~ out</td><td>To invite ~ out on a date</td><td>Invite ~ on a date</td><td>~에게 데이트 신청하다</td></tr><tr><td>Open up (to ~)</td><td>To talk more about oneself or one's feelings comfortably</td><td>Share one's feelings (to ~)</td><td>마음을 열고 편하게 대하다</td></tr><tr><td>Hang out</td><td>To spend time relaxing or socializing</td><td>Spend time together</td><td>시간을 함께 보내다</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 002]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-002/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-002/"/>
+        <updated>2026-01-04T04:53:00.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 002]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-002/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>Get together (with ~)</td><td>TO meet and spend time with each other</td><td>Meet up (with ~)</td><td>만나서 함께 시간을 보내다</td></tr><tr><td>Find out ~ / Find ~ out</td><td>To discover some information</td><td>Learn (about) ~</td><td>~을 알아내다, 발견하다</td></tr><tr><td>Take after ~</td><td>To resemble or behave like an older family member</td><td>Resemble ~</td><td>(외모, 성격이) ~을 닮다</td></tr><tr><td>Look like ~</td><td>To physically resemble an older family member</td><td>Resemble ~</td><td>(외모가) ~을 닮다</td></tr><tr><td>Get along (with ~)</td><td>To have a positive relationship with ~</td><td>Be friendly (with ~)</td><td>~와 잘 지내다.</td></tr><tr><td>Run away</td><td>To leave a place, usually one's home, because of negative circumstances</td><td>Escape</td><td>부정적 환경 떄문에 집을 떠나다, 가출하다</td></tr><tr><td>Go against ~</td><td>To disagree or be opposed to ~</td><td>Disagree with ~</td><td>~에 반대하다</td></tr><tr><td>End up ~</td><td>For something to eventually happen</td><td>Eventually become ~</td><td>결국 ~하게 되다</td></tr><tr><td>Cut off ~</td><td>To separate or block someone from something that they previously had access to</td><td>Isolate ~</td><td>~을 끊어내다, 잘라 버리다</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phrasal Verbs 001]]></title>
+        <id>https://gracefullight.dev/en/vocab/phrasal-verbs-001/</id>
+        <link href="https://gracefullight.dev/en/vocab/phrasal-verbs-001/"/>
+        <updated>2026-01-03T05:54:47.000Z</updated>
+        <summary type="html"><![CDATA[Phrasal Verbs 001]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="vocabulary--expressions">Vocabulary &amp; Expressions<a href="https://gracefullight.dev/en/vocab/phrasal-verbs-001/#vocabulary--expressions" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<table><thead><tr><th>Term/Expression</th><th>Definition</th><th>Simpler Paraphrase</th><th>Meaning</th></tr></thead><tbody><tr><td>Calm down</td><td>To become less agitated or upset</td><td>Relax</td><td>진정되다, 가라앉다</td></tr><tr><td>Cool off</td><td>To become less hot or angry</td><td>Chill out</td><td>진정해지다, 차분해지다</td></tr><tr><td>Chill out</td><td>To relax completely</td><td>Take it easy</td><td>화를 누그러뜨리다, 열을 식히다, 긴장을 풀다</td></tr><tr><td>Cool down</td><td>To lower temperature or become less angry</td><td>Calm down</td><td>화를 누그러뜨리다</td></tr><tr><td>Settle down</td><td>To become calm or to establish a stable life</td><td>Get comfortable</td><td>진정하다</td></tr><tr><td>Simmer down</td><td>To calm down gradually</td><td>Relax slowly</td><td>흥분을 가라앉히다</td></tr><tr><td>Take it easy</td><td>To relax and not stress</td><td>Chill out</td><td>진정하다</td></tr></tbody></table>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="vocab" term="vocab"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[End of Year Retro 2025]]></title>
+        <id>https://gracefullight.dev/en/2026/01/01/end-of-year-retro-2025/</id>
+        <link href="https://gracefullight.dev/en/2026/01/01/end-of-year-retro-2025/"/>
+        <updated>2026-01-01T05:43:35.574Z</updated>
+        <summary type="html"><![CDATA[2025년의 다사다난했던 여정과 시드니에서의 새로운 도전에 대한 회고]]></summary>
+        <content type="html"><![CDATA[<p>현대자동차에 합류하기 전, 인사팀에서는 진급이 거의 확정적인 것처럼 이야기했었다. 하지만 막상 들어와 보니 실상은 많이 달랐다. 나름 열심히 했다고 생각했지만, 작년 첫 고과에서 나는 1월 입사자라는 이유로 평가 대상에서 제외되었고 그 때문에 리스트에도 오르지 못한 것이 아닐까 싶다.</p>
+<p>규칙이라면 따라야겠지만, 인사와 내부 사정이 다른 것에 실망스러웠다. 비슷한 연차의 동료들 역시 각자 나름의 불만을 안고 출발했던 것 같다. 바꿀 수 없는 것보다는 바꿀 수 있는 것에 집중하자는 생각으로, 나는 다른 일들에 더 많은 시간을 쓰게 되었다.</p>
+<p>1분기는 목표가 사라진 채로 거의 의욕 없이 흘려보냈다. 그 전까지는 대학원 시험을 잘 치르는 것이 가장 큰 목표였는데, 결과 발표가 계속 미뤄지면서 마음이 더 힘들어졌다.
+여러 번 연기되었던 결과는 4월 초에야 나왔고, 낙방이었다. GPA인지, 시험 결과인지, SOP인지, 영어 성적인지 무엇이 부족했는지 궁금해 문의했지만 구체적인 답을 듣지는 못했다. 대신 아래와 같은 답변을 받을 수 있었다.</p>
+<blockquote>
+<p>We regret to inform you that your application in this admission cycle was not successful. Please understand that admission into the Master of Science in Machine Learning is very competitive and takes into account a large number of criteria. Due to restrictions on the number of places, we unfortunately have to decline a large number of strong applications.
+Although this final decision may be disappointing, we are confident that, given your credentials, many other opportunities will open up for you.</p>
+</blockquote>
+<p>"Strong applications"라는 표현에 그나마 위안을 얻었던 것 같다. 하지만 다시 같은 꿈을 꾸기에는 아이엘츠 성적 만료가 코앞이었고, 재도전은 현실적으로 어려워 보였다. 한정된 시간 안에서 무엇을 해야 할지 고민하던 중, 예전부터 와이프가 추천해주던 박람회가 떠올랐다.</p>
+<p>코엑스에서 주기적으로 열리는 유학·해외취업·이민 박람회를 알게 되었고, 별다른 기대 없이 무작정 찾아갔다. 영국 석사는 1.5년 코스였지만, 아이엘츠의 영국 전용 버전이 신설되면서 기존 성적을 사용할 수 없었다. 그 대안으로 호주가 눈에 들어왔다. 아랍에미리트의 다른 대학원도 가능성은 있었지만, 예전부터 시드니에서 살아보고 싶다고 말하던 와이프의 영향으로 호주 대학원을 목표로 삼게 되었다.</p>
+<p>박람회에서 만난 유학원은 생각보다 체계적이지 않았고, 진행 과정도 만족스럽지는 않았다. 그럼에도 불구하고 인공지능으로 급변하는 소프트웨어 엔지니어 정의와 미래를 대비해야 한다는 생각, 그리고 물리 AI 시대가 오기 전에 관련 기업으로 이직하거나 연구로 방향을 틀어야 한다는 판단은 분명했다. 그렇게 인공지능 석사를 목표로 상담을 이어갔다. 아이엘츠 성적과, 자금, 경력, 그리고 의지도 있었기에 과정은 비교적 빠르게 진행되었다. 그 무렵 퇴사 의사를 밝혔고, 멋진 동료들로부터 불확실한 앞길에 대해 따뜻한 덕담을 받을 수 있었다는 점이 참 감사했다.</p>
+<p>집을 팔고, 가진 것들을 정리한 뒤, 캐리어 두 개만 들고 7월 13일 호주에 도착했다. 예상보다 훨씬 쌀쌀했던 호주의 겨울에 적응하는 일은 쉽지 않았다. 한국에서는 영어를 꽤 한다고 생각했지만, 내가 익숙했던 것은 정제된 영어였다는 걸 곧 깨달았다. 현지인들의 영어와 영어를 세컨드 랭기지로 사용하는 친구들의 영어는 완전히 달랐다.</p>
+<p>게다가 한국어로도 아카데믹 레포트에 익숙하지 않은 상태에서, 짧은 시간 안에 영어 레퍼런스를 포함한 IMRD 포맷의 리포트를 작성하는 일은 정말 버거웠다.
+"이만큼 돈을 쓰는데 석사 학위쯤은 그냥 살 수 있는 거 아니야?"라고 생각했던 과거의 내가 부끄러워졌다. ChatGPT조차 없던 시절에 해외 석박을 마친 선배님들이 새삼 대단하게 느껴졌다. 몇몇 뛰어난 20대 글로벌 인재들을 보며, 그들의 10년 뒤 모습이 궁금해지기도 했다.</p>
+<p>수업과 과제, 시험에 적응해 가는 시간 속에서, 와이프가 잠깐씩 지구 반대편으로 와줄 때마다 마음의 여유를 얻을 수 있었다. 그렇게 New South Wales 주에서의 혼인신고까지 마무리하며, 1학기를 High Distinction으로 잘 끝낼 수 있었다. 마지막 달에는 멋진 슈퍼바이저 밑에서 재미있는 연구를 같이할 기회도 얻었다. 시간이 날 때마다 해보고 싶었던 코드 템플릿화와 프롬프트화 역시 그 마지막 달에 시도해볼 수 있었다.</p>
+<p>내년에는 어떤 회고를 쓰게 될까. 벌써부터 기대가 된다.</p>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="me" term="me"/>
+        <category label="retrospective" term="retrospective"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[shadcn/ui Drawer & Dialog 사용 시 iOS Safari 스크롤 오류 해결]]></title>
+        <id>https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/</id>
+        <link href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/"/>
+        <updated>2025-12-29T10:19:46.800Z</updated>
+        <summary type="html"><![CDATA[shadcn/ui의 Drawer(Vaul)와 Dialog를 함께 사용할 때 발생하는 iOS Safari 스크롤 튕김 현상(Jump to Top)의 원인 분석 및 Scroll Lock 충돌 문제 해결]]></summary>
+        <content type="html"><![CDATA[<p>shadcn/ui(Vaul)를 사용하여 모바일 웹을 개발하던 중, iOS Safari에서 Drawer 내부의 Dialog를 호출할 때 발생하는 스크롤 충돌 버그를 해결했다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="문제-상황">문제 상황<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>모바일 뷰에서 '더보기' Drawer를 열고 내부 메뉴를 클릭하여 '공유하기' Dialog를 띄우는 기능이었다.</p>
+<ol>
+<li class=""><strong>Drawer Open</strong>: 스크롤이 있는 페이지에서 Drawer를 연다.</li>
+<li class=""><strong>Interaction</strong>: 메뉴 클릭 시 Drawer가 닫히고 Dialog가 열린다.</li>
+<li class=""><strong>Bug</strong>: 이 전환 과정에서 <strong>배경 스크롤이 최상단으로 초기화(Jump to Top)</strong> 되거나, 화면이 고정되어 먹통이 된다.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="원인-분석-scroll-lock-race-condition">원인 분석: Scroll Lock Race Condition<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#%EC%9B%90%EC%9D%B8-%EB%B6%84%EC%84%9D-scroll-lock-race-condition" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class="">Vaul(Drawer)도 Radix Dialog 기반이라, Drawer close 직후 Dialog open이 같은 프레임/틱에서 일어나면 중첩된 overlay의 스크롤 락/바디 스타일 변경이 겹치며 iOS Safari에서 스크롤 복원/점프가 발생할 수 있다</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="해결-방법">해결 방법<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_iWpj" id="1-timing-실행-시점-분리">1. Timing (실행 시점 분리)<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#1-timing-%EC%8B%A4%ED%96%89-%EC%8B%9C%EC%A0%90-%EB%B6%84%EB%A6%AC" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p><code>onClose</code>나 클릭 핸들러에서 즉시 Dialog를 띄우지 않고, <code>onAnimationEnd</code> 이벤트를 활용하여 Drawer의 정리가 완전히 끝난 후 Dialog를 호출해야 한다.</p>
+<div class="language-tsx codeBlockContainer_a8St theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_Gkhs"><pre tabindex="0" class="prism-code language-tsx codeBlock_boNN thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_QSLI"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Drawer</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">onAnimationEnd</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript" style="color:#00009f">open</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript arrow operator" style="color:#393A34">=&gt;</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">    </span><span class="token tag script language-javascript comment" style="color:#999988;font-style:italic">// Drawer가 완전히 닫힌 후(!open) 실행</span><span class="token tag script language-javascript" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">    </span><span class="token tag script language-javascript keyword" style="color:#00009f">if</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript operator" style="color:#393A34">!</span><span class="token tag script language-javascript" style="color:#00009f">open</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">      </span><span class="token tag script language-javascript function" style="color:#d73a49">setDialogOpen</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript boolean" style="color:#36acaa">true</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">;</span><span class="token tag script language-javascript" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">    </span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag script language-javascript" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">  </span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f"></span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="2-configuration-ios-호환성-옵션">2. Configuration (iOS 호환성 옵션)<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#2-configuration-ios-%ED%98%B8%ED%99%98%EC%84%B1-%EC%98%B5%EC%85%98" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Vaul 컴포넌트에 다음 옵션을 추가하여 Safari의 불완전한 스타일 재계산을 방지한다.</p>
+<div class="language-tsx codeBlockContainer_a8St theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_Gkhs"><pre tabindex="0" class="prism-code language-tsx codeBlock_boNN thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_QSLI"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Drawer</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">disablePreventScroll</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript boolean" style="color:#36acaa">true</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">repositionInputs</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript boolean" style="color:#36acaa">false</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">shouldScaleBackground</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript boolean" style="color:#36acaa">false</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f"></span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<ul>
+<li class=""><code>disablePreventScroll={true}</code>
+<ul>
+<li class="">Vaul이 body에 강제로 스크롤 락 스타일을 적용하지 않도록 한다</li>
+<li class="">iOS에서 발생하는 스크롤 점프 현상을 완화</li>
+<li class="">단, Drawer가 열려 있는 동안 배경 스크롤이 허용될 수 있음</li>
+</ul>
+</li>
+<li class=""><code>repositionInputs={false}</code>
+<ul>
+<li class="">가상 키보드 대응을 위한 viewport 재배치 로직 비활성화</li>
+<li class="">iOS Safari에서 input + 모달 조합 시 발생하는 레이아웃 충돌 방지</li>
+</ul>
+</li>
+<li class=""><code>shouldScaleBackground={false}</code>
+<ul>
+<li class="">Drawer 오픈 시 배경을 scale 처리하지 않음</li>
+<li class="">불필요한 body 스타일 변경을 줄여 안정성 확보</li>
+</ul>
+</li>
+</ul>
+<p>이 옵션들은 완전한 해결책이라기보다는 iOS Safari 환경에서의 리스크를 줄이기 위한 방어설정에 가깝긴하다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_iWpj" id="ref">Ref<a href="https://gracefullight.dev/en/2025/12/29/fix-ios-safari-scoll-issue-with-vaul-drawer/#ref" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://github.com/emilkowalski/vaul/issues?q=is:issue+ios+scroll" target="_blank" rel="noopener noreferrer" class="">Github Issue: Vaul Drawer iOS Scroll Bug</a></li>
+</ul>]]></content>
+        <author>
+            <name>Gracefullight</name>
+            <uri>https://github.com/gracefullight</uri>
+        </author>
+        <category label="react" term="react"/>
+        <category label="shadcn" term="shadcn"/>
+    </entry>
+</feed>
