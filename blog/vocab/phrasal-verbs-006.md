@@ -29,3 +29,4 @@ tags:
 | Fight off ~ / Fight ~ off | To resist illness or infection | Resist illness/infection | (병이나 감염을) 싸워 이겨내다 |
 | go around in circles | To keep doing the same thing without making any progress | Keep doing the same thing | 제자리걸음하다 |
 | what goes around comes around | A saying that means the way you treat others will eventually come back to you | Treat others how you want to be treated | 자업자득이다 |
+| nauseous | Feeling like you are going to vomit | Feeling like vomiting | 메스꺼운 |
