@@ -30,3 +30,4 @@ tags:
 | go around in circles | To keep doing the same thing without making any progress | Keep doing the same thing | 제자리걸음하다 |
 | what goes around comes around | A saying that means the way you treat others will eventually come back to you | Treat others how you want to be treated | 자업자득이다 |
 | nauseous | Feeling like you are going to vomit | Feeling like vomiting | 메스꺼운 |
+| over-the-counter madicine | Medicine that can be bought without a prescription | Medicine without prescription | 일반의약품 |
