@@ -27,3 +27,8 @@ tags:
 | Pull up | For a vehicle to come to a stop at its destination | Stop at a location | (차가) 목적지에 도착하여 멈추다 |
 | Pull out | For a vehicle to leave | Leave a location | (차가) 떠나다 / 출발하다 |
 | hit the road | to leave a place usually in a vehicle | to depart | 어떤 곳을 떠나다 |
+| a wild ride | an exciting or unpredictable experience | an adventurous experience | 신나고 예측 불가능한 경험 |
+| reorganization | the act of organizing a company, business, or system in a new way to make it operate more effectively | restructuring a company or system | 구조조정 |
+| be prepared to ~ | to be ready to do something | to be ready for something | ~할 준비가 되어 있다 |
+| the shoulder of the road | the area at the side of a road where vehicles can stop in an emergency | the side area of a road | 도로의 갓길 |
+| aggressive driving | driving in a way that is forceful or hostile, often involving speeding or risky maneuvers | forceful or risky driving | 난폭운전 |
