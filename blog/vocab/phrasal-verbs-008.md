@@ -22,3 +22,15 @@ tags:
 | Turn up ~ / Turn ~ up | To increase/raise (the volume of the TV, music, etc.) | To increase something | (TV, 음악 등의) 볼륨을 올리다 |
 | Turn down ~ / Turn ~ down | To lower (the volume of the TV, music, etc.) | To decrease something | (TV, 음악 등의) 볼륨을 줄이다 |
 | Acting up | Behaving badly or inappropriately | Misbehaving | (사람이) 버릇없이 굴다 / 문제 행동을 하다 |
+| electrical outlet | A socket that provides electricity to plug in devices | Power socket | 콘센트 |
+| affluent | Having a lot of money and possessions | Wealthy | 부유한 |
+| disparity | A large of noticable difference, especially one seen as unfair | Inequality | 격차 |
+| theorize | To form a set of ideas about something | To speculate | 이론을 세우다 |
+| disadvantaged | (of a person or area) not having favorable circumstances with regard to education, financial opportunities, etc. | Underprivileged | 불리한 입장에 있는 |
+
+- act up = 불안정, 간헐적 말썽 (아직 살아 있음) 🚨
+- break down = 안에서 무너짐 (붕괴) 💥
+- be out of order = 사용 금지 팻말 (질서/운영에서 제외) 🚫
+
+> The system was acting up all morning, and eventually it broke down.
+> Now it's out of order.
