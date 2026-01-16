@@ -9,7 +9,7 @@ tags:
 
 ## 개념
 
-**GCN (Graph Convolutional Networks)**은 그래프 구조 데이터에서 노드(Node)와 엣지(Edge) 정보를 활용하여 특징(Feature)을 학습하는 딥러닝 모델임. 이미지 처리에 주로 사용되는 CNN(Convolutional Neural Networks)의 합성곱 연산을 그래프 데이터로 확장한 개념으로, **이웃 노드들의 정보를 집계(Aggregate)하여 현재 노드의 표현(Representation)을 업데이트**하는 방식을 사용함.
+**GCN (Graph Convolutional Networks)** 은 그래프 구조 데이터에서 노드(Node)와 엣지(Edge) 정보를 활용하여 특징(Feature)을 학습하는 딥러닝 모델임. 이미지 처리에 주로 사용되는 CNN(Convolutional Neural Networks)의 합성곱 연산을 그래프 데이터로 확장한 개념으로, **이웃 노드들의 정보를 집계(Aggregate)하여 현재 노드의 표현(Representation)을 업데이트**하는 방식을 사용함.
 
 ## 등장배경
 
