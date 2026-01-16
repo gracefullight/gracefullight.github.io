@@ -18,7 +18,7 @@ tags:
 > We regret to inform you that your application in this admission cycle was not successful. Please understand that admission into the Master of Science in Machine Learning is very competitive and takes into account a large number of criteria. Due to restrictions on the number of places, we unfortunately have to decline a large number of strong applications.
 > Although this final decision may be disappointing, we are confident that, given your credentials, many other opportunities will open up for you.
 
-"Strong applications"라는 표현에 그나마 위안을 얻었던 것 같다. 하지만 다시 같은 꿈을 꾸기에는 아이엘츠 성적 만료가 코앞이었고, 재도전은 현실적으로 어려워 보였다. 한정된 시간 안에서 무엇을 해야 할지 고민하던 중, 예전부터 와이프가 추천해주던 박람회가 떠올랐다.
+"Strong applications"라는 표현에 그나마 위안을 얻었던 것 같다. 하지만 다시 같은 꿈을 꾸기에는 아이엘츠 성적 만료가 코앞이었고, 재도전은 현실적으로 어려워 보였다. 한정된 시간 안에서 무엇을 해야 할지 고민하던 중, 예전부터 와이프가 추천해주던 유학원과 박람회가 떠올랐다.
 
 코엑스에서 주기적으로 열리는 유학·해외취업·이민 박람회를 알게 되었고, 별다른 기대 없이 무작정 찾아갔다. 영국 석사는 1.5년 코스였지만, 아이엘츠의 영국 전용 버전이 신설되면서 기존 성적을 사용할 수 없었다. 그 대안으로 호주가 눈에 들어왔다. 아랍에미리트의 다른 대학원도 가능성은 있었지만, 예전부터 시드니에서 살아보고 싶다고 말하던 와이프의 영향으로 호주 대학원을 목표로 삼게 되었다.
 
