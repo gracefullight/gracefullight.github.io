@@ -35,6 +35,20 @@ graph LR
 3. **Activation Function**: 비선형성(Non-linearity)을 추가하기 위해 ReLU 등을 사용함.
 4. **Output Layer**: 최종적으로 학습된 노드 임베딩을 사용하여 분류(Classification)나 회귀(Regression) 등의 태스크를 수행함.
 
+## GCN의 유형
+
+GCN은 접근 방식에 따라 크게 두 가지 유형으로 분류됨.
+
+1. **스펙트럼 기반 (Spectral-based GCNs)**
+    - 그래프 신호 처리 이론에 기반하여, 그래프 라플라시안(Graph Laplacian)과 푸리에 변환(Fourier Transform)을 이용해 스펙트럼 도메인에서 합성곱을 수행함.
+    - **특징**: 이론적 토대가 탄탄하지만, 그래프 전체 구조에 의존적이어서 구조가 바뀌면 재학습이 필요하며 계산 복잡도가 높음.
+    - **대표 모델**: ChebNet (Chebyshev 다항식 근사), GCN (Kipf & Welling의 1차 근사).
+
+2. **공간 기반 (Spatial-based GCNs)**
+    - 노드의 공간적 이웃 관계를 기반으로 정보를 직접 집계(Aggregation)하는 방식. CNN 필터가 픽셀 위를 이동하는 것과 유사함.
+    - **특징**: 직관적이며 계산 효율성이 높고, 거대 그래프나 유동적인 그래프에도 적용하기 용이함.
+    - **대표 모델**: GraphSAGE (이웃 샘플링), GAT (Attention 가중치).
+
 ## 구성요소
 
 | 구성요소 | 설명 | 역할 |
@@ -47,6 +61,56 @@ graph LR
 | **Weight Matrix ($W$)** | 학습 가능한 파라미터 행렬 | 입력 특징을 변환하고 중요도 학습 |
 | **Aggregation Function** | 이웃 노드의 정보를 합치는 함수 | 이웃 정보의 평균(Mean)이나 합(Sum) 등을 계산 |
 
+## 작동 원리
+
+GCN의 핵심 작동 원리는 **메시지 패싱(Message Passing)**으로, 이웃 노드의 정보를 수집하고 가중치를 적용하여 자신의 상태를 업데이트하는 과정임.
+
+### 1. 수학적 정의
+
+가장 널리 쓰이는 Kipf & Welling의 GCN 레이어 갱신 규칙은 다음과 같음.
+
+$$
+H^{(l+1)} = \sigma(\tilde{A}H^{(l)}W^{(l)})
+$$
+
+- $H^{(l)}$: $l$번째 층의 노드 특징 행렬 ($N \times D$).
+- $\tilde{A}$: 정규화된 인접 행렬 (Normalized Adjacency Matrix).
+  - 보통 $\tilde{A} = D^{-\frac{1}{2}}\hat{A}D^{-\frac{1}{2}}$로 정의 ($\hat{A} = A + I$, $I$는 자기 자신을 포함하기 위한 단위 행렬).
+- $W^{(l)}$: 학습 가능한 가중치 행렬 ($D \times F$).
+- $\sigma$: 활성화 함수 (ReLU 등).
+
+### 2. 정규화
+
+단순히 인접 행렬 $A$를 곱하면 연결이 많은 노드(Hub)의 값이 폭발적으로 커지거나, 적은 노드는 소실될 수 있음. 이를 방지하기 위해 차수(Degree) $D$를 이용해 정규화($D^{-\frac{1}{2}}AD^{-\frac{1}{2}}$)를 수행하여 수치적 안정성을 확보함.
+
+### 3. 구현 예시
+
+```python
+import numpy as np
+
+def graph_convolutional_layer(A, X, W):
+    # A: Adjacency matrix, X: Input features, W: Weights
+    
+    # 1. Self-loop 추가 (자기 자신의 정보도 포함하기 위함)
+    I = np.eye(A.shape[0])
+    A_hat = A + I
+    
+    # 2. 차수 행렬 계산 및 정규화 (Normalization)
+    D = np.sum(A_hat, axis=0)
+    D_inv_sqrt = np.power(D, -0.5)
+    D_inv_sqrt[np.isinf(D_inv_sqrt)] = 0.
+    D_mat_inv_sqrt = np.diag(D_inv_sqrt)
+    
+    # A_norm = D^-0.5 * A_hat * D^-0.5
+    A_norm = np.dot(np.dot(D_mat_inv_sqrt, A_hat), D_mat_inv_sqrt)
+    
+    # 3. 집계 및 변환 (Aggregation & Transformation)
+    output = np.dot(A_norm, X)  # 이웃 정보 집계
+    output = np.dot(output, W)  # 가중치 변환
+    
+    return output
+```
+
 ## CNN과의 비교
 
 | 비교 항목 | CNN (Convolutional Neural Networks) | GCN (Graph Convolutional Networks) |
@@ -57,13 +121,27 @@ graph LR
 | **불변성 (Invariance)** | **이동 불변성**: 대상이 이동해도 인식 가능 | **순열 불변성**: 노드 순서가 바뀌어도 결과는 동일해야 함 |
 | **주요 목적** | 지역적 특징(Local Feature) 추출 | 관계성 및 구조적 특징(Structural Feature) 학습 |
 
+## 주요 변형 모델 (Variants)
+
+- **GraphSAGE**: 모든 이웃을 사용하는 GCN의 계산 비용 문제를 해결하기 위해, 고정된 수의 이웃을 **샘플링(Sampling)**하여 집계함.
+- **GAT (Graph Attention Networks)**: 모든 이웃에 동일한 중요도를 부여하는 대신, **어텐션(Attention)** 메커니즘을 적용하여 더 중요한 이웃의 정보에 높은 가중치를 부여함.
+- **ChebNet**: 스펙트럼 기반 방식을 효율화하기 위해 Chebyshev 다항식을 사용하여 필터를 근사함.
+- **GIN (Graph Isomorphism Network)**: 그래프 동형성(Isomorphism)을 구분할 수 있을 정도로 강력한 표현력을 갖도록 설계됨.
+
+## 장단점
+
+| 구분 | 내용 |
+| --- | --- |
+| **장점** | - **비정형 데이터 처리**: 이미지/텍스트 외의 복잡한 연결 관계 데이터 처리에 탁월.<br>- **관계 학습**: 개체 간의 상호작용과 구조적 정보를 효과적으로 포착.<br>- **성과**: 추천 시스템, 신약 개발 등 다양한 분야에서 SOTA(State-of-the-Art) 성능 달성. |
+| **단점** | - **Oversmoothing**: 층이 깊어질수록 노드 간의 정보가 섞여 구분이 어려워지는 현상.<br>- **확장성(Scalability)**: 거대 그래프의 경우 전체 인접 행렬을 메모리에 올리기 어려움 (GraphSAGE 등으로 해결 시도).<br>- **동적 그래프**: 실시간으로 변하는 그래프 구조를 반영하기 까다로움. |
+
 ## 활용방안
 
-- **소셜 네트워크 분석 (Social Network Analysis)**: 친구 추천, 커뮤니티 탐지, 가짜 뉴스 전파 경로 분석.
-- **생물정보학 및 화학 (Bioinformatics & Chemistry)**: 신약 개발을 위한 분자 구조 분석, 단백질 상호작용 예측, 약물 부작용 예측.
-- **추천 시스템 (Recommender Systems)**: 사용자(User)와 아이템(Item) 간의 상호작용 그래프를 분석하여 정교한 추천 제공.
-- **교통 예측 (Traffic Forecasting)**: 도로망을 그래프로 모델링하여 교통량 및 속도 예측.
-- **지식 그래프 (Knowledge Graph)**: 개체 간의 복잡한 관계를 추론하고 질의응답 시스템 고도화.
+- **소셜 네트워크 분석 (Social Network Analysis)**: 친구 추천(Facebook), 커뮤니티 탐지, 가짜 뉴스 전파 경로 분석.
+- **생물정보학 및 화학 (Bioinformatics & Chemistry)**: 신약 개발을 위한 분자 구조 분석(Drug Discovery), 단백질 상호작용 예측.
+- **추천 시스템 (Recommender Systems)**: 사용자(User)와 아이템(Item) 간의 상호작용 그래프를 분석하여 정교한 추천 제공 (Pinterest 등).
+- **지식 그래프 (Knowledge Graph)**: 개체 간의 복잡한 관계를 추론하고 질의응답 시스템 고도화(Google).
+- **컴퓨터 비전 (Computer Vision)**: 이미지 내 객체 간의 관계를 그래프로 모델링하여 장면(Scene) 이해.
 
 ## 최근 연구 동향
 
