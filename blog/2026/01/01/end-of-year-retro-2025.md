@@ -13,7 +13,7 @@ tags:
 규칙이라면 따라야겠지만, 인사와 내부 사정이 다른 것에 실망스러웠다. 비슷한 연차의 동료들 역시 각자 나름의 불만을 안고 출발했던 것 같다. 바꿀 수 없는 것보다는 바꿀 수 있는 것에 집중하자는 생각으로, 나는 다른 일들에 더 많은 시간을 쓰게 되었다.
 
 1분기는 목표가 사라진 채로 거의 의욕 없이 흘려보냈다. 그 전까지는 대학원 시험을 잘 치르는 것이 가장 큰 목표였는데, 결과 발표가 계속 미뤄지면서 마음이 더 힘들어졌다.
-여러 번 연기되었던 결과는 4월 초에야 나왔고, 낙방이었다. GPA인지, 시험 결과인지, SOP인지, 영어 성적인지 무엇이 부족했는지 궁금해 문의했지만 구체적인 답을 듣지는 못했다. 대신 아래와 같은 답변을 받을 수 있었다.
+여러 번 연기되었던 결과는 4월 초에야 나왔고, 낙방이었다. 그 원인이 GPA인지, 시험 결과인지, SOP인지, 영어 성적인지 무엇이 부족했는지 궁금해 문의했지만 구체적인 답을 듣지는 못했다. 대신 아래와 같은 답변을 받을 수 있었다.
 
 > We regret to inform you that your application in this admission cycle was not successful. Please understand that admission into the Master of Science in Machine Learning is very competitive and takes into account a large number of criteria. Due to restrictions on the number of places, we unfortunately have to decline a large number of strong applications.
 > Although this final decision may be disappointing, we are confident that, given your credentials, many other opportunities will open up for you.
