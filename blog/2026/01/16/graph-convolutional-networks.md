@@ -57,7 +57,7 @@ graph LR
 | **불변성 (Invariance)** | **이동 불변성**: 대상이 이동해도 인식 가능 | **순열 불변성**: 노드 순서가 바뀌어도 결과는 동일해야 함 |
 | **주요 목적** | 지역적 특징(Local Feature) 추출 | 관계성 및 구조적 특징(Structural Feature) 학습 |
 
-## 활용방안 (Applications)
+## 활용방안
 
 - **소셜 네트워크 분석 (Social Network Analysis)**: 친구 추천, 커뮤니티 탐지, 가짜 뉴스 전파 경로 분석.
 - **생물정보학 및 화학 (Bioinformatics & Chemistry)**: 신약 개발을 위한 분자 구조 분석, 단백질 상호작용 예측, 약물 부작용 예측.
@@ -65,7 +65,7 @@ graph LR
 - **교통 예측 (Traffic Forecasting)**: 도로망을 그래프로 모델링하여 교통량 및 속도 예측.
 - **지식 그래프 (Knowledge Graph)**: 개체 간의 복잡한 관계를 추론하고 질의응답 시스템 고도화.
 
-## 최근 연구 동향 (Recent Trends: 2025-2026)
+## 최근 연구 동향
 
 1. **GNN과 LLM의 융합 (GNN-LLM Convergence)**: GCN 모델 자체의 개선을 넘어, **GraphRAG**와 같이 지식 그래프를 인코딩하여 LLM의 추론을 돕거나 상호보완하는 연구가 주류를 이룸.
 2. **그래프 파운데이션 모델 (Graph Foundation Models)**: 특정 태스크에 국한되지 않고, 다양한 그래프 데이터에 범용적으로 적용 가능한 대규모 사전 학습 모델(Pre-trained Models) 개발이 가속화됨.
