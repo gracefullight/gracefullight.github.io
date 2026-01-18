@@ -43,6 +43,7 @@ tags:
 | get to someone | to bother or disturb someone | bother | ~를 괴롭히다 |
 | get to (place) | to arrive at a place or destination | arrive at | ~에 도착하다 |
 | get to do | to have the opportunity to do | have the chance | ~할 기회를 얻다 |
+| allegiance | loyalty or commitment to a group or cause | loyalty | 충성 |
 
 - get to:
   - access 가능 지점에 도착

@@ -11,6 +11,8 @@ tags:
 
 **GCN (Graph Convolutional Networks)** 은 그래프 구조 데이터에서 노드(Node)와 엣지(Edge) 정보를 활용하여 특징(Feature)을 학습하는 딥러닝 모델임. 이미지 처리에 주로 사용되는 CNN(Convolutional Neural Networks)의 합성곱 연산을 그래프 데이터로 확장한 개념으로, **이웃 노드들의 정보를 집계(Aggregate)하여 현재 노드의 표현(Representation)을 업데이트**하는 방식을 사용함.
 
+![Graph Concept](./graph-concept.png)
+
 ## 등장배경
 
 - **비유클리드 데이터 처리의 한계**: 기존의 CNN은 이미지나 텍스트와 같이 격자(Grid) 구조를 가진 유클리드 데이터(Euclidean Data)에서 뛰어난 성능을 보였으나, 소셜 네트워크, 분자 구조, 웹 링크 등 불규칙한 관계를 가진 **비유클리드 데이터(Non-Euclidean Data)**를 처리하는 데에는 한계가 존재함.
@@ -150,3 +152,7 @@ def graph_convolutional_layer(A, X, W):
 3. **Graph Transformers**: 기존 메시지 패싱(Message Passing) 방식의 한계를 넘어서기 위해, 트랜스포머(Transformer) 아키텍처를 그래프 도메인에 최적화하여 적용하는 연구 활발.
 4. **생성형 GNN (Generative GNNs)**: 신약 개발이나 소재 설계 등에서 원하는 속성을 가진 새로운 그래프 구조를 생성하는 확산 모델(Diffusion Models) 기반 연구 증가.
 5. **설명 가능성 및 신뢰성 (Explainability & Trustworthiness)**: 금융이나 의료 등 민감한 분야의 도입 확대로 인해, 모델의 예측 근거를 제시하고 견고성(Robustness)을 확보하는 기술이 필수적임.
+
+## Ref
+
+- [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
