@@ -29,3 +29,6 @@ tags:
 | Look at (options) | To examine options or choices | examine (options) | (선택지 등을) 모두 검토하다 |
 | Figure out ~ / Figure ~ out | To solve or understand a problem | solve ~ | ~을 이해하다 / 알아내다 |
 | the last straw | the final problem in a series of problems that finally makes you feel you cannot continue to accept a bad situation | final annoyance | 더 이상 참을 수 없게 만드는 것 |
+| dispatch | to send someone or something to a place for a specific purpose | send off | 파견하다, 급파하다 |
+| underlie | to be the cause or basis off something | be the basis of | ~의 기초가 되다, ~의 근본 원인이 되다 |
+| sentiment | a general opinion or feeling | feeling | 감정, 정서 |
