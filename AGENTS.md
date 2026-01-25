@@ -13,19 +13,19 @@
 
 ## Build, Test, and Development Commands
 
-- `pnpm dev`: Start Docusaurus local dev server.
-- `pnpm build`: Production build.
-- `pnpm serve`: Preview a production build locally.
-- `pnpm test` / `pnpm test:ui`: Run unit tests (Vitest) / open Vitest UI.
-- `pnpm typecheck`: TypeScript project type checks.
-- `pnpm format` / `pnpm format:check`: Auto-format / verify formatting (Biome).
-- `pnpm lint`: Auto-fix lint issues via Biome rules.
-- `pnpm deploy`: Deploy via Docusaurus (GitHub Pages).
+- `bun dev`: Start Docusaurus local dev server.
+- `bun run build`: Production build.
+- `bun run serve`: Preview a production build locally.
+- `bun run test` / `bun run test:ui`: Run unit tests (Vitest) / open Vitest UI.
+- `bun typecheck`: TypeScript project type checks.
+- `bun format` / `bun format:check`: Auto-format / verify formatting (Biome).
+- `bun lint`: Auto-fix lint issues via Biome rules.
+- `bun deploy`: Deploy via Docusaurus (GitHub Pages).
 
 ## Coding Style & Naming Conventions
 
 - Language: TypeScript + React 19.
-- Formatting/Linting: Biome enforces 2-space indent, LF, 80 cols, double quotes, sorted imports, and common correctness/style rules. Run `pnpm format` and `pnpm lint`.
+- Formatting/Linting: Biome enforces 2-space indent, LF, 80 cols, double quotes, sorted imports, and common correctness/style rules. Run `bun format` and `bun lint`.
 - Filenames: Prefer `kebab-case` (Biome rule). Framework overrides are allowed where needed (e.g., Docusaurus theme components, `index.tsx`).
 - Patterns: Top-level hooks only; avoid unused vars/imports; prefer object spread and const assertions.
 
@@ -33,7 +33,7 @@
 
 - Framework: Vitest + React Testing Library (`config/vitest.setup.ts`).
 - Location & names: Co-locate tests with code using `*.test.ts[x]` (e.g., `src/utils/png.test.ts`).
-- Run: `pnpm test` (use `pnpm test:ui` for interactive mode).
+- Run: `bun run test` (use `bun run test:ui` for interactive mode).
 - Scope: Unit-test utilities and component behavior; prefer user-centric assertions via Testing Library.
 
 ## Commit & Pull Request Guidelines
@@ -41,9 +41,9 @@
 - Commits: Conventional Commits enforced by commitlint; devmoji assists (`.husky/prepare-commit-msg`). Example: `feat: add image-to-pdf page`.
 - Pre-commit: `lint-staged` runs Biome format/lint on changed files.
 - PRs: Provide clear description, link issues, include screenshots for UI changes, and note any config changes.
-- Before opening PR: `pnpm typecheck && pnpm test && pnpm format:check`.
+- Before opening PR: `bun run typecheck && bun run test && bun run format:check`.
 
 ## Environment & Tooling
 
-- Node `22`, pnpm `10`. Install deps with `pnpm i`.
+- Node `24`, bun `1`. Install deps with `bun i`.
 - Do not commit generated folders (`.docusaurus`, `build`, `dist`). Avoid secrets in config or content.
