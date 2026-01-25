@@ -38,6 +38,8 @@
       "!**/dist",
       "!**/node_modules",
       "!**/pnpm-lock.yaml",
+      "!**/bun.lock",
+      "!**/bun.lockb",
       "!**/*.log"
     ]
   },
