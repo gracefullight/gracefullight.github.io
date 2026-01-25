@@ -87,8 +87,7 @@
     "vitest": "^4.0"
   },
   "engines": {
-    "node": "24",
-    "pnpm": "10"
+    "node": "24"
   },
   "name": "gracefullight.github.io",
   "private": true,
@@ -96,7 +95,7 @@
     "build": "docusaurus build",
     "build-plugins": "tsc ./src/plugins/*.ts --esModuleInterop --removeComments --module commonjs --target es2021 --pretty false",
     "clear": "docusaurus clear",
-    "cmd": "tsx ./scripts/index.ts",
+    "cmd": "bun ./scripts/index.ts",
     "deploy": "docusaurus deploy",
     "dev": "docusaurus start",
     "docusaurus": "docusaurus",
