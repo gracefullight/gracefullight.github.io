@@ -38,3 +38,4 @@ tags:
 | dry skin | skin that lacks moisture and may feel tight or flaky | dehydrated skin | 건성 피부 |
 | combination skin | skin that has both oily and dry areas | mixed skin | 복합성 피부 |
 | acne-prone skin | skin that is more likely to develop acne | skin likely to get acne | 여드름이 잘 나는 피부 |
+| dorsiflexion | the action of raising the foot upwards towards the shin | foot raised upwards | 발등 굽힘 |
