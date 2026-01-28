@@ -1,1 +1,1 @@
-pnpm lint-staged --config config/lint-staged.config.mjs
+bun lint-staged --config config/lint-staged.config.mjs
