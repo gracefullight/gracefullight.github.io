@@ -47,3 +47,20 @@ tags:
 | Chardonnay | a type of white wine | white wine | 샤르도네 (화이트 와인의 한 종류) |
 | hair loss shampoo | a shampoo that helps prevent hair loss | anti-hair loss shampoo | 탈모 방지 샴푸 |
 | cahs register | a machine used in stores to record sales and handle money | sales machine | 계산대, 금전 등록기 |
+
+## 여행
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Pick up ~ / Pick ~ up | To go to a place in order to bring the person | go to a place to bring someone | ~를 데리러 가다 |
+| Get in | To arrive | arrive | 도착하다 |
+| Drop off ~ / Drop ~ off | To give ~ a ride to a place | give ~ a ride to a place | ~를 차로 어떤 장소에 내려주다 |
+| See off ~ / See ~ off | To go to a place (such as an airpot) and say goodbye to ~ | go to a place and say goodbye to ~ | ~를 배웅하다 |
+| Take off | To leave the ground and start to fly | leave the ground and start flying | (비행기가) 이륙하다 |
+| Set off | To begin traveling / To start a journey | begin traveling | (여정을) 출발하다 |
+| Get away | To have a vacation | have a vacation | 휴가를 가다 |
+| Get off ~ | To leave a bus/train/plane | leave a bus/train/plane | 버스/기차/비행기에서 내리다 |
+| Check in | To register (at a hotol or an airport) | register at a hotel/airport | (호텔이나 공항에서) 체크인하다, 탑승 수속하다 |
+| Check out | To pay the hotel bill and leave | pay the hotel bill and leave | (호텔에서) 체크아웃하다, 호텔비를 지불하고 나가다 |
+| Stop over (in ~) | To have a short stop / To stay somewhere for a short time while traveling | have a short stop | (여행/이동 중에) ~에 잠시 들르다, 어딘가에 들르다 |
+| layover | A short stay somewhere between two parts of a journey | short stay during a journey | (여행 중의) 경유지, 잠시 머무름 (24시간 이내) |
