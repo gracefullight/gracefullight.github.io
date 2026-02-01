@@ -64,3 +64,23 @@ tags:
 | Check out | To pay the hotel bill and leave | pay the hotel bill and leave | (호텔에서) 체크아웃하다, 호텔비를 지불하고 나가다 |
 | Stop over (in ~) | To have a short stop / To stay somewhere for a short time while traveling | have a short stop | (여행/이동 중에) ~에 잠시 들르다, 어딘가에 들르다 |
 | layover | A short stay somewhere between two parts of a journey | short stay during a journey | (여행 중의) 경유지, 잠시 머무름 (24시간 이내) |
+
+## 음식
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Eat in | To eat at home | eat at home | 집에서 먹다 |
+| Eat out | To eat in a restaurant | eat at a restaurant | 외식하다 |
+| Cut back (on ~) | To reduce the consumption of ~ | reduce consumption of ~ | ~의 섭취(소비)를 줄이다 |
+| Whip up ~ / Whip ~ up | To prepare (food) quickly | prepare food quickly | (음식을) 빨리 준비하다 |
+| Chop up ~ | To chop or cut something into small pieces | cut into small pieces | (음식 재료를) 잘게 썰다 / 다지다 |
+| Go bad | Te become spoiled (used with food) | become spoiled | (음식이) 상하다 |
+| Throw out ~ / Throw ~ out | To dispose of ~ in the trash | dispose of ~ in the trash | ~를 쓰레기통에 버리다 |
+| Be out of ~ | To have nothing of a particular item ~ | have nothing of a particular item | ~가 다 떨어지다 |
+| baby formula | A manufactured food for babies | infant food | 분유 |
+| in stock | available for sale | available for sale | 재고가 있는 |
+| Pick up (an item such as food) | To buy (an item such as food) | buy an item | (음식 등을) 사다 |
+| Stop by ~ | To make a short visit to ~ (often on the way to somewhere else) | make a short visit to ~ | (보통 다른 곳에 가는 길에) 잠시 들르다 |
+| errands | short trips to do necessary tasks (such as shopping) | short trips for tasks | 심부름, 볼일 |
+| Cut out ~ | To completely stop one's consumption of ~ | completely stop consumption of ~ | ~를 완전히 끊다 |
+| get something to go | to order food or drinks to take away from a restaurant | order food to take away | 음식을 포장해 가다 |
