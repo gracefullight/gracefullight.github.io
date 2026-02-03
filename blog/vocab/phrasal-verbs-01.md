@@ -84,3 +84,19 @@ tags:
 | errands | short trips to do necessary tasks (such as shopping) | short trips for tasks | 심부름, 볼일 |
 | Cut out ~ | To completely stop one's consumption of ~ | completely stop consumption of ~ | ~를 완전히 끊다 |
 | get something to go | to order food or drinks to take away from a restaurant | order food to take away | 음식을 포장해 가다 |
+
+## 날씨 
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Start out | To begin (in a particular way) | begin in a particular way | (특정한 방식으로) 시작하다 |
+| Clear up | (For the skies) To be clear of bad weather such as rain, snow, or smoke | become clear of bad weather | (하늘이) 맑다 |
+| Come out | To appear (with the weather, often used witwh clestial bodies like the sun and stars) | appear (with weather) | (날씨와 관련되어서 해나 별이) 나오다 |
+| Warm up | To become warm or hot | become warm | 따뜻해지다, 더워지다 |
+| Cool down | To become cool or cold | become cool | 시원해지다, 차가워지다 |
+| Be rained in/Be snowed in | To be forced to to stay indoors because of heavy rain or snow | forced to stay indoors due to weather | (폭우나 폭설 때문에) 실내에 머물러야 하다 |
+| Bundle up/Bundle ~ up | To dress warmly / To wear enough clothes to keep oneself warm | dress warmly | 옷을 따뜻하게 껴입다/~를 껴입히다|
+| Pick up (wind and/or rain) | To increase in speed and force | increase in speed and force | (바람이나 비가) 세지다 |
+| Blow over | For a storm (or stormy emotions) to pass | pass (for a storm) | (폭풍우나 감정이) 지나가다/사그라들다 |
+| Calm down | TO become calm (for weather) | become calm | (날씨가) 진정되다/가라앉다 |
+| get in the way of ~ | to hinder ~ / to slow ~ down | hinder ~ / slow ~ down | ~을 방해하거나 진행을 늦추다 |
