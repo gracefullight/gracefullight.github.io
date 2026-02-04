@@ -100,3 +100,24 @@ tags:
 | Blow over | For a storm (or stormy emotions) to pass | pass (for a storm) | (폭풍우나 감정이) 지나가다/사그라들다 |
 | Calm down | TO become calm (for weather) | become calm | (날씨가) 진정되다/가라앉다 |
 | get in the way of ~ | to hinder ~ / to slow ~ down | hinder ~ / slow ~ down | ~을 방해하거나 진행을 늦추다 |
+
+## 업무
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Speed up | To increase the speed of ~ | increase the speed of ~ | ~를 더 빨리 진행하다 |
+| metabolism | The chemical processes that occur within a living organism in order to maintain life | chemical processes in the body | 신진대사 |
+| Wrap up ~ / Wrap ~ up | To finish ~ | finish ~ | ~를 마무리하다 |
+| Take over ~ / Take ~ over | To begin to do something that someone else has been doing | begin doing something someone else did | (타인이 하던 일을) 인수인계 받다 |
+| Take on ~ / Take ~ on | To undertake (a task) | undertake a task | (일 등을) 떠맡다, 책임지다 |
+| Come up with ~ | To suggest or think of an idea or plan | suggest or think of an idea | (아이디어, 계획 등을) 제시하다, 생각해내다 |
+| Put together ~ | To create ~ by assembiling different people/parts | create by assembling parts | (사람들을, 이것저것을) 모아서 ~를 만들다, 준비하다 |
+| assemble | To gather together in one place for a common purpose | gather together | 모이다, 모으다 |
+| Reach out (to ~) | To contact ~ by phone or email | contact ~ | 전화나 메일로 ~에게 연락하다 / (일이나 업무로) ~를 접촉하다 |
+| Follow up (on ~) | To pursue ~ further | pursue further | (~에 관한) 후속 조치를 하다 |
+| Take care of ~ | To do ~ / To do deal with ~ | do ~ / deal with ~ | 어떤 일을 하다/처리하다 |
+| Turn in ~ / Turn ~ in | To submit ~ | submit ~ | ~를 제출하다 |
+| Pick up ~ / Pick ~ up | To continue ~ after taking a break | continue ~ after a break | 잠시 쉬었다 ~을 다시 계속하다 |
+| call it a day | To stop working for the day | stop working for the day | 하루 일을 마치다 |
+| genderlect | a variety of language used by a particular gender | language used by a gender | 젠더렉트 (특정 성별이 사용하는 언어 양식) |
+| get in touch (with ~) | to contact ~ | contact ~ | ~와 연락하다 |
