@@ -121,3 +121,4 @@ tags:
 | call it a day | To stop working for the day | stop working for the day | 하루 일을 마치다 |
 | genderlect | a variety of language used by a particular gender | language used by a gender | 젠더렉트 (특정 성별이 사용하는 언어 양식) |
 | get in touch (with ~) | to contact ~ | contact ~ | ~와 연락하다 |
+| take someone through something | to explain something to someone in detail | explain something in detail | ~에게 ~를 자세히 설명하다 |
