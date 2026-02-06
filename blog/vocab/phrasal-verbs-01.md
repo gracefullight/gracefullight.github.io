@@ -122,3 +122,19 @@ tags:
 | genderlect | a variety of language used by a particular gender | language used by a gender | 젠더렉트 (특정 성별이 사용하는 언어 양식) |
 | get in touch (with ~) | to contact ~ | contact ~ | ~와 연락하다 |
 | take someone through something | to explain something to someone in detail | explain something in detail | ~에게 ~를 자세히 설명하다 |
+
+
+
+## ETC
+
+### 과거
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| throwback | a person or thing that has the characteristics of an earlier time| a person or thing with characteristics of an earlier time | (과거의) 복고풍, 회귀 |
+| dwell on | to think, speak, or write a lot about a particular subject, especially one that has caused negativity | think, speak, or write a lot about a particular subject | ~에 대해 오래 생각하거나 이야기하다 |
+| upend | to turn something upside down; to greatly affect or upset something | turn upside down; greatly affect or upset | ~를 뒤집다; ~에 큰 영향을 주다 |
+| cusp | the point of transition from one state to another | point of transition | (상태의) 전환점 |
+| transpire | to happen or take place | happen or take place | 일어나다, 발생하다 |
+| referendum | a general vote by the electorate on a single political question which has been referred to them for a direct decision | general vote on a political question | 국민투표 |
+| oblivion | the state of being unaware or unconscious of what is happening around one | state of being unaware | 망각 |
