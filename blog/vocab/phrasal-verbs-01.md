@@ -122,7 +122,18 @@ tags:
 | genderlect | a variety of language used by a particular gender | language used by a gender | 젠더렉트 (특정 성별이 사용하는 언어 양식) |
 | get in touch (with ~) | to contact ~ | contact ~ | ~와 연락하다 |
 | take someone through something | to explain something to someone in detail | explain something in detail | ~에게 ~를 자세히 설명하다 |
-
+| Lay off ~ / Lay ~ off | To stop employing ~ / To dismiss (workers) | stop employing ~ / dismiss workers | ~를 정리해고하다 |
+| Call off ~ | To cancel ~ | cancel ~ | ~를 취소하다, 철회하다 |
+| Put off ~ | To postpone ~ / To delay | postpone ~ | ~를 연기하다, 미루다 |
+| Take off | To (suddenly) become successful or popular | become successful or popular | (사업이나 상품이) 급격히 성공하다, 인기를 끌다 |
+| Close down (~) | To stop business (usually permanently) | stop business | (보통 아예) 사업을 접다 / 폐점하다 |
+| Turn down ~ / Turn ~ down | To reject ~ | reject ~ | ~를 거절하다 / 거부하다 |
+| Open up ~ | To start doing business | start doing business | (사업, 영업을) 시작하다 / 문을 열다 |
+| Carry out ~ / Carry ~ out | To accomplish ~ / To do ~ | accomplish ~ / do ~ | (어떤 일을) 수행하다, 해내다 |
+| Keep up ~ / Keep ~ up | To continue to do ~ | continue to do ~ | 계속 ~하다 |
+| Carry on ~ | To continue doing ~ | continue doing ~ | 계속해서 ~하다 |
+| Move on (to ~) | To start doing something new | start doing something new | (다음 주제나 일로) 넘어가다 / 새로운 걸 시작하다 |
+| Keep up with ~ | To make progress at the same speed as others | make progress at the same speed as others | ~에 뒤처지지 않게 따라가다 |
 
 
 ## ETC
