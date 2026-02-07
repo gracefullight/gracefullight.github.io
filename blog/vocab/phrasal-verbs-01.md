@@ -135,6 +135,24 @@ tags:
 | Move on (to ~) | To start doing something new | start doing something new | (다음 주제나 일로) 넘어가다 / 새로운 걸 시작하다 |
 | Keep up with ~ | To make progress at the same speed as others | make progress at the same speed as others | ~에 뒤처지지 않게 따라가다 |
 
+## 학업
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Run through ~ | To read ~ quickly | read quickly | (책 등을) 대충 빨리 보다 |
+| Look over ~ / Look ~ over | To review ~ | review ~ | ~를 살펴보다/훑어보다 |
+| Make up ~ / Make ~ up | To complete a test or an assignment that you couldn't complete on time | complete a test or assignment late | (제시간에 못한 시험, 숙제를) 보충하다 / (실수를) 만회하다 |
+| Hand in ~ | To submit ~ | submit ~ | ~를 제출하다 |
+| resignation letter | A letter written to formally announce one's resignation from a job | letter announcing resignation | 사직서 |
+| Read over ~ / Read ~ over | To read ~ thoroughly | read thoroughly | (책이나 문서를) 처음부터 끝까지 다 읽다 / (문장을) 다시 읽다 |
+| Hand out ~ / Hand ~ out | To distribute ~ | distribute ~ | ~를 나눠주다 / 배포하다 |
+| Take in ~ / Take ~ in | To understand what they read | understand what they read | (듣거나 읽은 것을) 이해하다 |
+| Go over ~ | To check ~ | To check something carefully | check carefully | ~를 검토하다 |
+| Know ~ backwards and forwards | To understand ~ very well | understand very well | ~를 아주 잘 이해하다 |
+| Keep up with ~ | To make progress at the same speed as antoher person or other people | make progress at the same speed as another person | ~에 뒤지지 않다 |
+| Fall behind | To fail to keep up with others in the same class/course/school | fail to keep up with others | (반에서) 뒤처지다 |
+| Catch up with ~ | To do something fast enough in order to join someone who started first | do something fast enough to join someone | ~를 따라잡다 |
+| Sign up for ~ | To register for ~ | register for ~ | ~ 과목을 듣기 위해 수강신청하다 |
 
 ## ETC
 
