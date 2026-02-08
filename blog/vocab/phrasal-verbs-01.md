@@ -153,6 +153,16 @@ tags:
 | Fall behind | To fail to keep up with others in the same class/course/school | fail to keep up with others | (반에서) 뒤처지다 |
 | Catch up with ~ | To do something fast enough in order to join someone who started first | do something fast enough to join someone | ~를 따라잡다 |
 | Sign up for ~ | To register for ~ | register for ~ | ~ 과목을 듣기 위해 수강신청하다 |
+| Do over ~ / Do ~ over | To redo ~ | redo ~ | ~를 다시 하다 |
+| Study up on ~ | To do some research on ~ | | do research on ~ | ~에 대해 조사하다 / 공부하다 |
+| Turn up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 | 
+| Show up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 |
+| Drop out of ~ | To leave school or college without graduating | leave school without graduating | (학교, 대학을) 중퇴하다 |
+| Go through ~ | To examine or search ~ carefully | examine or search carefully | ~를 자세히 조사하다 |
+| Read up on ~ | To do research on ~ | do research on ~ | ~에 관해 조사하다 / 공부하다 |
+| Study under ~ | To be taught by ~ | be taught by ~ | ~ 아래에서 공부하다 / 연구하다 |
+| warm-up | An activity or exercise that prepares a person for more intense physical activity | preparatory activity | 준비 운동, 워밍업 |
+
 
 ## ETC
 
