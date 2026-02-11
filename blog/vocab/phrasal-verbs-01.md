@@ -163,6 +163,30 @@ tags:
 | Study under ~ | To be taught by ~ | be taught by ~ | ~ 아래에서 공부하다 / 연구하다 |
 | warm-up | An activity or exercise that prepares a person for more intense physical activity | preparatory activity | 준비 운동, 워밍업 |
 
+## 감정
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Tear up | To start crying | start crying | 눈물이 고이다, 울기 시작하다 |
+| Choke up | To feel a very strong emotion to the point that one is unable to speak | feel a strong emotion that makes it hard to speak | (감정이 복받쳐) 목이 메다 |
+| Wear down ~ / Wear ~ down | To make ~ feel tired | make ~ feel tired | ~를 지치게 하다, 피곤하게 하다 | 
+| Calm down / Calm ~ down | To become calm (for emotional situations) | become calm | (감정이) 진정되다 / ~를 진정시키다 |
+| Blow up at ~ | To lose one's temper and explode | lose one's temper and explode | ~에게 화가 나서 폭발하다 |
+| out of nowhere | Suddenly and unexpectedly | suddenly and unexpectedly | 갑자기, 느닷없이 |
+| Vent out ~ | To let one's negative feelings out |  let negative feelings out | (분노, 스트레스, 좌절감 같은 부정적인 감정을) 배출하다, 터뜨리다 |
+| Bottle up ~ / Bottle ~ up | To keep a feeling or emotion inside and not express it | keep a feeling inside and not express it | 감정을 속으로 삭이다 |
+| Cool off | To calm down / To become less angry | calm down / become less angry | 진정해지다, 차분해지다 |
+| Stir up ~ / Stir ~ up | To make someone feel an emotion | To make someone feel an emotion | (어떤 감정을) 불러일으키다 |
+| hatred | An intense dislike or ill will | intense dislike | 증오 |
+| Cheer up | To start feel happy again / To become cheerful | start feeling happy again / become cheerful | 기운을 내다 |
+| Calm down | To become less agitated or upset | Relax | 진정되다, 가라앉다 |
+| Cool off | To become less hot or angry | Chill out | 진정해지다, 차분해지다 |
+| Chill out | To relax completely | Take it easy | 화를 누그러뜨리다, 열을 식히다, 긴장을 풀다 |
+| Cool down | To lower temperature or become less angry | Calm down | 화를 누그러뜨리다 |
+| Settle down | To become calm or to establish a stable life | Get comfortable | 진정하다 |
+| Simmer down | To calm down gradually | Relax slowly | 흥분을 가라앉히다 |
+| Take it easy | To relax and not stress | Chill out | 진정하다 |
+
 
 ## ETC
 
