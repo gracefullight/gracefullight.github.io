@@ -187,6 +187,23 @@ tags:
 | Simmer down | To calm down gradually | Relax slowly | 흥분을 가라앉히다 |
 | Take it easy | To relax and not stress | Chill out | 진정하다 |
 
+## 가족
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| Get together (with ~) | To meet and spend time with each other | Meet up (with ~) | 만나서 함께 시간을 보내다 |
+| Find out ~ / Find ~ out | To discover some information | Learn (about) ~ | ~을 알아내다, 발견하다 |
+| genealogy | The study of family history and lineage | family history | 계보, 족보 |
+| Take after ~ | To resemble or behave like an older family member | Resemble ~ | (*외모, 성격이*) ~을 닮다 |
+| Look like ~ | To physically resemble an older family member | Resemble ~ | (*외모가*) ~을 닮다 |
+| Get along (with ~) | To have a positive relationship with ~ | Be friendly (with ~) | ~와 잘 지내다. |
+| Run away | To leave a place, usually one's home, because of negative circumstances | Escape | 부정적 환경 떄문에 집을 떠나다, 가출하다 |
+| upbringing | The way a child is raised and educated by their parents or guardians | the way a child is raised | 양육, 성장 과정 |
+| Go against ~ | To disagree or be opposed to ~ | Disagree with ~ | ~에 반대하다 |
+| End up ~ | For something to eventually happen | Eventually become ~ | 결국 ~하게 되다 |
+| Cut off ~ | To separate or block someone from something that they previously had access to | Isolate ~ | ~을 끊어내다, 잘라 버리다 |
+| Get it together | to do things sensibly and not foolishly | to be organized and focused | ~를 어리석지 않게 합리적으로 잘 해내다 |
+
 
 ## ETC
 
