@@ -4,7 +4,7 @@ date: 2026-02-17T00:16:40.099+11:00
 description: Innovation Tactics
 authors: me
 tags:
-  - TIM
+  - tim
 ---
 
 ## Profit Model
