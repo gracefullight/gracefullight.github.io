@@ -9,6 +9,8 @@ tags:
 
 ## OpenQASM 2.0
 
+> 오픈캐즘
+
 ```openqasm
 OPENQASM 2.0; // 언어 버전 선언
 
