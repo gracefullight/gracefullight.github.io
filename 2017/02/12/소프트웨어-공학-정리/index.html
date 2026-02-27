@@ -1,0 +1,1872 @@
+<!doctype html><html lang=ko dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>소프트웨어 공학 정리 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리/ /><meta data-rh=true property=og:locale content=ko /><meta data-rh=true property=og:locale:alternate content=en /><meta data-rh=true name=docusaurus_locale content=ko /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=ko /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="소프트웨어 공학 정리 | gracefullight.dev"/><meta data-rh=true name=description content=소프트웨어 /><meta data-rh=true property=og:description content=소프트웨어 /><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2017-02-12T11:05:12.000Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=정보처리 /><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2017/02/12/소프트웨어-공학-정리/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Eunkwang Shin","url":"https://github.com/gracefullight"},"datePublished":"2017-02-12T11:05:12.000Z","description":"소프트웨어","headline":"소프트웨어 공학 정리","isPartOf":{"@id":"https://gracefullight.dev/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리","name":"소프트웨어 공학 정리","url":"https://gracefullight.dev/2017/02/12/소프트웨어-공학-정리"}</script><link rel=alternate type=application/rss+xml href=/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/opensearch.xml><link href=/img/favicon-32x32.png rel=icon><link href=/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/assets/css/styles.775e2857.css /><script src=/assets/js/runtime~main.8c99d553.js defer></script><script src=/assets/js/main.55b7c064.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="본문으로 건너뛰기"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>본문으로 건너뛰기</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>한국어</a><ul class=dropdown__menu><li><a href=/2017/02/12/소프트웨어-공학-정리/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ko>한국어</a><li><a href=/en/2017/02/12/소프트웨어-공학-정리/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/archive/>Archives</a><a class="navbar__item navbar__link" href=/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="검색 (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>검색</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="최근 블로그 문서 둘러보기"><div class="sidebarItemTitle_pO2u margin-bottom--md">최근 포스트</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>소프트웨어 공학 정리</h1><div class="container_mt6G margin-vert--md"><time datetime=2017-02-12T11:05:12.000Z>2017년 2월 12일</time> · <!-- -->약 42분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class=avatar__photo-link href=/authors/me/><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"/></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=/authors/me/><span class=authorName_yefp translate=no>Eunkwang Shin</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt><a href=https://www.linkedin.com/in/gracefullight/ target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=LinkedIn><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em preserveAspectRatio=xMidYMid viewBox="0 0 256 256" style=--dark:#0a66c2;--light:#ffffffe6 class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"/></svg></a><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=GitHub><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em viewBox="0 0 256 250" preserveAspectRatio=xMidYMid style=--dark:#000;--light:#fff class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"/></svg></a><a href=mailto:gracefullight.dev@gmail.com target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=Email><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 class=authorSocialIcon_XYv3><path stroke=none d="M0 0h24v24H0z"/><path d="M7.2 12a4.8 4.8 0 1 0 9.6 0 4.8 4.8 0 1 0-9.6 0"/><path d="M16.8 12v1.8a3 3 0 0 0 6 0V12a10.8 10.8 0 1 0-6.6 9.936"/></svg></a></div></div></div></div></div></header><div id=__blog-post-container class=markdown><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어>소프트웨어<a href=#소프트웨어 class=hash-link aria-label="소프트웨어에 대한 직접 링크" title="소프트웨어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">하드웨어를 동작시켜 사용자가 작업을 편리하게 수행하도록하는 프로그램과 자료구조</li>
+<li class="">프로그램 개발, 운용, 유지보수 관련된 모든 문서와 정보를 포함</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=특징>특징<a href=#특징 class=hash-link aria-label="특징에 대한 직접 링크" title="특징에 대한 직접 링크" translate=no>​</a></h3>
+<blockquote>
+<p>프레드릭 브룩스가 정의</p>
+</blockquote>
+<ul>
+<li class="">복잡성: Complexity, 개발과정이 복잡, 비표준화</li>
+<li class="">순응성: Conformity, 사용자의 요구나 환경 변화에 적절히 변경</li>
+<li class="">변경성: Changeability</li>
+<li class="">비가시성: Invisibility, 소프트웨어 구조는 외관으로 나타나지 않고 코드로 숨어 있다.</li>
+</ul>
+<blockquote>
+<p>확장판</p>
+</blockquote>
+<ul>
+<li class="">상품성 : 개발된 소프트웨어는 상품화되어 판매된다.</li>
+<li class="">견고성 : 일부 수정으로 소프트웨어 전체에 영향을 줄 수 있다.</li>
+<li class="">비마모성 : 마모되거나 소멸되지 않는다.</li>
+<li class="">비제조성 : 하드웨어처럼 제작이 아니라 논리적인 절차에 맞게 개발</li>
+<li class="">비과학성 : 과학적이 아니라 조직, 인력, 시간, 절차 등 중심</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=분류>분류<a href=#분류 class=hash-link aria-label="분류에 대한 직접 링크" title="분류에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">유형:<!-- -->
+<ul>
+<li class="">주문형</li>
+<li class="">패키지형</li>
+<li class="">임베디드형</li>
+</ul>
+</li>
+<li class="">기능에 의한 분류 : 시스템, 응용</li>
+<li class="">사용 분야에 의한 분류 : 프로그래밍, 문서, 통신, 분산처리, 멀티미디어, 개발, 인공지능</li>
+<li class="">개발 과정 성격에 따른 분류 : 프로토타입, 프로젝트 산출물, 패키지</li>
+<li class="">정보처리 방법에 따른 분류 : 일괄처리, 온라인, 실시간</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=시스템-구성요소>시스템 구성요소<a href=#시스템-구성요소 class=hash-link aria-label="시스템 구성요소에 대한 직접 링크" title="시스템 구성요소에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">입력 : 처리 방법, 처리할 데이터, 조건을 시스템에 투입하는 것</li>
+<li class="">처리 : 입력된 데이터를 처리 방법과 조건에 따라 처리하는 것</li>
+<li class="">출력 : 처리된 결과를 시스템에서 산출하는 것</li>
+<li class="">제어 : 자료를 입력하여 출력될 때까지의 처리 과정이 올바르게 진행되는지 감독하는 것</li>
+<li class="">피드백 : 출력된 결과가 예정된 목표를 만족시키지 못할 경우 목표 달성을 위해 반복 처리 하는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위기>위기<a href=#위기 class=hash-link aria-label="위기에 대한 직접 링크" title="위기에 대한 직접 링크" translate=no>​</a></h3>
+<p>여러가지 원인해 의해 개발 속도가 하드웨어의 개발속도를 따라가지 못해 소프트웨어에 대한 사용자들의 요구사항을 처리할 수 없는 문제가 발생함을 의미</p>
+<ul>
+<li class="">소프트웨어의 특징에 대한 이해 부족 : 물리적이지 않고 논리적인 소프트웨어 특징을 이해하지 못함</li>
+<li class="">소프트웨어의 관리 부재 : 소프트웨어에 대한 관리를 소홀히 하여 효율적인 자원 통제가 이루어지지 못했다.</li>
+<li class="">프로그래밍에만 치중 : 소프트웨어 품질이나 유지보수는 고려하지 않고, 프로그래밍만 하려하므로 다양하고 복잡해지는 소프트웨어의 요구사항을 처리하지 못함</li>
+<li class="">개발 인력 부족과 그로 인한 인건비 상승</li>
+<li class="">성능 및 신뢰성 부족</li>
+<li class="">개발 기간 지연 및 개발 비용 증가</li>
+<li class="">유지보수가 어려워져 비용 증가</li>
+<li class="">소프트웨어의 생산성 저하</li>
+<li class="">소프트웨어의 품질 저하</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-공학>소프트웨어 공학<a href=#소프트웨어-공학 class=hash-link aria-label="소프트웨어 공학에 대한 직접 링크" title="소프트웨어 공학에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">소프트웨어의 위기를 극복하기 위한 방안으로 연구된 학문</li>
+<li class="">소프트웨어의 품질과 생산성 향상을 목적</li>
+<li class="">IEEE 정의 : 소프트웨어의 개발, 운용, 유지보수, 폐기 처분에 대한 체계적인 접근 방안</li>
+<li class="">Fairley 정의 : 지정된 비용과 기간 내의 소프트웨어를 체계적으로 생산하고 유지보수하는 데 관련된 기술적이고 관리적인 원리</li>
+<li class="">Boehm 정의 : 과학적인 지식을 소프트웨어 설계와 제작에 응용하는 것이며 이를 개발 운용, 유지보수하는 데 필요한 문서 작성 과정</li>
+<li class="">제품을 단지 생산하는 것이 아니라 가장 경제적인 방법으로 양질의 제품을 생산하는 것</li>
+<li class="">계층화 기술을 사용한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=계층화-기술>계층화 기술<a href=#계층화-기술 class=hash-link aria-label="계층화 기술에 대한 직접 링크" title="계층화 기술에 대한 직접 링크" translate=no>​</a></h3>
+<p>도구, 방법, 절차가 있다.</p>
+<ul>
+<li class="">도구 : Tool 절차와 방법을 자동 또는 반자동으로 처리하는 기능을 제공, 대표적으로 CASE를 사용</li>
+<li class="">방법 : Method 소프트웨어를 구축하는 기술적인 방법을 제공</li>
+<li class="">절차 : Process<!-- -->
+<ul>
+<li class="">소프트웨어 개발에 사용되는 개발 방법과 도구가 사용되는 순서</li>
+<li class="">계층화 기술들을 결합시켜 합리적이고 적절한 방법으로 소프트웨어를 개발하고 유지</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기본-원칙>기본 원칙<a href=#기본-원칙 class=hash-link aria-label="기본 원칙에 대한 직접 링크" title="기본 원칙에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">현대적인 프로그래밍 기술을 계속적으로 적용해야한다.</li>
+<li class="">개발된 소프트웨어 품질이 유지되도록 지속적으로 검증해야한다.</li>
+<li class="">소프트웨어 개발 관련 사항 및 결과에 대한 명확한 기록을 유지해야한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=발전-과정>발전 과정<a href=#발전-과정 class=hash-link aria-label="발전 과정에 대한 직접 링크" title="발전 과정에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">1960 : 소프트웨어 공학의 시작, 구조적 프로그래밍</li>
+<li class="">1970 : 구조적 분석/설계 개념 도입, 상품화</li>
+<li class="">1980 : 하드웨어 가격 하락</li>
+<li class="">1985~ : 객체지향 기술 사용, CASE 등의 활용, 재공학</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=품질과-생산성>품질과 생산성<a href=#품질과-생산성 class=hash-link aria-label="품질과 생산성에 대한 직접 링크" title="품질과 생산성에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=품질>품질<a href=#품질 class=hash-link aria-label="품질에 대한 직접 링크" title="품질에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">사용자가 요구하는 대로 동작</li>
+<li class="">하드웨어 자원을 효율적으로 이용</li>
+<li class="">일정 시간 내에 주어진 조건하에서 원하는 기능을 실행</li>
+<li class="">처리 절차에 맞게 수행되어 정확하게 결과가 산출</li>
+<li class="">소프트웨어의 개발, 유지보수 등이 초기 예상 비용 이내에서 수행</li>
+<li class="">적당한 사용자 인터페이스를 제공해 사용하기가 편리해야한다.</li>
+<li class="">유지보수가 용이하고 신뢰성이 높아야한다.</li>
+<li class="">에러가 최소화</li>
+<li class="">소프트웨어 사용법, 구조의 설명, 성능, 기능이 이해하기 쉬어야한다.</li>
+<li class="">실행 속도가 빠르고, 기억 용량을 적게 차지해야 한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=생산성>생산성<a href=#생산성 class=hash-link aria-label="생산성에 대한 직접 링크" title="생산성에 대한 직접 링크" translate=no>​</a></h4>
+<p>투입된 비용, 노력에 대한 생산량을 의미</p>
+<ul>
+<li class="">개발자의 능력</li>
+<li class="">원활한 의사 전달</li>
+<li class="">프로젝트의 복잡도와 성격</li>
+<li class="">기술 수준</li>
+<li class="">관리 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=생명-주기>생명 주기<a href=#생명-주기 class=hash-link aria-label="생명 주기에 대한 직접 링크" title="생명 주기에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">소프트웨어 수명 주기</li>
+<li class="">소프트웨어 개발 방법론의 바탕</li>
+<li class="">소프트웨어를 개발하기 위해 정의하고 운용, 유지보수 등의 과정을 단계별로 나눈 것</li>
+<li class="">프로젝트 비용 산정과 개발 계획을 수립할 수 있는 기본 골격</li>
+<li class="">프롲게트 진행 방향을 명확하게 파악</li>
+<li class="">용어 및 기술의 표준화를 가능하게 한다.</li>
+<li class="">프로젝트 관리를 용이하게 한다.</li>
+<li class="">여러 소프트웨어 간 상호 일관성을 유지하게 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단계>단계<a href=#단계 class=hash-link aria-label="단계에 대한 직접 링크" title="단계에 대한 직접 링크" translate=no>​</a></h3>
+<p>정의 단계, 개발단계, 유지보수 단계로 나뉨</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정의-단계>정의 단계<a href=#정의-단계 class=hash-link aria-label="정의 단계에 대한 직접 링크" title="정의 단계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">소프트웨어를 개발할 것인지 정의하는 단계</li>
+<li class=""><strong>관리자와 사용자가 가장 많이 참여하는 단계</strong></li>
+<li class="">타당성 검토단계, 개발 계획단계, 요구사항 분석 단계로 나뉨</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=개발-단계>개발 단계<a href=#개발-단계 class=hash-link aria-label="개발 단계에 대한 직접 링크" title="개발 단계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">실제적으로 소프트웨어를 개발하는 단계</li>
+<li class="">설계 단계 : 구조, 알고리즘, 자료구조를 작성하는 단계로 에러가 가장 많이 발생</li>
+<li class="">구현 단계 : 설계 단계에서 작성된 문서를 기초로 하여 코딩하고 번역하는 단계</li>
+<li class="">테스트 단계 : 구현된 소프트웨어에 내재되어 있는 오류를 찾아주는 단계</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=유지보수-단계>유지보수 단계<a href=#유지보수-단계 class=hash-link aria-label="유지보수 단계에 대한 직접 링크" title="유지보수 단계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">소프트웨어를 적응 및 유지시키는 단계</li>
+<li class="">소프트웨어 생명 주기 단계 중에서 시간과 비용이 가장 많이 든다.</li>
+</ul>
+<blockquote>
+<p>정의 : 개발 계획, 요구사항 분석
+설계 : 구조, 알고리즘
+구현 : 코딩
+테스트 : 오류 검출</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=생명-주기-모형>생명 주기 모형<a href=#생명-주기-모형 class=hash-link aria-label="생명 주기 모형에 대한 직접 링크" title="생명 주기 모형에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=폭포수-모형>폭포수 모형<a href=#폭포수-모형 class=hash-link aria-label="폭포수 모형에 대한 직접 링크" title="폭포수 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어 개발이 각 단계를 확실히 매듭짓고 그 결과를 철저히 검토하여 승인한 뒤 다음 단계로 진행</li>
+<li class=""><strong>이전 단계로 넘어갈 수 없는 방식</strong></li>
+<li class="">가장 오래되고 <strong>가장 폭넓게 사용된 전통적인 소프트웨어 생명 주기 모형</strong></li>
+<li class="">고전적 생명 주기 모형</li>
+<li class="">앞 단계가 끝나야만 다음 단계로 넘어갈 수 있는 선형 순차적 모형</li>
+<li class="">제품의 일부가 될 매뉴얼을 작성해야 한다.</li>
+<li class=""><strong>타당성 검토 => 계획 => 요구 분석 => 설계 => 구현(코딩) => 테스트(검사) => 유지보수</strong></li>
+<li class="">모형 적용 경험과 성공 사례가 많다.</li>
+<li class="">단계별 정의가 분명하고 전체 공조의 이해가 용이하다.</li>
+<li class="">단계별 산출물이 정확하여 개발 공정의 기준점을 잘 제시한다.</li>
+<li class="">개발 중 발생하는 새로운 요구나 경험을 반영하기 어려워 처음부터 사용자가 모든 요구사항을 명확하게 제시해야한다.</li>
+<li class="">오류 없이 다음 단계로 진행해야 하는데 현실적으로 힘들다.</li>
+<li class="">업무에 운용할 때 검출되지 않은 오류가 발생할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로토타입-모형>프로토타입 모형<a href=#프로토타입-모형 class=hash-link aria-label="프로토타입 모형에 대한 직접 링크" title="프로토타입 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>사용자의 요구사항을 정확하게 파악하기 위해 프로토타입</strong>(견본품)을 만들어 최종 결과물을 예측하는 모형</li>
+<li class="">시제품은 사용자와 시스템 사이의 인터페이스에 중점을 두어 개발한다.</li>
+<li class="">폭포수 모형의 단점을 보완</li>
+<li class="">프로토타입은 요구 분석 단계에서 사용한다.</li>
+<li class="">소프트웨어 생명주기에서 유지보수가 없어지고, 개발 단계 안에서 유지 보수가 이뤄지는 것으로 볼 수 있다.</li>
+<li class=""><strong>요구 수집 => 빠른 설계 => 프로토타입 구축 => 고객 평가 => 프로토타입 조정 => 구현</strong></li>
+<li class="">요구사항을 충실히 반영하며 요구사항의 변경이 용이</li>
+<li class="">최종 결과물이 만들어지기 전에 의뢰자가 최종 결과물의 일부 또는 모형을 볼 수 있다.</li>
+<li class="">프로토타입은 의뢰자나 개발자 모두에게 공동의 참조 모델을 제공한다.</li>
+<li class="">미리 제작된 소프트웨어를 사용할 경우 실제 소프트웨어와의 차이가 발생할 수 있다.</li>
+<li class="">단기간 제작해야되기 때문에 비효율적 언어나 알고리즘을 사용할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=나선형-모형>나선형 모형<a href=#나선형-모형 class=hash-link aria-label="나선형 모형에 대한 직접 링크" title="나선형 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Boehm이 제안한 것으로 폭포수와 프로토타입 모형의 장점에 위험 분석 기능을 추가한 모형</li>
+<li class="">여러 번의 개발 과정을 거쳐 점진적으로 완벽한 최종 소프트웨어를 개발하는 것</li>
+<li class="">점진적 모형</li>
+<li class="">소프트웨어를 개발하면서 발생하는 위험을 관리하고 최소화하는 것을 목적으로 한다.</li>
+<li class=""><strong>계획 및 정의 => 위험 분석 => 공학적 개발 => 고객평가의 반복</strong></li>
+<li class="">Planning => Risk Analysis => Engineering => Customer Evalutation</li>
+<li class="">가장 현실적인 모형</li>
+<li class="">대규모 프로젝트나 큰 시스템에 적합하다.</li>
+<li class="">개발 과정이 반복되므로 누락되거나 추가된 요구사항을 추가할 수 있고, 정밀하며 유지보수가 필요 없다.</li>
+<li class="">위험성 평가에 크게 의존하기 때문에 발견하지 못하면 문제가 발생한다.</li>
+<li class="">비교적 최신 기법이라 널리 사용되지 않는다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4gt-모형>4GT 모형<a href=#4gt-모형 class=hash-link aria-label="4GT 모형에 대한 직접 링크" title="4GT 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">사용자와 개발자가 쉽게 접근하고 사용할 수 있는 4세대 언어를 이용하여 개발자가 조사한 요구사항 명세서로부터 원시 코드를 자동으로 생성할 수 있게 해주는 모형</li>
+<li class="">설계 단계를 축소하고 요구 분석단계에서 코딩단계로 전환할 수 있는 <strong>비절차적 모형</strong></li>
+<li class="">요구사항 수집 => 설계 전략 => 4세대 언어를 이용한 구현 => 제품화</li>
+<li class="">중소형 소프트웨어 개발에는 시간이 감소하지만 대규모에서는 자동화로 인해 분석 설계 단계에서 더 많은 시간이 필요</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-관리>프로젝트 관리<a href=#프로젝트-관리 class=hash-link aria-label="프로젝트 관리에 대한 직접 링크" title="프로젝트 관리에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">주어진 기간 내에 최소의 비용으로 사용자를 만족시키는 시스템을 개발하기 위한 활동</li>
+<li class="">소프트웨어 개발 계획을 세우고 분석, 설계, 구현 등 작업을 통제하는 것</li>
+<li class="">소프트웨어 생명 주기의 전 과정에 걸쳐 진행된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=관리-대상>관리 대상<a href=#관리-대상 class=hash-link aria-label="관리 대상에 대한 직접 링크" title="관리 대상에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">계획관리 : 프로젝트 계획, 비용산정, 일정 계획, 조직 계획</li>
+<li class="">품질관리</li>
+<li class="">위험관리</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=3대-요소>3대 요소<a href=#3대-요소 class=hash-link aria-label="3대 요소에 대한 직접 링크" title="3대 요소에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">사람 : People 프로젝트 관리에서 가장 기본이 되는 인적자원</li>
+<li class="">문제 : Problem 사용자 입장에서 문제를 분석하여 인식</li>
+<li class="">프로세스 : Process 소프트웨어 개발에 필요한 전체적인 작업 계획 및 구조</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구성-단계>구성 단계<a href=#구성-단계 class=hash-link aria-label="구성 단계에 대한 직접 링크" title="구성 단계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 계획 수립</li>
+<li class="">프로젝트 가동</li>
+<li class="">프로젝트 통제</li>
+<li class="">프로젝트 종료</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-계획-수립>프로젝트 계획 수립<a href=#프로젝트-계획-수립 class=hash-link aria-label="프로젝트 계획 수립에 대한 직접 링크" title="프로젝트 계획 수립에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">프로젝트가 수행되기 전에 소프트웨어 개발 영역 결정, 필요한 자원, 비용, 일정 등을 예측하는 작업</li>
+<li class="">관리자가 합리적으로 예측할 수 있도록 프레임워크 제공</li>
+<li class="">소프트웨어 개발 과정에서 발생할 수 있는 위험성 최소화</li>
+<li class="">계획 수립 후에는 시스템 정의서와 프로젝트 계획서가 산출</li>
+<li class="">프로젝트 관리자의 임무</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-개발-영역-결정>소프트웨어 개발 영역 결정<a href=#소프트웨어-개발-영역-결정 class=hash-link aria-label="소프트웨어 개발 영역 결정에 대한 직접 링크" title="소프트웨어 개발 영역 결정에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 계획 수립의 첫 번째 업무</li>
+<li class="">개발될 소프트웨어의 영역을 결정</li>
+<li class="">주요 요소 : 처리될 데이터, 소프트웨어에 대한 기능, 성능, 제약 조건, 신뢰도, 인터페이스 등</li>
+<li class="">인터페이스<!-- -->
+<ul>
+<li class="">소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨러를 실행하는 프로세서나 하드웨어</li>
+<li class="">운영체제, 서브루틴 패키지와 같이 새로운 소프트웨어에 연결되어야 하는 소프트웨어</li>
+<li class="">키보드나 기타 I/O 장치를 통해 소프트웨어를 사용하는 사람</li>
+<li class="">순서적인 연산에 의해 소프트웨어를 실행하는 절차</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자원-추산>자원 추산<a href=#자원-추산 class=hash-link aria-label="자원 추산에 대한 직접 링크" title="자원 추산에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어 개발에 필요한 자원을 예측하는 것</li>
+<li class="">인적자원, 재사용 소프트웨어자원, 환경 자원</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-프로젝트-추산>소프트웨어 프로젝트 추산<a href=#소프트웨어-프로젝트-추산 class=hash-link aria-label="소프트웨어 프로젝트 추산에 대한 직접 링크" title="소프트웨어 프로젝트 추산에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 수행에 필요한 비용을 예측하는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-계획-수립시-고려사항>프로젝트 계획 수립시 고려사항<a href=#프로젝트-계획-수립시-고려사항 class=hash-link aria-label="프로젝트 계획 수립시 고려사항에 대한 직접 링크" title="프로젝트 계획 수립시 고려사항에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 복잡도</li>
+<li class="">프로젝트 규모</li>
+<li class="">구조적 불확실성의 정도</li>
+<li class="">과거 정보의 가용성</li>
+<li class="">위험성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-프로젝트-추산-1>소프트웨어 프로젝트 추산<a href=#소프트웨어-프로젝트-추산-1 class=hash-link aria-label="소프트웨어 프로젝트 추산에 대한 직접 링크" title="소프트웨어 프로젝트 추산에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">비용을 예측하는 작업</li>
+<li class="">가장 어렵고 오차 발생이 심한 작업</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-비용-결정-요소>프로젝트 비용 결정 요소<a href=#프로젝트-비용-결정-요소 class=hash-link aria-label="프로젝트 비용 결정 요소에 대한 직접 링크" title="프로젝트 비용 결정 요소에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-요소>프로젝트 요소<a href=#프로젝트-요소 class=hash-link aria-label="프로젝트 요소에 대한 직접 링크" title="프로젝트 요소에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">제품의 복잡도</li>
+<li class="">시스템의 크기</li>
+<li class="">요구되는 신뢰도 : 일정한 기간 내에 주어진 조건 하에서 필요한 기능을 수행하는 정도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자원-요소>자원 요소<a href=#자원-요소 class=hash-link aria-label="자원 요소에 대한 직접 링크" title="자원 요소에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">인적 자원 : 관리자, 개발자의 자질</li>
+<li class="">하드웨어 자원</li>
+<li class="">소프트웨어 자원 : 개발 지원 도구</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=생산성-요소>생산성 요소<a href=#생산성-요소 class=hash-link aria-label="생산성 요소에 대한 직접 링크" title="생산성 요소에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">개발자의 능력</li>
+<li class="">개발 기간 : 개발 기간이 길어질수록 개발 비용이 적어짐</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=비용-산정-기법>비용 산정 기법<a href=#비용-산정-기법 class=hash-link aria-label="비용 산정 기법에 대한 직접 링크" title="비용 산정 기법에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=하향식>하향식<a href=#하향식 class=hash-link aria-label="하향식에 대한 직접 링크" title="하향식에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전문가-감정-기법>전문가 감정 기법<a href=#전문가-감정-기법 class=hash-link aria-label="전문가 감정 기법에 대한 직접 링크" title="전문가 감정 기법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">경험이 많은 두 명 이상의 전문가에게 비용 산정 의뢰</li>
+<li class="">개인적이고 주관적</li>
+<li class="">편리하고 신속하게 비용 산정</li>
+<li class="">의뢰자에게 신뢰를 얻을 수 있음</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=델파이-기법>델파이 기법<a href=#델파이-기법 class=hash-link aria-label="델파이 기법에 대한 직접 링크" title="델파이 기법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">전문가 감정 기법의 주관적 편견을 보완하기 위함</li>
+<li class="">많은 전문가의 의견을 종합해 선정하는 방법</li>
+<li class="">한 명의 조정자와 여러 명의 전문가</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상향식>상향식<a href=#상향식 class=hash-link aria-label="상향식에 대한 직접 링크" title="상향식에 대한 직접 링크" translate=no>​</a></h3>
+<p>프로젝트의 세부적인 작업 단위별로 비용을 산정한 후 집계하여 전체 비용을 산정하는 방법</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=loc-기법>LOC 기법<a href=#loc-기법 class=hash-link aria-label="LOC 기법에 대한 직접 링크" title="LOC 기법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">원시 코드 라인수 기법</li>
+<li class="">소프트웨어 각 기능의 원시 코드 라인 수와 비관치, 낙관치, 기대치를 측정하여 예측치를 구하고 이를 이용하여 비용을 산정하는 기법</li>
+<li class="">측정이 용이하고 이해하기 쉬워 가장 많이 사용된다.</li>
+<li class="">예측치 = (낙관치 + (4 X 기대치) + 비관치) / 6 = (a + 4m + b) / 6</li>
+<li class="">ManMonth = 개발 기간 X 투입 인원 = LOC / 1인당 월평균 코딩량</li>
+<li class="">개발 비용 = ManMonth X 1인 인건비</li>
+<li class="">개발 기간 = ManMonth / 투입 인원</li>
+<li class="">생산성 = LOC / ManMonth</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=개발-단계별-인원수-기법>개발 단계별 인원수 기법<a href=#개발-단계별-인원수-기법 class=hash-link aria-label="개발 단계별 인원수 기법에 대한 직접 링크" title="개발 단계별 인원수 기법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Effort Per Task</li>
+<li class="">각 기능을 구현시키는데 필요한 ManMonth를 생명 주기의 각 단계별로 산정</li>
+<li class="">LOC보다 정확하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=수학적-산정-기법>수학적 산정 기법<a href=#수학적-산정-기법 class=hash-link aria-label="수학적 산정 기법에 대한 직접 링크" title="수학적 산정 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">상향식 비용 산정 기법</li>
+<li class="">경험적 추정 모형 = 실험적 추정 모형</li>
+<li class="">COCOMO, Putnam, FP 모형</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=cocomo-모형>COCOMO 모형<a href=#cocomo-모형 class=hash-link aria-label="COCOMO 모형에 대한 직접 링크" title="COCOMO 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">COnstructive COst MOdel</li>
+<li class="">Boehm이 제안</li>
+<li class="">원시 프로그램 규모인 LOC에 의한 비용 산정 기법</li>
+<li class="">개발할 소프트웨어의 규모를 예측한 후 소프트웨어의 종류에 따라 다르게 책정되는 비용 산정 방정식에 대입하여 비용을 구한다.</li>
+<li class="">비용 견적의 강도 분석 및 유연성이 높아 널리 사용된다.</li>
+<li class="">같은 규모의 프로그램이라도 성격에 따라 비용이 다르게 산정된다.</li>
+<li class="">비용 산정 결과는 ManMonth로 나타낸다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=조직형>조직형<a href=#조직형 class=hash-link aria-label="조직형에 대한 직접 링크" title="조직형에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Organic Mode</li>
+<li class="">중소규모, 5만 라인 이하의 소프트웨어 개발</li>
+<li class="">사무처리, 업무, 과학용 응용 소프트웨어 개발에 적합</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=반분리형>반분리형<a href=#반분리형 class=hash-link aria-label="반분리형에 대한 직접 링크" title="반분리형에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Semi-Detached Mode</li>
+<li class="">30만 라인 이하의 소프트웨어 개발</li>
+<li class="">트랜잭션 처리 시스템, 운영체제, DBMS, 컴파일러, 인터프리터 등 유틸리티 개발에 적합</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=내장형>내장형<a href=#내장형 class=hash-link aria-label="내장형에 대한 직접 링크" title="내장형에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Embedded Mode</li>
+<li class="">30만 라인 이상의 소프트웨어 개발</li>
+<li class="">최대형 규모의 트랜잭션 처리 시스템, 운영체제, 신호기 제어, 미사일 유도, 실시간 처리 등 시스템 프로그램 개발에 적합</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=종류>종류<a href=#종류 class=hash-link aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">기본형 : Basic 소프트웨어 크기와 개발 유형만을 이용</li>
+<li class="">중간형 : Intermediate 기본 COCOMO를 사용하나 제품, 컴퓨터, 개발요원, 프로젝트 특성에 따라 비용을 산정한다.</li>
+<li class="">발전형 : Detail 개발 공정별로 보다 자세하고 정확하게 노력을 산출하여 비용을 산정하는 모형, 소프트웨어 환경과 구성요소가 사전에 정의되어 있어야하고 개발과정 후반부에 주로 적용한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=putnam-모형>Putnam 모형<a href=#putnam-모형 class=hash-link aria-label="Putnam 모형에 대한 직접 링크" title="Putnam 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Putnam이 제안</li>
+<li class="">생명 주기 예측 모형</li>
+<li class="">시간에 따른 함수로 표현되는 <strong>Rayleigh-Norden 곡선의 노력 분포</strong>도를 기초로 한다.</li>
+<li class="">SLIM : Rayleigh-Norden 곡선과 Putnam 예측 모델을 기초로하여 개발된 자동화 추정 도구</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fp-모형>FP 모형<a href=#fp-모형 class=hash-link aria-label="FP 모형에 대한 직접 링크" title="FP 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>기능 점수</strong> = Function Point</li>
+<li class="">Albrecht이 제안</li>
+<li class="">소프트웨어의 기능을 증대시키는 요인별로 가중치를 부여하고 가중치와 영향도를 합하여 기능 점수를 구한 후 비용을 산정하는 기법</li>
+<li class="">최근에 유용성과 간편성으로 비용 산정 기법 가운데 최선의 평가를 받고 있다.</li>
+<li class="">ESTIMACS : FP 모형을 기초로하여 개발된 자동화 추정 도구</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-일정-계획>프로젝트 일정 계획<a href=#프로젝트-일정-계획 class=hash-link aria-label="프로젝트 일정 계획에 대한 직접 링크" title="프로젝트 일정 계획에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">프로젝트 프로세스를 이루는 소작업의 순서와 일정을 정하는 것</li>
+<li class="">소프트웨어 개발 기간의 지연을 방지하고 프로젝트가 계획대로 진행되도록 일정을 계획</li>
+<li class="">계획된 일정은 프로젝트의 진행을 관리하는데 기초 자료가 된다.</li>
+<li class="">계획된 일정과 프로젝트의 진행도를 비교하여 차질이 있을 경우 조정할 수 있다.</li>
+<li class="">WBS, PERT/CPM, 간트 차트가 사용된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=사람-노력-관계>사람-노력 관계<a href=#사람-노력-관계 class=hash-link aria-label="사람-노력 관계에 대한 직접 링크" title="사람-노력 관계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소규모 개발 프로젝트에서는 한 사람이 요구사항을 분석하고 설계, 코딩, 테스트까지 수행할 수 있다.</li>
+<li class="">프로젝트의 크기가 증가할수록 더 많은 사람들이 참여해야 한다.</li>
+<li class=""><strong>Brooks의 법칙</strong> : 프로젝트 중 새로운 인력을 투입할 경우 작업 적응기간과 부작용으로 인해 일정이 더 지연된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=노력-분배>노력 분배<a href=#노력-분배 class=hash-link aria-label="노력 분배에 대한 직접 링크" title="노력 분배에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">노력을 개발과정에 분배할 때는 40-20-40 규칙을 권장한다.</li>
+<li class="">분석 설계에 40, 코딩에 20, 테스트에 40</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wbs>WBS<a href=#wbs class=hash-link aria-label="WBS에 대한 직접 링크" title="WBS에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Work Breakdown Structure = 업무 분류 구조</li>
+<li class="">개발 프롲게트를 여러 개의 작은 관리 단위로 분할하여 계층적으로 기술한 업무 구조</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=pertcpm>PERT/CPM<a href=#pertcpm class=hash-link aria-label="PERT/CPM에 대한 직접 링크" title="PERT/CPM에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 지연을 방지하고 계획대로 진행되게 하기 위한 일정을 계획하는 것</li>
+<li class="">초단시간 내 계획 완성을 위한 프로젝트 일정 방법</li>
+<li class="">프로젝트 개발 기간을 결정하는 임계 경로를 제공한다.</li>
+<li class="">통계적 모델을 적용해 개별 작업에 대한 가장 근접한 시간을 측정하는 기준이 된다.</li>
+<li class="">각 작업에 대한 시작 시간을 정의하여 작업들 간의 경계 시간을 계산할 수 있게 한다.</li>
+<li class="">가장 빠른 완료시간, 가장 늦은 완료시간, 총 자유시간을 구할 수 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=pert>PERT<a href=#pert class=hash-link aria-label="PERT에 대한 직접 링크" title="PERT에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Program Evaluation and Review Technique = 프로그램 평가 및 검토 기술</li>
+<li class="">프로젝트에 필요한 전체 작업의 상호 관계를 표시하는 네트워크</li>
+<li class="">낙관적인 경우, 가능성이 있는경우, 비관적인 경우로 나누어 각 단계별 종료 시기를 결정하는 방법</li>
+<li class="">과거에 경험이 없어 소요 기간 예측이 어려운 소프트웨어에서 사용</li>
+<li class="">노드와 간선으로 구성되며 원 노드에는 작업을 화살표 간선에는 낙관치, 기대치, 비관치를 표시한다.</li>
+<li class="">결정 경로, 작업에 대한 경계시간, 작업 간의 상호관련성을 알 수 있다.</li>
+<li class="">작업 예측치 = (비관치 + (4 X 기대치) + 낙관치) / 6</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=cpm>CPM<a href=#cpm class=hash-link aria-label="CPM에 대한 직접 링크" title="CPM에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Critical Path Method = 임계 경로 기법</li>
+<li class="">프로젝트 완성에 필요한 작업을 나열하고 작업에 필요한 소요 기간을 예측하는데 사용하는 기법</li>
+<li class="">노드와 간선으로 구성된 네트워크로 노드는 작업을, 간선은 작업사이의 전후 의존 관계를 나타낸다.</li>
+<li class="">원형 노드는 작업과 소요기간을 표시하고, 박스 노드는 이정표를 의미하며 예상 완료 시간을 표시한다.</li>
+<li class="">전 작업이 완료된 후 다음 작업을 진행할 수 있다.</li>
+<li class="">각 작업의 순서와 의존관계, 작업의 동시성을 한 눈에 볼 수 있다.</li>
+<li class="">프로젝트 규모 추정 => 단계별 필요작업 분할 => 작업의 상호 의존 관계를 CPM 네트워크로 나타냄 => 일정 계획을 간트 차트로 나타냄</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=gantt-chart>Gantt Chart<a href=#gantt-chart class=hash-link aria-label="Gantt Chart에 대한 직접 링크" title="Gantt Chart에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">간트 차트 = 시간선 = Time Line</li>
+<li class="">프로젝트의 각 작업들이 언제 시작하고 언제 종료되는지에 대한 작업 일정을 막대 도표를 이용하여 표시하는 프로젝트 일정표</li>
+<li class="">중간 목표 미달성시 그 이유와 기간을 예측 가능</li>
+<li class="">사용자와의 문제점이나 예산의 초과 지출 등을 관리</li>
+<li class="">자원 배치와 인원 계획에 사용 가능</li>
+<li class="">다양한 형태로 변경 가능</li>
+<li class=""><strong>작업 경로를 표시할 수 없다.</strong></li>
+<li class="">계획의 변화에 대한 적응성이 약하다.</li>
+<li class="">계획 수립 또는 수정 때 주관적 수치에 기울어지기 쉽다.</li>
+<li class="">이정표, 작업 일정, 작업 기간, 산출물로 구성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로젝트-조직-구성-계획>프로젝트 조직 구성 계획<a href=#프로젝트-조직-구성-계획 class=hash-link aria-label="프로젝트 조직 구성 계획에 대한 직접 링크" title="프로젝트 조직 구성 계획에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=분산형-팀-구성>분산형 팀 구성<a href=#분산형-팀-구성 class=hash-link aria-label="분산형 팀 구성에 대한 직접 링크" title="분산형 팀 구성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">팀원 모두가 의사 결정에 참여하는 비이기적인 구성 방식</li>
+<li class="">민주주의식 팀 구성</li>
+<li class="">팀 구성원의 참여도와 만족도를 높이고 이직률을 낮게 한다.</li>
+<li class="">팀 구성원 각자가 서로의 일을 검토하고 다른 구성원이 일한 결과에 대해 같은 그룹의 일원으로 책임을 진다.</li>
+<li class="">여러 사람의 의사를 교류하므로 복잡하고 이해되지 않는 문제가 많은 장기 프로젝트 개발에 적합</li>
+<li class="">링 모양의 구조를 가진다.</li>
+<li class="">팀 구성 방법 중 가장 많은 의사 소통 경로를 갖는다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=중앙-집중형-팀-구성>중앙 집중형 팀 구성<a href=#중앙-집중형-팀-구성 class=hash-link aria-label="중앙 집중형 팀 구성에 대한 직접 링크" title="중앙 집중형 팀 구성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">관리자가 의사 결정을 하고 그 결정에 따르는 구성 방식</li>
+<li class="">책임 프로그래머 팀 구성</li>
+<li class="">프로젝트 수행에 따른 모든 권한과 책임을 한 명의 관리자에게 위임하고 기술 및 관리 지원을 위해 인력을 투입하는 형태</li>
+<li class="">소규모 프로젝트에 적합</li>
+<li class="">프로젝트의 성공은 책임 프로그래머의 능력에 달렸다.</li>
+<li class="">책임 프로그래머에 따라 의사 결정이 이뤄지기 때문에 의사 결정이 빠르고 의사 교환 경로를 줄일 수 있다.</li>
+<li class="">책임 프로그래머 : 요구 분석 및 설계, 기술적 판단, 프로그래머 작업 지시 및 배분</li>
+<li class="">프로그래머 : 책임 프로그래머 지시에 따른 코딩, 테스트, 디버깅, 문서 작성</li>
+<li class="">프로그램 사서 : 프로그램 리스트, 설계 문서, 테스트 계획 관리</li>
+<li class="">보조 프로그래머 : 책임 프로그래머의 업무 지원, 기술적 문제에 대한 자문, 사용자와 품질 보등 담당자 섭외, 책임 프로그래머 감독 하 분석, 설계 구현 담당</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=계층적-팀-구성>계층적 팀 구성<a href=#계층적-팀-구성 class=hash-link aria-label="계층적 팀 구성에 대한 직접 링크" title="계층적 팀 구성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">분산형과 중앙 집중형을 혼합한 형태로 혼합형 팀 구성</li>
+<li class="">초급 프로그래머를 작은 그룹으로 만들어 각 그룹을 고급 프로그래머가 관리</li>
+<li class="">경험자와 초보자를 구별</li>
+<li class="">기술 인력이 관리를 담당하게 되어 좋은 기술력을 사장시킬 수 있고, 기술 인력이 업무 관리 능력을 갖춰야한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-품질-보증>소프트웨어 품질 보증<a href=#소프트웨어-품질-보증 class=hash-link aria-label="소프트웨어 품질 보증에 대한 직접 링크" title="소프트웨어 품질 보증에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=품질-표준>품질 표준<a href=#품질-표준 class=hash-link aria-label="품질 표준에 대한 직접 링크" title="품질 표준에 대한 직접 링크" translate=no>​</a></h3>
+<p>소프트웨어의 운영적인 특성, 소프트웨어의 변경 수용능력, 새로운 환경에 대한 소프트웨어의 적응 능력에 따라 분류</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=운영특성>운영특성<a href=#운영특성 class=hash-link aria-label="운영특성에 대한 직접 링크" title="운영특성에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>정확성</strong> : Correctness 사용자의 요구 기능 충족</li>
+<li class=""><strong>신뢰성</strong> : Reliability 요구된 기능을 오류 없이 수행하는 정도</li>
+<li class=""><strong>효율성</strong> : Efficiency 소프트웨어가 자원을 쓸데없이 낭비하지 않아야한다.</li>
+<li class=""><strong>무결성</strong> : Integrity 허용되지 않는 사용이나 자료의 변경을 제어하는 정도</li>
+<li class=""><strong>사용 용이성</strong> : Usability 소프트웨어는 적절한 UI와 문서를 가지고 있어야한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=변경-수용-능력>변경 수용 능력<a href=#변경-수용-능력 class=hash-link aria-label="변경 수용 능력에 대한 직접 링크" title="변경 수용 능력에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>유지보수성</strong> : Maintainability 변경 및 오류 사항 교정에 대한 노력을 최소화 하는 정도, 소프트웨어를 진화하는 것이 가능해야 한다.</li>
+<li class=""><strong>유연성</strong> : Flexibility 소프트웨어를 얼마만큼 쉽게 수정할 수 있는가의 정도</li>
+<li class="">시험 역량 : Testability 프로그램을 시험할 수 있는 정도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=적응-능력>적응 능력<a href=#적응-능력 class=hash-link aria-label="적응 능력에 대한 직접 링크" title="적응 능력에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">이식성 : Portability 다양한 하드웨어 환경에 운용이 가능하도록 쉽게 수정될 수 있는 정도</li>
+<li class="">재사용성 : Reusability 전체나 일부 소프트웨어를 다른 목적으로 사용할 수 있는가의 정도</li>
+<li class="">상호 운용성 : Interoperability 다른 소프트웨어와 정보를 교환할 수 있는 정도</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=품질-보증>품질 보증<a href=#품질-보증 class=hash-link aria-label="품질 보증에 대한 직접 링크" title="품질 보증에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">SQA = Software Quality Assurance</li>
+<li class="">어떠한 소프트웨어가 이미 설정된 요구사항과 일치하는가를 확인하는 데 필요한 개발 단계 전체에 걸친 계획적이고 체계적인 작업</li>
+<li class="">소프트웨어 개발 초기에 소프트웨어 특성과 요구사항을 철저히 파악하여 품질 목표를 설정하고, 개발 단계에서는 정형 기술 검토를 통해 품질 목표의 충족 여부를 점검하며, 개발 후에는 디버깅과 시험 과정을 거친다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=정형-기술-검토>정형 기술 검토<a href=#정형-기술-검토 class=hash-link aria-label="정형 기술 검토에 대한 직접 링크" title="정형 기술 검토에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">FTR = Formal Technical Review</li>
+<li class="">가장 일반적인 검토 방법으로 소프트웨어 기술자들에 의해 수행되는 소프트웨어 품질 보증 활동</li>
+<li class="">검토회의, 검열 등이 있으며 회의 형태로 수행된다.</li>
+<li class="">검토중인 소프트웨어가 해당 요구사항과 일치하는지를 검증</li>
+<li class="">미리 정해진 표준에 따라 표현되는지를 확인</li>
+<li class="">기능과 로직에 오류가 있는지 확인</li>
+<li class="">소프트웨어가 균일한 방식으로 개발되도록 한다.</li>
+<li class="">프로젝트를 용이하게 관리하도록 한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정형-기술-검토-지침사항>정형 기술 검토 지침사항<a href=#정형-기술-검토-지침사항 class=hash-link aria-label="정형 기술 검토 지침사항에 대한 직접 링크" title="정형 기술 검토 지침사항에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">제품 검토에만 집중</li>
+<li class="">의제를 제한하여 진행</li>
+<li class="">논쟁과 반박을 제한</li>
+<li class="">문제 영역을 명확히 표현</li>
+<li class=""><strong>해결책이나 개선책에는 논하지 말라</strong></li>
+<li class=""><strong>참가자의 수를 제한</strong>하고 사전 준비를 강요</li>
+<li class="">검토될 확률이 있는 각 제품에 대한 체크리스트 개발</li>
+<li class="">자원과 시간 일정을 할당</li>
+<li class="">모든 검토자들을 위해 훈련</li>
+<li class=""><strong>사전에 작성한 메모를 공유</strong></li>
+<li class="">검토 과정과 결과를 재검토</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=정형-기술-검토-유형>정형 기술 검토 유형<a href=#정형-기술-검토-유형 class=hash-link aria-label="정형 기술 검토 유형에 대한 직접 링크" title="정형 기술 검토 유형에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=walkthrough>Walkthrough<a href=#walkthrough class=hash-link aria-label="Walkthrough에 대한 직접 링크" title="Walkthrough에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">검토 회의 = 워크스루</li>
+<li class="">소프트웨어 개발 각 단계에서 개최하는 <strong>기술 평가 회의</strong></li>
+<li class="">소프트웨어 구성요소와 같은 작은 단위를 검토하는 것</li>
+<li class=""><strong>오류의 조기 검출을 목적</strong>으로 하며 발견된 오류는 문서화</li>
+<li class=""><strong>검출된 오류는 회의 후에 해결</strong></li>
+<li class="">3~5명이 검토에 참여해야하며 두 시간 이내</li>
+<li class="">검토를 위한 자료를 미리 배포하여 검토, 미리 검토하는 시간도 두 시간 이내</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=inspections>Inspections<a href=#inspections class=hash-link aria-label="Inspections에 대한 직접 링크" title="Inspections에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">검열 = 심사</li>
+<li class="">검토 회의를 발전시킨 형태</li>
+<li class="">소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하며 이를 개선시키는데 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기타>기타<a href=#기타 class=hash-link aria-label="기타에 대한 직접 링크" title="기타에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">검증 : Verification 설계의 각 과정이 올바른지, 프로그램이나 하드웨어에 오류가 있는지를 검사</li>
+<li class="">확인 : Validation 올바른 제품을 생산할 수 있도록 정의, 분석이 잘 되었는지를 검사</li>
+<li class="">인증 : Certification 사용자 또는 전문가가 소프트웨어 품질을 공식적으로 확인</li>
+<li class="">소프트웨어 시험 : Test</li>
+<li class="">오류 수정 : Debugging</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-신뢰성과-가용성>소프트웨어 신뢰성과 가용성<a href=#소프트웨어-신뢰성과-가용성 class=hash-link aria-label="소프트웨어 신뢰성과 가용성에 대한 직접 링크" title="소프트웨어 신뢰성과 가용성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">신뢰성 : 프로그램이 주어진 환경에서 주어진 시간동안 오류 없이 작동할 확률로 측정과 예측이 가능하다.</li>
+<li class="">가용성 : 한 프로그램이 주어진 시점에서 요구사항에 따라 운영되는 확률</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=측정>측정<a href=#측정 class=hash-link aria-label="측정에 대한 직접 링크" title="측정에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">신뢰성 측정은 MTBF를 이용한다.</li>
+<li class="">MTBF<!-- -->
+<ul>
+<li class="">Mean Time Between Failure</li>
+<li class="">평균 고장 간격</li>
+<li class="">수리가 가능한 시스템이 고장난 후부터 다음 고장이 날 때까지의 평균 시간</li>
+<li class="">MTBF = MTTF + MTTR</li>
+</ul>
+</li>
+<li class="">MTTF<!-- -->
+<ul>
+<li class="">Mean Time To Failure</li>
+<li class="">평균 가동 시간 = 고장 평균 시간</li>
+<li class="">수리 불가능한 시스템의 사용 시점부터 고장이 발생할 때까지의 가동 시간 평균</li>
+<li class="">MTTF = (가동중1 + 가동중2 + 가동중3 + ... + 가동중 n) / n</li>
+</ul>
+</li>
+<li class="">MTTR<!-- -->
+<ul>
+<li class="">Mean Time To Repair</li>
+<li class="">평균 수리 시간</li>
+<li class="">시스템 고장이 발생하여 가동하지 못한 시간들의 평균</li>
+<li class="">MTTR = (고장중1 + 고장중2 + 고장중3 + ... + 고장중 n) / n</li>
+</ul>
+</li>
+<li class="">가용성 측정<!-- -->
+<ul>
+<li class="">시스템의 총 운용 시간 중 정상적으로 가동된 시간의 비율</li>
+<li class="">가용성 = 가동시간 / (가동시간 + 고장시간) = MTBF / (MTBF + MTTR)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=위험-관리>위험 관리<a href=#위험-관리 class=hash-link aria-label="위험 관리에 대한 직접 링크" title="위험 관리에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Risk Analysis</li>
+<li class="">프로젝트 추진 과정에서 예상되는 각종 돌발 상황을 미리 예상하고 대책을 수립하는 활동</li>
+<li class="">위험은 불확실성과 손실을 가지고 있는데, 위험관리로 대비한다.</li>
+<li class="">위험 식별 => 위험 분석 및 평가 => 위험 관리 계획 => 위험 감시 및 조치</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=범주>범주<a href=#범주 class=hash-link aria-label="범주에 대한 직접 링크" title="범주에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트 위험 : Project Risk</li>
+<li class="">기술 위험 : Technical Risk</li>
+<li class="">비즈니스 위험 : Business Risk</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=종류-1>종류<a href=#종류-1 class=hash-link aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">인력 부족</li>
+<li class="">예산 관리</li>
+<li class="">일정 관리</li>
+<li class=""><strong>사용자 요구사항 변경</strong> : 대표적 위험 요소</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=charette가-제안한-종류>Charette가 제안한 종류<a href=#charette가-제안한-종류 class=hash-link aria-label="Charette가 제안한 종류에 대한 직접 링크" title="Charette가 제안한 종류에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">알려진 위험 : 프로젝트 계획서, 기술적 환경, 정보 등에 의해 발견 될 수 있는 위험</li>
+<li class="">예측 가능한 위험 : 과거의 경험으로 예측 가능한 위험</li>
+<li class="">예측 불가능한 위험 : 사전 예측이 매우 어려운 위험</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위험-분석-및-평가>위험 분석 및 평가<a href=#위험-분석-및-평가 class=hash-link aria-label="위험 분석 및 평가에 대한 직접 링크" title="위험 분석 및 평가에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로젝트에 내재한 위험 요소를 인식하고 그 영향을 분석하는 활동</li>
+<li class="">위험 추산(Risk Estimation) 작업을 통해 수행된다.</li>
+<li class="">가능한 모든 위험 요소와 영향을 분석하여 의사결정에 반영</li>
+<li class="">위험표(Risk Table)을 작성하여 활용한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=위험표>위험표<a href=#위험표 class=hash-link aria-label="위험표에 대한 직접 링크" title="위험표에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">위험 내용</li>
+<li class="">위험 범주</li>
+<li class="">발생 확률</li>
+<li class="">영향력</li>
+<li class="">위험 감시 및 조치</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위험-감시-및-조치>위험 감시 및 조치<a href=#위험-감시-및-조치 class=hash-link aria-label="위험 감시 및 조치에 대한 직접 링크" title="위험 감시 및 조치에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">위험 회피 : Risk Avoidance 예상하고 회피</li>
+<li class="">위험 감시 : Risk Monitoring 위험 요소 징후에 대해 계속적으로 인지하는 것</li>
+<li class="">위험 관리 : Risk Management</li>
+<li class="">비상 계획 수립 : Contingency Plan 위험 회피 전략이 실패할 경우 위험에 대해 관리하고 대비책과 비상 계획을 수립한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-형상-관리>소프트웨어 형상 관리<a href=#소프트웨어-형상-관리 class=hash-link aria-label="소프트웨어 형상 관리에 대한 직접 링크" title="소프트웨어 형상 관리에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SCM = Software Configuration Management</li>
+<li class="">소프트웨어 변경 사항을 관리하기 위해 개발된 일련의 활동</li>
+<li class="">소프트웨어 변경의 원인을 알아내고 제어하며 적절이 변경되고 있는지 확인하여 담당자에게 통보하는 작업</li>
+<li class="">형상 관리는 소프트웨어 개발의 전 단계에 적용되는 활동</li>
+<li class="">유지보수 단계에서도 수행</li>
+<li class="">형상 관리는 소프트웨어 개발의 전체 비용을 줄인다.</li>
+<li class="">개발 과정의 여러 방해 요인을 최소화시킨다.</li>
+<li class="">형상은 소프트웨어 각 개발 단계의 결과물</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=형상-항목>형상 항목<a href=#형상-항목 class=hash-link aria-label="형상 항목에 대한 직접 링크" title="형상 항목에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">SCI = Software Configuration Item</li>
+<li class="">스시템 명세서</li>
+<li class="">소프트웨어 프로젝트 계획서</li>
+<li class="">소프트웨어 요구사항 명세와 실행가능한 프로토타입</li>
+<li class="">예비 사용자 매뉴얼</li>
+<li class="">설계 명세서</li>
+<li class="">원시 코드 목록</li>
+<li class="">테스트 계획, 절차, 시험 사례, 결과</li>
+<li class="">운영과 설치에 필요한 매뉴얼</li>
+<li class="">실행 프로그램</li>
+<li class="">DB 기술서 : 스키마, 파일 구조, 초기 내용</li>
+<li class="">구축된 사용자 매뉴얼</li>
+<li class="">유지보수 문서 : 변경 요청서, 변경 처리 보고서</li>
+<li class="">소프트웨어 공학을 위한 표준과 절차</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=관리-기능>관리 기능<a href=#관리-기능 class=hash-link aria-label="관리 기능에 대한 직접 링크" title="관리 기능에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">형상 식별 : 대상에게 이름과 관리 번호를 부여하고 계층(트리)구조로 구분</li>
+<li class="">버전 제어 : 다른 버전과의 형상 항목을 관리하려 특정 절차와 도구를 결합시키는 작업</li>
+<li class="">변경 제어 : 형상 항목의 변경 요구를 검토해 현재의 기준선이 잘 반영될 수 있도록 조정</li>
+<li class="">형상 감사 : 기준선의 무결성을 평가</li>
+<li class="">형상 상태 보고</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전통적-소프트웨어-개발-방법>전통적 소프트웨어 개발 방법<a href=#전통적-소프트웨어-개발-방법 class=hash-link aria-label="전통적 소프트웨어 개발 방법에 대한 직접 링크" title="전통적 소프트웨어 개발 방법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">고전적 소프트웨어 개발 방법 = 구조적 소프트웨어 개발 방법</li>
+<li class="">과거의 많은 소프트웨어 개발 경험을 토대로하여 성공적으로 평가되는 소프트웨어 분석 및 설계 방법들을 집대성하여 하나의 개발 방법으로 정형화한 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=요구사항-분석>요구사항 분석<a href=#요구사항-분석 class=hash-link aria-label="요구사항 분석에 대한 직접 링크" title="요구사항 분석에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">소프트웨어 개발의 첫 단계</li>
+<li class="">개발 대상에 대한 사용자의 요구사항을 이해하고 문서화하는 활동</li>
+<li class="">사용자 요구의 타당성을 조사하고 비용과 일정에 대한 제약 설정</li>
+<li class="">사용자 요구를 정확하게 추출하여 목표를 정하고 어떤 방식으로 해결할 것인지 결정</li>
+<li class="">요구사항 분석을 통한 결과는 소프트웨어 설계단계에서 필요한 자료가 된다.</li>
+<li class="">사용자의 요구사항을 정확하고 일관성있게 분석하여 문서화</li>
+<li class="">소프트웨어 분석가에 의해 요구사항 분석이 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=요구사항-분석작업>요구사항 분석작업<a href=#요구사항-분석작업 class=hash-link aria-label="요구사항 분석작업에 대한 직접 링크" title="요구사항 분석작업에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">문제 인식 : 사용자 면담, 설문조사 및 협조, 문서 검토</li>
+<li class="">평가와 종합 : 요구사항에 대한 정보를 평가하고 해결책 종합</li>
+<li class="">모델 제작 : 내용을 이해하기 쉽도록 모델로 작성</li>
+<li class="">문서화와 검토 : 요구사항 분석 명세서 작성</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=요구사항-분석의-어려움>요구사항 분석의 어려움<a href=#요구사항-분석의-어려움 class=hash-link aria-label="요구사항 분석의 어려움에 대한 직접 링크" title="요구사항 분석의 어려움에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">대화 장벽 : 다이어그램 및 프로토타입 이용</li>
+<li class="">시스템의 복잡도 : 구조적 분석이나 객체지향 분석 이용</li>
+<li class="">요구의 변경 : 수정 요구와 상반된 요구들의 수용 기술 필요</li>
+<li class="">요구 명세화의 어려움 : 제도적인 요구 분석 기술 필요</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=분석가의-자질>분석가의 자질<a href=#분석가의-자질 class=hash-link aria-label="분석가의 자질에 대한 직접 링크" title="분석가의 자질에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">개발 경험이 많아야한다.</li>
+<li class="">사용자의 요구를 정확히 수용하고 환경을 이해해야한다.</li>
+<li class="">설계에 필요한 자료를 충분히 제공</li>
+<li class="">시간 배정과 계획을 빠른 시간내에 파악</li>
+<li class="">하드웨어 소프트웨어를 포함한 컴퓨터 기술에 대한 이해</li>
+<li class="">고객 관점에서의 문제 파악</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조적-분석-기법>구조적 분석 기법<a href=#구조적-분석-기법 class=hash-link aria-label="구조적 분석 기법에 대한 직접 링크" title="구조적 분석 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">자료의 흐름과 처리를 중심으로 하는 요구사항 분석 방법</li>
+<li class="">도형 중심의 도구를 사용하므로 분석가와 사용자 간의 대화가 용이</li>
+<li class="">하향식 방법을 사용해 시스템을 세분화하고 분석의 중복을 배제할 수 있다.</li>
+<li class="">자료흐름도, 자료사전, 소단위 명세서, 개체 관계도, 상태 전이도, 제어 명세서</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조적-분석-도구>구조적 분석 도구<a href=#구조적-분석-도구 class=hash-link aria-label="구조적 분석 도구에 대한 직접 링크" title="구조적 분석 도구에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-흐름도>자료 흐름도<a href=#자료-흐름도 class=hash-link aria-label="자료 흐름도에 대한 직접 링크" title="자료 흐름도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">DFD = Data Flow Diagram = 자료 흐름 그래프 = 버블 차트</li>
+<li class="">자료의 흐름 및 변환 과정과 기능을 도형 중심으로 기술하는 방법</li>
+<li class="">시스템 안의 프로세스와 자료 저장소 사이의 자료 흐름을 나타내는 그래프</li>
+<li class="">자료흐름과 처리를 중심으로하는 <strong>구조적 분석 기법</strong></li>
+<li class="">자료 흐름과 기능을 자세히 표현하기 위해 단계적으로 세분화된다.</li>
+<li class="">자료는 처리(프로세스)를 거쳐 변환될 때마다 새로운 이름이 부여된다.</li>
+<li class="">처리는 입력 자료가 발생하면 기능을 수행한 후 출력 자료를 산출한다.</li>
+<li class="">자료 흐름도를 세분화 할 수 록 소프트웨어 설계와 구현작업이 용이해진다.</li>
+</ul>
+<p><img decoding=async loading=lazy src=http://cfile25.uf.tistory.com/image/13273B354CC56E55023ED4 alt=자료흐름도 class=img_ev3q /></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-흐름도-구성요소>자료 흐름도 구성요소<a href=#자료-흐름도-구성요소 class=hash-link aria-label="자료 흐름도 구성요소에 대한 직접 링크" title="자료 흐름도 구성요소에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">프로세스<!-- -->
+<ul>
+<li class="">자료를 변환시키는 시스템의 한 부분을 나타낸다.</li>
+<li class="">처리 = 기능 = 변환 = 버블</li>
+<li class="">원이나 둥근 사각형으로 표시하고 안에 프로세스 이름을 적는다.</li>
+</ul>
+</li>
+<li class="">자료 흐름<!-- -->
+<ul>
+<li class="">Data Flow</li>
+<li class="">자료의 흐름이나 연관관계를 나타낸다.</li>
+<li class="">화살표 위에 자료의 이름을 적는다.</li>
+</ul>
+</li>
+<li class="">자료 저장소<!-- -->
+<ul>
+<li class="">Data Store</li>
+<li class="">시스템에서의 자료 저장소를 나타낸다.</li>
+<li class="">파일, 데이터베이스</li>
+<li class="">도형 안에 자료 저장소 이름을 적는다.</li>
+</ul>
+</li>
+<li class="">단말<!-- -->
+<ul>
+<li class="">Terminator</li>
+<li class="">시스템과 교신하는 외부 개체</li>
+<li class="">입력 데이터가 만들어지고 출력 데이터를 받는다.</li>
+<li class="">정보의 생산자와 소비자</li>
+<li class="">도형 안에 이름을 적는다.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-사전>자료 사전<a href=#자료-사전 class=hash-link aria-label="자료 사전에 대한 직접 링크" title="자료 사전에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">DD = Data Dictionary = 데이터의 데이터 = Meta Data</li>
+<li class="">자료 흐름도에 있는 자료를 더 자세히 정의하고 기록한 것</li>
+<li class="">데이터를 설명하는 데이터</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-사전-기호>자료 사전 기호<a href=#자료-사전-기호 class=hash-link aria-label="자료 사전 기호에 대한 직접 링크" title="자료 사전 기호에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">= : 자료의 정의 is composed of</li>
+<li class="">
+<ul>
+<li class="">: 자료의 연결 and</li>
+</ul>
+</li>
+<li class="">( ) : 자료의 생략 optional</li>
+<li class="">[ | ] : 자료의 선택 or</li>
+<li class=""> : 자료의 반복 Iteration of</li>
+<li class="">* * : 자료의 설명 comment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=소단위-명세서>소단위 명세서<a href=#소단위-명세서 class=hash-link aria-label="소단위 명세서에 대한 직접 링크" title="소단위 명세서에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Mini Specification = 프로세스 명세서</li>
+<li class="">세분화된 자료 흐름도에서 최하위 단계 프로세스의 처리 절차를 기술한 것</li>
+<li class="">분석가의 문서</li>
+<li class="">자료 흐름도를 지원하기 위해 작성</li>
+<li class="">서술 문장, 구조적언어, 의사결정나무, 의사 결정표, 그래프 등을 이용해 기술</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=개체-관계도>개체 관계도<a href=#개체-관계도 class=hash-link aria-label="개체 관계도에 대한 직접 링크" title="개체 관계도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">ERD = Entity Relationship Diagram</li>
+<li class="">시스템에서 처리되는 개체와 개체의 구성과 속성, 개체 간의 관계를 표현하여 자료를 모델화하는 데에 사용</li>
+<li class="">Entity, Attribute, Relationship으로 구성</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상태-전이도>상태 전이도<a href=#상태-전이도 class=hash-link aria-label="상태 전이도에 대한 직접 링크" title="상태 전이도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">STD = State Transition Diagram</li>
+<li class="">시스템에 어떤 일이 발생할 경우 시스템의 상태와 상태 간의 전이를 모델화한 것</li>
+<li class="">상태 전이도를 통해 개발자는 시스템의 행위를 정의할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=case>CASE<a href=#case class=hash-link aria-label="CASE에 대한 직접 링크" title="CASE에 대한 직접 링크" translate=no>​</a></h2>
+<p>요구사항 분석을 위한 자동화 도구</p>
+<ul>
+<li class="">SADT : Structured Analysis and Design Technique</li>
+<li class="">SREM : Software Requirements Engineering Methodology = RSL/REVS</li>
+<li class="">PSL/PSA : Problem Statement Language / Problem Statement Analyzer</li>
+<li class="">TAGS : Technology for Automated Generation of Systems</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=hipo>HIPO<a href=#hipo class=hash-link aria-label="HIPO에 대한 직접 링크" title="HIPO에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hierarchy Input Process Output</li>
+<li class="">시스템의 분석 및 설계나 문서화할 때 사용되는 기법</li>
+<li class="">기본 시스템 모델은 입력, 처리, 출력으로 구성</li>
+<li class=""><strong>하향식 소프트웨어 개발을 위한 문서화 도구</strong></li>
+<li class="">기호, 도표 등을 사용하므로 이해하기 쉽다.</li>
+<li class="">기능과 자료의 의존 관계를 동시에 표현할 수 있다.</li>
+<li class="">변경, 유지보수가 쉽다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hipo-chart>HIPO Chart<a href=#hipo-chart class=hash-link aria-label="HIPO Chart에 대한 직접 링크" title="HIPO Chart에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">시스템의 기능을 여러 개의 고유 모듈로 분할하여 이들 간의 인터페이스를 계층 구조로 표현한 것</li>
+<li class="">가시적 도표, 총체적 도표, 세부적 도표가 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=가시적-도표>가시적 도표<a href=#가시적-도표 class=hash-link aria-label="가시적 도표에 대한 직접 링크" title="가시적 도표에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">도식 목차 = Visual Table of Contents</li>
+<li class="">시스템 전체적인 기능과 흐름을 보여주는 트리 구조도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=총체적-도표>총체적 도표<a href=#총체적-도표 class=hash-link aria-label="총체적 도표에 대한 직접 링크" title="총체적 도표에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">총괄 도표 = 개요 도표 = Overview Diagram</li>
+<li class="">프로그램을 구성하는 기능을 기술한 것</li>
+<li class="">입력, 출력, 처리에 대한 전반적인 정보를 제공</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=세부적-도표>세부적 도표<a href=#세부적-도표 class=hash-link aria-label="세부적 도표에 대한 직접 링크" title="세부적 도표에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">상세 도표 = Detail Diagram</li>
+<li class="">총체적 도표에 표시된 기능을 구성하는 기본 요소들을 상세히 기술하는 도표</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=설계>설계<a href=#설계 class=hash-link aria-label="설계에 대한 직접 링크" title="설계에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">구조적 분석 기법의 결과물인 자료 흐름도 등으로 소프트웨어 기능과 프로그램 구조, 모듈 설계 전략, 평가 지침, 문서화 도구를 제공하는 체계화된 기법</li>
+<li class="">자료 흐름 중심 설계 기법</li>
+<li class="">자료 흐름도, 자료 사전, 개체 관계도, 소단위 명세서가 준비된 이후에 설계</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=설계-모형>설계 모형<a href=#설계-모형 class=hash-link aria-label="설계 모형에 대한 직접 링크" title="설계 모형에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">데이터 설계, 구조 설계, 인터페이스 설계, 프로시저 설계로 구성된다.</li>
+<li class="">소프트웨어 품질 평가를 위한 지침</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-설계>데이터 설계<a href=#데이터-설계 class=hash-link aria-label="데이터 설계에 대한 직접 링크" title="데이터 설계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Data Design</li>
+<li class="">요구사항 분석 단계에서 생성된 정보를 소프트웨어를 구현하는데 필요한 자료 구조로 변환하는 것</li>
+<li class="">ERD를 이요하여 정의된 개체와 관계, 자료 사전에 정의된 자료의 설명 등이 데이터 설계의 기초가 된다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조-설계>구조 설계<a href=#구조-설계 class=hash-link aria-label="구조 설계에 대한 직접 링크" title="구조 설계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Architectural Design</li>
+<li class="">소프트웨어를 구성하는 모듈 간의 관계와 프로그램 구조를 정의하는 것</li>
+<li class="">DFD, DD, STD 등과 모듈의 상호 작용이 구조 설계의 기초가 된다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터페이스-설계>인터페이스 설계<a href=#인터페이스-설계 class=hash-link aria-label="인터페이스 설계에 대한 직접 링크" title="인터페이스 설계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Interface Design</li>
+<li class="">소프트웨어와 상호 작용하는 시스템, 사용자 등과 어떻게 통신하는지를 기술하는 것</li>
+<li class="">DFD 등이 인터페이스 설계의 기초가 된다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로시저-설계>프로시저 설계<a href=#프로시저-설계 class=hash-link aria-label="프로시저 설계에 대한 직접 링크" title="프로시저 설계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">절차 설계</li>
+<li class="">모듈이 수행할 기능을 절차적 기술로 바꾸는 것</li>
+<li class="">소단위 명세서, 상태 전이도의 정보가 절차 설계의 기초가 된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기타-분류>기타 분류<a href=#기타-분류 class=hash-link aria-label="기타 분류에 대한 직접 링크" title="기타 분류에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">사용자적 관점<!-- -->
+<ul>
+<li class="">내부 설계 : 시스템 내부 조직과 세부 절차를 개념화하고 명세화</li>
+<li class="">외부 설계 : 시스템 외부 특성 명세화</li>
+</ul>
+</li>
+<li class="">관리적 관점<!-- -->
+<ul>
+<li class="">기본 설계 : 요구사항 분석 단계에서 생성된 정보를 자료 구조와 소프트웨어 구조로 변경</li>
+<li class="">상세 설계 : 기본 설계 사항을 구체적인 자료 구조와 알고리즘으로 표현</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=설계-기본-원리>설계 기본 원리<a href=#설계-기본-원리 class=hash-link aria-label="설계 기본 원리에 대한 직접 링크" title="설계 기본 원리에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=모듈화>모듈화<a href=#모듈화 class=hash-link aria-label="모듈화에 대한 직접 링크" title="모듈화에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Modularity</li>
+<li class="">소프트웨어를 모듈 단위로 나누는 것</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=추상화>추상화<a href=#추상화 class=hash-link aria-label="추상화에 대한 직접 링크" title="추상화에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Abstraction = 개념화</li>
+<li class="">문제의 세부 사항을 먼저 설계하기 보다는 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 설계 방법</li>
+<li class=""><strong>기능 추상화</strong> : 입력 자료를 출력 자료로 변환하는 과정을 추상화하는 방법</li>
+<li class=""><strong>제어 추상화</strong> : 제어의 정확한 메커니즘을 정의하지 않고 원하는 효과를 정하는 데 이용하는 방법</li>
+<li class=""><strong>자료 추상화</strong> : 자료와 자료에 적용될 수 있는 기능을 함께 정의함으로써 자료 객체를 구성하는 방법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=단계적-정제>단계적 정제<a href=#단계적-정제 class=hash-link aria-label="단계적 정제에 대한 직접 링크" title="단계적 정제에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Stepwise Refinement</li>
+<li class="">문제를 사윙의 중요 개념으로부터 하위의 개념으로 구체화시키는 분할 기법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-은닉>정보 은닉<a href=#정보-은닉 class=hash-link aria-label="정보 은닉에 대한 직접 링크" title="정보 은닉에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Information Hiding</li>
+<li class="">한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법</li>
+<li class="">모듈을 독립적으로 수행할 수 있고, 하나의 모듈이 변경되더라도 다른 모듈에 영향을 주지 않으므로 수정, 시험, 유지보수가 쉽다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로그램-구조>프로그램 구조<a href=#프로그램-구조 class=hash-link aria-label="프로그램 구조에 대한 직접 링크" title="프로그램 구조에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Program Structure = 제어 계층 구조</li>
+<li class="">모듈의 계층적 구성을 나타내는 것</li>
+<li class="">일반적으로 트리 구조의 다이어그램으로 표기</li>
+<li class=""><strong>공유도</strong> : Fan - In 어떤 모듈을 제어(호출)하는 모듈의 수</li>
+<li class=""><strong>제어도</strong> : Fan - Out 어떤 모듈에 의해 제어(호출)되는 모듈의 수</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-구조>자료 구조<a href=#자료-구조 class=hash-link aria-label="자료 구조에 대한 직접 링크" title="자료 구조에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">자료 사이의 논리적인 관계를 표현한 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=좋은-설계>좋은 설계<a href=#좋은-설계 class=hash-link aria-label="좋은 설계에 대한 직접 링크" title="좋은 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어 구조를 나타내야한다.</li>
+<li class="">독립적인 기능적 특성을 가진 요소(모듈)로 구성되어야 한다.</li>
+<li class="">특정 기능 또는 부기능을 수행하는 논리적 요소들로 분리되는 구조를 가져야 한다.</li>
+<li class="">모듈 간의 효과적인 제어를 위해 설계에서 계층적 자료조직이 제시되어야 한다.</li>
+<li class="">자료와 프로시저에 대한 분명하고 분리된 표현을 포함해야 한다.</li>
+<li class="">모듈 간과 외부 개체 간의 연결 복잡성을 줄이는 인터페이스를 가져야 한다.</li>
+<li class="">요구사항 분석에서 얻어진 정보를 이용하여 반복적인 방법으로 이루어져야 한다.</li>
+<li class="">요구사항을 모두 구현해야 하고, 유지보수가 쉬워야한다.</li>
+<li class="">모듈의 기능을 예측할 수 있도록 정의한다.</li>
+<li class="">적당한 모듈의 크기를 유지한다.</li>
+<li class="">모듈 간의 결합도는 낮추고 응집도는 높인다.</li>
+<li class="">전체적이고 포괄적인 개념을 설계한 후 차례대로 세분화하여 구체화시켜 나간다.</li>
+<li class="">이식성을 고려한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=모듈>모듈<a href=#모듈 class=hash-link aria-label="모듈에 대한 직접 링크" title="모듈에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">모듈화 : 소프트웨어를 각 기능별로 분할하는 것</li>
+<li class="">모듈 : 각 기능별로 분할한 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기능적-독립성>기능적 독립성<a href=#기능적-독립성 class=hash-link aria-label="기능적 독립성에 대한 직접 링크" title="기능적 독립성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">모듈의 기능적 독립성은 소프트웨어를 구성하는 각 모듈의 기능이 독립됨을 의미</li>
+<li class="">모듈화, 추상화, 정보 은닉의 부산물</li>
+<li class="">모듈이 하나의 기능만을 수행하고 다른 모듈과의 과도한 상호작용을 배제</li>
+<li class="">독립된 모듈은 특정 기능을 수행하고 다른 모듈과는 간단한 인터페이스만을 가지므로 개발이 쉽고 재사용이 가능</li>
+<li class="">독립성이 높은 모듈일 수록 모듈을 수정하더라도 다른 모듈에게는 영향을 미치지 않음</li>
+<li class="">오류가 발생해도 쉽게 발견할 수 있고 해결 가능</li>
+<li class="">결합도와 응집도에 의해 측정되며 결합도는 약하게, 응집도를 강하게 하고 모듈의 크기를 작게 만들어야한다.</li>
+<li class="">결합도와 응집도는 소프트웨어 설계시 평가 지침이 된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=결합도>결합도<a href=#결합도 class=hash-link aria-label="결합도에 대한 직접 링크" title="결합도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Coupling</li>
+<li class="">모듈 간에 상호 의존하는 정도</li>
+<li class="">각 모듈 간의 결합도가 약해야 하며 의존하는 모듈이 적어야한다.</li>
+<li class="">결합도가 강하면 시스템 구현 및 유지보수 작업이 어렵다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=결합-정도>결합 정도<a href=#결합-정도 class=hash-link aria-label="결합 정도에 대한 직접 링크" title="결합 정도에 대한 직접 링크" translate=no>​</a></h4>
+<table><thead><tr><th style=text-align:center>약함<th style=text-align:center><th style=text-align:center><th style=text-align:center><th style=text-align:center><th style=text-align:center>강함<tbody><tr><td style=text-align:center>자료 결합도<td style=text-align:center>스탬프 결합도<td style=text-align:center>제어 결합도<td style=text-align:center>외부 결합도<td style=text-align:center>공통 결합도<td style=text-align:center>내용 결합도</table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-결합도>자료 결합도<a href=#자료-결합도 class=hash-link aria-label="자료 결합도에 대한 직접 링크" title="자료 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Data Coupling</li>
+<li class="">모듈 간의 인터페이스가 자료 요소로만 구성될 때의 결합도</li>
+<li class="">모듈이 다른 모듈을 호출하면서 매개 변수나 인수로 데이터를 넘겨주고, 호출받은 모듈은 받은 데이터에 대한 <strong>처리 결과를 다시 돌려주는 것</strong></li>
+<li class="">모듈 간의 내용을 전혀 알 필요가 없는 상태로 한 모듈의 내용을 변경하더라도 다른 모듈에는 전혀 영향을 미치지 않는 가장 좋은 결합도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=스탬프-결합도>스탬프 결합도<a href=#스탬프-결합도 class=hash-link aria-label="스탬프 결합도에 대한 직접 링크" title="스탬프 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Stamp Coupling = 검인 결합도</li>
+<li class="">모듈 간의 인터페이스로 배열이나 레코드 등의 <strong>자료구조가 전달될 때</strong>의 결합도</li>
+<li class="">두 모듈이 동일한 자료 구조를 조회하는 경우의 결합도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=제어-결합도>제어 결합도<a href=#제어-결합도 class=hash-link aria-label="제어 결합도에 대한 직접 링크" title="제어 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Control Coupling</li>
+<li class="">모듈이 다른 모듈 내부의 논리적인 흐름을 제어하기 위해 <strong>제어신호를 이용하여 통신하거나 제어 요소를 전달</strong>하는 결합도</li>
+<li class="">상위 모듈이 하위 모듈의 상세한 처리 절차를 알고 있어 이를 통제하는 경우나 처리 기능이 두 모듈에 분리되어 설계된 경우 발생</li>
+<li class="">권리 전도현상이 발생</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=외부-결합도>외부 결합도<a href=#외부-결합도 class=hash-link aria-label="외부 결합도에 대한 직접 링크" title="외부 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">External Coupling</li>
+<li class="">모듈에서 <strong>외부로 선언한 데이터(변수)를 다른 모듈에서 참조</strong>할 때의 결합도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=공통-결합도>공통 결합도<a href=#공통-결합도 class=hash-link aria-label="공통 결합도에 대한 직접 링크" title="공통 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Common Coupling = 공유 결합도</li>
+<li class="">공유되는 <strong>공통 데이터 영역을 여러 모듈이 사용할 때</strong>의 결합도</li>
+<li class="">공통 데이터 영역이 내용을 변경하면 이를 사용하는 모든 모듈에 영향을 미친다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=내용-결합도>내용 결합도<a href=#내용-결합도 class=hash-link aria-label="내용 결합도에 대한 직접 링크" title="내용 결합도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Content Coupling</li>
+<li class="">모듈이 <strong>다른 모듈의 내부 기능 및 그 내부 자료를 직접 참조</strong>하거나 수정할 때의 결합도</li>
+<li class=""><strong>모듈에서 다른 모듈로 제어가 이동하는 경우</strong>에도 내용 결합도</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=응집도>응집도<a href=#응집도 class=hash-link aria-label="응집도에 대한 직접 링크" title="응집도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Cohesion</li>
+<li class="">정보 은닉 개념을 확장한 것</li>
+<li class="">명령어나 호출문 등 모듈의 내부 요소들의 서로 관련되어 있는 정도</li>
+<li class="">모듈이 독립적인 기능으로 정의되어 있는 정도</li>
+<li class="">독립적인 모듈이 되기 위해서는 각 모듈의 응집도가 강해야한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=응집-정도>응집 정도<a href=#응집-정도 class=hash-link aria-label="응집 정도에 대한 직접 링크" title="응집 정도에 대한 직접 링크" translate=no>​</a></h4>
+<table><thead><tr><th style=text-align:center>강함<th style=text-align:center><th style=text-align:center><th style=text-align:center><th style=text-align:center><th style=text-align:center><th style=text-align:center>약함<tbody><tr><td style=text-align:center>기능적 응집도<td style=text-align:center>순차적 응집도<td style=text-align:center>교환적 응집도<td style=text-align:center>절차적 응집도<td style=text-align:center>시간적 응집도<td style=text-align:center>논리적 응집도<td style=text-align:center>우연적 응집도</table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기능적-응집도>기능적 응집도<a href=#기능적-응집도 class=hash-link aria-label="기능적 응집도에 대한 직접 링크" title="기능적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Functional Cohesion</li>
+<li class="">모듈 내부의 모든 기능 요소들이 단일 문제와 연관되어 수행될 경우</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=순차적-응집도>순차적 응집도<a href=#순차적-응집도 class=hash-link aria-label="순차적 응집도에 대한 직접 링크" title="순차적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Sequential Cohesion</li>
+<li class="">모듈 내 하나의 활동으로부터 나온 출력 데이터를 그 다음 활동의 입력 데이터로 사용할 경우의 응집도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=교환적-응집도>교환적 응집도<a href=#교환적-응집도 class=hash-link aria-label="교환적 응집도에 대한 직접 링크" title="교환적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Communication Cohesion = 통신적 응집도</li>
+<li class="">동일한 입력과 출력을 사용하여 서로 다른 기능을 수행하는 구성 요소들이 모였을 경우의 응집도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=절차적-응집도>절차적 응집도<a href=#절차적-응집도 class=hash-link aria-label="절차적 응집도에 대한 직접 링크" title="절차적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Procedural Cohesion</li>
+<li class="">모듈이 다수의 관련 기능을 가질 때 모듈 안의 구성요소들이 그 기능을 순차적으로 수행할 경우의 응집도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=시간적-응집도>시간적 응집도<a href=#시간적-응집도 class=hash-link aria-label="시간적 응집도에 대한 직접 링크" title="시간적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Temporal Cohesion</li>
+<li class="">특정 시간에 처리되는 몇 개의 기능을 모아 하나의 모듈로 작성할 경우의 응집도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=논리적-응집도>논리적 응집도<a href=#논리적-응집도 class=hash-link aria-label="논리적 응집도에 대한 직접 링크" title="논리적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Logical Cohesion</li>
+<li class="">유사한 성격을 갖거나 특정 형태로 분류되는 처리 요소들로 하나의 모듈이 형성되는 경우의 응집도</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=우연적-응집도>우연적 응집도<a href=#우연적-응집도 class=hash-link aria-label="우연적 응집도에 대한 직접 링크" title="우연적 응집도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Coincidental Cohesion</li>
+<li class="">모듈 내부의 각 구성 요소들이 서로 관련 없는 요소로만 구성된 경우의 응집도</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=효과적인-모듈-설계>효과적인 모듈 설계<a href=#효과적인-모듈-설계 class=hash-link aria-label="효과적인 모듈 설계에 대한 직접 링크" title="효과적인 모듈 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>결합도는 줄이고 응집도는 높여 모듈의 독립성을 높인다.</strong></li>
+<li class="">모듈의 제어영역에서 모듈의 영향영역을 유지시킨다.</li>
+<li class="">복잡도와 중복성을 줄이고 일관성을 유지시킨다.</li>
+<li class="">모듈의 기능은 예측이 가능해야한다.</li>
+<li class="">유지보수가 쉬어야한다.</li>
+<li class="">모듈 크기는 시스템의 전반적인 기능과 구조를 이해하기 쉬운 크기로 분해한다.</li>
+<li class=""><strong>하나의 입구와 하나의 출구를 갖도록 한다.</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=설계-방법>설계 방법<a href=#설계-방법 class=hash-link aria-label="설계 방법에 대한 직접 링크" title="설계 방법에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료설계>자료설계<a href=#자료설계 class=hash-link aria-label="자료설계에 대한 직접 링크" title="자료설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">설계의 첫번째 작업</li>
+<li class="">요구사항 분석에서 생성된 여러 모델들을 소프트웨어를 구현하는 데 필욯나 자료 구조로 변환하는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조-설계-1>구조 설계<a href=#구조-설계-1 class=hash-link aria-label="구조 설계에 대한 직접 링크" title="구조 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로그램 구조를 개발하고 소프트웨어 구성 요소들 간의 관계를 정의하는 것</li>
+<li class="">구조 도표 : 소프트웨어 기능을 몇 개의 고유 기능으로 분할하여 블랙 박스로 나타내고 블랙 박스 간의 인터페이스를 계층 구조로 표현하는 것</li>
+<li class="">변환 분해 접근법 : DFD를 흐름에 따라 구분하여 프로그램 구조 도표로 변환시키는 방법</li>
+<li class="">거래 분해 접근법 : DFD에서 거래에 해당하는 부분을 중심으로 자료 흐름도를 거래 중심 구조 도표로 변환하는 방법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조적-설계-절차>구조적 설계 절차<a href=#구조적-설계-절차 class=hash-link aria-label="구조적 설계 절차에 대한 직접 링크" title="구조적 설계 절차에 대한 직접 링크" translate=no>​</a></h4>
+<ol>
+<li class="">정보 흐름의 유형을 설정</li>
+<li class="">흐름의 경계를 표시</li>
+<li class="">자료 흐름도를 프로그램 구조로 사상</li>
+<li class="">제어 계층을 분해시켜서 정의</li>
+<li class="">경험적 방법으로 구체화</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터페이스-설계-1>인터페이스 설계<a href=#인터페이스-설계-1 class=hash-link aria-label="인터페이스 설계에 대한 직접 링크" title="인터페이스 설계에 대한 직접 링크" translate=no>​</a></h3>
+<p>소프트웨어 상호 작용하는 시스템, 사용자 등과 어떻게 통신하는지를 기술하는 과정</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터페이스-경고-메세지-지침>인터페이스 경고 메세지 지침<a href=#인터페이스-경고-메세지-지침 class=hash-link aria-label="인터페이스 경고 메세지 지침에 대한 직접 링크" title="인터페이스 경고 메세지 지침에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">메세지 내용을 이해하기 쉬어야한다.</li>
+<li class="">오류 회복을 위한 구체적인 설명이 제공되어야 한다.</li>
+<li class="">소리나 색을 이용해 듣거나 보기 쉽도록 의미를 전달해야 한다.</li>
+<li class=""><strong>오류로 인해 발생될 수 있는 부정적 내용은 절대 사용하면 안 된다.</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ui-평가-기준>UI 평가 기준<a href=#ui-평가-기준 class=hash-link aria-label="UI 평가 기준에 대한 직접 링크" title="UI 평가 기준에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">소프트웨어 사용법을 쉽게 배울 수 있고, 특정 기능 수행 속도가 빨라야한다.</li>
+<li class="">사용중 오류 발생 빈도가 적어야한다.</li>
+<li class="">소프트웨어를 사용하는 사용자의 만족을 충족시켜야 한다.</li>
+<li class="">소프트웨어 사용법을 쉽게 기억할 수 있도록 제작되어야 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로시저-설계-1>프로시저 설계<a href=#프로시저-설계-1 class=hash-link aria-label="프로시저 설계에 대한 직접 링크" title="프로시저 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">절차 설계는 데이터, 아키텍쳐, 인터페이스 설계가 이뤄진 후 수행되는 설계 작업</li>
+<li class="">모듈이 수행할 기능을 절차적 기술로 바꾸는 것</li>
+<li class="">코드에 가까운 추상화 수준의 모듈 명세서를 작성하는 것</li>
+<li class="">그래픽 설계 표기법이나 프로그램 설계 언어 등을 사용해서 나타낸다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=흐름도>흐름도<a href=#흐름도 class=hash-link aria-label="흐름도에 대한 직접 링크" title="흐름도에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">그래픽 설계 표기법</li>
+<li class="">Flowchart</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=n-s-차트>N-S 차트<a href=#n-s-차트 class=hash-link aria-label="N-S 차트에 대한 직접 링크" title="N-S 차트에 대한 직접 링크" translate=no>​</a></h4>
+<p><img decoding=async loading=lazy src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Multiple_Branching.svg/651px-Multiple_Branching.svg.png alt="NS Chart" class=img_ev3q /></p>
+<ul>
+<li class="">Nassi-Schneiderman Chart = 박스 다이어그램 = Chapin Chart</li>
+<li class="">그래픽 설계 표기법</li>
+<li class="">논리의 기술에 중점을 둔 도형을 이용한 표현 방법</li>
+<li class="">박스를 기본 요소로 하여 연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조를 표현</li>
+<li class=""><strong>GOTO나 화살표를 사용하지 않는다.</strong></li>
+<li class="">조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하는 데 적합하다.</li>
+<li class="">선택과 반복 구조를 시각적으로 표현한다.</li>
+<li class="">이해하기 쉽고, 코드 변환이 용이하다.</li>
+<li class="">읽기는 쉽지만 작성하기가 어렵다.</li>
+<li class="">임의로 제어를 전이하는 게 불가능하다.</li>
+<li class="">총체적인 구조 표현과 인터페이스를 나타내기가 어렵다.</li>
+<li class=""><strong>단일 입구와 단일 출구로 표현한다.</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로그램-설계-언어>프로그램 설계 언어<a href=#프로그램-설계-언어 class=hash-link aria-label="프로그램 설계 언어에 대한 직접 링크" title="프로그램 설계 언어에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">PDL = Program Design Language = 의사 코드 = <strong>Pseudo Code</strong> = 구조적 영어</li>
+<li class="">영어 단어를 이요해 구조적 프로그래밍의 제어 구조를 기술하는 것</li>
+<li class="">하향식 접근 방식으로 논리의 전체 흐름을 표현한다.</li>
+<li class="">사용자와의 의사소통을 용이하게 한다.</li>
+<li class="">현재 프로그래밍 언어와 유사한 서술적 표현에 의해 프로그램, 설계, 시스템 검토, 문서화 기법에 사용된다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=자료-구조-중심-설계>자료 구조 중심 설계<a href=#자료-구조-중심-설계 class=hash-link aria-label="자료 구조 중심 설계에 대한 직접 링크" title="자료 구조 중심 설계에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">자료 구조 중심 분석 기법에서 생성한 요구사항 분석 명세서를 토대로 입력과 출력 자료 구조로부터 프로그램의 구조와 세부 절차를 도출해 내는 방법</li>
+<li class="">Jackson의 JSD, Warnier-Orr의 DSSD</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=구현>구현<a href=#구현 class=hash-link aria-label="구현에 대한 직접 링크" title="구현에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">설계 단계에서 생성된 설계 명세서를 컴퓨터가 알 수 있는 모습으로 변환하는 과정</li>
+<li class="">프로그래밍 = 코딩</li>
+<li class="">각 모듈을 프로그래밍 언어를 사용해 원시 코드로 작성하고 문서화하는 작업</li>
+<li class="">설계를 철저히 반영시키고 원시 코드를 간단 명료하게 작성한다.</li>
+<li class="">사용할 프로그램이 언어와 코딩 스타일 등을 결정해야한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로그래밍-언어>프로그래밍 언어<a href=#프로그래밍-언어 class=hash-link aria-label="프로그래밍 언어에 대한 직접 링크" title="프로그래밍 언어에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">1세대 : 기계어, 어셈블리어</li>
+<li class="">2세대 : FORTRAN, ALGOL, COBOL, BASIC</li>
+<li class="">3세대 : PL/1, PASCAL, C, Lisp, C++</li>
+<li class="">4세대 : 비절차적 언어, 자연언어, 사용자 중심언어, 응용 프로그램 생성기 언어, 프로토타입 언어, SQL, 정보 검색어, 보고서 작성기</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조적-프로그래밍>구조적 프로그래밍<a href=#구조적-프로그래밍 class=hash-link aria-label="구조적 프로그래밍에 대한 직접 링크" title="구조적 프로그래밍에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Dijkstra에 의해 제안</li>
+<li class="">신뢰성 있는 소프트웨어의 생산과 코딩의 표준화 등을 위해 개발</li>
+<li class=""><strong>순차, 선택, 반복</strong> (Sequence, Selection, Iteration)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=검사>검사<a href=#검사 class=hash-link aria-label="검사에 대한 직접 링크" title="검사에 대한 직접 링크" translate=no>​</a></h2>
+<p>Test</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=검사-사례-설계-고려사항>검사 사례 설계 고려사항<a href=#검사-사례-설계-고려사항 class=hash-link aria-label="검사 사례 설계 고려사항에 대한 직접 링크" title="검사 사례 설계 고려사항에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">모듈 내의 모든 독립적인 경로가 적어도 한 번은 수행되어야 한다.</li>
+<li class="">가능한 복잡한 논리는 배제한다.</li>
+<li class="">임의의 조건을 만족시켜야 한다.</li>
+<li class="">내부 자료 구조를 사용하여 테스트를 수행한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=화이트-박스-테스트>화이트 박스 테스트<a href=#화이트-박스-테스트 class=hash-link aria-label="화이트 박스 테스트에 대한 직접 링크" title="화이트 박스 테스트에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">모듈의 원시 코드를 오픈시킨 상태에서 원시 코드의 논리적인 모든 경로를 검사하여 검사 사례를 설계하는 방법</li>
+<li class="">설계된 절차에 초점을 둔 구조적 테스트</li>
+<li class="">프로시저 설계의 제어 구조를 사용하여 검사 사례를 설계한다.</li>
+<li class=""><strong>테스트 초기에 적용된다.</strong></li>
+<li class=""><strong>모듈 안 작동을 직접 관찰한다.</strong></li>
+<li class=""><strong>원시 코드의 모든 문장을 한 번 이상 수행한다.</strong></li>
+<li class=""><strong>논리 흐름도, 루프 구조, 순환 복잡도에 관한 오류를 찾을 수 있다.</strong></li>
+<li class=""><strong>기초 경로 검사, 제어 구조 검사 (조건 검사, 루프 검사, 데이터 흐름 검사)</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기초-경로-검사>기초 경로 검사<a href=#기초-경로-검사 class=hash-link aria-label="기초 경로 검사에 대한 직접 링크" title="기초 경로 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Basic Path Testing</li>
+<li class="">Tom McCabe가 제안</li>
+<li class="">대표적인 화이트 박스 테스트</li>
+<li class="">절차<!-- -->
+<ol>
+<li class="">흐름도 작성</li>
+<li class="">논리적 복잡도 측정</li>
+<li class="">독립 경로들의 기초 집합 결정</li>
+<li class="">기초 집합의 각 경로를 실행시키는 검사 사례 선정</li>
+</ol>
+</li>
+<li class="">제어 흐름도<!-- -->
+<ul>
+<li class="">제어 흐름을 표현하기 위해 사용되는 그래프</li>
+<li class="">프로그램 그래프 = 흐름 그래프</li>
+<li class="">노드(원) : 절차적 명령문</li>
+<li class="">화살표 : 제어의 흐름</li>
+<li class="">영역 : 화살표와 노드로 둘러싸인 구역, 외부 구역도 하나의 영역에 포함된다.</li>
+</ul>
+</li>
+<li class=""><strong>순환 복잡도</strong>
+<ul>
+<li class="">한 프로그램의 논리적인 복잡도를 측정하기 위한 소프트웨어의 척도</li>
+<li class="">제어 흐름도 이론에 기초를 둔다.</li>
+<li class="">순환 복잡도는 제어 흐름도의 영역 수와 일치하므로 영역 수를 계산한다.</li>
+<li class=""><strong>순환복잡도 = 화살표 수 - 노드 수 + 2</strong></li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=제어-구조-검사>제어 구조 검사<a href=#제어-구조-검사 class=hash-link aria-label="제어 구조 검사에 대한 직접 링크" title="제어 구조 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">조건 검사<!-- -->
+<ul>
+<li class="">Condition Testing</li>
+<li class="">모듈 내에 있는 논리적 조건을 검사하는 검사 사례 설계 기법</li>
+</ul>
+</li>
+<li class="">루프 검사<!-- -->
+<ul>
+<li class="">Loop Testing</li>
+<li class="">반복 구조에 초점을 맞춰 실시하는 검사 사례 설계 기법</li>
+<li class="">초기화 오류, 인덱싱 증가 오류, 경계값 오류 등을 발견할 수 있다.</li>
+</ul>
+</li>
+<li class="">데이터 흐름 검사<!-- -->
+<ul>
+<li class="">Data Flow Testing</li>
+<li class="">변수의 정의와 변수 사용의 위치에 초점을 맞춰 실시하는 검사 사례 설계 기법</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=블랙-박스-테스트>블랙 박스 테스트<a href=#블랙-박스-테스트 class=hash-link aria-label="블랙 박스 테스트에 대한 직접 링크" title="블랙 박스 테스트에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어가 수행할 특정 기능을 알기 위해 각 기능이 완전히 작동되는 것을 입증하는 검사</li>
+<li class="">기능 검사</li>
+<li class=""><strong>소프트웨어 인터페이스에서 실시되는 검사</strong></li>
+<li class=""><strong>테스트 과정 후반부에 적용</strong></li>
+<li class="">적합한 입력에 대한 출력의 정확성을 점검</li>
+<li class=""><strong>동치 분할 검사, 경계값 분석, 원인효과 그래프 검사, 오류 예측 검사, 비교 검사</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=동치-분할-검사>동치 분할 검사<a href=#동치-분할-검사 class=hash-link aria-label="동치 분할 검사에 대한 직접 링크" title="동치 분할 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Equivalence Partitioning Testing = 동등 분할 기법</li>
+<li class="">입력 자료에 초점을 맞춰 검사 사례를 만들고 검사하는 방법</li>
+<li class="">입력 조건에 타당한 입력 자료와 그렇지 않는 입력 자료의 개수를 균등하게 하여 검사 사례를 정하고, 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 방법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=경계값-분석>경계값 분석<a href=#경계값-분석 class=hash-link aria-label="경계값 분석에 대한 직접 링크" title="경계값 분석에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Boundary Value Analysis</li>
+<li class="">입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법</li>
+<li class="">입력 조건의 중간 값보다 경계값에서 오류가 발생될 확률이 높다는 점을 이용</li>
+<li class="">입력 조건의 경계값을 검사 사례로 선정</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=원인효과-그래프-검사>원인효과 그래프 검사<a href=#원인효과-그래프-검사 class=hash-link aria-label="원인효과 그래프 검사에 대한 직접 링크" title="원인효과 그래프 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Cause-Effect Graphing Testing</li>
+<li class="">입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석하여 효용성이 높은 검사 사례를 선정하여 검사하는 기법</li>
+<li class="">그래프로 표현한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류-예측-검사>오류 예측 검사<a href=#오류-예측-검사 class=hash-link aria-label="오류 예측 검사에 대한 직접 링크" title="오류 예측 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Fault Based Testing = Mutation Testing = 데이터 확인 검사</li>
+<li class="">과거의 경험이나 확인자의 감각으로 검사하는 기법</li>
+<li class="">보충적 검사 기법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=비교-검사>비교 검사<a href=#비교-검사 class=hash-link aria-label="비교 검사에 대한 직접 링크" title="비교 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Comparison Testing</li>
+<li class=""><strong>여러 버전</strong>의 프로그램에 동일한 검사 자료를 제공해 동일한 결과가 출력되는지 검사하는 기법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=검사-전략>검사 전략<a href=#검사-전략 class=hash-link aria-label="검사 전략에 대한 직접 링크" title="검사 전략에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">설계된 검사 사례를 수행하는 것</li>
+<li class="">단위 검사 : 프로그램의 기본 단위인 모듈 수준에서 시작</li>
+<li class="">통합 검사 : 단위 검사 후 모듈을 결합하여 전체 시스템에 대해 검사</li>
+<li class="">검증 검사 : 사용자의 요구사항을 충족시키는가를 검사</li>
+<li class="">시스템 검사 : 개발된 소프트웨어가 컴퓨터 시스템에서 완벽하게 수행되는지를 검사</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단위-검사>단위 검사<a href=#단위-검사 class=hash-link aria-label="단위 검사에 대한 직접 링크" title="단위 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Unit Test</li>
+<li class="">코딩이 이뤄진 후 모듈에 초점을 맞춰 검사하는 것</li>
+<li class="">화이트 박스 테스트 기법을 사용</li>
+<li class="">인터페이스, 외부적 I/O, 자료구조, 독립적 기초 경로, 오류 처리경로, 경계 조건 등을 검사</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통합-검사>통합 검사<a href=#통합-검사 class=hash-link aria-label="통합 검사에 대한 직접 링크" title="통합 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Integration Test</li>
+<li class="">단위 검사가 완료된 모듈을 결합하여 하나의 시스템으로 완성시키는 과정에서의 검사</li>
+<li class="">모듈 간 인터페이스와 연관된 오류를 밝히기 위한 검사 기법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=비점진적-통합-방식>비점진적 통합 방식<a href=#비점진적-통합-방식 class=hash-link aria-label="비점진적 통합 방식에 대한 직접 링크" title="비점진적 통합 방식에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">단계적으로 통합하는 절차 없이 모든 모듈이 미리 결합되어 프로그램 전체를 검사하는 방법</li>
+<li class="">전체 프로그램을 대상으로 하므로 오류 발견이 힘들고 수정이 어렵다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=점진적-통합-방식>점진적 통합 방식<a href=#점진적-통합-방식 class=hash-link aria-label="점진적 통합 방식에 대한 직접 링크" title="점진적 통합 방식에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">모듈 단위로 단계적으로 통합하면서 검사하는 방식</li>
+<li class="">하향식, 상향식, 혼합식 통합 방식이 있다.</li>
+<li class="">오류 수정이 용이하고 인터페이스와 연관된 오류를 완전히 검사할 가능성이 높다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=하향식-통합-검사>하향식 통합 검사<a href=#하향식-통합-검사 class=hash-link aria-label="하향식 통합 검사에 대한 직접 링크" title="하향식 통합 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Top Down Integration Test</li>
+<li class="">프로그램 상위 모듈에서 하위 모듈 방향으로 통합하면서 검사</li>
+<li class=""><strong>주요 제어 모듈을 드라이버로 사용하고, 주요 제어 모듈의 종속 모듈들은 스터브로 대체한다.</strong></li>
+<li class="">스터브 : 일시적으로 필요한 조건만을 가지고 임시로 제공되는 시험용 모듈</li>
+<li class="">스터브 사용 이유 : 상위 모듈은 하위 모듈이 모두 결합되어야 정상적으로 검사될 수 있으므로 스터브를 사용해서 검사한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상향식-통합-검사>상향식 통합 검사<a href=#상향식-통합-검사 class=hash-link aria-label="상향식 통합 검사에 대한 직접 링크" title="상향식 통합 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Bottom Up Integration Test</p>
+</li>
+<li class="">
+<p>프로그램 하위 모듈에서 상위 모듈 방향으로 통합하면서 검사</p>
+</li>
+<li class="">
+<p>순서</p>
+<ol>
+<li class=""><strong>하위 모듈을 클러스터로 결합</strong></li>
+<li class="">검사 사례 입출력을 조정하기 위해 <strong>드라이버를 작성</strong></li>
+<li class="">클러스터 검사</li>
+<li class="">드라이버를 제거하고 클러스터는 프로그램 구조의 상위로 이동하여 결합</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=혼합식-통합-검사>혼합식 통합 검사<a href=#혼합식-통합-검사 class=hash-link aria-label="혼합식 통합 검사에 대한 직접 링크" title="혼합식 통합 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">하위 수준에서는 상향식 통합, 상위 수준에서는 하향식 통합을 사용해 쵲거의 검사를 지원하는 방식</li>
+<li class="">샌드위치식 통합 검사 방법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=검증-검사>검증 검사<a href=#검증-검사 class=hash-link aria-label="검증 검사에 대한 직접 링크" title="검증 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Validation Test = 확인 검사 = 인수 검사</li>
+<li class="">소프트웨어가 사용자의 요구사항을 충족시키는가를 중점으로 검사</li>
+<li class=""><strong>블랙 박스 테스트를 이용하여 진행</strong></li>
+<li class="">형상 검사, 알파 검사, 베타 검사 등이 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=형상-검사>형상 검사<a href=#형상-검사 class=hash-link aria-label="형상 검사에 대한 직접 링크" title="형상 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">구성 검토 = 감사</li>
+<li class="">소프트웨어 구성요소, 목록, 유지보수를 지원하기 위해 필요한 모든 사항들이 제대로 표현되었는지를 검사</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=알파-검사>알파 검사<a href=#알파-검사 class=hash-link aria-label="알파 검사에 대한 직접 링크" title="알파 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>개발자의 장소에서 사용자가 개발자 앞에서 행하는 검사 기법</strong></li>
+<li class=""><strong>통제된 환경에서 행해지며</strong> 오류를 사용자와 개발자가 함께 확인하면서 기록한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=베타-검사>베타 검사<a href=#베타-검사 class=hash-link aria-label="베타 검사에 대한 직접 링크" title="베타 검사에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">선정된 최종 <strong>사용자가 여러 명의 사용자 앞에서 행하는 검사 기법</strong></li>
+<li class="">실업무를 가지고 사용자가 직접 시험하는 것</li>
+<li class=""><strong>개발자에 의해 제어되지 않은 상태</strong>에서 검사가 행해지며, 오류는 기록 후 개발자에게 주기적으로 보고한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=시스템-검사>시스템 검사<a href=#시스템-검사 class=hash-link aria-label="시스템 검사에 대한 직접 링크" title="시스템 검사에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">개발된 소프트웨어가 해당 컴퓨터 시스템에서 완벽하게 수행되는가를 검사</li>
+<li class="">복구 검사, 보안 검사, 강도 검사, 성능 검사</li>
+<li class="">복구 검사 : 실패 후 올바르게 복구되는가</li>
+<li class="">보안 검사 : 침투로부터 시스템이 보호되는가</li>
+<li class="">강도 검사 : 비정상적인 양, 빈도로 호출시 소프트웨어가 실행되는가</li>
+<li class="">성능 검사 : 소프트웨어 실시간 성능을 검사하기 위한 것으로 검사 단계 전 과정에 걸쳐 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=디버깅>디버깅<a href=#디버깅 class=hash-link aria-label="디버깅에 대한 직접 링크" title="디버깅에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">검사사례에 의해 오류를 찾은 후 그 오류를 수정하는 과정</li>
+<li class="">검사기법은 아니다.</li>
+<li class="">맹목적 강요 : 가장 비효율적 방법</li>
+<li class="">역추적 : Backtracking 오류가 발견된 위치에서 원인이 발견될 때까지의 코딩 부분을 거슬러 수정하는 일반적인 방법</li>
+<li class="">원인 제거 : Cause Elimination 오류 가능성이 있는 원인을 제거해 버그를 분리</li>
+</ul>
+<blockquote>
+<p>단위 검사 : 코드
+통합 검사 : 설계
+검증 검사 : 요구사항</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=유지보수>유지보수<a href=#유지보수 class=hash-link aria-label="유지보수에 대한 직접 링크" title="유지보수에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">소프트웨어 개발 단계 중 가장 많은 노력과 비용이 투입되는 단계</li>
+<li class="">시험 용이성, 이해성, 수정 용이성, 이식성이 고려되어야 한다.</li>
+<li class="">수리 보수, 적응 보수, 완전화 보수, 예방 보수 활동으로 구분된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=수정-보수>수정 보수<a href=#수정-보수 class=hash-link aria-label="수정 보수에 대한 직접 링크" title="수정 보수에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Corrective</li>
+<li class="">시스템을 운영하면서 검사 단계에서 발견핟지 못한 잠재적인 오류를 찾아 수정하는 활동</li>
+<li class="">오류의 수정과 진단을 포함한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=적응-보수>적응 보수<a href=#적응-보수 class=hash-link aria-label="적응 보수에 대한 직접 링크" title="적응 보수에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Adaptive = 환경 적응 = 조정 보수</li>
+<li class="">소프트웨어 수명 기간 중 발생하는 환경의 변화(하드웨어, OS)를 기존 소프트웨어에 반영하기 위해 수행하는 활동</li>
+<li class="">프로그래밍 환경의 변화 또는 주변장치, 시스템 요소의 업그레이드시 대처할 수 있는 유지보수 활동</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=완전화-보수>완전화 보수<a href=#완전화-보수 class=hash-link aria-label="완전화 보수에 대한 직접 링크" title="완전화 보수에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Perfective = 기능 개선 = 기능 보수</li>
+<li class="">소프트웨어 본래 기능에 새로운 기능을 추가하거나 성능을 개선하기 위해 소프트웨어를 확장시키는 활동</li>
+<li class="">유지보수 활동 중 가장 큰 업무 및 비용을 차지한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=예방-보수>예방 보수<a href=#예방-보수 class=hash-link aria-label="예방 보수에 대한 직접 링크" title="예방 보수에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Preventive = 소프트웨어 재공학</li>
+<li class="">소프트웨어의 오류 발생에 대비하여 미리 예방 수단을 강구하는 활동</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=유지보수-과정>유지보수 과정<a href=#유지보수-과정 class=hash-link aria-label="유지보수 과정에 대한 직접 링크" title="유지보수 과정에 대한 직접 링크" translate=no>​</a></h3>
+<ol>
+<li class="">유지보수 요구</li>
+<li class="">현 시스템에 대한 이해</li>
+<li class="">수정 및 시험</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=유지보수-비용>유지보수 비용<a href=#유지보수-비용 class=hash-link aria-label="유지보수 비용에 대한 직접 링크" title="유지보수 비용에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어 개발에 필요한 비중 중 약 70%</li>
+<li class="">Belady, Lehman에 의해 제안된 공식으로 구한다.</li>
+</ul>
+<p><img decoding=async loading=lazy src=https://i.imgur.com/ml3uWS2.png alt="image from hexo" class=img_ev3q /></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=유지보수-부작용>유지보수 부작용<a href=#유지보수-부작용 class=hash-link aria-label="유지보수 부작용에 대한 직접 링크" title="유지보수 부작용에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">코딩 부작용 : 코딩 내용 변경으로 발생</li>
+<li class="">자료 부작용 : 자료나 자료 구조의 변경으로 발생</li>
+<li class="">문서화 부작용 : 자료 코드에 대한 변경이 설계문서나 사용자 매뉴얼에 반영되지 않을 때 발생</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=외계인-코드>외계인 코드<a href=#외계인-코드 class=hash-link aria-label="외계인 코드에 대한 직접 링크" title="외계인 코드에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Alien Code</li>
+<li class="">아주 오래 전에 개발되어 유지보수 작업이 매우 어려운 프로그램</li>
+<li class="">일반적으로 15년이 더 된 프로그램</li>
+<li class="">문서화로 방지할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-소프트웨어-공학>객체지향 소프트웨어 공학<a href=#객체지향-소프트웨어-공학 class=hash-link aria-label="객체지향 소프트웨어 공학에 대한 직접 링크" title="객체지향 소프트웨어 공학에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">현실 세계의 개체를 기계의 부품처럼 하나의 객체로 만들어 부품을 조립하여 제품을 만들 듯이 소프트웨어를 개발할 때에도 객체들을 조립해서 작성할 수 있도록 하는 기법</li>
+<li class="">구조적 기법의 문제점 해결</li>
+<li class="">소프트웨어 재사용 및 확장을 용이하게 해서 빠르게 개발이 가능하고 유지보수가 쉽다.</li>
+<li class="">복잡한 구조를 단계적, 계층적으로 표현한다.</li>
+<li class="">멀티미디어 데이터 및 병령 처리를 지원한다.</li>
+<li class="">현실 세계를 모형화하여 사용자와 개발자가 쉽게 이해할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체>객체<a href=#객체 class=hash-link aria-label="객체에 대한 직접 링크" title="객체에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Object</li>
+<li class="">데이터와 데이터를 처리하는 함수를 묶어 놓은 하나의 소프트웨어 모듈</li>
+<li class="">데이터<!-- -->
+<ul>
+<li class="">객체가 가지고 있는 정보로 속성이나 상태, 분류를 나타낸다.</li>
+<li class="">속성 = Attribute = 상태 = 변수 = 상수 = 자료 구조</li>
+</ul>
+</li>
+<li class="">함수<!-- -->
+<ul>
+<li class="">객체가 수행하는 기능으로 객체가 갖는 데이터를 처리하는 알고리즘</li>
+<li class="">객체의 상태를 참조하거나 변경하는 수단이 되는 것</li>
+<li class="">메소드 = 서비스 = 동작 = 연산</li>
+<li class="">기존 구조적 기법에서의 함수, 프로시저에 해당하는 연산 기능</li>
+</ul>
+</li>
+<li class="">객체는 상태와행위를 가지고 있다.</li>
+<li class="">다른 객체와 구별될 수 있는 이름을 가지고 있다.</li>
+<li class="">일정한 기억 장소를 가지고 있다.</li>
+<li class="">객체의 메소드는 다른 객체로부터 메세지를 받을 때 수행하게 된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=클래스>클래스<a href=#클래스 class=hash-link aria-label="클래스에 대한 직접 링크" title="클래스에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">공통된 속성과 연산을 갖는 객체의 집합</li>
+<li class="">객체의 일반적인 타입을 의미</li>
+<li class="">각각의 객체들이 갖는 속성과 연산을 정의하고 있는 틀</li>
+<li class="">인스턴스 : 클래스에 속한 각각의 객체</li>
+<li class="">인스턴스화 : 클래스로부터 새로운 객체를 생성하는 것</li>
+<li class="">최상위 클래스는 상위 클래스를 갖지 않는 유일한 클래스</li>
+<li class="">슈퍼클래스는 특정 클래스의 상위 클래스</li>
+<li class="">서브클래스는 특정 클래스의 하위 클래스</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=메세지>메세지<a href=#메세지 class=hash-link aria-label="메세지에 대한 직접 링크" title="메세지에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">객체들 간에 상호작용을 하는 데 사용되는 수단</li>
+<li class="">객체에게 어떤 행위를 하도록 지시하는 명령 또는 요구사항</li>
+<li class=""><strong>메세지를 받은 수신 객체는 요구된 메소드를 수행</strong>한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-기법의-기본-원칙>객체지향 기법의 기본 원칙<a href=#객체지향-기법의-기본-원칙 class=hash-link aria-label="객체지향 기법의 기본 원칙에 대한 직접 링크" title="객체지향 기법의 기본 원칙에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=캡슐화>캡슐화<a href=#캡슐화 class=hash-link aria-label="캡슐화에 대한 직접 링크" title="캡슐화에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Encapsulation</li>
+<li class="">데이터와 데이터를 처리하는 함수를 하나로 묶는 것</li>
+<li class="">캡슐화된 객체의 세부내용이 외부에 은폐된다.</li>
+<li class="">캡슐화된 객체는 재사용이 용이하다.</li>
+<li class="">객체 간의 메세지를 주고받을 때 각 객체의 세부 내용은 알 필요가 없으므로 인터페이스가 단순해지고 객체 간의 결합도가 낮아진다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-은닉-1>정보 은닉<a href=#정보-은닉-1 class=hash-link aria-label="정보 은닉에 대한 직접 링크" title="정보 은닉에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Information Hiding</li>
+<li class="">캡슐화에서 가장 중요한 개념</li>
+<li class="">다른 객체에게 자신의 정보를 숨기고 자신의 연산만을 통하여 접근을 허용하는 것</li>
+<li class="">각 객체의 수정이 다른 객체에 주는 영향을 최소화하는 기술</li>
+<li class="">유지보수와 소프트웨어 확장시 오류를 최소화</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=추상화-1>추상화<a href=#추상화-1 class=hash-link aria-label="추상화에 대한 직접 링크" title="추상화에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Abstraction</li>
+<li class="">불필요한 부분을 생략하고 객체의 속성 중 가장 중요한 것에만 중점을 두어 모델화하는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상속성>상속성<a href=#상속성 class=hash-link aria-label="상속성에 대한 직접 링크" title="상속성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Inheritance</li>
+<li class="">이미 정의된 상위 클래스의 모든 속성과 연산을 하위 클래스가 물려받는 것</li>
+<li class="">다중 상속성 : Multiple Inheritance 한 개의 클래스가 두 개 이상의 상위 클래스로부터 속성과 연산을 상속받는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=다형성>다형성<a href=#다형성 class=hash-link aria-label="다형성에 대한 직접 링크" title="다형성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Polymorphism</li>
+<li class="">객체들은 동일한 메소드명을 사용하며 같은 의미의 응답을 한다.</li>
+<li class="">응용 프로그램 상에서 하나의 함수나 연산자가 두 개 이상의 서로 다른 클래스의 인스턴스들을 같은 클래스에 속한 인스턴스처럼 수행할 수 있도록하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-기법의-생명주기>객체지향 기법의 생명주기<a href=#객체지향-기법의-생명주기 class=hash-link aria-label="객체지향 기법의 생명주기에 대한 직접 링크" title="객체지향 기법의 생명주기에 대한 직접 링크" translate=no>​</a></h2>
+<p>각 과정이 명확하게 순찾거으로 이루어지지는 않는다.</p>
+<ol>
+<li class="">계획 및 분석</li>
+<li class="">설계</li>
+<li class="">구현</li>
+<li class="">테스트 및 검증</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-분석>객체지향 분석<a href=#객체지향-분석 class=hash-link aria-label="객체지향 분석에 대한 직접 링크" title="객체지향 분석에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OOA = Object Oriented Analysis</li>
+<li class="">사용자의 요구사항을 분석하여 요구된 문제와 관련된 모든 클래스, 연관된 속성과 연산, 관계 등을 정의하여 모델링 하는 작업</li>
+<li class="">소프트웨어를 개발하기 위한 비즈니스를 객체와 속성, 클래스와 멤버, 전체와 부분 등으로 나눠서 분석한다.</li>
+<li class="">분석가에게 주요한 모델링 구성요소인 클래스, 속성, 연선달을 표현해서 문제를 모형화할 수 있게 해준다.</li>
+<li class="">객체는 클래스로부터 인스턴스화되고, 클래스를 식별하는 것이 객체지향 분석의 주요한 목적이다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-분석-방법론>객체지향 분석 방법론<a href=#객체지향-분석-방법론 class=hash-link aria-label="객체지향 분석 방법론에 대한 직접 링크" title="객체지향 분석 방법론에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rumbaugh-방법>Rumbaugh 방법<a href=#rumbaugh-방법 class=hash-link aria-label="Rumbaugh 방법에 대한 직접 링크" title="Rumbaugh 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">럼바우 방법</li>
+<li class="">가장 일반적으로 사용되는 방법</li>
+<li class="">분석 활동을 <strong>객체 모델, 동적 모델, 기능 모델</strong>로 나누어 수행</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=booch-방법>Booch 방법<a href=#booch-방법 class=hash-link aria-label="Booch 방법에 대한 직접 링크" title="Booch 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">부치 방법</li>
+<li class=""><strong>미시적Micro 개발 프로세스와 거시적Macro 개발 프로세스</strong> 모두를 사용하는 분석 방법</li>
+<li class="">클래스와 객체들을 분석 및 식별하고 클래스의 속성과 연산을 정의한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=jacobson-방법>jacobson 방법<a href=#jacobson-방법 class=hash-link aria-label="jacobson 방법에 대한 직접 링크" title="jacobson 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Use Case를 강조하여 사용하는 분석 방법이다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=coad와-yourdon-방법>Coad와 Yourdon 방법<a href=#coad와-yourdon-방법 class=hash-link aria-label="Coad와 Yourdon 방법에 대한 직접 링크" title="Coad와 Yourdon 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>E-R 다이어그램</strong>을 사용하여 객체의 행위를 모델링한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=wirfs-brock-방법>Wirfs-Brock 방법<a href=#wirfs-brock-방법 class=hash-link aria-label="Wirfs-Brock 방법에 대한 직접 링크" title="Wirfs-Brock 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">분석과 설계 간의 구분이 없고 고객 명세서를 평가해서 설계 작업까지 연속적으로 수행하는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rumbaugh-분석-기법>Rumbaugh 분석 기법<a href=#rumbaugh-분석-기법 class=hash-link aria-label="Rumbaugh 분석 기법에 대한 직접 링크" title="Rumbaugh 분석 기법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">모든 소프트웨어 구성요소를 그래픽 표기법을 이용하여 모델링하는 기법</li>
+<li class="">객체 모델링 기법 = OMT = Object Modeling Technique</li>
+<li class="">객체 모델링, 동적 모델링, 기능 모델링을 통해 이뤄진다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체-모델링>객체 모델링<a href=#객체-모델링 class=hash-link aria-label="객체 모델링에 대한 직접 링크" title="객체 모델링에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Object Modeling = 정보 모델링</li>
+<li class="">관계를 규정하여 객체 다이어그램으로 표시하는 것</li>
+<li class="">분석 활동의 모델 중 가장 중요하며 선행되어야 할 모델링</li>
+<li class="">순서<!-- -->
+<ol>
+<li class="">객체와 클래스를 식별</li>
+<li class="">클래스에 대한 자료 사전 작성</li>
+<li class="">클래스 간의 관계를 정의</li>
+<li class="">객체 속성 및 연결 관계 정의</li>
+<li class="">클래스를 계층화하고 모듈로 정의</li>
+<li class="">생성된 모형을 반복적으로 검증</li>
+</ol>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=동적-모델링>동적 모델링<a href=#동적-모델링 class=hash-link aria-label="동적 모델링에 대한 직접 링크" title="동적 모델링에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Dynamic Modeling</li>
+<li class="">상태 다이어그램(상태도)을 이용하여 객체들 간의 제어 흐름, 상호 작용, 동작 순서 등의 동적인 행위를 표현하는 모델링</li>
+<li class="">객체나 클래스의 상태, 사건을 중심으로 다룬다.</li>
+<li class="">사건 : 하나의 객체로부터 다른 객체에 자극을 주어 객체의 상태를 변화시키는 것</li>
+<li class="">상태 : 특정 시점의 객체에 대한 속성값</li>
+<li class="">순서<!-- -->
+<ol>
+<li class="">시나리오 작성</li>
+<li class="">사건 추적도 작성</li>
+<li class="">사건 흐름도 작성</li>
+<li class="">상태도 작성</li>
+</ol>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기능-모델링>기능 모델링<a href=#기능-모델링 class=hash-link aria-label="기능 모델링에 대한 직접 링크" title="기능 모델링에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Functional Modeling</li>
+<li class="">자료 흐름도를 이용해 다수의 프로세스 간의 자료 흐름을 중심으로 처리과정을 표현한 모델</li>
+<li class="">순서<!-- -->
+<ol>
+<li class="">입출력 자료를 정의</li>
+<li class="">자료 흐름도를 상세화</li>
+<li class="">기능 명세서 작성</li>
+<li class="">제약 조건 파악</li>
+<li class="">최적화 기준 명세</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>객체 모델링 : 객체
+동적 모델링 : 객체의 흐름, 상태, 행위
+기능 모델링 : 자료 흐름, 처리 과정</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-설계>객체지향 설계<a href=#객체지향-설계 class=hash-link aria-label="객체지향 설계에 대한 직접 링크" title="객체지향 설계에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Object Oriented Design</li>
+<li class="">객체지향 분석을 사용해서 생성한 여러 가지 분석 모델을 설계 모델로 변환하는 작업</li>
+<li class="">시스템 설계와 객체 설계를 수행한다.</li>
+<li class="">사용자 중심, 대화식 프로그램 개발에 적합하다.</li>
+<li class="">시스템을 구성하는 객체와 속성, 연산을 인식하는 것이 중요한 문제</li>
+<li class="">추상화, 정보 은닉, 기능 독립성, 모듈화, 상속성을 바탕으로 하며 모듈화가 가장 중요하다.</li>
+<li class="">문제 정의 => 요구 명세화 => 객체 연산자 정의 => 객체 인터페이스 결정 => 객체 구현</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=럼바우의-객체지향-설계>럼바우의 객체지향 설계<a href=#럼바우의-객체지향-설계 class=hash-link aria-label="럼바우의 객체지향 설계에 대한 직접 링크" title="럼바우의 객체지향 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">가장 많이 사용된다.</li>
+<li class="">시스템 설계 : 전체적인 시스템 구조를 설계하는 것으로 분석 단계의 분석 모델을 서브시스템으로 분할하고, 시스템의 계층을 정의하며 분할 과정 중에서 성능의 최적 방안, 문제 해결 전략, 자원 분해 등을 확정하는 것이다.</li>
+<li class="">객체 설계 : 분석 단계에서 만들어진 클래스, 속성, 관계, 메세지를 이용한 통신들을 설계 모델로 제작하고 상세화하여 구체적인 자료 구조와 알고리즘을 정의한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=부치의-객체지향-설계>부치의 객체지향 설계<a href=#부치의-객체지향-설계 class=hash-link aria-label="부치의 객체지향 설계에 대한 직접 링크" title="부치의 객체지향 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">자료 흐름도를 사용해서 객체를 분해하고 객체 간의 인터페이스를 찾아 Ada 프로그램으로 변환시키는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=윌리엄-로렌슨의-객체-지향-설계>윌리엄 로렌슨의 객체 지향 설계<a href=#윌리엄-로렌슨의-객체-지향-설계 class=hash-link aria-label="윌리엄 로렌슨의 객체 지향 설계에 대한 직접 링크" title="윌리엄 로렌슨의 객체 지향 설계에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">추상화, 상속성, 메세지, 그리고 다른 OOD 개념들을 직접 지원해주는 기능으 갖추고 있는 Smalltalk과 같은 프로그래밍 언어로 소프트웨어를 개발하기 위한 기법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-구현>객체지향 구현<a href=#객체지향-구현 class=hash-link aria-label="객체지향 구현에 대한 직접 링크" title="객체지향 구현에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">구현은 설계 단계에서 생성된 설계 모델과 명세서를 근거로 하여 코딩하는 단계이다.</li>
+<li class="">객체지향 프로그래밍을 이용하면 용이하게 구현할 수 있다.</li>
+<li class="">객체는 순차적으로 또는 동시적으로 구현될 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-프로그래밍>객체지향 프로그래밍<a href=#객체지향-프로그래밍 class=hash-link aria-label="객체지향 프로그래밍에 대한 직접 링크" title="객체지향 프로그래밍에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Object Oriented Programming</li>
+<li class="">객체 기반 언어 : 객체의 개념만을 지원하는 언어</li>
+<li class="">클래스 기반 언어 : 객체와 클래스의 개념을 지원하는 언어</li>
+<li class="">객체 지향성 언어 : 객체, 클래스, 상속의 개념을 모두 지원하는 언어 (Simula, Smalltalk, C++, Objective C)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-테스트>객체지향 테스트<a href=#객체지향-테스트 class=hash-link aria-label="객체지향 테스트에 대한 직접 링크" title="객체지향 테스트에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">클래스 테스트 : 캡슐화 된 클래스나 객체를 검사하는 것</li>
+<li class="">통합 테스트 : 객체 몇개를 결합하여 하나의 시스템으로 완성시키는 과정에서의 검사<!-- -->
+<ul>
+<li class="">스레드 기반 테스트</li>
+<li class="">사용 기반 테스트</li>
+</ul>
+</li>
+<li class="">확인 테스트 : 사용자 요구사항에 대한 만족 여부를 검사</li>
+<li class="">시스템 테스트 : 모든 요소들이 적합하게 통합되고 올바른 기능을 수행하는지 검사</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=uml>UML<a href=#uml class=hash-link aria-label="UML에 대한 직접 링크" title="UML에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Unified Modeling Language</li>
+<li class="">Rumbaugh, Booch, Jacobson 등의 객체지향 방법론의 장점을 통합한 객체지향 모델의 표준 표현 방법</li>
+<li class="">객체지향 분석과 설계를 위한 모델링 언어로 객체 기술에 관한 국제 표준화 기구인 Object Management Group에서 UML을 표준으로 지정했다.</li>
+<li class="">어플리케이션을 개발할 때 이해를 도와주는 사용 사례 다이어그램, 순서 다이어그램, 상태 다이어그램, 활동 다이어그램 등 여러 형태의 다이어 그램을 제공</li>
+<li class=""><strong>사용 사례 다이어그램</strong>
+<ul>
+<li class="">Use Case</li>
+<li class=""><strong>사용자와 사용사례로 구성</strong></li>
+<li class="">사용 사례 간에는 여러 형태의 관계로 이루어진다.</li>
+<li class="">기능 모델링 작업에 사용된다.</li>
+</ul>
+</li>
+<li class="">클래스 다이어그램 : 객체 모델링 작업에 사용</li>
+<li class="">순서 다이어그램 : 동적 모델링 작업에 사용</li>
+<li class="">상태 다이어그램 : 동적 모델링 작업에 사용</li>
+<li class="">활동 다이어그램 : 동적 모델링 작업에 사용</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-재사용>소프트웨어 재사용<a href=#소프트웨어-재사용 class=hash-link aria-label="소프트웨어 재사용에 대한 직접 링크" title="소프트웨어 재사용에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">이미 개발되어 인정받은 소프트웨어의 전체 혹은 일부분을 다른 소프트웨어 개발이나 유지에 사용하는 것</li>
+<li class="">클래스, 객체 등의 소프트웨어 요소는 소프트웨어 재사용성을 크게 향상시켰다.</li>
+<li class="">소프트웨어 재사용에 가장 많이 이용되는 것은 소스코드이다.</li>
+<li class="">모듈의 크기가 작고 일반적인 설계일수록 재사용률이 높다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=재사용의-이점>재사용의 이점<a href=#재사용의-이점 class=hash-link aria-label="재사용의 이점에 대한 직접 링크" title="재사용의 이점에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">개발 시간과 비용의 단축</li>
+<li class="">소프트웨어 품질 향상</li>
+<li class="">개발 생산성 향상</li>
+<li class="">프로젝트 실패 위험 감소</li>
+<li class="">시스템 구축 방법에 대한 지식 공유</li>
+<li class="">시스템 명세, 설계, 코드 등 문서를 공유</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=재사용의-문제점>재사용의 문제점<a href=#재사용의-문제점 class=hash-link aria-label="재사용의 문제점에 대한 직접 링크" title="재사용의 문제점에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">새로운 개발방법론 도입이 어려움</li>
+<li class="">프로그램 표준화가 부족</li>
+<li class="">프로그램 언어가 종속적</li>
+<li class="">소프트웨어 요소 내부 뿐아니라 인터페이스 요구사항의 이해가 필요하다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=재사용-방법>재사용 방법<a href=#재사용-방법 class=hash-link aria-label="재사용 방법에 대한 직접 링크" title="재사용 방법에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=합성-중심-방법>합성 중심 방법<a href=#합성-중심-방법 class=hash-link aria-label="합성 중심 방법에 대한 직접 링크" title="합성 중심 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Composition Based = 블록 구성 방법</li>
+<li class="">모듈을 만들어 조립하며 소프트웨어를 완성시키는 방법</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=생성-중심>생성 중심<a href=#생성-중심 class=hash-link aria-label="생성 중심에 대한 직접 링크" title="생성 중심에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Generation Based = 패턴 구성 방법</li>
+<li class="">추상화 형태로 쓰여진 명세를 구체화하여 소프트웨어를 완성시키는 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-재공학>소프트웨어 재공학<a href=#소프트웨어-재공학 class=hash-link aria-label="소프트웨어 재공학에 대한 직접 링크" title="소프트웨어 재공학에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Software Reengineering</li>
+<li class="">새로운 요구에 맞도록 기존 시스템을 이용하여 보다 나은 시스템을 구축</li>
+<li class="">새로운 기능을 추가하여 소프트웨어 성능을 향상</li>
+<li class=""><strong>유지보수 생산성 향상</strong>을 통해 소프트웨어 위기를 해결</li>
+<li class="">기존 소프트웨어의 기능을 개조하거나 개선하므로 예방 유지보수 측면</li>
+<li class="">자동화된 도구를 사용하여 소프트웨어를 분석하고 수정하는 과정을 포함</li>
+<li class="">소프트웨어 수명이 연장되고 기술이 향상</li>
+<li class="">오류가 줄어들고 비용이 절감</li>
+<li class=""><strong>예방 유지보수</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=재공학의-목표>재공학의 목표<a href=#재공학의-목표 class=hash-link aria-label="재공학의 목표에 대한 직접 링크" title="재공학의 목표에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">복잡한 시스템을 다루는 방법 구현 : 자동화 도구 사용</li>
+<li class="">다른 뷰의 생성 : 기존 시스템 개발 관점 외에 다른 방향의 관점을 생성</li>
+<li class="">잃어 버린 정보의 복구 및 제거</li>
+<li class="">부작용의 발견</li>
+<li class="">고수준의 추상 : 추상화된 어려운 내용을 여러 형태로 추출해 이해</li>
+<li class="">재사용 용이</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=주요활동>주요활동<a href=#주요활동 class=hash-link aria-label="주요활동에 대한 직접 링크" title="주요활동에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=분석>분석<a href=#분석 class=hash-link aria-label="분석에 대한 직접 링크" title="분석에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Analysis</li>
+<li class="">기존 소프트웨어의 명세서를 확인하여 소프트웨어의 동작을 이해하고 재공학 대상을 선정하는 것</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=개조>개조<a href=#개조 class=hash-link aria-label="개조에 대한 직접 링크" title="개조에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Restructuring = 재구조 - 재구성</li>
+<li class="">상대적으로 같은 추상적 수준에서 하나의 표현을 다른 표현 형태로 바꾸는 것</li>
+<li class="">기존 소프트웨어의 구조를 향상시키기 위해 코드를 재구성 하는 것</li>
+<li class="">소프트웨어의 기능과 외적인 동작은 바뀌지 않는다.</li>
+<li class="">IF ELSE를 SWITCH CASE로 변경하듯이</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=역공학>역공학<a href=#역공학 class=hash-link aria-label="역공학에 대한 직접 링크" title="역공학에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Reverse Engineering</li>
+<li class="">기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어 내는 작업</li>
+<li class="">기존 코드를 복구하는 방법</li>
+<li class="">대상 소프트웨어가 가능하다.</li>
+<li class="">코드 역공학 : 코드 => 흐름도 => 자료 구조도 => 자료 흐름도</li>
+<li class="">데이터 역공학 : 코드 => 자료 사전 => 개체 관계도</li>
+<li class=""><strong>재문서화</strong> : Redocumentation 역공학의 가장 간단하고 오래된 형태</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=이식>이식<a href=#이식 class=hash-link aria-label="이식에 대한 직접 링크" title="이식에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Migration</li>
+<li class="">기존 소프트웨어를 다른 운영체제나 하드웨어 환경에서 사용할 수 있도록 변환하는 작업</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=clientserver-시스템>Client/Server 시스템<a href=#clientserver-시스템 class=hash-link aria-label="Client/Server 시스템에 대한 직접 링크" title="Client/Server 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">분산 시스템의 가장 대표적인 모델</li>
+<li class="">정보를 제공하는 서버와 정보를 요구하는 클라이언트로 구성</li>
+<li class="">클라이언트와 서버가 하나의 작업을 분산 협동 처리한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=요소>요소<a href=#요소 class=hash-link aria-label="요소에 대한 직접 링크" title="요소에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">애플리케이션 요소 : 응용 프로그램에 의해 정의된 요구사항을 구현</li>
+<li class="">데이터베이스 요소</li>
+<li class="">프리젠테이션/상호작용 요소 : GUI와 관련된 모든 기능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=미들웨어>미들웨어<a href=#미들웨어 class=hash-link aria-label="미들웨어에 대한 직접 링크" title="미들웨어에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">클라이언트와 서버 사이에 존재해서 데이터 전송 과정을 효율적으로 수행하도록 도와주는 소프트웨어</li>
+<li class="">통신 미들웨어 : NOS(Network Operating System)</li>
+<li class="">데이터베이스 미들웨어 : ODBC</li>
+<li class="">분산 객체 미들웨어 : CORBA, DCOM</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체-요청-브로커>객체 요청 브로커<a href=#객체-요청-브로커 class=hash-link aria-label="객체 요청 브로커에 대한 직접 링크" title="객체 요청 브로커에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">ORB = Object Request Broker</li>
+<li class="">분산 객체 미들웨어의 일종</li>
+<li class="">클라이언트의 객체가 서버 객체의 캡슐화된 메소드에게 메세지를 보낼 수 있게 하는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=corba>CORBA<a href=#corba class=hash-link aria-label="CORBA에 대한 직접 링크" title="CORBA에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Common Object Request Broker Architecture</li>
+<li class="">가장 많이 사용되는 객체 요청 브로커의 표준</li>
+<li class="">OMG(Obejct Management Group)라는 개발자 연합에서 인가</li>
+<li class="">IDL : Interface Description Language CORBA가 클라이언트/서버 시스템에서 구현될 때 필요한 인터페이스 언어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=case-1>CASE<a href=#case-1 class=hash-link aria-label="CASE에 대한 직접 링크" title="CASE에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Computer Aided Software Engineering</li>
+<li class="">소프트웨어 개발 과정에서 사용되는 요구 분석, 설계, 구현, 검사 및 디버깅 과정 전체 또는 일부를 컴퓨터와 전용 소프트웨어 도구를 사용하여 자동화하는 것</li>
+<li class="">소프트웨어 개발 도구와 방법론이 결합된 것</li>
+<li class="">정형화된 구조 및 방법을 소프트웨어 개발에 적용하여 생산성 향상을 구현하는 공학 기법</li>
+<li class="">자동화 도구를 지원하고 개발자는 소프트웨어 개발의 표준화를 지향하며 자동화의 이점을 얻을 수 있다.</li>
+<li class="">소프트웨어 생명주기 전 단계의 연결, 다양한 소프트웨어 개발 모형 지원, 그래픽 지원</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=사용-이점>사용 이점<a href=#사용-이점 class=hash-link aria-label="사용 이점에 대한 직접 링크" title="사용 이점에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어 개발 기간 단축하고 개발 비용 절감</li>
+<li class="">자동화된 기법을 통해 소프트웨어 품질 향상</li>
+<li class="">유지보수 간편하게 수행</li>
+<li class="">생산성 향상</li>
+<li class="">운용 활동 효과적으로 관리 및 통제</li>
+<li class="">품질과 일관성을 효과적으로 제어</li>
+<li class="">소프트웨어 개발 모든 단계에 걸친 표준 확립</li>
+<li class="">모듈의 재사용성 향상</li>
+<li class="">개발 기법의 실용화, 문서화가 쉬움</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=분류-1>분류<a href=#분류-1 class=hash-link aria-label="분류에 대한 직접 링크" title="분류에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=상위-case>상위 CASE<a href=#상위-case class=hash-link aria-label="상위 CASE에 대한 직접 링크" title="상위 CASE에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Upper CASE</li>
+<li class="">소프트웨어 생명 주기 전반부에서 사용</li>
+<li class="">문제를 기술하고 계획하며 요구 분석과 설계 단계를 지원</li>
+<li class="">여러가지 명세와 문서를 작성하는데 사용</li>
+<li class="">SREM, PSL/PSA, SERA, FOUNDATION</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=하위-case>하위 CASE<a href=#하위-case class=hash-link aria-label="하위 CASE에 대한 직접 링크" title="하위 CASE에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Lower CASE</li>
+<li class="">소프트웨어 생명 주기 하반부에서 사용</li>
+<li class="">코드의 작성과 테스트, 문서화하는 과정을 지원</li>
+<li class="">구문 중십 편집기, 코드 생성기</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=통합-case>통합 CASE<a href=#통합-case class=hash-link aria-label="통합 CASE에 대한 직접 링크" title="통합 CASE에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Integrate CASE</li>
+<li class="">소프트웨어 생명 주기 포함되는 전체 과정을 지원</li>
+<li class="">공통의 정보 저장 장소와 통일된 사용자 인터페이스를 사용하여 도구를 통합</li>
+<li class="">IEF, POWERTOOLS, TAGS/IORL, TEAMWORK</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-저장소>정보 저장소<a href=#정보-저장소 class=hash-link aria-label="정보 저장소에 대한 직접 링크" title="정보 저장소에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">소프트웨어를 개발하는 과정 동안 모아진 정보를 보관하여 관리하는 곳</li>
+<li class="">CASE 정보 저장소 = CASE 데이터베이스 = 요구사항 사전 = 저장소</li>
+<li class="">초기에는 사람이 정보 저장소, 오늘은 DB가 정보 저장소</li>
+<li class="">도구들의 통합, 소프트웨어 시스템의 표준화, 소프트웨어 시스템의 정보 공유, 소프트웨어 재사용성의 기본</li>
+<li class="">시스템의 정보 공유 활성화</li>
+<li class="">유지보수성 향상</li>
+<li class="">CASE 도구간 정보를 쉽게 교환, 사용자가 새로운 도구를 쉽게 추가</li>
+<li class="">중복된 공통정보를 통합해 불필요한 정보 제거</li>
+<li class="">생명 주기 정보를 재사용</li>
+<li class="">소프트웨어 시스템의 이삭과 변환을 용이하게 함</li>
+</ul></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag title="Engineer Information Processing" class="tag_zVej tagRegular_sFm0" href=/tags/정보처리/>정보처리</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href=/2017/02/13/php-get-text-between-tags/><div class=pagination-nav__sublabel>이전 게시물</div><div class=pagination-nav__label>PHP에서 HTML tag 사이의 문자 가져오기</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/2017/02/08/운영체제-정리/><div class=pagination-nav__sublabel>다음 게시물</div><div class=pagination-nav__label>운영체제 정리</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#소프트웨어 class="table-of-contents__link toc-highlight">소프트웨어</a><ul><li><a href=#특징 class="table-of-contents__link toc-highlight">특징</a><li><a href=#분류 class="table-of-contents__link toc-highlight">분류</a><li><a href=#시스템-구성요소 class="table-of-contents__link toc-highlight">시스템 구성요소</a><li><a href=#위기 class="table-of-contents__link toc-highlight">위기</a></ul><li><a href=#소프트웨어-공학 class="table-of-contents__link toc-highlight">소프트웨어 공학</a><ul><li><a href=#계층화-기술 class="table-of-contents__link toc-highlight">계층화 기술</a><li><a href=#기본-원칙 class="table-of-contents__link toc-highlight">기본 원칙</a><li><a href=#발전-과정 class="table-of-contents__link toc-highlight">발전 과정</a><li><a href=#품질과-생산성 class="table-of-contents__link toc-highlight">품질과 생산성</a></ul><li><a href=#생명-주기 class="table-of-contents__link toc-highlight">생명 주기</a><ul><li><a href=#단계 class="table-of-contents__link toc-highlight">단계</a></ul><li><a href=#생명-주기-모형 class="table-of-contents__link toc-highlight">생명 주기 모형</a><ul><li><a href=#폭포수-모형 class="table-of-contents__link toc-highlight">폭포수 모형</a><li><a href=#프로토타입-모형 class="table-of-contents__link toc-highlight">프로토타입 모형</a><li><a href=#나선형-모형 class="table-of-contents__link toc-highlight">나선형 모형</a><li><a href=#4gt-모형 class="table-of-contents__link toc-highlight">4GT 모형</a></ul><li><a href=#프로젝트-관리 class="table-of-contents__link toc-highlight">프로젝트 관리</a><ul><li><a href=#관리-대상 class="table-of-contents__link toc-highlight">관리 대상</a><li><a href=#3대-요소 class="table-of-contents__link toc-highlight">3대 요소</a><li><a href=#구성-단계 class="table-of-contents__link toc-highlight">구성 단계</a></ul><li><a href=#프로젝트-계획-수립 class="table-of-contents__link toc-highlight">프로젝트 계획 수립</a><ul><li><a href=#소프트웨어-개발-영역-결정 class="table-of-contents__link toc-highlight">소프트웨어 개발 영역 결정</a><li><a href=#자원-추산 class="table-of-contents__link toc-highlight">자원 추산</a><li><a href=#소프트웨어-프로젝트-추산 class="table-of-contents__link toc-highlight">소프트웨어 프로젝트 추산</a><li><a href=#프로젝트-계획-수립시-고려사항 class="table-of-contents__link toc-highlight">프로젝트 계획 수립시 고려사항</a></ul><li><a href=#소프트웨어-프로젝트-추산-1 class="table-of-contents__link toc-highlight">소프트웨어 프로젝트 추산</a><ul><li><a href=#프로젝트-비용-결정-요소 class="table-of-contents__link toc-highlight">프로젝트 비용 결정 요소</a></ul><li><a href=#비용-산정-기법 class="table-of-contents__link toc-highlight">비용 산정 기법</a><ul><li><a href=#하향식 class="table-of-contents__link toc-highlight">하향식</a><li><a href=#상향식 class="table-of-contents__link toc-highlight">상향식</a></ul><li><a href=#수학적-산정-기법 class="table-of-contents__link toc-highlight">수학적 산정 기법</a><ul><li><a href=#cocomo-모형 class="table-of-contents__link toc-highlight">COCOMO 모형</a><li><a href=#putnam-모형 class="table-of-contents__link toc-highlight">Putnam 모형</a><li><a href=#fp-모형 class="table-of-contents__link toc-highlight">FP 모형</a></ul><li><a href=#프로젝트-일정-계획 class="table-of-contents__link toc-highlight">프로젝트 일정 계획</a><ul><li><a href=#사람-노력-관계 class="table-of-contents__link toc-highlight">사람-노력 관계</a><li><a href=#노력-분배 class="table-of-contents__link toc-highlight">노력 분배</a><li><a href=#wbs class="table-of-contents__link toc-highlight">WBS</a><li><a href=#pertcpm class="table-of-contents__link toc-highlight">PERT/CPM</a></ul><li><a href=#프로젝트-조직-구성-계획 class="table-of-contents__link toc-highlight">프로젝트 조직 구성 계획</a><ul><li><a href=#분산형-팀-구성 class="table-of-contents__link toc-highlight">분산형 팀 구성</a><li><a href=#중앙-집중형-팀-구성 class="table-of-contents__link toc-highlight">중앙 집중형 팀 구성</a><li><a href=#계층적-팀-구성 class="table-of-contents__link toc-highlight">계층적 팀 구성</a></ul><li><a href=#소프트웨어-품질-보증 class="table-of-contents__link toc-highlight">소프트웨어 품질 보증</a><ul><li><a href=#품질-표준 class="table-of-contents__link toc-highlight">품질 표준</a><li><a href=#품질-보증 class="table-of-contents__link toc-highlight">품질 보증</a><li><a href=#정형-기술-검토 class="table-of-contents__link toc-highlight">정형 기술 검토</a><li><a href=#정형-기술-검토-유형 class="table-of-contents__link toc-highlight">정형 기술 검토 유형</a></ul><li><a href=#소프트웨어-신뢰성과-가용성 class="table-of-contents__link toc-highlight">소프트웨어 신뢰성과 가용성</a><ul><li><a href=#측정 class="table-of-contents__link toc-highlight">측정</a></ul><li><a href=#위험-관리 class="table-of-contents__link toc-highlight">위험 관리</a><ul><li><a href=#범주 class="table-of-contents__link toc-highlight">범주</a><li><a href=#종류-1 class="table-of-contents__link toc-highlight">종류</a><li><a href=#charette가-제안한-종류 class="table-of-contents__link toc-highlight">Charette가 제안한 종류</a><li><a href=#위험-분석-및-평가 class="table-of-contents__link toc-highlight">위험 분석 및 평가</a><li><a href=#위험-감시-및-조치 class="table-of-contents__link toc-highlight">위험 감시 및 조치</a></ul><li><a href=#소프트웨어-형상-관리 class="table-of-contents__link toc-highlight">소프트웨어 형상 관리</a><ul><li><a href=#형상-항목 class="table-of-contents__link toc-highlight">형상 항목</a><li><a href=#관리-기능 class="table-of-contents__link toc-highlight">관리 기능</a></ul><li><a href=#전통적-소프트웨어-개발-방법 class="table-of-contents__link toc-highlight">전통적 소프트웨어 개발 방법</a><li><a href=#요구사항-분석 class="table-of-contents__link toc-highlight">요구사항 분석</a><ul><li><a href=#요구사항-분석작업 class="table-of-contents__link toc-highlight">요구사항 분석작업</a><li><a href=#요구사항-분석의-어려움 class="table-of-contents__link toc-highlight">요구사항 분석의 어려움</a><li><a href=#분석가의-자질 class="table-of-contents__link toc-highlight">분석가의 자질</a></ul><li><a href=#구조적-분석-기법 class="table-of-contents__link toc-highlight">구조적 분석 기법</a><li><a href=#구조적-분석-도구 class="table-of-contents__link toc-highlight">구조적 분석 도구</a><ul><li><a href=#자료-흐름도 class="table-of-contents__link toc-highlight">자료 흐름도</a><li><a href=#자료-사전 class="table-of-contents__link toc-highlight">자료 사전</a><li><a href=#소단위-명세서 class="table-of-contents__link toc-highlight">소단위 명세서</a><li><a href=#개체-관계도 class="table-of-contents__link toc-highlight">개체 관계도</a><li><a href=#상태-전이도 class="table-of-contents__link toc-highlight">상태 전이도</a></ul><li><a href=#case class="table-of-contents__link toc-highlight">CASE</a><li><a href=#hipo class="table-of-contents__link toc-highlight">HIPO</a><ul><li><a href=#hipo-chart class="table-of-contents__link toc-highlight">HIPO Chart</a></ul><li><a href=#설계 class="table-of-contents__link toc-highlight">설계</a><ul><li><a href=#설계-모형 class="table-of-contents__link toc-highlight">설계 모형</a><li><a href=#기타-분류 class="table-of-contents__link toc-highlight">기타 분류</a><li><a href=#설계-기본-원리 class="table-of-contents__link toc-highlight">설계 기본 원리</a><li><a href=#좋은-설계 class="table-of-contents__link toc-highlight">좋은 설계</a></ul><li><a href=#모듈 class="table-of-contents__link toc-highlight">모듈</a><ul><li><a href=#기능적-독립성 class="table-of-contents__link toc-highlight">기능적 독립성</a><li><a href=#결합도 class="table-of-contents__link toc-highlight">결합도</a><li><a href=#응집도 class="table-of-contents__link toc-highlight">응집도</a><li><a href=#효과적인-모듈-설계 class="table-of-contents__link toc-highlight">효과적인 모듈 설계</a></ul><li><a href=#설계-방법 class="table-of-contents__link toc-highlight">설계 방법</a><ul><li><a href=#자료설계 class="table-of-contents__link toc-highlight">자료설계</a><li><a href=#구조-설계-1 class="table-of-contents__link toc-highlight">구조 설계</a><li><a href=#인터페이스-설계-1 class="table-of-contents__link toc-highlight">인터페이스 설계</a><li><a href=#프로시저-설계-1 class="table-of-contents__link toc-highlight">프로시저 설계</a></ul><li><a href=#구현 class="table-of-contents__link toc-highlight">구현</a><ul><li><a href=#프로그래밍-언어 class="table-of-contents__link toc-highlight">프로그래밍 언어</a><li><a href=#구조적-프로그래밍 class="table-of-contents__link toc-highlight">구조적 프로그래밍</a></ul><li><a href=#검사 class="table-of-contents__link toc-highlight">검사</a><ul><li><a href=#검사-사례-설계-고려사항 class="table-of-contents__link toc-highlight">검사 사례 설계 고려사항</a><li><a href=#화이트-박스-테스트 class="table-of-contents__link toc-highlight">화이트 박스 테스트</a><li><a href=#블랙-박스-테스트 class="table-of-contents__link toc-highlight">블랙 박스 테스트</a></ul><li><a href=#검사-전략 class="table-of-contents__link toc-highlight">검사 전략</a><ul><li><a href=#단위-검사 class="table-of-contents__link toc-highlight">단위 검사</a><li><a href=#통합-검사 class="table-of-contents__link toc-highlight">통합 검사</a><li><a href=#하향식-통합-검사 class="table-of-contents__link toc-highlight">하향식 통합 검사</a><li><a href=#상향식-통합-검사 class="table-of-contents__link toc-highlight">상향식 통합 검사</a><li><a href=#혼합식-통합-검사 class="table-of-contents__link toc-highlight">혼합식 통합 검사</a><li><a href=#검증-검사 class="table-of-contents__link toc-highlight">검증 검사</a><li><a href=#시스템-검사 class="table-of-contents__link toc-highlight">시스템 검사</a><li><a href=#디버깅 class="table-of-contents__link toc-highlight">디버깅</a></ul><li><a href=#유지보수 class="table-of-contents__link toc-highlight">유지보수</a><ul><li><a href=#수정-보수 class="table-of-contents__link toc-highlight">수정 보수</a><li><a href=#적응-보수 class="table-of-contents__link toc-highlight">적응 보수</a><li><a href=#완전화-보수 class="table-of-contents__link toc-highlight">완전화 보수</a><li><a href=#예방-보수 class="table-of-contents__link toc-highlight">예방 보수</a><li><a href=#유지보수-과정 class="table-of-contents__link toc-highlight">유지보수 과정</a><li><a href=#유지보수-비용 class="table-of-contents__link toc-highlight">유지보수 비용</a><li><a href=#유지보수-부작용 class="table-of-contents__link toc-highlight">유지보수 부작용</a><li><a href=#외계인-코드 class="table-of-contents__link toc-highlight">외계인 코드</a></ul><li><a href=#객체지향-소프트웨어-공학 class="table-of-contents__link toc-highlight">객체지향 소프트웨어 공학</a><ul><li><a href=#객체 class="table-of-contents__link toc-highlight">객체</a><li><a href=#클래스 class="table-of-contents__link toc-highlight">클래스</a><li><a href=#메세지 class="table-of-contents__link toc-highlight">메세지</a></ul><li><a href=#객체지향-기법의-기본-원칙 class="table-of-contents__link toc-highlight">객체지향 기법의 기본 원칙</a><ul><li><a href=#캡슐화 class="table-of-contents__link toc-highlight">캡슐화</a><li><a href=#정보-은닉-1 class="table-of-contents__link toc-highlight">정보 은닉</a><li><a href=#추상화-1 class="table-of-contents__link toc-highlight">추상화</a><li><a href=#상속성 class="table-of-contents__link toc-highlight">상속성</a><li><a href=#다형성 class="table-of-contents__link toc-highlight">다형성</a></ul><li><a href=#객체지향-기법의-생명주기 class="table-of-contents__link toc-highlight">객체지향 기법의 생명주기</a><li><a href=#객체지향-분석 class="table-of-contents__link toc-highlight">객체지향 분석</a><ul><li><a href=#객체지향-분석-방법론 class="table-of-contents__link toc-highlight">객체지향 분석 방법론</a><li><a href=#rumbaugh-분석-기법 class="table-of-contents__link toc-highlight">Rumbaugh 분석 기법</a></ul><li><a href=#객체지향-설계 class="table-of-contents__link toc-highlight">객체지향 설계</a><ul><li><a href=#럼바우의-객체지향-설계 class="table-of-contents__link toc-highlight">럼바우의 객체지향 설계</a><li><a href=#부치의-객체지향-설계 class="table-of-contents__link toc-highlight">부치의 객체지향 설계</a><li><a href=#윌리엄-로렌슨의-객체-지향-설계 class="table-of-contents__link toc-highlight">윌리엄 로렌슨의 객체 지향 설계</a></ul><li><a href=#객체지향-구현 class="table-of-contents__link toc-highlight">객체지향 구현</a><ul><li><a href=#객체지향-프로그래밍 class="table-of-contents__link toc-highlight">객체지향 프로그래밍</a><li><a href=#객체지향-테스트 class="table-of-contents__link toc-highlight">객체지향 테스트</a><li><a href=#uml class="table-of-contents__link toc-highlight">UML</a></ul><li><a href=#소프트웨어-재사용 class="table-of-contents__link toc-highlight">소프트웨어 재사용</a><ul><li><a href=#재사용의-이점 class="table-of-contents__link toc-highlight">재사용의 이점</a><li><a href=#재사용의-문제점 class="table-of-contents__link toc-highlight">재사용의 문제점</a><li><a href=#재사용-방법 class="table-of-contents__link toc-highlight">재사용 방법</a></ul><li><a href=#소프트웨어-재공학 class="table-of-contents__link toc-highlight">소프트웨어 재공학</a><ul><li><a href=#재공학의-목표 class="table-of-contents__link toc-highlight">재공학의 목표</a><li><a href=#주요활동 class="table-of-contents__link toc-highlight">주요활동</a></ul><li><a href=#clientserver-시스템 class="table-of-contents__link toc-highlight">Client/Server 시스템</a><ul><li><a href=#요소 class="table-of-contents__link toc-highlight">요소</a><li><a href=#미들웨어 class="table-of-contents__link toc-highlight">미들웨어</a><li><a href=#객체-요청-브로커 class="table-of-contents__link toc-highlight">객체 요청 브로커</a><li><a href=#corba class="table-of-contents__link toc-highlight">CORBA</a></ul><li><a href=#case-1 class="table-of-contents__link toc-highlight">CASE</a><ul><li><a href=#사용-이점 class="table-of-contents__link toc-highlight">사용 이점</a><li><a href=#분류-1 class="table-of-contents__link toc-highlight">분류</a><li><a href=#정보-저장소 class="table-of-contents__link toc-highlight">정보 저장소</a></ul></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016-2026 Eunkwang Shin.</div></div></div></footer></div></body>

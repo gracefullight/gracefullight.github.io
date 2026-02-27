@@ -1,0 +1,2049 @@
+<!doctype html><html lang=en dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>데이터 통신 정리 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/en/2017/02/15/데이터-통신-정리/ /><meta data-rh=true property=og:locale content=en /><meta data-rh=true property=og:locale:alternate content=ko /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="데이터 통신 정리 | gracefullight.dev"/><meta data-rh=true name=description content="데이터 통신"/><meta data-rh=true property=og:description content="데이터 통신"/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2017-02-15T11:36:33.000Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=정보처리 /><link data-rh=true rel=icon href=/en/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/en/2017/02/15/데이터-통신-정리/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/02/15/데이터-통신-정리/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2017/02/15/데이터-통신-정리/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/02/15/데이터-통신-정리/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/en/2017/02/15/데이터-통신-정리","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Gracefullight","url":"https://github.com/gracefullight"},"datePublished":"2017-02-15T11:36:33.000Z","description":"데이터 통신","headline":"데이터 통신 정리","isPartOf":{"@id":"https://gracefullight.dev/en/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/en/2017/02/15/데이터-통신-정리","name":"데이터 통신 정리","url":"https://gracefullight.dev/en/2017/02/15/데이터-통신-정리"}</script><link rel=alternate type=application/rss+xml href=/en/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/en/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/en/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/en/opensearch.xml><link href=/en/img/favicon-32x32.png rel=icon><link href=/en/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/en/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/en/assets/css/styles.60923ef7.css /><script src=/en/assets/js/runtime~main.1b51a719.js defer></script><script src=/en/assets/js/main.bdbba33d.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/en/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/en/><div class=navbar__logo><img src=/en/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/en/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>English</a><ul class=dropdown__menu><li><a href=/2017/02/15/데이터-통신-정리/ target=_self rel="noopener noreferrer" class=dropdown__link lang=ko>한국어</a><li><a href=/en/2017/02/15/데이터-통신-정리/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/en/archive/>Archives</a><a class="navbar__item navbar__link" href=/en/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>Search</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>데이터 통신 정리</h1><div class="container_mt6G margin-vert--md"><time datetime=2017-02-15T11:36:33.000Z>February 15, 2017</time> · <!-- -->49 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=avatar__photo-link><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt=Gracefullight /></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer"><span class=authorName_yefp translate=no>Gracefullight</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt></div></div></div></div></div></header><div id=__blog-post-container class=markdown><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-통신>데이터 통신<a href=#데이터-통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Data Communication</li>
+<li class="">컴퓨터의 발달을 배경으로 하여 생겨난 것</li>
+<li class="">컴퓨터와 각종 통신 기기 사이에 디지털 형태로 표현된 <strong>2진 정보를 송수신</strong>하는 것</li>
+<li class="">데이터 전송 기술과 데이터 처리 기술을 포함</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-통신>정보 통신<a href=#정보-통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Information Communication</li>
+<li class="">컴퓨터와 통신 기술의 결합에 의해 통신 처리 기능, 정보 처리기능, 정보의 변환, 정보 저장 과정이 추가된 형태의 통신</li>
+<li class="">전기 통신(정보 전송)과 컴퓨터(정보 처리)를 포함</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신>통신<a href=#통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>정보원</strong> : Source 전송하는 장소</li>
+<li class=""><strong>수신원</strong> : Destination 수신하는 장소</li>
+<li class=""><strong>전송 매체</strong> : Transmission Media 정보원과 수신원을 연결하는 매개체</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=특징>특징<a href=#특징 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">데이터 전송계와 데이터 처리계로 구분</li>
+<li class="">오류 제어 방식을 사용해 신뢰도가 높음</li>
+<li class="">분산 처리가 가능</li>
+<li class="">대형 컴퓨터와 대용량 파일을 공동으로 이용 가능</li>
+<li class="">대용량, 광대역 전송이 가능</li>
+<li class=""><strong>통신 비밀을 유지하기 위해 보안 시스템 개발이 필요</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=발달과정>발달과정<a href=#발달과정 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">SAGE : 1958년 미 공군 반자동 방공 시스템, <strong>최초의 데이터 통신 시스템</strong></li>
+<li class="">ARPANET : 1969년 미 국방성에서 만든 <strong>최초의 유선 패킷 교환 시스템</strong></li>
+<li class=""><strong>ALOHA</strong> : 1970년 미 하와이 대학에서 실험적으로 설치한 <strong>최초의 무선 패킷 교환 시스템</strong>, <strong>회선 제어 방식 중 경쟁 방식의 모체</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-통신의-구성>데이터 통신의 구성<a href=#데이터-통신의-구성 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">데이터 전송계<!-- -->
+<ul>
+<li class="">단말장치</li>
+<li class="">데이터전송회선 : 신호변환장치, 통신회선</li>
+<li class="">통신제어장치</li>
+</ul>
+</li>
+<li class="">데이터 처리계 : 컴퓨터 (하드웨어, 소프트웨어)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단말장치>단말장치<a href=#단말장치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">DTE = Data Terminal Equipment = 터미널 = 단말기 = 스테이션 = 노드</li>
+<li class="">데이터 통신 시스템과 외부 사용자의 접속점에 위치해 최종적으로 데이터를 입출력하는 장치</li>
+<li class=""><strong>입출력, 전송제어, 기억 기능</strong>을 가진다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=지능형-단말장치>지능형 단말장치<a href=#지능형-단말장치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Intelligent = 스마트 단말장치</li>
+<li class="">CPU와 저장장치가 내장된 단말장치</li>
+<li class="">네트워크 환경에서 분산 처리를 수행하기 위해 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=비지능형-단말장치>비지능형 단말장치<a href=#비지능형-단말장치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Non Intelligent = 더미 단말장치</li>
+<li class="">입출력 장치로만 구성되어 단독으로 작업을 처리할 수 있는 능력이 없는 단말장치</li>
+<li class="">통신 회선으로 연결된 컴퓨터(호스트)에 처리를 의존</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=신호-변환장치>신호 변환장치<a href=#신호-변환장치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">DCE = Data Circuit Equipment = Data Circuit terminal Equipment = 데이터 회선 종단장치</li>
+<li class="">컴퓨터나 단말장치의 데이터를 통신 회선에 적합한 신호로 변경하거나 통신 회선의 신호를 컴퓨터나 단말장치에 적합한 데이터로 변경하는 신호 변환 기능을 수행</li>
+<li class="">전송 회선 양 끝에 위치한다.</li>
+</ul>
+<table><thead><tr><th style=text-align:center>장치<th style=text-align:center>회선형태<th style=text-align:center>신호변환<tbody><tr><td style=text-align:center>전화<td style=text-align:center>아날로그<td style=text-align:center>아날로그 > 아날로그<tr><td style=text-align:center>모뎀<td style=text-align:center>아날로그<td style=text-align:center>디지털 > 아날로그<tr><td style=text-align:center>코덱<td style=text-align:center>디지털<td style=text-align:center>아날로그 > 디지털<tr><td style=text-align:center>DSU<td style=text-align:center>디지털<td style=text-align:center>디지털 > 디지털</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-회선>통신 회선<a href=#통신-회선 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">단말 장치에 입력된 데이터 또는 컴퓨터에서 처리된 결과가 실질적으로 전송되는 전송선</li>
+<li class="">유선 매체 : 꼬임선, 통축케이블, 광섬유</li>
+<li class="">무선 매체 : 라디오파, 지상 마이크로파, 위성 마이크로파</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-제어장치>통신 제어장치<a href=#통신-제어장치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">CCU = Communication Control Unit</li>
+<li class="">데이터 전송 회선과 주 컴퓨터를 연결하는 장치</li>
+<li class="">데이터를 일정 크기로 묶는 직, 병렬 변환 작업을 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-제어-프로그램>통신 제어 프로그램<a href=#통신-제어-프로그램 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">CCP = Communication Control Program</li>
+<li class="">데이터 전송 회선과 통신 제어장치를 이용하여 컴퓨터와 단말장치 간의 데이터 송수신을 하기 위해 사용되는 프로그램</li>
+<li class="">데이터 송수신, 통신 하드웨어 제어, 사용자 인터페이스 제어 기능</li>
+<li class="">CPU의 기능 분담</li>
+<li class="">하드웨어와의 인터페이스 기능</li>
+<li class="">데이터 통신 회선과 신호 변환기 등의 회선 제어</li>
+<li class="">접속의 확인과 종료를 제어하는 전송제어</li>
+<li class="">오류 제어</li>
+<li class="">데이터 처리와 교환</li>
+<li class="">코드 변환</li>
+<li class="">데이터 입출력 제어</li>
+<li class="">단말 제어</li>
+<li class="">데이터 버퍼링</li>
+<li class="">파일 관리와 회복</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-회선-1>통신 회선<a href=#통신-회선-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=꼬임선>꼬임선<a href=#꼬임선 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Twisted Pair Wire</li>
+<li class="">전기적 간섭 현상을 줄이기 위해 균일하게 서로 감겨져 있는 형태의 케이블</li>
+<li class="">저렴하고 설치가 간편</li>
+<li class="">거리, 대역폭, 데이터 전송률에 제약적</li>
+<li class="">다른 전기적 신호의 간섭이나 잡음에 영향을 받기가 쉽다.</li>
+<li class="">최근 100Mbps 이상 전송이 가능한 꼬임선이 개발되어 짧은 거리 고속 전송이 가능하다.</li>
+<li class="">비차폐 트위스트 페어 : UTP 전화 가입자 선으로 이미 건물 내에 설치되어 있어 LAN선으로 활용됨</li>
+<li class="">차폐 트위스트 페어 : STP</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=동축-케이블>동축 케이블<a href=#동축-케이블 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Coaxial Cable</li>
+<li class="">중심 도체를 플라스틱 절연체를 이용하여 감싸고 이를 다시 외부 도체를 이용해 감싸는 형태로 구성</li>
+<li class="">주파수 범위가 넓어 데이터 전송률이 높음</li>
+<li class="">꼬임선보다 외부 간섭과 누화의 영향이 적다.</li>
+<li class="">신호 감쇠현상을 막기 위해 일정 간격마다 <strong>중계기를 설치</strong>해야한다.</li>
+<li class="">아날로그와 디지털 신호 전송에 모두 사용</li>
+<li class="">고주파 특성이 양호해 광대역 전송에 적합</li>
+<li class="">케이블 TV, 근거리 통신망, 장거리 전화 등</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=광섬유>광섬유<a href=#광섬유 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Optical Fiber Cable = 광 케이블</li>
+<li class="">유리르 원료 제작된 가느다란 광섬유를 여러 가닥 묶어 케이블의 형태로 만든 것</li>
+<li class="">코어, 클래드, 재킷 세부분으로 구성</li>
+<li class="">가장 빠른 속도와 넓은 주파수 대역폭</li>
+<li class="">데이터 전송률 높음</li>
+<li class="">대용량, 장거리 전송 가능</li>
+<li class=""><strong>가늘고 가벼워 취급이 쉬움</strong></li>
+<li class=""><strong>도청하기 어려워 보안성이 뛰어남</strong></li>
+<li class="">유리는 절연성이 좋아 전자 유도의 영향을 받지 않아 안정된 통신 및 누화 방지가 가능</li>
+<li class=""><strong>감쇠율이 적어 리피터의 설치 간격이 넓어 리피터 소요가 적음</strong></li>
+<li class="">설치 비용이 비싸지만 대용량 전송이 가능해 단위 비용이 저렴</li>
+<li class="">광 케이블간 연결이 어려워 고도의 기술이 필요</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=라디오파>라디오파<a href=#라디오파 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">통신 장비의 이동이 빈번하고 통신 회선을 이용하기 어려운 지역간 통신에 사용</li>
+<li class="">무선 주파수 사용</li>
+<li class="">장거리 통신, TV나 휴대폰 음성 전송에 사용</li>
+<li class="">감쇠율이 적어 동축케이블보다 중계기가 적게 듦</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위성-마이크로파>위성 마이크로파<a href=#위성-마이크로파 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">지상에서 마이크로 주파수를 보내면 통신 위성을 통해 변환, 증폭한 후 다른 주파수로 지상에 송신하는 방식</li>
+<li class="">위성통신에 사용된다.</li>
+<li class="">300<del>3000MHz인 UHF(Ultra High Frequency)나 3</del>30GHz인 SHF(Super)를 사용한다.</li>
+<li class="">통신 위성, 지구국, 채널로 구성</li>
+<li class="">대역폭이 넓어 고속, 대용량 통신이 가능하고 통신 비용이 저렴</li>
+<li class="">오류율이 적어 고품질의 정보 전송이 가능</li>
+<li class="">한 대의 통신위성은 지구표면의 1/3이상을 커버 가능</li>
+<li class="">전송 비용은 거리와 무관하게 일정</li>
+<li class="">데이터 전송시 반드시 통신 위성을 거쳐야하므로 전송 지연시간이 길다.</li>
+<li class="">수신용 안테나만 있으면 누구나 통신 내용 수신 가능하므로 <strong>보안성이 취약</strong></li>
+<li class="">사용 주파수가 높을 수록 기상 현상에 의한 신호 감쇠가 크다.</li>
+<li class="">지상에 있는 무선 통신 시스템과의 상호 장애를 피하기 위해 지구국은 도시 외곽에 위치해야한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중-접속-방식>다중 접속 방식<a href=#다중-접속-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">통신 위성을 공동으로 사용하기 위한 다중 접속 방식</li>
+<li class="">FDMA : <strong>Frequency</strong> Division Multiple Access, 주파수 대역을 분할</li>
+<li class="">TDMA : <strong>Time</strong>, 사용 시간을 분할</li>
+<li class="">CDMA : <strong>Code</strong>, 주파수나 시간을 모두 공유하면서 각 데이터에 고유 코드를 부여</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-제어장치-1>통신 제어장치<a href=#통신-제어장치-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">데이터 전송 회선과 주 컴퓨터 사이에 위치</li>
+<li class="">데이터 전송에 관한 전반적인 제어기능 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송제어>전송제어<a href=#전송제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">다중 접속 제어</li>
+<li class="">교환 접속 제어 : 데이터 송수신을 위한 회선의 설정과 절단</li>
+<li class="">통신 방식 제어 : 단방향, 반이중, 전이중 선택</li>
+<li class="">우회 중계 회선 설정 : 장애시 경로설정</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기-및-오류제어>동기 및 오류제어<a href=#동기-및-오류제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">동기 제어 : 컴퓨터 처리 속도와 통신 회선상의 전송 속도 차이 조정</li>
+<li class="">오류 제어 : 회선과 단말장치에서 발생하는 오류 제어</li>
+<li class="">흐름 제어 : 수신 가능한 데이터 양을 송신 측에 알려 원활한 정보 전송이 가능하게 조정</li>
+<li class="">응답 제어</li>
+<li class="">정보 전송 단위의 정합 : 전송 정보를 패킷 등의 길이로 분할 또는 결합</li>
+<li class="">데이터 신호의 직병렬 변환</li>
+<li class="">투과성 : 전송할 실데이터에 대한 비트열에 확장 비트를 부가 또는 소거</li>
+<li class="">정보 표시 형식의 변환 : 문자 코드, 데이터 형식 등의 변환</li>
+<li class="">우선권 제어</li>
+<li class="">제어 정보 식별</li>
+<li class="">기밀 보호 : 암호화 등 제어</li>
+<li class="">관리 기능 : 통신 요금, 통계정보 수집</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=종류>종류<a href=#종류 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">통신 제어 장치 : CCU 전송 문자의 조립과 분해 기능을 수행</li>
+<li class="">통신 제어 처리 장치 : CCP 문자와 메세지의 조립과 분해 기능 수행</li>
+<li class="">전처리기<!-- -->
+<ul>
+<li class="">FEP = Front End Processor</li>
+<li class="">호스트 컴퓨터와 단말 사이에 고속 통신 회선으로 설치</li>
+<li class="">통신 회선 및 단말기 제어</li>
+<li class="">메세지의 조립과 분해</li>
+<li class="">전송 메세지 검사</li>
+<li class="">컴퓨터의 부담이 적어짐</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=분류>분류<a href=#분류 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>단위가 커질수록 통신 제어 장치의 기능과 구조가 복잡해지고 가격이 높아지지만 컴퓨터의 부담이 줄어든다.</p>
+<ul>
+<li class="">비트 버퍼 방식</li>
+<li class="">문자 버퍼 방식</li>
+<li class="">블록 버퍼 방식</li>
+<li class="">메세지 버퍼 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터>데이터<a href=#데이터 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">아날로그 데이터 : 셀 수 없는 연속적인 값</li>
+<li class="">디지털 데이터 : 셀 수 있는 이산적인 값</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=신호>신호<a href=#신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">아날로그 신호 : 정현파에 주파수, 진폭, 위상 특성을 포함하여 표현되는 전기적 신호가 연속적으로 변하는 파형</li>
+<li class="">디지털 신호 : 2진수 0과 1에 대한 전압 펄스의 연속적인 구성</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=주파수>주파수<a href=#주파수 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">단위 시간(1초) 내에 신호 파형이 반복되는 횟수를 의미하는 것</li>
+<li class="">Hz</li>
+<li class="">고주파 : 파형의 가록 폭이 좁고 고속 전송에 사용하고 전송거리가 짧다.</li>
+<li class="">저주파 : 파형의 가로 폭이 넓고 저속 전송에 사용하고 전송거리가 길다.</li>
+</ul>
+<table><thead><tr><th style=text-align:center>주파수<th style=text-align:center>대역<tbody><tr><td style=text-align:center>가청 주파수<td style=text-align:center>20 ~ 20000Hz<tr><td style=text-align:center>음성<td style=text-align:center>300 ~ 3400Hz<tr><td style=text-align:center><strong>HF</strong><td style=text-align:center><strong>3 ~ 30MHz</strong><tr><td style=text-align:center>VHF<td style=text-align:center>30 ~ 300MHz<tr><td style=text-align:center>UHF<td style=text-align:center>300 ~ 3000MHz<tr><td style=text-align:center>SHF<td style=text-align:center>3000 ~ 30,000MHz</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=대역폭>대역폭<a href=#대역폭 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Bandwidth</li>
+<li class="">주파수의 변화 범위</li>
+<li class="">상한 주파수와 하한 주파수의 차이</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-방식>전송 방식<a href=#전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=아날로그-전송>아날로그 전송<a href=#아날로그-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전송 매체를 통해 전달되는 신호가 아날로그 형태</li>
+<li class="">신호 감쇠 현상이 심하다.</li>
+<li class="">증폭기에 의해 신호를 다시 증폭하여 전송해야한다.</li>
+<li class="">신호에 포함된 잡음까지 증폭되기 때문에 오류율이 높다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-전송>디지털 전송<a href=#디지털-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전송 매체를 통해 전달되는 신호가 디지털 형태</li>
+<li class="">신호 감쇠 현상은 나타나지만 중계기에 의해 원래 신호 내용을 복원한 후 전송하는 방식이다.</li>
+<li class="">잡음에 의한 오류율이 낮다.</li>
+<li class="">대역폭을 효율적으로 이용해 더 많은 용량을 전송할 수 있다.</li>
+<li class="">데이터 암호화를 쉽게 구현할 수 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=직렬-전송>직렬 전송<a href=#직렬-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">각 비트들이 <strong>하나의 전송 매체</strong>를 통하여 한 비트씩 순서대로 전송되는 형태</li>
+<li class="">전송 속도가 느리지만 구성 비용이 적다.</li>
+<li class="">원거리 전송에 적합</li>
+<li class="">대부분의 데이터 통신에 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=병렬-전송>병렬 전송<a href=#병렬-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">각 비트들이 여러 개의 전송 매체를 통하여 동시에 전송되는 형태</li>
+<li class="">전송 속도는 빠르지만 구성 비용이 많다.</li>
+<li class="">근거리 전송에 적합</li>
+<li class="">주로 컴퓨터와 주변장치 사이의 데이터 전송에 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-방식>통신 방식<a href=#통신-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=단방향-통신>단방향 통신<a href=#단방향-통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Simplex</li>
+<li class="">한 방향으로만 전송이 가능한 방식</li>
+<li class="">라디오, TV</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=반이중-통신>반이중 통신<a href=#반이중-통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Half Duplex</li>
+<li class="">양방향 전송이 가능하지만 동시에 양방향으로 전송은 할 수 없는 방식</li>
+<li class="">2선식 선로를 사용하여 송신과 수신을 번갈아 전송</li>
+<li class="">무전기, 모뎀을 이용한 데이터 통신</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전이중-통신>전이중 통신<a href=#전이중-통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Full Duplex</li>
+<li class="">동시에 양방향 전송이 가능한 방식</li>
+<li class="">4선식 선로를 사용, 주파수 분할을 이용할 시 2선식도 가능</li>
+<li class="">전송량이 많고 전송 매체의 용량이 클 때 사용</li>
+<li class="">전화, 전용선을 이용한 데이터 통신</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=비동기식-전송>비동기식 전송<a href=#비동기식-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">한 문자를 나타내는 부호 앞뒤에 Start Bit와 Stop Bit를 붙여 Byte와 Byte를 구분하여 전송하는 방식</li>
+<li class=""><strong>시작비트, 전송 문자(정보 비트), 정지 비트로 구성된 한 문자를 단위</strong>로 전송</li>
+<li class="">오류 검출을 위한 패리티 비트를 추가하기도 한다.</li>
+<li class="">문자와 문자 사이의 Idle Time이 불규칙하다.</li>
+<li class="">한꺼번에 많은 데이터를 보내면 프레이밍 에러의 가능성이 높아진다.</li>
+<li class="">2000bps 이하의 <strong>저속, 단거리 전송에 사용</strong></li>
+<li class="">동기화가 단순하고 가격이 저렴</li>
+<li class="">문자마다 시작과 정지를 알리기 위한 <strong>비트가 추가되므로 전송 효율이 떨어짐</strong></li>
+<li class="">정지 비트는 휴지 상태와 같으므로 송신기는 다음 문자를 보낼 준비가 될 때까지 정지 비트를 계속 전송</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기식-전송>동기식 전송<a href=#동기식-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>미리 정해진 수만큼의 문자열을 한 블록(프레임)으로 만들어 일시에 전송하는 방식</strong></li>
+<li class="">송수신 양쪽의 동기를 유지하기 위해 타이밍 신호(클럭)을 계속적으로 공급하거나 동기 문자를 전송</li>
+<li class="">동기화된 방식으로 비트가 송수신되기 때문에 시작비트와 종료비트가 필요가 없다.</li>
+<li class=""><strong>블록과 블록 사이에 Idle Time이 없다.</strong></li>
+<li class="">프레임 단위로 전송하므로 전송 속도가 빠르다.</li>
+<li class="">제어 정보의 앞부분은 프리앰블, 뒷부분은 포스트앰블</li>
+<li class="">전송 효율이 좋다.</li>
+<li class=""><strong>원거리 전송에 사용</strong></li>
+<li class=""><strong>단말기는 반드시 버퍼 기억 장치를 내장해야 한다.</strong></li>
+<li class="">비트 동기 방식과 블록 동기 방식으로 나뉜다.</li>
+<li class="">블록 동기방식<!-- -->
+<ul>
+<li class="">문자 위주 동기 방식 : SYN 등의 동기 문자로 동기를 맞추는 방식, BSC에서 사용</li>
+<li class="">비트 위주 동기 방식 : 데이터 블록 처음과 끝에 8bit 플래그 비트(01111110)를 표시해 동기를 맞추는 방식, HDLC와 SDLC에서 사용</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=아날로그-데이터-전송-방식>아날로그 데이터 전송 방식<a href=#아날로그-데이터-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=아날로그-데이터에서-아날로그-신호>아날로그 데이터에서 아날로그 신호<a href=#아날로그-데이터에서-아날로그-신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">아날로그 데이터를 아날로그 회선을 통해 전송하기 위해 아날로그 형태로 변조하는 것</li>
+<li class="">아날로그 데이터를 먼 거리까지 효율적으로 전송하거나 주파수 분할 다중화를 위해 변조한다.</li>
+<li class="">라디오, TV, 전화에서 주로 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=변조-방법>변조 방법<a href=#변조-방법 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">진폭 변조</li>
+<li class="">주파수 변조</li>
+<li class="">위상 변조</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=아날로그-데이터에서-디지털-신호>아날로그 데이터에서 디지털 신호<a href=#아날로그-데이터에서-디지털-신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">아날로그 데이터를 디지털 회선을 통해 전송하기 위해 디지털 형태로 변환하는 것</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=코덱>코덱<a href=#코덱 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">CODEC = COder/DECoder</li>
+<li class="">아날로그 데이터를 디지털 통신 회선에 적합한 디지털 신호로 변환하거나 반대 과정을 수행</li>
+<li class="">펄스 코드 변조(PCM) 방식을 이용해 데이터를 변환한다.</li>
+<li class="">이동 통신이나 멀티미디어 분야에 사용</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-데이터-전송-방식>디지털 데이터 전송 방식<a href=#디지털-데이터-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-데이터에서-아날로그-신호>디지털 데이터에서 아날로그 신호<a href=#디지털-데이터에서-아날로그-신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">디지털 데이터를 아날로그 회선을 통해 전송하기 위해 아날로그 형태로 변환하는 것</li>
+<li class="">모뎀을 이용한다.</li>
+<li class="">변조 방식은 ASK, FSK, PSSK, QAM이 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=모뎀>모뎀<a href=#모뎀 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">MODEM = MOdulation DEModulation</li>
+<li class="">디지털 데이터를 아날로그 회선에 적합한 아날로그 신호로 변환하는 변조 과정과 그 반대의 복조 과정을 수행한다.</li>
+<li class="">디지털 데이터를 공중 전화 교환망과 같은 아날로그 통신망을 이용하여 전송할 때 사용</li>
+<li class="">Null 모뎀 : 모뎀을 사용하지 않고 두 대의 컴퓨터를 직접 접속해서 정보를 교환하는 방식</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기능>기능<a href=#기능 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">변복조 기능</li>
+<li class="">자동 응답 기능</li>
+<li class="">자동 호출 기능</li>
+<li class="">자동 속도 조절 기능</li>
+<li class="">모뎀 시험 기능 : Loop Test</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-데이터에서-디지털-신호>디지털 데이터에서 디지털 신호<a href=#디지털-데이터에서-디지털-신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">디지털 데이터를 디지털 회선을 통해 전송하기 위해 디지털 형태로 변환하는 것</li>
+<li class="">2진 데이터의 각 비트를 디지털 신호 요소로 변환하며 DSU를 이용한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dsu>DSU<a href=#dsu class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Digital Service Unit</li>
+<li class="">컴퓨터나 단말장치로부터 전송되는 디지털 데이터를 디지털 회선에 적합한 디지털 신호로 변환하는 과정과 그 반대를 수행한다.</li>
+<li class="">신호의 변조 과정 없이 단순히 유니폴라 신호를 바이폴라 신호로 변환하 주는 기능만 제공한다.</li>
+<li class="">모뎀에 비해 구조가 단순하다.</li>
+<li class="">디지털 데이터를 공중 데이터 교환망과 같은 디지털 통신망을 이용하여 전송할 때 사용</li>
+<li class="">송수신 기능과 타이밍 회복 기능을 DSU 자체에서 수행한다.</li>
+<li class="">속도가 빠르고 오류율이 낮다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-변조>디지털 변조<a href=#디지털-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Keying</li>
+<li class="">디지털 데이터를 아날로그 신호로 변환하는 것을 의미</li>
+<li class="">모뎀을 사용</li>
+<li class="">진폭 편이변조, 주파수 편이변조, 위상 편이변조, 직교 진폭변조</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=진폭-편이-변조>진폭 편이 변조<a href=#진폭-편이-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">ASK = Amplitude Shift Keying</li>
+<li class="">2진수 0과 1을 서로 다른 진폭의 신호로 변조하는 방식</li>
+<li class="">이 방식의 모뎀은 구조가 단순하고 가격이 저렴하다.</li>
+<li class=""><strong>신호 변동과 잡음에 약해 데이터 전송용으로 거의 쓰이지 않는다.</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=주파수-편이-변조>주파수 편이 변조<a href=#주파수-편이-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">FSK = Frequency Shift Keying</li>
+<li class="">2진수 0과 1을 서로 다른 주파수로 변조하는 방식</li>
+<li class="">1200bps 이하의 <strong>저속도 비동기식 모뎀에서 사용</strong></li>
+<li class=""><strong>모뎀 구조가 단순하고 신호 변동과 잡음에 강하다.</strong></li>
+<li class="">대역폭을 넓게 차지한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위상-편이-변조>위상 편이 변조<a href=#위상-편이-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">PSK = Phase Shift Keying</li>
+<li class="">2진수 0과 1을 서로 다른 위상을 갖는 신호로 변조하는 방식</li>
+<li class="">일정한 진폭 또는 주파수를 갖는 정현파의 위상을 180/ 90/ 45도 단위로 2등분/ 4등분/ 8등분 했을 때의 각 위치에 신호를 할당하여 전송하는 방식</li>
+<li class="">파형의 시작 위치를 다르게 하여 신호를 전송</li>
+<li class="">한 위상에 1bit(2위상), 2bit(4위상), 3bit(8위상)를 대응시켜 전송하므로 속도를 증가시킬 수 있다.</li>
+<li class=""><strong>중고속의 동기식 모뎀에 많이 사용</strong></li>
+<li class="">잡음에 크게 영향을 받지 않는다.</li>
+<li class="">2위상 편이 변조<!-- -->
+<ul>
+<li class="">DPSK, BPSK</li>
+<li class="">위상을 2등분하는 방식</li>
+<li class="">2등분된 각각의 위상에 1과 0을 할당하여 전송</li>
+</ul>
+</li>
+<li class="">4위상 편이 변조<!-- -->
+<ul>
+<li class="">QDPSK QPSK</li>
+<li class="">위상을 4등분하는 방식</li>
+<li class="">4등분된 각각의 위상에 2비트(00, 01, 10, 11)씩 할당하여 전송</li>
+</ul>
+</li>
+<li class="">8위상 편이 변조 : ODPSK</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=직교-진폭-변조>직교 진폭 변조<a href=#직교-진폭-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">QAM = Quadrature Amplitude Modulation = 진폭 위상 변조 = 직교 위상 변조</li>
+<li class="">제한된 전송 대역 내에 고속 전송이 가능 (9600bps)</li>
+<li class="">ITU-T에서 9600bps 모뎀의 표준 방식으로 권고</li>
+<li class="">신호의 진폭과 위상을 표시하는 신호의 구분점이 통신 회선의 잡음과 위상 변화에 대해 우수하다.</li>
+<li class="">QAM 방식의 전송 비트 수 예시 : 4위상은 2² = 2bit, 2진폭은 2¹ = 1bit 이므로 3bit식 전송</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=펄스-코드-변조>펄스 코드 변조<a href=#펄스-코드-변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">펄스 변조<!-- -->
+<ul>
+<li class="">펄스파의 진폭, 폭 위상 등을 변화시키는 변조 방식</li>
+<li class="">연속 레벨 변조 : 펄스 진폭 변조, 펄스 폭 변조, 펄스 위상 변조</li>
+<li class="">불연속 레벨 변조 : 펄스 수 변조, 펄스 코드 변조, 델타 변조</li>
+</ul>
+</li>
+<li class="">PCM = Pulse Code Modulation</li>
+<li class="">화상, 음성, 동영상, 가상 현실 등과 같이 연속적인 시간과 진폭을 가진 아날로그 데이터를 디지털 신호로 변환하는 것</li>
+<li class=""><strong>코덱을 사용</strong></li>
+<li class="">송신 측에서 아날로그 데이터를 표본화하여 PAM 신호로 만든 후 양자화, 부호화 단계를 거쳐 디지털 형태로 전송하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=순서>순서<a href=#순서 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>표본화 => 양자화 => 부호화 => 복호화 => 여파화</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=표본화>표본화<a href=#표본화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Sampling</li>
+<li class="">연속적인 신호 파형을 일정 시간 간격으로 검출하는 단계</li>
+<li class="">샤논의 표본화 이론을 바탕 : 어떤 신호가 의미를 지니는 최고 주파수보다 2배 이상의 주파수로 균일한 시간 간격 동안 채집되면 이 데이터는 원래 신호가 가진 모든 정보를 포함</li>
+<li class="">표본화에 의해 검출된 신호를 PAM 신호라 하며 아날로그 형태이다.</li>
+<li class="">PAM 신호는 양자화를 거쳐야 디지털 형태를 갖춘다.</li>
+<li class="">표본화 간격 = 1 / 표본화 횟수 = 1 / ( 2 * 주파수 대역폭 )</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=양자화>양자화<a href=#양자화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Quantizing</li>
+<li class="">표본화된 PAM 신호를 유한 개의 부호에 대한 대표값으로 조정하는 과정</li>
+<li class="">실수 형태의 PAM 신호를 반올림하여 정수형으로 만드는 것</li>
+<li class="">PAM 신호 값이 양자화 레벨의 1/2 보다 높은 경우는 위의 레벨값으로 낮은 경우는 아래의 레벨값으로 조정</li>
+<li class="">양자화 잡음 : 표본 측정값과 양자화 파형과의 오차를 말하는 것, PCM 단국 장치에서 발생</li>
+<li class="">양자화 잡음은 양자화 레벨을 세밀하게 함으로 줄일 수 있으나 데이터 양이 많아지고 전송 효율이 낮아진다.</li>
+<li class="">양자화 레벨 : PAM 신호를 부호화할 때 2진수로 표현할 수 있는 레벨</li>
+<li class="">표본당 전송 비트수가 3Bit이면 8개, 5Bit이면 32개의 양자화 레벨이 필요</li>
+<li class="">원래 신호 => 표본화 => PAM 신호 => 양자화 => PCM 신호 => 부호화 => PCM 데이터</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=부호화>부호화<a href=#부호화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Encoding</li>
+<li class="">양자화된 PCM 펄스의 진폭 크기를 2진수로 표시하는 과정</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=복호화>복호화<a href=#복호화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Decoding</li>
+<li class="">수신된 디지털 신호인 PCM을 PAM 신호로 되돌리는 과정</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=여파화>여파화<a href=#여파화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Filtering</li>
+<li class="">PAM 신호를 원래 입력 신호인 아날로그 데이터를 복원하는 과정</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=베이스밴드-전송>베이스밴드 전송<a href=#베이스밴드-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Base Band = 기저대역 전송</li>
+<li class="">컴퓨터나 단말장치 등에서 처리된 디지털 데이터를 다른 주파수 대역으로 변조하지 않고 직류 펄스 형태 그대로 전송하는 것</li>
+<li class="">신호만 전송되기 때문에 전송 신호 품질이 우수</li>
+<li class=""><strong>직류를 사용하므로 감쇠 등에 문제가 생겨 장거리 전송에는 비적합</strong></li>
+<li class="">컴퓨터와 주변장치 간의 통신, LAN 등 가까운 거리에 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-방식-1>전송 방식<a href=#전송-방식-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=단류-nrz>단류 NRZ<a href=#단류-nrz class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Non Return to Zero</li>
+<li class="">입력 데이터가 1이면 양의 전압을 주고 0이면 전압을 주지 않는다.</li>
+<li class="">송수신 회로의 구성이 간단하다.</li>
+<li class="">단거리 구간에 이용한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=복류-nrz>복류 NRZ<a href=#복류-nrz class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">0은 음, 1은 양의 전압으로 표현</li>
+<li class="">저속도 전송의 표준 방식으로 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=nrz-l>NRZ-L<a href=#nrz-l class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Non Return to Zero Level</li>
+<li class="">0은 양, 1은 음의 전압으로 표현</li>
+<li class="">가장 대표적인 디지털 파형</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=nrz-m>NRZ-M<a href=#nrz-m class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Non Return to Zero Mark = 차등 부호 = Differential Encoding</li>
+<li class="">비트 간격 시작점에는 항상 신호 변화가 발생</li>
+<li class=""><strong>0은 신호 변화 없이 전 상태를 유지하고 1일 때는 신호 변화가 발생</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=nrz-s>NRZ-S<a href=#nrz-s class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Non Return to Zero Space</li>
+<li class="">NRZ-M과 동일한 신호 변화를 적용하되 입력신호의 보수를 취한 형태로 적용</li>
+<li class="">1일 때는 변화없음 0일 때는 변화</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=단류-rz>단류 RZ<a href=#단류-rz class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Return to Zero</li>
+<li class="">입력 데이터가 1이면 하나의 데이터 폭을 두 개로 나눠 1/2시간 동안은 양의 전압으로, 나머지 1/2시간은 0으로 되돌아온다.</li>
+<li class="">0이면 전압을 주지 않는다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=복류-rz>복류 RZ<a href=#복류-rz class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">하나의 데이터 폭을 두 개로 나눠 1/2시간 동안에 0은 음, 1은 양의 전압으로 표현하고 나머지 1/2시간은 0으로 되돌아온다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=바이폴라>바이폴라<a href=#바이폴라 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Bipolar = AMI = 교호 부호 반전</li>
+<li class="">0은 신호 변화 없이 0V를 유지하고, 1은 +V와 -V 상태를 교대로 표현</li>
+<li class="">고속 디지털망에 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=맨체스터>맨체스터<a href=#맨체스터 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Manchester</li>
+<li class="">입력 데이터가 1이면 하나의 데이터 폭을 두 개로 나눠 1/2시간 동안 양의 전압으로 나머지 1/2시간 동안은 음의 전압으로 표현</li>
+<li class="">입력 데이터가 0이면 1/2시간 동안에는 음의 전압으로 나머지 1/2시간 동안에는 양의 전압으로 표현</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=기타>기타<a href=#기타 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">RB 방식</li>
+<li class="">CMI 방식 = 부호화 마크 반전 방식</li>
+<li class="">차분 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중화>다중화<a href=#다중화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Multiplexing</li>
+<li class="">하나의 고속 통신 회선을 다수의 단말기가 공유할 수 있도록 하는 것</li>
+<li class="">다중화기, 집중화기, 공동 이용기</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=공동이용기>공동이용기<a href=#공동이용기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">폴링 방식으로 네트워크를 제어시 통신 회선을 공동으로 이용할 수 있도록 하는 장치</li>
+<li class="">모뎀 공동 이용기, 선로 공동 이용기, 포트 공동 이용기</li>
+<li class="">네트워크를 단순화하고 비용을 절감</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중화기>다중화기<a href=#다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">MUX = MUltipleXer</li>
+<li class="">하나의 통신 회선에 여러 대의 단말기가 동시에 접속하여 사용할 수 있도록 하는 장치</li>
+<li class="">고속 통신 회선의 주파수나 시간을 일정한 간격으로 나눠 각 단말기에 할당하는 방식으로 운영</li>
+<li class="">여러 단말기가 같은 장소에 위차하는 경우 다중화 기능을 이용해 전송로의 수를 감소시킬 수 있다.</li>
+<li class="">주파수 분할 다중화기와 시분할 다중화기로 구분</li>
+<li class="">통신 회선을 공유함으로써 전송 효율을 높이고 통신회선 비용이 절감</li>
+<li class="">입력 회선 수와 출력 회선 수가 같다.</li>
+<li class=""><strong>여러 대의 단말기 속도의 합이 하나의 통신 회선 속도와 같다.</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=주파수-분할-다중화기>주파수 분할 다중화기<a href=#주파수-분할-다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">FDM = Frequency Division Multiplexer</li>
+<li class="">통신 회선 주파수를 여러 개로 분할하여 여러 대의 단말기가 동시에 사용할 수 있도록 한 것</li>
+<li class="">필요한 대역폭보다 통신 회선의 유효 대역폭이 큰 경우에 사용</li>
+<li class="">다중화기 <strong>자체에 변복조 기능</strong>이 있어 모뎀을 설치할 필요가 없다.</li>
+<li class="">구조가 간단하고 가격이 저렴하다.</li>
+<li class=""><strong>저속(1200bps)의 비동기식 전송, 멀티 포인트 방식에 적합</strong></li>
+<li class=""><strong>아날로그 신호 전송에 적합</strong></li>
+<li class=""><strong>전화, TV, 유선방송</strong></li>
+<li class="">각 채널들 간 상호 간섭을 방지하기 위해 <strong>보호대역(Guard Band)가 필요</strong></li>
+<li class="">보호 대역 사용으로 인한 대역폭 낭비 초래</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=시분할-다중화기>시분할 다중화기<a href=#시분할-다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">TDM = Time Division Multiplexer</li>
+<li class="">통신 회선의 대역폭을 일정한 시간 폭으로 나눠 여러 대의 단말장치가 동시에 사용할 수 있도록 한 것</li>
+<li class=""><strong>디지털 회선을 이용해 디지털 전송</strong>을 한다.</li>
+<li class=""><strong>디지털 회선에서 주로 사용하며 대부분 데이터 통신에 사용</strong></li>
+<li class=""><strong>point to point 방식에 적합</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기식-시분할-다중화기>동기식 시분할 다중화기<a href=#동기식-시분할-다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">STDM = Synchronous TDM</li>
+<li class="">일반적인 다중화기를 말한다.</li>
+<li class="">모든 단말에 균등한 시간폭을 제공</li>
+<li class="">전송되는 데이터의 시간폭을 정확히 맞추기 위해 <strong>동기 비트가 필요</strong></li>
+<li class="">통신 회선의 데이터 전송률이 전송 디지털 신호의 데이터 전송률을 능가할 때 사용</li>
+<li class="">다중화기 내부 속도와 단말기 <strong>속도차이를 보완해주는 버퍼가 필요</strong></li>
+<li class="">전송할 데이터가 없어도 시간폭이 제공되므로 효율성이 떨어짐</li>
+<li class="">송신 측에서는 입력된 데이터를 채널 별로 분리하여 각각의 채널 버퍼에 저장하고 이를 순차적으로 전송</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=비동기식-시분할-다중화기>비동기식 시분할 다중화기<a href=#비동기식-시분할-다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">ATDM = Asynchronous TDM = 지능 다중화기, 확률적 다중화기, 통계적 시분할 다중화기</li>
+<li class="">마이크로프로세서를 이용해 접속된 단말기 중 전송할 데이터가 있는 단말기에만 시간폭을 제공</li>
+<li class="">낭비되는 시간폭을 줄일 수 있어 전송 효율이 높음</li>
+<li class="">다중화기 내부 속도와 단말기의 <strong>속도 차이를 보완하기 위한 버퍼가 필요</strong> (데이터의 임시 저장)</li>
+<li class="">데이터 전송량이 많아질 경우 전송 지연이 생김</li>
+<li class=""><strong>접속하는데 소요 시간이 길다.</strong></li>
+<li class="">데이터와 함께 <strong>주소 정보를 헤더에 붙여 전송</strong></li>
+<li class="">주소 제어, 흐름 제어, 오류 제어 등의 기능이 있어 복잡한 제어 회로와 임시 기억장치가 필요하며 가격이 비싸다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=역다중화기>역다중화기<a href=#역다중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Inverse Multiplexer</li>
+<li class="">광대역 회선 대신 두 개의 음성 대역 회선을 이용하여 데이터를 전송할 수 있도록 하는 장치</li>
+<li class="">광대역 통신 회선을 사용하지 않고도 9600bps 이상의 광대역 속도를 얻을 수 있어 통신비용이 절감</li>
+<li class="">하나의 통신 회선이 고장나도 나머지 하나의 회선을 통해 1/2 속도로 전송을 유지할 수 있다.</li>
+<li class="">여러 가지 변화에 대응해 다양한 전송 속도를 얻을 수 있다.</li>
+<li class="">음성 대역 회선의 특성상 두 회선의 상대적 전송 지연이 발생할 수 있어 두 회선의 속도 차이를 조절하기 위해 순환 기억장치가 사용된다.</li>
+<li class="">위 문제를 비트 스트림 혼란 방지라고 한다.</li>
+<li class="">성격이 다른 두 개의 채널을 사용할 수 있다.</li>
+<li class="">회선 변경이 쉽다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=집중화기>집중화기<a href=#집중화기 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Concentrator</li>
+<li class="">하나 또는 소수의 통신 회선에 여러 대의 단말기를 접속하여 사용할 수 있도록 하는 장치</li>
+<li class="">실제 전송할 데이터가 있는 단말기에만 통신 회선을 할당하여 동적으로 통신 회선을 이용할 수 있도록 한다.</li>
+<li class="">한 개의 단말기가 통신 회선을 점유하면 다른 단말기는 통신 회선을 사용할 수 없다.</li>
+<li class=""><strong>다른 단말기의 자료를 임시로 보관할 버퍼가 필요</strong></li>
+<li class="">m개의 입력 회선을 n개의 출력회선으로 집중화하는 장치</li>
+<li class=""><strong>입력 회선의 수가 출력 회선의 수보다 같거나 많다.</strong></li>
+<li class=""><strong>회선의 이용률이 낮고 불규칙적인 전송에 적합</strong></li>
+<li class="">전송할 데이터의 유무를 판단해야 하므로 제어 조작이 어렵다.</li>
+<li class=""><strong>회선 교환, 메세지 교환, 패킷 교환 등의 교환방식에 사용</strong></li>
+<li class=""><strong>여러 대의 단말기 속도의 합이 통신 회선의 속도보다 크거나 같다.</strong></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-속도와-통신-용량>통신 속도와 통신 용량<a href=#통신-속도와-통신-용량 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=변조-속도>변조 속도<a href=#변조-속도 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">1초 동안 몇 개의 신호 변화가 있었는가를 나타내는 것</li>
+<li class="">단위는 baud를 사용한다.</li>
+<li class="">1개의 신호가 변조되는 시간을 t초라고 하면 baud = 1/t</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=신호-속도>신호 속도<a href=#신호-속도 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">1초 동안 전송 가능한 비트의 수</li>
+<li class="">단위는 bps</li>
+<li class="">bps = baud X 변조시 상태 변화 수</li>
+<li class="">baud = bps / 변조시 상태 변화 수</li>
+</ul>
+<blockquote>
+<p>변조 시 상태 변화 수</p>
+<ul>
+<li class="">모노비트 : 1bit</li>
+<li class="">디비트 : 2bit</li>
+<li class="">트리비트 : 3bit</li>
+<li class="">쿼드비트 : 4bit</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-속도>전송 속도<a href=#전송-속도 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">단위 시간에 전송되는 데이터 양을 나타낸다.</li>
+<li class="">문자, 블록, 비트, 단어 수 등</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=베어러-속도>베어러 속도<a href=#베어러-속도 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">데이터 신호에 동기 문자, 상태 신호 등을 합한 속도</li>
+<li class="">단위는 bps</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-용량>통신 용량<a href=#통신-용량 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>단위 시간 동안 전송 회선이 최대로 전송할 수 있는 통신 정보량</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=샤논의-정의>샤논의 정의<a href=#샤논의-정의 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Shannon</li>
+<li class="">전송 회선의 대역폭과 신호, 잡음을 고려해 통신 용량을 정의한 것</li>
+</ul>
+<p><img decoding=async loading=lazy src=https://kiranbot.com/images/wifi/shannon-hartley.png alt="shannon's_theorem" class=img_ev3q /></p>
+<ul>
+<li class="">C : 통신 용량</li>
+<li class="">B : 대역폭</li>
+<li class="">S : 신호 전력</li>
+<li class="">N : 잡음 전력
+주파수 대역폭을 늘리고, 신호를 높이고, 잡음을 줄인다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-제어>전송 제어<a href=#전송-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Transmission Control</li>
+<li class="">데이터의 원활한 흐름을 위해 입출력 제어, 회선 제어, 동기 제어, 오류 제어, 흐름 제어 등을 수행하는 것</li>
+<li class="">OSI7 모델의 데이터 링크 계층에서 수행</li>
+<li class="">전송 제어 프로토콜, 데이터 링크 제어 프로토콜</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=절차>절차<a href=#절차 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>데이터 통신 회선 접속 => 데이터 링크 설정 => 정보 메세지 전송 => 데이터 링크 종결 => 데이터 통신 회선 절단</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-통신-회선의-접속>데이터 통신 회선의 접속<a href=#데이터-통신-회선의-접속 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">교환 회선에서 통신 회선과 단말기를 물리적으로 접속하는 단계</li>
+<li class="">교환 회선을 이용하는 Point to Point 방식이나 Multi Point 방식으로 연결된 경우에 필요한 단계</li>
+<li class="">전용 회선을 이용한 Point to Point 방식에는 불필요하다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-링크의-설정>데이터 링크의 설정<a href=#데이터-링크의-설정 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">접속된 통신 회선상에서 송수신 측 간의 확실한 데이터 전송을 수행하기 위해 논리적 경로를 구성하는 단계</li>
+<li class="">데이터 링크의 설정 방법에는 폴링/셀렉션 방식, 경쟁 방식이 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-메세지-전송>정보 메세지 전송<a href=#정보-메세지-전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">데이터를 수신 측에 전송하고 오류 제어와 순서 제어를 수행하는 단계</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-링크-종결>데이터 링크 종결<a href=#데이터-링크-종결 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">송수신 측 간의 논리적 경로를 해제하는 단계</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-통신-회선의-절단>데이터 통신 회선의 절단<a href=#데이터-통신-회선의-절단 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">통신 회선과 단말기 간의 물리적 접속을 절단하는 단계</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-링크-제어-프로토콜>데이터 링크 제어 프로토콜<a href=#데이터-링크-제어-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">컴퓨터와 컴퓨터, 컴퓨터와 단말장치 등의 두 장치 상호 간에 신속하고 정확하게 데이터를 주고 받을 수 있도록 전송 제어를 수행하는 프로토콜</li>
+<li class="">데이터 링크 레벨 프로토콜 = 전송 제어 프로토콜</li>
+<li class="">문자위주 방식과 비트 위주 방식으로 구분된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=bsc>BSC<a href=#bsc class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Binary Synchronous Control</li>
+<li class="">문자 위주의 프로토콜</li>
+<li class="">각 프레임에 전송 제어 문자를 삽입하여 전송을 제어</li>
+<li class="">문자 코드 상에 정의된 전송 제어 문자를 이용해 링크를 제어하기 때문에 사용하는 문자 코드에 의존적이며 사용할 수 있는 코드가 제한적</li>
+<li class="">컴퓨터가 사용하는 문자 코드 체계가 통일되어야 한다.</li>
+<li class=""><strong>반이중 전송만을 지원</strong>한다.</li>
+<li class="">주로 동기식 전송 방식을 사용하나 비동기식 전송방식도 사용</li>
+<li class="">Point to Point, Multi Point 방식에서 주로 사용</li>
+<li class=""><strong>오류 제어 및 흐름 제어를 위해 Stop and Wait ARQ를 사용</strong></li>
+<li class="">전파 지연 시간이 긴 선로에서는 비효율적</li>
+<li class="">오류 검출이 어렵고 전송 효율이 나쁘다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-제어-문자>전송 제어 문자<a href=#전송-제어-문자 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">링크 관리, 프레임의 시작 끝의 구별, 오류 제어 등의 기능을 하는 것</li>
+<li class="">SYN : Synchronous idle 문자 동기</li>
+<li class="">SOH : Start of Heading 헤드의 시작</li>
+<li class=""><strong>STX</strong> : Start of Text 본문의 시작 및 헤드의 종료</li>
+<li class=""><strong>ETX</strong> : End of Text 본문의 종료</li>
+<li class="">ETB : End of Transmission Block 블록의 종료</li>
+<li class=""><strong>EOT</strong> : End Of Transmission 전송 종료 및 데이터 링크 해제</li>
+<li class=""><strong>ENQ</strong> : ENQuiry 상대편에 데이터 링크 설정 및 응답 요구</li>
+<li class=""><strong>DLE</strong> : Data Link Escape 전송 제어 문자 앞에 삽입하여 전송 제어 문자임을 알려줌, <strong>데이터 투명성을 위해 삽입</strong></li>
+<li class=""><strong>ACK</strong> : ACKnowledge 긍정 응답</li>
+<li class=""><strong>NAK</strong> : Negative AcKnowledge 부정 응답</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hdlc>HDLC<a href=#hdlc class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">High level Data Link Control</li>
+<li class="">비트 위주의 프로토콜</li>
+<li class="">각 프레임에 데이터 흐름을 제어하고 오류를 검출할 수 있는 비트 열을 삽입하여 전송</li>
+<li class="">Point to Point, Multi Point, Loop 등 다양한 데이터 링크 형태에 동일하게 적용 가능</li>
+<li class="">단방향, 반이중, 전이중 통신을 모두 지원</li>
+<li class=""><strong>동기식 전송 방식 사용</strong></li>
+<li class="">오류 제어를 위해 GO-Back-N과 Selective Repeat ARQ를 사용</li>
+<li class="">흐름 제어를 위해 슬라이딩 윈도우 방식 사용</li>
+<li class="">전송 제어상의 제한을 받지 않고 자유로이 비트 정보를 전송할 수 있다.</li>
+<li class="">전송 효율과 신뢰성이 높다.</li>
+</ul>
+<blockquote>
+<p>비트 스터핑</p>
+<ul>
+<li class="">Bit Stuffing</li>
+<li class="">프레임에 임의의 비트를 삽입하여 데이터의 자유로운 전송을 보장하는 기능</li>
+<li class="">프레임 내의 플래그 비트와 다른 비트를 구분하여 기본적인 오류를 검출</li>
+<li class=""><strong>투명성을 보장</strong>한다.</li>
+<li class="">플래그 비트를 제외한 모든 비트는 '1'이 6개 이상 연속되지 않도록 한다.</li>
+<li class="">'1'이 연속적으로 5개가 오면 다음 6번째 비트는 '0'을 강제로 추가해 송신한다.</li>
+<li class="">'1'이 6개가 연속된 비트는 플래그 비트</li>
+<li class="">'1'이 7개 이상 연속되면 오류 프레임으로 검출된다.</li>
+</ul>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프레임-구조>프레임 구조<a href=#프레임-구조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">플래그 : 프레임 시작과 끝을 나타내는 고유한 비트 패턴 01111110</li>
+<li class="">주소부<!-- -->
+<ul>
+<li class="">Address Field</li>
+<li class="">송수신국을 식별하기 위해 사용</li>
+<li class="">불특정 다수에게 전송하는 방송용은 11111111</li>
+<li class="">시스템에 의해 임의로 수신국이 지정되는 시험용은 00000000</li>
+</ul>
+</li>
+<li class="">제어부<!-- -->
+<ul>
+<li class="">Control Field</li>
+<li class="">프레임의 종류를 식별하기 위해 사용</li>
+<li class="">제어부의 첫 번째, 두 번째 비트를 사용하여 프레임 종류를 구별</li>
+<li class=""><strong>I 프레임</strong> : Information Frame = 정보 프레임, <strong>제어부가 '0'으로 시작</strong>하는 프레임, 사용자에게 데이터를 전달하거나 피기백킹 기법을 통해 데이터에 대한 확인 응답을 보낼 때 사용</li>
+<li class=""><strong>S 프레임</strong> : Supervisory Frame = 감독 프레임, <strong>제어부가 '10'으로 시작</strong>하는 프레임, 오류 제어와 흐름 제어를 위해 사용</li>
+<li class=""><strong>U 프레임</strong> : Unnumbered Frame = 비번호 프레임, <strong>제어부가 '11'로 시작</strong>하는 프레임, 링크의 동작 모드 설정과 관리</li>
+</ul>
+</li>
+<li class="">정보부<!-- -->
+<ul>
+<li class="">Information Field</li>
+<li class="">실제 정보 메세지가 들어 있는 부분</li>
+</ul>
+</li>
+<li class="">FCS<!-- -->
+<ul>
+<li class="">Frame Check Sequence Field = 프레임 검사 순서 필드</li>
+<li class="">프레임 내용에 대한 오류 검출을 위해 사용하는 부분</li>
+<li class="">일반적으로 CRC 코드가 사용된다.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>피기백킹</p>
+<ul>
+<li class="">Piggybacking</li>
+<li class="">데이터 프레임 확인 응답을 포함시켜 전송하는 것</li>
+</ul>
+<p>HDLC의 Station</p>
+<ul>
+<li class="">주국 : 종속된 단말기를 제어하거나 정보를 제공해주는 컴퓨터, 주 스테이션 = 1차국 = 서버</li>
+<li class="">종국 : 주국으로부터 제어를 받고 정보를 제공받는 컴퓨터, 부 스테이션 = 2차국 = 클라이언트</li>
+<li class="">혼합국 : 상대국 컴퓨터의 제어를 받기도 하고 제어를 하기도 하는 동등한 위상을 가진 컴퓨터, 복합국</li>
+</ul>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-전송-모드>데이터 전송 모드<a href=#데이터-전송-모드 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>표준 응답 모드</strong>
+<ul>
+<li class="">NRM = Normal Response Mode</li>
+<li class="">반이중 통신을 하는 Point to Point 또는 Multi Point 불균형 링크 구성에 사용</li>
+<li class="">종국은 주국의 허가가 있을 때만 송신</li>
+</ul>
+</li>
+<li class=""><strong>비동기 응답 모드</strong>
+<ul>
+<li class="">ARM = Asynchronous Response Mode</li>
+<li class="">전이중 통신을 하는 Point to Point 불균형 링크 구성에 사용</li>
+<li class="">종국은 주국의 허가 없이도 송신이 가능하지만 링크 설정이나 오류 복구 등의 제어 기능은 주국만 가능</li>
+</ul>
+</li>
+<li class=""><strong>비동기 균형(평형) 모드</strong>
+<ul>
+<li class="">ABM = Asynchronous Balanced Mode</li>
+<li class="">Point to Point 균형 링크에서 사용</li>
+<li class="">혼합국끼리 허가 없이 언제나 전송할 수 있도록 설정</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>불균형 링크</p>
+<ul>
+<li class="">주국과 종국 사이의 통신
+균형 링크</li>
+<li class="">모든 국의 동등한 혼합국끼리의 통신</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=회선-제어-방식>회선 제어 방식<a href=#회선-제어-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=경쟁-방식>경쟁 방식<a href=#경쟁-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Contention</li>
+<li class="">회선 접속을 위해서 서로 경쟁하는 방식</li>
+<li class="">송신 요구를 먼저 한 쪽이 송신권을 갖는다.</li>
+<li class=""><strong>Point to Point 방식에서 주로 사용</strong></li>
+<li class="">송신 요구가 발생한 국이 주국이 되어 상대국에 셀렉팅 순서를 송신하여 상대국의 수신 가능 상태를 확인한 후 정보 메세지를 송신</li>
+<li class="">데이터 링크 설정되면 정보 전송이 종료되기 전까지는 데이터 링크의 종결이 이루어지지 않고 <strong>독점적으로 정보 전송</strong>을 하게 된다.</li>
+<li class="">송신 측에 전송할 메세지가 있을 경우 사용 가능한 회선이 있을 때까지 기다려야한다.</li>
+<li class="">대표적 시스템으로 ALOHA</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=폴링셀렉션-방식>폴링/셀렉션 방식<a href=#폴링셀렉션-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Polling/Selection</li>
+<li class="">주 컴퓨터에서 송수신 제어권을 가지고 있는 방식</li>
+<li class="">트래픽이 많은 <strong>Multi Point 방식으로 연결된 회선에서 사용</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=폴링>폴링<a href=#폴링 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Polling</li>
+<li class=""><strong>주 컴퓨터에서 단말기에게 전송할 데이터가 있는지를 물어 전송할 데이터가 있다면 전송을 허가</strong>하는 방식</li>
+<li class="">단말기에서 주 컴퓨터로 보낼 데이터가 있는 경우에 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=셀렉션>셀렉션<a href=#셀렉션 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Selection</li>
+<li class=""><strong>주 컴퓨터가 단말기로 전송할 데이터가 있는 경우 그 단말기가 받을 준비가 되어있는가를 묻고</strong> 준비가 되어있으면 주 컴퓨터에서 단말기로 데이터를 전송하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류-제어-방식>오류 제어 방식<a href=#오류-제어-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=발생-원인>발생 원인<a href=#발생-원인 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=감쇠>감쇠<a href=#감쇠 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Attenuation</li>
+<li class="">전송 신호 세력이 전송 매체를 통과하는 과정에서 거리에 따라 약해지는 현상</li>
+<li class="">주파수가 높을수록 감쇠 현상이 심해진다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=지연-왜곡>지연 왜곡<a href=#지연-왜곡 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Delay Distortion</li>
+<li class="">유선 매체에서 발생하는 문제</li>
+<li class="">하나의 전송 매체를 통해 여러 신호를 전달했을 때 주파수에 따라 그 속도가 달라짐으로써 생기는 오류</li>
+<li class="">중심 주파수의 전달 속도가 가장 빠르고 양쪽 끝의 주파수일수록 느려진다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=백색-잡음>백색 잡음<a href=#백색-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">White Noise = 가우스 잡음 = 열 잡음</li>
+<li class="">전송 매체 내부에서 온도에 따라 전자의 운동량이 변화함으로써 생기는 잡음</li>
+<li class="">완벽하게 제거하기 힘들다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=상호-변조-잡음>상호 변조 잡음<a href=#상호-변조-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Intermodulation Noise</li>
+<li class="">서로 다른 주파수들이 하나의 전송 매체를 공유할 때 주파수 간의 합이나 차로인해 새로운 주파수가 생성되는 잡음</li>
+<li class="">통신 시스템의 비선형성 때문에 발생</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=누화-잡음>누화 잡음<a href=#누화-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Cross Talk Noise = 혼선</li>
+<li class="">인접한 전송 매체의 전자기적 상호 유도 작용에 의해 생기는 잡음</li>
+<li class="">신호의 경로가 비정상적으로 결합된 경우 나타난다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=충격성-잡음>충격성 잡음<a href=#충격성-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Impulse Noise</li>
+<li class="">번개와 같은 외부적인 충격 또는 통신 시스템의 결함이나 파손 등의 기계적인 충격에 의해 생기는 잡음</li>
+<li class="">순간적으로 일어나는 높은 진폭의 잡음</li>
+<li class="">비연속적이고 불규칙적인 진폭을 가진다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=돌발성-잡음>돌발성 잡음<a href=#돌발성-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">자연 현상, 통신 장비의 결함 등 예측할 수 없는 외부 요인에 의해 발생하는 잡음</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=위상-지터-잡음>위상 지터 잡음<a href=#위상-지터-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Phase Jitter Noise</li>
+<li class="">전송 네트워크에서 전송 신호의 위상이 연속적으로 일그러지는 현상</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=위상-히트-잡음>위상 히트 잡음<a href=#위상-히트-잡음 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Phase Hit Noise</li>
+<li class="">전송 네트워크에서 전송 신호의 위상에 불연속적인 순간 변화가 일어나는 현상</li>
+</ul>
+<blockquote>
+<p>우연적 왜곡</p>
+<ul>
+<li class="">예측 할 수 없이 무작위로 발생하는 왜곡</li>
+<li class="">백색 잡음, 충격 잡음, 누화 잡음, 위상 히트 잡음</li>
+</ul>
+<p>시스템적 왜국</p>
+<ul>
+<li class="">전송 매체에서 언제든지 일어날 수 있는 왜곡</li>
+<li class="">손실, 감쇠, 하모닉 왜곡</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류율>오류율<a href=#오류율 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">비트 오류율 = 오류 비트수 / 전송한 총 비트 수</li>
+<li class="">블록 오류율 = 오류 블록 수 / 전송한 총 블록 수</li>
+<li class="">문자 오류율 = 오류 문자 수 / 전송한 총 문자 수</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-오류-제어-방식>전송 오류 제어 방식<a href=#전송-오류-제어-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전진-오류-수정>전진 오류 수정<a href=#전진-오류-수정 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">FEC = Forward Error Corrction = 순방향 오류 수정</li>
+<li class="">데이터 전송 과정에서 발생한 오류를 검출하여 검출된 오류를 재전송 요구 없이 스스로 수정하는 방식</li>
+<li class="">송신 측에서는 문자나 프레임에 오류 검출을 위한 부가 정보를 추가시켜 전송하고, 수신 측에서는 부가정보를 이용해 자신이 수신한 데이터에 존재하는 오류를 발견하고 수정</li>
+<li class="">재전송 요구가 없어 역 채널이 필요 없고 연속적인 데이터 흐름이 가능하다.</li>
+<li class="">데이터 비트 외에 오류 검출 및 수정을 위한 비트가 추가로 전송되어야 하기 때문에 전송 효율이 떨어진다.</li>
+<li class="">해밍 코드 방식과 상승 코드 방식</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=후진-오류-수정>후진 오류 수정<a href=#후진-오류-수정 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">BEC = Backward Error Correction</li>
+<li class="">데이터 전송 과정에서 오류가 발생하면 송신 측에 재전송을 요구하는 방식</li>
+<li class="">패리티 검사, CRC, 블록 합 방식으로 오류 검출</li>
+<li class="">ARQ에 의해 오류 제어</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자동-반복-요청>자동 반복 요청<a href=#자동-반복-요청 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">ARQ = Automatic Repeat reQuest</li>
+<li class="">오류 발생시 수신측은 오류 발생을 송신 측에 통보하고 송신 측은 오류 발생 블록을 재전송하는 모든 절차를 의미</li>
+<li class="">정지대기 ARQ, Go-Back ARQ, 선택적 재전송 ARQ, 적응적 ARQ가 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정지대기-arq>정지대기 ARQ<a href=#정지대기-arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Stop and Wait ARQ</li>
+<li class="">송신 측에서 한 개의 블록을 전송한 후 수신 측으로부터 응답을 기다리는 방식</li>
+<li class="">수신 측의 응답이 ACK면 다음 블록을 전송하고 NAK면 앞서 송신했던 블록을 재전송한다.</li>
+<li class="">블록을 전송할 때마다 수신 측의 응답을 기다려야되므로 전송 효율이 가장 낮다.</li>
+<li class="">오류가 발생한 경우 앞서 송신한 블록만 재전송하면 되므로 구현 방법이 단순하다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=연속-arq>연속 ARQ<a href=#연속-arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Continuous ARQ</li>
+<li class="">정지대기 ARQ가 갖는 오버헤드를 줄이기 위해 연속적으로 데이터 블록을 보내는 방식</li>
+<li class=""><strong>수신 측에서는 부정응답만을 송신</strong></li>
+<li class="">프레임의 송신 순서와 수신 순서가 동일해야 수신이 가능하다.</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=go-back-n-arq>Go-BACK-N ARQ<a href=#go-back-n-arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h5>
+<ul>
+<li class="">여러 블록을 연속적으로 전송하고 수신 측에서 NAK를 보내면 송신 측이 오류가 밠애한 블록 이후의 모든 블록을 재전송</li>
+<li class=""><strong>전송 오류가 발생하지 않으면 쉬지 않고 연속적으로 송신이 가능</strong>하다.</li>
+<li class=""><strong>오류가 발생한 부분부터 모두 재전송</strong>하므로 중복 전송의 단점이 있다.</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=선택적-재전송>선택적 재전송<a href=#선택적-재전송 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h5>
+<ul>
+<li class="">Selective Repeat ARQ</li>
+<li class="">여러 블록을 연속적으로 전송하고 수신 측에서 NAK를 보내면 송신 측이 <strong>오류가 발생한 블록만을 재전송</strong></li>
+<li class="">수신 측에서 데이터를 처리하기 전에 원래 순서대로 조립해야 하므로 더 복잡한 논리 회로와 큰 용량의 <strong>버퍼가 필요</strong>하다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=적응적-arq>적응적 ARQ<a href=#적응적-arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Adaptive ARQ</li>
+<li class="">전송 효율을 최대로 하기 위해 데이터 블록의 길이를 채널의 상태에 따라 동적으로 변경하는 방식</li>
+<li class="">제어 회로가 매우 복잡하고 비용이 비싸 현재는 거의 사용되지 않는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류-검출-방식>오류 검출 방식<a href=#오류-검출-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">가장 대표적인 방법은 오류 검출 코드를 이용하는 방법</li>
+<li class="">전송 데이터에 오류 검출 코드를 부가해 그 코드로 수신된 데이터의 오류를 검출한다.</li>
+<li class="">패리티 검사, 순환 중복 검사, 궤환 전송 방식, 자동 연속 방식, 해밍 코드 방식, 상승 코드 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=수직-패리티-체크>수직 패리티 체크<a href=#수직-패리티-체크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">수직 중복 검사 = VRC = Vertical Redundancy Check</li>
+<li class="">수직 방향으로 패리티 비트를 부여하는 방식</li>
+<li class="">보통의 패리티 검사를 일컫는다.</li>
+<li class="">짝수 패리티 : 주로 비동기식 전송에 사용</li>
+<li class="">홀수 패리티 : 주로 동기식 전송에 사용</li>
+<li class="">가장 간단하지만 두 개의 비트에 동시에 오류가 발생하면 검출이 불가능하다.</li>
+<li class="">오류를 검출만하고 수정은 못한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=수평-패리티-체크>수평 패리티 체크<a href=#수평-패리티-체크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">세로 중복 검사 = LRC = Longitudinal Redundancy Check</li>
+<li class="">수평 방향으로 패리티 비트를 부여하는 방식</li>
+<li class="">전송 비트를 일정량의 블록으로 묶어서 블록의 맨 마지막에 패리티 비트를 부여</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=순환-중복-검사>순환 중복 검사<a href=#순환-중복-검사 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">CRC = Cyclic Redundancy Check</li>
+<li class=""><strong>다항식 코드를 사용하여 오류를 검출하는 방식</strong></li>
+<li class="">HDLC 프레임의 FCS에 사용되는 방식</li>
+<li class="">집단 오류를 검출할 수 잇고, 검출률이 높아 가장 많이 사용된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=궤환-전송-방식>궤환 전송 방식<a href=#궤환-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Echo Check</li>
+<li class="">수신 측에서 받은 데이터를 송신 측으로 되돌려 보내어 원본 데이터와 비교하여 오류가 있는 경우 재전송하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자동-연속-방식>자동 연속 방식<a href=#자동-연속-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">연속 전송 방식</li>
+<li class="">송신 측에서 동일 데이터를 두 번 이상 전송하면 수신 측에서 두 데이터를 비교해 이상 유무를 판별한 후 오류 발생 시 이를 수정하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=해밍-코드-방식>해밍 코드 방식<a href=#해밍-코드-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Hamming Code = 자기 정정 부호</li>
+<li class="">수신 측에서 오류가 발생한 비트를 검출한 후 직접 수정하는 방식</li>
+<li class="">1bit의 오류만 수정이가능하다.</li>
+<li class="">정보 비트 외에 잉여 비트가 많이 필요하다.</li>
+<li class="">해밍 거리: 송신한 데이터와 수신한 데이터의 각 대응하는 비트가 서로 다른 비트의 수</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상승-코드-방식>상승 코드 방식<a href=#상승-코드-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">순차적 디코딩과 한계값 디코딩을 사용하여 오류를 수정한다.</li>
+<li class="">수신 측에서 오류 데이터를 수정할 수 있다는 점은 해밍 코드와 같지만 상승 코드는 여러 비트의 오류도 수정할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전용-회선>전용 회선<a href=#전용-회선 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Leased Line</li>
+<li class="">송수신 상호 간에 통신 회선이 항상 고정되어 있는 방식</li>
+<li class="">Point to Point 방식과 Multi Point 방식이 있다.</li>
+<li class="">전송 속도가 빠르고 전송 오류가 적다.</li>
+<li class="">사용 방법이 간편하고 업무 적용이 쉽다.</li>
+<li class="">전송할 데이터의 양이 많고 회선 사용 시간이 많을 때 효율적</li>
+<li class="">고장 발생시 유지보수가 쉽다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=교환-회선>교환 회선<a href=#교환-회선 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Switched Line</li>
+<li class="">교환기에 의해 송수신 상호 간이 연결되는 방식</li>
+<li class="">전용 회선에 비해 전송 속도가 느리다.</li>
+<li class="">보안을 위해 정보 누설과 파괴를 방지하는 조치가 필요하다.</li>
+<li class="">회선을 공유하므로 효용도가 높고 통신 장치와 회선 비용을 줄일 수 있다.</li>
+<li class="">전송할 데이터의 양이 많지 않고 회선 사용시간이 적을 때 효율적</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-교환-방식>데이터 교환 방식<a href=#데이터-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">회선 교환 방식 : 통신 회선을 교환기에 의해 물리적으로 접속<!-- -->
+<ul>
+<li class="">공간 분할 교환 방식</li>
+<li class="">시분할 교환 방식</li>
+</ul>
+</li>
+<li class="">축적 교환 방식 : 교환기의 임시기억장치를 이용<!-- -->
+<ul>
+<li class="">메시지 교환 방식</li>
+<li class="">패킷 교환 방식<!-- -->
+<ul>
+<li class="">가상 회선 교환 방식</li>
+<li class="">데이터그램 교환 방식</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=성능-비교-요소>성능 비교 요소<a href=#성능-비교-요소 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전파 지연 : 신호가 한 노드에서 다음 노드로 도달하는 데 걸리는 시간</li>
+<li class="">전송 시간 : 데이터가 출발지에서 도착지까지 도달하는 데 걸리는 시간</li>
+<li class="">노드 지연 : 한 노드가 데이터를 교환하기 위하여 필요한 시간</li>
+<li class="">데이터 처리율 : 정해진 시간 동안 받아들이고 전송할 수 있는 데이터의 비율</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=회선-구성-방식>회선 구성 방식<a href=#회선-구성-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<p>컴퓨터와 여러 대의 단말기를 연결하는 방식</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=포인트-투-포인트>포인트 투 포인트<a href=#포인트-투-포인트 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">점 대 점 방식</li>
+<li class="">중앙 컴퓨터와 단말기를 일대일 독립적으로 연결하여 언제든지 데이터 전송이 가능하게 한 방식</li>
+<li class="">전송할 데이터의 양과 회선 사용 시간이 많을 때 효율적</li>
+<li class="">전용 회선 또는 교환 회선에 이용</li>
+<li class="">고장 발생 시 유지보수가 쉽다.</li>
+<li class="">통신망을 성형으로 구성할 때 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=멀티-드롭-방식>멀티 드롭 방식<a href=#멀티-드롭-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Multi Drop = 멀티 포인트 = 다중 점 방식</li>
+<li class="">여러 대의 단말기를 한 개의 통신 회선에 연결하는 방식</li>
+<li class="">통신 회선은 전용 회선을 사용한다.</li>
+<li class="">제어용 컴퓨터가 주국이 되고 다말기가 종국이 된다.</li>
+<li class="">단말기는 주소 판단 기능과 데이터 블록을 일시 저장할 수 있는 버퍼 기억장치가 있어야한다.</li>
+<li class="">데이터의 양과 회선 사용 시간이 적을 때 효율적</li>
+<li class="">회선을 공유하기에 효용도가 높고 가격이 저렴</li>
+<li class="">통신망을 버스형으로 구성할 때 사용</li>
+<li class="">데이터 전송은 폴링과 셀렉션에 의해 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=회선-다중-방식>회선 다중 방식<a href=#회선-다중-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Line Multiplexing = 다중화 방식</li>
+<li class="">여러 대의 단말기들을 다중화 장치를 이용해 중앙 컴퓨터와 연결하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=회선-교환-방식>회선 교환 방식<a href=#회선-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Circuit Switching</li>
+<li class="">통신을 원하는 두 지점을 교환기를 이용하여 물리적으로 접속시키는 방식</li>
+<li class="">음성 전화망</li>
+<li class="">공간 분할 교환 방식과 시분할 교환 방식으로 나뉜다.</li>
+<li class="">데이터 전송 전에 물리적 통신 회선을 통한 연결이 필요하다.</li>
+<li class="">접속이 되고나면 전용 회선에 의한 통신처럼 데이터가 전달된다.</li>
+<li class=""><strong>접속에는 긴 시간이 걸리나 접속되면 실시간 전송이 가능하다.</strong></li>
+<li class="">회선이 접속되어도 수신 측이 준비가 되지 않으면 데이터 전송이 불가능</li>
+<li class="">접속된 두 지점이 회선을 독점하기 때문에 다른 단말기는 전달 지연을 갖는다.</li>
+<li class="">데이터가 전송되지 않아도 접속이 유지되기 때문에 통신 회선이 낭비된다.</li>
+<li class="">일정한 데이터 전송률을 제공하므로 동일한 전송 속도가 유지</li>
+<li class=""><strong>오류 제어나 흐름 제어는 사용자에 의해 수행</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=공간-분할-교환-방식>공간 분할 교환 방식<a href=#공간-분할-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">SDS = Space Division Switching</li>
+<li class="">기계식 접점과 전자 교환기의 전자식 접점 등을 이용해 교환을 수행하는 방식</li>
+<li class="">음성 전화용 교환기</li>
+<li class="">기존의 음성 전화망을 그대로 이용할 수 있어 간단한 저속 데이터 전송에 매우 효과적</li>
+<li class="">데이터 통신을 위해서는 융통성이 적고 오류율이 높다.</li>
+<li class="">연결 접속시간이 길고 고속 전송이 어렵다.</li>
+<li class="">속도나 코드의 변환이 어렵다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1단-공간-분할-교환-방식>1단 공간 분할 교환 방식<a href=#1단-공간-분할-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">장치 대 장치를 Cross Bar Matrix 형태의 공간으로 분할하는 방식</li>
+<li class="">입력이 m 출력이 n개 회선일 때 교차점의 개수는 m * n 개</li>
+<li class="">비효율적</li>
+<li class="">하나의 교차점이 고장나면 두 장치가 연결될 수 없다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=다단-공간-분할-교환-방식>다단 공간 분할 교환 방식<a href=#다단-공간-분할-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">교차점의 수를 줄일 수 있고 Cross Bar의 이용도가 높아진다.</li>
+<li class="">장치 대 장치를 연결하는 경로가 하나 이상이므로 신뢰도가 향상</li>
+<li class="">제어 체계가 복잡</li>
+<li class="">연결할 중간 회선이 없으면 연결되지 않을 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=시분할-교환-방식>시분할 교환 방식<a href=#시분할-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">TDS = Time Division Switching</li>
+<li class="">전자 부품이 갖는 고속성과 디지털 교환 기술을 이용해 다수의 디지털 신호를 시분할적으로 동작시켜 다중화하는 방식</li>
+<li class="">데이터 전용 회선 교환 방식에 사용</li>
+<li class="">TDM 버스 교환방식, 타임 슬롯 교환 방식, 시간 다중화 교환 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=제어-신호>제어 신호<a href=#제어-신호 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">감시 제어 신호 : 서비스 요청, 응답, 경보 및 휴지 상태 복귀 신호 기능</li>
+<li class="">주소 제어 신호 : 상대방 식별, 경로 배정</li>
+<li class="">호 정보 제어 신호 : 호 상태에 대한 정보를 송신자에게 제공</li>
+<li class="">망 관리 제어 신호 : 통신망의 운영, 유지, 고장 수리</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=축적-교환-방식>축적 교환 방식<a href=#축적-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">송신 측에서 전송한 데이터를 송신 측 교환기에 저장시켰다가 이를 다시 적절한 통신 경로를 선택하여 수신 측 터미널에 전송하는 방식</li>
+<li class="">메세지 교환 방식과 패킷 교환 방식</li>
+<li class="">하나의 통신 회선을 여러 메세지가 공유 가능</li>
+<li class="">메세지를 저장 시켰다가 전송하므로 기억장치 필요</li>
+<li class="">전송 속도와 코드가 서로 다른 장치 간에도 통신이 가능하다.</li>
+<li class="">초기 설계 비용 및 통신 비용이 저렴</li>
+<li class="">부가적인 내용을 추가해 전송 가능</li>
+<li class="">전송 속도나 코드의 변환 및 전송 오류 정정이 가능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=메세지-교환-방식>메세지 교환 방식<a href=#메세지-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Message Switching</li>
+<li class="">교환기가 일단 송신 측의 메세지를 받아서 저장한 후 전송 순서가 되면 수신 측으로 전송</li>
+<li class="">각 메세지마다 전송 경로를 결정하고 수신 측 주소를 붙여서 전송</li>
+<li class="">전송 메세지는 교환기의 기억장치에 일정 기간동안 저장되어 검색이 가능</li>
+<li class=""><strong>전송 지연 시간이 매우 길다.</strong></li>
+<li class=""><strong>응답 시간이 느려 대화형 데이터 전송에 부적절</strong></li>
+<li class="">전송량이 폭주해도 저장 기능을 사용해 교환기의 혼란을 방지할 수 있다.</li>
+<li class="">송신 측과 수신 측이 동시에 운영 상태에 있지 않아도 된다.</li>
+<li class="">같은 메세지를 여러 곳에 전송 가능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=패킷-교환-방식>패킷 교환 방식<a href=#패킷-교환-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Packet Switching</li>
+<li class="">패킷은 장애 발생 시의 재전송을 위해 패킷 교환기에 일시 저장되었다가 곧 전송되며 전송이 끝난 후 폐기된다.</li>
+<li class="">패킷 교환망은 OSI7 모델의 네트워크 계층에 해당</li>
+<li class="">패킷형 터미널을 위한 DTE와 DCE 사이의 접속 규정은 X.25</li>
+<li class="">패킷망 상호 간의 접속을 위한 프로토콜은 X.75</li>
+<li class="">하나의 통신 회선을 여러 사용자가 공유할 수 있어 회선 이용률이 높다.</li>
+<li class="">수신 측에서 분할된 패킷을 재조립해야한다.</li>
+<li class="">응답 시간이 빨라 대화형 응용이 가능하다.</li>
+<li class="">통신량의 제어를 통한 망의 안전성을 높일 수 있다.</li>
+<li class="">음성보다 데이터 전송에 적합</li>
+<li class="">장애 발생시 다른 정상적인 경로를 선택해 우회할 수 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=가상-회선-방식>가상 회선 방식<a href=#가상-회선-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">단말기 상호간 논리적인 가상 통신 회선을 미리 설정하여 송신지와 수신지 사이의 연결을 확립한 후 에 설정된 경로를 따라 패킷들을 순서적으로 운반하는 방식</li>
+<li class="">정보 전송 전에 제어 패킷에 의해 경로가 설정된다.</li>
+<li class="">데이터 전송의 안정성과 신뢰성이 보장</li>
+<li class="">패킷의 송수신 순서가 같다.</li>
+<li class="">호 설정 => 데이터 전송 => 호 해제</li>
+<li class="">모든 패킷이 전송되면 Clear Request Packet을 전송한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터그램-방식>데이터그램 방식<a href=#데이터그램-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">연결 경로를 설정하지 않고 인접한 노드들의 트래픽 상황을 감안해 각각의 패킷을 순서에 상관없이 독립적으로 운반하는 방식</li>
+<li class="">패킷마다 전송 경로가 달라 패킷은 목적지의 완전한 주소를 가진다.</li>
+<li class="">적절한 경로로 패킷을 전송하기 때문에 융통성이 좋다.</li>
+<li class="">순서에 상관 없이 여러 경로를 통해 도착한 패킷은 수신 측에서 순서를 재정리</li>
+<li class="">소수의 패킷으로 구성된 짧은 데이터 전송에 적합</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=패킷-교환망>패킷 교환망<a href=#패킷-교환망 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">PSDN = Packet Switched Data Network</li>
+<li class="">패킷 다중화 : 물리적으로는 한 개의 통신 회선을 사용하면서 패킷마다 논리 채널 번호를 붙여 동시에 다수 상대 터미널과 통신을 수행하도록 하는 기능</li>
+<li class="">경로 제어 : Routing</li>
+<li class="">논리 채널 : 송수신 단말기 사이에서 논리 채널(가상 회선)을 설정하는 기능</li>
+<li class="">순서 제어</li>
+<li class="">트래픽 제어 : 흐름 제어, 교착 상태 방지</li>
+<li class="">오류 제어</li>
+<li class="">구성 : 비패킷 단말기, 패킷형 단말기, 패킷 교환기, 패킷 다중화 장치 (NPT, PT, PSE, PMX)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=경로-제어>경로 제어<a href=#경로-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Routing</li>
+<li class="">송수신 측 간의 전송 경로 중에서 최적 패킷 교환 경로를 설정하는 기능</li>
+<li class="">경로 제어표를 참조해 이뤄진다.</li>
+<li class="">라우터에 의해 수행된다.</li>
+<li class="">경로 설정 요소 : 성능 기준, 경로 결정 시간과 장소, 정보 발생지, 경로 정보의 갱신 시간</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=경로-설정-프로토콜>경로 설정 프로토콜<a href=#경로-설정-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>효율적인 경로 제어를 위해 네트워크 정보를 생성, 교환, 제어하는 프로토콜</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=igp>IGP<a href=#igp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Interior Gateway Protocol = 내부 게이트웨이 프로토콜</li>
+<li class="">하나의 자율 시스템 내의 라우팅에 사용되는 프로토콜</li>
+<li class="">RIP(Routing Information Protocol)<!-- -->
+<ul>
+<li class="">현재 가장 많이 사용되는 라우팅 프로토콜</li>
+<li class="">소규모 동종 네트워크(자율 시스템, AS) ㅐ넹서 효율적인 방법</li>
+<li class="">최대 홉 수를 15로 제한하기에 대규모 네트워크에서는 RIP를 사용할 수 없다.</li>
+<li class="">라우팅 정보를 30초마다 네트워크 내의 모든 라우터에 알린다.</li>
+<li class="">180초 내에 새로운 라우팅 정보가 수신되지 않으면 해당 경로를 상태 이상으로 간주</li>
+</ul>
+</li>
+<li class="">OSPF(Open Shortest Path First protocol)<!-- -->
+<ul>
+<li class="">대규모 네트워크에서 많이 사용되는 라우팅 프로토콜</li>
+<li class="">라우팅 정보에 변화가 생길시 변화된 정보만 네트워크의 모든 라우터에게 알린다.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=egp>EGP<a href=#egp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Exterior Gateway Protocol = 외부 게이트웨이 프로토콜</li>
+<li class="">자율 시스템(AS) 간의 라우팅</li>
+<li class="">게이트웨이 간의 라우팅에 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=bgp>BGP<a href=#bgp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Border Gateway Protocol</li>
+<li class="">자율 시스템 간의 라우팅 프로토콜</li>
+<li class="">EGP의 단점을 보완하기 위해 만들어짐</li>
+<li class="">초기 BGP 라우터들이 연결될 때 전체 라우팅 테이블을 교환하고 이후에는 변화된 정보만을 교환</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=경로-설정-방식>경로 설정 방식<a href=#경로-설정-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=고정-경로-제어>고정 경로 제어<a href=#고정-경로-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Static Routing = 착국 부호 방식</li>
+<li class="">네트워크 내의 모든 쌍에 대해 경로를 미리 정해 놓은 방식</li>
+<li class="">통신망 설계자가 최적 경로를 미리 결정</li>
+<li class="">네트워크 상태 변화와 관계없이 경로를 설정하는 비적응 경로 배정에 해당</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=적응-경로-제어>적응 경로 제어<a href=#적응-경로-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Adaptive Routing</li>
+<li class="">통신망 내에서 변하는 통화량에 따른 교환기 및 통신망 상태 등에 의해 전송 경로를 동적으로 결정하는 방식</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=범람-경로-제어>범람 경로 제어<a href=#범람-경로-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Flooding</li>
+<li class="">네트워크 정보를 요구하지 않고, 송신처와 수신처 사이에 존재하는 모든 경로로 패킷을 전송하는 방식</li>
+<li class=""><strong>각 교환기에 도착하는 패킷을 다른 모든 교환기로 복사하여 전송하는 방식</strong></li>
+<li class=""><strong>경로 제어표가 필요 없다.</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=임의-경로-제어>임의 경로 제어<a href=#임의-경로-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Random Routing</li>
+<li class="">인접하는 교환기 중 하나를 임의로 선택하여 전송하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=트래픽-제어>트래픽 제어<a href=#트래픽-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Traffic Control</li>
+<li class="">패킷 흐름 또는 그 양을 조절하는 기능</li>
+<li class="">흐름 제어, 폭주 제어, 교착상태 방지 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=흐름-제어>흐름 제어<a href=#흐름-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Flow Control</li>
+<li class="">패킷의 양이나 속도를 규제하는 기능</li>
+<li class="">송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로를 방지하기 위한 기능</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=stop-and-wait>Stop and Wait<a href=#stop-and-wait class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">수신 측의 확인 신호를 받은 후에 다음 패킷을 전송</li>
+<li class="">한 번의 하나의 패킷만을 전송</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=슬라이딩-윈도우>슬라이딩 윈도우<a href=#슬라이딩-윈도우 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Sliding Window</li>
+<li class="">수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식</li>
+<li class="">수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식</li>
+<li class="">한 번의 여러 개의 패킷을 전송할 수 있어 효율이 좋다.</li>
+<li class="">송신 측은 수신 측으로부터 ACK 없이도 보낼 수 있는 패킷의 최대치를 미리 약속 받는다.</li>
+<li class="">이 패킷의 최대치가 윈도우 크기이다.</li>
+<li class="">윈도우 크기는 이전 응답이 ACK일 경우 늘어나고 NAK일 경우 감소한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=폭주-제어>폭주 제어<a href=#폭주-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Congesting Control = 혼잡 제어</li>
+<li class="">네트워크 내의 패킷 수를 조절하여 네트워크의 오버플로를 방지하는 기능</li>
+<li class="">네트워크 내의 모든 단말의 패킷 수를 제어</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태-방지>교착상태 방지<a href=#교착상태-방지 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">패킷이 같은 목적지를 갖지 않도록 할당</li>
+<li class="">교착상태 발생 시 교착상태에 있는 한 단말장치를 선택해 패킷 버퍼를 폐기</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=망-구성-형태>망 구성 형태<a href=#망-구성-형태 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=성형>성형<a href=#성형 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Point to Point 방식</li>
+<li class="">각 단말은 중앙 컴퓨터를 통해 데이터를 교환</li>
+<li class="">추가와 제거가 쉽다.</li>
+<li class="">교환 노드의 수가 가장 적다.</li>
+<li class="">중앙이 고장나면 통신망이 마비</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=링형>링형<a href=#링형 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">루프형</li>
+<li class="">서로 이웃하는 단말끼리 Point to Point</li>
+<li class="">분산 및 집중 제어 모두 가능</li>
+<li class="">단말의 추가/제거 및 기밀 보호가 어렵다.</li>
+<li class="">각 단말에서 전송 지연이 발생할 수 있다.</li>
+<li class="">중계기가 많아짐</li>
+<li class="">데이터는 단방향 또는 양방향으로 전송된다.</li>
+<li class="">단방향의 경우 단말 하나라도 고장시 통신 마비</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=버스형>버스형<a href=#버스형 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">한 개의 통신 회선에 여러 대에 단말이 연결된 형태</li>
+<li class="">물리적 구조가 간단</li>
+<li class="">단말 추가와 제거가 쉽다.</li>
+<li class="">단말이 고장나도 통신망 전체에 영향이 되지 않는다.</li>
+<li class="">신뢰성이 높다.</li>
+<li class="">기밀 보장이 어렵다.</li>
+<li class="">통신 회선 길이에 제한이 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=계층형>계층형<a href=#계층형 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Tree = 분산형</li>
+<li class="">중앙 컴퓨터와 일정 지역 단말까지는 하나의 통신 회선으로 연결하고 중간 단말장치로부터 다시 연결시키는 형태</li>
+<li class="">분산 처리 시스템을 구성하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=망형>망형<a href=#망형 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Mesh</li>
+<li class="">모든 지점의 컴퓨터와 단말을 서로 연결한 형태</li>
+<li class="">많은 단말로 많은 양의 통신을 필요로 하는 경우에 유리</li>
+<li class="">공중 데이터 통신망에서 사용</li>
+<li class="">통신 회선의 총 경로가 가장 길다.</li>
+<li class="">회선 수는 n(n-1)/2, 포트 수는 n-1</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=lan>LAN<a href=#lan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Local Area Network</li>
+<li class="">제한된 지역내의 통신</li>
+<li class="">광대역 전송 매체의 사용으로 고속 통신 가능</li>
+<li class="">공유 매체를 사용하므로 경로 선택 없이 매체에 연결된 모든 장치로 데이터를 전송</li>
+<li class="">오류 발생률이 낮다.</li>
+<li class="">네트워크 확장이나 재배치가 쉽다.</li>
+<li class="">꼬임선, 동축 케이블, 광섬유 케이블 등을 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=표준안>표준안<a href=#표준안 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">IEEE 802에 의해 추진</li>
+<li class="">OSI7의 물리 계층과 데이터 링크 계층을 대상으로 한다.</li>
+<li class="">데이터 링크 계층<!-- -->
+<ul>
+<li class=""><strong>매체 접근 제어</strong> : MAC 물리 네트워크에 대한 접근 제어 담당</li>
+<li class=""><strong>논리 링크 제어</strong> : LLC 매체 접근 제어에 의해 확보된 채널을 사용하여 메세지를 전송할 때 필요한 연결 관리 절차와 ACK, NAK, 순서화, 오류 제어, 흐름 제어 담당</li>
+</ul>
+</li>
+<li class=""><strong>802.3</strong> : CSMA/CD 방식</li>
+<li class=""><strong>802.4</strong> : 토큰 버스 방식</li>
+<li class=""><strong>802.5</strong> : 토큰 링 방식</li>
+<li class=""><strong>802.11</strong> : 무선 LAN</li>
+</ul>
+<blockquote>
+<p>CO-LAN</p>
+<ul>
+<li class="">Central Office LAN</li>
+<li class="">여건이 안 되는 기관 간에 인근 전화국의 데이터 교환망과 기존 통신망을 연동시켜 구성하는 통신망</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=매체-접근-제어>매체 접근 제어<a href=#매체-접근-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">MAC = Media Access Control</li>
+<li class="">LAN에서 하나의 통신 회선을 여러 단말이 원활하게 공유할 수 있도록 해주는 통신회선에 대한 접근 방식</li>
+<li class="">CSMA, CSMA/CD, 토큰 버스, 토큰 링</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=csmacd>CSMA/CD<a href=#csmacd class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Carrier Sence Multiple Access / Collision Detection</li>
+<li class="">데이터 프레임 간의 충돌이 발생하는 것을 인전하고 이 문제를 해결하기 위해 CSMA 방식에 충돌 검출 기능과 충돌 발생시 재송신하는 기능을 추가했다.</li>
+<li class="">통신 회선이 사용 중이면 일정 시간 동안 대기하고, 통신 회선상에 데이터가 없을 경우 송신한다.</li>
+<li class="">송신 중에도 전송로의 상태를 계속 감시한다.</li>
+<li class="">송신 도중 충돌이 발생하면 송신을 중지하고 모든 노드의 충돌을 알린 후 일정 시간 후에 다음 데이터를 재송신한다.</li>
+<li class="">버스형 LAN에 가장 많이 사용된다.</li>
+<li class="">전송량이 적을 때 매우 효율적이고 신뢰성이 높다.</li>
+<li class="">알고리즘이 간단</li>
+<li class="">노드 장애가 시스템 전체에 영향을 주지 않고 장애 처리가 간단</li>
+<li class="">충돌과 채널 경쟁을 위한 기법에는 non persistent, 1- persistent, p-persistent가 있고 효율적인 1-persistent 기법을 주로 사용한다.</li>
+<li class="">일정 길이 이하의 데이터를 송신할 경우 충돌 검출이 불가능하다.</li>
+<li class="">전송량이 많아지면 충돌이 많아져 채널 이용률이 떨어지고 전송 지연 시간이 급격히 증가</li>
+<li class="">충돌 발생시 다른 노드에서 데이터를 전송할 수 없다.</li>
+<li class="">충돌 발생시 지연 시간을 예측하기 어렵다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=이더넷>이더넷<a href=#이더넷 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Ethernet</li>
+<li class="">CSMA/CD 방식을 사용하는 LAN</li>
+<li class="">가장 많이 보급된 네트워크</li>
+<li class="">10 BASE T : 전송 속도가 10Mbps, BASEBand 방식, Twisted Pair Wire 케이블을 사용</li>
+<li class="">10 BASE 2 : 얇은 동축 케이블을 사용, 한 세그먼트의 최장기리가 약 200m</li>
+<li class="">10 BASE 5 : 굵은 동축 케이블 사용, 한 세그먼트의 최장 기리가 500m</li>
+<li class="">10 BASE F : 광섬유 케이블을 사용하는 이더넷</li>
+<li class="">고속 이더넷 : 100 BASE T, 100Mbps, CSMA/CD 사용</li>
+<li class="">기가비트 이더넷 : 1Gbps, 기존의 이더넷과 완벽 호환성, CSMA/CD 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=토큰-버스-방식>토큰 버스 방식<a href=#토큰-버스-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Token Bus</li>
+<li class="">버스형 LAN에서 사용하는 방식</li>
+<li class="">토큰이 논리적으로 형성된 링을 따라 각 노드를 차례로 옮겨 다니는 방식</li>
+<li class="">토큰은 논리적인 링을 따라 순서대로 전달되고 토큰을 점유한 노드는 정보를 전송할 수 있고 전송이 끝나면 다음 노드로 토큰을 보낸다.</li>
+<li class="">각 노드가 공평한 송신 권한을 가진다.</li>
+<li class="">전송 시간을 가변적으로 조절할 수 있다.</li>
+<li class="">전송량이 많아도 안정적이고 액세스 시간이 일정하다.</li>
+<li class="">CSMA/CD보다 장치가 복잡하고 평균 대기 시간이 길다.</li>
+<li class="">노드나 통신 회선에 장애 발생시 전체적인 장애가 될 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=토큰-링-방식>토큰 링 방식<a href=#토큰-링-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Token Ring</li>
+<li class="">링형 LAN에서 사용하는 방식</li>
+<li class="">물리적으로 연결된 링을 따라 순환하는 토큰을 이용하여 송신 권리를 제어</li>
+<li class="">프리 토큰 : 회선을 사용할 수 있는 상태</li>
+<li class="">비지 토큰 : 회선이 데이터 전송에 사용중인 상태</li>
+<li class="">각 노드가 공평한 송신 권한을 가진다.</li>
+<li class="">노드의 수가 많아질 수록 토큰의 순회 시간이 길어지므로 네트워크 속도가 저하 될 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=van>VAN<a href=#van class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">부가 가치 통신망 = Value Added Network</li>
+<li class="">공중 통신 사업자로부터 통신 회선을 임대해 사설망을 구축하고 이를 통해 정보의 축적, 가공, 변환 처리 등 부가 가치를 첨가한 후 불특정 다수를 대상으로 서비스하는 통신망</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조>구조<a href=#구조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p>기본 통신 계층(전송 계층), 네트워크 계층(교환 계층), 통신 처리 계층, 정보 처리 계층</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-처리-기능>통신 처리 기능<a href=#통신-처리-기능 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">축적 교환 기능과 변환 기능을 이용해 서로 다른 기종 간, 다른 시간 대에 통신이 가능하도록 제공하는 서비스</li>
+<li class=""><strong>프로토콜 변환</strong> : 서로 다른 네트워크 간 또는 서로 다른 기종 간 통신이 가능하도록 통신 절차를 변환하는 기능</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보-처리-기능>정보 처리 기능<a href=#정보-처리-기능 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">온라인 실시간 처리, 원격 일괄 처리, 시분할 시스템을 이용해 응용 소프트웨어를 처리하는 기능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=isdn>ISDN<a href=#isdn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">종합 정보 통신망 = Integrated Service Digital Network</li>
+<li class="">다양한 통신 서비스를 하나의 디지털 통신망에서 제공할 수 있도록 통합한 것</li>
+<li class="">통신 방식 및 전송로가 모두 디지털 방식</li>
+<li class="">단일 통신망으로 음성, 문자, 영상 등의 다양한 서비스를 제공</li>
+<li class="">고속 통신이 가능</li>
+<li class="">확장성과 재배치성이 좋다.</li>
+<li class="">동시에 복수 통신이 가능</li>
+<li class="">통신망의 중복 투자를 피할 수 있어 경제적</li>
+<li class="">64Kbps 1회선 교환 서비스가 기본</li>
+<li class="">회선 교환 방식과 패킷 교환 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-서비스>통신 서비스<a href=#통신-서비스 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">베어러 서비스 : ISDN 사용자와 망 간의 인터페이스에서 단말이 전송하는 정보를 변형없이 그대로 전달만 하는 서비스</li>
+<li class="">텔레 서비스 : 베어러 서비스를 기본으로 통신망, 단말장치 등에서 이용하는 고도의 기능을 부가하여 제공하는 서비스</li>
+<li class="">부가 서비스 : 베어러 서비스나 텔레 서비스에 기능을 부가하여 서비스 이용률을 높이는 서비스</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조-1>구조<a href=#구조-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=b>B<a href=#b class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Bearer Channel</li>
+<li class="">64Kbps</li>
+<li class="">디지털 정보용 채널</li>
+<li class="">정보를 전송하기 위한 기본적인 사용자 채널</li>
+<li class="">PCM화된 디지털 음성이나 회선 교환에 의한 제어 신호, 패킷 교화넹 의한 정보 전송에 이용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=d>D<a href=#d class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Data Channel</li>
+<li class="">16Kbps, 64Kbps</li>
+<li class="">디지털 신호용 채널</li>
+<li class="">서비스 제어를 위한 신호 메세지를 전달하는 역할</li>
+<li class="">저속 패킷 교환에 의한 정보 전송을 위해 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=h>H<a href=#h class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Hybrid Channel</li>
+<li class="">384Kbps, 1536Kbps, 1920Kbps</li>
+<li class="">고속의 디지털 정보용 채널</li>
+<li class="">B채널을 통해 제공하는 모든 방식의 정보를 고속으로전송</li>
+<li class="">고속 팩스나 화상회의, 고속 대용량 정보 전송</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=참조점>참조점<a href=#참조점 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Referance Point = 기준점 = 접속점 = 분계점</li>
+<li class="">ISDN을 구성하는 각 요소간 인터페이스를 구분하는 기능</li>
+<li class="">정보 통신망을 연결할 때 시설, 운영, 유지보수의 책임 한계를 구분하기 위한 접속점</li>
+<li class="">U : User 내부망과 외부망 구분</li>
+<li class="">T : Terminal 사용자 영역과 네트워크 영역을 구분</li>
+<li class="">S : System 사용자 장비와 네트워크 장비를 구분</li>
+<li class="">R : Rate 비 ISDN 단말기와 ISDN 장비를 구분</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=b-isdn>B-ISDN<a href=#b-isdn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">광대역 종합 정보 통신망 = BroadBand ISDN</li>
+<li class="">광대역 전송 방식과 광대역 교환 방식을 통해 다양한 형태의 통신 서비스를 제공하는 광대역 ISDN</li>
+<li class="">1.5 ~ 2Mbps 이상의 고속 전송과 고속 교환 기술</li>
+<li class="">전송 방식은 ATM을 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=b-isdn-참조-계층>B-ISDN 참조 계층<a href=#b-isdn-참조-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">물리 계층 : Physical Layer ATM 셀 전송</li>
+<li class=""><strong>ATM 계층</strong> : Asynchronous Transfer Mode Layer 가입자 정보 유형에 따라 셀 헤더 생성, 가입자 채널 다중화</li>
+<li class="">ATM 적응 계층 : Asynchronous Transfer Mode Adaption Layer 패킷 메세지 생성</li>
+</ul>
+<blockquote>
+<p>ATM</p>
+<ul>
+<li class="">Asynchronous Transfer Mode</li>
+<li class="">회선 교환과 패킷 교환의 장점을 결합한 교환 및 다중화 기술</li>
+<li class="">고정 길이의 셀 다누이로 전송하므로 전송 지연 시간을 예측 가능</li>
+<li class="">가변 길이 패킷보다 처리가 간단하고 신뢰성이 더 높다.</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷>인터넷<a href=#인터넷 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">TCP/IP 프로토콜을 기반으로 컴퓨터와 네트워크가 연결된 광범위한 컴퓨터 통신망</li>
+<li class="">ARPANET에서 시작</li>
+<li class="">유닉스 운영체제를 기반</li>
+<li class="">모든 컴퓨터는 고유한 IP를 갖는다.</li>
+<li class="">컴퓨터 또는 네트워크를 서로 연결하기 위해서 브리지, 라우터, 겡이트웨이가 사용됨</li>
+<li class="">백본 : Backbone 인터넷의 주가 되는 기간망</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-서비스>인터넷 서비스<a href=#인터넷-서비스 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">TCP/IP 응용계층에서 제공</li>
+<li class="">WWW : HTTP 프로토콜을 사용하는 하이퍼텍스트 기반</li>
+<li class="">Email : SMTP, POP3, MIME</li>
+<li class="">텔넷 : 원격 접속, 가상 터미널 기능</li>
+<li class="">HTTP : Hyper Text Transfer Protocol 하이퍼 텍스트 문서를 전송하기위해 사용되는 프로토콜</li>
+<li class="">FTP</li>
+<li class="">ASDL<!-- -->
+<ul>
+<li class="">ASymmetri Digital Subscriber Line = 비대칭 디지털 가입자 회선</li>
+<li class="">기존 전화선을 이용해 주파수가 서로 다른 음성 데이터와 디지털 데이터를 함께 보내는 방식</li>
+<li class="">한 전화선으로 전화와 데이터 통신을 모두 처리 가능</li>
+<li class="">전화국과 가정이 1대 1로 연결된 것</li>
+<li class="">고속 데이터 통신이 가능</li>
+<li class="">다운로드 속도가 업로드 속도보다 빠름</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-주소-체계>인터넷 주소 체계<a href=#인터넷-주소-체계 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip>IP<a href=#ip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Internet Protocol Address</li>
+<li class="">숫자로 8bit 씩 4부분, <strong>32bit로 구성</strong></li>
+<li class="">네트워크 부분의 길이에 따라 A~E클래스의 5단계로 구성</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=a-class>A Class<a href=#a-class class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">국가나 대형 통신망에 사용</li>
+<li class="">2^24 개의 호스트 사용 가능</li>
+<li class="">0과 127은 예약된 주소로 1~126으로 시작</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=b-class>B Class<a href=#b-class class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">중대형 통신망에 사용</li>
+<li class="">2^16 = 65536개의 호스트 사용 가능</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=c-class>C Class<a href=#c-class class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">소규모 통신망에 사용</li>
+<li class="">2^8 = 256 개의 호스트 사용 가능</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=d-class>D Class<a href=#d-class class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>멀티 캐스트 용으로 사용</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=e-class>E Class<a href=#e-class class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>실험적 주소로 공용되지 않음</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=서브네팅>서브네팅<a href=#서브네팅 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Subnetting</li>
+<li class="">할당된 네트워크 주소를 다시 여러 개의 작은 네트워크로 나눠 사용하는 것</li>
+<li class="">4Byte의 IP 주소 중 네트워크 주소와 호스트 주소를 구분하기 위한 비트를 Subnet Mask라고 한다.</li>
+<li class="">이를 변경해 네트워크 주소를 여러 개로 분할하여 사용</li>
+<li class="">서브넷 마스크 기본값<!-- -->
+<ul>
+<li class="">A Class = 255.0.0.0</li>
+<li class="">B Class = 255.255.0.0</li>
+<li class="">C Class = 255.255.255.0</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv6>IPv6<a href=#ipv6 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">현재 사용하고 있는 IP 주소 체계인 IPv4의 주소 부족문제를 해결하기 위해 개발</li>
+<li class=""><strong>128bit</strong></li>
+<li class="">Ipv4에 비해 자료 전송 속도가 빠르다.</li>
+<li class="">인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제 해결</li>
+<li class="">실시간 흐름 제어로 향상된 멀티미디어 기능 지원</li>
+<li class="">Traffic Class, Flow Label을 이용해 등급, 서비습려 패킷을 구분할 수 있어 품질 보장이 용이</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv4에서-ipv6>IPv4에서 IPv6<a href=#ipv4에서-ipv6 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">듀얼 스택 : 호스트에서 IPv4와 v6을 모두 처리할 수 있게 두개의 스택을 구성하는 것</li>
+<li class="">터널링 : IPv6에서 인접한 IPv4망을 거쳐 IPv6망으로 통신할 때 IPv4 망에 터널을 만들어 IPv6 패킷이 통과할 수 있도록 하는 것</li>
+<li class="">헤더 변환 : IP 계층에서 IPv6 패킷 헤더를 IPv4 헤더나 그 반대로 변환하는 방식</li>
+<li class="">전송 계층 릴레이 방식 : 전송 계층에서 IPv6 헤더를 IPv4 헤더나 그 반대로 변환하는 방식</li>
+<li class="">응용 계층 게이트웨이 방식 : 응용 계층에서 IPv6 패킷 헤더를 IPv4 패킷 헤더나 그 반대로 변화하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=도메인-네임>도메인 네임<a href=#도메인-네임 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Domain Name</li>
+<li class="">숫자로 된 IP주소를 사람이 이해하기 쉬운 문자 형태로 표현한 것</li>
+<li class="">문자로 된 도메인 네임을 컴퓨터가 이해할 수 있는 IP 주소로 변환하는 역할을 하는 시스템을 DNS</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-장비>네트워크 장비<a href=#네트워크-장비 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=허브>허브<a href=#허브 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">사무실이나 가까운 거리의 컴퓨터를 연결하는 장치</li>
+<li class="">신호 증폭 기능을 하는 리피터의 역할도 포함</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=리피터>리피터<a href=#리피터 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전송되는 신호가 전송 선로의 특성 및 외부 충격의 요인으로 원래의 형태와 다르게 왜곡되거나 약해질 경우 원래의 신호 형태로 재생하여 다시 전송하는 역할</li>
+<li class="">OSI7의 물리계층</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=브리지>브리지<a href=#브리지 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Bridge</li>
+<li class="">LAN과 LAN을 연결하거나 LAN안에서의 세그먼트(컴퓨터 그룹)를 연결하는 기능 수행</li>
+<li class="">데이터 링크 계층 중 MAC 계층에서 사용 = MAC 브리지</li>
+<li class="">트래픽 병목 현상을 줄인다.</li>
+<li class="">네트워크를 분산적으로 구성할 수 있어 보완성을 높인다.</li>
+<li class="">브리지를 이용한 서브넷 구성시 전송 가능한 회선 수는 n(n-1)/2</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=라우터>라우터<a href=#라우터 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">브리지와 같이 LAN과 LAN의 연결 기능에 데이터 전송의 쵲거 경로를 선택할 수 있는 기능이 추가된 것</li>
+<li class="">서로 다른 LAN이나 LAN과 WAN의 연결도 수행</li>
+<li class="">OSI7의 네트워크 계층</li>
+<li class="">접속 가능한 경로에 대한 정보를 라우팅 테이블에 저장하여 보관</li>
+<li class="">네트워크 계층 까지의 프로토콜 구조가 다른 네트워크 간의 연결으 위해 프로토콜 변환 기능을 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=게이트웨이>게이트웨이<a href=#게이트웨이 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전 계층의 프로토콜 구조가 다른 네트워크의 연결을 수행</li>
+<li class="">세션 계층, 표현 계층, 응용 계층 간을 연결하여 데이터형식 변환, 주소 변환, 프로토콜 변환 등을 수행</li>
+<li class="">LAN에서 다른 네트워크에 데이터를 보내거나 다른 네트워크로부터 데이터를 받아 들이는 출입구 역할</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신-프로토콜>통신 프로토콜<a href=#통신-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Communication Protocol</li>
+<li class="">서로 다른 기기 간의 데이터 교환을 원활하게 수행하도록 표준화 시켜놓은 통신 규약</li>
+<li class="">통신을 제어하기 위한 표준 규칙과 절차의 집합</li>
+<li class="">하드웨어와 소프트웨어, 문서를 모두 규정한다.</li>
+<li class="">구성 요소 : <strong>구문(Syntax), 의미(Semantics), 시간(Timing)</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기능-1>기능<a href=#기능-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=단편화>단편화<a href=#단편화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Fragmentation</li>
+<li class="">송신 측에서 전송할 데이터를 전송에 알맞은 일정 크기의 작은 블록으로 자르는 작업</li>
+<li class="">단편화를 통해 세분화된 데이터 블록을 프로토콜 데이터 단위(PDU)라 한다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=재결합>재결합<a href=#재결합 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Reassembly</li>
+<li class="">수신 측에서 단편화된 블록을 원래의 데이터로 모으는 것</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=캡슐화>캡슐화<a href=#캡슐화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Encapsulation = 요약화</li>
+<li class="">단편화된 데이터에 송수신지 주소, 오류 검출코드, 프로토콜 기능을 구현하기 위한 프로토콜 제어 정보 등의 정보를 부가하는 것</li>
+<li class="">데이터 링크 제어 프로토콜의 HDLC 프레임이 있다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=흐름-제어-1>흐름 제어<a href=#흐름-제어-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Flow Control</li>
+<li class="">수신 측 처리능력에 따라 송신 측에서 송신하는 데이터의 전송량이나 전송 속도를 조절하는 기능</li>
+<li class="">정지 대기, 슬라이딩 윈도우 방식</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류-제어>오류 제어<a href=#오류-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기화>동기화<a href=#동기화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=순서-제어>순서 제어<a href=#순서-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Sequencing</li>
+<li class="">전송되는 데이터 블록에 전송 순서를 부여하는 기능</li>
+<li class="">연결 위주의 데이터 전송방식에서만 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=주소-지정>주소 지정<a href=#주소-지정 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중화-1>다중화<a href=#다중화-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=경로-제어-1>경로 제어<a href=#경로-제어-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-서비스>전송 서비스<a href=#전송-서비스 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-방식-2>전송 방식<a href=#전송-방식-2 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=문자-전송-방식>문자 전송 방식<a href=#문자-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">전송 제어 문자를 사용해 데이터 프레임의 시작과 끝을 나타내느 방식</li>
+<li class="">BSC</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=바이트-전송-방식>바이트 전송 방식<a href=#바이트-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">데이터 프레임 헤더에 전송 데이터 프레임의 문자 수, 메세지 수신 상태 등의 제어 정보를 삽입하여 전송하는 방식</li>
+<li class="">DDCM</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=비트-방식>비트 방식<a href=#비트-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">데이터 프레임의 시작과 끝을 나타내는 고유한 비트 패턴을 삽입해 전송하는 방식</li>
+<li class="">HDLC, SDLC, LAPB</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=osi-7-layer>OSI 7 Layer<a href=#osi-7-layer class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Open System Interconnection</li>
+<li class="">다른 시스템 간의 원활한 통신을 위해 ISO에서 제안한 통신 규약</li>
+<li class="">하위 계층 : 물리 계층 => 데이터 링크 계층 => 네트워크 계층</li>
+<li class="">상위 계층 : 전송 계층 => 세션 계층 => 표현 계층 => 응용 계층</li>
+<li class=""><strong>물 데 네 전 세 표 응</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=목적>목적<a href=#목적 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">서로 다른 시스템 간 상호 접속하기 위한 개념 규정</li>
+<li class="">OSI 규격을 개발하기 위한 범위 설정</li>
+<li class="">관련 규정의 적합성을 조절하기 위한 공통적 기반 제공</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-단위>데이터 단위<a href=#데이터-단위 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로토콜-데이터-단위>프로토콜 데이터 단위<a href=#프로토콜-데이터-단위 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">PDU = Protocol Data Unit</li>
+<li class="">동일 계층 간에 교환되는 정보의 단위</li>
+<li class="">물리 계층 : 비트</li>
+<li class="">데이터 링크 계층 : 프레임</li>
+<li class="">네트워크 계층 : 패킷</li>
+<li class="">전송 계층 : 세그먼트</li>
+<li class="">세션, 표현, 응용 계층 : 메세지</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=서비스-데이터-단위>서비스 데이터 단위<a href=#서비스-데이터-단위 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">SDU = Service Data Unit</li>
+<li class="">SAP 를 통해 상하위 계층끼리 주고 받는 정보의 단위</li>
+<li class="">SAP : 서비스 접근점 = 하위 계층과 상위 계층의 통신 경계점</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=물리-계층>물리 계층<a href=#물리-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">전송에 필요한 두 장치 간의 실제 접속과 절단 등 기계적, 전기적, 기능적, 절차적 특성에 대한 규칙을 정의</li>
+<li class="">물리적 전송 매체와 전송 신호 방식을 정의</li>
+<li class="">RS-232C, X.21</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-링크-계층>데이터 링크 계층<a href=#데이터-링크-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">두 개의 인접한 개방 시스템 간의 신뢰성 있고 효율적인 정보 전송을 할 수 있도록 한다.</li>
+<li class="">송수신 측의 속도차이를 해결하기 위한 흐름 제어 기능</li>
+<li class="">프레임의 시작과 끝을 구분하기 위한 프레임 동기화 기능</li>
+<li class="">오류의 검출과 회복을 위한 오류 제어 기능</li>
+<li class="">프레임의 순서적 전송을 위한 순서 제어 기능</li>
+<li class="">HDLC, LAPB, LLC, LAPD, PPP</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-계층>네트워크 계층<a href=#네트워크-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">망 계층</li>
+<li class="">개방 시스템들 간의 네트워크 연결을 관리하는 기능 및 데이터의 교환 기능, 중계 기능</li>
+<li class="">네트워크 연결을 설정, 유지, 해제하는 기능</li>
+<li class="">경로 설정, 데이터 교환 및 중계, 트래픽 제어, 패킷 정보 전송 수행</li>
+<li class="">X.25, IP</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-계층>전송 계층<a href=#전송-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Transport Layer</li>
+<li class="">논리적 안정과 균일한 데이터 전송 서비스를 제공함으로 종단 시스템 간에 투명한 데이터 전송을 가능하게 함</li>
+<li class="">하위 3계층과 상위 3계층 사이의 인터페이스 담당</li>
+<li class="">종단 시스템 간의 전송 연결 설정, 데이터 전송, 연결 해제 기능</li>
+<li class="">주소 설정, 다중화, 오류 제어, 흐름 제어</li>
+<li class="">TCP, UDP</li>
+<li class="">연결형과 비연결형 서비스로 구분</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=세션-계층>세션 계층<a href=#세션-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">송수신 측 간의 관련성을 유지하고 대화 제어를 담당하는 계층</li>
+<li class="">대화 구성 및 동기 제어, 데이터 교환 관리 기능</li>
+<li class="">송수신 측 간의 대화 동기를 위해 전송하는 정보의 일정한 부분을 체크점을 두어 정보의 수신 상태를 체크하며 이 것을 동기점이라 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=표현-계층>표현 계층<a href=#표현-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Presentation Layer</li>
+<li class="">응용 계층으로부터 받은 데이터를 세션 계층에 보내기 전에 통신에 적당한 형태로 변환하고 세션 계층에서 받은 데이터는 응용 계층에 맞게 변환하는 기능</li>
+<li class="">서로 다른 데이터 표현 형태를 갖는 시스템 간의 상호 접속을 위해 필요한 계층</li>
+<li class="">코드 변환, 데이터 암호화, 데이터 압축, 구문 검색, 정보 포맷 변환, 문맥 관리 기능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=응용-계층>응용 계층<a href=#응용-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Application Layer</li>
+<li class="">사용자 또는 응용 프로그램이 OSI환경에 접근할 수 있도록 서비스 제공</li>
+<li class="">응용 프로세스 간의 정보 교환, 전자 사서함, 파일 전송, 가상 터미널 등의 서비스 제공</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=x25>X.25<a href=#x25 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">DTE(데이터 터미널 장치)와 DCE(데이터 회선 종단 장치) 간의 인터페이스를 제공하는 프로토콜</li>
+<li class="">두 단말장치가 패킷 교환망을 통해 패킷을 원할히 전달하기 위한 통신 절차</li>
+<li class="">1976년 ITU-T에서 제정</li>
+<li class="">연결형 프로토콜로 흐름제어, 오류 제어 기능</li>
+<li class="">강력한 오류 체크 기능으로 신뢰성이 높다.</li>
+<li class="">한 회선에 장애가 있어도 정상적인 경로를 선택해 우회 가능</li>
+<li class="">디지털 전송을 기본</li>
+<li class="">전송 품질 우수</li>
+<li class="">가상 회선 방식을 사용해 하나의 물리적 회선에 다수의 논리 채널을 할당하므로 효율성이 높다.<!-- -->
+<ul>
+<li class="">영구 가상회선 : PVC 두 단말기 사이에 영구적으로 가상회선이 연결된 것으로 호설정이나 해제의 절차가 필요 없음</li>
+<li class="">교환 가상회선 : SVC 두 단말기 사이에 필요할 때마다 가상 회선 연결을 위해 호 설정과 호 해제 절차가 필요한 것 = 가상 호</li>
+</ul>
+</li>
+<li class=""><strong>X.25 모든 패킷은 최소 3옥텟의 헤더를 가진다.</strong></li>
+<li class=""><strong>축적 교환 방식을 사용</strong>해 전송을 위한 처리 지연 발생</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=계층-구조>계층 구조<a href=#계층-구조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=물리-계층-1>물리 계층<a href=#물리-계층-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">단말장치(DTE)와 패킷 교환망(DCE) 사이의 물리적 접속에 관한 인터페이스를 정의하는 계층</li>
+<li class="">X.21을 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=프레임-계층>프레임 계층<a href=#프레임-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">패킷의 원할한 전송을 위해 데이터 링크의 제어를 수행하는 계층</li>
+<li class="">링크 계층</li>
+<li class="">OSI 7 계층의 데이터 링크 계층에 해당</li>
+<li class="">전송 제어를 위해 HDLC 프로토콜의 변형인 LAPB를 사용</li>
+<li class="">다중화, 순서 제어, 오류 제어, 흐름 제어</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=패킷-계층>패킷 계층<a href=#패킷-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">OSI 7 계층의 네트워크 계층</li>
+<li class="">호 설정 => 데이터 전송 => 호 해제</li>
+<li class="">데이터 전송 시 오류 제어, 순서 제어, 흐름 제어, 다중화, 망 고장시 복구 등의 데이터 전송 제어 기능 수행</li>
+<li class="">호를 설정한 후 호 해제까지 가상 회선을 이용하여 통신 경로를 유지하므로 패킷을 끝까지 안전하게 전송 가능</li>
+</ul>
+<blockquote>
+<p>LAPB</p>
+<ul>
+<li class="">Link Access Procedure on Balanced</li>
+<li class="">HDLC의 원리를 이용한 비트 중심의 프로토콜</li>
+<li class="">X.25의 2계층에서 사용</li>
+<li class="">프레임 순서 번호를 유지하므로 오류 발견 및 회복이 쉽다.</li>
+</ul>
+<p>X.75</p>
+<ul>
+<li class="">두개의 X.25 네트워크를 연결하기 위한 프로토콜</li>
+<li class="">다른 네트워크에 존재하는 사용자들이 데이터를 교환하고 자원을 공유하기 위한 절차를 정의</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcpip>TCP/IP<a href=#tcpip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">Transmission Control Protocol/Internet Protocol</li>
+<li class="">인터넷에 연결된 서로 다른 기종의 컴퓨터가 데이터를 주고받을 수 있도록 하는 표준 프로토콜</li>
+<li class="">1960년 말 ARPA에서 개발에서 ARPANET에서 사용하기 시작</li>
+<li class="">UNIX의 기본 프로토콜</li>
+<li class="">현재 인터넷 범용 프로토콜</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcp>TCP<a href=#tcp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">OSI 7 계층의 <strong>전송 계층</strong>에 해당</li>
+<li class="">신뢰성 있는 <strong>연결형 서비스 제공</strong></li>
+<li class="">패킷의 다중화, 순서 제어, 오류 제어, 흐름 제어 기능 제공</li>
+<li class=""><strong>스트림 전송 기능 제공</strong></li>
+<li class="">헤더에는 순서를 제어하기 위한 긴급 포인터, 순서 번호와 오류 제어를 위한 체크섬이 포함</li>
+<li class="">투명성이 보장되는 통신 제공</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip-1>IP<a href=#ip-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">OSI 7 계층의 <strong>네트워크 계층</strong>에 해당</li>
+<li class=""><strong>데이터그램을 기반으로 하는 비연결형 서비스 제공</strong></li>
+<li class=""><strong>패킷의 분해/조립, 주소지정, 경로 선택기능 제공</strong></li>
+<li class="">헤더의 길이는 최소 20Byte에서 최대 60Byte</li>
+<li class=""><strong>신뢰성이 보장되지 않는다.</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구조-2>구조<a href=#구조-2 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=응용-계층-1>응용 계층<a href=#응용-계층-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">OSI의 응용, 표현, 세션 계층</li>
+<li class="">응용 프로그램 간 데이터 송수신 제공</li>
+<li class="">TELNET, FTP, SMTP, SNMP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-계층-1>전송 계층<a href=#전송-계층-1 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">OSI의 전송 계층</li>
+<li class="">호스트들 간의 신뢰성 있는 통신 제공</li>
+<li class="">TCP, UDP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-계층>인터넷 계층<a href=#인터넷-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">OSI의 네트워크 계층</li>
+<li class="">데이터 전송을 위한 주소 지정, 경로 설정 제공</li>
+<li class="">IP, ICMP, IGMP, ARP, RARP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-액세스-계층>네트워크 액세스 계층<a href=#네트워크-액세스-계층 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">OSI의 데이터 링크계층, 물리 계층</li>
+<li class="">실제 데이터를 송수신하는 역할</li>
+<li class="">Ethernet, IEEE 802, HDLC, X.25, RS-232C</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=응용-계층-주요-프로토콜>응용 계층 주요 프로토콜<a href=#응용-계층-주요-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">FTP</li>
+<li class="">SMTP</li>
+<li class="">TELNET</li>
+<li class="">SNMP : 간이 망 관리 프로토콜</li>
+<li class="">DNS : 도메인 네임 서비스</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-계층-주요-프로토콜>전송 계층 주요 프로토콜<a href=#전송-계층-주요-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">TCP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=udp>UDP<a href=#udp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">User Datagram Protocol</li>
+<li class="">데이터 전송 전에 연결을 설정하지 않는 <strong>비연결형 서비스</strong></li>
+<li class="">TCP에 비해 상대적으로 단순한 헤더구조를 가져 오버헤드가 적다.</li>
+<li class="">고속의 안정성 있는 전송매체를 사용해 빠른 속도를 필요로 하는 경우, 동시에 여러 사용자에게 데이터를 전달할 경우, 정기적으로 반복해서 전송할 경우 사용</li>
+<li class="">실시간 전송에 유리</li>
+<li class=""><strong>신뢰성보다 속도가 중요시되는 네트워크에 사용</strong></li>
+<li class="">헤더에는 Source Port Number, Destination Port Number, Length, Checksum이 포함</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rtcp>RTCP<a href=#rtcp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">RealTime Control Protocol</li>
+<li class="">RTP 패킷의 전송 품질을 제어하기 위한 프로토콜</li>
+<li class="">세션에 참여한 각 참여자에게 주기적으로 제어 정보를 전송</li>
+<li class="">하위 프로토콜은 데이터 패킷과 제어 패킷의 다중화를 제공</li>
+<li class="">데이터 전송을 모니터링하고 최소한의 제어와 인증 기능만을 제공</li>
+<li class="">32bit의 경계로 끝난다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-계층의-주요-프로토콜>인터넷 계층의 주요 프로토콜<a href=#인터넷-계층의-주요-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">IP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=icmp>ICMP<a href=#icmp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Internet Control Message Protocol</li>
+<li class="">IP와 조합하여 통신중 발생하는 오류의 처리와 전송 경로 변경 등을 위한 제어 메세지를 관리하는 역할</li>
+<li class="">헤더는 8Byte</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=igmp>IGMP<a href=#igmp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Internet Group Management Protocol</li>
+<li class="">멀티캐스트를 지원하는 호스트나 라우터 사이에서 멀티캐스트 그룹 유지를 위해 사용</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=arp>ARP<a href=#arp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Address Resolution Protocol = 주소 분석 프로토콜</li>
+<li class="">호스트의 <strong>IP주소를 물리적 주소(MAC Address)로 바꿈</strong></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rarp>RARP<a href=#rarp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Reverse Address Resolution Protocol</li>
+<li class="">ARP와 반대로 <strong>물리적 주소를 IP 주소로 바꿈</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-액세스-계층의-주요-프로토콜>네트워크 액세스 계층의 주요 프로토콜<a href=#네트워크-액세스-계층의-주요-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Ethernet : IEEE 802.3 CSMA/CD 방식의 LAN</li>
+<li class="">IEEE 802 : LAN을 위한 표준 프로토콜</li>
+<li class="">HDLC : 비트 위주의 데이터 링크 제어 프로토콜</li>
+<li class="">X.25 : 패킷 교환망을 통한 DTE와 DCE 간의 인터페이스르 제공하는 프로토콜</li>
+<li class="">RS-232C : 공중 전화 교환망을 통한 DTE와 DCE 간의 인터페이스를 제공하는 프로토콜</li>
+</ul></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag title="Engineer Information Processing" class="tag_zVej tagRegular_sFm0" href=/en/tags/정보처리/>정보처리</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href=/en/2017/02/19/count-sequence-number/><div class=pagination-nav__sublabel>Newer Post</div><div class=pagination-nav__label>연속된 번호 카운트 알고리즘</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/en/2017/02/15/Ubuntu-change-timezone/><div class=pagination-nav__sublabel>Older Post</div><div class=pagination-nav__label>Ubuntu에서 timezone 변경</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#데이터-통신 class="table-of-contents__link toc-highlight">데이터 통신</a><li><a href=#정보-통신 class="table-of-contents__link toc-highlight">정보 통신</a><li><a href=#통신 class="table-of-contents__link toc-highlight">통신</a><ul><li><a href=#특징 class="table-of-contents__link toc-highlight">특징</a><li><a href=#발달과정 class="table-of-contents__link toc-highlight">발달과정</a></ul><li><a href=#데이터-통신의-구성 class="table-of-contents__link toc-highlight">데이터 통신의 구성</a><ul><li><a href=#단말장치 class="table-of-contents__link toc-highlight">단말장치</a><li><a href=#신호-변환장치 class="table-of-contents__link toc-highlight">신호 변환장치</a><li><a href=#통신-회선 class="table-of-contents__link toc-highlight">통신 회선</a><li><a href=#통신-제어장치 class="table-of-contents__link toc-highlight">통신 제어장치</a><li><a href=#통신-제어-프로그램 class="table-of-contents__link toc-highlight">통신 제어 프로그램</a></ul><li><a href=#통신-회선-1 class="table-of-contents__link toc-highlight">통신 회선</a><ul><li><a href=#꼬임선 class="table-of-contents__link toc-highlight">꼬임선</a><li><a href=#동축-케이블 class="table-of-contents__link toc-highlight">동축 케이블</a><li><a href=#광섬유 class="table-of-contents__link toc-highlight">광섬유</a><li><a href=#라디오파 class="table-of-contents__link toc-highlight">라디오파</a><li><a href=#위성-마이크로파 class="table-of-contents__link toc-highlight">위성 마이크로파</a></ul><li><a href=#통신-제어장치-1 class="table-of-contents__link toc-highlight">통신 제어장치</a><ul><li><a href=#전송제어 class="table-of-contents__link toc-highlight">전송제어</a><li><a href=#동기-및-오류제어 class="table-of-contents__link toc-highlight">동기 및 오류제어</a><li><a href=#종류 class="table-of-contents__link toc-highlight">종류</a><li><a href=#분류 class="table-of-contents__link toc-highlight">분류</a></ul><li><a href=#데이터 class="table-of-contents__link toc-highlight">데이터</a><ul><li><a href=#신호 class="table-of-contents__link toc-highlight">신호</a><li><a href=#주파수 class="table-of-contents__link toc-highlight">주파수</a><li><a href=#대역폭 class="table-of-contents__link toc-highlight">대역폭</a></ul><li><a href=#전송-방식 class="table-of-contents__link toc-highlight">전송 방식</a><ul><li><a href=#아날로그-전송 class="table-of-contents__link toc-highlight">아날로그 전송</a><li><a href=#디지털-전송 class="table-of-contents__link toc-highlight">디지털 전송</a><li><a href=#통신-방식 class="table-of-contents__link toc-highlight">통신 방식</a><li><a href=#비동기식-전송 class="table-of-contents__link toc-highlight">비동기식 전송</a><li><a href=#동기식-전송 class="table-of-contents__link toc-highlight">동기식 전송</a></ul><li><a href=#아날로그-데이터-전송-방식 class="table-of-contents__link toc-highlight">아날로그 데이터 전송 방식</a><ul><li><a href=#아날로그-데이터에서-아날로그-신호 class="table-of-contents__link toc-highlight">아날로그 데이터에서 아날로그 신호</a><li><a href=#아날로그-데이터에서-디지털-신호 class="table-of-contents__link toc-highlight">아날로그 데이터에서 디지털 신호</a></ul><li><a href=#디지털-데이터-전송-방식 class="table-of-contents__link toc-highlight">디지털 데이터 전송 방식</a><ul><li><a href=#디지털-데이터에서-아날로그-신호 class="table-of-contents__link toc-highlight">디지털 데이터에서 아날로그 신호</a><li><a href=#모뎀 class="table-of-contents__link toc-highlight">모뎀</a><li><a href=#디지털-데이터에서-디지털-신호 class="table-of-contents__link toc-highlight">디지털 데이터에서 디지털 신호</a><li><a href=#dsu class="table-of-contents__link toc-highlight">DSU</a></ul><li><a href=#디지털-변조 class="table-of-contents__link toc-highlight">디지털 변조</a><ul><li><a href=#진폭-편이-변조 class="table-of-contents__link toc-highlight">진폭 편이 변조</a><li><a href=#주파수-편이-변조 class="table-of-contents__link toc-highlight">주파수 편이 변조</a><li><a href=#위상-편이-변조 class="table-of-contents__link toc-highlight">위상 편이 변조</a><li><a href=#직교-진폭-변조 class="table-of-contents__link toc-highlight">직교 진폭 변조</a></ul><li><a href=#펄스-코드-변조 class="table-of-contents__link toc-highlight">펄스 코드 변조</a><ul><li><a href=#순서 class="table-of-contents__link toc-highlight">순서</a><li><a href=#표본화 class="table-of-contents__link toc-highlight">표본화</a><li><a href=#양자화 class="table-of-contents__link toc-highlight">양자화</a><li><a href=#부호화 class="table-of-contents__link toc-highlight">부호화</a><li><a href=#복호화 class="table-of-contents__link toc-highlight">복호화</a><li><a href=#여파화 class="table-of-contents__link toc-highlight">여파화</a></ul><li><a href=#베이스밴드-전송 class="table-of-contents__link toc-highlight">베이스밴드 전송</a><ul><li><a href=#전송-방식-1 class="table-of-contents__link toc-highlight">전송 방식</a></ul><li><a href=#다중화 class="table-of-contents__link toc-highlight">다중화</a><ul><li><a href=#공동이용기 class="table-of-contents__link toc-highlight">공동이용기</a><li><a href=#다중화기 class="table-of-contents__link toc-highlight">다중화기</a><li><a href=#주파수-분할-다중화기 class="table-of-contents__link toc-highlight">주파수 분할 다중화기</a><li><a href=#시분할-다중화기 class="table-of-contents__link toc-highlight">시분할 다중화기</a><li><a href=#역다중화기 class="table-of-contents__link toc-highlight">역다중화기</a><li><a href=#집중화기 class="table-of-contents__link toc-highlight">집중화기</a></ul><li><a href=#통신-속도와-통신-용량 class="table-of-contents__link toc-highlight">통신 속도와 통신 용량</a><ul><li><a href=#변조-속도 class="table-of-contents__link toc-highlight">변조 속도</a><li><a href=#신호-속도 class="table-of-contents__link toc-highlight">신호 속도</a><li><a href=#전송-속도 class="table-of-contents__link toc-highlight">전송 속도</a><li><a href=#베어러-속도 class="table-of-contents__link toc-highlight">베어러 속도</a><li><a href=#통신-용량 class="table-of-contents__link toc-highlight">통신 용량</a></ul><li><a href=#전송-제어 class="table-of-contents__link toc-highlight">전송 제어</a><ul><li><a href=#절차 class="table-of-contents__link toc-highlight">절차</a></ul><li><a href=#데이터-링크-제어-프로토콜 class="table-of-contents__link toc-highlight">데이터 링크 제어 프로토콜</a><ul><li><a href=#bsc class="table-of-contents__link toc-highlight">BSC</a><li><a href=#hdlc class="table-of-contents__link toc-highlight">HDLC</a></ul><li><a href=#회선-제어-방식 class="table-of-contents__link toc-highlight">회선 제어 방식</a><ul><li><a href=#경쟁-방식 class="table-of-contents__link toc-highlight">경쟁 방식</a><li><a href=#폴링셀렉션-방식 class="table-of-contents__link toc-highlight">폴링/셀렉션 방식</a></ul><li><a href=#오류-제어-방식 class="table-of-contents__link toc-highlight">오류 제어 방식</a><ul><li><a href=#발생-원인 class="table-of-contents__link toc-highlight">발생 원인</a><li><a href=#오류율 class="table-of-contents__link toc-highlight">오류율</a><li><a href=#전송-오류-제어-방식 class="table-of-contents__link toc-highlight">전송 오류 제어 방식</a><li><a href=#자동-반복-요청 class="table-of-contents__link toc-highlight">자동 반복 요청</a></ul><li><a href=#오류-검출-방식 class="table-of-contents__link toc-highlight">오류 검출 방식</a><ul><li><a href=#수직-패리티-체크 class="table-of-contents__link toc-highlight">수직 패리티 체크</a><li><a href=#수평-패리티-체크 class="table-of-contents__link toc-highlight">수평 패리티 체크</a><li><a href=#순환-중복-검사 class="table-of-contents__link toc-highlight">순환 중복 검사</a><li><a href=#궤환-전송-방식 class="table-of-contents__link toc-highlight">궤환 전송 방식</a><li><a href=#자동-연속-방식 class="table-of-contents__link toc-highlight">자동 연속 방식</a><li><a href=#해밍-코드-방식 class="table-of-contents__link toc-highlight">해밍 코드 방식</a><li><a href=#상승-코드-방식 class="table-of-contents__link toc-highlight">상승 코드 방식</a></ul><li><a href=#전용-회선 class="table-of-contents__link toc-highlight">전용 회선</a><li><a href=#교환-회선 class="table-of-contents__link toc-highlight">교환 회선</a><ul><li><a href=#데이터-교환-방식 class="table-of-contents__link toc-highlight">데이터 교환 방식</a><li><a href=#성능-비교-요소 class="table-of-contents__link toc-highlight">성능 비교 요소</a></ul><li><a href=#회선-구성-방식 class="table-of-contents__link toc-highlight">회선 구성 방식</a><ul><li><a href=#포인트-투-포인트 class="table-of-contents__link toc-highlight">포인트 투 포인트</a><li><a href=#멀티-드롭-방식 class="table-of-contents__link toc-highlight">멀티 드롭 방식</a><li><a href=#회선-다중-방식 class="table-of-contents__link toc-highlight">회선 다중 방식</a></ul><li><a href=#회선-교환-방식 class="table-of-contents__link toc-highlight">회선 교환 방식</a><ul><li><a href=#공간-분할-교환-방식 class="table-of-contents__link toc-highlight">공간 분할 교환 방식</a><li><a href=#시분할-교환-방식 class="table-of-contents__link toc-highlight">시분할 교환 방식</a><li><a href=#제어-신호 class="table-of-contents__link toc-highlight">제어 신호</a></ul><li><a href=#축적-교환-방식 class="table-of-contents__link toc-highlight">축적 교환 방식</a><ul><li><a href=#메세지-교환-방식 class="table-of-contents__link toc-highlight">메세지 교환 방식</a><li><a href=#패킷-교환-방식 class="table-of-contents__link toc-highlight">패킷 교환 방식</a></ul><li><a href=#경로-제어 class="table-of-contents__link toc-highlight">경로 제어</a><ul><li><a href=#경로-설정-프로토콜 class="table-of-contents__link toc-highlight">경로 설정 프로토콜</a><li><a href=#경로-설정-방식 class="table-of-contents__link toc-highlight">경로 설정 방식</a></ul><li><a href=#트래픽-제어 class="table-of-contents__link toc-highlight">트래픽 제어</a><ul><li><a href=#흐름-제어 class="table-of-contents__link toc-highlight">흐름 제어</a><li><a href=#폭주-제어 class="table-of-contents__link toc-highlight">폭주 제어</a><li><a href=#교착상태-방지 class="table-of-contents__link toc-highlight">교착상태 방지</a></ul><li><a href=#망-구성-형태 class="table-of-contents__link toc-highlight">망 구성 형태</a><ul><li><a href=#성형 class="table-of-contents__link toc-highlight">성형</a><li><a href=#링형 class="table-of-contents__link toc-highlight">링형</a><li><a href=#버스형 class="table-of-contents__link toc-highlight">버스형</a><li><a href=#계층형 class="table-of-contents__link toc-highlight">계층형</a><li><a href=#망형 class="table-of-contents__link toc-highlight">망형</a></ul><li><a href=#lan class="table-of-contents__link toc-highlight">LAN</a><ul><li><a href=#표준안 class="table-of-contents__link toc-highlight">표준안</a></ul><li><a href=#매체-접근-제어 class="table-of-contents__link toc-highlight">매체 접근 제어</a><ul><li><a href=#csmacd class="table-of-contents__link toc-highlight">CSMA/CD</a><li><a href=#토큰-버스-방식 class="table-of-contents__link toc-highlight">토큰 버스 방식</a><li><a href=#토큰-링-방식 class="table-of-contents__link toc-highlight">토큰 링 방식</a></ul><li><a href=#van class="table-of-contents__link toc-highlight">VAN</a><ul><li><a href=#구조 class="table-of-contents__link toc-highlight">구조</a></ul><li><a href=#isdn class="table-of-contents__link toc-highlight">ISDN</a><ul><li><a href=#통신-서비스 class="table-of-contents__link toc-highlight">통신 서비스</a><li><a href=#구조-1 class="table-of-contents__link toc-highlight">구조</a><li><a href=#참조점 class="table-of-contents__link toc-highlight">참조점</a><li><a href=#b-isdn class="table-of-contents__link toc-highlight">B-ISDN</a></ul><li><a href=#인터넷 class="table-of-contents__link toc-highlight">인터넷</a><ul><li><a href=#인터넷-서비스 class="table-of-contents__link toc-highlight">인터넷 서비스</a></ul><li><a href=#인터넷-주소-체계 class="table-of-contents__link toc-highlight">인터넷 주소 체계</a><ul><li><a href=#ip class="table-of-contents__link toc-highlight">IP</a><li><a href=#서브네팅 class="table-of-contents__link toc-highlight">서브네팅</a><li><a href=#ipv6 class="table-of-contents__link toc-highlight">IPv6</a><li><a href=#도메인-네임 class="table-of-contents__link toc-highlight">도메인 네임</a></ul><li><a href=#네트워크-장비 class="table-of-contents__link toc-highlight">네트워크 장비</a><ul><li><a href=#허브 class="table-of-contents__link toc-highlight">허브</a><li><a href=#리피터 class="table-of-contents__link toc-highlight">리피터</a><li><a href=#브리지 class="table-of-contents__link toc-highlight">브리지</a><li><a href=#라우터 class="table-of-contents__link toc-highlight">라우터</a><li><a href=#게이트웨이 class="table-of-contents__link toc-highlight">게이트웨이</a></ul><li><a href=#통신-프로토콜 class="table-of-contents__link toc-highlight">통신 프로토콜</a><ul><li><a href=#기능-1 class="table-of-contents__link toc-highlight">기능</a><li><a href=#전송-방식-2 class="table-of-contents__link toc-highlight">전송 방식</a></ul><li><a href=#osi-7-layer class="table-of-contents__link toc-highlight">OSI 7 Layer</a><ul><li><a href=#목적 class="table-of-contents__link toc-highlight">목적</a><li><a href=#데이터-단위 class="table-of-contents__link toc-highlight">데이터 단위</a><li><a href=#물리-계층 class="table-of-contents__link toc-highlight">물리 계층</a><li><a href=#데이터-링크-계층 class="table-of-contents__link toc-highlight">데이터 링크 계층</a><li><a href=#네트워크-계층 class="table-of-contents__link toc-highlight">네트워크 계층</a><li><a href=#전송-계층 class="table-of-contents__link toc-highlight">전송 계층</a><li><a href=#세션-계층 class="table-of-contents__link toc-highlight">세션 계층</a><li><a href=#표현-계층 class="table-of-contents__link toc-highlight">표현 계층</a><li><a href=#응용-계층 class="table-of-contents__link toc-highlight">응용 계층</a></ul><li><a href=#x25 class="table-of-contents__link toc-highlight">X.25</a><ul><li><a href=#계층-구조 class="table-of-contents__link toc-highlight">계층 구조</a></ul><li><a href=#tcpip class="table-of-contents__link toc-highlight">TCP/IP</a><ul><li><a href=#tcp class="table-of-contents__link toc-highlight">TCP</a><li><a href=#ip-1 class="table-of-contents__link toc-highlight">IP</a><li><a href=#구조-2 class="table-of-contents__link toc-highlight">구조</a><li><a href=#응용-계층-주요-프로토콜 class="table-of-contents__link toc-highlight">응용 계층 주요 프로토콜</a><li><a href=#전송-계층-주요-프로토콜 class="table-of-contents__link toc-highlight">전송 계층 주요 프로토콜</a><li><a href=#인터넷-계층의-주요-프로토콜 class="table-of-contents__link toc-highlight">인터넷 계층의 주요 프로토콜</a><li><a href=#네트워크-액세스-계층의-주요-프로토콜 class="table-of-contents__link toc-highlight">네트워크 액세스 계층의 주요 프로토콜</a></ul></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016 - 2023 Gracefullight. Built with Docusaurus.</div></div></div></footer></div></body>

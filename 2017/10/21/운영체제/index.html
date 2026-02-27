@@ -1,0 +1,988 @@
+<!doctype html><html lang=ko dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>운영체제 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/2017/10/21/운영체제/ /><meta data-rh=true property=og:locale content=ko /><meta data-rh=true property=og:locale:alternate content=en /><meta data-rh=true name=docusaurus_locale content=ko /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=ko /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="운영체제 | gracefullight.dev"/><meta data-rh=true name=description content=운영체제 /><meta data-rh=true property=og:description content=운영체제 /><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2017-10-21T13:50:46.000Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=정보처리 /><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/2017/10/21/운영체제/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/10/21/운영체제/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2017/10/21/운영체제/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/10/21/운영체제/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/2017/10/21/운영체제","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Eunkwang Shin","url":"https://github.com/gracefullight"},"datePublished":"2017-10-21T13:50:46.000Z","description":"운영체제","headline":"운영체제","isPartOf":{"@id":"https://gracefullight.dev/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/2017/10/21/운영체제","name":"운영체제","url":"https://gracefullight.dev/2017/10/21/운영체제"}</script><link rel=alternate type=application/rss+xml href=/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/opensearch.xml><link href=/img/favicon-32x32.png rel=icon><link href=/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/assets/css/styles.775e2857.css /><script src=/assets/js/runtime~main.8c99d553.js defer></script><script src=/assets/js/main.55b7c064.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="본문으로 건너뛰기"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>본문으로 건너뛰기</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>한국어</a><ul class=dropdown__menu><li><a href=/2017/10/21/운영체제/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ko>한국어</a><li><a href=/en/2017/10/21/운영체제/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/archive/>Archives</a><a class="navbar__item navbar__link" href=/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="검색 (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>검색</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="최근 블로그 문서 둘러보기"><div class="sidebarItemTitle_pO2u margin-bottom--md">최근 포스트</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>운영체제</h1><div class="container_mt6G margin-vert--md"><time datetime=2017-10-21T13:50:46.000Z>2017년 10월 21일</time> · <!-- -->약 18분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class=avatar__photo-link href=/authors/me/><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"/></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=/authors/me/><span class=authorName_yefp translate=no>Eunkwang Shin</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt><a href=https://www.linkedin.com/in/gracefullight/ target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=LinkedIn><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em preserveAspectRatio=xMidYMid viewBox="0 0 256 256" style=--dark:#0a66c2;--light:#ffffffe6 class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"/></svg></a><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=GitHub><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em viewBox="0 0 256 250" preserveAspectRatio=xMidYMid style=--dark:#000;--light:#fff class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"/></svg></a><a href=mailto:gracefullight.dev@gmail.com target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=Email><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 class=authorSocialIcon_XYv3><path stroke=none d="M0 0h24v24H0z"/><path d="M7.2 12a4.8 4.8 0 1 0 9.6 0 4.8 4.8 0 1 0-9.6 0"/><path d="M16.8 12v1.8a3 3 0 0 0 6 0V12a10.8 10.8 0 1 0-6.6 9.936"/></svg></a></div></div></div></div></div></header><div id=__blog-post-container class=markdown><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=운영체제>운영체제<a href=#운영체제 class=hash-link aria-label="운영체제에 대한 직접 링크" title="운영체제에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">사용자와 하드웨어 간의 인터페이스 제공</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=목적>목적<a href=#목적 class=hash-link aria-label="목적에 대한 직접 링크" title="목적에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">하드웨어를 효율적 사용하도록 성능 향상</li>
+<li class="">UI 제공</li>
+<li class="">성능요소<!-- -->
+<ul>
+<li class="">처리율</li>
+<li class="">응답시간</li>
+<li class="">사용가능도</li>
+<li class="">신뢰도</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=제어프로그램>제어프로그램<a href=#제어프로그램 class=hash-link aria-label="제어프로그램에 대한 직접 링크" title="제어프로그램에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">감시 프로그램</li>
+<li class="">데이터 관리 프로그램</li>
+<li class="">작업 제어 프로그램</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=처리-프로그램>처리 프로그램<a href=#처리-프로그램 class=hash-link aria-label="처리 프로그램에 대한 직접 링크" title="처리 프로그램에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">언어번역 프로그램</li>
+<li class="">서비스 프로그램</li>
+<li class="">문제 프로그램</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=구성-요소>구성 요소<a href=#구성-요소 class=hash-link aria-label="구성 요소에 대한 직접 링크" title="구성 요소에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스 관리</li>
+<li class="">주기억장치 관리</li>
+<li class="">보조기억장치 관리</li>
+<li class="">입출력 관리</li>
+<li class="">파일 관리</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-기능>프로세스 기능<a href=#프로세스-기능 class=hash-link aria-label="프로세스 기능에 대한 직접 링크" title="프로세스 기능에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">생성 및 소멸</li>
+<li class="">동기화</li>
+<li class="">일시중지 및 재실행</li>
+<li class="">프로세스 간 통신</li>
+<li class="">보호 시스템</li>
+<li class="">네트워크 관리</li>
+<li class="">명령해석 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=종류>종류<a href=#종류 class=hash-link aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">일괄처리 시스템</li>
+<li class="">실시간 시스템</li>
+<li class="">시분할 시스템</li>
+<li class="">다중 프로그램 시스템: 여러 개의 프로갦이 동시에 실행되는 것처럼 처리하는 방식</li>
+<li class="">다중 처리 시스템: 동시에 프로그램을 수행할 수 있는 CPU를 여러 개 두고 각각 분담하여 처리하는 방식</li>
+<li class="">분산처리 시스템</li>
+<li class="">결함허용 시스템: 시스템 일부가 고장나더라도 전체 시스템은 계속 가동할 수 있는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=발달-과정>발달 과정<a href=#발달-과정 class=hash-link aria-label="발달 과정에 대한 직접 링크" title="발달 과정에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">50년대: 일괄 처리 시스템</li>
+<li class="">60년대: 다중 프로그래밍, 멀티 프로그래밍, 시분할, 실시간 처리 시스템</li>
+<li class="">70년대: 멀티모드 시분할 시스템</li>
+<li class="">80년대: 병렬 프로그램 실행, 펌웨어</li>
+<li class="">90년대: GUI</li>
+<li class="">00년대: 64bit</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=입출력장치-발전추세>입출력장치 발전추세<a href=#입출력장치-발전추세 class=hash-link aria-label="입출력장치 발전추세에 대한 직접 링크" title="입출력장치 발전추세에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로그램에-의한-입출력>프로그램에 의한 입출력<a href=#프로그램에-의한-입출력 class=hash-link aria-label="프로그램에 의한 입출력에 대한 직접 링크" title="프로그램에 의한 입출력에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">CPU에서 실행되는 프로그램에 의해 입출력을 직접 제어</li>
+<li class="">CPU는 입출력장치에 명령을 보낸 후 동작이 완료될 때까지 대기</li>
+<li class="">CPU는 주기적으로 주변장치의 상태를 반복적으로 검사하는 <strong>폴링</strong> 방식</li>
+<li class="">자원낭비가 발생</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터럽트-처리에-의한-입출력>인터럽트 처리에 의한 입출력<a href=#인터럽트-처리에-의한-입출력 class=hash-link aria-label="인터럽트 처리에 의한 입출력에 대한 직접 링크" title="인터럽트 처리에 의한 입출력에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">입출력 인터페이스가 주변장치의 상태를 검사하여 준비상태가 되면 인터럽트 신호 발생</li>
+<li class="">프로그램 상태를 스택에 저장한 후 문맥교환 과정을 통해 인터럽트 서비스 프로그램을 수행</li>
+<li class="">주변장치에 명령을 보낸 후 결과가 올 때까지 CPU는 다른 작업을 수행할 수 있어 효율이 높다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dma>DMA<a href=#dma class=hash-link aria-label="DMA에 대한 직접 링크" title="DMA에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">직접 메모리 접근 입출력</li>
+<li class="">CPU는 상태정보, 제어정보만을 교환하게 하고 데이터 전송은 주변장치와 기억장치 간에 직접 교환하게 하는 방식</li>
+<li class="">시스템 버스상에 모듈이 하나 추가되어야 한다.</li>
+<li class="">CPU를 통하지 않고 한 번에 한 단어씩 직접 기억장치로부터 모든 데이터 블록을 전송한다.</li>
+<li class="">전송이 완료되면 DMA모듈은 CPU에게 인터럽트 신호를 보내고 CPU는 전송의 시작과 끝 부분에만 관여한다.</li>
+<li class="">사이클 스틸링: 버스를 사용하기 위해 CPU의 동작을 일시적으로 중단시키는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=채널>채널<a href=#채널 class=hash-link aria-label="채널에 대한 직접 링크" title="채널에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">DMA 개념을 확장하여 구현한 입출력만을 위한 전용 처리장치</li>
+<li class="">CPU처럼 독자적으로 주기억장치에 저장된 명령어를 처리할 수 있는 프로세스</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=종류-1>종류<a href=#종류-1 class=hash-link aria-label="종류에 대한 직접 링크" title="종류에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">선택 채널: 채널 하나를 하나의 입출력장치가 독점해서 사용하는 방식</li>
+<li class="">멀티플렉서 채널: 한 채널에 여러 개의 입출력장치를 연결하여 시분할 공유방식으로 입출력하는 저속 입출력 방식</li>
+<li class="">블록 멀티플렉서 채널: 셀렉터 채널과 멀티플렉서 채널 방식을 결합한 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기억장치-인터리빙>기억장치 인터리빙<a href=#기억장치-인터리빙 class=hash-link aria-label="기억장치 인터리빙에 대한 직접 링크" title="기억장치 인터리빙에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">인접한 메모리 위치를 서로 다른 뱅크에 둠으로 동시에 여러 곳에 접근할 수 있게 한다.</li>
+<li class="">주기억장치의 구조적 개선으로 접근속도를 개선시키는 방법</li>
+<li class="">MAR과 MBR을 연결한 것을 기억모듈이라고 한다.</li>
+<li class="">블록단위 전송이 가능하므로 DMA에서 많이 사용한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=재배치-레지스터>재배치 레지스터<a href=#재배치-레지스터 class=hash-link aria-label="재배치 레지스터에 대한 직접 링크" title="재배치 레지스터에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">수행 중인 프로그램을 다른 곳으로 옮길 수 있도록 하는 레지스터</li>
+<li class="">주기억장치 내 프로그램의 기준 주소가 이 레지스터에 기억된다.</li>
+<li class="">기준 레지스터 = 재배치 레지스터</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=폴링>폴링<a href=#폴링 class=hash-link aria-label="폴링에 대한 직접 링크" title="폴링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">CPU가 특정 이벤트를 처리하기 위해 그 이벤트가 발생할 때까지 모든 연산을 모니터링하는데 쓴다.</li>
+<li class="">단일 이벤트에 대해서는 유용하지만 프로그램이 길어지게 되면 그만큼 CPU 자원을 낭비하게 된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=버퍼링>버퍼링<a href=#버퍼링 class=hash-link aria-label="버퍼링에 대한 직접 링크" title="버퍼링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">속도 차를 줄이기 위해 중간에서 데이터를 일시적으로 기억장소에 축적하는 방법</li>
+<li class="">CPU와 저속 입출력장치의 작동속도를 조정한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단일-버퍼링>단일 버퍼링<a href=#단일-버퍼링 class=hash-link aria-label="단일 버퍼링에 대한 직접 링크" title="단일 버퍼링에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">주기억장치 일부를 버퍼로 사용한다.</li>
+<li class="">버퍼가 채워지거나 비워지는 동안 CPU는 다른 작업을 할 수 없다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=이중-버퍼링>이중 버퍼링<a href=#이중-버퍼링 class=hash-link aria-label="이중 버퍼링에 대한 직접 링크" title="이중 버퍼링에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">2개의 버퍼를 이용해 단일 버퍼링의 단점을 보완하고 입출력과 CPU의 처리성능을 높이는 방법</li>
+<li class="">입출력작업과 처리작업을 동시에 처리할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=환형-버퍼링>환형 버퍼링<a href=#환형-버퍼링 class=hash-link aria-label="환형 버퍼링에 대한 직접 링크" title="환형 버퍼링에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">여러 개의 버퍼를 원형으로 구성하여 수행하는 방식</li>
+<li class="">CPU와 채널은 동시에 버퍼를 채우거나 비우는 일을 독립적으로 수행한다.</li>
+<li class="">버퍼의 생산과 소비를 위해 버퍼의 수를 결정하는 게 성능에 매우 중요하다. (환형이기에)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=보조기억장치>보조기억장치<a href=#보조기억장치 class=hash-link aria-label="보조기억장치에 대한 직접 링크" title="보조기억장치에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SASD: 순차 기억장치 => 테이프</li>
+<li class="">DASD: 직접 접근 기억장치 => 나머지</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=광디스크>광디스크<a href=#광디스크 class=hash-link aria-label="광디스크에 대한 직접 링크" title="광디스크에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">CD-ROM: 650MB</li>
+<li class="">DVD: 4.7~17GB</li>
+<li class="">WORM Disk: write once read memory => CD-R</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=디스크-용어>디스크 용어<a href=#디스크-용어 class=hash-link aria-label="디스크 용어에 대한 직접 링크" title="디스크 용어에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">트랙: 디스크의 회전축을 중심으로 만들어진 동심원</li>
+<li class="">섹터: 트랙을 몇 개의 부채꼴 모양으로 나눈 구간</li>
+<li class="">실린더: 디스크의 중심축으로부터 동일선상에 위치한 동일 트랙들의 모임</li>
+<li class="">클러스터: 여러 개의 섹터를 하나로 묶은 단위, 하드디스크에서 데이터를 저장하기 위한 기본 단위</li>
+<li class="">파일할당 테이블: 디스크에 저장되어 있는 각각의 파일들에 대한 정보를 저장한 테이블</li>
+<li class="">TPI: Track per Inch, 1인치 당 트랙의 수</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=보조기억장치-속도>보조기억장치 속도<a href=#보조기억장치-속도 class=hash-link aria-label="보조기억장치 속도에 대한 직접 링크" title="보조기억장치 속도에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">레지스터 > 캐시 > 주기억장치 > 보조기억장치</li>
+<li class="">자기드럼 > 하드디스크 > 광디스크 > 플로피디스크 > 자기테이프</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=입출력-채널>입출력 채널<a href=#입출력-채널 class=hash-link aria-label="입출력 채널에 대한 직접 링크" title="입출력 채널에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IOP: Input Output Processor</li>
+<li class="">입출력작업이 끝나면 CPU에게 인터럽트로 알려주며 입출력장치와 주기억장치 간의 속도 차이를 해결</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=채널의-기능>채널의 기능<a href=#채널의-기능 class=hash-link aria-label="채널의 기능에 대한 직접 링크" title="채널의 기능에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">입출력 명령 해독</li>
+<li class="">각각의 입출력장치에 명령 지시</li>
+<li class="">지시된 입출력 명령의 실행을 제어</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=채널의-종류>채널의 종류<a href=#채널의-종류 class=hash-link aria-label="채널의 종류에 대한 직접 링크" title="채널의 종류에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=셀렉터-채널>셀렉터 채널<a href=#셀렉터-채널 class=hash-link aria-label="셀렉터 채널에 대한 직접 링크" title="셀렉터 채널에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">고속 입출력장치에 적합한 채널</li>
+<li class="">입출력장치를 1:1로 전담</li>
+<li class="">블록 단위 전송</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=멀티플렉서-채널>멀티플렉서 채널<a href=#멀티플렉서-채널 class=hash-link aria-label="멀티플렉서 채널에 대한 직접 링크" title="멀티플렉서 채널에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">저속의 입출력장치 여러 개를 동시에 제어하는 채널</li>
+<li class="">바이트 단위의 전송</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=블록-멀티플렉서-채널>블록 멀티플렉서 채널<a href=#블록-멀티플렉서-채널 class=hash-link aria-label="블록 멀티플렉서 채널에 대한 직접 링크" title="블록 멀티플렉서 채널에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">여러 대의 고속 입출력장치를 블록단위로 처리</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dma-1>DMA<a href=#dma-1 class=hash-link aria-label="DMA에 대한 직접 링크" title="DMA에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=사이클-스틸링>사이클 스틸링<a href=#사이클-스틸링 class=hash-link aria-label="사이클 스틸링에 대한 직접 링크" title="사이클 스틸링에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">CPU가 메모리에서 명령어를 fetch하여 execute cycle 중에 있을 때 CPU가 메모리를 사용하지 않는 시간을 이용해 DMA를 행한다.</li>
+<li class="">상태보존을 하지 않는다.</li>
+</ul>
+<blockquote>
+<p>폴링은 주변장치의 상태보존을 하지 않음, 프로그램 제어하의 직접 입출력 방식</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=주소-지정방식>주소 지정방식<a href=#주소-지정방식 class=hash-link aria-label="주소 지정방식에 대한 직접 링크" title="주소 지정방식에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">묵시적</li>
+<li class="">즉시 주소 지정: 데이터가 명령어에 바로 있음</li>
+<li class="">레지스터 주조 지정: 오퍼랜드가 메인 메모리의 주소가 아닌 레지스터를 참조</li>
+<li class="">직접 주소 지정: 오퍼랜드에 실제 주소</li>
+<li class="">레지스터 간접 주소 지정: 메모리 위치가 기억된 레지스터를 참조</li>
+<li class="">인덱스 주소 지정: 오퍼랜드와 인덱스 레지스터의 내용이 더해져 유효번지가 결정</li>
+<li class="">베이스 레지스터 주소 지정: 오퍼랜드와 베이스 레지스터 내용이 더해져 유효번지가 결정</li>
+<li class="">상대 주소 지정: 오퍼랜드와 프로그램 카운터가 더해져 유효번지 결정</li>
+<li class="">간접 주소 지정: 오퍼랜드가 메모리 내의 주소를 참조하여 유효번지를 계산해 메모리에 접근, 2번 메모리 참조</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=가상-기억장치>가상 기억장치<a href=#가상-기억장치 class=hash-link aria-label="가상 기억장치에 대한 직접 링크" title="가상 기억장치에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">보조기억장치의 일부분을 주기억장치처럼 사용하는 것</li>
+<li class="">매핑이 필요하다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=가상기억장치-구현방법>가상기억장치 구현방법<a href=#가상기억장치-구현방법 class=hash-link aria-label="가상기억장치 구현방법에 대한 직접 링크" title="가상기억장치 구현방법에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이징>페이징<a href=#페이징 class=hash-link aria-label="페이징에 대한 직접 링크" title="페이징에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">내부단편화 발생 가능</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=세그먼테이션>세그먼테이션<a href=#세그먼테이션 class=hash-link aria-label="세그먼테이션에 대한 직접 링크" title="세그먼테이션에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">논리적 단위</li>
+<li class="">기억장치 보호키 필요</li>
+<li class="">외부단편화 발생 가능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스풀링>스풀링<a href=#스풀링 class=hash-link aria-label="스풀링에 대한 직접 링크" title="스풀링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">입출력할 데이터를 직접 I/O 장치로 보내지 않고 디스크에 모았다가 한꺼번에 입출력을 처리하는 방식</li>
+<li class="">CPU와 입출력장치의 처리속도 차이에서 오는 대기 시간을 줄이기 위해 고안</li>
+<li class="">버퍼와 비슷한 개념</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=컴파일러>컴파일러<a href=#컴파일러 class=hash-link aria-label="컴파일러에 대한 직접 링크" title="컴파일러에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">고급 언어 프로그램을 목적프로그램으로 번역한 후 링킹작업을 통해 컴퓨터에서 실행 가능한 실행프로그램을 생성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터프리터>인터프리터<a href=#인터프리터 class=hash-link aria-label="인터프리터에 대한 직접 링크" title="인터프리터에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">고급 언어 프로그램을 한 줄 단위로 받아들여 번역하고 번역과 동시에 프로그램을 한 줄 단위로 즉시 실행시키는 프로그램</li>
+<li class="">컴파일러에 비해 느리다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=절대로더>절대로더<a href=#절대로더 class=hash-link aria-label="절대로더에 대한 직접 링크" title="절대로더에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">번역된 목적프로그램을 입력으로 받아들인 간단한 로더</li>
+<li class="">기억장소 할당이나 연결을 사용자가 직업 지정</li>
+<li class="">프로그래머가 절대 주소를 기억해야 한다.</li>
+<li class="">다중 프로그래밍 방식에서 사용할 수 없음</li>
+<li class="">소규모</li>
+<li class="">모듈, 라이브러리 사용 불가</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=재배치-로더>재배치 로더<a href=#재배치-로더 class=hash-link aria-label="재배치 로더에 대한 직접 링크" title="재배치 로더에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">주기억장치의 상태에 따라 재배치 가능한 목적프로그램을 주기억장치의 임의 공간에 적재할 수 있도록 하는 로더</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=링킹-로더>링킹 로더<a href=#링킹-로더 class=hash-link aria-label="링킹 로더에 대한 직접 링크" title="링킹 로더에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">프로그램 적재 시에 필요한 프로그램들을 결합하여 2진 프로그램 이미지를 주기억장치에 적재</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체지향-운영체재>객체지향 운영체재<a href=#객체지향-운영체재 class=hash-link aria-label="객체지향 운영체재에 대한 직접 링크" title="객체지향 운영체재에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OOOS</li>
+<li class="">운영체재 개발에 객체지향 프로그래밍 적용</li>
+<li class="">객체: 모든 프로시저와 데이터를 묶어놓은 추상적 존재</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=펌웨어>펌웨어<a href=#펌웨어 class=hash-link aria-label="펌웨어에 대한 직접 링크" title="펌웨어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">마이크로 명령어로 작성된 프로그램</li>
+<li class="">기계어 하부에 프로그래밍층을 형성</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=에뮬레이션>에뮬레이션<a href=#에뮬레이션 class=hash-link aria-label="에뮬레이션에 대한 직접 링크" title="에뮬레이션에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">일종의 한 하드웨어 시스템에 부가장치를 부착하여 다른 하드웨어를 모방하는 것</li>
+<li class="">하나의 컴퓨터가 다른 컴퓨터와 똑같이 행동하도록 만들어진 마이크로프로그래밍의 소프트웨어를 이용하는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=마이크로-다이어그노스틱스>마이크로 다이어그노스틱스<a href=#마이크로-다이어그노스틱스 class=hash-link aria-label="마이크로 다이어그노스틱스에 대한 직접 링크" title="마이크로 다이어그노스틱스에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">시스템의 고장진단을 마이크로 프로그래밍에 의해 수행하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=마이크로-커널>마이크로 커널<a href=#마이크로-커널 class=hash-link aria-label="마이크로 커널에 대한 직접 링크" title="마이크로 커널에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">운영체제의 커널 중에서 가장 기본적이고 핵심적인 기능만을 수행하는 부분만을 따로 구성한 모듈</li>
+<li class="">높은 수준의 모듈화 제공</li>
+</ul>
+<blockquote>
+<p>바인딩</p>
+<ul>
+<li class="">프로그램 내에서 변수 등을 실제 값으로 배정하는 것</li>
+<li class="">명령문과 데이터를 주기억장치에 특정 위치로 옮기는 것</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기억장치-구성>기억장치 구성<a href=#기억장치-구성 class=hash-link aria-label="기억장치 구성에 대한 직접 링크" title="기억장치 구성에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단일-프로그래밍-시스템>단일 프로그래밍 시스템<a href=#단일-프로그래밍-시스템 class=hash-link aria-label="단일 프로그래밍 시스템에 대한 직접 링크" title="단일 프로그래밍 시스템에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">주기억장치는 운영체제가 상주할 영역과 현재 수행될 사용자 프로그램이 적재될 영역으로 나뉜다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중-프로그래밍-시스템>다중 프로그래밍 시스템<a href=#다중-프로그래밍-시스템 class=hash-link aria-label="다중 프로그래밍 시스템에 대한 직접 링크" title="다중 프로그래밍 시스템에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">여러 개의 프로세스를 처리</li>
+<li class="">주기억장치 관리 기법이 필요하다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=연속-적재-방법>연속 적재 방법<a href=#연속-적재-방법 class=hash-link aria-label="연속 적재 방법에 대한 직접 링크" title="연속 적재 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">연속된 공간에 할당</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=분산-적재-방법>분산 적재 방법<a href=#분산-적재-방법 class=hash-link aria-label="분산 적재 방법에 대한 직접 링크" title="분산 적재 방법에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">필요한 부분만 주기억장치에 적재하는 방법</li>
+<li class="">페이지나 세그먼트로 구성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=단일-사용자-연속기억장치-할당>단일 사용자 연속기억장치 할당<a href=#단일-사용자-연속기억장치-할당 class=hash-link aria-label="단일 사용자 연속기억장치 할당에 대한 직접 링크" title="단일 사용자 연속기억장치 할당에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">주기억장치에 항상 한 프로그램만 적재된 가장 단순한 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=상주모니터>상주모니터<a href=#상주모니터 class=hash-link aria-label="상주모니터에 대한 직접 링크" title="상주모니터에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">CPU의 유휴시간을 극복하기 위해 작업의 묶음들을 자동으로 처리할 수 있는 운영체제</li>
+<li class="">한 프로그램에서 다른 프로그램으로 제어가 자동적으로 넘어가도록 하기 위해 기억장치에 상주</li>
+<li class="">입출력 시간동안 CPU는 유휴상태</li>
+<li class="">사용자 공간보다 큰 프로그램은 실행이 불가능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=오버레이-기법>오버레이 기법<a href=#오버레이-기법 class=hash-link aria-label="오버레이 기법에 대한 직접 링크" title="오버레이 기법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">주기억 장치 용량보다 더 큰 프로그램을 분할해 그 분할 된 프로그램을 순차적으로 같은 영역에 적재해 실행하는 방법</li>
+<li class="">디스크에 프로그램을 유지하고 운영체제에 의해 기억장치로 교체시키는 방법</li>
+<li class="">프로그램을 여러 개의 분할된 조각으로 나누는 일은 프로그래머가 담당</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교체-기법>교체 기법<a href=#교체-기법 class=hash-link aria-label="교체 기법에 대한 직접 링크" title="교체 기법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">swipping</li>
+<li class="">충분하지 못한 주기억장치를 가진 시스템에서 여러 개의 프로그램이 하나의 메모리에서 실행될 수 있도록 하기 위해 사용하는 기법</li>
+<li class="">swap out: 보조기억장치로 이동</li>
+<li class="">swap in: 주기억장치로 이동</li>
+<li class="">오버레이 기능이 없으면 기억공간보다 작은 프로그램만 실행 가능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=내부-단편화>내부 단편화<a href=#내부-단편화 class=hash-link aria-label="내부 단편화에 대한 직접 링크" title="내부 단편화에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">하나의 분할에 작업을 할당하고 남은 공간</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=외부-단편화>외부 단편화<a href=#외부-단편화 class=hash-link aria-label="외부 단편화에 대한 직접 링크" title="외부 단편화에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">대기 중인 작업보다 분할영역이 너무 적어 분할 전체가 빈 공간이 될 때</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기억장치-통합>기억장치 통합<a href=#기억장치-통합 class=hash-link aria-label="기억장치 통합에 대한 직접 링크" title="기억장치 통합에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class=""><strong>인접된</strong> 공간을 하나의 공간으로 만드는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기억장치-집약>기억장치 집약<a href=#기억장치-집약 class=hash-link aria-label="기억장치 집약에 대한 직접 링크" title="기억장치 집약에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">여러 개의 기억공간들을 하나의 큰 기억공간으로 만드는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기억장치-배치-기법>기억장치 배치 기법<a href=#기억장치-배치-기법 class=hash-link aria-label="기억장치 배치 기법에 대한 직접 링크" title="기억장치 배치 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">최적 적합</li>
+<li class="">최초 적합</li>
+<li class="">최악 적합</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=블록-사상>블록 사상<a href=#블록-사상 class=hash-link aria-label="블록 사상에 대한 직접 링크" title="블록 사상에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">가상기억장치 내의 작업을 블록단위로 사상하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이징-기법>페이징 기법<a href=#페이징-기법 class=hash-link aria-label="페이징 기법에 대한 직접 링크" title="페이징 기법에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=직접사상>직접사상<a href=#직접사상 class=hash-link aria-label="직접사상에 대한 직접 링크" title="직접사상에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">페이지 사상테이블의 시작점 레지스터에 페이지 번호를 더해 주기억장치에서 그 페이지 시작주소를 구한 다음 변위를 더함으로 실주소를 계산한다.</li>
+<li class="">프로세스의 가상기억장치를 구성하는 모든 페이지에 대한 항목은 페이지 테이블에 존재</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=연관사상>연관사상<a href=#연관사상 class=hash-link aria-label="연관사상에 대한 직접 링크" title="연관사상에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">빠른 주소변환을 위해 고속의 연관기억장치를 이용해 페이지 사상표 전체를 넣는 방법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=연관직접사상>연관/직접사상<a href=#연관직접사상 class=hash-link aria-label="연관/직접사상에 대한 직접 링크" title="연관/직접사상에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">연관기억장치에는 페이지 사상테이블 중 지역성 있는 페이지를 넣고, 나머지는 직접사상</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=세그먼테이션-기법>세그먼테이션 기법<a href=#세그먼테이션-기법 class=hash-link aria-label="세그먼테이션 기법에 대한 직접 링크" title="세그먼테이션 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">가상주소를 분할형태가 일정한 배열이나 함수와 같은 논리적인 다양한 크기의 가변 단위로 주기억장치의 연속적인 공간에 적재하는 방법</li>
+<li class="">외부단편화 발생 가능</li>
+<li class="">순수 세그먼테이션 기법에서 가상주소 양식: 세그먼테이션 번호, 변위, 가상 주소</li>
+<li class="">세그먼 테이블 사상테이블 형식: R, W, E(xecute), A(append)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이징세그먼테이션-혼용>페이징/세그먼테이션 혼용<a href=#페이징세그먼테이션-혼용 class=hash-link aria-label="페이징/세그먼테이션 혼용에 대한 직접 링크" title="페이징/세그먼테이션 혼용에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">세그먼트를 페이지화 하는 것</li>
+<li class="">가상주소형식이 3차원 요소로 구성: V = (s, p, d)</li>
+<li class="">세그먼트 번호, 페이지 번호, 변위</li>
+<li class="">세그먼트의 사상테이블의 항이 세그먼트 주소를 가지고 있지 않고 페이지 사상테이블의 기준주소를 가지고 있다.</li>
+</ul>
+<blockquote>
+<p>페이지 사상테이블 항목</p>
+<ul>
+<li class="">페이지 존재 비트</li>
+<li class="">보조 기억장치 주소</li>
+<li class="">페이지 프레임 번호</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이지-호출-기법>페이지 호출 기법<a href=#페이지-호출-기법 class=hash-link aria-label="페이지 호출 기법에 대한 직접 링크" title="페이지 호출 기법에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=요구-페이지-호출기법>요구 페이지 호출기법<a href=#요구-페이지-호출기법 class=hash-link aria-label="요구 페이지 호출기법에 대한 직접 링크" title="요구 페이지 호출기법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">수행 중인 프로세스에 의해 호출된 페이지나 세그먼트를 주기억장치로 옮기는 전략</li>
+<li class="">호출된 페이지는 실제로 참조되는 페이지</li>
+<li class="">페이지를 할당받기 위해 대기시간이 길다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=예상-페이지-호출기법>예상 페이지 호출기법<a href=#예상-페이지-호출기법 class=hash-link aria-label="예상 페이지 호출기법에 대한 직접 링크" title="예상 페이지 호출기법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스에 의해 요청될 페이지나 세그먼트를 미리 예측하여 프로세스가 요구하기 전에 주기억장치로 적재시키는 전략</li>
+<li class="">예측 결정이 올바라야 실행시간이 감소한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이지-교체-기법>페이지 교체 기법<a href=#페이지-교체-기법 class=hash-link aria-label="페이지 교체 기법에 대한 직접 링크" title="페이지 교체 기법에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=opt>OPT<a href=#opt class=hash-link aria-label="OPT에 대한 직접 링크" title="OPT에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">최적 교체</li>
+<li class="">앞으로 가장 오랫동안 사용하지 않을 페이지를 교체하는 기법</li>
+<li class="">실현 가능성이 없다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=무작위-페이지-교체>무작위 페이지 교체<a href=#무작위-페이지-교체 class=hash-link aria-label="무작위 페이지 교체에 대한 직접 링크" title="무작위 페이지 교체에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">무작위로 교체</li>
+<li class="">오버헤드가 적다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fifo>FIFO<a href=#fifo class=hash-link aria-label="FIFO에 대한 직접 링크" title="FIFO에 대한 직접 링크" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=lru>LRU<a href=#lru class=hash-link aria-label="LRU에 대한 직접 링크" title="LRU에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Least Recently Used</li>
+<li class="">최근에 가장 오랫동안 사용하지 않은 페이지를 교체</li>
+<li class="">계수기나 스택을 두어 계산한다.</li>
+<li class="">스택 알고리즘</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=lfu>LFU<a href=#lfu class=hash-link aria-label="LFU에 대한 직접 링크" title="LFU에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Least Frequently Used</li>
+<li class="">사용빈도가 가장 적은 페이지를 교체하는 기법</li>
+<li class="">프로그램 실행 초기에 많이 사용된 페이지가 나중에도 프레임을 계속 차지할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=nur>NUR<a href=#nur class=hash-link aria-label="NUR에 대한 직접 링크" title="NUR에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Not Used Recently</li>
+<li class="">최근에 사용하지 않은 페이지를 교체하는 기법</li>
+<li class="">각 페이지마다 참조 비트와 변형 비트를 사용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=클록-페이지-교체>클록 페이지 교체<a href=#클록-페이지-교체 class=hash-link aria-label="클록 페이지 교체에 대한 직접 링크" title="클록 페이지 교체에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>원형 리스트</strong>를 사용해 페이지를 배열시켜 놓고 리스트의 포인터가 시계바늘이 돌아가는 것처럼 그 원형 리스트로 돌아가게 되는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=scr>SCR<a href=#scr class=hash-link aria-label="SCR에 대한 직접 링크" title="SCR에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">2차 기회 페이지 교체</li>
+<li class="">가장 오랫동안 주기억장치에 있던 페이지 중 자주 사용되는 페이지의 교체를 방지하기 위한 것</li>
+<li class="">FIFO 기법의 단점을 보완한 기법</li>
+<li class="">Second Chance 기법</li>
+<li class="">각 페이지마다 참조 비트를 두고 1일 경우 참조 비트를 0으로 바꿔 FIFO 리스트의 맨 마지막으로 이동시킨다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=시간-국부성>시간 국부성<a href=#시간-국부성 class=hash-link aria-label="시간 국부성에 대한 직접 링크" title="시간 국부성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">참조되는 기억장소가 가까운 미래에 계속 참조될 수 있다.</li>
+<li class="">반복, 서부루틴, 스택, 계산, 집계</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=공간-국부성>공간 국부성<a href=#공간-국부성 class=hash-link aria-label="공간 국부성에 대한 직접 링크" title="공간 국부성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">하나의 기억장소가 참조되면 그 근처의 기억장소가 계속 참조될 수 있다.</li>
+<li class="">배열 순회, 순차적 실행, 변수 집합</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=워킹-세트>워킹 세트<a href=#워킹-세트 class=hash-link aria-label="워킹 세트에 대한 직접 링크" title="워킹 세트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">지역성(국부성)을 이용해 페이지 부재율을 감소시키기 위한 개념</li>
+<li class="">일정 시간 동안 자주 참조하는 페이지의 집합</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=스레싱>스레싱<a href=#스레싱 class=hash-link aria-label="스레싱에 대한 직접 링크" title="스레싱에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">페이지 부재가 비정상적으로 많이 발생하여 프로그램이 처리보다 페이지 교체에 많은 시간을 소비함으로 시스템 처리량이 급격히 저하되는 현상</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이지-부재>페이지 부재<a href=#페이지-부재 class=hash-link aria-label="페이지 부재에 대한 직접 링크" title="페이지 부재에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">프로세스 실행 시 참조할 페이지가 주기억장치에 없는 현상</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=페이지-크기>페이지 크기<a href=#페이지-크기 class=hash-link aria-label="페이지 크기에 대한 직접 링크" title="페이지 크기에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=작을-경우>작을 경우<a href=#작을-경우 class=hash-link aria-label="작을 경우에 대한 직접 링크" title="작을 경우에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">효과적인 워킹세트 확보</li>
+<li class="">사상 테이블 크기 증가</li>
+<li class="">기억공간 낭비</li>
+<li class="">기억장치 효율을 좋다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=클-경우>클 경우<a href=#클-경우 class=hash-link aria-label="클 경우에 대한 직접 링크" title="클 경우에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">페이지 부재 수 최소화</li>
+<li class="">페이지 단편화 현상 초래</li>
+<li class="">사상 테이블 크기 감소</li>
+<li class="">입출력 효율 증가</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=요구-페이징-기법>요구 페이징 기법<a href=#요구-페이징-기법 class=hash-link aria-label="요구 페이징 기법에 대한 직접 링크" title="요구 페이징 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">페이지의 요구가 있을 때 주기억장치에 적재하는 기법</li>
+<li class="">유효 또는 무효를 나타내는 비트가 페이지 사상테이블의 각 항목에 추가된다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전역-교체>전역 교체<a href=#전역-교체 class=hash-link aria-label="전역 교체에 대한 직접 링크" title="전역 교체에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스가 교체할 프레임을 그 프레임이 현재 다른 프로세스에 할당되어 있어도 그에 상관없이 전체 프레임 중에서 하나를 선택하여 그 프레임을 사용할 수 있도록 해준다.</li>
+<li class="">한 프로세스에 할당된 프레임 수는 증가한다.</li>
+<li class="">자신의 페이지 부재율을 조정할 수 없다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=지역-교체>지역 교체<a href=#지역-교체 class=hash-link aria-label="지역 교체에 대한 직접 링크" title="지역 교체에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">각 프로세스가 그 프로세스에 할당된 프레임 중에서 하나를 선택해서 그 프레임을 사용할 수 있도록 해준다.</li>
+<li class="">프로세스에 할당된 프레임 수는 변하지 않는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스>프로세스<a href=#프로세스 class=hash-link aria-label="프로세스에 대한 직접 링크" title="프로세스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PCB를 가진 프로그램</li>
+<li class="">실기억장치에 저장된 프로그램</li>
+<li class="">프로시저가 활동 중인 실체</li>
+<li class="">비동기적 행위를 일으키는 주체</li>
+<li class="">운영체제가 관리하는 실행 단위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-스케줄러>프로세스 스케줄러<a href=#프로세스-스케줄러 class=hash-link aria-label="프로세스 스케줄러에 대한 직접 링크" title="프로세스 스케줄러에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">둘 이상의 프로세스가 적절히 실행될 수 있도록 컨트롤 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=작업-스케줄러>작업 스케줄러<a href=#작업-스케줄러 class=hash-link aria-label="작업 스케줄러에 대한 직접 링크" title="작업 스케줄러에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">작업의 운선순위, 리소스의 할당 등을 판단해 처리율을 높이는 작업을 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-상태>프로세스 상태<a href=#프로세스-상태 class=hash-link aria-label="프로세스 상태에 대한 직접 링크" title="프로세스 상태에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">제출상태: submit</li>
+<li class="">보류상태: hold, 스풀러에 의해 디스크에 수록되어 있는 상태</li>
+<li class="">준비상태: ready, CPU가 사용가능한 상태, 처리를 기다리고 있는 상태</li>
+<li class="">실행상태: running, 프로세스를 수행 중</li>
+<li class="">대기상태: blocked, 입출력 처리가 끝날 때 까지 대기 큐에서 대기하는 상태</li>
+<li class="">완료상태: complete</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-관리-모듈>프로세스 관리 모듈<a href=#프로세스-관리-모듈 class=hash-link aria-label="프로세스 관리 모듈에 대한 직접 링크" title="프로세스 관리 모듈에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">스풀러: 제출된 작업을 디스크에 수록하여 보류상태로 변환</li>
+<li class="">작업스케줄러: 보류 상태 작업들 중 실행될 작업을 선정</li>
+<li class="">프로세스 스케줄러: 여러 프로세스 중에서 실행될 프로세스를 선정</li>
+<li class="">트래픽 제어기: 모든 프로세스의 상태를 파악하고 프로세스 관리 및 상태변환을 수행하며 프로세스 간의 통신과 동기화를 조정</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-제어-블록>프로세스 제어 블록<a href=#프로세스-제어-블록 class=hash-link aria-label="프로세스 제어 블록에 대한 직접 링크" title="프로세스 제어 블록에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">PCB</li>
+<li class="">프로세스 생성시 만들어지며 모든 프로세스는 각기 고유의 PCB를 가진다.</li>
+<li class="">프로세스 식별자</li>
+<li class="">프로그램 카운터</li>
+<li class="">우선순위</li>
+<li class="">처리기 레지스터</li>
+<li class="">기억장치 관리정보</li>
+<li class="">입출력 정보</li>
+<li class="">CPU 사용 시간, 시간 범위, 계정번호, 작업 번호 등</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=스레드>스레드<a href=#스레드 class=hash-link aria-label="스레드에 대한 직접 링크" title="스레드에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스는 스레드를 담는 공간</li>
+<li class="">실행점이 여러개</li>
+<li class="">CPU가 하나인 시스템에서 병행실행 가능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스케줄러>스케줄러<a href=#스케줄러 class=hash-link aria-label="스케줄러에 대한 직접 링크" title="스케줄러에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=장기-스케줄러>장기 스케줄러<a href=#장기-스케줄러 class=hash-link aria-label="장기 스케줄러에 대한 직접 링크" title="장기 스케줄러에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">작업 스케줄러</li>
+<li class="">디스크공간에 제출된 프로세스들을 선택하여 주기억장치로 적재하며 실행 빈도수가 적어 장기 스케줄링</li>
+<li class="">프로세스가 종료되어 시스템을 떠날 때만 새로운 프로세스를 생성하기 위해 호출</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=단기-스케줄러>단기 스케줄러<a href=#단기-스케줄러 class=hash-link aria-label="단기 스케줄러에 대한 직접 링크" title="단기 스케줄러에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">CPU 스케줄러, 디스패쳐</li>
+<li class="">실행되어 있는 프로세스 중에서 한 프로세스를 선택하여 CPU를 할당</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=중기-스케줄러>중기 스케줄러<a href=#중기-스케줄러 class=hash-link aria-label="중기 스케줄러에 대한 직접 링크" title="중기 스케줄러에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">CPU를 경쟁하는 프로세스들의 수를 줄여서 다중 프로그래밍의 정도를 완하하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=선점-스케줄링>선점 스케줄링<a href=#선점-스케줄링 class=hash-link aria-label="선점 스케줄링에 대한 직접 링크" title="선점 스케줄링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">우선순위가 높은 다른 프로세스가 현재 프로세스를 중단시키고 자신이 CPU를 차지할 수 있는 기법</li>
+<li class="">SRT, RR, 선점 우선순위, 다단계 큐, 다단계 피드백 큐</li>
+<li class="">시분할 시스템에 유용</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=비선점-스케줄링>비선점 스케줄링<a href=#비선점-스케줄링 class=hash-link aria-label="비선점 스케줄링에 대한 직접 링크" title="비선점 스케줄링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">한 프로세스가 CPU를 할당 받으면 다른 프로세스는 CPU를 점유하지 못하는 기법</li>
+<li class="">우선순위, FIFO, SJF, HRN, 기한부 알고리즘</li>
+<li class="">모든 프로세스에 공정하고 응답시간이 예측 가능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스케줄링-알고리즘>스케줄링 알고리즘<a href=#스케줄링-알고리즘 class=hash-link aria-label="스케줄링 알고리즘에 대한 직접 링크" title="스케줄링 알고리즘에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기한부-스케줄링>기한부 스케줄링<a href=#기한부-스케줄링 class=hash-link aria-label="기한부 스케줄링에 대한 직접 링크" title="기한부 스케줄링에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">처리기 할당시간을 제한하여 작업 할당시간안에 반드시 종료되도록 하는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=우선순위-스케줄링-알고리즘>우선순위 스케줄링 알고리즘<a href=#우선순위-스케줄링-알고리즘 class=hash-link aria-label="우선순위 스케줄링 알고리즘에 대한 직접 링크" title="우선순위 스케줄링 알고리즘에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">우선순위가 높은 것에 먼저 CPU를 할당하는 방식</li>
+<li class="">FIFO 원리</li>
+<li class="">기아현상 발생을 방지하기위해 우선순위를 높이는 에이징 기법이 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fcfs>FCFS<a href=#fcfs class=hash-link aria-label="FCFS에 대한 직접 링크" title="FCFS에 대한 직접 링크" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=sjf>SJF<a href=#sjf class=hash-link aria-label="SJF에 대한 직접 링크" title="SJF에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Shortest Job First</li>
+<li class="">작업 수행시간이 가장 짧다고 판단되는 것을 먼저 수행</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=srt>SRT<a href=#srt class=hash-link aria-label="SRT에 대한 직접 링크" title="SRT에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">비선점 스케줄링인 SJF를 선점형태로 변경한 기법</li>
+<li class="">Short Remaining Time</li>
+<li class="">가장 짧은 시간이 소요된다고 판단되는 프로세스를 먼저 수행</li>
+<li class="">더 짧다고 판단되는 프로세스가 큐에 들어오면 언제라도 선점된다.</li>
+<li class="">시분할 시스템에 유용</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rr>RR<a href=#rr class=hash-link aria-label="RR에 대한 직접 링크" title="RR에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">각 프로세스는 같은 크기의 CPU 시간을 할당받는다.</li>
+<li class="">시분할 방식에 효과적이다.</li>
+<li class="">할당시간이 크면 FCFS와 같고, 작은면 문맥교환 및 오버헤드가 자주 발생한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hrn>HRN<a href=#hrn class=hash-link aria-label="HRN에 대한 직접 링크" title="HRN에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Highest Response Ratio Next</li>
+<li class="">실행시간이 긴 프로세스에 불리한 SJF 기법을 보완하기 위한 것</li>
+<li class="">대기시간과 서비스 시간을 사용한다.</li>
+<li class="">우선순위 = (대기시간 + 서비스시간) / 서비스 시간</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fss>FSS<a href=#fss class=hash-link aria-label="FSS에 대한 직접 링크" title="FSS에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Fair Share Scheduling</li>
+<li class="">프로세스들 집합 간에 프로세스의 스케줄링을 지원하며 UNIX 환경에서 서로 관계있는 사용자들에게 한정된 비용으로 시스템 자원을 사용할 수 있게 개발</li>
+<li class="">사용자들은 그룹 짓는데 우선순위 RR 프로세스 스케줄러를 사용한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=다단계-피드백-큐-스케줄링>다단계 피드백 큐 스케줄링<a href=#다단계-피드백-큐-스케줄링 class=hash-link aria-label="다단계 피드백 큐 스케줄링에 대한 직접 링크" title="다단계 피드백 큐 스케줄링에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Multi-level Feedback Queue Scheduling</li>
+<li class="">여러 개의 큐를 두고 시간이 지나면 우선순위가 떨어지는 큐로 밀려나게 하는 것과 같이 실행시간이 긴 작업에 벌칙을 주는 방식</li>
+<li class="">각 큐의 CPU 할당시간을 정할 수 있어 적응력이 커진다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=병행-프로세스>병행 프로세스<a href=#병행-프로세스 class=hash-link aria-label="병행 프로세스에 대한 직접 링크" title="병행 프로세스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">concurrent process</li>
+<li class="">두 개 이상의 프로세스들이 동시에 존재하며 실행상태에 있는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=우선순위-그래프>우선순위 그래프<a href=#우선순위-그래프 class=hash-link aria-label="우선순위 그래프에 대한 직접 링크" title="우선순위 그래프에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">precedence graph</li>
+<li class="">각 노드가 개개의 문에 대응하는 방향성 비순환 그래프</li>
+<li class="">어떤 연산의 일부분이 가지는 우선순위 제약조건을 정의하는데 유용하다.</li>
+<li class="">프로그래밍 언어에서는 사용이 곤란하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=forkjoin>Fork/join<a href=#forkjoin class=hash-link aria-label="Fork/join에 대한 직접 링크" title="Fork/join에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">최초로 병행 프로그램을 언어적으로 표현</li>
+<li class="">Fork: 단일 연산을 2개의 독립적인 연산으로 분할시키는 방법</li>
+<li class="">Join: 병행하는 2개의 연산을 하나로 재결합시키는 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=병행문>병행문<a href=#병행문 class=hash-link aria-label="병행문에 대한 직접 링크" title="병행문에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">parbegin/parend 표현방법을 사용하는 기법</li>
+<li class="">1개의 프로세스가 여러 가닥의 병렬 프로세스로 분할되었다가 다시 한 가닥의 프로세스로 결합하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=masterslave>Master/Slave<a href=#masterslave class=hash-link aria-label="Master/Slave에 대한 직접 링크" title="Master/Slave에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Master는 연산 + 입출력</li>
+<li class="">Slave 연산</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=약결합-시스템>약결합 시스템<a href=#약결합-시스템 class=hash-link aria-label="약결합 시스템에 대한 직접 링크" title="약결합 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">각 프로세스마다 독립된 메로리를 가진 시스템</li>
+<li class="">분산 처리 시스템</li>
+<li class="">각 시스템마다 독립적인 운영체제</li>
+<li class="">프로세스 간의 통신은 메세지 전달이나 원격 프로시저 호출을 통해 이뤄진다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=강결합-시스템>강결합 시스템<a href=#강결합-시스템 class=hash-link aria-label="강결합 시스템에 대한 직접 링크" title="강결합 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">여러 개의 프로세스가 하나의 메모리를 공유하여 사용하는 시스템</li>
+<li class="">다중처리 시스템</li>
+<li class="">하나의 운영체제가 모든 프로세스와 시스템 하드웨어를 제어</li>
+<li class="">프로세스 간의 통신은 공유메모리를 통해서 이뤄진다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=대칭-다중처리-구조>대칭 다중처리 구조<a href=#대칭-다중처리-구조 class=hash-link aria-label="대칭 다중처리 구조에 대한 직접 링크" title="대칭 다중처리 구조에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">모든 프로세스가 동등한 입장의 대칭성을 가지고 있으며 구현 및 수해이 매우 복잡한 형태의 가장 강력한 시스템</li>
+<li class="">한 운영체제를 동시에 수행할 수 있게 재진입 코드와 상호배제가 필요하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=비동기-병행-프로세스>비동기 병행 프로세스<a href=#비동기-병행-프로세스 class=hash-link aria-label="비동기 병행 프로세스에 대한 직접 링크" title="비동기 병행 프로세스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">독립적 프로세스: 시스템에서 실행 중인 다른 프로세스에 영향을 받지 않고 주지도 않는 프로세스</li>
+<li class="">유기적 프로세스: 프로세스가 가지는 동일한 입력에 대해 반드시 동일한 결과를 갖지는 않는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기화-기법>동기화 기법<a href=#동기화-기법 class=hash-link aria-label="동기화 기법에 대한 직접 링크" title="동기화 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Synchronization</li>
+<li class="">두 개 이상의 프로세스를 한 시점에 동시에 처리할 수 없으므로 각 프로세스에 대한 처리 순서를 결정하는 상호배제의 한 형태</li>
+<li class="">세마포어와 모니터 기법이 있다.</li>
+</ul>
+<blockquote>
+<p>상호 배제</p>
+<ul>
+<li class="">공유자원을 어느 시점에서 단지 한 개의 프로세스만이 사용할 수 있도록 하며 다른 프로세스가 공유자원에 대해 접근하지 못하게 하는 기법</li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=임계구역>임계구역<a href=#임계구역 class=hash-link aria-label="임계구역에 대한 직접 링크" title="임계구역에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Critical Section</li>
+<li class="">다중 프로그래밍 운영체제에서 여러 개의 프로세스가 공유하는 데이터 및 자원에 대하여 어느 한 시점에서 하나의 프로세스 자원 또는 데이터를 사용하도록 지정된 공유 자원을 의미하며 이를 보호구역이라 한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=test-and-set>Test and set<a href=#test-and-set class=hash-link aria-label="Test and set에 대한 직접 링크" title="Test and set에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">동시성을 제어하기 위한 동기화 명령어 중 하나로 하드웨어의 도움을 받아 수행</li>
+<li class="">함수 조건을 비교할 때엔 한 프로세스가 점령을 하면 다른 프로세스가 개입을 할 수 없도록 선점해서 사용하는 개념</li>
+<li class="">상호배제를 하는 기법</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=세마포어>세마포어<a href=#세마포어 class=hash-link aria-label="세마포어에 대한 직접 링크" title="세마포어에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">semaphore</li>
+<li class="">다익스트라가 제안</li>
+<li class="">P와 V라는 2개의 연산에 의해 동기화를 유지</li>
+<li class="">상호배제 원리 보장</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=시간종속-오류>시간종속 오류<a href=#시간종속-오류 class=hash-link aria-label="시간종속 오류에 대한 직접 링크" title="시간종속 오류에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스들이 임의적으로 변수들을 공유할 때 발생하며 어떤 특정 순서로 실행이 될 때만 발생</li>
+<li class="">프로세스가 자원에 대한 접근허가를 얻지 않고 그 자원을 연산하는 경우</li>
+<li class="">프로세스가 자원 접근을 허용받고 나서 그 자원을 결코 해제하니 않는 경우</li>
+<li class="">프로세스가 요청하지 않은 자원을 해제하는 경우</li>
+<li class="">프로세스가 동일한 자원을 반복해서 요청하는 경우</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=생산자-소비사-문제>생산자 소비사 문제<a href=#생산자-소비사-문제 class=hash-link aria-label="생산자 소비사 문제에 대한 직접 링크" title="생산자 소비사 문제에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">여러 개의 프로세스를 어떻게 동기화할 것인가에 대한 고전적인 문제</li>
+<li class="">한정 버퍼 문제, Bounded-Buffer Problem</li>
+<li class="">생산자는 데이터를 인덱스를 통해 배열에 저장하는 식으로 데이터를 생성하며 소비자는 데이터를 증가시키며 배열에 있는 데이터를 인덱스로 접근하여 소비</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=판독기기록기-문제>판독기/기록기 문제<a href=#판독기기록기-문제 class=hash-link aria-label="판독기/기록기 문제에 대한 직접 링크" title="판독기/기록기 문제에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">다수의 프로세스가 하나의 데이터 객체를 공유하는 경우 한쪽 프로세스는 판독을 하려하고 다른 한쪽 프로세스는 기록을 하려고 할 때 발생하는 문제</li>
+<li class="">기록기가 공유객체에 배타적 접근을 하도록 하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=병행-프로그래밍-언어>병행 프로그래밍 언어<a href=#병행-프로그래밍-언어 class=hash-link aria-label="병행 프로그래밍 언어에 대한 직접 링크" title="병행 프로그래밍 언어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Ada: 구조화되고 통계학적 형태를 가지고 명령적, 객체지향적인 고급수준의 컴퓨터 프로그래밍 언어</li>
+<li class="">CSP: 처음으로 병행시스템에서 상호작용 패턴을 표현하는 언어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-간의-통신>프로세스 간의 통신<a href=#프로세스-간의-통신 class=hash-link aria-label="프로세스 간의 통신에 대한 직접 링크" title="프로세스 간의 통신에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">직접통신</li>
+<li class="">간접통신: 메일 박스를 통해 메세지를 보내거나 받는다, 단방향 양방향 모두 가능</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태>교착상태<a href=#교착상태 class=hash-link aria-label="교착상태에 대한 직접 링크" title="교착상태에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=필수조건>필수조건<a href=#필수조건 class=hash-link aria-label="필수조건에 대한 직접 링크" title="필수조건에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">상호배제 조건: 자원은 한 번에 한 프로세스만 사용해야 한다.</li>
+<li class="">점유와 대기 조건: 각 프로세스가 이미 자신에게 할당된 자원을 갖고 있으면서 다른 자원을 더 요구하고 있다.</li>
+<li class="">비중단 조건: 프로세스에 할당된 자원은 스스로 반납하기 전에는 빼앗지 못한다.</li>
+<li class="">환형대기 조건: 프로세스 간 환형사슬이 존재하여 각 프로세스는 다음 프로세스가 요구하는 자원을 가지고 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자원할당-그래프>자원할당 그래프<a href=#자원할당-그래프 class=hash-link aria-label="자원할당 그래프에 대한 직접 링크" title="자원할당 그래프에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스와 자원 간의 관계를 나타내는 그래프를 의미한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태-확인방법>교착상태 확인방법<a href=#교착상태-확인방법 class=hash-link aria-label="교착상태 확인방법에 대한 직접 링크" title="교착상태 확인방법에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">자원할당 그래프의 사이클이 존재하는지 확인한다.</li>
+<li class="">사이클이 지원 유형에 하나라도 있으면 교착상태다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태-회피>교착상태 회피<a href=#교착상태-회피 class=hash-link aria-label="교착상태 회피에 대한 직접 링크" title="교착상태 회피에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">프로세스 시작 거부</li>
+<li class="">자원할당 거부: 은행원 알고리즘</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태-탐지>교착상태 탐지<a href=#교착상태-탐지 class=hash-link aria-label="교착상태 탐지에 대한 직접 링크" title="교착상태 탐지에 대한 직접 링크" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=교착상태-복구>교착상태 복구<a href=#교착상태-복구 class=hash-link aria-label="교착상태 복구에 대한 직접 링크" title="교착상태 복구에 대한 직접 링크" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디스크-접근-시간>디스크 접근 시간<a href=#디스크-접근-시간 class=hash-link aria-label="디스크 접근 시간에 대한 직접 링크" title="디스크 접근 시간에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Access Time = Seek Time + Rotational Latency + Transfer time</li>
+<li class="">탐색시간: 헤드를 적정 트랙으로 이동하는데 걸리는 시간</li>
+<li class="">회전지연시간: 데이터가 현재 위치에서 디스크 헤드까지 회전하는 데 소요되는 시간</li>
+<li class="">전송시간: 실제 바이트가 이동하는데 소요되는 시간</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디스크-스케줄링>디스크 스케줄링<a href=#디스크-스케줄링 class=hash-link aria-label="디스크 스케줄링에 대한 직접 링크" title="디스크 스케줄링에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fcfs-1>FCFS<a href=#fcfs-1 class=hash-link aria-label="FCFS에 대한 직접 링크" title="FCFS에 대한 직접 링크" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=sstf>SSTF<a href=#sstf class=hash-link aria-label="SSTF에 대한 직접 링크" title="SSTF에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Shortest Seek Time First</li>
+<li class="">탐색거리가 가장 짧은 트랙에 대한 요청을 먼저 서비스하는 기법</li>
+<li class="">일괄 처리 시스템에 유용</li>
+<li class="">대화형 시스템에는 부적합</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=scan>SCAN<a href=#scan class=hash-link aria-label="SCAN에 대한 직접 링크" title="SCAN에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">SSTF가 갖는 탐색시간의 편차를 해소하기 위한 방법</li>
+<li class="">현재 진행 중인 방향으로 가장 짧은 탐색거리에 있는 요청을 먼저 서비스</li>
+<li class="">Denning이 개발</li>
+<li class="">대부분의 디스크 스케줄링에서 기본 전략</li>
+<li class="">진행하면서 들어온 요청도 처리</li>
+<li class="">오버헤드가 작을 경우 가장 효율적</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=n-step-scan>N-step SCAN<a href=#n-step-scan class=hash-link aria-label="N-step SCAN에 대한 직접 링크" title="N-step SCAN에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">진행하면서 들어온 요청은 따로 모아 반대방향 진행 때 처리</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=c-scan>C-SCAN<a href=#c-scan class=hash-link aria-label="C-SCAN에 대한 직접 링크" title="C-SCAN에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">항상 바깥쪽에서 안쪽으로 움직이면서 가장 짧은 탐색거리를 갖는 요청을 서비스</li>
+<li class="">안쪽 끝까지 이동하면 가장 바깥쪽 끝으로 이동하고 다시 안쪽으로 들어온다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=c-look>C-LOOK<a href=#c-look class=hash-link aria-label="C-LOOK에 대한 직접 링크" title="C-LOOK에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">안쪽 끝까지 이동 후에 가장 바깥쪽 요청 트랙으로 이동한다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=sltf>SLTF<a href=#sltf class=hash-link aria-label="SLTF에 대한 직접 링크" title="SLTF에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Shortest Latency Time First</li>
+<li class="">섹터 큐잉</li>
+<li class="">회전 시간의 최적화를 위해 디스크 대기 큐에 있는 여러 요청을 섹터 위치에 따라 재정렬하고 가장 가까운 섹터를 먼저 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ram-디스크>RAM 디스크<a href=#ram-디스크 class=hash-link aria-label="RAM 디스크에 대한 직접 링크" title="RAM 디스크에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">빠른 속도로 자료를 처리할 필요가 있을 때 주기억장치인 RAM의 일부를 보조기억장치인 디스크처럼 사용하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=블로킹>블로킹<a href=#블로킹 class=hash-link aria-label="블로킹에 대한 직접 링크" title="블로킹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">레코드의 입출력 효율을 높이기 위해 여러 개의 논리 레코드를 하나의 블록으로 묶는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=버퍼링-1>버퍼링<a href=#버퍼링-1 class=hash-link aria-label="버퍼링에 대한 직접 링크" title="버퍼링에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">주기억장치의 일부에 큐 방식으로 동작하는 버퍼</li>
+<li class="">하나의 프로그램에서 CPU 연산과 I/O 연산을 중첩시켜 처리하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=파일-구조>파일 구조<a href=#파일-구조 class=hash-link aria-label="파일 구조에 대한 직접 링크" title="파일 구조에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=순차-파일>순차 파일<a href=#순차-파일 class=hash-link aria-label="순차 파일에 대한 직접 링크" title="순차 파일에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">물리적 순서에 따라 저장</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인덱스-순차파일>인덱스 순차파일<a href=#인덱스-순차파일 class=hash-link aria-label="인덱스 순차파일에 대한 직접 링크" title="인덱스 순차파일에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">레코드를 키에 따라서 논리적 순서대로 저장하고 시스템은 각 레코드의 실제 주소가 저장된 색인을 관리</li>
+<li class="">디스크에 적용되는 방식, 테이프 사용 불가</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=인덱스-순차파일-구성>인덱스 순차파일 구성<a href=#인덱스-순차파일-구성 class=hash-link aria-label="인덱스 순차파일 구성에 대한 직접 링크" title="인덱스 순차파일 구성에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">Prime</li>
+<li class="">Index<!-- -->
+<ul>
+<li class="">마스터</li>
+<li class="">실린더</li>
+<li class="">트랙</li>
+</ul>
+</li>
+<li class="">Overflow</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=직접-파일>직접 파일<a href=#직접-파일 class=hash-link aria-label="직접 파일에 대한 직접 링크" title="직접 파일에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">물리적 주소를 통해 직접 액세스되는 파일</li>
+<li class="">해싱 함수를 이용해 물리적 상대주소를 계산한 후 해당주소에 레코드를 저장</li>
+<li class="">DASD의 물리적 주소를 통해 파일의 각 레코드에 직접접근이 가능하여 접근 및 기록의 순서에 제약이 없다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=파일-접근방식>파일 접근방식<a href=#파일-접근방식 class=hash-link aria-label="파일 접근방식에 대한 직접 링크" title="파일 접근방식에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">queued access method: 레코드 순서를 미리 예상 가능할 때 사용</li>
+<li class="">basic access method: 물리적 블록의 RW는 액세스 방식이 담당하고 블로킹 및 해체는 사용자가 담당한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디스크-공간할당>디스크 공간할당<a href=#디스크-공간할당 class=hash-link aria-label="디스크 공간할당에 대한 직접 링크" title="디스크 공간할당에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=연속할당>연속할당<a href=#연속할당 class=hash-link aria-label="연속할당에 대한 직접 링크" title="연속할당에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">집약 작업이 필요하다.</li>
+<li class="">단편화가 발생할 수 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=불연속할당>불연속할당<a href=#불연속할당 class=hash-link aria-label="불연속할당에 대한 직접 링크" title="불연속할당에 대한 직접 링크" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=섹터지향-할당>섹터지향 할당<a href=#섹터지향-할당 class=hash-link aria-label="섹터지향 할당에 대한 직접 링크" title="섹터지향 할당에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">동일한 파일에 속하는 섹터들을 연결리스트로 구성하여 할당하는 방식</li>
+<li class="">논리적 연결을 탐색하는데 오랜 시간이 필요하고 포인터를 저장할 공간이 필요하다.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=블록할당>블록할당<a href=#블록할당 class=hash-link aria-label="블록할당에 대한 직접 링크" title="블록할당에 대한 직접 링크" translate=no>​</a></h4>
+<ul>
+<li class="">파일에 액세스할 때 해당 블록을 결정한 후 해당 섹터를 결정해야하는 기법</li>
+<li class="">블록체인 기법</li>
+<li class="">인덱스 블록체인 기법</li>
+<li class="">블록지향 파일사상기법: 포인터 대신 FAT(할당 테이블)에 있는 블록번호를 사용하는 기법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=파일-서술자>파일 서술자<a href=#파일-서술자 class=hash-link aria-label="파일 서술자에 대한 직접 링크" title="파일 서술자에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">file desriptor, FCB</li>
+<li class="">파일이름</li>
+<li class="">파일구조</li>
+<li class="">보조기억장치에서 파일 위치</li>
+<li class="">보조기억장치 유형</li>
+<li class="">액세스 제어정보</li>
+<li class="">파일 유형</li>
+<li class="">생성 일시, 제거 일시</li>
+<li class="">최종 수정 일시</li>
+<li class="">액세스 횟수</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=접근제어>접근제어<a href=#접근제어 class=hash-link aria-label="접근제어에 대한 직접 링크" title="접근제어에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=접근제어-행렬>접근제어 행렬<a href=#접근제어-행렬 class=hash-link aria-label="접근제어 행렬에 대한 직접 링크" title="접근제어 행렬에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">시스템 보호기법으로 행은 사용자 영역, 열은 객체를 나타낸다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=접근제어-리스트>접근제어 리스트<a href=#접근제어-리스트 class=hash-link aria-label="접근제어 리스트에 대한 직접 링크" title="접근제어 리스트에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">ACL</li>
+<li class="">각 객체에 댛나 리스트는 영역, 권한, 집합의 순서쌍으로 구성</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=자격-리스트>자격 리스트<a href=#자격-리스트 class=hash-link aria-label="자격 리스트에 대한 직접 링크" title="자격 리스트에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">capability list</li>
+<li class="">각 사용자 영역에 대한 자격들로 구성되며 객체와 그 객체에 허용된 연산 리스트</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=분산파일시스템>분산파일시스템<a href=#분산파일시스템 class=hash-link aria-label="분산파일시스템에 대한 직접 링크" title="분산파일시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DFS, Distributed File System</li>
+<li class="">여러 대의 서버에 걸쳐 분산되어 저장될 수 있는 계층형 파일시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-압축>데이터 압축<a href=#데이터-압축 class=hash-link aria-label="데이터 압축에 대한 직접 링크" title="데이터 압축에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=비손실-압축>비손실 압축<a href=#비손실-압축 class=hash-link aria-label="비손실 압축에 대한 직접 링크" title="비손실 압축에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Run Length: 문자의 반복을 줄임</li>
+<li class="">동적 사전법: 출현빈도에 따라 이진트리나 해시테이블 구성 후 포인터로 대체</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=손실압축>손실압축<a href=#손실압축 class=hash-link aria-label="손실압축에 대한 직접 링크" title="손실압축에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">이미지 압축</li>
+<li class="">오디오 압축</li>
+<li class="">비디오 압축</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로세스-테이블-정보>프로세스 테이블 정보<a href=#프로세스-테이블-정보 class=hash-link aria-label="프로세스 테이블 정보에 대한 직접 링크" title="프로세스 테이블 정보에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">프로세스 고유번호, 상위 프로세스 고유번호 (PID, PPID)</li>
+<li class="">사용자 이름, 사용자 그룹 이름 (UID, GID)</li>
+<li class="">프로세스 현재 상태</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=장치-드라이버>장치 드라이버<a href=#장치-드라이버 class=hash-link aria-label="장치 드라이버에 대한 직접 링크" title="장치 드라이버에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">장치드라이버 디렉터리는 /dev</li>
+<li class="">시스템의 각종 디바이스들에 접근하기 위한 디바이스 드라이버들이 저장되어 있는 디렉터리</li>
+<li class="">하드디스크에 차지하는 공간이 없는 가상 디렉터리</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=unix의-장치-분류>UNIX의 장치 분류<a href=#unix의-장치-분류 class=hash-link aria-label="UNIX의 장치 분류에 대한 직접 링크" title="UNIX의 장치 분류에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">블록 지향적: 입출력이 버퍼화되고 물리적인 입출력이 블록단위로 수행</li>
+<li class="">문자 지향적: 입출력이 버퍼화되지 않고, 물리적 입출력이 문자 단위로 수행, Raw 인터페이스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=unix의-파일>UNIX의 파일<a href=#unix의-파일 class=hash-link aria-label="UNIX의 파일에 대한 직접 링크" title="UNIX의 파일에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">일반 파일<!-- -->
+<ul>
+<li class="">데이터 파일: 텍스트 데이터 파일, 이진 데이터 파일</li>
+<li class="">실행가능 프로그램 파일</li>
+</ul>
+</li>
+<li class="">디렉터리 파일</li>
+<li class="">특수 파일: 주변장치들을 파일이름을 통해 접근 가능</li>
+<li class="">파일이름에 공백이 와서는 안 된다.</li>
+<li class="">255자까지 가능하다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=파일접근-자료구조>파일접근 자료구조<a href=#파일접근-자료구조 class=hash-link aria-label="파일접근 자료구조에 대한 직접 링크" title="파일접근 자료구조에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">부트 블록</li>
+<li class="">슈퍼 블록</li>
+<li class="">i-node 블록: 각 파일에 대한 metadata가 기록된 고정된 크기의 구조체 블록<!-- -->
+<ul>
+<li class="">파일 소유자 사용번호, 그룹번호</li>
+<li class="">파일의 종류</li>
+<li class="">데이터 블록의 주소</li>
+<li class="">파일의 크기</li>
+<li class="">파일이 생성, 사용, 변경된 시간</li>
+<li class="">파일의 링크 수</li>
+</ul>
+</li>
+<li class="">데이터 블록: 실제 파일블록을 저장하는 데 이용하는 블록</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=리디렉션>리디렉션<a href=#리디렉션 class=hash-link aria-label="리디렉션에 대한 직접 링크" title="리디렉션에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">명령어 처리 시 입출력 방향을 지정할 때 사용</li>
+</ul>
+<blockquote>
+<p>UNIX 시스템의 3가지 구성요소</p>
+<ul>
+<li class="">쉘</li>
+<li class="">커널</li>
+<li class="">어플리케이션</li>
+</ul>
+</blockquote></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag title="Engineer Information Processing" class="tag_zVej tagRegular_sFm0" href=/tags/정보처리/>정보처리</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href=/2017/10/25/AWS-Cli-S3-파일-업로드/><div class=pagination-nav__sublabel>이전 게시물</div><div class=pagination-nav__label>AWS Cli S3 파일 업로드</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/2017/10/18/VSCode-추천-패키지/><div class=pagination-nav__sublabel>다음 게시물</div><div class=pagination-nav__label>VSCode 추천 패키지</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#운영체제 class="table-of-contents__link toc-highlight">운영체제</a><ul><li><a href=#목적 class="table-of-contents__link toc-highlight">목적</a><li><a href=#제어프로그램 class="table-of-contents__link toc-highlight">제어프로그램</a><li><a href=#처리-프로그램 class="table-of-contents__link toc-highlight">처리 프로그램</a><li><a href=#구성-요소 class="table-of-contents__link toc-highlight">구성 요소</a><li><a href=#프로세스-기능 class="table-of-contents__link toc-highlight">프로세스 기능</a></ul><li><a href=#종류 class="table-of-contents__link toc-highlight">종류</a><li><a href=#발달-과정 class="table-of-contents__link toc-highlight">발달 과정</a><li><a href=#입출력장치-발전추세 class="table-of-contents__link toc-highlight">입출력장치 발전추세</a><ul><li><a href=#프로그램에-의한-입출력 class="table-of-contents__link toc-highlight">프로그램에 의한 입출력</a><li><a href=#인터럽트-처리에-의한-입출력 class="table-of-contents__link toc-highlight">인터럽트 처리에 의한 입출력</a><li><a href=#dma class="table-of-contents__link toc-highlight">DMA</a><li><a href=#채널 class="table-of-contents__link toc-highlight">채널</a></ul><li><a href=#기억장치-인터리빙 class="table-of-contents__link toc-highlight">기억장치 인터리빙</a><li><a href=#재배치-레지스터 class="table-of-contents__link toc-highlight">재배치 레지스터</a><li><a href=#폴링 class="table-of-contents__link toc-highlight">폴링</a><li><a href=#버퍼링 class="table-of-contents__link toc-highlight">버퍼링</a><ul><li><a href=#단일-버퍼링 class="table-of-contents__link toc-highlight">단일 버퍼링</a><li><a href=#이중-버퍼링 class="table-of-contents__link toc-highlight">이중 버퍼링</a><li><a href=#환형-버퍼링 class="table-of-contents__link toc-highlight">환형 버퍼링</a></ul><li><a href=#보조기억장치 class="table-of-contents__link toc-highlight">보조기억장치</a><ul><li><a href=#광디스크 class="table-of-contents__link toc-highlight">광디스크</a><li><a href=#디스크-용어 class="table-of-contents__link toc-highlight">디스크 용어</a><li><a href=#보조기억장치-속도 class="table-of-contents__link toc-highlight">보조기억장치 속도</a></ul><li><a href=#입출력-채널 class="table-of-contents__link toc-highlight">입출력 채널</a><ul><li><a href=#채널의-기능 class="table-of-contents__link toc-highlight">채널의 기능</a><li><a href=#채널의-종류 class="table-of-contents__link toc-highlight">채널의 종류</a><li><a href=#dma-1 class="table-of-contents__link toc-highlight">DMA</a></ul><li><a href=#주소-지정방식 class="table-of-contents__link toc-highlight">주소 지정방식</a><li><a href=#가상-기억장치 class="table-of-contents__link toc-highlight">가상 기억장치</a><ul><li><a href=#가상기억장치-구현방법 class="table-of-contents__link toc-highlight">가상기억장치 구현방법</a></ul><li><a href=#스풀링 class="table-of-contents__link toc-highlight">스풀링</a><li><a href=#컴파일러 class="table-of-contents__link toc-highlight">컴파일러</a><li><a href=#인터프리터 class="table-of-contents__link toc-highlight">인터프리터</a><li><a href=#절대로더 class="table-of-contents__link toc-highlight">절대로더</a><li><a href=#재배치-로더 class="table-of-contents__link toc-highlight">재배치 로더</a><li><a href=#링킹-로더 class="table-of-contents__link toc-highlight">링킹 로더</a><li><a href=#객체지향-운영체재 class="table-of-contents__link toc-highlight">객체지향 운영체재</a><li><a href=#펌웨어 class="table-of-contents__link toc-highlight">펌웨어</a><ul><li><a href=#에뮬레이션 class="table-of-contents__link toc-highlight">에뮬레이션</a><li><a href=#마이크로-다이어그노스틱스 class="table-of-contents__link toc-highlight">마이크로 다이어그노스틱스</a></ul><li><a href=#마이크로-커널 class="table-of-contents__link toc-highlight">마이크로 커널</a><li><a href=#기억장치-구성 class="table-of-contents__link toc-highlight">기억장치 구성</a><ul><li><a href=#단일-프로그래밍-시스템 class="table-of-contents__link toc-highlight">단일 프로그래밍 시스템</a><li><a href=#다중-프로그래밍-시스템 class="table-of-contents__link toc-highlight">다중 프로그래밍 시스템</a></ul><li><a href=#단일-사용자-연속기억장치-할당 class="table-of-contents__link toc-highlight">단일 사용자 연속기억장치 할당</a><ul><li><a href=#상주모니터 class="table-of-contents__link toc-highlight">상주모니터</a><li><a href=#오버레이-기법 class="table-of-contents__link toc-highlight">오버레이 기법</a><li><a href=#교체-기법 class="table-of-contents__link toc-highlight">교체 기법</a></ul><li><a href=#내부-단편화 class="table-of-contents__link toc-highlight">내부 단편화</a><li><a href=#외부-단편화 class="table-of-contents__link toc-highlight">외부 단편화</a><li><a href=#기억장치-통합 class="table-of-contents__link toc-highlight">기억장치 통합</a><li><a href=#기억장치-집약 class="table-of-contents__link toc-highlight">기억장치 집약</a><li><a href=#기억장치-배치-기법 class="table-of-contents__link toc-highlight">기억장치 배치 기법</a><li><a href=#블록-사상 class="table-of-contents__link toc-highlight">블록 사상</a><li><a href=#페이징-기법 class="table-of-contents__link toc-highlight">페이징 기법</a><ul><li><a href=#직접사상 class="table-of-contents__link toc-highlight">직접사상</a><li><a href=#연관사상 class="table-of-contents__link toc-highlight">연관사상</a><li><a href=#연관직접사상 class="table-of-contents__link toc-highlight">연관/직접사상</a></ul><li><a href=#세그먼테이션-기법 class="table-of-contents__link toc-highlight">세그먼테이션 기법</a><li><a href=#페이징세그먼테이션-혼용 class="table-of-contents__link toc-highlight">페이징/세그먼테이션 혼용</a><li><a href=#페이지-호출-기법 class="table-of-contents__link toc-highlight">페이지 호출 기법</a><ul><li><a href=#요구-페이지-호출기법 class="table-of-contents__link toc-highlight">요구 페이지 호출기법</a><li><a href=#예상-페이지-호출기법 class="table-of-contents__link toc-highlight">예상 페이지 호출기법</a></ul><li><a href=#페이지-교체-기법 class="table-of-contents__link toc-highlight">페이지 교체 기법</a><ul><li><a href=#opt class="table-of-contents__link toc-highlight">OPT</a><li><a href=#무작위-페이지-교체 class="table-of-contents__link toc-highlight">무작위 페이지 교체</a><li><a href=#fifo class="table-of-contents__link toc-highlight">FIFO</a><li><a href=#lru class="table-of-contents__link toc-highlight">LRU</a><li><a href=#lfu class="table-of-contents__link toc-highlight">LFU</a><li><a href=#nur class="table-of-contents__link toc-highlight">NUR</a><li><a href=#클록-페이지-교체 class="table-of-contents__link toc-highlight">클록 페이지 교체</a><li><a href=#scr class="table-of-contents__link toc-highlight">SCR</a></ul><li><a href=#시간-국부성 class="table-of-contents__link toc-highlight">시간 국부성</a><li><a href=#공간-국부성 class="table-of-contents__link toc-highlight">공간 국부성</a><li><a href=#워킹-세트 class="table-of-contents__link toc-highlight">워킹 세트</a><ul><li><a href=#스레싱 class="table-of-contents__link toc-highlight">스레싱</a></ul><li><a href=#페이지-부재 class="table-of-contents__link toc-highlight">페이지 부재</a><li><a href=#페이지-크기 class="table-of-contents__link toc-highlight">페이지 크기</a><ul><li><a href=#작을-경우 class="table-of-contents__link toc-highlight">작을 경우</a><li><a href=#클-경우 class="table-of-contents__link toc-highlight">클 경우</a></ul><li><a href=#요구-페이징-기법 class="table-of-contents__link toc-highlight">요구 페이징 기법</a><ul><li><a href=#전역-교체 class="table-of-contents__link toc-highlight">전역 교체</a><li><a href=#지역-교체 class="table-of-contents__link toc-highlight">지역 교체</a></ul><li><a href=#프로세스 class="table-of-contents__link toc-highlight">프로세스</a><li><a href=#프로세스-스케줄러 class="table-of-contents__link toc-highlight">프로세스 스케줄러</a><ul><li><a href=#작업-스케줄러 class="table-of-contents__link toc-highlight">작업 스케줄러</a><li><a href=#프로세스-상태 class="table-of-contents__link toc-highlight">프로세스 상태</a><li><a href=#프로세스-관리-모듈 class="table-of-contents__link toc-highlight">프로세스 관리 모듈</a><li><a href=#프로세스-제어-블록 class="table-of-contents__link toc-highlight">프로세스 제어 블록</a><li><a href=#스레드 class="table-of-contents__link toc-highlight">스레드</a></ul><li><a href=#스케줄러 class="table-of-contents__link toc-highlight">스케줄러</a><ul><li><a href=#장기-스케줄러 class="table-of-contents__link toc-highlight">장기 스케줄러</a><li><a href=#단기-스케줄러 class="table-of-contents__link toc-highlight">단기 스케줄러</a><li><a href=#중기-스케줄러 class="table-of-contents__link toc-highlight">중기 스케줄러</a></ul><li><a href=#선점-스케줄링 class="table-of-contents__link toc-highlight">선점 스케줄링</a><li><a href=#비선점-스케줄링 class="table-of-contents__link toc-highlight">비선점 스케줄링</a><li><a href=#스케줄링-알고리즘 class="table-of-contents__link toc-highlight">스케줄링 알고리즘</a><ul><li><a href=#기한부-스케줄링 class="table-of-contents__link toc-highlight">기한부 스케줄링</a><li><a href=#우선순위-스케줄링-알고리즘 class="table-of-contents__link toc-highlight">우선순위 스케줄링 알고리즘</a><li><a href=#fcfs class="table-of-contents__link toc-highlight">FCFS</a><li><a href=#sjf class="table-of-contents__link toc-highlight">SJF</a><li><a href=#srt class="table-of-contents__link toc-highlight">SRT</a><li><a href=#rr class="table-of-contents__link toc-highlight">RR</a><li><a href=#hrn class="table-of-contents__link toc-highlight">HRN</a><li><a href=#fss class="table-of-contents__link toc-highlight">FSS</a><li><a href=#다단계-피드백-큐-스케줄링 class="table-of-contents__link toc-highlight">다단계 피드백 큐 스케줄링</a></ul><li><a href=#병행-프로세스 class="table-of-contents__link toc-highlight">병행 프로세스</a><li><a href=#우선순위-그래프 class="table-of-contents__link toc-highlight">우선순위 그래프</a><li><a href=#forkjoin class="table-of-contents__link toc-highlight">Fork/join</a><li><a href=#병행문 class="table-of-contents__link toc-highlight">병행문</a><li><a href=#masterslave class="table-of-contents__link toc-highlight">Master/Slave</a><li><a href=#약결합-시스템 class="table-of-contents__link toc-highlight">약결합 시스템</a><li><a href=#강결합-시스템 class="table-of-contents__link toc-highlight">강결합 시스템</a><li><a href=#대칭-다중처리-구조 class="table-of-contents__link toc-highlight">대칭 다중처리 구조</a><li><a href=#비동기-병행-프로세스 class="table-of-contents__link toc-highlight">비동기 병행 프로세스</a><li><a href=#동기화-기법 class="table-of-contents__link toc-highlight">동기화 기법</a><ul><li><a href=#임계구역 class="table-of-contents__link toc-highlight">임계구역</a><li><a href=#test-and-set class="table-of-contents__link toc-highlight">Test and set</a><li><a href=#세마포어 class="table-of-contents__link toc-highlight">세마포어</a><li><a href=#시간종속-오류 class="table-of-contents__link toc-highlight">시간종속 오류</a></ul><li><a href=#생산자-소비사-문제 class="table-of-contents__link toc-highlight">생산자 소비사 문제</a><li><a href=#판독기기록기-문제 class="table-of-contents__link toc-highlight">판독기/기록기 문제</a><li><a href=#병행-프로그래밍-언어 class="table-of-contents__link toc-highlight">병행 프로그래밍 언어</a><li><a href=#프로세스-간의-통신 class="table-of-contents__link toc-highlight">프로세스 간의 통신</a><li><a href=#교착상태 class="table-of-contents__link toc-highlight">교착상태</a><ul><li><a href=#필수조건 class="table-of-contents__link toc-highlight">필수조건</a><li><a href=#자원할당-그래프 class="table-of-contents__link toc-highlight">자원할당 그래프</a><li><a href=#교착상태-확인방법 class="table-of-contents__link toc-highlight">교착상태 확인방법</a><li><a href=#교착상태-회피 class="table-of-contents__link toc-highlight">교착상태 회피</a><li><a href=#교착상태-탐지 class="table-of-contents__link toc-highlight">교착상태 탐지</a><li><a href=#교착상태-복구 class="table-of-contents__link toc-highlight">교착상태 복구</a></ul><li><a href=#디스크-접근-시간 class="table-of-contents__link toc-highlight">디스크 접근 시간</a><li><a href=#디스크-스케줄링 class="table-of-contents__link toc-highlight">디스크 스케줄링</a><ul><li><a href=#fcfs-1 class="table-of-contents__link toc-highlight">FCFS</a><li><a href=#sstf class="table-of-contents__link toc-highlight">SSTF</a><li><a href=#scan class="table-of-contents__link toc-highlight">SCAN</a><li><a href=#n-step-scan class="table-of-contents__link toc-highlight">N-step SCAN</a><li><a href=#c-scan class="table-of-contents__link toc-highlight">C-SCAN</a><li><a href=#c-look class="table-of-contents__link toc-highlight">C-LOOK</a><li><a href=#sltf class="table-of-contents__link toc-highlight">SLTF</a></ul><li><a href=#ram-디스크 class="table-of-contents__link toc-highlight">RAM 디스크</a><li><a href=#블로킹 class="table-of-contents__link toc-highlight">블로킹</a><li><a href=#버퍼링-1 class="table-of-contents__link toc-highlight">버퍼링</a><li><a href=#파일-구조 class="table-of-contents__link toc-highlight">파일 구조</a><ul><li><a href=#순차-파일 class="table-of-contents__link toc-highlight">순차 파일</a><li><a href=#인덱스-순차파일 class="table-of-contents__link toc-highlight">인덱스 순차파일</a><li><a href=#직접-파일 class="table-of-contents__link toc-highlight">직접 파일</a></ul><li><a href=#파일-접근방식 class="table-of-contents__link toc-highlight">파일 접근방식</a><li><a href=#디스크-공간할당 class="table-of-contents__link toc-highlight">디스크 공간할당</a><ul><li><a href=#연속할당 class="table-of-contents__link toc-highlight">연속할당</a><li><a href=#불연속할당 class="table-of-contents__link toc-highlight">불연속할당</a></ul><li><a href=#파일-서술자 class="table-of-contents__link toc-highlight">파일 서술자</a><li><a href=#접근제어 class="table-of-contents__link toc-highlight">접근제어</a><ul><li><a href=#접근제어-행렬 class="table-of-contents__link toc-highlight">접근제어 행렬</a><li><a href=#접근제어-리스트 class="table-of-contents__link toc-highlight">접근제어 리스트</a><li><a href=#자격-리스트 class="table-of-contents__link toc-highlight">자격 리스트</a></ul><li><a href=#분산파일시스템 class="table-of-contents__link toc-highlight">분산파일시스템</a><li><a href=#데이터-압축 class="table-of-contents__link toc-highlight">데이터 압축</a><ul><li><a href=#비손실-압축 class="table-of-contents__link toc-highlight">비손실 압축</a><li><a href=#손실압축 class="table-of-contents__link toc-highlight">손실압축</a></ul><li><a href=#프로세스-테이블-정보 class="table-of-contents__link toc-highlight">프로세스 테이블 정보</a><li><a href=#장치-드라이버 class="table-of-contents__link toc-highlight">장치 드라이버</a><li><a href=#unix의-장치-분류 class="table-of-contents__link toc-highlight">UNIX의 장치 분류</a><li><a href=#unix의-파일 class="table-of-contents__link toc-highlight">UNIX의 파일</a><ul><li><a href=#파일접근-자료구조 class="table-of-contents__link toc-highlight">파일접근 자료구조</a></ul><li><a href=#리디렉션 class="table-of-contents__link toc-highlight">리디렉션</a></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016-2026 Eunkwang Shin.</div></div></div></footer></div></body>

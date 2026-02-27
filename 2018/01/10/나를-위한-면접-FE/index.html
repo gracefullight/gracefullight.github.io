@@ -1,0 +1,378 @@
+<!doctype html><html lang=ko dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>나를 위한 면접 (Frontend Developer Interview Questions) | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/2018/01/10/나를-위한-면접-FE/ /><meta data-rh=true property=og:locale content=ko /><meta data-rh=true property=og:locale:alternate content=en /><meta data-rh=true name=docusaurus_locale content=ko /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=ko /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="나를 위한 면접 (Frontend Developer Interview Questions) | gracefullight.dev"/><meta data-rh=true name=description content="FE Interview Questions를 아는 만큼 답해보았다"/><meta data-rh=true property=og:description content="FE Interview Questions를 아는 만큼 답해보았다"/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2018-01-10T22:32:52.000Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=interview /><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/2018/01/10/나를-위한-면접-FE/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2018/01/10/나를-위한-면접-FE/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2018/01/10/나를-위한-면접-FE/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2018/01/10/나를-위한-면접-FE/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/2018/01/10/나를-위한-면접-FE","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Eunkwang Shin","url":"https://github.com/gracefullight"},"datePublished":"2018-01-10T22:32:52.000Z","description":"FE Interview Questions를 아는 만큼 답해보았다","headline":"나를 위한 면접 (Frontend Developer Interview Questions)","isPartOf":{"@id":"https://gracefullight.dev/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/2018/01/10/나를-위한-면접-FE","name":"나를 위한 면접 (Frontend Developer Interview Questions)","url":"https://gracefullight.dev/2018/01/10/나를-위한-면접-FE"}</script><link rel=alternate type=application/rss+xml href=/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/opensearch.xml><link href=/img/favicon-32x32.png rel=icon><link href=/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/assets/css/styles.775e2857.css /><script src=/assets/js/runtime~main.8c99d553.js defer></script><script src=/assets/js/main.55b7c064.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="본문으로 건너뛰기"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>본문으로 건너뛰기</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>한국어</a><ul class=dropdown__menu><li><a href=/2018/01/10/나를-위한-면접-FE/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ko>한국어</a><li><a href=/en/2018/01/10/나를-위한-면접-FE/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/archive/>Archives</a><a class="navbar__item navbar__link" href=/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="검색 (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>검색</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="최근 블로그 문서 둘러보기"><div class="sidebarItemTitle_pO2u margin-bottom--md">최근 포스트</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>나를 위한 면접 (Frontend Developer Interview Questions)</h1><div class="container_mt6G margin-vert--md"><time datetime=2018-01-10T22:32:52.000Z>2018년 1월 10일</time> · <!-- -->약 8분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class=avatar__photo-link href=/authors/me/><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"/></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=/authors/me/><span class=authorName_yefp translate=no>Eunkwang Shin</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt><a href=https://www.linkedin.com/in/gracefullight/ target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=LinkedIn><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em preserveAspectRatio=xMidYMid viewBox="0 0 256 256" style=--dark:#0a66c2;--light:#ffffffe6 class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"/></svg></a><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=GitHub><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em viewBox="0 0 256 250" preserveAspectRatio=xMidYMid style=--dark:#000;--light:#fff class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"/></svg></a><a href=mailto:gracefullight.dev@gmail.com target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=Email><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 class=authorSocialIcon_XYv3><path stroke=none d="M0 0h24v24H0z"/><path d="M7.2 12a4.8 4.8 0 1 0 9.6 0 4.8 4.8 0 1 0-9.6 0"/><path d="M16.8 12v1.8a3 3 0 0 0 6 0V12a10.8 10.8 0 1 0-6.6 9.936"/></svg></a></div></div></div></div></div></header><div id=__blog-post-container class=markdown><p><a href=https://github.com/h5bp/Front-end-Developer-Interview-Questions target=_blank rel="noopener noreferrer" class="">FE Interview Questions</a>를 아는 만큼 답해보았다
+지극히 주관적이라 정답이 아닐 수 있습니다</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=event-delegation>event delegation<a href=#event-delegation class=hash-link aria-label="event delegation에 대한 직접 링크" title="event delegation에 대한 직접 링크" translate=no>​</a></h2>
+<blockquote>
+<p>사용자의 액션에 의해 이벤트 발생 시 이벤트는 document 레벨까지 버블링 되어 올라간다.
+이 때문에 자식 엘리먼트에서 발생하는 이벤트를 부모 엘리먼트에서도 감지할 수 있다.
+이러한 동작을 이용해 사용할 수 있는 방법이 <code>event delegation</code>이다.
+특정 엘리먼트에 하나하나 이벤트를 등록하지 않고 하나의 부모에 등록하여 부모에게 이벤트를 위임하는 방법</p>
+</blockquote>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-js codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// 버튼마다 onClick Event Listener 등록</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token dom variable" style=color:#36acaa>document</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>getElementById</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"btn1"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>addEventListener</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"click"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token parameter">event</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token arrow operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token dom variable" style=color:#36acaa>document</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>getElementById</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"btn2"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>addEventListener</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"click"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token parameter">event</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token arrow operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token dom variable" style=color:#36acaa>document</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>getElementById</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"btn3"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>addEventListener</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"click"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token parameter">event</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token arrow operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// Event Delegation</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token dom variable" style=color:#36acaa>document</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>getElementById</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"div"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>addEventListener</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"click"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token parameter">event</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token arrow operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword control-flow" style=color:#00009f>switch</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">event</span><span class="token punctuation" style=color:#393A34>.</span><span class="token property-access">target</span><span class="token punctuation" style=color:#393A34>.</span><span class="token property-access">id</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>case</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"btn1"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token keyword control-flow" style=color:#00009f>break</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>case</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"btn2"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token keyword control-flow" style=color:#00009f>break</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>case</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"btn3"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token keyword control-flow" style=color:#00009f>break</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
+<ul>
+<li class=""><a href=https://github.com/nhnent/fe.javascript/wiki/August-22-August-26,-2016 target=_blank rel="noopener noreferrer" class="">출처</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=this는-어떻게-작동하는가>this는 어떻게 작동하는가?<a href=#this는-어떻게-작동하는가 class=hash-link aria-label="this는 어떻게 작동하는가?에 대한 직접 링크" title="this는 어떻게 작동하는가?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>Global Context: window</p>
+</li>
+<li class="">
+<p>Function Context: "use strict" ? 실행 시 할당 : window</p>
+</li>
+<li class="">
+<p>Object method: 자기 자신 객체</p>
+</li>
+<li class="">
+<p>Object Prototype Chain: 자기 자신 객체</p>
+</li>
+<li class="">
+<p>Getter, Setter: get 또는 set 되는 속성 객체</p>
+</li>
+<li class="">
+<p>생성자: 생성된 자신</p>
+</li>
+<li class="">
+<p>call, apply: 지정해 주는 객체</p>
+</li>
+<li class="">
+<p>bind: 바인딩 될 때의 this</p>
+</li>
+<li class="">
+<p>Dom Event: event.currentTarget === event.target === this</p>
+</li>
+<li class="">
+<p>in-line Event: Element</p>
+</li>
+<li class="">
+<p><a href=https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this target=_blank rel="noopener noreferrer" class="">출처</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=prototype-기반-상속은-어떻게-하는가>prototype 기반 상속은 어떻게 하는가?<a href=#prototype-기반-상속은-어떻게-하는가 class=hash-link aria-label="prototype 기반 상속은 어떻게 하는가?에 대한 직접 링크" title="prototype 기반 상속은 어떻게 하는가?에 대한 직접 링크" translate=no>​</a></h2>
+<blockquote>
+<p><code>Object.create</code>로 prototype을 확장하던지 <strong>proto</strong>로 prototype link를 걸던지</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=amd와-commonjs는-뭐고-어떻게-생각하나>AMD와 CommonJS는 뭐고 어떻게 생각하나?<a href=#amd와-commonjs는-뭐고-어떻게-생각하나 class=hash-link aria-label="AMD와 CommonJS는 뭐고 어떻게 생각하나?에 대한 직접 링크" title="AMD와 CommonJS는 뭐고 어떻게 생각하나?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">AMD: requireJS</li>
+<li class="">CommonJS: NodeJS 방식</li>
+</ul>
+<p>결국엔 UMD 패턴으로 모듈을 만들어야한다.
+둘 다 실무에서 쓰려면 번들링이 필요하고, Webpack 쓸 바에 두 개 다 필요없이 import 구문으로 처리하겠다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=다음-코드가-즉시-호출-함수-표현식iife로-동작하지-않는-이유>다음 코드가 즉시 호출 함수 표현식(IIFE)로 동작하지 않는 이유?<a href=#다음-코드가-즉시-호출-함수-표현식iife로-동작하지-않는-이유 class=hash-link aria-label="다음 코드가 즉시 호출 함수 표현식(IIFE)로 동작하지 않는 이유?에 대한 직접 링크" title="다음 코드가 즉시 호출 함수 표현식(IIFE)로 동작하지 않는 이유?에 대한 직접 링크" translate=no>​</a></h2>
+<blockquote>
+<p>Immediately Invoked Function Expression</p>
+</blockquote>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-js codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// function foo(){}()</span><br/></span></code></pre></div></div>
+<p>함수선언문을 어떻게 실행하냐 함수를 괄호로 감싸면 됨</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=null과-undefined-그리고-undeclared의-차이점>null과 undefined 그리고 undeclared의 차이점<a href=#null과-undefined-그리고-undeclared의-차이점 class=hash-link aria-label="null과 undefined 그리고 undeclared의 차이점에 대한 직접 링크" title="null과 undefined 그리고 undeclared의 차이점에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">null: 선언되었지만 값 없음</li>
+<li class="">undefined: 선언조차 안됨</li>
+<li class="">undeclared: 선언문 (var 등) 없이 전역변수로 할당되는 유효범위를 지정하지 않은 건데 린팅에 어긋남</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=클로져closure는-무엇이며-어떻게왜-사용>클로져(Closure)는 무엇이며, 어떻게/왜 사용?<a href=#클로져closure는-무엇이며-어떻게왜-사용 class=hash-link aria-label="클로져(Closure)는 무엇이며, 어떻게/왜 사용?에 대한 직접 링크" title="클로져(Closure)는 무엇이며, 어떻게/왜 사용?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">무엇: 초기화시의 상태를 내부에 가지고 있는 형태의 함수</li>
+<li class="">어떻게:<code>return</code>으로 공개할 메소드 또는 데이터를 꺼냄</li>
+<li class="">왜: private 기능 구현, for문에서 context 참조</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=익명함수anonymous-functions는-주로-어떤-상황에서-사용>익명함수(anonymous functions)는 주로 어떤 상황에서 사용?<a href=#익명함수anonymous-functions는-주로-어떤-상황에서-사용 class=hash-link aria-label="익명함수(anonymous functions)는 주로 어떤 상황에서 사용?에 대한 직접 링크" title="익명함수(anonymous functions)는 주로 어떤 상황에서 사용?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">함수 표현식 (변수로 함수 선언), callback</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=당신의-코드를-어떻게-구성하는지>당신의 코드를 어떻게 구성하는지?<a href=#당신의-코드를-어떻게-구성하는지 class=hash-link aria-label="당신의 코드를 어떻게 구성하는지?에 대한 직접 링크" title="당신의 코드를 어떻게 구성하는지?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">ESLint airbnb + prettier + commitlint</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=호스트-객체-vs-네이티브-객체>호스트 객체 vs 네이티브 객체<a href=#호스트-객체-vs-네이티브-객체 class=hash-link aria-label="호스트 객체 vs 네이티브 객체에 대한 직접 링크" title="호스트 객체 vs 네이티브 객체에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Host Objects: 사용자에 의해 생성된 객체</li>
+<li class="">Native Objects: 브라우저 또는 구동 엔진에 내장된 객체</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=다음-코드의-차이점>다음 코드의 차이점?<a href=#다음-코드의-차이점 class=hash-link aria-label="다음 코드의 차이점?에 대한 직접 링크" title="다음 코드의 차이점?에 대한 직접 링크" translate=no>​</a></h2>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-js codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>function</span><span class="token plain"> </span><span class="token function maybe-class-name" style=color:#d73a49>Person</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>// 선언문</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>var</span><span class="token plain"> person </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function maybe-class-name" style=color:#d73a49>Person</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>// 함수 표현식</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>var</span><span class="token plain"> person2 </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>new</span><span class="token plain"> </span><span class="token class-name">Person</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>// 생성자</span><br/></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=call과-apply의-차이점>.call과 .apply의 차이점?<a href=#call과-apply의-차이점 class=hash-link aria-label=".call과 .apply의 차이점?에 대한 직접 링크" title=".call과 .apply의 차이점?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class=""><code>call()</code>은 함수에 전달될 여러 개의 인자를 받는데 비해</li>
+<li class=""><code>apply()</code>는 배열로 된 하나의 인자를 받는다</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functionprototypebind>Function.prototype.bind?<a href=#functionprototypebind class=hash-link aria-label="Function.prototype.bind?에 대한 직접 링크" title="Function.prototype.bind?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">호출될 때의 함수의 this 값을 넘겨준 값으로 바인딩</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=documentwrite는-언제-사용>document.write()는 언제 사용?<a href=#documentwrite는-언제-사용 class=hash-link aria-label="document.write()는 언제 사용?에 대한 직접 링크" title="document.write()는 언제 사용?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">스크립트 심을 때 <code>document.write</code>는 block 되지 않으므로</li>
+<li class="">근데 <code>appendChild</code>로 심을 수 있어서 안씀</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ajax>AJAX<a href=#ajax class=hash-link aria-label="AJAX에 대한 직접 링크" title="AJAX에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">XMLHttpRequest 객체를 사용해 비동기 방식으로 서버와 통신을 하는 것</li>
+<li class="">장점: 화면 전환 없이 특정 영역만 갱신 (업데이트) 가능</li>
+<li class="">단점: 없음</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=jsonp-vs-ajax>JSONP vs AJAX<a href=#jsonp-vs-ajax class=hash-link aria-label="JSONP vs AJAX에 대한 직접 링크" title="JSONP vs AJAX에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">JSONP는 스크립트 태그를 심어서 로드될 때 콜백 함수를 호출하는 거고 <code>get</code>만 가능</li>
+<li class=""><code>Same origin policy</code>를 벗어날 수 있음</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=호이스팅>호이스팅<a href=#호이스팅 class=hash-link aria-label="호이스팅에 대한 직접 링크" title="호이스팅에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">자바스크립트 엔진이 실행 컨텍스트를 생성하면서 scope 를 정의 할때</li>
+<li class="">코딩 순서에 상관없이 선언부에 대한 처리를 맨 위로 끌어올려 먼저 해석하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=event-bubbling>Event Bubbling<a href=#event-bubbling class=hash-link aria-label="Event Bubbling에 대한 직접 링크" title="Event Bubbling에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">자식 이벤트가 부모로 전달 되는 것</li>
+<li class=""><code>event.stopPropagation</code>으로 막을 수 있음</li>
+<li class="">다른 리스너를 실행시키지 않는건 <code>event.stopImmediatePropagation</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=속성attribute-vs-요소property>속성(Attribute) vs 요소(property)<a href=#속성attribute-vs-요소property class=hash-link aria-label="속성(Attribute) vs 요소(property)에 대한 직접 링크" title="속성(Attribute) vs 요소(property)에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Attribute: HTML 요소에 추가적인 정보 전달</li>
+<li class="">Property: Attribute에 대한 HTML DOM tree에서의 표현</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=내장된-javascript-객체를-확장하는-것이-좋지-않은-이유>내장된 JavaScript 객체를 확장하는 것이 좋지 않은 이유?<a href=#내장된-javascript-객체를-확장하는-것이-좋지-않은-이유 class=hash-link aria-label="내장된 JavaScript 객체를 확장하는 것이 좋지 않은 이유?에 대한 직접 링크" title="내장된 JavaScript 객체를 확장하는 것이 좋지 않은 이유?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">그것을 참조한 모든 객체가 확장한 구문을 따라가기 때문에</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=document-load-event-vs-domcontentloaded-event>document load event vs DOMContentLoaded event<a href=#document-load-event-vs-domcontentloaded-event class=hash-link aria-label="document load event vs DOMContentLoaded event에 대한 직접 링크" title="document load event vs DOMContentLoaded event에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">document.load: DOM 안의 모든 게 로딩이 끝나야 발생 (더 느림)</li>
+<li class="">DOMContentLoaded: DOM 초기화시 발생</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-vs->== vs ===<a href=#-vs- class=hash-link aria-label="== vs ===에 대한 직접 링크" title="== vs ===에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">타입 체크</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=동일출처정책the-same-origin-policy>동일출처정책(the same-origin policy)<a href=#동일출처정책the-same-origin-policy class=hash-link aria-label="동일출처정책(the same-origin policy)에 대한 직접 링크" title="동일출처정책(the same-origin policy)에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">js나 문서가 다른 origin에서 fetch되지 못하게 하는 정책</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=삼항식ternary-statement을-사용하는-이유>삼항식(Ternary statement)을 사용하는 이유?<a href=#삼항식ternary-statement을-사용하는-이유 class=hash-link aria-label="삼항식(Ternary statement)을 사용하는 이유?에 대한 직접 링크" title="삼항식(Ternary statement)을 사용하는 이유?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">if else의 간소화</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=use-strict>use strict<a href=#use-strict class=hash-link aria-label="use strict에 대한 직접 링크" title="use strict에 대한 직접 링크" translate=no>​</a></h2>
+<blockquote>
+<p>When adding 'use strict';, the following cases will throw a SyntaxError before the script is executing:</p>
+</blockquote>
+<ul>
+<li class="">
+<p>Octal syntax <code>var n = 023</code>;</p>
+</li>
+<li class="">
+<p>with statement</p>
+</li>
+<li class="">
+<p>Using delete on a variable name <code>delete myVariable</code></p>
+</li>
+<li class="">
+<p>Using eval or arguments as variable or function argument name</p>
+</li>
+<li class="">
+<p>Using one of the newly reserved keywords (in prevision for ECMAScript 2015): implements, interface, let, package, private, protected, public, static, and yield</p>
+</li>
+<li class="">
+<p>Declaring function in blocks if (a &lt; b) </p>
+</li>
+<li class="">
+<p>Obvious errors</p>
+<ul>
+<li class="">Declaring twice the same name for a property name in an object literal <code>{a: 1, b: 3, a: 7}</code> This is no longer the case in ECMAScript 2015 (bug 1041128).</li>
+<li class="">Declaring two function parameters with the same name function f(a, b, b) </li>
+</ul>
+</li>
+<li class="">
+<p><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode target=_blank rel="noopener noreferrer" class="">출처</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전역-scope를-사용했을-때>전역 scope를 사용했을 때<a href=#전역-scope를-사용했을-때 class=hash-link aria-label="전역 scope를 사용했을 때에 대한 직접 링크" title="전역 scope를 사용했을 때에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">장점: 어디에서나 접근 가능</li>
+<li class="">단점: release 꼬임, 추적 힘듦.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=때때로-load-event를-사용하는-이유-단점과-대안은>때때로 load event를 사용하는 이유? 단점과 대안은?<a href=#때때로-load-event를-사용하는-이유-단점과-대안은 class=hash-link aria-label="때때로 load event를 사용하는 이유? 단점과 대안은?에 대한 직접 링크" title="때때로 load event를 사용하는 이유? 단점과 대안은?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DOM의 모든 게 로드가 끝난 후에 이벤트를 걸어야할 것이 있을 때 사용 (lazy loading)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=spa에서-seo에-유리하도록-만들기-위한-방법>SPA에서 SEO에 유리하도록 만들기 위한 방법<a href=#spa에서-seo에-유리하도록-만들기-위한-방법 class=hash-link aria-label="SPA에서 SEO에 유리하도록 만들기 위한 방법에 대한 직접 링크" title="SPA에서 SEO에 유리하도록 만들기 위한 방법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Sitemap, JSON-LD, UA가 Bot일 경우 SSR</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=promise-vs-callback>Promise vs Callback<a href=#promise-vs-callback class=hash-link aria-label="Promise vs Callback에 대한 직접 링크" title="Promise vs Callback에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">장점: Chaining, 가독성, 여러 Promise를 한 번에 제어 가능</li>
+<li class="">단점: 없다</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=javascript를-디버깅할-때-사용하는-도구>JavaScript를 디버깅할 때 사용하는 도구?<a href=#javascript를-디버깅할-때-사용하는-도구 class=hash-link aria-label="JavaScript를 디버깅할 때 사용하는 도구?에 대한 직접 링크" title="JavaScript를 디버깅할 때 사용하는 도구?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">VSCode, Chrome Dev Tools</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=객체-안의-속성과-배열의-아이템을-순회할-때-사용하는-문법>객체 안의 속성과 배열의 아이템을 순회할 때 사용하는 문법?<a href=#객체-안의-속성과-배열의-아이템을-순회할-때-사용하는-문법 class=hash-link aria-label="객체 안의 속성과 배열의 아이템을 순회할 때 사용하는 문법?에 대한 직접 링크" title="객체 안의 속성과 배열의 아이템을 순회할 때 사용하는 문법?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Object: for in hasOwnProperty, Object.keys().forEach, for of</li>
+<li class="">Array: for, Array.forEach, for of</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=mutable-object-vs-immutable-object>mutable object vs immutable object<a href=#mutable-object-vs-immutable-object class=hash-link aria-label="mutable object vs immutable object에 대한 직접 링크" title="mutable object vs immutable object에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">mutable: 변경 가능</li>
+<li class="">immutable: 변경 불가능, Object freeze 또는 Object assign으로 metadata 수정</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=javascript에서-immutable-객체의-예>JavaScript에서 immutable 객체의 예<a href=#javascript에서-immutable-객체의-예 class=hash-link aria-label="JavaScript에서 immutable 객체의 예에 대한 직접 링크" title="JavaScript에서 immutable 객체의 예에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">String: 문자열이 생성되면 그 다음에 수정할 수 없음</li>
+<li class="">Symbol: 유일한 값</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=immutability의-장단점>immutability의 장단점?<a href=#immutability의-장단점 class=hash-link aria-label="immutability의 장단점?에 대한 직접 링크" title="immutability의 장단점?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">장점: 변경점 찾기 및 디버깅이 쉬움</li>
+<li class="">단점: mutable한 코드보다 훨씬 느림</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=자신의-코드에서-불변성immutability을-어떻게-달성할-수-있나요>자신의 코드에서 불변성(immutability)을 어떻게 달성할 수 있나요?<a href=#자신의-코드에서-불변성immutability을-어떻게-달성할-수-있나요 class=hash-link aria-label="자신의 코드에서 불변성(immutability)을 어떻게 달성할 수 있나요?에 대한 직접 링크" title="자신의 코드에서 불변성(immutability)을 어떻게 달성할 수 있나요?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">eslint-plugin-functional 또는 immutableJS</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=동기방식과-비동기-방식-함수의-차이>동기방식과 비동기 방식 함수의 차이<a href=#동기방식과-비동기-방식-함수의-차이 class=hash-link aria-label="동기방식과 비동기 방식 함수의 차이에 대한 직접 링크" title="동기방식과 비동기 방식 함수의 차이에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">은행 번호표</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=event-loop>event loop<a href=#event-loop class=hash-link aria-label="event loop에 대한 직접 링크" title="event loop에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">JS에서 사용하는 동시성 처리 모델</li>
+</ul>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-js codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// 현재 아무 메시지도 없다면 새로운 메시지 도착을 동기적으로 기다림</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword control-flow" style=color:#00009f>while</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">queue</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>waitForMessage</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  queue</span><span class="token punctuation" style=color:#393A34>.</span><span class="token method function property-access" style=color:#d73a49>processNextMessage</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=call-stack>call stack<a href=#call-stack class=hash-link aria-label="call stack에 대한 직접 링크" title="call stack에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">함수 호출시 저장되는 스택, 재귀를 생각하면 됨</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=task-queue>task queue<a href=#task-queue class=hash-link aria-label="task queue에 대한 직접 링크" title="task queue에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">비동기 함수가 저장되는 큐, call stack이 비워지면 실행 됨</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=function-foo-와-var-foo--function-에서-foo-의-차이>function foo() <!-- -->와 var foo = function() <!-- -->에서 foo 의 차이<a href=#function-foo-와-var-foo--function-에서-foo-의-차이 class=hash-link aria-label="function-foo-와-var-foo--function-에서-foo-의-차이에 대한 직접 링크" title="function-foo-와-var-foo--function-에서-foo-의-차이에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">전자는 호이스팅, 후자는 안 됨</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=let-var-const의-차이점>let, var, const의 차이점<a href=#let-var-const의-차이점 class=hash-link aria-label="let, var, const의 차이점에 대한 직접 링크" title="let, var, const의 차이점에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">var: function-scoped 로 호이스팅, 재선언 가능</li>
+<li class="">let: block-scoped 로 재선언 불가, 재할당 가능</li>
+<li class="">const: block-scoped 로 재선언 불가, 재할당 불가</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=test-code를-작성하면서-개발하는-방식의-장단점>test code를 작성하면서 개발하는 방식의 장단점<a href=#test-code를-작성하면서-개발하는-방식의-장단점 class=hash-link aria-label="test code를 작성하면서 개발하는 방식의 장단점에 대한 직접 링크" title="test code를 작성하면서 개발하는 방식의 장단점에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">장점: 결과가 나와있고 로직을 맞추면되서 디버깅, 리팩토링이 쉬워지고 유지보수에도 좋음</li>
+<li class="">단점: 시간</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=test-code를-테스트하는-툴-사용경험>test code를 테스트하는 툴 사용경험<a href=#test-code를-테스트하는-툴-사용경험 class=hash-link aria-label="test code를 테스트하는 툴 사용경험에 대한 직접 링크" title="test code를 테스트하는 툴 사용경험에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Jest, Puppeteer, supertest</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=단위-테스트-vs-기능-테스트>단위 테스트 vs 기능 테스트<a href=#단위-테스트-vs-기능-테스트 class=hash-link aria-label="단위 테스트 vs 기능 테스트에 대한 직접 링크" title="단위 테스트 vs 기능 테스트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">unit test: unit 즉 method 별로 테스트</li>
+<li class="">functional test: 전체 시스템에서 기능을 테스트, 많은 method와 서비스가 연결되어있음</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=code-style-linting-tool을-사용했을때-장점>code style linting tool을 사용했을때 장점?<a href=#code-style-linting-tool을-사용했을때-장점 class=hash-link aria-label="code style linting tool을 사용했을때 장점?에 대한 직접 링크" title="code style linting tool을 사용했을때 장점?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">모두가 일관된 스타일로 코딩 가능, 가독성 증가</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=성능관련-이슈들을-발견하기-위해서-사용하는-방법>성능관련 이슈들을 발견하기 위해서 사용하는 방법?<a href=#성능관련-이슈들을-발견하기-위해서-사용하는-방법 class=hash-link aria-label="성능관련 이슈들을 발견하기 위해서 사용하는 방법?에 대한 직접 링크" title="성능관련 이슈들을 발견하기 위해서 사용하는 방법?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">실행시간 timestamp 로깅</li>
+<li class="">Chrome Dev Tools Performance 탭</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=웹사이트-scrolling-성능을-향상시키기-위한-방법>웹사이트 scrolling 성능을 향상시키기 위한 방법?<a href=#웹사이트-scrolling-성능을-향상시키기-위한-방법 class=hash-link aria-label="웹사이트 scrolling 성능을 향상시키기 위한 방법?에 대한 직접 링크" title="웹사이트 scrolling 성능을 향상시키기 위한 방법?에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">throttle</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=브라우저의-layout-painting-compositing>브라우저의 layout, painting, compositing<a href=#브라우저의-layout-painting-compositing class=hash-link aria-label="브라우저의 layout, painting, compositing에 대한 직접 링크" title="브라우저의 layout, painting, compositing에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p><code>Layout</code>: 각 element가 차지하는 공간과 배치할 공간을 결정</p>
+</li>
+<li class="">
+<p><code>Painting</code>: element를 그리고, element의 모든 시각적 부분을 그리는 작업</p>
+</li>
+<li class="">
+<p><code>Compositing</code>: element를 올바른 순서로 화면에 그려 페이지를 렌더링</p>
+</li>
+<li class="">
+<p><a href="https://developers.google.com/web/fundamentals/performance/rendering/?hl=ko" target=_blank rel="noopener noreferrer" class="">출처</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=웹사이트의-assets을-여러-도메인으로-서빙했을-때-장점>웹사이트의 assets을 여러 도메인으로 서빙했을 때 장점<a href=#웹사이트의-assets을-여러-도메인으로-서빙했을-때-장점 class=hash-link aria-label="웹사이트의 assets을 여러 도메인으로 서빙했을 때 장점에 대한 직접 링크" title="웹사이트의 assets을 여러 도메인으로 서빙했을 때 장점에 대한 직접 링크" translate=no>​</a></h2>
+<blockquote>
+<p>브라우저 마다 다르지만 HTTP1.1에서는 하나의 호스트당 평균 4개의 동시 다운로드만 가능해서, 병렬 처리를 하기 위해 여러 도메인으로 서빙을 했었다 하지만 이젠 http2로 다 해결 가능</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=참고>참고<a href=#참고 class=hash-link aria-label="참고에 대한 직접 링크" title="참고에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class=""><a href=https://travishorn.com/why-it-is-better-to-serve-site-assets-from-multiple-domains-972a2bf69d71 target=_blank rel="noopener noreferrer" class="">Why it is better to serve site assets from multiple domains</a></li>
+<li class=""><a href=http://programmingsummaries.tistory.com/285 target=_blank rel="noopener noreferrer" class="">브라우저의 리소스 병렬 다운로드를 가로막는 자바스크립트</a></li>
+<li class=""><a href="https://developers.google.com/web/fundamentals/performance/http2/?hl=ko#_4" target=_blank rel="noopener noreferrer" class="">HTTP/2 소개 #요청 및 응답 다중화</a></li>
+<li class=""><a href=https://hpbn.co/brief-history-of-http/ target=_blank rel="noopener noreferrer" class="">Blief history of http</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=url로-접속했을-때-어떤-플로우로-화면에-웹사이트가-그려지는지-네트워크-관점>URL로 접속했을 때 어떤 플로우로 화면에 웹사이트가 그려지는지 네트워크 관점<a href=#url로-접속했을-때-어떤-플로우로-화면에-웹사이트가-그려지는지-네트워크-관점 class=hash-link aria-label="URL로 접속했을 때 어떤 플로우로 화면에 웹사이트가 그려지는지 네트워크 관점에 대한 직접 링크" title="URL로 접속했을 때 어떤 플로우로 화면에 웹사이트가 그려지는지 네트워크 관점에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">로컬 DNS에서 URL IP 확인</li>
+<li class="">3way handshake로 IP에 TCP 연결 설정 후 HTTP 헤더와 Body 요청 전송</li>
+<li class="">응답받은 HTTP 헤더와 Body로 웹사이트 렌더링</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=long-polling과-websocket-server-sent-event>Long-Polling과 Websocket, Server-Sent Event<a href=#long-polling과-websocket-server-sent-event class=hash-link aria-label="Long-Polling과 Websocket, Server-Sent Event에 대한 직접 링크" title="Long-Polling과 Websocket, Server-Sent Event에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Long-Polling: response를 닫지 않고 계속 보내주는 것</li>
+<li class="">Websocket: subscribe 후에 양방향으로 메세지 교환</li>
+<li class="">Server-Sent Event: Push, HTTP 사용</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=request-headers>request headers<a href=#request-headers class=hash-link aria-label="request headers에 대한 직접 링크" title="request headers에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">
+<p>Expires headers tell the browser whether they should request a specific file from the server or whether they should grab it from the browser's cache.</p>
+</li>
+<li class="">
+<p>Date: The date and time that the message was sent</p>
+</li>
+<li class="">
+<p>The Age response-header field conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server.</p>
+</li>
+<li class="">
+<p>The If-Modified-Since request-header field is used with a method to make it conditional: if the requested variant has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body.</p>
+</li>
+<li class="">
+<p>Do Not Track: disable either its tracking or cross-site user tracking</p>
+</li>
+<li class="">
+<p>Cache-Control: Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds</p>
+</li>
+<li class="">
+<p>Transfer-Encoding: The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity.</p>
+</li>
+<li class="">
+<p>ETag: An identifier for a specific version of a resource.</p>
+</li>
+<li class="">
+<p>X-Frame-Options can be used to indicate whether or not a browser should be allowed to render a page in a <code>frame</code>, <code>iframe</code> or <code>object</code>.</p>
+</li>
+<li class="">
+<p><a href=https://quizlet.com/175329230/web-developer-interview-questions-network-flash-cards/ target=_blank rel="noopener noreferrer" class="">출처</a></p>
+</li>
+<li class="">
+<p><a href=https://www.letmecompile.com/http-cache-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC/ target=_blank rel="noopener noreferrer" class="">HTTP Cache 튜토리얼</a></p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=http-methods>HTTP Methods<a href=#http-methods class=hash-link aria-label="HTTP Methods에 대한 직접 링크" title="HTTP Methods에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">GET: 리소스 요청</li>
+<li class="">HEAD: 리소스 요청이나 body가 없음</li>
+<li class="">POST: 리소스 생성</li>
+<li class="">PUT: 리소스 업데이트</li>
+<li class="">PATCH: 리소스 부분 업데이트</li>
+<li class="">DELETE: 리소스 삭제</li>
+<li class="">OPTIONS: Cross Domain request에서 해당 메소드가 안전한지 확인하기 위해 사용</li>
+</ul></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/interview/>interview</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href=/2018/01/15/react-intl로-번역-적용하기-react-i18n/><div class=pagination-nav__sublabel>이전 게시물</div><div class=pagination-nav__label>react-intl로 번역 적용하기 (react i18n)</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/2018/01/10/phantomjs-Can-t-find-variable-Promise-오류/><div class=pagination-nav__sublabel>다음 게시물</div><div class=pagination-nav__label>phantomjs Can't find variable Promise 오류</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#event-delegation class="table-of-contents__link toc-highlight">event delegation</a><li><a href=#this는-어떻게-작동하는가 class="table-of-contents__link toc-highlight">this는 어떻게 작동하는가?</a><li><a href=#prototype-기반-상속은-어떻게-하는가 class="table-of-contents__link toc-highlight">prototype 기반 상속은 어떻게 하는가?</a><li><a href=#amd와-commonjs는-뭐고-어떻게-생각하나 class="table-of-contents__link toc-highlight">AMD와 CommonJS는 뭐고 어떻게 생각하나?</a><li><a href=#다음-코드가-즉시-호출-함수-표현식iife로-동작하지-않는-이유 class="table-of-contents__link toc-highlight">다음 코드가 즉시 호출 함수 표현식(IIFE)로 동작하지 않는 이유?</a><li><a href=#null과-undefined-그리고-undeclared의-차이점 class="table-of-contents__link toc-highlight">null과 undefined 그리고 undeclared의 차이점</a><li><a href=#클로져closure는-무엇이며-어떻게왜-사용 class="table-of-contents__link toc-highlight">클로져(Closure)는 무엇이며, 어떻게/왜 사용?</a><li><a href=#익명함수anonymous-functions는-주로-어떤-상황에서-사용 class="table-of-contents__link toc-highlight">익명함수(anonymous functions)는 주로 어떤 상황에서 사용?</a><li><a href=#당신의-코드를-어떻게-구성하는지 class="table-of-contents__link toc-highlight">당신의 코드를 어떻게 구성하는지?</a><li><a href=#호스트-객체-vs-네이티브-객체 class="table-of-contents__link toc-highlight">호스트 객체 vs 네이티브 객체</a><li><a href=#다음-코드의-차이점 class="table-of-contents__link toc-highlight">다음 코드의 차이점?</a><li><a href=#call과-apply의-차이점 class="table-of-contents__link toc-highlight">.call과 .apply의 차이점?</a><li><a href=#functionprototypebind class="table-of-contents__link toc-highlight">Function.prototype.bind?</a><li><a href=#documentwrite는-언제-사용 class="table-of-contents__link toc-highlight">document.write()는 언제 사용?</a><li><a href=#ajax class="table-of-contents__link toc-highlight">AJAX</a><li><a href=#jsonp-vs-ajax class="table-of-contents__link toc-highlight">JSONP vs AJAX</a><li><a href=#호이스팅 class="table-of-contents__link toc-highlight">호이스팅</a><li><a href=#event-bubbling class="table-of-contents__link toc-highlight">Event Bubbling</a><li><a href=#속성attribute-vs-요소property class="table-of-contents__link toc-highlight">속성(Attribute) vs 요소(property)</a><li><a href=#내장된-javascript-객체를-확장하는-것이-좋지-않은-이유 class="table-of-contents__link toc-highlight">내장된 JavaScript 객체를 확장하는 것이 좋지 않은 이유?</a><li><a href=#document-load-event-vs-domcontentloaded-event class="table-of-contents__link toc-highlight">document load event vs DOMContentLoaded event</a><li><a href=#-vs- class="table-of-contents__link toc-highlight">== vs ===</a><li><a href=#동일출처정책the-same-origin-policy class="table-of-contents__link toc-highlight">동일출처정책(the same-origin policy)</a><li><a href=#삼항식ternary-statement을-사용하는-이유 class="table-of-contents__link toc-highlight">삼항식(Ternary statement)을 사용하는 이유?</a><li><a href=#use-strict class="table-of-contents__link toc-highlight">use strict</a><li><a href=#전역-scope를-사용했을-때 class="table-of-contents__link toc-highlight">전역 scope를 사용했을 때</a><li><a href=#때때로-load-event를-사용하는-이유-단점과-대안은 class="table-of-contents__link toc-highlight">때때로 load event를 사용하는 이유? 단점과 대안은?</a><li><a href=#spa에서-seo에-유리하도록-만들기-위한-방법 class="table-of-contents__link toc-highlight">SPA에서 SEO에 유리하도록 만들기 위한 방법</a><li><a href=#promise-vs-callback class="table-of-contents__link toc-highlight">Promise vs Callback</a><li><a href=#javascript를-디버깅할-때-사용하는-도구 class="table-of-contents__link toc-highlight">JavaScript를 디버깅할 때 사용하는 도구?</a><li><a href=#객체-안의-속성과-배열의-아이템을-순회할-때-사용하는-문법 class="table-of-contents__link toc-highlight">객체 안의 속성과 배열의 아이템을 순회할 때 사용하는 문법?</a><li><a href=#mutable-object-vs-immutable-object class="table-of-contents__link toc-highlight">mutable object vs immutable object</a><li><a href=#javascript에서-immutable-객체의-예 class="table-of-contents__link toc-highlight">JavaScript에서 immutable 객체의 예</a><li><a href=#immutability의-장단점 class="table-of-contents__link toc-highlight">immutability의 장단점?</a><li><a href=#자신의-코드에서-불변성immutability을-어떻게-달성할-수-있나요 class="table-of-contents__link toc-highlight">자신의 코드에서 불변성(immutability)을 어떻게 달성할 수 있나요?</a><li><a href=#동기방식과-비동기-방식-함수의-차이 class="table-of-contents__link toc-highlight">동기방식과 비동기 방식 함수의 차이</a><li><a href=#event-loop class="table-of-contents__link toc-highlight">event loop</a><li><a href=#call-stack class="table-of-contents__link toc-highlight">call stack</a><li><a href=#task-queue class="table-of-contents__link toc-highlight">task queue</a><li><a href=#function-foo-와-var-foo--function-에서-foo-의-차이 class="table-of-contents__link toc-highlight">function foo() 와 var foo = function() 에서 foo 의 차이</a><li><a href=#let-var-const의-차이점 class="table-of-contents__link toc-highlight">let, var, const의 차이점</a><li><a href=#test-code를-작성하면서-개발하는-방식의-장단점 class="table-of-contents__link toc-highlight">test code를 작성하면서 개발하는 방식의 장단점</a><li><a href=#test-code를-테스트하는-툴-사용경험 class="table-of-contents__link toc-highlight">test code를 테스트하는 툴 사용경험</a><li><a href=#단위-테스트-vs-기능-테스트 class="table-of-contents__link toc-highlight">단위 테스트 vs 기능 테스트</a><li><a href=#code-style-linting-tool을-사용했을때-장점 class="table-of-contents__link toc-highlight">code style linting tool을 사용했을때 장점?</a><li><a href=#성능관련-이슈들을-발견하기-위해서-사용하는-방법 class="table-of-contents__link toc-highlight">성능관련 이슈들을 발견하기 위해서 사용하는 방법?</a><li><a href=#웹사이트-scrolling-성능을-향상시키기-위한-방법 class="table-of-contents__link toc-highlight">웹사이트 scrolling 성능을 향상시키기 위한 방법?</a><li><a href=#브라우저의-layout-painting-compositing class="table-of-contents__link toc-highlight">브라우저의 layout, painting, compositing</a><li><a href=#웹사이트의-assets을-여러-도메인으로-서빙했을-때-장점 class="table-of-contents__link toc-highlight">웹사이트의 assets을 여러 도메인으로 서빙했을 때 장점</a><ul><li><a href=#참고 class="table-of-contents__link toc-highlight">참고</a></ul><li><a href=#url로-접속했을-때-어떤-플로우로-화면에-웹사이트가-그려지는지-네트워크-관점 class="table-of-contents__link toc-highlight">URL로 접속했을 때 어떤 플로우로 화면에 웹사이트가 그려지는지 네트워크 관점</a><li><a href=#long-polling과-websocket-server-sent-event class="table-of-contents__link toc-highlight">Long-Polling과 Websocket, Server-Sent Event</a><li><a href=#request-headers class="table-of-contents__link toc-highlight">request headers</a><li><a href=#http-methods class="table-of-contents__link toc-highlight">HTTP Methods</a></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016-2026 Eunkwang Shin.</div></div></div></footer></div></body>

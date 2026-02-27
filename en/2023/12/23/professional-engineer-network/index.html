@@ -1,0 +1,323 @@
+<!doctype html><html lang=en dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>기술사 - 네트워크 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/en/2023/12/23/professional-engineer-network/ /><meta data-rh=true property=og:locale content=en /><meta data-rh=true property=og:locale:alternate content=ko /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="기술사 - 네트워크 | gracefullight.dev"/><meta data-rh=true name=description content="네트워크 챕터 정리"/><meta data-rh=true property=og:description content="네트워크 챕터 정리"/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2023-12-23T01:03:04.311Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=me,정보처리 /><link data-rh=true rel=icon href=/en/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/en/2023/12/23/professional-engineer-network/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2023/12/23/professional-engineer-network/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2023/12/23/professional-engineer-network/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2023/12/23/professional-engineer-network/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/en/2023/12/23/professional-engineer-network","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Gracefullight","url":"https://github.com/gracefullight"},"datePublished":"2023-12-23T01:03:04.311Z","description":"네트워크 챕터 정리","headline":"기술사 - 네트워크","isPartOf":{"@id":"https://gracefullight.dev/en/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/en/2023/12/23/professional-engineer-network","name":"기술사 - 네트워크","url":"https://gracefullight.dev/en/2023/12/23/professional-engineer-network"}</script><link rel=alternate type=application/rss+xml href=/en/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/en/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/en/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/en/opensearch.xml><link href=/en/img/favicon-32x32.png rel=icon><link href=/en/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/en/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/en/assets/css/styles.60923ef7.css /><script src=/en/assets/js/runtime~main.1b51a719.js defer></script><script src=/en/assets/js/main.bdbba33d.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/en/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/en/><div class=navbar__logo><img src=/en/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/en/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>English</a><ul class=dropdown__menu><li><a href=/2023/12/23/professional-engineer-network/ target=_self rel="noopener noreferrer" class=dropdown__link lang=ko>한국어</a><li><a href=/en/2023/12/23/professional-engineer-network/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/en/archive/>Archives</a><a class="navbar__item navbar__link" href=/en/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="Search (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>Search</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/en/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>기술사 - 네트워크</h1><div class="container_mt6G margin-vert--md"><time datetime=2023-12-23T01:03:04.311Z>December 23, 2023</time> · <!-- -->4 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=avatar__photo-link><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt=Gracefullight /></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer"><span class=authorName_yefp translate=no>Gracefullight</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt></div></div></div></div></div></header><div id=__blog-post-container class=markdown><ul>
+<li class=""><a class="" href=/en/2023/10/07/professional-engineer-information-overview/>정보통신분야 기술사 훑어보기</a></li>
+<li class=""><a class="" href=/en/2024/05/11/professional-engineer-guidelines/>정보통신분야 기술사 출제기준</a></li>
+<li class=""><a class="" href=/en/2023/10/07/professional-engineer-it-governance/>기술사: IT경영</a></li>
+<li class=""><a class="" href=/en/2023/10/14/professional-engineer-it-conversence/>기술사: 융합 IT</a></li>
+<li class=""><a class="" href=/en/2023/10/22/professional-engineer-project-management/>기술사: 프로젝트관리</a></li>
+<li class=""><a class="" href=/en/2023/10/28/professional-engineer-sw-engineering/>기술사: 소프트웨어 공학</a></li>
+<li class=""><a class="" href=/en/2023/11/11/professional-engineer-information-security/>기술사: 정보보안</a></li>
+<li class=""><a class="" href=/en/2023/11/11/professional-engineer-database/>기술사: 데이터베이스</a></li>
+<li class=""><a class="" href=/en/2023/12/23/professional-engineer-network/>기술사: 네트워크</a></li>
+<li class=""><a class="" href=/en/2024/01/13/professional-engineer-algorithm/>기술사: 알고리즘</a></li>
+<li class=""><a class="" href=/en/2024/03/02/professional-engineer-essay/>기술사: 에세이</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크의-가치>네트워크의 가치<a href=#네트워크의-가치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">물리적 구성<!-- -->
+<ul>
+<li class="">NIC, 케이블, 허브</li>
+<li class="">라우터, 스위치</li>
+<li class="">기지국, 안테나</li>
+</ul>
+</li>
+<li class="">논리적 구성<!-- -->
+<ul>
+<li class="">IP, MAC, Domain</li>
+<li class="">전화번호</li>
+<li class="">프로토콜</li>
+</ul>
+</li>
+<li class=""><strong>정보전달의 원리</strong>: 멀리, 빠르게, 고품질로<!-- -->
+<ul>
+<li class=""><code>송신자 -> 전달자 -> 수신자</code></li>
+<li class="">속도 향상의 원리</li>
+<li class="">품질 향상의 원리</li>
+<li class="">먼거리 전달 원리</li>
+</ul>
+</li>
+<li class="">네트워크 분류<!-- -->
+<ul>
+<li class="">유선: PAN, LAN, WAN</li>
+<li class="">무선: WBAN, WPAN, WLAN</li>
+</ul>
+</li>
+</ul>
+<table><thead><tr><th>구분<th>정보 처리(IT) 시대<th>정보 통신(ICT) 시대<tbody><tr><td>처리 형태<td>저장, 검색, 가공, 연산<td>유통, 공유<tr><td>처리 주체<td>컴퓨터, 제약된 공간<td>네트워크 망, 장비<tr><td>목표<td>정보의 빠른 연산 및 처리<td>정보의 신속, 정확, 안전한 전달<tr><td>기술<td>멀티코어, 파이프라이닝<br/>캐시, 플래시<br/>MEMS, 데이터마이닝<td>과거: 허브, 스위치, 라우터<br/>현재: 인터넷, USN, 4G<br/>미래: IoE, SDN, NFV</table>
+<ul>
+<li class="">정보처리시대에서 정보통신시대로 넘어오면서<!-- -->
+<ul>
+<li class="">기회요인: 참여 공유 개방, 글로벌화</li>
+<li class="">위협요인: 개인정보유출, 프라이버시 침해 제거</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-관련-법칙>네트워크 관련 법칙<a href=#네트워크-관련-법칙 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=멧갈프-법칙>멧갈프 법칙<a href=#멧갈프-법칙 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Metcalfe's Law, 메칼프 법칙: 이더넷의 창시자</li>
+<li class="">네트워킹의 효과는 사용자(가입자, 노드) 수의 제곱에 비례, 네트워크의 외부성</li>
+<li class="">예시: SNS</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=길더의-법칙>길더의 법칙<a href=#길더의-법칙 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Gilder's Law: IT칼럼니스트</li>
+<li class="">광섬유의 대역폭(Bandwidth)은 12개월마다 세 배씩 증가<!-- -->
+<ul>
+<li class="">트래픽 증가는 통신 속도의 증가라고 볼 수 있음</li>
+</ul>
+</li>
+<li class="">무어의 법칙으로 설명하는 직접회로 및 멤리의 증가 속도를 능가하는 광대역 통신망 설명</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=섀넌의-법칙>섀넌의 법칙<a href=#섀넌의-법칙 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Shannon-Hartley theorem, 섀넌의 정리, 샤논의 정리</li>
+<li class="">채널용량은 대역폭과 신호 대 잡음비에 비례</li>
+</ul>
+<span class=katex-display><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML display=block><semantics><mrow><mi>C</mi><mo>=</mo><mi>W</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mo stretchy=false>(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy=false>)</mo></mrow><annotation encoding=application/x-tex>C = W \log_2(1 + \frac{S}{N})
+</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07153em>C</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class="mord mathnormal" style=margin-right:0.13889em>W</span><span class=mspace style=margin-right:0.1667em></span><span class=mop><span class=mop>lo<span style=margin-right:0.01389em>g</span></span><span class=msupsub><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.207em><span style=top:-2.4559em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.2441em><span></span></span></span></span></span></span><span class=mopen>(</span><span class=mord>1</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:2.0463em;vertical-align:-0.686em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:1.3603em><span style=top:-2.314em><span class=pstrut style=height:3em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.10903em>N</span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.677em><span class=pstrut style=height:3em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.05764em>S</span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.686em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mclose>)</span></span></span></span></span>
+<ul>
+<li class="">C: 채널 용량</li>
+<li class="">W: 대역폭</li>
+<li class="">S: 신호전력</li>
+<li class="">N: 잡음전력</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-구성>네트워크 구성<a href=#네트워크-구성 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크의-물리적-구성>네트워크의 물리적 구성<a href=#네트워크의-물리적-구성 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">교환기: 라우터<!-- -->
+<ul>
+<li class="">가장 중요한 구성요소로 단말기들을 일시적으로 연결시켜주는 기능 제공</li>
+<li class="">회선 교환과 패킷 교환으로 나눠진다.</li>
+<li class="">패킷 교환은 Connection-Oriented 방식(TCP), Connection-Less 방식(UDP)로 나뉜다.</li>
+</ul>
+</li>
+<li class="">중계기<!-- -->
+<ul>
+<li class="">신호의 감쇄 및 왜곡을 보상하기 위해 증폭 및 재생 기능을 가지고 있음</li>
+<li class="">아날로그는 증폭만 가능하나, 디지털통신은 증폭과 재싱이 동시에 가능</li>
+</ul>
+</li>
+<li class="">전송 및 다중화 선로<!-- -->
+<ul>
+<li class="">전화선, 전용선</li>
+<li class="">광시분할 다중화</li>
+<li class="">광파장분할 다중화</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크의-논리적-구성>네트워크의 논리적 구성<a href=#네트워크의-논리적-구성 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Network Address<!-- -->
+<ul>
+<li class="">가입자를 식별하기 위한 식별자</li>
+<li class="">전화번호, IP, MAC, DNS, ENUM (tElephone NUmber Mapping) 등</li>
+<li class="">DNS: 망에서는 숫자주소만 인식되나 사람의 사용 편의를 위해 문자주소를 사용함</li>
+</ul>
+</li>
+<li class="">네트워크 프로토콜<!-- -->
+<ul>
+<li class="">물리적 네트워크를 논리적으로 동작하도록 함</li>
+<li class="">사용자로 하여금 네트워크의 투명성 보장</li>
+<li class="">국제표준: OSI 7 Layer</li>
+<li class="">사실상의 표준: TCP/IP (이게 더 먼저 나옴, 인터넷 전용)</li>
+<li class="">하부계층(주로 LAN) 표준: IEEE 802, CSMA/CD, Ethernet</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=정보전달의-원리>정보전달의 원리<a href=#정보전달의-원리 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-통신의-원리>데이터 통신의 원리<a href=#데이터-통신의-원리 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p><img decoding=async loading=lazy src=https://i.imgur.com/wjkwMAn.png alt="데이터 통신의 원리" class=img_ev3q /></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=무선-통신의-원리>무선 통신의 원리<a href=#무선-통신의-원리 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<p><img decoding=async loading=lazy src=https://i.imgur.com/QHA3AUy.png alt="무선 통신의 원리" class=img_ev3q /></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=부호화>부호화<a href=#부호화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">속도와 품질 향상</li>
+<li class="">정보를 이진코드로 변환/압축하는 소스 부호화과정과 이를 처리, 전송하는 과정에서 오류를 줄이는 변환 채널부호화 과정을 총칭</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=변조>변조<a href=#변조 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">속도, 품질, 전송거리 향상</li>
+<li class="">신호 정보를 전송매체의 채널 특성에 맞게끔 신호(정보)의 세기나 변위, 주파수, 위상 등을 적합한 형태로 변환하는 과정</li>
+<li class="">변조 이유:<!-- -->
+<ul>
+<li class="">전송 매체에 알맞은 변조방식 사용하여 장거리 전송 가능</li>
+<li class="">변조가 넓은 주파수 대역에 걸치므로 다중화 가능</li>
+<li class="">주파수를 높임에 따라 안테나 길이, 크기의 단축이 가능</li>
+<li class="">ISI 등이 존재하는 채널에서 신호 대역폭을 늘려주어, 간섭효과 최소화 가능<!-- -->
+<ul>
+<li class="">Inter Symbol Interference: 심볼 간 간섭</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크의-분류>네트워크의 분류<a href=#네트워크의-분류 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<ul>
+<li class="">유선<!-- -->
+<ul>
+<li class="">PAN: Personal Area, USB, HDMI</li>
+<li class="">LAN: Local Area</li>
+<li class="">MAN: Metro Area</li>
+<li class="">WAN: Wide Area</li>
+</ul>
+</li>
+<li class="">무선<!-- -->
+<ul>
+<li class="">WVAN: 의료목적</li>
+<li class="">WPAN: 블루투스, NFC</li>
+<li class="">WLAN</li>
+<li class="">WIMAX: WIBRO, 예전에 도심에서 모바일 서비스</li>
+<li class="">Radio</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로토콜>프로토콜<a href=#프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<blockquote>
+<p>약속의 중요성</p>
+</blockquote>
+<ul>
+<li class="">사람을 위한 식별자: 도메인, 전화번호</li>
+<li class="">컴퓨터를 위한 식별자: IPv4, IPv6, MAC</li>
+<li class="">최단 거리를 위한 전송경로 설정: 라우팅, 포워딩(스위칭), 상태확인(ICMP)</li>
+<li class="">다양한 전송방식:<!-- -->
+<ul>
+<li class="">TCP, UDP, SCTP</li>
+<li class="">브로드캐스팅, 유니캐스팅</li>
+<li class="">멀티캐스팅, 애니캐스팅</li>
+</ul>
+</li>
+<li class="">충돌, 지연 방지, 안전, 신속, 정확</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신프로토콜>통신프로토콜<a href=#통신프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신프로토콜-개요>통신프로토콜 개요<a href=#통신프로토콜-개요 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신프로토콜-발전>통신프로토콜 발전<a href=#통신프로토콜-발전 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=통신프로토콜-기능>통신프로토콜 기능<a href=#통신프로토콜-기능 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=osi>OSI<a href=#osi class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcpip>TCP/IP<a href=#tcpip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=컴퓨터를-위한-식별자>컴퓨터를 위한 식별자<a href=#컴퓨터를-위한-식별자 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip>IP<a href=#ip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=arp>ARP<a href=#arp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=사람을-위한-식별자>사람을 위한 식별자<a href=#사람을-위한-식별자 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-주소-체계>인터넷 주소 체계<a href=#인터넷-주소-체계 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전화번호-enum>전화번호, ENUM<a href=#전화번호-enum class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=전송-방식>전송 방식<a href=#전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-전송-방식>인터넷 전송 방식<a href=#인터넷-전송-방식 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcp>TCP<a href=#tcp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Transmission Control Protocol</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=udp>UDP<a href=#udp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">User Datagram Protocol</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=sctp>SCTP<a href=#sctp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Streaming Control Transmission Protocol</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=라우팅-프로토콜>라우팅 프로토콜<a href=#라우팅-프로토콜 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=라우팅-알고리즘>라우팅 알고리즘<a href=#라우팅-알고리즘 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=distance-vector-algorithm>Distance Vector Algorithm<a href=#distance-vector-algorithm class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=link-state-algorithm>Link State Algorithm<a href=#link-state-algorithm class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기업용-네트워크>기업용 네트워크<a href=#기업용-네트워크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=lan>LAN<a href=#lan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=inter-networking-장비>Inter-Networking 장비<a href=#inter-networking-장비 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=고속-lan>고속 LAN<a href=#고속-lan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=스위치>스위치<a href=#스위치 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=mpls>MPLS<a href=#mpls class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wlan>WLAN<a href=#wlan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=차세대-wlan>차세대 WLAN<a href=#차세대-wlan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=cdn>CDN<a href=#cdn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=가정용-네트워크>가정용 네트워크<a href=#가정용-네트워크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷망>인터넷망<a href=#인터넷망 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=광가입자망>광가입자망<a href=#광가입자망 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=케이블망>케이블망<a href=#케이블망 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=홈네트워크>홈네트워크<a href=#홈네트워크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=특수목적-네트워크>특수목적 네트워크<a href=#특수목적-네트워크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ad-hoc>Ad-hoc<a href=#ad-hoc class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=manet>MANET<a href=#manet class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=vanet>VANET<a href=#vanet class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wmn>WMN<a href=#wmn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wban>WBAN<a href=#wban class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wpan>WPAN<a href=#wpan class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=d2d>D2D<a href=#d2d class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=이동통신>이동통신<a href=#이동통신 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=발전단계>발전단계<a href=#발전단계 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=이동통신망>이동통신망<a href=#이동통신망 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=이동통신-원리>이동통신 원리<a href=#이동통신-원리 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4g>4G<a href=#4g class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4g-lte>4G LTE<a href=#4g-lte class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Long Term Evolution</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=cr>CR<a href=#cr class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Cognitive Radio</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=handover>Handover<a href=#handover class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=mih>MIH<a href=#mih class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Media Independent Handover</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=5g>5G<a href=#5g class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=6g>6G<a href=#6g class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-품질>네트워크 품질<a href=#네트워크-품질 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv4-주소-효율화>IPv4 주소 효율화<a href=#ipv4-주소-효율화 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv6>IPv6<a href=#ipv6 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv4-to-ipv6>IPv4 to IPv6<a href=#ipv4-to-ipv6 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=모바일-ipv4>모바일 IPv4<a href=#모바일-ipv4 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=흐름-제어>흐름 제어<a href=#흐름-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=오류-제어>오류 제어<a href=#오류-제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=arq>ARQ<a href=#arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Automatic Repeat Reqeust</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=h-arq>H-ARQ<a href=#h-arq class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Hybrid ARQ</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcp-혼잡제어>TCP 혼잡제어<a href=#tcp-혼잡제어 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=slow-start-congestion-avoidance>Slow start, Congestion Avoidance<a href=#slow-start-congestion-avoidance class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=fast-retransmit-fast-recovery>Fast Retransmit, Fast Recovery<a href=#fast-retransmit-fast-recovery class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=qos>QoS<a href=#qos class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Quality of Service</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=최신-이슈>최신 이슈<a href=#최신-이슈 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=voip>VoIP<a href=#voip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">Voice over IP</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=h323>H.323<a href=#h323 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=sip>SIP<a href=#sip class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Session Initiation Protocol</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mgcp>MGCP<a href=#mgcp class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Media Gateway Control Protocol</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=h248>H.248<a href=#h248 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">MEGACO, MEdia Gateway Control</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=voip-프로토콜-비교>VoIP 프로토콜 비교<a href=#voip-프로토콜-비교 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=lbs-측위기술>LBS 측위기술<a href=#lbs-측위기술 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=미래-네트워크>미래 네트워크<a href=#미래-네트워크 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=icn>ICN<a href=#icn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Information Centric Network</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=sdn>SDN<a href=#sdn class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h4>
+<ul>
+<li class="">Software Defined Network</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=범정부-프로젝트>범정부 프로젝트<a href=#범정부-프로젝트 class=hash-link aria-label="Direct link to heading" title="Direct link to heading" translate=no>​</a></h3>
+<ul>
+<li class="">기가 코리아 프로젝트</li>
+<li class="">국가 재난 안전 통신망: PS-LTE</li>
+</ul></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag title="Life Logging" class="tag_zVej tagRegular_sFm0" href=/en/tags/me/>me</a><li class=tag_QGVx><a rel=tag title="Engineer Information Processing" class="tag_zVej tagRegular_sFm0" href=/en/tags/정보처리/>정보처리</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href=/en/2024/01/01/end-of-year-retro-2023/><div class=pagination-nav__sublabel>Newer Post</div><div class=pagination-nav__label>End of Year Retro 2023</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/en/2023/12/19/decoupling-from-national-dependency/><div class=pagination-nav__sublabel>Older Post</div><div class=pagination-nav__label>국가에 대한 의존성 분리</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#네트워크의-가치 class="table-of-contents__link toc-highlight">네트워크의 가치</a><li><a href=#네트워크-관련-법칙 class="table-of-contents__link toc-highlight">네트워크 관련 법칙</a><ul><li><a href=#멧갈프-법칙 class="table-of-contents__link toc-highlight">멧갈프 법칙</a><li><a href=#길더의-법칙 class="table-of-contents__link toc-highlight">길더의 법칙</a><li><a href=#섀넌의-법칙 class="table-of-contents__link toc-highlight">섀넌의 법칙</a></ul><li><a href=#네트워크-구성 class="table-of-contents__link toc-highlight">네트워크 구성</a><ul><li><a href=#네트워크의-물리적-구성 class="table-of-contents__link toc-highlight">네트워크의 물리적 구성</a><li><a href=#네트워크의-논리적-구성 class="table-of-contents__link toc-highlight">네트워크의 논리적 구성</a></ul><li><a href=#정보전달의-원리 class="table-of-contents__link toc-highlight">정보전달의 원리</a><ul><li><a href=#데이터-통신의-원리 class="table-of-contents__link toc-highlight">데이터 통신의 원리</a><li><a href=#무선-통신의-원리 class="table-of-contents__link toc-highlight">무선 통신의 원리</a><li><a href=#부호화 class="table-of-contents__link toc-highlight">부호화</a><li><a href=#변조 class="table-of-contents__link toc-highlight">변조</a></ul><li><a href=#네트워크의-분류 class="table-of-contents__link toc-highlight">네트워크의 분류</a><li><a href=#프로토콜 class="table-of-contents__link toc-highlight">프로토콜</a><ul><li><a href=#통신프로토콜 class="table-of-contents__link toc-highlight">통신프로토콜</a></ul><li><a href=#컴퓨터를-위한-식별자 class="table-of-contents__link toc-highlight">컴퓨터를 위한 식별자</a><ul><li><a href=#ip class="table-of-contents__link toc-highlight">IP</a><li><a href=#arp class="table-of-contents__link toc-highlight">ARP</a></ul><li><a href=#사람을-위한-식별자 class="table-of-contents__link toc-highlight">사람을 위한 식별자</a><ul><li><a href=#인터넷-주소-체계 class="table-of-contents__link toc-highlight">인터넷 주소 체계</a><li><a href=#전화번호-enum class="table-of-contents__link toc-highlight">전화번호, ENUM</a></ul><li><a href=#전송-방식 class="table-of-contents__link toc-highlight">전송 방식</a><ul><li><a href=#인터넷-전송-방식 class="table-of-contents__link toc-highlight">인터넷 전송 방식</a><li><a href=#tcp class="table-of-contents__link toc-highlight">TCP</a><li><a href=#udp class="table-of-contents__link toc-highlight">UDP</a><li><a href=#sctp class="table-of-contents__link toc-highlight">SCTP</a><li><a href=#라우팅-프로토콜 class="table-of-contents__link toc-highlight">라우팅 프로토콜</a><li><a href=#라우팅-알고리즘 class="table-of-contents__link toc-highlight">라우팅 알고리즘</a></ul><li><a href=#기업용-네트워크 class="table-of-contents__link toc-highlight">기업용 네트워크</a><ul><li><a href=#lan class="table-of-contents__link toc-highlight">LAN</a><li><a href=#inter-networking-장비 class="table-of-contents__link toc-highlight">Inter-Networking 장비</a><li><a href=#고속-lan class="table-of-contents__link toc-highlight">고속 LAN</a><li><a href=#스위치 class="table-of-contents__link toc-highlight">스위치</a><li><a href=#mpls class="table-of-contents__link toc-highlight">MPLS</a><li><a href=#wlan class="table-of-contents__link toc-highlight">WLAN</a><li><a href=#차세대-wlan class="table-of-contents__link toc-highlight">차세대 WLAN</a><li><a href=#cdn class="table-of-contents__link toc-highlight">CDN</a></ul><li><a href=#가정용-네트워크 class="table-of-contents__link toc-highlight">가정용 네트워크</a><ul><li><a href=#인터넷망 class="table-of-contents__link toc-highlight">인터넷망</a><li><a href=#광가입자망 class="table-of-contents__link toc-highlight">광가입자망</a><li><a href=#케이블망 class="table-of-contents__link toc-highlight">케이블망</a><li><a href=#홈네트워크 class="table-of-contents__link toc-highlight">홈네트워크</a></ul><li><a href=#특수목적-네트워크 class="table-of-contents__link toc-highlight">특수목적 네트워크</a><ul><li><a href=#ad-hoc class="table-of-contents__link toc-highlight">Ad-hoc</a><li><a href=#manet class="table-of-contents__link toc-highlight">MANET</a><li><a href=#vanet class="table-of-contents__link toc-highlight">VANET</a><li><a href=#wmn class="table-of-contents__link toc-highlight">WMN</a><li><a href=#wban class="table-of-contents__link toc-highlight">WBAN</a><li><a href=#wpan class="table-of-contents__link toc-highlight">WPAN</a><li><a href=#d2d class="table-of-contents__link toc-highlight">D2D</a></ul><li><a href=#이동통신 class="table-of-contents__link toc-highlight">이동통신</a><ul><li><a href=#발전단계 class="table-of-contents__link toc-highlight">발전단계</a><li><a href=#이동통신망 class="table-of-contents__link toc-highlight">이동통신망</a><li><a href=#이동통신-원리 class="table-of-contents__link toc-highlight">이동통신 원리</a><li><a href=#4g class="table-of-contents__link toc-highlight">4G</a><li><a href=#4g-lte class="table-of-contents__link toc-highlight">4G LTE</a><li><a href=#cr class="table-of-contents__link toc-highlight">CR</a><li><a href=#handover class="table-of-contents__link toc-highlight">Handover</a><li><a href=#mih class="table-of-contents__link toc-highlight">MIH</a><li><a href=#5g class="table-of-contents__link toc-highlight">5G</a><li><a href=#6g class="table-of-contents__link toc-highlight">6G</a></ul><li><a href=#네트워크-품질 class="table-of-contents__link toc-highlight">네트워크 품질</a><ul><li><a href=#ipv4-주소-효율화 class="table-of-contents__link toc-highlight">IPv4 주소 효율화</a><li><a href=#ipv6 class="table-of-contents__link toc-highlight">IPv6</a><li><a href=#ipv4-to-ipv6 class="table-of-contents__link toc-highlight">IPv4 to IPv6</a><li><a href=#모바일-ipv4 class="table-of-contents__link toc-highlight">모바일 IPv4</a><li><a href=#흐름-제어 class="table-of-contents__link toc-highlight">흐름 제어</a><li><a href=#오류-제어 class="table-of-contents__link toc-highlight">오류 제어</a><li><a href=#tcp-혼잡제어 class="table-of-contents__link toc-highlight">TCP 혼잡제어</a><li><a href=#qos class="table-of-contents__link toc-highlight">QoS</a></ul><li><a href=#최신-이슈 class="table-of-contents__link toc-highlight">최신 이슈</a><ul><li><a href=#voip class="table-of-contents__link toc-highlight">VoIP</a><li><a href=#lbs-측위기술 class="table-of-contents__link toc-highlight">LBS 측위기술</a><li><a href=#미래-네트워크 class="table-of-contents__link toc-highlight">미래 네트워크</a><li><a href=#범정부-프로젝트 class="table-of-contents__link toc-highlight">범정부 프로젝트</a></ul></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016 - 2023 Gracefullight. Built with Docusaurus.</div></div></div></footer></div></body>

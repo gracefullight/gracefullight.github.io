@@ -1,0 +1,1654 @@
+<!doctype html><html lang=ko dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>신기술 동향 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/2017/03/27/신기술-동향/ /><meta data-rh=true property=og:locale content=ko /><meta data-rh=true property=og:locale:alternate content=en /><meta data-rh=true name=docusaurus_locale content=ko /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=ko /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="신기술 동향 | gracefullight.dev"/><meta data-rh=true name=description content="보안 요건"/><meta data-rh=true property=og:description content="보안 요건"/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2017-03-27T18:23:12.000Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=정보처리 /><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/2017/03/27/신기술-동향/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/03/27/신기술-동향/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2017/03/27/신기술-동향/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2017/03/27/신기술-동향/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/2017/03/27/신기술-동향","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Eunkwang Shin","url":"https://github.com/gracefullight"},"datePublished":"2017-03-27T18:23:12.000Z","description":"보안 요건","headline":"신기술 동향","isPartOf":{"@id":"https://gracefullight.dev/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/2017/03/27/신기술-동향","name":"신기술 동향","url":"https://gracefullight.dev/2017/03/27/신기술-동향"}</script><link rel=alternate type=application/rss+xml href=/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/opensearch.xml><link href=/img/favicon-32x32.png rel=icon><link href=/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/assets/css/styles.775e2857.css /><script src=/assets/js/runtime~main.8c99d553.js defer></script><script src=/assets/js/main.55b7c064.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="본문으로 건너뛰기"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>본문으로 건너뛰기</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>한국어</a><ul class=dropdown__menu><li><a href=/2017/03/27/신기술-동향/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ko>한국어</a><li><a href=/en/2017/03/27/신기술-동향/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/archive/>Archives</a><a class="navbar__item navbar__link" href=/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="검색 (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>검색</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="최근 블로그 문서 둘러보기"><div class="sidebarItemTitle_pO2u margin-bottom--md">최근 포스트</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/17/innovation-tactics/>Innovation Tactics</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/31/agentic-sdlc/>Agentic SDLC</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/01/29/local-docker-env/>로컬 도커 환경 툴 비교</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-01/>Phrasal Verbs 01</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-014/>Phrasal Verbs 014</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/vocab/phrasal-verbs-013/>Phrasal Verbs 013</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>신기술 동향</h1><div class="container_mt6G margin-vert--md"><time datetime=2017-03-27T18:23:12.000Z>2017년 3월 27일</time> · <!-- -->약 39분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class=avatar__photo-link href=/authors/me/><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"/></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=/authors/me/><span class=authorName_yefp translate=no>Eunkwang Shin</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt><a href=https://www.linkedin.com/in/gracefullight/ target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=LinkedIn><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em preserveAspectRatio=xMidYMid viewBox="0 0 256 256" style=--dark:#0a66c2;--light:#ffffffe6 class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"/></svg></a><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=GitHub><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em viewBox="0 0 256 250" preserveAspectRatio=xMidYMid style=--dark:#000;--light:#fff class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"/></svg></a><a href=mailto:gracefullight.dev@gmail.com target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=Email><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 class=authorSocialIcon_XYv3><path stroke=none d="M0 0h24v24H0z"/><path d="M7.2 12a4.8 4.8 0 1 0 9.6 0 4.8 4.8 0 1 0-9.6 0"/><path d="M16.8 12v1.8a3 3 0 0 0 6 0V12a10.8 10.8 0 1 0-6.6 9.936"/></svg></a></div></div></div></div></div></header><div id=__blog-post-container class=markdown><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=보안-요건>보안 요건<a href=#보안-요건 class=hash-link aria-label="보안 요건에 대한 직접 링크" title="보안 요건에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=기밀성>기밀성<a href=#기밀성 class=hash-link aria-label="기밀성에 대한 직접 링크" title="기밀성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Confidentiality = 비밀성</li>
+<li class="">시스템 내의 정보와 자원은 인가된 사용자에게만 접근이 허용</li>
+<li class="">정보가 전송 중에 노출되더라도 데이터를 읽을 수 없음</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=무결성>무결성<a href=#무결성 class=hash-link aria-label="무결성에 대한 직접 링크" title="무결성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Integrity</li>
+<li class="">정보의 내용이 전송 중에 수정되지 않고 전달되는 것</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=가용성>가용성<a href=#가용성 class=hash-link aria-label="가용성에 대한 직접 링크" title="가용성에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Availability</li>
+<li class="">인가된 사용자는 언제라도 사용 가능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=인증>인증<a href=#인증 class=hash-link aria-label="인증에 대한 직접 링크" title="인증에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Authentication</li>
+<li class="">정보를 보내오는 사람의 신원을 확인</li>
+<li class="">다중 사용자 컴퓨터 시스템 또는 망 운용 시스템에서 시스템이 단말 작동 개시 정보를 확인하는 보안 절차이다.</li>
+<li class="">인증에는 망을 경유해서 컴퓨터에 접속해 오는 사용자가 등록된 사용자인지 확인하는 것과 전송된 메세지가 변조되거나 의미가 그릇되지 않고 송신자가 보낸 그대로의 것인지를 확인하는 것이 있다.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=부인-방지>부인 방지<a href=#부인-방지 class=hash-link aria-label="부인 방지에 대한 직접 링크" title="부인 방지에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Non Repudiation</li>
+<li class="">데이터를 송수신한 자가 송수신 사실을 부인할 수 없도록 송수신 증거를 제공</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=접근-통제>접근 통제<a href=#접근-통제 class=hash-link aria-label="접근 통제에 대한 직접 링크" title="접근 통제에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Access Control</li>
+<li class="">시스템의 자원 이용에 대한 불법적인 접근을 방지하는 과정</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=보안-위협-유형>보안 위협 유형<a href=#보안-위협-유형 class=hash-link aria-label="보안 위협 유형에 대한 직접 링크" title="보안 위협 유형에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=가로막기>가로막기<a href=#가로막기 class=hash-link aria-label="가로막기에 대한 직접 링크" title="가로막기에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Interruption</li>
+<li class="">데이터의 정상적인 전달을 가로막아서 흐름을 방해하는 행위</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=가로채기>가로채기<a href=#가로채기 class=hash-link aria-label="가로채기에 대한 직접 링크" title="가로채기에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Interception</li>
+<li class="">송신된 데이터가 수신지까지 가는 도중에 몰래 보거나 도청하여 정보를 유출하는 행위</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=수정>수정<a href=#수정 class=hash-link aria-label="수정에 대한 직접 링크" title="수정에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Modification</li>
+<li class="">전송된 데이터를 원래의 데이터가 아닌 다른 내용으로 바꾸는 행위</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=위조>위조<a href=#위조 class=hash-link aria-label="위조에 대한 직접 링크" title="위조에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Fabrication</li>
+<li class="">마치 다른 송신자로부터 데이터가 송신된 것처럼 꾸미는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=개인키-압호화-기법>개인키 압호화 기법<a href=#개인키-압호화-기법 class=hash-link aria-label="개인키 압호화 기법에 대한 직접 링크" title="개인키 압호화 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Private Key Encryption = 대칭 암호 기법 = 단일키 암호화 기법</li>
+<li class="">DES(Data Encryption Standard)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=des>DES<a href=#des class=hash-link aria-label="DES에 대한 직접 링크" title="DES에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">데이터 암호 표준</li>
+<li class="">대푲거인 비밀키 암호화 기법</li>
+<li class="">56비트의 암복호 키를 사용하여 64비트의 평문을 암복호화</li>
+<li class="">IBM에서 개발, 미국방성에 의해 채택</li>
+<li class="">Triple DES가 많이 사용됨</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=공개키-암호화-기법>공개키 암호화 기법<a href=#공개키-암호화-기법 class=hash-link aria-label="공개키 암호화 기법에 대한 직접 링크" title="공개키 암호화 기법에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Public Key Encryption = 비대칭 암호 기법</li>
+<li class="">RSA(Rivest Shamir Adleman)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=순차적-암호화>순차적 암호화<a href=#순차적-암호화 class=hash-link aria-label="순차적 암호화에 대한 직접 링크" title="순차적 암호화에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OPE = Order Preserving Encryption</li>
+<li class="">DB에서 암호화된 수치 데이터들이 원본 수치 데이터와 동일한 순서로 정렬될 수 있도록 해주는 암호화 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=공개키-기반-구조>공개키 기반 구조<a href=#공개키-기반-구조 class=hash-link aria-label="공개키 기반 구조에 대한 직접 링크" title="공개키 기반 구조에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PKI = Public Key Infrastructure</li>
+<li class="">공개키 암호 시스템을 안전하게 사용하고 관리하기 위한 정보 보호 표준 방식</li>
+<li class="">ITU-T의 X.509 방식과 비X.509 방식으로 구분</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프라이버시-강화-기술>프라이버시 강화 기술<a href=#프라이버시-강화-기술 class=hash-link aria-label="프라이버시 강화 기술에 대한 직접 링크" title="프라이버시 강화 기술에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PET = Privacy Enhancing Technology</li>
+<li class="">개인정보 위험 관리 기술</li>
+<li class="">개인정보를 보호하는 기술에서 사용자가 직접 개인정보를 통제하기 위한 기술까지 다양한 사용자 프라이버시 보호기술을 통칭</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=digital-forensics>Digital Forensics<a href=#digital-forensics class=hash-link aria-label="Digital Forensics에 대한 직접 링크" title="Digital Forensics에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">범죄의 증거로 사용될 수 있는 컴퓨터, 휴대전화, 인터넷 등의 디지털 저장매체에 존재하는 디지털 정보를 수집하는 디지털 수사 과정</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=drm>DRM<a href=#drm class=hash-link aria-label="DRM에 대한 직접 링크" title="DRM에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Rights Management = 디지털 저작권 관리</li>
+<li class="">데이터의 안전한 배포를 활성화하거나 불법 배포를 방지하여 인터넷이나 기타 디지털 매체를 통해 유통되는 데이터의 저작권을 보호하기 위한 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ons>ONS<a href=#ons class=hash-link aria-label="ONS에 대한 직접 링크" title="ONS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Object Naming Service</li>
+<li class="">사물에 관한 구체적인 정보가 저장되어 있는 서버의 위치를 알려주는 서비스</li>
+<li class="">RFID 태그가 부착된 제품을 리더로 읽으면 제품 초기 제작 정보는 물론 유통 과정에서 저장된 다양한 정보를 파악할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=침입-탐지-시스템>침입 탐지 시스템<a href=#침입-탐지-시스템 class=hash-link aria-label="침입 탐지 시스템에 대한 직접 링크" title="침입 탐지 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IDS = Intrusion Detection System</li>
+<li class="">컴퓨터 시스템의 비정상적인 사용, 오용, 남용 등을 실시간으로 탐지하는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=rfid>RFID<a href=#rfid class=hash-link aria-label="RFID에 대한 직접 링크" title="RFID에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Radio Frequency IDentification = 전파 식별</li>
+<li class="">라디오 주파수 인식 기술</li>
+<li class="">IC칩과 무선을 통해 다양한 개체의 정보를 관리할 수 있는 차세대 인식 기술</li>
+<li class="">판독 및 해독 기능을 하는 판독기(Reader)와 정보를 제공하는 태그(Tag)로 구성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=저작권>저작권<a href=#저작권 class=hash-link aria-label="저작권에 대한 직접 링크" title="저작권에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Copyright</li>
+<li class="">원저작물의 창작자가 저작물의 사용과 배포에 있어 일반적으로 제한된 시간 동안 배타적 권리를 인정하는 법적인 권리</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-유출-방지>데이터 유출 방지<a href=#데이터-유출-방지 class=hash-link aria-label="데이터 유출 방지에 대한 직접 링크" title="데이터 유출 방지에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DLP = Data Leakage/Loss Prevention</li>
+<li class="">내부정보 유출 방지 솔루션</li>
+<li class="">사내 직원이 사용하는 PC와 네트워크상의 모든 정보를 검색하고 사용자의 행위를 탐지, 통제해 외부로의 유출을 사전에 막는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cc>CC<a href=#cc class=hash-link aria-label="CC에 대한 직접 링크" title="CC에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Common Criteria = 공통 평가 기준</li>
+<li class="">1999년 6월 8일 ISO 15408 표준으로 채택된 정보 보호 제품 평가 기준</li>
+<li class="">정보화 순기능 역할을 보장하기 위해 정보화 제품의 정보보호 기능과 이에 대한 사용 환경 등급을 정한 기준</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ssl>SSL<a href=#ssl class=hash-link aria-label="SSL에 대한 직접 링크" title="SSL에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Secure Sockets Layer</li>
+<li class="">데이터를 송수신하는 두 컴퓨터 사이, 종단 간 즉 TCP/IP 계층과 애플리케이션 계층 사이에 위치하여 인증, 암호화, 무결성을 보장하는 업계 표준 프로토콜</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프록시-서버>프록시 서버<a href=#프록시-서버 class=hash-link aria-label="프록시 서버에 대한 직접 링크" title="프록시 서버에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Proxy Server</li>
+<li class="">PC 사용자와 인터넷 사이에서 중개자 역할을 하는 서버</li>
+<li class="">방화벽 기능과 캐시 기능을 수행</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=hdcp>HDCP<a href=#hdcp class=hash-link aria-label="HDCP에 대한 직접 링크" title="HDCP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">High-bandwidth Digital Content Protection = 고대역폭 디지털 콘텐츠 전송 보호</li>
+<li class="">디지털 비주얼 인터페이스(DVI) 송수신간 고대역폭의 비디오 암호화 전송을 보호하기 위한 규격</li>
+<li class="">송신측은 컴퓨터, 세톱, DVD 플레이어 등을 수신측은 LCD, TV, 프로젝터 등을 사용하며 모든 장비는 컨텐츠 보호 기관으로부터 고유의 비밀 장비 키를 부여받는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=빅-데이터>빅 데이터<a href=#빅-데이터 class=hash-link aria-label="빅 데이터에 대한 직접 링크" title="빅 데이터에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">기존의 관리 방법이나 분석 체계로는 처리하기 어려운 막대한 양의 정형 또는 비정형 데이터 집합</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ccl>CCL<a href=#ccl class=hash-link aria-label="CCL에 대한 직접 링크" title="CCL에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Create Commons License = 저작물 이용 약관</li>
+<li class="">저작원자가 자신의 저작물에 대한 이용방법 및 조건을 표기하는 저작물 이용약관</li>
+<li class="">저작자 표시(BY), 비영리($), 변경금지(=), 동일조건변경허락(⊃)의 4가지로 분류</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=개인정보-영향평가-제도>개인정보 영향평가 제도<a href=#개인정보-영향평가-제도 class=hash-link aria-label="개인정보 영향평가 제도에 대한 직접 링크" title="개인정보 영향평가 제도에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PIA = Privacy Impact Assessment</li>
+<li class="">개인 정보를 활용하는 새로운 정보시스템의 도입 및 기존 정보시스템의 중요한 변경 시 시스템의 구축 운영이 기업의 고객은 물론 국민의 사생활에 미칠 영향에 대해 미리 조사, 분석, 평가하는 제도</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=목표-복구-시점>목표 복구 시점<a href=#목표-복구-시점 class=hash-link aria-label="목표 복구 시점에 대한 직접 링크" title="목표 복구 시점에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">RPO = Recovery Point Objective</li>
+<li class="">조직에서 발생한 여러 가지 재난 상황</li>
+<li class="">IT 시스템이 마비되었을 때 각 업무에 필요한 데이터를 여러 백업 수단을 활용하여 복구할 수 있는 기준점</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-제어-메세지-프로토콜>인터넷 제어 메세지 프로토콜<a href=#인터넷-제어-메세지-프로토콜 class=hash-link aria-label="인터넷 제어 메세지 프로토콜에 대한 직접 링크" title="인터넷 제어 메세지 프로토콜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">ICMP = Internet Control Message Protocol</li>
+<li class="">TCP/IP 기반의 인터넷 통신 서비스에서 인터넷 프로토콜과 조합하여 통신 중에 발생하는 오류의 처리와 전송 경로의 변경 등을 위한 제어 메세지를 취급하는 프로토콜</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wep>WEP<a href=#wep class=hash-link aria-label="WEP에 대한 직접 링크" title="WEP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wired Equivalent Privacy = 유선급 프라이버시</li>
+<li class="">유선 랜에서 기대할 수 있는 것과 같은 보안과 프라이버시 수준이 제공되는 <strong>무선 랜의 보안 프로토콜</strong></li>
+<li class="">IEEE WI-FI 표준 802.11b에 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wpa>WPA<a href=#wpa class=hash-link aria-label="WPA에 대한 직접 링크" title="WPA에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">WI-FI Protected Access</li>
+<li class="">WI-FI에서 제정한 무선랜 인증 및 암호화 관련 표준</li>
+<li class="">암호화는 웹 방식을 보완한 IEEE 802.11i 표준의 임시 키 무결성 프로토콜(TKIP)를 기반으로 하며 인증 부분에서도 802.1x 및 확장 가능 인증 프로토콜(EAP)을 기반으로 상호 인증을 도입해 성능을 높임</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip-보안-프로토콜>IP 보안 프로토콜<a href=#ip-보안-프로토콜 class=hash-link aria-label="IP 보안 프로토콜에 대한 직접 링크" title="IP 보안 프로토콜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IPSec = IP security protocol</li>
+<li class="">안전에 취약한 인터넷에서 안전한 통신을 실현하기 위한 통신 규약</li>
+<li class="">인터넷상에 전용 회선과 같이 이용 가능한 가상적인 전용 회선을 구축하여 데이터가 도청당하는 등의 행위를 방지하기 위한 통신 규약</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=otp>OTP<a href=#otp class=hash-link aria-label="OTP에 대한 직접 링크" title="OTP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">One-Time Password = 일회용 패스워드</li>
+<li class="">로그인 할 때마다 그 세션에서만 사용할 수 있는 1회성 패스워드를 생성하는 보안 시스템</li>
+<li class="">동일한 패스워드가 반복해서 재사용됨으로써 발생할 수 있는 패스워드 도난 문제를 예방하는 것이 목적</li>
+<li class="">일반 패스워드와 달리 단방향 암호 기반의 Hash를 사용</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=공인인증서>공인인증서<a href=#공인인증서 class=hash-link aria-label="공인인증서에 대한 직접 링크" title="공인인증서에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Certificate</li>
+<li class="">전자 서명법에 의한 공인 인증 기관이 발행한 인증서</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=생체-인식>생체 인식<a href=#생체-인식 class=hash-link aria-label="생체 인식에 대한 직접 링크" title="생체 인식에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Biometrics</li>
+<li class="">사람의 신체적, 행동적 특징을 자동화된 장치로 추출하고 분석하여 정확하게 개인의 신원을 확인하는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=i-pin>I-PIN<a href=#i-pin class=hash-link aria-label="I-PIN에 대한 직접 링크" title="I-PIN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">인터넷에서 주민등록번호 대신 쓸 수 있도록 만든 사이버 주민등록번호</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=bcp>BCP<a href=#bcp class=hash-link aria-label="BCP에 대한 직접 링크" title="BCP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Business Continuity Planning = 업무 연속성 계획</li>
+<li class="">재난 발생시 비즈니스의 연속성을 유지하기 위한 계획</li>
+<li class="">재해 재난으로 인해 정상적인 운용이 어려운 상황에 처했을 때 데이터 백업과 같은 단순 복구뿐 아니라 고객 서비스의 지속성 보장, 핵심 업무 기능을 지속하는 환경을 조성해 기업 가치를 극대화하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=crl>CRL<a href=#crl class=hash-link aria-label="CRL에 대한 직접 링크" title="CRL에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Certificate Revocation List = 인증서 폐기 목록</li>
+<li class="">폐기된 인증서를 이용자들이 확인할 수 있도록 그 목록을 배포, 공표하기 위한 메커니즘</li>
+<li class="">주로 인증기관에서 관리하며 메세지를 전달할 때 인증서와 함께 전달</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=epc-클래스>EPC 클래스<a href=#epc-클래스 class=hash-link aria-label="EPC 클래스에 대한 직접 링크" title="EPC 클래스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Electronic Product Code Class</li>
+<li class="">EPCglobal에서 정의하는 RFID 태그의 종류</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인증기관>인증기관<a href=#인증기관 class=hash-link aria-label="인증기관에 대한 직접 링크" title="인증기관에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Certification Authority</li>
+<li class="">인증 업무를 수행하는 제3자의 신뢰 기관</li>
+<li class="">온라인상에서 사용자 인증, 전자문서 위변조 방지, 부인방지 등의 보안기능을 제공하는 인증서에 대한 발급 갱신 폐지 유효성 등의 검증 업무를 수행</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=sam>SAM<a href=#sam class=hash-link aria-label="SAM에 대한 직접 링크" title="SAM에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Secure Application Module</li>
+<li class="">카드 판독기 내부에 장착되어 카드와 단말기의 유효성을 인증하고 통신 데이터를 암호화하여 정보의 노출 방지 및 통신 메세지의 인증 및 검증을 하며 또한 카드에서 이전된 전자적인 가치를 저장하기도 한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=clms>CLMS<a href=#clms class=hash-link aria-label="CLMS에 대한 직접 링크" title="CLMS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Copyright License Management System = 저작권라이선스 통합관리시스템</li>
+<li class="">정부가 디지털 저작물에 대한 체계적인 관리를 위해 추진하고 있는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=정부-개인식별-번호>정부 개인식별 번호<a href=#정부-개인식별-번호 class=hash-link aria-label="정부 개인식별 번호에 대한 직접 링크" title="정부 개인식별 번호에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Government-Personal IDentification Number</li>
+<li class="">정부가 추진하고 있는 주민등록번호 대체 수단</li>
+<li class="">G-PIN</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=키-페어>키 페어<a href=#키-페어 class=hash-link aria-label="키 페어에 대한 직접 링크" title="키 페어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Key Pair</li>
+<li class="">공개키 암호 알고리즘에 사용되는 개인키와 공개키 쌍을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=방화벽>방화벽<a href=#방화벽 class=hash-link aria-label="방화벽에 대한 직접 링크" title="방화벽에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Firewall</li>
+<li class="">기업이나 조직 내부의 네트워크와 인터넷 간에 전송되는 정보를 선별하여 수용, 거부, 수정하는 능력을 가진 보안 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소프트웨어-에스크로>소프트웨어 에스크로<a href=#소프트웨어-에스크로 class=hash-link aria-label="소프트웨어 에스크로에 대한 직접 링크" title="소프트웨어 에스크로에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Softwawre Escrow</li>
+<li class="">소프트웨어 개발자의 지식재산권을 보호하고 사용자에게는 저렴한 비용으로 소프트웨어를 안정적으로 사용하고 유지 보수를 받을 수 있도록 하기 위해서 소스 프로그램과 기술 정보 등을 제 3기관에 보관하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=마이핀>마이핀<a href=#마이핀 class=hash-link aria-label="마이핀에 대한 직접 링크" title="마이핀에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">법적 근거 없는 주민등록번호 수집이 금지되면서 도입된 13자리 무작위 번호</li>
+<li class="">오프라인 상에서 주민번호를 대신한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=captcha>CAPTCHA<a href=#captcha class=hash-link aria-label="CAPTCHA에 대한 직접 링크" title="CAPTCHA에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">자동 계정 생성 방지 기술 = Completely Automated Public Turing test to tell Computers and Humans Apart</li>
+<li class="">웹페이지에서 악의적으로 회원강비을 하거나 스팸 메세지를 보내기 위해 사용되는 프로그램인 봇을 차단하기 위해 만들어졌다.</li>
+<li class="">사람과 컴퓨터를 구분하기 위한 자동화된 시험</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=지능형-사이버-위협-대응>지능형 사이버 위협 대응<a href=#지능형-사이버-위협-대응 class=hash-link aria-label="지능형 사이버 위협 대응에 대한 직접 링크" title="지능형 사이버 위협 대응에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">CTI = Cyber Threat Intelligence</li>
+<li class="">조직의 인프라와 지적 재산을 보호하기 위해 과거 조직 내부뿐만 아니라 외부의 다양한 정보들에 기초하여 각종 위협에 대응하는 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=백업방식>백업방식<a href=#백업방식 class=hash-link aria-label="백업방식에 대한 직접 링크" title="백업방식에 대한 직접 링크" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=전체-백업>전체 백업<a href=#전체-백업 class=hash-link aria-label="전체 백업에 대한 직접 링크" title="전체 백업에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">데이터 전체를 대상으로 백업을 수행하는 방식</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=증분-백업>증분 백업<a href=#증분-백업 class=hash-link aria-label="증분 백업에 대한 직접 링크" title="증분 백업에 대한 직접 링크" translate=no>​</a></h3>
+<ul>
+<li class="">Incremental Backup</li>
+<li class="">백업 대상 데이터 중 변경되거나 증가된 데이터만을 대상으로 백업을 수행하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cyber-bullying>Cyber Bullying<a href=#cyber-bullying class=hash-link aria-label="Cyber Bullying에 대한 직접 링크" title="Cyber Bullying에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">사이버 협박</li>
+<li class="">개인이나 집단이 인터넷에서 상대에게 나타내는 적대 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ddos>DDoS<a href=#ddos class=hash-link aria-label="DDoS에 대한 직접 링크" title="DDoS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Distributed Denial of Service = 분산 서비스 거부 공격</li>
+<li class="">분산 서비스 거부 공격은 여러 대의 장비를 이용하여 대량의 데이터를 한 곳의 서버에 집중적으로 전송함으로써 특정 서버의 정상적인 기능을 방해하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=voip-보안-위협>VoIP 보안 위협<a href=#voip-보안-위협 class=hash-link aria-label="VoIP 보안 위협에 대한 직접 링크" title="VoIP 보안 위협에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">VoIP Security Threat</li>
+<li class="">음성 패킷을 불법으로 수집 및 조합해 통화 내용을 재생하고 도청하는 위협</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ransomware>Ransomware<a href=#ransomware class=hash-link aria-label="Ransomware에 대한 직접 링크" title="Ransomware에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">랜섬웨어</li>
+<li class="">인터넷 사용자의 컴퓨터에 잠입해 내부 문서나 파일 등을 임의로 암호화해 사용자가 열지 못하도록 한 후 암호 해독용 프로그램의 전달을 조건으로 사용자에게 돈을 요구</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-발자국>디지털 발자국<a href=#디지털-발자국 class=hash-link aria-label="디지털 발자국에 대한 직접 링크" title="디지털 발자국에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Footprint</li>
+<li class="">사람들이 온라인 활동을 하면서 남긴 로그인 정보, 결제 정보, 결제 방법, 구매 이력, SNS, Email 등의 다양한 디지털 기록 또는 흔적</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=워터링-홀>워터링 홀<a href=#워터링-홀 class=hash-link aria-label="워터링 홀에 대한 직접 링크" title="워터링 홀에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Watering Hole</li>
+<li class="">포식자가 사냥을 위해 물 웅덩이에서 매복하고 있는 것을 빗댄 용어</li>
+<li class="">표적으로 삼은 집단이 주로 방문하는 웹 사이트를 감염시켜 피해 대상이 해당 사이트를 방문하는 것을 기다린다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=백도어>백도어<a href=#백도어 class=hash-link aria-label="백도어에 대한 직접 링크" title="백도어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Back Door = Trap Door</li>
+<li class="">시스템 보안이 제거된 비밀 통로</li>
+<li class="">서비스 기술자나 유지 보수 프로그램 작성자의 액세스 편의를 위해 시스템 설계자가 고의로 만들어 놓은 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=zero-day-attack>Zero Day Attack<a href=#zero-day-attack class=hash-link aria-label="Zero Day Attack에 대한 직접 링크" title="Zero Day Attack에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">제로 데이 공격</li>
+<li class="">보안 취약점이 발견되었을 때 그 문제가 공표되기 전에 해당 취약점을 악용하여 이루어지는 보안 공격</li>
+<li class="">공격의 신속성을 의미</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=smurfing>Smurfing<a href=#smurfing class=hash-link aria-label="Smurfing에 대한 직접 링크" title="Smurfing에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">스머핑</li>
+<li class="">IP나 ICMP의 특성을 악용하여 엄청난 양의 데이터를 한 사이트에 집중적으로 보냄으로써 네트워크의 일부를 불능상태로 만드는 공격 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=typosquatting>Typosquatting<a href=#typosquatting class=hash-link aria-label="Typosquatting에 대한 직접 링크" title="Typosquatting에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">타이포스쿼팅 = URL 하이재킹</li>
+<li class="">네티즌들이 사이트에 접속할 때 주소를 잘못 입력하거나 철자를 빠뜨리는 실수를 이용하기 위해 이와 유사한 유명 도메인을 미리 등록하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=핵티비즘>핵티비즘<a href=#핵티비즘 class=hash-link aria-label="핵티비즘에 대한 직접 링크" title="핵티비즘에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hacktivism</li>
+<li class="">해커와 행동주의(Activism)의 합성어</li>
+<li class="">자신들의 정치적 목적을 달성하기 위한 수단으로 정부나 기업 단체등의 인터넷 웹사이트를 해킹하는 일체 활동</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=티비싱>티비싱<a href=#티비싱 class=hash-link aria-label="티비싱에 대한 직접 링크" title="티비싱에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Tvishing</li>
+<li class="">스마트 TV에 악성 소프트웨어를 설치해 스마트 TV에 대한 최고 접근 권한을 획득하는 해킹 기법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=apt>APT<a href=#apt class=hash-link aria-label="APT에 대한 직접 링크" title="APT에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Advanced Persistent Threats = 지능형 지속 위협</li>
+<li class="">다양한 IT 기술과 방식들을 이용해 조직적으로 특정 기업이나 조직 네트워크에 침투해 활동 거점을 마련한 뒤 때를 기다리면서 보안을 무력화시키고 정보를 수집한 다음 외부로 빼돌리는 형태의 공격</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=pharming>Pharming<a href=#pharming class=hash-link aria-label="Pharming에 대한 직접 링크" title="Pharming에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">파밍</li>
+<li class="">합법적으로 소유하고 있던 사용자의 도메인을 탈취하거나 DNS 이름을 속여 사용자들이 진짜 사이트로 오인하도록 유도하여 개인 정보를 훔치는 신종 인터넷 사기 수법</li>
+<li class="">아예 해당 사이트가 공식적으로 운영하고 있는 도메인 자체를 탈취</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=social-engineering>Social Engineering<a href=#social-engineering class=hash-link aria-label="Social Engineering에 대한 직접 링크" title="Social Engineering에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">사회 공학</li>
+<li class="">컴퓨터 보안에 있어 인간 상호작용의 깊은 신뢰를 바탕으로 사람들을 속여 정상 보안 절차를 깨트리기 위한 비기술적 시스템 침입 수단</li>
+<li class="">우선 통신망 보안 정보에 접근 권한이 있는 담당자와 신뢰를 쌓고 전화나 이메일을 통해 그들의 약점과 도움을 이용하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=zeus>Zeus<a href=#zeus class=hash-link aria-label="Zeus에 대한 직접 링크" title="Zeus에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">사용자의 온라인 뱅킹 계정 정보를 탈취하기 위해 개발된 상용 멀웨어</li>
+<li class="">2007년 러시아에서 개발된 것으로 추정</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=botnet>Botnet<a href=#botnet class=hash-link aria-label="Botnet에 대한 직접 링크" title="Botnet에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">봇넷</li>
+<li class="">악성 프로그램에 감염되어 향후에 악의적인 의도로 사용될 수 있는 다수의 컴퓨터들이 네트워크로 연결된 형태</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=zombie>Zombie<a href=#zombie class=hash-link aria-label="Zombie에 대한 직접 링크" title="Zombie에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">다른 프로그램이나 다른 사용자를 조종하도록 악성코드에 감염된 컴퓨터</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=patent-troll>Patent Troll<a href=#patent-troll class=hash-link aria-label="Patent Troll에 대한 직접 링크" title="Patent Troll에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">특허 괴물</li>
+<li class="">특허권을 비롯한 지적 재산권을 통해 로열티 수입만으로 이익을 창출하는 특허 관리 전문 기업</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=악성-소프트웨어>악성 소프트웨어<a href=#악성-소프트웨어 class=hash-link aria-label="악성 소프트웨어에 대한 직접 링크" title="악성 소프트웨어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Malware = Malicious Software</li>
+<li class="">악의적인 목적을 위해 작성된 것으로 악성 코드 또는 악성 프로그램으로 불린다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스턱스넷>스턱스넷<a href=#스턱스넷 class=hash-link aria-label="스턱스넷에 대한 직접 링크" title="스턱스넷에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Stuxnet</li>
+<li class="">독일 지멘스사의 원격 감시 제어 시스템의 제어 소프트웨어에 침투하여 시스템을 마비하게 할 목표로 제작된 악성코드</li>
+<li class="">원자력 발전소 제어 시스템에 침투하여 오작동을 유도하는 명령 코드를 입력해 시스템을 마비시킨다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=공격용-툴킷>공격용 툴킷<a href=#공격용-툴킷 class=hash-link aria-label="공격용 툴킷에 대한 직접 링크" title="공격용 툴킷에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Attack Toolkit</li>
+<li class="">네트워크에 연결된 컴퓨터를 공격하기 위해 악성 코드 프로그램을 모아 놓은 것</li>
+<li class="">대표적인 공격용 툴킷으로는 Zeus와 Sypeye 등이 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ping-of-death>Ping of Death<a href=#ping-of-death class=hash-link aria-label="Ping of Death에 대한 직접 링크" title="Ping of Death에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">죽음의 핑</li>
+<li class="">인터넷 프로토콜 허용 범위(65536 바이트) 이상의 큰 패킷을 고의로 전송하여 발생한 서비스 거부 공격</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=splogger>Splogger<a href=#splogger class=hash-link aria-label="Splogger에 대한 직접 링크" title="Splogger에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">스플로거</li>
+<li class="">스팸과 블로거의 합성어</li>
+<li class="">다른 사람의 콘텐츠를 무단으로 복사해 자신의 블로그에 게재하는 볼로거</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip-스푸핑>IP 스푸핑<a href=#ip-스푸핑 class=hash-link aria-label="IP 스푸핑에 대한 직접 링크" title="IP 스푸핑에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IP Spoofing</li>
+<li class="">다른 시스템과의 신뢰관계를 속여 침입하는 크래킹 기술</li>
+<li class="">속이기라는 의미의 스푸핑은 기술적인 요소가 많이 필요한 크래킹 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스니핑>스니핑<a href=#스니핑 class=hash-link aria-label="스니핑에 대한 직접 링크" title="스니핑에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Sniffing</li>
+<li class="">네트워크의 중간에서 남의 패캣 정보를 도청하는 해킹 유형의 하나로 수동적인 공격에 해당한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스위치-재밍>스위치 재밍<a href=#스위치-재밍 class=hash-link aria-label="스위치 재밍에 대한 직접 링크" title="스위치 재밍에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Switch Jamming</li>
+<li class="">위조된 MAC 주소를 네트워크 상으로 지속적으로 흘려보내 스위칭 허브와 주소 테이블 기능을 마비시키는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스팸>스팸<a href=#스팸 class=hash-link aria-label="스팸에 대한 직접 링크" title="스팸에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">인터넷 상에서 다수의 수신인에게 무작위로 송신된 이메일 메세지를 의미</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=사이버-스토킹>사이버 스토킹<a href=#사이버-스토킹 class=hash-link aria-label="사이버 스토킹에 대한 직접 링크" title="사이버 스토킹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Cyber Stalking</li>
+<li class="">정보통신망을 이용해 악의적인 의도로 지속적으로 공포감이나 불안감 등을 유발하는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=피싱>피싱<a href=#피싱 class=hash-link aria-label="피싱에 대한 직접 링크" title="피싱에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Phishing</li>
+<li class="">허위 웹 사이트를 내새워 사용자의 개인 신용 정보를 빼내는 수법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=반달리즘>반달리즘<a href=#반달리즘 class=hash-link aria-label="반달리즘에 대한 직접 링크" title="반달리즘에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Vandalism</li>
+<li class="">다수가 참여할 수 있도록 공개된 문서의 내용을 훼손하거나 엉뚱한 제목으로 변경하고 낙서하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스누핑>스누핑<a href=#스누핑 class=hash-link aria-label="스누핑에 대한 직접 링크" title="스누핑에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Snooping</li>
+<li class="">네트워크 상에서 남의 점보를 염탐하여 불법으로 가로채는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=다이어-악성코드>다이어 악성코드<a href=#다이어-악성코드 class=hash-link aria-label="다이어 악성코드에 대한 직접 링크" title="다이어 악성코드에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Dyre Malware</li>
+<li class="">인터넷 뱅킹 정보를 탈취하는 악성코드로 트로이목마의 한 종류</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=드롭퍼>드롭퍼<a href=#드롭퍼 class=hash-link aria-label="드롭퍼에 대한 직접 링크" title="드롭퍼에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Dropper</li>
+<li class="">정상적인 파일등에 트로이 목마나 웜, 바이러스가 숨겨진 형태를 일컫는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=메모리-해킹>메모리 해킹<a href=#메모리-해킹 class=hash-link aria-label="메모리 해킹에 대한 직접 링크" title="메모리 해킹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Memory Hacking</li>
+<li class="">컴퓨터 메모리에 있는 데이터를 위변조하는 해킹 방법</li>
+<li class="">정상적인 인터넷 뱅킹 사이트를 이용했음에도 이체거래 과정에서 수취인의 계좌번호를 변조하거나 보안카드의 비밀번호를 빼내어 돈을 빼돌린다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스미싱>스미싱<a href=#스미싱 class=hash-link aria-label="스미싱에 대한 직접 링크" title="스미싱에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Smishing</li>
+<li class="">SMS와 Phishing의 합성어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스파이웨어>스파이웨어<a href=#스파이웨어 class=hash-link aria-label="스파이웨어에 대한 직접 링크" title="스파이웨어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">적절한 사용자 동의 없이 사용자 정보를 수집하는 프로그램 또는 적절한 사용자 동의 없이 설치되어 불편을 야기하거나 사생활을 침해할 수 있는 프로그램</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=웜>웜<a href=#웜 class=hash-link aria-label="웜에 대한 직접 링크" title="웜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Worm</li>
+<li class="">네트워크를 통해 연속적으로 자신을 복제하여 시스템의 부하를 높임으로써 다운시키는 바이러스의 일종</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=크래킹>크래킹<a href=#크래킹 class=hash-link aria-label="크래킹에 대한 직접 링크" title="크래킹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">어떤 목적을 가지고 타인의 시스템에 불법으로 침입하여 정보를 파괴하거나 정보의 내용을 자신의 이익에 맞게 변경하는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=트로이-목마>트로이 목마<a href=#트로이-목마 class=hash-link aria-label="트로이 목마에 대한 직접 링크" title="트로이 목마에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Trojan Horse</li>
+<li class="">정상적인 기능을 하는 프로그램으로 가장하여 프로그램 내에 숨어 있다가 해당 프로그램이 동작할 때 활성화되어 부작용을 일으키는 것</li>
+<li class="">자기 복제 능력은 없다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=해킹>해킹<a href=#해킹 class=hash-link aria-label="해킹에 대한 직접 링크" title="해킹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hacking</li>
+<li class="">컴퓨터 시스템에 불법적으로 접근, 침투하여 시스템과 데이터를 파괴하는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=혹스>혹스<a href=#혹스 class=hash-link aria-label="혹스에 대한 직접 링크" title="혹스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hoax</li>
+<li class="">실제로는 악성코드로 행동하지 않으면서 겉으로는 악성코드인 것처럼 가장하여 행동하는 소프트웨어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=vpn>VPN<a href=#vpn class=hash-link aria-label="VPN에 대한 직접 링크" title="VPN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Virtual Private Network = 가상 사설 통신망</li>
+<li class="">가상 사설 네트워크로 인터넷 등 통신 사업자의 공중 네트워크를 사용자가 마치 자신의 전용 회선처럼 사용할 수 있게 하는 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=무선랜>무선랜<a href=#무선랜 class=hash-link aria-label="무선랜에 대한 직접 링크" title="무선랜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">WLAN = Wireless LAN</li>
+<li class="">무선 접속 장치(Access Point)가 설치된 곳을 중심으로 무선 주파수(RF) 기술을 이용해 근거리에서 WLAN 카드가 장착된 개인 휴대 정보 단말기를 이용해 인터넷에 연결하는 네트워크</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=직교-주파수-분할-다중>직교 주파수 분할 다중<a href=#직교-주파수-분할-다중 class=hash-link aria-label="직교 주파수 분할 다중에 대한 직접 링크" title="직교 주파수 분할 다중에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OFDM = Orthogonal Frequency Division Multiplexing</li>
+<li class="">고속의 데이터를 각 반송파가 직교 관계에 잇는 다수의 부반송파에 나눠 실어 다중 전송하는 디지털 변조 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ftp>FTP<a href=#ftp class=hash-link aria-label="FTP에 대한 직접 링크" title="FTP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">File Transfer Protocol = 파일 전송 프로토콜</li>
+<li class="">컴퓨터와 컴퓨터 또는 컴퓨터와 인터넷 사이에서 파일을 주고받을 수 있도록 하는 원격 파일 전송 프로토콜</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=다중-경로-페이딩>다중 경로 페이딩<a href=#다중-경로-페이딩 class=hash-link aria-label="다중 경로 페이딩에 대한 직접 링크" title="다중 경로 페이딩에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Multipath Fading</li>
+<li class="">신호를 전달하는 전파가 통로상의 여러 가지 장애물에 의해 두 개 이상의 경로를 통하여 수신 측에 도달하는 경우, 그 합성 신호가 시공간적으로 강도가 변하는 현상</li>
+<li class="">전자파가 진행되는 경로에 여러 가지 장애물이 있을 경우 반사가 일어나고 반사파는 반사되는 경로에 따라 진폭과 위상이 달라진다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ndn>NDN<a href=#ndn class=hash-link aria-label="NDN에 대한 직접 링크" title="NDN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Named Data Networking</li>
+<li class="">인터넷에서 데이터 전송을 콘텐츠 자체의 정보와 라우터 기능만으로 수행하는 기술</li>
+<li class="">클라이언트와 서버가 패킷의 헤더에 내장되어 있는 주소 정보를 이용하여 연결되던 기존의 IP 망을 대체할 새로운 인터넷 아키텍처로 떠오르고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=원격-검침>원격 검침<a href=#원격-검침 class=hash-link aria-label="원격 검침에 대한 직접 링크" title="원격 검침에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">AMR = Automatic Meter Reading, Remote Meter Reading Service</li>
+<li class="">전기, 가스, 수도 계량기 등을 검침원이 일일이 방문하지 않고 원격에서 단말기를 이용해 검침 데이터를 읽을 수 있는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ngn>NGN<a href=#ngn class=hash-link aria-label="NGN에 대한 직접 링크" title="NGN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Next Generation Network = 차세대 통신망</li>
+<li class="">ITU-T에서 개발하고 있는 유선망 기반의 차세대 통신망</li>
+<li class="">유선 접속망 뿐만아니라 이동 사용자 지원까지를 목표로 하며 이동통신에서 제공하는 완전한 이동성 제공을 목표로 개발되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=glonass>GLONASS<a href=#glonass class=hash-link aria-label="GLONASS에 대한 직접 링크" title="GLONASS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">미국의 GPS, 유럽의 갈릴레오 위치결정시스템과 유사한 러시아의 전파 위성 항법 시스템</li>
+<li class="">FDMA 방식을 사용한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=mics>MICS<a href=#mics class=hash-link aria-label="MICS에 대한 직접 링크" title="MICS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Medical Implant Communication Service</li>
+<li class="">WBAN의 의료분야에서 임플란트 장치 간의 통신 서비스를 부르는 명칭</li>
+<li class="">인체내 통신으로 감쇄가 적은 주파수 사용이 필요하여 402 ~ 405MHZ를 사용하고 대역폭은 300KHZ로 적어 가용 비트레이트도 적다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=sdn>SDN<a href=#sdn class=hash-link aria-label="SDN에 대한 직접 링크" title="SDN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Software Defined Networking = 소프트웨어 정의 네트워킹</li>
+<li class="">네트워크를 컴퓨터처럼 모델링하여 여러 사용자가 각각의 소프트웨어 프로그램들로 네트워킹을 가상화하여 제어하고 관리하는 네트워크</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=근거리-무선-통신>근거리 무선 통신<a href=#근거리-무선-통신 class=hash-link aria-label="근거리 무선 통신에 대한 직접 링크" title="근거리 무선 통신에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">NFC = Near Field Communication</li>
+<li class="">고주파를 이용한 근거리 무선통신 기술</li>
+<li class="">Ecma 340, ISO/IEC 18092 표준으로 아주 가까운 거리에서 양방향 통신을 지원하는 RFID 기술의 일종</li>
+<li class="">13.56MHz 주파수를 이용해 10cm 안에서 최고 424Kbps의 속도로 데이터 전송을 지원한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ssid>SSID<a href=#ssid class=hash-link aria-label="SSID에 대한 직접 링크" title="SSID에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Service Set IDentifier = 서비스 세트 식별자</li>
+<li class="">무선랜을 통해 전송되는 모든 패킷의 헤더에 존재하는 고유 식별자</li>
+<li class="">무선랜 클라이언트가 BSS에 접속할 때 각 무선랜을 다른 무선랜과 구분하기 위해 사용한다.</li>
+</ul>
+<blockquote>
+<p>BSS</p>
+<ul>
+<li class="">Base Station System</li>
+<li class="">이동 통신에서 기지국을 구성하는 시스템</li>
+<li class="">기지국 제어기와 기지국 트랜시버로 구분됨</li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=qos>QoS<a href=#qos class=hash-link aria-label="QoS에 대한 직접 링크" title="QoS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Quality of Service = 서비스 품질</li>
+<li class="">네트워크에서 일정 기준 이하의 지연시간이나 데이터 손실률 등을 보증하기 위한 서비스 규격</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=modem>MODEM<a href=#modem class=hash-link aria-label="MODEM에 대한 직접 링크" title="MODEM에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">디지털 신호를 아날로그 신호로 변환하는 변조 과정과 아날로그 신호를 디지털 신호로 변환하는 복조 과정을 수행하는 신호 변환 장치</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=tein>TEIN<a href=#tein class=hash-link aria-label="TEIN에 대한 직접 링크" title="TEIN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Trans-Eurasia Information Network = 트랜스 유라시아 네트워크</li>
+<li class="">아시아와 유럽을 연결하는 초고속 정보 통신망</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=telepresence>Telepresence<a href=#telepresence class=hash-link aria-label="Telepresence에 대한 직접 링크" title="Telepresence에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">원격 현장감</li>
+<li class="">공간적으로 떨어져 있는 장소 또는 가상의 장소를 신체적으로 경험하는 것</li>
+<li class="">통신 회선으로 컴퓨터를 원격지와 연결하여 구성한 가상현실 공간을 통해 신쳊거으로 가 있지 않은 다른 장소에 존재할 수 있게 하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=carrier-aggregation>Carrier Aggregation<a href=#carrier-aggregation class=hash-link aria-label="Carrier Aggregation에 대한 직접 링크" title="Carrier Aggregation에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">반송파 묶음</li>
+<li class="">복수의 주파수 대역을 동시에 사용할 수 있는 대역폭의 확장 기술로 LTEAdvanced의 핵심 기술이다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=네트워크-준비-지수>네트워크 준비 지수<a href=#네트워크-준비-지수 class=hash-link aria-label="네트워크 준비 지수에 대한 직접 링크" title="네트워크 준비 지수에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">NRI = Networked Readiness Index</li>
+<li class="">세계 경졔 포럼(WEF)이 국제적인 경영대학인 인시아드와 공동으로 개인과 정부, 기업의 정보 통신기술(ICT) 발전도와 경쟁력을 국가별로 평가한 지수</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=man>MAN<a href=#man class=hash-link aria-label="MAN에 대한 직접 링크" title="MAN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Metropolitan Area Network = 도시권 통신망</li>
+<li class="">LAN과 WAN의 중간 형태로 LAN의 기능을 충분히 수용하면서 도시전역 또는 도시와 도시 등 넓은 지역을 연결하는 통신망</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=vod>VOD<a href=#vod class=hash-link aria-label="VOD에 대한 직접 링크" title="VOD에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Video On Demand = 주문형 비디오</li>
+<li class="">다양한 정보의 데이터베이스를 구축하여 연결된 컴퓨터 또는 텔레비전을 통해 사용자가 요구하는 정보를 원하는 시간에 볼 수 있도록 전송하는 멀티미디어 서비스</li>
+<li class="">프로그램 시청 도중에 일시 정지시키거나 느린 속도로 혹은 반복해서 볼 수도 있는 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=syn>SYN<a href=#syn class=hash-link aria-label="SYN에 대한 직접 링크" title="SYN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SYNchronous idle = 동기 상태 부호</li>
+<li class="">동기 신호방식에서 다른 문자를 보내지 않는 유휴 상태에서 데이터 단말 상호간의 동기를 취하거나, 동기를 유지하기 위한 신호로 사용되는 전송 제어 문자</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=tcpip>TCP/IP<a href=#tcpip class=hash-link aria-label="TCP/IP에 대한 직접 링크" title="TCP/IP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Transfer Control Protocol/Internet Protocol</li>
+<li class="">인터넷에 연결된 서로 다른 기종의 컴퓨터들 간에 데이터를 주고 받을 수 있도록 하는 표준프로토콜</li>
+<li class="">인트라넷이나 엑스트라넷과 같은 사설망에서도 사용된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로토콜>프로토콜<a href=#프로토콜 class=hash-link aria-label="프로토콜에 대한 직접 링크" title="프로토콜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Protocol</li>
+<li class="">네트워크에서 서로 다른 컴퓨터들 간에 정보를 교환할 수 있게 해주는 표준화된 통신 규약</li>
+<li class="">네트워크 기능을 효율적으로 발휘하도록 하기 위한 협정으로 TCP/IP가 대표적이며 통신 연결시 다양한 레벨을 갖는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=uwb>UWB<a href=#uwb class=hash-link aria-label="UWB에 대한 직접 링크" title="UWB에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Ultra WideBand = 초광대역</li>
+<li class="">짧은 거리에서 많은 양의 디지털 데이터를 낮은 전력으로 전송하기 위한 무선 기술로 무선 디지털 펄스라고 하며, 블루투스와 비교되는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=피코넷>피코넷<a href=#피코넷 class=hash-link aria-label="피코넷에 대한 직접 링크" title="피코넷에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PICONET</li>
+<li class="">여러 개의 독립된 통신장치가 블루투스 기술이나 UWB 통신 기술을 사용하여 통신망을 형성하는 무선 네트워크 기술</li>
+<li class="">네트워크를 구성하는 장비 간에 사전에 네트워크의 정의와 계획 없이 상황에 따라 조정 프로토콜에 의하여 마스터와 슬레이브의 역할을 하면서 네트워크를 형성</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-우편-소인>디지털 우편 소인<a href=#디지털-우편-소인 class=hash-link aria-label="디지털 우편 소인에 대한 직접 링크" title="디지털 우편 소인에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DPM = Digital PostMark</li>
+<li class="">만국우편연합(UPU)에서 표준화한 온라인 자료에 대한 전자적인 우편배달 서비스</li>
+<li class="">최근에는 EPCM(Electronic Postal Certification Mark)라고 부룬다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=고속-하향-패킷-접속>고속 하향 패킷 접속<a href=#고속-하향-패킷-접속 class=hash-link aria-label="고속 하향 패킷 접속에 대한 직접 링크" title="고속 하향 패킷 접속에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">HSDPA = High Speed Downlink Packet Access</li>
+<li class="">비동기식 3세대 이동 통신의 하향 링크에서 10Mbps 수준의 고속 패킷 데이터 서비스를 제공하는 전송 규격</li>
+<li class="">인터넷 통신은 주로 다운로드가 많아 하향 링크의 고속화가 서비스의 필수 요소이며 고속 데이터는 주로 정지 상태에서 사용되므로 이러한 조건을 최대한 수용하도록 하향 링크의 전송 규격을 개선한 것으로 WCDMA R5에 적용되었다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=u-health>u-Health<a href=#u-health class=hash-link aria-label="u-Health에 대한 직접 링크" title="u-Health에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">ubiquitous-Health = 유헬스</li>
+<li class="">물리적 공간과 네트워크로 연결된 첨단 보건의료 기술의 전자적 공간을 연결하여 보건 의료 대상자의 삶과 진료가 중심이 되도록 하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디저라티>디저라티<a href=#디저라티 class=hash-link aria-label="디저라티에 대한 직접 링크" title="디저라티에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digerati</li>
+<li class="">디지털과 리터라티의 합성어</li>
+<li class="">컴퓨터, 정보 통신 등 디지털 분야의 지식이 많은 사람을 지칭하는 용어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wban>WBAN<a href=#wban class=hash-link aria-label="WBAN에 대한 직접 링크" title="WBAN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wireless Body Area Network</li>
+<li class="">웨어러블 또는 몸에 심는 형태의 센서나 기기를 무선으로 연결하는 개인 영역 네트워킹 기술</li>
+<li class="">무선 센서나 기기로부터 수집한 정보를 휴대폰 또는 간이형 기지국을 통해 병원이나 기타 필요한 곳에 실시간으로 전송함으로써 uHealth 등의 서비스를 받는데 응용할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ctth>CTTH<a href=#ctth class=hash-link aria-label="CTTH에 대한 직접 링크" title="CTTH에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Coax To The Home</li>
+<li class="">기존 케이블방송망으로 초고속/대용량 서비스를 제공하는 새로운 전송방식이다.</li>
+<li class="">총 1Gbps 용량을 여러 가입자가 공유하는 구조로 일반 가정에 130Mbps의 빠른 인터넷 속도를 제공한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=포스트넷>포스트넷<a href=#포스트넷 class=hash-link aria-label="포스트넷에 대한 직접 링크" title="포스트넷에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PostNet</li>
+<li class="">IT 기반 우편물류 통합 정보시스템</li>
+<li class="">우체국 택배와 국제 특송을 강화하기 위해 우편물에 RFID 칩을 달아 언제 어디서나 실시간으로 우편물의 위치를 체크할 수 있는 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=지그비>지그비<a href=#지그비 class=hash-link aria-label="지그비에 대한 직접 링크" title="지그비에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">ZigBee</li>
+<li class="">저속 전송 속도를 갖는 홈오토메이션 및 데이터 네트워크를 위한 표준 기술</li>
+<li class="">버튼 하나로 하나의 동작을 잡아 집안 어느 곳에서나 전등 제어 및 홈보안 시스템 VCR on/off 등을 할 수 있고 인터넷을 통한 전화 접속으로 홈 오토메이션을 더욱 편리하게 이용하려는 것에서부터 출발한 기술이다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-접근-지수>디지털 접근 지수<a href=#디지털-접근-지수 class=hash-link aria-label="디지털 접근 지수에 대한 직접 링크" title="디지털 접근 지수에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Access Index</li>
+<li class="">정보통신기술의 접근성과 서비스 이용에 관한 전 세계적 비교 지수</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=차량-멀티홉-통신>차량 멀티홉 통신<a href=#차량-멀티홉-통신 class=hash-link aria-label="차량 멀티홉 통신에 대한 직접 링크" title="차량 멀티홉 통신에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">VMC = Vehicle Multihop Communication</li>
+<li class="">자동차에 IT기술을 접목해 차량 충돌을 예방하는 기술</li>
+<li class="">자동차와 노면 간 RF(라디오 주파수) 통신을 주고 받아 제한 속도를 넘어서면 자동으로 차량 속도가 감속되는 것은 물룐, 차량 간 통신으로 충돌을 예방하는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=lan>LAN<a href=#lan class=hash-link aria-label="LAN에 대한 직접 링크" title="LAN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Local Area Network = 근거리 통신망</li>
+<li class="">자원 공유를 목적으로 회사, 학교, 연구소 등의 구내에서 사용하는 통신망으로서 직원들이 가장 효과적으로 공동 사용할 수 있도록 연결된 통신망</li>
+<li class="">전송 거리가 짧아 고속 전송이 가능하며 에러 발생률이 낮다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=망중립성>망중립성<a href=#망중립성 class=hash-link aria-label="망중립성에 대한 직접 링크" title="망중립성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Network Neutrality</li>
+<li class="">모든 네트워크 사업자는 모든 콘텐츠를 동등하게 취급하고 어떠한 차별도 하지 않아야 한다는 원칙</li>
+<li class="">망운영의 근본적인 원칙으로 중립성을 보장하기 위해 비차별, 상호 접속, 접근성 등 3가지 원칙이 모든 통신망에 동이랗게 적용되어야한다는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=gis>GIS<a href=#gis class=hash-link aria-label="GIS에 대한 직접 링크" title="GIS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Geographic Information System = 지리 정보 시스템</li>
+<li class="">지리적으로 자료를 수집, 저장, 분석, 출력할 수 있는 컴퓨터 응용 시스템</li>
+<li class="">위성을 이용해 모든 사물의 위치 정보를 제공해 주는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=it389-전략>IT389 전략<a href=#it389-전략 class=hash-link aria-label="IT389 전략에 대한 직접 링크" title="IT389 전략에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">u-IT839</li>
+<li class="">미래의 정보 기술 시장을 선도하기 위해 정보통신부가 2004년 2월 수립한 IT 성장 전략을 말한다.</li>
+<li class="">유비쿼터스 코리아를 추진하기 위한 운동이다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=usn>USN<a href=#usn class=hash-link aria-label="USN에 대한 직접 링크" title="USN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Ubiquitous Sensor Network = 유비쿼터스 센서 네트워크</li>
+<li class="">각종 센서로 수집한 정보를 무선으로 수집할 수 있도록 구성한 네트워크</li>
+<li class="">필요한 모든 곳에 RFID 태그를 부착하고 이를 통해 사물의 인식 정보는 물론 주변의 환경 정보까지 탐지하여 이를 네트워크에 연결하여 정보를 관리하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ant-protocol>ANT+ Protocol<a href=#ant-protocol class=hash-link aria-label="ANT+ Protocol에 대한 직접 링크" title="ANT+ Protocol에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Advanced and Network Technology plus protocol</li>
+<li class="">2457MHz 대역에서 동작하는 초저전력 무선 센서 네트워크 프로토콜로 상호 운용성을 보장</li>
+<li class="">매우 적은 전력 소비로 인해 소형 코인 셀 배터리 하나면 몇 년간 동작이 가능하다.</li>
+<li class="">주로 소형 스마트 기기에 사용하여 건강관리나 소형기기 제어에 사용된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=래드섹-프로토콜>래드섹 프로토콜<a href=#래드섹-프로토콜 class=hash-link aria-label="래드섹 프로토콜에 대한 직접 링크" title="래드섹 프로토콜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">RadSec</li>
+<li class="">RADIUS(Remote Authentication Dial In User Service) 데이터를 전송 제어 프로토콜이나 전송계층 보안(TLS)을 이용하여 전송하기 위한 프로토콜</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=위성-기반-보정-시스템>위성 기반 보정 시스템<a href=#위성-기반-보정-시스템 class=hash-link aria-label="위성 기반 보정 시스템에 대한 직접 링크" title="위성 기반 보정 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SBAS = Satellite-Based Augmentation System</li>
+<li class="">국제 민간항공기구(ICAO)에서 글로벌 항법 위성 시스템(GNSS)의 정확성, 신뢰성, 이용 가능성을 향상시키기 위한 국제 표준 중 하나이다.</li>
+<li class="">정보를 위성으로 보내 사용자들에게 정확한 정보를 보내기 위한 보정 자료로 활용한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=지상-기반-보정-시스템>지상 기반 보정 시스템<a href=#지상-기반-보정-시스템 class=hash-link aria-label="지상 기반 보정 시스템에 대한 직접 링크" title="지상 기반 보정 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">GBAS = Ground-Based Augmentation System</li>
+<li class="">국제민간항공기구(ICAO)에서 글로벌 항법 위성 시스템(GNSS의 정확성, 신뢰성, 이용 가능성을 향상시키기 위한 국제 표준 중 하나이다.</li>
+<li class="">주로 이착륙하는 항공기에 사용된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=webkit>WebKit<a href=#webkit class=hash-link aria-label="WebKit에 대한 직접 링크" title="WebKit에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">웹키트</li>
+<li class="">웹 브라우저를 만드는 데 기반을 제공하는 레이아웃 엔진</li>
+<li class="">Mas OS X의 사파리 웹 브라우저 엔진으로 사용하기 위해 컨커러 브라우저의 KHTML 소프트웨어 라이브러리에서 가져온 것이었으나 최근에는 애플 사파리와 구글 크롬은 물론 블랙베리에서도 브라우저의 엔진으로 사용되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=mashup>Mashup<a href=#mashup class=hash-link aria-label="Mashup에 대한 직접 링크" title="Mashup에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">매시업</li>
+<li class="">웹에서 제공하는 정보 및 서비스를 이용하여 새로운 소프트웨어나 서비스, 데이터베이스 등을 만드는 기술</li>
+<li class="">다수의 정보원이 제공하는 콘텐츠를 조합하여 하나의 서비스로 제공하는 웹 사이트 또는 어플리케이션을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=voip>VoIP<a href=#voip class=hash-link aria-label="VoIP에 대한 직접 링크" title="VoIP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Voice over Internet Protocol</li>
+<li class="">인터넷 프로토콜 상의 음성 전송이란 의미로 인터넷을 통하여 통화할 수 있는 기술</li>
+<li class="">기존에 사용되고 있던 데이터 통신용 패킷망을 인터넷 폰에 이용하는 것</li>
+<li class="">음성 데이터를 인터넷 프로토콜 데이터 패킷으로 변화하여 일반 전화망에서의 통화를 가능하게 해주는 통신 서비스 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=url>URL<a href=#url class=hash-link aria-label="URL에 대한 직접 링크" title="URL에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Uniform Resource Locator</li>
+<li class="">인터넷 상에 존재하는 각종 자원이 있는 위치를 나타내는 표준 주소 체계</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=쿠키>쿠키<a href=#쿠키 class=hash-link aria-label="쿠키에 대한 직접 링크" title="쿠키에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Cookie</li>
+<li class="">웹 사이트에서 사용자의 하드디스크에 저장하는 특별한 텍스트 파일</li>
+<li class="">인터넷 사용자에 대한 특정 웹 사이트의 접속 정보를 저장하기 위한 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ims>IMS<a href=#ims class=hash-link aria-label="IMS에 대한 직접 링크" title="IMS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IP Multimedia Subsystem</li>
+<li class="">인터넷 프로토콜을 기반으로 음성, 오디오, 비디오 및 데이터 등의 멀티미디어 서비스를 제공하는 규격</li>
+<li class="">기본적으로 범용의 인터넷 기반 기술과 표준화된 네트워크 기능들을 사용함으로써 서비스의 가격 경쟁력 향상과 신속한 서비스 개발 및 변경을 추구한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=멀티캐스트>멀티캐스트<a href=#멀티캐스트 class=hash-link aria-label="멀티캐스트에 대한 직접 링크" title="멀티캐스트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Multicast</li>
+<li class="">구내 정보 통신망(LAN)이나 인터넷에 접속되어 있는 일부 사용자 내에서 한 사람이 몇 사람에게 정보를 송신하고 그것을 수신한 몇 사람이 같은 내용을 버킷 릴레이식으로 복수의 사람에게 송신함으로써 정보를 전파하는 특정 다수인에 대한 전송</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=비트코인>비트코인<a href=#비트코인 class=hash-link aria-label="비트코인에 대한 직접 링크" title="비트코인에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Bitcoin</li>
+<li class="">온라인에서 사용되는 가상의 디지털 화폐로 2009년에 만들어졌으나 개발자는 분명치 않다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ria>RIA<a href=#ria class=hash-link aria-label="RIA에 대한 직접 링크" title="RIA에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Rich Internet Application = 리치 인터넷 어플리케이션</li>
+<li class="">플래시 애니메이션 기술과 웹 서버 애플리케이션 기술을 통합하여 기존 HTML보다 역동적이고 인터랙티브한 웹페이지를 제공하는 신개념의 플래시 웹페이지 제작 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=isp>ISP<a href=#isp class=hash-link aria-label="ISP에 대한 직접 링크" title="ISP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet Service Provider = 인터넷 서비스 제공자</li>
+<li class="">개인이나 회사들에게 인터넷 접속 서비스, 웹 사이트 구축 및 웹 호스팅 서비스 등을 제공하는 회사들을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=해시태그>해시태그<a href=#해시태그 class=hash-link aria-label="해시태그에 대한 직접 링크" title="해시태그에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hashtag</li>
+<li class="">샵 기호와 특정 단어를 붙여 쓴 것으로 트위터, 페이스북 등 소셜 미디어에서 특정 핵심어를 편리하게 검색할 수 있도록 하는 메타데이터의 한 형태</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=증강현실>증강현실<a href=#증강현실 class=hash-link aria-label="증강현실에 대한 직접 링크" title="증강현실에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Augmented Reality = 혼합현실</li>
+<li class="">실제 촬영한 화면에 가상의 정보를 부가하여 보여주는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cname>CNAME<a href=#cname class=hash-link aria-label="CNAME에 대한 직접 링크" title="CNAME에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Canonical NAME</li>
+<li class="">호스트 컴퓨터는 웹 접속을 위해 하나의 IP 주소를 가져야 하는데, 이 IP 주소는 DNS가 호스트 컴퓨터의 도메인 이름을 변환하여 생성한다. 그러나 종종 여러 개의 도메인 이름을 동일한 하나의 IP 주소로 변환하여 사용하기도 하는데 이를 CNAME이라고 한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=hvc-hevc>HVC (HEVC)<a href=#hvc-hevc class=hash-link aria-label="HVC (HEVC)에 대한 직접 링크" title="HVC (HEVC)에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">High performance Video Coding = 고성능 영상 코딩 = High Efficiency Video Coding</li>
+<li class="">ISO/IEC JTC1 MPEG에서 AVC 이후의 표준으로 추진 중인 차세대 비디호 부호화 표준</li>
+<li class="">HD 이상의 해상도를 주 대상으로 하는 차세대 비디오 부호화 표준으로 고성능의 압축 효율은 물론 이동성을 보장한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=trackback>Trackback<a href=#trackback class=hash-link aria-label="Trackback에 대한 직접 링크" title="Trackback에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">트랙백</li>
+<li class="">다른 사람의 글을 읽고 그 글에 직접 댓글을 올리는 대신에 내 블로그에 글을 올리고 내 글의 일정 부분이 다른 사람의 댓글로 보이도록 트랙백 핑을 보내는 것을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=webaholism>Webaholism<a href=#webaholism class=hash-link aria-label="Webaholism에 대한 직접 링크" title="Webaholism에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">웨바홀리즘 = 인터넷 중독증 = 인터넷 의존증</li>
+<li class="">Web과 Alcoholism의 합성어로서 일상생활에 지장을 느낄 정도로 지나치게 인터넷에 몰두하고 인터넷에 접속하지 않으면 불안감을 느끼는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=iot>IoT<a href=#iot class=hash-link aria-label="IoT에 대한 직접 링크" title="IoT에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet of Things = 사물 인터넷</li>
+<li class="">정보 통신 기술을 기반으로 실세계와 가상 세계의 다양한 사물들을 연결하여 진보된 서비스를 제공하기 위한 서비스 기반 시설</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=rss>RSS<a href=#rss class=hash-link aria-label="RSS에 대한 직접 링크" title="RSS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Really Simple Syndication = 맞춤형 정보 배달</li>
+<li class="">매우 간편한 정보 배달이라는 의미를 가지며 업데이트가 잦은 사이트의 최신 정보를 쉽게 확인할 수 있게 해주는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=m2m>M2M<a href=#m2m class=hash-link aria-label="M2M에 대한 직접 링크" title="M2M에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Machine to Machine = 사물 통신</li>
+<li class="">무선 통신을 이용한 기계와 기계 사이의 통신</li>
+<li class="">변압기 원격 감시, 전기, 가스 드으이 원격 검침, 무선 신용 카드 조회기, 무선 보안 단말기, 버스 운행 시스템, 위치 추적 시스템, 시설물 관리 등 무선으로 통합하여 상호 작용하는 통신</li>
+<li class="">부호 분할 다중 접속(CDMA), GSM, 무선 데이터 통신 등 다양항 무선 통신망을 사용한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=도메인-네임>도메인 네임<a href=#도메인-네임 class=hash-link aria-label="도메인 네임에 대한 직접 링크" title="도메인 네임에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Domain Name</li>
+<li class="">숫자로 된 IP 주소를 사람이 이해하기 쉬운 문자 형태로 표현한 것으로 호스트 컴퓨터 이름, 소속 기관 이름, 소속 기관의 종류, 소속 국가명 순으로 구성되며 왼쪽에서 오른쪽으로 갈수록 상위 도메인을 의미한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip>IP<a href=#ip class=hash-link aria-label="IP에 대한 직접 링크" title="IP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet Protocol</li>
+<li class="">인터넷 상에서 한 컴퓨터에서 다른 컴퓨터로 데이터를 보내는 방식이나 규약을 말한다.</li>
+<li class="">인터넷 상에서 호스트로 아렬진 각 컴퓨터는 적어도 하나의 IP 주소를 가지고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=seo>SEO<a href=#seo class=hash-link aria-label="SEO에 대한 직접 링크" title="SEO에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Search Engine Optimization = 검색 엔진 최적화</li>
+<li class="">검색 엔진에서 검색했을 때 상위에 나타나도록 관리하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=위키피디아>위키피디아<a href=#위키피디아 class=hash-link aria-label="위키피디아에 대한 직접 링크" title="위키피디아에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wikipedia</li>
+<li class="">전세계 사람들 누구나 자유롭게 쓸 수 있고 함께 만들어가는 웹 기반의 백과사전</li>
+<li class="">2001년 1월 15일에 지미 웨일스와 래리 생어가 공동으로 세운 비영리 단체인 위키미디어 재단에서 운영</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=프로튜어>프로튜어<a href=#프로튜어 class=hash-link aria-label="프로튜어에 대한 직접 링크" title="프로튜어에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Pro-ture; Professional Amateur</li>
+<li class="">프로페셔널과 아마추어의 합성어로 전문가 같은 아마추어를 말한다.</li>
+<li class="">일반 네티즌이 정보 수요자가 아닌 공급 주체로 떠오르면서 적극적으로 자신의 의견을 개진하고 전문가 못지 않은 식견을 가진 사람을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ipv6>IPv6<a href=#ipv6 class=hash-link aria-label="IPv6에 대한 직접 링크" title="IPv6에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet Protocol Version 6</li>
+<li class="">현재 사용하고 있는 IP 주소체계인 IPv4의 주소 부족 문제를 해결하기 위해 개발된 IP 주소 체계의 차세대 버전</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=애니캐스트>애니캐스트<a href=#애니캐스트 class=hash-link aria-label="애니캐스트에 대한 직접 링크" title="애니캐스트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Anycast</li>
+<li class="">한 송신자와 인근에 있는 소수 수신자 간의 통신</li>
+<li class="">애니캐스트는 수신자들을 묶어 하나의 그룹으로 나타낸 주소를 사용하여 그룹 내에서 가장 가까운 호스트에게만 전송하는 것</li>
+<li class="">특정 다수에게 전송하는 멀티캐스트나 특정 인에게 전송하는 유니캐스트와 구분된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=유니캐스트>유니캐스트<a href=#유니캐스트 class=hash-link aria-label="유니캐스트에 대한 직접 링크" title="유니캐스트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Unicast</li>
+<li class="">메세지 수신 주소를 1개만 지정하는 1:1 통신 형태</li>
+<li class="">네트워크 내의 모든 주소에 동일한 메세지를 보내는 것을 '브로드캐스트', 지정한 복수의 수신 주소에 동일 메세지를 보내는 것을 '멀티캐스트'라 한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=semantic-web>Semantic Web<a href=#semantic-web class=hash-link aria-label="Semantic Web에 대한 직접 링크" title="Semantic Web에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">시멘틱 웹</li>
+<li class="">컴퓨터가 사람을 대신하여 정보를 읽고 이해하고 가공하여 새로운 정보를 만들어 낼 수 있도록, 이해하기 쉬운 의미를 가진 차세대 지능형 웹</li>
+<li class="">핵심기술로는 웹 자원을 서수랗기 위한 자원 서술 기술, 온톨로지를 통한 지식 서술 기술, 통합적으로 운영하기 위한 에이전트 기술들을 들 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=메타-데이터>메타 데이터<a href=#메타-데이터 class=hash-link aria-label="메타 데이터에 대한 직접 링크" title="메타 데이터에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Meta Data</li>
+<li class="">일련의 데이터를 정의하고 설명해 주는 데이터이다.</li>
+<li class="">컴퓨터에서는 데이터 사전의 내용, 스키마 등을 의미하고, 하이퍼텍스트 생성언어 문서에서는 메타 태그</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=집단지성>집단지성<a href=#집단지성 class=hash-link aria-label="집단지성에 대한 직접 링크" title="집단지성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Collective Intelligence</li>
+<li class="">다수의 개체가 서로 협력하거나 경쟁하여 얻게 되는 지적 능력의 결과로 얻어진 집단적 능력</li>
+<li class="">자발적으로 참여하고 다양한 의견을 가진 개인의 지식이 모이면 개별적으로는 미미하게 보이나 집단적으로는 능력 범위를 넘어선 힘을 발휘해 특정 전문가나 기업의 전문 지식보다 더 우수하게 된다는 대중의 지혜를 나타낸 개념</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=xml>XML<a href=#xml class=hash-link aria-label="XML에 대한 직접 링크" title="XML에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">eXtensible Markup Language = 확장성 마크업 언어</li>
+<li class="">W3C가 채택한 차세대 인터넷 표준 언어로, HTML의 문법이 각 웹브라우저에서 상호 호환적이지 못하다는 문제와 SGML의 복잡함을 해결하기 위하여 개발되었다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=alt-text>Alt-Text<a href=#alt-text class=hash-link aria-label="Alt-Text에 대한 직접 링크" title="Alt-Text에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">대체 텍스트</li>
+<li class="">시각 장애인이 웹 사이트에 게시된 이미지를 이해할 수 있도록 설명해 주는 글이나 문구</li>
+<li class="">장애인의 웹 접근성 향상을 위한 대표적인 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=mms>MMS<a href=#mms class=hash-link aria-label="MMS에 대한 직접 링크" title="MMS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Multimedia Messaging System = 멀티미디어 메세징 시스템</li>
+<li class="">3세대 이동 통신 서비스의 기본 요소로서 정지영상, 음악, 음성 및 동영상 등의 다양한 형식의 데이터를 주고받을 수 있는 메세징 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=블로그>블로그<a href=#블로그 class=hash-link aria-label="블로그에 대한 직접 링크" title="블로그에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">웹과 로그의 합성어로 개인이 관심사에 따라 자유롭게 글을 올릴 수 있는 웹사이트</li>
+<li class="">다양한 형태를 취하는 1인 미디어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ip-tv>IP TV<a href=#ip-tv class=hash-link aria-label="IP TV에 대한 직접 링크" title="IP TV에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet Protocol TV</li>
+<li class="">초고속 인터넷을 이용하여 정보 서비스, 동영상 콘텐츠 및 방송 등을 TV로 제공하는 양방향 서비스</li>
+<li class="">인터넷과 TV의 융합으로 기존의 인터넷 TV와 다른 점이라면 컴퓨터 모니터 대신 TV수상기를 이용하고 마우스 대신 리모컨을 사용한다는 점이다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=www>WWW<a href=#www class=hash-link aria-label="WWW에 대한 직접 링크" title="WWW에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">World Wide Web = 월드 와이드 웹</li>
+<li class="">텍스트, 그림, 동영상, 음성 등 인터넷에 존재하는 다양한 정보를 거미줄처럼 연결해 놓은 종합정보 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-원주민>디지털 원주민<a href=#디지털-원주민 class=hash-link aria-label="디지털 원주민에 대한 직접 링크" title="디지털 원주민에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Native</li>
+<li class="">컴퓨터, 인터넷, 휴대폰 등의 디지털 기술을 어려서부터 사용하면서 성장한 세대</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ucc-가이드라인>UCC 가이드라인<a href=#ucc-가이드라인 class=hash-link aria-label="UCC 가이드라인에 대한 직접 링크" title="UCC 가이드라인에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">정부가 제정한 건전한 UCC 생산과 유통 및 이용에 관한 지침서</li>
+<li class="">UCC 이용자들을 위한 실천적 가이드라인으로 UCC 이용자의 자율적인 윤리의식을 촉구하는 체크리스트로 이뤄져 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=관계기술>관계기술<a href=#관계기술 class=hash-link aria-label="관계기술에 대한 직접 링크" title="관계기술에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Relation Technology</li>
+<li class="">상호관계를 이해하는 관계성을 기반으로 하는 새로운 기술 패러다임</li>
+<li class="">기술위주로 발전하는 정보기술에 나와 너, 사람과 사람 등 문화 인문학 등의 논리위주의 관계기술이 접목되어야 한다는 점을 강조하며 이어령 이화여대 명예교수가 만들어 낸 신조어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=사용자-제작-콘텐츠>사용자 제작 콘텐츠<a href=#사용자-제작-콘텐츠 class=hash-link aria-label="사용자 제작 콘텐츠에 대한 직접 링크" title="사용자 제작 콘텐츠에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">UCC = User Created Contents</li>
+<li class="">인터넷 사업자나 콘텐츠 공급자가 아닌 일반 사용자들이 직접 만들어 유통되는 콘텐츠</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=웹-20>웹 2.0<a href=#웹-20 class=hash-link aria-label="웹 2.0에 대한 직접 링크" title="웹 2.0에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">제공된 데이터를 활용하여 사용자가 정보 생성에 참여하고 가치를 부여함으로써 누구나 다양한 신규 서비스를 생산해 낼 수 있는 플랫폼으로서의 웹 환경</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=태그달기>태그달기<a href=#태그달기 class=hash-link aria-label="태그달기에 대한 직접 링크" title="태그달기에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">꼬리표 달기 = Tagging</li>
+<li class="">콘텐츠의 내용을 대표할 수 있는 검색용 꼬리표인 키워드, 또는 태그를 다는 것</li>
+<li class="">글을 올린 사람이나 사이트 관리자가 글이나 이미지를 관련된 주제나 카테고리의 형태로 분류될 수 있도록 키워드 처리를 해주는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=퀵돔>퀵돔<a href=#퀵돔 class=hash-link aria-label="퀵돔에 대한 직접 링크" title="퀵돔에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Quickdom</li>
+<li class="">영어의 Quick과 Domain이 결합된 합성어로 2단계 영문 kr도메인의 브랜드명</li>
+<li class="">짧은 형태의 도메인으로 기억하기 쉽고 주소창에 입력하기도 간편하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=표면-웹>표면 웹<a href=#표면-웹 class=hash-link aria-label="표면 웹에 대한 직접 링크" title="표면 웹에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Surface Web</li>
+<li class="">네이버, 구글, 다음과 같이 일반적인 검색엔진으로 검색이 가능한 콘텐츠의 인터넷 환경</li>
+<li class="">반대는 Deep web</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터넷-연동>인터넷 연동<a href=#인터넷-연동 class=hash-link aria-label="인터넷 연동에 대한 직접 링크" title="인터넷 연동에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Internet eXchange</li>
+<li class="">인터넷 서비스 제공자 상호간에 트래픽을 원활하게 소통시키기 위해 구축한 네트워크간 연동 서비스</li>
+<li class="">네트워크 서비스에 대한 수요가 큰 콘텐츠 전송망(CDN) 서버와 네이버, 다음카카오 등과 같은 포털 서버의 회선에 직접 연결되어 개별 ISP 들의 경제적 부담을 완화해 서비스 품질의 향상을 기대할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=협대역-사물-인터넷>협대역 사물 인터넷<a href=#협대역-사물-인터넷 class=hash-link aria-label="협대역 사물 인터넷에 대한 직접 링크" title="협대역 사물 인터넷에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">NB-IoT = NarrowBand-Internet of Things</li>
+<li class="">사물인터넷을 위해 설꼐된 협대역 무선 기술을 의미</li>
+<li class="">200KHz 미만의 협대역 주파수를 사용하며 기존의 이동통신사인 GSM과 LTE망을 사용하므로 초기 비용이 적다는 것과 저전력, 긴 수명, 많은 수의 기기들을 커버할 수 있다는 것이 특징</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=vht>VHT<a href=#vht class=hash-link aria-label="VHT에 대한 직접 링크" title="VHT에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Very High Throughput</li>
+<li class="">IEEE에서 802.11n 후속으로 진행하고 있는 표준안</li>
+<li class="">2배 이상의 전송속도인 1Gbps 이상을 지원하여 압축되지 않은 HD 동영상의 전송을 가능하게 하며 802.11n과 비교할 때 개선된 커버리지와 전력 소모 기능을 갖고, 기존 무선랜 사양들에 대한 하위 호환성을 지원할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=시공간-송신-다이버시티>시공간 송신 다이버시티<a href=#시공간-송신-다이버시티 class=hash-link aria-label="시공간 송신 다이버시티에 대한 직접 링크" title="시공간 송신 다이버시티에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">STTD = Space Time Transmit Diversity</li>
+<li class="">WCDMA 시스템에 적용하는 송신 다이버시티 방식</li>
+<li class="">송신 안테나 두 개, 수신 안테나 한 개를 사용하며 송신 심벌들을 일정 블록 단위로 순서를 뒤집어서 양쪽으로 송신하여 공간 다이버시티와 시간 다이버시티 이점을 동시에 얻는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=기가-파이>기가 파이<a href=#기가-파이 class=hash-link aria-label="기가 파이에 대한 직접 링크" title="기가 파이에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Giga Fi</li>
+<li class="">60GHz 대역을 이용해 데이터를 기가급으로 전송할 수 있는 기술</li>
+<li class="">전 세계적으로 비 허가 대역인 57~64GHz 범위의 주파스를 이용하여 넓은 대역폭의 높은 데이터 전송률(3Gbps)을 얻을 수 있다.</li>
+<li class="">전파 거리가 짧고 직진성이 강해 주변 간섭에 매우 강하고 보안성이 뛰어나며 주파수 재사용도 용이하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=클라우드-컴퓨팅>클라우드 컴퓨팅<a href=#클라우드-컴퓨팅 class=hash-link aria-label="클라우드 컴퓨팅에 대한 직접 링크" title="클라우드 컴퓨팅에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Cloud Computing</li>
+<li class="">각종 컴퓨팅 자원을 중앙 컴퓨터에 두고 인터넷 기능을 갖는 모든 단말로 언제 어디서나 인터넷을 통해 컴퓨터 작업을 수행할 수 있는 환경을 의미</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=마그네틱-안전-전송>마그네틱 안전 전송<a href=#마그네틱-안전-전송 class=hash-link aria-label="마그네틱 안전 전송에 대한 직접 링크" title="마그네틱 안전 전송에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">MST = Magnetic Secure Tansmission</li>
+<li class="">2015년 2월 삼성전자가 인수한 미국기업 LoopPay사가 개발한 기술로 안테나가 내장된 휴대폰을 마그네틱 결제 단말기에 근접시켜 신용카드 정보를 전송하는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wifi>WiFi<a href=#wifi class=hash-link aria-label="WiFi에 대한 직접 링크" title="WiFi에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wireless-Fidelity = 와이파이</li>
+<li class="">2.4GHz대를 사용하는 무선랜 규격(IEEE 802.11b)에서 정한 제반 규정에 적합한 제품에 주어지는 인증 마크</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=n-screen>N-Screen<a href=#n-screen class=hash-link aria-label="N-Screen에 대한 직접 링크" title="N-Screen에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">앤스크린</li>
+<li class="">N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 것</li>
+<li class="">PC, TV, 휴대폰에서 동일한 콘텐츠를 끊김 없이 이용할 수 있는 것은 물론 사용자가 가지고 있는 여러 대의 단말기에서도 동일한 콘텐츠를 끊김 없이 이용하는 것을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=신-클라이언트>신 클라이언트<a href=#신-클라이언트 class=hash-link aria-label="신 클라이언트에 대한 직접 링크" title="신 클라이언트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Thin Client PC</li>
+<li class="">하드디스크나 주변 장치 없이 기본적인 메모리만 갖추고 서버와 네트워크로 운용되는 개인용 컴퓨터를 의미</li>
+<li class="">서버 기반 컴퓨팅과 관계가 깊다.</li>
+<li class="">클라이언트는 프로그램이 필요할 때마다 서버에 접속하여 소프트웨어를 내려받기만 하면 되며, 기억장치 없이 서버 측에서 데이터를 한꺼번에 관리한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=phablet>Phablet<a href=#phablet class=hash-link aria-label="Phablet에 대한 직접 링크" title="Phablet에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">패블릿</li>
+<li class="">폰과 태블릿의 합성어</li>
+<li class="">태블릿 기능을 포함한 5인치 이상의 대화면 스마트폰</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=acn>ACN<a href=#acn class=hash-link aria-label="ACN에 대한 직접 링크" title="ACN에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">AP Centric Network</li>
+<li class="">AP가 내장된 단말기로 구성된 네트워크</li>
+<li class="">스마트폰 같은 모방리 단말의 확산으로 트래픽이 빠르게 증가하고 있지만 모바일용 인프라는 이에 대응하지 못하고 있어 4G 네트워크가 구축되기 이전에 와이파이 공유 모델을 기반으로 하는 ACN 기술 실용화를 추진하고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=byod>BYOD<a href=#byod class=hash-link aria-label="BYOD에 대한 직접 링크" title="BYOD에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Bring Your Own Device = 브링 유어 오운 디바이스</li>
+<li class="">개인 소유 단말기를 업무에 사용하는 환경</li>
+<li class="">모바일 단말을 이용하기 때문에 보안에 취약하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=lte>LTE<a href=#lte class=hash-link aria-label="LTE에 대한 직접 링크" title="LTE에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Long Term Evolution = 미래 장기 진화</li>
+<li class="">3GPP 진영에서 추진하고 있는 3세대 이동 통신(3G) 방식인 광대역 부호분할다중접속(W-CDMA)이 진화한 기술로 유력한 4세대 이동 통신(4G) 후보 기술이다.</li>
+<li class="">데이터 전송 효율 향상, 효율적인 주파수 자원 이용, 이동성, 낮은 지연 시간, 패킷 데이터 전송에 최적화 된 기술과 서비스 품질 보장 등을 제공하는 차세대 이동 통신 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스마트폰>스마트폰<a href=#스마트폰 class=hash-link aria-label="스마트폰에 대한 직접 링크" title="스마트폰에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Smart Phone</li>
+<li class="">피처폰에 비해 진보한 연산능력과 접속성을 겸비한 모바일 운영체제를 기반으로 하는 이동 전화</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=펨토셀-기지국>펨토셀 기지국<a href=#펨토셀-기지국 class=hash-link aria-label="펨토셀 기지국에 대한 직접 링크" title="펨토셀 기지국에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Femtocell Bas Station</li>
+<li class="">사무실이나 집에 설치하는 초소형 이동 통신 기지국</li>
+<li class="">건물이나 지하의 작은 지역(30~50m)에 서비스하려고 설치하는 소출력 초소형 이동 통신 기지국</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=개인환경서비스>개인환경서비스<a href=#개인환경서비스 class=hash-link aria-label="개인환경서비스에 대한 직접 링크" title="개인환경서비스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PES = Personal Environment Service</li>
+<li class="">사용자에게 최적화된 생활 환경을 제공하는 서비스</li>
+<li class="">사용자가 휴대전화를 가지고 가정과 사무실, 차량, 공공장소를 이동하면, 휴대전화가 주변의 각종 생활 기기들을 자동으로 인식하고 제어하여 사용자 개인에게 최적화된 생활 환경을 제공</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=모바일-컴퓨팅>모바일 컴퓨팅<a href=#모바일-컴퓨팅 class=hash-link aria-label="모바일 컴퓨팅에 대한 직접 링크" title="모바일 컴퓨팅에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Mobile Computing</li>
+<li class="">휴대형 기기로 이동하면서 자유로이 네트워크에 접속하여 업무를 처리할 수 있는 환경</li>
+<li class="">모바일 컴퓨팅의 진화는 휴대 기기와 네트워크 기술의 진화로도 가능하다.</li>
+<li class="">휴대기기는 소형 대용량화와 저전력화가 진행중이고 네트워크 기술도 무선으로 고속/대용량의 정보를 처리할 수 있는 기술이 사용화되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=넷북>넷북<a href=#넷북 class=hash-link aria-label="넷북에 대한 직접 링크" title="넷북에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Netbook</li>
+<li class="">휴대형 미니 노트북 컴퓨터로서 인터넷, 문서작업, 이메일 등 컴퓨터의 기본적인 기능을 수행하면서 이동성을 갖도록 제작된 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=sco>SCO<a href=#sco class=hash-link aria-label="SCO에 대한 직접 링크" title="SCO에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Synchronous Connection Oriented link = 동기식 접속 지향 링크</li>
+<li class="">블루투스 데이터 링크의 하나로 두 장비 간에 음성과 같이 지정된 대역폭 통신을 위한 전용 회선의 동기식 접속 방법</li>
+<li class="">음성 데이터인 SCO 패킷 전송에 사용된다.</li>
+<li class="">CRC도 재전송도 하지 않는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=app-store>App Store<a href=#app-store class=hash-link aria-label="App Store에 대한 직접 링크" title="App Store에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">애플사가 개발한 모바일용 온라인 소프트웨어 장터</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ap>AP<a href=#ap class=hash-link aria-label="AP에 대한 직접 링크" title="AP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Access Point = 무선 접속장치</li>
+<li class="">무선 랜과 유선 랜을 연결시켜주는 장비</li>
+<li class="">전파 도달 거리 내의 무선 랜 카드를 사용하는 컴퓨터나 무선 기기들이 자유롭게 통신할 수 있도록 한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=범용-가입자-식별-모듈>범용 가입자 식별 모듈<a href=#범용-가입자-식별-모듈 class=hash-link aria-label="범용 가입자 식별 모듈에 대한 직접 링크" title="범용 가입자 식별 모듈에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">USIM = Universal Subscriber Identity Module</li>
+<li class="">사용자의 인증을 목적으로 휴대전화 사용자의 개인 정보를 저장하는 모듈로서 스마트 카드(USIM) 카드로 제작된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=m-커머스>m-커머스<a href=#m-커머스 class=hash-link aria-label="m-커머스에 대한 직접 링크" title="m-커머스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">mobile Commerce = 모바일 상거래</li>
+<li class="">m-커머스는 전자상거래의 일종으로 가정이나 사무실에서 유선으로 인터넷에 연결하여 물건을 사고 파는 것과 달리 이동중에 이동 전화기나 무선 인터넷 정보 단말기 등을 이용해 은행 업부, 지물 업무, 티켓 업무와 같은 서비스를 하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=유비쿼터스>유비쿼터스<a href=#유비쿼터스 class=hash-link aria-label="유비쿼터스에 대한 직접 링크" title="유비쿼터스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Ubiquitous</li>
+<li class="">컴퓨터가 특정한 장소에 설치되어 있어야 하는 것이 아니라 우리 생활에서 사용되는 모든 사물에 컴퓨터 기능을 내장하고 이들을 무선 네트워크로 연결하여 인간이 필요로 하는 정보를 제공받을 수 있는 환경을 의미</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=촉각-기술>촉각 기술<a href=#촉각-기술 class=hash-link aria-label="촉각 기술에 대한 직접 링크" title="촉각 기술에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Haptic Technology</li>
+<li class="">진동의 장단과 고저를 이용하여 다양한 종류의 진동 기호를 만드는 기술</li>
+<li class="">휴대폰에 적용할 경우 간단한 메세지는 휴대폰에서 느껴지는 진동 기호로 충분히 표현 가능하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wcdma>WCDMA<a href=#wcdma class=hash-link aria-label="WCDMA에 대한 직접 링크" title="WCDMA에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wide-band CDMA = 광대역 부호 분할 다중 접속</li>
+<li class="">가장 많은 국가들이 채택하고 있는 제 3세대 이동통신 시스템</li>
+<li class="">멀티미디어 전송을 목적으로 개발되었으며 동영상 파일을 다운로드하면서 실시간으로 재생까지 할 수 있는 VOD 스트리밍, 휴대폰으로 동영상 멀티미디어 메세지를 주고받을 수 있는 MMS가 가능하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wibro>WiBrO<a href=#wibro class=hash-link aria-label="WiBrO에 대한 직접 링크" title="WiBrO에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wireless Broadband = 와이브로</li>
+<li class="">무선 광대역을 의미하는 것으로 휴대폰 노트북, PDA 등의 휴대 인터넷 단말장치를 이용하여 언제 어디서나 이동하면서 고속으로 무선 인터넷 접속이 가능한 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=펨토셀>펨토셀<a href=#펨토셀 class=hash-link aria-label="펨토셀에 대한 직접 링크" title="펨토셀에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Femto Cell</li>
+<li class="">1000조분의 1을 뜻하는 펨토와 이동통신에서 1개 기지국이 담당하는 서비스 구역 단위를 뜻하는 셀을 합친 이름으로 기존 이동통신 서비스 반경보다 훨씬 작은 지역을 커버하는 시스템</li>
+<li class="">DSL 모뎀처럼 생긴 초소형 기지국을 가정 내 유선 IP망에 연결해 휴대폰으로 유무선 통신을 자유롭게 사용할 수 있게 해준다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wipi>WIPI<a href=#wipi class=hash-link aria-label="WIPI에 대한 직접 링크" title="WIPI에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wireless Internet Platform for Interoperability = 위피</li>
+<li class="">한국형 무선 인터넷 플랫폼 표준 규격</li>
+<li class="">이동통신 업체들이 같은 플랫폼을 사용하도록 함으로써 국가적 낭비를 줄이자는 취지로 2001년부터 국책사업으로 추진되기 시작하였다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=gps>GPS<a href=#gps class=hash-link aria-label="GPS에 대한 직접 링크" title="GPS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Global Positioning System = 위성 위치 확인 시스템</li>
+<li class="">지구상의 위치 선정 시스템이란 의미</li>
+<li class="">지구를 도는 인공위성이 현재의 위치를 시시각각 알려주는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=텔레매틱스>텔레매틱스<a href=#텔레매틱스 class=hash-link aria-label="텔레매틱스에 대한 직접 링크" title="텔레매틱스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Telematics</li>
+<li class="">통신(telecommuncation)과 정보(Informatics)의 합성어</li>
+<li class="">자동차와 무선통신을 결합한 새로운 개념의 차량 무선 인터넷 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=imt-2000>IMT-2000<a href=#imt-2000 class=hash-link aria-label="IMT-2000에 대한 직접 링크" title="IMT-2000에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">International Mobile Telecommunication-2000</li>
+<li class="">이동통신의 문제점인 지역적 한계와 고속 전송에 대한 기술적 한계를 극복하고 나라마다 다른 이동통신 방식을 통일하여 한 대의 휴대용 전화기로 전 세계 어디서나 통화할 수 있도록 만들려는 규격</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스마트-플러그>스마트 플러그<a href=#스마트-플러그 class=hash-link aria-label="스마트 플러그에 대한 직접 링크" title="스마트 플러그에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Smart Plug</li>
+<li class="">와이파이나 스마트폰 등의 스마트 기능을 추가한 플러그</li>
+<li class="">스마트 프럴그를 설치하여 원격에서 전기를 켜거나 끄는 것은 물론 전기 사용량을 감시할 수 있어 가정이나 사무실의 전기 과열이나 불필요한 전기의 사용을 억제할 수 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=앱북>앱북<a href=#앱북 class=hash-link aria-label="앱북에 대한 직접 링크" title="앱북에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">스마트폰, 태플릿, 개인용 컴퓨터 등 단말 기기에서 별도의 애플리케이션으로 실행되는 전자책</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=모바일-광개토-플랜>모바일 광개토 플랜<a href=#모바일-광개토-플랜 class=hash-link aria-label="모바일 광개토 플랜에 대한 직접 링크" title="모바일 광개토 플랜에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">방통위가 2011년 국내 모바일 광대역을 위해 2020년까지 이동통신용으로 600MHz 대역폭을 추가로 확보하기 위해 내놓은 계획</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=범용-통합-플랫폼>범용 통합 플랫폼<a href=#범용-통합-플랫폼 class=hash-link aria-label="범용 통합 플랫폼에 대한 직접 링크" title="범용 통합 플랫폼에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Universal Integration Platform</li>
+<li class="">다양해진 웹 브라우저와 스마트폰 및 모바일 기기로 인해 기업용 애플리케이션의 개발, 운영에 많은 비용과 시간이 소모되기 시작하자 자원의 소비를 완화하고 개발자에게 다양한 플랫폼을 제공하기 위해 만들어진 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=서비스형-백엔드>서비스형 백엔드<a href=#서비스형-백엔드 class=hash-link aria-label="서비스형 백엔드에 대한 직접 링크" title="서비스형 백엔드에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">BaaS = Backend As A Service</li>
+<li class="">웹 및 앱 개발자들을 위한 클라우드 서비스</li>
+<li class="">웹 앱 개발을 위한 응용 프로그램 인터페이스를 제공한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=와이파이-오프로딩>와이파이 오프로딩<a href=#와이파이-오프로딩 class=hash-link aria-label="와이파이 오프로딩에 대한 직접 링크" title="와이파이 오프로딩에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wi-Fi Offloading</li>
+<li class="">이동 통신의 급증하는 데이터 트래픽을 와이파이 망으로 분산시키는 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=지오로케이션>지오로케이션<a href=#지오로케이션 class=hash-link aria-label="지오로케이션에 대한 직접 링크" title="지오로케이션에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Geolocation</li>
+<li class="">인터넷에 연결된 모바일 또는 컴퓨터 등의 지리적 위치 정보를 말한다.</li>
+<li class="">웹 애플리케이션에서는 HTML5에서 지원하는 지오로케이션 응용 프로그래밍 인터페이스를 이용하여 사용자의 위치 정보를 파악, 이를 기반으로 길 안내, 주변 편의 시설, 맛집, 병원 등의 유용한 정보를 제공해준다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=피에스-엘티이>피에스-엘티이<a href=#피에스-엘티이 class=hash-link aria-label="피에스-엘티이에 대한 직접 링크" title="피에스-엘티이에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PS-LTE = Public Safety-LTE</li>
+<li class="">영상, 고해상도 사진 등 멀티미디어 정보를 이용하여 공공 안전 통신망을 구축하는 전국 규모의 광대역 LTE 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=앱-중립성>앱 중립성<a href=#앱-중립성 class=hash-link aria-label="앱 중립성에 대한 직접 링크" title="앱 중립성에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">App Neutrality</li>
+<li class="">스마트폰과 같은 모바일 기기에서 사용되는 앱이 모바일 운영체제의 종류에 구애받지 않고 실행할 수 있는 성질로 앱 융통성이라고도 한다.</li>
+<li class="">모방리 OS 종류에 상관없이 어떠한 모바일에서도 앱 콘텐츠를 사용할 수 있어야 됨을 의미한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=인터클라우드-컴퓨팅>인터클라우드 컴퓨팅<a href=#인터클라우드-컴퓨팅 class=hash-link aria-label="인터클라우드 컴퓨팅에 대한 직접 링크" title="인터클라우드 컴퓨팅에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Inter-cloud Computing</li>
+<li class="">각기 다른 클라우드 서비스를 연동 및 컴퓨팅 자원의 동적 할당을 가능하게 하기위해 여러 클라우드 서비스 제공자들이 제공하는 클라우드 서비스나 자원을 연결하는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=케듀롬>케듀롬<a href=#케듀롬 class=hash-link aria-label="케듀롬에 대한 직접 링크" title="케듀롬에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Keduroam</li>
+<li class="">2013년 3월부터 국공립 대학 정보기관 협의회에서 운영하는 무선랜 공동 사용 서비스</li>
+<li class="">국제적인 연구 및 교육 커뮤니티를 위해 개발된 무선랜 로밍 서비스인 에듀롬을 본떠 만들었다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=호스트-카드-에뮬레이션>호스트 카드 에뮬레이션<a href=#호스트-카드-에뮬레이션 class=hash-link aria-label="호스트 카드 에뮬레이션에 대한 직접 링크" title="호스트 카드 에뮬레이션에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">HCE = Host Card Emulation</li>
+<li class="">스마트폰 등의 모바일 기기에서 유심 칩과 같은 물리적 보안 요소를 사용하지 않고, 앱을 이용해 NFC 결제 단말과 연결하여 모바일 결제 서비스를 제공하는 근거리 무선통신(NFC) 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=wearable-technology>Wearable Technology<a href=#wearable-technology class=hash-link aria-label="Wearable Technology에 대한 직접 링크" title="Wearable Technology에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">착용 기술</li>
+<li class="">사용자가 IT 기기를 몸에 착용할 수 있도록 하는 기술</li>
+<li class="">일상적으로 사용되는 용품이나 사용자의 피부에 IT 기술을 접목시켜 사용자가 언제 어디선든 컴퓨팅 환경을 제공받을 수 있도록 한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-메시>디지털 메시<a href=#디지털-메시 class=hash-link aria-label="디지털 메시에 대한 직접 링크" title="디지털 메시에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">시장조사 전문기관인 가트너가 2016년에 주목받을 전략기술 중 하나로 언급하면서 탄생한 것</li>
+<li class="">서로 다른 성격의 기기들을 연결하여 그물같은 형태를 이루는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=올조인>올조인<a href=#올조인 class=hash-link aria-label="올조인에 대한 직접 링크" title="올조인에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">AllJoyn</li>
+<li class="">표준화된 오픈소스 기반의 사물인터넷 플랫폼</li>
+<li class="">리눅스 재단이 사물인터넷 확산을 위해 설립한 컨소시엄인 올신얼라이선스에 의해 제공된다.</li>
+<li class="">서로 다른 운영체제나 하드웨어를 사용하는 기기들이 표준화된 프랤폼인 올조인을 이용함으로서 서로 통신 및 제어가 가능하게 된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=와이파이-헤일로>와이파이 헤일로<a href=#와이파이-헤일로 class=hash-link aria-label="와이파이 헤일로에 대한 직접 링크" title="와이파이 헤일로에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Wi-Fi HaLow</li>
+<li class="">1GHz 이하의 저주파 대역을 사용하는 와이파이 규격</li>
+<li class="">2.4GHz 혹은 5GHz 주파수 대역을 사용하는 일반 와이파이에 비해 전송 거리가 약 1Km 정도로 장거리 전송이 가능하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=용도-자유-대역>용도 자유 대역<a href=#용도-자유-대역 class=hash-link aria-label="용도 자유 대역에 대한 직접 링크" title="용도 자유 대역에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">K-ICT Free Band</li>
+<li class="">향후 출현 가능한 다양한 정보통신기술과 사물인터넷 서비스 등의 수요에 유연하게 대응하기 위해 추진한 주파수 정책</li>
+<li class="">2015년 11월 11일 고시</li>
+<li class="">262~264MHz는 원격검침, 스마트홈 등의 IoT 서비스</li>
+<li class="">24~27GHz는 소출력 레이더, 5G 이동통신용 등</li>
+<li class="">64~66GHz는 대용량 전송, 고해상도 레이더 등</li>
+<li class="">122<del>123GHz, 244</del>246GHz는 향후 기술발전에 따른 소출력 기기를 위한 용도</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=서비스-수준-협약>서비스 수준 협약<a href=#서비스-수준-협약 class=hash-link aria-label="서비스 수준 협약에 대한 직접 링크" title="서비스 수준 협약에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Service Level Agreement</li>
+<li class="">서비스 사업자와 서비스 사용자가 제공될 정보 서비스 및 그와 연관된 여러 조건들에 대한 서로의 책임과 의무 사항을 기술해 놓은 협약서</li>
+<li class="">서비스 산업자와 서비스 사용자 간의 합의를 통하여 서비스 시간, 서비스 가용성, 성능, 복구 등 다양한 항목에 대해 최소한의 서비스를 제공하기로 사전에 협약을 맺는다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=pad>PAD<a href=#pad class=hash-link aria-label="PAD에 대한 직접 링크" title="PAD에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Program Associated Data = 프로그램 연동 정보</li>
+<li class="">전송되고 있는 프로그램의 내용과 부가적인 정보를 설명하기 위해 관련 정보를 제공하는 것</li>
+<li class="">방송에 관련된 개념</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=lbs>LBS<a href=#lbs class=hash-link aria-label="LBS에 대한 직접 링크" title="LBS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Location-Based Services = 위치 중심 서비스</li>
+<li class="">이동통신망을 기반으로 사람이나 사물의 위치를 정확하게 파악하고 이를 활용하는 응용 시스템 및 서비스를 말한다.</li>
+<li class="">휴대폰이나 PDA 등의 장치를 통해 활용되며 이동통신망과 IT 기술이 종합적으로 활용된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-프로슈머>디지털 프로슈머<a href=#디지털-프로슈머 class=hash-link aria-label="디지털 프로슈머에 대한 직접 링크" title="디지털 프로슈머에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Prosumer</li>
+<li class="">인터넷 커뮤니티에 참여해 콘텐츠를 즐기고 정보와 자료를 얻는 소비자이면서 동시에 의견을 적극 개진해 생산에도 영향을 미치는 사람</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=위치-기반-소셜-네트워크-서비스>위치 기반 소셜 네트워크 서비스<a href=#위치-기반-소셜-네트워크-서비스 class=hash-link aria-label="위치 기반 소셜 네트워크 서비스에 대한 직접 링크" title="위치 기반 소셜 네트워크 서비스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">LBSNS = Location Based Social Network Service</li>
+<li class="">위치 기반 서비스(LBS)에 소셜 네트워크 서비스(SNS)를 결합한 서비스를 뜻한다.</li>
+<li class="">위치 기반 서비스는 이동 중인 사용자에게 무선이나 유선통신으로 쉽고 빠르게 사용자 위치와 고나련된 여러 정보를 제공하는 서비스인데 이를 소셜네트워크 서비스와 결합한 서비스이다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=하둡>하둡<a href=#하둡 class=hash-link aria-label="하둡에 대한 직접 링크" title="하둡에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Hadoop</li>
+<li class="">오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼</li>
+<li class="">일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성하고 그 안에 보관된 거대한 데이터 세트를 병렬로 처리할 수 있도록 개발된 자바 소프트웨어 프레임워크</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4k-해상도>4K 해상도<a href=#4k-해상도 class=hash-link aria-label="4K 해상도에 대한 직접 링크" title="4K 해상도에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">차세대 고화질 모니터 해상도를 지칭하는 용어</li>
+<li class="">4K 해상도는 가로 픽셀 수가 3840이고 세로 픽셀 수가 2160인 영상의 해상도를 말하는데 이는 Full HDTV(1920X1080)의 가로 2배, 세로 2배 총 4배에 해당하는 초고화질 영상</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=nomophobia>Nomophobia<a href=#nomophobia class=hash-link aria-label="Nomophobia에 대한 직접 링크" title="Nomophobia에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">노모포비아</li>
+<li class="">스마트폰이 곁에 없을 때 불안감과 두려움을 느끼는 증상</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=social-dining>Social Dining<a href=#social-dining class=hash-link aria-label="Social Dining에 대한 직접 링크" title="Social Dining에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SNS를 통해 관심사가 비슷한 사람끼리 모여서 식사하며 관계를 형성하는 모임</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=금융기술>금융기술<a href=#금융기술 class=hash-link aria-label="금융기술에 대한 직접 링크" title="금융기술에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">FinTech</li>
+<li class="">Financial과 Technique의 합성어로 이동 통신과 인터넷 기술을 금융 산업과 접목시킨 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=코드커터족>코드커터족<a href=#코드커터족 class=hash-link aria-label="코드커터족에 대한 직접 링크" title="코드커터족에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Cordcutters</li>
+<li class="">지상파와 케이블 등 기존 텔레비전 방송 서비스를 해지하고 인터넷 방송 서비스를 선택하는 소비자군</li>
+<li class="">어릴 때 부터 인터넷으로 동영상을 보는 데 익숙하고 방송 프로그램을 수동적으로 시청하는 데 싫증을 느낀 20~30대가 주류를 이룬다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=포직스>포직스<a href=#포직스 class=hash-link aria-label="포직스에 대한 직접 링크" title="포직스에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Posix = Portable Operating System Interface for Computer Environment</li>
+<li class="">유닉스를 기반으로 한 표준 운영체제 인터페이스</li>
+<li class="">IEEE 산하 P1003 기술 위원회에서 작성한 표준 규격</li>
+<li class="">유닉스 사용자 그룹이 유닉스를 기반으로 표준화 작업을 시작하였으나 IEEE가 ANSI 표준으로 제정하기 위해 인계하여 추진하게 되었다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=foursqure>Foursqure<a href=#foursqure class=hash-link aria-label="Foursqure에 대한 직접 링크" title="Foursqure에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">포스퀘어</li>
+<li class="">모바일 기기에 특화된 위치 기반 소셜 네트워크 서비스</li>
+<li class="">사용자가 자신이 방문한 장소를 체크인한 후 그곳에 대한 평가나 추천 내용을 공유하면 이에 대한 보상으로 배지를 받게 되는데 체크인 횟수가 높아질수록 높은 지위의 배지를 받게 된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=infodemics>Infodemics<a href=#infodemics class=hash-link aria-label="Infodemics에 대한 직접 링크" title="Infodemics에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">인포데믹스</li>
+<li class="">정보(Information)와 전염병(Epidemics)의 합성어로 정보 확산으로 인한 각종 부작용</li>
+<li class="">추측이나 루머가 결합된 부정확한 정보가 인터넷이나 휴대전화를 통해 전염병과 같이 빠르게 전파됨으로써 개인의 사생활 침해는 물론 경제, 정치, 안보 등에 치명적인 영향을 미치는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=o2o>O2O<a href=#o2o class=hash-link aria-label="O2O에 대한 직접 링크" title="O2O에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Online-toOffline business = 온-오프라인 연결 비즈니스</li>
+<li class="">인터넷과 스마트폰 등의 온라인 매장에서 오프라인 매장을 고객을 유치하는 마케팅 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이터-다이어트>데이터 다이어트<a href=#데이터-다이어트 class=hash-link aria-label="데이터 다이어트에 대한 직접 링크" title="데이터 다이어트에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Data Diet</li>
+<li class="">데이터를 삭제하는 것이 아니라 압축하고, 겹친 정보는 중복을 배제하고, 새로운 기준에 따라 나누어 저장하는 작업</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=비콘>비콘<a href=#비콘 class=hash-link aria-label="비콘에 대한 직접 링크" title="비콘에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Beacon</li>
+<li class="">전파를 이용하여 주기적으로 프레임 신호 동기를 맞추고, 송수신 관련 시스템 정보를 전송하며, 수신 데이터 정보를 전달하는 무선 통신 신호 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=증발품>증발품<a href=#증발품 class=hash-link aria-label="증발품에 대한 직접 링크" title="증발품에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Vaporware</li>
+<li class="">판매 계획 또는 배포 계획은 발표되었으나 실제로 고객에게 판매되거나 배포되지 않고 있는 소프트웨어</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=subscription-commerce>Subscription Commerce<a href=#subscription-commerce class=hash-link aria-label="Subscription Commerce에 대한 직접 링크" title="Subscription Commerce에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Subscription과 Commerce의 합성어로 정기적인 비용을 지불하고 전문가의 큐레이션을 통해 선정된 제품들을 주기적으로 배송 받는 상거래</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=zapping-effect>Zapping Effect<a href=#zapping-effect class=hash-link aria-label="Zapping Effect에 대한 직접 링크" title="Zapping Effect에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">재핑 효과</li>
+<li class="">채널을 돌리다가 중간에 있는 채널의 시청률이 높아지는 현상</li>
+<li class="">재핑이란 방송 프로그램 시작 전후로 노출되는 광고를 피하기 위해 채널을 돌리는 행위</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=생명정보학>생명정보학<a href=#생명정보학 class=hash-link aria-label="생명정보학에 대한 직접 링크" title="생명정보학에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Bioinformatics</li>
+<li class="">컴퓨터를 이용해 각종 생명정보를 처리하는 학문으로 방대한 생물의 유전자 정보를 분석하기 위한 학문</li>
+<li class="">유전자 예측 프로그램 개발, 생명정보 데이터베이스 구축 등 정보기술의 개발과 바이오 칩이라 불리는 첨단 반도체의 개발 등이 해당된다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스마트-그리드>스마트 그리드<a href=#스마트-그리드 class=hash-link aria-label="스마트 그리드에 대한 직접 링크" title="스마트 그리드에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Smart Grid</li>
+<li class="">정보 기술을 전력에 접목해 효율성을 제고한 시스템</li>
+<li class="">전력선을 기반으로 모든 통신, 정보, 고나련 애플리케이션 인프라르 하나의 시스템으로 통합한 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=meformer>Meformer<a href=#meformer class=hash-link aria-label="Meformer에 대한 직접 링크" title="Meformer에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">미포머</li>
+<li class="">나를 뜻하는 미와 정보를 제공자를 뜻하는 인포머의 합성어로 나를 알리는 데에만 열중하는 사람</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=tajo>Tajo<a href=#tajo class=hash-link aria-label="Tajo에 대한 직접 링크" title="Tajo에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">타조</li>
+<li class="">오픈 소스 기반 분산 컴퓨팅 플랫폼인 아파치 하둡 기반의 분산 데이터 웨어하우스 프로젝트</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3d-printing>3D printing<a href=#3d-printing class=hash-link aria-label="3D printing에 대한 직접 링크" title="3D printing에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">대상을 평면에 출력하는 것이 아니라 손으로 만질 수 있는 실제 물체로 만들어 내는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cresumer>Cresumer<a href=#cresumer class=hash-link aria-label="Cresumer에 대한 직접 링크" title="Cresumer에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">크리슈머</li>
+<li class="">단순히 제품을 사용하는데 그치지 않고 제품의 기능이나 가치에 스토리를 담아 기존의 콘텐츠를 발전시켜 새로운 문화와 소비유행을 만들어 가는 사람들을 말한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=social-curation>Social Curation<a href=#social-curation class=hash-link aria-label="Social Curation에 대한 직접 링크" title="Social Curation에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">소셜 큐레이션</li>
+<li class="">인터넷에서 다수 사용자가 자신의 취향대로 정보를 가공해 다른 사람과 공유하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=variable-bitrate>Variable BitRate<a href=#variable-bitrate class=hash-link aria-label="Variable BitRate에 대한 직접 링크" title="Variable BitRate에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">VBR = 가변 레이트</li>
+<li class="">부호화할 때 상황에 따라 압축률을 다르게 하는 압축방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스테레오-스코프>스테레오 스코프<a href=#스테레오-스코프 class=hash-link aria-label="스테레오 스코프에 대한 직접 링크" title="스테레오 스코프에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Stereoscope</li>
+<li class="">하나의 물체를 다른 각도에서 찍은 두 장의 사진을 동시에 보게 하여 물체를 입체적으로 보이게 하는 기기</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=오픈-그리드-서비스-아키텍처>오픈 그리드 서비스 아키텍처<a href=#오픈-그리드-서비스-아키텍처 class=hash-link aria-label="오픈 그리드 서비스 아키텍처에 대한 직접 링크" title="오픈 그리드 서비스 아키텍처에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OGSA = Open Grid Service Architecture</li>
+<li class="">애플리케이션 공유를 위한 웹 서비스를 그리드 상에서 제공하기 위해 만든 개방형 표준</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ajax>AJAX<a href=#ajax class=hash-link aria-label="AJAX에 대한 직접 링크" title="AJAX에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Asynchronous Javascript and XML</li>
+<li class="">웹 페이지 내에서 자바스크립트와 CSS, XHTML 등을 이용하여 XML로 데이터를 교환하고 제어함으로써 사용자들이 웹 페이지를 새로고침 하지 않아도 대화형의 웹페이지 기능을 이용할 수 있게 하는 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=edi>EDI<a href=#edi class=hash-link aria-label="EDI에 대한 직접 링크" title="EDI에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Electronic Data Interchange = 전자 자료 교환</li>
+<li class="">기업 간 거래에 관한 데이터와 문서를 표준화하여 컴퓨터 통신망으로 거래 당사자가 직접 전송, 수신하는 정보 전달 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=건물-에너지-관리-시스템>건물 에너지 관리 시스템<a href=#건물-에너지-관리-시스템 class=hash-link aria-label="건물 에너지 관리 시스템에 대한 직접 링크" title="건물 에너지 관리 시스템에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">BEMS = Building Energy Management System</li>
+<li class="">건물에 IT 기술을 활용하여 전기, 공조, 방법, 방재 같은 여러 건축 설비를 관리하는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=tps>TPS<a href=#tps class=hash-link aria-label="TPS에 대한 직접 링크" title="TPS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Transaction Processing System</li>
+<li class="">거래 처리 시스템</li>
+<li class="">기업에서 업무 처리를 할 때 다양하게 발생하는 거래 자료를 전산화해서 신속하고 정확하게 처리하는 정보화 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=스마트-정보격차>스마트 정보격차<a href=#스마트-정보격차 class=hash-link aria-label="스마트 정보격차에 대한 직접 링크" title="스마트 정보격차에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Smart Divide</li>
+<li class="">SNS나 스마트 미디어를 활용하는 사람과 그렇지 못한 사람 사이의 정보 격차를 뜻한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=cpm>CPM<a href=#cpm class=hash-link aria-label="CPM에 대한 직접 링크" title="CPM에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Corporate Performance Management = 기업 성과 관리</li>
+<li class="">기업 경영 환경에 효과적으로 대처하기 위해 예측 경영을 통한 최적의 의사 결정을 내릴 수 있게 해주는 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지털-아카이빙>디지털 아카이빙<a href=#디지털-아카이빙 class=hash-link aria-label="디지털 아카이빙에 대한 직접 링크" title="디지털 아카이빙에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Archiving</li>
+<li class="">디지털 정보 자원을 장기적으로 보존하기 위한 작업</li>
+<li class="">아날로그 콘텐츠는 디지털로 변환한 후 압축해서 저장하고, 디지털 콘텐츠도 체계적으로 분류하고 메타데이터를 만들어 DB화하는 작업</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=미디어-빅뱅>미디어 빅뱅<a href=#미디어-빅뱅 class=hash-link aria-label="미디어 빅뱅에 대한 직접 링크" title="미디어 빅뱅에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Media Big Bang</li>
+<li class="">정보 통신의 발달, 이용자 소비 환경의 변화로 새로운 미디어가 등장하여 기존의 미디어 질서가 해체되는 미디어 환경 변화를 빅뱅에 비유한 표현</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=sis>SIS<a href=#sis class=hash-link aria-label="SIS에 대한 직접 링크" title="SIS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Strategic Information System = 전략 정보 시스템</li>
+<li class="">기업이 경쟁 우위를 확보하기 위해 구축, 이용하는 정보 시스템</li>
+<li class="">1985년 경에 출현하엿는데 종래의 정보 시스템이 기업 내 업무의 합리화나 효율화에 역점을 두었던 것에 반하여, 기업이 경쟁에서 승리하여 살아남기 위한 필수적인 시스템이라는 뜻에서 전략 정보 시스템이라고 불린다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=복잡-이벤트-처리>복잡 이벤트 처리<a href=#복잡-이벤트-처리 class=hash-link aria-label="복잡 이벤트 처리에 대한 직접 링크" title="복잡 이벤트 처리에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">CEP = Complex Event Processing</li>
+<li class="">실시간으로 발생하는 많은 사건들 중 의미가 있는 것만을 추출할 수 있도록 사건 발생 조건을 정의하는 데이터 처리 방법</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=그린-it>그린 IT<a href=#그린-it class=hash-link aria-label="그린 IT에 대한 직접 링크" title="그린 IT에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Green Information Technology</li>
+<li class="">정보기술 전 분야에서 유해 물질을 자제하고 에너지 절감을 통해 친환경 제품과 서비스를 제공하는 것</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=녹색-기술>녹색 기술<a href=#녹색-기술 class=hash-link aria-label="녹색 기술에 대한 직접 링크" title="녹색 기술에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Green Technology</li>
+<li class="">환경 친화적인 기술</li>
+<li class="">지구 오난화와 에너지 자원 고갈 문제를 대처하기 위해 EU 등 선진국에서 시작된 친환경 열풍이 세계적으로 확산되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=데이지>데이지<a href=#데이지 class=hash-link aria-label="데이지에 대한 직접 링크" title="데이지에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DAISY = Digital Accessible Information SYstem</li>
+<li class="">시각 장애인이나 독서 장애인을 위한 국제 디지털 문서 포맷</li>
+<li class="">디지털 시대에 정보 접근에 장애를 갖고 있는 노인이나 시각 장애인을 위해 개발되어 점자도서관에서 토킹 북을 제작하는 데 사용되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=서비스-지향-아키텍처>서비스 지향 아키텍처<a href=#서비스-지향-아키텍처 class=hash-link aria-label="서비스 지향 아키텍처에 대한 직접 링크" title="서비스 지향 아키텍처에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SOA = Service Oriented Architecture</li>
+<li class="">기업의 소프트웨어 인프라인 정보 시스템을 공유와 재사용이 가능한 서비스 단위나 컴포넌트 중심으로 구축하는 정보기술 아키텍처</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=오픈케이블-응용-플랫폼>오픈케이블 응용 플랫폼<a href=#오픈케이블-응용-플랫폼 class=hash-link aria-label="오픈케이블 응용 플랫폼에 대한 직접 링크" title="오픈케이블 응용 플랫폼에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">OCAP = Open Cable Application Platform</li>
+<li class="">모든 종합 유선방송에서 운용될 수 있도록 대화형 TV 서비스나 응용 프로그램을 설계할 수 있는 미들웨어 소프트웨어 계층</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=원-세그>원 세그<a href=#원-세그 class=hash-link aria-label="원 세그에 대한 직접 링크" title="원 세그에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">One Seg</li>
+<li class="">일본의 디지털 휴대 이동방송 서비스의 명칭</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=소셜-서치>소셜 서치<a href=#소셜-서치 class=hash-link aria-label="소셜 서치에 대한 직접 링크" title="소셜 서치에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Social Search</li>
+<li class="">불특정 다수의 인터넷 사용자들을 대상으로 특정 질문에 답변을 제시하거나 또는 공통적 관심사가 포함된 웹사이트나 여타 자료원으로의 링크를 제공하는 웹사이트 또는 서비스</li>
+<li class="">누구나 질문을 올릴 수 있고 전문가나 일반 사용자들로부터 이에 대한 답변을 받을 수 있는 질의응답 또는 지식검색 사이트를 의미한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=디지로그>디지로그<a href=#디지로그 class=hash-link aria-label="디지로그에 대한 직접 링크" title="디지로그에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">DigiLog</li>
+<li class="">Digital과 Analog의 합성어로 디지털 기술과 아날로그적 정서가 결합한 제품과 서비스, 또는 아날로그 시대에서 디지털 시대로 넘어가는 변혁기에 위치한 세대를 의미한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=체감-품질>체감 품질<a href=#체감-품질 class=hash-link aria-label="체감 품질에 대한 직접 링크" title="체감 품질에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">QoE = Quality of Experience</li>
+<li class="">서비스 이용자가 각자의 기대치에 근거하여 주관적으로 인지하는 어플리케이션 혹은 서비스의 총체적인 허용도를 말한다.</li>
+<li class="">사용자가 요금을 지불한 서비스에 대해 기대하는 기대치를 근거로 규정하는 품질 척도</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=its>ITS<a href=#its class=hash-link aria-label="ITS에 대한 직접 링크" title="ITS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Intelligent Transportation System = 지능형 교통 시스템</li>
+<li class="">도로, 자동차, 화물 등 기존의 교통 시스템에 전자, 통신, 제어 등 첨단기술을 접목시켜 실시간 교통정보를 수집, 관리 제공함으로써 교통시설의 이용효율을 극대화하고 교통편의와 교통안전을 제고하며 에너지 절감 등 환경 친화적 교통시스메으로 정의되고 있다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=eis>EIS<a href=#eis class=hash-link aria-label="EIS에 대한 직접 링크" title="EIS에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Executive Information System = 경영진 정보 시스템</li>
+<li class="">중역 혹은 최고경영자들이 조직의 성공적인 경영을 위하여 피룡로 하는 조직 내부 혹은 조직 외부의 정보를 효과적으로 제공할 수 있는 컴퓨터 기반의 정보 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=dmb>DMB<a href=#dmb class=hash-link aria-label="DMB에 대한 직접 링크" title="DMB에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Digital Multimedia Broadcasting = 디지털 멀티미디어 방송</li>
+<li class="">디지털 멀티미디어 방송을 의미</li>
+<li class="">음성 영상 등 다양한 멀티미디어 신호를 디지털 방식으로 변조하여 고정 또는 휴대용 수신기에 제공하는 방송 서비스</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=딥-러닝>딥 러닝<a href=#딥-러닝 class=hash-link aria-label="딥 러닝에 대한 직접 링크" title="딥 러닝에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Deep Learning</li>
+<li class="">인간의 두뇌를 모델로 만들어진 인공 신경망(ANN)을 기반으로 하는 기계 학습 기술</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=누름힘-접촉>누름힘 접촉<a href=#누름힘-접촉 class=hash-link aria-label="누름힘 접촉에 대한 직접 링크" title="누름힘 접촉에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Force Touch</li>
+<li class="">애플에서 개발한 트랙패드와 터치스크린에 적용되는 기술</li>
+<li class="">패널에 가해지는 힘의 강도를 감지</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=막대형-컴퓨터>막대형 컴퓨터<a href=#막대형-컴퓨터 class=hash-link aria-label="막대형 컴퓨터에 대한 직접 링크" title="막대형 컴퓨터에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">PC-on-a-stick = Stick PC</li>
+<li class="">작고 긴 막대모양 형태의 케이스를 갖는 단일 보드 컴퓨터</li>
+<li class="">USB 드라이브와 유사한 형태를 가지며 내부의 CPU와 램, 저장장치 등 컴퓨터의 필수 요소들이 모두 내장되어 있고, HDMI 비디오 포트를 갖고 있어 모니터만 연결하면 일반 PC처럼 이용이 가능하다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=먹거리-테크>먹거리 테크<a href=#먹거리-테크 class=hash-link aria-label="먹거리 테크에 대한 직접 링크" title="먹거리 테크에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Food Tech</li>
+<li class="">식품과 기술이 결합된 용어로 기존의 식품 관련 서비스업을 빅데이터, O2O 서비스, 블루투스, 비콘 등의 정보통신기술과 결합한 것을 의미</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=에스엔지>에스엔지<a href=#에스엔지 class=hash-link aria-label="에스엔지에 대한 직접 링크" title="에스엔지에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">SNG = Satellite News Gathering</li>
+<li class="">현장에서 촬영한 영상을 위성을 통해 방송사로 전송하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=엠엔지>엠엔지<a href=#엠엔지 class=hash-link aria-label="엠엔지에 대한 직접 링크" title="엠엔지에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">MNG = Mobile News Gathering</li>
+<li class="">야외에서 촬영한 영상을 3G, LTE, WiBro, Wi-Fi 등 다양한 무선망 접속장비를 이용해 전송하는 방식</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=uasp>UASP<a href=#uasp class=hash-link aria-label="UASP에 대한 직접 링크" title="UASP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">USB attached SCSI Protcol = 유에스비-스카시 프로토콜</li>
+<li class="">USB 저장장치로 데이터를 송수신할 때 사용되는 컴퓨터 프로토콜</li>
+<li class="">스카시 프로토콜이 탑재되어 기존의 방식보다 더 빠른 전송속도를 보장</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=efp>EFP<a href=#efp class=hash-link aria-label="EFP에 대한 직접 링크" title="EFP에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Electronic Field Production</li>
+<li class="">장비가 설치되어 있는 스튜디오가 아닌 야외에서 촬영할 때 사용되는 카메라 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=eng>ENG<a href=#eng class=hash-link aria-label="ENG에 대한 직접 링크" title="ENG에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Eletronic News Gathering</li>
+<li class="">카메라와 녹화부가 탑재된 일체형 카메라 시스템</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=지능형-가상-비서>지능형 가상 비서<a href=#지능형-가상-비서 class=hash-link aria-label="지능형 가상 비서에 대한 직접 링크" title="지능형 가상 비서에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">IPA = Intelligent Personal Assistant</li>
+<li class="">개인에게 맞춘 서비스나 업무를 수행하는 소프트웨어 에이전트</li>
+<li class="">일정관리, 영화예약, 인터넷 검색, 길찾기 등의 여러가지 업무를 처리하는 것이 가능</li>
+<li class="">음석인식으로 지시받아 인공지능 엔진을 통해 사용자가 기존에 입력한 데이터나 위치 데이터, 다양한 온라인 데이터를 기반으로 수행</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=텐서플로>텐서플로<a href=#텐서플로 class=hash-link aria-label="텐서플로에 대한 직접 링크" title="텐서플로에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">TensorFlow</li>
+<li class="">구글 브레인 팀이 만든 기계학습을 위한 오픈소스 소프트웨어 라이브러리</li>
+<li class="">C++언어로 제작되었고 Python API를 제공한다.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=평면-디자인>평면 디자인<a href=#평면-디자인 class=hash-link aria-label="평면 디자인에 대한 직접 링크" title="평면 디자인에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">Flat Design</li>
+<li class="">그림자나 기울기 등의 3차원 입체감을 주는 화려한 요소들의 사용을 최소화하는 디자인 장르</li>
+</ul></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag title="Engineer Information Processing" class="tag_zVej tagRegular_sFm0" href=/tags/정보처리/>정보처리</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href=/2017/03/31/single-line-for-loop/><div class=pagination-nav__sublabel>이전 게시물</div><div class=pagination-nav__label>Single line for loop</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/2017/03/27/업무-프로세스/><div class=pagination-nav__sublabel>다음 게시물</div><div class=pagination-nav__label>업무 프로세스</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#보안-요건 class="table-of-contents__link toc-highlight">보안 요건</a><ul><li><a href=#기밀성 class="table-of-contents__link toc-highlight">기밀성</a><li><a href=#무결성 class="table-of-contents__link toc-highlight">무결성</a><li><a href=#가용성 class="table-of-contents__link toc-highlight">가용성</a><li><a href=#인증 class="table-of-contents__link toc-highlight">인증</a><li><a href=#부인-방지 class="table-of-contents__link toc-highlight">부인 방지</a><li><a href=#접근-통제 class="table-of-contents__link toc-highlight">접근 통제</a></ul><li><a href=#보안-위협-유형 class="table-of-contents__link toc-highlight">보안 위협 유형</a><ul><li><a href=#가로막기 class="table-of-contents__link toc-highlight">가로막기</a><li><a href=#가로채기 class="table-of-contents__link toc-highlight">가로채기</a><li><a href=#수정 class="table-of-contents__link toc-highlight">수정</a><li><a href=#위조 class="table-of-contents__link toc-highlight">위조</a></ul><li><a href=#개인키-압호화-기법 class="table-of-contents__link toc-highlight">개인키 압호화 기법</a><ul><li><a href=#des class="table-of-contents__link toc-highlight">DES</a></ul><li><a href=#공개키-암호화-기법 class="table-of-contents__link toc-highlight">공개키 암호화 기법</a><li><a href=#순차적-암호화 class="table-of-contents__link toc-highlight">순차적 암호화</a><li><a href=#공개키-기반-구조 class="table-of-contents__link toc-highlight">공개키 기반 구조</a><li><a href=#프라이버시-강화-기술 class="table-of-contents__link toc-highlight">프라이버시 강화 기술</a><li><a href=#digital-forensics class="table-of-contents__link toc-highlight">Digital Forensics</a><li><a href=#drm class="table-of-contents__link toc-highlight">DRM</a><li><a href=#ons class="table-of-contents__link toc-highlight">ONS</a><li><a href=#침입-탐지-시스템 class="table-of-contents__link toc-highlight">침입 탐지 시스템</a><li><a href=#rfid class="table-of-contents__link toc-highlight">RFID</a><li><a href=#저작권 class="table-of-contents__link toc-highlight">저작권</a><li><a href=#데이터-유출-방지 class="table-of-contents__link toc-highlight">데이터 유출 방지</a><li><a href=#cc class="table-of-contents__link toc-highlight">CC</a><li><a href=#ssl class="table-of-contents__link toc-highlight">SSL</a><li><a href=#프록시-서버 class="table-of-contents__link toc-highlight">프록시 서버</a><li><a href=#hdcp class="table-of-contents__link toc-highlight">HDCP</a><li><a href=#빅-데이터 class="table-of-contents__link toc-highlight">빅 데이터</a><li><a href=#ccl class="table-of-contents__link toc-highlight">CCL</a><li><a href=#개인정보-영향평가-제도 class="table-of-contents__link toc-highlight">개인정보 영향평가 제도</a><li><a href=#목표-복구-시점 class="table-of-contents__link toc-highlight">목표 복구 시점</a><li><a href=#인터넷-제어-메세지-프로토콜 class="table-of-contents__link toc-highlight">인터넷 제어 메세지 프로토콜</a><li><a href=#wep class="table-of-contents__link toc-highlight">WEP</a><li><a href=#wpa class="table-of-contents__link toc-highlight">WPA</a><li><a href=#ip-보안-프로토콜 class="table-of-contents__link toc-highlight">IP 보안 프로토콜</a><li><a href=#otp class="table-of-contents__link toc-highlight">OTP</a><li><a href=#공인인증서 class="table-of-contents__link toc-highlight">공인인증서</a><li><a href=#생체-인식 class="table-of-contents__link toc-highlight">생체 인식</a><li><a href=#i-pin class="table-of-contents__link toc-highlight">I-PIN</a><li><a href=#bcp class="table-of-contents__link toc-highlight">BCP</a><li><a href=#crl class="table-of-contents__link toc-highlight">CRL</a><li><a href=#epc-클래스 class="table-of-contents__link toc-highlight">EPC 클래스</a><li><a href=#인증기관 class="table-of-contents__link toc-highlight">인증기관</a><li><a href=#sam class="table-of-contents__link toc-highlight">SAM</a><li><a href=#clms class="table-of-contents__link toc-highlight">CLMS</a><li><a href=#정부-개인식별-번호 class="table-of-contents__link toc-highlight">정부 개인식별 번호</a><li><a href=#키-페어 class="table-of-contents__link toc-highlight">키 페어</a><li><a href=#방화벽 class="table-of-contents__link toc-highlight">방화벽</a><li><a href=#소프트웨어-에스크로 class="table-of-contents__link toc-highlight">소프트웨어 에스크로</a><li><a href=#마이핀 class="table-of-contents__link toc-highlight">마이핀</a><li><a href=#captcha class="table-of-contents__link toc-highlight">CAPTCHA</a><li><a href=#지능형-사이버-위협-대응 class="table-of-contents__link toc-highlight">지능형 사이버 위협 대응</a><li><a href=#백업방식 class="table-of-contents__link toc-highlight">백업방식</a><ul><li><a href=#전체-백업 class="table-of-contents__link toc-highlight">전체 백업</a><li><a href=#증분-백업 class="table-of-contents__link toc-highlight">증분 백업</a></ul><li><a href=#cyber-bullying class="table-of-contents__link toc-highlight">Cyber Bullying</a><li><a href=#ddos class="table-of-contents__link toc-highlight">DDoS</a><li><a href=#voip-보안-위협 class="table-of-contents__link toc-highlight">VoIP 보안 위협</a><li><a href=#ransomware class="table-of-contents__link toc-highlight">Ransomware</a><li><a href=#디지털-발자국 class="table-of-contents__link toc-highlight">디지털 발자국</a><li><a href=#워터링-홀 class="table-of-contents__link toc-highlight">워터링 홀</a><li><a href=#백도어 class="table-of-contents__link toc-highlight">백도어</a><li><a href=#zero-day-attack class="table-of-contents__link toc-highlight">Zero Day Attack</a><li><a href=#smurfing class="table-of-contents__link toc-highlight">Smurfing</a><li><a href=#typosquatting class="table-of-contents__link toc-highlight">Typosquatting</a><li><a href=#핵티비즘 class="table-of-contents__link toc-highlight">핵티비즘</a><li><a href=#티비싱 class="table-of-contents__link toc-highlight">티비싱</a><li><a href=#apt class="table-of-contents__link toc-highlight">APT</a><li><a href=#pharming class="table-of-contents__link toc-highlight">Pharming</a><li><a href=#social-engineering class="table-of-contents__link toc-highlight">Social Engineering</a><li><a href=#zeus class="table-of-contents__link toc-highlight">Zeus</a><li><a href=#botnet class="table-of-contents__link toc-highlight">Botnet</a><li><a href=#zombie class="table-of-contents__link toc-highlight">Zombie</a><li><a href=#patent-troll class="table-of-contents__link toc-highlight">Patent Troll</a><li><a href=#악성-소프트웨어 class="table-of-contents__link toc-highlight">악성 소프트웨어</a><li><a href=#스턱스넷 class="table-of-contents__link toc-highlight">스턱스넷</a><li><a href=#공격용-툴킷 class="table-of-contents__link toc-highlight">공격용 툴킷</a><li><a href=#ping-of-death class="table-of-contents__link toc-highlight">Ping of Death</a><li><a href=#splogger class="table-of-contents__link toc-highlight">Splogger</a><li><a href=#ip-스푸핑 class="table-of-contents__link toc-highlight">IP 스푸핑</a><li><a href=#스니핑 class="table-of-contents__link toc-highlight">스니핑</a><li><a href=#스위치-재밍 class="table-of-contents__link toc-highlight">스위치 재밍</a><li><a href=#스팸 class="table-of-contents__link toc-highlight">스팸</a><li><a href=#사이버-스토킹 class="table-of-contents__link toc-highlight">사이버 스토킹</a><li><a href=#피싱 class="table-of-contents__link toc-highlight">피싱</a><li><a href=#반달리즘 class="table-of-contents__link toc-highlight">반달리즘</a><li><a href=#스누핑 class="table-of-contents__link toc-highlight">스누핑</a><li><a href=#다이어-악성코드 class="table-of-contents__link toc-highlight">다이어 악성코드</a><li><a href=#드롭퍼 class="table-of-contents__link toc-highlight">드롭퍼</a><li><a href=#메모리-해킹 class="table-of-contents__link toc-highlight">메모리 해킹</a><li><a href=#스미싱 class="table-of-contents__link toc-highlight">스미싱</a><li><a href=#스파이웨어 class="table-of-contents__link toc-highlight">스파이웨어</a><li><a href=#웜 class="table-of-contents__link toc-highlight">웜</a><li><a href=#크래킹 class="table-of-contents__link toc-highlight">크래킹</a><li><a href=#트로이-목마 class="table-of-contents__link toc-highlight">트로이 목마</a><li><a href=#해킹 class="table-of-contents__link toc-highlight">해킹</a><li><a href=#혹스 class="table-of-contents__link toc-highlight">혹스</a><li><a href=#vpn class="table-of-contents__link toc-highlight">VPN</a><li><a href=#무선랜 class="table-of-contents__link toc-highlight">무선랜</a><li><a href=#직교-주파수-분할-다중 class="table-of-contents__link toc-highlight">직교 주파수 분할 다중</a><li><a href=#ftp class="table-of-contents__link toc-highlight">FTP</a><li><a href=#다중-경로-페이딩 class="table-of-contents__link toc-highlight">다중 경로 페이딩</a><li><a href=#ndn class="table-of-contents__link toc-highlight">NDN</a><li><a href=#원격-검침 class="table-of-contents__link toc-highlight">원격 검침</a><li><a href=#ngn class="table-of-contents__link toc-highlight">NGN</a><li><a href=#glonass class="table-of-contents__link toc-highlight">GLONASS</a><li><a href=#mics class="table-of-contents__link toc-highlight">MICS</a><li><a href=#sdn class="table-of-contents__link toc-highlight">SDN</a><li><a href=#근거리-무선-통신 class="table-of-contents__link toc-highlight">근거리 무선 통신</a><li><a href=#ssid class="table-of-contents__link toc-highlight">SSID</a><li><a href=#qos class="table-of-contents__link toc-highlight">QoS</a><li><a href=#modem class="table-of-contents__link toc-highlight">MODEM</a><li><a href=#tein class="table-of-contents__link toc-highlight">TEIN</a><li><a href=#telepresence class="table-of-contents__link toc-highlight">Telepresence</a><li><a href=#carrier-aggregation class="table-of-contents__link toc-highlight">Carrier Aggregation</a><li><a href=#네트워크-준비-지수 class="table-of-contents__link toc-highlight">네트워크 준비 지수</a><li><a href=#man class="table-of-contents__link toc-highlight">MAN</a><li><a href=#vod class="table-of-contents__link toc-highlight">VOD</a><li><a href=#syn class="table-of-contents__link toc-highlight">SYN</a><li><a href=#tcpip class="table-of-contents__link toc-highlight">TCP/IP</a><li><a href=#프로토콜 class="table-of-contents__link toc-highlight">프로토콜</a><li><a href=#uwb class="table-of-contents__link toc-highlight">UWB</a><li><a href=#피코넷 class="table-of-contents__link toc-highlight">피코넷</a><li><a href=#디지털-우편-소인 class="table-of-contents__link toc-highlight">디지털 우편 소인</a><li><a href=#고속-하향-패킷-접속 class="table-of-contents__link toc-highlight">고속 하향 패킷 접속</a><li><a href=#u-health class="table-of-contents__link toc-highlight">u-Health</a><li><a href=#디저라티 class="table-of-contents__link toc-highlight">디저라티</a><li><a href=#wban class="table-of-contents__link toc-highlight">WBAN</a><li><a href=#ctth class="table-of-contents__link toc-highlight">CTTH</a><li><a href=#포스트넷 class="table-of-contents__link toc-highlight">포스트넷</a><li><a href=#지그비 class="table-of-contents__link toc-highlight">지그비</a><li><a href=#디지털-접근-지수 class="table-of-contents__link toc-highlight">디지털 접근 지수</a><li><a href=#차량-멀티홉-통신 class="table-of-contents__link toc-highlight">차량 멀티홉 통신</a><li><a href=#lan class="table-of-contents__link toc-highlight">LAN</a><li><a href=#망중립성 class="table-of-contents__link toc-highlight">망중립성</a><li><a href=#gis class="table-of-contents__link toc-highlight">GIS</a><li><a href=#it389-전략 class="table-of-contents__link toc-highlight">IT389 전략</a><li><a href=#usn class="table-of-contents__link toc-highlight">USN</a><li><a href=#ant-protocol class="table-of-contents__link toc-highlight">ANT+ Protocol</a><li><a href=#래드섹-프로토콜 class="table-of-contents__link toc-highlight">래드섹 프로토콜</a><li><a href=#위성-기반-보정-시스템 class="table-of-contents__link toc-highlight">위성 기반 보정 시스템</a><li><a href=#지상-기반-보정-시스템 class="table-of-contents__link toc-highlight">지상 기반 보정 시스템</a><li><a href=#webkit class="table-of-contents__link toc-highlight">WebKit</a><li><a href=#mashup class="table-of-contents__link toc-highlight">Mashup</a><li><a href=#voip class="table-of-contents__link toc-highlight">VoIP</a><li><a href=#url class="table-of-contents__link toc-highlight">URL</a><li><a href=#쿠키 class="table-of-contents__link toc-highlight">쿠키</a><li><a href=#ims class="table-of-contents__link toc-highlight">IMS</a><li><a href=#멀티캐스트 class="table-of-contents__link toc-highlight">멀티캐스트</a><li><a href=#비트코인 class="table-of-contents__link toc-highlight">비트코인</a><li><a href=#ria class="table-of-contents__link toc-highlight">RIA</a><li><a href=#isp class="table-of-contents__link toc-highlight">ISP</a><li><a href=#해시태그 class="table-of-contents__link toc-highlight">해시태그</a><li><a href=#증강현실 class="table-of-contents__link toc-highlight">증강현실</a><li><a href=#cname class="table-of-contents__link toc-highlight">CNAME</a><li><a href=#hvc-hevc class="table-of-contents__link toc-highlight">HVC (HEVC)</a><li><a href=#trackback class="table-of-contents__link toc-highlight">Trackback</a><li><a href=#webaholism class="table-of-contents__link toc-highlight">Webaholism</a><li><a href=#iot class="table-of-contents__link toc-highlight">IoT</a><li><a href=#rss class="table-of-contents__link toc-highlight">RSS</a><li><a href=#m2m class="table-of-contents__link toc-highlight">M2M</a><li><a href=#도메인-네임 class="table-of-contents__link toc-highlight">도메인 네임</a><li><a href=#ip class="table-of-contents__link toc-highlight">IP</a><li><a href=#seo class="table-of-contents__link toc-highlight">SEO</a><li><a href=#위키피디아 class="table-of-contents__link toc-highlight">위키피디아</a><li><a href=#프로튜어 class="table-of-contents__link toc-highlight">프로튜어</a><li><a href=#ipv6 class="table-of-contents__link toc-highlight">IPv6</a><li><a href=#애니캐스트 class="table-of-contents__link toc-highlight">애니캐스트</a><li><a href=#유니캐스트 class="table-of-contents__link toc-highlight">유니캐스트</a><li><a href=#semantic-web class="table-of-contents__link toc-highlight">Semantic Web</a><li><a href=#메타-데이터 class="table-of-contents__link toc-highlight">메타 데이터</a><li><a href=#집단지성 class="table-of-contents__link toc-highlight">집단지성</a><li><a href=#xml class="table-of-contents__link toc-highlight">XML</a><li><a href=#alt-text class="table-of-contents__link toc-highlight">Alt-Text</a><li><a href=#mms class="table-of-contents__link toc-highlight">MMS</a><li><a href=#블로그 class="table-of-contents__link toc-highlight">블로그</a><li><a href=#ip-tv class="table-of-contents__link toc-highlight">IP TV</a><li><a href=#www class="table-of-contents__link toc-highlight">WWW</a><li><a href=#디지털-원주민 class="table-of-contents__link toc-highlight">디지털 원주민</a><li><a href=#ucc-가이드라인 class="table-of-contents__link toc-highlight">UCC 가이드라인</a><li><a href=#관계기술 class="table-of-contents__link toc-highlight">관계기술</a><li><a href=#사용자-제작-콘텐츠 class="table-of-contents__link toc-highlight">사용자 제작 콘텐츠</a><li><a href=#웹-20 class="table-of-contents__link toc-highlight">웹 2.0</a><li><a href=#태그달기 class="table-of-contents__link toc-highlight">태그달기</a><li><a href=#퀵돔 class="table-of-contents__link toc-highlight">퀵돔</a><li><a href=#표면-웹 class="table-of-contents__link toc-highlight">표면 웹</a><li><a href=#인터넷-연동 class="table-of-contents__link toc-highlight">인터넷 연동</a><li><a href=#협대역-사물-인터넷 class="table-of-contents__link toc-highlight">협대역 사물 인터넷</a><li><a href=#vht class="table-of-contents__link toc-highlight">VHT</a><li><a href=#시공간-송신-다이버시티 class="table-of-contents__link toc-highlight">시공간 송신 다이버시티</a><li><a href=#기가-파이 class="table-of-contents__link toc-highlight">기가 파이</a><li><a href=#클라우드-컴퓨팅 class="table-of-contents__link toc-highlight">클라우드 컴퓨팅</a><li><a href=#마그네틱-안전-전송 class="table-of-contents__link toc-highlight">마그네틱 안전 전송</a><li><a href=#wifi class="table-of-contents__link toc-highlight">WiFi</a><li><a href=#n-screen class="table-of-contents__link toc-highlight">N-Screen</a><li><a href=#신-클라이언트 class="table-of-contents__link toc-highlight">신 클라이언트</a><li><a href=#phablet class="table-of-contents__link toc-highlight">Phablet</a><li><a href=#acn class="table-of-contents__link toc-highlight">ACN</a><li><a href=#byod class="table-of-contents__link toc-highlight">BYOD</a><li><a href=#lte class="table-of-contents__link toc-highlight">LTE</a><li><a href=#스마트폰 class="table-of-contents__link toc-highlight">스마트폰</a><li><a href=#펨토셀-기지국 class="table-of-contents__link toc-highlight">펨토셀 기지국</a><li><a href=#개인환경서비스 class="table-of-contents__link toc-highlight">개인환경서비스</a><li><a href=#모바일-컴퓨팅 class="table-of-contents__link toc-highlight">모바일 컴퓨팅</a><li><a href=#넷북 class="table-of-contents__link toc-highlight">넷북</a><li><a href=#sco class="table-of-contents__link toc-highlight">SCO</a><li><a href=#app-store class="table-of-contents__link toc-highlight">App Store</a><li><a href=#ap class="table-of-contents__link toc-highlight">AP</a><li><a href=#범용-가입자-식별-모듈 class="table-of-contents__link toc-highlight">범용 가입자 식별 모듈</a><li><a href=#m-커머스 class="table-of-contents__link toc-highlight">m-커머스</a><li><a href=#유비쿼터스 class="table-of-contents__link toc-highlight">유비쿼터스</a><li><a href=#촉각-기술 class="table-of-contents__link toc-highlight">촉각 기술</a><li><a href=#wcdma class="table-of-contents__link toc-highlight">WCDMA</a><li><a href=#wibro class="table-of-contents__link toc-highlight">WiBrO</a><li><a href=#펨토셀 class="table-of-contents__link toc-highlight">펨토셀</a><li><a href=#wipi class="table-of-contents__link toc-highlight">WIPI</a><li><a href=#gps class="table-of-contents__link toc-highlight">GPS</a><li><a href=#텔레매틱스 class="table-of-contents__link toc-highlight">텔레매틱스</a><li><a href=#imt-2000 class="table-of-contents__link toc-highlight">IMT-2000</a><li><a href=#스마트-플러그 class="table-of-contents__link toc-highlight">스마트 플러그</a><li><a href=#앱북 class="table-of-contents__link toc-highlight">앱북</a><li><a href=#모바일-광개토-플랜 class="table-of-contents__link toc-highlight">모바일 광개토 플랜</a><li><a href=#범용-통합-플랫폼 class="table-of-contents__link toc-highlight">범용 통합 플랫폼</a><li><a href=#서비스형-백엔드 class="table-of-contents__link toc-highlight">서비스형 백엔드</a><li><a href=#와이파이-오프로딩 class="table-of-contents__link toc-highlight">와이파이 오프로딩</a><li><a href=#지오로케이션 class="table-of-contents__link toc-highlight">지오로케이션</a><li><a href=#피에스-엘티이 class="table-of-contents__link toc-highlight">피에스-엘티이</a><li><a href=#앱-중립성 class="table-of-contents__link toc-highlight">앱 중립성</a><li><a href=#인터클라우드-컴퓨팅 class="table-of-contents__link toc-highlight">인터클라우드 컴퓨팅</a><li><a href=#케듀롬 class="table-of-contents__link toc-highlight">케듀롬</a><li><a href=#호스트-카드-에뮬레이션 class="table-of-contents__link toc-highlight">호스트 카드 에뮬레이션</a><li><a href=#wearable-technology class="table-of-contents__link toc-highlight">Wearable Technology</a><li><a href=#디지털-메시 class="table-of-contents__link toc-highlight">디지털 메시</a><li><a href=#올조인 class="table-of-contents__link toc-highlight">올조인</a><li><a href=#와이파이-헤일로 class="table-of-contents__link toc-highlight">와이파이 헤일로</a><li><a href=#용도-자유-대역 class="table-of-contents__link toc-highlight">용도 자유 대역</a><li><a href=#서비스-수준-협약 class="table-of-contents__link toc-highlight">서비스 수준 협약</a><li><a href=#pad class="table-of-contents__link toc-highlight">PAD</a><li><a href=#lbs class="table-of-contents__link toc-highlight">LBS</a><li><a href=#디지털-프로슈머 class="table-of-contents__link toc-highlight">디지털 프로슈머</a><li><a href=#위치-기반-소셜-네트워크-서비스 class="table-of-contents__link toc-highlight">위치 기반 소셜 네트워크 서비스</a><li><a href=#하둡 class="table-of-contents__link toc-highlight">하둡</a><li><a href=#4k-해상도 class="table-of-contents__link toc-highlight">4K 해상도</a><li><a href=#nomophobia class="table-of-contents__link toc-highlight">Nomophobia</a><li><a href=#social-dining class="table-of-contents__link toc-highlight">Social Dining</a><li><a href=#금융기술 class="table-of-contents__link toc-highlight">금융기술</a><li><a href=#코드커터족 class="table-of-contents__link toc-highlight">코드커터족</a><li><a href=#포직스 class="table-of-contents__link toc-highlight">포직스</a><li><a href=#foursqure class="table-of-contents__link toc-highlight">Foursqure</a><li><a href=#infodemics class="table-of-contents__link toc-highlight">Infodemics</a><li><a href=#o2o class="table-of-contents__link toc-highlight">O2O</a><li><a href=#데이터-다이어트 class="table-of-contents__link toc-highlight">데이터 다이어트</a><li><a href=#비콘 class="table-of-contents__link toc-highlight">비콘</a><li><a href=#증발품 class="table-of-contents__link toc-highlight">증발품</a><li><a href=#subscription-commerce class="table-of-contents__link toc-highlight">Subscription Commerce</a><li><a href=#zapping-effect class="table-of-contents__link toc-highlight">Zapping Effect</a><li><a href=#생명정보학 class="table-of-contents__link toc-highlight">생명정보학</a><li><a href=#스마트-그리드 class="table-of-contents__link toc-highlight">스마트 그리드</a><li><a href=#meformer class="table-of-contents__link toc-highlight">Meformer</a><li><a href=#tajo class="table-of-contents__link toc-highlight">Tajo</a><li><a href=#3d-printing class="table-of-contents__link toc-highlight">3D printing</a><li><a href=#cresumer class="table-of-contents__link toc-highlight">Cresumer</a><li><a href=#social-curation class="table-of-contents__link toc-highlight">Social Curation</a><li><a href=#variable-bitrate class="table-of-contents__link toc-highlight">Variable BitRate</a><li><a href=#스테레오-스코프 class="table-of-contents__link toc-highlight">스테레오 스코프</a><li><a href=#오픈-그리드-서비스-아키텍처 class="table-of-contents__link toc-highlight">오픈 그리드 서비스 아키텍처</a><li><a href=#ajax class="table-of-contents__link toc-highlight">AJAX</a><li><a href=#edi class="table-of-contents__link toc-highlight">EDI</a><li><a href=#건물-에너지-관리-시스템 class="table-of-contents__link toc-highlight">건물 에너지 관리 시스템</a><li><a href=#tps class="table-of-contents__link toc-highlight">TPS</a><li><a href=#스마트-정보격차 class="table-of-contents__link toc-highlight">스마트 정보격차</a><li><a href=#cpm class="table-of-contents__link toc-highlight">CPM</a><li><a href=#디지털-아카이빙 class="table-of-contents__link toc-highlight">디지털 아카이빙</a><li><a href=#미디어-빅뱅 class="table-of-contents__link toc-highlight">미디어 빅뱅</a><li><a href=#sis class="table-of-contents__link toc-highlight">SIS</a><li><a href=#복잡-이벤트-처리 class="table-of-contents__link toc-highlight">복잡 이벤트 처리</a><li><a href=#그린-it class="table-of-contents__link toc-highlight">그린 IT</a><li><a href=#녹색-기술 class="table-of-contents__link toc-highlight">녹색 기술</a><li><a href=#데이지 class="table-of-contents__link toc-highlight">데이지</a><li><a href=#서비스-지향-아키텍처 class="table-of-contents__link toc-highlight">서비스 지향 아키텍처</a><li><a href=#오픈케이블-응용-플랫폼 class="table-of-contents__link toc-highlight">오픈케이블 응용 플랫폼</a><li><a href=#원-세그 class="table-of-contents__link toc-highlight">원 세그</a><li><a href=#소셜-서치 class="table-of-contents__link toc-highlight">소셜 서치</a><li><a href=#디지로그 class="table-of-contents__link toc-highlight">디지로그</a><li><a href=#체감-품질 class="table-of-contents__link toc-highlight">체감 품질</a><li><a href=#its class="table-of-contents__link toc-highlight">ITS</a><li><a href=#eis class="table-of-contents__link toc-highlight">EIS</a><li><a href=#dmb class="table-of-contents__link toc-highlight">DMB</a><li><a href=#딥-러닝 class="table-of-contents__link toc-highlight">딥 러닝</a><li><a href=#누름힘-접촉 class="table-of-contents__link toc-highlight">누름힘 접촉</a><li><a href=#막대형-컴퓨터 class="table-of-contents__link toc-highlight">막대형 컴퓨터</a><li><a href=#먹거리-테크 class="table-of-contents__link toc-highlight">먹거리 테크</a><li><a href=#에스엔지 class="table-of-contents__link toc-highlight">에스엔지</a><li><a href=#엠엔지 class="table-of-contents__link toc-highlight">엠엔지</a><li><a href=#uasp class="table-of-contents__link toc-highlight">UASP</a><li><a href=#efp class="table-of-contents__link toc-highlight">EFP</a><li><a href=#eng class="table-of-contents__link toc-highlight">ENG</a><li><a href=#지능형-가상-비서 class="table-of-contents__link toc-highlight">지능형 가상 비서</a><li><a href=#텐서플로 class="table-of-contents__link toc-highlight">텐서플로</a><li><a href=#평면-디자인 class="table-of-contents__link toc-highlight">평면 디자인</a></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016-2026 Eunkwang Shin.</div></div></div></footer></div></body>
