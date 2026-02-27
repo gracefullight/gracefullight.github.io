@@ -1,7 +1,7 @@
 ---
-title: promoting an opensource project
+title: Promoting an opensource project
 date: 2026-02-27T10:23:15.759+08:00
-description: promoting an opensource project
+description: Promoting an opensource project towards the right audience is crucial for its success. Here are some effective channels to consider.
 authors: me
 tags:
   - oss
