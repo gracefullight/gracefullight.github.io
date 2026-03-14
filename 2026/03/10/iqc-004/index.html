@@ -1,0 +1,502 @@
+<!doctype html><html lang=ko dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>IQC 004 | gracefullight.dev</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://gracefullight.dev/2026/03/10/iqc-004/ /><meta data-rh=true property=og:locale content=ko /><meta data-rh=true property=og:locale:alternate content=en /><meta data-rh=true name=docusaurus_locale content=ko /><meta data-rh=true name=docusaurus_tag content=default /><meta data-rh=true name=docsearch:language content=ko /><meta data-rh=true name=docsearch:docusaurus_tag content=default /><meta data-rh=true content=gcY9SiftHgQoJjBZ7IgwNNN5_atLPAX6kWb1nFVfa6E name=google-site-verification /><meta data-rh=true content=65AD1E28C0D057CEB3C68FBC0293E55B name=msvalidate.01 /><meta data-rh=true content=d024c2837887f72dc7b3792b958be74d69ba9593 name=naver-site-verification /><meta data-rh=true content=f7c93483a6f87c79 name=yandex-verification /><meta data-rh=true content=yZEdU1ABcR name=baidu-site-verification /><meta data-rh=true content=uelupjqqsm5egzlhy1aev2rfxow5yt name=facebook-domain-verification /><meta data-rh=true property=og:title content="IQC 004 | gracefullight.dev"/><meta data-rh=true name=description content="Introduction to Quantum Computing 004"/><meta data-rh=true property=og:description content="Introduction to Quantum Computing 004"/><meta data-rh=true property=og:type content=article /><meta data-rh=true property=article:published_time content=2026-03-10T05:38:26.896Z /><meta data-rh=true property=article:author content=https://github.com/gracefullight /><meta data-rh=true property=article:tag content=iqc /><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://gracefullight.dev/2026/03/10/iqc-004/ /><link data-rh=true rel=alternate href=https://gracefullight.dev/2026/03/10/iqc-004/ hreflang=ko /><link data-rh=true rel=alternate href=https://gracefullight.dev/en/2026/03/10/iqc-004/ hreflang=en /><link data-rh=true rel=alternate href=https://gracefullight.dev/2026/03/10/iqc-004/ hreflang=x-default /><link data-rh=true rel=preconnect href=https://RFS69RSYOJ-dsn.algolia.net crossorigin=anonymous /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://gracefullight.dev/2026/03/10/iqc-004","@type":"BlogPosting","author":{"@type":"Person","description":"Owner","image":"https://avatars.githubusercontent.com/u/11773683?v=4","name":"Eunkwang Shin","url":"https://github.com/gracefullight"},"datePublished":"2026-03-10T05:38:26.896Z","description":"Introduction to Quantum Computing 004","headline":"IQC 004","isPartOf":{"@id":"https://gracefullight.dev/","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://gracefullight.dev/2026/03/10/iqc-004","name":"IQC 004","url":"https://gracefullight.dev/2026/03/10/iqc-004"}</script><link rel=alternate type=application/rss+xml href=/rss.xml title="gracefullight.dev RSS Feed"><link rel=alternate type=application/atom+xml href=/atom.xml title="gracefullight.dev Atom Feed"><link rel=alternate type=application/json href=/feed.json title="gracefullight.dev JSON Feed"><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E99DNE7S05"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E99DNE7S05",{})</script><link rel=search type=application/opensearchdescription+xml title=gracefullight.dev href=/opensearch.xml><link href=/img/favicon-32x32.png rel=icon><link href=/manifest.json rel=manifest><meta content=#f28913 name=theme-color><meta content=yes name=mobile-web-app-capable><meta content=#f28913 name=apple-mobile-web-app-status-bar-style><link href=/img/apple-touch-icon.png rel=apple-touch-icon><link rel=preconnect href=https://pagead2.googlesyndication.com><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3004788392777865" async crossorigin=anonymous></script><link rel=preconnect href=https://www.clarity.ms><script>!function(t,e,n,a,c,i,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(i=e.createElement(a)).async=1,i.src="https://www.clarity.ms/tag/"+c,(r=e.getElementsByTagName(a)[0]).parentNode.insertBefore(i,r)}(window,document,"clarity","script","aongv9xgi6")</script><link rel=preconnect href=https://wcs.naver.net><script src=https://wcs.naver.net/wcslog.js async></script><script>if(!wcs_add)var wcs_add={};wcs_add.wa="156bc73a81e3bd0",window.wcs&&wcs_do()</script><link rel=preconnect href=https://cdn.channel.io><script>!function(){var n=window;if(n.ChannelIO)return(window.console.error||window.console.log||function(){})("ChannelIO script included twice.");var e=function(){e.c(arguments)};function t(){if(!n.ChannelIOInitialized){n.ChannelIOInitialized=!0;var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.channel.io/plugin/ch-plugin-web.js",e.charset="UTF-8";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}}e.q=[],e.c=function(n){e.q.push(n)},n.ChannelIO=e,"complete"===document.readyState?t():window.attachEvent?window.attachEvent("onload",t):(window.addEventListener("DOMContentLoaded",t,!1),window.addEventListener("load",t,!1))}(),ChannelIO("boot",{pluginKey:"0fd130ba-a1a6-4b7e-802a-e82a885a7fd8"})</script><link rel=preconnect href=https://static.cloudflareinsights.com><script src=https://static.cloudflareinsights.com/beacon.min.js defer data-cf-beacon='{"token":"c0899829e72b45e98dff77241127252c"}'></script><link href=https://mc.yandex.ru rel=preconnect><script>!function(e,t,c,n,r,a,s){e[r]=e[r]||function(){(e[r].a=e[r].a||[]).push(arguments)},e[r].l=+new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===n)return;a=t.createElement(c),s=t.getElementsByTagName(c)[0],a.async=1,a.src=n,s.parentNode.insertBefore(a,s)}(window,document,"script","https://mc.yandex.ru/metrika/tag.js?id=104072655","ym"),ym(0x63405cf,"init",{ssr:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!1})</script><link href=https://cdn.jsdelivr.net rel=preconnect><script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:gracefullight.dev@gmail.com","image":"https://avatars.githubusercontent.com/u/11773683?v=4","jobTitle":"FullStack JavaScript Developer","logo":"https://gracefullight.dev/img/apple-touch-icon.png","name":"Eunkwang Shin","nationality":"Korean","sameAs":["https://github.com/gracefullight","https://linkedin.com/in/gracefullight"],"url":"https://gracefullight.dev"}</script><link rel=stylesheet crossorigin=anonymous href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css type=text/css><link rel=stylesheet href=/assets/css/styles.775e2857.css /><script src=/assets/js/runtime~main.6b52434f.js defer></script><script src=/assets/js/main.59c490f8.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon-32x32.png /><link rel=preload as=image href="https://avatars.githubusercontent.com/u/11773683?v=4"/><div role=region aria-label="본문으로 건너뛰기"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>본문으로 건너뛰기</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon-32x32.png alt="gracefullight.dev blog logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">gracefullight.dev</b></a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_nlXk><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>한국어</a><ul class=dropdown__menu><li><a href=/2026/03/10/iqc-004/ target=_self rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ko>한국어</a><li><a href=/en/2026/03/10/iqc-004/ target=_self rel="noopener noreferrer" class=dropdown__link lang=en>English</a></ul></div><a class="navbar__item navbar__link" href=/archive/>Archives</a><a class="navbar__item navbar__link" href=/tags/>Tags</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><button type=button class="DocSearch DocSearch-Button" aria-label="검색 (Meta+k)" aria-keyshortcuts=Meta+k><span class=DocSearch-Button-Container><svg width=20 height=20 class=DocSearch-Search-Icon viewBox="0 0 24 24" aria-hidden=true><circle cx=11 cy=11 r=8 stroke=currentColor fill=none stroke-width=1.4 /><path d="m21 21-4.3-4.3" stroke=currentColor fill=none stroke-linecap=round stroke-linejoin=round /></svg><span class=DocSearch-Button-Placeholder>검색</span></span><span class=DocSearch-Button-Keys></span></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="최근 블로그 문서 둘러보기"><div class="sidebarItemTitle_pO2u margin-bottom--md">최근 포스트</div><div role=group><h3 class=yearGroupHeading_rMGB>2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class=sidebarItem__DBe><a aria-current=page class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href=/2026/03/10/iqc-004/>IQC 004</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/03/09/tim-004/>TIM 004</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/03/04/iqc-003/>IQC 003</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/03/03/cnn-003/>CNN 003</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/03/02/tim-003/>TIM 003</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/free-up-storage-space-on-mac/>Free up storage space on mac</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/27/promoting-an-opensource-project/>Promoting an opensource project</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/24/iqc-002/>IQC 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/23/tim-002/>TIM 002</a><li class=sidebarItem__DBe><a class=sidebarItemLink_mo7H href=/2026/02/17/innovation-tactics/>Innovation Tactics</a></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class=title_f1Hy>IQC 004</h1><div class="container_mt6G margin-vert--md"><time datetime=2026-03-10T05:38:26.896Z>2026년 3월 10일</time> · <!-- -->약 10분</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class=avatar__photo-link href=/authors/me/><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/11773683?v=4" alt="Eunkwang Shin"/></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=/authors/me/><span class=authorName_yefp translate=no>Eunkwang Shin</span></a></div><small class=authorTitle_nd0D title=Owner>Owner</small><div class=authorSocials_rSDt><a href=https://www.linkedin.com/in/gracefullight/ target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=LinkedIn><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em preserveAspectRatio=xMidYMid viewBox="0 0 256 256" style=--dark:#0a66c2;--light:#ffffffe6 class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"/></svg></a><a href=https://github.com/gracefullight target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=GitHub><svg xmlns=http://www.w3.org/2000/svg width=1em height=1em viewBox="0 0 256 250" preserveAspectRatio=xMidYMid style=--dark:#000;--light:#fff class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"/></svg></a><a href=mailto:gracefullight.dev@gmail.com target=_blank rel="noopener noreferrer" class=authorSocialLink_owbf title=Email><svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 class=authorSocialIcon_XYv3><path stroke=none d="M0 0h24v24H0z"/><path d="M7.2 12a4.8 4.8 0 1 0 9.6 0 4.8 4.8 0 1 0-9.6 0"/><path d="M16.8 12v1.8a3 3 0 0 0 6 0V12a10.8 10.8 0 1 0-6.6 9.936"/></svg></a></div></div></div></div></div></header><div id=__blog-post-container class=markdown><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=superdense-coding>Superdense Coding<a href=#superdense-coding class=hash-link aria-label="Superdense Coding에 대한 직접 링크" title="Superdense Coding에 대한 직접 링크" translate=no>​</a></h2>
+<ul>
+<li class="">counterintuitive protocol that allows us to send 2 bits of classical information by sending only 1 qubit, using pre-shared entanglement</li>
+<li class="">it's often contextualized as a game with Alice and Bob.</li>
+<li class="">Alice and Bob share and entangled pair of qubits</li>
+<li class="">Pre-shared Entanglement (Shared <strong>Bell pair</strong>)<!-- -->
+<ul>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi mathvariant=normal>∣</mi><msup><mi mathvariant=normal>Φ</mi><mo>+</mo></msup><mo stretchy=false>⟩</mo><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy=false>(</mo><mi mathvariant=normal>∣</mi><mn>00</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mn>11</mn><mo stretchy=false>⟩</mo><mo stretchy=false>)</mo></mrow><annotation encoding=application/x-tex>|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.0213em;vertical-align:-0.25em></span><span class=mord>∣</span><span class=mord><span class=mord>Φ</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.7713em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.3831em;vertical-align:-0.538em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mopen>(</span><span class=mord>∣00</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣11</span><span class=mclose>⟩)</span></span></span></span></li>
+</ul>
+</li>
+<li class="">Alice wants to send 2 bits of classical information (<em>00, 01, 10, or 11</em>) to Bob<!-- -->
+<ul>
+<li class="">For <strong>00</strong>: Apply Identity <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>I</mi></mrow><annotation encoding=application/x-tex>I</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>I</span></span></span></span> (do nothing)</li>
+<li class="">For <strong>01</strong>: Apply Pauli-X <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>X</mi></mrow><annotation encoding=application/x-tex>X</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>X</span></span></span></span> (bit flip)</li>
+<li class="">For <strong>10</strong>: Apply Pauli-Z <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>Z</mi></mrow><annotation encoding=application/x-tex>Z</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07153em>Z</span></span></span></span> (phase flip)</li>
+<li class="">For <strong>11</strong>: Apply <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>X</mi><mi>Z</mi></mrow><annotation encoding=application/x-tex>XZ</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07153em>XZ</span></span></span></span> (bit and phase flip)</li>
+</ul>
+</li>
+<li class="">Alice sends her one qubit to Bob (Bob possesses both qubits of the entangled pair)</li>
+<li class="">Bob decodes the information<!-- -->
+<ul>
+<li class="">Inverts the entanglement operation on the two qubits (CNOT followed by Hadamard)</li>
+<li class="">Measures each of the qubits</li>
+<li class="">The outcome of this measurement reveals the two bits Alice encoded.</li>
+</ul>
+</li>
+<li class=""><strong><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi mathvariant=normal>∣</mi><msup><mi mathvariant=normal>Φ</mi><mo>+</mo></msup><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>|\Phi^+\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.0213em;vertical-align:-0.25em></span><span class=mord>∣</span><span class=mord><span class=mord>Φ</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.7713em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class=mclose>⟩</span></span></span></span></strong>: is the most common and convenient form (Bell State) of entanglement and is also <em>maximally entangled</em> state despite single-qubit unitary gates.<!-- -->
+<ul>
+<li class="">Easy to build circuits for it</li>
+<li class="">Symmetric and has nice properties that make it ideal for protocols like superdense coding and teleportation</li>
+<li class="">Other Bell states can be generated from <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi mathvariant=normal>∣</mi><msup><mi mathvariant=normal>Φ</mi><mo>+</mo></msup><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>|\Phi^+\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.0213em;vertical-align:-0.25em></span><span class=mord>∣</span><span class=mord><span class=mord>Φ</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.7713em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class=mclose>⟩</span></span></span></span> by applying single-qubit gates.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=superdense-coding-circuit>Superdense Coding Circuit<a href=#superdense-coding-circuit class=hash-link aria-label="Superdense Coding Circuit에 대한 직접 링크" title="Superdense Coding Circuit에 대한 직접 링크" translate=no>​</a></h3>
+<p><img decoding=async loading=lazy alt="Superdense Coding Circuit" src=/assets/images/superdense-32748db615bf7a1c5159c56de441c855.png width=1420 height=438 class=img_ev3q /></p>
+<ul>
+<li class="">Alice's message <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>m</mi><mi>n</mi></mrow><annotation encoding=application/x-tex>mn</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">mn</span></span></span></span>, where each of <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>m</mi></mrow><annotation encoding=application/x-tex>m</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">m</span></span></span></span> and <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi></mrow><annotation encoding=application/x-tex>n</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span></span></span></span> is a bit (0 or 1)</li>
+<li class="">Alice's operation can be represented as <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msup><mi>Z</mi><mi>m</mi></msup><msup><mi>X</mi><mi>n</mi></msup><mo>⊗</mo><mi mathvariant=double-struck>I</mi><mi mathvariant=normal>∣</mi><msup><mi mathvariant=normal>Φ</mi><mo>+</mo></msup><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>Z^m X^n \otimes \mathbb{I} | \Phi^+\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.7667em;vertical-align:-0.0833em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07153em>Z</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊗</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1.0213em;vertical-align:-0.25em></span><span class="mord mathbb">I</span><span class=mord>∣</span><span class=mord><span class=mord>Φ</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.7713em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class=mclose>⟩</span></span></span></span>
+<ul>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><msup><mi>Z</mi><mn>0</mn></msup><mo>=</mo><mi>I</mi></mrow><annotation encoding=application/x-tex>m=0 \Rightarrow Z^0 = I</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">m</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>⇒</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.8141em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07153em>Z</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.8141em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>I</span></span></span></span> (no phase flip)</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>m</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><msup><mi>Z</mi><mn>1</mn></msup><mo>=</mo><mi>Z</mi></mrow><annotation encoding=application/x-tex>m=1 \Rightarrow Z^1 = Z</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">m</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>1</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>⇒</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.8141em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07153em>Z</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.8141em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07153em>Z</span></span></span></span> (phase flip)</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><msup><mi>X</mi><mn>0</mn></msup><mo>=</mo><mi>I</mi></mrow><annotation encoding=application/x-tex>n=0 \Rightarrow X^0 = I</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>⇒</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.8141em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.8141em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>I</span></span></span></span> (no bit flip</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><msup><mi>X</mi><mn>1</mn></msup><mo>=</mo><mi>X</mi></mrow><annotation encoding=application/x-tex>n=1 \Rightarrow X^1 = X</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>1</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>⇒</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.8141em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.8141em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>X</span></span></span></span> (bit flip)</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>00</mn><mo>→</mo><mi>I</mi></mrow><annotation encoding=application/x-tex>00 \rightarrow I</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>00</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>→</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>I</span></span></span></span></li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>01</mn><mo>→</mo><mi>X</mi></mrow><annotation encoding=application/x-tex>01 \rightarrow X</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>01</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>→</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>X</span></span></span></span></li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>10</mn><mo>→</mo><mi>Z</mi></mrow><annotation encoding=application/x-tex>10 \rightarrow Z</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>10</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>→</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07153em>Z</span></span></span></span></li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>11</mn><mo>→</mo><mi>Z</mi><mi>X</mi></mrow><annotation encoding=application/x-tex>11 \rightarrow ZX</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.6444em></span><span class=mord>11</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>→</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6833em></span><span class="mord mathnormal" style=margin-right:0.07847em>ZX</span></span></span></span></li>
+</ul>
+</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msup><mi>Z</mi><mi>m</mi></msup><mi mathvariant=normal>∣</mi><mi>b</mi><mo stretchy=false>⟩</mo><mo>=</mo><mo stretchy=false>(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=false>)</mo><mrow><mi>m</mi><mi>b</mi></mrow></msup><mi mathvariant=normal>∣</mi><mi>b</mi><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>Z^m|b\rangle = (-1)^{mb}|b\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07153em>Z</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span><span class=mord>∣</span><span class="mord mathnormal">b</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.0991em;vertical-align:-0.25em></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>1</span><span class=mclose><span class=mclose>)</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.8491em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">mb</span></span></span></span></span></span></span></span></span><span class=mord>∣</span><span class="mord mathnormal">b</span><span class=mclose>⟩</span></span></span></span> (phase flip)</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msup><mi>X</mi><mi>n</mi></msup><mi mathvariant=normal>∣</mi><mi>a</mi><mo stretchy=false>⟩</mo><mo>=</mo><mi mathvariant=normal>∣</mi><mi>a</mi><mo>⊕</mo><mi>n</mi><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>X^n|a\rangle = |a \oplus n\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class=mord>∣</span><span class="mord mathnormal">a</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣</span><span class="mord mathnormal">a</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class="mord mathnormal">n</span><span class=mclose>⟩</span></span></span></span> (xor operation)</li>
+</ul>
+<p><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msup><mi>X</mi><mi>n</mi></msup><mrow><mo fence=true>(</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy=false>(</mo><mi mathvariant=normal>∣</mi><mn>00</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mn>11</mn><mo stretchy=false>⟩</mo><mo stretchy=false>)</mo><mo fence=true>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mrow><mo fence=true>(</mo><mi mathvariant=normal>∣</mi><mi>n</mi><mn>0</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mo stretchy=false>(</mo><mn>1</mn><mo>⊕</mo><mi>n</mi><mo stretchy=false>)</mo><mn>1</mn><mo stretchy=false>⟩</mo><mo fence=true>)</mo></mrow></mrow><annotation encoding=application/x-tex>X^n \left(\frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)\right) = \frac{1}{\sqrt{2}} \left( |n0\rangle + |(1\oplus n)1\rangle \right)</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.8em;vertical-align:-0.65em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.1667em></span><span class=minner><span class="mopen delimcenter" style=top:0em><span class="delimsizing size2">(</span></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mopen>(</span><span class=mord>∣00</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span><span class=mord>∣11</span><span class=mclose>⟩)</span><span class="mclose delimcenter" style=top:0em><span class="delimsizing size2">)</span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.3831em;vertical-align:-0.538em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mspace style=margin-right:0.1667em></span><span class=minner><span class="mopen delimcenter" style=top:0em>(</span><span class=mord>∣</span><span class="mord mathnormal">n</span><span class=mord>0</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span><span class=mord>∣</span><span class=mopen>(</span><span class=mord>1</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span><span class="mord mathnormal">n</span><span class=mclose>)</span><span class=mord>1</span><span class=mclose>⟩</span><span class="mclose delimcenter" style=top:0em>)</span></span></span></span></span></p>
+<ul>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=application/x-tex>n=0</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>0</span></span></span></span>: <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy=false>(</mo><mi mathvariant=normal>∣</mi><mn>00</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mn>11</mn><mo stretchy=false>⟩</mo><mo stretchy=false>)</mo><mo>=</mo><mi mathvariant=normal>∣</mi><msup><mi mathvariant=normal>Φ</mi><mo>+</mo></msup><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>\frac{1}{\sqrt{2}} (|00\rangle + |11\rangle) = |\Phi^+\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.3831em;vertical-align:-0.538em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mopen>(</span><span class=mord>∣00</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣11</span><span class=mclose>⟩)</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.0213em;vertical-align:-0.25em></span><span class=mord>∣</span><span class=mord><span class=mord>Φ</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.7713em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class=mclose>⟩</span></span></span></span></li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=application/x-tex>n=1</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:0.6444em></span><span class=mord>1</span></span></span></span>: <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy=false>(</mo><mi mathvariant=normal>∣</mi><mn>10</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mn>01</mn><mo stretchy=false>⟩</mo><mo stretchy=false>)</mo></mrow><annotation encoding=application/x-tex>\frac{1}{\sqrt{2}} (|10\rangle + |01\rangle)</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.3831em;vertical-align:-0.538em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mopen>(</span><span class=mord>∣10</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣01</span><span class=mclose>⟩)</span></span></span></span></li>
+</ul>
+<p><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><msup><mi>Z</mi><mi>m</mi></msup><msup><mi>X</mi><mi>n</mi></msup><mrow><mo fence=true>(</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy=false>(</mo><mi mathvariant=normal>∣</mi><mn>00</mn><mo stretchy=false>⟩</mo><mo>+</mo><mi mathvariant=normal>∣</mi><mn>11</mn><mo stretchy=false>⟩</mo><mo stretchy=false>)</mo><mo fence=true>)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mrow><mo fence=true>(</mo><mo stretchy=false>(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=false>)</mo><mrow><mi>m</mi><mi>n</mi></mrow></msup><mi mathvariant=normal>∣</mi><mi>n</mi><mn>0</mn><mo stretchy=false>⟩</mo><mo>+</mo><mo stretchy=false>(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=false>)</mo><mrow><mi>m</mi><mo stretchy=false>(</mo><mn>1</mn><mo>⊕</mo><mi>n</mi><mo stretchy=false>)</mo></mrow></msup><mi mathvariant=normal>∣</mi><mo stretchy=false>(</mo><mn>1</mn><mo>⊕</mo><mi>n</mi><mo stretchy=false>)</mo><mn>1</mn><mo stretchy=false>⟩</mo><mo fence=true>)</mo></mrow></mrow><annotation encoding=application/x-tex>Z^m X^n \left(\frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)\right) = \frac{1}{\sqrt{2}} \left( (-1)^{mn}|n0\rangle + (-1)^{m(1\oplus n)}|(1\oplus n)1\rangle \right)</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.8em;vertical-align:-0.65em></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07153em>Z</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span><span class=mord><span class="mord mathnormal" style=margin-right:0.07847em>X</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class=mspace style=margin-right:0.1667em></span><span class=minner><span class="mopen delimcenter" style=top:0em><span class="delimsizing size2">(</span></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mopen>(</span><span class=mord>∣00</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span><span class=mord>∣11</span><span class=mclose>⟩)</span><span class="mclose delimcenter" style=top:0em><span class="delimsizing size2">)</span></span></span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.426em;vertical-align:-0.538em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8451em><span style=top:-2.551em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.9128em><span class=svg-align style=top:-3em><span class=pstrut style=height:3em></span><span class="mord mtight" style=padding-left:0.833em><span class="mord mtight">2</span></span></span><span style=top:-2.8728em><span class=pstrut style=height:3em></span><span class="hide-tail mtight" style=min-width:0.853em;height:1.08em><svg xmlns=http://www.w3.org/2000/svg width=400em height=1.08em viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.1272em><span></span></span></span></span></span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.538em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class=mspace style=margin-right:0.1667em></span><span class=minner><span class="mopen delimcenter" style=top:0em><span class="delimsizing size1">(</span></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>1</span><span class=mclose><span class=mclose>)</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">mn</span></span></span></span></span></span></span></span></span><span class=mord>∣</span><span class="mord mathnormal">n</span><span class=mord>0</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>+</span><span class=mspace style=margin-right:0.2222em></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>1</span><span class=mclose><span class=mclose>)</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.888em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">⊕</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class=mord>∣</span><span class=mopen>(</span><span class=mord>1</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span><span class="mord mathnormal">n</span><span class=mclose>)</span><span class=mord>1</span><span class=mclose>⟩</span><span class="mclose delimcenter" style=top:0em><span class="delimsizing size1">)</span></span></span></span></span></span></p>
+<ul>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi mathvariant=normal>∣</mi><mi>n</mi><mn>0</mn><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>|n0\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣</span><span class="mord mathnormal">n</span><span class=mord>0</span><span class=mclose>⟩</span></span></span></span>: first qubit is <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>n</mi></mrow><annotation encoding=application/x-tex>n</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span></span></span></span>, <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mo stretchy=false>(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=false>)</mo><mrow><mi>m</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=application/x-tex>(-1)^{mn}</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>1</span><span class=mclose><span class=mclose>)</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.6644em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">mn</span></span></span></span></span></span></span></span></span></span></span></span> is the phase factor</li>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi mathvariant=normal>∣</mi><mo stretchy=false>(</mo><mn>1</mn><mo>⊕</mo><mi>n</mi><mo stretchy=false>)</mo><mn>1</mn><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>|(1\oplus n)1\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣</span><span class=mopen>(</span><span class=mord>1</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class="mord mathnormal">n</span><span class=mclose>)</span><span class=mord>1</span><span class=mclose>⟩</span></span></span></span>: first qubit is <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mn>1</mn><mo>⊕</mo><mi>n</mi></mrow><annotation encoding=application/x-tex>1\oplus n</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.7278em;vertical-align:-0.0833em></span><span class=mord>1</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:0.4306em></span><span class="mord mathnormal">n</span></span></span></span>, <span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mo stretchy=false>(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=false>)</mo><mrow><mi>m</mi><mo stretchy=false>(</mo><mn>1</mn><mo>⊕</mo><mi>n</mi><mo stretchy=false>)</mo></mrow></msup></mrow><annotation encoding=application/x-tex>(-1)^{m(1\oplus n)}</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1.138em;vertical-align:-0.25em></span><span class=mopen>(</span><span class=mord>−</span><span class=mord>1</span><span class=mclose><span class=mclose>)</span><span class=msupsub><span class=vlist-t><span class=vlist-r><span class=vlist style=height:0.888em><span style=top:-3.063em;margin-right:0.05em><span class=pstrut style=height:2.7em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">⊕</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span> is the phase factor</li>
+<li class="">Bob's decoding operation is the inverse of the entanglement operation<!-- -->
+<ul>
+<li class=""><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>C</mi><mi>N</mi><mi>O</mi><mi>T</mi><mi mathvariant=normal>∣</mi><mi>a</mi><mo stretchy=false>⟩</mo><mi mathvariant=normal>∣</mi><mi>b</mi><mo stretchy=false>⟩</mo><mo>=</mo><mi mathvariant=normal>∣</mi><mi>a</mi><mo stretchy=false>⟩</mo><mi mathvariant=normal>∣</mi><mi>a</mi><mo>⊕</mo><mi>b</mi><mo stretchy=false>⟩</mo></mrow><annotation encoding=application/x-tex>CNOT |a\rangle |b\rangle = |a\rangle |a \oplus b\rangle</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class="mord mathnormal" style=margin-right:0.13889em>CNOT</span><span class=mord>∣</span><span class="mord mathnormal">a</span><span class=mclose>⟩</span><span class=mord>∣</span><span class="mord mathnormal">b</span><span class=mclose>⟩</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class=mord>∣</span><span class="mord mathnormal">a</span><span class=mclose>⟩</span><span class=mord>∣</span><span class="mord mathnormal">a</span><span class=mspace style=margin-right:0.2222em></span><span class=mbin>⊕</span><span class=mspace style=margin-right:0.2222em></span></span><span class=base><span class=strut style=height:1em;vertical-align:-0.25em></span><span class="mord mathnormal">b</span><span class=mclose>⟩</span></span></span></span></li>
+</ul>
+</li>
+</ul>
+<span class=katex-error title="ParseError: KaTeX parse error: Can't use function '$' in math mode at position 81: …gle )| n\rangle$̲$
+- which is se…" style=color:#cc0000>  = \frac{(-1)^{mn}}{\sqrt{2}} (|n\rangle + (-1)^m|1 \oplus n\rangle )| n\rangle$$
+- which is seperable state.
+- First qubit is $|n\rangle + (-1)^m|1 \oplus n\rangle$ and second qubit is $|n\rangle$.
+- $n, m \in \{0, 1\}$, then apply Hadamard to the first qubit:
+
+$$H \frac{1}{\sqrt{2}} (|n\rangle + (-1)^m|1 \oplus n\rangle) \\ = (-1)^{mn}|m\rangle$$
+
+- second qubit is $n\rangle$, so the final state is:
+
+$$(-1)^{mn}(-1)^{nm}|m\rangle|n\rangle = |mn\rangle$$
+
+### Superdense QASM
+
+```qasm
+OPENQASM 2.0;
+qreg q[2];
+creg c[2];
+
+// Prepare Bell pair
+h q[0];
+cx q[0],q[1];
+
+// Alice's encoding
+// For message 11: apply X and Z
+x q[0];
+z q[0];
+
+// Alice sends q[0] to Bob (in simulation, we just proceed)
+
+// Bob's decoding
+cx q[0],q[1];
+h q[0];
+
+// Measure both qubits
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+```
+
+## QASM Programming
+
+### Custom Gates
+
+```qasm
+// params: parameters for the gate (e.g., rotation angles)
+// q_args: quantum arguments (qubits the gate acts on)
+gate NAME(parameters) q_args {
+  // Define gate operations
+}
+
+gate bell a,b {
+  h a;
+  cx a,b;
+}
+
+qreg q[2];
+creg c[2];
+
+// Use the custom bell gate
+bell q[0], q[1];
+
+// Measure the qubits
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+```
+
+### Toffoli Gate
+
+```qasm
+// Toffoli gate (CCX)
+gate ccx a, b, c {
+  h c;
+  cx b, c;
+  tdg c;
+  cx a, c;
+  t c;
+  cx b, c;
+  tdg c;
+  cx a, c;
+  t b;
+  t c;
+  cx a, b;
+  h c;
+  t a;
+  tdg b;
+  cx a, b;
+}
+```
+
+### Rotation Gates
+
+```qasm
+// Rotation around Y-axis
+gate ry_deg(theta) q {
+  ry(theta/180 * pi) q;
+}
+
+// Rotation around X-axis
+gate rx_deg(theta) q {
+  rx(theta/180 * pi) q;
+}
+```
+
+## Qiskit
+
+> IBM
+
+```python
+import qiskit
+
+superdense = qiskit.QuantumCircuit(2, 2)
+superdense.draw()
+
+superdense.h(0)
+superdense.cx(0, 1)
+superdense.draw()
+```
+
+![superdense qiskit](./superdense-qiskit.png)
+
+```python
+# Alice's encoding for message '11'
+superdense.x(0)
+superdense.z(0)
+superdense.draw()
+```
+
+![superdense qiskit 11](./superdense-qiskit-11.png)
+
+```python
+# Bob unentangles the two qubits (reverses the entangling gate)
+superdense.cx(0,1)
+superdense.h(0)
+
+# The measurement pattern is `measure(qubit to measure, classical bit to store result)`
+superdense.measure(0,0)
+superdense.measure(1,1)
+superdense.draw()
+```
+
+![superdense qiskit measure](./superdense-qiskit-measure.png)
+
+```python
+from qiskit.providers.basic_provider import BasicSimulator
+
+sim = BasicSimulator()
+# run the circuit on the simulator with 1 shot (execute the circuit once)
+result = sim.run(superdense, shots=1).result().get_counts()
+
+print(result)
+# {'11': 1}
+```
+
+### Custom Gates in Qiskit
+
+```python
+bell = qiskit.QuantumCircuit(2, name='bell')
+bell.h(0)
+bell.cx(0, 1)
+bell_gate = bell.to_gate()
+
+c = qiskit.QuantumCircuit(2)
+c.append(bell_gate, [0, 1])
+c.draw()
+```
+
+### Decompose a custom gate
+
+```python
+ccxgate = qiskit.circuit.library.CCXGate()
+ccx = qiskit.QuantumCircuit(3)
+ccx.append(ccxgate, [0, 1, 2])
+
+print(ccx)
+print(ccx.decompose())
+```
+
+![ccx](./ccx.png)
+
+## Cirq
+
+> Google
+
+```python
+import cirq
+
+alice = cirq.NamedQubit('Alice')
+bob = cirq.NamedQubit('Bob')
+
+superdense = cirq.Circuit()
+superdense.append([
+  cirq.H(alice),
+  cirq.CNOT(alice, bob),
+])
+
+superdense.append([
+  cirq.X(alice),
+  cirq.Z(alice),
+])
+
+superdense.append([
+  cirq.CNOT(alice, bob),
+  cirq.H(alice),
+])
+
+superdense.append(cirq.measure(alice, bob, key='received'))
+
+print(superdense)
+```
+
+```python
+simulator = cirq.Simulator()
+result = simulator.run(superdense, repetitions=1)
+print(result)
+# received=1, 1
+```
+
+## Pennylane
+
+> Xanadu
+
+```python
+import pennylane as qml
+
+def entangle():
+    qml.Hadamard(wires=0)
+    qml.CNOT(wires=[0, 1])
+
+print(qml.draw(entangle)())
+
+device = qml.device("default.qubit", wires=[0, 1])
+
+# Wrap the quantum function as a QNode
+entangle_qnode = qml.QNode(my_circuit, device)
+
+# Set the number of shots to 10
+entangle_qnode = qml.set_shots(entangle_qnode, shots=10)
+```
+
+```python
+import numpy as np
+
+state = np.array([1, 1j], dtype=complex)
+
+state = state / np.linalg.norm(state)
+```
+
+```python
+def teleport(state):
+    # Ensure "state" is loaded into the first qubit
+    # (otherwise qubits would start in |0>)
+    qml.StatePrep(state, wires=0)
+
+    # Shared entanglement between qubits 1 and 2
+    qml.Hadamard(wires=1)
+    qml.CNOT(wires=[1, 2])
+
+    # Alice's operation:
+    # CNOT from Alice's input qubit to her half of the Bell pair,
+    # then Hadamard on the input qubit
+    qml.CNOT(wires=[0, 1])
+    qml.Hadamard(wires=0)
+
+    # Measurement (store the classical outcomes)
+    m0 = qml.measure(0)
+    m1 = qml.measure(1)
+
+    # Bob's conditional correction operations
+    qml.cond(m1, qml.PauliX)(wires=2)
+    qml.cond(m0, qml.PauliZ)(wires=2)
+
+    # Return Bob's qubit as a density matrix
+    return qml.density_matrix(wires=2)
+
+print(qml.draw(teleport)(state))
+```
+
+## Quantum Teleportation
+
+![Quantum Teleportation](https://imgs.xkcd.com/comics/quantum_teleportation.png)
+
+| - | Superdense Coding | Teleportation |
+| --- | --- | --- |
+| **Consumes** | Entanglement | Entanglement |
+| **Sends** | 1 qubit | 2 bits |
+| **Transmits** | 2 bits | 1 qubit |
+
+- if there is entanglement:
+  - we can use it to send 2 bits of classical information by sending 1 qubit (superdense coding)
+  - we can use it to send 1 qubit of quantum information by sending 2 bits of classical information (teleportation)
+- Alice wants to send a qubit $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ to Bob, but only has a classical channel.
+
+### Protocol
+
+1. Alice and Bob share $|\Phi^+\rangle$ (pre-shared entanglement)
+2. Alice applies $CNOT$ (her qubit `->` her Bell half), then $H$, then measures both, obtaining 2 classical bits (00, 01, 10, or 11)
+3. Alice sends $mn$ classically to Bob
+4. Bob applies $X^n Z^m$ to his qubit, recovering $|\psi\rangle$
+  - For **00**: Apply Identity $I$ (do nothing)
+  - For **01**: Apply Pauli-X $X$ (bit flip)
+  - For **10**: Apply Pauli-Z $Z$ (phase flip)
+  - For **11**: Apply $XZ$ (bit and phase flip)
+  - Bob now has a qubit in the state Alice wanted to send $|\psi\rangle$ without Alice ever sending a qubit directly to Bob.
+
+### Teleportation Circuit
+
+![Teleportation Circuit](./teleportation.png)
+
+$$|\psi\rangle \otimes |\Phi^+\rangle = \left(\alpha |0\rangle + \beta |1\rangle\right) \otimes \frac{1}{\sqrt{2}} \left(|00\rangle + |11\rangle\right)$$
+
+$$|\psi\rangle \otimes |\Phi^+\rangle = \frac{1}{\sqrt{2}} \left(\alpha |0\rangle |00\rangle + \alpha |0\rangle |11\rangle + \beta |1\rangle |00\rangle + \beta |1\rangle |11\rangle\right)$$
+- Alice applies a $CNOT$ gate with her qubit $|\psi\rangle$ as control and her half of the Bell pair $|\Phi^+\rangle$ as target.
+  - $\beta |1\rangle |00\rangle$ becomes $\beta |1\rangle |10\rangle$ (target flips when control is 1)
+  - $\beta |1\rangle |11\rangle$ becomes $\beta |1\rangle |01\rangle$ (target flips when control is 1)
+
+$$\frac{1}{\sqrt{2}} \Big(\alpha |0\rangle |00\rangle + \alpha |0\rangle |11\rangle + \beta |1\rangle |10\rangle + \beta |1\rangle |01\rangle\Big)$$
+- Alice then applies a Hadamard gate to her qubit ($|\psi\rangle$).
+  - $H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}$
+  - $H|1\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}$
+- To prepare for measurement, Bell measurement is performed on Alice's two qubits, which can be expressed as:
+
+$$ \frac{1}{\sqrt{2}} \left[\alpha \left(\frac{|0\rangle + |1\rangle}{\sqrt{2}}\right) \otimes |00\rangle + \alpha \left(\frac{|0\rangle + |1\rangle}{\sqrt{2}}\right) \otimes |11\rangle + \beta \left(\frac{|0\rangle - |1\rangle}{\sqrt{2}}\right) \otimes |10\rangle + \beta \left(\frac{|0\rangle - |1\rangle}{\sqrt{2}}\right) \otimes |01\rangle \right] \\ = \frac{1}{2} \Big[ |00\rangle (\alpha |0\rangle + \beta |1\rangle) + |01\rangle (\alpha |1\rangle + \beta |0\rangle) + |10\rangle (\alpha |0\rangle - \beta |1\rangle) + |11\rangle (\alpha |1\rangle - \beta |0\rangle) \Big]$$
+- Alice measures her two qubits, resulting in one of four possible outcomes corresponding to the classical bits $|mn\rangle$ where $m, n \in \{0, 1\}$
+  - Alice's two qubits: $|00\rangle, |0 1\rangle, |1 0\rangle, |1 1\rangle$
+  - Bob's qubit is in a state that depends on Alice's measurement outcome
+
+$$X^n Z^m |\psi\rangle$$
+
+| mn | Bob's state | Bob applies |
+| --- | --- | --- |
+| 00 | $\alpha \|0\rangle + \beta \|1\rangle$ | $\mathbb{I}$ |
+| 01 | $\alpha \|1\rangle + \beta \|0\rangle$ | $X$ |
+| 10 | $\alpha \|0\rangle - \beta \|1\rangle$ | $Z$ |
+| 11 | $\alpha \|1\rangle - \beta \|0\rangle$ | $XZ$ |
+
+## Channels
+
+- **Classical Channel**: carries bits (fibre, radio, paper, ...)
+- **Quantum Channel**: carries qubits (can also carry bits)
+  - Quantum channels can emulate classical ones, but not vice versa
+- **Teleportation**: `classical channel + pre-shared entanglement -> effective quantum channel`
+
+## Summary
+
+- In superdense coding, by sending only one qubit and using pre-shared entanglement, Alice can transmit two classical bits of information.
+- The operation $X^n \lvert a \rangle = \lvert a \oplus (n \bmod 2) \rangle$ correctly defines the effect of applying the $X$ gate $n$ times.
+- The tensor product of two identity operators is the identity operator on the composite space. In symbols, where the subscript is the dimension: $I_2 \otimes I_2 = I_4$.
+- The state $\lvert \phi \rangle = \frac{1}{\sqrt{2}}(\lvert 0 \rangle + \lvert 1 \rangle)$ is an eigenstate of the Pauli-$X$ gate with eigenvalue $+1$.
+- In the teleportation protocol, the classical communication channel is used to transmit two classical bits from Alice to Bob.
+- Three qubits are required for quantum teleportation.
+- After the teleportation protocol completes, Bob has a qubit in the state $\lvert \psi \rangle$.
+- Of QASM, Qiskit, Cirq, and PennyLane, PennyLane is the only quantum language that spells out the full name of the Hadamard gate for its built-in gates.</span></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>태그:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/iqc/>iqc</a></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="블로그 게시물 탐색"><a class="pagination-nav__link pagination-nav__link--next" href=/2026/03/09/tim-004/><div class=pagination-nav__sublabel>다음 게시물</div><div class=pagination-nav__label>TIM 004</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#superdense-coding class="table-of-contents__link toc-highlight">Superdense Coding</a><ul><li><a href=#superdense-coding-circuit class="table-of-contents__link toc-highlight">Superdense Coding Circuit</a></ul></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Support Me</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.buymeacoffee.com/LOUB2kN target=_blank rel="noopener noreferrer" style="cursor: pointer;">
+                <img src=https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png style="height: auto !important;width: auto !important;">
+              </a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Feeds</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://gracefullight.dev/rss.xml target=_blank rel="noopener noreferrer" class=footer__link-item>RSS<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gracefullight.dev/atom.xml target=_blank rel="noopener noreferrer" class=footer__link-item>Atom<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2016-2026 Eunkwang Shin.</div></div></div></footer></div></body>
