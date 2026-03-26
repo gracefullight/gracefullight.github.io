@@ -85,7 +85,7 @@ tags:
 | Cut out ~ | To completely stop one's consumption of ~ | completely stop consumption of ~ | ~를 완전히 끊다 |
 | get something to go | to order food or drinks to take away from a restaurant | order food to take away | 음식을 포장해 가다 |
 
-## 날씨 
+## 날씨
 
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
@@ -155,7 +155,7 @@ tags:
 | Sign up for ~ | To register for ~ | register for ~ | ~ 과목을 듣기 위해 수강신청하다 |
 | Do over ~ / Do ~ over | To redo ~ | redo ~ | ~를 다시 하다 |
 | Study up on ~ | To do some research on ~ | | do research on ~ | ~에 대해 조사하다 / 공부하다 |
-| Turn up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 | 
+| Turn up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 |
 | Show up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 |
 | Drop out of ~ | To leave school or college without graduating | leave school without graduating | (학교, 대학을) 중퇴하다 |
 | Go through ~ | To examine or search ~ carefully | examine or search carefully | ~를 자세히 조사하다 |
@@ -169,7 +169,7 @@ tags:
 | --- | --- | --- | --- |
 | Tear up | To start crying | start crying | 눈물이 고이다, 울기 시작하다 |
 | Choke up | To feel a very strong emotion to the point that one is unable to speak | feel a strong emotion that makes it hard to speak | (감정이 복받쳐) 목이 메다 |
-| Wear down ~ / Wear ~ down | To make ~ feel tired | make ~ feel tired | ~를 지치게 하다, 피곤하게 하다 | 
+| Wear down ~ / Wear ~ down | To make ~ feel tired | make ~ feel tired | ~를 지치게 하다, 피곤하게 하다 |
 | Calm down / Calm ~ down | To become calm (for emotional situations) | become calm | (감정이) 진정되다 / ~를 진정시키다 |
 | Blow up at ~ | To lose one's temper and explode | lose one's temper and explode | ~에게 화가 나서 폭발하다 |
 | out of nowhere | Suddenly and unexpectedly | suddenly and unexpectedly | 갑자기, 느닷없이 |
@@ -227,7 +227,17 @@ tags:
 | in the red | Losing money or in debt | Losing money | 적자 상태인 |
 | in the black | Making a profit or not in debt | Making money | 흑자 |
 | in the pink | In very good health | Very healthy | 매우 건강한 |
-
+| Move in with ~ | To start living in the same home with ~ | Live together with ~ | ~와 동거를 시작하다 |
+| Split up (with ~) | To end a relationship (with ~) | End a relationship (with ~) | ~와 헤어지다 |
+| Pick up ~ / Pick ~ up | To start a romantic relationship with ~ | Start dating ~ | ~를 꼬시다 |
+| Hit on ~ | To flirt with ~ | Flirt with ~ | ~를 꼬시다 |
+| Make up (with ~) | To be reconceiled (with ~) | Reconcile (with ~) | ~와 화해하다 |
+| Wear down ~ / Wear ~ down | To tire ~ | Tire ~ out | ~를 피곤하게 하다 |
+| Get over ~ | To recover from a difficult and bad experience / To stop being bothered by ~ | Recover from ~ | ~를 극복하다, 불행을 잊다, 이별한 연인을 잊다 |
+| Be hung up on ~ | To be extremely interested in ~ and constantly thinking about ~ | Be obsessed with ~ | ~에 집착하다, 매달리다 |
+| Ask ~ out | To invite ~ out on a date | Invite ~ on a date | ~에게 데이트 신청하다 |
+| Open up (to ~) | To talk more about oneself or one's feelings comfortably | Share one's feelings (to ~) | 마음을 열고 편하게 대하다 |
+| Hang out | To spend time relaxing or socializing | Spend time together | 시간을 함께 보내다 |
 
 ## ETC
 
