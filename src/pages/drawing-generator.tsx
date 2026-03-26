@@ -1,8 +1,4 @@
-import type {
-  ChangeEvent,
-  MouseEvent as ReactMouseEvent,
-  PointerEvent as ReactPointerEvent,
-} from "react";
+import type { ChangeEvent, PointerEvent as ReactPointerEvent } from "react";
 
 import {
   addMetadataChunks,
@@ -91,27 +87,11 @@ export default function DrawingGeneratorPage() {
 
   const tryFastPathIfFewColors = useMemoizedFn(
     (
-      ctx: CanvasRenderingContext2D,
-      imageData: ImageData,
+      _ctx: CanvasRenderingContext2D,
+      _imageData: ImageData,
       colorMap: Map<string, number>,
     ): boolean => {
-      if (colorMap.size > 4) return false;
-
-      const { data } = imageData;
-      const uniqueColors = Array.from(colorMap.keys()).map((key) => {
-        const [r, g, b] = key.split(",").map(Number);
-        return { b, g, r };
-      });
-
-      const first = uniqueColors[0];
-      for (let i = 0; i < data.length; i += 4) {
-        data[i] = first.r;
-        data[i + 1] = first.g;
-        data[i + 2] = first.b;
-      }
-
-      ctx.putImageData(imageData, 0, 0);
-      return true;
+      return colorMap.size <= 4;
     },
   );
 
@@ -422,24 +402,6 @@ export default function DrawingGeneratorPage() {
     }, "image/png");
   });
 
-  const onCropMouseDown = useMemoizedFn((e: ReactMouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    if (!displaySize) return;
-    if (!imgNaturalSize) return;
-    if (!previewWrapRef.current) return;
-
-    const rect = previewWrapRef.current.getBoundingClientRect();
-    const startX = e.clientX - rect.left;
-    const startY = e.clientY - rect.top;
-    const offset = {
-      x: startX - cropPosRef.current.x,
-      y: startY - cropPosRef.current.y,
-    };
-    dragOffsetRef.current = offset;
-    isDraggingRef.current = true;
-    setIsDragging(true);
-  });
-
   const onCropPointerDown = useMemoizedFn(
     (e: ReactPointerEvent<HTMLElement>) => {
       e.preventDefault();
@@ -460,48 +422,7 @@ export default function DrawingGeneratorPage() {
     },
   );
 
-  // Drag handling via ahooks
-  useEventListener("mousemove", (me: MouseEvent) => {
-    if (!isDraggingRef.current) return;
-    if (!displaySize) return;
-    if (!imgNaturalSize) return;
-    if (!previewWrapRef.current) return;
-
-    const rect = previewWrapRef.current.getBoundingClientRect();
-    const scale = displaySize.w / imgNaturalSize.w;
-    const cropW = TARGET_WIDTH * scale;
-    const cropH = TARGET_HEIGHT * scale;
-    const nx = me.clientX - rect.left - dragOffsetRef.current.x;
-    const ny = me.clientY - rect.top - dragOffsetRef.current.y;
-    const clampedX = Math.min(
-      Math.max(0, nx),
-      Math.max(0, displaySize.w - cropW),
-    );
-    const clampedY = Math.min(
-      Math.max(0, ny),
-      Math.max(0, displaySize.h - cropH),
-    );
-    if (
-      clampedX !== cropPosRef.current.x ||
-      clampedY !== cropPosRef.current.y
-    ) {
-      const newPos = { x: clampedX, y: clampedY };
-      cropPosRef.current = newPos;
-      setCropPos(newPos);
-    }
-  });
-
-  useEventListener("mouseup", () => {
-    if (!isDraggingRef.current) return;
-    isDraggingRef.current = false;
-    setIsDragging(false);
-    // 드래그 종료 시 자동으로 미리보기 처리
-    if (needsCrop && loadedImageRef.current) {
-      processSelection();
-    }
-  });
-
-  // Pointer events for broader device support (touch/pen)
+  // Pointer events for drag handling (covers mouse, touch, pen)
   useEventListener("pointermove", (pe: PointerEvent) => {
     if (!isDraggingRef.current) return;
     if (!displaySize) return;
@@ -542,13 +463,12 @@ export default function DrawingGeneratorPage() {
     }
   });
 
-  // Re-process if user changes selectedColor after processing
-  // biome-ignore lint/correctness/useExhaustiveDependencies: re-process only by selectedColor
+  // Re-process if user changes color settings after processing
+  // biome-ignore lint/correctness/useExhaustiveDependencies: re-process only by color settings
   useEffect(() => {
     if (!isProcessed) return;
-    // Re-run processing with the same selection
     processSelection();
-  }, [selectedColor]);
+  }, [selectedColor, colorWeight, isUseColorWeight]);
 
   return (
     <Layout>
@@ -817,7 +737,6 @@ export default function DrawingGeneratorPage() {
                       >
                         {/* Crop window */}
                         <button
-                          onMouseDown={onCropMouseDown}
                           onPointerDown={onCropPointerDown}
                           style={{
                             all: "unset",
