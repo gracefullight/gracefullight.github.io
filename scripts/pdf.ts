@@ -1,10 +1,11 @@
+import type { Command as CommandType } from "commander";
 import type { Root } from "mdast";
 
 import { randomUUID } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
-import { Command } from "clipanion";
 import { mkdir, readdir, readFile, rm, writeFile } from "fs-extra";
 import pLimit from "p-limit";
+import pc from "picocolors";
 import { chromium } from "playwright";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
@@ -72,48 +73,180 @@ function getMimeType(filePath: string): string {
   }
 }
 
-export class PdfCommand extends Command {
-  static readonly paths = [["pdf"]];
+/**
+ * 단일 Markdown 파일을 HTML로 변환
+ */
+async function convertMarkdownToHtml(
+  folderPath: string,
+  mdFile: string,
+): Promise<string> {
+  const filePath = resolve(folderPath, mdFile);
+  const markdownContent = await readFile(filePath, "utf8");
 
-  async execute() {
-    const baseDir = resolve(__dirname, "..", "blog", "pe");
-    this.context.stdout.write(`Processing Markdown files in ${baseDir}\n`);
+  // Frontmatter 데이터 저장용 변수
+  let frontmatter: Record<string, unknown> = {};
 
-    try {
-      // dist 폴더 및 하위 폴더 생성
-      await mkdir(DIST_DIR, { recursive: true });
-      await mkdir(TEMP_DIR, { recursive: true });
-      await mkdir(PDF_DIR, { recursive: true });
+  // 머메이드 코드 추출
+  const mermaidMatches = Array.from(
+    markdownContent.matchAll(/```mermaid\s*([\s\S]*?)\s*```/g),
+  );
 
-      // blog/pe/* 폴더 목록 가져오기
-      const folders = await readdir(baseDir, { withFileTypes: true });
-      const folderNames = folders
-        .filter((dirent) => dirent.isDirectory())
-        .map((dirent) => dirent.name);
+  // 플레이스홀더와 SVG 매핑을 위한 Map
+  const placeholderMap = new Map<string, string>();
 
-      for (const folderName of folderNames) {
-        const folderPath = resolve(baseDir, folderName);
+  // 머메이드 코드를 임시 플레이스홀더로 대체
+  let processedMarkdown = markdownContent;
+  for (const [_, code] of mermaidMatches) {
+    const trimmedCode = code.trim();
+    const placeholder = `[[MERMAID_PLACEHOLDER_${randomUUID()}]]`;
+    placeholderMap.set(placeholder, trimmedCode);
+    processedMarkdown = processedMarkdown.replace(
+      `\`\`\`mermaid\n${trimmedCode}\n\`\`\``,
+      placeholder,
+    );
+  }
 
-        // Markdown 파일 목록 가져오기
-        const files = await readdir(folderPath);
-        const mdFiles = files.filter((file) => file.endsWith(".md"));
+  // Remark를 사용하여 Markdown을 HTML로 변환
+  const result = await unified()
+    .use(remarkParse)
+    .use(remarkFrontmatter, ["yaml"])
+    .use(() => (tree: Root) => {
+      const frontmatterNode = tree.children.find(
+        (node) => node.type === "yaml",
+      );
+      if (frontmatterNode) {
+        frontmatter = parseYaml(frontmatterNode.value);
+        tree.children = tree.children.filter((node) => node.type !== "yaml");
+      }
+    })
+    .use(remarkGfm)
+    .use(remarkMath)
+    .use(remarkRehype)
+    .use(rehypeKatex)
+    .use(rehypeStringify)
+    .process(processedMarkdown);
 
-        if (mdFiles.length === 0) {
-          this.context.stdout.write(
-            `No Markdown files found in ${folderPath}\n`,
+  // Title 설정
+  const title = frontmatter?.title || "Untitled";
+  const html = String(result);
+
+  // HTML 내부의 이미지 경로를 Base64로 변환
+  const processedHtml = await processImagesInHtml(html, dirname(filePath));
+
+  // 플레이스홀더를 SVG로 치환
+  let finalHtml = processedHtml;
+  for (const [placeholder, code] of placeholderMap.entries()) {
+    const svg = await renderMermaidToSvg(code);
+    finalHtml = finalHtml.replace(
+      placeholder,
+      `<div class="centered-content">${svg}</div>`,
+    );
+  }
+
+  // 각 Markdown 파일의 내용을 새 페이지로 분리
+  return `<div class="markdown-page"><h1>${title}</h1>\n${finalHtml}</div>`;
+}
+
+/**
+ * HTML 내부의 이미지 경로를 Base64로 변환
+ */
+async function processImagesInHtml(
+  html: string,
+  basePath: string,
+): Promise<string> {
+  const matches = Array.from(html.matchAll(/<img[^>]+src="([^">]+)"/g));
+  const replacements = await Promise.all(
+    matches.map(async ([_, src]) => {
+      const imagePath = resolve(basePath, src);
+      try {
+        const base64 = await imageToBase64(imagePath);
+        return [`src="${src}"`, `src="${base64}"`];
+      } catch (error) {
+        if (error instanceof Error)
+          console.warn(`Failed to load image: ${imagePath}`, error.message);
+        return [`src="${src}"`, `src="[Image not found]"`];
+      }
+    }),
+  );
+
+  let processedHtml = html;
+  for (const [original, replacement] of replacements) {
+    processedHtml = processedHtml.replace(
+      original,
+      `class="centered-content" ${replacement}`,
+    );
+  }
+  return processedHtml;
+}
+
+/**
+ * HTML을 PDF로 변환 (Playwright 사용)
+ */
+async function convertHtmlToPdf(
+  htmlContent: string,
+  outputPath: string,
+): Promise<void> {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+
+  await page.setContent(htmlContent, { waitUntil: "networkidle" });
+
+  await page.pdf({
+    footerTemplate: "pageNumber",
+    format: "A4",
+    margin: {
+      bottom: "5mm",
+      left: "5mm",
+      right: "5mm",
+      top: "5mm",
+    },
+    path: outputPath,
+    printBackground: true,
+  });
+
+  await browser.close();
+}
+
+export function registerPdfCommand(program: CommandType) {
+  program
+    .command("pdf")
+    .description("Convert PE markdown files to PDF")
+    .action(async () => {
+      const baseDir = resolve(__dirname, "..", "blog", "pe");
+      process.stdout.write(
+        pc.cyan(`Processing Markdown files in ${baseDir}\n`),
+      );
+
+      try {
+        await mkdir(DIST_DIR, { recursive: true });
+        await mkdir(TEMP_DIR, { recursive: true });
+        await mkdir(PDF_DIR, { recursive: true });
+
+        const folders = await readdir(baseDir, { withFileTypes: true });
+        const folderNames = folders
+          .filter((dirent) => dirent.isDirectory())
+          .map((dirent) => dirent.name);
+
+        for (const folderName of folderNames) {
+          const folderPath = resolve(baseDir, folderName);
+
+          const files = await readdir(folderPath);
+          const mdFiles = files.filter((file) => file.endsWith(".md"));
+
+          if (mdFiles.length === 0) {
+            process.stdout.write(
+              pc.yellow(`No Markdown files found in ${folderPath}\n`),
+            );
+            continue;
+          }
+
+          const htmlPages = await Promise.all(
+            mdFiles.map((mdFile) =>
+              limit(() => convertMarkdownToHtml(folderPath, mdFile)),
+            ),
           );
-          continue;
-        }
 
-        // Markdown 파일들을 병렬로 처리하여 HTML로 변환
-        const htmlPages = await Promise.all(
-          mdFiles.map((mdFile) =>
-            limit(() => this.convertMarkdownToHtml(folderPath, mdFile)),
-          ),
-        );
-
-        // 모든 HTML 페이지를 하나로 합치기
-        const combinedHtml = `
+          const combinedHtml = `
           <!DOCTYPE html>
             <html lang="en">
             <head>
@@ -185,163 +318,19 @@ export class PdfCommand extends Command {
             </html>
         `;
 
-        // PDF 파일 경로 설정
-        const pdfOutputPath = join(PDF_DIR, `pe-${folderName}.pdf`);
-        await this.convertHtmlToPdf(combinedHtml, pdfOutputPath);
+          const pdfOutputPath = join(PDF_DIR, `pe-${folderName}.pdf`);
+          await convertHtmlToPdf(combinedHtml, pdfOutputPath);
 
-        this.context.stdout.write(`Generated PDF: ${pdfOutputPath}\n`);
-      }
-    } catch (error) {
-      if (error instanceof Error) {
-        this.context.stderr.write(`Error: ${error.message}\n`);
-      }
-    } finally {
-      // dist/temp 폴더 삭제
-      await rm(TEMP_DIR, { force: true, recursive: true }).catch(() => {
-        // Ignore errors during temp directory removal
-      });
-    }
-  }
-
-  /**
-   * 단일 Markdown 파일을 HTML로 변환
-   */
-  private async convertMarkdownToHtml(
-    folderPath: string,
-    mdFile: string,
-  ): Promise<string> {
-    const filePath = resolve(folderPath, mdFile);
-    const markdownContent = await readFile(filePath, "utf8");
-
-    // Frontmatter 데이터 저장용 변수
-    let frontmatter: Record<string, unknown> = {};
-
-    // 머메이드 코드 추출
-    const mermaidMatches = Array.from(
-      markdownContent.matchAll(/```mermaid\s*([\s\S]*?)\s*```/g),
-    );
-
-    // 플레이스홀더와 SVG 매핑을 위한 Map
-    const placeholderMap = new Map<string, string>();
-
-    // 머메이드 코드를 임시 플레이스홀더로 대체
-    let processedMarkdown = markdownContent;
-    for (const [_, code] of mermaidMatches) {
-      const trimmedCode = code.trim();
-      const placeholder = `[[MERMAID_PLACEHOLDER_${randomUUID()}]]`;
-      placeholderMap.set(placeholder, trimmedCode); // 플레이스홀더와 코드 매핑
-      processedMarkdown = processedMarkdown.replace(
-        `\`\`\`mermaid\n${trimmedCode}\n\`\`\``,
-        placeholder,
-      );
-    }
-
-    // Remark를 사용하여 Markdown을 HTML로 변환
-    const result = await unified()
-      .use(remarkParse) // Markdown 파싱
-      .use(remarkFrontmatter, ["yaml"]) // Frontmatter 파싱
-      .use(() => (tree: Root) => {
-        const frontmatterNode = tree.children.find(
-          (node) => node.type === "yaml",
-        );
-        if (frontmatterNode) {
-          frontmatter = parseYaml(frontmatterNode.value);
-          tree.children = tree.children.filter((node) => node.type !== "yaml");
+          process.stdout.write(pc.green(`Generated PDF: ${pdfOutputPath}\n`));
         }
-      })
-      .use(remarkGfm) // GFM 표 지원
-      .use(remarkMath)
-      .use(remarkRehype)
-      .use(rehypeKatex)
-      .use(rehypeStringify)
-      .process(processedMarkdown);
-
-    // Title 설정
-    const title = frontmatter?.title || "Untitled"; // title 필드가 없으면 기본값 사용
-    const html = String(result);
-
-    // HTML 내부의 이미지 경로를 Base64로 변환
-    const processedHtml = await this.processImagesInHtml(
-      html,
-      dirname(filePath),
-    );
-
-    // 플레이스홀더를 SVG로 치환
-    let finalHtml = processedHtml;
-    for (const [placeholder, code] of placeholderMap.entries()) {
-      const svg = await renderMermaidToSvg(code);
-      finalHtml = finalHtml.replace(
-        placeholder,
-        `<div class="centered-content">${svg}</div>`,
-      );
-    }
-
-    // 각 Markdown 파일의 내용을 새 페이지로 분리
-    return `<div class="markdown-page"><h1>${title}</h1>\n${finalHtml}</div>`;
-  }
-
-  /**
-   * HTML 내부의 이미지 경로를 Base64로 변환
-   */
-  private async processImagesInHtml(
-    html: string,
-    basePath: string,
-  ): Promise<string> {
-    // HTML 내부의 <img> 태그를 찾아 src 속성을 추출
-    const matches = Array.from(html.matchAll(/<img[^>]+src="([^">]+)"/g));
-    const replacements = await Promise.all(
-      matches.map(async ([_, src]) => {
-        const imagePath = resolve(basePath, src);
-        try {
-          const base64 = await imageToBase64(imagePath);
-          return [`src="${src}"`, `src="${base64}"`];
-        } catch (error) {
-          if (error instanceof Error)
-            console.warn(`Failed to load image: ${imagePath}`, error.message);
-          return [`src="${src}"`, `src="[Image not found]"`];
+      } catch (error) {
+        if (error instanceof Error) {
+          process.stderr.write(pc.red(`Error: ${error.message}\n`));
         }
-      }),
-    );
-
-    // HTML 내부의 이미지 태그를 Base64로 치환
-    let processedHtml = html;
-    for (const [original, replacement] of replacements) {
-      // 이미지 태그에 클래스 추가
-      processedHtml = processedHtml.replace(
-        original,
-        `class="centered-content" ${replacement}`,
-      );
-    }
-    return processedHtml;
-  }
-
-  /**
-   * HTML을 PDF로 변환 (Playwright 사용)
-   */
-  private async convertHtmlToPdf(
-    htmlContent: string,
-    outputPath: string,
-  ): Promise<void> {
-    const browser = await chromium.launch();
-    const page = await browser.newPage();
-
-    // HTML 내용 로드
-    await page.setContent(htmlContent, { waitUntil: "networkidle" });
-
-    // PDF로 저장 (여백 추가)
-    await page.pdf({
-      footerTemplate: "pageNumber",
-      format: "A4",
-      margin: {
-        bottom: "5mm", // 상단 여백
-        left: "5mm", // 하단 여백
-        right: "5mm", // 좌측 여백
-        top: "5mm", // 우측 여백
-      },
-      path: outputPath,
-      printBackground: true,
+      } finally {
+        await rm(TEMP_DIR, { force: true, recursive: true }).catch(() => {
+          // Ignore errors during temp directory removal
+        });
+      }
     });
-
-    await browser.close();
-  }
 }

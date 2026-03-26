@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.9/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -38,7 +38,9 @@
       "!**/dist",
       "!**/node_modules",
       "!**/bun.lock",
-      "!**/*.log"
+      "!**/*.log",
+      "!blog/**/*.md",
+      "!blog/**/*.mdx"
     ]
   },
   "formatter": {
