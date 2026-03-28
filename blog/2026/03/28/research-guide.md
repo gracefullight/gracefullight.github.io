@@ -21,7 +21,7 @@ tags:
 
 ### Master leading to PhD
 
-- [UTS: feature research studnets](https://www.uts.edu.au/research/graduate/future-research-students/types-research-degrees)
+- [UTS: feature research students](https://www.uts.edu.au/research/graduate/future-research-students/types-research-degrees)
 
 ## 논문
 
