@@ -16,7 +16,7 @@ const config: Config = {
   deploymentBranch: "gh-pages",
   favicon: "img/favicon.ico",
   future: {
-    experimental_faster: true,
+    faster: true,
     v4: true,
   },
 

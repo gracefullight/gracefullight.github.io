@@ -344,14 +344,15 @@ date: 2018-02-18 14:13:34
 
 ## Distributed Systems
 
-<!-- How to test a distributed system?
+{/*
+How to test a distributed system?
 In which case would you apply asynchronously communication between two systems?
 What are the general pitfalls of Remote Procecure Call?
 If you are building a distributed system for scalability and robustness, what are the different things you'd think of in the case you are working in a closed and secure network environment or in geographically distributed and public system?
 How to manage Fault Tolerance in a Web application? And in a Desktop one?
 How to deal with failures in Distributed Systems?
 Let's talk about the several approaches to Reconciliation after network partitions
--->
+*/}
 
 ### What are the Fallacies of Distributed Computing?
 
@@ -501,10 +502,11 @@ LB => Front  => LB => Back => DB => Replication DB
 - Gitlab 13.8 의 보안 체크
 - 방화벽
 
-<!-- Why is it said that cryptography is not something you should try to invent or design yourself?
+{/*
+Why is it said that cryptography is not something you should try to invent or design yourself?
 What is two factor authentication? How would you implement it in an existing web application?
 If not carefully handled, there is always a risk of logs containing sensitive information, such as passwords. How would you deal with this?
--->
+*/}
 
 ### What do you know about Cross-Site Scripting?
 
@@ -528,7 +530,8 @@ If not carefully handled, there is always a risk of logs containing sensitive in
 
 ## General
 
-<!-- Why does Functional Programming matter? When should a functional programming language be used?
+{/*
+Why does Functional Programming matter? When should a functional programming language be used?
 How do companies like Microsoft, Google, Opera and Mozilla profit from their browsers?
 Why does opening a TCP socket have a large overhead?
 What is Encapsulation important for?
@@ -538,7 +541,7 @@ Immutability is the practice of setting values once, at the moment of their crea
 What are the pros and cons of mutable and immutable values.
 What's the Object-Relational impedance mismatch?
 Which principles would you apply to define the size of a cache?
--->
+*/}
 
 ### What's the difference between TCP and HTTP
 
@@ -551,4 +554,4 @@ Which principles would you apply to define the size of a cache?
 - CSR은 CDN에
 - SSR은 Bot만이 들어올 수 있게.
 
-<!-- How could you develop a reliable communication protocol based on a non-reliable one -->
+{/*How could you develop a reliable communication protocol based on a non-reliable one*/}
