@@ -1,6 +1,6 @@
 ---
 title: 다중 에이전트 시스템
-date: "2026-05-25T21:10:00.000+09:00"
+date: 2026-05-25T21:10:00.000+09:00
 description: Multi-Agent System (MAS)
 authors: me
 tags:

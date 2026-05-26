@@ -1,6 +1,6 @@
 ---
 title: 맥케이브 순환복잡도(McCabe's Cyclomatic Complexity)
-date: "2026-05-25T21:10:00.000+09:00"
+date: 2026-05-25T21:10:00.000+09:00
 description: McCabe's Cyclomatic Complexity 정적 복잡도 지표 정리
 authors: me
 tags:
