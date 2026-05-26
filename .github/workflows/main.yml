@@ -8,6 +8,7 @@ on:
       - "package.json"
       - "bun.lock"
       - "bun.lockb"
+  workflow_dispatch:
 
 permissions:
   contents: write
