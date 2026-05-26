@@ -64,7 +64,7 @@ outputs:
 1. **PREPARE**: Collect inputs and check if an existing file already exists at the target path.
 2. **ACQUIRE**: Aggressively research authoritative and PRIMARY sources (IETF RFCs, IEEE/ISO standards, NIST/KISA guides, the National Law database, official org announcements, arXiv papers) via web search — cross-check multiple sources and follow through to the primary source rather than stopping at the first sign of uncertainty. The objective is to FIND and cite the real fact by any legitimate means; a placeholder is only a documented last resort after an exhaustive search genuinely fails.
 3. **REASON**: Select the matching blueprint outline (1교시형 vs 2교시형) and apply genre modifiers defined in `resources/pe-topic-template.md`.
-4. **ACT**: Generate or update the markdown file, ensuring quoted dates with a `+09:00` offset, the required `tags` block (`pe` + `pe/<category>`), and double-quoted Mermaid node labels.
+4. **ACT**: Generate or update the markdown file, ensuring UNquoted dates (bare YAML timestamp) with a `+09:00` offset, the required `tags` block (`pe` + `pe/<category>`), and double-quoted Mermaid node labels.
 5. **AUDIT**: Execute the rigorous 8-point self-audit checklist below, then a strict **Markdown Syntax Integrity Check** (table pipes balanced, Mermaid delimiters matched, `==highlight==` closed in pairs):
    1. **Grounding** — every standard number, RFC/arXiv ID, law article, statistic, and named spec is resolved by actively researching authoritative/primary sources and is backed by a real citation. The `[수동 확인 필요 - 검증 필요]` placeholder is a last resort ONLY after an exhaustive multi-source search genuinely fails — never a shortcut to skip research.
    2. **Citation/Reference** — a `## 참조` section listing those sources is present whenever any such external fact is stated; no cited fact is left without its source link.
@@ -72,7 +72,7 @@ outputs:
    4. **Volatile-Claim Safety** — for changing facts (governance/ownership such as "X is under the Linux Foundation", "latest version", release dates), actively verify the CURRENT state against primary sources (official announcements, the org's own site) and cite it. Never assert unsourced, and never default to a placeholder when the fact is findable.
    5. **Headings** — starts with `## [Topic] 개념`, descriptive H3 only (no `가./나./다.`, no Roman numerals).
    6. **Tables & Volume** — row caps, word count, and Mermaid node count match the `exam_type`; 3-column header pattern intact.
-   7. **Build Safety** — quoted `date` with `+09:00`, `tags` block (`pe` + `pe/<category>`), all Mermaid node labels double-quoted.
+   7. **Build Safety** — UNquoted `date` (bare YAML timestamp) with `+09:00`, `tags` block (`pe` + `pe/<category>`), all Mermaid node labels double-quoted. (A quoted date string breaks Docusaurus `/archive` SSG — `date` resolves to null.)
    8. **Style** — no emojis, no `"끝"` marker, no body `---` horizontal rules.
 6. **VERIFY**: Run final syntax structure, layout, and word count validation checks. If any check fails, enter recovery logic.
 7. **FINALIZE**: Report the generated/updated file path, summary of the topic, and the audit validation evidence.
@@ -121,7 +121,7 @@ outputs:
 ### Canonical workflow path
 1. Identify the topic, category, genre, and exam type.
 2. Run `search_web` to retrieve the latest, verified technical specs, IEEE standard numbers, or KISA guidelines.
-3. Construct the Docusaurus-compliant YAML frontmatter: `title`, double-quoted `date` with a `+09:00` offset (any hour), `description`, `authors: me`, and `tags: [pe, pe/<category>]`.
+3. Construct the Docusaurus-compliant YAML frontmatter: `title`, UNquoted `date` as a bare YAML timestamp with a `+09:00` offset (any hour), `description`, `authors: me`, and `tags: [pe, pe/<category>]`.
 4. Compose the topic body utilizing standard H2 plain headings (no Roman numerals), starting with `## [Topic] 개념` (the corpus default; `개요` only when a multi-part overview is warranted), and using descriptive H3 titles (never `가./나./다.` enumeration).
 5. Generate the logical Mermaid diagrams (wrapping node labels in double quotes).
 6. Create the 3-column table grids utilizing the `| 구분 | 핵심요소 (or 내용) | 비고 (or 설명) |` header pattern.
