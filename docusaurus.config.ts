@@ -149,6 +149,7 @@ const config: Config = {
         counterId: 104_072_655,
       },
     ],
+    "@gracefullight/docusaurus-plugin-copy-markdown",
   ],
 
   presets: [

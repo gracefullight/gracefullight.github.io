@@ -106,7 +106,9 @@ export default function ImageToPdf() {
     }
 
     const pdfBytes = await pdfDoc.save();
-    const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
+    const pdfBlob = new Blob([pdfBytes.buffer as ArrayBuffer], {
+      type: "application/pdf",
+    });
     const url = URL.createObjectURL(pdfBlob);
     setPdfUrl(url);
   }
