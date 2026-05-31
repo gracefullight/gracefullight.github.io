@@ -95,7 +95,7 @@ tags:
 | Warm up | To become warm or hot | become warm | 따뜻해지다, 더워지다 |
 | Cool down | To become cool or cold | become cool | 시원해지다, 차가워지다 |
 | Be rained in/Be snowed in | To be forced to to stay indoors because of heavy rain or snow | forced to stay indoors due to weather | (폭우나 폭설 때문에) 실내에 머물러야 하다 |
-| Bundle up/Bundle ~ up | To dress warmly / To wear enough clothes to keep oneself warm | dress warmly | 옷을 따뜻하게 껴입다/~를 껴입히다|
+| Bundle up/Bundle ~ up | To dress warmly / To wear enough clothes to keep oneself warm | dress warmly | 옷을 따뜻하게 껴입다/~를 껴입히다 |
 | Pick up (wind and/or rain) | To increase in speed and force | increase in speed and force | (바람이나 비가) 세지다 |
 | Blow over | For a storm (or stormy emotions) to pass | pass (for a storm) | (폭풍우나 감정이) 지나가다/사그라들다 |
 | Calm down | TO become calm (for weather) | become calm | (날씨가) 진정되다/가라앉다 |
@@ -147,14 +147,14 @@ tags:
 | Read over ~ / Read ~ over | To read ~ thoroughly | read thoroughly | (책이나 문서를) 처음부터 끝까지 다 읽다 / (문장을) 다시 읽다 |
 | Hand out ~ / Hand ~ out | To distribute ~ | distribute ~ | ~를 나눠주다 / 배포하다 |
 | Take in ~ / Take ~ in | To understand what they read | understand what they read | (듣거나 읽은 것을) 이해하다 |
-| Go over ~ | To check ~ | To check something carefully | check carefully | ~를 검토하다 |
+| Go over ~ | To check ~ | To check something carefully | ~를 검토하다 |
 | Know ~ backwards and forwards | To understand ~ very well | understand very well | ~를 아주 잘 이해하다 |
 | Keep up with ~ | To make progress at the same speed as antoher person or other people | make progress at the same speed as another person | ~에 뒤지지 않다 |
 | Fall behind | To fail to keep up with others in the same class/course/school | fail to keep up with others | (반에서) 뒤처지다 |
 | Catch up with ~ | To do something fast enough in order to join someone who started first | do something fast enough to join someone | ~를 따라잡다 |
 | Sign up for ~ | To register for ~ | register for ~ | ~ 과목을 듣기 위해 수강신청하다 |
 | Do over ~ / Do ~ over | To redo ~ | redo ~ | ~를 다시 하다 |
-| Study up on ~ | To do some research on ~ | | do research on ~ | ~에 대해 조사하다 / 공부하다 |
+| Study up on ~ | To do some research on ~ | do research on ~ | ~에 대해 조사하다 / 공부하다 |
 | Turn up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 |
 | Show up | To appear / To come to class | appear / come to class | 나타나다 / 출석하다 |
 | Drop out of ~ | To leave school or college without graduating | leave school without graduating | (학교, 대학을) 중퇴하다 |
@@ -173,7 +173,7 @@ tags:
 | Calm down / Calm ~ down | To become calm (for emotional situations) | become calm | (감정이) 진정되다 / ~를 진정시키다 |
 | Blow up at ~ | To lose one's temper and explode | lose one's temper and explode | ~에게 화가 나서 폭발하다 |
 | out of nowhere | Suddenly and unexpectedly | suddenly and unexpectedly | 갑자기, 느닷없이 |
-| Vent out ~ | To let one's negative feelings out |  let negative feelings out | (분노, 스트레스, 좌절감 같은 부정적인 감정을) 배출하다, 터뜨리다 |
+| Vent out ~ | To let one's negative feelings out | let negative feelings out | (분노, 스트레스, 좌절감 같은 부정적인 감정을) 배출하다, 터뜨리다 |
 | Bottle up ~ / Bottle ~ up | To keep a feeling or emotion inside and not express it | keep a feeling inside and not express it | 감정을 속으로 삭이다 |
 | Cool off | To calm down / To become less angry | calm down / become less angry | 진정해지다, 차분해지다 |
 | Stir up ~ / Stir ~ up | To make someone feel an emotion | To make someone feel an emotion | (어떤 감정을) 불러일으키다 |
@@ -303,13 +303,39 @@ tags:
 | nauseous | Feeling like you are going to vomit | Feeling like vomiting | 메스꺼운 |
 | over-the-counter madicine | Medicine that can be bought without a prescription | Medicine without prescription | 일반의약품 |
 
+## 운전
+
+| Term/Expression | Definition | Simpler Paraphrase | Meaning |
+| --- | --- | --- | --- |
+| blinker | A device on a vehicle that indicates the direction of a turn | Turn signal on a vehicle | 방향 지시등 |
+| Buckle up | To fasten a seatbelt when getting in a car | Fasten your seatbelt | 안전벨트를 매다 |
+| Buckle up | To prepare oneself mentally for a difficult situation | Get ready for a challenge | 마음 단단히 먹고 준비하다 |
+| Back up | To go in reverse while driving | Move backward | 후진하다 |
+| Back up | To repeat something that is unclear | Repeat what was said | 다시 말하다 |
+| Back into ~ | To drive in reverse into ~ | Reverse into something | ~에 후진으로 들어가다 |
+| Pull (out) onto ~ | (When driving) To drive onto another roadway | Enter another road | 길에서 빠져나와 다른 길로 들어서다 |
+| Speed up | To go or drive faster | Increase speed | 더 빨리 가다 / 운전하다 |
+| Pull (out) into | To arrive at a particular place or drive a vehicle to a particular place | Arrive at a location | (어떤 특정 장소나 길로) 차를 몰고 들어가다 |
+| Fill up | To fill (tires with air) / To Fill (a car with gas) | Inflate tires / Add gas to a car | 타이어에 공기를 넣다 / 차에 기름을 넣다 |
+| Slow down (~) | To drive or go slower | Decrease speed | 더 천천히 운전하다 / 가다 |
+| Cut in | (When driving) To drive into a parrallel lane and get in front of another car | Move in front of another car | (운전할 때) 끼어들다 |
+| Pull over | To drive a vehicle to the side of the road | Move to the side of the road | 길가에 차를 세우다 |
+| Pull up | For a vehicle to come to a stop at its destination | Stop at a location | (차가) 목적지에 도착하여 멈추다 |
+| Pull out | For a vehicle to leave | Leave a location | (차가) 떠나다 / 출발하다 |
+| hit the road | to leave a place usually in a vehicle | to depart | 어떤 곳을 떠나다 |
+| a wild ride | an exciting or unpredictable experience | an adventurous experience | 신나고 예측 불가능한 경험 |
+| reorganization | the act of organizing a company, business, or system in a new way to make it operate more effectively | restructuring a company or system | 구조조정 |
+| be prepared to ~ | to be ready to do something | to be ready for something | ~할 준비가 되어 있다 |
+| the shoulder of the road | the area at the side of a road where vehicles can stop in an emergency | the side area of a road | 도로의 갓길 |
+| aggressive driving | driving in a way that is forceful or hostile, often involving speeding or risky maneuvers | forceful or risky driving | 난폭운전 |
+
 ## ETC
 
 ### 과거
 
 | Term/Expression | Definition | Simpler Paraphrase | Meaning |
 | --- | --- | --- | --- |
-| throwback | a person or thing that has the characteristics of an earlier time| a person or thing with characteristics of an earlier time | (과거의) 복고풍, 회귀 |
+| throwback | a person or thing that has the characteristics of an earlier time | a person or thing with characteristics of an earlier time | (과거의) 복고풍, 회귀 |
 | dwell on | to think, speak, or write a lot about a particular subject, especially one that has caused negativity | think, speak, or write a lot about a particular subject | ~에 대해 오래 생각하거나 이야기하다 |
 | upend | to turn something upside down; to greatly affect or upset something | turn upside down; greatly affect or upset | ~를 뒤집다; ~에 큰 영향을 주다 |
 | cusp | the point of transition from one state to another | point of transition | (상태의) 전환점 |
