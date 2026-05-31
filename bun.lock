@@ -17,7 +17,7 @@
         "@giscus/react": "^3.1.0",
         "@gracefullight/docusaurus-plugin-channelio": "^1.0.0",
         "@gracefullight/docusaurus-plugin-cloudflare-analytics": "^1.0.0",
-        "@gracefullight/docusaurus-plugin-copy-markdown": "0.2.0",
+        "@gracefullight/docusaurus-plugin-copy-markdown": "0.2.1",
         "@gracefullight/docusaurus-plugin-google-adsense": "^1.0.0",
         "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
         "@gracefullight/docusaurus-plugin-naver-analytics": "^1.0.0",
@@ -651,7 +651,7 @@
 
     "@gracefullight/docusaurus-plugin-cloudflare-analytics": ["@gracefullight/docusaurus-plugin-cloudflare-analytics@1.0.0", "", { "dependencies": { "@docusaurus/utils-validation": "^3" } }, "sha512-CqLIJd8Wuj5JiZe+bf9DAr8b1Q2yXWDWegVD7vcHynJpcX5etaGa79v80rqCId5KqKgzQMhLxOSXjF2LJe5lzQ=="],
 
-    "@gracefullight/docusaurus-plugin-copy-markdown": ["@gracefullight/docusaurus-plugin-copy-markdown@0.2.0", "", { "dependencies": { "@docusaurus/utils": "^3", "@docusaurus/utils-validation": "^3", "gray-matter": "^4.0.3" } }, "sha512-ORvU3OqAPJzlJ1QZsjf0hvelXdX6JuIU3SZ3wGKAPCs0cOeUDWPgfEDf9uFSEDrbhWLXsRDyIDsS72BII+nqng=="],
+    "@gracefullight/docusaurus-plugin-copy-markdown": ["@gracefullight/docusaurus-plugin-copy-markdown@0.2.1", "", { "dependencies": { "@docusaurus/utils": "^3", "@docusaurus/utils-validation": "^3", "gray-matter": "^4.0.3" } }, "sha512-ZDaOdAk9E943ThyZnTjquYlTV+YctchcA68cX6M9pWwiIvkqHzg1lJKN3xQ6MooYPimM+6k/mTRI20ox7HwazQ=="],
 
     "@gracefullight/docusaurus-plugin-google-adsense": ["@gracefullight/docusaurus-plugin-google-adsense@1.0.0", "", { "dependencies": { "@docusaurus/utils-validation": "^3" } }, "sha512-1NMe5dbiuKnnbU6Ve5RxP5gGqtqFrLrQ4u7CRwoK1ZhA4CpBROSiFNSV1Ab/qGlmJ5WdX3ZeadZKr5uXxFNdtg=="],
 
