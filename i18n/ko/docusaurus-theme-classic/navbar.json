@@ -1,26 +1,26 @@
 {
-  "title": {
-    "message": "gracefullight.dev",
-    "description": "The title in the navbar"
-  },
-  "logo.alt": {
-    "message": "gracefullight.dev blog logo",
-    "description": "The alt text of navbar logo"
+  "item.label.Archives": {
+    "description": "Navbar item with label Archives",
+    "message": "Archives"
   },
   "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+    "description": "Navbar item with label GitHub",
+    "message": "GitHub"
   },
   "item.label.LinkedIn": {
-    "message": "LinkedIn",
-    "description": "Navbar item with label LinkedIn"
-  },
-  "item.label.Archives": {
-    "message": "Archives",
-    "description": "Navbar item with label Archives"
+    "description": "Navbar item with label LinkedIn",
+    "message": "LinkedIn"
   },
   "item.label.Tags": {
-    "message": "Tags",
-    "description": "Navbar item with label Tags"
+    "description": "Navbar item with label Tags",
+    "message": "Tags"
+  },
+  "logo.alt": {
+    "description": "The alt text of navbar logo",
+    "message": "gracefullight.dev blog logo"
+  },
+  "title": {
+    "description": "The title in the navbar",
+    "message": "gracefullight.dev"
   }
 }
