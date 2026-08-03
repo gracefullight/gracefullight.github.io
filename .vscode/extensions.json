@@ -1,9 +1,0 @@
-{
-  "recommendations": [
-    "unifiedjs.vscode-mdx",
-    "yoavbls.pretty-ts-errors",
-    "aaron-bond.better-comments",
-    "wix.vscode-import-cost",
-    "usernamehw.errorlens"
-  ]
-}
