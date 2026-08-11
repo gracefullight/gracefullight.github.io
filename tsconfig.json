@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "noEmit": true,
+    "paths": {
+      "@site/*": ["./*"]
+    },
+    "skipLibCheck": true,
     "ignoreDeprecations": "6.0",
     "lib": ["DOM", "ESNext"],
     "strict": true,
@@ -11,6 +21,5 @@
       "@testing-library/jest-dom"
     ]
   },
-  "exclude": [".docusaurus", "build"],
-  "extends": "@docusaurus/tsconfig"
+  "exclude": [".docusaurus", "build"]
 }
