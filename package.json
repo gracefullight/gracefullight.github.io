@@ -18,7 +18,6 @@
     "@gracefullight/docusaurus-plugin-channelio": "^1.0.0",
     "@gracefullight/docusaurus-plugin-cloudflare-analytics": "^1.0.0",
     "@gracefullight/docusaurus-plugin-copy-markdown": "0.4.0",
-    "@gracefullight/docusaurus-plugin-google-adsense": "^1.0.0",
     "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
     "@gracefullight/docusaurus-plugin-naver-analytics": "^1.0.0",
     "@gracefullight/docusaurus-plugin-yandex-metrica": "^1.0.1",
