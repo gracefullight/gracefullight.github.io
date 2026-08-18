@@ -1,10 +1,10 @@
 ---
 title: IP 002
 date: 2026-08-12T08:57:43.972+10:00
-description: Image Processing 002
+description: Image Processing and Pattern Recognition 002
 authors: me
 tags:
-  - ip
+  - ippr
 ---
 
 ## Edge Detectors
@@ -30,7 +30,7 @@ tags:
 
 ### Dilation
 
-$$ A \oplus B = \{ c \in E^N | c = a + b, a \in A, b \in B \} $$
+$A \oplus B = \{ c \in E^N | c = a + b, a \in A, b \in B \}$
 
 ```text
 # A
@@ -85,7 +85,7 @@ $$ A \oplus B = \{ c \in E^N | c = a + b, a \in A, b \in B \} $$
 
 ### Erosion
 
-$ A \ominus B = \{ x \in E^N | x + b \in A, \forall b \in B \} $
+$A \ominus B = \{ x \in E^N | x + b \in A, \forall b \in B \}$
 
 - It reducs the image based on the structing element B.
 - Simple way of computing the erosion is to translate the initial image in the directions opposite of B 1s and AND the results.
@@ -93,11 +93,11 @@ $ A \ominus B = \{ x \in E^N | x + b \in A, \forall b \in B \} $
 
 ### Opening and Closing
 
-$$ A \circ B = (A \ominus B) \oplus B $$
+$A \circ B = (A \ominus B) \oplus B$
 
 - $A \circ K \neq A$
 
-$$ A \bullet B = (A \oplus B) \ominus B $$
+$A \bullet B = (A \oplus B) \ominus B$
 
 - $A \bullet K \neq A$
 

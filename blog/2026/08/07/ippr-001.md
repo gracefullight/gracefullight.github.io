@@ -1,10 +1,10 @@
 ---
-title: IP 001
+title: IPPR 001
 date: 2026-08-07T23:52:34.365+10:00
-description: Image Processing 001
+description: Image Processing and Pattern Recognition 001
 authors: me
 tags:
-  - ip
+  - ippr
 ---
 
 ## Image Processing Operations
@@ -19,7 +19,7 @@ $$b[m, n] = f(a[m, n])$$
 
 ### Local Operation
 
-$$ b[m, n] = f(a[m - 1, n - 1], a[m - 1, n], a[m - 1, n + 1], a[m, n - 1], a[m, n], a[m, n + 1], a[m + 1, n - 1], a[m + 1, n], a[m + 1, n + 1])$$
+$$b[m, n] = f(a[m - 1, n - 1], a[m - 1, n], a[m - 1, n + 1], a[m, n - 1], a[m, n], a[m, n + 1], a[m + 1, n - 1], a[m + 1, n], a[m + 1, n + 1])$$
 
 - It depends on the values of the pixel and its neighbors.
 - e.g. `current pixel + average of 8 neighbors`.
@@ -32,7 +32,7 @@ $$ b[m, n] = f(a[m - 1, n - 1], a[m - 1, n], a[m - 1, n + 1], a[m, n - 1], a[m, 
 
 ### Global Operation
 
-$$ b[m, n] = f(a[0, 0], a[0, 1], ..., a[M - 1, N - 1])$$
+$$b[m, n] = f(a[0, 0], a[0, 1], ..., a[M - 1, N - 1])$$
 
 - It depends on the values of all pixels in the image.
 - e.g. `current pixel + average of all pixels in the image`.
@@ -129,7 +129,7 @@ $$SNR = 10 \log_{10} \frac{P_{signal}}{P_{noise}}$$
 - Restore the true value of the pixels as much as possibole.
 - It may undesirably reduce image information.
 - Averaging the pixel with its neighbours will smooth the noise
- or other types of image filters can be applied to reduce noise.
+  or other types of image filters can be applied to reduce noise.
 
 ## Filters
 
@@ -141,7 +141,7 @@ $$SNR = 10 \log_{10} \frac{P_{signal}}{P_{noise}}$$
 
 ### Convolution
 
-$$ I(r, c) \otimes F = \sum_{i=1}^{2M + 1} \sum_{j=1}^{2M+1} I(r+i-(M+1), c + j-(M+1)) F(i, j) $$
+$$I(r, c) \otimes F = \sum_{i=1}^{2M + 1} \sum_{j=1}^{2M+1} I(r+i-(M+1), c + j-(M+1)) F(i, j)$$
 
 - Multiply the pixels of a neighborhood of $(r, c)$ by the corresponding coefficients of the filter $F$, and add them all together.
 
@@ -154,7 +154,7 @@ $$ I(r, c) \otimes F = \sum_{i=1}^{2M + 1} \sum_{j=1}^{2M+1} I(r+i-(M+1), c + j-
 
 ### Gaussian Filter
 
-$$ H_{ij} = \frac{1}{2\pi\sigma^2} e^{-\frac{i^2 + j^2}{2\sigma^2}} $$
+$$H_{ij} = \frac{1}{2\pi\sigma^2} e^{-\frac{i^2 + j^2}{2\sigma^2}}$$
 
 - yields a $2k+1 \times 2k+1$ kernel, where $k$ is the size of the filter and $\sigma$ is the standard deviation of the Gaussian distribution.
 - A smoothing filter that computes a weighted average of neighboring pixels, giving larger weights to pixels closer to the center.
