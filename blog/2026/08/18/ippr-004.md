@@ -198,6 +198,10 @@ Mesh
   - Light fields capture spatial and angular light information more densely.
   - Both can represent 3D structure without explicitly storing geometry.
 
+## Light Field Re-focusing
+
+- 1
+
 ## NeRFs
 
 > Neural Radiance Fields
