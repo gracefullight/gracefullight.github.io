@@ -68,7 +68,9 @@ flowchart TB
   - Neural Radiance Fields represent a scene as a continuous function mapping coordinates and viewing directions to density and color.
   - Holography represents 3D information through optical wave or phase fields.
 
-## Point Cloud
+## Classic 3D Representations
+
+### Point Cloud
 
 - The simplest form of a 3D model, a collection of 3D coordinates of each point plotted in 3D space.
   - Color
@@ -94,7 +96,7 @@ Point 2 = (1.31, 3.12, 2.79), red
 Point 3 = ...
 ```
 
-## Voxels
+### Voxels
 
 > Volumetric Pixel
 
@@ -118,7 +120,7 @@ Voxel[0,0,3] = empty
   - Hard to render
   - Lots of wasted space if most voxels are empty.
 
-## Octrees
+### Octrees
 
 - Divide space coarsely into 8 blocks.
   - If a block contains geometry and the desired resolution has not been reached, subdivide it into 8 sub-blocks.
@@ -138,7 +140,63 @@ Voxel[0,0,3] = empty
   - Random access is more expensive than in a regular voxel grid because reaching an element requires tree traversal.
   - Tree structure introduces additional memory and traversal overhead.
 
-## Meshs
+### Meshes
+
+- Represent surfaces using connected vertices, edges, and faces.
+- Pros:
+  - Compact representation of surfaces.
+  - Hardware-friendly, especially for GPU rendering.
+  - Strong ecosystem and broad support in graphics software and hardware.
+- Cons:
+  - Complex appearance may require additional textures, materials, or shaders.
+  - Sensitive to noise when reconstructed from captured 3D data.
+  - Requires explicit topology, which can be difficult to estimate from raw point clouds or scans.
+
+```
+Point Cloud
+●   ●      ●
+    ●
+→ 점만 있음
+
+Mesh
+●────●
+│   /│
+│  / │
+●────●
+→ 어떤 점이 연결되어 surface를 만드는지 알고 있음
+```
+
+### Limitations of Geometry Focused Representations
+
+- Geometry does not fully determine appearance.
+- Appearance also depends on lighting, material properties, and viewing direction.
+- Transparency, refraction, reflections, and view-dependent effects are difficult to represent using geometry alone.
+  - Transparency: 유리처럼 뒤가 비쳐 보이는 현상
+  - Refraction: 빛이 유리나 물을 통과하면서 방향이 꺾이는 현상
+  - Reflection: 금속, 유리 등에 주변 환경이 반사되는 현상
+  - View-dependency: 보는 방향에 따라 appearance가 달라지는 현상
+- Increasing demand for photorealistic rendering and novel-view synthesis exposes the limitations of geometry-only representations.
+
+## Light Fields and Multi-view Representations
+
+- **Parallax**
+  - Apparent shift of objects caused by a change in viewpoint.
+  - Nearby objects show a larger image shift than distant objects.
+  - The amount of parallax provides information about **depth**.
+- **Multi-view Representations**
+  - Capture the same scene from multiple viewpoints.
+  - Differences between views can be used to recover the **3D structure** of the scene.
+  - Moving through the views creates a sense of 3D structure.
+  - Intermediate views can be generated using **view interpolation**.
+- **Light Fields**
+  - Capture both the **position and direction** of incoming light.
+  - A microlens array separates light arriving from different directions.
+  - A light field can be reorganized into many slightly offset **sub-aperture views**.
+  - This is similar to capturing the scene from many nearby viewpoints.
+- **Key Idea**
+  - Multi-view uses multiple viewpoints to capture parallax.
+  - Light fields capture spatial and angular light information more densely.
+  - Both can represent 3D structure without explicitly storing geometry.
 
 ## NeRFs
 
