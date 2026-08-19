@@ -265,6 +265,29 @@ Laser → Beam splitter ─────→ Object beam
                    Interference pattern
 ```
 
+## Plenoptic Function
+
+$$L(x, y, z, \theta, \phi, \lambda, t)$$
+
+- Models the intensity of every light ray in space and time
+- $(x, y, z)$: Spatial position
+- $(\theta, \phi)$: Viewing direction
+- $\lambda$: Wavelength (color)
+- $t$: time
+
+![Plenoptic](./plenoptic_coordinate_wave.png)
+
+- For human vision, wavelength information can be integrated into RGB channels:
+  - $L_R(x, y, z, \theta, \phi,)$
+  - $L_G(x, y, z, \theta, \phi,)$
+  - $L_B(x, y, z, \theta, \phi,)$
+- If only a static image is needed, time can be fixed.
+- x, y, z specify the position of the light ray.
+- $\theta, \phi$ specify its direction.
+- The resulting function describes the RGB light traveling in a particular direction at a particular 3D position.
+- This reduces the representation to a 5D spatial-directional function for each RGB channel.
+  - space 3D + direction 2D + ~~wavelength 1D~~ (Compressed to RGB) + ~~time 1D~~ (Fixed)
+
 ## NeRFs
 
 > Neural Radiance Fields
