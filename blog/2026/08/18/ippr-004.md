@@ -197,10 +197,73 @@ Mesh
   - Multi-view uses multiple viewpoints to capture parallax.
   - Light fields capture spatial and angular light information more densely.
   - Both can represent 3D structure without explicitly storing geometry.
+- Pros
+  - Single-shot capture of multiple viewpoints or angular information (Light Field only).
+  - High visual fidelity, including view-dependent appearance.
+  - Supports computational re-focusing.
+  - Can be converted into other representations, such as depth maps, novel views, or 3D geometry.
+- Cons
+  - High data volume because many views or light-ray samples must be stored.
+  - Light Field capture may require specialized camera hardware.
+  - Direct Light Field viewing may require specialized display hardware.
+  - Spatial or angular resolution can be limited because sensor resolution is shared across multiple views.
 
-## Light Field Re-focusing
+### Light Field Re-focusing
 
-- 1
+- **Light Field Capture**
+  - Light field cameras capture light from multiple directions using a **microlens array**.
+  - A single capture contains many slightly different **sub-aperture views**.
+- **Re-focusing**
+  - Objects at different depths show different amounts of parallax across the views.
+  - The views can be shifted so that objects at a selected depth align with each other.
+  - Aligned objects become sharp when the views are combined.
+  - Objects at other depths remain misaligned and appear blurred.
+- **Virtual Lens**
+  - A virtual lens computationally reproduces the focusing behavior of a physical lens.
+  - This allows the focus position to be changed after the image has already been captured.
+- **Depth of Field**
+  - Depth of field is the range of depths that appear sharp.
+  - Light field data can also be used to computationally change the depth of field after capture.
+
+## Holography
+
+- Reflect light off an object and record its wavefront as an interference pattern using a reference beam.
+- Recording
+  - A laser is split into an object beam and a reference beam.
+  - The object beam reflects off the object and carries the object's wavefront information.
+  - A sensor can measure light intensity, but cannot directly measure phase.
+  - The reference beam is combined with the object beam so their phase difference becomes a recordable interference pattern.
+- Reconstruction
+  - A reconstruction beam is sent through the recorded interference pattern.
+  - The hologram reconstructs the original wavefront, making the object appear in 3D.
+- Holography does not directly encode the object's geometry.
+  - It encodes the structure of light reflected from the object.
+- Pros
+  - Physically accurate reconstruction of light rays.
+  - No explicit surface reconstruction required.
+  - Quick capture.
+- Cons
+  - High data volume.
+  - Requires a stable coherent light source, usually a laser.
+  - Difficult to capture colour and large scenes.
+  - Holographic display hardware is expensive and complex.
+  - Software reconstruction and post-processing are complex.
+- Application
+  - Digital Holographic Microscopy (DHM) can reconstruct 3D structures such as red blood cells.
+
+```
+                     Object
+                       ↓
+Laser → Beam splitter ─────→ Object beam
+          │                  ↓ 반사
+          │                  ↓
+          └────────────→ Reference beam
+                             ↓
+                    [ Recording plate ]
+                       두 빛이 만남
+                             ↓
+                   Interference pattern
+```
 
 ## NeRFs
 
