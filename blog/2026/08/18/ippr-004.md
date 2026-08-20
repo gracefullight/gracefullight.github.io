@@ -413,21 +413,92 @@ flowchart TB
 
 ### Gaussian Splatting
 
+| Aspect | Point Clouds | 3D Gaussian Splatting (3DGS) |
+| - | - | - |
+| **Spatial position** | Yes | Yes |
+| **Color** | RGB, if available | RGB |
+| **Opacity** | None | Yes |
+| **Scale** | None | Yes |
+| **Orientation** | None | Yes |
+| **Color directionality** | None | Yes; color can vary by viewing direction |
+
 - Instead of building objects using polygons, it represents everything using millions of tiny soft 3D shapes called **Gaussians**.
-- Less computational costs, more efficient.
-- Run in parallel using GPU rasterization.
+  - Represent scenes explicitly as a collection of Gaussian primitives, optimized directly for efficient and accurate rendering.
+- Initialization steps:
+  - Initialize point clouds
+  - Find central point of 3D Gaussians.
+  - A covariance matrix containing shape information is calculated.
+  - Added opacity to each 3D Gaussians.
 
 1. First, it builds a rough point cloud from images
 2. Then, replaces those points with these Gaussian blobs
 3. It will optimize them until it match original photos as closely as possible.
 
+```mermaid
+flowchart TB
+    I["Initial 3DGS Model"] --> M[("3DGS Model")]
+
+    subgraph TRAIN["Training Loop"]
+        direction LR
+        P["Input Camera Positions"] --> S["View Synthesis"]
+        M --> S
+        S --> SV["Synthesized View"]
+        O["Original View"] --> L["Loss"]
+        SV --> L
+        L --> U["Update Gaussian Parameters"]
+        U --> D["Densification"]
+        D --> M
+        U --> M
+    end
+
+    subgraph RENDER["Rendering / Novel View Synthesis"]
+        direction LR
+        V["Desired Viewpoint"] --> R1["Ray Direction Calculation"]
+        R1 --> R2["Ray Projection"]
+        M --> R2
+        R2 --> R3["Find / Intersect Relevant Gaussians"]
+        R3 --> R4["Blend Gaussians"]
+        R4 --> OUT["Rendered Novel View"]
+    end
 ```
-Gaussian primitive
-↓
-position
-scale
-orientation
-color
-opacity
-...
+
+- Pros:
+  - Realtime rendering at interactive frame rates.
+  - High-quality visual outputs with detailed textures.
+  - Efficient and compact representation compared to implicit methods.
+- Cons:
+  - View-dependent quality degradation: rendering quality varies significantly across different viewing angles, causing inconsistency in visual outputs.
+  - Sensitivity to initialization: final rendering quality heavily depends on initial placement of Gaussians, impacting optimization stability.
+  - Inefficient Gaussian distribution: Fixed-scale Gaussians may fail to adapt effectively across scenes with varying geometric complexity.
+
+| Aspect | NeRF | 3D Gaussian Splatting (3DGS) |
+| - | - | - |
+| **Representation** | Implicit MLP representation | Explicit set of Gaussian primitives |
+| **Rendering** | Ray sampling and volume integration | Rasterization and splatting |
+| **Training** | Optimize network weights | Directly optimize scene parameters |
+| **Sampling** | Dense sampling along each ray | No dense per-ray sampling |
+| **Rendering speed** | Slower | Fast / real-time rendering |
+
+## Applications of 3D Representations
+
+- Immersive Interaction and Communication
+  - Real-world scene integration in extended reality environments
+  - Telepresence and virtual communication
+    - Telehealth experiences for remote consultations
+  - Digital cinematography and VFX
+  - Retail and virtual try-on
+  - Immersive storytelling for news and events
+  - Computer graphics and gaming
+- Spatial Analysis and Operational Environments
+  - Simulation and navigation for autonomous systems
+  - AEC (Architecture, Engineering, and Construction)
+  - Industrial imaging
+  - GIS (Geographic Information Systems) Inspection and Mapping
+- Scientific Visualization and Digital Heritage
+  - Cultural heritage digitization
+  - Medical imaging
+  - Scientific modeling
+  - Fluid simulation
+
+```
 ```
