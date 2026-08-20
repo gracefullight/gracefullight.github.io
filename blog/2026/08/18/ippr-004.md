@@ -288,6 +288,8 @@ $$L(x, y, z, \theta, \phi, \lambda, t)$$
 - This reduces the representation to a 5D spatial-directional function for each RGB channel.
   - space 3D + direction 2D + ~~wavelength 1D~~ (Compressed to RGB) + ~~time 1D~~ (Fixed)
 
+![Plenoptic RGB](./plenoptic_rgb_direction_diagram.png)
+
 ### How Cameras Represent the Plenoptic Function
 
 > A camera image = **integration of rays** from the plenoptic function over all directions focused by a lens.
