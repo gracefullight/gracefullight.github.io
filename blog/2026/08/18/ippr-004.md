@@ -352,6 +352,8 @@ $$L(x, y, z, \theta, \phi, \lambda, t)$$
   - Geometry modelling → where the object is.
   - Radiance field modelling → what light is seen from each 3D position and direction.
 
+![NeRF MLP](./nerf-mlp.png)
+
 ## NeRFs
 
 > Neural Radiance Fields
