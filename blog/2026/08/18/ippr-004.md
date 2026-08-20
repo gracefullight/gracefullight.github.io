@@ -225,7 +225,7 @@ Mesh
   - Depth of field is the range of depths that appear sharp.
   - Light field data can also be used to computationally change the depth of field after capture.
 
-## Holography
+### Holography
 
 - Reflect light off an object and record its wavefront as an interference pattern using a reference beam.
 - Recording
@@ -287,6 +287,70 @@ $$L(x, y, z, \theta, \phi, \lambda, t)$$
 - The resulting function describes the RGB light traveling in a particular direction at a particular 3D position.
 - This reduces the representation to a 5D spatial-directional function for each RGB channel.
   - space 3D + direction 2D + ~~wavelength 1D~~ (Compressed to RGB) + ~~time 1D~~ (Fixed)
+
+### How Cameras Represent the Plenoptic Function
+
+> A camera image = **integration of rays** from the plenoptic function over all directions focused by a lens.
+
+- A camera samples the scene at discrete sensor pixels.
+- Multiple rays arriving at each pixel are integrated into a single pixel value.
+  - The lens and aperture control which range of rays reaches the pixel.
+- Directional information is therefore mostly lost after the rays are integrated.
+- Adjusting the lens can change the range of integrated rays, affecting focus and depth of field.
+
+### How Light Fields Represent the Plenoptic Function
+
+> A light field image = **discrete sampling of rays** from the plenoptic function over preset directions focused by a lens.
+
+- A light field also samples the scene at discrete sensor positions.
+- Instead of integrating different ray directions, it samples them separately.
+- A microlens array separates incoming rays according to their directions.
+  - Different directions are recorded by different sensor pixels/subpixels.
+- Camera arrays and lenslet arrays can collect similar multi-view/angular information.
+- More angular sampling provides more directional information, but increases data volume and reduces available spatial resolution.
+- Key difference
+  - Normal camera: multiple directions → integration → one pixel value.
+  - Light field: multiple directions → separate directional samples.
+
+![Light Field Cameras](./light-field-cameras.jpg)
+
+## Radiance Fields
+
+> 래디언스 필드
+
+| Representation | Spatial information | Direction information | Result |
+| - | - | - | - |
+| Traditional camera | x, y | Integrated / collapsed | 2D image |
+| Light field | x, y | θ, φ sampled separately | 4D image |
+| Radiance field | x, y, z | θ, φ modelled continuously | 5D function |
+
+- Traditional cameras
+  - Integrate multiple incoming ray directions into each pixel.
+  - Directional information is collapsed.
+  - Result: 2D image
+    - I(x, y)
+- Light field imaging
+  - Samples incoming rays separately over multiple directions.
+  - Preserves angular information.
+  - Result: 4D light field
+    - $L(x, y, \theta, \phi)$
+- Radiance field
+  - Describes light at each 3D position and viewing direction.
+  - $L(x, y, z, \theta, \phi)$ → RGB
+  - Conceptually extends light-field modelling from a camera plane into 3D space.
+- NeRF
+  - Learns the radiance field using a neural network.
+  - Input:
+    - $x, y, z, \theta, \phi$
+  - Output:
+    - RGB
+    - density $\sigma$
+- 3D Gaussian Splatting
+  - Uses explicit Gaussian primitives instead of an MLP.
+  - Adjusts position, scale, orientation, colour, opacity, etc. to represent the scene and its view-dependent appearance.
+- Conceptual shift
+  - Geometry modelling → where the object is.
+  - Radiance field modelling → what light is seen from each 3D position and direction.
 
 ## NeRFs
 
