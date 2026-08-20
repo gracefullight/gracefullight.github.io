@@ -356,13 +356,62 @@ $$L(x, y, z, \theta, \phi, \lambda, t)$$
 
 ![NeRF MLP](./nerf-mlp.png)
 
-## NeRFs
+## Modern 3D Representations
+
+### NeRFs
 
 > Neural Radiance Fields
 
+- Light field at any point in space stored in neural network weights.
+- Trained from posed images, produces photorealistic novel views.
+  - Each image has a known camera position and viewing direction.
+- Rendering
+  - Cast a camera ray through each image pixel.
+  - Sample multiple 3D points along the ray.
+  - Query the NeRF at each point to obtain color and density.
+  - Empty points have low density and contribute little.
+  - High-density points contribute more and can occlude points behind them.
+  - Integrate the weighted colors along the ray to produce one 2D pixel.
 - [NeRF Studio](https://docs.nerf.studio/)
 
-## Gaussian Splatting
+![NeRF Flow](./nerf-flows.png)
+
+```mermaid
+flowchart TB
+    subgraph PIPELINE["NeRF Training and Rendering"]
+        direction LR
+        A["Multi-view Images +<br/>Camera Poses"]
+        B["Ray Generation<br/>per pixel"]
+        C["Sample Points<br/>along each ray"]
+        D["Positional Encoding<br/>(x, y, z, direction)"]
+        E["MLP Network<br/>Density + Colour"]
+        F["Volume Rendering<br/>Alpha Compositing"]
+
+        A --> B --> C --> D --> E --> F
+    end
+
+    F --> R["Rendering<br/>Novel Viewpoints"]
+
+    F --> T["Training<br/>Compare rendered pixel vs ground truth<br/>Update weights"]
+    A --> T
+    T --> E
+```
+
+![NeRF Pipeline](./nerf-pipeline.png)
+
+- Pros:
+  - High photorealism/fidelity
+  - Continuous scene representation
+  - View-dependent effects
+  - Data-efficient capture
+  - Unified geometry and appearance encoding
+- Cons:
+  - High computational cost
+  - Slow training and rendering
+  - Poor scalability
+  - Entangled Geometry, appearance and rendering.
+
+### Gaussian Splatting
 
 - Instead of building objects using polygons, it represents everything using millions of tiny soft 3D shapes called **Gaussians**.
 - Less computational costs, more efficient.
