@@ -3,7 +3,7 @@ import { expect, test } from "vitest";
 import config from "../.remarkrc.mjs";
 
 async function format(markdown: string) {
-  const processor = remark().data("settings", config.settings);
+  const processor = remark().data("settings", config.settings as never);
 
   for (const plugin of config.plugins) {
     if (typeof plugin === "string") {
