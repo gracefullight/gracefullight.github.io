@@ -1,0 +1,22 @@
+{
+  "background_color": "#f9cb96",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "/img/android-chrome-192x192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "/img/android-chrome-512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "id": "gracefullight@1",
+  "name": "gracefullight.dev",
+  "orientation": "portrait-primary",
+  "short_name": "gracefullight.dev",
+  "start_url": "/?utm_source=pwa",
+  "theme_color": "#f28913"
+}
