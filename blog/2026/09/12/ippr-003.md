@@ -272,3 +272,15 @@ bof = [2, 1, 2]
 - MBH: Motion Boundary Histograms.
 - DTF: Dense Trajectory Features.
 - For classification, these descriptors can be computed either at detected points or over a regular grid.
+
+## Object Classification FLow
+
+![Object Classification Flow](./object-classification-flow.png)
+
+- Local descriptors: An image is represented by many local feature descriptors such as SIFT or HOG. The result is a set of descriptors, not a single vector.
+- Encoding: Since different images can produce different numbers of descriptors, the set of descriptors is converted into one fixed-length vector. Bag of Features, VLAD, and Fisher Vector are different encoding methods for this purpose.
+  - Bag of Features: Each descriptor is assigned to the nearest representative feature, and the number of descriptors assigned to each representative feature is counted.
+  - VLAD: Instead of only counting assignments, VLAD stores how each descriptor differs from its nearest representative feature.
+  - Fisher Vector: It represents how the descriptors differ from a learned feature distribution, capturing more detailed statistical information.
+- Classifier: The encoded fixed-length vector is given to a classifier, which outputs a class label such as car, person, or dog.
+- Main idea: SIFT describes many local regions, while BoF, VLAD, and Fisher Vector combine those local descriptions into one image-level vector for classification.
