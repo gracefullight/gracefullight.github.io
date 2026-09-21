@@ -42,7 +42,7 @@ tags:
 
 ## Bayes' Theorem
 
-$$ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} $$
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
 
 - $P(A|B)$: Posterior probability, the probability of event A given taht B has occurred.
 - $P(B|A)$: Likelihood, the probability of event B occurring given that A is true.
@@ -61,7 +61,7 @@ $$ P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)} $$
 - the conditional probability $P(effect|cause)$ quantifies the relationship in **the causal direction** from cause to effect.
 - but $P(cause|effect)$ is often what we really want to know, describing the relationship in **the diagnostic direction** from effect to cause.
   - In medical dignosis, the doctor knows $P(symptoms|disease)$ from medical studies, and want to derive a $P(disease|symptoms)$ for a particular patient.
-  - $$P(disease|symptoms) = \frac{P(symptoms|disease) \cdot P(disease)}{P(symptoms)}$$
+  - $P(disease|symptoms) = \frac{P(symptoms|disease) \cdot P(disease)}{P(symptoms)}$
 
 ### General Form of Bayes' Rule
 
@@ -124,7 +124,7 @@ graph TD
 $$P(B, E, A, J, M) = \prod_{i}^{5} P(X_i | \text{parents}(X_i)) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 
 $$
-\begin{align*}
+\begin{aligned}
 & P(M, J, A, E, B) = P(M | J, A, E, B) \cdot P(J, A, E, B) \\
 &  P(J | A, E, B) \cdot P(A, E, B) \\
 &  \quad P(A | E, B) \cdot P(E, B) \\
@@ -135,7 +135,7 @@ $$
 &  = P(M|A) \cdot P(J|A) \cdot P(A|E,B) \cdot P(E) \cdot P(B) \\
 &    \quad i.e.\space P(J|A,E,B) = P(J|A) \text{ (JohnCalls depends only on Alarm)} \\
 &    \quad i.e.\space P(M|J,A,E,B) = P(M|A) \text{ (MaryCalls depends only on Alarm)}
-\end{align*}
+\end{aligned}
 $$
 
 $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
@@ -183,7 +183,7 @@ $$ P(M, J, A, E, B) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(J|A) \cdot P(M|A)$$
 - Enumeration method can become intractable in large, multiple connected networks. `->` use approximate inference methods.
 
 For any Bayesian network with given nodes, $X = \{X_1, X_2, ..., X_n\}$, the joint probability distribution is given by:
-$$P(X) = P(X_1 \land X_2 \land \ldots \land X_n) = \prod_{i=1}^{n} P(X_i | \text{parents}(X_i))$$
+$P(X) = P(X_1 \land X_2 \land \ldots \land X_n) = \prod_{i=1}^{n} P(X_i | \text{parents}(X_i))$
 
 **Using the Bayesian network, we can compute the conditional probability.**
 
@@ -197,17 +197,17 @@ $$ P(B | event) = \alpha \sum_{e}\sum_{a} P(B, E, A, j, m)$$
 - $P(B, E, A, j, m) = P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(j|A) \cdot P(m|A)$
 
 $$
-\begin{align*}
+\begin{aligned}
 & P(B | event) = \alpha \sum_{e}\sum_{a} P(B, E, A, j, m) \\
 & = \alpha \sum_{e}\sum_{a} P(B) \cdot P(E) \cdot P(A|B,E) \cdot P(j|A) \cdot P(m|A) \\
 & = \alpha \cdot P(B) \sum_{e} P(E) \sum_{a} P(A|B,E) \cdot P(j|A) \cdot P(m|A)
-\end{align*}
+\end{aligned}
 $$
 
 **Berglary example calculation:**
 
 $$
-\begin{align*}
+\begin{aligned}
 & P(b | event) = \alpha P(b) \sum_{e} P(E) \sum_{a} P(A|b,E) \cdot P(j|A) \cdot P(m|A) \\
 & = \alpha P(b) \bigg[ P(e) \sum_{a} P(A|b,e) \cdot P(j|A) \cdot P(m|A) + P(\neg e) \sum_{a} P(A|b,\neg e) \cdot P(j|A) \cdot P(m|A) \bigg] \\
 & \quad \sum_{a} P(A,b,e) \cdot P(j|A) \cdot P(m|A) \\
@@ -216,5 +216,5 @@ $$
 & \quad = P(a,b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a,b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \\
 & = \alpha P(b) \bigg[ P(e) \big( P(a|b,e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \\
 & \quad \quad + P(\neg e) \big( P(a|b,\neg e) \cdot P(j|a) \cdot P(m|a) + P(\neg a|b,\neg e) \cdot P(j|\neg a) \cdot P(m|\neg a) \big) \bigg] \\
-\end{align*}
+\end{aligned}
 $$
