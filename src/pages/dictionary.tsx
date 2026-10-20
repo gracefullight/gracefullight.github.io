@@ -1,7 +1,9 @@
+import type { ChangeEvent, FormEvent, MouseEvent } from "react";
+
 import { Icon } from "@iconify/react";
 import { useDictionaryQuery } from "@site/src/hooks/use-dictionary-query";
 import Layout from "@theme/Layout";
-import { useLocalStorageState } from "ahooks";
+import { useLocalStorageState, useMemoizedFn } from "ahooks";
 import { useRef, useState } from "react";
 import { z } from "zod";
 
@@ -23,7 +25,7 @@ export default function DictionaryPage() {
   );
   const queryResult = useDictionaryQuery(lastSearch);
 
-  const search = (rawQuery: string) => {
+  const search = useMemoizedFn((rawQuery: string) => {
     const parseResult = searchInputSchema.safeParse(rawQuery);
     if (!parseResult.success) {
       const firstError = parseResult.error.issues[0];
@@ -39,10 +41,27 @@ export default function DictionaryPage() {
 
     setLastSearch(validQuery);
     setRecentSearches(updatedSearches);
-  };
+  });
+
+  const handleSubmit = useMemoizedFn((event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    search(term);
+  });
+
+  const handleTermChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setTerm(event.target.value);
+    },
+  );
+
+  const handleRecentSearchClick = useMemoizedFn(
+    (event: MouseEvent<HTMLButtonElement>) => {
+      search(event.currentTarget.value);
+    },
+  );
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const playAudio = (url: string) => {
+  const playAudio = useMemoizedFn((url: string) => {
     const src = url.startsWith("//") ? `https:${url}` : url;
     if (audioRef.current) {
       audioRef.current.pause();
@@ -52,7 +71,13 @@ export default function DictionaryPage() {
       audioRef.current = new Audio(src);
     }
     void audioRef.current.play();
-  };
+  });
+
+  const handleAudioClick = useMemoizedFn(
+    (event: MouseEvent<HTMLButtonElement>) => {
+      playAudio(event.currentTarget.value);
+    },
+  );
 
   const dictResult = queryResult.data;
   const loading = queryResult.isFetching;
@@ -63,17 +88,14 @@ export default function DictionaryPage() {
     <Layout>
       <div style={{ padding: "2.5rem" }}>
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            void search(term);
-          }}
+          onSubmit={handleSubmit}
           style={{ display: "flex", gap: "0.25rem", marginBottom: "0.5rem" }}
         >
           <input
             aria-label="영어 단어 검색"
             disabled={loading}
             minLength={2}
-            onChange={(e) => setTerm(e.target.value)}
+            onChange={handleTermChange}
             pattern="[A-Za-z\s-]*"
             placeholder="검색어를 입력하세요"
             style={{
@@ -106,14 +128,7 @@ export default function DictionaryPage() {
           {recentSearches?.map((term) => (
             <button
               key={term}
-              onClick={() => {
-                void search(term);
-              }}
-              onKeyDown={async (e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  await search(term);
-                }
-              }}
+              onClick={handleRecentSearchClick}
               style={{
                 background: "white",
                 border: "1px solid var(--ifm-color-primary-darker)",
@@ -126,6 +141,7 @@ export default function DictionaryPage() {
               }}
               tabIndex={0}
               type="button"
+              value={term}
             >
               {term}
             </button>
@@ -134,11 +150,11 @@ export default function DictionaryPage() {
 
         {/* 사전 검색 결과 영역 */}
         <div style={{ marginBottom: "2rem" }}>
-          {loading && (
+          {loading ? (
             <div style={{ color: "#888", marginBottom: "1rem" }}>
               검색 중...
             </div>
-          )}
+          ) : null}
           {dictResult && !queryResult.isError && (
             <div
               style={{
@@ -174,10 +190,10 @@ export default function DictionaryPage() {
                     }}
                   >
                     {p.text}
-                    {p.audio && (
+                    {p.audio ? (
                       <button
                         aria-label="발음 듣기"
-                        onClick={() => p.audio && playAudio(p.audio)}
+                        onClick={handleAudioClick}
                         style={{
                           background: "none",
                           border: "none",
@@ -186,6 +202,7 @@ export default function DictionaryPage() {
                           padding: 0,
                         }}
                         type="button"
+                        value={p.audio}
                       >
                         <Icon
                           color="var(--ifm-color-primary)"
@@ -194,11 +211,11 @@ export default function DictionaryPage() {
                           width={20}
                         />
                       </button>
-                    )}
+                    ) : null}
                   </span>
                 ))}
               </div>
-              {dictResult.origin && (
+              {dictResult.origin ? (
                 <div
                   style={{
                     color: "#888",
@@ -208,7 +225,7 @@ export default function DictionaryPage() {
                 >
                   {dictResult.origin}
                 </div>
-              )}
+              ) : null}
               {dictResult.meanings?.map((m, idx) => (
                 <div
                   key={m.partOfSpeech || `meaning-${idx}`}
@@ -240,26 +257,26 @@ export default function DictionaryPage() {
                       >
                         {d.definition}
                       </div>
-                      {d.example && (
+                      {d.example ? (
                         <div style={{ color: "#888", fontSize: "0.95rem" }}>
                           예시: {d.example}
                         </div>
-                      )}
+                      ) : null}
                     </div>
                   ))}
                 </div>
               ))}
             </div>
           )}
-          {showEmpty && (
+          {showEmpty ? (
             <output
               aria-live="polite"
               style={{ color: "#888", marginBottom: "1rem" }}
             >
               검색 결과가 없습니다.
             </output>
-          )}
-          {queryResult.isError && (
+          ) : null}
+          {queryResult.isError ? (
             <div
               role="alert"
               style={{
@@ -269,7 +286,7 @@ export default function DictionaryPage() {
             >
               {queryResult.error?.message ?? "검색 결과가 없습니다."}
             </div>
-          )}
+          ) : null}
         </div>
 
         {/* 기존 사전 사이트 새창 링크 영역 */}

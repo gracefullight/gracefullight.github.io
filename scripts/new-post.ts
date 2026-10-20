@@ -134,7 +134,12 @@ export function registerNewPostCommand(program: CommandType) {
         title: string | undefined,
         opts: { tags: string; pe: boolean; ielts: boolean },
       ) => {
-        if (!(opts.ielts || title)) {
+        if (opts.ielts) {
+          await handleIeltsMode(title);
+          return;
+        }
+
+        if (!title) {
           process.stderr.write(
             pc.red(
               "Error: 제목(title)은 필수입니다. --ielts 모드만 생략 가능합니다.\n",
@@ -143,12 +148,10 @@ export function registerNewPostCommand(program: CommandType) {
           process.exit(1);
         }
 
-        if (opts.ielts) {
-          await handleIeltsMode(title);
-        } else if (opts.pe) {
-          await handlePeMode(title!, opts.tags);
+        if (opts.pe) {
+          await handlePeMode(title, opts.tags);
         } else {
-          await handleDateMode(title!, opts.tags);
+          await handleDateMode(title, opts.tags);
         }
       },
     );

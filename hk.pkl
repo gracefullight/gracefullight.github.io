@@ -1,0 +1,37 @@
+amends "package://github.com/jdx/hk/releases/download/v2.7.0/hk@2.7.0#/Config.pkl"
+
+steps {
+  ["biome-format"] {
+    glob = "*.{js,jsx,mjs,cjs,ts,tsx,yml,json,html,md}"
+    check = "bun x --no-install biome format --no-errors-on-unmatched {{files}}"
+    fix = "bun x --no-install biome format --write --no-errors-on-unmatched {{files}}"
+  }
+  ["biome-lint"] {
+    glob = "*.{ts,tsx,js,mjs,mts}"
+    depends = "biome-format"
+    check = "bun x --no-install biome lint --no-errors-on-unmatched {{files}}"
+    fix = "bun x --no-install biome lint --write --unsafe --no-errors-on-unmatched {{files}}"
+  }
+}
+
+hooks {
+  ["prepare-commit-msg"] {
+    fix = true
+    steps {
+      ["devmoji"] {
+        fix = new Command {
+          argv = List("bun", "scripts/prepare-commit-msg.ts", "{{commit_msg_file}}")
+        }
+      }
+    }
+  }
+  ["commit-msg"] {
+    steps {
+      ["commitlint"] {
+        check = new Command {
+          argv = List("bun", "x", "--no-install", "commitlint", "--edit", "{{commit_msg_file}}")
+        }
+      }
+    }
+  }
+}

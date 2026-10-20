@@ -8,7 +8,8 @@
   - `components/`, `theme/`, `utils/`: Reusable UI and helpers (tests live next to code, e.g., `*.test.ts`).
 - `blog/`: Markdown blog posts with date-based folders.
 - `static/`: Public assets served at site root.
-- `config/`: Tooling configs (Vitest, commitlint, lint-staged).
+- `config/`: Test setup and Remark configuration.
+- `hk.pkl`: Git hooks for Biome, devmoji, and commitlint.
 - `.docusaurus/`, `build/` or `dist/`: Generated output. Do not edit.
 
 ## Build, Test, and Development Commands
@@ -38,12 +39,12 @@
 
 ## Commit & Pull Request Guidelines
 
-- Commits: Conventional Commits enforced by commitlint; devmoji assists (`.husky/prepare-commit-msg`). Example: `feat: add image-to-pdf page`.
-- Pre-commit: `lint-staged` runs Biome format/lint on changed files.
+- Commits: Conventional Commits enforced by commitlint; devmoji assists through `hk.pkl`. Example: `feat: add image-to-pdf page`.
+- Pre-commit: hk runs Biome format/lint on staged files and stages fixes while preserving unstaged changes.
 - PRs: Provide clear description, link issues, include screenshots for UI changes, and note any config changes.
 - Before opening PR: `bun run typecheck && bun run test && bun run format:check`.
 
 ## Environment & Tooling
 
-- Node `24`, bun `1`. Install deps with `bun i`.
+- Node `24`, bun `1`, hk `2.7.0` (managed by `mise.toml`). Run `mise install` and `mise run setup` to install dependencies and Git hooks.
 - Do not commit generated folders (`.docusaurus`, `build`, `dist`). Avoid secrets in config or content.

@@ -1,4 +1,7 @@
+import type { ChangeEvent, DragEvent } from "react";
+
 import Layout from "@theme/Layout";
+import { useMemoizedFn } from "ahooks";
 import { PDFDocument } from "pdf-lib";
 import { useRef, useState } from "react";
 
@@ -21,6 +24,20 @@ export default function ImageToPdf() {
   const [coverMode, setCoverMode] = useState(true);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleDragOver = useMemoizedFn((event: DragEvent) => {
+    event.preventDefault();
+  });
+
+  const handleSelectImages = useMemoizedFn(() => {
+    fileInputRef.current?.click();
+  });
+
+  const handleCoverModeChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setCoverMode(event.target.checked);
+    },
+  );
 
   function handleDrop(e: React.DragEvent) {
     e.preventDefault();
@@ -131,7 +148,7 @@ export default function ImageToPdf() {
     <Layout>
       {/* biome-ignore lint/a11y/noStaticElementInteractions: no fix */}
       <div
-        onDragOver={(e) => e.preventDefault()}
+        onDragOver={handleDragOver}
         onDrop={handleDrop}
         style={{
           border: "1px solid #ccc",
@@ -153,7 +170,7 @@ export default function ImageToPdf() {
           type="file"
         />
         <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
-          <button onClick={() => fileInputRef.current?.click()} type="button">
+          <button onClick={handleSelectImages} type="button">
             이미지 선택
           </button>
           <button onClick={handleReset} type="button">
@@ -191,7 +208,7 @@ export default function ImageToPdf() {
           <label>
             <input
               checked={coverMode}
-              onChange={(e) => setCoverMode(e.target.checked)}
+              onChange={handleCoverModeChange}
               style={{ marginRight: "0.5rem" }}
               type="checkbox"
             />
@@ -215,7 +232,7 @@ export default function ImageToPdf() {
         >
           PDF 만들기
         </button>
-        {pdfUrl && (
+        {pdfUrl ? (
           <div style={{ marginTop: "1.5rem" }}>
             <a
               download="output.pdf"
@@ -226,7 +243,7 @@ export default function ImageToPdf() {
               PDF 다운로드
             </a>
           </div>
-        )}
+        ) : null}
       </div>
     </Layout>
   );

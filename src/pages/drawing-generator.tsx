@@ -85,6 +85,42 @@ export default function DrawingGeneratorPage() {
 
   const formId = useId();
 
+  const handleAuthIdChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setAuthId(event.target.value);
+    },
+  );
+
+  const handleAuthorChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setAuthor(event.target.value);
+    },
+  );
+
+  const handleCustomNameChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setCustomName(event.target.value);
+    },
+  );
+
+  const handleUseColorWeightChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setIsUseColorWeight(event.target.checked);
+    },
+  );
+
+  const handleColorWeightChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setColorWeight(Number.parseFloat(event.target.value));
+    },
+  );
+
+  const handleSelectedColorChange = useMemoizedFn(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setSelectedColor(event.target.value);
+    },
+  );
+
   const tryFastPathIfFewColors = useMemoizedFn(
     (
       _ctx: CanvasRenderingContext2D,
@@ -526,7 +562,7 @@ export default function DrawingGeneratorPage() {
                   <label htmlFor={`${formId}-auth-id`}>고유아이디</label>
                   <input
                     id={`${formId}-auth-id`}
-                    onChange={(e) => setAuthId(e.target.value)}
+                    onChange={handleAuthIdChange}
                     placeholder="AuthID"
                     style={{
                       border: "1px solid var(--ifm-color-primary)",
@@ -548,7 +584,7 @@ export default function DrawingGeneratorPage() {
                   <label htmlFor={`${formId}-author`}>제작자</label>
                   <input
                     id={`${formId}-author`}
-                    onChange={(e) => setAuthor(e.target.value)}
+                    onChange={handleAuthorChange}
                     placeholder="Author"
                     style={{
                       border: "1px solid var(--ifm-color-primary)",
@@ -570,7 +606,7 @@ export default function DrawingGeneratorPage() {
                 <label htmlFor={`${formId}-custom-name`}>구분할 파일명</label>
                 <input
                   id={`${formId}-custom-name`}
-                  onChange={(e) => setCustomName(e.target.value)}
+                  onChange={handleCustomNameChange}
                   placeholder="Custom File Name"
                   style={{
                     border: "1px solid var(--ifm-color-primary)",
@@ -591,13 +627,13 @@ export default function DrawingGeneratorPage() {
                 <label>
                   <input
                     checked={isUseColorWeight}
-                    onChange={(e) => setIsUseColorWeight(e.target.checked)}
+                    onChange={handleUseColorWeightChange}
                     type="checkbox"
                   />
                   색상 가중치 사용하기
                 </label>
               </div>
-              {isUseColorWeight && (
+              {isUseColorWeight === true && (
                 <>
                   <div
                     style={{
@@ -613,9 +649,7 @@ export default function DrawingGeneratorPage() {
                       id={`${formId}-color-weight`}
                       max="2.0"
                       min="0.2"
-                      onChange={(e) =>
-                        setColorWeight(Number.parseFloat(e.target.value))
-                      }
+                      onChange={handleColorWeightChange}
                       step="0.01"
                       title="가중치 설정"
                       type="range"
@@ -637,7 +671,7 @@ export default function DrawingGeneratorPage() {
                     </label>
                     <input
                       id={`${formId}-selected-color`}
-                      onChange={(e) => setSelectedColor(e.target.value)}
+                      onChange={handleSelectedColorChange}
                       title="가중치 색상"
                       type="color"
                       value={selectedColor}
@@ -671,7 +705,7 @@ export default function DrawingGeneratorPage() {
                   영역을 선택해 잘라내세요.
                 </small>
               </div>
-              {previewSrc && isProcessed && (
+              {Boolean(previewSrc) && isProcessed === true && (
                 <button
                   onClick={saveCanvasAsPNG}
                   style={{
@@ -724,7 +758,7 @@ export default function DrawingGeneratorPage() {
                       }}
                     />
                     {/* Darken overlay */}
-                    {displaySize && imgNaturalSize && (
+                    {displaySize !== null && imgNaturalSize !== null && (
                       <div
                         style={{
                           boxSizing: "border-box",
