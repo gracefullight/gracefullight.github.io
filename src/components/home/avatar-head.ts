@@ -1,11 +1,15 @@
 import type { ModelContext, Point } from "./scene-primitives";
 
 import * as THREE from "three";
-import { mergeVertices } from "three/addons/utils/BufferGeometryUtils.js";
+import {
+  mergeGeometries,
+  mergeVertices,
+} from "three/addons/utils/BufferGeometryUtils.js";
 import { PALETTE } from "./scene-materials";
 import { smoothstep } from "./scene-primitives";
 export function createHeadModel(context: ModelContext) {
-  const { geometry, mesh, ellipsoid, rod, curve, taperedTube, loft } = context;
+  const { geometry, material, mesh, ellipsoid, rod, curve, taperedTube, loft } =
+    context;
   const {
     skin,
     skinShade,
@@ -50,7 +54,21 @@ export function createHeadModel(context: ModelContext) {
   }
   function faceDepth(x: number, y: number) {
     const radius = faceRadius(y);
-    return radius * 0.86 * Math.max(0, 1 - (x / radius) ** 2) ** 0.35;
+    const cheek =
+      0.009 *
+      Math.exp(-((Math.abs(x) - 0.18) ** 2) / 0.005 - (y + 0.07) ** 2 / 0.01);
+    const brow =
+      0.006 *
+      Math.exp(-((Math.abs(x) - 0.12) ** 2) / 0.004 - (y - 0.1) ** 2 / 0.0015);
+    const socket =
+      0.004 *
+      Math.exp(-((Math.abs(x) - 0.12) ** 2) / 0.002 - (y - 0.025) ** 2 / 0.001);
+    return (
+      radius * 0.86 * Math.max(0, 1 - (x / radius) ** 2) ** 0.35 +
+      cheek +
+      brow -
+      socket
+    );
   }
 
   function buildEyes(head: THREE.Group) {
@@ -133,6 +151,29 @@ export function createHeadModel(context: ModelContext) {
   }
 
   function buildGlasses(head: THREE.Group) {
+    const lens = material("#dbe8ed", {
+      clearcoat: 1,
+      clearcoatRoughness: 0.07,
+      depthWrite: false,
+      opacity: 0.1,
+      roughness: 0.12,
+      side: THREE.DoubleSide,
+      transparent: true,
+    });
+    const pad = material("#d6cebd", {
+      clearcoat: 0.4,
+      roughness: 0.35,
+    });
+    const lensShape = geometry("spectacle-lens", () => {
+      const shape = new THREE.Shape();
+      shape.moveTo(-0.062, 0.068);
+      shape.lineTo(0.062, 0.068);
+      shape.lineTo(0.094, 0.036);
+      shape.bezierCurveTo(0.11, 0.014, 0.093, -0.085, 0, -0.085);
+      shape.bezierCurveTo(-0.093, -0.085, -0.11, 0.014, -0.094, 0.036);
+      shape.closePath();
+      return new THREE.ShapeGeometry(shape, 24);
+    });
     const frameShape = geometry("flat-top-rounded-bottom-frame", () => {
       const point = (x: number, y: number) => new THREE.Vector3(x, y, 0);
       const path = new THREE.CurvePath<THREE.Vector3>();
@@ -166,6 +207,24 @@ export function createHeadModel(context: ModelContext) {
         0.296,
       ]);
       frame.rotation.y = side * 0.11;
+      const glass = mesh(head, lensShape, lens, [side * 0.122, 0.026, 0.296]);
+      glass.rotation.y = side * 0.11;
+      glass.castShadow = false;
+      glass.receiveShadow = false;
+      const nosePad = ellipsoid(
+        head,
+        pad,
+        [side * 0.035, 0.004, 0.283],
+        [0.008, 0.016, 0.004],
+      );
+      nosePad.rotation.z = side * -0.35;
+      const hinge = ellipsoid(
+        head,
+        glasses,
+        [side * 0.224, 0.059, 0.283],
+        [0.008, 0.01, 0.006],
+      );
+      hinge.castShadow = false;
       curve(
         head,
         glasses,
@@ -273,12 +332,52 @@ export function createHeadModel(context: ModelContext) {
       );
       mesh(head, strand, part ? hairPart : hairHighlight);
     }
+
+    // Fine strands share one draw call; the wider locks still define the cut.
+    const fine = geometry("fine-combed-hair", () => {
+      const strands: THREE.BufferGeometry[] = [];
+      for (let lane = 0; lane < 96; lane += 1) {
+        const x = -0.8 + (lane / 95) * 1.6;
+        const points: THREE.Vector3[] = [];
+        for (let step = 0; step <= 20; step += 1) {
+          const t = step / 20;
+          const sweep =
+            Math.sin(t * Math.PI) * (0.1 + Math.sin(lane * 1.7) * 0.018);
+          const px = x - sweep;
+          const span = Math.sqrt(1 - px * px);
+          const limit = Math.acos(
+            Math.min(1, (0.52 + 0.018 * Math.sin(lane)) / span),
+          );
+          const angle = THREE.MathUtils.lerp(limit, -limit, t);
+          const point = hairPoint(
+            Math.atan2(Math.sin(angle) * span, px),
+            Math.acos(Math.cos(angle) * span),
+          );
+          point[1] += 0.0014;
+          points.push(new THREE.Vector3(...point));
+        }
+        strands.push(
+          new THREE.TubeGeometry(
+            new THREE.CatmullRomCurve3(points),
+            24,
+            0.000_65 + (lane % 3) * 0.000_12,
+            4,
+          ),
+        );
+      }
+      const merged = mergeGeometries(strands);
+      for (const strand of strands) strand.dispose();
+      return merged;
+    });
+    const detail = mesh(head, fine, hairHighlight);
+    detail.castShadow = false;
   }
 
   function buildHair(head: THREE.Group) {
     const scalp = geometry("combed-pompadour", () => {
       const vertices: number[] = [];
       const colors: number[] = [];
+      const uv: number[] = [];
       const indices: number[] = [];
       const sides = 112;
       const rows = 56;
@@ -288,6 +387,7 @@ export function createHeadModel(context: ModelContext) {
           const theta = (row / rows) * hairBoundary(phi);
           vertices.push(...hairPoint(phi, theta));
           colors.push(...hairColor(phi, theta).toArray());
+          uv.push(side / sides, row / rows);
           if (row < rows && side < sides) {
             const a = row * (sides + 1) + side;
             const b = a + sides + 1;
@@ -301,6 +401,7 @@ export function createHeadModel(context: ModelContext) {
         new THREE.Float32BufferAttribute(vertices, 3),
       );
       result.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+      result.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
       result.setIndex(indices);
       const joined = mergeVertices(result, 0.000_01);
       result.dispose();
@@ -346,6 +447,20 @@ export function createHeadModel(context: ModelContext) {
         [side * 0.375, -0.036, 0.017],
         [0.0025, 0.008, 0.011],
       );
+      const contact = ellipsoid(
+        head,
+        glasses,
+        [side * 0.36, -0.13, 0.038],
+        [0.008, 0.002, 0.008],
+      );
+      contact.castShadow = false;
+      const microphone = ellipsoid(
+        head,
+        earbudVent,
+        [side * 0.37, -0.111, 0.039],
+        [0.0015, 0.005, 0.003],
+      );
+      microphone.castShadow = false;
     }
   }
 
@@ -385,6 +500,18 @@ export function createHeadModel(context: ModelContext) {
         [side * 0.341, -0.043, -0.005],
         [0.009, 0.033, 0.017],
       );
+      curve(
+        head,
+        skin,
+        [
+          [side * 0.327, -0.09, -0.007],
+          [side * 0.346, -0.061, 0.005],
+          [side * 0.345, -0.007, 0.002],
+          [side * 0.325, 0.009, -0.004],
+          [side * 0.32, -0.013, 0.005],
+        ],
+        0.006,
+      ).castShadow = false;
     }
     const nose = loft("nose-bridge", [
       [-0.09, 0.001, 0.001, 0.263],
@@ -394,6 +521,44 @@ export function createHeadModel(context: ModelContext) {
       [0.065, 0.001, 0.001, 0.263],
     ]);
     mesh(head, nose, skin);
+    for (const side of [-1, 1]) {
+      ellipsoid(
+        head,
+        skin,
+        [side * 0.026, -0.072, 0.285],
+        [0.017, 0.013, 0.018],
+      );
+      const nostril = ellipsoid(
+        head,
+        skinShade,
+        [side * 0.022, -0.082, 0.296],
+        [0.008, 0.004, 0.005],
+      );
+      nostril.castShadow = false;
+    }
+    const lip = material("#b58b7b", { clearcoat: 0, roughness: 0.86 });
+    curve(
+      head,
+      lip,
+      [
+        [-0.053, -0.165, faceDepth(-0.053, -0.165) + 0.002],
+        [-0.02, -0.162, faceDepth(-0.02, -0.162) + 0.004],
+        [0, -0.167, faceDepth(0, -0.167) + 0.005],
+        [0.02, -0.162, faceDepth(0.02, -0.162) + 0.004],
+        [0.053, -0.165, faceDepth(0.053, -0.165) + 0.002],
+      ],
+      0.003,
+    ).castShadow = false;
+    curve(
+      head,
+      lip,
+      [
+        [-0.045, -0.174, faceDepth(-0.045, -0.174) + 0.002],
+        [0, -0.184, faceDepth(0, -0.184) + 0.005],
+        [0.045, -0.174, faceDepth(0.045, -0.174) + 0.002],
+      ],
+      0.0035,
+    ).castShadow = false;
     curve(
       head,
       skinShade,

@@ -49,6 +49,10 @@ export function createScenePrimitives() {
 
   const sphere = geometry("sphere", () => new THREE.SphereGeometry(1, 32, 24));
   const box = geometry("box", () => new RoundedBoxGeometry(1, 1, 1, 5, 0.15));
+  const smallBox = geometry(
+    "small-box",
+    () => new RoundedBoxGeometry(1, 1, 1, 2, 0.15),
+  );
   const cylinder = geometry(
     "cylinder",
     () => new THREE.CylinderGeometry(1, 1, 1, 40),
@@ -76,7 +80,17 @@ export function createScenePrimitives() {
     position: Point,
     scale: Point,
   ) {
-    return mesh(parent, box, surface, position, scale);
+    const small = Math.max(...scale) < 0.09;
+    const result = mesh(
+      parent,
+      small ? smallBox : box,
+      surface,
+      position,
+      scale,
+    );
+    // Subpixel hardware still receives light without another shadow-map draw.
+    result.castShadow = !small;
+    return result;
   }
 
   function ellipsoid(
@@ -157,6 +171,7 @@ export function createScenePrimitives() {
       const frames = path.computeFrenetFrames(TUBE_SEGMENTS, false);
       const vertices: number[] = [];
       const indices: number[] = [];
+      const uvs: number[] = [];
       const offset = new THREE.Vector3();
       for (let section = 0; section <= TUBE_SEGMENTS; section += 1) {
         const t = section / TUBE_SEGMENTS;
@@ -176,6 +191,7 @@ export function createScenePrimitives() {
             center.y + offset.y,
             center.z + offset.z,
           );
+          uvs.push(side / TUBE_SIDES, t);
           if (section < TUBE_SEGMENTS && side < TUBE_SIDES) {
             const a = section * (TUBE_SIDES + 1) + side;
             const b = a + TUBE_SIDES + 1;
@@ -189,6 +205,7 @@ export function createScenePrimitives() {
         new THREE.Float32BufferAttribute(vertices, 3),
       );
       result.setIndex(indices);
+      result.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
       result.computeVertexNormals();
       return result;
     });
@@ -198,6 +215,7 @@ export function createScenePrimitives() {
     return geometry(key, () => {
       const vertices: number[] = [];
       const indices: number[] = [];
+      const uvs: number[] = [];
       const count = 48;
       const steps = 48;
       const profile = new THREE.CatmullRomCurve3(
@@ -223,6 +241,7 @@ export function createScenePrimitives() {
               Math.max(0.001, section.z) +
               sample(offsets, t),
           );
+          uvs.push(side / count, t);
           if (level < steps && side < count) {
             const a = level * (count + 1) + side;
             const b = a + count + 1;
@@ -236,6 +255,7 @@ export function createScenePrimitives() {
         new THREE.Float32BufferAttribute(vertices, 3),
       );
       result.setIndex(indices);
+      result.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
       result.computeVertexNormals();
       return result;
     });

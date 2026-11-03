@@ -1,12 +1,11 @@
-import type { Point } from "./scene-primitives";
-
 import * as THREE from "three";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { createAvatarAnimation } from "./avatar-animation";
 import { createArmModel } from "./avatar-arms";
 import { createClothingModel } from "./avatar-clothing";
 import { createHeadModel } from "./avatar-head";
-import { PALETTE } from "./scene-materials";
+import { createResearchProps } from "./research-props";
+import { batchSceneDetails } from "./scene-batching";
 import { createScenePrimitives, smoothstep } from "./scene-primitives";
 import { createMouseModel } from "./vertical-mouse";
 import { createWorkstationModel } from "./workstation-model";
@@ -26,10 +25,12 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
     alpha: true,
     antialias: true,
     canvas,
-    powerPreference: "low-power",
+    powerPreference: "high-performance",
   });
   renderer.setClearColor(0x00_00_00, 0);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.7));
+  const pixelRatio = () =>
+    Math.min(window.devicePixelRatio || 1, window.innerWidth < 768 ? 1.5 : 2);
+  renderer.setPixelRatio(pixelRatio());
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.08;
@@ -38,22 +39,8 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
 
   const scene = new THREE.Scene();
   const context = createScenePrimitives();
-  const {
-    geometry,
-    material,
-    mesh,
-    rounded,
-    ellipsoid,
-    rod,
-    curve,
-    ring,
-    cylinder,
-    geometries,
-    materials,
-    textures,
-    skeletons,
-  } = context;
-  const { cream, ink, teal, paper, wood, screen } = context.surfaces;
+  const { geometry, mesh, geometries, materials, textures, skeletons } =
+    context;
   const { buildHead, blinkingEyes } = createHeadModel(context);
   const { buildLegs, buildTorso } = createClothingModel(context);
   const { buildArm, buildWatch } = createArmModel(context);
@@ -71,7 +58,7 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
   const environmentGenerator = new THREE.PMREMGenerator(renderer);
   const environment = environmentGenerator.fromScene(room, 0.065);
   scene.environment = environment.texture;
-  scene.environmentIntensity = 0.55;
+  scene.environmentIntensity = 0.65;
   room.dispose();
   environmentGenerator.dispose();
 
@@ -95,15 +82,19 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
   const key = new THREE.DirectionalLight("#fff2de", 2.6);
   key.position.set(-3.5, 6, 5);
   key.castShadow = true;
-  key.shadow.mapSize.set(1024, 1024);
-  key.shadow.camera.left = -4;
-  key.shadow.camera.right = 4;
-  key.shadow.camera.top = 5;
-  key.shadow.camera.bottom = -3;
-  key.shadow.normalBias = 0.025;
+  const shadowResolution = window.innerWidth < 768 ? 1024 : 2048;
+  key.shadow.mapSize.set(shadowResolution, shadowResolution);
+  key.target.position.set(0, 1.25, 0);
+  key.shadow.camera.left = -2.5;
+  key.shadow.camera.right = 2.5;
+  key.shadow.camera.top = 2.7;
+  key.shadow.camera.bottom = -2.3;
+  key.shadow.camera.near = 0.5;
+  key.shadow.camera.far = 15;
+  key.shadow.normalBias = 0.008;
   key.shadow.bias = -0.0002;
   key.shadow.radius = 4;
-  scene.add(key);
+  scene.add(key, key.target);
   const rim = new THREE.DirectionalLight("#e6f2ed", 1.6);
   rim.position.set(4, 3, -3);
   scene.add(rim);
@@ -184,74 +175,14 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
     typingKeys,
   });
 
-  const interests = [new THREE.Group(), new THREE.Group(), new THREE.Group()];
-  const accents = [material(PALETTE.accent), teal.clone(), wood.clone()];
-  for (const accent of accents) materials.add(accent);
+  const { interests, accents, robotShoulder, robotElbow } =
+    createResearchProps(context);
   for (const group of interests) world.add(group);
-
-  function buildAgents() {
-    const positions: Point[] = [
-      [0, 0.17, 0],
-      [-0.27, -0.09, 0.02],
-      [0.27, -0.09, -0.02],
-      [0.035, -0.35, 0.07],
-    ];
-    for (const [index, point] of positions.entries()) {
-      rounded(
-        interests[0],
-        index === 0 ? accents[0] : cream,
-        point,
-        [0.16, 0.16, 0.13],
-      );
-      if (index > 0) rod(interests[0], wood, positions[0], point, 0.012);
-    }
-    ring(interests[0], paper, 0.43, 0.006, [0, -0.08, -0.06]);
-  }
-  buildAgents();
-  rounded(interests[1], cream, [0, 0, 0], [0.65, 0.44, 0.225]);
-  rounded(interests[1], paper, [0.16, 0.23, -0.02], [0.17, 0.065, 0.13]);
-  const barrel = mesh(
-    interests[1],
-    cylinder,
-    ink,
-    [0.045, 0, 0.17],
-    [0.18, 0.17, 0.18],
+  batchSceneDetails(world, new Set(typingKeys.map(({ key }) => key)), (shape) =>
+    geometries.set(shape.uuid, shape),
   );
-  barrel.rotation.x = Math.PI / 2;
-  ring(interests[1], accents[1], 0.149, 0.023, [0.045, 0, 0.267]);
-  ellipsoid(interests[1], screen, [0.045, 0, 0.27], [0.126, 0.126, 0.016]);
-  ellipsoid(interests[1], teal, [0.012, 0.041, 0.288], [0.031, 0.039, 0.003]);
-  ellipsoid(
-    interests[1],
-    accents[1],
-    [-0.23, 0.12, 0.121],
-    [0.023, 0.023, 0.01],
-  );
-
-  mesh(interests[2], cylinder, cream, [0, -0.31, 0], [0.245, 0.075, 0.22]);
-  const robotShoulder = new THREE.Group();
-  robotShoulder.position.set(0, -0.24, 0);
-  interests[2].add(robotShoulder);
-  ellipsoid(robotShoulder, accents[2], [0, 0, 0], [0.085, 0.085, 0.085]);
-  rod(robotShoulder, cream, [0, 0, 0], [-0.13, 0.33, 0], 0.064);
-  const robotElbow = new THREE.Group();
-  robotElbow.position.set(-0.13, 0.33, 0);
-  robotShoulder.add(robotElbow);
-  ellipsoid(robotElbow, accents[2], [0, 0, 0], [0.085, 0.085, 0.085]);
-  rod(robotElbow, cream, [0, 0, 0], [0.29, 0.1, 0.02], 0.055);
-  ellipsoid(robotElbow, accents[2], [0.29, 0.1, 0.02], [0.067, 0.067, 0.067]);
-  for (const side of [-1, 1]) {
-    curve(
-      robotElbow,
-      ink,
-      [
-        [0.32, 0.1, side * 0.035],
-        [0.41, 0.04, side * 0.08],
-        [0.44, -0.025, side * 0.045],
-      ],
-      0.018,
-    );
-  }
+  const anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+  for (const texture of textures) texture.anisotropy = anisotropy;
 
   const introPositions = [
     new THREE.Vector3(-1.08, 2.1, 0.04),
@@ -392,7 +323,7 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
     const { width, height } = canvas.getBoundingClientRect();
     if (width < 1 || height < 1) return;
     aspect = width / height;
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.7));
+    renderer.setPixelRatio(pixelRatio());
     renderer.setSize(width, height, false);
     camera.aspect = aspect;
     camera.updateProjectionMatrix();
@@ -455,6 +386,9 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
   function dispose() {
     if (disposed) return;
     disposed = true;
+    scene.traverse((object) => {
+      if (object instanceof THREE.InstancedMesh) object.dispose();
+    });
     for (const shape of geometries.values()) shape.dispose();
     for (const surface of materials) surface.dispose();
     for (const texture of textures) texture.dispose();

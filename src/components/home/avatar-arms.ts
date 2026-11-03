@@ -191,11 +191,13 @@ export function createArmModel(context: ModelContext) {
     const positions = shape.getAttribute("position");
     const skinIndices: number[] = [];
     const skinWeights: number[] = [];
+    const uvs: number[] = [];
     const shirtIndices: number[] = [];
     const skinFaces: number[] = [];
     const point = new THREE.Vector3();
     for (let vertex = 0; vertex < positions.count; vertex += 1) {
       point.fromBufferAttribute(positions, vertex);
+      uvs.push(point.x * 3 + 0.5, (point.y + point.z) * 2);
       const t = limbProgress(point, segments);
       const shoulderWeight = smoothstep(0.04, 0.22, t);
       const elbowWeight = smoothstep(0.48, 0.62, t);
@@ -225,6 +227,7 @@ export function createArmModel(context: ModelContext) {
       "skinIndex",
       new THREE.Uint16BufferAttribute(skinIndices, 4),
     );
+    shape.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
     shape.setAttribute(
       "skinWeight",
       new THREE.Float32BufferAttribute(skinWeights, 4),
