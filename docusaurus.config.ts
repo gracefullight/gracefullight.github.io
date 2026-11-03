@@ -10,13 +10,16 @@ import remarkMath from "remark-math";
 // Note: type annotations allow type checking and IDEs autocompletion
 dotenv.config();
 
+// Disable the bundler's disk cache to limit local disk usage.
+process.env.DOCUSAURUS_NO_PERSISTENT_CACHE = "1";
+
 // ? https://github.com/FormidableLabs/prism-react-renderer/tree/master/packages/prism-react-renderer/src/themes
 const config: Config = {
   baseUrl: "/",
   deploymentBranch: "gh-pages",
   favicon: "img/favicon.ico",
   future: {
-    faster: true,
+    faster: false,
     v4: true,
   },
 

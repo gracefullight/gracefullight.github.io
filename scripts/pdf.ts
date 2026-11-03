@@ -1,12 +1,23 @@
 import type { Command as CommandType } from "commander";
 import type { Root } from "mdast";
 
+import { execFile } from "node:child_process";
 import { randomUUID } from "node:crypto";
+import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
-import { mkdir, readdir, readFile, rm, writeFile } from "fs-extra";
+import { pathToFileURL } from "node:url";
+import { promisify } from "node:util";
+import {
+  mkdir,
+  mkdtemp,
+  move,
+  readdir,
+  readFile,
+  rm,
+  writeFile,
+} from "fs-extra";
 import pLimit from "p-limit";
 import pc from "picocolors";
-import { chromium } from "playwright";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
 import remarkFrontmatter from "remark-frontmatter";
@@ -19,6 +30,7 @@ import { parse as parseYaml } from "yaml";
 
 // 병렬 작업 제한 설정
 const limit = pLimit(15);
+const execFileAsync = promisify(execFile);
 
 // dist 폴더 및 하위 폴더 경로
 const DIST_DIR = resolve(__dirname, "..", "dist");
@@ -180,31 +192,36 @@ async function processImagesInHtml(
 }
 
 /**
- * HTML을 PDF로 변환 (Playwright 사용)
+ * HTML을 LibreOffice로 PDF 변환
  */
-async function convertHtmlToPdf(
+export async function convertHtmlToPdf(
   htmlContent: string,
   outputPath: string,
 ): Promise<void> {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-
-  await page.setContent(htmlContent, { waitUntil: "networkidle" });
-
-  await page.pdf({
-    footerTemplate: "pageNumber",
-    format: "A4",
-    margin: {
-      bottom: "5mm",
-      left: "5mm",
-      right: "5mm",
-      top: "5mm",
-    },
-    path: outputPath,
-    printBackground: true,
-  });
-
-  await browser.close();
+  const workDir = await mkdtemp(join(tmpdir(), "blog-pdf-"));
+  const htmlPath = join(workDir, "document.html");
+  const convertedPath = join(workDir, "document.pdf");
+  const profile = pathToFileURL(join(workDir, "profile")).href;
+  const executable =
+    process.env.LIBREOFFICE_PATH ||
+    (process.platform === "darwin"
+      ? "/Applications/LibreOffice.app/Contents/MacOS/soffice"
+      : "soffice");
+  try {
+    await writeFile(htmlPath, htmlContent);
+    await execFileAsync(executable, [
+      `-env:UserInstallation=${profile}`,
+      "--headless",
+      "--convert-to",
+      "pdf",
+      "--outdir",
+      workDir,
+      htmlPath,
+    ]);
+    await move(convertedPath, outputPath, { overwrite: true });
+  } finally {
+    await rm(workDir, { force: true, recursive: true });
+  }
 }
 
 export function registerPdfCommand(program: CommandType) {
@@ -327,6 +344,7 @@ export function registerPdfCommand(program: CommandType) {
         if (error instanceof Error) {
           process.stderr.write(pc.red(`Error: ${error.message}\n`));
         }
+        process.exitCode = 1;
       } finally {
         await rm(TEMP_DIR, { force: true, recursive: true }).catch(() => {
           // Ignore errors during temp directory removal
