@@ -233,9 +233,6 @@ export default function ScrollHero() {
       <div className={styles.stickyStage} ref={stageRef}>
         <div aria-hidden="true" className={styles.stageGrid} />
         <div className={styles.heroIntro} ref={introRef}>
-          <p className={styles.eyebrow}>
-            SOFTWARE ENGINEERING <span aria-hidden="true">↗</span> AI RESEARCH
-          </p>
           <h1>
             Eunkwang
             <br />
