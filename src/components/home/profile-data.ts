@@ -6,8 +6,7 @@ import treeSearchPreview from "@site/blog/2026/10/25/mcts-steps.png";
 export const profile = {
   email: "gracefullight.dev@gmail.com",
   github: "https://github.com/gracefullight",
-  intro:
-    "Software engineer studying AI in Sydney. I write about agents, vision, and robot learning.",
+  intro: "Software engineer studying AI in Sydney.",
   linkedin: "https://www.linkedin.com/in/gracefullight/",
   name: "Eunkwang Shin",
 };
