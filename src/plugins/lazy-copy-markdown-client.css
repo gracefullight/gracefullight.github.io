@@ -1,0 +1,84 @@
+.lazy-copy-markdown {
+  margin-block: 12px 20px;
+  text-align: right;
+}
+
+.lazy-copy-markdown[data-alignment="left"] {
+  text-align: left;
+}
+
+.lazy-copy-markdown[data-alignment="center"] {
+  text-align: center;
+}
+
+.lazy-copy-markdown__controls {
+  position: relative;
+  display: inline-flex;
+  gap: 4px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.lazy-copy-markdown button,
+.lazy-copy-markdown__options a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  background: var(--ifm-color-emphasis-100);
+  border: 0;
+  border-radius: 4px;
+}
+
+.lazy-copy-markdown button:hover,
+.lazy-copy-markdown__options a:hover {
+  text-decoration: none;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.lazy-copy-markdown :is(button, a):focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+.lazy-copy-markdown button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.lazy-copy-markdown__more {
+  justify-content: center;
+  min-width: 44px;
+}
+
+.lazy-copy-markdown__options:not([hidden]) {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 5;
+  display: grid;
+  min-width: 180px;
+  padding: 6px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 12%);
+}
+
+.lazy-copy-markdown__options :is(button, a) {
+  width: 100%;
+  background: transparent;
+}
+
+.lazy-copy-markdown__status {
+  min-height: 21px;
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--ifm-font-color-base);
+}

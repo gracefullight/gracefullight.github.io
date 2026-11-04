@@ -145,26 +145,30 @@ const config: Config = {
         counterId: 104_072_655,
       },
     ],
-    "@gracefullight/docusaurus-plugin-copy-markdown",
+    require.resolve("./src/plugins/lazy-copy-markdown.ts"),
+    [
+      require.resolve("./src/plugins/metadata-home-blog.ts"),
+      {
+        blogSidebarCount: 10,
+        feedOptions: {
+          limit: 10,
+          type: "all",
+          xslt: true,
+        },
+        onUntruncatedBlogPosts: "ignore",
+        rehypePlugins: [rehypeKatex],
+        remarkPlugins: [remarkMath, remarkFlexibleMarkers],
+        routeBasePath: "/",
+        showReadingTime: true,
+      },
+    ],
   ],
 
   presets: [
     [
       "classic",
       {
-        blog: {
-          blogSidebarCount: 10,
-          feedOptions: {
-            limit: 10,
-            type: "all",
-            xslt: true,
-          },
-          onUntruncatedBlogPosts: "ignore",
-          rehypePlugins: [rehypeKatex],
-          remarkPlugins: [remarkMath, remarkFlexibleMarkers],
-          routeBasePath: "/",
-          showReadingTime: true,
-        },
+        blog: false,
         debug: true,
         docs: false,
         gtag: {

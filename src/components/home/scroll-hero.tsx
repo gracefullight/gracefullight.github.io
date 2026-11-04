@@ -1,7 +1,9 @@
 import type { MouseEvent, PointerEvent } from "react";
 import type { ResearchSceneState } from "./research-scene";
 
+import Link from "@docusaurus/Link";
 import { useEffect, useRef, useState } from "react";
+import HomeIcon from "./home-icon";
 import { profile, researchInterests } from "./profile-data";
 import styles from "./styles.module.css";
 
@@ -231,7 +233,6 @@ export default function ScrollHero() {
   return (
     <section className={styles.scrollStory} ref={sectionRef}>
       <div className={styles.stickyStage} ref={stageRef}>
-        <div aria-hidden="true" className={styles.stageGrid} />
         <div className={styles.heroIntro} ref={introRef}>
           <h1>
             Eunkwang
@@ -239,9 +240,17 @@ export default function ScrollHero() {
             <span>Shin.</span>
           </h1>
           <p className={styles.heroDescription}>{profile.intro}</p>
-          <a className={styles.primaryLink} href="#research">
-            Explore my work <span aria-hidden="true">↘</span>
-          </a>
+          <div className={styles.heroActions}>
+            <a className={styles.primaryLink} href="#work">
+              Selected work <HomeIcon name="arrow-down" />
+            </a>
+            <Link
+              className={styles.heroSecondary}
+              to="/2026/01/31/agentic-sdlc/"
+            >
+              Agentic SDLC <HomeIcon name="arrow-up-right" />
+            </Link>
+          </div>
         </div>
 
         {storySteps.map((step, index) => (
@@ -249,14 +258,18 @@ export default function ScrollHero() {
             aria-hidden="true"
             className={styles.heroNext}
             data-story-step={index}
+            inert
             key={step.title}
           >
-            <p className={styles.eyebrow}>
-              0{index + 1} /{" "}
-              {researchInterests[step.interest].name.toUpperCase()}
-            </p>
-            <h2>{step.title}</h2>
-            <p>{researchInterests[step.interest].description}</p>
+            <h2>{researchInterests[step.interest].workTitle}</h2>
+            <p>{researchInterests[step.interest].workSummary}</p>
+            <Link
+              className={styles.textLink}
+              to={researchInterests[step.interest].workUrl}
+            >
+              {researchInterests[step.interest].workLinkLabel}
+              <HomeIcon name="arrow-up-right" />
+            </Link>
           </div>
         ))}
 
@@ -266,7 +279,6 @@ export default function ScrollHero() {
           onPointerMove={movePointer}
         >
           <div aria-hidden="true" className={styles.sceneFallback}>
-            <div className={styles.fallbackOrbit} />
             <div className={styles.fallbackSphere}>g.</div>
           </div>
           <canvas
@@ -280,7 +292,7 @@ export default function ScrollHero() {
 
         <div className={styles.stageFooter}>
           <span className={styles.scrollHint}>
-            <span aria-hidden="true">↓</span> SCROLL TO EXPLORE
+            <HomeIcon name="arrow-down" /> Explore the scene
             <span aria-hidden="true" className={styles.scrollProgress}>
               <span />
             </span>
@@ -291,6 +303,7 @@ export default function ScrollHero() {
           >
             {researchInterests.map((interest, index) => (
               <button
+                aria-label={interest.name}
                 aria-pressed={activeInterest === index}
                 className={styles.sceneControl}
                 data-interest={index}
@@ -298,8 +311,7 @@ export default function ScrollHero() {
                 onClick={selectInterest}
                 type="button"
               >
-                <span className={styles.controlNumber}>{interest.number}</span>
-                {interest.name}
+                {interest.controlLabel}
               </button>
             ))}
             <button
@@ -307,9 +319,10 @@ export default function ScrollHero() {
               className={styles.typingButton}
               disabled={!ready}
               onClick={startTyping}
+              title="Animate typing"
               type="button"
             >
-              <span aria-hidden="true">⌨</span>
+              <HomeIcon name="keyboard" />
             </button>
           </fieldset>
         </div>
