@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[58920],{7741(a){a.exports=JSON.parse('{"tag":{"label":"paypal","permalink":"/tags/paypal","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/paypal","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[30492],{53383(t){t.exports=JSON.parse('{"tag":{"label":"netflix","permalink":"/ko/tags/netflix","allTagsPath":"/ko/tags","count":4,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/netflix","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[14677],{75867(a){a.exports=JSON.parse('{"tag":{"label":"ippr","permalink":"/tags/ippr","allTagsPath":"/tags","count":5,"unlisted":false},"listMetadata":{"permalink":"/tags/ippr","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

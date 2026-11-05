@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[99256],{76522(a){a.exports=JSON.parse('{"tag":{"label":"australia","permalink":"/tags/australia","allTagsPath":"/tags","count":5,"unlisted":false},"listMetadata":{"permalink":"/tags/australia","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

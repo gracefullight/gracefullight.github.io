@@ -1,0 +1,380 @@
+# RL 009
+
+## Function Approximation
+
+$$\hat{v}(s, \mathbf{w}) \approx v_\pi(s)$$
+
+$$\hat{q}(s, a, \mathbf{w}) \approx q_\pi(s, a)$$
+
+- Incremental methods for prediction
+- Model-free VFA: MC and TD targets
+
+### GPI, Generalized Policy Iteration
+
+- Iterate between policy evaluation and policy improvement
+- **Policy Evaluation**: Approximate policy evaluation. $\hat{q}(\cdot, \cdot, \mathbf{w}) \approx q_\pi$
+- **Policy Improvement**: $\epsilon$-greedy policy improvement.
+
+### Types of Action-Value FA
+
+$$
+s \to \text{FA}(\mathbf{w}) \to \hat{q}(s, \mathbf{w})
+$$
+
+- State Value Function Approximation
+
+$$
+(s, a) \to \text{FA}(\mathbf{w}) \to \hat{q}(s, a, \mathbf{w})
+$$
+
+- Action Value Function Approximation
+  - $\hat{q}(s, \text{Left}, \mathbf{w}) = 3.2$
+  - $\hat{q}(s, \text{Right}, \mathbf{w}) = 8.7$
+
+$$
+s \to \text{FA}(\mathbf{w}) \to \hat{q}(s,a_1, \mathbf{w}) \cdots \hat{q}(s,a_n, \mathbf{w})
+$$
+
+- The network output is a vector of Q-values for each action.
+- More convenient to use discrete action spaces.
+
+| Action | Q-value |
+| - | - |
+| Left | 3.2 |
+| Right | 8.7 |
+| Jump | 5.3 |
+
+### Action VFA
+
+$$\hat{q}(s, a, \mathbf{w}) \approx q_\pi(s, a)$$
+
+- Approximate the Action-value function.
+- Doing action $a$ at state $s$, Approximate the Q-value of that action.
+
+$$\mathcal{J} = \mathbb{E}_{\pi} \left[ (q_\pi(s, a) - \hat{q}(s, a, \mathbf{w}))^2 \right]$$
+
+- Minimize mean-squared error (MSE) between the approximate Q-value $\hat{q}(s, a, \mathbf{w})$ and the true Q-value $q_\pi(s, a)$.
+
+$$ \Delta \mathbf{w} = \alpha (q_{\pi}(s,a) - \hat{q}(s,a,\mathbf{w})) \nabla_{\mathbf{w}} \hat{q}(s,a,\mathbf{w})$$
+
+- Use SGD to find the local minimum.
+- $q_{\pi} - \hat{q}$ tells us how much the prediction is off from the target.
+- $\nabla_{\mathbf{w}} \hat{q}(s,a,\mathbf{w})$ tells us how each weight affects the predicted $Q$-value.
+
+### Linear Action VFA
+
+$$
+x(s, a) = \begin{bmatrix}
+x_1(s, a) \\
+x_2(s, a) \\
+\vdots \\
+x_n(s, a)
+\end{bmatrix}
+$$
+
+- Feature vector is used to represent the state and action pair.
+
+$$\hat{q}(s, a, w) \approx x(s, a)^T w = \sum_j x_j (s, a) w_j$$
+
+- Predicted Q-value is a linear combination of the feature values. (sum of each feature value $x_j$ multiplied by the weight $w_j$)
+
+$$
+\begin{aligned}
+\hat{q}(s, a, w) = x(s, a)^T w \\
+\hat{q} = x_1w_1 + x_2w_2 + \cdots + x_n w_n
+\end{aligned}
+$$
+
+- $x_1, x_2, \cdots$: features of the state and action pair.
+- $w_1, w_2, \cdots$: weights that need to be learned.
+- derivative $\hat{q}$ with respect to $w$.
+  - $\frac{\partial \hat{q}}{\partial w_1} = x_1$
+  - $\frac{\partial \hat{q}}{\partial w_2} = x_2$
+
+$$
+\nabla_w\hat{q} = \begin{bmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_n
+\end{bmatrix} = x(s, a)
+$$
+
+- e.g. $\hat{q} = 2w_1 + 5w_2$, then $\nabla_w\hat{q} = \begin{bmatrix} 2 \\ 5 \end{bmatrix}$
+
+$$
+\begin{aligned}
+\Delta w \\ 
+&= \alpha (q_{\pi} - \hat{q}) \nabla_w\hat{q}  \\
+&= \alpha (q_{\pi} - \hat{q}) x(s, a) \\
+&= \alpha (q_{\pi}(s, a) - \hat{q}(s, a, w)) x(s, a)
+\end{aligned}
+$$
+
+### Incremental Prediction Algorithm
+
+- Assumption so far: $q_{\pi}(s,a)$ is given.
+- But an actual RL agent does not know the true $q_{\pi}(s,a)$.
+- Therefore, we need to estimate a target.
+- **Monte Carlo (MC)**: the target is the return $G_t$.
+  - $G_t = R_{t+1} + \gamma R_{t+2} + \cdots$
+  - Update: $\Delta w = \alpha \bigl(G_t - \hat q(s_t,a_t,w)\bigr)\nabla_w\hat q(s_t,a_t,w)$
+  - It compares the predicted Q-value with the actual return observed after the episode.
+  - MC does not use another prediction inside the target.
+- **Temporal Difference (TD)**: the target is $R_{t+1} + \gamma \hat q(s_{t+1},a_{t+1},w)$.
+  - Update: $\Delta w = \alpha \bigl(R_{t+1} + \gamma\hat q(s_{t+1},a_{t+1},w) - \hat q(s_t,a_t,w)\bigr)\nabla_w\hat q(s_t,a_t,w)$
+  - It compares the current Q prediction with the current reward plus the discounted next Q prediction.
+  - **Bootstrapping**: update the current prediction using another prediction.
+  - Because the next prediction can also be wrong, we ask: can repeated updates converge to a stable value?
+- **On-policy**: behavior policy = target policy.
+- **Off-policy**: behavior policy $\ne$ target policy.
+  - The policy that generates the experience is different from the policy that we want to evaluate or improve.
+
+| Policy | Algorithm | Lookup Table | Linear | Non-linear |
+| - | - | -: | -: | -: |
+| On-policy | MC | ✓ | ✓ | ✓ |
+| On-policy | TD(0) | ✓ | ✓ | ✗ |
+| Off-policy | MC | ✓ | ✓ | ✓ |
+| Off-policy | TD(0) | ✓ | ✗ | ✗ |
+
+- **Deadly Triad**: Function Approximation + Bootstrapping + Off-policy.
+
+| Algorithm | Lookup Table | Linear | Non-linear |
+| - | -: | -: | -: |
+| MC Control | ✓ | (✓) | ✕ |
+| SARSA | ✓ | (✓) | ✕ |
+| Q-Learning | ✓ | ✕ | ✕ |
+
+- SARSA learns the policy that it actually follows.
+  - Target: $R_{t+1} + \gamma Q(s_{t+1},a_{t+1})$, On-policy TD
+- Q-Learning learns the optimal policy.
+  - Target: $\max_{a'} Q(s_{t+1},a')$, Off-policy TD
+- (✓): Moved around the near-optimal value function.
+  - Linear FA may not represent the exact $Q^*$ because all state-action values share the same weight vector and must fit the same linear function.
+- x: Divergence
+
+## Batch Methods
+
+- Incremental learning: an experience -> update the weights.
+- Batch methods: collect experiences -> store in $\mathcal{D}$ -> reuse $\mathcal{D}$ for training.
+- It seeks to find the best fitting value functions.
+
+$$ \mathcal{D} = \{(s_1, v^{\pi}_1), (s_2, v^{\pi}_2), \cdots, (s_N, v^{\pi}_N)\}$$
+
+- Which $w$ makes $\hat{v}(s, w)$ fit all stored data best?
+  - Using the agents' experience or training data.
+  - Training data: a fixed batch of previously collected data.
+
+## Least Squares Prediction
+
+- Given a value function approximation: $\hat{v}(s,w) \approx v^\pi(s)$
+- Given experience data: $\mathcal{D} = \{(s_1,v_1^\pi),(s_2,v_2^\pi),\ldots,(s_N,v_N^\pi)\}$ consisting of state-value pairs.
+
+$$
+LS(w)=\sum_{t=1}^{N}\left(v_t^\pi-\hat{v}(s_t,w)\right)^2
+$$
+
+- $LS(w)$ is the sum of all squared prediction errors.
+- The Least Squares method finds the parameter vector $w$ that minimizes the squared error between $\hat v(s,w)$ and $v^\pi(s)$.
+
+$$
+w^\pi=\arg\min_w LS(w)
+$$
+
+- If we use the mean squared error instead:
+
+$$
+\mathbb{E}_{\mathcal D}
+\left[
+\left(v_t^\pi-\hat v(s_t,w)\right)^2
+\right]
+=
+\frac{1}{N}
+\sum_{t=1}^{N}
+\left(v_t^\pi-\hat v(s_t,w)\right)^2
+$$
+
+- The factor $1/N$ does not change the minimizing $w$.
+
+### SGD Procedure
+
+1. Sample a $\{\text{state},\text{value}\}$ pair from $\mathcal D$.
+2. Apply the SGD update:
+
+$$
+\Delta w
+=
+\alpha
+\left(v^\pi-\hat v(s,w)\right)
+\nabla_w\hat v(s,w)
+$$
+
+- Sample from $\mathcal D$ -> calculate the error -> update $w$ -> repeat.
+
+3. Under appropriate conditions, SGD converges toward the Least Squares solution.
+
+- Then, what model should represent $\hat v(s,w)$?
+  - Linear function approximator
+  - ANN
+  - CNN
+
+## DNN, Deep neural network
+
+- Universal function approximator
+  - Linear FA limited to linear combinations of features $\hat{v}(s, w) = x(s)^T w$
+  - DNN can represent non-linear mappings of features. $s \rightarrow \text{DNN}(\mathbf{w}) \rightarrow \hat{v}(s, \mathbf{w})$
+- Combination of both Linear and Non-Linear transformations
+  - $z = Wx + b$
+  - $h = \text{ReLU}(z)$
+- It may require exponentially less nodes or parameters to represent the sample Linear function.
+- SGD can be used to learn parameters
+  - prediction -> loss -> gradient -> SGD -> $w$ update.
+- It can generalize from observed states to unseen states.
+- It can handle continuous state spaces, which are common in real world problems.
+  - $s = (x, y, \text{velocity}, \text{angle})$
+  - $s = (2.371, 5.826, 0.43, \cdots) \rightarrow \text{DNN} \rightarrow \hat{v}(s, \mathbf{w})$
+- E2E learning (learn feature representation and policy together) can be more effective.
+- Function approximation using images, environments with visual observations.
+- DNNs can directly process pixel data and learn from raw images.
+- DNNs can be used in environments with continuous action spaces for approximating policies (Robotics)
+- It can achieve SOTA performance in several complex tasks.
+
+## CNN, Convolutional neural network
+
+- **CONV** is the first layer to extract features from an input image.
+  - Core building block of a CNN
+  - A number of filters such as Edge Detectors are applied to the input image.
+- Padding: add extra pixels around the image to handle edge cases.
+  - Valid Padding: no padding, output size is smaller than input size.
+    - $p = 0$.
+    - Output size: $(n - f + 1) \times (n - f + 1)$
+    - $f$: filter size.
+  - Same Padding: add padding so that output size is the same as input size.
+    - $p = \frac{f-1}{2}$
+- Stride: the number of pixels the filter moves across the input image.
+  - $S = 1$: Move the filter by one pixel horizontally and vertically.
+  - $S = 2$: Move the filter by two pixels horizontally and vertically.
+- **POOL**: down sampling operation which reduces the dimensionality of a matrix.
+  - It reduces the number of parameters for large image but retain the valuable information.
+  - Max pooling: `Max(7, 8, 9, 10) = 10`
+  - Average pooling: `Avg(7, 8, 9, 10) = 8.5`
+  - Sum pooling: `Sum(7, 8, 9, 10) = 34`
+- **FC**: The output matrix after convolution layer is flattened and feed into a fully connected layer similar to ANN.
+  - It's a traditional Multi-layer Perceptron/Neural Network.
+  - For multi-class classification, Softmax activation function is usually used.
+  - Output of the CONV and POOL layers represent a high-level features of the Input image.
+  - FC layer uses this feature to classify the input image into the desired class.
+
+## Deep Reinforcement Learning
+
+- Use DNNs to represent
+  - Value and Q-Value function (Action-value function)
+  - Policy (Policy Gradient methods)
+  - Model
+- Use SGD to optimize loss function.
+- RL makes the target, SGD trains DNN to fit the target.
+- In **TD**: $\Delta w = \text{learning rate} \times \text{TD error} \times \text{gradient}$
+  - TD error: $\underbrace{R_{t+1} + \gamma \hat{q}(s_{t+1},a_{t+1},w)}_{\text{Target}} - \underbrace{\hat{q}(s_t,a_t,w)}_{\text{Current Prediction}}$
+- In **Q-Learning**: $\max_{a'} Q(s_{t+1},a',w)$ is the target.
+
+## Q-Learning with VFA
+
+- Original Q-Learning converges to the optimal $Q^*(s, a)$ using look-up table.
+- VFA Q-Learning minimizes MSD Loss by SGD using target Q estimates instead of true Q.
+  - so it can diverge due to the correlation between samples or Non-stationary targets.
+
+### Experience Replay
+
+```
+Environment
+    │
+    │ experience
+    ▼
+(s, a, r, s')
+    │
+    ▼
+Replay Buffer D
+┌──────────────────────┐
+│ old experience       │
+│ old experience       │
+│ old experience       │
+│ old experience       │
+└──────────────────────┘
+    │
+    │ random sample
+    ▼
+Mini-batch
+    │
+    ├──────────────► Current Q Network
+    │                   │
+    │                   ▼
+    │                 Q(s,a)
+    │
+    └──────────────► Target calculation
+                        │
+                        ▼
+              r + γ max Q(s',a')
+                        │
+                        ▼
+             Target − Prediction
+                        │
+                        ▼
+                       SGD
+                        │
+                        ▼
+                  Update weights
+```
+
+- DQN stores past transitions $(s,a,r,s')$ in a replay buffer and randomly samples them for training, which reduces correlation between consecutive samples and improves training stability.
+  - Sample $(s, a, r, s')$ from $\mathcal{D}$
+  - Compute the target value of the samples $s: (r + \gamma \max_{a'} \hat{q}(s',a',w))$
+  - Use SGD to update the network weight: $\Delta w = \alpha (r + \gamma \max_{a'} \hat{q}(s',a',w) - \hat{q}(s,a,w))\nabla_w \hat{q}(s,a,w)$
+
+### Fixed Q-Targets
+
+```
+        [Same structure of network 2]
+
+Current state s                    Next state s'
+     │                                  │
+     ▼                                  ▼
+Online Q Network                  Target Network
+weights = w                       weights = w⁻
+     │                                  │
+     ▼                                  ▼
+Q(s,a;w)                      max Q(s',a';w⁻)
+     │                                  │
+     └────────── compare ────────────────┘
+                      │
+                      ▼
+                    Loss
+                      │
+                      ▼
+                update only w
+```
+
+- Improve stability by fixing the target weights used in the target calculation for multiple updates.
+- Target network uses different set of weights that the weights being updated.
+- $w^-$: set of weights used in the target.
+- $w$: set of weights being updated.
+
+$$r + \gamma \max_{a'} Q(s',a',\color{red}w^-\color{black})$$
+
+- Sample $(s, a, r, s')$ from $\mathcal{D}$
+- Compute the target value of the samples $s: (r + \gamma \max_{a'} Q(s',a',w^-))$
+- Use SGD to update the network weight: $\Delta w = \alpha (r + \gamma \max_{a'} Q(s',a',w^-) - Q(s,a,w))\nabla_w Q(s,a,w)$
+
+## DQN
+
+![DQN algorithm](./dqn-algo.png)
+
+### DQN in Atari
+
+- E2E learning of $Q(s,a) values from pixels $s\$
+- Input state $s$ is a stack or raw pixels from last 4 frames.
+- Output is $Q(s,a)$ for 18 joystick/button positions
+- Reward is chance in score for that step.
+- Network Architecture and hyper-parameters are fixed across all games.
+- 4x84x84 stack of 4 previous frames -> 16 8x8 filters CONV -> 32 4x4 filters CONV -> 256 hidden units FC -> Fully connected linear output layer.
+
+![DQN Atari](./dqn-atari.png)

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[29079],{87874(a){a.exports=JSON.parse('{"tag":{"label":"pwa","permalink":"/ko/tags/pwa","allTagsPath":"/ko/tags","count":5,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/pwa","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

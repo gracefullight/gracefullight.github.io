@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[74119],{38124(t){t.exports=JSON.parse('{"tag":{"label":"ethics","permalink":"/tags/ethics","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/ethics","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

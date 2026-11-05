@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[32515],{82208(a){a.exports=JSON.parse('{"tag":{"label":"game","permalink":"/ko/tags/game","allTagsPath":"/ko/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/game","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

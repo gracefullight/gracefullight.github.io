@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[59312],{66018(a){a.exports=JSON.parse('{"tag":{"label":"bash","permalink":"/tags/bash","allTagsPath":"/tags","count":10,"unlisted":false},"listMetadata":{"permalink":"/tags/bash","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

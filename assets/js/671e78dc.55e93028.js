@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[55582],{22276(t){t.exports=JSON.parse('{"tag":{"label":"TRP","permalink":"/tags/trp","allTagsPath":"/tags","count":9,"unlisted":false},"listMetadata":{"permalink":"/tags/trp","page":1,"postsPerPage":10,"totalPages":1,"totalCount":9,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

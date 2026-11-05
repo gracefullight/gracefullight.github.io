@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[38790],{32780(a){a.exports=JSON.parse('{"tag":{"label":"mysql","permalink":"/tags/mysql","allTagsPath":"/tags","count":10,"unlisted":false},"listMetadata":{"permalink":"/tags/mysql","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

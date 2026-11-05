@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[86477],{33223(t){t.exports=JSON.parse('{"tag":{"label":"react-intl","permalink":"/tags/react-intl","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/react-intl","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

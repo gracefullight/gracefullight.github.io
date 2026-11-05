@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[90649],{98778(a){a.exports=JSON.parse('{"tag":{"label":"quantum","permalink":"/tags/quantum","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/quantum","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

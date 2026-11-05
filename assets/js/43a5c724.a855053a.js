@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[70254],{858(a){a.exports=JSON.parse('{"tag":{"label":"uae","permalink":"/tags/uae","description":"UAE","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/uae","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

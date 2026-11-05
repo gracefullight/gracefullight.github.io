@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[97730],{65816(t){t.exports=JSON.parse('{"tag":{"label":"nextjs","permalink":"/tags/nextjs","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/nextjs","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
