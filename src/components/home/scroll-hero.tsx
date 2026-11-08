@@ -2,6 +2,7 @@ import type { MouseEvent, PointerEvent } from "react";
 import type { ResearchSceneState } from "./research-scene";
 
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useEffect, useRef, useState } from "react";
 import HomeIcon from "./home-icon";
 import { profile, researchInterests } from "./profile-data";
@@ -81,6 +82,7 @@ export default function ScrollHero() {
   });
   const [activeInterest, setActiveInterest] = useState(0);
   const [ready, setReady] = useState(false);
+  const baseUrl = useBaseUrl("/");
 
   useEffect(() => {
     stateRef.current.activeInterest = activeInterest;
@@ -170,7 +172,13 @@ export default function ScrollHero() {
     void import("./research-scene")
       .then(({ createResearchScene }) => {
         if (disposed) return;
-        scene = createResearchScene(canvas);
+        scene = createResearchScene(canvas, {
+          baseUrl,
+          onAssetLoaded: () => {
+            // A running loop picks new props up; a paused one needs a frame.
+            if (motion.matches || !frame) scene?.render(performance.now());
+          },
+        });
         sceneRef.current = scene;
         scene.resize();
         scene.update(stateRef.current);
@@ -195,7 +203,7 @@ export default function ScrollHero() {
       scene?.dispose();
       sceneRef.current = null;
     };
-  }, []);
+  }, [baseUrl]);
 
   const selectInterest = (event: MouseEvent<HTMLButtonElement>) => {
     const interest = Number(event.currentTarget.dataset.interest);

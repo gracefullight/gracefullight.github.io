@@ -4,6 +4,7 @@ import { createAvatarAnimation } from "./avatar-animation";
 import { createArmModel } from "./avatar-arms";
 import { createClothingModel } from "./avatar-clothing";
 import { createHeadModel } from "./avatar-head";
+import { createPolyforkDressing } from "./polyfork-props";
 import { createResearchProps } from "./research-props";
 import { batchSceneDetails } from "./scene-batching";
 import { createScenePrimitives, smoothstep } from "./scene-primitives";
@@ -19,8 +20,18 @@ export type ResearchSceneState = {
   reducedMotion: boolean;
 };
 
+export type ResearchSceneOptions = {
+  /** Site base URL, used to resolve the self-hosted models. */
+  baseUrl: string;
+  /** Fires as streamed set dressing arrives, so a paused owner can redraw. */
+  onAssetLoaded?: () => void;
+};
+
 /** Its owner supplies the animation frame and size events. */
-export function createResearchScene(canvas: HTMLCanvasElement) {
+export function createResearchScene(
+  canvas: HTMLCanvasElement,
+  { baseUrl, onAssetLoaded }: ResearchSceneOptions,
+) {
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
     antialias: true,
@@ -180,6 +191,14 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
   for (const group of interests) world.add(group);
   batchSceneDetails(world, new Set(typingKeys.map(({ key }) => key)), (shape) =>
     geometries.set(shape.uuid, shape),
+  );
+  const dressing = createPolyforkDressing(
+    world,
+    baseUrl,
+    { geometries, materials },
+    () => {
+      if (!disposed) onAssetLoaded?.();
+    },
   );
   const anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
   for (const texture of textures) texture.anisotropy = anisotropy;
@@ -379,6 +398,7 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
       smoothed.pointerY,
     );
     animateInterests(progress, motion, ease);
+    dressing.update(delta, motion);
     positionCamera(progress, motion);
     renderer.render(scene, camera);
   }
@@ -386,6 +406,7 @@ export function createResearchScene(canvas: HTMLCanvasElement) {
   function dispose() {
     if (disposed) return;
     disposed = true;
+    dressing.dispose();
     scene.traverse((object) => {
       if (object instanceof THREE.InstancedMesh) object.dispose();
     });

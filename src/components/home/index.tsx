@@ -1,8 +1,9 @@
 import type { MouseEvent } from "react";
 
 import Link from "@docusaurus/Link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import HomeIcon from "./home-icon";
+import { POLYFORK_PROPS, polyforkAssetUrl } from "./polyfork-manifest";
 import {
   engineeringExperience,
   profile,
@@ -77,6 +78,18 @@ export function HomeContact() {
       ) : null}
       <p className={styles.copyright}>
         © {new Date().getFullYear()} {profile.name}
+      </p>
+      <p className={styles.assetCredit}>
+        Scene props:{" "}
+        {POLYFORK_PROPS.map((prop, index) => (
+          <Fragment key={prop.id}>
+            {index > 0 ? ", " : null}
+            <a href={polyforkAssetUrl(prop.id)}>{prop.title}</a>
+          </Fragment>
+        ))}{" "}
+        by <a href="https://polyfork.dev">Polyfork</a>, licensed under{" "}
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        Materials and scale adapted.
       </p>
     </section>
   );

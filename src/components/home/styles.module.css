@@ -613,6 +613,25 @@
   color: var(--home-muted);
 }
 
+.assetCredit {
+  max-width: 72ch;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--home-muted);
+}
+
+.assetCredit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 2px;
+}
+
+.assetCredit a:hover {
+  color: var(--home-ink);
+}
+
 .copyStatus {
   max-width: 60ch;
   margin-top: 12px;
