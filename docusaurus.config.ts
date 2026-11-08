@@ -40,7 +40,7 @@ const config: Config = {
         "@type": "Person",
         email: "mailto:gracefullight.dev@gmail.com",
         image: "https://avatars.githubusercontent.com/u/11773683?v=4",
-        jobTitle: "FullStack JavaScript Developer",
+        jobTitle: "Software Engineer",
         logo: "https://gracefullight.dev/img/apple-touch-icon.png",
         name: "Eunkwang Shin",
         nationality: "Korean",

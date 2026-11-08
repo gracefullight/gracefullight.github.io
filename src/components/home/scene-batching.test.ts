@@ -1,8 +1,6 @@
 import * as THREE from "three";
 import { afterEach, expect, it, vi } from "vitest";
-import { createResearchProps } from "./research-props";
 import { batchSceneDetails } from "./scene-batching";
-import { createScenePrimitives } from "./scene-primitives";
 
 const disposables: { dispose: () => void }[] = [];
 
@@ -165,37 +163,6 @@ it("keeps nested parent transforms and never combines meshes from separate paren
   expectMatrix(
     instanceWorld(batch, 1),
     elbow.matrixWorld.clone().multiply(details[1].matrix),
-  );
-});
-
-it("preserves the actual research prop roots and animated robot hierarchy", () => {
-  const context = createScenePrimitives();
-  const { interests, robotShoulder, robotElbow } = createResearchProps(context);
-  const world = new THREE.Group();
-  world.add(...interests);
-  const elbowPosition = robotElbow.position.clone();
-
-  batchSceneDetails(world, new Set(), (shape) => {
-    context.geometries.set(shape.uuid, shape);
-  });
-
-  expect(world.children).toEqual(interests);
-  expect(robotShoulder.parent).toBe(interests[2]);
-  expect(robotElbow.parent).toBe(robotShoulder);
-  expect(robotElbow.position.equals(elbowPosition)).toBe(true);
-  robotShoulder.rotation.y = 0.1;
-  robotElbow.rotation.z = 0.05;
-  world.updateMatrixWorld(true);
-  expect(
-    robotElbow.getWorldPosition(new THREE.Vector3()).length(),
-  ).toBeGreaterThan(0);
-  world.traverse((object) => {
-    if (object instanceof THREE.InstancedMesh) disposables.push(object);
-  });
-  disposables.push(
-    ...context.geometries.values(),
-    ...context.materials,
-    ...context.textures,
   );
 });
 

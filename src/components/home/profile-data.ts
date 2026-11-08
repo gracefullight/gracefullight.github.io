@@ -1,160 +1,120 @@
-import visionModelPreview from "@site/blog/2025/08/16/vlm-overview.png";
-import robotPolicyPreview from "@site/blog/2025/08/29/open-vla-architecture.png";
-import policyGradientPreview from "@site/blog/2026/10/05/clipped-surrogate.png";
-import treeSearchPreview from "@site/blog/2026/10/25/mcts-steps.png";
-
 export const profile = {
   email: "gracefullight.dev@gmail.com",
   github: "https://github.com/gracefullight",
-  intro: "Software engineer studying AI in Sydney.",
+  intro:
+    "Software engineer with 10+ years of production experience, now studying a Master of AI at UTS in Sydney.",
   linkedin: "https://www.linkedin.com/in/gracefullight/",
   name: "Eunkwang Shin",
 };
 
-export const researchNotes = [
-  {
-    category: "Agents",
-    summary:
-      "Reading notes on agent-led development, from intent and implementation to human review and deployment.",
-    title: "Agentic SDLC",
-    url: "/2026/01/31/agentic-sdlc/",
-    year: "2026",
-  },
-  {
-    category: "Vision",
-    summary:
-      "A paper review of image and text representations, pretraining objectives, and adaptation to visual tasks.",
-    title: "Vision-Language Models for Vision Tasks",
-    url: "/2025/08/16/vision-language-models-for-vision-tasks-review/",
-    year: "2025",
-  },
-  {
-    category: "Robotics",
-    summary:
-      "A review of OpenVLA's visual encoders, action tokens, and adaptation of a robot policy.",
-    title: "OpenVLA",
-    url: "/2025/08/29/open-vla-review/",
-    year: "2025",
-  },
-] as const;
+export type Experience = {
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  summary: string;
+};
 
-export const researchInterests = [
+export const experience: readonly Experience[] = [
   {
-    controlLabel: "Agents",
-    description: researchNotes[0].summary,
-    name: "AI Agents",
-    verb: "Reason.",
-    workLinkLabel: "Read the agentic development notes",
-    workSummary: researchNotes[0].summary,
-    workTitle: "Agentic development.",
-    workUrl: researchNotes[0].url,
+    company: "FIRST FLUKE",
+    location: "Remote",
+    period: "2026 — Now",
+    role: "Co-founder & CTO",
+    summary:
+      "Building and running production AI B2B SaaS with retrieval pipelines and agentic workflows, across legal research, local-business intelligence, and content operations. Selected as a 2026 AI solution provider for Korea's Modoo Startup initiative.",
   },
   {
-    controlLabel: "Vision",
-    description: researchNotes[1].summary,
-    name: "Computer Vision",
-    verb: "Perceive.",
-    workLinkLabel: "Read the vision-language review",
-    workSummary: researchNotes[1].summary,
-    workTitle: "Vision-language models.",
-    workUrl: researchNotes[1].url,
+    company: "Hyundai Motor Group",
+    location: "Seoul",
+    period: "2024 — 2025",
+    role: "Frontend / Platform Engineer",
+    summary:
+      "Built frontend systems for the HMG Product Platform, including an in-memory configurator that validates millions of trim, option, and accessory combinations in near real time, and contributed to the Hyundai Design System.",
   },
   {
-    controlLabel: "Robotics",
-    description: researchNotes[2].summary,
-    name: "Robotics",
-    verb: "Act.",
-    workLinkLabel: "Read the OpenVLA review",
-    workSummary: researchNotes[2].summary,
-    workTitle: "Language to robot actions.",
-    workUrl: researchNotes[2].url,
+    company: "Cafe24",
+    location: "Seoul",
+    period: "2018 — 2023",
+    role: "Senior Frontend Engineer",
+    summary:
+      "Led frontend standardisation and the Cafe24 Design System while modernising a 20-year-old storefront, improved PageSpeed by about 20% across hundreds of thousands of stores, and shipped the Seller-fit recommendation service.",
   },
-] as const;
+  {
+    company: "Glotrek Trade · INBET",
+    location: "Seoul",
+    period: "2015 — 2018",
+    role: "Full-Stack Engineer",
+    summary:
+      "Built a cosmetics e-commerce platform with React and AWS, and Real-packing, a WebRTC logistics inspection platform that went on to receive angel investment from Lotte.",
+  },
+  {
+    company: "ROK Defence Communication Command",
+    location: "Gwacheon",
+    period: "2013 — 2015",
+    role: "Software Engineer, military service",
+    summary:
+      "Developed software for the Korea Defence Command & Control System and a Presidential Security Service evidence-collection system.",
+  },
+];
 
-export const selectedWork = [
-  {
-    action: "Read the vision-language review",
-    image: visionModelPreview,
-    imageAlt:
-      "Taxonomy of vision-language pretraining, transfer learning, and knowledge distillation.",
-    imageHeight: 728,
-    imageWidth: 1400,
-    kind: "Paper review",
-    summary:
-      "How image and text representations are learned together, and adapted to visual recognition tasks.",
-    title: "Vision-language models",
-    url: researchNotes[1].url,
-  },
-  {
-    action: "Read the OpenVLA review",
-    image: robotPolicyPreview,
-    imageAlt:
-      "OpenVLA architecture connecting image and language inputs to robot actions.",
-    imageHeight: 366,
-    imageWidth: 915,
-    kind: "Paper review",
-    summary:
-      "Visual encoders, action tokens, and adaptation in an open vision-language-action model.",
-    title: "OpenVLA",
-    url: researchNotes[2].url,
-  },
-  {
-    action: "Read the planning notes",
-    image: treeSearchPreview,
-    imageAlt:
-      "Monte Carlo tree search diagram showing selection, expansion, rollout, and backup.",
-    imageHeight: 672,
-    imageWidth: 2182,
-    kind: "Study notes",
-    summary:
-      "Selection, expansion, rollout, and backup, within a wider review of reinforcement learning.",
-    title: "Monte Carlo tree search",
-    url: "/2026/10/25/rl-012/",
-  },
-  {
-    action: "Read the policy optimization notes",
-    image: policyGradientPreview,
-    imageAlt:
-      "Plots explaining the clipped surrogate objective used in proximal policy optimization.",
-    imageHeight: 1252,
-    imageWidth: 3562,
-    kind: "Study notes",
-    summary:
-      "Policy gradients, variance reduction with a critic, and the clipped PPO objective.",
-    title: "Policy gradients and PPO",
-    url: "/2026/10/05/rl-010/",
-  },
-] as const;
+export type Project = {
+  title: string;
+  meta: string;
+  summary: string;
+  url?: string;
+};
 
-export const engineeringExperience = [
+export const projects: readonly Project[] = [
   {
-    action: "Read my 2024 retrospective",
-    description:
-      "Full-stack software development in e-commerce and at Hyundai Motor Company, followed by a move toward AI study.",
-    hrefLang: "ko",
-    label: "Software engineering",
-    title: "Hyundai and e-commerce.",
-    url: "/2025/01/01/end-of-year-retro-2024/",
+    meta: "Open source · 1,200+ stars",
+    summary:
+      "A multi-agent harness for long-running coding work, with persistent workflows, verification gates, and append-only execution logs.",
+    title: "oh-my-agent",
+    url: "https://github.com/first-fluke/oh-my-agent",
   },
   {
-    action: "View oh-my-agent",
-    description:
-      "A portable multi-agent harness for reusable skills, workflows, and coding-agent teams.",
-    hrefLang: "en",
-    label: "Open source",
-    title: "oh-my-agent.",
-    url: `${profile.github}/oh-my-agent`,
+    meta: "Open source · 200+ stars",
+    summary:
+      "A full-stack monorepo spanning Next.js, FastAPI, Flutter, and Terraform, with typed API clients and shared design tokens.",
+    title: "fullstack-starter",
+    url: "https://github.com/first-fluke/fullstack-starter",
   },
   {
-    action: "Read my 2025 retrospective",
-    description:
-      "A retrospective on leaving industry and moving to Sydney for postgraduate study in AI.",
-    hrefLang: "ko",
-    label: "AI study",
-    title: "AI study in Sydney.",
-    url: "/2026/01/01/end-of-year-retro-2025/",
+    meta: "UTS Tech Fest 2026 · AI Showcase nominee",
+    summary:
+      "On-device sewer defect detection: a fine-tuned YOLO model (mAP@0.5 of 0.931) running entirely in the browser with ONNX Runtime Web and WebGPU.",
+    title: "FlowBust",
   },
-] as const;
+  {
+    meta: "BESC 2026 · Accepted paper, co-author",
+    summary:
+      "A hybrid GNN framework that reconstructs indoor 5G signal strength from aerial-only UAV RF sensing, with a Three.js voxel view of the coverage.",
+    title: "Graph-XGB",
+  },
+];
+
+export type Education = {
+  title: string;
+  school: string;
+  period: string;
+  detail?: string;
+};
+
+export const education: readonly Education[] = [
+  {
+    detail:
+      "Research Assistant · Course average 88% · Dean's List 2026 · Academic Excellence International Scholarship",
+    period: "2025 — 2027",
+    school: "University of Technology Sydney",
+    title: "Master of Artificial Intelligence",
+  },
+  {
+    period: "2018",
+    school: "National Institute for Lifelong Education",
+    title: "Bachelor of Computer Science",
+  },
+];
 
 // Homepage display titles; article titles and permanent URLs stay in the blog.
 const writingTitles: Record<string, string> = {
@@ -175,5 +135,5 @@ export function getWritingTitle(title: string, permalink: string) {
 }
 
 export function getTextLanguage(text: string) {
-  return /[\uac00-\ud7a3]/u.test(text) ? "ko" : "en";
+  return /[가-힣]/u.test(text) ? "ko" : "en";
 }

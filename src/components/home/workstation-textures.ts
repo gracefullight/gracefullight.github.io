@@ -40,20 +40,20 @@ export function createWorkstationTextures(context: ModelContext) {
       }
       drawing.font = "16px monospace";
       drawing.fillStyle = "#b9c8cb";
-      drawing.fillText("research / embodied-agent", 492, 25);
+      drawing.fillText("first-fluke / legal-research", 482, 25);
       drawing.fillStyle = "#202930";
       drawing.fillRect(0, 38, 213, 652);
       drawing.font = "15px monospace";
       drawing.fillStyle = "#758c99";
       drawing.fillText("EXPLORER", 23, 72);
       const files = [
-        "⌄ embodied-agent",
-        "  ⌄ src",
-        "    perception.py",
-        "    agent.py",
-        "    memory.py",
-        "  ⌄ experiments",
-        "    evaluate.py",
+        "⌄ legal-research",
+        "  ⌄ app",
+        "    retrieval.py",
+        "    main.py",
+        "    rerank.py",
+        "  ⌄ tests",
+        "    test_answer.py",
         "  README.md",
         "  pyproject.toml",
       ];
@@ -66,22 +66,21 @@ export function createWorkstationTextures(context: ModelContext) {
       drawing.fillStyle = "#a8d1ba";
       drawing.fillRect(213, 77, 202, 2);
       drawing.font = "17px monospace";
-      drawing.fillText("agent.py     ×", 236, 65);
+      drawing.fillText("main.py      ×", 236, 65);
       const lines = [
-        ["# Perceive, reason, act.", "#728d88"],
-        ["from dataclasses import dataclass", "#b7a3ce"],
-        ["from perception import observe", "#b7a3ce"],
+        ["# Retrieve, ground, answer.", "#728d88"],
+        ["from fastapi import FastAPI", "#b7a3ce"],
+        ["from app.retrieval import HybridRetriever", "#b7a3ce"],
         ["", "#ffffff"],
-        ["@dataclass", "#d4bb81"],
-        ["class EmbodiedAgent:", "#a7c6da"],
-        ["    memory: EpisodicMemory", "#c9d4d8"],
-        ["    policy: WorldModel", "#c9d4d8"],
+        ["app = FastAPI()", "#c9d4d8"],
+        ['retriever = HybridRetriever(index="statutes")', "#c9d4d8"],
         ["", "#ffffff"],
-        ["    def step(self, observation):", "#a3c7b1"],
-        ["        state = observe(observation)", "#c9d4d8"],
-        ["        context = self.memory.retrieve(state)", "#c9d4d8"],
-        ["        plan = self.policy.reason(state, context)", "#c9d4d8"],
-        ["        return plan.next_action()", "#d4bb81"],
+        ['@app.post("/answer")', "#d4bb81"],
+        ["async def answer(question: Question):", "#a3c7b1"],
+        ["    passages = await retriever.search(question)", "#c9d4d8"],
+        ["    context = rerank(question, passages)", "#c9d4d8"],
+        ["    draft = await llm.generate(question, context)", "#c9d4d8"],
+        ["    return cite(draft, passages)", "#d4bb81"],
       ];
       drawing.font = "19px monospace";
       for (const [index, [line, color]] of lines.entries()) {
@@ -97,21 +96,21 @@ export function createWorkstationTextures(context: ModelContext) {
       drawing.fillStyle = "#879ca7";
       drawing.fillText("TERMINAL     OUTPUT     PROBLEMS", 237, 569);
       drawing.fillStyle = "#a3c7b1";
-      drawing.fillText("❯ python -m experiments.evaluate", 237, 607);
+      drawing.fillText("❯ uv run pytest", 237, 607);
       drawing.fillStyle = "#91a5af";
-      drawing.fillText("  loading world model · 128 episodes", 237, 636);
-      drawing.fillStyle = "#a8d1ba";
       drawing.fillText(
-        "  [████████████████████]  evaluation complete",
+        "  collected 24 items · retrieval, rerank, answer",
         237,
-        665,
+        636,
       );
+      drawing.fillStyle = "#a8d1ba";
+      drawing.fillText("  [████████████████████]  24 passed", 237, 665);
       drawing.fillStyle = "#3d6659";
       drawing.fillRect(0, 690, 1280, 30);
       drawing.fillStyle = "#d6e4df";
       drawing.font = "14px monospace";
       drawing.fillText("⑂ main    ✓ 0   ◇ 0", 19, 710);
-      drawing.fillText("UTF-8     Python 3.13     Ln 14, Col 34", 902, 710);
+      drawing.fillText("UTF-8     Python 3.13     Ln 13, Col 32", 902, 710);
     });
   }
 

@@ -21,7 +21,10 @@ export default function BlogListPageWrapper(props: Props) {
   }
 
   return (
-    <Layout description={profile.intro} title="Eunkwang Shin | Software & AI">
+    <Layout
+      description={profile.intro}
+      title="Eunkwang Shin | Software Engineer"
+    >
       <BlogListPageStructuredData {...props} />
       <div className={styles.home}>
         {/* biome-ignore lint/correctness/useUniqueElementIds: This page renders once; the ID is a public navigation anchor. */}
@@ -30,9 +33,9 @@ export default function BlogListPageWrapper(props: Props) {
           {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor for the homepage navigation. */}
           <section className={styles.writing} id="writing">
             <div className={styles.writingHeading}>
-              <h2>Recent writing.</h2>
+              <h2>Latest posts.</h2>
               <Link className={styles.textLink} to="/archive/">
-                Browse the archive <HomeIcon name="arrow-right" />
+                All posts <HomeIcon name="arrow-right" />
               </Link>
             </div>
             <div className={styles.writingList}>

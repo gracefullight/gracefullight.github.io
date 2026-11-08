@@ -1,16 +1,9 @@
-import type { MouseEvent } from "react";
-
 import Link from "@docusaurus/Link";
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import Hero from "./hero";
 import HomeIcon from "./home-icon";
 import { POLYFORK_PROPS, polyforkAssetUrl } from "./polyfork-manifest";
-import {
-  engineeringExperience,
-  profile,
-  researchInterests,
-  selectedWork,
-} from "./profile-data";
-import ScrollHero from "./scroll-hero";
+import { education, experience, profile, projects } from "./profile-data";
 import styles from "./styles.module.css";
 
 export function HomeContact() {
@@ -96,114 +89,81 @@ export function HomeContact() {
 }
 
 export default function ProfileHome() {
-  const [expandedInterest, setExpandedInterest] = useState(0);
-  const toggleInterest = (event: MouseEvent<HTMLButtonElement>) => {
-    const index = Number(event.currentTarget.dataset.interest);
-    setExpandedInterest(expandedInterest === index ? -1 : index);
-  };
-
   return (
     <div lang="en">
-      <ScrollHero />
+      <Hero />
+
       {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor on a single homepage instance. */}
-      <section className={styles.selectedWork} id="work">
+      <section className={styles.section} id="experience">
         <div className={styles.sectionHeading}>
-          <h2>Selected work.</h2>
+          <h2>Experience.</h2>
           <p>
-            Paper reviews and study notes on how models see, plan, and act. Each
-            figure comes from the linked article.
+            Production software across e-commerce, automotive platforms, defence
+            systems, and AI products.
           </p>
         </div>
-        <div className={styles.workGallery}>
-          {selectedWork.map((work) => (
-            <article className={styles.workItem} key={work.url}>
-              <figure className={styles.workPreview}>
-                <img
-                  alt={work.imageAlt}
-                  decoding="async"
-                  height={work.imageHeight}
-                  loading="lazy"
-                  src={work.image}
-                  width={work.imageWidth}
-                />
-              </figure>
-              <div className={styles.workDetails}>
-                <h3>{work.title}</h3>
-                <p className={styles.workKind}>{work.kind}</p>
-                <p>{work.summary}</p>
-                <Link className={styles.workLink} to={work.url}>
-                  {work.action} <HomeIcon name="arrow-up-right" />
-                </Link>
+        <ol className={styles.timeline}>
+          {experience.map((item) => (
+            <li className={styles.timelineItem} key={item.company}>
+              <p className={styles.timelinePeriod}>
+                {item.period}
+                <span>{item.location}</span>
+              </p>
+              <div>
+                <h3>{item.company}</h3>
+                <p className={styles.timelineRole}>{item.role}</p>
+                <p>{item.summary}</p>
               </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor on a single homepage instance. */}
+      <section className={styles.section} id="projects">
+        <div className={styles.sectionHeading}>
+          <h2>Projects.</h2>
+          <p>
+            Open-source tools, coursework showcases, and published research.
+          </p>
+        </div>
+        <div className={styles.projectGrid}>
+          {projects.map((project) => (
+            <article className={styles.project} key={project.title}>
+              <h3>
+                {project.url ? (
+                  <a className={styles.projectLink} href={project.url}>
+                    {project.title} <HomeIcon name="arrow-up-right" />
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h3>
+              <p className={styles.projectMeta}>{project.meta}</p>
+              <p>{project.summary}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <div className={styles.profileColumns}>
-        {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor on a single homepage instance. */}
-        <section className={styles.researchColumn} id="research">
-          <div className={styles.sectionHeading}>
-            <h2>Research interests.</h2>
-            <p>Three current reading directions, with the notes behind each.</p>
-          </div>
-          <div className={styles.interests}>
-            {researchInterests.map((interest, index) => (
-              <div className={styles.interest} key={interest.name}>
-                <button
-                  aria-controls={`interest-${index}`}
-                  aria-expanded={expandedInterest === index}
-                  data-interest={index}
-                  onClick={toggleInterest}
-                  type="button"
-                >
-                  <span>{interest.name}</span>
-                  <HomeIcon
-                    name={expandedInterest === index ? "minus" : "plus"}
-                  />
-                </button>
-                <div
-                  className={styles.interestDescription}
-                  hidden={expandedInterest !== index}
-                  id={`interest-${index}`}
-                >
-                  <p>{interest.workSummary}</p>
-                  <Link className={styles.textLink} to={interest.workUrl}>
-                    {interest.workLinkLabel}
-                    <HomeIcon name="arrow-up-right" />
-                  </Link>
-                </div>
+      {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor on a single homepage instance. */}
+      <section className={styles.section} id="education">
+        <div className={styles.sectionHeading}>
+          <h2>Education.</h2>
+        </div>
+        <ol className={styles.timeline}>
+          {education.map((item) => (
+            <li className={styles.timelineItem} key={item.title}>
+              <p className={styles.timelinePeriod}>{item.period}</p>
+              <div>
+                <h3>{item.title}</h3>
+                <p className={styles.timelineRole}>{item.school}</p>
+                {item.detail ? <p>{item.detail}</p> : null}
               </div>
-            ))}
-          </div>
-        </section>
-
-        {/* biome-ignore lint/correctness/useUniqueElementIds: Stable anchor on a single homepage instance. */}
-        <section className={styles.experienceColumn} id="experience">
-          <div className={styles.sectionHeading}>
-            <h2>Engineering background.</h2>
-            <p>
-              Industry experience, open-source code, and the move to AI study.
-            </p>
-          </div>
-          <div className={styles.experienceList}>
-            {engineeringExperience.map((experience) => (
-              <article className={styles.experience} key={experience.label}>
-                <h3>{experience.title}</h3>
-                <p>{experience.description}</p>
-                <Link
-                  className={styles.textLink}
-                  hrefLang={experience.hrefLang}
-                  to={experience.url}
-                >
-                  {experience.action}
-                  <HomeIcon name="arrow-up-right" />
-                </Link>
-              </article>
-            ))}
-          </div>
-        </section>
-      </div>
+            </li>
+          ))}
+        </ol>
+      </section>
     </div>
   );
 }

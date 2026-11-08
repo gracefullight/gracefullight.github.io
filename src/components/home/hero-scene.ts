@@ -5,22 +5,19 @@ import { createArmModel } from "./avatar-arms";
 import { createClothingModel } from "./avatar-clothing";
 import { createHeadModel } from "./avatar-head";
 import { createPolyforkDressing } from "./polyfork-props";
-import { createResearchProps } from "./research-props";
 import { batchSceneDetails } from "./scene-batching";
-import { createScenePrimitives, smoothstep } from "./scene-primitives";
+import { createScenePrimitives } from "./scene-primitives";
 import { createMouseModel } from "./vertical-mouse";
 import { createWorkstationModel } from "./workstation-model";
 
-export type ResearchSceneState = {
-  progress: number;
+export type HeroSceneState = {
   pointerX: number;
   pointerY: number;
-  activeInterest: number;
   typing: number;
   reducedMotion: boolean;
 };
 
-export type ResearchSceneOptions = {
+export type HeroSceneOptions = {
   /** Site base URL, used to resolve the self-hosted models. */
   baseUrl: string;
   /** Fires as streamed set dressing arrives, so a paused owner can redraw. */
@@ -28,9 +25,9 @@ export type ResearchSceneOptions = {
 };
 
 /** Its owner supplies the animation frame and size events. */
-export function createResearchScene(
+export function createHeroScene(
   canvas: HTMLCanvasElement,
-  { baseUrl, onAssetLoaded }: ResearchSceneOptions,
+  { baseUrl, onAssetLoaded }: HeroSceneOptions,
 ) {
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -79,15 +76,13 @@ export function createResearchScene(
   let elapsed = 0;
   let pendingTyping = false;
   let lastTyping = 0;
-  let state: ResearchSceneState = {
-    activeInterest: 0,
+  let state: HeroSceneState = {
     pointerX: 0,
     pointerY: 0,
-    progress: 0,
     reducedMotion: false,
     typing: 0,
   };
-  const smoothed = { pointerX: 0, pointerY: 0, progress: 0 };
+  const smoothed = { pointerX: 0, pointerY: 0 };
 
   scene.add(new THREE.HemisphereLight("#fff7e9", "#a7b5ad", 0.85));
   const key = new THREE.DirectionalLight("#fff2de", 2.6);
@@ -186,9 +181,6 @@ export function createResearchScene(
     typingKeys,
   });
 
-  const { interests, accents, robotShoulder, robotElbow } =
-    createResearchProps(context);
-  for (const group of interests) world.add(group);
   batchSceneDetails(world, new Set(typingKeys.map(({ key }) => key)), (shape) =>
     geometries.set(shape.uuid, shape),
   );
@@ -203,137 +195,21 @@ export function createResearchScene(
   const anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
   for (const texture of textures) texture.anisotropy = anisotropy;
 
-  const introPositions = [
-    new THREE.Vector3(-1.08, 2.1, 0.04),
-    new THREE.Vector3(1.05, 2.16, -0.18),
-    new THREE.Vector3(1.12, 0.79, 0.14),
-  ];
-  const focusPositions = [
-    new THREE.Vector3(-1.45, 1.75, 0.66),
-    new THREE.Vector3(0.85, 1.88, 0.95),
-    new THREE.Vector3(1.5, 1.18, 0.69),
-  ];
-  const lookAt = new THREE.Vector3();
-  const cameraPoses = [
-    {
-      angle: 0.5,
-      at: 0,
-      distance: 6.25,
-      height: 2.65,
-      targetX: 0,
-      targetY: 1.43,
-    },
-    {
-      angle: 0.5,
-      at: 0.15,
-      distance: 6.25,
-      height: 2.65,
-      targetX: 0,
-      targetY: 1.43,
-    },
-    {
-      angle: 0.02,
-      at: 0.28,
-      distance: 5.05,
-      height: 2.24,
-      targetX: 0.22,
-      targetY: 1.42,
-    },
-    {
-      angle: 0.02,
-      at: 0.42,
-      distance: 5.05,
-      height: 2.24,
-      targetX: 0.22,
-      targetY: 1.42,
-    },
-    {
-      angle: -0.55,
-      at: 0.55,
-      distance: 5.3,
-      height: 2.4,
-      targetX: -0.24,
-      targetY: 1.4,
-    },
-    {
-      angle: -0.55,
-      at: 0.69,
-      distance: 5.3,
-      height: 2.4,
-      targetX: -0.24,
-      targetY: 1.4,
-    },
-    {
-      angle: 0.66,
-      at: 0.82,
-      distance: 5.25,
-      height: 2.16,
-      targetX: 0.3,
-      targetY: 1.3,
-    },
-    {
-      angle: 0.77,
-      at: 1,
-      distance: 5.05,
-      height: 2.1,
-      targetX: 0.3,
-      targetY: 1.3,
-    },
-  ];
+  // A fixed three-quarter view; the pointer adds a little parallax.
+  const CAMERA = { angle: 0.5, distance: 6.25, height: 2.65 };
+  const lookAt = new THREE.Vector3(0, 1.43, 0);
 
-  function focusWeights(progress: number) {
-    const vision =
-      smoothstep(0.16, 0.28, progress) * (1 - smoothstep(0.43, 0.55, progress));
-    const agents =
-      smoothstep(0.43, 0.55, progress) * (1 - smoothstep(0.7, 0.82, progress));
-    const robotics = smoothstep(0.7, 0.82, progress);
-    return [agents, vision, robotics];
-  }
-
-  function animateInterests(progress: number, motion: number, ease: number) {
-    const weights = focusWeights(progress);
-    for (const [index, group] of interests.entries()) {
-      const focus = weights[index];
-      const selected = index === state.activeInterest;
-      const targetScale =
-        THREE.MathUtils.lerp(0.65, 1.27, focus) * (selected ? 1.04 : 1);
-      group.scale.setScalar(
-        THREE.MathUtils.lerp(group.scale.x, targetScale, ease),
-      );
-      group.position
-        .copy(introPositions[index])
-        .lerp(focusPositions[index], focus);
-      group.position.y += Math.sin(elapsed * 0.7 + index * 2) * 0.018 * motion;
-      group.rotation.y =
-        -0.12 + Math.sin(elapsed * 0.35 + index) * 0.06 * motion;
-      group.rotation.z = Math.sin(elapsed * 0.45 + index) * 0.016 * motion;
-      accents[index].emissive.set(selected ? "#4d4232" : "#000000");
-      accents[index].emissiveIntensity = selected ? 0.09 : 0;
-    }
-    robotShoulder.rotation.y = Math.sin(elapsed * 0.55) * 0.13 * motion;
-    robotElbow.rotation.z = Math.sin(elapsed * 0.65) * 0.08 * motion;
-  }
-
-  function positionCamera(progress: number, motion: number) {
-    const index = Math.max(
-      0,
-      cameraPoses.findIndex((pose) => pose.at >= progress) - 1,
-    );
-    const first = cameraPoses[index];
-    const next = cameraPoses[index + 1];
-    const amount = smoothstep(first.at, next.at, progress);
-    const blend = (
-      property: "angle" | "distance" | "height" | "targetX" | "targetY",
-    ) => THREE.MathUtils.lerp(first[property], next[property], amount);
-    const angle = blend("angle");
+  function positionCamera(motion: number) {
     const portraitFit = 1 / Math.min(aspect, 1);
-    const distance = blend("distance") * portraitFit;
+    const distance = CAMERA.distance * portraitFit;
+    const angle = CAMERA.angle + smoothed.pointerX * 0.06 * motion;
     camera.position.set(
-      Math.sin(angle) * distance + smoothed.pointerX * 0.045 * motion,
-      blend("height") + (portraitFit - 1) * 0.1,
+      Math.sin(angle) * distance,
+      CAMERA.height +
+        (portraitFit - 1) * 0.1 -
+        smoothed.pointerY * 0.06 * motion,
       Math.cos(angle) * distance,
     );
-    lookAt.set(blend("targetX"), blend("targetY"), 0);
     camera.lookAt(lookAt);
   }
 
@@ -348,7 +224,7 @@ export function createResearchScene(
     camera.updateProjectionMatrix();
   }
 
-  function update(next: ResearchSceneState) {
+  function update(next: HeroSceneState) {
     if (disposed) return;
     if (next.typing !== lastTyping) {
       pendingTyping = true;
@@ -358,7 +234,6 @@ export function createResearchScene(
       ...next,
       pointerX: THREE.MathUtils.clamp(next.pointerX, -1, 1),
       pointerY: THREE.MathUtils.clamp(next.pointerY, -1, 1),
-      progress: THREE.MathUtils.clamp(next.progress, 0, 1),
     };
   }
 
@@ -370,11 +245,6 @@ export function createResearchScene(
     frameTime = time;
     elapsed += delta;
     const ease = state.reducedMotion ? 1 : 1 - Math.exp(-delta * 8);
-    smoothed.progress = THREE.MathUtils.lerp(
-      smoothed.progress,
-      state.progress,
-      ease,
-    );
     smoothed.pointerX = THREE.MathUtils.lerp(
       smoothed.pointerX,
       state.pointerX,
@@ -390,16 +260,14 @@ export function createResearchScene(
       pendingTyping = false;
     }
     const motion = state.reducedMotion ? 0 : 1;
-    const progress = state.reducedMotion ? 0 : smoothed.progress;
     avatarAnimation.update(
       elapsed,
       motion,
       smoothed.pointerX,
       smoothed.pointerY,
     );
-    animateInterests(progress, motion, ease);
     dressing.update(delta, motion);
-    positionCamera(progress, motion);
+    positionCamera(motion);
     renderer.render(scene, camera);
   }
 
