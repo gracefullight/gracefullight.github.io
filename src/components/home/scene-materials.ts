@@ -5,7 +5,7 @@ export const PALETTE = {
   accent: "#ac5d46",
   cream: "#f1eadb",
   denim: "#315c88",
-  hair: "#202723",
+  hair: "#1e2021",
   ink: "#303b3c",
   paper: "#dcd5c7",
   shirt: "#15171a",
@@ -35,17 +35,17 @@ export function createSceneMaterials(
     clearcoatRoughness: 0.8,
     roughness: 0.82,
   });
-  const croppedHair = material("#40423b", { clearcoat: 0, roughness: 0.95 });
+  const croppedHair = material("#3b3a38", { clearcoat: 0, roughness: 0.95 });
   const scalpMaterial = material("#ffffff", {
     clearcoat: 0.02,
     roughness: 0.88,
     vertexColors: true,
   });
-  const hairHighlight = material("#3e443e", {
+  const hairHighlight = material("#2f3233", {
     clearcoat: 0.04,
     roughness: 0.74,
   });
-  const hairPart = material("#0c100e", { clearcoat: 0, roughness: 0.9 });
+  const hairPart = material("#111314", { clearcoat: 0, roughness: 0.9 });
   const deskTop = material("#dfcbaa", {
     bumpMap: fabric.oak,
     bumpScale: 0.0012,

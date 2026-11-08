@@ -28,9 +28,9 @@ export function createHeadModel(context: ModelContext) {
   } = context.surfaces;
   const blinkingEyes: { aperture: THREE.Group; closed: THREE.Object3D }[] = [];
   const facePoints = [
-    new THREE.Vector2(0.001, -0.34),
-    new THREE.Vector2(0.135, -0.315),
-    new THREE.Vector2(0.235, -0.21),
+    new THREE.Vector2(0.001, -0.335),
+    new THREE.Vector2(0.152, -0.31),
+    new THREE.Vector2(0.252, -0.205),
     new THREE.Vector2(0.315, -0.04),
     new THREE.Vector2(0.325, 0.16),
     new THREE.Vector2(0.29, 0.31),
@@ -68,6 +68,23 @@ export function createHeadModel(context: ModelContext) {
       cheek +
       brow -
       socket
+    );
+  }
+
+  /** Vertex tint multiplied into the skin: warm cheeks, nose and jaw shade. */
+  function faceTint(x: number, y: number, z: number, target: THREE.Color) {
+    const front = smoothstep(0, 0.12, z);
+    const cheek =
+      Math.exp(
+        -((Math.abs(x) - 0.175) ** 2) / 0.0045 - (y + 0.085) ** 2 / 0.006,
+      ) * front;
+    const noseTip = Math.exp(-(x ** 2) / 0.0012 - (y + 0.065) ** 2 / 0.002);
+    const jaw = smoothstep(-0.22, -0.33, y) * 0.07;
+    const blush = cheek * 0.95 + noseTip * 0.4;
+    return target.setRGB(
+      1 - jaw,
+      1 - blush * 0.2 - jaw * 1.1,
+      1 - blush * 0.22 - jaw * 1.15,
     );
   }
 
@@ -143,7 +160,7 @@ export function createHeadModel(context: ModelContext) {
           [-0.017, 0.118, 0.017],
           [0.044, 0.108, 0.013],
         ],
-        [0.002, 0.011, 0.003],
+        [0.002, 0.013, 0.004],
         0.55,
       );
       mesh(eyeRoot, browShape, hair);
@@ -258,8 +275,8 @@ export function createHeadModel(context: ModelContext) {
 
   function hairColor(phi: number, theta: number) {
     const y = Math.cos(theta) * 0.435 + 0.025;
-    const crop = new THREE.Color("#706052").lerp(
-      new THREE.Color("#454c43"),
+    const crop = new THREE.Color("#6f6158").lerp(
+      new THREE.Color("#3d3d3b"),
       smoothstep(-0.12, 0.18, y),
     );
     return new THREE.Color(PALETTE.hair).lerp(crop, croppedAmount(phi, y));
@@ -466,33 +483,51 @@ export function createHeadModel(context: ModelContext) {
 
   function buildHead(parent: THREE.Group) {
     const head = new THREE.Group();
-    head.position.set(0, 2.415, -0.045);
-    head.scale.set(0.66, 0.76, 0.7);
+    // A less elongated head sits lower, so the neck reads shorter.
+    head.position.set(0, 2.378, -0.045);
+    head.scale.set(0.68, 0.73, 0.71);
     parent.add(head);
+    const faceSkin = skin.clone();
+    faceSkin.vertexColors = true;
+    context.materials.add(faceSkin);
     mesh(
       head,
       geometry("face", () => {
         const shape = new THREE.LatheGeometry(faceProfile, 64);
         const vertices = shape.getAttribute("position");
+        const colors: number[] = [];
+        const tint = new THREE.Color();
         for (let i = 0; i < vertices.count; i += 1) {
           const x = vertices.getX(i);
           const y = vertices.getY(i);
           const z = vertices.getZ(i);
           vertices.setZ(i, Math.sign(z) * faceDepth(x, y));
+          faceTint(x, y, z, tint);
+          colors.push(tint.r, tint.g, tint.b);
         }
+        shape.setAttribute(
+          "color",
+          new THREE.Float32BufferAttribute(colors, 3),
+        );
         shape.computeVertexNormals();
         return shape;
       }),
-      skin,
+      faceSkin,
       [0, 0, 0],
       [1, 1, 1],
     );
+    const earSkin = material("#d9a68c", {
+      bumpMap: skin.bumpMap,
+      bumpScale: skin.bumpScale,
+      clearcoat: 0,
+      roughness: 0.78,
+    });
     for (const side of [-1, 1]) {
       ellipsoid(
         head,
-        skin,
-        [side * 0.315, -0.045, -0.022],
-        [0.035, 0.069, 0.031],
+        earSkin,
+        [side * 0.318, -0.045, -0.022],
+        [0.039, 0.074, 0.033],
       );
       ellipsoid(
         head,
@@ -536,39 +571,28 @@ export function createHeadModel(context: ModelContext) {
       );
       nostril.castShadow = false;
     }
-    const lip = material("#b58b7b", { clearcoat: 0, roughness: 0.86 });
+    // A closed, slightly upturned mouth: one seam plus a soft lower lip.
+    const lipSeam = material("#8f5d50", { clearcoat: 0, roughness: 0.85 });
+    const lowerLip = material("#c48b7b", { clearcoat: 0.08, roughness: 0.7 });
     curve(
       head,
-      lip,
+      lipSeam,
       [
-        [-0.053, -0.165, faceDepth(-0.053, -0.165) + 0.002],
-        [-0.02, -0.162, faceDepth(-0.02, -0.162) + 0.004],
+        [-0.062, -0.156, faceDepth(-0.062, -0.156) + 0.002],
+        [-0.026, -0.165, faceDepth(-0.026, -0.165) + 0.004],
         [0, -0.167, faceDepth(0, -0.167) + 0.005],
-        [0.02, -0.162, faceDepth(0.02, -0.162) + 0.004],
-        [0.053, -0.165, faceDepth(0.053, -0.165) + 0.002],
+        [0.026, -0.165, faceDepth(0.026, -0.165) + 0.004],
+        [0.062, -0.156, faceDepth(0.062, -0.156) + 0.002],
       ],
       0.003,
     ).castShadow = false;
-    curve(
+    const lipFill = ellipsoid(
       head,
-      lip,
-      [
-        [-0.045, -0.174, faceDepth(-0.045, -0.174) + 0.002],
-        [0, -0.184, faceDepth(0, -0.184) + 0.005],
-        [0.045, -0.174, faceDepth(0.045, -0.174) + 0.002],
-      ],
-      0.0035,
-    ).castShadow = false;
-    curve(
-      head,
-      skinShade,
-      [
-        [-0.06, -0.166, faceDepth(-0.06, -0.166) + 0.003],
-        [0, -0.176, faceDepth(0, -0.176) + 0.004],
-        [0.06, -0.166, faceDepth(0.06, -0.166) + 0.003],
-      ],
-      0.0055,
+      lowerLip,
+      [0, -0.18, faceDepth(0, -0.18) - 0.005],
+      [0.04, 0.0115, 0.0095],
     );
+    lipFill.castShadow = false;
     buildEyes(head);
     buildGlasses(head);
     buildHair(head);
