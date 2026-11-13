@@ -23,6 +23,13 @@
   background: var(--home-ground);
 }
 
+/* Infima's dark secondary text is #fff, which outranks body text; keep the
+   CV's date/role hierarchy and lift the posts band off the dark ground. */
+:global([data-theme="dark"]) .home {
+  --home-muted: #a3a9b2;
+  --home-soft: #2a2c30;
+}
+
 .home ::selection {
   color: var(--home-on-ink);
   background: var(--home-ink);
@@ -326,6 +333,7 @@
   display: inline-flex;
   gap: 8px;
   align-items: center;
+  min-height: 44px;
 }
 
 .projectLink:hover {

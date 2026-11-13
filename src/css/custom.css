@@ -92,6 +92,28 @@
   min-height: 44px;
 }
 
+/* Match the navbar search to the site palette; DocSearch's `all: unset`
+   otherwise leaves the button without any focus indicator. */
+.navbar .DocSearch-Button {
+  --docsearch-search-button-background: var(--ifm-navbar-background-color);
+  --docsearch-search-button-text-color: var(--ifm-color-emphasis-700);
+  --docsearch-subtle-color: var(--ifm-color-emphasis-300);
+  --docsearch-key-background: var(--ifm-color-emphasis-100);
+  --docsearch-key-color: var(--ifm-color-emphasis-700);
+  transition: border-color var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.navbar .DocSearch-Button:hover {
+  --docsearch-search-button-text-color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-primary);
+}
+
+.navbar .DocSearch-Button:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
 @media (min-width: 997px) {
   .navbar__link {
     display: inline-flex;
