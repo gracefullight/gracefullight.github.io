@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[67330],{36060(a){a.exports=JSON.parse('{"tag":{"label":"k8s","permalink":"/ko/tags/k-8-s","allTagsPath":"/ko/tags","count":10,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/k-8-s","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

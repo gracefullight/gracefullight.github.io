@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[98703],{34726(a){a.exports=JSON.parse('{"tag":{"label":"java","permalink":"/ko/tags/java","allTagsPath":"/ko/tags","count":5,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/java","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

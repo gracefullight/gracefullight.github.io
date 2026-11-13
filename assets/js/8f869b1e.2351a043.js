@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[2780],{89787(a){a.exports=JSON.parse('{"tag":{"label":"lynx","permalink":"/tags/lynx","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/lynx","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

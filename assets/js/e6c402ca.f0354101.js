@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[4005],{58019(a){a.exports=JSON.parse('{"tag":{"label":"carbon","permalink":"/tags/carbon","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/carbon","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

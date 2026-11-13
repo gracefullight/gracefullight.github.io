@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[79742],{77362(a){a.exports=JSON.parse('{"tag":{"label":"tzdata","permalink":"/ko/tags/tzdata","allTagsPath":"/ko/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/tzdata","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

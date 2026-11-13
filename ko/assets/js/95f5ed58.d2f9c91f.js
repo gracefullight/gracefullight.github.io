@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[49814],{78758(a){a.exports=JSON.parse('{"tag":{"label":"redis","permalink":"/ko/tags/redis","allTagsPath":"/ko/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/redis","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

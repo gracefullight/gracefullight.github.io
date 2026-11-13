@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[9781],{43526(l){l.exports=JSON.parse('{"tag":{"label":"rollup","permalink":"/ko/tags/rollup","allTagsPath":"/ko/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/rollup","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[26814],{28963(t){t.exports=JSON.parse('{"tag":{"label":"zotero","permalink":"/ko/tags/zotero","allTagsPath":"/ko/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/zotero","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

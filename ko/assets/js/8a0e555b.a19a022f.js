@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[77040],{57241(a){a.exports=JSON.parse('{"tag":{"label":"gemini","permalink":"/ko/tags/gemini","allTagsPath":"/ko/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/gemini","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

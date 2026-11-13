@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[28049],{19977(a){a.exports=JSON.parse('{"tag":{"label":"rfc","permalink":"/tags/rfc","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/rfc","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

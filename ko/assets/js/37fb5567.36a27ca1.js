@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[48838],{90672(a){a.exports=JSON.parse('{"tag":{"label":"chrome","permalink":"/ko/tags/chrome","allTagsPath":"/ko/tags","count":8,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/chrome","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

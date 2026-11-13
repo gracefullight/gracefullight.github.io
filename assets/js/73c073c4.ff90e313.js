@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[31427],{59562(a){a.exports=JSON.parse('{"tag":{"label":"mariadb","permalink":"/tags/mariadb","allTagsPath":"/tags","count":10,"unlisted":false},"listMetadata":{"permalink":"/tags/mariadb","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

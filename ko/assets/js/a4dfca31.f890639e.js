@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgracefullight_github_io||=[]).push([[18490],{16986(a){a.exports=JSON.parse('{"tag":{"label":"IQC","permalink":"/ko/tags/iqc","allTagsPath":"/ko/tags","count":4,"unlisted":false},"listMetadata":{"permalink":"/ko/tags/iqc","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
